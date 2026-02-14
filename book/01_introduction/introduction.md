@@ -158,6 +158,69 @@ Planets are broadly classified by composition and structure:
 - **Gas giants** (Jupiter, Saturn): Massive hydrogen–helium envelopes with no well-defined solid surface, likely rocky/icy cores at high pressure. Covered in {ref}`lecture11`.
 - **Ice giants** (Uranus, Neptune): Smaller than gas giants, with interiors dominated by heavier volatiles (H$_2$O, NH$_3$, CH$_4$) under extreme pressures, topped by hydrogen–helium atmospheres. Also covered in {ref}`lecture11`.
 
+## Blackboard derivation: Solar mass from planetary orbits
+
+```{admonition} Blackboard derivation (~10 min)
+:class: tip
+
+**Goal:** Use Kepler's third law to estimate the mass of the Sun from Earth's orbital parameters, then evaluate the planet-to-star mass ratio for the solar system.
+```
+
+### Setup
+
+Consider a planet of mass $M_p$ in a circular orbit of radius $r$ around a star of mass $M_*$. The gravitational force provides the centripetal acceleration:
+
+$$
+\frac{G M_* M_p}{r^2} = \frac{M_p v^2}{r}
+$$
+
+where $v = 2\pi r / P$ is the orbital velocity and $P$ is the orbital period.
+
+### Derivation
+
+Substituting $v = 2\pi r / P$ and cancelling $M_p$:
+
+$$
+\frac{G M_*}{r^2} = \frac{4\pi^2 r}{P^2}
+$$
+
+Solving for the stellar mass:
+
+$$
+\boxed{M_* = \frac{4\pi^2 r^3}{G P^2}}
+$$ (eq:kepler-mass)
+
+This is Newton's form of Kepler's third law (for $M_p \ll M_*$). The planet's mass cancels — the orbital period depends only on the central mass and the orbital radius.
+
+```{note}
+For elliptical orbits, the same relation holds with $r$ replaced by the semi-major axis $a$. The derivation of the general case requires the vis-viva equation, which we will cover in {ref}`lecture02`.
+```
+
+### Application
+
+Using Earth's orbital parameters:
+
+| Quantity | Value |
+|----------|-------|
+| Semi-major axis $a_\oplus$ | $1.496 \times 10^{11}$ m |
+| Orbital period $P_\oplus$ | $3.156 \times 10^7$ s |
+| Gravitational constant $G$ | $6.674 \times 10^{-11}$ m$^3$ kg$^{-1}$ s$^{-2}$ |
+
+$$
+\Msun = \frac{4\pi^2 \times (1.496 \times 10^{11})^3}{6.674 \times 10^{-11} \times (3.156 \times 10^7)^2} \approx 1.99 \times 10^{30} \text{ kg}
+$$
+
+This agrees with the accepted value $\Msun = 1.989 \times 10^{30}$ kg — a remarkably accurate estimate from just two measurable quantities.
+
+### The planet-to-star mass ratio
+
+The more precise form of Kepler's third law is $P^2 = 4\pi^2 a^3 / [G(M_* + M_p)]$, which gives $M_* + M_p$ rather than $M_*$ alone. The approximation $M_* + M_p \approx M_*$ is justified because the planet-to-star mass ratio is tiny:
+
+- Jupiter, the most massive planet: $\Mjup \approx 318 \, \Mearth \approx 1.90 \times 10^{27}$ kg, giving $\Mjup / \Msun \approx 9.5 \times 10^{-4}$.
+- Total mass of all eight planets: $\approx 446 \, \Mearth \approx 2.7 \times 10^{27}$ kg, giving $M_\mathrm{planets}/\Msun \approx 1.3 \times 10^{-3}$.
+
+The Sun contains **99.87%** of the solar system's total mass. Jupiter alone accounts for 71% of the planetary mass. This extreme concentration of mass in the central star is a fundamental property of planetary systems — and one that planet formation theory must explain ({ref}`lecture02`).
+
 ## Comparative planetology as a methodology
 
 Understanding a single planet in isolation is difficult — we cannot perform controlled experiments on entire worlds. **Comparative planetology** addresses this by treating the planets as a natural set of experiments: similar objects subjected to different conditions.
@@ -237,69 +300,6 @@ The table below lists landmark missions that have shaped our understanding of th
 | Europa Clipper | NASA | 2024– | Europa | Investigating habitability of Europa's ocean |
 
 Several missions are planned for the coming decade, including ESA's JUICE (Jupiter icy moons, arrived 2025), the Mars Sample Return campaign, and the Dragonfly rotorcraft to Titan (launch ~2028).
-
-## Blackboard derivation: Solar mass from planetary orbits
-
-```{admonition} Blackboard derivation (~10 min)
-:class: tip
-
-**Goal:** Use Kepler's third law to estimate the mass of the Sun from Earth's orbital parameters, then evaluate the planet-to-star mass ratio for the solar system.
-```
-
-### Setup
-
-Consider a planet of mass $M_p$ in a circular orbit of radius $r$ around a star of mass $M_*$. The gravitational force provides the centripetal acceleration:
-
-$$
-\frac{G M_* M_p}{r^2} = \frac{M_p v^2}{r}
-$$
-
-where $v = 2\pi r / P$ is the orbital velocity and $P$ is the orbital period.
-
-### Derivation
-
-Substituting $v = 2\pi r / P$ and cancelling $M_p$:
-
-$$
-\frac{G M_*}{r^2} = \frac{4\pi^2 r}{P^2}
-$$
-
-Solving for the stellar mass:
-
-$$
-\boxed{M_* = \frac{4\pi^2 r^3}{G P^2}}
-$$ (eq:kepler-mass)
-
-This is Newton's form of Kepler's third law (for $M_p \ll M_*$). The planet's mass cancels — the orbital period depends only on the central mass and the orbital radius.
-
-```{note}
-For elliptical orbits, the same relation holds with $r$ replaced by the semi-major axis $a$. The derivation of the general case requires the vis-viva equation, which we will cover in {ref}`lecture02`.
-```
-
-### Application
-
-Using Earth's orbital parameters:
-
-| Quantity | Value |
-|----------|-------|
-| Semi-major axis $a_\oplus$ | $1.496 \times 10^{11}$ m |
-| Orbital period $P_\oplus$ | $3.156 \times 10^7$ s |
-| Gravitational constant $G$ | $6.674 \times 10^{-11}$ m$^3$ kg$^{-1}$ s$^{-2}$ |
-
-$$
-\Msun = \frac{4\pi^2 \times (1.496 \times 10^{11})^3}{6.674 \times 10^{-11} \times (3.156 \times 10^7)^2} \approx 1.99 \times 10^{30} \text{ kg}
-$$
-
-This agrees with the accepted value $\Msun = 1.989 \times 10^{30}$ kg — a remarkably accurate estimate from just two measurable quantities.
-
-### The planet-to-star mass ratio
-
-The more precise form of Kepler's third law is $P^2 = 4\pi^2 a^3 / [G(M_* + M_p)]$, which gives $M_* + M_p$ rather than $M_*$ alone. The approximation $M_* + M_p \approx M_*$ is justified because the planet-to-star mass ratio is tiny:
-
-- Jupiter, the most massive planet: $\Mjup \approx 318 \, \Mearth \approx 1.90 \times 10^{27}$ kg, giving $\Mjup / \Msun \approx 9.5 \times 10^{-4}$.
-- Total mass of all eight planets: $\approx 446 \, \Mearth \approx 2.7 \times 10^{27}$ kg, giving $M_\mathrm{planets}/\Msun \approx 1.3 \times 10^{-3}$.
-
-The Sun contains **99.87%** of the solar system's total mass. Jupiter alone accounts for 71% of the planetary mass. This extreme concentration of mass in the central star is a fundamental property of planetary systems — and one that planet formation theory must explain ({ref}`lecture02`).
 
 ## References
 

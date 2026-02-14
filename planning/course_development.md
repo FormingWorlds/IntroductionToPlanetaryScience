@@ -69,10 +69,10 @@ Each week consists of:
 - What is a planet? Historical definitions, the IAU debate, and classification schemes
 - Brief history of planetary science: from antiquity through the space age to modern surveys
 - Overview of the solar system: architecture, scale, and key properties
+- **Blackboard derivation (~10 min):** Estimate the total mass of the solar system's planets from Newtonian gravity — derive the planet-to-star mass ratio from orbital period and semi-major axis using Kepler's third law and compare to the observed value
 - Comparative planetology as a methodology
 - Observational techniques: ground-based, space missions, in situ measurements
 - Key spacecraft missions past, present, and planned (Voyager, Cassini, JWST, etc.)
-- **Blackboard derivation (~10 min):** Estimate the total mass of the solar system's planets from Newtonian gravity — derive the planet-to-star mass ratio from orbital period and semi-major axis using Kepler's third law and compare to the observed value
 
 ### Lecture 2: Planet Formation 101 & Orbital Dynamics
 
@@ -81,21 +81,21 @@ Each week consists of:
 - Runaway and oligarchic growth; giant planet core accretion vs. gravitational instability
 - Kepler's laws and orbital elements
 - Two-body problem, reduced mass, and vis-viva equation
+- **Blackboard derivation (~10 min):** Derive the vis-viva equation from energy conservation in a Keplerian orbit (total energy = kinetic + gravitational potential, relate to semi-major axis)
 - Orbital resonances: mean-motion resonances, Laplace resonance of the Galilean moons
 - Tidal forces and tidal locking; Roche limit
 - Planetary migration: types I, II, III and the Nice model
-- **Blackboard derivation (~10 min):** Derive the vis-viva equation from energy conservation in a Keplerian orbit (total energy = kinetic + gravitational potential, relate to semi-major axis)
 
 ### Lecture 3: Planetary Heat & Energy Transport
 
 - Energy sources: accretional heating, gravitational differentiation, radioactive decay, tidal heating
 - Heat transport mechanisms: conduction, convection, radiation
+- **Blackboard derivation (~10 min):** Derive the conductive cooling timescale τ ∼ L²/κ from the heat diffusion equation, and apply it to estimate cooling times for bodies of different sizes (asteroid vs. Moon vs. Earth)
 - Thermal evolution of terrestrial planets: cooling models and parameterized convection
 - Rayleigh number, Nusselt number, and convective vigor
 - Thermal boundary layers and mantle convection basics
 - Surface heat flow: Earth as calibration, comparison to Moon and Mars
 - Tidal dissipation: Io as an extreme case, implications for icy moons
-- **Blackboard derivation (~10 min):** Derive the conductive cooling timescale τ ∼ L²/κ from the heat diffusion equation, and apply it to estimate cooling times for bodies of different sizes (asteroid vs. Moon vs. Earth)
 
 ### Lecture 4: Chemical Differentiation & Magnetospheres
 
@@ -105,28 +105,29 @@ Each week consists of:
 - Volatile delivery and retention: role of impacts and outgassing
 - Planetary magnetic fields: dynamo theory fundamentals
 - Requirements for dynamo action: convecting, electrically conducting fluid
+- **Blackboard derivation (~10 min):** Derive the magnetic Reynolds number Rm = UL/η from the induction equation, and estimate Rm for Earth's core to show that advection dominates over diffusion (dynamo feasibility criterion)
 - Earth's geodynamo: structure, secular variation, reversals
 - Comparative magnetospheres: Mercury (weak), Mars (remnant crustal), Jupiter (strong), Ganymede
 - Magnetosphere–solar wind interaction: bow shock, magnetopause, magnetotail
 - Auroral processes and radiation belts
-- **Blackboard derivation (~10 min):** Derive the magnetic Reynolds number Rm = UL/η from the induction equation, and estimate Rm for Earth's core to show that advection dominates over diffusion (dynamo feasibility criterion)
 
 ### Lecture 5: Atmospheres I — Composition, Structure, & Dynamics
 
 - Atmospheric composition: primary, secondary, and tertiary atmospheres
 - Hydrostatic equilibrium and pressure–temperature profiles
+- **Blackboard derivation (~10 min):** Derive the atmospheric scale height H = kT/mg from hydrostatic equilibrium (dP/dz = −ρg) combined with the ideal gas law, and compute H for Earth, Mars, and Venus
 - Vertical structure: troposphere, stratosphere, mesosphere, thermosphere
 - Radiative transfer basics: optical depth, absorption, emission
 - Greenhouse effect: radiative–convective equilibrium
 - Energy balance: albedo, effective temperature vs. surface temperature
 - Atmospheric escape: Jeans escape, hydrodynamic escape, sputtering, photochemical escape
 - Atmospheric retention: the role of gravity and temperature
-- **Blackboard derivation (~10 min):** Derive the atmospheric scale height H = kT/mg from hydrostatic equilibrium (dP/dz = −ρg) combined with the ideal gas law, and compute H for Earth, Mars, and Venus
 
 ### Lecture 6: Atmospheres II — Clouds, Weather, & Climate
 
 - Cloud formation: condensation, nucleation, and cloud types across the solar system
 - Venus: runaway greenhouse, sulfuric acid clouds, super-rotation
+- **Blackboard derivation (~10 min):** Derive the planetary effective temperature from energy balance (absorbed stellar flux = emitted thermal flux), then add a single-layer greenhouse atmosphere to show how T_surface > T_eff
 - Mars: thin CO₂ atmosphere, dust storms, seasonal CO₂ cycle
 - Titan: methane hydrological cycle, organic haze
 - Giant planet atmospheres: banded structure, zones and belts, composition
@@ -134,23 +135,23 @@ Each week consists of:
 - Jet streams and vortices: Jupiter's Great Red Spot, Saturn's hexagon
 - Climate evolution: faint young Sun problem, long-term climate feedbacks
 - Carbonate–silicate cycle and climate regulation on Earth
-- **Blackboard derivation (~10 min):** Derive the planetary effective temperature from energy balance (absorbed stellar flux = emitted thermal flux), then add a single-layer greenhouse atmosphere to show how T_surface > T_eff
 
 ### Lecture 7: Planetary Surfaces — Geology, Geomorphology, & Geophysics
 
 - Surface processes: impact cratering, volcanism, tectonics, erosion
 - Impact cratering: mechanics, morphology (simple, complex, basins), crater counting and surface ages
+- **Blackboard derivation (~10 min):** Derive the crater scaling law — relate impactor kinetic energy ½mv² to crater diameter using dimensional analysis with (E, ρ, g) to obtain D ~ (E/ρg)^{1/4}, then estimate the crater size from a 1 km asteroid impact on the Moon
 - Volcanism: effusive vs. explosive, volcanic landforms across the solar system
 - Tectonics: plate tectonics on Earth, stagnant lid on other terrestrial bodies
 - Erosion and weathering: aeolian, fluvial, glacial, chemical
 - Remote sensing of surfaces: spectroscopy, radar, altimetry
 - Regolith formation and space weathering
 - Cryovolcanism on icy bodies: Enceladus, Triton, Europa
-- **Blackboard derivation (~10 min):** Derive the crater scaling law — relate impactor kinetic energy ½mv² to crater diameter using dimensional analysis and the pi-scaling theorem, then estimate the crater size from a 1 km asteroid impact on the Moon
 
 ### Lecture 8: Planetary Interiors — Structure, Composition, & Dynamics
 
 - Probing interiors: seismology, gravity field, moment of inertia
+- **Blackboard derivation (~10 min):** Derive the moment of inertia factor C/MR² for a uniform sphere vs. a differentiated two-layer body (dense core + lighter mantle), and show how the measured value constrains core size
 - Equations of state: relating pressure, density, and temperature at depth
 - Earth's interior: crust, mantle, outer core, inner core
 - Mantle rheology: viscous flow, mantle convection patterns
@@ -159,7 +160,6 @@ Each week consists of:
 - Giant planet interiors: metallic hydrogen, layered vs. dilute cores
 - Ice giant interiors: water, ammonia, methane ices under extreme pressures
 - Icy moon interiors: subsurface oceans (Europa, Enceladus, Titan)
-- **Blackboard derivation (~10 min):** Derive the moment of inertia factor C/MR² for a uniform sphere vs. a differentiated two-layer body (dense core + lighter mantle), and show how the measured value constrains core size
 
 ### Lecture 9: Rocky Planets — Earth & Venus
 
@@ -170,9 +170,9 @@ Each week consists of:
 - Venus surface: Magellan radar mapping, volcanic plains, tesserae, coronae
 - Venus atmosphere: dense CO₂, sulfuric acid clouds, super-rotation
 - Runaway greenhouse on Venus: implications for climate science
+- **Blackboard derivation (~10 min):** Derive the runaway greenhouse threshold — show that outgoing longwave radiation reaches a maximum in a moist atmosphere (the Simpson–Nakajima limit): when absorbed stellar flux exceeds this limit, surface temperature diverges. Estimate the critical solar flux and compare to Venus's orbit
 - Missing water on Venus: D/H ratio constraints
 - Comparative habitability: why Earth and Venus diverged
-- **Blackboard derivation (~10 min):** Derive the runaway greenhouse threshold — starting from the outgoing longwave radiation limit (Simpson–Nakajima limit), show that there is a maximum flux a moist atmosphere can radiate, and estimate the critical solar flux at which Venus lost its water
 
 ### Lecture 10: Rocky Planets — Mercury & Mars
 
@@ -183,10 +183,10 @@ Each week consists of:
 - Mars: geological history (Noachian, Hesperian, Amazonian epochs)
 - Evidence for past water: valley networks, outflow channels, mineral signatures
 - Mars today: thin atmosphere, seasonal dynamics, methane detections
+- **Blackboard derivation (~10 min):** Derive the Jeans escape flux — starting from the Maxwell–Boltzmann velocity distribution, integrate above the escape velocity to obtain the escape parameter λ = GMm/kTr and the escape rate, then compare H₂ vs. CO₂ escape from Mars
 - Olympus Mons, Valles Marineris, and the hemispheric dichotomy
 - Mars exploration: rovers, orbiters, sample return plans
 - Mars habitability: past and present prospects
-- **Blackboard derivation (~10 min):** Derive the Jeans escape flux — starting from the Maxwell–Boltzmann velocity distribution, integrate above the escape velocity to obtain the escape parameter λ = GMm/kTr and the escape rate, then compare H₂ vs. CO₂ escape from Mars
 
 ### Lecture 11: Gas & Ice Giants — Jupiter, Saturn, Uranus, Neptune
 
@@ -195,17 +195,18 @@ Each week consists of:
 - Saturn: ring system structure, dynamics, origin and evolution
 - Saturn's moons: Titan (atmosphere, lakes), Enceladus (plumes, subsurface ocean)
 - Planetary rings: composition, Roche limit, shepherding moons, ring–moon interactions
+- **Blackboard derivation (~10 min):** Derive the Roche limit — equate the tidal force from the planet on a satellite element with the satellite's self-gravity to obtain d_Roche ≈ 2.46 R_p (ρ_p/ρ_s)^{1/3}, and apply to Saturn's rings
 - Uranus: extreme axial tilt, muted atmosphere, interior structure
 - Neptune: atmospheric activity, Great Dark Spot, internal heat excess
 - Triton: retrograde orbit, captured KBO, cryovolcanism
 - Ice giant exploration: current knowledge gaps and future mission concepts
-- **Blackboard derivation (~10 min):** Derive the Roche limit — equate the tidal force from the planet on a satellite element with the satellite's self-gravity to obtain d_Roche ≈ 2.46 R_p (ρ_p/ρ_s)^{1/3}, and apply to Saturn's rings
 
 ### Lecture 12: Meteorites, Asteroid Belt, Minor Planets & Comets
 
 - Meteorite classification: chondrites (ordinary, carbonaceous, enstatite), achondrites, irons, stony-irons
 - Chondrules and CAIs: oldest solar system solids, formation conditions
 - Isotopic dating: Pb–Pb, Al–Mg, Hf–W chronometry
+- **Blackboard derivation (~10 min):** Derive the radioactive decay law N(t) = N₀ e^{−λt} and the isochron equation for the Pb–Pb system, then show how the slope of the isochron gives the age of the oldest solar system solids (CAIs, 4.567 Gyr)
 - Meteorites as probes of early solar system conditions and parent body processes
 - Asteroid belt: structure, orbital families, resonance gaps (Kirkwood gaps)
 - Asteroid taxonomy: C-, S-, M-types and compositional mapping
@@ -215,13 +216,13 @@ Each week consists of:
 - Comets: composition (ices, dust, organics), activity, tails (ion and dust)
 - Short-period vs. long-period comets: dynamical origins
 - Rosetta mission to 67P: key results
-- **Blackboard derivation (~10 min):** Derive the radioactive decay law N(t) = N₀ e^{−λt} and the isochron equation for the Pb–Pb system, then show how the slope of the isochron gives the age of the oldest solar system solids (CAIs, 4.567 Gyr)
 
 ### Lecture 13: Exoplanets — Detection Methods, Demographics, & Characterization
 
 - Historical context: first detections (pulsar planets, 51 Peg b)
 - Radial velocity method: Doppler wobble, mass–period sensitivity
 - Transit method: light curves, radius determination, Kepler/TESS missions
+- **Blackboard derivation (~10 min):** Derive the transit depth (ΔF/F = (R_p/R_★)², ~2 min geometry), then the radial velocity semi-amplitude K from momentum conservation (~5 min), and show how combining both measurements yields mass, radius, and bulk density of an exoplanet (~3 min)
 - Direct imaging: coronagraphy, high-contrast techniques, current capabilities
 - Other methods: astrometry (Gaia), microlensing, timing variations
 - Exoplanet demographics: occurrence rates, period–radius distribution, the radius valley
@@ -229,20 +230,19 @@ Each week consists of:
 - Atmospheric characterization: transmission and emission spectroscopy
 - JWST results: atmospheric detections, thermal emission maps
 - Habitability beyond the solar system: habitable zone concept, biosignatures
-- **Blackboard derivation (~10 min):** Derive the transit depth equation (ΔF/F = (R_p/R_★)²) and the radial velocity semi-amplitude K from the two-body problem, then show how combining both yields both mass and radius (and hence bulk density) of an exoplanet
 
 ### Lecture 14: Synthesis — Solar System in Context & Astrobiology
 
 - Our solar system as one planetary system among many: what is typical, what is unusual?
 - Planet formation theory meets observations: successes and open questions
 - Habitability as a systems property: star, orbit, planet, atmosphere, interior coupling
+- **Blackboard derivation (~10 min):** Derive the habitable zone boundaries — from L_★ = 4πd²F and the condition that surface temperature allows liquid water, obtain the inner and outer HZ distances as a function of stellar luminosity, and compare for G, K, and M dwarfs
 - Water in the universe: origin, delivery mechanisms, and distribution
 - Astrobiology: requirements for life, extremophiles, biosignature gases
 - Solar system targets for life detection: Mars, Europa, Enceladus, Titan
 - Exoplanet targets and future missions: HWO, LIFE, ground-based ELTs
 - Open questions and frontiers in planetary science
 - Course synthesis: connecting formation to present-day diversity
-- **Blackboard derivation (~10 min):** Derive the habitable zone boundaries — from L_★ = 4πd²F and the condition that surface temperature allows liquid water, obtain the inner and outer HZ distances as a function of stellar luminosity, and compare for G, K, and M dwarfs
 
 ---
 
