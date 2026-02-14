@@ -1,3 +1,6 @@
+# Large files and symbolic links
+content/course2025
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -205,3 +208,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Course content symlink (Google Drive)
+content/course2025
