@@ -1,0 +1,21 @@
+# Table of contents
+# https://jupyterbook.org/en/stable/structure/toc.html
+
+format: jb-book
+root: intro
+
+chapters:
+  - file: 01_introduction/introduction
+  - file: 02_formation_orbits/formation_orbits
+  - file: 03_heat_energy/heat_energy
+  - file: 04_differentiation_magnetospheres/differentiation_magnetospheres
+  - file: 05_atmospheres_1/atmospheres_1
+  - file: 06_atmospheres_2/atmospheres_2
+  - file: 07_surfaces/surfaces
+  - file: 08_interiors/interiors
+  - file: 09_earth_venus/earth_venus
+  - file: 10_mercury_mars/mercury_mars
+  - file: 11_gas_ice_giants/gas_ice_giants
+  - file: 12_small_bodies/small_bodies
+  - file: 13_exoplanets/exoplanets
+  - file: 14_synthesis/synthesis
