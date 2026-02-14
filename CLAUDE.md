@@ -21,14 +21,14 @@ University course materials repository for "Introduction to Planetary Science" a
 
 ## Build System
 
-Uses **Jupyter Book v1** (`jupyter-book<2`) with Sphinx backend. Dependencies in `requirements.txt`.
+Uses **Jupyter Book v1** (`jupyter-book<2`) with Sphinx backend. Dependencies in `pyproject.toml`.
 
 ### Environment setup
 
 Requires Python 3.12+.
 
 ```bash
-pip install -r requirements.txt
+pip install .
 ```
 
 ### Build commands
