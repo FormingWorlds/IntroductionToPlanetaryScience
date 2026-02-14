@@ -64,6 +64,8 @@ Each week consists of:
 
 ### Lecture 1: Introduction & History of Planetary Science
 
+- Opening: The Pale Blue Dot — Voyager 1's 1990 image of Earth as a sub-pixel speck from 40 AU, reframing our world as one planet among many
+- Three driving questions that structure the course: (1) How did our solar system form, and is it typical? (2) What determines whether a planet becomes habitable? (3) Are we alone?
 - What is a planet? Historical definitions, the IAU debate, and classification schemes
 - Brief history of planetary science: from antiquity through the space age to modern surveys
 - Overview of the solar system: architecture, scale, and key properties
@@ -387,7 +389,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
-| 1 | Introduction & history | Not started | High |
+| 1 | Introduction & history | In progress (opening section done) | High |
 | 2 | Planet formation & orbital dynamics | Not started | High |
 | 3 | Planetary heat & energy transport | Not started | High |
 | 4 | Chemical differentiation & magnetospheres | Not started | High |
