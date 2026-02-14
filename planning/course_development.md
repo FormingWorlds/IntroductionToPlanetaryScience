@@ -4,6 +4,8 @@
 **Institution:** Kapteyn Astronomical Institute, University of Groningen
 **Level:** 2nd-year BSc Astronomy
 **Credits:** 5 ECTS
+**Duration:** 8 weeks (7 teaching weeks + 1 exam week)
+**Period:** September–November 2026
 
 ---
 
@@ -31,8 +33,8 @@ Students completing this course will be able to:
 
 | Component | Weight | Format |
 |-----------|--------|--------|
-| Mid-term exam | 30% | Written, 2 hours |
-| Final exam | 70% | Written, 3 hours, cumulative |
+| Mid-term exam | 30% | Written, 60 minutes |
+| Final exam | 70% | Written, 90 minutes, cumulative |
 
 - **Homework sheets** (7 total) are **ungraded formative practice**. Students are strongly encouraged to complete them as preparation for exams; solutions are discussed in tutorial sessions.
 - All lecture notes are custom-developed for this course (no required textbook).
@@ -40,8 +42,21 @@ Students completing this course will be able to:
 ### Weekly Structure
 
 Each week consists of:
-- 2 × 45-minute lectures
-- 1 × 45-minute tutorial/exercise session (weeks with homework due)
+- 2 × 90-minute lectures
+- 1 tutorial/exercise session (weeks with homework due)
+
+### Week-by-Week Schedule
+
+| Week | Lectures | Homework | Notes |
+|------|----------|----------|-------|
+| 1 | L1: Introduction & History; L2: Formation & Orbits | | |
+| 2 | L3: Heat & Energy; L4: Differentiation & Magnetospheres | HW 1 due | |
+| 3 | L5: Atmospheres I; L6: Atmospheres II | HW 2 due | |
+| 4 | L7: Surfaces; **Mid-term exam (60 min)** | HW 3 due | Mid-term covers L1–7 |
+| 5 | L8: Interiors; L9: Earth & Venus | HW 4 due | |
+| 6 | L10: Mercury & Mars; L11: Gas & Ice Giants | HW 5 due | |
+| 7 | L12: Small Bodies; L13: Exoplanets; L14: Synthesis | HW 6 due | 3 lectures this week |
+| 8 | **Final exam (90 min)** | HW 7 due | Exam week |
 
 ---
 
@@ -221,7 +236,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 ### Homework 1: Orbits & Formation
 **Follows:** Lectures 1–2
-**Due:** Week 2 tutorial
+**Due:** Week 2
 **Topics covered:**
 - Applying Kepler's laws: orbital periods, semi-major axes, eccentricities
 - Vis-viva equation applications
@@ -233,7 +248,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 ### Homework 2: Thermal Evolution & Differentiation
 **Follows:** Lectures 3–4
-**Due:** Week 4 tutorial
+**Due:** Week 3
 **Topics covered:**
 - Heat conduction: cooling timescales for bodies of different sizes
 - Rayleigh number calculation and convective regime assessment
@@ -245,7 +260,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 ### Homework 3: Atmospheres
 **Follows:** Lectures 5–6
-**Due:** Week 6 tutorial
+**Due:** Week 4
 **Topics covered:**
 - Hydrostatic equilibrium: derive and apply scale heights for different planets
 - Radiative equilibrium: effective temperature vs. actual surface temperature
@@ -257,7 +272,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 ### Homework 4: Surfaces & Interiors
 **Follows:** Lectures 7–8
-**Due:** Week 8 tutorial
+**Due:** Week 5
 **Topics covered:**
 - Crater counting: derive surface ages from crater size–frequency distributions
 - Impact energy: calculate energy released by impactors of different sizes and velocities
@@ -269,7 +284,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 ### Homework 5: Terrestrial Planets
 **Follows:** Lectures 9–10
-**Due:** Week 10 tutorial
+**Due:** Week 6
 **Topics covered:**
 - Comparative climatology: Venus vs. Earth energy balance and greenhouse warming
 - D/H ratio: estimate water loss from Venus
@@ -281,7 +296,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 ### Homework 6: Giant Planets & Small Bodies
 **Follows:** Lectures 11–12
-**Due:** Week 12 tutorial
+**Due:** Week 7
 **Topics covered:**
 - Giant planet structure: estimate metallic hydrogen transition pressure
 - Ring dynamics: Roche limit, ring particle size distribution, shepherding moon forces
@@ -293,7 +308,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 ### Homework 7: Exoplanets & Synthesis
 **Follows:** Lectures 13–14
-**Due:** Week 14 tutorial
+**Due:** Week 8 (before final exam)
 **Topics covered:**
 - Radial velocity: derive minimum mass from stellar wobble data
 - Transit depth: calculate planet radius from light curve
@@ -309,9 +324,9 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 ### Mid-term Exam
 
-**Timing:** After Lecture 7 (approximately week 7–8)
+**Timing:** Week 4 (replaces one lecture slot, after Lecture 7)
 **Weight:** 30%
-**Duration:** 2 hours
+**Duration:** 60 minutes
 **Scope:** Lectures 1–7
 
 **Coverage:**
@@ -328,9 +343,9 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 ### Final Exam
 
-**Timing:** End of course (approximately week 15–16)
+**Timing:** Week 8 (exam week)
 **Weight:** 70%
-**Duration:** 3 hours
+**Duration:** 90 minutes
 **Scope:** Cumulative (Lectures 1–14, emphasis on Lectures 8–14)
 
 **Coverage:**

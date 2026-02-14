@@ -1,0 +1,15 @@
+/* Custom styles for Introduction to Planetary Science */
+
+/* Style learning objectives admonitions */
+div.admonition.highlights {
+    border-color: #1b7ced;
+}
+
+div.admonition.highlights > .admonition-title {
+    background-color: rgba(27, 124, 237, 0.1);
+}
+
+/* Units and quantities styling */
+.unit {
+    font-variant: small-caps;
+}

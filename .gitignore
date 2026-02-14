@@ -1,6 +1,9 @@
 # Large files and symbolic links
 content/course2025
 
+# Jupyter Book build artifacts
+book/_build/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
