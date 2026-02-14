@@ -59,9 +59,27 @@ Babylonian astronomers systematically tracked planetary positions as early as 18
 
 The Copernican revolution began in 1543, when Nicolaus Copernicus published *De revolutionibus*, placing the Sun at the centre. Johannes Kepler refined this model into his three empirical laws of planetary motion (1609–1619), replacing circles with ellipses. Isaac Newton's *Principia* (1687) showed that all three of Kepler's laws follow from a single universal law of gravitation — the first grand unification in physics.
 
+```{figure} https://upload.wikimedia.org/wikipedia/commons/9/9a/CopernicSystem.png
+:name: fig:copernican-system
+:width: 350px
+:align: center
+
+Heliocentric model of the solar system from Copernicus's *De revolutionibus orbium coelestium* (1543). The Sun (*Sol*) sits at the centre, with the planets — including Earth (*Terra*) — orbiting around it. This woodcut marks the conceptual shift from the geocentric cosmology that had dominated for over a millennium. Credit: Nicolaus Copernicus, public domain.
+```
+
 ### The telescopic era
 
-Galileo Galilei's telescope observations in 1610 transformed planetary science from mathematics into a physical science. He discovered four moons orbiting Jupiter (now called the Galilean moons), observed the phases of Venus (confirming it orbits the Sun), and resolved Saturn's rings (though he could not interpret their structure). Over the following centuries, improving telescopes revealed surface features on Mars, the Great Red Spot on Jupiter, and the detailed ring structure of Saturn.
+Galileo Galilei's telescope observations in 1610 transformed planetary science from mathematics into a physical science. He discovered four moons orbiting Jupiter (now called the Galilean moons), observed the phases of Venus (confirming it orbits the Sun), and resolved Saturn's rings (though he could not interpret their structure).
+
+```{figure} https://upload.wikimedia.org/wikipedia/commons/d/d0/Sidereus_Nuncius_Medicean_Stars.jpg
+:name: fig:sidereus-nuncius
+:width: 250px
+:align: center
+
+Page from Galileo's *Sidereus Nuncius* (1610) showing his observations of Jupiter and its four largest moons — the *Medicea Sidera* (Medicean Stars). The sketches record the changing positions of the moons over successive nights, providing direct evidence that not all celestial bodies orbit the Earth. Credit: Galileo Galilei, public domain.
+```
+
+Over the following centuries, improving telescopes revealed surface features on Mars, the Great Red Spot on Jupiter, and the detailed ring structure of Saturn.
 
 The 19th century brought spectroscopy, allowing astronomers to determine atmospheric compositions remotely for the first time. Photography enabled systematic surveys, and the discoveries of Uranus, Neptune, and Pluto progressively expanded the known solar system.
 
@@ -71,9 +89,25 @@ The modern era of planetary science began on 14 December 1962, when NASA's Marin
 
 The pace of exploration accelerated rapidly. Mariner 4 returned the first close-up images of Mars in 1965, revealing a cratered, apparently dead world — not the canal-laced surface some had imagined. The Soviet Venera 7 achieved the first landing on another planet (Venus, 1970). NASA's Viking landers (1976) conducted the first experiments searching for life on Mars. The twin Voyager spacecraft (launched 1977) exploited a rare planetary alignment to conduct a grand tour of the outer solar system, visiting Jupiter, Saturn, Uranus, and Neptune between 1979 and 1989.
 
+```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Voyager_2_path.svg/1280px-Voyager_2_path.svg.png
+:name: fig:voyager2-trajectory
+:width: 500px
+:align: center
+
+Trajectory of NASA's Voyager 2 spacecraft during its grand tour of the outer solar system. Gravity assists at Jupiter (1979), Saturn (1981), Uranus (1986), and Neptune (1989) successively redirected the spacecraft to each subsequent target — a trajectory made possible by a rare alignment of the outer planets that occurs roughly once every 175 years. Credit: NASA/JPL, public domain.
+```
+
 ### The exoplanet revolution
 
 In 1992, Aleksander Wolszczan and Dale Frail announced the discovery of planets orbiting a pulsar — the first confirmed exoplanets {cite}`Wolszczan1992`. Three years later, Michel Mayor and Didier Queloz detected 51 Pegasi b, the first planet orbiting a Sun-like star — a "hot Jupiter" with a 4.2-day orbit that challenged all existing formation theories {cite}`MayorQueloz1995`. NASA's Kepler mission (2009–2018) discovered thousands of transiting exoplanets, while the ongoing TESS mission (launched 2018) surveys the brightest nearby stars. JWST, launched in December 2021, is now characterising exoplanet atmospheres through transmission and emission spectroscopy ({ref}`lecture13`).
+
+```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Theoretical_Transiting_Exoplanet_Light_Curve.svg/1280px-Theoretical_Transiting_Exoplanet_Light_Curve.svg.png
+:name: fig:transit-light-curve
+:width: 400px
+:align: center
+
+Schematic of a transiting exoplanet light curve. As a planet passes in front of its host star, it blocks a fraction of the starlight proportional to $(R_p/R_\star)^2$, producing a characteristic dip in the observed brightness. The transit method — used by Kepler, TESS, and follow-up observations with JWST — has discovered the majority of known exoplanets. Credit: CielProfond, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+```
 
 Today, planetary science integrates astronomy, physics, chemistry, geology, and atmospheric science. It spans scales from dust grains in protoplanetary disks to the demographics of planetary systems across the Galaxy.
 
@@ -88,6 +122,14 @@ The solar system extends from the Sun (radius $\Rsun = 6.96 \times 10^8$ m) to t
 - **The outer solar system:** Four giant planets — Jupiter, Saturn (gas giants), Uranus, Neptune (ice giants) — between 5.2 and 30.1 AU. These are massive, with thick hydrogen–helium envelopes and extensive moon systems.
 - **The Kuiper Belt:** A disk of icy bodies beyond Neptune (~30–50 AU), including the dwarf planets Pluto, Eris, and Makemake. The scattered disk extends to greater distances with more eccentric orbits.
 - **The Oort Cloud:** A spherical shell of icy bodies at $10^4$–$10^5$ AU, believed to be the source of long-period comets. Its existence is inferred from cometary orbits but has not been directly observed.
+
+```{figure} https://upload.wikimedia.org/wikipedia/commons/3/3c/Size_planets_comparison.jpg
+:name: fig:planet-sizes
+:width: 700px
+:align: center
+
+The eight planets of the solar system shown at their approximate relative sizes. Top row: Jupiter, Saturn, Uranus, Neptune (the giant planets). Bottom row: Earth, Venus, Mars, Mercury (the terrestrial planets). Note the enormous size difference — Jupiter's diameter is roughly 29 times that of Mercury. Credit: Lsmpascal, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+```
 
 ### Planetary properties
 
@@ -121,6 +163,14 @@ Planets are broadly classified by composition and structure:
 Understanding a single planet in isolation is difficult — we cannot perform controlled experiments on entire worlds. **Comparative planetology** addresses this by treating the planets as a natural set of experiments: similar objects subjected to different conditions.
 
 Consider the terrestrial planets. Venus, Earth, and Mars have broadly similar compositions and formed in the same protoplanetary disk, yet their surfaces and atmospheres are radically different:
+
+```{figure} https://upload.wikimedia.org/wikipedia/commons/b/b9/Terrestrial_planet_size_comparisons.jpg
+:name: fig:terrestrial-planets
+:width: 600px
+:align: center
+
+The four terrestrial planets at approximate relative scale. From left to right: Mercury, Venus, Earth, and Mars. Despite forming in the same protoplanetary disk, these worlds span a factor of ~18 in mass and have followed dramatically different evolutionary paths. Credit: NASA/JPL, public domain.
+```
 
 | Property | Venus | Earth | Mars |
 |----------|-------|-------|------|
