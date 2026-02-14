@@ -98,6 +98,10 @@ Each lecture `.md` file in `book/` **must** end with a dedicated `## References`
 1. Every factual claim, equation, or dataset that originates from a specific source **must** be cited
 2. Add the corresponding BibTeX entry to `book/references.bib` if it does not already exist
 3. Verify that the `## References` section with the `{bibliography}` directive is present at the end of the lecture file
+4. **Always update `planning/course_development.md`** to reflect the changes — this includes:
+   - The lecture outline (section 2) if topics are added, removed, or reordered
+   - The status table (section 5) to track progress (e.g., "Not started" → "In progress" → "Draft complete")
+   - The homework or exam sections if related content changes
 
 ## Scientific Accuracy & Source Verification
 
