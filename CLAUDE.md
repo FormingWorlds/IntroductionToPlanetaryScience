@@ -23,13 +23,29 @@ University course materials repository for "Introduction to Planetary Science" a
 
 Uses **Jupyter Book v1** (`jupyter-book<2`) with Sphinx backend. Dependencies in `requirements.txt`.
 
+### Environment setup
+
+Requires Python 3.12+.
+
+```bash
+pip install -r requirements.txt
+```
+
+### Build commands
+
 ```bash
 make html       # Build browsable HTML → book/_build/html/
+make pdf        # Build PDF via pdfhtml → book/_build/pdf/
 make pdflatex   # Build PDF via XeLaTeX → book/_build/latex/
 make clean      # Remove build artifacts
 ```
 
 Build artifacts in `book/_build/` are gitignored.
+
+### Deployed site
+
+HTML is auto-deployed to GitHub Pages on push to `main`:
+https://formingworlds.github.io/IntroductionToPlanetaryScience/
 
 ## Key Technical Details
 
@@ -39,6 +55,14 @@ Build artifacts in `book/_build/` are gitignored.
 - Math macros are defined in both `mathjax3_config` (HTML) and `latex_elements.preamble` (PDF) in `_config.yml` — new macros must be added to both.
 - The `physics` LaTeX package conflicts with Sphinx output; custom `\dv`, `\dd`, `\pdv` macros are used instead.
 - LaTeX packages available: `amsmath`, `amssymb`, `mhchem` (for chemical formulae like `\ce{CO2}`).
+- Custom math macros defined in `_config.yml` (available in both HTML and PDF):
+  - `\dv{f}{x}` — total derivative, `\dd` — differential d, `\pdv{f}{x}` — partial derivative
+  - `\Msun`, `\Rsun`, `\Lsun` — solar mass, radius, luminosity
+  - `\Mearth`, `\Rearth` — Earth mass, radius
+  - `\Mjup`, `\Rjup` — Jupiter mass, radius
+  - `\kB` — Boltzmann constant
+- The `sphinx-proof` extension is loaded, providing theorem-like directives: `{prf:theorem}`, `{prf:proof}`, `{prf:definition}`, `{prf:example}`, etc.
+- Figures live in `<lecture_dir>/figures/` and are referenced with MyST syntax: `` ```{figure} figures/filename.png``` ``
 
 ## References & Citations
 
