@@ -390,7 +390,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
 | 1 | Introduction & history | Draft complete (figures added) | High |
-| 2 | Planet formation & orbital dynamics | Not started | High |
+| 2 | Planet formation & orbital dynamics | Draft complete | High |
 | 3 | Planetary heat & energy transport | Not started | High |
 | 4 | Chemical differentiation & magnetospheres | Not started | High |
 | 5 | Atmospheres I | Not started | High |
