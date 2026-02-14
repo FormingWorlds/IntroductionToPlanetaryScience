@@ -27,4 +27,4 @@ These lecture notes accompany the course *Introduction to Planetary Science*, co
 
 ## About
 
-These notes are developed by [Tim Lichtenberg](https://timlichtenberg.com) at the Kapteyn Astronomical Institute as part of the [FormingWorlds](https://github.com/FormingWorlds) initiative. They are designed to be self-contained and do not require a separate textbook.
+These notes are developed by [Tim Lichtenberg](https://www.formingworlds.space/team/tim-lichtenberg) at the Kapteyn Astronomical Institute as part of the [FormingWorlds](https://github.com/FormingWorlds) initiative. They are designed to be self-contained and do not require a separate textbook.
