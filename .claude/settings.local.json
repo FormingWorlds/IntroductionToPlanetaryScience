@@ -8,7 +8,9 @@
       "Bash(git -C /Users/timlichtenberg/git/IntroductionToPlanetaryScience remote:*)",
       "Bash(claude mcp add:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(claude mcp list:*)",
+      "Bash(python3:*)"
     ]
   }
 }
