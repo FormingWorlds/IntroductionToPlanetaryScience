@@ -20,6 +20,24 @@
             "command": "if echo \"$TOOL_INPUT\" | grep -q '_toc.yml'; then echo 'CAUTION: Modifying _toc.yml affects the entire book structure. Proceed carefully.'; fi"
           }
         ]
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$TOOL_INPUT\" | grep -q 'references.bib'; then echo 'CAUTION: Modifying references.bib — ensure no existing citation keys are renamed or removed, as this will break lectures that cite them.'; fi"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$TOOL_INPUT\" | grep -q '_config.yml'; then echo 'REMINDER: Math macros must be added to BOTH mathjax3_config (HTML) AND latex_elements.preamble (PDF) sections in _config.yml.'; fi"
+          }
+        ]
       }
     ]
   }
