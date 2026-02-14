@@ -406,6 +406,32 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 **Priority rationale:** Lectures 1–8 cover foundational topics needed before planet-specific lectures; Lectures 9–13 build on these; Lecture 14 synthesizes the full course.
 
+#### Lecture Slides (14 sets, PDF from LaTeX)
+
+Each lecture requires a companion PDF slide deck compiled from LaTeX source files. The slides should cover the same content as the corresponding lecture notes in the Jupyter Book, distilled into a visual presentation format suitable for classroom delivery.
+
+| # | Lecture | Status | Priority |
+|---|--------|--------|----------|
+| 1 | Introduction & history | Not started | High |
+| 2 | Planet formation & orbital dynamics | Not started | High |
+| 3 | Planetary heat & energy transport | Not started | High |
+| 4 | Chemical differentiation & magnetospheres | Not started | High |
+| 5 | Atmospheres I | Not started | High |
+| 6 | Atmospheres II | Not started | High |
+| 7 | Planetary surfaces | Not started | High |
+| 8 | Planetary interiors | Not started | High |
+| 9 | Rocky planets: Earth & Venus | Not started | Medium |
+| 10 | Rocky planets: Mercury & Mars | Not started | Medium |
+| 11 | Gas & ice giants | Not started | Medium |
+| 12 | Meteorites, asteroids, minor planets & comets | Not started | Medium |
+| 13 | Exoplanets | Not started | Medium |
+| 14 | Synthesis & astrobiology | Not started | Low |
+
+Each slide deck requires:
+- LaTeX source file (Beamer or equivalent presentation class)
+- Compiled PDF for distribution to students
+- Figures and diagrams consistent with the Jupyter Book lecture notes
+
 #### Homework Sheets (7 sets, each with solutions)
 
 | # | Homework | Follows Lectures | Status |
@@ -455,7 +481,9 @@ The previous iteration (12 lectures, 9 tutorials) provides a foundation to draw 
 ### Development Sequence
 
 1. **Phase 1 — Lecture notes (Lectures 1–8):** Core foundational content, needed first since all other lectures build on these.
-2. **Phase 2 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7, developed in parallel with Phase 1.
-3. **Phase 3 — Lecture notes (Lectures 9–14):** Planet-specific, exoplanets, and synthesis lectures.
-4. **Phase 4 — Homework sheets 5–7 + final exam:** Remaining homework and cumulative final exam.
-5. **Phase 5 — Review and polish:** Cross-referencing between lectures, consistency check, equation sheet compilation.
+2. **Phase 2 — Lecture slides (Lectures 1–8):** PDF slide decks from LaTeX, covering the same content as the Jupyter Book notes for classroom delivery.
+3. **Phase 3 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7.
+4. **Phase 4 — Lecture notes (Lectures 9–14):** Planet-specific, exoplanets, and synthesis lectures.
+5. **Phase 5 — Lecture slides (Lectures 9–14):** Companion slide decks for the remaining lectures.
+6. **Phase 6 — Homework sheets 5–7 + final exam:** Remaining homework and cumulative final exam.
+7. **Phase 7 — Review and polish:** Cross-referencing between lectures, consistency check, equation sheet compilation.
