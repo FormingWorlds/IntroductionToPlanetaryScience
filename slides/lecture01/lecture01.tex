@@ -90,46 +90,64 @@
 
 % ── Driving question 1 ─────────────────────────────────────
 \begin{frame}{Question 1: How Did Our Solar System Form?}
-  \begin{itemize}
-    \item Before 1992: zero confirmed exoplanets
-    \item Today: $>5{,}700$ confirmed exoplanets in $>4{,}300$ systems
-    \item $\sim$0.4--0.6 rocky, habitable-zone planets per Sun-like star (Bryson et al.\ 2021)
-    \item[\color{ipsAccent}$\Rightarrow$] \textbf{Hundreds of millions} of such worlds in the Milky Way
-    \item Yet we have detailed knowledge of only \textbf{one} planetary system
-  \end{itemize}
-  \vskip12pt
-  \begin{block}{}
-    Is our solar system typical --- or unusual?
-  \end{block}
+  \begin{columns}[c]
+    \column{0.42\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{hl_tau_alma}
+    \source{ALMA/ESO/NAOJ/NRAO (2014)}
+
+    \column{0.55\textwidth}
+    \begin{itemize}
+      \item Before 1992: zero confirmed exoplanets
+      \item Today: $>5{,}700$ confirmed exoplanets in $>4{,}300$ systems
+      \item $\sim$0.4--0.6 rocky, habitable-zone planets per Sun-like star
+      \item[\color{ipsAccent}$\Rightarrow$] \textbf{Hundreds of millions} of such worlds in the Milky Way
+    \end{itemize}
+    \vskip6pt
+    \begin{block}{}
+      Is our solar system typical --- or unusual?
+    \end{block}
+  \end{columns}
 \end{frame}
 
 % ── Driving question 2 ─────────────────────────────────────
 \begin{frame}{Question 2: What Makes a Planet Habitable?}
-  \begin{itemize}
-    \item Venus, Earth, and Mars formed from the same protoplanetary disk
-    \item All three may have had early liquid water
-    \item Today:
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{venus_earth_mars}
+    \source{NASA/JPL-Caltech (2022)}
+
+    \column{0.47\textwidth}
     \begin{itemize}
-      \item \textbf{Venus:} 460\,\textdegree C surface, 90~bar $\mathrm{CO_2}$
-      \item \textbf{Earth:} Oceans, biosphere, plate tectonics
-      \item \textbf{Mars:} Cold desert, atmosphere $<1\%$ of Earth's
+      \item Same protoplanetary disk, similar compositions
+      \item All three may have had early liquid water
+      \item Today:
+      \begin{itemize}
+        \item \textbf{Venus:} 460\,\textdegree C, 90~bar $\mathrm{CO_2}$
+        \item \textbf{Earth:} Oceans, biosphere
+        \item \textbf{Mars:} Cold desert, $<$1\% atmosphere
+      \end{itemize}
     \end{itemize}
-  \end{itemize}
-  \vskip8pt
-  \begin{alertblock}{}
-    Why did these three siblings diverge so dramatically?
-  \end{alertblock}
+    \vskip4pt
+    \begin{alertblock}{}
+      Why did they diverge?
+    \end{alertblock}
+  \end{columns}
 \end{frame}
 
 % ── Driving question 3 ─────────────────────────────────────
 \begin{frame}{Question 3: Are We Alone?}
+  \centering
+  \includegraphics[width=0.78\textwidth]{trappist1_lineup}
+  \source{NASA/JPL-Caltech (2017)}
+  \vskip6pt
   \begin{itemize}
-    \item JWST is characterising atmospheres on rocky exoplanets
-    \item TRAPPIST-1 system: seven Earth-sized planets, three in the habitable zone
+    \item TRAPPIST-1: seven Earth-sized planets, three in the habitable zone
+    \item JWST is now characterising their atmospheres
     \item Within your careers, this question may become answerable
-    \item But only if we understand what makes a planet habitable in the first place
   \end{itemize}
-  \vskip12pt
+  \vskip4pt
   \keyresult{Every topic in this course connects back to these three questions.}
 \end{frame}
 
@@ -158,16 +176,23 @@
 
 % ── Pluto controversy ───────────────────────────────────────
 \begin{frame}{The Pluto Problem}
-  \begin{itemize}
-    \item Pluto was always an oddity: small, icy, eccentric \& inclined orbit
-    \item 1990s--2000s: discovery of many large Kuiper Belt objects
-    \item 2005: discovery of \textbf{Eris} --- comparable in size to Pluto
-    \item The question became unavoidable:
-  \end{itemize}
-  \vskip8pt
-  \begin{alertblock}{}
-    Either these new objects are also planets, or Pluto is not.
-  \end{alertblock}
+  \begin{columns}[c]
+    \column{0.40\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{eris_dysnomia}
+    \source{Artist's impression of Eris.\\ESO/L.~Cal\c{c}ada/N.~Risinger}
+
+    \column{0.57\textwidth}
+    \begin{itemize}
+      \item Pluto was always an oddity: small, icy, eccentric \& inclined orbit
+      \item 1990s--2000s: many large Kuiper Belt objects discovered
+      \item 2005: discovery of \textbf{Eris} --- comparable in size to Pluto
+    \end{itemize}
+    \vskip6pt
+    \begin{alertblock}{}
+      Either these new objects are also planets, or Pluto is not.
+    \end{alertblock}
+  \end{columns}
 \end{frame}
 
 % ── IAU definition ──────────────────────────────────────────
@@ -220,17 +245,23 @@
 
 % ── Ancient astronomy ───────────────────────────────────────
 \begin{frame}{Ancient \& Pre-Telescopic Astronomy}
-  \begin{itemize}
-    \item \textbf{$\sim$1800 BCE}: Babylonian astronomers systematically track planetary positions
-    \item \textbf{$\sim$350 BCE}: Aristotle's geocentric spheres
-    \item \textbf{$\sim$150 CE}: Ptolemy's epicyclic system --- standard for $>$1000 years
-    \item \textbf{1543}: Copernicus publishes \textit{De revolutionibus}\\
-          $\rightarrow$ Sun at the centre
-    \item \textbf{1609--1619}: Kepler's three laws of planetary motion\\
-          $\rightarrow$ Circles replaced by ellipses
-    \item \textbf{1687}: Newton's \textit{Principia}\\
-          $\rightarrow$ All three laws from \textbf{universal gravitation}
-  \end{itemize}
+  \begin{columns}[c]
+    \column{0.40\textwidth}
+    \centering
+    \includegraphics[height=0.75\textheight]{ptolemaic_system}
+    \source{A.~Cellarius, \textit{Harmonia\\Macrocosmica} (1660)}
+
+    \column{0.57\textwidth}
+    \begin{itemize}
+      \item \textbf{$\sim$1800 BCE}: Babylonians track planetary positions
+      \item \textbf{$\sim$150 CE}: Ptolemy's epicyclic system --- standard for $>$1000~yr
+      \item \textbf{1543}: Copernicus --- Sun at the centre
+      \item \textbf{1609--1619}: Kepler's three laws\\
+            Circles $\rightarrow$ ellipses
+      \item \textbf{1687}: Newton's \textit{Principia}\\
+            Universal gravitation explains all three
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 % ── Copernican system figure ────────────────────────────────
@@ -288,6 +319,26 @@
   \end{columns}
 \end{frame}
 
+% ── Galileo's Moon drawings ────────────────────────────────
+\begin{frame}{Galileo's Observations of the Moon}
+  \begin{columns}[c]
+    \column{0.38\textwidth}
+    \centering
+    \includegraphics[height=0.75\textheight]{galileo_moon_drawings}
+    \source{Galileo Galilei (1610), public domain}
+
+    \column{0.58\textwidth}
+    \begin{itemize}
+      \item First telescopic drawings of the Moon (1609--1610)
+      \item Revealed mountains, craters, and rough terrain
+      \item Contradicted the Aristotelian idea of ``perfect'' celestial spheres
+      \item The Moon is a \textbf{physical world} with topography --- like Earth
+    \end{itemize}
+    \vskip8pt
+    \keyresult{Celestial bodies are not abstract points of light, but tangible worlds that can be studied physically.}
+  \end{columns}
+\end{frame}
+
 % ── 19th century ────────────────────────────────────────────
 \begin{frame}{The 19th Century: Spectroscopy \& Discovery}
   \begin{itemize}
@@ -301,17 +352,22 @@
 
 % ── Space age begins ────────────────────────────────────────
 \begin{frame}{The Space Age Begins}
-  \textbf{14 December 1962}: Mariner~2 flies past Venus\\
-  $\rightarrow$ First successful planetary flyby
-  \vskip8pt
-  \begin{itemize}
-    \item Revealed Venus's extreme surface temperature ($\sim$460\,\textdegree C)
-    \item Overturned speculation about habitable conditions
-    \item \textbf{1965}: Mariner~4 returns first close-up images of Mars\\
-          $\rightarrow$ Cratered, apparently dead world (not canals!)
-    \item \textbf{1970}: Venera~7 --- first landing on another planet (Venus)
-    \item \textbf{1976}: Viking landers --- first life-detection experiments on Mars
-  \end{itemize}
+  \begin{columns}[c]
+    \column{0.35\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{mariner4_mars}
+    \source{First close-up of Mars.\\Mariner~4, NASA/JPL (1965)}
+
+    \column{0.62\textwidth}
+    \begin{itemize}
+      \item \textbf{1962}: Mariner~2 flies past Venus --- first planetary flyby
+      \item Revealed Venus's extreme surface temperature ($\sim$460\,\textdegree C)
+      \item \textbf{1965}: Mariner~4 returns first Mars close-ups\\
+            $\rightarrow$ Cratered, dead world (not canals!)
+      \item \textbf{1970}: Venera~7 --- first surface landing (Venus)
+      \item \textbf{1976}: Viking landers --- first life-detection experiments on Mars
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 % ── Voyager grand tour ──────────────────────────────────────
@@ -344,6 +400,16 @@
     \item \textbf{2018--}: TESS surveys the brightest nearby stars
     \item \textbf{2022--}: JWST characterises exoplanet atmospheres
   \end{itemize}
+\end{frame}
+
+% ── Exoplanet discoveries chart ────────────────────────────
+\begin{frame}{Exoplanet Discoveries by Detection Method}
+  \centering
+  \includegraphics[width=0.80\textwidth]{exoplanet_discoveries}
+  \source{NASA Exoplanet Archive}
+  \vskip6pt
+  {\small The transit method dominates since Kepler (2009). Radial velocity pioneered the field.\\
+  Each method probes different planet populations --- we will revisit this in Lecture~13.}
 \end{frame}
 
 % ── Transit method ──────────────────────────────────────────
@@ -398,8 +464,17 @@
 
 % ── Architecture and scale ──────────────────────────────────
 \begin{frame}{Solar System Architecture}
-  From the Sun ($\Rsun = 6.96 \times 10^8$~m) to the Oort Cloud ($\sim 10^4$--$10^5$~AU):
+  \centering
+  \includegraphics[width=0.85\textwidth]{solar_system_montage}
+  \source{NASA/JPL}
   \vskip6pt
+  \small
+  From the Sun to the Oort Cloud ($\sim 10^5$~AU):
+  inner rocky planets $\rightarrow$ asteroid belt $\rightarrow$ gas \& ice giants $\rightarrow$ Kuiper Belt $\rightarrow$ Oort Cloud.
+\end{frame}
+
+% ── Architecture detail ───────────────────────────────────
+\begin{frame}{Solar System Zones}
   \begin{itemize}
     \item \textbf{Inner solar system} (0.4--1.5~AU):\\
           Mercury, Venus, Earth, Mars --- small, dense, rocky
@@ -649,19 +724,24 @@
 
 % ── Moons as comparison sets ────────────────────────────────
 \begin{frame}{Moons as Natural Experiments}
-  \begin{itemize}
-    \item \textbf{Galilean moons:} Io, Europa, Ganymede, Callisto\\
-          All orbit Jupiter, but differ in composition and tidal heating
-    \item A single variable (distance from Jupiter $\rightarrow$ tidal heating) drives vastly different geological outcomes:
-    \begin{itemize}
-      \item Io: most volcanically active body in the solar system
-      \item Europa: subsurface liquid water ocean
-      \item Ganymede: internal ocean + own magnetic field
-      \item Callisto: ancient, undifferentiated surface
-    \end{itemize}
-  \end{itemize}
+  \centering
+  \includegraphics[width=0.72\textwidth]{galilean_moons}
+  \source{NASA/JPL/DLR --- Io, Europa, Ganymede, Callisto (to scale)}
   \vskip8pt
-  This comparative approach now extends to \textbf{thousands of exoplanets} (Lecture~13).
+  \begin{columns}[T]
+    \column{0.48\textwidth}
+    \begin{itemize}
+      \item All orbit Jupiter, but differ in tidal heating
+      \item \textbf{Io}: most volcanically active body
+      \item \textbf{Europa}: subsurface ocean
+    \end{itemize}
+    \column{0.48\textwidth}
+    \begin{itemize}
+      \item \textbf{Ganymede}: internal ocean + magnetic field
+      \item \textbf{Callisto}: ancient, undifferentiated
+      \item One variable $\rightarrow$ vastly different outcomes
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 
@@ -689,15 +769,23 @@
 
 % ── Spacecraft types ────────────────────────────────────────
 \begin{frame}{Spacecraft Exploration}
-  In order of increasing complexity and cost:
-  \vskip6pt
-  \begin{description}
-    \item[Flyby] Brief encounter; e.g., Voyager~2 at Neptune (1989)
-    \item[Orbiter] Long-term monitoring; e.g., Cassini at Saturn (2004--2017)
-    \item[Lander] In situ measurements; e.g., Viking~1 on Mars (1976)
-    \item[Rover] Mobile surface exploration; e.g., Perseverance on Mars (2021--)
-    \item[Sample return] Material returned to Earth labs; e.g., Hayabusa2 from Ryugu (2020)
-  \end{description}
+  \begin{columns}[c]
+    \column{0.42\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{cassini_saturn}
+    \source{Cassini at Saturn (concept).\\NASA/JPL-Caltech}
+
+    \column{0.55\textwidth}
+    In order of increasing complexity:
+    \vskip4pt
+    \begin{description}
+      \item[Flyby] Voyager~2 at Neptune (1989)
+      \item[Orbiter] Cassini at Saturn (2004--17)
+      \item[Lander] Viking~1 on Mars (1976)
+      \item[Rover] Perseverance on Mars (2021--)
+      \item[Sample ret.] Hayabusa2 from Ryugu (2020)
+    \end{description}
+  \end{columns}
 \end{frame}
 
 % ── Remote sensing methods ──────────────────────────────────
@@ -766,33 +854,63 @@
 
 % ── JWST ────────────────────────────────────────────────────
 \begin{frame}{James Webb Space Telescope}
-  \begin{itemize}
-    \item Launched December 2021; operating at Sun--Earth L2
-    \item First characterisation of atmospheres on \textbf{rocky exoplanets}
-    \item Thermal emission measurements of TRAPPIST-1 planets\\
-          (Greene et al.\ 2023)
-    \item First direct constraints on whether Earth-sized planets around other stars retain atmospheres
-    \item Infrared spectroscopy: transmission \& emission
-  \end{itemize}
+  \begin{columns}[c]
+    \column{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{jwst}
+    \source{NASA/GSFC (artist's concept)}
+
+    \column{0.52\textwidth}
+    \begin{itemize}
+      \item Launched Dec 2021; operating at Sun--Earth~L2
+      \item 6.5\,m primary mirror, infrared optimised
+      \item First atmospheric characterisation of \textbf{rocky exoplanets}
+      \item Thermal emission of TRAPPIST-1 planets
+      \item Do Earth-sized planets around other stars retain atmospheres?
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 % ── Recent missions ─────────────────────────────────────────
 \begin{frame}{Recent \& Upcoming Missions}
-  \begin{itemize}
-    \item \textbf{OSIRIS-REx} (2023): Returned samples from asteroid Bennu\\
-          $\rightarrow$ hydrated minerals, organic compounds
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \begin{itemize}
+      \item \textbf{OSIRIS-REx} (2023): Samples from Bennu\\
+            $\rightarrow$ hydrated minerals, organics
 
-    \item \textbf{Europa Clipper} (2024): En route to Jupiter's moon Europa\\
-          $\rightarrow$ investigate subsurface ocean \& habitability
+      \item \textbf{Europa Clipper} (2024): En route to Europa\\
+            $\rightarrow$ subsurface ocean habitability
 
-    \item \textbf{JUICE} (2023$\rightarrow$2031): ESA mission to Jupiter system\\
-          $\rightarrow$ Ganymede, Europa, Callisto
+      \item \textbf{JUICE} (2023$\rightarrow$2031): ESA $\rightarrow$ Jupiter system
 
-    \item \textbf{Perseverance}: Caching samples in Jezero crater
+      \item \textbf{Dragonfly} ($\sim$2028): drone on Titan
+    \end{itemize}
 
-    \item \textbf{Dragonfly} ($\sim$2028): Nuclear-powered drone on Titan\\
-          $\rightarrow$ surface chemistry exploration
-  \end{itemize}
+    \column{0.42\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{europa_clipper}
+    \source{Europa Clipper. NASA/JPL}
+  \end{columns}
+\end{frame}
+
+% ── Perseverance & Dragonfly ──────────────────────────────
+\begin{frame}{Surface Exploration: Present \& Future}
+  \begin{columns}[c]
+    \column{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{perseverance_selfie}
+    \source{Perseverance + Ingenuity.\\NASA/JPL-Caltech/MSSS (2021)}
+
+    \column{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{dragonfly_titan}
+    \source{Dragonfly on Titan (concept).\\NASA/JHUAPL}
+  \end{columns}
+  \vskip8pt
+  \centering
+  {\small \textbf{Left:} Perseverance caching samples in Jezero Crater (Mars).\\
+  \textbf{Right:} Dragonfly will explore Titan's organic-rich surface ($\sim$2034).}
 \end{frame}
 
 % ── Course roadmap ──────────────────────────────────────────
