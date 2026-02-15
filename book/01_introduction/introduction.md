@@ -7,7 +7,7 @@
 
 ## A pale blue dot
 
-On 14 February 1990, the Voyager 1 spacecraft turned its camera back toward the inner solar system one last time. From a distance of 6 billion km — about 40 AU — it captured an image in which Earth appears as a tiny speck, less than a single pixel, suspended in a scattered beam of sunlight. Carl Sagan, who had campaigned for years to have the photograph taken, wrote: *"Look again at that dot. That's here. That's home. That's us"* {cite}`Sagan1994`. Minutes later, Voyager's cameras were switched off for good.
+On 14 February 1990, the Voyager 1 spacecraft turned its camera back toward the inner solar system one last time. From a distance of 6 billion km — about 40 AU — it captured an image in which Earth appears as a tiny speck, less than a single pixel, suspended in a scattered beam of sunlight. Carl Sagan, who had campaigned for years to have the photograph taken, wrote: *"Look again at that dot. That's here. That's home. That's us"* {cite:p}`Sagan1994`. Minutes later, Voyager's cameras were switched off for good.
 
 ```{figure} https://upload.wikimedia.org/wikipedia/commons/7/73/Pale_Blue_Dot.png
 :name: fig:pale-blue-dot
@@ -19,7 +19,7 @@ The Pale Blue Dot. Earth appears as a tiny bright speck roughly halfway down the
 
 That image captures something essential about planetary science: it asks us to see our own world not as the centre of the universe, but as one planet among many — a physical system that can be studied, compared, and understood. This course is built around three questions that drive that effort:
 
-1. **How did our solar system form, and is it typical?** Before 1992, we knew of exactly zero planets outside our solar system. Today we have confirmed over 5,700 exoplanets in more than 4,300 systems. Statistical analyses of the Kepler survey suggest that roughly 0.4–0.6 rocky, habitable-zone planets exist per Sun-like star {cite}`Bryson2021` — implying hundreds of millions of such worlds in the Milky Way alone. Yet we have detailed knowledge of only one planetary system.
+1. **How did our solar system form, and is it typical?** Before 1992, we knew of exactly zero planets outside our solar system. Today we have confirmed over 5,700 exoplanets in more than 4,300 systems. Statistical analyses of the Kepler survey suggest that roughly 0.4–0.6 rocky, habitable-zone planets exist per Sun-like star {cite:p}`Bryson2021` — implying hundreds of millions of such worlds in the Milky Way alone. Yet we have detailed knowledge of only one planetary system.
 
 2. **What determines whether a planet becomes habitable?** Venus, Earth, and Mars all formed from the same protoplanetary disk, likely with similar initial compositions. All three may have had early liquid water. Yet today Venus has a 460 °C surface beneath 90 bar of CO$_2$, Earth has oceans and a biosphere, and Mars is a cold desert with an atmosphere thinner than 1% of Earth's. Understanding why they diverged is one of the central puzzles of planetary science.
 
@@ -37,7 +37,7 @@ But Pluto was always an oddity: small, icy, with an eccentric and inclined orbit
 
 ### The IAU definition
 
-On 24 August 2006, the International Astronomical Union (IAU) adopted Resolution B5, establishing three criteria for a body in the solar system to be classified as a **planet** {cite}`IAU2006`:
+On 24 August 2006, the International Astronomical Union (IAU) adopted Resolution B5, establishing three criteria for a body in the solar system to be classified as a **planet** {cite:p}`IAU2006`:
 
 1. It is in orbit around the Sun.
 2. It has sufficient mass for its self-gravity to overcome rigid body forces, so that it assumes a hydrostatic equilibrium (nearly round) shape.
@@ -45,7 +45,7 @@ On 24 August 2006, the International Astronomical Union (IAU) adopted Resolution
 
 A body satisfying criteria 1 and 2 but not 3 is a **dwarf planet**. Under this definition, the solar system has eight planets and five officially recognised dwarf planets: Ceres, Pluto, Eris, Makemake, and Haumea. Many additional candidates exist in the Kuiper Belt.
 
-The definition remains debated. Critics note that "clearing the neighbourhood" is not precisely defined and depends on heliocentric distance — Earth would not clear its zone if placed at Neptune's orbit. An alternative **geophysical definition** proposes that any body massive enough to achieve hydrostatic equilibrium should count as a planet, regardless of its orbital dynamics {cite}`Runyon2017`. Under this broader definition, the solar system would have well over 100 planets.
+The definition remains debated. Critics note that "clearing the neighbourhood" is not precisely defined and depends on heliocentric distance — Earth would not clear its zone if placed at Neptune's orbit. An alternative **geophysical definition** proposes that any body massive enough to achieve hydrostatic equilibrium should count as a planet, regardless of its orbital dynamics {cite:p}`Runyon2017`. Under this broader definition, the solar system would have well over 100 planets.
 
 For this course, the exact classification matters less than the physics. The important point is that the solar system contains a continuous spectrum of objects — from dust grains to gas giants — governed by the same physical laws.
 
@@ -99,7 +99,7 @@ Trajectory of NASA's Voyager 2 spacecraft during its grand tour of the outer sol
 
 ### The exoplanet revolution
 
-In 1992, Aleksander Wolszczan and Dale Frail announced the discovery of planets orbiting a pulsar — the first confirmed exoplanets {cite}`Wolszczan1992`. Three years later, Michel Mayor and Didier Queloz detected 51 Pegasi b, the first planet orbiting a Sun-like star — a "hot Jupiter" with a 4.2-day orbit that challenged all existing formation theories {cite}`MayorQueloz1995`. NASA's Kepler mission (2009–2018) discovered thousands of transiting exoplanets, while the ongoing TESS mission (launched 2018) surveys the brightest nearby stars. JWST, launched in December 2021, is now characterising exoplanet atmospheres through transmission and emission spectroscopy ({ref}`lecture13`).
+In 1992, Aleksander Wolszczan and Dale Frail announced the discovery of planets orbiting a pulsar — the first confirmed exoplanets {cite:p}`Wolszczan1992`. Three years later, Michel Mayor and Didier Queloz detected 51 Pegasi b, the first planet orbiting a Sun-like star — a "hot Jupiter" with a 4.2-day orbit that challenged all existing formation theories {cite:p}`MayorQueloz1995`. NASA's Kepler mission (2009–2018) discovered thousands of transiting exoplanets, while the ongoing TESS mission (launched 2018) surveys the brightest nearby stars. JWST, launched in December 2021, is now characterising exoplanet atmospheres through transmission and emission spectroscopy ({ref}`lecture13`).
 
 ```{figure} https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Theoretical_Transiting_Exoplanet_Light_Curve.svg/1280px-Theoretical_Transiting_Exoplanet_Light_Curve.svg.png
 :name: fig:transit-light-curve
@@ -135,7 +135,7 @@ The eight planets of the solar system shown at their approximate relative sizes.
 
 The table below summarises the key physical and orbital properties of the eight planets. Note the enormous dynamic range: Jupiter is over 5,700 times more massive than Mercury, yet both orbit the same star.
 
-**Key properties of the eight solar system planets.** Data from the NASA Planetary Fact Sheet {cite}`NASAFactSheet`.
+**Key properties of the eight solar system planets.** Data from the NASA Planetary Fact Sheet {cite:p}`NASAFactSheet`.
 
 | Planet | Mass ($\Mearth$) | Radius ($\Rearth$) | $a$ (AU) | $P$ (yr) | $e$ | $\rho$ (kg m$^{-3}$) |
 |--------|------:|--------:|------:|------:|------:|------:|
@@ -302,11 +302,11 @@ Several missions are planned for the coming decade, including ESA's JUICE (Jupit
 
 ## Recent advances
 
-Planetary science is advancing rapidly, driven by new space missions and observatories. The **James Webb Space Telescope** (JWST), launched in 2021, has begun characterising the atmospheres of rocky exoplanets for the first time, including thermal emission measurements of planets in the TRAPPIST-1 system ({cite}`Greene2023`; see {ref}`lecture13`). These observations are providing the first direct constraints on whether Earth-sized planets around other stars retain atmospheres.
+Planetary science is advancing rapidly, driven by new space missions and observatories. The **James Webb Space Telescope** (JWST), launched in 2021, has begun characterising the atmospheres of rocky exoplanets for the first time, including thermal emission measurements of planets in the TRAPPIST-1 system {cite:p}`Greene2023` (see also {ref}`lecture13`). These observations are providing the first direct constraints on whether Earth-sized planets around other stars retain atmospheres.
 
-Closer to home, NASA's **OSIRIS-REx** mission returned samples from the carbon-rich asteroid Bennu in September 2023, revealing hydrated minerals and organic compounds that illuminate the primordial building blocks of planets ({ref}`lecture12`). NASA's **Europa Clipper**, launched in October 2024, is en route to Jupiter's moon Europa to investigate its subsurface ocean and assess habitability ({cite}`HowellPappalardo2020`; {ref}`lecture14`). ESA's **JUICE** mission, launched in 2023, will arrive at the Jupiter system in 2031 to study Ganymede, Europa, and Callisto.
+Closer to home, NASA's **OSIRIS-REx** mission returned samples from the carbon-rich asteroid Bennu in September 2023, revealing hydrated minerals and organic compounds that illuminate the primordial building blocks of planets ({ref}`lecture12`). NASA's **Europa Clipper**, launched in October 2024, is en route to Jupiter's moon Europa to investigate its subsurface ocean and assess habitability {cite:p}`HowellPappalardo2020` (see also {ref}`lecture14`). ESA's **JUICE** mission, launched in 2023, will arrive at the Jupiter system in 2031 to study Ganymede, Europa, and Callisto.
 
-The Mars exploration programme continues with the **Perseverance** rover caching samples in Jezero crater for eventual return to Earth ({cite}`Farley2022`), while NASA's **Dragonfly** rotorcraft — a nuclear-powered drone that will explore Titan's surface chemistry — is planned for launch in 2028 ({ref}`lecture06`). These missions collectively address the three driving questions of this course: how planetary systems form, what makes a planet habitable, and whether life exists beyond Earth.
+The Mars exploration programme continues with the **Perseverance** rover caching samples in Jezero crater for eventual return to Earth {cite:p}`Farley2022`, while NASA's **Dragonfly** rotorcraft — a nuclear-powered drone that will explore Titan's surface chemistry — is planned for launch in 2028 ({ref}`lecture06`). These missions collectively address the three driving questions of this course: how planetary systems form, what makes a planet habitable, and whether life exists beyond Earth.
 
 
 ## References

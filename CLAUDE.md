@@ -92,7 +92,7 @@ Each lecture `.md` file in `book/` **must** end with a dedicated `## References`
 - Appears as the **final section** of the lecture, after all content sections
 - Uses BibTeX citations via `sphinxcontrib-bibtex` (configured in `book/_config.yml`)
 - All BibTeX entries live in `book/references.bib` (the single shared bibliography file)
-- Citations in the text use MyST syntax: `` {cite}`AuthorYear` ``
+- Citations in the text use MyST syntax with explicit Chicago author-date roles (see **Citation style** below)
 - The references section renders the bibliography for that lecture using:
 
   ````markdown
@@ -107,8 +107,35 @@ Each lecture `.md` file in `book/` **must** end with a dedicated `## References`
 
 ### Citation style
 
-- Use `author_year` style (configured in `_config.yml` as `bibtex_reference_style: author_year`)
-- BibTeX keys follow the format `AuthorYear` (e.g., `Lichtenberg2021`, `Raymond2022`), or `AuthorYearLetter` when there are multiple papers by the same first author in the same year (e.g., `Wordsworth2013a`, `Wordsworth2013b`)
+This project uses **Chicago author-date** citation style, configured in `_config.yml` as `bibtex_reference_style: author_year`. All citations must use explicit roles — do **not** use the bare `` {cite}`key` `` form.
+
+#### Parenthetical citations: `{cite:p}`
+
+Use `` {cite:p}`key` `` for citations that appear as a parenthetical reference at the end of a clause or sentence. This renders as **(Author, Year)**.
+
+```markdown
+The disk lifetime is roughly 3–5 Myr {cite:p}`Haisch2001`.
+```
+
+Do **not** wrap `{cite:p}` in manual parentheses — the role already adds them. Writing `({cite:p}`key`)` produces double parentheses **((Author, Year))**.
+
+To cite multiple sources in one parenthetical, separate keys with commas:
+
+```markdown
+Seismic data constrain the core and mantle {cite:p}`Stahler2021,Khan2021`.
+```
+
+#### Narrative (textual) citations: `{cite:t}`
+
+Use `` {cite:t}`key` `` when the author is the **grammatical subject** of the sentence. This renders as **Author (Year)**.
+
+```markdown
+{cite:t}`Birch1952` established an empirical relationship between wave velocity and density.
+```
+
+#### BibTeX key format
+
+- Keys follow the format `AuthorYear` (e.g., `Lichtenberg2021`, `Raymond2022`), or `AuthorYearLetter` when there are multiple papers by the same first author in the same year (e.g., `Wordsworth2013a`, `Wordsworth2013b`)
 - Prefer DOI-bearing entries; include `doi = {}` field in every BibTeX entry where available
 - Prefer peer-reviewed journal articles over textbooks or web sources; use review articles where appropriate for broad topics
 
