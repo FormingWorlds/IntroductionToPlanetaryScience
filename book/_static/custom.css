@@ -1,5 +1,19 @@
 /* Custom styles for Introduction to Planetary Science */
 
+/* ── Inter font from Google Fonts ────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.sidebar-primary-items__title,
+.bd-header-article,
+.prev-next-area a {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
 /* Style learning objectives admonitions */
 div.admonition.highlights {
     border-color: #1b7ced;

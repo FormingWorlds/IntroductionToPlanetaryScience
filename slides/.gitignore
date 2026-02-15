@@ -14,5 +14,8 @@
 *.run.xml
 *.bcf
 
+# XeLaTeX intermediate
+*.xdv
+
 # Compiled PDFs (track source, not output)
 *.pdf

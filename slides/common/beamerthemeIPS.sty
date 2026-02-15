@@ -48,8 +48,17 @@
 
 \setbeamercolor{footline}{fg=ipsPrimary!60, bg=ipsLightFill}
 
-% ── Fonts ───────────────────────────────────────────────────
-\usefonttheme{default}
+% ── Fonts (Inter via fontspec — requires XeLaTeX) ──────────
+\RequirePackage{fontspec}
+\setsansfont{Inter}[
+  UprightFont    = *-Regular,
+  BoldFont       = *-Bold,
+  ItalicFont     = *-Italic,
+  BoldItalicFont = *-BoldItalic,
+]
+\usefonttheme{professionalfonts}
+\renewcommand{\familydefault}{\sfdefault}
+
 \setbeamerfont{title}{size=\Large, series=\bfseries}
 \setbeamerfont{subtitle}{size=\normalsize}
 \setbeamerfont{frametitle}{size=\large, series=\bfseries}
