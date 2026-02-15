@@ -47,7 +47,7 @@ This section is under development.
 
 ## Venus atmosphere
 
-Dense $\ce{CO2}$, sulfuric acid clouds, and super-rotation.
+Dense $\mathrm{CO_2}$, sulfuric acid clouds, and super-rotation.
 
 ```{note}
 This section is under development.

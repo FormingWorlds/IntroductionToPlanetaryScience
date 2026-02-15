@@ -73,7 +73,7 @@ https://formingworlds.github.io/IntroductionToPlanetaryScience/
 - Lecture notes use MyST Markdown with cross-reference labels `(lecture01)=` through `(lecture14)=`.
 - Math macros are defined in both `mathjax3_config` (HTML) and `latex_elements.preamble` (PDF) in `_config.yml` — new macros must be added to both.
 - The `physics` LaTeX package conflicts with Sphinx output; custom `\dv`, `\dd`, `\pdv` macros are used instead.
-- LaTeX packages available: `amsmath`, `amssymb`, `mhchem` (for chemical formulae like `\ce{CO2}`).
+- LaTeX packages available: `amsmath`, `amssymb`.
 - Custom math macros defined in `_config.yml` (available in both HTML and PDF):
   - `\dv{f}{x}` — total derivative, `\dd` — differential d, `\pdv{f}{x}` — partial derivative
   - `\Msun`, `\Rsun`, `\Lsun` — solar mass, radius, luminosity
@@ -157,5 +157,5 @@ Specifically:
 - Write at the level of a 2nd-year BSc Astronomy student (see prerequisites in `planning/course_development.md`)
 - Define technical terms on first use
 - Use SI units throughout; use astronomical conventions where standard (AU, solar masses, etc.)
-- Chemical formulae use `\ce{}` from mhchem (e.g., `$\ce{CO2}$`, `$\ce{H2O}$`)
+- Chemical formulae use plain LaTeX math mode with `\mathrm{}` (e.g., `$\mathrm{CO_2}$`, `$\mathrm{H_2O}$`). Do **not** use `\ce{}` from mhchem — it does not render reliably in the Jupyter Book build pipeline
 - Cross-reference other lectures using MyST labels: `` {ref}`lecture01` `` through `` {ref}`lecture14` ``
