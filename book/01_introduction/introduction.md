@@ -160,13 +160,12 @@ Planets are broadly classified by composition and structure:
 
 ## Blackboard derivation: Solar mass from planetary orbits
 
-```{admonition} Blackboard derivation (~10 min)
+```{admonition} Blackboard derivation: Solar mass from Kepler's third law
 :class: tip
 
 **Goal:** Use Kepler's third law to estimate the mass of the Sun from Earth's orbital parameters, then evaluate the planet-to-star mass ratio for the solar system.
-```
 
-### Setup
+**Setup.**
 
 Consider a planet of mass $M_p$ in a circular orbit of radius $r$ around a star of mass $M_*$. The gravitational force provides the centripetal acceleration:
 
@@ -176,7 +175,7 @@ $$
 
 where $v = 2\pi r / P$ is the orbital velocity and $P$ is the orbital period.
 
-### Derivation
+**Derivation.**
 
 Substituting $v = 2\pi r / P$ and cancelling $M_p$:
 
@@ -192,11 +191,9 @@ $$ (eq:kepler-mass)
 
 This is Newton's form of Kepler's third law (for $M_p \ll M_*$). The planet's mass cancels — the orbital period depends only on the central mass and the orbital radius.
 
-```{note}
-For elliptical orbits, the same relation holds with $r$ replaced by the semi-major axis $a$. The derivation of the general case requires the vis-viva equation, which we will cover in {ref}`lecture02`.
-```
+**Note:** For elliptical orbits, the same relation holds with $r$ replaced by the semi-major axis $a$. The derivation of the general case requires the vis-viva equation, which we will cover in {ref}`lecture02`.
 
-### Application
+**Application.**
 
 Using Earth's orbital parameters:
 
@@ -212,7 +209,7 @@ $$
 
 This agrees with the accepted value $\Msun = 1.989 \times 10^{30}$ kg — a remarkably accurate estimate from just two measurable quantities.
 
-### The planet-to-star mass ratio
+**The planet-to-star mass ratio.**
 
 The more precise form of Kepler's third law is $P^2 = 4\pi^2 a^3 / [G(M_* + M_p)]$, which gives $M_* + M_p$ rather than $M_*$ alone. The approximation $M_* + M_p \approx M_*$ is justified because the planet-to-star mass ratio is tiny:
 
@@ -220,6 +217,8 @@ The more precise form of Kepler's third law is $P^2 = 4\pi^2 a^3 / [G(M_* + M_p)
 - Total mass of all eight planets: $\approx 446 \, \Mearth \approx 2.7 \times 10^{27}$ kg, giving $M_\mathrm{planets}/\Msun \approx 1.3 \times 10^{-3}$.
 
 The Sun contains **99.87%** of the solar system's total mass. Jupiter alone accounts for 71% of the planetary mass. This extreme concentration of mass in the central star is a fundamental property of planetary systems — and one that planet formation theory must explain ({ref}`lecture02`).
+```
+
 
 ## Comparative planetology as a methodology
 

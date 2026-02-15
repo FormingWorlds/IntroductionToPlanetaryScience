@@ -147,13 +147,12 @@ The key distinction is one of **timescale**. Conduction is a diffusive process t
 
 ## Blackboard derivation: The conductive cooling timescale
 
-```{admonition} Blackboard derivation (~10 min)
+```{admonition} Blackboard derivation: The conductive cooling timescale
 :class: tip
 
 **Goal:** Derive the characteristic timescale for heat to conduct through a body of size $L$, and show that conduction alone cannot cool planet-sized bodies — motivating the need for convection.
-```
 
-### Setup
+**Setup.**
 
 The starting point is the **heat diffusion equation** (also called the heat equation), which describes how temperature evolves in a conducting medium:
 
@@ -169,7 +168,7 @@ $$
 
 This equation says that the rate of temperature change at any point is proportional to the curvature of the temperature profile — regions where the temperature profile is concave up ($\pdv{^2 T}{x^2} > 0$) heat up, and regions where it is concave down cool down.
 
-### Derivation
+**Derivation.**
 
 We use **dimensional analysis** to extract the characteristic timescale. The heat equation relates:
 - A time derivative: $\pdv{T}{t} \sim T/\tau$ (where $\tau$ is the timescale we seek)
@@ -189,7 +188,7 @@ $$ (eq:cooling-timescale)
 
 This is the **conductive cooling timescale**. It tells us how long it takes for a thermal disturbance to propagate a distance $L$ by conduction alone. The key feature is the **$L^2$ dependence**: doubling the size of a body increases its conductive cooling time by a factor of four.
 
-### Application
+**Application.**
 
 Using $\kappa \approx 10^{-6}$ m$^2$ s$^{-1}$ (typical for silicate rock), we can estimate the conductive cooling timescale for bodies of different sizes:
 
@@ -202,8 +201,7 @@ Using $\kappa \approx 10^{-6}$ m$^2$ s$^{-1}$ (typical for silicate rock), we ca
 
 A small boulder cools in days — consistent with everyday experience. A 100 km asteroid cools in hundreds of millions of years, which is long but shorter than the age of the solar system — so small asteroids should have cooled and solidified, consistent with the meteorite record. But for the Moon and Earth, the conductive cooling time far exceeds the age of the universe ($\sim 14$ Gyr). **Earth cannot cool by conduction alone.**
 
-```{note}
-This result tells us something profound: since Earth *is* losing heat at a rate of ~47 TW ({cite}`DaviesDavies2010`), there must be a more efficient transport mechanism operating in its interior. That mechanism is **convection**. The question of *when* convection occurs — and how vigorous it is — leads directly to the Rayleigh number.
+**Note:** This result tells us something profound: since Earth *is* losing heat at a rate of ~47 TW ({cite}`DaviesDavies2010`), there must be a more efficient transport mechanism operating in its interior. That mechanism is **convection**. The question of *when* convection occurs — and how vigorous it is — leads directly to the Rayleigh number.
 ```
 
 (rayleigh-nusselt)=
