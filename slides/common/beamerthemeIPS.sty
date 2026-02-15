@@ -106,6 +106,17 @@
   \vskip0pt%
 }
 
+% ── Contain-fit helper (black background, preserve aspect ratio) ─
+% Usage: \ipscontain{image-filename}
+% Displays image at original proportions inside the frame (like CSS
+% background-size: contain) on a black background.
+\newcommand{\ipscontain}[1]{%
+  \fill[black] (current page.north west) rectangle (current page.south east);
+  \node[anchor=center, inner sep=0pt] at (current page.center) {%
+    \includegraphics[width=\paperwidth, height=\paperheight, keepaspectratio]{#1}%
+  };
+}
+
 % ── Title page ──────────────────────────────────────────────
 % Set the title background credit per lecture: \titlebgcredit{Credit text}
 \newcommand{\titlebgcredit}[1]{\def\ips@titlebgcredit{#1}}
@@ -113,10 +124,7 @@
 
 \setbeamertemplate{title page}{%
   \begin{tikzpicture}[remember picture, overlay]
-    % Background image
-    \node[anchor=center, inner sep=0pt] at (current page.center) {%
-      \includegraphics[width=\paperwidth, height=\paperheight]{title_background}%
-    };
+    \ipscontain{title_background}
     % Dark overlay for text readability
     \fill[ipsPrimary, opacity=0.70] (current page.north west) rectangle (current page.south east);
     % Accent stripe
@@ -145,20 +153,34 @@
 }
 
 % ── Section divider slides ──────────────────────────────────
+% Set per-section background: \sectionimage{filename}{credit text}
+\newcommand{\sectionimage}[2]{\def\ips@secimg{#1}\def\ips@seccredit{#2}}
+\sectionimage{}{}% default empty
+
 \AtBeginSection[]{%
   \begin{frame}[plain,noframenumbering]
     \begin{tikzpicture}[remember picture, overlay]
-      \fill[ipsPrimary] (current page.north west) rectangle (current page.south east);
-      \fill[ipsAccent, opacity=0.3]
-        ([yshift=-0.45\paperheight]current page.north west)
-        rectangle ([yshift=-0.55\paperheight]current page.north east);
+      % Background image (if set) or plain navy
+      \ifx\ips@secimg\empty
+        \fill[ipsPrimary] (current page.north west) rectangle (current page.south east);
+      \else
+        \ipscontain{\ips@secimg}
+        \fill[ipsPrimary, opacity=0.45] (current page.north west) rectangle (current page.south east);
+      \fi
+      % Section title
+      \node[anchor=center] at (current page.center) {%
+        {\color{white}\Large\bfseries\insertsectionnumber.~\insertsection}%
+      };
+      % Image credit (if set)
+      \ifx\ips@seccredit\empty\else
+        \node[anchor=south east, inner sep=0pt] at ([xshift=-6pt, yshift=4pt]current page.south east) {%
+          {\tiny\color{white!30} \ips@seccredit}%
+        };
+      \fi
     \end{tikzpicture}
-    \vfill
-    \begin{center}
-      {\color{ipsAccent}\Large\bfseries\insertsectionnumber.~\insertsection\par}
-    \end{center}
-    \vfill
   \end{frame}
+  % Reset after use
+  \sectionimage{}{}%
 }
 
 % ── Useful custom commands ──────────────────────────────────
@@ -177,9 +199,7 @@
 \newcommand{\breakslide}{%
   \begin{frame}[plain,noframenumbering]
     \begin{tikzpicture}[remember picture, overlay]
-      \node[anchor=center, inner sep=0pt] at (current page.center) {%
-        \includegraphics[width=\paperwidth, height=\paperheight]{break_background}%
-      };
+      \ipscontain{break_background}
       \fill[black, opacity=0.30] (current page.north west) rectangle (current page.south east);
       % Break text
       \node[anchor=center] at (current page.center) {%
