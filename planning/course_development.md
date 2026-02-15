@@ -441,6 +441,20 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | 13 | Exoplanets | Not started | Medium |
 | 14 | Synthesis & astrobiology | Not started | Low |
 
+**Slide infrastructure (complete):**
+- Custom Beamer theme: `slides/common/beamerthemeIPS.sty` — dark navy/teal palette, Inter + Fira Math fonts (XeLaTeX), `\ipscontain` for background images, `\sectionimage`/`\breakslide`/`\keyresult`/`\source` helper commands, thin accent-line frame titles, minimal footline (author | short title | slide number)
+- Shared math macros: `slides/common/macros.tex` — mirrors `_config.yml` definitions
+- Build system: `slides/Makefile` with `avif2png` target (AVIF→PNG auto-conversion for XeLaTeX), `latexmk -xelatex`; also integrated into root `Makefile` via `make slides`
+- `.gitignore`: ignores LaTeX build artifacts and generated PNG/JPG
+
+**Lecture 1 slides (draft complete, needs review):**
+- `slides/lecture01/lecture01.tex` — 61 pages (50 content frames + 8 section dividers + title + break + closing)
+- 22 images across 30 AVIF files in `slides/lecture01/figures/` (~30 content images + 8 unique section transition backgrounds)
+- Section transition images: Earth (Apollo 17), Pluto (New Horizons), Flammarion engraving, Saturn (Cassini equinox), Sun (SDO), Mars (Rosetta/OSIRIS), VLT laser guide star, Milky Way
+- Exoplanet discovery plots: sourced directly from NASA Exoplanet Archive (`exoplanetarchive.ipac.caltech.edu/exoplanetplots/`)
+- Final slide links to Lecture 2 with title background image
+- Known issues to address in next review pass: verify all slide content fits within frame boundaries at different projector resolutions; some slides with dense tables or equations may benefit from font size adjustments
+
 Each slide deck requires:
 - LaTeX source file (Beamer presentation class) using the custom IPS theme (`slides/common/beamerthemeIPS.sty`)
 - Compiled PDF for distribution to students (built via `make slides` from project root)
@@ -501,13 +515,13 @@ The previous iteration (12 lectures, 9 tutorials) provides a foundation to draw 
 
 ### Development Sequence
 
-1. **Phase 1a — Lecture notes (Lectures 1–8):** Core foundational content, needed first since all other lectures build on these.
-2. **Phase 1b — Lecture notes images (Lectures 1–8):** Find and create figures and diagrams for the first 8 lectures, which are needed to complete the lecture notes and ensure they are visually informative. We want to end up with about 10–15 figures per lecture, including:
+1. **Phase 1a — Lecture notes (Lectures 1–8):** ✅ Complete. Core foundational content, needed first since all other lectures build on these.
+2. **Phase 1b — Lecture notes images (Lectures 1–8):** ✅ Complete. Figures and diagrams for the first 8 lectures. We want to end up with about 10–15 figures per lecture, including:
    - Diagrams of planetary interiors, atmospheres, and surfaces; physical and chemical processes; and comparative planetology schematics
    - Plots of observational data (e.g., planetary demographics, atmospheric profiles)
    - Conceptual illustrations (e.g., orbital resonances, heat transport mechanisms)
-3. **Phase 1c — Lecture notes verification (Lectures 1–8):** Double check consistency of all notes and pedagogic approach. Deeply verify the scientific validity of all content, in particular of all derivations and equations, facts and values of any parameters, constants, and calculations. Double check all figures, and ensure all derivations are clear and correct before moving on to slides. Validate that the lecture notes are self-contained and can be understood without external references, as they will be the primary resource for students. Verify all references and citations for accuracy and relevance. Ensure all BibTeX entries use Chicago author-date format (custom pybtex style in `src/ips_styles/chicago.py`), include DOIs where available, and link to open-access sources (NASA ADS preferred, then arXiv, then publisher open access).
-4. **Phase 2a — Lecture slides (Lectures 1–8):** PDF slide decks from LaTeX, covering the same content as the Jupyter Book notes for classroom delivery. The slide decks should be visually engaging and include key figures from the lecture notes, but distilled into a presentation format suitable for teaching. Each slide deck should be consistent in style and formatting across lectures. The slides should cover a lecture of about 90 minutes, with a mix of text, equations, and figures to effectively communicate the material. The slide decks should be designed to complement the lecture notes, not duplicate them, and should focus on the key concepts and takeaways for each lecture.
+3. **Phase 1c — Lecture notes verification (Lectures 1–8):** ✅ Complete. Double check consistency of all notes and pedagogic approach. Deeply verify the scientific validity of all content, in particular of all derivations and equations, facts and values of any parameters, constants, and calculations. Double check all figures, and ensure all derivations are clear and correct before moving on to slides. Validate that the lecture notes are self-contained and can be understood without external references, as they will be the primary resource for students. Verify all references and citations for accuracy and relevance. Ensure all BibTeX entries use Chicago author-date format (custom pybtex style in `src/ips_styles/chicago.py`), include DOIs where available, and link to open-access sources (NASA ADS preferred, then arXiv, then publisher open access).
+4. **Phase 2a — Lecture slides (Lectures 1–8):** 🔄 In progress (L1 draft complete; L2–L8 not started). PDF slide decks from LaTeX, covering the same content as the Jupyter Book notes for classroom delivery. The slide decks should be visually engaging and include key figures from the lecture notes, but distilled into a presentation format suitable for teaching. Each slide deck should be consistent in style and formatting across lectures. The slides should cover a lecture of about 90 minutes, with a mix of text, equations, and figures to effectively communicate the material. The slide decks should be designed to complement the lecture notes, not duplicate them, and should focus on the key concepts and takeaways for each lecture.
 5. **Phase 3 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7.
 6. **Phase 4a — Lecture notes (Lectures 9–14):** Planet-specific, exoplanets, and synthesis lectures.
 7. **Phase 4b — Lecture notes images (Lectures 9–14):** Find and create figures and diagrams for the first 8 lectures, which are needed to complete the lecture notes and ensure they are visually informative. We want to end up with about 10–15 figures per lecture, including:
