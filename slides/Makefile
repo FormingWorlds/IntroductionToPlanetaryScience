@@ -1,5 +1,5 @@
 LECTURES = lecture01
-LATEXMK  = latexmk -pdf -interaction=nonstopmode
+LATEXMK  = latexmk -xelatex -interaction=nonstopmode
 
 .PHONY: all clean $(LECTURES)
 

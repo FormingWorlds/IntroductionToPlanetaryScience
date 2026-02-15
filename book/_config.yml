@@ -48,6 +48,19 @@ sphinx:
       preamble: |
         \usepackage{amsmath}
         \usepackage{amssymb}
+        \usepackage{fontspec}
+        \setmainfont{Inter}[
+          UprightFont    = *-Regular,
+          BoldFont       = *-Bold,
+          ItalicFont     = *-Italic,
+          BoldItalicFont = *-BoldItalic,
+        ]
+        \setsansfont{Inter}[
+          UprightFont    = *-Regular,
+          BoldFont       = *-Bold,
+          ItalicFont     = *-Italic,
+          BoldItalicFont = *-BoldItalic,
+        ]
 
         \newcommand{\dv}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
         \newcommand{\dd}{\mathrm{d}}
