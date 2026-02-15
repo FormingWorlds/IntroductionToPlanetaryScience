@@ -25,8 +25,8 @@ University course materials repository for "Introduction to Planetary Science" a
 - When adding new lectures or sections, maintain the established structure and formatting conventions (MyST Markdown, math macros, citation style).
 - When updating the curriculum or schedule, reflect changes in `planning/course_development.md` to keep the course plan up to date.
 - When searching for literature to cite, prioritize peer-reviewed journal articles, review papers, and authoritative databases (NASA, IAU) over textbooks or web sources. Always include a DOI when available.
-- When looking for literature, check `contents/books` for authorative sources, but verify that they are still accurate and relevant before citing.
-- When looking for literature, check `contents/course2025` for previously used sources and lecture materials, but verify that they are still accurate and relevant before citing.
+- When looking for literature, check `content/books` for authorative sources, but verify that they are still accurate and relevant before citing.
+- When looking for literature, check `content/course2025` for previously used sources and lecture materials, but verify that they are still accurate and relevant before citing.
 - When looking for literature, use the NASA ADS database (https://ui.adsabs.harvard.edu/) to find recent papers on planetary science topics. Use the `bibtex` export option to generate BibTeX entries for new sources.
 - Give extra weight to the articles and referenced papers in `https://ui.adsabs.harvard.edu/public-libraries/L2e3RhUYQnqmpIyMpWUG3A`. In particular, the review articles in that library are likely to be highly relevant and authoritative sources for content and/or point to the most reliable sources.
 - When adding or editing content, ensure that all numerical values, equations, and historical claims are verified against primary sources or authoritative databases. Do not rely on training data alone for factual accuracy.
