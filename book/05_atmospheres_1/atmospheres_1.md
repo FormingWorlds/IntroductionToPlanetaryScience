@@ -169,7 +169,7 @@ We can now compute scale heights for several bodies using their characteristic a
 |------|:-------:|:-----:|:-----------------:|:---------:|
 | Venus | 735 | 43.4 | 8.87 | 15.8 |
 | Earth | 288 | 28.97 | 9.81 | 8.5 |
-| Mars | 210 | 43.3 | 3.72 | 11.1 |
+| Mars | 215 | 43.3 | 3.72 | 11.1 |
 | Jupiter | 165 | 2.2 | 24.8 | 27 |
 | Titan | 94 | 28.6 | 1.35 | 21 |
 
