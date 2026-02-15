@@ -106,10 +106,14 @@
 % ── Title page ──────────────────────────────────────────────
 \setbeamertemplate{title page}{%
   \begin{tikzpicture}[remember picture, overlay]
-    % Full-width navy background
-    \fill[ipsPrimary] (current page.north west) rectangle (current page.south east);
+    % Background image (JWST Cosmic Cliffs — NASA/ESA/CSA/STScI, public domain)
+    \node[anchor=center, inner sep=0pt] at (current page.center) {%
+      \includegraphics[width=\paperwidth, height=\paperheight]{title_background}%
+    };
+    % Dark overlay for text readability
+    \fill[ipsPrimary, opacity=0.70] (current page.north west) rectangle (current page.south east);
     % Accent stripe
-    \fill[ipsAccent] ([yshift=-0.62\paperheight]current page.north west)
+    \fill[ipsAccent, opacity=0.5] ([yshift=-0.62\paperheight]current page.north west)
       rectangle ([yshift=-0.64\paperheight]current page.north east);
   \end{tikzpicture}
   \vfill
