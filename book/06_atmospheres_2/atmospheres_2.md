@@ -53,13 +53,12 @@ The physics of cloud formation is the same in every case — the Clausius-Clapey
 
 ## Blackboard derivation: The Clausius-Clapeyron equation
 
-```{admonition} Blackboard derivation (~10 min)
+```{admonition} Blackboard derivation: The Clausius-Clapeyron equation
 :class: tip
 
 **Goal:** Derive the exponential dependence of saturation vapour pressure on temperature from thermodynamic phase equilibrium, and apply the result to predict cloud condensation conditions across the solar system.
-```
 
-### Setup: phase equilibrium
+**Setup: phase equilibrium.**
 
 Consider a substance (e.g., water) that exists in two phases: liquid and vapour. Along the **coexistence curve** in the $P$–$T$ diagram — the line separating the liquid and vapour phases — the two phases are in thermodynamic equilibrium. This means the **Gibbs free energy per unit mass** is equal in both phases:
 
@@ -69,7 +68,7 @@ $$
 
 where $g_\ell$ and $g_v$ are the specific Gibbs free energies of the liquid and vapour, respectively.
 
-### Derivation
+**Derivation.**
 
 If we move along the coexistence curve by an infinitesimal amount ($\dd T$, $\dd P$), the Gibbs free energies must remain equal:
 
@@ -118,7 +117,7 @@ $$ (eq:clausius-clapeyron)
 
 This is the **Clausius-Clapeyron equation**. The saturation vapour pressure depends **exponentially** on temperature through the ratio $L_v / R_v$, which has units of temperature and characterises the sensitivity of the phase transition.
 
-### Worked example: water on Earth
+**Worked example: water on Earth.**
 
 For water vapour:
 - $L_v = 2.50 \times 10^6$ J kg$^{-1}$ (latent heat of vaporisation at 0°C)
@@ -135,7 +134,7 @@ $$
 
 The measured value is 2.3 kPa — excellent agreement. The small discrepancy arises because $L_v$ decreases slightly with temperature (from $2.50 \times 10^6$ J kg$^{-1}$ at 0°C to $2.26 \times 10^6$ J kg$^{-1}$ at 100°C), which we neglected by treating $L_v$ as constant.
 
-### Application: condensing species across the solar system
+**Application: condensing species across the solar system.**
 
 The Clausius-Clapeyron equation applies to *any* vapour-to-liquid (or vapour-to-solid) transition. The following table lists the key condensing species in solar system atmospheres and their thermodynamic properties:
 
@@ -153,6 +152,7 @@ $^\dagger$Latent heat of sublimation (solid $\leftrightarrow$ vapour).
 Data from {cite}`Catling2017` and {cite}`dePaterLissauer2010`.
 
 The large $L_v/R_v$ ratio for $\mathrm{H_2SO_4}$ explains why Venus's sulfuric acid clouds occupy a relatively narrow altitude range — the exponential sensitivity confines condensation to a thin temperature band. Conversely, $\mathrm{CH_4}$ has a low $L_v/R_v$, meaning its saturation curve is flatter and methane clouds on Titan can extend over a wider altitude range.
+```
 
 
 ## Clouds across the solar system

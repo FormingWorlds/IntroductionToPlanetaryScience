@@ -65,13 +65,12 @@ This is roughly 100 times the energy of the largest nuclear weapon ever detonate
 
 ### Blackboard derivation: crater scaling law
 
-```{admonition} Blackboard derivation (~10 min)
+```{admonition} Blackboard derivation: Crater scaling law from dimensional analysis
 :class: tip
 
 **Goal:** Use dimensional analysis to derive how crater diameter $D$ depends on impact energy $E$, target density $\rho$, and surface gravity $g$, then apply the result to estimate the crater produced by a 1 km asteroid impact on the Moon.
-```
 
-#### Setup
+**Setup.**
 
 We want to find the diameter $D$ of the crater (a length) produced by an impact with kinetic energy $E$ into a target with density $\rho$ under surface gravity $g$. In the **gravity regime** (where crater size is limited by gravity rather than material strength — valid for craters larger than $\sim$100 m), dimensional analysis requires:
 
@@ -81,7 +80,7 @@ $$
 
 where $C$ is a dimensionless constant of order unity and $a$, $b$, $c$ are exponents to be determined.
 
-#### Dimensional analysis
+**Dimensional analysis.**
 
 Writing the dimensions of each quantity in terms of mass $M$, length $L$, and time $T$:
 
@@ -114,7 +113,7 @@ $$ (eq:crater-scaling)
 
 This is the **crater scaling law** in the gravity regime {cite}`Holsapple1993`. It tells us that crater diameter scales as the fourth root of impact energy — doubling the energy increases the crater diameter by only a factor of $2^{1/4} \approx 1.19$ (about 19%). This weak dependence on energy explains why craters have a relatively narrow size range even though impactor energies span many orders of magnitude.
 
-#### Worked example: 1 km asteroid on the Moon
+**Worked example: 1 km asteroid on the Moon.**
 
 For our 1 km asteroid ($E \approx 3 \times 10^{20}$ J) impacting the Moon ($\rho \approx 2500$ kg m$^{-3}$ for the regolith, $g = 1.62$ m s$^{-2}$):
 
@@ -125,6 +124,7 @@ $$
 This is consistent with the observed sizes of lunar craters formed by $\sim$1 km impactors. For comparison, the 85 km crater Tycho was formed by a much larger impactor ($\sim$8 km). The dimensionless prefactor $C$ in the full scaling law depends on target material properties and is of order unity for rocky surfaces.
 
 The more complete **pi-scaling framework** of {cite}`Holsapple1993` parameterises the transition between the gravity regime and the strength regime (where material cohesion, not gravity, limits crater growth) and accounts for target porosity and impactor properties.
+```
 
 
 ### Crater morphology

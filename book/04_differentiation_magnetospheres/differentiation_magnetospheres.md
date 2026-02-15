@@ -213,13 +213,12 @@ Schematic of the geodynamo mechanism. Convective motions in the electrically con
 
 ## Blackboard derivation: The magnetic Reynolds number
 
-```{admonition} Blackboard derivation (~10 min)
+```{admonition} Blackboard derivation: The magnetic Reynolds number $\mathrm{Rm}$
 :class: tip
 
 **Goal:** Derive the magnetic Reynolds number $\mathrm{Rm} = UL/\eta$ from the induction equation by dimensional analysis, and estimate $\mathrm{Rm}$ for Earth's outer core to demonstrate that advection dominates over diffusion — the fundamental criterion for dynamo action.
-```
 
-### Setup
+**Setup.**
 
 We start from the magnetic induction equation derived in the previous section (Eq. {eq}`eq:induction-equation`):
 
@@ -229,7 +228,7 @@ $$
 
 We want to determine which term dominates for a given flow. If advection wins, the flow can amplify magnetic field; if diffusion wins, any field decays away.
 
-### Derivation
+**Derivation.**
 
 We use **dimensional analysis** to estimate the magnitude of each term. Let $U$ be a characteristic flow velocity, $L$ a characteristic length scale, and $B$ the field strength.
 
@@ -265,7 +264,7 @@ When $\mathrm{Rm} \gg 1$, advection dominates: the magnetic field is "frozen in"
 
 For a self-sustaining dynamo, numerical simulations and theory indicate that the critical value is $\mathrm{Rm}_c \sim 10$–$100$, depending on the flow geometry.
 
-### Application: Earth's outer core
+**Application: Earth's outer core.**
 
 For Earth's outer core, the relevant parameters are {cite}`Schubert2001`:
 
@@ -291,8 +290,7 @@ $$
 
 This is much less than Earth's age (4.5 Gyr), confirming that the field cannot be a relic — it must be **continuously regenerated** by dynamo action.
 
-```{note}
-Paleomagnetic measurements of ancient rocks show that Earth has had a magnetic field for at least **3.4–3.5 billion years** {cite}`Tarduno2010`. This places a strong constraint on the thermal and compositional evolution of the core: the convective driving mechanism must have been sustained over most of Earth's history.
+**Note:** Paleomagnetic measurements of ancient rocks show that Earth has had a magnetic field for at least **3.4–3.5 billion years** {cite}`Tarduno2010`. This places a strong constraint on the thermal and compositional evolution of the core: the convective driving mechanism must have been sustained over most of Earth's history.
 ```
 
 

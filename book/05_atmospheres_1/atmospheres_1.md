@@ -120,13 +120,12 @@ The barometric formula tells us that atmospheric pressure decreases **exponentia
 
 ## Blackboard derivation: The atmospheric scale height
 
-```{admonition} Blackboard derivation (~10 min)
+```{admonition} Blackboard derivation: Atmospheric scale height from hydrostatic equilibrium
 :class: tip
 
 **Goal:** Derive the atmospheric scale height $H = \kB T / (\mu \, m_u \, g)$ from hydrostatic equilibrium combined with the ideal gas law, and compute $H$ for Earth, Mars, Venus, Jupiter, and Titan.
-```
 
-### Setup
+**Setup.**
 
 We start from the equation of hydrostatic equilibrium (Eq. {eq}`eq:hydrostatic-equilibrium`) and the ideal gas law (Eq. {eq}`eq:ideal-gas-atm`):
 
@@ -136,7 +135,7 @@ $$
 
 Our goal is to find the characteristic length scale over which pressure varies — the **scale height**.
 
-### Derivation
+**Derivation.**
 
 Rearranging the ideal gas law to express $\rho$ in terms of $P$:
 
@@ -162,7 +161,7 @@ The scale height has a clear physical interpretation:
 - **Heavier molecules** (larger $\mu$) → smaller $H$: heavier molecules are harder to loft.
 - **Stronger gravity** $g$ → smaller $H$: stronger gravity compresses the atmosphere more.
 
-### Application: scale heights across the solar system
+**Application: scale heights across the solar system.**
 
 We can now compute scale heights for several bodies using their characteristic atmospheric temperatures, compositions, and surface gravities:
 
@@ -182,8 +181,7 @@ $$
 
 This matches our everyday experience: commercial aircraft cruise at $\sim$10–12 km altitude, where the pressure is roughly $0.2$–$0.3$ atm (about 1.2–1.4 scale heights up).
 
-```{note}
-Jupiter's scale height is large despite its strong gravity because $\mathrm{H_2}$ has a very low molecular weight ($\mu = 2.2$). Titan's scale height is large because its gravity is weak ($g = 1.35$ m s$^{-2}$) — Titan's atmosphere extends to a proportionally much greater height than Earth's, despite being colder.
+**Note:** Jupiter's scale height is large despite its strong gravity because $\mathrm{H_2}$ has a very low molecular weight ($\mu = 2.2$). Titan's scale height is large because its gravity is weak ($g = 1.35$ m s$^{-2}$) — Titan's atmosphere extends to a proportionally much greater height than Earth's, despite being colder.
 ```
 
 

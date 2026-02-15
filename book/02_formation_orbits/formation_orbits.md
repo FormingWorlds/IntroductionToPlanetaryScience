@@ -258,13 +258,12 @@ The escape velocity is exactly $\sqrt{2}$ times the circular orbital velocity at
 
 ## Blackboard derivation: The vis-viva equation
 
-```{admonition} Blackboard derivation (~10 min)
+```{admonition} Blackboard derivation: The vis-viva equation
 :class: tip
 
 **Goal:** Derive the vis-viva equation from energy conservation in a Keplerian orbit, then apply it to calculate orbital velocities for Earth and Halley's comet.
-```
 
-### Setup
+**Setup.**
 
 Consider a planet of mass $m$ in an elliptical orbit around a star of mass $M$ (with $m \ll M$). The orbit has semi-major axis $a$ and eccentricity $e$. At any point, the planet is at distance $r$ from the star and moves with speed $v$.
 
@@ -276,7 +275,7 @@ $$
 
 We want to express $E$ in terms of $a$ alone, then derive a formula for $v(r)$.
 
-### Derivation
+**Derivation.**
 
 **Step 1: Evaluate energy at perihelion and aphelion.**
 
@@ -320,7 +319,7 @@ $$
 \boxed{v^2 = GM\left(\frac{2}{r} - \frac{1}{a}\right)}
 $$
 
-### Application: Earth's orbital velocity
+**Application: Earth's orbital velocity.**
 
 For Earth ($a = 1$ AU $= 1.496 \times 10^{11}$ m, $e = 0.017$):
 
@@ -331,7 +330,7 @@ For Earth ($a = 1$ AU $= 1.496 \times 10^{11}$ m, $e = 0.017$):
 
 The variation is only about $\pm 0.5$ km s$^{-1}$ around the mean — because Earth's orbit is nearly circular. The mean orbital velocity is approximately $v \approx 2\pi a / P \approx 29.8$ km s$^{-1}$.
 
-### Application: Halley's comet
+**Application: Halley's comet.**
 
 For a dramatic contrast, consider Halley's comet ($a = 17.8$ AU, $e = 0.967$):
 
@@ -342,8 +341,7 @@ For a dramatic contrast, consider Halley's comet ($a = 17.8$ AU, $e = 0.967$):
 
 Halley's comet hurtles through the inner solar system at nearly twice Earth's speed, yet crawls beyond Neptune's orbit at less than 1 km s$^{-1}$. This enormous range is a direct consequence of the vis-viva equation applied to a highly eccentric orbit.
 
-```{note}
-The vis-viva equation is the generalisation of the Kepler mass formula derived in {ref}`lecture01`. There, we used a circular orbit ($r = a$) to get $v^2 = GM/a$, which is just the vis-viva equation with $r = a$.
+**Note:** The vis-viva equation is the generalisation of the Kepler mass formula derived in {ref}`lecture01`. There, we used a circular orbit ($r = a$) to get $v^2 = GM/a$, which is just the vis-viva equation with $r = a$.
 ```
 
 
