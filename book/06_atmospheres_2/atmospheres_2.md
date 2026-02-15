@@ -23,7 +23,7 @@ This section is under development.
 
 ## Mars
 
-Thin $\ce{CO2}$ atmosphere, dust storms, and seasonal $\ce{CO2}$ cycle.
+Thin $\mathrm{CO_2}$ atmosphere, dust storms, and seasonal $\mathrm{CO_2}$ cycle.
 
 ```{note}
 This section is under development.

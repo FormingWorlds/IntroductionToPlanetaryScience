@@ -31,7 +31,6 @@ sphinx:
           "[+]":
             - ams
             - physics
-            - mhchem
         macros:
           dv: ["\\frac{\\mathrm{d} #1}{\\mathrm{d} #2}", 2]
           dd: ["\\mathrm{d}"]
@@ -48,7 +47,7 @@ sphinx:
       preamble: |
         \usepackage{amsmath}
         \usepackage{amssymb}
-        \usepackage[version=4]{mhchem}
+
         \newcommand{\dv}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
         \newcommand{\dd}{\mathrm{d}}
         \newcommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}

@@ -7,13 +7,13 @@
 
 ## Star formation and protoplanetary disks
 
-Every planetary system begins with the collapse of a molecular cloud — a cold ($T \sim 10$–$20$ K), dense region of the interstellar medium composed primarily of molecular hydrogen ($\ce{H2}$) and helium, with about 1% by mass of heavier elements in the form of microscopic dust grains. When a region of such a cloud becomes sufficiently massive and dense, its self-gravity overcomes thermal and magnetic pressure support, triggering gravitational collapse. The critical mass for collapse is the **Jeans mass**:
+Every planetary system begins with the collapse of a molecular cloud — a cold ($T \sim 10$–$20$ K), dense region of the interstellar medium composed primarily of molecular hydrogen ($\mathrm{H_2}$) and helium, with about 1% by mass of heavier elements in the form of microscopic dust grains. When a region of such a cloud becomes sufficiently massive and dense, its self-gravity overcomes thermal and magnetic pressure support, triggering gravitational collapse. The critical mass for collapse is the **Jeans mass**:
 
 $$
 M_J \sim \frac{c_s^3}{\sqrt{G^3 \rho}}
 $$ (eq:jeans-mass)
 
-where $c_s$ is the sound speed, $G$ is the gravitational constant, and $\rho$ is the gas density. For typical molecular cloud conditions ($T \approx 10$ K, $n_{\ce{H2}} \approx 10^4$ cm$^{-3}$), this gives $M_J \sim 1$–$10$ $\Msun$ — comparable to the masses of stars.
+where $c_s$ is the sound speed, $G$ is the gravitational constant, and $\rho$ is the gas density. For typical molecular cloud conditions ($T \approx 10$ K, $n_{\mathrm{H_2}} \approx 10^4$ cm$^{-3}$), this gives $M_J \sim 1$–$10$ $\Msun$ — comparable to the masses of stars.
 
 ### From collapse to disk
 
@@ -40,7 +40,7 @@ A critical feature of any protoplanetary disk is the **snow line** (or ice line)
 1. **Beyond the snow line**, solid material is much more abundant — adding water ice to the rocky/metallic inventory roughly triples the available solid mass.
 2. **The CHNOPS elements** (carbon, hydrogen, nitrogen, oxygen, phosphorus, sulphur) — essential for biology — are distributed between volatile and refractory phases depending on local disk temperature {cite}`Krijt2023`. The location where a planet forms relative to various ice lines determines its initial volatile budget.
 
-Ice lines for other species ($\ce{CO2}$, $\ce{CO}$, $\ce{N2}$, $\ce{NH3}$) exist at progressively larger distances, creating a compositional gradient across the disk.
+Ice lines for other species ($\mathrm{CO_2}$, $\mathrm{CO}$, $\mathrm{N_2}$, $\mathrm{NH_3}$) exist at progressively larger distances, creating a compositional gradient across the disk.
 
 ### Observational evidence: ALMA
 
@@ -151,7 +151,7 @@ In the inner solar system, after the disk has dispersed and gas drag is no longe
 
 ### Geophysical evolution during formation
 
-Planet formation is not merely an assembly process — it drives profound geophysical changes. The energy delivered by accretion and giant impacts melts the growing planet, producing a global **magma ocean**. In this molten state, dense metallic iron sinks to form a core, while lighter silicates float to form the mantle — a process called **core–mantle differentiation**. Early radioactive heating from short-lived isotopes (particularly $\ce{^{26}Al}$, with a half-life of 0.7 Myr) can melt even small planetesimals, initiating differentiation before the planet has finished assembling {cite}`Lichtenberg2023`. The thermal and chemical state inherited from this formation epoch profoundly shapes a planet's subsequent evolution: its magnetic field, volcanic activity, atmospheric outgassing, and ultimately its habitability ({ref}`lecture03`, {ref}`lecture04`).
+Planet formation is not merely an assembly process — it drives profound geophysical changes. The energy delivered by accretion and giant impacts melts the growing planet, producing a global **magma ocean**. In this molten state, dense metallic iron sinks to form a core, while lighter silicates float to form the mantle — a process called **core–mantle differentiation**. Early radioactive heating from short-lived isotopes (particularly ${}^{26}\mathrm{Al}$, with a half-life of 0.7 Myr) can melt even small planetesimals, initiating differentiation before the planet has finished assembling {cite}`Lichtenberg2023`. The thermal and chemical state inherited from this formation epoch profoundly shapes a planet's subsequent evolution: its magnetic field, volcanic activity, atmospheric outgassing, and ultimately its habitability ({ref}`lecture03`, {ref}`lecture04`).
 
 
 ## Kepler's laws and orbital elements
