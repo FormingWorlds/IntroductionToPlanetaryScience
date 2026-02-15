@@ -127,7 +127,7 @@ Each week consists of:
 
 - Cloud formation: condensation, nucleation, and cloud types across the solar system
 - Venus: runaway greenhouse, sulfuric acid clouds, super-rotation
-- **Blackboard derivation (~10 min):** Derive the planetary effective temperature from energy balance (absorbed stellar flux = emitted thermal flux), then add a single-layer greenhouse atmosphere to show how T_surface > T_eff
+- **Blackboard derivation (~10 min):** Derive the Clausius-Clapeyron equation from thermodynamic phase equilibrium — starting from equal Gibbs free energies on the coexistence curve, obtain P_sat(T) = P_ref exp[−L_v/R_v(1/T − 1/T_ref)], and apply to predict cloud condensation across the solar system
 - Mars: thin CO₂ atmosphere, dust storms, seasonal CO₂ cycle
 - Titan: methane hydrological cycle, organic haze
 - Giant planet atmospheres: banded structure, zones and belts, composition
@@ -394,7 +394,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 3 | Planetary heat & energy transport | Draft complete (figures added) | High |
 | 4 | Chemical differentiation & magnetospheres | Draft complete (figures added) | High |
 | 5 | Atmospheres I | Draft complete (figures added) | High |
-| 6 | Atmospheres II | Not started | High |
+| 6 | Atmospheres II | Draft complete (figures added) | High |
 | 7 | Planetary surfaces | Not started | High |
 | 8 | Planetary interiors | Not started | High |
 | 9 | Rocky planets: Earth & Venus | Not started | Medium |
