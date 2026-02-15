@@ -1,4 +1,5 @@
 # Large files and symbolic links
+content/books
 content/course2025
 
 # Jupyter Book build artifacts
