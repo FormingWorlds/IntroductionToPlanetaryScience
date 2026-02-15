@@ -223,7 +223,7 @@ Jupiter's moon Io as observed across multiple NASA missions spanning decades. Io
 :width: 450px
 :align: center
 
-Olympus Mons on Mars, the largest volcano in the solar system, imaged by NASA's Mars Reconnaissance Orbiter. The shield volcano has a base diameter of $\sim$600 km and rises $\sim$21.9 km above the surrounding terrain. The caldera complex at the summit contains multiple nested collapse craters formed by magma withdrawal. Olympus Mons grew to this immense size because Mars lacks plate tectonics — the volcanic source remained fixed beneath the lithosphere for billions of years. Credit: NASA/JPL/University of Arizona, public domain.
+Olympus Mons on Mars — the largest volcano in the solar system — seen from above in this Viking Orbiter colour mosaic. The shield volcano has a base diameter of $\sim$600 km and rises $\sim$21.9 km above the surrounding plains. The caldera complex at the summit (centre) contains multiple nested collapse craters formed by episodic magma withdrawal. The steep basal escarpment (up to 6 km high) is visible as the sharp boundary encircling the edifice. Olympus Mons grew to this immense size because Mars lacks plate tectonics — the volcanic source remained fixed beneath the lithosphere for billions of years. Credit: NASA/JPL/USGS, public domain.
 ```
 
 
