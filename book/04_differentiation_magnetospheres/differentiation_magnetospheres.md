@@ -387,7 +387,7 @@ Mars has no global magnetic field today, but the Mars Global Surveyor spacecraft
 2. The dynamo shut down approximately **4.1 Gyr ago** (before the large basins formed), after which newly formed crust was not magnetised.
 3. The loss of the global magnetic field left Mars's atmosphere unshielded against solar wind erosion — likely contributing to the dramatic atmospheric loss that transformed Mars from a warmer, wetter world to the cold, thin-atmosphere planet we see today (see {ref}`lecture10`).
 
-```{figure} figures/mars_crustal_magnetism.png
+```{figure} figures/mars_crustal_magnetism.avif
 :name: fig:mars-crustal-magnetism
 :width: 550px
 :align: center
@@ -454,7 +454,7 @@ When solar wind particles enter the magnetosphere — primarily through reconnec
 
 Aurorae are observed on other magnetised planets as well — Jupiter's aurorae, powered by its enormous magnetosphere and the volcanic output of Io, are among the most luminous in the solar system.
 
-```{figure} figures/aurora.jpg
+```{figure} figures/aurora.avif
 :name: fig:aurora
 :width: 550px
 :align: center

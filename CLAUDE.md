@@ -56,10 +56,11 @@ pip install .
 make html       # Build browsable HTML → book/_build/html/
 make pdf        # Build PDF via pdfhtml → book/_build/pdf/
 make pdflatex   # Build PDF via XeLaTeX → book/_build/latex/
-make clean      # Remove build artifacts
+make slides     # Build slide PDFs → slides/lectureNN/lectureNN.pdf
+make clean      # Remove build artifacts + generated PNGs
 ```
 
-Build artifacts in `book/_build/` are gitignored.
+Build artifacts in `book/_build/` are gitignored. The `pdflatex` and `slides` targets auto-convert AVIF→PNG at build time (XeLaTeX cannot read AVIF natively).
 
 ### Deployed site
 
@@ -81,7 +82,8 @@ https://formingworlds.github.io/IntroductionToPlanetaryScience/
   - `\Mjup`, `\Rjup` — Jupiter mass, radius
   - `\kB` — Boltzmann constant
 - The `sphinx-proof` extension is loaded, providing theorem-like directives: `{prf:theorem}`, `{prf:proof}`, `{prf:definition}`, `{prf:example}`, etc.
-- Figures live in `<lecture_dir>/figures/` and are referenced with MyST syntax: `` ```{figure} figures/filename.png``` ``
+- Figures live in `<lecture_dir>/figures/` and are referenced with MyST syntax: `` ```{figure} figures/filename.avif``` ``
+- **All raster images must use AVIF format** (`.avif`). Do not commit JPEG or PNG files — convert to AVIF first using `magick input.jpg -quality 65 output.avif`. SVG vector graphics are kept as-is. See the "Image format" section below for details.
 
 ## References & Citations
 
@@ -216,3 +218,45 @@ Specifically:
 - Use SI units throughout; use astronomical conventions where standard (AU, solar masses, etc.)
 - Chemical formulae use plain LaTeX math mode with `\mathrm{}` (e.g., `$\mathrm{CO_2}$`, `$\mathrm{H_2O}$`). Do **not** use `\ce{}` from mhchem — it does not render reliably in the Jupyter Book build pipeline
 - Cross-reference other lectures using MyST labels: `` {ref}`lecture01` `` through `` {ref}`lecture14` ``
+
+## Image Format
+
+All raster images in this repository use **AVIF** (AV1 Image File Format) as the standard format. Do **not** commit JPEG or PNG raster files.
+
+### Why AVIF
+
+- ~50% smaller than JPEG at equivalent visual quality, reducing repo size and page load times
+- Supports both photographic and graphic content well
+- Native browser support for the Jupyter Book HTML output
+
+### Conversion
+
+Convert any new raster image to AVIF before adding it to the repository:
+
+```bash
+magick input.jpg -quality 65 output.avif    # photographic images
+magick input.png -quality 65 output.avif    # diagrams / screenshots
+```
+
+Use quality 65 as the default. For images where compression artifacts are noticeable (fine line art, text-heavy diagrams), increase to 75–80.
+
+### SVG vector graphics
+
+Keep SVG files as-is — do not convert them to AVIF. SVGs are resolution-independent and typically smaller for diagrams, charts, and schematics.
+
+### LaTeX compatibility
+
+XeLaTeX cannot read AVIF files natively. The Makefiles handle this automatically:
+
+- `make pdflatex` and `make slides` run an `avif2png` step that generates temporary PNG files from AVIF before compiling LaTeX
+- Generated PNGs are gitignored (`book/**/figures/*.png`, `slides/**/*.png`)
+- In slide `.tex` files, use **extensionless** `\includegraphics{image_name}` so XeLaTeX finds the generated PNG
+- In book `.md` files, use the `.avif` extension in `{figure}` directives — the build system handles the LaTeX substitution
+
+### When adding figures
+
+1. Download or create the image in any format
+2. Convert to AVIF: `magick source.jpg -quality 65 figures/name.avif`
+3. Reference in MyST: `` ```{figure} figures/name.avif``` ``
+4. Reference in slides: `\includegraphics{name}` (no extension)
+5. Delete the original source file — only commit the `.avif`

@@ -445,6 +445,7 @@ Each slide deck requires:
 - LaTeX source file (Beamer presentation class) using the custom IPS theme (`slides/common/beamerthemeIPS.sty`)
 - Compiled PDF for distribution to students (built via `make slides` from project root)
 - Figures and diagrams consistent with the Jupyter Book lecture notes
+- All raster images in AVIF format (`.avif`); the build system auto-converts to PNG for XeLaTeX
 
 #### Homework Sheets (7 sets, each with solutions)
 
@@ -491,6 +492,12 @@ The previous iteration (12 lectures, 9 tutorials) provides a foundation to draw 
 - **Exam questions:** Previous mid-term and final exams provide a question bank to draw from and adapt.
 
 - **Lecture slides:** Previous lecture content provides reference material, though all notes will be rewritten as custom lecture notes rather than slide decks.
+
+### Technical Standards
+
+- **Image format:** All raster images use AVIF (`.avif`). Do not commit JPEG or PNG files. Convert with `magick input.jpg -quality 65 output.avif`. SVG vector graphics are kept as-is. The Makefiles auto-convert AVIF→PNG for LaTeX/XeLaTeX builds.
+- **Fonts:** Inter (sans-serif text) via fontspec/XeLaTeX; Fira Math (sans-serif math) via unicode-math. Used in both Jupyter Book PDF and Beamer slides.
+- **Citations:** Chicago author-date style via custom pybtex plugin. Use `{cite:p}` and `{cite:t}` roles exclusively.
 
 ### Development Sequence
 

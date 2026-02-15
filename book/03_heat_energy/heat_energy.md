@@ -377,7 +377,7 @@ The consequences for Io are dramatic:
 - The entire surface is resurfaced by lava flows on a ~Myr timescale — there are essentially no impact craters
 - Internal structure consistent with a partially molten mantle (asthenosphere) {cite:p}`Keane2023`
 
-```{figure} figures/io_tvashtar_plume.jpg
+```{figure} figures/io_tvashtar_plume.avif
 :name: fig:io-tvashtar
 :width: 400px
 :align: center
@@ -391,7 +391,7 @@ Saturn's small moon **Enceladus** (radius 252 km) provides another dramatic exam
 
 The heat source is tidal dissipation, driven by Enceladus's 2:1 orbital resonance with the larger moon Dione. The heating is sufficient to maintain a **global subsurface ocean** of liquid water beneath an ice shell ~20–30 km thick. The erupted material from the tiger stripes feeds Saturn's E ring and provides direct samples of the subsurface ocean — analysis by Cassini's instruments revealed the presence of salts, silica nanoparticles (indicating hydrothermal activity on the ocean floor), and even complex organic molecules.
 
-```{figure} figures/enceladus_plumes.jpg
+```{figure} figures/enceladus_plumes.avif
 :name: fig:enceladus-plumes
 :width: 500px
 :align: center
