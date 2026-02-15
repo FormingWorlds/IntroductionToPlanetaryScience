@@ -21,9 +21,9 @@ University course materials repository for "Introduction to Planetary Science" a
 
 ## High-level Instructions
 
+- **Always* check and update `planning/course_development.md` when making any changes to the lecture content, schedule, or curriculum. This document serves as the master plan for the course and must reflect the current state of development.
 - When editing lecture content, ensure scientific accuracy by verifying all claims against authoritative sources and citing them properly in the `## References` section.
 - When adding new lectures or sections, maintain the established structure and formatting conventions (MyST Markdown, math macros, citation style).
-- When updating the curriculum or schedule, reflect changes in `planning/course_development.md` to keep the course plan up to date.
 - When searching for literature to cite, prioritize peer-reviewed journal articles, review papers, and authoritative databases (NASA, IAU) over textbooks or web sources. Always include a DOI when available.
 - When looking for literature, check `content/books` for authorative sources, but verify that they are still accurate and relevant before citing.
 - When looking for literature, check `content/course2025` for previously used sources and lecture materials, but verify that they are still accurate and relevant before citing.
