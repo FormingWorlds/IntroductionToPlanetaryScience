@@ -1,0 +1,152 @@
+% beamerthemeIPS.sty — Custom Beamer theme for Introduction to Planetary Science
+% Kapteyn Astronomical Institute, University of Groningen
+
+\ProvidesPackage{beamerthemeIPS}[2026/02/15 IPS Lecture Slides Theme]
+
+% ── Base theme ──────────────────────────────────────────────
+\usetheme{default}
+\useinnertheme{default}
+\useoutertheme{default}
+
+% ── Color palette ───────────────────────────────────────────
+\definecolor{ipsPrimary}{HTML}{1B2A4A}    % dark navy — titles, headers
+\definecolor{ipsAccent}{HTML}{2C7A7B}     % teal — emphasis, structure
+\definecolor{ipsBackground}{HTML}{FFFFFF} % white
+\definecolor{ipsText}{HTML}{2D3748}       % dark gray — body text
+\definecolor{ipsLightFill}{HTML}{EDF2F7}  % light gray — boxes, highlights
+\definecolor{ipsOrange}{HTML}{DD6B20}     % orange — alerts, key results
+
+% ── Apply colors to Beamer elements ────────────────────────
+\setbeamercolor{normal text}{fg=ipsText, bg=ipsBackground}
+\setbeamercolor{alerted text}{fg=ipsOrange}
+\setbeamercolor{example text}{fg=ipsAccent}
+
+\setbeamercolor{frametitle}{fg=ipsPrimary, bg=ipsBackground}
+\setbeamercolor{framesubtitle}{fg=ipsAccent}
+
+\setbeamercolor{title}{fg=ipsBackground, bg=ipsPrimary}
+\setbeamercolor{subtitle}{fg=ipsLightFill}
+\setbeamercolor{author}{fg=ipsLightFill}
+\setbeamercolor{institute}{fg=ipsLightFill}
+\setbeamercolor{date}{fg=ipsLightFill}
+
+\setbeamercolor{section in toc}{fg=ipsPrimary}
+\setbeamercolor{subsection in toc}{fg=ipsAccent}
+
+\setbeamercolor{itemize item}{fg=ipsAccent}
+\setbeamercolor{itemize subitem}{fg=ipsAccent!70}
+\setbeamercolor{itemize subsubitem}{fg=ipsAccent!50}
+\setbeamercolor{enumerate item}{fg=ipsAccent}
+\setbeamercolor{enumerate subitem}{fg=ipsAccent!70}
+
+\setbeamercolor{block title}{fg=ipsBackground, bg=ipsPrimary}
+\setbeamercolor{block body}{fg=ipsText, bg=ipsLightFill}
+\setbeamercolor{block title alerted}{fg=ipsBackground, bg=ipsOrange}
+\setbeamercolor{block body alerted}{fg=ipsText, bg=ipsLightFill}
+\setbeamercolor{block title example}{fg=ipsBackground, bg=ipsAccent}
+\setbeamercolor{block body example}{fg=ipsText, bg=ipsLightFill}
+
+\setbeamercolor{footline}{fg=ipsPrimary!60, bg=ipsLightFill}
+
+% ── Fonts ───────────────────────────────────────────────────
+\usefonttheme{default}
+\setbeamerfont{title}{size=\Large, series=\bfseries}
+\setbeamerfont{subtitle}{size=\normalsize}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\small}
+\setbeamerfont{footline}{size=\tiny}
+\setbeamerfont{block title}{size=\normalsize, series=\bfseries}
+
+% ── Itemize bullets ─────────────────────────────────────────
+\setbeamertemplate{itemize item}{\raisebox{0.15ex}{\small$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\raisebox{0.1ex}{\scriptsize$\triangleright$}}
+\setbeamertemplate{itemize subsubitem}{\raisebox{0.1ex}{\tiny$\bullet$}}
+
+% ── Remove navigation symbols ──────────────────────────────
+\setbeamertemplate{navigation symbols}{}
+
+% ── Frame title with thin accent line ───────────────────────
+\setbeamertemplate{frametitle}{%
+  \vskip6pt%
+  \insertframetitle%
+  \ifx\insertframesubtitle\empty\else%
+    \\[2pt]{\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}%
+  \fi%
+  \vskip2pt%
+  {\color{ipsAccent}\hrule height 0.8pt}%
+  \vskip4pt%
+}
+
+% ── Footline: lecture number | short title | slide number ───
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.30\paperwidth,ht=2.5ex,dp=1ex,left]{footline}%
+      \hspace*{6pt}\insertshortauthor%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.40\paperwidth,ht=2.5ex,dp=1ex,center]{footline}%
+      \insertshorttitle%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.30\paperwidth,ht=2.5ex,dp=1ex,right]{footline}%
+      \insertframenumber\,/\,\inserttotalframenumber\hspace*{6pt}%
+    \end{beamercolorbox}%
+  }%
+  \vskip0pt%
+}
+
+% ── Title page ──────────────────────────────────────────────
+\setbeamertemplate{title page}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    % Full-width navy background
+    \fill[ipsPrimary] (current page.north west) rectangle (current page.south east);
+    % Accent stripe
+    \fill[ipsAccent] ([yshift=-0.62\paperheight]current page.north west)
+      rectangle ([yshift=-0.64\paperheight]current page.north east);
+  \end{tikzpicture}
+  \vfill
+  \begin{center}
+    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+    \vskip8pt
+    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
+    \vskip20pt
+    {\usebeamercolor[fg]{author}\insertauthor\par}
+    \vskip4pt
+    {\usebeamercolor[fg]{institute}\small\insertinstitute\par}
+    \vskip4pt
+    {\usebeamercolor[fg]{date}\small\insertdate\par}
+  \end{center}
+  \vfill
+}
+
+% ── Section divider slides ──────────────────────────────────
+\AtBeginSection[]{%
+  \begin{frame}[plain,noframenumbering]
+    \begin{tikzpicture}[remember picture, overlay]
+      \fill[ipsPrimary] (current page.north west) rectangle (current page.south east);
+      \fill[ipsAccent, opacity=0.3]
+        ([yshift=-0.45\paperheight]current page.north west)
+        rectangle ([yshift=-0.55\paperheight]current page.north east);
+    \end{tikzpicture}
+    \vfill
+    \begin{center}
+      {\color{ipsAccent}\Large\bfseries\insertsectionnumber.~\insertsection\par}
+    \end{center}
+    \vfill
+  \end{frame}
+}
+
+% ── Useful custom commands ──────────────────────────────────
+% Highlight box for key results
+\newcommand{\keyresult}[1]{%
+  \begin{beamercolorbox}[rounded=true, shadow=false, sep=8pt]{block title example}
+    #1
+  \end{beamercolorbox}%
+}
+
+% Source/credit line for figures
+\newcommand{\source}[1]{\par\vspace{-4pt}{\tiny\color{ipsText!60} Credit: #1}}
+
+% ── Required packages ───────────────────────────────────────
+\RequirePackage{tikz}
+\RequirePackage{booktabs}
+\RequirePackage{siunitx}

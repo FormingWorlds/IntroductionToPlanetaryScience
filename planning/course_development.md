@@ -426,7 +426,7 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
-| 1 | Introduction & history | Not started | High |
+| 1 | Introduction & history | Draft complete | High |
 | 2 | Planet formation & orbital dynamics | Not started | High |
 | 3 | Planetary heat & energy transport | Not started | High |
 | 4 | Chemical differentiation & magnetospheres | Not started | High |
@@ -442,8 +442,8 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | 14 | Synthesis & astrobiology | Not started | Low |
 
 Each slide deck requires:
-- LaTeX source file (Beamer or equivalent presentation class)
-- Compiled PDF for distribution to students
+- LaTeX source file (Beamer presentation class) using the custom IPS theme (`slides/common/beamerthemeIPS.sty`)
+- Compiled PDF for distribution to students (built via `make slides` from project root)
 - Figures and diagrams consistent with the Jupyter Book lecture notes
 
 #### Homework Sheets (7 sets, each with solutions)

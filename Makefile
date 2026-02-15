@@ -1,4 +1,4 @@
-.PHONY: html pdf pdflatex clean
+.PHONY: html pdf pdflatex slides clean
 
 html:
 	jupyter-book build book/
@@ -8,6 +8,9 @@ pdf:
 
 pdflatex:
 	jupyter-book build book/ --builder pdflatex
+
+slides:
+	$(MAKE) -C slides
 
 clean:
 	jupyter-book clean book/

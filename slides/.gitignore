@@ -1,0 +1,18 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.nav
+*.snm
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.vrb
+*.bbl
+*.blg
+*.run.xml
+*.bcf
+
+# Compiled PDFs (track source, not output)
+*.pdf
