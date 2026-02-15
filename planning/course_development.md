@@ -73,6 +73,7 @@ Each week consists of:
 - Comparative planetology as a methodology
 - Observational techniques: ground-based, space missions, in situ measurements
 - Key spacecraft missions past, present, and planned (Voyager, Cassini, JWST, etc.)
+- Recent advances: latest mission results (e.g., JWST, Mars Sample Return updates), new planetary discoveries, and emerging questions shaping the field
 
 ### Lecture 2: Planet Formation 101 & Orbital Dynamics
 
@@ -85,6 +86,7 @@ Each week consists of:
 - Orbital resonances: mean-motion resonances, Laplace resonance of the Galilean moons
 - Tidal forces and tidal locking; Roche limit
 - Planetary migration: types I, II, III and the Nice model
+- Recent advances: ALMA disk substructure observations, pebble accretion refinements, new constraints on giant planet formation timescales
 
 ### Lecture 3: Planetary Heat & Energy Transport
 
@@ -96,6 +98,7 @@ Each week consists of:
 - Thermal boundary layers and mantle convection basics
 - Surface heat flow: Earth as calibration, comparison to Moon and Mars
 - Tidal dissipation: Io as an extreme case, implications for icy moons
+- Recent advances: InSight seismology results on Mars's interior heat flow, new tidal heating models for icy moons, updated radiogenic heating budgets
 
 ### Lecture 4: Chemical Differentiation & Magnetospheres
 
@@ -110,6 +113,7 @@ Each week consists of:
 - Comparative magnetospheres: Mercury (weak), Mars (remnant crustal), Jupiter (strong), Ganymede
 - Magnetosphere–solar wind interaction: bow shock, magnetopause, magnetotail
 - Auroral processes and radiation belts
+- Recent advances: Juno magnetometer data on Jupiter's dynamo, BepiColombo measurements of Mercury's magnetosphere, Ganymede's magnetic environment from JUICE
 
 ### Lecture 5: Atmospheres I — Composition, Structure, & Dynamics
 
@@ -122,6 +126,7 @@ Each week consists of:
 - Energy balance: albedo, effective temperature vs. surface temperature
 - Atmospheric escape: Jeans escape, hydrodynamic escape, sputtering, photochemical escape
 - Atmospheric retention: the role of gravity and temperature
+- Recent advances: JWST detections of exoplanet atmospheres, revised atmospheric escape models, new constraints on early Earth and Mars atmospheric composition
 
 ### Lecture 6: Atmospheres II — Clouds, Weather, & Climate
 
@@ -135,6 +140,7 @@ Each week consists of:
 - Jet streams and vortices: Jupiter's Great Red Spot, Saturn's hexagon
 - Climate evolution: faint young Sun problem, long-term climate feedbacks
 - Carbonate–silicate cycle and climate regulation on Earth
+- Recent advances: Venus atmospheric anomalies debate, Titan's methane cycle from Dragonfly mission planning, updated climate models for early Mars
 
 ### Lecture 7: Planetary Surfaces — Geology, Geomorphology, & Geophysics
 
@@ -147,6 +153,7 @@ Each week consists of:
 - Remote sensing of surfaces: spectroscopy, radar, altimetry
 - Regolith formation and space weathering
 - Cryovolcanism on icy bodies: Enceladus, Triton, Europa
+- Recent advances: Perseverance rover surface analysis on Mars, DART mission impact results, new remote sensing of volcanic activity on Io and Venus
 
 ### Lecture 8: Planetary Interiors — Structure, Composition, & Dynamics
 
@@ -160,6 +167,7 @@ Each week consists of:
 - Giant planet interiors: metallic hydrogen, layered vs. dilute cores
 - Ice giant interiors: water, ammonia, methane ices under extreme pressures
 - Icy moon interiors: subsurface oceans (Europa, Enceladus, Titan)
+- Recent advances: InSight seismology revealing Mars's core and mantle structure, revised models of Jupiter's dilute core from Juno gravity data, new constraints on Europa's ice shell thickness
 
 ### Lecture 9: Rocky Planets — Earth & Venus
 
@@ -173,6 +181,7 @@ Each week consists of:
 - **Blackboard derivation (~10 min):** Derive the runaway greenhouse threshold — show that outgoing longwave radiation reaches a maximum in a moist atmosphere (the Simpson–Nakajima limit): when absorbed stellar flux exceeds this limit, surface temperature diverges. Estimate the critical solar flux and compare to Venus's orbit
 - Missing water on Venus: D/H ratio constraints
 - Comparative habitability: why Earth and Venus diverged
+- Recent advances: DAVINCI and VERITAS mission concepts for Venus, EnVision ESA mission, new models of Venus's volcanic and climatic history, updated constraints on early Earth's habitability
 
 ### Lecture 10: Rocky Planets — Mercury & Mars
 
@@ -187,6 +196,7 @@ Each week consists of:
 - Olympus Mons, Valles Marineris, and the hemispheric dichotomy
 - Mars exploration: rovers, orbiters, sample return plans
 - Mars habitability: past and present prospects
+- Recent advances: Perseverance sample caching and Mars Sample Return status, BepiColombo Mercury flybys, Curiosity long-term climate record from Gale crater, subsurface water detections by radar
 
 ### Lecture 11: Gas & Ice Giants — Jupiter, Saturn, Uranus, Neptune
 
@@ -200,6 +210,7 @@ Each week consists of:
 - Neptune: atmospheric activity, Great Dark Spot, internal heat excess
 - Triton: retrograde orbit, captured KBO, cryovolcanism
 - Ice giant exploration: current knowledge gaps and future mission concepts
+- Recent advances: Juno extended mission results (Jupiter's interior and moons), JUICE mission en route to Jupiter system, James Webb observations of Uranus and Neptune ring systems, Cassini legacy analysis of Saturn and Enceladus
 
 ### Lecture 12: Meteorites, Asteroid Belt, Minor Planets & Comets
 
@@ -216,6 +227,7 @@ Each week consists of:
 - Comets: composition (ices, dust, organics), activity, tails (ion and dust)
 - Short-period vs. long-period comets: dynamical origins
 - Rosetta mission to 67P: key results
+- Recent advances: OSIRIS-REx sample return from Bennu, DART planetary defense results, Lucy mission to Trojan asteroids, new Kuiper Belt object discoveries and interstellar object detections
 
 ### Lecture 13: Exoplanets — Detection Methods, Demographics, & Characterization
 
@@ -230,6 +242,7 @@ Each week consists of:
 - Atmospheric characterization: transmission and emission spectroscopy
 - JWST results: atmospheric detections, thermal emission maps
 - Habitability beyond the solar system: habitable zone concept, biosignatures
+- Recent advances: JWST atmospheric characterization of rocky exoplanets (TRAPPIST-1 system), updated exoplanet occurrence rates from Kepler/TESS, Gaia astrometric planet detections, direct imaging breakthroughs
 
 ### Lecture 14: Synthesis — Solar System in Context & Astrobiology
 
@@ -243,6 +256,7 @@ Each week consists of:
 - Exoplanet targets and future missions: HWO, LIFE, ground-based ELTs
 - Open questions and frontiers in planetary science
 - Course synthesis: connecting formation to present-day diversity
+- Recent advances: new constraints on habitable zone boundaries from 3D climate models, biosignature false-positive debates, upcoming mission landscape (HWO, LIFE, Dragonfly), and the latest results connecting solar system and exoplanet science
 
 ---
 
@@ -395,7 +409,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 4 | Chemical differentiation & magnetospheres | Draft complete (figures added) | High |
 | 5 | Atmospheres I | Draft complete (figures added) | High |
 | 6 | Atmospheres II | Draft complete (figures added) | High |
-| 7 | Planetary surfaces | Not started | High |
+| 7 | Planetary surfaces | Draft complete (figures added) | High |
 | 8 | Planetary interiors | Not started | High |
 | 9 | Rocky planets: Earth & Venus | Not started | Medium |
 | 10 | Rocky planets: Mercury & Mars | Not started | Medium |
