@@ -410,7 +410,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 5 | Atmospheres I | Draft complete (figures added) | High |
 | 6 | Atmospheres II | Draft complete (figures added) | High |
 | 7 | Planetary surfaces | Draft complete (figures added) | High |
-| 8 | Planetary interiors | Not started | High |
+| 8 | Planetary interiors | Draft complete (figures added) | High |
 | 9 | Rocky planets: Earth & Venus | Not started | Medium |
 | 10 | Rocky planets: Mercury & Mars | Not started | Medium |
 | 11 | Gas & ice giants | Not started | Medium |
