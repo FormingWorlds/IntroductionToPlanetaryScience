@@ -56,7 +56,7 @@ ALMA image of the protoplanetary disk around HL Tauri, a young ($\sim 1$ Myr) st
 
 The DSHARP survey (Disk Substructures at High Angular Resolution Project) extended this to 20 nearby disks, revealing that ring-and-gap substructure is ubiquitous — virtually every disk observed at high resolution shows some form of structure {cite:p}`Andrews2018`. This suggests that the conditions for planet formation are established very early in disk evolution.
 
-```{figure} https://upload.wikimedia.org/wikipedia/commons/8/82/Pitch_perfect_in_DSHARP_at_ALMA.jpg
+```{figure} https://upload.wikimedia.org/wikipedia/commons/8/82/Pitch_perfect_in_DSHARP_at_ALMA.png
 :name: fig:dsharp
 :width: 700px
 :align: center

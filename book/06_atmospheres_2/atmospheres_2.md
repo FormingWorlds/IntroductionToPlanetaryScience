@@ -171,7 +171,7 @@ $$
 
 where $\mathrm{SO_2}$ is supplied by volcanic outgassing. Below the main cloud deck lies a diffuse sub-cloud haze extending down to $\sim$30 km. An unidentified **UV absorber** in the upper clouds absorbs roughly half the solar UV flux and creates the distinctive banded patterns visible in ultraviolet images.
 
-```{figure} figures/venus_uv_clouds.jpg
+```{figure} figures/venus_uv_clouds.avif
 :name: fig:venus-uv-clouds
 :width: 400px
 :align: center
@@ -202,7 +202,7 @@ The hydrogen-dominated atmospheres of Jupiter and Saturn host a **vertically lay
 2. **$\mathrm{NH_4SH}$** (ammonium hydrosulfide): condensing at $T \sim 200$–240 K, $P \sim 2$–3 bar. Formed by the reaction $\mathrm{NH_3} + \mathrm{H_2S} \to \mathrm{NH_4SH}$.
 3. **$\mathrm{H_2O}$ ice and liquid** (deepest layer): condensing at $T \sim 270$–300 K, $P \sim 5$–7 bar. These deep water clouds are difficult to observe directly but are thought to play a critical role in powering Jupiter's weather through latent heat release.
 
-```{figure} figures/jupiter_cloud_layers.png
+```{figure} figures/jupiter_cloud_layers.avif
 :name: fig:jupiter-cloud-layers
 :width: 450px
 :align: center
@@ -325,7 +325,7 @@ Mars experiences dramatic weather driven by its thin atmosphere and strong seaso
 
 - **Seasonal $\mathrm{CO_2}$ cycle:** Mars's polar caps contain solid $\mathrm{CO_2}$ (dry ice). During winter, atmospheric $\mathrm{CO_2}$ freezes onto the polar cap; during summer, it sublimes back into the atmosphere. This exchange involves $\sim$25–30% of the total atmospheric mass, causing surface pressure to swing from $\sim$5 mbar (summer pole) to $\sim$7 mbar (winter pole) — a phenomenon with no analogue on Earth.
 
-```{figure} figures/mars_dust_storm.jpg
+```{figure} figures/mars_dust_storm.avif
 :name: fig:mars-dust-storm
 :width: 550px
 :align: center
@@ -343,7 +343,7 @@ Super-rotation requires a mechanism to transport angular momentum from the slowl
 
 Jupiter's **Great Red Spot (GRS)** is the largest and longest-lived storm in the solar system — an anticyclonic vortex larger than Earth, with winds reaching $\sim$120 m s$^{-1}$ at its periphery. It has been observed continuously for over 350 years (first recorded by Robert Hooke in 1664, though continuous observations date from 1830).
 
-```{figure} figures/jupiter_great_red_spot.jpg
+```{figure} figures/jupiter_great_red_spot.avif
 :name: fig:jupiter-grs
 :width: 500px
 :align: center
@@ -357,7 +357,7 @@ The GRS sits between two zonal jets with opposite directions, which confine and 
 
 Saturn's north pole hosts one of the most geometrically striking features in the solar system: a persistent **hexagonal jet stream** encircling the pole at $\sim$78°N latitude, first discovered by Voyager in 1981 and extensively imaged by Cassini.
 
-```{figure} figures/saturn_hexagon.jpg
+```{figure} figures/saturn_hexagon.avif
 :name: fig:saturn-hexagon
 :width: 400px
 :align: center
@@ -470,7 +470,7 @@ The weathering rate depends strongly on temperature through an **Arrhenius-type 
 
 This thermostat operates on a timescale of $\sim$0.5 Myr — long by human standards, but short compared to geological time. It is the primary reason Earth has maintained habitable surface temperatures for over 4 billion years despite the 30% increase in solar luminosity.
 
-```{figure} figures/carbonate_silicate_cycle.jpg
+```{figure} figures/carbonate_silicate_cycle.avif
 :name: fig:carbonate-silicate-cycle
 :width: 500px
 :align: center

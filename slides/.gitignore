@@ -19,3 +19,7 @@
 
 # Compiled PDFs (track source, not output)
 *.pdf
+
+# Generated from AVIF at build time (see Makefile avif2png target)
+*.png
+*.jpg

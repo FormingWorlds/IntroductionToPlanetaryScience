@@ -5,6 +5,10 @@ content/course2025
 # Jupyter Book build artifacts
 book/_build/
 
+# Generated from AVIF at build time (see Makefile avif2png target)
+book/**/figures/*.png
+book/**/figures/*.jpg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

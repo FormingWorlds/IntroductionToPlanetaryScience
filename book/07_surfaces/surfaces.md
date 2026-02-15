@@ -25,7 +25,7 @@ The relative importance of these processes varies dramatically across the solar 
 | Io | Tidal volcanism | $\sim$400 active volcanoes, surface age $<$1 Myr |
 | Europa | Ice tectonics | Lineae, chaos terrain, very few craters |
 
-```{figure} figures/surface_processes_montage.jpg
+```{figure} figures/surface_processes_montage.avif
 :name: fig:surface-processes
 :width: 550px
 :align: center
@@ -143,7 +143,7 @@ $$ (eq:transition-diameter)
 
 where $D_{t,\text{Moon}} \approx 15$ km and $g_{\text{Moon}} = 1.62$ m s$^{-2}$. On Earth ($g = 9.81$ m s$^{-2}$), $D_t \approx 15 \times 1.62/9.81 \approx 2.5$ km — explaining why virtually all terrestrial craters larger than a few kilometres are complex.
 
-```{figure} figures/crater_morphology.jpg
+```{figure} figures/crater_morphology.avif
 :name: fig:crater-morphology
 :width: 450px
 :align: center
@@ -172,7 +172,7 @@ Key results from crater counting include:
 - Mars's southern highlands are heavily cratered ($\sim$4 Gyr), while the northern lowlands are much younger.
 - Venus has a remarkably **uniform** crater density across its entire surface, implying a mean surface age of $\sim$300–700 Myr — suggesting a global resurfacing event (see {ref}`lecture09`).
 
-```{figure} figures/crater_counting.jpg
+```{figure} figures/crater_counting.avif
 :name: fig:crater-counting
 :width: 450px
 :align: center
@@ -202,7 +202,7 @@ The key variable is **magma viscosity**, which is controlled primarily by the $\
 
 **Io** is the most volcanically active body in the solar system, powered by intense tidal heating from its orbital resonance with Europa and Ganymede ({ref}`lecture03`). With $\sim$400 active volcanic centres, Io's surface is continuously resurfaced by lava flows — its mean surface age is estimated at $<$1 Myr, making it one of the youngest surfaces in the solar system {cite:p}`dePaterLissauer2010`.
 
-```{figure} figures/io_volcanism.jpg
+```{figure} figures/io_volcanism.avif
 :name: fig:io-volcanism
 :width: 500px
 :align: center
@@ -218,7 +218,7 @@ Jupiter's moon Io as observed across multiple NASA missions spanning decades. Io
 | Venus | Lava plains + shield volcanoes | Internal heat, stagnant lid | Maat Mons, pancake domes |
 | Io | Ultramafic lava flows (active) | Tidal heating | Loki Patera, Pele |
 
-```{figure} figures/olympus_mons.jpg
+```{figure} figures/olympus_mons.avif
 :name: fig:olympus-mons
 :width: 450px
 :align: center
@@ -241,7 +241,7 @@ Earth is the **only body** in the solar system with active plate tectonics — t
 
 Plate tectonics enables the **carbonate-silicate cycle** ({ref}`lecture06`) by recycling carbon through subduction and volcanic outgassing — a critical component of Earth's long-term climate regulation. Why Earth has plate tectonics while other terrestrial bodies do not remains one of the central open questions in geophysics. Contributing factors likely include Earth's size, water content (which weakens the lithosphere), and the specific rheology of its mantle {cite:p}`Stern2018`.
 
-```{figure} figures/plate_tectonics.png
+```{figure} figures/plate_tectonics.avif
 :name: fig:plate-tectonics
 :width: 600px
 :align: center
@@ -263,7 +263,7 @@ The stagnant-lid regime is the *default* outcome of mantle convection with stron
 
 **Mercury** has undergone significant **global contraction** as its large iron core cooled and solidified over time, shrinking the planet's radius by $\sim$7 km. This contraction compressed the crust, producing **lobate scarps** — thrust faults up to several hundred kilometres long and 1–3 km high, discovered by Mariner 10 and mapped extensively by MESSENGER. We will discuss Mercury's surface in {ref}`lecture10`.
 
-```{figure} figures/valles_marineris.jpg
+```{figure} figures/valles_marineris.avif
 :name: fig:valles-marineris
 :width: 600px
 :align: center
@@ -292,7 +292,7 @@ Liquid water is the most powerful erosive agent on Earth, and evidence for past 
 - **Mars:** **Valley networks** on the Noachian-aged southern highlands ($>$3.7 Ga) resemble terrestrial river drainage systems, implying sustained liquid water flow. **Outflow channels** (e.g., Ares Vallis, Kasei Valles) are enormous flood features, hundreds of kilometres long and tens of kilometres wide, carved by catastrophic releases of groundwater {cite:p}`Grotzinger2014`. These features are discussed further in {ref}`lecture10`.
 - **Titan:** Saturn's largest moon has **methane rivers** that carve channels into its icy surface — the Huygens probe imaged rounded ice pebbles in a dry riverbed during its 2005 landing. Titan's methane hydrological cycle is the only known active fluvial system beyond Earth.
 
-```{figure} figures/mars_valley_networks.jpg
+```{figure} figures/mars_valley_networks.avif
 :name: fig:mars-valley-networks
 :width: 500px
 :align: center
@@ -327,7 +327,7 @@ Every mineral has a characteristic pattern of absorption features in the visible
 - **CRISM** (Compact Reconnaissance Imaging Spectrometer for Mars, on MRO) and **OMEGA** (on Mars Express) have mapped the distribution of phyllosilicates (clays), sulfates, and other hydrated minerals across the Martian surface — providing definitive evidence that liquid water chemically altered the rocks during Mars's early history {cite:p}`Grotzinger2014`.
 - Similar instruments on lunar orbiters have mapped the distribution of pyroxene, olivine, and plagioclase across the Moon's surface.
 
-```{figure} figures/crism_mineral_map.jpg
+```{figure} figures/crism_mineral_map.avif
 :name: fig:crism-mineral-map
 :width: 600px
 :align: center
@@ -358,7 +358,7 @@ Precise tracking of spacecraft orbits reveals variations in a body's gravitation
 
 We will discuss gravity field measurements and their interpretation further in {ref}`lecture08`.
 
-```{figure} figures/mars_topography.jpg
+```{figure} figures/mars_topography.avif
 :name: fig:mars-topography
 :width: 550px
 :align: center
@@ -377,7 +377,7 @@ The lunar regolith is a layer of unconsolidated debris — rock fragments, miner
 
 The Hayabusa2 (asteroid Ryugu) and OSIRIS-REx (asteroid Bennu) sample return missions revealed that even small ($\sim$500 m) rubble-pile asteroids have regolith — a surprising finding, since these bodies have negligible gravity and were expected to lose ejecta to space rather than retain it.
 
-```{figure} figures/lunar_regolith.jpg
+```{figure} figures/lunar_regolith.avif
 :name: fig:lunar-regolith
 :width: 400px
 :align: center
@@ -422,7 +422,7 @@ Hubble Space Telescope observations have detected possible water vapour plumes a
 
 Neptune's largest moon Triton shows **nitrogen geysers** that were observed by Voyager 2 during its 1989 flyby — plumes of nitrogen gas and dark dust rising $\sim$8 km above the surface before being carried downwind by thin atmospheric currents. Triton's very young surface, retrograde orbit (suggesting it is a captured Kuiper Belt object), and possible subsurface ocean make it an intriguing target for future exploration.
 
-```{figure} figures/enceladus_cryovolcanism.jpg
+```{figure} figures/enceladus_cryovolcanism.avif
 :name: fig:enceladus-cryovolcanism
 :width: 500px
 :align: center

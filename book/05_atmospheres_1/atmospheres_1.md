@@ -9,7 +9,7 @@
 
 A planet's atmosphere is the thin gaseous envelope that separates its surface (or cloud tops) from the vacuum of space. Atmospheres play an outsized role in determining a planet's surface conditions — temperature, pressure, radiation environment, and chemistry — and are therefore central to questions of habitability. Understanding where atmospheres come from, what they are made of, and how they evolve is one of the core themes of planetary science {cite:p}`Catling2017`.
 
-```{figure} figures/earth_thin_blue_line.jpg
+```{figure} figures/earth_thin_blue_line.avif
 :name: fig:thin-blue-line
 :width: 600px
 :align: center
@@ -50,7 +50,7 @@ The diversity of atmospheres across the solar system is remarkable. The table be
 
 Data from {cite:p}`dePaterLissauer2010` and {cite:p}`NASAFactSheet`.
 
-```{figure} figures/venera13_venus_surface.jpg
+```{figure} figures/venera13_venus_surface.avif
 :name: fig:venera13-venus
 :width: 600px
 :align: center
@@ -442,7 +442,7 @@ Several processes can eject atmospheric particles to space without relying on th
 
 The MAVEN mission at Mars has measured the present-day atmospheric escape rates and demonstrated that solar wind stripping is the dominant loss mechanism for Mars's remaining atmosphere, with a current loss rate of $\sim$100 g s$^{-1}$ for $\mathrm{O}^+$ ions {cite:p}`Jakosky2018`.
 
-```{figure} figures/mars_atmosphere.jpg
+```{figure} figures/mars_atmosphere.avif
 :name: fig:mars-atmosphere
 :width: 550px
 :align: center
