@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-University course materials repository for "Introduction to Planetary Science" at the Kapteyn Institute (course code WBAS002-05). Part of the [FormingWorlds](https://github.com/FormingWorlds) organization.
+University course materials repository for "Introduction to Planetary Science" at the Kapteyn Astronomical Institute of the University of Groningen. The main lecturer is Tim Lichtenberg from the Kapteyn Institute. This course is a BSc Astronomy mandatory course for 2nd-year students, covering fundamental concepts in planetary science, including planet formation, solar system dynamics, exoplanets, and astrobiology. The repository contains lecture notes, figures, and planning documents for the course. The lecture notes are written in MyST Markdown and built into HTML and PDF formats using Jupyter Book. The course emphasizes scientific accuracy, proper citation of sources, and clear explanations suitable for undergraduate students.
 
 ## Repository Structure
 
@@ -18,6 +18,23 @@ University course materials repository for "Introduction to Planetary Science" a
 - `planning/` — Curriculum outlines and course planning documents
 - `content/course2025` — Symlink to Google Drive containing previous lecture materials (slides, data, etc.); gitignored and not tracked
 - `.github/workflows/book.yml` — GitHub Actions workflow deploying HTML to GitHub Pages
+
+## High-level Instructions
+
+- When editing lecture content, ensure scientific accuracy by verifying all claims against authoritative sources and citing them properly in the `## References` section.
+- When adding new lectures or sections, maintain the established structure and formatting conventions (MyST Markdown, math macros, citation style).
+- When updating the curriculum or schedule, reflect changes in `planning/course_development.md` to keep the course plan up to date.
+- When searching for literature to cite, prioritize peer-reviewed journal articles, review papers, and authoritative databases (NASA, IAU) over textbooks or web sources. Always include a DOI when available.
+- When looking for literature, check `contens/books` for authorative sources, but verify that they are still accurate and relevant before citing.
+- When looking for literature, check `contens/course2025` for previously used sources and lecture materials, but verify that they are still accurate and relevant before citing.
+- When looking for literature, use the NASA ADS database (https://ui.adsabs.harvard.edu/) to find recent papers on planetary science topics. Give some weight to the articles and referenced papers in `https://ui.adsabs.harvard.edu/public-libraries/L2e3RhUYQnqmpIyMpWUG3A`. Use the `bibtex` export option to generate BibTeX entries for new sources.
+- When adding or editing content, ensure that all numerical values, equations, and historical claims are verified against primary sources or authoritative databases. Do not rely on training data alone for factual accuracy.
+- All lectures should have good visuals (figures, diagrams) where appropriate. When adding figures, ensure they are properly referenced in the text and included in the `figures/` directory of the corresponding lecture.
+- For all figures prioritize original sources (e.g., from NASA missions, published papers) and figures from the public domain. Ensure proper attribution in the caption. Avoid using low-quality or uncredited images.
+- Double and triple check all citations for accuracy, including author names, publication year, journal, and DOI. Do not invent DOIs — if unsure whether a DOI exists, omit it and flag for manual verification with a comment: `% TODO: verify DOI`.
+- Double and triple check all links (DOIs, URLs) to ensure they resolve correctly. For web resources, use the most stable/canonical URL available and note the access date in the BibTeX `note` field if the content is known to change frequently.
+- Double and trip check all math equations for dimensional consistency and physical correctness. After writing a derivation, verify that the units on both sides match and check limiting cases to ensure the equation behaves as expected.
+
 
 ## Build System
 
