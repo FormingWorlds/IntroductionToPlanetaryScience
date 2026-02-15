@@ -16,7 +16,14 @@
       "Bash(pip install:*)",
       "Bash(brew list:*)",
       "Bash(brew install:*)",
-      "Bash(pdftotext:*)"
+      "Bash(pdftotext:*)",
+      "Bash(jupyter-book build:*)",
+      "Bash(pip show:*)",
+      "Bash(python -c:*)",
+      "Bash(jupyter-book clean:*)",
+      "Bash(git -C /Users/timlichtenberg/git/IntroductionToPlanetaryScience status)",
+      "Bash(git -C /Users/timlichtenberg/git/IntroductionToPlanetaryScience diff)",
+      "Bash(git -C /Users/timlichtenberg/git/IntroductionToPlanetaryScience log --oneline -5)"
     ]
   }
 }
