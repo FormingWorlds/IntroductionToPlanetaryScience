@@ -133,11 +133,31 @@ Use `` {cite:t}`key` `` when the author is the **grammatical subject** of the se
 {cite:t}`Birch1952` established an empirical relationship between wave velocity and density.
 ```
 
+#### Bibliography formatting
+
+The bibliography list uses a **custom pybtex Chicago style** (`bibtex_default_style: chicago` in `_config.yml`), implemented in `src/ips_styles/chicago.py` and registered via entry points in `pyproject.toml`. This style:
+- Formats entries as: **Author. Year. "Title." *Journal* Volume(Number): Pages. doi:DOI. URL.**
+- Uses citation keys as labels (hidden by CSS in `book/_static/custom.css`)
+- Sorts entries alphabetically by author, then year, then title
+
+After modifying the style, run `pip install -e .` to re-register the entry point.
+
 #### BibTeX key format
 
 - Keys follow the format `AuthorYear` (e.g., `Lichtenberg2021`, `Raymond2022`), or `AuthorYearLetter` when there are multiple papers by the same first author in the same year (e.g., `Wordsworth2013a`, `Wordsworth2013b`)
 - Prefer DOI-bearing entries; include `doi = {}` field in every BibTeX entry where available
 - Prefer peer-reviewed journal articles over textbooks or web sources; use review articles where appropriate for broad topics
+
+#### Open-access links in BibTeX entries
+
+Every BibTeX entry **must** include a link to an open-access source, in order of preference:
+
+1. **NASA ADS** (preferred): `url = {https://ui.adsabs.harvard.edu/doi/{DOI}/abstract}` — works for most journal articles and conference papers indexed by ADS
+2. **arXiv**: `eprint = {XXXX.XXXXX}` with `archivePrefix = {arXiv}` — for preprints and papers with arXiv versions
+3. **Publisher open access**: Direct URL to an open-access PDF or landing page (e.g., Nature Communications, Science Advances, open-access journals)
+4. **Institutional repository or other stable URL**: Use the `url` field
+
+For entries that have BOTH a DOI and an arXiv eprint, include both fields — the Chicago style will render both links. For books, include the ADS URL if the book is indexed there; otherwise omit the URL field (the DOI link is sufficient).
 
 ### When adding or editing lecture content
 

@@ -12,5 +12,8 @@ dependencies = [
     "sphinx-proof",
 ]
 
-[tool.setuptools]
-packages = []
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.entry-points."pybtex.style.formatting"]
+chicago = "ips_styles.chicago:Style"

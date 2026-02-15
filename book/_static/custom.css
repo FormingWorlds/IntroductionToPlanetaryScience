@@ -13,3 +13,22 @@ div.admonition.highlights > .admonition-title {
 .unit {
     font-variant: small-caps;
 }
+
+/* Chicago author-date bibliography: hide alpha-style labels [CK17] and back-reference numbers */
+div.citation span.label,
+div.citation span.backrefs {
+    display: none;
+}
+
+/* Adjust bibliography entry layout: hanging indent, no label column */
+div.citation {
+    display: block;
+    padding-left: 2em;
+    text-indent: -2em;
+    margin-bottom: 0.5em;
+}
+
+div.citation p {
+    display: inline;
+    margin: 0;
+}
