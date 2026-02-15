@@ -11,7 +11,7 @@ In {ref}`lecture05`, we studied the vertical structure of atmospheres — how pr
 
 ### Saturation and condensation
 
-Every gas has a maximum amount of vapour that the surrounding air can hold at a given temperature. This maximum is set by the **saturation vapour pressure** $P_{\mathrm{sat}}(T)$ — the partial pressure at which the rate of evaporation from a liquid (or solid) surface equals the rate of condensation back onto it. When the actual partial pressure of a vapour exceeds $P_{\mathrm{sat}}$, the air is **supersaturated** and condensation is thermodynamically favoured {cite}`Pierrehumbert2010`.
+Every gas has a maximum amount of vapour that the surrounding air can hold at a given temperature. This maximum is set by the **saturation vapour pressure** $P_{\mathrm{sat}}(T)$ — the partial pressure at which the rate of evaporation from a liquid (or solid) surface equals the rate of condensation back onto it. When the actual partial pressure of a vapour exceeds $P_{\mathrm{sat}}$, the air is **supersaturated** and condensation is thermodynamically favoured {cite:p}`Pierrehumbert2010`.
 
 The key property of $P_{\mathrm{sat}}(T)$ is its strong temperature dependence: it increases roughly exponentially with temperature. A parcel of air that is unsaturated at the warm surface can become saturated simply by cooling — for example, by rising and expanding adiabatically. The temperature at which a parcel first reaches saturation is called the **dew point** (for condensation to liquid) or the **frost point** (for deposition to ice).
 
@@ -25,7 +25,7 @@ When $\mathrm{RH} = 100\%$, the air is saturated; when $\mathrm{RH} > 100\%$, it
 
 ### Nucleation
 
-Even when air is supersaturated, condensation does not happen instantly. Forming a new droplet requires overcoming an energy barrier — the surface energy of the tiny embryonic droplet. This process is called **nucleation** {cite}`Catling2017`.
+Even when air is supersaturated, condensation does not happen instantly. Forming a new droplet requires overcoming an energy barrier — the surface energy of the tiny embryonic droplet. This process is called **nucleation** {cite:p}`Catling2017`.
 
 - **Homogeneous nucleation** — forming droplets from vapour alone, without any pre-existing surface — requires very high supersaturations (RH $\gg$ 100%) and is extremely rare in planetary atmospheres.
 - **Heterogeneous nucleation** — condensation onto pre-existing particles called **condensation nuclei** (dust grains, volcanic aerosols, sea salt, soot, cosmic ray ions) — occurs at much lower supersaturations (RH $\gtrsim$ 100%) and is the dominant cloud formation mechanism on all planets.
@@ -149,7 +149,7 @@ The Clausius-Clapeyron equation applies to *any* vapour-to-liquid (or vapour-to-
 $^*$Approximate condensation temperature at the pressure levels found in each planet's atmosphere.
 $^\dagger$Latent heat of sublimation (solid $\leftrightarrow$ vapour).
 
-Data from {cite}`Catling2017` and {cite}`dePaterLissauer2010`.
+Data from {cite:p}`Catling2017` and {cite:p}`dePaterLissauer2010`.
 
 The large $L_v/R_v$ ratio for $\mathrm{H_2SO_4}$ explains why Venus's sulfuric acid clouds occupy a relatively narrow altitude range — the exponential sensitivity confines condensation to a thin temperature band. Conversely, $\mathrm{CH_4}$ has a low $L_v/R_v$, meaning its saturation curve is flatter and methane clouds on Titan can extend over a wider altitude range.
 ```
@@ -157,11 +157,11 @@ The large $L_v/R_v$ ratio for $\mathrm{H_2SO_4}$ explains why Venus's sulfuric a
 
 ## Clouds across the solar system
 
-Every planet and moon with a substantial atmosphere has clouds — but the condensing species and the cloud structure vary enormously. Here we survey the major cloud systems in our solar system {cite}`SanchezLavega2011`.
+Every planet and moon with a substantial atmosphere has clouds — but the condensing species and the cloud structure vary enormously. Here we survey the major cloud systems in our solar system {cite:p}`SanchezLavega2011`.
 
 ### Venus: sulfuric acid clouds
 
-Venus is permanently shrouded in thick clouds that completely obscure the surface at visible wavelengths. These clouds are composed of $\mathrm{H_2SO_4}$ (sulfuric acid) droplets and extend from $\sim$48 km to $\sim$70 km altitude, spanning a temperature range of roughly 350–230 K {cite}`Catling2017`.
+Venus is permanently shrouded in thick clouds that completely obscure the surface at visible wavelengths. These clouds are composed of $\mathrm{H_2SO_4}$ (sulfuric acid) droplets and extend from $\sim$48 km to $\sim$70 km altitude, spanning a temperature range of roughly 350–230 K {cite:p}`Catling2017`.
 
 The sulfuric acid is produced by **photochemistry** in the upper atmosphere:
 
@@ -190,13 +190,13 @@ Mars's thin atmosphere ($\sim$6 mbar surface pressure) supports two types of clo
 
 ### Titan: methane rain
 
-Saturn's moon Titan hosts the only known active **hydrological cycle** beyond Earth — but with $\mathrm{CH_4}$ (methane) playing the role of water. Titan's surface temperature ($\sim$94 K) and pressure ($\sim$1.5 bar) place it near the triple point of methane, enabling liquid methane on the surface (lakes and seas), methane clouds in the troposphere, and methane rain {cite}`dePaterLissauer2010`.
+Saturn's moon Titan hosts the only known active **hydrological cycle** beyond Earth — but with $\mathrm{CH_4}$ (methane) playing the role of water. Titan's surface temperature ($\sim$94 K) and pressure ($\sim$1.5 bar) place it near the triple point of methane, enabling liquid methane on the surface (lakes and seas), methane clouds in the troposphere, and methane rain {cite:p}`dePaterLissauer2010`.
 
 Titan's clouds are mostly $\mathrm{CH_4}$ (condensing at $\sim$8–30 km altitude) with some $\mathrm{C_2H_6}$ (ethane). Unlike Earth's water cycle, which is driven by solar evaporation, Titan's methane cycle is sluggish — rainfall is infrequent but intense when it occurs, creating transient rivers and channels carved into the icy surface. The Cassini–Huygens mission observed clouds forming preferentially at Titan's south pole (then in summer), with seasonal shifts as Titan orbits Saturn.
 
 ### Giant planets: layered cloud structure
 
-The hydrogen-dominated atmospheres of Jupiter and Saturn host a **vertically layered** cloud structure, predicted by the Clausius-Clapeyron equation applied to each condensing species at the temperature and pressure where it reaches saturation {cite}`Showman2020`:
+The hydrogen-dominated atmospheres of Jupiter and Saturn host a **vertically layered** cloud structure, predicted by the Clausius-Clapeyron equation applied to each condensing species at the temperature and pressure where it reaches saturation {cite:p}`Showman2020`:
 
 1. **$\mathrm{NH_3}$ ice** (topmost layer): condensing at $T \sim 130$–150 K, $P \sim 0.5$–1 bar. These are the clouds we see in visible light — the white and coloured bands of Jupiter.
 2. **$\mathrm{NH_4SH}$** (ammonium hydrosulfide): condensing at $T \sim 200$–240 K, $P \sim 2$–3 bar. Formed by the reaction $\mathrm{NH_3} + \mathrm{H_2S} \to \mathrm{NH_4SH}$.
@@ -215,7 +215,7 @@ The ice giants **Uranus** and **Neptune** have a different cloud hierarchy refle
 
 ## Atmospheric dynamics
 
-Atmospheres are not static — they are vast heat engines driven by uneven heating. The equator receives more solar energy per unit area than the poles, creating a temperature gradient that drives global-scale circulation patterns. How the atmosphere redistributes this heat depends on the planet's rotation rate, size, and atmospheric properties {cite}`SanchezLavega2011`.
+Atmospheres are not static — they are vast heat engines driven by uneven heating. The equator receives more solar energy per unit area than the poles, creating a temperature gradient that drives global-scale circulation patterns. How the atmosphere redistributes this heat depends on the planet's rotation rate, size, and atmospheric properties {cite:p}`SanchezLavega2011`.
 
 ### The Hadley cell
 
@@ -264,7 +264,7 @@ where $U$ is the characteristic wind speed and $L$ is the characteristic horizon
 
 ### Circulation cells and rotation rate
 
-The number of circulation cells depends critically on the planet's rotation rate {cite}`Showman2020`:
+The number of circulation cells depends critically on the planet's rotation rate {cite:p}`Showman2020`:
 
 - **Slowly rotating planets** (Venus, Titan): A single Hadley cell extends from equator to pole in each hemisphere. Venus has one giant Hadley cell per hemisphere despite being nearly the same size as Earth, because its slow rotation (243-day period) gives very small Coriolis forces ($\mathrm{Ro} \gg 1$ for large-scale flows).
 - **Moderately rotating planets** (Earth): The Hadley cell extends to $\sim$30° latitude, where the Coriolis deflection becomes strong enough to break the cell. Two additional cells form at higher latitudes: the **Ferrel cell** (mid-latitudes, driven indirectly by the Hadley and polar cells) and the **polar cell**. Earth has three cells per hemisphere.
@@ -277,7 +277,7 @@ The transition between regimes is governed by the ratio of the planet's rotation
 
 ### Geostrophic balance
 
-At large scales (low Rossby number), the atmosphere reaches a steady state in which the **Coriolis force** balances the **pressure gradient force**. This balance is called **geostrophic balance** and is the dominant force balance for large-scale weather systems on Earth and the banded circulations of the giant planets {cite}`Pierrehumbert2010`.
+At large scales (low Rossby number), the atmosphere reaches a steady state in which the **Coriolis force** balances the **pressure gradient force**. This balance is called **geostrophic balance** and is the dominant force balance for large-scale weather systems on Earth and the banded circulations of the giant planets {cite:p}`Pierrehumbert2010`.
 
 In vector form, geostrophic balance reads:
 
@@ -309,7 +309,7 @@ Where the temperature gradient between the warm tropics and the cold poles is st
 
 ### Giant planet banding
 
-On Jupiter and Saturn, the same physics operates on a grander scale. The alternating light and dark bands — **zones** and **belts** — correspond to regions of rising and sinking air with alternating wind directions. Between adjacent bands, strong **zonal jets** (east–west winds) reach speeds of $\sim$150 m s$^{-1}$ on Jupiter and $\sim$400 m s$^{-1}$ on Saturn. The jets are remarkably stable over decades of observation and extend deep into the planetary interior, as revealed by Juno's gravity measurements {cite}`Showman2020`.
+On Jupiter and Saturn, the same physics operates on a grander scale. The alternating light and dark bands — **zones** and **belts** — correspond to regions of rising and sinking air with alternating wind directions. Between adjacent bands, strong **zonal jets** (east–west winds) reach speeds of $\sim$150 m s$^{-1}$ on Jupiter and $\sim$400 m s$^{-1}$ on Saturn. The jets are remarkably stable over decades of observation and extend deep into the planetary interior, as revealed by Juno's gravity measurements {cite:p}`Showman2020`.
 
 
 (weather-storms)=
@@ -319,7 +319,7 @@ Planets and moons exhibit a stunning variety of weather phenomena, from gentle b
 
 ### Mars: dust storms and seasonal cycles
 
-Mars experiences dramatic weather driven by its thin atmosphere and strong seasonal forcing. Two phenomena stand out {cite}`Catling2017`:
+Mars experiences dramatic weather driven by its thin atmosphere and strong seasonal forcing. Two phenomena stand out {cite:p}`Catling2017`:
 
 - **Dust storms:** Local dust storms are common, lofting mineral particles to $\sim$10–30 km altitude. Occasionally, these storms grow to engulf the entire planet in a **global dust storm**, reducing surface visibility to near zero for weeks. The most recent global dust storms occurred in 2018 and 2007. The feedback mechanism is straightforward: dust absorbs solar radiation → heats the atmosphere → drives stronger winds → lofts more dust — a positive feedback loop.
 
@@ -335,7 +335,7 @@ Mars before and during the 2018 global dust storm, as imaged by the Mars Reconna
 
 ### Venus: super-rotation
 
-Venus presents one of the great puzzles of atmospheric dynamics: its atmosphere **rotates 60 times faster** than the planet itself at cloud level. While Venus's surface rotates once every 243 Earth days (retrograde), the cloud-top winds circle the planet in just $\sim$4 days, reaching speeds of $\sim$100 m s$^{-1}$. This phenomenon is called **atmospheric super-rotation** {cite}`SanchezLavega2011`.
+Venus presents one of the great puzzles of atmospheric dynamics: its atmosphere **rotates 60 times faster** than the planet itself at cloud level. While Venus's surface rotates once every 243 Earth days (retrograde), the cloud-top winds circle the planet in just $\sim$4 days, reaching speeds of $\sim$100 m s$^{-1}$. This phenomenon is called **atmospheric super-rotation** {cite:p}`SanchezLavega2011`.
 
 Super-rotation requires a mechanism to transport angular momentum from the slowly rotating surface *upward and equatorward* — against the usual sense of friction, which should slow the atmosphere down to match the surface. The leading explanation involves a combination of **thermal tides** (driven by solar heating of the cloud layer) and **planetary-scale waves** that pump angular momentum toward the equator. Despite decades of study, the detailed mechanism remains an active area of research.
 
@@ -351,7 +351,7 @@ Jupiter's **Great Red Spot (GRS)** is the largest and longest-lived storm in the
 Jupiter's Great Red Spot and surrounding turbulent atmosphere, imaged by NASA's *Juno* spacecraft during a close flyby. The Great Red Spot is an anticyclonic storm larger than Earth that has persisted for centuries. The surrounding vortices and chaotic cloud patterns reveal the intense turbulence of Jupiter's upper troposphere. Credit: NASA/JPL-Caltech/SwRI/MSSS, public domain.
 ```
 
-The GRS sits between two zonal jets with opposite directions, which confine and sustain it. Its longevity is remarkable — on Earth, the largest hurricanes dissipate within days once they lose their energy source (warm ocean water). The GRS is sustained by absorbing smaller vortices and by latent heat released from $\mathrm{H_2O}$ condensation deep in the atmosphere. However, the GRS has been slowly shrinking over the past century, and its long-term fate remains uncertain {cite}`Showman2020`.
+The GRS sits between two zonal jets with opposite directions, which confine and sustain it. Its longevity is remarkable — on Earth, the largest hurricanes dissipate within days once they lose their energy source (warm ocean water). The GRS is sustained by absorbing smaller vortices and by latent heat released from $\mathrm{H_2O}$ condensation deep in the atmosphere. However, the GRS has been slowly shrinking over the past century, and its long-term fate remains uncertain {cite:p}`Showman2020`.
 
 ### Saturn: the hexagonal jet stream
 
@@ -378,11 +378,11 @@ Neptune's vigorous weather is powered primarily by **internal heat**: Neptune ra
 
 ## Climate evolution and the faint young Sun
 
-On timescales of billions of years, a planet's climate is not constant — it evolves in response to changes in the host star's luminosity, the atmospheric composition, and geological processes. The most celebrated example of this long-term evolution is the **faint young Sun paradox** {cite}`Feulner2012`.
+On timescales of billions of years, a planet's climate is not constant — it evolves in response to changes in the host star's luminosity, the atmospheric composition, and geological processes. The most celebrated example of this long-term evolution is the **faint young Sun paradox** {cite:p}`Feulner2012`.
 
 ### Solar luminosity evolution
 
-The Sun, like all main-sequence stars, has been gradually brightening as hydrogen is converted to helium in the core. The increasing mean molecular weight requires higher core temperatures to maintain pressure support, which increases the nuclear reaction rate and hence the luminosity. A standard solar evolution model gives {cite}`Catling2017`:
+The Sun, like all main-sequence stars, has been gradually brightening as hydrogen is converted to helium in the core. The increasing mean molecular weight requires higher core temperatures to maintain pressure support, which increases the nuclear reaction rate and hence the luminosity. A standard solar evolution model gives {cite:p}`Catling2017`:
 
 $$
 \frac{L(t)}{\Lsun} \approx \left[1 + \frac{2}{5}\left(1 - \frac{t}{t_\odot}\right)\right]^{-1}
@@ -414,7 +414,7 @@ This contradiction — a faint Sun that should have frozen the Earth, versus geo
 
 ### Possible solutions
 
-Several mechanisms have been proposed to resolve the paradox {cite}`Feulner2012`:
+Several mechanisms have been proposed to resolve the paradox {cite:p}`Feulner2012`:
 
 - **Enhanced $\mathrm{CO_2}$ greenhouse:** If the early atmosphere contained 10–1000 times more $\mathrm{CO_2}$ than today (plausible, given that the carbonate-silicate cycle was less efficient before the emergence of land plants), the enhanced greenhouse warming could compensate for the weaker Sun.
 - **Methane greenhouse:** Biogenic $\mathrm{CH_4}$ from early methanogens could have provided additional greenhouse warming. $\mathrm{CH_4}$ is a potent greenhouse gas, and in an anoxic (oxygen-free) early atmosphere, it would have had a much longer lifetime than today.
@@ -425,7 +425,7 @@ The most likely resolution is a combination of elevated $\mathrm{CO_2}$ and $\ma
 
 ### The Mars climate puzzle
 
-Mars poses an even more extreme version of the same problem. At 1.52 AU, Mars receives less than half of Earth's solar flux — and with the faint young Sun, the situation is even worse. Yet Mars shows compelling geological evidence for warm, wet conditions during the **Noachian** period ($>$3.7 Ga): extensive valley networks carved by flowing water, clay minerals formed by aqueous weathering, and sedimentary deposits in ancient lake basins (including Jezero crater, where the Perseverance rover is currently exploring) {cite}`Wordsworth2022`.
+Mars poses an even more extreme version of the same problem. At 1.52 AU, Mars receives less than half of Earth's solar flux — and with the faint young Sun, the situation is even worse. Yet Mars shows compelling geological evidence for warm, wet conditions during the **Noachian** period ($>$3.7 Ga): extensive valley networks carved by flowing water, clay minerals formed by aqueous weathering, and sedimentary deposits in ancient lake basins (including Jezero crater, where the Perseverance rover is currently exploring) {cite:p}`Wordsworth2022`.
 
 A dense $\mathrm{CO_2}$ atmosphere alone struggles to explain warm conditions on early Mars — $\mathrm{CO_2}$ condenses into ice clouds at the high pressures required, which can actually *cool* the planet by increasing the albedo. Reducing greenhouse gases ($\mathrm{H_2}$, $\mathrm{CH_4}$) produced by volcanism and water-rock reactions have been proposed as additional warming agents. The early Mars climate remains one of the major unsolved problems in planetary science.
 
@@ -442,7 +442,7 @@ The stability of a planet's climate depends on **feedback mechanisms** — proce
 
 ## The carbonate-silicate cycle
 
-Earth has maintained liquid water at its surface for at least 4.4 billion years despite a 30% increase in solar luminosity. This remarkable stability requires a powerful **negative feedback** mechanism: the **carbonate-silicate cycle**, first described by {cite}`Walker1981`.
+Earth has maintained liquid water at its surface for at least 4.4 billion years despite a 30% increase in solar luminosity. This remarkable stability requires a powerful **negative feedback** mechanism: the **carbonate-silicate cycle**, first described by {cite:p}`Walker1981`.
 
 ### The Urey reaction
 
@@ -462,7 +462,7 @@ The cycle is closed by **plate tectonics**. Carbonate-bearing ocean floor is sub
 
 ### The negative feedback
 
-The weathering rate depends strongly on temperature through an **Arrhenius-type dependence**: chemical reactions proceed faster at higher temperatures. Additionally, a warmer climate produces more rainfall (more water evaporates from the oceans), which further accelerates weathering. This creates a powerful **negative feedback loop** {cite}`Walker1981`:
+The weathering rate depends strongly on temperature through an **Arrhenius-type dependence**: chemical reactions proceed faster at higher temperatures. Additionally, a warmer climate produces more rainfall (more water evaporates from the oceans), which further accelerates weathering. This creates a powerful **negative feedback loop** {cite:p}`Walker1981`:
 
 1. **If the planet warms** (e.g., due to increasing solar luminosity or volcanic outgassing): more rainfall + faster chemical reactions → **weathering rate increases** → more $\mathrm{CO_2}$ is drawn out of the atmosphere → greenhouse weakens → planet **cools back down**.
 

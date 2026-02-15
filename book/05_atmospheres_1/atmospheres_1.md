@@ -7,7 +7,7 @@
 
 ## Atmospheric composition
 
-A planet's atmosphere is the thin gaseous envelope that separates its surface (or cloud tops) from the vacuum of space. Atmospheres play an outsized role in determining a planet's surface conditions — temperature, pressure, radiation environment, and chemistry — and are therefore central to questions of habitability. Understanding where atmospheres come from, what they are made of, and how they evolve is one of the core themes of planetary science {cite}`Catling2017`.
+A planet's atmosphere is the thin gaseous envelope that separates its surface (or cloud tops) from the vacuum of space. Atmospheres play an outsized role in determining a planet's surface conditions — temperature, pressure, radiation environment, and chemistry — and are therefore central to questions of habitability. Understanding where atmospheres come from, what they are made of, and how they evolve is one of the core themes of planetary science {cite:p}`Catling2017`.
 
 ```{figure} figures/earth_thin_blue_line.jpg
 :name: fig:thin-blue-line
@@ -27,13 +27,13 @@ Terrestrial planets like Earth, Venus, and Mars were too small to capture signif
 
 ### Secondary atmospheres
 
-**Secondary atmospheres** are produced by **outgassing** — the release of volatiles from the planet's interior through volcanism and magma ocean degassing. As discussed in {ref}`lecture04`, the speciation of outgassed volatiles depends on the oxygen fugacity of the magma: oxidising conditions produce $\mathrm{CO_2}$, $\mathrm{H_2O}$, and $\mathrm{N_2}$, while reducing conditions produce $\mathrm{H_2}$, CO, and $\mathrm{N_2}$ {cite}`Hirschmann2012`.
+**Secondary atmospheres** are produced by **outgassing** — the release of volatiles from the planet's interior through volcanism and magma ocean degassing. As discussed in {ref}`lecture04`, the speciation of outgassed volatiles depends on the oxygen fugacity of the magma: oxidising conditions produce $\mathrm{CO_2}$, $\mathrm{H_2O}$, and $\mathrm{N_2}$, while reducing conditions produce $\mathrm{H_2}$, CO, and $\mathrm{N_2}$ {cite:p}`Hirschmann2012`.
 
 The present-day atmospheres of **Venus** ($\mathrm{CO_2}$-dominated) and **Mars** ($\mathrm{CO_2}$-dominated but much thinner) are essentially secondary atmospheres — their compositions reflect volcanic outgassing with relatively modest subsequent modification. Titan's thick $\mathrm{N_2}$ atmosphere also originated from outgassing (likely from the conversion of accreted $\mathrm{NH_3}$).
 
 ### Tertiary atmospheres
 
-**Tertiary atmospheres** have been substantially modified from their outgassed composition by surface processes, photochemistry, or biology. Earth is the prime example: its original outgassed atmosphere was likely dominated by $\mathrm{CO_2}$ and $\mathrm{N_2}$ (similar to Venus), but billions of years of biological activity — particularly oxygenic photosynthesis — have transformed it into the $\mathrm{N_2}$/$\mathrm{O_2}$ atmosphere we breathe today. Earth's atmospheric $\mathrm{O_2}$ (21% by volume) is entirely biogenic: it would disappear within a few million years if photosynthesis ceased {cite}`Catling2017`.
+**Tertiary atmospheres** have been substantially modified from their outgassed composition by surface processes, photochemistry, or biology. Earth is the prime example: its original outgassed atmosphere was likely dominated by $\mathrm{CO_2}$ and $\mathrm{N_2}$ (similar to Venus), but billions of years of biological activity — particularly oxygenic photosynthesis — have transformed it into the $\mathrm{N_2}$/$\mathrm{O_2}$ atmosphere we breathe today. Earth's atmospheric $\mathrm{O_2}$ (21% by volume) is entirely biogenic: it would disappear within a few million years if photosynthesis ceased {cite:p}`Catling2017`.
 
 ### Comparative atmospheric properties
 
@@ -48,7 +48,7 @@ The diversity of atmospheres across the solar system is remarkable. The table be
 | Mean molecular weight $\mu$ | 43.4 | 28.97 | 43.3 | 2.2 | 28.6 |
 | Atmosphere type | Secondary | Tertiary | Secondary | Primary | Secondary |
 
-Data from {cite}`dePaterLissauer2010` and {cite}`NASAFactSheet`.
+Data from {cite:p}`dePaterLissauer2010` and {cite:p}`NASAFactSheet`.
 
 ```{figure} figures/venera13_venus_surface.jpg
 :name: fig:venera13-venus
@@ -217,7 +217,7 @@ Above this, the **thermosphere** (85–600 km) is heated by the absorption of ex
 
 ### Comparative vertical structures
 
-The vertical structure varies dramatically across the solar system {cite}`Catling2017`:
+The vertical structure varies dramatically across the solar system {cite:p}`Catling2017`:
 
 - **Venus:** A massive troposphere extends to $\sim$65 km. Above the cloud deck ($\sim$48–70 km), temperature decreases slowly. There is no Earth-like stratospheric temperature inversion because Venus lacks an ozone layer.
 - **Mars:** A thin troposphere ($\sim$40 km) directly overlain by a thermosphere. Mars also lacks a significant ozone layer and stratospheric inversion.
@@ -282,7 +282,7 @@ This exponential attenuation law — the **Beer–Lambert law** — shows that i
 
 ### The atmospheric photosphere concept
 
-Just as a star has a **photosphere** — the layer from which photons escape to space — a planet's atmosphere has an effective emission level at approximately $\tau \approx 1$ (when looking from space downward at infrared wavelengths). Photons emitted from below this level are likely to be reabsorbed before escaping; photons emitted from above this level escape freely. The temperature at this $\tau \approx 1$ level determines the planet's **effective temperature** as seen from space {cite}`Pierrehumbert2010`.
+Just as a star has a **photosphere** — the layer from which photons escape to space — a planet's atmosphere has an effective emission level at approximately $\tau \approx 1$ (when looking from space downward at infrared wavelengths). Photons emitted from below this level are likely to be reabsorbed before escaping; photons emitted from above this level escape freely. The temperature at this $\tau \approx 1$ level determines the planet's **effective temperature** as seen from space {cite:p}`Pierrehumbert2010`.
 
 
 ## Energy balance and the greenhouse effect
@@ -328,7 +328,7 @@ The discrepancy $\Delta T = T_{\mathrm{surface}} - T_{\mathrm{eff}}$ reveals the
 
 ### The greenhouse mechanism
 
-The greenhouse effect arises because the atmosphere is **relatively transparent** to incoming shortwave (visible) radiation from the star but **relatively opaque** to outgoing longwave (infrared) radiation from the surface. The mechanism works as follows {cite}`Pierrehumbert2010`:
+The greenhouse effect arises because the atmosphere is **relatively transparent** to incoming shortwave (visible) radiation from the star but **relatively opaque** to outgoing longwave (infrared) radiation from the surface. The mechanism works as follows {cite:p}`Pierrehumbert2010`:
 
 1. Sunlight (visible wavelengths, peak $\sim$0.5 $\mu$m) passes through the atmosphere and heats the surface.
 2. The warm surface emits thermal radiation at infrared wavelengths (peak $\sim$10–15 $\mu$m for $T \sim 200$–$300$ K).
@@ -386,7 +386,7 @@ Schematic of the greenhouse effect. Incoming solar radiation (shortwave, yellow)
 (atm-escape)=
 ## Atmospheric escape
 
-An atmosphere is not permanent. Over geological time, gas molecules can be lost to space through several physical mechanisms. The balance between outgassing supply and escape loss determines a planet's atmospheric mass and composition over its history {cite}`Lammer2008`.
+An atmosphere is not permanent. Over geological time, gas molecules can be lost to space through several physical mechanisms. The balance between outgassing supply and escape loss determines a planet's atmospheric mass and composition over its history {cite:p}`Lammer2008`.
 
 ### Thermal (Jeans) escape
 
@@ -424,13 +424,13 @@ For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so lar
 
 ### Hydrodynamic escape
 
-When the energy input to the upper atmosphere is very large — for example, from intense **extreme ultraviolet (EUV)** radiation from a young, active star — the escape can transition from the slow, molecule-by-molecule Jeans process to a bulk **hydrodynamic outflow** in which the entire upper atmosphere flows outward like a wind. This is analogous to the solar wind but driven by stellar heating rather than the star's own thermal energy {cite}`Hunten1987`.
+When the energy input to the upper atmosphere is very large — for example, from intense **extreme ultraviolet (EUV)** radiation from a young, active star — the escape can transition from the slow, molecule-by-molecule Jeans process to a bulk **hydrodynamic outflow** in which the entire upper atmosphere flows outward like a wind. This is analogous to the solar wind but driven by stellar heating rather than the star's own thermal energy {cite:p}`Hunten1987`.
 
-Hydrodynamic escape is most important during a planet's first few hundred million years, when the host star's EUV luminosity is 10–100 times higher than at present. It can strip hydrogen-rich primary atmospheres from planets up to several Earth masses, and is the leading explanation for the observed **radius valley** in the exoplanet population — the deficit of planets with radii between $\sim$1.5 and $2 \, \Rearth$ ({ref}`lecture13`). During hydrodynamic escape, the outflowing hydrogen can also **drag along heavier species** (such as He, C, N, O), leading to more extensive atmospheric loss than Jeans escape alone would produce {cite}`Hunten1987`.
+Hydrodynamic escape is most important during a planet's first few hundred million years, when the host star's EUV luminosity is 10–100 times higher than at present. It can strip hydrogen-rich primary atmospheres from planets up to several Earth masses, and is the leading explanation for the observed **radius valley** in the exoplanet population — the deficit of planets with radii between $\sim$1.5 and $2 \, \Rearth$ ({ref}`lecture13`). During hydrodynamic escape, the outflowing hydrogen can also **drag along heavier species** (such as He, C, N, O), leading to more extensive atmospheric loss than Jeans escape alone would produce {cite:p}`Hunten1987`.
 
 ### Non-thermal escape mechanisms
 
-Several processes can eject atmospheric particles to space without relying on thermal energy {cite}`Lammer2008`:
+Several processes can eject atmospheric particles to space without relying on thermal energy {cite:p}`Lammer2008`:
 
 - **Sputtering:** Energetic ions from the solar wind or magnetospheric plasma impact the upper atmosphere and transfer enough momentum to eject atmospheric molecules. This is significant for Mars, which lacks a global magnetic field to deflect the solar wind.
 
@@ -440,7 +440,7 @@ Several processes can eject atmospheric particles to space without relying on th
 
 - **Impact erosion:** Large asteroid or comet impacts can eject significant fractions of a planet's atmosphere. The efficiency depends on the impactor size relative to the atmospheric scale height — very large impacts can blow off a substantial atmospheric mass in a single event.
 
-The MAVEN mission at Mars has measured the present-day atmospheric escape rates and demonstrated that solar wind stripping is the dominant loss mechanism for Mars's remaining atmosphere, with a current loss rate of $\sim$100 g s$^{-1}$ for $\mathrm{O}^+$ ions {cite}`Jakosky2018`.
+The MAVEN mission at Mars has measured the present-day atmospheric escape rates and demonstrated that solar wind stripping is the dominant loss mechanism for Mars's remaining atmosphere, with a current loss rate of $\sim$100 g s$^{-1}$ for $\mathrm{O}^+$ ions {cite:p}`Jakosky2018`.
 
 ```{figure} figures/mars_atmosphere.jpg
 :name: fig:mars-atmosphere
@@ -457,7 +457,7 @@ Whether a planet retains its atmosphere over billions of years depends on the co
 
 ### The escape velocity–temperature diagram
 
-The classic tool for assessing atmospheric retention is a plot of escape velocity versus surface (or exosphere) temperature. Each atmospheric species occupies a characteristic region based on its thermal velocity $v_{\mathrm{th}} = \sqrt{2\kB T / m}$. The rule of thumb for long-term retention is {cite}`dePaterLissauer2010`:
+The classic tool for assessing atmospheric retention is a plot of escape velocity versus surface (or exosphere) temperature. Each atmospheric species occupies a characteristic region based on its thermal velocity $v_{\mathrm{th}} = \sqrt{2\kB T / m}$. The rule of thumb for long-term retention is {cite:p}`dePaterLissauer2010`:
 
 $$
 v_{\mathrm{esc}} \gtrsim 6 \, v_{\mathrm{th}}
@@ -473,7 +473,7 @@ Applying this criterion reveals a clear pattern across the solar system:
 
 - **Earth and Venus**: Escape velocities of $\sim$11 km s$^{-1}$ are sufficient to retain heavy molecules ($\mathrm{N_2}$, $\mathrm{O_2}$, $\mathrm{CO_2}$, $\mathrm{H_2O}$) but not atomic hydrogen. Earth and Venus lose H to space, which contributes to long-term water loss (via photodissociation of $\mathrm{H_2O}$ followed by H escape).
 
-- **Mars**: With $v_{\mathrm{esc}} = 5.0$ km s$^{-1}$ and an exosphere temperature of $\sim$300 K, Mars is marginal for retaining even heavy species like $\mathrm{CO_2}$. While Jeans escape of $\mathrm{CO_2}$ is negligible, non-thermal processes (sputtering, ion pickup) have eroded most of Mars's original atmosphere over 4 billion years {cite}`Jakosky2018`.
+- **Mars**: With $v_{\mathrm{esc}} = 5.0$ km s$^{-1}$ and an exosphere temperature of $\sim$300 K, Mars is marginal for retaining even heavy species like $\mathrm{CO_2}$. While Jeans escape of $\mathrm{CO_2}$ is negligible, non-thermal processes (sputtering, ion pickup) have eroded most of Mars's original atmosphere over 4 billion years {cite:p}`Jakosky2018`.
 
 - **Titan**: Despite its low escape velocity (2.6 km s$^{-1}$), Titan retains a thick $\mathrm{N_2}$ atmosphere because it is extremely **cold** ($T_{\mathrm{exo}} \approx 150$ K). Low temperature means low thermal velocities, and the Jeans parameter remains large.
 
@@ -481,7 +481,7 @@ Applying this criterion reveals a clear pattern across the solar system:
 
 ### Atmospheric evolution over time
 
-Atmospheric retention is not simply a present-day snapshot — it evolves over a planet's lifetime {cite}`Lammer2008`:
+Atmospheric retention is not simply a present-day snapshot — it evolves over a planet's lifetime {cite:p}`Lammer2008`:
 
 - **Young stars are UV-bright:** Stars on the main sequence emit 10–100 times more EUV radiation in their first few hundred million years. This drives intense hydrodynamic escape that can strip primary atmospheres from low-mass planets.
 
@@ -504,9 +504,9 @@ Escape velocity versus surface temperature for solar system bodies. Diagonal lin
 
 ## Recent advances
 
-The James Webb Space Telescope (JWST) has opened a new era in exoplanet atmospheric characterisation. Thermal emission measurements of TRAPPIST-1 b — an Earth-sized planet orbiting an M dwarf — indicate a dayside temperature consistent with bare rock and no significant atmosphere ({cite}`Greene2023`). Similar results for TRAPPIST-1 c suggest that the innermost rocky planets around active M dwarfs may be stripped of their atmospheres by intense stellar irradiation, consistent with theoretical predictions of enhanced atmospheric escape around low-mass stars ({cite}`Wordsworth2022`).
+The James Webb Space Telescope (JWST) has opened a new era in exoplanet atmospheric characterisation. Thermal emission measurements of TRAPPIST-1 b — an Earth-sized planet orbiting an M dwarf — indicate a dayside temperature consistent with bare rock and no significant atmosphere {cite:p}`Greene2023`. Similar results for TRAPPIST-1 c suggest that the innermost rocky planets around active M dwarfs may be stripped of their atmospheres by intense stellar irradiation, consistent with theoretical predictions of enhanced atmospheric escape around low-mass stars {cite:p}`Wordsworth2022`.
 
-For solar system bodies, the MAVEN mission at Mars has quantified present-day atmospheric loss rates for multiple species, establishing that ion escape driven by the solar wind dominates over Jeans escape for most atmospheric constituents ({cite}`Jakosky2018`). Integrated over Mars's history, these loss rates can account for the removal of a substantial fraction of Mars's early atmosphere, though the total amount of $\mathrm{CO_2}$ lost to space versus sequestered in surface carbonates and the polar caps remains debated ({ref}`lecture10`).
+For solar system bodies, the MAVEN mission at Mars has quantified present-day atmospheric loss rates for multiple species, establishing that ion escape driven by the solar wind dominates over Jeans escape for most atmospheric constituents {cite:p}`Jakosky2018`. Integrated over Mars's history, these loss rates can account for the removal of a substantial fraction of Mars's early atmosphere, though the total amount of $\mathrm{CO_2}$ lost to space versus sequestered in surface carbonates and the polar caps remains debated ({ref}`lecture10`).
 
 These results underscore a central theme of atmospheric science: a planet's ability to retain its atmosphere depends not only on its mass and temperature (the Jeans escape criterion derived in this lecture) but also on the intensity of stellar radiation, the presence or absence of a global magnetic field ({ref}`lecture04`), and the planet's geological activity.
 
