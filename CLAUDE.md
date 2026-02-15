@@ -122,6 +122,16 @@ Each lecture `.md` file in `book/` **must** end with a dedicated `## References`
    - The status table (section 5) to track progress (e.g., "Not started" → "In progress" → "Draft complete")
    - The homework or exam sections if related content changes
 
+### When adding or editing slide content
+
+1. Every factual claim, equation, or dataset that originates from a specific source **must** be cited on the slide where it appears
+2. The lectures should be dominated by figures and equations, with minimal text — citations should be included in the figure captions or as small footnotes on the slide. Text should mainly appear as bullet points or annotations on figures, not as large paragraphs.
+3. The corresponding BibTeX entry must be added to `book/references.bib` if it does not already exist
+4. The lecture notes (MyST Markdown) must also be updated to include the new content and citations, following the same process as above (add content, add citations, update references section, update course development plan)
+5. Ensure that the slide content and lecture notes are consistent with each other — if a new figure or dataset is added to the slides, it should also be described and cited in the lecture notes
+6. The slides should be visually engaging, with clear labels, legends, and annotations to aid understanding
+7. All slides should share a common visual style (colors, fonts, layout) consistent with the course branding.
+
 ## Scientific Accuracy & Source Verification
 
 ### Verification requirements
