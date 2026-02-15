@@ -159,6 +159,25 @@
 % Source/credit line for figures
 \newcommand{\source}[1]{\par\vspace{-4pt}{\tiny\color{ipsText!60} Credit: #1}}
 
+% ── Break slide ─────────────────────────────────────────────
+% Reusable ~10 min break slide (Earthrise, Apollo 8 — NASA, public domain)
+\newcommand{\breakslide}{%
+  \begin{frame}[plain,noframenumbering]
+    \begin{tikzpicture}[remember picture, overlay]
+      \node[anchor=center, inner sep=0pt] at (current page.center) {%
+        \includegraphics[height=\paperheight]{break_background}%
+      };
+      \fill[black, opacity=0.35] (current page.north west) rectangle (current page.south east);
+    \end{tikzpicture}
+    \vfill
+    \begin{center}
+      {\color{white}\LARGE\bfseries Break}\\[8pt]
+      {\color{white!80}\normalsize $\sim$10 minutes}
+    \end{center}
+    \vfill
+  \end{frame}
+}
+
 % ── Required packages ───────────────────────────────────────
 \RequirePackage{tikz}
 \RequirePackage{booktabs}
