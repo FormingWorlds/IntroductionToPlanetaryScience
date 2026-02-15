@@ -410,6 +410,15 @@ Tidal heating is also implicated in maintaining subsurface oceans on other outer
 These "ocean worlds" are among the most promising targets in the search for extraterrestrial life, because they possess liquid water, chemical energy sources (from rock–water interactions at the ocean floor), and the organic building blocks needed for biology. We will return to this topic in {ref}`lecture14`.
 
 
+## Recent advances
+
+NASA's InSight mission (2018–2022) provided the first direct seismological measurements of another planet, fundamentally advancing our understanding of Mars's thermal state. Seismic wave travel times revealed Mars's core radius ($\sim$1830 km), mantle structure, and crustal thickness ({cite}`Stahler2021`, {cite}`Khan2021`; see {ref}`lecture08`). The mission's heat flow probe (HP$^3$) was unable to penetrate to the required depth due to unexpected soil properties, but the attempt provided valuable constraints on regolith thermal conductivity and near-surface heat flow.
+
+Tidal heating models for icy moons have been refined using updated rheological models and orbital evolution calculations ({cite}`Keane2023`). New models suggest that tidal dissipation in Enceladus may be concentrated in its ice shell rather than its rocky core, affecting predictions for the longevity and temperature of its subsurface ocean. For Europa, estimates of ice shell thickness have been narrowed to $\sim$15–25 km using multiple independent constraints, with implications for the Europa Clipper mission ({cite}`HowellPappalardo2020`; {ref}`lecture14`).
+
+Updated analyses of chondritic meteorites continue to refine our understanding of the radiogenic heating budget available during early solar system evolution ({cite}`Lichtenberg2023`), with implications for the thermal history of planetesimals and the onset of differentiation ({ref}`lecture04`).
+
+
 ## References
 
 ```{bibliography}

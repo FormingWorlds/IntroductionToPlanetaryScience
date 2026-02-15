@@ -467,6 +467,13 @@ The **Grand Tack hypothesis** {cite}`Walsh2011` proposes that Jupiter first migr
 The strongest evidence that migration is real comes from **hot Jupiters** — gas giant exoplanets orbiting their host stars with periods of just a few days ($a \lesssim 0.1$ AU). These planets cannot have formed in situ (there is not enough material, and temperatures are too high for solids to exist), so they must have formed further out and migrated inward. Additionally, ALMA observations of gaps in protoplanetary disks (such as those in HL Tau) may represent the signatures of embedded planets undergoing migration. We will revisit exoplanet demographics and the evidence for migration in {ref}`lecture13`.
 
 
+## Recent advances
+
+The study of planet formation has been transformed by high-resolution imaging of protoplanetary disks. The ALMA DSHARP survey ({cite}`Andrews2018`) revealed that ring-and-gap substructure is ubiquitous in protoplanetary disks, even around young ($\lesssim 1$ Myr) stars. These structures are widely interpreted as signatures of embedded planets clearing gaps in the disk, implying that planet formation begins earlier and proceeds faster than previously thought — consistent with the pebble accretion paradigm ({cite}`Lambrechts2012`).
+
+Theoretical advances have been consolidated in the *Protostars and Planets VII* review volume ({cite}`Drazkowska2023`), which presents an updated synthesis of planet formation theory incorporating ALMA constraints. Key developments include refined models of the streaming instability that forms planetesimals, improved treatments of pebble accretion in evolving disks, and new constraints on giant planet formation timescales from isotopic analyses of meteorites and Juno gravity measurements ({cite}`Wahl2017`). The emerging picture is that giant planet cores must form within the first 1–3 Myr of disk evolution — before the gas disperses — placing tight constraints on the growth mechanisms ({ref}`lecture08`).
+
+
 ## References
 
 ```{bibliography}

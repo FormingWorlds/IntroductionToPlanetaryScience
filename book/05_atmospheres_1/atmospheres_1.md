@@ -502,6 +502,15 @@ Escape velocity versus surface temperature for solar system bodies. Diagonal lin
 ```
 
 
+## Recent advances
+
+The James Webb Space Telescope (JWST) has opened a new era in exoplanet atmospheric characterisation. Thermal emission measurements of TRAPPIST-1 b — an Earth-sized planet orbiting an M dwarf — indicate a dayside temperature consistent with bare rock and no significant atmosphere ({cite}`Greene2023`). Similar results for TRAPPIST-1 c suggest that the innermost rocky planets around active M dwarfs may be stripped of their atmospheres by intense stellar irradiation, consistent with theoretical predictions of enhanced atmospheric escape around low-mass stars ({cite}`Wordsworth2022`).
+
+For solar system bodies, the MAVEN mission at Mars has quantified present-day atmospheric loss rates for multiple species, establishing that ion escape driven by the solar wind dominates over Jeans escape for most atmospheric constituents ({cite}`Jakosky2018`). Integrated over Mars's history, these loss rates can account for the removal of a substantial fraction of Mars's early atmosphere, though the total amount of $\mathrm{CO_2}$ lost to space versus sequestered in surface carbonates and the polar caps remains debated ({ref}`lecture10`).
+
+These results underscore a central theme of atmospheric science: a planet's ability to retain its atmosphere depends not only on its mass and temperature (the Jeans escape criterion derived in this lecture) but also on the intensity of stellar radiation, the presence or absence of a global magnetic field ({ref}`lecture04`), and the planet's geological activity.
+
+
 ## References
 
 ```{bibliography}

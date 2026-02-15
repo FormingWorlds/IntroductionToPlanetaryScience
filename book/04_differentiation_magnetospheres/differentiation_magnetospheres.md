@@ -472,6 +472,15 @@ Earth's magnetosphere traps energetic charged particles in two toroidal regions 
 The radiation belts pose a hazard to spacecraft electronics and to astronauts. They also demonstrate the double-edged nature of magnetic fields: while the magnetosphere shields the surface from the bulk of the solar wind, it also traps a population of highly energetic particles that would not be present without the field.
 
 
+## Recent advances
+
+NASA's Juno mission has produced the most detailed map of Jupiter's magnetic field to date ({cite}`Connerney2022`). The data reveal a surprisingly complex field morphology: in the northern hemisphere, the field shows strong non-dipolar features, including a localised patch of reversed polarity (the "Great Blue Spot") that may reflect the dynamics of a deep-seated dynamo operating in the metallic hydrogen layer ({ref}`lecture08`). These measurements provide direct constraints on the depth and nature of convection driving Jupiter's dynamo.
+
+ESA/JAXA's **BepiColombo** mission has completed multiple Mercury flybys en route to orbital insertion, providing new measurements of Mercury's magnetosphere. Preliminary data confirm Mercury's weak but active dipolar field and have revealed unexpected features in the magnetospheric structure, including the role of sodium ions in magnetospheric dynamics ({cite}`Anderson2012`).
+
+ESA's **JUICE** mission, en route to the Jupiter system, will conduct the first detailed investigation of Ganymede's intrinsic magnetic field — the only moon in the solar system known to generate its own dynamo. Understanding how a body as small as Ganymede ($R = 2634$ km) maintains an active dynamo remains an open question in planetary magnetism, with implications for the thermal state and composition of its iron core.
+
+
 ## References
 
 ```{bibliography}
