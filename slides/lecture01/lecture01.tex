@@ -1,0 +1,843 @@
+% lecture01.tex — Lecture 1: Introduction & History of Planetary Science
+% Introduction to Planetary Science, Kapteyn Institute
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme and macros ────────────────────────────────────────
+\usepackage{../common/beamerthemeIPS}
+\input{../common/macros}
+\graphicspath{{figures/}{../common/}}
+
+% ── Metadata ────────────────────────────────────────────────
+\title{Lecture 1: Introduction \& History\\of Planetary Science}
+\subtitle{Introduction to Planetary Science --- WBAS002-05}
+\author[L1]{Tim Lichtenberg}
+\institute{Kapteyn Astronomical Institute\\University of Groningen}
+\date{September 2026}
+
+% ════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Learning objectives ─────────────────────────────────────
+\begin{frame}{Learning Objectives}
+  By the end of this lecture, you will be able to:
+  \vskip8pt
+  \begin{itemize}
+    \item Describe the scope of planetary science and its three driving questions
+    \item Explain how the field evolved from antiquity to the space age
+    \item Identify the key properties and classification of solar system bodies
+    \item Derive the stellar mass from planetary orbital parameters
+  \end{itemize}
+\end{frame}
+
+% ── Course overview ─────────────────────────────────────────
+\begin{frame}{Course Overview}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \textbf{14 lectures} spanning:
+    \begin{itemize}
+      \item Formation \& orbital dynamics
+      \item Heat, interiors, differentiation
+      \item Atmospheres \& surfaces
+      \item Terrestrial planets in detail
+      \item Gas \& ice giants, small bodies
+      \item Exoplanets \& astrobiology
+    \end{itemize}
+    \vskip8pt
+    \textbf{Assessment:} Mid-term (30\%) + Final (70\%)
+
+    \column{0.42\textwidth}
+    \begin{block}{Three driving questions}
+      \begin{enumerate}
+        \item How did our solar system form?
+        \item What makes a planet habitable?
+        \item Are we alone?
+      \end{enumerate}
+    \end{block}
+  \end{columns}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\section{A Pale Blue Dot}
+% ════════════════════════════════════════════════════════════
+
+% ── Pale Blue Dot image ─────────────────────────────────────
+\begin{frame}{A Pale Blue Dot}
+  \begin{columns}[c]
+    \column{0.45\textwidth}
+    \centering
+    \includegraphics[height=0.75\textheight]{pale_blue_dot}
+    \source{NASA/JPL-Caltech (1990)}
+
+    \column{0.52\textwidth}
+    14 February 1990 --- Voyager~1 turned its camera back toward the inner solar system from $\sim$6 billion~km ($\sim$40~AU).
+    \vskip10pt
+    \textit{``Look again at that dot. That's here.\\That's home. That's us.''}
+    \vskip4pt
+    \hfill--- Carl Sagan (1994)
+    \vskip10pt
+    Earth appears as a tiny speck, less than a single pixel, suspended in a scattered beam of sunlight.
+  \end{columns}
+\end{frame}
+
+% ── Driving question 1 ─────────────────────────────────────
+\begin{frame}{Question 1: How Did Our Solar System Form?}
+  \begin{itemize}
+    \item Before 1992: zero confirmed exoplanets
+    \item Today: $>5{,}700$ confirmed exoplanets in $>4{,}300$ systems
+    \item $\sim$0.4--0.6 rocky, habitable-zone planets per Sun-like star (Bryson et al.\ 2021)
+    \item[\color{ipsAccent}$\Rightarrow$] \textbf{Hundreds of millions} of such worlds in the Milky Way
+    \item Yet we have detailed knowledge of only \textbf{one} planetary system
+  \end{itemize}
+  \vskip12pt
+  \begin{block}{}
+    Is our solar system typical --- or unusual?
+  \end{block}
+\end{frame}
+
+% ── Driving question 2 ─────────────────────────────────────
+\begin{frame}{Question 2: What Makes a Planet Habitable?}
+  \begin{itemize}
+    \item Venus, Earth, and Mars formed from the same protoplanetary disk
+    \item All three may have had early liquid water
+    \item Today:
+    \begin{itemize}
+      \item \textbf{Venus:} 460\,\textdegree C surface, 90~bar $\mathrm{CO_2}$
+      \item \textbf{Earth:} Oceans, biosphere, plate tectonics
+      \item \textbf{Mars:} Cold desert, atmosphere $<1\%$ of Earth's
+    \end{itemize}
+  \end{itemize}
+  \vskip8pt
+  \begin{alertblock}{}
+    Why did these three siblings diverge so dramatically?
+  \end{alertblock}
+\end{frame}
+
+% ── Driving question 3 ─────────────────────────────────────
+\begin{frame}{Question 3: Are We Alone?}
+  \begin{itemize}
+    \item JWST is characterising atmospheres on rocky exoplanets
+    \item TRAPPIST-1 system: seven Earth-sized planets, three in the habitable zone
+    \item Within your careers, this question may become answerable
+    \item But only if we understand what makes a planet habitable in the first place
+  \end{itemize}
+  \vskip12pt
+  \keyresult{Every topic in this course connects back to these three questions.}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\section{What Is a Planet?}
+% ════════════════════════════════════════════════════════════
+
+% ── Etymology and history ───────────────────────────────────
+\begin{frame}{What Is a Planet?}
+  \begin{itemize}
+    \item Greek: \textit{planetes} ($\pi\lambda\alpha\nu\acute{\eta}\tau\eta\varsigma$) = ``wanderer''
+    \item Five visible wanderers: Mercury, Venus, Mars, Jupiter, Saturn
+    \item With the Sun and Moon $\rightarrow$ seven days of the week
+    \item Planet count unchanged for over two millennia
+  \end{itemize}
+  \vskip10pt
+  \textbf{Telescopic discoveries:}
+  \begin{itemize}
+    \item 1781 --- Herschel discovers \textbf{Uranus}
+    \item 1846 --- Galle observes \textbf{Neptune} (predicted by Le Verrier)
+    \item 1930 --- Tombaugh discovers \textbf{Pluto}
+  \end{itemize}
+\end{frame}
+
+% ── Pluto controversy ───────────────────────────────────────
+\begin{frame}{The Pluto Problem}
+  \begin{itemize}
+    \item Pluto was always an oddity: small, icy, eccentric \& inclined orbit
+    \item 1990s--2000s: discovery of many large Kuiper Belt objects
+    \item 2005: discovery of \textbf{Eris} --- comparable in size to Pluto
+    \item The question became unavoidable:
+  \end{itemize}
+  \vskip8pt
+  \begin{alertblock}{}
+    Either these new objects are also planets, or Pluto is not.
+  \end{alertblock}
+\end{frame}
+
+% ── IAU definition ──────────────────────────────────────────
+\begin{frame}{IAU Definition (2006)}
+  \textbf{Resolution B5} --- A \textbf{planet} in the solar system must:
+  \vskip6pt
+  \begin{enumerate}
+    \item Be in orbit around the Sun
+    \item Have sufficient mass for self-gravity to achieve hydrostatic equilibrium (nearly round)
+    \item Have \textbf{cleared the neighbourhood} around its orbit
+  \end{enumerate}
+  \vskip10pt
+  \begin{columns}[T]
+    \column{0.48\textwidth}
+    \textbf{Result:}
+    \begin{itemize}
+      \item 8 planets
+      \item 5 recognised dwarf planets:\\Ceres, Pluto, Eris, Makemake, Haumea
+    \end{itemize}
+
+    \column{0.48\textwidth}
+    \textbf{Criticism:}
+    \begin{itemize}
+      \item ``Clearing'' is not precisely defined
+      \item Depends on heliocentric distance
+      \item Earth wouldn't clear its zone at Neptune's orbit
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Geophysical definition ──────────────────────────────────
+\begin{frame}{Alternative: Geophysical Definition}
+  \begin{block}{Runyon et al.\ (2017)}
+    Any body massive enough to achieve \textbf{hydrostatic equilibrium} is a planet, regardless of orbital dynamics.
+  \end{block}
+  \vskip8pt
+  \begin{itemize}
+    \item Under this definition: $>$100 planets in the solar system
+    \item Includes large moons (Titan, Europa, Ganymede, \ldots)
+  \end{itemize}
+  \vskip12pt
+  \keyresult{For this course, the exact classification matters less than the physics. The solar system contains a continuous spectrum of objects --- from dust grains to gas giants --- governed by the same physical laws.}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\section{Brief History of Planetary Science}
+% ════════════════════════════════════════════════════════════
+
+% ── Ancient astronomy ───────────────────────────────────────
+\begin{frame}{Ancient \& Pre-Telescopic Astronomy}
+  \begin{itemize}
+    \item \textbf{$\sim$1800 BCE}: Babylonian astronomers systematically track planetary positions
+    \item \textbf{$\sim$350 BCE}: Aristotle's geocentric spheres
+    \item \textbf{$\sim$150 CE}: Ptolemy's epicyclic system --- standard for $>$1000 years
+    \item \textbf{1543}: Copernicus publishes \textit{De revolutionibus}\\
+          $\rightarrow$ Sun at the centre
+    \item \textbf{1609--1619}: Kepler's three laws of planetary motion\\
+          $\rightarrow$ Circles replaced by ellipses
+    \item \textbf{1687}: Newton's \textit{Principia}\\
+          $\rightarrow$ All three laws from \textbf{universal gravitation}
+  \end{itemize}
+\end{frame}
+
+% ── Copernican system figure ────────────────────────────────
+\begin{frame}{The Copernican Revolution}
+  \begin{columns}[c]
+    \column{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{copernican_system}
+    \source{Copernicus, \textit{De revolutionibus} (1543)}
+
+    \column{0.50\textwidth}
+    \begin{itemize}
+      \item Heliocentric model: Sun (\textit{Sol}) at the centre
+      \item Earth (\textit{Terra}) orbits like any other planet
+      \item Conceptual shift from 1400~years of geocentric cosmology
+      \item Kepler refined circular orbits $\rightarrow$ \textbf{ellipses}
+      \item Newton showed: single law of gravity explains all three of Kepler's laws
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Galileo ─────────────────────────────────────────────────
+\begin{frame}{Galileo's Telescope (1610)}
+  \textbf{Key observations that transformed planetary science:}
+  \vskip6pt
+  \begin{itemize}
+    \item Four moons orbiting Jupiter (Galilean moons)\\
+          $\rightarrow$ Not everything orbits Earth
+    \item Phases of Venus\\
+          $\rightarrow$ Venus orbits the Sun
+    \item Saturn's rings (could not interpret their structure)
+    \item Mountains and craters on the Moon\\
+          $\rightarrow$ Celestial bodies are \textit{physical worlds}
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Planetary science shifts from pure mathematics to a \textbf{physical science}.}
+\end{frame}
+
+% ── Sidereus Nuncius ────────────────────────────────────────
+\begin{frame}{Sidereus Nuncius (1610)}
+  \begin{columns}[c]
+    \column{0.35\textwidth}
+    \centering
+    \includegraphics[height=0.72\textheight]{sidereus_nuncius}
+    \source{Galileo Galilei, public domain}
+
+    \column{0.60\textwidth}
+    \begin{itemize}
+      \item \textit{Sidereus Nuncius} = ``Starry Messenger''
+      \item Sketches of Jupiter and its four largest moons\\(\textit{Medicea Sidera})
+      \item Recorded changing positions over successive nights
+      \item Direct evidence: not all celestial bodies orbit Earth
+      \item One of the most important publications in the history of science
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── 19th century ────────────────────────────────────────────
+\begin{frame}{The 19th Century: Spectroscopy \& Discovery}
+  \begin{itemize}
+    \item Improving telescopes reveal surface features on Mars, Jupiter's Great Red Spot, Saturn's ring structure
+    \item \textbf{Spectroscopy} enables remote atmospheric composition measurements for the first time
+    \item Photography enables systematic surveys
+    \item The known solar system steadily expands:\\
+    Uranus (1781) $\rightarrow$ Neptune (1846) $\rightarrow$ Pluto (1930)
+  \end{itemize}
+\end{frame}
+
+% ── Space age begins ────────────────────────────────────────
+\begin{frame}{The Space Age Begins}
+  \textbf{14 December 1962}: Mariner~2 flies past Venus\\
+  $\rightarrow$ First successful planetary flyby
+  \vskip8pt
+  \begin{itemize}
+    \item Revealed Venus's extreme surface temperature ($\sim$460\,\textdegree C)
+    \item Overturned speculation about habitable conditions
+    \item \textbf{1965}: Mariner~4 returns first close-up images of Mars\\
+          $\rightarrow$ Cratered, apparently dead world (not canals!)
+    \item \textbf{1970}: Venera~7 --- first landing on another planet (Venus)
+    \item \textbf{1976}: Viking landers --- first life-detection experiments on Mars
+  \end{itemize}
+\end{frame}
+
+% ── Voyager grand tour ──────────────────────────────────────
+\begin{frame}{Voyager Grand Tour}
+  \begin{columns}[c]
+    \column{0.52\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{voyager2_trajectory}
+    \source{NASA/JPL, public domain}
+
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Launched 1977
+      \item Exploited a rare planetary alignment ($\sim$once every 175 years)
+      \item Gravity assists at each planet
+      \item Jupiter (1979), Saturn (1981), Uranus (1986), Neptune (1989)
+      \item Voyager~1 now in interstellar space
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Exoplanet revolution ───────────────────────────────────
+\begin{frame}{The Exoplanet Revolution}
+  \begin{itemize}
+    \item \textbf{1992}: Wolszczan \& Frail --- planets orbiting a \textbf{pulsar}\\
+          $\rightarrow$ First confirmed exoplanets
+    \item \textbf{1995}: Mayor \& Queloz --- \textbf{51 Pegasi b}\\
+          Hot Jupiter with 4.2-day orbit $\rightarrow$ challenged all formation theories
+    \item \textbf{2009--2018}: Kepler mission discovers thousands of transiting exoplanets
+    \item \textbf{2018--}: TESS surveys the brightest nearby stars
+    \item \textbf{2022--}: JWST characterises exoplanet atmospheres
+  \end{itemize}
+\end{frame}
+
+% ── Transit method ──────────────────────────────────────────
+\begin{frame}{The Transit Method}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \centering
+    \includegraphics[width=0.95\textwidth]{transit_light_curve}
+    \source{CielProfond, CC BY-SA 4.0}
+
+    \column{0.47\textwidth}
+    \begin{itemize}
+      \item Planet passes in front of host star
+      \item Blocks a fraction of starlight:
+      $$\frac{\Delta F}{F} = \left(\frac{R_p}{R_\star}\right)^2$$
+      \item Gives the planet's \textbf{radius}
+      \item Used by Kepler, TESS, JWST
+      \item Has discovered the majority of known exoplanets
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Modern planetary science ────────────────────────────────
+\begin{frame}{Planetary Science Today}
+  \begin{block}{}
+    Today, planetary science integrates:
+  \end{block}
+  \vskip4pt
+  \begin{columns}[T]
+    \column{0.48\textwidth}
+    \begin{itemize}
+      \item Astronomy
+      \item Physics
+      \item Chemistry
+    \end{itemize}
+    \column{0.48\textwidth}
+    \begin{itemize}
+      \item Geology
+      \item Atmospheric science
+      \item Biology
+    \end{itemize}
+  \end{columns}
+  \vskip12pt
+  It spans scales from \textbf{dust grains} in protoplanetary disks to the \textbf{demographics of planetary systems} across the Galaxy.
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\section{Overview of the Solar System}
+% ════════════════════════════════════════════════════════════
+
+% ── Architecture and scale ──────────────────────────────────
+\begin{frame}{Solar System Architecture}
+  From the Sun ($\Rsun = 6.96 \times 10^8$~m) to the Oort Cloud ($\sim 10^4$--$10^5$~AU):
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Inner solar system} (0.4--1.5~AU):\\
+          Mercury, Venus, Earth, Mars --- small, dense, rocky
+    \item \textbf{Asteroid belt} (2.1--3.3~AU):\\
+          Total mass $\sim 4 \times 10^{-4}\;\Mearth$ --- dominated by Ceres
+    \item \textbf{Outer solar system} (5.2--30.1~AU):\\
+          Jupiter, Saturn (gas giants); Uranus, Neptune (ice giants)
+    \item \textbf{Kuiper Belt} (30--50~AU):\\
+          Icy bodies: Pluto, Eris, Makemake, \ldots
+    \item \textbf{Oort Cloud} ($10^4$--$10^5$~AU):\\
+          Source of long-period comets (not directly observed)
+  \end{itemize}
+\end{frame}
+
+% ── Planet sizes figure ─────────────────────────────────────
+\begin{frame}{Relative Sizes of the Planets}
+  \centering
+  \includegraphics[width=0.82\textwidth]{planet_sizes}
+  \source{Lsmpascal, CC BY-SA 3.0}
+  \vskip4pt
+  {\small Top: Jupiter, Saturn, Uranus, Neptune \quad|\quad Bottom: Earth, Venus, Mars, Mercury\\
+  Jupiter's diameter is $\sim$29$\times$ that of Mercury.}
+\end{frame}
+
+% ── Properties table (inner planets) ────────────────────────
+\begin{frame}{Planetary Properties: Inner Solar System}
+  \centering
+  \small
+  \begin{tabular}{l r r r r r r}
+    \toprule
+    \textbf{Planet} & \textbf{Mass} ($\Mearth$) & \textbf{Radius} ($\Rearth$) & $\boldsymbol{a}$ (AU) & $\boldsymbol{P}$ (yr) & $\boldsymbol{e}$ & $\boldsymbol{\rho}$ (kg\,m$^{-3}$) \\
+    \midrule
+    Mercury & 0.055 & 0.383 & 0.387 & 0.241 & 0.206 & 5427 \\
+    Venus   & 0.815 & 0.949 & 0.723 & 0.615 & 0.007 & 5243 \\
+    Earth   & 1.000 & 1.000 & 1.000 & 1.000 & 0.017 & 5514 \\
+    Mars    & 0.107 & 0.532 & 1.524 & 1.881 & 0.093 & 3934 \\
+    \bottomrule
+  \end{tabular}
+  \vskip8pt
+  \source{NASA Planetary Fact Sheet}
+  \vskip6pt
+  All have $\rho > 3900$~kg\,m$^{-3}$ --- \textbf{rock and metal} dominate.
+\end{frame}
+
+% ── Properties table (outer planets) ────────────────────────
+\begin{frame}{Planetary Properties: Outer Solar System}
+  \centering
+  \small
+  \begin{tabular}{l r r r r r r}
+    \toprule
+    \textbf{Planet} & \textbf{Mass} ($\Mearth$) & \textbf{Radius} ($\Rearth$) & $\boldsymbol{a}$ (AU) & $\boldsymbol{P}$ (yr) & $\boldsymbol{e}$ & $\boldsymbol{\rho}$ (kg\,m$^{-3}$) \\
+    \midrule
+    Jupiter & 317.8  & 11.21 & 5.203  & 11.86  & 0.049 & 1326 \\
+    Saturn  & 95.16  & 9.45  & 9.537  & 29.46  & 0.054 & 687  \\
+    Uranus  & 14.54  & 4.01  & 19.19  & 84.01  & 0.047 & 1271 \\
+    Neptune & 17.15  & 3.88  & 30.07  & 164.8  & 0.009 & 1638 \\
+    \bottomrule
+  \end{tabular}
+  \vskip8pt
+  \source{NASA Planetary Fact Sheet}
+  \vskip6pt
+  All have $\rho < 1700$~kg\,m$^{-3}$ --- \textbf{gas and ice} dominate.\\
+  Saturn is famously less dense than water ($\rho_\mathrm{water} = 1000$~kg\,m$^{-3}$).
+\end{frame}
+
+% ── Two key patterns ────────────────────────────────────────
+\begin{frame}{Two Key Patterns}
+  \begin{enumerate}
+    \item \textbf{Density decreases with distance}\\[4pt]
+          Inner: $\rho > 3900$~kg\,m$^{-3}$ (rock \& metal)\\
+          Outer: $\rho < 1700$~kg\,m$^{-3}$ (gas \& ice)\\[4pt]
+          $\Rightarrow$ Reflects the temperature structure of the protoplanetary disk
+
+    \vskip10pt
+    \item \textbf{Mass is concentrated in Jupiter}\\[4pt]
+          Jupiter $>$ twice the mass of all other planets combined\\[4pt]
+          $\Rightarrow$ We will quantify this in the blackboard derivation
+  \end{enumerate}
+\end{frame}
+
+% ── Classification ──────────────────────────────────────────
+\begin{frame}{Classification of Planets}
+  \begin{description}
+    \item[Terrestrial] Mercury, Venus, Earth, Mars\\
+    Rocky surfaces, iron cores, thin or no atmospheres\\
+    (Venus: massive $\mathrm{CO_2}$ atmosphere is the exception)
+
+    \vskip6pt
+    \item[Gas giants] Jupiter, Saturn\\
+    Massive $\mathrm{H}$/$\mathrm{He}$ envelopes, no well-defined solid surface\\
+    Likely rocky/icy cores at high pressure
+
+    \vskip6pt
+    \item[Ice giants] Uranus, Neptune\\
+    Interiors dominated by $\mathrm{H_2O}$, $\mathrm{NH_3}$, $\mathrm{CH_4}$ under extreme pressures\\
+    Topped by $\mathrm{H}$/$\mathrm{He}$ atmospheres
+  \end{description}
+\end{frame}
+
+% ── Terrestrial planets figure ──────────────────────────────
+\begin{frame}{The Terrestrial Planets}
+  \centering
+  \includegraphics[width=0.72\textwidth]{terrestrial_planets}
+  \source{NASA/JPL, public domain}
+  \vskip4pt
+  {\small Mercury, Venus, Earth, Mars at approximate relative scale.\\
+  Factor of $\sim$18 in mass, dramatically different evolutionary paths.}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\section{Blackboard Derivation: Solar Mass}
+% ════════════════════════════════════════════════════════════
+
+% ── Setup ───────────────────────────────────────────────────
+\begin{frame}{Deriving the Solar Mass from Kepler's Third Law}
+  \textbf{Goal:} Estimate $\Msun$ from Earth's orbital parameters.
+  \vskip10pt
+  \textbf{Setup:} Planet of mass $M_p$ in a circular orbit of radius $r$ around a star of mass $M_*$.
+  \vskip8pt
+  Gravitational force provides centripetal acceleration:
+  $$\frac{G\, M_*\, M_p}{r^2} = \frac{M_p\, v^2}{r}$$
+  \vskip6pt
+  where $v = 2\pi r / P$ is the orbital velocity.
+\end{frame}
+
+% ── Derivation step 1 ──────────────────────────────────────
+\begin{frame}{Step 1: Substitute Orbital Velocity}
+  Substitute $v = 2\pi r / P$ into the force balance:
+  $$\frac{G\, M_*\, M_p}{r^2} = \frac{M_p}{r} \cdot \frac{4\pi^2 r^2}{P^2}$$
+  \vskip10pt
+  Cancel $M_p$ and simplify:
+  $$\frac{G\, M_*}{r^2} = \frac{4\pi^2\, r}{P^2}$$
+  \vskip8pt
+  \textbf{Key insight:} The planet's mass cancels --- the orbit depends only on the central mass and the orbital radius.
+\end{frame}
+
+% ── Derivation step 2 ──────────────────────────────────────
+\begin{frame}{Step 2: Solve for Stellar Mass}
+  Rearranging:
+  $$\boxed{M_* = \frac{4\pi^2\, r^3}{G\, P^2}}$$
+  \vskip10pt
+  This is \textbf{Newton's form of Kepler's third law} (for $M_p \ll M_*$).
+  \vskip10pt
+  \begin{exampleblock}{Note}
+    For elliptical orbits, replace $r$ with the semi-major axis $a$.\\
+    The general case requires the vis-viva equation (Lecture~2).
+  \end{exampleblock}
+\end{frame}
+
+% ── Application: numbers ────────────────────────────────────
+\begin{frame}{Application: Earth's Orbital Parameters}
+  \centering
+  \begin{tabular}{l l}
+    \toprule
+    \textbf{Quantity} & \textbf{Value} \\
+    \midrule
+    Semi-major axis $a_\oplus$ & $1.496 \times 10^{11}$~m \\
+    Orbital period $P_\oplus$  & $3.156 \times 10^{7}$~s \\
+    Gravitational constant $G$ & $6.674 \times 10^{-11}$~m$^3$\,kg$^{-1}$\,s$^{-2}$ \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+% ── Application: result ─────────────────────────────────────
+\begin{frame}{Result: Solar Mass}
+  $$\Msun = \frac{4\pi^2 \times (1.496 \times 10^{11})^3}{6.674 \times 10^{-11} \times (3.156 \times 10^{7})^2}$$
+  \vskip10pt
+  \keyresult{$$\Msun \approx 1.99 \times 10^{30} \text{~kg}$$}
+  \vskip10pt
+  Accepted value: $\Msun = 1.989 \times 10^{30}$~kg
+  \vskip6pt
+  A remarkably accurate estimate from just \textbf{two measurable quantities}: $a$ and $P$.
+\end{frame}
+
+% ── Planet-to-star mass ratio ───────────────────────────────
+\begin{frame}{Planet-to-Star Mass Ratio}
+  The precise form of Kepler's third law gives $M_* + M_p$, not $M_*$ alone.
+  \vskip4pt
+  The approximation $M_* + M_p \approx M_*$ works because:
+  \vskip8pt
+  \begin{itemize}
+    \item Jupiter: $\Mjup \approx 318\;\Mearth \approx 1.90 \times 10^{27}$~kg
+    $$\frac{\Mjup}{\Msun} \approx 9.5 \times 10^{-4}$$
+    \item Total mass of all 8 planets: $\approx 446\;\Mearth$
+    $$\frac{M_\mathrm{planets}}{\Msun} \approx 1.3 \times 10^{-3}$$
+  \end{itemize}
+\end{frame}
+
+% ── Mass concentration ──────────────────────────────────────
+\begin{frame}{Mass Budget of the Solar System}
+  \keyresult{%
+    The Sun contains \textbf{99.87\%} of the solar system's total mass.\\[6pt]
+    Jupiter alone accounts for \textbf{71\%} of the planetary mass.%
+  }
+  \vskip14pt
+  \begin{itemize}
+    \item This extreme concentration of mass in the central star is a \textbf{fundamental property} of planetary systems
+    \item Planet formation theory must explain this (Lecture~2)
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\section{Comparative Planetology}
+% ════════════════════════════════════════════════════════════
+
+% ── Methodology ─────────────────────────────────────────────
+\begin{frame}{Comparative Planetology as a Methodology}
+  \begin{itemize}
+    \item We cannot perform controlled experiments on entire worlds
+    \item \textbf{Comparative planetology:} treat planets as a natural set of experiments
+    \item Similar objects subjected to different conditions
+    \item By comparing cases, we isolate which differences arise from:
+    \begin{itemize}
+      \item Distance to the Sun
+      \item Planetary mass
+      \item Internal activity
+      \item Historical contingency
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+% ── Venus/Earth/Mars comparison ─────────────────────────────
+\begin{frame}{Venus, Earth, Mars: Three Divergent Siblings}
+  \centering
+  \small
+  \begin{tabular}{l c c c}
+    \toprule
+    \textbf{Property} & \textbf{Venus} & \textbf{Earth} & \textbf{Mars} \\
+    \midrule
+    Surface temperature & 460\,\textdegree C & 15\,\textdegree C & $-60$\,\textdegree C \\
+    Surface pressure & 90~bar & 1~bar & 0.006~bar \\
+    Dominant atmosphere & $\mathrm{CO_2}$ (96.5\%) & $\mathrm{N_2}$/$\mathrm{O_2}$ (99\%) & $\mathrm{CO_2}$ (95\%) \\
+    Magnetic field & None & Strong dipole & Remnant crustal \\
+    Tectonics & Episodic resurf. & Plate tectonics & Stagnant lid \\
+    \bottomrule
+  \end{tabular}
+  \vskip10pt
+  Formed in the same disk, similar compositions --- \textbf{why did they diverge?}
+\end{frame}
+
+% ── Moons as comparison sets ────────────────────────────────
+\begin{frame}{Moons as Natural Experiments}
+  \begin{itemize}
+    \item \textbf{Galilean moons:} Io, Europa, Ganymede, Callisto\\
+          All orbit Jupiter, but differ in composition and tidal heating
+    \item A single variable (distance from Jupiter $\rightarrow$ tidal heating) drives vastly different geological outcomes:
+    \begin{itemize}
+      \item Io: most volcanically active body in the solar system
+      \item Europa: subsurface liquid water ocean
+      \item Ganymede: internal ocean + own magnetic field
+      \item Callisto: ancient, undifferentiated surface
+    \end{itemize}
+  \end{itemize}
+  \vskip8pt
+  This comparative approach now extends to \textbf{thousands of exoplanets} (Lecture~13).
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\section{Observational Techniques}
+% ════════════════════════════════════════════════════════════
+
+% ── Telescopes ──────────────────────────────────────────────
+\begin{frame}{Telescopes}
+  \textbf{Ground-based:}
+  \begin{itemize}
+    \item Optical imaging: surface and atmospheric features
+    \item Infrared spectroscopy: thermal emission, atmospheric composition
+    \item Radio: subsurface properties, atmospheric dynamics
+    \item Adaptive optics (VLT, Keck): near-space-telescope resolution
+  \end{itemize}
+  \vskip8pt
+  \textbf{Space-based:}
+  \begin{itemize}
+    \item Hubble: atmospheric monitoring of giant planets for decades
+    \item JWST (L2 point): infrared $\rightarrow$ primary tool for exoplanet atmospheres
+  \end{itemize}
+\end{frame}
+
+% ── Spacecraft types ────────────────────────────────────────
+\begin{frame}{Spacecraft Exploration}
+  In order of increasing complexity and cost:
+  \vskip6pt
+  \begin{description}
+    \item[Flyby] Brief encounter; e.g., Voyager~2 at Neptune (1989)
+    \item[Orbiter] Long-term monitoring; e.g., Cassini at Saturn (2004--2017)
+    \item[Lander] In situ measurements; e.g., Viking~1 on Mars (1976)
+    \item[Rover] Mobile surface exploration; e.g., Perseverance on Mars (2021--)
+    \item[Sample return] Material returned to Earth labs; e.g., Hayabusa2 from Ryugu (2020)
+  \end{description}
+\end{frame}
+
+% ── Remote sensing methods ──────────────────────────────────
+\begin{frame}{Remote Sensing Methods}
+  \begin{description}
+    \item[Spectroscopy] Identifies materials by absorption/emission features\\
+    $\rightarrow$ atmospheric composition, surface mineralogy, thermal properties
+
+    \vskip4pt
+    \item[Radar] Penetrates clouds, maps surface topography\\
+    $\rightarrow$ Magellan at Venus, MARSIS on Mars (subsurface features)
+
+    \vskip4pt
+    \item[Gravimetry] Maps gravity field from orbital perturbations\\
+    $\rightarrow$ interior density variations, subsurface mass concentrations
+
+    \vskip4pt
+    \item[Magnetometry] Measures magnetic fields\\
+    $\rightarrow$ dynamo activity, interior conductivity
+  \end{description}
+\end{frame}
+
+% ── Key missions table (part 1) ─────────────────────────────
+\begin{frame}{Landmark Missions (I)}
+  \centering
+  \small
+  \begin{tabular}{l l l l}
+    \toprule
+    \textbf{Mission} & \textbf{Year} & \textbf{Target} & \textbf{Key achievement} \\
+    \midrule
+    Mariner 2       & 1962 & Venus  & First planetary flyby \\
+    Mariner 4       & 1965 & Mars   & First close-up images \\
+    Apollo 11       & 1969 & Moon   & First crewed landing \\
+    Venera 7        & 1970 & Venus  & First surface landing \\
+    Viking 1 \& 2   & 1976 & Mars   & First Mars landers \\
+    Voyager 1 \& 2  & 1977 & Outer  & Grand tour \\
+    Galileo         & 1995 & Jupiter & Europa's ocean \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+% ── Key missions table (part 2) ─────────────────────────────
+\begin{frame}{Landmark Missions (II)}
+  \centering
+  \small
+  \begin{tabular}{l l l l}
+    \toprule
+    \textbf{Mission} & \textbf{Year} & \textbf{Target} & \textbf{Key achievement} \\
+    \midrule
+    Cassini-Huygens & 2004 & Saturn   & Titan landing, Enceladus plumes \\
+    Spirit/Opportunity & 2004 & Mars  & Evidence for past water \\
+    New Horizons    & 2015 & Pluto    & First Pluto flyby \\
+    Hayabusa2       & 2020 & Ryugu    & Asteroid sample return \\
+    Perseverance     & 2021 & Mars    & Sample caching \\
+    JWST            & 2022 & Exoplanets & Atmospheric characterisation \\
+    Europa Clipper  & 2024 & Europa   & Ocean habitability \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\section{Recent Advances \& Outlook}
+% ════════════════════════════════════════════════════════════
+
+% ── JWST ────────────────────────────────────────────────────
+\begin{frame}{James Webb Space Telescope}
+  \begin{itemize}
+    \item Launched December 2021; operating at Sun--Earth L2
+    \item First characterisation of atmospheres on \textbf{rocky exoplanets}
+    \item Thermal emission measurements of TRAPPIST-1 planets\\
+          (Greene et al.\ 2023)
+    \item First direct constraints on whether Earth-sized planets around other stars retain atmospheres
+    \item Infrared spectroscopy: transmission \& emission
+  \end{itemize}
+\end{frame}
+
+% ── Recent missions ─────────────────────────────────────────
+\begin{frame}{Recent \& Upcoming Missions}
+  \begin{itemize}
+    \item \textbf{OSIRIS-REx} (2023): Returned samples from asteroid Bennu\\
+          $\rightarrow$ hydrated minerals, organic compounds
+
+    \item \textbf{Europa Clipper} (2024): En route to Jupiter's moon Europa\\
+          $\rightarrow$ investigate subsurface ocean \& habitability
+
+    \item \textbf{JUICE} (2023$\rightarrow$2031): ESA mission to Jupiter system\\
+          $\rightarrow$ Ganymede, Europa, Callisto
+
+    \item \textbf{Perseverance}: Caching samples in Jezero crater
+
+    \item \textbf{Dragonfly} ($\sim$2028): Nuclear-powered drone on Titan\\
+          $\rightarrow$ surface chemistry exploration
+  \end{itemize}
+\end{frame}
+
+% ── Course roadmap ──────────────────────────────────────────
+\begin{frame}{What's Coming: Course Roadmap}
+  \small
+  \begin{columns}[T]
+    \column{0.48\textwidth}
+    \textbf{Weeks 1--4 (Foundations):}
+    \begin{itemize}
+      \item[L2] Formation \& orbits
+      \item[L3] Heat \& energy transport
+      \item[L4] Differentiation \& magnetospheres
+      \item[L5] Atmospheres I
+      \item[L6] Atmospheres II
+      \item[L7] Surfaces
+      \item[] \textit{Mid-term exam}
+    \end{itemize}
+
+    \column{0.48\textwidth}
+    \textbf{Weeks 5--7 (Applications):}
+    \begin{itemize}
+      \item[L8] Interiors
+      \item[L9] Earth \& Venus
+      \item[L10] Mercury \& Mars
+      \item[L11] Gas \& ice giants
+      \item[L12] Small bodies
+      \item[L13] Exoplanets
+      \item[L14] Synthesis \& astrobiology
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Summary ─────────────────────────────────────────────────
+\begin{frame}{Summary}
+  \begin{enumerate}
+    \item Planetary science asks three driving questions:\\
+          formation, habitability, life beyond Earth
+    \item The field evolved from ancient stargazing $\rightarrow$ telescopes $\rightarrow$ space missions $\rightarrow$ exoplanet surveys
+    \item The solar system has eight planets spanning a huge range in mass, size, and composition
+    \item From just orbital period and distance, we can measure the Sun's mass: $\Msun \approx 2 \times 10^{30}$~kg
+    \item Comparative planetology --- treating worlds as natural experiments --- is our most powerful tool
+    \item We are living in a golden age of planetary exploration
+  \end{enumerate}
+\end{frame}
+
+% ── Final slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[ipsPrimary] (current page.north west) rectangle (current page.south east);
+  \end{tikzpicture}
+  \vfill
+  \begin{center}
+    {\color{ipsAccent}\Large\bfseries Questions?}
+    \vskip16pt
+    {\color{ipsLightFill}\normalsize Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
+  \end{center}
+  \vfill
+\end{frame}
+
+\end{document}
