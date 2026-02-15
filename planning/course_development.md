@@ -494,10 +494,20 @@ The previous iteration (12 lectures, 9 tutorials) provides a foundation to draw 
 
 ### Development Sequence
 
-1. **Phase 1 — Lecture notes (Lectures 1–8):** Core foundational content, needed first since all other lectures build on these.
-2. **Phase 2 — Lecture slides (Lectures 1–8):** PDF slide decks from LaTeX, covering the same content as the Jupyter Book notes for classroom delivery.
-3. **Phase 3 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7.
-4. **Phase 4 — Lecture notes (Lectures 9–14):** Planet-specific, exoplanets, and synthesis lectures.
-5. **Phase 5 — Lecture slides (Lectures 9–14):** Companion slide decks for the remaining lectures.
-6. **Phase 6 — Homework sheets 5–7 + final exam:** Remaining homework and cumulative final exam.
-7. **Phase 7 — Review and polish:** Cross-referencing between lectures, consistency check, equation sheet compilation.
+1. **Phase 1a — Lecture notes (Lectures 1–8):** Core foundational content, needed first since all other lectures build on these.
+2. **Phase 1b — Lecture notes images (Lectures 1–8):** Find and create figures and diagrams for the first 8 lectures, which are needed to complete the lecture notes and ensure they are visually informative. We want to end up with about 10–15 figures per lecture, including:
+   - Diagrams of planetary interiors, atmospheres, and surfaces; physical and chemical processes; and comparative planetology schematics
+   - Plots of observational data (e.g., planetary demographics, atmospheric profiles)
+   - Conceptual illustrations (e.g., orbital resonances, heat transport mechanisms)
+3. **Phase 1c — Lecture notes verification (Lectures 1–8):** Double check consistency of all notes and pedagogic approach. Deeply verify the scientific validity of all content, in particular of all derivations and equations, facts and values of any parameters, constants, and calculations. Double check all figures, and ensure all derivations are clear and correct before moving on to slides. Validate that the lecture notes are self-contained and can be understood without external references, as they will be the primary resource for students. Verify all references and citations for accuracy and relevance.
+4. **Phase 2a — Lecture slides (Lectures 1–8):** PDF slide decks from LaTeX, covering the same content as the Jupyter Book notes for classroom delivery. The slide decks should be visually engaging and include key figures from the lecture notes, but distilled into a presentation format suitable for teaching. Each slide deck should be consistent in style and formatting across lectures. The slides should cover a lecture of about 90 minutes, with a mix of text, equations, and figures to effectively communicate the material. The slide decks should be designed to complement the lecture notes, not duplicate them, and should focus on the key concepts and takeaways for each lecture.
+5. **Phase 3 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7.
+6. **Phase 4a — Lecture notes (Lectures 9–14):** Planet-specific, exoplanets, and synthesis lectures.
+7. **Phase 4b — Lecture notes images (Lectures 9–14):** Find and create figures and diagrams for the first 8 lectures, which are needed to complete the lecture notes and ensure they are visually informative. We want to end up with about 10–15 figures per lecture, including:
+   - Diagrams of planetary interiors, atmospheres, and surfaces; physical and chemical processes; and comparative planetology schematics
+   - Plots of observational data (e.g., planetary demographics, atmospheric profiles)
+   - Conceptual illustrations (e.g., orbital resonances, heat transport mechanisms)
+8. **Phase 4c — Lecture notes verification (Lectures 9–14):** Double check consistency of all notes and pedagogic approach. Deeply verify the scientific validity of all content, in particular of all derivations and equations, facts and values of any parameters, constants, and calculations. Double check all figures, and ensure all derivations are clear and correct before moving on to slides. Validate that the lecture notes are self-contained and can be understood without external references, as they will be the primary resource for students. Verify all references and citations for accuracy and relevance.
+9. **Phase 5 — Lecture slides (Lectures 9–14):** PDF slide decks from LaTeX for these remaining lecture notes, covering the same content as the Jupyter Book notes for classroom delivery. The slide decks should be visually engaging and include key figures from the lecture notes, but distilled into a presentation format suitable for teaching. Each slide deck should be consistent in style and formatting across lectures. The slides should cover a lecture of about 90 minutes, with a mix of text, equations, and figures to effectively communicate the material. The slide decks should be designed to complement the lecture notes, not duplicate them, and should focus on the key concepts and takeaways for each lecture.
+10. **Phase 6 — Homework sheets 5–7 + final exam:** Remaining homework and cumulative final exam.
+11. **Phase 7 — Review and polish:** Cross-referencing between lectures, consistency check, equation sheet compilation.
