@@ -300,6 +300,15 @@ The table below lists landmark missions that have shaped our understanding of th
 
 Several missions are planned for the coming decade, including ESA's JUICE (Jupiter icy moons, arrived 2025), the Mars Sample Return campaign, and the Dragonfly rotorcraft to Titan (launch ~2028).
 
+## Recent advances
+
+Planetary science is advancing rapidly, driven by new space missions and observatories. The **James Webb Space Telescope** (JWST), launched in 2021, has begun characterising the atmospheres of rocky exoplanets for the first time, including thermal emission measurements of planets in the TRAPPIST-1 system ({cite}`Greene2023`; see {ref}`lecture13`). These observations are providing the first direct constraints on whether Earth-sized planets around other stars retain atmospheres.
+
+Closer to home, NASA's **OSIRIS-REx** mission returned samples from the carbon-rich asteroid Bennu in September 2023, revealing hydrated minerals and organic compounds that illuminate the primordial building blocks of planets ({ref}`lecture12`). NASA's **Europa Clipper**, launched in October 2024, is en route to Jupiter's moon Europa to investigate its subsurface ocean and assess habitability ({cite}`HowellPappalardo2020`; {ref}`lecture14`). ESA's **JUICE** mission, launched in 2023, will arrive at the Jupiter system in 2031 to study Ganymede, Europa, and Callisto.
+
+The Mars exploration programme continues with the **Perseverance** rover caching samples in Jezero crater for eventual return to Earth ({cite}`Farley2022`), while NASA's **Dragonfly** rotorcraft — a nuclear-powered drone that will explore Titan's surface chemistry — is planned for launch in 2028 ({ref}`lecture06`). These missions collectively address the three driving questions of this course: how planetary systems form, what makes a planet habitable, and whether life exists beyond Earth.
+
+
 ## References
 
 ```{bibliography}

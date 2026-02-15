@@ -271,6 +271,15 @@ Artist's concept of Europa's subsurface environment. The cross-section reveals (
 The existence of these ocean worlds demonstrates that the classical **habitable zone** — defined by the distance from a star where liquid water can exist on a surface — is far too narrow a concept. Tidal heating, radiogenic heating ({ref}`lecture03`), and insulating ice shells can maintain liquid water far beyond the snow line, vastly expanding the potential environments for life in the universe.
 
 
+## Recent advances
+
+NASA's InSight mission (2018–2022) delivered landmark results for Mars interior science. Seismology from the SEIS instrument detected marsquakes and measured seismic wave travel times through the planet, revealing a liquid iron-alloy core with radius $\sim$1830 km ({cite}`Stahler2021`), a mantle with a thick lithosphere ($\sim$500 km) and a transition zone at $\sim$1100 km depth ({cite}`Khan2021`), and a crust averaging 25–45 km in thickness. These measurements provided the first seismological constraints on another planet's interior since Apollo, confirming that Mars is differentiated but has a proportionally larger core and thinner crust than Earth's two-layer models would predict ({ref}`lecture07`).
+
+For giant planets, Juno's precise gravity measurements have strengthened the case for a **dilute core** in Jupiter — rather than a compact rocky/icy core, Jupiter's heavy elements appear to be distributed over the inner $\sim$30–50% of the planet's radius, gradually mixing into the metallic hydrogen envelope ({cite}`Wahl2017`). This result challenges the traditional core accretion picture in which the core remains distinct, and has motivated new models of core erosion and primordial mixing during giant planet formation ({ref}`lecture02`).
+
+NASA's Europa Clipper mission, launched in 2024, will make dozens of close flybys of Europa to characterise its ice shell thickness, ocean salinity, and surface geology ({cite}`HowellPappalardo2020`). Ice-penetrating radar, gravity measurements, and magnetometry will provide the most detailed constraints yet on the internal structure of an ocean world — directly testing models of subsurface ocean circulation and habitability ({ref}`lecture14`).
+
+
 ## References
 
 ```{bibliography}

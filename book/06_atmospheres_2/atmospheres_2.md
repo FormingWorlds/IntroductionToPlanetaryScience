@@ -489,6 +489,15 @@ The carbonate-silicate cycle requires two essential ingredients: **liquid water*
 The requirement for both liquid water and active volcanism to maintain the carbonate-silicate cycle has profound implications for **planetary habitability**: a planet needs not just the right temperature, but also the right geological activity to sustain that temperature over billions of years. This theme will return in {ref}`lecture14` when we discuss the habitability of exoplanets.
 
 
+## Recent advances
+
+In 2020, a team reported a tentative detection of phosphine ($\mathrm{PH_3}$) in the cloud decks of Venus using submillimetre spectroscopy, sparking intense debate about possible biological or unknown chemical sources. Subsequent reanalyses by independent groups found that the original signal was significantly weaker than first claimed, and the detection remains controversial. Regardless of the outcome, the episode highlighted how little we understand about Venus's atmospheric chemistry and motivated renewed interest in Venus exploration. ESA's **EnVision** orbiter and NASA's **DAVINCI** probe — both selected for launch in the early 2030s — will provide new measurements of Venus's atmospheric composition and surface–atmosphere interactions.
+
+NASA's **Dragonfly** mission, a nuclear-powered rotorcraft scheduled for launch in 2028, will explore Titan's surface and lower atmosphere in unprecedented detail. Dragonfly will sample the organic-rich dunes and investigate the products of Titan's atmospheric photochemistry at the surface — testing whether the combination of complex organics and transient liquid water (from impact melts or cryovolcanism) could drive prebiotic chemistry ({ref}`lecture14`).
+
+Updated three-dimensional climate models for early Mars continue to challenge the "warm and wet" hypothesis, suggesting that episodic warming from impacts, volcanism, or atmospheric $\mathrm{H_2}$ greenhouse effects may be needed to explain the geological evidence for liquid water on early Mars ({ref}`lecture10`). The interplay between atmospheric composition, climate feedbacks, and surface geology remains an active area of research.
+
+
 ## References
 
 ```{bibliography}
