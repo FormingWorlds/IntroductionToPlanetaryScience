@@ -48,14 +48,17 @@
 
 \setbeamercolor{footline}{fg=ipsPrimary!60, bg=ipsLightFill}
 
-% ── Fonts (Inter via fontspec — requires XeLaTeX) ──────────
+% ── Fonts (Inter + Fira Math via fontspec/unicode-math — requires XeLaTeX) ──
 \RequirePackage{fontspec}
+\RequirePackage{unicode-math}
 \setsansfont{Inter}[
   UprightFont    = *-Regular,
   BoldFont       = *-Bold,
   ItalicFont     = *-Italic,
   BoldItalicFont = *-BoldItalic,
 ]
+\setmathfont{FiraMath-Regular.otf}
+\setmathfont{latinmodern-math.otf}[range={"22C6}] % ⋆ star operator fallback
 \usefonttheme{professionalfonts}
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -67,9 +70,9 @@
 \setbeamerfont{block title}{size=\normalsize, series=\bfseries}
 
 % ── Itemize bullets ─────────────────────────────────────────
-\setbeamertemplate{itemize item}{\raisebox{0.15ex}{\small$\blacktriangleright$}}
-\setbeamertemplate{itemize subitem}{\raisebox{0.1ex}{\scriptsize$\triangleright$}}
-\setbeamertemplate{itemize subsubitem}{\raisebox{0.1ex}{\tiny$\bullet$}}
+\setbeamertemplate{itemize item}{\raisebox{0.12ex}{\small\textbullet}}
+\setbeamertemplate{itemize subitem}{\raisebox{0.08ex}{\scriptsize\textendash}}
+\setbeamertemplate{itemize subsubitem}{\raisebox{0.08ex}{\tiny\textbullet}}
 
 % ── Remove navigation symbols ──────────────────────────────
 \setbeamertemplate{navigation symbols}{}
@@ -104,9 +107,13 @@
 }
 
 % ── Title page ──────────────────────────────────────────────
+% Set the title background credit per lecture: \titlebgcredit{Credit text}
+\newcommand{\titlebgcredit}[1]{\def\ips@titlebgcredit{#1}}
+\titlebgcredit{}% default empty
+
 \setbeamertemplate{title page}{%
   \begin{tikzpicture}[remember picture, overlay]
-    % Background image (JWST Cosmic Cliffs — NASA/ESA/CSA/STScI, public domain)
+    % Background image
     \node[anchor=center, inner sep=0pt] at (current page.center) {%
       \includegraphics[width=\paperwidth, height=\paperheight]{title_background}%
     };
@@ -115,6 +122,12 @@
     % Accent stripe
     \fill[ipsAccent, opacity=0.5] ([yshift=-0.62\paperheight]current page.north west)
       rectangle ([yshift=-0.64\paperheight]current page.north east);
+    % Background image credit
+    \ifx\ips@titlebgcredit\empty\else
+      \node[anchor=south east, inner sep=0pt] at ([xshift=-6pt, yshift=4pt]current page.south east) {%
+        {\tiny\color{white!50} \ips@titlebgcredit}%
+      };
+    \fi
   \end{tikzpicture}
   \vfill
   \begin{center}
@@ -160,21 +173,23 @@
 \newcommand{\source}[1]{\par\vspace{-4pt}{\tiny\color{ipsText!60} Credit: #1}}
 
 % ── Break slide ─────────────────────────────────────────────
-% Reusable ~10 min break slide (Earthrise, Apollo 8 — NASA, public domain)
+% Reusable break slide (Earthrise, Apollo 8 — NASA, public domain)
 \newcommand{\breakslide}{%
   \begin{frame}[plain,noframenumbering]
     \begin{tikzpicture}[remember picture, overlay]
       \node[anchor=center, inner sep=0pt] at (current page.center) {%
-        \includegraphics[height=\paperheight]{break_background}%
+        \includegraphics[width=\paperwidth, height=\paperheight]{break_background}%
       };
-      \fill[black, opacity=0.35] (current page.north west) rectangle (current page.south east);
+      \fill[black, opacity=0.30] (current page.north west) rectangle (current page.south east);
+      % Break text
+      \node[anchor=center] at (current page.center) {%
+        {\color{white}\LARGE\bfseries Break}%
+      };
+      % Image credit
+      \node[anchor=south east, inner sep=0pt] at ([xshift=-6pt, yshift=4pt]current page.south east) {%
+        {\tiny\color{white!60} Earthrise, Apollo 8 (1968). Credit: NASA}%
+      };
     \end{tikzpicture}
-    \vfill
-    \begin{center}
-      {\color{white}\LARGE\bfseries Break}\\[8pt]
-      {\color{white!80}\normalsize $\sim$10 minutes}
-    \end{center}
-    \vfill
   \end{frame}
 }
 

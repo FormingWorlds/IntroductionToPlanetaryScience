@@ -46,9 +46,7 @@ sphinx:
           kB: ["k_{\\mathrm{B}}"]
     latex_elements:
       preamble: |
-        \usepackage{amsmath}
-        \usepackage{amssymb}
-        \usepackage{fontspec}
+        \usepackage{unicode-math}
         \setmainfont{Inter}[
           UprightFont    = *-Regular,
           BoldFont       = *-Bold,
@@ -61,9 +59,10 @@ sphinx:
           ItalicFont     = *-Italic,
           BoldItalicFont = *-BoldItalic,
         ]
+        \setmathfont{FiraMath-Regular.otf}
 
         \newcommand{\dv}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
-        \newcommand{\dd}{\mathrm{d}}
+        \renewcommand{\dd}{\mathrm{d}}
         \newcommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}
       papersize: a4paper
       pointsize: 11pt

@@ -1,10 +1,11 @@
 % macros.tex — Shared math macros for IPS lecture slides
 % Mirrors definitions in book/_config.yml for consistency
+% Uses \providecommand to avoid conflicts with unicode-math
 
 % ── Derivatives ─────────────────────────────────────────────
-\newcommand{\dv}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
-\newcommand{\dd}{\mathrm{d}}
-\newcommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}
+\providecommand{\dv}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+\providecommand{\dd}{}\renewcommand{\dd}{\mathrm{d}}
+\providecommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}
 
 % ── Solar quantities ────────────────────────────────────────
 \newcommand{\Msun}{M_{\odot}}
