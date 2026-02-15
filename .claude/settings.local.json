@@ -23,7 +23,9 @@
       "Bash(jupyter-book clean:*)",
       "Bash(git -C /Users/timlichtenberg/git/IntroductionToPlanetaryScience status)",
       "Bash(git -C /Users/timlichtenberg/git/IntroductionToPlanetaryScience diff)",
-      "Bash(git -C /Users/timlichtenberg/git/IntroductionToPlanetaryScience log --oneline -5)"
+      "Bash(git -C /Users/timlichtenberg/git/IntroductionToPlanetaryScience log --oneline -5)",
+      "Bash(git -C /Users/timlichtenberg/git/IntroductionToPlanetaryScience add book/_config.yml)",
+      "Bash(git -C:*)"
     ]
   }
 }
