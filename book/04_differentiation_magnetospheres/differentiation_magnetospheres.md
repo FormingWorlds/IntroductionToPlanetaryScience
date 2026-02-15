@@ -19,7 +19,7 @@ $$
 v_{\mathrm{Stokes}} = \frac{2}{9} \frac{\Delta\rho \, g \, r^2}{\mu}
 $$ (eq:stokes-settling)
 
-where $\Delta\rho \approx 4000$ kg m$^{-3}$ is the density contrast between metal and silicate, $g$ is the gravitational acceleration, $r$ is the droplet radius, and $\mu$ is the dynamic viscosity of the silicate melt. For centimetre-sized iron droplets ($r \sim 0.01$ m) in a low-viscosity magma ocean ($\mu \sim 0.1$ Pa s, $g \sim 5$ m s$^{-2}$ for an Earth-sized body during formation), this gives $v_{\mathrm{Stokes}} \sim 0.04$ m s$^{-1}$, or about 4 cm per second. At this rate, droplets could traverse a magma ocean thousands of kilometres deep in a matter of **hundreds of years** — geologically instantaneous {cite:p}`Rubie2015`.
+where $\Delta\rho \approx 4000$ kg m$^{-3}$ is the density contrast between metal and silicate, $g$ is the gravitational acceleration, $r$ is the droplet radius, and $\mu$ is the dynamic viscosity of the silicate melt. For centimetre-sized iron droplets ($r \sim 0.01$ m) in a low-viscosity magma ocean ($\mu \sim 0.1$ Pa s, $g \sim 5$ m s$^{-2}$ for an Earth-sized body during formation), this gives $v_{\mathrm{Stokes}} \sim 4$ m s$^{-1}$. At this rate, droplets could traverse a magma ocean thousands of kilometres deep in a matter of **days** — geologically instantaneous {cite:p}`Rubie2015`.
 
 ### The Moon-forming giant impact
 

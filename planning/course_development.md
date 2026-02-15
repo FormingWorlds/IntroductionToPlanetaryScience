@@ -403,14 +403,14 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
-| 1 | Introduction & history | Draft complete (figures added) | High |
-| 2 | Planet formation & orbital dynamics | Draft complete (figures added) | High |
-| 3 | Planetary heat & energy transport | Draft complete (figures added) | High |
-| 4 | Chemical differentiation & magnetospheres | Draft complete (figures added) | High |
-| 5 | Atmospheres I | Draft complete (figures added) | High |
-| 6 | Atmospheres II | Draft complete (figures added) | High |
-| 7 | Planetary surfaces | Draft complete (figures added) | High |
-| 8 | Planetary interiors | Draft complete (figures added) | High |
+| 1 | Introduction & history | Verified | High |
+| 2 | Planet formation & orbital dynamics | Verified | High |
+| 3 | Planetary heat & energy transport | Verified | High |
+| 4 | Chemical differentiation & magnetospheres | Verified | High |
+| 5 | Atmospheres I | Verified | High |
+| 6 | Atmospheres II | Verified | High |
+| 7 | Planetary surfaces | Verified | High |
+| 8 | Planetary interiors | Verified | High |
 | 9 | Rocky planets: Earth & Venus | Not started | Medium |
 | 10 | Rocky planets: Mercury & Mars | Not started | Medium |
 | 11 | Gas & ice giants | Not started | Medium |
