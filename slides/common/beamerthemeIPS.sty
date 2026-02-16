@@ -51,11 +51,10 @@
 % ── Fonts (Inter + Fira Math via fontspec/unicode-math — requires XeLaTeX) ──
 \RequirePackage{fontspec}
 \RequirePackage{unicode-math}
-\setsansfont{Inter}[
-  UprightFont    = *-Regular,
-  BoldFont       = *-Bold,
-  ItalicFont     = *-Italic,
-  BoldItalicFont = *-BoldItalic,
+\setsansfont{Inter-Regular.otf}[
+  BoldFont       = Inter-Bold.otf,
+  ItalicFont     = Inter-Italic.otf,
+  BoldItalicFont = Inter-BoldItalic.otf,
 ]
 \setmathfont{FiraMath-Regular.otf}
 \setmathfont{latinmodern-math.otf}[range={"22C6}] % ⋆ star operator fallback
@@ -127,9 +126,7 @@
     \ipscontain{title_background}
     % Dark overlay for text readability
     \fill[ipsPrimary, opacity=0.70] (current page.north west) rectangle (current page.south east);
-    % Accent stripe
-    \fill[ipsAccent, opacity=0.5] ([yshift=-0.62\paperheight]current page.north west)
-      rectangle ([yshift=-0.64\paperheight]current page.north east);
+    % (accent stripe removed)
     % Background image credit
     \ifx\ips@titlebgcredit\empty\else
       \node[anchor=south east, inner sep=0pt] at ([xshift=-6pt, yshift=4pt]current page.south east) {%

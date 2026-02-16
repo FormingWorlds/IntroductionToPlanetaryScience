@@ -25,7 +25,24 @@
       "Bash(git -C /Users/timlichtenberg/git/IntroductionToPlanetaryScience diff)",
       "Bash(git -C /Users/timlichtenberg/git/IntroductionToPlanetaryScience log --oneline -5)",
       "Bash(git -C /Users/timlichtenberg/git/IntroductionToPlanetaryScience add book/_config.yml)",
-      "Bash(git -C:*)"
+      "Bash(git -C:*)",
+      "Bash(make:*)",
+      "Bash(mdfind:*)",
+      "Bash(/Library/TeX/texbin/latexmk:*)",
+      "Bash(export PATH=\"/Library/TeX/texbin:$PATH\")",
+      "Bash(xelatex:*)",
+      "Bash(tlmgr install:*)",
+      "Bash(sudo tlmgr install:*)",
+      "Bash(tlmgr search:*)",
+      "Bash(fc-list:*)",
+      "Bash(kpsewhich:*)",
+      "Bash(luaotfload-tool:*)",
+      "Bash(open:*)"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "context7",
+    "github"
+  ]
 }
