@@ -1,0 +1,521 @@
+% lecture03.tex — Lecture 3: Planetary Heat & Energy Transport
+% Introduction to Planetary Science, Kapteyn Institute
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme and macros ────────────────────────────────────────
+\usepackage{../common/beamerthemeIPS}
+\input{../common/macros}
+\graphicspath{{figures/}{../common/}{../../book/03_heat_energy/figures/}}
+
+% ── Metadata ────────────────────────────────────────────────
+\title[Lecture 3: Heat \& Energy Transport]{Lecture 3: Planetary Heat\\\& Energy Transport}
+\subtitle{Introduction to Planetary Science}
+\author[L3]{Tim Lichtenberg}
+\institute{Kapteyn Astronomical Institute\\University of Groningen}
+\date{2026}
+\titlebgcredit{Io volcanic plume, New Horizons (2007). Credit: NASA/JHUAPL/SwRI}
+
+% ════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Learning objectives ─────────────────────────────────────
+\begin{frame}{Learning Objectives}
+  By the end of this lecture, you will be able to:
+  \vskip8pt
+  \begin{itemize}
+    \item Identify the main energy sources driving planetary evolution
+    \item Distinguish conduction, convection, and radiation as heat transport mechanisms
+    \item Derive and apply the conductive cooling timescale $\tau \sim L^2/\kappa$
+    \item Explain the Rayleigh and Nusselt numbers and what they tell us
+    \item Describe tidal heating and why Io is the most volcanic body in the solar system
+  \end{itemize}
+\end{frame}
+
+% ── Recap ───────────────────────────────────────────────────
+\begin{frame}{Recap: Lecture 2}
+  \begin{itemize}
+    \item Protoplanetary disks: structure, snow line, 3--5~Myr lifetime
+    \item Dust $\to$ planetesimals $\to$ planets (streaming instability, pebble accretion)
+    \item Core accretion vs.\ gravitational instability for giant planets
+    \item Kepler's laws, vis-viva equation
+    \item Orbital resonances, tidal forces, migration
+  \end{itemize}
+  \vskip8pt
+  \textbf{Today:} What happens \textit{inside} planets after they form?
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{io_tvashtar_plume}{Io's Tvashtar plume, New Horizons (2007). Credit: NASA/JHUAPL/SwRI}
+\section{Energy Sources}
+% ════════════════════════════════════════════════════════════
+
+% ── Four energy sources ────────────────────────────────────
+\begin{frame}{What Heats a Planet?}
+  Four principal sources of internal heat:
+  \vskip8pt
+  \begin{enumerate}
+    \item \textbf{Accretional heating} --- gravitational energy from assembly
+    \item \textbf{Gravitational differentiation} --- core formation releases $\sim$10\% more
+    \item \textbf{Radioactive decay} --- sustained for billions of years
+    \item \textbf{Tidal heating} --- orbital energy dissipated as friction
+  \end{enumerate}
+  \vskip8pt
+  Without internal heat $\rightarrow$ no volcanism, no magnetic field, no plate tectonics, no atmospheric outgassing.
+\end{frame}
+
+% ── Accretional heating ───────────────────────────────────
+\begin{frame}{Accretional Heating}
+  Gravitational energy of assembling a uniform sphere:
+  $$E_{\mathrm{acc}} \sim \frac{3}{5}\frac{GM^2}{R}$$
+  \vskip6pt
+  For Earth: $E_{\mathrm{acc}} \approx 2.2 \times 10^{32}$~J
+  \vskip6pt
+  If all retained as heat:
+  $$\Delta T = \frac{E_{\mathrm{acc}}}{M c_p} \approx \frac{2.2 \times 10^{32}}{5.97 \times 10^{24} \times 1200} \approx 30{,}000\;\text{K}$$
+  \vskip6pt
+  \keyresult{Enough to melt Earth many times over. Accretion inevitably produces a \textbf{magma ocean}.}
+\end{frame}
+
+% ── Radioactive decay ─────────────────────────────────────
+\begin{frame}{Radioactive Decay: The Long-Lived Engine}
+  \centering
+  \small
+  \begin{tabular}{l c c c}
+    \toprule
+    \textbf{Isotope} & \textbf{Half-life (Gyr)} & \textbf{Heat} (W\,kg$^{-1}$) & \textbf{Concentration} \\
+    \midrule
+    ${}^{238}\mathrm{U}$  & 4.47  & $9.5 \times 10^{-5}$ & 20~ppb \\
+    ${}^{235}\mathrm{U}$  & 0.704 & $5.7 \times 10^{-4}$ & 0.14~ppb \\
+    ${}^{232}\mathrm{Th}$ & 14.0  & $2.6 \times 10^{-5}$ & 80~ppb \\
+    ${}^{40}\mathrm{K}$   & 1.25  & $2.9 \times 10^{-5}$ & 240~ppb \\
+    \bottomrule
+  \end{tabular}
+  \vskip8pt
+  \flushleft
+  \begin{itemize}
+    \item Lithophile elements $\rightarrow$ concentrate in mantle/crust
+    \item Present-day radiogenic heat: $\sim$20~TW
+    \item 4.5~Gyr ago: 3--4$\times$ higher (short-lived isotopes more abundant)
+  \end{itemize}
+\end{frame}
+
+% ── Radiogenic heat evolution figure ──────────────────────
+\begin{frame}{Radiogenic Heat Over Time}
+  \centering
+  \includegraphics[height=0.65\textheight]{radiogenic_heat_evolution}
+  \source{Wikimedia Commons, CC BY-SA 4.0}
+  \vskip4pt
+  {\small Total heat production (black) is the sum of four isotopes. ${}^{40}\mathrm{K}$ and ${}^{235}\mathrm{U}$ dominated in the early solar system.}
+\end{frame}
+
+% ── Short-lived isotopes ──────────────────────────────────
+\begin{frame}{Short-Lived Isotopes: ${}^{26}\mathrm{Al}$}
+  \begin{itemize}
+    \item Half-life: only 0.72~Myr (now extinct)
+    \item Produced by nearby stellar nucleosynthesis
+    \item In the first few Myr: extraordinarily potent heat source
+    \item Could melt planetesimals as small as a few km radius
+    \item Initiated core formation and volatile loss \textbf{before} planets fully assembled
+  \end{itemize}
+  \vskip8pt
+  \keyresult{${}^{26}\mathrm{Al}$ is why even small asteroids show evidence of melting and differentiation in the meteorite record.}
+\end{frame}
+
+% ── Earth's heat budget ──────────────────────────────────
+\begin{frame}{Earth's Heat Budget: 47~TW}
+  \centering
+  \begin{tabular}{l r}
+    \toprule
+    \textbf{Source} & \textbf{Contribution} \\
+    \midrule
+    Radiogenic heating (mantle + crust) & $\sim$20~TW \\
+    Primordial (secular cooling)        & $\sim$15~TW \\
+    Core cooling and solidification     & $\sim$10~TW \\
+    Tidal dissipation (from the Moon)   & $\sim$0.1~TW \\
+    \midrule
+    \textbf{Total}                      & $\sim$\textbf{47~TW} \\
+    \bottomrule
+  \end{tabular}
+  \vskip10pt
+  $\sim$40\% from ongoing radioactive decay; 60\% from primordial heat.\\
+  Earth is still cooling.
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{earth_interior_cutaway}{Earth's interior. Credit: Wikimedia Commons, CC BY-SA 3.0}
+\section{Heat Transport Mechanisms}
+% ════════════════════════════════════════════════════════════
+
+% ── Three mechanisms ──────────────────────────────────────
+\begin{frame}{Three Ways to Move Heat}
+  \begin{description}
+    \item[Conduction:] Heat transferred by molecular/atomic collisions\\
+    $\vec{q} = -k\nabla T$ (Fourier's law)\\
+    Slow, diffusive --- dominant in lithosphere, small bodies
+
+    \vskip6pt
+    \item[Convection:] Heat transported by bulk fluid motion\\
+    Hot material rises, cool material sinks\\
+    Dominant in mantles, outer cores, giant planet interiors
+
+    \vskip6pt
+    \item[Radiation:] Energy carried by electromagnetic waves\\
+    $F = \epsilon\sigma T^4$ (Stefan--Boltzmann)\\
+    Dominant at surfaces and in atmospheres
+  \end{description}
+\end{frame}
+
+% ── Conduction details ────────────────────────────────────
+\begin{frame}{Conduction: Fourier's Law}
+  \begin{itemize}
+    \item Heat flux: $\vec{q} = -k\nabla T$
+    \item Thermal diffusivity: $\kappa = k/(\rho c_p) \approx 10^{-6}$~m$^2$\,s$^{-1}$ (rock)
+    \item Inherently \textbf{diffusive} --- slow over large distances
+    \item The time for heat to conduct through distance $L$:
+  \end{itemize}
+  \vskip6pt
+  \keyresult{$$\tau_{\mathrm{cond}} \sim \frac{L^2}{\kappa}$$}
+  \vskip6pt
+  We will derive this next.
+\end{frame}
+
+% ── Convection overview ──────────────────────────────────
+\begin{frame}{Convection: Nature's Heat Elevator}
+  \begin{columns}[c]
+    \column{0.40\textwidth}
+    \centering
+    \includegraphics[height=0.55\textheight]{convection_cells}
+    \source{Wikimedia Commons, CC BY-SA 3.0}
+
+    \column{0.57\textwidth}
+    \begin{itemize}
+      \item Hot material at base: buoyant, rises
+      \item Cool material at top: dense, sinks
+      \item Far more efficient than conduction
+      \item Active in:
+      \begin{itemize}
+        \item Earth's mantle ($\sim$cm/yr)
+        \item Outer core (liquid metal)
+        \item Giant planet interiors
+        \item Atmospheres
+      \end{itemize}
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{earth_interior_cutaway}{Earth's interior. Credit: Wikimedia Commons, CC BY-SA 3.0}
+\section{Blackboard Derivation: Cooling Timescale}
+% ════════════════════════════════════════════════════════════
+
+% ── Setup ──────────────────────────────────────────────────
+\begin{frame}{The Heat Diffusion Equation}
+  \textbf{Goal:} Show that conduction alone cannot cool planet-sized bodies.
+  \vskip10pt
+  The \textbf{heat equation}:
+  $$\pdv{T}{t} = \kappa \nabla^2 T$$
+  \vskip6pt
+  In one dimension:
+  $$\pdv{T}{t} = \kappa \pdv{^2 T}{x^2}$$
+  \vskip6pt
+  Rate of temperature change $\propto$ curvature of the temperature profile.
+\end{frame}
+
+% ── Derivation ─────────────────────────────────────────────
+\begin{frame}{Dimensional Analysis}
+  The heat equation relates:
+  \begin{itemize}
+    \item Time derivative: $\pdv{T}{t} \sim T/\tau$
+    \item Spatial derivative: $\pdv{^2 T}{x^2} \sim T/L^2$
+  \end{itemize}
+  \vskip8pt
+  Substituting:
+  $$\frac{T}{\tau} \sim \kappa\frac{T}{L^2}$$
+  \vskip4pt
+  Temperature cancels:
+  \vskip4pt
+  \keyresult{$$\boxed{\tau_{\mathrm{cond}} \sim \frac{L^2}{\kappa}}$$}
+  \vskip4pt
+  \textbf{Key feature:} $L^2$ dependence --- doubling the size $\rightarrow$ 4$\times$ the cooling time.
+\end{frame}
+
+% ── Application table ──────────────────────────────────────
+\begin{frame}{Cooling Timescales Across the Solar System}
+  Using $\kappa \approx 10^{-6}$~m$^2$\,s$^{-1}$ (silicate rock):
+  \vskip8pt
+  \centering
+  \begin{tabular}{l r r r}
+    \toprule
+    \textbf{Body} & \textbf{Size $L$} & $\boldsymbol{\tau = L^2/\kappa}$ & \textbf{Familiar units} \\
+    \midrule
+    1~m boulder  & 1~m               & $10^6$~s              & $\sim$12 days \\
+    100~km asteroid & $10^5$~m        & $10^{16}$~s           & $\sim$300~Myr \\
+    Moon         & $1.7 \times 10^6$~m & $3 \times 10^{18}$~s & $\sim$100~Gyr \\
+    Earth        & $6.4 \times 10^6$~m & $4 \times 10^{19}$~s & $\sim$1300~Gyr \\
+    \bottomrule
+  \end{tabular}
+  \vskip10pt
+  \begin{alertblock}{}
+    Earth's conductive cooling time $\gg$ age of the universe.\\
+    Yet Earth loses 47~TW $\Rightarrow$ there \textbf{must} be convection.
+  \end{alertblock}
+\end{frame}
+
+
+% ── Break ───────────────────────────────────────────────────
+\breakslide
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{earth_interior_cutaway}{Earth's interior. Credit: Wikimedia Commons, CC BY-SA 3.0}
+\section{Rayleigh Number \& Convective Vigour}
+% ════════════════════════════════════════════════════════════
+
+% ── Rayleigh number ───────────────────────────────────────
+\begin{frame}{The Rayleigh Number}
+  Does a fluid layer convect or merely conduct?
+  \vskip8pt
+  $$\mathrm{Ra} = \frac{\alpha \rho g \Delta T\, d^3}{\kappa \eta}$$
+  \vskip6pt
+  \begin{columns}[T]
+    \column{0.48\textwidth}
+    \textbf{Numerator} (buoyancy):
+    \begin{itemize}
+      \item $\alpha$ = thermal expansion
+      \item $\rho$ = density
+      \item $g$ = gravity
+      \item $\Delta T$ = temperature contrast
+      \item $d$ = layer depth
+    \end{itemize}
+
+    \column{0.48\textwidth}
+    \textbf{Denominator} (dissipation):
+    \begin{itemize}
+      \item $\kappa$ = thermal diffusivity
+      \item $\eta$ = dynamic viscosity
+    \end{itemize}
+    \vskip10pt
+    Critical value: $\mathrm{Ra}_c \approx 1000$
+  \end{columns}
+\end{frame}
+
+% ── Earth's mantle Ra ─────────────────────────────────────
+\begin{frame}{Earth's Mantle: Vigorous Convection}
+  For Earth's mantle:
+  $$\mathrm{Ra}_\oplus \sim \frac{2 \times 10^{-5} \times 4000 \times 10 \times 2500 \times (3 \times 10^6)^3}{10^{-6} \times 10^{21}} \sim 10^7\text{--}10^8$$
+  \vskip8pt
+  \begin{itemize}
+    \item $\mathrm{Ra}_\oplus \gg \mathrm{Ra}_c \approx 1000$ --- \textbf{vigorous convection confirmed}
+    \item Explains why Earth's interior cools efficiently despite conduction being inadequate
+  \end{itemize}
+  \vskip6pt
+  \keyresult{The Nusselt number Nu $\propto$ Ra$^{1/3}$ measures convection efficiency.\\For Earth: Nu $\sim (10^7)^{1/3} \sim 200$ --- convection transports heat 200$\times$ faster than conduction.}
+\end{frame}
+
+% ── Boundary layers ───────────────────────────────────────
+\begin{frame}{Thermal Boundary Layers}
+  A convecting interior develops three layers:
+  \vskip6pt
+  \begin{enumerate}
+    \item \textbf{Cold boundary layer (top):} conductive, steep $T$ drop\\
+    $\rightarrow$ Earth's \textbf{lithosphere} ($\sim$100--200~km)
+    \vskip4pt
+    \item \textbf{Well-mixed interior:} nearly adiabatic, slow $T$ variation\\
+    $\rightarrow$ bulk of the mantle
+    \vskip4pt
+    \item \textbf{Hot boundary layer (bottom):} steep $T$ rise into the core\\
+    $\rightarrow$ Earth's \textbf{D'' layer} ($\sim$200~km)
+  \end{enumerate}
+  \vskip8pt
+  Nearly all the temperature drop occurs in the two thin boundary layers.
+\end{frame}
+
+% ── Tectonic regimes ──────────────────────────────────────
+\begin{frame}{Two Tectonic Regimes}
+  \begin{columns}[T]
+    \column{0.48\textwidth}
+    \textbf{Mobile lid (plate tectonics):}
+    \begin{itemize}
+      \item Cold boundary layer \textbf{breaks} into plates
+      \item Plates subduct, recycle material
+      \item Most efficient heat loss
+      \item \textbf{Only Earth}
+    \end{itemize}
+
+    \column{0.48\textwidth}
+    \textbf{Stagnant lid:}
+    \begin{itemize}
+      \item Single thick, immobile shell
+      \item Heat escapes by conduction + volcanism
+      \item Less efficient cooling
+      \item Venus, Mars, Mercury, Moon
+    \end{itemize}
+  \end{columns}
+  \vskip8pt
+  Why Earth is unique: likely a combination of water, size, and thermal history.
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{enceladus_plumes}{Enceladus plumes, Cassini. Credit: NASA/JPL/SSI}
+\section{Surface Heat Flow \& Tidal Heating}
+% ════════════════════════════════════════════════════════════
+
+% ── Surface heat flow ─────────────────────────────────────
+\begin{frame}{Surface Heat Flow}
+  \centering
+  \begin{tabular}{l c c l}
+    \toprule
+    \textbf{Body} & \textbf{Heat flux (mW\,m$^{-2}$)} & \textbf{Total (TW)} & \textbf{Source} \\
+    \midrule
+    Earth  & $\sim$90   & $\sim$47   & Radiogenic + primordial \\
+    Moon   & 10--15     & $\sim$0.3  & Primordial (cooled) \\
+    Mars   & 15--25     & $\sim$3--5 & Radiogenic + primordial \\
+    Io     & 2000--3000 & $\sim$100  & \textbf{Tidal dissipation} \\
+    \bottomrule
+  \end{tabular}
+  \vskip10pt
+  Io's heat flux is 20--30$\times$ higher than Earth's --- entirely from tidal heating.
+\end{frame}
+
+% ── Tidal heating mechanism ───────────────────────────────
+\begin{frame}{Tidal Heating: How It Works}
+  \begin{itemize}
+    \item Circular orbit + tidal lock $\rightarrow$ static bulge, \textbf{no heating}
+    \item \textbf{Eccentric orbit:} distance varies each orbit
+    \begin{itemize}
+      \item Closer: tidal force stronger, moon moves faster
+      \item Farther: tidal force weaker, moon moves slower
+    \end{itemize}
+    \item Continuously varying deformation $\rightarrow$ \textbf{flexing dissipates heat}
+  \end{itemize}
+  \vskip6pt
+  Heating depends on:
+  \begin{itemize}
+    \item Eccentricity $e$ (zero $e$ $\rightarrow$ zero heating)
+    \item Distance $a$ (heating $\propto a^{-6}$)
+    \item Internal dissipation (tidal quality factor $Q$)
+  \end{itemize}
+\end{frame}
+
+% ── Io ─────────────────────────────────────────────────────
+\begin{frame}{Io: The Most Volcanic Body}
+  \begin{columns}[c]
+    \column{0.42\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{io_tvashtar_plume}
+    \source{NASA/JHUAPL/SwRI (2007)}
+
+    \column{0.55\textwidth}
+    \begin{itemize}
+      \item $\sim 10^{14}$~W of tidal heat (2$\times$ Earth's total!)
+      \item Predicted by Peale, Cassen \& Reynolds (1979)
+      \item Confirmed days later by Voyager~1
+      \item Powered by the \textbf{Laplace resonance}
+      \item $>$400 active volcanic centres
+      \item Entire surface resurfaced on $\sim$Myr timescale
+    \end{itemize}
+  \end{columns}
+  \vskip4pt
+  \keyresult{The Laplace resonance continuously pumps Io's eccentricity, maintaining tidal heating indefinitely.}
+\end{frame}
+
+% ── Enceladus ──────────────────────────────────────────────
+\begin{frame}{Enceladus: A Tiny Moon with a Big Secret}
+  \begin{columns}[c]
+    \column{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{enceladus_plumes}
+    \source{NASA/JPL/SSI (Cassini)}
+
+    \column{0.52\textwidth}
+    \begin{itemize}
+      \item Radius only 252~km
+      \item Water ice jets from ``tiger stripe'' fractures
+      \item Thermal power: 5--15~GW (tidal dissipation)
+      \item Global subsurface ocean beneath $\sim$20--30~km ice
+      \item Plumes contain: salts, silica, organics, $\mathrm{H_2}$
+      \item Hydrothermal activity on the ocean floor
+    \end{itemize}
+  \end{columns}
+  \vskip4pt
+  \keyresult{Enceladus demonstrates that tidal heating can sustain liquid water oceans far from the habitable zone.}
+\end{frame}
+
+% ── Ocean worlds ──────────────────────────────────────────
+\begin{frame}{Ocean Worlds: Europa \& Titan}
+  \begin{itemize}
+    \item \textbf{Europa:} Global ocean $\sim$100~km deep, ice shell $\sim$10--30~km\\
+    Maintained by Laplace resonance with Io and Ganymede\\
+    Europa Clipper mission (launched 2024) will investigate habitability
+
+    \vskip8pt
+    \item \textbf{Titan:} Subsurface water--ammonia ocean\\
+    Evidence from rotational state (Cassini)\\
+    Dragonfly mission ($\sim$2028) will explore surface chemistry
+  \end{itemize}
+  \vskip6pt
+  \begin{block}{}
+    These ocean worlds are among the most promising targets for extraterrestrial life --- they have liquid water, chemical energy, and organic building blocks.
+  \end{block}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{io_tvashtar_plume}{Io's Tvashtar plume. Credit: NASA/JHUAPL/SwRI}
+\section{Recent Advances \& Outlook}
+% ════════════════════════════════════════════════════════════
+
+% ── Recent advances ───────────────────────────────────────
+\begin{frame}{Recent Advances}
+  \begin{itemize}
+    \item \textbf{InSight mission} (2018--2022): first seismology on Mars\\
+    Core radius $\sim$1830~km; mantle structure; crustal thickness\\
+    Heat flow probe encountered unexpected soil properties
+
+    \vskip6pt
+    \item \textbf{Tidal heating models:} Updated rheological models suggest dissipation in Enceladus may be concentrated in the ice shell
+
+    \vskip6pt
+    \item \textbf{Radiogenic budget:} Updated meteorite analyses refine early solar system heating
+  \end{itemize}
+\end{frame}
+
+% ── Summary ────────────────────────────────────────────────
+\begin{frame}{Summary}
+  \begin{enumerate}
+    \item Four heat sources: accretional, gravitational differentiation, radioactive decay, tidal heating
+    \item Conduction is diffusive ($\tau \sim L^2/\kappa$) --- too slow for planet-sized bodies
+    \item Convection dominates in large bodies: $\mathrm{Ra} \gg \mathrm{Ra}_c$
+    \item Earth: mobile lid (plate tectonics); other rocky bodies: stagnant lid
+    \item Tidal heating powers Io's volcanism and maintains subsurface oceans on Enceladus, Europa, and Titan
+    \item Earth's total heat loss: 47~TW (40\% radiogenic, 60\% primordial)
+  \end{enumerate}
+\end{frame}
+
+% ── Final slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \begin{tikzpicture}[remember picture, overlay]
+    \ipscontain{title_background}
+    \fill[ipsPrimary, opacity=0.70] (current page.north west) rectangle (current page.south east);
+  \end{tikzpicture}
+  \vfill
+  \begin{center}
+    {\color{white}\Large\bfseries Questions?}
+    \vskip20pt
+    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~4 --- Chemical Differentiation \& Magnetospheres}}
+    \vskip16pt
+    {\color{ipsLightFill!70}\small Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
+  \end{center}
+  \vfill
+\end{frame}
+
+\end{document}
