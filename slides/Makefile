@@ -1,4 +1,4 @@
-LECTURES = lecture01
+LECTURES = lecture01 lecture02 lecture03 lecture04 lecture05 lecture06 lecture07 lecture08
 LATEXMK  = latexmk -xelatex -interaction=nonstopmode
 
 .PHONY: all clean avif2png $(LECTURES)
