@@ -427,7 +427,7 @@ $$
 d_R \approx 2.46 \times 58{,}232 \times \left(\frac{687}{1000}\right)^{1/3} \approx 126{,}000 \text{ km} \approx 2.16\, R_p
 $$
 
-Saturn's main ring system extends from about 67,000 km to 137,000 km from Saturn's centre — precisely within the Roche limit. The rings consist of countless small particles that cannot coalesce into a moon because tidal forces prevent their gravitational aggregation. We will derive the Roche limit in full in {ref}`lecture11`.
+Saturn's main ring system extends from about 67,000 km to 137,000 km from Saturn's centre — mostly within the Roche limit (the fluid approximation gives $d_R \approx 126{,}000$ km, but the exact boundary depends on the rigidity and composition of the orbiting material; the outer A ring extends slightly beyond the fluid Roche limit but remains within the rigid-body limit). The rings consist of countless small particles that cannot coalesce into a moon because tidal forces prevent their gravitational aggregation. We will derive the Roche limit in full in {ref}`lecture11`.
 
 
 ## Planetary migration
