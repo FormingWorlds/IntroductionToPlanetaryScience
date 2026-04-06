@@ -265,7 +265,7 @@ The second lever is *atmospheric escape during the magma ocean phase*. Under a y
 :name: fig:l14:hamano-typeII
 :width: 70%
 
-Two distinct types of terrestrial planet defined by the {cite:t}`Hamano2013` model. The upper panel shows magma-ocean solidification time as a function of orbital distance for a range of initial water inventories; planets inside a critical orbital distance ($\sim 0.76$ AU) cannot solidify their magma oceans before water is largely lost through hydrodynamic escape ("Type II"), while planets further out solidify quickly and retain most of their water ("Type I"). The lower panel shows the resulting final water inventories. Reproduced from {cite:t}`Hamano2013`.
+Two distinct types of terrestrial planet defined by the {cite:t}`Hamano2013` model. The upper panel shows magma-ocean solidification time as a function of orbital distance for a range of initial water inventories; planets inside a critical orbital distance ($\sim 0.77$ AU) cannot solidify their magma oceans before water is largely lost through hydrodynamic escape ("Type II"), while planets further out solidify quickly and retain most of their water ("Type I"). The lower panel shows the resulting final water inventories. Reproduced from {cite:t}`Hamano2013`.
 ```
 
 ```{figure} figures/hamano2013_water_partitioning.avif
@@ -354,27 +354,35 @@ $$
 
 where $\epsilon$ is the effective emissivity of the atmosphere (which in the bare-rock limit is $1$) and $\sigma$ is the Stefan-Boltzmann constant. For Earth around the Sun, plugging in $A_B \approx 0.3$, $\epsilon \approx 1$, $L_\star = \Lsun$, and $d = 1$ AU gives $T_{\rm eq} \approx 255$ K. The actual surface temperature is $\sim 288$ K because the greenhouse effect adds $\sim 33$ K.
 
-**Inner edge: the Simpson-Nakajima limit.** As recapped in {ref}`lecture09`, the inner edge of the HZ is set by the runaway greenhouse limit. In a moist atmosphere, the outgoing longwave radiation (OLR) is bounded above by a limit set by the saturation pressure of water vapour: as the surface warms, more water enters the atmosphere, but the OLR cannot exceed a critical value $F_{\rm in}^{\rm crit} \approx 280$ to $350$ W/m$^2$ {cite:p}`Pierrehumbert2010,Kopparapu2013`. If the absorbed stellar flux exceeds this limit, the surface cannot reach radiative equilibrium and instead heats up until the oceans are vaporised entirely. For a given $L_\star$, this defines a critical inner orbital distance:
+**Effective stellar flux scaling.** The cleanest way to express habitable-zone boundaries is in terms of the **effective stellar flux** $S_{\rm eff}$, defined as the top-of-atmosphere stellar flux at the HZ boundary divided by Earth's present TOA flux $S_\oplus = 1361$ W/m$^2$. Because $F_{\rm TOA} = L_\star / (4\pi d^2)$, the orbital distance corresponding to a given $S_{\rm eff}$ is
 
 $$
-d_{\rm in} = \sqrt{\frac{L_\star (1 - A_B)}{4\pi \cdot 4 F_{\rm in}^{\rm crit}}}\,.
+d = (1\,\mathrm{AU}) \sqrt{\frac{L_\star/\Lsun}{S_{\rm eff}}}\,.
 $$
 
-For the Sun and an Earth-like albedo, this gives $d_{\rm in} \approx 0.95$ AU, which is consistent with both the Hamano model for Venus and the {cite:t}`Kopparapu2013` 1D climate calculations. Venus at 0.72 AU receives roughly $1.9$ times the Earth flux and is well inside the inner edge.
+The full 1D radiative-convective climate calculations of {cite:t}`Kopparapu2013` give the Kopparapu boundaries directly in $S_{\rm eff}$ values for Sun-like stars; we simply read them off and apply the formula above.
 
-**Outer edge: the maximum $\mathrm{CO_2}$ greenhouse.** The outer edge is set by a different mechanism. For $\mathrm{CO_2}$-rich atmospheres at low temperatures, increasing the atmospheric $\mathrm{CO_2}$ inventory does *not* warm the planet indefinitely: above a certain partial pressure, $\mathrm{CO_2}$ begins to condense out as ice clouds and surface ice rather than acting as a greenhouse gas. The maximum greenhouse warming achievable from any $\mathrm{CO_2}$ atmosphere therefore corresponds to a minimum stellar flux below which the surface cannot be kept above 273 K. Numerically, $F_{\rm out}^{\rm crit} \approx 0.35\, S_\oplus$, where $S_\oplus = 1361$ W/m$^2$ is Earth's instellation {cite:p}`Kopparapu2013`. The corresponding outer orbital distance is
+**Inner edge: the Simpson-Nakajima limit.** As recapped in {ref}`lecture09`, the inner edge of the HZ is set by the runaway greenhouse limit. In a moist atmosphere, the outgoing longwave radiation (OLR) is bounded above by a critical value $F_{\rm OLR}^{\rm max} \approx 280$ W/m$^2$ set by the saturation pressure of water vapour {cite:p}`Pierrehumbert2010,Goldblatt2013`. Once the absorbed stellar flux exceeds this limit, the surface cannot reach radiative equilibrium and the oceans are driven into the atmosphere. For Sun-like stars, the {cite:t}`Kopparapu2013` runaway greenhouse limit corresponds to $S_{\rm in,eff} \approx 1.06$, giving
 
 $$
-d_{\rm out} = \sqrt{\frac{L_\star (1 - A_B)}{4\pi \cdot 4 F_{\rm out}^{\rm crit}}}\,.
+d_{\rm in} = (1\,\mathrm{AU})/\sqrt{1.06} \approx 0.97\,\mathrm{AU}.
 $$
 
-For the Sun, this gives $d_{\rm out} \approx 1.7$ AU. Mars at 1.52 AU is just inside the outer edge.
+Venus at $0.72$ AU receives $S_{\rm eff} \approx 1.9$ and sits well inside the inner edge.
+
+**Outer edge: the maximum $\mathrm{CO_2}$ greenhouse.** The outer edge is set by a different mechanism. For $\mathrm{CO_2}$-rich atmospheres at low temperatures, increasing the atmospheric $\mathrm{CO_2}$ inventory does *not* warm the planet indefinitely: above a certain partial pressure, $\mathrm{CO_2}$ begins to condense out as ice clouds and surface ice rather than acting as a greenhouse gas. The maximum greenhouse warming achievable from any $\mathrm{CO_2}$ atmosphere therefore corresponds to a minimum stellar flux below which the surface cannot be kept above 273 K. The {cite:t}`Kopparapu2013` outer-edge limit for Sun-like stars is $S_{\rm out,eff} \approx 0.35$, giving
+
+$$
+d_{\rm out} = (1\,\mathrm{AU})/\sqrt{0.35} \approx 1.69\,\mathrm{AU}.
+$$
+
+Mars at $1.52$ AU is just inside the outer edge.
 
 **Comparing across stellar types.** The habitable zone is therefore a stellar-mass-dependent strip that scales as $\sqrt{L_\star}$. Plugging in luminosities for representative spectral types:
 
-- **G dwarfs** (Sun, $L \sim \Lsun$): $d_{\rm in} \approx 0.95$ AU, $d_{\rm out} \approx 1.7$ AU. Width $\sim 0.75$ AU. Lifetime $\sim 10$ Gyr. Modest stellar activity. The reference case for "typical" habitability.
-- **K dwarfs** (e.g.\ $\epsilon$ Eri at $L \sim 0.3\,\Lsun$): $d_{\rm in} \approx 0.5$ AU, $d_{\rm out} \approx 0.9$ AU. Long main-sequence lifetimes (40 to 70 Gyr), modest flares, stable photospheres, and an HZ that is far enough out to avoid most tidal-locking and pre-main-sequence problems. {cite:t}`CuntzGuinan2016` argued on these grounds that K dwarfs may be the *most habitable* class of host star. Their UV/X-ray output is modest after the first Gyr ({numref}`fig:l14:cuntz-xray`), and their long lifetimes give biology more time to develop.
-- **M dwarfs** (e.g.\ TRAPPIST-1, $L \sim 5 \times 10^{-4}\,\Lsun$): $d_{\rm in} \approx 0.02$ AU, $d_{\rm out} \approx 0.05$ AU. The HZ is inside the orbit of Mercury. Stars are extremely long-lived (up to $10^{12}$ yr), so the system has time, but the HZ is so close to the star that all planets are tidally locked, are exposed to intense stellar wind, and went through a Gyr-long pre-main-sequence high-luminosity phase during which any HZ planet was in the runaway greenhouse state {cite:p}`LugerBarnes2015`.
+- **G dwarfs** (Sun, $L \sim \Lsun$): $d_{\rm in} \approx 0.97$ AU, $d_{\rm out} \approx 1.69$ AU. Width $\sim 0.7$ AU. Lifetime $\sim 10$ Gyr. Modest stellar activity. The reference case for "typical" habitability.
+- **K dwarfs** (e.g.\ $\epsilon$ Eri at $L \sim 0.3\,\Lsun$): $d_{\rm in} \approx 0.53$ AU, $d_{\rm out} \approx 0.93$ AU. Long main-sequence lifetimes ($\sim 30$ to $70$ Gyr), modest flares, stable photospheres, and an HZ that is far enough out to avoid most tidal-locking and pre-main-sequence problems. {cite:t}`CuntzGuinan2016` argued on these grounds that K dwarfs may be the *most habitable* class of host star. Their UV/X-ray output is modest after the first Gyr ({numref}`fig:l14:cuntz-xray`), and their long lifetimes give biology more time to develop.
+- **M dwarfs** (e.g.\ TRAPPIST-1, $L \sim 5 \times 10^{-4}\,\Lsun$): $d_{\rm in} \approx 0.022$ AU, $d_{\rm out} \approx 0.038$ AU. The HZ is inside the orbit of Mercury. Stars are extremely long-lived (up to $10^{12}$ yr), so the system has time, but the HZ is so close to the star that all planets are tidally locked, are exposed to intense stellar wind, and the most extreme cases (late M / ultracool dwarfs like TRAPPIST-1) went through a Gyr-long pre-main-sequence high-luminosity phase during which any HZ planet was in the runaway greenhouse state {cite:p}`LugerBarnes2015`. Early M dwarfs (M0 to M3) have much shorter pre-main-sequence phases of $\sim 50$ to $150$ Myr but still face the tidal-locking and flare-activity challenges.
 
 ```{figure} figures/cuntz_guinan_xray_lyman.avif
 :name: fig:l14:cuntz-xray

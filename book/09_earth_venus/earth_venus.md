@@ -39,7 +39,7 @@ These bulk numbers, taken on their own, are unremarkable.
 What makes Earth distinctive is the combination of three properties that, together, are unique to Earth in the Solar System today: an active mobile-lid plate tectonic regime, a global biosphere, and persistent liquid surface water covering roughly $71\%$ of the planet.
 None of the other rocky planets, no moon, and no dwarf planet has even one of these features today; only Earth has all three.
 The deep insight from comparative planetology is that **the three are coupled**.
-Plate tectonics requires hydration of the lithosphere by liquid water to weaken the rocks enough that subduction can occur ({ref}`lecture07`); the biosphere has set and maintained the atmospheric balance of $\mathrm{O_2}$ and $\mathrm{CO_2}$ for the last $\sim$2.4 billion years {cite:p}`Lyons2014`; and the persistence of liquid water on $4$-Gyr timescales is in turn stabilised by the carbonate-silicate cycle ({ref}`lecture06`), a negative feedback that requires both volcanic outgassing of $\mathrm{CO_2}$ and silicate weathering on a wet surface {cite:p}`Walker1981b`.
+Plate tectonics requires hydration of the lithosphere by liquid water to weaken the rocks enough that subduction can occur ({ref}`lecture07`); the biosphere has set and maintained the atmospheric balance of $\mathrm{O_2}$ and $\mathrm{CO_2}$ for the last $\sim$2.4 billion years {cite:p}`Lyons2014`; and the persistence of liquid water on $4$-Gyr timescales is in turn stabilised by the carbonate-silicate cycle ({ref}`lecture06`), a negative feedback that requires both volcanic outgassing of $\mathrm{CO_2}$ and silicate weathering on a wet surface {cite:p}`Walker1981`.
 The three legs of the tripod hold each other up.
 Remove any one and the system collapses.
 This coupling is the essential reason Earth has remained habitable for billions of years and the essential reason we suspect Venus, lacking all three legs today, lost the configuration early.
@@ -55,8 +55,8 @@ Continental crust, by contrast, is buoyant relative to the mantle, resists subdu
 
 For the Earth-Venus comparison, the key role of plate tectonics is climatological, not just geological.
 Subduction is the **return leg of the carbon cycle**.
-$\mathrm{CO_2}$ released to the atmosphere by volcanism reacts with silicate minerals in the presence of liquid water to form carbonate sediments on the seafloor; these are subsequently subducted into the mantle, where the carbon is partly returned to the deep interior and partly recycled back to the atmosphere through arc volcanism over hundreds of millions of years {cite:p}`Walker1981b,KrissansenTotton2018`.
-The cycle's timescale to equilibrate atmospheric $\mathrm{CO_2}$ in response to a perturbation is $\sim$0.5 Myr {cite:p}`Walker1981b`.
+$\mathrm{CO_2}$ released to the atmosphere by volcanism reacts with silicate minerals in the presence of liquid water to form carbonate sediments on the seafloor; these are subsequently subducted into the mantle, where the carbon is partly returned to the deep interior and partly recycled back to the atmosphere through arc volcanism over hundreds of millions of years {cite:p}`Walker1981,KrissansenTotton2018`.
+The cycle's timescale to equilibrate atmospheric $\mathrm{CO_2}$ in response to a perturbation is $\sim$0.5 Myr {cite:p}`Walker1981`.
 Without an active subduction system, the sink half of the cycle stops working, and the carbon released from the interior accumulates in the atmosphere indefinitely.
 Holding this thought is essential for understanding Venus, where there is no observed subduction and no observed carbonate sink.
 
@@ -393,7 +393,7 @@ Trace gases include $\mathrm{SO_2}$ at $\sim$150 ppm, water vapour at $\sim$30 p
 The high noble gas content (especially primordial $^{36}$Ar) is one of the stronger arguments that Venus retained more of its primordial atmosphere than Earth did, which fits with the idea that Venus has had less efficient atmospheric loss to space at modern times.
 
 The thermal profile is roughly adiabatic from the surface ($T_s = 735$ K, $P_s = 92$ bar) up to about $65$ km altitude, where the cloud tops sit and the troposphere meets the stratosphere.
-The atmospheric scale height at the surface is about $16$ km, much larger than Earth's $\sim$8 km, both because the surface temperature is higher (gas molecules are more energetic) and because of the higher mean molecular weight of $\mathrm{CO_2}$ ($M = 44$ g/mol vs $\sim 29$ g/mol for air; the scale height $H = kT/(mg)$ is a competition between these factors).
+The atmospheric scale height at the surface is about $16$ km, much larger than Earth's $\sim$8 km, mainly because the surface temperature is so much higher (gas molecules are more energetic), in spite of the larger mean molecular weight of $\mathrm{CO_2}$ ($M = 44$ g/mol vs $\sim 29$ g/mol for air); the scale height $H = k_B T / (m g)$ is a competition between these factors, and the temperature wins.
 Above the cloud tops the temperature drops with altitude through the mesosphere, then rises again in the thermosphere where solar EUV is absorbed.
 
 The cloud system is one of the most distinctive features of Venus.
@@ -410,7 +410,6 @@ The maintenance of super-rotation against frictional drag at the surface is one 
 ### The runaway greenhouse and how Venus locked into it
 
 We come to the central piece of physics in this lecture: why and how Venus' climate ended up where it is.
-We covered the qualitative mechanism of the runaway greenhouse in {ref}`lecture05` and the silicate-water feedback in {ref}`lecture06`.
 The blackboard derivation in the next subsection makes the argument quantitative, but it helps to state the conclusion first.
 
 A planet with surface water and an atmospheric absorber (water vapour itself, in the simplest case) has a feedback loop: warming raises the water vapour concentration via the Clausius-Clapeyron relation, which strengthens the greenhouse effect, which warms the surface further, and so on.
@@ -490,8 +489,8 @@ $$ (eq:saturation-pressure)
 with $p_{\mathrm{ref}} = 611$ Pa and $T_{\mathrm{ref}} = 273$ K (the triple point of water).
 
 **Step 1: The IR optical depth and the photosphere temperature.**
-The outgoing longwave radiation emerges from a thermal photosphere, defined as the level where the IR optical depth, integrated downward from the top of the atmosphere, reaches roughly unity ($\tau \sim 2/3$ in the Eddington approximation).
-For a vertically uniform absorption coefficient $\kappa$, the photosphere is located at column density $N_{\mathrm{phot}} \sim 1/\kappa$.
+The outgoing longwave radiation emerges from a thermal photosphere, defined as the level where the IR optical depth, integrated downward from the top of the atmosphere, reaches order unity.
+For a vertically uniform absorption coefficient $\kappa$ (the effective infrared mass absorption coefficient of water vapour, with units of m$^2$/kg), the photosphere lies at column density $N_{\mathrm{phot}} \sim 1/\kappa$.
 
 Because water vapour is a strong IR absorber over a wide range of wavelengths, the photosphere of a water-rich atmosphere is set by the water vapour column density alone.
 At the photosphere, the water vapour pressure is set by Clausius-Clapeyron at the local temperature $T_{\mathrm{phot}}$:
@@ -509,7 +508,7 @@ $$
 T_{\mathrm{phot}} \approx \frac{L/R_v}{\ln(p_{\mathrm{ref}} \kappa / g) + L/(R_v T_{\mathrm{ref}})}
 $$ (eq:photosphere-temperature)
 
-For Earth-like values ($g = 10$ m/s$^2$, $\kappa \sim 10^{-2}$ m$^2$/kg for the relevant water-vapour bands), this gives $T_{\mathrm{phot}} \sim 250\text{--}260$ K.
+For Earth-like values ($g = 10$ m/s$^2$, and a band-averaged $\kappa \sim 5 \times 10^{-2}$ m$^2$/kg representative of the strong rotational and vibrational water-vapour bands), this gives $T_{\mathrm{phot}} \approx 260$ K.
 
 **Step 2: The outgoing longwave radiation.**
 The OLR is approximately the blackbody emission at $T_{\mathrm{phot}}$:
@@ -553,11 +552,11 @@ Once a planet's absorbed stellar flux exceeds this limit, no steady state with l
 The boundary is one-way: there is no thermodynamic path back to the wet state without removing the water from the atmosphere, and the only natural removal mechanism is photodissociation followed by hydrogen escape, which is irreversible on geological timescales.
 ```
 
-The numerical value of the Simpson-Nakajima limit, somewhere around $280\text{--}310$ W/m$^2$, has implications well beyond Venus.
+The numerical value of the Simpson-Nakajima limit, around $280$ W/m$^2$ from the line-by-line calculations of {cite:t}`Goldblatt2013` and consistent with the Kopparapu et al.\ 2013 reanalysis, has implications well beyond Venus.
 It defines the inner edge of the **classical habitable zone** for any star at any age.
-For the present-day Sun, this corresponds to an orbital distance of roughly $0.95\text{--}0.99$ AU, depending on which model is consulted {cite:p}`Kopparapu2013`.
-For a younger Sun (say at $4$ Ga), the inner edge was farther out, perhaps near $1.0$ AU.
-The history of the inner habitable zone edge is therefore moving outward over Solar System history as the Sun brightens, and the question of whether Venus was once inside the habitable zone (and if so, for how long) becomes a question of how the inner edge crossed the orbit of Venus.
+For the present-day Sun, this corresponds to the runaway greenhouse limit at $S_{\mathrm{eff}} = 1.06$ (about $0.97$ AU), with the moist greenhouse limit slightly inside Earth's orbit at $S_{\mathrm{eff}} = 1.015$ (about $0.99$ AU) {cite:p}`Kopparapu2013`.
+For a younger and fainter Sun (say at $4$ Ga, with $L_\star \approx 0.75 L_{\star,\mathrm{today}}$), the inner edge sat closer to the Sun, near $\sim 0.83$ AU.
+The inner habitable zone edge has therefore been moving **outward** over Solar System history as the Sun brightens, and the question of whether Venus was once inside the habitable zone (and if so, for how long) becomes a question of when the receding inner edge crossed the orbit of Venus from the inside.
 
 ```{figure} figures/kopparapu2013_inner_HZ.avif
 :name: fig:kopparapu-HZ
@@ -591,7 +590,7 @@ The **early loss** scenario, championed by {cite:t}`Hamano2013`, assumes that Ve
 Because Venus is closer to the Sun, the absorbed flux is high enough that the atmosphere stays above the Simpson-Nakajima limit indefinitely; the magma ocean never solidifies because the optically thick steam atmosphere prevents efficient heat loss.
 Water vapour photolyses in the upper atmosphere, hydrogen escapes hydrodynamically under the strong EUV flux of the young Sun, and Venus is desiccated within a few hundred million years of its formation.
 On this view, Venus never had liquid surface water, and the present-day desiccation reflects the original failure of the magma ocean to crystallise into a solid surface with a condensed ocean.
-{cite:t}`Hamano2013` quantified this scenario and showed that for water-rich planets at distances less than about $0.78$ AU, the magma ocean phase becomes self-sustaining and the planet becomes a "Type II" world, distinct from the "Type I" worlds (like Earth, at greater distances) that crystallise normally and develop a condensed ocean.
+{cite:t}`Hamano2013` quantified this scenario and showed that for water-rich planets at distances less than about $0.77$ AU, the magma ocean phase becomes self-sustaining and the planet becomes a "Type II" world, distinct from the "Type I" worlds (like Earth, at greater distances) that crystallise normally and develop a condensed ocean.
 
 ```{figure} figures/hamano2013_two_types.avif
 :name: fig:hamano-two-types
@@ -706,7 +705,8 @@ Reproduced from {cite:t}`Gillmann2022`.
 ### The D/H ratio: smoking gun for water loss
 
 Whichever scenario is correct, there is one strong piece of empirical evidence that Venus once had at least $100\times$ more water than it does today: the deuterium-to-hydrogen ratio.
-The D/H ratio in present-day Venusian water vapour is $(1.6 \pm 0.2) \times 10^{-2}$, or roughly $150$ times the terrestrial standard mean ocean water value of $D/H = 1.6 \times 10^{-4}$ {cite:p}`Donahue1982`.
+The original Pioneer Venus mass spectrometer measurement of {cite:t}`Donahue1982` gave $D/H \approx 1.6 \times 10^{-2}$, about $100$ times the terrestrial standard mean ocean water value of $D/H = 1.6 \times 10^{-4}$.
+Subsequent ground-based and orbiter spectroscopy refined the Venusian value upward to about $(2.4 \pm 0.4) \times 10^{-2}$ {cite:p}`deBergh1991`, corresponding to the now widely quoted enrichment factor of $\sim 150$ relative to Earth.
 
 The physical reason is straightforward.
 In hydrodynamic escape (or any escape mechanism in which the energy per particle is comparable to the escape energy), the lighter isotope escapes more efficiently than the heavier one, because the lighter molecules acquire higher thermal velocities for a given temperature.

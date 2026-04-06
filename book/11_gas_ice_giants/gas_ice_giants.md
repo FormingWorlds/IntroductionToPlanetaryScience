@@ -144,7 +144,7 @@ Io's atmosphere is a tenuous, patchy mix of $\mathrm{SO_2}$ sublimating from fro
 :name: fig:io_tidal
 :width: 90%
 
-Comparison of two interior models for Io constrained by Juno gravity science. Left panel: a model **without** a global magma ocean, with an elastic lithosphere and a mantle. The measured tidal Love number $k_2$ rules this model out. Right panel: a model **with** a global magma ocean below a $\sim$50 km lithosphere. The dotted curves show $k_2$ as a function of dissipation parameter $Q$. {cite:t}`Park2024` instead conclude that the data **preclude a shallow magma ocean** of the kind invoked in earlier interpretations and require a more rigid, mostly solid mantle. The figure illustrates how external gravity measurements can directly distinguish solid from liquid interiors. Reproduced from {cite:t}`Park2024`.
+Comparison of two interior models for Io constrained by Juno gravity science. Left panel: a model **with** a global shallow magma ocean below a $\sim$50 km lithosphere. The measured Juno tidal Love number $k_2$ rules this model out. Right panel: a model **without** a global magma ocean, with an elastic lithosphere over a mostly solid silicate mantle. The dotted curves show $k_2$ as a function of dissipation parameter $Q$. {cite:t}`Park2024` conclude that the data **preclude a shallow magma ocean** of the kind invoked in earlier interpretations and require the rigid, mostly solid mantle of the right panel. The figure illustrates how external gravity measurements can directly distinguish solid from liquid interiors. Reproduced from {cite:t}`Park2024`.
 ```
 
 Earlier interpretations of Galileo magnetometer data had argued for a global, shallow magma ocean below Io's lithosphere.
@@ -283,7 +283,7 @@ Both gas giants therefore appear to have heavy elements distributed across an ex
 Two further peculiarities of Saturn deserve mention.
 First, Saturn's rotation period is famously hard to measure.
 There is no solid surface to give a fiducial spin, and unlike Jupiter, Saturn's magnetic dipole is almost perfectly aligned with the rotation axis, so that radio emissions are not modulated at a clean planetary rotation period.
-The current best value, $10$ h $33$ min $38$ s, comes from Cassini ring seismology rather than from radio measurements {cite:p}`Mankovich2021`.
+The current best value, $10$ h $33$ min $38$ s, comes from Cassini ring seismology rather than from radio measurements {cite:p}`Mankovich2019`.
 Second, the near-perfect axial alignment of Saturn's magnetic dipole is itself a problem.
 A dynamo generally requires some asymmetry between the rotation and magnetic axes to operate (Cowling's anti-dynamo theorem rules out perfectly axisymmetric dynamos), so the question is how Saturn's dynamo manages to produce such a clean dipole.
 The leading explanation is that the convecting metallic hydrogen layer is overlain by a stably stratified helium-rain region that filters out non-axisymmetric magnetic field components before they reach the planet's surface.
@@ -298,21 +298,21 @@ Infrared imaging by Cassini's CIRS and VIMS instruments revealed a much richer a
 :name: fig:saturn_hexagon
 :width: 75%
 
-Saturn's hexagonal polar jet imaged by Cassini. The hexagon, centred at about 78 N, is a standing Rossby wave on a strong eastward zonal jet and has been continuously present since Voyager first observed it in 1981. Image credit: NASA/JPL-Caltech/Space Science Institute.
+Saturn's hexagonal polar jet imaged by Cassini. The hexagon, centred at about $78^\circ$ N, is a standing Rossby wave on a strong eastward zonal jet and has been continuously present since Voyager first observed it in 1981. Image credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
-The most distinctive feature of Saturn's atmosphere is the **hexagonal jet stream** at $\sim$78 N latitude, a six-sided standing wave that has been present continuously since Voyager observed it in 1981 and was mapped in detail by Cassini through its 13-year tour.
+The most distinctive feature of Saturn's atmosphere is the **hexagonal jet stream** at $\sim 78^\circ$ N latitude, a six-sided standing wave that has been present continuously since Voyager observed it in 1981 and was mapped in detail by Cassini through its 13-year tour.
 The hexagon is interpreted as a Rossby wave locked to a strong eastward zonal jet whose meridional shear sets the wavenumber of the standing pattern; laboratory experiments with rotating-tank flows can reproduce stable polygonal jet patterns in similar conditions, although the exact physical mechanism that selects six rather than five or seven sides is not yet definitively understood.
 
 Saturn's equatorial jet is the fastest in the solar system, with peak speeds reaching $\sim$400 m s$^{-1}$, more than double the equivalent on Jupiter.
 The "Great White Storms" are massive convective outbursts that erupt every $\sim$30 years (one Saturnian year), span thousands of kilometres, and circle the planet within a few months before dissipating.
 The most recent, in 2010--2011, was studied in detail by Cassini and produced unique constraints on the moist convection of water vapour at depth.
-Saturn's modest 26.7 axial tilt also imposes strong seasonal forcing, and the planet's high northern latitudes have brightened markedly over the Cassini mission as they emerged from polar winter.
+Saturn\'s modest $26.7^\circ$ axial tilt also imposes strong seasonal forcing, and the planet's high northern latitudes have brightened markedly over the Cassini mission as they emerged from polar winter.
 
 ### Saturn's rings: structure and composition
 
 Saturn's rings are the most spectacular ring system in the solar system and have been a defining feature of telescopic astronomy since Galileo first noticed Saturn's "ears" in 1610 and Christiaan Huygens correctly interpreted them as a flat disk in 1655.
-The main ring system extends from the inner D ring at $\sim$67{,}000 km from Saturn's centre out to the F ring at $\sim$140{,}000 km, which puts it almost entirely interior to Saturn's classical Roche limit (derived in the next section).
+The main ring system extends from the inner D ring at $\sim$67{,}000 km from Saturn's centre out to the F ring at $\sim$140{,}000 km. This places the brighter A, B, and C rings well inside the classical fluid Roche limit derived below ($\sim$126{,}000 km), while the outer A ring and the F ring sit just beyond it; the outer A-ring edge is held sharp by a 7:6 mean-motion resonance with Janus rather than by tidal physics alone.
 The seven main rings are labelled in order of discovery (D, C, B, A, F, G, and E), with the most prominent being the bright A and B rings separated by the Cassini Division at $\sim$118{,}000 km.
 
 ```{figure} figures/saturn_cassini_division.avif
@@ -444,7 +444,7 @@ The rigid-body case underestimates the critical distance because it ignores the 
 For most realistic cases, including ice or rock satellites, the answer lies between the two extremes.
 
 **Application to Saturn's rings.**
-Saturn has $R_p = 58{,}232$ km and $\rho_p = 687$ kg m$^{-3}$.
+Saturn has equatorial radius $R_p = 60{,}268$ km, but for the Roche calculation we use the volumetric mean radius $R_p \approx 58{,}232$ km (which is the spherical-equivalent value entering the bulk-density definition $\rho_p = M_p/(4\pi R_p^3/3) = 687$ kg m$^{-3}$).
 For ring particles dominated by water ice, $\rho_s \approx 1000$ kg m$^{-3}$, so
 
 $$
@@ -587,7 +587,7 @@ The terminology is misleading because at the conditions inside Uranus and Neptun
 
 Both planets have been visited by exactly one spacecraft, Voyager 2, which flew past Uranus in January 1986 and Neptune in August 1989 {cite:p}`StoneUranus1986,Stone1989`.
 There has been no return mission to either planet in the 35--40 years since, making the ice giants the most under-explored of the major planets.
-Almost everything we know in detail about their atmospheres, magnetic fields, and satellite systems comes from those two brief flybys, supplemented by ground-based and Hubble Space Telescope observations and, more recently, by the unique capabilities of JWST {cite:p}`Hammel2023,DePater2023`.
+Almost everything we know in detail about their atmospheres, magnetic fields, and satellite systems comes from those two brief flybys, supplemented by ground-based and Hubble Space Telescope observations and, more recently, by the unique capabilities of JWST {cite:p}`Hammel2021,DePater2022`.
 
 ### Uranus: the tilted planet
 
@@ -598,9 +598,9 @@ Almost everything we know in detail about their atmospheres, magnetic fields, an
 Uranus as seen by Voyager 2 in 1986. The planet appeared remarkably featureless at the time of the flyby, a consequence of being seen near solstice with one pole pointing nearly toward the Sun. Image credit: NASA/JPL-Caltech.
 ```
 
-Uranus has the most extreme axial tilt of any planet: $97.8$, which means the rotation axis lies almost in the orbital plane.
+Uranus has the most extreme axial tilt of any planet: $97.8^\circ$, which means the rotation axis lies almost in the orbital plane.
 The pole therefore alternately points toward and away from the Sun over the planet's 84-year orbit, producing extreme seasonal cycles in which each pole experiences 42 years of continuous daylight followed by 42 years of darkness.
-The cause of the tilt is most plausibly a giant impact during the late stages of Uranus's formation, during which a body of order one Earth mass struck the proto-Uranus and torqued its spin axis nearly $90$ from the orbital normal.
+The cause of the tilt is most plausibly a giant impact during the late stages of Uranus's formation, during which a body of order one Earth mass struck the proto-Uranus and torqued its spin axis nearly $90^\circ$ from the orbital normal.
 The challenge for any such scenario is to reconcile the impact with the fact that Uranus's regular satellites all orbit in the planet's equatorial plane: the same impact must have spun up an equatorial debris disk from which the satellites later re-accreted.
 {cite:t}`Morbidelli2012` explored this scenario in detail and showed that a single oblique impact early in the planet's history is consistent with the present satellite system if the disk was massive enough to dynamically reset the satellite plane.
 
@@ -621,7 +621,7 @@ A cyclonic feature near Uranus's north pole detected by ground-based radio obser
 At the time of the Voyager flyby, Uranus appeared remarkably featureless, with only a few faint cloud bands visible after extreme image processing.
 This was partly an accident of timing: in 1986 the south pole was pointing nearly directly at the Sun, and the planet was near solstice.
 As Uranus has progressed toward equinox over the past two decades, ground-based observatories and Hubble have recorded increasing levels of cloud activity, including a major storm system that erupted in 2014 and was so bright it was detected by amateur astronomers.
-JWST observations of Uranus in 2023 revealed a vivid ring system and a polar cap structure with much more atmospheric texture than Voyager saw {cite:p}`DePater2023`.
+JWST observations of Uranus in 2023 revealed a vivid ring system and a polar cap structure with much more atmospheric texture than Voyager saw {cite:p}`DePater2022`.
 
 The most puzzling aspect of Uranus is its low internal heat flow.
 Voyager IRIS measurements established that Uranus radiates only about 1.06 times the absorbed solar flux, far less than the other three giants {cite:p}`Pearl1990`.
@@ -672,8 +672,8 @@ Superionic ice is electrically conducting and can sustain a planetary dynamo eve
 Numerical simulations suggest that a thin convecting shell of superionic and ionic fluid can produce magnetic fields with the unusual multipolar, off-axis structure observed at Uranus and Neptune {cite:p}`Soderlund2020`.
 
 The magnetic fields of the ice giants are arguably the strangest in the solar system.
-At Uranus, the magnetic dipole is tilted $\sim$59 from the rotation axis and is offset from the planet's centre by about a third of the planetary radius.
-At Neptune, the dipole is tilted $\sim$47 and is similarly offset {cite:p}`Connerney1991`.
+At Uranus, the magnetic dipole is tilted $\sim 59^\circ$ from the rotation axis and is offset from the planet's centre by about a third of the planetary radius.
+At Neptune, the dipole is tilted $\sim 47^\circ$ and is similarly offset {cite:p}`Connerney1991`.
 Both planets show field morphologies dominated by quadrupole and higher-order components, very different from the dipole-dominated fields of Jupiter and Saturn.
 The leading explanation is that the dynamo source region in an ice giant is a thin shell of conducting fluid (the superionic / ionic ice region) rather than a deep convecting core, and that this thin-shell geometry naturally produces multipolar fields.
 The observed asymmetries impose strong constraints on the radial extent of the dynamo region and on its rotation profile, but a quantitative match to the data has yet to be achieved without free parameters.
@@ -681,7 +681,7 @@ The observed asymmetries impose strong constraints on the radial extent of the d
 ### Triton
 
 Triton, the largest moon of Neptune, is a captured Kuiper Belt object and the only large moon in the solar system in a retrograde orbit around its parent planet.
-Its orbit is also strongly inclined ($\sim 157$ relative to Neptune's equator).
+Its orbit is also strongly inclined ($\sim 157^\circ$ relative to Neptune's equator).
 The capture was probably accomplished early in the solar system's history, perhaps when Triton was part of a binary that was disrupted by a close passage near Neptune {cite:p}`Agnor2006`.
 
 ```{figure} figures/triton_map.avif
@@ -729,7 +729,7 @@ Long-exposure forward-scattered view of Neptune's rings showing the full ring sy
 
 Both ice giant ring systems are dominated by dark, carbon-rich material, in contrast to Saturn's bright water ice particles.
 The reasons for the compositional difference are not fully understood, but probably reflect a different origin: ice giant rings may form from the disruption of small inner moons rather than from a large external source.
-JWST observations of both systems in 2023 revealed previously undetected fine structure in the rings of both planets and detected several new small inner moons {cite:p}`DePater2023`.
+JWST observations of both systems in 2023 revealed previously undetected fine structure in the rings of both planets and detected several new small inner moons {cite:p}`DePater2022`.
 
 
 ## Part 3: Comparative payoff and exploration frontier
