@@ -394,19 +394,65 @@ Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–
   - Slide B (direct imaging of Earth analogues, 2030s–2040s): HWO (NASA, ~6 m coronagraph, ~25 nearby sun-like stars), LIFE (ESA concept, mid-IR nulling interferometer), ELT/GMT/TMT (ground-based, first light 2028–2030s)
 - Open-ended question: what combination of evidence would constitute convincing life detection? Forward reference to L14
 
-### Lecture 14: Synthesis — Solar System in Context & Astrobiology
+### Lecture 14: Synthesis, Solar System in Context & Astrobiology
 
-- Our solar system as one planetary system among many: what is typical, what is unusual?
-- Planet formation theory meets observations: successes and open questions
-- Habitability as a systems property: star, orbit, planet, atmosphere, interior coupling
-- **Blackboard derivation (~10 min):** Derive the habitable zone boundaries — from L_★ = 4πd²F and the condition that surface temperature allows liquid water, obtain the inner and outer HZ distances as a function of stellar luminosity, and compare for G, K, and M dwarfs
-- Water in the universe: origin, delivery mechanisms, and distribution
-- Astrobiology: requirements for life, extremophiles, biosignature gases
-- Solar system targets for life detection: Mars, Europa, Enceladus, Titan
-- Exoplanet targets and future missions: HWO, LIFE, ground-based ELTs
-- Open questions and frontiers in planetary science
-- Course synthesis: connecting formation to present-day diversity
-- Recent advances: new constraints on habitable zone boundaries from 3D climate models, biosignature false-positive debates, upcoming mission landscape (HWO, LIFE, Dragonfly), and the latest results connecting solar system and exoplanet science
+Capstone synthesis lecture. Unlike L9–L13, the structure is integration-first rather than object-first: solar system in exoplanet context (Part 1), habitability as a coupled systems property (Part 2), astrobiology and the search for life (Part 3), and a course wrap-up.
+
+**Part 1: The solar system in the exoplanet context**
+
+- Recap the course thread: physical processes shape planetary outcomes, and the same processes operate everywhere
+- Solar system overlaid on the exoplanet period-radius diagram (dedicated slide)
+- Where the solar system is typical (rocky inner / giant outer / icy outermost) vs atypical (no super-Earth or sub-Neptune, wide low-e giants, no hot giants, irregular spacing, no resonant chain)
+- Formation theory successes (disk migration → hot Jupiters, pebble accretion → giant cores, NC–CC → reservoir separation, Nice + Grand Tack → architecture) vs open questions (radius valley mechanism, super-Earth vs sub-Neptune pathway, Jupiter timing, why no super-Earth here)
+- "Is the solar system rare?" → unanswerable until Gaia DR4/DR5, PLATO, and longer RV baselines complete the long-period + small-planet survey
+
+**Part 2: Habitability as a coupled systems property**
+
+- Stack of necessary couplings: star, orbit, planet, atmosphere, interior, surface/tectonics, biosphere — each level necessary, not sufficient; coupling is what makes it a systems property
+- **Dedicated habitability coupling diagram slide**: bidirectional arrows between star, orbit, interior, surface, atmosphere, biosphere; each arrow corresponds to a process from L1–L13
+- HZ is not a line: Earth–Venus divergence (recap L9) + history-dependent exoplanet HZ (recap L13); trajectories matter more than snapshots
+- Tectonic regime + carbonate–silicate thermostat (recap L6/L7/L9); plate vs stagnant lid; open question whether plate tectonics is the only viable long-term thermostat
+- Magnetic field as gatekeeper (recap L4/L10); Mars case study; not strictly required but shifts the escape balance
+- **Water delivery + planetary evolution** (revised framing per Lichtenberg in prep / inner-solar-system review): water inventory of inner SS bodies is set primarily by **internal evolution**, not by delivery budget alone. Mechanisms that matter:
+  - Magma ocean partitioning between mantle and atmosphere
+  - Atmospheric escape during the magma ocean phase (Hamano et al. 2013, recap L9)
+  - Mantle–atmosphere exchange under plate tectonics
+  - Tectonic regime: stagnant-lid worlds drift one-way
+  - Stellar evolution (especially M dwarf pre-MS phase, recap L13)
+- Earth, Venus, Mars likely received broadly similar volatile inventories; present differences reflect what each body did with them under different boundary conditions
+- D/H from L12 is therefore a constraint on **delivery + processing combined**, not on delivery alone
+- **Drake equation**: present the heuristic factorisation, then **be very critical** of its limitations:
+  - Factors are not independent
+  - Most factors are unconstrained by orders of magnitude
+  - Treats a contingent non-equilibrium process as a steady-state pipeline
+  - Implicit single-life-type / single-star-type assumption
+  - Anthropic selection effects in our only data point
+  - It is a framing tool, not an estimator
+- **Fermi paradox**: presented as a question, not an answer; possible resolutions listed (rare-life, rare-intelligence, great filter ahead, detection threshold, zoo) without endorsement
+
+**Blackboard derivation (~10 min):** Habitable zone boundaries from L★ = 4πd²F. Equilibrium temperature for fast-rotating planet, then inner edge from Simpson–Nakajima runaway greenhouse limit (recap L9) and outer edge from maximum CO₂ greenhouse. Solve for d_in and d_out; compare HZ for G, K, M dwarfs. Key insight: the HZ is a stellar-mass-dependent strip in orbital space; real habitability needs the boundary conditions the 1D HZ ignores.
+
+**Part 3: Astrobiology and the search for life**
+
+- What is life? Working definition (self-replicating, metabolising, evolving chemical system); operational definition is the one that lets us search; carbon + water as working baseline
+- Extremophiles: thermophiles, psychrophiles, acidophiles, halophiles, radiation-resistant, desiccation-tolerant; classical HZ may be too restrictive
+- **Origin of life on Earth** (kept in, presented honestly as unsolved): RNA world, metabolism-first / submarine vents, surface warm ponds, panspermia; earliest evidence ~3.5 Ga; honest framing that we do not know how, when, where, or how easily life originates
+- Biosignatures: gases (O₂, O₃, CH₄, N₂O, DMS), disequilibrium combinations, surface "red edge", morphological + isotopic signatures, temporal variability
+- False positives revisited (inverse-problem framing from L13)
+- **Solar system targets for life detection:**
+  - Mars: past habitability established, present uncertain; MSR re-baselining
+  - Europa: Europa Clipper arrival 2030
+  - Enceladus: Orbilander concept
+  - Titan: Dragonfly arrival 2034
+  - **Venus cloud layer + phosphine**: kept in, but **be sceptical as for K2-18 b DMS** — the data are at the edge of sensitivity, the molecular ID is contested, plausible abiotic explanations exist; pedagogical point identical to DMS
+- Exoplanet life-detection strategy: single-snapshot atmospheric detection insufficient (K2-18 b lesson); needs multi-line, multi-target campaign; HWO + LIFE designed for this; earliest plausible robust detection in the 2040s
+
+**Course wrap-up**
+
+- Five biggest things learned: formation as physical process, interiors as heat engines, atmospheres as evolving systems, habitability as coupled, solar system as one example
+- Five biggest open questions: origin of life, radius valley, Jupiter timing, Mars habitability history, solar system rare or typical
+- Next decade timeline (now–2030, 2026–2030, 2030s, 2040s)
+- Final framing: planetary science has become the science of comparative climate, interior, and life-hosting trajectories; the frontier is moving fast
 
 ---
 
@@ -566,7 +612,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 11 | Gas & ice giants | Outline drafted | Medium |
 | 12 | Meteorites, asteroids, minor planets & comets | Outline drafted | Medium |
 | 13 | Exoplanets | Outline drafted | Medium |
-| 14 | Synthesis & astrobiology | Not started | Low |
+| 14 | Synthesis & astrobiology | Outline drafted | Low |
 
 **Priority rationale:** Lectures 1–8 cover foundational topics needed before planet-specific lectures; Lectures 9–13 build on these; Lecture 14 synthesizes the full course.
 
