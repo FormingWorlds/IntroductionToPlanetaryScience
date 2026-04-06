@@ -60,14 +60,15 @@ The cycle's timescale to equilibrate atmospheric $\mathrm{CO_2}$ in response to 
 Without an active subduction system, the sink half of the cycle stops working, and the carbon released from the interior accumulates in the atmosphere indefinitely.
 Holding this thought is essential for understanding Venus, where there is no observed subduction and no observed carbonate sink.
 
-```{figure} figures/lammer2018_plate_tectonics_systems.avif
-:name: fig:lammer-pt-systems
-:width: 80%
+```{figure} figures/honing2021_carbon_cycle_diagram.avif
+:name: fig:honing-carbon-cycle
+:width: 85%
 :align: center
 
-System diagrams contrasting the fully coupled climate-tectonic system of {\bf Earth} (left, top) with the open-loop system of Venus and Mars (right, top), and the geological timeline of the proposed onset of plate tectonics on Earth (bottom panel; references compiled in {cite:t}`Lammer2018`).
-On Earth, surface and subsurface weathering, subduction, regassing, and an efficient convecting mantle are all closed by the magnetic dynamo and the biosphere; on Venus and Mars the loop is broken because subduction is absent.
-Reproduced from {cite:t}`Lammer2018`.
+Schematic of the carbon cycle on a stagnant-lid Venus from {cite:t}`Honing2021`.
+**Left:** the three carbon reservoirs (mantle, crust, atmosphere) are coupled by mantle degassing (volcanism), surface weathering of fresh basaltic crust, and decarbonation of buried carbonate when the crust heats up.
+**Right:** the destabilising positive feedback loop. Increasing surface temperature drives a deeper decarbonation depth, which boosts atmospheric $\mathrm{CO_2}$, which raises the surface temperature further. Without subduction, there is no return leg to the mantle to break the loop.
+Reproduced from {cite:t}`Honing2021`.
 ```
 
 ### Earth's magnetic field and its consequences
@@ -193,15 +194,6 @@ The mechanism is oxygenic photosynthesis by cyanobacteria, which had already bee
 The trigger for the rise is debated (changes in oxygen sinks, in continental weathering, in volcanic outgassing redox state, or in the burial of organic carbon are all candidates), but the consequences are unmistakable in the rock record: banded iron formations disappear, redbeds appear, and the biosphere acquires the oxidising redox state that has dominated ever since.
 A second oxygenation step in the late Neoproterozoic raised $\mathrm{O_2}$ to near-modern values just before the Cambrian explosion of complex animal life.
 
-```{figure} figures/lammer2018_earth_atmospheric_history.avif
-:name: fig:lammer-earth-atm
-:width: 80%
-:align: center
-
-Schematic history of Earth's atmospheric composition from the Hadean magma ocean to the present.
-The early steam atmosphere (water vapour, light gases) gives way to a $\mathrm{CO_2}$-dominated atmosphere as carbon weathers into carbonates and the oceans condense; biological activity (cyanobacteria, then complex life) progressively raises atmospheric $\mathrm{O_2}$ during and after the Great Oxidation Event near $2.0$ Ga; the magnetic field (dashed grey) is established during the early-mid Hadean.
-Reproduced from {cite:t}`Lammer2018`.
-```
 
 Carbonate platforms, formed primarily by the calcification of marine organisms over the past $\sim$540 Myr, represent a substantial planetary $\mathrm{CO_2}$ sink.
 On Earth, the total carbon stored in carbonate rocks is roughly $1.6 \times 10^{20}$ kg, equivalent to a $\mathrm{CO_2}$ partial pressure of around $60\text{--}90$ bar if it were all returned to the atmosphere.
@@ -284,17 +276,6 @@ Earth's bimodal pattern (deep ocean basins vs. continents) is conspicuously abse
 Reproduced from {cite:t}`Smrekar2018`.
 ```
 
-```{figure} figures/smrekar2018_hypsometry.avif
-:name: fig:hypsometry
-:width: 80%
-:align: center
-
-Hypsometric curves (cumulative frequency of surface area as a function of elevation) for {\bf Earth} (left) and {\bf Venus} (right), with elevation referenced to a $2$-km equivalent compensation level.
-Earth shows the characteristic bimodal distribution of ocean basins ($\sim -4$ km) and continents ($\sim 0$ km).
-Venus shows a single dominant peak (volcanic plains) with a narrow tail of highlands.
-This is the cleanest visual evidence that Venus lacks an Earth-like plate tectonic regime.
-Reproduced from {cite:t}`Smrekar2018`.
-```
 
 The Venus surface is dominated by **volcanic plains**, which cover about $80\%$ of the planet, formed from successive flood-basalt eruptions over hundreds of millions of years.
 Embedded in these plains are several distinctive terrain types unique to Venus or unusually prominent here:
@@ -328,16 +309,6 @@ The **steady-state** model, by contrast, proposes that resurfacing has been cont
 The crater statistics alone cannot distinguish these decisively because the spatial distribution of craters is consistent with random within statistical uncertainty.
 The latest modelling and the structural analysis of crater rims suggest that something between these two extremes (perhaps episodic regional resurfacing) is most likely {cite:p}`Smrekar2018,Widemann2023`.
 
-```{figure} figures/widemann2023_tessera_emissivity.avif
-:name: fig:tessera-emissivity
-:width: 70%
-:align: center
-
-VIRTIS near-infrared emissivity overlay on a Magellan SAR backscatter image of an Alpha Regio tessera plateau on Venus (yellow regions are higher emissivity, blue regions are lower).
-The tesserae appear as low-emissivity blue patches consistent with felsic or silica-rich compositions, which on Earth form only in the presence of liquid water.
-If this interpretation is borne out by future high-resolution spectroscopy from VERITAS and EnVision, it provides direct evidence that early Venus once had liquid surface water.
-Reproduced from {cite:t}`Widemann2023`.
-```
 
 ### Venus interior and tectonic regime
 
@@ -360,13 +331,13 @@ On this view, Venus may once have had Earth-like mobile-lid tectonics (when its 
 
 ```{figure} figures/smrekar2018_venus_tectonic_evolution.avif
 :name: fig:venus-tectonic-evol
-:width: 80%
+:width: 85%
 :align: center
 
-Comparative thermal evolution scenarios for Venus from coupled thermal-history models, showing volcanic production rate, mantle temperature, and surface temperature for three candidate tectonic regimes: **stagnant lid** (left), **mobile lid** (centre), and **episodic lid** (right).
-The episodic lid scenario produces large pulses of volcanism and resurfacing separated by quiet intervals, and is consistent with the observed crater density and the inference of relatively young plains.
-The choice between these scenarios is the central open question for Venus interior dynamics.
-After {cite:t}`Smrekar2018`, modified from Breuer et al. 2010.
+Comparative thermal evolution of Venus over $\sim$4.5 Gyr from a numerical model that switches between tectonic regimes, showing (top) volcanic production rate in km$^3$/Myr, (middle) mantle potential temperature, and (bottom) surface temperature.
+The model traverses successive **stagnant-lid**, **mobile-lid**, **stagnant-lid**, and **episodic-lid** intervals (vertical bars).
+The episodic-lid phase produces large pulses of volcanism and resurfacing separated by quiet intervals and is consistent with the observed crater density on present-day Venus.
+After {cite:t}`Smrekar2018`.
 ```
 
 There is a related possibility, the **episodic-lid** or catastrophic-overturn model, in which the lithosphere is normally stagnant but becomes unstable on long timescales (every $\sim$500 Myr) and undergoes a brief episode of global subduction and volcanism, after which it returns to stagnant-lid behaviour.
@@ -606,24 +577,29 @@ Reproduced from {cite:t}`Hamano2013`.
 
 ```{figure} figures/hamano2013_typeI_evolution.avif
 :name: fig:hamano-typeI
-:width: 60%
+:width: 70%
 :align: center
 
-Cartoon evolution of a Type I planet (Earth-like) on solidification of its magma ocean, from {cite:t}`Hamano2013`.
-The early steam atmosphere is rapidly drawn down as the magma ocean crystallises, the cooling surface allows water vapour to condense, and a permanent surface ocean is established within a few million years.
+Typical evolution of a Type I planet (placed at $0.7$ AU but with low net stellar radiation) from {cite:t}`Hamano2013`.
+**Top panel:** size of the magma ocean (green), atmospheric water (red), and water in the solid mantle (blue), as fractions of the initial water reservoir.
+**Bottom panel:** outgoing planetary radiation (red) and net incoming stellar radiation (green dashed), with the asymptotic stratospheric and tropospheric radiation limits (dotted lines).
+The magma ocean solidifies in a few Myr; the steam atmosphere then condenses to form a permanent surface ocean.
 Type II planets (closer to the star) never reach this end-state because the absorbed flux exceeds the runaway limit.
 Reproduced from {cite:t}`Hamano2013`.
 ```
 
-```{figure} figures/lammer2018_magma_ocean_degassing.avif
-:name: fig:magma-ocean
-:width: 75%
+```{figure} figures/nikolaou2019_magma_ocean_evolution.avif
+:name: fig:nikolaou-magma
+:width: 85%
 :align: center
 
-Schematic of magma ocean degassing during the early evolution of a rocky planet: a turbulent magma ocean below an optically thick outgassed steam atmosphere ($\mathrm{H_2O}$, $\mathrm{CO_2}$, $\mathrm{N_2}$, methane, ammonia).
-Over time the surface cools, the magma ocean crystallises, and EUV photodissociation in the upper atmosphere drives hydrogen escape.
-For a Type I planet ({cite:t}`Hamano2013`), the magma ocean crystallises within Myr, the steam atmosphere condenses, and a stable ocean forms; for a Type II planet (Venus-like), the magma ocean phase is prolonged and the steam atmosphere progressively photolyses and desiccates.
-Reproduced from {cite:t}`Lammer2018`.
+Time evolution of a crystallising magma ocean coupled to its outgassed steam atmosphere from {cite:t}`Nikolaou2019`, for three end-member volatile budgets (short-term/poor, short-term/rich, long-term/rich).
+**Panel A:** potential temperature $T_p$ (solid) and surface temperature $T_s$ (dashed) drop from $\sim 4000$ K to $\sim 1500$ K over $\sim 10^6$ years.
+**Panel B:** depth of the molten layer in km.
+**Panel C:** convective heat flux through the surface in W/m$^2$.
+**Panel D:** Rayleigh number of the magma ocean.
+The volatile-rich, long-term case persists for $\sim 10^7$ years before the surface freezes, giving the steam atmosphere ample time to photolyse and lose hydrogen to space, the foundation of the early-loss scenario for Venus.
+Reproduced from {cite:t}`Nikolaou2019`.
 ```
 
 The **late loss** scenario, championed by {cite:t}`Way2016`, takes the opposite view.
@@ -690,16 +666,15 @@ Both end at the present state of Venus, and current data cannot distinguish them
 Reproduced from {cite:t}`Gillmann2022`.
 ```
 
-```{figure} figures/gillmann2022_coupled_evolution.avif
-:name: fig:gillmann-coupled
+```{figure} figures/honing2021_reference_evolution.avif
+:name: fig:honing-reference
 :width: 95%
 :align: center
 
-Coupled magma-ocean atmosphere-interior evolution simulations from {cite:t}`Gillmann2022`, comparing a "hot start" scenario (panels a, c, e, g) with a "cold start" scenario (panels b, d, f, h).
-Rows show, top to bottom: mantle and surface temperatures; liquid water depth on the surface; partial pressures of $\mathrm{O_2}$, $\mathrm{H_2O}$, and $\mathrm{CO_2}$; and trace gas masses ($^{40}$Ar, $^{4}$He) compared to modern values.
-The hot-start scenario produces no surface ocean at any time; the cold-start scenario produces a surface ocean lasting up to $\sim 10^9$ yr before runaway desiccation.
-Both reach the same dry endpoint, illustrating the fundamental degeneracy of the early Venus question.
-Reproduced from {cite:t}`Gillmann2022`.
+Reference scenario for the coupled interior-atmosphere evolution of a stagnant-lid Venus from {cite:t}`Honing2021`.
+Panels show, as functions of time after solidification: (a) carbon reservoirs in the atmosphere, crust, and combined system; (b) surface temperature, with and without weathering; (c) carbon fluxes (mantle degassing, weathering, decarbonation); (d) atmospheric water vapour pressure; (e) lid, crustal, and decarbonation depths; (f) mantle, lid, and crust temperatures.
+Surface weathering keeps the planet temperate for $\sim 0.9$ Gyr; once water is lost, decarbonation drives the runaway accumulation of $\mathrm{CO_2}$ to a Venus-like end state.
+Reproduced from {cite:t}`Honing2021`.
 ```
 
 ### The D/H ratio: smoking gun for water loss
@@ -717,28 +692,6 @@ This is the strongest direct observational constraint we have that Venus has los
 What it does not tell us is when the loss happened: hydrogen escape rates change over time as the EUV flux of the Sun decreases, and the integrated escape history can equally well be early (during a magma-ocean phase) or distributed over billions of years.
 Future noble gas measurements, particularly $^{36}$Ar/$^{38}$Ar and Xe isotopic ratios from a descent probe (planned by DAVINCI), are expected to discriminate between these histories, because different escape regimes leave different fractionation signatures across the noble gas series.
 
-```{figure} figures/gillmann2022_h_o_escape_rates.avif
-:name: fig:gillmann-escape
-:width: 75%
-:align: center
-
-Present-day measured escape rates of hydrogen ($\mathrm{H^+}$, orange) and oxygen ($\mathrm{O^+}$, green) from Venus during solar minimum (top) and solar maximum (bottom) conditions, in units of $10^{24}$ ions per second.
-The H:O escape ratio varies from $2.6:1$ at solar minimum to $1.1:1$ at solar maximum.
-The fact that hydrogen escapes faster than the stoichiometric ratio of $2:1$ (the ratio in $\mathrm{H_2O}$) implies that the residual atmosphere becomes enriched in oxygen, which must be sequestered in the crust or accumulated as a thin oxygen atmosphere; this is one of the key constraints on the water-loss history.
-Reproduced from {cite:t}`Gillmann2022`.
-```
-
-```{figure} figures/gillmann2022_water_evolution_envelope.avif
-:name: fig:gillmann-water
-:width: 80%
-:align: center
-
-Global equivalent water layer depth as a function of time after CAI (calcium-aluminium-rich inclusion) formation for several Venus evolution scenarios from {cite:t}`Gillmann2022`.
-The black "escape envelope" curve represents the maximum water inventory that can be supported against atmospheric escape at each time.
-Different model curves (red, blue, cyan) explore different assumptions about the late-accretion contribution of carbonaceous chondrite material (0%, 10%, 15% CC).
-All scenarios converge to a present-day target value of order $10^{-2}$ m (a few centimetres of equivalent ocean), independent of the initial water content.
-Reproduced from {cite:t}`Gillmann2022`.
-```
 
 ### Volcanic activity today: is Venus alive?
 
@@ -756,16 +709,6 @@ The natural question then is: is this active volcanism comparable to Earth's vol
 This question is central to the carbon and sulfur balance of Venus, because the volcanic source has to be in steady state (or near it) with whatever sinks operate today, and the only known sinks for $\mathrm{CO_2}$ and $\mathrm{SO_2}$ on Venus are the weathering reactions of surface basalts and the chemistry of the cloud-deck region.
 The rates of these reactions are uncertain by orders of magnitude, and pinning them down is one of the main scientific objectives of EnVision and DAVINCI.
 
-```{figure} figures/gillmann2022_trace_gas_equilibria.avif
-:name: fig:gillmann-equilibria
-:width: 80%
-:align: center
-
-Predicted equilibrium concentrations of trace atmospheric gases ($\mathrm{CO_2}$, $\mathrm{SO_2}$, $\mathrm{COS}$) on Venus controlled by mineral-gas equilibria with the surface, as a function of surface temperature and oxygen fugacity, from {cite:t}`Gillmann2022`.
-The intersection of the present surface conditions (vertical line) with the calculated equilibrium curves indicates whether the atmosphere is in chemical equilibrium with the surface or whether it is being driven out of equilibrium by ongoing volcanism.
-The current data are consistent with both interpretations and motivate the in-situ measurements planned by DAVINCI.
-Reproduced from {cite:t}`Gillmann2022`.
-```
 
 ## Part 3: Comparative payoff
 
@@ -880,54 +823,11 @@ The noble gas measurements are particularly important: they provide the time-int
 **NASA's VERITAS** (Venus Emissivity, Radio Science, InSAR, Topography, and Spectroscopy) will launch later in the 2020s and will provide global high-resolution radar topography and near-infrared surface emissivity, which will resolve the tessera composition question and constrain the present-day style of mantle convection through high-precision measurement of the moment of inertia and the tidal Love numbers.
 **ESA's EnVision** is expected to launch in $2031$ and combines synthetic-aperture radar at multiple frequencies, atmospheric spectroscopy, and a subsurface radar sounder; its science goals include searching for ongoing volcanism, mapping near-surface water (if any), characterising the radar properties of tessera regions, and measuring the gravity field at unprecedented resolution.
 
-```{figure} figures/widemann2023_venus_mission_strategy.avif
-:name: fig:venus-strategy
-:width: 95%
-:align: center
-
-The Venus mission and science strategy for the 2030s and beyond, illustrating the increasing complexity and capability of planned missions: from radar mapping (Magellan, VERITAS) and orbital reconnaissance (EnVision), through atmospheric descent probes (DAVINCI), aerobot balloons, single landers, and ultimately sample-return concepts.
-Each step builds on the previous one and addresses progressively more ambitious science questions.
-Reproduced from {cite:t}`Widemann2023`.
-```
-
-```{figure} figures/widemann2023_davinci_instruments.avif
-:name: fig:davinci-instruments
-:width: 95%
-:align: center
-
-The DAVINCI mission architecture and payload from {cite:t}`Widemann2023`.
-The carrier and relay imaging spacecraft delivers a descent sphere into Venus' atmosphere, where five science instruments measure noble gas and isotopic composition (VMS, VTLS), atmospheric structure (VASI), surface imaging (VenDI), and oxygen fugacity (VfOx).
-The carrier itself carries near-IR (VISOR) and UV (CUVIS) cameras for flyby remote sensing.
-Reproduced from {cite:t}`Widemann2023`.
-```
-
-```{figure} figures/widemann2023_gravity_anomalies.avif
-:name: fig:venus-gravity
-:width: 95%
-:align: center
-
-Gravity anomalies and gravity gradients revealing buried impact crater "ghosts" on Venus, from {cite:t}`Widemann2023`.
-**Panel (a)** shows the radial component of the gravity gradient over a region of the northern hemisphere, with a circular gravity anomaly (dashed circle) and other narrow lineaments visible.
-**Panels (b)--(d)** show simulated reconstructions of buried impact craters in the same region.
-EnVision will obtain global gravity-gradient maps of comparable resolution that should reveal the buried population of craters predating the most recent volcanic resurfacing.
-Reproduced from {cite:t}`Widemann2023`.
-```
 
 In parallel, theoretical modelling is advancing rapidly: 3D climate models of early Venus {cite:p}`Way2016,Turbet2021`, coupled magma-ocean atmosphere-interior models {cite:p}`Hamano2013,Gillmann2022`, and thermo-chemical models of the long-term atmospheric evolution {cite:p}`Lammer2018,Gillmann2022` are converging on a coherent picture of how the early divergence of Earth and Venus could have happened and what observations would distinguish the remaining alternatives.
 A separate active research front is the search for biosignatures in the Venus cloud layer: the temperature and pressure conditions at $50$-$60$ km altitude are similar to surface Earth conditions, and the question of whether Venus could harbour an aerial biosphere there has been an open one since the original Sagan and Morowitz proposal in $1967$.
 The phosphine controversy of $2020$ ({ref}`lecture06`) brought this question briefly into the spotlight, and although the original detection has been contested, the question itself remains and will be addressed by the new missions.
 
-```{figure} figures/zahnle2007_noble_gas.avif
-:name: fig:zahnle-noble
-:width: 75%
-:align: center
-
-Relative abundances of noble gases (Ne, Ar, Kr, Xe) for Venus, Earth, Mars, carbonaceous chondrites, and the solar abundance, from {cite:t}`Zahnle2007`.
-Venus has substantially higher absolute abundances than Earth or Mars, indicating less efficient atmospheric escape integrated over its history.
-The relative pattern (depleted in Xe relative to Kr and Ar) is similar across the terrestrial planets and resembles meteoritic abundances, suggesting a common chondritic source rather than direct nebular capture.
-Future precise measurements of noble gas isotopic ratios from DAVINCI will tighten these constraints dramatically.
-Reproduced from {cite:t}`Zahnle2007`.
-```
 
 ```{figure} figures/dauphas2017_earth_accreting_material.avif
 :name: fig:dauphas-accretion
@@ -940,28 +840,7 @@ This is the isotopic version of the dichotomy seen in noble gases ({cite:t}`Zahn
 Reproduced from {cite:t}`Dauphas2017`.
 ```
 
-```{figure} figures/lammer2018_venus_atmospheric_history.avif
-:name: fig:lammer-venus-atm
-:width: 85%
-:align: center
 
-Schematic atmospheric history of Venus from $0.1$ to $2.0$ Gyr after formation, on a no-plate-tectonics ("one-plate planet") evolution.
-Early on (left), nebular gases are lost to space, the magma ocean outgases a steam atmosphere, EUV photolyses water, and hydrogen escapes hydrodynamically.
-A fraction of $\mathrm{H_2O}$ may have condensed and formed a transient ocean, but the rising solar flux eventually triggers the runaway greenhouse, leading to renewed water loss and the build-up of $\mathrm{CO_2}$.
-Significant amounts of oxygen left over from $\mathrm{H_2O}$ dissociation react with the hot magma ocean and oxidise the upper mantle and crust.
-Reproduced from {cite:t}`Lammer2018`.
-```
-
-```{figure} figures/zahnle2007_heat_flow_history.avif
-:name: fig:zahnle-heat-flow
-:width: 50%
-:align: center
-
-History of mean heat flow from the Earth, from {cite:t}`Zahnle2007`.
-Heat flow drops from over $10$ W/m$^2$ during the magma ocean phase to $\sim$0.065 W/m$^2$ today, with the early decrease set by tidal heating and the later evolution by the slow decline of radiogenic heat production and the cooling of the planet through plate tectonics.
-The same calculation for Venus would predict a similar early heat flow but a slower late-time decline because of the absence of plate tectonics.
-Reproduced from {cite:t}`Zahnle2007`.
-```
 
 ```{figure} figures/arney2017_archean_haze.avif
 :name: fig:arney-archean

@@ -246,7 +246,7 @@ Without the joint transit-plus-RV measurement, we cannot tell any of these apart
 :name: fig:winnmassradius
 :width: 90%
 
-Joint transit and radial velocity measurements turn exoplanet detections into physical objects. **Top:** mass-radius diagram for the early sample of transiting exoplanets, with isodensity loci of $0.5$, $1$, and $2$ g/cm$^3$ (top to bottom). **Bottom:** mass-orbital period anti-correlation, partly observational selection (short-period giants are easy) and partly physical (planet-star tides circularise short-period giants and may inflate them). Both panels show the **first** generation of bulk-density measurements; the radius valley and the sub-Neptune boundary visible in modern data both come from the small-planet end of these distributions. From {cite:t}`Winn2010`.
+Empirical mass-radius relation across the full range of solar-system bodies, exoplanets, brown dwarfs, and stars, from {cite:t}`ChenKipping2017`. The shaded regions mark four distinct compositional regimes: terran ($M \lesssim 2\,\Mearth$, scaling roughly as $R \propto M^{0.28}$), Neptunian ($2\,\Mearth \lesssim M \lesssim 0.4\,\Mjup$, $R \propto M^{0.59}$), Jovian ($0.4\,\Mjup \lesssim M \lesssim 80\,\Mjup$, $R \propto M^{-0.04}$, where electron degeneracy and self-compression flatten the relation), and stellar ($M > 80\,\Mjup$, hydrogen burning sets in). Each break corresponds to a different dominant pressure source. The "Neptunian" segment is the modern compositional location of the sub-Neptune family, the population that has no analogue in the solar system.
 ```
 
 The pedagogical message is this.
@@ -631,9 +631,9 @@ Many hot Jupiters around hot ($T_\mathrm{eff} > 6250$ K) host stars, by contrast
 
 ```{figure} figures/rossiter_mclaughlin.avif
 :name: fig:rmgeom
-:width: 90%
+:width: 80%
 
-The **Rossiter-McLaughlin effect**: as a transiting planet moves across the rotating stellar disk it first occults the blueshifted hemisphere then the redshifted hemisphere, producing a characteristic distortion in the time-resolved stellar line profile. The shape and asymmetry of the resulting radial-velocity anomaly directly trace the projected angle between the orbital axis and the stellar spin axis. Three example trajectories at different obliquities are shown. From the Winn (2010) review {cite:p}`Winn2010`.
+Geometry of the **Rossiter-McLaughlin effect**, from the {cite:t}`Triaud2018` review chapter. As a transiting planet moves across the rotating stellar disk along its chord (impact parameter $b$), it sequentially occults the approaching (blueshifted, blue) hemisphere and the receding (redshifted, red) hemisphere. The resulting time-resolved distortion in the stellar absorption-line profile traces the angle $\lambda$ between the projected stellar spin axis and the orbital angular momentum vector on the sky.
 ```
 
 ```{figure} figures/obliquity_distribution.avif
@@ -677,9 +677,9 @@ Second, the transit depth $(R_p / R_\star)^2$ is much larger for an Earth-sized 
 
 ```{figure} figures/dressing_mdwarf_occurrence.avif
 :name: fig:dressing
-:width: 90%
+:width: 75%
 
-Cumulative occurrence rate of small planets around M dwarfs from the full Kepler sample, from {cite:t}`Dressing2015`. The four panels show different orbital period bins. M dwarfs host on average $\sim 2$ small planets per star inside 200 days, and roughly one Earth-size planet per star in or near the habitable zone. M dwarf small-planet occurrence rates exceed those around Sun-like stars by roughly a factor of 2--3.
+Cumulative occurrence rate of small planets around M dwarfs as a function of orbital period from the full Kepler sample, from {cite:t}`Dressing2015`. Each curve is a different planet-radius bin from $0.5$--$1\,\Rearth$ (black) to $3$--$4\,\Rearth$ (red). M dwarfs host on average $\sim 2$ small planets per star inside 200 days, and roughly one Earth-size planet per star in or near the habitable zone. M dwarf small-planet occurrence rates exceed those around Sun-like stars by roughly a factor of 2--3.
 ```
 
 {cite:t}`Dressing2015` used the full Kepler M dwarf sample to estimate that the occurrence rate of small ($R_p < 4\,\Rearth$) planets per M dwarf inside 200 days is roughly $2.5$, compared to $\sim 0.7$ for Sun-like stars.
@@ -987,9 +987,9 @@ The mid-infrared regime is particularly well suited to biosignature gas detectio
 
 ```{figure} figures/life_yield.avif
 :name: fig:lifeyield
-:width: 90%
+:width: 80%
 
-Predicted exoplanet detection yield for the **LIFE** mid-infrared nulling interferometer concept, from {cite:t}`Quanz2022`. The two panels show the number of detectable rocky planets as a function of host stellar effective temperature for two mission configurations. LIFE is expected to detect $\sim 50$ rocky planets in the conservative habitable zones of M and K dwarfs. M dwarfs dominate the yield because they are nearby and abundant; G dwarfs contribute fewer but are more solar-system-like targets.
+Predicted exoplanet detection yield for the **LIFE** mid-infrared nulling interferometer concept, from {cite:t}`Quanz2022`. The two panels compare two wavelength configurations ($3$--$20\,\mu$m, top, and $6$--$17\,\mu$m, bottom) for "Scenario 2" of the LIFE simulator. Bars show the difference in detected planets per category (rocky habitable-zone, exo-Earth candidates, rocky+super-Earth, sub-Neptune, sub-Jovian) split by hot/warm/cold instellation. LIFE is expected to detect $\sim 50$ rocky planets in the conservative habitable zones of nearby M and K dwarfs. M dwarfs dominate the yield because they are nearby and abundant; G dwarfs contribute fewer but are more solar-system-like targets.
 ```
 
 **Extremely Large Telescopes** (ELTs) are the third pillar of the next-decade exoplanet effort and are ground-based.

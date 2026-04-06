@@ -51,11 +51,11 @@ Laboratory shock experiments and density-functional-theory calculations place th
 Below this depth the fluid conducts electricity well enough to support the dynamo that generates Jupiter's strong magnetic field ({ref}`lecture04`).
 At the centre of the planet, models constrained by Juno gravity data converge on conditions near $\sim4000$ GPa and $\sim20{,}000$ K {cite:p}`Wahl2017,Militzer2022`.
 
-```{figure} figures/saturn_interior_mankovich2021.avif
-:name: fig:saturn_interior
-:width: 75%
+```{figure} figures/jupiter_dilute_core_wahl2017.avif
+:name: fig:jupiter_dilute_core
+:width: 70%
 
-Saturn's heavy-element distribution $Z(r)$, density $\rho(r)$, and Brunt-Vaisala frequency $N$ as a function of fractional radius, derived from interior models that simultaneously match the planet's gravity field and the seismic detection of the f-mode resonance in the rings. The colour scale is the relative log-likelihood of each model. The yellow track is the maximum-likelihood profile, and the grey envelope is the prior. The figure is the keystone result of Saturn ring seismology and is shown here as a representative example of how a gas giant's interior can be constrained from the outside. Reproduced from {cite:t}`Mankovich2021`.
+Density as a function of fractional radius for representative Jupiter interior models from {cite:t}`Wahl2017`, comparing two equations of state (MH13 and REOS3). The compact-core models (dashed curves) exhibit a sharp density discontinuity at the inner core boundary near $r/r_J \approx 0.15$, while the dilute-core models (solid curves) show a smooth, gradual increase in density across roughly the inner half of the planet. The inset cartoon sketches the layered structure inferred for Jupiter: an outer molecular hydrogen envelope, an intermediate metallic-hydrogen layer with helium-rain droplets, and a dilute core in which heavy elements are mixed throughout the inner region rather than concentrated in a discrete central body.
 ```
 
 Until very recently, all interior models of Jupiter assumed a compact, well-defined core of heavy elements at the centre of the planet, with a sharp transition from the metallic-hydrogen envelope to a rock or ice core at fractional radii of less than 0.2.
@@ -261,18 +261,18 @@ As these droplets sink, they release gravitational potential energy that is conv
 The process simultaneously depletes helium from the upper envelope, which is consistent with the lower-than-protosolar helium abundance measured in Saturn's atmosphere by Voyager.
 The same process occurs in Jupiter, but at a less advanced stage because Jupiter's interior is hotter and the immiscibility region is narrower.
 
+```{figure} figures/saturn_interior_mankovich2021.avif
+:name: fig:saturn_interior
+:width: 70%
+
+Saturn's heavy-element distribution $Z(r)$ (top), density $\rho(r)$ (middle), and Brunt-Vaisala frequency $N$ (bottom) as a function of fractional radius from {cite:t}`Mankovich2021`. The colour scale is the relative log-likelihood of each model, the yellow track is the maximum-likelihood profile, and the grey envelope is the prior. The heavy elements form a stably stratified, dilute distribution extending out to roughly 60% of Saturn's radius rather than being concentrated in a compact central core.
+```
+
 ```{figure} figures/saturn_kronoseismology_mankovich2021.avif
 :name: fig:kronoseismology
 :width: 90%
 
 Kronoseismology constraints on Saturn's interior from {cite:t}`Mankovich2021`. Left: family of allowed heavy-element profiles $Z(r)$ and Brunt-Vaisala frequencies $N(r)/\omega_{\rm dyn}$. Right: pattern speeds and resonance radii of the f-mode oscillations of Saturn that drive observable density waves in the C ring at $\sim 75{,}000$--$95{,}000$ km radius. The observed waves (red dashed lines, labelled with their ring positions) are reproduced only by interior models with a stably stratified, dilute heavy-element distribution extending to roughly 60% of Saturn's radius. The figure is the most quantitative external probe of any giant planet interior to date.
-```
-
-```{figure} figures/saturn_core_mass_mankovich.avif
-:name: fig:saturn_core
-:width: 65%
-
-Saturn's "core mass" $M_{Z,{\rm tot}}$ and "core radius" $r_{\rm out}$ inferred from the joint gravity and ring-seismology fit. The total heavy-element mass is constrained to $\sim$17--20 $\Mearth$, and the heavy elements extend out to roughly 60% of Saturn's radius, much further than in classical compact-core models. From {cite:t}`Mankovich2021`.
 ```
 
 The picture of Saturn's interior was sharpened dramatically by the technique of **kronoseismology**: detecting the f-mode oscillations of Saturn through the density waves they excite in Saturn's C ring at the radii where their pattern speeds match Keplerian frequencies.
@@ -284,6 +284,13 @@ Two further peculiarities of Saturn deserve mention.
 First, Saturn's rotation period is famously hard to measure.
 There is no solid surface to give a fiducial spin, and unlike Jupiter, Saturn's magnetic dipole is almost perfectly aligned with the rotation axis, so that radio emissions are not modulated at a clean planetary rotation period.
 The current best value, $10$ h $33$ min $38$ s, comes from Cassini ring seismology rather than from radio measurements {cite:p}`Mankovich2019`.
+
+```{figure} figures/saturn_rotation_mankovich2019.avif
+:name: fig:saturn_rotation
+:width: 70%
+
+Determination of Saturn's bulk rotation period from C-ring seismology by {cite:t}`Mankovich2019`. Each black curve shows the RMS pattern-speed residual between an interior model and the set of observed C-ring density waves identified with Saturnian $f$-modes, plotted as a function of the assumed rotation period. The thick blue curve gives the cumulative distribution of best-fit rotation periods. The seismological median is $P_{\rm S} \approx 10\,{\rm h}\,33\,{\rm min}\,38\,{\rm s}$, well separated from the older Voyager and Cassini magnetospheric estimates indicated by the coloured vertical bars.
+```
 Second, the near-perfect axial alignment of Saturn's magnetic dipole is itself a problem.
 A dynamo generally requires some asymmetry between the rotation and magnetic axes to operate (Cowling's anti-dynamo theorem rules out perfectly axisymmetric dynamos), so the question is how Saturn's dynamo manages to produce such a clean dipole.
 The leading explanation is that the convecting metallic hydrogen layer is overlain by a stably stratified helium-rain region that filters out non-axisymmetric magnetic field components before they reach the planet's surface.
@@ -604,6 +611,13 @@ The cause of the tilt is most plausibly a giant impact during the late stages of
 The challenge for any such scenario is to reconcile the impact with the fact that Uranus's regular satellites all orbit in the planet's equatorial plane: the same impact must have spun up an equatorial debris disk from which the satellites later re-accreted.
 {cite:t}`Morbidelli2012` explored this scenario in detail and showed that a single oblique impact early in the planet's history is consistent with the present satellite system if the disk was massive enough to dynamically reset the satellite plane.
 
+```{figure} figures/uranus_impact_kegerreis2018.avif
+:name: fig:uranus_impact
+:width: 85%
+
+Smoothed-particle-hydrodynamics simulation of a giant impact on the proto-Uranus, from {cite:t}`Kegerreis2018`. Snapshots are shown from $t = 1$ h to $t = 40$ h after first contact for a $2\,\Mearth$ impactor on a low angular momentum trajectory. Particles are coloured by material and origin: light and dark grey are target ice and rock, light blue is target H/He atmosphere, and purple and brown are the corresponding impactor materials. The white dashed circle marks Uranus's present-day Roche radius. Such oblique collisions deliver enough angular momentum to tilt the proto-Uranus's spin axis by tens of degrees, can deposit impactor rock into the deep interior, and (for higher angular momentum cases) eject a debris disk in the new equatorial plane from which the regular Uranian satellites later re-accrete.
+```
+
 ```{figure} figures/uranus_clouds_voyager.avif
 :name: fig:uranus_clouds
 :width: 70%
@@ -664,6 +678,20 @@ None of these has been directly verified, and the question is one of the most pr
 The interior of an ice giant is plausibly organised into three layers: a small rocky core (perhaps 1--3 $\Mearth$), a thick "ice mantle" of fluid water, ammonia, and methane, and a relatively thin $\mathrm{H_2}$/He envelope at the outside.
 The exact mass partitioning is poorly constrained because Voyager 2 measured only the lowest gravity moments ($J_2$ and $J_4$), and these alone leave a vast space of possible interior models {cite:p}`Helled2020`.
 Even the question of whether Uranus and Neptune are dominated by ices or by rock and ice mixtures is unresolved.
+
+```{figure} figures/ice_giant_structures_helled2020.avif
+:name: fig:ice_giant_structures
+:width: 85%
+
+Schematic possible internal structures of an ice giant from {cite:t}`Helled2020`. Panels (a) through (d) illustrate increasingly gradual compositional transitions: (a) sharp boundaries between H/He envelope, ices, and rock; (b) sharp envelope/ice boundary but a gradual ice/rock transition; (c) gradual envelope/ice transition with a sharp ice/rock boundary; (d) fully gradual transitions from envelope through ice to rock with a global composition gradient. The Voyager-era gravity data alone cannot distinguish among these possibilities, which is one of the central motivations for a dedicated ice giant orbiter.
+```
+
+```{figure} figures/ice_giant_density_helled2020.avif
+:name: fig:ice_giant_density
+:width: 70%
+
+Density as a function of radius for Uranus (blue) and Neptune (black) from {cite:t}`Helled2020`. Solid curves are the empirical density profiles derived in earlier work, dashed curves are three-layer models with discrete envelope, ice, and rock layers. The two profiles match the gravity data equally well, illustrating the strong degeneracy between smooth and layered interior models that prevents us from uniquely identifying the bulk composition of the ice giants.
+```
 
 A particularly exciting recent development is the experimental confirmation that water at ice giant interior conditions is in a "superionic" state.
 {cite:t}`Millot2019` carried out shock-compression experiments on water at $\sim 100$--200 GPa and several thousand kelvins and showed by in-situ X-ray diffraction that the oxygen sublattice remains rigid (a body-centred cubic crystal) while the protons diffuse through it as a fluid.

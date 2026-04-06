@@ -26,27 +26,27 @@ Lectures 2, 3, and 12 already presented the modern picture of how planets form, 
 Overview of the dust-to-planet growth processes operating in protoplanetary disks. Dust grains coagulate into pebbles whose radial drift can either be halted at pressure traps (planetesimal formation via the streaming instability) or accreted directly onto growing embryos. Larger embryos compete via runaway and oligarchic growth and, once massive enough, trigger gas envelope accretion. Reproduced from {cite:t}`Drazkowska2023`.
 ```
 
-```{figure} figures/drazkowska2023_envelope_accretion.avif
+```{figure} figures/lambrechts2012_core_growth.avif
 :name: fig:l14:envelope-accretion
-:width: 90%
+:width: 75%
 
-Schematic of polluted envelope accretion onto a forming gas giant. Once the protoplanetary core exceeds the critical mass, gas streams in from the surrounding nebula. Pebble vaporisation in the envelope keeps the metallicity high, slows cooling, and delays runaway. Reproduced from {cite:t}`Drazkowska2023`.
+Mass growth of a planetary core as a function of time at three orbital radii (0.5, 5, and 50 AU), comparing pebble accretion in the drift and Hill regimes (solid lines) with classical planetesimal accretion (grey dotted lines). Pebble accretion reaches 10 Earth masses well before the typical disk lifetime, while planetesimal accretion at 5 AU takes longer than the disk lifetime. The masses of Ceres and Pluto are marked for reference. Reproduced from {cite:t}`Lambrechts2012`.
 ```
 
 Each of those steps has direct observational consequences. ALMA images of nearby protoplanetary disks resolve the gaps and rings that mark planetary formation in progress {cite:p}`ALMAPartnership2015,Andrews2018`. Disk lifetimes inferred from infrared excess fractions cluster around 3 to 5 Myr {cite:p}`Haisch2001`, which sets the maximum time available for both terrestrial-planet assembly and gas-giant envelope accretion. Demographic surveys of mature systems then provide the endpoint distributions that any formation theory must reproduce.
 
-```{figure} figures/drazkowska2023_mass_budget.avif
-:name: fig:l14:mass-budget
+```{figure} figures/andrews2018_dsharp_gallery.avif
+:name: fig:l14:dsharp
 :width: 90%
 
-Solid mass budget of detected exoplanets compared with the dust mass observed in protoplanetary disks around stars of different ages. Disks consistently contain more solid material at early times than is locked into mature exoplanet systems, demonstrating that planet formation is inefficient and that most of the available solids end up either in the central star, in undetected planetesimals, or are lost from the disk. Reproduced from {cite:t}`Drazkowska2023`.
+Gallery of 240 GHz (1.25 mm) ALMA continuum images of 20 nearby protoplanetary disks from the DSHARP large programme. Concentric rings, gaps, and asymmetric features are nearly ubiquitous, and most are interpreted as signatures of planetary growth in progress. The combination of disk substructure surveys with disk dust mass measurements provides the strongest empirical constraints on the inputs to planet formation models. Reproduced from {cite:t}`Andrews2018`.
 ```
 
-```{figure} figures/drazkowska2023_accretion_timescales.avif
+```{figure} figures/lambrechts2012_growth_time.avif
 :name: fig:l14:accretion-timescales
-:width: 85%
+:width: 75%
 
-Theoretical accretion timescales for planetesimal accretion (left) and pebble accretion (right) as a function of distance from the central star. Pebble accretion is orders of magnitude faster than planetesimal accretion at large orbital radii, which is the main reason gas giants have to grow that way to assemble before the disk disperses. Reproduced from {cite:t}`Drazkowska2023`.
+Time required to grow a 10 Earth mass core as a function of orbital distance, for pebble accretion in the Hill regime (solid black line) and for planetesimal accretion (grey lines). Pebble accretion is orders of magnitude faster than planetesimal accretion at large orbital radii, which is the main reason gas giant cores have to grow that way to reach pebble-isolation mass before the disk disperses (red shaded region). Reproduced from {cite:t}`Lambrechts2012`.
 ```
 
 The successes of this framework are real. Disk-driven migration explains why hot Jupiters exist in the first place and why several systems are caught in tight resonant chains: the planets formed further out and migrated inward through the gas disk before it dispersed {cite:p}`Paardekooper2023,Tsiganis2005`. Pebble accretion explains how gas-giant cores grow fast enough to trigger envelope runaway before the disk is gone {cite:p}`Lambrechts2012,Johansen2007`. The carbonaceous-versus-non-carbonaceous (NC--CC) meteorite dichotomy points to early reservoir separation in the inner solar system, and it can be reproduced if Jupiter's growing core opens a barrier in the disk that segregates inner and outer material {cite:p}`Kruijer2017,Lichtenberg2021`. The Nice model and the Grand Tack reproduce the orbital and small-body architecture of the present solar system, including the Trojan asteroids and the depleted asteroid belt {cite:p}`Tsiganis2005,Walsh2011`.
@@ -104,14 +104,7 @@ In four other respects, however, the solar system looks unusual:
 :name: fig:l14:peas
 :width: 75%
 
-Compact multi-planet systems with four or more transiting planets interior to 1.52 AU, ordered by their planet-radius dispersion. The solar system terrestrials (labelled SOL) sit near the bottom of the figure, indicating that their range of sizes is large compared with most Kepler multis. Most Kepler compact multis are far more uniform in their planet sizes than the solar system. Reproduced from {cite:t}`Raymond2022`.
-```
-
-```{figure} figures/raymond2022_compact_summary.avif
-:name: fig:l14:compactsum
-:width: 80%
-
-Pictogram summary of the architectural properties of compact multi-planet systems compared to solar system inner planets. Across nearly every measured statistic (size dispersion, orbital spacing, eccentricity, inclination), the solar system inner planets sit at the edge of, or outside, the typical exoplanet distribution. Reproduced from {cite:t}`Raymond2022`.
+Compact multi-planet systems with four or more transiting planets interior to 1.52 AU, ranked by their planet-radius dispersion (most uniform sizes at the top, greatest size diversity at the bottom). Point sizes scale logarithmically with planet radius. The solar system terrestrials, included for comparison, sit in the bottom quintile of size uniformity, showing that the peas-in-a-pod architecture prevalent in Kepler compact multis did not emerge in our own system. Reproduced from {cite:t}`Raymond2022`.
 ```
 
 The mass-radius diagram offers a complementary view ({numref}`fig:l14:massrad`). Plotting bulk density implied by mass and radius for the planets in the solar system and for the exoplanets where both quantities are known, one sees that the rocky planets cluster along a narrow track set by the equation of state of silicate mantles and iron cores, while the larger planets spread out into the volatile-rich and the gas-dominated regimes. The solar system terrestrials sit firmly on the "Earth-like" composition curve. Many close-in exoplanet super-Earths sit on the same curve too, indicating that the population of bare rocky cores is real, but a substantial subset of slightly larger planets sits *above* the rocky line, indicating that they retain significant volatile envelopes that swell their radii relative to a pure-rock composition.
@@ -152,13 +145,6 @@ The stack looks roughly like this:
 - **Surface and tectonics.** A regime that recycles volatiles between surface, atmosphere, and interior is needed to close the carbon cycle (plate tectonics on Earth, or some functional equivalent).
 - **Biosphere, once it exists.** Biology in turn modifies all of the above by changing atmospheric composition, surface albedo, weathering rates, and even the long-term carbon cycle.
 
-```{figure} figures/wordsworth2022_atm_regime.avif
-:name: fig:l14:atm-regime
-:width: 80%
-
-Regime diagram of plausible rocky-planet atmospheric compositions as a function of equilibrium temperature and planet mass. Habitable atmospheres similar to modern Earth's occupy only a narrow strip of this parameter space, surrounded by regimes dominated by $\mathrm{H_2}$, $\mathrm{N_2}$, $\mathrm{CO_2}$, or steam. The strip is narrow because the supporting feedbacks operate together only in a restricted region. Reproduced from {cite:t}`Wordsworth2022`.
-```
-
 Each level in the stack is necessary. None of them by itself is sufficient. What makes habitability a *systems* property rather than a checklist is that the levels are *coupled*: the star drives the photochemistry, the photochemistry feeds back on the cloud structure, the cloud structure changes the albedo and the temperature, the temperature controls the weathering, the weathering pulls $\mathrm{CO_2}$ out of the atmosphere, the loss of $\mathrm{CO_2}$ depends on the interior outgassing rate, and the outgassing rate depends on the tectonic regime. Break any link and the system can drift into a regime where surface liquid water is no longer thermodynamically possible.
 
 ### The habitability coupling diagram
@@ -189,11 +175,11 @@ Habitable zone boundaries as a function of stellar effective temperature and pla
 
 This is a useful reference object. Two things, however, must be added immediately to use it sensibly. First, *two planets at the same orbital distance can end up with radically different climates depending on their water inventory, their tectonic regime, and their stellar evolution history.* Earth and Venus illustrate the point: Venus receives only $\sim 1.9\times$ Earth's solar flux but has a $735$ K, $92$ bar, $\mathrm{CO_2}$-dominated atmosphere with essentially no water, while Earth has a $288$ K surface and a stable hydrosphere ({ref}`lecture09`). The difference is not in the present-day instellation alone but in the history of how the two planets evolved through their early molten phases and through 4.5 Gyr of solar luminosity evolution {cite:p}`Hamano2013,Way2016`.
 
-```{figure} figures/wordsworth2022_runaway_timeline.avif
+```{figure} figures/lugerbarnes2015_runaway_duration.avif
 :name: fig:l14:runaway
-:width: 80%
+:width: 75%
 
-Cumulative time spent in a runaway greenhouse state on a planet of given mass, as a function of final equilibrium temperature, illustrating the {cite:t}`LugerBarnes2015` calculation for water-loss timescales around M dwarfs. Lower-mass planets reach the runaway state at lower temperatures and stay there longer, which is why M-dwarf habitable-zone planets that experience a hot pre-main-sequence phase can lose substantial water before their host star settles to the main sequence. Reproduced from {cite:t}`Wordsworth2022`.
+Duration of the runaway greenhouse phase for planets that formed at 10 Myr with abundant surface water, as a function of stellar mass (vertical axis) and orbital semi-major axis (horizontal axis), from the {cite:t}`LugerBarnes2015` water-loss calculation around M dwarfs. The solid black lines mark the empirical inner habitable zone (recent Venus and early Mars limits at 5 Gyr); the dashed lines mark the theoretical runaway and maximum greenhouse limits. Habitable-zone planets around late M dwarfs spend a substantial fraction of their first Gyr inside the runaway state, losing much of their initial water before the host star reaches the main sequence. Reproduced from {cite:t}`LugerBarnes2015`.
 ```
 
 Second, the habitable zone is *time-dependent*. Stellar luminosity increases by roughly 30% over the main-sequence lifetime of a Sun-like star, so a planet inside the inner edge today might have been outside it 4 Gyr ago, and vice versa. M dwarfs are even more pathological: their pre-main-sequence high-luminosity phase lasts hundreds of Myr to a few Gyr, during which any planet now in the HZ was instead inside the runaway boundary {cite:p}`LugerBarnes2015`. A planet that is "in the HZ" today is not necessarily "habitable" if it spent most of its history outside that zone.
@@ -214,13 +200,6 @@ Lecture 4 introduced the geodynamo and explained why an active magnetosphere pro
 
 The lesson, however, is more nuanced than "no magnetic field means no atmosphere". Venus has retained an atmosphere of nearly $90$ bar without a global magnetic field, so the relationship is not deterministic. What a magnetic field does is *shift the balance of escape mechanisms*. Without one, the dominant losses are nonthermal: pickup ions, sputtering, and ionospheric outflow. Whether these matter on Gyr timescales depends on the planet's mass, its atmospheric column, the strength of the stellar wind, and the timing of the dynamo's onset and shutdown. For exoplanets around active M dwarfs, the question of whether an active dynamo is *required* for atmospheric retention is a major unresolved research problem and is one of the reasons the TRAPPIST-1 system is such an important target.
 
-```{figure} figures/wordsworth2022_atm_escape_structure.avif
-:name: fig:l14:atm-escape
-:width: 85%
-
-Schematic temperature structure and escape regions of a rocky-planet atmosphere as a function of altitude. The thermosphere is heated by stellar EUV; the exobase is the level above which the atmosphere is collisionless and atoms are free to escape if their thermal velocity exceeds the gravitational escape velocity. Different escape mechanisms (Jeans thermal escape, hydrodynamic escape, photochemical escape, ion pickup) operate at different altitudes and are dominant in different stellar and planetary regimes. Reproduced from {cite:t}`Wordsworth2022`.
-```
-
 ### Water delivery and planetary evolution
 
 There is a temptation when teaching planetary water inventories to make the question one of *delivery*: how much water arrived from carbonaceous chondrites versus comets, what was the relative D/H signature of each, and what does that imply about the source mixture? That framing was reasonable a decade ago, but it is increasingly clear that *delivery is not the dominant lever for inner solar system water inventories*. Planetary evolution is.
@@ -234,30 +213,9 @@ The key point is this: Earth, Venus, and Mars likely received broadly similar vo
 Schematic of magma-ocean stage differentiation on a forming rocky planet. The initially molten silicate mantle separates from a denser metal phase that sinks to form the core, while volatiles partition between the molten silicate and an overlying steam atmosphere. The fraction sequestered in the mantle versus outgassed into the atmosphere is decisive for the planet's later atmospheric evolution. Reproduced from {cite:t}`Lichtenberg2023`.
 ```
 
-```{figure} figures/wordsworth2022_magma_ocean.avif
-:name: fig:l14:wordsworth-magma
-:width: 75%
-
-Schematic of a rocky planet interior with a magma ocean, showing the fully liquid zone, the partially molten "mush" zone, the solid mantle, and the iron core. Volatile exchange across the upper boundary couples the magma ocean to the steam atmosphere; turbulent mixing and convection redistribute volatiles within the molten mantle. The fraction of the planet's water that ends up in the atmosphere versus in the mantle depends on conditions during this stage. Reproduced from {cite:t}`Wordsworth2022`.
-```
-
 The first lever is *magma ocean partitioning*. During the early molten phase, a planet's water and carbon partition between an iron-rich core, a silicate mantle, and a steam atmosphere overhead. The fraction sequestered in the mantle versus outgassed into the atmosphere depends on the redox state of the magma, on the solidification timescale, and on the depth at which crystallisation begins {cite:p}`ElkinsTanton2012,Hirschmann2012`. Different boundary conditions lead to very different end states even for identical starting inventories.
 
-The starting timing matters too. {numref}`fig:l14:planetesimal-temps` shows the temperatures reached by accreting planetesimals as a function of formation time and snow-line position. Bodies that accrete in the first $\sim 1$ Myr after CAI formation are heated above the water-ice melting point by short-lived radionuclides ($^{26}\mathrm{Al}$ in particular) and lose much of their primordial water through dehydration. Bodies that accrete later, beyond the snow line, retain their volatiles. The composition of the inner solar system terrestrials therefore depends on *when* their building blocks formed, not just on *where*, and the early-formed component is systematically dryer than the late-formed component.
-
-```{figure} figures/lichtenberg2023_planetesimal_temperatures.avif
-:name: fig:l14:planetesimal-temps
-:width: 75%
-
-Maximum temperatures reached in instantaneously accreting planetesimals as a function of formation time after CAI and snow-line position. Bodies that form in the first $\sim 1$ Myr (left of the curves) are heated above the rock-melting solidus by $^{26}\mathrm{Al}$ decay and dehydrate; bodies that form later retain volatiles. The transition is sharp because $^{26}\mathrm{Al}$ has a half-life of only $\sim 0.7$ Myr. Reproduced from {cite:t}`Lichtenberg2023`.
-```
-
-```{figure} figures/lichtenberg2023_outgassing_speciation.avif
-:name: fig:l14:outgassing-speciation
-:width: 90%
-
-Effects of varying redox state, pressure, and temperature on the speciation of outgassed volatiles from a magma ocean. The composition of the atmosphere produced by outgassing changes drastically depending on whether the mantle is reducing (giving $\mathrm{H_2}$, $\mathrm{CO}$, $\mathrm{N_2}$) or oxidising (giving $\mathrm{H_2O}$, $\mathrm{CO_2}$, $\mathrm{N_2}$, $\mathrm{SO_2}$), with major implications for early climate and habitability. Reproduced from {cite:t}`Lichtenberg2023`.
-```
+The starting timing also matters. The temperatures reached by accreting planetesimals depend on their formation time and on snow-line position. Bodies that accrete in the first $\sim 1$ Myr after CAI formation are heated above the water-ice melting point by short-lived radionuclides ($^{26}\mathrm{Al}$ in particular, with a half-life of only $\sim 0.7$ Myr) and lose much of their primordial water through dehydration. Bodies that accrete later, beyond the snow line, retain their volatiles {cite:p}`Lichtenberg2023`. The composition of the inner solar system terrestrials therefore depends on *when* their building blocks formed, not just on *where*, and the early-formed component is systematically dryer than the late-formed component.
 
 The second lever is *atmospheric escape during the magma ocean phase*. Under a young, EUV-bright Sun, hydrodynamic escape can drag water out of the upper atmosphere fast enough to deplete a fraction of the inventory before the magma ocean has even solidified ({ref}`lecture09`, {cite:p}`Hamano2013`). This is the "Type II" Hamano scenario for Venus: with $\sim 1.9$ times Earth's instellation, Venus's magma ocean took long enough to solidify that hydrogen escape ran far longer and hotter than on Earth, and a substantial fraction of the initial water never made it to the surface as liquid.
 
@@ -265,35 +223,14 @@ The second lever is *atmospheric escape during the magma ocean phase*. Under a y
 :name: fig:l14:hamano-typeII
 :width: 70%
 
-Two distinct types of terrestrial planet defined by the {cite:t}`Hamano2013` model. The upper panel shows magma-ocean solidification time as a function of orbital distance for a range of initial water inventories; planets inside a critical orbital distance ($\sim 0.77$ AU) cannot solidify their magma oceans before water is largely lost through hydrodynamic escape ("Type II"), while planets further out solidify quickly and retain most of their water ("Type I"). The lower panel shows the resulting final water inventories. Reproduced from {cite:t}`Hamano2013`.
-```
-
-```{figure} figures/hamano2013_water_partitioning.avif
-:name: fig:l14:hamano-partition
-:width: 90%
-
-Typical evolution of a Type II planet (left) and final partitioning of water between steam atmosphere and planetary interior as a function of initial water content (right). Type II planets at $\sim 0.7$ AU lose nearly all of their primordial water through escape during a multi-Myr-long magma ocean phase. Reproduced from {cite:t}`Hamano2013`.
+Two distinct types of terrestrial planet defined by the {cite:t}`Hamano2013` model. Panel (a) shows magma-ocean solidification time as a function of orbital distance and instellation for a range of initial water inventories; planets inside a critical orbital distance ($\sim 0.77$ AU around a Sun-like star) cannot solidify their magma oceans before most of their water is lost to hydrodynamic escape ("Type II"), while planets further out solidify quickly and retain most of their water ("Type I"). Panel (b) shows the resulting final water inventories at the end of magma-ocean solidification. Modified from {cite:t}`Hamano2013` as reproduced in {cite:t}`Lichtenberg2023`.
 ```
 
 The third lever is *mantle-atmosphere exchange over Gyr*. Once the planet is solid and tectonically active, volcanic outgassing continues to feed the atmosphere with volatiles, while subduction and weathering pull volatiles back into the mantle. On a planet with active plate tectonics this loop can run for billions of years and keep the surface inventory roughly steady. On a stagnant-lid planet, the outgassing flux still operates but the return flow is much weaker, so the surface inventory drifts one-way. On a body too small to maintain interior convection (the Moon, Mars after $\sim 1$ Ga), even outgassing slows to a trickle.
 
 The fourth lever is *the stellar evolution history*. The pre-main-sequence high-luminosity phase is decisive for M-dwarf planets, whose habitable zone passes through the runaway boundary during the first few hundred Myr ({ref}`lecture13`, {cite:p}`LugerBarnes2015`). For G dwarfs the effect is smaller but still relevant: the faint young Sun of 4 Gyr ago needed a stronger greenhouse to keep Earth from freezing, and the Sun's slow brightening sets the long-term drift of the inner HZ edge.
 
-```{figure} figures/lichtenberg2023_atmosphere_regimes.avif
-:name: fig:l14:atm-regimes
-:width: 75%
-
-Plausible atmospheric regimes of rocky planets as a function of instellation and planet mass. At low mass and high instellation, planets cannot retain atmospheres at all. At intermediate mass and moderate instellation, atmospheres similar to Earth or Venus are possible depending on history. At high mass, hydrogen-rich primordial envelopes can survive. Reproduced from {cite:t}`Lichtenberg2023`.
-```
-
-The same picture can be told from the inside as well as the outside. Looking at the radiogenic clocks recorded in meteorites and in the Moon's chemistry ({numref}`fig:l14:core-formation`), we see that core formation, magma ocean crystallisation, and the major silicate differentiation events on the Earth, Mars, and the asteroid parent bodies were all completed within the first $\sim 100$ Myr of solar system history. The interior boundary conditions for atmospheric evolution were therefore largely set early, and any subsequent atmospheric history is layered on top of an interior whose primary differentiation was already done.
-
-```{figure} figures/lichtenberg2023_core_formation.avif
-:name: fig:l14:core-formation
-:width: 75%
-
-Timeline of core formation, magma-ocean crystallisation, and silicate differentiation on inner solar system bodies, reconstructed from radiogenic chronometers in meteorites and lunar samples. The earliest cores (Mars, asteroid 4 Vesta) formed within $\sim 5$ Myr of CAI formation; the Earth's main core-formation events were essentially complete by $\sim 100$ Myr. The interior boundary conditions for the long-term evolution of atmospheres were therefore largely set within the first $\sim 5\%$ of solar system history. Reproduced from {cite:t}`Lichtenberg2023`.
-```
+The same picture can be told from the inside as well as the outside. Radiogenic clocks recorded in meteorites and in the Moon's chemistry show that core formation, magma ocean crystallisation, and the major silicate differentiation events on the Earth, Mars, and the asteroid parent bodies were all completed within the first $\sim 100$ Myr of solar system history {cite:p}`Lichtenberg2023,Dauphas2017,Kruijer2017`. The interior boundary conditions for atmospheric evolution were therefore largely set early, and any subsequent atmospheric history is layered on top of an interior whose primary differentiation was already done.
 
 The implication, and the reason this section is in the synthesis lecture rather than the formation lecture, is that *the present-day water inventory of an inner solar system body is set primarily by its internal evolution, not by its delivery budget alone*. The D/H debate from {ref}`lecture12` is therefore a constraint on delivery *plus* processing combined, not on delivery alone. The same argument applies to exoplanets: when JWST or LIFE detects (or fails to detect) water on an exoplanet atmosphere, what we are constraining is the entire integrated history of accretion, magma-ocean processing, escape, outgassing, and tectonic recycling, not the source mixture of accreted ice. *Planetary evolution is the dominant lever for inner solar system habitability.*
 
@@ -455,20 +392,20 @@ The classical *atmospheric gas* biosignatures are:
 - **Nitrous oxide ($\mathrm{N_2O}$).** Produced almost exclusively by biology on Earth (denitrification).
 - **Disequilibrium combinations.** The most diagnostic biosignature is not a single gas but a *combination* in chemical disequilibrium: $\mathrm{O_2}$ and $\mathrm{CH_4}$ together, for example, cannot coexist for more than a few years without continuous resupply. {cite:t}`Krissansen2018` formalised the disequilibrium approach and showed that Earth's atmosphere is uniquely diagnostic in this respect.
 
-```{figure} figures/wordsworth2022_chem_species.avif
-:name: fig:l14:chem-species
+```{figure} figures/schwieterman2018_biosignature_gases.avif
+:name: fig:l14:biosig-gases
 :width: 90%
 
-Equilibrium mole fractions of key atmospheric species as a function of temperature for two redox states of a hypothetical rocky-planet atmosphere. Earth's $\mathrm{O_2}$-$\mathrm{CH_4}$ atmosphere is not in chemical equilibrium with itself, and that disequilibrium is itself a strong biosignature: it requires biological replenishment to be sustained. Reproduced from {cite:t}`Wordsworth2022`.
+Wavelength-resolved infrared absorption features for ten potential biosignature gases ($\mathrm{O_2}$, $\mathrm{O_3}$, $\mathrm{N_2O}$, $\mathrm{CH_4}$, $\mathrm{CH_3Cl}$, $\mathrm{C_2H_6}$, $\mathrm{NH_3}$, DMS, DMDS, $\mathrm{CH_3SH}$). Each panel plots the line-by-line absorption strength versus wavelength from $0.4$ to $20\,\mu\mathrm{m}$. Different molecules have characteristic absorption regions: $\mathrm{O_3}$ near $9.6\,\mu\mathrm{m}$, $\mathrm{CH_4}$ at $3.3$ and $7.7\,\mu\mathrm{m}$, $\mathrm{N_2O}$ across the mid-infrared, and DMS/DMDS in the $3$ to $15\,\mu\mathrm{m}$ window. Reproduced from {cite:t}`Schwieterman2018`.
 ```
 
-The reason disequilibrium combinations are so diagnostic is that the bulk solar system abundances of the key elements (H, C, N, O, Na, Mg, Al, Si, P, S, Cl, K, Ca, Fe, etc.) span more than ten orders of magnitude, and the relative abundances in any given planetary atmosphere depend strongly on the integrated history of escape, weathering, and biology ({numref}`fig:l14:abundances`). Earth's atmosphere is *highly* fractionated relative to the solar composition: it is depleted in noble gases by orders of magnitude, depleted in hydrogen by even more, and *enriched* in $\mathrm{O_2}$ to a level that no abiotic process can sustain on a planet with reduced surface minerals exposed to liquid water. The detection of strong fractionation patterns of this kind is itself a circumstantial biosignature, even before specific gas combinations are considered.
+The reason disequilibrium combinations are so diagnostic is that the bulk solar system abundances of the key elements (H, C, N, O, Na, Mg, Al, Si, P, S, Cl, K, Ca, Fe, etc.) span more than ten orders of magnitude, and the relative abundances in any given planetary atmosphere depend strongly on the integrated history of escape, weathering, and biology. Earth's atmosphere is *highly* fractionated relative to the solar composition: it is depleted in noble gases by orders of magnitude, depleted in hydrogen by even more, and *enriched* in $\mathrm{O_2}$ to a level that no abiotic process can sustain on a planet with reduced surface minerals exposed to liquid water. The detection of strong fractionation patterns of this kind is itself a circumstantial biosignature, even before specific gas combinations are considered.
 
-```{figure} figures/wordsworth2022_atmosphere_abundances.avif
-:name: fig:l14:abundances
-:width: 80%
+```{figure} figures/schwieterman2018_biosignature_classes.avif
+:name: fig:l14:biosig-classes
+:width: 95%
 
-Elemental abundances by atomic number, normalised to Si, for the solar composition compared with the present atmospheres of Venus, Earth, and Mars. The atmospheric inventories are fractionated by tens of orders of magnitude relative to the solar mix, reflecting the integrated history of accretion, escape, weathering, and (on Earth) biology. Reproduced from {cite:t}`Wordsworth2022`.
+The three classes of remotely detectable biosignatures: gaseous (left), surface (middle), and temporal (right). Gaseous biosignatures are produced as direct or indirect by-products of biological processes (e.g.\ photosynthetic $\mathrm{O_2}$, photochemically derived $\mathrm{O_3}$). Surface biosignatures are spectral signatures imparted by reflected light interacting with biological pigments (e.g.\ the vegetation red edge). Temporal biosignatures are time-dependent variations in atmospheric or surface properties caused by biology (e.g.\ the seasonal Keeling curve in Earth's $\mathrm{CO_2}$). A convincing biosignature claim should ideally combine evidence from more than one of these classes. Reproduced from {cite:t}`Schwieterman2018`.
 ```
 
 Surface biosignatures include the so-called *vegetation red edge*, a sharp jump in surface reflectance at $\sim 700$ nm that is characteristic of chlorophyll-bearing plants on Earth. Photometric surface variability that follows a seasonal cycle, as Earth's $\mathrm{O_2}$ and $\mathrm{CH_4}$ do, would be a strong indicator of an active, modulated biosphere.
@@ -517,11 +454,11 @@ For Venus that better dataset is on the way. The DAVINCI atmospheric descent pro
 
 Detecting life on an exoplanet is harder than detecting life on a solar system body because we cannot return a sample, we cannot land an instrument, and we cannot resolve the surface. All we have is the integrated transmission, emission, or reflectance spectrum of the planet.
 
-```{figure} figures/wordsworth2022_trappist_spectra.avif
-:name: fig:l14:trappist-spectra
-:width: 90%
+```{figure} figures/lustigyaeger2023_lhs475b_spectrum.avif
+:name: fig:l14:lhs475b-spectrum
+:width: 85%
 
-JWST transmission spectra of TRAPPIST-1 b and c, compared with model atmospheres of various compositions. The observed spectra are consistent with bare-rock surfaces (no detectable atmosphere) and inconsistent with thick $\mathrm{CO_2}$, $\mathrm{H_2O}$, or $\mathrm{O_2}$-dominated envelopes. This is the first direct evidence that close-in M-dwarf rocky planets may indeed have lost their primordial atmospheres entirely. Reproduced from {cite:t}`Wordsworth2022`.
+JWST/NIRSpec G395H transmission spectrum of the Earth-sized rocky exoplanet LHS 475 b (black points), compared with model atmospheres of various compositions. The data rule out hydrogen-dominated atmospheres at $1\times$ to $100\times$ solar metallicity at high significance, and weakly disfavour pure $\mathrm{CH_4}$ or pure $\mathrm{H_2O}$ envelopes (top panel). High mean molecular weight atmospheres ($\mathrm{CO_2}$-dominated, Earth-like) and a featureless airless-body spectrum remain consistent with the data (bottom panel). This is representative of what current JWST observations can and cannot say about the atmospheres of rocky exoplanets around nearby M dwarfs. Reproduced from {cite:t}`LustigYaeger2023`.
 ```
 
 ```{figure} figures/greene2023_trappist1b_eclipse.avif
