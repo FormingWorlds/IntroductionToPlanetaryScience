@@ -128,6 +128,15 @@ The honest framing for the next decade is therefore this: the question of whethe
 
 What we can say with confidence is that the inner solar system is *atypical* relative to known compact systems: our terrestrials are too widely spaced, too varied in mass, and too far apart to look like a Kepler peas-in-a-pod analogue. Whether this is bad luck, the fingerprint of Jupiter, or the most common outcome around stars where we have not yet looked carefully enough remains open.
 
+The reverse statement, that planet *occurrence rates depend strongly on stellar type*, is by now well established. {numref}`fig:l14:mulders-occurrence` shows the close-in (period $< 50$ days) small-planet occurrence rate as a function of stellar effective temperature, compiled from a decade of Kepler, K2, and ground-based surveys: rocky and sub-Neptune-sized planets are roughly twice as common around early M dwarfs as around F and G dwarfs, and the trend continues into the late M regime. Whether this trend reflects formation efficiency in lower-mass disks or detection bias in different survey samples is still being debated, but the headline conclusion, that "Earth-sized planets are not rare around low-mass stars", is robust.
+
+```{figure} figures/mulders2018_occurrence_vs_teff.avif
+:name: fig:l14:mulders-occurrence
+:width: 80%
+
+Average number of close-in planets per star (orbital period less than 50 days) as a function of host-star effective temperature, compiled from a representative subset of Kepler, K2, and M-dwarf transit and radial-velocity surveys (Howard+12, Mulders+15, Yang+20, He+21, Bergsten+23, Hardegree-Ullman+19, Ment\&Charbonneau23, Sabotta+21). The occurrence rate rises by about a factor of 2 from F dwarfs ($\sim 6500$ K) to early M dwarfs ($\sim 3500$ K), then drops slightly toward the latest M types where the surveys are smallest and the most uncertain. The takeaway is that small close-in planets are most common around the most numerous class of stars in the galaxy. Reproduced from {cite:t}`Mulders2018`.
+```
+
 
 ## Part 2: Habitability as a coupled systems property
 
@@ -258,6 +267,15 @@ This course's view of the Drake equation is that it is *a framing tool, not an e
 
 What the Drake equation *is* good for is organising a discussion. It shows where the deep ignorance lies (everything to the right of $n_e$), and it makes it easy to see how a specific claim about the prevalence of life depends on which factor you push. What it should *not* be used for is generating numerical estimates of the form "there are $10^4$ communicating civilisations in the Milky Way". Those numbers reflect the priors going in, not anything we have measured.
 
+{cite:t}`SandbergDrexlerOrd2018` made this point quantitatively. Instead of multiplying together best-guess values for each Drake-equation factor, they sampled each factor from the published distribution of estimates (which often span ten or more orders of magnitude), Monte-Carlo'd the product, and asked what the resulting posterior distribution for $N$ actually looks like ({numref}`fig:l14:sandberg-drake`). The result is striking: when the orders-of-magnitude uncertainty in $f_l$, $f_i$, and the other "soft" factors is propagated honestly, a substantial fraction of the posterior probability mass sits *below* $N = 1$ even within the entire observable universe. In other words, "we are alone in the observable universe" is consistent with current scientific knowledge, not because it is the most likely outcome, but because the priors do not exclude it. This is what {cite:t}`SandbergDrexlerOrd2018` mean by *dissolving the Fermi paradox*: the paradox depends on a point estimate of $N$ that the data do not support, and the apparent silence of the universe is unsurprising once the genuine uncertainty in the inputs is admitted.
+
+```{figure} figures/sandberg2018_drake_posterior.avif
+:name: fig:l14:sandberg-drake
+:width: 80%
+
+Posterior probability distribution for the number $N$ of communicating civilisations in the observable universe, computed by {cite:t}`SandbergDrexlerOrd2018` by Monte-Carlo sampling each Drake-equation factor from its published range of estimates rather than from a single point estimate. (Top) Probability density: the distribution is heavily bimodal, with one peak below $N \sim 10^{-20}$ and another near $N \sim 1$ to $10^5$. The red circles mark Drake-style point estimates from the literature. (Middle) Cumulative distribution: roughly one third of the probability mass lies below $N = 1$, that is, "we are alone in the observable universe". (Bottom) Cumulative distribution of distance to the nearest civilisation. The two vertical lines mark the boundary "alone in the Milky Way" (red) and "alone in the observable universe" (blue). Reproduced from {cite:t}`SandbergDrexlerOrd2018`.
+```
+
 ### The Fermi paradox
 
 The Fermi paradox is a closely related framing question, often summarised as "where is everybody?" and attributed to Enrico Fermi over lunch at Los Alamos in 1950. The argument runs roughly as follows. Even with conservative estimates for the Drake-equation factors, the Milky Way is old enough (about $10^{10}$ years) that any spacefaring civilisation that arose more than a few million years ago could have crossed the galaxy many times over at sub-relativistic speeds. We see no evidence of any such civilisation. Why not?
@@ -333,6 +351,24 @@ Lyman-$\alpha$ and X-ray irradiances at the habitable zone of stars of different
 :width: 75%
 
 Habitability domains as a function of stellar effective temperature, computed in the {cite:t}`CuntzGuinan2016` "habPREP" framework. The curves show that K dwarfs and the cooler end of the G dwarfs maximise the time-integrated habitability score, balancing main-sequence lifetime against stellar activity. Reproduced from {cite:t}`CuntzGuinan2016`.
+```
+
+The 1D values listed above for $d_{\rm in}$ are themselves a simplification. Three-dimensional global climate models that resolve clouds give a different answer for tidally locked planets around M dwarfs. {cite:t}`Yang2013` showed that on a planet that always presents the same face to its star, strong convection at the substellar point lifts thick water clouds that drive the local albedo above $\sim 0.6$ and act as a *stabilising* feedback against runaway warming ({numref}`fig:l14:yang-clouds`). The result is that the inner edge of the HZ, defined as the largest stellar flux at which surface temperature stays below the runaway threshold, shifts inward by roughly a factor of two relative to the 1D Kopparapu boundary. The 1D HZ therefore *under-estimates* the inner edge of the M-dwarf HZ, and the corresponding occurrence of habitable planets around M dwarfs is correspondingly larger than the 1D values would suggest.
+
+```{figure} figures/yang2013_tidally_locked_clouds.avif
+:name: fig:l14:yang-clouds
+:width: 90%
+
+Climate response of tidally locked rocky planets to varying stellar flux from a 3D general-circulation model with clouds, from {cite:t}`Yang2013`. (a) Substellar surface temperature, (b) stratospheric water vapour mixing ratio, (c) planetary albedo, and (d) greenhouse warming, all as functions of incident stellar flux for spin-orbit resonances 1:1, 2:1, 6:1, a 1:1 case with clouds suppressed (red dashed), and a 1:1 case around a K dwarf (blue). The grey band marks the 1D habitable-zone limit. Substellar convective clouds drive the planetary albedo to $\sim 0.6$ in the 1:1 cases and prevent the surface from running away even at twice the 1D inner-edge flux; with clouds suppressed (red dashed), the runaway sets in at much lower flux. Reproduced from {cite:t}`Yang2013`.
+```
+
+The combined effect of these climatological corrections is captured in the {cite:t}`Shields2016` summary diagram ({numref}`fig:l14:shields-mdwarf-hz`), which compiles the 1D Kopparapu boundaries together with 3D GCM corrections from a number of independent groups and overlays the known M-dwarf and FGK habitable-zone planets. The figure makes two points at once. First, the 3D inner edge for slowly rotating tidally locked planets is markedly inside the 1D inner edge, especially for cool host stars. Second, the tidal-locking radius (grey dashed curve) cuts across the M-dwarf HZ, so essentially every M-dwarf HZ planet known today is tidally locked and is therefore in the regime where the cloud corrections matter.
+
+```{figure} figures/shields2016_hz_tidally_locked.avif
+:name: fig:l14:shields-mdwarf-hz
+:width: 80%
+
+Habitable-zone limits in the stellar effective temperature--stellar flux plane for FGKM hosts, from the {cite:t}`Shields2016` review of M-dwarf habitability. Solid lines show the {cite:t}`Kopparapu2014` 1D inner and outer edges; coloured dashed and dotted lines show 3D GCM corrections to the inner edge for slowly and rapidly rotating tidally locked planets from several independent studies (Abe et al.\ 2011, Leconte et al.\ 2013, {cite:t}`Yang2013`, Wolf \& Toon 2014). The grey dashed curve marks the tidal-locking radius. Coloured circles are confirmed habitable-zone planets known at the time of writing. Almost all M-dwarf HZ planets sit on or inside the tidal-locking radius and are also inside the 1D inner edge, which is precisely the regime where the cloud corrections of {cite:t}`Yang2013` change the answer. Reproduced from {cite:t}`Shields2016`.
 ```
 
 **Key insight.** The HZ as derived above is a useful 1D radiative limit. It is *well-defined* as a thermodynamic boundary on the location of liquid surface water, but it is *not* a sufficient condition for habitability. Real habitability also depends on planetary boundary conditions (volatile inventory, tectonic regime, escape history, magnetic shielding, evolutionary trajectory) that the 1D HZ ignores. Part 2's coupling diagram is the qualitative version of what a full 3D climate-evolution model computes quantitatively for an individual planet.
