@@ -132,6 +132,18 @@ The faint-young-Sun problem is the apparent contradiction between this lower bol
 Reproduced from {cite:t}`Zahnle2007`.
 ```
 
+```{figure} figures/charnay2013_archean_temperature.avif
+:name: fig:charnay-archean
+:width: 70%
+:align: center
+
+Three-dimensional general-circulation model results for the global mean surface temperature of the Archean Earth between $3.8$ Ga and $2.5$ Ga, from {cite:t}`Charnay2013`.
+Curves show solutions for three atmospheric compositions: $0.9$ mbar $\mathrm{CO_2}$ (blue), $10$ mbar $\mathrm{CO_2}$ with $2$ mbar $\mathrm{CH_4}$ (orange), and $0.1$ bar $\mathrm{CO_2}$ with $2$ mbar $\mathrm{CH_4}$ (red); solid lines include methane and dashed lines omit it.
+The dotted green line marks the freezing point of water.
+A few mbar of $\mathrm{CO_2}$ alone is insufficient to keep the Archean above freezing under a fainter Sun, but $\sim$0.1 bar of $\mathrm{CO_2}$ together with trace methane comfortably resolves the faint-young-Sun problem.
+Reproduced from {cite:t}`Charnay2013`.
+```
+
 On shorter timescales, **Milankovitch cycles** in Earth's orbit (eccentricity, axial obliquity, and the precession of the equinoxes, with periods of $\sim$100 kyr, $41$ kyr, and $19\text{--}23$ kyr respectively) modulate the seasonal and latitudinal distribution of solar insolation and pace the Pleistocene glacial-interglacial cycles of the last $\sim$2.6 Myr.
 These are the cycles imprinted on the Vostok and EPICA ice cores, with surface temperature swings of $\sim$8 K between glacial maxima and interglacials.
 Crucially, **Earth's climate has been remarkably stable on long timescales** in the sense that liquid water has persisted continuously for at least $4$ Gyr.
@@ -677,6 +689,18 @@ Surface weathering keeps the planet temperate for $\sim 0.9$ Gyr; once water is 
 Reproduced from {cite:t}`Honing2021`.
 ```
 
+```{figure} figures/constantinou2024_venus_pathways.avif
+:name: fig:constantinou-pathways
+:width: 90%
+:align: center
+
+The two dichotomous climate pathways for Venus from {cite:t}`Constantinou2024`, ending in interiors with very different water inventories.
+**Upper branch (dry Venus):** the planet emerges from its magma-ocean stage at $t \approx 100$ Myr without ever condensing a surface ocean; water is lost early via photolysis and hydrogen escape, leaving an interior depleted in hydrogen and a present-day mantle that degasses S- and C-rich, $\mathrm{H_2O}$-poor volcanic gases.
+**Lower branch (temperate, wet Venus):** the magma ocean crystallises with a condensed ocean at the surface, the planet remains habitable for several Gyr, and the present-day mantle still contains significant water that emerges in $\mathrm{H_2O}$-rich volcanic gases.
+The two interior signatures map onto observable differences in the chemistry of Venus' atmosphere. {cite:t}`Constantinou2024` argue from the destruction rates of $\mathrm{H_2O}$, $\mathrm{CO_2}$, and $\mathrm{OCS}$ in the present atmosphere that the volcanic source must be water-poor (at most $\sim$6\% $\mathrm{H_2O}$ mole fraction), favouring the dry-Venus branch.
+Reproduced from {cite:t}`Constantinou2024`.
+```
+
 ### The D/H ratio: smoking gun for water loss
 
 Whichever scenario is correct, there is one strong piece of empirical evidence that Venus once had at least $100\times$ more water than it does today: the deuterium-to-hydrogen ratio.
@@ -691,6 +715,18 @@ The exact relationship between the present-day D/H enrichment and the original w
 This is the strongest direct observational constraint we have that Venus has lost most of its primordial water to space.
 What it does not tell us is when the loss happened: hydrogen escape rates change over time as the EUV flux of the Sun decreases, and the integrated escape history can equally well be early (during a magma-ocean phase) or distributed over billions of years.
 Future noble gas measurements, particularly $^{36}$Ar/$^{38}$Ar and Xe isotopic ratios from a descent probe (planned by DAVINCI), are expected to discriminate between these histories, because different escape regimes leave different fractionation signatures across the noble gas series.
+
+```{figure} figures/wordsworth2014_abiotic_o2_schematic.avif
+:name: fig:wordsworth-abiotic-o2
+:width: 50%
+:align: center
+
+Schematic of the abiotic build-up of an $\mathrm{O_2}$-dominated atmosphere by photolytic water loss on a terrestrial habitable-zone planet, from {cite:t}`Wordsworth2014`.
+**Top:** during the early phase, stellar XUV flux photolyses atmospheric water vapour into hydrogen and oxygen; the lighter hydrogen escapes preferentially to space, while oxygen accumulates either in the atmosphere or condenses onto surface regions of low net instellation.
+**Bottom:** once enough $\mathrm{O_2}$ has built up, the planet enters a stable state in which continued $\mathrm{H_2O}$ photolysis and hydrogen escape are balanced by oxidation of the planetary interior.
+The same chain of processes (water photolysis, hydrogen escape, oxygen sinks) is the operative mechanism for desiccating Venus, and it leaves the residual D/H ratio enriched by the factor of $\sim$150 observed on present-day Venus.
+Reproduced from {cite:t}`Wordsworth2014`.
+```
 
 
 ### Volcanic activity today: is Venus alive?
@@ -741,6 +777,23 @@ First, it changes the atmospheric circulation pattern: the Coriolis force, which
 This changes the cloud distribution and hence the planetary albedo.
 Second, the slow rotation may suppress dynamo action in the core: Earth's geodynamo benefits from the strong Coriolis force that organises the convective flow, while a slowly rotating planet may struggle to maintain a coherent dynamo even if the core is convecting.
 The slow rotation is itself a puzzle (it may be the result of a giant impact, of solid-body tidal interaction with the Sun, or of atmospheric thermal tides braking the spin), but its consequences for the climate and the magnetic field are at least qualitatively understood.
+
+A useful way to visualise the consequences of the diverging water history is the **redox pump** sketched in {numref}`fig:wordsworth-n2pump`.
+Earth and Venus may have started from a similar reducing steam atmosphere over a magma ocean, but the choice of whether the surface ocean condenses (Earth) or whether photolysis and hydrogen escape destroy the steam atmosphere first (Venus) drives the planet through very different sequences of redox states.
+On Earth, the surface ends up moderately oxidising with most of the nitrogen partitioned into a $1$-bar $\mathrm{N_2}$ atmosphere; on Venus, the loss of hydrogen and oxidation of the interior leaves a much smaller $\mathrm{N_2}$ inventory in a hot, $\mathrm{CO_2}$-dominated atmosphere {cite:p}`WordsworthN2016`.
+
+```{figure} figures/wordsworth2016_n2_redox_pump.avif
+:name: fig:wordsworth-n2pump
+:width: 80%
+:align: center
+
+Schematic of the **water-loss redox pump** linking the differing atmospheric $\mathrm{N_2}$ inventories of Earth and Venus to their early water-loss histories, from {cite:t}`WordsworthN2016`.
+Both planets begin in **state A** with a reducing steam atmosphere over a magma ocean.
+Earth evolves directly to **state C**, a $1$-bar $\mathrm{N_2}$ atmosphere over a moderately oxidising mantle ($f_{\mathrm{O_2}} \approx$ FMQ) with surface liquid water and a substantial pool of nitrogen sequestered in the interior.
+Venus, on the other hand, passes through **state B**, in which intense hydrogen escape oxidises the upper mantle, before reaching **state D**, a hot $\mathrm{CO_2}$- and $\mathrm{N_2}$-rich atmosphere over a highly oxidised interior ($f_{\mathrm{O_2}} \approx$ MH).
+The diagram emphasises that the present atmospheric composition contrast between Earth and Venus is a downstream consequence of the water history operating through the planetary redox budget.
+Reproduced from {cite:t}`WordsworthN2016`.
+```
 
 The fourth input is the **tectonic regime**.
 Earth is in mobile-lid mode and Venus is in stagnant-lid mode.

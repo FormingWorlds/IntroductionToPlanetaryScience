@@ -58,6 +58,14 @@ The combination of *Mariner 10* gravity coefficients, the *MESSENGER* radio scie
 
 Putting numbers on it: the core radius is approximately $2020\ \mathrm{km}$, or about $83\%$ of the planet's radius. The mantle plus crust is therefore only about $420\ \mathrm{km}$ thick, or $17\%$ of the radius. By mass, the core represents roughly $70\%$ of Mercury, against only $32\%$ for Earth. Mercury is essentially a metal ball with a thin silicate shell. There is no other planet in the solar system that looks like this {cite:p}`Solomon2018`.
 
+```{figure} figures/margot2018_mercury_layers.avif
+:name: fig:margot2018-layers
+:width: 380px
+:align: center
+
+Schematic representation of Mercury's internal layering used in modern interior structure models from {cite:t}`MargotHauck2018`. From the centre outward, $R_{\mathrm{ic}}$ is the inner solid core boundary, $R_{\mathrm{oc}}$ separates the liquid outer core from the solid outer shell, $R_{\mathrm{b}}$ marks the optional dense compositional layer at the base of the silicate mantle, and $R_{\mathrm{m}}$ is the crust-mantle boundary. The radially varying densities of the inner and outer core ($\rho_{\mathrm{ic}}(r)$ and $\rho_{\mathrm{oc}}(r)$) capture compression and composition effects with depth.
+```
+
 Within the core, *MESSENGER* gravity and libration data are consistent with a layered structure: a **liquid outer core** (the part that decouples to give the libration signal), surrounding a small **solid inner core** whose existence and size remain debated. *MESSENGER* magnetometer measurements show that Mercury has a present-day intrinsic magnetic field, weak (about $1\%$ of Earth's surface field strength) but unmistakably global, dipolar, and aligned with the rotation axis. A weak active dynamo therefore operates in Mercury today. We will return to its peculiar geometry in a moment. For now, the main lesson is that the dynamo requires convection in the liquid outer core, which in turn requires that the core has not finished freezing despite Mercury's small size and $\sim 4.5$ Gyr of cooling. The geophysical implication, supported by detailed thermal-evolution models {cite:p}`Solomon2018,Wicht2017`, is that Mercury's core contains a significant fraction of light elements (most likely sulfur, possibly silicon or carbon) that lower the freezing point and slow the growth of a solid inner core.
 
 
@@ -68,6 +76,14 @@ The single most striking fact about Mercury is its iron enrichment. Earth, Venus
 1. **Selective condensation in the inner solar nebula.** In the early condensation models of the 1970s and 1980s, an inner disc midplane that was hot enough to inhibit silicate condensation but cool enough to condense Fe-Ni metal could naturally produce iron-enriched solids close to the Sun. Modern dynamical and chemical models do not, however, support a steep enough condensation gradient at $0.4$ AU, and this hypothesis is no longer favoured.
 
 2. **Vapour and aerosol stripping by the early Sun.** A very luminous young Sun, or strong stellar winds, could in principle have evaporated and blown away part of an originally silicate-rich proto-Mercury. The geochemical predictions of this scenario (heavy elements such as potassium should be depleted relative to volatiles like sodium) are partly in tension with *MESSENGER* surface composition measurements, which actually find Mercury enriched in moderately volatile elements such as Na, S, and K {cite:p}`Solomon2018`. This makes thermally driven mantle stripping increasingly hard to defend.
+
+```{figure} figures/nittler2020_mercury_chemistry.avif
+:name: fig:nittler-chemistry
+:width: 480px
+:align: center
+
+**(a)** Global maps of Mg/Si (left) and Al/Si (right) elemental ratios on Mercury's surface, derived from four years of *MESSENGER* X-Ray Spectrometer measurements by {cite:t}`Nittler2020`. White contours mark the High-Mg Region (HMR), the Caloris Basin (CB), the Northern Smooth Plains, and the Low-Mg Northern Smooth Plains (LM-NSP). **(b)** A higher-resolution Mg/Si zoom around the Gaudi and Stieglitz craters within the Caloris province, showing that compositional variations exist on small spatial scales as well. Mercury's surface is volatile-element rich and does not match the expectations of a planet that lost its silicate mantle by thermally driven evaporation, undermining the strongest version of the vaporisation-stripping hypothesis for Mercury's iron enrichment.
+```
 
 3. **One or more giant impacts.** A high-energy collision late in accretion could have stripped most of an originally Earth-like silicate mantle from a proto-Mercury, leaving a body dominated by its metallic core. This idea has been around since the 1980s and remains the leading hypothesis. {cite:t}`Chau2018` and others have run smoothed-particle hydrodynamics simulations to test specific scenarios, finding that a single hit-and-run encounter with a much larger projectile, or a sequence of moderate impacts, can in principle produce the right core mass fraction. {cite:t}`Franco2022` recently emphasised, however, that such configurations are dynamically rare in N-body integrations of the inner solar system: explaining Mercury via a single giant impact happens in well below $1\%$ of plausible histories. Multiple smaller impacts may be statistically more likely.
 
@@ -192,6 +208,14 @@ Phobos is the larger and inner of Mars' two moons, with a mean radius of $11.27\
 Deimos is smaller (mean radius $6.2\ \mathrm{km}$), has a longer orbital period of about $30$ hours, and is slowly receding from Mars on a much longer timescale. Both bodies are irregular in shape, very dark (reflectance under $7\%$), and spectroscopically similar to D-type asteroids, the most primitive class of small bodies in the outer solar system. Their bulk densities are low, $\sim 1.86\ \mathrm{g\ cm^{-3}}$ for Phobos, implying high porosity (perhaps $25\%$ to $35\%$), consistent with a rubble-pile internal structure {cite:p}`Kuramoto2022`.
 
 The origin of Phobos and Deimos has been debated for decades and remains genuinely unresolved. Two main hypotheses are on the table. The **captured asteroid** hypothesis is supported by the spectral resemblance to D-type and C-type primitive asteroids and by the low density. Its weakness is dynamical: capturing two objects into the very specific near-circular, near-equatorial orbits actually observed would require either very efficient gas drag (with dynamical implications for the early Martian atmosphere) or improbable sequences of three-body interactions. The **giant-impact debris** hypothesis postulates that a large collision early in Mars history threw silicate material into orbit, where it accreted into one or two larger moons that then evolved tidally outward and/or were broken up and re-accreted into Phobos and Deimos as we see them today. {cite:t}`Rosenblatt2016` showed that this scenario can produce both moons in their observed orbits. Its weakness is compositional: the simulated debris should be Mars-mantle-like in composition, not D-type-asteroid-like.
+
+```{figure} figures/hyodo2017_phobos_impact.avif
+:name: fig:hyodo-phobos
+:width: 650px
+:align: center
+
+Smoothed-particle hydrodynamics snapshots of a Borealis-scale giant impact onto early Mars from {cite:t}`Hyodo2017`, at four times after the collision (columns: $t = 0.17$, $0.5$, $5$, and $20$ hours). The rows show particle composition (top), temperature in $\mathrm{K}$, entropy gain in $\mathrm{J\,K^{-1}\,kg^{-1}}$, and pressure in $\mathrm{GPa}$. The impact heats disc material to $\sim 2000\ \mathrm{K}$, drives an entropy increase of $\sim 1500\ \mathrm{J\,K^{-1}\,kg^{-1}}$, and ejects a circumplanetary disc that contains both impactor and Martian-mantle material. Disc fragments collide at $3$--$5\ \mathrm{km\,s^{-1}}$ and grind down to $\sim 100\ \mu$m grains, providing the building blocks from which Phobos and Deimos may subsequently accrete.
+```
 
 JAXA's **Martian Moons eXploration** (MMX) mission, scheduled for launch in $2026$ and return in $2031$, is designed to settle the origin question {cite:p}`Kuramoto2022`. MMX will land on Phobos, collect at least $10\ \mathrm{g}$ of regolith from at least two locations, and return that material to Earth for laboratory analysis. The isotopic and mineralogical composition of even a few grams of Phobos material will allow direct testing of the capture-versus-impact hypotheses with the same techniques used for Hayabusa2's Ryugu samples and OSIRIS-REx's Bennu samples. MMX will also fly multiple close passes by Deimos and remotely characterise its surface.
 
@@ -551,6 +575,14 @@ H corona column density at Mars as a function of solar longitude over a Mars yea
 ```
 
 {cite:t}`Jakosky2018` summarised the integrated loss of the Martian atmosphere through history using the present-day MAVEN measurements scaled with reasonable assumptions about the evolution of the young Sun's EUV output. The headline result is that, over $4$ Gyr, Mars has lost the equivalent of $\sim 0.5$ to $1$ bar of $\mathrm{CO_2}$ and the equivalent of a $\sim 23$ m global ocean of water. Both numbers come with substantial uncertainty (factors of two or so), but they are large enough to bridge the gap between an early Mars with a thick wet atmosphere and the cold dry planet we see today. The escape was strongly enhanced in the first $\sim 1$ Gyr of solar system history, when the young Sun's EUV output was $10$ to $100$ times higher than today.
+
+```{figure} figures/hu2015_carbon_evolution.avif
+:name: fig:hu-carbon
+:width: 650px
+:align: center
+
+Reconstructed history of carbon partitioning on Mars from {cite:t}`Hu2015`, using the modern atmospheric $^{13}\mathrm{C}/^{12}\mathrm{C}$ ratio and known carbonate measurements as boundary conditions. **(a)** Atmospheric surface pressure of $\mathrm{CO_2}$ as a function of time since $3.8\ \mathrm{Ga}$ for a family of self-consistent solutions; **(b)** integrated $\mathrm{CO_2}$ loss to space by sputtering; **(c)** integrated loss by photochemical escape; **(d)** equivalent column of $\mathrm{CO_2}$ stored in carbonates. The solutions imply a Late Noachian / Early Hesperian atmospheric pressure of less than $1\ \mathrm{bar}$ in scenarios with surface (open-lake) carbonate formation, or up to $\sim 1.8\ \mathrm{bar}$ if substantial subsurface carbonate sequestration is allowed. The picture is consistent with the MAVEN-based escape budget but explicitly invokes the heavy-isotope enrichment of carbon as an independent constraint.
+```
 
 The Martian dynamo plays a critical role in this story. As long as Mars had a global magnetic field, the solar wind was deflected around the planet at a magnetopause analogous to (though smaller than) Earth's. Atmospheric ions in the upper Martian atmosphere were largely shielded from direct solar wind interaction, and ion escape was suppressed. Once the dynamo died (as we see next), the magnetic shield collapsed, the solar wind began interacting directly with the upper atmosphere, and ion escape became efficient. The link between dynamo cessation and atmospheric loss is one of the cleanest causal narratives in comparative planetology.
 
