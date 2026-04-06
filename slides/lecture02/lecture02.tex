@@ -86,6 +86,38 @@
   \end{columns}
 \end{frame}
 
+% ── Vertical structure ──────────────────────────────────
+\begin{frame}{Vertical Structure and Flaring}
+  The disk is not razor-thin: it has a finite vertical scale.
+  \vskip6pt
+  \begin{itemize}
+    \item Hydrostatic balance gives a Gaussian density profile with scale height $H$
+    \item $H/r = c_s / v_\mathrm{K}$ where $c_s$ is sound speed and $v_\mathrm{K}$ is Keplerian speed
+    \item Typical $H/r \sim 0.03$--$0.1$, increases outward (flared disk)
+    \item Dust \textbf{settles} toward the midplane under vertical gravity
+    \item Settling creates a denser dust layer ($H_\mathrm{dust}/H_\mathrm{gas} \sim 0.1$)
+    \item Once the midplane dust-to-gas ratio approaches unity, instabilities take over
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Dust settling is the first step toward planetesimal formation: it creates the conditions where streaming instability can act.}
+\end{frame}
+
+% ── Minimum Mass Solar Nebula ────────────────────────────
+\begin{frame}{The Minimum-Mass Solar Nebula}
+  If we spread the solar system's planets back into a disk, what mass would we need?
+  \vskip6pt
+  \begin{itemize}
+    \item Augment each planet's mass by solar H/He to match solar composition
+    \item Spread over an annulus centred on each planet
+    \item Result: \textbf{Minimum-Mass Solar Nebula (MMSN)}, Hayashi (1981)
+    \item Total mass: $\sim$0.01--0.02~$\Msun$
+    \item Surface density: $\Sigma_\mathrm{MMSN}(r) \approx 1700\,(r/\mathrm{AU})^{-3/2}$ g/cm$^2$
+    \item A convenient scaling, but modern observations favour more massive disks for Jovian cores
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Hayashi (1981); Desch (2007) for revisions}
+\end{frame}
+
 % ── The snow line ──────────────────────────────────────────
 \begin{frame}{The Snow Line}
   \begin{itemize}
@@ -134,6 +166,37 @@
   \source{ALMA/ESO/NAOJ/NRAO, Andrews et al.\ 2018}
   \vskip4pt
   {\small 20 nearby protoplanetary disks at the same spatial scale. Every disk shows rings, gaps, spirals, or crescents: structure is \textbf{ubiquitous}.}
+\end{frame}
+
+% ── PDS 70 ───────────────────────────────────────────────
+\begin{frame}{PDS 70: Planets Caught in the Act}
+  In 2018--2019, VLT/SPHERE and ALMA directly imaged \textbf{two protoplanets} inside the disk gap of PDS 70:
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{PDS 70 b}: $\sim$6~$M_\mathrm{Jup}$, $\sim$20~AU, $T \approx 1200$~K
+    \item \textbf{PDS 70 c}: similar mass, at $\sim$35~AU
+    \item H$\alpha$ emission indicates active accretion onto both planets
+    \item A circumplanetary disk detected around PDS 70 c (Benisty et al.\ 2021)
+    \item First direct evidence of giant planets forming inside a disk gap
+    \item Supports the interpretation that gaps in DSHARP disks are sculpted by embedded protoplanets
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Keppler et al.\ (2018); Haffert et al.\ (2019)}
+\end{frame}
+
+% ── ALMA MAPS ────────────────────────────────────────────
+\begin{frame}{ALMA MAPS: Chemical Diversity in Disks}
+  The Molecules with ALMA at Planet-Forming Scales (MAPS) survey (2021) resolved the chemical composition of 5 disks.
+  \vskip6pt
+  \begin{itemize}
+    \item Mapped the distributions of CO, HCO$^+$, HCN, C$_2$H, CH$_3$CN, H$_2$CO, \ldots
+    \item Showed that complex organic molecules are present at planet-forming distances
+    \item Different chemistries at different radii: volatile C/O ratios vary with distance
+    \item Snow lines for multiple species are directly observable
+    \item Implications: the compositions inherited by forming planets depend on where in the disk they assemble
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: \"{O}berg et al.\ (2021), \textit{ApJS}}
 \end{frame}
 
 % ── Disk lifetimes ─────────────────────────────────────────
@@ -231,16 +294,33 @@
   \end{block}
 \end{frame}
 
+% ── Gravitational focusing ───────────────────────────────
+\begin{frame}{Gravitational Focusing}
+  Why does the largest body in a swarm grow fastest?
+  \vskip6pt
+  \keyresult{$$\sigma_\mathrm{eff} = \pi R^2 \left(1 + \frac{v_\mathrm{esc}^2}{v_\infty^2}\right)$$}
+  \vskip6pt
+  \begin{itemize}
+    \item Classical hard-sphere cross-section $= \pi R^2$
+    \item Gravity of the body curves nearby trajectories inward
+    \item Effective collision cross-section is enhanced by $(1 + v_\mathrm{esc}^2/v_\infty^2)$
+    \item When $v_\mathrm{esc} \gg v_\infty$ (low random velocities), focusing is enormous
+    \item Because $v_\mathrm{esc} \propto \sqrt{M/R}$, the \textbf{largest} body focuses most effectively
+  \end{itemize}
+  \vskip4pt
+  Consequence: an initially small mass excess runs away into a dominant body.
+\end{frame}
+
 % ── Runaway and oligarchic growth ──────────────────────────
 \begin{frame}{Runaway \& Oligarchic Growth}
   \begin{columns}[T]
     \column{0.48\textwidth}
     \textbf{Runaway growth:}
     \begin{itemize}
-      \item Larger bodies focus trajectories:\\
-      $\sigma_{\mathrm{eff}} = \pi R^2 \!\left(1 + \frac{v_{\mathrm{esc}}^2}{v_\infty^2}\right)$
-      \item Biggest body grows fastest
+      \item Biggest body focuses best
+      \item Grows fastest (positive feedback)
       \item Reaches Moon--Mars mass in $\sim$10$^5$~yr
+      \item Ends when the big body stirs up the swarm
     \end{itemize}
 
     \column{0.48\textwidth}
@@ -252,6 +332,23 @@
       \item Isolation mass: $\sim$0.01--0.1~$\Mearth$
     \end{itemize}
   \end{columns}
+\end{frame}
+
+% ── Isolation mass ───────────────────────────────────────
+\begin{frame}{Isolation Mass}
+  How big can oligarchs get?
+  \vskip6pt
+  The \textbf{isolation mass} is reached when an oligarch has consumed all available planetesimals within its feeding zone:
+  \vskip6pt
+  $$M_\mathrm{iso} \sim \frac{(4\pi B a^2 \Sigma_s)^{3/2}}{(3 M_*)^{1/2}}$$
+  \vskip6pt
+  where $B \sim 5$--$10$ is the feeding zone width in Hill radii.
+  \vskip6pt
+  \begin{itemize}
+    \item Inner solar system ($\Sigma_s \sim 10$~g/cm$^2$): $M_\mathrm{iso} \sim 0.01$--$0.1\;\Mearth$
+    \item Outer solar system (beyond snow line, $\Sigma_s \sim 30$~g/cm$^2$): $M_\mathrm{iso} \sim 10\;\Mearth$
+    \item Explains why giant planet cores can reach critical mass outside the snow line but not inside
+  \end{itemize}
 \end{frame}
 
 % ── Core accretion ─────────────────────────────────────────
@@ -622,6 +719,43 @@
   \end{description}
 \end{frame}
 
+% ── Lindblad and corotation resonances ───────────────────
+\begin{frame}{Lindblad and Corotation Torques}
+  Two kinds of torques act on a planet embedded in a disk:
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Lindblad torques:} arise at inner and outer Lindblad resonances where spiral density waves form
+    \begin{itemize}
+      \item Inner LR exerts a positive torque (outward push)
+      \item Outer LR exerts a negative torque (inward push)
+      \item Outer typically wins slightly $\Rightarrow$ inward migration
+    \end{itemize}
+    \vskip4pt
+    \item \textbf{Corotation torques:} arise from material co-orbiting with the planet
+    \begin{itemize}
+      \item Depends sensitively on the disk temperature and density gradients
+      \item Can be positive (outward) and partially balance Lindblad
+    \end{itemize}
+  \end{itemize}
+  \vskip6pt
+  The real net torque depends on disk structure; this is an active area of research.
+\end{frame}
+
+% ── Gas disk dispersal ───────────────────────────────────
+\begin{frame}{How Does the Gas Disk Go Away?}
+  Planet formation has a hard deadline.
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Viscous accretion:} gas accretes onto the central star, feeding its growth
+    \item \textbf{Photoevaporation:} X-ray and EUV photons from the young star heat the upper disk layers, driving thermal winds
+    \item \textbf{MHD winds:} magnetised winds launched from the disk surface carry mass and angular momentum
+    \item Once surface density drops below a threshold, photoevaporation ``drains'' the remaining gas rapidly
+    \item Total lifetime: 3--5~Myr median (Haisch 2001)
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Giant planets must form within 1--3~Myr to capture substantial gas envelopes before the disk disappears.}
+\end{frame}
+
 % ── Nice model ─────────────────────────────────────────────
 \begin{frame}{The Nice Model}
   \begin{columns}[c]
@@ -686,17 +820,111 @@
 \section{Recent Advances \& Outlook}
 % ════════════════════════════════════════════════════════════
 
-% ── Recent results ─────────────────────────────────────────
-\begin{frame}{Recent Advances}
+% ── High-eccentricity migration ──────────────────────────
+\begin{frame}{High-Eccentricity Migration}
+  Not all migration is disk-driven.
+  \vskip6pt
   \begin{itemize}
-    \item \textbf{ALMA DSHARP survey:} Ring-and-gap substructure is ubiquitous; planet formation begins within 1~Myr
-    \vskip4pt
-    \item \textbf{Pebble accretion:} Refined models show giant planet cores must form within 1--3~Myr
-    \vskip4pt
-    \item \textbf{Juno at Jupiter:} Gravity data reveal a \textbf{dilute core}; heavy elements spread over inner $\sim$30--50\% of radius, not a compact nugget (Lecture~8)
-    \vskip4pt
-    \item \textbf{Meteorite isotopics:} New constraints on giant planet formation timescales from Hf--W and Mo isotope systematics
+    \item \textbf{Planet--planet scattering:} close encounters between giant planets scatter one inward on a highly eccentric orbit
+    \item \textbf{Kozai--Lidov mechanism:} a distant stellar or planetary companion torques a planet into a high-eccentricity, high-inclination orbit
+    \item Once eccentric, tidal interactions with the star circularise the orbit at short periods
+    \item Produces hot Jupiters on \textbf{high-obliquity} orbits (misaligned with stellar spin)
+    \item Observed: $\sim$1/3 of hot Jupiters have spin-orbit misalignments $>$30\textdegree
   \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Rasio \& Ford (1996); Winn et al.\ (2010); Dawson \& Johnson (2018)}
+\end{frame}
+
+% ── Meteoritic dichotomy ─────────────────────────────────
+\begin{frame}{Meteoritic Dichotomy: NC vs.\ CC}
+  Meteorites divide cleanly into two isotopic groups:
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Non-carbonaceous (NC):} ordinary, enstatite, and aubrite chondrites; most iron meteorites; originated in the inner solar system
+    \item \textbf{Carbonaceous (CC):} CI, CM, CV, CR, CB chondrites; some iron meteorites; originated in the outer solar system
+    \item Distinct $^{50}\mathrm{Ti}$, $^{54}\mathrm{Cr}$, $^{48}\mathrm{Ca}$, $^{94}\mathrm{Mo}$ isotopic signatures
+    \item Implies two separate reservoirs that did not mix for $\sim$3--4~Myr
+    \item Natural explanation: \textbf{Jupiter} formed early, blocking inward drift of pebbles
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Kruijer et al.\ (2017), \textit{PNAS}; Warren (2011)}
+\end{frame}
+
+% ── OSIRIS-REx / Hayabusa2 ──────────────────────────────
+\begin{frame}{Sample-Return Missions: Accretion Fossils}
+  Recent missions have delivered pristine asteroid samples to Earth.
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Hayabusa2} (JAXA): returned 5.4~g of asteroid \textbf{Ryugu} in 2020
+    \item C-type rubble-pile asteroid, carbonaceous chondrite affinity
+    \item Contains organic molecules including all RNA/DNA bases
+    \item \textbf{OSIRIS-REx} (NASA): returned $\sim$70~g of asteroid \textbf{Bennu} in 2023
+    \item Hydrated clays, carbonates, phosphates: aqueous alteration
+    \item Both targets formed in the outer main belt; provide snapshots of primordial accretion
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Yada et al.\ (2022) on Ryugu; Lauretta et al.\ (2024) on Bennu}
+\end{frame}
+
+% ── Juno dilute core ─────────────────────────────────────
+\begin{frame}{Juno: Jupiter's Dilute Core}
+  Juno's gravity measurements (Wahl et al.\ 2017) revolutionised our picture of Jupiter's interior.
+  \vskip6pt
+  \begin{itemize}
+    \item Pre-Juno assumption: compact heavy-element core, pure H/He envelope
+    \item Juno data: the ``core'' extends to \textbf{30--50\%} of Jupiter's radius
+    \item Smooth compositional gradient rather than a sharp boundary
+    \item Total heavy-element content: $\sim$20--40~$\Mearth$
+    \item Implication: Jupiter's formation was not a clean core-accretion event
+    \item Possible cause: an early giant impact dispersed the compact core (Liu et al.\ 2019), or gradual mixing during gas accretion
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Wahl et al.\ (2017); Militzer et al.\ (2022)}
+\end{frame}
+
+% ── Recent results ─────────────────────────────────────────
+\begin{frame}{More Recent Advances}
+  \begin{itemize}
+    \item \textbf{ALMA MAPS (2021):} chemical maps of 5 disks at planet-forming scales
+    \vskip4pt
+    \item \textbf{JWST protoplanetary disks:} MIRI detects water and organic molecules in the terrestrial zone of young disks (2023--2024)
+    \vskip4pt
+    \item \textbf{Pebble accretion:} refined timing constraints on giant-planet formation ($<$1--3~Myr)
+    \vskip4pt
+    \item \textbf{Meteorite isotopics:} NC-CC dichotomy + Mo isotopes timing of inner vs.\ outer disk
+    \vskip4pt
+    \item \textbf{Psyche:} NASA mission (launch 2023) to study a metal-rich asteroid, a possible naked core
+  \end{itemize}
+\end{frame}
+
+% ── JWST in disks ────────────────────────────────────────
+\begin{frame}{JWST: Water and Molecules in Terrestrial Zones}
+  JWST's MIRI instrument can detect molecular emission lines from the inner disks of young stars.
+  \vskip6pt
+  \begin{itemize}
+    \item Detected H$_2$O, CO$_2$, C$_2$H$_2$, HCN, CH$_3$ in the inner 1--10~AU of several disks
+    \item Water vapour abundance traces ice transport across the snow line
+    \item Pebble drift may enhance inner-disk water content during planet formation
+    \item Evidence that delivery of water to the terrestrial zone is an active, ongoing process during planet formation
+  \end{itemize}
+  \vskip6pt
+  {\tiny\color{ipsText!60} Source: Kamp et al.\ (2023); Banzatti et al.\ (2023); Perotti et al.\ (2023)}
+\end{frame}
+
+% ── Exoplanet architectures preview ──────────────────────
+\begin{frame}{What Kind of Planets Form?}
+  The outcomes of planet formation, seen in exoplanet surveys:
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Hot Jupiters:} rare ($\sim$1\% of solar-type stars), clear evidence for migration
+    \item \textbf{Warm/cool gas giants:} $\sim$10\% of stars at 1--10~AU
+    \item \textbf{Super-Earths / mini-Neptunes:} extremely common, $\sim$30--50\% of stars
+    \item \textbf{Radius valley:} gap in planet radii around 1.5--2~$\Rearth$ (Lecture~13)
+    \item \textbf{Compact multi-planet systems:} many stars host 3--8 planets inside 1~AU
+    \item \textbf{Solar-system analogues:} relatively rare
+  \end{itemize}
+  \vskip6pt
+  We will return to exoplanet demographics in Lecture~13.
 \end{frame}
 
 % ── Summary ────────────────────────────────────────────────

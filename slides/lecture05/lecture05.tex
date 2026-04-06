@@ -88,6 +88,23 @@
   \end{itemize}
 \end{frame}
 
+% ── Atmospheric origin summary ──────────────────────────
+\begin{frame}{Where Do Atmospheres Come From?}
+  A pictorial summary of the three classes.
+  \vskip6pt
+  \begin{description}
+    \item[Primary] Directly captured nebular gas; H$_2$/He dominated.\\
+    Requires $M \gtrsim 5$--$10\,\Mearth$ before disk dispersal.
+    \vskip4pt
+    \item[Secondary] Outgassed from the interior during accretion + cooling.\\
+    Composition set by $f_{\mathrm{O}_2}$ of the mantle.
+    \vskip4pt
+    \item[Tertiary] Modified by surface processes, photochemistry, and (for Earth) biology.
+  \end{description}
+  \vskip6pt
+  Over time, a planet's atmospheric inventory can be \textbf{replaced} or \textbf{re-equilibrated} entirely: the present composition may not reflect the initial inventory.
+\end{frame}
+
 % ── Tertiary atmospheres ─────────────────────────────────────
 \begin{frame}{Tertiary Atmospheres}
   \textbf{Modified by surface processes, photochemistry, or biology.}
@@ -400,6 +417,79 @@
   \end{columns}
 \end{frame}
 
+% ── Habitable zone concept ──────────────────────────────
+\begin{frame}{The Classical Habitable Zone}
+  Where around a star can a planet maintain liquid water?
+  \vskip6pt
+  \begin{itemize}
+    \item Inner edge: runaway greenhouse limit (water fully evaporates)
+    \item Outer edge: CO$_2$ condenses into ice clouds (Maximum Greenhouse limit)
+    \item For the Sun: classical HZ is $\sim$0.95--1.67~AU (Kopparapu et al.\ 2013)
+    \item Assumes an Earth-like atmosphere with CO$_2$/H$_2$O feedback
+    \item Does not account for tidal heating, magnetic fields, or greenhouse gas diversity
+    \item A starting point, not the last word
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Kasting et al.\ (1993); Kopparapu et al.\ (2013)}
+\end{frame}
+
+% ── Lapse rate atmospheric stability ────────────────────
+\begin{frame}{The Adiabatic Lapse Rate}
+  In the troposphere, convection keeps the lapse rate close to the adiabatic value.
+  \vskip6pt
+  $$\Gamma_\mathrm{dry} = \frac{g}{c_p}$$
+  \vskip6pt
+  \begin{itemize}
+    \item For Earth's air: $\Gamma_\mathrm{dry} \approx 9.8$~K/km
+    \item Moist adiabat (with water condensation): $\Gamma_\mathrm{moist} \approx 6$~K/km
+    \item A parcel rising faster than the lapse rate cools faster than its surroundings $\rightarrow$ sinks back
+    \item A profile steeper than the adiabat is \textbf{unstable} $\rightarrow$ convection
+    \item A profile shallower is \textbf{stable} $\rightarrow$ pure radiation
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Pierrehumbert (2010), \textit{Principles of Planetary Climate}}
+\end{frame}
+
+% ── Scale heights across solar system ───────────────────
+\begin{frame}{Atmospheric Scale Heights Across the Solar System}
+  \centering
+  \small
+  \begin{tabular}{l c c c c}
+    \toprule
+    \textbf{Body} & $\boldsymbol{T}$~\textbf{(K)} & $\boldsymbol{\mu}$ & $\boldsymbol{g}$~\textbf{(m\,s$^{-2}$)} & $\boldsymbol{H}$~\textbf{(km)} \\
+    \midrule
+    Venus   & 735 & 43.4 & 8.87 & 16 \\
+    Earth   & 288 & 29.0 & 9.81 & 8 \\
+    Mars    & 210 & 43.3 & 3.71 & 11 \\
+    Jupiter & 165 & 2.2  & 24.8 & 25 \\
+    Titan   & 94  & 28.6 & 1.35 & 21 \\
+    \bottomrule
+  \end{tabular}
+  \vskip6pt
+  \flushleft
+  \begin{itemize}
+    \item Jupiter: large $H$ despite strong gravity, because $\mathrm{H_2}$ is very light
+    \item Titan: large $H$ despite low $T$, thanks to very weak gravity
+    \item Venus: warm but heavy atmosphere balances out
+  \end{itemize}
+\end{frame}
+
+% ── Transmission spectroscopy preview ───────────────────
+\begin{frame}{Transmission Spectroscopy: Preview}
+  During a transit, starlight passes through the planet's \textbf{limb}.
+  \vskip6pt
+  \begin{itemize}
+    \item Absorbing molecules imprint dark features in the transmission spectrum
+    \item Path length $\sim$$2\sqrt{2 R_p H}$ through a layer of scale height $H$
+    \item Signal: $\Delta(R_p/R_\star)^2 \sim 2 R_p H/R_\star^2$
+    \item Bigger signal for puffy atmospheres (large $H$) around small stars
+    \item JWST has detected H$_2$O, CO$_2$, CH$_4$, SO$_2$ in multiple exoplanet atmospheres
+    \item Full treatment in Lecture 13 (Exoplanet Atmospheres)
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Seager \& Sasselov (2000); Kreidberg et al.\ (2014)}
+\end{frame}
+
 % ── Beer-Lambert law ─────────────────────────────────────────
 \begin{frame}{The Beer--Lambert Law}
   For a beam of initial intensity $I_0$ through a medium of optical depth $\tau$:
@@ -429,6 +519,44 @@
 \sectionimage{greenhouse_effect}{Greenhouse effect. Credit: Wikimedia, public domain}
 \section{Energy Balance \& Greenhouse Effect}
 % ════════════════════════════════════════════════════════════
+
+% ── Radiative-convective equilibrium ────────────────────
+\begin{frame}{Radiative-Convective Equilibrium}
+  A realistic atmosphere combines two regimes:
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Troposphere:} strong greenhouse absorption $\rightarrow$ unstable to convection
+    \begin{itemize}
+      \item Temperature follows the adiabatic lapse rate
+      \item Most of the atmospheric mass
+      \item Clouds and weather occur here
+    \end{itemize}
+    \vskip4pt
+    \item \textbf{Stratosphere:} optically thin $\rightarrow$ radiative equilibrium
+    \begin{itemize}
+      \item Temperature set by the balance of absorbed vs.\ emitted radiation
+      \item Stable against convection
+      \item On Earth, warmed by ozone UV absorption
+    \end{itemize}
+  \end{itemize}
+  \vskip6pt
+  The boundary (the tropopause) occurs where the radiative gradient becomes less steep than the adiabat.
+\end{frame}
+
+% ── Manabe-Strickler ─────────────────────────────────────
+\begin{frame}{Manabe and Strickler (1964)}
+  The first realistic 1D radiative-convective model of Earth's atmosphere.
+  \vskip6pt
+  \begin{itemize}
+    \item Solved for the vertical temperature profile with absorbing gases (H$_2$O, CO$_2$, O$_3$)
+    \item Reproduced the surface temperature and the tropopause self-consistently
+    \item Quantified the effect of doubling CO$_2$: $\sim$2~K warming (first ``climate sensitivity'' estimate)
+    \item Foundation of modern climate modelling
+    \item Manabe received the 2021 Nobel Prize in Physics for this work
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Manabe \& Strickler (1964), \textit{J.\ Atmos.\ Sci.}}
+\end{frame}
 
 % ── Energy balance derivation ────────────────────────────────
 \begin{frame}{Planetary Energy Balance}
@@ -575,6 +703,38 @@
   \end{itemize}
 \end{frame}
 
+% ── Evaporation of primary atmospheres ──────────────────
+\begin{frame}{Stripping Primary Atmospheres}
+  Young stars are highly active in EUV and X-ray; primordial H/He envelopes can evaporate.
+  \vskip6pt
+  \begin{itemize}
+    \item EUV flux is $\sim$100$\times$ higher in the first 100~Myr than today
+    \item Mass loss rate for hydrodynamic regime: $\dot{M} \propto F_\mathrm{EUV}\,R_p^3/(GM_p)$
+    \item For sub-Neptunes ($M_p \lesssim 10\,\Mearth$), atmospheres can be fully stripped in a few hundred Myr
+    \item For Neptune-mass planets and above, envelopes are retained
+    \item Produces the ``evaporation valley'' at $\sim$1.8~$\Rearth$ in Kepler data
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Owen \& Wu (2013); Lopez \& Fortney (2013); Fulton et al.\ (2017)}
+\end{frame}
+
+% ── Energy-limited escape ────────────────────────────────
+\begin{frame}{Energy-Limited Escape Rate}
+  A convenient estimate of mass loss:
+  \vskip6pt
+  \keyresult{$$\dot{M}_{\mathrm{EL}} = \eta\,\frac{\pi\,F_\mathrm{EUV}\,R_p^3}{G\,M_p}$$}
+  \vskip6pt
+  \begin{itemize}
+    \item $F_\mathrm{EUV}$: incident EUV flux
+    \item $\eta$: heating efficiency, typically 0.1--0.2
+    \item Scales as $R_p^3$: large, fluffy atmospheres lose mass fastest
+    \item Scales inversely with $M_p$: low gravity eases escape
+    \item Valid when recombination is negligible (``energy-limited regime'')
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Watson et al.\ (1981); Owen (2019)}
+\end{frame}
+
 % ── Non-thermal escape ───────────────────────────────────────
 \begin{frame}{Non-Thermal Escape Mechanisms}
   \begin{description}
@@ -656,6 +816,85 @@
   \end{itemize}
   \vskip6pt
   \textbf{Central theme:} atmospheric retention depends on mass, temperature, stellar radiation, magnetic shielding, and geological activity.
+\end{frame}
+
+% ── Impact erosion ───────────────────────────────────────
+\begin{frame}{Impact Erosion of Atmospheres}
+  Giant impacts can eject substantial atmospheric mass in a single event.
+  \vskip6pt
+  \begin{itemize}
+    \item Shockwaves from a $>$km-sized impactor accelerate upper-atmospheric gas above escape velocity
+    \item Efficiency depends on impact angle, velocity, and atmosphere mass
+    \item A grazing giant impact can eject the entire atmosphere above the impact horizon
+    \item Key process during the first $\sim$100~Myr of solar system history
+    \item May explain why Earth's early atmosphere was lost despite adequate gravity
+    \item Signature: noble gas isotope ratios (${}^{36}\mathrm{Ar}/{}^{38}\mathrm{Ar}$) record impact-driven loss
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Schlichting \& Mukhopadhyay (2018); Genda \& Abe (2005)}
+\end{frame}
+
+% ── Volcanic replenishment ───────────────────────────────
+\begin{frame}{Outgassing vs.\ Escape: A Dynamic Balance}
+  An atmosphere is not a static inheritance; it is a reservoir in flow.
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Supply:} volcanic outgassing, impact delivery, biological fluxes
+    \item \textbf{Loss:} thermal escape, non-thermal escape, chemical weathering, sequestration in oceans/crust
+    \item The \textbf{steady state} depends on the balance of these fluxes
+    \item Earth's active volcanism continually replaces CO$_2$ on the carbonate-silicate timescale ($\sim$0.5~Myr)
+    \item Mars lost its active volcanism and dynamo, so escape was not replenished
+    \item Venus has active (perhaps episodic) volcanism, but no oceans to absorb CO$_2$
+  \end{itemize}
+  \vskip4pt
+  \keyresult{Atmospheric longevity is as much about \textbf{replacement} as about initial inventory.}
+\end{frame}
+
+% ── MAVEN quantitative ───────────────────────────────────
+\begin{frame}{MAVEN at Mars: Quantifying Escape}
+  NASA's MAVEN (2014--) has measured Mars' atmospheric loss in situ.
+  \vskip6pt
+  \begin{itemize}
+    \item Present-day total escape rate: $\sim$1--2~kg/s (all species)
+    \item Dominant loss channel: photochemical escape of oxygen
+    \item Enhanced during solar storms ($\sim$10$\times$ increase)
+    \item Integrated loss over 4~Gyr: consistent with 0.5--0.8~bar of CO$_2$ lost
+    \item Combined with Jeans escape of hydrogen: $\sim$15--25~m global equivalent layer of water lost
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Jakosky et al.\ (2018), \textit{Icarus}; Lillis et al.\ (2017)}
+\end{frame}
+
+% ── JWST TRAPPIST results ───────────────────────────────
+\begin{frame}{JWST and the Fate of Rocky Atmospheres}
+  JWST has begun to directly test whether rocky planets around M dwarfs retain atmospheres.
+  \vskip6pt
+  \begin{itemize}
+    \item TRAPPIST-1 b: MIRI thermal emission consistent with a bare rock (dayside 508~K)
+    \item TRAPPIST-1 c: MIRI shows low heat redistribution $\Rightarrow$ thin or no atmosphere
+    \item LHS 3844 b: similar result using Spitzer data
+    \item Implications: inner rocky planets around active M dwarfs lose their atmospheres
+    \item Open question: whether \textbf{outer} TRAPPIST-1 planets retain atmospheres
+    \item JWST will target TRAPPIST-1 e, f during Cycle 3--4
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Greene et al.\ (2023); Zieba et al.\ (2023), \textit{Nature}}
+\end{frame}
+
+% ── Runaway greenhouse preview ──────────────────────────
+\begin{frame}{Runaway Greenhouse: Preview for Lecture 6}
+  What happens when a water-rich atmosphere gets too hot?
+  \vskip6pt
+  \begin{itemize}
+    \item More water vapour $\rightarrow$ stronger greenhouse $\rightarrow$ hotter surface
+    \item Positive feedback: hotter surface $\rightarrow$ more evaporation $\rightarrow$ more greenhouse
+    \item At $\sim$360~W/m$^2$ absorbed, the \textbf{Simpson-Nakajima limit} is reached
+    \item Beyond this, oceans fully evaporate and the runaway becomes unstoppable
+    \item Hydrogen then escapes hydrodynamically, leaving a dry CO$_2$ atmosphere
+    \item Venus' modern state is the end point of this process (Nakajima 1992; Goldblatt 2012)
+  \end{itemize}
+  \vskip6pt
+  Full treatment in \textbf{Lecture 6: Atmospheres II}.
 \end{frame}
 
 % ── Summary ──────────────────────────────────────────────────

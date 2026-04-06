@@ -640,6 +640,22 @@
   \textbf{Proposed solutions:} Reducing gases ($\mathrm{H_2}$, $\mathrm{CH_4}$) from volcanism and water-rock reactions. Early Mars climate remains a \textbf{major open problem}.
 \end{frame}
 
+% ── Milankovitch cycles ──────────────────────────────────
+\begin{frame}{Milankovitch Cycles: Orbital Forcing}
+  Periodic variations in Earth's orbit drive climate changes on $10^4$--$10^5$~yr timescales.
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Eccentricity:} varies between $e = 0$ and $e = 0.06$ on 100 and 400~kyr cycles
+    \item \textbf{Obliquity (axial tilt):} varies between 22.1\textdegree{} and 24.5\textdegree{} on $\sim$41~kyr cycles
+    \item \textbf{Precession:} the direction of the Earth's spin axis wobbles on $\sim$26~kyr
+    \item These change the seasonal and latitudinal distribution of sunlight
+    \item Pace the glacial-interglacial cycles of the Pleistocene
+    \item Signal clearly visible in ocean sediment $\delta^{18}$O records
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Hays et al.\ (1976); Laskar et al.\ (2004), \textit{A\&A}}
+\end{frame}
+
 % ── Climate feedbacks ───────────────────────────────────────
 \begin{frame}{Climate Feedbacks}
   Climate stability depends on feedback mechanisms:
@@ -754,18 +770,152 @@
 \section{Recent Advances \& Outlook}
 % ════════════════════════════════════════════════════════════
 
-% ── Recent advances ─────────────────────────────────────────
-\begin{frame}{Recent Advances}
+% ── Runaway greenhouse ──────────────────────────────────
+\begin{frame}{The Runaway Greenhouse}
+  A planet that absorbs too much stellar flux can lose its oceans entirely.
+  \vskip6pt
   \begin{itemize}
-    \item \textbf{Venus phosphine debate (2020):} Tentative $\mathrm{PH_3}$ detection in Venus's clouds sparked biological speculation. Subsequent reanalyses found a much weaker signal.\\
-    Motivated new missions: ESA \textbf{EnVision} and NASA \textbf{DAVINCI} (early 2030s).
-
-    \vskip6pt
-    \item \textbf{Dragonfly (launch $\sim$2028):} Nuclear-powered rotorcraft to explore Titan's surface. Will sample organic-rich dunes, test prebiotic chemistry scenarios.
-
-    \vskip6pt
-    \item \textbf{Early Mars climate:} Updated 3D climate models challenge the ``warm and wet'' hypothesis. Episodic warming from impacts, volcanism, or $\mathrm{H_2}$ greenhouse may be needed.
+    \item Water vapour is a strong greenhouse gas
+    \item Warmer surface $\rightarrow$ more evaporation $\rightarrow$ more greenhouse $\rightarrow$ hotter surface
+    \item Outgoing longwave radiation asymptotes to $\sim$280--350~W/m$^2$ (Simpson-Nakajima limit)
+    \item If absorbed stellar flux exceeds this, the positive feedback is unstoppable
+    \item Oceans fully evaporate; H$_2$O photolysed by UV; H escapes hydrodynamically
+    \item End state: dry, CO$_2$-rich atmosphere (Venus today)
   \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Nakajima et al.\ (1992); Goldblatt et al.\ (2013)}
+\end{frame}
+
+% ── Snowball Earth ──────────────────────────────────────
+\begin{frame}{Snowball Earth}
+  The opposite extreme: a planet almost entirely covered by ice.
+  \vskip6pt
+  \begin{itemize}
+    \item Earth may have gone through \textbf{two snowball states} in the Neoproterozoic ($\sim$720 and 635~Ma)
+    \item Triggered by ice-albedo runaway when the ice line reaches $\sim$30\textdegree{} latitude
+    \item Surface temperatures drop below $-50$\textdegree C, equatorial oceans freeze
+    \item Escape: volcanic CO$_2$ accumulates slowly over $\sim$10--100~Myr
+    \item Eventually greenhouse overwhelms albedo; ice melts rapidly
+    \item Correlated with the rise of complex (multicellular) life shortly afterward
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Hoffman \& Schrag (2002), \textit{Terra Nova}; Pierrehumbert et al.\ (2011)}
+\end{frame}
+
+% ── Thermal tides ────────────────────────────────────────
+\begin{frame}{Venus' Super-Rotation: Thermal Tides}
+  How does Venus' atmosphere rotate 60 times faster than the surface?
+  \vskip6pt
+  \begin{itemize}
+    \item Surface rotation: 243 days, retrograde
+    \item Cloud-top winds: 4 days, $\sim$100~m/s
+    \item Drives the atmosphere equatorward and upward from the surface
+    \item \textbf{Thermal tides:} solar heating of the cloud layer creates day-night pressure gradients
+    \item These generate atmospheric waves that transport angular momentum upward
+    \item \textbf{Planetary-scale waves} redistribute angular momentum meridionally
+    \item Combined effect: upward-equatorward flux sustains super-rotation
+    \item Detailed mechanism still debated; Akatsuki measurements ongoing
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: S\'{a}nchez-Lavega et al.\ (2017)}
+\end{frame}
+
+% ── Carbonate-silicate equation detail ────────────────
+\begin{frame}{Quantifying the Weathering Feedback}
+  A simple model for the carbonate-silicate thermostat:
+  \vskip6pt
+  $$W(T) = W_0 \exp\!\left(\frac{T - T_0}{T_e}\right)$$
+  \vskip6pt
+  where $W$ is the weathering rate, $T_e \approx 10$~K is the $e$-folding temperature.
+  \vskip6pt
+  \begin{itemize}
+    \item Doubling weathering requires $\sim$7~K warming
+    \item Halving it requires $\sim$7~K cooling
+    \item In steady state, $W = V$ (volcanism) sets atmospheric pCO$_2$
+    \item Perturbation analysis: climate damping timescale $\sim$0.5~Myr
+    \item Works only if liquid water and active volcanism coexist
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Walker et al.\ (1981); Pierrehumbert (2010)}
+\end{frame}
+
+% ── Neptune storms ─────────────────────────────────────
+\begin{frame}{Neptune's Extreme Weather}
+  Despite receiving only 1/900$^{\mathrm{th}}$ of Earth's solar flux, Neptune has the fastest winds in the solar system.
+  \vskip6pt
+  \begin{itemize}
+    \item Wind speeds up to 580~m/s ($\sim$2100~km/h)
+    \item \textbf{Great Dark Spot} discovered by Voyager 2 (1989)
+    \item Disappeared by 1994 (HST observations); new dark spots have since formed
+    \item Energy source: internal heat, not sunlight
+    \item Neptune radiates $\sim$2.6$\times$ more power than it absorbs from the Sun
+    \item Heat from slow contraction + possible compositional settling in the interior
+    \item Transient storms contrast with Jupiter's long-lived GRS
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Hammel et al.\ (1989); Pearl \& Conrath (1991)}
+\end{frame}
+
+% ── Venus phosphine ─────────────────────────────────────
+\begin{frame}{The Venus Phosphine Debate}
+  In 2020, a team reported tentative detection of phosphine (PH$_3$) in Venus' clouds.
+  \vskip6pt
+  \begin{itemize}
+    \item Greaves et al.\ (2020): $\sim$20~ppb PH$_3$ at 53--60~km altitude
+    \item No known abiotic source in Venus' atmosphere could explain this abundance
+    \item Sparked biological speculation: could PH$_3$ be produced by hypothetical Venusian microbes?
+    \item Subsequent reanalyses: the signal is much weaker (Villanueva et al.\ 2021)
+    \item Current status: unconfirmed, controversial
+    \item Motivated new Venus missions: DAVINCI (NASA), EnVision (ESA), VERITAS (NASA)
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Greaves et al.\ (2020), \textit{Nat.\ Astron.}; Villanueva et al.\ (2021)}
+\end{frame}
+
+% ── Dragonfly ───────────────────────────────────────────
+\begin{frame}{Dragonfly: A Rotorcraft for Titan}
+  NASA's Dragonfly (launch 2028, arrival 2034) will explore Titan's surface.
+  \vskip6pt
+  \begin{itemize}
+    \item Nuclear-powered rotorcraft, the first of its kind for planetary exploration
+    \item Mass: $\sim$450~kg; can fly $\sim$10~km between science stops
+    \item Will land in the Selk impact crater region
+    \item Sampling organic-rich dunes for mass spectrometry
+    \item Investigating prebiotic chemistry: does the combination of complex organics and transient impact-melt water produce biomolecules?
+    \item 2.7~year primary mission, visiting 20+ sites
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Turtle et al.\ (2019)}
+\end{frame}
+
+% ── JWST exoplanet weather ─────────────────────────────
+\begin{frame}{JWST: Weather on Distant Worlds}
+  JWST is transforming our view of exoplanet atmospheres.
+  \vskip6pt
+  \begin{itemize}
+    \item WASP-39 b: first clear detection of CO$_2$ in an exoplanet atmosphere (2022)
+    \item WASP-18 b: sub-micron wavelength thermal emission shows dayside-to-nightside heat redistribution
+    \item WASP-107 b: first firm detection of SO$_2$ $\Rightarrow$ photochemistry in action
+    \item Measurements of terminator cloudiness (east-west asymmetry)
+    \item Searching for weather patterns, circulation signatures
+    \item First steps toward characterising habitable-zone rocky planet atmospheres
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: The JWST Transiting Exoplanet Community ERS Team (2023)}
+\end{frame}
+
+% ── Early Mars climate ─────────────────────────────────
+\begin{frame}{Recent Advances: Early Mars Climate}
+  \begin{itemize}
+    \item Updated 3D climate models with reducing gases (H$_2$, CH$_4$) can warm early Mars
+    \item Wordsworth et al.\ (2021): collisionally-induced absorption by H$_2$-CO$_2$ is a strong greenhouse effect at high CO$_2$ pressures
+    \item Impact-triggered warming events: large impactors deliver heat and deflect vapour into the atmosphere
+    \item Localised glaciation models: the ``icy highlands'' picture
+    \item Episodic vs.\ sustained warming: still debated
+    \item Perseverance (Jezero crater, 2021--) investigating the aqueous record
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Wordsworth (2016); Wordsworth et al.\ (2021)}
 \end{frame}
 
 % ── Summary ────────────────────────────────────────────────
