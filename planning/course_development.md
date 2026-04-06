@@ -287,22 +287,59 @@ Each week consists of:
 - **Dedicated slide: Voyager legacy** — only spacecraft to visit Uranus and Neptune; still operational in the interstellar medium; power declining toward ~2030 end of life; our ice giant knowledge is 40 years out of date
 - Future ice giant missions: 2023 US Decadal Survey prioritised a Uranus orbiter as the top flagship mission for the 2030s; mission concepts in study phase; launch window early 2030s; atmospheric entry probe + magnetosphere + moon reconnaissance
 
-### Lecture 12: Meteorites, Asteroid Belt, Minor Planets & Comets
+### Lecture 12: Meteorites, Asteroids, Minor Planets & Comets
 
-- Meteorite classification: chondrites (ordinary, carbonaceous, enstatite), achondrites, irons, stony-irons
-- Chondrules and CAIs: oldest solar system solids, formation conditions
-- Isotopic dating: Pb–Pb, Al–Mg, Hf–W chronometry
-- **Blackboard derivation (~10 min):** Derive the radioactive decay law N(t) = N₀ e^{−λt} and the isochron equation for the Pb–Pb system, then show how the slope of the isochron gives the age of the oldest solar system solids (CAIs, 4.567 Gyr)
-- Meteorites as probes of early solar system conditions and parent body processes
-- Asteroid belt: structure, orbital families, resonance gaps (Kirkwood gaps)
-- Asteroid taxonomy: C-, S-, M-types and compositional mapping
-- Near-Earth asteroids: impact hazard, deflection strategies
-- Kuiper Belt and scattered disk: orbital structure, Pluto and dwarf planets
-- Oort cloud: theoretical framework and observational constraints
-- Comets: composition (ices, dust, organics), activity, tails (ion and dust)
-- Short-period vs. long-period comets: dynamical origins
-- Rosetta mission to 67P: key results
-- Recent advances: OSIRIS-REx sample return from Bennu, DART planetary defense results, Lucy mission to Trojan asteroids, new Kuiper Belt object discoveries and interstellar object detections
+Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–L11: meteorites (Part 1), then populations and dynamics (Part 2), then messengers and visitors (Part 3). Pluto is covered here as a Kuiper Belt / dwarf planet, not in L11.
+
+**Part 1: Meteorites — samples of the early solar system**
+
+- Why meteorites matter: oldest rocks available for lab analysis, absolute ages, ~70,000 classified falls
+- Meteorite classification: chondrites (ordinary, carbonaceous, enstatite) vs achondrites vs irons; oxygen isotope fingerprinting
+- Chondrites: OC (H/L/LL), CC (CI/CM/CV/CO/CR/CK/CH/CB), EC (EH/EL); CI chondrites match solar photosphere
+- Chondrules and CAIs: CAIs are oldest solar system solids (4.567 Gyr), chondrules form 2–4 Myr later
+- Isotopic dating: long-lived (Pb–Pb, Rb–Sr, Sm–Nd) vs extinct (²⁶Al, ⁵³Mn, ¹⁸²Hf, ¹²⁹I, ²⁴⁴Pu) chronometers
+- **Blackboard derivation (~10 min):** Pb–Pb isochron dating. Start from N(t) = N₀ e^{−λt}, use the double U→Pb decay system, derive the isochron equation, apply to CAIs for the 4567.30 ± 0.16 Myr age (Connelly et al. 2012). Key insight: self-calibrating via parallel ²³⁵U and ²³⁸U decay
+- Petrographic types (1–7), shock stages (S1–S6), differentiated meteorites (irons, pallasites, HEDs from Vesta), Martian (SNC) and lunar meteorites
+- **The NC–CC isotopic dichotomy — three competing interpretations:**
+  1. **Jupiter as early physical barrier (Kruijer et al. 2017):** Hf–W chronology + isotope data; Jupiter core to ~20 M⊕ by ~1 Myr; gravitationally blocks pebble drift
+  2. **Snow-line migration + pebble isolation (Lichtenberg et al. 2021, Science):** bifurcation without Jupiter as a physical dam; relaxes Jupiter formation timescale
+  3. **Temporal / age dichotomy (Bizzarro, Connelly, Johansen):** NC and CC are formation epochs, not spatial reservoirs; CC planetesimals systematically younger
+- Meta-note: what all three agree on (early structural/temporal order) vs what they disagree on (spatial vs dynamical vs temporal cause); actively debated as of 2024–2025
+
+**Part 2: Small body populations and dynamics**
+
+- Asteroid belt: ~1.2 million known, total mass ~4×10⁻⁴ M⊕, dominated by Ceres (~30%)
+- Kirkwood gaps as dynamical sinks at mean-motion resonances with Jupiter (2:1, 3:1, 5:2)
+- Collisional families (Eos, Koronis, Themis, Vesta)
+- Spectral taxonomy: C-type, S-type, M-type, V, D, P/K; heliocentric compositional gradient mirrors disk
+- Near-Earth asteroids: ~35,000 known; Yarkovsky delivery from resonances; impact frequency scaling; DART demonstrated kinetic deflection 2022; LSST/Rubin to increase discovery rate ~10×
+- Ceres and the Dawn mission: hydrated surface, salt deposits, possible subsurface brines; possibly a displaced outer-solar-system body
+- Kuiper Belt structure: classical (cold/hot), resonant (plutinos at 3:2, twotinos at 2:1), scattered disk, detached objects; fossil record of Neptune migration
+- Pluto and Charon: New Horizons 2015 revelations (Sputnik Planitia convection, water-ice mountains, thin N₂ atmosphere, possible subsurface ocean); Arrokoth flyby 2019 as pristine cold classical KBO
+- Other dwarf planets: Eris, Haumea (ring + family), Makemake, Sedna, Gonggong, Quaoar, Orcus, Salacia
+- Oort cloud: theoretical reservoir at 2000–50,000 AU, never directly observed, inferred from long-period comet statistics, ~10¹¹–10¹² objects
+- Comets: "dirty snowballs", nucleus 1–30 km, coma, ion tail (anti-sunward), dust tail (curved); two tails as diagnostic
+- Short-period comets (JFCs from scattered disk) vs long-period comets (from Oort cloud); Halley as intermediate case
+- The D/H debate: 67P vs Hartley 2 span factor of ~3 in D/H; Earth's oceans consistent with mix of CC + comet sources; comets alone cannot explain Earth's water
+
+**Part 3: Messengers and visitors**
+
+- Rosetta at 67P/Churyumov–Gerasimenko: first orbit + lander (Philae), bilobed nucleus as contact binary, D/H ~3× Earth's, glycine and organic molecules, ~75% porosity
+- Sample-return missions: Hayabusa (Itokawa S-type, tiny sample), Hayabusa2 (Ryugu C-type, 5.4 g, organics + amino acids), OSIRIS-REx (Bennu B-type, ~70 g, hydrated clays + prebiotic organics); lab-quality data far beyond in-situ spectroscopy
+- DART at Dimorphos + Hera follow-up (launched October 2024, arrival 2026)
+- Lucy to Jupiter Trojans (launched 2021, 8 Trojans 2027–2033, Dinkinesh flyby 2023 revealed satellite moonlet)
+- Psyche (launched October 2023, arrival 2029): test of exposed-core hypothesis for M-type asteroid
+- Interstellar visitors: 1I/'Oumuamua (2017, elongated, non-grav acceleration unexplained), 2I/Borisov (2019, clearly cometary), 3I/ATLAS (2025, under characterisation)
+- LSST/Rubin expected to find ~1 ISO/year; ESA Comet Interceptor (launch 2029) waiting at L2 for pristine long-period comet or ISO
+
+**Part 3 (comparative payoff) / Summary**
+
+- Small bodies = formation fossils; inner (rocky) vs outer (icy) split mirrors disk temperature structure (L2)
+- Orbital architecture records giant planet migration history (Nice model, Grand Tack; L2)
+- Pb–Pb age of CAIs at 4567.30 ± 0.16 Myr is the most precise number in planetary science
+- Three-way NC–CC debate illustrates how the same data can support different physical pictures
+- Recent mission bonanza (OSIRIS-REx, Hayabusa2, DART, Lucy, Psyche, Rosetta) + upcoming (Hera, Comet Interceptor, LSST) are transforming the field
+- Interstellar visitors connect solar system science directly to exoplanets (forward to L13/L14)
 
 ### Lecture 13: Exoplanets — Detection Methods, Demographics, & Characterization
 
@@ -489,7 +526,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 9 | Rocky planets: Earth & Venus | Outline drafted | Medium |
 | 10 | Rocky planets: Mercury & Mars | Outline drafted | Medium |
 | 11 | Gas & ice giants | Outline drafted | Medium |
-| 12 | Meteorites, asteroids, minor planets & comets | Not started | Medium |
+| 12 | Meteorites, asteroids, minor planets & comets | Outline drafted | Medium |
 | 13 | Exoplanets | Not started | Medium |
 | 14 | Synthesis & astrobiology | Not started | Low |
 
