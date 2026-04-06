@@ -447,18 +447,19 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 - Build system: `slides/Makefile` with `avif2png` and `svg2pdf` targets (auto-conversion for XeLaTeX via `magick` and `cairosvg`), `latexmk -xelatex`; integrated into root `Makefile` via `make slides`
 - `.gitignore`: ignores LaTeX build artifacts and generated PNG/PDF in slide figure directories
 
-**Lectures 1-8 slides (all built cleanly, second adversarial review pass complete):**
-- L1: `slides/lecture01/lecture01.tex`, 61 pages, 23 figures
-- L2: `slides/lecture02/lecture02.tex`, 47 pages, 10 figures (including solar_nebula_stages roadmap now integrated)
-- L3: `slides/lecture03/lecture03.tex`, 37 pages, 6 figures + expanded blackboard derivation (3 frames) + gravitational differentiation + mantle plumes frames added
-- L4: `slides/lecture04/lecture04.tex`, 33 pages, 7 figures + partition coefficients frame + split Volatile Delivery into two frames
-- L5: `slides/lecture05/lecture05.tex`, 46 pages, 7 figures
-- L6: `slides/lecture06/lecture06.tex`, 51 pages, 7 figures + expanded Clausius-Clapeyron derivation (extra integration step)
-- L7: `slides/lecture07/lecture07.tex`, 56 pages, 13 figures + new Remote Sensing section (3 frames: overview, radar imaging, laser altimetry)
-- L8: `slides/lecture08/lecture08.tex`, 55 pages, 6 figures + source citations added to key numerical tables
+**Lectures 1-8 slides (all built cleanly, expanded to 60+ frames each):**
+- L1: `slides/lecture01/lecture01.tex`, 61 pages
+- L2: `slides/lecture02/lecture02.tex`, 61 pages
+- L3: `slides/lecture03/lecture03.tex`, 60 pages
+- L4: `slides/lecture04/lecture04.tex`, 60 pages
+- L5: `slides/lecture05/lecture05.tex`, 60 pages
+- L6: `slides/lecture06/lecture06.tex`, 60 pages
+- L7: `slides/lecture07/lecture07.tex`, 60 pages
+- L8: `slides/lecture08/lecture08.tex`, 60 pages
 - All 105 em-dash instances across the 8 decks replaced per CLAUDE.md style
 - All SVG figures in column layouts audited and constrained with `width=\linewidth, keepaspectratio` to prevent overflow
 - `slides/Makefile` updated with `svg2pdf` target using `cairosvg` (L2-L6 had SVG references that xelatex could not resolve before this fix)
+- Second pass added: recent-developments frames (Juno, JUICE, Europa Clipper, OSIRIS-REx, Hayabusa2, DART, JWST MAPS, Perseverance, BepiColombo, Psyche, MAVEN, InSight, Tarduno paleomagnetism), dedicated physics-derivation frames (Rayleigh number comparison, Nusselt scaling, adiabatic gradient, Jeans parameter, energy-limited escape, partition coefficients, Hf-W chronometer, magnetopause derivation, tidal dissipation rate), and deeper notes-coverage frames (mantle reservoirs, mantle plumes, snowball Earth, runaway greenhouse, Milankovitch cycles, thermal tides, super-ionic ice, Ganymede interior, crater size-frequency distribution)
 
 Each slide deck requires:
 - LaTeX source file (Beamer presentation class) using the custom IPS theme (`slides/common/beamerthemeIPS.sty`)

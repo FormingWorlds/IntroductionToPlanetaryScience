@@ -83,6 +83,20 @@
   \keyresult{Enough to melt Earth many times over. Accretion inevitably produces a \textbf{magma ocean}.}
 \end{frame}
 
+% ── Accretional energy partitioning ───────────────────────
+\begin{frame}{Where Does the Accretional Energy Go?}
+  Not all $E_{\mathrm{acc}}$ is retained as interior heat.
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Radiation to space:} hot surface cools efficiently during late accretion
+    \item \textbf{Thermal blanketing:} a thick primordial atmosphere traps heat, raising retention
+    \item \textbf{Depth of deposition:} energy from giant impacts is buried deep, while small impacts deposit near the surface
+    \item Typical retained fraction: 10--50\% (depends on impact size distribution)
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Even 10\% retention is enough to fully melt a terrestrial planet: the magma ocean is effectively guaranteed for bodies $\gtrsim$ Mars-sized.}
+\end{frame}
+
 % ── Gravitational differentiation ─────────────────────────
 \begin{frame}{Gravitational Differentiation}
   A second, one-time burst of heat accompanies \textbf{core formation}.
@@ -135,13 +149,50 @@
 \begin{frame}{Short-Lived Isotopes: ${}^{26}\mathrm{Al}$}
   \begin{itemize}
     \item Half-life: only 0.72~Myr (now extinct)
-    \item Produced by nearby stellar nucleosynthesis
-    \item In the first few Myr: extraordinarily potent heat source
+    \item Produced by nearby stellar nucleosynthesis, delivered into the protoplanetary disk
+    \item Initial ${}^{26}\mathrm{Al}/^{27}\mathrm{Al}$ ratio $\sim 5 \times 10^{-5}$ (canonical)
+    \item In the first few Myr: extraordinarily potent heat source ($10^{-7}$~W\,kg$^{-1}$ initially)
     \item Could melt planetesimals as small as a few km radius
     \item Initiated core formation and volatile loss \textbf{before} planets fully assembled
   \end{itemize}
   \vskip8pt
   \keyresult{${}^{26}\mathrm{Al}$ is why even small asteroids show evidence of melting and differentiation in the meteorite record.}
+\end{frame}
+
+% ── 60Fe and other short-lived isotopes ───────────────────
+\begin{frame}{Other Short-Lived Radionuclides}
+  The young solar system contained a full zoo of short-lived isotopes:
+  \vskip6pt
+  \centering
+  \small
+  \begin{tabular}{l c c l}
+    \toprule
+    \textbf{Isotope} & \textbf{Half-life (Myr)} & \textbf{Daughter} & \textbf{Role} \\
+    \midrule
+    ${}^{26}\mathrm{Al}$ & 0.72 & ${}^{26}\mathrm{Mg}$ & Dominant heating \\
+    ${}^{60}\mathrm{Fe}$ & 2.6 & ${}^{60}\mathrm{Ni}$ & Minor heating; debated initial abundance \\
+    ${}^{53}\mathrm{Mn}$ & 3.7 & ${}^{53}\mathrm{Cr}$ & Chronometer (not major heater) \\
+    ${}^{182}\mathrm{Hf}$ & 8.9 & ${}^{182}\mathrm{W}$ & Core formation chronometer (Lecture~4) \\
+    ${}^{129}\mathrm{I}$ & 16 & ${}^{129}\mathrm{Xe}$ & Atmosphere formation timing \\
+    \bottomrule
+  \end{tabular}
+  \vskip6pt
+  \flushleft
+  {\small The production of these isotopes likely required injection from a nearby supernova or AGB star into the molecular cloud that formed the solar system.}
+\end{frame}
+
+% ── Heat budget over time ─────────────────────────────────
+\begin{frame}{How Heat Production Has Changed Over Time}
+  \begin{itemize}
+    \item $t = 0$ (solar system formation): ${}^{26}\mathrm{Al}$ dominates ($\sim$10$^{-7}$ W\,kg$^{-1}$)
+    \item $t = 5$~Myr: ${}^{26}\mathrm{Al}$ mostly gone
+    \item $t = 10$--100~Myr: transition to long-lived isotopes
+    \item $t = 0.5$~Gyr: ${}^{235}\mathrm{U}$ and ${}^{40}\mathrm{K}$ dominate
+    \item $t = 4.5$~Gyr (today): ${}^{238}\mathrm{U}$ and ${}^{232}\mathrm{Th}$ dominate
+    \item Total radiogenic heat today is $\sim$25--30\% of its value at formation
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Small bodies melted early thanks to ${}^{26}\mathrm{Al}$, even if their long-lived budget was modest.}
 \end{frame}
 
 % ── Earth's heat budget ──────────────────────────────────
@@ -201,6 +252,49 @@
   \keyresult{$$\tau_{\mathrm{cond}} \sim \frac{L^2}{\kappa}$$}
   \vskip6pt
   We will derive this next.
+\end{frame}
+
+% ── Thermal conductivity values ───────────────────────────
+\begin{frame}{Thermal Conductivity: Typical Values}
+  \centering
+  \small
+  \begin{tabular}{l c c}
+    \toprule
+    \textbf{Material} & $\boldsymbol{k}$ \textbf{(W\,m$^{-1}$\,K$^{-1}$)} & $\boldsymbol{\kappa}$ \textbf{(m$^2$\,s$^{-1}$)} \\
+    \midrule
+    Silicate rock (upper mantle) & 3--5 & $\sim$10$^{-6}$ \\
+    Bridgmanite (lower mantle) & 5--10 & $\sim$2$\times 10^{-6}$ \\
+    Water ice & 2.2 & 1.1$\times 10^{-6}$ \\
+    Iron (solid) & 80 & $\sim$2$\times 10^{-5}$ \\
+    Air (atmosphere) & 0.025 & $\sim$2$\times 10^{-5}$ \\
+    \bottomrule
+  \end{tabular}
+  \vskip6pt
+  \flushleft
+  \begin{itemize}
+    \item Metals have high $k$ but also high $\rho c_p$: intermediate $\kappa$
+    \item Rocks have low $k$ and low $\rho c_p$: similar $\kappa$
+    \item This is why the $L^2/\kappa$ scaling matters more than $k$ alone
+  \end{itemize}
+\end{frame}
+
+% ── Radiation dominance ───────────────────────────────────
+\begin{frame}{When Does Radiation Dominate?}
+  The Stefan--Boltzmann law $F = \epsilon\sigma T^4$ gives the heat flux from a surface at temperature $T$.
+  \vskip6pt
+  \textbf{Radiation matters in:}
+  \begin{itemize}
+    \item \textbf{Planetary surfaces:} heat loss to space (Lecture~5 energy balance)
+    \item \textbf{Optically thin atmospheres:} e.g.\ Mars' upper atmosphere
+    \item \textbf{Magma oceans:} molten silicate at $T \gtrsim 2000$~K radiates efficiently
+  \end{itemize}
+  \vskip6pt
+  \textbf{Why not in solid interiors?}
+  \begin{itemize}
+    \item Silicate rocks are opaque at infrared wavelengths
+    \item Photon mean free paths are much smaller than conductive length scales
+    \item Exception: partially transparent silicates above $\sim$2000~K become radiatively conductive
+  \end{itemize}
 \end{frame}
 
 % ── Convection overview ──────────────────────────────────
@@ -352,6 +446,49 @@
   \keyresult{The Nusselt number Nu $\propto$ Ra$^{1/3}$ measures convection efficiency.\\For Earth: Nu $\sim (10^7)^{1/3} \sim 200$, so convection transports heat 200$\times$ faster than conduction.}
 \end{frame}
 
+% ── Rayleigh number comparison ────────────────────────────
+\begin{frame}{Rayleigh Number Across the Solar System}
+  \centering
+  \small
+  \begin{tabular}{l c l}
+    \toprule
+    \textbf{Body} & \textbf{Ra} & \textbf{Regime} \\
+    \midrule
+    Earth's mantle      & $10^7$--$10^8$ & Vigorous convection \\
+    Venus' mantle       & $10^7$--$10^8$ & Vigorous (stagnant lid) \\
+    Mars' mantle        & $10^6$--$10^7$ & Moderate convection \\
+    Moon's mantle       & $10^4$--$10^5$ & Weak; cooling by conduction \\
+    Mercury's mantle    & $\sim$$10^4$    & Marginal; largely cooled \\
+    Magma ocean         & $\gtrsim 10^{25}$ & Turbulent convection \\
+    Earth's outer core  & $\gtrsim 10^{25}$ & Turbulent (dynamo) \\
+    \bottomrule
+  \end{tabular}
+  \vskip6pt
+  \flushleft
+  {\small Ra is hyper-sensitive to size ($\propto d^3$) and viscosity ($\propto 1/\eta$). Small bodies and very viscous interiors quickly drop below Ra$_c$.}
+\end{frame}
+
+% ── Nusselt scaling ───────────────────────────────────────
+\begin{frame}{Nusselt Number: Efficiency of Convection}
+  \begin{itemize}
+    \item $\mathrm{Nu} = q_{\mathrm{total}}/q_{\mathrm{cond}}$ = actual flux over conductive flux
+    \item Nu~$=$~1: pure conduction
+    \item Nu~$\gg$~1: vigorous convection
+  \end{itemize}
+  \vskip6pt
+  Classical scaling from boundary-layer theory:
+  $$\mathrm{Nu} \propto \mathrm{Ra}^\beta, \quad \beta \approx 1/3$$
+  \vskip6pt
+  Consequences:
+  \begin{itemize}
+    \item Doubling Ra only $\sim$26\% more efficient (weak sensitivity)
+    \item Increasing Ra by $10^3$: Nu increases by 10$\times$
+    \item Earth with Ra $\sim 10^7$ has Nu $\sim 200$
+  \end{itemize}
+  \vskip6pt
+  {\tiny\color{ipsText!60} Source: Schubert et al.\ (2001), \textit{Mantle Convection in the Earth and Planets}}
+\end{frame}
+
 % ── Boundary layers ───────────────────────────────────────
 \begin{frame}{Thermal Boundary Layers}
   A convecting interior develops three layers:
@@ -368,6 +505,22 @@
   \end{enumerate}
   \vskip8pt
   Nearly all the temperature drop occurs in the two thin boundary layers.
+\end{frame}
+
+% ── Adiabatic temperature gradient ───────────────────────
+\begin{frame}{The Adiabatic Gradient}
+  In the well-mixed convecting interior, temperature follows an \textbf{adiabat}:
+  \vskip6pt
+  $$\left(\dv{T}{r}\right)_{\mathrm{adiabat}} = -\frac{\alpha g T}{c_p}$$
+  \vskip6pt
+  \begin{itemize}
+    \item $\alpha$ = thermal expansion, $g$ = gravity, $c_p$ = specific heat
+    \item For Earth's upper mantle: $\sim$0.3~K/km (a few K per km)
+    \item Much shallower than the conductive gradient in the lithosphere ($\sim$25~K/km)
+    \item Adiabatic profiles are nearly isothermal on the scale of the mantle
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Temperature changes only a few hundred K over the entire convecting mantle: efficient mixing keeps the interior nearly adiabatic.}
 \end{frame}
 
 % ── Tectonic regimes ──────────────────────────────────────
@@ -395,6 +548,38 @@
   Why Earth is unique: likely a combination of water, size, and thermal history.
 \end{frame}
 
+% ── Why Earth has plate tectonics ────────────────────────
+\begin{frame}{Why Does Earth Have Plate Tectonics?}
+  One of the biggest open questions in planetary geophysics.
+  \vskip6pt
+  Proposed factors:
+  \begin{itemize}
+    \item \textbf{Water:} weakens rocks at fault zones; lowers melting point in subducting slabs
+    \item \textbf{Planet size:} higher convective stresses in a larger mantle
+    \item \textbf{Thermal state:} must be cold enough for a rigid lid but hot enough to sustain plume-driven rifting
+    \item \textbf{Prior history:} once plate tectonics starts, it may be self-sustaining (recycling weakens the lid)
+    \item Venus may have had plate tectonics in the past (tessera highlands); lost it after drying out
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Habitability-oriented view: plate tectonics is linked to liquid water, and both are linked to long-term climate stability.}
+\end{frame}
+
+% ── Heat-pipe volcanism ──────────────────────────────────
+\begin{frame}{Heat-Pipe Volcanism}
+  An alternative heat-loss regime for very hot bodies.
+  \vskip6pt
+  \begin{itemize}
+    \item Magma rises through conduits (``heat pipes'')
+    \item Erupts on the surface, cools, and is buried by new lava
+    \item Old crust subsides into the hot interior as new lava covers it
+    \item \textbf{Io today:} global resurfacing by volcanism every $\sim$10$^6$~yr
+    \item \textbf{Early Earth:} may have been a heat-pipe regime (Hadean, $>$4~Ga)
+    \item Allows efficient cooling of a very hot mantle without plate tectonics
+  \end{itemize}
+  \vskip6pt
+  {\tiny\color{ipsText!60} Source: Turcotte (1989); Moore \& Webb (2013), \textit{Nature}}
+\end{frame}
+
 % ── Mantle plumes and hotspots ────────────────────────────
 \begin{frame}{Mantle Plumes and Hotspots}
   Whole-mantle convection is dominated by sheet-like downwellings (subducting slabs), but the hot bottom boundary layer is also unstable.
@@ -417,6 +602,37 @@
 \section{Surface Heat Flow \& Tidal Heating}
 % ════════════════════════════════════════════════════════════
 
+% ── Core cooling and the dynamo ──────────────────────────
+\begin{frame}{Core Cooling and the Dynamo}
+  The mantle acts as a thermostat on the core.
+  \vskip6pt
+  \begin{itemize}
+    \item Heat flux from core to mantle sets the rate of core cooling
+    \item A vigorously convecting mantle extracts heat efficiently, enabling core convection
+    \item Core cooling drives the inner core's gradual crystallisation
+    \item Inner core growth releases latent heat + light elements $\rightarrow$ compositional buoyancy
+    \item This compositional convection is the \textbf{dominant} driver of today's geodynamo (Lecture~4)
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Earth's magnetic field ultimately exists because mantle convection efficiently cools the core; stagnant-lid Venus likely lacks this.}
+\end{frame}
+
+% ── Mantle plume detail ──────────────────────────────────
+\begin{frame}{Plumes vs.\ Plates: Two Modes of Upwelling}
+  \begin{itemize}
+    \item \textbf{Mid-ocean ridges:} passive upwelling where plates pull apart
+    \item Temperatures close to the ambient mantle
+    \item \textbf{Mantle plumes:} active upwelling from the deep mantle
+    \item $\sim$200--300~K hotter than the ambient mantle (from olivine thermobarometry)
+    \item Plumes deliver primordial (3He-rich) material from the lower mantle
+    \item Large Igneous Provinces (LIPs) may be plume-heads: Deccan Traps, Siberian Traps, Ontong-Java Plateau
+    \item LIPs correlate with mass extinction events in geological history
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Courtillot \& Renne (2003), \textit{Comptes Rendus Geoscience}}
+\end{frame}
+
+
 % ── Surface heat flow ─────────────────────────────────────
 \begin{frame}{Surface Heat Flow}
   \centering
@@ -434,6 +650,28 @@
   {\tiny\color{ipsText!60} Source: Davies \& Davies (2010); Veeder et al.\ (2012); InSight + gravity/topography estimates}
   \vskip10pt
   Io's heat flux is 20--30$\times$ higher than Earth's, entirely from tidal heating.
+\end{frame}
+
+% ── Earth heat flow spatial pattern ──────────────────────
+\begin{frame}{Spatial Pattern of Earth's Heat Flow}
+  Earth's 47~TW is not uniformly distributed:
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Oceanic regions} ($\sim$60\% of area): 70\% of total heat loss
+    \begin{itemize}
+      \item Thin lithosphere, new crust at ridges
+      \item Flux decreases with crustal age (Stein \& Stein 1992 cooling model)
+    \end{itemize}
+    \vskip4pt
+    \item \textbf{Continental regions} ($\sim$40\% of area): 30\% of total heat loss
+    \begin{itemize}
+      \item Thick lithosphere insulates the mantle
+      \item BUT concentration of U, Th, K in the crust adds local contribution
+      \item $\sim$40\% of the continental surface flux is crustal-radiogenic
+    \end{itemize}
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Jaupart \& Mareschal (2011); Davies \& Davies (2010)}
 \end{frame}
 
 % ── Tidal heating mechanism ───────────────────────────────
@@ -454,6 +692,56 @@
     \item Distance $a$ (heating $\propto a^{-6}$)
     \item Internal dissipation (tidal quality factor $Q$)
   \end{itemize}
+\end{frame}
+
+% ── Secular cooling ──────────────────────────────────────
+\begin{frame}{Secular Cooling of Planets}
+  Planets are thermally non-stationary: they started hot and are gradually cooling.
+  \vskip6pt
+  \begin{itemize}
+    \item Stored heat $\sim E_{\mathrm{acc}} + E_{\mathrm{diff}} + \int L_{\mathrm{rad}}(t)\,dt$
+    \item Lost heat $\sim \int L_{\mathrm{surface}}(t)\,dt$
+    \item The difference is the present-day thermal state
+    \item Earth: still cooling at $\sim$50--100~K/Gyr
+    \item Smaller bodies cool faster (lower thermal inertia, thinner conductive boundary layer)
+  \end{itemize}
+  \vskip6pt
+  \keyresult{All terrestrial planets are in net secular cooling; Earth's is slowed by convective resurfacing but not stopped.}
+\end{frame}
+
+% ── Tidal heating rate formula ────────────────────────────
+\begin{frame}{Tidal Dissipation Rate}
+  For a synchronously rotating body on an eccentric orbit, the tidal heating power is (to leading order in $e$):
+  \vskip6pt
+  \keyresult{$$\dot{E}_{\mathrm{tidal}} = \frac{21}{2}\,\frac{k_2}{Q}\,\frac{G M_*^2 R^5 n e^2}{a^6}$$}
+  \vskip6pt
+  where:
+  \begin{itemize}
+    \item $k_2$ = Love number (dimensionless, $\sim$0.3 for rocky bodies)
+    \item $Q$ = tidal quality factor (lower = more dissipative)
+    \item $M_*$ = mass of the primary (Jupiter, Saturn, etc.)
+    \item $R$ = radius of the moon
+    \item $n$ = mean motion ($= \sqrt{GM_*/a^3}$)
+    \item $a$ = semi-major axis, $e$ = eccentricity
+  \end{itemize}
+  \vskip6pt
+  \flushleft
+  {\small Note the steep $R^5/a^6$ dependence: heating is dramatic for close-in moons.}
+\end{frame}
+
+% ── Laplace resonance ─────────────────────────────────────
+\begin{frame}{The Laplace Resonance: Sustaining Eccentricity}
+  Io's orbit would circularise in $\sim$10~Myr if left alone. Why is its eccentricity maintained?
+  \vskip6pt
+  \begin{itemize}
+    \item Io--Europa--Ganymede are locked in a 4:2:1 \textbf{mean-motion resonance}
+    \item Every time Io laps Europa, the two meet at the same orbital phase
+    \item Periodic gravitational kicks continually \textbf{pump} Io's eccentricity
+    \item Without this, tidal dissipation would damp $e$ and shut off the heating
+    \item The resonance was first identified by Laplace in 1805
+  \end{itemize}
+  \vskip6pt
+  \keyresult{The three-body resonance is what makes Io's tidal heating indefinite, not transient.}
 \end{frame}
 
 % ── Io ─────────────────────────────────────────────────────
@@ -500,6 +788,21 @@
   \keyresult{Enceladus demonstrates that tidal heating can sustain liquid water oceans far from the habitable zone.}
 \end{frame}
 
+% ── Enceladus biosignatures ──────────────────────────────
+\begin{frame}{Enceladus Plumes: A Habitability Laboratory}
+  Cassini's multiple plume flythroughs revealed:
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Salts:} NaCl, NaHCO$_3$: direct samples of the subsurface ocean
+    \item \textbf{Silica nanoparticles:} imply ocean-floor temperature $>$90\textdegree C (hydrothermal)
+    \item \textbf{Molecular hydrogen} (H$_2$): produced by water--rock serpentinisation
+    \item \textbf{Organic molecules:} CO$_2$, CH$_4$, NH$_3$, HCN, complex species up to C$_6$
+    \item Phosphate detected in 2023 (Postberg et al.), last major missing bioessential element
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Enceladus' ocean has all the ingredients (liquid water, energy, organics, phosphorus) for chemoautotrophic life, if it exists there.}
+\end{frame}
+
 % ── Ocean worlds ──────────────────────────────────────────
 \begin{frame}{Ocean Worlds: Europa \& Titan}
   \begin{itemize}
@@ -537,6 +840,97 @@
     \vskip6pt
     \item \textbf{Radiogenic budget:} Updated meteorite analyses refine early solar system heating
   \end{itemize}
+\end{frame}
+
+% ── More recent advances ──────────────────────────────────
+\begin{frame}{InSight: Mars Heat Flow and Interior}
+  InSight's seismometer (SEIS) and heat flow probe (HP$^3$) transformed our view of Mars.
+  \vskip6pt
+  \begin{itemize}
+    \item Over 1300 marsquakes detected during the mission
+    \item Core radius: $1830 \pm 40$~km, larger than pre-mission estimates
+    \item Partially molten outer core (required by seismic attenuation)
+    \item Crustal thickness: 24--72~km (two-layer model)
+    \item Heat flow probe stuck at 40~cm depth in unexpectedly cohesive regolith
+    \item Upper limit on near-surface heat flux: $\sim$22~mW\,m$^{-2}$
+  \end{itemize}
+  \vskip6pt
+  {\tiny\color{ipsText!60} Source: Stähler et al.\ (2021); Khan et al.\ (2021); Spohn et al.\ (2022), \textit{Adv.\ Space Res.}}
+\end{frame}
+
+% ── Europa Clipper ────────────────────────────────────────
+\begin{frame}{Europa Clipper: Targeting the Ice Shell}
+  NASA Europa Clipper launched October 2024, arrives at Jupiter in 2030.
+  \vskip6pt
+  \begin{itemize}
+    \item Will make $\sim$50 close flybys of Europa over $\sim$4 years
+    \item \textbf{Ice Penetrating Radar (REASON):} maps ice shell thickness and near-surface layers
+    \item \textbf{Magnetometer:} constrains ocean salinity from induced response
+    \item \textbf{MASPEX + SUDA:} samples the composition of possible plume material
+    \item Thermal mapping will locate regions of thinner ice and recent activity
+    \item Will directly test whether tidal dissipation is concentrated in the shell or in the rocky core
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Howell \& Pappalardo (2020), \textit{Nature Communications}}
+\end{frame}
+
+% ── Mars interior heat models ─────────────────────────────
+\begin{frame}{Modelling Mars' Thermal Evolution}
+  Mars' thermal history explains key observations:
+  \vskip6pt
+  \begin{itemize}
+    \item Early intense volcanism (Tharsis) $\rightarrow$ hot magma ocean + dynamo (4.1~Ga)
+    \item Dynamo shutdown $\sim$4.1~Ga $\rightarrow$ core cooling slowed, crustal magnetisation frozen
+    \item Olympus Mons still eruptive until $\sim$100--200~Ma
+    \item Present-day heat flow $\sim$15--25~mW/m$^2$ (InSight constraints)
+    \item Partially molten upper core retains heat; slow mantle convection prolongs cooling
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Mars' thermal history ties directly to its atmospheric evolution: the loss of the dynamo caused the loss of the field, and eventually the atmosphere.}
+\end{frame}
+
+% ── Io heat flow ──────────────────────────────────────────
+\begin{frame}{Io in the Decade of Juno}
+  Juno's extended mission (2021--) has delivered the closest-ever Io observations:
+  \vskip6pt
+  \begin{itemize}
+    \item Global heat flow map: polar regions are hotter than expected, contradicting simple tidal models
+    \item Thermal emission imaging from JIRAM instrument
+    \item Gravity data consistent with a global magma ocean just beneath the crust (Park et al.\ 2024)
+    \item New implications for the structure of Io's interior: is the ``mantle'' largely molten?
+    \item Future: IVO (Io Volcano Observer) concept proposal for dedicated Io mission
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Park et al.\ (2024); Keszthelyi et al.\ (2022)}
+\end{frame}
+
+% ── JUICE ────────────────────────────────────────────────
+\begin{frame}{JUICE: The Jupiter Icy Moons Explorer}
+  ESA's JUICE launched in April 2023, arrives Jupiter 2031.
+  \vskip6pt
+  \begin{itemize}
+    \item Multiple flybys of Europa, Callisto, and Ganymede
+    \item Orbit insertion at \textbf{Ganymede} in 2034: first orbiter of a moon other than our own
+    \item Will determine the thickness of Ganymede's ice shell and ocean via laser altimetry and induced magnetic field
+    \item Direct measurement of tidal heating through tidal Love number $k_2$
+    \item Complementary to Europa Clipper: two flagship ocean world missions in the 2030s
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Grasset et al.\ (2013), \textit{Planet.\ Space Sci.}}
+\end{frame}
+
+% ── Ocean world habitability ─────────────────────────────
+\begin{frame}{Are Ocean Worlds Habitable?}
+  \begin{itemize}
+    \item Require \textbf{three things}: liquid water, energy, chemical nutrients
+    \item \textbf{Liquid water:} tidal heating + ice shell insulation
+    \item \textbf{Energy:} chemical disequilibria (serpentinisation produces H$_2$)
+    \item \textbf{Nutrients:} rock--water reactions deliver P, S, trace metals
+    \item \textbf{Open questions:} redox state, temperature range, ocean pH, mixing timescales
+    \item Ganymede, Europa, Enceladus, Titan, Triton, Pluto and maybe Ceres all have possible subsurface oceans
+  \end{itemize}
+  \vskip6pt
+  {\tiny\color{ipsText!60} Source: Nimmo \& Pappalardo (2016), \textit{J.\ Geophys.\ Res.\ Planets}}
 \end{frame}
 
 % ── Summary ────────────────────────────────────────────────
