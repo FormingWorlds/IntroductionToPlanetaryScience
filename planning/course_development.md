@@ -250,17 +250,42 @@ Each week consists of:
 
 ### Lecture 11: Gas & Ice Giants — Jupiter, Saturn, Uranus, Neptune
 
-- Jupiter: composition, internal structure, atmospheric dynamics
-- Jupiter's moons: Galilean satellites (Io, Europa, Ganymede, Callisto) and their diversity
-- Saturn: ring system structure, dynamics, origin and evolution
-- Saturn's moons: Titan (atmosphere, lakes), Enceladus (plumes, subsurface ocean)
-- Planetary rings: composition, Roche limit, shepherding moons, ring–moon interactions
-- **Blackboard derivation (~10 min):** Derive the Roche limit — equate the tidal force from the planet on a satellite element with the satellite's self-gravity to obtain d_Roche ≈ 2.46 R_p (ρ_p/ρ_s)^{1/3}, and apply to Saturn's rings
-- Uranus: extreme axial tilt, muted atmosphere, interior structure
-- Neptune: atmospheric activity, Great Dark Spot, internal heat excess
-- Triton: retrograde orbit, captured KBO, cryovolcanism
-- Ice giant exploration: current knowledge gaps and future mission concepts
-- Recent advances: Juno extended mission results (Jupiter's interior and moons), JUICE mission en route to Jupiter system, James Webb observations of Uranus and Neptune ring systems, Cassini legacy analysis of Saturn and Enceladus
+**Structure**: descriptive-first (gas giants, then ice giants) with comparative payoff and exploration frontier in Part 3. Moons are integrated into planet narratives rather than given a separate section.
+
+**Part 1 — The gas giants, Jupiter & Saturn (~35 min)**
+
+- Gas giant overview: composition dominated by H₂/He, no solid surface, rapid rotation (~10 hr) driving Coriolis-dominated circulation, both emit more energy than they receive
+- Jupiter interior: molecular H₂/He envelope, metallic H transition at ~100 GPa, dilute core extending to 30–50% of radius (Wahl 2017, Militzer 2022); central ~4000 GPa, ~20,000 K
+- Jupiter atmosphere and weather: zone/belt structure, ~15 alternating zonal jets (up to 180 m/s), Great Red Spot (>350 yr, shrinking), Great Blue Spot magnetic anomaly, Io-powered aurorae
+- **Dedicated slides for Io, Europa, Ganymede, Callisto** — four Galilean moons spanning volcanic (Io tidal heat ~10¹⁴ W), ocean world (Europa ice shell + ~100 km ocean), intrinsic dynamo (Ganymede), and undifferentiated ancient (Callisto outside Laplace resonance, least interesting geologically but lowest radiation environment)
+- Jupiter's rings and small moons: faint dusty system from micrometeorite gardening of Amalthea/Metis/Adrastea/Thebe
+- Saturn interior and rotation: helium rain at 1–3 Mbar provides excess luminosity (~2× absorbed flux); dilute core likely; rotation period uncertain (~10.7 hr from Cassini ring seismology); dipole almost perfectly axially aligned (challenge for dynamo theory)
+- Saturn atmosphere and weather: equatorial jet ~400 m/s, hexagonal polar jet (Rossby wave), Great White Storms every ~30 years
+- Saturn's rings — structure and composition: A–G rings, >95% water ice, Cassini Division from Mimas 2:1 resonance, total mass ~Mimas-scale, ring–moon interactions
+- Saturn's rings — age and evolution: young-rings consensus (Iess 2019, Crida 2019) ~100 Myr based on Cassini grand-finale mass; ongoing ring-rain losses imply ~100 Myr lifetime; debate continues (Wisdom 2022); pedagogical lesson that solar system bodies evolve on sub-Gyr timescales
+- **Blackboard derivation (~10 min):** Derive the Roche limit — equate the tidal force from the planet on a satellite element with the satellite's self-gravity to obtain $d_\mathrm{R} \approx 2.46\,R_p\,(\rho_p/\rho_s)^{1/3}$; apply to Saturn's rings ($d_\mathrm{R} \approx 126{,}000$ km matching the A ring outer edge)
+- **Dedicated slides for Titan** (N₂ atmosphere + methane cycle + subsurface water-ammonia ocean; Dragonfly mission 2028/2034) **and Enceladus** (tiger stripes, plumes, silica nanoparticles, phosphate detection, global ocean + hydrothermal activity)
+- Other Saturnian moons (one slide): Iapetus two-faced hemispheres, Mimas Herschel crater, Hyperion chaotic rotation, Phoebe captured KBO, Dione/Rhea/Tethys mid-sized icy moons
+
+**Part 2 — The ice giants, Uranus & Neptune (~25 min)**
+
+- Ice giant overview: composition ≲20% H₂/He envelope, bulk dominated by "ices" (H₂O, NH₃, CH₄); only visited once each by Voyager 2 (1986, 1989); most under-explored planets
+- Uranus: 98° axial tilt (giant-impact origin, Morbidelli 2012), 42-year polar seasons, muted atmosphere becoming more active near equinox, anomalously low internal heat flow (~10% of Neptune's)
+- Neptune: fastest winds in the solar system (~580 m/s despite weakest solar input), Great Dark Spot (transient, unlike Jupiter's GRS), internal heat ~2.6× absorbed flux
+- Ice giant interiors: layered rocky core + ice mantle + H₂/He atmosphere; **superionic ice** layer at >100 GPa >2000 K (Millot 2019) supports dynamo generation; multipolar fields tilted 59° (Uranus) and 47° (Neptune) from rotation, offset from centre
+- **Dedicated slide for Triton**: captured Kuiper Belt object (retrograde high-inclination orbit), young surface, active nitrogen cryovolcanism, thin N₂ atmosphere (14 μbar), orbital decay → collision/disruption in 3.6 Gyr, proxy for KBO science (Lecture 12)
+- Ice giant rings: Uranus 13 narrow rings (stellar occultation 1977), Neptune 5 ring arcs (Voyager 1989), both dark carbon-rich material; JWST high-resolution imaging 2023
+
+**Part 3 — Comparative payoff and exploration frontier (~15 min)**
+
+- Why gas and ice giants diverged: core-accretion timing, disk mass, migration history (Nice model recap); ice giants are a natural intermediate outcome
+- Common themes: internal heat excesses (except Uranus), zonal jets faster with distance, electrically conducting fluid dynamos, diverse moon and ring systems, exoplanet-analogue laboratories
+- What we still don't know: ice/rock/gas fractions in ice giants, Neptune heat source, Uranus heat deficit, Saturn ring age detail, Jupiter dilute core origin, Callisto ocean, Saturn hexagon persistence
+- Ongoing missions: Juno extended (2025+, Io/Europa/Amalthea flybys), Cassini legacy analysis, JWST Uranus/Neptune observations
+- **Dedicated slide: JUICE vs Europa Clipper** — two ocean world missions launching within 18 months of each other (Clipper Oct 2024 → 2030; JUICE April 2023 → 2031 → Ganymede orbit 2034); complementary depth vs breadth targets; simultaneous Jovian system operations in the 2030s
+- Dragonfly to Titan: 2028 launch, 2034 arrival, rotorcraft, prebiotic chemistry + impact-heated transient liquid water at Selk crater
+- **Dedicated slide: Voyager legacy** — only spacecraft to visit Uranus and Neptune; still operational in the interstellar medium; power declining toward ~2030 end of life; our ice giant knowledge is 40 years out of date
+- Future ice giant missions: 2023 US Decadal Survey prioritised a Uranus orbiter as the top flagship mission for the 2030s; mission concepts in study phase; launch window early 2030s; atmospheric entry probe + magnetosphere + moon reconnaissance
 
 ### Lecture 12: Meteorites, Asteroid Belt, Minor Planets & Comets
 
@@ -463,7 +488,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 8 | Planetary interiors | Verified | High |
 | 9 | Rocky planets: Earth & Venus | Outline drafted | Medium |
 | 10 | Rocky planets: Mercury & Mars | Outline drafted | Medium |
-| 11 | Gas & ice giants | Not started | Medium |
+| 11 | Gas & ice giants | Outline drafted | Medium |
 | 12 | Meteorites, asteroids, minor planets & comets | Not started | Medium |
 | 13 | Exoplanets | Not started | Medium |
 | 14 | Synthesis & astrobiology | Not started | Low |
