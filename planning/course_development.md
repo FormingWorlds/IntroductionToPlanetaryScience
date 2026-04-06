@@ -341,20 +341,58 @@ Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–
 - Recent mission bonanza (OSIRIS-REx, Hayabusa2, DART, Lucy, Psyche, Rosetta) + upcoming (Hera, Comet Interceptor, LSST) are transforming the field
 - Interstellar visitors connect solar system science directly to exoplanets (forward to L13/L14)
 
-### Lecture 13: Exoplanets — Detection Methods, Demographics, & Characterization
+### Lecture 13: Exoplanets, Detection Methods, Demographics & Characterisation
 
-- Historical context: first detections (pulsar planets, 51 Peg b)
-- Radial velocity method: Doppler wobble, mass–period sensitivity
-- Transit method: light curves, radius determination, Kepler/TESS missions
-- **Blackboard derivation (~10 min):** Derive the transit depth (ΔF/F = (R_p/R_★)², ~2 min geometry), then the radial velocity semi-amplitude K from momentum conservation (~5 min), and show how combining both measurements yields mass, radius, and bulk density of an exoplanet (~3 min)
-- Direct imaging: coronagraphy, high-contrast techniques, current capabilities
-- Other methods: astrometry (Gaia), microlensing, timing variations
-- Exoplanet demographics: occurrence rates, period–radius distribution, the radius valley
-- Hot Jupiters, super-Earths, sub-Neptunes: formation and migration theories
-- Atmospheric characterization: transmission and emission spectroscopy
-- JWST results: atmospheric detections, thermal emission maps
-- Habitability beyond the solar system: habitable zone concept, biosignatures
-- Recent advances: JWST atmospheric characterization of rocky exoplanets (TRAPPIST-1 system), updated exoplanet occurrence rates from Kepler/TESS, Gaia astrometric planet detections, direct imaging breakthroughs
+Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–L12: detection methods (Part 1), then demographics and architectures (Part 2), then characterisation, habitability, and the comparative payoff (Part 3).
+
+**Part 1: How we find exoplanets**
+
+- Historical context: 1992 pulsar planets (Wolszczan & Frail, PSR B1257+12), 1995 51 Peg b (Mayor & Queloz, Nobel 2019), the "hot Jupiter surprise" that launched the migration revolution
+- Current count: >6000 confirmed exoplanets as of 2025
+- Radial velocity: Doppler wobble, K scaling, m sin i degeneracy, HARPS → ESPRESSO to ~10 cm/s, stellar-noise floor
+- Transit: depth δ = (Rp/R★)², geometric probability ≈ R★/a, limb darkening; CoRoT → Kepler → K2 → TESS → CHEOPS → PLATO
+- **Blackboard derivation (~10 min):** transit depth geometry (~2 min) + RV semi-amplitude K from momentum conservation (~5 min) + combine to get mass, radius, and bulk density, breaking the m sin i degeneracy (~3 min)
+- Direct imaging: contrast ratios, coronagraphs + AO, ADI/SDI; SPHERE/GPI/SCExAO on the ground, JWST NIRCam/MIRI in space; HR 8799, β Pic b/c, PDS 70 b/c, first JWST-imaged atmospheres 2023
+- **Astrometry gets its own slide**: Gaia at 20–50 μas, DR3 first candidates 2022, DR4 (~2026) expected to deliver 10²–10³ confirmed astrometric exoplanets, DR5 pushing into sub-Jovian regime; breaks m sin i degeneracy; sweet spot = wide-orbit Jupiter analogues
+- Microlensing: OGLE/MOA/KMTNet now, Roman 2027 expected to find ~1000–3000 planets + free-floating rogues
+- Timing methods: TTVs (dynamical masses for small planets, Kepler-11/36, TRAPPIST-1), pulsar timing, eclipse timing in binaries (Kepler-16 b)
+- Detection-bias summary slide: (mass, period) coverage per method; the shape of the exoplanet archive reflects biases as much as underlying distribution
+
+**Part 2: Demographics and architectures**
+
+- Kepler revolution: ~150,000-star statistically complete sample; ≥1 planet per star on average; η⊕ estimates 0.1–0.6
+- Period–radius diagram: hot Jupiters, warm/cold Jupiters, sub-Neptunes, super-Earths, terrestrial analogues
+- **Radius valley / Fulton gap** at ~1.8 R⊕: photoevaporation (Owen & Wu 2013) vs core-powered mass loss (Ginzburg et al. 2018) interpretations
+- Hot Neptune desert + its well-defined edge (Mazeh et al. 2016)
+- Peas in a pod (Weiss et al. 2018): similar sizes, uniform spacing in multi-planet systems → smooth local formation
+- Compact resonant chains: TRAPPIST-1 (7 planets), Kepler-90 (8), TOI-178 (6-resonance)
+- Hot Jupiter migration: disk (Type II), high-eccentricity (Kozai-Lidov + tides), planet-planet scattering; Rossiter-McLaughlin obliquities + companion multiplicity as discriminants
+- Super-Earth / sub-Neptune composition: bare rocky cores vs water worlds vs gas dwarfs; K2-18 b hycean hypothesis (contested)
+- M dwarf planets: ~75% of all stars, high transit probability, high occurrence rates, but XUV flares and long pre-MS threaten early atmospheres; TRAPPIST-1 as reference lab
+
+**Part 3: Characterisation, habitability, and comparative payoff**
+
+- Transmission spectroscopy: δ(λ) scale-height arguments, cloud suppression, detectable species
+- Emission spectroscopy + phase curves: dayside flux, day-night redistribution, thick vs thin atmospheres
+- **JWST era results 2022–2025:**
+  - WASP-39 b (ERS): SO₂ photochemistry (Tsai et al. 2023), first disequilibrium chemistry detection
+  - HD 189733 b H₂S; WASP-107 b methane depletion + vertical mixing
+  - K2-18 b CH₄/CO₂ + tentative DMS claim (Madhusudhan et al. 2023) and the community pushback (Glein 2024, Wogan et al. 2024) as the case study in how biosignature claims are tested
+  - TRAPPIST-1 b, c MIRI thermal emission → bare rock, rules out thick CO₂ atmospheres (Greene et al. 2023, Zieba et al. 2023)
+  - LHS 475 b, GJ 486 b, GJ 1132 b: rocky-planet atmosphere non-detections → M dwarf XUV stripping consistent
+  - **55 Cancri e** (Hu et al. 2024): MIRI thermal emission + phase curve; tentative CO/CO₂-rich atmosphere on a super-Earth lava world
+  - **TOI-561 b**: ultra-short-period rocky planet, metal-poor thick-disk host, tentative thin-atmosphere signal
+  - Direct imaging spectra: HIP 65426 b, VHS 1256 b (Miles et al. 2023)
+- Habitable zone revisited: 1D (Kasting, Kopparapu) vs 3D (Way, Wordsworth, Turbet) boundaries; inner edge = Simpson-Nakajima runaway (recap L9), outer edge = max CO₂ greenhouse; M dwarf tidal locking + pre-MS history matters
+- Biosignature gases: O₂, O₃, CH₄, N₂O, disequilibrium combinations; false positives (H₂O photolysis, CO₂ photolysis, abiotic volcanic CH₄); DMS not-known-on-Earth ≠ impossible elsewhere
+- **Solar system in the exoplanet landscape:**
+  - Most planets: sub-Neptunes around M dwarfs in compact peas-in-a-pod systems
+  - Solar system skips the most common planet class, no hot giants, irregular inner-system spacing, wide low-e giants
+  - Not obviously typical, but "rare vs undersampled" question depends on the next decade's long-period sensitivity floor
+- **Frontier missions, two slides:**
+  - Slide A (transits + atmospheres, 2026–2035): PLATO (ESA 2026, Earth analogues around G dwarfs), Ariel (ESA 2029, ~1000 atmospheres), Roman (NASA 2027, microlensing + coronagraph demo)
+  - Slide B (direct imaging of Earth analogues, 2030s–2040s): HWO (NASA, ~6 m coronagraph, ~25 nearby sun-like stars), LIFE (ESA concept, mid-IR nulling interferometer), ELT/GMT/TMT (ground-based, first light 2028–2030s)
+- Open-ended question: what combination of evidence would constitute convincing life detection? Forward reference to L14
 
 ### Lecture 14: Synthesis — Solar System in Context & Astrobiology
 
@@ -527,7 +565,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 10 | Rocky planets: Mercury & Mars | Outline drafted | Medium |
 | 11 | Gas & ice giants | Outline drafted | Medium |
 | 12 | Meteorites, asteroids, minor planets & comets | Outline drafted | Medium |
-| 13 | Exoplanets | Not started | Medium |
+| 13 | Exoplanets | Outline drafted | Medium |
 | 14 | Synthesis & astrobiology | Not started | Low |
 
 **Priority rationale:** Lectures 1–8 cover foundational topics needed before planet-specific lectures; Lectures 9–13 build on these; Lecture 14 synthesizes the full course.
