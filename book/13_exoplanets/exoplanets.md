@@ -20,7 +20,7 @@ Exoplanet science is younger than most of the students taking this course.
 The first confirmed planets outside the solar system were announced in 1992 by Aleksander Wolszczan and Dale Frail, who used the radio pulsar **PSR B1257+12** as a precision clock {cite:p}`Wolszczan1992`.
 Pulsars are the rapidly spinning, highly magnetised remnants of massive stars that have already gone supernova.
 The precision of their pulse arrival times rivals the best atomic clocks, and any unmodelled motion of the pulsar around a system barycentre shows up as a small periodic shift in those arrival times.
-Wolszczan and Frail identified two planets of $4.3$ and $3.9\,\Mearth$ and a third body of about $0.02\,\Mearth$ in $25$, $66$, and $98$ day orbits around the pulsar.
+The original 1992 *Nature* announcement reported two planets of $4.3$ and $3.9\,\Mearth$ in $66$ and $98$ day orbits around the pulsar; a much smaller third body of about $0.02\,\Mearth$ in a $25$-day orbit was confirmed by {cite:t}`Wolszczan1994` from the same long-baseline timing dataset.
 These were not the planets anyone was looking for.
 They are the survivors, or perhaps the second-generation products, of a supernova explosion.
 They remain a striking reminder that planets can form, or at least exist, in environments that have nothing to do with the textbook picture of star and disk we developed in {ref}`lecture02`.
@@ -175,43 +175,37 @@ Limb darkening, ingress shape, and orbital eccentricity all introduce $\sim$10\%
 **Step 2: radial velocity semi-amplitude (~5 min).**
 Now we attack the dynamical side.
 The two bodies orbit their common centre of mass.
+Let $a$ denote the relative (planet-to-star) semi-major axis, and let $a_\star$ and $a_p$ denote the distances of the star and planet from the barycentre, with $a = a_\star + a_p$.
 Conservation of momentum at any instant requires
 
 $$
-M_\star v_\star + m_p v_p = 0
+M_\star a_\star = m_p a_p,
 $$
 
-where the velocities are measured in the barycentric frame.
-If the orbits are circular, both bodies move on circles around the barycentre with the same orbital period $P$, and their orbital radii are related by $a_\star = (m_p / M_\star) a_p$.
-Their orbital speeds are then
+so $a_\star = (m_p/(M_\star + m_p))\,a$ and $a_p = (M_\star/(M_\star + m_p))\,a$.
+Both bodies move on circles (assuming a circular orbit) around the barycentre with the same orbital period $P$, and the orbital speed of the star is
 
 $$
-v_p = \frac{2\pi a_p}{P}, \qquad v_\star = \frac{2\pi a_\star}{P} = \frac{m_p}{M_\star} v_p.
+v_\star = \frac{2\pi a_\star}{P} = \frac{m_p}{M_\star + m_p} \cdot \frac{2\pi a}{P}.
 $$
 
 We do not measure $v_\star$ directly: we measure only the line-of-sight projection $v_\star \sin i$, where $i$ is the inclination of the orbit normal to our line of sight.
 The maximum line-of-sight reflex velocity is therefore
 
 $$
-K_\star = v_\star \sin i = \frac{m_p}{M_\star} \cdot \frac{2\pi a_p}{P} \sin i.
+K_\star = v_\star \sin i = \frac{m_p \sin i}{M_\star + m_p} \cdot \frac{2\pi a}{P}.
 $$
 
-To eliminate $a_p$ in favour of measurable quantities we use Kepler's third law,
+To eliminate $a$ in favour of measurable quantities we use Kepler's third law for the **relative** semi-major axis,
 
 $$
-a_p^3 = \frac{G(M_\star + m_p) P^2}{4\pi^2},
-$$
-
-so
-
-$$
-a_p = \left(\frac{G(M_\star + m_p) P^2}{4\pi^2}\right)^{1/3}.
+a^3 = \frac{G(M_\star + m_p) P^2}{4\pi^2}, \qquad a = \left(\frac{G(M_\star + m_p) P^2}{4\pi^2}\right)^{1/3}.
 $$
 
 Substituting into $K_\star$ gives
 
 $$
-K_\star = \frac{m_p \sin i}{M_\star} \cdot \frac{2\pi}{P} \cdot \left(\frac{G(M_\star + m_p) P^2}{4\pi^2}\right)^{1/3} = \left(\frac{2\pi G}{P}\right)^{1/3} \frac{m_p \sin i}{(M_\star + m_p)^{2/3}}.
+K_\star = \frac{m_p \sin i}{M_\star + m_p} \cdot \frac{2\pi}{P} \cdot \left(\frac{G(M_\star + m_p) P^2}{4\pi^2}\right)^{1/3} = \left(\frac{2\pi G}{P}\right)^{1/3} \frac{m_p \sin i}{(M_\star + m_p)^{2/3}}.
 $$
 
 For the case $m_p \ll M_\star$, which holds for almost all known exoplanets, we can approximate $(M_\star + m_p)^{2/3} \approx M_\star^{2/3}$.
@@ -300,7 +294,7 @@ The host is a 5 Myr K7 star surrounded by an obvious cleared central cavity, exa
 SPHERE at near-infrared wavelengths and MUSE at H$\alpha$ emission both detected a point source inside the gap; this is PDS 70 b.
 A second protoplanet, PDS 70 c, was identified in a similar position later.
 Both objects are still actively accreting from the surrounding disk gas, as evidenced by the H$\alpha$ emission line that traces accretion shocks.
-This is the first case in which a forming planet, its host disk, and the gap it has carved are all visible simultaneously, providing a direct test of the planet-disk-interaction models that L2 was built around.
+This is the first case in which a forming planet, its host disk, and the gap it has carved are all visible simultaneously, providing a direct test of the planet-disk-interaction models discussed in {ref}`lecture02`.
 
 ```{figure} figures/pds70b_keppler.avif
 :name: fig:pds70b
@@ -377,7 +371,7 @@ The **Nancy Grace Roman Space Telescope**, scheduled for launch in 2027, will co
 When a transiting planet has a non-transiting (or differently transiting) companion in the same system, the gravitational interaction between the two perturbs the transit times of the first one in a periodic way.
 These are **transit timing variations** (TTVs), and they were predicted theoretically by {cite:t}`Holman2005` before they were observed.
 TTVs encode the masses of the perturber and the perturbed planet, so when both planets in a system transit, TTVs provide a **dynamical mass** measurement that does not require radial velocity follow-up at all.
-This is essential for small planets around faint stars, where direct radial velocity measurement is infeasible: for instance, the seven planets of the TRAPPIST-1 system have masses derived almost entirely from TTV analysis (see Section [The Kepler revolution and the TRAPPIST-1 laboratory] below).
+This is essential for small planets around faint stars, where direct radial velocity measurement is infeasible: for instance, the seven planets of the TRAPPIST-1 system have masses derived almost entirely from TTV analysis (discussed in Part 2 below).
 Notable TTV-mass systems include Kepler-11, Kepler-36, and TRAPPIST-1.
 
 A second, older, timing method is **pulsar timing**, the technique that found the very first exoplanets {cite:p}`Wolszczan1992`.
@@ -883,7 +877,7 @@ These spectra provide the first direct atmospheric retrievals of self-luminous g
 Lecture 9 (Earth and Venus) introduced the **classical habitable zone** as the range of stellar fluxes for which a rocky planet can plausibly maintain liquid surface water.
 The classical formulation goes back to {cite:t}`Kasting1993`, who used a one-dimensional radiative-convective climate model to identify two boundaries.
 The **inner edge** is set by the **Simpson-Nakajima runaway greenhouse limit**: as the planet warms, the atmospheric water vapour content rises following the Clausius-Clapeyron relation, the outgoing longwave radiation reaches a maximum, and any further increase in absorbed flux drives the planet into a runaway state in which the entire ocean evaporates.
-The numerical value of the limiting outgoing longwave radiation is about $280$--$350$ W/m$^2$, depending on details, and it implies that an Earth-twin climate cannot be sustained at solar fluxes much above $\sim 1.05$ times the Earth value, corresponding to a critical orbital distance of $\sim 0.95$ AU around a Sun-like star (recap from {ref}`lecture09`).
+The numerical value of the limiting outgoing longwave radiation is about $280$--$310$ W/m$^2$, depending on details, and it implies that an Earth-twin climate cannot be sustained at solar fluxes much above $\sim 1.06$ times the Earth value, corresponding to a critical orbital distance of $\sim 0.97$ AU around a Sun-like star (the runaway greenhouse limit; the more conservative moist greenhouse limit lies just inside Earth's orbit at $\sim 0.99$ AU; recap from {ref}`lecture09`).
 The **outer edge** is set by the **maximum CO$_2$ greenhouse**: as a planet at large stellar distance accumulates more CO$_2$ to compensate for the lower flux, eventually the increased atmospheric CO$_2$ starts to condense out as ice clouds and the greenhouse effect saturates, leaving the planet too cold for surface water regardless of the atmospheric inventory.
 
 ```{figure} figures/kopparapu_hz.avif

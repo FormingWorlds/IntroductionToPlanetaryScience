@@ -280,6 +280,8 @@ Inverted velocity profiles for the Martian mantle (left) and joint constraints o
 
 These three measurements together produce the modern picture of Mars: a thin to moderately thick crust enriched in heat-producing elements; a partially molten silicate mantle with a relatively shallow base ($\sim 1560$ km depth); and a large, light-element-rich, fully or nearly fully liquid core. The conclusion that the core has not yet begun to crystallise an inner core is consistent with the *absence* of a present-day Martian magnetic field: no inner-core nucleation means no compositional buoyancy to drive a vigorous dynamo, even though the core is still liquid.
 
+The youthful interior structure that InSight reveals is consistent with a separate, much older line of evidence: Mars formed and differentiated very fast. The hafnium-tungsten ($^{182}\mathrm{Hf}$-$^{182}\mathrm{W}$) chronometer applied to Martian meteorites and bulk silicate Mars indicates that Mars accreted and segregated its metallic core within only $\sim 2$--$4$ Myr of CAI formation {cite:p}`Kruijer2017Mars`. This is a remarkably short timescale, much shorter than the $\sim 30$--$100$ Myr accretion time of Earth, and it implies that **Mars is essentially a planetary embryo that never grew into a fully fledged terrestrial planet**. The small core fraction, the short dynamo lifetime, and the apparent lack of late giant impacts on Mars are all consistent with a body that finished its main accretion phase before the Solar System's terrestrial-planet region had even started to consolidate.
+
 ```{figure} figures/plesa2022_crustalthickness.avif
 :name: fig:plesa-crust
 :width: 700px
@@ -515,13 +517,13 @@ $$
 v_{\mathrm{esc}} = \sqrt{\frac{2\,G\,M}{r_{\mathrm{exo}}}}\, ,
 $$
 
-where $M$ is the planet mass. We define the dimensionless **escape parameter** as the ratio of gravitational to thermal energy:
+where $M$ is the planet mass. We define the dimensionless **escape parameter** as the ratio of the gravitational potential energy at the exobase to the thermal energy per molecule:
 
 $$
-\lambda \equiv \frac{1}{2}\left(\frac{v_{\mathrm{esc}}}{v_{\mathrm{th}}}\right)^{\!2} = \frac{G\,M\,m}{\kB\,T\,r_{\mathrm{exo}}}\, .
+\lambda \equiv \left(\frac{v_{\mathrm{esc}}}{v_{\mathrm{th}}}\right)^{\!2} = \frac{G\,M\,m}{\kB\,T\,r_{\mathrm{exo}}}\, .
 $$ (eq:lambda)
 
-The factor of $1/2$ is conventional; with this choice, $\lambda$ has the natural interpretation as the ratio of gravitational potential energy at the exobase to the thermal energy $\kB T$ per molecule. A molecule with kinetic energy comparable to $\kB T$ is bound when $\lambda \gg 1$ and free to escape when $\lambda \lesssim 1$.
+With $v_{\mathrm{th}} = \sqrt{2 \kB T / m}$ (the most-probable thermal speed) and $v_{\mathrm{esc}}^2 = 2 G M / r_{\mathrm{exo}}$, the algebra collapses cleanly to the right-hand side. A molecule with kinetic energy comparable to $\kB T$ is gravitationally bound when $\lambda \gg 1$ and free to escape when $\lambda \lesssim 1$.
 
 **The integration.**
 
@@ -571,14 +573,14 @@ $$
 \lambda_H = \frac{G M m}{\kB T r_{\mathrm{exo}}} \approx \frac{(6.67 \times 10^{-11})(6.4 \times 10^{23})(1.67 \times 10^{-27})}{(1.38 \times 10^{-23})(270)(3.6 \times 10^6)} \approx 5.3\, .
 $$
 
-So $e^{-\lambda_H} \approx 5 \times 10^{-3}$, modest but significant. The thermal speed of H at $270\ \mathrm{K}$ is $\sim 2.1\ \mathrm{km/s}$, comparable to a third of $v_{\mathrm{esc}}$, and a non-negligible fraction of the high-velocity tail of the distribution exceeds escape velocity. Hydrogen can escape Mars' atmosphere by Jeans escape, and over geological timescales the cumulative loss is enormous.
+So $e^{-\lambda_H} \approx 5 \times 10^{-3}$, modest but significant. The most-probable thermal speed of atomic hydrogen at $270$ K is $v_{\mathrm{th}}^H = \sqrt{2 \kB T / m_H} \approx 2.1$ km/s, roughly $40\%$ of $v_{\mathrm{esc}}$, so a non-negligible fraction of the high-velocity tail of the Maxwell-Boltzmann distribution exceeds escape velocity. Hydrogen can escape Mars' atmosphere by Jeans escape, and over geological timescales the cumulative loss is enormous.
 
 For molecular hydrogen ($\mathrm{H_2}$, $m = 2$ amu) the escape parameter doubles: $\lambda_{H_2} \approx 10$, $e^{-\lambda} \approx 5 \times 10^{-5}$. Still escaping, but more slowly than atomic H.
 
-For $\mathrm{CO_2}$, with molecular mass $44$, the escape parameter is
+For $\mathrm{CO_2}$, with molecular mass $44$ amu, the escape parameter is
 
 $$
-\lambda_{CO_2} = 44 \times \lambda_H / 1 \approx 230\, .
+\lambda_{CO_2} = \frac{m_{CO_2}}{m_H}\,\lambda_H = 44 \times 5.3 \approx 230\, .
 $$
 
 The exponential is then $e^{-230} \approx 10^{-100}$, which is *zero* for any practical purpose. **Mars cannot lose $\mathrm{CO_2}$ by Jeans escape on any reasonable timescale.** The same applies to nitrogen ($\lambda \approx 150$, $e^{-\lambda} \sim 10^{-65}$), oxygen ($\lambda \approx 170$), and water vapour ($\lambda \approx 95$, although $\mathrm{H_2O}$ is photolysed in the upper atmosphere and lost as H plus O via different channels).
@@ -645,7 +647,7 @@ Map of the radial component of the magnetic field measured by *Mars Global Surve
 Equivalent dipole sources fitted to the strongest crustal anomalies, showing concentration in Terra Cimmeria and Terra Sirenum. The lack of crustal magnetisation across Hellas, Argyre, and the Borealis lowlands implies that the dynamo had switched off before those basins formed and reset their thermal state. From {cite:t}`Acuna1999`. Courtesy NASA Goddard Space Flight Center.
 ```
 
-The spatial pattern is the key to dating the dynamo. The Hellas, Argyre, and Isidis impact basins, each of which formed by very large impacts in the late Noachian, are essentially *demagnetised* relative to the surrounding terrain. The interpretation is that these impacts heated the underlying crust above the magnetite Curie temperature ($\sim 850\ \mathrm{K}$) and erased its remanent magnetisation; when the crust cooled back down, there was no longer an active dynamo to record. Bracketing the basin ages places the death of the Martian dynamo around $4.1$--$3.9\ \mathrm{Ga}$.
+The spatial pattern is the key to dating the dynamo. The Hellas, Argyre, and Isidis impact basins, each of which formed by very large impacts in the late Noachian, are essentially *demagnetised* relative to the surrounding terrain. The interpretation is that these impacts heated the underlying crust above the magnetite Curie temperature ($\sim 850\ \mathrm{K}$) and erased its remanent magnetisation; when the crust cooled back down, there was no longer an active dynamo to record. Bracketing the basin ages places the death of the Martian dynamo around $4.1$--$3.9\ \mathrm{Ga}$ in the original {cite:t}`Acuna1999` analysis.
 
 This picture has been refined over time. {cite:t}`Mittelholz2020` analysed *MAVEN* magnetometer data from low-altitude passes over the $\sim 3.7\ \mathrm{Ga}$ Lucus Planum lava flow and detected a small but significant remanent field, suggesting that the dynamo (or at least episodes of it) was still operating at $3.7\ \mathrm{Ga}$, somewhat later than the basin-based estimate. {cite:t}`Lillis2024` very recently proposed that the apparent demagnetisation of the impact basins might instead reflect a *reversing* dynamo, in which the geometry of the field was changing on timescales short compared to basin cooling times, smearing out the recorded direction. Both findings push the death of the Martian dynamo somewhat later, possibly into the early Hesperian, and reduce the temporal gap between the loss of the dynamo and the loss of the atmosphere.
 
@@ -708,7 +710,7 @@ This is the framework we will need in {ref}`lecture13` and {ref}`lecture14` when
 
 ### The timing problem: dynamo lifetimes and habitability
 
-The four rocky planets in the inner solar system show four distinct dynamo histories. **Earth** has an active dynamo today, sustained by inner-core crystallisation that releases compositional buoyancy. **Mercury** has an active but very weak dynamo today, sustained by some combination of partial inner-core freezing and convection in a thin liquid shell, with possible thermal stratification. **Mars** had a strong dynamo for the first $\sim 500$ Myr of its history and then lost it, with the timing of the cessation refined by recent work to roughly $4.0$--$3.7$ Ga {cite:p}`Acuna1999,Mittelholz2020,Lillis2024`. **Venus** has no detectable intrinsic field today, but the timing of its dynamo cessation (and whether one ever existed) remains genuinely unknown ({ref}`lecture09`).
+The four rocky planets in the inner solar system show four distinct dynamo histories. **Earth** has an active dynamo today, sustained by inner-core crystallisation that releases compositional buoyancy. **Mercury** has an active but very weak dynamo today, sustained by some combination of partial inner-core freezing and convection in a thin liquid shell, with possible thermal stratification. **Mars** had a strong dynamo for the first $\sim 500$--$800$ Myr of its history and then lost it. The original basin-demagnetisation analysis of {cite:t}`Acuna1999` placed the cessation around $4.1$--$3.9$ Ga, while more recent re-analyses by {cite:t}`Mittelholz2020` and {cite:t}`Lillis2024` push the dynamo's last activity somewhat later, possibly into the early Hesperian around $4.0$--$3.7$ Ga. The exact end date is uncertain in between. **Venus** has no detectable intrinsic field today, but the timing of its dynamo cessation (and whether one ever existed) remains genuinely unknown ({ref}`lecture09`).
 
 The pattern is striking. **Dynamo longevity correlates with atmospheric retention and surface habitability** across the rocky planets in our solar system. Earth, the only one with a long-lived dynamo, is also the only one with a thick atmosphere stable on Gyr timescales and (so far as we know) the only one with surface life. Mars and Venus, both of which lack present-day dynamos, have lost most of their atmospheric inventories (Mars to space, Venus to runaway greenhouse and chemical lock-in) and are uninhabitable today. Mercury never had a chance to develop an Earth-like atmosphere because its small size and proximity to the Sun gave it neither the volatile inventory nor the gravitational retention to begin with.
 
@@ -749,7 +751,7 @@ The next decade is likely to be a golden era for comparative rocky-planet scienc
 
 - **Mercury and Mars are limiting cases for rocky-planet evolution.** Mercury is too small, too close, and too volatile-poor; Mars is too small to retain its atmosphere once the dynamo died. Both bracket Earth and Venus on the parameters that matter most for long-term habitability: size, distance, dynamo longevity, atmospheric retention.
 - **Each of Mercury's oddities points to a specific physical mechanism.** The high uncompressed density requires non-standard formation, plausibly involving giant impacts. The persistent weak dynamo requires a thin convecting shell with thermal stratification. The polar ice survives because the obliquity is essentially zero. The lobate scarps and active faulting record ongoing global contraction.
-- **Mars preserves the geological record of an Earth-like planet that lost its habitability.** The Noachian was wet enough to form valley networks, lakes, and clays. The Hesperian saw transitional, more acidic conditions and the bulk of the volcanic resurfacing. The Amazonian is the cold dry modern Mars. The dynamo died around $4.0$--$3.7$ Ga, and atmospheric loss to space (now measured in real time by MAVEN) accumulated to $\sim 0.5$--$1$ bar of $\mathrm{CO_2}$ and $\sim 23$ m of water over geological time.
+- **Mars preserves the geological record of an Earth-like planet that lost its habitability.** The Noachian was wet enough to form valley networks, lakes, and clays. The Hesperian saw transitional, more acidic conditions and the bulk of the volcanic resurfacing. The Amazonian is the cold dry modern Mars. The dynamo died sometime between $4.1$ and $3.7$ Ga (the basin-demagnetisation estimate of $4.1$--$3.9$ Ga, refined by more recent magnetometer analyses to as late as $\sim 3.7$ Ga), and atmospheric loss to space (now measured in real time by MAVEN) accumulated to $\sim 0.5$--$1$ bar of $\mathrm{CO_2}$ and $\sim 23$ m of water over geological time.
 - **The Jeans escape formula, equation {eq}`eq:jeans`, is selective.** Light species escape; heavy species do not. Mars' atmospheric loss is dominated by non-thermal (photochemical and ion-escape) processes, not by Jeans escape, except for hydrogen.
 - **Comparative planetology with the four rocky planets gives us four independent natural experiments** on the parameters that determine planetary evolution. This is the best calibration we will have for the inevitable next step of comparing those four solar-system worlds with the much larger sample of rocky exoplanets we will see in {ref}`lecture13` and {ref}`lecture14`.
 
