@@ -210,18 +210,43 @@ Each week consists of:
 
 ### Lecture 10: Rocky Planets — Mercury & Mars
 
-- Mercury: orbit and spin–orbit resonance (3:2)
-- Mercury's interior: large iron core, thin mantle, MESSENGER and BepiColombo results
-- Mercury's surface: heavily cratered, smooth plains, hollows
-- Mercury's exosphere and magnetosphere
-- Mars: geological history (Noachian, Hesperian, Amazonian epochs)
-- Evidence for past water: valley networks, outflow channels, mineral signatures
-- Mars today: thin atmosphere, seasonal dynamics, methane detections
-- **Blackboard derivation (~10 min):** Derive the Jeans escape flux — starting from the Maxwell–Boltzmann velocity distribution, integrate above the escape velocity to obtain the escape parameter λ = GMm/kTr and the escape rate, then compare H₂ vs. CO₂ escape from Mars
-- Olympus Mons, Valles Marineris, and the hemispheric dichotomy
-- Mars exploration: rovers, orbiters, sample return plans
-- Mars habitability: past and present prospects
-- Recent advances: Perseverance sample caching and Mars Sample Return status, BepiColombo Mercury flybys, Curiosity long-term climate record from Gale crater, subsurface water detections by radar
+**Structure**: descriptive-first (Mercury then Mars) with comparative payoff at the end.
+
+**Part 1 — Mercury, the metal world (~25 min)**
+
+- Overview: mass 0.055 $M_\oplus$, radius 0.383 $R_\oplus$, highest uncompressed density; orbit 0.39 AU, $e = 0.206$ (most eccentric planet); preview of the "why so dense?" problem (giant impact vs evaporation)
+- Spin–orbit resonance: 88-day orbit, 59-day rotation, 3:2 resonance driven by tidal evolution with permanent quadrupole (Correia & Laskar 2004); solar day of ~176 Earth days; fixed "hot poles" and "warm poles"
+- Interior: core mass fraction ~70% (unique in the solar system); liquid outer + solid inner core (MESSENGER libration); thin mantle ~400 km; $C/MR^2 \approx 0.346$; weak active dynamo with ~480 km northward offset
+- Surface morphology: lunar-like cratered terrain, smooth volcanic plains (~3.7–3.9 Ga), lobate scarps (~1–3 km thrust faults recording ~7 km radial contraction), hollows (MESSENGER discovery, Blewett 2011), Caloris Basin and antipodal chaotic terrain
+- **Polar volatiles (dedicated slide)**: water ice in permanently shadowed craters; Arecibo radar-bright detection (1991), MESSENGER neutron and imaging confirmation; cold traps maintained by Mercury's 2° obliquity; hottest planet hosts ~100 K surfaces
+- Exosphere and magnetosphere: collisionless Na/K/Ca/Mg/H/He exosphere; sodium tail millions of km long; compact magnetosphere ($r_\mathrm{mp} \sim 1.5 R_\mathrm{Mercury}$); reconnection rate ~10× Earth's
+- Mission history: Mariner 10 (1974–75), MESSENGER (2011–2015), BepiColombo (ESA/JAXA flybys 2021–2024, orbit insertion 2026; MPO + MMO orbiters); open questions for BepiColombo on core composition, polar ice inventory, magnetosphere variability
+
+**Part 2 — Mars, the watery past (~30 min)**
+
+- Overview: mass 0.107 $M_\oplus$, radius 0.532 $R_\oplus$, mean density 3.93 g/cm³ (lowest rocky planet); orbit 1.52 AU, obliquity 25°; 6 mbar CO₂ atmosphere, $T \approx 210$ K
+- **Phobos and Deimos (dedicated slide)**: small irregular moons, C-type spectra, low density → high porosity; Phobos orbital decay will destroy it in 30–50 Myr; origin debate (captured asteroids vs giant-impact debris); **JAXA MMX mission** (launch 2026, return 2031) will land on Phobos and return $\geq$10 g regolith, definitively settling the origin
+- Interior: core radius 1830 ± 40 km (~54% of $R$); liquid outer core (InSight S-wave shadow); light-element rich (S, O) explaining low density; no inner core → no dynamo today; crustal thickness 24–72 km; $C/MR^2 \approx 0.364$
+- Geological epochs: Noachian (>3.7 Ga; valley networks, clay minerals, active dynamo), Hesperian (~3.7–3.0 Ga; outflow channels, volcanism, sulfates), Amazonian (3.0 Ga–present; cold, dry, sporadic volcanism); mineral sequence phyllosilicates → sulfates → ferric oxides (Bibring 2006)
+- Surface highlights: hemispheric dichotomy (~6 km), Olympus Mons (21.9 km tall, 600 km diameter; long-lived stationary plume), Tharsis Bulge, Valles Marineris (4000 km rift), Hellas Basin, polar caps (seasonal CO₂ + permanent H₂O ice)
+- Evidence for past water: valley networks, outflow channels, phyllosilicates (OMEGA, CRISM), sulfates (Opportunity, Curiosity), deltas and lakebeds (Jezero, Gale, Eberswalde), jökulhlaup-style outburst features
+- Early Mars climate puzzle: faint young Sun vs evidence for sustained liquid water; pure CO₂ insufficient; candidates include reducing H₂/CH₄ greenhouse, H₂-CO₂ CIA (Wordsworth 2017, 2021), impact- or volcanism-driven episodic warming
+- Mars today: thin CO₂ atmosphere, global dust storms (2007, 2018), seasonal CO₂ cycle (~25% of atmosphere), recurring slope lineae (likely dry granular flow), **methane variability** (Curiosity detections ~0.5 ppb background + transient spikes vs ExoMars TGO upper limits; interpretation unresolved; ambiguity is the honest state)
+- **Blackboard derivation (~10 min):** Derive the Jeans escape flux — starting from the Maxwell–Boltzmann velocity distribution, integrate above the escape velocity to obtain $\lambda = GMm/(k_B T r)$ and the Jeans flux $\Phi_J = n\,(k_B T/2\pi m)^{1/2}(1+\lambda)e^{-\lambda}$; apply to Mars with $T_\mathrm{exo} \sim 270$ K: H₂ ($\lambda \approx 6$) escapes, CO₂ ($\lambda \approx 130$) does not; conclude that non-thermal processes (solar wind pickup, photochemical) dominate CO₂ loss
+- MAVEN escape constraints: present-day total ~1–2 kg/s, dominated by photochemical O escape; solar-storm enhancement ~10×; integrated over 4 Gyr consistent with loss of ~0.5–0.8 bar CO₂ and ~15–25 m water-equivalent layer
+- **Exploration history (two slides):** 
+  1. Mariner 4 (1965), Viking 1 & 2 (1976), Pathfinder + Sojourner (1997), Mars Global Surveyor, Mars Odyssey, Mars Express, MRO, Spirit & Opportunity (2004–2018)
+  2. Curiosity (2012–), InSight (2018–2022), Perseverance + Ingenuity (2021–), Tianwen-1 + Zhurong (2021–), UAE Hope (2021–), ExoMars Trace Gas Orbiter (2016–)
+- Mars habitability: Noachian conditions analogous to early Earth (hydrothermal systems, mineral diversity, organics); subsurface habitability possible today; subglacial lake debate (Orosei 2018 vs conductive-clay alternative)
+- **Mars Sample Return**: Perseverance caching in Jezero; **2024 re-baselining announced major cost and schedule overrun**; architecture under review with NASA study teams; return date uncertain but likely early-to-mid 2030s; scientific imperative remains
+
+**Part 3 — Comparative payoff (~15 min)**
+
+- Mercury vs Mars as limiting cases: Mercury is too small + too close; Mars is medium-sized + too far. Both bracket Earth in the size–distance phase space
+- Size and distance set the trajectory: interior cooling rate ($L^2/\kappa$) and gravitational retention ($\lambda$) are the two fundamental controls; many other properties are consequences
+- The timing problem: Mercury's dynamo persists despite its small size; Mars' dynamo died early (4.1–3.9 Ga, Mittelholz 2020); Earth's dynamo still active via inner core crystallisation; Venus' dynamo shutdown time unknown
+- What makes a rocky planet habitable? (synthesised from L9 + L10) (1) liquid water, (2) active geology for volatile recycling, (3) magnetic shielding (debated), (4) long-term climate stability. Earth ticks all four; Venus and Mars failed on at least two; Mercury never had a chance
+- Recent advances and upcoming missions: Mars Sample Return (NASA/ESA, schedule in flux), BepiColombo (2026 orbit insertion), ExoMars Rosalind Franklin (~2028), JAXA MMX (2026 launch, 2031 return), Curiosity long-baseline results, subsurface radar reservoirs (contested), Ingenuity helicopter legacy, Perseverance ongoing geochemistry
 
 ### Lecture 11: Gas & Ice Giants — Jupiter, Saturn, Uranus, Neptune
 
@@ -437,7 +462,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 7 | Planetary surfaces | Verified | High |
 | 8 | Planetary interiors | Verified | High |
 | 9 | Rocky planets: Earth & Venus | Outline drafted | Medium |
-| 10 | Rocky planets: Mercury & Mars | Not started | Medium |
+| 10 | Rocky planets: Mercury & Mars | Outline drafted | Medium |
 | 11 | Gas & ice giants | Not started | Medium |
 | 12 | Meteorites, asteroids, minor planets & comets | Not started | Medium |
 | 13 | Exoplanets | Not started | Medium |
