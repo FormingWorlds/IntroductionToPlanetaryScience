@@ -442,22 +442,23 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | 14 | Synthesis & astrobiology | Not started | Low |
 
 **Slide infrastructure (complete):**
-- Custom Beamer theme: `slides/common/beamerthemeIPS.sty` — dark navy/teal palette, Inter + Fira Math fonts (XeLaTeX), `\ipscontain` for background images, `\sectionimage`/`\breakslide`/`\keyresult`/`\source` helper commands, thin accent-line frame titles, minimal footline (author | short title | slide number)
-- Shared math macros: `slides/common/macros.tex` — mirrors `_config.yml` definitions
-- Build system: `slides/Makefile` with `avif2png` target (AVIF→PNG auto-conversion for XeLaTeX), `latexmk -xelatex`; also integrated into root `Makefile` via `make slides`
-- `.gitignore`: ignores LaTeX build artifacts and generated PNG/JPG
+- Custom Beamer theme: `slides/common/beamerthemeIPS.sty`: dark navy/teal palette, Inter + Fira Math fonts (XeLaTeX), `\ipscontain` for background images, `\sectionimage`/`\breakslide`/`\keyresult`/`\source` helper commands, thin accent-line frame titles, minimal footline (author, short title, slide number)
+- Shared math macros: `slides/common/macros.tex` mirrors `_config.yml` definitions
+- Build system: `slides/Makefile` with `avif2png` and `svg2pdf` targets (auto-conversion for XeLaTeX via `magick` and `cairosvg`), `latexmk -xelatex`; integrated into root `Makefile` via `make slides`
+- `.gitignore`: ignores LaTeX build artifacts and generated PNG/PDF in slide figure directories
 
-**Lectures 1-8 slides (all draft complete):**
-- L1: `slides/lecture01/lecture01.tex` — 52 frames, 32 AVIF figures
-- L2: `slides/lecture02/lecture02.tex` — 36 frames, 14 figures (HL Tau, DSHARP, solar nebula, Kepler laws, orbital elements, Nice model, giant impact, hot Jupiter)
-- L3: `slides/lecture03/lecture03.tex` — 33 frames, 6 figures (radiogenic heat, convection cells, Io, Enceladus)
-- L4: `slides/lecture04/lecture04.tex` — 33 frames, 8 figures (differentiation, Goldschmidt, dynamo, magnetosphere, Mars crustal magnetism, aurora)
-- L5: `slides/lecture05/lecture05.tex` — 37 frames, 9 figures (atmosphere layers, blackbody spectrum, transmission, greenhouse, escape velocity)
-- L6: `slides/lecture06/lecture06.tex` — 40 frames, 8 figures (Venus UV clouds, Jupiter clouds, GRS, Saturn hexagon, dust storm, Hadley cells, carbonate-silicate)
-- L7: `slides/lecture07/lecture07.tex` — 43 frames, 13 figures (craters, Olympus Mons, Valles Marineris, plate tectonics, valley networks, Io, Enceladus)
-- L8: `slides/lecture08/lecture08.tex` — 44 frames, 7 figures (seismic waves, Earth/Mars/Jupiter/Europa interiors, PREM)
-- All slides use consistent IPS Beamer theme, section transition images, break slides, and closing format
-- Known issues to address in next review pass: verify all slide content fits within frame boundaries at different projector resolutions; some slides with dense tables or equations may benefit from font size adjustments
+**Lectures 1-8 slides (all built cleanly, second adversarial review pass complete):**
+- L1: `slides/lecture01/lecture01.tex`, 61 pages, 23 figures
+- L2: `slides/lecture02/lecture02.tex`, 47 pages, 10 figures (including solar_nebula_stages roadmap now integrated)
+- L3: `slides/lecture03/lecture03.tex`, 37 pages, 6 figures + expanded blackboard derivation (3 frames) + gravitational differentiation + mantle plumes frames added
+- L4: `slides/lecture04/lecture04.tex`, 33 pages, 7 figures + partition coefficients frame + split Volatile Delivery into two frames
+- L5: `slides/lecture05/lecture05.tex`, 46 pages, 7 figures
+- L6: `slides/lecture06/lecture06.tex`, 51 pages, 7 figures + expanded Clausius-Clapeyron derivation (extra integration step)
+- L7: `slides/lecture07/lecture07.tex`, 56 pages, 13 figures + new Remote Sensing section (3 frames: overview, radar imaging, laser altimetry)
+- L8: `slides/lecture08/lecture08.tex`, 55 pages, 6 figures + source citations added to key numerical tables
+- All 105 em-dash instances across the 8 decks replaced per CLAUDE.md style
+- All SVG figures in column layouts audited and constrained with `width=\linewidth, keepaspectratio` to prevent overflow
+- `slides/Makefile` updated with `svg2pdf` target using `cairosvg` (L2-L6 had SVG references that xelatex could not resolve before this fix)
 
 Each slide deck requires:
 - LaTeX source file (Beamer presentation class) using the custom IPS theme (`slides/common/beamerthemeIPS.sty`)

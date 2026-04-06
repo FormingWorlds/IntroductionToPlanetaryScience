@@ -1,4 +1,4 @@
-% lecture03.tex — Lecture 3: Planetary Heat & Energy Transport
+% lecture03.tex: Lecture 3: Planetary Heat & Energy Transport
 % Introduction to Planetary Science, Kapteyn Institute
 
 \documentclass[aspectratio=169, 11pt]{beamer}
@@ -61,10 +61,10 @@
   Four principal sources of internal heat:
   \vskip8pt
   \begin{enumerate}
-    \item \textbf{Accretional heating} --- gravitational energy from assembly
-    \item \textbf{Gravitational differentiation} --- core formation releases $\sim$10\% more
-    \item \textbf{Radioactive decay} --- sustained for billions of years
-    \item \textbf{Tidal heating} --- orbital energy dissipated as friction
+    \item \textbf{Accretional heating:} gravitational energy from assembly
+    \item \textbf{Gravitational differentiation:} core formation releases $\sim$10\% more
+    \item \textbf{Radioactive decay:} sustained for billions of years
+    \item \textbf{Tidal heating:} orbital energy dissipated as friction
   \end{enumerate}
   \vskip8pt
   Without internal heat $\rightarrow$ no volcanism, no magnetic field, no plate tectonics, no atmospheric outgassing.
@@ -81,6 +81,22 @@
   $$\Delta T = \frac{E_{\mathrm{acc}}}{M c_p} \approx \frac{2.2 \times 10^{32}}{5.97 \times 10^{24} \times 1200} \approx 30{,}000\;\text{K}$$
   \vskip6pt
   \keyresult{Enough to melt Earth many times over. Accretion inevitably produces a \textbf{magma ocean}.}
+\end{frame}
+
+% ── Gravitational differentiation ─────────────────────────
+\begin{frame}{Gravitational Differentiation}
+  A second, one-time burst of heat accompanies \textbf{core formation}.
+  \vskip6pt
+  \begin{itemize}
+    \item Dense iron droplets sink from the magma ocean to the centre
+    \item Gravitational potential energy $\rightarrow$ heat via viscous friction
+    \item Energy release $\sim$10\% of the accretional budget
+  \end{itemize}
+  \vskip6pt
+  Order-of-magnitude estimate for Earth:
+  $$E_{\mathrm{diff}} \sim \frac{3}{10}\,\frac{GM_{\mathrm{core}}^2}{R_{\mathrm{core}}}\left(\frac{R}{R_{\mathrm{core}}} - 1\right) \approx 2 \times 10^{31}~\text{J}$$
+  \vskip4pt
+  \keyresult{This heat is released \textbf{once}, during core formation, and sustains the magma ocean long enough for chemical differentiation (Lecture~4).}
 \end{frame}
 
 % ── Radioactive decay ─────────────────────────────────────
@@ -109,7 +125,7 @@
 % ── Radiogenic heat evolution figure ──────────────────────
 \begin{frame}{Radiogenic Heat Over Time}
   \centering
-  \includegraphics[height=0.65\textheight]{radiogenic_heat_evolution}
+  \includegraphics[width=0.85\textwidth,height=0.65\textheight,keepaspectratio]{radiogenic_heat_evolution}
   \source{Wikimedia Commons, CC BY-SA 4.0}
   \vskip4pt
   {\small Total heat production (black) is the sum of four isotopes. ${}^{40}\mathrm{K}$ and ${}^{235}\mathrm{U}$ dominated in the early solar system.}
@@ -159,7 +175,7 @@
   \begin{description}
     \item[Conduction:] Heat transferred by molecular/atomic collisions\\
     $\vec{q} = -k\nabla T$ (Fourier's law)\\
-    Slow, diffusive --- dominant in lithosphere, small bodies
+    Slow, diffusive; dominant in lithosphere, small bodies
 
     \vskip6pt
     \item[Convection:] Heat transported by bulk fluid motion\\
@@ -178,7 +194,7 @@
   \begin{itemize}
     \item Heat flux: $\vec{q} = -k\nabla T$
     \item Thermal diffusivity: $\kappa = k/(\rho c_p) \approx 10^{-6}$~m$^2$\,s$^{-1}$ (rock)
-    \item Inherently \textbf{diffusive} --- slow over large distances
+    \item Inherently \textbf{diffusive}, slow over large distances
     \item The time for heat to conduct through distance $L$:
   \end{itemize}
   \vskip6pt
@@ -192,7 +208,7 @@
   \begin{columns}[c]
     \column{0.40\textwidth}
     \centering
-    \includegraphics[height=0.55\textheight]{convection_cells}
+    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{convection_cells}
     \source{Wikimedia Commons, CC BY-SA 3.0}
 
     \column{0.57\textwidth}
@@ -217,35 +233,51 @@
 \section{Blackboard Derivation: Cooling Timescale}
 % ════════════════════════════════════════════════════════════
 
-% ── Setup ──────────────────────────────────────────────────
-\begin{frame}{The Heat Diffusion Equation}
-  \textbf{Goal:} Show that conduction alone cannot cool planet-sized bodies.
+% ── Setup: goal and strategy ──────────────────────────────
+\begin{frame}{Goal and Strategy}
+  \textbf{Goal:} Estimate how long it takes heat to conduct out of a body of size $L$.
+  \vskip8pt
+  \textbf{Strategy:} Start from the heat equation, then use dimensional analysis instead of solving the PDE.
   \vskip10pt
-  The \textbf{heat equation}:
+  \begin{itemize}
+    \item We want a characteristic timescale $\tau_{\mathrm{cond}}(L, \kappa)$
+    \item Plug in representative values for rock
+    \item Compare to the age of the solar system ($4.6$~Gyr)
+  \end{itemize}
+  \vskip8pt
+  \textbf{Physical intuition:} bigger bodies have a longer path for heat to diffuse, so they stay hot for longer. We will derive exactly \textit{how much} longer.
+\end{frame}
+
+% ── Step 1: heat equation ─────────────────────────────────
+\begin{frame}{Step 1: The Heat Diffusion Equation}
+  Fourier's law $\vec{q} = -k\nabla T$ combined with energy conservation gives:
+  $$\rho c_p\,\pdv{T}{t} = \nabla\!\cdot\!(k\nabla T)$$
+  \vskip6pt
+  For constant thermal conductivity $k$, define $\kappa = k/(\rho c_p)$:
   $$\pdv{T}{t} = \kappa \nabla^2 T$$
   \vskip6pt
   In one dimension:
   $$\pdv{T}{t} = \kappa \pdv{^2 T}{x^2}$$
   \vskip6pt
-  Rate of temperature change $\propto$ curvature of the temperature profile.
+  The rate of temperature change is proportional to the \textbf{curvature} of the temperature profile; flat profiles do not evolve, curved ones relax.
 \end{frame}
 
-% ── Derivation ─────────────────────────────────────────────
-\begin{frame}{Dimensional Analysis}
-  The heat equation relates:
+% ── Step 2: dimensional analysis ──────────────────────────
+\begin{frame}{Step 2: Dimensional Analysis}
+  Replace derivatives with characteristic scales:
   \begin{itemize}
-    \item Time derivative: $\pdv{T}{t} \sim T/\tau$
-    \item Spatial derivative: $\pdv{^2 T}{x^2} \sim T/L^2$
+    \item Time derivative: $\pdv{T}{t} \sim \dfrac{T}{\tau}$
+    \item Spatial derivative: $\pdv{^2 T}{x^2} \sim \dfrac{T}{L^2}$
   \end{itemize}
   \vskip8pt
-  Substituting:
-  $$\frac{T}{\tau} \sim \kappa\frac{T}{L^2}$$
+  Substitute into the heat equation:
+  $$\frac{T}{\tau} \sim \kappa\,\frac{T}{L^2}$$
   \vskip4pt
-  Temperature cancels:
+  Temperature cancels (as it must: the timescale is intrinsic, not tied to any particular $T$):
   \vskip4pt
   \keyresult{$$\boxed{\tau_{\mathrm{cond}} \sim \frac{L^2}{\kappa}}$$}
   \vskip4pt
-  \textbf{Key feature:} $L^2$ dependence --- doubling the size $\rightarrow$ 4$\times$ the cooling time.
+  \textbf{Key feature:} the $L^2$ scaling. Doubling the body size $\rightarrow$ 4$\times$ the cooling time.
 \end{frame}
 
 % ── Application table ──────────────────────────────────────
@@ -313,11 +345,11 @@
   $$\mathrm{Ra}_\oplus \sim \frac{2 \times 10^{-5} \times 4000 \times 10 \times 2500 \times (3 \times 10^6)^3}{10^{-6} \times 10^{21}} \sim 10^7\text{--}10^8$$
   \vskip8pt
   \begin{itemize}
-    \item $\mathrm{Ra}_\oplus \gg \mathrm{Ra}_c \approx 1000$ --- \textbf{vigorous convection confirmed}
+    \item $\mathrm{Ra}_\oplus \gg \mathrm{Ra}_c \approx 1000$: \textbf{vigorous convection confirmed}
     \item Explains why Earth's interior cools efficiently despite conduction being inadequate
   \end{itemize}
   \vskip6pt
-  \keyresult{The Nusselt number Nu $\propto$ Ra$^{1/3}$ measures convection efficiency.\\For Earth: Nu $\sim (10^7)^{1/3} \sim 200$ --- convection transports heat 200$\times$ faster than conduction.}
+  \keyresult{The Nusselt number Nu $\propto$ Ra$^{1/3}$ measures convection efficiency.\\For Earth: Nu $\sim (10^7)^{1/3} \sim 200$, so convection transports heat 200$\times$ faster than conduction.}
 \end{frame}
 
 % ── Boundary layers ───────────────────────────────────────
@@ -363,6 +395,22 @@
   Why Earth is unique: likely a combination of water, size, and thermal history.
 \end{frame}
 
+% ── Mantle plumes and hotspots ────────────────────────────
+\begin{frame}{Mantle Plumes and Hotspots}
+  Whole-mantle convection is dominated by sheet-like downwellings (subducting slabs), but the hot bottom boundary layer is also unstable.
+  \vskip6pt
+  \begin{itemize}
+    \item Hot, buoyant material collects at the base of the mantle (D$''$)
+    \item Periodically detaches as narrow, rising \textbf{plumes} ($\sim$100~km diameter)
+    \item Reach the lithosphere and generate \textbf{intraplate volcanism}
+    \item Plumes are long-lived ($10^7$--$10^8$~yr) and approximately fixed in the deep mantle
+  \end{itemize}
+  \vskip6pt
+  \textbf{Examples (Earth):} Hawaii, Iceland, Yellowstone, Réunion.
+  \vskip6pt
+  \keyresult{Plumes move heat from the core--mantle boundary to the surface independently of plate tectonics.}
+\end{frame}
+
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{enceladus_plumes}{Enceladus plumes, Cassini. Credit: NASA/JPL/SSI}
@@ -382,8 +430,10 @@
     Io     & 2000--3000 & $\sim$100  & \textbf{Tidal dissipation} \\
     \bottomrule
   \end{tabular}
+  \vskip6pt
+  {\tiny\color{ipsText!60} Source: Davies \& Davies (2010); Veeder et al.\ (2012); InSight + gravity/topography estimates}
   \vskip10pt
-  Io's heat flux is 20--30$\times$ higher than Earth's --- entirely from tidal heating.
+  Io's heat flux is 20--30$\times$ higher than Earth's, entirely from tidal heating.
 \end{frame}
 
 % ── Tidal heating mechanism ───────────────────────────────
@@ -464,7 +514,7 @@
   \end{itemize}
   \vskip6pt
   \begin{block}{}
-    These ocean worlds are among the most promising targets for extraterrestrial life --- they have liquid water, chemical energy, and organic building blocks.
+    These ocean worlds are among the most promising targets for extraterrestrial life: they have liquid water, chemical energy, and organic building blocks.
   \end{block}
 \end{frame}
 
@@ -493,7 +543,7 @@
 \begin{frame}{Summary}
   \begin{enumerate}
     \item Four heat sources: accretional, gravitational differentiation, radioactive decay, tidal heating
-    \item Conduction is diffusive ($\tau \sim L^2/\kappa$) --- too slow for planet-sized bodies
+    \item Conduction is diffusive ($\tau \sim L^2/\kappa$), too slow for planet-sized bodies
     \item Convection dominates in large bodies: $\mathrm{Ra} \gg \mathrm{Ra}_c$
     \item Earth: mobile lid (plate tectonics); other rocky bodies: stagnant lid
     \item Tidal heating powers Io's volcanism and maintains subsurface oceans on Enceladus, Europa, and Titan
@@ -511,7 +561,7 @@
   \begin{center}
     {\color{white}\Large\bfseries Questions?}
     \vskip20pt
-    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~4 --- Chemical Differentiation \& Magnetospheres}}
+    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~4. Chemical Differentiation \& Magnetospheres}}
     \vskip16pt
     {\color{ipsLightFill!70}\small Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
   \end{center}

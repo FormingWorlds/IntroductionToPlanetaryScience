@@ -1,4 +1,4 @@
-% lecture02.tex — Lecture 2: Planet Formation 101 & Orbital Dynamics
+% lecture02.tex: Lecture 2: Planet Formation 101 & Orbital Dynamics
 % Introduction to Planetary Science, Kapteyn Institute
 
 \documentclass[aspectratio=169, 11pt]{beamer}
@@ -60,7 +60,7 @@
   \begin{itemize}
     \item Stars form from cold ($T \sim 10$--$20$~K), dense molecular clouds
     \item Collapse triggered when self-gravity overcomes thermal pressure
-    \item Critical mass for collapse --- the \textbf{Jeans mass}:
+    \item Critical mass for collapse, the \textbf{Jeans mass}:
     $$M_J \sim \frac{c_s^3}{\sqrt{G^3 \rho}}$$
     \item For typical conditions: $M_J \sim 1$--$10\;\Msun$
     \item Angular momentum conservation $\Rightarrow$ \textbf{disk} forms around the protostar
@@ -133,7 +133,7 @@
   \includegraphics[width=0.75\textwidth]{dsharp_gallery}
   \source{ALMA/ESO/NAOJ/NRAO, Andrews et al.\ 2018}
   \vskip4pt
-  {\small 20 nearby protoplanetary disks at the same spatial scale. Every disk shows rings, gaps, spirals, or crescents --- structure is \textbf{ubiquitous}.}
+  {\small 20 nearby protoplanetary disks at the same spatial scale. Every disk shows rings, gaps, spirals, or crescents: structure is \textbf{ubiquitous}.}
 \end{frame}
 
 % ── Disk lifetimes ─────────────────────────────────────────
@@ -213,7 +213,7 @@
     \item Skips the problematic cm-to-metre range entirely
   \end{itemize}
   \vskip6pt
-  \keyresult{The streaming instability solves the radial drift barrier by collective effects --- particles help each other avoid falling into the star.}
+  \keyresult{The streaming instability solves the radial drift barrier by collective effects: particles help each other avoid falling into the star.}
 \end{frame}
 
 % ── Pebble accretion ──────────────────────────────────────
@@ -308,7 +308,29 @@
     \end{itemize}
   \end{columns}
   \vskip4pt
-  \keyresult{Formation is not just assembly --- it drives differentiation, outgassing, and sets the stage for all subsequent evolution (Lectures 3 \& 4).}
+  \keyresult{Formation is not just assembly; it drives differentiation, outgassing, and sets the stage for all subsequent evolution (Lectures 3 \& 4).}
+\end{frame}
+
+% ── Formation roadmap overview ─────────────────────────────
+\begin{frame}{From Dust to Planets: The Full Sequence}
+  \begin{columns}[c]
+    \column{0.22\textwidth}
+    \centering
+    \includegraphics[height=0.82\textheight,keepaspectratio]{solar_nebula_stages}
+    \source{Wikimedia, public domain}
+
+    \column{0.75\textwidth}
+    Four key stages, from top to bottom:
+    \vskip8pt
+    \begin{enumerate}
+      \item \textbf{Cloud collapse:} a cold, dense molecular cloud fragments and contracts under self-gravity
+      \item \textbf{Protoplanetary disk:} conservation of angular momentum flattens the infalling gas into a rotating disk
+      \item \textbf{Disk substructure:} dust settles and concentrates into rings; streaming instability builds planetesimals
+      \item \textbf{Mature system:} runaway and oligarchic growth, followed by giant impacts, produce the planets on stable orbits
+    \end{enumerate}
+    \vskip8pt
+    Total timescale: $\sim$100~Myr from first collapse to a settled planetary system.
+  \end{columns}
 \end{frame}
 
 
@@ -339,7 +361,7 @@
 % ── Kepler's laws diagram ─────────────────────────────────
 \begin{frame}{Visualising Kepler's Laws}
   \centering
-  \includegraphics[height=0.70\textheight]{kepler_laws}
+  \includegraphics[width=0.85\textwidth,height=0.70\textheight,keepaspectratio]{kepler_laws}
   \source{Hankwang, CC BY 2.5}
   \vskip4pt
   {\small Elliptical orbit (left), equal areas (centre, shaded regions have equal area), and the period--semi-major axis relation (right).}
@@ -350,7 +372,7 @@
   \begin{columns}[c]
     \column{0.38\textwidth}
     \centering
-    \includegraphics[height=0.65\textheight]{orbital_elements}
+    \includegraphics[width=\linewidth,height=0.65\textheight,keepaspectratio]{orbital_elements}
     \source{Lasunncty, CC BY-SA 3.0}
 
     \column{0.58\textwidth}
@@ -381,7 +403,7 @@
     \item Reduces to \textbf{reduced mass} $\mu = m_1 m_2 / (m_1 + m_2)$ in central field of $M = m_1 + m_2$
     \item Total orbital energy:
     $$E = \frac{1}{2}\mu v^2 - \frac{G m_1 m_2}{r}$$
-    \item Fundamental result --- energy depends \textbf{only on $a$}:
+    \item Fundamental result: energy depends \textbf{only on $a$}:
   \end{itemize}
   \vskip4pt
   \keyresult{$$E = -\frac{G m_1 m_2}{2a}$$}
@@ -471,7 +493,7 @@
   \begin{itemize}
     \item Races through the inner solar system at $\sim$2$\times$ Earth's speed
     \item Crawls beyond Neptune at $<$1~km\,s$^{-1}$
-    \item Same total energy --- just redistributed between $K$ and $U$ along the orbit
+    \item Same total energy, just redistributed between $K$ and $U$ along the orbit
   \end{itemize}
 \end{frame}
 
@@ -573,7 +595,7 @@
     For Saturn + icy satellite:\\
     $d_R \approx 126{,}000$~km $\approx 2.16\,R_{\mathrm{Saturn}}$
     \vskip4pt
-    Saturn's main rings extend from 67,000 to 137,000~km --- \textbf{mostly within the Roche limit} (the formula is approximate; rigid-body and compositional effects shift the boundary).
+    Saturn's main rings extend from 67,000 to 137,000~km, \textbf{mostly within the Roche limit} (the formula is approximate; rigid-body and compositional effects shift the boundary).
   \end{columns}
 \end{frame}
 
@@ -667,11 +689,11 @@
 % ── Recent results ─────────────────────────────────────────
 \begin{frame}{Recent Advances}
   \begin{itemize}
-    \item \textbf{ALMA DSHARP survey:} Ring-and-gap substructure is ubiquitous --- planet formation begins within 1~Myr
+    \item \textbf{ALMA DSHARP survey:} Ring-and-gap substructure is ubiquitous; planet formation begins within 1~Myr
     \vskip4pt
     \item \textbf{Pebble accretion:} Refined models show giant planet cores must form within 1--3~Myr
     \vskip4pt
-    \item \textbf{Juno at Jupiter:} Gravity data reveal a \textbf{dilute core} --- heavy elements spread over inner $\sim$30--50\% of radius, not a compact nugget (Lecture~8)
+    \item \textbf{Juno at Jupiter:} Gravity data reveal a \textbf{dilute core}; heavy elements spread over inner $\sim$30--50\% of radius, not a compact nugget (Lecture~8)
     \vskip4pt
     \item \textbf{Meteorite isotopics:} New constraints on giant planet formation timescales from Hf--W and Mo isotope systematics
   \end{itemize}
@@ -685,7 +707,7 @@
     \item Giant planets form by \textbf{core accretion}: solid core $\rightarrow$ critical mass $\rightarrow$ runaway gas capture
     \item Orbits follow Kepler's laws; the \textbf{vis-viva equation} gives speed at any point
     \item Orbital \textbf{resonances} can protect or destabilise orbits, and drive tidal heating
-    \item Planets \textbf{migrate} through disk and planetesimal interactions --- confirmed by hot Jupiters
+    \item Planets \textbf{migrate} through disk and planetesimal interactions, confirmed by hot Jupiters
   \end{enumerate}
 \end{frame}
 
@@ -699,7 +721,7 @@
   \begin{center}
     {\color{white}\Large\bfseries Questions?}
     \vskip20pt
-    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~3 --- Planetary Heat \& Energy Transport}}
+    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~3. Planetary Heat \& Energy Transport}}
     \vskip16pt
     {\color{ipsLightFill!70}\small Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
   \end{center}
