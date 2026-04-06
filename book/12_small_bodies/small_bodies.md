@@ -242,15 +242,15 @@ They all share the same initial Pb ratios and the same age $t$.
 What differs between samples is the U/Pb ratio, because U and Pb partition differently into different mineral phases (U is incompatible in olivine, for example, while Pb is incompatible in apatite).
 
 **Eliminate U/Pb completely.**
-Take the ratio of the two equations above for the same sample.
-Algebraically, the U/Pb terms cancel, and we are left with
+Take the ratio of the two equations above for the same sample, dividing the $^{207}$Pb/$^{204}$Pb expression by the $^{206}$Pb/$^{204}$Pb expression.
+The $^{204}$Pb terms cancel and the U-isotope ratio simplifies to the present-day $^{235}\mathrm{U}/{}^{238}\mathrm{U}$ value, leaving
 $$
 \frac{({}^{207}\mathrm{Pb}/{}^{204}\mathrm{Pb})_{\text{now}} - ({}^{207}\mathrm{Pb}/{}^{204}\mathrm{Pb})_0}
 {({}^{206}\mathrm{Pb}/{}^{204}\mathrm{Pb})_{\text{now}} - ({}^{206}\mathrm{Pb}/{}^{204}\mathrm{Pb})_0}
 =
 \frac{{}^{235}\mathrm{U}}{{}^{238}\mathrm{U}} \cdot \frac{\exp(\lambda_{235} t) - 1}{\exp(\lambda_{238} t) - 1}.
 $$
-The right-hand side depends *only on time* (and on the present-day $^{235}\mathrm{U}/{}^{238}\mathrm{U}$ ratio of the rock, which is well-measured: about $1/137.8$ in CAIs once a small natural variability discovered by Brennecka and collaborators is corrected for).
+The right-hand side depends *only on time* (and on the present-day $^{235}\mathrm{U}/{}^{238}\mathrm{U}$ ratio of the rock, which is well-measured: about $1/137.8$ in CAIs once a small natural variability {cite:p}`Brennecka2010` is corrected for).
 The left-hand side is the slope of a line in a plot of $({}^{207}\mathrm{Pb}/{}^{204}\mathrm{Pb})$ versus $({}^{206}\mathrm{Pb}/{}^{204}\mathrm{Pb})$: this is the **Pb-Pb isochron**.
 
 **Why this is self-calibrating.**
@@ -266,7 +266,7 @@ The measured isochrons gave a CAI age of
 $$
 t_{\text{CAI}} = 4567.30 \pm 0.16 \text{ Myr}.
 $$
-The same work, on chondrules from the same meteorite, found chondrule ages between $4567.32$ and $4564.71$ Myr, that is, chondrule formation began *contemporaneously* with CAIs and continued for about 3 Myr.
+The same work reported chondrule ages from the same meteorite extending from about $4567.3$ Myr down to $4564.7$ Myr, leading {cite:t}`Connelly2012` to argue that chondrule formation began essentially contemporaneously with CAIs. The contemporaneity of the very earliest chondrules with CAIs is contested, however: subsequent high-precision Pb-Pb work {cite:p}`Bollard2017` and Hf-W chronometry of chondrule precursors generally place the bulk of chondrule formation $\sim 1$--$3$ Myr after CAIs, with the oldest Connelly 2012 outlier widely interpreted as a single anomalous grain.
 The CAI age has been confirmed by independent samples and laboratories to within the same precision {cite:p}`Amelin2010`.
 This is the absolute zero of the solar system clock.
 
@@ -362,7 +362,7 @@ What it *means* is debated, and at the time of writing in 2026 there are at leas
 :width: 500px
 :align: center
 
-Hf-W metal-silicate model ages of NC and CC iron meteorite parent bodies, plotted relative to the formation of CAIs ($t = 0$). Each row is a single iron meteorite group; red diamonds are CC groups (IIC, IIAB, IIIF) and blue symbols are NC groups (IVA, IIIE, IIIAB, IIAB, IC). The shaded bands show the mean ages of the volatile-rich CC and the volatile-poor NC populations. NC parent bodies form systematically earlier ($\Delta t_{\text{CAI}} \lesssim 1$ Myr) than CC parent bodies ($\Delta t_{\text{CAI}} \sim 3$ Myr), with little overlap. This temporal separation is the key constraint that all three interpretations of the NC-CC dichotomy must satisfy. From Figure 5 of {cite:t}`SpitzerPt2021`.
+Hf-W metal-silicate model ages of NC and CC iron meteorite parent bodies, plotted relative to the formation of CAIs ($t = 0$). Each row is a single iron meteorite group; red diamonds are CC groups (IIC, IID, IIF, IIIF, IVB) and blue symbols are NC groups (IC, IAB, IIAB, IIE, IIIAB, IIIE, IVA). The shaded bands show the mean ages of the volatile-rich CC and the volatile-poor NC populations. NC parent bodies form systematically earlier ($\Delta t_{\text{CAI}} \lesssim 1$ Myr) than CC parent bodies ($\Delta t_{\text{CAI}} \sim 3$ Myr), with little overlap. This temporal separation is the key constraint that all three interpretations of the NC-CC dichotomy must satisfy. From Figure 5 of {cite:t}`SpitzerPt2021`.
 ```
 
 ```{figure} figures/lichtenberg2021_fig1.avif
@@ -457,7 +457,7 @@ Where in the solar system do small bodies live, what shapes their orbits, and wh
 ### The asteroid belt: structure and orbital dynamics
 
 The asteroid belt is the largest reservoir of small bodies inside Neptune's orbit.
-About 1.2 million asteroids larger than 1 km in diameter are currently catalogued, and the total population larger than $\sim 100$ m is estimated at several tens of millions {cite:p}`Bottke2020`.
+More than $1.4$ million asteroids of all sizes have so far been catalogued by the Minor Planet Center, and the estimated total main-belt population larger than $1$ km is on the order of $10^6$, with several tens of millions of bodies above $\sim 100$ m {cite:p}`Bottke2020`.
 The total mass of the belt is approximately $4 \times 10^{-4}\,\Mearth$, of which Ceres alone contributes about $30\%$.
 The bulk of the orbital distribution lies between $a = 2.1$ AU and $a = 3.3$ AU, with prograde, low-to-moderate eccentricity ($e < 0.3$) orbits and inclinations mostly under $20^{\circ}$.
 The population is sparse: at any given moment the typical separation between belt asteroids is millions of kilometres, far larger than what science fiction usually depicts.
@@ -893,7 +893,7 @@ The two tails *point in different directions*, and this is one of the easiest di
 
 Halley's Comet ({numref}`fig:l12-halley`) is the prototypical example.
 With a 76-year period it returns to the inner solar system roughly once per human lifetime; its 1986 apparition was the target of the Giotto, Vega, and Suisei spacecraft, which together provided the first close-up images of a comet nucleus.
-Halley's nucleus is approximately $11 \times 8 \times 8$ km, irregular and very dark, with the active jets confined to small fractions of the surface.
+Halley's nucleus is approximately $15 \times 8 \times 8$ km, irregular and very dark, with the active jets confined to small fractions of the surface.
 
 ```{figure} figures/halley.avif
 :name: fig:l12-halley
@@ -948,9 +948,9 @@ Comet 103P/Hartley 2, imaged by NASA's EPOXI mission during a flyby on 4 Novembe
 ```
 
 The implication is that **Earth's water cannot have come from comets alone**: no single class of comet matches Earth, and the diversity of cometary D/H values means that the bulk delivery would have produced an Earth significantly heavier in deuterium than observed.
-Mixing models that combine carbonaceous chondrite water with a small contribution of cometary water can match Earth's D/H budget, but the carbonaceous chondrite component must dominate by mass {cite:p}`Alexander2018`.
+Mixing models that combine carbonaceous chondrite water with a small contribution of cometary water can match Earth's D/H budget, but the carbonaceous chondrite component must dominate by mass {cite:p}`Alexander2017`.
 More broadly, the lesson is that the D/H ratio is *not* a single number but a *distribution*, and the modern picture is that Earth's water reflects the integrated history of inner solar system processing of an inheritance of mostly carbonaceous-chondrite-like material with a small cometary tail.
-This connects directly to the broader question of inner solar system volatile budgets, which we returned to in {ref}`lecture09`.
+This connects directly to the broader question of inner solar system volatile budgets discussed in {ref}`lecture09`.
 
 
 ## Part 3: Messengers and visitors
@@ -996,7 +996,7 @@ Three sample-return missions have so far brought asteroidal material back to Ear
 Each was a significant engineering challenge and each has yielded laboratory science that no in-situ instrument could match.
 
 **Hayabusa** (JAXA, 2003--2010) was the first.
-It visited the small (550 m long) S-type near-Earth asteroid (25143) **Itokawa** in 2005, briefly touched down twice on the surface, and returned a sample capsule to Earth in June 2010.
+It visited the small ($\sim 535$ m long) S-type near-Earth asteroid (25143) **Itokawa** in 2005, briefly touched down twice on the surface, and returned a sample capsule to Earth in June 2010.
 The sample was tiny: about 1{,}500 microscopic grains, with a total mass under 1 mg.
 But the analysis was definitive: Itokawa's surface composition matches the LL-class ordinary chondrites, confirming the long-suspected link between S-type asteroids and ordinary chondrites {cite:p}`Nakamura2011`.
 
