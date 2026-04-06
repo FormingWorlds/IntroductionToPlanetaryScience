@@ -171,17 +171,42 @@ Each week consists of:
 
 ### Lecture 9: Rocky Planets — Earth & Venus
 
-- Earth as reference: plate tectonics, hydrosphere, biosphere coupling
-- Earth's unique properties: magnetic field, liquid water, active geology
-- Earth's climate system: ocean circulation, ice ages, Milankovitch cycles
-- Venus: Earth's "twin" — similarities and divergences
-- Venus surface: Magellan radar mapping, volcanic plains, tesserae, coronae
-- Venus atmosphere: dense CO₂, sulfuric acid clouds, super-rotation
-- Runaway greenhouse on Venus: implications for climate science
-- **Blackboard derivation (~10 min):** Derive the runaway greenhouse threshold — show that outgoing longwave radiation reaches a maximum in a moist atmosphere (the Simpson–Nakajima limit): when absorbed stellar flux exceeds this limit, surface temperature diverges. Estimate the critical solar flux and compare to Venus's orbit
-- Missing water on Venus: D/H ratio constraints
-- Comparative habitability: why Earth and Venus diverged
-- Recent advances: DAVINCI and VERITAS mission concepts for Venus, EnVision ESA mission, new models of Venus's volcanic and climatic history, updated constraints on early Earth's habitability
+**Structure**: descriptive-first (Earth then Venus) with a comparative payoff at the end.
+
+**Part 1 — Earth as reference (~25 min)**
+
+- Earth's bulk properties: $T_s = 288$ K, $P_s = 1$ bar, $\mathrm{N_2/O_2}$ atmosphere; the three-way coupling of plate tectonics, biosphere, and liquid water
+- Plate tectonics recap from Lecture 7; subduction as the return leg of the mantle-cooling loop; volcanism–weathering–climate link
+- Earth's magnetic field recap from Lecture 4: shielding of the atmosphere, forward reference to Mars in Lecture 10
+- Hydrosphere and cryosphere: ocean mass and thermohaline circulation (scoped to one slide); ice-albedo feedback recap; ocean chemistry and carbonate buffering
+- Earth's climate system: scoped tight, only to the extent needed to motivate Venus (Lectures 5–6 already cover the mechanisms). Faint young Sun problem recap; Milankovitch cycles
+- **What "Earth's climate has been extraordinarily stable" does and does not mean**: liquid-water bounds over 4 Gyr, but temperature swings of >10 K in the past; past swings paced by orbital/volcanic/tectonic drivers on $10^4$–$10^6$ yr timescales; anthropogenic warming is a different mechanism that bypasses the silicate-weathering feedback
+- Snowball Earth episodes: Sturtian (~720 Ma), Marinoan (~635 Ma), possibly Huronian (~2.4 Ga); ice-albedo runaway once ice reaches ~30° latitude; escape via volcanic CO₂ accumulation under the ice; correlation with the rise of complex life; relevance for the Venus comparison (Earth's alternative failure mode)
+- **Anthropogenic climate change as a physical phenomenon**: greenhouse effect recap from Lecture 5 applied to present-day Earth; CO₂ from 280 ppm (pre-industrial) to >420 ppm (2024); rate ~100× faster than natural deglaciation; forcing ~2 W/m² and observed ~1.2 K warming since 1880; why the carbonate-silicate thermostat cannot save us on human timescales (0.5 Myr equilibrium); ocean acidification. Physical, not political — the science is well understood
+- Biosphere's geological footprint: Great Oxidation Event (~2.4 Ga), carbonate platforms as biotic CO₂ sink; biosignature framing for Lectures 13–14
+
+**Part 2 — Venus as the alien twin (~30 min)**
+
+- Venus overview: 0.815 $M_\oplus$, 0.950 $R_\oplus$, similar bulk composition, but $P_s = 92$ bar, $T_s = 735$ K, CO₂-dominated, 243-day retrograde rotation, no detectable global field, desiccated
+- Mission history: Mariner 2 (1962), Venera series (1967–1982 — landers, surface images, soil chemistry), Pioneer Venus (1978), Magellan (1990–94 SAR mapping), Venus Express (2006–2014), Akatsuki (2015–present)
+- Surface morphology: unimodal topography (vs Earth's bimodal); volcanic plains (~80%); tesserae as candidate ancient crustal blocks; coronae as unique volcano-tectonic features; global resurfacing age ~300–700 Ma; catastrophic vs steady-state resurfacing debate
+- Venus interior and tectonic regime: similar core/mantle to Earth, but stagnant-lid today; no plate boundaries; no global field; candidate explanations (absence of inner core, stagnant-lid insulation, slow rotation) — connects to Lecture 4 debate; no seismic data yet
+- Venus atmosphere: 96.5% CO₂, sulfuric acid cloud decks (48–70 km), super-rotation (4-day cloud tops vs 243-day surface), unknown UV absorber
+- Runaway greenhouse on Venus: mechanism recap from Lectures 5–6; consequence for present-day water inventory (~20 ppm)
+- **Blackboard derivation (~10 min):** Derive the Simpson–Nakajima runaway greenhouse threshold — show that outgoing longwave radiation reaches a maximum in a moist atmosphere set by the water-vapour saturation profile; numerically ~280–350 W/m²; critical solar flux reached at ~0.95 AU; Venus at 0.72 AU receives ~1.9× Earth's flux, well beyond the limit
+- **When did Venus lose its water?** Two competing scenarios, unresolved:
+  1. **Early loss during the magma-ocean / initial runaway** (Hamano et al. 2013, Nature): magma ocean never solidified under an optically thick steam atmosphere; H photolysed and escaped under young-Sun EUV; Venus never had liquid surface water
+  2. **Later loss after a temperate early phase**: Venus had liquid oceans for ~0.5–2 Gyr; runaway was triggered as solar luminosity rose (e.g., Way et al. 2016)
+  Both scenarios match present-day observations (dry CO₂ atmosphere + enriched D/H); future DAVINCI noble-gas data should help discriminate
+- D/H ratio: ~150× Earth's value; implies at least a shallow global ocean equivalent; direct observational evidence of hydrodynamic hydrogen escape
+- Volcanic activity today: long debate resolved in part by Herrick & Hensley (2023) who identified morphological changes at Maat Mons in archival Magellan data; thermal anomalies at Shalbatana and Idunn Mons; SO₂ variability in the upper atmosphere
+
+**Part 3 — Comparative payoff (~15 min)**
+
+- Why did Earth and Venus diverge? Same bulk composition, similar size, same formation region. Four switches that flipped differently: solar flux (0.72 vs 1 AU), water loss history, rotation rate, tectonic regime
+- Failure mode of the carbonate-silicate cycle on Venus: once the ocean evaporates, the CO₂ sink disappears but the volcanic source continues; no thermodynamic path back
+- Implications for habitability: the habitable zone is not a line but a set of history-dependent trajectories; forward reference to Lecture 13 exoplanet habitability
+- Recent advances and upcoming missions: DAVINCI+ (NASA, ~2029), VERITAS (NASA, late 2020s), EnVision (ESA, 2031); first new orbital missions in decades; active research on early Venus climate (Way 2016, Turbet 2021); phosphine debate (Lecture 6)
 
 ### Lecture 10: Rocky Planets — Mercury & Mars
 
@@ -411,7 +436,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 6 | Atmospheres II | Verified | High |
 | 7 | Planetary surfaces | Verified | High |
 | 8 | Planetary interiors | Verified | High |
-| 9 | Rocky planets: Earth & Venus | Not started | Medium |
+| 9 | Rocky planets: Earth & Venus | Outline drafted | Medium |
 | 10 | Rocky planets: Mercury & Mars | Not started | Medium |
 | 11 | Gas & ice giants | Not started | Medium |
 | 12 | Meteorites, asteroids, minor planets & comets | Not started | Medium |
