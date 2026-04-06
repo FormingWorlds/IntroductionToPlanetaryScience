@@ -433,45 +433,38 @@
   {\tiny\color{ipsText!60} Source: Kasting et al.\ (1993); Kopparapu et al.\ (2013)}
 \end{frame}
 
-% ── Lapse rate atmospheric stability ────────────────────
-\begin{frame}{The Adiabatic Lapse Rate}
-  In the troposphere, convection keeps the lapse rate close to the adiabatic value.
+% ── Moist adiabat ───────────────────────────────────────
+\begin{frame}{The Moist Adiabatic Lapse Rate}
+  When a parcel rises and condensation occurs, latent heat release warms it relative to the dry adiabat.
   \vskip6pt
-  $$\Gamma_\mathrm{dry} = \frac{g}{c_p}$$
+  $$\Gamma_{\mathrm{moist}} = \Gamma_{\mathrm{dry}} \cdot \frac{1 + \dfrac{L_v\,r_s}{R_d\,T}}{1 + \dfrac{L_v^2\,r_s}{c_p\,R_v\,T^2}}$$
   \vskip6pt
   \begin{itemize}
-    \item For Earth's air: $\Gamma_\mathrm{dry} \approx 9.8$~K/km
-    \item Moist adiabat (with water condensation): $\Gamma_\mathrm{moist} \approx 6$~K/km
-    \item A parcel rising faster than the lapse rate cools faster than its surroundings $\rightarrow$ sinks back
-    \item A profile steeper than the adiabat is \textbf{unstable} $\rightarrow$ convection
-    \item A profile shallower is \textbf{stable} $\rightarrow$ pure radiation
+    \item $r_s$: saturation mixing ratio; $L_v$: latent heat of vaporisation
+    \item Earth's lower troposphere: $\Gamma_{\mathrm{moist}} \approx 6$~K/km (compared to 9.8~K/km dry)
+    \item Moist convection is \textbf{deeper and more vigorous} than dry; drives thunderstorms and hurricanes
+    \item Latent heat release in rising parcels provides the buoyancy that makes tropical convection reach the tropopause
+    \item Runaway greenhouse reduces $\Gamma_{\mathrm{moist}}$ further, letting more IR escape to higher altitudes
   \end{itemize}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Pierrehumbert (2010), \textit{Principles of Planetary Climate}}
+  {\tiny\color{ipsText!60} Source: Pierrehumbert (2010); Catling \& Kasting (2017)}
 \end{frame}
 
-% ── Scale heights across solar system ───────────────────
-\begin{frame}{Atmospheric Scale Heights Across the Solar System}
-  \centering
-  \small
-  \begin{tabular}{l c c c c}
-    \toprule
-    \textbf{Body} & $\boldsymbol{T}$~\textbf{(K)} & $\boldsymbol{\mu}$ & $\boldsymbol{g}$~\textbf{(m\,s$^{-2}$)} & $\boldsymbol{H}$~\textbf{(km)} \\
-    \midrule
-    Venus   & 735 & 43.4 & 8.87 & 16 \\
-    Earth   & 288 & 29.0 & 9.81 & 8 \\
-    Mars    & 210 & 43.3 & 3.71 & 11 \\
-    Jupiter & 165 & 2.2  & 24.8 & 25 \\
-    Titan   & 94  & 28.6 & 1.35 & 21 \\
-    \bottomrule
-  \end{tabular}
+% ── Scale height derivation template ───────────────────
+\begin{frame}{Deriving the Scale Height (Live)}
+  \textbf{Template for the blackboard derivation.}
   \vskip6pt
-  \flushleft
-  \begin{itemize}
-    \item Jupiter: large $H$ despite strong gravity, because $\mathrm{H_2}$ is very light
-    \item Titan: large $H$ despite low $T$, thanks to very weak gravity
-    \item Venus: warm but heavy atmosphere balances out
-  \end{itemize}
+  \begin{enumerate}
+    \item Start: $\dv{P}{z} = -\rho g$ (hydrostatic equilibrium)
+    \item Ideal gas: $P = \dfrac{\rho\,k_B T}{\mu\,m_u}$
+    \item Rearrange for $\rho$: $\rho = \dfrac{\mu m_u P}{k_B T}$
+    \item Substitute: $\dv{P}{z} = -\dfrac{\mu m_u g}{k_B T}\,P$
+    \item Separate variables and integrate:
+    $$P(z) = P_0\,\exp\!\left(-\dfrac{z}{H}\right), \quad H = \dfrac{k_B T}{\mu m_u g}$$
+    \item Numerical check: Earth ($T = 288$~K, $\mu = 29$, $g = 9.81$) gives $H \approx 8.4$~km
+  \end{enumerate}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Catling \& Kasting (2017)}
 \end{frame}
 
 % ── Transmission spectroscopy preview ───────────────────

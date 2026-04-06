@@ -62,9 +62,31 @@
     \item Collapse triggered when self-gravity overcomes thermal pressure
     \item Critical mass for collapse, the \textbf{Jeans mass}:
     $$M_J \sim \frac{c_s^3}{\sqrt{G^3 \rho}}$$
+    \vskip-4pt
     \item For typical conditions: $M_J \sim 1$--$10\;\Msun$
     \item Angular momentum conservation $\Rightarrow$ \textbf{disk} forms around the protostar
   \end{itemize}
+\end{frame}
+
+% ── Jeans instability detail ──────────────────────────
+\begin{frame}{Jeans Instability: When Gravity Wins}
+  \textbf{Derivation.} Compare gravitational free-fall time to sound-crossing time.
+  \vskip6pt
+  \begin{itemize}
+    \item Free-fall time: $t_{\mathrm{ff}} = \sqrt{3\pi/(32\,G\rho)}$
+    \item Sound-crossing time across scale $L$: $t_{\mathrm{sc}} = L/c_s$
+    \item Collapse requires $t_{\mathrm{ff}} < t_{\mathrm{sc}}$, giving:
+  \end{itemize}
+  \vskip4pt
+  $$L > L_J = c_s\,t_{\mathrm{ff}} \sim \frac{c_s}{\sqrt{G\rho}}$$
+  \vskip6pt
+  \begin{itemize}
+    \item For typical cloud conditions ($T = 10$~K, $n_{\mathrm{H_2}} = 10^4$~cm$^{-3}$): $L_J \sim 0.1$~pc, $M_J \sim 1$--$10\,\Msun$
+    \item Free-fall time $\sim 10^5$~yr
+    \item Fragmentation: if the cloud contains multiple Jeans masses, it can split into many protostars
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Jeans (1902); Shu (1977)}
 \end{frame}
 
 % ── Protoplanetary disk structure ─────────────────────────
@@ -254,6 +276,25 @@
   \end{itemize}
 \end{frame}
 
+% ── Stokes number ────────────────────────────────────────
+\begin{frame}{Dust--Gas Coupling: The Stokes Number}
+  How tightly is a particle coupled to the gas?
+  \vskip6pt
+  \keyresult{$$\mathrm{St} = \tau_{\mathrm{stop}}\,\Omega_K$$}
+  \vskip6pt
+  where $\tau_{\mathrm{stop}}$ is the friction stopping time and $\Omega_K$ is the Keplerian frequency.
+  \vskip6pt
+  \begin{description}
+    \item[$\mathrm{St} \ll 1$ (small grains)] perfectly coupled to gas; follow the flow
+    \item[$\mathrm{St} \sim 1$ (pebbles, cm-dm)] partially decoupled; experience maximum radial drift
+    \item[$\mathrm{St} \gg 1$ (boulders, km)] decoupled; move on Keplerian orbits
+  \end{description}
+  \vskip6pt
+  Particles with $\mathrm{St} \sim 0.1$ are the ``sweet spot'' for pebble accretion: they drift efficiently yet can still be deflected by planetary gravity.
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Weidenschilling (1977); Johansen et al.\ (2014) in \textit{Protostars \& Planets VI}}
+\end{frame}
+
 % ── Growth barriers ────────────────────────────────────────
 \begin{frame}{Growth Barriers}
   Three barriers impede growth beyond cm-scale:
@@ -285,6 +326,25 @@
   \end{itemize}
   \vskip6pt
   \keyresult{The streaming instability solves the radial drift barrier by collective effects: particles help each other avoid falling into the star.}
+\end{frame}
+
+% ── Streaming instability simulation ─────────────────────
+\begin{frame}{Streaming Instability: A Simulation Snapshot}
+  \begin{columns}[c]
+    \column{0.58\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{streaming_instability}
+    \source{Johansen et al.\ (2007), Nature 448, 1022 (arXiv:0708.3890)}
+
+    \column{0.40\textwidth}
+    \begin{itemize}
+      \item \textbf{Panels a--c}: particle column density vs.\ radial position and time
+      \item \textbf{Panel a}: no back-reaction on gas $\rightarrow$ only weak drift banding
+      \item \textbf{Panel b}: with back-reaction $\rightarrow$ dense clumps form
+      \item \textbf{Panel d}: maximum particle density rises to $>$10$^3$ background
+      \item Clumps are dense enough for self-gravitating collapse to planetesimals
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 % ── Pebble accretion ──────────────────────────────────────
@@ -394,6 +454,23 @@
       \textbf{Grav.\ instability:}\\top-down (disk $\to$ clump $\to$ planet)
     \end{block}
   \end{columns}
+\end{frame}
+
+% ── Planet-planet scattering ─────────────────────────────
+\begin{frame}{Planet--Planet Scattering}
+  After the gas disk disperses, gravitational interactions among embryos become \textbf{chaotic}.
+  \vskip6pt
+  \begin{itemize}
+    \item Initially packed oligarchs cross each other's Hill radii
+    \item Close encounters pump eccentricities on $\sim$Myr timescales
+    \item Orbits intersect $\Rightarrow$ collisions or ejections
+    \item Survivors spiral toward stable separations ($\sim$10--20 mutual Hill radii)
+    \item Damping by residual planetesimals circularises orbits over 10--100~Myr
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Scattering is the dominant mechanism for producing the observed eccentricity distribution of exoplanets, including eccentric giant planets at intermediate separations.}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Rasio \& Ford (1996); Chambers (2004); Lissauer et al.\ (2011)}
 \end{frame}
 
 % ── Giant impacts ──────────────────────────────────────────
@@ -651,6 +728,22 @@
   \end{itemize}
   \vskip4pt
   \keyresult{Orbital resonances can drive geological activity billions of years after formation.}
+\end{frame}
+
+% ── Secular resonances ──────────────────────────────────
+\begin{frame}{Secular Resonances: Slow Dynamical Chaos}
+  Beyond mean-motion resonances, orbits are also coupled by \textbf{secular} (long-term) precession frequencies.
+  \vskip6pt
+  \begin{itemize}
+    \item A secular resonance occurs when the apsidal or nodal precession frequency of one body matches another's
+    \item In the solar system: $\nu_5$ (Jupiter's apsidal frequency) and $\nu_6$ (Saturn's) resonances define the inner edges of the asteroid belt
+    \item Asteroids near $\nu_6$ at 2.1~AU have their eccentricity pumped until they are ejected or collide with the Sun
+    \item Secular chaos operates on $10^4$--$10^7$~yr timescales
+    \item Laskar (1989): Earth's eccentricity evolution is \textbf{intrinsically chaotic} beyond $\sim$60~Myr
+    \item Relevance: explains Kirkwood gaps and long-term orbital instabilities
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Laskar (1989, 1990); Murray \& Dermott (1999)}
 \end{frame}
 
 % ── Tidal forces ──────────────────────────────────────────
