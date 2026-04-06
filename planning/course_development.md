@@ -609,10 +609,10 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 8 | Planetary interiors | Verified | High |
 | 9 | Rocky planets: Earth & Venus | Outline drafted | Medium |
 | 10 | Rocky planets: Mercury & Mars | Outline drafted | Medium |
-| 11 | Gas & ice giants | Outline drafted | Medium |
+| 11 | Gas & ice giants | Draft + figures cleaned (8 arxiv scientific figures + 32 NASA mission images) | Medium |
 | 12 | Meteorites, asteroids, minor planets & comets | Outline drafted | Medium |
 | 13 | Exoplanets | Outline drafted | Medium |
-| 14 | Synthesis & astrobiology | Outline drafted | Low |
+| 14 | Synthesis & astrobiology | Draft + figures cleaned (27 arxiv-sourced figures, max 2 per source) | Low |
 
 **Priority rationale:** Lectures 1–8 cover foundational topics needed before planet-specific lectures; Lectures 9–13 build on these; Lecture 14 synthesizes the full course.
 
@@ -631,7 +631,7 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | 7 | Planetary surfaces | Draft complete | High |
 | 8 | Planetary interiors | Draft complete | High |
 | 9 | Rocky planets: Earth & Venus | Not started | Medium |
-| 10 | Rocky planets: Mercury & Mars | Not started | Medium |
+| 10 | Rocky planets: Mercury & Mars | Notes draft + figure cleanup pass | Medium |
 | 11 | Gas & ice giants | Not started | Medium |
 | 12 | Meteorites, asteroids, minor planets & comets | Not started | Medium |
 | 13 | Exoplanets | Not started | Medium |

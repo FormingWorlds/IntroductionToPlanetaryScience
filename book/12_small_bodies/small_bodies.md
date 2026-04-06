@@ -370,7 +370,7 @@ Hf-W metal-silicate model ages of NC and CC iron meteorite parent bodies, plotte
 :width: 600px
 :align: center
 
-Two formation epochs of planetesimals from {cite:t}`Lichtenberg2021`. Reservoir I (early, dry, rocky inner-disk planetesimals, the NC reservoir) forms before the snow line has migrated outward; Reservoir II (later, ice-rich outer-disk planetesimals, the CC reservoir) forms after the snow line has moved out. The horizontal axis is orbital distance and the vertical axis is time after CAI formation. The two reservoirs need not be physically separated by a Jupiter barrier in this picture; the bifurcation arises naturally from the time-evolution of the disk. Image credit: {cite:t}`Lichtenberg2021`.
+Formation of two distinct planetesimal populations in the disk simulation of {cite:t}`Lichtenberg2021`. The horizontal axis is orbital distance ($r$, AU) and the vertical axis is time after CAI formation ($t$, Myr). The colour shading shows the planetesimal formation rate $\dd \Sigma_{\text{plts}} / \dd t$ on a logarithmic scale; the solid purple line traces the migration of the water snow line. Reservoir I (red, early, dry, inner-disk, NC) forms inside the snow line during the disk build-up; Reservoir II (blue, later, ice-rich, outer-disk, CC) forms outside the snow line after the disk has cooled. The dashed grey lines bound the terrestrial-planet migration corridor. The bifurcation arises naturally from disk evolution and does not require Jupiter to act as a fully closed barrier. From Figure 1 of {cite:t}`Lichtenberg2021`.
 ```
 
 
@@ -399,7 +399,7 @@ They showed that the bifurcation can arise *without* requiring Jupiter to act as
 :width: 600px
 :align: center
 
-Pebble flux and planetesimal growth timescales from {cite:t}`Lichtenberg2021`. Two distinct formation epochs of planetesimals are visible: a first burst from $\sim 0.0$-$0.4$ Myr (Reservoir I, NC), and a second burst from $\sim 1.5$-$3$ Myr (Reservoir II, CC), separated by a quiet interval. The pebble flux drops sharply when the disk becomes pebble-poor; the second burst is triggered when ice-rich pebbles begin to drift inward across the cold-finger snow line. Image credit: {cite:t}`Lichtenberg2021`.
+Pebble flux and planetesimal growth timescales from the disk model of {cite:t}`Lichtenberg2021`. (A) Pebble flux at 2 AU (red) and 15 AU (blue) over time after CAI formation. During the disk build-up stage, the pebble flux is dominated by outward-moving dust (dotted lines); at later times, pebbles drift inward. The two reservoirs progressively diverge in pebble flux by more than an order of magnitude, marked by the "Reservoir separation" arrows. (B) Growth timescales for $300$ km planetesimals at 2 AU (red) and 15 AU (blue), via either pebble accretion (solid) or collisional growth (dashed), bracketed against the disk lifetime (grey horizontal band). The red shaded "pebble-aided growth" region marks the time interval during which pebble accretion outpaces collisional growth in Reservoir I. From Figure 2 of {cite:t}`Lichtenberg2021`.
 ```
 
 The mechanism is the *cold finger effect*: as the disk cools, the water snow line migrates outward, and ice condenses onto the surfaces of grains crossing into the colder region.
@@ -499,7 +499,7 @@ By analysing the size distribution and present-day spread of a family, one can e
 :width: 700px
 :align: center
 
-Distribution of main-belt asteroids in the proper-element plane (semimajor axis $a_{\text{p}}$ vs proper inclination $i_{\text{p}}$). Background grey points are individual asteroids; coloured points highlight the membership of dynamical families identified by the hierarchical clustering method. The total dataset contains 384,337 numbered objects observed by SDSS and WISE. The principal Hirayama families (Themis, Eos, Koronis, Eunomia, Vesta, Flora) and many smaller families appear as distinct concentrations in $(a_{\text{p}}, i_{\text{p}})$ space. From Figure 1 of {cite:t}`Nesvorny2015`.
+Asteroid families in the main belt revealed by the hierarchical clustering method, plotted in proper inclination $i_{\text{P}}$ versus proper semimajor axis $a_{\text{P}}$. Red points are background asteroids; yellow points highlight bodies linked into dynamical families by the clustering algorithm. The principal Hirayama families (Themis, Eos, Koronis, Eunomia, Vesta, Flora) and many smaller families appear as concentrations in $(a_{\text{P}}, i_{\text{P}})$ space. From Figure 1a of {cite:t}`Nesvorny2015`.
 ```
 
 In parallel, asteroids are classified by **spectral type** based on their reflectance from visible to near-infrared.
@@ -690,7 +690,7 @@ Orbital parameters of the 1142 characterised trans-Neptunian objects discovered 
 :width: 600px
 :align: center
 
-Three projections of the orbital distribution of the classical Kuiper belt, restricted to the main classical region $42 \lesssim a \lesssim 47$ AU. Top left: perihelion distance $q$ versus semimajor axis $a$. Top right: $q$ versus orbital inclination $i$. Bottom left: $i$ versus $a$. The bimodal inclination structure is unmistakable: a dense low-$i$ "cold classical" population at $i \lesssim 5^{\circ}$ and a much broader "hot classical" population extending to $i \sim 30^{\circ}$. The cold classicals were never strongly perturbed by Neptune, while the hot classicals were excited by the giant-planet instability described by the Nice Model. From Figure 4 of {cite:t}`Petit2011`.
+The three components of the CFEPS-L7 synthetic model of the main classical Kuiper belt, separated into the broad-inclination "hot" component (top left), the dynamically active "stirred" component (top right), the dense low-inclination "kernel" near $a \approx 44$ AU (bottom left), and the combined model (bottom right). Each panel shows orbital eccentricity $e$ vs semimajor axis $a$ (upper sub-panel) and inclination $i$ vs $a$ (lower sub-panel). The kernel and the broader hot component coexist in the same range of $a$ but occupy completely different parts of $(e, i)$ space, evidence that the cold classicals were never strongly perturbed by Neptune while the hot classicals were excited by the giant-planet instability described by the Nice Model. From Figure 4 of {cite:t}`Petit2011`.
 ```
 
 The single most important point is that the orbital architecture of the trans-Neptunian region is a *fossil* of the dynamical history of the giant planets.
@@ -721,12 +721,12 @@ The convection cells are tens of kilometres across and visible directly in the N
 The basin is essentially crater-free, indicating a surface age of less than about 10 Myr, which on a 4.5-Gyr-old body is essentially "yesterday".
 The mere existence of active convection requires an internal heat source, most likely radiogenic decay in the rocky interior.
 
-```{figure} figures/sputnik_planitia_stern.avif
-:name: fig:l12-sputnik-planitia
+```{figure} figures/sputnik_convection_mckinnon.avif
+:name: fig:l12-sputnik-convection
 :width: 700px
 :align: center
 
-Spectral composition of Sputnik Planitia from New Horizons. Left: panchromatic LORRI mosaic showing the polygonal convective cells in nitrogen ice, each tens of kilometres across. Centre: false-colour Ralph composite emphasising the strong $\mathrm{CH_4}$ absorption (red) over Sputnik Planitia. Right: linear etalon imaging spectral array (LEISA) map of CO column density, showing the pronounced CO enrichment over the basin. The complete absence of craters implies a surface age $\lesssim 10$ Myr. From Figure 5 of {cite:t}`Stern2015`.
+Numerical model of solid-state convection in a layer of $\mathrm{N_2}$ ice on Pluto, applied to Sputnik Planitia. (a) Snapshot of the temperature field across one wavelength of the convective cell, showing hot upwellings (red) separated by cold downwellings (blue) at the modelled Rayleigh number $\mathrm{Ra}_b \approx 3 \times 10^5$. (b) Surface horizontal velocity profile, showing convergence above downwellings and divergence above upwellings. (c) Dynamic topography: upwellings produce broad surface highs of order tens of metres, in agreement with the observed cell relief. (d) Surface heat flow profile, peaked above the upwellings. The model demonstrates that present-day radiogenic heating of Pluto's rocky interior is sufficient to drive convective overturn in a several-km-thick $\mathrm{N_2}$ ice layer, with overturn timescales of $\sim 10^6$ years. From Figure 4 of {cite:t}`McKinnon2016`.
 ```
 
 Beyond Sputnik Planitia, New Horizons revealed water-ice mountain ranges (some peaks above 3 km, comparable to terrestrial mid-altitude ranges), tectonic rifts, possible cryovolcanic edifices (Wright Mons and Piccard Mons), bright methane snow on equatorial highlands, and nitrogen glaciers that flow into Sputnik Planitia from surrounding terrain.
@@ -1104,7 +1104,7 @@ Its physical nature remains debated: candidates include a fragment of a tidally 
 :width: 700px
 :align: center
 
-Discovery and follow-up imagery of 1I/'Oumuamua. Left to right: a montage of stacked images at four progressively later epochs in October 2017, each starred-aligned and median-combined, taken with the Nordic Optical Telescope, the William Herschel Telescope, the European Southern Observatory Very Large Telescope (VLT), and a follow-up of the same field in late October. The point-source target moves on a hyperbolic trajectory across the field; no extended coma is visible at any epoch despite the inferred non-gravitational acceleration. From Figure 1 of {cite:t}`Meech2017`.
+Resistant-mean stacked image of 1I/'Oumuamua with an equivalent exposure time of $9000$ s, obtained by {cite:t}`Meech2017` with multi-telescope follow-up of the Pan-STARRS discovery. The directions to the Sun, the negative heliocentric velocity vector ($-v$), north, and east are indicated, along with a scale bar. Left: image stretched to show the point-source appearance of the object. Right: the same image rebinned $2 \times 2$ and stretched to $\pm 2\sigma$ from the background to emphasise the absence of a coma. No extended dust or gas is visible at the limit of the deep stack, despite the non-gravitational acceleration later inferred from astrometry, leaving the nature of the object's outgassing source unresolved. From Figure 2 of {cite:t}`Meech2017`.
 ```
 
 ```{figure} figures/oumuamua_iso_density.avif

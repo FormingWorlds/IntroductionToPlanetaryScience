@@ -35,18 +35,10 @@ A consequence is that a *solar day* on Mercury, the time from one local noon to 
 
 ```{figure} figures/margot2007_libration.avif
 :name: fig:margot-libration
-:width: 450px
+:width: 600px
 :align: center
 
-Radar speckle correlation as a function of time delay, demonstrating the longitudinal libration of Mercury at the $88$-day orbital period. The amplitude of this libration ($35.8 \pm 2$ arcseconds) is twice as large as predicted for a fully solid Mercury, demonstrating that the mantle is decoupled from a partially molten core. From {cite:t}`Margot2007`.
-```
-
-```{figure} figures/margot2007_cassini.avif
-:name: fig:margot-cassini
-:width: 450px
-:align: center
-
-Orientation of Mercury's spin axis (small contoured region) relative to the orbit pole (filled point) and the predicted Cassini state line. The spin pole lies on the Cassini state line, meaning the rotation axis precesses in step with the orbit. The combination of obliquity, libration amplitude, and gravity coefficients yields the moment-of-inertia ratio $C/MR^2 \approx 0.346$ for Mercury and confirms a partially molten core. From {cite:t}`Margot2007`.
+Radar speckle correlation functions from {cite:t}`Margot2007` demonstrating the longitudinal libration of Mercury at the $88$-day orbital period. The amplitude of this libration ($35.8 \pm 2$ arcseconds) is twice as large as predicted for a fully solid Mercury, demonstrating that the mantle is decoupled from a partially molten core.
 ```
 
 ```{figure} figures/margot2007_libdata.avif
@@ -54,7 +46,7 @@ Orientation of Mercury's spin axis (small contoured region) relative to the orbi
 :width: 600px
 :align: center
 
-Histograms of best-fit values for the diagnostic moment-of-inertia ratios $(B-A)/C_m$ (where $C_m$ is the moment of inertia of the silicate mantle alone) and $C_m/C$ (the fraction of the total moment carried by the mantle), drawn from Monte Carlo realisations of {cite:t}`Margot2007`'s data. The narrow distributions are inconsistent with a fully solid Mercury and require a decoupled, at least partly liquid core.
+Histograms of best-fit values for the diagnostic moment-of-inertia ratio $C_m/C$ (the fraction of the total moment carried by the silicate mantle alone), drawn from Monte Carlo realisations of {cite:t}`Margot2007`'s data with two different sets of constraints. The distributions are inconsistent with a fully solid Mercury and require a decoupled, at least partly liquid core.
 ```
 
 A second consequence is that the rotation rate itself is a sensitive probe of Mercury's interior. {cite:t}`Margot2007` used Earth-based radar to track surface speckle features across multiple Mercurian rotations and measured the **forced libration in longitude**, the small back-and-forth wobble of the planet over its $88$-day year. The amplitude of that wobble depends on whether the entire planet (mantle plus core) responds rigidly to the time-varying solar torque, or whether a fluid core decouples from a thinner librating mantle. The measured value of $35.8 \pm 2$ arcseconds is roughly twice what a fully solid Mercury would show. This was the first direct observational evidence that Mercury's outer core is liquid today, in contradiction to the picture (held since *Mariner 10*) that such a small body would have cooled and frozen completely.
@@ -79,12 +71,12 @@ The single most striking fact about Mercury is its iron enrichment. Earth, Venus
 
 3. **One or more giant impacts.** A high-energy collision late in accretion could have stripped most of an originally Earth-like silicate mantle from a proto-Mercury, leaving a body dominated by its metallic core. This idea has been around since the 1980s and remains the leading hypothesis. {cite:t}`Chau2018` and others have run smoothed-particle hydrodynamics simulations to test specific scenarios, finding that a single hit-and-run encounter with a much larger projectile, or a sequence of moderate impacts, can in principle produce the right core mass fraction. {cite:t}`Franco2022` recently emphasised, however, that such configurations are dynamically rare in N-body integrations of the inner solar system: explaining Mercury via a single giant impact happens in well below $1\%$ of plausible histories. Multiple smaller impacts may be statistically more likely.
 
-```{figure} figures/chau2022_mercury_giants.avif
-:name: fig:chau-mercury
-:width: 600px
+```{figure} figures/franco2022_mercury_outcomes.avif
+:name: fig:franco-mercury
+:width: 700px
 :align: center
 
-Outcomes of inner-solar-system N-body simulations that include hit-and-run, perfect-merging, and disrupting collisions. Most trial runs do not produce a Mercury-mass remnant with the observed iron enrichment; success rates for the iron-rich outcome are below $1\%$. From {cite:t}`Franco2022`.
+Final mass distribution of remnant bodies at the end of N-body integrations of inner-solar-system formation, plotted against semi-major axis, for six different surface density profile slopes ($x = 0.5$ to $5.5$). Open circles are larger ($> 0.3\,\Mearth$) bodies, crosses are smaller ones, and solid triangles mark the masses of the actual terrestrial planets in our solar system. Reproducing a Mercury-mass body in the right orbital location with the observed iron enrichment occurs in well below $1\%$ of all trial histories. From {cite:t}`Franco2022`.
 ```
 
 The honest summary is that we know Mercury is iron-rich, we have several plausible mechanisms, and we cannot yet decide between them. *BepiColombo*'s detailed compositional measurements should sharpen the constraints by revealing whether the volatile-element abundances at the surface match a single-impact scenario (which tends to lose more volatiles), a multiple-impact scenario, or something else entirely.
@@ -96,37 +88,13 @@ Mercury's magnetic field is unique among solar system bodies in two ways. First,
 
 ```{figure} figures/wicht_offset_dipole.avif
 :name: fig:wicht-offset
-:width: 500px
-:align: center
-
-Spherical-harmonic representation of Mercury's magnetic field as constrained by *MESSENGER* data. The northward offset of the dipole (axisymmetric quadrupole and octupole components) implies that the dynamo source region is biased toward the northern hemisphere, possibly because the inner-core boundary or a thermally stratified shell is asymmetric. From {cite:t}`Wicht2017`.
-```
-
-```{figure} figures/wicht_messenger_field.avif
-:name: fig:wicht-data
-:width: 500px
-:align: center
-
-Magnetic field magnitude and direction along a *MESSENGER* low-altitude pass. The crossing of the magnetic equator is offset from the geometric equator, providing the cleanest direct measurement of the northward dipole offset. From {cite:t}`Wicht2017`.
-```
-
-Both features are difficult to explain with the standard convection-driven, $\alpha$-$\Omega$ dynamo picture used to model Earth's field. Two mechanisms are usually invoked. The first is a **thermally stratified outer layer** at the top of Mercury's liquid core, in which heat is carried by conduction rather than convection. Such a layer can act as a low-pass filter on the dynamo, suppressing high-degree harmonics and damping rapid time variations. The second is a **stable, conductive inner core boundary** that introduces a north-south asymmetry into the convecting region, perhaps because of latitude-dependent freezing of the solid inner core under Mercury's distinctive thermal regime. Numerical dynamo simulations that combine these ingredients can reproduce both the weakness and the offset of Mercury's field, but the parameter space is large and several competing models exist {cite:p}`Wicht2017`.
-
-```{figure} figures/wicht_field_comparison.avif
-:name: fig:wicht-compare
 :width: 380px
 :align: center
 
-Radial magnetic field at the surface of Mercury, Earth, Jupiter, Saturn, and Uranus, plotted on equal-area maps. Mercury's field is the simplest of the group, dominated by the axial dipole, while Uranus and Jupiter show strong non-dipole components. Field magnitudes are normalised separately for each planet. From {cite:t}`Wicht2017`.
+Maps of the radial magnetic field at the surface of Mercury (top) compared with two of {cite:t}`Wicht2017`'s numerical dynamo models (CW3, middle, and CW4, bottom) that incorporate a thermally stratified outer core layer. The hemispheric asymmetry of the radial field, with red equatorial flux concentrated in the northern hemisphere, is the surface signature of the offset dipole. Models with a stably stratified upper core can reproduce both the weakness and the asymmetry of the observed field.
 ```
 
-```{figure} figures/wicht_spectrum.avif
-:name: fig:wicht-spectrum
-:width: 480px
-:align: center
-
-Spherical-harmonic energy spectrum of Mercury's magnetic field as constrained by *MESSENGER*. The high ratio of dipole to quadrupole power, the rapid decay with degree, and the very low non-dipole contribution are unique among the magnetised planets and constrain the dynamo geometry. From {cite:t}`Wicht2017`.
-```
+Both features are difficult to explain with the standard convection-driven, $\alpha$-$\Omega$ dynamo picture used to model Earth's field. Two mechanisms are usually invoked. The first is a **thermally stratified outer layer** at the top of Mercury's liquid core, in which heat is carried by conduction rather than convection. Such a layer can act as a low-pass filter on the dynamo, suppressing high-degree harmonics and damping rapid time variations. The second is a **stable, conductive inner core boundary** that introduces a north-south asymmetry into the convecting region, perhaps because of latitude-dependent freezing of the solid inner core under Mercury's distinctive thermal regime. Numerical dynamo simulations that combine these ingredients can reproduce both the weakness and the offset of Mercury's field, but the parameter space is large and several competing models exist {cite:p}`Wicht2017`.
 
 The astrophysical relevance is twofold. First, Mercury demonstrates that even a small body with a partially molten core can sustain a dynamo for billions of years, which has implications for the rocky-exoplanet population in {ref}`lecture13`. Second, the offset dipole is a cautionary tale: the simple "axial dipole at the centre" picture is a very specific limit, and we should not assume that other rocky planets, including unseen ones around other stars, must look the same way.
 
@@ -265,15 +233,7 @@ By the summer of 2021, the InSight team had announced three landmark results, al
 :width: 480px
 :align: center
 
-Schematic interior of Mars constrained by InSight seismic observations. The core radius is $1830 \pm 40\ \mathrm{km}$, marking a low-density, light-element-rich liquid metallic core. $S$ waves reflect off the core-mantle boundary, while $P$ waves transmit through and have been used to bound mantle structure. The $S$-wave shadow zone defines the "core shadow" cast by InSight at its landing site in Elysium Planitia. From {cite:t}`Stahler2021`.
-```
-
-```{figure} figures/stahler2021_fig2.avif
-:name: fig:stahler-profile
-:width: 700px
-:align: center
-
-Inverted velocity profiles for the Martian mantle (left) and joint constraints on core radius and core density (right) from the InSight seismic dataset combined with geophysical and geodynamical priors. The uncertainty on the core radius is $\sim 40\ \mathrm{km}$. From {cite:t}`Stahler2021`.
+Schematic interior of Mars constrained by InSight seismic observations from {cite:t}`Stahler2021`. The core radius is $1830 \pm 40\ \mathrm{km}$, marking a low-density, light-element-rich liquid metallic core. $S$ waves reflect off the core-mantle boundary, while $P$ waves transmit through and have been used to bound mantle structure. The $S$-wave shadow zone defines the "core shadow" cast by InSight at its landing site in Elysium Planitia.
 ```
 
 {cite:t}`Khan2021` used the same dataset to invert for the velocity structure of the upper mantle and identify a thick, slow lithosphere ($\sim 500$ km) underlain by a relatively cool upper mantle. {cite:t}`Knapmeyer-Endrun2021` analysed surface waves and high-frequency body waves to determine the thickness of the crust beneath the InSight landing site, finding either $20 \pm 5$ km (if the crust ends at the first major seismic discontinuity) or $39 \pm 8$ km (if it extends to a deeper one). When extrapolated to the planet as a whole using gravity-and-topography mapping, the global average crust thickness of Mars is between $24$ and $72$ km, thinner in the northern lowlands and thicker in the southern highlands.
@@ -287,31 +247,15 @@ The youthful interior structure that InSight reveals is consistent with a separa
 :width: 700px
 :align: center
 
-Crustal thickness, density variations, and surface heat flow predicted for Mars by 3-D thermal-evolution models constrained to match the InSight crustal-thickness measurement at the landing site. The dichotomy between thin (blue) northern lowlands and thicker (red) southern highlands is a robust feature of all model variants. From {cite:t}`Plesa2022`.
-```
-
-```{figure} figures/plesa2022_thermal.avif
-:name: fig:plesa-thermal
-:width: 700px
-:align: center
-
-Thermal profiles in the present-day Martian mantle from a suite of geodynamic models with different bulk crustal densities. The lithosphere is several hundred kilometres thick, and the mantle adiabat is consistent with the InSight constraints on seismic velocities. From {cite:t}`Plesa2022`.
-```
-
-```{figure} figures/plesa2022_seismic.avif
-:name: fig:plesa-seismic
-:width: 700px
-:align: center
-
-Predicted lateral variations in mantle shear-wave velocity at four depths from a 3-D thermo-chemical convection model of Mars. Variations of a few percent at upper-mantle depth ($150$ km) reflect long-wavelength heterogeneity controlled by the dichotomy and Tharsis. From {cite:t}`Plesa2022`.
+Predicted maps of crustal thickness, basement topography, and surface heat flow for Mars from {cite:t}`Plesa2022`'s 3-D thermal-evolution models, anchored to the InSight crustal-thickness measurement at the landing site. The dichotomy between thin (blue) northern lowlands and thicker (red) southern highlands is a robust feature of all model variants.
 ```
 
 ```{figure} figures/plesa2022_convection.avif
 :name: fig:plesa-convection
-:width: 600px
+:width: 700px
 :align: center
 
-Three-dimensional snapshots and depth slices of mantle convection patterns from thermal-evolution models matched to the InSight crustal-thickness and core-radius constraints. Mars sustains a small number of long-wavelength upwellings in the present-day mantle, consistent with the persistence of the Tharsis volcanic province as the surface expression of a stable plume. From {cite:t}`Plesa2022`.
+Three-dimensional snapshots and equatorial cross-sections of mantle temperature in {cite:t}`Plesa2022`'s thermal-evolution models, constrained by the InSight crustal-thickness and core-radius measurements. The depth slices below the surface, at mid-mantle depth, and just above the core-mantle boundary all show small-number long-wavelength upwellings, consistent with the persistence of the Tharsis volcanic province as the surface expression of a stable plume.
 ```
 
 The geodynamic interpretation of these results, developed in detail by {cite:t}`Plesa2022`, is that Mars sits in a stagnant-lid regime: the lithosphere is thick and immobile, mantle convection is sluggish, and heat is escaping primarily by conduction through the lid, with secondary contributions from a long-lived plume beneath Tharsis. The crust is significantly enriched in radioactive heat-producing elements (uranium, thorium, potassium) compared to the bulk silicate Mars, which both heats the crust directly and depletes the mantle of long-term radiogenic energy. This combination of features explains why Mars cooled fast enough that the dynamo died early, but slow enough that some volcanism persisted into the recent past.
@@ -323,18 +267,18 @@ Mars has been carved into three major geological epochs based on crater densitie
 
 ```{figure} figures/tanaka2014_geomap.avif
 :name: fig:tanaka-global
-:width: 700px
+:width: 800px
 :align: center
 
-Global geologic map of Mars from the chronostratigraphic mapping of {cite:t}`Tanaka2014`, showing the distribution of Noachian (red, oldest), Hesperian (green, intermediate), and Amazonian (yellow and brown, youngest) units. Note the predominance of Noachian materials in the southern highlands and the Amazonian volcanic plains in the Tharsis region.
+Global geologic map of Mars from the chronostratigraphic mapping of {cite:t}`Tanaka2014`, in a Robinson projection. Noachian units (red and brown shades) dominate the southern highlands; Hesperian units (greens and blues) cover the northern lowlands and large volcanic provinces; Amazonian units (yellows and tans) include the youngest volcanic and polar deposits. The dichotomy between the heavily cratered south and the smoother north is the dominant first-order feature.
 ```
 
 ```{figure} figures/tanaka2014_periods.avif
 :name: fig:tanaka-periods
-:width: 600px
+:width: 700px
 :align: center
 
-The same map separated into the three epochs, plotted on a MOLA shaded relief base. **Top**: Noachian units. **Middle**: Hesperian units. **Bottom**: Amazonian units. The progressive contraction of resurfacing area through time is striking and is itself a key constraint on Mars' thermal and atmospheric evolution. From {cite:t}`Tanaka2014`.
+Correlation chart of Mars map units across the three main epochs from {cite:t}`Tanaka2014`. Columns separate the major terrain categories (lowland, impact, polar, basin, volcanic, apron, transition, highland) and rows correspond to the Amazonian, Hesperian, and Noachian periods (with subdivisions into early, middle, late). The progressive contraction of unit ages from the Noachian to the Amazonian is itself a key constraint on Mars' thermal and atmospheric evolution.
 ```
 
 The **Noachian** epoch ($\sim 4.1$ to $\sim 3.7$ Ga) is the oldest. It dates from the period of heavy bombardment, when impact craters of all sizes formed at high rates on the southern highlands. Noachian terrain is identified by its high crater density and is preserved primarily in the older, higher-elevation southern hemisphere of Mars. The Noachian was the period when most of the planet's water-related features formed: dendritic valley networks, open-basin lakes, and clay-mineral assemblages that point to chemical weathering by liquid water. The Noachian also coincides with the active phase of Mars' core dynamo (see below).
@@ -342,22 +286,6 @@ The **Noachian** epoch ($\sim 4.1$ to $\sim 3.7$ Ga) is the oldest. It dates fro
 The **Hesperian** epoch ($\sim 3.7$ to $\sim 3.0$ Ga) is the intermediate period, characterised by widespread effusive volcanism that resurfaced large parts of the northern hemisphere with basaltic flood lavas, and by catastrophic outflow channels that incised the surface in spectacular bursts. The Hesperian also marks a major transition in surface chemistry from clay-forming (water-rock interaction at near-neutral pH) to sulfate-forming (more acidic, evaporative aqueous environments). The dynamo had probably shut off by the Hesperian, and the atmosphere was thinning rapidly.
 
 The **Amazonian** epoch ($\sim 3.0$ Ga to present) covers two thirds of Mars' history but represents only a small fraction of its total geological activity. Amazonian-aged surfaces are characterised by very low crater densities, sporadic volcanism (concentrated in the Tharsis region, where eruptions continued well into the last $1$ Gyr), modest aeolian and periglacial activity, and a thin, dry atmosphere essentially indistinguishable from the modern one.
-
-```{figure} figures/tanaka2014_resurfacing.avif
-:name: fig:tanaka-resurfacing
-:width: 600px
-:align: center
-
-Resurfacing rates by surface type as a function of geological epoch from {cite:t}`Tanaka2014`. The Noachian (eN, mN, lN) shows order-of-magnitude higher resurfacing rates than the Hesperian or Amazonian, dominated by highland and basin processes. By the Amazonian, mainly volcanic and polar units are still being created.
-```
-
-```{figure} figures/tanaka2014_dichotomy.avif
-:name: fig:tanaka-dichotomy
-:width: 700px
-:align: center
-
-Cumulative area resurfaced in each epoch from {cite:t}`Tanaka2014`, separated by unit type. The Noachian dominated highland resurfacing; the Hesperian saw the bulk of large volcanic and outflow-channel resurfacing; the Amazonian is mostly polar and the youngest Tharsis flows.
-```
 
 A simple but powerful idea emerges from the Tanaka maps: the rate at which Mars renewed its surface fell by more than an order of magnitude across these three periods. Most of Mars' interesting geology, and in particular all the evidence for liquid surface water, is concentrated in the Noachian. Mars was a different planet then.
 
@@ -403,18 +331,10 @@ Distribution of fluvial features as a function of age from {cite:t}`KiteCarter20
 
 ```{figure} figures/bibring2006_timeline.avif
 :name: fig:bibring-timeline
-:width: 600px
+:width: 550px
 :align: center
 
-The three-stage aqueous history of Mars proposed by {cite:t}`Bibring2006` from OMEGA imaging-spectrometer mineralogy: phyllosian (clays, neutral wet), theiikian (sulfates, acidic), siderikian (anhydrous ferric oxides, dry). The boundaries are correlated to but distinct from the chronostratigraphic Noachian / Hesperian / Amazonian divisions.
-```
-
-```{figure} figures/bibring2006_planismap.avif
-:name: fig:bibring-map
-:width: 700px
-:align: center
-
-Spectroscopic and topographic maps from OMEGA showing the spatial distribution of hydrated mineral detections across Mars. Phyllosilicates (clays) and sulfates trace the evolution of aqueous environments through the Noachian and Hesperian. From {cite:t}`Bibring2006`.
+The three-stage aqueous history of Mars proposed by {cite:t}`Bibring2006` from OMEGA imaging-spectrometer mineralogy: phyllosian (clays, neutral wet), theiikian (sulfates, acidic), siderikian (anhydrous ferric oxides, dry). The boundaries are correlated to but distinct from the chronostratigraphic Noachian / Hesperian / Amazonian divisions; surface volcanic activity and the global change toward an oxidising environment are marked above the bands.
 ```
 
 ```{figure} figures/bibring2006_globalmap.avif
@@ -422,15 +342,7 @@ Spectroscopic and topographic maps from OMEGA showing the spatial distribution o
 :width: 700px
 :align: center
 
-Global map of detected hydrated minerals from OMEGA, plotted as coloured points over a MOLA topographic base. Clays (red ellipses) cluster in the Noachian southern highlands; sulfates (blue points) are concentrated in lower-latitude and equatorial sites. From {cite:t}`Bibring2006`.
-```
-
-```{figure} figures/bibring2006_spectra.avif
-:name: fig:bibring-spectra
-:width: 350px
-:align: center
-
-OMEGA reflectance spectra from a clay-rich region, a typical sulfate-rich region, and a high-sulfate evaporite area. Diagnostic absorption features at $1.9$, $2.2$, and $2.4$ microns identify hydrous mineral classes. From {cite:t}`Bibring2006`.
+OMEGA hyperspectral mapping of Mars from {cite:t}`Bibring2006`, showing the spatial distribution of phyllosilicate (clay) detections (top) and sulfate detections (bottom) across the global longitude range. Clays cluster in the Noachian southern highlands; sulfates are concentrated in lower-latitude and equatorial sites consistent with later, more acidic and evaporative aqueous environments.
 ```
 
 **Sulfate deposits** record a later, drier, more acidic phase of Mars' history, often associated with evaporative settings. Both the *Opportunity* rover at Meridiani Planum and the *Curiosity* rover at Gale crater have made extensive in-situ measurements of sulfate-bearing strata.
@@ -462,7 +374,23 @@ The geological evidence for surface liquid water on early Mars sits in apparent 
 
 The textbook candidate is a thicker $\mathrm{CO_2}$ atmosphere. Increasing atmospheric $\mathrm{CO_2}$ raises infrared opacity and warms the surface. Early models suggested that a few-bar $\mathrm{CO_2}$ atmosphere could plausibly maintain near-freezing temperatures. {cite:t}`Wordsworth2016` reviewed this picture in detail and showed that pure $\mathrm{CO_2}$ atmospheres run into a serious problem: at high pressures and low temperatures, $\mathrm{CO_2}$ condenses into ice clouds, which raise the planetary albedo and *cool* the surface further, instead of warming it. There is a hard upper limit to how warm you can make Mars by piling on $\mathrm{CO_2}$, and that limit falls short of $273\ \mathrm{K}$ at most latitudes for the early-Noachian solar flux.
 
+```{figure} figures/wordsworth2016_schematic.avif
+:name: fig:wordsworth-schematic
+:width: 700px
+:align: center
+
+Cartoon of the major climate processes operating on Mars in the Noachian and early Hesperian as conceived by {cite:t}`Wordsworth2016`. The "icy highlands" picture: snow accumulates in the elevated southern highlands, where adiabatic cooling makes them effective cold traps; episodic warming from impacts and volcanism delivers transient meltwater that flows downhill into the northern lowlands as standing bodies of water. $\mathrm{CO_2}$ clouds at high altitude can scatter or absorb infrared radiation but in net cool more than they warm.
+```
+
 Several escape routes from this contradiction have been proposed. One important class of solutions invokes additional reducing greenhouse gases such as $\mathrm{H_2}$ or $\mathrm{CH_4}$, supplied by volcanic outgassing or by serpentinisation of ultramafic rocks. {cite:t}`Wordsworth2017` showed that **collisionally induced absorption (CIA)** between $\mathrm{H_2}$ and $\mathrm{CO_2}$, in particular, has a much larger effect than previously appreciated and can significantly raise surface temperatures with modest concentrations of $\mathrm{H_2}$ ($\sim 1\%$ to $10\%$ by volume). This allows a warm or warm-and-episodic early Mars without unphysical $\mathrm{CO_2}$ pressures.
+
+```{figure} figures/wordsworth2016_phasediagram.avif
+:name: fig:wordsworth-phase
+:width: 600px
+:align: center
+
+Idealised two-dimensional phase diagram for the long-term state of early Mars from {cite:t}`Wordsworth2016`, with surface temperature on the vertical axis and total surface $\mathrm{H_2O}$ inventory on the horizontal axis. Each quadrant corresponds to a distinct end-member regime: warm-and-wet (with a northern ocean), cold-and-wet (with extensive wet-based glaciation), cold-and-dry (the "icy highlands" scenario), and warm-and-dry. The geomorphological constraints favour the cold-and-dry regime as the time-averaged state, with episodic excursions to wetter conditions.
+```
 
 A second class of solutions relies on **episodic warm intervals** rather than sustained warmth. Large impacts deliver enough energy to melt and vaporise water locally for years to centuries, and explosive volcanism injects warming gases into the atmosphere on similar timescales. Models in this family predict that Mars was cold and icy on average, but punctuated by bursts of warmer climate during which valley networks formed. {cite:t}`KiteEpisodic2022` showed that such episodic warming, combined with high-altitude water-ice clouds, can be consistent with the observed valley distribution and with the constraint that the planet not stay warm for too long.
 
