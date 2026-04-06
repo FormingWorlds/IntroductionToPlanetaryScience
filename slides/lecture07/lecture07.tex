@@ -1,4 +1,4 @@
-% lecture07.tex — Lecture 7: Planetary Surfaces — Geology, Geomorphology, & Geophysics
+% lecture07.tex: Lecture 7: Planetary Surfaces, Geology, Geomorphology, & Geophysics
 % Introduction to Planetary Science, Kapteyn Institute
 
 \documentclass[aspectratio=169, 11pt]{beamer}
@@ -572,7 +572,7 @@
 
 % ── Venus and Mercury tectonics ───────────────────────────
 \begin{frame}{Venus \& Mercury: Contrasting Tectonic Styles}
-  \textbf{Venus --- Episodic resurfacing:}
+  \textbf{Venus, episodic resurfacing:}
   \begin{itemize}
     \item Uniform crater density $\rightarrow$ mean age $\sim$300--700~Myr
     \item Hypothesis: periodic catastrophic lid foundering
@@ -580,7 +580,7 @@
     \item Between episodes: tectonically quiet
   \end{itemize}
   \vskip8pt
-  \textbf{Mercury --- Global contraction:}
+  \textbf{Mercury, global contraction:}
   \begin{itemize}
     \item Large iron core cooled and solidified over time
     \item Planet's radius shrank by $\sim$7~km
@@ -655,7 +655,20 @@
 \end{frame}
 
 % ── CRISM mineral map ─────────────────────────────────────
-\begin{frame}{Remote Sensing: Mineral Mapping}
+\begin{frame}{Remote Sensing of Surfaces: Overview}
+  We can visit only a few sites. Most surface knowledge comes from orbital remote sensing.
+  \vskip8pt
+  \begin{description}
+    \item[Reflectance spectroscopy] (UV--IR) identifies minerals via absorption bands
+    \item[Radar imaging] penetrates clouds and regolith, measures surface roughness
+    \item[Laser altimetry] maps topography at sub-metre vertical precision
+    \item[Gravity field mapping] constrains subsurface density anomalies
+  \end{description}
+  \vskip8pt
+  Each technique probes a different length scale and physical property; together they build a three-dimensional picture of the surface and shallow interior.
+\end{frame}
+
+\begin{frame}{Reflectance Spectroscopy: Mineral Mapping}
   \begin{columns}[c]
     \column{0.50\textwidth}
     \centering
@@ -673,6 +686,42 @@
     \vskip4pt
     \keyresult{Strongest mineralogical evidence for past liquid water on Mars.}
   \end{columns}
+\end{frame}
+
+\begin{frame}{Radar Imaging: Seeing Through Clouds}
+  Active microwave (cm--m wavelengths) is insensitive to clouds and darkness.
+  \vskip8pt
+  \textbf{Magellan at Venus (1990--94):}
+  \begin{itemize}
+    \item Synthetic-aperture radar mapped 98\% of the surface at $\sim$100~m resolution
+    \item Revealed coronae, tesserae, lava flows, and a young ($\sim$500~Myr) cratered surface
+  \end{itemize}
+  \vskip6pt
+  \textbf{Cassini at Titan (2004--17):}
+  \begin{itemize}
+    \item Ku-band radar pierced the organic haze and mapped hydrocarbon lakes and seas
+    \item First extraterrestrial bodies of standing surface liquid
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Radar is the only way to image surfaces shrouded by thick atmospheres.}
+\end{frame}
+
+\begin{frame}{Laser Altimetry and Gravity Mapping}
+  \textbf{Laser altimetry (MOLA, LOLA, BELA):}
+  \begin{itemize}
+    \item Time-of-flight of laser pulses from orbit
+    \item Vertical precision $\sim$1~m over global baselines
+    \item MOLA produced the canonical Mars topographic map (used throughout this lecture)
+  \end{itemize}
+  \vskip8pt
+  \textbf{Gravity field mapping (GRAIL at the Moon, GRACE/GOCE at Earth):}
+  \begin{itemize}
+    \item Spacecraft-to-spacecraft tracking measures tiny accelerations
+    \item Gravity anomalies reveal buried mass: dense cores, thin crust, basins, mantle plumes
+    \item Combined with topography, constrains crustal thickness and compensation state
+  \end{itemize}
+  \vskip6pt
+  Altimetry and gravity together tell us what the interior \textbf{looks like} from above.
 \end{frame}
 
 % ── Regolith and space weathering ─────────────────────────
@@ -852,7 +901,7 @@
   \begin{center}
     {\color{white}\Large\bfseries Questions?}
     \vskip20pt
-    {\color{ipsLightFill}\normalsize Next (after mid-term exam): \textbf{Lecture~8 --- Planetary Interiors: Structure, Composition, \& Dynamics}}
+    {\color{ipsLightFill}\normalsize Next (after mid-term exam): \textbf{Lecture~8. Planetary Interiors: Structure, Composition, \& Dynamics}}
     \vskip16pt
     {\color{ipsLightFill!70}\small Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
   \end{center}

@@ -1,4 +1,4 @@
-% lecture04.tex — Lecture 4: Chemical Differentiation & Magnetospheres
+% lecture04.tex: Lecture 4: Chemical Differentiation & Magnetospheres
 % Introduction to Planetary Science, Kapteyn Institute
 
 \documentclass[aspectratio=169, 11pt]{beamer}
@@ -61,7 +61,7 @@
   \begin{columns}[c]
     \column{0.40\textwidth}
     \centering
-    \includegraphics[height=0.60\textheight]{planetary_differentiation}
+    \includegraphics[width=\linewidth,height=0.60\textheight,keepaspectratio]{planetary_differentiation}
     \source{Wikimedia, CC BY-SA 4.0}
 
     \column{0.57\textwidth}
@@ -95,7 +95,7 @@
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
-    \includegraphics[height=0.55\textheight]{goldschmidt_classification}
+    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{goldschmidt_classification}
     \source{Wikimedia, CC BY-SA 3.0}
 
     \column{0.52\textwidth}
@@ -113,6 +113,32 @@
     \vskip6pt
     The depletion of siderophile elements in Earth's mantle is \textbf{direct evidence} for core formation.
   \end{columns}
+\end{frame}
+
+% ── Partition coefficients ────────────────────────────────
+\begin{frame}{Metal--Silicate Partition Coefficients}
+  How strongly does an element prefer metal vs.\ silicate?
+  \vskip4pt
+  $$D_i^{\mathrm{met/sil}} \equiv \frac{C_i^{\mathrm{metal}}}{C_i^{\mathrm{silicate}}}$$
+  \vskip4pt
+  \centering
+  \small
+  \begin{tabular}{l c l}
+    \toprule
+    \textbf{Element} & $\boldsymbol{D^{\mathrm{met/sil}}}$ & \textbf{Behaviour} \\
+    \midrule
+    Ir, Os, Pt & $10^4$--$10^6$ & Highly siderophile \\
+    W, Mo      & $10^2$--$10^4$ & Moderately siderophile \\
+    Ni, Co     & 10--100        & Weakly siderophile \\
+    Fe         & $\sim$10        & Weakly siderophile \\
+    Si, Mg, O  & $\ll 1$         & Lithophile \\
+    \bottomrule
+  \end{tabular}
+  \vskip6pt
+  {\tiny\color{ipsText!60} Source: Rubie et al.\ (2015); McDonough (2003)}
+  \vskip6pt
+  \flushleft
+  {\small Earth's mantle is depleted $\sim$1000$\times$ in Ir and Pt: direct evidence that iron-loving elements followed the metal into the core.}
 \end{frame}
 
 % ── Hf-W chronometry ──────────────────────────────────────
@@ -143,7 +169,7 @@
   \begin{itemize}
     \item Crystallisation starts at the \textbf{base} (high pressure raises melting point)
     \item \textbf{Incompatible elements} (U, Th, K) squeezed into residual liquid
-    \item Eventually form the \textbf{crust} --- enriched 50--100$\times$ in radiogenic elements
+    \item Eventually form the \textbf{crust}, enriched 50--100$\times$ in radiogenic elements
     \item Creates distinct \textbf{mantle reservoirs}
   \end{itemize}
   \vskip6pt
@@ -153,24 +179,36 @@
   \end{exampleblock}
 \end{frame}
 
-% ── Volatile delivery ──────────────────────────────────────
-\begin{frame}{Volatile Delivery \& Outgassing}
+% ── Volatile delivery: classical vs modern ────────────────
+\begin{frame}{Volatile Delivery: Classical vs.\ Modern View}
+  \textbf{Classical picture:}
   \begin{itemize}
-    \item Classical view: inner solar system formed dry; volatiles delivered late
-    \item \textbf{Revised picture:} volatile-bearing material present from early times
-    \begin{itemize}
-      \item All chondrite groups accreted water ice
-      \item Snow line migration + Jupiter's growth created bifurcation
-    \end{itemize}
-    \vskip4pt
-    \item During magma ocean cooling: dissolved volatiles \textbf{outgas}
-    \item Speciation depends on \textbf{oxygen fugacity}:
-    \begin{itemize}
-      \item Reducing: $\mathrm{H_2}$, CO, $\mathrm{N_2}$
-      \item Oxidising: $\mathrm{H_2O}$, $\mathrm{CO_2}$, $\mathrm{N_2}$
-    \end{itemize}
-    \item Giant impacts: can deliver \textbf{or} strip volatiles
+    \item Inner solar system forms dry, inside the water snow line
+    \item Volatiles delivered \textbf{late} by comets and outer-belt asteroids
   \end{itemize}
+  \vskip8pt
+  \textbf{Revised picture (post-2010):}
+  \begin{itemize}
+    \item All chondrite groups accreted some water ice
+    \item Snow line migration + Jupiter's growth created an isotopic bifurcation
+    \item Most of Earth's water was already present at accretion, not delivered afterwards
+  \end{itemize}
+  \vskip6pt
+  Giant impacts can either deliver \textbf{or} strip volatiles depending on impact geometry and atmospheric state.
+\end{frame}
+
+% ── Outgassing from the magma ocean ───────────────────────
+\begin{frame}{Outgassing from the Magma Ocean}
+  During magma ocean cooling, dissolved volatiles \textbf{outgas} into the overlying atmosphere.
+  \vskip8pt
+  Speciation depends on \textbf{oxygen fugacity} ($f_{\mathrm{O}_2}$), set by the mantle redox state:
+  \vskip6pt
+  \begin{description}
+    \item[Reducing (low $f_{\mathrm{O}_2}$):] $\mathrm{H_2}$, CO, $\mathrm{N_2}$, CH$_4$
+    \item[Oxidising (high $f_{\mathrm{O}_2}$):] $\mathrm{H_2O}$, $\mathrm{CO_2}$, $\mathrm{N_2}$, $\mathrm{SO_2}$
+  \end{description}
+  \vskip8pt
+  \keyresult{The oxidation state of the mantle at magma ocean solidification sets the initial atmosphere, which then conditions habitability (Lectures 5--6).}
 \end{frame}
 
 
@@ -279,7 +317,7 @@
   \vskip10pt
   $$\mathrm{Rm}_\oplus = \frac{5 \times 10^{-4} \times 3.5 \times 10^6}{1} \approx 1750$$
   \vskip6pt
-  $\mathrm{Rm} \approx 1750 \gg \mathrm{Rm}_c$ --- advection overwhelmingly dominates.
+  $\mathrm{Rm} \approx 1750 \gg \mathrm{Rm}_c$: advection overwhelmingly dominates.
   \vskip6pt
   Ohmic diffusion timescale: $\tau_{\mathrm{ohm}} \sim L^2/\eta \approx 400{,}000$~yr $\ll$ Earth's age $\Rightarrow$ field must be \textbf{continuously regenerated}.
 \end{frame}
@@ -295,7 +333,7 @@
   \begin{columns}[c]
     \column{0.40\textwidth}
     \centering
-    \includegraphics[height=0.55\textheight]{geodynamo_schematic}
+    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{geodynamo_schematic}
     \source{Wikimedia, CC BY-SA 4.0}
 
     \column{0.57\textwidth}
@@ -318,7 +356,7 @@
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
-    \includegraphics[height=0.55\textheight]{geomagnetic_polarity_timescale}
+    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{geomagnetic_polarity_timescale}
     \source{Wikimedia, CC BY-SA 3.0}
 
     \column{0.52\textwidth}
@@ -343,14 +381,14 @@
     Earth     & Active dynamo    & 25--65~$\mu$T  & 1 \\
     Mercury   & Active (weak)    & $\sim$0.3~$\mu$T & $5 \times 10^{-4}$ \\
     Venus     & None detected    & $<$0.01~$\mu$T & $<10^{-5}$ \\
-    Mars      & Remnant crustal  & up to 1500~nT  & --- \\
+    Mars      & Remnant crustal  & up to 1500~nT  & n/a \\
     Jupiter   & Active (strong)  & 400--1400~$\mu$T & 20,000 \\
     Saturn    & Active           & $\sim$20~$\mu$T & $\sim$600 \\
     Ganymede  & Active           & $\sim$0.7~$\mu$T & $1.5 \times 10^{-3}$ \\
     \bottomrule
   \end{tabular}
   \vskip8pt
-  Jupiter's field is $\sim$20,000$\times$ Earth's --- generated in metallic hydrogen.
+  Jupiter's field is $\sim$20,000$\times$ Earth's, generated in metallic hydrogen.
 \end{frame}
 
 % ── Venus puzzle ──────────────────────────────────────────
@@ -427,7 +465,7 @@
       \item \textbf{Blue/violet:} excited $\mathrm{N_2}$
     \end{itemize}
     \vskip6pt
-    Observed on Jupiter, Saturn, Uranus --- any magnetised planet.
+    Observed on Jupiter, Saturn, and Uranus: any magnetised planet.
   \end{columns}
 \end{frame}
 
@@ -441,7 +479,7 @@
 \begin{frame}{Recent Advances}
   \begin{itemize}
     \item \textbf{Juno at Jupiter:} Most detailed magnetic field map\\
-    ``Great Blue Spot'' --- reversed-polarity flux patch in the northern hemisphere
+    ``Great Blue Spot'': a reversed-polarity flux patch in the northern hemisphere
 
     \vskip6pt
     \item \textbf{BepiColombo:} Mercury flybys confirm weak dipolar field\\
@@ -460,9 +498,9 @@
     \item Hf--W chronometry dates Earth's core formation to $\sim$30--60~Myr
     \item Magma ocean crystallisation creates chemically distinct layers (crust, mantle reservoirs)
     \item Dynamos require: conducting fluid + convection + sufficient Rm ($\gtrsim$10--100)
-    \item Earth's $\mathrm{Rm} \approx 1750$ --- vigorous dynamo action
+    \item Earth's $\mathrm{Rm} \approx 1750$: vigorous dynamo action
     \item Mars lost its dynamo $\sim$4.1~Ga $\rightarrow$ atmospheric erosion
-    \item Venus has no field despite Earth-like size --- likely due to stagnant lid + no inner core
+    \item Venus has no field despite Earth-like size, likely due to stagnant lid and lack of inner core
   \end{enumerate}
 \end{frame}
 
@@ -476,7 +514,7 @@
   \begin{center}
     {\color{white}\Large\bfseries Questions?}
     \vskip20pt
-    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~5 --- Atmospheres I: Composition, Structure, \& Energy Balance}}
+    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~5. Atmospheres I: Composition, Structure, \& Energy Balance}}
     \vskip16pt
     {\color{ipsLightFill!70}\small Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
   \end{center}

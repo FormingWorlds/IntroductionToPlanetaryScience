@@ -1,4 +1,4 @@
-% lecture06.tex — Lecture 6: Atmospheres II — Clouds, Weather, & Climate
+% lecture06.tex: Lecture 6: Atmospheres II, Clouds, Weather, & Climate
 % Introduction to Planetary Science, Kapteyn Institute
 
 \documentclass[aspectratio=169, 11pt]{beamer}
@@ -76,12 +76,12 @@
   \vskip8pt
   \begin{description}
     \item[Homogeneous nucleation:] Forming droplets from vapour alone\\
-    Requires very high supersaturations ($\mathrm{RH} \gg 100\%$) --- extremely rare
+    Requires very high supersaturations ($\mathrm{RH} \gg 100\%$), extremely rare
 
     \vskip6pt
     \item[Heterogeneous nucleation:] Condensation onto pre-existing particles\\
     \textbf{Condensation nuclei}: dust, volcanic aerosols, sea salt, soot\\
-    Occurs at modest supersaturation ($\mathrm{RH} \gtrsim 100\%$) --- the dominant mechanism
+    Occurs at modest supersaturation ($\mathrm{RH} \gtrsim 100\%$): the dominant mechanism
   \end{description}
   \vskip6pt
   \begin{itemize}
@@ -165,11 +165,23 @@
   $$\dv{P_{\mathrm{sat}}}{T} = \frac{L_v\,P_{\mathrm{sat}}}{R_v\,T^2}$$
 \end{frame}
 
+% ── Integration step ───────────────────────────────────────
+\begin{frame}{Integrating the Differential Form}
+  Starting from
+  $$\dv{P_{\mathrm{sat}}}{T} = \frac{L_v\,P_{\mathrm{sat}}}{R_v\,T^2}$$
+  separate variables:
+  $$\frac{\dd P_{\mathrm{sat}}}{P_{\mathrm{sat}}} = \frac{L_v}{R_v}\,\frac{\dd T}{T^2}$$
+  \vskip4pt
+  Integrate from a reference state $(T_{\mathrm{ref}}, P_{\mathrm{ref}})$ to $(T, P_{\mathrm{sat}})$, assuming $L_v \approx \mathrm{const.}$:
+  $$\ln\!\left(\frac{P_{\mathrm{sat}}}{P_{\mathrm{ref}}}\right) = -\frac{L_v}{R_v}\left(\frac{1}{T} - \frac{1}{T_{\mathrm{ref}}}\right)$$
+  \vskip4pt
+  Exponentiate to get the integrated form on the next slide.
+\end{frame}
+
 % ── Result ──────────────────────────────────────────────────
 \begin{frame}{The Clausius-Clapeyron Equation}
-  Separating variables and integrating (assuming $L_v \approx \mathrm{const.}$):
-  \vskip8pt
   \keyresult{$$\boxed{P_{\mathrm{sat}}(T) = P_{\mathrm{ref}} \exp\!\left[-\frac{L_v}{R_v}\left(\frac{1}{T} - \frac{1}{T_{\mathrm{ref}}}\right)\right]}$$}
+  \source{Derivation follows Catling (2017), \textit{Atmospheric Evolution on Inhabited and Lifeless Worlds}, Ch.~1}
   \vskip8pt
   \begin{itemize}
     \item $P_{\mathrm{sat}}$ depends \textbf{exponentially} on temperature
@@ -199,7 +211,7 @@
   \flushleft
   At $T = 293$~K (20\textdegree{}C):
   $$P_{\mathrm{sat}} = 611 \exp\!\left[-5400\left(\frac{1}{293} - \frac{1}{273}\right)\right] = 611 \times 3.86 \approx 2360 \text{~Pa}$$
-  Measured value: 2300~Pa --- excellent agreement.
+  Measured value: 2300~Pa; excellent agreement.
 \end{frame}
 
 % ── Condensing species table ────────────────────────────────
@@ -217,6 +229,8 @@
     $\mathrm{CO_2}$      & 571  & 189 & 3020 & 145--175 & Mars \\
     \bottomrule
   \end{tabular}
+  \vskip6pt
+  {\tiny\color{ipsText!60} Source: Catling (2017), de Pater \& Lissauer (2010); $T_{\mathrm{cond}}$ is typical cloud-base range}
   \vskip8pt
   \flushleft
   \begin{itemize}
@@ -236,7 +250,7 @@
   \begin{columns}[c]
     \column{0.40\textwidth}
     \centering
-    \includegraphics[height=0.55\textheight]{venus_uv_clouds}
+    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{venus_uv_clouds}
     \source{NASA/JPL-Caltech (1974)}
 
     \column{0.57\textwidth}
@@ -273,7 +287,7 @@
 \begin{frame}{Titan: Methane Rain}
   \begin{itemize}
     \item Only known active \textbf{hydrological cycle} beyond Earth, with $\mathrm{CH_4}$ replacing $\mathrm{H_2O}$
-    \item Surface: $T \approx 94$~K, $P \approx 1.5$~bar --- near the triple point of methane
+    \item Surface: $T \approx 94$~K, $P \approx 1.5$~bar, near the triple point of methane
     \item Liquid methane: lakes, seas, rivers carved into the icy surface
     \item $\mathrm{CH_4}$ clouds at 8--30~km; $\mathrm{C_2H_6}$ (ethane) clouds also present
     \item Rainfall infrequent but intense
@@ -286,7 +300,7 @@
   \begin{columns}[c]
     \column{0.42\textwidth}
     \centering
-    \includegraphics[height=0.60\textheight]{jupiter_cloud_layers}
+    \includegraphics[width=\linewidth,height=0.60\textheight,keepaspectratio]{jupiter_cloud_layers}
     \source{Wikimedia, CC BY-SA 3.0}
 
     \column{0.55\textwidth}
@@ -321,7 +335,7 @@
   \begin{columns}[c]
     \column{0.42\textwidth}
     \centering
-    \includegraphics[height=0.60\textheight]{hadley_cells}
+    \includegraphics[width=\linewidth,height=0.60\textheight,keepaspectratio]{hadley_cells}
     \source{Wikimedia, public domain}
 
     \column{0.55\textwidth}
@@ -355,7 +369,7 @@
   \begin{itemize}
     \item Earth: $\Omega = 7.27 \times 10^{-5}$~rad\,s$^{-1}$
     \item At mid-latitudes ($\phi = 45$\textdegree{}): $f \approx 1.03 \times 10^{-4}$~s$^{-1}$
-    \item At equator ($\phi = 0$\textdegree{}): $f = 0$ --- no Coriolis deflection
+    \item At equator ($\phi = 0$\textdegree{}): $f = 0$, so no Coriolis deflection
   \end{itemize}
   \vskip6pt
   \keyresult{The Coriolis effect explains why winds do not blow directly from high to low pressure, and why weather systems rotate.}
@@ -368,11 +382,11 @@
   $$\mathrm{Ro} = \frac{U}{fL}$$
   \vskip6pt
   \begin{description}
-    \item[$\mathrm{Ro} \ll 1$:] Rotation dominates --- large-scale circulation, jet streams\\
+    \item[$\mathrm{Ro} \ll 1$:] Rotation dominates: large-scale circulation, jet streams\\
     Earth: $U \sim 10$~m\,s$^{-1}$, $L \sim 1000$~km $\rightarrow$ $\mathrm{Ro} \sim 0.1$
 
     \vskip4pt
-    \item[$\mathrm{Ro} \gg 1$:] Rotation unimportant --- tornadoes, dust devils
+    \item[$\mathrm{Ro} \gg 1$:] Rotation unimportant: tornadoes, dust devils
   \end{description}
   \vskip8pt
   Determines the number of circulation cells on a planet.
@@ -446,7 +460,7 @@
     \item Juno gravity measurements: jets extend deep into the interior
   \end{itemize}
   \vskip6pt
-  \keyresult{The same geostrophic and thermal wind physics that produces Earth's jet streams creates the banded structure of the giant planets --- just with many more cells due to rapid rotation.}
+  \keyresult{The same geostrophic and thermal wind physics that produces Earth's jet streams creates the banded structure of the giant planets, just with many more cells due to rapid rotation.}
 \end{frame}
 
 
@@ -621,7 +635,7 @@
     \item Sedimentary deposits in ancient lake basins (e.g., Jezero crater)
   \end{itemize}
   \vskip6pt
-  Dense $\mathrm{CO_2}$ alone is insufficient --- it condenses into ice clouds that \textit{increase} albedo.
+  Dense $\mathrm{CO_2}$ alone is insufficient: it condenses into ice clouds that \textit{increase} albedo.
   \vskip4pt
   \textbf{Proposed solutions:} Reducing gases ($\mathrm{H_2}$, $\mathrm{CH_4}$) from volcanism and water-rock reactions. Early Mars climate remains a \textbf{major open problem}.
 \end{frame}
@@ -673,7 +687,7 @@
   \begin{columns}[c]
     \column{0.42\textwidth}
     \centering
-    \includegraphics[height=0.55\textheight]{carbonate_silicate_cycle}
+    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{carbonate_silicate_cycle}
     \source{Wikimedia, CC BY-SA 4.0}
 
     \column{0.55\textwidth}
@@ -778,7 +792,7 @@
   \begin{center}
     {\color{white}\Large\bfseries Questions?}
     \vskip20pt
-    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~7 --- Planetary Surfaces: Geology, Geomorphology, \& Geophysics}}
+    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~7. Planetary Surfaces: Geology, Geomorphology, \& Geophysics}}
     \vskip16pt
     {\color{ipsLightFill!70}\small Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
   \end{center}

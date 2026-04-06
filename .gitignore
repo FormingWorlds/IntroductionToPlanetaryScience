@@ -9,6 +9,11 @@ book/_build/
 book/**/figures/*.png
 book/**/figures/*.jpg
 
+# Generated from AVIF/SVG at slide build time (see slides/Makefile)
+slides/**/figures/*.png
+slides/**/figures/*.pdf
+!slides/**/lecture*.pdf
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
