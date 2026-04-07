@@ -112,7 +112,7 @@ $$
 Geometry of a transit. **Left:** the orbit, viewed from above, defines a "shadow band" within which an observer sees transits. The half-angle of the band is $\Theta \approx (R_\star + R_p)/r$, where $r$ is the instantaneous star-planet distance. **Right:** detail of grazing and full transits relative to the stellar limb. The probability that a randomly oriented orbit produces a visible transit scales as $R_\star / a$. From the Winn (2010) review {cite:p}`Winn2010`.
 ```
 
-For a Jupiter-radius planet around a Sun-radius star, the ratio is $0.103$, so the depth is $\delta \approx 1.06\%$, easily measurable from the ground with a 1 metre class telescope.
+For a Jupiter-radius planet around a Sun-radius star, the ratio is $0.1005$, so the depth is $\delta \approx 1.01\%$ (a round "$\sim 1\%$" pedagogical value), easily measurable from the ground with a 1 metre class telescope.
 For an Earth-radius planet around the Sun the ratio is $9.16 \times 10^{-3}$, so the depth is only $\delta \approx 8.4 \times 10^{-5}$, about 84 parts per million.
 This is well below atmospheric noise and is only achievable from space.
 For an Earth-radius planet around an M dwarf with $R_\star \approx 0.15\,\Rsun$, the ratio is much more favourable: $\delta \approx 4 \times 10^{-3}$ or 4000 ppm, accessible even from the ground.
@@ -243,7 +243,7 @@ A density between rocky and gas, near $2$--$4$ g/cm$^3$, is typical of "sub-Nept
 Without the joint transit-plus-RV measurement, we cannot tell any of these apart.
 
 ```{figure} figures/winn_mass_radius.avif
-:name: fig:winnmassradius
+:name: fig:ck17massradius
 :width: 90%
 
 Empirical mass-radius relation across the full range of solar-system bodies, exoplanets, brown dwarfs, and stars, from {cite:t}`ChenKipping2017`. The shaded regions mark four distinct compositional regimes: terran ($M \lesssim 2\,\Mearth$, scaling roughly as $R \propto M^{0.28}$), Neptunian ($2\,\Mearth \lesssim M \lesssim 0.4\,\Mjup$, $R \propto M^{0.59}$), Jovian ($0.4\,\Mjup \lesssim M \lesssim 80\,\Mjup$, $R \propto M^{-0.04}$, where electron degeneracy and self-compression flatten the relation), and stellar ($M > 80\,\Mjup$, hydrogen burning sets in). Each break corresponds to a different dominant pressure source. The "Neptunian" segment is the modern compositional location of the sub-Neptune family, the population that has no analogue in the solar system.
@@ -585,7 +585,7 @@ The **peas in a pod** correlation from {cite:t}`Weiss2018`: the radius of an inn
 ```
 
 ```{figure} figures/weiss_spacing.avif
-:name: fig:weisssspacing
+:name: fig:weiss_spacing
 :width: 75%
 
 Period-spacing regularity in Kepler multi-planet systems, from {cite:t}`Weiss2018`. The histograms show that adjacent-pair period ratios cluster strongly around a single typical value rather than being random, supporting the view that in-situ formation of compact systems proceeds by a smooth, local process rather than by stochastic large impacts.
