@@ -1194,7 +1194,7 @@ And LSST/Rubin will increase the discovery rate of NEAs, KBOs, and ISOs by an or
 The new and most unexpected category is **interstellar visitors**.
 Three confirmed objects in eight years (1I/'Oumuamua, 2I/Borisov, 3I/ATLAS) means that small bodies from other planetary systems are passing through ours all the time.
 Each one is a single sample from the formation chemistry of an exoplanetary system, and the next decade will turn the trickle into a flood as Rubin and Comet Interceptor come online.
-Interstellar visitors are the link between the small-body science of this lecture and the exoplanet content of {ref}`lecture13` and {ref}`lecture14`: they are the first physical samples of other planetary systems that we have ever held in our hands, or will hold in our hands in the foreseeable future.
+Interstellar visitors are the conceptual link between the small-body science of this lecture and the exoplanet science we turn to next: they are the first physical samples of other planetary systems that we will ever directly observe in our own solar neighbourhood, providing a complement to the remote-sensing approaches developed in {ref}`lecture13`.
 
 
 ## References

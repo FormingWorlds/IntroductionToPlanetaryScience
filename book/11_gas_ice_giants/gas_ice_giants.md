@@ -75,7 +75,7 @@ The example illustrates how a single mission's gravity science can rewrite the t
 
 Jupiter's visible atmosphere is the cloud-bearing layer at pressures between approximately 0.1 and 10 bar.
 As discussed in {ref}`lecture06`, the composition of the cloud layers is set by the condensation curves of the most abundant volatile species: ammonia ice ($\mathrm{NH_3}$) condenses near the 0.5--1 bar level to form the highest cloud deck, ammonium hydrosulphide ($\mathrm{NH_4SH}$) condenses near 2--3 bar, and water ice and water cloud occur deepest at $\sim 5\text{--}7$ bar.
-Galileo probe measurements during its 1995 atmospheric entry confirmed the layered structure but found the entry site unusually dry, a reminder that local meteorology can deviate strongly from horizontally averaged models {cite:p}`Bolton2017`.
+Galileo probe mass spectrometer measurements during its 1995 atmospheric entry confirmed the layered structure but found the entry site unusually dry, a reminder that local meteorology can deviate strongly from horizontally averaged models {cite:p}`Niemann1998`.
 
 ```{figure} figures/jupiter_grs_juno.avif
 :name: fig:jupiter_grs
@@ -311,10 +311,10 @@ Saturn's hexagonal polar jet imaged by Cassini. The hexagon, centred at about $7
 The most distinctive feature of Saturn's atmosphere is the **hexagonal jet stream** at $\sim 78^\circ$ N latitude, a six-sided standing wave that has been present continuously since Voyager observed it in 1981 and was mapped in detail by Cassini through its 13-year tour.
 The hexagon is interpreted as a Rossby wave locked to a strong eastward zonal jet whose meridional shear sets the wavenumber of the standing pattern; laboratory experiments with rotating-tank flows can reproduce stable polygonal jet patterns in similar conditions, although the exact physical mechanism that selects six rather than five or seven sides is not yet definitively understood.
 
-Saturn's equatorial jet is the fastest in the solar system, with peak speeds reaching $\sim$400 m s$^{-1}$, more than double the equivalent on Jupiter.
+Saturn's equatorial jet is one of the fastest in the solar system, with peak speeds reaching $\sim$400 m s$^{-1}$, more than double the equivalent on Jupiter, though it is itself surpassed by Neptune's $\sim$580 m s$^{-1}$ retrograde equatorial flow (see Part 2).
 The "Great White Storms" are massive convective outbursts that erupt every $\sim$30 years (one Saturnian year), span thousands of kilometres, and circle the planet within a few months before dissipating.
 The most recent, in 2010--2011, was studied in detail by Cassini and produced unique constraints on the moist convection of water vapour at depth.
-Saturn\'s modest $26.7^\circ$ axial tilt also imposes strong seasonal forcing, and the planet's high northern latitudes have brightened markedly over the Cassini mission as they emerged from polar winter.
+Saturn's modest $26.7^\circ$ axial tilt also imposes strong seasonal forcing, and the planet's high northern latitudes have brightened markedly over the Cassini mission as they emerged from polar winter.
 
 ### Saturn's rings: structure and composition
 
