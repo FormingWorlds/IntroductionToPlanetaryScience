@@ -79,10 +79,10 @@ Achondrites sample their crusts and mantles.
 :width: 480px
 :align: center
 
-Polished and acid-etched surface of an iron meteorite displaying the **Widmanst{\"a}tten pattern**: an interlocking lattice of kamacite and taenite, two Fe-Ni phases. The pattern can only form if a metallic melt cools at a rate slower than $\sim 100$ K per million years. Such slow cooling is only possible inside the metallic core of a body of asteroid size or larger; the spacing of the lattice constrains the original parent body radius. Image credit: H. Raab, CC BY-SA 3.0 (Wikimedia Commons).
+Polished and acid-etched surface of an iron meteorite displaying the **Widmanstätten pattern**: an interlocking lattice of kamacite and taenite, two Fe-Ni phases. The pattern can only form if a metallic melt cools at a rate slower than $\sim 100$ K per million years. Such slow cooling is only possible inside the metallic core of a body of asteroid size or larger; the spacing of the lattice constrains the original parent body radius. Image credit: H. Raab, CC BY-SA 3.0 (Wikimedia Commons).
 ```
 
-The Widmanst{\"a}tten pattern shown in {numref}`fig:l12-widmanstatten` is one of the cleanest pieces of geophysical reasoning in cosmochemistry.
+The Widmanstätten pattern shown in {numref}`fig:l12-widmanstatten` is one of the cleanest pieces of geophysical reasoning in cosmochemistry.
 The two Fe-Ni phases unmix during slow cooling, and the size of the lamellae depends on the cooling rate.
 By matching laboratory cooling experiments to natural specimens, one can read the original parent body radius directly off the etched surface: most iron meteorite groups come from bodies tens of kilometres in radius {cite:p}`Goldstein2009`.
 
@@ -623,14 +623,14 @@ Map of the Tunguska airburst zone (1908), reconstructed from felled trees and mo
 
 Planetary defence is the practical application of all the small-body science in this lecture.
 The first prerequisite is **discovery**: NEOWISE, the Catalina Sky Survey, ATLAS, Pan-STARRS, and now the Vera C. Rubin Observatory ({numref}`fig:l12-rubin`) progressively complete the inventory.
-Rubin's first light was achieved in mid-2025, and over its 10-year survey it is expected to roughly an order of magnitude increase the discovery rate of NEAs and to find essentially all PHAs larger than 140 m within a decade {cite:p}`Jones2018`.
+Rubin's first light was achieved in June 2025, and over its 10-year survey it is expected to increase the discovery rate of NEAs by roughly an order of magnitude and to find essentially all PHAs larger than 140 m within a decade {cite:p}`Jones2018`.
 
 ```{figure} figures/rubin_obs.avif
 :name: fig:l12-rubin
 :width: 600px
 :align: center
 
-The Vera C. Rubin Observatory on Cerro Pach{\'o}n, Chile, during construction. Its 8.4 m primary and 3.2 gigapixel camera will repeatedly image the entire visible sky every few nights, dramatically improving the inventory of small solar system bodies, including a roughly tenfold increase in the NEA discovery rate. Image credit: Rubin Observatory / NSF / DOE, public domain.
+The Vera C. Rubin Observatory on Cerro Pachón, Chile, during construction. Its 8.4 m primary and 3.2 gigapixel camera will repeatedly image the entire visible sky every few nights, dramatically improving the inventory of small solar system bodies, including a roughly tenfold increase in the NEA discovery rate. Image credit: Rubin Observatory / NSF / DOE, public domain.
 ```
 
 The second prerequisite is **deflection**.

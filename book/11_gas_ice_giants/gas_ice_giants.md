@@ -275,8 +275,8 @@ Saturn's heavy-element distribution $Z(r)$ (top), density $\rho(r)$ (middle), an
 Kronoseismology constraints on Saturn's interior from {cite:t}`Mankovich2021`. Left: family of allowed heavy-element profiles $Z(r)$ and Brunt-Vaisala frequencies $N(r)/\omega_{\rm dyn}$. Right: pattern speeds and resonance radii of the f-mode oscillations of Saturn that drive observable density waves in the C ring at $\sim 75{,}000$--$95{,}000$ km radius. The observed waves (red dashed lines, labelled with their ring positions) are reproduced only by interior models with a stably stratified, dilute heavy-element distribution extending to roughly 60% of Saturn's radius. The figure is the most quantitative external probe of any giant planet interior to date.
 ```
 
-The picture of Saturn's interior was sharpened dramatically by the technique of **kronoseismology**: detecting the f-mode oscillations of Saturn through the density waves they excite in Saturn's C ring at the radii where their pattern speeds match Keplerian frequencies.
-{cite:t}`Mankovich2021` showed that the spacing and amplitudes of these waves can be reproduced only by interior models in which the heavy elements form a stably stratified, dilute "core" that extends to roughly 60% of the planet's radius and contains $\sim$17--20 $\Mearth$ of rock and ice.
+The picture of Saturn's interior was sharpened dramatically by the technique of **kronoseismology** (named after Kronos, the Greek name for Saturn, in analogy with helio- and asteroseismology): detecting the f-mode oscillations of Saturn through the density waves they excite in Saturn's C ring at the radii where their pattern speeds match Keplerian frequencies.
+{cite:t}`Mankovich2021` showed that the spacing and amplitudes of these waves can be reproduced only by interior models in which the heavy elements form a stably stratified, dilute "core" that extends to roughly 60% of the planet's radius and contains $\sim$17 $\Mearth$ of rock and ice.
 This is the first time that any giant planet has been constrained by seismology, and the result mirrors the dilute core picture for Jupiter.
 Both gas giants therefore appear to have heavy elements distributed across an extended interior region rather than concentrated in a compact central core.
 
@@ -292,7 +292,8 @@ The current best value, $10$ h $33$ min $38$ s, comes from Cassini ring seismolo
 Determination of Saturn's bulk rotation period from C-ring seismology by {cite:t}`Mankovich2019`. Each black curve shows the RMS pattern-speed residual between an interior model and the set of observed C-ring density waves identified with Saturnian $f$-modes, plotted as a function of the assumed rotation period. The thick blue curve gives the cumulative distribution of best-fit rotation periods. The seismological median is $P_{\rm S} \approx 10\,{\rm h}\,33\,{\rm min}\,38\,{\rm s}$, well separated from the older Voyager and Cassini magnetospheric estimates indicated by the coloured vertical bars.
 ```
 Second, the near-perfect axial alignment of Saturn's magnetic dipole is itself a problem.
-A dynamo generally requires some asymmetry between the rotation and magnetic axes to operate (Cowling's anti-dynamo theorem rules out perfectly axisymmetric dynamos), so the question is how Saturn's dynamo manages to produce such a clean dipole.
+A dynamo generally requires some asymmetry between the rotation and magnetic axes to operate: Cowling's anti-dynamo theorem states that a purely axisymmetric flow cannot sustain a magnetic field against ohmic decay, so a working dynamo must contain non-axisymmetric components even if the resulting external field appears almost perfectly axisymmetric (see also {ref}`lecture04` for the basic dynamo concept).
+The question is therefore how Saturn's dynamo manages to produce such a clean dipole.
 The leading explanation is that the convecting metallic hydrogen layer is overlain by a stably stratified helium-rain region that filters out non-axisymmetric magnetic field components before they reach the planet's surface.
 
 ### Saturn atmosphere and weather
@@ -339,7 +340,7 @@ A "propeller" feature in Saturn's A ring, imaged by Cassini. Propellers are the 
 The composition of the rings is overwhelmingly water ice ($>$95% by mass), with only a small fraction of darker contaminants such as silicates and organics.
 The particle size distribution spans roughly 1 cm to 10 m, with a power-law index that varies from ring to ring.
 The rings are remarkably thin: in most regions the vertical extent is only $\sim$10 m, far smaller than their $\sim$10$^5$ km radial extent, making them the thinnest known objects in the universe relative to their lateral size.
-The total mass of the rings is now well determined from Cassini Grand Finale gravity science to be $\sim$$1.5 \times 10^{19}$ kg, comparable to the mass of Saturn's small moon Mimas {cite:p}`Iess2019`.
+The total mass of the rings is now well determined from Cassini Grand Finale gravity science to be $\sim$$1.5 \times 10^{19}$ kg, about 40% of the mass of Saturn's small moon Mimas {cite:p}`Iess2019`.
 
 Many ring features are sculpted by gravitational interactions with Saturn's small moons.
 The F ring is shepherded by Prometheus and Pandora, which constrain its outer and inner edges respectively.
@@ -709,7 +710,7 @@ The observed asymmetries impose strong constraints on the radial extent of the d
 ### Triton
 
 Triton, the largest moon of Neptune, is a captured Kuiper Belt object and the only large moon in the solar system in a retrograde orbit around its parent planet.
-Its orbit is also strongly inclined ($\sim 157^\circ$ relative to Neptune's equator).
+Its orbit is also strongly inclined ($\sim 157^\circ$ relative to Neptune's equator, i.e., retrograde with an obliquity of $\sim 23^\circ$ to the equator-normal).
 The capture was probably accomplished early in the solar system's history, perhaps when Triton was part of a binary that was disrupted by a close passage near Neptune {cite:p}`Agnor2006`.
 
 ```{figure} figures/triton_map.avif
@@ -757,7 +758,7 @@ Long-exposure forward-scattered view of Neptune's rings showing the full ring sy
 
 Both ice giant ring systems are dominated by dark, carbon-rich material, in contrast to Saturn's bright water ice particles.
 The reasons for the compositional difference are not fully understood, but probably reflect a different origin: ice giant rings may form from the disruption of small inner moons rather than from a large external source.
-JWST observations of both systems in 2023 revealed previously undetected fine structure in the rings of both planets and detected several new small inner moons {cite:p}`DePater2022`.
+JWST observations of the Uranus system in 2023 revealed previously undetected fine structure in the rings and resolved several small inner moons {cite:p}`DePater2022`; comparable JWST imaging of the Neptune system has shown the Adams arcs and the Le Verrier ring at near-infrared wavelengths inaccessible to ground-based observatories.
 
 
 ## Part 3: Comparative payoff and exploration frontier
@@ -792,7 +793,7 @@ A short list of major open questions includes:
 - What is the true heavy-element fraction inside Uranus and Neptune, and how is it partitioned between rock, ice, and gas?
 - What sustains Neptune's strong internal heat flow, and why is Uranus's so much weaker?
 - When and how did Saturn's rings form, and how long will they persist?
-- How exactly did Jupiter's dilute core arise during planetary formation, and is the same process responsible for Saturn's diffuse heavy-element distribution?
+- How exactly did Jupiter's dilute core arise during planetary formation, and is the same process responsible for Saturn's dilute heavy-element distribution?
 - Does Callisto host a true subsurface ocean today, or has its incomplete differentiation prevented one from forming?
 - What is the deep structure of Saturn's hexagonal jet, and why is its geometry so stable on multi-decade timescales?
 - Are the chemistry detected in Enceladus's plumes and the prebiotic chemistry on Titan compatible with extant or prebiotic life?

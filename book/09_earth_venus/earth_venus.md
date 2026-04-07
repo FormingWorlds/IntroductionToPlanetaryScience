@@ -9,8 +9,7 @@ Earth and Venus are nature's best controlled experiment in comparative planetolo
 They formed from the same nebular reservoir within roughly $0.3$ AU of each other, contain similar bulk inventories of silicate, iron, and volatile elements, and have masses and radii within $20\%$ of each other.
 Yet their present-day surface conditions could not be more different.
 Earth is wet, geologically active, magnetically shielded, and inhabited; Venus is dry, encased in a $92$ bar carbon-dioxide atmosphere at a surface temperature of $735$ K, and the only one of the rocky planets without a global magnetic field.
-Why?
-What turned two nearly identical starting points into two radically different end states?
+Identifying what set these two nearly identical starting points on such radically different evolutionary paths is the central question of this lecture.
 This lecture works through that question in three parts.
 Part 1 reviews Earth as a reference planet, Part 2 surveys Venus as the alien twin, and Part 3 brings the comparison together to extract the underlying physics.
 The blackboard derivation in the middle introduces the Simpson-Nakajima runaway greenhouse limit, a thermodynamic boundary in phase space that, once crossed, makes the divergence essentially irreversible.
@@ -454,7 +453,7 @@ Reproduced from {cite:t}`Goldblatt2013`.
 
 In numbers, the Simpson-Nakajima limit comes out to about $280\text{--}310$ W/m$^2$, depending on details of the radiative transfer model and the assumed atmospheric composition {cite:p}`Goldblatt2013,Kasting1988`.
 Earth today absorbs about $240$ W/m$^2$ of stellar flux, comfortably below the limit.
-Venus, at $0.72$ AU, absorbs roughly $1.91 \times$ more stellar flux per unit area than Earth would at the top of its atmosphere; the absorbed solar flux at Venus is much higher than the Simpson-Nakajima limit, which is precisely why Venus cannot host liquid water at the surface today.
+Venus, at $0.723$ AU, absorbs roughly $1.91 \times$ more stellar flux per unit area than Earth would at the top of its atmosphere; the absorbed solar flux at Venus is much higher than the Simpson-Nakajima limit, which is precisely why Venus cannot host liquid water at the surface today.
 Once Venus crossed the limit some time in its history, the runaway became a one-way process: the ocean evaporated to space, water photolysed in the upper atmosphere, hydrogen escaped (preferentially over deuterium, leaving the residual D/H ratio strongly enriched), and the surface dried out permanently.
 What is left is the dry, $\mathrm{CO_2}$-dominated, $735$ K hothouse we observe today.
 
@@ -495,7 +494,7 @@ $$
 p_{\mathrm{sat}}(T) \approx p_{\mathrm{ref}}\, \exp\!\left[ -\frac{L}{R_v}\!\left(\frac{1}{T} - \frac{1}{T_{\mathrm{ref}}}\right) \right]
 $$ (eq:saturation-pressure)
 
-with $p_{\mathrm{ref}} = 611$ Pa and $T_{\mathrm{ref}} = 273$ K (the triple point of water).
+with $p_{\mathrm{ref}} = 611$ Pa and $T_{\mathrm{ref}} = 273.16$ K (the triple point of water, rounded to $273$ K below).
 
 **Step 1: The IR optical depth and the photosphere temperature.**
 The outgoing longwave radiation emerges from a thermal photosphere, defined as the level where the IR optical depth, integrated downward from the top of the atmosphere, reaches order unity.
@@ -552,7 +551,7 @@ $$
 Earth is comfortably below the runaway greenhouse limit, by about $40$--$70$ W/m$^2$.
 At the orbit of Venus, the same calculation gives $F_{\mathrm{abs}}^{\mathrm{Venus}} \approx 460$ W/m$^2$ (assuming an Earth-like albedo, which is wrong for present Venus but is the relevant comparison for an early ocean-bearing Venus), well above the limit.
 Setting $F_{\mathrm{abs}} = F_{\mathrm{OLR}}^{\max}$ and solving for the orbital distance gives the **inner edge of the classical habitable zone** at roughly $0.95$--$0.99$ AU for present-day solar luminosity {cite:p}`Kasting1993,Kopparapu2013,Goldblatt2013`.
-Venus, at $0.72$ AU, sits well inside the inner edge.
+Venus, at $0.723$ AU, sits well inside the inner edge.
 
 **Key insight.**
 The runaway greenhouse is not an artefact of one model or one parameter choice; it is a thermodynamic feature of the water phase diagram combined with the elementary physics of radiative transfer through a saturated atmosphere.
@@ -786,12 +785,11 @@ The rates of these reactions are uncertain by orders of magnitude, and pinning t
 
 ### Why did Earth and Venus diverge?
 
-We are now in a position to answer the question that opened this lecture.
-What turned two nearly identical starting points into two radically different end states?
+We are now in a position to answer the question that opened this lecture, namely what set two nearly identical starting points onto such radically different evolutionary paths.
 The answer involves four physical inputs that differed (or differed slightly) between Earth and Venus, plus the nonlinear couplings that turned modest input differences into runaway outcomes.
 
 The first input is the **solar flux**.
-At $0.72$ AU, Venus receives $1.91 \times$ the solar flux per unit area that Earth does at $1$ AU.
+At $0.723$ AU, Venus receives $1.91 \times$ the solar flux per unit area that Earth does at $1$ AU.
 This is the single biggest lever, and it is the only input where the two planets are very different at the start.
 With the present-day Sun, Venus is comfortably above the Simpson-Nakajima limit and Earth is comfortably below.
 With a young, faint Sun, the picture is more nuanced: Venus may have been just above or just below the threshold, depending on cloud cover and atmospheric composition, and the question of whether early Venus was habitable becomes a question of how the solar flux interacted with the cloud feedback and the carbonate-silicate cycle.
@@ -955,7 +953,7 @@ The central piece of physics is the **Simpson-Nakajima runaway greenhouse limit*
 This limit, in the range $280\text{--}310$ W/m$^2$, defines the inner edge of the habitable zone and is essentially independent of the surface temperature once the atmosphere becomes optically thick in the IR.
 A planet whose absorbed solar flux exceeds the limit cannot host a steady state with liquid surface water; the runaway greenhouse drives the ocean into the upper atmosphere, photolyses the water, and loses the hydrogen to space.
 The process is one-way: there is no thermodynamic path back to the wet state.
-Earth, at $1$ AU, sits below the limit; Venus, at $0.72$ AU, sits well above it.
+Earth, at $1$ AU, sits below the limit; Venus, at $0.723$ AU, sits well above it.
 
 The **carbonate-silicate cycle** is the negative feedback that has stabilised Earth's climate within the liquid-water window for $4$ Gyr, but it cannot operate on present Venus because the cycle requires both liquid surface water (for the weathering sink) and active plate tectonics (for the subduction return leg).
 Once Venus lost its water, the sink was destroyed; once the subduction stopped, the return leg was destroyed.
