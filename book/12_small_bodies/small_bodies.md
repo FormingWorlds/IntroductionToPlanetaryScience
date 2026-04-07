@@ -414,7 +414,7 @@ The two-epoch planetesimal formation signal had already been identified in indep
 
 #### Interpretation 3: NC and CC as two formation epochs (Bizzarro, Connelly, Johansen and collaborators)
 
-A third interpretation, developed by {cite:t}`Schiller2018`, {cite:t}`Nanne2019`, {cite:t}`Spitzer2021` and others, argues that NC and CC are not two *spatial* reservoirs at all.
+A third interpretation, developed by Bizzarro, Connelly, Johansen and their collaborators in a series of papers including {cite:t}`Schiller2018`, {cite:t}`Nanne2019`, and {cite:t}`Spitzer2021`, argues that NC and CC are not two *spatial* reservoirs at all.
 Instead, they are two distinct *temporal epochs* of planetesimal formation, both occurring across a wide range of orbital distances.
 
 In this picture, the inner protoplanetary disk was initially formed from infall of nearly-solar composition material (the NC reservoir).
@@ -548,6 +548,17 @@ The momentum carried away by the thermal photons is not symmetric, and the recoi
 For a 1 km asteroid the drift rate is of order $10^{-4}$ AU per Myr, and over $10^8$ years it is enough to walk an asteroid from a quiet spot in the belt into a Kirkwood resonance, where the eccentricity is then pumped quickly and the asteroid is launched onto a planet-crossing orbit {cite:p}`Bottke2006`.
 Yarkovsky drift is now routinely detected in the orbits of well-tracked NEAs, including Bennu and Apophis, and is a critical input to long-term impact predictions.
 
+The size and density dependence of the drift rate follows from a simple thermal-inertia argument.
+The thermal recoil force is proportional to the absorbed solar power, $F_\odot \propto L_\odot R^2 / a^2$, where $R = D/2$ is the body radius.
+For the seasonal Yarkovsky variant, which dominates for $\sim 1$ km bodies, the along-track acceleration scales as the recoil force divided by the body mass $m \propto \rho R^3$, multiplied by an efficiency factor that depends on how far the diurnal heat wave penetrates relative to $R$.
+Combining these factors with the dependence of the orbital response on $a$, the standard scaling for the secular semimajor-axis drift is
+$$
+\dv{a}{t} \propto \frac{1}{D \, \rho \, \sqrt{a}},
+$$
+so a smaller, less dense, closer-in body drifts faster {cite:p}`Bottke2006`.
+Plugging in canonical values for a 1 km basaltic NEA ($\rho \sim 2.5$ g cm$^{-3}$, $a \sim 2$ AU) gives $\dd a/\dd t \sim 10^{-4}$ AU per Myr, so the body needs $\sim 10^7$ years to walk the few hundredths of an AU separating it from a Kirkwood resonance.
+This sets the Yarkovsky-resonance delivery clock for the NEA population, and explains why most observed NEAs are small: the supply rate from the main belt scales steeply with $1/D$.
+
 ```{figure} figures/yarkovsky_detection_vokrouhlicky.avif
 :name: fig:l12-yarkovsky
 :width: 500px
@@ -626,6 +637,16 @@ The second prerequisite is **deflection**.
 The DART mission (Double Asteroid Redirection Test, NASA) flew the first practical demonstration in 2022, using a $\sim 600$ kg spacecraft as a kinetic impactor on **Dimorphos**, the small moon of the binary asteroid (65803) Didymos.
 The orbital period of Dimorphos around Didymos shortened by approximately 33 minutes, a much larger effect than would be expected from simple momentum transfer; the additional momentum came from the recoil of the ejecta plume the impact generated, a physical effect quantified by the *momentum-transfer enhancement factor* $\beta \approx 3.6$ {cite:p}`Daly2023,Cheng2023`.
 DART is the first time human beings have measurably altered the orbit of a celestial body.
+
+That a small moon can stably orbit Didymos at all requires that its orbit lie inside the primary's **Hill sphere**, the region in which the gravity of the asteroid dominates over the tidal pull of the Sun.
+Equating the asteroid's gravitational acceleration at radius $r$ to the differential solar tide across the same distance gives, to leading order, the Hill radius
+$$
+r_H = a \left( \frac{m}{3 \, \Msun} \right)^{1/3},
+$$
+where $a$ is the asteroid's heliocentric semimajor axis and $m$ its mass.
+For Didymos, $a \approx 1.64$ AU $\approx 2.45 \times 10^{11}$ m and $m \approx 5.3 \times 10^{11}$ kg, which gives $r_H \approx 110$ km.
+Dimorphos orbits the primary at only $\sim 1.2$ km, comfortably inside the Hill sphere by nearly two orders of magnitude, so the binary is dynamically robust against solar perturbations and the DART impact could not unbind it.
+The same calculation applied to other binary asteroids shows that stable mutual orbits are typically confined well inside $0.5 \, r_H$: orbits closer to the Hill radius are quickly stripped by solar tides over the age of the solar system.
 
 ```{figure} figures/dart_lightcurve_daly.avif
 :name: fig:l12-dimorphos
@@ -910,6 +931,19 @@ Comets divide naturally into two dynamical classes based on their orbital period
 
 **Short-period comets** ($P < 200$ yr) have low-inclination, prograde orbits in or near the ecliptic plane.
 They are subdivided into the *Jupiter-family comets* (JFCs), with periods $P < 20$ yr and Tisserand parameter $T_J > 2$, and the *Halley-type comets*, with intermediate periods.
+
+The **Tisserand parameter** is the standard tool for cometary classification.
+It is an approximate constant of motion in the restricted three-body problem of Sun, Jupiter, and a massless test particle, derived from the Jacobi integral by neglecting Jupiter's small eccentricity and inclination.
+For a test body with semimajor axis $a$, eccentricity $e$, and inclination $i$ relative to Jupiter's orbit, the Tisserand parameter with respect to Jupiter is
+$$
+T_J = \frac{a_J}{a} + 2\sqrt{\frac{a}{a_J}\,(1 - e^2)} \, \cos i,
+$$
+where $a_J = 5.20$ AU is Jupiter's semimajor axis.
+A body sharing Jupiter's orbit ($a = a_J$, $e = 0$, $i = 0$) gives $T_J = 1 + 2 = 3$ exactly, and any small perturbation that preserves $T_J$ leaves the body in roughly the same dynamical class.
+The empirical classification follows directly: $T_J > 3$ corresponds to main-belt asteroids decoupled from Jupiter, $2 < T_J < 3$ to Jupiter-family comets that can scatter off Jupiter without escaping, and $T_J < 2$ to long-period (Oort cloud) and dynamically new comets, including retrograde orbits.
+Worked examples make the partition concrete: Ceres has $T_J \approx 3.3$ (main belt), 67P/Churyumov-Gerasimenko has $T_J \approx 2.7$ (JFC), and 1P/Halley has $T_J \approx -0.6$ (long-period, retrograde, Oort-cloud-derived).
+Because $T_J$ is conserved across close encounters with Jupiter while $a$, $e$, and $i$ individually are not, it is a much more reliable classifier than any single orbital element.
+
 The Jupiter-family comets are dynamically descended from the trans-Neptunian scattered disk: numerical simulations show that scattered-disk objects, perturbed inward by Neptune, drift through the outer solar system and are progressively captured by closer-in giant planets until they end up in Jupiter-controlled orbits {cite:p}`Levison1997,Volk2008`.
 Most JFCs are short-lived in their current orbits ($\sim 10^4$-$10^5$ yr) before further dynamical evolution removes them, either by ejection or by collision.
 

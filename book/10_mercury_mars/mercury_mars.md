@@ -31,6 +31,14 @@ Mercury rotates once every $58.65$ Earth days and orbits the Sun once every $87.
 
 The explanation was worked out by Peale and others in the 1960s and 1970s and brought to its modern form by {cite:t}`CorreiaLaskar2004`. Tidal torques try to drag the planet's spin into synchronisation with its orbital motion, but the eccentricity matters. At perihelion the planet moves much faster along its orbit than near aphelion, and the tidal torque acting on a slightly elongated body is strongest there. For a planet with a permanent quadrupole moment (a small "bulge" along its long axis) and an eccentricity comparable to Mercury's, the lowest-energy stable state is not $1:1$ but $3:2$: the planet rotates such that, every other perihelion passage, the same bulge points toward the Sun. {cite:t}`CorreiaLaskar2004` showed that capture into the $3:2$ state is the most likely outcome of Mercury's chaotic orbital evolution under perturbations from the other planets, with a probability of order $50\%$, against $\sim 25\%$ for $2:1$ and only a few percent for $1:1$.
 
+A short physical argument shows where the discrete ladder of allowed resonances comes from. Let $n_{\mathrm{spin}}$ and $n_{\mathrm{orb}}$ be the spin and mean-orbital angular frequencies. The torque on the permanent quadrupole averaged over one orbit involves an integrand of the form $\sin\!\left[2(\theta - n_{\mathrm{spin}}\,t)\right]$, where $\theta(t)$ is the true anomaly. Expanding the orbital motion in Fourier components in the eccentricity, one finds that the time-averaged torque is non-zero only when the spin rate matches a half-integer multiple of the mean motion:
+
+$$
+\frac{n_{\mathrm{spin}}}{n_{\mathrm{orb}}} \;=\; 1 + \frac{p}{2}\, , \qquad p \in \mathbb{Z}\, .
+$$ (eq:spin-orbit-ladder)
+
+The only commensurabilities at which a permanent torque can lock the spin are therefore $1{:}1$ ($p=0$), $3{:}2$ ($p=1$), $2{:}1$ ($p=2$), and so on. Which one Mercury actually settles into is set by the *strength* of each resonance, weighted by the corresponding eccentricity-dependent Hansen coefficient. For the $1{:}1$ state the strength scales as a constant, while for $3{:}2$ it scales roughly as $e$ and for $2{:}1$ as $e^2$. With $e = 0.206$, the $3{:}2$ resonance is wide enough that capture probability dominates the others, and dissipation can no longer drag the spin all the way down to $1{:}1$ {cite:p}`CorreiaLaskar2004`.
+
 A consequence is that a *solar day* on Mercury, the time from one local noon to the next, lasts $\sim 176$ Earth days, twice as long as the orbital year. Two specific longitudes ($0^\circ$ and $180^\circ$) are at perihelion at noon on alternate Mercurian years; these are the **hot poles**, where peak surface temperatures reach $\sim 700$ K. Two longitudes offset by $90^\circ$ are at perihelion at midnight; these "warm poles" reach a peak of only $\sim 570$ K. The thermal contrast between hot and warm poles, established by these geometric facts, leaves a signature in surface temperature, exospheric sodium emission, and (we suspect) the distribution of subsurface volatiles.
 
 ```{figure} figures/margot2007_libration.avif
@@ -100,7 +108,7 @@ The honest summary is that we know Mercury is iron-rich, we have several plausib
 
 ### A weak, offset dynamo
 
-Mercury's magnetic field is unique among solar system bodies in two ways. First, it is dipole-dominated, axisymmetric, and aligned with the rotation axis to within $\sim 1^\circ$, but the dipole is *offset* from the geometric centre by $479 \pm 6\ \mathrm{km}$ northward {cite:p}`Anderson2012`. That is roughly $20\%$ of the planetary radius, an asymmetry far larger than seen for any other planet. Second, the field is much weaker than the dynamo scaling laws of {ref}`lecture04` would naively predict: the surface dipole strength is only $\sim 200\ \mathrm{nT}$ at the magnetic equator, about $1\%$ of Earth's value.
+Mercury's magnetic field is unique among solar system bodies in two ways. First, it is dipole-dominated, axisymmetric, and aligned with the rotation axis to within $\sim 1^\circ$, but the dipole is *offset* from the geometric centre by $479 \pm 6\ \mathrm{km}$ northward {cite:p}`Anderson2012`. That is roughly $20\%$ of the planetary radius, an asymmetry far larger than seen for any other planet. Second, the field is much weaker than a naive extrapolation of the magnetic Reynolds number criterion from {ref}`lecture04` (which only tells us a dynamo *can* operate, not how strong its surface field will be) would suggest: the surface dipole strength is only $\sim 200\ \mathrm{nT}$ at the magnetic equator, about $1\%$ of Earth's value.
 
 ```{figure} figures/wicht_offset_dipole.avif
 :name: fig:wicht-offset
@@ -252,6 +260,14 @@ Detection of core-reflected $S$ waves ($ScS$) in InSight marsquake recordings. S
 
 By the summer of 2021, the InSight team had announced three landmark results, all published together in *Science* {cite:p}`Stahler2021,Khan2021,Knapmeyer-Endrun2021`. {cite:t}`Stahler2021` used $ScS$ phases (shear waves reflected off the core-mantle boundary) from several large quakes to measure the core radius directly: $1830 \pm 40\ \mathrm{km}$, considerably *larger* than most pre-InSight thermal-evolution models had predicted, and corresponding to about $54\%$ of the planet's radius. The fact that $ScS$ waves are detected means the outer core is liquid; if the entire core were solid, these waves would propagate freely across the boundary and the strong reflection signature would be absent. The measurement implies a mean core density of $5.7$ to $6.3\ \mathrm{g\ cm^{-3}}$, well below pure iron, requiring a significant complement of light elements (sulfur, oxygen, carbon, hydrogen) dissolved in the iron core.
 
+The geometry behind that measurement is worth a sketch. A liquid outer core supports compressional ($P$) waves but not shear ($S$) waves, so an $S$ ray that strikes the core-mantle boundary is fully reflected, while $P$ rays penetrate. For a quake at the surface and a seismic station on the same surface, the largest epicentral angle $\Delta_{\max}$ at which a direct $S$ wave can still travel through the mantle without entering the core is set by a chord that just grazes a sphere of radius $r_{\mathrm{core}}$ inside a planet of radius $R$. The perpendicular distance from the planet's centre to that chord is $R\cos(\Delta_{\max}/2)$, so in the straight-ray limit (mantle refraction shifts the result by a few degrees but does not change the structure),
+
+$$
+\cos\!\left(\frac{\Delta_{\max}}{2}\right) \;=\; \frac{r_{\mathrm{core}}}{R}\, .
+$$ (eq:core-shadow)
+
+Beyond $\Delta_{\max}$ a direct $S$ wave is geometrically intercepted by the core and only the reflected $ScS$ branch can reach the receiver. Plugging in $r_{\mathrm{core}} = 1830\ \mathrm{km}$ and $R = 3389\ \mathrm{km}$ gives $r_{\mathrm{core}}/R \approx 0.54$ and $\Delta_{\max} \approx 115^\circ$, so direct $S$ rays from quakes more than about $115^\circ$ away from InSight cannot reach the lander, while $ScS$ reflections are still detectable. {cite:t}`Stahler2021` invert exactly this combination, the timing of $ScS$ arrivals from epicentres inside the direct-$S$ window plus the absence of direct $S$ from quakes outside it, to pin down $r_{\mathrm{core}}$ to the quoted $\pm 40\ \mathrm{km}$ uncertainty. The key point is that the answer follows from spherical geometry plus the liquid-core boundary condition; the numerical precision then comes from how many marsquakes happen to sample both regimes.
+
 ```{figure} figures/stahler2021_mars_structure.avif
 :name: fig:stahler-schematic
 :width: 480px
@@ -283,6 +299,20 @@ Three-dimensional snapshots and equatorial cross-sections of mantle temperature 
 ```
 
 The geodynamic interpretation of these results, developed in detail by {cite:t}`Plesa2022`, is that Mars sits in a stagnant-lid regime: the lithosphere is thick and immobile, mantle convection is sluggish, and heat is escaping primarily by conduction through the lid, with secondary contributions from a long-lived plume beneath Tharsis. The crust is significantly enriched in radioactive heat-producing elements (uranium, thorium, potassium) compared to the bulk silicate Mars, which both heats the crust directly and depletes the mantle of long-term radiogenic energy. This combination of features explains why Mars cooled fast enough that the dynamo died early, but slow enough that some volcanism persisted into the recent past.
+
+A simple diagnostic of where Mars sits in its thermal evolution is the **Urey number**, the ratio of present-day radiogenic heat production in the interior to the total heat flowing out of the surface:
+
+$$
+\mathrm{Ur} \;\equiv\; \frac{H_{\mathrm{rad}}}{Q_{\mathrm{surf}}}\, .
+$$ (eq:urey)
+
+A planet in steady state would have $\mathrm{Ur} = 1$: every joule produced by $^{40}\mathrm{K}$, $^{232}\mathrm{Th}$, $^{235}\mathrm{U}$, and $^{238}\mathrm{U}$ decay would be radiated away through the surface as fast as it is generated. $\mathrm{Ur} > 1$ means the interior is heating up; $\mathrm{Ur} < 1$ means it is drawing on a finite reservoir of stored heat (either residual accretion energy or earlier radiogenic input) and cooling. For Mars the modern radiogenic budget is $H_{\mathrm{rad}} \sim 5 \times 10^{12}\ \mathrm{W}$ for a bulk composition close to chondritic, while the InSight-anchored thermal-evolution models of {cite:t}`Plesa2022` give an integrated surface heat flow of $Q_{\mathrm{surf}} \sim 1.5 \times 10^{13}\ \mathrm{W}$ (corresponding to an average surface flux of $\sim 20\ \mathrm{mW\,m^{-2}}$ over the planet's $1.45 \times 10^{14}\ \mathrm{m^2}$). Plugging in,
+
+$$
+\mathrm{Ur}_{\mathrm{Mars}} \;\sim\; \frac{5 \times 10^{12}}{1.5 \times 10^{13}} \;\approx\; 0.3\, ,
+$$
+
+which is decisively below unity. Mars is currently losing heat about three times faster than radioactive decay deposits it, so the interior is cooling on a secular timescale set by its bulk thermal inertia. This is consistent both with the long-extinct dynamo and with the picture of a single near-stagnant Tharsis plume rather than a vigorous convecting mantle, and it places Mars firmly on the cooling track expected for a small body that finished its main accretion phase very early.
 
 
 ### Mars' geological epochs: Noachian, Hesperian, Amazonian
@@ -320,7 +350,7 @@ Mars' topography, mapped at uniform vertical resolution by MOLA between 1997 and
 
 The second large-scale feature is **Tharsis**, a continent-sized volcanic province covering roughly a quarter of Mars' surface and standing several kilometres above the Martian datum. Tharsis hosts the largest volcanoes in the solar system, including:
 
-- **Olympus Mons**, a shield volcano $\sim 21.9\ \mathrm{km}$ tall (above the surrounding plains, or about $26\ \mathrm{km}$ above the Mars datum) and roughly $600\ \mathrm{km}$ in diameter at its base;
+- **Olympus Mons**, a shield volcano $\sim 21.9\ \mathrm{km}$ tall above the surrounding plains ($\sim 21\ \mathrm{km}$ above the Mars datum) and roughly $600\ \mathrm{km}$ in diameter at its base;
 - The three Tharsis Montes (**Arsia, Pavonis, Ascraeus**), each $\sim 14$--$18\ \mathrm{km}$ tall and aligned along the Tharsis crest;
 - **Alba Mons**, a much lower-relief but enormous volcanic edifice covering several million $\mathrm{km^2}$.
 
