@@ -20,7 +20,7 @@ The blackboard derivation in the middle introduces the Simpson-Nakajima runaway 
 :width: 60%
 :align: center
 
-Schematic accretion histories of {\bf Venus} (top), {\bf Earth} (middle), and Mars (bottom) during the first $\sim$110 Myr of the Solar System.
+Schematic accretion histories of **Venus** (top), **Earth** (middle), and Mars (bottom) during the first $\sim$110 Myr of the Solar System.
 Each panel sketches the buildup from undifferentiated planetesimals through differentiated planetary embryos to the final magma-ocean stage.
 Volatile species ($\mathrm{H_2O}$, $\mathrm{CO_2}$, noble gases) outgas from the interior to form a primary steam-rich atmosphere; their fate during the cooling of the magma ocean determines the long-term volatile inventory of each planet.
 Reproduced from {cite:t}`Lammer2018`.
@@ -283,7 +283,7 @@ This is the most direct, observation-based argument that Venus does not have pla
 :width: 75%
 :align: center
 
-Global topographic maps of {\bf Earth} (top), {\bf Venus} (middle, from Magellan radar altimetry), and the gravity-derived geoid of Venus (bottom), all displayed at the same horizontal resolution and on the same colour scale.
+Global topographic maps of **Earth** (top), **Venus** (middle, from Magellan radar altimetry), and the gravity-derived geoid of Venus (bottom), all displayed at the same horizontal resolution and on the same colour scale.
 Earth's bimodal pattern (deep ocean basins vs. continents) is conspicuously absent on Venus, which shows broad volcanic plains, scattered highlands, and a narrow elevation range.
 Reproduced from {cite:t}`Smrekar2018`.
 ```
@@ -524,7 +524,7 @@ F_{\mathrm{abs}}^{\oplus} = \frac{S_\odot}{4}\, (1 - A) \approx 240\, \mathrm{W/
 $$
 
 Earth is comfortably below the runaway greenhouse limit, by about $40$--$70$ W/m$^2$.
-At the orbit of Venus, the same calculation gives $F_{\mathrm{abs}}^{\venus} \approx 460$ W/m$^2$ (assuming an Earth-like albedo, which is wrong for present Venus but is the relevant comparison for an early ocean-bearing Venus), well above the limit.
+At the orbit of Venus, the same calculation gives $F_{\mathrm{abs}}^{\mathrm{Venus}} \approx 460$ W/m$^2$ (assuming an Earth-like albedo, which is wrong for present Venus but is the relevant comparison for an early ocean-bearing Venus), well above the limit.
 Setting $F_{\mathrm{abs}} = F_{\mathrm{OLR}}^{\max}$ and solving for the orbital distance gives the **inner edge of the classical habitable zone** at roughly $0.95$--$0.99$ AU for present-day solar luminosity {cite:p}`Kasting1993,Kopparapu2013,Goldblatt2013`.
 Venus, at $0.72$ AU, sits well inside the inner edge.
 

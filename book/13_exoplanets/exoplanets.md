@@ -652,12 +652,12 @@ This loneliness is consistent with a violent dynamical history that cleared neig
 Bulk-density measurements (the joint transit-plus-RV combination) have allowed a compositional census of the small-planet population.
 **Super-Earths** below the radius valley generally have densities consistent with rocky compositions, $4$--$8$ g/cm$^3$, similar to Earth and Venus.
 **Sub-Neptunes** above the valley have lower densities, typically $1$--$3$ g/cm$^3$, and require some volatile component on top of a rocky core.
-The volatile component can be either a thick H$_2$/He envelope, a thick H$_2$O layer ("water world"), or some combination.
+The volatile component can be either a thick $\mathrm{H_2}$/He envelope, a thick $\mathrm{H_2O}$ layer ("water world"), or some combination.
 At the bulk-density level alone these scenarios are degenerate: the same density can be matched by a variety of internal structures.
 
-A particularly interesting subclass of sub-Neptunes are those whose density is consistent with **water-rich** compositions, $\gtrsim 10$--$20\%$ H$_2$O by mass, sometimes called water worlds.
-Some authors have proposed that a subset of water-rich sub-Neptunes might host a shallow surface ocean of liquid water under a thick H$_2$-rich atmosphere, the so-called **hycean** scenario {cite:p}`Madhusudhan2023`.
-On a hycean world the high-pressure and low-stellar-flux combination keeps the deep ocean liquid even though the equilibrium temperature is far below 273 K; the H$_2$ atmosphere provides a strong greenhouse effect.
+A particularly interesting subclass of sub-Neptunes are those whose density is consistent with **water-rich** compositions, $\gtrsim 10$--$20\%$ $\mathrm{H_2O}$ by mass, sometimes called water worlds.
+Some authors have proposed that a subset of water-rich sub-Neptunes might host a shallow surface ocean of liquid water under a thick $\mathrm{H_2}$-rich atmosphere, the so-called **hycean** scenario {cite:p}`Madhusudhan2023`.
+On a hycean world the high-pressure and low-stellar-flux combination keeps the deep ocean liquid even though the equilibrium temperature is far below 273 K; the $\mathrm{H_2}$ atmosphere provides a strong greenhouse effect.
 Hycean worlds have been proposed as a new candidate habitable regime, distinct from the classical rocky habitable-zone planet picture.
 The hycean interpretation is contested.
 Other authors argue that the same bulk densities can be matched by mini-Neptunes with no surface, and that the atmospheric chemistry expected for true hyceans differs from what is currently observed in the most-studied target K2-18 b (see Part 3) {cite:p}`Wogan2024,Glein2024`.
@@ -665,7 +665,7 @@ The hycean question is one of the most active arguments in current exoplanet sci
 
 A second compositional ambiguity, also unresolved, applies to small close-in planets in the ultra-short-period regime.
 A planet at a few stellar radii receives so much instellation that distinguishing a thin atmosphere from a bare rock surface is observationally hard.
-The same density and radius can match both a "Venus analogue" (thick CO$_2$ atmosphere, runaway greenhouse) and a stripped bare-rock surface.
+The same density and radius can match both a "Venus analogue" (thick $\mathrm{CO_2}$ atmosphere, runaway greenhouse) and a stripped bare-rock surface.
 Distinguishing them requires spectroscopy, which we discuss in Part 3.
 
 ### M dwarf planets
@@ -716,22 +716,22 @@ The amplitude of the spectral features is roughly $2 R_p H / R_\star^2$, which f
 For a sub-Neptune $H$ is smaller and the signal is at the 10 to 100 ppm level.
 For a rocky terrestrial planet around an M dwarf the signal is below 10 ppm, demanding multi-transit JWST integrations and pushing the noise floor down to its instrumental limit.
 
-The detectable atmospheric species in the optical and near-infrared include sodium, potassium, water vapour, carbon monoxide, carbon dioxide, methane, and a growing list of photochemical and disequilibrium species including SO$_2$, H$_2$S, OCS, and HCN.
+The detectable atmospheric species in the optical and near-infrared include sodium, potassium, water vapour, carbon monoxide, carbon dioxide, methane, and a growing list of photochemical and disequilibrium species including $\mathrm{SO_2}$, $\mathrm{H_2S}$, OCS, and HCN.
 A complication is **clouds and hazes**: high-altitude condensate or photochemical haze layers can mute or completely flatten transmission spectra by acting as a continuum opacity at all wavelengths.
-The strongest evidence that clouds are pervasive in close-in giant atmospheres is the {cite:t}`Sing2016` HST and Spitzer transmission spectral survey of ten hot Jupiters, which arranged the spectra in a continuum from clear (full Na, K, and H$_2$O features) to fully cloudy (featureless), with all intermediate states represented.
+The strongest evidence that clouds are pervasive in close-in giant atmospheres is the {cite:t}`Sing2016` HST and Spitzer transmission spectral survey of ten hot Jupiters, which arranged the spectra in a continuum from clear (full Na, K, and $\mathrm{H_2O}$ features) to fully cloudy (featureless), with all intermediate states represented.
 
 ```{figure} figures/sing_hotjup_spectra.avif
 :name: fig:sing
 :width: 70%
 
-A continuum from clear to cloudy hot Jupiter atmospheres, observed in transmission with HST and Spitzer for ten hot Jupiters and arranged top-to-bottom by decreasing strength of atmospheric features. The clear-atmosphere targets at the top show prominent Na, K, and H$_2$O absorption; the cloudy targets at the bottom show flat featureless transmission spectra. From {cite:t}`Sing2016`. The diversity of cloud cover at otherwise similar planet temperatures and gravities is one of the central puzzles of hot Jupiter atmospheric physics.
+A continuum from clear to cloudy hot Jupiter atmospheres, observed in transmission with HST and Spitzer for ten hot Jupiters and arranged top-to-bottom by decreasing strength of atmospheric features. The clear-atmosphere targets at the top show prominent Na, K, and $\mathrm{H_2O}$ absorption; the cloudy targets at the bottom show flat featureless transmission spectra. From {cite:t}`Sing2016`. The diversity of cloud cover at otherwise similar planet temperatures and gravities is one of the central puzzles of hot Jupiter atmospheric physics.
 ```
 
 ```{figure} figures/gj1214b_clouds.avif
 :name: fig:gj1214
 :width: 80%
 
-Featureless transmission spectrum of the warm sub-Neptune **GJ 1214 b** from {cite:t}`Kreidberg2014`, showing how high-altitude clouds (or hazes) can completely erase atmospheric absorption features even with high-precision HST data. Three model atmospheres (clear H$_2$O, CH$_4$, CO$_2$) are ruled out at high significance. The conclusion is either a high-altitude cloud deck or a high-mean-molecular-weight (water-rich) atmosphere; the two cases are not distinguishable from this measurement alone.
+Featureless transmission spectrum of the warm sub-Neptune **GJ 1214 b** from {cite:t}`Kreidberg2014`, showing how high-altitude clouds (or hazes) can completely erase atmospheric absorption features even with high-precision HST data. Three model atmospheres (clear $\mathrm{H_2O}$, $\mathrm{CH_4}$, $\mathrm{CO_2}$) are ruled out at high significance. The conclusion is either a high-altitude cloud deck or a high-mean-molecular-weight (water-rich) atmosphere; the two cases are not distinguishable from this measurement alone.
 ```
 
 ### Emission spectroscopy and phase curves
@@ -758,36 +758,36 @@ The James Webb Space Telescope began science operations in mid-2022 and has fund
 Below we walk through the most important early results and the active controversies they have generated.
 
 **WASP-39 b** (a $0.28\,\Mjup$ hot Saturn) was the target of the JWST Transiting Exoplanet Early Release Science (ERS) programme.
-NIRSpec PRISM and G395H, NIRCam, and NIRISS observations together produced a transmission spectrum spanning $0.5$--$5.5$ $\mu$m with parts-per-million precision, showing **clean and unambiguous detections** of H$_2$O, CO, CO$_2$, Na, K, and CH$_4$ {cite:p}`Rustamkulov2023,Alderson2023`.
+NIRSpec PRISM and G395H, NIRCam, and NIRISS observations together produced a transmission spectrum spanning $0.5$--$5.5$ $\mu$m with parts-per-million precision, showing **clean and unambiguous detections** of $\mathrm{H_2O}$, CO, $\mathrm{CO_2}$, Na, K, and $\mathrm{CH_4}$ {cite:p}`Rustamkulov2023,Alderson2023`.
 
 ```{figure} figures/wasp39b_prism_spectrum.avif
 :name: fig:wasp39prism
 :width: 90%
 
-The JWST/NIRSpec PRISM transmission spectrum of **WASP-39 b** from {cite:t}`Rustamkulov2023`. The black points are the JWST data and the model spectra are colour-coded to show the contributions of individual molecules: Na, K, H$_2$O, CO, CO$_2$, SO$_2$, CH$_4$, and clouds. The features are detected at extreme statistical significance and demonstrate the capability of JWST to extract species-by-species atmospheric composition for transiting planets.
+The JWST/NIRSpec PRISM transmission spectrum of **WASP-39 b** from {cite:t}`Rustamkulov2023`. The black points are the JWST data and the model spectra are colour-coded to show the contributions of individual molecules: Na, K, $\mathrm{H_2O}$, CO, $\mathrm{CO_2}$, $\mathrm{SO_2}$, $\mathrm{CH_4}$, and clouds. The features are detected at extreme statistical significance and demonstrate the capability of JWST to extract species-by-species atmospheric composition for transiting planets.
 ```
 
-The most striking discovery in the WASP-39 b ERS data was the unambiguous detection of **photochemically produced SO$_2$** {cite:p}`Tsai2023`.
-SO$_2$ is not predicted by any equilibrium chemistry model for a hot Jupiter atmosphere; its abundance in the observed range of $\sim 1$--$10$ ppm requires a non-equilibrium production pathway driven by stellar UV photolysis of H$_2$S, followed by oxidation of the resulting elemental sulphur to SO and then SO$_2$.
-This is the first **unambiguous detection of disequilibrium photochemistry** in any exoplanet atmosphere, and establishes that photochemical models, calibrated against SO$_2$ as a tracer, can be used to extract metallicity and C/O ratios from a wider planet sample.
+The most striking discovery in the WASP-39 b ERS data was the unambiguous detection of **photochemically produced $\mathrm{SO_2}$** {cite:p}`Tsai2023`.
+$\mathrm{SO_2}$ is not predicted by any equilibrium chemistry model for a hot Jupiter atmosphere; its abundance in the observed range of $\sim 1$--$10$ ppm requires a non-equilibrium production pathway driven by stellar UV photolysis of $\mathrm{H_2S}$, followed by oxidation of the resulting elemental sulphur to SO and then $\mathrm{SO_2}$.
+This is the first **unambiguous detection of disequilibrium photochemistry** in any exoplanet atmosphere, and establishes that photochemical models, calibrated against $\mathrm{SO_2}$ as a tracer, can be used to extract metallicity and C/O ratios from a wider planet sample.
 
 ```{figure} figures/wasp39b_so2_spectrum.avif
 :name: fig:wasp39so2
 :width: 90%
 
-Theoretical transmission spectra of WASP-39 b from photochemical models, compared to JWST data, from {cite:t}`Tsai2023`. The four panels show predictions from four independent photochemistry codes (VULCAN, KINETICS, ARGO, ATMO) all incorporating SO$_2$ chemistry. All four models predict pronounced SO$_2$ absorption at $\sim 4\,\mu$m, in agreement with the JWST observation. The detection demonstrates that SO$_2$ is photochemically generated in the WASP-39 b atmosphere from H$_2$S precursors.
+Theoretical transmission spectra of WASP-39 b from photochemical models, compared to JWST data, from {cite:t}`Tsai2023`. The four panels show predictions from four independent photochemistry codes (VULCAN, KINETICS, ARGO, ATMO) all incorporating $\mathrm{SO_2}$ chemistry. All four models predict pronounced $\mathrm{SO_2}$ absorption at $\sim 4\,\mu$m, in agreement with the JWST observation. The detection demonstrates that $\mathrm{SO_2}$ is photochemically generated in the WASP-39 b atmosphere from $\mathrm{H_2S}$ precursors.
 ```
 
 ```{figure} figures/wasp39b_alderson_species.avif
 :name: fig:wasp39species
 :width: 80%
 
-Decomposition of the JWST/NIRSpec G395H transmission spectrum of WASP-39 b into the contributions of individual species, from {cite:t}`Alderson2023`. The four lower panels isolate the H$_2$O, CO, CO$_2$, and SO$_2$ absorption bands separately, each detected at high statistical significance. The CO$_2$ feature alone is detected at $28.5\sigma$, by far the strongest detection of any exoplanet absorption feature to date.
+Decomposition of the JWST/NIRSpec G395H transmission spectrum of WASP-39 b into the contributions of individual species, from {cite:t}`Alderson2023`. The four lower panels isolate the $\mathrm{H_2O}$, CO, $\mathrm{CO_2}$, and $\mathrm{SO_2}$ absorption bands separately, each detected at high statistical significance. The $\mathrm{CO_2}$ feature alone is detected at $28.5\sigma$, by far the strongest detection of any exoplanet absorption feature to date.
 ```
 
 **TRAPPIST-1 b**, the innermost rocky planet of the TRAPPIST-1 system, was the first habitable-zone-adjacent rocky planet observed by JWST in MIRI thermal emission.
 {cite:t}`GreeneTrappist2023` measured the dayside flux at 15 $\mu$m and found it to be consistent with a **bare rock dayside** at the equilibrium temperature, with no evidence for any atmospheric heat redistribution.
-The implication is that TRAPPIST-1 b has either no substantial atmosphere or only a very thin one, ruling out thick CO$_2$ Venus-analogue atmospheres at high statistical significance.
+The implication is that TRAPPIST-1 b has either no substantial atmosphere or only a very thin one, ruling out thick $\mathrm{CO_2}$ Venus-analogue atmospheres at high statistical significance.
 
 ```{figure} figures/trappist1b_eclipse.avif
 :name: fig:trappist1beclipse
@@ -800,11 +800,11 @@ JWST MIRI 15 $\mu$m secondary eclipse light curve of **TRAPPIST-1 b**, from {cit
 :name: fig:trappist1bemiss
 :width: 90%
 
-The TRAPPIST-1 b dayside emission compared with model atmospheres of different compositions, from {cite:t}`GreeneTrappist2023`. The data are inconsistent with thick CO$_2$ + N$_2$ atmospheres and inconsistent with O$_2$ + CO$_2$ atmospheres at any plausible mass-loading. They are consistent with a bare-rock dayside (the 503 K blackbody curve, magenta).
+The TRAPPIST-1 b dayside emission compared with model atmospheres of different compositions, from {cite:t}`GreeneTrappist2023`. The data are inconsistent with thick $\mathrm{CO_2}$ + $\mathrm{N_2}$ atmospheres and inconsistent with $\mathrm{O_2}$ + $\mathrm{CO_2}$ atmospheres at any plausible mass-loading. They are consistent with a bare-rock dayside (the 503 K blackbody curve, magenta).
 ```
 
 **TRAPPIST-1 c**, the second-innermost planet, was observed similarly by {cite:t}`Zieba2023` and shows the same behaviour.
-A thick Venus-like CO$_2$ atmosphere is ruled out for TRAPPIST-1 c as well.
+A thick Venus-like $\mathrm{CO_2}$ atmosphere is ruled out for TRAPPIST-1 c as well.
 The current consensus from these two non-detections is that the inner TRAPPIST-1 planets have either negligible atmospheres or atmospheres so thin that they cannot redistribute heat from the dayside to the nightside.
 A thin atmosphere consistent with the data is not yet ruled out, but a thick atmosphere is.
 
@@ -812,7 +812,7 @@ A thin atmosphere consistent with the data is not yet ruled out, but a thick atm
 :name: fig:trappist1c
 :width: 90%
 
-Grid of model atmospheric compositions for **TRAPPIST-1 c** compared with the measured 15 $\mu$m secondary eclipse depth, from {cite:t}`Zieba2023`. The colour-coded grid shows expected eclipse depths as a function of CO$_2$ partial pressure (rows) and total atmospheric thickness (columns). Models with $\geq 0.1$ bar of CO$_2$ are inconsistent with the data; models with no atmosphere or with very thin atmospheres match. A Venus-analogue thick CO$_2$ atmosphere on TRAPPIST-1 c is ruled out.
+Grid of model atmospheric compositions for **TRAPPIST-1 c** compared with the measured 15 $\mu$m secondary eclipse depth, from {cite:t}`Zieba2023`. The colour-coded grid shows expected eclipse depths as a function of $\mathrm{CO_2}$ partial pressure (rows) and total atmospheric thickness (columns). Models with $\geq 0.1$ bar of $\mathrm{CO_2}$ are inconsistent with the data; models with no atmosphere or with very thin atmospheres match. A Venus-analogue thick $\mathrm{CO_2}$ atmosphere on TRAPPIST-1 c is ruled out.
 ```
 
 A series of additional rocky-planet atmosphere non-detections has accumulated.
@@ -823,12 +823,12 @@ The accumulating pattern across small rocky M dwarf planets is therefore that **
 :name: fig:lhs475
 :width: 90%
 
-JWST/NIRSpec G395H transmission spectrum of the rocky exoplanet **LHS 475 b**, an Earth-size M dwarf planet at $\sim 12$ pc, from {cite:t}`LustigYaeger2023`. The data are flat and featureless. Hydrogen-helium-dominated atmospheres are ruled out at high confidence (top panel). A pure CH$_4$ atmosphere is also ruled out, though a pure CO$_2$ Venus-like atmosphere is marginally consistent (bottom panel). The result is consistent with no detectable atmosphere on LHS 475 b.
+JWST/NIRSpec G395H transmission spectrum of the rocky exoplanet **LHS 475 b**, an Earth-size M dwarf planet at $\sim 12$ pc, from {cite:t}`LustigYaeger2023`. The data are flat and featureless. Hydrogen-helium-dominated atmospheres are ruled out at high confidence (top panel). A pure $\mathrm{CH_4}$ atmosphere is also ruled out, though a pure $\mathrm{CO_2}$ Venus-like atmosphere is marginally consistent (bottom panel). The result is consistent with no detectable atmosphere on LHS 475 b.
 ```
 
 **55 Cancri e** is a hot rocky super-Earth on a 17.7 hour orbit around a Sun-like K star at 12.6 pc.
 The dayside is so hot ($\sim 2000$ K) that the surface is plausibly molten.
-{cite:t}`Hu2024` reported a JWST MIRI thermal emission and phase curve measurement showing a much lower dayside brightness temperature than would be expected from a bare rock surface in equilibrium and a phase curve modulation consistent with the presence of a **secondary CO/CO$_2$-rich atmosphere** outgassed from the molten surface.
+{cite:t}`Hu2024` reported a JWST MIRI thermal emission and phase curve measurement showing a much lower dayside brightness temperature than would be expected from a bare rock surface in equilibrium and a phase curve modulation consistent with the presence of a **secondary CO/$\mathrm{CO_2}$-rich atmosphere** outgassed from the molten surface.
 This is the **first tentative atmospheric detection on a rocky world around a Sun-like star** and is currently being scrutinised by the wider community.
 The interpretation depends on the precise treatment of the data systematics and on whether the atmosphere is genuinely a stable secondary atmosphere or is an episodically replenished one tied to surface volcanism.
 
@@ -836,7 +836,7 @@ The interpretation depends on the precise treatment of the data systematics and 
 :name: fig:55cnce
 :width: 90%
 
-JWST/NIRCam emission spectrum of **55 Cancri e** from {cite:t}`Hu2024`. The spectrum shows features inconsistent with a bare-rock blackbody at the equilibrium temperature; the best-fit retrievals favour an atmosphere with non-negligible CO and CO$_2$. The retrieved volatile mixing ratios are sensitive to the assumed background gas (H$_2$, N$_2$, or other), and the conclusion of a secondary atmosphere is currently tentative but suggestive.
+JWST/NIRCam emission spectrum of **55 Cancri e** from {cite:t}`Hu2024`. The spectrum shows features inconsistent with a bare-rock blackbody at the equilibrium temperature; the best-fit retrievals favour an atmosphere with non-negligible CO and $\mathrm{CO_2}$. The retrieved volatile mixing ratios are sensitive to the assumed background gas ($\mathrm{H_2}$, $\mathrm{N_2}$, or other), and the conclusion of a secondary atmosphere is currently tentative but suggestive.
 ```
 
 **TOI-561 b** is an ultra-short-period rocky planet around a metal-poor thick-disk K star, particularly interesting because the host star formation history is older than the average exoplanet host and the bulk-density measurement places the planet near the rocky end of the small-planet spectrum.
@@ -845,15 +845,15 @@ This is a useful case study in how challenging it is to claim atmospheric detect
 
 **K2-18 b** is the case study that has drawn the most attention, and the most controversy.
 It is a sub-Neptune of $2.6\,\Rearth$ and $8.6\,\Mearth$ in the habitable zone of an M3 host star.
-{cite:t}`Madhusudhan2023` reported a JWST NIRISS plus NIRSpec transmission spectrum showing detections of CH$_4$ and CO$_2$, and a tentative detection of **dimethyl sulphide** ($\mathrm{(CH_3)_2 S}$, DMS) at the $\sim 3\sigma$ level.
+{cite:t}`Madhusudhan2023` reported a JWST NIRISS plus NIRSpec transmission spectrum showing detections of $\mathrm{CH_4}$ and $\mathrm{CO_2}$, and a tentative detection of **dimethyl sulphide** ($\mathrm{(CH_3)_2 S}$, DMS) at the $\sim 3\sigma$ level.
 On Earth, DMS is produced almost exclusively by marine phytoplankton, with no significant abiotic sources known.
-The Madhusudhan et al.\ team interpreted the detection as a tentative biosignature consistent with the **hycean** scenario discussed earlier: a sub-Neptune with a deep H$_2$ atmosphere overlying a planet-wide liquid-water ocean at the base.
+The Madhusudhan et al.\ team interpreted the detection as a tentative biosignature consistent with the **hycean** scenario discussed earlier: a sub-Neptune with a deep $\mathrm{H_2}$ atmosphere overlying a planet-wide liquid-water ocean at the base.
 
 ```{figure} figures/k218b_spectrum.avif
 :name: fig:k218b
 :width: 90%
 
-JWST transmission spectrum of **K2-18 b** from {cite:t}`Madhusudhan2023`, combining NIRISS SOSS and NIRSpec G395H data. The black points are the data and the colour-coded model spectrum shows contributions from CH$_4$, CO$_2$, and tentatively dimethyl sulphide (DMS). The CH$_4$ and CO$_2$ detections are robust; the DMS feature is at the edge of the JWST sensitivity floor and is heavily dependent on the retrieval assumptions. The interpretation is contested.
+JWST transmission spectrum of **K2-18 b** from {cite:t}`Madhusudhan2023`, combining NIRISS SOSS and NIRSpec G395H data. The black points are the data and the colour-coded model spectrum shows contributions from $\mathrm{CH_4}$, $\mathrm{CO_2}$, and tentatively dimethyl sulphide (DMS). The $\mathrm{CH_4}$ and $\mathrm{CO_2}$ detections are robust; the DMS feature is at the edge of the JWST sensitivity floor and is heavily dependent on the retrieval assumptions. The interpretation is contested.
 ```
 
 The community response was swift and largely sceptical.
@@ -878,13 +878,13 @@ Lecture 9 (Earth and Venus) introduced the **classical habitable zone** as the r
 The classical formulation goes back to {cite:t}`Kasting1993`, who used a one-dimensional radiative-convective climate model to identify two boundaries.
 The **inner edge** is set by the **Simpson-Nakajima runaway greenhouse limit**: as the planet warms, the atmospheric water vapour content rises following the Clausius-Clapeyron relation, the outgoing longwave radiation reaches a maximum, and any further increase in absorbed flux drives the planet into a runaway state in which the entire ocean evaporates.
 The numerical value of the limiting outgoing longwave radiation is about $280$--$310$ W/m$^2$, depending on details, and it implies that an Earth-twin climate cannot be sustained at solar fluxes much above $\sim 1.06$ times the Earth value, corresponding to a critical orbital distance of $\sim 0.97$ AU around a Sun-like star (the runaway greenhouse limit; the more conservative moist greenhouse limit lies just inside Earth's orbit at $\sim 0.99$ AU; recap from {ref}`lecture09`).
-The **outer edge** is set by the **maximum CO$_2$ greenhouse**: as a planet at large stellar distance accumulates more CO$_2$ to compensate for the lower flux, eventually the increased atmospheric CO$_2$ starts to condense out as ice clouds and the greenhouse effect saturates, leaving the planet too cold for surface water regardless of the atmospheric inventory.
+The **outer edge** is set by the **maximum $\mathrm{CO_2}$ greenhouse**: as a planet at large stellar distance accumulates more $\mathrm{CO_2}$ to compensate for the lower flux, eventually the increased atmospheric $\mathrm{CO_2}$ starts to condense out as ice clouds and the greenhouse effect saturates, leaving the planet too cold for surface water regardless of the atmospheric inventory.
 
 ```{figure} figures/kopparapu_hz.avif
 :name: fig:kopparapu
 :width: 80%
 
-The **classical habitable zone** as a function of stellar effective temperature and effective stellar flux, from {cite:t}`Kopparapu2013`. The green-shaded region is the habitable zone bounded on the inside by the moist greenhouse limit and on the outside by the maximum CO$_2$ greenhouse limit. Symbols mark known potentially habitable exoplanets including GJ 581 d/g, GJ 667C c, Kepler-22 b, Tau Ceti e/f, and the solar system planets Earth, Venus, and Mars. The "Recent Venus" and "Early Mars" empirical limits are shown by the dotted boundaries.
+The **classical habitable zone** as a function of stellar effective temperature and effective stellar flux, from {cite:t}`Kopparapu2013`. The green-shaded region is the habitable zone bounded on the inside by the moist greenhouse limit and on the outside by the maximum $\mathrm{CO_2}$ greenhouse limit. Symbols mark known potentially habitable exoplanets including GJ 581 d/g, GJ 667C c, Kepler-22 b, Tau Ceti e/f, and the solar system planets Earth, Venus, and Mars. The "Recent Venus" and "Early Mars" empirical limits are shown by the dotted boundaries.
 ```
 
 {cite:t}`Kopparapu2013` updated the classical Kasting calculation with modern radiative transfer and provided habitable-zone boundaries for stars with a wide range of effective temperatures, including M dwarfs.
@@ -906,18 +906,18 @@ The classical habitable zone is therefore best treated as a useful first-order s
 
 If a habitable-zone exoplanet does have a thick enough atmosphere to be characterised, what would constitute a convincing detection of life?
 The classical answer is that life produces **disequilibrium gas combinations** that cannot be sustained without continuous biological replenishment.
-On Earth, the simultaneous presence of substantial O$_2$ ($\sim 21\%$ of the atmosphere) and CH$_4$ ($\sim 1.8$ ppm) is the canonical example: O$_2$ and CH$_4$ react with each other photochemically in a few decades, so their joint presence in the modern atmosphere requires both gases to be replenished by living systems (O$_2$ by oxygenic photosynthesis, CH$_4$ by methanogenesis and biomass-mediated processes).
-On the early Earth, before the Great Oxidation Event around 2.4 Ga, the analogous disequilibrium combination would have been CH$_4$ + N$_2$O or CH$_4$ + CO$_2$ in a low-O$_2$ atmosphere.
+On Earth, the simultaneous presence of substantial $\mathrm{O_2}$ ($\sim 21\%$ of the atmosphere) and $\mathrm{CH_4}$ ($\sim 1.8$ ppm) is the canonical example: $\mathrm{O_2}$ and $\mathrm{CH_4}$ react with each other photochemically in a few decades, so their joint presence in the modern atmosphere requires both gases to be replenished by living systems ($\mathrm{O_2}$ by oxygenic photosynthesis, $\mathrm{CH_4}$ by methanogenesis and biomass-mediated processes).
+On the early Earth, before the Great Oxidation Event around 2.4 Ga, the analogous disequilibrium combination would have been $\mathrm{CH_4}$ + $\mathrm{N_2O}$ or $\mathrm{CH_4}$ + $\mathrm{CO_2}$ in a low-$\mathrm{O_2}$ atmosphere.
 
-The catalogue of "classical biosignature gases" therefore includes O$_2$, O$_3$ (which is photochemically derived from O$_2$ and easier to detect spectroscopically at some wavelengths), CH$_4$, N$_2$O, and a longer list of organosulphur and organohalogen compounds.
+The catalogue of "classical biosignature gases" therefore includes $\mathrm{O_2}$, $\mathrm{O_3}$ (which is photochemically derived from $\mathrm{O_2}$ and easier to detect spectroscopically at some wavelengths), $\mathrm{CH_4}$, $\mathrm{N_2O}$, and a longer list of organosulphur and organohalogen compounds.
 A single gas, in isolation, almost never constitutes a biosignature: the question is whether the combination of detected gases is consistent with any plausible abiotic source.
 
 The big problem with biosignature detection is **false positives**.
-An astonishing number of abiotic processes can produce O$_2$ and O$_3$ in planetary atmospheres without any life involved.
-{cite:t}`Wordsworth2014` showed that water vapour photolysis followed by hydrogen escape can build up substantial abiotic O$_2$ on dry planets, particularly during the early evolution of M dwarf habitable-zone planets.
-CO$_2$ photolysis in a dry CO$_2$-rich atmosphere can produce comparable amounts of O$_2$ via splitting of CO$_2$ into CO and O.
-Both of these abiotic O$_2$ pathways are common consequences of M dwarf XUV history, and they specifically contaminate the most accessible class of habitable-zone targets.
-Methane is also a non-trivial false positive: volcanic outgassing, serpentinisation reactions in hydrothermal systems, and impact-driven shocks can all release abiotic CH$_4$ in measurable quantities (recap from {ref}`lecture10` Mars methane discussion).
+An astonishing number of abiotic processes can produce $\mathrm{O_2}$ and $\mathrm{O_3}$ in planetary atmospheres without any life involved.
+{cite:t}`Wordsworth2014` showed that water vapour photolysis followed by hydrogen escape can build up substantial abiotic $\mathrm{O_2}$ on dry planets, particularly during the early evolution of M dwarf habitable-zone planets.
+$\mathrm{CO_2}$ photolysis in a dry $\mathrm{CO_2}$-rich atmosphere can produce comparable amounts of $\mathrm{O_2}$ via splitting of $\mathrm{CO_2}$ into CO and O.
+Both of these abiotic $\mathrm{O_2}$ pathways are common consequences of M dwarf XUV history, and they specifically contaminate the most accessible class of habitable-zone targets.
+Methane is also a non-trivial false positive: volcanic outgassing, serpentinisation reactions in hydrothermal systems, and impact-driven shocks can all release abiotic $\mathrm{CH_4}$ in measurable quantities (recap from {ref}`lecture10` Mars methane discussion).
 
 The community consensus is that biosignature detection is fundamentally an **inverse problem**: a given combination of gases must be tested against all plausible abiotic explanations, and the biosignature interpretation is only convincing if the abiotic pathways are demonstrably insufficient.
 This is much harder than it sounds, because the catalogue of plausible abiotic pathways is constantly being extended by new theoretical and experimental work.
@@ -982,7 +982,7 @@ HWO is the most ambitious exoplanet mission ever proposed and is the long-term s
 
 **LIFE** (Large Interferometer For Exoplanets) is a European mission concept led by Sascha Quanz and collaborators, currently in study phase {cite:p}`Quanz2022`.
 LIFE is a mid-infrared **nulling interferometer**: four free-flying spacecraft configured as an interferometer in the $4$--$18\,\mu$m range, with the central stellar light suppressed by destructive interference (nulling) so that the much fainter planetary thermal emission can be detected.
-The science goal is complementary to HWO: rather than detecting Earth analogues in reflected starlight, LIFE detects their thermal emission and characterises their atmospheres at the wavelengths where CO$_2$, O$_3$, H$_2$O, CH$_4$, and N$_2$O have their strongest absorption features.
+The science goal is complementary to HWO: rather than detecting Earth analogues in reflected starlight, LIFE detects their thermal emission and characterises their atmospheres at the wavelengths where $\mathrm{CO_2}$, $\mathrm{O_3}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, and $\mathrm{N_2O}$ have their strongest absorption features.
 The mid-infrared regime is particularly well suited to biosignature gas detection because the temperature and absorption-feature contrasts are favourable.
 
 ```{figure} figures/life_yield.avif
@@ -1017,7 +1017,7 @@ The forward question for {ref}`lecture14` is exactly this: how do we move from "
 - **Kepler showed that planets are common.** Most main-sequence stars host at least one planet, and the small-planet population dominates by number. Hot Jupiters occur around only $\sim 1\%$ of Sun-like stars.
 - The **radius valley** at $\sim 1.8\,\Rearth$ is the defining empirical feature of small-planet demographics. It points to atmospheric mass loss (photoevaporation and core-powered) as a universal sculptor of the close-in planet population, and means that many of today's super-Earths are the bare cores of former sub-Neptunes.
 - The **hot Neptune desert**, the **peas-in-a-pod** correlation, and the **TRAPPIST-1** resonant chain are the other three central architectural results that any planet formation theory must explain.
-- **JWST has moved exoplanet atmospheric characterisation from a promise to a routine capability.** WASP-39 b SO$_2$ is the first unambiguous detection of disequilibrium photochemistry. TRAPPIST-1 b/c rule out thick CO$_2$ atmospheres on close-in M dwarf rocky planets. 55 Cancri e and TOI-561 b are tentative detections of secondary atmospheres on rocky planets around Sun-like and metal-poor hosts. K2-18 b is the textbook case study in how biosignature claims are tested and revised.
+- **JWST has moved exoplanet atmospheric characterisation from a promise to a routine capability.** WASP-39 b $\mathrm{SO_2}$ is the first unambiguous detection of disequilibrium photochemistry. TRAPPIST-1 b/c rule out thick $\mathrm{CO_2}$ atmospheres on close-in M dwarf rocky planets. 55 Cancri e and TOI-561 b are tentative detections of secondary atmospheres on rocky planets around Sun-like and metal-poor hosts. K2-18 b is the textbook case study in how biosignature claims are tested and revised.
 - **The solar system is not obviously typical**: it lacks sub-Neptunes, lacks compact inner-system architecture, lacks hot giants, and has wide low-eccentricity outer giants. Whether it is genuinely rare or just lives in an undersampled corner of parameter space is the central observational question of the next decade.
 - **Habitability is a history-dependent trajectory**, not a snapshot line on the HR diagram, and biosignature detection is an inverse problem with unavoidable false-positive challenges.
 - The 2026--2040 mission queue (PLATO, Ariel, Roman, HWO, LIFE, ELTs) will push the field from statistical demography to individual characterisation of potentially habitable worlds. The forward question of what constitutes convincing life detection is taken up in {ref}`lecture14`.
