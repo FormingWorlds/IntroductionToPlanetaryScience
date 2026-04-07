@@ -491,6 +491,7 @@ where $L \approx 2.5 \times 10^6$ J/kg is the latent heat of vaporisation of wat
 Integrating gives the familiar exponential dependence:
 
 $$
+
 p_{\mathrm{sat}}(T) \approx p_{\mathrm{ref}}\, \exp\!\left[ -\frac{L}{R_v}\!\left(\frac{1}{T} - \frac{1}{T_{\mathrm{ref}}}\right) \right]
 $$ (eq:saturation-pressure)
 
@@ -513,6 +514,7 @@ This equation says: the photosphere occurs at the level where the saturation vap
 Solving Eq. {eq}`eq:photosphere-pressure` for $T_{\mathrm{phot}}$ via Clausius-Clapeyron:
 
 $$
+
 T_{\mathrm{phot}} \approx \frac{L/R_v}{\ln(p_{\mathrm{ref}} \kappa / g) + L/(R_v T_{\mathrm{ref}})}
 $$ (eq:photosphere-temperature)
 
@@ -534,6 +536,7 @@ As the surface warms, the photosphere just moves to a higher altitude (because t
 Combining Eqs. {eq}`eq:photosphere-temperature` and {eq}`eq:OLR` and plugging in numerical values:
 
 $$
+
 F_{\mathrm{OLR}}^{\max} \approx \sigma\, (260\,\mathrm{K})^4 \approx 260\, \mathrm{W/m^2}
 $$ (eq:simpson-nakajima)
 
