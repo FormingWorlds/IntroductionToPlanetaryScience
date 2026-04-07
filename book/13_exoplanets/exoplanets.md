@@ -486,7 +486,17 @@ Two competing physical mechanisms have been proposed to drive the stripping.
 The first is **photoevaporation** {cite:p}`OwenWu2013`.
 Young stars emit several orders of magnitude more high-energy XUV (ultraviolet and X-ray) flux than mature stars, particularly during the first $\sim 100$ Myr.
 This flux deposits energy in the upper layers of a planet's H/He envelope and drives a thermal hydrodynamic outflow.
-For a close-in sub-Neptune, the integrated mass loss can be enough to strip the entire envelope on a timescale of $\sim 100$ Myr.
+The order-of-magnitude rate is set by **energy-limited escape**: a fraction $\epsilon \sim 0.1$ of the absorbed XUV flux is converted into the gravitational work needed to lift gas out of the planet's potential well, giving
+
+$$
+\dot{M} \approx \frac{\epsilon \, \pi F_\mathrm{XUV} R_p^3}{G M_p}.
+$$
+
+The factor of $R_p^3$ comes from the absorbing cross-section ($\pi R_p^2$) times the inverse of the specific binding energy ($G M_p / R_p$): low-density, low-mass planets are easier to strip than dense, massive ones.
+For a young $10\,\Mearth$ sub-Neptune with $R_p \approx 2.5\,\Rearth$ at $0.1$ AU around a Sun-like star in its saturated XUV phase ($F_\mathrm{XUV} \sim 300$ W m$^{-2}$ at 0.1 AU, several orders of magnitude above the present-day value) and $\epsilon = 0.1$, the energy-limited rate is $\dot{M} \sim 10^{8}$ kg s$^{-1}$.
+Integrated over the $\sim 100$ Myr that the host star spends in the saturated phase, the cumulative mass loss is $\sim 3 \times 10^{23}$ kg, of order a few per cent of an Earth mass and comparable to the typical primordial $\mathrm{H_2}$/He envelope mass on a $10\,\Mearth$ rocky core.
+This is the physical reason why the radius valley sits near $1.8\,\Rearth$: it is the dividing radius below which the early XUV history can plausibly remove the entire primordial envelope and leave a bare rocky core, while planets above the valley retain enough envelope mass to survive.
+For a close-in sub-Neptune, the integrated mass loss can therefore be enough to strip the envelope on a timescale of $\sim 100$ Myr.
 {cite:t}`OwenWu2013` showed numerically that a Kepler-like population of sub-Neptunes evolved through XUV-driven mass loss reproduces the observed bimodality in planet radius.
 
 ```{figure} figures/owen_evaporation_valley.avif
@@ -601,7 +611,17 @@ Two other notable resonant or near-resonant compact systems are **Kepler-90**, w
 We have seen that hot Jupiters are easy to find but rare in occurrence.
 We also said that they cannot have formed in situ at $\sim 0.05$ AU; the temperature there is too high for ice to condense, the disk gas density too low for runaway accretion, and the timescale too short for a giant planet to assemble.
 Hot Jupiters must have formed at several AU and migrated inward.
-There are three competing mechanisms for that migration.
+Whatever the migration mechanism, the inner edge of the surviving population is set by tides: at sufficiently small separations the planet would overflow its Roche lobe and be torn apart.
+The standard fluid Roche limit is
+
+$$
+d_R \approx 2.46\,R_\star \left(\frac{\rho_\star}{\rho_p}\right)^{1/3}.
+$$
+
+For a Sun-like host with mean stellar density $\rho_\star \approx 1.4$ g cm$^{-3}$ and a typical hot Jupiter with $\rho_p \approx 1$ g cm$^{-3}$, this gives $d_R \approx 2.46 \times 1.12 \times R_\star \approx 2.7\,R_\star$, or in physical units about $0.013$ AU.
+The observed pile-up of hot Jupiters at $\sim 0.04$--$0.05$ AU sits a factor of three to four outside this limit, exactly where tidal circularisation timescales become long enough to preserve the orbit over Gyr but disruption is no longer threatened.
+The Roche limit is therefore one of the two physical scales (the other being the host-star tidal dissipation scale) that frame the observed inner edge of the hot-Jupiter distribution and the upper boundary of the hot-Neptune desert discussed above.
+There are three competing mechanisms for the inward migration that delivers planets to this region.
 
 **Disk migration** (Type II) is the smoothest of the three.
 A giant planet embedded in a still-gaseous disk excites density waves in the disk that exert a net torque back on the planet, and the torque drives the planet inward on a timescale set by the local disk viscosity and gas density (recap from {ref}`lecture02`).
@@ -711,9 +731,24 @@ $$
 \delta(\lambda) = \frac{[R_p + n_H H(\lambda)]^2}{R_\star^2},
 $$
 
-where $H = \kB T / (\mu g)$ is the atmospheric scale height, $\mu$ is the mean molecular mass, $g$ is the surface gravity, and $n_H$ is the number of scale heights probed at wavelength $\lambda$ (typically a few).
-The amplitude of the spectral features is roughly $2 R_p H / R_\star^2$, which for a hot Jupiter with $H \sim 500$ km gives $\sim 10^{-3}$ in fractional depth, or about 1000 ppm, easily detectable.
-For a sub-Neptune $H$ is smaller and the signal is at the 10 to 100 ppm level.
+where $H = \kB T / (\mu m_u g)$ is the atmospheric scale height, $\mu$ is the mean molecular weight in atomic mass units, $m_u$ is the atomic mass unit, $g$ is the surface gravity, and $n_H$ is the number of scale heights probed at wavelength $\lambda$ (typically a few).
+A short numerical exercise makes the sensitivity scaling concrete.
+For a typical hot Jupiter with dayside-terminator temperature $T \approx 1500$ K, an $\mathrm{H_2}$/He envelope of mean molecular weight $\mu \approx 2.3$, and surface gravity $g \approx 25$ m s$^{-2}$, the scale height is
+
+$$
+H = \frac{\kB T}{\mu m_u g} = \frac{(1.38 \times 10^{-23})(1500)}{(2.3)(1.66 \times 10^{-27})(25)} \approx 2 \times 10^{5}\ \mathrm{m},
+$$
+
+or roughly $200$ km.
+For $R_p \approx 1.2\,\Rjup$ and $R_\star \approx 1\,\Rsun$, the fractional modulation of the transit depth across an $n_H \approx 5$ scale-height absorption line core is
+
+$$
+\frac{\Delta\delta}{\delta} \approx \frac{2 n_H H}{R_p} \approx \frac{2 \times 5 \times 2 \times 10^{5}\ \mathrm{m}}{8.6 \times 10^{7}\ \mathrm{m}} \approx 2 \times 10^{-2},
+$$
+
+so the absolute change in transit depth is $(\Delta\delta / \delta) \times \delta \approx 2 \times 10^{-2} \times 10^{-2} \approx 2 \times 10^{-4}$, of order a few hundred ppm.
+This is exactly the precision regime delivered by JWST NIRSpec, and it explains why hot Jupiters were the first class of exoplanet for which atmospheric characterisation became routine.
+For a sub-Neptune the higher mean molecular weight and lower temperature shrink $H$ by an order of magnitude and push the signal to the 10--100 ppm level.
 For a rocky terrestrial planet around an M dwarf the signal is below 10 ppm, demanding multi-transit JWST integrations and pushing the noise floor down to its instrumental limit.
 
 The detectable atmospheric species in the optical and near-infrared include sodium, potassium, water vapour, carbon monoxide, carbon dioxide, methane, and a growing list of photochemical and disequilibrium species including $\mathrm{SO_2}$, $\mathrm{H_2S}$, OCS, and HCN.

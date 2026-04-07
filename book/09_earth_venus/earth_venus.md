@@ -376,7 +376,16 @@ Trace gases include $\mathrm{SO_2}$ at $\sim$150 ppm, water vapour at $\sim$30 p
 The high noble gas content (especially primordial $^{36}$Ar) is one of the stronger arguments that Venus retained more of its primordial atmosphere than Earth did, which fits with the idea that Venus has had less efficient atmospheric loss to space at modern times.
 
 The thermal profile is roughly adiabatic from the surface ($T_s = 735$ K, $P_s = 92$ bar) up to about $65$ km altitude, where the cloud tops sit and the troposphere meets the stratosphere.
-The atmospheric scale height at the surface is about $16$ km, much larger than Earth's $\sim$8 km, mainly because the surface temperature is so much higher (gas molecules are more energetic), in spite of the larger mean molecular weight of $\mathrm{CO_2}$ ($M = 44$ g/mol vs $\sim 29$ g/mol for air); the scale height $H = k_B T / (m g)$ is a competition between these factors, and the temperature wins.
+The atmospheric scale height at the surface is about $16$ km, much larger than Earth's $\sim$8 km, mainly because the surface temperature is so much higher (gas molecules are more energetic), in spite of the larger mean molecular weight of $\mathrm{CO_2}$ ($M = 44$ g/mol vs $\sim 29$ g/mol for air); the scale height is a competition between these factors, and the temperature wins.
+We can verify the Venus number directly from the hydrostatic scale height derived in {ref}`lecture05`:
+
+$$
+H = \frac{\kB T}{m\, g}.
+$$
+
+Plugging in $T = 735$ K, $m = 44 \times 1.66 \times 10^{-27}$ kg $= 7.30 \times 10^{-26}$ kg for $\mathrm{CO_2}$, and $g = 8.87$ m/s$^2$ gives $H \approx 1.57 \times 10^4$ m, or $\sim 16$ km.
+The same formula applied to Earth's near-surface air ($T = 288$ K, $m = 4.81 \times 10^{-26}$ kg for a mean molecular weight of $29$, $g = 9.81$ m/s$^2$) gives $H \approx 8.4$ km.
+The factor-of-two contrast between the two planets is set almost entirely by the temperature ratio $T_{\mathrm{Venus}} / T_{\mathrm{Earth}} \approx 2.55$, partly offset by the heavier molecule and the slightly weaker Venusian gravity.
 Above the cloud tops the temperature drops with altitude through the mesosphere, then rises again in the thermosphere where solar EUV is absorbed.
 
 The cloud system is one of the most distinctive features of Venus.
@@ -397,6 +406,23 @@ The blackboard derivation in the next subsection makes the argument quantitative
 
 A planet with surface water and an atmospheric absorber (water vapour itself, in the simplest case) has a feedback loop: warming raises the water vapour concentration via the Clausius-Clapeyron relation, which strengthens the greenhouse effect, which warms the surface further, and so on.
 On modern Earth, this feedback is bounded because the troposphere only carries water vapour up to a saturation profile that decreases with altitude, and the outgoing longwave radiation (OLR) that escapes to space rises with surface temperature roughly fast enough to balance increasing absorbed solar flux.
+
+It is worth pausing to ask whether a textbook one-layer grey greenhouse, of the kind we built in {ref}`lecture05`, can already explain the Venus surface temperature.
+In that model the surface is in radiative balance with a single optically thick atmospheric layer, which gives the well-known result
+
+$$
+T_s^4 = 2\, T_{\mathrm{eq}}^4,
+\qquad
+T_{\mathrm{eq}} = \left[ \frac{S\, (1-A)}{4\, \sigma} \right]^{1/4},
+$$
+
+so that $T_s = 2^{1/4}\, T_{\mathrm{eq}} \approx 1.19\, T_{\mathrm{eq}}$.
+For Earth, $S_\oplus = 1361$ W/m$^2$ and $A = 0.30$ give $T_{\mathrm{eq}} \approx 255$ K and $T_s \approx 303$ K, within $\sim 15$ K of the observed $288$ K.
+For Venus, $S_{\mathrm{Venus}} = 2614$ W/m$^2$ but the present cloud albedo is $A \approx 0.77$, so $T_{\mathrm{eq}} \approx 227$ K and the one-layer model predicts only $T_s \approx 270$ K.
+The observed surface temperature is $735$ K, almost $500$ K hotter than the simple model allows.
+The one-layer picture fails by hundreds of kelvin, and the failure is not a small correction: it tells us that Venus is not on the same equilibrium branch as Earth, and that we need a different kind of solution, in which the atmosphere is dense enough that the IR photosphere lifts far above the surface.
+That is the runaway-greenhouse branch, and the next derivation makes the threshold quantitative.
+
 But the bound is not infinite.
 There is a maximum OLR that a water-rich atmosphere can radiate to space, set by the saturation vapour pressure of water at the temperature of the IR-photosphere; if the absorbed solar flux exceeds this limit, no surface temperature can balance the radiation budget, the ocean evaporates entirely, and the planet enters a **runaway greenhouse** state.
 This maximum OLR is the **Simpson-Nakajima limit**.
@@ -710,7 +736,17 @@ Subsequent ground-based and orbiter spectroscopy refined the Venusian value upwa
 The physical reason is straightforward.
 In hydrodynamic escape (or any escape mechanism in which the energy per particle is comparable to the escape energy), the lighter isotope escapes more efficiently than the heavier one, because the lighter molecules acquire higher thermal velocities for a given temperature.
 In the limit of efficient mass fractionation, the residual water in the planet becomes progressively enriched in deuterium relative to its initial isotopic composition.
-The exact relationship between the present-day D/H enrichment and the original water inventory depends on the escape mechanism, the integration time, and the rate at which fresh deuterium-rich water might have been added by cometary impact, but **all such models require the original Venusian water inventory to have been at least $\sim$100 times the present value**, equivalent to a global ocean of at least a few metres depth.
+The textbook description is **Rayleigh distillation** {cite:p}`Hunten1987`: if $f$ is the fraction of the original hydrogen reservoir still left, and $\alpha < 1$ is the fractionation factor (the ratio of deuterium to hydrogen escape efficiencies), then the present isotopic ratio $R$ relative to the initial ratio $R_0$ obeys
+
+$$
+\frac{R}{R_0} = f^{(\alpha - 1)}.
+$$
+
+For diffusion-limited Jeans escape, the maximum mass fractionation gives $\alpha \approx \sqrt{m_{\mathrm{H}}/m_{\mathrm{D}}} \approx 0.5$.
+Setting $R/R_0 = 150$ and solving, $f = 150^{1/(\alpha - 1)} = 150^{-2} \approx 4 \times 10^{-5}$, so the present hydrogen reservoir is roughly $1/25{,}000$ of the original.
+Multiplying the present water column ($\sim 2$ cm of global equivalent layer in the lower atmosphere) by $1/f$ gives an original water inventory of order several hundred metres of global equivalent depth, comparable to a shallow Earth ocean.
+This is a *lower bound* on the initial reservoir: hydrodynamic escape with the deuterium-hydrogen crossover effect has $\alpha$ closer to unity, which would require an even larger initial water inventory to produce the same enrichment.
+The exact number also depends on the integration time and on the rate at which fresh deuterium-rich water might have been added by cometary impact, but **all such models require the original Venusian water inventory to have been at least $\sim$100 times the present value**, equivalent to a global ocean of at least a few metres depth.
 
 This is the strongest direct observational constraint we have that Venus has lost most of its primordial water to space.
 What it does not tell us is when the loss happened: hydrogen escape rates change over time as the EUV flux of the Sun decreases, and the integrated escape history can equally well be early (during a magma-ocean phase) or distributed over billions of years.
