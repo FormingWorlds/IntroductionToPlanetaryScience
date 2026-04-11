@@ -607,12 +607,12 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 6 | Atmospheres II | Verified | High |
 | 7 | Planetary surfaces | Verified | High |
 | 8 | Planetary interiors | Verified | High |
-| 9 | Rocky planets: Earth & Venus | Outline drafted | Medium |
-| 10 | Rocky planets: Mercury & Mars | Outline drafted | Medium |
-| 11 | Gas & ice giants | Draft + figures cleaned (8 arxiv scientific figures + 32 NASA mission images) | Medium |
-| 12 | Meteorites, asteroids, minor planets & comets | Outline drafted | Medium |
-| 13 | Exoplanets | Outline drafted | Medium |
-| 14 | Synthesis & astrobiology | Draft + figures cleaned (27 arxiv-sourced figures, max 2 per source) | Low |
+| 9 | Rocky planets: Earth & Venus | Draft reviewed (3-tier fix arc, 30 figures, Simpson-Nakajima derivation) | Medium |
+| 10 | Rocky planets: Mercury & Mars | Draft reviewed (3-tier fix arc, 31 figures, Jeans escape derivation) | Medium |
+| 11 | Gas & ice giants | Draft reviewed (3-tier fix arc, 40 figures, Roche-limit derivation) | Medium |
+| 12 | Meteorites, asteroids, minor planets & comets | Draft reviewed (3-tier fix arc, 48 figures, Pb-Pb dating derivation) | Medium |
+| 13 | Exoplanets | Draft reviewed (3-tier fix arc, 42 figures, transit + RV derivations) | Medium |
+| 14 | Synthesis & astrobiology | Draft reviewed (3-tier fix arc, 31 figures, habitable-zone derivation) | Low |
 
 **Priority rationale:** Lectures 1–8 cover foundational topics needed before planet-specific lectures; Lectures 9–13 build on these; Lecture 14 synthesizes the full course.
 
@@ -631,7 +631,7 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | 7 | Planetary surfaces | Draft complete | High |
 | 8 | Planetary interiors | Draft complete | High |
 | 9 | Rocky planets: Earth & Venus | Not started | Medium |
-| 10 | Rocky planets: Mercury & Mars | Notes draft + figure cleanup pass | Medium |
+| 10 | Rocky planets: Mercury & Mars | Not started | Medium |
 | 11 | Gas & ice giants | Not started | Medium |
 | 12 | Meteorites, asteroids, minor planets & comets | Not started | Medium |
 | 13 | Exoplanets | Not started | Medium |
@@ -723,14 +723,154 @@ The previous iteration (12 lectures, 9 tutorials) provides a foundation to draw 
    - Plots of observational data (e.g., planetary demographics, atmospheric profiles)
    - Conceptual illustrations (e.g., orbital resonances, heat transport mechanisms)
 3. **Phase 1c — Lecture notes verification (Lectures 1–8):** ✅ Complete. Double check consistency of all notes and pedagogic approach. Deeply verify the scientific validity of all content, in particular of all derivations and equations, facts and values of any parameters, constants, and calculations. Double check all figures, and ensure all derivations are clear and correct before moving on to slides. Validate that the lecture notes are self-contained and can be understood without external references, as they will be the primary resource for students. Verify all references and citations for accuracy and relevance. Ensure all BibTeX entries use Chicago author-date format (custom pybtex style in `src/ips_styles/chicago.py`), include DOIs where available, and link to open-access sources (NASA ADS preferred, then arXiv, then publisher open access).
-4. **Phase 2a — Lecture slides (Lectures 1–8):** 🔄 In progress (L1–L8 first drafts complete; needs review and refinement). PDF slide decks from LaTeX, covering the same content as the Jupyter Book notes for classroom delivery. The slide decks should be visually engaging and include key figures from the lecture notes, but distilled into a presentation format suitable for teaching. Each slide deck should be consistent in style and formatting across lectures. The slides should cover a lecture of about 90 minutes, with a mix of text, equations, and figures to effectively communicate the material. The slide decks should be designed to complement the lecture notes, not duplicate them, and should focus on the key concepts and takeaways for each lecture.
+4. **Phase 2a — Lecture slides (Lectures 1–8):** ✅ Complete (L1–L8 draft + three-pass review applied; 60+ frames per deck; all SVG/AVIF conversion pipeline working). PDF slide decks from LaTeX, covering the same content as the Jupyter Book notes for classroom delivery. The slide decks should be visually engaging and include key figures from the lecture notes, but distilled into a presentation format suitable for teaching. Each slide deck should be consistent in style and formatting across lectures. The slides should cover a lecture of about 90 minutes, with a mix of text, equations, and figures to effectively communicate the material. The slide decks should be designed to complement the lecture notes, not duplicate them, and should focus on the key concepts and takeaways for each lecture.
 5. **Phase 3 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7.
-6. **Phase 4a — Lecture notes (Lectures 9–14):** Planet-specific, exoplanets, and synthesis lectures.
-7. **Phase 4b — Lecture notes images (Lectures 9–14):** Find and create figures and diagrams for the first 8 lectures, which are needed to complete the lecture notes and ensure they are visually informative. We want to end up with about 10–15 figures per lecture, including:
-   - Diagrams of planetary interiors, atmospheres, and surfaces; physical and chemical processes; and comparative planetology schematics
-   - Plots of observational data (e.g., planetary demographics, atmospheric profiles)
-   - Conceptual illustrations (e.g., orbital resonances, heat transport mechanisms)
-8. **Phase 4c — Lecture notes verification (Lectures 9–14):** Double check consistency of all notes and pedagogic approach. Deeply verify the scientific validity of all content, in particular of all derivations and equations, facts and values of any parameters, constants, and calculations. Double check all figures, and ensure all derivations are clear and correct before moving on to slides. Validate that the lecture notes are self-contained and can be understood without external references, as they will be the primary resource for students. Verify all references and citations for accuracy and relevance. Ensure all BibTeX entries use Chicago author-date format, include DOIs, and link to open-access sources (NASA ADS preferred).
+6. **Phase 4a — Lecture notes (Lectures 9–14):** ✅ Complete. Full prose drafts for all six lectures (~88,600 words aggregate), each with a blackboard derivation (Simpson-Nakajima, Jeans escape, Roche limit, Pb-Pb dating, transit/RV, habitable zone). Three-part descriptive-first / comparative-payoff layout (Part 1 object description, Part 2 dynamics or mechanisms, Part 3 comparative synthesis), inverted for L14 because it is the synthesis lecture.
+7. **Phase 4b — Lecture notes images (Lectures 9–14):** ✅ Complete. 222 figures across L9–L14 (30 / 31 / 40 / 48 / 42 / 31), sourced from arXiv tarballs and NASA/ESA mission imagery, capped at two figures per source paper (mission imagery exempt). All AVIF, all referenced in `{figure}` directives with self-contained captions.
+8. **Phase 4c — Lecture notes verification (Lectures 9–14):** 🔄 In progress. Three-tier adversarial review arc complete for all six lectures (mechanical rendering fixes in commit `8334c4e`, substantive equation/attribution fixes in `6acaa0a`, LOW polish + BibTeX hygiene in `d221b48`), plus display-math blank-line pass in `e39d58a`. Aggregate: 384 BibTeX entries, 351 unique citations resolving cleanly, zero em-dashes in prose, L9 Simpson-Nakajima and L10 Jeans escape blackboard derivations algebraically re-verified. A second independent verification pass (two parallel sub-agents, 2026-04-11) on L9 and L10 has surfaced 39 additional findings (13 HIGH, 17 MED, 9 LOW) concentrated in figure caption/image mismatches, figure cropping defects, and one Rayleigh-distillation arithmetic error in the L9 Venus D/H section (this error is outside the blackboard derivation itself, which remains clean). Full action-item list and three pending user decisions documented below in "Open Issues — L9/L10 Second-Pass Review Pending Fixes". L11–L14 have not yet had a second independent pass. Deferred small cleanup batch from the first review arc documented in `notes_status.md` memory.
 9. **Phase 5 — Lecture slides (Lectures 9–14):** PDF slide decks from LaTeX for these remaining lecture notes, covering the same content as the Jupyter Book notes for classroom delivery. The slide decks should be visually engaging and include key figures from the lecture notes, but distilled into a presentation format suitable for teaching. Each slide deck should be consistent in style and formatting across lectures. The slides should cover a lecture of about 90 minutes, with a mix of text, equations, and figures to effectively communicate the material. The slide decks should be designed to complement the lecture notes, not duplicate them, and should focus on the key concepts and takeaways for each lecture.
 10. **Phase 6 — Homework sheets 5–7 + final exam:** Remaining homework and cumulative final exam.
 11. **Phase 7 — Review and polish:** Cross-referencing between lectures, consistency check, equation sheet compilation.
+
+---
+
+## 6. Open Issues — L9/L10 Second-Pass Review Pending Fixes
+
+Date opened: **2026-04-11**. Source: two independent verification sub-agents run in parallel, one per lecture, with broad scope (figures, captions, citations, equations, derivations, internal consistency). Scope of this subsection is L9 (Earth & Venus) and L10 (Mercury & Mars) only. L11–L14 have not yet had a second independent pass. No fixes have been applied yet — this is a parked action list, to be picked up in a future session.
+
+Totals: **L9 = 19 issues (7 HIGH, 8 MED, 4 LOW). L10 = 20 issues (6 HIGH, 9 MED, 5 LOW). Combined = 39.**
+
+Both blackboard derivations (L9 Simpson-Nakajima, L10 Jeans escape) were re-verified algebraically and are clean. The one numerical error surfaced in L9 is **not** in the blackboard derivation but in a separate Rayleigh distillation calculation in the Venus D/H section (lines 743–748).
+
+### 6.1 Pending user decisions (three)
+
+Before starting edits, three choices need to be made. They are not mechanical.
+
+1. **L9 Rayleigh distillation fractionation factor (lines 743–748).** The text reads "α ≈ √(m_H/m_D) ≈ 0.5" and then derives f = 150^(-2) ≈ 4×10⁻⁵, implying an initial Venus water inventory of "several hundred metres global equivalent". But √(1/2) = 0.707, not 0.5, so the equation and the number are mutually inconsistent. There are two physically defensible fixes:
+   - **Option A — drop the square root.** Treat α as the mass ratio m_H/m_D ≈ 0.5 directly (not its square root). Keeps the current f ≈ 4×10⁻⁵ and the "several hundred metres" conclusion. This corresponds to a diffusion-limited fractionation regime with equal escape probabilities per mass.
+   - **Option B — keep the square root and recompute.** α = √(m_H/m_D) ≈ 0.71, then f = 150^(1/(α−1)) = 150^(-3.45) ≈ 2×10⁻⁸. This implies an even stronger depletion and therefore a larger initial water inventory (pushing into kilometre-equivalent). This corresponds to the Jeans-escape fractionation regime.
+   - A third option is to be explicit that both regimes exist, show both numbers, and let students see the regime-dependent uncertainty. This is pedagogically clean but changes the lecture's single-answer framing.
+   - **Decision required** because the two options give different conclusions about early Venus water delivery.
+
+2. **Batch scope for the fix commits.** Three options:
+   - (a) One feature branch `tl/l9-l10-second-review-fixes`, single bundled commit at the end.
+   - (b) Same branch, two commits: figures+BibTeX in one, text+equations in the other.
+   - (c) Same branch, one commit per fix-type group (A through F below). Cleanest history, more commits.
+
+3. **Group G caption verification**: do we open the original Wicht 2007 / Margot 2007,2012 / Bibring 2006 / Wordsworth 2016 / Smrekar 2018 / Marty 2012 / Bekaert 2020 PDFs from ADS/arXiv and adjudicate the ambiguous caption claims directly, or batch-flag them for Tim to eyeball instead?
+
+### 6.2 Action items grouped by fix type
+
+**Group A — Figures to re-extract from source papers at full resolution and correct crop (~7 figures).**
+
+These need going back to the arXiv tarball or publisher HTML and re-extracting. Simple re-cropping of the current AVIF will not work because content is missing.
+
+| ID | Lecture fig | Global fig | Current file | Source paper | What is missing |
+|---|---|---|---|---|---|
+| A1 | L9 #6 | 66 | `lyons2014_oxygen_history.avif` | Lyons, Reinhard & Planavsky 2014, Nature 506, 307 (doi:10.1038/nature13068), Fig. 1 | File is only 567×312 px. Only left panel present and clipped; the Great Oxidation Event rise at 2.4 Ga barely visible; right panel (Phanerozoic) absent. Re-extract both panels at full width. |
+| A2 | L9 #8 | 68 | `smrekar2018_earth_venus_topography.avif` | Smrekar, Davaille & Sotin 2018, Space Sci Rev 214:88, Fig. 2 | Bottom panel (Venus geoid) clipped: x-axis label missing, left y-axis partially truncated, colourbar numerics cut, "(a)" label cut. Re-extract at full height with all three maps (Earth topo, Venus topo, Venus geoid) fully visible. |
+| A3 | L9 #11 | 71 | `goldblatt2013_runaway_panels.avif` | Goldblatt, Robinson, Zahnle & Crisp 2013, Nature Geoscience 6, 661 | **Current image is mis-attributed**: it is actually Kopparapu et al. 2013's Fig. 3/4 (the "Runaway Greenhouse S_eff = 1.06, IHZ = 0.97 AU" label is visible in the image). It is also a lower-resolution duplicate of L9 #14 (`kopparapu2013_inner_HZ.avif`, 3678×2699 px). Replace with a genuine Goldblatt 2013 figure — preferably their Fig. 1 or Fig. 2 showing OLR vs surface temperature with the 282 W/m² asymptote clearly labelled — so the "282 W/m²" claim in the caption has a figure to anchor it. Keep L9 #14 (Kopparapu) unchanged. |
+| A4 | L9 #16 | 76 | `hamano2013_two_types.avif` | Hamano, Abe & Genda 2013, Nature 497, 607, Fig. 3 | Bottom x-axis label partially clipped; "Maximum (for type I)" label clipped at the top; image x-axis shows "net stellar radiation (W/m²)" only, but caption describes x-axis as "orbital semimajor axis". Re-extract at full height showing both axes (radiation *and* equivalent orbital distance) and rewrite caption to match. |
+| A5 | L9 #17 | 77 | `hamano2013_typeI_evolution.avif` | Hamano, Abe & Genda 2013, Nature 497, 607, Fig. 2 | Right-hand y-axis "Final size of water re…" truncated mid-word; right edge of plot frame clipped. Image is a single combined plot but caption describes a two-panel figure. Re-extract at full width with both y-axes visible and panels properly separated. |
+| A6 | L9 #18 | 78 | `nikolaou2019_magma_ocean_evolution.avif` | **Replace source**: Lebrun et al. 2013, JGR Planets 118, 1155 (doi:10.1002/jgre.20068) | Current figure is intact and readable, but the citation should change. Lebrun 2013 is the canonical reference for the magma-ocean–atmosphere coupling timescale argument that the surrounding text relies on. Proposed replacement panel: Lebrun 2013 Fig. 5 (coupled T and atmosphere evolution) or Fig. 9 (magma-ocean lifetime vs orbital distance, ~0.66 AU critical distance for G-stars). Nikolaou 2019 can optionally stay as a supporting citation. Requires new `Lebrun2013` BibTeX entry (see Group F). |
+| A7 | L10 #8 | 98 | `messenger_mla_polar.avif` | Zuber et al. 2012 MESSENGER MLA, *Science* 336, 217 | Only ~upper half of the polar-projection disc is visible; lower half cropped off. The "dark spots" the caption discusses are not all visible. Re-extract full disk with both axes and legible colourbar. |
+
+**Group B — Figures to re-crop locally from the existing AVIF (2 figures).** Source image is acceptable but current framing is wrong.
+
+| ID | Lecture fig | Global fig | File | Fix |
+|---|---|---|---|---|
+| B1 | L9 #12 | 72 | `goldblatt2013_olr_spectrum.avif` | Plot content occupies roughly left-middle third of the frame; large whitespace margins on top, right, bottom; x-axis wavenumber labels may be clipped. Tight re-crop around the plot, preserving axis labels and ticks. |
+| B2 | L9 #29 | 89 | `dauphas2017_earth_accreting_material.avif` | File 1790×276 px (aspect ratio ~6.5:1); five thin PDF panels side-by-side; y-axis labels compressed. Verify against Dauphas 2017 Nature 541, 521 Fig. 3 original aspect and re-extract if the crop is too tight. LOW–MED; content is readable as is. |
+
+**Group C — Caption rewrites (image is fine, caption is wrong) — 11 captions total.**
+
+L9:
+- **C1** Fig #2 `honing2021_carbon_cycle_diagram.avif` (caption "deeper decarbonation depth" → "shallower"). Physics: hotter surface shifts geotherm up, decarbonation isotherm is intersected at smaller depth, less carbon retained in crust, more CO₂ to atmosphere. Image explicitly labels "decarbonation depth *decreases*". Caption has the sign flipped.
+- **C2** Fig #13 `zahnle2007_runaway_threshold.avif` (caption "horizontal asymptote at ~310 W/m²" → "vertical boundary near ~300 W/m² on the x-axis, to the left of which no steady state exists with the surface still molten. For net heat fluxes just above this threshold, surface temperature rises rapidly…"). Runaway limit is a vertical line on the x-axis (net insolation + geothermal), not a horizontal asymptote.
+- **C3** Fig #19 `way2016_paleo_venus_temperature.avif` panel (d): caption says "Earth-like rotation period (16× Venus' day length)". Panel title in image reads "16× Earth Day Length". Rewrite to "Panel (d): same as (a) but with a 16-Earth-day sidereal rotation period (about 15× faster than Venus' present spin, but still 16× slower than Earth's)."
+- **C4** Fig #30 `arney2017_archean_haze.avif`: complete mismatch. Caption lists 6 panels (particle number density A, temperature B, particle radii C, particle density flux D, aerosol opacity E, condensation rates F); image actually shows 6 panels (temperature, water mixing ratio, haze number density, particle radii, ethane, methane). Caption invokes panel letters A–F that are not present in the image. Rewrite the caption from scratch to match the actual panels, **or** replace the figure with the Arney 2017 panel that matches the caption.
+- **C5** Fig #10 `smrekar2018_venus_tectonic_evolution.avif` caption says middle panel is "mantle **potential** temperature"; image axis label reads only "Mantle T (K)". LOW — verify against Smrekar 2018 and drop "potential" if unsupported.
+
+L10:
+- **C6** Fig #15 `plesa2022_crustalthickness.avif` (global 105): caption says "crustal thickness, basement topography, and surface heat flow". Actual image shows (a–c) crustal thickness, (d–f) surface heat flow, (g–i) elastic thickness. No basement-topography panel exists. Rewrite caption: "crustal thickness (top), surface heat flow (middle), and elastic thickness (bottom)".
+- **C7** Fig #23 `ehlmann2014_olivine.avif` (global 113): caption advertises multi-panel detail views ("with detail panels showing localised olivine-rich units exposed in impact craters"). Image is a single global panel labelled (a) only. Either re-source the full multi-panel figure from Ehlmann & Edwards 2014, or rewrite the caption to match the single panel shown.
+- **C8** Fig #25 `wordsworth2016_phasediagram.avif` (global 115): caption says "surface temperature on the vertical axis and total surface H₂O inventory on the horizontal axis". Image has T_surf on the HORIZONTAL axis and H₂O on the VERTICAL axis. Swap the axes description in the caption.
+- **C9** Fig #27 `jakosky2018_loss.avif` (global 117): caption claims "total atmospheric loss rate extrapolating MAVEN-measured present-day rates back through solar system history" with the "0.5–1 bar CO₂ and 23 m water" integrated-loss totals. Image actually shows only **oxygen loss channels** (O dissociative recombination, O pick-up, O ion outflow, O sputtered), and the x-axis spans only ~3 Ga, not 4 Gyr. Either rewrite caption to match the oxygen-channels plot, or replace with the total-loss-vs-time figure from Jakosky 2018.
+- **C10** Fig #29 `hu2015_carbon_evolution.avif` (global 119): caption labels panels (a) atmospheric CO₂ surface pressure, (b) integrated CO₂ loss by sputtering, (c) integrated loss by photochemical escape, (d) equivalent column of CO₂ in carbonates. Actual panels are (a) atmospheric δ¹³C, (b) escape rates (sputtering AND photochemical curves), (c) carbonate formation rate, (d) surface pressure. All four assignments are wrong. Rewrite from scratch.
+- **C11** Fig #31 `acuna1999_dipoles.avif` (global 121): caption describes "equivalent dipole sources fitted to the strongest crustal anomalies". Image appears to be polar stereographic views of $B_r$ (left panel coloured, right panel grayscale), not dipole-source fits. Verify against the Acuna 1999 source figures and rewrite caption.
+
+**Group D — Equation / text corrections (2 items).**
+
+- **D1** L9 line 743–748, Venus D/H Rayleigh distillation: the text writes "α ≈ √(m_H/m_D) ≈ 0.5" and then f = 150^(-2) ≈ 4×10⁻⁵. These are mutually inconsistent: √(1/2) = 0.707, not 0.5. **Blocked on decision (1) in §6.1 above.**
+- **D2** L10 line 685, Mars cooling rate: "cooling rate scales (very approximately) as $L^2/\kappa$" followed by "a factor of two smaller body cools four times faster". The formula $L^2/\kappa$ is the diffusion **timescale**; the rate is $\kappa/L^2$. Simpler fix: rewrite as "cooling timescale $\tau \sim L^2/\kappa$, so a factor of two smaller body cools four times faster". Harder fix: rewrite equation to $\kappa/L^2$ and adjust surrounding prose. Prefer the simpler fix.
+
+**Group E — Factual updates (4 items).**
+
+- **E1** L9 line 181: global-mean warming-since-1880 quoted as 1.2 K. 2023 annual anomaly is ~1.45 K per NASA GISTEMP / IPCC AR6. Update to ~1.4 K and update the citation to IPCC AR6 WGI SPM if not already. MED.
+- **E2** L9 lines 210 and 869: Earth carbonate carbon inventory "1.6×10²⁰ kg, equivalent to 60–90 bar CO₂". The 1.6×10²⁰ kg number looks like a Phanerozoic marine-carbonate subset; total crustal carbon is typically cited as ~6×10²² mol C ≈ 7×10²⁰ kg C ≈ 2.5×10²¹ kg CO₂ ≈ ~500 bar equivalent. Clarify scope ("Phanerozoic platform carbonates" vs "total crustal carbon" vs "mantle included") and use a primary source (Sundquist 1985, Wedepohl 1995, or Lee et al. 2019 review). The "comparable in order of magnitude to Venus' 92 bar" claim depends on which inventory is meant. LOW–MED.
+- **E3** L10 line 355: Olympus Mons reported as "~21.9 km tall above the surrounding plains (~21 km above the Mars datum)". Internally consistent only if the reference plain sits at ~−0.9 km on the datum, which is unconventional. Standard NASA/factsheet phrasing is "21.9 km above the Mars areoid/datum" with base-to-summit relief stated separately. Optional polish; LOW.
+- **E4** L10 line 165: Mercury polar ice total mass quoted as "~10¹⁶ to 10¹⁸ g over ~5×10⁴ km²". Lawrence et al. 2013 give ~10¹⁵ to ~10¹⁶ g. The 10¹⁸ g upper bound is higher than commonly cited. Either drop the upper bound or source it explicitly. MED.
+
+**Group F — BibTeX hygiene (4 items).**
+
+- **F1** Add `Lebrun2013` entry (blocked on decision to proceed with A6):
+  ```
+  @article{Lebrun2013,
+    author = {Lebrun, T. and Massol, H. and Chassefière, E. and Davaille, A. and Marcq, E. and Sarda, P. and Leblanc, F. and Brandeis, G.},
+    title = {Thermal evolution of an early magma ocean in interaction with the atmosphere},
+    journal = {Journal of Geophysical Research: Planets},
+    volume = {118},
+    pages = {1155-1176},
+    year = {2013},
+    doi = {10.1002/jgre.20068},
+    url = {https://ui.adsabs.harvard.edu/abs/2013JGRE..118.1155L/abstract}
+  }
+  ```
+- **F2** `Goldblatt2013` entry currently has `eprint = {1301.6674}` + `archivePrefix = {arXiv}`. That arXiv ID is actually Kopparapu et al. 2013 ("Habitable Zones Around Main-Sequence Stars: New Estimates"). The `Kopparapu2013` entry also has this eprint. Remove the `eprint` and `archivePrefix` fields from `Goldblatt2013` (the entry can rely on the ADS URL and DOI). Keep the eprint on `Kopparapu2013`.
+- **F3** `KiteEpisodic2022` key: entry has `year = {2021}` (PNAS 2021). Cosmetic rename to `KiteEpisodic2021` to match, or leave alone. LOW.
+- **F4** `NASAESAMSR2024` key: entry is the 2023 IRB-2 report, but lecture text says "In 2024, NASA announced a major rebaselining" — which refers to the 2024 architecture-review announcement, not the 2023 IRB-2 report. Either add a separate 2024 NASA announcement BibTeX entry and cite it for the 2024 claim, or rephrase the lecture text to refer to the 2023 IRB-2 recommendations. MED.
+
+**Group G — Items needing judgement calls / source PDFs (6 items).**
+
+Pending decision (3) in §6.1 on whether Claude fetches the PDFs or Tim eyeballs them.
+
+- **G1** L9 Fig #7 `widemann2023_three_missions_render.avif` — caption claims background is "Akatsuki UV imaging", image looks like a generic Venus rendering. Verify against Widemann et al. 2023 paper.
+- **G2** L9 Fig #21 / L10 Fig #21 `bibring2006_globalmap.avif` (global 111) — right portion of map possibly cropped at longitudes 180°–240°; top panel identity as phyllosilicate map unclear vs a MOLA topography basemap. Verify against Bibring 2006 Science 312, 400.
+- **G3** L10 Fig #24 `wordsworth2016_schematic.avif` — caption says "Cartoon … as conceived by Wordsworth2016", but the figure appears to be a hand-drawn cartoon, not a reproduction from the Wordsworth 2016 Annual Review paper. Either replace with the actual schematic from the paper, or rephrase caption as "cartoon summary of the icy-highlands scenario described by Wordsworth 2016".
+- **G4** L10 Fig #6 `wicht_offset_dipole.avif` — possible polarity/orientation mismatch. Caption says "red equatorial flux concentrated in the northern hemisphere", but image appears to show blue above and yellow below. Either image is south-up or caption is wrong about sign. Verify against Wicht source figure.
+- **G5** L10 Fig #2 `margot2007_libdata.avif` — figure histograms show $C/MR^2 = 0.380$, lecture text uses $0.346$ (Margot 2012 value). Either a different convention (bulk vs polar moment) or an outdated figure. Explain in caption or replace the figure with one that shows the 0.346 value quoted in the text.
+- **G6** L9 line 929: the Dauphas 2017 NC/CC isotopic-dichotomy passage currently cites "(Zahnle2007)" as the noble-gas version. Zahnle 2007 "Emergence of a Habitable Planet" is a general early-Earth review, not the primary reference for the NC/CC noble-gas dichotomy. Better options: Marty 2012 (EPSL 313–314, 56) or Bekaert et al. 2020. Either drop the parenthetical or add the correct primary reference.
+
+**Group H — Deferred items from the first review arc (NOT part of this second-pass action list).**
+
+These were deliberately held back earlier and are tracked in `notes_status.md`. Listed here only so they are not confused with new findings:
+
+- `Peale1979` / `Peale1979gas` duplicate consolidation
+- `Howell2020` / `HowellPappalardo2020` duplicate
+- `NealMRS2022` → `Meyer2022MSR` rename
+- L12 `McKinnon2008` ACM abstract → peer-reviewed alternative
+- L9 Ivanov & Head 2015, Abe & Matsui 1988 plain-text caption mentions → `{cite:t}` or remove
+- L10 missing historical citations: Pettengill & Dyce 1965, Peale 1969, Harmon & Slade 1992, Webster 2015, Korablev 2019
+- L11 Lainey 2024 Mimas subsurface ocean (Nature 626, 280) uncited
+
+### 6.3 What was verified clean
+
+For the record, the second pass confirmed the following as correct end-to-end:
+
+- **L9 Simpson-Nakajima blackboard derivation** (lines in the L9 blackboard section): grey-approximation photosphere pressure, Clausius-Clapeyron integration, T_phot ≈ 258.6 K, σ T_phot⁴ = 259 W/m², refined literature range 280–310 W/m² consistent with Kasting 1988 / 1993 / Kopparapu 2013 / Goldblatt 2013. One pedagogical note: a one-line explicit "grey approximation" label would tighten Step 1.
+- **L10 Jeans escape blackboard derivation** (lines 540–690 approximately): Maxwell-Boltzmann set-up, upward-flux integral with 1/4 direction factor, boxed final form $\Phi_J = n\sqrt{k_B T/(2\pi m)}(1+\lambda)e^{-\lambda}$, low- and high-$\lambda$ limits, Mars numerical example ($v_{\rm esc} = 4.87$ km/s, $\lambda_H = 5.32$), and the factor-81 high-$\lambda$ comparison ($(6/11)e^5 = 80.96$) all recomputed independently and verified. The Tier-3 "factor 81 vs 150" fix landed correctly.
+- **Cross-lecture harmonisation**: L9, L13, L14 agree on Hamano critical distance 0.77 AU, Kopparapu S_eff = 1.06 / 0.97 AU inner HZ, Simpson-Nakajima 280–310 W/m² OLR limit, Venus semi-major axis 0.723 AU, Venus flux 1.91× Earth, 30% faint-young-Sun brightening.
+- **All 46 cited keys in L10** and **36 unique keys in L9** resolve against `references.bib`.
+- **20+ BibTeX entries spot-checked** against the claims they support in each lecture; no citation-to-claim errors beyond the ones listed in Group G above.
+- **All L9 and L10 numerical planetary parameters** (masses, radii, densities, atmospheric compositions, surface temperatures and pressures, rotation periods, semimajor axes, core radii, moment-of-inertia ratios) verified against NASA Fact Sheets and peer-reviewed literature.
+
+### 6.4 Resumption protocol
+
+When picking this up in a new session:
+1. Read this section §6 in full.
+2. Answer the three decisions in §6.1 (Rayleigh α regime, batch scope, group-G handling).
+3. Create feature branch `tl/l9-l10-second-review-fixes`.
+4. Work through Groups A → F (G is blocked on decision 3; H is explicitly out of scope).
+5. For each group, run `make html` to verify Jupyter Book builds cleanly, and re-run `/tmp/check_figures.py` + `/tmp/check_citations.py` after edits if those scripts still exist, otherwise reconstruct from the pattern in `notes_status.md` memory.
+6. Commit per batch scope decided in §6.1 (2). Do not push without explicit confirmation per CLAUDE.md.
+7. After fixes land, update this §6 status to "closed" with a pointer to the fix commits, and fold the key lessons into `notes_status.md` memory.
