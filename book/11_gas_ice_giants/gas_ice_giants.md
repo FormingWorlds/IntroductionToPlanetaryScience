@@ -169,7 +169,7 @@ High-resolution view of Europa's surface from the Galileo orbiter, showing the n
 :name: fig:europa_chaos
 :width: 75%
 
-Chaos terrain on Europa, where blocks of ice appear to have disrupted, drifted, and refrozen. The morphology is consistent with brief episodes of partial melting and refreezing of the ice shell, possibly driven by warm rising plumes within the ice, by intrusions of ocean water, or by the foundering of slabs of icy crust. Image credit: NASA/JPL-Caltech/SETI Institute.
+The Conamara Chaos region on Europa imaged at high resolution by the Galileo orbiter (PIA01640). Polygonal blocks of ice have rotated and translated relative to one another and refrozen into a darker matrix material. The morphology is consistent with brief episodes of partial melting and refreezing of the ice shell, possibly driven by warm rising plumes within the ice, by intrusions of ocean water, or by the foundering of slabs of icy crust. Image credit: NASA/JPL-Caltech/ASU.
 ```
 
 The case for a subsurface ocean on Europa is strong and rests on multiple independent lines of evidence.
@@ -200,7 +200,7 @@ Ganymede imaged by JunoCam during the 7 June 2021 close flyby, the first close e
 :name: fig:ganymede_grooves
 :width: 75%
 
-Grooved terrain on Ganymede imaged by Galileo. The parallel ridges and troughs record episodes of tectonic extension early in Ganymede's history and stand in stark contrast to Callisto's heavily cratered, undisturbed surface. Image credit: NASA/JPL-Caltech.
+Grooved bright terrain (Lagash Sulcus) cutting through ancient cratered dark terrain in the Marius Regio of Ganymede, imaged at $\sim$288 m/pixel by the Galileo orbiter on 6 June 1997 (PIA01617). The parallel ridges and troughs record episodes of tectonic extension early in Ganymede's history and stand in stark contrast to Callisto's heavily cratered, undisturbed surface. Image credit: NASA/JPL-Caltech/Brown University.
 ```
 
 The case for a subsurface ocean on Ganymede was solidified by {cite:t}`Saur2015`, who used Hubble UV observations of the moon's auroral ovals to measure how Ganymede's intrinsic magnetic field is rocked by the time-varying Jovian magnetic field.
@@ -223,9 +223,9 @@ Callisto in global colour view, assembled from Galileo and Voyager images. The s
 
 ```{figure} figures/callisto_cutaway.avif
 :name: fig:callisto_cutaway
-:width: 60%
+:width: 85%
 
-Schematic interior structure of Callisto showing the icy lithosphere, an inferred subsurface ocean, and the partially differentiated rock and ice mixture below. The ocean is inferred from Galileo magnetometer data showing an induced magnetic field similar to that of Europa, although the conducting layer in Callisto is plausibly less massive and less salty. Artist's concept, NASA/JPL.
+Schematic interior structures of the four Galilean moons (left to right: Io, Europa, Ganymede, Callisto) at comparable scale, NASA/JPL artist concept (PIA01082). Callisto, on the right, is only partially differentiated, in contrast to the fully differentiated Ganymede next to it. Its inferred subsurface ocean (blue layer near the surface) comes from Galileo magnetometer data showing an induced magnetic field similar to that of Europa, although the conducting layer in Callisto is plausibly less massive and less salty. Image credit: NASA/JPL-Caltech.
 ```
 
 Callisto's surface is among the most heavily cratered in the solar system and looks superficially like Mercury or the Moon at low resolution.
@@ -244,9 +244,9 @@ The ring is therefore a continuously replenished, transient cloud of debris rath
 
 ```{figure} figures/amalthea_juno.avif
 :name: fig:amalthea
-:width: 60%
+:width: 70%
 
-Amalthea, the innermost large moon of Jupiter, imaged by JunoCam. Amalthea is one of the principal sources of dust for Jupiter's faint ring system. Its irregular shape and red colour reflect a long history of micrometeorite gardening and contamination from Io's volcanic plumes. Image credit: NASA/JPL-Caltech/SwRI/MSSS/Gerald Eichst{\"a}dt.
+Amalthea, Jupiter's innermost large moon, captured by the JunoCam imager during the 59th perijove flyby on 7 March 2024 from a distance of $\sim$$265{,}000$ km (PIA25728). Amalthea is irregular and only $\sim$84 km in mean radius, and is one of the principal sources of dust for Jupiter's faint ring system through micrometeorite gardening of its surface. Its reddish colour reflects contamination from Io's volcanic plumes. Image credit: NASA/JPL-Caltech/SwRI/MSSS, processed by Gerald Eichst{\"a}dt.
 ```
 
 ### Saturn interior and rotation
@@ -306,7 +306,7 @@ Infrared imaging by Cassini's CIRS and VIMS instruments revealed a much richer a
 :name: fig:saturn_hexagon
 :width: 75%
 
-Saturn's hexagonal polar jet imaged by Cassini. The hexagon, centred at about $78^\circ$ N, is a standing Rossby wave on a strong eastward zonal jet and has been continuously present since Voyager first observed it in 1981. Image credit: NASA/JPL-Caltech/Space Science Institute.
+Saturn's hexagonal polar jet imaged by Cassini, false-colour view (PIA14946). The hexagon, centred at about $78^\circ$ N, is a standing Rossby wave on a strong eastward zonal jet and has been continuously present since Voyager first observed it in 1981. The false-colour rendering brings out the hexagonal jet boundary that is harder to discern in true-colour imagery. Image credit: NASA/JPL-Caltech/SSI/Hampton University.
 ```
 
 The most distinctive feature of Saturn's atmosphere is the **hexagonal jet stream** at $\sim 78^\circ$ N latitude, a six-sided standing wave that has been present continuously since Voyager observed it in 1981 and was mapped in detail by Cassini through its 13-year tour.
@@ -325,16 +325,16 @@ The seven main rings are labelled in order of discovery (D, C, B, A, F, G, and E
 
 ```{figure} figures/saturn_cassini_division.avif
 :name: fig:cassini_division
-:width: 75%
+:width: 95%
 
-The Cassini Division between Saturn's A and B rings, imaged by the Cassini spacecraft. The gap is maintained by a 2:1 mean-motion resonance with the moon Mimas: ring particles inside the Cassini Division are perturbed onto eccentric orbits and are eventually swept out, leaving the gap as a persistent feature. Image credit: NASA/JPL-Caltech/Space Science Institute.
+Natural-colour radial scan across Saturn's main rings as imaged by Cassini, with major named gaps labelled at the top and the C, B, A, and F rings labelled at the bottom (PIA08389). The dark Cassini Division separates the bright B and A rings at $\sim$118{,}000 km from Saturn's centre. The gap is maintained by a 2:1 mean-motion resonance with the moon Mimas: ring particles inside the Cassini Division are perturbed onto eccentric orbits and are eventually swept out, leaving the gap as a persistent feature. Image credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
-```{figure} figures/saturn_propeller_ring.avif
+```{figure} figures/saturn_propeller_targeted.avif
 :name: fig:propeller_ring
-:width: 70%
+:width: 80%
 
-A "propeller" feature in Saturn's A ring, imaged by Cassini. Propellers are the gravitational wakes carved out by embedded moonlets too small to fully clear a gap. Their motion has been tracked over the Cassini mission, providing one of the few direct measurements of the orbital evolution of small bodies embedded in a planetary disk. Image credit: NASA/JPL-Caltech/Space Science Institute.
+Two close-up Cassini views of the same large "propeller" feature in Saturn's A ring. The asymmetric S-shape is the gravitational wake carved by an embedded $\sim$1 km moonlet that is too small to clear a gap entirely. Tracking these features over the Cassini mission has provided one of the few direct measurements of the orbital evolution of small bodies embedded in a planetary disk {cite:p}`Tiscareno2013`. Image credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
 The composition of the rings is overwhelmingly water ice ($>$95% by mass), with only a small fraction of darker contaminants such as silicates and organics.
@@ -473,9 +473,9 @@ Cassini and the Huygens probe revolutionised our understanding of Titan over the
 
 ```{figure} figures/huygens_titan_descent.avif
 :name: fig:huygens
-:width: 60%
+:width: 75%
 
-Mosaic of images taken by the Huygens probe during its descent through Titan's atmosphere on 14 January 2005, showing dendritic drainage channels and a coastline-like contrast between bright highlands and a dark, flatter region. The methane hydrology of Titan was confirmed in situ for the first time. Image credit: ESA/NASA/JPL-Caltech/University of Arizona.
+Stereographic projection mosaic of Huygens DISR descent images, taken on 14 January 2005 from an altitude of $\sim$3 km above Titan's surface (PIA07870). The brighter, elevated terrain at top is criss-crossed by dendritic drainage channels carved by methane runoff, which empty into a darker, flatter region resembling a coastline with offshore "islands" and shoals. The methane hydrology of Titan was confirmed in situ for the first time. Image credit: ESA/NASA/JPL-Caltech/University of Arizona.
 ```
 
 ```{figure} figures/titan_lakes_cassini.avif
@@ -517,9 +517,9 @@ The "tiger stripes" of Enceladus: four parallel fracture zones near the south po
 
 ```{figure} figures/enceladus_tiger_thermal.avif
 :name: fig:tiger_thermal
-:width: 70%
+:width: 75%
 
-Composite Cassini visible-infrared image of one of the tiger stripes, showing a hot, narrow channel along the central fracture coloured by thermal emission. The localised heat output is essential evidence that tidal heating is concentrated at the fracture system rather than distributed across the whole moon. Image credit: NASA/JPL-Caltech/GSFC/SwRI/SSI.
+Map of Enceladus's south polar region showing the correlation between jet sources identified in Cassini imaging (coloured diamonds; white circles indicate location uncertainty) and the hot spots located along the four "tiger stripe" fractures by Cassini's Composite Infrared Spectrometer (CIRS) (PIA08385). The jets erupt from the warmest portions of the fractures, which are tens of kelvins warmer than the surrounding terrain. The localised heat output is essential evidence that tidal heating is concentrated at the fracture system rather than distributed across the whole moon. Image credit: NASA/JPL-Caltech/GSFC/SwRI/SSI.
 ```
 
 ```{figure} figures/enceladus_geyser_basin.avif
@@ -548,18 +548,18 @@ Mimas, the smallest of Saturn's classical moons, is dominated by the giant Hersc
 The impact that formed Herschel must have been close to the catastrophic disruption threshold; somehow the moon survived intact.
 Recent gravity science suggests that Mimas itself may host a young subsurface ocean, although the evidence is contested.
 
-```{figure} figures/mimas_herschel.avif
+```{figure} figures/mimas_close.avif
 :name: fig:mimas
 :width: 60%
 
-Mimas dominated by the giant Herschel impact crater. Mimas is the smallest of Saturn's classical moons (radius $\sim$200 km), and the impact that formed Herschel was probably close to the disruption threshold. Image credit: NASA/JPL-Caltech/Space Science Institute.
+Mimas dominated by the giant Herschel impact crater, imaged by Cassini during its 13 February 2010 close flyby. The crater is $\sim$130 km across on a moon with mean radius $\sim$200 km, and the impact that formed Herschel was probably close to the catastrophic disruption threshold. Image credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
 ```{figure} figures/iapetus_bright_dark.avif
 :name: fig:iapetus
-:width: 65%
+:width: 70%
 
-Iapetus showing the two-toned hemispheric pattern. The leading hemisphere is dark with material believed to be infall from the distant outer moon Phoebe, while the trailing hemisphere is bright water ice. A thermal-segregation feedback amplifies the contrast: the dark side absorbs more sunlight, gets warmer, sublimates ice, and becomes darker still, while the bright side stays cold and frosty. Image credit: NASA/JPL-Caltech/Space Science Institute.
+Iapetus showing the two-toned hemispheric pattern, Cassini global mosaic from the 31 December 2004 flyby (PIA06166). The leading hemisphere (the dark Cassini Regio, covering nearly the entire visible disc here) is coated with material believed to be infall from the distant outer retrograde moon Phoebe, while the trailing hemisphere is bright water ice. A thermal-segregation feedback amplifies the contrast: the dark side absorbs more sunlight, gets warmer, sublimates ice, and becomes darker still, while the bright side stays cold and accumulates frost. The narrow ridge running along the equator is also visible. Image credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
 ```{figure} figures/phoebe_cassini.avif
@@ -621,9 +621,9 @@ Smoothed-particle-hydrodynamics simulation of a giant impact on the proto-Uranus
 
 ```{figure} figures/uranus_clouds_voyager.avif
 :name: fig:uranus_clouds
-:width: 70%
+:width: 60%
 
-Image-processed Voyager 2 view of Uranus emphasising faint cloud features. The contrast has been increased dramatically over the original data to show the modest banding visible in the southern hemisphere. Even after such enhancement, Uranus is far less active in 1986 than Neptune was in 1989. Image credit: NASA/JPL-Caltech.
+Voyager 2 view of Uranus from the January 1986 flyby (PIA18182). The planet appears almost featureless even in this reprocessed image; a near-pole-on viewing geometry combined with the muted, methane-dominated upper atmosphere give Uranus its bland appearance, and discrete cloud features are visible only after extreme contrast enhancement. Uranus in 1986 was far less active than Neptune was when Voyager 2 reached it in 1989. Image credit: NASA/JPL-Caltech.
 ```
 
 ```{figure} figures/uranus_cyclone.avif

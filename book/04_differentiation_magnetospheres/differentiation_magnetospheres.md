@@ -19,7 +19,15 @@ $$
 v_{\mathrm{Stokes}} = \frac{2}{9} \frac{\Delta\rho \, g \, r^2}{\mu}
 $$ (eq:stokes-settling)
 
-where $\Delta\rho \approx 4000$ kg m$^{-3}$ is the density contrast between metal and silicate, $g$ is the gravitational acceleration, $r$ is the droplet radius, and $\mu$ is the dynamic viscosity of the silicate melt. For centimetre-sized iron droplets ($r \sim 0.01$ m) in a low-viscosity magma ocean ($\mu \sim 0.1$ Pa s, $g \sim 5$ m s$^{-2}$ for an Earth-sized body during formation), this gives $v_{\mathrm{Stokes}} \sim 4$ m s$^{-1}$. At this rate, droplets could traverse a magma ocean thousands of kilometres deep in a matter of **days** — geologically instantaneous {cite:p}`Rubie2015`.
+where $\Delta\rho \approx 4000$ kg m$^{-3}$ is the density contrast between metal and silicate, $g$ is the gravitational acceleration, $r$ is the droplet radius, and $\mu$ is the dynamic viscosity of the silicate melt. For centimetre-sized iron droplets ($r \sim 0.01$ m) in a low-viscosity magma ocean ($\mu \sim 0.1$ Pa s, $g \sim 5$ m s$^{-2}$ for an Earth-sized body during formation), this gives $v_{\mathrm{Stokes}} \sim 4$ m s$^{-1}$. At this rate, droplets could traverse a magma ocean thousands of kilometres deep in a matter of **days**, geologically instantaneous {cite:p}`Rubie2015`.
+
+```{figure} figures/stokes_settling.avif
+:name: fig:stokes-settling
+:width: 550px
+:align: center
+
+Stokes settling velocity for an iron droplet in a low-viscosity silicate magma ocean as a function of droplet radius (Eq. {eq}`eq:stokes-settling`), assuming $\Delta\rho = 4000$ kg m$^{-3}$, $g = 5$ m s$^{-2}$, and $\mu = 0.1$ Pa s. Centimetre-sized droplets settle at $\sim 4$ m s$^{-1}$, traversing a 1000 km magma ocean in a few days; submillimetre droplets are far slower and are more likely to remain suspended by convection. The strong $r^2$ dependence is the central reason that iron-silicate separation is geologically instantaneous once droplets coalesce {cite:p}`Rubie2015`.
+```
 
 ### The Moon-forming giant impact
 
@@ -81,9 +89,17 @@ The most powerful tool for dating core formation is the **hafnium–tungsten** (
 
 The magnitude of the ${}^{182}\mathrm{W}$ excess in a planet's mantle, expressed as $\varepsilon^{182}\mathrm{W}$ (parts per 10,000 deviation from chondritic), therefore acts as a **clock** for core formation {cite:p}`Kleine2009`:
 
-- **Earth:** $\varepsilon^{182}\mathrm{W} \approx +2$ — indicating that the bulk of core formation was completed within approximately **30–60 Myr** after solar system formation.
-- **Mars:** $\varepsilon^{182}\mathrm{W} \approx +3$ to $+5$ — a larger excess indicating earlier and more rapid core formation, within approximately **10–20 Myr**. This is consistent with Mars being a smaller body that completed its accretion faster.
+- **Earth:** $\varepsilon^{182}\mathrm{W} \approx +2$, indicating that the bulk of core formation was completed within approximately **30–60 Myr** after solar system formation.
+- **Mars:** $\varepsilon^{182}\mathrm{W} \approx +0.4$ on modern measurements of SNC meteorites, indicating early and rapid core formation within approximately **10–20 Myr**. This is consistent with Mars being a smaller body that completed its accretion faster than Earth {cite:p}`Kruijer2017Mars`.
 - **Moon:** The Moon's $\varepsilon^{182}\mathrm{W}$ is close to Earth's, consistent with formation from debris of the giant impact.
+
+```{figure} figures/hf_w_chronometry.avif
+:name: fig:hf-w-chronometry
+:width: 550px
+:align: center
+
+Tungsten-182 anomalies in planetary mantles, expressed as $\varepsilon^{182}\mathrm{W}$ (parts per $10^4$ deviation from the chondritic reference). Bulk silicate Earth carries a large positive anomaly indicating core formation was protracted ($\sim 30$–$60$ Myr) but began while $^{182}\mathrm{Hf}$ was still alive; SNC meteorites (Mars) show a smaller positive anomaly indicating earlier, more rapid core formation; the lunar mantle anomaly is intermediate. The chondritic reference defines the zero point. Values compiled from {cite:t}`Kleine2009` and {cite:t}`Kruijer2017Mars`.
+```
 
 
 ## Mantle differentiation
@@ -131,6 +147,14 @@ Recent work has substantially revised this picture. Several independent lines of
 
 These findings suggest that the volatile inventory of terrestrial planets is determined by a complex interplay of disk thermal evolution, giant planet formation timing, and the mixing of multiple source reservoirs {cite:p}`Krijt2023`.
 
+```{figure} figures/lichtenberg2021_fig1.avif
+:name: fig:lichtenberg2021-snowline
+:width: 600px
+:align: center
+
+Snow line migration in the protoplanetary disk produces two distinct bursts of planetesimal formation. Early planetesimals (Reservoir I, red) form just inside the inward-migrating water snow line during the Class I disk stage and accrete ice-rich material; later planetesimals (Reservoir II, blue) form in the outer disk during the Class II stage once Jupiter has reached pebble-isolation mass and blocked the inward drift of icy pebbles to the inner disk. The two reservoirs are spatially and temporally separated, providing a natural explanation for the non-carbonaceous/carbonaceous (NC/CC) isotopic dichotomy observed in meteorites. Reproduced from {cite:t}`Lichtenberg2021`.
+```
+
 ### Outgassing from the magma ocean
 
 Regardless of how volatiles were delivered, much of a planet's initial volatile budget is dissolved in the silicate magma ocean. As the magma ocean cools and crystallises, dissolved volatiles are released to form a **secondary atmosphere** through **outgassing** {cite:p}`Hirschmann2012`.
@@ -146,7 +170,15 @@ $$
 X_{\mathrm{H_2O}} \propto p_{\mathrm{H_2O}}^{1/2}
 $$ (eq:water-solubility)
 
-where $X_{\mathrm{H_2O}}$ is the mole fraction of dissolved water and $p_{\mathrm{H_2O}}$ is the partial pressure of water vapour above the melt. This means that as the atmosphere thickens with outgassed $\mathrm{H_2O}$, the magma ocean can retain an increasing fraction of its water in solution — a self-limiting feedback that determines the partitioning of water between the interior and the atmosphere {cite:p}`Hirschmann2012`.
+where $X_{\mathrm{H_2O}}$ is the mole fraction of dissolved water and $p_{\mathrm{H_2O}}$ is the partial pressure of water vapour above the melt. This means that as the atmosphere thickens with outgassed $\mathrm{H_2O}$, the magma ocean can retain an increasing fraction of its water in solution, a self-limiting feedback that determines the partitioning of water between the interior and the atmosphere {cite:p}`Hirschmann2012`.
+
+```{figure} figures/water_solubility.avif
+:name: fig:water-solubility
+:width: 550px
+:align: center
+
+Solubility of H$_2$O in basaltic silicate melt as a function of the H$_2$O partial pressure above the melt, on a log-log scale. The straight line on log-log axes is the signature of the Henrian square-root law of Eq. {eq}`eq:water-solubility`, which arises because dissolved water speciates predominantly as OH$^-$ groups in the melt. A 100 bar magma ocean atmosphere can dissolve $\sim 4$ wt% H$_2$O; a 3 kbar atmosphere can dissolve more than 10 wt%. The plot uses $K \approx 0.42$ wt% MPa$^{-1/2}$ representative of basalt at 1573 K {cite:p}`Hirschmann2012`.
+```
 
 ### Impact erosion versus delivery
 
@@ -306,6 +338,24 @@ Earth's core extends from the centre of the planet to a depth of 2890 km (the co
 
 - **Outer core** (radius 1220–3480 km from the centre, or depth 2890–5150 km): Liquid iron alloy. The outer core is about 5–10% less dense than pure liquid iron, indicating the presence of dissolved light elements (S, Si, O, C, H). This is the region where the geodynamo operates.
 
+```{figure} figures/earth_interior.avif
+:name: fig:earth-interior
+:width: 500px
+:align: center
+
+Cross-section of Earth's interior, showing the solid inner core ($r < 1220$ km), the liquid iron-alloy outer core (1220–3480 km), the silicate mantle (depth 2890 km up to $\sim 30$ km), and the thin crust. The geodynamo operates in the convecting outer core; the inner core grows slowly as light elements are expelled into the outer core. Credit: NASA/JPL-Caltech/SwRI/J.E.P. Connerney, public domain.
+```
+
+The structure above is inferred primarily from seismology: the travel times of $P$ and $S$ waves through Earth, recorded by global seismometer networks, constrain the density and elastic-wave velocities as a function of depth. The most widely used reference profile is the **Preliminary Reference Earth Model** {cite:p}`Dziewonski1981`.
+
+```{figure} figures/prem_profile.avif
+:name: fig:prem
+:width: 550px
+:align: center
+
+Preliminary Reference Earth Model (PREM) seismic $P$-wave velocity ($V_p$, blue), $S$-wave velocity ($V_s$, red), and density ($\rho$, green) versus depth. The vanishing $V_s$ in the outer core (2890–5150 km depth) is direct evidence that this region cannot support transverse elastic waves, i.e. it is liquid; the discontinuous jumps in density at the core-mantle boundary (CMB) and inner-core boundary (ICB) record the metal-silicate interface and the latent heat of inner-core crystallisation respectively. Curve digitised from {cite:t}`Dziewonski1981`.
+```
+
 ### Driving mechanisms
 
 Convection in the outer core is driven by two sources of buoyancy {cite:p}`Roberts2013`:
@@ -340,12 +390,12 @@ On longer timescales, the geomagnetic field undergoes **polarity reversals** —
 
 The most compelling evidence for reversals comes from **magnetic stripes** on the ocean floor: as new oceanic crust forms at mid-ocean ridges, the magnetic minerals record the ambient field direction. The result is a symmetric pattern of normally and reversely magnetised stripes on either side of the ridge — a key piece of evidence for both seafloor spreading and geomagnetic reversals {cite:p}`Tarduno2010`.
 
-```{figure} figures/geomagnetic_polarity_timescale.svg
+```{figure} figures/geomagnetic_polarity_timescale.avif
 :name: fig:geomagnetic-polarity
-:width: 500px
+:width: 750px
 :align: center
 
-Geomagnetic polarity timescale showing normal (black) and reversed (white) polarity intervals over the past 169 million years. The pattern of reversals is irregular and unpredictable, reflecting the chaotic dynamics of the geodynamo. The Cretaceous Normal Superchron (a prolonged interval of constant polarity) is visible in the right portion of the timescale. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+Geomagnetic polarity timescale for the past 170 Myr. Black bars mark intervals of normal polarity (north magnetic pole near the geographic north), white bars mark reversed polarity. The reversal rate has varied from $\sim 4$–$5$ per Myr in the late Cenozoic to essentially zero during the Cretaceous Normal Superchron (CNS, $\sim 84$–$121$ Ma), the long uninterrupted black band in the middle of the panel; the Phanerozoic period boundaries N|Pg ($\sim 23$ Ma), Pg|K ($\sim 66$ Ma) and K|J ($\sim 145$ Ma) are marked with dotted lines. Reversals appear statistically consistent with a non-stationary Poisson process, reflecting the chaotic dynamics of the geodynamo. Simplified from the Cande and Kent (1995) and GTS2020 reconstructions; data adapted from public-domain USGS sources.
 ```
 
 
@@ -360,10 +410,18 @@ Magnetic fields vary enormously across the solar system. Comparing them reveals 
 | **Earth** | Active dynamo | 25–65 $\mu$T | 1 | Liquid Fe outer core, growing inner core |
 | **Mercury** | Active dynamo | ~0.3 $\mu$T | $\sim 5 \times 10^{-4}$ | Weak; thin liquid shell {cite:p}`Anderson2012` |
 | **Venus** | None detected | $< 0.01$ $\mu$T | $< 10^{-5}$ | No dynamo despite large iron core |
-| **Mars** | Remnant crustal | Up to ~1500 nT | — | Dynamo died ~4.1 Ga {cite:p}`Acuna1999` |
+| **Mars** | Remnant crustal | Up to ~1500 nT | — | Dynamo died ~4.1 Ga {cite:p}`Acuna1999,Connerney2005` |
 | **Jupiter** | Active dynamo | ~400–1400 $\mu$T | $\sim 20{,}000$ | Metallic H dynamo {cite:p}`Connerney2022` |
 | **Saturn** | Active dynamo | ~20 $\mu$T | ~600 | Remarkably axisymmetric |
 | **Ganymede** | Active dynamo | ~0.7 $\mu$T | $\sim 1.5 \times 10^{-3}$ | Only moon with intrinsic dynamo |
+
+```{figure} figures/planetary_dipole_moments.avif
+:name: fig:planetary-dipole-moments
+:width: 600px
+:align: center
+
+Planetary magnetic dipole moments relative to Earth's, on a logarithmic scale. Jupiter dominates with a dipole moment $\sim 2 \times 10^4$ times Earth's; Saturn, Uranus and Neptune are all weaker but still substantial; Earth, Mercury and Ganymede cluster many orders of magnitude below the giants; Venus and Mars have no detected global field today, with upper limits indicated by grey bars. The 9-decade range conveyed by the log scale is the central qualitative observation about planetary dynamos in the solar system. Data compiled from {cite:t}`Bagenal2013`.
+```
 
 ### Mercury
 
@@ -392,12 +450,30 @@ Mars has no global magnetic field today, but the Mars Global Surveyor spacecraft
 :width: 550px
 :align: center
 
-Global map of Mars's crustal magnetic field from the Mars Global Surveyor (MGS) MAG/ER experiment. Red and blue regions indicate strong crustal magnetisation in opposite polarities, concentrated in the ancient southern highlands. The younger northern lowlands and large impact basins (Hellas, Argyre) show little to no magnetisation, indicating the dynamo had ceased before these features formed {cite:p}`Acuna1999`. Credit: NASA/Goddard Space Flight Center, public domain.
+Global map of the radial component $\Delta B_r$ of Mars's crustal magnetic field, compiled from Mars Global Surveyor (MGS) MAG/ER data at $\sim 400$ km mapping-orbit altitude. Red and blue regions indicate strong crustal magnetisation in opposite polarities, concentrated in the ancient southern highlands. The younger northern lowlands and the large impact basins (Hellas, Argyre, Isidis) show little to no magnetisation, indicating the dynamo had ceased before these features formed {cite:p}`Connerney2005`. The original detection of Mars's crustal field is reported in {cite:t}`Acuna1999`. Credit: NASA/Goddard Space Flight Center, public domain.
+```
+
+Recent constraints on Mars's interior come from the InSight lander, which deployed the first seismometer on the Martian surface and detected $S$-wave reflections from the core-mantle boundary. Joint inversion of these seismic data with geodetic constraints (mean density, moment of inertia, tidal Love number $k_2$) gives a core radius of $R_{\rm core} = 1830 \pm 40$ km, larger than expected from many pre-mission models {cite:p}`Stahler2021`. The implied core density is too low for pure iron, requiring a substantial complement of light elements (S, O, H, C). The large, light core informs models of when and why the Martian dynamo shut down: a core that is too sulfur-rich may never have nucleated a solid inner core, depriving the dynamo of compositional buoyancy.
+
+```{figure} figures/stahler2021_mars_core.avif
+:name: fig:stahler2021-mars-core
+:width: 550px
+:align: center
+
+Joint posterior distribution of Mars's mean core density and core radius from three independent inversions of InSight seismic and geodetic data: a geophysical inversion (blue), a geodynamical inversion (orange), and a mineralogical inversion (yellow). All three converge on a core radius near 1830 km and a mean core density near 6.0 g cm$^{-3}$. Purple bands show iso-composition curves for Fe-S-O-H-C alloys; the data require several wt% of light elements. Reproduced from {cite:t}`Stahler2021`, Fig. 2C.
 ```
 
 ### Jupiter
 
-Jupiter has the **strongest magnetic field** of any planet — roughly 20,000 times Earth's dipole moment. The field is generated by convection in Jupiter's deep interior, where hydrogen is compressed to a metallic state (at pressures above $\sim$100 GPa, hydrogen becomes an electrical conductor). The Juno mission has mapped Jupiter's magnetic field in unprecedented detail, revealing a surprisingly complex and asymmetric field at the surface, with a concentrated magnetic flux patch in the northern hemisphere — the "Great Blue Spot" {cite:p}`Connerney2022`.
+Jupiter has the **strongest magnetic field** of any planet, roughly 20,000 times Earth's dipole moment. The field is generated by convection in Jupiter's deep interior, where hydrogen is compressed to a metallic state (at pressures above $\sim$100 GPa, hydrogen becomes an electrical conductor). The Juno mission has mapped Jupiter's magnetic field in unprecedented detail, revealing a surprisingly complex and asymmetric field at the surface, with a concentrated magnetic flux patch in the northern hemisphere, the "Great Blue Spot" {cite:p}`Connerney2022`.
+
+```{figure} figures/jupiter_great_blue_spot.avif
+:name: fig:jupiter-great-blue-spot
+:width: 600px
+:align: center
+
+Map of the radial component of Jupiter's surface magnetic field from the Juno JRM33 model {cite:p}`Connerney2022`. Red marks outward field, blue inward. Unlike Earth's field, which is dominated by an axial dipole at the surface, Jupiter's surface field shows pronounced non-dipolar structure, including the intense localised patch of inward flux at the equator (the "Great Blue Spot"). The morphology constrains the depth at which the metallic-hydrogen dynamo operates and indicates that the dynamo is not confined to a thin shell. Credit: NASA/JPL-Caltech/SwRI/J.E.P. Connerney, public domain.
+```
 
 ### Ganymede
 
@@ -423,6 +499,14 @@ r_{\mathrm{mp}} \approx 10 \, R_\oplus
 $$ (eq:magnetopause-distance)
 
 for Earth under typical solar wind conditions.
+
+```{figure} figures/magnetopause_pressure_balance.avif
+:name: fig:magnetopause-balance
+:width: 600px
+:align: center
+
+Schematic of pressure balance at the dayside magnetopause. The supersonic solar wind (green arrows, arriving from the left) is decelerated at the bow shock (orange dashed curve) and then deflected around the magnetopause (red curve), which compresses Earth's predominantly dipolar field on the dayside and stretches it into a long magnetotail on the nightside. The boundary lies at the radius $r_{\mathrm{mp}}$ where the solar wind ram pressure equals the magnetic pressure of the planetary field (Eq. {eq}`eq:magnetopause-pressure`); for Earth under typical conditions $r_{\mathrm{mp}} \approx 10\,R_\oplus$. Adapted from textbook descriptions in {cite:t}`Kivelson1995`.
+```
 
 ### Magnetosphere structure
 
@@ -452,7 +536,7 @@ When solar wind particles enter the magnetosphere — primarily through reconnec
 - **Red light** (630.0 nm): Excited atomic oxygen at higher altitudes (~200–400 km)
 - **Blue/violet light**: Excited molecular nitrogen, $\mathrm{N_2}$, at lower altitudes
 
-Aurorae are observed on other magnetised planets as well — Jupiter's aurorae, powered by its enormous magnetosphere and the volcanic output of Io, are among the most luminous in the solar system.
+Aurorae are observed on other magnetised planets as well: Jupiter's aurorae, powered by its enormous magnetosphere and the volcanic output of Io, are among the most luminous in the solar system.
 
 ```{figure} figures/aurora.avif
 :name: fig:aurora
@@ -460,6 +544,14 @@ Aurorae are observed on other magnetised planets as well — Jupiter's aurorae, 
 :align: center
 
 The aurora australis (southern lights) photographed from the International Space Station. Charged particles from the solar wind, channelled along Earth's magnetic field lines into the polar regions, excite atmospheric oxygen and nitrogen to produce the characteristic green and red glow. Credit: NASA/ISS Crew Earth Observations, public domain.
+```
+
+```{figure} figures/jupiter_uv_aurora.avif
+:name: fig:jupiter-aurora
+:width: 550px
+:align: center
+
+Ultraviolet aurora at Jupiter's north pole, imaged by the Hubble Space Telescope. The bright auroral oval is powered by Jupiter's rapid rotation, by particles from the Io plasma torus, and by interactions with the solar wind, making it the most luminous aurora in the solar system; Jovian aurorae are largely persistent rather than driven by solar wind variability as on Earth. The composite shows the UV aurora overlaid on an optical Hubble image of the planet. Credit: NASA, ESA, J. Nichols (University of Leicester).
 ```
 
 ### Van Allen radiation belts
@@ -470,6 +562,14 @@ Earth's magnetosphere traps energetic charged particles in two toroidal regions 
 - **Outer belt** (centred at $\sim 4$–$5 \, R_\oplus$): Primarily energetic electrons (0.1–10 MeV), injected during geomagnetic storms and accelerated by wave–particle interactions.
 
 The radiation belts pose a hazard to spacecraft electronics and to astronauts. They also demonstrate the double-edged nature of magnetic fields: while the magnetosphere shields the surface from the bulk of the solar wind, it also traps a population of highly energetic particles that would not be present without the field.
+
+```{figure} figures/van_allen_belts.svg
+:name: fig:van-allen-belts
+:width: 550px
+:align: center
+
+Cross-section of Earth's Van Allen radiation belts. The inner belt of energetic protons (10–100 MeV) is centred at $\sim 1.5\,R_\oplus$ and is largely stable; the outer belt of energetic electrons (0.1–10 MeV) is centred at $\sim 4$–$5\,R_\oplus$ and is highly variable, expanding and contracting in response to geomagnetic storms. Both populations are confined to closed magnetic field lines that thread the inner magnetosphere. Credit: Booyabazooka / NASA, public domain (Wikimedia Commons).
+```
 
 
 ## Recent advances
