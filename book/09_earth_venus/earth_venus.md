@@ -744,10 +744,14 @@ $$
 \frac{R}{R_0} = f^{(\alpha - 1)}.
 $$
 
-For diffusion-limited Jeans escape, the maximum mass fractionation gives $\alpha \approx \sqrt{m_{\mathrm{H}}/m_{\mathrm{D}}} \approx 0.5$.
-Setting $R/R_0 = 150$ and solving, $f = 150^{1/(\alpha - 1)} = 150^{-2} \approx 4 \times 10^{-5}$, so the present hydrogen reservoir is roughly $1/25{,}000$ of the original.
-Multiplying the present water column ($\sim 2$ cm of global equivalent layer in the lower atmosphere) by $1/f$ gives an original water inventory of order several hundred metres of global equivalent depth, comparable to a shallow Earth ocean.
-This is a *lower bound* on the initial reservoir: hydrodynamic escape with the deuterium-hydrogen crossover effect has $\alpha$ closer to unity, which would require an even larger initial water inventory to produce the same enrichment.
+The fractionation factor $\alpha$ depends on the escape regime, and two limiting cases give very different answers.
+In **diffusion-limited escape**, the rate-limiting step is upward diffusion of hydrogen through the homopause and the fractionation factor scales with the mass ratio, $\alpha \approx m_{\mathrm{H}}/m_{\mathrm{D}} \approx 0.5$.
+In a **thermal-Jeans approximation** that ignores the exponential suppression of heavy species at the exobase and uses only the bare thermal-velocity ratio, $\alpha \approx \sqrt{m_{\mathrm{H}}/m_{\mathrm{D}}} \approx 0.71$.
+Setting $R/R_0 = 150$ and solving $f = 150^{1/(\alpha-1)}$ gives $f_{\mathrm{diff}} \approx 150^{-2} \approx 4 \times 10^{-5}$ in the diffusion-limited limit, and $f_{\mathrm{Jeans}} \approx 150^{-3.4} \approx 4 \times 10^{-8}$ in the bare thermal-velocity limit.
+Multiplying the present water column ($\sim 2$ cm of global equivalent layer in the lower atmosphere) by $1/f$ then implies an initial water inventory of order *several hundred metres* of global equivalent depth in the diffusion-limited case (a shallow Earth ocean), or order *several hundred kilometres* in the bare thermal-velocity case, which corresponds to more than 100 Earth-ocean masses and is plainly unphysical for a delivery scenario.
+The contradiction in the second case is itself instructive: a pure velocity-tail interpretation of hydrogen escape cannot be the full story.
+The actual integrated escape history of Venus likely combined an early **hydrodynamic** phase (with $\alpha$ close to unity, requiring large total losses but producing little fractionation per escaping atom) with a later **diffusion-limited** phase that produced most of the observed enrichment.
+This is therefore a *lower-bound* argument: even under the most-fractionating defensible single-regime assumption, the present hydrogen reservoir is at most $\sim 4 \times 10^{-5}$ of the original, requiring an initial inventory of at least several hundred metres global equivalent.
 The exact number also depends on the integration time and on the rate at which fresh deuterium-rich water might have been added by cometary impact, but **all such models require the original Venusian water inventory to have been at least $\sim$100 times the present value**, equivalent to a global ocean of at least a few metres depth.
 
 This is the strongest direct observational constraint we have that Venus has lost most of its primordial water to space.

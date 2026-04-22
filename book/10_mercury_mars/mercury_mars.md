@@ -682,7 +682,7 @@ Stepping back from the details of each planet, what does the comparison teach us
 
 Both bracket Earth and Venus on the scaling relations of {ref}`lecture03` and {ref}`lecture04`:
 
-- **Cooling rate** scales (very approximately) as $L^2/\kappa$ for diffusive heat loss with $L$ the body size. A factor of two smaller body cools four times faster.
+- **Cooling timescale** scales (very approximately) as $\tau \sim L^2/\kappa$ for diffusive heat loss with $L$ the body size. A factor of two smaller body cools four times faster.
 - **Atmospheric retention** depends exponentially on the escape parameter $\lambda$ from equation {eq}`eq:lambda`, and $\lambda \propto M / (T r_{\mathrm{exo}})$. Smaller and hotter bodies hold less.
 - **Volatile inventory** at formation depends on heliocentric distance through the ice line and through the timing of volatile delivery from outer-disc bodies (compare with {ref}`lecture02`).
 
