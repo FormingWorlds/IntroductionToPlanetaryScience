@@ -736,9 +736,11 @@ The previous iteration (12 lectures, 9 tutorials) provides a foundation to draw 
 
 ## 6. Open Issues — L9/L10 Second-Pass Review Pending Fixes
 
-Date opened: **2026-04-11**. Source: two independent verification sub-agents run in parallel, one per lecture, with broad scope (figures, captions, citations, equations, derivations, internal consistency). Scope of this subsection is L9 (Earth & Venus) and L10 (Mercury & Mars) only. L11–L14 have not yet had a second independent pass. No fixes have been applied yet — this is a parked action list, to be picked up in a future session.
+Date opened: **2026-04-11**. Source: two independent verification sub-agents run in parallel, one per lecture, with broad scope (figures, captions, citations, equations, derivations, internal consistency). Scope of this subsection is L9 (Earth & Venus) and L10 (Mercury & Mars) only. L11–L14 have not yet had a second independent pass.
 
-Totals: **L9 = 19 issues (7 HIGH, 8 MED, 4 LOW). L10 = 20 issues (6 HIGH, 9 MED, 5 LOW). Combined = 39.**
+**Status update 2026-04-22:** First fix arc landed on feature branch `tl/l9-l10-second-review-fixes` (six commits). Tim's three decisions in §6.1 were: (1) Option C — show both Rayleigh regimes, (2) per-group commits, (3) Claude adjudicates G1–G5 with PDF fetches; ask only for the most critical figures. Group F (BibTeX), Group D (equations), Group E (factual updates), Group C (captions), Group A part 1 (Lebrun figure), and Group G part 1 (G3, G4, G5 verifications) are CLOSED. Group A part 2 (seven figures requiring paywalled source PDFs) and Group G part 2 (G1, G2, G6) are DEFERRED — see §6.5 below.
+
+Totals: **L9 = 19 issues (7 HIGH, 8 MED, 4 LOW). L10 = 20 issues (6 HIGH, 9 MED, 5 LOW). Combined = 39.** Of these, 28 are addressed in the first fix arc; 11 deferred.
 
 Both blackboard derivations (L9 Simpson-Nakajima, L10 Jeans escape) were re-verified algebraically and are clean. The one numerical error surfaced in L9 is **not** in the blackboard derivation but in a separate Rayleigh distillation calculation in the Venus D/H section (lines 743–748).
 
@@ -864,13 +866,50 @@ For the record, the second pass confirmed the following as correct end-to-end:
 - **20+ BibTeX entries spot-checked** against the claims they support in each lecture; no citation-to-claim errors beyond the ones listed in Group G above.
 - **All L9 and L10 numerical planetary parameters** (masses, radii, densities, atmospheric compositions, surface temperatures and pressures, rotation periods, semimajor axes, core radii, moment-of-inertia ratios) verified against NASA Fact Sheets and peer-reviewed literature.
 
-### 6.4 Resumption protocol
+### 6.4 First fix arc — closed (commits on `tl/l9-l10-second-review-fixes`)
 
-When picking this up in a new session:
-1. Read this section §6 in full.
-2. Answer the three decisions in §6.1 (Rayleigh α regime, batch scope, group-G handling).
-3. Create feature branch `tl/l9-l10-second-review-fixes`.
-4. Work through Groups A → F (G is blocked on decision 3; H is explicitly out of scope).
-5. For each group, run `make html` to verify Jupyter Book builds cleanly, and re-run `/tmp/check_figures.py` + `/tmp/check_citations.py` after edits if those scripts still exist, otherwise reconstruct from the pattern in `notes_status.md` memory.
-6. Commit per batch scope decided in §6.1 (2). Do not push without explicit confirmation per CLAUDE.md.
-7. After fixes land, update this §6 status to "closed" with a pointer to the fix commits, and fold the key lessons into `notes_status.md` memory.
+| Group | Status | Commit | Items |
+|---|---|---|---|
+| F | closed | `887136e` | F1 add Lebrun2013 entry, F2 remove erroneous Goldblatt arXiv eprint, F3 KiteEpisodic2022 → 2021 rename, F4 NASAESAMSR2024 → 2023 rename + L10 text rephrase |
+| D | closed | `2edb177` | D1 Rayleigh distillation rewritten as Option C (both diffusion-limited and thermal-Jeans regimes shown explicitly), D2 L10 cooling-rate phrased as timescale |
+| E | closed | `0099c3f` | E1 warming 1.2 K → 1.4 K, E2 carbonate inventory scope clarified + bar value corrected, E3 Olympus Mons height phrasing, E4 NO EDIT (memo error: Lawrence+2013 abstract verifies the existing 10^16-10^18 g range) |
+| C | closed | `2e9a273` | All 11 caption rewrites (5 in L9: Honing, Zahnle, Way, Arney, Smrekar; 6 in L10: Plesa, Ehlmann, Wordsworth, Jakosky, Hu, Acuna) |
+| A part 1 | closed | `79acabf` | A6 Lebrun2013 Fig. 12 replaces Nikolaou2019 magma-ocean evolution figure (incl. label rename and old-AVIF removal) |
+| G part 1 | closed | `8ca2ed4` | G3 Wordsworth schematic verified as Fig. 5 of AREPS review, G4 Wicht offset-dipole polarity flipped (south not north), G5 Margot moment-of-inertia caption clarified (0.380 was the 2007 input value, 0.346 the modern value) |
+
+**Memo errors discovered during the fix arc** (worth noting before any third pass):
+
+- E4 Lawrence+2013: memo claimed the paper gives 10^15–10^16 g for Mercury polar ice; ADS abstract verification shows it actually gives 2×10^16 to 10^18 g, matching the lecture text exactly.
+- G3 Wordsworth schematic: memo flagged it as possibly a third-party hand-drawn cartoon; verification against the local AREPS PDF shows it IS Figure 5 of Wordsworth+2016, drawn in Wordsworth's own informal style for the review.
+- F2 Goldblatt2013 arXiv: confirmed via ADS that the paper has no arXiv version at all (memo's flag was correct: the spurious eprint 1301.6674 belongs to Kopparapu+2013).
+
+### 6.5 Deferred items — Group A part 2 and Group G part 2
+
+These were not closed in the first fix arc because they require either source-paper access that was not available in the working session, or a substantive judgement call that Tim wants to make himself. None block course delivery; all are corrections to figure provenance or attribution.
+
+**Group A part 2 (seven figure re-extractions, blocked on paywalled source PDFs)**:
+
+| ID | Lecture fig | Source paper | Why blocked |
+|---|---|---|---|
+| A1 | L9 #6 Lyons+2014 oxygen history | Nature 506, 307 | No arXiv (verified via ADS); paywalled Nature |
+| A2 | L9 #8 Smrekar+2018 Earth/Venus topography | Space Sci Rev 214:88 | No arXiv (verified via ADS); paywalled Springer |
+| A3 | L9 #11 Goldblatt+2013 OLR-vs-T (replaces misattributed Kopparapu) | Nature Geoscience 6, 661 | No arXiv at all (Goldblatt+2013 lacks one); paywalled Nature |
+| A4 | L9 #16 Hamano+2013 two-types | Nature 497, 607 | No arXiv (verified via ADS); paywalled Nature |
+| A5 | L9 #17 Hamano+2013 typeI evolution | Nature 497, 607 | Same as A4 |
+| A7 | L10 #8 MESSENGER MLA polar | Zuber+2012, Science 336, 217 | No arXiv (verified via ADS); paywalled Science. NASA mission imagery may be a workable alternative (PIA catalog) |
+| A8 | L9 #12 Goldblatt+2013 OLR spectrum re-extract (folded from Group B) | Nature Geoscience 6, 661 | Same as A3; the existing AVIF has the x-axis numerical labels and "wavenumber" axis title clipped off entirely, so a tight re-crop alone cannot fix it |
+
+**Group G part 2 (three caption verifications)**:
+
+- G1 Widemann+2023 three-missions render — caption claims background is "Akatsuki UV imaging"; needs Widemann+2023 source PDF to verify.
+- G2 Bibring+2006 phyllosilicate map — caption claims a specific panel identity and crop; needs Bibring+2006 Science 312 PDF to verify.
+- G6 L9 line 929 NC/CC noble-gas dichotomy citation `Zahnle2007` — Tim requested this be flagged for him to adjudicate manually rather than Claude choosing between Marty+2012 / Bekaert+2020 alternatives.
+
+### 6.6 Resumption protocol for the deferred items
+
+When this picks back up:
+1. Read §6.4 first to confirm what is already closed; do not re-do those fixes.
+2. For Group A part 2 and Group G part 2: Tim provides the source PDFs (institutional library access), or confirms which figures should be replaced with NASA mission imagery / public-domain alternatives.
+3. Continue work on the same `tl/l9-l10-second-review-fixes` feature branch; commit per group as before.
+4. After all of Group A part 2 lands, run `jupyter-book build book/` to verify clean build, then update the table in §6.4 and either consolidate this whole §6 down to a single "closed" line in `notes_status.md` memory or delete it.
+5. **Do not push without explicit confirmation** per CLAUDE.md (this repo is not in the auto-push allowlist).
