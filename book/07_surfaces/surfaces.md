@@ -27,10 +27,10 @@ The relative importance of these processes varies dramatically across the solar 
 
 ```{figure} figures/surface_processes_montage.avif
 :name: fig:surface-processes
-:width: 550px
+:width: 500px
 :align: center
 
-The surface of Mars as seen by NASA's *Curiosity* rover, showing aeolian dune deposits sculpted by wind — one of the key exogenic processes shaping planetary surfaces across the solar system. On Mars, wind erosion and deposition dominate the surface today, while ancient volcanism and impacts shaped the deeper geological record. Credit: NASA/JPL-Caltech/MSSS, public domain.
+Viking Orbiter colour mosaic of the Tharsis hemisphere of Mars (PIA00407), used here as an anchor for the four-way taxonomy of surface processes. Endogenic processes are evident in the Tharsis volcanic plateau and its three aligned shield volcanoes (left of centre) and in Valles Marineris, the extensional canyon system stretching across the lower right. Exogenic processes are recorded in the heavily cratered southern highlands (lower left) and in the bright water-ice north polar cap (top). Mars preserves all four major process classes (volcanism, tectonics, impact cratering, erosion) on a single body and is therefore a useful template for the rest of this lecture. Credit: NASA/JPL/USGS, public domain.
 ```
 
 
@@ -126,6 +126,14 @@ This is consistent with the observed sizes of lunar craters formed by $\sim$1 km
 The more complete **pi-scaling framework** of {cite:p}`Holsapple1993` parameterises the transition between the gravity regime and the strength regime (where material cohesion, not gravity, limits crater growth) and accounts for target porosity and impactor properties.
 ```
 
+```{figure} figures/holsapple_piscaling.avif
+:name: fig:holsapple-piscaling
+:width: 550px
+:align: center
+
+Crater pi-scaling, after {cite:t}`Holsapple1993`. The cratering efficiency $\pi_D = D\,(\rho/m)^{1/3}$ is plotted against the gravity-scaled impactor size $\pi_2 = g\,a/v^2$. At small $\pi_2$ (small craters, laboratory impacts), the target's tensile strength $Y$ sets the crater size and $\pi_D$ is independent of $\pi_2$ (red dashed line, **strength regime**). At large $\pi_2$ (planetary-scale craters), gravity confines the ejecta and $\pi_D \propto \pi_2^{-\mu/[3(2+\mu)]}$ (blue dashed line, **gravity regime**). The blackboard derivation (Eq. {eq}`eq:crater-scaling`) recovers the gravity-regime branch in the limit $\mu \to 1$. Curves shown for a competent rocky target ($\mu = 0.55$); the qualitative shape is universal.
+```
+
 
 ### Crater morphology
 
@@ -134,6 +142,14 @@ Craters come in three morphological classes, determined primarily by their diame
 - **Simple craters** ($D \lesssim D_t$): Bowl-shaped depressions with smooth walls and a depth-to-diameter ratio of $\sim$1:5. On the Moon, simple craters have $D \lesssim 15$ km.
 - **Complex craters** ($D_t \lesssim D \lesssim 300$ km on the Moon): Feature central peaks (formed by rebound of the crater floor), terraced walls (from gravitational collapse), and flat floors. The transition from simple to complex occurs because gravity overcomes the strength of the crater walls.
 - **Multi-ring basins** ($D \gtrsim 300$ km): The largest impacts produce concentric ring structures. Examples include the Orientale basin on the Moon (930 km), Caloris on Mercury (1550 km), and the Hellas basin on Mars (2300 km).
+
+```{figure} figures/mercury_caloris_basin.avif
+:name: fig:caloris-basin
+:width: 450px
+:align: center
+
+The Caloris basin on Mercury, $\sim$1550 km in diameter, imaged in enhanced colour by NASA's MESSENGER spacecraft. Caloris is one of the largest and best-preserved multi-ring impact basins in the solar system; the orange interior plains are smooth volcanic deposits emplaced after the impact, while the surrounding annulus shows ejecta and concentric ring structures. The basin's antipode on Mercury contains chaotic "weird terrain" thought to have formed from the focused seismic shock of the same event. Credit: NASA/Johns Hopkins APL/Carnegie Institution of Washington, public domain.
+```
 
 The transition diameter scales inversely with surface gravity:
 
@@ -145,10 +161,10 @@ where $D_{t,\text{Moon}} \approx 15$ km and $g_{\text{Moon}} = 1.62$ m s$^{-2}$.
 
 ```{figure} figures/crater_morphology.avif
 :name: fig:crater-morphology
-:width: 450px
+:width: 600px
 :align: center
 
-The boundary between the lunar highlands and Mare Imbrium as imaged by NASA's Lunar Reconnaissance Orbiter (LRO), showing impact craters of various sizes and morphologies. Smaller craters are simple bowl-shaped depressions, while larger craters show more complex features including central peaks and terraced walls. The flat mare surface (lower right) is flooded by basaltic lava flows that buried earlier craters. Credit: NASA/GSFC/Arizona State University, public domain.
+Oblique view of the central peak of Tycho Crater (~85 km diameter), imaged by NASA's Lunar Reconnaissance Orbiter Camera (LROC) in low Sun illumination. The prominent ~2 km tall central peak in the foreground formed by gravitational rebound of the crater floor immediately after the impact, and the surrounding rim shows the terraced walls characteristic of complex craters (visible as stepped scarps in the background). The transition from simple bowl-shaped craters to complex craters with central peaks and terraced walls occurs near $D_t \approx 15$ km on the Moon and scales inversely with surface gravity (Eq. {eq}`eq:transition-diameter`). Credit: NASA/GSFC/Arizona State University, public domain.
 ```
 
 
@@ -180,6 +196,14 @@ Key results from crater counting include:
 The lunar farside as imaged by NASA's Lunar Reconnaissance Orbiter, showing a heavily cratered surface. The high crater density of the farside highlands ($>$4 Gyr) contrasts with the smoother nearside maria (3.1–3.9 Gyr), illustrating how crater counting reveals relative and absolute surface ages. Forward references: crater chronology is applied to Mars in {ref}`lecture10`. Credit: NASA/GSFC/Arizona State University, public domain.
 ```
 
+```{figure} figures/neukum_chronology.avif
+:name: fig:neukum-chronology
+:width: 600px
+:align: center
+
+The lunar crater chronology of {cite:t}`Neukum2001`. The black curve gives the cumulative density of craters with $D \geq 1$ km expected on a surface of model age $T$ (in Gyr); red points mark Apollo and Luna sample sites where radiometric ages of returned basalts and breccias calibrate the curve. The function has two regimes: a roughly linear segment for $T \lesssim 3$ Gyr (steady impact flux) and a steep exponential upturn at $T \gtrsim 3.5$ Gyr that reflects the much higher impact rate during the early bombardment of the inner solar system. Surface ages on other bodies are estimated by counting craters in a chosen size bin and inverting this relation, with corrections for the local impact flux and gravity {cite:p}`Neukum2001`.
+```
+
 
 ## Volcanism
 
@@ -207,7 +231,7 @@ The key variable is **magma viscosity**, which is controlled primarily by the $\
 :width: 500px
 :align: center
 
-Jupiter's moon Io as observed across multiple NASA missions spanning decades. Io is the most volcanically active body in the solar system, with $\sim$400 active volcanic centres powered by tidal heating from its orbital resonance with Europa and Ganymede. The colourful surface — yellows, reds, and blacks — is composed of sulfur and silicate lava deposits that are continuously resurfaced, giving Io a mean surface age of $<$1 Myr. Credit: NASA/JPL-Caltech, public domain.
+Full-disk view of Jupiter's moon Io from NASA's Galileo spacecraft (PIA00583), revealing a surface dominated by sulfur and silicate volcanism. Yellow, white, and pale-green regions are sulfur and sulfur-dioxide deposits; darker patches mark recent silicate lava flows and active volcanic centres (a few of which have visible halos of fresh pyroclastic deposits). With $\sim$400 active volcanic centres powered by tidal heating in the Laplace resonance with Europa and Ganymede, Io's mean surface age is below 1 Myr {cite:p}`dePaterLissauer2010`. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
 ```
 
 | Body | Volcanic style | Driving mechanism | Example landforms |
@@ -223,7 +247,23 @@ Jupiter's moon Io as observed across multiple NASA missions spanning decades. Io
 :width: 450px
 :align: center
 
-Olympus Mons on Mars — the largest volcano in the solar system — seen from above in this Viking Orbiter colour mosaic. The shield volcano has a base diameter of $\sim$600 km and rises $\sim$21.9 km above the surrounding plains. The caldera complex at the summit (centre) contains multiple nested collapse craters formed by episodic magma withdrawal. The steep basal escarpment (up to 6 km high) is visible as the sharp boundary encircling the edifice. Olympus Mons grew to this immense size because Mars lacks plate tectonics — the volcanic source remained fixed beneath the lithosphere for billions of years. Credit: NASA/JPL/USGS, public domain.
+Olympus Mons on Mars, the largest volcano in the solar system, seen from above in this Viking Orbiter colour mosaic. The shield volcano has a base diameter of $\sim$600 km and rises $\sim$21.9 km above the surrounding plains. The caldera complex at the summit (centre) contains multiple nested collapse craters formed by episodic magma withdrawal. The steep basal escarpment (up to 6 km high) is visible as the sharp boundary encircling the edifice. Olympus Mons grew to this immense size because Mars lacks plate tectonics: the volcanic source remained fixed beneath the lithosphere for billions of years. Credit: NASA/JPL/USGS, public domain.
+```
+
+```{figure} figures/olympus_mons_size_comparison.svg
+:name: fig:olympus-comparison
+:width: 600px
+:align: center
+
+Cross-sectional comparison of Olympus Mons (Mars), Mauna Kea (Hawaii, measured from its base on the ocean floor), and Mount Everest (Earth). At ~21.2 km elevation and ~600 km base diameter, Olympus Mons stands roughly five times taller than Mauna Kea and dwarfs Earth's tallest subaerial mountain. The contrast is set by the absence of plate tectonics on Mars: a stationary mantle plume has continuously fed the same volcanic edifice for billions of years, whereas the Pacific plate carries Hawaiian volcanoes off the underlying hotspot in $\sim$10$^6$ yr, capping their possible size. Vertical scale exaggerated for clarity. Credit: Wikimedia Commons, public domain.
+```
+
+```{figure} figures/venus_magellan.avif
+:name: fig:venus-magellan
+:width: 450px
+:align: center
+
+Hemispheric view of Venus from NASA's Magellan radar mission (1990–1994), with colour from Soviet Venera lander surface measurements. Magellan used synthetic aperture radar to penetrate Venus's permanent cloud deck and map 98% of the surface at $\sim$100 m resolution, revealing more than 1600 volcanic centres, extensive lava plains covering $\sim$80% of the surface, and a remarkably uniform crater population implying a global mean surface age of only 300–700 Myr. Venus's surface geology is discussed in detail in {ref}`lecture09`. Credit: NASA/JPL, public domain.
 ```
 
 
@@ -261,14 +301,22 @@ The stagnant-lid regime is the *default* outcome of mantle convection with stron
 
 **Venus** shows a puzzling tectonic style. The uniform crater density across the surface implies a mean age of $\sim$300–700 Myr, leading to the **episodic resurfacing hypothesis**: Venus may experience periodic catastrophic overturns where the stagnant lid founders and the entire surface is volcanic resurfaced in a geologically short interval. Between these episodes, the surface remains tectonically quiet. This idea remains debated — we will discuss Venus's geology in detail in {ref}`lecture09`.
 
-**Mercury** has undergone significant **global contraction** as its large iron core cooled and solidified over time, shrinking the planet's radius by $\sim$7 km. This contraction compressed the crust, producing **lobate scarps** — thrust faults up to several hundred kilometres long and 1–3 km high, discovered by Mariner 10 and mapped extensively by MESSENGER. We will discuss Mercury's surface in {ref}`lecture10`.
+**Mercury** has undergone significant **global contraction** as its large iron core cooled and solidified over time, shrinking the planet's radius by $\sim$7 km. This contraction compressed the crust, producing **lobate scarps**, thrust faults up to several hundred kilometres long and 1–3 km high, discovered by Mariner 10 and mapped extensively by MESSENGER. We will discuss Mercury's surface in {ref}`lecture10`.
+
+```{figure} figures/mercury_lobate_scarp.avif
+:name: fig:mercury-scarp
+:width: 400px
+:align: center
+
+A lobate scarp near Pourquoi-Pas crater on Mercury, imaged by the MESSENGER spacecraft. The scarp (running diagonally across the field of view) is the surface expression of a thrust fault formed during global contraction as Mercury's interior cooled and the radius shrank by $\sim$7 km. The scarp clearly cross-cuts and offsets pre-existing impact craters, demonstrating that the contraction continued long after the early bombardment. Credit: NASA/Johns Hopkins APL/Carnegie Institution of Washington, public domain.
+```
 
 ```{figure} figures/valles_marineris.avif
 :name: fig:valles-marineris
-:width: 600px
+:width: 650px
 :align: center
 
-Valles Marineris, the solar system's largest canyon system, stretching $\sim$4000 km across the Martian surface — roughly the distance from Lisbon to Moscow. The canyon is up to 7 km deep and 200 km wide, dwarfing Earth's Grand Canyon. It formed primarily through extensional rifting associated with the Tharsis volcanic bulge, with subsequent widening by mass wasting and possibly fluvial erosion. This Viking Orbiter mosaic shows the full extent of the canyon system. Credit: NASA/JPL/USGS, public domain.
+Valles Marineris, the solar system's largest canyon system, stretching $\sim$4000 km across the Martian surface (roughly the distance from Lisbon to Moscow). The canyon is up to 7 km deep and 200 km wide, dwarfing Earth's Grand Canyon. It formed primarily through extensional rifting associated with the Tharsis volcanic bulge to the west, with subsequent widening by mass wasting and possibly fluvial erosion. This Viking Orbiter hemispheric mosaic (PIA00422) places the canyon within its broader regional context, including the Tharsis Montes (left) and the chaotic terrain at the canyon's eastern outflow (right). Credit: NASA/JPL/USGS, public domain.
 ```
 
 
@@ -284,20 +332,54 @@ Wind-driven erosion and deposition require an atmosphere with sufficient density
 - **Titan:** Vast equatorial dune fields composed of organic particles (tholins) produced by atmospheric photochemistry. The dunes are longitudinal, up to 150 m tall and hundreds of kilometres long.
 - **Venus:** Despite its dense atmosphere, surface winds are only $\sim$1 m s$^{-1}$ due to the sluggish near-surface dynamics, limiting aeolian activity. However, the thick atmosphere allows even these slow winds to mobilise fine particles.
 
+Repeat HiRISE imaging of Martian dune fields from the Mars Reconnaissance Orbiter has shown that these dunes migrate at sand fluxes comparable to those of terrestrial dunes despite Mars's $\sim$100$\times$ thinner atmosphere, implying that the threshold wind speed for grain saltation is much lower than previously assumed {cite:p}`Bridges2012`.
+
+```{figure} figures/mars_dunes_bridges.avif
+:name: fig:mars-dunes
+:width: 600px
+:align: center
+
+A streaming sand sheet ("river of sand") in a Mars channel imaged by HiRISE on the Mars Reconnaissance Orbiter. Time-resolved imaging of dune fields like this established that Martian sand fluxes can match terrestrial values despite the thin atmosphere, revising long-standing estimates of the wind threshold for grain saltation on Mars {cite:p}`Bridges2012`. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
+```
+
+```{figure} figures/titan_dunes.avif
+:name: fig:titan-dunes
+:width: 600px
+:align: center
+
+Cassini Synthetic Aperture Radar (SAR) image of longitudinal dune fields in the Shangri-La region near Titan's equator (PIA20710). The dark, parallel ridges are dunes of organic particles (tholins) that settled out of Titan's atmospheric photochemistry; they reach up to $\sim$150 m in height and stretch hundreds of kilometres along the prevailing winds. Bright patches are topographic high-standing islands of water-ice bedrock that the dune-forming sand flows around. Credit: NASA/JPL-Caltech/ASI, public domain.
+```
+
 ### Fluvial (water) processes
 
 Liquid water is the most powerful erosive agent on Earth, and evidence for past fluvial activity on Mars is one of the most important discoveries in planetary science:
 
 - **Earth:** Rivers, glacial meltwater, and coastal waves continuously reshape the surface. The Grand Canyon was carved by the Colorado River over $\sim$5–6 Myr.
 - **Mars:** **Valley networks** on the Noachian-aged southern highlands ($>$3.7 Ga) resemble terrestrial river drainage systems, implying sustained liquid water flow. **Outflow channels** (e.g., Ares Vallis, Kasei Valles) are enormous flood features, hundreds of kilometres long and tens of kilometres wide, carved by catastrophic releases of groundwater {cite:p}`Grotzinger2014`. These features are discussed further in {ref}`lecture10`.
-- **Titan:** Saturn's largest moon has **methane rivers** that carve channels into its icy surface — the Huygens probe imaged rounded ice pebbles in a dry riverbed during its 2005 landing. Titan's methane hydrological cycle is the only known active fluvial system beyond Earth.
+- **Titan:** Saturn's largest moon has **methane rivers** that carve channels into its icy surface. The Huygens probe imaged rounded ice pebbles in a dry riverbed during its 2005 landing. Titan's methane hydrological cycle is the only known active fluvial system beyond Earth.
+
+```{figure} figures/mars_outflow_aram.avif
+:name: fig:mars-outflow
+:width: 400px
+:align: center
+
+A Martian outflow channel cutting through Aram Chaos. The braided streamlined islands and broad scoured trough are the geomorphological signature of catastrophic flood discharges, plausibly fed by sudden release of subsurface ice or groundwater on early Mars {cite:p}`Grotzinger2014`. Such channels are tens of kilometres wide and hundreds of kilometres long, dwarfing any terrestrial flood feature, and are distinct from the dendritic valley networks ({numref}`fig:mars-valley-networks`) which formed under more sustained, lower-discharge conditions. Credit: NASA/JPL-Caltech/MSSS, public domain.
+```
+
+```{figure} figures/titan_huygens_surface.avif
+:name: fig:titan-huygens
+:width: 400px
+:align: center
+
+Surface image returned by ESA's Huygens probe during its 14 January 2005 landing on Titan: the only in-situ image ever taken from the surface of an outer-solar-system body. The rounded, decimetre-scale "rocks" are blocks of water-ice rounded by methane fluvial transport; the surface is a damp dark plain of methane-soaked organic sediment in a dried-out riverbed. Together with the descent imagery showing dendritic drainage networks, this image confirmed that liquid methane actively shapes Titan's surface today. Credit: ESA/NASA/JPL-Caltech/University of Arizona, public domain.
+```
 
 ```{figure} figures/mars_valley_networks.avif
 :name: fig:mars-valley-networks
-:width: 500px
+:width: 600px
 :align: center
 
-Fluvial channels in Mars's Margaritifer Terra region, imaged by NASA's Mars Reconnaissance Orbiter. These dendritic drainage patterns resemble terrestrial river networks and provide evidence for sustained liquid water flow on early Mars during the Noachian period ($>$3.7 Ga). Such valley networks are concentrated in Mars's ancient southern highlands and are among the strongest geological evidence that the early Martian climate was warmer and wetter than today. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
+Branching valley networks in the Martian highlands imaged by NASA's Viking Orbiter (PIA02810). The dendritic tributary pattern, with multiple stream orders feeding into trunk valleys, closely resembles terrestrial fluvial drainage and is among the strongest geomorphological evidence for sustained surface runoff (and hence precipitation) during the Noachian period ($>$3.7 Ga) on early Mars {cite:p}`Ansan2006,Grotzinger2014`. Such networks are concentrated in the ancient southern highlands and are central to the case that early Mars had a warmer and wetter climate than today. Credit: NASA/JPL/USGS, public domain.
 ```
 
 ### Glacial processes
@@ -332,7 +414,7 @@ Every mineral has a characteristic pattern of absorption features in the visible
 :width: 600px
 :align: center
 
-Six views of the Nili Fossae region on Mars from NASA's CRISM (Compact Reconnaissance Imaging Spectrometer for Mars) instrument on the Mars Reconnaissance Orbiter. Different colour composites highlight different mineral signatures: iron- and magnesium-rich phyllosilicates (clays), olivine, and carbonate minerals are mapped from their characteristic near-infrared absorption features. These minerals formed through aqueous alteration of basaltic rock, providing some of the strongest mineralogical evidence for past liquid water on Mars. Credit: NASA/JPL-Caltech/Johns Hopkins APL, public domain.
+Two complementary views of carbonate-bearing terrain near Nili Fossae on Mars (PIA19816). (a) Thermal-infrared composite from the THEMIS instrument on Mars Odyssey, showing surface morphology and thermal-inertia variations. (b) Spectral classification map from the CRISM instrument on the Mars Reconnaissance Orbiter, where colour codes indicate the dominant mineralogy: Mg-carbonates (green/blue), Mg/Fe-phyllosilicates (clays), and unaltered basalt. The carbonates and clays form by aqueous alteration of basaltic crust and provide direct mineralogical evidence for sustained liquid water on early Mars {cite:p}`Ehlmann2008,Grotzinger2014`. Credit: NASA/JPL-Caltech/ASU/JHU APL, public domain.
 ```
 
 ### Radar imaging (SAR)
@@ -358,12 +440,20 @@ Precise tracking of spacecraft orbits reveals variations in a body's gravitation
 
 We will discuss gravity field measurements and their interpretation further in {ref}`lecture08`.
 
-```{figure} figures/mars_topography.avif
-:name: fig:mars-topography
-:width: 550px
+```{figure} figures/grail_crustal_thickness.avif
+:name: fig:grail-crust
+:width: 600px
 :align: center
 
-Global topographic map of Mars from the Mars Orbiter Laser Altimeter (MOLA), with colour indicating elevation: blue/green for lowlands, yellow/red for highlands, and white for the highest elevations. The Tharsis bulge with its four giant volcanoes dominates the western hemisphere, Valles Marineris stretches across the equator, and the Hellas impact basin (the deepest point on Mars at $\sim$8.2 km below datum) is visible in the southern hemisphere. The $\sim$6 km elevation difference between the northern lowlands and southern highlands — the **hemispheric dichotomy** — remains one of the major unsolved problems in Martian geology. Credit: NASA/JPL/GSFC, public domain.
+Lunar crustal thickness derived from the GRAIL mission, shown for the nearside (left) and farside (right) hemispheres {cite:p}`Wieczorek2013`. GRAIL measured the Moon's gravity field at unprecedented precision by tracking the inter-spacecraft distance between two co-orbiting satellites; combined with topography, the gravity solution yields the depth to the crust-mantle interface. The map reveals a $\sim$30 km mean crustal thickness with strong thinning beneath the largest impact basins (deep blue), thicker farside crust, and the Procellarum KREEP Terrane on the nearside (cooler colours within the Procellarum outline). Credit: NASA/MIT/GSFC/JPL-Caltech, public domain.
+```
+
+```{figure} figures/mars_topography.avif
+:name: fig:mars-topography
+:width: 650px
+:align: center
+
+Global cylindrical topographic map of Mars from the Mars Orbiter Laser Altimeter (MOLA) on Mars Global Surveyor {cite:p}`Smith2001`. Elevations span $\sim$21 km, from the summit of Olympus Mons (white, left) to the floor of the Hellas basin ($\sim$8 km below datum, deep blue, lower right). The Tharsis bulge and its four shield volcanoes dominate the western hemisphere; Valles Marineris stretches eastward across the equator. The $\sim$6 km elevation difference between the cratered southern highlands and the smooth northern lowlands (the **hemispheric dichotomy**) remains one of the major unsolved problems in Martian geology. Credit: NASA/JPL/GSFC/MOLA Science Team, public domain.
 ```
 
 
@@ -382,7 +472,7 @@ The Hayabusa2 (asteroid Ryugu) and OSIRIS-REx (asteroid Bennu) sample return mis
 :width: 400px
 :align: center
 
-Apollo 11 astronaut Buzz Aldrin on the lunar surface in July 1969. The fine-grained lunar regolith — a 5–15 m thick layer of unconsolidated debris produced by billions of years of meteorite impacts — is visible as the grey surface material. Bootprints and equipment disturbances in the regolith have been preserved essentially unchanged for over 50 years due to the absence of wind or water erosion on the Moon. Credit: NASA/Apollo 11, public domain.
+Apollo 11 photograph AS11-40-5878 of an astronaut bootprint in the lunar regolith, taken by Buzz Aldrin during the first crewed lunar EVA on 20 July 1969 as part of an in-situ soil mechanics experiment. The cohesive, fine-grained regolith preserves the boot impression in sharp relief, demonstrating both its low bearing strength and the absence of erosion (no wind, water, or atmosphere). Such bootprints will remain visible on the lunar surface for millions of years. Credit: NASA/Apollo 11, public domain.
 ```
 
 ### Space weathering
@@ -418,9 +508,25 @@ Jupiter's moon Europa ($R \approx 1561$ km) possesses a **global ocean** $\sim$1
 
 Hubble Space Telescope observations have detected possible water vapour plumes above Europa's surface {cite:p}`Sparks2017`, though these detections are intermittent and less dramatic than Enceladus's persistent geysers. NASA's **Europa Clipper** mission (launched 2024) will perform dozens of close flybys to characterise the ice shell, ocean, and habitability.
 
+```{figure} figures/europa_chaos.avif
+:name: fig:europa-chaos
+:width: 450px
+:align: center
+
+Galileo SSI image of Europa's surface near Pwyll crater (the bright ray system at lower right), showing the network of dark double ridges and lineae that crisscross the moon's icy crust. The criss-crossing lineae record successive episodes of fracturing and resurfacing as tidal stresses flexed the brittle ice shell over a $\sim$100 km deep subsurface ocean {cite:p}`NimmoPappalardo2016`. Europa's crater density implies a mean surface age of only 40–90 Myr, making it among the youngest surfaces in the solar system. Credit: NASA/JPL-Caltech/University of Arizona/University of Colorado, public domain.
+```
+
 ### Triton
 
-Neptune's largest moon Triton shows **nitrogen geysers** that were observed by Voyager 2 during its 1989 flyby — plumes of nitrogen gas and dark dust rising $\sim$8 km above the surface before being carried downwind by thin atmospheric currents. Triton's very young surface, retrograde orbit (suggesting it is a captured Kuiper Belt object), and possible subsurface ocean make it an intriguing target for future exploration.
+Neptune's largest moon Triton shows **nitrogen geysers** that were observed by Voyager 2 during its 1989 flyby: plumes of nitrogen gas and dark dust rising $\sim$8 km above the surface before being carried downwind by thin atmospheric currents. Triton's very young surface, retrograde orbit (suggesting it is a captured Kuiper Belt object), and possible subsurface ocean make it an intriguing target for future exploration.
+
+```{figure} figures/triton_voyager.avif
+:name: fig:triton
+:width: 450px
+:align: center
+
+Voyager 2 colour mosaic of Neptune's moon Triton (PIA00317), captured during the 1989 flyby. The pinkish southern polar cap (lower half) is a thin $\mathrm{N_2}$/$\mathrm{CH_4}$ frost; the dark streaks pointing northeast across the cap are wind-deposited dust from active nitrogen geysers, the only confirmed cryovolcanic plumes outside Enceladus and Europa. North of the cap, the "cantaloupe terrain" of dimples and ridges is unique in the solar system and remains poorly understood. Triton's retrograde orbit suggests it is a captured Kuiper-belt object, making it a probable analogue for Pluto-class dwarf planets. Credit: NASA/JPL/Voyager 2, public domain.
+```
 
 ```{figure} figures/enceladus_cryovolcanism.avif
 :name: fig:enceladus-cryovolcanism
@@ -438,6 +544,14 @@ NASA's Perseverance rover, operating in Jezero crater since 2021, has confirmed 
 The **DART** (Double Asteroid Redirection Test) mission in 2022 demonstrated the first successful planetary defence experiment: a kinetic impactor deliberately crashed into the asteroid moonlet Dimorphos, changing its orbital period around the larger asteroid Didymos by 33 minutes {cite:p}`Thomas2023`. The result confirmed that kinetic impact is a viable deflection strategy for hazardous near-Earth asteroids, and the impact ejecta provided new insights into the mechanical properties of rubble-pile asteroid surfaces.
 
 Ongoing monitoring of Io by the Juno extended mission and ground-based adaptive optics has revealed new details of Io's volcanic activity, including the discovery of previously unknown eruption sites and constraints on the spatial distribution of heat flow. For Venus, planned radar mapping missions (VERITAS, EnVision) in the early 2030s will provide the first high-resolution surface data since Magellan, enabling tests of whether Venus has experienced recent or ongoing volcanic activity ({ref}`lecture09`).
+
+```{figure} figures/io_nusku_change.avif
+:name: fig:io-nusku
+:width: 600px
+:align: center
+
+JunoCam imagery of the Nusku volcanic region on Io taken two months apart in early 2024 (PIA26488). A new bright red ring of fresh sulfur-rich pyroclastic deposits appears around the central vent in the April image but is absent in February, recording a single eruptive event observed in real time. JunoCam now acquires high-resolution Io flyby data each Juno orbit, providing the first sustained spatial monitoring of Io's volcanism since Galileo. Credit: NASA/JPL-Caltech/SwRI/MSSS/Jason Perry, public domain.
+```
 
 
 ## References
