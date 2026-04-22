@@ -66,7 +66,7 @@ Holding this thought is essential for understanding Venus, where there is no obs
 
 Schematic of the carbon cycle on a stagnant-lid Venus from {cite:t}`Honing2021`.
 **Left:** the three carbon reservoirs (mantle, crust, atmosphere) are coupled by mantle degassing (volcanism), surface weathering of fresh basaltic crust, and decarbonation of buried carbonate when the crust heats up.
-**Right:** the destabilising positive feedback loop. Increasing surface temperature drives a deeper decarbonation depth, which boosts atmospheric $\mathrm{CO_2}$, which raises the surface temperature further. Without subduction, there is no return leg to the mantle to break the loop.
+**Right:** the destabilising positive feedback loop. Increasing surface temperature shifts the geotherm upward, which pushes the decarbonation isotherm to *shallower* depth in the crust, releasing buried $\mathrm{CO_2}$ to the atmosphere and raising the surface temperature further. Without subduction, there is no return leg to the mantle to break the loop.
 Reproduced from {cite:t}`Honing2021`.
 ```
 
@@ -345,7 +345,7 @@ On this view, Venus may once have had Earth-like mobile-lid tectonics (when its 
 :width: 85%
 :align: center
 
-Comparative thermal evolution of Venus over $\sim$4.5 Gyr from a numerical model that switches between tectonic regimes, showing (top) volcanic production rate in km$^3$/Myr, (middle) mantle potential temperature, and (bottom) surface temperature.
+Comparative thermal evolution of Venus over $\sim$4.5 Gyr from a numerical model that switches between tectonic regimes, showing (top) volcanic production rate in km$^3$/Myr, (middle) mantle temperature, and (bottom) surface temperature.
 The model traverses successive **stagnant-lid**, **mobile-lid**, **stagnant-lid**, and **episodic-lid** intervals (vertical bars).
 The episodic-lid phase produces large pulses of volcanism and resurfacing separated by quiet intervals and is consistent with the observed crater density on present-day Venus.
 After {cite:t}`Smrekar2018`.
@@ -469,7 +469,7 @@ The robustness of the limit across very different model assumptions is one of th
 Surface temperature as a function of net insolation plus geothermal heat flow for a steam atmosphere over a magma ocean, from {cite:t}`Zahnle2007` (after {cite:t}`Kasting1988` and Abe \& Matsui 1988).
 The radiated cooling rate is equal to the sum of absorbed sunlight and geothermal heat flow.
 The plot shows the surface temperature as a function of this combined heat input for different amounts of atmospheric $\mathrm{H_2O}$ (in bars).
-The runaway greenhouse threshold appears as a horizontal asymptote at $\sim$310 W/m$^2$ above which the steam atmosphere cannot cool faster than it is heated; for net heat fluxes exceeding this value, the surface stays molten.
+The runaway greenhouse threshold appears as a *vertical* boundary near $\sim$300 W/m$^2$ on the heat-flow axis (the "Runaway Greenhouse Limit" line in the figure): no steady state with a solid crust exists to its left, and for net heat fluxes only modestly above this value the surface stays molten beneath a thick steam atmosphere.
 Reproduced from {cite:t}`Zahnle2007`.
 ```
 
@@ -657,7 +657,7 @@ Three-dimensional climate model simulations of the surface air temperature on a 
 **Panel (a)**: Venus at $2.9$ Ga with $75\%$ of present solar irradiance.
 **Panel (b)**: Venus at $0.715$ Ga with $92\%$ of present irradiance.
 **Panel (c)**: Same as (a) but with modern Earth topography in place of Venusian topography.
-**Panel (d)**: $2.9$ Ga simulation with Earth-like rotation period ($16\times$ Venus' day length).
+**Panel (d)**: same as (a) but with a 16-Earth-day sidereal rotation period (about $15\times$ faster than Venus' present spin, though still $16\times$ slower than Earth's).
 Surface temperatures range from $-22^\circ$C to $40^\circ$C across the simulations, suggesting that an early Venus could have hosted long-lived liquid surface water under reasonable model assumptions.
 Reproduced from {cite:t}`Way2016`.
 ```
@@ -941,8 +941,9 @@ Reproduced from {cite:t}`Dauphas2017`.
 :width: 90%
 :align: center
 
-Vertical profiles of haze particle properties for an Archean Earth atmosphere with $\mathrm{CH_4/CO_2} = 0.2$, from {cite:t}`Arney2017`.
-Panels show particle number density (A), temperature profiles for different haze conditions (B), particle radii (C), particle density flux (D), aerosol opacity (E), and condensation rates (F).
+Vertical profiles for an Archean Earth atmosphere with $\mathrm{CH_4/CO_2} = 0.2$ from the iterated photochemistry-haze model of {cite:t}`Arney2017`.
+The six panels (top row left-to-right, then middle, then bottom) show temperature, water mixing ratio, haze particle number density, haze particle radii, ethane mixing ratio, and methane mixing ratio, each plotted against altitude.
+The five overplotted curves (1st through last iteration of the model coupling) show how the chemistry-haze coupling converges.
 The hazy organic atmosphere of the Archean Earth provided UV shielding for the early biosphere and may have contributed a non-trivial greenhouse forcing in the faint-Sun era.
 The "Pale Orange Dot" framing is a useful comparison for thinking about how a hazy biosphere on an Earth-like planet might appear from afar.
 Reproduced from {cite:t}`Arney2017`.
