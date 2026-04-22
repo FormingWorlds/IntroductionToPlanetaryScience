@@ -352,7 +352,7 @@ Mars' topography, mapped at uniform vertical resolution by MOLA between 1997 and
 
 The second large-scale feature is **Tharsis**, a continent-sized volcanic province covering roughly a quarter of Mars' surface and standing several kilometres above the Martian datum. Tharsis hosts the largest volcanoes in the solar system, including:
 
-- **Olympus Mons**, a shield volcano $\sim 21.9\ \mathrm{km}$ tall above the surrounding plains ($\sim 21\ \mathrm{km}$ above the Mars datum) and roughly $600\ \mathrm{km}$ in diameter at its base;
+- **Olympus Mons**, a shield volcano whose summit reaches $\sim 21.2\ \mathrm{km}$ above the Mars datum (areoid) and $\sim 21.9\ \mathrm{km}$ above its surrounding plains, with a base diameter of roughly $600\ \mathrm{km}$;
 - The three Tharsis Montes (**Arsia, Pavonis, Ascraeus**), each $\sim 14$--$18\ \mathrm{km}$ tall and aligned along the Tharsis crest;
 - **Alba Mons**, a much lower-relief but enormous volcanic edifice covering several million $\mathrm{km^2}$.
 
