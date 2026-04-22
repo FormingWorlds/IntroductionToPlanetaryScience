@@ -628,18 +628,17 @@ Type II planets (closer to the star) never reach this end-state because the abso
 Reproduced from {cite:t}`Hamano2013`.
 ```
 
-```{figure} figures/nikolaou2019_magma_ocean_evolution.avif
-:name: fig:nikolaou-magma
-:width: 85%
+```{figure} figures/lebrun2013_magma_ocean_evolution.avif
+:name: fig:lebrun-magma
+:width: 60%
 :align: center
 
-Time evolution of a crystallising magma ocean coupled to its outgassed steam atmosphere from {cite:t}`Nikolaou2019`, for three end-member volatile budgets (short-term/poor, short-term/rich, long-term/rich).
-**Panel A:** potential temperature $T_p$ (solid) and surface temperature $T_s$ (dashed) drop from $\sim 4000$ K to $\sim 1500$ K over $\sim 10^6$ years.
-**Panel B:** depth of the molten layer in km.
-**Panel C:** convective heat flux through the surface in W/m$^2$.
-**Panel D:** Rayleigh number of the magma ocean.
-The volatile-rich, long-term case persists for $\sim 10^7$ years before the surface freezes, giving the steam atmosphere ample time to photolyse and lose hydrogen to space, the foundation of the early-loss scenario for Venus.
-Reproduced from {cite:t}`Nikolaou2019`.
+Time evolution of potential temperature (black line) and surface temperature (grey line) for a crystallising magma ocean coupled to its outgassed steam atmosphere, from {cite:t}`Lebrun2013` Fig. 12, for an Earth-mass planet placed at the orbital distance of (a) Venus, (b) the Earth, and (c) Mars.
+The three vertical regions ("totally molten", "partially molten", "mush") track the planetary mantle as it crystallises; condensation of water vapour occurs at the boundary between the partially molten and mush stages.
+The dashed vertical line in each panel marks the time at which the magma ocean reaches $98\%$ solidification.
+At Venus' distance (panel a) the mush stage is reached after $\sim 10$ Myr; at Earth's distance (panel b) after $\sim 1$ Myr; at Mars' distance (panel c) after only $\sim 10$ kyr.
+The longer magma-ocean lifetime at smaller heliocentric distances gives the steam atmosphere ample time to photolyse and lose hydrogen to space, providing the foundation of the early-loss scenario for Venus.
+{cite:t}`Lebrun2013` further showed (their Fig. 11, not shown) that below a critical distance of about $0.66$ AU around a Sun-like star, an Earth-mass planet's magma ocean cannot freeze at all and the planet remains molten indefinitely; Venus at $0.72$ AU sits just outside this limit.
 ```
 
 The **late loss** scenario, championed by {cite:t}`Way2016`, takes the opposite view.
