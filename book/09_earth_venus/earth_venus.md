@@ -178,7 +178,7 @@ Anthropogenic climate change is best understood as a planetary-scale forcing exp
 The atmospheric concentration of $\mathrm{CO_2}$ has risen from a pre-industrial value of about $280$ ppm to over $420$ ppm in $2024$, a level higher than at any time in the last $\sim$3 Myr based on direct ice-core records {cite:p}`NOAACO2,IPCC2021`.
 The current rate of change, roughly $2\text{--}3$ ppm/yr, is approximately $100$ times faster than the natural rate of $\mathrm{CO_2}$ rise during deglaciation at the end of the last ice age.
 The corresponding radiative forcing from this $\mathrm{CO_2}$ increase, plus other anthropogenic greenhouse gases, is about $2$ W/m$^2$ at the top of the atmosphere {cite:p}`IPCC2021`.
-The observed surface temperature response, about $1.2$ K of warming since 1880, is consistent with what radiative-convective climate models predict for this forcing once ocean heat uptake is accounted for.
+The observed surface temperature response, about $1.4$ K of warming since the late nineteenth century {cite:p}`IPCC2021`, is consistent with what radiative-convective climate models predict for this forcing once ocean heat uptake is accounted for.
 
 ```{figure} figures/lyons2014_oxygen_history.avif
 :name: fig:lyons-oxygen
@@ -207,7 +207,7 @@ A second oxygenation step in the late Neoproterozoic raised $\mathrm{O_2}$ to ne
 
 
 Carbonate platforms, formed primarily by the calcification of marine organisms over the past $\sim$540 Myr, represent a substantial planetary $\mathrm{CO_2}$ sink.
-On Earth, the total carbon stored in carbonate rocks is roughly $1.6 \times 10^{20}$ kg, equivalent to a $\mathrm{CO_2}$ partial pressure of around $60\text{--}90$ bar if it were all returned to the atmosphere.
+On Earth, the total carbon stored in surface and crustal reservoirs (overwhelmingly in marine carbonate sediments, with smaller contributions from organic-rich shales and the dispersed carbon in oceanic crust) is on the order of $10^{20}$ kg, equivalent to a $\mathrm{CO_2}$ partial pressure of order $\sim 100$ bar if it were all returned to the atmosphere {cite:p}`Catling2017`.
 This is a striking number, because it is comparable in order of magnitude to the $92$ bar of $\mathrm{CO_2}$ in the present-day Venus atmosphere.
 The arithmetic is suggestive but not exact: it tells us that Earth and Venus probably acquired comparable carbon inventories during accretion, and that the difference in atmospheric carbon today is largely due to where the carbon ended up (in carbonates on Earth, in the atmosphere on Venus) rather than how much was originally present.
 We will return to this in Part 3.
@@ -870,7 +870,7 @@ With the source running and the sink shut down, atmospheric $\mathrm{CO_2}$ accu
 In the absence of subduction, even if the weathering sink were somehow restored (by a hypothetical re-watering of the planet), there would be no return leg to recycle the carbon back to the mantle, and the system would not relax to a thermostat-controlled steady state.
 
 The arithmetic of the carbon inventory is striking.
-Earth's total surface and crustal carbon, including the carbonate platforms accumulated over $\sim$540 Myr of marine biology, is roughly $1.6 \times 10^{20}$ kg, equivalent to a $\mathrm{CO_2}$ partial pressure of order $60\text{--}90$ bar if it were all in the atmosphere.
+Earth's total surface and crustal carbon, including the carbonate platforms accumulated over $\sim$540 Myr of marine biology, is on the order of $10^{20}$ kg of carbon, equivalent to a $\mathrm{CO_2}$ partial pressure of order $\sim 100$ bar if it were all in the atmosphere {cite:p}`Catling2017`.
 Venus' atmospheric $\mathrm{CO_2}$ inventory of $92$ bar is comparable to this number.
 The implication is that Earth and Venus probably acquired roughly similar amounts of carbon during accretion, and the difference is in where it ended up.
 On Earth, almost all of the carbon is in the crustal carbonates and the deep mantle reservoir; in the atmosphere only a few hundred ppm.
