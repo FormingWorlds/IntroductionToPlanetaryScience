@@ -37,9 +37,9 @@ A second image taken from lunar orbit two decades earlier captured the same esse
 "Earthrise", Apollo 8, 24 December 1968. Earth rises above the lunar limb during the first crewed mission to leave Earth orbit. The image is widely credited with shifting public perception of Earth as a single, finite system, an early articulation of the comparative-planetology perspective that this course adopts throughout. NASA image AS8-14-2383. Credit: NASA / William Anders.
 ```
 
-That image captures something essential about planetary science: it asks us to see our own world not as the centre of the universe, but as one planet among many — a physical system that can be studied, compared, and understood. This course is built around three questions that drive that effort:
+That image captures something essential about planetary science: it asks us to see our own world not as the centre of the universe, but as one planet among many, a physical system that can be studied, compared, and understood. This course is built around three questions that drive that effort:
 
-1. **How did our solar system form, and is it typical?** Before 1992, we knew of exactly zero planets outside our solar system. Today we have confirmed over 5,700 exoplanets in more than 4,300 systems. Statistical analyses of the Kepler survey suggest that roughly 0.4–0.6 rocky, habitable-zone planets exist per Sun-like star {cite:p}`Bryson2021` — implying hundreds of millions of such worlds in the Milky Way alone. Yet we have detailed knowledge of only one planetary system.
+1. **How did our solar system form, and is it typical?** Before 1992, we knew of exactly zero planets outside our solar system. Today we have confirmed over 5,700 exoplanets in more than 4,300 systems. Statistical analyses of the Kepler survey suggest that roughly 0.4–0.6 rocky, habitable-zone planets exist per Sun-like star {cite:p}`Bryson2021`, implying hundreds of millions of such worlds in the Milky Way alone. Yet we have detailed knowledge of only one planetary system.
 
 2. **What determines whether a planet becomes habitable?** Venus, Earth, and Mars all formed from the same protoplanetary disk, likely with similar initial compositions. All three may have had early liquid water. Yet today Venus has a 460 °C surface beneath 90 bar of CO$_2$, Earth has oceans and a biosphere, and Mars is a cold desert with an atmosphere thinner than 1% of Earth's. Understanding why they diverged is one of the central puzzles of planetary science.
 
@@ -57,9 +57,9 @@ Every topic in this course, from orbital dynamics and interior structure to atmo
 
 ## What is a planet?
 
-The word "planet" derives from the Greek *planetes* (πλανήτης), meaning "wanderer." To ancient observers, the planets were the five visible points of light — Mercury, Venus, Mars, Jupiter, and Saturn — that moved against the fixed background of stars. Together with the Sun and Moon, these seven wanderers gave us the seven days of the week.
+The word "planet" derives from the Greek *planetes* (πλανήτης), meaning "wanderer." To ancient observers, the planets were the five visible points of light (Mercury, Venus, Mars, Jupiter, and Saturn) that moved against the fixed background of stars. Together with the Sun and Moon, these seven wanderers gave us the seven days of the week.
 
-For over two millennia, the list of planets seemed settled. That changed with the invention of the telescope. William Herschel discovered Uranus in 1781 — the first planet found in modern times. In 1846, Johann Galle observed Neptune at a position predicted by Urbain Le Verrier from perturbations in Uranus's orbit, a triumph of Newtonian mechanics. And in 1930, Clyde Tombaugh discovered Pluto at Lowell Observatory after a painstaking photographic search.
+For over two millennia, the list of planets seemed settled. That changed with the invention of the telescope. William Herschel discovered Uranus in 1781, the first planet found in modern times. In 1846, Johann Galle observed Neptune at a position predicted independently by Urbain Le Verrier and John Couch Adams from perturbations in Uranus's orbit, a triumph of Newtonian mechanics. And in 1930, Clyde Tombaugh discovered Pluto at Lowell Observatory after a painstaking photographic search.
 
 But Pluto was always an oddity: small, icy, with an eccentric and inclined orbit that crosses Neptune's. When astronomers began discovering other large objects in the Kuiper Belt in the 1990s and 2000s, culminating in the discovery of Eris in 2005 by Brown, Trujillo, and Rabinowitz, which appeared comparable in size to Pluto, the question became unavoidable: either these new objects were also planets, or Pluto was not.
 
@@ -81,9 +81,9 @@ On 24 August 2006, the International Astronomical Union (IAU) adopted Resolution
 
 A body satisfying criteria 1 and 2 but not 3 is a **dwarf planet**. Under this definition, the solar system has eight planets and five officially recognised dwarf planets: Ceres, Pluto, Eris, Makemake, and Haumea. Many additional candidates exist in the Kuiper Belt.
 
-The definition remains debated. Critics note that "clearing the neighbourhood" is not precisely defined and depends on heliocentric distance — Earth would not clear its zone if placed at Neptune's orbit. An alternative **geophysical definition** proposes that any body massive enough to achieve hydrostatic equilibrium should count as a planet, regardless of its orbital dynamics {cite:p}`Runyon2017`. Under this broader definition, the solar system would have well over 100 planets.
+The definition remains debated. Critics note that "clearing the neighbourhood" is not precisely defined and depends on heliocentric distance: Earth would not clear its zone if placed at Neptune's orbit. An alternative **geophysical definition** proposes that any body massive enough to achieve hydrostatic equilibrium should count as a planet, regardless of its orbital dynamics {cite:p}`Runyon2017`. Under this broader definition, the solar system would have well over 100 planets.
 
-For this course, the exact classification matters less than the physics. The important point is that the solar system contains a continuous spectrum of objects — from dust grains to gas giants — governed by the same physical laws.
+For this course, the exact classification matters less than the physics. The important point is that the solar system contains a continuous spectrum of objects, from dust grains to gas giants, governed by the same physical laws.
 
 ## Brief history of planetary science
 
@@ -93,7 +93,7 @@ Planetary science as a discipline is remarkably young, but its roots reach back 
 
 Babylonian astronomers systematically tracked planetary positions as early as 1800 BCE, developing arithmetical methods to predict conjunctions and oppositions. Greek natural philosophers constructed geometric models: Aristotle's geocentric spheres (~350 BCE) and Ptolemy's epicyclic system (~150 CE) remained the standard framework for over a millennium.
 
-The Copernican revolution began in 1543, when Nicolaus Copernicus published *De revolutionibus*, placing the Sun at the centre. Johannes Kepler refined this model into his three empirical laws of planetary motion (1609–1619), replacing circles with ellipses. Isaac Newton's *Principia* (1687) showed that all three of Kepler's laws follow from a single universal law of gravitation — the first grand unification in physics.
+The Copernican revolution began in 1543, when Nicolaus Copernicus published *De revolutionibus*, placing the Sun at the centre. Johannes Kepler refined this model into his three empirical laws of planetary motion (1609–1619), replacing circles with ellipses. Isaac Newton's *Principia* (1687) showed that all three of Kepler's laws follow from a single universal law of gravitation, the first grand unification in physics.
 
 ```{figure} figures/copernican_system.avif
 :name: fig:copernican-system
@@ -121,7 +121,7 @@ The 19th century brought spectroscopy, allowing astronomers to determine atmosph
 
 ### The space age
 
-The modern era of planetary science began on 14 December 1962, when NASA's Mariner 2 flew past Venus — the first spacecraft to successfully visit another planet. This flyby revealed Venus's extreme surface temperature, overturning earlier speculation about habitable conditions beneath its clouds.
+The modern era of planetary science began on 14 December 1962, when NASA's Mariner 2 flew past Venus, the first spacecraft to successfully visit another planet. This flyby revealed Venus's extreme surface temperature, overturning earlier speculation about habitable conditions beneath its clouds.
 
 The pace of exploration accelerated rapidly. Mariner 4 returned the first close-up images of Mars in 1965, revealing a cratered, apparently dead world, not the canal-laced surface some had imagined. The Soviet Venera 7 achieved the first landing on another planet (Venus, 1970). NASA's Viking landers (1976) conducted the first experiments searching for life on Mars. The twin Voyager spacecraft (launched 1977) exploited a rare planetary alignment to conduct a grand tour of the outer solar system, visiting Jupiter, Saturn, Uranus, and Neptune between 1979 and 1989.
 
@@ -193,9 +193,9 @@ Today, planetary science integrates astronomy, physics, chemistry, geology, and 
 
 The solar system extends from the Sun (radius $\Rsun = 6.96 \times 10^8$ m) to the Oort Cloud, a hypothetical reservoir of comets at roughly $10^4$–$10^5$ AU. Its principal components, from the inside out, are:
 
-- **The inner solar system:** Four rocky (terrestrial) planets — Mercury, Venus, Earth, Mars — with semi-major axes between 0.39 and 1.52 AU. These are small, dense, and composed primarily of rock and metal.
+- **The inner solar system:** Four rocky (terrestrial) planets (Mercury, Venus, Earth, Mars) with semi-major axes between 0.39 and 1.52 AU. These are small, dense, and composed primarily of rock and metal.
 - **The asteroid belt:** A population of rocky and metallic bodies between roughly 2.1 and 3.3 AU, dominated by the dwarf planet Ceres (diameter ~940 km). The total mass of the asteroid belt is only ~$4 \times 10^{-4}$ $\Mearth$.
-- **The outer solar system:** Four giant planets — Jupiter, Saturn (gas giants), Uranus, Neptune (ice giants) — between 5.2 and 30.1 AU. These are massive, with thick hydrogen–helium envelopes and extensive moon systems.
+- **The outer solar system:** Four giant planets, Jupiter and Saturn (gas giants) and Uranus and Neptune (ice giants), between 5.2 and 30.1 AU. These are massive, with thick hydrogen–helium envelopes and extensive moon systems.
 - **The Kuiper Belt:** A disk of icy bodies beyond Neptune (~30–50 AU), including the dwarf planets Pluto, Eris, and Makemake. The scattered disk extends to greater distances with more eccentric orbits.
 - **The Oort Cloud:** A spherical shell of icy bodies at $10^4$–$10^5$ AU, believed to be the source of long-period comets. Its existence is inferred from cometary orbits but has not been directly observed.
 
@@ -281,7 +281,7 @@ $$
 \boxed{M_* = \frac{4\pi^2 r^3}{G P^2}}
 $$ (eq:kepler-mass)
 
-This is Newton's form of Kepler's third law (for $M_p \ll M_*$). The planet's mass cancels — the orbital period depends only on the central mass and the orbital radius.
+This is Newton's form of Kepler's third law (for $M_p \ll M_*$). The planet's mass cancels: the orbital period depends only on the central mass and the orbital radius.
 
 **Note:** For elliptical orbits, the same relation holds with $r$ replaced by the semi-major axis $a$. The derivation of the general case requires the vis-viva equation, which we will cover in {ref}`lecture02`.
 
@@ -299,7 +299,7 @@ $$
 \Msun = \frac{4\pi^2 \times (1.496 \times 10^{11})^3}{6.674 \times 10^{-11} \times (3.156 \times 10^7)^2} \approx 1.99 \times 10^{30} \text{ kg}
 $$
 
-This agrees with the accepted value $\Msun = 1.989 \times 10^{30}$ kg — a remarkably accurate estimate from just two measurable quantities.
+This agrees with the accepted value $\Msun = 1.989 \times 10^{30}$ kg, a remarkably accurate estimate from just two measurable quantities.
 
 **The planet-to-star mass ratio.**
 
@@ -322,7 +322,7 @@ Mass budget of the solar system. *Left:* the Sun contains 99.87% of the total ma
 
 ## Comparative planetology as a methodology
 
-Understanding a single planet in isolation is difficult — we cannot perform controlled experiments on entire worlds. **Comparative planetology** addresses this by treating the planets as a natural set of experiments: similar objects subjected to different conditions.
+Understanding a single planet in isolation is difficult: we cannot perform controlled experiments on entire worlds. **Comparative planetology** addresses this by treating the planets as a natural set of experiments: similar objects subjected to different conditions.
 
 Consider the terrestrial planets. Venus, Earth, and Mars have broadly similar compositions and formed in the same protoplanetary disk, yet their surfaces and atmospheres are radically different:
 
@@ -454,7 +454,7 @@ JWST MIRI F1500W secondary-eclipse measurement of TRAPPIST-1 b (data point near 
 
 Closer to home, NASA's **OSIRIS-REx** mission returned samples from the carbon-rich asteroid Bennu in September 2023, revealing hydrated minerals and organic compounds that illuminate the primordial building blocks of planets ({ref}`lecture12`). NASA's **Europa Clipper**, launched in October 2024, is en route to Jupiter's moon Europa to investigate its subsurface ocean and assess habitability {cite:p}`HowellPappalardo2020` (see also {ref}`lecture14`). ESA's **JUICE** mission, launched in 2023, will arrive at the Jupiter system in 2031 to study Ganymede, Europa, and Callisto.
 
-The Mars exploration programme continues with the **Perseverance** rover caching samples in Jezero crater for eventual return to Earth {cite:p}`Farley2022`, while NASA's **Dragonfly** rotorcraft — a nuclear-powered drone that will explore Titan's surface chemistry — is planned for launch in 2028 ({ref}`lecture06`). These missions collectively address the three driving questions of this course: how planetary systems form, what makes a planet habitable, and whether life exists beyond Earth.
+The Mars exploration programme continues with the **Perseverance** rover caching samples in Jezero crater for eventual return to Earth {cite:p}`Farley2022`, while NASA's **Dragonfly** rotorcraft (a nuclear-powered drone that will explore Titan's surface chemistry) is planned for launch in 2028 ({ref}`lecture06`). These missions collectively address the three driving questions of this course: how planetary systems form, what makes a planet habitable, and whether life exists beyond Earth.
 
 
 ## References

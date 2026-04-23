@@ -913,3 +913,47 @@ When this picks back up:
 3. Continue work on the same `tl/l9-l10-second-review-fixes` feature branch; commit per group as before.
 4. After all of Group A part 2 lands, run `jupyter-book build book/` to verify clean build, then update the table in §6.4 and either consolidate this whole §6 down to a single "closed" line in `notes_status.md` memory or delete it.
 5. **Do not push without explicit confirmation** per CLAUDE.md (this repo is not in the auto-push allowlist).
+
+---
+
+## 7. Full-course review pass (2026-04-23)
+
+Sequential adversarial review of all 14 lectures followed by a meta-consolidation pass. Executed as 14 per-lecture general-purpose agents plus one meta-reviewer, documented in `~/.claude/plans/ips_full_course_review_2026-04-23/` (agent methodology, 14 per-lecture reports, meta-review master doc).
+
+**Outcome: 8 GREEN / 6 YELLOW / 0 RED verdicts.** All 504 cited bib keys resolve, all 413 figure files present, all 9 locked cross-lecture facts preserved. Course total ~118,250 words / 413 figures / 165 display equations.
+
+### 7.1 Auto-fixes applied (~335 atomic edits across two commits)
+
+**Commit `e7979b3` (first pass, 11 files, 298 insertions, 285 deletions)**:
+
+- 196 em-dashes removed across L1-L10 prose/captions + 6 H1-title em-dashes normalised
+- 9 factual corrections: Io mass fraction 1.2%→1.5% (L3), Tsar Bomba ratio 100×→10³× (L7), GRAIL lunar crust 30 km→34-43 km (L7), Enceladus heat flow 15 GW→15.8±3.1 GW (L7), Mercury core radius fraction 85%→83% in three locations (L8), Uranus ring discovery epochs corrected (L11), Titan pressure-vs-density confusion clarified (L11), Callisto $C/MR^2$ 0.36→0.355 (L11), L10 caption em-dash
+- Bib hygiene: 1 typo (`Borber`→`Borovsky` in `Anderson2012`), 1 title fix (`HowellPappalardo2020`), 1 new entry (`SaganMullen1972`), 1 cross-cite added (`Kaspi2018`)
+
+**Commit `06ab9e8` (second pass, 10 files, 208 insertions, 103 deletions)**:
+
+- 19 blackboard-block em-dashes removed from L1-L7 admonition prose (no algebra changes)
+- 6 unambiguous LOW items: Neptune 1846 Adams credit (L1), Roche 2.16→2.17 $R_p$ worked-example rounding (L2), DART period sign+uncertainty (L7), DART mass "~580 kg impact mass" (L12), NEA count 35,000→38,000 (L12), `Bello2024`→`Bell2024` bib rename (L13)
+- 105 BibTeX entries bulk-updated with `url = {https://ui.adsabs.harvard.edu/abs/doi:{DOI}/abstract}`. Textbook entries skipped per CLAUDE.md exception. Final URL coverage: 399/417 entries.
+
+Build verified clean after each commit: `jupyter-book build book/` → 10 pre-existing bib-metadata warnings on non-article report entries (IPCC, NAS, Drake, SandbergDrexlerOrd, etc), zero new.
+
+### 7.2 Items still requiring Tim's input
+
+Authoritative list lives in `~/.claude/plans/ips_full_course_review_2026-04-23/99_meta_review.md`. Summary:
+
+- **3 HIGH single-lecture items**: L3 K-40 radiogenic concentration (~8.5× overstatement), L3 Io hotspot caption citation (Davies2024 vs Spencer2000 attribution), L6 `Showman2020` bib entry mismatched title/authors vs journal/DOI
+- **~20 MED single-lecture items**: IAU "B5"→"5A" (L1), `Drazkowska2023` figure-cap violation (L2), L4 water-solubility 100 bar→1 kbar, L4 Mars $\varepsilon^{182}$W uncertainty, L5 MAVEN O⁺ rate vs Jakosky 2018 abstract, L6 `Wordsworth2022`→`Wordsworth2016` miscitation, L13 `Turbet2021` miscitation, L13 Wolszczan 1992 vs 1994 mass attribution, etc.
+- **13 cross-lecture numerical conflicts**: Saturn luminosity ratio (L8 2.0× vs L11 1.8×), Jupiter equatorial jet speed (L6 150 m/s vs L11 180 m/s), Neptune 580 m/s attribution (L6 GDS vs L11 retrograde jet), H₂SO₄ cloud-range disagreement (L6 internal), Mercury core-mass fraction (L8 65% vs L10 70%), Olympus Mons convention, Mars $T_{\rm exo}$ L5-vs-L10, etc.
+- **~40 LOW single-lecture items**: drift/rounding/cosmetic
+- **10 paywalled figure-source items**: carried over from §6.5 (Lyons, Smrekar, Goldblatt, Hamano, Zuber MESSENGER, Bibring, etc); unchanged
+- **8 pedagogical preference decisions**: L7 early-Mars plate-tectonics caveat, Io-power convention (Davies 2024 vs Spencer 2000), Olympus Mons convention, Valles Marineris figure swap, Venus super-rotation convention, L13 tidally-locked HZ depth, Drake $n_e$ definition
+- **L14 Mulders attribution** (HTML-TODO, carried over from 2026-04-22 figure audit)
+
+### 7.3 Content-balance note
+
+L4 (Differentiation & Magnetospheres) is **47% below the word-count median** (3,430 vs 6,525 words) and has the fewest figures (19 vs norm of 25). The meta-review recommends modest expansion: metal-silicate equilibration thermodynamics, a second Hf-W worked example, Mercury-vs-Ganymede dynamo contrast, half-panel on giant-impact mantle-stripping. Estimated half-day of work. Not a blocker; flagged as Top-5 recommendation #5.
+
+### 7.4 Methodology lesson for future review passes
+
+The "do not touch blackboard" agent rule was overly conservative for this codebase. Admonition blocks contain plenty of non-algebra prose (goals, applications, notes) where em-dash substitution and other prose cleanups are trivially safe. Future review passes should relax the rule to "do not touch equations or numerical values inside blackboard blocks" and let agents handle blackboard prose directly. This would have saved one round-trip.

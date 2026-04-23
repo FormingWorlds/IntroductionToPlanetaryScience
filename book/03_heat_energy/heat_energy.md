@@ -7,7 +7,7 @@
 
 ## Energy sources
 
-A planet's geological and geophysical evolution is fundamentally governed by its **thermal history** — how much heat it starts with, how it generates new heat, and how efficiently it can lose that heat to space. Without internal heat, there would be no volcanism, no magnetic field, no plate tectonics, and no atmospheric outgassing. Understanding where planetary heat comes from is therefore the starting point for understanding planetary evolution.
+A planet's geological and geophysical evolution is fundamentally governed by its **thermal history**: how much heat it starts with, how it generates new heat, and how efficiently it can lose that heat to space. Without internal heat, there would be no volcanism, no magnetic field, no plate tectonics, and no atmospheric outgassing. Understanding where planetary heat comes from is therefore the starting point for understanding planetary evolution.
 
 There are four principal sources of heat in planets:
 
@@ -25,7 +25,7 @@ $$
 \Delta T = \frac{E_{\mathrm{acc}}}{M c_p} \approx \frac{2.2 \times 10^{32}}{5.97 \times 10^{24} \times 1200} \approx 30{,}000 \text{ K}
 $$
 
-where $c_p \approx 1200$ J kg$^{-1}$ K$^{-1}$ is a representative specific heat for silicate rock. This is enough to melt Earth many times over. In practice, not all energy is retained — some is radiated back to space during accretion, especially in the later stages when the surface is molten and radiates efficiently. Nevertheless, accretional heating is more than sufficient to produce a fully molten planet — a **magma ocean** — by the end of formation {cite:p}`Lichtenberg2023`.
+where $c_p \approx 1200$ J kg$^{-1}$ K$^{-1}$ is a representative specific heat for silicate rock. This is enough to melt Earth many times over. In practice, not all energy is retained: some is radiated back to space during accretion, especially in the later stages when the surface is molten and radiates efficiently. Nevertheless, accretional heating is more than sufficient to produce a fully molten planet (a **magma ocean**) by the end of formation {cite:p}`Lichtenberg2023`.
 
 ### Gravitational differentiation
 
@@ -35,7 +35,7 @@ $$
 E_{\mathrm{diff}} \approx 2 \times 10^{31} \text{ J}
 $$
 
-This is about 10% of the accretional energy, but is released relatively quickly during the differentiation process — further heating the interior and helping to sustain the early magma ocean. Gravitational differentiation is a one-time energy source: once the core has formed, this energy has been spent.
+This is about 10% of the accretional energy, but is released relatively quickly during the differentiation process, further heating the interior and helping to sustain the early magma ocean. Gravitational differentiation is a one-time energy source: once the core has formed, this energy has been spent.
 
 ### Radioactive decay
 
@@ -52,7 +52,7 @@ The decay of naturally occurring radioactive isotopes provides a sustained heat 
 
 These isotopes are **lithophile** ("rock-loving") elements that concentrate in the silicate mantle and crust rather than the metallic core. Together, they produce Earth's present-day radiogenic heat of approximately 20 TW (terawatts) {cite:p}`Jaupart2015`. Because the shorter-lived isotopes (${}^{235}\mathrm{U}$, ${}^{40}\mathrm{K}$) were more abundant in the past, total radiogenic heat production was 3–4 times higher at the time of Earth's formation (4.5 Gyr ago) than it is today.
 
-**Short-lived isotopes** had half-lives of only a few million years and are now extinct, but were present when the solar system formed. The most important is ${}^{26}\mathrm{Al}$ (half-life 0.72 Myr), which was produced by nearby stellar nucleosynthesis and incorporated into the solar nebula. In the first few million years, ${}^{26}\mathrm{Al}$ was an extraordinarily potent heat source — it could melt planetesimals as small as a few kilometres in radius, initiating core formation and volatile loss even before planet-sized bodies had assembled {cite:p}`Lichtenberg2023`. The short-lived isotope ${}^{60}\mathrm{Fe}$ (half-life 2.6 Myr) also contributed, though to a lesser extent.
+**Short-lived isotopes** had half-lives of only a few million years and are now extinct, but were present when the solar system formed. The most important is ${}^{26}\mathrm{Al}$ (half-life 0.72 Myr), which was produced by nearby stellar nucleosynthesis and incorporated into the solar nebula. In the first few million years, ${}^{26}\mathrm{Al}$ was an extraordinarily potent heat source: it could melt planetesimals as small as a few kilometres in radius, initiating core formation and volatile loss even before planet-sized bodies had assembled {cite:p}`Lichtenberg2023`. The short-lived isotope ${}^{60}\mathrm{Fe}$ (half-life 2.6 Myr) also contributed, though to a lesser extent.
 
 ```{figure} figures/radiogenic_heat_evolution.svg
 :name: fig:radiogenic-heat
@@ -98,7 +98,7 @@ The total heat flowing out of Earth's interior is approximately **47 TW** {cite:
 Earth's surface heat-flux budget (~47 TW), decomposed into radiogenic (~20 TW), primordial / secular cooling (~15 TW), core cooling and solidification (~10 TW), and lunar tidal dissipation (~0.1 TW). Tidal contribution is too small to render at this scale. After {cite:p}`DaviesDavies2010`. Custom plot.
 ```
 
-Roughly 40% of Earth's current heat loss is powered by ongoing radioactive decay, with the rest being the slow release of primordial heat stored since formation. This means Earth is still cooling — its interior temperature is gradually decreasing over geological time. The relative importance of these sources varies strongly across the solar system: small bodies like the Moon have lost most of their primordial heat long ago, while a tidally heated moon like Io has a heat budget dominated by tidal dissipation rather than radiogenic or primordial heat.
+Roughly 40% of Earth's current heat loss is powered by ongoing radioactive decay, with the rest being the slow release of primordial heat stored since formation. This means Earth is still cooling: its interior temperature is gradually decreasing over geological time. The relative importance of these sources varies strongly across the solar system: small bodies like the Moon have lost most of their primordial heat long ago, while a tidally heated moon like Io has a heat budget dominated by tidal dissipation rather than radiogenic or primordial heat.
 
 
 ## Heat transport mechanisms
@@ -123,11 +123,11 @@ $$ (eq:thermal-diffusivity)
 
 where $\rho$ is the density and $c_p$ is the specific heat capacity. Typical values for silicate rock are $k \approx 3$–$4$ W m$^{-1}$ K$^{-1}$ and $\kappa \approx 10^{-6}$ m$^2$ s$^{-1}$.
 
-Conduction is inherently a **diffusive** process — slow and inefficient over large distances. As we will show in the blackboard derivation, the time for heat to conduct through a distance $L$ scales as $L^2/\kappa$, which becomes enormous for planet-sized bodies.
+Conduction is inherently a **diffusive** process, slow and inefficient over large distances. As we will show in the blackboard derivation, the time for heat to conduct through a distance $L$ scales as $L^2/\kappa$, which becomes enormous for planet-sized bodies.
 
 ### Convection
 
-In **convection**, heat is transported by the bulk motion of fluid. When a fluid layer is heated from below, hot material near the base becomes less dense (due to thermal expansion) and rises, while cool, denser material near the top sinks. This overturning circulation — **thermal convection** — is far more efficient at transporting heat than conduction.
+In **convection**, heat is transported by the bulk motion of fluid. When a fluid layer is heated from below, hot material near the base becomes less dense (due to thermal expansion) and rises, while cool, denser material near the top sinks. This overturning circulation (**thermal convection**) is far more efficient at transporting heat than conduction.
 
 Convection is the dominant heat transport mechanism in:
 - Earth's **mantle** (solid-state convection of slowly creeping rock, with velocities of ~cm/year)
@@ -170,7 +170,7 @@ The key distinction is one of **timescale**. Conduction is a diffusive process t
 ```{admonition} Blackboard derivation: The conductive cooling timescale
 :class: tip
 
-**Goal:** Derive the characteristic timescale for heat to conduct through a body of size $L$, and show that conduction alone cannot cool planet-sized bodies — motivating the need for convection.
+**Goal:** Derive the characteristic timescale for heat to conduct through a body of size $L$, and show that conduction alone cannot cool planet-sized bodies, motivating the need for convection.
 
 **Setup.**
 
@@ -186,7 +186,7 @@ $$
 \pdv{T}{t} = \kappa \pdv{^2 T}{x^2}
 $$
 
-This equation says that the rate of temperature change at any point is proportional to the curvature of the temperature profile — regions where the temperature profile is concave up ($\pdv{^2 T}{x^2} > 0$) heat up, and regions where it is concave down cool down.
+This equation says that the rate of temperature change at any point is proportional to the curvature of the temperature profile: regions where the temperature profile is concave up ($\pdv{^2 T}{x^2} > 0$) heat up, and regions where it is concave down cool down.
 
 **Derivation.**
 
@@ -219,9 +219,9 @@ Using $\kappa \approx 10^{-6}$ m$^2$ s$^{-1}$ (typical for silicate rock), we ca
 | Moon ($R = 1740$ km) | $1.7 \times 10^6$ m | $3 \times 10^{18}$ s | ~100 Gyr |
 | Earth ($R = 6370$ km) | $6.4 \times 10^6$ m | $4 \times 10^{19}$ s | ~1300 Gyr |
 
-A small boulder cools in days — consistent with everyday experience. A 100 km asteroid cools in hundreds of millions of years, which is long but shorter than the age of the solar system — so small asteroids should have cooled and solidified, consistent with the meteorite record. But for the Moon and Earth, the conductive cooling time far exceeds the age of the universe ($\sim 14$ Gyr). **Earth cannot cool by conduction alone.**
+A small boulder cools in days, consistent with everyday experience. A 100 km asteroid cools in hundreds of millions of years, which is long but shorter than the age of the solar system, so small asteroids should have cooled and solidified, consistent with the meteorite record. But for the Moon and Earth, the conductive cooling time far exceeds the age of the universe ($\sim 14$ Gyr). **Earth cannot cool by conduction alone.**
 
-**Note:** This result tells us something profound: since Earth *is* losing heat at a rate of ~47 TW {cite:p}`DaviesDavies2010`, there must be a more efficient transport mechanism operating in its interior. That mechanism is **convection**. The question of *when* convection occurs — and how vigorous it is — leads directly to the Rayleigh number.
+**Note:** This result tells us something profound: since Earth *is* losing heat at a rate of ~47 TW {cite:p}`DaviesDavies2010`, there must be a more efficient transport mechanism operating in its interior. That mechanism is **convection**. The question of *when* convection occurs (and how vigorous it is) leads directly to the Rayleigh number.
 ```
 
 ```{figure} figures/tau_cond_vs_size.avif
@@ -247,7 +247,7 @@ Whether a fluid layer convects or conducts depends on the competition between tw
 
 ### Onset of convection
 
-Consider a horizontal fluid layer of depth $d$, heated from below with a temperature difference $\Delta T$ between the bottom and top boundaries. The hot fluid at the base is less dense than the cool fluid at the top — an inherently unstable configuration. But viscosity and thermal diffusion resist the onset of overturning. Convection begins only when the destabilising buoyancy force exceeds the stabilising effects of viscosity and thermal diffusion.
+Consider a horizontal fluid layer of depth $d$, heated from below with a temperature difference $\Delta T$ between the bottom and top boundaries. The hot fluid at the base is less dense than the cool fluid at the top, an inherently unstable configuration. But viscosity and thermal diffusion resist the onset of overturning. Convection begins only when the destabilising buoyancy force exceeds the stabilising effects of viscosity and thermal diffusion.
 
 ### The Rayleigh number
 
@@ -258,7 +258,7 @@ $$
 $$ (eq:rayleigh-number)
 
 where:
-- $\alpha$ is the thermal expansion coefficient (K$^{-1}$) — how much the fluid expands when heated
+- $\alpha$ is the thermal expansion coefficient (K$^{-1}$): how much the fluid expands when heated
 - $\rho$ is the density (kg m$^{-3}$)
 - $g$ is gravitational acceleration (m s$^{-2}$)
 - $\Delta T$ is the temperature difference across the layer (K)
@@ -292,7 +292,7 @@ $$
 \mathrm{Ra}_{\oplus} \sim \frac{2 \times 10^{-5} \times 4000 \times 10 \times 2500 \times (3 \times 10^6)^3}{10^{-6} \times 10^{21}} \sim 10^7 \text{–} 10^8
 $$
 
-This is many orders of magnitude above $\mathrm{Ra}_c$ — confirming that Earth's mantle convects vigorously {cite:p}`Schubert2001`.
+This is many orders of magnitude above $\mathrm{Ra}_c$, confirming that Earth's mantle convects vigorously {cite:p}`Schubert2001`.
 
 ### The Nusselt number
 
@@ -316,7 +316,7 @@ $$
 \mathrm{Nu} \sim (10^7)^{1/3} \sim 200
 $$
 
-This means convection transports heat roughly 200 times more efficiently than conduction would across the same temperature drop — confirming the essential role of convection in planetary thermal evolution.
+This means convection transports heat roughly 200 times more efficiently than conduction would across the same temperature drop, confirming the essential role of convection in planetary thermal evolution.
 
 ```{figure} figures/nu_ra_scaling.avif
 :name: fig:nu-ra-scaling
@@ -333,11 +333,11 @@ Schematic Nusselt-Rayleigh scaling. Below the critical Rayleigh number $\mathrm{
 
 A convecting planetary interior does not have a uniform temperature gradient. Instead, it develops a characteristic three-layer structure {cite:p}`Schubert2001`:
 
-1. **Cold thermal boundary layer (TBL) at the top** — a thin conductive layer where temperature drops steeply from the hot interior to the cold surface. In Earth, this is the **lithosphere** — the rigid outer shell of the planet, approximately 100 km thick beneath oceans and up to 200 km beneath continents.
+1. **Cold thermal boundary layer (TBL) at the top**: a thin conductive layer where temperature drops steeply from the hot interior to the cold surface. In Earth, this is the **lithosphere**, the rigid outer shell of the planet, approximately 100 km thick beneath oceans and up to 200 km beneath continents.
 
-2. **Well-mixed convecting interior** — the bulk of the mantle, where temperatures vary only slowly with depth (following an **adiabatic gradient**). Vigorous convective stirring keeps this region nearly isothermal on large scales.
+2. **Well-mixed convecting interior**: the bulk of the mantle, where temperatures vary only slowly with depth (following an **adiabatic gradient**). Vigorous convective stirring keeps this region nearly isothermal on large scales.
 
-3. **Hot thermal boundary layer at the base** — a thin layer above the core–mantle boundary where temperature rises steeply into the hot core. In Earth, this corresponds to the **D'' layer** (the lowermost ~200 km of the mantle), where the temperature increases from the mantle adiabat (~2500 K) to the core–mantle boundary temperature (~4000 K).
+3. **Hot thermal boundary layer at the base**: a thin layer above the core–mantle boundary where temperature rises steeply into the hot core. In Earth, this corresponds to the **D'' layer** (the lowermost ~200 km of the mantle), where the temperature increases from the mantle adiabat (~2500 K) to the core–mantle boundary temperature (~4000 K).
 
 The temperature drop across the whole mantle is accommodated almost entirely in these two thin boundary layers, while the interior between them is nearly isothermal.
 
@@ -351,7 +351,7 @@ Schematic temperature profile through Earth's mantle. The cold thermal boundary 
 
 ### Plate tectonics: the mobile lid regime
 
-The cold thermal boundary layer at Earth's surface behaves in a remarkable way: rather than remaining as a stagnant conductive lid, it **breaks into rigid plates** that move laterally, subduct back into the mantle at convergent boundaries, and are recycled. This is **plate tectonics** — the surface expression of mantle convection in a **mobile lid regime**.
+The cold thermal boundary layer at Earth's surface behaves in a remarkable way: rather than remaining as a stagnant conductive lid, it **breaks into rigid plates** that move laterally, subduct back into the mantle at convergent boundaries, and are recycled. This is **plate tectonics**, the surface expression of mantle convection in a **mobile lid regime**.
 
 Plate tectonics is the most efficient way for a rocky planet to lose heat, because subducting plates carry cold surface material deep into the mantle, while hot material rises at mid-ocean ridges and volcanic hotspots. This vigorous recycling is why Earth's surface heat flow is as high as it is.
 
@@ -365,7 +365,7 @@ Cross-section through the upper mantle and lithosphere illustrating the principa
 
 ### The stagnant lid regime
 
-Most other rocky bodies in the solar system — including Venus, Mars, Mercury, and the Moon — appear to operate in a **stagnant lid regime**, where the cold thermal boundary layer forms a single, thick, immobile shell. Without plate tectonics, heat can only escape through the lid by conduction (and volcanism, where magma punches through the lid). This is less efficient than plate tectonics, so stagnant lid planets cool more slowly and may retain more internal heat.
+Most other rocky bodies in the solar system (including Venus, Mars, Mercury, and the Moon) appear to operate in a **stagnant lid regime**, where the cold thermal boundary layer forms a single, thick, immobile shell. Without plate tectonics, heat can only escape through the lid by conduction (and volcanism, where magma punches through the lid). This is less efficient than plate tectonics, so stagnant lid planets cool more slowly and may retain more internal heat.
 
 ```{figure} figures/lid_regimes.avif
 :name: fig:lid-regimes
@@ -377,12 +377,12 @@ End-member tectonic regimes for rocky planets. **Mobile lid (left):** the cold t
 
 Why Earth has plate tectonics while other rocky planets do not is one of the major unsolved problems in geophysics. Factors likely include:
 - The presence of **water** in the mantle, which weakens rocks and enables the formation of narrow shear zones (plate boundaries)
-- The **size** of the planet — a larger planet has more vigorous convection and higher stresses in the lithosphere
-- The **thermal history** — the balance between internal heating and surface cooling
+- The **size** of the planet: a larger planet has more vigorous convection and higher stresses in the lithosphere
+- The **thermal history**: the balance between internal heating and surface cooling
 
 ### Mantle plumes
 
-In addition to the broad convective circulation, hot upwellings can develop from the hot thermal boundary layer at the base of the mantle. These **mantle plumes** are narrow columns of anomalously hot material that rise through the mantle and produce localised volcanism at the surface — so-called **hotspots** (e.g., Hawaii, Iceland, Yellowstone). Plumes are a direct consequence of the thermal boundary layer structure: just as the cold TBL can become gravitationally unstable and sink (subduction), the hot TBL can become unstable and rise. Whole-mantle seismic tomography directly images broad plume conduits rooted near the core-mantle boundary beneath several major hotspots {cite:p}`French2015`.
+In addition to the broad convective circulation, hot upwellings can develop from the hot thermal boundary layer at the base of the mantle. These **mantle plumes** are narrow columns of anomalously hot material that rise through the mantle and produce localised volcanism at the surface (so-called **hotspots**, e.g., Hawaii, Iceland, Yellowstone). Plumes are a direct consequence of the thermal boundary layer structure: just as the cold TBL can become gravitationally unstable and sink (subduction), the hot TBL can become unstable and rise. Whole-mantle seismic tomography directly images broad plume conduits rooted near the core-mantle boundary beneath several major hotspots {cite:p}`French2015`.
 
 ```{figure} figures/usgs_global_hotspots_map.avif
 :name: fig:global-hotspots
@@ -412,7 +412,7 @@ Earth's average surface heat flux is approximately $90$ mW m$^{-2}$, totalling a
 - **Oceanic regions** account for about 70% of the total heat loss, despite covering about 60% of the surface. The high oceanic heat flow reflects the thinness of oceanic lithosphere and the creation of new, hot crust at mid-ocean ridges.
 - **Continental regions** account for about 30% of the total heat loss. Continental heat flow is lower on average because the thick continental lithosphere is an effective insulator, and because continents preferentially accumulate heat-producing elements (U, Th, K) in the crust.
 
-The spatial pattern of heat flow — highest at mid-ocean ridges, decreasing with the age of the ocean floor, lowest in old continental shields — is a direct expression of plate tectonics and confirms that convection controls Earth's heat loss.
+The spatial pattern of heat flow (highest at mid-ocean ridges, decreasing with the age of the ocean floor, lowest in old continental shields) is a direct expression of plate tectonics and confirms that convection controls Earth's heat loss.
 
 ```{figure} figures/earth_heat_flow_map.avif
 :name: fig:earth-heat-flow-map
@@ -439,7 +439,7 @@ Surface heat flux $q$ as a function of seafloor age, predicted by the half-space
 | Mars | ~15–25 (estimated) | ~3–5 | Radiogenic + primordial |
 | Io | ~2000–3000 | ~$10^{14}$ W | Tidal dissipation |
 
-The Moon and Mars have much lower surface heat flow than Earth, reflecting their smaller sizes (faster cooling through their conductive cooling timescale), the absence of plate tectonics (stagnant lid), and their smaller inventories of heat-producing elements. Io stands out dramatically — its surface heat flux is 20–30 times higher than Earth's, entirely driven by tidal heating.
+The Moon and Mars have much lower surface heat flow than Earth, reflecting their smaller sizes (faster cooling through their conductive cooling timescale), the absence of plate tectonics (stagnant lid), and their smaller inventories of heat-producing elements. Io stands out dramatically: its surface heat flux is 20–30 times higher than Earth's, entirely driven by tidal heating.
 
 ```{figure} figures/insight_mars_cutaway.avif
 :name: fig:insight-mars
@@ -454,7 +454,7 @@ NASA InSight mission concept showing how marsquake travel times constrain Mars's
 A planet's surface heat flow is intimately linked to its tectonic regime:
 - **Mobile lid (plate tectonics):** Efficient heat loss through subduction and seafloor spreading → high surface heat flux
 - **Stagnant lid:** Heat loss limited to conduction through a thick lid plus episodic volcanism → lower surface heat flux
-- **Heat-pipe volcanism:** On bodies like early Earth or Io, vigorous volcanism can transport heat by erupting hot magma at the surface, which then cools and is buried by subsequent flows — an alternative to plate tectonics for efficient heat loss {cite:p}`Turcotte2002`
+- **Heat-pipe volcanism:** On bodies like early Earth or Io, vigorous volcanism can transport heat by erupting hot magma at the surface, which then cools and is buried by subsequent flows, an alternative to plate tectonics for efficient heat loss {cite:p}`Turcotte2002`
 
 (tidal-dissipation)=
 ## Tidal dissipation
@@ -463,7 +463,7 @@ We introduced tidal forces in {ref}`lecture02` as a consequence of the gradient 
 
 ### How tidal heating works
 
-On a circular orbit, a tidally locked moon maintains a constant distance from its planet, and the tidal bulge points steadily toward the planet — there is no flexing and no heat generation. But if the orbit has even a small **eccentricity**, the distance varies periodically: at periapsis the tidal force is stronger (and the moon moves faster than it rotates), and at apoapsis it is weaker (and the moon rotates faster than it orbits). The result is a continually varying tidal deformation — the body is rhythmically squeezed and stretched every orbit. The energy dissipated in this cyclic deformation is converted to heat.
+On a circular orbit, a tidally locked moon maintains a constant distance from its planet, and the tidal bulge points steadily toward the planet: there is no flexing and no heat generation. But if the orbit has even a small **eccentricity**, the distance varies periodically: at periapsis the tidal force is stronger (and the moon moves faster than it rotates), and at apoapsis it is weaker (and the moon rotates faster than it orbits). The result is a continually varying tidal deformation: the body is rhythmically squeezed and stretched every orbit. The energy dissipated in this cyclic deformation is converted to heat.
 
 ```{figure} figures/tidal_flexing.avif
 :name: fig:tidal-flexing
@@ -474,16 +474,16 @@ Origin of tidal heating on an eccentric orbit. **Left:** at periapsis ($r=a(1-e)
 ```
 
 The tidal heating rate depends on:
-- **Orbital eccentricity** $e$ — zero eccentricity means zero tidal heating
-- **Orbital distance** $a$ — tidal forces fall off steeply with distance (heating $\propto a^{-6}$ for a given eccentricity)
-- **Internal dissipation** — parameterised by the tidal quality factor $Q$ (lower $Q$ means more dissipation per deformation cycle)
-- **Body rigidity** — a stiffer body deforms less per cycle but may dissipate more depending on rheology
+- **Orbital eccentricity** $e$: zero eccentricity means zero tidal heating
+- **Orbital distance** $a$: tidal forces fall off steeply with distance (heating $\propto a^{-6}$ for a given eccentricity)
+- **Internal dissipation**, parameterised by the tidal quality factor $Q$ (lower $Q$ means more dissipation per deformation cycle)
+- **Body rigidity**: a stiffer body deforms less per cycle but may dissipate more depending on rheology
 
 ### Io: the most volcanically active body in the solar system
 
-Jupiter's innermost Galilean moon **Io** (radius 1821 km, similar in size to our Moon) is the most extreme example of tidal heating in the solar system. Despite having no significant radiogenic heat sources at present, Io produces a staggering ~$10^{14}$ W of tidal heat {cite:p}`Spencer2000` — roughly twice Earth's total heat output, from a body with only 1.2% of Earth's mass.
+Jupiter's innermost Galilean moon **Io** (radius 1821 km, similar in size to our Moon) is the most extreme example of tidal heating in the solar system. Despite having no significant radiogenic heat sources at present, Io produces a staggering ~$10^{14}$ W of tidal heat {cite:p}`Spencer2000`, roughly twice Earth's total heat output, from a body with only 1.5% of Earth's mass.
 
-This was predicted before it was observed. In a landmark 1979 paper, Peale, Cassen, and Reynolds calculated that tidal dissipation in Io, maintained by the **Laplace resonance** with Europa and Ganymede ({ref}`lecture02`), should be sufficient to melt Io's interior {cite:p}`Peale1979`. Just days after the paper was published, the Voyager 1 spacecraft flew past Io and discovered active volcanic eruptions — a stunning confirmation of theory.
+This was predicted before it was observed. In a landmark 1979 paper, Peale, Cassen, and Reynolds calculated that tidal dissipation in Io, maintained by the **Laplace resonance** with Europa and Ganymede ({ref}`lecture02`), should be sufficient to melt Io's interior {cite:p}`Peale1979`. Just days after the paper was published, the Voyager 1 spacecraft flew past Io and discovered active volcanic eruptions, a stunning confirmation of theory.
 
 The Laplace resonance is essential: it forces Io's orbital eccentricity to remain at $e \approx 0.004$. Without the resonance, tidal forces would circularise Io's orbit in a few tens of millions of years, and tidal heating would cease. The resonance continuously pumps the eccentricity, maintaining a steady heat source.
 
@@ -496,9 +496,9 @@ The Laplace resonance: the inner three Galilean satellites Io, Europa, and Ganym
 ```
 
 The consequences for Io are dramatic:
-- Surface heat flux of ~2–3 W m$^{-2}$ — about **30 times** higher than Earth's
+- Surface heat flux of ~2–3 W m$^{-2}$, about **30 times** higher than Earth's
 - Over 400 active volcanic centres identified
-- The entire surface is resurfaced by lava flows on a ~Myr timescale — there are essentially no impact craters
+- The entire surface is resurfaced by lava flows on a ~Myr timescale, so there are essentially no impact craters
 - Internal structure consistent with a partially molten mantle (asthenosphere) {cite:p}`Keane2023`
 
 ```{figure} figures/io_galileo_color.avif
@@ -527,9 +527,9 @@ Global distribution of Io's volcanic hotspots projected on a basemap, with each 
 
 ### Enceladus: a tiny moon with a big secret
 
-Saturn's small moon **Enceladus** (radius 252 km) provides another dramatic example of tidal heating. In 2005, the Cassini spacecraft discovered jets of water ice and vapour erupting from four parallel fractures — dubbed "tiger stripes" — near the south pole {cite:p}`Porco2006`. Subsequent measurements showed that these jets carry ~5–15 GW of thermal power {cite:p}`Howett2011` — far more than can be explained by radioactive decay alone for such a small body.
+Saturn's small moon **Enceladus** (radius 252 km) provides another dramatic example of tidal heating. In 2005, the Cassini spacecraft discovered jets of water ice and vapour erupting from four parallel fractures (dubbed "tiger stripes") near the south pole {cite:p}`Porco2006`. Subsequent measurements showed that these jets carry ~5–15 GW of thermal power {cite:p}`Howett2011`, far more than can be explained by radioactive decay alone for such a small body.
 
-The heat source is tidal dissipation, driven by Enceladus's 2:1 orbital resonance with the larger moon Dione. The heating is sufficient to maintain a **global subsurface ocean** of liquid water beneath an ice shell ~20–30 km thick. The erupted material from the tiger stripes feeds Saturn's E ring and provides direct samples of the subsurface ocean — analysis by Cassini's instruments revealed the presence of salts, silica nanoparticles (indicating hydrothermal activity on the ocean floor), and even complex organic molecules.
+The heat source is tidal dissipation, driven by Enceladus's 2:1 orbital resonance with the larger moon Dione. The heating is sufficient to maintain a **global subsurface ocean** of liquid water beneath an ice shell ~20–30 km thick. The erupted material from the tiger stripes feeds Saturn's E ring and provides direct samples of the subsurface ocean: analysis by Cassini's instruments revealed the presence of salts, silica nanoparticles (indicating hydrothermal activity on the ocean floor), and even complex organic molecules.
 
 ```{figure} figures/enceladus_plumes.avif
 :name: fig:enceladus-plumes
