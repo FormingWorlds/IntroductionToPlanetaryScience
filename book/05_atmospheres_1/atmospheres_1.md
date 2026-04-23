@@ -141,7 +141,7 @@ $$
 \dv{P}{z} = -\rho \, g \qquad \text{and} \qquad P = \frac{\rho \kB T}{\mu \, m_u}
 $$
 
-Our goal is to find the characteristic length scale over which pressure varies — the **scale height**.
+Our goal is to find the characteristic length scale over which pressure varies: the **scale height**.
 
 **Derivation.**
 
@@ -189,7 +189,7 @@ $$
 
 This matches our everyday experience: commercial aircraft cruise at $\sim$10–12 km altitude, where the pressure is roughly $0.2$–$0.3$ atm (about 1.2–1.4 scale heights up).
 
-**Note:** Jupiter's scale height is large despite its strong gravity because $\mathrm{H_2}$ has a very low molecular weight ($\mu = 2.2$). Titan's scale height is large because its gravity is weak ($g = 1.35$ m s$^{-2}$) — Titan's atmosphere extends to a proportionally much greater height than Earth's, despite being colder.
+**Note:** Jupiter's scale height is large despite its strong gravity because $\mathrm{H_2}$ has a very low molecular weight ($\mu = 2.2$). Titan's scale height is large because its gravity is weak ($g = 1.35$ m s$^{-2}$): Titan's atmosphere extends to a proportionally much greater height than Earth's, despite being colder.
 ```
 
 

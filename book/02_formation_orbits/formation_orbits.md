@@ -377,7 +377,7 @@ Therefore $v_p / v_a = (1+e)/(1-e)$.
 
 **Step 3: Solve for the total energy.**
 
-Substituting back and solving (the algebra is left as an exercise — try it!), we find:
+Substituting back and solving (the algebra is left as an exercise; try it!), we find:
 
 $$
 E = -\frac{GMm}{2a}
@@ -408,7 +408,7 @@ For Earth ($a = 1$ AU $= 1.496 \times 10^{11}$ m, $e = 0.017$):
 | Perihelion | $a(1-e) = 1.471 \times 10^{11}$ m | $v_p = 30.29$ km s$^{-1}$ |
 | Aphelion | $a(1+e) = 1.521 \times 10^{11}$ m | $v_a = 29.29$ km s$^{-1}$ |
 
-The variation is only about $\pm 0.5$ km s$^{-1}$ around the mean — because Earth's orbit is nearly circular. The mean orbital velocity is approximately $v \approx 2\pi a / P \approx 29.8$ km s$^{-1}$.
+The variation is only about $\pm 0.5$ km s$^{-1}$ around the mean, because Earth's orbit is nearly circular. The mean orbital velocity is approximately $v \approx 2\pi a / P \approx 29.8$ km s$^{-1}$.
 
 **Application: Halley's comet.**
 
@@ -528,7 +528,7 @@ Roche limit geometry. (a) A self-gravitating fluid satellite (blue) is rounded a
 For Saturn ($R_p = 58{,}232$ km, $\rho_p = 687$ kg m$^{-3}$) and an icy satellite ($\rho_s \approx 1000$ kg m$^{-3}$):
 
 $$
-d_R \approx 2.46 \times 58{,}232 \times \left(\frac{687}{1000}\right)^{1/3} \approx 126{,}000 \text{ km} \approx 2.16\, R_p
+d_R \approx 2.46 \times 58{,}232 \times \left(\frac{687}{1000}\right)^{1/3} \approx 126{,}500 \text{ km} \approx 2.17\, R_p
 $$
 
 Saturn's main ring system extends from about 67,000 km to 137,000 km from Saturn's centre, mostly within the Roche limit (the fluid approximation gives $d_R \approx 126{,}000$ km, but the exact boundary depends on the rigidity and composition of the orbiting material; the outer A ring extends slightly beyond the fluid Roche limit but remains within the rigid-body limit). The rings consist of countless small particles that cannot coalesce into a moon because tidal forces prevent their gravitational aggregation. We will derive the Roche limit in full in {ref}`lecture11`.

@@ -170,7 +170,7 @@ The key distinction is one of **timescale**. Conduction is a diffusive process t
 ```{admonition} Blackboard derivation: The conductive cooling timescale
 :class: tip
 
-**Goal:** Derive the characteristic timescale for heat to conduct through a body of size $L$, and show that conduction alone cannot cool planet-sized bodies — motivating the need for convection.
+**Goal:** Derive the characteristic timescale for heat to conduct through a body of size $L$, and show that conduction alone cannot cool planet-sized bodies, motivating the need for convection.
 
 **Setup.**
 
@@ -186,7 +186,7 @@ $$
 \pdv{T}{t} = \kappa \pdv{^2 T}{x^2}
 $$
 
-This equation says that the rate of temperature change at any point is proportional to the curvature of the temperature profile — regions where the temperature profile is concave up ($\pdv{^2 T}{x^2} > 0$) heat up, and regions where it is concave down cool down.
+This equation says that the rate of temperature change at any point is proportional to the curvature of the temperature profile: regions where the temperature profile is concave up ($\pdv{^2 T}{x^2} > 0$) heat up, and regions where it is concave down cool down.
 
 **Derivation.**
 
@@ -219,9 +219,9 @@ Using $\kappa \approx 10^{-6}$ m$^2$ s$^{-1}$ (typical for silicate rock), we ca
 | Moon ($R = 1740$ km) | $1.7 \times 10^6$ m | $3 \times 10^{18}$ s | ~100 Gyr |
 | Earth ($R = 6370$ km) | $6.4 \times 10^6$ m | $4 \times 10^{19}$ s | ~1300 Gyr |
 
-A small boulder cools in days — consistent with everyday experience. A 100 km asteroid cools in hundreds of millions of years, which is long but shorter than the age of the solar system — so small asteroids should have cooled and solidified, consistent with the meteorite record. But for the Moon and Earth, the conductive cooling time far exceeds the age of the universe ($\sim 14$ Gyr). **Earth cannot cool by conduction alone.**
+A small boulder cools in days, consistent with everyday experience. A 100 km asteroid cools in hundreds of millions of years, which is long but shorter than the age of the solar system, so small asteroids should have cooled and solidified, consistent with the meteorite record. But for the Moon and Earth, the conductive cooling time far exceeds the age of the universe ($\sim 14$ Gyr). **Earth cannot cool by conduction alone.**
 
-**Note:** This result tells us something profound: since Earth *is* losing heat at a rate of ~47 TW {cite:p}`DaviesDavies2010`, there must be a more efficient transport mechanism operating in its interior. That mechanism is **convection**. The question of *when* convection occurs — and how vigorous it is — leads directly to the Rayleigh number.
+**Note:** This result tells us something profound: since Earth *is* losing heat at a rate of ~47 TW {cite:p}`DaviesDavies2010`, there must be a more efficient transport mechanism operating in its interior. That mechanism is **convection**. The question of *when* convection occurs (and how vigorous it is) leads directly to the Rayleigh number.
 ```
 
 ```{figure} figures/tau_cond_vs_size.avif

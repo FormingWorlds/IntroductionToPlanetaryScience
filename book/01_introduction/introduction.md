@@ -59,7 +59,7 @@ Every topic in this course, from orbital dynamics and interior structure to atmo
 
 The word "planet" derives from the Greek *planetes* (πλανήτης), meaning "wanderer." To ancient observers, the planets were the five visible points of light (Mercury, Venus, Mars, Jupiter, and Saturn) that moved against the fixed background of stars. Together with the Sun and Moon, these seven wanderers gave us the seven days of the week.
 
-For over two millennia, the list of planets seemed settled. That changed with the invention of the telescope. William Herschel discovered Uranus in 1781, the first planet found in modern times. In 1846, Johann Galle observed Neptune at a position predicted by Urbain Le Verrier from perturbations in Uranus's orbit, a triumph of Newtonian mechanics. And in 1930, Clyde Tombaugh discovered Pluto at Lowell Observatory after a painstaking photographic search.
+For over two millennia, the list of planets seemed settled. That changed with the invention of the telescope. William Herschel discovered Uranus in 1781, the first planet found in modern times. In 1846, Johann Galle observed Neptune at a position predicted independently by Urbain Le Verrier and John Couch Adams from perturbations in Uranus's orbit, a triumph of Newtonian mechanics. And in 1930, Clyde Tombaugh discovered Pluto at Lowell Observatory after a painstaking photographic search.
 
 But Pluto was always an oddity: small, icy, with an eccentric and inclined orbit that crosses Neptune's. When astronomers began discovering other large objects in the Kuiper Belt in the 1990s and 2000s, culminating in the discovery of Eris in 2005 by Brown, Trujillo, and Rabinowitz, which appeared comparable in size to Pluto, the question became unavoidable: either these new objects were also planets, or Pluto was not.
 
@@ -281,7 +281,7 @@ $$
 \boxed{M_* = \frac{4\pi^2 r^3}{G P^2}}
 $$ (eq:kepler-mass)
 
-This is Newton's form of Kepler's third law (for $M_p \ll M_*$). The planet's mass cancels — the orbital period depends only on the central mass and the orbital radius.
+This is Newton's form of Kepler's third law (for $M_p \ll M_*$). The planet's mass cancels: the orbital period depends only on the central mass and the orbital radius.
 
 **Note:** For elliptical orbits, the same relation holds with $r$ replaced by the semi-major axis $a$. The derivation of the general case requires the vis-viva equation, which we will cover in {ref}`lecture02`.
 
@@ -299,7 +299,7 @@ $$
 \Msun = \frac{4\pi^2 \times (1.496 \times 10^{11})^3}{6.674 \times 10^{-11} \times (3.156 \times 10^7)^2} \approx 1.99 \times 10^{30} \text{ kg}
 $$
 
-This agrees with the accepted value $\Msun = 1.989 \times 10^{30}$ kg — a remarkably accurate estimate from just two measurable quantities.
+This agrees with the accepted value $\Msun = 1.989 \times 10^{30}$ kg, a remarkably accurate estimate from just two measurable quantities.
 
 **The planet-to-star mass ratio.**
 

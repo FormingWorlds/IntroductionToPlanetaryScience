@@ -248,7 +248,7 @@ Schematic of the geodynamo mechanism. Convective motions in the electrically con
 ```{admonition} Blackboard derivation: The magnetic Reynolds number $\mathrm{Rm}$
 :class: tip
 
-**Goal:** Derive the magnetic Reynolds number $\mathrm{Rm} = UL/\eta$ from the induction equation by dimensional analysis, and estimate $\mathrm{Rm}$ for Earth's outer core to demonstrate that advection dominates over diffusion — the fundamental criterion for dynamo action.
+**Goal:** Derive the magnetic Reynolds number $\mathrm{Rm} = UL/\eta$ from the induction equation by dimensional analysis, and estimate $\mathrm{Rm}$ for Earth's outer core to demonstrate that advection dominates over diffusion, the fundamental criterion for dynamo action.
 
 **Setup.**
 
@@ -286,7 +286,7 @@ $$
 \mathrm{Rm} = \frac{|{\text{advection}}|}{|{\text{diffusion}}|} = \frac{UB/L}{\eta B/L^2}
 $$
 
-Notice that the magnetic field strength $B$ **cancels** — this is an important result. The magnetic Reynolds number is a property of the **flow**, not of the field:
+Notice that the magnetic field strength $B$ **cancels**: this is an important result. The magnetic Reynolds number is a property of the **flow**, not of the field:
 
 $$
 \boxed{\mathrm{Rm} = \frac{UL}{\eta}}
@@ -314,13 +314,13 @@ $$
 
 Since $\mathrm{Rm}_\oplus \approx 1750 \gg \mathrm{Rm}_c$, advection overwhelmingly dominates over diffusion in Earth's outer core. The flow is vigorous enough to sustain dynamo action.
 
-We can also estimate the **ohmic diffusion timescale** — how long the field would take to decay if the flow suddenly stopped:
+We can also estimate the **ohmic diffusion timescale**, how long the field would take to decay if the flow suddenly stopped:
 
 $$
 \tau_{\mathrm{ohm}} \sim \frac{L^2}{\eta} = \frac{(3.5 \times 10^6)^2}{1} \approx 1.2 \times 10^{13} \text{ s} \approx 400{,}000 \text{ yr}
 $$
 
-This is much less than Earth's age (4.5 Gyr), confirming that the field cannot be a relic — it must be **continuously regenerated** by dynamo action.
+This is much less than Earth's age (4.5 Gyr), confirming that the field cannot be a relic; it must be **continuously regenerated** by dynamo action.
 
 **Note:** Paleomagnetic measurements of ancient rocks show that Earth has had a magnetic field for at least **3.4–3.5 billion years** {cite:p}`Tarduno2010`. This places a strong constraint on the thermal and compositional evolution of the core: the convective driving mechanism must have been sustained over most of Earth's history.
 ```

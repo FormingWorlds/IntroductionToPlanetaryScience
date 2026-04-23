@@ -72,7 +72,7 @@ This is roughly $10^3$ times the energy of the largest nuclear weapon ever deton
 
 **Setup.**
 
-We want to find the diameter $D$ of the crater (a length) produced by an impact with kinetic energy $E$ into a target with density $\rho$ under surface gravity $g$. In the **gravity regime** (where crater size is limited by gravity rather than material strength — valid for craters larger than $\sim$100 m), dimensional analysis requires:
+We want to find the diameter $D$ of the crater (a length) produced by an impact with kinetic energy $E$ into a target with density $\rho$ under surface gravity $g$. In the **gravity regime** (where crater size is limited by gravity rather than material strength, valid for craters larger than $\sim$100 m), dimensional analysis requires:
 
 $$
 D = C \, E^a \, \rho^b \, g^c
@@ -109,9 +109,9 @@ $$
 \boxed{D \sim \left(\frac{E}{\rho g}\right)^{1/4}}
 $$ (eq:crater-scaling)
 
-**Dimensional check:** $[E/\rho g] = [M L^2 T^{-2}/(M L^{-3} \cdot L T^{-2})] = [L^4]$. Taking the fourth root gives $[L]$ — the dimensions of length. $\checkmark$
+**Dimensional check:** $[E/\rho g] = [M L^2 T^{-2}/(M L^{-3} \cdot L T^{-2})] = [L^4]$. Taking the fourth root gives $[L]$, the dimensions of length. $\checkmark$
 
-This is the **crater scaling law** in the gravity regime {cite:p}`Holsapple1993`. It tells us that crater diameter scales as the fourth root of impact energy — doubling the energy increases the crater diameter by only a factor of $2^{1/4} \approx 1.19$ (about 19%). This weak dependence on energy explains why craters have a relatively narrow size range even though impactor energies span many orders of magnitude.
+This is the **crater scaling law** in the gravity regime {cite:p}`Holsapple1993`. It tells us that crater diameter scales as the fourth root of impact energy: doubling the energy increases the crater diameter by only a factor of $2^{1/4} \approx 1.19$ (about 19%). This weak dependence on energy explains why craters have a relatively narrow size range even though impactor energies span many orders of magnitude.
 
 **Worked example: 1 km asteroid on the Moon.**
 
@@ -541,7 +541,7 @@ Dramatic plumes of water vapour and ice particles erupting from the south polar 
 
 NASA's Perseverance rover, operating in Jezero crater since 2021, has confirmed that the crater floor is composed of igneous rock (olivine-bearing cumulates) that was subsequently altered by liquid water {cite:p}`Farley2022`. The rover has cached over 20 sample tubes for eventual return to Earth by the Mars Sample Return campaign, a joint NASA/ESA effort that, if successful, would provide the first laboratory analysis of Martian rocks and address questions about past habitability and possible biosignatures ({ref}`lecture10`).
 
-The **DART** (Double Asteroid Redirection Test) mission in 2022 demonstrated the first successful planetary defence experiment: a kinetic impactor deliberately crashed into the asteroid moonlet Dimorphos, changing its orbital period around the larger asteroid Didymos by 33 minutes {cite:p}`Thomas2023`. The result confirmed that kinetic impact is a viable deflection strategy for hazardous near-Earth asteroids, and the impact ejecta provided new insights into the mechanical properties of rubble-pile asteroid surfaces.
+The **DART** (Double Asteroid Redirection Test) mission in 2022 demonstrated the first successful planetary defence experiment: a kinetic impactor deliberately crashed into the asteroid moonlet Dimorphos, shortening its orbital period around the larger asteroid Didymos by $33.0 \pm 1.0$ minutes {cite:p}`Thomas2023`. The result confirmed that kinetic impact is a viable deflection strategy for hazardous near-Earth asteroids, and the impact ejecta provided new insights into the mechanical properties of rubble-pile asteroid surfaces.
 
 Ongoing monitoring of Io by the Juno extended mission and ground-based adaptive optics has revealed new details of Io's volcanic activity, including the discovery of previously unknown eruption sites and constraints on the spatial distribution of heat flow. For Venus, planned radar mapping missions (VERITAS, EnVision) in the early 2030s will provide the first high-resolution surface data since Magellan, enabling tests of whether Venus has experienced recent or ongoing volcanic activity ({ref}`lecture09`).
 
