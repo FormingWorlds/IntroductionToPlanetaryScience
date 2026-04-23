@@ -221,10 +221,10 @@ The origin of Phobos and Deimos has been debated for decades and remains genuine
 
 ```{figure} figures/hyodo2017_phobos_impact.avif
 :name: fig:hyodo-phobos
-:width: 650px
+:width: 600px
 :align: center
 
-Smoothed-particle hydrodynamics snapshots of a Borealis-scale giant impact onto early Mars from {cite:t}`Hyodo2017`, at four times after the collision (columns: $t = 0.17$, $0.5$, $5$, and $20$ hours). The rows show particle composition (top), temperature in $\mathrm{K}$, entropy gain in $\mathrm{J\,K^{-1}\,kg^{-1}}$, and pressure in $\mathrm{GPa}$. The impact heats disc material to $\sim 2000\ \mathrm{K}$, drives an entropy increase of $\sim 1500\ \mathrm{J\,K^{-1}\,kg^{-1}}$, and ejects a circumplanetary disc that contains both impactor and Martian-mantle material. Disc fragments collide at $3$--$5\ \mathrm{km\,s^{-1}}$ and grind down to $\sim 100\ \mu$m grains, providing the building blocks from which Phobos and Deimos may subsequently accrete.
+Two snapshots of entropy gain (in $\mathrm{J\,K^{-1}\,kg^{-1}}$) from a smoothed-particle hydrodynamics simulation of a Borealis-scale giant impact onto early Mars by {cite:t}`Hyodo2017`, at $t = 0.17\ \mathrm{h}$ (left, immediately post-impact) and $t = 20\ \mathrm{h}$ (right, after the debris disc has expanded). The impact drives an entropy increase of $\sim 1500\ \mathrm{J\,K^{-1}\,kg^{-1}}$ in the disc material and ejects a circumplanetary disc containing both impactor and Martian-mantle material. Disc fragments collide at $3$--$5\ \mathrm{km\,s^{-1}}$ and grind down to $\sim 100\ \mu$m grains, providing the building blocks from which Phobos and Deimos may subsequently accrete. Two panels selected from the original 4 columns $\times$ 4 rows grid (composition, temperature, entropy, pressure across four times).
 ```
 
 JAXA's **Martian Moons eXploration** (MMX) mission, scheduled for launch in $2026$ and return in $2031$, is designed to settle the origin question {cite:p}`Kuramoto2022`. MMX will land on Phobos, collect at least $10\ \mathrm{g}$ of regolith from at least two locations, and return that material to Earth for laboratory analysis. The isotopic and mineralogical composition of even a few grams of Phobos material will allow direct testing of the capture-versus-impact hypotheses with the same techniques used for Hayabusa2's Ryugu samples and OSIRIS-REx's Bennu samples. MMX will also fly multiple close passes by Deimos and remotely characterise its surface.
@@ -254,10 +254,10 @@ That changed when NASA's **InSight** lander, the first dedicated geophysical mis
 
 ```{figure} figures/stahler2021_marsquakes.avif
 :name: fig:stahler-quakes
-:width: 600px
+:width: 700px
 :align: center
 
-Detection of core-reflected $S$ waves ($ScS$) in InSight marsquake recordings. Stacking the polarisation-filtered envelopes of multiple events on a common time axis reveals a clear secondary arrival that matches the predicted travel time of waves reflected off the core-mantle boundary. The right-hand panels show the energy and the corresponding inferred core radius. From {cite:t}`Stahler2021`.
+Detection of core-reflected $S$ waves ($ScS$) in InSight marsquake recordings. **Left**: the raw and polarisation-filtered transverse-component velocity for marsquake $S0173a$ (top), together with the polarisation-filtered envelope stack across multiple events (bottom), with the predicted $ScS$ arrival window marked in grey. **Right**: the stacked $ScS$ energy as a function of assumed core-radius offset (in km), with the best-fit and 95% confidence band; the maximum energy near the central value pins the core-mantle boundary at $r_{\mathrm{core}} \approx 1830\ \mathrm{km}$. From {cite:t}`Stahler2021`. The original figure also includes a six-event spectrogram panel and a residual-time panel; only the stack and the energy curve are reproduced here.
 ```
 
 By the summer of 2021, the InSight team had announced three landmark results, all published together in *Science* {cite:p}`Stahler2021,Khan2021,Knapmeyer-Endrun2021`. {cite:t}`Stahler2021` used $ScS$ phases (shear waves reflected off the core-mantle boundary) from several large quakes to measure the core radius directly: $1830 \pm 40\ \mathrm{km}$, considerably *larger* than most pre-InSight thermal-evolution models had predicted, and corresponding to about $54\%$ of the planet's radius. The fact that $ScS$ waves are detected means the outer core is liquid; if the entire core were solid, these waves would propagate freely across the boundary and the strong reflection signature would be absent. The measurement implies a mean core density of $5.7$ to $6.3\ \mathrm{g\ cm^{-3}}$, well below pure iron, requiring a significant complement of light elements (sulfur, oxygen, carbon, hydrogen) dissolved in the iron core.
@@ -289,7 +289,7 @@ The youthful interior structure that InSight reveals is consistent with a separa
 :width: 700px
 :align: center
 
-Predicted Mollweide maps for Mars from {cite:t}`Plesa2022`'s 3-D thermal-evolution models, anchored to the InSight crustal-thickness measurement at the landing site (white triangle marker). Top row (a-c): crustal thickness in km (colourbar 0-150 km). Middle row (d-f): surface heat flow in mW/m$^2$ (colourbar 16-32). Bottom row (g-i): elastic lithospheric thickness in km (colourbar 60-380). Each row shows three model variants spanning a range of mantle-rheology assumptions. The dichotomy between thin (blue) northern lowlands and thicker (red) southern highlands in the crustal-thickness panels is a robust feature of all model variants.
+Crustal thickness maps for Mars (Mollweide projection, colourbar $0$--$150\ \mathrm{km}$) from three of {cite:t}`Plesa2022`'s 3-D thermal-evolution models, anchored to the InSight crustal-thickness measurement at the landing site (white triangle marker). Panels (a, b, c) correspond to three model variants spanning a range of mantle-rheology assumptions. The dichotomy between thin (blue) northern lowlands and thicker (yellow) southern highlands is a robust feature of all three variants. The original figure also includes corresponding surface heat flow and elastic lithospheric thickness rows; only the crustal-thickness row is reproduced here.
 ```
 
 ```{figure} figures/plesa2022_convection.avif
@@ -297,7 +297,7 @@ Predicted Mollweide maps for Mars from {cite:t}`Plesa2022`'s 3-D thermal-evoluti
 :width: 700px
 :align: center
 
-Three-dimensional snapshots and equatorial cross-sections of mantle temperature in {cite:t}`Plesa2022`'s thermal-evolution models, constrained by the InSight crustal-thickness and core-radius measurements. The depth slices below the surface, at mid-mantle depth, and just above the core-mantle boundary all show small-number long-wavelength upwellings, consistent with the persistence of the Tharsis volcanic province as the surface expression of a stable plume.
+Three-dimensional rendered snapshots of mantle temperature in {cite:t}`Plesa2022`'s thermal-evolution models, constrained by the InSight crustal-thickness and core-radius measurements. Panels (a, b, c) correspond to three model variants spanning a range of mantle-rheology assumptions. All three show a small number of long-wavelength upwellings, consistent with the persistence of the Tharsis volcanic province as the surface expression of a stable plume. The original figure also includes Mollweide depth slices at three depths in the mantle; only the rendered globe row is reproduced here.
 ```
 
 The geodynamic interpretation of these results, developed in detail by {cite:t}`Plesa2022`, is that Mars sits in a stagnant-lid regime: the lithosphere is thick and immobile, mantle convection is sluggish, and heat is escaping primarily by conduction through the lid, with secondary contributions from a long-lived plume beneath Tharsis. The crust is significantly enriched in radioactive heat-producing elements (uranium, thorium, potassium) compared to the bulk silicate Mars, which both heats the crust directly and depletes the mantle of long-term radiogenic energy. This combination of features explains why Mars cooled fast enough that the dynamo died early, but slow enough that some volcanism persisted into the recent past.

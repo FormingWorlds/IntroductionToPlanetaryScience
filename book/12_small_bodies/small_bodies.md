@@ -22,7 +22,7 @@ Pluto is treated here as the largest known KBO, not as a planet.
 :width: 700px
 :align: center
 
-Schematic overview of the major solar system small-body populations: main belt asteroids, Trojans, near-Earth asteroids, the Kuiper Belt, the scattered disk, and the Oort cloud. The inset shows the inner solar system at a different scale; note that the Oort cloud extends roughly $10^4$ times farther from the Sun than Neptune's orbit. Image credit: NASA, public domain.
+Size comparison of representative small bodies visited by spacecraft, scaled against terrestrial landmarks for reference. Comet and asteroid nuclei span a range from sub-kilometre fragments to several hundred kilometres for the largest main-belt asteroids and dwarf planets. The major dynamical reservoirs from which these bodies are drawn (main belt asteroids and Trojans inside Jupiter's orbit, the Kuiper Belt and scattered disk just beyond Neptune, and the Oort cloud at $10^4$-$10^5$ AU) are surveyed in the rest of this lecture. Image credit: NASA/JPL-Caltech, public domain.
 ```
 
 
@@ -289,7 +289,7 @@ This is the absolute zero of the solar system clock.
 :width: 480px
 :align: center
 
-Schematic of a Pb-Pb isochron diagram. Cogenetic samples (filled circles) lie along a straight line in $({}^{207}\mathrm{Pb}/{}^{204}\mathrm{Pb})$ versus $({}^{206}\mathrm{Pb}/{}^{204}\mathrm{Pb})$ space. The slope depends only on the age and the present-day $^{235}\mathrm{U}/{}^{238}\mathrm{U}$ ratio; the intercept gives the initial Pb composition. Image credit: Wikimedia Commons, public domain.
+Pb-Pb isochrons for (A) the Efremovka CAI 22E, (B) an Allende chondrule (C30), and (C) an NWA 5697 chondrule (C2). Each panel plots $^{207}\mathrm{Pb}/^{206}\mathrm{Pb}$ versus $^{204}\mathrm{Pb}/^{206}\mathrm{Pb}$ for cogenetic mineral fractions; the slope of the isochron yields the absolute age. The CAI age, $4567.35 \pm 0.28$ Myr, is the oldest known solar system solid; the Allende chondrule is contemporaneous with CAIs to within uncertainties, while the NWA chondrule is about 2.6 Myr younger. Figure adapted from {cite:t}`Connelly2012`.
 ```
 
 
@@ -634,7 +634,7 @@ The Chelyabinsk meteor of 15 February 2013, photographed shortly after entry fro
 :width: 600px
 :align: center
 
-Map of the Tunguska airburst zone (1908), reconstructed from felled trees and modern surveys. The shockwave knocked down approximately 80 million trees over $\sim 2{,}000$ km$^2$ of Siberian forest. The released energy was approximately 10 Mt, consistent with the airburst of an icy or rocky body $\sim 50$-$80$ m across. Image credit: NASA / public domain (Wikimedia Commons).
+Trees flattened in a radial pattern by the 30 June 1908 Tunguska airburst, photographed during Leonid Kulik's 1929 expedition to the impact site near the Stony Tunguska River, Siberia. The blast levelled an estimated 80 million trees over $\sim 2{,}000$ km$^2$ of forest, releasing about 10 Mt TNT equivalent, consistent with the airburst of an icy or rocky body $\sim 50$-$80$ m across. Image credit: Leonid Kulik / Soviet Academy of Sciences expedition, public domain (Wikimedia Commons).
 ```
 
 Planetary defence is the practical application of all the small-body science in this lecture.
@@ -646,7 +646,7 @@ Rubin's first light was achieved in June 2025, and over its 10-year survey it is
 :width: 600px
 :align: center
 
-The Vera C. Rubin Observatory on Cerro Pachón, Chile, during construction. Its 8.4 m primary and 3.2 gigapixel camera will repeatedly image the entire visible sky every few nights, dramatically improving the inventory of small solar system bodies, including a roughly tenfold increase in the NEA discovery rate. Image credit: Rubin Observatory / NSF / DOE, public domain.
+The Vera C. Rubin Observatory on Cerro Pachón, Chile, photographed inside the telescope dome during commissioning (a Rubin/NSF/DOE press image from before the June 2025 First Look release). Its 8.4 m primary and 3.2 gigapixel camera will repeatedly image the entire visible sky every few nights, dramatically improving the inventory of small solar system bodies, including a roughly tenfold increase in the NEA discovery rate. Image credit: Rubin Observatory / NSF / DOE, public domain.
 ```
 
 The second prerequisite is **deflection**.
@@ -849,7 +849,7 @@ Eris and its moon Dysnomia imaged by the Hubble Space Telescope. Eris is approxi
 :width: 480px
 :align: center
 
-Schematic of the Haumea system, showing the highly elongated dwarf planet, its ring (discovered by stellar occultation in 2017), and its two moons Hi'iaka and Namaka. The system is interpreted as the product of a giant collisional disruption that also produced a dynamical family of trans-Neptunian fragments. Image credit: Wikimedia Commons, CC BY-SA 4.0.
+Stellar occultation light curve of the dwarf planet Haumea on 21 January 2017, recorded with the 1 m telescope at Konkoly Observatory (Hungary). The deep central drop is the body of Haumea; the two narrower symmetric dips on either side reveal a $\sim 70$ km wide, $\sim 2{,}287$ km radius ring, the first ring system discovered around a trans-Neptunian object {cite:p}`Ortiz2017`. Figure adapted from {cite:t}`Sicardy2024`.
 ```
 
 ```{figure} figures/makemake.avif
@@ -939,7 +939,7 @@ Halley's nucleus is approximately $15 \times 8 \times 8$ km, irregular and very 
 :width: 500px
 :align: center
 
-Comet 1P/Halley imaged by the Giotto spacecraft on 13 March 1986, the first ever close-up of a cometary nucleus. The nucleus is approximately $15 \times 8 \times 8$ km, very dark, and irregular; bright jets of gas and dust emerge from a few discrete active regions on the sunward side. Image credit: ESA/MPAe Lindau, public domain.
+Comet 1P/Halley imaged by the Giotto Halley Multicolour Camera (HMC) on 13-14 March 1986, the first close-up view of a cometary nucleus. The nucleus is approximately $15 \times 8 \times 8$ km, very dark (albedo $\sim 0.04$), and irregular; bright jets of gas and dust emerge from a few discrete active regions on the sunward (left) side. Image credit: ESA / Halley Multicolour Camera Team / MPAe Lindau, public domain.
 ```
 
 
@@ -976,7 +976,7 @@ Many long-period comets make a single passage and are then ejected from the sola
 :width: 500px
 :align: center
 
-Comet Halley as photographed during its 1986 apparition. The visible structure includes the bright coma around the nucleus, the broad curved dust tail, and the narrower straight ion tail. Halley is the only short-period comet bright enough to be visible to the unaided eye. Image credit: NASA/Lick Observatory, public domain.
+Comet 1P/Halley photographed against the Milky Way on 21 March 1986 during its most recent apparition. The bright coma surrounds the nucleus and the long tail extends across many degrees of sky. Halley is the only short-period comet bright enough to be visible to the unaided eye. Image credit: R. Haefner / European Southern Observatory, CC BY 4.0 (Wikimedia Commons).
 ```
 
 
@@ -998,7 +998,7 @@ In other words, *individual comets span a factor of 3 in D/H*, and there is no c
 :width: 480px
 :align: center
 
-Comet 103P/Hartley 2, imaged by NASA's EPOXI mission during a flyby on 4 November 2010. The dumbbell-shaped nucleus is approximately 2.2 km long. Hartley 2 is notable for having a D/H ratio in its water consistent with Earth's oceans, in contrast to most other measured comets. Image credit: NASA/JPL-Caltech/UMD, public domain.
+Comet 103P/Hartley 2 imaged by NASA's EPOXI mission during the close flyby on 4 November 2010. The peanut-shaped nucleus is approximately 2.2 km long with two distinct lobes joined by a smoother waist; bright jets of gas and dust emerge from both ends. Hartley 2 is notable for having a D/H ratio in its water consistent with Earth's oceans, in contrast to most other measured comets. Image credit: NASA/JPL-Caltech/UMD, public domain.
 ```
 
 The implication is that **Earth's water cannot have come from comets alone**: no single class of comet matches Earth, and the diversity of cometary D/H values means that the bulk delivery would have produced an Earth significantly heavier in deuterium than observed.
@@ -1059,7 +1059,7 @@ But the analysis was definitive: Itokawa's surface composition matches the LL-cl
 :width: 500px
 :align: center
 
-The S-type near-Earth asteroid (25143) Itokawa imaged by Hayabusa in 2005. Itokawa is approximately 535 m long, has a "rubble-pile" structure with no large craters, and is the parent of the LL-class ordinary chondrites. The main features are a smoother "neck" region and two larger lobes (Muses-Sea on the left, the rougher region on the right). Image credit: JAXA, used with permission.
+The S-type near-Earth asteroid (25143) Itokawa imaged by Hayabusa AMICA in 2005. Itokawa is approximately 535 m long with a distinctive bilobed sea-otter profile: two rougher lobes joined by the smoother "Muses Sea" neck region (the central tan area). The complete absence of large craters and the high boulder fraction are signatures of a rubble-pile internal structure. Itokawa is the parent body of the LL-class ordinary chondrites. Image credit: ISAS / JAXA, CC BY 4.0.
 ```
 
 **Hayabusa2** (JAXA, 2014--2020) visited the carbonaceous (Cb-type) asteroid (162173) **Ryugu**, a $\sim 1$ km diameter spinning-top body, and returned $5.4$ g of sample to Earth in December 2020.
@@ -1073,7 +1073,7 @@ The mission is currently extended for further small-body flybys.
 :width: 480px
 :align: center
 
-The C-type near-Earth asteroid (162173) Ryugu imaged by Hayabusa2 in 2018. Ryugu is approximately 900 m across with a distinctive "spinning top" shape, an equatorial bulge produced by past rapid rotation. Hayabusa2 returned 5.4 g of carbonaceous-chondrite-like material from two surface and one subsurface sampling sites. Image credit: JAXA, used with permission.
+The C-type near-Earth asteroid (162173) Ryugu imaged by Hayabusa2 ONC-T on 12 July 2018. Ryugu is approximately 900 m across with a distinctive "spinning top" shape, an equatorial bulge produced by past rapid rotation. Hayabusa2 returned 5.4 g of carbonaceous-chondrite-like material from two surface and one subsurface sampling sites. Image credit: JAXA / Hayabusa2 ONC team, processed by Kevin M. Gill, CC BY 2.0.
 ```
 
 **OSIRIS-REx** (NASA, 2016--2023) visited the carbonaceous (B-type) asteroid (101955) **Bennu**, a 490-m diameter rubble pile with a similar shape to Ryugu.
@@ -1158,7 +1158,7 @@ Its physical nature remains debated: candidates include a fragment of a tidally 
 :width: 700px
 :align: center
 
-Resistant-mean stacked image of 1I/'Oumuamua with an equivalent exposure time of $9000$ s, obtained by {cite:t}`Meech2017` with multi-telescope follow-up of the Pan-STARRS discovery. The directions to the Sun, the negative heliocentric velocity vector ($-v$), north, and east are indicated, along with a scale bar. Left: image stretched to show the point-source appearance of the object. Right: the same image rebinned $2 \times 2$ and stretched to $\pm 2\sigma$ from the background to emphasise the absence of a coma. No extended dust or gas is visible at the limit of the deep stack, despite the non-gravitational acceleration later inferred from astrometry, leaving the nature of the object's outgassing source unresolved. From Figure 2 of {cite:t}`Meech2017`.
+Deep combined image of 1I/'Oumuamua (centre, circled) obtained as part of the multi-telescope follow-up to the Pan-STARRS discovery, including data from the ESO Very Large Telescope reported by {cite:t}`Meech2017`. Because the telescope tracked the rapidly moving target, background stars appear as short trails while 'Oumuamua itself is the faint pointlike source at the centre of the frame. No extended coma or dust tail is detected at the limit of the deep stack, despite the non-gravitational acceleration later inferred from astrometry, leaving the nature of the object's outgassing source unresolved. Image credit: ESO / K. Meech et al., CC BY 4.0.
 ```
 
 ```{figure} figures/oumuamua_iso_density.avif

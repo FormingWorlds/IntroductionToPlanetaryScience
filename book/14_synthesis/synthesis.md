@@ -28,7 +28,7 @@ Overview of the dust-to-planet growth processes operating in protoplanetary disk
 
 ```{figure} figures/lambrechts2012_core_growth.avif
 :name: fig:l14:envelope-accretion
-:width: 75%
+:width: 90%
 
 Mass growth of a planetary core as a function of time at three orbital radii (0.5, 5, and 50 AU), comparing pebble accretion in the drift and Hill regimes (solid lines) with classical planetesimal accretion (grey dotted lines). Pebble accretion reaches 10 Earth masses well before the typical disk lifetime, while planetesimal accretion at 5 AU takes longer than the disk lifetime. The masses of Ceres and Pluto are marked for reference. Reproduced from {cite:t}`Lambrechts2012`.
 ```
@@ -44,7 +44,7 @@ Gallery of 240 GHz (1.25 mm) ALMA continuum images of 20 nearby protoplanetary d
 
 ```{figure} figures/lambrechts2012_growth_time.avif
 :name: fig:l14:accretion-timescales
-:width: 75%
+:width: 90%
 
 Time required to grow a 10 Earth mass core as a function of orbital distance, for pebble accretion in the Hill regime (solid black line) and for planetesimal accretion (grey lines). Pebble accretion is orders of magnitude faster than planetesimal accretion at large orbital radii, which is the main reason gas giant cores have to grow that way to reach pebble-isolation mass before the disk disperses (red shaded region). Reproduced from {cite:t}`Lambrechts2012`.
 ```
@@ -134,7 +134,8 @@ The reverse statement, that planet *occurrence rates depend strongly on stellar 
 :name: fig:l14:mulders-occurrence
 :width: 80%
 
-Average number of close-in planets per star (orbital period less than 50 days) as a function of host-star effective temperature, compiled from a representative subset of Kepler, K2, and M-dwarf transit and radial-velocity surveys (Howard+12, Mulders+15, Yang+20, He+21, Bergsten+23, Hardegree-Ullman+19, Ment & Charbonneau23, Sabotta+21). The occurrence rate rises by about a factor of 2 from F dwarfs ($\sim 6500$ K) to early M dwarfs ($\sim 3500$ K), then drops slightly toward the latest M types where the surveys are smallest and the most uncertain. The takeaway is that small close-in planets are most common around the most numerous class of stars in the galaxy. Reproduced from {cite:t}`Mulders2018`.
+Average number of close-in planets per star (orbital period less than 50 days) as a function of host-star effective temperature, compiled from a representative subset of Kepler, K2, and M-dwarf transit and radial-velocity surveys (Howard+12, Mulders+15, Hardegree-Ullman+19, Yang+20, He+21, Sabotta+21, Bergsten+23, Ment & Charbonneau23). The occurrence rate rises by about a factor of 2 from F dwarfs ($\sim 6500$ K) to early M dwarfs ($\sim 3500$ K), then drops slightly toward the latest M types where the surveys are smallest and the most uncertain. The takeaway is that small close-in planets are most common around the most numerous class of stars in the galaxy. Composite figure compiled from the cited literature; the headline trend is reviewed in {cite:t}`Mulders2018`.
+<!-- TODO: verify exact source of this composite figure; the original "Reproduced from Mulders2018" attribution was demonstrably wrong because the figure includes Bergsten+23 as a data point. The composite postdates 2018 and may originate from a recent Pascucci/Bergsten/Hardegree-Ullman talk or proceedings article. -->
 ```
 
 
@@ -362,13 +363,6 @@ Normalising on the Sun ($t_{\rm MS,\odot} \approx 10$ Gyr), this gives $t_{\rm M
 Lyman-$\alpha$ and X-ray irradiances at the habitable zone of stars of different spectral type and age. M dwarfs deliver of order 100 to 1000 times higher EUV/X-ray flux to their HZ planets than G dwarfs do, and the high-flux phase lasts for several Gyr. K dwarfs sit at an intermediate level and decline relatively quickly, which is one of the reasons {cite:t}`CuntzGuinan2016` argued that K dwarfs may be the most habitable single class of host star. Reproduced from {cite:t}`CuntzGuinan2016`.
 ```
 
-```{figure} figures/cuntz_guinan_habprep.avif
-:name: fig:l14:cuntz-habprep
-:width: 75%
-
-Habitability domains as a function of stellar effective temperature, computed in the {cite:t}`CuntzGuinan2016` "habPREP" framework. The curves show that K dwarfs and the cooler end of the G dwarfs maximise the time-integrated habitability score, balancing main-sequence lifetime against stellar activity. Reproduced from {cite:t}`CuntzGuinan2016`.
-```
-
 The 1D values listed above for $d_{\rm in}$ are themselves a simplification. Three-dimensional global climate models that resolve clouds give a different answer for tidally locked planets around M dwarfs. {cite:t}`Yang2013` showed that on a planet that always presents the same face to its star, strong convection at the substellar point lifts thick water clouds that drive the local albedo above $\sim 0.6$ and act as a *stabilising* feedback against runaway warming ({numref}`fig:l14:yang-clouds`). The result is that the inner edge of the HZ, defined as the largest stellar flux at which surface temperature stays below the runaway threshold, shifts inward by roughly a factor of two relative to the 1D Kopparapu boundary. The 1D HZ therefore *under-estimates* the inner edge of the M-dwarf HZ, and the corresponding occurrence of habitable planets around M dwarfs is correspondingly larger than the 1D values would suggest.
 
 ```{figure} figures/yang2013_tidally_locked_clouds.avif
@@ -541,7 +535,7 @@ JWST transmission spectrum of K2-18b from {cite:t}`Madhusudhan2023`. The combine
 :name: fig:l14:k218b-post
 :width: 90%
 
-Posterior probability distributions for the mixing ratios of carbon-bearing molecules in the atmosphere of K2-18b for three retrieval scenarios from {cite:t}`Madhusudhan2023`. The DMS posterior (third column) is consistent with a detection at 2 to 3 sigma but is heavily dependent on the retrieval setup, illustrating exactly the inverse-problem issue that makes single-snapshot biosignature claims hard to validate. Reproduced from {cite:t}`Madhusudhan2023`.
+Posterior probability distributions for the mixing ratios of $\mathrm{CH_4}$, $\mathrm{CO_2}$, and DMS in the atmosphere of K2-18b for three retrieval scenarios from {cite:t}`Madhusudhan2023`. The DMS posterior (right) is consistent with a detection at 2 to 3 sigma but is heavily dependent on the retrieval setup, illustrating exactly the inverse-problem issue that makes single-snapshot biosignature claims hard to validate. Reproduced from {cite:t}`Madhusudhan2023`.
 ```
 
 A *convincing* biosignature detection on an exoplanet would therefore require some combination of the following:
@@ -557,7 +551,7 @@ The Habitable Worlds Observatory (HWO) and the LIFE concept are designed for exa
 :name: fig:l14:life-yields
 :width: 90%
 
-Predicted exoplanet detection yields for the LIFE mission as a function of aperture diameter ($D = 1$ to $3.5$ m), separated by planet category (rocky habitable-zone, exo-Earth candidates, larger super-Earths, sub-Neptunes, sub-Jovians). A 3.5 m aperture LIFE configuration could detect $\sim 25$ rocky habitable-zone planets and over $100$ rocky planets in total around FGK stars within reach. Reproduced from {cite:t}`Quanz2022`.
+Predicted total exoplanet detection yields for the LIFE mission during a 2.5-year search phase, as a function of mirror aperture diameter ($D = 1$ to $3.5$ m), shown for two assumed instrument scenarios (lower and upper bars). A 3.5 m aperture LIFE configuration would detect of order $500$ to $800$ planets in total; the per-category breakdown reported by {cite:t}`Quanz2022` includes $\sim 25$ rocky habitable-zone planets around FGK stars, with the remainder distributed across larger rocky planets, sub-Neptunes, and sub-Jovians. Reproduced from {cite:t}`Quanz2022`.
 ```
 
 The earliest plausible robust detection of biosignatures on an Earth-like exoplanet is, on the current mission timelines, in the 2040s rather than the 2030s. The 2030s will be the era of statistical atmospheric characterisation (Ariel), of better demographic constraints (PLATO, Roman), and of solar system in-situ work (Europa Clipper, JUICE, Dragonfly, EnVision, Mars Sample Return on the re-baselined schedule). The flagship life-detection missions for exoplanets come a decade later.

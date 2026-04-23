@@ -242,7 +242,7 @@ A density of $0.5$ g/cm$^3$, lower than water, indicates an inflated or low-mass
 A density between rocky and gas, near $2$--$4$ g/cm$^3$, is typical of "sub-Neptunes" and indicates a substantial water-ice or H/He volatile component on top of a rocky core.
 Without the joint transit-plus-RV measurement, we cannot tell any of these apart.
 
-```{figure} figures/winn_mass_radius.avif
+```{figure} figures/chenkipping_mass_radius.avif
 :name: fig:ck17massradius
 :width: 90%
 
@@ -424,7 +424,7 @@ Kepler-derived planet occurrence rates as a function of orbital period and plane
 :name: fig:bryson
 :width: 90%
 
-Marginalised occurrence rate of small planets as a function of radius, instellation flux, and host stellar effective temperature from the Kepler analysis of {cite:t}`Bryson2021`. The dark and light shaded bands show 68\% and 95\% credible intervals. The observed occurrence rates are consistent with $\eta_\oplus \sim 0.1$--$0.6$ depending on the precise definition of habitable-zone Earth analogue. This is the range typically quoted in mission yield estimates for HWO and LIFE (see Part 3).
+Marginalised differential occurrence rate of small planets from the Kepler analysis of {cite:t}`Bryson2021`. **Left**: occurrence per unit planetary radius, $\dd N / \dd R$, evaluated at $\Delta R = 0.25\,\Rearth$. **Right**: occurrence per unit instellation flux, $\dd N / \dd I$, evaluated at $\Delta I = 0.18$ (note the inverted x-axis, with low instellation on the right). Dark and light shaded bands are the 68\% and 95\% credible intervals. The observed occurrence rates are consistent with $\eta_\oplus \sim 0.1$--$0.6$ depending on the precise definition of habitable-zone Earth analogue. This is the range typically quoted in mission yield estimates for HWO and LIFE (see Part 3).
 ```
 
 A particularly important "laboratory" target system is **TRAPPIST-1**, an ultra-cool dwarf at 12 parsecs hosting **seven** transiting Earth-sized planets in a tightly packed inner system, all within 0.06 AU {cite:p}`Gillon2017`.
@@ -443,7 +443,7 @@ Transit light curves of the seven **TRAPPIST-1** planets from {cite:t}`Gillon201
 :name: fig:trappist1ttvs
 :width: 80%
 
-Transit timing variations (TTVs) of the inner TRAPPIST-1 planets, from {cite:t}`Gillon2017`. The deviations from a constant period reach tens of minutes and are coherent over hundreds of days, encoding the gravitational interactions among the planets. Inverting the TTV signals gives **dynamical masses** for all seven planets without any radial velocity follow-up; this is essential because TRAPPIST-1 is too faint at optical wavelengths for high-precision radial velocity measurements.
+Transit timing variations (TTVs) of **TRAPPIST-1 e** as a representative panel from the seven-planet TTV dataset of {cite:t}`Gillon2017`. Black points are observed deviations from a constant-period transit ephemeris; the red curve is the best-fit dynamical model that includes gravitational coupling to the other six planets. The TTV amplitude reaches tens of minutes and is coherent over hundreds of days. Inverting the joint seven-planet TTV signal yields **dynamical masses** for all the planets without any radial velocity follow-up; this is essential because TRAPPIST-1 is too faint at optical wavelengths for high-precision radial velocity measurements.
 ```
 
 ### The period-radius diagram
@@ -510,7 +510,7 @@ Photoevaporation theory prediction of the radius valley from {cite:t}`OwenWu2013
 :name: fig:owenmassloss
 :width: 90%
 
-Predicted mass-loss rates as a function of planet mass (left) and survival fraction as a function of planet radius (right) for the photoevaporation model. The four panels show two stellar XUV histories and two starting orbital separations. The model predicts a sharp boundary in the planet population that maps onto the observed radius valley. From {cite:t}`OwenWu2013`.
+Photoevaporation-driven evolution of a young sub-Neptune in the {cite:t}`OwenWu2013` model. **Top**: planetary radius as a function of time since disc clearing, for two host XUV histories (line styles) and two starting orbital separations. **Bottom**: planet mass over the same evolution. The thin vertical line marks the end of the saturated XUV phase at $\sim 100$ Myr. After this time the radius and mass plateau; planets that have lost their envelopes by then settle as bare rocky cores below the radius valley.
 ```
 
 The second proposed mechanism is **core-powered mass loss** {cite:p}`Ginzburg2018,Gupta2019`.
@@ -588,7 +588,7 @@ The **peas in a pod** correlation from {cite:t}`Weiss2018`: the radius of an inn
 :name: fig:weiss_spacing
 :width: 75%
 
-Period-spacing regularity in Kepler multi-planet systems, from {cite:t}`Weiss2018`. The histograms show that adjacent-pair period ratios cluster strongly around a single typical value rather than being random, supporting the view that in-situ formation of compact systems proceeds by a smooth, local process rather than by stochastic large impacts.
+Period-ratio correlation in Kepler multi-planet systems, from {cite:t}`Weiss2018`. Each point is a triple of consecutive transiting planets in the same system: the horizontal axis is the period ratio of the inner pair ($P_{j+1}/P_j$) and the vertical axis is the period ratio of the next pair out ($P_{j+2}/P_{j+1}$). The clustering along the diagonal (Pearson $R = 0.46$, $p < 10^{-5}$) means that within a system, neighbouring period ratios are similar, supporting the view that compact inner systems form by a smooth, local process rather than by stochastic large impacts.
 ```
 
 The interpretation favoured by Weiss et al. is that compact inner systems form by a **smooth, local process** rather than by stochastic large impacts.
@@ -660,7 +660,7 @@ Geometry of the **Rossiter-McLaughlin effect**, from the {cite:t}`Triaud2018` re
 :name: fig:obliquitydist
 :width: 90%
 
-Projected stellar obliquity versus the dimensionless tidal dissipation parameter for the known hot Jupiter sample, from {cite:t}`Albrecht2022`. The horizontal axis is the strength of expected tidal coupling between the planet and the host star. The cluster of well-aligned planets at low obliquity and high dissipation is consistent with tidal realignment of misaligned orbits over Gyr timescales; the broad scatter at low dissipation indicates that the **primordial** obliquity distribution was wide, supporting an important role for high-eccentricity migration in the hot Jupiter population.
+Projected stellar obliquity $\lambda$ as a function of scaled orbital separation $a/R_\star$ for the hot Jupiter sample, from {cite:t}`Albrecht2022`. The stacked panels split the sample by host-star spectral type bin. Tight orbits around cool stars cluster near zero obliquity, consistent with tidal realignment of initially misaligned orbits over Gyr timescales. The wider scatter at larger $a/R_\star$ and around hotter hosts indicates that the **primordial** obliquity distribution was wide, supporting an important role for high-eccentricity migration in the hot Jupiter population. The inset shows the solar system planets for reference.
 ```
 
 The current consensus is that **all three migration mechanisms operate**, that their relative contributions depend on host-star spectral type, on system multiplicity, and probably on system age, and that the obliquity distribution is the cleanest empirical handle on which mechanism dominates in any given regime.
@@ -817,7 +817,7 @@ Theoretical transmission spectra of WASP-39 b from photochemical models, compare
 :name: fig:wasp39species
 :width: 80%
 
-Decomposition of the JWST/NIRSpec G395H transmission spectrum of WASP-39 b into the contributions of individual species, from {cite:t}`Alderson2023`. The four lower panels isolate the $\mathrm{H_2O}$, CO, $\mathrm{CO_2}$, and $\mathrm{SO_2}$ absorption bands separately, each detected at high statistical significance. The $\mathrm{CO_2}$ feature alone is detected at $28.5\sigma$, by far the strongest detection of any exoplanet absorption feature to date.
+Decomposition of the JWST/NIRSpec G395H transmission spectrum of WASP-39 b into the contributions of individual species, from {cite:t}`Alderson2023`. **Top**: full spectrum with the best-fit model (black) and the contributions of clouds, $\mathrm{CH_4}$, $\mathrm{H_2O}$, $\mathrm{SO_2}$, $\mathrm{CO_2}$, and CO shown as the difference relative to the full model when each species is removed. **Bottom**: isolated $\mathrm{CO_2}$ feature near 4.3 $\mu$m (filled band is the model contribution), detected at $28.5\sigma$. This is by far the strongest detection of any exoplanet absorption feature to date.
 ```
 
 **TRAPPIST-1 b**, the innermost rocky planet of the TRAPPIST-1 system, was the first habitable-zone-adjacent rocky planet observed by JWST in MIRI thermal emission.
@@ -871,7 +871,7 @@ The interpretation depends on the precise treatment of the data systematics and 
 :name: fig:55cnce
 :width: 90%
 
-JWST/NIRCam emission spectrum of **55 Cancri e** from {cite:t}`Hu2024`. The spectrum shows features inconsistent with a bare-rock blackbody at the equilibrium temperature; the best-fit retrievals favour an atmosphere with non-negligible CO and $\mathrm{CO_2}$. The retrieved volatile mixing ratios are sensitive to the assumed background gas ($\mathrm{H_2}$, $\mathrm{N_2}$, or other), and the conclusion of a secondary atmosphere is currently tentative but suggestive.
+JWST/NIRCam plus MIRI thermal emission spectrum of **55 Cancri e** from {cite:t}`Hu2024`. Black points are the binned JWST data; coloured curves are atmospheric models (grey blackbody, $\mathrm{CO_2}$+$\mathrm{N_2}$ purple, $\mathrm{CO_2}$+CO red, CO-only gold). The data fall below the bare-rock blackbody at most wavelengths and favour atmospheric models with non-negligible CO and $\mathrm{CO_2}$. A companion retrieval (not shown) constrains the volatile mixing ratios but is sensitive to the assumed background gas, so the conclusion of a secondary atmosphere is currently tentative but suggestive.
 ```
 
 **TOI-561 b** is an ultra-short-period rocky planet around a metal-poor thick-disk K star, particularly interesting because the host star formation history is older than the average exoplanet host and the bulk-density measurement places the planet near the rocky end of the small-planet spectrum.
@@ -1024,7 +1024,7 @@ The mid-infrared regime is particularly well suited to biosignature gas detectio
 :name: fig:lifeyield
 :width: 80%
 
-Predicted exoplanet detection yield for the **LIFE** mid-infrared nulling interferometer concept, from {cite:t}`Quanz2022`. The two panels compare two wavelength configurations ($3$--$20\,\mu$m, top, and $6$--$17\,\mu$m, bottom) for "Scenario 2" of the LIFE simulator. Bars show the difference in detected planets per category (rocky habitable-zone, exo-Earth candidates, rocky+super-Earth, sub-Neptune, sub-Jovian) split by hot/warm/cold instellation. LIFE is expected to detect $\sim 50$ rocky planets in the conservative habitable zones of nearby M and K dwarfs. M dwarfs dominate the yield because they are nearby and abundant; G dwarfs contribute fewer but are more solar-system-like targets.
+Sensitivity of the predicted **LIFE** detection yield to the wavelength range of the mid-infrared nulling interferometer, from {cite:t}`Quanz2022`. Each panel shows the *change* in detectable planets per category (rocky habitable-zone, exo-Earth candidates, rocky+super-Earth, sub-Neptune, sub-Jovian), split by hot/warm/cold instellation, relative to the LIFE baseline configuration. **Top**: extending the band to $3$--$20\,\mu$m adds modest numbers of detections across most categories. **Bottom**: restricting the band to $6$--$17\,\mu$m removes a comparable number, with the rocky+super-Earth bin most affected. The headline absolute-yield prediction (not shown) of the same Scenario 2 calculation is that LIFE detects of order tens of rocky planets in the conservative habitable zones of nearby host stars; M dwarfs dominate the yield because they are nearby and abundant, while FGK dwarfs contribute the more solar-system-like targets.
 ```
 
 **Extremely Large Telescopes** (ELTs) are the third pillar of the next-decade exoplanet effort and are ground-based.
