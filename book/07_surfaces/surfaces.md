@@ -227,7 +227,7 @@ The key variable is **magma viscosity**, which is controlled primarily by the $\
 **Io** is the most volcanically active body in the solar system, powered by intense tidal heating from its orbital resonance with Europa and Ganymede ({ref}`lecture03`). With $\sim$400 active volcanic centres, Io's surface is continuously resurfaced by lava flows — its mean surface age is estimated at $<$1 Myr, making it one of the youngest surfaces in the solar system {cite:p}`dePaterLissauer2010`.
 
 ```{figure} figures/io_volcanism.avif
-:name: fig:io-volcanism
+:name: fig:io-volcanism-surface
 :width: 500px
 :align: center
 
@@ -521,7 +521,7 @@ Galileo SSI image of Europa's surface near Pwyll crater (the bright ray system a
 Neptune's largest moon Triton shows **nitrogen geysers** that were observed by Voyager 2 during its 1989 flyby: plumes of nitrogen gas and dark dust rising $\sim$8 km above the surface before being carried downwind by thin atmospheric currents. Triton's very young surface, retrograde orbit (suggesting it is a captured Kuiper Belt object), and possible subsurface ocean make it an intriguing target for future exploration.
 
 ```{figure} figures/triton_voyager.avif
-:name: fig:triton
+:name: fig:triton-surface
 :width: 450px
 :align: center
 

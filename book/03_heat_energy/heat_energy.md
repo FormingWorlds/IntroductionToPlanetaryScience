@@ -393,7 +393,7 @@ Global distribution of plate boundaries (divergent: thin lines; convergent: hatc
 ```
 
 ```{figure} figures/earth_interior_cutaway.svg
-:name: fig:earth-interior
+:name: fig:earth-interior-heat
 :width: 500px
 :align: center
 
@@ -488,7 +488,7 @@ This was predicted before it was observed. In a landmark 1979 paper, Peale, Cass
 The Laplace resonance is essential: it forces Io's orbital eccentricity to remain at $e \approx 0.004$. Without the resonance, tidal forces would circularise Io's orbit in a few tens of millions of years, and tidal heating would cease. The resonance continuously pumps the eccentricity, maintaining a steady heat source.
 
 ```{figure} figures/laplace_resonance.avif
-:name: fig:laplace-resonance
+:name: fig:laplace-resonance-tidal
 :width: 550px
 :align: center
 
@@ -554,7 +554,7 @@ Tidal heating is also implicated in maintaining subsurface oceans on other outer
 - **Europa** (Jupiter): The Laplace resonance forces Europa's eccentricity, generating tidal heat (though less than Io's, because Europa is further from Jupiter). Magnetic field measurements by the Galileo spacecraft, combined with gravity data, strongly suggest a global liquid water ocean ~100 km deep beneath an ice shell of ~10–30 km.
 
 ```{figure} figures/europa_interior_cutaway.avif
-:name: fig:europa-interior
+:name: fig:europa-interior-tidal
 :width: 450px
 :align: center
 
