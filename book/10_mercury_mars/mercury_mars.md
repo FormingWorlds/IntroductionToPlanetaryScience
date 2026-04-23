@@ -595,7 +595,7 @@ Jeans escape removes only the lightest species. Because Mars *has* lost a substa
 :width: 500px
 :align: center
 
-Oxygen escape rates from Mars (in particles per second) for the four MAVEN-resolved channels — dissociative recombination, pick-up ions, ion outflow, and sputtering — extrapolated from present-day measurements back to $\sim 3.5$ Ga using estimates of the past solar EUV flux. All four channels were one to two orders of magnitude higher in the early Hesperian than today; the pick-up loss has dropped most steeply over time. From {cite:t}`Jakosky2018`. The integrated total atmospheric loss over $\sim 4$ Gyr (combining the oxygen channels shown here with hydrogen, carbon, and nitrogen loss inferred from other MAVEN datasets and isotopic constraints) is summarised in the body text below.
+Oxygen escape rates from Mars (in particles per second) for the four MAVEN-resolved channels (dissociative recombination, pick-up ions, ion outflow, and sputtering) extrapolated from present-day measurements back to $\sim 3.5$ Ga using estimates of the past solar EUV flux. All four channels were one to two orders of magnitude higher in the early Hesperian than today; the pick-up loss has dropped most steeply over time. From {cite:t}`Jakosky2018`. The integrated total atmospheric loss over $\sim 4$ Gyr (combining the oxygen channels shown here with hydrogen, carbon, and nitrogen loss inferred from other MAVEN datasets and isotopic constraints) is summarised in the body text below.
 ```
 
 ```{figure} figures/jakosky2018_hloss.avif

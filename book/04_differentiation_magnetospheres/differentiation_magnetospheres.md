@@ -7,11 +7,11 @@
 
 ## Accretion and early melting
 
-In {ref}`lecture03` we showed that the gravitational energy released during accretion is more than sufficient to melt an Earth-mass body — producing a global **magma ocean**. We also saw that gravitational differentiation, the sinking of dense iron toward the centre, releases additional energy that helps sustain this molten state. In this lecture we explore the *chemical* consequences of that melting: how a once-homogeneous ball of rock and metal separates into the layered structure — core, mantle, crust — that we observe in the terrestrial planets today.
+In {ref}`lecture03` we showed that the gravitational energy released during accretion is more than sufficient to melt an Earth-mass body, producing a global **magma ocean**. We also saw that gravitational differentiation, the sinking of dense iron toward the centre, releases additional energy that helps sustain this molten state. In this lecture we explore the *chemical* consequences of that melting: how a once-homogeneous ball of rock and metal separates into the layered structure (core, mantle, crust) that we observe in the terrestrial planets today.
 
 ### Metal–silicate separation
 
-When a growing planet reaches a sufficient size — roughly Moon-sized or larger — accretional heating and the decay of short-lived isotopes like ${}^{26}\mathrm{Al}$ ({ref}`lecture03`) produce widespread melting. In the resulting magma ocean, **metallic iron** (density $\sim 7000$ kg m$^{-3}$) is immiscible with **silicate melt** (density $\sim 3000$ kg m$^{-3}$). Iron droplets settle through the silicate liquid under gravity, eventually accumulating at the centre to form a metallic core {cite:p}`Lichtenberg2023`.
+When a growing planet reaches a sufficient size (roughly Moon-sized or larger), accretional heating and the decay of short-lived isotopes like ${}^{26}\mathrm{Al}$ ({ref}`lecture03`) produce widespread melting. In the resulting magma ocean, **metallic iron** (density $\sim 7000$ kg m$^{-3}$) is immiscible with **silicate melt** (density $\sim 3000$ kg m$^{-3}$). Iron droplets settle through the silicate liquid under gravity, eventually accumulating at the centre to form a metallic core {cite:p}`Lichtenberg2023`.
 
 The settling velocity of iron droplets in a silicate magma ocean can be estimated using **Stokes' law** for the terminal velocity of a sphere falling through a viscous fluid:
 
@@ -57,7 +57,7 @@ The geochemist Victor Goldschmidt classified elements into four categories based
 | **Chalcophile** ("sulfur-loving") | Sulfide phase | Cu, Zn, Pb, S, Se, Ag |
 | **Atmophile** ("atmosphere-loving") | Gas/volatile phase | H, C, N, O, noble gases |
 
-This classification is not absolute — an element's behaviour depends on the pressure, temperature, and oxygen fugacity during metal–silicate equilibration. For example, silicon is predominantly lithophile under present-day Earth conditions but becomes increasingly siderophile at very high pressures, which is why Earth's core likely contains several weight percent silicon {cite:p}`Rubie2015`.
+This classification is not absolute: an element's behaviour depends on the pressure, temperature, and oxygen fugacity during metal–silicate equilibration. For example, silicon is predominantly lithophile under present-day Earth conditions but becomes increasingly siderophile at very high pressures, which is why Earth's core likely contains several weight percent silicon {cite:p}`Rubie2015`.
 
 ```{figure} figures/goldschmidt_classification.svg
 :name: fig:goldschmidt
@@ -75,7 +75,7 @@ $$
 D_i^{\mathrm{met/sil}} = \frac{C_i^{\mathrm{metal}}}{C_i^{\mathrm{silicate}}}
 $$ (eq:partition-coefficient)
 
-where $C_i^{\mathrm{metal}}$ and $C_i^{\mathrm{silicate}}$ are the concentrations of element $i$ in the metallic and silicate phases, respectively. A strongly siderophile element like iridium (Ir) has $D^{\mathrm{met/sil}} \sim 10^4$–$10^6$, meaning it overwhelmingly partitions into the core. The measured depletion of siderophile elements in Earth's mantle — Ir is depleted by a factor of $\sim 1000$ relative to chondritic abundances — is among the strongest pieces of evidence that Earth underwent core formation {cite:p}`Rubie2015`.
+where $C_i^{\mathrm{metal}}$ and $C_i^{\mathrm{silicate}}$ are the concentrations of element $i$ in the metallic and silicate phases, respectively. A strongly siderophile element like iridium (Ir) has $D^{\mathrm{met/sil}} \sim 10^4$–$10^6$, meaning it overwhelmingly partitions into the core. The measured depletion of siderophile elements in Earth's mantle (Ir is depleted by a factor of $\sim 1000$ relative to chondritic abundances) is among the strongest pieces of evidence that Earth underwent core formation {cite:p}`Rubie2015`.
 
 Partition coefficients depend strongly on **pressure**, **temperature**, and **oxygen fugacity** ($f_{\mathrm{O_2}}$). The high-pressure conditions at the base of a deep magma ocean (40–60 GPa) significantly change the partitioning behaviour of many elements. This is an active area of experimental geochemistry: by reproducing deep magma ocean conditions in the laboratory, researchers can constrain the pressure–temperature conditions under which Earth's core formed.
 
@@ -85,7 +85,7 @@ The most powerful tool for dating core formation is the **hafnium–tungsten** (
 
 - If core formation occurs **early** (while ${}^{182}\mathrm{Hf}$ is still alive), the Hf stays in the mantle and continues to produce ${}^{182}\mathrm{W}$ there, while the W already extracted into the core is no longer replenished. The mantle ends up with an **excess** of ${}^{182}\mathrm{W}$ relative to chondritic meteorites (which never differentiated).
 
-- If core formation occurs **late** (after ${}^{182}\mathrm{Hf}$ has fully decayed), all the ${}^{182}\mathrm{W}$ has already been produced and is distributed uniformly. The mantle would have a chondritic ${}^{182}\mathrm{W}$ abundance — no excess.
+- If core formation occurs **late** (after ${}^{182}\mathrm{Hf}$ has fully decayed), all the ${}^{182}\mathrm{W}$ has already been produced and is distributed uniformly. The mantle would have a chondritic ${}^{182}\mathrm{W}$ abundance, i.e. no excess.
 
 The magnitude of the ${}^{182}\mathrm{W}$ excess in a planet's mantle, expressed as $\varepsilon^{182}\mathrm{W}$ (parts per 10,000 deviation from chondritic), therefore acts as a **clock** for core formation {cite:p}`Kleine2009`:
 
@@ -108,11 +108,11 @@ Core formation is not the end of chemical differentiation. As the magma ocean co
 
 ### Magma ocean crystallisation
 
-As the magma ocean loses heat (primarily by radiation from its surface), it begins to solidify. In a deep magma ocean, crystallisation starts at the **base** — where pressure raises the melting point above the local temperature — and progresses upward {cite:p}`ElkinsTanton2012`. The first minerals to crystallise from the deep magma ocean are high-pressure phases: **bridgmanite** (Mg-perovskite, $\mathrm{MgSiO_3}$) in the lower mantle, followed by **olivine** ($\mathrm{(Mg,Fe)_2SiO_4}$) and other phases at shallower depths as the magma ocean solidifies from the bottom up.
+As the magma ocean loses heat (primarily by radiation from its surface), it begins to solidify. In a deep magma ocean, crystallisation starts at the **base** (where pressure raises the melting point above the local temperature) and progresses upward {cite:p}`ElkinsTanton2012`. The first minerals to crystallise from the deep magma ocean are high-pressure phases: **bridgmanite** (Mg-perovskite, $\mathrm{MgSiO_3}$) in the lower mantle, followed by **olivine** ($\mathrm{(Mg,Fe)_2SiO_4}$) and other phases at shallower depths as the magma ocean solidifies from the bottom up.
 
 ### Incompatible element enrichment
 
-During crystallisation, elements that do not fit easily into the crystal lattice of the solidifying minerals — so-called **incompatible elements** — are progressively concentrated in the remaining liquid. The most important incompatible elements include the heat-producing isotopes uranium (U), thorium (Th), and potassium (K), which were introduced in {ref}`lecture03` as the sources of long-lived radiogenic heating.
+During crystallisation, elements that do not fit easily into the crystal lattice of the solidifying minerals, so-called **incompatible elements**, are progressively concentrated in the remaining liquid. The most important incompatible elements include the heat-producing isotopes uranium (U), thorium (Th), and potassium (K), which were introduced in {ref}`lecture03` as the sources of long-lived radiogenic heating.
 
 As crystallisation proceeds, these incompatible elements are squeezed into an ever-smaller volume of residual liquid, which eventually solidifies to form the **crust**. This is why the continental crust is enriched in U, Th, and K by a factor of $\sim$50–100 relative to the upper mantle, and why roughly half of Earth's radiogenic heat is produced in the thin crustal layer despite it representing less than 1% of Earth's mass.
 
@@ -122,16 +122,16 @@ The crystallisation of a magma ocean does not produce a perfectly homogeneous ma
 
 - **Depleted MORB mantle (DMM):** The upper mantle source of mid-ocean ridge basalts (MORBs) has been depleted in incompatible elements by billions of years of partial melting and crustal extraction. This is the most voluminous mantle reservoir.
 
-- **Enriched mantle:** Deep mantle plumes that produce ocean island basalts (OIBs, e.g., Hawaii, Iceland) sample reservoirs that are enriched in incompatible elements — possibly representing less-processed primordial mantle material or recycled oceanic crust.
+- **Enriched mantle:** Deep mantle plumes that produce ocean island basalts (OIBs, e.g., Hawaii, Iceland) sample reservoirs that are enriched in incompatible elements, possibly representing less-processed primordial mantle material or recycled oceanic crust.
 
 ### The lunar magma ocean
 
-The Moon provides the clearest example of magma ocean crystallisation. The Moon's **anorthositic crust** — a layer of light-coloured, feldspar-rich rock — is thought to have formed by flotation of low-density plagioclase crystals on top of the lunar magma ocean. Beneath the crust lies a layer enriched in **KREEP** (potassium, rare earth elements, and phosphorus) — the last residual liquid to crystallise, concentrated in incompatible elements just as the theory predicts {cite:p}`ElkinsTanton2012`.
+The Moon provides the clearest example of magma ocean crystallisation. The Moon's **anorthositic crust** (a layer of light-coloured, feldspar-rich rock) is thought to have formed by flotation of low-density plagioclase crystals on top of the lunar magma ocean. Beneath the crust lies a layer enriched in **KREEP** (potassium, rare earth elements, and phosphorus): the last residual liquid to crystallise, concentrated in incompatible elements just as the theory predicts {cite:p}`ElkinsTanton2012`.
 
 
 ## Volatile delivery and retention
 
-The chemical differentiation discussed so far concerns the refractory (high-temperature) components of planets. But the **volatile elements** — hydrogen, carbon, nitrogen, sulfur, and the noble gases — are equally important, because they form the raw materials for atmospheres, oceans, and ultimately life.
+The chemical differentiation discussed so far concerns the refractory (high-temperature) components of planets. But the **volatile elements** (hydrogen, carbon, nitrogen, sulfur, and the noble gases) are equally important, because they form the raw materials for atmospheres, oceans, and ultimately life.
 
 ### The classical view and its revision
 
@@ -139,7 +139,7 @@ The classical picture of volatile delivery held a simple dichotomy: the inner so
 
 Recent work has substantially revised this picture. Several independent lines of evidence now indicate that **volatile-bearing material was present in the inner solar system from early times**:
 
-- {cite:p}`Alexander2019a` and {cite:p}`Alexander2019b` showed through quantitative models of elemental and isotopic fractionations that **all chondrite groups** — including non-carbonaceous (ordinary, enstatite) chondrites traditionally associated with the dry inner disk — accreted water ice. This implies that even inner solar system planetesimals formed at temperatures below the snow line ($\sim$150–170 K) or incorporated icy material, challenging the simple "dry inner / wet outer" paradigm.
+- {cite:p}`Alexander2019a` and {cite:p}`Alexander2019b` showed through quantitative models of elemental and isotopic fractionations that **all chondrite groups**, including non-carbonaceous (ordinary, enstatite) chondrites traditionally associated with the dry inner disk, accreted water ice. This implies that even inner solar system planetesimals formed at temperatures below the snow line ($\sim$150–170 K) or incorporated icy material, challenging the simple "dry inner / wet outer" paradigm.
 
 - {cite:p}`Lichtenberg2021` demonstrated that the migration of the **snow line** during the protoplanetary disk's evolution, combined with Jupiter's growth to pebble-isolation mass, created a **bifurcation** in planetesimal populations. Early-formed planetesimals accreted ice-rich material regardless of their formation location, while late-formed inner disk planetesimals were desiccated after Jupiter blocked the inward drift of icy pebbles. This mechanism explains both the non-carbonaceous/carbonaceous (NC–CC) isotopic dichotomy observed in meteorites and the volatile gradient across the inner solar system.
 
@@ -184,7 +184,7 @@ Solubility of H$_2$O in basaltic silicate melt as a function of the H$_2$O parti
 
 Giant impacts deliver volatiles but can also **strip** them away. A sufficiently energetic impact can eject a significant fraction of a planet's atmosphere and even erode surface volatiles. The net effect depends on the size, velocity, and angle of impact: small, frequent impacts tend to deliver more volatiles than they remove, while rare giant impacts can be net erosive. The balance between delivery and erosion is a key uncertainty in reconstructing the volatile histories of the terrestrial planets.
 
-We will return to the fate of these outgassed atmospheres — their composition, structure, and long-term evolution — in {ref}`lecture05` and {ref}`lecture06`.
+We will return to the fate of these outgassed atmospheres (their composition, structure, and long-term evolution) in {ref}`lecture05` and {ref}`lecture06`.
 
 
 ## Planetary magnetic fields and dynamo theory
@@ -196,7 +196,7 @@ The differentiation of a planet into a metallic core and silicate mantle sets th
 Planetary magnetic fields play several critical roles:
 
 - **Atmospheric shielding:** A global magnetic field deflects the charged particles of the solar wind, reducing atmospheric erosion by sputtering and ion pickup. Mars, which lost its global field $\sim$4 Gyr ago, has since lost much of its atmosphere ({ref}`lecture10`).
-- **Surface habitability:** By deflecting energetic particles, magnetic fields reduce the radiation dose at a planet's surface — potentially important for the survival of surface life.
+- **Surface habitability:** By deflecting energetic particles, magnetic fields reduce the radiation dose at a planet's surface, potentially important for the survival of surface life.
 - **Geological record:** Magnetic minerals in rocks record the direction and intensity of the ambient field when they cool through their Curie temperature, providing a "tape recorder" of magnetic field history (paleomagnetism).
 - **Interior probe:** The existence, strength, and morphology of a magnetic field provide direct constraints on the physical state, composition, and dynamics of a planet's deep interior.
 
@@ -226,7 +226,7 @@ The balance between these two terms determines whether a magnetic field can be s
 
 ### Requirements for dynamo action
 
-For a self-sustaining dynamo — one that can generate and maintain a magnetic field against ohmic decay — three conditions must be met:
+For a self-sustaining dynamo (one that can generate and maintain a magnetic field against ohmic decay), three conditions must be met:
 
 1. **An electrically conducting fluid:** The core must contain a fluid with sufficient electrical conductivity ($\sigma$) to carry the currents that generate the field. In terrestrial planets, this is liquid iron (alloyed with lighter elements like S, Si, O). In gas giants, it is metallic hydrogen.
 
@@ -364,11 +364,11 @@ Convection in the outer core is driven by two sources of buoyancy {cite:p}`Rober
 
 2. **Compositional convection:** As the inner core crystallises, it preferentially incorporates iron and rejects light elements (S, Si, O) into the liquid outer core. This light, buoyant fluid rises, providing a powerful source of convection. The latent heat released by crystallisation further contributes to thermal buoyancy.
 
-Compositional convection is thought to be the dominant driver of the present-day geodynamo. The growth of the inner core — currently at a rate of about 0.5 mm per year — provides a steady supply of both compositional buoyancy and latent heat.
+Compositional convection is thought to be the dominant driver of the present-day geodynamo. The growth of the inner core, currently at a rate of about 0.5 mm per year, provides a steady supply of both compositional buoyancy and latent heat.
 
 ### Field morphology
 
-Earth's magnetic field at the surface is predominantly **dipolar** — resembling the field of a bar magnet — with the dipole axis tilted approximately 11° from the rotation axis. The surface field strength ranges from about 25 $\mu$T near the equator to about 65 $\mu$T near the poles, with a mean of about 45 $\mu$T.
+Earth's magnetic field at the surface is predominantly **dipolar** (resembling the field of a bar magnet), with the dipole axis tilted approximately 11° from the rotation axis. The surface field strength ranges from about 25 $\mu$T near the equator to about 65 $\mu$T near the poles, with a mean of about 45 $\mu$T.
 
 ### Secular variation
 
@@ -382,13 +382,13 @@ The magnetic field is not static. It varies on timescales from years to millions
 
 ### Polarity reversals
 
-On longer timescales, the geomagnetic field undergoes **polarity reversals** — the north and south magnetic poles swap. Key facts about reversals:
+On longer timescales, the geomagnetic field undergoes **polarity reversals**: the north and south magnetic poles swap. Key facts about reversals:
 
 - The current reversal rate is roughly **4–5 reversals per million years**, though this rate has varied significantly over geological time.
 - A reversal takes approximately **1000–10,000 years** to complete, during which the field weakens, becomes complex (multipolar), and re-establishes in the opposite polarity.
 - During the Cretaceous Normal Superchron (~84–124 Ma), the field maintained a single polarity for about 40 million years.
 
-The most compelling evidence for reversals comes from **magnetic stripes** on the ocean floor: as new oceanic crust forms at mid-ocean ridges, the magnetic minerals record the ambient field direction. The result is a symmetric pattern of normally and reversely magnetised stripes on either side of the ridge — a key piece of evidence for both seafloor spreading and geomagnetic reversals {cite:p}`Tarduno2010`.
+The most compelling evidence for reversals comes from **magnetic stripes** on the ocean floor: as new oceanic crust forms at mid-ocean ridges, the magnetic minerals record the ambient field direction. The result is a symmetric pattern of normally and reversely magnetised stripes on either side of the ridge, a key piece of evidence for both seafloor spreading and geomagnetic reversals {cite:p}`Tarduno2010`.
 
 ```{figure} figures/geomagnetic_polarity_timescale.avif
 :name: fig:geomagnetic-polarity
@@ -410,7 +410,7 @@ Magnetic fields vary enormously across the solar system. Comparing them reveals 
 | **Earth** | Active dynamo | 25–65 $\mu$T | 1 | Liquid Fe outer core, growing inner core |
 | **Mercury** | Active dynamo | ~0.3 $\mu$T | $\sim 5 \times 10^{-4}$ | Weak; thin liquid shell {cite:p}`Anderson2012` |
 | **Venus** | None detected | $< 0.01$ $\mu$T | $< 10^{-5}$ | No dynamo despite large iron core |
-| **Mars** | Remnant crustal | Up to ~1500 nT | — | Dynamo died ~4.1 Ga {cite:p}`Acuna1999,Connerney2005` |
+| **Mars** | Remnant crustal | Up to ~1500 nT | n/a | Dynamo died ~4.1 Ga {cite:p}`Acuna1999,Connerney2005` |
 | **Jupiter** | Active dynamo | ~400–1400 $\mu$T | $\sim 20{,}000$ | Metallic H dynamo {cite:p}`Connerney2022` |
 | **Saturn** | Active dynamo | ~20 $\mu$T | ~600 | Remarkably axisymmetric |
 | **Ganymede** | Active dynamo | ~0.7 $\mu$T | $\sim 1.5 \times 10^{-3}$ | Only moon with intrinsic dynamo |
@@ -425,25 +425,25 @@ Planetary magnetic dipole moments relative to Earth's, on a logarithmic scale. J
 
 ### Mercury
 
-Mercury possesses a weak but **active** dynamo — its surface field is only about 1% of Earth's. The MESSENGER mission revealed that Mercury's field is strongly offset northward from the planet's centre, suggesting an unusual dynamo geometry. Mercury's liquid outer core shell is thought to be relatively thin (perhaps only a few hundred kilometres), which limits the vigour of convection and the resulting field strength {cite:p}`Anderson2012`.
+Mercury possesses a weak but **active** dynamo: its surface field is only about 1% of Earth's. The MESSENGER mission revealed that Mercury's field is strongly offset northward from the planet's centre, suggesting an unusual dynamo geometry. Mercury's liquid outer core shell is thought to be relatively thin (perhaps only a few hundred kilometres), which limits the vigour of convection and the resulting field strength {cite:p}`Anderson2012`.
 
 ### Venus
 
 Venus presents a puzzle: it is nearly identical to Earth in size and bulk composition, and should have a liquid iron core, yet it has **no detected magnetic field**. Several explanations have been proposed:
 
 - **Slow rotation:** Venus rotates extremely slowly (243-day period), but numerical dynamo simulations show that slow rotation alone does not prevent dynamo action.
-- **No inner core:** If Venus's core is entirely liquid (no solid inner core has nucleated), then compositional convection — the dominant driver of Earth's dynamo — would be absent. Thermal convection alone may be insufficient.
+- **No inner core:** If Venus's core is entirely liquid (no solid inner core has nucleated), then compositional convection (the dominant driver of Earth's dynamo) would be absent. Thermal convection alone may be insufficient.
 - **Stagnant lid tectonics:** Without plate tectonics, the mantle may not extract heat from the core efficiently enough to drive vigorous core convection.
 
 The relative importance of these factors remains debated. Venus's lack of a magnetic field likely reflects a combination of reduced core cooling (due to stagnant lid tectonics insulating the core) and potentially the absence of an inner core {cite:p}`dePaterLissauer2010`.
 
 ### Mars
 
-Mars has no global magnetic field today, but the Mars Global Surveyor spacecraft discovered intense **remnant crustal magnetism** in the ancient southern highlands — patches of magnetisation with surface field strengths up to $\sim$1500 nT, far stronger than crustal magnetisation on Earth {cite:p}`Acuna1999`. These crustal magnetic anomalies are absent in the younger northern lowlands and in large impact basins (Hellas, Argyre, Isidis), indicating that:
+Mars has no global magnetic field today, but the Mars Global Surveyor spacecraft discovered intense **remnant crustal magnetism** in the ancient southern highlands, patches of magnetisation with surface field strengths up to $\sim$1500 nT, far stronger than crustal magnetisation on Earth {cite:p}`Acuna1999`. These crustal magnetic anomalies are absent in the younger northern lowlands and in large impact basins (Hellas, Argyre, Isidis), indicating that:
 
 1. Mars once had an active dynamo that magnetised the ancient crust.
 2. The dynamo shut down approximately **4.1 Gyr ago** (before the large basins formed), after which newly formed crust was not magnetised.
-3. The loss of the global magnetic field left Mars's atmosphere unshielded against solar wind erosion — likely contributing to the dramatic atmospheric loss that transformed Mars from a warmer, wetter world to the cold, thin-atmosphere planet we see today (see {ref}`lecture10`).
+3. The loss of the global magnetic field left Mars's atmosphere unshielded against solar wind erosion, likely contributing to the dramatic atmospheric loss that transformed Mars from a warmer, wetter world to the cold, thin-atmosphere planet we see today (see {ref}`lecture10`).
 
 ```{figure} figures/mars_crustal_magnetism.avif
 :name: fig:mars-crustal-magnetism
@@ -477,12 +477,12 @@ Mollweide projection of the radial component of Jupiter's surface magnetic field
 
 ### Ganymede
 
-Jupiter's largest moon Ganymede is the only moon in the solar system with its own **intrinsic dynamo**. Its surface field of $\sim$0.7 $\mu$T implies a small but actively convecting liquid iron core. The existence of Ganymede's dynamo is surprising given the moon's small size and is not yet fully understood — it may be sustained by tidal heating or compositional convection from a freezing core {cite:p}`dePaterLissauer2010`.
+Jupiter's largest moon Ganymede is the only moon in the solar system with its own **intrinsic dynamo**. Its surface field of $\sim$0.7 $\mu$T implies a small but actively convecting liquid iron core. The existence of Ganymede's dynamo is surprising given the moon's small size and is not yet fully understood: it may be sustained by tidal heating or compositional convection from a freezing core {cite:p}`dePaterLissauer2010`.
 
 
 ## Magnetosphere–solar wind interaction
 
-A planetary magnetic field does not exist in isolation — it interacts dynamically with the **solar wind**, the continuous stream of charged particles (mostly protons and electrons) flowing outward from the Sun at speeds of 300–800 km s$^{-1}$, carrying an embedded magnetic field (the interplanetary magnetic field, or IMF) {cite:p}`Kivelson1995`.
+A planetary magnetic field does not exist in isolation: it interacts dynamically with the **solar wind**, the continuous stream of charged particles (mostly protons and electrons) flowing outward from the Sun at speeds of 300–800 km s$^{-1}$, carrying an embedded magnetic field (the interplanetary magnetic field, or IMF) {cite:p}`Kivelson1995`.
 
 ### Magnetopause standoff distance
 
@@ -530,7 +530,7 @@ Structure of Earth's magnetosphere, showing the bow shock, magnetopause, magneto
 
 ### Auroral processes
 
-When solar wind particles enter the magnetosphere — primarily through reconnection events in the magnetotail — they are channelled along magnetic field lines toward the polar regions. As these energetic particles (mostly electrons) plunge into the upper atmosphere, they collide with atmospheric atoms and molecules, exciting them to emit light. This is the **aurora** (aurora borealis in the north, aurora australis in the south) {cite:p}`Kivelson1995`:
+When solar wind particles enter the magnetosphere (primarily through reconnection events in the magnetotail), they are channelled along magnetic field lines toward the polar regions. As these energetic particles (mostly electrons) plunge into the upper atmosphere, they collide with atmospheric atoms and molecules, exciting them to emit light. This is the **aurora** (aurora borealis in the north, aurora australis in the south) {cite:p}`Kivelson1995`:
 
 - **Green light** (557.7 nm): Excited atomic oxygen, O, at altitudes of ~100–200 km
 - **Red light** (630.0 nm): Excited atomic oxygen at higher altitudes (~200–400 km)
@@ -578,7 +578,7 @@ NASA's Juno mission has produced the most detailed map of Jupiter's magnetic fie
 
 ESA/JAXA's **BepiColombo** mission has completed multiple Mercury flybys en route to orbital insertion, providing new measurements of Mercury's magnetosphere. Preliminary data confirm Mercury's weak but active dipolar field and have revealed unexpected features in the magnetospheric structure, including the role of sodium ions in magnetospheric dynamics {cite:p}`Anderson2012`.
 
-ESA's **JUICE** mission, en route to the Jupiter system, will conduct the first detailed investigation of Ganymede's intrinsic magnetic field — the only moon in the solar system known to generate its own dynamo. Understanding how a body as small as Ganymede ($R = 2634$ km) maintains an active dynamo remains an open question in planetary magnetism, with implications for the thermal state and composition of its iron core.
+ESA's **JUICE** mission, en route to the Jupiter system, will conduct the first detailed investigation of Ganymede's intrinsic magnetic field, the only moon in the solar system known to generate its own dynamo. Understanding how a body as small as Ganymede ($R = 2634$ km) maintains an active dynamo remains an open question in planetary magnetism, with implications for the thermal state and composition of its iron core.
 
 
 ## References
