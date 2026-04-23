@@ -222,7 +222,7 @@ Venus imaged by the *Mariner 10* spacecraft in February 1974, using a false-colo
 :align: center
 
 Venus thermal structure from the surface (735 K, 92 bar) to 100 km altitude, based on the *Venus International Reference Atmosphere* and the *Venus Express* radio-science experiment {cite:p}`Tellmann2009`.
-The $\mathrm{H_2SO_4}$ cloud deck (yellow band, 48-70 km) sits where the temperature traverses the $\sim$230-380 K range over which sulfuric acid is thermodynamically stable as droplets, and the sub-cloud haze (peach band, 31-48 km) lies just below.
+The $\mathrm{H_2SO_4}$ cloud deck (yellow band, 48-70 km) sits where the temperature traverses $\sim$230-350 K between cloud top and cloud base, within the thermodynamic stability field of concentrated sulfuric acid droplets; the sub-cloud haze (peach band, 31-48 km) lies just below.
 The cold collar near 65 km, prominent in the VeRa retrievals, sits where the temperature inversion shapes the upper boundary of the cloud system.
 ```
 
@@ -338,7 +338,7 @@ $$
 f = 2\Omega \sin\phi
 $$ (eq:coriolis-parameter)
 
-For Earth, $\Omega = 7.27 \times 10^{-5}$ rad s$^{-1}$. At mid-latitudes ($\phi = 45°$), $f \approx 1.03 \times 10^{-4}$ s$^{-1}$. At the equator ($\phi = 0°$), $f = 0$: the Coriolis effect vanishes.
+For Earth, $\Omega = 7.29 \times 10^{-5}$ rad s$^{-1}$ (sidereal rotation rate). At mid-latitudes ($\phi = 45°$), $f \approx 1.03 \times 10^{-4}$ s$^{-1}$. At the equator ($\phi = 0°$), $f = 0$: the Coriolis effect vanishes.
 
 ```{figure} figures/coriolis_effect.avif
 :name: fig:coriolis
@@ -433,7 +433,7 @@ Credit: NASA astronaut photograph, Johnson Space Center, public domain.
 
 ### Giant planet banding
 
-On Jupiter and Saturn, the same physics operates on a grander scale. The alternating light and dark bands (the **zones** and **belts**) correspond to regions of rising and sinking air with alternating wind directions. Between adjacent bands, strong **zonal jets** (east-west winds) reach speeds of $\sim$150 m s$^{-1}$ on Jupiter and $\sim$400 m s$^{-1}$ on Saturn. The jets are remarkably stable over decades of observation and extend deep into the planetary interior, as revealed by Juno's gravity measurements {cite:p}`Kaspi2018,Showman2020`.
+On Jupiter and Saturn, the same physics operates on a grander scale. The alternating light and dark bands (the **zones** and **belts**) correspond to regions of rising and sinking air with alternating wind directions. Between adjacent bands, strong **zonal jets** (east-west winds) reach peak speeds of $\sim$180 m s$^{-1}$ on Jupiter and $\sim$400 m s$^{-1}$ on Saturn. The jets are remarkably stable over decades of observation and extend deep into the planetary interior, as revealed by Juno's gravity measurements {cite:p}`Kaspi2018,Showman2020`.
 
 ```{figure} figures/jupiter_zonal_winds.avif
 :name: fig:jupiter-zonal-winds
@@ -538,7 +538,7 @@ Despite receiving only $\sim$1/900th of Earth's solar flux, Neptune has the **fa
 :align: center
 
 Neptune's *Great Dark Spot* (centre-left, with bright "scooter" cloud feature below) and *Dark Spot 2* (lower right), imaged by *Voyager 2* in August 1989.
-The Great Dark Spot was a high-pressure anticyclone roughly the size of Earth, with peripheral winds of $\sim$580 m s$^{-1}$, the fastest measured in the solar system.
+The Great Dark Spot was a high-pressure anticyclone roughly the size of Earth. The adjacent zonal flow (Neptune's equatorial retrograde jet reaches $\sim 580$ m s$^{-1}$, the fastest winds measured in the solar system) helped confine and transport the storm.
 Hubble follow-up imaging just a few years later showed that the original Great Dark Spot had dissipated and new dark spots had appeared elsewhere on the planet, demonstrating that Neptune's storms are far more transient than Jupiter's GRS.
 Credit: NASA/JPL-Caltech, public domain.
 ```
@@ -607,7 +607,7 @@ The most likely resolution is a combination of elevated $\mathrm{CO_2}$ and $\ma
 
 ### The Mars climate puzzle
 
-Mars poses an even more extreme version of the same problem. At 1.52 AU, Mars receives less than half of Earth's solar flux, and with the faint young Sun, the situation is even worse. Yet Mars shows compelling geological evidence for warm, wet conditions during the **Noachian** period ($>$3.7 Ga): extensive valley networks carved by flowing water, clay minerals formed by aqueous weathering, and sedimentary deposits in ancient lake basins (including Jezero crater, where the Perseverance rover is currently exploring) {cite:p}`Wordsworth2022`.
+Mars poses an even more extreme version of the same problem. At 1.52 AU, Mars receives less than half of Earth's solar flux, and with the faint young Sun, the situation is even worse. Yet Mars shows compelling geological evidence for warm, wet conditions during the **Noachian** period ($>$3.7 Ga): extensive valley networks carved by flowing water, clay minerals formed by aqueous weathering, and sedimentary deposits in ancient lake basins (including Jezero crater, where the Perseverance rover is currently exploring) {cite:p}`Wordsworth2016`.
 
 ```{figure} figures/mars_valley_networks.avif
 :name: fig:mars-valleys
@@ -616,7 +616,7 @@ Mars poses an even more extreme version of the same problem. At 1.52 AU, Mars re
 
 Perspective view of an ancient valley network in the Noachian highlands of Mars, derived from the *Mars Express* High Resolution Stereo Camera (HRSC) digital terrain model.
 The dendritic, river-like channel pattern requires sustained surface runoff and is incompatible with the present-day Mars climate, where mean surface temperature is $\sim$210 K and surface pressure is below the triple point of water.
-Such networks are among the strongest geological constraints on the warm-wet Noachian climate problem discussed by {cite:t}`Wordsworth2022`.
+Such networks are among the strongest geological constraints on the warm-wet Noachian climate problem discussed by {cite:t}`Wordsworth2016`.
 Credit: ESA / DLR / FU Berlin (G. Neukum), CC BY-SA 3.0 IGO.
 ```
 

@@ -73,7 +73,7 @@ Pluto in enhanced colour from NASA's New Horizons spacecraft, July 2015. The dar
 
 ### The IAU definition
 
-On 24 August 2006, the International Astronomical Union (IAU) adopted Resolution B5, establishing three criteria for a body in the solar system to be classified as a **planet** {cite:p}`IAU2006`:
+On 24 August 2006, the International Astronomical Union (IAU) adopted Resolution 5A, establishing three criteria for a body in the solar system to be classified as a **planet** {cite:p}`IAU2006`:
 
 1. It is in orbit around the Sun.
 2. It has sufficient mass for its self-gravity to overcome rigid body forces, so that it assumes a hydrostatic equilibrium (nearly round) shape.
