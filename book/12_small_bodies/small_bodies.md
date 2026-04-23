@@ -546,7 +546,7 @@ The fact that the C-types in the outer belt have isotopic affinities with carbon
 ### Near-Earth asteroids and the impact hazard
 
 A **near-Earth asteroid** (NEA) is one with perihelion $q < 1.3$ AU.
-About 35{,}000 NEAs are currently known, with several thousand new discoveries per year, and the rate is accelerating with new wide-field surveys.
+About 38{,}000 NEAs are currently known (early 2026), with several thousand new discoveries per year, and the rate is accelerating with new wide-field surveys.
 About 2{,}500 of them are classified as Potentially Hazardous Asteroids (PHAs): larger than $\sim 140$ m and with orbits that approach Earth's to within 0.05 AU.
 Their orbits are dynamically young in the sense that the typical NEA has a residence time in near-Earth space of only $\sim 10$ Myr before it is either ejected from the inner solar system, falls into the Sun, or hits a planet.
 Yet the population is in approximate steady state, which means new NEAs must be supplied continuously at the rate of removal {cite:p}`Bottke2002`.

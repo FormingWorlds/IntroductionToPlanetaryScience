@@ -781,7 +781,7 @@ A strong day-night contrast in the phase curve indicates inefficient heat redist
 :name: fig:wasp43
 :width: 90%
 
-JWST MIRI **phase curve** of the hot Jupiter **WASP-43 b**, from {cite:t}`Bello2024`. The top panel is the spectroscopic phase curve as a function of wavelength and orbital phase. The middle panel is the band-integrated white light curve, showing two transits, two secondary eclipses, and the smooth phase modulation of the planet's thermal flux as the dayside rotates in and out of view. The bottom panels are the dayside and nightside emission spectra and best-fit blackbody models. The retrieved nightside temperature is much colder than the dayside, evidence of a strong day-night contrast despite an atmosphere thick enough to imprint clear spectral features on the dayside.
+JWST MIRI **phase curve** of the hot Jupiter **WASP-43 b**, from {cite:t}`Bell2024`. The top panel is the spectroscopic phase curve as a function of wavelength and orbital phase. The middle panel is the band-integrated white light curve, showing two transits, two secondary eclipses, and the smooth phase modulation of the planet's thermal flux as the dayside rotates in and out of view. The bottom panels are the dayside and nightside emission spectra and best-fit blackbody models. The retrieved nightside temperature is much colder than the dayside, evidence of a strong day-night contrast despite an atmosphere thick enough to imprint clear spectral features on the dayside.
 ```
 
 A self-consistent transmission plus emission plus phase curve dataset constrains the wavelength-dependent thermal structure, the abundance of major absorbers, the wind circulation pattern, and the cloud distribution simultaneously.

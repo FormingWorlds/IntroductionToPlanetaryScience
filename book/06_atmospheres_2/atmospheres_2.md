@@ -1,5 +1,5 @@
 (lecture06)=
-# Lecture 6: Atmospheres II — Clouds, Weather, & Climate
+# Lecture 6: Atmospheres II: Clouds, Weather, & Climate
 
 ```{highlights}
 **Learning objectives:** By the end of this lecture, you will be able to derive the Clausius-Clapeyron equation and apply it to predict cloud formation conditions, explain atmospheric circulation patterns using the Coriolis effect and geostrophic balance, describe weather phenomena across the solar system, and discuss long-term climate evolution including the faint young Sun paradox and the carbonate-silicate cycle.
@@ -7,13 +7,13 @@
 
 ## Cloud formation
 
-In {ref}`lecture05`, we studied the vertical structure of atmospheres — how pressure and temperature vary with altitude, and how radiation and convection control the energy balance. We now turn to what happens when the air becomes *too cold* to hold all of its vapour: **clouds** form.
+In {ref}`lecture05`, we studied the vertical structure of atmospheres: how pressure and temperature vary with altitude, and how radiation and convection control the energy balance. We now turn to what happens when the air becomes *too cold* to hold all of its vapour: **clouds** form.
 
 ### Saturation and condensation
 
-Every gas has a maximum amount of vapour that the surrounding air can hold at a given temperature. This maximum is set by the **saturation vapour pressure** $P_{\mathrm{sat}}(T)$ — the partial pressure at which the rate of evaporation from a liquid (or solid) surface equals the rate of condensation back onto it. When the actual partial pressure of a vapour exceeds $P_{\mathrm{sat}}$, the air is **supersaturated** and condensation is thermodynamically favoured {cite:p}`Pierrehumbert2010`.
+Every gas has a maximum amount of vapour that the surrounding air can hold at a given temperature. This maximum is set by the **saturation vapour pressure** $P_{\mathrm{sat}}(T)$, the partial pressure at which the rate of evaporation from a liquid (or solid) surface equals the rate of condensation back onto it. When the actual partial pressure of a vapour exceeds $P_{\mathrm{sat}}$, the air is **supersaturated** and condensation is thermodynamically favoured {cite:p}`Pierrehumbert2010`.
 
-The key property of $P_{\mathrm{sat}}(T)$ is its strong temperature dependence: it increases roughly exponentially with temperature. A parcel of air that is unsaturated at the warm surface can become saturated simply by cooling — for example, by rising and expanding adiabatically. The temperature at which a parcel first reaches saturation is called the **dew point** (for condensation to liquid) or the **frost point** (for deposition to ice).
+The key property of $P_{\mathrm{sat}}(T)$ is its strong temperature dependence: it increases roughly exponentially with temperature. A parcel of air that is unsaturated at the warm surface can become saturated simply by cooling (for example, by rising and expanding adiabatically). The temperature at which a parcel first reaches saturation is called the **dew point** (for condensation to liquid) or the **frost point** (for deposition to ice).
 
 The **relative humidity** is defined as the ratio of the actual vapour pressure to the saturation vapour pressure:
 
@@ -36,10 +36,10 @@ Plot generated from thermodynamic data in {cite:p}`Catling2017` and {cite:p}`Pie
 
 ### Nucleation
 
-Even when air is supersaturated, condensation does not happen instantly. Forming a new droplet requires overcoming an energy barrier — the surface energy of the tiny embryonic droplet. This process is called **nucleation** {cite:p}`Catling2017`.
+Even when air is supersaturated, condensation does not happen instantly. Forming a new droplet requires overcoming an energy barrier: the surface energy of the tiny embryonic droplet. This process is called **nucleation** {cite:p}`Catling2017`.
 
-- **Homogeneous nucleation** — forming droplets from vapour alone, without any pre-existing surface — requires very high supersaturations (RH $\gg$ 100%) and is extremely rare in planetary atmospheres.
-- **Heterogeneous nucleation** — condensation onto pre-existing particles called **condensation nuclei** (dust grains, volcanic aerosols, sea salt, soot, cosmic ray ions) — occurs at much lower supersaturations (RH $\gtrsim$ 100%) and is the dominant cloud formation mechanism on all planets.
+- **Homogeneous nucleation** (forming droplets from vapour alone, without any pre-existing surface) requires very high supersaturations (RH $\gg$ 100%) and is extremely rare in planetary atmospheres.
+- **Heterogeneous nucleation** (condensation onto pre-existing particles called **condensation nuclei**: dust grains, volcanic aerosols, sea salt, soot, cosmic ray ions) occurs at much lower supersaturations (RH $\gtrsim$ 100%) and is the dominant cloud formation mechanism on all planets.
 
 The availability of condensation nuclei therefore controls where and how easily clouds form. On Earth, the oceans and biosphere provide abundant nuclei. On Mars, wind-lofted mineral dust serves the same role. On the giant planets, photochemical hazes produced in the upper atmosphere provide nuclei for cloud formation deeper down.
 
@@ -60,7 +60,7 @@ Adapted from the formulation in {cite:p}`Catling2017`.
 
 As an air parcel rises through the troposphere, it cools at the dry adiabatic lapse rate $\Gamma_d = g/c_p$ (Eq. {eq}`eq:dry-adiabat` from {ref}`lecture05`). Its vapour pressure remains roughly constant (since the mass of vapour is conserved during adiabatic ascent), but $P_{\mathrm{sat}}(T)$ decreases as the temperature drops. At the altitude where the parcel temperature has cooled enough that $P_{\mathrm{vapour}} = P_{\mathrm{sat}}(T)$, condensation begins. This altitude is the **lifting condensation level (LCL)** and marks the cloud base.
 
-Above the LCL, the rising parcel releases **latent heat** as vapour condenses, warming the parcel relative to the dry adiabat. This gives the **moist adiabatic lapse rate**, which is shallower (typically $\sim$5–6 K km$^{-1}$ on Earth) than the dry adiabat ($\sim$9.8 K km$^{-1}$). The latent heat release also provides buoyancy, driving vigorous convection in moist atmospheres — the mechanism behind thunderstorms, hurricanes, and the towering cumulonimbus clouds on Earth.
+Above the LCL, the rising parcel releases **latent heat** as vapour condenses, warming the parcel relative to the dry adiabat. This gives the **moist adiabatic lapse rate**, which is shallower (typically $\sim$5–6 K km$^{-1}$ on Earth) than the dry adiabat ($\sim$9.8 K km$^{-1}$). The latent heat release also provides buoyancy, driving vigorous convection in moist atmospheres: the mechanism behind thunderstorms, hurricanes, and the towering cumulonimbus clouds on Earth.
 
 ### Cloud types depend on the condensing species
 
@@ -72,7 +72,7 @@ What condenses depends on what vapour is present and at what temperature. This v
 - **Titan:** $\mathrm{CH_4}$ and $\mathrm{C_2H_6}$ (ethane) clouds near the surface
 - **Jupiter/Saturn:** Layered $\mathrm{NH_3}$, $\mathrm{NH_4SH}$, and $\mathrm{H_2O}$ clouds at successively deeper levels
 
-The physics of cloud formation is the same in every case — the Clausius-Clapeyron equation governs all of them. The difference is which species condenses and at what temperature.
+The physics of cloud formation is the same in every case: the Clausius-Clapeyron equation governs all of them. The difference is which species condenses and at what temperature.
 
 
 ## Blackboard derivation: The Clausius-Clapeyron equation
@@ -156,7 +156,7 @@ $$
 P_{\mathrm{sat}} = 611 \exp\!\left[-5400\left(\frac{1}{293} - \frac{1}{273}\right)\right] = 611 \exp(1.35) \approx 611 \times 3.86 \approx 2360 \text{ Pa} \approx 2.4 \text{ kPa}
 $$
 
-The measured value is 2.3 kPa — excellent agreement. The small discrepancy arises because $L_v$ decreases slightly with temperature (from $2.50 \times 10^6$ J kg$^{-1}$ at 0°C to $2.26 \times 10^6$ J kg$^{-1}$ at 100°C), which we neglected by treating $L_v$ as constant.
+The measured value is 2.3 kPa (excellent agreement). The small discrepancy arises because $L_v$ decreases slightly with temperature (from $2.50 \times 10^6$ J kg$^{-1}$ at 0°C to $2.26 \times 10^6$ J kg$^{-1}$ at 100°C), which we neglected by treating $L_v$ as constant.
 
 **Application: condensing species across the solar system.**
 
@@ -175,7 +175,7 @@ $^\dagger$Latent heat of sublimation (solid $\leftrightarrow$ vapour).
 
 Data from {cite:p}`Catling2017` and {cite:p}`dePaterLissauer2010`.
 
-The large $L_v/R_v$ ratio for $\mathrm{H_2SO_4}$ explains why Venus's sulfuric acid clouds occupy a relatively narrow altitude range — the exponential sensitivity confines condensation to a thin temperature band. Conversely, $\mathrm{CH_4}$ has a low $L_v/R_v$, meaning its saturation curve is flatter and methane clouds on Titan can extend over a wider altitude range.
+The large $L_v/R_v$ ratio for $\mathrm{H_2SO_4}$ explains why Venus's sulfuric acid clouds occupy a relatively narrow altitude range: the exponential sensitivity confines condensation to a thin temperature band. Conversely, $\mathrm{CH_4}$ has a low $L_v/R_v$, meaning its saturation curve is flatter and methane clouds on Titan can extend over a wider altitude range.
 ```
 
 ```{figure} figures/water_phase_diagram.avif
@@ -194,7 +194,7 @@ The blackboard derivation in this lecture integrates the Clausius-Clapeyron equa
 
 ## Clouds across the solar system
 
-Every planet and moon with a substantial atmosphere has clouds — but the condensing species and the cloud structure vary enormously. Here we survey the major cloud systems in our solar system {cite:p}`SanchezLavega2011`.
+Every planet and moon with a substantial atmosphere has clouds, but the condensing species and the cloud structure vary enormously. Here we survey the major cloud systems in our solar system {cite:p}`SanchezLavega2011`.
 
 ### Venus: sulfuric acid clouds
 
@@ -233,13 +233,13 @@ Mars's thin atmosphere ($\sim$6 mbar surface pressure) supports two types of clo
 - **$\mathrm{CO_2}$ ice clouds** form at high altitudes ($\sim$50–100 km) where temperatures drop below the frost point of $\mathrm{CO_2}$ ($\sim$148 K at 6 mbar). These are thin, wispy clouds, sometimes called "mesospheric" clouds.
 - **$\mathrm{H_2O}$ ice clouds** form at lower altitudes ($\sim$10–30 km), particularly over the Tharsis volcanic region and in the aphelion cloud belt near the equator during northern summer.
 
-**Mineral dust** plays a central role in Martian atmospheric physics: wind-lofted dust particles serve as condensation nuclei for ice clouds, and dust itself is a powerful radiative agent — absorbing solar radiation and heating the atmosphere, which can trigger positive feedback loops leading to global dust storms (see [weather and storms](weather-storms) below).
+**Mineral dust** plays a central role in Martian atmospheric physics: wind-lofted dust particles serve as condensation nuclei for ice clouds, and dust itself is a powerful radiative agent, absorbing solar radiation and heating the atmosphere, which can trigger positive feedback loops leading to global dust storms (see [weather and storms](weather-storms) below).
 
 ### Titan: methane rain
 
-Saturn's moon Titan hosts the only known active **hydrological cycle** beyond Earth — but with $\mathrm{CH_4}$ (methane) playing the role of water. Titan's surface temperature ($\sim$94 K) and pressure ($\sim$1.5 bar) place it near the triple point of methane, enabling liquid methane on the surface (lakes and seas), methane clouds in the troposphere, and methane rain {cite:p}`dePaterLissauer2010`.
+Saturn's moon Titan hosts the only known active **hydrological cycle** beyond Earth, but with $\mathrm{CH_4}$ (methane) playing the role of water. Titan's surface temperature ($\sim$94 K) and pressure ($\sim$1.5 bar) place it near the triple point of methane, enabling liquid methane on the surface (lakes and seas), methane clouds in the troposphere, and methane rain {cite:p}`dePaterLissauer2010`.
 
-Titan's clouds are mostly $\mathrm{CH_4}$ (condensing at $\sim$8–30 km altitude) with some $\mathrm{C_2H_6}$ (ethane). Unlike Earth's water cycle, which is driven by solar evaporation, Titan's methane cycle is sluggish — rainfall is infrequent but intense when it occurs, creating transient rivers and channels carved into the icy surface. The Cassini–Huygens mission observed clouds forming preferentially at Titan's south pole (then in summer), with seasonal shifts as Titan orbits Saturn.
+Titan's clouds are mostly $\mathrm{CH_4}$ (condensing at $\sim$8–30 km altitude) with some $\mathrm{C_2H_6}$ (ethane). Unlike Earth's water cycle, which is driven by solar evaporation, Titan's methane cycle is sluggish: rainfall is infrequent but intense when it occurs, creating transient rivers and channels carved into the icy surface. The Cassini-Huygens mission observed clouds forming preferentially at Titan's south pole (then in summer), with seasonal shifts as Titan orbits Saturn.
 
 ```{figure} figures/titan_lakes.avif
 :name: fig:titan-lakes
@@ -266,7 +266,7 @@ Credit: NASA/JPL-Caltech/Space Science Institute, public domain.
 
 The hydrogen-dominated atmospheres of Jupiter and Saturn host a **vertically layered** cloud structure, predicted by the Clausius-Clapeyron equation applied to each condensing species at the temperature and pressure where it reaches saturation {cite:p}`Showman2020`:
 
-1. **$\mathrm{NH_3}$ ice** (topmost layer): condensing at $T \sim 130$–150 K, $P \sim 0.5$–1 bar. These are the clouds we see in visible light — the white and coloured bands of Jupiter.
+1. **$\mathrm{NH_3}$ ice** (topmost layer): condensing at $T \sim 130$–150 K, $P \sim 0.5$–1 bar. These are the clouds we see in visible light: the white and coloured bands of Jupiter.
 2. **$\mathrm{NH_4SH}$** (ammonium hydrosulfide): condensing at $T \sim 200$–240 K, $P \sim 2$–3 bar. Formed by the reaction $\mathrm{NH_3} + \mathrm{H_2S} \to \mathrm{NH_4SH}$.
 3. **$\mathrm{H_2O}$ ice and liquid** (deepest layer): condensing at $T \sim 270$–300 K, $P \sim 5$–7 bar. These deep water clouds are difficult to observe directly but are thought to play a critical role in powering Jupiter's weather through latent heat release.
 
@@ -295,7 +295,7 @@ The ice giants **Uranus** and **Neptune** have a different cloud hierarchy refle
 
 ## Atmospheric dynamics
 
-Atmospheres are not static — they are vast heat engines driven by uneven heating. The equator receives more solar energy per unit area than the poles, creating a temperature gradient that drives global-scale circulation patterns. How the atmosphere redistributes this heat depends on the planet's rotation rate, size, and atmospheric properties {cite:p}`SanchezLavega2011`.
+Atmospheres are not static: they are vast heat engines driven by uneven heating. The equator receives more solar energy per unit area than the poles, creating a temperature gradient that drives global-scale circulation patterns. How the atmosphere redistributes this heat depends on the planet's rotation rate, size, and atmospheric properties {cite:p}`SanchezLavega2011`.
 
 ### The Hadley cell
 
@@ -305,7 +305,7 @@ The simplest atmospheric circulation pattern, first described by George Hadley i
 2. Warm, buoyant air **rises** at the equator, creating a low-pressure zone (the *Intertropical Convergence Zone*, ITCZ).
 3. At altitude, the air flows **poleward** (toward higher latitudes).
 4. As it moves poleward, it cools radiatively, becomes denser, and **sinks** at $\sim$30° latitude (the subtropics), creating high-pressure zones (where Earth's great deserts are located).
-5. At the surface, air flows back toward the equator to replace the rising air — these return flows are the **trade winds**.
+5. At the surface, air flows back toward the equator to replace the rising air: these return flows are the **trade winds**.
 
 This loop is the **Hadley cell**. It is the dominant circulation pattern in the tropics on Earth and the primary mechanism for transporting heat from the equator toward the poles.
 
@@ -338,7 +338,7 @@ $$
 f = 2\Omega \sin\phi
 $$ (eq:coriolis-parameter)
 
-For Earth, $\Omega = 7.27 \times 10^{-5}$ rad s$^{-1}$. At mid-latitudes ($\phi = 45°$), $f \approx 1.03 \times 10^{-4}$ s$^{-1}$. At the equator ($\phi = 0°$), $f = 0$ — the Coriolis effect vanishes.
+For Earth, $\Omega = 7.27 \times 10^{-5}$ rad s$^{-1}$. At mid-latitudes ($\phi = 45°$), $f \approx 1.03 \times 10^{-4}$ s$^{-1}$. At the equator ($\phi = 0°$), $f = 0$: the Coriolis effect vanishes.
 
 ```{figure} figures/coriolis_effect.avif
 :name: fig:coriolis
@@ -362,8 +362,8 @@ $$ (eq:rossby-number)
 
 where $U$ is the characteristic wind speed and $L$ is the characteristic horizontal length scale of the flow.
 
-- $\mathrm{Ro} \ll 1$: Rotation dominates — the flow is strongly influenced by the Coriolis effect. This applies to large-scale atmospheric and oceanic circulation on Earth (e.g., $U \sim 10$ m s$^{-1}$, $L \sim 1000$ km → $\mathrm{Ro} \sim 0.1$).
-- $\mathrm{Ro} \gg 1$: Rotation is unimportant — the flow is governed by pressure gradients and friction. This applies to small-scale phenomena like tornadoes and dust devils.
+- $\mathrm{Ro} \ll 1$: Rotation dominates; the flow is strongly influenced by the Coriolis effect. This applies to large-scale atmospheric and oceanic circulation on Earth (e.g., $U \sim 10$ m s$^{-1}$, $L \sim 1000$ km $\Rightarrow \mathrm{Ro} \sim 0.1$).
+- $\mathrm{Ro} \gg 1$: Rotation is unimportant; the flow is governed by pressure gradients and friction. This applies to small-scale phenomena like tornadoes and dust devils.
 
 ### Circulation cells and rotation rate
 
@@ -433,7 +433,7 @@ Credit: NASA astronaut photograph, Johnson Space Center, public domain.
 
 ### Giant planet banding
 
-On Jupiter and Saturn, the same physics operates on a grander scale. The alternating light and dark bands — **zones** and **belts** — correspond to regions of rising and sinking air with alternating wind directions. Between adjacent bands, strong **zonal jets** (east–west winds) reach speeds of $\sim$150 m s$^{-1}$ on Jupiter and $\sim$400 m s$^{-1}$ on Saturn. The jets are remarkably stable over decades of observation and extend deep into the planetary interior, as revealed by Juno's gravity measurements {cite:p}`Showman2020`.
+On Jupiter and Saturn, the same physics operates on a grander scale. The alternating light and dark bands (the **zones** and **belts**) correspond to regions of rising and sinking air with alternating wind directions. Between adjacent bands, strong **zonal jets** (east-west winds) reach speeds of $\sim$150 m s$^{-1}$ on Jupiter and $\sim$400 m s$^{-1}$ on Saturn. The jets are remarkably stable over decades of observation and extend deep into the planetary interior, as revealed by Juno's gravity measurements {cite:p}`Kaspi2018,Showman2020`.
 
 ```{figure} figures/jupiter_zonal_winds.avif
 :name: fig:jupiter-zonal-winds
@@ -442,7 +442,7 @@ On Jupiter and Saturn, the same physics operates on a grander scale. The alterna
 
 Jupiter's cloud-top zonal wind profile $u(\phi)$, schematic representation of the Cassini-era composite of {cite:t}`GarciaMelendo2001` and the modern compilations in {cite:t}`Showman2020`.
 A ladder of narrow prograde (eastward, blue) and retrograde (westward, red) jets is stacked from the broad equatorial superrotating jet at the centre out to $\sim$60° latitude, with $\sim$15 alternations per hemisphere in the full observed profile (the schematic here resolves roughly half of them to keep the figure legible).
-The jets coincide with the boundaries between bright zones and dark belts visible in {numref}`fig:jupiter-global-map`, and Juno gravity measurements indicate they extend $\sim$3000 km into the molecular envelope.
+The jets coincide with the boundaries between bright zones and dark belts visible in {numref}`fig:jupiter-global-map`, and Juno gravity measurements indicate they extend $\sim$3000 km into the molecular envelope {cite:p}`Kaspi2018`.
 ```
 
 
@@ -455,9 +455,9 @@ Planets and moons exhibit a stunning variety of weather phenomena, from gentle b
 
 Mars experiences dramatic weather driven by its thin atmosphere and strong seasonal forcing. Two phenomena stand out {cite:p}`Catling2017`:
 
-- **Dust storms:** Local dust storms are common, lofting mineral particles to $\sim$10–30 km altitude. Occasionally, these storms grow to engulf the entire planet in a **global dust storm**, reducing surface visibility to near zero for weeks. The most recent global dust storms occurred in 2018 and 2007. The feedback mechanism is straightforward: dust absorbs solar radiation → heats the atmosphere → drives stronger winds → lofts more dust — a positive feedback loop.
+- **Dust storms:** Local dust storms are common, lofting mineral particles to $\sim$10–30 km altitude. Occasionally, these storms grow to engulf the entire planet in a **global dust storm**, reducing surface visibility to near zero for weeks. The most recent global dust storms occurred in 2018 and 2007. The feedback mechanism is straightforward: dust absorbs solar radiation $\Rightarrow$ heats the atmosphere $\Rightarrow$ drives stronger winds $\Rightarrow$ lofts more dust, a positive feedback loop.
 
-- **Seasonal $\mathrm{CO_2}$ cycle:** Mars's polar caps contain solid $\mathrm{CO_2}$ (dry ice). During winter, atmospheric $\mathrm{CO_2}$ freezes onto the polar cap; during summer, it sublimes back into the atmosphere. This exchange involves $\sim$25–30% of the total atmospheric mass, causing surface pressure to swing from $\sim$5 mbar (summer pole) to $\sim$7 mbar (winter pole) — a phenomenon with no analogue on Earth.
+- **Seasonal $\mathrm{CO_2}$ cycle:** Mars's polar caps contain solid $\mathrm{CO_2}$ (dry ice). During winter, atmospheric $\mathrm{CO_2}$ freezes onto the polar cap; during summer, it sublimes back into the atmosphere. This exchange involves $\sim$25–30% of the total atmospheric mass, causing surface pressure to swing from $\sim$5 mbar (summer pole) to $\sim$7 mbar (winter pole), a phenomenon with no analogue on Earth.
 
 ```{figure} figures/mars_dust_storm.avif
 :name: fig:mars-dust-storm
@@ -471,7 +471,7 @@ Mars before and during the 2018 global dust storm, as imaged by the Mars Reconna
 
 Venus presents one of the great puzzles of atmospheric dynamics: its atmosphere **rotates 60 times faster** than the planet itself at cloud level. While Venus's surface rotates once every 243 Earth days (retrograde), the cloud-top winds circle the planet in just $\sim$4 days, reaching speeds of $\sim$100 m s$^{-1}$. This phenomenon is called **atmospheric super-rotation** {cite:p}`SanchezLavega2011`.
 
-Super-rotation requires a mechanism to transport angular momentum from the slowly rotating surface *upward and equatorward* — against the usual sense of friction, which should slow the atmosphere down to match the surface. The leading explanation involves a combination of **thermal tides** (driven by solar heating of the cloud layer) and **planetary-scale waves** that pump angular momentum toward the equator. Despite decades of study, the detailed mechanism remains an active area of research.
+Super-rotation requires a mechanism to transport angular momentum from the slowly rotating surface *upward and equatorward*, against the usual sense of friction, which should slow the atmosphere down to match the surface. The leading explanation involves a combination of **thermal tides** (driven by solar heating of the cloud layer) and **planetary-scale waves** that pump angular momentum toward the equator. Despite decades of study, the detailed mechanism remains an active area of research.
 
 ```{figure} figures/venus_zonal_winds.avif
 :name: fig:venus-zonal-winds
@@ -485,7 +485,7 @@ The cloud-top winds are $\sim$60 times faster than the planet's solid-body rotat
 
 ### Jupiter: the Great Red Spot
 
-Jupiter's **Great Red Spot (GRS)** is the largest and longest-lived storm in the solar system — an anticyclonic vortex larger than Earth, with winds reaching $\sim$120 m s$^{-1}$ at its periphery. It has been observed continuously for over 350 years (first recorded by Robert Hooke in 1664, though continuous observations date from 1830).
+Jupiter's **Great Red Spot (GRS)** is the largest and longest-lived storm in the solar system: an anticyclonic vortex larger than Earth, with winds reaching $\sim$120 m s$^{-1}$ at its periphery. It has been observed continuously for over 350 years (first recorded by Robert Hooke in 1664, though continuous observations date from 1830).
 
 ```{figure} figures/jupiter_great_red_spot.avif
 :name: fig:jupiter-grs
@@ -495,7 +495,7 @@ Jupiter's **Great Red Spot (GRS)** is the largest and longest-lived storm in the
 Jupiter's Great Red Spot and surrounding turbulent atmosphere, imaged by NASA's *Juno* spacecraft during a close flyby. The Great Red Spot is an anticyclonic storm larger than Earth that has persisted for centuries. The surrounding vortices and chaotic cloud patterns reveal the intense turbulence of Jupiter's upper troposphere. Credit: NASA/JPL-Caltech/SwRI/MSSS, public domain.
 ```
 
-The GRS sits between two zonal jets with opposite directions, which confine and sustain it. Its longevity is remarkable — on Earth, the largest hurricanes dissipate within days once they lose their energy source (warm ocean water). The GRS is sustained by absorbing smaller vortices and by latent heat released from $\mathrm{H_2O}$ condensation deep in the atmosphere. However, the GRS has been slowly shrinking over the past century, and its long-term fate remains uncertain {cite:p}`Showman2020`.
+The GRS sits between two zonal jets with opposite directions, which confine and sustain it. Its longevity is remarkable: on Earth, the largest hurricanes dissipate within days once they lose their energy source (warm ocean water). The GRS is sustained by absorbing smaller vortices and by latent heat released from $\mathrm{H_2O}$ condensation deep in the atmosphere. However, the GRS has been slowly shrinking over the past century, and its long-term fate remains uncertain {cite:p}`Showman2020`.
 
 ```{figure} figures/juno_polar_cyclones.avif
 :name: fig:juno-polar-cyclones
@@ -524,13 +524,13 @@ The hexagon spans $\sim$30,000 km across, larger than Earth's diameter, and has 
 Credit: NASA/JPL-Caltech/SSI/Hampton University, public domain.
 ```
 
-The hexagonal shape is explained as a stable **Rossby wave** — a large-scale atmospheric wave whose restoring force is the variation of the Coriolis parameter with latitude. When the jet stream speed and width satisfy certain resonance conditions, the wave locks into a pattern with a specific number of sides. Laboratory experiments with rotating fluids have reproduced hexagonal and other polygonal patterns under analogous conditions.
+The hexagonal shape is explained as a stable **Rossby wave**, a large-scale atmospheric wave whose restoring force is the variation of the Coriolis parameter with latitude. When the jet stream speed and width satisfy certain resonance conditions, the wave locks into a pattern with a specific number of sides. Laboratory experiments with rotating fluids have reproduced hexagonal and other polygonal patterns under analogous conditions.
 
-Saturn also experiences periodic **Great White Storms** roughly every 30 years (most recently in 2010), which are massive convective outbursts that encircle the planet within weeks — the Saturnian equivalent of a planet-wide thunderstorm.
+Saturn also experiences periodic **Great White Storms** roughly every 30 years (most recently in 2010), which are massive convective outbursts that encircle the planet within weeks: the Saturnian equivalent of a planet-wide thunderstorm.
 
 ### Neptune: extreme weather on a cold world
 
-Despite receiving only $\sim$1/900th of Earth's solar flux, Neptune has the **fastest winds** in the solar system, reaching $\sim$580 m s$^{-1}$ ($\sim$2100 km h$^{-1}$). The Voyager 2 flyby in 1989 revealed a **Great Dark Spot** similar to Jupiter's GRS, though subsequent Hubble observations showed it had vanished — and new ones had formed, suggesting Neptune's storms are more transient than Jupiter's.
+Despite receiving only $\sim$1/900th of Earth's solar flux, Neptune has the **fastest winds** in the solar system, reaching $\sim$580 m s$^{-1}$ ($\sim$2100 km h$^{-1}$). The Voyager 2 flyby in 1989 revealed a **Great Dark Spot** similar to Jupiter's GRS, though subsequent Hubble observations showed it had vanished while new ones had formed, suggesting Neptune's storms are more transient than Jupiter's.
 
 ```{figure} figures/neptune_great_dark_spot.avif
 :name: fig:neptune-dark-spot
@@ -548,7 +548,7 @@ Neptune's vigorous weather is powered primarily by **internal heat**: Neptune ra
 
 ## Climate evolution and the faint young Sun
 
-On timescales of billions of years, a planet's climate is not constant — it evolves in response to changes in the host star's luminosity, the atmospheric composition, and geological processes. The most celebrated example of this long-term evolution is the **faint young Sun paradox** {cite:p}`Feulner2012`.
+On timescales of billions of years, a planet's climate is not constant: it evolves in response to changes in the host star's luminosity, the atmospheric composition, and geological processes. The most celebrated example of this long-term evolution is the **faint young Sun paradox** {cite:p}`Feulner2012`.
 
 ### Solar luminosity evolution
 
@@ -586,13 +586,13 @@ $$
 T_{\mathrm{eff}} = 255 \times (0.71)^{1/4} \approx 234 \text{ K}
 $$
 
-Combined with a greenhouse effect similar to today's, this would yield a surface temperature well below freezing — the entire ocean should have been **frozen solid**. Yet geological evidence tells a strikingly different story:
+Combined with a greenhouse effect similar to today's, this would yield a surface temperature well below freezing: the entire ocean should have been **frozen solid**. Yet geological evidence tells a strikingly different story:
 
 - **Zircon crystals** from 4.4 Ga show oxygen isotope ratios ($\delta^{18}\mathrm{O}$) consistent with liquid water interacting with rock at the surface.
 - **Pillow basalts** (lava cooled underwater) and **sedimentary rocks** (requiring liquid water for transport and deposition) date back to at least 3.8 Ga.
 - **Stromatolites** (microbial mat fossils) at 3.5 Ga and possible carbon isotope signatures of life at 3.8 Ga imply not just liquid water, but conditions warm enough for biology.
 
-This contradiction — a faint Sun that should have frozen the Earth, versus geological evidence for liquid water — is the **faint young Sun paradox**, first articulated by Sagan & Mullen (1972).
+This contradiction, a faint Sun that should have frozen the Earth versus geological evidence for liquid water, is the **faint young Sun paradox**, first articulated by {cite:t}`SaganMullen1972`.
 
 ### Possible solutions
 
@@ -607,7 +607,7 @@ The most likely resolution is a combination of elevated $\mathrm{CO_2}$ and $\ma
 
 ### The Mars climate puzzle
 
-Mars poses an even more extreme version of the same problem. At 1.52 AU, Mars receives less than half of Earth's solar flux — and with the faint young Sun, the situation is even worse. Yet Mars shows compelling geological evidence for warm, wet conditions during the **Noachian** period ($>$3.7 Ga): extensive valley networks carved by flowing water, clay minerals formed by aqueous weathering, and sedimentary deposits in ancient lake basins (including Jezero crater, where the Perseverance rover is currently exploring) {cite:p}`Wordsworth2022`.
+Mars poses an even more extreme version of the same problem. At 1.52 AU, Mars receives less than half of Earth's solar flux, and with the faint young Sun, the situation is even worse. Yet Mars shows compelling geological evidence for warm, wet conditions during the **Noachian** period ($>$3.7 Ga): extensive valley networks carved by flowing water, clay minerals formed by aqueous weathering, and sedimentary deposits in ancient lake basins (including Jezero crater, where the Perseverance rover is currently exploring) {cite:p}`Wordsworth2022`.
 
 ```{figure} figures/mars_valley_networks.avif
 :name: fig:mars-valleys
@@ -620,13 +620,13 @@ Such networks are among the strongest geological constraints on the warm-wet Noa
 Credit: ESA / DLR / FU Berlin (G. Neukum), CC BY-SA 3.0 IGO.
 ```
 
-A dense $\mathrm{CO_2}$ atmosphere alone struggles to explain warm conditions on early Mars — $\mathrm{CO_2}$ condenses into ice clouds at the high pressures required, which can actually *cool* the planet by increasing the albedo. Reducing greenhouse gases ($\mathrm{H_2}$, $\mathrm{CH_4}$) produced by volcanism and water-rock reactions have been proposed as additional warming agents. The early Mars climate remains one of the major unsolved problems in planetary science.
+A dense $\mathrm{CO_2}$ atmosphere alone struggles to explain warm conditions on early Mars: $\mathrm{CO_2}$ condenses into ice clouds at the high pressures required, which can actually *cool* the planet by increasing the albedo. Reducing greenhouse gases ($\mathrm{H_2}$, $\mathrm{CH_4}$) produced by volcanism and water-rock reactions have been proposed as additional warming agents. The early Mars climate remains one of the major unsolved problems in planetary science.
 
 ### Climate feedbacks
 
-The stability of a planet's climate depends on **feedback mechanisms** — processes where a change in temperature triggers secondary effects that either amplify (positive feedback) or counteract (negative feedback) the original change:
+The stability of a planet's climate depends on **feedback mechanisms**, processes where a change in temperature triggers secondary effects that either amplify (positive feedback) or counteract (negative feedback) the original change:
 
-- **Ice-albedo feedback** (positive): If the planet cools, ice sheets expand → the surface becomes more reflective (higher albedo) → less sunlight is absorbed → further cooling. This feedback can drive a planet into a **snowball state** if triggered strongly enough (as may have happened on Earth during the Neoproterozoic, $\sim$700 Ma).
+- **Ice-albedo feedback** (positive): If the planet cools, ice sheets expand $\Rightarrow$ the surface becomes more reflective (higher albedo) $\Rightarrow$ less sunlight is absorbed $\Rightarrow$ further cooling. This feedback can drive a planet into a **snowball state** if triggered strongly enough (as may have happened on Earth during the Neoproterozoic, $\sim$700 Ma).
 
 ```{figure} figures/snowball_bistability.avif
 :name: fig:snowball-bistability
@@ -640,7 +640,7 @@ Pushing the system across the unstable middle point triggers a runaway transitio
 The snowball events of the Neoproterozoic ($\sim$717 and $\sim$635 Ma) are interpreted as global excursions of this bifurcation diagram {cite:p}`Hoffman1998`.
 ```
 
-- **Water vapour feedback** (positive): If the planet warms, more water evaporates → $\mathrm{H_2O}$ is a strong greenhouse gas → enhanced warming → more evaporation. This feedback approximately doubles the warming from $\mathrm{CO_2}$ alone on present-day Earth. If it runs away — which may have happened on Venus — it leads to the **runaway greenhouse effect**, where the oceans completely evaporate (discussed in detail in {ref}`lecture09`).
+- **Water vapour feedback** (positive): If the planet warms, more water evaporates $\Rightarrow$ $\mathrm{H_2O}$ is a strong greenhouse gas $\Rightarrow$ enhanced warming $\Rightarrow$ more evaporation. This feedback approximately doubles the warming from $\mathrm{CO_2}$ alone on present-day Earth. If it runs away (as may have happened on Venus), it leads to the **runaway greenhouse effect**, where the oceans completely evaporate (discussed in detail in {ref}`lecture09`).
 
 - **Cloud feedback** (complex): Low-altitude clouds reflect sunlight (cooling), while high-altitude cirrus clouds trap infrared radiation (warming). The net cloud feedback is the largest source of uncertainty in Earth climate models and is one of the key unknowns for exoplanet climate predictions ({ref}`lecture13`).
 
@@ -657,13 +657,13 @@ $$
 \mathrm{CaSiO_3} + \mathrm{CO_2} + \mathrm{H_2O} \longrightarrow \mathrm{CaCO_3} + \mathrm{SiO_2} + \mathrm{H_2O}
 $$
 
-This is sometimes called the **Urey reaction**. In words: carbon dioxide from the atmosphere dissolves in rainwater to form a weak acid, which reacts with silicate minerals in surface rocks. The products — calcium carbonate ($\mathrm{CaCO_3}$, limestone) and silica ($\mathrm{SiO_2}$) — are transported by rivers to the ocean, where the carbonate precipitates (biologically or abiotically) and is deposited on the ocean floor as sedimentary rock.
+This is sometimes called the **Urey reaction**. In words: carbon dioxide from the atmosphere dissolves in rainwater to form a weak acid, which reacts with silicate minerals in surface rocks. The products (calcium carbonate, $\mathrm{CaCO_3}$, limestone; and silica, $\mathrm{SiO_2}$) are transported by rivers to the ocean, where the carbonate precipitates (biologically or abiotically) and is deposited on the ocean floor as sedimentary rock.
 
 The net effect is to **draw $\mathrm{CO_2}$ out of the atmosphere** and lock it into carbonate rocks. This is the long-term carbon *sink*.
 
 ### Volcanic outgassing: the carbon source
 
-The cycle is closed by **plate tectonics**. Carbonate-bearing ocean floor is subducted into the mantle, where high temperatures and pressures decompose the carbonates, releasing $\mathrm{CO_2}$. This $\mathrm{CO_2}$ is returned to the atmosphere through **volcanic outgassing** — the long-term carbon *source*.
+The cycle is closed by **plate tectonics**. Carbonate-bearing ocean floor is subducted into the mantle, where high temperatures and pressures decompose the carbonates, releasing $\mathrm{CO_2}$. This $\mathrm{CO_2}$ is returned to the atmosphere through **volcanic outgassing**, the long-term carbon *source*.
 
 ### The negative feedback
 
@@ -673,14 +673,14 @@ The weathering rate depends strongly on temperature through an **Arrhenius-type 
 
 2. **If the planet cools** (e.g., due to reduced volcanic activity or orbital changes): less rainfall + slower reactions → **weathering rate decreases** → $\mathrm{CO_2}$ from volcanism accumulates in the atmosphere → greenhouse strengthens → planet **warms back up**.
 
-This thermostat operates on a timescale of $\sim$0.5 Myr — long by human standards, but short compared to geological time. It is the primary reason Earth has maintained habitable surface temperatures for over 4 billion years despite the 30% increase in solar luminosity.
+This thermostat operates on a timescale of $\sim$0.5 Myr, long by human standards but short compared to geological time. It is the primary reason Earth has maintained habitable surface temperatures for over 4 billion years despite the 30% increase in solar luminosity.
 
 ```{figure} figures/carbonate_silicate_cycle.avif
 :name: fig:carbonate-silicate-cycle
 :width: 500px
 :align: center
 
-The carbonate-silicate cycle — Earth's long-term climate thermostat. **Top:** The geologic cycle: atmospheric $\mathrm{CO_2}$ dissolves in rainwater and weathers silicate rocks, producing carbonates that are transported to the ocean and deposited as sediments. Subduction and volcanism return the $\mathrm{CO_2}$ to the atmosphere, closing the cycle. **Bottom:** The feedback loops: surface temperature, rainfall, silicate weathering rate, atmospheric $\mathrm{CO_2}$, and the greenhouse effect are linked in a negative feedback that stabilises the climate over geological timescales. Credit: Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+The carbonate-silicate cycle, Earth's long-term climate thermostat. **Top:** The geologic cycle: atmospheric $\mathrm{CO_2}$ dissolves in rainwater and weathers silicate rocks, producing carbonates that are transported to the ocean and deposited as sediments. Subduction and volcanism return the $\mathrm{CO_2}$ to the atmosphere, closing the cycle. **Bottom:** The feedback loops: surface temperature, rainfall, silicate weathering rate, atmospheric $\mathrm{CO_2}$, and the greenhouse effect are linked in a negative feedback that stabilises the climate over geological timescales. Credit: Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 ```
 
 ```{figure} figures/walker_loop.avif
@@ -698,7 +698,7 @@ The same loop fails on Venus (no liquid water) and on present-day Mars (no activ
 
 The carbonate-silicate cycle requires two essential ingredients: **liquid water** (to dissolve $\mathrm{CO_2}$ and weather rocks) and **active volcanism** (to recycle carbon). Without either, the thermostat fails:
 
-- **Venus:** Once Venus lost its surface water (likely through the runaway greenhouse and subsequent hydrogen escape to space), silicate weathering ceased. Without a carbon sink, volcanic $\mathrm{CO_2}$ accumulated in the atmosphere to the present 92 bar — a catastrophic demonstration of what happens when the thermostat breaks. We will explore Venus's climate history in detail in {ref}`lecture09`.
+- **Venus:** Once Venus lost its surface water (likely through the runaway greenhouse and subsequent hydrogen escape to space), silicate weathering ceased. Without a carbon sink, volcanic $\mathrm{CO_2}$ accumulated in the atmosphere to the present 92 bar: a catastrophic demonstration of what happens when the thermostat breaks. We will explore Venus's climate history in detail in {ref}`lecture09`.
 
 - **Mars:** Mars's interior cooled and volcanism largely ceased by the end of the Hesperian ($\sim$3 Ga). Without a volcanic $\mathrm{CO_2}$ source, the remaining atmospheric $\mathrm{CO_2}$ was gradually drawn down by weathering and possibly lost to space, leaving the thin 6 mbar atmosphere we see today. We will discuss Mars's atmospheric evolution in {ref}`lecture10`.
 
@@ -707,9 +707,9 @@ The requirement for both liquid water and active volcanism to maintain the carbo
 
 ## Recent advances
 
-In 2020, a team reported a tentative detection of phosphine ($\mathrm{PH_3}$) in the cloud decks of Venus using submillimetre spectroscopy, sparking intense debate about possible biological or unknown chemical sources. Subsequent reanalyses by independent groups found that the original signal was significantly weaker than first claimed, and the detection remains controversial. Regardless of the outcome, the episode highlighted how little we understand about Venus's atmospheric chemistry and motivated renewed interest in Venus exploration. ESA's **EnVision** orbiter and NASA's **DAVINCI** probe — both selected for launch in the early 2030s — will provide new measurements of Venus's atmospheric composition and surface–atmosphere interactions.
+In 2020, a team reported a tentative detection of phosphine ($\mathrm{PH_3}$) in the cloud decks of Venus using submillimetre spectroscopy, sparking intense debate about possible biological or unknown chemical sources. Subsequent reanalyses by independent groups found that the original signal was significantly weaker than first claimed, and the detection remains controversial. Regardless of the outcome, the episode highlighted how little we understand about Venus's atmospheric chemistry and motivated renewed interest in Venus exploration. ESA's **EnVision** orbiter and NASA's **DAVINCI** probe (both selected for launch in the early 2030s) will provide new measurements of Venus's atmospheric composition and surface-atmosphere interactions.
 
-NASA's **Dragonfly** mission, a nuclear-powered rotorcraft scheduled for launch in 2028, will explore Titan's surface and lower atmosphere in unprecedented detail. Dragonfly will sample the organic-rich dunes and investigate the products of Titan's atmospheric photochemistry at the surface — testing whether the combination of complex organics and transient liquid water (from impact melts or cryovolcanism) could drive prebiotic chemistry ({ref}`lecture14`).
+NASA's **Dragonfly** mission, a nuclear-powered rotorcraft scheduled for launch in 2028, will explore Titan's surface and lower atmosphere in unprecedented detail. Dragonfly will sample the organic-rich dunes and investigate the products of Titan's atmospheric photochemistry at the surface, testing whether the combination of complex organics and transient liquid water (from impact melts or cryovolcanism) could drive prebiotic chemistry ({ref}`lecture14`).
 
 Updated three-dimensional climate models for early Mars continue to challenge the "warm and wet" hypothesis, suggesting that episodic warming from impacts, volcanism, or atmospheric $\mathrm{H_2}$ greenhouse effects may be needed to explain the geological evidence for liquid water on early Mars ({ref}`lecture10`). The interplay between atmospheric composition, climate feedbacks, and surface geology remains an active area of research.
 

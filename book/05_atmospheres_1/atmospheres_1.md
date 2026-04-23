@@ -1,5 +1,5 @@
 (lecture05)=
-# Lecture 5: Atmospheres I — Composition, Structure, & Energy Balance
+# Lecture 5: Atmospheres I: Composition, Structure, & Energy Balance
 
 ```{highlights}
 **Learning objectives:** By the end of this lecture, you will be able to classify atmospheric types (primary, secondary, tertiary), derive pressure–temperature profiles from hydrostatic equilibrium, explain the greenhouse effect and planetary energy balance, and evaluate atmospheric escape mechanisms.
@@ -7,33 +7,33 @@
 
 ## Atmospheric composition
 
-A planet's atmosphere is the thin gaseous envelope that separates its surface (or cloud tops) from the vacuum of space. Atmospheres play an outsized role in determining a planet's surface conditions — temperature, pressure, radiation environment, and chemistry — and are therefore central to questions of habitability. Understanding where atmospheres come from, what they are made of, and how they evolve is one of the core themes of planetary science {cite:p}`Catling2017`.
+A planet's atmosphere is the thin gaseous envelope that separates its surface (or cloud tops) from the vacuum of space. Atmospheres play an outsized role in determining a planet's surface conditions (temperature, pressure, radiation environment, and chemistry) and are therefore central to questions of habitability. Understanding where atmospheres come from, what they are made of, and how they evolve is one of the core themes of planetary science {cite:p}`Catling2017`.
 
 ```{figure} figures/earth_thin_blue_line.avif
 :name: fig:thin-blue-line
 :width: 600px
 :align: center
 
-Earth's atmosphere as a thin blue line on the limb, photographed from the International Space Station during the STS-129 mission (November 2009). The atmosphere contains 99% of its mass below $\sim$30 km altitude — a mere 0.5% of Earth's radius — yet this slender layer controls the surface temperature, shields life from harmful radiation, and mediates the exchange of volatiles between the interior and space. Credit: NASA/ISS Expedition 21 crew, public domain.
+Earth's atmosphere as a thin blue line on the limb, photographed from the International Space Station during the STS-129 mission (November 2009). The atmosphere contains 99% of its mass below $\sim$30 km altitude (a mere 0.5% of Earth's radius), yet this slender layer controls the surface temperature, shields life from harmful radiation, and mediates the exchange of volatiles between the interior and space. Credit: NASA/ISS Expedition 21 crew, public domain.
 ```
 
 ### Primary atmospheres
 
 **Primary atmospheres** are captured directly from the protoplanetary disk during planet formation. Because the disk is composed predominantly of hydrogen and helium (reflecting the solar composition), primary atmospheres are dominated by $\mathrm{H_2}$ and He, with trace amounts of $\mathrm{CH_4}$, $\mathrm{NH_3}$, $\mathrm{H_2O}$, and noble gases.
 
-Only sufficiently massive bodies — those exceeding roughly $5$–$10 \, \Mearth$ — can gravitationally capture and retain significant quantities of nebular gas before the disk disperses (within $\sim$3–10 Myr; {ref}`lecture02`). The **gas giants** Jupiter and Saturn are the primary examples: their massive $\mathrm{H_2}$/He envelopes constitute the vast majority of their total mass. The **ice giants** Uranus and Neptune also captured primary atmospheres, but far less gas — their envelopes are only $\sim$10–20% of their total mass, reflecting their slower growth and the disk's dissipation.
+Only sufficiently massive bodies (those exceeding roughly $5$–$10 \, \Mearth$) can gravitationally capture and retain significant quantities of nebular gas before the disk disperses (within $\sim$3–10 Myr; {ref}`lecture02`). The **gas giants** Jupiter and Saturn are the primary examples: their massive $\mathrm{H_2}$/He envelopes constitute the vast majority of their total mass. The **ice giants** Uranus and Neptune also captured primary atmospheres, but far less gas: their envelopes are only $\sim$10–20% of their total mass, reflecting their slower growth and the disk's dissipation.
 
 Terrestrial planets like Earth, Venus, and Mars were too small to capture significant nebular gas. Any primordial hydrogen they did accrete was quickly lost to space (see [atmospheric escape](atm-escape) below). Their present-day atmospheres are therefore **not** primary.
 
 ### Secondary atmospheres
 
-**Secondary atmospheres** are produced by **outgassing** — the release of volatiles from the planet's interior through volcanism and magma ocean degassing. As discussed in {ref}`lecture04`, the speciation of outgassed volatiles depends on the oxygen fugacity of the magma: oxidising conditions produce $\mathrm{CO_2}$, $\mathrm{H_2O}$, and $\mathrm{N_2}$, while reducing conditions produce $\mathrm{H_2}$, CO, and $\mathrm{N_2}$ {cite:p}`Hirschmann2012`.
+**Secondary atmospheres** are produced by **outgassing**: the release of volatiles from the planet's interior through volcanism and magma ocean degassing. As discussed in {ref}`lecture04`, the speciation of outgassed volatiles depends on the oxygen fugacity of the magma: oxidising conditions produce $\mathrm{CO_2}$, $\mathrm{H_2O}$, and $\mathrm{N_2}$, while reducing conditions produce $\mathrm{H_2}$, CO, and $\mathrm{N_2}$ {cite:p}`Hirschmann2012`.
 
-The present-day atmospheres of **Venus** ($\mathrm{CO_2}$-dominated) and **Mars** ($\mathrm{CO_2}$-dominated but much thinner) are essentially secondary atmospheres — their compositions reflect volcanic outgassing with relatively modest subsequent modification. Titan's thick $\mathrm{N_2}$ atmosphere also originated from outgassing (likely from the conversion of accreted $\mathrm{NH_3}$).
+The present-day atmospheres of **Venus** ($\mathrm{CO_2}$-dominated) and **Mars** ($\mathrm{CO_2}$-dominated but much thinner) are essentially secondary atmospheres: their compositions reflect volcanic outgassing with relatively modest subsequent modification. Titan's thick $\mathrm{N_2}$ atmosphere also originated from outgassing (likely from the conversion of accreted $\mathrm{NH_3}$).
 
 ### Tertiary atmospheres
 
-**Tertiary atmospheres** have been substantially modified from their outgassed composition by surface processes, photochemistry, or biology. Earth is the prime example: its original outgassed atmosphere was likely dominated by $\mathrm{CO_2}$ and $\mathrm{N_2}$ (similar to Venus), but billions of years of biological activity — particularly oxygenic photosynthesis — have transformed it into the $\mathrm{N_2}$/$\mathrm{O_2}$ atmosphere we breathe today. Earth's atmospheric $\mathrm{O_2}$ (21% by volume) is entirely biogenic: it would disappear within a few million years if photosynthesis ceased {cite:p}`Catling2017`.
+**Tertiary atmospheres** have been substantially modified from their outgassed composition by surface processes, photochemistry, or biology. Earth is the prime example: its original outgassed atmosphere was likely dominated by $\mathrm{CO_2}$ and $\mathrm{N_2}$ (similar to Venus), but billions of years of biological activity, particularly oxygenic photosynthesis, have transformed it into the $\mathrm{N_2}$/$\mathrm{O_2}$ atmosphere we breathe today. Earth's atmospheric $\mathrm{O_2}$ (21% by volume) is entirely biogenic: it would disappear within a few million years if photosynthesis ceased {cite:p}`Catling2017`.
 
 ### Comparative atmospheric properties
 
@@ -41,8 +41,8 @@ The diversity of atmospheres across the solar system is remarkable. The table be
 
 | Property | Venus | Earth | Mars | Jupiter | Titan |
 |----------|:-----:|:-----:|:----:|:-------:|:-----:|
-| Surface pressure (bar) | 92 | 1.0 | 0.006 | — | 1.5 |
-| Surface temperature (K) | 735 | 288 | 210 | — | 94 |
+| Surface pressure (bar) | 92 | 1.0 | 0.006 | n/a | 1.5 |
+| Surface temperature (K) | 735 | 288 | 210 | n/a | 94 |
 | Dominant gas | $\mathrm{CO_2}$ (96.5%) | $\mathrm{N_2}$ (78%) | $\mathrm{CO_2}$ (95%) | $\mathrm{H_2}$ (86%) | $\mathrm{N_2}$ (95%) |
 | Secondary gas | $\mathrm{N_2}$ (3.5%) | $\mathrm{O_2}$ (21%) | $\mathrm{N_2}$ (2.7%) | He (14%) | $\mathrm{CH_4}$ (5%) |
 | Mean molecular weight $\mu$ | 43.4 | 28.97 | 43.3 | 2.2 | 28.6 |
@@ -63,13 +63,13 @@ Atmospheric composition (by volume) for five representative solar system bodies.
 :width: 600px
 :align: center
 
-The surface of Venus photographed by the Soviet *Venera 13* lander on 1 March 1982. The image shows flat basaltic rocks under an orange sky coloured by the thick $\mathrm{CO_2}$ atmosphere (surface pressure 92 bar, temperature 735 K). The lander survived for 127 minutes before succumbing to the extreme conditions — a vivid demonstration of how a massive secondary atmosphere transforms a planet's surface environment. Credit: USSR Academy of Sciences / NASA NSSDC, public domain.
+The surface of Venus photographed by the Soviet *Venera 13* lander on 1 March 1982. The image shows flat basaltic rocks under an orange sky coloured by the thick $\mathrm{CO_2}$ atmosphere (surface pressure 92 bar, temperature 735 K). The lander survived for 127 minutes before succumbing to the extreme conditions, a vivid demonstration of how a massive secondary atmosphere transforms a planet's surface environment. Credit: USSR Academy of Sciences / NASA NSSDC, public domain.
 ```
 
 
 ## Hydrostatic equilibrium
 
-The vertical structure of any atmosphere is governed by the balance between **gravity** pulling gas downward and the **pressure gradient** pushing it upward. This balance — **hydrostatic equilibrium** — is the most fundamental equation of atmospheric physics.
+The vertical structure of any atmosphere is governed by the balance between **gravity** pulling gas downward and the **pressure gradient** pushing it upward. This balance, called **hydrostatic equilibrium**, is the most fundamental equation of atmospheric physics.
 
 ### Derivation
 
@@ -123,7 +123,7 @@ $$
 H = \frac{\kB T}{\mu \, m_u \, g}
 $$ (eq:scale-height-preview)
 
-The barometric formula tells us that atmospheric pressure decreases **exponentially** with altitude. Every scale height $H$, the pressure drops by a factor of $e \approx 2.718$. This exponential decay is why atmospheres are thin compared to the size of the planet — typically, 99% of the atmospheric mass lies below $\sim 5H$.
+The barometric formula tells us that atmospheric pressure decreases **exponentially** with altitude. Every scale height $H$, the pressure drops by a factor of $e \approx 2.718$. This exponential decay is why atmospheres are thin compared to the size of the planet: typically, 99% of the atmospheric mass lies below $\sim 5H$.
 
 
 ## Blackboard derivation: The atmospheric scale height
@@ -141,7 +141,7 @@ $$
 \dv{P}{z} = -\rho \, g \qquad \text{and} \qquad P = \frac{\rho \kB T}{\mu \, m_u}
 $$
 
-Our goal is to find the characteristic length scale over which pressure varies — the **scale height**.
+Our goal is to find the characteristic length scale over which pressure varies: the **scale height**.
 
 **Derivation.**
 
@@ -189,17 +189,17 @@ $$
 
 This matches our everyday experience: commercial aircraft cruise at $\sim$10–12 km altitude, where the pressure is roughly $0.2$–$0.3$ atm (about 1.2–1.4 scale heights up).
 
-**Note:** Jupiter's scale height is large despite its strong gravity because $\mathrm{H_2}$ has a very low molecular weight ($\mu = 2.2$). Titan's scale height is large because its gravity is weak ($g = 1.35$ m s$^{-2}$) — Titan's atmosphere extends to a proportionally much greater height than Earth's, despite being colder.
+**Note:** Jupiter's scale height is large despite its strong gravity because $\mathrm{H_2}$ has a very low molecular weight ($\mu = 2.2$). Titan's scale height is large because its gravity is weak ($g = 1.35$ m s$^{-2}$): Titan's atmosphere extends to a proportionally much greater height than Earth's, despite being colder.
 ```
 
 
 ## Vertical structure
 
-Real atmospheres are not isothermal — temperature varies with altitude, creating distinct **layers** characterised by different physical processes. These layers are defined by the sign of the temperature gradient $\dv{T}{z}$.
+Real atmospheres are not isothermal: temperature varies with altitude, creating distinct **layers** characterised by different physical processes. These layers are defined by the sign of the temperature gradient $\dv{T}{z}$.
 
 ### Troposphere
 
-The **troposphere** is the lowest layer, heated primarily from below by the surface (which absorbs sunlight and re-emits thermal radiation). Warm air near the surface rises, cool air aloft sinks — this is **convection**, the same process we encountered in planetary interiors ({ref}`lecture03`). Convection keeps the troposphere well-mixed and imposes a characteristic temperature decrease with altitude called the **lapse rate**.
+The **troposphere** is the lowest layer, heated primarily from below by the surface (which absorbs sunlight and re-emits thermal radiation). Warm air near the surface rises, cool air aloft sinks: this is **convection**, the same process we encountered in planetary interiors ({ref}`lecture03`). Convection keeps the troposphere well-mixed and imposes a characteristic temperature decrease with altitude called the **lapse rate**.
 
 For a parcel of dry air rising adiabatically (without exchanging heat with its surroundings), the temperature decreases at the **dry adiabatic lapse rate**:
 
@@ -221,7 +221,7 @@ Earth's troposphere extends from the surface to the **tropopause** at $\sim$12 k
 
 ### Stratosphere
 
-Above the tropopause, temperature increases with altitude in the **stratosphere**. On Earth, this temperature inversion is caused by the absorption of solar ultraviolet radiation by the **ozone layer** ($\mathrm{O_3}$), centred at $\sim$25 km altitude. The heating by UV absorption creates a stable, non-convective layer — air parcels displaced upward find themselves cooler and denser than their surroundings and sink back down.
+Above the tropopause, temperature increases with altitude in the **stratosphere**. On Earth, this temperature inversion is caused by the absorption of solar ultraviolet radiation by the **ozone layer** ($\mathrm{O_3}$), centred at $\sim$25 km altitude. The heating by UV absorption creates a stable, non-convective layer: air parcels displaced upward find themselves cooler and denser than their surroundings and sink back down.
 
 Earth's stratosphere extends to the **stratopause** at $\sim$50 km.
 
@@ -229,7 +229,7 @@ Earth's stratosphere extends to the **stratopause** at $\sim$50 km.
 
 Above the stratopause, the **mesosphere** (50–85 km) cools with altitude again as ozone heating diminishes. The **mesopause** at $\sim$85 km is the coldest point in Earth's atmosphere ($\sim$190 K).
 
-Above this, the **thermosphere** (85–600 km) is heated by the absorption of extreme ultraviolet (EUV) radiation and energetic particles. Temperatures rise steeply to $>$1000 K, but the gas is so rarefied that this "temperature" (reflecting the kinetic energy of individual molecules) would not feel hot. The thermosphere merges into the **exosphere** — the outermost region where the mean free path exceeds the scale height, and molecules on ballistic trajectories can escape to space.
+Above this, the **thermosphere** (85–600 km) is heated by the absorption of extreme ultraviolet (EUV) radiation and energetic particles. Temperatures rise steeply to $>$1000 K, but the gas is so rarefied that this "temperature" (reflecting the kinetic energy of individual molecules) would not feel hot. The thermosphere merges into the **exosphere**, the outermost region where the mean free path exceeds the scale height, and molecules on ballistic trajectories can escape to space.
 
 ```{figure} figures/earth_tz_layers.avif
 :name: fig:earth-tz-layers
@@ -245,7 +245,7 @@ The vertical structure varies dramatically across the solar system {cite:p}`Catl
 
 - **Venus:** A massive troposphere extends to $\sim$65 km. Above the cloud deck ($\sim$48–70 km), temperature decreases slowly. There is no Earth-like stratospheric temperature inversion because Venus lacks an ozone layer.
 - **Mars:** A thin troposphere ($\sim$40 km) directly overlain by a thermosphere. Mars also lacks a significant ozone layer and stratospheric inversion.
-- **Jupiter:** The troposphere extends deep into the planet (hundreds of kilometres). The stratosphere is heated by $\mathrm{CH_4}$ and hydrocarbon haze absorption. There is no solid surface — pressure increases continuously with depth.
+- **Jupiter:** The troposphere extends deep into the planet (hundreds of kilometres). The stratosphere is heated by $\mathrm{CH_4}$ and hydrocarbon haze absorption. There is no solid surface; pressure increases continuously with depth.
 - **Titan:** A thick troposphere ($\sim$40 km), a stratosphere heated by organic haze absorption (up to $\sim$300 km), and an extended thermosphere reaching $\sim$1500 km, remarkably high for such a small body, reflecting Titan's weak gravity and large scale height.
 
 ```{figure} figures/titan_haze_pia06160.avif
@@ -291,7 +291,7 @@ While convection dominates energy transport in the troposphere, **radiation** is
 
 When a beam of radiation passes through an atmosphere, three things can happen:
 
-1. **Absorption:** A gas molecule absorbs a photon, converting radiative energy into internal energy (vibrational, rotational, or electronic excitation). The key atmospheric absorbers are **greenhouse gases**: $\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, $\mathrm{O_3}$, and $\mathrm{N_2O}$. These molecules have vibrational and rotational modes that absorb strongly in the infrared — precisely the wavelengths at which warm planetary surfaces emit.
+1. **Absorption:** A gas molecule absorbs a photon, converting radiative energy into internal energy (vibrational, rotational, or electronic excitation). The key atmospheric absorbers are **greenhouse gases**: $\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, $\mathrm{O_3}$, and $\mathrm{N_2O}$. These molecules have vibrational and rotational modes that absorb strongly in the infrared, precisely the wavelengths at which warm planetary surfaces emit.
 
 2. **Emission:** By Kirchhoff's law, any gas that absorbs radiation at a given wavelength also emits at that wavelength when it is warm. This thermal emission is the mechanism by which the atmosphere radiates energy to space.
 
@@ -302,7 +302,7 @@ When a beam of radiation passes through an atmosphere, three things can happen:
 :width: 550px
 :align: center
 
-Blackbody radiation curves for objects at several temperatures (representative of stellar and planetary emission). The Sun ($\sim$5800 K) emits primarily at visible wavelengths ($\sim$0.5 $\mu$m), while a planet at $\sim$300 K emits in the thermal infrared ($\sim$10 $\mu$m). This wavelength separation between incoming stellar radiation and outgoing planetary emission is the physical basis of the greenhouse effect — atmospheric gases can be transparent at one set of wavelengths while opaque at the other. Credit: Wikimedia Commons, public domain.
+Blackbody radiation curves for objects at several temperatures (representative of stellar and planetary emission). The Sun ($\sim$5800 K) emits primarily at visible wavelengths ($\sim$0.5 $\mu$m), while a planet at $\sim$300 K emits in the thermal infrared ($\sim$10 $\mu$m). This wavelength separation between incoming stellar radiation and outgoing planetary emission is the physical basis of the greenhouse effect: atmospheric gases can be transparent at one set of wavelengths while opaque at the other. Credit: Wikimedia Commons, public domain.
 ```
 
 ### Optical depth
@@ -317,8 +317,8 @@ where $\kappa$ is the **mass absorption coefficient** (m$^2$ kg$^{-1}$), $\rho$ 
 
 The optical depth is dimensionless and measures how many "e-folding lengths" of absorption the radiation traverses:
 
-- $\tau \ll 1$: **Optically thin** — most radiation passes through without being absorbed.
-- $\tau \gg 1$: **Optically thick** — radiation is strongly absorbed; only photons emitted near the "top" of the absorbing layer escape.
+- $\tau \ll 1$: **Optically thin**, most radiation passes through without being absorbed.
+- $\tau \gg 1$: **Optically thick**, radiation is strongly absorbed; only photons emitted near the "top" of the absorbing layer escape.
 
 ### Beer–Lambert law
 
@@ -328,7 +328,7 @@ $$
 I = I_0 \, e^{-\tau}
 $$ (eq:beer-lambert)
 
-This exponential attenuation law — the **Beer–Lambert law** — shows that intensity decreases by a factor of $e$ for each unit of optical depth traversed.
+This exponential attenuation law, the **Beer–Lambert law**, shows that intensity decreases by a factor of $e$ for each unit of optical depth traversed.
 
 ### The atmospheric photosphere concept
 
@@ -392,7 +392,7 @@ The table below compares the effective temperature with the measured surface tem
 
 \*Jupiter's "surface temperature" refers to the 1-bar level.
 
-The discrepancy $\Delta T = T_{\mathrm{surface}} - T_{\mathrm{eff}}$ reveals the strength of the **greenhouse effect**. Venus has a staggering 508 K greenhouse warming — by far the largest in the solar system. Earth's 33 K greenhouse warming, though modest by comparison, is sufficient to keep the oceans liquid. Mars has essentially no greenhouse warming because its atmosphere is too thin (surface pressure only 6 mbar). Jupiter's excess temperature is partly due to internal heat left over from formation ({ref}`lecture03`), not solely the greenhouse effect.
+The discrepancy $\Delta T = T_{\mathrm{surface}} - T_{\mathrm{eff}}$ reveals the strength of the **greenhouse effect**. Venus has a staggering 508 K greenhouse warming, by far the largest in the solar system. Earth's 33 K greenhouse warming, though modest by comparison, is sufficient to keep the oceans liquid. Mars has essentially no greenhouse warming because its atmosphere is too thin (surface pressure only 6 mbar). Jupiter's excess temperature is partly due to internal heat left over from formation ({ref}`lecture03`), not solely the greenhouse effect.
 
 ### The greenhouse mechanism
 
@@ -401,7 +401,7 @@ The greenhouse effect arises because the atmosphere is **relatively transparent*
 1. Sunlight (visible wavelengths, peak $\sim$0.5 $\mu$m) passes through the atmosphere and heats the surface.
 2. The warm surface emits thermal radiation at infrared wavelengths (peak $\sim$10–15 $\mu$m for $T \sim 200$–$300$ K).
 3. Greenhouse gases ($\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, $\mathrm{O_3}$, etc.) absorb much of this outgoing IR radiation.
-4. The absorbing layer re-emits IR radiation in all directions — half upward (toward space), half downward (back toward the surface).
+4. The absorbing layer re-emits IR radiation in all directions: half upward (toward space), half downward (back toward the surface).
 5. The downward emission provides an **additional energy source** for the surface, raising its temperature above $T_{\mathrm{eff}}$.
 
 ```{figure} figures/atmospheric_transmission.svg
@@ -416,7 +416,7 @@ Atmospheric absorption spectrum of Earth's atmosphere from ultraviolet through i
 
 We can quantify the greenhouse effect with a simple **one-layer model**. Consider an atmosphere represented by a single isothermal layer with **emissivity** $\varepsilon$ at infrared wavelengths (and completely transparent at visible wavelengths). The energy balance has two components:
 
-**Atmospheric layer balance** — The layer absorbs a fraction $\varepsilon$ of the surface emission $\sigma T_s^4$ and emits $\varepsilon \sigma T_a^4$ both upward and downward:
+**Atmospheric layer balance.** The layer absorbs a fraction $\varepsilon$ of the surface emission $\sigma T_s^4$ and emits $\varepsilon \sigma T_a^4$ both upward and downward:
 
 $$
 \varepsilon \, \sigma \, T_s^4 = 2 \, \varepsilon \, \sigma \, T_a^4
@@ -424,22 +424,22 @@ $$ (eq:atm-balance)
 
 This gives $T_a^4 = T_s^4 / 2$.
 
-**Surface balance** — The surface absorbs the incoming stellar flux plus the downward emission from the atmosphere. In equilibrium:
+**Surface balance.** The surface absorbs the incoming stellar flux plus the downward emission from the atmosphere. In equilibrium:
 
 $$
 (1-A) \frac{F_\star}{4} + \varepsilon \, \sigma \, T_a^4 = \sigma \, T_s^4
 $$ (eq:surface-balance)
 
-**Top-of-atmosphere balance** — The planet must radiate to space at its effective temperature, so $(1-A) F_\star / 4 = \sigma T_{\mathrm{eff}}^4$. Combining with the atmospheric and surface balance equations:
+**Top-of-atmosphere balance.** The planet must radiate to space at its effective temperature, so $(1-A) F_\star / 4 = \sigma T_{\mathrm{eff}}^4$. Combining with the atmospheric and surface balance equations:
 
 $$
 T_s = T_{\mathrm{eff}} \left(\frac{2}{2 - \varepsilon}\right)^{1/4}
 $$ (eq:greenhouse-surface-temp)
 
-When $\varepsilon = 0$ (no greenhouse gases), $T_s = T_{\mathrm{eff}}$ — no warming. When $\varepsilon = 1$ (perfect absorber), $T_s = 2^{1/4} \, T_{\mathrm{eff}} \approx 1.19 \, T_{\mathrm{eff}}$ — a 19% increase in surface temperature. For Earth, this gives $T_s \approx 1.19 \times 255 \approx 303$ K — a reasonable first estimate, though the real greenhouse effect involves multiple absorbing layers and a more complex radiative transfer calculation.
+When $\varepsilon = 0$ (no greenhouse gases), $T_s = T_{\mathrm{eff}}$: no warming. When $\varepsilon = 1$ (perfect absorber), $T_s = 2^{1/4} \, T_{\mathrm{eff}} \approx 1.19 \, T_{\mathrm{eff}}$, a 19% increase in surface temperature. For Earth, this gives $T_s \approx 1.19 \times 255 \approx 303$ K, a reasonable first estimate, though the real greenhouse effect involves multiple absorbing layers and a more complex radiative transfer calculation.
 
 ```{note}
-This one-layer model is deliberately simple. In {ref}`lecture06`, we will extend this treatment to examine the **runaway greenhouse effect** — what happens when the surface temperature rises so high that the outgoing longwave radiation reaches a maximum and can no longer balance the absorbed stellar flux. This is the mechanism that likely transformed Venus from a potentially habitable world into the 735 K inferno we see today.
+This one-layer model is deliberately simple. In {ref}`lecture06`, we will extend this treatment to examine the **runaway greenhouse effect**: what happens when the surface temperature rises so high that the outgoing longwave radiation reaches a maximum and can no longer balance the absorbed stellar flux. This is the mechanism that likely transformed Venus from a potentially habitable world into the 735 K inferno we see today.
 ```
 
 ```{figure} figures/greenhouse_one_layer.avif
@@ -468,7 +468,7 @@ Schematic regime diagram for atmospheric escape as a function of the Jeans param
 
 ### Thermal (Jeans) escape
 
-The most fundamental escape mechanism is **Jeans escape**, which arises from the thermal velocity distribution of gas molecules. In a gas at temperature $T$, molecules have a range of speeds described by the Maxwell–Boltzmann distribution. The mean thermal speed is $v_{\mathrm{th}} \sim \sqrt{\kB T / m}$, where $m$ is the molecular mass. Most molecules are far too slow to escape, but the tail of the distribution extends to arbitrarily high speeds — and some molecules in this high-velocity tail exceed the escape speed.
+The most fundamental escape mechanism is **Jeans escape**, which arises from the thermal velocity distribution of gas molecules. In a gas at temperature $T$, molecules have a range of speeds described by the Maxwell–Boltzmann distribution. The mean thermal speed is $v_{\mathrm{th}} \sim \sqrt{\kB T / m}$, where $m$ is the molecular mass. Most molecules are far too slow to escape, but the tail of the distribution extends to arbitrarily high speeds, and some molecules in this high-velocity tail exceed the escape speed.
 
 The **exobase** is the altitude at which the mean free path $\ell = 1/(n \sigma \sqrt{2})$ equals the pressure scale height $H$. Below this level, collisions dominate and the gas behaves as a fluid; above it, collisions are rare enough that molecules travel on ballistic trajectories, and those with $v > v_\mathrm{esc}$ escape to space without further interaction. For Earth, the exobase sits near 500 km altitude; for Mars, closer to 200 km.
 
@@ -488,7 +488,7 @@ $$ (eq:jeans-parameter)
 
 where $M_p$ is the planet's mass, $m$ is the molecular mass, $T_{\mathrm{exo}}$ is the exobase temperature, $r_{\mathrm{exo}}$ is the exobase radius, $v_{\mathrm{esc}} = \sqrt{2GM_p/r_{\mathrm{exo}}}$ is the escape speed, and $v_{\mathrm{th}} = \sqrt{2\kB T_{\mathrm{exo}}/m}$ is the most probable thermal speed.
 
-The Jeans escape parameter is the ratio of gravitational binding energy to thermal energy for a molecule at the exobase. When $\lambda_J \gg 1$, very few molecules have enough energy to escape — escape is slow. When $\lambda_J \lesssim 2$–3, a significant fraction of molecules can escape, and the atmosphere erodes rapidly.
+The Jeans escape parameter is the ratio of gravitational binding energy to thermal energy for a molecule at the exobase. When $\lambda_J \gg 1$, very few molecules have enough energy to escape and escape is slow. When $\lambda_J \lesssim 2$–3, a significant fraction of molecules can escape, and the atmosphere erodes rapidly.
 
 The **Jeans escape flux** (number of molecules escaping per unit area per unit time from the exobase) is:
 
@@ -516,11 +516,11 @@ The following table illustrates $\lambda_J$ for several atmospheric species on E
 | $\mathrm{N_2}$ | 28 | 210 | 150 |
 | $\mathrm{CO_2}$ | 44 | 330 | 240 |
 
-For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so large that Jeans escape is negligible on both planets. For atomic hydrogen, $\lambda_J$ is moderate, leading to significant escape — this is why both Earth and Mars lose hydrogen to space. We will revisit this derivation in full detail (starting from the Maxwell–Boltzmann distribution) in {ref}`lecture10`.
+For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so large that Jeans escape is negligible on both planets. For atomic hydrogen, $\lambda_J$ is moderate, leading to significant escape: this is why both Earth and Mars lose hydrogen to space. We will revisit this derivation in full detail (starting from the Maxwell–Boltzmann distribution) in {ref}`lecture10`.
 
 ### Hydrodynamic escape
 
-When the energy input to the upper atmosphere is very large — for example, from intense **extreme ultraviolet (EUV)** radiation from a young, active star — the escape can transition from the slow, molecule-by-molecule Jeans process to a bulk **hydrodynamic outflow** in which the entire upper atmosphere flows outward like a wind. This is analogous to the solar wind but driven by stellar heating rather than the star's own thermal energy {cite:p}`Hunten1987`.
+When the energy input to the upper atmosphere is very large (for example, from intense **extreme ultraviolet (EUV)** radiation from a young, active star), the escape can transition from the slow, molecule-by-molecule Jeans process to a bulk **hydrodynamic outflow** in which the entire upper atmosphere flows outward like a wind. This is analogous to the solar wind but driven by stellar heating rather than the star's own thermal energy {cite:p}`Hunten1987`.
 
 Hydrodynamic escape is most important during a planet's first few hundred million years, when the host star's EUV luminosity is 10–100 times higher than at present. It can strip hydrogen-rich primary atmospheres from planets up to several Earth masses, and is the leading explanation for the observed **radius valley** in the exoplanet population, the deficit of planets with radii between $\sim$1.5 and $2 \, \Rearth$ ({ref}`lecture13`). During hydrodynamic escape, the outflowing hydrogen can also **drag along heavier species** (such as He, C, N, O), leading to more extensive atmospheric loss than Jeans escape alone would produce {cite:p}`Hunten1987`.
 
@@ -552,7 +552,7 @@ Several processes can eject atmospheric particles to space without relying on th
 
 - **Ion pickup:** Atmospheric atoms ionised by solar UV or charge exchange are picked up by the solar wind magnetic field and swept away from the planet. This process is particularly effective at unmagnetised planets like Mars and Venus.
 
-- **Impact erosion:** Large asteroid or comet impacts can eject significant fractions of a planet's atmosphere. The efficiency depends on the impactor size relative to the atmospheric scale height — very large impacts can blow off a substantial atmospheric mass in a single event.
+- **Impact erosion:** Large asteroid or comet impacts can eject significant fractions of a planet's atmosphere. The efficiency depends on the impactor size relative to the atmospheric scale height: very large impacts can blow off a substantial atmospheric mass in a single event.
 
 The MAVEN mission at Mars has measured the present-day atmospheric escape rates and demonstrated that solar wind stripping is the dominant loss mechanism for Mars's remaining atmosphere, with a current loss rate of $\sim$100 g s$^{-1}$ for $\mathrm{O}^+$ ions {cite:p}`Jakosky2018`.
 
@@ -583,7 +583,7 @@ A planet retains a given gas species if its escape velocity exceeds roughly 6 ti
 
 Applying this criterion reveals a clear pattern across the solar system:
 
-- **Gas giants** (Jupiter, Saturn): With escape velocities of 60 and 36 km s$^{-1}$ respectively, and moderate exosphere temperatures, they retain **all species** — including the lightest ($\mathrm{H_2}$, He). This is why they still possess their primary atmospheres.
+- **Gas giants** (Jupiter, Saturn): With escape velocities of 60 and 36 km s$^{-1}$ respectively, and moderate exosphere temperatures, they retain **all species**, including the lightest ($\mathrm{H_2}$, He). This is why they still possess their primary atmospheres.
 
 - **Earth and Venus**: Escape velocities of $\sim$11 km s$^{-1}$ are sufficient to retain heavy molecules ($\mathrm{N_2}$, $\mathrm{O_2}$, $\mathrm{CO_2}$, $\mathrm{H_2O}$) but not atomic hydrogen. Earth and Venus lose H to space, which contributes to long-term water loss (via photodissociation of $\mathrm{H_2O}$ followed by H escape).
 
@@ -595,7 +595,7 @@ Applying this criterion reveals a clear pattern across the solar system:
 
 ### Atmospheric evolution over time
 
-Atmospheric retention is not simply a present-day snapshot — it evolves over a planet's lifetime {cite:p}`Lammer2008`:
+Atmospheric retention is not simply a present-day snapshot: it evolves over a planet's lifetime {cite:p}`Lammer2008`:
 
 - **Young stars are UV-bright:** Stars on the main sequence emit 10–100 times more EUV radiation in their first few hundred million years. This drives intense hydrodynamic escape that can strip primary atmospheres from low-mass planets.
 

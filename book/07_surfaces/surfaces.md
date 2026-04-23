@@ -1,5 +1,5 @@
 (lecture07)=
-# Lecture 7: Planetary Surfaces — Geology, Geomorphology, & Geophysics
+# Lecture 7: Planetary Surfaces: Geology, Geomorphology, & Geophysics
 
 ```{highlights}
 **Learning objectives:** By the end of this lecture, you will be able to describe the major surface processes shaping planetary bodies, derive the crater scaling law from dimensional analysis and apply it to estimate crater sizes, use crater counting to constrain surface ages, and compare tectonic, volcanic, and erosional styles across the solar system.
@@ -7,7 +7,7 @@
 
 ## Surface processes
 
-A planet's surface is its geological record — the integrated result of billions of years of competing processes that create, modify, and destroy landforms. By reading this record, we can reconstruct a body's geological history even without visiting it in person {cite:p}`Melosh2011`.
+A planet's surface is its geological record: the integrated result of billions of years of competing processes that create, modify, and destroy landforms. By reading this record, we can reconstruct a body's geological history even without visiting it in person {cite:p}`Melosh2011`.
 
 Surface processes fall into two broad categories:
 
@@ -60,7 +60,7 @@ $$
 E_k = \frac{1}{2} \times 1.6 \times 10^{12} \times (2 \times 10^4)^2 \approx 3 \times 10^{20} \text{ J}
 $$
 
-This is roughly 100 times the energy of the largest nuclear weapon ever detonated — released in less than a second and concentrated at a single point.
+This is roughly $10^3$ times the energy of the largest nuclear weapon ever detonated (Tsar Bomba, $\sim$50 Mt $\approx 2 \times 10^{17}$ J), released in less than a second and concentrated at a single point.
 
 
 ### Blackboard derivation: crater scaling law
@@ -72,7 +72,7 @@ This is roughly 100 times the energy of the largest nuclear weapon ever detonate
 
 **Setup.**
 
-We want to find the diameter $D$ of the crater (a length) produced by an impact with kinetic energy $E$ into a target with density $\rho$ under surface gravity $g$. In the **gravity regime** (where crater size is limited by gravity rather than material strength — valid for craters larger than $\sim$100 m), dimensional analysis requires:
+We want to find the diameter $D$ of the crater (a length) produced by an impact with kinetic energy $E$ into a target with density $\rho$ under surface gravity $g$. In the **gravity regime** (where crater size is limited by gravity rather than material strength, valid for craters larger than $\sim$100 m), dimensional analysis requires:
 
 $$
 D = C \, E^a \, \rho^b \, g^c
@@ -109,9 +109,9 @@ $$
 \boxed{D \sim \left(\frac{E}{\rho g}\right)^{1/4}}
 $$ (eq:crater-scaling)
 
-**Dimensional check:** $[E/\rho g] = [M L^2 T^{-2}/(M L^{-3} \cdot L T^{-2})] = [L^4]$. Taking the fourth root gives $[L]$ — the dimensions of length. $\checkmark$
+**Dimensional check:** $[E/\rho g] = [M L^2 T^{-2}/(M L^{-3} \cdot L T^{-2})] = [L^4]$. Taking the fourth root gives $[L]$, the dimensions of length. $\checkmark$
 
-This is the **crater scaling law** in the gravity regime {cite:p}`Holsapple1993`. It tells us that crater diameter scales as the fourth root of impact energy — doubling the energy increases the crater diameter by only a factor of $2^{1/4} \approx 1.19$ (about 19%). This weak dependence on energy explains why craters have a relatively narrow size range even though impactor energies span many orders of magnitude.
+This is the **crater scaling law** in the gravity regime {cite:p}`Holsapple1993`. It tells us that crater diameter scales as the fourth root of impact energy: doubling the energy increases the crater diameter by only a factor of $2^{1/4} \approx 1.19$ (about 19%). This weak dependence on energy explains why craters have a relatively narrow size range even though impactor energies span many orders of magnitude.
 
 **Worked example: 1 km asteroid on the Moon.**
 
@@ -157,7 +157,7 @@ $$
 D_t \approx D_{t,\text{Moon}} \cdot \frac{g_{\text{Moon}}}{g}
 $$ (eq:transition-diameter)
 
-where $D_{t,\text{Moon}} \approx 15$ km and $g_{\text{Moon}} = 1.62$ m s$^{-2}$. On Earth ($g = 9.81$ m s$^{-2}$), $D_t \approx 15 \times 1.62/9.81 \approx 2.5$ km — explaining why virtually all terrestrial craters larger than a few kilometres are complex.
+where $D_{t,\text{Moon}} \approx 15$ km and $g_{\text{Moon}} = 1.62$ m s$^{-2}$. On Earth ($g = 9.81$ m s$^{-2}$), $D_t \approx 15 \times 1.62/9.81 \approx 2.5$ km, explaining why virtually all terrestrial craters larger than a few kilometres are complex.
 
 ```{figure} figures/crater_morphology.avif
 :name: fig:crater-morphology
@@ -170,7 +170,7 @@ Oblique view of the central peak of Tycho Crater (~85 km diameter), imaged by NA
 
 ### Crater counting and surface ages
 
-The key principle of **crater chronology** is simple: older surfaces have had more time to accumulate impact craters, so they have higher crater densities. By counting craters as a function of diameter, we can determine relative ages — and, with calibration, absolute ages {cite:p}`Neukum2001`.
+The key principle of **crater chronology** is simple: older surfaces have had more time to accumulate impact craters, so they have higher crater densities. By counting craters as a function of diameter, we can determine relative ages, and with calibration, absolute ages {cite:p}`Neukum2001`.
 
 The **crater size-frequency distribution (SFD)** follows a power law:
 
@@ -186,7 +186,7 @@ Key results from crater counting include:
 - The lunar highlands are **saturated** with craters (crater density has reached an equilibrium where new craters destroy old ones) and are $>$4 Gyr old.
 - The lunar maria have ages of 3.9–3.1 Gyr, confirmed by Apollo sample dating.
 - Mars's southern highlands are heavily cratered ($\sim$4 Gyr), while the northern lowlands are much younger.
-- Venus has a remarkably **uniform** crater density across its entire surface, implying a mean surface age of $\sim$300–700 Myr — suggesting a global resurfacing event (see {ref}`lecture09`).
+- Venus has a remarkably **uniform** crater density across its entire surface, implying a mean surface age of $\sim$300–700 Myr, suggesting a global resurfacing event (see {ref}`lecture09`).
 
 ```{figure} figures/crater_counting.avif
 :name: fig:crater-counting
@@ -207,14 +207,14 @@ The lunar crater chronology of {cite:t}`Neukum2001`. The black curve gives the c
 
 ## Volcanism
 
-Volcanism is the primary mechanism by which a planet's internal heat reaches the surface ({ref}`lecture03`). The style of volcanic activity — whether gentle lava flows or explosive eruptions — depends on the magma composition, volatile content, and the body's gravity and atmospheric pressure {cite:p}`Melosh2011`.
+Volcanism is the primary mechanism by which a planet's internal heat reaches the surface ({ref}`lecture03`). The style of volcanic activity (whether gentle lava flows or explosive eruptions) depends on the magma composition, volatile content, and the body's gravity and atmospheric pressure {cite:p}`Melosh2011`.
 
 ### Effusive vs. explosive volcanism
 
 The key variable is **magma viscosity**, which is controlled primarily by the $\mathrm{SiO_2}$ (silica) content:
 
 - **Low-viscosity (basaltic) magma** ($\sim$50% $\mathrm{SiO_2}$): Flows easily, producing broad, flat **shield volcanoes** and extensive **flood basalt** plains. Dissolved volatiles ($\mathrm{H_2O}$, $\mathrm{CO_2}$) escape gradually from the fluid magma, so eruptions are typically **effusive** (gentle lava flows). This is the dominant style on the Moon, Mars, and Io.
-- **High-viscosity (silicic) magma** ($>$65% $\mathrm{SiO_2}$): Traps dissolved volatiles until the pressure exceeds the magma's strength, producing violent **explosive** eruptions (e.g., Mount St. Helens, Krakatoa). These build steep **stratovolcanoes** and deposit widespread ash layers. Explosive volcanism requires both high-silica magma *and* significant volatile content — conditions met primarily on Earth.
+- **High-viscosity (silicic) magma** ($>$65% $\mathrm{SiO_2}$): Traps dissolved volatiles until the pressure exceeds the magma's strength, producing violent **explosive** eruptions (e.g., Mount St. Helens, Krakatoa). These build steep **stratovolcanoes** and deposit widespread ash layers. Explosive volcanism requires both high-silica magma *and* significant volatile content, conditions met primarily on Earth.
 
 ### Volcanic landforms across the solar system
 
@@ -224,7 +224,7 @@ The key variable is **magma viscosity**, which is controlled primarily by the $\
 
 **Venus** is dominated by volcanic landforms: lava plains cover $\sim$80% of the surface, with $>$1600 identified volcanic centres. The uniform crater density suggests that much of the surface was resurfaced in a relatively short interval, possibly through a catastrophic global volcanic episode $\sim$300–700 Myr ago (see {ref}`lecture09`).
 
-**Io** is the most volcanically active body in the solar system, powered by intense tidal heating from its orbital resonance with Europa and Ganymede ({ref}`lecture03`). With $\sim$400 active volcanic centres, Io's surface is continuously resurfaced by lava flows — its mean surface age is estimated at $<$1 Myr, making it one of the youngest surfaces in the solar system {cite:p}`dePaterLissauer2010`.
+**Io** is the most volcanically active body in the solar system, powered by intense tidal heating from its orbital resonance with Europa and Ganymede ({ref}`lecture03`). With $\sim$400 active volcanic centres, Io's surface is continuously resurfaced by lava flows; its mean surface age is estimated at $<$1 Myr, making it one of the youngest surfaces in the solar system {cite:p}`dePaterLissauer2010`.
 
 ```{figure} figures/io_volcanism.avif
 :name: fig:io-volcanism-surface
@@ -273,33 +273,33 @@ Tectonics encompasses the large-scale deformation of a planet's crust and lithos
 
 ### Plate tectonics: Earth's unique regime
 
-Earth is the **only body** in the solar system with active plate tectonics — the lithosphere is divided into $\sim$15 rigid plates that move at velocities of 1–10 cm yr$^{-1}$, driven by mantle convection. Three types of plate boundary exist:
+Earth is the **only body** in the solar system with active plate tectonics: the lithosphere is divided into $\sim$15 rigid plates that move at velocities of 1–10 cm yr$^{-1}$, driven by mantle convection. Three types of plate boundary exist:
 
 - **Divergent boundaries** (mid-ocean ridges): Plates move apart; new crust is created by seafloor spreading.
 - **Convergent boundaries** (subduction zones): One plate descends beneath another into the mantle; associated with volcanism and mountain building.
 - **Transform boundaries** (e.g., San Andreas Fault): Plates slide horizontally past each other.
 
-Plate tectonics enables the **carbonate-silicate cycle** ({ref}`lecture06`) by recycling carbon through subduction and volcanic outgassing — a critical component of Earth's long-term climate regulation. Why Earth has plate tectonics while other terrestrial bodies do not remains one of the central open questions in geophysics. Contributing factors likely include Earth's size, water content (which weakens the lithosphere), and the specific rheology of its mantle {cite:p}`Stern2018`.
+Plate tectonics enables the **carbonate-silicate cycle** ({ref}`lecture06`) by recycling carbon through subduction and volcanic outgassing, a critical component of Earth's long-term climate regulation. Why Earth has plate tectonics while other terrestrial bodies do not remains one of the central open questions in geophysics. Contributing factors likely include Earth's size, water content (which weakens the lithosphere), and the specific rheology of its mantle {cite:p}`Stern2018`.
 
 ```{figure} figures/plate_tectonics.avif
 :name: fig:plate-tectonics
 :width: 600px
 :align: center
 
-Earth's major tectonic plates and their boundaries. **Divergent boundaries** (red lines) mark mid-ocean ridges where new crust is created; **convergent boundaries** (blue lines with triangles) mark subduction zones where one plate descends beneath another; **transform boundaries** (green lines) mark where plates slide past each other. Earth is the only known body with active plate tectonics — all other terrestrial planets and moons operate in the stagnant-lid regime. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+Earth's major tectonic plates and their boundaries. **Divergent boundaries** (red lines) mark mid-ocean ridges where new crust is created; **convergent boundaries** (blue lines with triangles) mark subduction zones where one plate descends beneath another; **transform boundaries** (green lines) mark where plates slide past each other. Earth is the only known body with active plate tectonics; all other terrestrial planets and moons operate in the stagnant-lid regime. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 ```
 
 ### Stagnant-lid convection
 
 All other terrestrial bodies in the solar system operate in the **stagnant-lid regime**: the mantle convects beneath a single, rigid, immobile lithospheric lid. Heat escapes primarily by conduction through the lid and by occasional volcanic eruptions that breach it. The stagnant lid grows thicker over time as the interior cools, eventually shutting down surface volcanism {cite:p}`Stern2018`.
 
-The stagnant-lid regime is the *default* outcome of mantle convection with strongly temperature-dependent viscosity. At the base of the lithosphere, the viscosity contrast between the cold lid and the hot interior is so large ($\sim$10$^{10}$) that the lid effectively decouples from the convecting mantle below. Earth's plate tectonics requires a mechanism to *break* the lid — likely involving water weakening and self-sustained damage along plate boundaries.
+The stagnant-lid regime is the *default* outcome of mantle convection with strongly temperature-dependent viscosity. At the base of the lithosphere, the viscosity contrast between the cold lid and the hot interior is so large ($\sim$10$^{10}$) that the lid effectively decouples from the convecting mantle below. Earth's plate tectonics requires a mechanism to *break* the lid, likely involving water weakening and self-sustained damage along plate boundaries.
 
 ### Tectonic features across the solar system
 
-**Mars** displays dramatic tectonic features despite lacking plate tectonics. The **Tharsis bulge** — a volcanic plateau $\sim$5000 km across and $\sim$10 km high — may have been uplifted by a mantle plume. **Valles Marineris**, the solar system's largest canyon system ($\sim$4000 km long, up to 7 km deep, and 200 km wide), formed by extensional rifting associated with the Tharsis bulge {cite:p}`dePaterLissauer2010`.
+**Mars** displays dramatic tectonic features despite lacking plate tectonics. The **Tharsis bulge** (a volcanic plateau $\sim$5000 km across and $\sim$10 km high) may have been uplifted by a mantle plume. **Valles Marineris**, the solar system's largest canyon system ($\sim$4000 km long, up to 7 km deep, and 200 km wide), formed by extensional rifting associated with the Tharsis bulge {cite:p}`dePaterLissauer2010`.
 
-**Venus** shows a puzzling tectonic style. The uniform crater density across the surface implies a mean age of $\sim$300–700 Myr, leading to the **episodic resurfacing hypothesis**: Venus may experience periodic catastrophic overturns where the stagnant lid founders and the entire surface is volcanic resurfaced in a geologically short interval. Between these episodes, the surface remains tectonically quiet. This idea remains debated — we will discuss Venus's geology in detail in {ref}`lecture09`.
+**Venus** shows a puzzling tectonic style. The uniform crater density across the surface implies a mean age of $\sim$300–700 Myr, leading to the **episodic resurfacing hypothesis**: Venus may experience periodic catastrophic overturns where the stagnant lid founders and the entire surface is volcanically resurfaced in a geologically short interval. Between these episodes, the surface remains tectonically quiet. This idea remains debated; we will discuss Venus's geology in detail in {ref}`lecture09`.
 
 **Mercury** has undergone significant **global contraction** as its large iron core cooled and solidified over time, shrinking the planet's radius by $\sim$7 km. This contraction compressed the crust, producing **lobate scarps**, thrust faults up to several hundred kilometres long and 1–3 km high, discovered by Mariner 10 and mapped extensively by MESSENGER. We will discuss Mercury's surface in {ref}`lecture10`.
 
@@ -322,7 +322,7 @@ Valles Marineris, the solar system's largest canyon system, stretching $\sim$400
 
 ## Erosion and weathering
 
-Erosion is the removal and transport of surface material by wind, water, ice, or chemical reactions. On bodies with thick atmospheres, erosion can be the dominant surface-modifying process — Earth's surface is almost entirely shaped by erosion on timescales of millions of years. On airless bodies, the only "erosion" comes from impact gardening and space weathering (see below).
+Erosion is the removal and transport of surface material by wind, water, ice, or chemical reactions. On bodies with thick atmospheres, erosion can be the dominant surface-modifying process; Earth's surface is almost entirely shaped by erosion on timescales of millions of years. On airless bodies, the only "erosion" comes from impact gardening and space weathering (see below).
 
 ### Aeolian (wind) processes
 
@@ -394,19 +394,19 @@ Ice can flow slowly under its own weight, carving valleys and transporting debri
 Chemical reactions between surface rocks and atmospheric or liquid agents alter mineral compositions:
 
 - **Earth:** Silicate weathering by carbonic acid is the critical carbon sink in the carbonate-silicate cycle ({ref}`lecture06`), regulating climate over geological time.
-- **Mars:** Orbital spectroscopy (OMEGA on Mars Express, CRISM on MRO) has detected hydrated minerals — phyllosilicates (clays), sulfates, and carbonates — formed by aqueous alteration of basaltic rock, providing mineralogical evidence for past liquid water.
+- **Mars:** Orbital spectroscopy (OMEGA on Mars Express, CRISM on MRO) has detected hydrated minerals (phyllosilicates or clays, sulfates, and carbonates) formed by aqueous alteration of basaltic rock, providing mineralogical evidence for past liquid water.
 - **Venus:** The high surface temperature ($\sim$735 K) and dense $\mathrm{CO_2}$ atmosphere drive surface–atmosphere chemical reactions that may alter rock compositions on relatively short timescales.
 
 
 ## Remote sensing of surfaces
 
-Most of what we know about planetary surfaces comes from remote sensing — observing from orbit or from Earth. Different wavelengths and measurement techniques reveal different properties of the surface {cite:p}`dePaterLissauer2010`.
+Most of what we know about planetary surfaces comes from remote sensing: observing from orbit or from Earth. Different wavelengths and measurement techniques reveal different properties of the surface {cite:p}`dePaterLissauer2010`.
 
 ### Reflectance spectroscopy
 
 Every mineral has a characteristic pattern of absorption features in the visible and near-infrared (VIS/NIR, 0.3–5 $\mu$m) caused by electronic transitions and molecular vibrations. By measuring the reflected sunlight spectrum from orbit, we can identify minerals remotely:
 
-- **CRISM** (Compact Reconnaissance Imaging Spectrometer for Mars, on MRO) and **OMEGA** (on Mars Express) have mapped the distribution of phyllosilicates (clays), sulfates, and other hydrated minerals across the Martian surface — providing definitive evidence that liquid water chemically altered the rocks during Mars's early history {cite:p}`Grotzinger2014`.
+- **CRISM** (Compact Reconnaissance Imaging Spectrometer for Mars, on MRO) and **OMEGA** (on Mars Express) have mapped the distribution of phyllosilicates (clays), sulfates, and other hydrated minerals across the Martian surface, providing definitive evidence that liquid water chemically altered the rocks during Mars's early history {cite:p}`Grotzinger2014`.
 - Similar instruments on lunar orbiters have mapped the distribution of pyroxene, olivine, and plagioclase across the Moon's surface.
 
 ```{figure} figures/crism_mineral_map.avif
@@ -445,7 +445,7 @@ We will discuss gravity field measurements and their interpretation further in {
 :width: 600px
 :align: center
 
-Lunar crustal thickness derived from the GRAIL mission, shown for the nearside (left) and farside (right) hemispheres {cite:p}`Wieczorek2013`. GRAIL measured the Moon's gravity field at unprecedented precision by tracking the inter-spacecraft distance between two co-orbiting satellites; combined with topography, the gravity solution yields the depth to the crust-mantle interface. The map reveals a $\sim$30 km mean crustal thickness with strong thinning beneath the largest impact basins (deep blue), thicker farside crust, and the Procellarum KREEP Terrane on the nearside (cooler colours within the Procellarum outline). Credit: NASA/MIT/GSFC/JPL-Caltech, public domain.
+Lunar crustal thickness derived from the GRAIL mission, shown for the nearside (left) and farside (right) hemispheres {cite:p}`Wieczorek2013`. GRAIL measured the Moon's gravity field at unprecedented precision by tracking the inter-spacecraft distance between two co-orbiting satellites; combined with topography, the gravity solution yields the depth to the crust-mantle interface. The map reveals an average crustal thickness of $\sim$34-43 km {cite:p}`Wieczorek2013`, with strong thinning beneath the largest impact basins (deep blue), a thicker farside crust, and the Procellarum KREEP Terrane on the nearside (cooler colours within the Procellarum outline). Credit: NASA/MIT/GSFC/JPL-Caltech, public domain.
 ```
 
 ```{figure} figures/mars_topography.avif
@@ -463,9 +463,9 @@ On airless bodies (the Moon, Mercury, asteroids), the surface is not bedrock but
 
 ### Regolith
 
-The lunar regolith is a layer of unconsolidated debris — rock fragments, mineral grains, and glass beads — produced by the cumulative effect of impacts at all scales, from micrometeorite bombardment to basin-forming events. This process is called **impact gardening**: each impact excavates material, mixes the surface layer, and breaks rocks into progressively finer particles. The lunar regolith is 5–15 m thick in the maria and potentially deeper in the ancient highlands.
+The lunar regolith is a layer of unconsolidated debris (rock fragments, mineral grains, and glass beads) produced by the cumulative effect of impacts at all scales, from micrometeorite bombardment to basin-forming events. This process is called **impact gardening**: each impact excavates material, mixes the surface layer, and breaks rocks into progressively finer particles. The lunar regolith is 5–15 m thick in the maria and potentially deeper in the ancient highlands.
 
-The Hayabusa2 (asteroid Ryugu) and OSIRIS-REx (asteroid Bennu) sample return missions revealed that even small ($\sim$500 m) rubble-pile asteroids have regolith — a surprising finding, since these bodies have negligible gravity and were expected to lose ejecta to space rather than retain it.
+The Hayabusa2 (asteroid Ryugu) and OSIRIS-REx (asteroid Bennu) sample return missions revealed that even small ($\sim$500 m) rubble-pile asteroids have regolith, a surprising finding since these bodies have negligible gravity and were expected to lose ejecta to space rather than retain it.
 
 ```{figure} figures/lunar_regolith.avif
 :name: fig:lunar-regolith
@@ -477,33 +477,33 @@ Apollo 11 photograph AS11-40-5878 of an astronaut bootprint in the lunar regolit
 
 ### Space weathering
 
-The surfaces of airless bodies are continuously exposed to the space environment: solar wind ions (primarily protons and $\mathrm{He}^{2+}$), micrometeorite impacts, and galactic cosmic rays. These agents collectively produce **space weathering** — a set of physical and chemical changes that modify the optical properties of the surface over time {cite:p}`Hapke2001`:
+The surfaces of airless bodies are continuously exposed to the space environment: solar wind ions (primarily protons and $\mathrm{He}^{2+}$), micrometeorite impacts, and galactic cosmic rays. These agents collectively produce **space weathering**, a set of physical and chemical changes that modify the optical properties of the surface over time {cite:p}`Hapke2001`:
 
 - **Solar wind implantation:** Energetic ions are implanted into the top $\sim$100 nm of mineral grains, creating crystal damage and amorphous coatings.
-- **Micrometeorite melting:** Tiny impacts at 10–70 km s$^{-1}$ melt and vaporise surface material, creating **nanophase iron** (np-Fe$^0$) particles — metallic iron droplets just 3–30 nm in diameter, embedded in glassy rims on mineral grains.
+- **Micrometeorite melting:** Tiny impacts at 10–70 km s$^{-1}$ melt and vaporise surface material, creating **nanophase iron** (np-Fe$^0$) particles: metallic iron droplets just 3–30 nm in diameter, embedded in glassy rims on mineral grains.
 - **Cosmic ray damage:** High-energy particles create lattice defects in crystal structures.
 
-The net effect is that space-weathered surfaces become **darker and redder** over time. This is why fresh impact craters (e.g., Tycho on the Moon, with its bright ray system) stand out as brighter features against the darker, mature regolith surrounding them. Space weathering complicates the spectroscopic identification of surface minerals, since the absorption features are weakened and shifted — a significant challenge for remote sensing.
+The net effect is that space-weathered surfaces become **darker and redder** over time. This is why fresh impact craters (e.g., Tycho on the Moon, with its bright ray system) stand out as brighter features against the darker, mature regolith surrounding them. Space weathering complicates the spectroscopic identification of surface minerals, since the absorption features are weakened and shifted, a significant challenge for remote sensing.
 
 
 ## Cryovolcanism on icy bodies
 
-In the outer solar system, where surface temperatures are far below the freezing point of water, volcanic processes take a different form. **Cryovolcanism** involves the eruption of volatile-rich "magma" — liquid water, ammonia–water mixtures, or methane — rather than silicate melts. The energy source is typically tidal heating ({ref}`lecture03`), which can maintain subsurface oceans beneath icy shells.
+In the outer solar system, where surface temperatures are far below the freezing point of water, volcanic processes take a different form. **Cryovolcanism** involves the eruption of volatile-rich "magma" (liquid water, ammonia-water mixtures, or methane) rather than silicate melts. The energy source is typically tidal heating ({ref}`lecture03`), which can maintain subsurface oceans beneath icy shells.
 
 ### Enceladus
 
-Saturn's small moon Enceladus ($R \approx 252$ km) provides the most dramatic example of active cryovolcanism in the solar system. NASA's Cassini spacecraft discovered that Enceladus ejects powerful geysers of water vapour and ice particles from four parallel fractures — the **"tiger stripes"** — near its south pole {cite:p}`Porco2006`.
+Saturn's small moon Enceladus ($R \approx 252$ km) provides the most dramatic example of active cryovolcanism in the solar system. NASA's Cassini spacecraft discovered that Enceladus ejects powerful geysers of water vapour and ice particles from four parallel fractures, the **"tiger stripes"**, near its south pole {cite:p}`Porco2006`.
 
-The plumes are sourced from a **global subsurface ocean** in contact with the rocky core, maintained by tidal heating from Enceladus's orbital resonance with Dione ({ref}`lecture03`). Cassini's mass spectrometer detected molecular hydrogen ($\mathrm{H_2}$), silica nanoparticles, and complex organic molecules in the plume material — consistent with active hydrothermal vents on the ocean floor, similar to those that support chemosynthetic ecosystems in Earth's deep oceans {cite:p}`NimmoPappalardo2016`.
+The plumes are sourced from a **global subsurface ocean** in contact with the rocky core, maintained by tidal heating from Enceladus's orbital resonance with Dione ({ref}`lecture03`). Cassini's mass spectrometer detected molecular hydrogen ($\mathrm{H_2}$), silica nanoparticles, and complex organic molecules in the plume material, consistent with active hydrothermal vents on the ocean floor similar to those that support chemosynthetic ecosystems in Earth's deep oceans {cite:p}`NimmoPappalardo2016`.
 
-The measured thermal emission from the tiger stripes corresponds to a heat flow of $\sim$15 GW {cite:p}`Howett2011` — far more than can be explained by radiogenic heating alone, confirming the importance of tidal dissipation. Enceladus is one of the most promising targets in the search for extraterrestrial life ({ref}`lecture14`).
+The measured thermal emission from the tiger stripes corresponds to a heat flow of $15.8 \pm 3.1$ GW {cite:p}`Howett2011`, far more than can be explained by radiogenic heating alone, confirming the importance of tidal dissipation. Enceladus is one of the most promising targets in the search for extraterrestrial life ({ref}`lecture14`).
 
 ### Europa
 
 Jupiter's moon Europa ($R \approx 1561$ km) possesses a **global ocean** $\sim$100 km deep beneath an ice shell $\sim$10–30 km thick, maintained by tidal heating from the Laplace resonance with Io and Ganymede {cite:p}`NimmoPappalardo2016`. Europa's surface shows:
 
 - **Lineae:** Long linear features, possibly cracks in the ice shell that were filled by upwelling ocean water or warm ice.
-- **Chaos terrain:** Regions where the ice appears to have broken up, rotated, and refrozen — possibly formed by localised melting from below.
+- **Chaos terrain:** Regions where the ice appears to have broken up, rotated, and refrozen, possibly formed by localised melting from below.
 - **Very few impact craters:** Indicating a geologically young surface ($\sim$40–90 Myr), continuously resurfaced by cryovolcanic and tectonic processes.
 
 Hubble Space Telescope observations have detected possible water vapour plumes above Europa's surface {cite:p}`Sparks2017`, though these detections are intermittent and less dramatic than Enceladus's persistent geysers. NASA's **Europa Clipper** mission (launched 2024) will perform dozens of close flybys to characterise the ice shell, ocean, and habitability.
@@ -533,15 +533,15 @@ Voyager 2 colour mosaic of Neptune's moon Triton (PIA00317), captured during the
 :width: 500px
 :align: center
 
-Dramatic plumes of water vapour and ice particles erupting from the south polar region of Saturn's moon Enceladus, captured by NASA's *Cassini* spacecraft. The geysers originate from four parallel fractures called "tiger stripes" and are sourced from a global subsurface ocean in contact with the rocky core. The plumes contain molecular hydrogen, silica nanoparticles, and complex organic molecules — ingredients consistent with active hydrothermal chemistry on the ocean floor. Enceladus is one of the most promising targets in the search for life beyond Earth ({ref}`lecture14`). Credit: NASA/JPL-Caltech/SSI, public domain.
+Dramatic plumes of water vapour and ice particles erupting from the south polar region of Saturn's moon Enceladus, captured by NASA's *Cassini* spacecraft. The geysers originate from four parallel fractures called "tiger stripes" and are sourced from a global subsurface ocean in contact with the rocky core. The plumes contain molecular hydrogen, silica nanoparticles, and complex organic molecules: ingredients consistent with active hydrothermal chemistry on the ocean floor. Enceladus is one of the most promising targets in the search for life beyond Earth ({ref}`lecture14`). Credit: NASA/JPL-Caltech/SSI, public domain.
 ```
 
 
 ## Recent advances
 
-NASA's Perseverance rover, operating in Jezero crater since 2021, has confirmed that the crater floor is composed of igneous rock (olivine-bearing cumulates) that was subsequently altered by liquid water {cite:p}`Farley2022`. The rover has cached over 20 sample tubes for eventual return to Earth by the Mars Sample Return campaign — a joint NASA/ESA effort that, if successful, would provide the first laboratory analysis of Martian rocks and address questions about past habitability and possible biosignatures ({ref}`lecture10`).
+NASA's Perseverance rover, operating in Jezero crater since 2021, has confirmed that the crater floor is composed of igneous rock (olivine-bearing cumulates) that was subsequently altered by liquid water {cite:p}`Farley2022`. The rover has cached over 20 sample tubes for eventual return to Earth by the Mars Sample Return campaign, a joint NASA/ESA effort that, if successful, would provide the first laboratory analysis of Martian rocks and address questions about past habitability and possible biosignatures ({ref}`lecture10`).
 
-The **DART** (Double Asteroid Redirection Test) mission in 2022 demonstrated the first successful planetary defence experiment: a kinetic impactor deliberately crashed into the asteroid moonlet Dimorphos, changing its orbital period around the larger asteroid Didymos by 33 minutes {cite:p}`Thomas2023`. The result confirmed that kinetic impact is a viable deflection strategy for hazardous near-Earth asteroids, and the impact ejecta provided new insights into the mechanical properties of rubble-pile asteroid surfaces.
+The **DART** (Double Asteroid Redirection Test) mission in 2022 demonstrated the first successful planetary defence experiment: a kinetic impactor deliberately crashed into the asteroid moonlet Dimorphos, shortening its orbital period around the larger asteroid Didymos by $33.0 \pm 1.0$ minutes {cite:p}`Thomas2023`. The result confirmed that kinetic impact is a viable deflection strategy for hazardous near-Earth asteroids, and the impact ejecta provided new insights into the mechanical properties of rubble-pile asteroid surfaces.
 
 Ongoing monitoring of Io by the Juno extended mission and ground-based adaptive optics has revealed new details of Io's volcanic activity, including the discovery of previously unknown eruption sites and constraints on the spatial distribution of heat flow. For Venus, planned radar mapping missions (VERITAS, EnVision) in the early 2030s will provide the first high-resolution surface data since Magellan, enabling tests of whether Venus has experienced recent or ongoing volcanic activity ({ref}`lecture09`).
 
