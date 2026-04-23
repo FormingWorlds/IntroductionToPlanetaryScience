@@ -177,8 +177,8 @@ We can now compute scale heights for several bodies using their characteristic a
 |------|:-------:|:-----:|:-----------------:|:---------:|
 | Venus | 735 | 43.4 | 8.87 | 15.8 |
 | Earth | 288 | 28.97 | 9.81 | 8.5 |
-| Mars | 215 | 43.3 | 3.72 | 11.1 |
-| Jupiter | 165 | 2.2 | 24.8 | 27 |
+| Mars | 210 | 43.3 | 3.72 | 10.8 |
+| Jupiter | 165 | 2.2 | 24.8 | 25 |
 | Titan | 94 | 28.6 | 1.35 | 21 |
 
 **Worked example for Earth:**
@@ -503,10 +503,10 @@ where $n_{\mathrm{exo}}$ is the number density at the exobase. The exponential f
 :width: 700px
 :align: center
 
-Maxwell–Boltzmann speed distribution for atomic hydrogen at the exobase temperatures of Earth ($T_\mathrm{exo} = 1000$ K, blue) and Mars ($T_\mathrm{exo} = 300$ K, red). Dashed vertical lines mark the escape velocity $v_\mathrm{esc}$ at the exobase of each planet ($\sim$10.6 km s$^{-1}$ and $\sim$4.9 km s$^{-1}$ respectively). Only molecules in the high-speed tail above $v_\mathrm{esc}$ (shaded) contribute to Jeans escape; the exponential dependence of the tail area on $\lambda_J = v_\mathrm{esc}^2 / v_\mathrm{th}^2$ explains why escape rates vary by orders of magnitude across species and bodies.
+Maxwell–Boltzmann speed distribution for atomic hydrogen at the exobase temperatures of Earth ($T_\mathrm{exo} = 1000$ K, blue) and Mars ($T_\mathrm{exo} = 270$ K, red). Dashed vertical lines mark the escape velocity $v_\mathrm{esc}$ at the exobase of each planet ($\sim$10.6 km s$^{-1}$ and $\sim$4.9 km s$^{-1}$ respectively). Only molecules in the high-speed tail above $v_\mathrm{esc}$ (shaded) contribute to Jeans escape; the exponential dependence of the tail area on $\lambda_J = v_\mathrm{esc}^2 / v_\mathrm{th}^2$ explains why escape rates vary by orders of magnitude across species and bodies.
 ```
 
-The following table illustrates $\lambda_J$ for several atmospheric species on Earth and Mars, assuming exobase temperatures of 1000 K (Earth) and 300 K (Mars):
+The following table illustrates $\lambda_J$ for several atmospheric species on Earth and Mars, assuming exobase temperatures of 1000 K (Earth) and 270 K (Mars):
 
 | Species | $m$ (u) | $\lambda_J$ (Earth) | $\lambda_J$ (Mars) |
 |---------|:-------:|:--------------------:|:-------------------:|
@@ -554,7 +554,7 @@ Several processes can eject atmospheric particles to space without relying on th
 
 - **Impact erosion:** Large asteroid or comet impacts can eject significant fractions of a planet's atmosphere. The efficiency depends on the impactor size relative to the atmospheric scale height: very large impacts can blow off a substantial atmospheric mass in a single event.
 
-The MAVEN mission at Mars has measured the present-day atmospheric escape rates and demonstrated that solar wind stripping is the dominant loss mechanism for Mars's remaining atmosphere, with a current loss rate of $\sim$100 g s$^{-1}$ for $\mathrm{O}^+$ ions {cite:p}`Jakosky2018`.
+The MAVEN mission at Mars has measured the present-day total atmospheric escape rate at $\sim 2$–$3$ kg s$^{-1}$ for H and O combined, integrated across photochemical, thermal, and solar-wind-driven channels {cite:p}`Jakosky2018`.
 
 ```{figure} figures/mars_atmosphere.avif
 :name: fig:mars-atmosphere
@@ -587,7 +587,7 @@ Applying this criterion reveals a clear pattern across the solar system:
 
 - **Earth and Venus**: Escape velocities of $\sim$11 km s$^{-1}$ are sufficient to retain heavy molecules ($\mathrm{N_2}$, $\mathrm{O_2}$, $\mathrm{CO_2}$, $\mathrm{H_2O}$) but not atomic hydrogen. Earth and Venus lose H to space, which contributes to long-term water loss (via photodissociation of $\mathrm{H_2O}$ followed by H escape).
 
-- **Mars**: With $v_{\mathrm{esc}} = 5.0$ km s$^{-1}$ and an exosphere temperature of $\sim$300 K, Mars is marginal for retaining even heavy species like $\mathrm{CO_2}$. While Jeans escape of $\mathrm{CO_2}$ is negligible, non-thermal processes (sputtering, ion pickup) have eroded most of Mars's original atmosphere over 4 billion years {cite:p}`Jakosky2018`.
+- **Mars**: With $v_{\mathrm{esc}} = 5.0$ km s$^{-1}$ and an exosphere temperature of $\sim$270 K, Mars is marginal for retaining even heavy species like $\mathrm{CO_2}$. While Jeans escape of $\mathrm{CO_2}$ is negligible, non-thermal processes (sputtering, ion pickup) have eroded most of Mars's original atmosphere over 4 billion years {cite:p}`Jakosky2018`.
 
 - **Titan**: Despite its low escape velocity (2.6 km s$^{-1}$), Titan retains a thick $\mathrm{N_2}$ atmosphere because it is extremely **cold** ($T_{\mathrm{exo}} \approx 150$ K). Low temperature means low thermal velocities, and the Jeans parameter remains large.
 

@@ -22,7 +22,7 @@ The relative importance of these processes varies dramatically across the solar 
 | Earth | Plate tectonics + erosion | Youngest ocean floors $<$200 Myr; rapid weathering |
 | Mars | Volcanism + impacts | Olympus Mons, cratered southern highlands |
 | Venus | Volcanism | Volcanic plains cover $\sim$80% of surface |
-| Io | Tidal volcanism | $\sim$400 active volcanoes, surface age $<$1 Myr |
+| Io | Tidal volcanism | $\sim$300–400 active volcanoes, surface age $<$1 Myr |
 | Europa | Ice tectonics | Lineae, chaos terrain, very few craters |
 
 ```{figure} figures/surface_processes_montage.avif
@@ -224,14 +224,14 @@ The key variable is **magma viscosity**, which is controlled primarily by the $\
 
 **Venus** is dominated by volcanic landforms: lava plains cover $\sim$80% of the surface, with $>$1600 identified volcanic centres. The uniform crater density suggests that much of the surface was resurfaced in a relatively short interval, possibly through a catastrophic global volcanic episode $\sim$300–700 Myr ago (see {ref}`lecture09`).
 
-**Io** is the most volcanically active body in the solar system, powered by intense tidal heating from its orbital resonance with Europa and Ganymede ({ref}`lecture03`). With $\sim$400 active volcanic centres, Io's surface is continuously resurfaced by lava flows; its mean surface age is estimated at $<$1 Myr, making it one of the youngest surfaces in the solar system {cite:p}`dePaterLissauer2010`.
+**Io** is the most volcanically active body in the solar system, powered by intense tidal heating from its orbital resonance with Europa and Ganymede ({ref}`lecture03`). With $\sim$300–400 active volcanic centres, Io's surface is continuously resurfaced by lava flows; its mean surface age is estimated at $<$1 Myr, making it one of the youngest surfaces in the solar system {cite:p}`dePaterLissauer2010,Davies2024PSJ`.
 
 ```{figure} figures/io_volcanism.avif
 :name: fig:io-volcanism-surface
 :width: 500px
 :align: center
 
-Full-disk view of Jupiter's moon Io from NASA's Galileo spacecraft (PIA00583), revealing a surface dominated by sulfur and silicate volcanism. Yellow, white, and pale-green regions are sulfur and sulfur-dioxide deposits; darker patches mark recent silicate lava flows and active volcanic centres (a few of which have visible halos of fresh pyroclastic deposits). With $\sim$400 active volcanic centres powered by tidal heating in the Laplace resonance with Europa and Ganymede, Io's mean surface age is below 1 Myr {cite:p}`dePaterLissauer2010`. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
+Full-disk view of Jupiter's moon Io from NASA's Galileo spacecraft (PIA00583), revealing a surface dominated by sulfur and silicate volcanism. Yellow, white, and pale-green regions are sulfur and sulfur-dioxide deposits; darker patches mark recent silicate lava flows and active volcanic centres (a few of which have visible halos of fresh pyroclastic deposits). With $\sim$300–400 active volcanic centres powered by tidal heating in the Laplace resonance with Europa and Ganymede, Io's mean surface age is below 1 Myr {cite:p}`dePaterLissauer2010,Davies2024PSJ`. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
 ```
 
 | Body | Volcanic style | Driving mechanism | Example landforms |

@@ -48,7 +48,7 @@ The decay of naturally occurring radioactive isotopes provides a sustained heat 
 | ${}^{238}\mathrm{U}$ | 4.47 | $9.5 \times 10^{-5}$ | 20 ppb |
 | ${}^{235}\mathrm{U}$ | 0.704 | $5.7 \times 10^{-4}$ | 0.14 ppb |
 | ${}^{232}\mathrm{Th}$ | 14.0 | $2.6 \times 10^{-5}$ | 80 ppb |
-| ${}^{40}\mathrm{K}$ | 1.25 | $2.9 \times 10^{-5}$ | 240 ppb |
+| ${}^{40}\mathrm{K}$ | 1.25 | $2.9 \times 10^{-5}$ | 28 ppb |
 
 These isotopes are **lithophile** ("rock-loving") elements that concentrate in the silicate mantle and crust rather than the metallic core. Together, they produce Earth's present-day radiogenic heat of approximately 20 TW (terawatts) {cite:p}`Jaupart2015`. Because the shorter-lived isotopes (${}^{235}\mathrm{U}$, ${}^{40}\mathrm{K}$) were more abundant in the past, total radiogenic heat production was 3–4 times higher at the time of Earth's formation (4.5 Gyr ago) than it is today.
 
@@ -522,7 +522,7 @@ The Tvashtar volcanic plume on Io, captured by the New Horizons spacecraft durin
 :width: 600px
 :align: center
 
-Global distribution of Io's volcanic hotspots projected on a basemap, with each marker indicating an individually catalogued emission centre from combined Galileo, New Horizons, and ground-based monitoring. Integrated emission across all detected hotspots is $\sim 10^{14}$ W, consistent with the tidal-dissipation rate predicted by the Laplace-resonance forcing of Io's orbital eccentricity {cite:p}`Davies2024PSJ`. Credit: NASA/JPL-Caltech, public domain.
+Global distribution of Io's volcanic hotspots projected on a basemap, with each marker indicating an individually catalogued emission centre from combined Galileo, New Horizons, and ground-based monitoring. {cite:t}`Davies2024PSJ` report 343 active hotspots with an integrated emission of $\sim 58$ TW, roughly half of Io's total endogenic heat output of $\sim 10^{14}$ W {cite:p}`Spencer2000`; the remainder is attributed to buried and subsurface volcanic activity. The emission pattern is consistent with tidal-dissipation heating driven by the Laplace-resonance forcing of Io's orbital eccentricity. Credit: NASA/JPL-Caltech, public domain.
 ```
 
 ### Enceladus: a tiny moon with a big secret
