@@ -484,7 +484,7 @@ The water vapour partial pressure is everywhere set by the local saturation vapo
 
 $$
 \frac{\dd p_{\mathrm{sat}}}{\dd T} = \frac{L\, p_{\mathrm{sat}}}{R_v\, T^2}
-$$ (eq:clausius-clapeyron)
+$$ (eq:clausius-clapeyron-venus)
 
 where $L \approx 2.5 \times 10^6$ J/kg is the latent heat of vaporisation of water and $R_v = 461$ J/(kg K) is the specific gas constant for water vapour.
 Integrating gives the familiar exponential dependence:
