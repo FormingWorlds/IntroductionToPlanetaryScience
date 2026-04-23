@@ -211,7 +211,7 @@ JUICE will use radar, laser altimetry, magnetometry, and gravity science to map 
 ### Callisto
 
 Callisto, the outermost of the four Galilean moons, is in many ways a quieter sibling.
-Its radius of 2410 km makes it nearly as large as Mercury, but its bulk density of 1834 kg m$^{-3}$ is intermediate between those of Ganymede and Europa, and its dimensionless moment of inertia $C/MR^2 \approx 0.36$ implies that the interior is only partially differentiated, with rock and ice incompletely separated even after 4.5 Gyr of evolution {cite:p}`Anderson2001`.
+Its radius of 2410 km makes it nearly as large as Mercury, but its bulk density of 1834 kg m$^{-3}$ is intermediate between those of Ganymede and Europa, and its dimensionless moment of inertia $C/MR^2 \approx 0.355$ implies that the interior is only partially differentiated, with rock and ice incompletely separated even after 4.5 Gyr of evolution {cite:p}`Anderson2001`.
 This makes Callisto a useful counterpoint to the other Galileans, in which differentiation has run to completion.
 
 ```{figure} figures/callisto_global.avif
@@ -485,7 +485,7 @@ Stereographic projection mosaic of Huygens DISR descent images, taken on 14 Janu
 Lakes and seas of liquid methane and ethane near Titan's north pole, mapped by the Cassini RADAR instrument. The dark patches are radar-smooth liquid surfaces. Ligeia Mare and Kraken Mare are the largest, comparable in size to the Caspian Sea. Image credit: NASA/JPL-Caltech/ASI/Cornell.
 ```
 
-Titan's atmosphere is dominated by molecular nitrogen ($\mathrm{N_2}$) at a surface pressure of about 1.5 bar, which is roughly 50% denser than Earth's atmosphere.
+Titan's atmosphere is dominated by molecular nitrogen ($\mathrm{N_2}$) at a surface pressure of about 1.5 bar, roughly 50% higher than Earth's; because the surface is cold ($\sim$94 K), the actual surface mass density ($\sim$5 kg m$^{-3}$) is about four times that of Earth's near-surface air.
 The minor constituent methane ($\mathrm{CH_4}$) drives a surprisingly Earth-like hydrological cycle, except with methane in the role of water: methane evaporates from polar lakes and seas, condenses in the upper atmosphere, falls as methane rain, and carves dendritic river valleys that drain into the lakes ({ref}`lecture06`) {cite:p}`Stofan2007`.
 Cassini RADAR imaging mapped hundreds of lakes and seas in the polar regions; the largest, Kraken Mare and Ligeia Mare, are comparable in size to the Caspian Sea.
 The surface temperature of about 94 K places methane near its triple point, which is what makes the cycle possible.
@@ -733,8 +733,8 @@ Its retrograde orbit is decaying; tidal interaction with Neptune is causing it t
 ### Ice giant rings
 
 Both Uranus and Neptune have ring systems, but they are much fainter and darker than Saturn's.
-The Uranus rings were discovered in 1977 from stellar occultations: as a star passed behind Uranus it dimmed five times before disappearing behind the planet and five times after re-emerging, signalling the presence of five narrow rings.
-Voyager 2 imaging confirmed thirteen rings in total, all narrow ($\lesssim$10 km wide), with the most prominent being the epsilon ring at $\sim$51{,}000 km from Uranus's centre.
+The Uranus rings were discovered in 1977 from stellar occultations: as a star passed behind Uranus it dimmed five times before disappearing behind the planet and five times after re-emerging, signalling the presence of five narrow rings (four more were subsequently identified in the same year, bringing the pre-Voyager total to nine).
+Voyager 2 imaging in 1986 added two faint rings, for a total of eleven; Hubble Space Telescope imaging in 2003--2005 identified two more outer, dusty rings, bringing the known Uranian ring system to thirteen. All are narrow ($\lesssim$10 km wide for the main rings), with the most prominent being the epsilon ring at $\sim$51{,}000 km from Uranus's centre.
 Some of the narrow Uranian rings are confined by small "shepherd" moonlets that gravitationally constrain their inner and outer edges.
 
 Neptune's rings were even more puzzling.
