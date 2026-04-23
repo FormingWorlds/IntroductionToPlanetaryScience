@@ -345,10 +345,9 @@ On this view, Venus may once have had Earth-like mobile-lid tectonics (when its 
 :width: 85%
 :align: center
 
-Comparative thermal evolution of Venus over $\sim$4.5 Gyr from a numerical model that switches between tectonic regimes, showing (top) volcanic production rate in km$^3$/Myr, (middle) mantle temperature, and (bottom) surface temperature.
-The model traverses successive **stagnant-lid**, **mobile-lid**, **stagnant-lid**, and **episodic-lid** intervals (vertical bars).
-The episodic-lid phase produces large pulses of volcanism and resurfacing separated by quiet intervals and is consistent with the observed crater density on present-day Venus.
-After {cite:t}`Smrekar2018`.
+Surface temperature evolution of Venus over $\sim$4.5 Gyr from a numerical tectonic-regime model, from the bottom panel of {cite:t}`Smrekar2018`.
+The boxed labels mark successive **stagnant-lid**, **mobile-lid**, **stagnant-lid**, and **episodic-lid** intervals.
+The episodic-lid phase produces the resurfacing pulses inferred from present-day crater statistics; the mantle-temperature and volcanic-production-rate panels of the same model (not reproduced here) show the corresponding pulses in interior heat transport.
 ```
 
 There is a related possibility, the **episodic-lid** or catastrophic-overturn model, in which the lithosphere is normally stagnant but becomes unstable on long timescales (every $\sim$500 Myr) and undergoes a brief episode of global subduction and volcanism, after which it returns to stagnant-lid behaviour.
@@ -485,7 +484,7 @@ The water vapour partial pressure is everywhere set by the local saturation vapo
 
 $$
 \frac{\dd p_{\mathrm{sat}}}{\dd T} = \frac{L\, p_{\mathrm{sat}}}{R_v\, T^2}
-$$ (eq:clausius-clapeyron)
+$$ (eq:clausius-clapeyron-venus)
 
 where $L \approx 2.5 \times 10^6$ J/kg is the latent heat of vaporisation of water and $R_v = 461$ J/(kg K) is the specific gas constant for water vapour.
 Integrating gives the familiar exponential dependence:
@@ -571,13 +570,12 @@ The inner habitable zone edge has therefore been moving **outward** over Solar S
 
 ```{figure} figures/kopparapu2013_inner_HZ.avif
 :name: fig:kopparapu-HZ
-:width: 80%
+:width: 75%
 :align: center
 
-Inner habitable zone calculations for an Earth-like planet from {cite:t}`Kopparapu2013`, showing (left) outgoing longwave radiation $F_{\mathrm{IR}}$ and absorbed solar flux $F_{\mathrm{SOL}}$ as functions of surface temperature, (right) planetary albedo, and (bottom) the resulting effective stellar flux $S_{\mathrm{eff}}$ that yields radiative equilibrium.
-The **runaway greenhouse** limit is at $S_{\mathrm{eff}} = 1.06$ (corresponding to $0.97$ AU around a present-day Sun) and the **moist greenhouse** limit is at $S_{\mathrm{eff}} = 1.015$ ($0.99$ AU).
-These define the inner edge of the classical habitable zone.
-Reproduced from {cite:t}`Kopparapu2013`.
+Inner habitable zone calculation for an Earth-like planet around the present-day Sun, from the bottom-left panel of {cite:t}`Kopparapu2013` Fig. 3.
+The effective stellar flux $S_{\mathrm{eff}}$ for which radiative equilibrium is reached is plotted against surface temperature.
+The **runaway greenhouse** limit lies at $S_{\mathrm{eff}} = 1.06$ (corresponding to $0.97$ AU) and the **moist greenhouse** limit at $S_{\mathrm{eff}} = 1.015$ ($0.99$ AU); these define the inner edge of the classical habitable zone.
 ```
 
 ```{figure} figures/wordsworth2013_OLR_ASR_equilibria.avif
@@ -633,10 +631,9 @@ Reproduced from {cite:t}`Hamano2013`.
 :width: 60%
 :align: center
 
-Time evolution of potential temperature (black line) and surface temperature (grey line) for a crystallising magma ocean coupled to its outgassed steam atmosphere, from {cite:t}`Lebrun2013` Fig. 12, for an Earth-mass planet placed at the orbital distance of (a) Venus, (b) the Earth, and (c) Mars.
+Time evolution of potential temperature (black line) and surface temperature (grey line) for a crystallising magma ocean coupled to its outgassed steam atmosphere on a Venus-mass planet at the orbital distance of Venus, from panel (a) of {cite:t}`Lebrun2013` Fig. 12.
 The three vertical regions ("totally molten", "partially molten", "mush") track the planetary mantle as it crystallises; condensation of water vapour occurs at the boundary between the partially molten and mush stages.
-The dashed vertical line in each panel marks the time at which the magma ocean reaches $98\%$ solidification.
-At Venus' distance (panel a) the mush stage is reached after $\sim 10$ Myr; at Earth's distance (panel b) after $\sim 1$ Myr; at Mars' distance (panel c) after only $\sim 10$ kyr.
+The dashed vertical line marks the time at which the magma ocean reaches $98\%$ solidification, $\sim 10$ Myr at Venus' orbital distance (compared with $\sim 1$ Myr at Earth's and $\sim 10$ kyr at Mars' for the corresponding panels (b) and (c) of the same figure, not shown).
 The longer magma-ocean lifetime at smaller heliocentric distances gives the steam atmosphere ample time to photolyse and lose hydrogen to space, providing the foundation of the early-loss scenario for Venus.
 {cite:t}`Lebrun2013` further showed (their Fig. 11, not shown) that below a critical distance of about $0.66$ AU around a Sun-like star, an Earth-mass planet's magma ocean cannot freeze at all and the planet remains molten indefinitely; Venus at $0.72$ AU sits just outside this limit.
 ```
@@ -649,16 +646,12 @@ On the late-loss picture, Venus then loses its water gradually as the Sun bright
 
 ```{figure} figures/way2016_paleo_venus_temperature.avif
 :name: fig:way-paleo
-:width: 90%
+:width: 75%
 :align: center
 
-Three-dimensional climate model simulations of the surface air temperature on a hypothetical paleo-Venus from {cite:t}`Way2016`, plotted on a Mollweide global projection.
-**Panel (a)**: Venus at $2.9$ Ga with $75\%$ of present solar irradiance.
-**Panel (b)**: Venus at $0.715$ Ga with $92\%$ of present irradiance.
-**Panel (c)**: Same as (a) but with modern Earth topography in place of Venusian topography.
-**Panel (d)**: same as (a) but with a 16-Earth-day sidereal rotation period (about $15\times$ faster than Venus' present spin, though still $16\times$ slower than Earth's).
-Surface temperatures range from $-22^\circ$C to $40^\circ$C across the simulations, suggesting that an early Venus could have hosted long-lived liquid surface water under reasonable model assumptions.
-Reproduced from {cite:t}`Way2016`.
+Three-dimensional climate model simulation of the surface air temperature on a hypothetical paleo-Venus at $2.9$ Ga with $75\%$ of present solar irradiance, from panel (a) of {cite:t}`Way2016` Fig. 2, plotted on a Mollweide global projection.
+Surface temperatures range from below freezing in polar regions to about $40^\circ$C at the equator, suggesting that an early Venus could have hosted long-lived liquid surface water.
+{cite:t}`Way2016` confirmed similar temperate conditions for several variants (different epochs, modern Earth topography in place of Venusian topography, faster rotation), shown in panels (b)-(d) of the same figure (not reproduced here).
 ```
 
 The {cite:t}`Turbet2021` paper revisited the question with a different physical conclusion.
@@ -680,14 +673,12 @@ Reproduced from {cite:t}`Turbet2021`.
 
 ```{figure} figures/turbet2021_water_clouds_emission.avif
 :name: fig:turbet-clouds
-:width: 90%
+:width: 55%
 :align: center
 
-Three-dimensional simulations of water clouds and thermal emission on early Earth and early Venus from {cite:t}`Turbet2021`, for stellar flux values around the runaway threshold.
-The maps show vertically integrated water cloud column density (top row) and thermal emission to space (bottom row), with subsolar longitudes near $0^\circ$.
-On Venus, the night-side dominates the emission (the substellar region has thick water clouds that reflect sunlight), and the day-night asymmetry preserves the runaway state.
-On Earth, the cloud cover is more zonally distributed, and the planet can sit on the condensed branch of the hysteresis curve.
-Reproduced from {cite:t}`Turbet2021`.
+Three-dimensional simulation of an early Venus near the runaway threshold from {cite:t}`Turbet2021`, showing vertically integrated water-cloud column density (top, panel b) and thermal emission to space (bottom, panel d) at a stellar flux $S = 340.5$ W/m$^2$, with subsolar longitudes near $0^\circ$.
+The night-side dominates the emission: the substellar dayside has thick water clouds that reflect sunlight back to space, while the cooler night-side radiates the thermal flux.
+This day-night asymmetry is the mechanism by which the runaway state is preserved; on Earth, the corresponding panels of the same figure (not reproduced here) show a more zonally distributed cloud cover that allows the planet to sit on the condensed branch of the hysteresis curve.
 ```
 
 These three papers illustrate the current state of the field: there are strong theoretical arguments on both sides, the evidence from Venus itself is ambiguous, and definitive resolution will require new observations (the most decisive being noble-gas measurements from a future descent probe, which would constrain the time-integrated escape history, and high-resolution near-IR emissivity mapping of tessera regions, which would test for ancient felsic crust formed in the presence of liquid water).
@@ -707,13 +698,14 @@ Reproduced from {cite:t}`Gillmann2022`.
 
 ```{figure} figures/honing2021_reference_evolution.avif
 :name: fig:honing-reference
-:width: 95%
+:width: 90%
 :align: center
 
-Reference scenario for the coupled interior-atmosphere evolution of a stagnant-lid Venus from {cite:t}`Honing2021`.
-Panels show, as functions of time after solidification: (a) carbon reservoirs in the atmosphere, crust, and combined system; (b) surface temperature, with and without weathering; (c) carbon fluxes (mantle degassing, weathering, decarbonation); (d) atmospheric water vapour pressure; (e) lid, crustal, and decarbonation depths; (f) mantle, lid, and crust temperatures.
+Reference scenario for the coupled interior-atmosphere evolution of a stagnant-lid Venus from panels (a) and (b) of {cite:t}`Honing2021` Fig. 3.
+**Left panel:** carbon reservoirs (atmosphere, crust, atmosphere+crust, atmosphere with weathering switched off) as a function of time after solidification.
+**Right panel:** surface temperature with (blue) and without (green) silicate weathering.
 Surface weathering keeps the planet temperate for $\sim 0.9$ Gyr; once water is lost, decarbonation drives the runaway accumulation of $\mathrm{CO_2}$ to a Venus-like end state.
-Reproduced from {cite:t}`Honing2021`.
+The remaining panels (c)-(f) of the original figure (not reproduced here) show the corresponding evolution of carbon fluxes, atmospheric water vapour, layer depths, and interior temperatures.
 ```
 
 ```{figure} figures/constantinou2024_venus_pathways.avif
@@ -832,6 +824,7 @@ Both planets begin in **state A** with a reducing steam atmosphere over a magma 
 Earth evolves directly to **state C**, a $1$-bar $\mathrm{N_2}$ atmosphere over a moderately oxidising mantle ($f_{\mathrm{O_2}} \approx$ FMQ) with surface liquid water and a substantial pool of nitrogen sequestered in the interior.
 Venus, on the other hand, passes through **state B**, in which intense hydrogen escape oxidises the upper mantle, before reaching **state D**, a hot $\mathrm{CO_2}$- and $\mathrm{N_2}$-rich atmosphere over a highly oxidised interior ($f_{\mathrm{O_2}} \approx$ MH).
 The diagram emphasises that the present atmospheric composition contrast between Earth and Venus is a downstream consequence of the water history operating through the planetary redox budget.
+The four-panel layout is retained because the redox sequence A$\to$C (Earth) versus A$\to$B$\to$D (Venus) is the central pedagogical content of the figure.
 Reproduced from {cite:t}`WordsworthN2016`.
 ```
 
@@ -924,28 +917,12 @@ The phosphine controversy of $2020$ ({ref}`lecture06`) brought this question bri
 
 ```{figure} figures/dauphas2017_earth_accreting_material.avif
 :name: fig:dauphas-accretion
-:width: 70%
+:width: 45%
 :align: center
 
-Probability density functions for the proportion of carbonaceous-chondrite-like material in the bodies that accreted onto early Earth, derived from isotopic constraints by {cite:t}`Dauphas2017`.
-The bulk of the proto-Earth (the first $\sim$60% of the mass, marked O, Cr, Ti, Ni) was built from non-carbonaceous (NC, inner-Solar-System) material, with carbonaceous-chondrite material contributing only the last few percent of accretion (the "late veneer").
-This is the isotopic version of the dichotomy seen in noble gases ({cite:t}`Zahnle2007`) and supports a model in which Earth's water was delivered late, by a small fraction of carbonaceous material.
-Reproduced from {cite:t}`Dauphas2017`.
-```
-
-
-
-```{figure} figures/arney2017_archean_haze.avif
-:name: fig:arney-archean
-:width: 90%
-:align: center
-
-Vertical profiles for an Archean Earth atmosphere with $\mathrm{CH_4/CO_2} = 0.2$ from the iterated photochemistry-haze model of {cite:t}`Arney2017`.
-The six panels (top row left-to-right, then middle, then bottom) show temperature, water mixing ratio, haze particle number density, haze particle radii, ethane mixing ratio, and methane mixing ratio, each plotted against altitude.
-The five overplotted curves (1st through last iteration of the model coupling) show how the chemistry-haze coupling converges.
-The hazy organic atmosphere of the Archean Earth provided UV shielding for the early biosphere and may have contributed a non-trivial greenhouse forcing in the faint-Sun era.
-The "Pale Orange Dot" framing is a useful comparison for thinking about how a hazy biosphere on an Earth-like planet might appear from afar.
-Reproduced from {cite:t}`Arney2017`.
+Probability density function for the proportion of carbonaceous-chondrite-like material in the bodies that accreted onto early Earth, derived from chromium isotopic constraints by {cite:t}`Dauphas2017` (Cr panel of their original five-isotope figure).
+The bulk of the proto-Earth (the first $\sim$60% of the mass) was built from non-carbonaceous (NC, inner-Solar-System) material, with carbonaceous-chondrite material contributing only the last few percent of accretion (the "late veneer", indicated by the red triangle).
+This is the isotopic version of the dichotomy seen in noble gases ({cite:t}`Zahnle2007`) and supports a model in which Earth's water was delivered late, by a small fraction of carbonaceous material; the O, Ti, Ni, Mo, and Ru tracers from the same study (not reproduced here) tell a consistent story.
 ```
 
 
