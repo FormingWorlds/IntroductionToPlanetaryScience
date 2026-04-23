@@ -283,9 +283,10 @@ Temperature–pressure profile of Jupiter's atmosphere, showing the three main c
 :width: 700px
 :align: center
 
-Cylindrical projection map of Jupiter assembled from Hubble Space Telescope WFC3 imagery (PIA19643), showing the canonical pattern of light *zones* (regions of rising air with high $\mathrm{NH_3}$-ice clouds) and dark *belts* (sinking air revealing deeper $\mathrm{NH_4SH}$ levels).
+Equatorial-band strip from a cylindrical projection of Jupiter assembled from Hubble Space Telescope WFC3 imagery (PIA19643), cropped to the $\sim \pm 20^\circ$ latitude range to emphasise the Great Red Spot and the adjacent equatorial belts.
+Visible are the pattern of light *zones* (regions of rising air with high $\mathrm{NH_3}$-ice clouds) and dark *belts* (sinking air revealing deeper $\mathrm{NH_4SH}$ levels).
 The Great Red Spot is visible at $\sim$22°S, embedded in the South Equatorial Belt.
-The narrow latitudinal contrasts trace the alternating zonal-jet system that the Hubble OPAL programme has now monitored for over a decade {cite:p}`Wong2020`.
+The narrow latitudinal contrasts trace the alternating zonal-jet system that the Hubble OPAL programme has now monitored for over a decade {cite:p}`Wong2020`; the full 15-jet structure per hemisphere extends to $\sim \pm 60^\circ$ and is summarised quantitatively in {numref}`fig:jupiter-zonal-winds`.
 Credit: NASA/ESA/STScI/A. Simon (Goddard), public domain.
 ```
 
@@ -339,16 +340,16 @@ $$ (eq:coriolis-parameter)
 
 For Earth, $\Omega = 7.27 \times 10^{-5}$ rad s$^{-1}$. At mid-latitudes ($\phi = 45°$), $f \approx 1.03 \times 10^{-4}$ s$^{-1}$. At the equator ($\phi = 0°$), $f = 0$ — the Coriolis effect vanishes.
 
-```{figure} figures/coriolis_effect.svg
+```{figure} figures/coriolis_effect.avif
 :name: fig:coriolis
-:width: 480px
+:width: 640px
 :align: center
 
-Geometric origin of the Coriolis effect.
-Air launched poleward from a point on the equator preserves its eastward velocity in the inertial frame, but the surface beneath it rotates more slowly with increasing latitude.
-In the rotating frame of the planet the air therefore appears to deflect to the right of its motion in the Northern Hemisphere (and to the left in the Southern Hemisphere), with apparent acceleration $f = 2 \Omega \sin \phi$.
-The effect vanishes at the equator and is strongest at the poles.
-Credit: Wikimedia Commons, public domain.
+Geometric origin of the Coriolis effect, viewed from above the rotating planet's north pole.
+Left panel (inertial frame): a parcel launched poleward from a low latitude travels in a straight line, while the surface beneath rotates east with angular velocity $\Omega$.
+Right panel (rotating frame of the planet): the same parcel appears to curve to the right of its motion in the Northern Hemisphere, with apparent acceleration $f = 2 \Omega \sin \phi$.
+The deflection vanishes at the equator and is strongest at the poles; in the Southern Hemisphere the deflection is mirrored to the left.
+Plot generated for this lecture from the kinematic identity $f = 2\Omega \sin\phi$.
 ```
 
 ### The Rossby number
@@ -407,7 +408,7 @@ where $x$ and $y$ are the eastward and northward directions, respectively.
 Geostrophic balance between the horizontal pressure-gradient force ($-\nabla P / \rho$, blue arrow) and the Coriolis force ($-f \hat{k} \times \mathbf{v}_g$, red arrow), giving a wind $\mathbf{v}_g$ that blows parallel to the isobars rather than down the pressure gradient.
 In the Northern Hemisphere the balanced wind keeps low pressure to its left.
 This is the dominant balance for large-scale flow on Earth and the giant planets ({numref}`fig:jupiter-zonal-winds`) where the Rossby number is small.
-Credit: Wikimedia Commons, public domain.
+Note: the pressure-gradient symbol in the imported schematic is typeset as an italic $p$; read it as $\rho$ (air density) to stay consistent with Eq. {eq}`eq:geostrophic-balance` in the main text. Credit: Wikimedia Commons, public domain.
 ```
 
 ### Jet streams
@@ -425,10 +426,9 @@ Where the temperature gradient between the warm tropics and the cold poles is st
 :width: 600px
 :align: center
 
-A subtropical jet stream over the Red Sea and Egypt photographed obliquely from the Space Shuttle (mission STS-39, 1991).
-The bright lenticular cloud band traces the upper-tropospheric jet core at $\sim$200-250 hPa, where horizontal temperature gradients drive thermal-wind shear of order 30-70 m s$^{-1}$.
-Cirrus filaments downwind of the jet axis mark the layer in which weather systems are steered.
-Credit: NASA/JSC, public domain.
+An Earth-from-orbit astronaut photograph showing long cirrus filaments streaked across the limb above a dark sea and coastline.
+Such aligned cirrus bands trace the upper-tropospheric jet core at $\sim$200-250 hPa, where horizontal temperature gradients drive thermal-wind shear of order 30-70 m s$^{-1}$; weather systems are steered along the layer in which these filaments form.
+Credit: NASA astronaut photograph, Johnson Space Center, public domain.
 ```
 
 ### Giant planet banding
@@ -441,7 +441,7 @@ On Jupiter and Saturn, the same physics operates on a grander scale. The alterna
 :align: center
 
 Jupiter's cloud-top zonal wind profile $u(\phi)$, schematic representation of the Cassini-era composite of {cite:t}`GarciaMelendo2001` and the modern compilations in {cite:t}`Showman2020`.
-Roughly 15 alternating prograde (eastward, blue) and retrograde (westward, red) jets per hemisphere are stacked from the broad equatorial superrotating jet at the centre out to $\sim$60° latitude.
+A ladder of narrow prograde (eastward, blue) and retrograde (westward, red) jets is stacked from the broad equatorial superrotating jet at the centre out to $\sim$60° latitude, with $\sim$15 alternations per hemisphere in the full observed profile (the schematic here resolves roughly half of them to keep the figure legible).
 The jets coincide with the boundaries between bright zones and dark belts visible in {numref}`fig:jupiter-global-map`, and Juno gravity measurements indicate they extend $\sim$3000 km into the molecular envelope.
 ```
 
@@ -572,10 +572,10 @@ The early Sun was **$\sim$30% less luminous** than today. Even 4 Gyr ago (when t
 :align: center
 
 Solar luminosity evolution as a function of time, normalised to the present-day $L_\odot$.
-The standard solar model used by {cite:t}`Catling2017` (Eq. {eq}`eq:solar-luminosity-evolution`, blue curve) gives $L \approx 0.71\,L_\odot$ at $t = 0$ (red dotted line), brightening monotonically to the present value at $t = 4.57$ Gyr (orange dashed line).
+The parametric standard-solar-model form {cite:p}`Gough1981` reproduced by {cite:t}`Catling2017` (Eq. {eq}`eq:solar-luminosity-evolution`, blue curve) gives $L \approx 0.71\,L_\odot$ at $t = 0$ (red dotted line), brightening monotonically to the present value at $t = 4.57$ Gyr (orange dashed line).
 The black markers show key geological constraints: detrital zircons at 4.4 Ga, pillow basalts and sedimentary rocks at 3.8 Ga, stromatolites at 3.5 Ga, and the Cambrian radiation at 0.54 Ga.
 All four imply liquid water at Earth's surface, despite the radiative-equilibrium temperature predicted from the contemporaneous solar luminosity being well below the freezing point.
-This is the *faint young Sun paradox* of {cite:t}`Feulner2012`.
+This is the *faint young Sun paradox* reviewed by {cite:t}`Feulner2012`.
 ```
 
 ### The paradox

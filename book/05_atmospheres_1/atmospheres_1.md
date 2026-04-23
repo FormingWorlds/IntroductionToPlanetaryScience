@@ -231,6 +231,14 @@ Above the stratopause, the **mesosphere** (50–85 km) cools with altitude again
 
 Above this, the **thermosphere** (85–600 km) is heated by the absorption of extreme ultraviolet (EUV) radiation and energetic particles. Temperatures rise steeply to $>$1000 K, but the gas is so rarefied that this "temperature" (reflecting the kinetic energy of individual molecules) would not feel hot. The thermosphere merges into the **exosphere** — the outermost region where the mean free path exceeds the scale height, and molecules on ballistic trajectories can escape to space.
 
+```{figure} figures/earth_tz_layers.avif
+:name: fig:earth-tz-layers
+:width: 520px
+:align: center
+
+Earth's vertical temperature profile from the US Standard Atmosphere 1976, with the four named layers (troposphere, stratosphere, mesosphere, thermosphere) shaded. Pause levels (tropopause $\sim$11 km, stratopause $\sim$50 km, mesopause $\sim$85 km) are marked with dashed grey lines. The sign of $\dv{T}{z}$ flips at each pause, reflecting the transition between dominant heating sources (surface re-radiation in the troposphere, ozone UV absorption in the stratosphere, EUV absorption in the thermosphere). Data: US Standard Atmosphere 1976 {cite:p}`USStandardAtmosphere1976`; plot generated for this course.
+```
+
 ### Comparative vertical structures
 
 The vertical structure varies dramatically across the solar system {cite:p}`Catling2017`:
@@ -246,6 +254,22 @@ The vertical structure varies dramatically across the solar system {cite:p}`Catl
 :align: center
 
 Detached haze layers in Titan's upper atmosphere imaged at the limb by the Cassini ISS narrow-angle camera (PIA06160). Multiple distinct layers from $\sim$200 km up to $\sim$500 km altitude are produced by photochemistry of $\mathrm{CH_4}$ in the stratosphere, generating the organic aerosols that give Titan its orange colour and heat the stratosphere by absorbing UV. Credit: NASA/JPL/Space Science Institute, public domain.
+```
+
+```{figure} figures/titan_tz_hasi.avif
+:name: fig:titan-tz-hasi
+:width: 500px
+:align: center
+
+Titan's vertical temperature profile from the *Huygens* Atmospheric Structure Instrument (HASI) descent through the atmosphere on 14 January 2005 {cite:p}`Fulchignoni2005`. The tropopause sits near 20 km at 74 K, well below the surface temperature of 94 K. A strong stratospheric inversion driven by haze-layer absorption of solar UV (cf. {numref}`fig:titan-haze`) pushes temperatures up to $\sim$175 K near 200 km, before falling again through the mesosphere and rising in the thermosphere. Pedagogical fit to published HASI profile; not a direct reproduction.
+```
+
+```{figure} figures/venus_tz_vira.avif
+:name: fig:venus-tz-vira
+:width: 500px
+:align: center
+
+Venus T(z) profile combining Pioneer Venus / VIRA {cite:p}`Seiff1985` lower-atmosphere data with VeRa (Venus Express) radio-occultation results {cite:p}`Tellmann2009`. The profile falls monotonically from the 735 K, 92 bar surface through the cloud deck (48 to 70 km, shaded) to the mesopause near 100 km, with no ozone-driven stratospheric inversion. The near-adiabatic deep troposphere reflects efficient convection in a $\mathrm{CO_2}$-dominated, optically thick atmosphere. Pedagogical fit; not a direct reproduction.
 ```
 
 A striking unifying observation is that, despite differences of orders of magnitude in surface gravity, composition, and stellar irradiation, the tropopause occurs at a pressure near $0.1$ bar in *every* thick atmosphere of the solar system. {cite:t}`Robinson2014` showed that this is a consequence of pressure-dependent infrared transparency: at lower pressures the atmosphere becomes optically thin and radiative cooling dominates over convection, freezing in a near-universal temperature minimum.
@@ -432,11 +456,31 @@ Energy budget of the one-layer greenhouse model. Stellar shortwave flux $(1-A)F_
 
 An atmosphere is not permanent. Over geological time, gas molecules can be lost to space through several physical mechanisms. The balance between outgassing supply and escape loss determines a planet's atmospheric mass and composition over its history {cite:p}`Lammer2008`.
 
+The dominant escape regime for a given planet-species pair depends on two quantities: the **Jeans escape parameter** $\lambda_J$ (the ratio of gravitational binding energy to thermal energy at the exobase) and the incident **EUV flux** from the host star (which heats the upper atmosphere and drives bulk outflow). Low $\lambda_J$ or high EUV flux pushes the system into hydrodynamic outflow; high $\lambda_J$ with low EUV flux corresponds to the retention regime in which escape is negligible on Gyr timescales.
+
+```{figure} figures/escape_regime_diagram.avif
+:name: fig:escape-regime
+:width: 680px
+:align: center
+
+Schematic regime diagram for atmospheric escape as a function of the Jeans parameter $\lambda_J = v_\mathrm{esc}^2/v_\mathrm{th}^2$ (x-axis) and stellar EUV flux in units of the present-day Earth value (y-axis). Three regimes are shaded: **hydrodynamic outflow** (left column, low $\lambda_J$, and top row, high EUV); **Jeans thermal escape** (centre, moderate $\lambda_J$ at present-day flux); **retention** (right column, negligible escape over Gyr). Marker positions show representative species-planet pairs: atomic H on Earth and Mars sits in the Jeans regime; $\mathrm{N_2}$ on Titan and $\mathrm{CO_2}$ on Mars are retained; $\mathrm{H_2}$ on an early sub-Neptune around a young active star is driven into hydrodynamic outflow. Schematic after {cite:t}`Hunten1987` and {cite:t}`Tian2009`; boundaries are approximate.
+```
+
 ### Thermal (Jeans) escape
 
 The most fundamental escape mechanism is **Jeans escape**, which arises from the thermal velocity distribution of gas molecules. In a gas at temperature $T$, molecules have a range of speeds described by the Maxwell–Boltzmann distribution. The mean thermal speed is $v_{\mathrm{th}} \sim \sqrt{\kB T / m}$, where $m$ is the molecular mass. Most molecules are far too slow to escape, but the tail of the distribution extends to arbitrarily high speeds — and some molecules in this high-velocity tail exceed the escape speed.
 
-The key parameter governing Jeans escape is the **Jeans escape parameter** $\lambda_J$, defined at the exobase (the altitude where the mean free path equals the scale height):
+The **exobase** is the altitude at which the mean free path $\ell = 1/(n \sigma \sqrt{2})$ equals the pressure scale height $H$. Below this level, collisions dominate and the gas behaves as a fluid; above it, collisions are rare enough that molecules travel on ballistic trajectories, and those with $v > v_\mathrm{esc}$ escape to space without further interaction. For Earth, the exobase sits near 500 km altitude; for Mars, closer to 200 km.
+
+```{figure} figures/exobase_definition.avif
+:name: fig:exobase
+:width: 650px
+:align: center
+
+The exobase as the altitude where the mean free path $\ell$ (blue) equals the pressure scale height $H$ (red dashed) in Earth's upper atmosphere. Below the crossing (blue shading) the atmosphere is collisional (thermosphere); above it (orange shading) the atmosphere is effectively collisionless (exosphere) and ballistic trajectories carry individual molecules to escape. The crossing altitude is approximately 450 to 500 km for present-day Earth, depending on solar activity and exobase temperature. Plot generated for this course using the US Standard Atmosphere 1976 + MSIS-86 number density and an effective cross-section $\sigma = 10^{-18}\ \mathrm{m}^2$.
+```
+
+The key parameter governing Jeans escape is the **Jeans escape parameter** $\lambda_J$, defined at the exobase:
 
 $$
 \lambda_J = \frac{G M_p \, m}{\kB T_{\mathrm{exo}} \, r_{\mathrm{exo}}} = \frac{v_{\mathrm{esc}}^2}{v_{\mathrm{th}}^2}
@@ -485,7 +529,17 @@ Hydrodynamic escape is most important during a planet's first few hundred millio
 :width: 750px
 :align: center
 
-Population synthesis of close-in exoplanets that have undergone EUV-driven hydrodynamic atmospheric escape. *Left*: planet radius vs orbital separation after 10 Gyr of evolution, for cores with masses 1.5–6.5 $\Mearth$ (different colours indicate different core compositions). The "evaporation desert" at small separations and large radii is empty because all H/He envelopes have been stripped, and the "evaporation valley" appears as a thin gap near $1.5\!-\!2\,\Rearth$. *Right*: planet radius vs incident bolometric flux ($F_\oplus$, in units of Earth's), colour-coded by retained atmospheric mass fraction (% H/He). Greyscale shading shows the predicted population density. Figure from {cite:t}`Owen2019`.
+Population synthesis of close-in exoplanets that have undergone EUV-driven hydrodynamic atmospheric escape. *Left*: planet radius vs orbital separation after 10 Gyr of evolution, for cores with masses 1.5–6.5 $\Mearth$ (different colours indicate different core compositions; the published axis label reads "Seperation" [sic] in the original figure). The "evaporation desert" at small separations and large radii is empty because all H/He envelopes have been stripped, and the "evaporation valley" appears as a thin gap near $1.5\!-\!2\,\Rearth$. *Right*: planet radius vs incident bolometric flux ($F_\oplus$, in units of Earth's), colour-coded by retained atmospheric mass fraction (% H/He). Greyscale shading shows the predicted population density. Figure from {cite:t}`Owen2019`.
+```
+
+The observational counterpart was established by {cite:t}`Fulton2017`, who measured the planet radius distribution for short-period exoplanets in the California-Kepler Survey (CKS) and found a clear bimodality:
+
+```{figure} figures/fulton2017_radius_valley.avif
+:name: fig:fulton-radius-valley
+:width: 700px
+:align: center
+
+Observed radius distribution of short-period ($P < 100$ days) small planets from the California-Kepler Survey {cite:p}`Fulton2017`. Two distinct populations appear: a super-Earth peak near $1.3\ \Rearth$ (likely stripped rocky cores) and a sub-Neptune peak near $2.4\ \Rearth$ (cores with retained H/He envelopes of a few percent by mass). The gap between them near $1.8\ \Rearth$ (shaded) is the observational signature of the radius valley predicted by photoevaporation models (cf. {numref}`fig:owen-radius-valley`). Stylised histogram based on Fig. 7 of {cite:t}`Fulton2017`; bin heights are approximate.
 ```
 
 ### Non-thermal escape mechanisms
@@ -565,6 +619,16 @@ Escape velocity versus surface temperature for solar system bodies. Diagonal lin
 ## Recent advances
 
 The James Webb Space Telescope (JWST) has opened a new era in exoplanet atmospheric characterisation. Thermal emission measurements of TRAPPIST-1 b, an Earth-sized planet orbiting an M dwarf, indicate a dayside temperature consistent with bare rock and no significant atmosphere {cite:p}`Greene2023`. Similar results for TRAPPIST-1 c suggest that the innermost rocky planets around active M dwarfs may be stripped of their atmospheres by intense stellar irradiation, consistent with theoretical predictions of enhanced atmospheric escape around low-mass stars {cite:p}`Wordsworth2022`.
+
+A central reason M-dwarf planets are so vulnerable to escape is that late-type stars remain in the high-activity **saturated regime** for much longer than Sun-like stars, exposing their close-in planets to intense XUV irradiation for $\gtrsim 1$ Gyr after formation:
+
+```{figure} figures/xuv_evolution.avif
+:name: fig:xuv-evolution
+:width: 700px
+:align: center
+
+Evolution of the XUV-to-bolometric luminosity ratio $L_\mathrm{XUV}/L_\mathrm{bol}$ for G-dwarf (yellow), early-M (red) and late-M (purple) stars. All spectral types pass through a saturated plateau at $L_\mathrm{XUV}/L_\mathrm{bol} \sim 10^{-3}$, then decay as a power law. The saturation phase lasts $\sim 100$ Myr for G-dwarfs but $\gtrsim 1$ Gyr for late-M stars, exposing close-in rocky planets (such as the TRAPPIST-1 planets) to prolonged atmospheric erosion. Schematic tracks based on the empirical scalings of {cite:t}`Ribas2005` with the M-dwarf extension discussed in {cite:t}`Tian2009` and {cite:t}`Wordsworth2022`; not a reproduction of any single dataset.
+```
 
 ```{figure} figures/trappist1b_jwst_greene2023.avif
 :name: fig:greene-trappist

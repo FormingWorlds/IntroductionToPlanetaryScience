@@ -224,3 +224,6 @@ __marimo__/
 
 # Course content symlink (Google Drive)
 content/course2025
+
+# Verification plots, generated data, plot scripts (per CLAUDE.md)
+output_files/

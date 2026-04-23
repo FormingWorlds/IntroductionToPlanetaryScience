@@ -30,7 +30,7 @@ The relative importance of these processes varies dramatically across the solar 
 :width: 500px
 :align: center
 
-Viking Orbiter colour mosaic of the Tharsis hemisphere of Mars (PIA00407), used here as an anchor for the four-way taxonomy of surface processes. Endogenic processes are evident in the Tharsis volcanic plateau and its three aligned shield volcanoes (left of centre) and in Valles Marineris, the extensional canyon system stretching across the lower right. Exogenic processes are recorded in the heavily cratered southern highlands (lower left) and in the bright water-ice north polar cap (top). Mars preserves all four major process classes (volcanism, tectonics, impact cratering, erosion) on a single body and is therefore a useful template for the rest of this lecture. Credit: NASA/JPL/USGS, public domain.
+Viking Orbiter global colour mosaic of Mars (PIA00407), an orthographic projection of the Valles Marineris hemisphere centred near 20$^\circ$N, 60$^\circ$W. The image is used here as an anchor for the four-way taxonomy of surface processes. Endogenic processes are evident in Valles Marineris, the dark extensional canyon system running west-to-east across the lower middle of the disk, and in the Tharsis shield volcanoes near the western limb (visible as dark patches at left, foreshortened by the limb). Exogenic processes are recorded in the heavily cratered southern highlands and in the bright water-ice north polar cap (top). Mars preserves all four major process classes (volcanism, tectonics, impact cratering, erosion) on a single body and is therefore a useful template for the rest of this lecture. Credit: NASA/JPL/USGS, public domain.
 ```
 
 
@@ -131,7 +131,7 @@ The more complete **pi-scaling framework** of {cite:p}`Holsapple1993` parameteri
 :width: 550px
 :align: center
 
-Crater pi-scaling, after {cite:t}`Holsapple1993`. The cratering efficiency $\pi_D = D\,(\rho/m)^{1/3}$ is plotted against the gravity-scaled impactor size $\pi_2 = g\,a/v^2$. At small $\pi_2$ (small craters, laboratory impacts), the target's tensile strength $Y$ sets the crater size and $\pi_D$ is independent of $\pi_2$ (red dashed line, **strength regime**). At large $\pi_2$ (planetary-scale craters), gravity confines the ejecta and $\pi_D \propto \pi_2^{-\mu/[3(2+\mu)]}$ (blue dashed line, **gravity regime**). The blackboard derivation (Eq. {eq}`eq:crater-scaling`) recovers the gravity-regime branch in the limit $\mu \to 1$. Curves shown for a competent rocky target ($\mu = 0.55$); the qualitative shape is universal.
+Schematic of crater pi-scaling, after {cite:t}`Holsapple1993`. The cratering efficiency $\pi_D = D\,(\rho/m)^{1/3}$ is plotted against the gravity-scaled impactor size $\pi_2 = g\,a/v^2$. At small $\pi_2$ (small craters, laboratory impacts), the target's tensile strength $Y$ sets the crater size and $\pi_D$ is independent of $\pi_2$ (red dashed line, **strength regime**). At large $\pi_2$ (planetary-scale craters), gravity confines the ejecta and $\pi_D \propto \pi_2^{-\mu/(2+\mu)}$ (blue dashed line, **gravity regime**). The blackboard derivation (Eq. {eq}`eq:crater-scaling`) recovers the gravity-regime branch in the limit $\mu \to 1$. Curves shown for a competent rocky target ($\mu = 0.55$); the qualitative shape is universal.
 ```
 
 
@@ -218,7 +218,7 @@ The key variable is **magma viscosity**, which is controlled primarily by the $\
 
 ### Volcanic landforms across the solar system
 
-**Olympus Mons (Mars)** is the largest volcano in the solar system: a shield volcano with a base diameter of $\sim$600 km and a height of $\sim$21.9 km above the surrounding terrain (2.5 times the height of Mount Everest above sea level). It grows so large because Mars lacks plate tectonics — the volcanic hotspot remains stationary beneath the lithosphere for billions of years, piling up lava in one location. On Earth, plate motion carries the crust over the hotspot, creating chains of smaller volcanoes (e.g., the Hawaiian Islands) rather than a single massive edifice {cite:p}`dePaterLissauer2010`.
+**Olympus Mons (Mars)** is the largest volcano in the solar system: a shield volcano with a base diameter of $\sim$600 km and a summit elevation of $\sim$21.2 km above the Mars datum (2.4 times the height of Mount Everest above sea level). It grows so large because Mars lacks plate tectonics: the volcanic hotspot remains stationary beneath the lithosphere for billions of years, piling up lava in one location. On Earth, plate motion carries the crust over the hotspot, creating chains of smaller volcanoes (e.g., the Hawaiian Islands) rather than a single massive edifice {cite:p}`dePaterLissauer2010`.
 
 **Lunar maria** are vast flood basalt plains that fill ancient impact basins on the Moon's nearside. Radiometric dating of Apollo samples shows they erupted between 3.9 and 3.1 Ga, during a period of residual internal heating. The maria cover $\sim$16% of the lunar surface but are visible from Earth as the dark patches that form the "face" of the Moon.
 
@@ -247,7 +247,7 @@ Full-disk view of Jupiter's moon Io from NASA's Galileo spacecraft (PIA00583), r
 :width: 450px
 :align: center
 
-Olympus Mons on Mars, the largest volcano in the solar system, seen from above in this Viking Orbiter colour mosaic. The shield volcano has a base diameter of $\sim$600 km and rises $\sim$21.9 km above the surrounding plains. The caldera complex at the summit (centre) contains multiple nested collapse craters formed by episodic magma withdrawal. The steep basal escarpment (up to 6 km high) is visible as the sharp boundary encircling the edifice. Olympus Mons grew to this immense size because Mars lacks plate tectonics: the volcanic source remained fixed beneath the lithosphere for billions of years. Credit: NASA/JPL/USGS, public domain.
+Olympus Mons on Mars, the largest volcano in the solar system, seen from above in this Viking Orbiter colour mosaic. The shield volcano has a base diameter of $\sim$600 km and a summit elevation of $\sim$21.2 km above the Mars datum. The caldera complex at the summit (centre) contains multiple nested collapse craters formed by episodic magma withdrawal. The steep basal escarpment (up to 6 km high) is visible as the sharp boundary encircling the edifice. Olympus Mons grew to this immense size because Mars lacks plate tectonics: the volcanic source remained fixed beneath the lithosphere for billions of years. Credit: NASA/JPL/USGS, public domain.
 ```
 
 ```{figure} figures/olympus_mons_size_comparison.svg
@@ -255,7 +255,7 @@ Olympus Mons on Mars, the largest volcano in the solar system, seen from above i
 :width: 600px
 :align: center
 
-Cross-sectional comparison of Olympus Mons (Mars), Mauna Kea (Hawaii, measured from its base on the ocean floor), and Mount Everest (Earth). At ~21.2 km elevation and ~600 km base diameter, Olympus Mons stands roughly five times taller than Mauna Kea and dwarfs Earth's tallest subaerial mountain. The contrast is set by the absence of plate tectonics on Mars: a stationary mantle plume has continuously fed the same volcanic edifice for billions of years, whereas the Pacific plate carries Hawaiian volcanoes off the underlying hotspot in $\sim$10$^6$ yr, capping their possible size. Vertical scale exaggerated for clarity. Credit: Wikimedia Commons, public domain.
+Cross-sectional comparison of Olympus Mons (Mars), Mauna Kea (Hawaii, measured from its base on the ocean floor at $\sim$10.2 km total relief), and Mount Everest (Earth, $\sim$8.85 km above sea level). At $\sim$21.2 km summit elevation above the Mars datum and $\sim$600 km base diameter, Olympus Mons stands roughly twice as tall as Mauna Kea (measured edifice-to-summit) and dwarfs Earth's tallest subaerial mountain. The contrast is set by the absence of plate tectonics on Mars: a stationary mantle plume has continuously fed the same volcanic edifice for billions of years, whereas the Pacific plate carries Hawaiian volcanoes off the underlying hotspot in $\sim$10$^6$ yr, capping their possible size. Vertical scale exaggerated for clarity. Credit: Wikimedia Commons, public domain.
 ```
 
 ```{figure} figures/venus_magellan.avif
@@ -316,7 +316,7 @@ A lobate scarp near Pourquoi-Pas crater on Mercury, imaged by the MESSENGER spac
 :width: 650px
 :align: center
 
-Valles Marineris, the solar system's largest canyon system, stretching $\sim$4000 km across the Martian surface (roughly the distance from Lisbon to Moscow). The canyon is up to 7 km deep and 200 km wide, dwarfing Earth's Grand Canyon. It formed primarily through extensional rifting associated with the Tharsis volcanic bulge to the west, with subsequent widening by mass wasting and possibly fluvial erosion. This Viking Orbiter hemispheric mosaic (PIA00422) places the canyon within its broader regional context, including the Tharsis Montes (left) and the chaotic terrain at the canyon's eastern outflow (right). Credit: NASA/JPL/USGS, public domain.
+Valles Marineris, the solar system's largest canyon system, stretching $\sim$4000 km across the Martian surface (roughly the distance from Lisbon to Moscow). The canyon is up to 7 km deep and 200 km wide, dwarfing Earth's Grand Canyon. It formed primarily through extensional rifting associated with the Tharsis volcanic bulge to the west, with subsequent widening by mass wasting and possibly fluvial erosion. This Viking Orbiter mosaic is a horizontal strip showing the canyon along its full $\sim$2000 km central extent, from the fractured terrain of Noctis Labyrinthus on the west (left) through the main Melas, Candor, and Coprates chasmata, to the chaotic terrain at the canyon's eastern outflow into Chryse Planitia (right); the Tharsis Montes lie off the left edge of the frame. Credit: NASA/JPL/USGS, public domain.
 ```
 
 
@@ -371,7 +371,7 @@ A Martian outflow channel cutting through Aram Chaos. The braided streamlined is
 :width: 400px
 :align: center
 
-Surface image returned by ESA's Huygens probe during its 14 January 2005 landing on Titan: the only in-situ image ever taken from the surface of an outer-solar-system body. The rounded, decimetre-scale "rocks" are blocks of water-ice rounded by methane fluvial transport; the surface is a damp dark plain of methane-soaked organic sediment in a dried-out riverbed. Together with the descent imagery showing dendritic drainage networks, this image confirmed that liquid methane actively shapes Titan's surface today. Credit: ESA/NASA/JPL-Caltech/University of Arizona, public domain.
+Scale composite of three progressively enlarged crops from the post-landing surface image returned by ESA's Huygens probe on 14 January 2005, the only in-situ image ever taken from the surface of an outer-solar-system body. The rounded, decimetre-scale "rocks" in the foreground (bottom panel, shown at their actual apparent size) are blocks of water-ice rounded by methane fluvial transport; the surface is a damp dark plain of methane-soaked organic sediment in a dried-out riverbed. Together with the descent imagery showing dendritic drainage networks, this image confirmed that liquid methane actively shapes Titan's surface today. Credit: ESA/NASA/JPL-Caltech/University of Arizona, public domain.
 ```
 
 ```{figure} figures/mars_valley_networks.avif

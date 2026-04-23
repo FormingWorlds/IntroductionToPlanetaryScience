@@ -54,7 +54,7 @@ Edge-on view of the embedded protoplanetary disk around HH 30, imaged by HST. Th
 :width: 600px
 :align: center
 
-Schematic vertical and radial structure of a protoplanetary disk. The dust temperature decreases with radius from $> 1500$ K at the silicate sublimation front to $< 30$ K beyond the CO snow line; the gas scale height $H/r$ increases with radius, producing a flared geometry. Adapted from {cite:t}`Andrews2020`.
+Schematic vertical and radial structure of a protoplanetary disk. The dust temperature decreases with radius from $> 1500$ K at the silicate sublimation front to $< 30$ K beyond the CO snow line; the gas scale height $H/r$ increases with radius, producing a flared geometry. Adapted from {cite:t}`Andrews2020`; see also {cite:t}`WilliamsCieza2011` for an earlier review of disk structure.
 ```
 
 ### The snow line and volatile distribution
@@ -111,6 +111,14 @@ The raw building material for planets consists of sub-micrometre dust grains —
 
 In the dense midplane of the disk, dust grains collide due to Brownian motion, turbulence, and differential settling. At low velocities ($\lesssim 1$ m s$^{-1}$), grains stick together through van der Waals forces, forming **fractal aggregates** — fluffy, porous structures that grow progressively larger {cite:p}`Blum2008`. This process is efficient up to millimetre and centimetre sizes.
 
+```{figure} figures/blum2008_aggregate_growth.avif
+:name: fig:blum-aggregates
+:width: 500px
+:align: center
+
+Microgravity laboratory experiments on the earliest stage of dust coagulation. Inset: image of fractal aggregates of $1.9$ µm SiO$_2$ monomers grown in space-shuttle experiments. Main panel: the mean aggregate mass (in units of monomer mass) grows as a power law in time under Brownian-motion-driven sticking, with fractal dimension $D \approx 1.4$. Adapted from {cite:t}`Blum2008`.
+```
+
 ### Growth barriers
 
 Beyond centimetre scales, several barriers impede further growth:
@@ -126,7 +134,7 @@ Beyond centimetre scales, several barriers impede further growth:
 :width: 600px
 :align: center
 
-The classical growth barriers in dust coagulation: bouncing at $\sim$ mm, fragmentation at $\sim$ cm, and radial drift at $\sim$ m. Together they prevent classical incremental sticking from bridging the gap between dust grains and planetesimals, motivating collective mechanisms such as the streaming instability. Adapted from {cite:t}`Drazkowska2023` (see also {cite:t}`Birnstiel2016`).
+Grain size as a function of orbital distance, with the classical growth barriers indicated. The fragmentation barrier (red, shown for three fragmentation velocities) and drift barrier (blue) bound the achievable grain size; their location depends on disk radius and the local fragmentation velocity, so the canonical "mm bouncing, cm fragmentation, m drift" sequence is realised only at characteristic disk radii of a few AU. Together these barriers prevent classical incremental sticking from bridging the gap between dust grains and planetesimals, motivating collective mechanisms such as the streaming instability. Adapted from {cite:t}`Drazkowska2023` (see also {cite:t}`Birnstiel2016`).
 ```
 
 ### The streaming instability
@@ -244,6 +252,14 @@ As we saw in {ref}`lecture01`, Newton showed that all three laws follow from his
 :align: center
 
 Illustration of Kepler's three laws of planetary motion. (1) Orbits are ellipses with the Sun at one focus; (2) the radius vector sweeps out equal areas in equal times (shaded regions have equal area); (3) the period-squared is proportional to the semi-major axis cubed. Credit: Hankwang, [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/).
+```
+
+```{figure} figures/solar_system_architecture.avif
+:name: fig:ss-architecture
+:width: 750px
+:align: center
+
+Architecture of the Solar System on a logarithmic semi-major axis scale. The eight planets, Pluto, the asteroid main belt, and the Kuiper belt are shown to scale in distance; symbol size is scaled by $\log(1 + R/R_\oplus)$ so that all bodies remain visible. The asteroid main belt sits between Mars and Jupiter, near the present-day H$_2$O snow line at $\sim 3$ AU separating the rocky inner planets from the gas and ice giants. Planetary semi-major axes from the NASA Planetary Fact Sheet.
 ```
 
 ### Orbital elements
@@ -408,6 +424,14 @@ Halley's comet hurtles through the inner solar system at nearly twice Earth's sp
 **Note:** The vis-viva equation is the generalisation of the Kepler mass formula derived in {ref}`lecture01`. There, we used a circular orbit ($r = a$) to get $v^2 = GM/a$, which is just the vis-viva equation with $r = a$.
 ```
 
+```{figure} figures/visviva_earth_halley.avif
+:name: fig:visviva
+:width: 600px
+:align: center
+
+Orbital speed $v(r)$ from the vis-viva equation for Earth ($a = 1$ AU, $e = 0.0167$) and Halley's comet ($a = 17.83$ AU, $e = 0.967$). Filled circles mark perihelion and aphelion of each orbit. Earth's nearly circular orbit gives $v \approx 30$ km s$^{-1}$ throughout, whereas Halley's high eccentricity produces a $\sim 60\times$ swing in speed between perihelion ($54.6$ km s$^{-1}$) and aphelion ($0.91$ km s$^{-1}$).
+```
+
 
 ## Orbital resonances
 
@@ -444,6 +468,14 @@ This three-body resonance is maintained by tidal interactions with Jupiter. The 
 :align: center
 
 The Laplace resonance of the Galilean moons. Io, Europa, and Ganymede have orbital periods in the ratio 1 : 2 : 4, so the same conjunction geometry repeats every Io period. The resulting periodic gravitational kicks force a non-zero eccentricity on Io ($e \approx 0.004$), driving the tidal heating that powers its volcanism {cite:p}`Peale1979`.
+```
+
+```{figure} figures/io_volcanism.avif
+:name: fig:io-volcanism
+:width: 500px
+:align: center
+
+Half-disk view of Jupiter's moon Io imaged by the Galileo spacecraft, showing an active volcanic plume rising in profile against the dark sky at the limb. The mottled, sulphur-rich surface is reshaped on geological timescales by the underlying volcanism. Resonance-forced eccentricity from the Laplace resonance feeds tidal dissipation that makes Io the most volcanically active body in the Solar System. Credit: NASA/JPL/University of Arizona.
 ```
 
 
@@ -485,6 +517,14 @@ $$
 d_R \approx 2.46\, R_p \left(\frac{\rho_p}{\rho_s}\right)^{1/3}
 $$ (eq:roche-limit)
 
+```{figure} figures/roche_geometry.avif
+:name: fig:roche-geometry
+:width: 750px
+:align: center
+
+Roche limit geometry. (a) A self-gravitating fluid satellite (blue) is rounded at safe orbital distance, but at the Roche limit $d_R$ the differential tidal acceleration across its diameter exceeds its self-gravity and it is stretched and torn apart along the line to the primary. (b) Tidal acceleration across a $200$ km icy body and the body's surface self-gravity, plotted against orbital distance from Saturn (in units of $R_p$). The crossing defines the fluid Roche limit at $d_R \approx 2.17\,R_p$ for $\rho_s = 1000$ kg m$^{-3}$. Locally generated using $G$, $M_p$, $\rho_p$, $\rho_s$ as text values.
+```
+
 For Saturn ($R_p = 58{,}232$ km, $\rho_p = 687$ kg m$^{-3}$) and an icy satellite ($\rho_s \approx 1000$ kg m$^{-3}$):
 
 $$
@@ -492,6 +532,14 @@ d_R \approx 2.46 \times 58{,}232 \times \left(\frac{687}{1000}\right)^{1/3} \app
 $$
 
 Saturn's main ring system extends from about 67,000 km to 137,000 km from Saturn's centre — mostly within the Roche limit (the fluid approximation gives $d_R \approx 126{,}000$ km, but the exact boundary depends on the rigidity and composition of the orbiting material; the outer A ring extends slightly beyond the fluid Roche limit but remains within the rigid-body limit). The rings consist of countless small particles that cannot coalesce into a moon because tidal forces prevent their gravitational aggregation. We will derive the Roche limit in full in {ref}`lecture11`.
+
+```{figure} figures/saturn_rings.avif
+:name: fig:saturn-rings
+:width: 700px
+:align: center
+
+Saturn and its rings imaged by the Cassini wide-angle camera in April 2016. The main ring system spans roughly $67{,}000$ km to $137{,}000$ km from Saturn's centre and lies almost entirely within the fluid Roche limit at $\sim 126{,}000$ km. The countless cm- to m-sized icy particles that make up the rings cannot coalesce into a moon because Saturn's tides exceed their mutual self-gravity. Credit: NASA/JPL-Caltech/Space Science Institute (PIA21046).
+```
 
 
 ## Planetary migration
@@ -515,7 +563,7 @@ A planet embedded in a gaseous disk excites spiral density waves at **Lindblad r
 :width: 600px
 :align: center
 
-Two regimes of disk-driven planet migration. A low-mass planet (Type I) excites spiral density waves at its inner and outer Lindblad resonances; the slight outer-torque excess drives inward migration. A Jupiter-mass planet (Type II) opens a gap in the disk and migrates with the viscous evolution of the gas. Adapted from {cite:t}`Paardekooper2023`.
+Disk surface-density response to an embedded planet, showing the outer-Lindblad spiral wake and the partial gap carved by the planet's gravity. The inset zoom shows the horseshoe streamlines and density-wave structure in the co-orbital region that exchange angular momentum with the planet. The torque imbalance between these structures sets whether the planet migrates inward or outward and underlies both Type I and Type II migration. Adapted from {cite:t}`Paardekooper2023`.
 ```
 
 ### The Nice model
@@ -527,7 +575,7 @@ After the gas disk has dispersed, the giant planets can still undergo migration 
 :width: 600px
 :align: center
 
-Evolution of the giant planets' semi-major axes through the Nice-model instability. The system begins compact (Jupiter at $\sim 5.5$ AU, Neptune at $\sim 12$ AU); the 2:1 mean-motion resonance crossing of Jupiter and Saturn destabilises the system, scattering Uranus and Neptune outward to their present orbits and disrupting the primordial trans-Neptunian planetesimal disk {cite:p}`Tsiganis2005,Nesvorny2018`.
+Evolution of the giant planets through the Nice-model instability. Left panel: semi-major axes vs time, beginning compact (Jupiter at $\sim 5.5$ AU, Neptune at $\sim 12$ AU). Right panel: the Saturn / Jupiter period ratio, showing the rapid 2:1 mean-motion resonance crossing that triggers the instability. The crossing scatters Uranus and Neptune outward to their present orbits and disrupts the primordial trans-Neptunian planetesimal disk {cite:p}`Tsiganis2005,Nesvorny2018`.
 ```
 
 ### The Grand Tack
@@ -539,7 +587,7 @@ The **Grand Tack hypothesis** {cite:p}`Walsh2011` proposes that Jupiter first mi
 :width: 600px
 :align: center
 
-The Grand Tack scenario. Jupiter (red) migrates inward to $\sim 1.5$ AU via Type II migration; once Saturn (green) catches up and the two planets become trapped in a mutual mean-motion resonance, the combined torques reverse the migration and both planets move outward. The episode depletes solid material in the inner disk, with consequences for Mars's small mass and the asteroid belt's compositional structure. Reproduced from {cite:t}`Walsh2011`.
+The Grand Tack scenario from a Walsh et al. (2011) simulation. Top panel: mass evolution of the four giant planets during the disk phase. Bottom panel: semi-major axis evolution; each curve is labelled with the planet's name on the track. Jupiter migrates inward to $\sim 1.5$ AU via Type II migration; once Saturn catches up and the two planets become trapped in a mutual mean-motion resonance, the combined torques reverse the migration and both planets move outward. The episode depletes solid material in the inner disk, with consequences for Mars's small mass and the asteroid belt's compositional structure. Reproduced from {cite:t}`Walsh2011`.
 ```
 
 ### Observational evidence for migration
@@ -551,7 +599,7 @@ The strongest evidence that migration is real comes from **hot Jupiters** — ga
 :width: 600px
 :align: center
 
-Confirmed exoplanets in mass-period space. The cluster of giant planets ($M \gtrsim 0.1\,M_J$) at orbital periods of a few days, the "hot Jupiters", cannot have formed in situ at such close-in orbital distances and is widely interpreted as evidence for large-scale orbital migration. Adapted from {cite:t}`DawsonJohnson2018`; data from the NASA Exoplanet Archive.
+Confirmed exoplanets in mass-period space, generated from the NASA Exoplanet Archive (accessed 2026-04). Detection methods are colour-coded; Solar System planets are overplotted as black stars for reference. The cluster of giant planets ($M \gtrsim 0.1\,M_J$) at orbital periods of a few days, the "hot Jupiters", cannot have formed in situ at such close-in orbital distances and is widely interpreted as evidence for large-scale orbital migration; see {cite:t}`DawsonJohnson2018` for a review of the proposed formation pathways.
 ```
 
 
