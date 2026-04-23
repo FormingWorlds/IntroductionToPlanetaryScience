@@ -34,7 +34,7 @@ A second image taken from lunar orbit two decades earlier captured the same esse
 :width: 500px
 :align: center
 
-"Earthrise", Apollo 8, 24 December 1968. Earth rises above the lunar limb during the first crewed mission to leave Earth orbit. The image is widely credited with shifting public perception of Earth as a single, finite system, an early articulation of the comparative-planetology perspective that this course adopts throughout. Image PIA01337. Credit: NASA / William Anders.
+"Earthrise", Apollo 8, 24 December 1968. Earth rises above the lunar limb during the first crewed mission to leave Earth orbit. The image is widely credited with shifting public perception of Earth as a single, finite system, an early articulation of the comparative-planetology perspective that this course adopts throughout. NASA image AS8-14-2383. Credit: NASA / William Anders.
 ```
 
 That image captures something essential about planetary science: it asks us to see our own world not as the centre of the universe, but as one planet among many — a physical system that can be studied, compared, and understood. This course is built around three questions that drive that effort:
@@ -150,7 +150,7 @@ In 1992, Aleksander Wolszczan and Dale Frail announced the discovery of planets 
 :width: 700px
 :align: center
 
-Cumulative number of confirmed exoplanets per discovery year, colour-coded by detection method. The first detection (1992, pulsar timing) was followed by the radial-velocity revolution of the late 1990s and 2000s, and then the explosion of transit discoveries during and after NASA's Kepler mission (2009–2018). Credit: NASA Exoplanet Archive (Caltech), accessed 2026-04-16 {cite:p}`NASAFactSheet`.
+Cumulative number of confirmed exoplanets per discovery year, colour-coded by detection method. The first detection (1992, pulsar timing) was followed by the radial-velocity revolution of the late 1990s and 2000s, and then the explosion of transit discoveries during and after NASA's Kepler mission (2009 to 2018). Credit: NASA Exoplanet Archive (Caltech), accessed 2026-04-16 {cite:p}`NASAExoplanetArchive2026`.
 ```
 
 ```{figure} figures/exoplanet_mass_period.avif
@@ -182,7 +182,7 @@ ALMA 1.3 mm continuum image of the protoplanetary disk around the young star HL 
 :width: 500px
 :align: center
 
-Discovery transit of HD 209458 b, the first transiting exoplanet ever detected. The relative stellar flux drops by about 1.6% as the planet crosses the disk of its host star, recovering symmetrically afterwards. The depth gives the planet-to-star radius ratio via $\Delta F / F \approx (R_p / R_\star)^2$, and the duration constrains the orbital geometry. Credit: {cite:t}`Charbonneau2000`.
+Discovery transit of HD 209458 b, the first transiting exoplanet ever detected. The relative stellar flux drops by about 1.7% as the planet crosses the disk of its host star, recovering symmetrically afterwards. The depth gives the planet-to-star radius ratio via $\Delta F / F \approx (R_p / R_\star)^2$, and the duration constrains the orbital geometry. Credit: {cite:t}`Charbonneau2000`.
 ```
 
 Today, planetary science integrates astronomy, physics, chemistry, geology, and atmospheric science. It spans scales from dust grains in protoplanetary disks to the demographics of planetary systems across the Galaxy.
@@ -204,7 +204,7 @@ The solar system extends from the Sun (radius $\Rsun = 6.96 \times 10^8$ m) to t
 :width: 700px
 :align: center
 
-The eight planets of the solar system shown at their approximate relative sizes. Top row: Jupiter, Saturn, Uranus, Neptune (the giant planets). Bottom row: Earth, Venus, Mars, Mercury (the terrestrial planets). Note the enormous size difference: Jupiter's diameter is roughly 29 times that of Mercury. Credit: NASA/JPL-Caltech composite, public domain.
+The eight planets of the solar system shown at approximate relative sizes. The four giant planets, Jupiter and Saturn at upper-left with Uranus and Neptune below, dominate the frame; the four terrestrial planets, Earth, Venus, Mars, and Mercury, are clustered at lower-right. Jupiter's diameter is roughly 29 times that of Mercury. Credit: NASA/JPL-Caltech composite, public domain.
 ```
 
 ### Planetary properties
@@ -239,7 +239,7 @@ Bulk density of the eight solar-system planets versus orbital semi-major axis (l
 :width: 600px
 :align: center
 
-Planetary mass versus orbital semi-major axis on a log–log scale. Jupiter's mass exceeds the sum of all other planetary masses by more than a factor of two, illustrating the extreme concentration of mass in the central giant. Data from {cite:p}`NASAFactSheet`.
+Planetary mass versus orbital semi-major axis on a log-log scale. Jupiter's mass exceeds the sum of all other planetary masses by more than a factor of two, illustrating the extreme concentration of mass in the central giant. Data from {cite:p}`NASAFactSheet`.
 ```
 
 ### Classification

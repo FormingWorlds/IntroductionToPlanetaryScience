@@ -246,7 +246,7 @@ The ring is therefore a continuously replenished, transient cloud of debris rath
 :name: fig:amalthea
 :width: 70%
 
-Amalthea, Jupiter's innermost large moon, captured by the JunoCam imager during the 59th perijove flyby on 7 March 2024 from a distance of $\sim$$265{,}000$ km (PIA25728). Amalthea is irregular and only $\sim$84 km in mean radius, and is one of the principal sources of dust for Jupiter's faint ring system through micrometeorite gardening of its surface. Its reddish colour reflects contamination from Io's volcanic plumes. Image credit: NASA/JPL-Caltech/SwRI/MSSS, processed by Gerald Eichst{\"a}dt.
+Detection of Amalthea (small silhouette indicated by arrows in both panels) against Jupiter's cloud bands by JunoCam during the 59th perijove flyby on 7 March 2024 from a distance of $\sim$$265{,}000$ km (PIA25728). Amalthea is unresolved at this geometry: the image documents the moon's position rather than its shape. Amalthea has a mean radius of $\sim$84 km, an irregular shape ($\sim$250 $\times$ 146 $\times$ 128 km from Galileo data), and a reddish surface believed to reflect contamination from Io's volcanic plumes; it is one of the principal sources of dust for Jupiter's faint ring system through micrometeorite gardening of its surface. Image credit: NASA/JPL-Caltech/SwRI/MSSS, processed by Gerald Eichst{\"a}dt.
 ```
 
 ### Saturn interior and rotation
@@ -327,7 +327,7 @@ The seven main rings are labelled in order of discovery (D, C, B, A, F, G, and E
 :name: fig:cassini_division
 :width: 95%
 
-Natural-colour radial scan across Saturn's main rings as imaged by Cassini, with major named gaps labelled at the top and the C, B, A, and F rings labelled at the bottom (PIA08389). The dark Cassini Division separates the bright B and A rings at $\sim$118{,}000 km from Saturn's centre. The gap is maintained by a 2:1 mean-motion resonance with the moon Mimas: ring particles inside the Cassini Division are perturbed onto eccentric orbits and are eventually swept out, leaving the gap as a persistent feature. Image credit: NASA/JPL-Caltech/Space Science Institute.
+Natural-colour radial scan across Saturn's main rings as imaged by Cassini (PIA08389). The C ring appears as the inner faint band, followed by the bright B ring, the dark Cassini Division at $\sim$118{,}000 km from Saturn's centre, and the outer A ring. The Cassini Division is maintained by a 2:1 mean-motion resonance with the moon Mimas: ring particles inside the gap are perturbed onto eccentric orbits and are eventually swept out, leaving the gap as a persistent feature. Image credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
 ```{figure} figures/saturn_propeller_targeted.avif

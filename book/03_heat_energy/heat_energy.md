@@ -74,6 +74,10 @@ Decay of the principal short-lived radionuclides ${}^{26}\mathrm{Al}$ ($t_{1/2}=
 
 When a body on a non-circular orbit is tidally deformed by a nearby massive companion, the periodic flexing of its interior dissipates energy as heat. This is a significant heat source for certain moons in the outer solar system, particularly Io and Enceladus. We will discuss tidal heating in detail in [section 7](tidal-dissipation) of this lecture.
 
+```{note}
+Cartoon visualisations of accretional heating and core-formation differentiation are deferred; the schematic content is fully covered by the formation cartoons in {ref}`lecture02` (impact heating during oligarchic growth) and the differentiation cutaways in {ref}`lecture04` (metal-silicate segregation).
+```
+
 ### Earth's heat budget
 
 The total heat flowing out of Earth's interior is approximately **47 TW** {cite:p}`DaviesDavies2010`. The approximate breakdown is:
@@ -154,14 +158,6 @@ Inside solid planetary interiors, radiation is generally less important than con
 :align: center
 
 Schematic of Rayleigh-Bénard convection. A fluid layer of depth $d$ is heated from below ($T_h$, hot bottom plate) and cooled from above ($T_c$, cold top plate). Hot fluid rises in plumes through a thin hot thermal boundary layer (TBL) at the base; cold fluid sinks through a thin cold TBL at the top. Lateral flow along the boundary layers closes the circulation. Convection sets in once the Rayleigh number exceeds the critical value $\mathrm{Ra}_c$ (Eq. {eq}`eq:rayleigh-number`). Custom schematic.
-```
-
-```{figure} figures/benard_cells_lab.avif
-:name: fig:benard-cells-lab
-:width: 500px
-:align: center
-
-Laboratory hexagonal Bénard cells in a thin layer of silicone oil heated uniformly from below, viewed from above. Hot fluid rises through the centre of each polygon and sinks at its edges; the regular polygonal pattern is the planform that emerges spontaneously from the Rayleigh-Bénard instability and is the laboratory analogue of mantle and atmospheric convection cells. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 ```
 
 ### Comparison
@@ -526,7 +522,7 @@ The Tvashtar volcanic plume on Io, captured by the New Horizons spacecraft durin
 :width: 600px
 :align: center
 
-Global map of Io's volcanic thermal emission, with each marker scaled by the time-averaged radiated power of an individual hotspot (Galileo and ground-based monitoring; colour codes hotspot category). Integrated emission is $\sim 10^{14}$ W, consistent with the tidal-dissipation rate predicted by the Laplace-resonance forcing of Io's orbital eccentricity. Credit: NASA/JPL-Caltech, public domain.
+Global distribution of Io's volcanic hotspots projected on a basemap, with each marker indicating an individually catalogued emission centre from combined Galileo, New Horizons, and ground-based monitoring. Integrated emission across all detected hotspots is $\sim 10^{14}$ W, consistent with the tidal-dissipation rate predicted by the Laplace-resonance forcing of Io's orbital eccentricity {cite:p}`Davies2024PSJ`. Credit: NASA/JPL-Caltech, public domain.
 ```
 
 ### Enceladus: a tiny moon with a big secret
@@ -548,7 +544,7 @@ Geysers of water ice erupt from the "tiger stripe" fractures near the south pole
 :width: 400px
 :align: center
 
-Cassini CIRS thermal-emission map of Enceladus's south polar region overlaid on the visible-light mosaic. The hottest emission (yellow/orange) is concentrated along the four "tiger stripe" fractures and falls off rapidly with distance. Total integrated thermal power along the stripes is $\sim 5\text{--}15$ GW {cite:p}`Howett2011`, far above any plausible radiogenic budget for a body of this size. Credit: NASA/JPL/GSFC/SwRI/SSI, public domain.
+Cassini CIRS thermal-emission map of Enceladus's south polar region (yellow/orange overlay) draped on a monochrome basemap. The hottest emission is concentrated along the four "tiger stripe" fractures and falls off rapidly with distance. Total integrated thermal power along the stripes is $\sim 5\text{--}15$ GW {cite:p}`Howett2011`, far above any plausible radiogenic budget for a body of this size. Credit: NASA/JPL/GSFC/SwRI/SSI, public domain.
 ```
 
 ### Europa and Titan: subsurface oceans

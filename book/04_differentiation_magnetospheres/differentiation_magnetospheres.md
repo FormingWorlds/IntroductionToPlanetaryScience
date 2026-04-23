@@ -395,7 +395,7 @@ The most compelling evidence for reversals comes from **magnetic stripes** on th
 :width: 750px
 :align: center
 
-Geomagnetic polarity timescale for the past 170 Myr. Black bars mark intervals of normal polarity (north magnetic pole near the geographic north), white bars mark reversed polarity. The reversal rate has varied from $\sim 4$–$5$ per Myr in the late Cenozoic to essentially zero during the Cretaceous Normal Superchron (CNS, $\sim 84$–$121$ Ma), the long uninterrupted black band in the middle of the panel; the Phanerozoic period boundaries N|Pg ($\sim 23$ Ma), Pg|K ($\sim 66$ Ma) and K|J ($\sim 145$ Ma) are marked with dotted lines. Reversals appear statistically consistent with a non-stationary Poisson process, reflecting the chaotic dynamics of the geodynamo. Simplified from the Cande and Kent (1995) and GTS2020 reconstructions; data adapted from public-domain USGS sources.
+Geomagnetic polarity timescale for the past 170 Myr. Black bars mark intervals of normal polarity (north magnetic pole near the geographic north), white bars mark reversed polarity. The reversal rate has varied from $\sim 4$–$5$ per Myr in the late Cenozoic to essentially zero during the Cretaceous Normal Superchron (CNS, C34n, $\sim 83$–$121$ Ma), shown as the long uninterrupted black band in the middle of the panel. The Mesozoic and Cenozoic era intervals (boundary at $\sim 66$ Ma) are marked below the axis. Reversals appear statistically consistent with a non-stationary Poisson process, reflecting the chaotic dynamics of the geodynamo. Schematic; boundary ages are approximate and should not be read to better than $\sim 1$ Myr. Exact chron ages follow the Geologic Time Scale 2020 compilation (Gradstein et al., eds., Elsevier, 2020).
 ```
 
 
@@ -472,7 +472,7 @@ Jupiter has the **strongest magnetic field** of any planet, roughly 20,000 times
 :width: 600px
 :align: center
 
-Map of the radial component of Jupiter's surface magnetic field from the Juno JRM33 model {cite:p}`Connerney2022`. Red marks outward field, blue inward. Unlike Earth's field, which is dominated by an axial dipole at the surface, Jupiter's surface field shows pronounced non-dipolar structure, including the intense localised patch of inward flux at the equator (the "Great Blue Spot"). The morphology constrains the depth at which the metallic-hydrogen dynamo operates and indicates that the dynamo is not confined to a thin shell. Credit: NASA/JPL-Caltech/SwRI/J.E.P. Connerney, public domain.
+Mollweide projection of the radial component of Jupiter's surface magnetic field, derived from the Juno JRM33 model {cite:p}`Connerney2022`. Red marks outward field, blue inward; latitude and longitude grid in System III coordinates. Unlike Earth's field, which is dominated by an axial dipole at the surface, Jupiter's surface field shows pronounced non-dipolar structure, including the intense localised patch of inward flux near the equator (the "Great Blue Spot", deep-blue feature near $0^\circ$ latitude) paired with a strong outward patch immediately to its west. The morphology constrains the depth at which the metallic-hydrogen dynamo operates and indicates that the dynamo is not confined to a thin shell. Credit: NASA/JPL-Caltech/SwRI/J.E.P. Connerney, public domain.
 ```
 
 ### Ganymede

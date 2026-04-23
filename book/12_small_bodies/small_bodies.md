@@ -646,7 +646,7 @@ Rubin's first light was achieved in June 2025, and over its 10-year survey it is
 :width: 600px
 :align: center
 
-The Vera C. Rubin Observatory on Cerro Pachón, Chile, during construction. Its 8.4 m primary and 3.2 gigapixel camera will repeatedly image the entire visible sky every few nights, dramatically improving the inventory of small solar system bodies, including a roughly tenfold increase in the NEA discovery rate. Image credit: Rubin Observatory / NSF / DOE, public domain.
+The Vera C. Rubin Observatory on Cerro Pachón, Chile, photographed inside the telescope dome during commissioning (a Rubin/NSF/DOE press image from before the June 2025 First Look release). Its 8.4 m primary and 3.2 gigapixel camera will repeatedly image the entire visible sky every few nights, dramatically improving the inventory of small solar system bodies, including a roughly tenfold increase in the NEA discovery rate. Image credit: Rubin Observatory / NSF / DOE, public domain.
 ```
 
 The second prerequisite is **deflection**.
@@ -1158,7 +1158,7 @@ Its physical nature remains debated: candidates include a fragment of a tidally 
 :width: 700px
 :align: center
 
-Resistant-mean stacked image of 1I/'Oumuamua with an equivalent exposure time of $9000$ s, obtained by {cite:t}`Meech2017` with multi-telescope follow-up of the Pan-STARRS discovery. The directions to the Sun, the negative heliocentric velocity vector ($-v$), north, and east are indicated, along with a scale bar. Left: image stretched to show the point-source appearance of the object. Right: the same image rebinned $2 \times 2$ and stretched to $\pm 2\sigma$ from the background to emphasise the absence of a coma. No extended dust or gas is visible at the limit of the deep stack, despite the non-gravitational acceleration later inferred from astrometry, leaving the nature of the object's outgassing source unresolved. From Figure 2 of {cite:t}`Meech2017`.
+Deep combined image of 1I/'Oumuamua (centre, circled) obtained as part of the multi-telescope follow-up to the Pan-STARRS discovery, including data from the ESO Very Large Telescope reported by {cite:t}`Meech2017`. Because the telescope tracked the rapidly moving target, background stars appear as short trails while 'Oumuamua itself is the faint pointlike source at the centre of the frame. No extended coma or dust tail is detected at the limit of the deep stack, despite the non-gravitational acceleration later inferred from astrometry, leaving the nature of the object's outgassing source unresolved. Image credit: ESO / K. Meech et al., CC BY 4.0.
 ```
 
 ```{figure} figures/oumuamua_iso_density.avif

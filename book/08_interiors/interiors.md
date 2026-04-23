@@ -24,7 +24,7 @@ Paths of seismic P-waves through Earth's interior. P-waves refract as they pass 
 :width: 380px
 :align: center
 
-P- and S-wave shadow zones for a single earthquake source. The S-wave shadow zone (no S-wave arrivals beyond ~104° from the epicentre) covers nearly half the Earth's surface and provides the definitive evidence that the outer core is liquid. The P-wave shadow zone (104°-140°) arises from refraction at the core-mantle boundary, where compressional wave speed drops sharply from $\sim$13.7 to $\sim$8.1 km s$^{-1}$. Credit: U.S. Geological Survey, public domain.
+The **P-wave shadow zone** (104°-140° from the epicentre) labelled in this USGS schematic arises from refraction at the core-mantle boundary, where compressional wave speed drops sharply from $\sim$13.7 to $\sim$8.1 km s$^{-1}$. The companion **S-wave shadow zone** (not annotated here) is even larger: shear waves do not propagate through the liquid outer core at all, so no direct S arrivals are recorded beyond about 104° from the source. Together these two shadow zones provide the definitive evidence that the outer core is liquid. Credit: U.S. Geological Survey, public domain.
 ```
 
 **Gravity field measurements** constrain the distribution of mass within a planet. A perfectly spherical, homogeneous body produces a purely $1/r^2$ gravitational field. Real planets are oblate due to rotation, producing a measurable **gravitational quadrupole moment** $J_2$. The value of $J_2$ depends on how mass is distributed between the equator and the poles, which in turn depends on the density profile. Higher-order gravity harmonics reveal lateral density variations. Spacecraft in orbit (e.g., GRAIL at the Moon, Juno at Jupiter) measure gravity fields with extraordinary precision by tracking tiny Doppler shifts in their radio signals.
@@ -127,6 +127,14 @@ For Earth ($M = 5.97 \times 10^{24}$ kg, $R = 6371$ km), this gives $P_c \approx
 
 At the pressures and temperatures found in planetary interiors ($P \sim 1$–$10^4$ GPa, $T \sim 10^3$–$10^4$ K), material behaviour differs drastically from surface conditions. The **bulk modulus** $K = -V\,dP/dV = \rho\,dP/d\rho$ describes a material's resistance to compression. {cite:t}`Birch1952` established an empirical relationship between compressional wave velocity $v_P$ and density for silicates and oxides, known as **Birch's law**, which remains a cornerstone of mineral physics.
 
+```{figure} figures/birchs_law.avif
+:name: fig:birchs-law
+:width: 600px
+:align: center
+
+Birch's law for silicates and oxides: compressional-wave velocity $v_P$ plotted against density $\rho$ for common mantle-forming minerals at ambient conditions. The approximately linear trend (red dashed) holds at fixed mean atomic mass and allows seismic velocities measured at depth to be mapped to densities, provided the composition (mean atomic mass) is known. Outliers such as Fe-rich fayalite sit below the main trend because their higher mean atomic mass reduces $v_P$ at a given density. Course-original plot; mineral values from standard mineral-physics compilations, trend originally established by {cite:t}`Birch1952`.
+```
+
 The **seismic parameter** $\phi \equiv K_S/\rho = v_P^2 - \frac{4}{3}v_S^2$ (where $K_S$ is the adiabatic bulk modulus) connects seismological observables directly to the EOS. The **Adams–Williamson equation** uses this to relate the density gradient to the seismic velocities:
 
 $$
@@ -134,6 +142,14 @@ $$
 $$
 
 This equation allows seismologists to determine the density profile from measured wave speeds, provided the composition is approximately uniform within each layer and temperature effects are small.
+
+```{figure} figures/adams_williamson.avif
+:name: fig:adams-williamson
+:width: 720px
+:align: center
+
+Test of the Adams-Williamson relation against PREM. **(a)** In the lower mantle (771-2741 km depth), where composition is approximately uniform, the density predicted by integrating $d\ln\rho/dr = -g/\phi$ (red dashed) reproduces the observed PREM profile (blue) closely: the density rise is dominated by self-compression. **(b)** Across the core-mantle boundary at 2891 km depth, the observed density (blue) jumps discontinuously from $\sim$5570 to $\sim$9900 kg m$^{-3}$, whereas a no-composition-change Adams-Williamson extrapolation (red dashed) predicts a smooth, far smaller increase. The deviation directly exposes the compositional change from silicate mantle to iron-alloy core. Course-original from the PREM tabulation of {cite:t}`Dziewonski1981`.
+```
 
 
 ## Earth's interior
@@ -244,10 +260,18 @@ Cross-sections of the four terrestrial planets and Earth's Moon, drawn to relati
 :width: 600px
 :align: center
 
-Schematic of Mars's interior as constrained by NASA's InSight mission seismic observations. The cutaway block on the left shows the layered crust, mantle, and liquid Fe-S core (radius $\sim$1830 km, $\sim$54% of Mars's radius); concentric arcs depict body-wave fronts originating from a marsquake (yellow stars) and reaching the SEIS seismometer. Bottom right: marsquakes are concentrated near tectonically active regions (Cerberus Fossae) and meteoroid impacts (top right) provide additional sources. Adapted from NASA's "Inside Mars" infographic, based on results published in {cite:p}`Stahler2021,Khan2021`. Credit: NASA/JPL-Caltech (PIA25282).
+NASA's "Inside Mars" infographic summarising the interior structure constrained by the InSight mission. The central cutaway block exposes the layered crust, mantle, and liquid Fe-S core (radius $\sim$1830 km, $\sim$54% of Mars's radius). The inset at upper right shows the InSight lander with its SEIS seismometer on the Martian surface; the inset at lower right shows a meteoroid impact and a close-up of the Cerberus Fossae graben region near where many of the largest marsquakes originated. Both impacts and tectonic marsquakes acted as the seismic sources whose travel times revealed the interior layering. Adapted from NASA's "Inside Mars" infographic, based on results published in {cite:p}`Stahler2021,Khan2021`. Credit: NASA/JPL-Caltech (PIA25282).
 ```
 
 **The Moon** ($C/MR^2 = 0.393$, $\bar{\rho} = 3346$ kg m$^{-3}$) is only weakly differentiated. Apollo seismometers (1969–1977) revealed a crust $\sim$30–40 km thick, a silicate mantle extending to $\sim$1400 km depth, and a small partially molten core with radius $\sim$330–380 km (only $\sim$20% of the Moon's radius). The near-undifferentiated state ($C/MR^2$ close to 0.4) and low mean density are consistent with a body that formed primarily from silicate mantle material — supporting the giant impact hypothesis for the Moon's origin ({ref}`lecture02`).
+
+```{figure} figures/moon_wedge.avif
+:name: fig:moon-interior
+:width: 600px
+:align: center
+
+Moon interior cross-section synthesising Apollo-era lunar seismology and decades of lunar laser-ranging analysis. A thin anorthositic crust ($\sim$30-40 km) overlies a silicate mantle reaching to $\sim$480 km from the centre. At depth the core is subdivided into an outer partial-melt boundary layer, a liquid Fe-alloy outer core, and a small solid inner core with radius of order $\sim$240 km, consistent with the low measured moment of inertia factor $C/MR^2 = 0.3932$. Course-original schematic; core structure follows the reanalysis of Weber et al. 2011 of Apollo seismic data and the moment of inertia of Williams et al. 2014.
+```
 
 **Mars** ($C/MR^2 = 0.364$, $\bar{\rho} = 3934$ kg m$^{-3}$) was transformed from a one-data-point problem into a seismically characterised planet by NASA's **InSight mission** (2018–2022). The SEIS seismometer detected hundreds of marsquakes, revealing {cite:p}`Khan2021,Stahler2021`:
 
@@ -256,6 +280,22 @@ Schematic of Mars's interior as constrained by NASA's InSight mission seismic ob
 - A **liquid core** of radius $\sim$1830 km ($\sim$54% of Mars's radius), composed of iron alloyed with sulphur and other light elements
 
 Mars's core is proportionally larger than Earth's (54% vs 55% by radius), but less dense ($\sim$6000 kg m$^{-3}$ vs $\sim$10{,}900 kg m$^{-3}$), indicating a higher fraction of light elements — particularly sulphur. The absence of a present-day global magnetic field suggests the core is no longer convecting vigorously enough to sustain a dynamo, although remnant crustal magnetisation records an ancient field ({ref}`lecture04`).
+
+```{figure} figures/mars_wedge.avif
+:name: fig:mars-wedge
+:width: 600px
+:align: center
+
+Mars interior labelled cross-section in the Earth/Jupiter wedge style. The fractional-radius scale on the right marks the $\sim$0.54 core-mantle boundary inferred from InSight body waves and the surface at $R/R_{\rm Mars} = 1$. The liquid Fe-S core, silicate mantle, and thin crust ($\sim$25-45 km) are drawn to relative scale. Course-original schematic; dimensions from {cite:t}`Stahler2021` and {cite:t}`Khan2021`.
+```
+
+```{figure} figures/mars_vp_vs.avif
+:name: fig:mars-vp-vs
+:width: 640px
+:align: center
+
+Radial profiles of Mars $v_P$ (blue) and $v_S$ (red) adopted from InSight seismic analyses. The shear velocity $v_S$ drops to zero below the core-mantle boundary at $\sim$1560 km depth, reflecting the liquid iron-alloy outer core; the compressional velocity $v_P$ decreases there because the liquid state has a smaller bulk modulus than the overlying silicate mantle. A small kink near $\sim$1100 km depth marks the inferred upper-mantle transition. Course-original schematic; compare figure 4 of {cite:t}`Stahler2021` and figure 2 of {cite:t}`Khan2021`.
+```
 
 **Mercury** ($C/MR^2 = 0.346$, $\bar{\rho} = 5427$ kg m$^{-3}$) presents a puzzle: it has the highest uncompressed density of any terrestrial planet, implying a very large iron core. MESSENGER spacecraft data, combined with Earth-based radar observations of Mercury's forced libration, constrain the core radius to $\sim$2020 km — approximately **85% of the planet's radius** and containing $\sim$65% of its mass {cite:p}`Margot2007,MargotHauck2018`. A thin silicate mantle ($\sim$400 km) and crust ($\sim$30–50 km) overlie this enormous core. Mercury retains a weak but global magnetic field, indicating that at least part of its core is still liquid and convecting. Explaining why Mercury has such a large core fraction remains an active area of research (forward ref {ref}`lecture10`).
 
@@ -285,6 +325,14 @@ Jupiter's internal structure shown as a radial cross-section (with Earth for sca
 - **Molecular hydrogen envelope** (outer ~15% by radius): $\mathrm{H_2}$ gas transitioning to liquid, $\rho \sim 0.2$–$1$ g cm$^{-3}$
 - **Metallic hydrogen layer** (extending to ~80% of the radius): at pressures above $\sim$1–4 Mbar ($10^{11}$–$4 \times 10^{11}$ Pa), hydrogen undergoes a gradual transition to a **metallic state** where electrons are delocalised and the material conducts electricity. This conducting metallic hydrogen is the source of Jupiter's powerful magnetic field ({ref}`lecture04`)
 - **Core region**: Juno's gravity data show that heavy elements (rock and ice) are not concentrated in a small compact core but are instead spread over a large **dilute core** extending to perhaps 30–50% of Jupiter's radius {cite:p}`Wahl2017`. This may be a relic of the formation process or the result of erosion of an initially compact core by convective mixing
+
+```{figure} figures/jupiter_z.avif
+:name: fig:jupiter-z
+:width: 600px
+:align: center
+
+Schematic comparison of Jupiter's heavy-element mass fraction $Z(r)$ in the classical compact-core picture (grey dashed, pre-Juno) versus the dilute-core picture inferred from Juno gravity measurements (blue solid). In the classical view $Z$ is near unity inside a small rocky core ($r \lesssim 0.1\,R_{\rm Jup}$) and drops to the near-solar envelope value elsewhere; in the dilute-core solution $Z$ declines gradually from $\sim$0.2-0.25 at the centre to envelope values over the inner $\sim$0.4-0.5 of the planet's radius. Course-original schematic; compare figure 5 in {cite:t}`Wahl2017`.
+```
 
 Central conditions reach approximately 4000 GPa and 20{,}000 K. Jupiter radiates roughly 1.7 times the energy it receives from the Sun, indicating substantial internal heat production from ongoing gravitational contraction (the **Kelvin–Helmholtz mechanism**).
 
@@ -322,7 +370,7 @@ The canonical three-layer model consists of:
 :width: 600px
 :align: center
 
-Three-layer schematic of an ice giant interior (Uranus or Neptune): an outer hydrogen-helium envelope ($\sim$20% by mass), a thick hot dense ice/superionic layer of water, ammonia, and methane ($\sim$60-70% by mass), and a small rocky/icy core ($\sim$10-20% by mass). The shallow conducting layer in the ice/superionic region is thought to host the dynamo responsible for the strongly tilted, non-dipolar magnetic fields of Uranus and Neptune. Course-original schematic; mass fractions and structure from {cite:t}`Helled2020`.
+Three-layer schematic of an ice giant interior (Uranus or Neptune): an outer hydrogen-helium envelope ($\sim$20% by mass), a thick hot dense ice/superionic layer of water, ammonia, and methane ($\sim$60-70% by mass), and a small rocky/icy core ($\sim$10-20% by mass). The strongly tilted, non-dipolar magnetic fields of Uranus and Neptune are thought to be generated within the upper portion of the ice/superionic layer, where the conducting region is geometrically thin compared to the deep metallic-hydrogen shell that powers Jupiter's dipolar dynamo (see body text). Course-original schematic; mass fractions and structure from {cite:t}`Helled2020`.
 ```
 
 The magnetic fields of Uranus and Neptune are strikingly unusual: both are strongly **tilted** relative to the rotation axis (59° for Uranus, 47° for Neptune) and **offset** from the planet's centre. This contrasts sharply with the roughly dipolar, axially aligned fields of Earth, Jupiter, and Saturn. The explanation likely involves the geometry of the conducting region: rather than being generated in a deep metallic hydrogen shell (as in Jupiter), the ice giant dynamos may operate in the shallow, thin conducting ice layer, producing more complex field geometries.
@@ -343,6 +391,14 @@ Artist's concept of Europa's subsurface environment. The cross-section reveals (
 ```
 
 **Europa** ($R = 1561$ km, $\rho = 3013$ kg m$^{-3}$) has an ice shell estimated at $\sim$15–25 km thick overlying a global ocean $\sim$60–150 km deep — containing roughly 2–3 times the volume of Earth's oceans. The evidence comes from multiple sources: magnetic induction measurements by the Galileo spacecraft (a time-varying magnetic field induced by Jupiter's rotating magnetosphere, requiring a near-surface conducting layer), surface geology (disrupted ice blocks in **chaos terrain** that resemble terrestrial sea ice), and gravity data. Tidal heating from Europa's orbital eccentricity (maintained by the Laplace resonance with Io and Ganymede) provides the energy to keep the ocean liquid {cite:p}`Hussmann2006`. The upcoming **Europa Clipper** mission (launched 2024) will characterise Europa's ice shell and ocean in unprecedented detail.
+
+```{figure} figures/tidal_resonance.avif
+:name: fig:tidal-resonance
+:width: 720px
+:align: center
+
+Orbital geometry of the Io-Europa-Ganymede **Laplace resonance** powering Europa's ocean. **(a)** Schematic view of the three moons orbiting Jupiter (not to scale); their mean-motion frequencies stand in the commensurate ratio $n_{\rm Io} : n_{\rm Eur} : n_{\rm Gan} = 4 : 2 : 1$. **(b)** The corresponding orbital periods (1.77, 3.55, 7.15 Earth days) show the 1:2:4 commensurability directly. Repeated conjunctions force small but non-zero orbital eccentricities against tidal damping, producing the time-varying tidal flexing that heats Europa's interior and maintains its subsurface ocean {cite:p}`Hussmann2006`. Course-original schematic; orbital periods from NASA/JPL Solar System Dynamics.
+```
 
 **Enceladus** ($R = 252$ km, $\rho = 1609$ kg m$^{-3}$) provides the most direct evidence for a subsurface ocean: the Cassini spacecraft flew through **geysers** of water vapour and ice particles erupting from four fractures (the "tiger stripes") near the south pole {cite:p}`Porco2006` (see also {ref}`lecture07`). Analysis of the plume material revealed salts, silica nanoparticles (indicating hydrothermal activity on the seafloor at >90°C), and molecular hydrogen ($\mathrm{H_2}$) — a potential energy source for chemosynthetic life. Enceladus's subsurface ocean is global (determined from libration measurements) despite the moon's small size, maintained liquid by tidal heating from its orbital resonance with Dione {cite:p}`Howett2011`.
 
