@@ -252,7 +252,7 @@ While Earth's interior is uniquely well characterised, we can apply the same pri
 :width: 700px
 :align: center
 
-Cross-sections of the four terrestrial planets and Earth's Moon, drawn to relative size. Crust (orange), silicate mantle (grey), and metallic core (red) are coloured uniformly across the bodies; Earth's two-component core (solid inner / liquid outer) is shown explicitly. Mercury's core occupies $\sim$83% of its radius and $\sim$65% of its mass, the largest core fraction of any terrestrial planet, while the Moon has only a small ($\sim$330 km radius) partially molten core. Credit: NASA Solar System Exploration, public domain.
+Cross-sections of the four terrestrial planets and Earth's Moon, drawn to relative size. Crust (orange), silicate mantle (grey), and metallic core (red) are coloured uniformly across the bodies; Earth's two-component core (solid inner / liquid outer) is shown explicitly. Mercury's core occupies $\sim$83% of its radius and $\sim$65-70% of its mass, the largest core fraction of any terrestrial planet, while the Moon has only a small ($\sim$330 km radius) partially molten core. Credit: NASA Solar System Exploration, public domain.
 ```
 
 ```{figure} figures/mars_interior_insight.avif
@@ -270,7 +270,7 @@ NASA's "Inside Mars" infographic summarising the interior structure constrained 
 :width: 600px
 :align: center
 
-Moon interior cross-section synthesising Apollo-era lunar seismology and decades of lunar laser-ranging analysis. A thin anorthositic crust ($\sim$30-40 km) overlies a silicate mantle reaching to $\sim$480 km from the centre. At depth the core is subdivided into an outer partial-melt boundary layer, a liquid Fe-alloy outer core, and a small solid inner core with radius of order $\sim$240 km, consistent with the low measured moment of inertia factor $C/MR^2 = 0.3932$. Course-original schematic; core structure follows the reanalysis of Weber et al. 2011 of Apollo seismic data and the moment of inertia of Williams et al. 2014.
+Moon interior cross-section synthesising Apollo-era lunar seismology and decades of lunar laser-ranging analysis. A thin anorthositic crust ($\sim$30-40 km) overlies a silicate mantle reaching to $\sim$480 km from the centre. At depth the core is subdivided into an outer partial-melt boundary layer, a liquid Fe-alloy outer core, and a small solid inner core with radius of order $\sim$240 km, consistent with the low measured moment of inertia factor $C/MR^2 = 0.3932$. Course-original schematic; core structure follows the reanalysis of {cite:t}`Weber2011` of Apollo seismic data and the moment of inertia of {cite:t}`Williams2014`.
 ```
 
 **Mars** ($C/MR^2 = 0.364$, $\bar{\rho} = 3934$ kg m$^{-3}$) was transformed from a one-data-point problem into a seismically characterised planet by NASA's **InSight mission** (2018–2022). The SEIS seismometer detected hundreds of marsquakes, revealing {cite:p}`Khan2021,Stahler2021`:
@@ -286,7 +286,7 @@ Mars's core is proportionally larger than Earth's (54% vs 55% by radius), but le
 :width: 600px
 :align: center
 
-Mars interior labelled cross-section in the Earth/Jupiter wedge style. The fractional-radius scale on the right marks the $\sim$0.54 core-mantle boundary inferred from InSight body waves and the surface at $R/R_{\rm Mars} = 1$. The liquid Fe-S core, silicate mantle, and thin crust ($\sim$25-45 km) are drawn to relative scale. Course-original schematic; dimensions from {cite:t}`Stahler2021` and {cite:t}`Khan2021`.
+Mars interior labelled cross-section in the Earth/Jupiter wedge style. The fractional-radius scale on the right marks the $\sim$0.54 core-mantle boundary inferred from InSight body waves and the surface at $R/R_{\rm Mars} = 1$. The liquid Fe-S core, silicate mantle, and thin crust ($\sim$25-45 km at the InSight landing site, up to $\sim$70 km beneath the southern highlands) are drawn to relative scale. Course-original schematic; dimensions from {cite:t}`Stahler2021` and {cite:t}`Khan2021`.
 ```
 
 ```{figure} figures/mars_vp_vs.avif
@@ -297,7 +297,7 @@ Mars interior labelled cross-section in the Earth/Jupiter wedge style. The fract
 Radial profiles of Mars $v_P$ (blue) and $v_S$ (red) adopted from InSight seismic analyses. The shear velocity $v_S$ drops to zero below the core-mantle boundary at $\sim$1560 km depth, reflecting the liquid iron-alloy outer core; the compressional velocity $v_P$ decreases there because the liquid state has a smaller bulk modulus than the overlying silicate mantle. A small kink near $\sim$1100 km depth marks the inferred upper-mantle transition. Course-original schematic; compare figure 4 of {cite:t}`Stahler2021` and figure 2 of {cite:t}`Khan2021`.
 ```
 
-**Mercury** ($C/MR^2 = 0.346$, $\bar{\rho} = 5427$ kg m$^{-3}$) presents a puzzle: it has the highest uncompressed density of any terrestrial planet, implying a very large iron core. MESSENGER spacecraft data, combined with Earth-based radar observations of Mercury's forced libration, constrain the core radius to $\sim$2020 km, approximately **83% of the planet's radius** and containing $\sim$65% of its mass {cite:p}`Margot2007,MargotHauck2018`. A thin silicate mantle ($\sim$400 km) and crust ($\sim$30–50 km) overlie this enormous core. Mercury retains a weak but global magnetic field, indicating that at least part of its core is still liquid and convecting. Explaining why Mercury has such a large core fraction remains an active area of research (forward ref {ref}`lecture10`).
+**Mercury** ($C/MR^2 = 0.346$, $\bar{\rho} = 5427$ kg m$^{-3}$) presents a puzzle: it has the highest uncompressed density of any terrestrial planet, implying a very large iron core. MESSENGER spacecraft data, combined with Earth-based radar observations of Mercury's forced libration, constrain the core radius to $\sim$2020 km, approximately **83% of the planet's radius** and containing $\sim$65-70% of its mass {cite:p}`Margot2007,MargotHauck2018`. A thin silicate mantle ($\sim$400 km) and crust ($\sim$30–50 km) overlie this enormous core. Mercury retains a weak but global magnetic field, indicating that at least part of its core is still liquid and convecting. Explaining why Mercury has such a large core fraction remains an active area of research (forward ref {ref}`lecture10`).
 
 ```{figure} figures/mercury_interior.avif
 :name: fig:mercury-interior
@@ -336,7 +336,7 @@ Schematic comparison of Jupiter's heavy-element mass fraction $Z(r)$ in the clas
 
 Central conditions reach approximately 4000 GPa and 20{,}000 K. Jupiter radiates roughly 1.7 times the energy it receives from the Sun, indicating substantial internal heat production from ongoing gravitational contraction (the **Kelvin–Helmholtz mechanism**).
 
-**Saturn** ($M = 95\,\Mearth$, $R = 9.4\,\Rearth$) shares Jupiter's overall structure but with some key differences. Saturn's lower mass means pressures are lower throughout, so the metallic hydrogen transition occurs deeper. Saturn also has a larger proportional heavy-element enrichment. A notable process in Saturn's interior is **helium rain**: as the planet cools, helium becomes immiscible in metallic hydrogen and forms droplets that settle toward the centre, releasing gravitational energy and explaining Saturn's unexpectedly high heat output. Saturn radiates about 2.0 times the absorbed solar flux, more than expected from simple contraction alone. Recent ring seismology with Cassini data revealed that Saturn, like Jupiter, harbours a **diffuse heavy-element core** extending to $\sim$60% of the planet's radius and containing roughly 17 $\Mearth$ of rock and ice {cite:p}`Mankovich2021`.
+**Saturn** ($M = 95\,\Mearth$, $R = 9.4\,\Rearth$) shares Jupiter's overall structure but with some key differences. Saturn's lower mass means pressures are lower throughout, so the metallic hydrogen transition occurs deeper. Saturn also has a larger proportional heavy-element enrichment. A notable process in Saturn's interior is **helium rain**: as the planet cools, helium becomes immiscible in metallic hydrogen and forms droplets that settle toward the centre, releasing gravitational energy and explaining Saturn's unexpectedly high heat output. Saturn radiates about 1.8 times the absorbed solar flux, more than expected from simple contraction alone. Recent ring seismology with Cassini data revealed that Saturn, like Jupiter, harbours a **diffuse heavy-element core** extending to $\sim$60% of the planet's radius and containing roughly 17 $\Mearth$ of rock and ice {cite:p}`Mankovich2021`.
 
 ```{figure} figures/saturn_interior.avif
 :name: fig:saturn-interior

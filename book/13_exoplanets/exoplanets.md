@@ -20,7 +20,7 @@ Exoplanet science is younger than most of the students taking this course.
 The first confirmed planets outside the solar system were announced in 1992 by Aleksander Wolszczan and Dale Frail, who used the radio pulsar **PSR B1257+12** as a precision clock {cite:p}`Wolszczan1992`.
 Pulsars are the rapidly spinning, highly magnetised remnants of massive stars that have already gone supernova.
 The precision of their pulse arrival times rivals the best atomic clocks, and any unmodelled motion of the pulsar around a system barycentre shows up as a small periodic shift in those arrival times.
-The original 1992 *Nature* announcement reported two planets of $4.3$ and $3.9\,\Mearth$ in $66$ and $98$ day orbits around the pulsar; a much smaller third body of about $0.02\,\Mearth$ in a $25$-day orbit was confirmed by {cite:t}`Wolszczan1994` from the same long-baseline timing dataset.
+The original 1992 *Nature* announcement reported two planets with minimum masses of about $2.8$ and $3.4\,\Mearth$ (assuming coplanar orbits) in $66$ and $98$ day orbits around the pulsar. The subsequent analysis by {cite:t}`Wolszczan1994`, which included the mutual gravitational perturbations between the two bodies, refined these masses to $4.3$ and $3.9\,\Mearth$ and additionally revealed a much smaller third body of about $0.02\,\Mearth$ in a $25$-day orbit.
 These were not the planets anyone was looking for.
 They are the survivors, or perhaps the second-generation products, of a supernova explosion.
 They remain a striking reminder that planets can form, or at least exist, in environments that have nothing to do with the textbook picture of star and disk we developed in {ref}`lecture02`.
@@ -716,7 +716,7 @@ Whether modern habitable-zone M dwarf planets have any atmospheric water at all 
 A second concern is **tidal locking**.
 The habitable zone of an M dwarf is so close in that the planet's tidal evolution timescale is short compared to the age of the system, so habitable-zone M dwarf planets are typically expected to be in $1{:}1$ spin-orbit resonance with one hemisphere always facing the star.
 A tidally locked planet has a permanent dayside and a permanent nightside, and the climate must redistribute heat from one to the other through a thick enough atmosphere or condense the volatiles on the nightside.
-Three-dimensional general circulation models of tidally locked M dwarf planets show a richer range of climate states than the older one-dimensional habitable-zone analyses suggested {cite:p}`Turbet2021`, including some configurations with strong clouds on the substellar point that extend the inner edge of the habitable zone closer to the star.
+Three-dimensional general circulation models of tidally locked M dwarf planets show a richer range of climate states than the older one-dimensional habitable-zone analyses suggested {cite:p}`Yang2013`, including some configurations with strong clouds on the substellar point that extend the inner edge of the habitable zone closer to the star.
 The TRAPPIST-1 system is the central laboratory for M dwarf habitability, because the seven planets sample the habitable zone and its bracketing flux regimes simultaneously.
 
 ## Part 3: Characterisation, habitability, and the comparative payoff
@@ -933,7 +933,7 @@ The habitable zone is not a line that a planet either lies inside or outside at 
 It is a **trajectory** through climate-evolution space that the planet has followed since formation.
 
 Second, the one-dimensional Kasting/Kopparapu boundaries are computed under simplifying assumptions about atmospheric circulation and clouds.
-Modern three-dimensional general circulation models (GCMs) {cite:p}`Way2016,Turbet2021` include realistic three-dimensional cloud feedbacks, and they show that the actual habitable-zone boundaries can shift by 5--20\% depending on rotation rate, atmospheric composition, and surface albedo.
+Modern three-dimensional general circulation models (GCMs) {cite:p}`Yang2013,Way2016,Turbet2021` include realistic three-dimensional cloud feedbacks, and they show that the actual habitable-zone boundaries can shift by 5--20\% depending on rotation rate, atmospheric composition, and surface albedo.
 For tidally locked M dwarf planets, GCMs predict a substellar cloud feedback that can extend the inner edge significantly, allowing surface liquid water at instellation fluxes well above the 1D moist greenhouse limit.
 The classical habitable zone is therefore best treated as a useful first-order screening tool, not as a precise boundary.
 
