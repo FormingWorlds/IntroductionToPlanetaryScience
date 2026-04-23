@@ -81,7 +81,7 @@ Within the core, *MESSENGER* gravity and libration data are consistent with a la
 
 ### Why is Mercury so iron-rich?
 
-The single most striking fact about Mercury is its iron enrichment. Earth, Venus, and Mars have core mass fractions of $32\%$, $32\%$, and $24\%$ respectively. Mercury sits at $\sim 70\%$. Three families of explanations have been proposed:
+The single most striking fact about Mercury is its iron enrichment. Earth, Venus, and Mars have core mass fractions of $32\%$, $32\%$, and $24\%$ respectively. Mercury sits at $\sim 65$-$70\%$ {cite:p}`MargotHauck2018`. Three families of explanations have been proposed:
 
 1. **Selective condensation in the inner solar nebula.** In the early condensation models of the 1970s and 1980s, an inner disc midplane that was hot enough to inhibit silicate condensation but cool enough to condense Fe-Ni metal could naturally produce iron-enriched solids close to the Sun. Modern dynamical and chemical models do not, however, support a steep enough condensation gradient at $0.4$ AU, and this hypothesis is no longer favoured.
 
@@ -248,7 +248,7 @@ Timeline of MMX operations at Mars, showing the cruise phase, the multiple Phobo
 
 ### Mars' interior: the InSight revolution
 
-Until recently, our knowledge of Mars' interior structure rested almost entirely on remote sensing. Spacecraft tracking of *Mars Global Surveyor* (1997--2006) and later orbiters constrained the gravity field with high precision. Combined with topography from the Mars Orbiter Laser Altimeter (MOLA) {cite:p}`Smith2001`, this gave maps of crustal thickness inferred from isostatic compensation, and a rough estimate of the moment of inertia. The bulk Mars value $C/MR^2 \approx 0.3645$ was already known (from {ref}`lecture08`) to be more uniform than Earth's, indicating less central mass concentration and a smaller relative core. But the mass of the core, the radius of the core, the composition of the core, and the layering of the mantle were essentially unknown.
+Until recently, our knowledge of Mars' interior structure rested almost entirely on remote sensing. Spacecraft tracking of *Mars Global Surveyor* (1997--2006) and later orbiters constrained the gravity field with high precision. Combined with topography from the Mars Orbiter Laser Altimeter (MOLA) {cite:p}`Smith2001`, this gave maps of crustal thickness inferred from isostatic compensation, and a rough estimate of the moment of inertia. The bulk Mars value $C/MR^2 \approx 0.364$ was already known (from {ref}`lecture08`) to be more uniform than Earth's, indicating less central mass concentration and a smaller relative core. But the mass of the core, the radius of the core, the composition of the core, and the layering of the mantle were essentially unknown.
 
 That changed when NASA's **InSight** lander, the first dedicated geophysical mission to another planet, set its seismometer on the Martian surface in late 2018. Over four years of operation, *InSight*'s SEIS instrument recorded over a thousand marsquakes, ranging from very small high-frequency events from local crustal sources to a handful of large, low-frequency events that interrogated the deep interior. The largest of these (a magnitude $\sim 4.7$ event in May 2022) probed the entire planet.
 

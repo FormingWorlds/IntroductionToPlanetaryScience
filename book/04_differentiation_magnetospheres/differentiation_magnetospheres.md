@@ -90,7 +90,7 @@ The most powerful tool for dating core formation is the **hafnium–tungsten** (
 The magnitude of the ${}^{182}\mathrm{W}$ excess in a planet's mantle, expressed as $\varepsilon^{182}\mathrm{W}$ (parts per 10,000 deviation from chondritic), therefore acts as a **clock** for core formation {cite:p}`Kleine2009`:
 
 - **Earth:** $\varepsilon^{182}\mathrm{W} \approx +2$, indicating that the bulk of core formation was completed within approximately **30–60 Myr** after solar system formation.
-- **Mars:** $\varepsilon^{182}\mathrm{W} \approx +0.4$ on modern measurements of SNC meteorites, indicating early and rapid core formation within approximately **10–20 Myr**. This is consistent with Mars being a smaller body that completed its accretion faster than Earth {cite:p}`Kruijer2017Mars`.
+- **Mars:** $\varepsilon^{182}\mathrm{W} \approx +0.4 \pm 0.1$ in enriched shergottites, indicating early and rapid core formation within approximately **10–20 Myr**. This is consistent with Mars being a smaller body that completed its accretion faster than Earth {cite:p}`Kruijer2017Mars`.
 - **Moon:** The Moon's $\varepsilon^{182}\mathrm{W}$ is close to Earth's, consistent with formation from debris of the giant impact.
 
 ```{figure} figures/hf_w_chronometry.avif
@@ -177,7 +177,7 @@ where $X_{\mathrm{H_2O}}$ is the mole fraction of dissolved water and $p_{\mathr
 :width: 550px
 :align: center
 
-Solubility of H$_2$O in basaltic silicate melt as a function of the H$_2$O partial pressure above the melt, on a log-log scale. The straight line on log-log axes is the signature of the Henrian square-root law of Eq. {eq}`eq:water-solubility`, which arises because dissolved water speciates predominantly as OH$^-$ groups in the melt. A 100 bar magma ocean atmosphere can dissolve $\sim 4$ wt% H$_2$O; a 3 kbar atmosphere can dissolve more than 10 wt%. The plot uses $K \approx 0.42$ wt% MPa$^{-1/2}$ representative of basalt at 1573 K {cite:p}`Hirschmann2012`.
+Solubility of H$_2$O in basaltic silicate melt as a function of the H$_2$O partial pressure above the melt, on a log-log scale. The straight line on log-log axes is the signature of the Henrian square-root law of Eq. {eq}`eq:water-solubility`, which arises because dissolved water speciates predominantly as OH$^-$ groups in the melt. A 1 kbar magma ocean atmosphere can dissolve $\sim 4$ wt% H$_2$O; a 5 kbar atmosphere can dissolve more than 10 wt%. The plot uses $K \approx 0.42$ wt% MPa$^{-1/2}$ representative of basalt at 1573 K {cite:p}`Hirschmann2012`.
 ```
 
 ### Impact erosion versus delivery
@@ -395,7 +395,7 @@ The most compelling evidence for reversals comes from **magnetic stripes** on th
 :width: 750px
 :align: center
 
-Geomagnetic polarity timescale for the past 170 Myr. Black bars mark intervals of normal polarity (north magnetic pole near the geographic north), white bars mark reversed polarity. The reversal rate has varied from $\sim 4$–$5$ per Myr in the late Cenozoic to essentially zero during the Cretaceous Normal Superchron (CNS, C34n, $\sim 83$–$121$ Ma), shown as the long uninterrupted black band in the middle of the panel. The Mesozoic and Cenozoic era intervals (boundary at $\sim 66$ Ma) are marked below the axis. Reversals appear statistically consistent with a non-stationary Poisson process, reflecting the chaotic dynamics of the geodynamo. Schematic; boundary ages are approximate and should not be read to better than $\sim 1$ Myr. Exact chron ages follow the Geologic Time Scale 2020 compilation (Gradstein et al., eds., Elsevier, 2020).
+Geomagnetic polarity timescale for the past 170 Myr. Black bars mark intervals of normal polarity (north magnetic pole near the geographic north), white bars mark reversed polarity. The reversal rate has varied from $\sim 4$–$5$ per Myr in the late Cenozoic to essentially zero during the Cretaceous Normal Superchron (CNS, C34n, $\sim 83$–$121$ Ma), shown as the long uninterrupted black band in the middle of the panel. The Mesozoic and Cenozoic era intervals (boundary at $\sim 66$ Ma) are marked below the axis. Reversals appear statistically consistent with a non-stationary Poisson process, reflecting the chaotic dynamics of the geodynamo. Schematic; boundary ages are approximate and should not be read to better than $\sim 1$ Myr. Exact chron ages follow the Geologic Time Scale 2020 compilation {cite:p}`Gradstein2020`.
 ```
 
 
@@ -413,6 +413,8 @@ Magnetic fields vary enormously across the solar system. Comparing them reveals 
 | **Mars** | Remnant crustal | Up to ~1500 nT | n/a | Dynamo died ~4.1 Ga {cite:p}`Acuna1999,Connerney2005` |
 | **Jupiter** | Active dynamo | ~400–1400 $\mu$T | $\sim 20{,}000$ | Metallic H dynamo {cite:p}`Connerney2022` |
 | **Saturn** | Active dynamo | ~20 $\mu$T | ~600 | Remarkably axisymmetric |
+| **Uranus** | Active dynamo | ~10–100 $\mu$T | ~50 | Multipolar, tilted ~59° and offset from centre |
+| **Neptune** | Active dynamo | ~10–60 $\mu$T | ~28 | Multipolar, tilted ~47° and offset from centre |
 | **Ganymede** | Active dynamo | ~0.7 $\mu$T | $\sim 1.5 \times 10^{-3}$ | Only moon with intrinsic dynamo |
 
 ```{figure} figures/planetary_dipole_moments.avif
