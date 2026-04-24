@@ -159,7 +159,12 @@ What *MESSENGER* did, between 2011 and 2015, was confirm the radar interpretatio
 :width: 500px
 :align: center
 
-Surface reflectance of Mercury at $1064\ \mathrm{nm}$ measured by the *MESSENGER* Mercury Laser Altimeter, projected to $72^\circ$N polar projection. The dark spots correspond to permanently shadowed crater floors. Combined with neutron-spectrometer data, these floors are interpreted as cold-trapped water ice deposits. From {cite:t}`ZuberMLA2012`.
+Mercury's north polar region in polar projection (latitude $\sim 65^\circ$N to the pole), from {cite:t}`Neumann2013` Fig. 1.
+**(A)** MLA topography (colour scale in km above the reference sphere), showing the cratered high-northern-latitude terrain with several impact craters visible along the polar circle.
+**(B)** MLA $1064$-nm surface reflectance on the same polar projection (colour scale $0$ to $0.10$). Dark spots (low reflectance, red markers) are located inside permanently shadowed crater floors.
+**(C)** Biannual-average insolation at the surface, expressed as a percentage of the 1 AU solar constant. The darkest regions coincide with the low-reflectance spots in panel B: the crater floors receive essentially zero direct sunlight year-round.
+**(D)** Biaxial maximum illumination temperature, again showing permanently cold regions coinciding with the anomalously dark reflectance in B.
+The spatial coincidence of low reflectance, zero insolation, and low temperature is interpreted as evidence that Mercury's permanently shadowed crater floors host **surface-near volatiles**: a thin lag of organic-rich material (responsible for the low 1064-nm reflectance) overlying a **water-ice** deposit. Combined with MESSENGER neutron-spectrometer evidence of hydrogen enrichment at the same craters {cite:p}`Lawrence2013`, this establishes Mercury as a rocky body that retains cold-trapped volatiles despite its proximity to the Sun. From {cite:t}`Neumann2013`.
 ```
 
 The total mass of polar water on Mercury is estimated at $\sim 10^{16}$ to $10^{18}$ g, the equivalent of one to several billion tonnes spread across $\sim 5\times10^4\ \mathrm{km^2}$ of permanently shadowed terrain {cite:p}`Lawrence2013`. The cold-trap mechanism is straightforward: water molecules delivered by comet impacts, asteroids, or dehydration of Mercury's interior wander randomly around the planet via ballistic hops, and any molecule that lands in a permanently shadowed crater floor (with an equilibrium temperature of $\sim 100$ K) is effectively frozen out for billions of years. The persistence of the deposit requires both that Mercury's obliquity has stayed close to zero throughout its history, so that no crater floor has been temporarily illuminated, and that the total delivery rate of cometary and asteroidal volatiles has been sufficient to keep up with sputtering and photodesorption losses from the exposed deposits.
@@ -398,7 +403,7 @@ The three-stage aqueous history of Mars proposed by {cite:t}`Bibring2006` from O
 :width: 700px
 :align: center
 
-OMEGA hyperspectral mapping of Mars from {cite:t}`Bibring2006`, showing the spatial distribution of phyllosilicate (clay) detections (top) and sulfate detections (bottom) across the global longitude range. Clays cluster in the Noachian southern highlands; sulfates are concentrated in lower-latitude and equatorial sites consistent with later, more acidic and evaporative aqueous environments.
+Global map of hydrated minerals on Mars from OMEGA/*Mars Express*, after {cite:t}`Bibring2006` Fig. 3. **Top:** detections only, on a black background. **Bottom:** the same detections overlaid on an MGS/MOLA altitude reference map. **Red** points mark phyllosilicate (clay) detections, **blue** points mark sulfate detections, and **yellow** points mark other hydrated minerals whose spectral signatures are not driven by metal-OH vibrations. Clays cluster preferentially in the Noachian southern highlands, consistent with neutral-pH aqueous alteration during the **phyllosian** stage. Sulfates are concentrated at lower-latitude and equatorial sites, consistent with later, drier, more acidic evaporative settings of the **theiikian** stage ({numref}`fig:bibring-timeline`). Reproduced from {cite:t}`Bibring2006`.
 ```
 
 **Sulfate deposits** record a later, drier, more acidic phase of Mars' history, often associated with evaporative settings. Both the *Opportunity* rover at Meridiani Planum and the *Curiosity* rover at Gale crater have made extensive in-situ measurements of sulfate-bearing strata.
