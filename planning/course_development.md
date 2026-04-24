@@ -1007,3 +1007,13 @@ No-op items in second batch: M4.30 (Tharsis Montes style already consistent), M4
 New BibTeX entry: `IvanovHead2015` (Planetary and Space Science 113, 10–32; ADS-verified).
 
 Session summary: branch `tl/full-course-review-low-items-2026-04-24` now contains two commits closing all 43 §M4 LOW items. 6 new bib entries total across both commits (Adriani2020, Byrne2014, Sotin2021, Murakami2004, IvanovHead2015, plus Wayback-mirror annotations on 3 NSSDC Fact Sheet entries). Remaining full-course-review work: paywalled figure batch (§M6, ~10 items), L4 content expansion, pedagogical decisions (§M8).
+
+### 7.6 L5 MAVEN figures added 2026-04-24 (figure-audit item #5 closed)
+
+Three MAVEN figures added to L5 §"Non-thermal escape mechanisms" after the `Jakosky2018` escape-rate paragraph:
+
+- `maven_science_orbit.avif` (NASA SVS 4190 "MAVEN: Science Orbit" still) — shows the orbit transition from insertion ellipse to science orbit, contextualising how MAVEN samples the atmosphere at altitudes from $\sim$150 to $\sim$6200 km.
+- `maven_ion_plume.avif` (NASA SVS 4370 "Solar Wind Strips the Martian Atmosphere" still) — ion-escape visualisation showing the polar ion plume (red, high-energy) and the extended tail (green, bulk escape).
+- `maven_o_loss_channels.avif` (redrawn from `Jakosky2018` Fig. 6) — O loss rate decomposed into sputtering, photochemical, and O ion channels summing to total, matching the "photochemical, thermal, and solar-wind-driven channels" phrasing in the surrounding prose.
+
+L5 figure count goes from 23 to 26, reaching the 25-figure norm. All three figures carry NASA public-domain attribution (SVS 4370, SVS 4190) or Icarus journal attribution (Jakosky 2018) in their captions. Figure-audit closure ticks item #5 in `figure_audit_2026-04-22_status.md`.
