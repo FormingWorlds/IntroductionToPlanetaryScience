@@ -986,4 +986,24 @@ Second step-by-step per-item approval session. 25 of ~43 LOW items from meta-rev
 
 **New BibTeX entries added (5):** `Adriani2020`, `Byrne2014`, `Sotin2021`, `Murakami2004`, and (as URL/note updates, not new) the three NSSDC Fact Sheet Wayback mirrors.
 
-**Remaining in §M4:** ~18 LOW items (M4.26 through M4.43), including L9 display-math blank-line cosmetic, $S_{\rm Venus}$ 0.4% rounding, $C_m$ notation intro (L10), various bib-year and figure-attribution tweaks, L13 mission-date disclaimer, L14 TRAPPIST-1 luminosity drift, K-dwarf→early-M-dwarf label fix.
+**Remaining in §M4 (2026-04-24 session):** all 18 remaining LOW items (M4.26 through M4.43) closed in the same sitting. All 43 §M4 items now resolved (25 substantive edits, 12 no-ops where PR #3/#4 had already closed or the item was a non-issue on inspection, 6 items closed with proper bib entries added).
+
+Second-batch substantive edits:
+- L9 M4.26: IvanovHead2015 bib entry added; text-only "Ivanov & Head 2015" → `{cite:t}`
+- L9 M4.27: three gratuitous blank lines after opening `$$` in runaway-greenhouse blackboard removed
+- L9 M4.28: Venus stellar flux 2614 → 2604 W/m² (matches $S_\odot/0.723^2$ internally)
+- L10 M4.29: $C_m$ notation expanded with full definition of both symbols
+- L11 M4.32: `NationalAcademies2023` → `NationalAcademies2022` key + year (April 2022 actual pub date); both L11 prose callers updated to "2022 Planetary Science Decadal Survey"
+- L11 M4.33: superionic-ice pressure range 100–200 → 100–400 GPa (matches Millot 2019 experimental range)
+- L12 M4.34: NC/CC iron-meteorite prose list expanded to full 5 groups (IIC, IID, IIF, IIIF, IVB)
+- L12 M4.35: Rubin phrasing corrected: "engineering first light in 2024 and System First Look on 23 June 2025"
+- L12 M4.37: Oort cloud subdivision (inner Hills 2,000–20,000 AU; outer classical 20,000–50,000 AU) introduced at first mention
+- L13 M4.40: mission-date disclaimer sentence added to frontier-mission section
+- L14 M4.42: 0.5 M☉ "K/M dwarf" → "early M dwarf" (spectral-type correction)
+- L14 M4.43: mission-date disclaimer in The Next Decade section
+
+No-op items in second batch: M4.30 (Tharsis Montes style already consistent), M4.31 (deliberately uncited per review), M4.36 (DART mass already ~600 kg per PR #3), M4.38 (NEA count already 38,000 per PR #3), M4.39 (Bell2024 already renamed per PR #3), M4.41 (TRAPPIST-1 luminosity kept at $\sim 5 \times 10^{-4}$ per user preference).
+
+New BibTeX entry: `IvanovHead2015` (Planetary and Space Science 113, 10–32; ADS-verified).
+
+Session summary: branch `tl/full-course-review-low-items-2026-04-24` now contains two commits closing all 43 §M4 LOW items. 6 new bib entries total across both commits (Adriani2020, Byrne2014, Sotin2021, Murakami2004, IvanovHead2015, plus Wayback-mirror annotations on 3 NSSDC Fact Sheet entries). Remaining full-course-review work: paywalled figure batch (§M6, ~10 items), L4 content expansion, pedagogical decisions (§M8).

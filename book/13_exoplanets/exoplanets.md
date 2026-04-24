@@ -988,6 +988,7 @@ The full discussion will return in {ref}`lecture14`.
 
 The exoplanet mission queue for the next decade is dense.
 The first cluster of missions, scheduled for launches in 2026--2030, is focused on transit photometry and atmospheric spectroscopy of an extended sample of known and new targets.
+All dates quoted below are planning targets as of early 2026 and are commonly revised by months to years over the course of mission development.
 
 **PLATO** (PLAnetary Transits and Oscillations of stars) is an ESA medium-class mission scheduled for launch at the end of 2026 {cite:p}`Rauer2014`.
 PLATO carries 24 small telescopes operating as a single multi-aperture photometric array and is designed for high-precision photometry of a large sample of bright Sun-like stars over 2--3 year monitoring baselines.
