@@ -556,6 +556,30 @@ Several processes can eject atmospheric particles to space without relying on th
 
 The MAVEN mission at Mars has measured the present-day total atmospheric escape rate at $\sim 2$–$3$ kg s$^{-1}$ for H and O combined, integrated across photochemical, thermal, and solar-wind-driven channels {cite:p}`Jakosky2018`.
 
+```{figure} figures/maven_science_orbit.avif
+:name: fig:maven-science-orbit
+:width: 650px
+:align: center
+
+MAVEN's science orbit around Mars, showing how the spacecraft transitioned from the highly elliptical Mars-orbit insertion trajectory (outermost path) through an intermediate ellipse to its final science orbit with a periapsis near $\sim$150 km altitude and an apoapsis of $\sim$6200 km. The low-altitude periapsis passes sample the thermosphere and exobase region where most species-specific escape occurs, while the higher apoapsis samples the ionised tail and pickup-ion environment downstream of Mars relative to the solar wind. The combination enables simultaneous in-situ and remote-sensing characterisation of the atmospheric-escape pathways summarised above. Credit: NASA's Scientific Visualization Studio (SVS ID 4190), public domain.
+```
+
+```{figure} figures/maven_ion_plume.avif
+:name: fig:maven-ion-plume
+:width: 650px
+:align: center
+
+NASA Scientific Visualization Studio rendering of the ion plume escaping from Mars, based on MAVEN data. The most energetic ions (red) are accelerated in a plume above the planet, while the bulk of escaping ions (green) are lost along the tail region behind Mars relative to the solar wind. Unmagnetised Mars is particularly vulnerable to this class of solar-wind-driven escape because the solar wind reaches deep into the upper atmosphere rather than being deflected by a global dipole field. Credit: NASA's Scientific Visualization Studio (SVS ID 4370), PI Bruce Jakosky, public domain.
+```
+
+```{figure} figures/maven_o_loss_channels.avif
+:name: fig:maven-o-loss-channels
+:width: 600px
+:align: center
+
+Present-day oxygen loss rates from Mars decomposed into escape channels, after {cite:t}`Jakosky2018` Fig. 6. Horizontal bars indicate the loss rate (log$_{10}$ s$^{-1}$) for O ion escape, photochemical escape, and sputtering, plus the combined total. Photochemical escape dominates the oxygen budget today; sputtering is sub-dominant at present solar activity but was likely comparable or larger in the young, EUV-active Sun epoch. The three channels sum to the total at the top of the panel and, together with hydrogen escape, give the $\sim 2$–$3$ kg s$^{-1}$ figure quoted in the text. Redrawn from {cite:t}`Jakosky2018`.
+```
+
 ```{figure} figures/mars_atmosphere.avif
 :name: fig:mars-atmosphere
 :width: 550px
