@@ -109,11 +109,11 @@ Compact multi-planet systems with four or more transiting planets interior to 1.
 
 The mass-radius diagram offers a complementary view ({numref}`fig:l14:massrad`). Plotting bulk density implied by mass and radius for the planets in the solar system and for the exoplanets where both quantities are known, one sees that the rocky planets cluster along a narrow track set by the equation of state of silicate mantles and iron cores, while the larger planets spread out into the volatile-rich and the gas-dominated regimes. The solar system terrestrials sit firmly on the "Earth-like" composition curve. Many close-in exoplanet super-Earths sit on the same curve too, indicating that the population of bare rocky cores is real, but a substantial subset of slightly larger planets sits *above* the rocky line, indicating that they retain significant volatile envelopes that swell their radii relative to a pure-rock composition.
 
-```{figure} figures/wordsworth2022_mass_radius.avif
+```{figure} figures/lichtenberg2025_mass_radius.avif
 :name: fig:l14:massrad
-:width: 80%
+:width: 95%
 
-Mass-radius diagram for solar system rocky planets and small exoplanets, with theoretical equation-of-state tracks for compositions ranging from pure iron through Earth-like rocky to pure water. The solar system terrestrials sit on the Earth-like curve. The exoplanets above that curve are inferred to retain volatile envelopes, the most common interpretation being H/He on top of a rocky core (the "sub-Neptune" population). Reproduced from {cite:t}`Wordsworth2022`.
+Mass-radius diagram for rocky and small exoplanets from {cite:t}`Lichtenberg2025` Fig. 2. Data points are observed exoplanets with measured masses and radii, colour-coded by equilibrium temperature into **temperate** (blue), **bistable** (light blue), **lava** (red), and **rock-vapour** (orange) regimes; symbol shape marks **high-priority** atmospheric-characterisation targets (diamonds) and lower-priority targets (circles). Labelled planets include TRAPPIST-1 b through h, GJ 367 b, GJ 1132 b, GJ 486 b, K2-18 b, K2-141 b, LHS 1140 b, L 98-59 b/c/d, GJ 1252 b, LTT 1445 A b, and several TOI targets. Theoretical equation-of-state tracks range from **100% Fe** (bottom) through **Earth-like** rocky and **100% MgSiO$_3$**, with volatile-rich tracks for **Earth-like + 50 wt% H$_2$O**, **magma ocean + 0.1 wt%** or **5.4 wt% H$_2$O**, and a **gas-dwarf birth + H/He boil-off** curve that bounds the potential sub-Neptune population (shaded at upper left). Solar-system terrestrials sit on the Earth-like curve; exoplanets above it either retain volatile envelopes (H/He, water, or melt-water mixtures) or are otherwise reshaped by magma-ocean outgassing and photoevaporation. Reproduced from {cite:t}`Lichtenberg2025`.
 ```
 
 ### "Is the solar system rare?"
@@ -130,11 +130,11 @@ What we can say with confidence is that the inner solar system is *atypical* rel
 
 The reverse statement, that planet *occurrence rates depend strongly on stellar type*, is by now well established. {numref}`fig:l14:mulders-occurrence` shows the close-in (period $< 50$ days) small-planet occurrence rate as a function of stellar effective temperature, compiled from a decade of Kepler, K2, and ground-based surveys: rocky and sub-Neptune-sized planets are roughly twice as common around early M dwarfs as around F and G dwarfs, and the trend continues into the late M regime. Whether this trend reflects formation efficiency in lower-mass disks or detection bias in different survey samples is still being debated, but the headline conclusion, that "Earth-sized planets are not rare around low-mass stars", is robust.
 
-```{figure} figures/mulders2018_occurrence_vs_teff.avif
+```{figure} figures/mulders2024_occurrence_vs_teff.avif
 :name: fig:l14:mulders-occurrence
 :width: 80%
 
-Average number of close-in planets per star (orbital period less than 50 days) as a function of host-star effective temperature, compiled from a representative subset of Kepler, K2, and M-dwarf transit and radial-velocity surveys (Howard+12, Mulders+15, Hardegree-Ullman+19, Yang+20, He+21, Sabotta+21, Bergsten+22, Ment & Charbonneau23). The occurrence rate rises by about a factor of 2 from F dwarfs ($\sim 6500$ K) to early M dwarfs ($\sim 3500$ K), then drops slightly toward the latest M types where the surveys are smallest and the most uncertain. The takeaway is that small close-in planets are most common around the most numerous class of stars in the galaxy. Composite figure compiled for this course from the cited literature; the headline demographic trend is reviewed in {cite:t}`Bergsten2022`.
+Overview of planet occurrence rates as a function of host-star effective temperature, for planets between $1$–$4\,\Rearth$ on orbital periods $P < 50$ days, from {cite:t}`Mulders2024` Fig. 5. Rates were re-scaled assuming uniform occurrence in $\log P$ and $\log R$ for cross-study comparison. Plotted data are compiled from Howard+12, Mulders+15, Hardegree-Ullman+19, Yang+20, He+21, Sabotta+21, {cite:t}`Bergsten2022`, and Ment & Charbonneau 23 (see {cite:t}`Mulders2024` for full references). Across all studies, planet occurrence increases by roughly a factor of 2 from F dwarfs ($\sim 6500$ K) to early M dwarfs ($\sim 3500$ K); a break appears toward late M dwarfs, but those surveys sample only very short periods ($< 10$ d) so the late-M values are lower limits. The headline message is that small, close-in planets are most common around the most numerous class of stars in the galaxy. Reproduced from {cite:t}`Mulders2024`.
 ```
 
 
