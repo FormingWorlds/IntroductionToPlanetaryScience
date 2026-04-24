@@ -1032,3 +1032,15 @@ Six L9 §6.5 figures refreshed using Groningen institutional access to Nature an
 **Remaining §M6 items (for next session):** A7 MESSENGER MLA polar 1064 nm reflectance (L10 `fig:mla-polar`) — needs attribution correction from `ZuberMLA2012` to `Neumann2013` (Science 339, 296; DOI 10.1126/science.1229764) plus figure swap; G2 Bibring et al. 2006 phyllosilicate map (L10); and G6 NC/CC noble-gas citation (no action per review). Neumann2013 bib entry to be added.
 
 All §M4 LOW items and all §M8 pedagogical decisions remain closed on main; L4 content expansion (meta-review recommendation #5) remains open as a discretionary task.
+
+### 7.8 L10 paywalled-figure closure 2026-04-24 (§M6 completion)
+
+Final two active §M6 items closed via a continuation of the Tim-in-the-loop screenshot workflow. Covers A7 MESSENGER MLA polar and G2 Bibring 2006 phyllosilicates.
+
+- **A7 `fig:mla-polar`** (L10): figure swapped from an 850x300 cropped panel to Neumann 2013 Fig. 1 (749x866, 4 panels: topography, 1064-nm MLA reflectance, insolation, biaxial illumination). **Citation attribution changed** from `ZuberMLA2012` (topography paper) to the correct `Neumann2013` (Science 339, 296, "Bright and Dark Polar Deposits on Mercury"), with a new bib entry verified via ADS (bibcode `2013Sci...339..296N`, DOI `10.1126/science.1229764`). Caption rewritten to describe all four panels and the spatial coincidence of low reflectance + zero insolation + low temperature that supports the cold-trapped-volatiles interpretation; `Lawrence2013` cross-cited for neutron-spectrometer confirmation.
+- **G2 `fig:bibring-global`** (L10): figure swapped from a cropped two-panel miscredited version to Bibring 2006 Fig. 3 (the canonical combined phyllosilicate + sulfate global map overlaid on MOLA topography; red = phyllosilicates, blue = sulfates, yellow = other hydrated). Caption rewritten to match the actual colour-coded legend and tie detections to the phyllosian/theiikian stages via cross-reference to `fig:bibring-timeline`.
+- **G6 NC/CC noble-gas citation**: no-action per meta-review.
+
+**Tooling**: added `tmp_images/` to `.gitignore` so that transient screenshot uploads during paywalled-figure sessions can never be accidentally committed.
+
+All §M6 items that require action are now closed on main. Remaining full-course-review residue: **L14 Mulders true source** (interim Bergsten2022 caption applied in PR #4; the actual composite source is still unknown and likely blocked on Tim's archive) and **L4 content expansion** (meta-review recommendation #5, discretionary).
