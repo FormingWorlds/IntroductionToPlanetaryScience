@@ -307,9 +307,7 @@ Recent analysis of Magellan gravity data has identified coronae that appear to o
 :width: 95%
 :align: center
 
-Global geological terrain map of Venus from radar mapping by Magellan, with colour overlays indicating the major terrain classes: volcanic plains (green), highland tesserae (orange), deformed terrain (purple/grey), rift zones (red), impact craters (white circles), and coronae (pink ovals).
-Major regional names are labelled.
-Mapping by {cite:t}`Widemann2023`, after {cite:t}`IvanovHead2015`.
+Global geological-terrain map of Venus from {cite:t}`Widemann2023` Fig. 15, overlaid on a Magellan radar base. Coloured polygons are the Regions of Interest (RoIs) defined in the ESA EnVision Science Operations Reference Scenario; together they cover roughly 30% of Venus's surface and span the major terrain classes: **plains** (light green), **tessera** highlands (tan), **deformed terrain** (pale yellow), **rift zones** (red), **Artemis chasma** (purple), and **craters** (grey). Named regional landmarks (Maxwell Montes, Fortuna Tessera, Ishtar Terra, Beta Regio, Aphrodite Terra, Alpha Regio, and others) are labelled. Terrain classification after {cite:t}`IvanovHead2015`; reproduced from {cite:t}`Widemann2023`.
 ```
 
 **Impact crater density** on Venus is low, corresponding to a global average crater retention age of $300\text{--}700$ Myr.
@@ -444,9 +442,10 @@ Reproduced from {cite:t}`Goldblatt2013`.
 :width: 75%
 :align: center
 
-Outgoing longwave radiation spectrum as a function of wavenumber for a dense $\mathrm{H_2O}$ atmosphere with surface temperature $400$ K and stratospheric temperature $200$ K, from {cite:t}`Goldblatt2013`.
-The dense water atmosphere absorbs almost all bands across the thermal infrared, so the emission to space (red curve from the SMART line-by-line model) is everywhere bounded above by a $400$ K blackbody curve (black) but is strongly attenuated by the $\mathrm{H_2O}$ continuum at $200$ K.
-The integrated OLR (about $285\text{--}297$ W/m$^2$) is independent of further surface warming because additional water vapour just thickens the optically thick atmosphere without raising the radiating-level temperature.
+Thermal-radiance spectra of an Earth-like atmosphere as a function of wavelength for surface temperatures $T_\mathrm{s} = 280, 310, 340, 370, 400$ K (bottom to top), from {cite:t}`Goldblatt2013` Fig. 3(b).
+Black and red curves are two independent line-by-line model calculations; grey dotted curves show the blackbody reference at each $T_\mathrm{s}$.
+As $T_\mathrm{s}$ rises from 280 K to 400 K, the H$_2$O continuum absorbs an ever-larger fraction of the thermal emission across the infrared, and the 8–14 $\mu$m atmospheric window closes.
+Above $T_\mathrm{s} \sim 340$ K the integrated outgoing flux saturates at the **runaway-greenhouse asymptote** of $\sim 282$ W m$^{-2}$ (cf. {numref}`fig:goldblatt-runaway`): further surface warming no longer produces a compensating increase in emission to space.
 Reproduced from {cite:t}`Goldblatt2013`.
 ```
 
@@ -603,10 +602,11 @@ On this view, Venus never had liquid surface water, and the present-day desiccat
 :width: 90%
 :align: center
 
-The two types of terrestrial planet identified by {cite:t}`Hamano2013` from coupled magma-ocean and atmosphere thermal evolution models, presented in the plane of orbital semimajor axis ($x$-axis) versus initial water inventory ($y$-axis).
-**Type I** planets (Earth-like, blue region) crystallise their magma oceans within a few million years and develop a condensed surface ocean.
-**Type II** planets (Venus-like, orange region) have absorbed flux above the Simpson-Nakajima limit and cannot lose heat fast enough to crystallise; their magma oceans persist for hundreds of millions of years, and water photolyses and escapes throughout this time.
-The boundary between Type I and Type II falls between Earth's and Venus' orbits, providing a natural explanation for the Earth-Venus dichotomy.
+The two types of terrestrial planet identified by {cite:t}`Hamano2013` from coupled magma-ocean and atmosphere thermal-evolution models.
+**Top panel:** magma-ocean solidification time as a function of orbital distance (lower $x$-axis) and, equivalently, of net stellar radiation at the tropopause $\tau_0$ (upper $x$-axis). **Bottom panel:** final water inventory retained on the planet. Coloured curves show different initial water inventories from 0.01 to 10 Earth-ocean masses ($M_\mathrm{EO}$).
+For orbital distances larger than the critical value $a_\mathrm{cr} \approx 0.77$ AU (or net stellar radiation below the tropospheric limit $F_\mathrm{lim}$) the magma ocean crystallises within a few Myr and most of the initial water is retained: this is the **Type I** (Earth-like) regime.
+Inside $a_\mathrm{cr}$ the solidification time diverges and the atmosphere loses essentially all its water to hydrodynamic escape: this is the **Type II** (Venus-like) regime.
+The sharp transition at $a_\mathrm{cr}$ corresponds to the Simpson-Nakajima runaway-greenhouse threshold ({numref}`fig:goldblatt-runaway`) and provides a natural explanation for the Earth-Venus dichotomy.
 Reproduced from {cite:t}`Hamano2013`.
 ```
 
@@ -615,11 +615,12 @@ Reproduced from {cite:t}`Hamano2013`.
 :width: 70%
 :align: center
 
-Typical evolution of a Type I planet (placed at $0.7$ AU but with low net stellar radiation) from {cite:t}`Hamano2013`.
-**Top panel:** size of the magma ocean (green), atmospheric water (red), and water in the solid mantle (blue), as fractions of the initial water reservoir.
-**Bottom panel:** outgoing planetary radiation (red) and net incoming stellar radiation (green dashed), with the asymptotic stratospheric and tropospheric radiation limits (dotted lines).
-The magma ocean solidifies in a few Myr; the steam atmosphere then condenses to form a permanent surface ocean.
-Type II planets (closer to the star) never reach this end-state because the absorbed flux exceeds the runaway limit.
+Typical evolution of a Type I planet at $1$ AU with initial water inventory $\approx 5$ Earth-ocean masses, from {cite:t}`Hamano2013` Fig. 1.
+**Top panel:** atmospheric pressure (grey shading left axis) and temperature (right axis), together with the cumulative mantle fractions that exist as melts vs solidified cumulates.
+**Middle panel:** size of the magma ocean (green), atmospheric water (red), and water in the solidified mantle (blue), as fractions of the initial water reservoir.
+**Bottom panel:** planetary radiation (red) and net incident stellar radiation (green dashed), with the asymptotic stratospheric and tropospheric radiation limits (dotted lines). The difference between planetary radiation and net stellar radiation (arrow) is the surplus that can be radiated from the magma ocean.
+The magma ocean reaches the tropospheric radiation limit after $\sim 0.7$ Myr and is fully solidified by $\sim 4$ Myr; the steam atmosphere then condenses to form a permanent surface ocean.
+Type II planets inside $a_\mathrm{cr}$ never reach this end-state because the absorbed flux exceeds the tropospheric radiation limit (cf. {numref}`fig:hamano-two-types`).
 Reproduced from {cite:t}`Hamano2013`.
 ```
 
