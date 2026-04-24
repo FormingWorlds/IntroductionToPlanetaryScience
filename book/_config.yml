@@ -25,6 +25,15 @@ sphinx:
     bibtex_default_style: chicago
     suppress_warnings:
       - bibtex.duplicate_citation
+    # Per-lecture figure numbering: "Fig. 4.3" rather than "Fig. 93".
+    # numfig_secnum_depth = 1 prefixes figure numbers with the top-level
+    # section number (chapter index from numbered TOC).
+    numfig: true
+    numfig_secnum_depth: 1
+    numfig_format:
+      figure: "Fig. %s"
+      table: "Table %s"
+      code-block: "Listing %s"
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     mathjax3_config:
       tex:
