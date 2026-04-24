@@ -33,7 +33,7 @@ The **P-wave shadow zone** (104°-140° from the epicentre) labelled in this USG
 
 | Body | $C/MR^2$ | Interpretation |
 |------|:---------:|:--------------:|
-| Uniform sphere | 0.400 | Homogeneous, undifferentiated |
+| Uniform sphere | 0.400 | Reference value ($2/5$) |
 | Moon | 0.393 | Weakly differentiated, small core |
 | Mars | 0.364 | Moderately differentiated |
 | Mercury | 0.346 | Large dense core |
@@ -230,14 +230,14 @@ As pressure and temperature increase with depth, minerals undergo **phase transi
 
 The **410 km discontinuity** marks the transition of olivine ($\mathrm{(Mg,Fe)_2SiO_4}$) to wadsleyite, a denser crystal structure with the same chemical composition. At 660 km, the most dramatic transformation occurs: ringwoodite (the highest-pressure olivine polymorph) breaks down into bridgmanite ($\mathrm{(Mg,Fe)SiO_3}$, a perovskite-structured phase) plus ferropericlase ($\mathrm{(Mg,Fe)O}$). This **660 km discontinuity** is the most important internal boundary within the mantle, marking the transition from upper to lower mantle. Its negative Clapeyron slope (the boundary pressure decreases with increasing temperature) means it partially resists the passage of convecting material, influencing the style of mantle convection.
 
-Near the base of the mantle ($\sim$2700 km depth), bridgmanite transforms to **post-perovskite**, a phase discovered in laboratory experiments in 2004. This transition may explain the seismically anomalous **D" layer** just above the core–mantle boundary, where seismic velocities show complex lateral variations.
+Near the base of the mantle ($\sim$2700 km depth), bridgmanite transforms to **post-perovskite**, a phase discovered in laboratory experiments in 2004 {cite:p}`Murakami2004`. This transition may explain the seismically anomalous **D" layer** just above the core–mantle boundary, where seismic velocities show complex lateral variations.
 
 ```{figure} figures/mantle_phase_diagram.avif
 :name: fig:mantle-phase-diagram
 :width: 600px
 :align: center
 
-Schematic pressure-temperature phase diagram of the Earth's mantle in the olivine-bearing system. Solid black lines show the major phase boundaries: olivine ($\alpha$-Mg$_2$SiO$_4$) → wadsleyite ($\beta$) at $\sim$14 GPa (410 km), wadsleyite → ringwoodite ($\gamma$) at $\sim$18 GPa (520 km), ringwoodite → bridgmanite + ferropericlase at $\sim$24 GPa (660 km), and bridgmanite → post-perovskite (PPv) at $\sim$125 GPa (D" layer, $\sim$2700 km). The dashed red curve traces an approximate Earth mantle geotherm. The 660 km transition has a negative Clapeyron slope, which partially resists upwelling/downwelling material flux. Boundary positions adapted from {cite:t}`Turcotte2002` and post-perovskite from laboratory experiments by Murakami et al. (2004). Schematic; absolute slopes are approximate.
+Schematic pressure-temperature phase diagram of the Earth's mantle in the olivine-bearing system. Solid black lines show the major phase boundaries: olivine ($\alpha$-Mg$_2$SiO$_4$) → wadsleyite ($\beta$) at $\sim$14 GPa (410 km), wadsleyite → ringwoodite ($\gamma$) at $\sim$18 GPa (520 km), ringwoodite → bridgmanite + ferropericlase at $\sim$24 GPa (660 km), and bridgmanite → post-perovskite (PPv) at $\sim$125 GPa (D" layer, $\sim$2700 km). The dashed red curve traces an approximate Earth mantle geotherm. The 660 km transition has a negative Clapeyron slope, which partially resists upwelling/downwelling material flux. Boundary positions adapted from {cite:t}`Turcotte2002` and post-perovskite from laboratory experiments by {cite:t}`Murakami2004`. Schematic; absolute slopes are approximate.
 ```
 
 These phase transitions are not unique to Earth. Any sufficiently large rocky body will experience them at appropriate pressures, though the specific depths depend on the body's size, gravity, and thermal state. Mars, for example, likely has an olivine-to-wadsleyite transition in its deep mantle, while the Moon is too small to reach the required pressures.
@@ -390,7 +390,7 @@ Among the most remarkable discoveries in planetary science is that several moons
 Artist's concept of Europa's subsurface environment. The cross-section reveals (top to bottom): the fractured ice surface with plume activity, the ice shell with possible convective features, the global liquid water ocean, and the rocky seafloor where hydrothermal vents may provide chemical energy for life. Jupiter looms in the background. The ocean is estimated to be $\sim$60–150 km deep, containing 2–3 times the volume of Earth's oceans. Credit: NASA/JPL-Caltech (PIA26438).
 ```
 
-**Europa** ($R = 1561$ km, $\rho = 3013$ kg m$^{-3}$) has an ice shell estimated at $\sim$15–25 km thick overlying a global ocean $\sim$60–150 km deep, containing roughly 2–3 times the volume of Earth's oceans. The evidence comes from multiple sources: magnetic induction measurements by the Galileo spacecraft (a time-varying magnetic field induced by Jupiter's rotating magnetosphere, requiring a near-surface conducting layer), surface geology (disrupted ice blocks in **chaos terrain** that resemble terrestrial sea ice), and gravity data. Tidal heating from Europa's orbital eccentricity (maintained by the Laplace resonance with Io and Ganymede) provides the energy to keep the ocean liquid {cite:p}`Hussmann2006`. The upcoming **Europa Clipper** mission (launched 2024) will characterise Europa's ice shell and ocean in unprecedented detail.
+**Europa** ($R = 1561$ km, $\rho = 3013$ kg m$^{-3}$) has an ice shell estimated at $\sim$15–25 km thick (thin-shell models; thick-shell models give $\sim$30–50 km) overlying a global ocean $\sim$60–150 km deep, containing roughly 2–3 times the volume of Earth's oceans. The evidence comes from multiple sources: magnetic induction measurements by the Galileo spacecraft (a time-varying magnetic field induced by Jupiter's rotating magnetosphere, requiring a near-surface conducting layer), surface geology (disrupted ice blocks in **chaos terrain** that resemble terrestrial sea ice), and gravity data. Tidal heating from Europa's orbital eccentricity (maintained by the Laplace resonance with Io and Ganymede) provides the energy to keep the ocean liquid {cite:p}`Hussmann2006`. The upcoming **Europa Clipper** mission (launched 2024) will characterise Europa's ice shell and ocean in unprecedented detail.
 
 ```{figure} figures/tidal_resonance.avif
 :name: fig:tidal-resonance
@@ -410,7 +410,7 @@ Orbital geometry of the Io-Europa-Ganymede **Laplace resonance** powering Europa
 Cutaway artist's rendering of Enceladus's interior with a global subsurface liquid water ocean (blue) sandwiched between an icy crust (light grey) and a porous rocky core (dark grey). The geometry was confirmed by {cite:t}`Porco2006`-era plume detection plus subsequent libration measurements. The plume sources at the south polar terrain are visible at the bottom. Credit: NASA/JPL-Caltech (PIA19656).
 ```
 
-**Titan** ($R = 2575$ km, $\rho = 1882$ kg m$^{-3}$) likely harbours a subsurface water–ammonia ocean beneath a thick ice shell ($\sim$50–100 km). Evidence comes from Cassini radar measurements of Titan's rotation rate, which revealed a slight non-synchronous component consistent with a decoupled ice shell floating on a liquid layer. Titan's low density suggests a roughly 50:50 rock–ice composition, with a rocky core, ice mantle, and the ammonia-bearing ocean at depth {cite:p}`Iess2012`. The Dragonfly rotorcraft mission, scheduled to arrive at Titan in the 2030s, will explore its surface chemistry and prebiotic conditions.
+**Titan** ($R = 2575$ km, $\rho = 1882$ kg m$^{-3}$) likely harbours a subsurface water–ammonia ocean beneath a thick ice shell ($\sim$50–100 km). Evidence comes from Cassini radar measurements of Titan's rotation rate, which revealed a slight non-synchronous component consistent with a decoupled ice shell floating on a liquid layer. Titan's low density suggests a roughly 50:50 rock–ice composition, with a rocky core, ice mantle, and the ammonia-bearing ocean at depth {cite:p}`Iess2012,Sotin2021`. The Dragonfly rotorcraft mission, scheduled to arrive at Titan in the 2030s, will explore its surface chemistry and prebiotic conditions.
 
 ```{figure} figures/titan_interior.avif
 :name: fig:titan-interior

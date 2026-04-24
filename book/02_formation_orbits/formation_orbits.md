@@ -447,7 +447,7 @@ Resonances are widespread in the solar system:
 |-----------|--------|-------------|
 | 3:2 | Pluto-Neptune | Pluto completes 2 orbits per 3 of Neptune |
 | Near 5:2 | Jupiter-Saturn | "Great inequality": near-resonance drives long-period perturbations |
-| 2:1 | Several asteroid gaps | Kirkwood gaps in the asteroid belt ({ref}`lecture12`) |
+| 3:1, 5:2, 7:3, 2:1 | Several asteroid gaps | Kirkwood gaps in the asteroid belt ({ref}`lecture12`) |
 | 1:1 | Jupiter Trojans | Co-orbital asteroids at L4 and L5 Lagrange points |
 
 ### The Laplace resonance
