@@ -227,3 +227,6 @@ content/course2025
 
 # Verification plots, generated data, plot scripts (per CLAUDE.md)
 output_files/
+
+# Temporary screenshot dropbox during figure-swap sessions
+tmp_images/
