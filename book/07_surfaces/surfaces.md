@@ -301,7 +301,7 @@ The stagnant-lid regime is the *default* outcome of mantle convection with stron
 
 **Venus** shows a puzzling tectonic style. The uniform crater density across the surface implies a mean age of $\sim$300–700 Myr, leading to the **episodic resurfacing hypothesis**: Venus may experience periodic catastrophic overturns where the stagnant lid founders and the entire surface is volcanically resurfaced in a geologically short interval. Between these episodes, the surface remains tectonically quiet. This idea remains debated; we will discuss Venus's geology in detail in {ref}`lecture09`.
 
-**Mercury** has undergone significant **global contraction** as its large iron core cooled and solidified over time, shrinking the planet's radius by $\sim$7 km. This contraction compressed the crust, producing **lobate scarps**, thrust faults up to several hundred kilometres long and 1–3 km high, discovered by Mariner 10 and mapped extensively by MESSENGER. We will discuss Mercury's surface in {ref}`lecture10`.
+**Mercury** has undergone significant **global contraction** as its large iron core cooled and solidified over time, shrinking the planet's radius by $\sim$7 km {cite:p}`Byrne2014`. This contraction compressed the crust, producing **lobate scarps**, thrust faults up to several hundred kilometres long and 1–3 km high, discovered by Mariner 10 and mapped extensively by MESSENGER. We will discuss Mercury's surface in {ref}`lecture10`.
 
 ```{figure} figures/mercury_lobate_scarp.avif
 :name: fig:mercury-scarp
@@ -500,7 +500,7 @@ The measured thermal emission from the tiger stripes corresponds to a heat flow 
 
 ### Europa
 
-Jupiter's moon Europa ($R \approx 1561$ km) possesses a **global ocean** $\sim$100 km deep beneath an ice shell $\sim$10–30 km thick, maintained by tidal heating from the Laplace resonance with Io and Ganymede {cite:p}`NimmoPappalardo2016`. Europa's surface shows:
+Jupiter's moon Europa ($R \approx 1561$ km) possesses a **global ocean** $\sim$100 km deep beneath an ice shell $\sim$15–25 km thick, maintained by tidal heating from the Laplace resonance with Io and Ganymede {cite:p}`NimmoPappalardo2016`. Europa's surface shows:
 
 - **Lineae:** Long linear features, possibly cracks in the ice shell that were filled by upwelling ocean water or warm ice.
 - **Chaos terrain:** Regions where the ice appears to have broken up, rotated, and refrozen, possibly formed by localised melting from below.

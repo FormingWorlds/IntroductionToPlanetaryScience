@@ -506,17 +506,17 @@ where $n_{\mathrm{exo}}$ is the number density at the exobase. The exponential f
 Maxwell–Boltzmann speed distribution for atomic hydrogen at the exobase temperatures of Earth ($T_\mathrm{exo} = 1000$ K, blue) and Mars ($T_\mathrm{exo} = 270$ K, red). Dashed vertical lines mark the escape velocity $v_\mathrm{esc}$ at the exobase of each planet ($\sim$10.6 km s$^{-1}$ and $\sim$4.9 km s$^{-1}$ respectively). Only molecules in the high-speed tail above $v_\mathrm{esc}$ (shaded) contribute to Jeans escape; the exponential dependence of the tail area on $\lambda_J = v_\mathrm{esc}^2 / v_\mathrm{th}^2$ explains why escape rates vary by orders of magnitude across species and bodies.
 ```
 
-The following table illustrates $\lambda_J$ for several atmospheric species on Earth and Mars, assuming exobase temperatures of 1000 K (Earth) and 270 K (Mars):
+The following table illustrates $\lambda_J$ for several atmospheric species on Earth and Mars, evaluated at the exobase: $T_\mathrm{exo} = 1000$ K and $r_\mathrm{exo} = R_\oplus + 500$ km for Earth, $T_\mathrm{exo} = 270$ K and $r_\mathrm{exo} = R_M + 200$ km for Mars.
 
 | Species | $m$ (u) | $\lambda_J$ (Earth) | $\lambda_J$ (Mars) |
 |---------|:-------:|:--------------------:|:-------------------:|
-| H | 1 | 7.5 | 5.4 |
-| $\mathrm{H_2}$ | 2 | 15 | 11 |
-| He | 4 | 30 | 22 |
-| $\mathrm{N_2}$ | 28 | 210 | 150 |
-| $\mathrm{CO_2}$ | 44 | 330 | 240 |
+| H | 1 | 7.0 | 5.4 |
+| $\mathrm{H_2}$ | 2 | 14 | 11 |
+| He | 4 | 28 | 22 |
+| $\mathrm{N_2}$ | 28 | 200 | 150 |
+| $\mathrm{CO_2}$ | 44 | 310 | 240 |
 
-For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so large that Jeans escape is negligible on both planets. For atomic hydrogen, $\lambda_J$ is moderate, leading to significant escape: this is why both Earth and Mars lose hydrogen to space. We will revisit this derivation in full detail (starting from the Maxwell–Boltzmann distribution) in {ref}`lecture10`.
+For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so large that Jeans escape is negligible on both planets. For atomic hydrogen, $\lambda_J$ is moderate, leading to significant escape: this is why both Earth and Mars lose hydrogen to space. Earth's exobase temperature is not fixed at 1000 K: it varies from $\sim$600 K at solar minimum to $\sim$1500 K at solar maximum, which modulates the escape flux of the lightest species by orders of magnitude. We will revisit this derivation in full detail (starting from the Maxwell–Boltzmann distribution) in {ref}`lecture10`.
 
 ### Hydrodynamic escape
 
