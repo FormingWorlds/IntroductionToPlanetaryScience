@@ -353,7 +353,7 @@ $$
 t_{\rm MS} \;\sim\; \frac{E_{\rm nuc}}{L_\star} \;\propto\; \frac{M_\star}{M_\star^{3.5}} \;=\; M_\star^{-2.5} \,.
 $$
 
-Normalising on the Sun ($t_{\rm MS,\odot} \approx 10$ Gyr), this gives $t_{\rm MS} \approx 10\,(M_\star/\Msun)^{-2.5}$ Gyr. A K dwarf at $M_\star \approx 0.7\,\Msun$ then has $t_{\rm MS} \approx 10 \times 0.7^{-2.5} \approx 24$ Gyr; a $0.5\,\Msun$ K/M dwarf has $\approx 57$ Gyr; and a $0.1\,\Msun$ M dwarf naively gives $\approx 3 \times 10^3$ Gyr, which is already longer than the age of the universe and which detailed stellar models extend further (to $\sim 10^{12}$ yr) once the fully convective regime keeps the entire hydrogen reservoir accessible to the core. The headline point is that *cooler stars give biology more time*, by a factor that grows steeply with decreasing stellar mass, which is the central reason the K-dwarf and M-dwarf habitable zones are taken seriously despite their other problems.
+Normalising on the Sun ($t_{\rm MS,\odot} \approx 10$ Gyr), this gives $t_{\rm MS} \approx 10\,(M_\star/\Msun)^{-2.5}$ Gyr. A K dwarf at $M_\star \approx 0.7\,\Msun$ then has $t_{\rm MS} \approx 10 \times 0.7^{-2.5} \approx 24$ Gyr; a $0.5\,\Msun$ early M dwarf has $\approx 57$ Gyr; and a $0.1\,\Msun$ M dwarf naively gives $\approx 3 \times 10^3$ Gyr, which is already longer than the age of the universe and which detailed stellar models extend further (to $\sim 10^{12}$ yr) once the fully convective regime keeps the entire hydrogen reservoir accessible to the core. The headline point is that *cooler stars give biology more time*, by a factor that grows steeply with decreasing stellar mass, which is the central reason the K-dwarf and M-dwarf habitable zones are taken seriously despite their other problems.
 
 ```{figure} figures/cuntz_guinan_xray_lyman.avif
 :name: fig:l14:cuntz-xray
@@ -579,6 +579,7 @@ The course's frank assessment, reading the 2026 mission queue and the JWST atmos
 ### The next decade
 
 The mission queue from now to roughly 2040 is unusually rich. The graphic version of the next paragraph is the standard "mission timeline" figure that NASA, ESA, and JAXA all maintain; the verbal version is below.
+All dates below are planning targets as of early 2026 and are commonly revised by months to years over the course of mission development.
 
 **Now to 2030.** JWST continues to deliver atmospheric spectra of every accessible exoplanet. Europa Clipper arrives at Jupiter in 2030 and begins its 50-flyby ice-shell and ocean-chemistry campaign. JUICE is in cruise and arrives at Jupiter in 2031 for its Ganymede orbital phase. BepiColombo enters Mercury orbit in 2026. The Mars Sample Return architecture is being re-baselined; samples are still cached at Jezero awaiting the new return plan. DART/Hera continue to characterise the Didymos system after the kinetic deflection test. Lucy continues its Trojan tour. PLATO launches in 2026, followed by Roman in 2027, Ariel in 2029, and Dragonfly in 2028.
 

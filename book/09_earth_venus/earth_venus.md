@@ -309,7 +309,7 @@ Recent analysis of Magellan gravity data has identified coronae that appear to o
 
 Global geological terrain map of Venus from radar mapping by Magellan, with colour overlays indicating the major terrain classes: volcanic plains (green), highland tesserae (orange), deformed terrain (purple/grey), rift zones (red), impact craters (white circles), and coronae (pink ovals).
 Major regional names are labelled.
-Mapping by {cite:t}`Widemann2023`, after Ivanov \& Head 2015.
+Mapping by {cite:t}`Widemann2023`, after {cite:t}`IvanovHead2015`.
 ```
 
 **Impact crater density** on Venus is low, corresponding to a global average crater retention age of $300\text{--}700$ Myr.
@@ -416,7 +416,7 @@ $$
 
 so that $T_s = 2^{1/4}\, T_{\mathrm{eq}} \approx 1.19\, T_{\mathrm{eq}}$.
 For Earth, $S_\oplus = 1361$ W/m$^2$ and $A = 0.30$ give $T_{\mathrm{eq}} \approx 255$ K and $T_s \approx 303$ K, within $\sim 15$ K of the observed $288$ K.
-For Venus, $S_{\mathrm{Venus}} = 2614$ W/m$^2$ but the present cloud albedo is $A \approx 0.77$, so $T_{\mathrm{eq}} \approx 227$ K and the one-layer model predicts only $T_s \approx 270$ K.
+For Venus, $S_{\mathrm{Venus}} = 2604$ W/m$^2$ but the present cloud albedo is $A \approx 0.77$, so $T_{\mathrm{eq}} \approx 227$ K and the one-layer model predicts only $T_s \approx 270$ K.
 The observed surface temperature is $735$ K, almost $500$ K hotter than the simple model allows.
 The one-layer picture fails by hundreds of kelvin, and the failure is not a small correction: it tells us that Venus is not on the same equilibrium branch as Earth, and that we need a different kind of solution, in which the atmosphere is dense enough that the IR photosphere lifts far above the surface.
 That is the runaway-greenhouse branch, and the next derivation makes the threshold quantitative.
@@ -490,7 +490,6 @@ where $L \approx 2.5 \times 10^6$ J/kg is the latent heat of vaporisation of wat
 Integrating gives the familiar exponential dependence:
 
 $$
-
 p_{\mathrm{sat}}(T) \approx p_{\mathrm{ref}}\, \exp\!\left[ -\frac{L}{R_v}\!\left(\frac{1}{T} - \frac{1}{T_{\mathrm{ref}}}\right) \right]
 $$ (eq:saturation-pressure)
 
@@ -513,7 +512,6 @@ This equation says: the photosphere occurs at the level where the saturation vap
 Solving Eq. {eq}`eq:photosphere-pressure` for $T_{\mathrm{phot}}$ via Clausius-Clapeyron:
 
 $$
-
 T_{\mathrm{phot}} \approx \frac{L/R_v}{\ln(p_{\mathrm{ref}} \kappa / g) + L/(R_v T_{\mathrm{ref}})}
 $$ (eq:photosphere-temperature)
 
@@ -535,7 +533,6 @@ As the surface warms, the photosphere just moves to a higher altitude (because t
 Combining Eqs. {eq}`eq:photosphere-temperature` and {eq}`eq:OLR` and plugging in numerical values:
 
 $$
-
 F_{\mathrm{OLR}}^{\max} \approx \sigma\, (260\,\mathrm{K})^4 \approx 260\, \mathrm{W/m^2}
 $$ (eq:simpson-nakajima)
 

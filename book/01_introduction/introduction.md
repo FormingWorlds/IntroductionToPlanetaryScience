@@ -441,7 +441,7 @@ Planetary science is advancing rapidly, driven by new space missions and observa
 :width: 700px
 :align: center
 
-The seven planets of the TRAPPIST-1 system (top row, b through h) compared with the inner solar system (bottom row), shown with measured or estimated orbital periods, distances, radii, masses, densities, and surface gravities. All seven TRAPPIST-1 planets are roughly Earth-sized and orbit closer to their cool M-dwarf host than Mercury does to the Sun, with three to four planets falling within the conservative habitable zone. Credit: NASA/JPL-Caltech.
+The seven planets of the TRAPPIST-1 system (top row, b through h) compared with the inner solar system (bottom row), shown with measured or estimated orbital periods, distances, radii, masses, densities, and surface gravities. All seven TRAPPIST-1 planets are roughly Earth-sized and orbit closer to their cool M-dwarf host than Mercury does to the Sun, with three planets (e, f, g) inside the conservative habitable zone and a fourth (d) near its inner edge. Credit: NASA/JPL-Caltech.
 ```
 
 ```{figure} figures/trappist1b_jwst.avif

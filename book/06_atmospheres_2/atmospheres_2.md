@@ -131,7 +131,7 @@ Substituting:
 
 $$
 \dv{P_{\mathrm{sat}}}{T} = \frac{L_v \, P_{\mathrm{sat}}}{R_v \, T^2}
-$$ (eq:clausius-clapeyron-diff)
+$$
 
 This is a separable ODE: $\dd P / P = (L_v / R_v) \, \dd T / T^2$. Integrating from a reference state $(T_{\mathrm{ref}}, P_{\mathrm{ref}})$ to $(T, P_{\mathrm{sat}})$, and assuming $L_v$ is approximately constant:
 
@@ -336,7 +336,7 @@ The magnitude of the Coriolis acceleration depends on the planet's angular rotat
 
 $$
 f = 2\Omega \sin\phi
-$$ (eq:coriolis-parameter)
+$$
 
 For Earth, $\Omega = 7.29 \times 10^{-5}$ rad s$^{-1}$ (sidereal rotation rate). At mid-latitudes ($\phi = 45°$), $f \approx 1.03 \times 10^{-4}$ s$^{-1}$. At the equator ($\phi = 0°$), $f = 0$: the Coriolis effect vanishes.
 
@@ -358,7 +358,7 @@ Whether rotation significantly influences a particular atmospheric flow depends 
 
 $$
 \mathrm{Ro} = \frac{U}{f L}
-$$ (eq:rossby-number)
+$$
 
 where $U$ is the characteristic wind speed and $L$ is the characteristic horizontal length scale of the flow.
 
@@ -469,7 +469,7 @@ Mars before and during the 2018 global dust storm, as imaged by the Mars Reconna
 
 ### Venus: super-rotation
 
-Venus presents one of the great puzzles of atmospheric dynamics: its atmosphere **rotates 60 times faster** than the planet itself at cloud level. While Venus's surface rotates once every 243 Earth days (retrograde), the cloud-top winds circle the planet in just $\sim$4 days, reaching speeds of $\sim$100 m s$^{-1}$. This phenomenon is called **atmospheric super-rotation** {cite:p}`SanchezLavega2011`.
+Venus presents one of the great puzzles of atmospheric dynamics: its atmosphere's rotation period of $\sim$4 days is $\sim$60 times shorter than the planet's 243-day solid-body rotation (angular-velocity ratio), with cloud-top winds reaching $\sim$100 m s$^{-1}$ while the solid surface rotates retrograde. This phenomenon is called **atmospheric super-rotation** {cite:p}`SanchezLavega2011`.
 
 Super-rotation requires a mechanism to transport angular momentum from the slowly rotating surface *upward and equatorward*, against the usual sense of friction, which should slow the atmosphere down to match the surface. The leading explanation involves a combination of **thermal tides** (driven by solar heating of the cloud layer) and **planetary-scale waves** that pump angular momentum toward the equator. Despite decades of study, the detailed mechanism remains an active area of research.
 
@@ -505,6 +505,7 @@ The GRS sits between two zonal jets with opposite directions, which confine and 
 Polar cyclone cluster at Jupiter's north pole imaged by the JIRAM infrared spectrometer on NASA's *Juno* spacecraft.
 A central cyclone is encircled by eight smaller cyclones in a stable octagonal arrangement, demonstrating that Jupiter's atmospheric dynamics produce coherent polygonal vortex patterns analogous to Saturn's hexagonal jet ({numref}`fig:saturn-hexagon`).
 The cyclones have remained in this configuration over multiple Juno perijoves spanning several years, far longer than any Earth analogue.
+At the south pole, a pentagonal cluster of five circumpolar cyclones persists; JIRAM observations in 2019–2020 recorded the transient appearance of a sixth cyclone that briefly formed a hexagon before dissipating {cite:p}`Adriani2020`.
 Adapted from {cite:t}`Adriani2018`.
 Credit: NASA/JPL-Caltech/SwRI/ASI/INAF/JIRAM, public domain.
 ```
@@ -637,10 +638,10 @@ Energy-balance illustration of the ice-albedo feedback and snowball bistability.
 The red curve is the outgoing longwave radiation $\sigma T^4$ (with a fixed grey greenhouse), and the blue curve is the absorbed solar flux $(1 - \alpha(T))\,S/4$ with a temperature-dependent albedo that drops from $\sim$0.6 (ice-covered) to $\sim$0.3 (ice-free) across the freezing region.
 Three energy-balance equilibria exist: a stable cold *snowball* state (left intersection), an unstable deglaciation threshold (middle), and a stable warm state (right).
 Pushing the system across the unstable middle point triggers a runaway transition.
-The snowball events of the Neoproterozoic ($\sim$717 and $\sim$635 Ma) are interpreted as global excursions of this bifurcation diagram {cite:p}`Hoffman1998`.
+The snowball events of the Neoproterozoic ($\sim$717 and $\sim$635 Ma) are interpreted as global excursions of this bifurcation diagram {cite:p}`Hoffman1998,Hoffman2017`.
 ```
 
-- **Water vapour feedback** (positive): If the planet warms, more water evaporates $\Rightarrow$ $\mathrm{H_2O}$ is a strong greenhouse gas $\Rightarrow$ enhanced warming $\Rightarrow$ more evaporation. This feedback approximately doubles the warming from $\mathrm{CO_2}$ alone on present-day Earth. If it runs away (as may have happened on Venus), it leads to the **runaway greenhouse effect**, where the oceans completely evaporate (discussed in detail in {ref}`lecture09`).
+- **Water vapour feedback** (positive): If the planet warms, more water evaporates $\Rightarrow$ $\mathrm{H_2O}$ is a strong greenhouse gas $\Rightarrow$ enhanced warming $\Rightarrow$ more evaporation. This feedback is the largest positive feedback in Earth's climate system; combined with the lapse-rate feedback it roughly doubles the no-feedback $\mathrm{CO_2}$ warming, and with cloud and albedo feedbacks contributes to an IPCC AR6 best-estimate equilibrium climate sensitivity of $\sim 3$ K for $\mathrm{CO_2}$ doubling {cite:p}`IPCC2021`. If it runs away (as may have happened on Venus), it leads to the **runaway greenhouse effect**, where the oceans completely evaporate (discussed in detail in {ref}`lecture09`).
 
 - **Cloud feedback** (complex): Low-altitude clouds reflect sunlight (cooling), while high-altitude cirrus clouds trap infrared radiation (warming). The net cloud feedback is the largest source of uncertainty in Earth climate models and is one of the key unknowns for exoplanet climate predictions ({ref}`lecture13`).
 
