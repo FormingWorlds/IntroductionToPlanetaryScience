@@ -364,7 +364,7 @@ The Hayabusa2 samples from Ryugu plot squarely with the CI chondrites; the OSIRI
 The oxygen-isotope diagram already shows that meteorites separate into clusters, but the discovery in the 2010s of a much sharper, more general dichotomy has reshaped our picture of the early solar system.
 When researchers measured nucleosynthetic anomalies in elements heavier than oxygen, $^{50}\mathrm{Ti}$, $^{54}\mathrm{Cr}$, $^{48}\mathrm{Ca}$, $^{94}\mathrm{Mo}$, $^{100}\mathrm{Ru}$, and others, they found that meteorites split cleanly into *exactly two* groups in every element, with essentially no overlap {cite:p}`Warren2011,Trinquier2009,Burkhardt2011`.
 
-The two groups are now called **NC** ("non-carbonaceous", which includes the ordinary chondrites, the enstatite chondrites, the HEDs, the angrites, Mars, and Earth) and **CC** ("carbonaceous", which includes all the carbonaceous chondrite groups, the IIC and IID iron groups, and more recently several outer-solar-system bodies like Trojans and probably Jupiter itself).
+The two groups are now called **NC** ("non-carbonaceous", which includes the ordinary chondrites, the enstatite chondrites, the HEDs, the angrites, Mars, and Earth) and **CC** ("carbonaceous", which includes all the carbonaceous chondrite groups, the IIC, IID, IIF, IIIF, and IVB iron groups, and more recently several outer-solar-system bodies like Trojans and probably Jupiter itself).
 Crucially, the NC/CC dichotomy is *temporally robust*: NC and CC meteorites with overlapping formation ages (from 0 to 4 Myr after CAIs) have isotopically distinct signatures.
 The two reservoirs were separate from very early times, and they did not mix for at least the first $\sim 3$-$4$ Myr of disk history {cite:p}`Kruijer2017,Burkhardt2021`.
 
@@ -639,7 +639,7 @@ Trees flattened in a radial pattern by the 30 June 1908 Tunguska airburst, photo
 
 Planetary defence is the practical application of all the small-body science in this lecture.
 The first prerequisite is **discovery**: NEOWISE, the Catalina Sky Survey, ATLAS, Pan-STARRS, and now the Vera C. Rubin Observatory ({numref}`fig:l12-rubin`) progressively complete the inventory.
-Rubin's first light was achieved in June 2025, and over its 10-year survey it is expected to increase the discovery rate of NEAs by roughly an order of magnitude and to find essentially all PHAs larger than 140 m within a decade {cite:p}`Jones2018`.
+Rubin achieved engineering first light in 2024 and unveiled its System First Look on 23 June 2025, and over its 10-year survey it is expected to increase the discovery rate of NEAs by roughly an order of magnitude and to find essentially all PHAs larger than 140 m within a decade {cite:p}`Jones2018`.
 
 ```{figure} figures/rubin_obs.avif
 :name: fig:l12-rubin
@@ -871,7 +871,7 @@ Three-dimensional and projected views of the orbits of detached trans-Neptunian 
 
 ### The Oort cloud
 
-The **Oort cloud** is the most distant component of the solar system: a roughly spherical, isotropic shell of icy bodies at heliocentric distances of approximately $2{,}000$ to $50{,}000$ AU, named for Jan Oort, who first inferred its existence in 1950 from the orbital statistics of long-period comets {cite:p}`Oort1950`.
+The **Oort cloud** is the most distant component of the solar system: a roughly spherical, isotropic shell of icy bodies at heliocentric distances of approximately $2{,}000$ to $50{,}000$ AU (with an inner Hills component at $\sim 2{,}000$–$20{,}000$ AU and an outer classical component at $\sim 20{,}000$–$50{,}000$ AU), named for Jan Oort, who first inferred its existence in 1950 from the orbital statistics of long-period comets {cite:p}`Oort1950`.
 Oort noticed that the long-period comets do *not* arrive isotropically with random energies; their distribution of orbital energies has a strong concentration at very small (almost-bound) values, exactly what you expect if the comets are slowly perturbed inward from a large reservoir at $\sim 10^{4}$-$10^{5}$ AU.
 
 ```{figure} figures/oort_cloud_kaib.avif

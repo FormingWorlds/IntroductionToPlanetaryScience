@@ -538,7 +538,7 @@ Tidal heating is strongly concentrated in the south polar terrain, where the tig
 The total heat flow from the south polar region exceeds 10 GW, much more than radiogenic heating could supply for such a small body, and again points to tidal dissipation at concentrated locations within the ice shell or at the rock-water interface.
 
 The combination of liquid water, rock contact, energy, organic chemistry, and now phosphorus and silica makes Enceladus arguably the most accessible candidate for life beyond Earth, certainly more accessible than Europa or Titan.
-A future "Enceladus Orbilander" or sample-return mission has been recommended as a high-priority concept by the 2023 US Planetary Decadal Survey {cite:p}`NationalAcademies2023`, although no such mission has yet been formally selected.
+A future "Enceladus Orbilander" or sample-return mission has been recommended as a high-priority concept by the 2022 US Planetary Science Decadal Survey {cite:p}`NationalAcademies2022`, although no such mission has yet been formally selected.
 Cassini repeatedly flew through the plumes and sampled them with mass spectrometers, but the instruments were not designed to detect biosignatures and the question of whether life exists in the Enceladus ocean remains open ({ref}`lecture14`).
 
 ### Other Saturnian moons
@@ -695,7 +695,7 @@ Density as a function of radius for Uranus (blue) and Neptune (black) from {cite
 ```
 
 A particularly exciting recent development is the experimental confirmation that water at ice giant interior conditions is in a "superionic" state.
-{cite:t}`Millot2019` carried out shock-compression experiments on water at $\sim 100$--200 GPa and several thousand kelvins and showed by in-situ X-ray diffraction that the oxygen sublattice remains rigid (a body-centred cubic crystal) while the protons diffuse through it as a fluid.
+{cite:t}`Millot2019` carried out shock-compression experiments on water at $\sim 100$--400 GPa and several thousand kelvins and showed by in-situ X-ray diffraction that the oxygen sublattice remains rigid (a body-centred cubic crystal) while the protons diffuse through it as a fluid.
 The result is a strange material that is part solid, part liquid: rigid in its oxygen lattice but ionically conducting in its protons.
 Superionic ice is electrically conducting and can sustain a planetary dynamo even in the absence of metallic hydrogen.
 Numerical simulations suggest that a thin convecting shell of superionic and ionic fluid can produce magnetic fields with the unusual multipolar, off-axis structure observed at Uranus and Neptune {cite:p}`Soderlund2020`.
@@ -851,7 +851,7 @@ A single mission to the ice giants in the 2030s could plausibly anchor the scien
 
 ### Future ice giant missions
 
-The 2023 US Planetary Decadal Survey identified a **Uranus orbiter and probe** as the highest-priority large flagship mission for the 2030s, ahead of any return to Saturn or new mission to a rocky planet {cite:p}`NationalAcademies2023`.
+The 2022 US Planetary Science Decadal Survey identified a **Uranus orbiter and probe** as the highest-priority large flagship mission for the 2030s, ahead of any return to Saturn or new mission to a rocky planet {cite:p}`NationalAcademies2022`.
 The mission concept includes a Jupiter gravity assist to reach Uranus, an orbital insertion at Uranus, and an atmospheric entry probe to measure the deep noble gas, isotopic, and molecular composition.
 Mission concept studies are ongoing but no flight commitment has yet been made.
 Launch in the early 2030s would deliver the orbiter to Uranus in the late 2030s or early 2040s.
