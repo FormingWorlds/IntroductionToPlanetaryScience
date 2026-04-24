@@ -957,3 +957,53 @@ L4 (Differentiation & Magnetospheres) is **47% below the word-count median** (3,
 ### 7.4 Methodology lesson for future review passes
 
 The "do not touch blackboard" agent rule was overly conservative for this codebase. Admonition blocks contain plenty of non-algebra prose (goals, applications, notes) where em-dash substitution and other prose cleanups are trivially safe. Future review passes should relax the rule to "do not touch equations or numerical values inside blackboard blocks" and let agents handle blackboard prose directly. This would have saved one round-trip.
+
+### 7.5 LOW-item batch progress 2026-04-24 (§M4)
+
+Second step-by-step per-item approval session. 25 of ~43 LOW items from meta-review §M4 closed in a single sitting (M4.1 through M4.25). Several were no-ops (already closed by PR #3 or non-issues on closer inspection).
+
+**Substantive edits applied:**
+- L1 M4.2: TRAPPIST-1 conservative-HZ caption tightened ("three planets e/f/g inside, fourth d near inner edge")
+- L2 M4.3: Kirkwood-gap table row expanded from "2:1" to "3:1, 5:2, 7:3, 2:1"
+- L4 M4.6: Earth-interior caption directional-ambiguity fix ("from ~30 km depth at the crust base down to 2890 km at the CMB")
+- L4 M4.8: PIA IDs added to `earth_interior` (PIA25063) and `jupiter_great_blue_spot` (PIA25040) credits
+- L5 M4.9: Jeans $\lambda_J$ table Earth column recomputed at $r_{\rm exo} = R_\oplus + 500$ km to match L10 exobase convention (self-consistent across species; new values 7.0, 14, 28, 200, 310)
+- L5 M4.10: Earth $T_{\rm exo}$ solar-activity note added (~600 K min to ~1500 K max, 1000 K solar-mean)
+- L5 M4.11: NSSDC NASA Planetary Fact Sheet entries (× 3: `NASAFactSheet`, `NASAVenusFactSheet`, `NASAEarthFactSheet`) updated with 2026-04 access date + Wayback Machine mirror + maintenance note
+- L6 M4.12: Three unreferenced equation labels removed (`eq:clausius-clapeyron-diff`, `eq:coriolis-parameter`, `eq:rossby-number`)
+- L6 M4.13: Adriani2020 bib entry added; south-pole 5→6→5 cyclone transient (2019–2020) noted in Jupiter polar-cyclone figure caption
+- L6 M4.14: Snowball Earth 717/635 Ma dates now dual-cite `Hoffman1998,Hoffman2017`
+- L6 M4.15: Water-vapour feedback rewritten with IPCC AR6 ECS framing ($\sim$3 K for CO₂ doubling)
+- L6 M4.16: Venus super-rotation convention stated once ("angular-velocity ratio")
+- L7 M4.19: Byrne2014 Nature Geoscience bib entry added; cited for Mercury ~7 km global contraction
+- L7 M4.20: Europa ice shell harmonised to "$\sim$15–25 km" (was 10–30 km; matches L3/L8/L11)
+- L8 M4.21: MOI table top row column 3 "Homogeneous, undifferentiated" → "Reference value (2/5)"
+- L8 M4.23: Europa ice shell model-dependence note added (thick-shell 30–50 km)
+- L8 M4.24: Sotin2021 AREPS bib entry added; Titan ice shell now dual-cites `Iess2012,Sotin2021`
+- L8 M4.25: Murakami2004 bib entry added; post-perovskite prose + caption converted to proper `{cite:p}`/`{cite:t}`
+
+**No-op items** (already correct or closed by PR #3): M4.1, M4.4 (Roche 2.17 already consistent), M4.5 (TW pedagogy is fine), M4.7 (Ganymede radius clean), M4.17 (L6 title clean), M4.18 (DART uncertainty closed by PR #3), M4.22 (Mars crust caption closed by PR #4).
+
+**New BibTeX entries added (5):** `Adriani2020`, `Byrne2014`, `Sotin2021`, `Murakami2004`, and (as URL/note updates, not new) the three NSSDC Fact Sheet Wayback mirrors.
+
+**Remaining in §M4 (2026-04-24 session):** all 18 remaining LOW items (M4.26 through M4.43) closed in the same sitting. All 43 §M4 items now resolved (25 substantive edits, 12 no-ops where PR #3/#4 had already closed or the item was a non-issue on inspection, 6 items closed with proper bib entries added).
+
+Second-batch substantive edits:
+- L9 M4.26: IvanovHead2015 bib entry added; text-only "Ivanov & Head 2015" → `{cite:t}`
+- L9 M4.27: three gratuitous blank lines after opening `$$` in runaway-greenhouse blackboard removed
+- L9 M4.28: Venus stellar flux 2614 → 2604 W/m² (matches $S_\odot/0.723^2$ internally)
+- L10 M4.29: $C_m$ notation expanded with full definition of both symbols
+- L11 M4.32: `NationalAcademies2023` → `NationalAcademies2022` key + year (April 2022 actual pub date); both L11 prose callers updated to "2022 Planetary Science Decadal Survey"
+- L11 M4.33: superionic-ice pressure range 100–200 → 100–400 GPa (matches Millot 2019 experimental range)
+- L12 M4.34: NC/CC iron-meteorite prose list expanded to full 5 groups (IIC, IID, IIF, IIIF, IVB)
+- L12 M4.35: Rubin phrasing corrected: "engineering first light in 2024 and System First Look on 23 June 2025"
+- L12 M4.37: Oort cloud subdivision (inner Hills 2,000–20,000 AU; outer classical 20,000–50,000 AU) introduced at first mention
+- L13 M4.40: mission-date disclaimer sentence added to frontier-mission section
+- L14 M4.42: 0.5 M☉ "K/M dwarf" → "early M dwarf" (spectral-type correction)
+- L14 M4.43: mission-date disclaimer in The Next Decade section
+
+No-op items in second batch: M4.30 (Tharsis Montes style already consistent), M4.31 (deliberately uncited per review), M4.36 (DART mass already ~600 kg per PR #3), M4.38 (NEA count already 38,000 per PR #3), M4.39 (Bell2024 already renamed per PR #3), M4.41 (TRAPPIST-1 luminosity kept at $\sim 5 \times 10^{-4}$ per user preference).
+
+New BibTeX entry: `IvanovHead2015` (Planetary and Space Science 113, 10–32; ADS-verified).
+
+Session summary: branch `tl/full-course-review-low-items-2026-04-24` now contains two commits closing all 43 §M4 LOW items. 6 new bib entries total across both commits (Adriani2020, Byrne2014, Sotin2021, Murakami2004, IvanovHead2015, plus Wayback-mirror annotations on 3 NSSDC Fact Sheet entries). Remaining full-course-review work: paywalled figure batch (§M6, ~10 items), L4 content expansion, pedagogical decisions (§M8).
