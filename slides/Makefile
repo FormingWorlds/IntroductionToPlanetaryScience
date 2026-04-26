@@ -8,15 +8,18 @@ all: $(LECTURES)
 # Web-distribution target: build all decks, then ghostscript-flatten each one
 # into ../book/_static/slides/lectureNN.pdf. Text is converted to vector paths
 # (-dNoOutputFonts) so macOS Preview and other PDF viewers cannot mis-render
-# embedded OpenType fonts. Images downsampled to 150 dpi (-dPDFSETTINGS=/ebook).
-# Final files are typically 3-5 MB each, well under GitHub's 50 MB limit.
+# embedded OpenType fonts. Images kept at 300 dpi colour and 600 dpi mono so
+# schematic-figure labels stay legible (the /ebook default of 150 dpi blurred
+# them too much for some figures). Final files are 3-6 MB each, total ~45 MB.
 WEB_OUT = ../book/_static/slides
 web: $(LECTURES)
 	@mkdir -p $(WEB_OUT)
 	@for n in $(LECTURES); do \
 	  echo "Outlining $$n -> $(WEB_OUT)/$$n.pdf"; \
 	  gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dPDFSETTINGS=/ebook \
-	     -dNoOutputFonts -dNOPAUSE -dBATCH -dQUIET \
+	     -dColorImageResolution=300 -dGrayImageResolution=300 \
+	     -dMonoImageResolution=600 -dNoOutputFonts \
+	     -dNOPAUSE -dBATCH -dQUIET \
 	     -sOutputFile=$(WEB_OUT)/$$n.pdf $$n/$$n.pdf; \
 	done
 
