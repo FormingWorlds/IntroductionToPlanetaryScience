@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to place our solar system within the observed exoplanet population, evaluate habitability as a coupled systems-level property rather than a single condition, derive the classical habitable-zone boundaries from stellar luminosity and the liquid-water condition, and identify the most promising targets and biggest open questions for life-detection efforts in the coming decade.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 14 (PDF)](../_static/slides/lecture14.pdf)
+```
+
 ## Part 1: The solar system in the exoplanet context
 
 ### Recap: what this course has shown

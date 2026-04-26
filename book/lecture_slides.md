@@ -23,7 +23,7 @@ For visual material in classroom format, use the slide decks.
 | 11 | {ref}`lecture11` | [Download (PDF)](_static/slides/lecture11.pdf) |
 | 12 | {ref}`lecture12` | [Download (PDF)](_static/slides/lecture12.pdf) |
 | 13 | {ref}`lecture13` | [Download (PDF)](_static/slides/lecture13.pdf) |
-| 14 | Lecture 14 | _coming soon_ |
+| 14 | {ref}`lecture14` | [Download (PDF)](_static/slides/lecture14.pdf) |
 
 The decks share a common visual style (custom Beamer theme `beamerthemeIPS`) and use AVIF figures rendered via XeLaTeX.
 LaTeX source for each deck lives at `slides/lectureNN/lectureNN.tex` in the [GitHub repository](https://github.com/FormingWorlds/IntroductionToPlanetaryScience).

@@ -1,0 +1,800 @@
+% lecture14.tex: Lecture 14: Synthesis, Solar System in Context, Astrobiology
+% Introduction to Planetary Science, Kapteyn Institute
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme and macros ────────────────────────────────────────
+\usepackage{../common/beamerthemeIPS}
+\input{../common/macros}
+\graphicspath{{figures/}{../common/}{../../book/14_synthesis/figures/}}
+
+% ── Metadata ────────────────────────────────────────────────
+\title[Lecture 14: Synthesis]{Lecture 14: Synthesis\\Solar System in Context, Astrobiology}
+\subtitle{Introduction to Planetary Science}
+\author[L14]{Tim Lichtenberg}
+\institute{Kapteyn Astronomical Institute\\University of Groningen}
+\date{2026}
+\titlebgcredit{Tidally locked rocky planet couplings. Wordsworth \& Kreidberg (2022)}
+
+% ════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Learning objectives ─────────────────────────────────────
+\begin{frame}{Learning Objectives}
+  By the end of this lecture, you will be able to:
+  \vskip8pt
+  \begin{itemize}
+    \item Place our solar system within the observed exoplanet population.
+    \item Evaluate habitability as a coupled \emph{systems} property, not a single condition.
+    \item Derive the classical habitable-zone boundaries from stellar luminosity and the liquid-water condition.
+    \item Identify the most promising life-detection targets for the next decade.
+  \end{itemize}
+  \vskip8pt
+  \keyresult{Habitability is a trajectory, not a snapshot.}
+\end{frame}
+
+% ── Recap ───────────────────────────────────────────────────
+\begin{frame}{The Thread of the Course}
+  \begin{itemize}
+    \item L1--L2: solar system + protoplanetary disks.
+    \item L3--L4: heat, energy, differentiation, magnetospheres.
+    \item L5--L6: atmospheres I + II.
+    \item L7--L8: surfaces + interiors.
+    \item L9--L12: solar system body by body.
+    \item L13: exoplanets.
+    \item Today: \textbf{step back}. Same physics everywhere; what does the integrated picture look like?
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{drazkowska2023_growth_processes}{Dust-to-planet growth. Drazkowska et al.\ (2023)}
+\section{Solar System in the Exoplanet Context}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{Formation Theory Meets Observation}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{drazkowska2023_growth_processes}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Dust $\to$ pebbles $\to$ planetesimals $\to$ embryos.
+      \item Streaming instability + pebble accretion + runaway envelope accretion.
+      \item Disk lifetime 3--5 Myr is the deadline.
+      \item ALMA disk substructure is direct observational input.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{ALMA's DSHARP Reveals Forming-Planet Signatures}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{andrews2018_dsharp_gallery}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item 240 GHz continuum, 20 nearby disks.
+      \item Concentric rings, gaps, asymmetries: nearly ubiquitous.
+      \item Most are interpreted as signatures of in-progress planet growth.
+      \item Andrews+ 2018.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% Hero: Solar system overlay on period-radius
+\begin{frame}[plain]
+  \begin{center}
+    \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{raymond2022_period_radius}\\
+    \footnotesize Period-radius distribution of all confirmed exoplanets, with solar system planets overlaid (bottom). Raymond \& Morbidelli (2022).
+  \end{center}
+\end{frame}
+
+\begin{frame}{Where the Solar System is Atypical}
+  \begin{enumerate}
+    \item \textbf{No super-Earth or sub-Neptune.} The most common single class of planet, and we have none.
+    \item \textbf{Wide, low-eccentricity giant orbits.} Many exoplanet giants are eccentric, inclined.
+    \item \textbf{No hot Jupiter, no hot Neptune.} Both classes occur in $\sim 0.5$--$1\%$ of systems but not in ours.
+    \item \textbf{Irregular inner-system spacing.} Solar system terrestrials span $25\times$ in mass; not a peas-in-a-pod.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Peas-in-a-Pod: Solar System Doesn't Fit}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{raymond2022_peas_in_a_pod}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Compact multi-systems with $\geq 4$ transiting planets within 1.52 AU.
+      \item Ranked by uniformity of planet sizes.
+      \item Solar system: \emph{bottom quintile} of size uniformity.
+      \item Inner solar system did not produce the typical compact-multi architecture.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Mass-Radius: Where Each Planet Sits}
+  \begin{columns}[T]
+    \column{0.6\textwidth}
+    \includegraphics[width=\linewidth, height=0.7\textheight, keepaspectratio]{lichtenberg2025_mass_radius}
+    \column{0.4\textwidth}
+    \footnotesize
+    \begin{itemize}
+      \item Lichtenberg 2025.
+      \item EOS tracks: 100\% Fe, Earth-like, MgSiO$_3$, water-rich, magma + H$_2$O, gas dwarf.
+      \item Solar system terrestrials sit on the Earth-like curve.
+      \item Many close-in super-Earths sit there too: \emph{stripped cores}.
+      \item Larger planets carry volatile envelopes that swell their radii.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Occurrence Climbs Toward M Dwarfs}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{mulders2024_occurrence_vs_teff}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Small planets ($1$--$4\,\Rearth$, $P < 50$ d) per star vs $T_\mathrm{eff}$.
+      \item Occurrence roughly $2\times$ higher around early M dwarfs than F dwarfs.
+      \item Trend continues into late M.
+      \item Mulders+ 2024.
+      \item \textbf{Earth-sized planets are common around the most numerous class of stars.}
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Is the Solar System Rare?}
+  Honest answer: \textbf{not obviously, but not yet known}.
+  \vskip4pt
+  \begin{itemize}
+    \item Long-period detection floor set by survey duration. Kepler had only 4 yr.
+    \item Earth analogues at 1 AU around G dwarfs: at the edge of current sensitivity.
+    \item PLATO (2026) + Gaia DR4 (late 2026) will resolve.
+    \item Confident now: inner solar system is \emph{atypical} relative to known compact systems.
+    \item Open: whether this is bad luck, Jupiter's fingerprint, or the typical outcome around stars we haven't sampled yet.
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{wordsworth2022_tidally_locked_planet}{Tidally locked planet couplings. Wordsworth \& Kreidberg (2022)}
+\section{Habitability as a Coupled Systems Property}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{The Stack of Requirements}
+  Habitability is not a checklist. It is a stack of necessary couplings:
+  \begin{itemize}
+    \item \textbf{Star}: stable luminosity over Gyr; not too active.
+    \item \textbf{Orbit}: in HZ; eccentricity not too high.
+    \item \textbf{Planet bulk}: massive enough to retain atmosphere + drive interior.
+    \item \textbf{Atmosphere}: temperature, pressure, escape rate compatible with surface water.
+    \item \textbf{Interior}: heat budget drives outgassing + dynamo.
+    \item \textbf{Surface + tectonics}: long-term volatile recycling.
+    \item \textbf{Biosphere}: once present, modifies all of the above.
+  \end{itemize}
+\end{frame}
+
+% Hero: Wordsworth tidally-locked couplings
+\begin{frame}[plain]
+  \begin{center}
+    \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{wordsworth2022_tidally_locked_planet}\\
+    \footnotesize Bidirectional couplings between star, atmosphere, surface, interior on a tidally locked rocky planet. Wordsworth \& Kreidberg (2022).
+  \end{center}
+\end{frame}
+
+\begin{frame}{Reading the Coupling Diagram}
+  \begin{itemize}
+    \item Star $\to$ atmosphere: radiative balance + photochemistry.
+    \item Atmosphere $\to$ surface: heat redistribution + weathering.
+    \item Surface $\to$ interior: subduction + outgassing.
+    \item Interior $\to$ atmosphere: volcanic flux of CO$_2$, H$_2$O, SO$_2$.
+    \item Interior $\to$ star: dynamo magnetic shielding.
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Break any link, and the system can drift into a regime where surface liquid water is no longer thermodynamically possible.}
+\end{frame}
+
+\begin{frame}{The HZ is Not a Line}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{kopparapu2014_hz_stellartype}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Inner edge: runaway greenhouse.
+      \item Outer edge: maximum CO$_2$ greenhouse.
+      \item Two planets at the same flux can have radically different climates (Earth vs Venus).
+      \item Time-dependent: stars brighten over MS lifetime.
+      \item HZ planet today $\neq$ habitable trajectory.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{M Dwarf HZ: Pre-MS Runaway Phase}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{lugerbarnes2015_runaway_duration}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Duration of runaway greenhouse on water-bearing planet vs $M_\star$ + $a$.
+      \item Late M dwarfs: \emph{Gyr} of runaway before star reaches MS.
+      \item Habitable-zone planet started \emph{inside} runaway zone.
+      \item Loses much of initial water before life could plausibly start.
+      \item Luger \& Barnes (2015).
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{lichtenberg2023_magma_ocean_differentiation}{Magma-ocean differentiation. Lichtenberg et al.\ (2023)}
+\section{Magma Oceans, Water Delivery, Tectonic Thermostat}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{Why "Delivery" Isn't the Right Frame}
+  \begin{itemize}
+    \item Earth, Venus, Mars likely received \emph{similar} initial volatile inventories.
+    \item Yet present-day water inventories differ by orders of magnitude.
+    \item Difference: \textbf{what each body did with its initial inventory}.
+    \item Four levers (in order of importance):
+    \begin{itemize}
+      \item Magma ocean partitioning (core vs mantle vs steam atmosphere)
+      \item Magma ocean atmospheric escape
+      \item Mantle-atmosphere exchange over Gyr
+      \item Stellar evolution history
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Magma Ocean Differentiation Sets the Boundary Conditions}
+  \begin{columns}[T]
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{lichtenberg2023_magma_ocean_differentiation}
+    \column{0.5\textwidth}
+    \begin{itemize}
+      \item Initially molten silicate mantle separates from denser metal.
+      \item Volatiles partition between mantle and steam atmosphere.
+      \item Fraction sequestered vs outgassed depends on redox state, solidification timescale, depth.
+      \item \emph{Identical} starting inventories $\to$ very different end states.
+      \item Lichtenberg et al.\ (2023).
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Tectonic Regime: The Long-Term Thermostat}
+  \begin{itemize}
+    \item Volcanism injects CO$_2$; rainfall + silicate weathering removes it; subduction returns carbonates to mantle.
+    \item Negative feedback: warmer climate $\to$ faster weathering $\to$ cooler subsequent climate.
+    \item Three conditions, all required:
+    \begin{itemize}
+      \item Liquid water
+      \item Active volcanism
+      \item Tectonic recycling of carbonates back to the mantle
+    \end{itemize}
+    \item Venus failure mode: surface dries $\to$ no weathering sink $\to$ CO$_2$ accumulates to 92 bar.
+    \item For exoplanets: tectonic regime is \emph{unmeasurable remotely} with current/near-term tools.
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{sandberg2018_drake_posterior}{Sandberg-Drexler-Ord Drake posterior (2018)}
+\section{Drake Equation and Fermi Paradox}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{The Drake Equation}
+  \[
+    N = R_\star \cdot f_p \cdot n_e \cdot f_l \cdot f_i \cdot f_c \cdot L
+  \]
+  \begin{itemize}
+    \item Only the first three factors are now measured.
+      \begin{itemize}
+        \item $R_\star$: stellar formation rate. Astrophysics.
+        \item $f_p$: fraction with planets. Of order unity (Kepler).
+        \item $n_e$: HZ planets per system. $\sim 0.1$--$0.6$ for Sun-like (Bryson+ 2021).
+      \end{itemize}
+    \item $f_l$, $f_i$, $f_c$, $L$: \emph{not} constrained by orders of magnitude.
+    \item Drake equation = framing tool, \textbf{not an estimator}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Five Reasons Not to Quote a Number for $N$}
+  \begin{enumerate}
+    \item Factors are not independent. Biospheres co-evolve with atmospheres.
+    \item Most factors span $4$--$10$ orders of magnitude in published estimates.
+    \item Treats a contingent process as a steady-state pipeline.
+    \item Implicitly assumes uniformity over diverse planets and stars.
+    \item Anthropic selection in the only data point we have.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Sandberg+ 2018: Honest Posterior Dissolves Fermi}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{sandberg2018_drake_posterior}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Monte Carlo each Drake factor over its full published range.
+      \item Result is \emph{bimodal}.
+      \item $\sim 1/3$ of probability mass below $N = 1$ in the entire \emph{observable universe}.
+      \item "We are alone" is consistent with current knowledge.
+      \item Apparent silence is unsurprising once priors are honest.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Why Bimodal? Log-Sum of Broad Priors}
+  Take the log:
+  \[
+    \log_{10} N = \log_{10}(R_\star f_p n_e) + \log_{10} f_l + \log_{10} f_i + \log_{10} f_c + \log_{10} L
+  \]
+  \begin{itemize}
+    \item Each soft factor has log-uniform prior over many decades.
+    \item Sum of log-uniform variables = quasi-Gaussian by central limit theorem.
+    \item Width: $\sim 30$ decades. Tail mass below $N = 1$ is large.
+    \item Lesson: \textbf{broad priors on multiplicative factors generate broad and skewed product distributions.}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Fermi Paradox: A Question, Not an Answer}
+  Possible resolutions:
+  \begin{itemize}
+    \item \textbf{Rare-life}: $f_l$ very small.
+    \item \textbf{Rare-intelligence}: $f_i$ is the bottleneck.
+    \item \textbf{Great filter ahead}: $L$ short; civilisations self-terminate.
+    \item \textbf{Detection threshold}: signals exist, are missed.
+    \item \textbf{Zoo / quiet}: civilisations conceal themselves or use signalling we cannot recognise.
+  \end{itemize}
+  \vskip6pt
+  Use Fermi paradox as a check on intuition about Drake-equation factors. \emph{Not} as evidence.
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+% BREAK
+% ════════════════════════════════════════════════════════════
+\begin{frame}[plain,noframenumbering]
+  \vfill
+  \begin{center}
+    {\Huge \textcolor{ipsAccent}{Break}}\\[10pt]
+    {\large End of Part 1: Solar System Context + Habitability}\\[6pt]
+    {\normalsize Part 2: Habitable Zone Derivation, Astrobiology, Life Detection}
+  \end{center}
+  \vfill
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{kopparapu2014_hz_stellartype}{Habitable zone vs $T_\mathrm{eff}$. Kopparapu (2014)}
+\section{Blackboard: Habitable Zone Boundaries}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{Setup: Stellar Flux and Equilibrium Temperature}
+  Star with bolometric luminosity $L_\star$, planet at distance $d$:
+  \[
+    F_\star(d) = \frac{L_\star}{4\pi d^2}
+  \]
+  Bond albedo $A_B$, fast-rotating sphere, equilibrium:
+  \[
+    T_\mathrm{eq}(d) = \left[\frac{L_\star (1 - A_B)}{16\pi\sigma\epsilon\,d^2}\right]^{1/4}
+  \]
+  For Earth: $A_B = 0.3$, $\epsilon = 1$, $L_\star = \Lsun$, $d = 1$ AU $\to$ $T_\mathrm{eq} \approx 255$ K.
+  \vskip4pt
+  Surface is 288 K because of $\sim 33$ K of greenhouse warming.
+\end{frame}
+
+\begin{frame}{Effective Stellar Flux}
+  Define $S_\mathrm{eff}$ = TOA flux at HZ boundary / $S_\oplus = 1361$ W m$^{-2}$.
+  \[
+    d = (1\,\mathrm{AU}) \sqrt{\frac{L_\star/\Lsun}{S_\mathrm{eff}}}
+  \]
+  \vskip4pt
+  Read $S_\mathrm{eff}$ off Kopparapu+ 2013 1D radiative-convective calculation:
+  \begin{itemize}
+    \item Inner edge (Sun-like): $S_\mathrm{in,eff} \approx 1.06$.
+    \item Outer edge (Sun-like): $S_\mathrm{out,eff} \approx 0.35$.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Inner Edge: Simpson-Nakajima Limit}
+  In a moist atmosphere, OLR is bounded above:
+  \[
+    F_\mathrm{OLR}^\mathrm{max} \approx 280\ \mathrm{W\,m^{-2}}
+  \]
+  \begin{itemize}
+    \item Once absorbed flux $>$ this, no radiative equilibrium possible.
+    \item Oceans driven into the atmosphere $\to$ runaway greenhouse.
+    \item Sun-like inner edge:
+  \end{itemize}
+  \[
+    d_\mathrm{in} = (1\,\mathrm{AU}) / \sqrt{1.06} \approx 0.97\,\mathrm{AU}
+  \]
+  Venus at $0.72$ AU receives $S_\mathrm{eff} \approx 1.9$ — \emph{well inside} the inner edge.
+\end{frame}
+
+\begin{frame}{Outer Edge: Maximum CO$_2$ Greenhouse}
+  At low $T$ + high $p_\mathrm{CO_2}$, CO$_2$ condenses out as ice clouds.
+  \begin{itemize}
+    \item Maximum greenhouse warming saturates.
+    \item No matter how much CO$_2$ you add, surface stays cold.
+    \item Sun-like outer edge:
+  \end{itemize}
+  \[
+    d_\mathrm{out} = (1\,\mathrm{AU}) / \sqrt{0.35} \approx 1.69\,\mathrm{AU}
+  \]
+  Mars at $1.52$ AU is just inside the outer edge.
+\end{frame}
+
+\begin{frame}{HZ Across Stellar Types}
+  HZ width $\propto \sqrt{L_\star}$.
+  \begin{itemize}
+    \item \textbf{G dwarf} ($\Lsun$): $d = 0.97$--$1.69$ AU. Lifetime $\sim 10$ Gyr.
+    \item \textbf{K dwarf} ($0.3\,\Lsun$): $d = 0.53$--$0.93$ AU. Lifetime $24$ Gyr. \emph{May be most habitable class} (Cuntz \& Guinan 2016).
+    \item \textbf{M dwarf} ($5\times 10^{-4}\,\Lsun$, e.g.\ TRAPPIST-1): $d = 0.022$--$0.038$ AU. Inside Mercury's orbit. Lifetime $10^{12}$ yr but: tidally locked + Gyr pre-MS runaway.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Main-Sequence Lifetime: A One-Line Scaling}
+  $E_\mathrm{nuc} \propto M_\star$, $L_\star \propto M_\star^{3.5}$:
+  \[
+    t_\mathrm{MS} \sim \frac{E_\mathrm{nuc}}{L_\star} \propto M_\star^{-2.5}
+  \]
+  Normalising on Sun ($t_\mathrm{MS,\odot} \approx 10$ Gyr):
+  \[
+    t_\mathrm{MS} \approx 10\,(M_\star/\Msun)^{-2.5}\ \mathrm{Gyr}
+  \]
+  \begin{itemize}
+    \item $0.7\,\Msun$ K dwarf: $\approx 24$ Gyr.
+    \item $0.5\,\Msun$ early M: $\approx 57$ Gyr.
+    \item $0.1\,\Msun$ late M: $\approx 3000$ Gyr.
+  \end{itemize}
+  \vskip4pt
+  Cooler stars give biology more time.
+\end{frame}
+
+\begin{frame}{XUV at the HZ: M Dwarfs are Hostile}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{cuntz_guinan_xray_lyman}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Lyman-$\alpha$ + X-ray at HZ orbit, vs spectral type and age.
+      \item M dwarfs deliver $10^2$--$10^3 \times$ more EUV/X-ray to HZ planets than G dwarfs.
+      \item High-flux phase lasts \emph{several Gyr}.
+      \item K dwarfs: intermediate level, declining quickly.
+      \item Cuntz \& Guinan (2016).
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{yang2013_tidally_locked_clouds}{Tidally locked planet clouds. Yang et al.\ (2013)}
+\section{HZ Corrections: 3D Climate, Tidal Locking}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{3D GCMs Shift the Inner Edge of the M Dwarf HZ}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{yang2013_tidally_locked_clouds}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Yang+ 2013: tidally locked planet GCM with clouds.
+      \item Substellar convection lifts thick water clouds.
+      \item Albedo rises to $\sim 0.6$.
+      \item Stabilising feedback against runaway.
+      \item Inner edge shifts inward by $\sim 2\times$.
+      \item 1D HZ underestimates M dwarf habitable region.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Where M Dwarf HZ Planets Actually Sit}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{shields2016_hz_tidally_locked}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Shields+ 2016 review.
+      \item Solid lines: 1D Kopparapu boundaries.
+      \item Dashed/dotted: 3D GCM corrections.
+      \item Grey curve: tidal-locking radius.
+      \item M dwarf HZ planets all sit \emph{on or inside} the locking radius.
+      \item $\to$ tidally locked is the rule.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Tidal-Locking Timescale}
+  \[
+    \tau_\mathrm{lock} \sim \frac{\omega_0\,a^6\,I_p\,Q_p}{3\,G\,M_\star^2\,k_{2,p}\,R_p^5}
+  \]
+  Strong $a^6$ dependence:
+  \begin{itemize}
+    \item Earth at 1 AU: $\tau_\mathrm{lock} \sim 10^{12}$ yr (much longer than universe age).
+    \item TRAPPIST-1 b ($a \approx 0.011$ AU): $\sim 10^7$ yr or shorter.
+    \item TRAPPIST-1 system age: $\sim 8$ Gyr.
+    \item Every M dwarf HZ planet has had time to lock.
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{schwieterman2018_biosignature_classes}{Biosignature classes. Schwieterman et al.\ (2018)}
+\section{Astrobiology and Biosignatures}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{What is Life?}
+  Working definition (Lederberg 1965, Viking-era):
+  \begin{itemize}
+    \item A self-replicating, metabolising, evolving chemical system.
+    \item Operational, not philosophically deepest.
+    \item Lets us decide what to look for.
+  \end{itemize}
+  \vskip4pt
+  Chemical baseline:
+  \begin{itemize}
+    \item Carbon-based, water-as-solvent.
+    \item Only example we have.
+    \item Dominates the search because we know its spectroscopic + geochemical fingerprints.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Origin of Life: Four Live Hypotheses}
+  Not solved. Present as competing, not as a settled story.
+  \begin{itemize}
+    \item \textbf{RNA world}: ribozyme-driven, RNA precedes proteins. Hard prebiotic chemistry of RNA.
+    \item \textbf{Metabolism-first / alkaline hydrothermal vents}: autocatalytic cycles precede information storage. Geochemistry compatible.
+    \item \textbf{Surface "warm little ponds"}: wet-dry cycling concentrates and polymerises. Darwin 1871; revived by experiment.
+    \item \textbf{Panspermia}: relocates the problem, doesn't solve it.
+  \end{itemize}
+  \vskip4pt
+  Earliest direct evidence on Earth: $\sim 3.5$ Ga. Possible to $\sim 4.0$ Ga (contested).
+\end{frame}
+
+\begin{frame}{Three Classes of Biosignature}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{schwieterman2018_biosignature_classes}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item \textbf{Gaseous}: O$_2$, O$_3$, CH$_4$, N$_2$O, organosulphur, organohalogen.
+      \item \textbf{Surface}: vegetation red edge near 700 nm.
+      \item \textbf{Temporal}: seasonal cycles, e.g.\ Earth's CO$_2$ Keeling curve.
+      \item Convincing claim should combine $\geq 2$ classes.
+      \item Schwieterman+ (2018).
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Biosignature Gases in the Mid-IR}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{schwieterman2018_biosignature_gases}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Ten potential biosignature gases.
+      \item Each has a characteristic IR absorption signature.
+      \item O$_3$: 9.6 $\mu$m. CH$_4$: 3.3 + 7.7 $\mu$m. N$_2$O: across mid-IR.
+      \item DMS / DMDS: 3--15 $\mu$m window.
+      \item Drives the LIFE / HWO wavelength designs.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Disequilibrium is the Diagnostic}
+  Single gas in isolation: rarely convincing.
+  \vskip4pt
+  Most diagnostic: \emph{disequilibrium combinations}.
+  \begin{itemize}
+    \item Earth: O$_2$ (21\%) + CH$_4$ (1.8 ppm). React on $\sim$decade timescales.
+    \item Joint presence requires continuous biological resupply (oxygenic photosynthesis + methanogenesis).
+    \item Pre-Great Oxidation Event Earth: CH$_4$ + N$_2$O or CH$_4$ + CO$_2$.
+    \item Krissansen-Totton+ 2018 formalised disequilibrium approach.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Catling 2018: A Bayesian Framework}
+  \begin{columns}[T]
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{catling2018_assessment_framework}
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{catling2018_bayesian_framework}
+  \end{columns}
+  \vskip4pt
+  Detection is a quantitative inference from a chain of measurements: priors on host star, planet, atmosphere, false-positive pathways. Not a yes/no statement on a single observation.
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{lincowski2021_phosphine_so2}{Venus phosphine controversy. Lincowski et al.\ (2021)}
+\section{False Positives and Solar System Targets}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{False Positives: Every Gas Has an Abiotic Pathway}
+  \begin{itemize}
+    \item \textbf{Abiotic O$_2$}: H$_2$O photolysis + H escape (Wordsworth+ 2014, Luger+ 2015). CO$_2$ photolysis.
+    \item \textbf{Abiotic CH$_4$}: serpentinisation of olivine + water. Volcanic outgassing at low $f_{\mathrm{O_2}}$.
+    \item \textbf{Abiotic N$_2$O}: lightning chemistry, photochemistry.
+    \item \textbf{Abiotic DMS}: no significant Earth source known. But "not on Earth" $\neq$ "impossible elsewhere".
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Biosignature detection is an inverse problem: must rule out \emph{all} plausible abiotic pathways.}
+\end{frame}
+
+\begin{frame}{Solar System Targets for Life Detection}
+  Five plausible targets:
+  \begin{itemize}
+    \item \textbf{Mars}: past habitability established. Mars Sample Return is the path forward.
+    \item \textbf{Europa}: confirmed subsurface ocean. Clipper at Jupiter 2030.
+    \item \textbf{Enceladus}: plumes deliver ocean chemistry (H$_2$ + organics + phosphates) to your spacecraft. Decadal-Survey priority.
+    \item \textbf{Titan}: complete hydrocarbon hydrology + transient impact-melt water. Dragonfly arrives 2034.
+    \item \textbf{Venus cloud layer}: phosphine claim contested.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Venus Phosphine: A Cautionary Case Study}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{lincowski2021_phosphine_so2}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Greaves+ 2020: PH$_3$ in Venus clouds claimed as biosignature.
+      \item Lincowski+ 2021: same data fits SO$_2$ in Venus mesosphere.
+      \item Original feature is at the JCMT/ALMA noise floor.
+      \item Direct analogue of the K2-18 b DMS controversy.
+      \item DAVINCI + EnVision + VERITAS will resolve.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Venus Phosphine + K2-18 b: Same Lesson, Two Telescopes}
+  \begin{itemize}
+    \item Both: data at edge of instrumental sensitivity.
+    \item Both: molecular identification contested.
+    \item Both: plausible abiotic explanations not ruled out.
+    \item Right response in either case: \emph{better data}, ideally from independent instruments.
+    \item Both episodes have driven the design of next-generation instruments.
+    \item Pedagogical value is high regardless of how each turns out.
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{quanz2022_life_yields}{LIFE detection yields. Quanz et al.\ (2022)}
+\section{Exoplanet Life Detection and the Next Decade}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{What Convincing Exoplanet Biosignature Detection Requires}
+  \begin{enumerate}
+    \item Multiple independent gases in disequilibrium (oxidising + reducing).
+    \item Temporal variability consistent with a biological cycle.
+    \item Geological context (mass, radius, host, age, escape) excluding obvious abiotic pathways.
+    \item Independent confirmation by different instrument / wavelength / observatory.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{TRAPPIST-1 b: What JWST Can Already Tell Us}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{greene2023_trappist1b_eclipse}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item MIRI 15 $\mu$m secondary eclipse.
+      \item $T_d \approx 503$ K = bare-rock equilibrium.
+      \item No thick atmosphere to redistribute heat.
+      \item Greene+ 2023.
+      \item M dwarf HZ planets often retain little atmosphere.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{LHS 475 b: Featureless Spectrum}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{lustigyaeger2023_lhs475b_spectrum}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item NIRSpec G395H, Earth-sized M dwarf planet.
+      \item Featureless transmission.
+      \item H$_2$-dominated ruled out.
+      \item High-mean-molecular-weight or airless: still consistent.
+      \item Lustig-Yaeger+ 2023.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{K2-18 b: How Tentative Biosignatures Are Tested}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{madhusudhan2023_k218b_spectrum}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Madhusudhan+ 2023: CH$_4$ + CO$_2$ + tentative DMS at $\sim 3\sigma$.
+      \item Hycean (H$_2$ over global ocean) interpretation contested.
+      \item Multiple groups failed to reproduce DMS.
+      \item Whatever the resolution: \textbf{textbook case in real-time biosignature testing}.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{LIFE: Mid-IR Nulling Interferometer}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{quanz2022_life_yields}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Four free-flying spacecraft, 4--18 $\mu$m.
+      \item Nulling: stellar light suppressed by destructive interference.
+      \item 3.5 m aperture: $500$--$800$ planets, $\sim 25$ rocky HZ.
+      \item Quanz+ 2022.
+      \item Companion to HWO (visible/NIR).
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{The 2026--2040 Mission Queue}
+  \begin{itemize}
+    \item \textbf{Now--2030}: JWST continues. BepiColombo at Mercury 2026. PLATO 2026. Roman 2027. Dragonfly launch 2028. Ariel 2029. Europa Clipper at Jupiter 2030.
+    \item \textbf{2030s}: JUICE Ganymede orbit. Dragonfly at Titan 2034. Ariel atmospheric statistics. ELT class first light 2028+. DAVINCI/EnVision/VERITAS at Venus. Mars Sample Return delivery (re-baselined). Uranus orbiter concept advances.
+    \item \textbf{2040s}: HWO + LIFE in hardware. First plausible direct atmospheric characterisation of \emph{Earth-analogue} exoplanets.
+  \end{itemize}
+  \vskip4pt
+  \keyresult{The first time "are we alone?" is empirical, not philosophical. The answer arrives within the careers of the students in this room.}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\section*{Course Wrap-up}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{The Five Biggest Things We Have Learned}
+  \begin{enumerate}
+    \item Planet formation is a \textbf{physical process}, not chance. Same laws everywhere.
+    \item Planetary interiors are \textbf{heat engines} driving tectonics, dynamos, atmospheres on Gyr timescales.
+    \item Atmospheres are \textbf{not static}. They form, evolve, escape, and feed back on surfaces and biospheres.
+    \item Habitability is a \textbf{coupled systems property}, not a single condition.
+    \item The solar system is \textbf{one example} in a much larger statistical population.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{The Five Biggest Open Questions}
+  \begin{enumerate}
+    \item How does life originate, and how often?
+    \item What sets the radius valley?
+    \item When did Jupiter form, and was it the architect of the inner solar system?
+    \item Was Mars ever inhabited?
+    \item Is the solar system rare or typical?
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Final Framing}
+  \begin{itemize}
+    \item Planetary science is now \emph{the science of comparative climate, interior, and life-hosting trajectories}.
+    \item Solar system: reference, not benchmark.
+    \item Exoplanet population: statistical context.
+    \item The frontier is moving fast.
+    \item One systems-level view: habitability, formation, escape, weathering, biology are \emph{one coupled problem}, with one consistent set of physical principles, the same set wherever you go in the galaxy.
+  \end{itemize}
+  \vskip6pt
+  \keyresult{That is what the course has been about.}
+\end{frame}
+
+\begin{frame}[plain,noframenumbering]
+  \begin{tikzpicture}[remember picture, overlay]
+    \ipscontain{title_background}
+    \fill[ipsPrimary, opacity=0.70] (current page.north west) rectangle (current page.south east);
+  \end{tikzpicture}
+  \vfill
+  \begin{center}
+    {\color{white}\Huge \textbf{Thank You}}\\[14pt]
+    {\color{white}\large Introduction to Planetary Science is complete.}\\[10pt]
+    {\color{white}\normalsize Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
+  \end{center}
+  \vfill
+\end{frame}
+
+\end{document}
