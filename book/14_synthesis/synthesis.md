@@ -92,10 +92,10 @@ The cleanest way to see where the solar system sits in the exoplanet population 
 :name: fig:l14:periodradius
 :width: 70%
 
-The period-radius distribution of confirmed extrasolar planets, colour-coded by host system multiplicity, with the solar system planets (large black markers) overlaid in the bottom panel. Solar system terrestrial planets occupy a region populated almost entirely by planets in compact "peas-in-a-pod" multi-planet systems, but with much wider mutual spacings and a much larger range of masses. The solar system terrestrials look unlike a typical compact-multi system. Reproduced from {cite:t}`Raymond2022`.
+The period-radius distribution of confirmed extrasolar planets, colour-coded by host system multiplicity, with the solar system planets (large black markers) overlaid in the bottom panel. Solar system terrestrial planets occupy a region populated almost entirely by planets in compact "peas-in-a-pod" multi-planet systems, but with much wider mutual spacings and a much larger range of masses. The solar system terrestrials look unlike a typical compact-multi system. Reproduced from {cite:t}`Weiss2023`.
 ```
 
-What does the comparison show? In four respects the solar system looks utterly typical: small rocky planets sit close to the star, gas giants sit further out, ice giants and small icy bodies sit further out still, and the radial composition gradient runs from rocky to icy. Compositional gradients of that kind are general consequences of forming planets in a disk with a snow line, and they appear in many exoplanet systems too {cite:p}`Raymond2022,Drazkowska2023`.
+What does the comparison show? In four respects the solar system looks utterly typical: small rocky planets sit close to the star, gas giants sit further out, ice giants and small icy bodies sit further out still, and the radial composition gradient runs from rocky to icy. Compositional gradients of that kind are general consequences of forming planets in a disk with a snow line, and they appear in many exoplanet systems too {cite:p}`Weiss2023,Drazkowska2023`.
 
 In four other respects, however, the solar system looks unusual:
 
@@ -108,7 +108,7 @@ In four other respects, however, the solar system looks unusual:
 :name: fig:l14:peas
 :width: 75%
 
-Compact multi-planet systems with four or more transiting planets interior to 1.52 AU, ranked by their planet-radius dispersion (most uniform sizes at the top, greatest size diversity at the bottom). Point sizes scale logarithmically with planet radius. The solar system terrestrials, included for comparison, sit in the bottom quintile of size uniformity, showing that the peas-in-a-pod architecture prevalent in Kepler compact multis did not emerge in our own system. Reproduced from {cite:t}`Raymond2022`.
+Compact multi-planet systems with four or more transiting planets interior to 1.52 AU, ranked by their planet-radius dispersion (most uniform sizes at the top, greatest size diversity at the bottom). Point sizes scale logarithmically with planet radius. The solar system terrestrials, included for comparison, sit in the bottom quintile of size uniformity, showing that the peas-in-a-pod architecture prevalent in Kepler compact multis did not emerge in our own system. Reproduced from {cite:t}`Weiss2023`.
 ```
 
 The mass-radius diagram offers a complementary view ({numref}`fig:l14:massrad`). Plotting bulk density implied by mass and radius for the planets in the solar system and for the exoplanets where both quantities are known, one sees that the rocky planets cluster along a narrow track set by the equation of state of silicate mantles and iron cores, while the larger planets spread out into the volatile-rich and the gas-dominated regimes. The solar system terrestrials sit firmly on the "Earth-like" composition curve. Many close-in exoplanet super-Earths sit on the same curve too, indicating that the population of bare rocky cores is real, but a substantial subset of slightly larger planets sits *above* the rocky line, indicating that they retain significant volatile envelopes that swell their radii relative to a pure-rock composition.
