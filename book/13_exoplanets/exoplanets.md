@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to describe the main exoplanet detection methods and their observational biases, interpret the period-radius diagram and its key features (radius valley, hot Neptune desert, peas-in-a-pod), apply the transit and radial velocity geometry to derive planetary mass, radius, and bulk density, and evaluate JWST-era atmospheric characterisation results and their implications for habitability and biosignatures.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 13 (PDF)](../_static/slides/lecture13.pdf)
+```
+
 In all the lectures so far we have studied a single planetary system in extraordinary detail.
 We know its age, its eight planets, its hundreds of moons, its Kuiper belt, its formation history.
 We do not yet know whether any of this is typical.

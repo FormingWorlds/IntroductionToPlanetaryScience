@@ -1,0 +1,1047 @@
+% lecture13.tex: Lecture 13: Exoplanets
+% Introduction to Planetary Science, Kapteyn Institute
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme and macros ────────────────────────────────────────
+\usepackage{../common/beamerthemeIPS}
+\input{../common/macros}
+\graphicspath{{figures/}{../common/}{../../book/13_exoplanets/figures/}}
+
+% ── Metadata ────────────────────────────────────────────────
+\title[Lecture 13: Exoplanets]{Lecture 13: Exoplanets\\Detection, Demographics, Characterisation}
+\subtitle{Introduction to Planetary Science}
+\author[L13]{Tim Lichtenberg}
+\institute{Kapteyn Astronomical Institute\\University of Groningen}
+\date{2026}
+\titlebgcredit{JWST/NIRSpec transit of WASP-39 b. Credit: Alderson et al.\ (2023)}
+
+% ════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Learning objectives ─────────────────────────────────────
+\begin{frame}{Learning Objectives}
+  By the end of this lecture, you will be able to:
+  \vskip8pt
+  \begin{itemize}
+    \item Describe the main exoplanet detection methods and their biases.
+    \item Interpret the period-radius diagram and the radius valley.
+    \item Apply transit + radial-velocity geometry to derive mass, radius, and bulk density.
+    \item Evaluate JWST-era atmospheric results and biosignature claims.
+  \end{itemize}
+  \vskip8pt
+  \keyresult{From zero confirmed exoplanets in 1991 to more than 6000 in 2026.}
+\end{frame}
+
+% ── Recap ───────────────────────────────────────────────────
+\begin{frame}{Recap: Where We Are in the Course}
+  \begin{itemize}
+    \item L9-L11 walked through every major solar system planet.
+    \item L12: small bodies as formation fossils.
+    \item Today: \emph{turn the question outward}. Are these patterns universal?
+    \item L14: synthesis. What constitutes a convincing detection of life?
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{hd209458b_first_transit}{HD 209458 b first transit, STARE 1999. Charbonneau et al.\ (2000)}
+\section{Historical Context}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{From Zero to Six Thousand in Three Decades}
+  \begin{itemize}
+    \item \textbf{1992:} Wolszczan + Frail. Two planets around pulsar PSR B1257+12 from pulse-timing.
+    \item \textbf{1995:} Mayor + Queloz. \textbf{51 Pegasi b} via radial velocity. 0.5 $\Mjup$, 4.23-day orbit.
+      \begin{itemize}
+        \item Contradicted every textbook picture of giant-planet formation.
+        \item $\to$ migration models reshaped formation theory.
+        \item Nobel Prize 2019.
+      \end{itemize}
+    \item \textbf{1999:} HD 209458 b. First transit of a known RV planet.
+      \begin{itemize}
+        \item Combined transit depth + RV $\to$ first bulk density of an exoplanet.
+        \item Confirmed hot Jupiters are gas-dominated.
+      \end{itemize}
+    \item \textbf{2009--2018:} Kepler + K2 transformed the field statistically.
+    \item \textbf{2022--present:} JWST atmospheric characterisation era.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{HD 209458 b: First Ground-Based Transit (1999)}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{hd209458b_first_transit}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item STARE photometer, two nights in Sep 1999.
+      \item Successive transits dropped flux by $\sim 1.7\%$.
+      \item Independent detection by Henry et al.\ (2000).
+      \item After this point: exoplanets were physical objects, not just Doppler signals.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{transit_geometry}{Transit geometry. Winn (2010)}
+\section{Detection Method 1: Radial Velocity}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{Radial Velocity: Doppler Reflex of the Star}
+  \begin{itemize}
+    \item Star + planet orbit a common barycentre.
+    \item Star's reflex orbit: $a_\star = (m_p / M_\star)\,a_p$.
+    \item Spectral lines blueshift / redshift periodically.
+    \item For circular, edge-on orbit:
+  \end{itemize}
+  \[
+    K_\star = \left(\frac{2\pi G}{P}\right)^{1/3}\!\frac{m_p \sin i}{M_\star^{2/3}}\,\frac{1}{\sqrt{1 - e^2}}
+  \]
+  Quick scales:
+  \begin{itemize}
+    \item Jupiter at 5.2 AU: $K_\star \approx 12.5$ m s$^{-1}$.
+    \item Earth at 1 AU: $K_\star \approx 9$ cm s$^{-1}$.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Instrument Floor and Stellar Noise}
+  \begin{itemize}
+    \item ELODIE (1995): $\sim$10 m s$^{-1}$.
+    \item HARPS (2003): $\sim$1 m s$^{-1}$.
+    \item ESPRESSO (2018): 10 cm s$^{-1}$ demonstrated.
+    \item Now \textbf{stellar noise}-limited: granulation, p-modes, starspots produce 10 cm s$^{-1}$ to 1 m s$^{-1}$ jitter even on quiet stars.
+    \item True Earth twin: at the very edge of physical accessibility.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The $m \sin i$ Degeneracy}
+  RV gives only $K_\star$, hence $m_p \sin i$.
+  \begin{itemize}
+    \item Face-on: $\sin i = 0$, no signal at all.
+    \item Edge-on: $\sin i = 1$, true mass.
+    \item RV alone $\to$ \emph{minimum} mass only.
+  \end{itemize}
+  \vskip6pt
+  Break the degeneracy with:
+  \begin{itemize}
+    \item \textbf{Transit} ($\sin i \approx 1$ to a few percent),
+    \item \textbf{Astrometry} (gives inclination directly),
+    \item \textbf{Direct imaging} (geometric).
+  \end{itemize}
+  \vskip4pt
+  RV biases: massive planets, short orbits, bright slowly-rotating quiet G/K stars.
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{transit_geometry}{Transit geometry. Winn (2010)}
+\section{Detection Method 2: Transits}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{Transit Geometry}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{transit_geometry}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Orbital plane near our line of sight $\to$ planet crosses stellar disk.
+      \item Depth: $\delta = (R_p / R_\star)^2$.
+      \item Probability: $\Theta \approx R_\star / a$.
+      \item Strong selection: short periods + large $R_p / R_\star$.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Quick Scales}
+  \begin{itemize}
+    \item Jupiter ($R_J$) around Sun ($R_\odot$): $\delta \approx 1.01\%$. Easy from the ground.
+    \item Earth around Sun: $\delta \approx 84$ ppm. Requires space.
+    \item Earth around M dwarf ($R_\star = 0.15\,R_\odot$): $\delta \approx 4000$ ppm. Ground-accessible!
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Inverse scaling with stellar radius is why TRAPPIST-1 dominates atmospheric characterisation.}
+\end{frame}
+
+\begin{frame}{Light Curve Anatomy}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{transit_lightcurve_schematic}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Four contact times: $t_\mathrm{I}$, $t_\mathrm{II}$, $t_\mathrm{III}$, $t_\mathrm{IV}$.
+      \item Duration $\to$ impact parameter $b$, inclination.
+      \item Ingress shape $\to$ stellar limb darkening.
+      \item Depth $\to$ planet radius (given $R_\star$).
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% Hero: JWST WASP-39 b transit
+\begin{frame}[plain]
+  \begin{center}
+    \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{jwst_transit_lightcurve}\\
+    \footnotesize JWST/NIRSpec transit photometry of WASP-39 b: 200--500 ppm precision per channel. Alderson et al.\ (2023).
+  \end{center}
+\end{frame}
+
+\begin{frame}{Reading the JWST Transit Photometry}
+  \begin{itemize}
+    \item \textbf{Top}: raw broadband transit light curves, NIRSpec G395H NRS1 + NRS2.
+    \item \textbf{Middle}: spectroscopic light curves at each wavelength bin.
+    \item \textbf{Bottom}: per-channel precision $\to$ 200--500 ppm per integration.
+    \item Photometric noise floor is now \emph{below} typical exoplanet absorption features.
+    \item Selection biases:
+    \begin{itemize}
+      \item Short period ($P < 100$ days) for repeated transits.
+      \item Large $R_p / R_\star$ (favours hot Jupiters and M-dwarf systems).
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{chenkipping_mass_radius}{Empirical mass-radius relation. Chen \& Kipping (2017)}
+\section{Blackboard: Transit Depth + RV $\to$ Bulk Density}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{Why Combine Transit and RV?}
+  \begin{itemize}
+    \item Transit alone: $R_p$, but no mass.
+    \item RV alone: $m_p \sin i$, but no radius.
+    \item Combined: \textbf{both} for the same planet $\to$ bulk density.
+    \item Density is the central observable that turns a detection into a physical object.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Step 1: Transit Depth}
+  Star = uniform disk $R_\star$. Planet = opaque disk $R_p$.
+  \[
+    \frac{\Delta F}{F} = \frac{\pi R_p^2}{\pi R_\star^2} = \left(\frac{R_p}{R_\star}\right)^2
+  \]
+  Given $R_\star$ from spectroscopy + parallax, the depth gives $R_p$ directly.
+  \vskip4pt
+  Limb darkening + ingress shape $\to$ $\sim 10\%$ corrections.
+\end{frame}
+
+\begin{frame}{Step 2: RV Semi-Amplitude}
+  Conservation of momentum: $M_\star a_\star = m_p a_p$, $a = a_\star + a_p$.
+  \[
+    v_\star = \frac{2\pi a_\star}{P} = \frac{m_p}{M_\star + m_p}\cdot\frac{2\pi a}{P}
+  \]
+  Use Kepler: $a^3 = G(M_\star + m_p) P^2 / (4\pi^2)$, sub in:
+  \[
+    K_\star = v_\star \sin i = \left(\frac{2\pi G}{P}\right)^{1/3}\!\frac{m_p \sin i}{M_\star^{2/3}}\,\frac{1}{\sqrt{1 - e^2}}
+  \]
+  \vskip4pt
+  $K_\star \propto P^{-1/3}$: short-period planets give larger reflex.
+\end{frame}
+
+\begin{frame}{Step 3: Combine}
+  A transit forces $\sin i \approx 1$ (orbit near edge-on).
+  \begin{itemize}
+    \item $\sin i \approx 1$ collapses the $m_p \sin i$ degeneracy.
+    \item Both $R_p$ and $m_p$ measured for the same object.
+    \item Bulk density follows from elementary geometry:
+  \end{itemize}
+  \[
+    \boxed{\; \bar\rho_p = \frac{m_p}{(4/3)\pi R_p^3} = \frac{3 m_p}{4\pi R_p^3} \;}
+  \]
+  \vskip4pt
+  \keyresult{Transit + RV is the single observational machinery that took exoplanet science from exotic claim to compositional census.}
+\end{frame}
+
+\begin{frame}{Density Maps to Composition}
+  \begin{columns}[T]
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item $\bar\rho \approx 5.5$: rocky (Earth, Venus).
+      \item $\bar\rho \approx 1.3$: gas giant (Jupiter).
+      \item $\bar\rho \approx 0.5$: inflated H/He envelope.
+      \item $\bar\rho \approx 2$--$4$: \emph{sub-Neptune}, the most common type with no solar-system analogue.
+    \end{itemize}
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{chenkipping_mass_radius}
+  \end{columns}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{pds70_disk}{PDS 70 disk + 2 protoplanets. Haffert et al.\ (2019)}
+\section{Other Detection Methods}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{Direct Imaging: Spatial Separation of Photons}
+  \begin{itemize}
+    \item Conceptually simplest, technically hardest.
+    \item Sun + Jupiter contrast at visible: $10^{-9}$. Sun + Earth: $10^{-10}$.
+    \item Four ingredients:
+    \begin{itemize}
+      \item Adaptive optics (atmospheric turbulence correction)
+      \item Coronagraphs (stellar light suppression)
+      \item Angular + spectral differential imaging (speckle subtraction)
+      \item Long integration ($\to$ averaging speckle realisations)
+    \end{itemize}
+    \item Strongly biased to \emph{young}, massive, wide-orbit, self-luminous giants.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{HR 8799: Four Imaged Giants}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{hr8799_discovery}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Marois et al.\ 2008. Keck + Gemini AO.
+      \item Three planets initially, fourth added 2010.
+      \item Each $\sim 5$--$10\,\Mjup$ at $14$--$70$ AU.
+      \item Host: 30 Myr A-type. Planets still self-luminous and cooling.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{$\beta$ Pictoris b: Orbital Motion in Two Epochs}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{betapic_imaging}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Lagrange et al.\ (2010).
+      \item $\sim 8\,\Mjup$ at $\sim 9$ AU.
+      \item Two epochs (2003, 2009) $\to$ orbital motion confirms bound companion.
+      \item Same star: imaged debris disk + a second giant (c).
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% Hero: PDS 70
+\begin{frame}[plain]
+  \begin{center}
+    \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{pds70bc_haffert}\\
+    \footnotesize H$\alpha$ confirmation of PDS 70 b + c forming inside a disk gap. Haffert et al.\ (2019).
+  \end{center}
+\end{frame}
+
+\begin{frame}{PDS 70: Forming Planets in a Disk Gap}
+  \begin{columns}[T]
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{pds70_disk}
+    \column{0.5\textwidth}
+    \begin{itemize}
+      \item Host: 5 Myr K7 with cleared central cavity.
+      \item SPHERE (NIR) + MUSE (H$\alpha$) detected b inside the gap (Keppler+ 2018).
+      \item Second protoplanet c added later (Haffert+ 2019).
+      \item Both are \emph{actively accreting} (H$\alpha$ shock emission).
+      \item Cleanest direct match between planet-disk theory and observation.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Astrometry: Gaia Will Find Jupiter Analogues}
+  \[
+    \alpha = \frac{m_p}{M_\star}\cdot\frac{a_p}{d}
+  \]
+  \begin{itemize}
+    \item Jupiter analogue at 10 pc: $\sim 0.5$ mas. Earth analogue: $\sim 0.3\,\mu$as.
+    \item Hipparcos (1989--93): $\sim 1$ mas, no exoplanets.
+    \item Gaia (2013--): $20$--$50\,\mu$as per epoch, $\sim 10\,\mu$as final.
+    \item DR4 (late 2026): $10^2$--$10^3$ astrometric exoplanets, mostly Jupiter analogues.
+    \item Astrometry gives \emph{inclination directly} $\to$ true mass.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Microlensing + Timing}
+  \begin{itemize}
+    \item \textbf{Microlensing}: foreground star magnifies background source; planet adds a small spike.
+      \begin{itemize}
+        \item Sensitive at kpc distances; sweet spot at 0.5--10 AU.
+        \item One-shot, never repeats.
+        \item Roman (2027): expected $\sim 1000$--$3000$ bound + comparable rogue planets.
+      \end{itemize}
+    \item \textbf{TTVs}: gravitational coupling between transiting planets perturbs transit times $\to$ dynamical masses without RV.
+      \begin{itemize}
+        \item Essential for faint stars: TRAPPIST-1 masses come almost entirely from TTVs.
+      \end{itemize}
+    \item \textbf{Pulsar timing}: extraordinarily sensitive but tiny target sample.
+    \item \textbf{Eclipsing binaries}: Kepler-16 b ("Tatooine") is circumbinary.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Detection Bias Summary}
+  \begin{itemize}
+    \item \textbf{RV}: massive, 1--10 yr orbits, bright G/K stars.
+    \item \textbf{Transit}: short period, large $R_p / R_\star$, quiet bright stars.
+    \item \textbf{Direct imaging}: wide ($>10$ AU), young, massive, self-luminous.
+    \item \textbf{Astrometry}: wide orbits matching mission baseline.
+    \item \textbf{Microlensing}: 1--10 AU, any host distance, unrepeatable.
+    \item \textbf{Timing}: compact multis (TTVs) or circumbinaries.
+  \end{itemize}
+  \vskip6pt
+  \keyresult{The shape of the observed exoplanet archive reflects the union of biases as much as the underlying physics.}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+% BREAK
+% ════════════════════════════════════════════════════════════
+\begin{frame}[plain,noframenumbering]
+  \vfill
+  \begin{center}
+    {\Huge \textcolor{ipsAccent}{Break}}\\[10pt]
+    {\large End of Part 1: Detection Methods}\\[6pt]
+    {\normalsize Part 2: Demographics, Architectures, Atmospheres}
+  \end{center}
+  \vfill
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{petigura_occurrence}{Kepler occurrence rates. Petigura et al.\ (2018)}
+\section{Demographics: Kepler and TRAPPIST-1}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{The Kepler Revolution}
+  \begin{itemize}
+    \item 0.95 m telescope, single field, 150{,}000 stars, 4 years, 30 ppm precision.
+    \item \emph{Computable detection efficiency} $\to$ first occurrence-rate measurements.
+    \item Headline: at least one planet per main-sequence star (Petigura+ 2018).
+    \item Small planets ($R < 4\,\Rearth$) dominate by far.
+    \item Hot Jupiters: $0.5$--$1\%$ of Sun-like stars (rare, but easy to find).
+    \item $\eta_\oplus$ (Earth-size in HZ): $\sim 0.1$--$0.6$, central value $\sim 0.3$ (Bryson+ 2021).
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Period-Size Occurrence Rate}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.7\textheight, keepaspectratio]{petigura_occurrence}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item California-Kepler Survey, after stellar parameter refinement.
+      \item Small planets common at every period.
+      \item Slight fall-off at longer periods (partly observational).
+      \item Long-period flattening $\to$ Kepler had only 4-yr baseline.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{$\eta_\oplus$: Earths in Habitable Zones}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{bryson_etaearth}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Bryson+ 2021 marginal occurrence.
+      \item Left: per unit radius. Right: per unit instellation.
+      \item Dark/light bands: 68\% / 95\% credible intervals.
+      \item $\eta_\oplus$: 0.1--0.6 depending on definition.
+      \item \textbf{Earth-class planets are ordinary, not miraculous.}
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{TRAPPIST-1: Seven Earths in Resonance}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{trappist1_transits}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item M8 ultra-cool dwarf at 12 pc.
+      \item Seven transiting Earth-sized planets within 0.06 AU.
+      \item Five-step mean-motion resonant chain $\to$ early disk migration.
+      \item Probability all seven transit if random: $<10^{-3}$.
+      \item Gillon et al.\ 2017.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{TRAPPIST-1 Masses from TTVs}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{trappist1_ttvs}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item TRAPPIST-1 e transit-timing variations.
+      \item Tens-of-minutes amplitude over hundreds of days.
+      \item Best-fit dynamical model includes the full 7-planet coupling.
+      \item Yields all seven masses without RV.
+      \item M8 is too faint for high-precision RV.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{fulton_period_radius}{Fulton period-radius diagram. Fulton et al.\ (2017)}
+\section{Period-Radius Diagram and the Radius Valley}
+% ════════════════════════════════════════════════════════════
+
+% Hero: Fulton period-radius diagram
+\begin{frame}[plain]
+  \begin{center}
+    \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{fulton_period_radius}\\
+    \footnotesize Period-radius distribution of small Kepler planets after stellar parameter refinement. Fulton et al.\ (2017).
+  \end{center}
+\end{frame}
+
+\begin{frame}{Reading the Period-Radius Diagram}
+  \begin{itemize}
+    \item Hot Jupiters: tight clump at $P < 10$ d, $R > 10\,\Rearth$.
+    \item Sub-Neptunes ($2$--$4\,\Rearth$): \emph{the most common class}; no solar-system analogue.
+    \item Super-Earths ($1$--$1.8\,\Rearth$): rocky planets larger than Earth.
+    \item Terrestrial regime ($P > 100$ d, $R < 1.5\,\Rearth$): largely unexplored. PLATO will fill.
+    \item Most striking feature: the \textbf{deficit at $\sim 1.8\,\Rearth$}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The Radius Valley (Fulton Gap)}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{fulton_gap}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Statistically significant deficit at $1.5$--$2\,\Rearth$.
+      \item Below: super-Earths peaked at $\sim 1.3\,\Rearth$.
+      \item Above: sub-Neptunes peaked at $\sim 2.4\,\Rearth$.
+      \item Bimodal small-planet population. Defining demographic feature.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Photoevaporation Strips H/He Envelopes}
+  Energy-limited escape rate:
+  \[
+    \dot M \approx \frac{\epsilon\,\pi F_\mathrm{XUV} R_p^3}{G M_p}
+  \]
+  \begin{itemize}
+    \item Young stars saturate XUV at $\sim 10^3 \times$ present-day for $\sim 100$ Myr.
+    \item Low-density, low-mass planets are \emph{easier to strip}.
+    \item Cumulative loss for a $10\,\Mearth$ sub-Neptune at 0.1 AU: a few \% of an Earth mass.
+    \item Comparable to a primordial H/He envelope on a rocky core.
+    \item Owen \& Wu (2013): naturally produces a bimodal radius distribution.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Photoevaporation Model + Mass-Loss Tracks}
+  \begin{columns}[T]
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{owen_evaporation_valley}\\
+    \footnotesize Predicted radius valley
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{owen_xuv_massloss}\\
+    \footnotesize Time evolution of radius + mass
+  \end{columns}
+  \vskip4pt
+  Top: ends in saturated XUV phase at 100 Myr; planets settle into bimodal distribution.
+\end{frame}
+
+\begin{frame}{Core-Powered Mass Loss: Same Outcome, Different Driver}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{ginzburg_corepowered}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Ginzburg+ 2018, Gupta+ 2019.
+      \item Hot rocky core retains formation heat $\to$ basal flux into envelope drives slow outflow.
+      \item No XUV needed.
+      \item Also produces bimodal radius distribution at $\sim 1.8\,\Rearth$.
+      \item Both mechanisms likely operate.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Slope of the Valley with Period}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{vaneylen_radius_valley}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Van Eylen+ 2018, asteroseismic radii.
+      \item Valley shifts to smaller $R_p$ at longer periods.
+      \item Brown: super-Earths. Blue: sub-Neptunes.
+      \item Slope consistent with both photoevaporation and core-powered models.
+      \item Current data cannot distinguish.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Implication: Many Super-Earths Are Stripped Cores}
+  \begin{itemize}
+    \item Many close-in rocky super-Earths are not "naturally" rocky.
+    \item They are the bare cores of former sub-Neptunes.
+    \item Whether a given super-Earth was born rocky or stripped: \emph{cannot tell from bulk density alone}.
+    \item Consequence for habitability: stripped cores have violent atmospheric histories and may have very different surface/interior chemistry.
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{mazeh_neptune_desert}{Hot Neptune desert. Mazeh et al.\ (2016)}
+\section{Hot Neptune Desert and Peas-in-a-Pod}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{The Hot Neptune Desert}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{mazeh_neptune_desert}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Striking deficit at $10$--$100\,\Mearth$, $P < 5$ d.
+      \item Hot Jupiters at the same periods: rare but present.
+      \item Ultra-short rocky: rare but present.
+      \item Hot Neptunes: \emph{essentially absent}.
+      \item Power-law boundaries (Mazeh+ 2016).
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Two Edges, Two Mechanisms}
+  \begin{itemize}
+    \item \textbf{Lower edge (small mass)}: photoevaporation strips weakly-bound Neptune envelopes $\to$ leaves super-Earths.
+    \item \textbf{Upper edge (large mass)}: Roche-lobe overflow on inflated hot Jupiters truncates the heavy population.
+    \item Independent evidence that mass loss is the dominant sculptor of close-in planets.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Peas-in-a-Pod}
+  \begin{columns}[T]
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{weiss_peas_in_pod}\\
+    \footnotesize Adjacent radii: Pearson 0.65
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{weiss_spacing}\\
+    \footnotesize Adjacent period ratios: clustered
+  \end{columns}
+  \vskip4pt
+  Within a Kepler multi-system, planets tend to be \emph{the same size} as each other and \emph{uniformly spaced}. Weiss et al.\ (2018).
+\end{frame}
+
+\begin{frame}{Peas-in-a-Pod: Implications}
+  \begin{itemize}
+    \item Implies smooth, local formation rather than stochastic giant impacts.
+    \item Inner solar system (giant-impact dominated) may be unusual.
+    \item TRAPPIST-1: extreme example of a peas-in-a-pod with resonant chain.
+    \item Kepler-90 (8 planets), TOI-178 (6 planets in unbroken chain).
+    \item Not universal: RV-discovered systems show much more architectural diversity.
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{obliquity_pathways}{Hot Jupiter migration channels. Albrecht et al.\ (2022)}
+\section{Hot Jupiters and Migration}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{Three Migration Channels}
+  Hot Jupiters at 0.05 AU \emph{must} have migrated.
+  \begin{itemize}
+    \item \textbf{Disk migration} (Type II): smooth, gas-driven. Preserves alignment.
+    \item \textbf{High-eccentricity migration} (Kozai-Lidov): distant perturber pumps eccentricity, tides circularise. Produces misalignments.
+    \item \textbf{Planet-planet scattering}: dynamical instability ejects giants, leaves survivors on eccentric orbits, tides circularise. Misalignments.
+  \end{itemize}
+  \vskip6pt
+  Inner edge set by Roche limit + tidal circularisation timescale: pile-up at $\sim 0.04$--$0.05$ AU.
+\end{frame}
+
+\begin{frame}{Migration Channels and Stellar Obliquities}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{obliquity_pathways}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Albrecht+ 2022.
+      \item Disk migration $\to$ aligned.
+      \item Kozai-Lidov $\to$ arbitrary obliquity.
+      \item Scattering $\to$ misaligned.
+      \item Stellar obliquity is the main empirical handle.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rossiter-McLaughlin Effect}
+  \begin{columns}[T]
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{rossiter_mclaughlin}
+    \column{0.5\textwidth}
+    \begin{itemize}
+      \item Transiting planet first occults blueshifted (approaching) hemisphere, then redshifted.
+      \item Time-resolved line distortion traces angle $\lambda$ between projected stellar spin and orbit normal.
+      \item Triaud (2018) review.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Observed Obliquity Distribution}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{obliquity_distribution}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item $\lambda$ vs $a/R_\star$, split by host spectral type.
+      \item Cool stars ($T_\mathrm{eff} < 6250$ K): tight orbits aligned (tidal realignment).
+      \item Hot stars: scattered $\lambda$.
+      \item Wide scatter at large $a/R_\star$ implies a wide \emph{primordial} obliquity distribution.
+      \item All three migration channels likely operate.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{dressing_mdwarf_occurrence}{M dwarf occurrence. Dressing \& Charbonneau (2015)}
+\section{Compositions and M Dwarfs}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{Sub-Neptunes: Water World or H/He?}
+  \begin{itemize}
+    \item Super-Earths (below valley): rocky, $\bar\rho \sim 4$--$8$ g cm$^{-3}$.
+    \item Sub-Neptunes (above valley): $\bar\rho \sim 1$--$3$ g cm$^{-3}$, need volatiles on top of a rocky core.
+    \item Volatile component degenerate: thick H/He, thick H$_2$O, or some mix.
+    \item \textbf{Hycean} hypothesis (Madhusudhan+ 2023): shallow liquid ocean under thick H$_2$ atmosphere. Contested.
+    \item Ultra-short-period rocky: thin atmosphere vs bare rock indistinguishable from density alone.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{M Dwarfs: Easy Targets, Tough Habitability}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{dressing_mdwarf_occurrence}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item $\sim 75\%$ of all main-sequence stars.
+      \item M dwarfs host $\sim 2.5$ small planets each; $\sim 0.16$ in HZ.
+      \item Transit + RV signals geometrically favourable.
+      \item BUT: pre-main-sequence high-luminosity for hundreds of Myr.
+      \item Habitable-zone planet \emph{starts} inside runaway greenhouse zone.
+      \item Dressing \& Charbonneau (2015).
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{M Dwarf Habitability: Two Worries}
+  \begin{itemize}
+    \item \textbf{Stellar activity} + early high-XUV $\to$ Luger \& Barnes (2015) showed an ocean's worth of water can be lost as O$_2$ (false-positive biosignature).
+    \item \textbf{Tidal locking}: HZ M dwarf planets in 1:1 spin-orbit resonance.
+    \item Permanent dayside / nightside; climate must redistribute heat or condense volatiles on the night side.
+    \item 3D GCMs (Yang+ 2013): substellar clouds can extend the inner edge.
+    \item TRAPPIST-1 = central laboratory for these questions.
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{wasp39b_prism_spectrum}{WASP-39 b PRISM spectrum. Rustamkulov et al.\ (2023)}
+\section{JWST Era: Atmospheric Characterisation}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{Transmission Spectroscopy}
+  Atmospheric scale height:
+  \[
+    H = \frac{\kB T}{\mu m_u g}
+  \]
+  Wavelength-dependent depth: $\delta(\lambda) = (R_p + n_H H(\lambda))^2 / R_\star^2$.
+  \vskip4pt
+  Quick scales for hot Jupiter ($T = 1500$ K, $\mu = 2.3$, $g = 25$ m s$^{-2}$):
+  \begin{itemize}
+    \item $H \approx 200$ km
+    \item Modulation per scale height: $\Delta\delta / \delta \approx 2 \times 10^{-2}$
+    \item Absolute modulation: $\sim$200 ppm $\to$ JWST-routine.
+    \item Sub-Neptune: 10--100 ppm. Earth/M dwarf: $<$10 ppm.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Clouds Can Mute Spectra}
+  \begin{columns}[T]
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{sing_hotjup_spectra}\\
+    \footnotesize HST + Spitzer ten hot Jupiters
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{gj1214b_clouds}\\
+    \footnotesize GJ 1214 b: featureless. Kreidberg+ 2014.
+  \end{columns}
+  \vskip4pt
+  Continuum from clear (Na, K, H$_2$O) to fully cloudy. Diversity at similar $T$, $g$ is one of the central puzzles.
+\end{frame}
+
+% Hero: WASP-39 b PRISM spectrum
+\begin{frame}[plain]
+  \begin{center}
+    \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{wasp39b_prism_spectrum}\\
+    \footnotesize JWST/NIRSpec PRISM transmission spectrum of WASP-39 b: Na, K, H$_2$O, CO, CO$_2$, SO$_2$, CH$_4$, clouds. Rustamkulov+ 2023.
+  \end{center}
+\end{frame}
+
+\begin{frame}{WASP-39 b: First Disequilibrium Photochemistry}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{wasp39b_so2_spectrum}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item ERS programme target: 0.28 $\Mjup$ hot Saturn.
+      \item Clean detection of \textbf{photochemical SO$_2$}.
+      \item SO$_2$ requires UV photolysis of H$_2$S; \emph{not} predicted by equilibrium chemistry.
+      \item Tsai+ 2023.
+      \item First unambiguous disequilibrium-photochemistry detection.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{WASP-39 b: 28.5$\sigma$ CO$_2$ Feature}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{wasp39b_alderson_species}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Per-species decomposition of NIRSpec G395H.
+      \item CO$_2$ near 4.3 $\mu$m: $28.5\sigma$.
+      \item Strongest single absorption feature ever in any exoplanet atmosphere.
+      \item Alderson+ 2023.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{WASP-43 b: A Phase Curve in Thermal IR}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{wasp43b_phase_curve}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item JWST MIRI phase curve.
+      \item Two transits, two secondary eclipses, smooth phase variation.
+      \item Strong day-night contrast despite thick atmosphere.
+      \item Bell+ 2024.
+      \item Day = hot, night = much colder.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{TRAPPIST-1 b: Bare Rock Dayside}
+  \begin{columns}[T]
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{trappist1b_eclipse}\\
+    \footnotesize 15 $\mu$m secondary eclipse
+    \column{0.5\textwidth}
+    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{trappist1b_emission}\\
+    \footnotesize Compared to model atmospheres
+  \end{columns}
+  \vskip4pt
+  $T_B = 503^{+26}_{-27}$ K, consistent with bare rock equilibrium. \textbf{Thick CO$_2$ atmosphere ruled out.} Greene+ 2023.
+\end{frame}
+
+\begin{frame}{TRAPPIST-1 c: Same Story}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{trappist1c_grid}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Zieba+ 2023.
+      \item Grid of CO$_2$ partial pressure $\times$ thickness.
+      \item $\geq 0.1$ bar of CO$_2$: ruled out.
+      \item Thin atmospheres or none: still possible.
+      \item Inner TRAPPIST-1 planets do not retain Venus-like atmospheres.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{LHS 475 b: Featureless}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{lhs475b_spectrum}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item NIRSpec G395H, Earth-size at 12 pc.
+      \item Flat featureless transmission spectrum.
+      \item H$_2$/He atmospheres ruled out.
+      \item Pure CH$_4$ ruled out.
+      \item Pure CO$_2$ Venus-like marginal.
+      \item Lustig-Yaeger+ 2023.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Pattern: Most Small M Dwarf Planets Lack Atmospheres}
+  \begin{itemize}
+    \item LHS 475 b, GJ 486 b, GJ 1132 b, TRAPPIST-1 b/c: all consistent with no detectable atmosphere.
+    \item Consistent with Luger \& Barnes (2015): early M dwarf XUV strips primordial atmospheres.
+    \item Maybe a watershed: M dwarf HZ planets may not retain water at all.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{55 Cancri e: First Atmosphere on a Sun-Like Host?}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{55cnce_hu_emission}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Hot rocky super-Earth, $\sim 2000$ K dayside, plausibly molten.
+      \item NIRCam + MIRI emission.
+      \item Falls below bare-rock blackbody.
+      \item Phase modulation $\to$ secondary CO/CO$_2$ atmosphere outgassed from molten surface.
+      \item Hu+ 2024. \emph{First} tentative atmosphere on rocky planet around Sun-like host.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{K2-18 b: Biosignature Controversy}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{k218b_spectrum}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Sub-Neptune in HZ of M3 host.
+      \item Madhusudhan+ 2023 reported CH$_4$ + CO$_2$ + tentative DMS at $\sim 3\sigma$.
+      \item Interpreted as \textbf{hycean} world: H$_2$ atmosphere over global ocean.
+      \item Multiple groups have failed to reproduce DMS: Wogan+, Glein+ (2024).
+      \item DMS feature dependent on retrieval assumptions.
+      \item Debate remains open.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{K2-18 b's Pedagogical Value}
+  \begin{itemize}
+    \item Whatever the resolution: K2-18 b is the textbook case of how a tentative biosignature is tested in real time.
+    \item Same pattern: ALH84001, Mars methane, Venus phosphine.
+    \item This time the discussion has been faster, more transparent, better documented.
+    \item Useful template for the louder claims of the next decade.
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{kopparapu_hz}{Habitable zone. Kopparapu et al.\ (2013)}
+\section{Habitable Zone and Biosignatures}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{The Classical Habitable Zone}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{kopparapu_hz}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item Inner edge: Simpson-Nakajima runaway greenhouse (L9).
+      \item Outer edge: maximum CO$_2$ greenhouse condenses out as ice.
+      \item Kopparapu+ 2013 modernised Kasting+ 1993.
+      \item Symbols: TRAPPIST-1, Tau Ceti, GJ 581/667, etc.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{HZ is a Trajectory, Not a Snapshot Line}
+  \begin{itemize}
+    \item History matters more than current location.
+    \item Venus today sits formally inside the HZ if computed naively, yet is hellish (L9).
+    \item M dwarf HZ planets traverse the runaway zone for hundreds of Myr in pre-MS phase.
+    \item 1D Kasting/Kopparapu boundaries shift by 5--20\% in 3D GCMs.
+    \item Treat the HZ as a first-order screening tool, not a precise boundary.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Biosignature Gases and False Positives}
+  \begin{itemize}
+    \item Classical: \emph{disequilibrium combinations}. On Earth: O$_2$ + CH$_4$.
+    \item Catalogue: O$_2$, O$_3$, CH$_4$, N$_2$O, organosulphur, organohalogen species.
+    \item No single gas in isolation is convincing.
+    \item \textbf{False positives are the main challenge.}
+    \begin{itemize}
+      \item Wordsworth+ 2014: H$_2$O photolysis + H escape $\to$ abiotic O$_2$.
+      \item CO$_2$ photolysis $\to$ abiotic O$_2$ via CO + O.
+      \item Volcanic + serpentinisation $\to$ abiotic CH$_4$.
+    \end{itemize}
+    \item Inverse problem: must rule out \emph{all} plausible abiotic pathways.
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{life_yield}{LIFE detection yield. Quanz et al.\ (2022)}
+\section{Comparative Payoff and Frontier Missions}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{Is the Solar System Typical?}
+  Honest answer: \textbf{not obviously, but not yet known to be rare}.
+  \vskip4pt
+  Sparsely populated corners:
+  \begin{itemize}
+    \item Most common host: M dwarf, not G dwarf.
+    \item Most common planet: sub-Neptune ($2$--$3\,\Rearth$). \emph{Solar system has none.}
+    \item Most common architecture: peas-in-a-pod, $\sim 5$--$8$ similar planets within 0.2 AU. \emph{Not the inner solar system.}
+    \item No hot Jupiter or hot Neptune in our system.
+    \item Wide low-eccentricity giants (vs RV-discovered eccentric giants).
+  \end{itemize}
+  \vskip4pt
+  But: detection biases penalise solar-system analogues. Gaia DR4/DR5 + PLATO will resolve.
+\end{frame}
+
+\begin{frame}{Frontier Missions 2026--2035: Transits and Atmospheres}
+  \begin{itemize}
+    \item \textbf{PLATO} (ESA, end 2026): Earth analogues in HZ of bright Sun-like stars; asteroseismic stellar radii.
+    \item \textbf{Ariel} (ESA, 2029): atmospheric statistics of $\sim 1000$ exoplanets at 0.5--7.8 $\mu$m.
+    \item \textbf{Roman} (NASA, 2027): $1000$--$3000$ microlensing planets at 1--10 AU + comparable rogue population; coronagraph tech demo at $10^{-8}$--$10^{-9}$.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Frontier Missions 2030s--2040s: Direct Imaging}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{life_yield}
+    \column{0.45\textwidth}
+    \begin{itemize}
+      \item \textbf{HWO} (NASA, 2040s): 6 m, $10^{-10}$ contrast, $\sim 25$ Earth analogues.
+      \item \textbf{LIFE} (ESA concept): nulling interferometer, 4--18 $\mu$m thermal emission.
+      \item \textbf{ELT class} (ground, 2028+): $39$, $24.5$, $30$ m. High-contrast + high-resolution NIR.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{From Demography to Individual Characterisation}
+  \begin{itemize}
+    \item Today: thousands of detected planets, dozens of well-characterised atmospheres.
+    \item 2040s: full atmospheric retrievals on a curated sample of Earth analogues.
+    \item Open question for L14: what would convince us we have \emph{detected life}?
+    \begin{itemize}
+      \item Single biosignature gas?
+      \item Specific combinations at specific abundances?
+      \item Temporal variability (seasonal cycles)?
+      \item Vegetation or photosynthetic surface features?
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\section*{Summary}
+% ════════════════════════════════════════════════════════════
+
+\begin{frame}{Summary: Today's Course-Level Takeaways}
+  \begin{enumerate}
+    \item Each detection method picks out a different region of parameter space; the observed archive is the union of biases.
+    \item Transit + RV $\to$ bulk density: the observational machinery that turned exoplanet detections into physical objects.
+    \item Kepler showed planets are common. $\eta_\oplus \sim 0.3$. Hot Jupiters are rare.
+    \item \textbf{Radius valley} at $\sim 1.8\,\Rearth$: photoevaporation + core-powered mass loss as universal sculptor.
+    \item Hot Neptune desert + peas-in-a-pod + TRAPPIST-1 chain: three architectural results that any formation theory must explain.
+    \item JWST: WASP-39 b SO$_2$, TRAPPIST-1 b/c bare rock, K2-18 b biosignature controversy.
+    \item Solar system is not obviously typical. Gaia DR4/5 + PLATO will tell us if it is rare.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}[plain,noframenumbering]
+  \begin{tikzpicture}[remember picture, overlay]
+    \ipscontain{title_background}
+    \fill[ipsPrimary, opacity=0.70] (current page.north west) rectangle (current page.south east);
+  \end{tikzpicture}
+  \vfill
+  \begin{center}
+    {\color{white}\Huge \textbf{Questions?}}\\[14pt]
+    {\color{white}\large Next: \textbf{Lecture 14. Synthesis \& Astrobiology}}\\[10pt]
+    {\color{white}\normalsize Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
+  \end{center}
+  \vfill
+\end{frame}
+
+\end{document}

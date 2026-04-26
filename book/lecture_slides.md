@@ -22,7 +22,7 @@ For visual material in classroom format, use the slide decks.
 | 10 | {ref}`lecture10` | [Download (PDF)](_static/slides/lecture10.pdf) |
 | 11 | {ref}`lecture11` | [Download (PDF)](_static/slides/lecture11.pdf) |
 | 12 | {ref}`lecture12` | [Download (PDF)](_static/slides/lecture12.pdf) |
-| 13 | Lecture 13 | _coming soon_ |
+| 13 | {ref}`lecture13` | [Download (PDF)](_static/slides/lecture13.pdf) |
 | 14 | Lecture 14 | _coming soon_ |
 
 The decks share a common visual style (custom Beamer theme `beamerthemeIPS`) and use AVIF figures rendered via XeLaTeX.
