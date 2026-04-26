@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to describe the scope of planetary science, explain how the field has evolved from antiquity to the space age, and identify the key properties and classification of solar system bodies.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 1 (PDF)](../_static/slides/lecture01.pdf)
+```
+
 ## A pale blue dot
 
 On 14 February 1990, the Voyager 1 spacecraft turned its camera back toward the inner solar system one last time. From a distance of 6 billion km, about 40 AU, it captured an image in which Earth appears as a tiny speck, less than a single pixel, suspended in a scattered beam of sunlight. Carl Sagan, who had campaigned for years to have the photograph taken, wrote: *"Look again at that dot. That's here. That's home. That's us"* {cite:p}`Sagan1994`. Minutes later, Voyager's cameras were switched off for good.
@@ -16,6 +20,10 @@ On 14 February 1990, the Voyager 1 spacecraft turned its camera back toward the 
 
 The Pale Blue Dot. Earth appears as a tiny bright speck roughly halfway down the rightmost sunbeam. Captured by Voyager 1 on 14 February 1990 from approximately 6 billion km (40 AU). Image PIA00452. Credit: NASA/JPL-Caltech.
 ```
+
+
+
+
 
 The Pale Blue Dot is one frame in a much larger 60-frame "Family Portrait" mosaic that Voyager 1 returned the same day, the only time a spacecraft has imaged the entire planetary system from outside.
 

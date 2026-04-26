@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to explain the processes of core formation and mantle differentiation, describe the requirements for planetary dynamo action, and compare magnetic field properties across the solar system.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 4 (PDF)](../_static/slides/lecture04.pdf)
+```
+
 ## Accretion and early melting
 
 In {ref}`lecture03` we showed that the gravitational energy released during accretion is more than sufficient to melt an Earth-mass body, producing a global **magma ocean**. We also saw that gravitational differentiation, the sinking of dense iron toward the centre, releases additional energy that helps sustain this molten state. In this lecture we explore the *chemical* consequences of that melting: how a once-homogeneous ball of rock and metal separates into the layered structure (core, mantle, crust) that we observe in the terrestrial planets today.
@@ -28,6 +32,10 @@ where $\Delta\rho \approx 4000$ kg m$^{-3}$ is the density contrast between meta
 
 Stokes settling velocity for an iron droplet in a low-viscosity silicate magma ocean as a function of droplet radius (Eq. {eq}`eq:stokes-settling`), assuming $\Delta\rho = 4000$ kg m$^{-3}$, $g = 5$ m s$^{-2}$, and $\mu = 0.1$ Pa s. Centimetre-sized droplets settle at $\sim 4$ m s$^{-1}$, traversing a 1000 km magma ocean in a few days; submillimetre droplets are far slower and are more likely to remain suspended by convection. The strong $r^2$ dependence is the central reason that iron-silicate separation is geologically instantaneous once droplets coalesce {cite:p}`Rubie2015`.
 ```
+
+
+
+
 
 ### The Moon-forming giant impact
 

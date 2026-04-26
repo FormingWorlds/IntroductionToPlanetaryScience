@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to describe the major surface processes shaping planetary bodies, derive the crater scaling law from dimensional analysis and apply it to estimate crater sizes, use crater counting to constrain surface ages, and compare tectonic, volcanic, and erosional styles across the solar system.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 7 (PDF)](../_static/slides/lecture07.pdf)
+```
+
 ## Surface processes
 
 A planet's surface is its geological record: the integrated result of billions of years of competing processes that create, modify, and destroy landforms. By reading this record, we can reconstruct a body's geological history even without visiting it in person {cite:p}`Melosh2011`.
@@ -32,6 +36,9 @@ The relative importance of these processes varies dramatically across the solar 
 
 Viking Orbiter global colour mosaic of Mars (PIA00407), an orthographic projection of the Valles Marineris hemisphere centred near 20$^\circ$N, 60$^\circ$W. The image is used here as an anchor for the four-way taxonomy of surface processes. Endogenic processes are evident in Valles Marineris, the dark extensional canyon system running west-to-east across the lower middle of the disk, and in the Tharsis shield volcanoes near the western limb (visible as dark patches at left, foreshortened by the limb). Exogenic processes are recorded in the heavily cratered southern highlands and in the bright water-ice north polar cap (top). Mars preserves all four major process classes (volcanism, tectonics, impact cratering, erosion) on a single body and is therefore a useful template for the rest of this lecture. Credit: NASA/JPL/USGS, public domain.
 ```
+
+
+
 
 
 ## Impact cratering

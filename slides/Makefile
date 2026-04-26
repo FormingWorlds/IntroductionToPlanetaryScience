@@ -1,4 +1,4 @@
-LECTURES = lecture01 lecture02 lecture03 lecture04 lecture05 lecture06 lecture07 lecture08
+LECTURES = lecture01 lecture02 lecture03 lecture04 lecture05 lecture06 lecture07 lecture08 lecture09
 LATEXMK  = latexmk -xelatex -interaction=nonstopmode
 
 .PHONY: all clean avif2png svg2pdf $(LECTURES)
@@ -6,9 +6,10 @@ LATEXMK  = latexmk -xelatex -interaction=nonstopmode
 all: $(LECTURES)
 
 # Convert AVIF→PNG for XeLaTeX (figures + common assets)
+# Force 8-bit sRGB without alpha: xdvipdfmx silently drops 16-bit and graya PNGs
 avif2png:
 	@echo "Converting AVIF → PNG for slides..."
-	@find . -name '*.avif' -exec sh -c 'magick "$$1" "$${1%.avif}.png"' _ {} \;
+	@find . -name '*.avif' -exec sh -c 'magick "$$1" -depth 8 -alpha remove -alpha off -colorspace sRGB -type TrueColor "$${1%.avif}.png"' _ {} \;
 
 # Convert SVG→PDF for XeLaTeX (vector figures)
 # XeLaTeX cannot read SVG directly; cairosvg produces a PDF that xdvipdfmx can embed.

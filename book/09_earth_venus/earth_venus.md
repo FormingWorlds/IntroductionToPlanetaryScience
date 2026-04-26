@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to describe Earth's unique properties as a reference planet, explain how Venus diverged from Earth despite similar bulk composition and size, apply the Simpson-Nakajima runaway greenhouse limit, and evaluate the role of water loss history, tectonic regime, and the carbonate-silicate cycle in comparative habitability.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 9 (PDF)](../_static/slides/lecture09.pdf)
+```
+
 Earth and Venus are nature's best controlled experiment in comparative planetology.
 They formed from the same nebular reservoir within roughly $0.3$ AU of each other, contain similar bulk inventories of silicate, iron, and volatile elements, and have masses and radii within $20\%$ of each other.
 Yet their present-day surface conditions could not be more different.
@@ -24,6 +28,10 @@ Each panel sketches the buildup from undifferentiated planetesimals through diff
 Volatile species ($\mathrm{H_2O}$, $\mathrm{CO_2}$, noble gases) outgas from the interior to form a primary steam-rich atmosphere; their fate during the cooling of the magma ocean determines the long-term volatile inventory of each planet.
 Reproduced from {cite:t}`Lammer2018`.
 ```
+
+
+
+
 
 ## Part 1: Earth as reference
 

@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to classify atmospheric types (primary, secondary, tertiary), derive pressure–temperature profiles from hydrostatic equilibrium, explain the greenhouse effect and planetary energy balance, and evaluate atmospheric escape mechanisms.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 5 (PDF)](../_static/slides/lecture05.pdf)
+```
+
 ## Atmospheric composition
 
 A planet's atmosphere is the thin gaseous envelope that separates its surface (or cloud tops) from the vacuum of space. Atmospheres play an outsized role in determining a planet's surface conditions (temperature, pressure, radiation environment, and chemistry) and are therefore central to questions of habitability. Understanding where atmospheres come from, what they are made of, and how they evolve is one of the core themes of planetary science {cite:p}`Catling2017`.
@@ -16,6 +20,10 @@ A planet's atmosphere is the thin gaseous envelope that separates its surface (o
 
 Earth's atmosphere as a thin blue line on the limb, photographed from the International Space Station during the STS-129 mission (November 2009). The atmosphere contains 99% of its mass below $\sim$30 km altitude (a mere 0.5% of Earth's radius), yet this slender layer controls the surface temperature, shields life from harmful radiation, and mediates the exchange of volatiles between the interior and space. Credit: NASA/ISS Expedition 21 crew, public domain.
 ```
+
+
+
+
 
 ### Primary atmospheres
 

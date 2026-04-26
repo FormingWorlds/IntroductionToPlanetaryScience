@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to describe the stages of planet formation from protoplanetary disks, apply Kepler's laws and the vis-viva equation, and explain the role of orbital resonances, tides, and migration in shaping planetary systems.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 2 (PDF)](../_static/slides/lecture02.pdf)
+```
+
 ## Star formation and protoplanetary disks
 
 Every planetary system begins with the collapse of a molecular cloud, a cold ($T \sim 10$–$20$ K), dense region of the interstellar medium composed primarily of molecular hydrogen ($\mathrm{H_2}$) and helium, with about 1% by mass of heavier elements in the form of microscopic dust grains. When a region of such a cloud becomes sufficiently massive and dense, its self-gravity overcomes thermal and magnetic pressure support, triggering gravitational collapse. The critical mass for collapse is the **Jeans mass**:
@@ -28,6 +32,10 @@ The result is a flattened, rotating structure of gas and dust extending from a f
 
 The "Cosmic Cliffs" of the Carina Nebula imaged by JWST/NIRCam. Embedded protostars and outflows are visible at the edge of the molecular cloud where ultraviolet radiation from young massive stars sculpts the gas. Such regions are the present-day analogues of the environment in which the Solar System was born. Credit: NASA/ESA/CSA/STScI.
 ```
+
+
+
+
 
 ### Disk structure and properties
 

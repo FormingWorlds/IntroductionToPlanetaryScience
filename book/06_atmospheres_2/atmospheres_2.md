@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to derive the Clausius-Clapeyron equation and apply it to predict cloud formation conditions, explain atmospheric circulation patterns using the Coriolis effect and geostrophic balance, describe weather phenomena across the solar system, and discuss long-term climate evolution including the faint young Sun paradox and the carbonate-silicate cycle.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 6 (PDF)](../_static/slides/lecture06.pdf)
+```
+
 ## Cloud formation
 
 In {ref}`lecture05`, we studied the vertical structure of atmospheres: how pressure and temperature vary with altitude, and how radiation and convection control the energy balance. We now turn to what happens when the air becomes *too cold* to hold all of its vapour: **clouds** form.
@@ -33,6 +37,10 @@ The exponential temperature dependence predicted by the Clausius-Clapeyron equat
 Coloured bands at the bottom mark the temperature ranges over which each species condenses on the relevant body.
 Plot generated from thermodynamic data in {cite:p}`Catling2017` and {cite:p}`Pierrehumbert2010`.
 ```
+
+
+
+
 
 ### Nucleation
 

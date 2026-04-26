@@ -1,0 +1,1344 @@
+% lecture09.tex: Lecture 9: Rocky Planets I, Earth & Venus
+% Introduction to Planetary Science, Kapteyn Institute
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme and macros ────────────────────────────────────────
+\usepackage{../common/beamerthemeIPS}
+\input{../common/macros}
+\graphicspath{{figures/}{../common/}{../../book/09_earth_venus/figures/}}
+
+% ── Metadata ────────────────────────────────────────────────
+\title[Lecture 9: Earth \& Venus]{Lecture 9: Rocky Planets I\\Earth \& Venus}
+\subtitle{Introduction to Planetary Science}
+\author[L9]{Tim Lichtenberg}
+\institute{Kapteyn Astronomical Institute\\University of Groningen}
+\date{2026}
+\titlebgcredit{Three Venus-bound missions over a Magellan radar mosaic. Credit: Widemann et al.\ (2023), SSRv 219, 56}
+
+% ════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Learning objectives ─────────────────────────────────────
+\begin{frame}{Learning Objectives}
+  By the end of this lecture, you will be able to:
+  \vskip8pt
+  \begin{itemize}
+    \item Summarise Earth's interior, surface, ocean, and climate as the reference planet
+    \item Compare Venus to Earth across mass, radius, atmosphere, and rotation
+    \item Explain why a saturated water atmosphere has a maximum thermal flux
+    \item Derive the Simpson--Nakajima runaway greenhouse limit
+    \item Describe the D/H smoking-gun evidence for past water on Venus
+    \item Outline current and upcoming Venus missions and the questions they target
+  \end{itemize}
+\end{frame}
+
+% ── Recap ───────────────────────────────────────────────────
+\begin{frame}{Recap: Lectures 1--8}
+  \begin{itemize}
+    \item Solar system formed from a disk of gas and dust around 4.567 Ga
+    \item Heat sources: accretion, radiogenic, tidal, residual primordial
+    \item Differentiation produces a layered interior: crust, mantle, core
+    \item Atmospheric escape, magnetospheres, surface processes
+    \item Earth's interior: $C/MR^2 = 0.331$, liquid outer core, vigorous convection
+  \end{itemize}
+  \vskip8pt
+  \textbf{Today:} the two innermost rocky planets, very similar in bulk parameters, very different in evolution. \textbf{Why?}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{pale_blue_dot}{Earth seen from $\sim 6$ billion km. Voyager 1 (1990). Credit: NASA/JPL-Caltech}
+\section{Earth as Reference}
+% ════════════════════════════════════════════════════════════
+
+% ── Earth at a glance ───────────────────────────────────────
+\begin{frame}{Earth at a Glance}
+  \centering
+  \small
+  \begin{tabular}{l r l}
+    \toprule
+    \textbf{Parameter} & \textbf{Value} & \textbf{Note} \\
+    \midrule
+    Mass & $5.972 \times 10^{24}$ kg & defines $\Mearth$ \\
+    Radius (mean) & $6371$ km & defines $\Rearth$ \\
+    Mean density & $5515$ kg\,m$^{-3}$ & uncompressed $\sim 4030$ kg\,m$^{-3}$ \\
+    Semimajor axis & $1.000$ AU & defines AU \\
+    Bond albedo & $0.30$ & cloud + ice + land \\
+    $T_{\mathrm{eq}}$ & $255$ K & equilibrium, no greenhouse \\
+    $T_{\mathrm{surf}}$ & $288$ K & $+33$ K greenhouse warming \\
+    Rotation period & $23.93$ h & spin axis tilt $23.4^\circ$ \\
+    Magnetic field & dipolar, $\sim 25$--$65$ $\mu$T & active dynamo \\
+    \bottomrule
+  \end{tabular}
+  \vskip6pt
+  {\tiny\color{ipsText!60} Source: NASA Earth Fact Sheet (NSSDC)}
+\end{frame}
+
+% ── Why is Earth habitable ──────────────────────────────────
+\begin{frame}{What Makes Earth Habitable?}
+  Four ingredients, all present, all stable for $\sim 4$ Gyr:
+  \vskip6pt
+  \begin{enumerate}
+    \item \textbf{Liquid water} on the surface, continuously
+    \item \textbf{Plate tectonics}: long-term carbon cycle, climate buffering
+    \item \textbf{Magnetic field}: shields atmosphere from solar wind erosion
+    \item \textbf{Stable orbit}: low eccentricity, large stabilising Moon
+  \end{enumerate}
+  \vskip8pt
+  None of these is unique to Earth in principle.\\
+  All four together, on the same planet, at the same time, may be.
+  \vskip6pt
+  \keyresult{The puzzle is not that Earth is special. It is to identify which features are necessary, which are sufficient, and which are accidental.}
+\end{frame}
+
+% ── Earth in context: TRAPPIST-1 ──────────────────────────
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=center, inner sep=0pt] at (current page.center) {%
+      \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{nasa_trappist1_solarsystem_comparison}%
+    };
+  \end{tikzpicture}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south, inner sep=0pt] at ([yshift=4pt]current page.south) {%
+      {\tiny\color{ipsText!60} TRAPPIST-1 vs.\ inner solar system, to scale. Credit: NASA/JPL-Caltech (PIA22093)}%
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── TRAPPIST-1 explanation ────────────────────────────────
+\begin{frame}{Why Compare to Other Systems?}
+  Earth is one of $\sim 5800$ confirmed planets. The natural comparison set:
+  \vskip6pt
+  \begin{itemize}
+    \item Inner solar system: 4 rocky planets, $0.4$--$1.5$ AU, around a G-type star
+    \item TRAPPIST-1: 7 Earth-sized planets, $0.011$--$0.062$ AU, around a late M dwarf
+    \item Both systems span the inner edge of the habitable zone
+    \item Comparable orbital architecture, drastically different host stars
+  \end{itemize}
+  \vskip8pt
+  Earth is the calibration point. Whether it is the typical or atypical outcome of rocky-planet evolution is exactly what we are trying to find out.
+\end{frame}
+
+% ── Plate tectonics ─────────────────────────────────────────
+\begin{frame}{Plate Tectonics: The Engine}
+  \begin{itemize}
+    \item Earth's lithosphere is broken into $\sim 15$ major plates moving at cm\,yr$^{-1}$
+    \item Three boundary types:
+    \begin{itemize}
+      \item \textbf{Divergent} (mid-ocean ridges): new crust forms
+      \item \textbf{Convergent} (subduction zones, mountain belts): crust destroyed or thickened
+      \item \textbf{Transform} (e.g.\ San Andreas): lateral slip
+    \end{itemize}
+    \item Driven by mantle convection, slab pull, ridge push
+    \item Recycles surface volatiles into the mantle on $\sim 100$ Myr timescales
+  \end{itemize}
+  \vskip6pt
+  \textbf{No other body in the solar system has active plate tectonics today.}
+\end{frame}
+
+% ── Earth interior reference evolution ─────────────────────
+\begin{frame}{Earth's Long-Term Interior Evolution}
+  \begin{columns}[c]
+    \column{0.55\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{honing2021_reference_evolution}
+    \source{H\"oning et al.\ (2021)}
+
+    \column{0.42\textwidth}
+    A coupled-model reference evolution over 4.5 Gyr:
+    \begin{itemize}
+      \item Mantle temperature drops by $\sim 600$ K
+      \item Plate speed declines as the mantle cools
+      \item Continental coverage and atmospheric $\mathrm{CO_2}$ track the slowing tectonic engine
+      \item Sets the baseline for "what if Venus had been like this"
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Long-term carbon cycle ──────────────────────────────────
+\begin{frame}{The Long-Term Carbon Cycle}
+  \begin{columns}[c]
+    \column{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{honing2021_carbon_cycle_diagram}
+    \source{H\"oning et al.\ (2021)}
+
+    \column{0.52\textwidth}
+    Three coupled fluxes set atmospheric $\mathrm{CO_2}$:
+    \begin{itemize}
+      \item \textbf{Volcanic outgassing}: mantle to atmosphere
+      \item \textbf{Silicate weathering}: $\mathrm{CaSiO_3 + CO_2 \rightarrow CaCO_3 + SiO_2}$
+      \item \textbf{Carbonate subduction + decarbonation}: crust to mantle
+    \end{itemize}
+    \vskip3pt
+    Weathering rate increases with $T_s$: a negative feedback that buffers Earth's climate.
+  \end{columns}
+\end{frame}
+
+% ── Geomagnetic field ───────────────────────────────────────
+\begin{frame}{Earth's Magnetic Field}
+  \begin{itemize}
+    \item Generated by convection in the liquid outer core (Lecture 4)
+    \item Mostly dipolar, surface intensity $25$--$65$ $\mu$T
+    \item Magnetopause stand-off: $\sim 10\, \Rearth$ on the dayside
+    \item Reverses polarity on $10^5$--$10^6$ yr timescales (paleomagnetism)
+    \item Active for at least $3.45$ Ga (Tarduno et al.\ 2010)
+  \end{itemize}
+  \vskip8pt
+  \textbf{Key consequence:} deflects solar wind, suppresses ion-pickup escape of $\mathrm{O^+}$, $\mathrm{N_2^+}$, $\mathrm{H^+}$.\\
+  Comparison to unmagnetised Mars (Lecture 10) shows the magnitude of this effect.
+\end{frame}
+
+% ── Hydrosphere & cryosphere ────────────────────────────────
+\begin{frame}{Hydrosphere and Cryosphere}
+  \begin{columns}[T]
+    \column{0.48\textwidth}
+    \textbf{Liquid water reservoirs:}
+    \begin{itemize}
+      \item Oceans: $1.34 \times 10^9$ km$^3$
+      \item Groundwater: $\sim 2.3 \times 10^7$ km$^3$
+      \item Lakes, rivers, soil moisture: small
+    \end{itemize}
+
+    \column{0.48\textwidth}
+    \textbf{Ice reservoirs:}
+    \begin{itemize}
+      \item Antarctica: $26.5 \times 10^6$ km$^3$
+      \item Greenland: $2.85 \times 10^6$ km$^3$
+      \item Mountain glaciers, permafrost: smaller
+    \end{itemize}
+  \end{columns}
+  \vskip8pt
+  \begin{itemize}
+    \item Total surface water $\approx 2700$ m global equivalent layer (GEL)
+    \item Ocean is the largest pool, but the deep mantle holds $\geq 1$--$2$ ocean masses
+    \item Ice albedo provides a strong positive feedback in cold climate excursions
+  \end{itemize}
+\end{frame}
+
+% ── Climate stability ───────────────────────────────────────
+\begin{frame}{Climate Stability and the Faint Young Sun}
+  Earth's climate has been stable enough for liquid water for $\sim 4$ Gyr, but not constant.
+  \vskip6pt
+  \begin{itemize}
+    \item Solar luminosity at $4$ Ga: $\sim 75\%$ of today
+    \item Without a strong greenhouse, Earth would have been frozen
+    \item Geological evidence (sedimentary rocks, evaporites): liquid water at $\geq 3.8$ Ga
+    \item Compensating mechanism: higher $\mathrm{CO_2}$ + $\mathrm{CH_4}$, dimmer surface, weaker weathering
+  \end{itemize}
+  \vskip6pt
+  \keyresult{The Faint Young Sun problem is solved by the carbon cycle's negative feedback, not by accidents of initial conditions.}
+\end{frame}
+
+% ── Solar evolution ────────────────────────────────────────
+\begin{frame}{Solar Luminosity Through Time}
+  \begin{columns}[c]
+    \column{0.55\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{zahnle2007_solar_evolution}
+    \source{Zahnle et al.\ (2007)}
+
+    \column{0.42\textwidth}
+    \begin{itemize}
+      \item Sun has brightened $\sim 30\%$ since formation
+      \item Habitable-zone inner edge has migrated outward
+      \item Venus inside it for at least the last $\sim 1$ Gyr
+      \item The boundary swept past Venus' orbit in the past
+    \end{itemize}
+    \vskip6pt
+    Question for later: was Venus on the wet side when the boundary swept past?
+  \end{columns}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{earthrise_apollo8}{Earth from lunar orbit, Apollo 8 (1968). Credit: NASA}
+\section{Earth's Atmosphere and Biosphere}
+% ════════════════════════════════════════════════════════════
+
+% ── Atmospheric oxygen history (hero, full frame) ─────────
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=center, inner sep=0pt] at (current page.center) {%
+      \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{lyons2014_oxygen_history}%
+    };
+  \end{tikzpicture}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south, inner sep=0pt] at ([yshift=4pt]current page.south) {%
+      {\tiny\color{ipsText!60} Lyons, Reinhard \& Planavsky (2014), \textit{Nature} 506, 307}%
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── Oxygen history walkthrough ────────────────────────────
+\begin{frame}{Reading the Oxygen History}
+  Two great rises in atmospheric $\mathrm{O_2}$:
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Great Oxidation Event} (GOE) at $\sim 2.4$ Ga: trace $\rightarrow \sim 1\%$ of present atmospheric level (PAL)
+    \item Long Mesoproterozoic plateau at $1\%$--$10\%$ PAL
+    \item \textbf{Neoproterozoic Oxygenation Event} (NOE) at $\sim 0.6$ Ga: $\rightarrow$ near modern levels
+    \item Phanerozoic fluctuations of $\sim 15$--$35\%$
+  \end{itemize}
+  \vskip6pt
+  \textbf{Drivers:} cyanobacterial photosynthesis + organic carbon burial + decreasing reductant flux from the mantle.\\
+  Co-evolution of biosphere, atmosphere, and tectonics, across more than $2$ Gyr.
+\end{frame}
+
+% ── Snowball Earth ──────────────────────────────────────────
+\begin{frame}{Snowball Earth Episodes}
+  At least two global glaciation events in the Neoproterozoic:
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Sturtian glaciation} ($\sim 717$--$660$ Ma)
+    \item \textbf{Marinoan glaciation} ($\sim 650$--$635$ Ma)
+    \item Glacial deposits at near-equatorial paleolatitudes
+    \item Cap carbonates immediately above glacial diamictites
+  \end{itemize}
+  \vskip8pt
+  \textbf{Mechanism:} ice albedo runaway $\Rightarrow$ frozen oceans $\Rightarrow$ weathering halts $\Rightarrow$ volcanic $\mathrm{CO_2}$ accumulates $\Rightarrow$ extreme greenhouse triggers deglaciation.
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Hoffman et al.\ (1998, 2017)}
+\end{frame}
+
+% ── Archean climate ─────────────────────────────────────────
+\begin{frame}{The Archean Climate Problem}
+  \begin{columns}[c]
+    \column{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{charnay2013_archean_temperature}
+    \source{Charnay et al.\ (2013)}
+
+    \column{0.52\textwidth}
+    \begin{itemize}
+      \item Solar luminosity at $3$ Ga: $\sim 80\%$ today
+      \item Yet evidence for liquid water + biosphere
+      \item Required greenhouse: $\mathrm{CO_2}$, $\mathrm{CH_4}$, possibly $\mathrm{N_2}$ pressure broadening
+      \item Constraints from paleosols, banded iron formations
+    \end{itemize}
+    \vskip6pt
+    \keyresult{Archean Earth was kept warm by an order of magnitude more greenhouse gas than today, not by a closer Sun.}
+  \end{columns}
+\end{frame}
+
+% ── Earth's late accretion ─────────────────────────────────
+\begin{frame}{Earth's Bulk Composition: Late Accretion}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{dauphas2017_earth_accreting_material}
+    \source{Dauphas (2017)}
+
+    \column{0.47\textwidth}
+    \begin{itemize}
+      \item Earth's bulk composition matches enstatite chondrites in $\Delta^{17}$O, $\varepsilon^{50}$Ti, $\varepsilon^{54}$Cr
+      \item Implies most of Earth's mass came from inner-solar-system material
+      \item Late accretion ($< 1\%$ by mass) added water + highly siderophiles
+      \item Earth is not a generic "average chondrite", it has a specific isotopic signature
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Wordsworth abiotic O2 ──────────────────────────────────
+\begin{frame}{Abiotic Pathways to $\mathrm{O_2}$}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{wordsworth2014_abiotic_o2_schematic}
+    \source{Wordsworth \& Pierrehumbert (2014)}
+
+    \column{0.47\textwidth}
+    For exoplanet biosignatures: not all $\mathrm{O_2}$ implies life.
+    \vskip4pt
+    \begin{itemize}
+      \item $\mathrm{H_2O}$ photolysis + H escape leaves abiotic $\mathrm{O_2}$
+      \item Especially at runaway-greenhouse conditions
+      \item Or in $\mathrm{CO_2}$-rich atmospheres where $\mathrm{CO}$ + $\mathrm{O_2}$ recombination is slow
+      \item Earth's $\mathrm{O_2}$ context-dependent biosignature
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Wordsworth N2 redox pump ───────────────────────────────
+\begin{frame}{The $\mathrm{N_2}$ Redox Pump}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{wordsworth2016_n2_redox_pump}
+    \source{Wordsworth (2016)}
+
+    \column{0.47\textwidth}
+    \begin{itemize}
+      \item Atmospheric $\mathrm{N_2}$ inventory is set by the redox state of the surface and atmosphere
+      \item Biological denitrification + nitrification couple $\mathrm{N_2}$ to $\mathrm{O_2}$ history
+      \item Solar wind nitrogen escape over Gyr can be substantial without a magnetic field
+      \item Nitrogen tells us about both biology and magnetic shielding
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Biosphere geological footprint ──────────────────────────
+\begin{frame}{The Biosphere as Geological Force}
+  Life is not a passive passenger of Earth's climate; it is a geological agent.
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Banded iron formations} ($\sim 3$--$1.8$ Ga): biological $\mathrm{O_2}$ + dissolved $\mathrm{Fe^{2+}}$
+    \item \textbf{Continental crust composition}: shifted by oxidative weathering
+    \item \textbf{Ocean redox state}: from anoxic to oxic, Snowball linked to NOE
+    \item \textbf{Atmospheric $\mathrm{N_2}$ inventory}: biological denitrification + nitrification
+  \end{itemize}
+  \vskip6pt
+  Earth's atmosphere is in extreme \textbf{thermodynamic disequilibrium} ($\mathrm{O_2 + CH_4}$ coexist) maintained continuously by biology.
+\end{frame}
+
+% ── Earth as reference summary ──────────────────────────────
+\begin{frame}{Earth as Reference: Summary}
+  \begin{itemize}
+    \item Differentiated, magnetised, tectonically active rocky planet at $1$ AU
+    \item Liquid surface water, continuously, for $\sim 4$ Gyr
+    \item Long-term carbon cycle buffers climate against luminosity changes
+    \item Biosphere: a major geochemical reservoir, sink/source for many volatiles
+    \item Plate tectonics + magnetic field + biosphere + ocean: the four-way coincidence
+  \end{itemize}
+  \vskip10pt
+  Now to the planet that started as Earth's apparent twin and ended as something completely different.
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{venus_earth_mars_atmospheres}{Earth, Venus, Mars to scale (composite). Credit: NASA/JPL-Caltech}
+\section{Venus: Overview and Surface}
+% ════════════════════════════════════════════════════════════
+
+% ── Earth-Venus systems context ──────────────────────────
+\begin{frame}{Earth and Venus as Coupled Systems}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{gillmann2022_earth_venus_systems}
+    \source{Gillmann et al.\ (2022)}
+
+    \column{0.47\textwidth}
+    Both are coupled systems of:
+    \begin{itemize}
+      \item Interior + tectonics
+      \item Magnetosphere or its absence
+      \item Atmosphere + clouds
+      \item Surface + (possible) hydrosphere
+    \end{itemize}
+    \vskip6pt
+    The differences between them are emergent properties of which feedback loops close.
+  \end{columns}
+\end{frame}
+
+% ── Venus comparison ───────────────────────────────────────
+\begin{frame}{Venus and Earth: Twin and Not}
+  \centering
+  \small
+  \begin{tabular}{l r r}
+    \toprule
+    \textbf{Parameter} & \textbf{Earth} & \textbf{Venus} \\
+    \midrule
+    Mass ($\Mearth$) & $1.000$ & $0.815$ \\
+    Radius ($\Rearth$) & $1.000$ & $0.949$ \\
+    Mean density (kg\,m$^{-3}$) & $5515$ & $5243$ \\
+    Semimajor axis (AU) & $1.000$ & $0.723$ \\
+    Stellar flux ($S_\oplus$) & $1.00$ & $1.91$ \\
+    Bond albedo & $0.30$ & $0.77$ \\
+    $T_{\mathrm{surf}}$ (K) & $288$ & $737$ \\
+    Surface pressure (bar) & $1.0$ & $92$ \\
+    Atmosphere & $\mathrm{N_2}$/$\mathrm{O_2}$ & $\mathrm{CO_2}$/$\mathrm{N_2}$ \\
+    Rotation period (d) & $+1.0$ & $-243$ (retrograde) \\
+    Magnetic field & $\sim 50$ $\mu$T & $< 10^{-5} \times$ Earth \\
+    \bottomrule
+  \end{tabular}
+  \vskip6pt
+  {\tiny\color{ipsText!60} Source: NASA Venus Fact Sheet (NSSDC)}
+\end{frame}
+
+% ── Venus mission history ──────────────────────────────────
+\begin{frame}{Venus: A Long Mission History}
+  \begin{itemize}
+    \item \textbf{Mariner 2} (1962): first successful planetary flyby; thermal $T_{\mathrm{surf}} \sim 700$ K
+    \item \textbf{Venera series} (1961--1984, USSR): 13 atmospheric probes, 8 surface landers
+    \begin{itemize}
+      \item Venera 4: first \textit{in situ} atmospheric composition
+      \item Venera 9: first surface images (1975)
+      \item Venera 13/14: surface composition (XRF), basaltic crust
+    \end{itemize}
+    \item \textbf{Magellan} (1989--1994, NASA): radar mapping at $\sim 100$ m resolution, nearly global
+    \item \textbf{Venus Express} (2005--2014, ESA): UV/IR atmospheric monitoring
+    \item \textbf{Akatsuki} (2015--present, JAXA): atmospheric dynamics, super-rotation
+  \end{itemize}
+  \vskip4pt
+  No surface lander has survived more than $\sim 2$ hours: deep-ocean-trench pressures at red heat.
+\end{frame}
+
+% ── Venus surface terrains (hero, full frame) ─────────────
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=center, inner sep=0pt] at (current page.center) {%
+      \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{widemann2023_venus_geological_terrains}%
+    };
+  \end{tikzpicture}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south, inner sep=0pt] at ([yshift=4pt]current page.south) {%
+      {\tiny\color{ipsText!60} Magellan radar with terrain classification overlay. Widemann et al.\ (2023), \textit{SSRv} 219, 56}%
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── Venus terrains walkthrough ─────────────────────────────
+\begin{frame}{Reading the Venus Surface Map}
+  Magellan radar identifies several major terrain types:
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Plains} ($\sim 80\%$ of surface): basaltic, low elevation
+    \item \textbf{Tessera}: highly deformed highlands, possibly oldest crust
+    \item \textbf{Coronae}: circular tectonic-volcanic features
+    \item \textbf{Rift zones} (e.g.\ Beta Regio)
+    \item \textbf{Volcanic edifices} ($> 85,000$ catalogued)
+  \end{itemize}
+  \vskip6pt
+  Key observation: \textbf{no spatial pattern of crustal age}. No oceanic-style mid-ocean ridges, no clear subduction belts.
+\end{frame}
+
+% ── Crater age ─────────────────────────────────────────────
+\begin{frame}{Crater Statistics: A Single Surface Age}
+  Venus crater statistics from Magellan:
+  \vskip6pt
+  \begin{itemize}
+    \item $\sim 1000$ identified impact craters, $\geq 2$ km diameter
+    \item Distribution is \textbf{statistically random}, no major terrain younger than another
+    \item Mean crater density implies a global surface age of $\sim 300$--$1000$ Ma
+    \item No areas of clearly archaic ($> 1$ Ga) terrain
+    \item No active subduction belts (no oceanic-style recycling)
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Venus' surface was either resurfaced globally and recently ($\sim 750$ Ma catastrophic-resurfacing model) or is being resurfaced steadily (equilibrium model). Crater statistics alone cannot decide between them.}
+\end{frame}
+
+% ── Earth-Venus topography (hero, full frame) ─────────────
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=center, inner sep=0pt] at (current page.center) {%
+      \includegraphics[width=0.92\paperwidth, height=0.85\paperheight, keepaspectratio]{smrekar2018_earth_venus_topography}%
+    };
+  \end{tikzpicture}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south, inner sep=0pt] at ([yshift=4pt]current page.south) {%
+      {\tiny\color{ipsText!60} Earth topography, Venus topography, Venus geoid. Smrekar, Davaille \& Sotin (2018)}%
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── Topography walkthrough ────────────────────────────────
+\begin{frame}{Why the Topography Differs}
+  \begin{itemize}
+    \item Earth: \textbf{bimodal hypsometry} (oceans $\sim -4$ km vs.\ continents $\sim +1$ km)
+    \item Venus: \textbf{unimodal hypsometry}, single dominant elevation
+    \item Earth's bimodality is a direct signature of plate tectonics + isostasy
+    \item Venus has highlands (Aphrodite, Ishtar) but no continents in the Earth sense
+    \item Geoid/topography ratio: deep compensation depths on Venus
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Hypsometry alone is enough to rule out Earth-style plate tectonics on Venus.}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{family_portrait}{The terrestrial planets, Voyager 1 family portrait (1990). Credit: NASA/JPL-Caltech}
+\section{Venus Interior and Tectonic Regime}
+% ════════════════════════════════════════════════════════════
+
+% ── Venus interior ─────────────────────────────────────────
+\begin{frame}{Venus' Interior: Inferred, Not Measured}
+  No seismometer has ever operated on Venus.\\
+  Interior structure is inferred from bulk parameters and Earth-analog models.
+  \vskip6pt
+  \begin{itemize}
+    \item Mean density $5243$ kg\,m$^{-3}$; uncompressed $\sim 4060$ kg\,m$^{-3}$
+    \item $C/MR^2 \approx 0.33$ (assumed Earth-like, not measured)
+    \item Implied core radius: $R_c \approx 3000$--$3500$ km ($\sim 0.55\, R_V$)
+    \item Mantle composition: probably similar to Earth's
+    \item Core state: possibly partially molten, but no strong evidence either way
+  \end{itemize}
+  \vskip6pt
+  \textbf{Key observational gap:} no $C/MR^2$, no seismicity, no high-resolution gravity.
+\end{frame}
+
+% ── Tectonic evolution schematic ──────────────────────────
+\begin{frame}{Venus Tectonic Evolution Scenarios}
+  \begin{columns}[c]
+    \column{0.55\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{smrekar2018_venus_tectonic_evolution}
+    \source{Smrekar, Davaille \& Sotin (2018)}
+
+    \column{0.42\textwidth}
+    Two leading models:
+    \begin{itemize}
+      \item \textbf{Steady stagnant lid}: localised plumes, no global recycling
+      \item \textbf{Episodic lid overturn}: long stagnant intervals + brief catastrophic mobilisation
+    \end{itemize}
+    \vskip6pt
+    Either way, no Earth-style plate tectonics today.
+  \end{columns}
+\end{frame}
+
+% ── No magnetic field ──────────────────────────────────────
+\begin{frame}{The Missing Magnetic Field}
+  \begin{itemize}
+    \item Internal magnetic field $< 10^{-5}$ that of Earth (Pioneer Venus, 1978)
+    \item Possible reasons:
+    \begin{enumerate}
+      \item Core not convecting (insufficient heat flux)
+      \item Core fully solid (already crystallised)
+      \item Core fully liquid but subadiabatic
+      \item Slow rotation reduces dynamo efficiency
+    \end{enumerate}
+    \item Most likely: \textbf{stagnant lid} suppresses core heat loss $\Rightarrow$ no convection in core
+  \end{itemize}
+  \vskip6pt
+  Without a magnetosphere, the upper atmosphere is directly exposed to the solar wind.\\
+  This is a major channel for Venus' water loss.
+\end{frame}
+
+% ── Stagnant lid vs episodic ───────────────────────────────
+\begin{frame}{Why Stagnant Lid?}
+  Earth-style plate tectonics needs:
+  \vskip4pt
+  \begin{enumerate}
+    \item A weak, brittle, water-saturated lithosphere
+    \item Negative thermal buoyancy at subduction zones
+    \item Continuous mantle return flow
+  \end{enumerate}
+  \vskip6pt
+  Venus likely fails on point 1: hot, dry surface $\Rightarrow$ strong, ductile lithosphere.
+  \vskip6pt
+  \textbf{Coupled-feedback view:} no liquid water $\Rightarrow$ dry strong lithosphere $\Rightarrow$ no plate motion $\Rightarrow$ no carbon-cycle return $\Rightarrow$ no water (one-way reinforcing loop).
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Smrekar et al.\ (2018); Gillmann et al.\ (2022)}
+\end{frame}
+
+% ── Recent volcanism ───────────────────────────────────────
+\begin{frame}{Is Venus Volcanically Active Today?}
+  Three independent pieces of evidence for recent or ongoing volcanism:
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Magellan radar reanalysis} (Herrick \& Hensley 2023): a $\sim 2$ km$^2$ vent on Maat Mons changed shape between 1991 and 1992
+    \item \textbf{Venus Express thermal emissivity}: anomalously high emission from Idunn Mons, consistent with $< 250$ kyr lava flows
+    \item \textbf{Atmospheric SO$_2$ variability}: order-of-magnitude changes on $\sim$decadal timescales, consistent with episodic outgassing
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Venus is almost certainly volcanically active today. The questions are: at what rate, and from how many vents?}
+\end{frame}
+
+
+% ── Break ───────────────────────────────────────────────────
+\breakslide
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{venus_earth_mars_atmospheres}{Earth, Venus, Mars atmospheres in cross-section. Credit: NASA/JPL-Caltech}
+\section{Venus Atmosphere and Climate}
+% ════════════════════════════════════════════════════════════
+
+% ── Venus atmosphere structure ─────────────────────────────
+\begin{frame}{Venus Atmosphere: Structure}
+  \begin{itemize}
+    \item Surface: $737$ K, $92$ bar, $96.5\%\, \mathrm{CO_2}$, $3.5\%\, \mathrm{N_2}$
+    \item Sub-cloud haze: $30$--$48$ km
+    \item \textbf{Main cloud deck}: $48$--$70$ km, $\mathrm{H_2SO_4}$ droplets, $\sim 75\%$ wt
+    \item Mesosphere + thermosphere above, with a hot dayside / cold nightside contrast
+    \item No tropopause cold trap of the Earth kind
+    \item Lower atmosphere: dry adiabat, $\Gamma \approx 8$ K\,km$^{-1}$
+  \end{itemize}
+  \vskip4pt
+  Total atmospheric mass: $\sim 90\times$ Earth's; almost entirely $\mathrm{CO_2}$.
+\end{frame}
+
+% ── Super-rotation ─────────────────────────────────────────
+\begin{frame}{Atmospheric Super-Rotation}
+  Venus' atmosphere rotates much faster than the planet itself.
+  \vskip6pt
+  \begin{itemize}
+    \item Solid body: $243$ days/rotation
+    \item Cloud-top winds: $\sim 100$ m\,s$^{-1}$, circling the planet in $\sim 4$ days
+    \item Angular velocity ratio: $\sim 60\times$ the surface
+    \item Driven by: thermal tides + large-scale waves transporting angular momentum
+    \item Persistent for the full mission record ($\sim 50$ years)
+  \end{itemize}
+  \vskip6pt
+  Super-rotation is the textbook example of an atmospheric regime with no Earth analog and no easy first-principles derivation.
+\end{frame}
+
+% ── Greenhouse warming ─────────────────────────────────────
+\begin{frame}{Venus' Greenhouse: $T_{\mathrm{surf}}$ from $T_{\mathrm{eq}}$}
+  Equilibrium temperature with $A = 0.77$:
+  $$T_{\mathrm{eq}} = T_\odot \sqrt{R_\odot/(2 a_V)} \, (1 - A)^{1/4} \approx 230\, \mathrm{K}$$
+  \vskip4pt
+  Actual surface temperature: $737$ K.
+  \vskip4pt
+  Greenhouse effect: $\Delta T = +500$ K.
+  \vskip6pt
+  \begin{itemize}
+    \item Earth: $\Delta T = +33$ K
+    \item Venus: $\Delta T = +500$ K
+  \end{itemize}
+  \vskip4pt
+  \keyresult{Venus is hot not because it is closer to the Sun (it absorbs less stellar flux than Earth!) but because of its $\mathrm{CO_2}$-dominated, $92$-bar atmosphere.}
+\end{frame}
+
+% ── Cloud emission spectrum ───────────────────────────────
+\begin{frame}{Water Clouds and Emission Spectra}
+  \begin{columns}[c]
+    \column{0.55\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{turbet2021_water_clouds_emission}
+    \source{Turbet et al.\ (2021)}
+
+    \column{0.42\textwidth}
+    \begin{itemize}
+      \item Modelled emission spectra of dry-Venus vs.\ wet-Venus atmospheres
+      \item Water-cloud signatures distinct in mid-IR
+      \item JWST + future thermal-IR missions can distinguish wet/dry exo-Venus analogs
+      \item Bridges Venus' history to exoplanet observability
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Runaway threshold concept (hero, full frame) ──────────
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=center, inner sep=0pt] at (current page.center) {%
+      \includegraphics[width=0.88\paperwidth, height=0.85\paperheight, keepaspectratio]{zahnle2007_runaway_threshold}%
+    };
+  \end{tikzpicture}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south, inner sep=0pt] at ([yshift=4pt]current page.south) {%
+      {\tiny\color{ipsText!60} Runaway-greenhouse threshold. Zahnle et al.\ (2007)}%
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── Runaway threshold walkthrough ─────────────────────────
+\begin{frame}{Reading the Runaway Threshold Figure}
+  \begin{itemize}
+    \item Horizontal axis: net heat flux that must be radiated to space
+    \item Vertical axis: surface temperature in steady state
+    \item For low flux: cool, stable solution
+    \item Above a critical threshold ($\sim 280$ W\,m$^{-2}$): no steady state with surface liquid water
+    \item Surface temperature \textbf{runs away} until water is fully vaporised
+    \item Vertical line on the right: insolation threshold at which runaway is triggered
+  \end{itemize}
+  \vskip6pt
+  Maximum OLR sets the threshold. We derive it next, on the blackboard.
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{family_portrait}{The terrestrial planets to scale. Credit: NASA/JPL-Caltech}
+\section{Blackboard Derivation: Simpson--Nakajima Limit}
+% ════════════════════════════════════════════════════════════
+
+% ── Setup ──────────────────────────────────────────────────
+\begin{frame}{Setup: Saturated Atmosphere, Greybody}
+  \textbf{Goal:} show that a water-saturated atmosphere has a maximum OLR independent of surface temperature.
+  \vskip6pt
+  \textbf{Assumptions:}
+  \begin{itemize}
+    \item Atmosphere saturated in water vapour everywhere
+    \item Single grey IR opacity $\kappa$, units m$^2$\,kg$^{-1}$
+    \item Hydrostatic equilibrium, surface gravity $g$
+    \item Photosphere: where IR optical depth $\tau \sim 1$
+  \end{itemize}
+  \vskip8pt
+  Clausius--Clapeyron sets the water vapour partial pressure:
+  $$\dv{p_{\mathrm{sat}}}{T} = \frac{L\, p_{\mathrm{sat}}}{R_v\, T^2}$$
+  with $L \approx 2.5 \times 10^6$ J\,kg$^{-1}$, $R_v = 461$ J\,kg$^{-1}$\,K$^{-1}$.
+\end{frame}
+
+% ── Step 1: photosphere column density ─────────────────────
+\begin{frame}{Step 1: The Photosphere Column Density}
+  An IR optical depth of unity is reached at column density:
+  $$N_{\mathrm{phot}} \sim \frac{1}{\kappa}$$
+  \vskip6pt
+  Hydrostatic equilibrium converts column density to pressure:
+  $$p_{\mathrm{phot}} = g\, N_{\mathrm{phot}} = \frac{g}{\kappa}$$
+  \vskip6pt
+  In a water-saturated atmosphere, the local water-vapour pressure equals saturation:
+  \keyresult{$$p_{\mathrm{sat}}(T_{\mathrm{phot}}) = \frac{g}{\kappa}$$}
+  \vskip4pt
+  This single equation pins the photosphere temperature.
+\end{frame}
+
+% ── Step 2: solve for T_phot ───────────────────────────────
+\begin{frame}{Step 2: Photosphere Temperature}
+  Integrate Clausius--Clapeyron:
+  $$p_{\mathrm{sat}}(T) \approx p_{\mathrm{ref}}\, \exp\!\left[-\frac{L}{R_v}\left(\frac{1}{T} - \frac{1}{T_{\mathrm{ref}}}\right)\right]$$
+  \vskip4pt
+  Set $p_{\mathrm{sat}} = g/\kappa$ and solve for $T$:
+  \vskip4pt
+  $$T_{\mathrm{phot}} \approx \frac{L/R_v}{\ln(p_{\mathrm{ref}}\, \kappa / g) + L/(R_v T_{\mathrm{ref}})}$$
+  \vskip6pt
+  Plug in $g = 10$ m\,s$^{-2}$, $\kappa = 5\times 10^{-2}$ m$^2$\,kg$^{-1}$:
+  $$T_{\mathrm{phot}} \approx 260\, \mathrm{K}$$
+  \vskip4pt
+  \textbf{No surface temperature appears anywhere on the right-hand side.}
+\end{frame}
+
+% ── Step 3: OLR ────────────────────────────────────────────
+\begin{frame}{Step 3: The OLR Asymptote}
+  OLR is approximately blackbody emission at $T_{\mathrm{phot}}$:
+  $$F_{\mathrm{OLR}} \approx \sigma\, T_{\mathrm{phot}}^4$$
+  \vskip4pt
+  $$F_{\mathrm{OLR}}^{\max} \approx 5.67\times 10^{-8}\times (260)^4 \approx 260\, \mathrm{W\,m^{-2}}$$
+  \vskip6pt
+  \keyresult{Refined line-by-line calculations: $F_{\mathrm{OLR}}^{\max} \approx 280$--$310$ W\,m$^{-2}$ (Kasting 1988; Goldblatt et al.\ 2013).}
+  \vskip4pt
+  As $T_s$ rises, the photosphere migrates upward but its temperature stays clamped: thermal flux saturates.
+\end{frame}
+
+% ── Goldblatt OLR spectrum ────────────────────────────────
+\begin{frame}{Numerical Verification: Goldblatt 2013}
+  \begin{columns}[c]
+    \column{0.55\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{goldblatt2013_olr_spectrum}
+    \source{Goldblatt et al.\ (2013)}
+
+    \column{0.42\textwidth}
+    \begin{itemize}
+      \item Modelled OLR spectra at $T_s = 280, 310, 340, 370, 400$ K
+      \item Spectra collapse onto a common asymptote
+      \item Asymptote integrates to $\sim 282$ W\,m$^{-2}$
+      \item Validates the Simpson--Nakajima sketch quantitatively
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Goldblatt runaway panels (hero) ───────────────────────
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=center, inner sep=0pt] at (current page.center) {%
+      \includegraphics[width=0.92\paperwidth, height=0.85\paperheight, keepaspectratio]{goldblatt2013_runaway_panels}%
+    };
+  \end{tikzpicture}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south, inner sep=0pt] at ([yshift=4pt]current page.south) {%
+      {\tiny\color{ipsText!60} Runaway-greenhouse panel summary. Goldblatt et al.\ (2013)}%
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── Goldblatt panels walkthrough ──────────────────────────
+\begin{frame}{Reading the Goldblatt 2013 Panels}
+  \begin{itemize}
+    \item Top: $F_{\mathrm{OLR}}$ vs.\ $T_s$ for varying $\mathrm{CO_2}$
+    \item Middle: ASR vs.\ $T_s$, including water-cloud feedback
+    \item Bottom: $F_{\mathrm{OLR}} - F_{\mathrm{ASR}}$ as the steady-state condition
+    \item Multiple equilibria (intersections) for some stellar fluxes: bistability
+    \item Robust across reasonable choices of cloud + surface treatment
+  \end{itemize}
+  \vskip6pt
+  \keyresult{The Simpson--Nakajima limit is a thermodynamic feature, not a model artefact.}
+\end{frame}
+
+% ── Wordsworth OLR/ASR equilibria ─────────────────────────
+\begin{frame}{Multiple Equilibria and Hysteresis}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{wordsworth2013_OLR_ASR_equilibria}
+    \source{Wordsworth \& Pierrehumbert (2013)}
+
+    \column{0.47\textwidth}
+    \begin{itemize}
+      \item Three intersections: cool-stable, warm-unstable, hot-stable
+      \item For a range of stellar fluxes, two stable solutions coexist
+      \item Once on the hot branch, no return to cool without removing $\mathrm{H_2O}$
+      \item This is the source of the runaway hysteresis
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Step 4: HZ implications ────────────────────────────────
+\begin{frame}{Step 4: Habitable Zone Implications}
+  Compare to absorbed stellar flux at planetary orbit:
+  $$F_{\mathrm{abs}} = \frac{S_\odot}{4 a^2}\, (1 - A)$$
+  \vskip4pt
+  \begin{itemize}
+    \item Earth ($a = 1$ AU, $A = 0.30$): $F_{\mathrm{abs}} = 240$ W\,m$^{-2}$, \textbf{below} $F_{\mathrm{OLR}}^{\max}$ by $\sim 40$--$70$ W\,m$^{-2}$
+    \item Venus ($a = 0.723$ AU, Earth-like $A$): $F_{\mathrm{abs}} \approx 460$ W\,m$^{-2}$, \textbf{far above} $F_{\mathrm{OLR}}^{\max}$
+  \end{itemize}
+  \vskip6pt
+  Setting $F_{\mathrm{abs}} = F_{\mathrm{OLR}}^{\max}$ gives the inner HZ edge:
+  $$a_{\mathrm{IHZ}} \approx 0.95\text{--}0.99\, \mathrm{AU}\quad (\text{present Sun})$$
+\end{frame}
+
+% ── Kopparapu inner HZ (hero) ─────────────────────────────
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=center, inner sep=0pt] at (current page.center) {%
+      \includegraphics[width=0.90\paperwidth, height=0.85\paperheight, keepaspectratio]{kopparapu2013_inner_HZ}%
+    };
+  \end{tikzpicture}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south, inner sep=0pt] at ([yshift=4pt]current page.south) {%
+      {\tiny\color{ipsText!60} Inner habitable zone calculation. Kopparapu et al.\ (2013)}%
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── Kopparapu walkthrough ────────────────────────────────
+\begin{frame}{Reading the Kopparapu HZ Plot}
+  \begin{itemize}
+    \item Effective stellar flux $S_{\mathrm{eff}}$ on the x-axis, surface $T$ on the y-axis
+    \item \textbf{Runaway greenhouse} limit: $S_{\mathrm{eff}} = 1.06$ ($a = 0.97$ AU around present Sun)
+    \item \textbf{Moist greenhouse} limit: $S_{\mathrm{eff}} = 1.015$ ($0.99$ AU)
+    \item Both limits define the inner edge of the classical habitable zone
+    \item Venus at $a = 0.723$ AU corresponds to $S_{\mathrm{eff}} \approx 1.91$, well inside the limit
+  \end{itemize}
+  \vskip6pt
+  \textbf{This figure is the canonical reference for the inner edge of the habitable zone.}
+\end{frame}
+
+% ── Hamano typeI evolution ────────────────────────────────
+\begin{frame}{Magma-Ocean Evolution: Type-I vs Type-II}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{hamano2013_typeI_evolution}
+    \source{Hamano, Abe \& Genda (2013)}
+
+    \column{0.47\textwidth}
+    Type-I planets (outside critical orbit):
+    \begin{itemize}
+      \item Magma ocean cools rapidly ($< 10$ Myr)
+      \item Steam atmosphere condenses
+      \item Liquid surface ocean forms
+      \item Earth was Type-I
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Hamano two-types phase diagram ────────────────────────
+\begin{frame}{The Type-I / Type-II Phase Diagram}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{hamano2013_two_types}
+    \source{Hamano et al.\ (2013)}
+
+    \column{0.47\textwidth}
+    Critical orbital distance $a_{\mathrm{cr}} \approx 0.77$ AU:
+    \begin{itemize}
+      \item Inside $a_{\mathrm{cr}}$: \textbf{Type-II}, magma ocean persists $> 100$ Myr, water lost to space
+      \item Outside $a_{\mathrm{cr}}$: \textbf{Type-I}, ocean condenses, water retained
+      \item Venus straddles or sits inside $a_{\mathrm{cr}}$
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Lebrun magma ocean ────────────────────────────────────
+\begin{frame}{Magma-Ocean Atmosphere Coupling}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{lebrun2013_magma_ocean_evolution}
+    \source{Lebrun et al.\ (2013)}
+
+    \column{0.47\textwidth}
+    Coupled magma-ocean + atmosphere model:
+    \begin{itemize}
+      \item Solidification time vs.\ orbital distance
+      \item For $a < 0.66$ AU around a Sun-like star: indefinite delay
+      \item Establishes the timing baseline for Venus' steam-atmosphere phase
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Robustness / wrap ──────────────────────────────────────
+\begin{frame}{Why the Simpson-Nakajima Limit is Robust}
+  The limit depends only on:
+  \vskip4pt
+  \begin{itemize}
+    \item Water phase diagram (Clausius--Clapeyron)
+    \item Elementary radiative transfer ($\tau \sim 1$ photosphere)
+  \end{itemize}
+  \vskip6pt
+  Insensitive to:
+  \begin{itemize}
+    \item Atmospheric composition (so long as water is abundant)
+    \item Surface temperature (by construction)
+    \item Detailed cloud microphysics (corrections at the 5--10\% level)
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Once $F_{\mathrm{abs}} > F_{\mathrm{OLR}}^{\max}$, no steady state with surface liquid water. The transition is one-way: only photolysis + H escape returns the planet to a dry state, irreversibly.}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{terrestrial_planets}{Mercury, Venus, Earth, Mars to scale. Credit: NASA/JPL-Caltech}
+\section{Venus Water Loss and the D/H Ratio}
+% ════════════════════════════════════════════════════════════
+
+% ── When did water leave ──────────────────────────────────
+\begin{frame}{When Did Venus Lose Its Water?}
+  Two end-member scenarios, both physically plausible:
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Early loss}: runaway from the magma-ocean stage; never had condensed oceans (Hamano Type-II)
+    \item \textbf{Late loss}: temperate Earth-like surface for $\sim 1$ Gyr, runaway triggered by faint-young-Sun brightening (Way et al.\ 2016)
+  \end{itemize}
+  \vskip6pt
+  Distinguishing observation needed: surface mineralogy + atmospheric isotopes.\\
+  None of the present datasets is conclusive.
+\end{frame}
+
+% ── Way 2016 paleo-Venus ──────────────────────────────────
+\begin{frame}{Was Venus Ever Habitable? The Late-Loss Scenario}
+  \begin{columns}[c]
+    \column{0.55\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{way2016_paleo_venus_temperature}
+    \source{Way et al.\ (2016)}
+
+    \column{0.42\textwidth}
+    \begin{itemize}
+      \item GCM simulations of paleo-Venus with shallow ocean + slow rotation
+      \item Surface $T < 290$ K can persist for $\sim 1$ Gyr
+      \item Cloud feedback from slow rotation reflects flux back to space
+      \item A habitable Venus is dynamically possible, not required
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Photolysis + H escape ──────────────────────────────────
+\begin{frame}{The Loss Mechanism: Photolysis + Escape}
+  Sequential loss of water in the upper atmosphere:
+  \vskip4pt
+  \begin{enumerate}
+    \item $\mathrm{H_2O} + h\nu \rightarrow \mathrm{H} + \mathrm{OH}$ (UV photolysis)
+    \item $\mathrm{H}$ escapes via Jeans + non-thermal channels (light, fast)
+    \item $\mathrm{O}$ recombines, slowly oxidises crust or escapes via solar-wind pickup
+  \end{enumerate}
+  \vskip6pt
+  Mass balance: $\sim$1 ocean equivalent of water can be lost over Gyr through this channel.
+  \vskip4pt
+  Without a magnetic field, the solar wind directly accesses the upper atmosphere $\Rightarrow$ enhanced O$^+$ pickup.
+\end{frame}
+
+% ── D/H ratio ──────────────────────────────────────────────
+\begin{frame}{The D/H Ratio: Smoking-Gun Evidence}
+  \begin{columns}[c]
+    \column{0.55\textwidth}
+    Measured atmospheric D/H ratios:
+    \vskip6pt
+    \begin{tabular}{l r}
+      \toprule
+      \textbf{Body} & \textbf{D/H ($\times 10^{-4}$)} \\
+      \midrule
+      Protosolar (H$_2$) & $\sim 0.20$ \\
+      Earth (oceans) & $1.56$ \\
+      Comets (Halley, 67P) & $1.5$--$5$ \\
+      \textbf{Venus} & $\sim \mathbf{240}$ \\
+      Mars & $\sim 8$ \\
+      \bottomrule
+    \end{tabular}
+    \vskip6pt
+    {\tiny\color{ipsText!60} Source: Donahue et al.\ (1982); de Bergh et al.\ (1991)}
+
+    \column{0.42\textwidth}
+    \begin{itemize}
+      \item Venus' D/H is \textbf{$\sim 150\times$ Earth's}
+      \item Lighter $^1$H escapes more easily than heavier $^2$H
+      \item D enrichment $\Rightarrow$ massive past H loss
+      \item Initial water $\geq 1\%$ of Earth's ocean mass
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Initial water inventory ────────────────────────────────
+\begin{frame}{Bounding the Initial Water Inventory}
+  Rayleigh fractionation in escape: residual water becomes D-enriched as H is lost.
+  \vskip4pt
+  Crude estimate (Jeans-like fractionation factor, $\alpha \approx 0.5$):
+  $$\frac{(\mathrm{D/H})_{\mathrm{now}}}{(\mathrm{D/H})_{\mathrm{init}}} = f^{\,\alpha - 1} \approx f^{-0.5}$$
+  \vskip4pt
+  With observed enrichment factor $\sim 150$:
+  $$f \approx 150^{-2} \approx 4\times 10^{-5}$$
+  \vskip4pt
+  Implies an initial water inventory $\sim 25{,}000\times$ today's tiny atmospheric reservoir.\\
+  Translates to several hundred metres of global equivalent layer (regime-dependent).
+\end{frame}
+
+% ── Turbet hysteresis ────────────────────────────────────
+\begin{frame}{Bistability and Hysteresis Loop}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{turbet2021_hysteresis}
+    \source{Turbet et al.\ (2021)}
+
+    \column{0.47\textwidth}
+    For some stellar fluxes, two stable states coexist:
+    \begin{itemize}
+      \item Wet: ocean + thin atmosphere
+      \item Dry: hot, thick $\mathrm{CO_2}$ atmosphere
+    \end{itemize}
+    \vskip6pt
+    Crossing the threshold is one-way. The dry state has no thermodynamic path back.
+  \end{columns}
+\end{frame}
+
+% ── Gillmann dry/wet scenarios ────────────────────────────
+\begin{frame}{Dry-Venus vs Wet-Venus Pathways}
+  \begin{columns}[c]
+    \column{0.55\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{gillmann2022_dry_wet_venus_scenarios}
+    \source{Gillmann et al.\ (2022)}
+
+    \column{0.42\textwidth}
+    Coupled-model branching:
+    \begin{itemize}
+      \item Initial water inventory + outgassing rate determines branch
+      \item Wet branch: like Earth, ocean condenses
+      \item Dry branch: like Venus today
+      \item Initial conditions decide everything
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Constantinou Venus pathways ───────────────────────────
+\begin{frame}{Constraining the Trajectory}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{constantinou2024_venus_pathways}
+    \source{Constantinou et al.\ (2024)}
+
+    \column{0.47\textwidth}
+    Statistical bracketing of Venus' history:
+    \begin{itemize}
+      \item Combines D/H, atmospheric noble gases, surface mineralogy
+      \item Late-loss scenarios more probable in Bayesian framework
+      \item Still room for early loss if early outgassing was anomalously low
+      \item DAVINCI noble-gas measurements will narrow these constraints
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{terrestrial_planets}{Mercury, Venus, Earth, Mars (Voyager 1 family portrait, 1990). Credit: NASA/JPL-Caltech}
+\section{Why Did Earth and Venus Diverge?}
+% ════════════════════════════════════════════════════════════
+
+% ── Carbonate-silicate failure ──────────────────────────────
+\begin{frame}{Carbonate--Silicate Cycle: Failure Mode}
+  On Earth, the carbon cycle keeps $\mathrm{CO_2}$ in the atmosphere $\sim 280$--$1000$ ppm via:
+  \vskip4pt
+  \begin{itemize}
+    \item Volcanic outgassing (source)
+    \item Silicate weathering on continents (sink, $T$-dependent)
+    \item Carbonate subduction + decarbonation (return loop)
+  \end{itemize}
+  \vskip8pt
+  On Venus this cycle has \textbf{no functional sink}:
+  \begin{itemize}
+    \item No liquid water $\Rightarrow$ no aqueous weathering
+    \item No subduction $\Rightarrow$ no return of crustal carbonate to the mantle
+    \item Volcanic outgassing accumulates indefinitely
+  \end{itemize}
+  \vskip4pt
+  Result: $\mathrm{CO_2}$ partial pressure builds to the $90$-bar ambient observed today.
+\end{frame}
+
+% ── Lammer carbonate-silicate ─────────────────────────────
+\begin{frame}{The Carbonate-Silicate Schematic}
+  \begin{columns}[c]
+    \column{0.55\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{lammer2018_carbonate_silicate}
+    \source{Lammer et al.\ (2018)}
+
+    \column{0.42\textwidth}
+    \begin{itemize}
+      \item Earth: closed carbon loop with subduction return
+      \item Mars: open loop (carbonates accumulate, no return without active tectonics)
+      \item Venus: source-only (no aqueous chemistry, no subduction)
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Lammer accretion ─────────────────────────────────────
+\begin{frame}{Initial Volatile Inventories}
+  \begin{columns}[c]
+    \column{0.55\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{lammer2018_venus_earth_mars_accretion}
+    \source{Lammer et al.\ (2018)}
+
+    \column{0.42\textwidth}
+    \begin{itemize}
+      \item Comparative accretion of Venus, Earth, Mars
+      \item Initial water + carbon inventories overlap substantially
+      \item Divergence is not from initial conditions alone
+      \item Early evolution decides which branch each planet takes
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Why diverge: contributing causes ───────────────────────
+\begin{frame}{Why Did the Twins Diverge?}
+  No single cause; several contributing factors:
+  \vskip4pt
+  \begin{enumerate}
+    \item \textbf{Distance from the Sun} ($1.91\times$ Earth's flux) $\Rightarrow$ inside the runaway-greenhouse limit
+    \item \textbf{No active dynamo} $\Rightarrow$ no shielding from solar wind
+    \item \textbf{Slow rotation} $\Rightarrow$ less Coriolis-driven cloud organisation
+    \item \textbf{Possible early magma-ocean phase}: Hamano Type-II, volatiles never fully condensed
+    \item \textbf{Stagnant lid tectonics} $\Rightarrow$ no carbon-cycle return loop
+  \end{enumerate}
+  \vskip6pt
+  All five may have contributed; their relative weight is an active research question.
+\end{frame}
+
+% ── Habitability implications ──────────────────────────────
+\begin{frame}{Implications for Habitability}
+  Venus matters far beyond Venus:
+  \vskip4pt
+  \begin{itemize}
+    \item Defines the inner edge of the classical habitable zone for any star
+    \item Provides a \textbf{negative example} of what happens when key feedbacks fail
+    \item Stagnant-lid + runaway combination may be the default for rocky planets, with Earth as the lucky exception
+    \item Tidally-locked rocky planets near M-dwarfs are pre-conditioned to Venus-like outcomes
+  \end{itemize}
+  \vskip8pt
+  \keyresult{Venus is the calibration target for understanding which combinations of orbital, geophysical, and tectonic parameters allow long-term liquid water.}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{widemann2023_three_missions_render}{Three Venus-bound missions over Magellan radar mosaic. Credit: Widemann et al.\ (2023)}
+\section{Recent Advances and Future Missions}
+% ════════════════════════════════════════════════════════════
+
+% ── Three missions hero ─────────────────────────────────────
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=center, inner sep=0pt] at (current page.center) {%
+      \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{widemann2023_three_missions_render}%
+    };
+  \end{tikzpicture}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south, inner sep=0pt] at ([yshift=4pt]current page.south) {%
+      {\tiny\color{ipsText!60} DAVINCI (NASA), VERITAS (NASA), EnVision (ESA). Widemann et al.\ (2023)}%
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── Three missions overview ────────────────────────────────
+\begin{frame}{Three Missions to Venus, This Decade}
+  \begin{itemize}
+    \item \textbf{DAVINCI} (NASA, $\sim 2030$): atmospheric descent probe + flyby imaging
+    \item \textbf{VERITAS} (NASA, $\sim 2031$): radar interferometry, surface composition mapping
+    \item \textbf{EnVision} (ESA, $\sim 2031$): radar + subsurface sounder + atmospheric chemistry
+  \end{itemize}
+  \vskip8pt
+  Combined, they will measure: noble-gas isotopes (DAVINCI), high-resolution topography (VERITAS), subsurface structure + tidal Love number $k_2$ (EnVision).
+  \vskip6pt
+  After a $\sim 30$-year gap in dedicated Venus missions, three at once.
+\end{frame}
+
+% ── DAVINCI ───────────────────────────────────────────────
+\begin{frame}{DAVINCI: A Descending Atmospheric Laboratory}
+  \begin{itemize}
+    \item Launch: nominally 2029--2030
+    \item Hour-long parachute descent through the full atmosphere
+    \item Mass spectrometer: noble gases + isotopes (Ar, Kr, Xe ratios)
+    \item Tunable laser spectrometer: D/H, $^{18}$O/$^{16}$O at multiple altitudes
+    \item Imaging: descent images of tessera highlands at $<100$ m resolution
+  \end{itemize}
+  \vskip8pt
+  \textbf{Will measure noble-gas isotopes that distinguish early-loss vs.\ late-loss water scenarios for the first time.}
+\end{frame}
+
+% ── VERITAS ───────────────────────────────────────────────
+\begin{frame}{VERITAS: Radar at $30$ m Resolution}
+  \begin{itemize}
+    \item Synthetic aperture radar: $\sim 30$ m global topography (Magellan: $\sim 100$ m)
+    \item InSAR: detect cm-scale surface deformation between flybys
+    \item Near-IR emissivity: surface mineralogy through the atmosphere
+    \item Gravity science: high-resolution gravity map, $C/MR^2$ measurement
+  \end{itemize}
+  \vskip8pt
+  \textbf{Will measure $C/MR^2$ for the first time, settling the core-size question.}
+\end{frame}
+
+% ── EnVision ──────────────────────────────────────────────
+\begin{frame}{EnVision: Surface, Subsurface, Atmosphere}
+  \begin{itemize}
+    \item ESA M5 mission, launch $\sim 2031$
+    \item Synthetic aperture radar (VenSAR): selected high-resolution targets
+    \item \textbf{Subsurface sounder}: layered structure of plains and tessera to $\sim 1$ km depth
+    \item Spectrometers: mineralogy + atmospheric chemistry
+    \item Radio science: gravity tides, $k_2$ Love number $\Rightarrow$ core liquidity
+  \end{itemize}
+  \vskip6pt
+  \keyresult{$k_2$ measurement will distinguish a liquid from solid core, addressing the missing-dynamo question.}
+\end{frame}
+
+% ── Open questions ────────────────────────────────────────
+\begin{frame}{Open Questions for the 2030s}
+  \begin{enumerate}
+    \item Did Venus ever have surface oceans? For how long?
+    \item What is the present rate of volcanism?
+    \item Is the core liquid? Why no dynamo?
+    \item Does the atmosphere host disequilibrium chemistry of biological origin?
+    \item Does episodic-overturn tectonics operate, and on what timescale?
+  \end{enumerate}
+  \vskip8pt
+  Venus is moving from a puzzle with no data to a puzzle with the right data on the way.
+\end{frame}
+
+
+% ── Summary ────────────────────────────────────────────────
+\begin{frame}{Summary}
+  \begin{enumerate}
+    \item Earth and Venus have nearly identical bulk parameters
+    \item Their evolution diverged by $\sim 500$ K in surface temperature, $90\times$ in atmospheric mass, all surface water vs.\ none
+    \item Earth: plate tectonics + magnetic dynamo + biosphere + carbon cycle, all mutually reinforcing
+    \item Venus: stagnant lid + no dynamo + runaway greenhouse, all mutually reinforcing
+    \item The Simpson--Nakajima limit ($\sim 280$ W\,m$^{-2}$) is the thermodynamic boundary defining the inner edge of the habitable zone
+    \item Venus' D/H ratio of $\sim 150\times$ Earth's is direct evidence of past water loss
+    \item DAVINCI, VERITAS, and EnVision will deliver the data to settle when, why, and how the divergence happened
+  \end{enumerate}
+\end{frame}
+
+% ── Final slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \begin{tikzpicture}[remember picture, overlay]
+    \ipscontain{title_background}
+    \fill[ipsPrimary, opacity=0.70] (current page.north west) rectangle (current page.south east);
+  \end{tikzpicture}
+  \vfill
+  \begin{center}
+    {\color{white}\Large\bfseries Questions?}
+    \vskip20pt
+    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~10. Rocky Planets II: Mercury \& Mars}}
+    \vskip16pt
+    {\color{ipsLightFill!70}\small Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
+  \end{center}
+  \vfill
+\end{frame}
+
+\end{document}

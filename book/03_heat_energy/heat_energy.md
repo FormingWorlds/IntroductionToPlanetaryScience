@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to identify the main energy sources driving planetary evolution, distinguish between heat transport mechanisms, and apply scaling laws for convection and thermal evolution.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 3 (PDF)](../_static/slides/lecture03.pdf)
+```
+
 ## Energy sources
 
 A planet's geological and geophysical evolution is fundamentally governed by its **thermal history**: how much heat it starts with, how it generates new heat, and how efficiently it can lose that heat to space. Without internal heat, there would be no volcanism, no magnetic field, no plate tectonics, and no atmospheric outgassing. Understanding where planetary heat comes from is therefore the starting point for understanding planetary evolution.
@@ -61,6 +65,10 @@ These isotopes are **lithophile** ("rock-loving") elements that concentrate in t
 
 Evolution of Earth's radiogenic heat production over time. The total heat production (black curve) is the sum of contributions from four long-lived isotopes: ${}^{238}\mathrm{U}$ (red), ${}^{235}\mathrm{U}$ (green), ${}^{232}\mathrm{Th}$ (grey), and ${}^{40}\mathrm{K}$ (blue). At the time of Earth's formation (4.5 Gyr ago), total radiogenic heat production was about 3–4 times higher than today, primarily due to the larger contributions of ${}^{40}\mathrm{K}$ and ${}^{235}\mathrm{U}$. Credit: Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 ```
+
+
+
+
 
 ```{figure} figures/short_lived_decay.avif
 :name: fig:short-lived-decay

@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to explain how we probe planetary interiors using seismology, gravity, and the moment of inertia factor, derive the moment of inertia for uniform and differentiated bodies, apply equations of state at planetary conditions, and compare the internal structures of terrestrial planets, giant planets, and icy moons.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 8 (PDF)](../_static/slides/lecture08.pdf)
+```
+
 ## Probing interiors
 
 The surface of a planet reveals only the outermost skin of a body that extends thousands of kilometres inward. Understanding what lies beneath (the density structure, composition, phase state, and dynamics) is essential for explaining everything from magnetic fields ({ref}`lecture04`) to volcanic activity ({ref}`lecture07`) to long-term thermal evolution ({ref}`lecture03`). Yet we cannot directly sample a planet's deep interior. Instead, we rely on three complementary observational tools {cite:p}`dePaterLissauer2010`.
@@ -18,6 +22,10 @@ The surface of a planet reveals only the outermost skin of a body that extends t
 
 Paths of seismic P-waves through Earth's interior. P-waves refract as they pass through layers of increasing density, and are blocked by the liquid outer core, creating a **P-wave shadow zone** between approximately 104° and 140° from the earthquake source. S-waves (not shown) are entirely absorbed by the liquid core, producing an even larger shadow zone beyond 104°. These observations provided the definitive evidence for Earth's liquid outer core. Credit: Wikimedia Commons, public domain.
 ```
+
+
+
+
 
 ```{figure} figures/shadow_zones_usgs.avif
 :name: fig:shadow-zones-usgs

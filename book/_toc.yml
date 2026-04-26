@@ -8,6 +8,7 @@ options:
   numbered: true
 
 chapters:
+  - file: lecture_slides
   - file: 01_introduction/introduction
   - file: 02_formation_orbits/formation_orbits
   - file: 03_heat_energy/heat_energy

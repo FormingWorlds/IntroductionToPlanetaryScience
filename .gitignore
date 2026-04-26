@@ -2,6 +2,9 @@
 content/books
 content/course2025
 
+# Local Claude Code session state (bot-only, never commit)
+.claude/
+
 # Jupyter Book build artifacts
 book/_build/
 
@@ -12,7 +15,10 @@ book/**/figures/*.jpg
 # Generated from AVIF/SVG at slide build time (see slides/Makefile)
 slides/**/figures/*.png
 slides/**/figures/*.pdf
-!slides/**/lecture*.pdf
+# Slide PDFs are committed at book/_static/slides/lectureNN.pdf (the
+# website-facing canonical location). The build artefact in slides/lectureNN/
+# is gitignored; copy to book/_static/slides/ when ready to publish.
+slides/**/lecture*.pdf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
