@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to classify meteorites and use isotopic chronometers to date the early solar system, describe the dynamics and populations of the asteroid belt and trans-Neptunian region, explain the origin and structure of comets, and use small bodies as formation fossils that record the solar system's dynamical and chemical history.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 12 (PDF)](../_static/slides/lecture12.pdf)
+```
+
 The previous lectures have followed the planets one by one: rocky worlds in {ref}`lecture09` and {ref}`lecture10`, gas and ice giants in {ref}`lecture11`.
 This lecture is about everything that did *not* become a planet.
 Small bodies are the leftover pieces of the planet-building process: asteroids and meteorites in the inner solar system, comets and Kuiper Belt objects (KBOs) in the outer solar system, dwarf planets like Ceres and Pluto in between, and the Oort cloud at the gravitational edge of the Sun's domain.
