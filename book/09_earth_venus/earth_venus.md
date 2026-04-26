@@ -12,7 +12,7 @@
 Earth and Venus are nature's best controlled experiment in comparative planetology.
 They formed from the same nebular reservoir within roughly $0.3$ AU of each other, contain similar bulk inventories of silicate, iron, and volatile elements, and have masses and radii within $20\%$ of each other.
 Yet their present-day surface conditions could not be more different.
-Earth is wet, geologically active, magnetically shielded, and inhabited; Venus is dry, encased in a $92$ bar carbon-dioxide atmosphere at a surface temperature of $735$ K, and the only one of the rocky planets without a global magnetic field.
+Earth is wet, geologically active, magnetically shielded, and inhabited; Venus is dry, encased in a $92$ bar carbon-dioxide atmosphere at a surface temperature of $737$ K, and the only one of the rocky planets without a global magnetic field.
 Identifying what set these two nearly identical starting points on such radically different evolutionary paths is the central question of this lecture.
 This lecture works through that question in three parts.
 Part 1 reviews Earth as a reference planet, Part 2 surveys Venus as the alien twin, and Part 3 brings the comparison together to extract the underlying physics.
@@ -203,7 +203,7 @@ The crucial point for comparative planetology is that the carbonate-silicate the
 Silicate weathering equilibrates atmospheric $\mathrm{CO_2}$ on a timescale of order $\sim$0.5 Myr, which is roughly five orders of magnitude longer than the duration of the current anthropogenic perturbation.
 Earth's climate system is responding to a well-understood radiative forcing on a timescale set by ocean heat uptake (decades to centuries) and ice-sheet response (centuries to millennia), not by the geological feedbacks that have buffered deep-time climate.
 A second consequence of the rapid $\mathrm{CO_2}$ rise is **ocean acidification**: dissolution of atmospheric $\mathrm{CO_2}$ has raised seawater $\mathrm{H^+}$ concentrations by about $30\%$ since pre-industrial times, dropping the surface ocean $\mathrm{pH}$ from about $8.2$ to $8.1$.
-The point is not political but physical: the same radiative-transfer machinery that warms Venus to $735$ K, given enough $\mathrm{CO_2}$, is operating on Earth right now, and the long-term geological feedbacks that bound Earth's climate over $4$ Gyr operate too slowly to compensate for it on timescales relevant to human civilisation.
+The point is not political but physical: the same radiative-transfer machinery that warms Venus to $737$ K, given enough $\mathrm{CO_2}$, is operating on Earth right now, and the long-term geological feedbacks that bound Earth's climate over $4$ Gyr operate too slowly to compensate for it on timescales relevant to human civilisation.
 
 ### The biosphere's geological footprint
 
@@ -233,7 +233,7 @@ First-order theory says it should look much like Earth.
 It does not.
 The contrast is dramatic on every observable axis.
 The surface pressure on Venus is $92$ bar, about $90$ times the pressure at the bottom of Earth's atmosphere, comparable to the pressure under $\sim$1 km of water on Earth.
-The surface temperature is $735$ K, hot enough to melt lead and well above the temperature at which any organic chemistry survives.
+The surface temperature is $737$ K, hot enough to melt lead and well above the temperature at which any organic chemistry survives.
 The atmospheric composition is almost entirely $\mathrm{CO_2}$ ($96.5\%$), with $\mathrm{N_2}$ ($3.5\%$) as the only major minor constituent and trace amounts of $\mathrm{SO_2}$, water vapour, and noble gases.
 The cloud layers are not water clouds but **sulfuric acid** ($\mathrm{H_2SO_4}$) droplets, formed by photochemistry of $\mathrm{SO_2}$ and water vapour at altitudes between roughly $48$ and $70$ km.
 Venus rotates retrograde (against the orbital direction) with a sidereal rotation period of $243.0$ Earth days, longer than its orbital period of $224.7$ Earth days, so a single solar day on Venus lasts $116.75$ Earth days.
@@ -379,7 +379,7 @@ The composition is overwhelmingly $\mathrm{CO_2}$ ($96.5\%$), with $\mathrm{N_2}
 Trace gases include $\mathrm{SO_2}$ at $\sim$150 ppm, water vapour at $\sim$30 ppm in the lower atmosphere (rising slightly to $\sim$80 ppm in the cloud-deck region), and noble gases (argon, neon, krypton, xenon) at concentrations that are comparable to or much higher than terrestrial values, depending on the species.
 The high noble gas content (especially primordial $^{36}$Ar) is one of the stronger arguments that Venus retained more of its primordial atmosphere than Earth did, which fits with the idea that Venus has had less efficient atmospheric loss to space at modern times.
 
-The thermal profile is roughly adiabatic from the surface ($T_s = 735$ K, $P_s = 92$ bar) up to about $65$ km altitude, where the cloud tops sit and the troposphere meets the stratosphere.
+The thermal profile is roughly adiabatic from the surface ($T_s = 737$ K, $P_s = 92$ bar) up to about $65$ km altitude, where the cloud tops sit and the troposphere meets the stratosphere.
 The atmospheric scale height at the surface is about $16$ km, much larger than Earth's $\sim$8 km, mainly because the surface temperature is so much higher (gas molecules are more energetic), in spite of the larger mean molecular weight of $\mathrm{CO_2}$ ($M = 44$ g/mol vs $\sim 29$ g/mol for air); the scale height is a competition between these factors, and the temperature wins.
 We can verify the Venus number directly from the hydrostatic scale height derived in {ref}`lecture05`:
 
@@ -387,7 +387,7 @@ $$
 H = \frac{\kB T}{m\, g}.
 $$
 
-Plugging in $T = 735$ K, $m = 44 \times 1.66 \times 10^{-27}$ kg $= 7.30 \times 10^{-26}$ kg for $\mathrm{CO_2}$, and $g = 8.87$ m/s$^2$ gives $H \approx 1.57 \times 10^4$ m, or $\sim 16$ km.
+Plugging in $T = 737$ K, $m = 44 \times 1.66 \times 10^{-27}$ kg $= 7.30 \times 10^{-26}$ kg for $\mathrm{CO_2}$, and $g = 8.87$ m/s$^2$ gives $H \approx 1.57 \times 10^4$ m, or $\sim 16$ km.
 The same formula applied to Earth's near-surface air ($T = 288$ K, $m = 4.81 \times 10^{-26}$ kg for a mean molecular weight of $29$, $g = 9.81$ m/s$^2$) gives $H \approx 8.4$ km.
 The factor-of-two contrast between the two planets is set almost entirely by the temperature ratio $T_{\mathrm{Venus}} / T_{\mathrm{Earth}} \approx 2.55$, partly offset by the heavier molecule and the slightly weaker Venusian gravity.
 Above the cloud tops the temperature drops with altitude through the mesosphere, then rises again in the thermosphere where solar EUV is absorbed.
@@ -423,7 +423,7 @@ $$
 so that $T_s = 2^{1/4}\, T_{\mathrm{eq}} \approx 1.19\, T_{\mathrm{eq}}$.
 For Earth, $S_\oplus = 1361$ W/m$^2$ and $A = 0.30$ give $T_{\mathrm{eq}} \approx 255$ K and $T_s \approx 303$ K, within $\sim 15$ K of the observed $288$ K.
 For Venus, $S_{\mathrm{Venus}} = 2604$ W/m$^2$ but the present cloud albedo is $A \approx 0.77$, so $T_{\mathrm{eq}} \approx 227$ K and the one-layer model predicts only $T_s \approx 270$ K.
-The observed surface temperature is $735$ K, almost $500$ K hotter than the simple model allows.
+The observed surface temperature is $737$ K, almost $500$ K hotter than the simple model allows.
 The one-layer picture fails by hundreds of kelvin, and the failure is not a small correction: it tells us that Venus is not on the same equilibrium branch as Earth, and that we need a different kind of solution, in which the atmosphere is dense enough that the IR photosphere lifts far above the surface.
 That is the runaway-greenhouse branch, and the next derivation makes the threshold quantitative.
 
@@ -461,7 +461,7 @@ In numbers, the Simpson-Nakajima limit comes out to about $280\text{--}310$ W/m$
 Earth today absorbs about $240$ W/m$^2$ of stellar flux, comfortably below the limit.
 Venus, at $0.723$ AU, absorbs roughly $1.91 \times$ more stellar flux per unit area than Earth would at the top of its atmosphere; the absorbed solar flux at Venus is much higher than the Simpson-Nakajima limit, which is precisely why Venus cannot host liquid water at the surface today.
 Once Venus crossed the limit some time in its history, the runaway became a one-way process: the ocean evaporated to space, water photolysed in the upper atmosphere, hydrogen escaped (preferentially over deuterium, leaving the residual D/H ratio strongly enriched), and the surface dried out permanently.
-What is left is the dry, $\mathrm{CO_2}$-dominated, $735$ K hothouse we observe today.
+What is left is the dry, $\mathrm{CO_2}$-dominated, $737$ K hothouse we observe today.
 
 A subtlety is that the runaway greenhouse state is a thermodynamic feature of the water phase diagram and the radiative transfer through a saturated atmosphere; it is not an artefact of any particular climate model or numerical scheme.
 {cite:t}`Goldblatt2013` showed that even the most modern line-by-line radiative-transfer codes converge on a limit in the same range as the original {cite:t}`Kasting1988` and {cite:t}`Kasting1993` calculations.
@@ -936,7 +936,7 @@ This is the isotopic version of the dichotomy seen in noble gases ({cite:t}`Zahn
 
 Earth and Venus are the closest analogue we have to a controlled experiment in comparative planetology.
 They started from the same protoplanetary reservoir, accreted to similar masses and densities, and probably acquired comparable inventories of water and carbon.
-Today they could not look more different: Earth is wet, geologically active, magnetically shielded, and inhabited; Venus is dry, encased in $92$ bar of $\mathrm{CO_2}$, surface temperature $735$ K, with no global magnetic field and no plate tectonics.
+Today they could not look more different: Earth is wet, geologically active, magnetically shielded, and inhabited; Venus is dry, encased in $92$ bar of $\mathrm{CO_2}$, surface temperature $737$ K, with no global magnetic field and no plate tectonics.
 The divergence is due to a small set of physical inputs (solar flux, water history, rotation rate, and tectonic regime) coupled by nonlinear feedbacks that turned modest differences in input into qualitatively different end states.
 
 The central piece of physics is the **Simpson-Nakajima runaway greenhouse limit**: the maximum thermal flux that a water-saturated atmosphere can radiate to space, set by the saturation vapour pressure curve at the temperature of the IR photosphere.

@@ -167,7 +167,7 @@ Mercury's north polar region in polar projection (latitude $\sim 65^\circ$N to t
 **(A)** MLA topography (colour scale in km above the reference sphere), showing the cratered high-northern-latitude terrain with several impact craters visible along the polar circle.
 **(B)** MLA $1064$-nm surface reflectance on the same polar projection (colour scale $0$ to $0.10$). Dark spots (low reflectance, red markers) are located inside permanently shadowed crater floors.
 **(C)** Biannual-average insolation at the surface, expressed as a percentage of the 1 AU solar constant. The darkest regions coincide with the low-reflectance spots in panel B: the crater floors receive essentially zero direct sunlight year-round.
-**(D)** Biaxial maximum illumination temperature, again showing permanently cold regions coinciding with the anomalously dark reflectance in B.
+**(D)** Biannual maximum illumination temperature, again showing permanently cold regions coinciding with the anomalously dark reflectance in B.
 The spatial coincidence of low reflectance, zero insolation, and low temperature is interpreted as evidence that Mercury's permanently shadowed crater floors host **surface-near volatiles**: a thin lag of organic-rich material (responsible for the low 1064-nm reflectance) overlying a **water-ice** deposit. Combined with MESSENGER neutron-spectrometer evidence of hydrogen enrichment at the same craters {cite:p}`Lawrence2013`, this establishes Mercury as a rocky body that retains cold-trapped volatiles despite its proximity to the Sun. From {cite:t}`Neumann2013`.
 ```
 

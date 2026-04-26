@@ -14,7 +14,7 @@
 \author[L14]{Tim Lichtenberg}
 \institute{Kapteyn Astronomical Institute\\University of Groningen}
 \date{2026}
-\titlebgcredit{Tidally locked rocky planet couplings. Wordsworth \& Kreidberg (2022)}
+\titlebgcredit{Tidally locked rocky planet atmospheric circulation. Wordsworth \& Kreidberg (2022)}
 
 % ════════════════════════════════════════════════════════════
 \begin{document}
@@ -89,7 +89,7 @@
 \begin{frame}[plain]
   \begin{center}
     \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{raymond2022_period_radius}\\
-    \footnotesize Period-radius distribution of all confirmed exoplanets, with solar system planets overlaid (bottom). Raymond \& Morbidelli (2022).
+    \footnotesize Period-radius distribution of confirmed exoplanets (top); compact-multi vs peas-in-a-pod vs not-peas-in-a-pod classification (bottom). Raymond \& Morbidelli (2022).
   \end{center}
 \end{frame}
 
@@ -161,7 +161,7 @@
 
 
 % ════════════════════════════════════════════════════════════
-\sectionimage{wordsworth2022_tidally_locked_planet}{Tidally locked planet couplings. Wordsworth \& Kreidberg (2022)}
+\sectionimage{lichtenberg2023_nccc_timeline}{Network of coupled climate components. Lichtenberg et al.\ (2023)}
 \section{Habitability as a Coupled Systems Property}
 % ════════════════════════════════════════════════════════════
 
@@ -178,24 +178,42 @@
   \end{itemize}
 \end{frame}
 
-% Hero: Wordsworth tidally-locked couplings
+% Hero: True systems-level coupling stack (Lichtenberg+ 2023 NCCC)
 \begin{frame}[plain]
   \begin{center}
-    \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{wordsworth2022_tidally_locked_planet}\\
-    \footnotesize Bidirectional couplings between star, atmosphere, surface, interior on a tidally locked rocky planet. Wordsworth \& Kreidberg (2022).
+    \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{lichtenberg2023_nccc_timeline}\\
+    \footnotesize Network of coupled climate components: interior $\leftrightarrow$ atmosphere $\leftrightarrow$ surface $\leftrightarrow$ biosphere over Gyr timescales. Lichtenberg et al.\ (2023).
   \end{center}
 \end{frame}
 
-\begin{frame}{Reading the Coupling Diagram}
+\begin{frame}{Reading the Coupling Stack}
   \begin{itemize}
-    \item Star $\to$ atmosphere: radiative balance + photochemistry.
-    \item Atmosphere $\to$ surface: heat redistribution + weathering.
-    \item Surface $\to$ interior: subduction + outgassing.
-    \item Interior $\to$ atmosphere: volcanic flux of CO$_2$, H$_2$O, SO$_2$.
-    \item Interior $\to$ star: dynamo magnetic shielding.
+    \item Interior $\leftrightarrow$ atmosphere: outgassing, volatile partitioning, magma-ocean chemistry.
+    \item Atmosphere $\leftrightarrow$ surface: weathering, photochemistry, redox state of near-surface volatiles.
+    \item Surface $\leftrightarrow$ interior: tectonic recycling, sequestration of carbonates and water.
+    \item Star $\leftrightarrow$ atmosphere: irradiation, XUV-driven escape, photochemical loss.
+    \item Biosphere (once present) feeds back on atmosphere, surface, and ocean chemistry.
   \end{itemize}
   \vskip6pt
   \keyresult{Break any link, and the system can drift into a regime where surface liquid water is no longer thermodynamically possible.}
+\end{frame}
+
+% Hero: Wordsworth tidally-locked atmospheric circulation
+\begin{frame}[plain]
+  \begin{center}
+    \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{wordsworth2022_tidally_locked_planet}\\
+    \footnotesize Atmospheric circulation on a tidally locked rocky planet: irradiation, cloud formation, super-rotation, dayside-nightside heat transport. Wordsworth \& Kreidberg (2022).
+  \end{center}
+\end{frame}
+
+\begin{frame}{Reading the Tidally Locked Circulation Diagram}
+  \begin{itemize}
+    \item Permanent dayside receives all stellar irradiation; partial reflection sets the planetary albedo.
+    \item Substellar convergence region: convection lifts moisture, forms thick clouds.
+    \item Equatorial super-rotation transports heat from dayside to nightside.
+    \item Permanent nightside acts as a cold trap; condensable volatiles can freeze out.
+    \item Atmospheric collapse possible when day-night transport is insufficient to keep volatiles vapour.
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{The HZ is Not a Line}
@@ -319,8 +337,8 @@
     \begin{itemize}
       \item Monte Carlo each Drake factor over its full published range.
       \item Result is \emph{bimodal}.
-      \item $\sim 1/3$ of probability mass below $N = 1$ in the entire \emph{observable universe}.
-      \item "We are alone" is consistent with current knowledge.
+      \item $\sim 1/3$ chance of being alone in the Milky Way (CDF at $N < 1$).
+      \item $\sim 10\%$ chance of being alone in the entire observable universe (CDF at $N \ll 1$).
       \item Apparent silence is unsurprising once priors are honest.
     \end{itemize}
   \end{columns}
@@ -452,7 +470,8 @@
     \item $0.1\,\Msun$ late M: $\approx 3000$ Gyr.
   \end{itemize}
   \vskip4pt
-  Cooler stars give biology more time.
+  Cooler stars give biology more time.\\
+  \footnotesize $L \propto M^{3.5}$ is a single-power-law approximation; piecewise relations give $\sim M^{4}$ for $M \gtrsim 0.4\,\Msun$ and $\sim M^{2.3}$ below. Numbers good to factors of a few.
 \end{frame}
 
 \begin{frame}{XUV at the HZ: M Dwarfs are Hostile}
@@ -464,7 +483,7 @@
       \item Lyman-$\alpha$ + X-ray at HZ orbit, vs spectral type and age.
       \item M dwarfs deliver $10^2$--$10^3 \times$ more EUV/X-ray to HZ planets than G dwarfs.
       \item High-flux phase lasts \emph{several Gyr}.
-      \item K dwarfs: intermediate level, declining quickly.
+      \item K dwarfs: elevated for $\sim 100$s Myr, then declining; less harsh than M, harsher than G.
       \item Cuntz \& Guinan (2016).
     \end{itemize}
   \end{columns}
@@ -486,7 +505,7 @@
       \item Substellar convection lifts thick water clouds.
       \item Albedo rises to $\sim 0.6$.
       \item Stabilising feedback against runaway.
-      \item Inner edge shifts inward by $\sim 2\times$.
+      \item Inner edge tolerates $\sim 2\times$ higher stellar flux.
       \item 1D HZ underestimates M dwarf habitable region.
     \end{itemize}
   \end{columns}
@@ -528,7 +547,7 @@
 % ════════════════════════════════════════════════════════════
 
 \begin{frame}{What is Life?}
-  Working definition (Lederberg 1965, Viking-era):
+  Working definition (Joyce 1994, building on Lederberg 1965 + Viking-era debate):
   \begin{itemize}
     \item A self-replicating, metabolising, evolving chemical system.
     \item Operational, not philosophically deepest.
@@ -616,7 +635,7 @@
 
 \begin{frame}{False Positives: Every Gas Has an Abiotic Pathway}
   \begin{itemize}
-    \item \textbf{Abiotic O$_2$}: H$_2$O photolysis + H escape (Wordsworth+ 2014, Luger+ 2015). CO$_2$ photolysis.
+    \item \textbf{Abiotic O$_2$}: H$_2$O photolysis + H escape (Wordsworth+ 2014, Luger \& Barnes 2015). CO$_2$ photolysis.
     \item \textbf{Abiotic CH$_4$}: serpentinisation of olivine + water. Volcanic outgassing at low $f_{\mathrm{O_2}}$.
     \item \textbf{Abiotic N$_2$O}: lightning chemistry, photochemistry.
     \item \textbf{Abiotic DMS}: no significant Earth source known. But "not on Earth" $\neq$ "impossible elsewhere".
@@ -626,7 +645,7 @@
 \end{frame}
 
 \begin{frame}{Solar System Targets for Life Detection}
-  Five plausible targets:
+  Five solar-system bodies under active astrobiological assessment:
   \begin{itemize}
     \item \textbf{Mars}: past habitability established. Mars Sample Return is the path forward.
     \item \textbf{Europa}: confirmed subsurface ocean. Clipper at Jupiter 2030.
@@ -642,7 +661,7 @@
     \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{lincowski2021_phosphine_so2}
     \column{0.45\textwidth}
     \begin{itemize}
-      \item Greaves+ 2020: PH$_3$ in Venus clouds claimed as biosignature.
+      \item Greaves+ 2021: PH$_3$ in Venus clouds claimed as biosignature.
       \item Lincowski+ 2021: same data fits SO$_2$ in Venus mesosphere.
       \item Original feature is at the JCMT/ALMA noise floor.
       \item Direct analogue of the K2-18 b DMS controversy.
@@ -684,7 +703,7 @@
     \column{0.45\textwidth}
     \begin{itemize}
       \item MIRI 15 $\mu$m secondary eclipse.
-      \item $T_d \approx 503$ K = bare-rock equilibrium.
+      \item $T_d \approx 508$ K = bare-rock equilibrium.
       \item No thick atmosphere to redistribute heat.
       \item Greene+ 2023.
       \item M dwarf HZ planets often retain little atmosphere.
@@ -743,7 +762,7 @@
     \item \textbf{2040s}: HWO + LIFE in hardware. First plausible direct atmospheric characterisation of \emph{Earth-analogue} exoplanets.
   \end{itemize}
   \vskip4pt
-  \keyresult{The first time "are we alone?" is empirical, not philosophical. The answer arrives within the careers of the students in this room.}
+  \keyresult{The first time "are we alone?" is empirical, not philosophical. The empirical regime begins within the careers of the students in this room.}
 \end{frame}
 
 

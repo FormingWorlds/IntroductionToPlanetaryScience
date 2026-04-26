@@ -137,7 +137,7 @@ Loki Patera, the largest volcanic depression on Io, imaged by Voyager 1 in 1979.
 :name: fig:io_tvashtar
 :width: 65%
 
-Eruption plume rising from Tvashtar Catena on Io, captured by the New Horizons spacecraft during its 2007 Jupiter flyby en route to Pluto. The plume reaches several hundred kilometres in altitude and is one of the most dramatic active volcanic eruptions documented in the solar system. Image credit: NASA/JHUAPL/SwRI.
+Composite Galileo view of the active fire fountain at Tvashtar Catena on Io, combining low-resolution colour imaging from orbit C21 with visible and infrared data from orbits I25 (26 Nov 1999) and I27 (22 Feb 2000) that captured the active lava flow in the act. Tvashtar is one of the most dramatic active volcanic eruptions documented in the solar system. Image credit: NASA/JPL/University of Arizona.
 ```
 
 Io has essentially no impact craters: the surface is resurfaced on $\sim$Myr timescales by ongoing volcanic deposition, making it the youngest surface in the solar system after Earth's seafloor.
@@ -148,7 +148,7 @@ Io's atmosphere is a tenuous, patchy mix of $\mathrm{SO_2}$ sublimating from fro
 :name: fig:io_tidal
 :width: 90%
 
-Comparison of two interior models for Io constrained by Juno gravity science. Left panel: a model **with** a global shallow magma ocean below a $\sim$50 km lithosphere. The measured Juno tidal Love number $k_2$ rules this model out. Right panel: a model **without** a global magma ocean, with an elastic lithosphere over a mostly solid silicate mantle. The dotted curves show $k_2$ as a function of dissipation parameter $Q$. {cite:t}`Park2024` conclude that the data **preclude a shallow magma ocean** of the kind invoked in earlier interpretations and require the rigid, mostly solid mantle of the right panel. The figure illustrates how external gravity measurements can directly distinguish solid from liquid interiors. Reproduced from {cite:t}`Park2024`.
+Comparison of two interior models for Io constrained by Juno gravity science. Left panel (a): a model **without** a global magma ocean, with an elastic lithosphere over a mostly solid silicate mantle. Right panel (b): a model **with** a global shallow magma ocean below a $\sim$50 km lithosphere. The dotted curves show $k_2$ as a function of dissipation parameter $Q$. The measured Juno tidal Love number $k_2$ rules out the right-panel model. {cite:t}`Park2024` conclude that the data **preclude a shallow magma ocean** of the kind invoked in earlier interpretations and require the rigid, mostly solid mantle of the left panel. The figure illustrates how external gravity measurements can directly distinguish solid from liquid interiors. Reproduced from {cite:t}`Park2024`.
 ```
 
 Earlier interpretations of Galileo magnetometer data had argued for a global, shallow magma ocean below Io's lithosphere.
@@ -721,7 +721,7 @@ The capture was probably accomplished early in the solar system's history, perha
 :name: fig:triton
 :width: 75%
 
-Voyager 2 mosaic of Triton's southern hemisphere. The "cantaloupe terrain" visible at high latitudes is unique in the solar system and probably reflects the rise and overturn of relatively warm subsurface ice. The lack of impact craters indicates a young surface, and dark plumes near the south pole are evidence of active nitrogen cryovolcanism. Image credit: NASA/JPL-Caltech.
+Triton's southern hemisphere as imaged by Voyager 2 in August 1989. Image credit: NASA/JPL-Caltech.
 ```
 
 Triton's surface, mapped by Voyager 2, is among the youngest in the outer solar system.

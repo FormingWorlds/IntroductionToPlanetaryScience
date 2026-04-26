@@ -37,7 +37,12 @@
       "Bash(fc-list:*)",
       "Bash(kpsewhich:*)",
       "Bash(luaotfload-tool:*)",
-      "Bash(open:*)"
+      "Bash(open:*)",
+      "Bash(mkdir -p ~/.claude/plans/ips_refs_audit_2026-04-26)",
+      "Bash(cp /tmp/missing_refs_L9_L14.md ~/.claude/plans/ips_refs_audit_2026-04-26/missing_refs_L9_L14.md)",
+      "Bash(cp /tmp/refs_audit/audit.py ~/.claude/plans/ips_refs_audit_2026-04-26/audit.py)",
+      "Bash(cp /tmp/refs_audit/all_pdfs.txt ~/.claude/plans/ips_refs_audit_2026-04-26/refs_repo_pdf_index.txt)",
+      "Bash(cp /tmp/refs_audit/L*.txt /tmp/refs_audit/unique_missing_keys.txt ~/.claude/plans/ips_refs_audit_2026-04-26/)"
     ]
   },
   "enableAllProjectMcpServers": true,

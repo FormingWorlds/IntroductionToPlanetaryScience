@@ -20,9 +20,33 @@
 \begin{document}
 
 % ── Title slide ─────────────────────────────────────────────
+% Custom title slide (overrides shared template) with stronger overlay
+% so the JWST broadband-light-curve background does not collide with
+% the title text and credit line.
+\makeatletter
 \begin{frame}[plain,noframenumbering]
-  \titlepage
+  \begin{tikzpicture}[remember picture, overlay]
+    \ipscontain{title_background}
+    \fill[ipsPrimary, opacity=0.85] (current page.north west) rectangle (current page.south east);
+    \node[anchor=south east, inner sep=0pt] at ([xshift=-6pt, yshift=4pt]current page.south east) {%
+      {\tiny\color{white!50} \ips@titlebgcredit}%
+    };
+  \end{tikzpicture}
+  \vfill
+  \begin{center}
+    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+    \vskip8pt
+    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
+    \vskip20pt
+    {\usebeamercolor[fg]{author}\insertauthor\par}
+    \vskip4pt
+    {\usebeamercolor[fg]{institute}\small\insertinstitute\par}
+    \vskip4pt
+    {\usebeamercolor[fg]{date}\small\insertdate\par}
+  \end{center}
+  \vfill
 \end{frame}
+\makeatother
 
 % ── Learning objectives ─────────────────────────────────────
 \begin{frame}{Learning Objectives}
@@ -89,7 +113,7 @@
 
 
 % ════════════════════════════════════════════════════════════
-\sectionimage{transit_geometry}{Transit geometry. Winn (2010)}
+\sectionimage{rossiter_mclaughlin}{Doppler signal of a transiting planet (Rossiter-McLaughlin). Triaud (2018)}
 \section{Detection Method 1: Radial Velocity}
 % ════════════════════════════════════════════════════════════
 
@@ -297,7 +321,7 @@
     \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{hr8799_discovery}
     \column{0.45\textwidth}
     \begin{itemize}
-      \item Marois et al.\ 2008. Keck + Gemini AO.
+      \item Marois et al.\ 2008. Keck + Gemini AO; sub-panels show three discovery epochs (HK 2004, CH$_4$ 2007, JKH 2008) confirming bound co-moving companions.
       \item Three planets initially, fourth added 2010.
       \item Each $\sim 5$--$10\,\Mjup$ at $14$--$70$ AU.
       \item Host: 30 Myr A-type. Planets still self-luminous and cooling.
@@ -422,7 +446,7 @@
     \includegraphics[width=\linewidth, height=0.7\textheight, keepaspectratio]{petigura_occurrence}
     \column{0.45\textwidth}
     \begin{itemize}
-      \item California-Kepler Survey, after stellar parameter refinement.
+      \item California-Kepler Survey, after stellar parameter refinement (sub-panels label distinct period-radius regimes).
       \item Small planets common at every period.
       \item Slight fall-off at longer periods (partly observational).
       \item Long-period flattening $\to$ Kepler had only 4-yr baseline.
@@ -531,13 +555,11 @@
   \begin{columns}[T]
     \column{0.5\textwidth}
     \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{owen_evaporation_valley}\\
-    \footnotesize Predicted radius valley
+    \footnotesize \textbf{Left}: predicted radius valley
     \column{0.5\textwidth}
     \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{owen_xuv_massloss}\\
-    \footnotesize Time evolution of radius + mass
+    \footnotesize \textbf{Right}: time evolution of radius + mass; saturated XUV phase out to $\sim 100$ Myr drives bimodal final distribution.
   \end{columns}
-  \vskip4pt
-  Top: ends in saturated XUV phase at 100 Myr; planets settle into bimodal distribution.
 \end{frame}
 
 \begin{frame}{Core-Powered Mass Loss: Same Outcome, Different Driver}
@@ -549,7 +571,7 @@
       \item Ginzburg+ 2018, Gupta+ 2019.
       \item Hot rocky core retains formation heat $\to$ basal flux into envelope drives slow outflow.
       \item No XUV needed.
-      \item Also produces bimodal radius distribution at $\sim 1.8\,\Rearth$.
+      \item \textbf{Bottom panel} (Rayleigh + tail): bimodal radius distribution at $\sim 1.8\,\Rearth$, mirroring photoevaporation.
       \item Both mechanisms likely operate.
     \end{itemize}
   \end{columns}
@@ -682,7 +704,7 @@
     \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{obliquity_distribution}
     \column{0.45\textwidth}
     \begin{itemize}
-      \item $\lambda$ vs $a/R_\star$, split by host spectral type.
+      \item $\lambda$ vs $a/R_\star$, with sub-panels per host spectral type (panel labels too small for back rows; trust the trend, not the tick labels).
       \item Cool stars ($T_\mathrm{eff} < 6250$ K): tight orbits aligned (tidal realignment).
       \item Hot stars: scattered $\lambda$.
       \item Wide scatter at large $a/R_\star$ implies a wide \emph{primordial} obliquity distribution.
@@ -744,12 +766,14 @@
   \[
     H = \frac{\kB T}{\mu m_u g}
   \]
-  Wavelength-dependent depth: $\delta(\lambda) = (R_p + n_H H(\lambda))^2 / R_\star^2$.
+  Wavelength-dependent depth: $\delta(\lambda) = (R_p + n_H(\lambda)\, H)^2 / R_\star^2$.
+  \vskip4pt
+  $H$ is wavelength-independent; $n_H(\lambda)$ is the number of scale heights probed (typically a few).
   \vskip4pt
   Quick scales for hot Jupiter ($T = 1500$ K, $\mu = 2.3$, $g = 25$ m s$^{-2}$):
   \begin{itemize}
     \item $H \approx 200$ km
-    \item Modulation per scale height: $\Delta\delta / \delta \approx 2 \times 10^{-2}$
+    \item Modulation across $\sim 5$ scale heights: $\Delta\delta / \delta \approx 2 \times 10^{-2}$
     \item Absolute modulation: $\sim$200 ppm $\to$ JWST-routine.
     \item Sub-Neptune: 10--100 ppm. Earth/M dwarf: $<$10 ppm.
   \end{itemize}
@@ -782,11 +806,11 @@
     \includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{wasp39b_so2_spectrum}
     \column{0.45\textwidth}
     \begin{itemize}
-      \item ERS programme target: 0.28 $\Mjup$ hot Saturn.
+      \item ERS target: 0.28 $\Mjup$ hot Saturn.
       \item Clean detection of \textbf{photochemical SO$_2$}.
-      \item SO$_2$ requires UV photolysis of H$_2$S; \emph{not} predicted by equilibrium chemistry.
-      \item Tsai+ 2023.
-      \item First unambiguous disequilibrium-photochemistry detection.
+      \item Four panels = four photochemistry codes; follow the SO$_2$ feature at $\sim 4\,\mu$m, not the panel labels.
+      \item SO$_2$ requires UV photolysis of H$_2$S; \emph{not} from equilibrium chemistry.
+      \item Tsai+ 2023. First unambiguous disequilibrium photochemistry.
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -894,11 +918,11 @@
     \column{0.45\textwidth}
     \begin{itemize}
       \item Sub-Neptune in HZ of M3 host.
-      \item Madhusudhan+ 2023 reported CH$_4$ + CO$_2$ + tentative DMS at $\sim 3\sigma$.
-      \item Interpreted as \textbf{hycean} world: H$_2$ atmosphere over global ocean.
-      \item Multiple groups have failed to reproduce DMS: Wogan+, Glein+ (2024).
-      \item DMS feature dependent on retrieval assumptions.
-      \item Debate remains open.
+      \item Madhusudhan+ 2023: CH$_4$ + CO$_2$ + tentative DMS ($\sim 3\sigma$).
+      \item Interpreted as \textbf{hycean}: H$_2$ atmosphere over ocean.
+      \item Wogan+ 2024: cannot reproduce DMS; mini-Neptune fit.
+      \item Glein+ 2024: geochemistry against habitable ocean.
+      \item Retrieval-dependent. Debate open.
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -994,6 +1018,7 @@
     \begin{itemize}
       \item \textbf{HWO} (NASA, 2040s): 6 m, $10^{-10}$ contrast, $\sim 25$ Earth analogues.
       \item \textbf{LIFE} (ESA concept): nulling interferometer, 4--18 $\mu$m thermal emission.
+      \item Figure: yield-sensitivity panels from Quanz+ 2022; trends matter, not the small numerical labels.
       \item \textbf{ELT class} (ground, 2028+): $39$, $24.5$, $30$ m. High-contrast + high-resolution NIR.
     \end{itemize}
   \end{columns}
@@ -1033,7 +1058,7 @@
 \begin{frame}[plain,noframenumbering]
   \begin{tikzpicture}[remember picture, overlay]
     \ipscontain{title_background}
-    \fill[ipsPrimary, opacity=0.70] (current page.north west) rectangle (current page.south east);
+    \fill[ipsPrimary, opacity=0.85] (current page.north west) rectangle (current page.south east);
   \end{tikzpicture}
   \vfill
   \begin{center}
