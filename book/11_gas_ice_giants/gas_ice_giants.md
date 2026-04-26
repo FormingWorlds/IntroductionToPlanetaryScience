@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to compare the internal structures and atmospheric dynamics of the four giant planets, describe the diversity of their satellite systems, derive the Roche limit and apply it to Saturn's rings, and use the gas giant / ice giant dichotomy as a natural laboratory for exoplanet analogues.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 11 (PDF)](../_static/slides/lecture11.pdf)
+```
+
 The four giant planets of our solar system together hold more than 99.5% of the planetary mass beyond the Sun.
 They are not, however, four examples of the same kind of object.
 Jupiter and Saturn are dominated by hydrogen and helium and are best thought of as failed stars whose envelopes never collapsed gravitationally.
