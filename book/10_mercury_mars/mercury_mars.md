@@ -5,6 +5,10 @@
 **Learning objectives:** By the end of this lecture, you will be able to explain Mercury's unusual spin-orbit resonance and metal-rich interior, reconstruct the geological history of Mars across its three main epochs, derive and apply the Jeans escape flux formula, interpret the seismic structure of Mars from {ref}`InSight <lecture08>` data, and use Mercury and Mars as limiting cases that isolate the roles of planet size, distance, and timing in rocky-planet evolution.
 ```
 
+```{seealso}
+**Slides:** [Download Lecture 10 (PDF)](../_static/slides/lecture10.pdf)
+```
+
 ## Why Mercury and Mars together?
 
 In {ref}`lecture09` we treated Earth and Venus as a near-twin pair: very similar in mass and bulk composition, yet wildly divergent in surface conditions. This lecture takes the opposite approach. Mercury and Mars are nature's *limiting cases* for rocky planets in our solar system. Mercury is the smallest and the densest, sitting closest to the Sun and stripped of almost all volatiles. Mars is roughly half the diameter of Earth, sits at the outer edge of the classical habitable zone, and preserves a sedimentary and atmospheric record that points to a wetter, warmer past. Together they bracket Earth and Venus on every axis that matters for terrestrial-planet evolution: size, heliocentric distance, volatile inventory, and dynamo longevity.

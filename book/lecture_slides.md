@@ -19,7 +19,7 @@ For visual material in classroom format, use the slide decks.
 | 7 | {ref}`lecture07` | [Download (PDF)](_static/slides/lecture07.pdf) |
 | 8 | {ref}`lecture08` | [Download (PDF)](_static/slides/lecture08.pdf) |
 | 9 | {ref}`lecture09` | [Download (PDF)](_static/slides/lecture09.pdf) |
-| 10 | Lecture 10 | _coming soon_ |
+| 10 | {ref}`lecture10` | [Download (PDF)](_static/slides/lecture10.pdf) |
 | 11 | Lecture 11 | _coming soon_ |
 | 12 | Lecture 12 | _coming soon_ |
 | 13 | Lecture 13 | _coming soon_ |
