@@ -331,7 +331,7 @@ This means convection transports heat roughly 200 times more efficiently than co
 :width: 600px
 :align: center
 
-Schematic Nusselt-Rayleigh scaling. Below the critical Rayleigh number $\mathrm{Ra}_c\approx 1708$ heat is conducted only ($\mathrm{Nu}=1$); above it the boundary-layer scaling $\mathrm{Nu}\propto\mathrm{Ra}^{1/3}$ applies (Eq. {eq}`eq:nu-ra-scaling`). Earth's mantle, with $\mathrm{Ra}\sim 10^7\text{--}10^8$, transports heat $\sim 100$ to $200$ times more efficiently than conduction alone. Custom plot.
+Schematic Nusselt-Rayleigh scaling. Below the critical Rayleigh number $\mathrm{Ra}_c\approx 1708$ heat is conducted only ($\mathrm{Nu}=1$); above it the boundary-layer scaling $\mathrm{Nu}\propto\mathrm{Ra}^{1/3}$ applies (Eq. {eq}`eq:nu-ra-scaling`). Earth's mantle, with $\mathrm{Ra}\sim 10^7\text{--}10^8$, transports heat $\sim 200$ to $500$ times more efficiently than conduction alone under this idealised isoviscous scaling. Custom plot.
 ```
 
 
@@ -427,7 +427,7 @@ The spatial pattern of heat flow (highest at mid-ocean ridges, decreasing with t
 :width: 700px
 :align: center
 
-Global surface heat-flow map of Earth (mW m$^{-2}$). The map combines a half-space cooling model in regions of young oceanic crust with the global compilation of $\sim 38{,}000$ borehole heat-flow measurements from {cite:p}`Lucazeau2019`. Mid-ocean ridges (orange) are the dominant heat-loss feature; cratonic continental shields (dark blue) are the coldest. Total integrated heat loss is $\sim 47$ TW. Credit: Fabio Crameri, Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), based on data from {cite:p}`Lucazeau2019`.
+Global surface heat-flow map of Earth (mW m$^{-2}$). The map combines a half-space cooling model in regions of young oceanic crust with the global compilation of $\sim 70{,}000$ borehole heat-flow measurements from {cite:p}`Lucazeau2019`. Mid-ocean ridges (orange) are the dominant heat-loss feature; cratonic continental shields (dark blue) are the coldest. Total integrated heat loss is $\sim 47$ TW {cite:p}`DaviesDavies2010`; Lucazeau et al. (2019) report 40--42 TW from direct measurements alone. Credit: Fabio Crameri, Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), with the underlying dataset from {cite:p}`Lucazeau2019`.
 ```
 
 ```{figure} figures/q_vs_seafloor_age.avif
@@ -445,7 +445,7 @@ Surface heat flux $q$ as a function of seafloor age, predicted by the half-space
 | Earth | ~90 | ~47 | Radiogenic + primordial |
 | Moon | ~10–15 | ~0.3 | Primordial (largely cooled) |
 | Mars | ~15–25 (estimated) | ~3–5 | Radiogenic + primordial |
-| Io | ~2000–3000 | ~$10^{14}$ W | Tidal dissipation |
+| Io | ~2000–2500 | ~$10^{14}$ W | Tidal dissipation |
 
 The Moon and Mars have much lower surface heat flow than Earth, reflecting their smaller sizes (faster cooling through their conductive cooling timescale), the absence of plate tectonics (stagnant lid), and their smaller inventories of heat-producing elements. Io stands out dramatically: its surface heat flux is 20–30 times higher than Earth's, entirely driven by tidal heating.
 
@@ -504,8 +504,8 @@ The Laplace resonance: the inner three Galilean satellites Io, Europa, and Ganym
 ```
 
 The consequences for Io are dramatic:
-- Surface heat flux of ~2–3 W m$^{-2}$, about **30 times** higher than Earth's
-- Over 400 active volcanic centres identified
+- Surface heat flux of ~2–2.5 W m$^{-2}$, about **20–30 times** higher than Earth's
+- 343 active volcanic centres catalogued from Galileo, New Horizons, and ground-based monitoring {cite:p}`Davies2024PSJ`
 - The entire surface is resurfaced by lava flows on a ~Myr timescale, so there are essentially no impact craters
 - Internal structure consistent with a partially molten mantle (asthenosphere) {cite:p}`Keane2023`
 
@@ -514,7 +514,7 @@ The consequences for Io are dramatic:
 :width: 500px
 :align: center
 
-Galileo full-disk colour composite of Io, showing the global distribution of volcanic centres, lava flows, and yellow-red sulfur deposits. Over 400 active volcanic centres have been catalogued; the entire surface is resurfaced by lava on a $\sim 1$ Myr timescale, leaving essentially no impact craters. Credit: NASA/JPL/University of Arizona, public domain.
+Galileo full-disk colour composite of Io, showing the global distribution of volcanic centres, lava flows, and yellow-red sulfur deposits. {cite:t}`Davies2024PSJ` catalogue 343 active volcanic centres from combined Galileo, New Horizons, and ground-based monitoring; the entire surface is resurfaced by lava on a $\sim 1$ Myr timescale, leaving essentially no impact craters. Credit: NASA/JPL/University of Arizona, public domain.
 ```
 
 ```{figure} figures/io_tvashtar_plume.avif
@@ -535,9 +535,9 @@ Global distribution of Io's volcanic hotspots projected on a basemap, with each 
 
 ### Enceladus: a tiny moon with a big secret
 
-Saturn's small moon **Enceladus** (radius 252 km) provides another dramatic example of tidal heating. In 2005, the Cassini spacecraft discovered jets of water ice and vapour erupting from four parallel fractures (dubbed "tiger stripes") near the south pole {cite:p}`Porco2006`. Subsequent measurements showed that these jets carry ~5–15 GW of thermal power {cite:p}`Howett2011`, far more than can be explained by radioactive decay alone for such a small body.
+Saturn's small moon **Enceladus** (radius 252 km) provides another dramatic example of tidal heating. In 2005, the Cassini spacecraft discovered jets of water ice and vapour erupting from four parallel fractures (dubbed "tiger stripes") near the south pole {cite:p}`Porco2006`. Subsequent CIRS far-infrared measurements showed that these jets carry $\sim 16$ GW of thermal power ($15.8 \pm 3.1$ GW; {cite:t}`Howett2011`), revising upward an earlier $\sim 6$ GW estimate, and far more than can be explained by radioactive decay alone for such a small body.
 
-The heat source is tidal dissipation, driven by Enceladus's 2:1 orbital resonance with the larger moon Dione. The heating is sufficient to maintain a **global subsurface ocean** of liquid water beneath an ice shell ~20–30 km thick. The erupted material from the tiger stripes feeds Saturn's E ring and provides direct samples of the subsurface ocean: analysis by Cassini's instruments revealed the presence of salts, silica nanoparticles (indicating hydrothermal activity on the ocean floor), and even complex organic molecules.
+The heat source is tidal dissipation, driven by Enceladus's 2:1 orbital resonance with the larger moon Dione. The heating is sufficient to maintain a **global subsurface ocean** of liquid water beneath an ice shell ~15–25 km thick. The erupted material from the tiger stripes feeds Saturn's E ring and provides direct samples of the subsurface ocean: analysis by Cassini's instruments revealed the presence of salts, silica nanoparticles (indicating hydrothermal activity on the ocean floor), and even complex organic molecules.
 
 ```{figure} figures/enceladus_plumes.avif
 :name: fig:enceladus-plumes
@@ -552,14 +552,14 @@ Geysers of water ice erupt from the "tiger stripe" fractures near the south pole
 :width: 400px
 :align: center
 
-Cassini CIRS thermal-emission map of Enceladus's south polar region (yellow/orange overlay) draped on a monochrome basemap. The hottest emission is concentrated along the four "tiger stripe" fractures and falls off rapidly with distance. Total integrated thermal power along the stripes is $\sim 5\text{--}15$ GW {cite:p}`Howett2011`, far above any plausible radiogenic budget for a body of this size. Credit: NASA/JPL/GSFC/SwRI/SSI, public domain.
+Cassini CIRS thermal-emission map of Enceladus's south polar region (yellow/orange overlay) draped on a monochrome basemap. The hottest emission is concentrated along the four "tiger stripe" fractures and falls off rapidly with distance. Total integrated thermal power along the stripes is $\sim 16$ GW ($15.8 \pm 3.1$ GW; {cite:t}`Howett2011`), revising upward the earlier $\sim 6$ GW estimate from the FP3-only Spencer et al. 2006 analysis, and far above any plausible radiogenic budget for a body of this size. Credit: NASA/JPL/GSFC/SwRI/SSI, public domain.
 ```
 
 ### Europa and Titan: subsurface oceans
 
 Tidal heating is also implicated in maintaining subsurface oceans on other outer solar system moons {cite:p}`NimmoPappalardo2016`:
 
-- **Europa** (Jupiter): The Laplace resonance forces Europa's eccentricity, generating tidal heat (though less than Io's, because Europa is further from Jupiter). Magnetic field measurements by the Galileo spacecraft, combined with gravity data, strongly suggest a global liquid water ocean ~100 km deep beneath an ice shell of ~10–30 km.
+- **Europa** (Jupiter): The Laplace resonance forces Europa's eccentricity, generating tidal heat (though less than Io's, because Europa is further from Jupiter). Magnetic field measurements by the Galileo spacecraft, combined with gravity data, strongly suggest a global liquid water ocean ~100 km deep beneath an ice shell of ~15–25 km.
 
 ```{figure} figures/europa_interior_cutaway.avif
 :name: fig:europa-interior-tidal
@@ -578,7 +578,7 @@ These "ocean worlds" are among the most promising targets in the search for extr
 
 NASA's InSight mission (2018–2022) provided the first direct seismological measurements of another planet, fundamentally advancing our understanding of Mars's thermal state. Seismic wave travel times revealed Mars's core radius ($\sim$1830 km), mantle structure, and crustal thickness {cite:p}`Stahler2021,Khan2021` (see also {ref}`lecture08`). The mission's heat flow probe (HP$^3$) was unable to penetrate to the required depth due to unexpected soil properties, but the attempt provided valuable constraints on regolith thermal conductivity and near-surface heat flow.
 
-Tidal heating models for icy moons have been refined using updated rheological models and orbital evolution calculations {cite:p}`Keane2023`. New models suggest that tidal dissipation in Enceladus may be concentrated in its ice shell rather than its rocky core, affecting predictions for the longevity and temperature of its subsurface ocean. For Europa, estimates of ice shell thickness have been narrowed to $\sim$15–25 km using multiple independent constraints, with implications for the Europa Clipper mission {cite:p}`HowellPappalardo2020` (see also {ref}`lecture14`).
+Tidal heating models for icy moons have been refined using updated rheological models and orbital evolution calculations {cite:p}`NimmoPappalardo2016`. Recent work suggests that tidal dissipation in Enceladus may be concentrated in its ice shell rather than its rocky core, affecting predictions for the longevity and temperature of its subsurface ocean. For Europa, estimates of ice shell thickness have been narrowed to $\sim$15–25 km using multiple independent constraints, with implications for the Europa Clipper mission {cite:p}`HowellPappalardo2020` (see also {ref}`lecture14`).
 
 Updated analyses of chondritic meteorites continue to refine our understanding of the radiogenic heating budget available during early solar system evolution {cite:p}`Lichtenberg2023`, with implications for the thermal history of planetesimals and the onset of differentiation ({ref}`lecture04`).
 
