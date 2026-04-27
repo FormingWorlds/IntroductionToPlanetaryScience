@@ -106,7 +106,7 @@ Composite of protoplanetary disks observed at $\sim 5$ AU resolution by the ALMA
 
 ### Disk lifetimes
 
-Infrared excess surveys of young stellar clusters at different ages show that the fraction of stars retaining optically thick inner disks declines from $\sim 80$% at 1 Myr to $< 10$% by 10 Myr {cite:p}`Haisch2001`. The median disk lifetime is roughly **3–5 Myr**, with significant scatter. This sets a hard deadline for gas giant formation: if a planet's core does not grow large enough to capture a gaseous envelope before the disk disperses, it will remain a rocky or icy body.
+Infrared excess surveys of young stellar clusters at different ages show that the fraction of stars retaining optically thick inner disks declines from $\sim 80$% at 1 Myr to $< 10$% by $\sim 6$ Myr {cite:p}`Haisch2001`. The median disk lifetime is roughly **3–5 Myr**, with significant scatter. This sets a hard deadline for gas giant formation: if a planet's core does not grow large enough to capture a gaseous envelope before the disk disperses, it will remain a rocky or icy body.
 
 Disk dispersal is driven by a combination of viscous accretion onto the star, photoevaporation by stellar ultraviolet and X-ray radiation, and possibly magnetohydrodynamic winds.
 
@@ -149,7 +149,7 @@ Grain size as a function of orbital distance, with the classical growth barriers
 
 The solution to the radial drift problem appears to be **collective effects**. When the local dust-to-gas mass ratio approaches or exceeds unity (which can happen through settling to the midplane and accumulation at pressure bumps), the drag interaction between dust and gas changes qualitatively. Instead of all particles drifting inward, they can spontaneously clump through a process called the **streaming instability** {cite:p}`Johansen2007`.
 
-In the streaming instability, particles that happen to be concentrated accelerate the local gas toward the Keplerian velocity (reducing the headwind), which attracts more drifting particles from further out. This positive feedback loop creates dense filaments and clumps of pebbles. When these clumps become sufficiently dense, they collapse under their own gravity to form **planetesimals**, solid bodies with radii of $\sim 50$–$500$ km, essentially skipping the problematic centimetre-to-metre size range entirely.
+In the streaming instability, particles that happen to be concentrated accelerate the local gas toward the Keplerian velocity (reducing the headwind), which attracts more drifting particles from further out. This positive feedback loop creates dense filaments and clumps of pebbles. When these clumps become sufficiently dense, they collapse under their own gravity to form **planetesimals**, solid bodies with radii of $\sim 50$–$500$ km, essentially bypassing the difficult metre-to-kilometre growth step that direct sticking cannot achieve.
 
 ```{figure} figures/simon2016_streaming.avif
 :name: fig:streaming
@@ -207,7 +207,7 @@ Runaway growth is self-limiting. As the largest bodies grow, they gravitationall
 The dominant model for giant planet formation is the **core accretion** model {cite:p}`Pollack1996`. In this scenario:
 
 1. A solid core grows by accreting planetesimals and pebbles in the outer disk (beyond the snow line, where more solid material is available).
-2. Once the core reaches a critical mass of $\sim 5$–$15$ $\Mearth$, its gravity becomes strong enough to bind a substantial gas envelope from the surrounding disk.
+2. Once the core reaches a critical mass of $\sim 10$–$20$ $\Mearth$, its gravity becomes strong enough to bind a substantial gas envelope from the surrounding disk.
 3. The envelope contracts and cools, allowing more gas to flow in, leading to a phase of rapid, runaway gas accretion. Within $\sim 10^5$ years, the planet can accumulate hundreds of Earth masses of hydrogen and helium.
 4. Accretion ceases when the planet opens a gap in the disk or when the disk itself dissipates.
 
@@ -218,7 +218,7 @@ This model naturally explains why Jupiter and Saturn are massive (they formed in
 :width: 600px
 :align: center
 
-Mass evolution of a forming giant planet in the canonical core-accretion picture {cite:p}`Pollack1996`. Phase 1: rapid solid-core growth by planetesimal and pebble accretion. Phase 2: slow envelope contraction at near-constant total mass. Phase 3: runaway gas accretion once the gas envelope mass equals the core mass ($\sim 10\,\Mearth$), leading to a Jupiter-mass object on a $\sim 10^5$ yr timescale. Adapted from {cite:t}`Drazkowska2023`.
+Mass evolution of a forming giant planet in the canonical core-accretion picture {cite:p}`Pollack1996`. Phase 1: rapid solid-core growth by planetesimal and pebble accretion. Phase 2: slow envelope contraction at near-constant total mass. Phase 3: runaway gas accretion once the gas envelope mass equals the core mass ($\sim 10$–$20\,\Mearth$ for the nominal Jupiter case), leading to a Jupiter-mass object on a $\sim 10^5$ yr timescale. Adapted from {cite:t}`Drazkowska2023`.
 ```
 
 ### Gravitational instability: an alternative pathway
@@ -583,19 +583,19 @@ After the gas disk has dispersed, the giant planets can still undergo migration 
 :width: 600px
 :align: center
 
-Evolution of the giant planets through the Nice-model instability. Left panel: semi-major axes vs time, beginning compact (Jupiter at $\sim 5.5$ AU, Neptune at $\sim 12$ AU). Right panel: the Saturn / Jupiter period ratio, showing the rapid 2:1 mean-motion resonance crossing that triggers the instability. The crossing scatters Uranus and Neptune outward to their present orbits and disrupts the primordial trans-Neptunian planetesimal disk {cite:p}`Tsiganis2005,Nesvorny2018`.
+Evolution of the giant planets through the Nice-model instability. Left panel: semi-major axes vs time, beginning compact (Jupiter at $\sim 5.4$ AU, Saturn at $\sim 8.7$ AU, Uranus at $\sim 15$ AU, Neptune at $\sim 20$ AU). Right panel: the Saturn / Jupiter period ratio, showing the rapid 2:1 mean-motion resonance crossing that triggers the instability. The crossing scatters Uranus and Neptune outward to their present orbits and disrupts the primordial trans-Neptunian planetesimal disk {cite:p}`Nesvorny2018`. Note that the original Tsiganis et al. 2005 simulation used a slightly more compact configuration (Neptune at $\sim 13.5$–$17$ AU); the figure shown is from {cite:t}`Nesvorny2018`.
 ```
 
 ### The Grand Tack
 
-The **Grand Tack hypothesis** {cite:p}`Walsh2011` proposes that Jupiter first migrated inward to $\sim 1.5$ AU via Type II migration, then reversed course when Saturn caught up and became trapped in a mean-motion resonance: the combined torques from their mutual interaction with the disk drove both planets outward ("tacking," as in sailing). This inward-then-outward migration would have scattered and depleted material in the inner solar system, potentially explaining the small mass of Mars and the compositional structure of the asteroid belt.
+The **Grand Tack hypothesis** {cite:p}`Walsh2011` proposes that Jupiter first migrated inward to $\sim 1.5$ AU via Type II migration, then reversed course when Saturn caught up and became trapped in the **2:3 mean-motion resonance** with Jupiter: the combined torques from their mutual interaction with the disk drove both planets outward ("tacking," as in sailing). This inward-then-outward migration would have scattered and depleted material in the inner solar system, potentially explaining the small mass of Mars and the compositional structure of the asteroid belt.
 
 ```{figure} figures/walsh2011_grand_tack.avif
 :name: fig:grand-tack
 :width: 600px
 :align: center
 
-The Grand Tack scenario from a Walsh et al. (2011) simulation. Top panel: mass evolution of the four giant planets during the disk phase. Bottom panel: semi-major axis evolution; each curve is labelled with the planet's name on the track. Jupiter migrates inward to $\sim 1.5$ AU via Type II migration; once Saturn catches up and the two planets become trapped in a mutual mean-motion resonance, the combined torques reverse the migration and both planets move outward. The episode depletes solid material in the inner disk, with consequences for Mars's small mass and the asteroid belt's compositional structure. Reproduced from {cite:t}`Walsh2011`.
+The Grand Tack scenario from a Walsh et al. (2011) simulation. Top panel: mass evolution of the four giant planets during the disk phase. Bottom panel: semi-major axis evolution; each curve is labelled with the planet's name on the track. Jupiter migrates inward to $\sim 1.5$ AU via Type II migration; once Saturn catches up and the two planets become trapped in their mutual 2:3 mean-motion resonance, the combined torques reverse the migration and both planets move outward. The episode depletes solid material in the inner disk, with consequences for Mars's small mass and the asteroid belt's compositional structure. Reproduced from {cite:t}`Walsh2011`.
 ```
 
 ### Observational evidence for migration
