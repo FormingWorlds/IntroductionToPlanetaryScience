@@ -190,7 +190,7 @@ ALMA 1.3 mm continuum image of the protoplanetary disk around the young star HL 
 :width: 500px
 :align: center
 
-Discovery transit of HD 209458 b, the first transiting exoplanet ever detected. The relative stellar flux drops by about 1.7% as the planet crosses the disk of its host star, recovering symmetrically afterwards. The depth gives the planet-to-star radius ratio via $\Delta F / F \approx (R_p / R_\star)^2$, and the duration constrains the orbital geometry. Credit: {cite:t}`Charbonneau2000`.
+Discovery transit of HD 209458 b, the first transiting exoplanet ever detected. The relative stellar flux drops by about 1.4% as the planet crosses the disk of its host star, recovering symmetrically afterwards. The depth gives the planet-to-star radius ratio via $\Delta F / F \approx (R_p / R_\star)^2$, and the duration constrains the orbital geometry. Credit: {cite:t}`Charbonneau2000`.
 ```
 
 Today, planetary science integrates astronomy, physics, chemistry, geology, and atmospheric science. It spans scales from dust grains in protoplanetary disks to the demographics of planetary systems across the Galaxy.
@@ -419,7 +419,7 @@ The table below lists landmark missions that have shaped our understanding of th
 | New Horizons | NASA | 2015 | Pluto | First Pluto flyby; revealed geological complexity |
 | Hayabusa2 | JAXA | 2018–2020 | Ryugu | Returned samples from a carbonaceous asteroid |
 | Perseverance | NASA | 2021– | Mars | Sample caching for future return; Ingenuity helicopter |
-| JWST | NASA/ESA/CSA | 2022– | Exoplanets | Atmospheric characterisation of exoplanets |
+| JWST | NASA/ESA/CSA | 2021– | Exoplanets | Atmospheric characterisation of exoplanets |
 | Europa Clipper | NASA | 2024– | Europa | Investigating habitability of Europa's ocean |
 
 ```{figure} figures/cassini_saturn.avif
