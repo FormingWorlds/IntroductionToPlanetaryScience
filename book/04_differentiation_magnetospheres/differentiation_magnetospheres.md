@@ -144,7 +144,7 @@ The most powerful tool for dating core formation is the **hafnium–tungsten** (
 The magnitude of the ${}^{182}\mathrm{W}$ excess in a planet's mantle, expressed as $\varepsilon^{182}\mathrm{W}$ (parts per 10,000 deviation from chondritic), therefore acts as a **clock** for core formation {cite:p}`Kleine2009`:
 
 - **Earth:** $\varepsilon^{182}\mathrm{W} \approx +2$, indicating that the bulk of core formation was completed within approximately **30–60 Myr** after solar system formation.
-- **Mars:** $\varepsilon^{182}\mathrm{W} \approx +0.4 \pm 0.1$ in enriched shergottites, indicating early and rapid core formation within approximately **10–20 Myr**. This is consistent with Mars being a smaller body that completed its accretion faster than Earth {cite:p}`Kruijer2017Mars`.
+- **Mars:** the bulk martian mantle has $\varepsilon^{182}\mathrm{W} \approx +0.37 \pm 0.05$, estimated from enriched shergottites, whose source Hf/W ratio is closest to the bulk-mantle value (depleted shergottites can reach $\varepsilon^{182}\mathrm{W} \approx +1.8$). This indicates that Mars accretion and silicate differentiation were complete within approximately **20–40 Myr**, with core formation finishing within the first $\sim 10$ Myr. Mars is consistent with a smaller body that completed its accretion faster than Earth {cite:p}`Kruijer2017Mars`.
 - **Moon:** The Moon's $\varepsilon^{182}\mathrm{W}$ is close to Earth's, consistent with formation from debris of the giant impact.
 
 #### Worked example: from $\varepsilon^{182}\mathrm{W}$ to a core-formation age
@@ -494,11 +494,11 @@ The magnetic field is not static. It varies on timescales from years to millions
 
 On longer timescales, the geomagnetic field undergoes **polarity reversals**: the north and south magnetic poles swap. Key facts about reversals:
 
-- The current reversal rate is roughly **4–5 reversals per million years**, though this rate has varied significantly over geological time.
+- The average reversal rate over the past few million years is roughly **4–5 reversals per million years**, though this rate has varied significantly over geological time and the present epoch (the Brunhes normal chron, since $\sim 780$ ka) has not seen a reversal.
 - A reversal takes approximately **1000–10,000 years** to complete, during which the field weakens, becomes complex (multipolar), and re-establishes in the opposite polarity.
-- During the Cretaceous Normal Superchron (~84–124 Ma), the field maintained a single polarity for about 40 million years.
+- During the Cretaceous Normal Superchron (~83–121 Ma), the field maintained a single polarity for about 38 million years.
 
-The most compelling evidence for reversals comes from **magnetic stripes** on the ocean floor: as new oceanic crust forms at mid-ocean ridges, the magnetic minerals record the ambient field direction. The result is a symmetric pattern of normally and reversely magnetised stripes on either side of the ridge, a key piece of evidence for both seafloor spreading and geomagnetic reversals {cite:p}`Tarduno2010`.
+The most compelling evidence for reversals comes from **magnetic stripes** on the ocean floor: as new oceanic crust forms at mid-ocean ridges, the magnetic minerals record the ambient field direction. The result is a symmetric pattern of normally and reversely magnetised stripes on either side of the ridge, a key piece of evidence for both seafloor spreading and geomagnetic reversals.
 
 ```{figure} figures/geomagnetic_polarity_timescale.avif
 :name: fig:geomagnetic-polarity
@@ -608,7 +608,7 @@ The contrast between Mercury and Ganymede follows from applying Eq. {eq}`eq:dyna
 | Quantity | **Mercury** | **Ganymede** |
 |---|:---:|:---:|
 | Planet radius $R_\mathrm{planet}$ | $2440$ km | $2634$ km |
-| Core radius $R_\mathrm{core}$ | $\sim 2020$ km | $\sim 700$ km |
+| Core radius $R_\mathrm{core}$ | $\sim 2020$ km {cite:p}`MargotHauck2018` | $\sim 700$ km |
 | Liquid-shell thickness $D$ | $\sim 200$–$400$ km (narrow shell above a solidifying inner core) | $\sim 300$ km (liquid iron sandwiched between solid iron inner core and rocky mantle) |
 | Buoyancy driver | Latent heat + light-element release from iron snow / inner-core growth | Inner-core growth + tidal-heat modulation |
 | Surface dipole $B_\mathrm{dip}$ | $\sim 0.3\ \mu$T | $\sim 0.7\ \mu$T |
@@ -727,11 +727,11 @@ NASA's Juno mission has produced the most detailed map of Jupiter's magnetic fie
 
 ### InSight: no present-day Mars dynamo
 
-NASA's **InSight** lander, operating on the Martian surface from 2018 to 2022, carried a magnetometer that recorded the local crustal field at Elysium Planitia. The measurements did not detect any coherent time-varying planetary-scale dipole component {cite:p}`Stahler2021`. Combined with the InSight seismic inferences of a fully liquid but light-element-rich core (core radius $\approx 1830$ km, mean density $\approx 6.0$ g cm$^{-3}$), this supports the scenario that Mars's dynamo shut off early because compositional buoyancy from inner-core growth never began and thermal convection alone could not sustain the dynamo once the initial heat-of-accretion budget was exhausted. The exact age of the dynamo shutdown remains uncertain; the leading estimate is $\sim 4.1$ Gyr based on the youngest unambiguously magnetised crust {cite:p}`Acuna1999,Connerney2005`.
+NASA's **InSight** lander, operating on the Martian surface from 2018 to 2022, carried a magnetometer that recorded the local crustal field at Elysium Planitia. The measurements did not detect any coherent time-varying planetary-scale dipole component {cite:p}`Mittelholz2020`. Combined with InSight seismic inferences of a fully liquid but light-element-rich core (core radius $\approx 1830$ km, mean density $\approx 6.0$ g cm$^{-3}$) {cite:p}`Stahler2021`, this supports the scenario that Mars's dynamo shut off early because compositional buoyancy from inner-core growth never began and thermal convection alone could not sustain the dynamo once the initial heat-of-accretion budget was exhausted. The exact age of the dynamo shutdown remains uncertain; the leading estimate is $\sim 4.1$ Gyr based on the youngest unambiguously magnetised crust {cite:p}`Acuna1999,Connerney2005`.
 
 ### The lunar dynamo paradox
 
-Paleomagnetic measurements of Apollo samples have established that the Moon itself once hosted a core dynamo. The remanent magnetisation of lunar rocks returned by Apollo 15, 16, and 17 implies paleofield strengths of tens of microtesla at $3.5$–$3.9$ Gyr, dropping to less than $5\,\mu$T by $\sim 2.5$ Gyr {cite:p}`Weiss2014`. A microtesla-scale field at a body with only $\sim 400$ km liquid core radius is difficult to generate by purely thermal convection; proposed mechanisms include differential rotation of the core driven by tidal or impact-induced torques, and compositional buoyancy from core crystallisation similar to the scenarios proposed for Mercury and Ganymede ({numref}`fig:dynamo-scaling`).
+Paleomagnetic measurements of Apollo samples have established that the Moon itself once hosted a core dynamo. The remanent magnetisation of lunar rocks returned by Apollo 15, 16, and 17 implies paleofield strengths of tens of microtesla in the high-field epoch from $\sim 3.85$ to $\sim 3.56$ Ga (mean $\sim 77\,\mu$T), dropping below $\sim 7\,\mu$T by $\sim 3.3$ Ga {cite:p}`Weiss2014`. A microtesla-scale field at a body with only $\sim 400$ km liquid core radius is difficult to generate by purely thermal convection; proposed mechanisms include differential rotation of the core driven by tidal or impact-induced torques, and compositional buoyancy from core crystallisation similar to the scenarios proposed for Mercury and Ganymede ({numref}`fig:dynamo-scaling`).
 
 ### The Earth inner-core age debate
 
@@ -739,7 +739,7 @@ Earth's inner core is widely thought to have nucleated sometime in the past $\si
 
 ### BepiColombo, JUICE, and Europa Clipper
 
-ESA/JAXA's **BepiColombo** mission has completed multiple Mercury flybys en route to orbital insertion in late $2026$, providing new measurements of Mercury's magnetosphere. Preliminary data confirm Mercury's weak but active dipolar field and have revealed unexpected features in the magnetospheric structure, including the role of sodium ions in magnetospheric dynamics {cite:p}`Anderson2012`. Once in orbit, BepiColombo's simultaneous operation of two orbiters (the Mercury Planetary Orbiter and Mio) will allow direct correlation of in-situ magnetospheric measurements with surface and interior constraints.
+ESA/JAXA's **BepiColombo** mission has completed multiple Mercury flybys en route to orbital insertion in late $2026$, providing new measurements of Mercury's magnetosphere. Preliminary data confirm Mercury's weak but active dipolar field. Once in orbit, BepiColombo's simultaneous operation of two orbiters (the Mercury Planetary Orbiter and Mio) will allow direct correlation of in-situ magnetospheric measurements with surface and interior constraints {cite:p}`Benkhoff2021`.
 
 ESA's **JUICE** mission, en route to the Jupiter system, will conduct the first detailed investigation of Ganymede's intrinsic magnetic field, the only moon in the solar system known to generate its own dynamo. Understanding how a body as small as Ganymede ($R = 2634$ km) maintains an active dynamo remains an open question in planetary magnetism, with implications for the thermal state and composition of its iron core.
 
