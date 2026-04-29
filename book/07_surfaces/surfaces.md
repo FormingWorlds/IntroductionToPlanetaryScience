@@ -138,7 +138,7 @@ The more complete **pi-scaling framework** of {cite:p}`Holsapple1993` parameteri
 :width: 550px
 :align: center
 
-Schematic of crater pi-scaling, after {cite:t}`Holsapple1993`. The cratering efficiency $\pi_D = D\,(\rho/m)^{1/3}$ is plotted against the gravity-scaled impactor size $\pi_2 = g\,a/v^2$. At small $\pi_2$ (small craters, laboratory impacts), the target's tensile strength $Y$ sets the crater size and $\pi_D$ is independent of $\pi_2$ (red dashed line, **strength regime**). At large $\pi_2$ (planetary-scale craters), gravity confines the ejecta and $\pi_D \propto \pi_2^{-\mu/(2+\mu)}$ (blue dashed line, **gravity regime**). The blackboard derivation (Eq. {eq}`eq:crater-scaling`) recovers the gravity-regime branch in the limit $\mu \to 1$. Curves shown for a competent rocky target ($\mu = 0.55$); the qualitative shape is universal.
+Schematic of crater pi-scaling, after {cite:t}`Holsapple1993`. The cratering efficiency $\pi_D = D\,(\rho/m)^{1/3}$ is plotted against the gravity-scaled impactor size $\pi_2 = g\,a/v^2$. At small $\pi_2$ (small craters, laboratory impacts), the target's tensile strength $Y$ sets the crater size and $\pi_D$ is independent of $\pi_2$ (red dashed line, **strength regime**). At large $\pi_2$ (planetary-scale craters), gravity confines the ejecta and $\pi_D \propto \pi_2^{-\mu/(2+\mu)}$ (blue dashed line, **gravity regime**). The blackboard derivation (Eq. {eq}`eq:crater-scaling`) implicitly assumes that the impactor enters only through its kinetic energy, recovering the **energy-scaling upper bound** ($\mu = 2/3$) of Holsapple's framework; real geological materials have $\mu \approx 0.41$–$0.55$ (Table 1 of {cite:t}`Holsapple1993`), giving a slightly weaker dependence of crater size on impact energy than the simple $D \sim E^{1/4}$ result implies. Curves shown for a competent rocky target ($\mu = 0.55$, applicable to soft and hard rock; sand and dry soil have $\mu \approx 0.41$); the qualitative shape is universal.
 ```
 
 
@@ -300,7 +300,7 @@ Earth's major tectonic plates and their boundaries. **Divergent boundaries** (re
 
 All other terrestrial bodies in the solar system operate in the **stagnant-lid regime**: the mantle convects beneath a single, rigid, immobile lithospheric lid. Heat escapes primarily by conduction through the lid and by occasional volcanic eruptions that breach it. The stagnant lid grows thicker over time as the interior cools, eventually shutting down surface volcanism {cite:p}`Stern2018`.
 
-The stagnant-lid regime is the *default* outcome of mantle convection with strongly temperature-dependent viscosity. At the base of the lithosphere, the viscosity contrast between the cold lid and the hot interior is so large ($\sim$10$^{10}$) that the lid effectively decouples from the convecting mantle below. Earth's plate tectonics requires a mechanism to *break* the lid, likely involving water weakening and self-sustained damage along plate boundaries.
+The stagnant-lid regime is the *default* outcome of mantle convection with strongly temperature-dependent viscosity. At the base of the lithosphere, the viscosity contrast between the cold lid and the hot interior is large enough (many orders of magnitude) that the lid effectively decouples from the convecting mantle below. Earth's plate tectonics requires a mechanism to *break* the lid, likely involving water weakening and self-sustained damage along plate boundaries.
 
 ### Tectonic features across the solar system
 
@@ -308,7 +308,7 @@ The stagnant-lid regime is the *default* outcome of mantle convection with stron
 
 **Venus** shows a puzzling tectonic style. The uniform crater density across the surface implies a mean age of $\sim$300–700 Myr, leading to the **episodic resurfacing hypothesis**: Venus may experience periodic catastrophic overturns where the stagnant lid founders and the entire surface is volcanically resurfaced in a geologically short interval. Between these episodes, the surface remains tectonically quiet. This idea remains debated; we will discuss Venus's geology in detail in {ref}`lecture09`.
 
-**Mercury** has undergone significant **global contraction** as its large iron core cooled and solidified over time, shrinking the planet's radius by $\sim$7 km {cite:p}`Byrne2014`. This contraction compressed the crust, producing **lobate scarps**, thrust faults up to several hundred kilometres long and 1–3 km high, discovered by Mariner 10 and mapped extensively by MESSENGER. We will discuss Mercury's surface in {ref}`lecture10`.
+**Mercury** has undergone significant **global contraction** as its large iron core cooled and solidified over time, shrinking the planet's radius by up to $\sim$7 km (with method-dependent estimates spanning $\sim$4–7 km) {cite:p}`Byrne2014`. This contraction compressed the crust, producing **lobate scarps**, thrust faults up to several hundred kilometres long and 1–3 km high, discovered by Mariner 10 and mapped extensively by MESSENGER. We will discuss Mercury's surface in {ref}`lecture10`.
 
 ```{figure} figures/mercury_lobate_scarp.avif
 :name: fig:mercury-scarp
@@ -339,14 +339,14 @@ Wind-driven erosion and deposition require an atmosphere with sufficient density
 - **Titan:** Vast equatorial dune fields composed of organic particles (tholins) produced by atmospheric photochemistry. The dunes are longitudinal, up to 150 m tall and hundreds of kilometres long.
 - **Venus:** Despite its dense atmosphere, surface winds are only $\sim$1 m s$^{-1}$ due to the sluggish near-surface dynamics, limiting aeolian activity. However, the thick atmosphere allows even these slow winds to mobilise fine particles.
 
-Repeat HiRISE imaging of Martian dune fields from the Mars Reconnaissance Orbiter has shown that these dunes migrate at sand fluxes comparable to those of terrestrial dunes despite Mars's $\sim$100$\times$ thinner atmosphere, implying that the threshold wind speed for grain saltation is much lower than previously assumed {cite:p}`Bridges2012`.
+Repeat HiRISE imaging of Martian dune fields from the Mars Reconnaissance Orbiter has shown that these dunes migrate at sand fluxes comparable to those of terrestrial dunes despite Mars's $\sim$170$\times$ thinner atmosphere (Mars surface pressure $\sim$600 Pa vs Earth's $\sim$10$^5$ Pa), implying that the threshold wind speed for grain saltation is much lower than previously assumed {cite:p}`Bridges2012`.
 
 ```{figure} figures/mars_dunes_bridges.avif
 :name: fig:mars-dunes
 :width: 600px
 :align: center
 
-A streaming sand sheet ("river of sand") in a Mars channel imaged by HiRISE on the Mars Reconnaissance Orbiter. Time-resolved imaging of dune fields like this established that Martian sand fluxes can match terrestrial values despite the thin atmosphere, revising long-standing estimates of the wind threshold for grain saltation on Mars {cite:p}`Bridges2012`. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
+A streaming sand sheet ("river of sand") within the Nili Patera caldera on Mars, imaged by HiRISE on the Mars Reconnaissance Orbiter. Time-resolved imaging of dune fields like this established that Martian sand fluxes can match terrestrial values despite the thin atmosphere, revising long-standing estimates of the wind threshold for grain saltation on Mars {cite:p}`Bridges2012`. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
 ```
 
 ```{figure} figures/titan_dunes.avif
@@ -362,7 +362,7 @@ Cassini Synthetic Aperture Radar (SAR) image of longitudinal dune fields in the 
 Liquid water is the most powerful erosive agent on Earth, and evidence for past fluvial activity on Mars is one of the most important discoveries in planetary science:
 
 - **Earth:** Rivers, glacial meltwater, and coastal waves continuously reshape the surface. The Grand Canyon was carved by the Colorado River over $\sim$5–6 Myr.
-- **Mars:** **Valley networks** on the Noachian-aged southern highlands ($>$3.7 Ga) resemble terrestrial river drainage systems, implying sustained liquid water flow. **Outflow channels** (e.g., Ares Vallis, Kasei Valles) are enormous flood features, hundreds of kilometres long and tens of kilometres wide, carved by catastrophic releases of groundwater {cite:p}`Grotzinger2014`. These features are discussed further in {ref}`lecture10`.
+- **Mars:** **Valley networks** on the Noachian-aged southern highlands resemble terrestrial river drainage systems, implying sustained liquid water flow during the late Noachian to early Hesperian, with development continuing in some regions to <3.0 Ga {cite:p}`Ansan2006`. **Outflow channels** (e.g., Ares Vallis, Kasei Valles) are enormous flood features, hundreds of kilometres long and tens of kilometres wide, carved by catastrophic releases of groundwater. These features are discussed further in {ref}`lecture10`.
 - **Titan:** Saturn's largest moon has **methane rivers** that carve channels into its icy surface. The Huygens probe imaged rounded ice pebbles in a dry riverbed during its 2005 landing. Titan's methane hydrological cycle is the only known active fluvial system beyond Earth.
 
 ```{figure} figures/mars_outflow_aram.avif
@@ -370,7 +370,7 @@ Liquid water is the most powerful erosive agent on Earth, and evidence for past 
 :width: 400px
 :align: center
 
-A Martian outflow channel cutting through Aram Chaos. The braided streamlined islands and broad scoured trough are the geomorphological signature of catastrophic flood discharges, plausibly fed by sudden release of subsurface ice or groundwater on early Mars {cite:p}`Grotzinger2014`. Such channels are tens of kilometres wide and hundreds of kilometres long, dwarfing any terrestrial flood feature, and are distinct from the dendritic valley networks ({numref}`fig:mars-valley-networks`) which formed under more sustained, lower-discharge conditions. Credit: NASA/JPL-Caltech/MSSS, public domain.
+A Martian outflow channel cutting through Aram Chaos. The braided streamlined islands and broad scoured trough are the geomorphological signature of catastrophic flood discharges, plausibly fed by sudden release of subsurface ice or groundwater on early Mars. Such channels are tens of kilometres wide and hundreds of kilometres long, dwarfing any terrestrial flood feature, and are distinct from the dendritic valley networks ({numref}`fig:mars-valley-networks`) which formed under more sustained, lower-discharge conditions. Credit: NASA/JPL-Caltech/MSSS, public domain.
 ```
 
 ```{figure} figures/titan_huygens_surface.avif
@@ -386,7 +386,7 @@ Scale composite of three progressively enlarged crops from the post-landing surf
 :width: 600px
 :align: center
 
-Branching valley networks in the Martian highlands imaged by NASA's Viking Orbiter (PIA02810). The dendritic tributary pattern, with multiple stream orders feeding into trunk valleys, closely resembles terrestrial fluvial drainage and is among the strongest geomorphological evidence for sustained surface runoff (and hence precipitation) during the Noachian period ($>$3.7 Ga) on early Mars {cite:p}`Ansan2006,Grotzinger2014`. Such networks are concentrated in the ancient southern highlands and are central to the case that early Mars had a warmer and wetter climate than today. Credit: NASA/JPL/USGS, public domain.
+Branching valley networks in the Martian highlands imaged by NASA's Viking Orbiter (PIA02810). The dendritic tributary pattern, with multiple stream orders feeding into trunk valleys, closely resembles terrestrial fluvial drainage and is among the strongest geomorphological evidence for sustained surface runoff (and hence precipitation) during the late Noachian to Hesperian on early Mars; for the Warrego Valles type locality, formation continued to $\lesssim$3.0 Ga {cite:p}`Ansan2006`. Such networks are concentrated in the ancient southern highlands and are central to the case that early Mars had a warmer and wetter climate than today. Credit: NASA/JPL/USGS, public domain.
 ```
 
 ### Glacial processes
@@ -413,7 +413,7 @@ Most of what we know about planetary surfaces comes from remote sensing: observi
 
 Every mineral has a characteristic pattern of absorption features in the visible and near-infrared (VIS/NIR, 0.3–5 $\mu$m) caused by electronic transitions and molecular vibrations. By measuring the reflected sunlight spectrum from orbit, we can identify minerals remotely:
 
-- **CRISM** (Compact Reconnaissance Imaging Spectrometer for Mars, on MRO) and **OMEGA** (on Mars Express) have mapped the distribution of phyllosilicates (clays), sulfates, and other hydrated minerals across the Martian surface, providing definitive evidence that liquid water chemically altered the rocks during Mars's early history {cite:p}`Grotzinger2014`.
+- **CRISM** (Compact Reconnaissance Imaging Spectrometer for Mars, on MRO) and **OMEGA** (on Mars Express) have mapped the distribution of phyllosilicates (clays), sulfates, and other hydrated minerals across the Martian surface, providing definitive evidence that liquid water chemically altered the rocks during Mars's early history {cite:p}`Ehlmann2008`.
 - Similar instruments on lunar orbiters have mapped the distribution of pyroxene, olivine, and plagioclase across the Moon's surface.
 
 ```{figure} figures/crism_mineral_map.avif
@@ -421,7 +421,7 @@ Every mineral has a characteristic pattern of absorption features in the visible
 :width: 600px
 :align: center
 
-Two complementary views of carbonate-bearing terrain near Nili Fossae on Mars (PIA19816). (a) Thermal-infrared composite from the THEMIS instrument on Mars Odyssey, showing surface morphology and thermal-inertia variations. (b) Spectral classification map from the CRISM instrument on the Mars Reconnaissance Orbiter, where colour codes indicate the dominant mineralogy: Mg-carbonates (green/blue), Mg/Fe-phyllosilicates (clays), and unaltered basalt. The carbonates and clays form by aqueous alteration of basaltic crust and provide direct mineralogical evidence for sustained liquid water on early Mars {cite:p}`Ehlmann2008,Grotzinger2014`. Credit: NASA/JPL-Caltech/ASU/JHU APL, public domain.
+Two complementary views of carbonate-bearing terrain near Nili Fossae on Mars (PIA19816). (a) Thermal-infrared composite from the THEMIS instrument on Mars Odyssey, showing surface morphology and thermal-inertia variations. (b) Spectral classification map from the CRISM instrument on the Mars Reconnaissance Orbiter, where colour codes indicate the dominant mineralogy: Mg-carbonates (green/blue), Mg/Fe-phyllosilicates (clays), and unaltered basalt. The carbonates and clays form by aqueous alteration of basaltic crust and provide direct mineralogical evidence for sustained liquid water on early Mars {cite:p}`Ehlmann2008`. Credit: NASA/JPL-Caltech/ASU/JHU APL, public domain.
 ```
 
 ### Radar imaging (SAR)
@@ -487,7 +487,7 @@ Apollo 11 photograph AS11-40-5878 of an astronaut bootprint in the lunar regolit
 The surfaces of airless bodies are continuously exposed to the space environment: solar wind ions (primarily protons and $\mathrm{He}^{2+}$), micrometeorite impacts, and galactic cosmic rays. These agents collectively produce **space weathering**, a set of physical and chemical changes that modify the optical properties of the surface over time {cite:p}`Hapke2001`:
 
 - **Solar wind implantation:** Energetic ions are implanted into the top $\sim$100 nm of mineral grains, creating crystal damage and amorphous coatings.
-- **Micrometeorite melting:** Tiny impacts at 10–70 km s$^{-1}$ melt and vaporise surface material, creating **nanophase iron** (np-Fe$^0$) particles: metallic iron droplets just 3–30 nm in diameter, embedded in glassy rims on mineral grains.
+- **Micrometeorite melting:** Tiny impacts at 10–70 km s$^{-1}$ melt and vaporise surface material, creating **nanophase iron** (np-Fe$^0$) particles: metallic iron droplets ranging from a few nm (single-domain, the FMR carriers) up to several hundred nm (polycrystalline, dominating the optical effects), embedded in glassy rims on mineral grains.
 - **Cosmic ray damage:** High-energy particles create lattice defects in crystal structures.
 
 The net effect is that space-weathered surfaces become **darker and redder** over time. This is why fresh impact craters (e.g., Tycho on the Moon, with its bright ray system) stand out as brighter features against the darker, mature regolith surrounding them. Space weathering complicates the spectroscopic identification of surface minerals, since the absorption features are weakened and shifted, a significant challenge for remote sensing.
@@ -503,7 +503,7 @@ Saturn's small moon Enceladus ($R \approx 252$ km) provides the most dramatic ex
 
 The plumes are sourced from a **global subsurface ocean** in contact with the rocky core, maintained by tidal heating from Enceladus's orbital resonance with Dione ({ref}`lecture03`). Cassini's mass spectrometer detected molecular hydrogen ($\mathrm{H_2}$), silica nanoparticles, and complex organic molecules in the plume material, consistent with active hydrothermal vents on the ocean floor similar to those that support chemosynthetic ecosystems in Earth's deep oceans {cite:p}`NimmoPappalardo2016`.
 
-The measured thermal emission from the tiger stripes corresponds to a heat flow of $15.8 \pm 3.1$ GW {cite:p}`Howett2011`, far more than can be explained by radiogenic heating alone, confirming the importance of tidal dissipation. Enceladus is one of the most promising targets in the search for extraterrestrial life ({ref}`lecture14`).
+The measured thermal emission from the tiger stripes corresponds to an endogenic heat flow of $\sim$15.8 GW in the original Cassini CIRS analysis of {cite:t}`Howett2011`, with subsequent reanalyses preferring a lower value of order $\sim$5–10 GW; in either case the heat flow is far more than can be explained by radiogenic heating alone, confirming the importance of tidal dissipation. Enceladus is one of the most promising targets in the search for extraterrestrial life ({ref}`lecture14`).
 
 ### Europa
 
@@ -513,7 +513,7 @@ Jupiter's moon Europa ($R \approx 1561$ km) possesses a **global ocean** $\sim$1
 - **Chaos terrain:** Regions where the ice appears to have broken up, rotated, and refrozen, possibly formed by localised melting from below.
 - **Very few impact craters:** Indicating a geologically young surface ($\sim$40–90 Myr), continuously resurfaced by cryovolcanic and tectonic processes.
 
-Hubble Space Telescope observations have detected possible water vapour plumes above Europa's surface {cite:p}`Sparks2017`, though these detections are intermittent and less dramatic than Enceladus's persistent geysers. NASA's **Europa Clipper** mission (launched 2024) will perform dozens of close flybys to characterise the ice shell, ocean, and habitability.
+Hubble Space Telescope ultraviolet transit observations have reported candidate water vapour plumes above Europa's surface at a $\sim$4.9$\sigma$ level (i.e. statistically marginal at the standard $5\sigma$ discovery threshold) and only on a fraction of observed transits {cite:p}`Sparks2017`; these detections are intermittent and far less dramatic than Enceladus's persistent geysers. NASA's **Europa Clipper** mission (launched 2024) will perform dozens of close flybys to characterise the ice shell, ocean, and habitability.
 
 ```{figure} figures/europa_chaos.avif
 :name: fig:europa-chaos
@@ -532,7 +532,7 @@ Neptune's largest moon Triton shows **nitrogen geysers** that were observed by V
 :width: 450px
 :align: center
 
-Voyager 2 colour mosaic of Neptune's moon Triton (PIA00317), captured during the 1989 flyby. The pinkish southern polar cap (lower half) is a thin $\mathrm{N_2}$/$\mathrm{CH_4}$ frost; the dark streaks pointing northeast across the cap are wind-deposited dust from active nitrogen geysers, the only confirmed cryovolcanic plumes outside Enceladus and Europa. North of the cap, the "cantaloupe terrain" of dimples and ridges is unique in the solar system and remains poorly understood. Triton's retrograde orbit suggests it is a captured Kuiper-belt object, making it a probable analogue for Pluto-class dwarf planets. Credit: NASA/JPL/Voyager 2, public domain.
+Voyager 2 colour mosaic of Neptune's moon Triton (PIA00317), captured during the 1989 flyby. The pinkish southern polar cap (lower half) is a thin $\mathrm{N_2}$/$\mathrm{CH_4}$ frost; the dark streaks pointing northeast across the cap are wind-deposited dust from active nitrogen geysers, the only confirmed cryovolcanic plumes outside Enceladus. North of the cap, the "cantaloupe terrain" of dimples and ridges is unique in the solar system and remains poorly understood. Triton's retrograde orbit suggests it is a captured Kuiper-belt object, making it a probable analogue for Pluto-class dwarf planets. Credit: NASA/JPL/Voyager 2, public domain.
 ```
 
 ```{figure} figures/enceladus_cryovolcanism.avif
