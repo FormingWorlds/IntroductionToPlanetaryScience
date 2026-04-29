@@ -231,7 +231,7 @@ Venus imaged by the *Mariner 10* spacecraft in February 1974, using a false-colo
 
 Venus thermal structure from the surface (735 K, 92 bar) to 100 km altitude, based on the *Venus International Reference Atmosphere* and the *Venus Express* radio-science experiment {cite:p}`Tellmann2009`.
 The $\mathrm{H_2SO_4}$ cloud deck (yellow band, 48-70 km) sits where the temperature traverses $\sim$230-350 K between cloud top and cloud base, within the thermodynamic stability field of concentrated sulfuric acid droplets; the sub-cloud haze (peach band, 31-48 km) lies just below.
-The cold collar near 65 km, prominent in the VeRa retrievals, sits where the temperature inversion shapes the upper boundary of the cloud system.
+The cold collar inversion layer near 62-65 km altitude, prominent in the VeRa retrievals at high latitudes ($\sim$65-75°), sits where the temperature inversion shapes the upper boundary of the cloud system.
 ```
 
 ### Mars: dust and ice clouds
@@ -254,8 +254,7 @@ Titan's clouds are mostly $\mathrm{CH_4}$ (condensing at $\sim$8–30 km altitud
 :width: 550px
 :align: center
 
-Titan's north polar lake district imaged by the *Cassini* RADAR instrument {cite:p}`Stofan2007`.
-Hundreds of dark patches (radar-smooth surfaces) are interpreted as standing bodies of liquid methane and ethane, with *Kraken Mare*, *Ligeia Mare*, and *Punga Mare* the three largest seas (each up to several hundred km across).
+Titan's north polar lake district imaged by the *Cassini* RADAR instrument. The first detection {cite:p}`Stofan2007` resolved more than 75 radar-dark lake-like patches poleward of $\sim$70°N latitude, ranging from 3 to over 70 km across; subsequent Cassini RADAR coverage of the high-latitude seas mapped the three largest *maria*: *Kraken Mare*, *Ligeia Mare*, and *Punga Mare*, each hundreds of kilometres across, here interpreted as standing bodies of liquid methane and ethane.
 Together with the methane-cloud observations and inferred rainfall, these lakes constitute the visible surface end of the only active hydrocarbon hydrological cycle in the solar system.
 Credit: NASA/JPL-Caltech/ASI/USGS, public domain.
 ```
@@ -272,7 +271,7 @@ Credit: NASA/JPL-Caltech/Space Science Institute, public domain.
 
 ### Giant planets: layered cloud structure
 
-The hydrogen-dominated atmospheres of Jupiter and Saturn host a **vertically layered** cloud structure, predicted by the Clausius-Clapeyron equation applied to each condensing species at the temperature and pressure where it reaches saturation {cite:p}`Showman2020`:
+The hydrogen-dominated atmospheres of Jupiter and Saturn host a **vertically layered** cloud structure, predicted by the Clausius-Clapeyron equation applied to each condensing species at the temperature and pressure where it reaches saturation {cite:p}`dePaterLissauer2010`:
 
 1. **$\mathrm{NH_3}$ ice** (topmost layer): condensing at $T \sim 130$–150 K, $P \sim 0.5$–1 bar. These are the clouds we see in visible light: the white and coloured bands of Jupiter.
 2. **$\mathrm{NH_4SH}$** (ammonium hydrosulfide): condensing at $T \sim 200$–240 K, $P \sim 2$–3 bar. Formed by the reaction $\mathrm{NH_3} + \mathrm{H_2S} \to \mathrm{NH_4SH}$.
@@ -294,7 +293,7 @@ Temperature–pressure profile of Jupiter's atmosphere, showing the three main c
 Equatorial-band strip from a cylindrical projection of Jupiter assembled from Hubble Space Telescope WFC3 imagery (PIA19643), cropped to the $\sim \pm 20^\circ$ latitude range to emphasise the Great Red Spot and the adjacent equatorial belts.
 Visible are the pattern of light *zones* (regions of rising air with high $\mathrm{NH_3}$-ice clouds) and dark *belts* (sinking air revealing deeper $\mathrm{NH_4SH}$ levels).
 The Great Red Spot is visible at $\sim$22°S, embedded in the South Equatorial Belt.
-The narrow latitudinal contrasts trace the alternating zonal-jet system that the Hubble OPAL programme has now monitored for over a decade {cite:p}`Wong2020`; the full 15-jet structure per hemisphere extends to $\sim \pm 60^\circ$ and is summarised quantitatively in {numref}`fig:jupiter-zonal-winds`.
+The narrow latitudinal contrasts trace the alternating zonal-jet system that long-term HST programmes have now monitored for over a decade {cite:p}`Wong2020`; the full alternating jet system extends to $\sim \pm 60^\circ$ and is summarised quantitatively in {numref}`fig:jupiter-zonal-winds`.
 Credit: NASA/ESA/STScI/A. Simon (Goddard), public domain.
 ```
 
@@ -375,11 +374,11 @@ where $U$ is the characteristic wind speed and $L$ is the characteristic horizon
 
 ### Circulation cells and rotation rate
 
-The number of circulation cells depends critically on the planet's rotation rate {cite:p}`Showman2020`:
+The number of circulation cells depends critically on the planet's rotation rate {cite:p}`dePaterLissauer2010`:
 
 - **Slowly rotating planets** (Venus, Titan): A single Hadley cell extends from equator to pole in each hemisphere. Venus has one giant Hadley cell per hemisphere despite being nearly the same size as Earth, because its slow rotation (243-day period) gives very small Coriolis forces ($\mathrm{Ro} \gg 1$ for large-scale flows).
 - **Moderately rotating planets** (Earth): The Hadley cell extends to $\sim$30° latitude, where the Coriolis deflection becomes strong enough to break the cell. Two additional cells form at higher latitudes: the **Ferrel cell** (mid-latitudes, driven indirectly by the Hadley and polar cells) and the **polar cell**. Earth has three cells per hemisphere.
-- **Rapidly rotating planets** (Jupiter, Saturn): Many alternating cells form, producing the characteristic **banded structure** of alternating light zones (rising air, high clouds) and dark belts (sinking air, deeper cloud exposure). Jupiter has $\sim$15 alternating jet streams per hemisphere.
+- **Rapidly rotating planets** (Jupiter, Saturn): Many alternating cells form, producing the characteristic **banded structure** of alternating light zones (rising air, high clouds) and dark belts (sinking air, deeper cloud exposure). Jupiter and Saturn each show many alternating jets per hemisphere, extending to roughly $\pm 60^\circ$ latitude.
 
 The transition between regimes is governed by the ratio of the planet's rotation timescale to the advective timescale across the planet. When rotation is fast compared to the time for air to flow from equator to pole, the flow breaks up into multiple cells.
 
@@ -441,16 +440,16 @@ Credit: NASA astronaut photograph, Johnson Space Center, public domain.
 
 ### Giant planet banding
 
-On Jupiter and Saturn, the same physics operates on a grander scale. The alternating light and dark bands (the **zones** and **belts**) correspond to regions of rising and sinking air with alternating wind directions. Between adjacent bands, strong **zonal jets** (east-west winds) reach peak speeds of $\sim$180 m s$^{-1}$ on Jupiter and $\sim$400 m s$^{-1}$ on Saturn. The jets are remarkably stable over decades of observation and extend deep into the planetary interior, as revealed by Juno's gravity measurements {cite:p}`Kaspi2018,Showman2020`.
+On Jupiter and Saturn, the same physics operates on a grander scale. The alternating light and dark bands (the **zones** and **belts**) correspond to regions of rising and sinking air with alternating wind directions. Between adjacent bands, strong **zonal jets** (east-west winds) reach peak speeds of $\sim$180 m s$^{-1}$ on Jupiter and $\sim$400 m s$^{-1}$ on Saturn. The jets are remarkably stable over decades of observation and extend deep into the planetary interior, as revealed by Juno's gravity measurements {cite:p}`Kaspi2018`.
 
 ```{figure} figures/jupiter_zonal_winds.avif
 :name: fig:jupiter-zonal-winds
 :width: 420px
 :align: center
 
-Jupiter's cloud-top zonal wind profile $u(\phi)$, schematic representation of the Cassini-era composite of {cite:t}`GarciaMelendo2001` and the modern compilations in {cite:t}`Showman2020`.
-A ladder of narrow prograde (eastward, blue) and retrograde (westward, red) jets is stacked from the broad equatorial superrotating jet at the centre out to $\sim$60° latitude, with $\sim$15 alternations per hemisphere in the full observed profile (the schematic here resolves roughly half of them to keep the figure legible).
-The jets coincide with the boundaries between bright zones and dark belts visible in {numref}`fig:jupiter-global-map`, and Juno gravity measurements indicate they extend $\sim$3000 km into the molecular envelope {cite:p}`Kaspi2018`.
+Jupiter's cloud-top zonal wind profile $u(\phi)$, schematic representation of the Cassini-era HST composite of {cite:t}`GarciaMelendo2001`.
+A ladder of narrow prograde (eastward, blue) and retrograde (westward, red) jets is stacked from the broad equatorial superrotating jet at the centre out to $\sim$60° latitude (the schematic resolves only the principal jets to keep the figure legible).
+The jets coincide with the boundaries between bright zones and dark belts visible in {numref}`fig:jupiter-global-map`, and Juno gravity measurements yield a best-fit e-folding decay depth of $\sim$1800 km, with the full uncertainty range spanning $\sim$1000-3000 km into the molecular envelope {cite:p}`Kaspi2018`.
 ```
 
 
@@ -486,14 +485,14 @@ Super-rotation requires a mechanism to transport angular momentum from the slowl
 :width: 460px
 :align: center
 
-Schematic of the zonal wind speed $|u|$ on Venus as a function of altitude, after the *Pioneer Venus* / *Venus Express* composite of {cite:t}`SanchezLavega2008`.
+Schematic of the zonal wind speed $|u|$ on Venus as a function of altitude, after the *Venus Express* VIRTIS cloud-tracking measurements of {cite:t}`SanchezLavega2008`.
 Surface winds are essentially co-rotating with the planet at $\sim$1.8 m s$^{-1}$ (vertical dashed line, scarcely visible on this scale), but the zonal wind grows rapidly through the lower troposphere and peaks at $\sim$100 m s$^{-1}$ at the cloud tops near 70 km.
 The cloud-top winds are $\sim$60 times faster than the planet's solid-body rotation, a state known as atmospheric super-rotation.
 ```
 
 ### Jupiter: the Great Red Spot
 
-Jupiter's **Great Red Spot (GRS)** is the largest and longest-lived storm in the solar system: an anticyclonic vortex larger than Earth, with winds reaching $\sim$120 m s$^{-1}$ at its periphery. It has been observed continuously for over 350 years (first recorded by Robert Hooke in 1664, though continuous observations date from 1830).
+Jupiter's **Great Red Spot (GRS)** is the largest and longest-lived storm in the solar system: an anticyclonic vortex larger than Earth, with winds reaching $\sim$120 m s$^{-1}$ at its periphery. It has been observed continuously for over 350 years (the first telescopic observation is variously attributed to Robert Hooke in 1664 or Giovanni Cassini around 1665, though continuous observations date from 1830).
 
 ```{figure} figures/jupiter_great_red_spot.avif
 :name: fig:jupiter-grs
@@ -503,7 +502,7 @@ Jupiter's **Great Red Spot (GRS)** is the largest and longest-lived storm in the
 Jupiter's Great Red Spot and surrounding turbulent atmosphere, imaged by NASA's *Juno* spacecraft during a close flyby. The Great Red Spot is an anticyclonic storm larger than Earth that has persisted for centuries. The surrounding vortices and chaotic cloud patterns reveal the intense turbulence of Jupiter's upper troposphere. Credit: NASA/JPL-Caltech/SwRI/MSSS, public domain.
 ```
 
-The GRS sits between two zonal jets with opposite directions, which confine and sustain it. Its longevity is remarkable: on Earth, the largest hurricanes dissipate within days once they lose their energy source (warm ocean water). The GRS is sustained by absorbing smaller vortices and by latent heat released from $\mathrm{H_2O}$ condensation deep in the atmosphere. However, the GRS has been slowly shrinking over the past century, and its long-term fate remains uncertain {cite:p}`Showman2020`.
+The GRS sits between two zonal jets with opposite directions, which confine and sustain it. Its longevity is remarkable: on Earth, the largest hurricanes dissipate within days once they lose their energy source (warm ocean water). The GRS is sustained by absorbing smaller vortices and by latent heat released from $\mathrm{H_2O}$ condensation deep in the atmosphere. However, the GRS has been slowly shrinking over the past century, and its long-term fate remains uncertain {cite:p}`dePaterLissauer2010`.
 
 ```{figure} figures/juno_polar_cyclones.avif
 :name: fig:juno-polar-cyclones
@@ -513,7 +512,7 @@ The GRS sits between two zonal jets with opposite directions, which confine and 
 Polar cyclone cluster at Jupiter's north pole imaged by the JIRAM infrared spectrometer on NASA's *Juno* spacecraft.
 A central cyclone is encircled by eight smaller cyclones in a stable octagonal arrangement, demonstrating that Jupiter's atmospheric dynamics produce coherent polygonal vortex patterns analogous to Saturn's hexagonal jet ({numref}`fig:saturn-hexagon`).
 The cyclones have remained in this configuration over multiple Juno perijoves spanning several years, far longer than any Earth analogue.
-At the south pole, a pentagonal cluster of five circumpolar cyclones persists; JIRAM observations in 2019–2020 recorded the transient appearance of a sixth cyclone that briefly formed a hexagon before dissipating {cite:p}`Adriani2020`.
+At the south pole, a pentagonal cluster of five circumpolar cyclones persists; JIRAM observations through perijove 18 (February 2019) recorded the appearance of a new vortex with the southern ring beginning to transition toward a hexagonal configuration {cite:p}`Adriani2020`.
 Adapted from {cite:t}`Adriani2018`.
 Credit: NASA/JPL-Caltech/SwRI/ASI/INAF/JIRAM, public domain.
 ```
@@ -561,7 +560,7 @@ On timescales of billions of years, a planet's climate is not constant: it evolv
 
 ### Solar luminosity evolution
 
-The Sun, like all main-sequence stars, has been gradually brightening as hydrogen is converted to helium in the core. The increasing mean molecular weight requires higher core temperatures to maintain pressure support, which increases the nuclear reaction rate and hence the luminosity. A standard solar evolution model gives {cite:p}`Catling2017`:
+The Sun, like all main-sequence stars, has been gradually brightening as hydrogen is converted to helium in the core. The increasing mean molecular weight requires higher core temperatures to maintain pressure support, which increases the nuclear reaction rate and hence the luminosity. A standard solar evolution model gives {cite:p}`Gough1981,Catling2017`:
 
 $$
 \frac{L(t)}{\Lsun} \approx \left[1 + \frac{2}{5}\left(1 - \frac{t}{t_\odot}\right)\right]^{-1}
@@ -682,7 +681,7 @@ The weathering rate depends strongly on temperature through an **Arrhenius-type 
 
 2. **If the planet cools** (e.g., due to reduced volcanic activity or orbital changes): less rainfall + slower reactions → **weathering rate decreases** → $\mathrm{CO_2}$ from volcanism accumulates in the atmosphere → greenhouse strengthens → planet **warms back up**.
 
-This thermostat operates on a timescale of $\sim$0.5 Myr, long by human standards but short compared to geological time. It is the primary reason Earth has maintained habitable surface temperatures for over 4 billion years despite the 30% increase in solar luminosity.
+This thermostat operates on geological timescales of $\sim 10^5$-$10^6$ yr, long by human standards but short compared to geological time. It is the primary reason Earth has maintained habitable surface temperatures for over 4 billion years despite the 30% increase in solar luminosity.
 
 ```{figure} figures/carbonate_silicate_cycle.avif
 :name: fig:carbonate-silicate-cycle
