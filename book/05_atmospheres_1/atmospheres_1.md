@@ -269,7 +269,7 @@ Detached haze layers in Titan's upper atmosphere imaged at the limb by the Cassi
 :width: 500px
 :align: center
 
-Titan's vertical temperature profile from the *Huygens* Atmospheric Structure Instrument (HASI) descent through the atmosphere on 14 January 2005 {cite:p}`Fulchignoni2005`. The tropopause sits near 20 km at 74 K, well below the surface temperature of 94 K. A strong stratospheric inversion driven by haze-layer absorption of solar UV (cf. {numref}`fig:titan-haze`) pushes temperatures up to $\sim$175 K near 200 km, before falling again through the mesosphere and rising in the thermosphere. Pedagogical fit to published HASI profile; not a direct reproduction.
+Titan's vertical temperature profile from the *Huygens* Atmospheric Structure Instrument (HASI) descent through the atmosphere on 14 January 2005 {cite:p}`Fulchignoni2005`. The tropopause sits near 44 km at $\sim$70 K, well below the surface temperature of 94 K. A strong stratospheric inversion driven by haze-layer absorption of solar UV (cf. {numref}`fig:titan-haze`) pushes temperatures up to $\sim$175 K near 200 km, before falling again through the mesosphere and rising in the thermosphere. Pedagogical fit to published HASI profile; not a direct reproduction.
 ```
 
 ```{figure} figures/venus_tz_vira.avif
@@ -280,7 +280,7 @@ Titan's vertical temperature profile from the *Huygens* Atmospheric Structure In
 Venus T(z) profile combining Pioneer Venus / VIRA {cite:p}`Seiff1985` lower-atmosphere data with VeRa (Venus Express) radio-occultation results {cite:p}`Tellmann2009`. The profile falls monotonically from the 735 K, 92 bar surface through the cloud deck (48 to 70 km, shaded) to the mesopause near 100 km, with no ozone-driven stratospheric inversion. The near-adiabatic deep troposphere reflects efficient convection in a $\mathrm{CO_2}$-dominated, optically thick atmosphere. Pedagogical fit; not a direct reproduction.
 ```
 
-A striking unifying observation is that, despite differences of orders of magnitude in surface gravity, composition, and stellar irradiation, the tropopause occurs at a pressure near $0.1$ bar in *every* thick atmosphere of the solar system. {cite:t}`Robinson2014` showed that this is a consequence of pressure-dependent infrared transparency: at lower pressures the atmosphere becomes optically thin and radiative cooling dominates over convection, freezing in a near-universal temperature minimum.
+A striking unifying observation is that, despite differences of orders of magnitude in surface gravity, composition, and stellar irradiation, the tropopause occurs at a pressure near $0.1$ bar in nearly every thick atmosphere of the solar system. {cite:t}`Robinson2014` showed that this is a consequence of pressure-dependent infrared transparency: at lower pressures the atmosphere becomes optically thin to thermal radiation, convection ceases, and any UV/shortwave absorber aloft creates a stratospheric inversion; the combination freezes in a near-universal temperature minimum near 0.1 bar.
 
 ```{figure} figures/atmosphere_tp_robinson.avif
 :name: fig:tp-profiles
@@ -384,7 +384,7 @@ For Earth, satellite radiometry has measured the individual flux components of t
 :width: 800px
 :align: center
 
-Earth's globally averaged energy budget in W m$^{-2}$. Of $\sim$340 W m$^{-2}$ incoming shortwave (SW) flux, $\sim$100 W m$^{-2}$ is reflected (Bond albedo $A \approx 0.30$), $\sim$80 W m$^{-2}$ is absorbed by the atmosphere, and $\sim$160 W m$^{-2}$ is absorbed at the surface. The surface re-radiates $\sim$398 W m$^{-2}$ in the longwave (LW), and the atmosphere returns $\sim$340 W m$^{-2}$ as downward back-radiation, the dominant surface heating term. Latent and sensible heat fluxes ($\sim$97 W m$^{-2}$) carry the remainder of the surface energy balance to the atmosphere. At the top of atmosphere, 340 W m$^{-2}$ in matches 100 W m$^{-2}$ reflected plus $\sim$240 W m$^{-2}$ outgoing IR. Schematic adapted from {cite:t}`Trenberth2009`.
+Earth's globally averaged energy budget in W m$^{-2}$. Of $\sim$340 W m$^{-2}$ incoming shortwave (SW) flux, $\sim$100 W m$^{-2}$ is reflected (Bond albedo $A \approx 0.30$), $\sim$80 W m$^{-2}$ is absorbed by the atmosphere, and $\sim$160 W m$^{-2}$ is absorbed at the surface. The surface re-radiates $\sim$396 W m$^{-2}$ in the longwave (LW), and the atmosphere returns $\sim$333 W m$^{-2}$ as downward back-radiation, the dominant surface heating term. Latent and sensible heat fluxes ($\sim$97 W m$^{-2}$) carry the remainder of the surface energy balance to the atmosphere. At the top of atmosphere, 340 W m$^{-2}$ in matches 100 W m$^{-2}$ reflected plus $\sim$240 W m$^{-2}$ outgoing IR. Schematic adapted from {cite:t}`Trenberth2009`.
 ```
 
 ### Effective vs. actual surface temperatures
@@ -537,7 +537,7 @@ Hydrodynamic escape is most important during a planet's first few hundred millio
 :width: 750px
 :align: center
 
-Population synthesis of close-in exoplanets that have undergone EUV-driven hydrodynamic atmospheric escape. *Left*: planet radius vs orbital separation after 10 Gyr of evolution, for cores with masses 1.5–6.5 $\Mearth$ (different colours indicate different core compositions; the published axis label reads "Seperation" [sic] in the original figure). The "evaporation desert" at small separations and large radii is empty because all H/He envelopes have been stripped, and the "evaporation valley" appears as a thin gap near $1.5\!-\!2\,\Rearth$. *Right*: planet radius vs incident bolometric flux ($F_\oplus$, in units of Earth's), colour-coded by retained atmospheric mass fraction (% H/He). Greyscale shading shows the predicted population density. Figure from {cite:t}`Owen2019`.
+Population synthesis of close-in exoplanets that have undergone EUV-driven hydrodynamic atmospheric escape. *Left*: planet radius vs orbital separation after 10 Gyr of evolution, for cores with masses 6.5–15 $\Mearth$ (different colours indicate different core masses; the published axis label reads "Seperation" [sic] in the original figure). The "evaporation desert" at small separations and large radii is empty because all H/He envelopes have been stripped, and the "evaporation valley" appears as a thin gap near $1.5\!-\!2\,\Rearth$. *Right*: planet radius vs incident bolometric flux ($F_\oplus$, in units of Earth's), colour-coded by retained atmospheric mass fraction (% H/He). Greyscale shading shows the predicted population density. Figure from {cite:t}`Owen2019`.
 ```
 
 The observational counterpart was established by {cite:t}`Fulton2017`, who measured the planet radius distribution for short-period exoplanets in the California-Kepler Survey (CKS) and found a clear bimodality:
@@ -562,7 +562,7 @@ Several processes can eject atmospheric particles to space without relying on th
 
 - **Impact erosion:** Large asteroid or comet impacts can eject significant fractions of a planet's atmosphere. The efficiency depends on the impactor size relative to the atmospheric scale height: very large impacts can blow off a substantial atmospheric mass in a single event.
 
-The MAVEN mission at Mars has measured the present-day total atmospheric escape rate at $\sim 2$–$3$ kg s$^{-1}$ for H and O combined, integrated across photochemical, thermal, and solar-wind-driven channels {cite:p}`Jakosky2018`.
+The MAVEN mission at Mars has measured the present-day total atmospheric escape rate at $\sim 1$–$3$ kg s$^{-1}$ for H and O combined, with H escape varying seasonally by nearly an order of magnitude, integrated across photochemical, thermal, and solar-wind-driven channels {cite:p}`Jakosky2018`.
 
 ```{figure} figures/maven_science_orbit.avif
 :name: fig:maven-science-orbit
@@ -650,7 +650,7 @@ Escape velocity versus surface temperature for solar system bodies. Diagonal lin
 
 ## Recent advances
 
-The James Webb Space Telescope (JWST) has opened a new era in exoplanet atmospheric characterisation. Thermal emission measurements of TRAPPIST-1 b, an Earth-sized planet orbiting an M dwarf, indicate a dayside temperature consistent with bare rock and no significant atmosphere {cite:p}`Greene2023`. Similar results for TRAPPIST-1 c suggest that the innermost rocky planets around active M dwarfs may be stripped of their atmospheres by intense stellar irradiation, consistent with theoretical predictions of enhanced atmospheric escape around low-mass stars {cite:p}`Wordsworth2022`.
+The James Webb Space Telescope (JWST) has opened a new era in exoplanet atmospheric characterisation. Thermal emission measurements of TRAPPIST-1 b, an Earth-sized planet orbiting an M dwarf, indicate a dayside temperature consistent with bare rock and no significant atmosphere {cite:p}`Greene2023`. Similar results for TRAPPIST-1 c {cite:p}`Zieba2023` suggest that the innermost rocky planets around active M dwarfs may be stripped of their atmospheres by intense stellar irradiation, consistent with theoretical predictions of enhanced atmospheric escape around low-mass stars {cite:p}`Wordsworth2022`.
 
 A central reason M-dwarf planets are so vulnerable to escape is that late-type stars remain in the high-activity **saturated regime** for much longer than Sun-like stars, exposing their close-in planets to intense XUV irradiation for $\gtrsim 1$ Gyr after formation:
 
@@ -659,7 +659,7 @@ A central reason M-dwarf planets are so vulnerable to escape is that late-type s
 :width: 700px
 :align: center
 
-Evolution of the XUV-to-bolometric luminosity ratio $L_\mathrm{XUV}/L_\mathrm{bol}$ for G-dwarf (yellow), early-M (red) and late-M (purple) stars. All spectral types pass through a saturated plateau at $L_\mathrm{XUV}/L_\mathrm{bol} \sim 10^{-3}$, then decay as a power law. The saturation phase lasts $\sim 100$ Myr for G-dwarfs but $\gtrsim 1$ Gyr for late-M stars, exposing close-in rocky planets (such as the TRAPPIST-1 planets) to prolonged atmospheric erosion. Schematic tracks based on the empirical scalings of {cite:t}`Ribas2005` with the M-dwarf extension discussed in {cite:t}`Tian2009` and {cite:t}`Wordsworth2022`; not a reproduction of any single dataset.
+Evolution of the XUV-to-bolometric luminosity ratio $L_\mathrm{XUV}/L_\mathrm{bol}$ for G-dwarf (yellow), early-M (red) and late-M (purple) stars. All spectral types pass through a saturated plateau at $L_\mathrm{XUV}/L_\mathrm{bol} \sim 10^{-3}$, then decay as a power law. The saturation phase lasts $\sim 100$ Myr for G-dwarfs but $\gtrsim 1$ Gyr for late-M stars, exposing close-in rocky planets (such as the TRAPPIST-1 planets) to prolonged atmospheric erosion. The G-dwarf track is anchored to the empirical "Sun in Time" scalings of {cite:t}`Ribas2005` (which sample G0-G5 stars only); the M-dwarf tracks are schematic, drawing on the prolonged-saturation behaviour of low-mass stars discussed by {cite:t}`Wordsworth2022`. Not a reproduction of any single dataset.
 ```
 
 ```{figure} figures/trappist1b_jwst_greene2023.avif
