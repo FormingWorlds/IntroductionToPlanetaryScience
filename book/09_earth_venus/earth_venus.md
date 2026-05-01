@@ -145,9 +145,9 @@ Reproduced from {cite:t}`Zahnle2007`.
 :align: center
 
 Three-dimensional general-circulation model results for the global mean surface temperature of the Archean Earth between $3.8$ Ga and $2.5$ Ga, from {cite:t}`Charnay2013`.
-Curves show solutions for three atmospheric compositions: $0.9$ mbar $\mathrm{CO_2}$ (blue), $10$ mbar $\mathrm{CO_2}$ with $2$ mbar $\mathrm{CH_4}$ (orange), and $0.1$ bar $\mathrm{CO_2}$ with $2$ mbar $\mathrm{CH_4}$ (red); solid lines include methane and dashed lines omit it.
+Curves show solutions for three atmospheric compositions: $0.9$ mbar $\mathrm{CO_2}$ with $0.9$ mbar $\mathrm{CH_4}$ (blue), $10$ mbar $\mathrm{CO_2}$ with $2$ mbar $\mathrm{CH_4}$ (orange), and $0.1$ bar $\mathrm{CO_2}$ with $2$ mbar $\mathrm{CH_4}$ (red); solid lines include methane and dashed lines omit it.
 The dotted green line marks the freezing point of water.
-A few mbar of $\mathrm{CO_2}$ alone is insufficient to keep the Archean above freezing under a fainter Sun, but $\sim$0.1 bar of $\mathrm{CO_2}$ together with trace methane comfortably resolves the faint-young-Sun problem.
+A few mbar of $\mathrm{CO_2}$ together with trace methane is marginal at $3.8$ Ga but warms by $3$ Ga, while $\sim$0.1 bar of $\mathrm{CO_2}$ together with trace methane comfortably resolves the faint-young-Sun problem at all three epochs.
 Reproduced from {cite:t}`Charnay2013`.
 ```
 
@@ -168,7 +168,7 @@ The geological evidence is striking: glacial diamictites (poorly sorted glacial 
 The mechanism is straightforward in concept.
 Once the polar ice caps grow to roughly $30^\circ$ latitude, the ice-albedo feedback runs away: the increased reflectivity cools the climate, more ice forms, which cools the climate further, and so on, until ice covers most or all of the ocean and the surface temperature drops to $\sim$240 K.
 During the snowball state, silicate weathering essentially shuts down (because the surface is frozen), but volcanism continues to outgas $\mathrm{CO_2}$ at roughly its normal rate.
-Atmospheric $\mathrm{CO_2}$ accumulates over $\sim$10--100 Myr, until the greenhouse forcing eventually overcomes the ice-albedo cooling, the ice melts catastrophically, and the planet swings into a hothouse state.
+Atmospheric $\mathrm{CO_2}$ accumulates over $\sim$10 Myr (Hoffman2017's preferred number from coupled hysteresis modelling), until the greenhouse forcing eventually overcomes the ice-albedo cooling, the ice melts catastrophically (over only $\sim$2 kyr once the tropical ocean reopens), and the planet swings into a hothouse state.
 The cap carbonates record the rapid drawdown of the post-snowball $\mathrm{CO_2}$ excess by extremely intense weathering of newly exposed silicate surfaces.
 
 The Snowball Earth episodes are pedagogically important for two reasons.
@@ -185,8 +185,8 @@ Anthropogenic climate change is best understood as a planetary-scale forcing exp
 
 The atmospheric concentration of $\mathrm{CO_2}$ has risen from a pre-industrial value of about $280$ ppm to over $420$ ppm in $2024$, a level higher than at any time in the last $\sim$3 Myr based on direct ice-core records {cite:p}`NOAACO2,IPCC2021`.
 The current rate of change, roughly $2\text{--}3$ ppm/yr, is approximately $100$ times faster than the natural rate of $\mathrm{CO_2}$ rise during deglaciation at the end of the last ice age.
-The corresponding radiative forcing from this $\mathrm{CO_2}$ increase, plus other anthropogenic greenhouse gases, is about $2$ W/m$^2$ at the top of the atmosphere {cite:p}`IPCC2021`.
-The observed surface temperature response, about $1.4$ K of warming since the late nineteenth century {cite:p}`IPCC2021`, is consistent with what radiative-convective climate models predict for this forcing once ocean heat uptake is accounted for.
+The net anthropogenic radiative forcing (greenhouse gases plus aerosols) is about $2.7$ W/m$^2$ at the top of the atmosphere {cite:p}`IPCC2021`.
+The observed surface temperature response, about $1.1$ K of warming since the late nineteenth century {cite:p}`IPCC2021`, is consistent with what radiative-convective climate models predict for this forcing once ocean heat uptake is accounted for.
 
 ```{figure} figures/lyons2014_oxygen_history.avif
 :name: fig:lyons-oxygen
@@ -208,7 +208,7 @@ The point is not political but physical: the same radiative-transfer machinery t
 ### The biosphere's geological footprint
 
 Although this lecture is mainly about physical and geological evolution, the biosphere has rewritten the surface chemistry of Earth in ways that we cannot ignore when comparing with Venus.
-The most spectacular biotic event is the **Great Oxidation Event** at $\sim$2.4 Ga, when atmospheric $\mathrm{O_2}$ rose from negligible Archean levels to roughly $1\text{--}10\%$ of modern values {cite:p}`Lyons2014`.
+The most spectacular biotic event is the **Great Oxidation Event** at $\sim$2.4 Ga, when atmospheric $\mathrm{O_2}$ rose from negligible Archean levels (pre-GOE $p_{\mathrm{O_2}} < 10^{-5}$ atm) to roughly $0.1\text{--}1\%$ of modern values in the mid-Proterozoic plateau, with a transient overshoot to $10\text{--}20\times$ modern during the Lomagundi excursion at $2.3\text{--}2.1$ Ga {cite:p}`Lyons2014`.
 The mechanism is oxygenic photosynthesis by cyanobacteria, which had already been present for several hundred million years before the event itself.
 The trigger for the rise is debated (changes in oxygen sinks, in continental weathering, in volcanic outgassing redox state, or in the burial of organic carbon are all candidates), but the consequences are unmistakable in the rock record: banded iron formations disappear, redbeds appear, and the biosphere acquires the oxidising redox state that has dominated ever since.
 A second oxygenation step in the late Neoproterozoic raised $\mathrm{O_2}$ to near-modern values just before the Cambrian explosion of complex animal life.
@@ -318,7 +318,7 @@ Recent analysis of Magellan gravity data has identified coronae that appear to o
 Global geological-terrain map of Venus from {cite:t}`Widemann2023` Fig. 15, overlaid on a Magellan radar base. Coloured polygons are the Regions of Interest (RoIs) defined in the ESA EnVision Science Operations Reference Scenario; together they cover roughly 30% of Venus's surface and span the major terrain classes: **plains** (light green), **tessera** highlands (tan), **deformed terrain** (pale yellow), **rift zones** (red), **Artemis chasma** (purple), and **craters** (grey). Named regional landmarks (Maxwell Montes, Fortuna Tessera, Ishtar Terra, Beta Regio, Aphrodite Terra, Alpha Regio, and others) are labelled. Terrain classification after {cite:t}`IvanovHead2015`; reproduced from {cite:t}`Widemann2023`.
 ```
 
-**Impact crater density** on Venus is low, corresponding to a global average crater retention age of $300\text{--}700$ Myr.
+**Impact crater density** on Venus is low, corresponding to a global average crater retention age of $150\text{--}250$ Myr in recent reanalyses {cite:p}`Smrekar2018`, with older crater-counting estimates extending to $300\text{--}1000$ Myr {cite:p}`Widemann2023`.
 This is a striking number: it implies that the surface of Venus was effectively wiped clean some time in the geologically recent past, and that the present surface dates from the resurfacing event rather than from accretion.
 There are essentially two competing interpretations of this resurfacing.
 The **catastrophic resurfacing** model (sometimes called the global lithospheric overturn model) proposes that the planet experienced a brief, planet-wide volcanic and tectonic event roughly $500$ Myr ago that resurfaced essentially all of the crust at once.
@@ -377,7 +377,7 @@ We will not repeat the radiative-transfer derivations from {ref}`lecture05` and 
 
 The composition is overwhelmingly $\mathrm{CO_2}$ ($96.5\%$), with $\mathrm{N_2}$ ($3.5\%$) the only other major species.
 Trace gases include $\mathrm{SO_2}$ at $\sim$150 ppm, water vapour at $\sim$30 ppm in the lower atmosphere (rising slightly to $\sim$80 ppm in the cloud-deck region), and noble gases (argon, neon, krypton, xenon) at concentrations that are comparable to or much higher than terrestrial values, depending on the species.
-The high noble gas content (especially primordial $^{36}$Ar) is one of the stronger arguments that Venus retained more of its primordial atmosphere than Earth did, which fits with the idea that Venus has had less efficient atmospheric loss to space at modern times.
+The high primordial $^{36}$Ar concentration argues that Venus has had less efficient atmospheric escape than Earth, while the low radiogenic $^{40}$Ar (only $\sim$24% of the mantle inventory has been outgassed, compared with $\sim$50% on Earth) argues that Venus has outgassed less of its mantle volatile inventory than Earth {cite:p}`Lammer2018,Widemann2023`.
 
 The thermal profile is roughly adiabatic from the surface ($T_s = 737$ K, $P_s = 92$ bar) up to about $65$ km altitude, where the cloud tops sit and the troposphere meets the stratosphere.
 The atmospheric scale height at the surface is about $16$ km, much larger than Earth's $\sim$8 km, mainly because the surface temperature is so much higher (gas molecules are more energetic), in spite of the larger mean molecular weight of $\mathrm{CO_2}$ ($M = 44$ g/mol vs $\sim 29$ g/mol for air); the scale height is a competition between these factors, and the temperature wins.
@@ -431,18 +431,18 @@ But the bound is not infinite.
 There is a maximum OLR that a water-rich atmosphere can radiate to space, set by the saturation vapour pressure of water at the temperature of the IR-photosphere; if the absorbed solar flux exceeds this limit, no surface temperature can balance the radiation budget, the ocean evaporates entirely, and the planet enters a **runaway greenhouse** state.
 This maximum OLR is the **Simpson-Nakajima limit**.
 
-```{figure} figures/goldblatt2013_runaway_panels.avif
-:name: fig:goldblatt-runaway
+```{figure} figures/kopparapu2013_runaway_panels.avif
+:name: fig:kopparapu-runaway
 :width: 80%
 :align: center
 
-Climate-model calculation of the runaway greenhouse limit and the inner edge of the habitable zone for an Earth-like planet, from {cite:t}`Goldblatt2013`.
-Panel (a): outgoing longwave radiation (OLR) as a function of surface temperature, showing the asymptote to a maximum value of $\sim 282$ W/m$^2$ at high surface temperatures.
+Climate-model calculation of the runaway greenhouse limit and the inner edge of the habitable zone for an Earth-like planet, from {cite:t}`Kopparapu2013` Fig. 3.
+Panel (a): outgoing longwave radiation (OLR) as a function of surface temperature, showing the asymptote to a maximum value of $\sim 291$ W/m$^2$ at high surface temperatures (the corresponding {cite:t}`Goldblatt2013` line-by-line calculation gives $\sim 282$ W/m$^2$; the small offset is due to the H$_2$O continuum treatment).
 Panel (b): planetary albedo.
-Panel (c): the ratio of stellar flux to the present solar constant required for radiative equilibrium, with the **runaway greenhouse** limit at $S_{\mathrm{eff}} = 1.06$ ($\Rightarrow$ inner habitable-zone edge at $\sim$0.97 AU for present-day solar luminosity) and the **moist greenhouse** limit at $S_{\mathrm{eff}} = 1.015$.
-Panel (d): the corresponding atmospheric water vapour profile.
+Panel (c): the ratio of stellar flux to the present solar constant required for radiative equilibrium, with the **runaway greenhouse** limit at $S_{\mathrm{eff}} = 1.06$ ($\Rightarrow$ inner habitable-zone edge at $\sim$0.97 AU for present-day solar luminosity) and the **moist greenhouse** limit at $S_{\mathrm{eff}} = 1.015$ ($\sim$0.99 AU).
+Panel (d): the corresponding atmospheric water vapour mixing ratio profile at $T_s = 320$, $340$, and $360$ K.
 Once $S_{\mathrm{eff}}$ exceeds the runaway threshold, no equilibrium with liquid surface water is possible.
-Reproduced from {cite:t}`Goldblatt2013`.
+Reproduced from {cite:t}`Kopparapu2013`.
 ```
 
 ```{figure} figures/goldblatt2013_olr_spectrum.avif
@@ -453,7 +453,7 @@ Reproduced from {cite:t}`Goldblatt2013`.
 Thermal-radiance spectra of an Earth-like atmosphere as a function of wavelength for surface temperatures $T_\mathrm{s} = 280, 310, 340, 370, 400$ K (bottom to top), from {cite:t}`Goldblatt2013` Fig. 3(b).
 Black and red curves are two independent line-by-line model calculations; grey dotted curves show the blackbody reference at each $T_\mathrm{s}$.
 As $T_\mathrm{s}$ rises from 280 K to 400 K, the H$_2$O continuum absorbs an ever-larger fraction of the thermal emission across the infrared, and the 8–14 $\mu$m atmospheric window closes.
-Above $T_\mathrm{s} \sim 340$ K the integrated outgoing flux saturates at the **runaway-greenhouse asymptote** of $\sim 282$ W m$^{-2}$ (cf. {numref}`fig:goldblatt-runaway`): further surface warming no longer produces a compensating increase in emission to space.
+Above $T_\mathrm{s} \sim 340$ K the integrated outgoing flux saturates at the **runaway-greenhouse asymptote** of $\sim 282$ W m$^{-2}$ (cf. {numref}`fig:kopparapu-runaway`): further surface warming no longer produces a compensating increase in emission to space.
 Reproduced from {cite:t}`Goldblatt2013`.
 ```
 
@@ -556,7 +556,7 @@ $$
 
 Earth is comfortably below the runaway greenhouse limit, by about $40$--$70$ W/m$^2$.
 At the orbit of Venus, the same calculation gives $F_{\mathrm{abs}}^{\mathrm{Venus}} \approx 460$ W/m$^2$ (assuming an Earth-like albedo, which is wrong for present Venus but is the relevant comparison for an early ocean-bearing Venus), well above the limit.
-Setting $F_{\mathrm{abs}} = F_{\mathrm{OLR}}^{\max}$ and solving for the orbital distance gives the **inner edge of the classical habitable zone** at roughly $0.95$--$0.99$ AU for present-day solar luminosity {cite:p}`Kasting1993,Kopparapu2013,Goldblatt2013`.
+Setting $F_{\mathrm{abs}} = F_{\mathrm{OLR}}^{\max}$ and solving for the orbital distance gives the **inner edge of the classical habitable zone** for present-day solar luminosity: the moist greenhouse limit lies at $0.95$--$0.99$ AU {cite:p}`Kasting1993,Kopparapu2013` and the runaway greenhouse limit slightly inside, at $0.84$--$0.97$ AU depending on radiative-transfer assumptions {cite:p}`Kasting1993,Kopparapu2013,Goldblatt2013`.
 Venus, at $0.723$ AU, sits well inside the inner edge.
 
 **Key insight.**
@@ -571,16 +571,6 @@ It defines the inner edge of the **classical habitable zone** for any star at an
 For the present-day Sun, this corresponds to the runaway greenhouse limit at $S_{\mathrm{eff}} = 1.06$ (about $0.97$ AU), with the moist greenhouse limit slightly inside Earth's orbit at $S_{\mathrm{eff}} = 1.015$ (about $0.99$ AU) {cite:p}`Kopparapu2013`.
 For a younger and fainter Sun (say at $4$ Ga, with $L_\star \approx 0.75 L_{\star,\mathrm{today}}$), the inner edge sat closer to the Sun, near $\sim 0.83$ AU.
 The inner habitable zone edge has therefore been moving **outward** over Solar System history as the Sun brightens, and the question of whether Venus was once inside the habitable zone (and if so, for how long) becomes a question of when the receding inner edge crossed the orbit of Venus from the inside.
-
-```{figure} figures/kopparapu2013_inner_HZ.avif
-:name: fig:kopparapu-HZ
-:width: 75%
-:align: center
-
-Inner habitable zone calculation for an Earth-like planet around the present-day Sun, from the bottom-left panel of {cite:t}`Kopparapu2013` Fig. 3.
-The effective stellar flux $S_{\mathrm{eff}}$ for which radiative equilibrium is reached is plotted against surface temperature.
-The **runaway greenhouse** limit lies at $S_{\mathrm{eff}} = 1.06$ (corresponding to $0.97$ AU) and the **moist greenhouse** limit at $S_{\mathrm{eff}} = 1.015$ ($0.99$ AU); these define the inner edge of the classical habitable zone.
-```
 
 ```{figure} figures/wordsworth2013_OLR_ASR_equilibria.avif
 :name: fig:wordsworth-equilibria
@@ -603,7 +593,7 @@ The **early loss** scenario, championed by {cite:t}`Hamano2013`, assumes that Ve
 Because Venus is closer to the Sun, the absorbed flux is high enough that the atmosphere stays above the Simpson-Nakajima limit indefinitely; the magma ocean never solidifies because the optically thick steam atmosphere prevents efficient heat loss.
 Water vapour photolyses in the upper atmosphere, hydrogen escapes hydrodynamically under the strong EUV flux of the young Sun, and Venus is desiccated within a few hundred million years of its formation.
 On this view, Venus never had liquid surface water, and the present-day desiccation reflects the original failure of the magma ocean to crystallise into a solid surface with a condensed ocean.
-{cite:t}`Hamano2013` quantified this scenario and showed that for water-rich planets at distances less than about $0.77$ AU, the magma ocean phase becomes self-sustaining and the planet becomes a "Type II" world, distinct from the "Type I" worlds (like Earth, at greater distances) that crystallise normally and develop a condensed ocean.
+{cite:t}`Hamano2013` quantified this scenario and showed that for water-rich planets at distances less than about $0.76$ AU, the magma ocean phase becomes self-sustaining and the planet becomes a "Type II" world, distinct from the "Type I" worlds (like Earth, at greater distances) that crystallise normally and develop a condensed ocean.
 
 ```{figure} figures/hamano2013_two_types.avif
 :name: fig:hamano-two-types
@@ -614,7 +604,7 @@ The two types of terrestrial planet identified by {cite:t}`Hamano2013` from coup
 **Top panel:** magma-ocean solidification time as a function of orbital distance (lower $x$-axis) and, equivalently, of net stellar radiation at the tropopause $\tau_0$ (upper $x$-axis). **Bottom panel:** final water inventory retained on the planet. Coloured curves show different initial water inventories from 0.01 to 10 Earth-ocean masses ($M_\mathrm{EO}$).
 For orbital distances larger than the critical value $a_\mathrm{cr} \approx 0.77$ AU (or net stellar radiation below the tropospheric limit $F_\mathrm{lim}$) the magma ocean crystallises within a few Myr and most of the initial water is retained: this is the **Type I** (Earth-like) regime.
 Inside $a_\mathrm{cr}$ the solidification time diverges and the atmosphere loses essentially all its water to hydrodynamic escape: this is the **Type II** (Venus-like) regime.
-The sharp transition at $a_\mathrm{cr}$ corresponds to the Simpson-Nakajima runaway-greenhouse threshold ({numref}`fig:goldblatt-runaway`) and provides a natural explanation for the Earth-Venus dichotomy.
+The sharp transition at $a_\mathrm{cr}$ corresponds to the Simpson-Nakajima runaway-greenhouse threshold ({numref}`fig:kopparapu-runaway`) and provides a natural explanation for the Earth-Venus dichotomy.
 Reproduced from {cite:t}`Hamano2013`.
 ```
 
@@ -639,7 +629,7 @@ Reproduced from {cite:t}`Hamano2013`.
 
 Time evolution of potential temperature (black line) and surface temperature (grey line) for a crystallising magma ocean coupled to its outgassed steam atmosphere on a Venus-mass planet at the orbital distance of Venus, from panel (a) of {cite:t}`Lebrun2013` Fig. 12.
 The three vertical regions ("totally molten", "partially molten", "mush") track the planetary mantle as it crystallises; condensation of water vapour occurs at the boundary between the partially molten and mush stages.
-The dashed vertical line marks the time at which the magma ocean reaches $98\%$ solidification, $\sim 10$ Myr at Venus' orbital distance (compared with $\sim 1$ Myr at Earth's and $\sim 10$ kyr at Mars' for the corresponding panels (b) and (c) of the same figure, not shown).
+The dashed vertical line marks the time at which the magma ocean reaches $98\%$ solidification, $\sim 10$ Myr at Venus' orbital distance (compared with $\sim 1.5$ Myr at Earth's and $\sim 0.1$ Myr at Mars' for the corresponding panels (b) and (c) of the same figure, not shown).
 The longer magma-ocean lifetime at smaller heliocentric distances gives the steam atmosphere ample time to photolyse and lose hydrogen to space, providing the foundation of the early-loss scenario for Venus.
 {cite:t}`Lebrun2013` further showed (their Fig. 11, not shown) that below a critical distance of about $0.66$ AU around a Sun-like star, an Earth-mass planet's magma ocean cannot freeze at all and the planet remains molten indefinitely; Venus at $0.72$ AU sits just outside this limit.
 ```
@@ -673,7 +663,7 @@ Their main result is summarised in a hysteresis diagram showing the conditions u
 
 Hysteresis loops for ocean formation on early Earth and Venus, from {cite:t}`Turbet2021`.
 **Panel (a)** shows surface temperature as a function of incoming solar flux for Earth: at $4$ Ga, water condenses from a steam atmosphere if the atmosphere is initially condensed (operating point near present-day) but enters the runaway greenhouse if it starts hot (red branch).
-**Panel (b)** shows the same for Venus: the runaway and condensed branches do not overlap, so an early Venus that started in the runaway state (the natural endpoint of magma ocean cooling at high solar flux) cannot reach the condensed branch even at $4$ Ga, when the absorbed flux was only $\sim$5% lower than today.
+**Panel (b)** shows the same for Venus: the runaway and condensed branches do not overlap, so an early Venus that started in the runaway state (the natural endpoint of magma ocean cooling at high solar flux) cannot reach the condensed branch even at $4$ Ga, when the insolation at Venus was $\sim$25% lower than today and Venus still received $\sim$500 W/m$^2$, well above the cloud-modified condensation threshold of $\sim$325 W/m$^2$.
 Reproduced from {cite:t}`Turbet2021`.
 ```
 
@@ -730,7 +720,7 @@ Reproduced from {cite:t}`Constantinou2024`.
 
 Whichever scenario is correct, there is one strong piece of empirical evidence that Venus once had at least $100\times$ more water than it does today: the deuterium-to-hydrogen ratio.
 The original Pioneer Venus mass spectrometer measurement of {cite:t}`Donahue1982` gave $D/H \approx 1.6 \times 10^{-2}$, about $100$ times the terrestrial standard mean ocean water value of $D/H = 1.6 \times 10^{-4}$.
-Subsequent ground-based and orbiter spectroscopy refined the Venusian value upward to about $(2.4 \pm 0.4) \times 10^{-2}$ {cite:p}`deBergh1991`, corresponding to the now widely quoted enrichment factor of $\sim 150$ relative to Earth.
+Subsequent Earth-based near-IR night-side spectroscopy refined the value to $(1.9 \pm 0.6) \times 10^{-2}$, corresponding to $\sim 120 \pm 40$ times terrestrial {cite:p}`deBergh1991`; later high-resolution measurements have converged on the now widely quoted enrichment factor of $\sim 150 \pm 30$ relative to Earth {cite:p}`Widemann2023`.
 
 The physical reason is straightforward.
 In hydrodynamic escape (or any escape mechanism in which the energy per particle is comparable to the escape energy), the lighter isotope escapes more efficiently than the heavier one, because the lighter molecules acquire higher thermal velocities for a given temperature.
@@ -742,8 +732,8 @@ $$
 $$
 
 The fractionation factor $\alpha$ depends on the escape regime, and two limiting cases give very different answers.
-In **diffusion-limited escape**, the rate-limiting step is upward diffusion of hydrogen through the homopause and the fractionation factor scales with the mass ratio, $\alpha \approx m_{\mathrm{H}}/m_{\mathrm{D}} \approx 0.5$.
-In a **thermal-Jeans approximation** that ignores the exponential suppression of heavy species at the exobase and uses only the bare thermal-velocity ratio, $\alpha \approx \sqrt{m_{\mathrm{H}}/m_{\mathrm{D}}} \approx 0.71$.
+In a **mass-ratio limit** (the strongest defensible fractionation), $\alpha \approx m_{\mathrm{H}}/m_{\mathrm{D}} \approx 0.5$.
+In a **thermal-velocity limit** (the weakest defensible fractionation, using only the Maxwell-Boltzmann velocity ratio at fixed temperature), $\alpha \approx \sqrt{m_{\mathrm{H}}/m_{\mathrm{D}}} \approx 0.71$.
 Setting $R/R_0 = 150$ and solving $f = 150^{1/(\alpha-1)}$ gives $f_{\mathrm{diff}} \approx 150^{-2} \approx 4 \times 10^{-5}$ in the diffusion-limited limit, and $f_{\mathrm{Jeans}} \approx 150^{-3.4} \approx 4 \times 10^{-8}$ in the bare thermal-velocity limit.
 Multiplying the present water column ($\sim 2$ cm of global equivalent layer in the lower atmosphere) by $1/f$ then implies an initial water inventory of order *several hundred metres* of global equivalent depth in the diffusion-limited case (a shallow Earth ocean), or order *several hundred kilometres* in the bare thermal-velocity case, which corresponds to more than 100 Earth-ocean masses and is plainly unphysical for a delivery scenario.
 The contradiction in the second case is itself instructive: a pure velocity-tail interpretation of hydrogen escape cannot be the full story.
@@ -912,8 +902,8 @@ This is the agenda we will pursue in {ref}`lecture13`.
 The 2030s will be a transformative decade for Venus science, with three new orbital missions and at least one in-situ probe planned.
 **NASA's DAVINCI** (Deep Atmosphere Venus Investigation of Noble gases, Chemistry, and Imaging) is expected to launch in $2029$--$2030$ and will release an instrumented descent probe into the atmosphere of Venus to measure noble gas isotopic abundances, atmospheric chemistry, and surface morphology during the descent.
 The noble gas measurements are particularly important: they provide the time-integrated record of atmospheric escape that should distinguish between the early-loss and late-loss scenarios for Venus' water history.
-**NASA's VERITAS** (Venus Emissivity, Radio Science, InSAR, Topography, and Spectroscopy) will launch later in the 2020s and will provide global high-resolution radar topography and near-infrared surface emissivity, which will resolve the tessera composition question and constrain the present-day style of mantle convection through high-precision measurement of the moment of inertia and the tidal Love numbers.
-**ESA's EnVision** is expected to launch in $2031$ and combines synthetic-aperture radar at multiple frequencies, atmospheric spectroscopy, and a subsurface radar sounder; its science goals include searching for ongoing volcanism, mapping near-surface water (if any), characterising the radar properties of tessera regions, and measuring the gravity field at unprecedented resolution.
+**NASA's VERITAS** (Venus Emissivity, Radio Science, InSAR, Topography, and Spectroscopy) is currently scheduled for launch no earlier than $2031$ and will provide global high-resolution radar topography and near-infrared surface emissivity, which will resolve the tessera composition question and constrain the present-day style of mantle convection through high-precision measurement of the moment of inertia and the tidal Love numbers.
+**ESA's EnVision** is expected to launch in May $2032$ and combines synthetic-aperture radar at multiple frequencies, atmospheric spectroscopy, and a subsurface radar sounder; its science goals include searching for ongoing volcanism, mapping near-surface water (if any), characterising the radar properties of tessera regions, and measuring the gravity field at unprecedented resolution.
 
 
 In parallel, theoretical modelling is advancing rapidly: 3D climate models of early Venus {cite:p}`Way2016,Turbet2021`, coupled magma-ocean atmosphere-interior models {cite:p}`Hamano2013,Gillmann2022`, and thermo-chemical models of the long-term atmospheric evolution {cite:p}`Lammer2018,Gillmann2022` are converging on a coherent picture of how the early divergence of Earth and Venus could have happened and what observations would distinguish the remaining alternatives.
@@ -926,9 +916,10 @@ The phosphine controversy of $2020$ ({ref}`lecture06`) brought this question bri
 :width: 45%
 :align: center
 
-Probability density function for the proportion of carbonaceous-chondrite-like material in the bodies that accreted onto early Earth, derived from chromium isotopic constraints by {cite:t}`Dauphas2017` (Cr panel of their original five-isotope figure).
-The bulk of the proto-Earth (the first $\sim$60% of the mass) was built from non-carbonaceous (NC, inner-Solar-System) material, with carbonaceous-chondrite material contributing only the last few percent of accretion (the "late veneer", indicated by the red triangle).
-This is the isotopic version of the dichotomy seen in noble gases ({cite:t}`Zahnle2007`) and supports a model in which Earth's water was delivered late, by a small fraction of carbonaceous material; the O, Ti, Ni, Mo, and Ru tracers from the same study (not reproduced here) tell a consistent story.
+Probability density function for the chromium-bearing fraction of Earth's accreting mass as a function of the cumulative accreted mass fraction, from {cite:t}`Dauphas2017` (Cr panel of their five-isotope Fig. 1).
+The red triangle on the $x$-axis marks $x_{0.95} = 0.85$, the mass fraction at which $95\%$ of Earth's present mantle Cr inventory was delivered, demonstrating that Cr is back-loaded toward the second half of accretion.
+Combined with the O, Ti, Ni, Mo, and Ru tracers from the same study (not reproduced here), {cite:t}`Dauphas2017` reconstruct three accretion stages: stage I ($0\text{--}60\%$ of Earth's mass) is best fit by $\sim 51\%$ enstatite-meteorite-like (E-type) plus $\sim 40\%$ ordinary-chondrite plus $\sim 9\%$ carbonaceous-chondrite (CO/CV) material; stages II ($60\text{--}99.5\%$) and III (the last $0.5\%$, the "late veneer") are essentially $100\%$ E-type.
+The carbonaceous component, and therefore the bulk of Earth's water if it was delivered with that material, was concentrated in the early stages of main accretion rather than in the late veneer.
 ```
 
 
