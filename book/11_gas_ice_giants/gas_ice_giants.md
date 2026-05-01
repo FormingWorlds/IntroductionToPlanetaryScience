@@ -89,7 +89,7 @@ Crescent Jupiter and the Great Red Spot imaged by Juno's JunoCam during the thir
 ```
 
 Jupiter's banded appearance reflects an atmosphere organised into about fifteen alternating zonal jets stretching from pole to pole.
-The jets reach velocities of order 180 m s$^{-1}$ at the equator and at several mid-latitude bands {cite:p}`Showman2020`.
+The jets reach velocities of order 180 m s$^{-1}$ at the equator and at several mid-latitude bands {cite:p}`dePaterLissauer2010`.
 Bright zones correspond to rising air masses topped by ammonia clouds, while darker belts correspond to descending air that exposes deeper, browner haze layers.
 The pattern is far more stable than terrestrial weather: individual jets persist for decades, and the global zone-belt structure, although it changes in detail, has been recognisable for the entire era of telescopic observation.
 Embedded in this flow are storms of all sizes, the most famous of which is the **Great Red Spot** (GRS), an anticyclonic vortex in the southern hemisphere that has been observed continuously since at least 1830 and possibly since the seventeenth century.
@@ -106,13 +106,13 @@ Cluster of cyclones encircling Jupiter's north pole, imaged by Juno's JIRAM ther
 :name: fig:jupiter_s_pole
 :width: 75%
 
-Jupiter's south pole as seen by JunoCam in visible light. A central cyclone is surrounded by five companion cyclones, each $\sim$1000 km across. Unlike the north pole, the south pole hosts a pentagonal arrangement, demonstrating that the polar cyclone clusters are stable but not unique solutions of the deep-jet dynamics. Image credit: NASA/JPL-Caltech/SwRI/MSSS/Betsy Asher Hall/Gervasio Robles. See {cite:t}`Adriani2018`.
+Jupiter's south pole as seen by JunoCam in visible light. A central cyclone (diameter $\sim$5{,}800 km) is surrounded by five companion cyclones, each $\sim$5{,}600--7{,}000 km across. Unlike the north pole (where the central cyclone is encircled by eight companions $\sim$4{,}000--4{,}600 km in diameter), the south pole hosts a pentagonal arrangement, demonstrating that the polar cyclone clusters are stable but not unique solutions of the deep-jet dynamics. Image credit: NASA/JPL-Caltech/SwRI/MSSS/Betsy Asher Hall/Gervasio Robles. See {cite:t}`Adriani2018`.
 ```
 
 Some of the most striking results from Juno concern the polar regions of Jupiter, which were not seen at high resolution before the spacecraft's arrival in 2016.
 Both poles are dominated by clusters of long-lived cyclones arranged in remarkably stable polygonal patterns: the north pole hosts a central cyclone surrounded by eight others, while the south pole hosts a central cyclone surrounded by five {cite:p}`Adriani2018`.
 The pattern persists across multiple Juno orbits and is currently the best constraint on the structure and depth of polar weather on a gas giant.
-Juno gravity science has also constrained the depth to which the equatorial zonal jets extend: by detecting subtle north-south asymmetries in the gravity field, {cite:t}`Kaspi2018` showed that the jets must penetrate to $\sim$3000 km depth, a substantial fraction of the molecular hydrogen envelope.
+Juno gravity science has also constrained the depth to which the equatorial zonal jets extend: by detecting subtle north-south asymmetries in the gravity field, {cite:t}`Kaspi2018` showed that the jets penetrate to several thousand kilometres depth (an exponential decay scale of $\sim$1{,}800 km, with the flow falling to negligible speeds by $\sim$3{,}000 km), a substantial fraction of the molecular hydrogen envelope.
 Below this depth the magnetic stress associated with metallic hydrogen damps the differential rotation, and the deep interior approaches solid-body rotation.
 
 The aurorae of Jupiter, the most powerful in the solar system, are powered by a combination of magnetospheric processes ({ref}`lecture04`) and the heavy mass loading from Io, whose volcanism feeds about $1$ tonne s$^{-1}$ of sulphur and oxygen into the Jovian magnetosphere.
@@ -180,7 +180,7 @@ The case for a subsurface ocean on Europa is strong and rests on multiple indepe
 The morphology of chaos terrain is most easily explained by transient melting near the base of the ice shell {cite:p}`Carr1998`.
 Galileo magnetometer data show an induced magnetic moment that requires a global, electrically conducting layer near the surface, most plausibly a salty subsurface ocean responding to the time-varying Jovian magnetic field as Europa orbits {cite:p}`Khurana1998`.
 Hubble Space Telescope ultraviolet imaging detected possible water vapour plumes near the south pole {cite:p}`Roth2014,Sparks2017`, although the detections are at the limit of HST sensitivity and remain debated.
-Modern estimates place the ice shell at 15--25 km thick and the ocean below at $\sim$100 km deep, with a total volume comparable to Earth's oceans.
+Post-Galileo estimates place the ice shell somewhere in the range 6--25 km depending on the technique (multiringed-impact morphology vs. convection-onset analyses), and the ocean below at $\sim$100 km deep, with a total volume comparable to Earth's oceans.
 The continued existence of this liquid water requires sustained tidal heating, which is provided by Europa's eccentricity in the Laplace resonance with Io and Ganymede.
 
 NASA's **Europa Clipper** mission, launched in October 2024, will arrive at Jupiter in 2030 and conduct approximately fifty close flybys of Europa from a Jupiter-orbiting trajectory {cite:p}`HowellPappalardo2020,Phillips2014`.
@@ -316,7 +316,7 @@ Saturn's hexagonal polar jet imaged by Cassini, false-colour view (PIA14946). Th
 The most distinctive feature of Saturn's atmosphere is the **hexagonal jet stream** at $\sim 78^\circ$ N latitude, a six-sided standing wave that has been present continuously since Voyager observed it in 1981 and was mapped in detail by Cassini through its 13-year tour.
 The hexagon is interpreted as a Rossby wave locked to a strong eastward zonal jet whose meridional shear sets the wavenumber of the standing pattern; laboratory experiments with rotating-tank flows can reproduce stable polygonal jet patterns in similar conditions, although the exact physical mechanism that selects six rather than five or seven sides is not yet definitively understood.
 
-Saturn's equatorial jet is one of the fastest in the solar system, with peak speeds reaching $\sim$400 m s$^{-1}$, more than double the equivalent on Jupiter, though it is itself surpassed by Neptune's $\sim$580 m s$^{-1}$ retrograde equatorial flow (see Part 2).
+Saturn's equatorial jet is one of the fastest in the solar system, with peak speeds reaching $\sim$400 m s$^{-1}$, more than double the equivalent on Jupiter, though it is itself surpassed by Neptune's $\sim$450 m s$^{-1}$ westward equatorial flow (see Part 2).
 The "Great White Storms" are massive convective outbursts that erupt every $\sim$30 years (one Saturnian year), span thousands of kilometres, and circle the planet within a few months before dissipating.
 The most recent, in 2010--2011, was studied in detail by Cassini and produced unique constraints on the moist convection of water vapour at depth.
 Saturn's modest $26.7^\circ$ axial tilt also imposes strong seasonal forcing, and the planet's high northern latitudes have brightened markedly over the Cassini mission as they emerged from polar winter.
@@ -358,17 +358,18 @@ The age of Saturn's rings has been a long-standing question.
 For most of the twentieth century, the default assumption was that the rings were primordial, formed at the same time as Saturn itself, and had simply persisted for 4.5 Gyr.
 This view was overturned by Cassini Grand Finale observations and by analyses of ring evolution.
 {cite:t}`Iess2019` measured the total mass of the ring system using gravity science and found that it is much smaller than would be required for a primordial origin: the rings should have accumulated infalling micrometeorite material over 4.5 Gyr that would have darkened them substantially below the bright ice we observe.
-Instead, the brightness, mass, and composition together favour an age of order 100 Myr, much younger than Saturn itself {cite:p}`Crida2019`.
+On this basis, the brightness, mass, and composition together have been argued to favour an age of order $10^8$ years, much younger than Saturn itself.
+This young-rings interpretation has been challenged by {cite:t}`Crida2019`, who showed that the present-day ring mass measured by Cassini is also consistent with viscous evolution from an arbitrarily massive primordial ring, so that the small mass alone does not uniquely date the rings.
 
-The young-rings hypothesis is reinforced by direct observations of "ring rain", the ongoing transfer of mass from the rings into Saturn's upper atmosphere.
+The young-rings hypothesis is, however, reinforced by direct observations of "ring rain", the ongoing transfer of mass from the rings into Saturn's upper atmosphere.
 {cite:t}`Waite2018` measured an unexpectedly large flux of water and organic molecules raining onto the equatorial regions of Saturn from the inner D ring during the Grand Finale orbits.
-Combined with ground-based measurements of $\mathrm{H_3^+}$ emissions in Saturn's ionosphere modulated by ring-rain influx {cite:p}`ODonoghue2019`, the data imply that the ring system is currently losing mass at a rate that gives it a remaining lifetime of order $10^8$ years and a total age of comparable order.
-We are therefore living in an unusual moment in solar system history: a time when Saturn happens to have a spectacular ring system that may have formed only after the dinosaurs went extinct on Earth and may vanish before the next mass extinction.
+Combined with ground-based measurements of $\mathrm{H_3^+}$ emissions in Saturn's ionosphere modulated by ring-rain influx {cite:p}`ODonoghue2019`, the data imply that the ring system is currently losing mass at a rate that gives it a remaining lifetime of order $300$ Myr (with substantial uncertainty, $\sim 170$--$1100$ Myr at $1\sigma$) and a total age of comparable order.
+If this short lifetime is correct, we live in an unusual moment in solar system history: a time when Saturn happens to host a spectacular ring system that may have formed and that may dissipate within a small fraction of the planet's age.
 
 The mechanism that produced the rings is still debated.
-One possibility, advanced by {cite:t}`Wisdom2022`, is that an icy moon comparable in size to Mimas was scattered inside Saturn's Roche limit and tidally disrupted, simultaneously producing the ring system and explaining the unusual obliquity and orbital architecture of Saturn's mid-sized moons.
+One possibility, advanced by {cite:t}`Wisdom2022`, is that an icy moon roughly comparable in mass to Iapetus (a hypothetical body the authors named "Chrysalis") was destabilised through a 3:1 mean-motion resonance with Titan, scattered inside Saturn's Roche limit, and tidally disrupted, simultaneously producing the ring system and explaining the unusual obliquity and orbital architecture of Saturn's mid-sized moons.
 Other proposals invoke late captured Kuiper Belt objects.
-Older work by {cite:t}`Charnoz2009` argued that the rings could have formed earlier and continuously shed material into the planet, with infall rates higher than the simple young-ring estimate suggests; the age estimate then becomes an upper bound on the most recent significant perturbation rather than the formation age.
+{cite:t}`Charnoz2009` proposed an intermediate scenario in which a Mimas-class progenitor satellite was disrupted during the Late Heavy Bombardment, around 4 Gyr ago, with subsequent viscous evolution producing the present-day low-mass ring system; in this picture the rings are billion-year-old structures whose current low mass reflects long viscous spreading rather than a recent origin.
 The debate is healthy and ongoing.
 The pedagogical lesson, for an introductory course, is that solar system bodies do not all date from 4.5 Gyr ago: dramatic events on $\lesssim$Gyr timescales continue to shape what we see today.
 
@@ -614,7 +615,7 @@ Uranus has the most extreme axial tilt of any planet: $97.8^\circ$, which means 
 The pole therefore alternately points toward and away from the Sun over the planet's 84-year orbit, producing extreme seasonal cycles in which each pole experiences 42 years of continuous daylight followed by 42 years of darkness.
 The cause of the tilt is most plausibly a giant impact during the late stages of Uranus's formation, during which a body of order one Earth mass struck the proto-Uranus and torqued its spin axis nearly $90^\circ$ from the orbital normal.
 The challenge for any such scenario is to reconcile the impact with the fact that Uranus's regular satellites all orbit in the planet's equatorial plane: the same impact must have spun up an equatorial debris disk from which the satellites later re-accreted.
-{cite:t}`Morbidelli2012` explored this scenario in detail and showed that a single oblique impact early in the planet's history is consistent with the present satellite system if the disk was massive enough to dynamically reset the satellite plane.
+{cite:t}`Morbidelli2012` explored this scenario in detail and concluded that at least two giant impacts are needed: one or more earlier collisions to bring proto-Uranus from a Neptune-like obliquity ($\sim$30$^\circ$) part of the way over, followed by a final oblique impact onto a body that had already retained an equatorial debris disk, so that the present prograde, near-equatorial satellite system can be reproduced together with the extreme final tilt.
 
 ```{figure} figures/uranus_impact_kegerreis2018.avif
 :name: fig:uranus_impact
@@ -662,16 +663,16 @@ The Great Dark Spot of Neptune, an anticyclonic storm in the southern hemisphere
 :name: fig:neptune_scooter
 :width: 70%
 
-Neptune's southern hemisphere with the small bright cloud feature known informally as "Scooter" visible below the Great Dark Spot. The feature moved at about 380 m s$^{-1}$, providing some of the first measurements of Neptune's strong zonal winds. Image credit: NASA/JPL-Caltech.
+Neptune's southern hemisphere with the small bright cloud feature known informally as "Scooter" visible below the Great Dark Spot. Scooter is at about $42^\circ$ S latitude and drifts westward (i.e. against Neptune's spin) by $\sim$100 m s$^{-1}$ relative to the System III magnetic-rotation frame, one of the tracers used to map Neptune's mid-latitude zonal winds. Image credit: NASA/JPL-Caltech.
 ```
 
 Neptune presented a stark contrast to the muted Uranus when Voyager 2 arrived in 1989.
 The Great Dark Spot, a large anticyclonic storm comparable in size to Earth, dominated the southern hemisphere and was accompanied by bright methane cirrus clouds at higher altitudes.
-The small bright feature nicknamed "Scooter" raced eastward at $\sim$380 m s$^{-1}$, providing the first direct evidence of Neptune's strong zonal winds.
+The small bright feature nicknamed "Scooter" drifted westward (i.e. opposite to Neptune's spin direction) at $\sim$100 m s$^{-1}$ relative to the System III magnetic-rotation frame, providing one of the first tracer measurements of Neptune's strong mid-latitude zonal flow.
 By the time Hubble observed Neptune four years later in 1994, the Great Dark Spot had vanished.
 Subsequent dark spots have appeared and disappeared on decade timescales, demonstrating that Neptune's atmosphere supports vigorous, transient large-scale convection.
 
-Neptune has the fastest winds in the solar system, reaching peak speeds of $\sim$580 m s$^{-1}$ in the equatorial easterly jet {cite:p}`Smith1989`.
+Neptune has the fastest winds in the solar system, reaching peak westward speeds of $\sim$450 m s$^{-1}$ in the equatorial easterly jet (so named because the air blows from east to west, i.e. opposite to Neptune's rotation) {cite:p}`Smith1989`.
 This is counterintuitive because Neptune is also the planet that receives the least solar radiation, only about $1/900$ of Earth's solar constant.
 The driving energy must therefore come from the interior, which is consistent with Neptune's strong internal heat flow of about 2.6 times the absorbed solar flux {cite:p}`Pearl1991`.
 The energy source for Neptune's excess luminosity is debated.
@@ -705,8 +706,8 @@ Superionic ice is electrically conducting and can sustain a planetary dynamo eve
 Numerical simulations suggest that a thin convecting shell of superionic and ionic fluid can produce magnetic fields with the unusual multipolar, off-axis structure observed at Uranus and Neptune {cite:p}`Soderlund2020`.
 
 The magnetic fields of the ice giants are arguably the strangest in the solar system.
-At Uranus, the magnetic dipole is tilted $\sim 59^\circ$ from the rotation axis and is offset from the planet's centre by about a third of the planetary radius.
-At Neptune, the dipole is tilted $\sim 47^\circ$ and is similarly offset {cite:p}`Connerney1991`.
+At Uranus, the magnetic dipole is tilted $\sim 59^\circ$ from the rotation axis and is offset from the planet's centre by about a third of the planetary radius {cite:p}`StoneUranus1986`.
+At Neptune, the dipole is tilted $\sim 47^\circ$ and is even more strongly off-centre, displaced by roughly half a planetary radius from the geometric centre {cite:p}`Connerney1991`.
 Both planets show field morphologies dominated by quadrupole and higher-order components, very different from the dipole-dominated fields of Jupiter and Saturn.
 The leading explanation is that the dynamo source region in an ice giant is a thin shell of conducting fluid (the superionic / ionic ice region) rather than a deep convecting core, and that this thin-shell geometry naturally produces multipolar fields.
 The observed asymmetries impose strong constraints on the radial extent of the dynamo region and on its rotation profile, but a quantitative match to the data has yet to be achieved without free parameters.
@@ -784,7 +785,7 @@ The 10--20 $\Mearth$ ice-giant mass therefore appears to be a natural intermedia
 Despite the gas/ice dichotomy, the four giants share a number of striking commonalities.
 
 1. **All four emit more energy than they absorb from the Sun**, with the single exception of Uranus, which emits an anomalously low excess. The energy excess is largest for Saturn (driven by helium rain), substantial for Jupiter (driven by Kelvin-Helmholtz contraction), and large for Neptune (mechanism still uncertain). The fact that Uranus is the outlier is one of the central unsolved problems of giant planet science.
-2. **All four host strong zonal jet streams** and banded atmospheres, even though the underlying meteorology differs in detail. Counterintuitively, the equatorial jet speeds increase, not decrease, with distance from the Sun: Jupiter $\sim$180 m s$^{-1}$, Saturn $\sim$400 m s$^{-1}$, Uranus $\sim$250 m s$^{-1}$, Neptune $\sim$580 m s$^{-1}$. This pattern is the opposite of what naive solar-driven convection would predict and is a strong constraint on global circulation models.
+2. **All four host strong zonal jet streams** and banded atmospheres, even though the underlying meteorology differs in detail. Counterintuitively, the equatorial jet speeds tend to increase, not decrease, with distance from the Sun: Jupiter $\sim$180 m s$^{-1}$, Saturn $\sim$400 m s$^{-1}$, Uranus $\sim$250 m s$^{-1}$, Neptune $\sim$450 m s$^{-1}$ (westward at the equator). This pattern is the opposite of what naive solar-driven convection would predict and is a strong constraint on global circulation models.
 3. **All four have global magnetic fields** generated by electrically conducting fluid interiors. The dynamo source regions are very different: metallic hydrogen for Jupiter and Saturn, superionic / ionic fluid for Uranus and Neptune. The corresponding field morphologies are dipole-dominated for the gas giants (with anomalies like Jupiter's Great Blue Spot and Saturn's perfect axisymmetry) and multipolar, off-axis for the ice giants. The diversity is a natural test bed for dynamo theory.
 4. **All four have moon and ring systems**, but with very different inventories. Jupiter has the four large Galilean moons and a faint dust ring; Saturn has the spectacular A through F rings and dozens of small to mid-sized icy moons plus the giant Titan; Uranus has a dark, narrow ring system and five mid-sized moons; Neptune has dark ring arcs and the captured Triton. The contrasts encode the formation, dynamical, and bombardment histories of the outer solar system.
 5. **All four are natural laboratories for the gas giants and Neptune-mass planets that dominate the exoplanet population.** As we will see in {ref}`lecture13`, the most common types of exoplanets discovered to date are sub-Neptunes and Neptunes ($\sim 2$--4 $\Rearth$) and hot Jupiters ($\sim 1\,\Rjup$). Our four giants are the only such objects we can study at high spatial resolution, and they provide essential ground truth for the interpretation of the much larger exoplanet sample.
