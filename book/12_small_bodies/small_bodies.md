@@ -88,7 +88,7 @@ Polished and acid-etched surface of an iron meteorite displaying the **Widmanst�
 
 The Widmanstätten pattern shown in {numref}`fig:l12-widmanstatten` is one of the cleanest pieces of geophysical reasoning in cosmochemistry.
 The two Fe-Ni phases unmix during slow cooling, and the size of the lamellae depends on the cooling rate.
-By matching laboratory cooling experiments to natural specimens, one can read the original parent body radius directly off the etched surface: most iron meteorite groups come from bodies tens of kilometres in radius {cite:p}`Goldstein2009`.
+By matching laboratory cooling experiments to natural specimens, one can read the original parent body radius directly off the etched surface: most iron meteorite groups are now thought to come from bodies of order tens to hundreds of kilometres in radius, with several groups (notably IVA at $\sim 150 \pm 50$ km radius) consistent with parent bodies of $\sim 100$-$200$ km or larger, and a possible upper bound near $\sim 1000$ km {cite:p}`Goldstein2009`.
 
 Stony-iron meteorites are rare but spectacular.
 The **pallasites** ({numref}`fig:l12-pallasite`) are mosaics of olivine crystals embedded in a continuous Fe-Ni matrix.
@@ -277,7 +277,7 @@ In contrast, a single U-Pb system (just $^{238}\mathrm{U}$-$^{206}\mathrm{Pb}$) 
 The double system removes that assumption; this is why the Pb-Pb method is the gold standard for absolute dating in cosmochemistry.
 
 **Numerical result for CAIs.**
-{cite:t}`Connelly2012` performed Pb-Pb dating on individual CAIs from the Northwest Africa 2364 (NWA 2364) CV3 chondrite, after acid leaching to remove non-radiogenic contamination.
+{cite:t}`Connelly2012` performed Pb-Pb dating on individual CAIs from the Efremovka CV3 chondrite (CAIs 22E, 31E, 32E), complemented by the Allende CAI SJ101, after acid leaching to remove non-radiogenic contamination.
 The measured isochrons gave a CAI age of
 
 $$
@@ -318,7 +318,7 @@ Together with the chemical classification, they let us reconstruct, in some deta
 
 Achondrites, irons, and stony irons all come from parent bodies that experienced bulk melting.
 The energy source for that melting was almost certainly the decay of $^{26}\mathrm{Al}$, the short-lived chronometer mentioned above.
-With a half-life of 0.7 Myr and an initial abundance of about $5 \times 10^{-5}$ relative to stable $^{27}\mathrm{Al}$, $^{26}\mathrm{Al}$ delivered enough heat to melt the silicate fraction of any planetesimal larger than about 10 km that formed within the first $\sim 1.5$ Myr of CAI formation {cite:p}`Hevey2006`.
+With a half-life of 0.7 Myr and an initial abundance of about $5 \times 10^{-5}$ relative to stable $^{27}\mathrm{Al}$, $^{26}\mathrm{Al}$ delivered enough heat to melt the silicate fraction of any planetesimal larger than $\sim 20$ km that formed at the very start of the CAI epoch, with the minimum size rising rapidly thereafter ($> 80$ km by $t \approx 1.3$ Myr); planetesimals accreting after $\sim 1.5$ Myr never melt regardless of size {cite:p}`Hevey2006`.
 Bodies that formed later, after $^{26}\mathrm{Al}$ had decayed, remained cold inside and never melted.
 This is why the chondrites and the differentiated meteorites both exist: they sample bodies that formed at different times relative to the $^{26}\mathrm{Al}$ heating window.
 
@@ -388,14 +388,14 @@ Hf-W metal-silicate constraints on NC and CC iron meteorite parent bodies. Each 
 :width: 600px
 :align: center
 
-Formation of two distinct planetesimal populations in the disk simulation of {cite:t}`Lichtenberg2021`. The horizontal axis is orbital distance ($r$, AU) and the vertical axis is time after CAI formation ($t$, Myr). The colour shading shows the planetesimal formation rate $\dd \Sigma_{\text{plts}} / \dd t$ on a logarithmic scale; the solid purple line traces the migration of the water snow line. Reservoir I (red, early, dry, inner-disk, NC) forms inside the snow line during the disk build-up; Reservoir II (blue, later, ice-rich, outer-disk, CC) forms outside the snow line after the disk has cooled. The dashed grey lines bound the terrestrial-planet migration corridor. The bifurcation arises naturally from disk evolution and does not require Jupiter to act as a fully closed barrier. From Figure 1 of {cite:t}`Lichtenberg2021`.
+Formation of two distinct planetesimal populations in the disk simulation of {cite:t}`Lichtenberg2021`. The horizontal axis is orbital distance ($r$, AU) and the vertical axis is time after CAI formation ($t$, Myr). The colour shading shows the planetesimal formation rate $\dd \Sigma_{\text{plts}} / \dd t$ on a logarithmic scale; the solid purple line traces the migration of the water snow line. Reservoir I (red, early) forms at the outwardly migrating snow line during disk build-up, inheriting a dry, NC composition; Reservoir II (blue, later) forms at the inwardly migrating snow line in the cooled Class II disk, inheriting an ice-rich, CC composition. The dashed grey lines bound the terrestrial-planet migration corridor. The bifurcation arises naturally from disk evolution and does not require Jupiter to act as a fully closed barrier. From Figure 1 of {cite:t}`Lichtenberg2021`.
 ```
 
 
 #### Interpretation 1: Jupiter as an early physical barrier (Kruijer et al. 2017)
 
 The first proposed mechanism, and historically the most influential, was put forward by {cite:t}`Kruijer2017` based on combined Hf-W and isotope data.
-By comparing the $^{182}\mathrm{Hf}$-$^{182}\mathrm{W}$ core-formation ages of NC and CC iron meteorites, they showed that NC parent bodies formed at $\lesssim 0.4$ Myr after CAIs while CC parent bodies formed somewhat later, between $\sim 0.9$ and $\sim 3$ Myr.
+By comparing the $^{182}\mathrm{Hf}$-$^{182}\mathrm{W}$ core-formation ages of NC and CC iron meteorites and translating them via thermal modelling into accretion ages, they showed that NC parent bodies *accreted* at $\lesssim 0.4$ Myr after CAIs while CC parent bodies *accreted* at $0.9^{+0.4}_{-0.2}$ Myr; the corresponding core-formation ages are $\sim 0.3$-$1.8$ Myr (NC) and $\sim 2.2$-$2.8$ Myr (CC).
 But during this overlap, the two reservoirs remained isotopically distinct.
 Something must have prevented inward radial drift of small CC-affinity dust grains into the NC region.
 
@@ -405,6 +405,7 @@ The NC reservoir, isolated inside Jupiter's orbit, evolved separately from the C
 For this to work, Jupiter had to be in place very early indeed: the timing constraint is approximately $1$ Myr after CAI formation.
 This was the first widely accepted physical interpretation of the NC-CC split and had the side effect of pushing Jupiter's formation timescale earlier than most pre-2017 disk models had favoured.
 It is consistent with the modern picture that giant planet cores grow primarily by **pebble accretion** rather than slow planetesimal accretion ({ref}`lecture02`).
+Subsequent re-analysis of cosmic-ray-exposure corrections {cite:p}`SpitzerPt2021` has revised the NC core-formation ages downward by $\sim 0.8$ Myr, suggesting NC and CC parent bodies in fact accreted approximately contemporaneously within $\sim 1$ Myr of CAI formation but at different radial locations in the disk; in this updated reading the radial separation, rather than the accretion delay, is the more robust constraint that the Jupiter-barrier picture must satisfy.
 
 
 #### Interpretation 2: snow-line migration and pebble isolation (Lichtenberg et al. 2021)
@@ -619,7 +620,7 @@ Cumulative size-frequency distribution of near-Earth objects as a function of ab
 To order of magnitude, the rates are:
 
 - **10 m diameter** ($\sim$10 kt energy): roughly once per year, mostly as harmless airbursts in the upper atmosphere.
-- **20 m diameter** ($\sim$0.5 Mt): once per decade or so. The 2013 Chelyabinsk event ({numref}`fig:l12-chelyabinsk`) was a 19 m, $\sim 12{,}000$ tonne object that produced an airburst above Russia, shattering windows over a wide area and injuring about 1{,}500 people {cite:p}`Brown2013`.
+- **20 m diameter** ($\sim$0.5 Mt): once per decade or so. The 2013 Chelyabinsk event ({numref}`fig:l12-chelyabinsk`) was a 19 m object that entered the atmosphere at $17^{\circ}$ and produced an airburst peaking near 30 km altitude, releasing $\sim 500 \pm 100$ kt of TNT-equivalent energy, shattering windows over a wide area and injuring about 1{,}500 people {cite:p}`Brown2013`.
 - **50 m diameter** ($\sim 10$ Mt): once per few millennia. The 1908 Tunguska event ({numref}`fig:l12-tunguska`) was an airburst of approximately this energy that flattened $\sim 2{,}000$ km$^2$ of Siberian forest.
 - **140 m diameter** (PHA threshold, $\sim$300 Mt): once per $\sim 30{,}000$ years. Capable of regional devastation.
 - **1 km diameter** ($\sim 10^5$ Mt): once per $\sim 500{,}000$ years. Capable of global climate disruption (the "civilisation-ending" threshold).
@@ -655,7 +656,7 @@ The Vera C. Rubin Observatory on Cerro Pachón, Chile, photographed inside the t
 
 The second prerequisite is **deflection**.
 The DART mission (Double Asteroid Redirection Test, NASA) flew the first practical demonstration in 2022, using a $\sim 600$ kg spacecraft as a kinetic impactor on **Dimorphos**, the small moon of the binary asteroid (65803) Didymos.
-The orbital period of Dimorphos around Didymos shortened by approximately 33 minutes, a much larger effect than would be expected from simple momentum transfer; the additional momentum came from the recoil of the ejecta plume the impact generated, a physical effect quantified by the *momentum-transfer enhancement factor* $\beta \approx 3.6$ {cite:p}`Daly2023,Cheng2023`.
+The orbital period of Dimorphos around Didymos shortened by approximately 33 minutes, a much larger effect than would be expected from simple momentum transfer; the additional momentum came from the recoil of the ejecta plume the impact generated, a physical effect quantified by the *momentum-transfer enhancement factor* $\beta = 3.61^{+0.19}_{-0.25}$ {cite:p}`Cheng2023`. The orbital period change of $33.0 \pm 1.0$ minutes was measured by {cite:t}`Thomas2023`, with a detailed reconstruction of the impact site and Dimorphos shape provided by {cite:t}`Daly2023`.
 DART is the first time human beings have measurably altered the orbit of a celestial body.
 
 That a small moon can stably orbit Didymos at all requires that its orbit lie inside the primary's **Hill sphere**, the region in which the gravity of the asteroid dominates over the tidal pull of the Sun.
@@ -675,7 +676,7 @@ The same calculation applied to other binary asteroids shows that stable mutual 
 :width: 700px
 :align: center
 
-Measured photometric lightcurves of the Didymos-Dimorphos binary system on 2 October 2022, six days after the DART impact. Top: differential magnitude folded to the 2.26 hr rotation period of Didymos, with a ninth-order Fourier fit (black). Bottom: residual lightcurve folded to the new $11.372$ hr orbital period of Dimorphos, with the primary (Dimorphos in front of Didymos) and secondary (Dimorphos in eclipse behind Didymos) eclipse minima labelled. The orbital period was reduced by $33.0 \pm 1.0$ minutes (3$\sigma$) by the kinetic impact, much larger than expected from simple momentum transfer alone, indicating substantial momentum enhancement from the ejecta plume. From Figure 3 of {cite:t}`Daly2023`.
+Measured photometric lightcurves of the Didymos-Dimorphos binary system on 2 October 2022, six days after the DART impact. Top: differential magnitude folded to the 2.26 hr rotation period of Didymos, with a ninth-order Fourier fit (black). Bottom: residual lightcurve folded to the new $11.372$ hr orbital period of Dimorphos, with the primary (Dimorphos in front of Didymos) and secondary (Dimorphos in eclipse behind Didymos) eclipse minima labelled. The orbital period was reduced by $33.0 \pm 1.0$ minutes (3$\sigma$) by the kinetic impact, much larger than expected from simple momentum transfer alone, indicating substantial momentum enhancement from the ejecta plume. From Figure 3 of {cite:t}`Thomas2023`.
 ```
 
 ESA's **Hera** mission, launched in October 2024, is en route for arrival in 2026 to survey the Dimorphos impact site, refine the impact crater's size, and pin down the momentum-transfer efficiency to high precision {cite:p}`Michel2022`.
@@ -755,7 +756,7 @@ In a single nine-day high-resolution observing window, New Horizons mapped Pluto
 True-colour Ralph instrument image of Pluto acquired by New Horizons during the 2015 flyby. The bright heart-shaped feature is Tombaugh Regio; the western lobe is the nitrogen-ice basin Sputnik Planitia. The dark equatorial band is Cthulhu Macula, a tholin-rich plain. The image is constructed from blue, red, and near-IR filters and stretched linearly to maximum reflectance per channel. From Figure 3 of {cite:t}`Stern2015`.
 ```
 
-Pluto's bulk properties are: radius $1188.3 \pm 1.6$ km, mass $1.303 \times 10^{22}$ kg, mean density $1854$ kg m$^{-3}$ {cite:p}`Stern2015`.
+Pluto's bulk properties are: radius $1187 \pm 4$ km, mass $1.303 \times 10^{22}$ kg, mean density $1860 \pm 13$ kg m$^{-3}$ {cite:p}`Stern2015`.
 The density implies an interior of roughly two-thirds rock and one-third water ice, similar in proportion to other large outer solar-system bodies.
 The surface is a complex of nitrogen, methane, and carbon monoxide ices on top of a water-ice "bedrock" that, at Pluto's surface temperature of $\sim 40$ K, is mechanically as strong as terrestrial silicate rock.
 
@@ -914,7 +915,7 @@ The inner Oort cloud may also be the source of "centaur shower" events, brief ep
 ### Comets: composition, structure, and activity
 
 A comet is a small icy body that becomes active when its perihelion brings it close enough to the Sun for its surface ices to sublimate.
-Fred Whipple's "dirty snowball" model {cite:p}`Whipple1950`, formulated 75 years ago, has been confirmed in essentially every detail by direct observation: a comet is a mixture of water ice (the dominant volatile), other ices ($\mathrm{CO}$, $\mathrm{CO_2}$, $\mathrm{CH_4}$, $\mathrm{NH_3}$, $\mathrm{CH_3OH}$, $\mathrm{HCN}$, and others), refractory dust (silicates and sulfides), and complex organic molecules.
+Fred Whipple's "dirty snowball" model {cite:p}`Whipple1950`, formulated in 1950, has been confirmed in essentially every detail by direct observation: a comet is a mixture of water ice (the dominant volatile), other ices ($\mathrm{CO}$, $\mathrm{CO_2}$, $\mathrm{CH_4}$, $\mathrm{NH_3}$, $\mathrm{CH_3OH}$, $\mathrm{HCN}$, and others), refractory dust (silicates and sulfides), and complex organic molecules.
 The bulk porosity is high, around $50$-$75\%$, and the bulk density is correspondingly low, of order $0.5$ g cm$^{-3}$ for measured comets.
 
 ```{figure} figures/comet_diagram.svg
@@ -1083,7 +1084,7 @@ The C-type near-Earth asteroid (162173) Ryugu imaged by Hayabusa2 ONC-T on 12 Ju
 **OSIRIS-REx** (NASA, 2016--2023) visited the carbonaceous (B-type) asteroid (101955) **Bennu**, a 490-m diameter rubble pile with a similar shape to Ryugu.
 After two years of remote characterisation, the spacecraft executed a "touch-and-go" sample-collection event in October 2020, then returned to Earth and dropped its sample capsule in the Utah desert in September 2023.
 The total recovered sample was approximately $121$ g, far in excess of the original $\sim 60$ g goal {cite:p}`Lauretta2024`.
-First analyses show hydrated phyllosilicates, magnesium and sodium phosphates, carbonates (including a striking abundance of magnesium carbonate veins), carbon-rich organic matter, and a suite of amino acids and nucleobases, with high water content and a CM-like to CI-like bulk composition.
+First analyses show hydrated phyllosilicates, magnesium and sodium phosphates, carbonates (including a striking abundance of magnesium carbonate veins), carbon-rich organic matter, and a suite of amino acids and nucleobases, with high water content and a CI-chondrite-like bulk composition (with the most volatile elements more abundant than in CM, CO, CV, or CK chondrites) {cite:p}`Lauretta2024`.
 The mineralogy of Bennu is consistent with extensive aqueous alteration of an outer-solar-system precursor.
 
 ```{figure} figures/bennu_lauretta.avif
@@ -1120,14 +1121,14 @@ The Dinkinesh-Selam system imaged by NASA's Lucy mission during the 1 November 2
 ```
 
 The Lucy mission has already produced a remarkable surprise.
-During the test flyby of (152830) Dinkinesh in November 2023, the spacecraft discovered that Dinkinesh has a small *contact-binary moonlet* in orbit around it: two attached fragments about 220 m total length, the first such configuration ever seen orbiting another body {cite:p}`Levison2024`.
+During the test flyby of (152830) Dinkinesh in November 2023, the spacecraft discovered that Dinkinesh has a small *contact-binary moonlet* in orbit around it: two attached fragments approximately $210$ m and $230$ m in diameter (about $500$ m end to end), the first such configuration ever seen orbiting another body {cite:p}`Levison2024`.
 Dinkinesh is therefore one of the more dynamically peculiar small bodies known, with a satellite that appears to have formed from a separate gentle merger event.
 This is exactly the kind of unexpected discovery that makes flyby missions worth doing.
 
 
 ### Psyche: the metal world
 
-NASA's **Psyche** mission, launched in October 2023, is en route to (16) **Psyche**, the largest M-type asteroid (about 226 km across) with arrival scheduled for 2029.
+NASA's **Psyche** mission, launched in October 2023, is en route to (16) **Psyche**, the largest M-type asteroid ($\sim 222$ km effective diameter) with arrival scheduled for 2029.
 Psyche is one of the most enigmatic large asteroids: M-type spectra usually indicate metal-rich surfaces, and ground-based radar reflectivity measurements suggest that (16) Psyche has a much higher metal content than typical asteroids.
 The most popular interpretation is that Psyche is the **exposed core** of a once-larger differentiated planetesimal whose silicate mantle was stripped by a giant impact in the early solar system {cite:p}`ElkinsTanton2020`.
 If correct, Psyche would be the only place in the solar system where we can observe a planetary core directly, without any overlying mantle.
@@ -1137,7 +1138,7 @@ If correct, Psyche would be the only place in the solar system where we can obse
 :width: 600px
 :align: center
 
-The general shape of (16) Psyche viewed from the south pole, derived from a combined radar and adaptive-optics dataset. Left: ellipsoidal overlay (dashed) on the photometric model, with the major and intermediate axes ($a$, $b$) and the dark albedo regions Alpha, Bravo, and Charlie labelled. Right: alternative rounded-rectangular overlay that fits the photometric model better at the longitudes covering Bravo and Charlie. Approximate dimensions are $278 \times 232 \times 164$ km. The high radar reflectivity is interpreted as evidence of a metal-rich composition; the NASA Psyche mission will determine its actual nature in 2029. From Figure 8 of {cite:t}`Shepard2021`.
+The general shape of (16) Psyche viewed from the south pole, derived from a combined radar and adaptive-optics dataset. Left: ellipsoidal overlay (dashed) on the photometric model, with the major and intermediate axes ($a$, $b$) and the dark albedo regions Alpha, Bravo, and Charlie labelled. Right: alternative rounded-rectangular overlay that fits the photometric model better at the longitudes covering Bravo and Charlie. Approximate dimensions are $278 \times 238 \times 171$ km, with effective spherical diameter $\approx 222$ km. The high radar reflectivity is interpreted as evidence of a metal-rich composition; the NASA Psyche mission will determine its actual nature in 2029. From Figure 8 of {cite:t}`Shepard2021`.
 ```
 
 The Psyche spacecraft will determine the asteroid's composition, internal structure, and any remnant magnetic field.
@@ -1153,7 +1154,7 @@ Within eight years, three have been found.
 
 **1I/'Oumuamua** (October 2017), discovered by the Pan-STARRS survey, was the first.
 Its hyperbolic orbit immediately identified it as unbound to the Sun: it was *passing through* our solar system on a one-way trip.
-Tracking observations revealed a small ($\sim 100$-$200$ m long), highly elongated body with a distinctive light curve indicating an axial ratio of perhaps 5:1 or more, and a non-gravitational acceleration on its way out of the solar system that has never been fully explained {cite:p}`Meech2017,Micheli2018`.
+Tracking observations revealed a small ($\sim 100$-$200$ m long), highly elongated body with a distinctive light curve indicating an axial ratio of at least 6:1 (and possibly 10:1 or more, depending on the rotation pole orientation), making 'Oumuamua one of the most elongated bodies ever observed in our solar system; it also showed a non-gravitational acceleration on its way out of the solar system that has never been fully explained {cite:p}`Meech2017,Micheli2018,OumuamuaTeam2019`.
 'Oumuamua showed no detectable coma or dust tail at the limit of available observations, despite the non-gravitational acceleration suggesting comet-like outgassing.
 Its physical nature remains debated: candidates include a fragment of a tidally disrupted parent body, an extreme cometary nucleus rich in molecular hydrogen ice, a nitrogen ice fragment from a Pluto-like exoplanet, or, more exotically, a fractal aggregate.
 
@@ -1196,7 +1197,7 @@ Interstellar objects are therefore likely a substantial component of the small-b
 The European Space Agency's **Comet Interceptor** mission (planned launch 2029) is designed precisely to take advantage of this new population.
 Unlike traditional comet missions, which require a years-long cruise to a known target, Comet Interceptor will be parked at the Sun-Earth L2 Lagrange point and wait until a suitable target is discovered, either an unusually pristine long-period comet or an interstellar visitor.
 When a target is identified with enough warning time, Comet Interceptor will launch onto an intercept trajectory.
-The science payload includes three flyby probes (one main spacecraft and two smaller, JAXA-provided sub-probes) that will image and sample the target from multiple geometries during a single rapid flyby {cite:p}`Snodgrass2019`.
+The science payload includes three flyby probes (one main spacecraft, one smaller ESA sub-probe, and one smaller JAXA sub-probe) that will image and sample the target from multiple geometries during a single rapid flyby {cite:p}`Snodgrass2019`.
 
 ```{figure} figures/comet_interceptor.avif
 :name: fig:l12-comet-interceptor
