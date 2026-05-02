@@ -24,7 +24,7 @@ Exoplanet science is younger than most of the students taking this course.
 The first confirmed planets outside the solar system were announced in 1992 by Aleksander Wolszczan and Dale Frail, who used the radio pulsar **PSR B1257+12** as a precision clock {cite:p}`Wolszczan1992`.
 Pulsars are the rapidly spinning, highly magnetised remnants of massive stars that have already gone supernova.
 The precision of their pulse arrival times rivals the best atomic clocks, and any unmodelled motion of the pulsar around a system barycentre shows up as a small periodic shift in those arrival times.
-The original 1992 *Nature* announcement reported two planets with minimum masses of about $2.8$ and $3.4\,\Mearth$ (assuming coplanar orbits) in $66$ and $98$ day orbits around the pulsar. The subsequent analysis by {cite:t}`Wolszczan1994`, which included the mutual gravitational perturbations between the two bodies, refined these masses to $4.3$ and $3.9\,\Mearth$ and additionally revealed a much smaller third body of about $0.02\,\Mearth$ in a $25$-day orbit.
+The original 1992 *Nature* announcement reported two planets with minimum masses of about $2.8$ and $3.4\,\Mearth$ (assuming coplanar orbits) in $66$ and $98$ day orbits around the pulsar. The subsequent analysis by {cite:t}`Wolszczan1994`, which detected the predicted near-3:2 mutual gravitational perturbation between the two bodies, confirmed these mass estimates (final values $3.4/\sin i\,\Mearth$ and $2.8/\sin i\,\Mearth$, with orbital inclinations greater than 60 degrees) and additionally revealed a much smaller third body of about $0.015\,\Mearth$ (roughly a lunar mass) in a $25.34$-day orbit.
 These were not the planets anyone was looking for.
 They are the survivors, or perhaps the second-generation products, of a supernova explosion.
 They remain a striking reminder that planets can form, or at least exist, in environments that have nothing to do with the textbook picture of star and disk we developed in {ref}`lecture02`.
@@ -78,7 +78,7 @@ A "true Earth twin" lies at the very edge of what current radial velocity instru
 The instrumental sensitivity floor has improved by roughly two orders of magnitude over the past three decades.
 ELODIE, the spectrograph that found 51 Peg b, achieved about 10 m/s precision.
 HARPS, commissioned at La Silla in 2003, reached about 1 m/s with stabilised optics, evacuated optical paths, and simultaneous wavelength reference {cite:p}`Mayor2003`.
-ESPRESSO, installed on the VLT in 2018 and combining four 8-m unit telescopes, has demonstrated repeatability at the 10 cm/s level {cite:p}`Pepe2021`.
+ESPRESSO, installed on the VLT in 2018 and combining four 8-m unit telescopes, has demonstrated photon-noise-limited single-exposure precision at the 10 cm/s level and long-term repeatability of about 0.5 m/s on the quietest standards {cite:p}`Pepe2021`.
 That number is no longer limited by photon statistics or by the spectrograph itself.
 It is limited by **stellar noise**: the granulation, oscillations, and starspot rotation of the photosphere of the host star itself produce velocity jitter at the 10 cm/s to 1 m/s level even on the quietest, most slowly rotating stars.
 Reducing this stellar contribution, by simultaneous activity diagnostics or by very long observing baselines, is now the central technical problem of precision radial velocity work.
@@ -284,13 +284,13 @@ The current sensitivity of direct imaging is dominated by the planet's brightnes
 Young giant planets, $\lesssim 100$ Myr old, are still radiating away the gravitational binding energy of their formation and are luminous in the infrared.
 Old planets, like Jupiter, have cooled and emit a thousand times less.
 The directly imaged planet population is therefore strongly biased toward young (10--500 Myr), massive ($> 1\,\Mjup$), wide-orbit ($> 10$ AU) giants around nearby stars.
-Notable systems include **HR 8799**, with four giant planets around a 30 Myr A-type star {cite:p}`Marois2008`, **$\beta$ Pictoris b/c** orbiting the 25 Myr A6V star embedded in the famous debris disk {cite:p}`Lagrange2010`, **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
+Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 60$ Myr (formal range $30$--$160$ Myr) {cite:p}`Marois2008`, **$\beta$ Pictoris b/c** orbiting the 25 Myr A6V star embedded in the famous debris disk {cite:p}`Lagrange2010`, **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
 
 ```{figure} figures/betapic_imaging.avif
 :name: fig:betapic
 :width: 80%
 
-The first ground-based direct image of $\beta$ Pictoris b, a $\sim 8\,\Mjup$ planet at $\sim 9$ AU from the central young A-type star. The two epochs (2003 left, 2009 right) show clear orbital motion in the projected sky position, decisively confirming a bound companion rather than a chance alignment. From {cite:t}`Lagrange2010`. The same star hosts an extensively imaged debris disk, an inner planet (b), and a more recently discovered second giant planet (c).
+The first ground-based direct image of $\beta$ Pictoris b, a $\sim 9\pm 3\,\Mjup$ planet (hot-start models) at $\sim 8$--$15$ AU from the central young A-type star. The two epochs (2003 left, 2009 right) show clear orbital motion in the projected sky position, decisively confirming a bound companion rather than a chance alignment. From {cite:t}`Lagrange2010`. The same star hosts an extensively imaged debris disk, an inner planet (b), and a more recently discovered second giant planet (c).
 ```
 
 PDS 70 deserves a special mention because it is the first system in which a planet was unambiguously detected **inside the gap of a still-present protoplanetary disk** {cite:p}`Keppler2018,Haffert2019`.
@@ -347,7 +347,7 @@ This is now the precision regime in which Jupiter analogues become accessible.
 
 The Gaia data are released in successive **data releases** (DR).
 DR2 (2018) and DR3 (2022) contained five-parameter astrometry (position, parallax, proper motion) for the full sample, plus first orbital fits for unresolved binaries and a small number of substellar companions {cite:p}`GaiaDR3`.
-**DR4**, expected in late 2026, will deliver epoch-by-epoch astrometric time series for the full mission and is projected to yield $10^2$ to $10^3$ confirmed astrometric exoplanets, primarily wide-orbit Jupiter analogues around nearby Sun-like stars {cite:p}`Perryman2014`.
+**DR4**, expected in late 2026, will deliver epoch-by-epoch astrometric time series for the full mission. The forecast for the nominal 5-year mission is $\sim 2 \times 10^4$ detectable astrometric exoplanet signatures (predominantly wide-orbit Jupiter analogues around nearby Sun-like stars), with the validated sample after follow-up confirmation likely to be a factor of several smaller {cite:p}`Perryman2014`.
 **DR5**, expected late in the decade, will use the full ten years of mission data and is projected to push the sensitivity into the sub-Jovian regime for the closest stars.
 The Gaia astrometric exoplanet catalogue will, for the first time, give a relatively unbiased census of long-period gas giants, the regime that radial velocity surveys can only reach with truly heroic decades-long observing programmes.
 
@@ -368,7 +368,7 @@ It is also sensitive to planets at projected separations of $0.5$--$10$ AU, a re
 The microlensing event itself is **one-shot**: the lens-source alignment is unique and never repeats, so there is no possibility of follow-up confirmation in the same way that radial velocity or transit detections allow.
 Consequences of this include a higher false-alarm rate in marginal events and the impossibility of subsequent characterisation of the host or the planet.
 Active microlensing surveys include OGLE in Chile, MOA in New Zealand, and KMTNet, a three-site network in Chile, South Africa, and Australia that achieves continuous coverage of the Galactic bulge.
-The **Nancy Grace Roman Space Telescope**, scheduled for launch in 2027, will conduct a dedicated microlensing survey of the Galactic bulge that is expected to find $\sim 1000$--$3000$ bound exoplanets at separations of 1--10 AU and roughly comparable numbers of free-floating, "rogue" planets unbound from any host {cite:p}`Penny2019`.
+The **Nancy Grace Roman Space Telescope**, scheduled for launch in 2027, will conduct a dedicated microlensing survey of the Galactic bulge that is expected to find $\sim 1400$ bound exoplanets at separations of $\sim 0.5$--$10$ AU, with mass sensitivity reaching down to lunar-mass bodies {cite:p}`Penny2019`. A comparable population of free-floating, "rogue" planets unbound from any host is anticipated and will be quantified by follow-up yield analyses.
 
 ### Timing methods
 
@@ -409,11 +409,11 @@ By pointing a single 0.95 m telescope continuously at the same patch of sky in t
 This is the prerequisite for inferring **occurrence rates**: how many planets of a given size and orbital period are present per star, regardless of whether they happened to be detected.
 
 The headline result of Kepler is that planets are common.
-Combining Kepler with later TESS results, the broad picture is that on average **at least one planet exists per main-sequence star** {cite:p}`Petigura2018`, and that small planets (radii below 4 Earth radii) are by far the most common kind.
+Combining Kepler with later TESS results, the broad picture is that on average **at least one planet exists per main-sequence star** {cite:p}`Fressin2013,Petigura2018`, and that small planets (radii below 4 Earth radii) are by far the most common kind.
 About half of all Sun-like stars host at least one such small planet on an orbit shorter than about 1 AU.
 **Hot Jupiters**, by contrast, occur around only 0.5--1\% of Sun-like stars {cite:p}`Fressin2013`: they dominate the early discovery catalogue purely because they are easy to find, not because they are typical.
 The fraction of Sun-like stars hosting an Earth-size planet in the habitable zone, known as $\eta_\oplus$, is harder to pin down because Earth-sized planets at 1 AU produce only a few transits over the full Kepler mission and are right at the detection floor.
-Recent estimates lie in the range $0.1$--$0.6$ depending on the precise definition of "habitable zone" and "Earth-size", with $\sim 0.3$ being a typical central value {cite:p}`Bryson2021`.
+Recent Kepler-DR25 estimates give central values $\eta_\oplus \sim 0.4$ for the conservative habitable zone (68% credible interval roughly $0.2$--$0.9$), depending on the precise definition of "habitable zone" and "Earth-size" {cite:p}`Bryson2021`.
 Whatever the precise number, $\eta_\oplus$ is clearly not small.
 Earth-class planets are an ordinary outcome of star formation, not a rare miracle.
 
@@ -428,7 +428,7 @@ Kepler-derived planet occurrence rates as a function of orbital period and plane
 :name: fig:bryson
 :width: 90%
 
-Marginalised differential occurrence rate of small planets from the Kepler analysis of {cite:t}`Bryson2021`. **Left**: occurrence per unit planetary radius, $\dd N / \dd R$, evaluated at $\Delta R = 0.25\,\Rearth$. **Right**: occurrence per unit instellation flux, $\dd N / \dd I$, evaluated at $\Delta I = 0.18$ (note the inverted x-axis, with low instellation on the right). Dark and light shaded bands are the 68\% and 95\% credible intervals. The observed occurrence rates are consistent with $\eta_\oplus \sim 0.1$--$0.6$ depending on the precise definition of habitable-zone Earth analogue. This is the range typically quoted in mission yield estimates for HWO and LIFE (see Part 3).
+Marginalised differential occurrence rate of small planets from the Kepler analysis of {cite:t}`Bryson2021`. **Left**: occurrence per unit planetary radius, $\dd N / \dd R$, evaluated at $\Delta R = 0.25\,\Rearth$. **Right**: occurrence per unit instellation flux, $\dd N / \dd I$, evaluated at $\Delta I = 0.18$ (note the inverted x-axis, with low instellation on the right). Dark and light shaded bands are the 68\% and 95\% credible intervals. The observed occurrence rates give central values of $\eta_\oplus \sim 0.4$ for the conservative habitable zone, with 68\% credible intervals of roughly $0.2$--$0.9$ depending on the precise definition of habitable-zone Earth analogue. This is the range typically quoted in mission yield estimates for HWO and LIFE (see Part 3).
 ```
 
 A particularly important "laboratory" target system is **TRAPPIST-1**, an ultra-cool dwarf at 12 parsecs hosting **seven** transiting Earth-sized planets in a tightly packed inner system, all within 0.06 AU {cite:p}`Gillon2017`.
@@ -566,7 +566,7 @@ But hot Neptunes, in the obvious sense of Neptune-sized planets at hot-Jupiter p
 :name: fig:neptunedesert
 :width: 90%
 
-The **hot Neptune desert** in the period-mass and period-radius planes from {cite:t}`Mazeh2016`. The shaded triangular region is empirically depleted of Neptune-mass planets. Both edges of the desert follow well-defined power laws; the upper edge is set by Roche-lobe overflow on inflated hot Jupiters and the lower edge by photoevaporation of less bound Neptune-mass envelopes. The desert is one of the strongest evidences for atmospheric mass loss as a major sculptor of close-in planets.
+The **hot Neptune desert** in the period-mass and period-radius planes from {cite:t}`Mazeh2016`. The shaded triangular region is empirically depleted of Neptune-mass planets. The upper edge follows a tight power law, plausibly set by Roche-lobe overflow on inflated hot Jupiters; the lower edge is more diffuse and has been variously attributed to photoevaporation, in-situ formation, and high-eccentricity migration with tidal circularization. The desert is one of the strongest pieces of evidence for atmospheric mass loss as a major sculptor of close-in planets.
 ```
 
 The desert is interpreted as the result of two processes acting on a population formed with thick H/He envelopes but with relatively weak gravitational binding.
@@ -785,7 +785,7 @@ A strong day-night contrast in the phase curve indicates inefficient heat redist
 :name: fig:wasp43
 :width: 90%
 
-JWST MIRI **phase curve** of the hot Jupiter **WASP-43 b**, from {cite:t}`Bell2024`. The top panel is the spectroscopic phase curve as a function of wavelength and orbital phase. The middle panel is the band-integrated white light curve, showing two transits, two secondary eclipses, and the smooth phase modulation of the planet's thermal flux as the dayside rotates in and out of view. The bottom panels are the dayside and nightside emission spectra and best-fit blackbody models. The retrieved nightside temperature is much colder than the dayside, evidence of a strong day-night contrast despite an atmosphere thick enough to imprint clear spectral features on the dayside.
+JWST MIRI **phase curve** of the hot Jupiter **WASP-43 b**, from {cite:t}`Bell2024`. The top panel is the spectroscopic phase curve as a function of wavelength and orbital phase. The middle panel is the band-integrated white light curve, showing one transit, two secondary eclipses, and the smooth phase modulation of the planet's thermal flux as the dayside rotates in and out of view. The bottom panels are the dayside and nightside emission spectra and best-fit blackbody models. The retrieved nightside temperature is much colder than the dayside, evidence of a strong day-night contrast despite an atmosphere thick enough to imprint clear spectral features on the dayside.
 ```
 
 A self-consistent transmission plus emission plus phase curve dataset constrains the wavelength-dependent thermal structure, the abundance of major absorbers, the wind circulation pattern, and the cloud distribution simultaneously.
@@ -797,7 +797,7 @@ The James Webb Space Telescope began science operations in mid-2022 and has fund
 Below we walk through the most important early results and the active controversies they have generated.
 
 **WASP-39 b** (a $0.28\,\Mjup$ hot Saturn) was the target of the JWST Transiting Exoplanet Early Release Science (ERS) programme.
-NIRSpec PRISM and G395H, NIRCam, and NIRISS observations together produced a transmission spectrum spanning $0.5$--$5.5$ $\mu$m with parts-per-million precision, showing **clean and unambiguous detections** of $\mathrm{H_2O}$, CO, $\mathrm{CO_2}$, Na, K, and $\mathrm{CH_4}$ {cite:p}`Rustamkulov2023,Alderson2023`.
+NIRSpec PRISM and G395H, NIRCam, and NIRISS observations together produced a transmission spectrum spanning $0.5$--$5.5$ $\mu$m with parts-per-million precision, showing **clean and unambiguous detections** of $\mathrm{H_2O}$, CO, $\mathrm{CO_2}$, Na, K, and $\mathrm{SO_2}$, alongside a clear non-detection of $\mathrm{CH_4}$ (3$\sigma$ upper limit $\sim 5$ ppm) that is itself diagnostic of the super-solar metallicity inferred for this atmosphere {cite:p}`Rustamkulov2023,Alderson2023`.
 
 ```{figure} figures/wasp39b_prism_spectrum.avif
 :name: fig:wasp39prism
@@ -884,7 +884,7 @@ This is a useful case study in how challenging it is to claim atmospheric detect
 
 **K2-18 b** is the case study that has drawn the most attention, and the most controversy.
 It is a sub-Neptune of $2.6\,\Rearth$ and $8.6\,\Mearth$ in the habitable zone of an M3 host star.
-{cite:t}`Madhusudhan2023` reported a JWST NIRISS plus NIRSpec transmission spectrum showing detections of $\mathrm{CH_4}$ and $\mathrm{CO_2}$, and a tentative detection of **dimethyl sulphide** ($\mathrm{(CH_3)_2 S}$, DMS) at the $\sim 3\sigma$ level.
+{cite:t}`Madhusudhan2023` reported a JWST NIRISS plus NIRSpec transmission spectrum showing detections of $\mathrm{CH_4}$ and $\mathrm{CO_2}$, and a marginal detection of **dimethyl sulphide** ($\mathrm{(CH_3)_2 S}$, DMS) at the $\sim 2\sigma$ level (significance dropping further when retrieval-pipeline detector offsets are allowed to float).
 On Earth, DMS is produced almost exclusively by marine phytoplankton, with no significant abiotic sources known.
 The Madhusudhan et al.\ team interpreted the detection as a tentative biosignature consistent with the **hycean** scenario discussed earlier: a sub-Neptune with a deep $\mathrm{H_2}$ atmosphere overlying a planet-wide liquid-water ocean at the base.
 
@@ -1000,14 +1000,14 @@ The primary goal is the detection of true Earth analogues in the habitable zones
 PLATO is also designed to provide stellar oscillation (asteroseismic) measurements of the host stars themselves, which gives much more precise stellar radii and ages than spectroscopy alone, propagating directly into much more precise planet radii.
 
 **Ariel** (Atmospheric Remote-sensing Infrared Exoplanet Large-survey) is an ESA medium-class mission scheduled for launch in 2029 {cite:p}`Tinetti2018`.
-Ariel will conduct a dedicated transmission and emission spectroscopic survey of approximately 1000 exoplanet atmospheres at $0.5$--$7.8\,\mu$m.
+Ariel will conduct a dedicated transmission and emission spectroscopic survey of approximately 1000 exoplanet atmospheres at $1.25$--$7.8\,\mu$m, with simultaneous narrow-band optical photometry at $0.5$--$1.2\,\mu$m.
 Unlike JWST, which observes a small number of targets in great depth, Ariel will observe a large number of targets at moderate depth, generating a statistical census of atmospheric composition as a function of planet size, equilibrium temperature, host star properties, and orbital parameters.
 The Ariel sample will span the full hot Jupiter through warm sub-Neptune range and is the first dedicated atmospheric statistics mission.
 
 **The Nancy Grace Roman Space Telescope** is a NASA flagship scheduled for launch in 2027.
 Roman is primarily a wide-field survey instrument with a 2.4 m mirror equal in diameter to HST but with a $100\times$ larger field of view.
 Two of its core programmes are exoplanet related.
-The microlensing survey in the Galactic bulge will, as discussed in Part 1, deliver $\sim 1000$--$3000$ bound exoplanets at separations of 1--10 AU and a comparable number of free-floating rogue planets {cite:p}`Penny2019`.
+The microlensing survey in the Galactic bulge will, as discussed in Part 1, deliver $\sim 1400$ bound exoplanets at separations of $\sim 0.5$--$10$ AU with sensitivity down to lunar masses {cite:p}`Penny2019`, plus a comparable but separately analysed sample of free-floating rogue planets.
 The coronagraph instrument will be a technology demonstration for the precursor of HWO-class direct imaging, achieving contrasts at the $10^{-8}$--$10^{-9}$ level on a small number of bright nearby stars at near-infrared wavelengths.
 
 ### Frontier missions, part 2: direct imaging of Earth analogues (2030s--2040s)
