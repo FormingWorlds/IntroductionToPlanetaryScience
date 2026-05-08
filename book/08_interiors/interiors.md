@@ -29,7 +29,7 @@ Paths of seismic P-waves through Earth's interior. P-waves refract as they pass 
 
 ```{figure} figures/shadow_zones_usgs.avif
 :name: fig:shadow-zones-usgs
-:width: 380px
+:width: 330px
 :align: center
 
 The **P-wave shadow zone** (104°-140° from the epicentre) labelled in this USGS schematic arises from refraction at the core-mantle boundary, where compressional wave speed drops sharply from $\sim$13.7 to $\sim$8.1 km s$^{-1}$. The companion **S-wave shadow zone** (not annotated here) is even larger: shear waves do not propagate through the liquid outer core at all, so no direct S arrivals are recorded beyond about 104° from the source. Together these two shadow zones provide the definitive evidence that the outer core is liquid. Credit: U.S. Geological Survey, public domain.

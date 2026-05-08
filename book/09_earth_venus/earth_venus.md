@@ -447,7 +447,7 @@ Reproduced from {cite:t}`Kopparapu2013`.
 
 ```{figure} figures/goldblatt2013_olr_spectrum.avif
 :name: fig:goldblatt-spectrum
-:width: 75%
+:width: 446px
 :align: center
 
 Thermal-radiance spectra of an Earth-like atmosphere as a function of wavelength for surface temperatures $T_\mathrm{s} = 280, 310, 340, 370, 400$ K (bottom to top), from {cite:t}`Goldblatt2013` Fig. 3(b).
@@ -597,7 +597,7 @@ On this view, Venus never had liquid surface water, and the present-day desiccat
 
 ```{figure} figures/hamano2013_two_types.avif
 :name: fig:hamano-two-types
-:width: 90%
+:width: 537px
 :align: center
 
 The two types of terrestrial planet identified by {cite:t}`Hamano2013` from coupled magma-ocean and atmosphere thermal-evolution models.
@@ -642,7 +642,7 @@ On the late-loss picture, Venus then loses its water gradually as the Sun bright
 
 ```{figure} figures/way2016_paleo_venus_temperature.avif
 :name: fig:way-paleo
-:width: 75%
+:width: 504px
 :align: center
 
 Three-dimensional climate model simulation of the surface air temperature on a hypothetical paleo-Venus at $2.9$ Ga with $75\%$ of present solar irradiance, from panel (a) of {cite:t}`Way2016` Fig. 2, plotted on a Mollweide global projection.

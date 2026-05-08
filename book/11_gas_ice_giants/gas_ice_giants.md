@@ -56,6 +56,7 @@ Below this depth the fluid conducts electricity well enough to support the dynam
 At the centre of the planet, models constrained by Juno gravity data converge on conditions near $\sim4000$ GPa and $\sim20{,}000$ K {cite:p}`Wahl2017,Militzer2022`.
 
 ```{figure} figures/jupiter_dilute_core_wahl2017.avif
+:align: center
 :name: fig:jupiter_dilute_core
 :width: 70%
 
@@ -82,8 +83,9 @@ As discussed in {ref}`lecture06`, the composition of the cloud layers is set by 
 Galileo probe mass spectrometer measurements during its 1995 atmospheric entry confirmed the layered structure but found the entry site unusually dry, a reminder that local meteorology can deviate strongly from horizontally averaged models {cite:p}`Niemann1998`.
 
 ```{figure} figures/jupiter_grs_juno.avif
+:align: center
 :name: fig:jupiter_grs
-:width: 65%
+:width: 437px
 
 Crescent Jupiter and the Great Red Spot imaged by Juno's JunoCam during the third close perijove in December 2016. The image is a citizen-science processing of public Juno data and shows the GRS, the train of white ovals known informally as the "string of pearls", and the long-lived storm Oval BA below the GRS. Image credit: NASA/JPL-Caltech/SwRI/MSSS, processed by Roman Tkachenko.
 ```
@@ -96,6 +98,7 @@ Embedded in this flow are storms of all sizes, the most famous of which is the *
 The GRS is shrinking: at the start of the twentieth century it spanned about 40{,}000 km, while today it has contracted to roughly 14{,}000 km, although the mechanisms driving its contraction remain debated.
 
 ```{figure} figures/jupiter_north_pole_cyclones_juno.avif
+:align: center
 :name: fig:jupiter_n_pole
 :width: 75%
 
@@ -103,6 +106,7 @@ Cluster of cyclones encircling Jupiter's north pole, imaged by Juno's JIRAM ther
 ```
 
 ```{figure} figures/jupiter_south_pole_juno.avif
+:align: center
 :name: fig:jupiter_s_pole
 :width: 75%
 
@@ -127,6 +131,7 @@ Modern remote sensing reveals about 400 active volcanic centres and a global hea
 This staggering heat flow is sustained by tidal flexing in the eccentric, locked-in 1:2:4 Laplace mean-motion resonance with Europa and Ganymede, identified theoretically by {cite:t}`Peale1979gas` immediately before the Voyager 1 flyby provided the first images of Io's volcanism in 1979.
 
 ```{figure} figures/io_loki_volcano.avif
+:align: center
 :name: fig:io_loki
 :width: 70%
 
@@ -134,6 +139,7 @@ Loki Patera, the largest volcanic depression on Io, imaged by Voyager 1 in 1979.
 ```
 
 ```{figure} figures/io_tvashtar_eruption.avif
+:align: center
 :name: fig:io_tvashtar
 :width: 65%
 
@@ -145,6 +151,7 @@ The largest volcanic centre, Loki Patera, is a $\sim$200 km wide lava lake that 
 Io's atmosphere is a tenuous, patchy mix of $\mathrm{SO_2}$ sublimating from frosts on the night side and venting from volcanic plumes; it freezes onto the surface on the night side and re-sublimes during local day, producing strong day-night asymmetries.
 
 ```{figure} figures/io_tidal_park2024.avif
+:align: center
 :name: fig:io_tidal
 :width: 90%
 
@@ -163,13 +170,15 @@ Its surface is dominated by water ice, criss-crossed by long fracture systems ca
 Crater counts are extraordinarily low: the surface age is only 40--90 Myr, which on a geologically inactive moon would be inexplicable {cite:p}`Pappalardo1999`.
 
 ```{figure} figures/europa_galileo_mosaic.avif
+:align: center
 :name: fig:europa_galileo
-:width: 75%
+:width: 326px
 
 High-resolution view of Europa's surface from the Galileo orbiter, showing the network of dark and bright lineae (long fractures), patches of chaos terrain, and the limited density of impact craters indicative of a young surface. Image credit: NASA/JPL-Caltech/SETI Institute.
 ```
 
 ```{figure} figures/europa_chaos_terrain.avif
+:align: center
 :name: fig:europa_chaos
 :width: 75%
 
@@ -194,13 +203,15 @@ It is the only known moon to possess an intrinsic dynamo magnetic field, a fact 
 Its interior is fully differentiated into a metallic iron core, a silicate mantle, and an outer ice layer that includes a subsurface liquid water ocean sandwiched between high-pressure ice phases.
 
 ```{figure} figures/ganymede_juno_closeup.avif
+:align: center
 :name: fig:ganymede_juno
-:width: 70%
+:width: 412px
 
 Ganymede imaged by JunoCam during the 7 June 2021 close flyby, the first close encounter with the moon since Galileo's mission ended in 2003. The image highlights the contrast between bright grooved terrain and darker ancient cratered terrain. Image credit: NASA/JPL-Caltech/SwRI/MSSS.
 ```
 
 ```{figure} figures/ganymede_grooves.avif
+:align: center
 :name: fig:ganymede_grooves
 :width: 75%
 
@@ -219,6 +230,7 @@ Its radius of 2410 km makes it nearly as large as Mercury, but its bulk density 
 This makes Callisto a useful counterpoint to the other Galileans, in which differentiation has run to completion.
 
 ```{figure} figures/callisto_global.avif
+:align: center
 :name: fig:callisto
 :width: 60%
 
@@ -226,6 +238,7 @@ Callisto in global colour view, assembled from Galileo and Voyager images. The s
 ```
 
 ```{figure} figures/callisto_cutaway.avif
+:align: center
 :name: fig:callisto_cutaway
 :width: 85%
 
@@ -247,6 +260,7 @@ Unlike Saturn's bright icy rings, Jupiter's are dusty and dark, dominated by mic
 The ring is therefore a continuously replenished, transient cloud of debris rather than a long-lived disk.
 
 ```{figure} figures/amalthea_juno.avif
+:align: center
 :name: fig:amalthea
 :width: 70%
 
@@ -266,6 +280,7 @@ The process simultaneously depletes helium from the upper envelope, which is con
 The same process occurs in Jupiter, but at a less advanced stage because Jupiter's interior is hotter and the immiscibility region is narrower.
 
 ```{figure} figures/saturn_interior_mankovich2021.avif
+:align: center
 :name: fig:saturn_interior
 :width: 70%
 
@@ -273,6 +288,7 @@ Saturn's heavy-element distribution $Z(r)$ (top), density $\rho(r)$ (middle), an
 ```
 
 ```{figure} figures/saturn_kronoseismology_mankovich2021.avif
+:align: center
 :name: fig:kronoseismology
 :width: 90%
 
@@ -290,6 +306,7 @@ There is no solid surface to give a fiducial spin, and unlike Jupiter, Saturn's 
 The current best value, $10$ h $33$ min $38$ s, comes from Cassini ring seismology rather than from radio measurements {cite:p}`Mankovich2019`.
 
 ```{figure} figures/saturn_rotation_mankovich2019.avif
+:align: center
 :name: fig:saturn_rotation
 :width: 70%
 
@@ -307,6 +324,7 @@ The visible contrast across belts and zones is therefore much weaker than on Jup
 Infrared imaging by Cassini's CIRS and VIMS instruments revealed a much richer atmospheric texture below the haze.
 
 ```{figure} figures/saturn_hexagon_jet.avif
+:align: center
 :name: fig:saturn_hexagon
 :width: 75%
 
@@ -328,6 +346,7 @@ The main ring system extends from the inner D ring at $\sim$67{,}000 km from Sat
 The seven main rings are labelled in order of discovery (D, C, B, A, F, G, and E), with the most prominent being the bright A and B rings separated by the Cassini Division at $\sim$118{,}000 km.
 
 ```{figure} figures/saturn_cassini_division.avif
+:align: center
 :name: fig:cassini_division
 :width: 95%
 
@@ -335,6 +354,7 @@ Natural-colour radial scan across Saturn's main rings as imaged by Cassini (PIA0
 ```
 
 ```{figure} figures/saturn_propeller_targeted.avif
+:align: center
 :name: fig:propeller_ring
 :width: 80%
 
@@ -477,6 +497,7 @@ Titan, the largest moon of Saturn, is the second largest moon in the solar syste
 Cassini and the Huygens probe revolutionised our understanding of Titan over the 13-year Cassini tour and its atmospheric descent in January 2005.
 
 ```{figure} figures/huygens_titan_descent.avif
+:align: center
 :name: fig:huygens
 :width: 75%
 
@@ -484,6 +505,7 @@ Stereographic projection mosaic of Huygens DISR descent images, taken on 14 Janu
 ```
 
 ```{figure} figures/titan_lakes_cassini.avif
+:align: center
 :name: fig:titan_lakes
 :width: 75%
 
@@ -514,6 +536,7 @@ Enceladus is a small moon, only 252 km in radius, but it has had a scientific im
 The 2005 discovery by the Cassini spacecraft of active geysers erupting from a system of fractures near the south pole, the so-called "tiger stripes", was one of the most consequential observations of the entire mission {cite:p}`PorcoEnc2006`.
 
 ```{figure} figures/enceladus_tiger_stripes.avif
+:align: center
 :name: fig:tiger_stripes
 :width: 75%
 
@@ -521,6 +544,7 @@ The "tiger stripes" of Enceladus: four parallel fracture zones near the south po
 ```
 
 ```{figure} figures/enceladus_tiger_thermal.avif
+:align: center
 :name: fig:tiger_thermal
 :width: 75%
 
@@ -528,6 +552,7 @@ Map of Enceladus's south polar region showing the correlation between jet source
 ```
 
 ```{figure} figures/enceladus_geyser_basin.avif
+:align: center
 :name: fig:geyser_basin
 :width: 80%
 
@@ -554,6 +579,7 @@ The impact that formed Herschel must have been close to the catastrophic disrupt
 Recent gravity science suggests that Mimas itself may host a young subsurface ocean, although the evidence is contested.
 
 ```{figure} figures/mimas_close.avif
+:align: center
 :name: fig:mimas
 :width: 60%
 
@@ -561,6 +587,7 @@ Mimas dominated by the giant Herschel impact crater, imaged by Cassini during it
 ```
 
 ```{figure} figures/iapetus_bright_dark.avif
+:align: center
 :name: fig:iapetus
 :width: 70%
 
@@ -568,6 +595,7 @@ Iapetus showing the two-toned hemispheric pattern, Cassini global mosaic from th
 ```
 
 ```{figure} figures/phoebe_cassini.avif
+:align: center
 :name: fig:phoebe
 :width: 55%
 
@@ -605,6 +633,7 @@ Almost everything we know in detail about their atmospheres, magnetic fields, an
 ### Uranus: the tilted planet
 
 ```{figure} figures/uranus_voyager.avif
+:align: center
 :name: fig:uranus_voyager
 :width: 60%
 
@@ -618,6 +647,7 @@ The challenge for any such scenario is to reconcile the impact with the fact tha
 {cite:t}`Morbidelli2012` explored this scenario in detail and concluded that at least two giant impacts are needed: one or more earlier collisions to bring proto-Uranus from a Neptune-like obliquity ($\sim$30$^\circ$) part of the way over, followed by a final oblique impact onto a body that had already retained an equatorial debris disk, so that the present prograde, near-equatorial satellite system can be reproduced together with the extreme final tilt.
 
 ```{figure} figures/uranus_impact_kegerreis2018.avif
+:align: center
 :name: fig:uranus_impact
 :width: 85%
 
@@ -625,6 +655,7 @@ Smoothed-particle-hydrodynamics simulation of a giant impact on the proto-Uranus
 ```
 
 ```{figure} figures/uranus_clouds_voyager.avif
+:align: center
 :name: fig:uranus_clouds
 :width: 60%
 
@@ -632,6 +663,7 @@ Voyager 2 view of Uranus from the January 1986 flyby (PIA18182). The planet appe
 ```
 
 ```{figure} figures/uranus_cyclone.avif
+:align: center
 :name: fig:uranus_cyclone
 :width: 70%
 
@@ -653,6 +685,7 @@ None of these has been definitively confirmed, and a dedicated Uranus orbiter wo
 ### Neptune: the active ice giant
 
 ```{figure} figures/neptune_great_dark_spot.avif
+:align: center
 :name: fig:neptune_dark
 :width: 70%
 
@@ -660,6 +693,7 @@ The Great Dark Spot of Neptune, an anticyclonic storm in the southern hemisphere
 ```
 
 ```{figure} figures/neptune_scooter.avif
+:align: center
 :name: fig:neptune_scooter
 :width: 70%
 
@@ -686,6 +720,7 @@ The exact mass partitioning is poorly constrained because Voyager 2 measured onl
 Even the question of whether Uranus and Neptune are dominated by ices or by rock and ice mixtures is unresolved.
 
 ```{figure} figures/ice_giant_structures_helled2020.avif
+:align: center
 :name: fig:ice_giant_structures
 :width: 85%
 
@@ -693,6 +728,7 @@ Schematic possible internal structures of an ice giant from {cite:t}`Helled2020`
 ```
 
 ```{figure} figures/ice_giant_density_helled2020.avif
+:align: center
 :name: fig:ice_giant_density
 :width: 70%
 
@@ -719,6 +755,7 @@ Its orbit is also strongly inclined ($\sim 157^\circ$ relative to Neptune's equa
 The capture was probably accomplished early in the solar system's history, perhaps when Triton was part of a binary that was disrupted by a close passage near Neptune {cite:p}`Agnor2006`.
 
 ```{figure} figures/triton_map.avif
+:align: center
 :name: fig:triton
 :width: 75%
 
@@ -748,6 +785,7 @@ Voyager 2 confirmed five rings, the outermost of which (the Adams ring) contains
 The arcs have remained stable but the brighter ones have visibly faded over the decades since Voyager.
 
 ```{figure} figures/neptune_rings_voyager.avif
+:align: center
 :name: fig:neptune_rings
 :width: 70%
 
@@ -755,6 +793,7 @@ Backscattered-light view of Neptune's rings from Voyager 2 in 1989. The two brig
 ```
 
 ```{figure} figures/neptune_rings_voyager_arc.avif
+:align: center
 :name: fig:neptune_arcs
 :width: 75%
 
@@ -816,6 +855,7 @@ JWST began observing Uranus and Neptune in 2022 and has produced spectacular new
 ### JUICE vs Europa Clipper: two ocean-world missions
 
 ```{figure} figures/europa_clipper_concept.avif
+:align: center
 :name: fig:europa_clipper
 :width: 75%
 

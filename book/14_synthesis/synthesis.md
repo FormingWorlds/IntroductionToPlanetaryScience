@@ -24,6 +24,7 @@ This final lecture is the synthesis. It does three things in turn. Part 1 places
 Lectures 2, 3, and 12 already presented the modern picture of how planets form, but it is worth restating the structure compactly. A young star is surrounded for a few Myr by a disk of gas and dust whose total mass is a few percent of the stellar mass. Within that disk, sub-micron dust grains coagulate into millimetre-sized pebbles, which collect in pressure traps and form planetesimals through the streaming instability. Some planetesimals then grow further by sweeping up local material (oligarchic growth) and by accreting drifting pebbles (pebble accretion); the largest cores reach the threshold for runaway gas accretion before the disk dissipates and become gas giants {cite:p}`Drazkowska2023,Pollack1996,Lambrechts2012`.
 
 ```{figure} figures/drazkowska2023_growth_processes.avif
+:align: center
 :name: fig:l14:formation-overview
 :width: 90%
 
@@ -31,6 +32,7 @@ Overview of the dust-to-planet growth processes operating in protoplanetary disk
 ```
 
 ```{figure} figures/lambrechts2012_core_growth.avif
+:align: center
 :name: fig:l14:envelope-accretion
 :width: 90%
 
@@ -40,6 +42,7 @@ Mass growth of a planetary core as a function of time at three orbital radii (0.
 Each of those steps has direct observational consequences. ALMA images of nearby protoplanetary disks resolve the gaps and rings that mark planetary formation in progress {cite:p}`ALMAPartnership2015,Andrews2018`. Disk lifetimes inferred from infrared excess fractions cluster around 3 to 5 Myr {cite:p}`Haisch2001`, which sets the maximum time available for both terrestrial-planet assembly and gas-giant envelope accretion. Demographic surveys of mature systems then provide the endpoint distributions that any formation theory must reproduce.
 
 ```{figure} figures/andrews2018_dsharp_gallery.avif
+:align: center
 :name: fig:l14:dsharp
 :width: 90%
 
@@ -47,6 +50,7 @@ Gallery of 240 GHz (1.25 mm) ALMA continuum images of 20 nearby protoplanetary d
 ```
 
 ```{figure} figures/lambrechts2012_growth_time.avif
+:align: center
 :name: fig:l14:accretion-timescales
 :width: 90%
 
@@ -56,6 +60,7 @@ Time required to grow a 10 Earth mass core as a function of orbital distance, fo
 The successes of this framework are real. Disk-driven migration explains why hot Jupiters exist in the first place and why several systems are caught in tight resonant chains: the planets formed further out and migrated inward through the gas disk before it dispersed {cite:p}`Paardekooper2023,Tsiganis2005`. Pebble accretion explains how gas-giant cores grow fast enough to trigger envelope runaway before the disk is gone {cite:p}`Lambrechts2012,Johansen2007`. The carbonaceous-versus-non-carbonaceous (NC--CC) meteorite dichotomy points to early reservoir separation in the inner solar system, and it can be reproduced if Jupiter's growing core opens a barrier in the disk that segregates inner and outer material {cite:p}`Kruijer2017,Lichtenberg2021`. The Nice model and the Grand Tack reproduce the orbital and small-body architecture of the present solar system, including the Trojan asteroids and the depleted asteroid belt {cite:p}`Tsiganis2005,Walsh2011`.
 
 ```{figure} figures/lichtenberg2023_nccc_timeline.avif
+:align: center
 :name: fig:l14:nccc-timeline
 :width: 80%
 
@@ -65,6 +70,7 @@ Timeline of solar system formation reconstructed from isotopic dating of meteori
 Open questions remain, and they are interesting. The radius valley at $\sim 1.8\,\Rearth$ in the Kepler population, discovered by {cite:t}`Fulton2017`, tells us that close-in small planets divide cleanly into volatile-poor super-Earths and volatile-rich sub-Neptunes, but the physics that produces the gap is not yet decided. Photoevaporation by stellar XUV {cite:p}`Owen2017` and core-powered mass loss from internal residual heat {cite:p}`Gupta2019` both predict a valley in the right location, and current data are not sharp enough to reject either mechanism.
 
 ```{figure} figures/fulton2017_radius_valley.avif
+:align: center
 :name: fig:l14:fulton-valley
 :width: 70%
 
@@ -78,6 +84,7 @@ A third, and pedagogically important, question is why the solar system contains 
 Population synthesis models built on top of the formation framework now reproduce the broad distribution of observed exoplanet types in mass and orbital period ({numref}`fig:l14:popsyn`), but only if they include both planetesimal and pebble accretion contributions, atmospheric loss, and dynamical evolution. The "missing" super-Earths in the solar system are not a generic prediction of formation theory: they appear in the synthetic populations and so the failure to produce them in the solar system is, in the current models, a special outcome that requires explanation rather than the default.
 
 ```{figure} figures/drazkowska2023_population_synthesis.avif
+:align: center
 :name: fig:l14:popsyn
 :width: 90%
 
@@ -89,6 +96,7 @@ Population synthesis predictions for planet mass versus orbital period assuming 
 The cleanest way to see where the solar system sits in the exoplanet population is to plot all known planets on a single period-radius diagram and add our own.
 
 ```{figure} figures/raymond2022_period_radius.avif
+:align: center
 :name: fig:l14:periodradius
 :width: 70%
 
@@ -105,6 +113,7 @@ In four other respects, however, the solar system looks unusual:
 4. **Irregular inner-system spacing rather than peas-in-a-pod.** {cite:t}`Weiss2018` showed that planets in Kepler multi-planet systems tend to be very similar in size to one another and to be regularly spaced in period: the so-called "peas-in-a-pod" pattern. The solar system terrestrials cover a factor of $\sim 25$ in mass (Mercury at $0.055\,\Mearth$, Earth at $1\,\Mearth$) and are irregularly spaced. We are not in a peas-in-a-pod system.
 
 ```{figure} figures/raymond2022_peas_in_a_pod.avif
+:align: center
 :name: fig:l14:peas
 :width: 75%
 
@@ -114,6 +123,7 @@ Compact multi-planet systems with four or more transiting planets interior to 1.
 The mass-radius diagram offers a complementary view ({numref}`fig:l14:massrad`). Plotting bulk density implied by mass and radius for the planets in the solar system and for the exoplanets where both quantities are known, one sees that the rocky planets cluster along a narrow track set by the equation of state of silicate mantles and iron cores, while the larger planets spread out into the volatile-rich and the gas-dominated regimes. The solar system terrestrials sit firmly on the "Earth-like" composition curve. Many close-in exoplanet super-Earths sit on the same curve too, indicating that the population of bare rocky cores is real, but a substantial subset of slightly larger planets sits *above* the rocky line, indicating that they retain significant volatile envelopes that swell their radii relative to a pure-rock composition.
 
 ```{figure} figures/lichtenberg2025_mass_radius.avif
+:align: center
 :name: fig:l14:massrad
 :width: 95%
 
@@ -135,6 +145,7 @@ What we can say with confidence is that the inner solar system is *atypical* rel
 The reverse statement, that planet *occurrence rates depend strongly on stellar type*, is by now well established. {numref}`fig:l14:mulders-occurrence` shows the close-in (period $< 50$ days) small-planet occurrence rate as a function of stellar effective temperature, compiled from a decade of Kepler, K2, and ground-based surveys: rocky and sub-Neptune-sized planets are roughly twice as common around early M dwarfs as around F and G dwarfs, and the trend continues into the late M regime. Whether this trend reflects formation efficiency in lower-mass disks or detection bias in different survey samples is still being debated, but the headline conclusion, that "Earth-sized planets are not rare around low-mass stars", is robust.
 
 ```{figure} figures/mulders2024_occurrence_vs_teff.avif
+:align: center
 :name: fig:l14:mulders-occurrence
 :width: 80%
 
@@ -165,6 +176,7 @@ Each level in the stack is necessary. None of them by itself is sufficient. What
 The course's central qualitative claim about habitability is captured by a single diagram in the {cite:t}`Wordsworth2022` review, reproduced in {numref}`fig:l14:tidal-couplings`. It shows the bidirectional couplings between a tidally locked rocky planet's star, atmosphere, surface, and interior. Each arrow on the diagram corresponds to a process that the course has covered.
 
 ```{figure} figures/wordsworth2022_tidally_locked_planet.avif
+:align: center
 :name: fig:l14:tidal-couplings
 :width: 85%
 
@@ -180,6 +192,7 @@ The diagram is the single visual the course aims for. It captures why no single 
 The classical habitable zone (HZ) is defined as the range of orbital distances around a given star at which an Earth-like planet could maintain liquid surface water. In the simplest one-dimensional radiative-convective model, this is a strip in orbital space, with an inner edge set by the runaway greenhouse limit and an outer edge set by the maximum $\mathrm{CO_2}$ greenhouse {cite:p}`Kasting1993,Kopparapu2013`. The blackboard derivation in this lecture reconstructs both edges from a one-line energy balance.
 
 ```{figure} figures/kopparapu2014_hz_stellartype.avif
+:align: center
 :name: fig:l14:kopparapu-hz
 :width: 80%
 
@@ -189,6 +202,7 @@ Habitable zone boundaries as a function of stellar effective temperature and pla
 This is a useful reference object. Two things, however, must be added immediately to use it sensibly. First, *two planets at the same orbital distance can end up with radically different climates depending on their water inventory, their tectonic regime, and their stellar evolution history.* Earth and Venus illustrate the point: Venus receives only $\sim 1.9\times$ Earth's solar flux but has a $735$ K, $92$ bar, $\mathrm{CO_2}$-dominated atmosphere with essentially no water, while Earth has a $288$ K surface and a stable hydrosphere ({ref}`lecture09`). The difference is not in the present-day instellation alone but in the history of how the two planets evolved through their early molten phases and through 4.5 Gyr of solar luminosity evolution {cite:p}`Hamano2013,Way2016`.
 
 ```{figure} figures/lugerbarnes2015_runaway_duration.avif
+:align: center
 :name: fig:l14:runaway
 :width: 75%
 
@@ -220,6 +234,7 @@ There is a temptation when teaching planetary water inventories to make the ques
 The key point is this: Earth, Venus, and Mars likely received broadly similar volatile inventories during accretion. They formed in roughly the same region of the disk, from roughly the same mixture of chondritic precursors, with broadly similar bulk water budgets per unit silicate mass {cite:p}`Lichtenberg2023`. Their present-day water inventories differ by orders of magnitude, but those differences reflect *what each body did with its initial inventory*, not the source mixture of accreted material {cite:p}`Hamano2013`. The mechanisms that matter for the inner solar system are processes internal to the planet, not exotic delivery histories.
 
 ```{figure} figures/lichtenberg2023_magma_ocean_differentiation.avif
+:align: center
 :name: fig:l14:magma-diff
 :width: 70%
 
@@ -233,6 +248,7 @@ The starting timing also matters. The temperatures reached by accreting planetes
 The second lever is *atmospheric escape during the magma ocean phase*. Under a young, EUV-bright Sun, hydrodynamic escape can drag water out of the upper atmosphere fast enough to deplete a fraction of the inventory before the magma ocean has even solidified ({ref}`lecture09`; {cite:t}`Hamano2013`). This is the "Type II" Hamano scenario for Venus: with $\sim 1.9$ times Earth's instellation, Venus's magma ocean took long enough to solidify that hydrogen escape ran far longer and hotter than on Earth, and a substantial fraction of the initial water never made it to the surface as liquid.
 
 ```{figure} figures/hamano2013_typeI_typeII.avif
+:align: center
 :name: fig:l14:hamano-typeII
 :width: 70%
 
@@ -282,6 +298,7 @@ $$
 so the distribution of $\log_{10} N$ is the *convolution* of the distributions of the individual log-factors. If each of the four uncertain factors is independently log-uniform on, say, $[-10, 0]$ (ten orders of magnitude each), then $\sum_{k=1}^4 \log_{10} f_k$ is a sum of four independent uniform variables on $[-10, 0]$, supported on $[-40, 0]$, with a quasi-Gaussian central peak by the central limit theorem and substantial tail probability extending to $\log_{10} N \sim -30$ or below. The distribution is therefore broad enough that even after fixing the astronomically constrained prefactor $R_\star f_p n_e$, the posterior on $N$ stretches across $\sim 30$ decades and the cumulative probability of $N < 1$ is large. The bimodality in the published Sandberg posterior comes from combining log-uniform soft factors with a bounded astronomical prefactor; the lesson is that *broad priors on multiplicative factors generate broad and often skewed product distributions*, and any "best estimate" for $N$ is dominated by the prior choice rather than by the data.
 
 ```{figure} figures/sandberg2018_drake_posterior.avif
+:align: center
 :name: fig:l14:sandberg-drake
 :width: 80%
 
@@ -360,6 +377,7 @@ $$
 Normalising on the Sun ($t_{\rm MS,\odot} \approx 10$ Gyr), this gives $t_{\rm MS} \approx 10\,(M_\star/\Msun)^{-2.5}$ Gyr. A K dwarf at $M_\star \approx 0.7\,\Msun$ then has $t_{\rm MS} \approx 10 \times 0.7^{-2.5} \approx 24$ Gyr; a $0.5\,\Msun$ early M dwarf has $\approx 57$ Gyr; and a $0.1\,\Msun$ M dwarf naively gives $\approx 3 \times 10^3$ Gyr, which is already longer than the age of the universe and which detailed stellar models extend further (to $\sim 10^{12}$ yr) once the fully convective regime keeps the entire hydrogen reservoir accessible to the core. The headline point is that *cooler stars give biology more time*, by a factor that grows steeply with decreasing stellar mass, which is the central reason the K-dwarf and M-dwarf habitable zones are taken seriously despite their other problems.
 
 ```{figure} figures/cuntz_guinan_xray_lyman.avif
+:align: center
 :name: fig:l14:cuntz-xray
 :width: 75%
 
@@ -369,6 +387,7 @@ Lyman-$\alpha$ and X-ray irradiances at the habitable zone of stars of different
 The 1D values listed above for $d_{\rm in}$ are themselves a simplification. Three-dimensional global climate models that resolve clouds give a different answer for tidally locked planets around M dwarfs. {cite:t}`Yang2013` showed that on a planet that always presents the same face to its star, strong convection at the substellar point lifts thick water clouds that drive the local albedo above $\sim 0.6$ and act as a *stabilising* feedback against runaway warming ({numref}`fig:l14:yang-clouds`). The result is that the inner edge of the HZ, defined as the largest stellar flux at which surface temperature stays below the runaway threshold, shifts inward by roughly a factor of two relative to the 1D Kopparapu boundary. The 1D HZ therefore *under-estimates* the inner edge of the M-dwarf HZ, and the corresponding occurrence of habitable planets around M dwarfs is correspondingly larger than the 1D values would suggest.
 
 ```{figure} figures/yang2013_tidally_locked_clouds.avif
+:align: center
 :name: fig:l14:yang-clouds
 :width: 90%
 
@@ -378,6 +397,7 @@ Climate response of tidally locked rocky planets to varying stellar flux from a 
 The combined effect of these climatological corrections is captured in the {cite:t}`Shields2016` summary diagram ({numref}`fig:l14:shields-mdwarf-hz`), which compiles the 1D Kopparapu boundaries together with 3D GCM corrections from a number of independent groups and overlays the known M-dwarf and FGK habitable-zone planets. The figure makes two points at once. First, the 3D inner edge for slowly rotating tidally locked planets is markedly inside the 1D inner edge, especially for cool host stars. Second, the tidal-locking radius (grey dashed curve) cuts across the M-dwarf HZ, so essentially every M-dwarf HZ planet known today is tidally locked and is therefore in the regime where the cloud corrections matter.
 
 ```{figure} figures/shields2016_hz_tidally_locked.avif
+:align: center
 :name: fig:l14:shields-mdwarf-hz
 :width: 80%
 
@@ -429,6 +449,7 @@ The honest framing is that we do not know how, when, where, or how easily life o
 A biosignature is an observable feature whose presence is more easily explained by biology than by abiotic processes alone. {cite:t}`Schwieterman2018` organise the remotely detectable biosignatures into three canonical classes (following Meadows 2006, 2008): atmospheric gases (direct or indirect metabolic by-products), surface reflectance features (spectral signatures from biological pigments), and temporal variability (time-dependent modulations driven by biology). Two further classes, isotopic signatures and morphological evidence, are diagnostic only for in-situ measurements on returned samples and are not realistically accessible at exoplanet distances. {cite:t}`Catling2018` complement this taxonomy with a Bayesian framework for assessing how strongly any candidate biosignature should update our prior probability of life given the surrounding planetary and stellar context.
 
 ```{figure} figures/catling2018_assessment_framework.avif
+:align: center
 :name: fig:l14:catling-framework
 :width: 75%
 
@@ -436,6 +457,7 @@ The four-component framework for assessing exoplanet biosignatures from {cite:t}
 ```
 
 ```{figure} figures/catling2018_bayesian_framework.avif
+:align: center
 :name: fig:l14:catling-bayes
 :width: 80%
 
@@ -450,6 +472,7 @@ The classical *atmospheric gas* biosignatures are:
 - **Disequilibrium combinations.** The most diagnostic biosignature is not a single gas but a *combination* in chemical disequilibrium: $\mathrm{O_2}$ and $\mathrm{CH_4}$ together, for example, cannot coexist for more than a few years without continuous resupply. {cite:t}`Krissansen2018` quantified the disequilibrium approach by Gibbs-energy minimisation and showed that the modern Earth atmosphere-ocean system carries a disequilibrium of about 2326 J/mol, an order of magnitude above the abiotic Mars and Titan disequilibria of about 100 J/mol. They further argued that the Archean Earth's coexistence of $\mathrm{CH_4}$, $\mathrm{CO_2}$, $\mathrm{N_2}$, and liquid $\mathrm{H_2O}$ is even more diagnostic for *remote* detection than the modern $\mathrm{O_2}$-$\mathrm{CH_4}$ redox couple, because the Archean reaction cannot persist abiotically on any planet with liquid water.
 
 ```{figure} figures/schwieterman2018_biosignature_gases.avif
+:align: center
 :name: fig:l14:biosig-gases
 :width: 90%
 
@@ -459,6 +482,7 @@ Wavelength-resolved infrared absorption features for ten potential biosignature 
 The reason disequilibrium combinations are so diagnostic is that the bulk solar system abundances of the key elements (H, C, N, O, Na, Mg, Al, Si, P, S, Cl, K, Ca, Fe, etc.) span more than ten orders of magnitude, and the relative abundances in any given planetary atmosphere depend strongly on the integrated history of escape, weathering, and biology. Earth's atmosphere is *highly* fractionated relative to the solar composition: it is depleted in noble gases by orders of magnitude, depleted in hydrogen by even more, and *enriched* in $\mathrm{O_2}$ to a level that no abiotic process can sustain on a planet with reduced surface minerals exposed to liquid water. The detection of strong fractionation patterns of this kind is itself a circumstantial biosignature, even before specific gas combinations are considered.
 
 ```{figure} figures/schwieterman2018_biosignature_classes.avif
+:align: center
 :name: fig:l14:biosig-classes
 :width: 95%
 
@@ -495,6 +519,7 @@ The solar system contains five plausible targets for life detection. None of the
 **Venus cloud layer.** The {cite:t}`Greaves2021` claim of phosphine ($\mathrm{PH_3}$) detection in the temperate Venus cloud deck at altitudes of $50$ to $60$ km was originally framed as a possible biosignature, on the grounds that no significant abiotic phosphine source is known under terrestrial planetary conditions. The community response was sceptical, and rightly so. Reanalysis of the same JCMT and ALMA data found that the phosphine spectral feature was at the edge of the instrumental sensitivity, that alternative molecular identifications (notably $\mathrm{SO_2}$ in the Venus mesosphere) reproduced the data well, and that independent observations either failed to confirm the original detection or were consistent with much lower upper limits {cite:p}`Lincowski2021`.
 
 ```{figure} figures/lincowski2021_phosphine_so2.avif
+:align: center
 :name: fig:l14:phosphine
 :width: 90%
 
@@ -512,6 +537,7 @@ For Venus that better dataset is on the way. The DAVINCI atmospheric descent pro
 Detecting life on an exoplanet is harder than detecting life on a solar system body because we cannot return a sample, we cannot land an instrument, and we cannot resolve the surface. All we have is the integrated transmission, emission, or reflectance spectrum of the planet.
 
 ```{figure} figures/lustigyaeger2023_lhs475b_spectrum.avif
+:align: center
 :name: fig:l14:lhs475b-spectrum
 :width: 85%
 
@@ -519,6 +545,7 @@ JWST/NIRSpec G395H transmission spectrum of the Earth-sized rocky exoplanet LHS 
 ```
 
 ```{figure} figures/greene2023_trappist1b_eclipse.avif
+:align: center
 :name: fig:l14:trappist1b
 :width: 80%
 
@@ -528,6 +555,7 @@ JWST MIRI secondary eclipse light curve of TRAPPIST-1 b at 15 $\mu$m. The observ
 The K2-18b case from {ref}`lecture13` shows what a single-snapshot atmospheric detection looks like at the current state of the art and shows why it is *not enough* on its own to establish the presence of biology.
 
 ```{figure} figures/madhusudhan2023_k218b_spectrum.avif
+:align: center
 :name: fig:l14:k218b-spec
 :width: 90%
 
@@ -535,6 +563,7 @@ JWST transmission spectrum of K2-18b from {cite:t}`Madhusudhan2023`. The combine
 ```
 
 ```{figure} figures/madhusudhan_k218b_dms_post.avif
+:align: center
 :name: fig:l14:k218b-post
 :width: 90%
 
@@ -551,6 +580,7 @@ A *convincing* biosignature detection on an exoplanet would therefore require so
 The Habitable Worlds Observatory (HWO) and the LIFE concept are designed for exactly this multi-line, multi-target campaign. HWO is a NASA flagship, prioritised in the {cite:t}`NAS2021` decadal survey, that will use a $\sim 6$ m space-based coronagraph in the visible and near-infrared to directly image and spectrally characterise Earth-like planets around $\sim 25$ nearby Sun-like stars. The launch target is the early 2040s. LIFE (Large Interferometer For Exoplanets) is an ESA-led concept for a mid-infrared nulling interferometer that would target the same population in a complementary wavelength range, where the diagnostic biosignature gases ($\mathrm{O_3}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, $\mathrm{CO_2}$) all have strong spectral features {cite:p}`Quanz2022`.
 
 ```{figure} figures/quanz2022_life_yields.avif
+:align: center
 :name: fig:l14:life-yields
 :width: 90%
 

@@ -394,7 +394,7 @@ In addition to the broad convective circulation, hot upwellings can develop from
 
 ```{figure} figures/usgs_global_hotspots_map.avif
 :name: fig:global-hotspots
-:width: 700px
+:width: 692px
 :align: center
 
 Global distribution of plate boundaries (divergent: thin lines; convergent: hatched; transform: dotted) with selected major hotspots (orange dots) including Hawaii, Iceland, Yellowstone, Galápagos, Azores, and Afar. Hotspots cluster within plate interiors as well as on ridges and reflect the surface expression of long-lived deep-mantle plumes. Credit: USGS, public domain.

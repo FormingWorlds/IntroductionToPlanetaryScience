@@ -219,7 +219,7 @@ where $c_p$ is the specific heat capacity at constant pressure. For Earth, $g = 
 
 ```{figure} figures/dry_moist_adiabat.avif
 :name: fig:dry-moist-adiabat
-:width: 520px
+:width: 399px
 :align: center
 
 Dry adiabatic lapse rate ($\Gamma_d = g/c_p \approx 9.8$ K km$^{-1}$, dashed) compared with a representative saturated moist adiabat ($\sim 5$ K km$^{-1}$ in the warm lower troposphere, dotted) and the observed mean Earth profile (US Standard Atmosphere 1976, solid). The moist adiabat is shallower than the dry adiabat because condensing water vapour releases latent heat to the rising parcel; the observed mean ($\sim 6.5$ K km$^{-1}$) lies between the two limits. Above the tropopause the adiabats no longer apply: the actual profile becomes nearly isothermal and then warms in the stratosphere.
@@ -344,7 +344,7 @@ Just as a star has a **photosphere**, the layer from which photons escape to spa
 
 ```{figure} figures/tau_one_schematic.avif
 :name: fig:tau-one
-:width: 700px
+:width: 572px
 :align: center
 
 The atmospheric "photosphere" concept. (a) Beer–Lambert attenuation: the transmitted intensity decreases exponentially with optical depth, $I/I_0 = e^{-\tau}$ (Eq. {eq}`eq:beer-lambert`); the $\tau = 1$ level transmits a fraction $1/e \approx 0.37$ of the incident intensity. (b) An infrared photon emitted from deep in the atmosphere ($\tau \gg 1$) is absorbed before reaching space; only photons emitted from $\tau \lesssim 1$ escape freely. The effective emission level at $\tau \approx 1$ sets the planet's effective temperature as observed from space.
@@ -452,7 +452,7 @@ This one-layer model is deliberately simple. In {ref}`lecture06`, we will extend
 
 ```{figure} figures/greenhouse_one_layer.avif
 :name: fig:greenhouse-effect
-:width: 650px
+:width: 380px
 :align: center
 
 Energy budget of the one-layer greenhouse model. Stellar shortwave flux $(1-A)F_\star/4$ (yellow) passes unimpeded through the atmosphere and is absorbed at the surface. The surface re-radiates $\sigma T_s^4$ in the infrared (red); a fraction $(1-\varepsilon)$ is transmitted directly to space, while a fraction $\varepsilon$ is absorbed in the atmospheric layer. The layer re-emits $\varepsilon\,\sigma T_a^4$ both upward (to space) and downward (back to the surface). The downward emission is the additional energy source that raises $T_s$ above the no-atmosphere effective temperature $T_\mathrm{eff}$. Schematic following the one-layer derivation in {cite:t}`Pierrehumbert2010`.
@@ -508,7 +508,7 @@ where $n_{\mathrm{exo}}$ is the number density at the exobase. The exponential f
 
 ```{figure} figures/maxwell_boltzmann_jeans.avif
 :name: fig:mb-jeans
-:width: 700px
+:width: 473px
 :align: center
 
 Maxwell–Boltzmann speed distribution for atomic hydrogen at the exobase temperatures of Earth ($T_\mathrm{exo} = 1000$ K, blue) and Mars ($T_\mathrm{exo} = 270$ K, red). Dashed vertical lines mark the escape velocity $v_\mathrm{esc}$ at the exobase of each planet ($\sim$10.6 km s$^{-1}$ and $\sim$4.9 km s$^{-1}$ respectively). Only molecules in the high-speed tail above $v_\mathrm{esc}$ (shaded) contribute to Jeans escape; the exponential dependence of the tail area on $\lambda_J = v_\mathrm{esc}^2 / v_\mathrm{th}^2$ explains why escape rates vary by orders of magnitude across species and bodies.
@@ -582,7 +582,7 @@ NASA Scientific Visualization Studio rendering of the ion plume escaping from Ma
 
 ```{figure} figures/maven_o_loss_channels.avif
 :name: fig:maven-o-loss-channels
-:width: 600px
+:width: 527px
 :align: center
 
 Present-day oxygen loss rates from Mars decomposed into escape channels, after {cite:t}`Jakosky2018` Fig. 6. Horizontal bars indicate the loss rate (log$_{10}$ s$^{-1}$) for O ion escape, photochemical escape, and sputtering, plus the combined total. Photochemical escape dominates the oxygen budget today; sputtering is sub-dominant at present solar activity but was likely comparable or larger in the young, EUV-active Sun epoch. The three channels sum to the total at the top of the panel and, together with hydrogen escape, give the $\sim 2$–$3$ kg s$^{-1}$ figure quoted in the text. Redrawn from {cite:t}`Jakosky2018`.

@@ -290,7 +290,7 @@ This is the absolute zero of the solar system clock.
 
 ```{figure} figures/pb_pb_dating.avif
 :name: fig:l12-pb-pb
-:width: 480px
+:width: 445px
 :align: center
 
 Pb-Pb isochrons for (A) the Efremovka CAI 22E, (B) an Allende chondrule (C30), and (C) an NWA 5697 chondrule (C2). Each panel plots $^{207}\mathrm{Pb}/^{206}\mathrm{Pb}$ versus $^{204}\mathrm{Pb}/^{206}\mathrm{Pb}$ for cogenetic mineral fractions; the slope of the isochron yields the absolute age. The single-isochron age for CAI 22E, $4567.35 \pm 0.28$ Myr, is consistent with the weighted-mean CAI age $4567.30 \pm 0.16$ Myr derived from multiple CAIs in the main text. The Allende chondrule is contemporaneous with CAIs to within uncertainties, while the NWA chondrule is about 2.6 Myr younger. Figure adapted from {cite:t}`Connelly2012`.
@@ -691,7 +691,7 @@ The Dawn mission arrived in 2015 and orbited Ceres until 2018, mapping the surfa
 
 ```{figure} figures/ceres_occator.avif
 :name: fig:l12-occator
-:width: 500px
+:width: 320px
 :align: center
 
 The Occator crater on Ceres, imaged by NASA's Dawn mission. The bright deposits in the crater floor (Cerealia Facula and Vinalia Faculae) are evaporitic salts, primarily hydrated sodium carbonate ($\mathrm{Na_2CO_3 \cdot H_2O}$), interpreted as relict brine that erupted from a subsurface reservoir and froze. Image credit: NASA/JPL-Caltech/UCLA/MPS/DLR/IDA, public domain.

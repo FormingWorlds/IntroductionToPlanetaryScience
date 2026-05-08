@@ -117,7 +117,7 @@ Galileo Galilei's telescope observations in 1610 transformed planetary science f
 
 ```{figure} figures/sidereus_nuncius.avif
 :name: fig:sidereus-nuncius
-:width: 450px
+:width: 334px
 :align: center
 
 Page from Galileo's *Sidereus Nuncius* (1610) showing his observations of Jupiter and its four largest moons, the *Medicea Sidera* (Medicean Stars). Each row records the positions of the moons (small dots) relative to Jupiter (open circle) on successive nights. The systematic motion of the four points, repeating with periods of days, was direct evidence that not all celestial bodies orbit the Earth. Credit: Galileo Galilei, public domain.

@@ -230,7 +230,7 @@ The origin of Phobos and Deimos has been debated for decades and remains genuine
 
 ```{figure} figures/hyodo2017_phobos_impact.avif
 :name: fig:hyodo-phobos
-:width: 600px
+:width: 528px
 :align: center
 
 Two snapshots of entropy gain (in $\mathrm{J\,K^{-1}\,kg^{-1}}$) from a smoothed-particle hydrodynamics simulation of a Borealis-scale giant impact onto early Mars by {cite:t}`Hyodo2017`, at $t = 0.17\ \mathrm{h}$ (left, immediately post-impact) and $t = 20\ \mathrm{h}$ (right, after the debris disc has expanded). The impact drives an entropy increase of $\sim 1500\ \mathrm{J\,K^{-1}\,kg^{-1}}$ in the disc material and ejects a circumplanetary disc containing both impactor and Martian-mantle material. Disc fragments collide at $1$--$5\ \mathrm{km\,s^{-1}}$ and grind down to $\sim 100\ \mu$m grains, providing the building blocks from which Phobos and Deimos may subsequently accrete. Two panels selected from the original 4 columns $\times$ 4 rows grid (composition, temperature, entropy, pressure across four times).
