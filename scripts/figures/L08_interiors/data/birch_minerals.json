@@ -1,0 +1,20 @@
+{
+  "purpose": "Fig. fig:birchs-law: v_P vs density for common mantle-forming minerals",
+  "units": {"density": "g/cm^3", "v_P": "km/s"},
+  "trend": "v_P [km/s] = 3.28 * rho [g/cm^3] - 2.53  (Birch trend at mean atomic mass M_bar ~ 20)",
+  "minerals": [
+    {"name": "Quartz",       "density": 2.65, "v_P":  6.0, "outlier": false},
+    {"name": "Enstatite",    "density": 3.21, "v_P":  8.0, "outlier": false},
+    {"name": "Forsterite",   "density": 3.22, "v_P":  8.6, "outlier": false},
+    {"name": "Diopside",     "density": 3.28, "v_P":  7.7, "outlier": false},
+    {"name": "Periclase",    "density": 3.58, "v_P":  9.7, "outlier": false},
+    {"name": "Garnet",       "density": 3.60, "v_P":  8.8, "outlier": false},
+    {"name": "Ringwoodite",  "density": 3.72, "v_P":  9.8, "outlier": false},
+    {"name": "Corundum",     "density": 3.99, "v_P": 10.8, "outlier": false},
+    {"name": "Bridgmanite",  "density": 4.10, "v_P": 10.5, "outlier": false},
+    {"name": "Fayalite",     "density": 4.39, "v_P":  6.8, "outlier": true,
+     "note": "Fe-rich; higher mean atomic mass shifts it below the Birch trend"}
+  ],
+  "source": "Standard mineral-physics compilations; trend originally established by Birch 1952 (Phys. Rev. 71, 809).",
+  "citation_key": "Birch1952"
+}
