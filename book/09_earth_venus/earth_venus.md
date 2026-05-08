@@ -479,7 +479,7 @@ The runaway greenhouse threshold appears as a *vertical* boundary near $\sim$300
 Reproduced from {cite:t}`Zahnle2007`.
 ```
 
-### Blackboard derivation: the Simpson-Nakajima runaway greenhouse limit
+## Blackboard derivation: The Simpson-Nakajima runaway greenhouse limit
 
 ```{admonition} Blackboard derivation: the Simpson-Nakajima limit
 :class: tip

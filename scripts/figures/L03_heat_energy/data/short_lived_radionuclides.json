@@ -1,0 +1,30 @@
+{
+  "purpose": "Fig. 4.2 (fig:short-lived-decay): exponential decay of 26Al and 60Fe",
+  "half_lives_Myr": {
+    "26Al": 0.717,
+    "60Fe": 2.62
+  },
+  "half_life_references": {
+    "26Al": {
+      "value_Myr": 0.717,
+      "uncertainty_Myr": 0.024,
+      "reference": "Lugmair & Galer (2003)",
+      "doi": "10.1016/0016-7037(94)90419-7"
+    },
+    "60Fe": {
+      "value_Myr": 2.62,
+      "uncertainty_Myr": 0.04,
+      "reference": "Rugel et al. (2009)",
+      "doi": "10.1103/PhysRevLett.103.072502"
+    }
+  },
+  "initial_solar_system_ratios": {
+    "26Al": 5.25e-05,
+    "60Fe": 1e-08
+  },
+  "initial_ratio_references": {
+    "26Al/27Al": "MacPherson et al. (2012); canonical CAI value 5.25e-5",
+    "60Fe/56Fe": "Tang & Dauphas (2012), Trappitsch et al. (2018); ~1e-8"
+  },
+  "license_note": "Half-lives and isotopic ratios are public scientific data."
+}

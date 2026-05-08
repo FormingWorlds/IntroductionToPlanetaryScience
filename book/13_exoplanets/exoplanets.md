@@ -160,7 +160,10 @@ The history of transit surveys is essentially a history of expanding field of vi
 **PLATO**, scheduled for launch in 2026, is the next ESA exoplanet mission and is designed specifically to find Earth-sized planets in the habitable zones of bright Sun-like stars over 2--3 year monitoring baselines {cite:p}`Rauer2014`.
 Selection biases for these surveys are similar but not identical: Kepler favoured Sun-like stars at moderate distance, TESS favours bright nearby stars across all spectral types, and PLATO will favour bright Sun-like stars where radial-velocity follow-up is feasible.
 
-### Blackboard derivation (~10 min): Transit depth, radial velocity, and bulk density
+## Blackboard derivation: Transit depth, radial velocity, and bulk density
+
+````{admonition} Blackboard derivation: Transit depth, radial velocity, and bulk density
+:class: tip
 
 This derivation is the central conceptual payoff of the lecture.
 Both the transit method and the radial velocity method have an obvious individual limitation: a transit alone gives a radius but not a mass, and a radial velocity alone gives only a minimum mass.
@@ -261,6 +264,7 @@ Empirical mass-radius relation across the full range of solar-system bodies, exo
 The pedagogical message is this.
 The transit-plus-RV combination is the **single piece of observational machinery** that took exoplanet science from an exotic claim about a few hot Jupiters in 1995 to a quantitative compositional census of thousands of planets by 2020.
 Every demographic structure we will discuss in Part 2, including the radius valley and the sub-Neptune family, exists as a discovery only because we can measure both $R_p$ and $m_p$ for the same object.
+````
 
 ### Direct imaging
 

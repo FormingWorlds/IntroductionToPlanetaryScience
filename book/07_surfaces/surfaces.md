@@ -70,7 +70,7 @@ $$
 This is roughly $10^3$ times the energy of the largest nuclear weapon ever detonated (Tsar Bomba, $\sim$50 Mt $\approx 2 \times 10^{17}$ J), released in less than a second and concentrated at a single point.
 
 
-### Blackboard derivation: crater scaling law
+## Blackboard derivation: Crater scaling law
 
 ```{admonition} Blackboard derivation: Crater scaling law from dimensional analysis
 :class: tip

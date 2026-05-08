@@ -1,0 +1,22 @@
+{
+  "source": "NASA Exoplanet Archive (Caltech-IPAC)",
+  "endpoint": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync",
+  "table": "pscomppars",
+  "adql_query": "select pl_name, disc_year, discoverymethod from pscomppars",
+  "retrieved_utc": "2026-05-08T14:20:01Z",
+  "retrieved_date": "2026-05-08",
+  "n_rows": 6286,
+  "columns": [
+    "pl_name",
+    "disc_year",
+    "discoverymethod"
+  ],
+  "column_descriptions": {
+    "pl_name": "Planet name (string)",
+    "disc_year": "Discovery year (integer)",
+    "discoverymethod": "Discovery method (string)"
+  },
+  "citation_key": "NASAExoArchive2025",
+  "purpose": "Fig. 2.10 (fig:exoplanet-cumulative): cumulative confirmed exoplanets per discovery year, by method",
+  "license_note": "NASA Exoplanet Archive data are public domain. Cite the Archive (Akeson et al. 2013) and the individual discovery papers as appropriate."
+}

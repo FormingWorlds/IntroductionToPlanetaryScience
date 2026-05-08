@@ -193,7 +193,10 @@ A short-lived system gives a much sharper *relative* age between two events, but
 Cross-calibration between the two classes, anchored to the Pb-Pb age of CAIs, lets us write a high-resolution timeline of the first 10 Myr: CAIs at $t = 0$, chondrules from $t \approx 1$ Myr to $t \approx 4$ Myr, planetesimal differentiation and core formation from $t \approx 0.5$ to $4$ Myr, and the formation of large terrestrial protoplanets from $t \approx 5$ Myr onward {cite:p}`Kleine2009,Kruijer2017`.
 
 
-### Blackboard derivation: the Pb-Pb isochron age of CAIs
+## Blackboard derivation: The Pb-Pb isochron age of CAIs
+
+````{admonition} Blackboard derivation: The Pb-Pb isochron age of CAIs
+:class: tip
 
 We now derive the Pb-Pb isochron age of the oldest solar system solids.
 This is the single most important number in this lecture and the cleanest illustration of how multiple radioactive systems can be combined to bypass model assumptions.
@@ -295,6 +298,7 @@ This is the absolute zero of the solar system clock.
 
 Pb-Pb isochrons for (A) the Efremovka CAI 22E, (B) an Allende chondrule (C30), and (C) an NWA 5697 chondrule (C2). Each panel plots $^{207}\mathrm{Pb}/^{206}\mathrm{Pb}$ versus $^{204}\mathrm{Pb}/^{206}\mathrm{Pb}$ for cogenetic mineral fractions; the slope of the isochron yields the absolute age. The single-isochron age for CAI 22E, $4567.35 \pm 0.28$ Myr, is consistent with the weighted-mean CAI age $4567.30 \pm 0.16$ Myr derived from multiple CAIs in the main text. The Allende chondrule is contemporaneous with CAIs to within uncertainties, while the NWA chondrule is about 2.6 Myr younger. Figure adapted from {cite:t}`Connelly2012`.
 ```
+````
 
 
 ### Petrographic and shock metamorphism

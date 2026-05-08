@@ -487,7 +487,7 @@ The **seasonal $\mathrm{CO_2}$ cycle** is dramatic: roughly $25\%$ of the entire
 **Dust devils** and other sub-grid meteorological phenomena have been monitored by *InSight*'s pressure and seismic sensors, providing the first sustained record of high-frequency atmospheric variability on another planet.
 
 
-### Blackboard derivation: the Jeans escape flux
+## Blackboard derivation: The Jeans escape flux
 
 ```{admonition} Blackboard derivation: Jeans escape flux from Mars
 :class: tip

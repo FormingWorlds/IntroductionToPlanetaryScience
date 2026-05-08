@@ -393,7 +393,10 @@ Other proposals invoke late captured Kuiper Belt objects.
 The debate is healthy and ongoing.
 The pedagogical lesson, for an introductory course, is that solar system bodies do not all date from 4.5 Gyr ago: dramatic events on $\lesssim$Gyr timescales continue to shape what we see today.
 
-### Blackboard derivation: The Roche limit
+## Blackboard derivation: The Roche limit
+
+```{admonition} Blackboard derivation: The Roche limit
+:class: tip
 
 The Roche limit is the orbital distance inside which the tidal field of a primary body exceeds the self-gravity of a fluid satellite, so that the satellite cannot hold itself together gravitationally and is instead disrupted into a disk of particles.
 The concept was introduced by {cite:t}`Roche1849` and is the key piece of physics behind the existence and location of planetary rings.
@@ -490,6 +493,7 @@ The faint G ring at $\sim$170{,}000 km lies outside the formal Roche limit; it i
 The physical interpretation is that, interior to $d_R$, the differential pull of the planet across any solid agglomerate is so strong that the agglomerate cannot grow above $\sim$$10$ m without being torn apart.
 Ring particles therefore orbit as a collisional disk maintained by mutual scattering rather than as a single coalesced moon.
 This is the key explanation for why rings exist where they do: not because anything special happened locally, but because tidal forces inside the Roche limit forbid the particles from doing what they would otherwise do, namely accrete into a single body.
+```
 
 ### Titan
 

@@ -1,0 +1,17 @@
+{
+  "purpose": "Fig. 2.18 (fig:ss-mass-budget): solar system mass budget pie",
+  "source": "NASA Planetary Fact Sheet (Williams 2024)",
+  "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+  "retrieved_date": "2026-04-23",
+  "citation_key": "NASAFactSheet",
+  "columns": {
+    "body": "Planet name (string).",
+    "mass_earth_units": "Planet mass in Earth masses (M_Earth = 5.9722e24 kg).",
+    "notes": "Free-form notes."
+  },
+  "constants": {
+    "M_sun_kg": 1.98892e+30,
+    "M_earth_kg": 5.9722e+24
+  },
+  "license_note": "NASA Planetary Fact Sheet content is public domain."
+}

@@ -1,0 +1,19 @@
+{
+  "purpose": "Fig. 6.2 (fig:composition-bar): atmospheric VMR by body",
+  "source": "NASA Planetary Fact Sheet (Williams 2024)",
+  "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+  "retrieved_date": "2026-04-23",
+  "citation_key": "NASAFactSheet",
+  "units": "Volume mixing ratio in percent.",
+  "columns": {
+    "CO2": "CO2 volume mixing ratio (%)",
+    "N2": "N2 volume mixing ratio (%)",
+    "O2": "O2 volume mixing ratio (%)",
+    "H2": "H2 volume mixing ratio (%)",
+    "He": "He volume mixing ratio (%)",
+    "CH4": "CH4 volume mixing ratio (%)",
+    "Ar": "Ar volume mixing ratio (%)",
+    "Other": "Other volume mixing ratio (%)"
+  },
+  "license_note": "NASA Planetary Fact Sheet content is public domain."
+}

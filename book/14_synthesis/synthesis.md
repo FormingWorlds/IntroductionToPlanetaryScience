@@ -320,7 +320,10 @@ There is no shortage of proposed resolutions, none of which can be tested direct
 The pedagogical framing for this course is that the Fermi paradox is *a question, not an answer*. It is most useful as a check on intuition about how confident one should be in particular Drake-equation factors. If you find yourself estimating $N \sim 10^4$, the Fermi paradox forces you to ask where those civilisations are and what mechanism is keeping them invisible. If your estimate is $N \sim 1$, the paradox dissolves but is replaced by the equally hard question of why life is so rare. Either way, the paradox is a tool for thinking, not a piece of evidence.
 
 
-## Blackboard derivation (~10 min): The habitable zone boundaries
+## Blackboard derivation: The habitable zone boundaries
+
+````{admonition} Blackboard derivation: The habitable zone boundaries
+:class: tip
 
 The aim of this derivation is to reconstruct the inner and outer edges of the classical habitable zone from a one-line energy balance, without invoking any radiative-convective machinery. The inputs are the inverse-square law and the Stefan-Boltzmann law; the outputs are the orbital distances at which an Earth-like planet around a star of luminosity $L_\star$ can support liquid surface water. After deriving the result in general, we will compare HZ widths for G, K, and M dwarfs.
 
@@ -413,6 +416,7 @@ $$
 The strong $a^6$ dependence (an inverse-cube tidal force squared) means the answer changes by many orders of magnitude across the HZ. Plugging in Earth-like parameters ($\alpha_p \approx 0.33$, $k_{2,p} \approx 0.3$, $Q_p \approx 100$, $\omega_0 \sim 2\pi/(\text{day})$) for an Earth analogue at $a = 1$ AU around the Sun gives $\tau_{\rm lock} \sim 10^{12}$ yr, comfortably longer than the age of the universe, so an Earth analogue at 1 AU around a Sun-like star is not tidally locked. For a TRAPPIST-1 b analogue, however, $a \approx 0.011$ AU and $M_\star \approx 0.08\,\Msun$ shrink the numerator and the denominator together; the strong $a^6$ scaling dominates, so the net effect is that $\tau_{\rm lock}$ drops by many orders of magnitude to $\sim 10^7$ yr or shorter (the precise value depends on the highly uncertain $Q_p$), which is in any case far shorter than the $\sim 8$ Gyr age of the TRAPPIST-1 system. Every TRAPPIST-1 inner planet has therefore had ample time to reach a tidally locked or near-locked spin state, and the same conclusion holds for essentially every M-dwarf HZ planet known today. The 3D climate corrections in {numref}`fig:l14:shields-mdwarf-hz` are not an academic complication: they apply to the regime in which essentially all M-dwarf HZ planets sit.
 
 **Key insight.** The HZ as derived above is a useful 1D radiative limit. It is *well-defined* as a thermodynamic boundary on the location of liquid surface water, but it is *not* a sufficient condition for habitability. Real habitability also depends on planetary boundary conditions (volatile inventory, tectonic regime, escape history, magnetic shielding, evolutionary trajectory) that the 1D HZ ignores. Part 2's coupling diagram is the qualitative version of what a full 3D climate-evolution model computes quantitatively for an individual planet.
+````
 
 
 ## Part 3: Astrobiology and the search for life
