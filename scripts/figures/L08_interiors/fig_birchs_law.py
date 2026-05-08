@@ -69,7 +69,7 @@ def make_plot() -> Path:
 
     # Fayalite outlier in different colour, with annotation
     if out_x:
-        ax.plot(out_x, out_y, "o", color="#1f3a5f", ms=11,
+        ax.plot(out_x, out_y, "o", color="#d68a32", ms=11,
                 mec="black", mew=0.4, zorder=5)
         for x, y, n in zip(out_x, out_y, out_n):
             ax.annotate(n, xy=(x, y), xytext=(8, 0), textcoords="offset points",

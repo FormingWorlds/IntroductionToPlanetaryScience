@@ -25,9 +25,9 @@ from scripts.figures._shared.style import apply_style, save_figure
 REPO_ROOT = Path(__file__).resolve().parents[3]
 OUT_AVIF = REPO_ROOT / "book/08_interiors/figures/convection_regimes.avif"
 
-R_TOTAL = 1.0          # surface radius (normalised)
-R_660 = 0.85           # 660 km discontinuity (small; depth fraction ~10%)
-R_CMB = 0.55           # core-mantle boundary
+R_TOTAL = 1.0          # surface radius (normalised; R_E = 6371 km)
+R_660 = 0.896          # 660 km discontinuity (depth = 0.104 of R_E)
+R_CMB = 0.546          # core-mantle boundary at 2891 km depth
 CORE_COLOR = "#c0524a"
 MANTLE_COLOR = "#f6f4f2"
 COLD_DOWN = "#1f77b4"

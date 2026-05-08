@@ -71,7 +71,7 @@ def make_plot() -> Path:
     ax.text(1100, 21, r"Ringwoodite ($\gamma$)", fontsize=10)
     ax.text(1500, 60, "Bridgmanite + Ferropericlase\n(perovskite-structured)",
             fontsize=10, ha="left")
-    ax.text(1500, 145, "Post-perovskite (PPv)", fontsize=10, ha="left")
+    ax.text(3500, 138, "Post-perovskite (PPv)", fontsize=10, ha="center")
 
     ax.invert_yaxis()
     ax.set_xlim(1000, 4500)

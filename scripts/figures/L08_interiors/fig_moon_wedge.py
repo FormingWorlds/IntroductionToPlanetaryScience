@@ -50,8 +50,9 @@ def make_plot() -> Path:
     ax.add_patch(Circle((0, 0), R_INNER_CORE, facecolor="#5d201b",
                         edgecolor="0.4", lw=0.6))
 
-    # Wedge to expose layers (top-right quadrant cut)
-    ax.add_patch(Wedge((0, 0), R, 0, 90, facecolor="#736356",
+    # Wedge to expose layers (top-right quadrant cut). Outer wedge is
+    # the crust (light beige); inner wedge starts the silicate mantle.
+    ax.add_patch(Wedge((0, 0), R, 0, 90, facecolor="#dcd6cd",
                        edgecolor="black", lw=0.6))
     ax.add_patch(Wedge((0, 0), R - CRUST_THICKNESS, 0, 90,
                        facecolor="#736356", edgecolor="0.4", lw=0.4))
@@ -71,8 +72,8 @@ def make_plot() -> Path:
     sx = R + 120
     ax.plot([sx, sx], [-R, R], color="0.5", lw=0.8)
     fractions = [(R, "1.0\n(surface)"),
-                 (R_PARTIAL_MELT, "0.28\n(core top)"),
-                 (R_LIQUID_CORE, "0.22"),
+                 (R_PARTIAL_MELT, "0.28\n(melt-layer top)"),
+                 (R_LIQUID_CORE, "0.19\n(outer-core top)"),
                  (R_INNER_CORE, "0.14"),
                  (0, "0")]
     for r, label in fractions:

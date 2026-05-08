@@ -42,14 +42,25 @@ def make_plot() -> Path:
     for _, r, c in LAYERS:
         ax.add_patch(Circle((0, 0), r, facecolor=c, edgecolor="black", lw=0.7))
 
-    # Annotation arrows (right side)
+    # Annotation arrows (right side); each anchor placed at the actual
+    # mid-radius of the corresponding layer along an angle that points
+    # the arrow into that layer specifically.
+    import numpy as np
     label_xs = [1.2, 1.2, 1.2, 1.2]
     label_ys = [0.78, 0.30, -0.20, -0.78]
-    layer_anchor_rs = [0.89, 0.74, 0.625, 0.27]
-    for (label, _, _), x_l, y_l, r_anchor in zip(LAYERS, label_xs, label_ys,
-                                                  layer_anchor_rs):
-        ax.annotate(label, xy=(r_anchor * 0.5, r_anchor * 0.5),
-                    xytext=(x_l, y_l), fontsize=10, ha="left", va="center",
+    # (layer mid-radius, anchor angle in degrees)
+    anchor_polar = [
+        (0.89, 70),    # molecular H2 (upper-right)
+        (0.74, 28),    # He-rain (right)
+        (0.625, -25),  # metallic-H (lower-right)
+        (0.275, -65),  # diffuse core (lower-right, deep in)
+    ]
+    for (label, _, _), x_l, y_l, (r_anchor, theta_deg) in zip(
+            LAYERS, label_xs, label_ys, anchor_polar):
+        theta = np.radians(theta_deg)
+        xy = (r_anchor * np.cos(theta), r_anchor * np.sin(theta))
+        ax.annotate(label, xy=xy, xytext=(x_l, y_l),
+                    fontsize=10, ha="left", va="center",
                     arrowprops=dict(arrowstyle="-", color="0.4", lw=0.6))
 
     ax.set_xlim(-1.2, 2.5)

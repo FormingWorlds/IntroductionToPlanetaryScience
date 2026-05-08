@@ -155,10 +155,11 @@ def make_plot() -> Path:
     ax_b.legend(loc="upper left", frameon=True, fontsize=10)
     ax_b.grid(linestyle=":", alpha=0.3)
     ax_b.set_xlim(4500, 12500)
-    ax_b.text(8500, 3500,
-              "Compositional jump\n(silicate -> Fe-alloy)",
-              fontsize=9, color="#a83232", ha="left",
-              bbox=dict(facecolor="#fdf0f0", edgecolor="0.7", pad=4))
+    ax_b.annotate("Compositional jump\n(silicate -> Fe-alloy)",
+                  xy=(8500, 2891), xytext=(8500, 3500),
+                  fontsize=9, color="#a83232", ha="left",
+                  arrowprops=dict(arrowstyle="->", color="#a83232", lw=1.0),
+                  bbox=dict(facecolor="#fdf0f0", edgecolor="0.7", pad=4))
 
     fig.suptitle("Adams-Williamson relation: PREM density vs prediction "
                  r"$d\ln\rho/dr = -g/\phi$",

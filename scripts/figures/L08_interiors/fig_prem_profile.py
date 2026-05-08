@@ -69,6 +69,13 @@ def make_plot() -> Path:
         ax.text(14.5, depth, label, color="0.4", fontsize=9,
                 ha="right", va="bottom")
 
+    # Explicit v_S = 0 callout at the CMB (key seismology result -
+    # liquid outer core has zero shear strength)
+    ax.annotate(r"$v_S = 0$" + "\n(liquid outer core)",
+                xy=(0.05, 2891), xytext=(2.3, 3500),
+                fontsize=10, color="#a83232",
+                arrowprops=dict(arrowstyle="->", color="#a83232", lw=1.0))
+
     # Region labels
     ax.text(0.5, 250, "Upper mantle", color="0.4", fontsize=10,
             ha="left", va="center")

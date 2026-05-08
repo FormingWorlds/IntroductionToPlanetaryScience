@@ -38,14 +38,22 @@ def make_plot() -> Path:
     for _, r, c in LAYERS:
         ax.add_patch(Circle((0, 0), r, facecolor=c, edgecolor="black", lw=0.7))
 
-    # Annotation lines from each layer to right-side label
+    # Annotation lines pointing into each layer's actual mid-radius
+    import numpy as np
     label_xs = [1.2, 1.2, 1.2]
     label_ys = [0.65, 0.0, -0.65]
-    anchor_rs = [0.92, 0.50, 0.10]
-    for (label, _, _), x_l, y_l, r_anchor in zip(LAYERS, label_xs, label_ys,
-                                                  anchor_rs):
-        ax.annotate(label, xy=(r_anchor * 0.7, r_anchor * 0.7),
-                    xytext=(x_l, y_l), fontsize=10, ha="left", va="center",
+    # mid-radii of layers: H/He envelope 0.89; ice 0.48; rocky core 0.09
+    anchor_polar = [
+        (0.89, 60),    # H/He envelope (upper-right)
+        (0.48, 0),     # ice/superionic (right)
+        (0.09, -60),   # rocky core (deep, lower-right)
+    ]
+    for (label, _, _), x_l, y_l, (r_anchor, theta_deg) in zip(
+            LAYERS, label_xs, label_ys, anchor_polar):
+        theta = np.radians(theta_deg)
+        xy = (r_anchor * np.cos(theta), r_anchor * np.sin(theta))
+        ax.annotate(label, xy=xy, xytext=(x_l, y_l),
+                    fontsize=10, ha="left", va="center",
                     arrowprops=dict(arrowstyle="-", color="0.4", lw=0.6))
 
     ax.set_xlim(-1.2, 2.6)

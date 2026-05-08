@@ -49,7 +49,7 @@ def make_plot() -> Path:
     ax.add_patch(Wedge((0, 0), R, 0, 90, facecolor="#a17c5a",
                        edgecolor="black", lw=0.6))
     ax.add_patch(Wedge((0, 0), R_CORE, 0, 90, facecolor="#a13a35",
-                       edgecolor="0.4", lw=0.4))
+                       edgecolor="0.3", lw=1.0, linestyle="--"))
 
     # Wedge labels
     ax.text(R * 0.55, R * 0.55, "Silicate\nmantle",

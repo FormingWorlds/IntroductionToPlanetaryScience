@@ -77,7 +77,8 @@ def panel_b(ax) -> None:
     periods = [m[1] for m in MOON_PERIODS]
     colors = [m[2] for m in MOON_PERIODS]
 
-    y = np.arange(len(MOON_PERIODS))
+    # Io at top (matches inner orbit in panel a); Ganymede at bottom
+    y = np.arange(len(MOON_PERIODS))[::-1]
     ax.barh(y, periods, color=colors, edgecolor="black", lw=0.5)
     for yi, p in zip(y, periods):
         ax.text(p + 0.15, yi, f"{p:.2f} d", va="center", fontsize=11)
