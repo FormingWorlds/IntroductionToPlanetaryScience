@@ -1,0 +1,21 @@
+{
+  "purpose": "Fig. fig:roche-geometry: tidal acceleration vs self-gravity for an icy body around Saturn",
+  "primary": {
+    "body": "Saturn",
+    "M_kg": 5.6834e+26,
+    "R_m": 58232000.0,
+    "mean_density_kg_m3": 687.0,
+    "source": "NASA Planetary Fact Sheet (Williams 2024)"
+  },
+  "satellite": {
+    "kind": "Icy body",
+    "R_m": 200000.0,
+    "density_kg_m3": 1000.0,
+    "note": "Representative ice density used in body text."
+  },
+  "constants_SI": {
+    "G": 6.6743e-11
+  },
+  "expected_fluid_Roche_R_p": 2.1706377557329626,
+  "license_note": "Derived from public physical constants and Saturn Fact Sheet."
+}
