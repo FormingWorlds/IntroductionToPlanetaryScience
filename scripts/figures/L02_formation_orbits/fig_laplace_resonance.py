@@ -28,6 +28,9 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = Path(__file__).resolve().parent / "data"
 META = DATA_DIR / "galilean_moons.json"
 OUT_AVIF = REPO_ROOT / "book/02_formation_orbits/figures/laplace_resonance.avif"
+# The same figure also appears in L03 (heat_energy.md) as fig:laplace-resonance-tidal,
+# so we mirror the AVIF there to keep the two lectures' figure trees self-contained.
+OUT_AVIF_MIRROR = REPO_ROOT / "book/03_heat_energy/figures/laplace_resonance.avif"
 
 # Galilean moons: semi-major axis (10^3 km), orbital period (days), color.
 MOONS = {
@@ -116,9 +119,13 @@ def make_plot() -> Path:
 
 
 def main() -> None:
+    import shutil
     out = make_plot()
+    OUT_AVIF_MIRROR.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(out, OUT_AVIF_MIRROR)
     print(f"  meta : {META}")
     print(f"  plot : {out}")
+    print(f"  mirror: {OUT_AVIF_MIRROR}")
 
 
 if __name__ == "__main__":
