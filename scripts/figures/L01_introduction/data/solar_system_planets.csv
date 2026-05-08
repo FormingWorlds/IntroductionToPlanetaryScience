@@ -1,0 +1,9 @@
+body,mass_earth_units,radius_km,semi_major_axis_AU,bond_albedo,sidereal_rotation_h,Tsurf_K,Psurf_bar,dominant_species,notes
+Mercury,0.0553,2439.7,0.3871,0.088,1407.6,440,0,,Tsurf is mean dayside; effectively no atmosphere
+Venus,0.815,6051.8,0.7233,0.76,-5832.5,737,92.0,CO2,Tsurf is global mean from VIRA; rotation is retrograde
+Earth,1.0,6371.0,1.0000,0.306,23.9345,288,1.014,N2,US Standard Atmosphere 1976 surface mean
+Mars,0.107,3389.5,1.5237,0.250,24.6229,210,0.00636,CO2,Tsurf and Psurf are global means from MGS/MOLA era
+Jupiter,317.83,69911,5.2026,0.503,9.9259,165,1.0,H2,T and P refer to the 1-bar level (no surface)
+Saturn,95.16,58232,9.5549,0.342,10.656,134,1.0,H2,T and P refer to the 1-bar level (no surface)
+Uranus,14.54,25362,19.2184,0.300,-17.2400,76,1.0,H2,T and P at the 1-bar level; rotation is retrograde relative to orbit
+Neptune,17.15,24622,30.1104,0.290,16.1100,72,1.0,H2,T and P at the 1-bar level

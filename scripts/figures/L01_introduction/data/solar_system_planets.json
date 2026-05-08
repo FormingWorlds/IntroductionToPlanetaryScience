@@ -1,0 +1,26 @@
+{
+  "purpose": "Bulk planetary data for L01 figures: ss-mass-budget, density-vs-distance, mass-vs-distance, vem-atmospheres, planet-sizes (and reused by other lectures).",
+  "source": "NASA Planetary Fact Sheet (Williams 2024)",
+  "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+  "retrieved_date": "2026-04-23",
+  "citation_key": "NASAFactSheet",
+  "constants": {
+    "M_earth_kg": 5.9722e24,
+    "R_earth_km": 6371.0,
+    "AU_km": 1.495978707e8
+  },
+  "columns": {
+    "body": "Planet name (string).",
+    "mass_earth_units": "Planet mass in Earth masses (M_Earth = 5.9722e24 kg).",
+    "radius_km": "Volumetric mean radius in km. For giants, this is the 1-bar radius equivalent.",
+    "semi_major_axis_AU": "Orbital semi-major axis in astronomical units.",
+    "bond_albedo": "Bond albedo (dimensionless, 0-1).",
+    "sidereal_rotation_h": "Sidereal rotation period in hours; negative values indicate retrograde rotation.",
+    "Tsurf_K": "Mean surface temperature (K). For giants, this is the temperature at the 1-bar reference level.",
+    "Psurf_bar": "Surface pressure (bar). 0 for Mercury (effectively no atmosphere). Giants do not have a solid surface; the value 1 bar refers to the reference level.",
+    "dominant_species": "Most abundant atmospheric constituent by volume.",
+    "notes": "Free-form notes."
+  },
+  "license_note": "NASA Planetary Fact Sheet content is public domain.",
+  "uncertainties_note": "Surface temperatures for terrestrial bodies are global means; for Mars in particular, diurnal and seasonal variability is large."
+}
