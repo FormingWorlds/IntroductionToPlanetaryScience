@@ -8,7 +8,7 @@
     {"name": "Forsterite",   "density": 3.22, "v_P":  8.6, "outlier": false},
     {"name": "Diopside",     "density": 3.28, "v_P":  7.7, "outlier": false},
     {"name": "Periclase",    "density": 3.58, "v_P":  9.7, "outlier": false},
-    {"name": "Garnet",       "density": 3.60, "v_P":  8.8, "outlier": false},
+    {"name": "Garnet",       "density": 3.60, "v_P":  9.1, "outlier": false},
     {"name": "Ringwoodite",  "density": 3.72, "v_P":  9.8, "outlier": false},
     {"name": "Corundum",     "density": 3.99, "v_P": 10.8, "outlier": false},
     {"name": "Bridgmanite",  "density": 4.10, "v_P": 10.5, "outlier": false},

@@ -22,12 +22,15 @@ from scripts.figures._shared.style import apply_style, save_figure
 REPO_ROOT = Path(__file__).resolve().parents[3]
 OUT_AVIF = REPO_ROOT / "book/08_interiors/figures/saturn_interior_schematic.avif"
 
-# Concentric layers (outer to inner): label, outer fractional radius, color
+# Concentric layers (outer to inner): label, outer fractional radius, color.
+# Boundaries follow the Mankovich 2021 ring-seismology fuzzy core extending
+# to ~0.60 R_Sat, with the molecular/metallic-H transition at ~0.70 R_Sat
+# bracketing the He-rain layer (Guillot 1999; Nettelmann 2013; Helled 2020).
 LAYERS = [
     ("Molecular H$_2$\ngas to liquid",                 1.00, "#bca3d6"),
-    ("Helium-rain layer\nHe droplets settle",         0.62, "#f0e3a8"),
-    ("Metallic hydrogen\n(conducting; dynamo source)", 0.55, "#7a559e"),
-    ("Diffuse core (gradational)\n~17 M$_\\oplus$ heavy elements", 0.30, "#c08e57"),
+    ("Helium-rain layer\nHe droplets settle",         0.78, "#f0e3a8"),
+    ("Metallic hydrogen\n(conducting; dynamo source)", 0.70, "#7a559e"),
+    ("Diffuse core (gradational)\n~17 M$_\\oplus$ heavy elements", 0.55, "#c08e57"),
 ]
 
 
@@ -42,7 +45,7 @@ def make_plot() -> Path:
     # Annotation arrows (right side)
     label_xs = [1.2, 1.2, 1.2, 1.2]
     label_ys = [0.78, 0.30, -0.20, -0.78]
-    layer_anchor_rs = [0.85, 0.59, 0.45, 0.18]
+    layer_anchor_rs = [0.89, 0.74, 0.625, 0.27]
     for (label, _, _), x_l, y_l, r_anchor in zip(LAYERS, label_xs, label_ys,
                                                   layer_anchor_rs):
         ax.annotate(label, xy=(r_anchor * 0.5, r_anchor * 0.5),
