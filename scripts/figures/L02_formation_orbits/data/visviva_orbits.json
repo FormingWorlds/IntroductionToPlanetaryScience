@@ -1,0 +1,21 @@
+{
+  "purpose": "Fig. fig:visviva: orbital speed from vis-viva for Earth and Halley's comet.",
+  "constants_SI": {
+    "G": 6.6743e-11,
+    "M_sun_kg": 1.98892e+30,
+    "AU_m": 149597870700.0
+  },
+  "orbits": {
+    "Earth": {
+      "a_AU": 1.0,
+      "e": 0.01671,
+      "source": "NASA Planetary Fact Sheet (Williams 2024)"
+    },
+    "Halley's comet": {
+      "a_AU": 17.834,
+      "e": 0.9671,
+      "source": "JPL Small-Body Database, accessed 2026"
+    }
+  },
+  "license_note": "Derived from public physical constants and orbital parameters."
+}
