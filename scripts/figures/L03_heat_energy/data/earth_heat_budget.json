@@ -1,0 +1,26 @@
+{
+  "purpose": "Fig. fig:earth-heat-budget: Earth surface heat budget pie",
+  "total_TW": 47.0,
+  "components": [
+    {
+      "label": "Radiogenic\n(mantle + crust)",
+      "TW": 20.0
+    },
+    {
+      "label": "Primordial\n(secular cooling)",
+      "TW": 15.0
+    },
+    {
+      "label": "Core cooling\nand solidification",
+      "TW": 10.0
+    },
+    {
+      "label": "Tidal (lunar)",
+      "TW": 0.1
+    }
+  ],
+  "source": "Davies, J. H. & Davies, D. R. (2010), Solid Earth 1, 5-24",
+  "doi": "10.5194/se-1-5-2010",
+  "citation_key": "DaviesDavies2010",
+  "license_note": "Component figures are conventional review values."
+}
