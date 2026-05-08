@@ -1,0 +1,18 @@
+{
+  "purpose": "Fig. fig:planetary-dipole-moments: planetary magnetic dipole moments",
+  "units": "M / M_Earth (Earth's magnetic dipole moment ~ 8e22 A m^2)",
+  "source": "Bagenal 2013, Table 3 (Planetary Magnetospheres) and references therein.",
+  "citation_key": "Bagenal2013",
+  "notes": "Mars and Venus have no detected global field today; values shown are upper limits set by spacecraft observations.",
+  "bodies": [
+    {"body": "Jupiter",  "M_over_Mearth": 2.0e4,  "active": true,  "kind": "active"},
+    {"body": "Saturn",   "M_over_Mearth": 6.0e2,  "active": true,  "kind": "active"},
+    {"body": "Uranus",   "M_over_Mearth": 5.0e1,  "active": true,  "kind": "active"},
+    {"body": "Neptune",  "M_over_Mearth": 2.0e1,  "active": true,  "kind": "active"},
+    {"body": "Earth",    "M_over_Mearth": 1.0,    "active": true,  "kind": "active"},
+    {"body": "Ganymede", "M_over_Mearth": 2.0e-3, "active": true,  "kind": "active"},
+    {"body": "Mercury",  "M_over_Mearth": 5.0e-4, "active": true,  "kind": "active"},
+    {"body": "Mars",     "M_over_Mearth": 3.0e-5, "active": false, "kind": "upper_limit"},
+    {"body": "Venus",    "M_over_Mearth": 1.0e-5, "active": false, "kind": "upper_limit"}
+  ]
+}

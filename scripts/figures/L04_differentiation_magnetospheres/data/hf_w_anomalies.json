@@ -1,0 +1,34 @@
+{
+  "purpose": "Fig. fig:hf-w-chronometry: epsilon-182W in planetary mantles",
+  "units": "epsilon = parts per 10^4 deviation from CHUR (chondritic uniform reservoir)",
+  "reservoirs": [
+    {
+      "label": "Chondrites (reference)",
+      "epsilon_182W": 0.0,
+      "uncertainty": 0.1,
+      "source": "Definition (CHUR zero point)",
+      "citation_key": "Kleine2009"
+    },
+    {
+      "label": "Bulk silicate Earth",
+      "epsilon_182W": 1.9,
+      "uncertainty": 0.1,
+      "source": "Bulk-silicate Earth value tabulated in Kleine et al. 2009 review (Table 1).",
+      "citation_key": "Kleine2009"
+    },
+    {
+      "label": "SNC meteorites (Mars)",
+      "epsilon_182W": 0.4,
+      "uncertainty": 0.05,
+      "source": "Mean of Mars-mantle anomalies; consistent with Kruijer et al. 2017 (Earth Planet. Sci. Lett.).",
+      "citation_key": "Kruijer2017Mars"
+    },
+    {
+      "label": "Lunar mantle",
+      "epsilon_182W": 0.27,
+      "uncertainty": 0.1,
+      "source": "Mean from Touboul/Kleine compilation; cited in Kleine et al. 2009 review.",
+      "citation_key": "Kleine2009"
+    }
+  ]
+}
