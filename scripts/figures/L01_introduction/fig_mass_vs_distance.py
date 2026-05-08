@@ -1,0 +1,74 @@
+"""Generate Fig. (`fig:mass-vs-distance`).
+
+Planetary mass versus orbital semi-major axis on a log-log scale.
+Companion to fig:density-vs-distance: this view emphasises the
+extreme concentration of mass in Jupiter rather than the rocky-vs-gas
+density gradient.
+
+Data: NASA Planetary Fact Sheet (Williams 2024); see
+`solar_system_planets.json`.
+
+Caption / figure id : `fig:mass-vs-distance`
+Markdown source     : book/01_introduction/introduction.md (around line 245)
+Citation key        : NASAFactSheet
+"""
+from __future__ import annotations
+
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+from scripts.figures._shared.style import apply_style, save_figure
+
+
+REPO_ROOT = Path(__file__).resolve().parents[3]
+DATA_CSV = Path(__file__).resolve().parent / "data" / "solar_system_planets.csv"
+OUT_AVIF = REPO_ROOT / "book/01_introduction/figures/mass_vs_distance.avif"
+
+
+def make_plot() -> Path:
+    apply_style()
+    df = pd.read_csv(DATA_CSV)
+
+    fig, ax = plt.subplots(figsize=(7.5, 4.5))
+
+    is_terrestrial = df["mass_earth_units"] < 10.0
+    rocky = df[is_terrestrial]
+    giants = df[~is_terrestrial]
+
+    ax.scatter(rocky["semi_major_axis_AU"], rocky["mass_earth_units"],
+               s=120, facecolor="#d62728", edgecolor="black", linewidth=0.6,
+               label="Terrestrial planets", zorder=4)
+    ax.scatter(giants["semi_major_axis_AU"], giants["mass_earth_units"],
+               s=120, facecolor="#5b8def", edgecolor="black", linewidth=0.6,
+               label="Giant planets", zorder=4)
+
+    for _, row in df.iterrows():
+        ax.annotate(
+            row["body"],
+            (row["semi_major_axis_AU"], row["mass_earth_units"]),
+            xytext=(7, 5), textcoords="offset points", fontsize=10,
+        )
+
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_xlabel("Orbital semi-major axis (AU)")
+    ax.set_ylabel(r"Planetary mass ($M_\oplus$)")
+    ax.set_xlim(0.3, 50)
+    ax.set_ylim(0.03, 1000)
+    ax.grid(which="both", linestyle=":", alpha=0.3)
+    ax.legend(loc="lower right", frameon=False)
+
+    fig.tight_layout()
+    return save_figure(fig, OUT_AVIF, avif_quality=80)
+
+
+def main() -> None:
+    out = make_plot()
+    print(f"  data : {DATA_CSV}")
+    print(f"  plot : {out}")
+
+
+if __name__ == "__main__":
+    main()
