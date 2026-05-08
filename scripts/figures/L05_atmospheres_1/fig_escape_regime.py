@@ -63,9 +63,9 @@ def make_plot() -> Path:
             fontsize=11, color="#a14a25", weight="bold", ha="left")
     ax.text(8.0, 80, "EUV-driven hydrodynamic\n(young-star regime)",
             fontsize=11, color="#a14a25", weight="bold", ha="center")
-    ax.text(9.0, 4.0, "Jeans\n(thermal)",
+    ax.text(9.0, 8.0, "Jeans\n(thermal)",
             fontsize=11, color="#9b7b18", weight="bold", ha="center")
-    ax.text(80, 4.0, "Retained",
+    ax.text(80, 8.0, "Retained",
             fontsize=11, color="#1f6b3b", weight="bold", ha="center")
 
     # Markers (place labels ABOVE markers to keep them inside the plot)

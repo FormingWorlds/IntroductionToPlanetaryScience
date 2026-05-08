@@ -33,7 +33,7 @@ LAYERS = [
     ("Fe core",                       0.18, "#1a1a1a"),
     ("Lower-mantle cumulates",        0.65, "#2e6f2e"),
     ("Pyroxenite / dunite cumulates", 0.82, "#5aa55a"),
-    ("Dense ilmenite-rich layer",     0.86, "#1c4d1c"),
+    ("Dense ilmenite-rich layer",     0.86, "#7a4a2a"),
     ("urKREEP layer",                 0.93, "#d4a017"),
     ("Anorthosite crust (~40 km)",    1.00, "#e6dec0"),
 ]

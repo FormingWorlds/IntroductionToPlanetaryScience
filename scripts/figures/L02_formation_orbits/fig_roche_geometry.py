@@ -117,6 +117,10 @@ def make_plot() -> Path:
                  ha="center", fontsize=9)
     ax_geom.text(-2.6, 2.45, r"$d_R \approx 2.46\,R_p\,(\rho_p/\rho_s)^{1/3}$",
                  fontsize=10, color="#a83232")
+    ax_geom.text(-2.6, 2.05,
+                 r"(dashed circle drawn for the equal-density case "
+                 r"$\rho_p = \rho_s$)",
+                 fontsize=8, color="#a83232", style="italic")
 
     ax_geom.set_xlim(-3.0, 3.5)
     ax_geom.set_ylim(-2.0, 2.7)

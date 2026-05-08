@@ -77,20 +77,19 @@ def panel_left(ax) -> None:
 
 def panel_right(ax) -> None:
     draw_disk(ax)
-    # In the rotating frame, the parcel curves to the right (east in NH)
+    # In the rotating frame, the parcel curves to the right (east in NH).
+    # Parametric path: start at launch heading north (+y), bend eastward (+x).
     launch = (0.0, -0.85)
     ax.plot(*launch, "o", color="#d62728", ms=10, zorder=5)
 
-    # Curved path: parametric arc curving right
+    # Quadratic-in-t east drift, linear-in-t north drift. Initial tangent
+    # (dx/dt, dy/dt) at t=0 is (0, b), purely northward (correct boundary
+    # condition); curvature is to the east (parcel deflects right in NH).
     t = np.linspace(0, 1, 200)
-    # Start at launch, end somewhat NE
-    cx, cy = -1.2, 0.4   # circle centre to the LEFT of the path
-    R_arc = np.hypot(launch[0] - cx, launch[1] - cy)
-    theta_start = np.arctan2(launch[1] - cy, launch[0] - cx)
-    theta_end = theta_start - np.radians(60)
-    theta = theta_start + (theta_end - theta_start) * t
-    x = cx + R_arc * np.cos(theta)
-    y = cy + R_arc * np.sin(theta)
+    a = 0.85   # eastward drift coefficient (sets endpoint x)
+    b = 1.55   # northward drift coefficient (sets endpoint y above origin)
+    x = launch[0] + a * t ** 2
+    y = launch[1] + b * t
     ax.plot(x, y, color="#d62728", lw=2.0)
     ax.add_patch(FancyArrowPatch(
         (x[-3], y[-3]), (x[-1], y[-1]),
@@ -98,8 +97,9 @@ def panel_right(ax) -> None:
 
     ax.text(launch[0] + 0.05, launch[1] - 0.05, "Launch\n(low latitude)",
             color="#d62728", fontsize=9, va="top")
-    ax.text(0.85, 0.4, "Deflection\nto the right", color="#d62728",
-            fontsize=10, ha="left", va="center")
+    # Place "Deflection to the right" label near the actual end of the curve
+    ax.text(x[-1] + 0.05, y[-1] + 0.05, "Deflection\nto the right",
+            color="#d62728", fontsize=10, ha="left", va="bottom")
 
     # Reference straight line (greyed out)
     ax.plot([0, 0], [-0.85, 0.7], color="0.6", linestyle="--", lw=1.0)

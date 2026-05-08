@@ -89,8 +89,10 @@ def make_plot() -> Path:
                 fontsize=10, ha="left",
                 arrowprops=dict(arrowstyle="-", color="0.4", lw=0.6))
 
-    ax.text(0.012, 1.3, "Kelvin curve\nrises off-frame", color="0.3",
-            fontsize=9)
+    ax.annotate("Kelvin curve\nrises off-frame",
+                xy=(0.011, 1.55), xytext=(0.014, 1.10),
+                color="0.3", fontsize=9, ha="left", va="center",
+                arrowprops=dict(arrowstyle="->", color="0.3", lw=0.6))
 
     ax.axhline(0, color="0.6", lw=0.5)
     ax.set_xscale("log")

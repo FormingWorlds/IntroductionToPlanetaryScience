@@ -60,10 +60,13 @@ def make_plot() -> Path:
         mask = v >= v_esc
         ax.fill_between(v_kms[mask], 0, f_disp[mask],
                         color=color, alpha=0.18)
-        # Vertical line at v_esc
+        # Vertical line at v_esc; label placed near top of dashed line
         ax.axvline(v_esc / 1e3, color=color, linestyle="--", lw=1.0)
-        ax.text(v_esc / 1e3 + 0.15, 0.34,
-                r"$v_{\mathrm{esc}}$", color=color, fontsize=11)
+        # Stagger labels in y so the two don't collide on the same line
+        y_label = 0.40 if T < 500 else 0.36
+        ax.text(v_esc / 1e3 + 0.15, y_label,
+                r"$v_{\mathrm{esc}}$", color=color, fontsize=11,
+                va="top")
 
     # Annotation pointing to the high-speed tail
     ax.annotate("Jeans escape tail\n($v > v_{\\mathrm{esc}}$)",

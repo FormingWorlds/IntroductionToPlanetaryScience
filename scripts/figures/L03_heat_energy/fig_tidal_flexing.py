@@ -104,8 +104,8 @@ def make_plot() -> Path:
     fig.suptitle(
         r"Cyclic flexing dissipates orbital energy as heat: "
         r"$\dot E_\mathrm{tidal} \propto e^2/Q$",
-        y=0.04, fontsize=12, color="#d62728")
-    fig.tight_layout(rect=(0, 0.05, 1, 1))
+        y=0.97, fontsize=12, color="#d62728")
+    fig.tight_layout(rect=(0, 0, 1, 0.94))
     return save_figure(fig, OUT_AVIF, avif_quality=80)
 
 
