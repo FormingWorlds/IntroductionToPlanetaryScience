@@ -16,8 +16,10 @@ Markdown source     : book/06_atmospheres_2/atmospheres_2.md
 Reference values (literature):
 - H2O: L_vap = 2.50e6 J/kg, T_ref = 373.15 K, P_ref = 101325 Pa
        (boiling point at 1 atm)
-- H2SO4: L_vap = 7.2e5 J/kg, T_ref = 610 K, P_ref = 101325 Pa
-       (boiling point at 1 atm; Pruppacher & Klett 1997)
+- H2SO4: L_vap = 5.40e5 J/kg, T_ref = 610 K, P_ref = 101325 Pa
+       (boiling point at 1 atm; matches the worked-example table in
+       book/06_atmospheres_2/atmospheres_2.md, which gives
+       L_v / R_v = 6400 K for H2SO4)
 - NH3: L_vap = 1.371e6 J/kg, T_ref = 239.7 K, P_ref = 101325 Pa
 - CH4: L_vap = 5.10e5 J/kg, T_ref = 111.7 K, P_ref = 101325 Pa
 - CO2: L_sub = 5.71e5 J/kg, T_ref = 194.7 K, P_ref = 101325 Pa
@@ -41,7 +43,7 @@ R_UNIV = 8.314  # J/mol/K
 # (label, M [kg/mol], L [J/kg], T_ref [K], P_ref [Pa], color, condensation_T_band [K, K])
 SPECIES = [
     (r"H$_2$O",   18.015e-3, 2.50e6, 373.15, 101325.0, "#1f77b4", (250, 320)),
-    (r"H$_2$SO$_4$", 98.08e-3, 7.2e5, 610.0,  101325.0, "#d62728", (300, 420)),
+    (r"H$_2$SO$_4$", 98.08e-3, 5.40e5, 610.0, 101325.0, "#d62728", (300, 420)),
     (r"NH$_3$",   17.031e-3, 1.371e6, 239.7,  101325.0, "#2ca02c", (130, 180)),
     (r"CH$_4$",   16.043e-3, 5.10e5, 111.7,  101325.0, "#ff7f0e", (90, 150)),
     (r"CO$_2$ (subl.)", 44.01e-3, 5.71e5, 194.7, 101325.0, "#9467bd", (110, 180)),

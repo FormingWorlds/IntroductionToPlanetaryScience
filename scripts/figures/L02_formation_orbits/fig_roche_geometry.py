@@ -6,8 +6,12 @@ Two-panel Roche-limit figure:
     line). Annotates the fluid Roche-limit formula.
 (b) Tidal acceleration across a 200 km icy body and the body's
     surface self-gravity, plotted against orbital distance from
-    Saturn (in units of R_p). The crossing defines the fluid Roche
-    limit at d_R ≈ 2.17 R_p for ρ_s = 1000 kg/m^3.
+    Saturn (in units of R_p). The curve crossing defines the
+    *rigid* Roche limit at d_R ≈ 1.11 R_p for ρ_s = 1000 kg/m^3
+    (i.e. d = R_p (2 ρ_p / ρ_s)^(1/3)). The *fluid* Roche limit at
+    d_R ≈ 2.17 R_p (using the 2.46 prefactor) is drawn as a
+    separate dotted vertical line; tidal stretching of a fluid body
+    becomes catastrophic well before the rigid-body crossover.
 
 Saturn primary used as a concrete example so the figure is consistent
 with the body text. All values derived from public physical
