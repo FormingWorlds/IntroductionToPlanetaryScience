@@ -1,0 +1,25 @@
+{
+  "purpose": "Fig. fig:laplace-resonance: Galilean orbits + period commensurability",
+  "source": "NASA / JPL planetary fact sheets",
+  "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html",
+  "retrieved_date": "2026-04-23",
+  "citation_key": "NASAFactSheet",
+  "moons": {
+    "Io": {
+      "a_kkm": 421.8,
+      "P_days": 1.769138,
+      "color": "#d62728"
+    },
+    "Europa": {
+      "a_kkm": 671.1,
+      "P_days": 3.551181,
+      "color": "#1f77b4"
+    },
+    "Ganymede": {
+      "a_kkm": 1070.4,
+      "P_days": 7.154553,
+      "color": "#2ca02c"
+    }
+  },
+  "license_note": "NASA fact-sheet content is public domain."
+}
