@@ -369,7 +369,7 @@ These volcanoes are huge for two related reasons. First, in the absence of plate
 
 The Tharsis bulge is so massive that its formation imposed enormous stresses on the surrounding lithosphere. One result of those stresses, on the eastern flank of Tharsis, is **Valles Marineris**, a system of canyons stretching $\sim 4000\ \mathrm{km}$ along the equator, up to $200\ \mathrm{km}$ wide and $7\ \mathrm{km}$ deep. Valles Marineris is the largest canyon system in the solar system. Despite some superficial resemblances to terrestrial fluvial canyons such as the Grand Canyon, it is fundamentally a *tectonic rift*, opened by the lithospheric stresses from Tharsis. Water erosion (and possibly catastrophic flooding) modified some of its features later, but the original architecture is structural.
 
-Other notable features include **Hellas Planitia**, a $2300$-km-diameter, $\sim 8$-km-deep impact basin in the southern hemisphere that is the largest unambiguous impact crater on Mars; the **polar caps**, which are layered ice deposits with seasonal $\mathrm{CO_2}$ ice on top of permanent water ice; and the **chaotic terrain** at the heads of several outflow channels, where collapsed and broken-up surface blocks mark the site of catastrophic volume loss.
+Other notable features include **Hellas Planitia**, a $2300$-km-diameter, $\sim 7$-km-deep impact basin in the southern hemisphere that is the largest unambiguous impact crater on Mars; the **polar caps**, which are layered ice deposits with seasonal $\mathrm{CO_2}$ ice on top of permanent water ice; and the **chaotic terrain** at the heads of several outflow channels, where collapsed and broken-up surface blocks mark the site of catastrophic volume loss.
 
 
 ### Evidence for past water

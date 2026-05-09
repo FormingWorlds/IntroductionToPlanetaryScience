@@ -526,7 +526,7 @@ The following table illustrates $\lambda_J$ for several atmospheric species on E
 | $\mathrm{H_2}$ | 2 | 14 | 11 |
 | He | 4 | 28 | 22 |
 | $\mathrm{N_2}$ | 28 | 200 | 150 |
-| $\mathrm{CO_2}$ | 44 | 310 | 240 |
+| $\mathrm{CO_2}$ | 44 | 310 | 230 |
 
 For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so large that Jeans escape is negligible on both planets. For atomic hydrogen, $\lambda_J$ is moderate, leading to significant escape: this is why both Earth and Mars lose hydrogen to space ({numref}`fig:mb-jeans`). Earth's exobase temperature is not fixed at 1000 K: it varies from $\sim$600 K at solar minimum to $\sim$1500 K at solar maximum, which modulates the escape flux of the lightest species by orders of magnitude. We will revisit this derivation in full detail (starting from the Maxwell–Boltzmann distribution) in {ref}`lecture10`.
 
