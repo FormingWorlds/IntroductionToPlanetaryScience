@@ -192,14 +192,14 @@ Beyond the demographics, ALMA imaging of the young star HL Tauri ({numref}`fig:h
 ALMA 1.3 mm continuum image of the protoplanetary disk around the young star HL Tauri (distance $\sim 140$ pc). The concentric dark gaps are widely interpreted as carved by forming protoplanets. This was the first resolved view of disk substructure on AU scales. Credit: ALMA (ESO/NAOJ/NRAO); {cite:t}`ALMAPartnership2015`.
 ```
 
-The transit-detection method itself is illustrated by the discovery light curve of HD 209458 b ({numref}`fig:transit-hd209458b`), the first transiting exoplanet, in which the $\sim 1.4\%$ flux decrement during planetary transit gave the planet-to-star radius ratio via $\Delta F/F \approx (R_p/R_\star)^2$.
+The transit-detection method itself is illustrated by the discovery light curve of HD 209458 b ({numref}`fig:transit-hd209458b`), the first transiting exoplanet, in which the $\sim 1.7\%$ flux decrement during planetary transit gave the planet-to-star radius ratio via $\Delta F/F \approx (R_p/R_\star)^2$.
 
 ```{figure} figures/transit_hd209458b.avif
 :name: fig:transit-hd209458b
 :width: 500px
 :align: center
 
-Discovery transit of HD 209458 b, the first transiting exoplanet ever detected. The relative stellar flux drops by about 1.4% as the planet crosses the disk of its host star, recovering symmetrically afterwards. The depth gives the planet-to-star radius ratio via $\Delta F / F \approx (R_p / R_\star)^2$, and the duration constrains the orbital geometry. Credit: {cite:t}`Charbonneau2000`.
+Discovery transit of HD 209458 b, the first transiting exoplanet ever detected. The relative stellar flux drops by about 1.7% as the planet crosses the disk of its host star, recovering symmetrically afterwards. The depth gives the planet-to-star radius ratio via $\Delta F / F \approx (R_p / R_\star)^2$, and the duration constrains the orbital geometry. Credit: {cite:t}`Charbonneau2000`.
 ```
 
 Today, planetary science integrates astronomy, physics, chemistry, geology, and atmospheric science. It spans scales from dust grains in protoplanetary disks to the demographics of planetary systems across the Galaxy.
@@ -453,7 +453,7 @@ Backlit view of Saturn imaged by the Cassini spacecraft on 19 July 2013, with Ea
 First colour view of Mars from NASA's Perseverance rover, taken from one of its hazard-avoidance cameras shortly after landing in Jezero crater on 18 February 2021. The rover's shadow is visible in the foreground; the rocky plain ahead is part of an ancient lake-delta system. Perseverance is caching rock and regolith samples for eventual return to Earth via the Mars Sample Return campaign. Credit: NASA/JPL-Caltech.
 ```
 
-Several missions are planned for the coming decade, including ESA's JUICE (Jupiter icy moons, arrived 2025), the Mars Sample Return campaign, and the Dragonfly rotorcraft to Titan (launch ~2028).
+Several missions are in flight or planned for the coming decade, including ESA's JUICE (Jupiter Icy Moons Explorer, launched 2023, Jupiter arrival 2031), the Mars Sample Return campaign, and the Dragonfly rotorcraft to Titan (launch ~2028).
 
 ## Recent advances
 
