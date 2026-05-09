@@ -39,7 +39,7 @@ Stokes settling velocity for an iron droplet in a low-viscosity silicate magma o
 
 ### The Moon-forming giant impact
 
-The last major episode of melting and core formation on Earth was the **Moon-forming giant impact**, in which a Mars-sized body (often called Theia) collided with the proto-Earth approximately 4.5 billion years ago. This event was energetic enough to re-melt most of Earth's mantle (and vaporise parts of it), creating a final deep magma ocean from which the present-day core–mantle structure was established. The debris from the impact formed a disk around Earth that subsequently accreted to form the Moon.
+The last major episode of melting and core formation on Earth was the **Moon-forming giant impact**, in which a Mars-sized body (often called Theia) collided with the proto-Earth approximately 4.5 billion years ago. This event was energetic enough to re-melt most of Earth's mantle (and vaporise parts of it), creating a final deep magma ocean from which the present-day core–mantle structure was established. The debris from the impact formed a disk around Earth that subsequently accreted to form the Moon. The end result of this differentiation sequence ({numref}`fig:planetary-differentiation`) is a layered planet: an iron core, silicate mantle, and thin crust.
 
 ```{figure} figures/planetary_differentiation.svg
 :name: fig:planetary-differentiation
@@ -53,7 +53,7 @@ Differentiation of a terrestrial planet. Initially homogeneous accreted material
 
 Not every giant impact ends with the impactor being fully incorporated into the target, as in the Earth-Moon case. For the appropriate geometry (oblique, high-velocity) and mass ratio, a giant impact can *remove* more silicate mantle than it delivers, leaving behind a body with an anomalously large metallic core relative to its present bulk silicate fraction. This **mantle-stripping** mechanism is the leading explanation for Mercury's highly unusual iron budget, and a candidate explanation for the two most striking large-scale asymmetries in the inner solar system: Mars's hemispheric dichotomy and the basaltic-surface contrast between the lunar near- and far-side.
 
-**Mercury's anomalously large core.** Mercury has a metallic core mass fraction of roughly $65$–$70\%$ (see {ref}`lecture08` and {ref}`lecture10`), compared to $\sim 32\%$ for Earth and $\sim 24\%$ for Mars. This is difficult to produce by condensation chemistry alone under any reasonable protoplanetary-disk thermal model. The leading hypothesis, going back to {cite:t}`Benz1988` and updated with **smoothed-particle hydrodynamics (SPH)** simulations by {cite:t}`Benz2007` (SPH is a mesh-free numerical method in which the fluid is represented by a swarm of Lagrangian "particles" whose density, pressure and velocity are computed by local kernel averaging; it is the standard tool for simulating catastrophic impacts), is that Mercury's protoplanet experienced a **hit-and-run giant impact** — an oblique collision with a differentiated body of comparable mass, moving at several escape velocities, from which a partially disrupted remnant re-accretes rather than being fully absorbed. The impact ejected a disproportionate fraction of Mercury's silicate mantle into heliocentric orbit, some of which re-accreted as a thin silicate veneer while the bulk of it was lost to the Sun or to other protoplanets. The result is a stripped-down mantle with an intact metallic core.
+**Mercury's anomalously large core.** Mercury has a metallic core mass fraction of roughly $65$–$70\%$ (see {ref}`lecture08` and {ref}`lecture10`), compared to $\sim 32\%$ for Earth and $\sim 24\%$ for Mars. This is difficult to produce by condensation chemistry alone under any reasonable protoplanetary-disk thermal model. The leading hypothesis, going back to {cite:t}`Benz1988` and updated with **smoothed-particle hydrodynamics (SPH)** simulations by {cite:t}`Benz2007` ({numref}`fig:benz2007-mercury-impact`; SPH is a mesh-free numerical method in which the fluid is represented by a swarm of Lagrangian "particles" whose density, pressure and velocity are computed by local kernel averaging; it is the standard tool for simulating catastrophic impacts), is that Mercury's protoplanet experienced a **hit-and-run giant impact** — an oblique collision with a differentiated body of comparable mass, moving at several escape velocities, from which a partially disrupted remnant re-accretes rather than being fully absorbed. The impact ejected a disproportionate fraction of Mercury's silicate mantle into heliocentric orbit, some of which re-accreted as a thin silicate veneer while the bulk of it was lost to the Sun or to other protoplanets. The result is a stripped-down mantle with an intact metallic core.
 
 ```{figure} figures/benz2007_mercury_impact.avif
 :name: fig:benz2007-mercury-impact
@@ -85,7 +85,7 @@ The geochemist Victor Goldschmidt classified elements into four categories based
 | **Chalcophile** ("sulfur-loving") | Sulfide phase | Cu, Zn, Pb, S, Se, Ag |
 | **Atmophile** ("atmosphere-loving") | Gas/volatile phase | H, C, N, O, noble gases |
 
-This classification is not absolute: an element's behaviour depends on the pressure, temperature, and oxygen fugacity during metal–silicate equilibration. For example, silicon is predominantly lithophile under present-day Earth conditions but becomes increasingly siderophile at very high pressures, which is why Earth's core likely contains several weight percent silicon {cite:p}`Rubie2015`.
+This classification ({numref}`fig:goldschmidt`) is not absolute: an element's behaviour depends on the pressure, temperature, and oxygen fugacity during metal–silicate equilibration. For example, silicon is predominantly lithophile under present-day Earth conditions but becomes increasingly siderophile at very high pressures, which is why Earth's core likely contains several weight percent silicon {cite:p}`Rubie2015`.
 
 ```{figure} figures/goldschmidt_classification.svg
 :name: fig:goldschmidt
@@ -119,7 +119,7 @@ $$ (eq:d-parameterisation)
 
 where the coefficients $a_i, b_i, c_i, d_i$ are fit to laboratory experiments at controlled $(P, T, f_{\mathrm{O_2}})$ and the fitting is performed individually for each element $i$. Experimental data show that several moderately siderophile elements (Ni, Co, W, V, Mo, Cr) have $D^\mathrm{met/sil}$ values that **decrease** as pressure increases: at 1 GPa a given element may have $D \sim 10^4$, while at 50 GPa the same element may partition far less strongly into the metal, with $D \sim 10^2$ or less. This pressure dependence is the crux of the argument for deep-magma-ocean equilibration.
 
-The observed **present-day** depletions of siderophile elements in Earth's mantle (for example, Ni depletion is only a factor of $\sim 30$ compared to chondritic, not the factor of $\sim 10^4$ expected from low-pressure partitioning) can only be reproduced if the metal–silicate equilibration took place at pressures of **40–60 GPa** and temperatures of **3000–4000 K**. This corresponds to the base of a magma ocean extending down to roughly half of Earth's mantle depth, i.e. $\sim 1000$–$1500$ km below the proto-surface. That is the sense in which the depleted-siderophile signature of the bulk silicate Earth "remembers" the equilibration depth {cite:p}`Rubie2015`.
+The observed **present-day** depletions of siderophile elements in Earth's mantle (for example, Ni depletion is only a factor of $\sim 30$ compared to chondritic, not the factor of $\sim 10^4$ expected from low-pressure partitioning) can only be reproduced if the metal–silicate equilibration took place at pressures of **40–60 GPa** and temperatures of **3000–4000 K**. This corresponds to the base of a magma ocean extending down to roughly half of Earth's mantle depth, i.e. $\sim 1000$–$1500$ km below the proto-surface. That is the sense in which the depleted-siderophile signature of the bulk silicate Earth "remembers" the equilibration depth {cite:p}`Rubie2015`. {numref}`fig:partitioning-pressure` shows the experimental basis for this constraint: partition coefficients for several moderately siderophile elements converge on the BSE depletion level only at pressures of $\sim 40$–$60$ GPa.
 
 ```{figure} figures/siebert2013_partition_coefficients.avif
 :name: fig:partitioning-pressure
@@ -147,6 +147,8 @@ The magnitude of the ${}^{182}\mathrm{W}$ excess in a planet's mantle, expressed
 - **Mars:** the bulk martian mantle has $\varepsilon^{182}\mathrm{W} \approx +0.37 \pm 0.05$, estimated from enriched shergottites, whose source Hf/W ratio is closest to the bulk-mantle value (depleted shergottites can reach $\varepsilon^{182}\mathrm{W} \approx +1.8$). This indicates that Mars accretion and silicate differentiation were complete within approximately **20–40 Myr**, with core formation finishing within the first $\sim 10$ Myr. Mars is consistent with a smaller body that completed its accretion faster than Earth {cite:p}`Kruijer2017Mars`.
 - **Moon:** The Moon's $\varepsilon^{182}\mathrm{W}$ is close to Earth's, consistent with formation from debris of the giant impact.
 
+The relative timing of these events across the solar system is summarised in {numref}`fig:hf-w-chronometry`, which places planetesimal core formation, Mars accretion, the Moon-forming giant impact, and Earth's three growth stages on a single logarithmic time-after-CAI axis.
+
 #### Worked example: from $\varepsilon^{182}\mathrm{W}$ to a core-formation age
 
 In the simplest two-stage model, core formation is treated as a single instantaneous event at time $t_c$ after the first solids (calcium-aluminium-rich inclusions, CAIs) condensed at $t = 0$. Before $t_c$ the planet's precursor material is assumed to be chondritic; at $t_c$ the metal instantaneously segregates from the silicate and carries essentially all of the tungsten into the core, leaving the mantle with elevated $\mathrm{Hf/W}$. The residual $^{182}\mathrm{Hf}$ in the mantle then decays in place, producing an excess of $^{182}\mathrm{W}$ that is not diluted by unradiogenic tungsten from the core. Integrating the decay from $t_c$ to today yields:
@@ -171,12 +173,12 @@ That is, the simplest instantaneous-closure model yields a core-formation age of
 
 The key pedagogical point is that the Hf–W system is only useful as a chronometer while $^{182}\mathrm{Hf}$ is still detectably alive, i.e. within roughly five half-lives, or $\sim 50$ Myr after CAIs. Any core formation completed later than that leaves no $\varepsilon^{182}\mathrm{W}$ signature, which is why Hf–W cannot be applied to, for example, the core nucleation of Earth's **inner core** (which happened billions of years later and is instead constrained by thermal-evolution modelling, see {ref}`lecture08`).
 
-```{figure} figures/hf_w_chronometry.avif
+```{figure} figures/mezger2020_accretion_timescales.avif
 :name: fig:hf-w-chronometry
-:width: 550px
+:width: 700px
 :align: center
 
-Tungsten-182 anomalies in planetary mantles, expressed as $\varepsilon^{182}\mathrm{W}$ (parts per $10^4$ deviation from the chondritic reference). Bulk silicate Earth carries a large positive anomaly indicating core formation was protracted ($\sim 30$–$60$ Myr) but began while $^{182}\mathrm{Hf}$ was still alive; SNC meteorites (Mars) show a smaller positive anomaly indicating earlier, more rapid core formation; the lunar mantle anomaly is intermediate. The chondritic reference defines the zero point. Values compiled from {cite:t}`Kleine2009` and {cite:t}`Kruijer2017Mars`. Generated by `scripts/figures/L04_differentiation_magnetospheres/fig_hf_w_chronometry.py`.
+Summary of timescales for the accretion and differentiation of solar-system bodies and their connection to Earth's formation, on a logarithmic axis of time after CAI condensation (0.1 to 100 Ma). After the collapse of the solar nebula, CAIs and chondrules form first; planetesimal cores ($^{182}\mathrm{Hf}$-$^{182}\mathrm{W}$) differentiate within the first $\sim 1$ Myr; Mars accretion completes within $\sim 5$ Myr; Jupiter must form before the NC/CC isotopic dichotomy is established; Earth assembly is split into Stage I (proto-Earth, $\sim 90\%$ vol.), Stage II (Moon-forming giant impact, $\sim 10\%$ vol.) and Stage III (late accretion, $\sim 0.5\%$ vol.). Reproduced from {cite:p}`Mezger2020`, Fig. 5.
 ```
 
 
@@ -188,7 +190,7 @@ Core formation is not the end of chemical differentiation. As the magma ocean co
 
 As the magma ocean loses heat (primarily by radiation from its surface), it begins to solidify. In a deep magma ocean, crystallisation starts at the **base** (where pressure raises the melting point above the local temperature) and progresses upward {cite:p}`ElkinsTanton2012`. The first minerals to crystallise from the deep magma ocean are high-pressure phases: **bridgmanite** (Mg-perovskite, $\mathrm{MgSiO_3}$) in the lower mantle, followed by **olivine** ($\mathrm{(Mg,Fe)_2SiO_4}$) and other phases at shallower depths as the magma ocean solidifies from the bottom up.
 
-The sequence of minerals that crystallise at progressively shallower depths is controlled by the intersection of the magma ocean's adiabat with the peridotite solidus (the temperature below which solid phases are stable). Because the solidus rises more steeply with pressure than the adiabat does, the base of the magma ocean reaches the solidus first. Once solidification begins, the growing crystal fraction displaces liquid upward, compositionally enriching the remaining liquid in the incompatible elements (U, Th, K, and the rare earths). The late stages of crystallisation are therefore marked by a buoyant, volatile- and heat-producing-element-enriched residual liquid concentrated at the top of the mantle.
+The sequence of minerals that crystallise at progressively shallower depths is controlled by the intersection of the magma ocean's adiabat with the peridotite solidus (the temperature below which solid phases are stable). Because the solidus rises more steeply with pressure than the adiabat does, the base of the magma ocean reaches the solidus first. Once solidification begins, the growing crystal fraction displaces liquid upward, compositionally enriching the remaining liquid in the incompatible elements (U, Th, K, and the rare earths). The late stages of crystallisation are therefore marked by a buoyant, volatile- and heat-producing-element-enriched residual liquid concentrated at the top of the mantle ({numref}`fig:magma-ocean-crystallisation`).
 
 ```{figure} figures/elkinstanton2012_magma_ocean_crystallisation.avif
 :name: fig:magma-ocean-crystallisation
@@ -243,7 +245,7 @@ Recent work has substantially revised this picture. Several independent lines of
 
 - {cite:p}`Grewal2019` and {cite:p}`Grewal2021` used isotopic evidence for carbon, nitrogen, and sulfur to show that volatile delivery to Earth involved contributions from both inner (enstatite-like) and outer (carbonaceous) reservoirs. Nitrogen isotopes reveal that inner and outer solar system protoplanets accreted from **isotopically distinct** nitrogen reservoirs very early, implying that volatile budgets were largely set during primary accretion rather than solely by a late veneer of carbonaceous material.
 
-These findings suggest that the volatile inventory of terrestrial planets is determined by a complex interplay of disk thermal evolution, giant planet formation timing, and the mixing of multiple source reservoirs {cite:p}`Krijt2023`.
+These findings suggest that the volatile inventory of terrestrial planets is determined by a complex interplay of disk thermal evolution, giant planet formation timing, and the mixing of multiple source reservoirs {cite:p}`Krijt2023`. The two-reservoir picture inherited from snow-line migration in the Class I and Class II disk stages is summarised in {numref}`fig:lichtenberg2021-snowline`.
 
 ```{figure} figures/lichtenberg2021_fig1.avif
 :name: fig:lichtenberg2021-snowline
@@ -268,7 +270,7 @@ $$
 X_{\mathrm{H_2O}} \propto p_{\mathrm{H_2O}}^{1/2}
 $$ (eq:water-solubility)
 
-where $X_{\mathrm{H_2O}}$ is the mole fraction of dissolved water and $p_{\mathrm{H_2O}}$ is the partial pressure of water vapour above the melt. This means that as the atmosphere thickens with outgassed $\mathrm{H_2O}$, the magma ocean can retain an increasing fraction of its water in solution, a self-limiting feedback that determines the partitioning of water between the interior and the atmosphere {cite:p}`Hirschmann2012`.
+where $X_{\mathrm{H_2O}}$ is the mole fraction of dissolved water and $p_{\mathrm{H_2O}}$ is the partial pressure of water vapour above the melt. This means that as the atmosphere thickens with outgassed $\mathrm{H_2O}$, the magma ocean can retain an increasing fraction of its water in solution, a self-limiting feedback that determines the partitioning of water between the interior and the atmosphere ({numref}`fig:water-solubility`) {cite:p}`Hirschmann2012`.
 
 ```{figure} figures/water_solubility.avif
 :name: fig:water-solubility
@@ -343,6 +345,8 @@ For a self-sustaining dynamo (one that can generate and maintain a magnetic fiel
 2. **Convection:** The fluid must be in vigorous motion. In planetary cores, this convection is driven by thermal buoyancy (the core is hotter than the overlying mantle) and/or compositional buoyancy (crystallisation of the inner core releases light elements that rise).
 
 3. **Sufficient flow vigour:** The fluid motions must be fast enough, and occur on large enough scales, that advection dominates over diffusion. This criterion is quantified by the **magnetic Reynolds number** $\mathrm{Rm}$, which must exceed a critical value $\mathrm{Rm}_c \sim 10$–$100$.
+
+The basic picture is summarised in {numref}`fig:geodynamo-schematic`: convective columns aligned with the rotation axis stretch and twist field lines in the conducting outer core, regenerating the field against ohmic decay.
 
 ```{figure} figures/geodynamo_schematic.svg
 :name: fig:geodynamo-schematic
@@ -446,7 +450,7 @@ Earth's core extends from the centre of the planet to a depth of 2890 km (the co
 
 - **Inner core** (radius 0–1220 km): Solid iron–nickel alloy. The inner core is slowly growing as the outer core cools and crystallises at the inner core boundary.
 
-- **Outer core** (radius 1220–3480 km from the centre, or depth 2890–5150 km): Liquid iron alloy. The outer core is about 5–10% less dense than pure liquid iron, indicating the presence of dissolved light elements (S, Si, O, C, H). This is the region where the geodynamo operates.
+- **Outer core** (radius 1220–3480 km from the centre, or depth 2890–5150 km): Liquid iron alloy. The outer core is about 5–10% less dense than pure liquid iron, indicating the presence of dissolved light elements (S, Si, O, C, H). This is the region where the geodynamo operates ({numref}`fig:earth-interior`).
 
 ```{figure} figures/earth_interior.avif
 :name: fig:earth-interior
@@ -456,7 +460,7 @@ Earth's core extends from the centre of the planet to a depth of 2890 km (the co
 Cross-section of Earth's interior, showing the solid inner core ($r < 1220$ km), the liquid iron-alloy outer core (1220–3480 km), the silicate mantle (from $\sim 30$ km depth at the crust base down to 2890 km at the core-mantle boundary), and the thin crust. The geodynamo operates in the convecting outer core; the inner core grows slowly as light elements are expelled into the outer core. Credit: NASA/JPL-Caltech/SwRI/J.E.P. Connerney (PIA25063), public domain.
 ```
 
-The structure above is inferred primarily from seismology: the travel times of $P$ and $S$ waves through Earth, recorded by global seismometer networks, constrain the density and elastic-wave velocities as a function of depth. The most widely used reference profile is the **Preliminary Reference Earth Model** {cite:p}`Dziewonski1981`.
+The structure above is inferred primarily from seismology: the travel times of $P$ and $S$ waves through Earth, recorded by global seismometer networks, constrain the density and elastic-wave velocities as a function of depth ({numref}`fig:prem`). The most widely used reference profile is the **Preliminary Reference Earth Model** {cite:p}`Dziewonski1981`.
 
 ```{figure} figures/prem_profile.avif
 :name: fig:prem
@@ -498,7 +502,7 @@ On longer timescales, the geomagnetic field undergoes **polarity reversals**: th
 - A reversal takes approximately **1000–10,000 years** to complete, during which the field weakens, becomes complex (multipolar), and re-establishes in the opposite polarity.
 - During the Cretaceous Normal Superchron (~83–121 Ma), the field maintained a single polarity for about 38 million years.
 
-The most compelling evidence for reversals comes from **magnetic stripes** on the ocean floor: as new oceanic crust forms at mid-ocean ridges, the magnetic minerals record the ambient field direction. The result is a symmetric pattern of normally and reversely magnetised stripes on either side of the ridge, a key piece of evidence for both seafloor spreading and geomagnetic reversals.
+The most compelling evidence for reversals comes from **magnetic stripes** on the ocean floor: as new oceanic crust forms at mid-ocean ridges, the magnetic minerals record the ambient field direction. The result is a symmetric pattern of normally and reversely magnetised stripes on either side of the ridge, a key piece of evidence for both seafloor spreading and geomagnetic reversals. The compiled polarity timescale for the past 170 Myr is shown in {numref}`fig:geomagnetic-polarity`.
 
 ```{figure} figures/geomagnetic_polarity_timescale.avif
 :name: fig:geomagnetic-polarity
@@ -527,12 +531,22 @@ Magnetic fields vary enormously across the solar system. Comparing them reveals 
 | **Neptune** | Active dynamo | ~10–60 $\mu$T | ~28 | Multipolar, tilted ~47° and offset from centre |
 | **Ganymede** | Active dynamo | ~0.7 $\mu$T | $\sim 1.5 \times 10^{-3}$ | Only moon with intrinsic dynamo |
 
-```{figure} figures/planetary_dipole_moments.avif
+```{figure} figures/soderlund2020_planetary_field_morphologies.avif
 :name: fig:planetary-dipole-moments
+:width: 700px
+:align: center
+
+Radial magnetic field at the surfaces of (a) Mercury, (b) Earth, (c) Jupiter, (d) Saturn, (e) Uranus, and (f) Neptune, in Mollweide projections. Earth, Jupiter, and Saturn are predominantly dipolar with the dipole axis approximately aligned with the rotation axis; Uranus and Neptune are clearly multipolar with dipoles tilted by $\sim 59°$ and $\sim 47°$ respectively and offset from the planet centre; Mercury's field is weak and asymmetric, with the dipole offset $\sim 500$ km northward. Field intensities span four orders of magnitude (note the per-panel colour scales). Reproduced from {cite:p}`Soderlund2020`, Fig. 1.
+```
+
+The same nine-decade range can be understood as a single dynamical family by placing each body in the parameter space of dimensionless dipole moment versus local Rossby number. {numref}`fig:dipole-scaling` shows the strongly dipolar (Mercury excepted, top-left) versus multipolar (Mercury, lower-right) regimes inferred from numerical dynamo models, with the eight planets and Ganymede plotted at their estimated control-parameter values.
+
+```{figure} figures/olson2006_dipole_scaling.avif
+:name: fig:dipole-scaling
 :width: 600px
 :align: center
 
-Planetary magnetic dipole moments relative to Earth's, on a logarithmic scale. Jupiter dominates with a dipole moment $\sim 2 \times 10^4$ times Earth's; Saturn, Uranus and Neptune are all weaker but still substantial; Earth, Mercury and Ganymede cluster many orders of magnitude below the giants; Venus and Mars have no detected global field today, with upper limits indicated by grey bars. The 9-decade range conveyed by the log scale is the central qualitative observation about planetary dynamos in the solar system. Data compiled from {cite:t}`Bagenal2013`. Generated by `scripts/figures/L04_differentiation_magnetospheres/fig_planetary_dipole_moments.py`.
+Dimensionless planetary dipole moment $L_{\mathrm{O}_{\rm dip}}/\mathrm{Ra}_Q^{1/3}$ versus local Rossby number $\mathrm{Ro}_l$. The transition from strongly dipolar (dark shading) to multipolar (light shading) regimes is calibrated against numerical dynamo simulations. The eight planets and Ganymede are placed at their estimated control-parameter values; symbol shading indicates the strength of the constraint. Mercury sits in the multipolar regime; Earth, Jupiter, Saturn, Ganymede, Uranus, and Neptune lie in or near the dipolar regime. Reproduced from {cite:p}`OlsonChristensen2006`, Fig. 7.
 ```
 
 ### Mercury
@@ -551,7 +565,7 @@ The relative importance of these factors remains debated. Venus's lack of a magn
 
 ### Mars
 
-Mars has no global magnetic field today, but the Mars Global Surveyor spacecraft discovered intense **remnant crustal magnetism** in the ancient southern highlands, patches of magnetisation with surface field strengths up to $\sim$1500 nT, far stronger than crustal magnetisation on Earth {cite:p}`Acuna1999`. These crustal magnetic anomalies are absent in the younger northern lowlands and in large impact basins (Hellas, Argyre, Isidis), indicating that:
+Mars has no global magnetic field today, but the Mars Global Surveyor spacecraft discovered intense **remnant crustal magnetism** in the ancient southern highlands ({numref}`fig:mars-crustal-magnetism`), patches of magnetisation with surface field strengths up to $\sim$1500 nT, far stronger than crustal magnetisation on Earth {cite:p}`Acuna1999`. These crustal magnetic anomalies are absent in the younger northern lowlands and in large impact basins (Hellas, Argyre, Isidis), indicating that:
 
 1. Mars once had an active dynamo that magnetised the ancient crust.
 2. The dynamo shut down approximately **4.1 Gyr ago** (before the large basins formed), after which newly formed crust was not magnetised.
@@ -565,7 +579,7 @@ Mars has no global magnetic field today, but the Mars Global Surveyor spacecraft
 Global map of the radial component $\Delta B_r$ of Mars's crustal magnetic field, compiled from Mars Global Surveyor (MGS) MAG/ER data at $\sim 400$ km mapping-orbit altitude. Red and blue regions indicate strong crustal magnetisation in opposite polarities, concentrated in the ancient southern highlands. The younger northern lowlands and the large impact basins (Hellas, Argyre, Isidis) show little to no magnetisation, indicating the dynamo had ceased before these features formed {cite:p}`Connerney2005`. The original detection of Mars's crustal field is reported in {cite:t}`Acuna1999`. Credit: NASA/Goddard Space Flight Center, public domain.
 ```
 
-Recent constraints on Mars's interior come from the InSight lander, which deployed the first seismometer on the Martian surface and detected $S$-wave reflections from the core-mantle boundary. Joint inversion of these seismic data with geodetic constraints (mean density, moment of inertia, tidal Love number $k_2$) gives a core radius of $R_{\rm core} = 1830 \pm 40$ km, larger than expected from many pre-mission models {cite:p}`Stahler2021`. The implied core density is too low for pure iron, requiring a substantial complement of light elements (S, O, H, C). The large, light core informs models of when and why the Martian dynamo shut down: a core that is too sulfur-rich may never have nucleated a solid inner core, depriving the dynamo of compositional buoyancy.
+Recent constraints on Mars's interior come from the InSight lander, which deployed the first seismometer on the Martian surface and detected $S$-wave reflections from the core-mantle boundary. Joint inversion of these seismic data with geodetic constraints (mean density, moment of inertia, tidal Love number $k_2$) gives a core radius of $R_{\rm core} = 1830 \pm 40$ km ({numref}`fig:stahler2021-mars-core`), larger than expected from many pre-mission models {cite:p}`Stahler2021`. The implied core density is too low for pure iron, requiring a substantial complement of light elements (S, O, H, C). The large, light core informs models of when and why the Martian dynamo shut down: a core that is too sulfur-rich may never have nucleated a solid inner core, depriving the dynamo of compositional buoyancy.
 
 ```{figure} figures/stahler2021_mars_core.avif
 :name: fig:stahler2021-mars-core
@@ -577,7 +591,7 @@ Joint posterior distribution of Mars's mean core density and core radius from th
 
 ### Jupiter
 
-Jupiter has the **strongest magnetic field** of any planet, roughly 20,000 times Earth's dipole moment. The field is generated by convection in Jupiter's deep interior, where hydrogen is compressed to a metallic state (at pressures above $\sim$100 GPa, hydrogen becomes an electrical conductor). The Juno mission has mapped Jupiter's magnetic field in unprecedented detail, revealing a surprisingly complex and asymmetric field at the surface, with a concentrated magnetic flux patch in the northern hemisphere, the "Great Blue Spot" {cite:p}`Connerney2022`.
+Jupiter has the **strongest magnetic field** of any planet, roughly 20,000 times Earth's dipole moment. The field is generated by convection in Jupiter's deep interior, where hydrogen is compressed to a metallic state (at pressures above $\sim$100 GPa, hydrogen becomes an electrical conductor). The Juno mission has mapped Jupiter's magnetic field in unprecedented detail, revealing a surprisingly complex and asymmetric field at the surface, with a concentrated magnetic flux patch in the northern hemisphere, the "Great Blue Spot" ({numref}`fig:jupiter-great-blue-spot`) {cite:p}`Connerney2022`.
 
 ```{figure} figures/jupiter_great_blue_spot.avif
 :name: fig:jupiter-great-blue-spot
@@ -647,7 +661,7 @@ $$
 r_{\mathrm{mp}} \approx 10 \, R_\oplus
 $$ (eq:magnetopause-distance)
 
-for Earth under typical solar wind conditions.
+for Earth under typical solar wind conditions. The dayside pressure-balance geometry, with bow shock, magnetosheath, and compressed dipolar field, is sketched in {numref}`fig:magnetopause-balance`.
 
 ```{figure} figures/magnetopause_pressure_balance.avif
 :name: fig:magnetopause-balance
@@ -669,6 +683,8 @@ The interaction between the solar wind and the planetary field creates a complex
 
 - **Plasmasphere:** A torus of cool, dense plasma trapped on closed magnetic field lines in the inner magnetosphere, co-rotating with Earth.
 
+The full structure, including the long magnetotail extending tens of $R_\oplus$ downstream, is shown in {numref}`fig:magnetosphere`.
+
 ```{figure} figures/magnetosphere_structure.svg
 :name: fig:magnetosphere
 :width: 600px
@@ -685,7 +701,7 @@ When solar wind particles enter the magnetosphere (primarily through reconnectio
 - **Red light** (630.0 nm): Excited atomic oxygen at higher altitudes (~200–400 km)
 - **Blue/violet light**: Excited molecular nitrogen, $\mathrm{N_2}$, at lower altitudes
 
-Aurorae are observed on other magnetised planets as well: Jupiter's aurorae, powered by its enormous magnetosphere and the volcanic output of Io, are among the most luminous in the solar system.
+Aurorae are observed on other magnetised planets as well ({numref}`fig:aurora`): Jupiter's UV aurorae ({numref}`fig:jupiter-aurora`), powered by its enormous magnetosphere and the volcanic output of Io, are among the most luminous in the solar system.
 
 ```{figure} figures/aurora.avif
 :name: fig:aurora
@@ -710,7 +726,7 @@ Earth's magnetosphere traps energetic charged particles in two toroidal regions 
 - **Inner belt** (centred at $\sim 1.5 \, R_\oplus$): Primarily energetic protons (10–100 MeV), produced by the decay of neutrons created in cosmic ray collisions with the atmosphere.
 - **Outer belt** (centred at $\sim 4$–$5 \, R_\oplus$): Primarily energetic electrons (0.1–10 MeV), injected during geomagnetic storms and accelerated by wave–particle interactions.
 
-The radiation belts pose a hazard to spacecraft electronics and to astronauts. They also demonstrate the double-edged nature of magnetic fields: while the magnetosphere shields the surface from the bulk of the solar wind, it also traps a population of highly energetic particles that would not be present without the field.
+The radiation belts ({numref}`fig:van-allen-belts`) pose a hazard to spacecraft electronics and to astronauts. They also demonstrate the double-edged nature of magnetic fields: while the magnetosphere shields the surface from the bulk of the solar wind, it also traps a population of highly energetic particles that would not be present without the field.
 
 ```{figure} figures/van_allen_belts.svg
 :name: fig:van-allen-belts
