@@ -364,7 +364,7 @@ Each meteorite group occupies a *distinct cluster* on the three-isotope plot: or
 
 The oxygen-isotope clustering is the workhorse of meteorite parent-body identification.
 A meteorite group with no known parent body is identified by its position on the three-isotope plot; conversely, when a sample-return mission visits a new body (Itokawa, Ryugu, Bennu), the first thing to do with the samples is measure their oxygen isotopes and ask which existing meteorite group they correspond to.
-The Hayabusa2 samples from Ryugu plot squarely with the CI chondrites; the OSIRIS-REx samples from Bennu plot in a similar but slightly distinct region, suggesting affinities with the CM and CI groups {cite:p}`Yokoyama2023,Lauretta2024`.
+The Hayabusa2 samples from Ryugu plot squarely with the CI chondrites; the OSIRIS-REx samples from Bennu plot in a similar but slightly distinct region, near the ungrouped carbonaceous chondrites Tarda and Tagish Lake, while sharing CI-like bulk elemental composition {cite:p}`Yokoyama2023,Lauretta2024`.
 
 
 ### The NC-CC isotopic dichotomy: three competing interpretations
@@ -384,7 +384,7 @@ What it *means* is debated, and at the time of writing in 2026 there are at leas
 :width: 500px
 :align: center
 
-Hf-W metal-silicate constraints on NC and CC iron meteorite parent bodies. Each row is a single iron meteorite group. Note that the figure has two different x-axes. The *top* axis is $\Delta t_{\text{CAI}}$ (Myr after CAI formation): the blue symbols (Hammond, Guffey, SBT, IVB, IIIF, IIF, IID, IIC) are CC iron groups and cluster at $\Delta t_{\text{CAI}} \approx 3$ Myr. The *bottom* axis is initial $\varepsilon^{182}\mathrm{W}$ (the $^{182}$W deficit at the time of core formation, *not* an age): the red symbols (IVA, IIIE, IIIAB, IIAB, IC) are NC iron groups and cluster near $\varepsilon^{182}\mathrm{W} \approx -3.3$. Hf-W modelling translates those NC initial $\varepsilon^{182}\mathrm{W}$ values into core-formation ages of $\Delta t_{\text{CAI}} \approx 0.3$–$1$ Myr, that is, NC parent bodies form systematically earlier than CC parent bodies, with little overlap. This temporal separation is the key constraint that all three interpretations of the NC-CC dichotomy must satisfy. From Figure 5 of {cite:t}`SpitzerPt2021`.
+Hf-W metal-silicate constraints on NC and CC iron meteorite parent bodies. Each row is a single iron meteorite group. Note that the figure has two different x-axes. The *top* axis is $\Delta t_{\text{CAI}}$ (Myr after CAI formation): the blue symbols (Hammond, Guffey, SBT, IVB, IIIF, IIF, IID, IIC) are CC iron groups and cluster at $\Delta t_{\text{CAI}} \approx 3$ Myr. The *bottom* axis is initial $\varepsilon^{182}\mathrm{W}$ (the $^{182}$W deficit at the time of core formation, *not* an age): the red symbols (IVA, IIIE, IIIAB, IIAB, IC) are NC iron groups and cluster near $\varepsilon^{182}\mathrm{W} \approx -3.3$. Hf-W modelling in {cite:t}`SpitzerPt2021` translates those NC initial $\varepsilon^{182}\mathrm{W}$ values into core-formation ages of $\Delta t_{\text{CAI}} \approx 1$–$2.5$ Myr, still systematically earlier than the CC clustering near $3$ Myr but with the NC--CC gap narrower than in earlier analyses. This temporal separation is the key constraint that all three interpretations of the NC-CC dichotomy must satisfy. From Figure 5 of {cite:t}`SpitzerPt2021`.
 ```
 
 ```{figure} figures/lichtenberg2021_fig1.avif
@@ -671,7 +671,7 @@ r_H = a \left( \frac{m}{3 \, \Msun} \right)^{1/3},
 $$
 
 where $a$ is the asteroid's heliocentric semimajor axis and $m$ its mass.
-For Didymos, $a \approx 1.64$ AU $\approx 2.45 \times 10^{11}$ m and $m \approx 5.3 \times 10^{11}$ kg, which gives $r_H \approx 110$ km.
+For the Didymos system, $a \approx 1.64$ AU $\approx 2.45 \times 10^{11}$ m and $m \approx 5.6 \times 10^{11}$ kg {cite:p}`Daly2023`, which gives $r_H \approx 110$ km.
 Dimorphos orbits the primary at only $\sim 1.2$ km, comfortably inside the Hill sphere by nearly two orders of magnitude, so the binary is dynamically robust against solar perturbations and the DART impact could not unbind it.
 The same calculation applied to other binary asteroids shows that stable mutual orbits are typically confined well inside $0.5 \, r_H$: orbits closer to the Hill radius are quickly stripped by solar tides over the age of the solar system.
 
