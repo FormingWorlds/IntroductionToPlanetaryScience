@@ -539,14 +539,14 @@ Magnetic fields vary enormously across the solar system. Comparing them reveals 
 Radial magnetic field at the surfaces of (a) Mercury, (b) Earth, (c) Jupiter, (d) Saturn, (e) Uranus, and (f) Neptune, in Mollweide projections. Earth, Jupiter, and Saturn are predominantly dipolar with the dipole axis approximately aligned with the rotation axis; Uranus and Neptune are clearly multipolar with dipoles tilted by $\sim 59°$ and $\sim 47°$ respectively and offset from the planet centre; Mercury's field is weak and asymmetric, with the dipole offset $\sim 500$ km northward. Field intensities span four orders of magnitude (note the per-panel colour scales). Reproduced from {cite:p}`Soderlund2020`, Fig. 1.
 ```
 
-The same nine-decade range can be understood as a single dynamical family by placing each body in the parameter space of dimensionless dipole moment versus local Rossby number. {numref}`fig:dipole-scaling` shows the strongly dipolar (Mercury excepted, top-left) versus multipolar (Mercury, lower-right) regimes inferred from numerical dynamo models, with the eight planets and Ganymede plotted at their estimated control-parameter values.
+The same nine-decade range can be understood as a single dynamical family by placing each body in the parameter space of dimensionless dipole moment versus local Rossby number. {numref}`fig:dipole-scaling` shows the strongly dipolar regime (top-left, dark shading) and multipolar regime (lower-right, light shading) inferred from numerical dynamo models, with the eight planets and Ganymede plotted at their estimated control-parameter values.
 
 ```{figure} figures/olson2006_dipole_scaling.avif
 :name: fig:dipole-scaling
 :width: 600px
 :align: center
 
-Dimensionless planetary dipole moment $L_{\mathrm{O}_{\rm dip}}/\mathrm{Ra}_Q^{1/3}$ versus local Rossby number $\mathrm{Ro}_l$. The transition from strongly dipolar (dark shading) to multipolar (light shading) regimes is calibrated against numerical dynamo simulations. The eight planets and Ganymede are placed at their estimated control-parameter values; symbol shading indicates the strength of the constraint. Mercury sits in the multipolar regime; Earth, Jupiter, Saturn, Ganymede, Uranus, and Neptune lie in or near the dipolar regime. Reproduced from {cite:p}`OlsonChristensen2006`, Fig. 7.
+Dimensionless planetary dipole moment $L_{\mathrm{O}_{\rm dip}}/\mathrm{Ra}_Q^{1/3}$ versus local Rossby number $\mathrm{Ro}_l$. The transition from strongly dipolar (dark shading) to multipolar (light shading) regimes is calibrated against numerical dynamo simulations. The eight planets and Ganymede are placed at their estimated control-parameter values; symbol shading indicates the strength of the constraint. Earth, Jupiter, Saturn, and Ganymede sit in the dipolar regime; Mercury, Uranus, and Neptune lie in or near the multipolar regime, consistent with their tilted, offset, or weak surface fields. Reproduced from {cite:p}`OlsonChristensen2006`, Fig. 7.
 ```
 
 ### Mercury
