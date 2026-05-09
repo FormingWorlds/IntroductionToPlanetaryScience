@@ -11,7 +11,7 @@
 
 ## Atmospheric composition
 
-A planet's atmosphere is the thin gaseous envelope that separates its surface (or cloud tops) from the vacuum of space. Atmospheres play an outsized role in determining a planet's surface conditions (temperature, pressure, radiation environment, and chemistry) and are therefore central to questions of habitability. Understanding where atmospheres come from, what they are made of, and how they evolve is one of the core themes of planetary science {cite:p}`Catling2017`.
+A planet's atmosphere is the thin gaseous envelope that separates its surface (or cloud tops) from the vacuum of space ({numref}`fig:thin-blue-line`). Atmospheres play an outsized role in determining a planet's surface conditions (temperature, pressure, radiation environment, and chemistry) and are therefore central to questions of habitability. Understanding where atmospheres come from, what they are made of, and how they evolve is one of the core themes of planetary science {cite:p}`Catling2017`.
 
 ```{figure} figures/earth_thin_blue_line.avif
 :name: fig:thin-blue-line
@@ -56,7 +56,7 @@ The diversity of atmospheres across the solar system is remarkable. The table be
 | Mean molecular weight $\mu$ | 43.4 | 28.97 | 43.3 | 2.2 | 28.6 |
 | Atmosphere type | Secondary | Tertiary | Secondary | Primary | Secondary |
 
-Data from {cite:p}`dePaterLissauer2010` and {cite:p}`NASAFactSheet`.
+Data from {cite:p}`dePaterLissauer2010` and {cite:p}`NASAFactSheet`. The fractional composition of these five atmospheres is shown in {numref}`fig:composition-bar`; {numref}`fig:venera13-venus` gives a vivid sense of what a 92-bar $\mathrm{CO_2}$ atmosphere looks like at the surface.
 
 ```{figure} figures/composition_bar.avif
 :name: fig:composition-bar
@@ -215,7 +215,7 @@ $$
 \Gamma_d = -\dv{T}{z} = \frac{g}{c_p}
 $$ (eq:dry-adiabat)
 
-where $c_p$ is the specific heat capacity at constant pressure. For Earth, $g = 9.81$ m s$^{-2}$ and $c_p \approx 1004$ J kg$^{-1}$ K$^{-1}$ (for dry air), giving $\Gamma_d \approx 9.8$ K km$^{-1}$. The observed average lapse rate ($\sim 6.5$ K km$^{-1}$) is lower because of latent heat released by condensing water vapour, which warms a rising parcel relative to a dry one and so reduces the cooling rate. The lapse rate of a saturated parcel undergoing reversible condensation is the **moist adiabatic lapse rate**.
+where $c_p$ is the specific heat capacity at constant pressure. For Earth, $g = 9.81$ m s$^{-2}$ and $c_p \approx 1004$ J kg$^{-1}$ K$^{-1}$ (for dry air), giving $\Gamma_d \approx 9.8$ K km$^{-1}$. The observed average lapse rate ($\sim 6.5$ K km$^{-1}$) is lower because of latent heat released by condensing water vapour, which warms a rising parcel relative to a dry one and so reduces the cooling rate. The lapse rate of a saturated parcel undergoing reversible condensation is the **moist adiabatic lapse rate** ({numref}`fig:dry-moist-adiabat`).
 
 ```{figure} figures/dry_moist_adiabat.avif
 :name: fig:dry-moist-adiabat
@@ -237,7 +237,7 @@ Earth's stratosphere extends to the **stratopause** at $\sim$50 km.
 
 Above the stratopause, the **mesosphere** (50–85 km) cools with altitude again as ozone heating diminishes. The **mesopause** at $\sim$85 km is the coldest point in Earth's atmosphere ($\sim$190 K).
 
-Above this, the **thermosphere** (85–600 km) is heated by the absorption of extreme ultraviolet (EUV) radiation and energetic particles. Temperatures rise steeply to $>$1000 K, but the gas is so rarefied that this "temperature" (reflecting the kinetic energy of individual molecules) would not feel hot. The thermosphere merges into the **exosphere**, the outermost region where the mean free path exceeds the scale height, and molecules on ballistic trajectories can escape to space.
+Above this, the **thermosphere** (85–600 km) is heated by the absorption of extreme ultraviolet (EUV) radiation and energetic particles. Temperatures rise steeply to $>$1000 K, but the gas is so rarefied that this "temperature" (reflecting the kinetic energy of individual molecules) would not feel hot. The thermosphere merges into the **exosphere**, the outermost region where the mean free path exceeds the scale height, and molecules on ballistic trajectories can escape to space. The full layered structure of Earth's atmosphere with its named pause levels is shown in {numref}`fig:earth-tz-layers`.
 
 ```{figure} figures/earth_tz_layers.avif
 :name: fig:earth-tz-layers
@@ -254,7 +254,7 @@ The vertical structure varies dramatically across the solar system {cite:p}`Catl
 - **Venus:** A massive troposphere extends to $\sim$65 km. Above the cloud deck ($\sim$48–70 km), temperature decreases slowly. There is no Earth-like stratospheric temperature inversion because Venus lacks an ozone layer.
 - **Mars:** A thin troposphere ($\sim$40 km) directly overlain by a thermosphere. Mars also lacks a significant ozone layer and stratospheric inversion.
 - **Jupiter:** The troposphere extends deep into the planet (hundreds of kilometres). The stratosphere is heated by $\mathrm{CH_4}$ and hydrocarbon haze absorption. There is no solid surface; pressure increases continuously with depth.
-- **Titan:** A thick troposphere ($\sim$40 km), a stratosphere heated by organic haze absorption (up to $\sim$300 km), and an extended thermosphere reaching $\sim$1500 km, remarkably high for such a small body, reflecting Titan's weak gravity and large scale height.
+- **Titan:** A thick troposphere ($\sim$40 km), a stratosphere heated by organic haze absorption (up to $\sim$300 km), and an extended thermosphere reaching $\sim$1500 km, remarkably high for such a small body, reflecting Titan's weak gravity and large scale height. The Huygens-derived T(z) profile is shown in {numref}`fig:titan-tz-hasi`; the canonical Venus T(z) used for comparison is shown in {numref}`fig:venus-tz-vira`.
 
 ```{figure} figures/titan_haze_pia06160.avif
 :name: fig:titan-haze
@@ -264,12 +264,12 @@ The vertical structure varies dramatically across the solar system {cite:p}`Catl
 Detached haze layers in Titan's upper atmosphere imaged at the limb by the Cassini ISS narrow-angle camera (PIA06160). Multiple distinct layers from $\sim$200 km up to $\sim$500 km altitude are produced by photochemistry of $\mathrm{CH_4}$ in the stratosphere, generating the organic aerosols that give Titan its orange colour and heat the stratosphere by absorbing UV. Credit: NASA/JPL/Space Science Institute, public domain.
 ```
 
-```{figure} figures/titan_tz_hasi.avif
+```{figure} figures/fulchignoni2005_titan_tz.avif
 :name: fig:titan-tz-hasi
-:width: 500px
+:width: 550px
 :align: center
 
-Titan's vertical temperature profile from the *Huygens* Atmospheric Structure Instrument (HASI) descent through the atmosphere on 14 January 2005 {cite:p}`Fulchignoni2005`. The tropopause sits near 44 km at $\sim$70 K, well below the surface temperature of 94 K. A strong stratospheric inversion driven by haze-layer absorption of solar UV (cf. {numref}`fig:titan-haze`) pushes temperatures up to $\sim$175 K near 200 km, before falling again through the mesosphere and rising in the thermosphere. Pedagogical fit to published HASI profile; not a direct reproduction. Generated by `scripts/figures/L05_atmospheres_1/fig_titan_tz_hasi.py`.
+Titan's atmospheric temperature profile from the *Huygens* Atmospheric Structure Instrument (HASI) descent on 14 January 2005. Solid line: HASI measurements; dashed line: pre-encounter Titan engineering model. Above 160 km, $T$ and $P$ are derived from the measured density via the ideal gas law; below 160 km, $T$ is measured directly by the TEM sensor. Horizontal markers indicate the mesopause (152 K at 490 km), stratopause (186 K at 250 km), and tropopause (70.43 K at 44 km). Wave-like fluctuations above 250 km reflect gravity-wave activity that complements the haze-layer UV absorption (cf. {numref}`fig:titan-haze`). Reproduced from {cite:p}`Fulchignoni2005`, Fig. 2.
 ```
 
 ```{figure} figures/venus_tz_vira.avif
@@ -280,7 +280,7 @@ Titan's vertical temperature profile from the *Huygens* Atmospheric Structure In
 Venus T(z) profile combining Pioneer Venus / VIRA {cite:p}`Seiff1985` lower-atmosphere data with VeRa (Venus Express) radio-occultation results {cite:p}`Tellmann2009`. The profile falls monotonically from the 735 K, 92 bar surface through the cloud deck (48 to 70 km, shaded) to the mesopause near 100 km, with no ozone-driven stratospheric inversion. The near-adiabatic deep troposphere reflects efficient convection in a $\mathrm{CO_2}$-dominated, optically thick atmosphere. Pedagogical fit; not a direct reproduction. Generated by `scripts/figures/L05_atmospheres_1/fig_venus_tz_vira.py`.
 ```
 
-A striking unifying observation is that, despite differences of orders of magnitude in surface gravity, composition, and stellar irradiation, the tropopause occurs at a pressure near $0.1$ bar in nearly every thick atmosphere of the solar system. {cite:t}`Robinson2014` showed that this is a consequence of pressure-dependent infrared transparency: at lower pressures the atmosphere becomes optically thin to thermal radiation, convection ceases, and any UV/shortwave absorber aloft creates a stratospheric inversion; the combination freezes in a near-universal temperature minimum near 0.1 bar.
+A striking unifying observation is that, despite differences of orders of magnitude in surface gravity, composition, and stellar irradiation, the tropopause occurs at a pressure near $0.1$ bar in nearly every thick atmosphere of the solar system ({numref}`fig:tp-profiles`). {cite:t}`Robinson2014` showed that this is a consequence of pressure-dependent infrared transparency: at lower pressures the atmosphere becomes optically thin to thermal radiation, convection ceases, and any UV/shortwave absorber aloft creates a stratospheric inversion; the combination freezes in a near-universal temperature minimum near 0.1 bar.
 
 ```{figure} figures/atmosphere_tp_robinson.avif
 :name: fig:tp-profiles
@@ -304,6 +304,8 @@ When a beam of radiation passes through an atmosphere, three things can happen:
 2. **Emission:** By Kirchhoff's law, any gas that absorbs radiation at a given wavelength also emits at that wavelength when it is warm. This thermal emission is the mechanism by which the atmosphere radiates energy to space.
 
 3. **Scattering:** Photons are redirected without being absorbed. Rayleigh scattering by $\mathrm{N_2}$ and $\mathrm{O_2}$ (which goes as $\lambda^{-4}$) explains why the sky is blue and sunsets are red. Mie scattering by larger particles (aerosols, cloud droplets) is less wavelength-dependent.
+
+The wavelength dependence of stellar versus planetary emission is the physical basis of the greenhouse effect ({numref}`fig:blackbody-spectrum`): the Sun radiates predominantly in the visible while a $\sim 300$ K planet radiates in the thermal infrared, and atmospheric gases can be opaque at one set of wavelengths while transparent at the other.
 
 ```{figure} figures/blackbody_spectrum.svg
 :name: fig:blackbody-spectrum
@@ -340,7 +342,7 @@ This exponential attenuation law, the **Beer–Lambert law**, shows that intensi
 
 ### The atmospheric photosphere concept
 
-Just as a star has a **photosphere**, the layer from which photons escape to space, a planet's atmosphere has an effective emission level at approximately $\tau \approx 1$ (when looking from space downward at infrared wavelengths). Photons emitted from below this level are likely to be reabsorbed before escaping; photons emitted from above this level escape freely. The temperature at this $\tau \approx 1$ level determines the planet's **effective temperature** as seen from space {cite:p}`Pierrehumbert2010`.
+Just as a star has a **photosphere**, the layer from which photons escape to space, a planet's atmosphere has an effective emission level at approximately $\tau \approx 1$ (when looking from space downward at infrared wavelengths). Photons emitted from below this level are likely to be reabsorbed before escaping; photons emitted from above this level escape freely. The temperature at this $\tau \approx 1$ level determines the planet's **effective temperature** as seen from space ({numref}`fig:tau-one`) {cite:p}`Pierrehumbert2010`.
 
 ```{figure} figures/tau_one_schematic.avif
 :name: fig:tau-one
@@ -377,7 +379,7 @@ $$ (eq:effective-temperature)
 
 The effective temperature is the temperature at which the planet would radiate if it had no atmosphere (or if the atmosphere were completely transparent). It depends only on the stellar luminosity, the orbital distance, and the albedo, not on any atmospheric properties.
 
-For Earth, satellite radiometry has measured the individual flux components of the global energy budget to a few W m$^{-2}$. The leading inventory is from {cite:t}`Trenberth2009`:
+For Earth, satellite radiometry has measured the individual flux components of the global energy budget to a few W m$^{-2}$. The leading inventory is from {cite:t}`Trenberth2009` and is shown in {numref}`fig:trenberth`:
 
 ```{figure} figures/trenberth_energy_budget.avif
 :name: fig:trenberth
@@ -412,6 +414,8 @@ The greenhouse effect arises because the atmosphere is **relatively transparent*
 4. The absorbing layer re-emits IR radiation in all directions: half upward (toward space), half downward (back toward the surface).
 5. The downward emission provides an **additional energy source** for the surface, raising its temperature above $T_{\mathrm{eff}}$.
 
+The atmospheric absorption spectrum that underlies this asymmetry is shown in {numref}`fig:atmospheric-absorption`: $\mathrm{H_2O}$ and $\mathrm{CO_2}$ have strong infrared absorption bands that block outgoing surface radiation, with a relatively transparent "atmospheric window" near 8-13 $\mu$m.
+
 ```{figure} figures/atmospheric_transmission.svg
 :name: fig:atmospheric-absorption
 :width: 600px
@@ -444,7 +448,7 @@ $$
 T_s = T_{\mathrm{eff}} \left(\frac{2}{2 - \varepsilon}\right)^{1/4}
 $$ (eq:greenhouse-surface-temp)
 
-When $\varepsilon = 0$ (no greenhouse gases), $T_s = T_{\mathrm{eff}}$: no warming. When $\varepsilon = 1$ (perfect absorber), $T_s = 2^{1/4} \, T_{\mathrm{eff}} \approx 1.19 \, T_{\mathrm{eff}}$, a 19% increase in surface temperature. For Earth, this gives $T_s \approx 1.19 \times 255 \approx 303$ K, a reasonable first estimate, though the real greenhouse effect involves multiple absorbing layers and a more complex radiative transfer calculation.
+When $\varepsilon = 0$ (no greenhouse gases), $T_s = T_{\mathrm{eff}}$: no warming. When $\varepsilon = 1$ (perfect absorber), $T_s = 2^{1/4} \, T_{\mathrm{eff}} \approx 1.19 \, T_{\mathrm{eff}}$, a 19% increase in surface temperature. For Earth, this gives $T_s \approx 1.19 \times 255 \approx 303$ K, a reasonable first estimate, though the real greenhouse effect involves multiple absorbing layers and a more complex radiative transfer calculation. The flux balance is summarised in {numref}`fig:greenhouse-effect`.
 
 ```{note}
 This one-layer model is deliberately simple. In {ref}`lecture06`, we will extend this treatment to examine the **runaway greenhouse effect**: what happens when the surface temperature rises so high that the outgoing longwave radiation reaches a maximum and can no longer balance the absorbed stellar flux. This is the mechanism that likely transformed Venus from a potentially habitable world into the 735 K inferno we see today.
@@ -464,7 +468,7 @@ Energy budget of the one-layer greenhouse model. Stellar shortwave flux $(1-A)F_
 
 An atmosphere is not permanent. Over geological time, gas molecules can be lost to space through several physical mechanisms. The balance between outgassing supply and escape loss determines a planet's atmospheric mass and composition over its history {cite:p}`Lammer2008`.
 
-The dominant escape regime for a given planet-species pair depends on two quantities: the **Jeans escape parameter** $\lambda_J$ (the ratio of gravitational binding energy to thermal energy at the exobase) and the incident **EUV flux** from the host star (which heats the upper atmosphere and drives bulk outflow). Low $\lambda_J$ or high EUV flux pushes the system into hydrodynamic outflow; high $\lambda_J$ with low EUV flux corresponds to the retention regime in which escape is negligible on Gyr timescales.
+The dominant escape regime for a given planet-species pair depends on two quantities: the **Jeans escape parameter** $\lambda_J$ (the ratio of gravitational binding energy to thermal energy at the exobase) and the incident **EUV flux** from the host star (which heats the upper atmosphere and drives bulk outflow). Low $\lambda_J$ or high EUV flux pushes the system into hydrodynamic outflow; high $\lambda_J$ with low EUV flux corresponds to the retention regime in which escape is negligible on Gyr timescales. The three regimes and representative species-planet pairs are shown in {numref}`fig:escape-regime`.
 
 ```{figure} figures/escape_regime_diagram.avif
 :name: fig:escape-regime
@@ -478,7 +482,7 @@ Schematic regime diagram for atmospheric escape as a function of the Jeans param
 
 The most fundamental escape mechanism is **Jeans escape**, which arises from the thermal velocity distribution of gas molecules. In a gas at temperature $T$, molecules have a range of speeds described by the Maxwell–Boltzmann distribution. The mean thermal speed is $v_{\mathrm{th}} \sim \sqrt{\kB T / m}$, where $m$ is the molecular mass. Most molecules are far too slow to escape, but the tail of the distribution extends to arbitrarily high speeds, and some molecules in this high-velocity tail exceed the escape speed.
 
-The **exobase** is the altitude at which the mean free path $\ell = 1/(n \sigma \sqrt{2})$ equals the pressure scale height $H$. Below this level, collisions dominate and the gas behaves as a fluid; above it, collisions are rare enough that molecules travel on ballistic trajectories, and those with $v > v_\mathrm{esc}$ escape to space without further interaction. For Earth, the exobase sits near 500 km altitude; for Mars, closer to 200 km.
+The **exobase** ({numref}`fig:exobase`) is the altitude at which the mean free path $\ell = 1/(n \sigma \sqrt{2})$ equals the pressure scale height $H$. Below this level, collisions dominate and the gas behaves as a fluid; above it, collisions are rare enough that molecules travel on ballistic trajectories, and those with $v > v_\mathrm{esc}$ escape to space without further interaction. For Earth, the exobase sits near 500 km altitude; for Mars, closer to 200 km.
 
 ```{figure} figures/exobase_definition.avif
 :name: fig:exobase
@@ -524,13 +528,13 @@ The following table illustrates $\lambda_J$ for several atmospheric species on E
 | $\mathrm{N_2}$ | 28 | 200 | 150 |
 | $\mathrm{CO_2}$ | 44 | 310 | 240 |
 
-For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so large that Jeans escape is negligible on both planets. For atomic hydrogen, $\lambda_J$ is moderate, leading to significant escape: this is why both Earth and Mars lose hydrogen to space. Earth's exobase temperature is not fixed at 1000 K: it varies from $\sim$600 K at solar minimum to $\sim$1500 K at solar maximum, which modulates the escape flux of the lightest species by orders of magnitude. We will revisit this derivation in full detail (starting from the Maxwell–Boltzmann distribution) in {ref}`lecture10`.
+For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so large that Jeans escape is negligible on both planets. For atomic hydrogen, $\lambda_J$ is moderate, leading to significant escape: this is why both Earth and Mars lose hydrogen to space ({numref}`fig:mb-jeans`). Earth's exobase temperature is not fixed at 1000 K: it varies from $\sim$600 K at solar minimum to $\sim$1500 K at solar maximum, which modulates the escape flux of the lightest species by orders of magnitude. We will revisit this derivation in full detail (starting from the Maxwell–Boltzmann distribution) in {ref}`lecture10`.
 
 ### Hydrodynamic escape
 
 When the energy input to the upper atmosphere is very large (for example, from intense **extreme ultraviolet (EUV)** radiation from a young, active star), the escape can transition from the slow, molecule-by-molecule Jeans process to a bulk **hydrodynamic outflow** in which the entire upper atmosphere flows outward like a wind. This is analogous to the solar wind but driven by stellar heating rather than the star's own thermal energy {cite:p}`Hunten1987`.
 
-Hydrodynamic escape is most important during a planet's first few hundred million years, when the host star's EUV luminosity is 10–100 times higher than at present. It can strip hydrogen-rich primary atmospheres from planets up to several Earth masses, and is the leading explanation for the observed **radius valley** in the exoplanet population, the deficit of planets with radii between $\sim$1.5 and $2 \, \Rearth$ ({ref}`lecture13`). During hydrodynamic escape, the outflowing hydrogen can also **drag along heavier species** (such as He, C, N, O), leading to more extensive atmospheric loss than Jeans escape alone would produce {cite:p}`Hunten1987`.
+Hydrodynamic escape is most important during a planet's first few hundred million years, when the host star's EUV luminosity is 10–100 times higher than at present. It can strip hydrogen-rich primary atmospheres from planets up to several Earth masses, and is the leading explanation for the observed **radius valley** in the exoplanet population ({numref}`fig:owen-radius-valley`), the deficit of planets with radii between $\sim$1.5 and $2 \, \Rearth$ ({ref}`lecture13`). During hydrodynamic escape, the outflowing hydrogen can also **drag along heavier species** (such as He, C, N, O), leading to more extensive atmospheric loss than Jeans escape alone would produce {cite:p}`Hunten1987`.
 
 ```{figure} figures/radius_valley_owen2019.avif
 :name: fig:owen-radius-valley
@@ -540,7 +544,7 @@ Hydrodynamic escape is most important during a planet's first few hundred millio
 Population synthesis of close-in exoplanets that have undergone EUV-driven hydrodynamic atmospheric escape. *Left*: planet radius vs orbital separation after 10 Gyr of evolution, for cores with masses 6.5–15 $\Mearth$ (different colours indicate different core masses; the published axis label reads "Seperation" [sic] in the original figure). The "evaporation desert" at small separations and large radii is empty because all H/He envelopes have been stripped, and the "evaporation valley" appears as a thin gap near $1.5\!-\!2\,\Rearth$. *Right*: planet radius vs incident bolometric flux ($F_\oplus$, in units of Earth's), colour-coded by retained atmospheric mass fraction (% H/He). Greyscale shading shows the predicted population density. Figure from {cite:t}`Owen2019`.
 ```
 
-The observational counterpart was established by {cite:t}`Fulton2017`, who measured the planet radius distribution for short-period exoplanets in the California-Kepler Survey (CKS) and found a clear bimodality:
+The observational counterpart was established by {cite:t}`Fulton2017`, who measured the planet radius distribution for short-period exoplanets in the California-Kepler Survey (CKS) and found a clear bimodality ({numref}`fig:fulton-radius-valley`):
 
 ```{figure} figures/fulton2017_radius_valley.avif
 :name: fig:fulton-radius-valley
@@ -562,7 +566,7 @@ Several processes can eject atmospheric particles to space without relying on th
 
 - **Impact erosion:** Large asteroid or comet impacts can eject significant fractions of a planet's atmosphere. The efficiency depends on the impactor size relative to the atmospheric scale height: very large impacts can blow off a substantial atmospheric mass in a single event.
 
-The MAVEN mission at Mars has measured the present-day total atmospheric escape rate at $\sim 1$–$3$ kg s$^{-1}$ for H and O combined, with H escape varying seasonally by nearly an order of magnitude, integrated across photochemical, thermal, and solar-wind-driven channels {cite:p}`Jakosky2018`.
+The MAVEN mission at Mars has measured the present-day total atmospheric escape rate at $\sim 1$–$3$ kg s$^{-1}$ for H and O combined, with H escape varying seasonally by nearly an order of magnitude, integrated across photochemical, thermal, and solar-wind-driven channels {cite:p}`Jakosky2018`. MAVEN's elliptical science orbit ({numref}`fig:maven-science-orbit`) samples the thermosphere/exobase at periapsis and the ionised tail at apoapsis; the resulting picture of ion escape is shown in {numref}`fig:maven-ion-plume`, and the partitioning of oxygen loss across photochemical, ion, and sputtering channels is summarised in {numref}`fig:maven-o-loss-channels`. The thin atmosphere that remains today is photographed on the limb in {numref}`fig:mars-atmosphere`.
 
 ```{figure} figures/maven_science_orbit.avif
 :name: fig:maven-science-orbit
@@ -625,6 +629,8 @@ Applying this criterion reveals a clear pattern across the solar system:
 
 - **Moon and Mercury**: With escape velocities of 2.4 and 4.3 km s$^{-1}$ and high dayside temperatures ($>$400 K), these bodies cannot retain any significant atmosphere. Mercury has only a tenuous **exosphere** (a collisionless atmosphere with surface pressure $\sim 10^{-15}$ bar).
 
+The classic graphical summary of these competing constraints is the escape-velocity-vs-temperature diagram ({numref}`fig:escape-velocity-temperature`).
+
 ### Atmospheric evolution over time
 
 Atmospheric retention is not simply a present-day snapshot: it evolves over a planet's lifetime {cite:p}`Lammer2008`:
@@ -650,16 +656,16 @@ Escape velocity versus surface temperature for solar system bodies. Diagonal lin
 
 ## Recent advances
 
-The James Webb Space Telescope (JWST) has opened a new era in exoplanet atmospheric characterisation. Thermal emission measurements of TRAPPIST-1 b, an Earth-sized planet orbiting an M dwarf, indicate a dayside temperature consistent with bare rock and no significant atmosphere {cite:p}`Greene2023`. Similar results for TRAPPIST-1 c {cite:p}`Zieba2023` suggest that the innermost rocky planets around active M dwarfs may be stripped of their atmospheres by intense stellar irradiation, consistent with theoretical predictions of enhanced atmospheric escape around low-mass stars {cite:p}`Wordsworth2022`.
+The James Webb Space Telescope (JWST) has opened a new era in exoplanet atmospheric characterisation. Thermal emission measurements of TRAPPIST-1 b, an Earth-sized planet orbiting an M dwarf, indicate a dayside temperature consistent with bare rock and no significant atmosphere ({numref}`fig:greene-trappist`) {cite:p}`Greene2023`. Similar results for TRAPPIST-1 c {cite:p}`Zieba2023` suggest that the innermost rocky planets around active M dwarfs may be stripped of their atmospheres by intense stellar irradiation, consistent with theoretical predictions of enhanced atmospheric escape around low-mass stars {cite:p}`Wordsworth2022`.
 
-A central reason M-dwarf planets are so vulnerable to escape is that late-type stars remain in the high-activity **saturated regime** for much longer than Sun-like stars, exposing their close-in planets to intense XUV irradiation for $\gtrsim 1$ Gyr after formation:
+A central reason M-dwarf planets are so vulnerable to escape is that late-type stars remain in the high-activity **saturated regime** for much longer than Sun-like stars, exposing their close-in planets to intense XUV irradiation for $\gtrsim 1$ Gyr after formation. The mass-dependence of this XUV evolution is shown in {numref}`fig:xuv-evolution`:
 
-```{figure} figures/xuv_evolution.avif
+```{figure} figures/johnstone2021_xuv_evolution.avif
 :name: fig:xuv-evolution
-:width: 700px
+:width: 500px
 :align: center
 
-Evolution of the XUV-to-bolometric luminosity ratio $L_\mathrm{XUV}/L_\mathrm{bol}$ for G-dwarf (yellow), early-M (red) and late-M (purple) stars. All spectral types pass through a saturated plateau at $L_\mathrm{XUV}/L_\mathrm{bol} \sim 10^{-3}$, then decay as a power law. The saturation phase lasts $\sim 100$ Myr for G-dwarfs but $\gtrsim 1$ Gyr for late-M stars, exposing close-in rocky planets (such as the TRAPPIST-1 planets) to prolonged atmospheric erosion. The G-dwarf track is anchored to the empirical "Sun in Time" scalings of {cite:t}`Ribas2005` (which sample G0-G5 stars only); the M-dwarf tracks are schematic, drawing on the prolonged-saturation behaviour of low-mass stars discussed by {cite:t}`Wordsworth2022`. Not a reproduction of any single dataset. Generated by `scripts/figures/L05_atmospheres_1/fig_xuv_evolution.py`.
+Evolutionary tracks for stellar X-ray luminosity for slow, medium, and fast rotators (red/green/blue lines) at four stellar masses: 1.0, 0.75, 0.5, and 0.25 $M_\odot$ (top to bottom). Shaded bands give one standard deviation around the mean track. Lower-mass stars remain in the saturated regime $L_X / L_\mathrm{bol} \sim 10^{-3}$ for far longer than Sun-like stars: $\sim 100$ Myr for $1.0\,M_\odot$, $\gtrsim 1$ Gyr for $0.25\,M_\odot$. Close-in rocky planets around late-M stars (e.g. the TRAPPIST-1 system) therefore experience prolonged high-XUV irradiation that drives sustained atmospheric escape. Reproduced from {cite:p}`Johnstone2021`, Fig. 11.
 ```
 
 ```{figure} figures/trappist1b_jwst_greene2023.avif
