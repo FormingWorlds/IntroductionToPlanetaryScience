@@ -414,10 +414,7 @@ where $x$ and $y$ are the eastward and northward directions, respectively.
 :width: 480px
 :align: center
 
-Geostrophic balance between the horizontal pressure-gradient force ($-\nabla P / \rho$, blue arrow) and the Coriolis force ($-f \hat{k} \times \mathbf{v}_g$, red arrow), giving a wind $\mathbf{v}_g$ that blows parallel to the isobars rather than down the pressure gradient.
-In the Northern Hemisphere the balanced wind keeps low pressure to its left.
-This is the dominant balance for large-scale flow on Earth and the giant planets ({numref}`fig:jupiter-zonal-winds`) where the Rossby number is small.
-Note: the pressure-gradient symbol in the imported schematic is typeset as an italic $p$; read it as $\rho$ (air density) to stay consistent with Eq. {eq}`eq:geostrophic-balance` in the main text. Credit: Wikimedia Commons, public domain.
+Geostrophic balance between the horizontal pressure-gradient force ($-\nabla P / \rho$, blue arrow) and the Coriolis force ($-f \hat{k} \times \mathbf{v}_g$, red arrow), giving a wind $\mathbf{v}_g$ that blows parallel to the isobars rather than down the pressure gradient. In the Northern Hemisphere the balanced wind keeps low pressure to its left. This is the dominant balance for large-scale flow on Earth and the giant planets ({numref}`fig:jupiter-zonal-winds`) where the Rossby number is small. Credit: Wikimedia Commons, public domain.
 ```
 
 ### Jet streams
@@ -487,12 +484,12 @@ Super-rotation requires a mechanism to transport angular momentum from the slowl
 :width: 380px
 :align: center
 
-Averaged zonal (top) and meridional (bottom) wind profiles in Venus's southern hemisphere at cloud level (April 2006-July 2007), as a function of latitude. Cloud tracers were measured at three wavelengths probing different altitudes: ultraviolet (380 nm, upper cloud $\sim 66$ km, day; blue), near-infrared (980 nm, upper cloud $\sim 61$ km, day; violet), and infrared (1.74 µm, lower cloud $\sim 47$ km, night; red). Zonal winds at low latitudes reach $\sim 105$ m s$^{-1}$ at the cloud tops but only $\sim 60$-$70$ m s$^{-1}$ at the cloud base; meridional winds are poleward at the cloud tops with peak $\sim 10$ m s$^{-1}$. The cloud-top winds are $\sim 60$ times faster than the planet's solid-body rotation, a state known as atmospheric super-rotation. Reproduced from {cite:p}`SanchezLavega2008`, Fig. 2.
+Averaged zonal (top) and meridional (bottom) wind profiles in Venus's southern hemisphere at cloud level (April 2006-June 2007), as a function of latitude. Cloud tracers were measured at three wavelengths probing different altitudes: ultraviolet (380 nm, upper cloud $\sim 66$ km, day; blue), near-infrared (980 nm, upper cloud $\sim 61$ km, day; violet), and infrared (1.74 µm, lower cloud $\sim 47$ km, night; red). Zonal winds at low latitudes reach $\sim 105$ m s$^{-1}$ at the cloud tops but only $\sim 60$-$70$ m s$^{-1}$ at the cloud base; meridional winds are poleward at the cloud tops with peak $\sim 10$ m s$^{-1}$. The cloud-top winds are $\sim 60$ times faster than the planet's solid-body rotation, a state known as atmospheric super-rotation. Reproduced from {cite:p}`SanchezLavega2008`, Fig. 2.
 ```
 
 ### Jupiter: the Great Red Spot
 
-Jupiter's **Great Red Spot (GRS)** is the largest and longest-lived storm in the solar system ({numref}`fig:jupiter-grs`): an anticyclonic vortex larger than Earth, with winds reaching $\sim$120 m s$^{-1}$ at its periphery. It has been observed continuously for over 350 years (the first telescopic observation is variously attributed to Robert Hooke in 1664 or Giovanni Cassini around 1665, though continuous observations date from 1830).
+Jupiter's **Great Red Spot (GRS)** is the largest and longest-lived storm in the solar system ({numref}`fig:jupiter-grs`): an anticyclonic vortex larger than Earth, with winds reaching $\sim$120 m s$^{-1}$ at its periphery. The first telescopic sightings, attributed to Robert Hooke in 1664 and Giovanni Cassini around 1665, may or may not be the same feature; uninterrupted observations date from 1830.
 
 ```{figure} figures/jupiter_great_red_spot.avif
 :name: fig:jupiter-grs
@@ -538,7 +535,7 @@ Saturn also experiences periodic **Great White Storms** roughly every 30 years (
 
 ### Neptune: extreme weather on a cold world
 
-Despite receiving only $\sim$1/900th of Earth's solar flux, Neptune has the **fastest winds** in the solar system, reaching $\sim$580 m s$^{-1}$ ($\sim$2100 km h$^{-1}$). The Voyager 2 flyby in 1989 revealed a **Great Dark Spot** similar to Jupiter's GRS ({numref}`fig:neptune-dark-spot`), though subsequent Hubble observations showed it had vanished while new ones had formed, suggesting Neptune's storms are more transient than Jupiter's.
+Despite receiving only $\sim$1/900th of Earth's solar flux, Neptune has the **fastest winds** in the solar system, with its retrograde equatorial jet reaching $\sim$580 m s$^{-1}$ ($\sim$2100 km h$^{-1}$). The Voyager 2 flyby in 1989 revealed a **Great Dark Spot** similar to Jupiter's GRS ({numref}`fig:neptune-dark-spot`), though subsequent Hubble observations showed it had vanished while new ones had formed, suggesting Neptune's storms are more transient than Jupiter's.
 
 ```{figure} figures/neptune_great_dark_spot.avif
 :name: fig:neptune-dark-spot

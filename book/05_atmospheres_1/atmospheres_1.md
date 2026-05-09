@@ -451,7 +451,7 @@ $$ (eq:greenhouse-surface-temp)
 When $\varepsilon = 0$ (no greenhouse gases), $T_s = T_{\mathrm{eff}}$: no warming. When $\varepsilon = 1$ (perfect absorber), $T_s = 2^{1/4} \, T_{\mathrm{eff}} \approx 1.19 \, T_{\mathrm{eff}}$, a 19% increase in surface temperature. For Earth, this gives $T_s \approx 1.19 \times 255 \approx 303$ K, a reasonable first estimate, though the real greenhouse effect involves multiple absorbing layers and a more complex radiative transfer calculation. The flux balance is summarised in {numref}`fig:greenhouse-effect`.
 
 ```{note}
-This one-layer model is deliberately simple. In {ref}`lecture06`, we will extend this treatment to examine the **runaway greenhouse effect**: what happens when the surface temperature rises so high that the outgoing longwave radiation reaches a maximum and can no longer balance the absorbed stellar flux. This is the mechanism that likely transformed Venus from a potentially habitable world into the 735 K inferno we see today.
+This one-layer model is deliberately simple. In {ref}`lecture09`, we will extend this treatment to examine the **runaway greenhouse effect**: what happens when the surface temperature rises so high that the outgoing longwave radiation reaches a maximum and can no longer balance the absorbed stellar flux. This is the mechanism that likely transformed Venus from a potentially habitable world into the 735 K inferno we see today.
 ```
 
 ```{figure} figures/greenhouse_one_layer.avif
@@ -643,7 +643,7 @@ Atmospheric retention is not simply a present-day snapshot: it evolves over a pl
 
 - **Atmospheric chemistry:** Photochemical reactions can transform atmospheric species. For example, solar UV dissociates $\mathrm{H_2O}$ into H and O; the hydrogen escapes while the oxygen may be incorporated into surface rocks. This irreversible loss of hydrogen is the leading hypothesis for how Venus lost its primordial water inventory.
 
-We will examine the long-term atmospheric evolution of specific planets in detail: Venus's runaway greenhouse and water loss ({ref}`lecture09`), Mars's atmospheric collapse and escape ({ref}`lecture10`), and the atmospheric characterisation of exoplanets ({ref}`lecture13`). The runaway greenhouse effect and climate feedbacks will be the central topics of {ref}`lecture06`.
+We will examine the long-term atmospheric evolution of specific planets in detail: Venus's runaway greenhouse and water loss ({ref}`lecture09`), Mars's atmospheric collapse and escape ({ref}`lecture10`), and the atmospheric characterisation of exoplanets ({ref}`lecture13`). Clouds, weather, and climate feedbacks are the focus of {ref}`lecture06`; the runaway greenhouse limit itself is derived in {ref}`lecture09`.
 
 ```{figure} figures/escape_velocity_temperature.svg
 :name: fig:escape-velocity-temperature
