@@ -149,7 +149,7 @@ This very strong bias against long-period and against small-stellar-radius syste
 :name: fig:wasp39_jwst
 :width: 90%
 
-Modern transit photometry pushed to its current limit. Top: raw broadband transit light curves of the hot Jupiter **WASP-39 b** observed with JWST NIRSpec G395H detectors NRS1 and NRS2. Middle: spectroscopic light curves at each wavelength. Bottom: photometric precision per spectrophotometric channel, reaching 200--500 ppm per integration. The data quality is now well below the typical signal of an exoplanet atmospheric absorption feature. From {cite:t}`Alderson2023`.
+Modern transit photometry pushed to its current limit. Top: raw broadband transit light curves of the hot Saturn **WASP-39 b** ($0.28\,\Mjup$) observed with JWST NIRSpec G395H detectors NRS1 and NRS2. Middle: spectroscopic light curves at each wavelength. Bottom: photometric precision per spectrophotometric channel, reaching 200--500 ppm per integration. The data quality is now well below the typical signal of an exoplanet atmospheric absorption feature. From {cite:t}`Alderson2023`.
 ```
 
 The history of transit surveys is essentially a history of expanding field of view, target brightness, and time baseline.
@@ -287,14 +287,14 @@ Currently active high-contrast facilities include SPHERE on the VLT, GPI on Gemi
 :name: fig:hr8799
 :width: 80%
 
-Discovery image of the **HR 8799** planetary system from {cite:t}`Marois2008`. Three of the four giant planets (b, c, d) are visible after subtraction of the stellar PSF using angular differential imaging. The Keck and Gemini AO observations spanned 2004 to 2008. The fourth planet, HR 8799 e, was added by Marois et al.\ in 2010. The four planets have masses of roughly $5$--$10\,\Mjup$ and orbital separations of $14$--$70$ AU. They are young, hot, self-luminous, and still cooling: this is the regime in which direct imaging works.
+Discovery image of the **HR 8799** planetary system from {cite:t}`Marois2008`. Three of the four giant planets (b, c, d) are visible at projected separations of $24$, $38$, and $68$ AU after subtraction of the stellar PSF using angular differential imaging. The Keck and Gemini AO observations spanned 2004 to 2008. The fourth planet, HR 8799 e (at $\sim 14$ AU), was added by Marois et al.\ in 2010. The four planets have masses of roughly $5$--$10\,\Mjup$ and span orbital separations of $14$--$68$ AU. They are young, hot, self-luminous, and still cooling: this is the regime in which direct imaging works.
 ```
 
 The current sensitivity of direct imaging is dominated by the planet's brightness.
 Young giant planets, $\lesssim 100$ Myr old, are still radiating away the gravitational binding energy of their formation and are luminous in the infrared.
 Old planets, like Jupiter, have cooled and emit a thousand times less.
 The directly imaged planet population is therefore strongly biased toward young (10--500 Myr), massive ($> 1\,\Mjup$), wide-orbit ($> 10$ AU) giants around nearby stars.
-Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 60$ Myr (formal range $30$--$160$ Myr) {cite:p}`Marois2008`, **$\beta$ Pictoris b/c** orbiting the 25 Myr A6V star embedded in the famous debris disk {cite:p}`Lagrange2010`, **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
+Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 60$ Myr (formal range $30$--$160$ Myr) {cite:p}`Marois2008`, **$\beta$ Pictoris b/c** orbiting an A6V star embedded in the famous debris disk (system age $\sim 12$–$23$ Myr from successive Beta Pictoris Moving Group calibrations) {cite:p}`Lagrange2010`, **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
 
 ```{figure} figures/betapic_imaging.avif
 :align: center
