@@ -79,7 +79,7 @@ Ice lines for other species ($\mathrm{CO_2}$, $\mathrm{CO}$, $\mathrm{N_2}$, $\m
 :width: 600px
 :align: center
 
-Sequential condensation of major volatile species across a protoplanetary disk and the resulting C/O ratio in solids and gas as a function of radius. The H$_2$O snow line roughly triples the available solid surface density; further out, the CO$_2$, CO, and N$_2$ ice lines set the C/N/O budget of solids and gas at each radius, controlling the volatile inheritance of forming planets. Adapted from {cite:t}`Oberg2011`.
+Sequential condensation of major volatile species across a protoplanetary disk and the resulting C/O ratio of grains (dashed) and gas (solid) as a function of disk radius. The H$_2$O ice line at $\sim 2$ AU lowers grain C/O and raises gas C/O; the CO$_2$ ice line at $\sim 10$ AU shifts gas C/O further upward; and beyond the CO ice line at $\sim 40$ AU the gas C/O reaches unity. The dotted line marks the solar reference. The radial sequencing of these ice lines controls the volatile composition that forming planets inherit from their formation zone. Reproduced from {cite:t}`Oberg2011`, Fig. 2.
 ```
 
 ### Observational evidence: ALMA
@@ -422,7 +422,7 @@ The variation is only about $\pm 0.5$ km s$^{-1}$ around the mean, because Earth
 
 **Application: Halley's comet.**
 
-For a dramatic contrast, consider Halley's comet ($a = 17.8$ AU, $e = 0.967$):
+For a dramatic contrast, consider Halley's comet ($a = 17.83$ AU, $e = 0.967$):
 
 | Point | Distance $r$ | Velocity |
 |-------|-------------|----------|
@@ -580,7 +580,7 @@ Disk surface-density response to an embedded planet, showing the outer-Lindblad 
 
 ### The Nice model
 
-After the gas disk has dispersed, the giant planets can still undergo migration through interactions with a remnant disk of planetesimals. The **Nice model** {cite:p}`Tsiganis2005` proposes that the giant planets formed in a more compact configuration (all between $\sim 5$ and $\sim 17$ AU) and subsequently underwent a dynamical instability, likely triggered when Jupiter and Saturn crossed their mutual 2:1 mean-motion resonance ({numref}`fig:nice-model`). This instability scattered Uranus and Neptune outward to their current orbits, disrupted the primordial Kuiper Belt, and may have triggered a spike of impacts throughout the inner solar system (the "Late Heavy Bombardment," although its timing and intensity remain debated).
+After the gas disk has dispersed, the giant planets can still undergo migration through interactions with a remnant disk of planetesimals. The **Nice model** {cite:p}`Tsiganis2005` proposes that the giant planets formed in a more compact configuration than today (all within $\sim 20$ AU) and subsequently underwent a dynamical instability, likely triggered when Jupiter and Saturn crossed their mutual 2:1 mean-motion resonance ({numref}`fig:nice-model`). This instability scattered Uranus and Neptune outward to their current orbits, disrupted the primordial Kuiper Belt, and may have triggered a spike of impacts throughout the inner solar system (the "Late Heavy Bombardment," although its timing and intensity remain debated).
 
 ```{figure} figures/nesvorny2018_nice.avif
 :name: fig:nice-model
@@ -592,14 +592,14 @@ Evolution of the giant planets through the Nice-model instability. Left panel: s
 
 ### The Grand Tack
 
-The **Grand Tack hypothesis** {cite:p}`Walsh2011` proposes that Jupiter first migrated inward to $\sim 1.5$ AU via Type II migration, then reversed course when Saturn caught up and became trapped in the **2:3 mean-motion resonance** with Jupiter: the combined torques from their mutual interaction with the disk drove both planets outward ("tacking," as in sailing). This inward-then-outward migration ({numref}`fig:grand-tack`) would have scattered and depleted material in the inner solar system, potentially explaining the small mass of Mars and the compositional structure of the asteroid belt.
+The **Grand Tack hypothesis** {cite:p}`Walsh2011` proposes that Jupiter first migrated inward to $\sim 1.5$ AU via Type II migration, then reversed course when Saturn caught up and became trapped in the **3:2 mean-motion resonance** with Jupiter: the combined torques from their mutual interaction with the disk drove both planets outward ("tacking," as in sailing). This inward-then-outward migration ({numref}`fig:grand-tack`) would have scattered and depleted material in the inner solar system, potentially explaining the small mass of Mars and the compositional structure of the asteroid belt.
 
 ```{figure} figures/walsh2011_grand_tack.avif
 :name: fig:grand-tack
 :width: 600px
 :align: center
 
-The Grand Tack scenario from a Walsh et al. (2011) simulation. Top panel: mass evolution of the four giant planets during the disk phase. Bottom panel: semi-major axis evolution; each curve is labelled with the planet's name on the track. Jupiter migrates inward to $\sim 1.5$ AU via Type II migration; once Saturn catches up and the two planets become trapped in their mutual 2:3 mean-motion resonance, the combined torques reverse the migration and both planets move outward. The episode depletes solid material in the inner disk, with consequences for Mars's small mass and the asteroid belt's compositional structure. Reproduced from {cite:t}`Walsh2011`.
+The Grand Tack scenario from a Walsh et al. (2011) simulation. Top panel: mass evolution of the four giant planets during the disk phase. Bottom panel: semi-major axis evolution; each curve is labelled with the planet's name on the track. Jupiter migrates inward to $\sim 1.5$ AU via Type II migration; once Saturn catches up and the two planets become trapped in their mutual 3:2 mean-motion resonance, the combined torques reverse the migration and both planets move outward. The episode depletes solid material in the inner disk, with consequences for Mars's small mass and the asteroid belt's compositional structure. Reproduced from {cite:t}`Walsh2011`.
 ```
 
 ### Observational evidence for migration
