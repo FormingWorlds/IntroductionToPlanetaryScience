@@ -138,7 +138,7 @@ The more complete **pi-scaling framework** of {cite:p}`Holsapple1993` parameteri
 :width: 700px
 :align: center
 
-The regimes of cratering for a material with strength: cratering efficiency $\pi_V = \rho V/m$ as a function of gravity-scaled size $\pi_2 = g a / U^2$. In the **strength regime** (small craters, left), $\pi_V$ depends on the impact velocity $U$ but is essentially independent of $\pi_2$. For increasing size at fixed velocity, the system transitions to the **gravity regime** (large craters, right) where $\pi_V \propto \pi_2^{-\alpha}$. Most laboratory experiments in geological materials are necessarily in the strength regime; planetary-scale craters are firmly in the gravity regime. Reproduced from {cite:p}`Holsapple1993`, Fig. 3.
+The regimes of cratering for a material with strength: cratering efficiency $\pi_V = \rho V/m$ as a function of gravity-scaled size $\pi_2 = g a / U^2$. The three curves correspond to three impact velocities ($U = 2.5$, 10, and 40 km s$^{-1}$). In the **strength regime** (small craters, left), $\pi_V$ depends on the impact velocity $U$ but is essentially independent of $\pi_2$, so the curves separate. For increasing size at fixed velocity, the system transitions to the **gravity regime** (large craters, right) where $\pi_V \propto \pi_2^{-\alpha}$ and the curves converge to a common law. Most laboratory experiments in geological materials are necessarily in the strength regime; planetary-scale craters are firmly in the gravity regime. Reproduced from {cite:p}`Holsapple1993`, Fig. 3.
 ```
 
 
@@ -210,7 +210,7 @@ The lunar farside as imaged by NASA's Lunar Reconnaissance Orbiter, showing a he
 :width: 600px
 :align: center
 
-The lunar crater chronology of {cite:t}`Neukum2001`. The black curve gives the cumulative density of craters with $D \geq 1$ km expected on a surface of model age $T$ (in Gyr); red points mark Apollo and Luna sample sites where radiometric ages of returned basalts and breccias calibrate the curve. The function has two regimes: a roughly linear segment for $T \lesssim 3$ Gyr (steady impact flux) and a steep exponential upturn at $T \gtrsim 3.5$ Gyr that reflects the much higher impact rate during the early bombardment of the inner solar system. Surface ages on other bodies are estimated by counting craters in a chosen size bin and inverting this relation, with corrections for the local impact flux and gravity {cite:p}`Neukum2001`.
+The lunar crater chronology of {cite:t}`Neukum2001`. The black curve gives the cumulative density of craters with $D \geq 1$ km expected on a surface of model age $T$ (in Gyr); red points mark Apollo and Luna sample sites where radiometric ages of returned basalts and breccias calibrate the curve. The function has two regimes: a roughly linear segment for $T \lesssim 3$ Gyr (steady impact flux) and a steep exponential upturn at $T \gtrsim 3.5$ Gyr that reflects the much higher impact rate during the early bombardment of the inner solar system. Surface ages on other bodies are estimated by counting craters in a chosen size bin and inverting this relation, with corrections for the local impact flux and gravity. Reproduced from {cite:p}`Neukum2001`.
 ```
 
 
@@ -345,14 +345,14 @@ Wind-driven erosion and deposition require an atmosphere with sufficient density
 - **Titan:** Vast equatorial dune fields composed of organic particles (tholins) produced by atmospheric photochemistry. The dunes are longitudinal, up to 150 m tall and hundreds of kilometres long.
 - **Venus:** Despite its dense atmosphere, surface winds are only $\sim$1 m s$^{-1}$ due to the sluggish near-surface dynamics, limiting aeolian activity. However, the thick atmosphere allows even these slow winds to mobilise fine particles.
 
-Repeat HiRISE imaging of Martian dune fields from the Mars Reconnaissance Orbiter has shown that these dunes migrate at sand fluxes comparable to those of terrestrial dunes despite Mars's $\sim$170$\times$ thinner atmosphere (Mars surface pressure $\sim$600 Pa vs Earth's $\sim$10$^5$ Pa), implying that the threshold wind speed for grain saltation is much lower than previously assumed {cite:p}`Bridges2012`. {numref}`fig:mars-dunes` shows an example of a sand sheet streaming through Nili Patera; Titan's massive equatorial dune fields are visible in Cassini SAR imagery ({numref}`fig:titan-dunes`).
+Repeat HiRISE imaging of Martian dune fields from the Mars Reconnaissance Orbiter has shown that these dunes migrate at sand fluxes comparable to those of terrestrial dunes despite Mars's $\sim$170$\times$ thinner atmosphere (Mars surface pressure $\sim$600 Pa vs Earth's $\sim$10$^5$ Pa), overturning the long-held view that Mars dunes are inactive {cite:p}`Bridges2012`. {numref}`fig:mars-dunes` shows an example of a sand sheet streaming through Nili Patera; Titan's massive equatorial dune fields are visible in Cassini SAR imagery ({numref}`fig:titan-dunes`).
 
 ```{figure} figures/mars_dunes_bridges.avif
 :name: fig:mars-dunes
 :width: 600px
 :align: center
 
-A streaming sand sheet ("river of sand") within the Nili Patera caldera on Mars, imaged by HiRISE on the Mars Reconnaissance Orbiter. Time-resolved imaging of dune fields like this established that Martian sand fluxes can match terrestrial values despite the thin atmosphere, revising long-standing estimates of the wind threshold for grain saltation on Mars {cite:p}`Bridges2012`. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
+A streaming sand sheet ("river of sand") within the Nili Patera caldera on Mars, imaged by HiRISE on the Mars Reconnaissance Orbiter. Time-resolved imaging of dune fields like this established that present-day Martian sand fluxes can match terrestrial values despite the thin atmosphere, settling the long-standing debate over whether Mars dunes are presently active {cite:p}`Bridges2012`. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
 ```
 
 ```{figure} figures/titan_dunes.avif
@@ -427,7 +427,7 @@ Every mineral has a characteristic pattern of absorption features in the visible
 :width: 600px
 :align: center
 
-Two complementary views of carbonate-bearing terrain near Nili Fossae on Mars (PIA19816). (a) Thermal-infrared composite from the THEMIS instrument on Mars Odyssey, showing surface morphology and thermal-inertia variations. (b) Spectral classification map from the CRISM instrument on the Mars Reconnaissance Orbiter, where colour codes indicate the dominant mineralogy: Mg-carbonates (green/blue), Mg/Fe-phyllosilicates (clays), and unaltered basalt. The carbonates and clays form by aqueous alteration of basaltic crust and provide direct mineralogical evidence for sustained liquid water on early Mars {cite:p}`Ehlmann2008`. Credit: NASA/JPL-Caltech/ASU/JHU APL, public domain.
+Two complementary views of carbonate-bearing terrain near Nili Fossae on Mars (PIA19816). (a) Thermal-infrared composite from the THEMIS instrument on Mars Odyssey, showing surface morphology and thermal-inertia variations. (b) Spectral classification map from the CRISM instrument on the Mars Reconnaissance Orbiter, where colour codes indicate the dominant mineralogy: Mg-carbonates (green), olivine-bearing sands (brown/yellow), and basaltic terrain (purple). The carbonates form by aqueous alteration of basaltic crust and provide direct mineralogical evidence for sustained liquid water on early Mars; nearby Mg/Fe-phyllosilicates (clays) detected in the same Nili Fossae region by CRISM further constrain the alteration history {cite:p}`Ehlmann2008`. Credit: NASA/JPL-Caltech/ASU/JHU APL, public domain.
 ```
 
 ### Radar imaging (SAR)
@@ -554,7 +554,7 @@ Dramatic plumes of water vapour and ice particles erupting from the south polar 
 
 NASA's Perseverance rover, operating in Jezero crater since 2021, has confirmed that the crater floor is composed of igneous rock (olivine-bearing cumulates) that was subsequently altered by liquid water {cite:p}`Farley2022`. The rover has cached over 20 sample tubes for eventual return to Earth by the Mars Sample Return campaign, a joint NASA/ESA effort that, if successful, would provide the first laboratory analysis of Martian rocks and address questions about past habitability and possible biosignatures ({ref}`lecture10`).
 
-The **DART** (Double Asteroid Redirection Test) mission in 2022 demonstrated the first successful planetary defence experiment: a kinetic impactor deliberately crashed into the asteroid moonlet Dimorphos, shortening its orbital period around the larger asteroid Didymos by $33.0 \pm 1.0$ minutes {cite:p}`Thomas2023`. The result confirmed that kinetic impact is a viable deflection strategy for hazardous near-Earth asteroids, and the impact ejecta provided new insights into the mechanical properties of rubble-pile asteroid surfaces.
+The **DART** (Double Asteroid Redirection Test) mission in 2022 demonstrated the first successful planetary defence experiment: a kinetic impactor deliberately crashed into the asteroid moonlet Dimorphos, shortening its orbital period around the larger asteroid Didymos by $33.0 \pm 1.0$ minutes {cite:p}`Thomas2023`. Companion analyses derived a momentum enhancement factor $\beta \sim 3.6$ from ejecta carrying away momentum well beyond the impactor's own {cite:p}`Cheng2023` and reconstructed the impact site from pre-impact imagery to constrain the mechanical properties of Dimorphos's rubble-pile surface {cite:p}`Daly2023`. Together these results confirmed that kinetic impact is a viable deflection strategy for hazardous near-Earth asteroids.
 
 Ongoing monitoring of Io by the Juno extended mission and ground-based adaptive optics has revealed new details of Io's volcanic activity, including the discovery of previously unknown eruption sites ({numref}`fig:io-nusku`) and constraints on the spatial distribution of heat flow. For Venus, planned radar mapping missions (VERITAS, EnVision) in the early 2030s will provide the first high-resolution surface data since Magellan, enabling tests of whether Venus has experienced recent or ongoing volcanic activity ({ref}`lecture09`).
 
