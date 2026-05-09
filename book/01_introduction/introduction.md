@@ -435,7 +435,7 @@ The table below lists landmark missions that have shaped our understanding of th
 | JWST | NASA/ESA/CSA | 2021– | Exoplanets | Atmospheric characterisation of exoplanets |
 | Europa Clipper | NASA | 2024– | Europa | Investigating habitability of Europa's ocean |
 
-Two iconic mission products illustrate the breadth of these efforts: the Cassini orbiter's backlit view of Saturn ({numref}`fig:cassini-saturn`) revealing the ring system from inside Saturn's shadow, and the first colour view from Perseverance on Mars ({numref}`fig:perseverance-mars`) showing the rocky plain in Jezero crater where samples for eventual return are being cached.
+Two iconic mission products illustrate the breadth of these efforts: the Cassini orbiter's backlit view of Saturn from inside the planet's shadow ({numref}`fig:cassini-saturn`), and the first colour view from Perseverance on Mars ({numref}`fig:perseverance-mars`) showing the rocky plain in Jezero crater where samples for eventual return are being cached.
 
 ```{figure} figures/cassini_saturn.avif
 :name: fig:cassini-saturn
@@ -457,7 +457,7 @@ Several missions are planned for the coming decade, including ESA's JUICE (Jupit
 
 ## Recent advances
 
-Planetary science is advancing rapidly, driven by new space missions and observatories. The **James Webb Space Telescope** (JWST), launched in 2021, has begun characterising the atmospheres of rocky exoplanets for the first time, including thermal emission measurements of planets in the TRAPPIST-1 system ({numref}`fig:trappist1-system`) {cite:p}`Greene2023` (see also {ref}`lecture13`). These observations are providing the first direct constraints on whether Earth-sized planets around other stars retain atmospheres; the first such measurement, the dayside thermal emission of TRAPPIST-1 b, is shown in {numref}`fig:trappist1b-jwst`.
+Planetary science is advancing rapidly, driven by new space missions and observatories. The **James Webb Space Telescope** (JWST), launched in 2021, has begun characterising the atmospheres of rocky exoplanets for the first time, including thermal emission measurements of planets in the TRAPPIST-1 system {cite:p}`Greene2023` (see also {ref}`lecture13`). The system architecture, with seven roughly Earth-sized planets in tightly-packed orbits around a cool M-dwarf, is shown in {numref}`fig:trappist1-system`. These observations are providing the first direct constraints on whether Earth-sized planets around other stars retain atmospheres; the first such measurement, the dayside thermal emission of TRAPPIST-1 b, is shown in {numref}`fig:trappist1b-jwst`.
 
 ```{figure} figures/trappist1_system.avif
 :name: fig:trappist1-system
