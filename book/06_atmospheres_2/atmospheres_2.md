@@ -630,7 +630,7 @@ A dense $\mathrm{CO_2}$ atmosphere alone struggles to explain warm conditions on
 
 The stability of a planet's climate depends on **feedback mechanisms**, processes where a change in temperature triggers secondary effects that either amplify (positive feedback) or counteract (negative feedback) the original change:
 
-- **Ice-albedo feedback** (positive): If the planet cools, ice sheets expand $\Rightarrow$ the surface becomes more reflective (higher albedo) $\Rightarrow$ less sunlight is absorbed $\Rightarrow$ further cooling. This feedback can drive a planet into a **snowball state** if triggered strongly enough (as may have happened on Earth during the Neoproterozoic, $\sim$700 Ma).
+- **Ice-albedo feedback** (positive): If the planet cools, ice sheets expand $\Rightarrow$ the surface becomes more reflective (higher albedo) $\Rightarrow$ less sunlight is absorbed $\Rightarrow$ further cooling. This feedback can drive a planet into a **snowball state** if triggered strongly enough (as may have happened on Earth during the Neoproterozoic, $\sim$700 Ma). The energy-balance bistability that supports a stable snowball and a stable warm equilibrium, with an unstable deglaciation threshold between them, is shown in {numref}`fig:snowball-bistability`.
 
 ```{figure} figures/snowball_bistability.avif
 :name: fig:snowball-bistability
@@ -677,7 +677,7 @@ The weathering rate depends strongly on temperature through an **Arrhenius-type 
 
 2. **If the planet cools** (e.g., due to reduced volcanic activity or orbital changes): less rainfall + slower reactions → **weathering rate decreases** → $\mathrm{CO_2}$ from volcanism accumulates in the atmosphere → greenhouse strengthens → planet **warms back up**.
 
-This thermostat operates on geological timescales of $\sim 10^5$-$10^6$ yr, long by human standards but short compared to geological time. It is the primary reason Earth has maintained habitable surface temperatures for over 4 billion years despite the 30% increase in solar luminosity.
+This thermostat operates on geological timescales of $\sim 10^5$-$10^6$ yr, long by human standards but short compared to geological time. It is the primary reason Earth has maintained habitable surface temperatures for over 4 billion years despite the 30% increase in solar luminosity. The geologic cycle as a whole is summarised in {numref}`fig:carbonate-silicate-cycle`, and the modern plate-tectonic version of the cycle from {cite:p}`Foley2024` is shown in {numref}`fig:walker-loop`.
 
 ```{figure} figures/carbonate_silicate_cycle.avif
 :name: fig:carbonate-silicate-cycle
