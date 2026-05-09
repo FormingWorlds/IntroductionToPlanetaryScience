@@ -11,7 +11,7 @@
 
 ## A pale blue dot
 
-On 14 February 1990, the Voyager 1 spacecraft turned its camera back toward the inner solar system one last time. From a distance of 6 billion km, about 40 AU, it captured an image in which Earth appears as a tiny speck, less than a single pixel, suspended in a scattered beam of sunlight. Carl Sagan, who had campaigned for years to have the photograph taken, wrote: *"Look again at that dot. That's here. That's home. That's us"* {cite:p}`Sagan1994`. Minutes later, Voyager's cameras were switched off for good.
+On 14 February 1990, the Voyager 1 spacecraft turned its camera back toward the inner solar system one last time. From a distance of 6 billion km, about 40 AU, it captured an image in which Earth appears as a tiny speck, less than a single pixel, suspended in a scattered beam of sunlight ({numref}`fig:pale-blue-dot`). Carl Sagan, who had campaigned for years to have the photograph taken, wrote: *"Look again at that dot. That's here. That's home. That's us"* {cite:p}`Sagan1994`. Minutes later, Voyager's cameras were switched off for good.
 
 ```{figure} figures/pale_blue_dot.avif
 :name: fig:pale-blue-dot
@@ -25,7 +25,7 @@ The Pale Blue Dot. Earth appears as a tiny bright speck roughly halfway down the
 
 
 
-The Pale Blue Dot is one frame in a much larger 60-frame "Family Portrait" mosaic that Voyager 1 returned the same day, the only time a spacecraft has imaged the entire planetary system from outside.
+The Pale Blue Dot is one frame in a much larger 60-frame "Family Portrait" mosaic that Voyager 1 returned the same day, the only time a spacecraft has imaged the entire planetary system from outside ({numref}`fig:family-portrait`).
 
 ```{figure} figures/family_portrait.avif
 :name: fig:family-portrait
@@ -35,7 +35,7 @@ The Pale Blue Dot is one frame in a much larger 60-frame "Family Portrait" mosai
 The Voyager 1 "Family Portrait" of the solar system, 14 February 1990, taken from approximately 6 billion km. Six planets are visible across this 60-frame mosaic spanning roughly 70 degrees of sky: Venus, Earth, Jupiter, Saturn, Uranus, and Neptune. Mercury was lost in the Sun's glare, and Mars was too small to be detected. The Pale Blue Dot ({numref}`fig:pale-blue-dot`) is a zoom into the Earth frame. Credit: NASA/JPL-Caltech, PIA00451.
 ```
 
-A second image taken from lunar orbit two decades earlier captured the same essential idea from much closer in: Earth as a finite, fragile world set against an empty sky.
+A second image taken from lunar orbit two decades earlier captured the same essential idea from much closer in: Earth as a finite, fragile world set against an empty sky ({numref}`fig:earthrise-apollo8`).
 
 ```{figure} figures/earthrise_apollo8.avif
 :name: fig:earthrise-apollo8
@@ -47,7 +47,7 @@ A second image taken from lunar orbit two decades earlier captured the same esse
 
 That image captures something essential about planetary science: it asks us to see our own world not as the centre of the universe, but as one planet among many, a physical system that can be studied, compared, and understood. This course is built around three questions that drive that effort:
 
-1. **How did our solar system form, and is it typical?** Before 1992, we knew of exactly zero planets outside our solar system. Today we have confirmed over 5,700 exoplanets in more than 4,300 systems. Statistical analyses of the Kepler survey suggest that roughly 0.4–0.6 rocky, habitable-zone planets exist per Sun-like star {cite:p}`Bryson2021`, implying hundreds of millions of such worlds in the Milky Way alone. Yet we have detailed knowledge of only one planetary system.
+1. **How did our solar system form, and is it typical?** Before 1992, we knew of exactly zero planets outside our solar system. Today we have confirmed over 5,700 exoplanets in more than 4,300 systems. Statistical analyses of the Kepler survey suggest that roughly 0.4–0.6 rocky, habitable-zone planets exist per Sun-like star ({numref}`fig:eta-earth`) {cite:p}`Bryson2021`, implying hundreds of millions of such worlds in the Milky Way alone. Yet we have detailed knowledge of only one planetary system.
 
 2. **What determines whether a planet becomes habitable?** Venus, Earth, and Mars all formed from the same protoplanetary disk, likely with similar initial compositions. All three may have had early liquid water. Yet today Venus has a 460 °C surface beneath 90 bar of CO$_2$, Earth has oceans and a biosphere, and Mars is a cold desert with an atmosphere thinner than 1% of Earth's. Understanding why they diverged is one of the central puzzles of planetary science.
 
@@ -69,7 +69,7 @@ The word "planet" derives from the Greek *planetes* (πλανήτης), meaning 
 
 For over two millennia, the list of planets seemed settled. That changed with the invention of the telescope. William Herschel discovered Uranus in 1781, the first planet found in modern times. In 1846, Johann Galle observed Neptune at a position predicted independently by Urbain Le Verrier and John Couch Adams from perturbations in Uranus's orbit, a triumph of Newtonian mechanics. And in 1930, Clyde Tombaugh discovered Pluto at Lowell Observatory after a painstaking photographic search.
 
-But Pluto was always an oddity: small, icy, with an eccentric and inclined orbit that crosses Neptune's. When astronomers began discovering other large objects in the Kuiper Belt in the 1990s and 2000s, culminating in the discovery of Eris in 2005 by Brown, Trujillo, and Rabinowitz, which appeared comparable in size to Pluto, the question became unavoidable: either these new objects were also planets, or Pluto was not.
+But Pluto was always an oddity: small, icy, with an eccentric and inclined orbit that crosses Neptune's. When astronomers began discovering other large objects in the Kuiper Belt in the 1990s and 2000s, culminating in the discovery of Eris in 2005 by Brown, Trujillo, and Rabinowitz, which appeared comparable in size to Pluto, the question became unavoidable: either these new objects were also planets, or Pluto was not. The 2015 New Horizons flyby ({numref}`fig:pluto-new-horizons`) revealed an unexpectedly active world, complicating the debate further.
 
 ```{figure} figures/pluto_new_horizons.avif
 :name: fig:pluto-new-horizons
@@ -101,7 +101,7 @@ Planetary science as a discipline is remarkably young, but its roots reach back 
 
 Babylonian astronomers systematically tracked planetary positions as early as 1800 BCE, developing arithmetical methods to predict conjunctions and oppositions. Greek natural philosophers constructed geometric models: Aristotle's geocentric spheres (~350 BCE) and Ptolemy's epicyclic system (~150 CE) remained the standard framework for over a millennium.
 
-The Copernican revolution began in 1543, when Nicolaus Copernicus published *De revolutionibus*, placing the Sun at the centre. Johannes Kepler refined this model into his three empirical laws of planetary motion (1609–1619), replacing circles with ellipses. Isaac Newton's *Principia* (1687) showed that all three of Kepler's laws follow from a single universal law of gravitation, the first grand unification in physics.
+The Copernican revolution began in 1543, when Nicolaus Copernicus published *De revolutionibus*, placing the Sun at the centre ({numref}`fig:copernican-system`). Johannes Kepler refined this model into his three empirical laws of planetary motion (1609–1619), replacing circles with ellipses. Isaac Newton's *Principia* (1687) showed that all three of Kepler's laws follow from a single universal law of gravitation, the first grand unification in physics.
 
 ```{figure} figures/copernican_system.avif
 :name: fig:copernican-system
@@ -113,7 +113,7 @@ Heliocentric model of the solar system from Copernicus's *De revolutionibus orbi
 
 ### The telescopic era
 
-Galileo Galilei's telescope observations in 1610 transformed planetary science from mathematics into a physical science. He discovered four moons orbiting Jupiter (now called the Galilean moons), observed the phases of Venus (confirming it orbits the Sun), and resolved Saturn's rings (though he could not interpret their structure).
+Galileo Galilei's telescope observations in 1610 transformed planetary science from mathematics into a physical science. He discovered four moons orbiting Jupiter (now called the Galilean moons; see {numref}`fig:sidereus-nuncius`), observed the phases of Venus (confirming it orbits the Sun), and resolved Saturn's rings (though he could not interpret their structure).
 
 ```{figure} figures/sidereus_nuncius.avif
 :name: fig:sidereus-nuncius
@@ -131,7 +131,7 @@ The 19th century brought spectroscopy, allowing astronomers to determine atmosph
 
 The modern era of planetary science began on 14 December 1962, when NASA's Mariner 2 flew past Venus, the first spacecraft to successfully visit another planet. This flyby revealed Venus's extreme surface temperature, overturning earlier speculation about habitable conditions beneath its clouds.
 
-The pace of exploration accelerated rapidly. Mariner 4 returned the first close-up images of Mars in 1965, revealing a cratered, apparently dead world, not the canal-laced surface some had imagined. The Soviet Venera 7 achieved the first landing on another planet (Venus, 1970). NASA's Viking landers (1976) conducted the first experiments searching for life on Mars. The twin Voyager spacecraft (launched 1977) exploited a rare planetary alignment to conduct a grand tour of the outer solar system, visiting Jupiter, Saturn, Uranus, and Neptune between 1979 and 1989.
+The pace of exploration accelerated rapidly. Mariner 4 returned the first close-up images of Mars in 1965 ({numref}`fig:mariner4-mars`), revealing a cratered, apparently dead world, not the canal-laced surface some had imagined. The Soviet Venera 7 achieved the first landing on another planet (Venus, 1970). NASA's Viking landers (1976) conducted the first experiments searching for life on Mars. The twin Voyager spacecraft (launched 1977) exploited a rare planetary alignment to conduct a grand tour of the outer solar system, visiting Jupiter, Saturn, Uranus, and Neptune between 1979 and 1989 ({numref}`fig:voyager2-trajectory`).
 
 ```{figure} figures/mariner4_mars.avif
 :name: fig:mariner4-mars
@@ -152,6 +152,7 @@ Trajectory of NASA's Voyager 2 spacecraft during its grand tour of the outer sol
 ### The exoplanet revolution
 
 In 1992, Aleksander Wolszczan and Dale Frail announced the discovery of planets orbiting a pulsar, the first confirmed exoplanets {cite:p}`Wolszczan1992`. Three years later, Michel Mayor and Didier Queloz detected 51 Pegasi b, the first planet orbiting a Sun-like star: a "hot Jupiter" with a 4.2-day orbit that challenged all existing formation theories {cite:p}`MayorQueloz1995`. NASA's Kepler mission (2009–2018) discovered thousands of transiting exoplanets, while the ongoing TESS mission (launched 2018) surveys the brightest nearby stars. JWST, launched in December 2021, is now characterising exoplanet atmospheres through transmission and emission spectroscopy ({ref}`lecture13`).
+The cumulative tally of confirmed detections is shown in {numref}`fig:exoplanet-cumulative`.
 
 ```{figure} figures/exoplanet_cumulative.avif
 :name: fig:exoplanet-cumulative
@@ -161,6 +162,8 @@ In 1992, Aleksander Wolszczan and Dale Frail announced the discovery of planets 
 Cumulative number of confirmed exoplanets per discovery year, colour-coded by detection method. The first detection (1992, pulsar timing) was followed by the radial-velocity revolution of the late 1990s and 2000s, and then the explosion of transit discoveries during and after NASA's Kepler mission (2009 to 2018). Credit: NASA Exoplanet Archive (Caltech), accessed 2026-05-08 {cite:p}`NASAExoplanetArchive2026`. Generated by `scripts/figures/L01_introduction/fig_exoplanet_cumulative.py`.
 ```
 
+The same set of detections plotted in mass-period space ({numref}`fig:exoplanet-mass-period`) reveals strong selection biases: large short-period planets dominate the upper-left of the diagram, while Earth analogues in the lower-right remain sparsely populated.
+
 ```{figure} figures/exoplanet_mass_period.avif
 :name: fig:exoplanet-mass-period
 :width: 700px
@@ -168,6 +171,8 @@ Cumulative number of confirmed exoplanets per discovery year, colour-coded by de
 
 Planet mass (or $M\sin i$) versus orbital period for all confirmed exoplanets, colour-coded by detection method, with solar-system planets shown for reference. Selection effects favour large, short-period planets in the upper-left; the lower-right is sparsely populated despite likely being where Earth analogues reside. Credit: NASA Exoplanet Archive (Caltech), accessed 2026-05-08 {cite:p}`NASAExoplanetArchive2026`. Generated by `scripts/figures/L01_introduction/fig_exoplanet_mass_period.py`.
 ```
+
+Within the small-planet regime, the Kepler sample reveals a bimodal radius distribution ({numref}`fig:radius-gap`) with peaks near $1.3\,\Rearth$ and $2.4\,\Rearth$ separated by a "radius valley", interpreted as the boundary between rocky planets and those retaining a thin H/He envelope.
 
 ```{figure} figures/radius_gap_fulton.avif
 :name: fig:radius-gap
@@ -177,6 +182,8 @@ Planet mass (or $M\sin i$) versus orbital period for all confirmed exoplanets, c
 Occurrence rate of small exoplanets (period $< 100$ d, host stars FGK) as a function of planet radius, from the California-Kepler Survey. The bimodal distribution shows two peaks near $1.3\,\Rearth$ (super-Earths) and $2.4\,\Rearth$ (sub-Neptunes) separated by a "radius valley" near $1.8\,\Rearth$, interpreted as the boundary between rocky planets and those that retain a thin H/He envelope. Credit: {cite:t}`Fulton2017`.
 ```
 
+Beyond the demographics, ALMA imaging of the young star HL Tauri ({numref}`fig:hl-tau-alma`) provides direct visual evidence of planet formation in progress: concentric gaps in the protoplanetary disk are widely interpreted as carved by forming protoplanets.
+
 ```{figure} figures/hl_tau_alma.avif
 :name: fig:hl-tau-alma
 :width: 450px
@@ -184,6 +191,8 @@ Occurrence rate of small exoplanets (period $< 100$ d, host stars FGK) as a func
 
 ALMA 1.3 mm continuum image of the protoplanetary disk around the young star HL Tauri (distance $\sim 140$ pc). The concentric dark gaps are widely interpreted as carved by forming protoplanets. This was the first resolved view of disk substructure on AU scales. Credit: ALMA (ESO/NAOJ/NRAO); {cite:t}`ALMAPartnership2015`.
 ```
+
+The transit-detection method itself is illustrated by the discovery light curve of HD 209458 b ({numref}`fig:transit-hd209458b`), the first transiting exoplanet, in which the $\sim 1.4\%$ flux decrement during planetary transit gave the planet-to-star radius ratio via $\Delta F/F \approx (R_p/R_\star)^2$.
 
 ```{figure} figures/transit_hd209458b.avif
 :name: fig:transit-hd209458b
@@ -206,6 +215,8 @@ The solar system extends from the Sun (radius $\Rsun = 6.96 \times 10^8$ m) to t
 - **The outer solar system:** Four giant planets, Jupiter and Saturn (gas giants) and Uranus and Neptune (ice giants), between 5.2 and 30.1 AU. These are massive, with thick hydrogen–helium envelopes and extensive moon systems.
 - **The Kuiper Belt:** A disk of icy bodies beyond Neptune (~30–50 AU), including the dwarf planets Pluto, Eris, and Makemake. The scattered disk extends to greater distances with more eccentric orbits.
 - **The Oort Cloud:** A spherical shell of icy bodies at $10^4$–$10^5$ AU, believed to be the source of long-period comets. Its existence is inferred from cometary orbits but has not been directly observed.
+
+The relative sizes of the eight planets are shown in {numref}`fig:planet-sizes`, with Jupiter's diameter roughly $29\times$ that of Mercury.
 
 ```{figure} figures/planet_sizes.avif
 :name: fig:planet-sizes
@@ -232,7 +243,7 @@ The table below summarises the key physical and orbital properties of the eight 
 | Uranus | 14.54 | 4.01 | 19.19 | 84.01 | 0.047 | 1271 |
 | Neptune | 17.15 | 3.88 | 30.07 | 164.8 | 0.009 | 1638 |
 
-Two patterns stand out immediately. First, **density decreases with distance**: the inner planets have $\rho > 3900$ kg m$^{-3}$ (rock and metal), while the outer planets have $\rho < 1700$ kg m$^{-3}$ (gas and ice). Saturn is famously less dense than water. This gradient reflects the temperature structure of the protoplanetary disk from which the planets formed ({ref}`lecture02`). Second, **mass is concentrated in Jupiter**: it contains more than twice the mass of all other planets combined. We will quantify this in the blackboard derivation below.
+Two patterns stand out immediately. First, **density decreases with distance** ({numref}`fig:density-vs-distance`): the inner planets have $\rho > 3900$ kg m$^{-3}$ (rock and metal), while the outer planets have $\rho < 1700$ kg m$^{-3}$ (gas and ice). Saturn is famously less dense than water. This gradient reflects the temperature structure of the protoplanetary disk from which the planets formed ({ref}`lecture02`). Second, **mass is concentrated in Jupiter** ({numref}`fig:mass-vs-distance`): it contains more than twice the mass of all other planets combined. We will quantify this in the blackboard derivation below.
 
 ```{figure} figures/density_vs_distance.avif
 :name: fig:density-vs-distance
@@ -316,7 +327,7 @@ The more precise form of Kepler's third law is $P^2 = 4\pi^2 a^3 / [G(M_* + M_p)
 - Jupiter, the most massive planet: $\Mjup \approx 318 \, \Mearth \approx 1.90 \times 10^{27}$ kg, giving $\Mjup / \Msun \approx 9.5 \times 10^{-4}$.
 - Total mass of all eight planets: $\approx 446 \, \Mearth \approx 2.7 \times 10^{27}$ kg, giving $M_\mathrm{planets}/\Msun \approx 1.3 \times 10^{-3}$.
 
-The Sun contains **99.87%** of the solar system's total mass. Jupiter alone accounts for 71% of the planetary mass. This extreme concentration of mass in the central star is a fundamental property of planetary systems, and one that planet formation theory must explain ({ref}`lecture02`).
+The Sun contains **99.87%** of the solar system's total mass. Jupiter alone accounts for 71% of the planetary mass ({numref}`fig:ss-mass-budget`). This extreme concentration of mass in the central star is a fundamental property of planetary systems, and one that planet formation theory must explain ({ref}`lecture02`).
 ```
 
 ```{figure} figures/ss_mass_budget.avif
@@ -332,7 +343,7 @@ Mass budget of the solar system. *Left:* the Sun contains 99.87% of the total ma
 
 Understanding a single planet in isolation is difficult: we cannot perform controlled experiments on entire worlds. **Comparative planetology** addresses this by treating the planets as a natural set of experiments: similar objects subjected to different conditions.
 
-Consider the terrestrial planets. Venus, Earth, and Mars have broadly similar compositions and formed in the same protoplanetary disk, yet their surfaces and atmospheres are radically different:
+Consider the terrestrial planets ({numref}`fig:terrestrial-planets`). Venus, Earth, and Mars have broadly similar compositions and formed in the same protoplanetary disk, yet their surfaces and atmospheres are radically different:
 
 ```{figure} figures/terrestrial_planets.avif
 :name: fig:terrestrial-planets
@@ -350,6 +361,8 @@ The four terrestrial planets at approximate relative scale. From left to right: 
 | Magnetic field | None | Strong dipole | Remnant crustal |
 | Tectonics | Episodic resurfacing | Plate tectonics | Stagnant lid |
 
+The atmospheric divergence is striking: {numref}`fig:vem-atmospheres` shows that the three planets span four orders of magnitude in surface pressure and several hundred kelvin in surface temperature.
+
 ```{figure} figures/venus_earth_mars_atmospheres.avif
 :name: fig:vem-atmospheres
 :width: 700px
@@ -358,7 +371,7 @@ The four terrestrial planets at approximate relative scale. From left to right: 
 Surface temperature (red bars, left axis) and surface pressure (blue bars, right axis, log scale) for Venus, Earth, and Mars, with the dominant atmospheric species labelled below. Despite similar bulk compositions and shared formation environment, the three terrestrial planets span a factor of $\sim 10^4$ in surface pressure and $\sim 500$ K in surface temperature. Data from {cite:p}`NASAFactSheet`. Generated by `scripts/figures/L01_introduction/fig_vem_atmospheres.py`.
 ```
 
-By comparing these three cases, we can isolate which differences arise from distance to the Sun, planetary mass, internal activity, or historical contingency. The same logic applies to moons: comparing Io, Europa, Ganymede, and Callisto, all orbiting Jupiter but differing in composition and tidal heating, reveals how a single variable can drive vastly different geological outcomes.
+By comparing these three cases, we can isolate which differences arise from distance to the Sun, planetary mass, internal activity, or historical contingency. The same logic applies to moons: comparing Io, Europa, Ganymede, and Callisto ({numref}`fig:galilean-moons`), all orbiting Jupiter but differing in composition and tidal heating, reveals how a single variable can drive vastly different geological outcomes.
 
 ```{figure} figures/galilean_moons.avif
 :name: fig:galilean-moons
@@ -422,6 +435,8 @@ The table below lists landmark missions that have shaped our understanding of th
 | JWST | NASA/ESA/CSA | 2021– | Exoplanets | Atmospheric characterisation of exoplanets |
 | Europa Clipper | NASA | 2024– | Europa | Investigating habitability of Europa's ocean |
 
+Two iconic mission products illustrate the breadth of these efforts: the Cassini orbiter's backlit view of Saturn ({numref}`fig:cassini-saturn`) revealing the ring system from inside Saturn's shadow, and the first colour view from Perseverance on Mars ({numref}`fig:perseverance-mars`) showing the rocky plain in Jezero crater where samples for eventual return are being cached.
+
 ```{figure} figures/cassini_saturn.avif
 :name: fig:cassini-saturn
 :width: 600px
@@ -442,7 +457,7 @@ Several missions are planned for the coming decade, including ESA's JUICE (Jupit
 
 ## Recent advances
 
-Planetary science is advancing rapidly, driven by new space missions and observatories. The **James Webb Space Telescope** (JWST), launched in 2021, has begun characterising the atmospheres of rocky exoplanets for the first time, including thermal emission measurements of planets in the TRAPPIST-1 system {cite:p}`Greene2023` (see also {ref}`lecture13`). These observations are providing the first direct constraints on whether Earth-sized planets around other stars retain atmospheres.
+Planetary science is advancing rapidly, driven by new space missions and observatories. The **James Webb Space Telescope** (JWST), launched in 2021, has begun characterising the atmospheres of rocky exoplanets for the first time, including thermal emission measurements of planets in the TRAPPIST-1 system ({numref}`fig:trappist1-system`) {cite:p}`Greene2023` (see also {ref}`lecture13`). These observations are providing the first direct constraints on whether Earth-sized planets around other stars retain atmospheres; the first such measurement, the dayside thermal emission of TRAPPIST-1 b, is shown in {numref}`fig:trappist1b-jwst`.
 
 ```{figure} figures/trappist1_system.avif
 :name: fig:trappist1-system
