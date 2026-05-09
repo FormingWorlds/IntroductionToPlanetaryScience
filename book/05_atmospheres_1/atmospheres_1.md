@@ -665,7 +665,7 @@ A central reason M-dwarf planets are so vulnerable to escape is that late-type s
 :width: 500px
 :align: center
 
-Evolutionary tracks for stellar X-ray luminosity for slow, medium, and fast rotators (red/green/blue lines) at four stellar masses: 1.0, 0.75, 0.5, and 0.25 $M_\odot$ (top to bottom). Shaded bands give one standard deviation around the mean track. Lower-mass stars remain in the saturated regime $L_X / L_\mathrm{bol} \sim 10^{-3}$ for far longer than Sun-like stars: $\sim 100$ Myr for $1.0\,M_\odot$, $\gtrsim 1$ Gyr for $0.25\,M_\odot$. Close-in rocky planets around late-M stars (e.g. the TRAPPIST-1 system) therefore experience prolonged high-XUV irradiation that drives sustained atmospheric escape. Reproduced from {cite:p}`Johnstone2021`, Fig. 11.
+Evolutionary tracks for stellar X-ray luminosity for slow, medium, and fast rotators (three coloured lines per panel) at four stellar masses: 1.0, 0.75, 0.5, and 0.25 $M_\odot$ (top to bottom). Shaded bands give one standard deviation around the mean track. Lower-mass stars remain in the saturated regime $L_X / L_\mathrm{bol} \sim 10^{-3}$ for far longer than Sun-like stars: $\sim 100$ Myr for $1.0\,M_\odot$, $\gtrsim 1$ Gyr for $0.25\,M_\odot$. Close-in rocky planets around late-M stars (e.g. the TRAPPIST-1 system) therefore experience prolonged high-XUV irradiation that drives sustained atmospheric escape. Reproduced from {cite:p}`Johnstone2021`, Fig. 11.
 ```
 
 ```{figure} figures/trappist1b_jwst_greene2023.avif
