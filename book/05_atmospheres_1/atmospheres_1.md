@@ -254,7 +254,7 @@ The vertical structure varies dramatically across the solar system {cite:p}`Catl
 - **Venus:** A massive troposphere extends to $\sim$65 km. Above the cloud deck ($\sim$48–70 km), temperature decreases slowly. There is no Earth-like stratospheric temperature inversion because Venus lacks an ozone layer.
 - **Mars:** A thin troposphere ($\sim$40 km) directly overlain by a thermosphere. Mars also lacks a significant ozone layer and stratospheric inversion.
 - **Jupiter:** The troposphere extends deep into the planet (hundreds of kilometres). The stratosphere is heated by $\mathrm{CH_4}$ and hydrocarbon haze absorption. There is no solid surface; pressure increases continuously with depth.
-- **Titan:** A thick troposphere ($\sim$40 km), a stratosphere heated by organic haze absorption (up to $\sim$300 km), and an extended thermosphere reaching $\sim$1500 km, remarkably high for such a small body, reflecting Titan's weak gravity and large scale height. The Huygens-derived T(z) profile is shown in {numref}`fig:titan-tz-hasi`; the canonical Venus T(z) used for comparison is shown in {numref}`fig:venus-tz-vira`.
+- **Titan:** A thick troposphere ($\sim$40 km), a stratosphere heated by organic haze absorption (up to $\sim$300 km), and an extended thermosphere reaching $\sim$1400 km, remarkably high for such a small body, reflecting Titan's weak gravity and large scale height. The Huygens-derived T(z) profile is shown in {numref}`fig:titan-tz-hasi`; the canonical Venus T(z) used for comparison is shown in {numref}`fig:venus-tz-vira`.
 
 ```{figure} figures/titan_haze_pia06160.avif
 :name: fig:titan-haze
@@ -397,12 +397,12 @@ The table below compares the effective temperature with the measured surface tem
 |------|:----------:|:--------:|:-----------------------:|:---------------------------:|:---------------:|
 | Venus | 0.77 | 0.72 | 227 | 735 | +508 |
 | Earth | 0.30 | 1.00 | 255 | 288 | +33 |
-| Mars | 0.25 | 1.52 | 210 | 210 | ~0 |
+| Mars | 0.25 | 1.52 | 210 | 215 | +5 |
 | Jupiter | 0.34 | 5.20 | 110 | 165* | +55 |
 
 \*Jupiter's "surface temperature" refers to the 1-bar level.
 
-The discrepancy $\Delta T = T_{\mathrm{surface}} - T_{\mathrm{eff}}$ reveals the strength of the **greenhouse effect**. Venus has a staggering 508 K greenhouse warming, by far the largest in the solar system. Earth's 33 K greenhouse warming, though modest by comparison, is sufficient to keep the oceans liquid. Mars has essentially no greenhouse warming because its atmosphere is too thin (surface pressure only 6 mbar). Jupiter's excess temperature is partly due to internal heat left over from formation ({ref}`lecture03`), not solely the greenhouse effect.
+The discrepancy $\Delta T = T_{\mathrm{surface}} - T_{\mathrm{eff}}$ reveals the strength of the **greenhouse effect**. Venus has a staggering 508 K greenhouse warming, by far the largest in the solar system. Earth's 33 K greenhouse warming, though modest by comparison, is sufficient to keep the oceans liquid. Mars has only a small greenhouse warming ($\sim 5$ K) because its CO$_2$ atmosphere is very thin (surface pressure only 6 mbar) and lacks the water-vapour amplifier that boosts the warming on Earth and Venus. Jupiter's excess temperature is partly due to internal heat left over from formation ({ref}`lecture03`), not solely the greenhouse effect.
 
 ### The greenhouse mechanism
 
@@ -522,7 +522,7 @@ The following table illustrates $\lambda_J$ for several atmospheric species on E
 
 | Species | $m$ (u) | $\lambda_J$ (Earth) | $\lambda_J$ (Mars) |
 |---------|:-------:|:--------------------:|:-------------------:|
-| H | 1 | 7.0 | 5.4 |
+| H | 1 | 7.0 | 5.3 |
 | $\mathrm{H_2}$ | 2 | 14 | 11 |
 | He | 4 | 28 | 22 |
 | $\mathrm{N_2}$ | 28 | 200 | 150 |
@@ -541,7 +541,7 @@ Hydrodynamic escape is most important during a planet's first few hundred millio
 :width: 750px
 :align: center
 
-Population synthesis of close-in exoplanets that have undergone EUV-driven hydrodynamic atmospheric escape. *Left*: planet radius vs orbital separation after 10 Gyr of evolution, for cores with masses 6.5–15 $\Mearth$ (different colours indicate different core masses; the published axis label reads "Seperation" [sic] in the original figure). The "evaporation desert" at small separations and large radii is empty because all H/He envelopes have been stripped, and the "evaporation valley" appears as a thin gap near $1.5\!-\!2\,\Rearth$. *Right*: planet radius vs incident bolometric flux ($F_\oplus$, in units of Earth's), colour-coded by retained atmospheric mass fraction (% H/He). Greyscale shading shows the predicted population density. Figure from {cite:t}`Owen2019`.
+Population synthesis of close-in exoplanets that have undergone EUV-driven hydrodynamic atmospheric escape. *Left*: planet radius vs orbital separation after 10 Gyr of evolution, for cores with masses 6.5–15 $\Mearth$ (different colours indicate different core masses; the published axis label reads "Seperation" [sic] in the original figure). The "evaporation desert" at small separations and large radii is empty because all H/He envelopes have been stripped, and the "evaporation valley" appears as a thin gap near $1.5\!-\!2\,\Rearth$. *Right*: planet radius vs incident bolometric flux ($F_\oplus$, in units of Earth's), colour-coded by retained atmospheric mass fraction (% H/He). Greyscale shading shows the predicted population density. Reproduced from {cite:t}`Owen2019`, Fig. 3 (left panel originally from {cite:t}`OwenWu2013`; right panel from Lopez & Fortney 2013).
 ```
 
 The observational counterpart was established by {cite:t}`Fulton2017`, who measured the planet radius distribution for short-period exoplanets in the California-Kepler Survey (CKS) and found a clear bimodality ({numref}`fig:fulton-radius-valley`):
