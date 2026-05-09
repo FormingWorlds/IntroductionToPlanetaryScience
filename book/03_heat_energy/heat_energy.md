@@ -382,7 +382,7 @@ Most other rocky bodies in the solar system (including Venus, Mars, Mercury, and
 :width: 700px
 :align: center
 
-Modern taxonomy of tectonic modes for terrestrial planets, beyond the simple mobile-vs-stagnant binary. Active-lid behaviour subdivides into Earth-like plate tectonics, ridge-only configurations, and distributed deformation; sluggish-lid regimes feature sub-lithospheric convection-driven tectonics; episodic regimes can be either global (transient resurfacing) or local; stagnant-lid regimes are split into cold variants (thermal stress) and hot variants (heat-pipe + vertical cycling, plumes + lower-crust recycling). Reproduced from {cite:t}`Lenardic2018` Fig. 2.
+Modern taxonomy of tectonic modes for terrestrial planets, beyond the simple mobile-vs-stagnant binary. Active-lid behaviour can present as plate tectonics, ridge-only, or distributed deformation; sub-lithospheric convection-driven tectonics can drive regional or global mobility; episodic (transient) modes can be global or local (non-recyclable "continental" regions); stagnant-lid modes are split into cold (thermal-stress) and hot (heat pipes + vertical cycling; plumes + lower-crust recycling) variants. Reproduced from {cite:p}`Lenardic2018`, Fig. 2.
 ```
 
 Why Earth has plate tectonics while other rocky planets do not is one of the major unsolved problems in geophysics. Factors likely include:
