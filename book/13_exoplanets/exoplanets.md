@@ -50,7 +50,7 @@ Ground-based radial velocity surveys at Lick, Keck, La Silla, and elsewhere expa
 The first transit detection of an already-known radial velocity planet, HD 209458 b in 1999, was a watershed: combining transit depth and radial velocity gave the first **bulk density** of an extrasolar world, confirming that hot Jupiters were indeed gas-dominated and not exotic high-density objects {cite:p}`Charbonneau2000,Henry2000` ({numref}`fig:hd209458b`).
 The space-based transit era opened with the French-led **CoRoT** mission in 2006 and exploded with NASA's **Kepler** mission in 2009, which monitored about 150,000 stars continuously for four years {cite:p}`Borucki2010`.
 The K2 extension (2014--2018), TESS (2018--present), CHEOPS (2019--present), and JWST (2022--present) followed.
-By 2026 the **NASA Exoplanet Archive** records more than 6000 confirmed exoplanets in roughly 4000 planetary systems {cite:p}`NASAExoArchive2025`.
+By 2026 the **NASA Exoplanet Archive** records more than 6000 confirmed exoplanets in more than 4500 planetary systems {cite:p}`NASAExoArchive2025`.
 Exoplanetary science went from zero confirmed cases to a statistically meaningful population in barely three decades, and the rate of discovery is still accelerating.
 
 ### Radial velocity method
@@ -294,7 +294,7 @@ The current sensitivity of direct imaging is dominated by the planet's brightnes
 Young giant planets, $\lesssim 100$ Myr old, are still radiating away the gravitational binding energy of their formation and are luminous in the infrared.
 Old planets, like Jupiter, have cooled and emit a thousand times less.
 The directly imaged planet population is therefore strongly biased toward young (10--500 Myr), massive ($> 1\,\Mjup$), wide-orbit ($> 10$ AU) giants around nearby stars.
-Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 60$ Myr (formal range $30$--$160$ Myr) {cite:p}`Marois2008` ({numref}`fig:hr8799`), **$\beta$ Pictoris b/c** orbiting an A6V star embedded in the famous debris disk (system age $\sim 12$--$23$ Myr from successive Beta Pictoris Moving Group calibrations) {cite:p}`Lagrange2010` ({numref}`fig:betapic`), **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
+Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 60$ Myr (formal range $30$--$160$ Myr) {cite:p}`Marois2008` ({numref}`fig:hr8799`), **$\beta$ Pictoris b/c** orbiting an A6V star embedded in the famous debris disk (system age $\sim 12$--$23$ Myr from successive Beta Pictoris Moving Group calibrations; planet b reported by {cite:t}`Lagrange2010` and planet c later identified by {cite:t}`Nowak2020`) ({numref}`fig:betapic`), **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
 
 ```{figure} figures/betapic_imaging.avif
 :align: center
@@ -634,7 +634,7 @@ Radial-velocity-selected samples, which include many wider, longer-period multi-
 There are also dramatic exceptions among Kepler systems themselves, including misaligned multi-planet systems and systems with a giant planet plus a tightly packed inner population.
 The peas-in-a-pod result is a statistical statement about typical compact systems, not a universal rule.
 
-A particularly extreme example of a compact system is the TRAPPIST-1 system already discussed above: seven Earth-sized planets in five adjacent mean-motion resonances, all interior to 0.06 AU {cite:p}`Gillon2017`.
+A particularly extreme example of a compact system is the TRAPPIST-1 system already discussed above: seven Earth-sized planets in six adjacent mean-motion resonances, all interior to 0.06 AU {cite:p}`Gillon2017`.
 The TRAPPIST-1 chain is the longest known resonant chain of any kind and is strong evidence for an early disk-migration phase that captured and locked the planets into resonance before the gas disk dispersed.
 Two other notable resonant or near-resonant compact systems are **Kepler-90**, with eight planets, and **TOI-178**, with six planets in an unbroken resonance chain.
 
@@ -1097,7 +1097,7 @@ The forward question for {ref}`Lecture 14 <lecture14>` is exactly this: how do w
 
 ## Summary
 
-- Exoplanet science went from zero confirmed detections in 1991 to more than 6000 confirmed planets in 2025, a complete observational revolution in three decades.
+- Exoplanet science went from the first confirmed detection in 1992 to more than 6000 confirmed planets by 2026, a complete observational revolution in three decades.
 - **Each detection method has a distinct bias**, and the observed planet population reflects the union of those biases as much as it reflects the underlying distribution. Radial velocity finds short-period giants around bright quiet stars; transits find short-period and large $R_p / R_\star$ systems; direct imaging finds wide-orbit young hot giants; astrometry will find Jupiter analogues; microlensing finds 1--10 AU planets at kpc distances.
 - The combined transit-plus-radial-velocity measurement breaks the $m \sin i$ degeneracy and gives bulk densities, the central observational quantity that turns exoplanet detections into physical objects with measurable composition.
 - **Kepler showed that planets are common.** Most main-sequence stars host at least one planet, and the small-planet population dominates by number. Hot Jupiters occur around only $\sim 1\%$ of Sun-like stars.
