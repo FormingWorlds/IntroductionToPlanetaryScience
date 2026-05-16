@@ -47,7 +47,7 @@ The first ground-based detection of a transiting exoplanet, **HD 209458 b**, obs
 
 After 1995 the field grew explosively.
 Ground-based radial velocity surveys at Lick, Keck, La Silla, and elsewhere expanded the catalogue from one object to a few hundred over the following decade.
-The first transit detection of an already-known radial velocity planet, HD 209458 b in 1999, was a watershed: combining transit depth and radial velocity gave the first **bulk density** of an extrasolar world, confirming that hot Jupiters were indeed gas-dominated and not exotic high-density objects {cite:p}`Charbonneau2000,Henry2000`.
+The first transit detection of an already-known radial velocity planet, HD 209458 b in 1999, was a watershed: combining transit depth and radial velocity gave the first **bulk density** of an extrasolar world, confirming that hot Jupiters were indeed gas-dominated and not exotic high-density objects {cite:p}`Charbonneau2000,Henry2000` ({numref}`fig:hd209458b`).
 The space-based transit era opened with the French-led **CoRoT** mission in 2006 and exploded with NASA's **Kepler** mission in 2009, which monitored about 150,000 stars continuously for four years {cite:p}`Borucki2010`.
 The K2 extension (2014--2018), TESS (2018--present), CHEOPS (2019--present), and JWST (2022--present) followed.
 By 2026 the **NASA Exoplanet Archive** records more than 6000 confirmed exoplanets in roughly 4000 planetary systems {cite:p}`NASAExoArchive2025`.
@@ -142,7 +142,7 @@ The transit geometry imposes a strong selection effect.
 A randomly oriented orbit transits only if the orbital plane is within an angle $\Theta \approx R_\star / a$ of our line of sight.
 For an Earth-Sun analogue this is $\sim 0.005$, so only one in 200 randomly oriented orbits of a Sun-like star produces a visible Earth transit.
 For a hot Jupiter at 0.05 AU the geometric probability rises to $\sim 0.1$, ten per cent.
-This very strong bias against long-period and against small-stellar-radius systems is why the transit catalogue is dominated by short-period hot Jupiters and by M-dwarf planets, not because those are intrinsically the most common configuration.
+This very strong bias against long-period and against small-stellar-radius systems is why the transit catalogue is dominated by short-period hot Jupiters and by M-dwarf planets, not because those are intrinsically the most common configuration. Modern transit photometry has pushed precision to the parts-per-million level: {numref}`fig:wasp39_jwst` shows the JWST/NIRSpec G395H broadband and spectroscopic light curves of the hot Saturn WASP-39 b as a representative example.
 
 ```{figure} figures/jwst_transit_lightcurve.avif
 :align: center
@@ -251,7 +251,7 @@ A density of about $5.5$ g/cm$^3$ matches an Earth-like silicate-iron rocky comp
 A density of about $1.3$ g/cm$^3$ matches Jupiter and is consistent with a hydrogen-helium envelope around a small dense core.
 A density of $0.5$ g/cm$^3$, lower than water, indicates an inflated or low-mass H/He envelope.
 A density between rocky and gas, near $2$--$4$ g/cm$^3$, is typical of "sub-Neptunes" and indicates a substantial water-ice or H/He volatile component on top of a rocky core.
-Without the joint transit-plus-RV measurement, we cannot tell any of these apart.
+Without the joint transit-plus-RV measurement, we cannot tell any of these apart ({numref}`fig:ck17massradius` collects the empirical mass-radius relation across the four major compositional regimes).
 
 ```{figure} figures/chenkipping_mass_radius.avif
 :align: center
@@ -294,7 +294,7 @@ The current sensitivity of direct imaging is dominated by the planet's brightnes
 Young giant planets, $\lesssim 100$ Myr old, are still radiating away the gravitational binding energy of their formation and are luminous in the infrared.
 Old planets, like Jupiter, have cooled and emit a thousand times less.
 The directly imaged planet population is therefore strongly biased toward young (10--500 Myr), massive ($> 1\,\Mjup$), wide-orbit ($> 10$ AU) giants around nearby stars.
-Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 60$ Myr (formal range $30$--$160$ Myr) {cite:p}`Marois2008`, **$\beta$ Pictoris b/c** orbiting an A6V star embedded in the famous debris disk (system age $\sim 12$–$23$ Myr from successive Beta Pictoris Moving Group calibrations) {cite:p}`Lagrange2010`, **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
+Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 60$ Myr (formal range $30$--$160$ Myr) {cite:p}`Marois2008` ({numref}`fig:hr8799`), **$\beta$ Pictoris b/c** orbiting an A6V star embedded in the famous debris disk (system age $\sim 12$–$23$ Myr from successive Beta Pictoris Moving Group calibrations) {cite:p}`Lagrange2010` ({numref}`fig:betapic`), **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
 
 ```{figure} figures/betapic_imaging.avif
 :align: center
@@ -309,7 +309,7 @@ The host is a 5 Myr K7 star surrounded by an obvious cleared central cavity, exa
 SPHERE at near-infrared wavelengths and MUSE at H$\alpha$ emission both detected a point source inside the gap; this is PDS 70 b.
 A second protoplanet, PDS 70 c, was identified in a similar position later.
 Both objects are still actively accreting from the surrounding disk gas, as evidenced by the H$\alpha$ emission line that traces accretion shocks.
-This is the first case in which a forming planet, its host disk, and the gap it has carved are all visible simultaneously, providing a direct test of the planet-disk-interaction models discussed in {ref}`lecture02`.
+This is the first case in which a forming planet, its host disk, and the gap it has carved are all visible simultaneously, providing a direct test of the planet-disk-interaction models discussed in {ref}`lecture02` ({numref}`fig:pds70b`, {numref}`fig:pds70bc`, and {numref}`fig:pds70disk`).
 
 ```{figure} figures/pds70b_keppler.avif
 :align: center
@@ -429,7 +429,7 @@ About half of all Sun-like stars host at least one such small planet on an orbit
 The fraction of Sun-like stars hosting an Earth-size planet in the habitable zone, known as $\eta_\oplus$, is harder to pin down because Earth-sized planets at 1 AU produce only a few transits over the full Kepler mission and are right at the detection floor.
 Recent Kepler-DR25 estimates give central values $\eta_\oplus \sim 0.4$ for the conservative habitable zone (68% credible interval roughly $0.2$--$0.9$), depending on the precise definition of "habitable zone" and "Earth-size" {cite:p}`Bryson2021`.
 Whatever the precise number, $\eta_\oplus$ is clearly not small.
-Earth-class planets are an ordinary outcome of star formation, not a rare miracle.
+Earth-class planets are an ordinary outcome of star formation, not a rare miracle ({numref}`fig:petigura` and {numref}`fig:bryson`).
 
 ```{figure} figures/petigura_occurrence.avif
 :align: center
@@ -450,7 +450,7 @@ Marginalised differential occurrence rate of small planets from the Kepler analy
 A particularly important "laboratory" target system is **TRAPPIST-1**, an ultra-cool dwarf at 12 parsecs hosting **seven** transiting Earth-sized planets in a tightly packed inner system, all within 0.06 AU {cite:p}`Gillon2017`.
 The system was discovered with the ground-based TRAPPIST-South 60 cm telescope and its successor SPECULOOS, then characterised in detail with Spitzer transit photometry and TTV mass measurements.
 The seven planets form a chain of mean-motion resonances, evidence of an early disk-driven migration phase that captured them into orbital lock and stabilised them long enough to survive 4 Gyr of dynamical evolution.
-TRAPPIST-1 has become the central reference for several reasons: the planets are small (Earth-sized rather than mini-Neptune-sized), the host star is an M dwarf where atmospheric characterisation is geometrically favourable, several of the planets lie in or near the classical habitable zone, and the system is so geometrically well-aligned that all seven planets transit (a probability of less than $10^{-3}$ for random orientations, which suggests that compact M-dwarf systems are intrinsically very flat).
+TRAPPIST-1 has become the central reference for several reasons: the planets are small (Earth-sized rather than mini-Neptune-sized), the host star is an M dwarf where atmospheric characterisation is geometrically favourable, several of the planets lie in or near the classical habitable zone, and the system is so geometrically well-aligned that all seven planets transit (a probability of less than $10^{-3}$ for random orientations, which suggests that compact M-dwarf systems are intrinsically very flat) ({numref}`fig:trappist1transits`). The dynamical mass measurements come from transit timing variations rather than from radial velocities, since the host is too faint at optical wavelengths for precision RV work ({numref}`fig:trappist1ttvs`).
 
 ```{figure} figures/trappist1_transits.avif
 :align: center
@@ -476,7 +476,7 @@ The largest planets, with $R_p > 10\,\Rearth$, form an upper band of gas giants;
 The **warm and cold Jupiters** stretch toward longer periods.
 A second well-defined population at $R_p \approx 2$--$4\,\Rearth$ is the **sub-Neptune** or "mini-Neptune" group, which has no analogue in the solar system.
 A third population at $R_p \approx 1$--$1.8\,\Rearth$ is the **super-Earth** group: rocky planets larger than Earth but smaller than Neptune.
-The **terrestrial analogue** regime, $R_p \lesssim 1.5\,\Rearth$ at periods longer than $\sim 100$ days, is largely unexplored because of detection difficulty: this is exactly the regime PLATO is designed to populate.
+The **terrestrial analogue** regime, $R_p \lesssim 1.5\,\Rearth$ at periods longer than $\sim 100$ days, is largely unexplored because of detection difficulty: this is exactly the regime PLATO is designed to populate ({numref}`fig:fultonpr`).
 
 ```{figure} figures/fulton_period_radius.avif
 :align: center
@@ -492,7 +492,7 @@ In 2017, Benjamin Fulton and collaborators reanalysed the Kepler small-planet sa
 With smaller error bars on $R_p$, the period-radius diagram showed a clear, statistically significant **deficit** of planets at $R_p \approx 1.5$--$2\,\Rearth$.
 Below the gap is a population of super-Earths peaked at $\sim 1.3\,\Rearth$.
 Above the gap is the sub-Neptune population peaked at $\sim 2.4\,\Rearth$.
-This bimodality is now known as the **radius valley** or **Fulton gap**, and it has become the defining demographic feature of close-in planet populations.
+This bimodality is now known as the **radius valley** or **Fulton gap**, and it has become the defining demographic feature of close-in planet populations ({numref}`fig:fultongap`).
 
 ```{figure} figures/fulton_gap.avif
 :align: center
@@ -521,7 +521,7 @@ For a young $10\,\Mearth$ sub-Neptune with $R_p \approx 2.5\,\Rearth$ at $0.1$ A
 Integrated over the $\sim 100$ Myr that the host star spends in the saturated phase, the cumulative mass loss is $\sim 3 \times 10^{23}$ kg, of order a few per cent of an Earth mass and comparable to the typical primordial $\mathrm{H_2}$/He envelope mass on a $10\,\Mearth$ rocky core.
 This is the physical reason why the radius valley sits near $1.8\,\Rearth$: it is the dividing radius below which the early XUV history can plausibly remove the entire primordial envelope and leave a bare rocky core, while planets above the valley retain enough envelope mass to survive.
 For a close-in sub-Neptune, the integrated mass loss can therefore be enough to strip the envelope on a timescale of $\sim 100$ Myr.
-{cite:t}`OwenWu2013` showed numerically that a Kepler-like population of sub-Neptunes evolved through XUV-driven mass loss reproduces the observed bimodality in planet radius.
+{cite:t}`OwenWu2013` showed numerically that a Kepler-like population of sub-Neptunes evolved through XUV-driven mass loss reproduces the observed bimodality in planet radius ({numref}`fig:owenvalley` and {numref}`fig:owenmassloss`).
 
 ```{figure} figures/owen_evaporation_valley.avif
 :align: center
@@ -542,7 +542,7 @@ Photoevaporation-driven evolution of a young sub-Neptune in the {cite:t}`OwenWu2
 The second proposed mechanism is **core-powered mass loss** {cite:p}`Ginzburg2018,Gupta2019`.
 A young rocky core retains the energy of its formation as latent and gravitational heat for hundreds of Myr, and the basal heat flux into the bottom of the H/He envelope is enough to drive a slow hydrodynamic outflow even without a strong external XUV input.
 The rocky core's own thermal evolution sets the survival probability of any envelope on top of it.
-{cite:t}`Ginzburg2018` showed that this mechanism, like photoevaporation, naturally produces a bimodal radius distribution with a gap at $\sim 1.8\,\Rearth$.
+{cite:t}`Ginzburg2018` showed that this mechanism, like photoevaporation, naturally produces a bimodal radius distribution with a gap at $\sim 1.8\,\Rearth$ ({numref}`fig:ginzburg`).
 
 ```{figure} figures/ginzburg_corepowered.avif
 :align: center
@@ -555,7 +555,7 @@ Core-powered mass loss model from {cite:t}`Ginzburg2018`. The figure shows the p
 A key follow-up by Vincent Van Eylen and collaborators used asteroseismic stellar radii (which are more precise than spectroscopic radii) for a sample of transiting Kepler small planets to quantify the **slope** of the radius valley with orbital period {cite:p}`VanEylen2018`.
 They found that the valley shifts to smaller radius at longer orbital period, consistent with both photoevaporation and core-powered mass loss models.
 The two physical mechanisms predict somewhat different slopes and somewhat different dependences on stellar mass and metallicity; current data are not yet decisive enough to discriminate between them.
-The community consensus is that **both** mechanisms operate, that they predict broadly similar valleys, and that the valley itself is now the strongest individual constraint on the close-in evolution of small planets.
+The community consensus is that **both** mechanisms operate, that they predict broadly similar valleys, and that the valley itself is now the strongest individual constraint on the close-in evolution of small planets ({numref}`fig:vaneylen` and {numref}`fig:vaneylenmodels`).
 
 ```{figure} figures/vaneylen_radius_valley.avif
 :align: center
@@ -585,7 +585,7 @@ A second well-defined feature of the close-in planet population is the **hot Nep
 Hot Jupiters at the same periods are rare but not absent.
 Ultra-short-period rocky planets are also rare but not absent.
 But hot Neptunes, in the obvious sense of Neptune-sized planets at hot-Jupiter periods, are essentially missing.
-{cite:t}`Mazeh2016` quantified the boundaries of the desert in both the period-mass and period-radius planes and showed that the empirical edges follow well-defined power laws.
+{cite:t}`Mazeh2016` quantified the boundaries of the desert in both the period-mass and period-radius planes and showed that the empirical edges follow well-defined power laws ({numref}`fig:neptunedesert`).
 
 ```{figure} figures/mazeh_neptune_desert.avif
 :align: center
@@ -605,7 +605,7 @@ The hot Neptune desert is therefore a second, independent piece of evidence that
 So far we have discussed individual planets in isolation.
 A separate, equally important question is what happens within multi-planet systems.
 The Kepler sample contains hundreds of systems with two or more transiting planets, and these allow a statistical study of system architecture.
-{cite:t}`Weiss2018` analysed the California-Kepler Survey multi-planet sample and found two striking regularities, summarised by the slogan **"peas in a pod"**: planets within the same multi-planet system tend to have similar sizes (much more similar than two random planets drawn from the full Kepler sample), and they tend to be uniformly spaced in orbital period (in the sense that the period ratios of adjacent pairs in a system are clustered around a single value rather than being randomly distributed).
+{cite:t}`Weiss2018` analysed the California-Kepler Survey multi-planet sample and found two striking regularities, summarised by the slogan **"peas in a pod"**: planets within the same multi-planet system tend to have similar sizes (much more similar than two random planets drawn from the full Kepler sample, {numref}`fig:weisspeas`), and they tend to be uniformly spaced in orbital period (in the sense that the period ratios of adjacent pairs in a system are clustered around a single value rather than being randomly distributed, {numref}`fig:weiss_spacing`).
 
 ```{figure} figures/weiss_peas_in_pod.avif
 :align: center
@@ -666,7 +666,7 @@ This pathway naturally produces orbits that are misaligned with the stellar spin
 
 **Planet-planet scattering** is the third mechanism.
 A multi-giant system that is dynamically unstable can eject one or more giants entirely while leaving survivors on highly eccentric orbits; tidal dissipation again circularises the most extreme of those at short period.
-Planet-planet scattering, like high-eccentricity migration, can produce significant misalignments.
+Planet-planet scattering, like high-eccentricity migration, can produce significant misalignments. {numref}`fig:obliquitypathways` sketches the three pathways and the obliquity distributions they leave behind.
 
 ```{figure} figures/obliquity_pathways.avif
 :align: center
@@ -677,10 +677,10 @@ Schematic of the three migration pathways for hot Jupiters and the **stellar obl
 ```
 
 The observational discriminant is the **stellar obliquity**, the angle between the stellar rotation axis and the orbit normal of the planet.
-Obliquities are measured via the **Rossiter-McLaughlin effect**: as a transiting planet moves across the rotating stellar disk, it occults first the blueshifted (approaching) hemisphere and then the redshifted (receding) hemisphere, producing a small wavelength-dependent distortion in the time-resolved stellar absorption lines that effectively traces out the angle between the orbital and rotational axes projected on the sky.
+Obliquities are measured via the **Rossiter-McLaughlin effect** ({numref}`fig:rmgeom`): as a transiting planet moves across the rotating stellar disk, it occults first the blueshifted (approaching) hemisphere and then the redshifted (receding) hemisphere, producing a small wavelength-dependent distortion in the time-resolved stellar absorption lines that effectively traces out the angle between the orbital and rotational axes projected on the sky.
 Two decades of Rossiter-McLaughlin measurements show a mixed picture.
 Many hot Jupiters around cool ($T_\mathrm{eff} < 6250$ K) host stars are well aligned, consistent with disk migration.
-Many hot Jupiters around hot ($T_\mathrm{eff} > 6250$ K) host stars, by contrast, are heavily misaligned, with sky-projected obliquities spanning the full range from prograde to polar to retrograde {cite:p}`Albrecht2022`.
+Many hot Jupiters around hot ($T_\mathrm{eff} > 6250$ K) host stars, by contrast, are heavily misaligned, with sky-projected obliquities spanning the full range from prograde to polar to retrograde {cite:p}`Albrecht2022` ({numref}`fig:obliquitydist`).
 
 ```{figure} figures/rossiter_mclaughlin.avif
 :align: center
@@ -739,7 +739,7 @@ Cumulative occurrence rate of small planets around M dwarfs as a function of orb
 ```
 
 {cite:t}`Dressing2015` used the full Kepler M dwarf sample to estimate that the occurrence rate of small ($R_p < 4\,\Rearth$) planets per M dwarf inside 200 days is roughly $2.5$, compared to $\sim 0.7$ for Sun-like stars.
-Roughly $0.16^{+0.17}_{-0.07}$ Earth-size planets lie in the conservative habitable zone of each M dwarf.
+Roughly $0.16^{+0.17}_{-0.07}$ Earth-size planets lie in the conservative habitable zone of each M dwarf ({numref}`fig:dressing`).
 The exoplanet community has therefore made M dwarf habitable-zone Earth analogues a central observational target, despite the substantial concerns discussed below.
 
 The biggest concern for M dwarf habitability is **stellar activity**.
@@ -789,7 +789,7 @@ For a rocky terrestrial planet around an M dwarf the signal is below 10 ppm, dem
 
 The detectable atmospheric species in the optical and near-infrared include sodium, potassium, water vapour, carbon monoxide, carbon dioxide, methane, and a growing list of photochemical and disequilibrium species including $\mathrm{SO_2}$, $\mathrm{H_2S}$, OCS, and HCN.
 A complication is **clouds and hazes**: high-altitude condensate or photochemical haze layers can mute or completely flatten transmission spectra by acting as a continuum opacity at all wavelengths.
-The strongest evidence that clouds are pervasive in close-in giant atmospheres is the {cite:t}`Sing2016` HST and Spitzer transmission spectral survey of ten hot Jupiters, which arranged the spectra in a continuum from clear (full Na, K, and $\mathrm{H_2O}$ features) to fully cloudy (featureless), with all intermediate states represented.
+The strongest evidence that clouds are pervasive in close-in giant atmospheres is the {cite:t}`Sing2016` HST and Spitzer transmission spectral survey of ten hot Jupiters, which arranged the spectra in a continuum from clear (full Na, K, and $\mathrm{H_2O}$ features) to fully cloudy (featureless), with all intermediate states represented ({numref}`fig:sing`; the warm sub-Neptune GJ 1214 b in {numref}`fig:gj1214` is the extreme cloudy case).
 
 ```{figure} figures/sing_hotjup_spectra.avif
 :align: center
@@ -813,7 +813,7 @@ Transmission spectroscopy probes the day-night terminator at low pressure.
 A complementary technique is **emission spectroscopy**, which observes the planet's own thermal radiation directly when the planet passes **behind** the star (the **secondary eclipse**) and then reappears.
 The drop in flux during secondary eclipse measures the brightness temperature of the planet's dayside.
 Continuous monitoring of the planet across its full orbit produces a **phase curve**, which traces the apparent brightness as different parts of the planet rotate into view.
-A strong day-night contrast in the phase curve indicates inefficient heat redistribution and therefore a thin or absent atmosphere; a weak contrast indicates strong heat redistribution by an optically thick, dynamically active atmosphere.
+A strong day-night contrast in the phase curve indicates inefficient heat redistribution and therefore a thin or absent atmosphere; a weak contrast indicates strong heat redistribution by an optically thick, dynamically active atmosphere ({numref}`fig:wasp43`).
 
 ```{figure} figures/wasp43b_phase_curve.avif
 :align: center
@@ -832,7 +832,7 @@ The James Webb Space Telescope began science operations in mid-2022 and has fund
 Below we walk through the most important early results and the active controversies they have generated.
 
 **WASP-39 b** (a $0.28\,\Mjup$ hot Saturn) was the target of the JWST Transiting Exoplanet Early Release Science (ERS) programme.
-NIRSpec PRISM and G395H, NIRCam, and NIRISS observations together produced a transmission spectrum spanning $0.5$--$5.5$ $\mu$m with parts-per-million precision, showing **clean and unambiguous detections** of $\mathrm{H_2O}$, CO, $\mathrm{CO_2}$, Na, K, and $\mathrm{SO_2}$, alongside a clear non-detection of $\mathrm{CH_4}$ (3$\sigma$ upper limit $\sim 5$ ppm) that is itself diagnostic of the super-solar metallicity inferred for this atmosphere {cite:p}`Rustamkulov2023,Alderson2023`.
+NIRSpec PRISM and G395H, NIRCam, and NIRISS observations together produced a transmission spectrum spanning $0.5$--$5.5$ $\mu$m with parts-per-million precision, showing **clean and unambiguous detections** of $\mathrm{H_2O}$, CO, $\mathrm{CO_2}$, Na, K, and $\mathrm{SO_2}$, alongside a clear non-detection of $\mathrm{CH_4}$ (3$\sigma$ upper limit $\sim 5$ ppm) that is itself diagnostic of the super-solar metallicity inferred for this atmosphere {cite:p}`Rustamkulov2023,Alderson2023` ({numref}`fig:wasp39prism` and {numref}`fig:wasp39species`).
 
 ```{figure} figures/wasp39b_prism_spectrum.avif
 :align: center
@@ -844,7 +844,7 @@ The JWST/NIRSpec PRISM transmission spectrum of **WASP-39 b** from {cite:t}`Rust
 
 The most striking discovery in the WASP-39 b ERS data was the unambiguous detection of **photochemically produced $\mathrm{SO_2}$** {cite:p}`Tsai2023`.
 $\mathrm{SO_2}$ is not predicted by any equilibrium chemistry model for a hot Jupiter atmosphere; its abundance in the observed range of $\sim 1$--$10$ ppm requires a non-equilibrium production pathway driven by stellar UV photolysis of $\mathrm{H_2S}$, followed by oxidation of the resulting elemental sulphur to SO and then $\mathrm{SO_2}$.
-This is the first **unambiguous detection of disequilibrium photochemistry** in any exoplanet atmosphere, and establishes that photochemical models, calibrated against $\mathrm{SO_2}$ as a tracer, can be used to extract metallicity and C/O ratios from a wider planet sample.
+This is the first **unambiguous detection of disequilibrium photochemistry** in any exoplanet atmosphere, and establishes that photochemical models, calibrated against $\mathrm{SO_2}$ as a tracer, can be used to extract metallicity and C/O ratios from a wider planet sample ({numref}`fig:wasp39so2`).
 
 ```{figure} figures/wasp39b_so2_spectrum.avif
 :align: center
@@ -864,7 +864,7 @@ Decomposition of the JWST/NIRSpec G395H transmission spectrum of WASP-39 b into 
 
 **TRAPPIST-1 b**, the innermost rocky planet of the TRAPPIST-1 system, was the first habitable-zone-adjacent rocky planet observed by JWST in MIRI thermal emission.
 {cite:t}`GreeneTrappist2023` measured the dayside flux at 15 $\mu$m and found it to be consistent with a **bare rock dayside** at the equilibrium temperature, with no evidence for any atmospheric heat redistribution.
-The implication is that TRAPPIST-1 b has either no substantial atmosphere or only a very thin one, ruling out thick $\mathrm{CO_2}$ Venus-analogue atmospheres at high statistical significance.
+The implication is that TRAPPIST-1 b has either no substantial atmosphere or only a very thin one, ruling out thick $\mathrm{CO_2}$ Venus-analogue atmospheres at high statistical significance ({numref}`fig:trappist1beclipse` and {numref}`fig:trappist1bemiss`).
 
 ```{figure} figures/trappist1b_eclipse.avif
 :align: center
@@ -885,7 +885,7 @@ The TRAPPIST-1 b dayside emission compared with model atmospheres of different c
 **TRAPPIST-1 c**, the second-innermost planet, was observed similarly by {cite:t}`Zieba2023` and shows the same behaviour.
 A thick Venus-like $\mathrm{CO_2}$ atmosphere is ruled out for TRAPPIST-1 c as well.
 The current consensus from these two non-detections is that the inner TRAPPIST-1 planets have either negligible atmospheres or atmospheres so thin that they cannot redistribute heat from the dayside to the nightside.
-A thin atmosphere consistent with the data is not yet ruled out, but a thick atmosphere is.
+A thin atmosphere consistent with the data is not yet ruled out, but a thick atmosphere is ({numref}`fig:trappist1c`).
 
 ```{figure} figures/trappist1c_grid.avif
 :align: center
@@ -897,7 +897,7 @@ Grid of model atmospheric compositions for **TRAPPIST-1 c** compared with the me
 
 A series of additional rocky-planet atmosphere non-detections has accumulated.
 **LHS 475 b** {cite:p}`LustigYaeger2023`, **GJ 486 b**, and **GJ 1132 b** all have flat featureless JWST transmission spectra inconsistent with thick low-mean-molecular-weight atmospheres.
-The accumulating pattern across small rocky M dwarf planets is therefore that **most do not retain substantial atmospheres**, consistent with the {cite:t}`LugerBarnes2015` prediction that M dwarf XUV history strips early atmospheres efficiently.
+The accumulating pattern across small rocky M dwarf planets is therefore that **most do not retain substantial atmospheres**, consistent with the {cite:t}`LugerBarnes2015` prediction that M dwarf XUV history strips early atmospheres efficiently ({numref}`fig:lhs475`).
 
 ```{figure} figures/lhs475b_spectrum.avif
 :align: center
@@ -911,7 +911,7 @@ JWST/NIRSpec G395H transmission spectrum of the rocky exoplanet **LHS 475 b**, a
 The dayside is so hot ($\sim 2000$ K) that the surface is plausibly molten.
 {cite:t}`Hu2024` reported a JWST MIRI thermal emission and phase curve measurement showing a much lower dayside brightness temperature than would be expected from a bare rock surface in equilibrium and a phase curve modulation consistent with the presence of a **secondary CO/$\mathrm{CO_2}$-rich atmosphere** outgassed from the molten surface.
 This is the **first tentative atmospheric detection on a rocky world around a Sun-like star** and is currently being scrutinised by the wider community.
-The interpretation depends on the precise treatment of the data systematics and on whether the atmosphere is genuinely a stable secondary atmosphere or is an episodically replenished one tied to surface volcanism.
+The interpretation depends on the precise treatment of the data systematics and on whether the atmosphere is genuinely a stable secondary atmosphere or is an episodically replenished one tied to surface volcanism ({numref}`fig:55cnce`).
 
 ```{figure} figures/55cnce_hu_emission.avif
 :align: center
@@ -929,7 +929,7 @@ This is a useful case study in how challenging it is to claim atmospheric detect
 It is a sub-Neptune of $2.6\,\Rearth$ and $8.6\,\Mearth$ in the habitable zone of an M3 host star.
 {cite:t}`Madhusudhan2023` reported a JWST NIRISS plus NIRSpec transmission spectrum showing detections of $\mathrm{CH_4}$ and $\mathrm{CO_2}$, and a marginal detection of **dimethyl sulphide** ($\mathrm{(CH_3)_2 S}$, DMS) at the $\sim 2\sigma$ level (significance dropping further when retrieval-pipeline detector offsets are allowed to float).
 On Earth, DMS is produced almost exclusively by marine phytoplankton, with no significant abiotic sources known.
-The Madhusudhan et al.\ team interpreted the detection as a tentative biosignature consistent with the **hycean** scenario discussed earlier: a sub-Neptune with a deep $\mathrm{H_2}$ atmosphere overlying a planet-wide liquid-water ocean at the base.
+The Madhusudhan et al.\ team interpreted the detection as a tentative biosignature consistent with the **hycean** scenario discussed earlier: a sub-Neptune with a deep $\mathrm{H_2}$ atmosphere overlying a planet-wide liquid-water ocean at the base ({numref}`fig:k218b`).
 
 ```{figure} figures/k218b_spectrum.avif
 :align: center
@@ -972,7 +972,7 @@ The **classical habitable zone** as a function of stellar effective temperature 
 ```
 
 {cite:t}`Kopparapu2013` updated the classical Kasting calculation with modern radiative transfer and provided habitable-zone boundaries for stars with a wide range of effective temperatures, including M dwarfs.
-The Kopparapu boundaries are the standard input to most recent occurrence rate estimates of habitable-zone planets (the $\eta_\oplus$ discussion above).
+The Kopparapu boundaries are the standard input to most recent occurrence rate estimates of habitable-zone planets (the $\eta_\oplus$ discussion above) ({numref}`fig:kopparapu`).
 Two important caveats apply to the classical habitable zone.
 
 First, **history matters**, not just snapshot conditions.
@@ -1068,7 +1068,7 @@ HWO is the most ambitious exoplanet mission ever proposed and is the long-term s
 **LIFE** (Large Interferometer For Exoplanets) is a European mission concept led by Sascha Quanz and collaborators, currently in study phase {cite:p}`Quanz2022`.
 LIFE is a mid-infrared **nulling interferometer**: four free-flying spacecraft configured as an interferometer in the $4$--$18\,\mu$m range, with the central stellar light suppressed by destructive interference (nulling) so that the much fainter planetary thermal emission can be detected.
 The science goal is complementary to HWO: rather than detecting Earth analogues in reflected starlight, LIFE detects their thermal emission and characterises their atmospheres at the wavelengths where $\mathrm{CO_2}$, $\mathrm{O_3}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, and $\mathrm{N_2O}$ have their strongest absorption features.
-The mid-infrared regime is particularly well suited to biosignature gas detection because the temperature and absorption-feature contrasts are favourable.
+The mid-infrared regime is particularly well suited to biosignature gas detection because the temperature and absorption-feature contrasts are favourable ({numref}`fig:lifeyield` shows how the predicted habitable-zone yield depends on the choice of wavelength range).
 
 ```{figure} figures/life_yield.avif
 :align: center
