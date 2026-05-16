@@ -162,13 +162,13 @@ This is a key conceptual point we will come back to when comparing with Venus.
 ### Snowball Earth episodes
 
 Earth came perilously close to a different climate failure mode (ice rather than heat) during the Cryogenian period.
-At least two global glaciations are well documented, the **Sturtian** (lasting from roughly $717$ Ma to $660$ Ma) and the **Marinoan** (around $645$ Ma to $635$ Ma), and a third, the **Huronian** glaciation around $2.4$ Ga, may have been similarly extensive {cite:p}`Hoffman1998,Hoffman2017`.
+At least two global glaciations are well documented, the **Sturtian** (lasting from roughly $717$ Ma to $660$ Ma) and the **Marinoan** (around $645$ Ma to $635$ Ma) {cite:p}`Hoffman1998,Hoffman2017`; a much earlier candidate, the **Huronian** glaciation around $2.4$ Ga, may have been similarly extensive.
 The geological evidence is striking: glacial diamictites (poorly sorted glacial deposits) are found at palaeolatitudes within $10^\circ$ of the equator, banded iron formations re-appear in the rock record after a billion-year absence, and the glacial deposits are capped by thick "cap carbonates" that record an abrupt return to high-$\mathrm{CO_2}$, high-temperature greenhouse conditions immediately after deglaciation.
 
 The mechanism is straightforward in concept.
 Once the polar ice caps grow to roughly $30^\circ$ latitude, the ice-albedo feedback runs away: the increased reflectivity cools the climate, more ice forms, which cools the climate further, and so on, until ice covers most or all of the ocean and the surface temperature drops to $\sim$240 K.
 During the snowball state, silicate weathering essentially shuts down (because the surface is frozen), but volcanism continues to outgas $\mathrm{CO_2}$ at roughly its normal rate.
-Atmospheric $\mathrm{CO_2}$ accumulates over $\sim$10 Myr (Hoffman2017's preferred number from coupled hysteresis modelling), until the greenhouse forcing eventually overcomes the ice-albedo cooling, the ice melts catastrophically (over only $\sim$2 kyr once the tropical ocean reopens), and the planet swings into a hothouse state.
+Atmospheric $\mathrm{CO_2}$ accumulates over $\sim$10 Myr {cite:p}`Hoffman2017`, the timescale preferred by coupled hysteresis modelling, until the greenhouse forcing eventually overcomes the ice-albedo cooling, the ice melts catastrophically (over only $\sim$2 kyr once the tropical ocean reopens), and the planet swings into a hothouse state.
 The cap carbonates record the rapid drawdown of the post-snowball $\mathrm{CO_2}$ excess by extremely intense weathering of newly exposed silicate surfaces.
 
 The Snowball Earth episodes are pedagogically important for two reasons.
@@ -664,7 +664,7 @@ Their main result is summarised in a hysteresis diagram showing the conditions u
 :align: center
 
 Three-dimensional simulation of an early Venus near the runaway threshold from {cite:t}`Turbet2021`, showing vertically integrated water-cloud column density (top, panel b) and thermal emission to space (bottom, panel d) at a stellar flux $S = 340.5$ W/m$^2$, with subsolar longitudes near $0^\circ$.
-The night-side dominates the emission: the substellar dayside has thick water clouds that reflect sunlight back to space, while the cooler night-side radiates the thermal flux.
+The cool night-side hosts thick water clouds that trap outgoing thermal radiation as a greenhouse blanket, while the substellar dayside is largely cloud-free and absorbs nearly all the incoming sunlight, so the dayside dominates the emission to space.
 This day-night asymmetry is the mechanism by which the runaway state is preserved; on Earth, the corresponding panels of the same figure (not reproduced here) show a more zonally distributed cloud cover that allows the planet to sit on the condensed branch of the hysteresis curve.
 ```
 
