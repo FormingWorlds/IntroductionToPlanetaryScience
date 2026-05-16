@@ -103,7 +103,7 @@ The strongest yields of pure radial velocity surveys have therefore come around 
 
 If the orbital plane of an exoplanet system happens to lie close to our line of sight, the planet will periodically pass in front of the stellar disk and block a small fraction of its light.
 This is a **transit**.
-The geometry is sketched in Figure {numref}`fig:transitgeom`.
+The geometry is sketched in {numref}`fig:transitgeom`.
 The fraction of the stellar disk that is blocked when a planet of radius $R_p$ crosses a star of radius $R_\star$ is, to leading order, just the area ratio of the two disks:
 
 $$
@@ -125,7 +125,7 @@ For an Earth-radius planet around an M dwarf with $R_\star \approx 0.15\,\Rsun$,
 The strong inverse scaling with stellar size is one of the reasons that small planets around M dwarfs (particularly the TRAPPIST-1 system, see below) have dominated the early atmospheric-characterisation era.
 
 A transit is much more than just a depth.
-The full light curve, sketched in Figure {numref}`fig:transitlc`, contains four characteristic times: first contact when the planet first touches the stellar limb ($t_\mathrm{I}$), second contact when the planet is fully inside the disk ($t_\mathrm{II}$), third contact when the planet starts to leave the disk ($t_\mathrm{III}$), and fourth contact when it leaves entirely ($t_\mathrm{IV}$).
+The full light curve, sketched in {numref}`fig:transitlc`, contains four characteristic times: first contact when the planet first touches the stellar limb ($t_\mathrm{I}$), second contact when the planet is fully inside the disk ($t_\mathrm{II}$), third contact when the planet starts to leave the disk ($t_\mathrm{III}$), and fourth contact when it leaves entirely ($t_\mathrm{IV}$).
 The duration $T$ between second and third contact, the duration of ingress and egress (between first and second, or third and fourth), and the depth together constrain the impact parameter $b$, the inclination $i$, and (with stellar parameters) the radius $R_\star$.
 The shape of the light curve is also distorted by **limb darkening**: the stellar disk is not uniformly bright but is brighter at centre and dimmer at the edge, because lines of sight near the limb intersect cooler upper layers of the photosphere.
 Limb-darkened transit fits are now standard, and the residual systematics are typically dominated by the host star itself rather than by the model.
@@ -294,7 +294,7 @@ The current sensitivity of direct imaging is dominated by the planet's brightnes
 Young giant planets, $\lesssim 100$ Myr old, are still radiating away the gravitational binding energy of their formation and are luminous in the infrared.
 Old planets, like Jupiter, have cooled and emit a thousand times less.
 The directly imaged planet population is therefore strongly biased toward young (10--500 Myr), massive ($> 1\,\Mjup$), wide-orbit ($> 10$ AU) giants around nearby stars.
-Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 60$ Myr (formal range $30$--$160$ Myr) {cite:p}`Marois2008` ({numref}`fig:hr8799`), **$\beta$ Pictoris b/c** orbiting an A6V star embedded in the famous debris disk (system age $\sim 12$–$23$ Myr from successive Beta Pictoris Moving Group calibrations) {cite:p}`Lagrange2010` ({numref}`fig:betapic`), **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
+Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 60$ Myr (formal range $30$--$160$ Myr) {cite:p}`Marois2008` ({numref}`fig:hr8799`), **$\beta$ Pictoris b/c** orbiting an A6V star embedded in the famous debris disk (system age $\sim 12$--$23$ Myr from successive Beta Pictoris Moving Group calibrations) {cite:p}`Lagrange2010` ({numref}`fig:betapic`), **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
 
 ```{figure} figures/betapic_imaging.avif
 :align: center

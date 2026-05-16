@@ -376,14 +376,6 @@ Other notable features include **Hellas Planitia**, a $2300$-km-diameter, $\sim 
 
 The transformative discovery of the last two decades is that liquid water once flowed across Mars' surface, accumulated in basins, weathered the rocks, and left a globally distributed record. The lines of evidence are diverse and reinforcing.
 
-```{figure} figures/kite2022_valley_distribution.avif
-:name: fig:kite-distribution
-:width: 700px
-:align: center
-
-Distribution of fluvial features as a function of age from {cite:t}`KiteCarter2022`. **Top**: Late Noachian / Early Hesperian valley networks ($> 3.6$ Ga), concentrated in the southern highlands but globally distributed. **Bottom**: Late Hesperian / Amazonian alluvial fans and deltas ($3.5$ to $3$ Ga), concentrated in mid-latitudes. The shift in the spatial distribution reflects a major change in Mars' greenhouse effect and meteorology.
-```
-
 **Valley networks**, branching channels reminiscent of terrestrial drainage systems, are concentrated in the Noachian highlands. Their morphology (high drainage density, dendritic geometry, integrated catchment areas) most plausibly requires precipitation-fed runoff, which in turn requires sustained warm conditions over thousands or tens of thousands of years.
 
 **Outflow channels** such as Kasei Valles and Ares Vallis are large-scale, scoured features that record catastrophic single events: the discharge of confined sub-permafrost aquifers in volumes orders of magnitude greater than any historical terrestrial flood. They are mostly Hesperian.
@@ -394,20 +386,20 @@ Distribution of fluvial features as a function of age from {cite:t}`KiteCarter20
 - the **theiikian** (late Noachian / Hesperian): sulfate formation, acidic and evaporative water, much shorter duration;
 - the **siderikian** (Amazonian): essentially dry, with anhydrous ferric oxides forming slowly through atmospheric weathering ({numref}`fig:bibring-timeline`).
 
-```{figure} figures/bibring2006_timeline.avif
-:name: fig:bibring-timeline
-:width: 550px
-:align: center
-
-The three-stage aqueous history of Mars proposed by {cite:t}`Bibring2006` from OMEGA imaging-spectrometer mineralogy: phyllosian (clays, neutral wet), theiikian (sulfates, acidic), siderikian (anhydrous ferric oxides, dry). The boundaries are correlated to but distinct from the chronostratigraphic Noachian / Hesperian / Amazonian divisions; surface volcanic activity and the global change toward an oxidising environment are marked above the bands.
-```
-
 ```{figure} figures/bibring2006_globalmap.avif
 :name: fig:bibring-global
 :width: 700px
 :align: center
 
 Global map of hydrated minerals on Mars from OMEGA/*Mars Express*, after {cite:t}`Bibring2006` Fig. 3. **Top:** detections only, on a black background. **Bottom:** the same detections overlaid on an MGS/MOLA altitude reference map. **Red** points mark phyllosilicate (clay) detections, **blue** points mark sulfate detections, and **yellow** points mark other hydrated minerals whose spectral signatures are not driven by metal-OH vibrations. Clays cluster preferentially in the Noachian southern highlands, consistent with neutral-pH aqueous alteration during the **phyllosian** stage. Sulfates are concentrated at lower-latitude and equatorial sites, consistent with later, drier, more acidic evaporative settings of the **theiikian** stage ({numref}`fig:bibring-timeline`). Reproduced from {cite:t}`Bibring2006`.
+```
+
+```{figure} figures/bibring2006_timeline.avif
+:name: fig:bibring-timeline
+:width: 550px
+:align: center
+
+The three-stage aqueous history of Mars proposed by {cite:t}`Bibring2006` from OMEGA imaging-spectrometer mineralogy: phyllosian (clays, neutral wet), theiikian (sulfates, acidic), siderikian (anhydrous ferric oxides, dry). The boundaries are correlated to but distinct from the chronostratigraphic Noachian / Hesperian / Amazonian divisions; surface volcanic activity and the global change toward an oxidising environment are marked above the bands.
 ```
 
 **Sulfate deposits** record a later, drier, more acidic phase of Mars' history, often associated with evaporative settings. Both the *Opportunity* rover at Meridiani Planum and the *Curiosity* rover at Gale crater have made extensive in-situ measurements of sulfate-bearing strata.
@@ -460,6 +452,14 @@ Idealised two-dimensional phase diagram for the long-term state of early Mars fr
 A second class of solutions relies on **episodic warm intervals** rather than sustained warmth. Large impacts deliver enough energy to melt and vaporise water locally for years to centuries, and explosive volcanism injects warming gases into the atmosphere on similar timescales. Models in this family predict that Mars was cold and icy on average, but punctuated by bursts of warmer climate during which valley networks formed. {cite:t}`KiteEpisodic2021` showed that such episodic warming, combined with high-altitude water-ice clouds, can be consistent with the observed valley distribution and with the constraint that the planet not stay warm for too long.
 
 A third element is the dramatic shift in the spatial distribution of fluvial features from the Noachian to the Hesperian, mapped by {cite:t}`KiteCarter2022` ({numref}`fig:kite-distribution`). In the Noachian, fluvial activity is widespread across the southern highlands. In the late Hesperian and Amazonian, what little fluvial activity remains is concentrated in mid-latitude alluvial fans and deltas. {cite:t}`KiteCarter2022` argued that this latitudinal migration encodes a fundamental change in Mars' greenhouse mechanism between the two epochs: an early greenhouse sustained over the whole planet, followed by a late one that worked only seasonally and only at certain latitudes ({numref}`fig:kite-schematic`).
+
+```{figure} figures/kite2022_valley_distribution.avif
+:name: fig:kite-distribution
+:width: 700px
+:align: center
+
+Distribution of fluvial features as a function of age from {cite:t}`KiteCarter2022`. **Top**: Late Noachian / Early Hesperian valley networks ($> 3.6$ Ga), concentrated in the southern highlands but globally distributed. **Bottom**: Late Hesperian / Amazonian alluvial fans and deltas ($3.5$ to $3$ Ga), concentrated in mid-latitudes. The shift in the spatial distribution reflects a major change in Mars' greenhouse effect and meteorology.
+```
 
 ```{figure} figures/kite2022_schematic.avif
 :name: fig:kite-schematic

@@ -593,7 +593,9 @@ The **early loss** scenario, championed by {cite:t}`Hamano2013`, assumes that Ve
 Because Venus is closer to the Sun, the absorbed flux is high enough that the atmosphere stays above the Simpson-Nakajima limit indefinitely; the magma ocean never solidifies because the optically thick steam atmosphere prevents efficient heat loss.
 Water vapour photolyses in the upper atmosphere, hydrogen escapes hydrodynamically under the strong EUV flux of the young Sun, and Venus is desiccated within a few hundred million years of its formation.
 On this view, Venus never had liquid surface water, and the present-day desiccation reflects the original failure of the magma ocean to crystallise into a solid surface with a condensed ocean.
-{cite:t}`Hamano2013` quantified this scenario and showed that for water-rich planets at distances less than about $0.76$ AU, the magma ocean phase becomes self-sustaining and the planet becomes a "Type II" world, distinct from the "Type I" worlds (like Earth, at greater distances) that crystallise normally and develop a condensed ocean ({numref}`fig:hamano-two-types` and {numref}`fig:hamano-typeI`). An independent coupled magma-ocean and atmosphere model by {cite:t}`Lebrun2013` ({numref}`fig:lebrun-magma`) puts the magma-ocean lifetime at Venus' orbital distance at $\sim$10 Myr, an order of magnitude longer than at Earth's orbit, consistent with sustained hydrodynamic hydrogen escape during the magma-ocean phase.
+{cite:t}`Hamano2013` quantified this scenario and showed that for water-rich planets at distances less than about $0.76$ AU, the magma ocean phase becomes self-sustaining and the planet becomes a "Type II" world, distinct from the "Type I" worlds (like Earth, at greater distances) that crystallise normally and develop a condensed ocean ({numref}`fig:hamano-two-types` and {numref}`fig:hamano-typeI`).
+
+An independent coupled magma-ocean and atmosphere model by {cite:t}`Lebrun2013` ({numref}`fig:lebrun-magma`) puts the magma-ocean lifetime at Venus' orbital distance at $\sim$10 Myr, an order of magnitude longer than at Earth's orbit, consistent with sustained hydrodynamic hydrogen escape during the magma-ocean phase.
 
 ```{figure} figures/hamano2013_two_types.avif
 :name: fig:hamano-two-types
@@ -656,6 +658,16 @@ The day-side, by contrast, has a much weaker cloud cover and so absorbs nearly a
 On their picture, the asymmetric day-night cloud distribution prevents an ocean from condensing on Venus from the start, even if the planet enters the post-magma-ocean phase with a low surface temperature; the runaway greenhouse therefore traps Venus from the very beginning.
 Their main result is summarised in a hysteresis diagram showing the conditions under which an ocean can form: Venus is on the wrong side of the hysteresis loop for ocean formation throughout its history, while Earth is on the right side ({numref}`fig:turbet-hysteresis`).
 
+```{figure} figures/turbet2021_water_clouds_emission.avif
+:name: fig:turbet-clouds
+:width: 55%
+:align: center
+
+Three-dimensional simulation of an early Venus near the runaway threshold from {cite:t}`Turbet2021`, showing vertically integrated water-cloud column density (top, panel b) and thermal emission to space (bottom, panel d) at a stellar flux $S = 340.5$ W/m$^2$, with subsolar longitudes near $0^\circ$.
+The night-side dominates the emission: the substellar dayside has thick water clouds that reflect sunlight back to space, while the cooler night-side radiates the thermal flux.
+This day-night asymmetry is the mechanism by which the runaway state is preserved; on Earth, the corresponding panels of the same figure (not reproduced here) show a more zonally distributed cloud cover that allows the planet to sit on the condensed branch of the hysteresis curve.
+```
+
 ```{figure} figures/turbet2021_hysteresis.avif
 :name: fig:turbet-hysteresis
 :width: 90%
@@ -665,16 +677,6 @@ Hysteresis loops for ocean formation on early Earth and Venus, from {cite:t}`Tur
 **Panel (a)** shows surface temperature as a function of incoming solar flux for Earth: at $4$ Ga, water condenses from a steam atmosphere if the atmosphere is initially condensed (operating point near present-day) but enters the runaway greenhouse if it starts hot (red branch).
 **Panel (b)** shows the same for Venus: the runaway and condensed branches do not overlap, so an early Venus that started in the runaway state (the natural endpoint of magma ocean cooling at high solar flux) cannot reach the condensed branch even at $4$ Ga, when the insolation at Venus was $\sim$25% lower than today and Venus still received $\sim$500 W/m$^2$, well above the cloud-modified condensation threshold of $\sim$325 W/m$^2$.
 Reproduced from {cite:t}`Turbet2021`.
-```
-
-```{figure} figures/turbet2021_water_clouds_emission.avif
-:name: fig:turbet-clouds
-:width: 55%
-:align: center
-
-Three-dimensional simulation of an early Venus near the runaway threshold from {cite:t}`Turbet2021`, showing vertically integrated water-cloud column density (top, panel b) and thermal emission to space (bottom, panel d) at a stellar flux $S = 340.5$ W/m$^2$, with subsolar longitudes near $0^\circ$.
-The night-side dominates the emission: the substellar dayside has thick water clouds that reflect sunlight back to space, while the cooler night-side radiates the thermal flux.
-This day-night asymmetry is the mechanism by which the runaway state is preserved; on Earth, the corresponding panels of the same figure (not reproduced here) show a more zonally distributed cloud cover that allows the planet to sit on the condensed branch of the hysteresis curve.
 ```
 
 These three papers illustrate the current state of the field: there are strong theoretical arguments on both sides, the evidence from Venus itself is ambiguous, and definitive resolution will require new observations (the most decisive being noble-gas measurements from a future descent probe, which would constrain the time-integrated escape history, and high-resolution near-IR emissivity mapping of tessera regions, which would test for ancient felsic crust formed in the presence of liquid water).
@@ -792,6 +794,18 @@ The two planets are at the very edge of the Simpson-Nakajima boundary, on opposi
 
 The second input is the **timing of water delivery and loss**.
 Both planets accreted in roughly the same region of the protoplanetary disk and likely had similar primordial water inventories (though we cannot measure this directly for Venus). Isotopic tracers in Earth's mantle (O, Ti, Cr, Ni, Mo, Ru) provide independent constraints on the composition of the accreting material at different stages: {numref}`fig:dauphas-accretion` shows that Cr was delivered approximately proportionally to accreted mass, whereas Mo and Ru were strongly back-loaded toward the final stages and the late veneer.
+
+```{figure} figures/dauphas2017_earth_accreting_material.avif
+:name: fig:dauphas-accretion
+:width: 45%
+:align: center
+
+Probability density function for the chromium-bearing fraction of Earth's accreting mass as a function of the cumulative accreted mass fraction, from {cite:t}`Dauphas2017` (Cr panel of their five-isotope Fig. 1).
+The red triangle on the $x$-axis marks $x_{0.95} = 0.85$, the mass fraction at which $95\%$ of Earth's present mantle Cr inventory was delivered, demonstrating that Cr is delivered approximately proportionally to accreted mass (described by the paper as "nearly linear"), in contrast to Mo and Ru, which are strongly back-loaded toward the final stages of accretion.
+Combined with the O, Ti, Ni, Mo, and Ru tracers from the same study (not reproduced here), {cite:t}`Dauphas2017` reconstruct three accretion stages: stage I ($0\text{--}60\%$ of Earth's mass) is best fit by $\sim 51\%$ enstatite-meteorite-like (E-type) plus $\sim 40\%$ ordinary-chondrite plus $\sim 9\%$ carbonaceous-chondrite (CO/CV) material; stages II ($60\text{--}99.5\%$) and III (the last $0.5\%$, the "late veneer") are essentially $100\%$ E-type.
+The carbonaceous component, and therefore the bulk of Earth's water if it was delivered with that material, was concentrated in the early stages of main accretion rather than in the late veneer.
+```
+
 The difference is in what happened to the water as the planet cooled.
 On Earth, the water survived the magma-ocean phase, condensed at the surface, and persisted as an ocean for the next $4$ Gyr.
 On Venus, the water either failed to condense in the first place (the Hamano-Turbet picture) or condensed and was subsequently lost during a slow runaway over billions of years (the Way picture).
@@ -909,18 +923,6 @@ The noble gas measurements are particularly important: they provide the time-int
 In parallel, theoretical modelling is advancing rapidly: 3D climate models of early Venus {cite:p}`Way2016,Turbet2021`, coupled magma-ocean atmosphere-interior models {cite:p}`Hamano2013,Gillmann2022`, and thermo-chemical models of the long-term atmospheric evolution {cite:p}`Lammer2018,Gillmann2022` are converging on a coherent picture of how the early divergence of Earth and Venus could have happened and what observations would distinguish the remaining alternatives.
 A separate active research front is the search for biosignatures in the Venus cloud layer: the temperature and pressure conditions at $50$-$60$ km altitude are similar to surface Earth conditions, and the question of whether Venus could harbour an aerial biosphere there has been an open one since the original Sagan and Morowitz proposal in $1967$.
 The phosphine controversy of $2020$ ({ref}`lecture06`) brought this question briefly into the spotlight, and although the original detection has been contested, the question itself remains and will be addressed by the new missions.
-
-
-```{figure} figures/dauphas2017_earth_accreting_material.avif
-:name: fig:dauphas-accretion
-:width: 45%
-:align: center
-
-Probability density function for the chromium-bearing fraction of Earth's accreting mass as a function of the cumulative accreted mass fraction, from {cite:t}`Dauphas2017` (Cr panel of their five-isotope Fig. 1).
-The red triangle on the $x$-axis marks $x_{0.95} = 0.85$, the mass fraction at which $95\%$ of Earth's present mantle Cr inventory was delivered, demonstrating that Cr is delivered approximately proportionally to accreted mass (described by the paper as "nearly linear"), in contrast to Mo and Ru, which are strongly back-loaded toward the final stages of accretion.
-Combined with the O, Ti, Ni, Mo, and Ru tracers from the same study (not reproduced here), {cite:t}`Dauphas2017` reconstruct three accretion stages: stage I ($0\text{--}60\%$ of Earth's mass) is best fit by $\sim 51\%$ enstatite-meteorite-like (E-type) plus $\sim 40\%$ ordinary-chondrite plus $\sim 9\%$ carbonaceous-chondrite (CO/CV) material; stages II ($60\text{--}99.5\%$) and III (the last $0.5\%$, the "late veneer") are essentially $100\%$ E-type.
-The carbonaceous component, and therefore the bulk of Earth's water if it was delivered with that material, was concentrated in the early stages of main accretion rather than in the late veneer.
-```
 
 
 ## Summary and takeaways
