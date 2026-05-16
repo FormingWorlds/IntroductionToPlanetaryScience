@@ -254,7 +254,7 @@ The vertical structure varies dramatically across the solar system {cite:p}`Catl
 - **Venus:** A massive troposphere extends to $\sim$65 km. Above the cloud deck ($\sim$48–70 km), temperature decreases slowly. There is no Earth-like stratospheric temperature inversion because Venus lacks an ozone layer.
 - **Mars:** A thin troposphere ($\sim$40 km) directly overlain by a thermosphere. Mars also lacks a significant ozone layer and stratospheric inversion.
 - **Jupiter:** The troposphere extends deep into the planet (hundreds of kilometres). The stratosphere is heated by $\mathrm{CH_4}$ and hydrocarbon haze absorption. There is no solid surface; pressure increases continuously with depth.
-- **Titan:** A thick troposphere ($\sim$40 km), a stratosphere heated by organic haze absorption (up to $\sim$300 km), and an extended thermosphere reaching $\sim$1400 km, remarkably high for such a small body, reflecting Titan's weak gravity and large scale height. The Huygens-derived T(z) profile is shown in {numref}`fig:titan-tz-hasi`; the canonical Venus T(z) used for comparison is shown in {numref}`fig:venus-tz-vira`.
+- **Titan:** A thick troposphere ($\sim$40 km), a stratosphere extending up to $\sim$300 km heated by organic haze absorption ({numref}`fig:titan-haze`), and an extended thermosphere reaching $\sim$1400 km, remarkably high for such a small body, reflecting Titan's weak gravity and large scale height. The Huygens-derived T(z) profile is shown in {numref}`fig:titan-tz-hasi`; the canonical Venus T(z) used for comparison is shown in {numref}`fig:venus-tz-vira`.
 
 ```{figure} figures/titan_haze_pia06160.avif
 :name: fig:titan-haze
