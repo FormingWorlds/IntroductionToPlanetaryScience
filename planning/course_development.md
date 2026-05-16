@@ -607,12 +607,12 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 6 | Atmospheres II | Verified | High |
 | 7 | Planetary surfaces | Verified | High |
 | 8 | Planetary interiors | Verified | High |
-| 9 | Rocky planets: Earth & Venus | Draft reviewed (3-tier fix arc, 30 figures, Simpson-Nakajima derivation) | Medium |
-| 10 | Rocky planets: Mercury & Mars | Draft reviewed (3-tier fix arc, 31 figures, Jeans escape derivation) | Medium |
-| 11 | Gas & ice giants | Draft reviewed (3-tier fix arc, 40 figures, Roche-limit derivation) | Medium |
-| 12 | Meteorites, asteroids, minor planets & comets | Draft reviewed (3-tier fix arc, 48 figures, Pb-Pb dating derivation) | Medium |
-| 13 | Exoplanets | Draft reviewed (3-tier fix arc, 42 figures, transit + RV derivations) | Medium |
-| 14 | Synthesis & astrobiology | Draft reviewed (3-tier fix arc, 31 figures, habitable-zone derivation) | Low |
+| 9 | Rocky planets: Earth & Venus | Verified (28 figures, Simpson-Nakajima derivation) | Medium |
+| 10 | Rocky planets: Mercury & Mars | Verified (31 figures, Jeans escape derivation) | Medium |
+| 11 | Gas & ice giants | Verified (40 figures, Roche-limit derivation) | Medium |
+| 12 | Meteorites, asteroids, minor planets & comets | Verified (48 figures, Pb-Pb dating derivation) | Medium |
+| 13 | Exoplanets | Verified (42 figures, transit + RV derivations) | Medium |
+| 14 | Synthesis & astrobiology | Verified (30 figures, habitable-zone derivation) | Low |
 
 **Priority rationale:** Lectures 1–8 cover foundational topics needed before planet-specific lectures; Lectures 9–13 build on these; Lecture 14 synthesizes the full course.
 
@@ -630,12 +630,12 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | 6 | Atmospheres II | Draft complete | High |
 | 7 | Planetary surfaces | Draft complete | High |
 | 8 | Planetary interiors | Draft complete | High |
-| 9 | Rocky planets: Earth & Venus | Not started | Medium |
-| 10 | Rocky planets: Mercury & Mars | Not started | Medium |
-| 11 | Gas & ice giants | Not started | Medium |
-| 12 | Meteorites, asteroids, minor planets & comets | Not started | Medium |
-| 13 | Exoplanets | Not started | Medium |
-| 14 | Synthesis & astrobiology | Not started | Low |
+| 9 | Rocky planets: Earth & Venus | Draft complete | Medium |
+| 10 | Rocky planets: Mercury & Mars | Draft complete | Medium |
+| 11 | Gas & ice giants | Draft complete | Medium |
+| 12 | Meteorites, asteroids, minor planets & comets | Draft complete | Medium |
+| 13 | Exoplanets | Draft complete | Medium |
+| 14 | Synthesis & astrobiology | Draft complete | Low |
 
 **Slide infrastructure (complete):**
 - Custom Beamer theme: `slides/common/beamerthemeIPS.sty`: dark navy/teal palette, Inter + Fira Math fonts (XeLaTeX), `\ipscontain` for background images, `\sectionimage`/`\breakslide`/`\keyresult`/`\source` helper commands, thin accent-line frame titles, minimal footline (author, short title, slide number)
@@ -643,19 +643,13 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 - Build system: `slides/Makefile` with `avif2png` and `svg2pdf` targets (auto-conversion for XeLaTeX via `magick` and `cairosvg`), `latexmk -xelatex`; integrated into root `Makefile` via `make slides`
 - `.gitignore`: ignores LaTeX build artifacts and generated PNG/PDF in slide figure directories
 
-**Lectures 1-8 slides (all built cleanly, expanded to 60+ frames each):**
-- L1: `slides/lecture01/lecture01.tex`, 61 pages
-- L2: `slides/lecture02/lecture02.tex`, 61 pages
-- L3: `slides/lecture03/lecture03.tex`, 60 pages
-- L4: `slides/lecture04/lecture04.tex`, 60 pages
-- L5: `slides/lecture05/lecture05.tex`, 60 pages
-- L6: `slides/lecture06/lecture06.tex`, 60 pages
-- L7: `slides/lecture07/lecture07.tex`, 60 pages
-- L8: `slides/lecture08/lecture08.tex`, 60 pages
-- All 105 em-dash instances across the 8 decks replaced per CLAUDE.md style
+**Lectures 1-14 slides (all built cleanly, expanded to 60+ frames each):**
+- L1-L8: built and three-pass reviewed in the spring 2026 cycle
+- L9-L14: built and reviewed in the L9-L14 slide series, final deck commit `c53d778` (2026-04-26)
+- All em-dash instances across the 14 decks replaced per CLAUDE.md style
 - All SVG figures in column layouts audited and constrained with `width=\linewidth, keepaspectratio` to prevent overflow
-- `slides/Makefile` updated with `svg2pdf` target using `cairosvg` (L2-L6 had SVG references that xelatex could not resolve before this fix)
-- Second pass added: recent-developments frames (Juno, JUICE, Europa Clipper, OSIRIS-REx, Hayabusa2, DART, JWST MAPS, Perseverance, BepiColombo, Psyche, MAVEN, InSight, Tarduno paleomagnetism), dedicated physics-derivation frames (Rayleigh number comparison, Nusselt scaling, adiabatic gradient, Jeans parameter, energy-limited escape, partition coefficients, Hf-W chronometer, magnetopause derivation, tidal dissipation rate), and deeper notes-coverage frames (mantle reservoirs, mantle plumes, snowball Earth, runaway greenhouse, Milankovitch cycles, thermal tides, super-ionic ice, Ganymede interior, crater size-frequency distribution)
+- `slides/Makefile` carries `svg2pdf` (cairosvg) and `avif2png` (magick) targets for xelatex
+- Decks include recent-developments frames (Juno, JUICE, Europa Clipper, OSIRIS-REx, Hayabusa2, DART, JWST MAPS, Perseverance, BepiColombo, Psyche, MAVEN, InSight, Tarduno paleomagnetism, ARIEL, Roman, PLATO), dedicated physics-derivation frames (Rayleigh number comparison, Nusselt scaling, adiabatic gradient, Jeans parameter, energy-limited escape, partition coefficients, Hf-W chronometer, magnetopause derivation, tidal dissipation rate, Simpson-Nakajima OLR limit, Roche limit, Pb-Pb dating, transit and RV derivations, habitable-zone derivation), and deeper notes-coverage frames (mantle reservoirs, mantle plumes, snowball Earth, runaway greenhouse, Milankovitch cycles, thermal tides, super-ionic ice, Ganymede interior, crater size-frequency distribution, NC/CC dichotomy, Trappist-1 system, exoplanet demographics)
 
 Each slide deck requires:
 - LaTeX source file (Beamer presentation class) using the custom IPS theme (`slides/common/beamerthemeIPS.sty`)
@@ -727,10 +721,13 @@ The previous iteration (12 lectures, 9 tutorials) provides a foundation to draw 
 5. **Phase 3 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7.
 6. **Phase 4a — Lecture notes (Lectures 9–14):** ✅ Complete. Full prose drafts for all six lectures (~88,600 words aggregate), each with a blackboard derivation (Simpson-Nakajima, Jeans escape, Roche limit, Pb-Pb dating, transit/RV, habitable zone). Three-part descriptive-first / comparative-payoff layout (Part 1 object description, Part 2 dynamics or mechanisms, Part 3 comparative synthesis), inverted for L14 because it is the synthesis lecture.
 7. **Phase 4b — Lecture notes images (Lectures 9–14):** ✅ Complete. 222 figures across L9–L14 (30 / 31 / 40 / 48 / 42 / 31), sourced from arXiv tarballs and NASA/ESA mission imagery, capped at two figures per source paper (mission imagery exempt). All AVIF, all referenced in `{figure}` directives with self-contained captions.
-8. **Phase 4c — Lecture notes verification (Lectures 9–14):** 🔄 In progress. Three-tier adversarial review arc complete for all six lectures (mechanical rendering fixes in commit `8334c4e`, substantive equation/attribution fixes in `6acaa0a`, LOW polish + BibTeX hygiene in `d221b48`), plus display-math blank-line pass in `e39d58a`. Aggregate: 384 BibTeX entries, 351 unique citations resolving cleanly, zero em-dashes in prose, L9 Simpson-Nakajima and L10 Jeans escape blackboard derivations algebraically re-verified. A second independent verification pass (two parallel sub-agents, 2026-04-11) on L9 and L10 has surfaced 39 additional findings (13 HIGH, 17 MED, 9 LOW) concentrated in figure caption/image mismatches, figure cropping defects, and one Rayleigh-distillation arithmetic error in the L9 Venus D/H section (this error is outside the blackboard derivation itself, which remains clean). Full action-item list and three pending user decisions documented below in "Open Issues — L9/L10 Second-Pass Review Pending Fixes". L11–L14 have not yet had a second independent pass. Deferred small cleanup batch from the first review arc documented in `notes_status.md` memory.
-9. **Phase 5 — Lecture slides (Lectures 9–14):** PDF slide decks from LaTeX for these remaining lecture notes, covering the same content as the Jupyter Book notes for classroom delivery. The slide decks should be visually engaging and include key figures from the lecture notes, but distilled into a presentation format suitable for teaching. Each slide deck should be consistent in style and formatting across lectures. The slides should cover a lecture of about 90 minutes, with a mix of text, equations, and figures to effectively communicate the material. The slide decks should be designed to complement the lecture notes, not duplicate them, and should focus on the key concepts and takeaways for each lecture.
-10. **Phase 6 — Homework sheets 5–7 + final exam:** Remaining homework and cumulative final exam.
-11. **Phase 7 — Review and polish:** Cross-referencing between lectures, consistency check, equation sheet compilation.
+8. **Phase 4c — Lecture notes verification (Lectures 9–14):** ✅ Complete. First, three-tier adversarial review arc per lecture (mechanical rendering, substantive equation/attribution, LOW polish + BibTeX hygiene), then a second independent verification pass on L9 and L10 (39 findings closed in §6), then the full L01-L14 self-made-figure replacement cycle (21 of 21 literature replacements shipped, May 2026), then the sequential L01-L14 adversarial-review cycle (14 atomic commits ending at `546a337`, ~50 fixes, ~530 PDFs read across the cycle; 2026-05-09). All lectures cross-checked for numerical drift (Venus 737 K, CO2 lambda 230, Mars lambda_H 5.3, Earth heat budget 47 TW), figure-caption fidelity, and citation-to-claim accuracy. Bib silent-failure modes fixed (`e80b416`).
+9. **Phase 4d — Inline figure references (Lectures 9–14):** ⏭️ Next. Every figure must be referenced in the body text with `` {numref}`fig:...` ``, rendering as "(Fig. NN.M)". L01-L08 already have near-complete coverage (24 / 25 to 26 / 26 per lecture). L09-L14 are sparse: L9 has 4 / 28, L10 has 1 / 31, L11 has 1 / 40, L12 has 10 / 48, L13 has 2 / 42, L14 has 8 / 30. About 193 figures need an inline reference placed at the natural point in the prose where the figure is discussed. Also closes the two L04 / L06 stragglers. Run lecture-by-lecture; commit per lecture to `origin/main` so the deployed site iterates immediately.
+10. **Phase 4e — Figure-by-figure walkthrough with Tim:** After 4d, walk through every figure in every lecture one at a time, in order (L01 Fig. 1.1 first, L14 Fig. 14.30 last). For each figure: render the page section, present the figure to Tim, Tim decides accept / replace / re-crop / re-caption / drop. The session is interactive: Tim drives the verdict, Claude executes the agreed action immediately (replace from another source, re-crop, edit caption, swap citation, remove the figure and its inline reference). Total scope is 461 figures. Pace: 25-50 figures per session, lecture-by-lecture, with a per-lecture commit at the end. This pass supersedes any earlier "figure spot-check" notes.
+11. **Phase 5 — Lecture slides (Lectures 9–14):** ✅ Complete. L9-L14 slide decks built (60+ frames each), three-pass review applied, final deck commit `c53d778` (2026-04-26).
+12. **Phase 3 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7. Reuses tutorial material from `content/course2025` (resonances, N-body, heat-transport, atmosphere-escape problem sets). Open.
+13. **Phase 6 — Homework sheets 5–7 + final exam:** Remaining homework and cumulative final exam. Open.
+14. **Phase 7 — Review and polish:** Cross-referencing between lectures, consistency check, equation sheet compilation, deployed-site smoke test before the September 2026 teaching slot.
 
 ---
 
@@ -1074,3 +1071,68 @@ L4 was 47% below the course median word count and 6 figures short of the 25-figu
 **Priority G – Recent advances substance (~400 words).** Added four dedicated sub-headings under §10: InSight confirmation of Mars's extinct dynamo; the lunar dynamo paradox with Apollo paleomagnetism; the Earth inner-core age debate (Labrosse 2015 thermal conductivity → $\sim 0.5$–$1$ Gyr vs older $\sim 2$–$3$ Gyr estimates; paleomagnetic pulse coincident with nucleation); and expanded coverage of BepiColombo/JUICE/Europa Clipper. New `Weiss2014`, `Labrosse2015`, `Nimmo2015` bib entries.
 
 **Final L4 metrics:** 743 lines (was 590, +26%), 24 figures (was 19, +5), 20 display equations (was 14, +6), 10 new BibTeX entries (Siebert2013, ChristensenAubert2006, OlsonChristensen2006, Benz1988, Benz2007, AndrewsHanna2008, Marinova2008, GendaAbe2003, GendaAbe2005, Weiss2014, Labrosse2015, Nimmo2015). All 5 new figures are course-generated schematics stored at `output_files/l4_figure_fixes/` (gitignored scripts + PNGs) and converted to AVIF at quality 75 before placement. Full-course-review residue list is now closed; L4 is at course-median scale for the first time.
+
+---
+
+## 8. Phase 4d — Inline figure references pass (open)
+
+Date opened: **2026-05-16**.
+
+**Rule.** Every figure in every lecture must be referenced in the body text at the natural point where the figure is discussed, using `` {numref}`fig:label` ``. Renders as "(Fig. NN.M)" with the chapter-prefixed per-lecture numbering already configured (`numfig_secnum_depth = 1`). The reference must precede or immediately follow the sentence that introduces the figure's content; if the figure is purely supportive of a multi-paragraph topic, place it after the first sentence that names the object/process the figure depicts.
+
+**Current coverage** (counted 2026-05-16, `grep -c "^:name:"` vs unique `{numref}` calls):
+
+| Lecture | Figures | Inline refs | Missing |
+|---|---|---|---|
+| L01 | 25 | 25 | 0 |
+| L02 | 25 | 25 | 0 |
+| L03 | 24 | 24 | 0 |
+| L04 | 25 | 24 | 1 |
+| L05 | 26 | 26 | 0 |
+| L06 | 26 | 25 | 1 |
+| L07 | 26 | 26 | 0 |
+| L08 | 25 | 25 | 0 |
+| L09 | 28 | 4 | 24 |
+| L10 | 31 | 1 | 30 |
+| L11 | 40 | 1 | 39 |
+| L12 | 48 | 10 | 38 |
+| L13 | 42 | 2 | 40 |
+| L14 | 30 | 8 | 22 |
+| **Total** | **421** | **226** | **195** |
+
+**Per-lecture procedure.**
+
+1. List all figure `:name:` slugs in the lecture (`grep -E "^:name:" book/<NN>_*/<NN>_*.md`).
+2. List existing `{numref}` calls in body text.
+3. For each unreferenced figure: find the section of prose where the figure's subject is discussed, insert `` (see {numref}`fig:label`) `` at the end of the first sentence that names the depicted object/process. Avoid placing the reference inside a math-display block or inside another figure's caption.
+4. Build clean: `jupyter-book build book/`. Confirm zero "undefined label" warnings.
+5. Commit per lecture with subject like "L09 inline figure references". Push to `origin/main`.
+
+**Out of scope for 4d.** Changing figures, captions, or surrounding scientific content. Those are Phase 4e.
+
+---
+
+## 9. Phase 4e — Figure-by-figure walkthrough with Tim (open, blocked on 4d)
+
+Date opened: **2026-05-16**. Cannot start until Phase 4d closes (so every figure has an inline reference in the prose and is therefore findable by section context during the walkthrough).
+
+**Goal.** Joint inspection of all 461 figures, one at a time, with Tim deciding the verdict per figure. This is the final figure-quality gate before the course goes live.
+
+**Procedure (interactive, lecture-by-lecture, in chapter and figure-numbering order).**
+
+1. For each lecture L01 -> L14, walk through Fig. NN.1, NN.2, ... NN.M in order.
+2. For each figure, Claude presents:
+   - The figure file (path + thumbnail render via `magick avif png` if helpful).
+   - The current caption verbatim.
+   - The body-text passage that references it (the `{numref}` context from Phase 4d).
+3. Tim renders a verdict: **accept** / **replace** / **re-crop** / **re-caption** / **change citation** / **drop**.
+4. Claude executes the agreed action immediately:
+   - *replace*: fetch the new figure from the agreed source, AVIF-convert, place, update caption + citation, update BibTeX if needed.
+   - *re-crop*: crop locally, re-place.
+   - *re-caption* / *change citation*: edit caption and `references.bib` as agreed.
+   - *drop*: remove the figure directive, the figure file, and the inline `{numref}` reference; renumber-aware (numref auto-renumbers).
+5. At lecture end: `jupyter-book build book/` clean, commit per lecture, push to `origin/main`. Slide-deck companions are updated only if a figure is removed entirely from the lecture notes (slides may legitimately diverge in figure selection).
+
+**Pacing.** 25-50 figures per session is the realistic range; full pass is ~10-15 working sessions. Sessions can be split mid-lecture, but always commit at a natural lecture boundary.
+
+**Output.** Per-lecture verdict log appended to `~/.claude/plans/ips_figure_walkthrough_2026-05/L<NN>.md` so a fresh session can resume cold. Final summary added to this plan when complete.
