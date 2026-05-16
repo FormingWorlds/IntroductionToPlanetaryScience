@@ -524,7 +524,7 @@ Magnetic fields vary enormously across the solar system. Comparing them reveals 
 | **Earth** | Active dynamo | 25–65 $\mu$T | 1 | Liquid Fe outer core, growing inner core |
 | **Mercury** | Active dynamo | ~0.3 $\mu$T | $\sim 5 \times 10^{-4}$ | Weak; thin liquid shell {cite:p}`Anderson2012` |
 | **Venus** | None detected | $< 0.01$ $\mu$T | $< 10^{-5}$ | No dynamo despite large iron core |
-| **Mars** | Remnant crustal | Up to ~1500 nT | n/a | Dynamo died ~4.1 Ga {cite:p}`Acuna1999,Connerney2005` |
+| **Mars** | Remnant crustal | Up to ~1500 nT | n/a | Dynamo ceased $\sim 4.1$-$3.7$ Ga {cite:p}`Acuna1999,Mittelholz2020` |
 | **Jupiter** | Active dynamo | ~400–1400 $\mu$T | $\sim 20{,}000$ | Metallic H dynamo {cite:p}`Connerney2022` |
 | **Saturn** | Active dynamo | ~20 $\mu$T | ~600 | Remarkably axisymmetric |
 | **Uranus** | Active dynamo | ~10–100 $\mu$T | ~50 | Multipolar, tilted ~59° and offset from centre |
@@ -570,7 +570,7 @@ The relative importance of these factors remains debated. Venus's lack of a magn
 Mars has no global magnetic field today, but the Mars Global Surveyor spacecraft discovered intense **remnant crustal magnetism** in the ancient southern highlands ({numref}`fig:mars-crustal-magnetism`), patches of magnetisation with field strengths up to $\sim$1500 nT measured at $\sim$100–200 km aerobraking altitude, far stronger than crustal magnetisation on Earth {cite:p}`Acuna1999`. These crustal magnetic anomalies are absent in the younger northern lowlands and in large impact basins (Hellas, Argyre, Isidis), indicating that:
 
 1. Mars once had an active dynamo that magnetised the ancient crust.
-2. The dynamo shut down approximately **4.1 Gyr ago** (before the large basins formed), after which newly formed crust was not magnetised.
+2. The dynamo shut down between **~4.1 and ~3.7 Gyr ago**: the original basin-demagnetisation analysis of {cite:t}`Acuna1999` placed the cessation around 4.1-3.9 Ga, while more recent low-altitude *MAVEN* data analysed by {cite:t}`Mittelholz2020` push the last detectable dynamo activity to as late as $\sim 3.7$ Ga.
 3. The loss of the global magnetic field left Mars's atmosphere unshielded against solar wind erosion, likely contributing to the dramatic atmospheric loss that transformed Mars from a warmer, wetter world to the cold, thin-atmosphere planet we see today (see {ref}`Lecture 10 <lecture10>`).
 
 ```{figure} figures/mars_crustal_magnetism.avif
@@ -745,7 +745,7 @@ NASA's Juno mission has produced the most detailed map of Jupiter's magnetic fie
 
 ### InSight: no present-day Mars dynamo
 
-NASA's **InSight** lander, operating on the Martian surface from 2018 to 2022, carried a magnetometer that recorded the local crustal field at Elysium Planitia. The measurements showed a static crustal field of $\sim 2000$ nT at the landing site but no coherent time-varying planetary-scale dipole component {cite:p}`Johnson2020`. Combined with InSight seismic inferences of a fully liquid but light-element-rich core (core radius $\approx 1830$ km, mean density $\approx 6.0$ g cm$^{-3}$) {cite:p}`Stahler2021`, this supports the scenario that Mars's dynamo shut off early because compositional buoyancy from inner-core growth never began and thermal convection alone could not sustain the dynamo once the initial heat-of-accretion budget was exhausted. The exact age of the dynamo shutdown remains uncertain; the leading estimate is $\sim 4.1$ Gyr based on the youngest unambiguously magnetised crust {cite:p}`Acuna1999,Connerney2005`.
+NASA's **InSight** lander, operating on the Martian surface from 2018 to 2022, carried a magnetometer that recorded the local crustal field at Elysium Planitia. The measurements showed a static crustal field of $\sim 2000$ nT at the landing site but no coherent time-varying planetary-scale dipole component {cite:p}`Johnson2020`. Combined with InSight seismic inferences of a fully liquid but light-element-rich core (core radius $\approx 1830$ km, mean density $\approx 6.0$ g cm$^{-3}$) {cite:p}`Stahler2021`, this supports the scenario that Mars's dynamo shut off early because compositional buoyancy from inner-core growth never began and thermal convection alone could not sustain the dynamo once the initial heat-of-accretion budget was exhausted. The exact age of the dynamo shutdown remains uncertain. The original basin-demagnetisation analysis of {cite:t}`Acuna1999` placed it at $\sim 4.1$ Gyr; subsequent low-altitude *MAVEN* magnetometer data refined the picture to a longer-lived or episodic dynamo lasting until $\sim 3.7$ Gyr {cite:p}`Mittelholz2020` (see {ref}`Lecture 10 <lecture10>` for the full chronology).
 
 ### The lunar dynamo paradox
 
