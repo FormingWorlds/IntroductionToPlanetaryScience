@@ -47,9 +47,9 @@ A second image taken from lunar orbit two decades earlier captured the same esse
 
 That image captures something essential about planetary science: it asks us to see our own world not as the centre of the universe, but as one planet among many, a physical system that can be studied, compared, and understood. This course is built around three questions that drive that effort:
 
-1. **How did our solar system form, and is it typical?** Before 1992, we knew of exactly zero planets outside our solar system. Today we have confirmed over 5,700 exoplanets in more than 4,300 systems. Statistical analyses of the Kepler survey suggest that roughly 0.4–0.6 rocky, habitable-zone planets exist per Sun-like star ({numref}`fig:eta-earth`) {cite:p}`Bryson2021`, implying hundreds of millions of such worlds in the Milky Way alone. Yet we have detailed knowledge of only one planetary system.
+1. **How did our solar system form, and is it typical?** Before 1992, we knew of exactly zero planets outside our solar system. Today we have confirmed more than 6,000 exoplanets in over 4,500 systems {cite:p}`NASAExoplanetArchive2026`. Statistical analyses of the Kepler survey suggest that roughly 0.37–0.60 rocky, habitable-zone planets exist per Sun-like star ({numref}`fig:eta-earth`) {cite:p}`Bryson2021`, implying hundreds of millions of such worlds in the Milky Way alone. Yet we have detailed knowledge of only one planetary system.
 
-2. **What determines whether a planet becomes habitable?** Venus, Earth, and Mars all formed from the same protoplanetary disk, likely with similar initial compositions. All three may have had early liquid water. Yet today Venus has a 460 °C surface beneath 90 bar of CO$_2$, Earth has oceans and a biosphere, and Mars is a cold desert with an atmosphere thinner than 1% of Earth's. Understanding why they diverged is one of the central puzzles of planetary science.
+2. **What determines whether a planet becomes habitable?** Venus, Earth, and Mars all formed from the same protoplanetary disk, likely with similar initial compositions. All three may have had early liquid water. Yet today Venus has a 464 °C surface beneath 92 bar of CO$_2$, Earth has oceans and a biosphere, and Mars is a cold desert with an atmosphere thinner than 1% of Earth's. Understanding why they diverged is one of the central puzzles of planetary science.
 
 3. **Are we alone?** JWST is currently attempting to detect and characterise atmospheres on rocky exoplanets, including the TRAPPIST-1 system. Within your careers, this question may become answerable, but only if we understand what makes a planet habitable in the first place.
 
@@ -355,8 +355,8 @@ The four terrestrial planets at approximate relative scale. From left to right: 
 
 | Property | Venus | Earth | Mars |
 |----------|-------|-------|------|
-| Surface temperature | 460 °C | 15 °C | $-60$ °C |
-| Surface pressure | 90 bar | 1 bar | 0.006 bar |
+| Surface temperature | 464 °C | 15 °C | $-60$ °C |
+| Surface pressure | 92 bar | 1 bar | 0.006 bar |
 | Dominant atmosphere | CO$_2$ (96.5%) | N$_2$/O$_2$ (99%) | CO$_2$ (95%) |
 | Magnetic field | None | Strong dipole | Remnant crustal |
 | Tectonics | Episodic resurfacing | Plate tectonics | Stagnant lid |
