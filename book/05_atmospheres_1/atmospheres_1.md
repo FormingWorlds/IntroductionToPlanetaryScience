@@ -50,7 +50,7 @@ The diversity of atmospheres across the solar system is remarkable. The table be
 | Property | Venus | Earth | Mars | Jupiter | Titan |
 |----------|:-----:|:-----:|:----:|:-------:|:-----:|
 | Surface pressure (bar) | 92 | 1.0 | 0.006 | n/a | 1.5 |
-| Surface temperature (K) | 735 | 288 | 210 | n/a | 94 |
+| Surface temperature (K) | 737 | 288 | 210 | n/a | 94 |
 | Dominant gas | $\mathrm{CO_2}$ (96.5%) | $\mathrm{N_2}$ (78%) | $\mathrm{CO_2}$ (95%) | $\mathrm{H_2}$ (86%) | $\mathrm{N_2}$ (95%) |
 | Secondary gas | $\mathrm{N_2}$ (3.5%) | $\mathrm{O_2}$ (21%) | $\mathrm{N_2}$ (2.7%) | He (14%) | $\mathrm{CH_4}$ (5%) |
 | Mean molecular weight $\mu$ | 43.4 | 28.97 | 43.3 | 2.2 | 28.6 |
@@ -183,7 +183,7 @@ We can now compute scale heights for several bodies using their characteristic a
 
 | Body | $T$ (K) | $\mu$ | $g$ (m s$^{-2}$) | $H$ (km) |
 |------|:-------:|:-----:|:-----------------:|:---------:|
-| Venus | 735 | 43.4 | 8.87 | 15.8 |
+| Venus | 737 | 43.4 | 8.87 | 15.8 |
 | Earth | 288 | 28.97 | 9.81 | 8.5 |
 | Mars | 210 | 43.3 | 3.72 | 10.8 |
 | Jupiter | 165 | 2.2 | 24.8 | 25 |
