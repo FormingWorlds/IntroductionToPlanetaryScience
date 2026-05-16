@@ -728,6 +728,7 @@ The previous iteration (12 lectures, 9 tutorials) provides a foundation to draw 
 12. **Phase 3 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7. Reuses tutorial material from `content/course2025` (resonances, N-body, heat-transport, atmosphere-escape problem sets). Open.
 13. **Phase 6 — Homework sheets 5–7 + final exam:** Remaining homework and cumulative final exam. Open.
 14. **Phase 7 — Review and polish:** Cross-referencing between lectures, consistency check, equation sheet compilation, deployed-site smoke test before the September 2026 teaching slot.
+15. **Phase 8 — Video narration scripts and audio recording (final item):** Produce a written narration script per lecture, slide-by-slide, that Tim records as audio. The audio is then overlaid on the slide PDF for YouTube delivery. Scripts written only after all notes, slides, homework, and exams are final, because the narration must match the published material verbatim. See §10 below for the per-lecture script structure, slide-timing protocol, and recording / overlay workflow.
 
 ---
 
@@ -1136,3 +1137,56 @@ Date opened: **2026-05-16**. Cannot start until Phase 4d closes (so every figure
 **Pacing.** 25-50 figures per session is the realistic range; full pass is ~10-15 working sessions. Sessions can be split mid-lecture, but always commit at a natural lecture boundary.
 
 **Output.** Per-lecture verdict log appended to `~/.claude/plans/ips_figure_walkthrough_2026-05/L<NN>.md` so a fresh session can resume cold. Final summary added to this plan when complete.
+
+---
+
+## 10. Phase 8 — Video narration scripts and audio recording (final item, blocked on everything else)
+
+Date opened: **2026-05-16**. Cannot start until Phases 4d, 4e, 3, 6, and 7 are all closed. The narration must match the final published slides and lecture notes; rewriting either after recording wastes recording time.
+
+**Delivery format.** Each lecture is released as a YouTube video: the slide deck PDF rendered page-by-page as the visual track, with Tim's pre-recorded audio narration overlaid. No live camera, no on-screen Tim. The audio carries the entire pedagogical content; the slides carry the figures and equations the narration references.
+
+**Per-lecture deliverables.**
+
+1. **Narration script** at `narration/lecture<NN>/lecture<NN>_script.md`. One section per slide, in slide order, headed `## Slide N (slide-title-here)`. Body is the spoken text Tim will read into the microphone, written in Tim's spoken voice (see `~/git/dotfiles/claude-config/writing-voice/`), not the academic register of the printed notes. Sentences short enough to read in one breath. No em-dashes (CLAUDE.md ban applies even though this is private prose; the YouTube auto-captions would render them as commas anyway).
+2. **Slide-timing cue sheet** at `narration/lecture<NN>/lecture<NN>_cues.csv` with columns `slide_number, slide_title, target_seconds, recorded_seconds, notes`. Target ≈ 90 minute lecture / number-of-slides, rounded to nearest 10s, with hand-tuned outliers for derivation slides (typically 2-3× the median) and section dividers (typically 0.3× the median).
+3. **Audio master** at `narration/lecture<NN>/lecture<NN>_audio.wav` (uncompressed, mono, 48 kHz, -18 LUFS target). Recorded slide-by-slide so a re-take only re-records the affected slide.
+4. **Composited video** at `narration/lecture<NN>/lecture<NN>_video.mp4`, produced by `ffmpeg` from the slide PDF + audio master + cue sheet. Output spec: 1920×1080, H.264 / AAC, ~5 Mbps target bitrate suitable for YouTube ingest.
+
+**Script-writing workflow per lecture.**
+
+1. Read the final slide deck (`slides/lecture<NN>/lecture<NN>.pdf`) and the matching Jupyter Book chapter side by side.
+2. For each slide, draft 2-6 paragraphs of narration in spoken voice. Reference figures by what the viewer sees on screen ("on the left you see ...", "the curve labelled ..."), not by figure number.
+3. Define every technical term on first use, even if the slide already labels it; viewers may have the audio playing without watching closely.
+4. Equations: read the symbols out loud in plain English first ("temperature equals ... "), then point to the displayed equation ("you see the full form on screen").
+5. End-of-slide hooks: every slide closes with a sentence that motivates the next one, so the audio flows continuously.
+6. Tim reviews and edits the script before recording. Script is the source of truth; recorded audio matches the script verbatim.
+
+**Recording workflow per lecture.**
+
+1. Quiet room, condenser microphone, pop filter, room-tone sample for noise reduction.
+2. Record one slide at a time; if a slide goes wrong, redo just that slide.
+3. Audio editor: Reaper or Audacity. Apply: room-tone noise reduction, gentle de-esser, light compression (3:1, threshold -18 dB), normalisation to -18 LUFS integrated.
+4. Save per-slide WAV stems under `narration/lecture<NN>/stems/slide_<NN>.wav`. Final master is the concatenation with crossfades.
+
+**Video assembly per lecture.**
+
+1. Render slide PDF to per-page PNG at 1920×1080 (`pdftoppm -r 144 -png lecture<NN>.pdf slide`).
+2. Build an `ffmpeg concat` script from the cue sheet: each slide PNG held for `recorded_seconds`, audio master overlaid as the single audio track.
+3. Output: H.264 yuv420p, AAC 192 kbps stereo (mono audio duplicated), 30 fps, faststart flag for streaming.
+4. Local QC: spot-check 3 slides at start / middle / end for audio-video sync. Upload to YouTube as unlisted, get the auto-generated transcript, sanity-check for major mis-hearings.
+
+**Tooling to add (deferred until 4d/4e/3/6/7 close).**
+
+- `narration/` top-level directory, gitignored except for the per-lecture markdown scripts and CSV cue sheets (audio + video stay out of git; they go on Google Drive or YouTube).
+- `Makefile` targets `narration-build-l<NN>` and `narration-build-all` wrapping the pdftoppm + ffmpeg + cue-sheet pipeline.
+- Per-lecture sub-Makefile or shell script that re-renders only changed slides on edit.
+
+**Pacing estimate.** Script drafting ~6-10 hours per lecture (60 slides × 6-10 minutes each, plus the slide-and-notes re-read). Recording ~2× lecture length (90 min lecture → ~3 hours of recording incl. re-takes). Post-production ~3-4 hours per lecture. Total ~12-18 hours per lecture × 14 lectures ≈ 170-250 hours of work. Plan for at least one full month of focused effort, more if spread across other commitments.
+
+**Open questions for Tim to decide before drafting starts.**
+
+1. **Voice register.** Match Tim's lecture-hall delivery (somewhat informal, occasional asides) or closer to a documentary-narration register (tighter, more polished, less improvisation)? Affects script tone throughout.
+2. **Length cap per video.** Strict 90 min (matches in-person lecture) or split into ~30 min chunks per YouTube video (helps retention and re-watching)?
+3. **Closed captions.** Use YouTube auto-captions plus manual corrections, or commission proper SRT/VTT subtitle files? Latter is ~2-3 hours per lecture more work but is the right call for a publicly published BSc course.
+4. **Hosting.** Public YouTube channel under Tim's existing handle, a dedicated course channel, or unlisted videos linked from the deployed Jupyter Book?
