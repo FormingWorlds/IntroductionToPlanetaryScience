@@ -79,7 +79,7 @@ Ice lines for other species ($\mathrm{CO_2}$, $\mathrm{CO}$, $\mathrm{N_2}$, $\m
 :width: 600px
 :align: center
 
-Sequential condensation of major volatile species across a protoplanetary disk and the resulting C/O ratio of grains (dashed) and gas (solid) as a function of disk radius. The H$_2$O ice line at $\sim 2$ AU lowers grain C/O and raises gas C/O; the CO$_2$ ice line at $\sim 10$ AU shifts gas C/O further upward; and beyond the CO ice line at $\sim 40$ AU the gas C/O reaches unity. The dotted line marks the solar reference. The radial sequencing of these ice lines controls the volatile composition that forming planets inherit from their formation zone. Reproduced from {cite:t}`Oberg2011`, Fig. 2.
+Sequential condensation of major volatile species across a protoplanetary disk and the resulting C/O ratio of grains (dashed) and gas (solid) as a function of disk radius. The H$_2$O ice line at $\sim 2$ AU lowers grain C/O and raises gas C/O; the CO$_2$ ice line at $\sim 10$ AU shifts gas C/O further upward; and beyond the CO ice line at $\sim 40$ AU the gas C/O reaches unity. The dotted line marks the solar reference. The radial sequencing of these ice lines controls the volatile composition that forming planets inherit from their formation zone. The exact H$_2$O ice-line location is model-dependent and varies between $\sim 2$ and $3.5$ AU depending on the assumed disk temperature profile and accretion rate. Reproduced from {cite:t}`Oberg2011`, Fig. 2.
 ```
 
 ### Observational evidence: ALMA
@@ -220,7 +220,7 @@ This model naturally explains why Jupiter and Saturn are massive (they formed in
 :width: 600px
 :align: center
 
-Mass evolution of a forming giant planet in the canonical core-accretion picture {cite:p}`Pollack1996`. Phase 1: rapid solid-core growth by planetesimal and pebble accretion. Phase 2: slow envelope contraction at near-constant total mass. Phase 3: runaway gas accretion once the gas envelope mass equals the core mass ($\sim 10$–$20\,\Mearth$ for the nominal Jupiter case), leading to a Jupiter-mass object on a $\sim 10^5$ yr timescale. Adapted from {cite:t}`Drazkowska2023`.
+Mass evolution of a forming giant planet in the core-accretion picture, originally proposed by {cite:t}`Pollack1996` with planetesimal accretion in Phase 1 and extended in modern models to include pebble accretion {cite:p}`Lambrechts2012`. Phase 1: rapid solid-core growth by planetesimal and pebble accretion. Phase 2: slow envelope contraction at near-constant total mass. Phase 3: runaway gas accretion once the gas envelope mass equals the core mass ($\sim 10$–$20\,\Mearth$ for the nominal Jupiter case), leading to a Jupiter-mass object on a $\sim 10^5$ yr timescale. Adapted from {cite:t}`Drazkowska2023`.
 ```
 
 ### Gravitational instability: an alternative pathway
@@ -411,7 +411,7 @@ $$
 
 **Application: Earth's orbital velocity.**
 
-For Earth ($a = 1$ AU $= 1.496 \times 10^{11}$ m, $e = 0.017$):
+For Earth ($a = 1$ AU $= 1.496 \times 10^{11}$ m, $e = 0.0167$):
 
 | Point | Distance $r$ | Velocity |
 |-------|-------------|----------|
@@ -426,7 +426,7 @@ For a dramatic contrast, consider Halley's comet ($a = 17.83$ AU, $e = 0.967$):
 
 | Point | Distance $r$ | Velocity |
 |-------|-------------|----------|
-| Perihelion | $a(1-e) = 0.586$ AU | $v_p = 54.6$ km s$^{-1}$ |
+| Perihelion | $a(1-e) = 0.588$ AU | $v_p = 54.6$ km s$^{-1}$ |
 | Aphelion | $a(1+e) = 35.1$ AU | $v_a = 0.91$ km s$^{-1}$ |
 
 Halley's comet hurtles through the inner solar system at nearly twice Earth's speed, yet crawls beyond Neptune's orbit at less than 1 km s$^{-1}$. This enormous range is a direct consequence of the vis-viva equation applied to a highly eccentric orbit; both speed profiles are plotted in {numref}`fig:visviva`.
