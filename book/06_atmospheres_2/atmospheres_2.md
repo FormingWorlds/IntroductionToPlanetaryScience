@@ -608,7 +608,7 @@ The most likely resolution is a combination of elevated $\mathrm{CO_2}$ and $\ma
 
 ### The Mars climate puzzle
 
-Mars poses an even more extreme version of the same problem. At 1.52 AU, Mars receives less than half of Earth's solar flux, and with the faint young Sun, the situation is even worse. Yet Mars shows compelling geological evidence for warm, wet conditions during the **Noachian** period ($>$3.7 Ga): extensive valley networks carved by flowing water, clay minerals formed by aqueous weathering, and sedimentary deposits in ancient lake basins (including Jezero crater, where the Perseverance rover is currently exploring) {cite:p}`Wordsworth2016`.
+Mars poses an even more extreme version of the same problem. At 1.52 AU, Mars receives less than half of Earth's solar flux, and with the faint young Sun, the situation is even worse. Yet Mars shows compelling geological evidence for warm, wet conditions during the **Noachian** period ($>$3.7 Ga): extensive valley networks carved by flowing water ({numref}`fig:mars-valleys`), clay minerals formed by aqueous weathering, and sedimentary deposits in ancient lake basins (including Jezero crater, where the Perseverance rover is currently exploring) {cite:p}`Wordsworth2016`.
 
 ```{figure} figures/mars_valley_networks.avif
 :name: fig:mars-valleys

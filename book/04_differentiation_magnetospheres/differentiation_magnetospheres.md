@@ -531,6 +531,8 @@ Magnetic fields vary enormously across the solar system. Comparing them reveals 
 | **Neptune** | Active dynamo | ~10–60 $\mu$T | ~28 | Multipolar, tilted ~47° and offset from centre |
 | **Ganymede** | Active dynamo | ~0.7 $\mu$T | $\sim 1.5 \times 10^{-3}$ | Only moon with intrinsic dynamo |
 
+These nine bodies span four orders of magnitude in surface field strength and a range of morphologies from cleanly dipolar (Earth, Jupiter, Saturn, Ganymede) to weak and offset (Mercury) to strongly multipolar (Uranus, Neptune), as illustrated in {numref}`fig:planetary-dipole-moments`.
+
 ```{figure} figures/soderlund2020_planetary_field_morphologies.avif
 :name: fig:planetary-dipole-moments
 :width: 700px
