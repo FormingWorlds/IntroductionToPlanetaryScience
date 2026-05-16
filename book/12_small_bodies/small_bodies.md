@@ -19,7 +19,7 @@ We follow the same descriptive-first structure as in the planet lectures.
 Part 1 introduces meteorites, the only solar-system samples we can study in a laboratory and the source of every absolute age in this course.
 Part 2 surveys the dynamical populations: asteroid belt, near-Earth asteroids, Kuiper Belt, scattered disk, dwarf planets, and the inferred Oort cloud.
 Part 3 covers the messengers and visitors: in-situ space missions, sample-return missions, planetary defence, and the new and remarkable category of interstellar interlopers.
-Pluto is treated here as the largest known KBO, not as a planet.
+Pluto is treated here as the largest known KBO, not as a planet. {numref}`fig:l12-small-bodies-overview` collects the small bodies visited by spacecraft to set the scale for the rest of the lecture.
 
 ```{figure} figures/small_bodies_overview.avif
 :name: fig:l12-small-bodies-overview
@@ -289,7 +289,7 @@ $$
 
 The same work reported chondrule ages from the same meteorite extending from about $4567.3$ Myr down to $4564.7$ Myr, leading {cite:t}`Connelly2012` to argue that chondrule formation began essentially contemporaneously with CAIs. The contemporaneity of the very earliest chondrules with CAIs is contested, however: subsequent high-precision Pb-Pb work {cite:p}`Bollard2017` and Hf-W chronometry of chondrule precursors generally place the bulk of chondrule formation $\sim 1$--$3$ Myr after CAIs, with the oldest Connelly 2012 outlier widely interpreted as a single anomalous grain.
 The CAI age has been confirmed by independent samples and laboratories to within the same precision {cite:p}`Amelin2010`.
-This is the absolute zero of the solar system clock.
+This is the absolute zero of the solar system clock ({numref}`fig:l12-pb-pb` shows the Pb-Pb isochrons for the dated CAIs and chondrules).
 
 ```{figure} figures/pb_pb_dating.avif
 :name: fig:l12-pb-pb
@@ -377,7 +377,7 @@ Crucially, the NC/CC dichotomy is *temporally robust*: NC and CC meteorites with
 The two reservoirs were separate from very early times, and they did not mix for at least the first $\sim 3$-$4$ Myr of disk history {cite:p}`Kruijer2017,Burkhardt2021`.
 
 That much is observation.
-What it *means* is debated, and at the time of writing in 2026 there are at least three live and competing physical interpretations.
+What it *means* is debated, and at the time of writing in 2026 there are at least three live and competing physical interpretations. {numref}`fig:l12-spitzer-ages` shows the Hf-W chronology that any of these interpretations must reproduce: NC iron parent bodies cluster at core-formation ages of $\sim 1$–$2.5$ Myr after CAI formation, while CC parent bodies cluster near $\sim 3$ Myr.
 
 ```{figure} figures/spitzer_nc_cc_ages.avif
 :name: fig:l12-spitzer-ages
@@ -415,7 +415,7 @@ Subsequent re-analysis of cosmic-ray-exposure corrections {cite:p}`SpitzerPt2021
 #### Interpretation 2: snow-line migration and pebble isolation (Lichtenberg et al. 2021)
 
 The second interpretation was proposed by {cite:t}`Lichtenberg2021` using a coupled disk-planetesimal formation model.
-They showed that the bifurcation can arise *without* requiring Jupiter to act as a fully closed barrier in the disk.
+They showed that the bifurcation can arise *without* requiring Jupiter to act as a fully closed barrier in the disk ({numref}`fig:l12-lichtenberg-fig1`).
 
 ```{figure} figures/lichtenberg2021_fig2.avif
 :name: fig:l12-lichtenberg-fig2
@@ -429,7 +429,7 @@ The mechanism is the *cold finger effect*: as the disk cools, the water snow lin
 Sublimating water vapour diffuses back through the snow line and recondenses, building up an enhanced solid surface density just outside the snow line.
 This makes pebbles sticky and triggers a second wave of planetesimal formation (the streaming instability) at later times.
 In this picture, two distinct epochs of planetesimal formation arise naturally from disk evolution itself, separated in both time and chemistry: an early dry inner reservoir (NC) and a later ice-rich outer reservoir (CC).
-Jupiter's role is reduced to *halting pebble drift at its orbit* once the planet has grown massive enough to reach **pebble isolation mass**, which is a much weaker constraint than acting as a gravitational dam.
+Jupiter's role is reduced to *halting pebble drift at its orbit* once the planet has grown massive enough to reach **pebble isolation mass**, which is a much weaker constraint than acting as a gravitational dam. {numref}`fig:l12-lichtenberg-fig2` shows the corresponding pebble fluxes and planetesimal growth timescales at 2 AU and 15 AU in this picture.
 
 The advantage of this mechanism is that it relaxes the requirement for Jupiter to be in place by $\sim 1$ Myr after CAIs, allowing a wider range of giant-planet formation histories.
 The two-epoch planetesimal formation signal had already been identified in independent thermochronological data {cite:p}`Schiller2018`, and the snow-line mechanism gives it a physical origin.
@@ -483,7 +483,7 @@ The asteroid belt is the largest reservoir of small bodies inside Neptune's orbi
 More than $1.4$ million asteroids of all sizes have so far been catalogued by the Minor Planet Center, and the estimated total main-belt population larger than $1$ km is on the order of $10^6$, with several tens of millions of bodies above $\sim 100$ m {cite:p}`Bottke2020`.
 The total mass of the belt is approximately $4 \times 10^{-4}\,\Mearth$, of which Ceres alone contributes about $30\%$.
 The bulk of the orbital distribution lies between $a = 2.1$ AU and $a = 3.3$ AU, with prograde, low-to-moderate eccentricity ($e < 0.3$) orbits and inclinations mostly under $20^{\circ}$.
-The population is sparse: at any given moment the typical separation between belt asteroids is millions of kilometres, far larger than what science fiction usually depicts.
+The population is sparse: at any given moment the typical separation between belt asteroids is millions of kilometres, far larger than what science fiction usually depicts ({numref}`fig:l12-asteroid-orbits`).
 
 ```{figure} figures/demeo_carry_belt_inclination.avif
 :name: fig:l12-asteroid-orbits
@@ -497,7 +497,7 @@ The most striking structural feature of the main belt is the **Kirkwood gaps**: 
 The strongest gaps are at the 3:1 resonance ($a \approx 2.50$ AU), the 5:2 resonance ($a \approx 2.82$ AU), the 7:3 resonance ($a \approx 2.96$ AU), and the 2:1 resonance ($a \approx 3.27$ AU).
 At these locations, an asteroid that completes (say) three orbits while Jupiter completes one experiences a periodic gravitational kick that adds coherently from orbit to orbit.
 Over $10^4$-$10^6$ years the cumulative kicks pump the asteroid's eccentricity to values approaching 1, sending it onto a planet-crossing orbit where it is removed by either an ejection or a planetary impact.
-The Kirkwood gaps are therefore not "empty" in any static sense; they are *dynamical sinks* through which asteroids continuously leak out of the belt {cite:p}`Wisdom1985`.
+The Kirkwood gaps are therefore not "empty" in any static sense; they are *dynamical sinks* through which asteroids continuously leak out of the belt {cite:p}`Wisdom1985` ({numref}`fig:l12-kirkwood`).
 This leakage is the principal source of near-Earth asteroids, as we will see below.
 
 ```{figure} figures/granvik_kirkwood_resonances.avif
@@ -515,7 +515,7 @@ A modern catalogue of asteroid orbits reveals not just a smooth distribution but
 {cite:t}`Hirayama1918` identified the first such families more than a century ago: Eos, Themis, Koronis, Maria, and Flora.
 We now know dozens of significant families, including the Vesta family (fragments of the Rheasilvia impact on Vesta) and many smaller groups.
 Each family is interpreted as the debris of a single collisional disruption: a parent body of a few hundred kilometres broken apart by a high-energy impact, with the fragments inheriting roughly the same orbit and dispersing into a ribbon along the original trajectory.
-By analysing the size distribution and present-day spread of a family, one can estimate the original parent body size, the impact energy, and the age of the disruption event {cite:p}`Nesvorny2015`.
+By analysing the size distribution and present-day spread of a family, one can estimate the original parent body size, the impact energy, and the age of the disruption event {cite:p}`Nesvorny2015` ({numref}`fig:l12-asteroid-families`).
 
 ```{figure} figures/asteroid_families_nesvorny.avif
 :name: fig:l12-asteroid-families
@@ -537,7 +537,7 @@ The main spectral classes track composition and parent body history:
 The distribution of spectral types is *not* spatially uniform.
 The inner belt is dominated by S-types; the outer belt by C-types; and the very outermost zone shades into D and P types similar to the Trojans.
 This mirrors the volatile gradient in the protoplanetary disk: rocky, dry, and metal-rich material formed inside the snow line and now lives in the inner belt, while ice-bearing, organic-rich, hydrated material formed outside and now lives in the outer belt {cite:p}`DeMeo2014`.
-The asteroid belt is a *snapshot* of the inner-to-outer disk transition, preserved in orbital space.
+The asteroid belt is a *snapshot* of the inner-to-outer disk transition, preserved in orbital space ({numref}`fig:l12-demeo-mass`).
 
 ```{figure} figures/demeo_carry_belt_mass.avif
 :name: fig:l12-demeo-mass
@@ -582,7 +582,7 @@ $$
 
 so a smaller, less dense, closer-in body drifts faster {cite:p}`Bottke2006`.
 Plugging in canonical values for a 1 km basaltic NEA ($\rho \sim 2.5$ g cm$^{-3}$, $a \sim 2$ AU) gives $\dd a/\dd t \sim 10^{-4}$ AU per Myr, so the body needs $\sim 10^7$ years to walk the few hundredths of an AU separating it from a Kirkwood resonance.
-This sets the Yarkovsky-resonance delivery clock for the NEA population, and explains why most observed NEAs are small: the supply rate from the main belt scales steeply with $1/D$.
+This sets the Yarkovsky-resonance delivery clock for the NEA population, and explains why most observed NEAs are small: the supply rate from the main belt scales steeply with $1/D$. The drift has been measured directly on individual NEAs such as (6489) Golevka ({numref}`fig:l12-yarkovsky`).
 
 ```{figure} figures/yarkovsky_detection_vokrouhlicky.avif
 :name: fig:l12-yarkovsky
@@ -595,7 +595,7 @@ Direct detection of the Yarkovsky effect on the near-Earth asteroid (6489) Golev
 The closely related **YORP effect** (Yarkovsky-O'Keefe-Radzievskii-Paddack) is a torque from the same asymmetric thermal radiation, acting on the asteroid's *spin*.
 For a non-spherical body, YORP gradually changes the rotation rate and the direction of the spin axis.
 On the longest timescales it can spin a small asteroid up to fission, splitting it into a binary, or slow it to almost zero rotation.
-YORP is the dominant control on the spin rate distribution of asteroids smaller than $\sim 10$ km {cite:p}`Rubincam2000`.
+YORP is the dominant control on the spin rate distribution of asteroids smaller than $\sim 10$ km {cite:p}`Rubincam2000`, and the spin-up itself has been measured directly on the namesake near-Earth asteroid (54509) YORP ({numref}`fig:l12-yorp`).
 
 ```{figure} figures/yorp_detection_vokrouhlicky.avif
 :name: fig:l12-yorp
@@ -611,7 +611,7 @@ Direct detection of the YORP effect on the small near-Earth asteroid (54509) YOR
 Earth has been hit many times during its history.
 We see the consequences as craters on the Moon, Mars, and Mercury; on Earth, plate tectonics and erosion erase most craters within $\sim 100$ Myr, but the largest known impact structures (Chicxulub, Sudbury, Vredefort) are still preserved.
 The present-day impact rate is well constrained from a combination of telescopic surveys, satellite-detected fireballs, and the lunar impact record.
-The basic relationship is a power law: smaller impactors are much more common than large ones, with an integral size-frequency exponent of approximately $-2.3$.
+The basic relationship is a power law: smaller impactors are much more common than large ones, with an integral size-frequency exponent of approximately $-2.3$ ({numref}`fig:l12-impact-freq`).
 
 ```{figure} figures/neo_sfd_schunova.avif
 :name: fig:l12-impact-freq
@@ -660,7 +660,7 @@ The Vera C. Rubin Observatory on Cerro Pachón, Chile, photographed inside the t
 
 The second prerequisite is **deflection**.
 The DART mission (Double Asteroid Redirection Test, NASA) flew the first practical demonstration in 2022, using a $\sim 600$ kg spacecraft as a kinetic impactor on **Dimorphos**, the small moon of the binary asteroid (65803) Didymos.
-The orbital period of Dimorphos around Didymos shortened by approximately 33 minutes, a much larger effect than would be expected from simple momentum transfer; the additional momentum came from the recoil of the ejecta plume the impact generated, a physical effect quantified by the *momentum-transfer enhancement factor* $\beta = 3.61^{+0.19}_{-0.25}$ {cite:p}`Cheng2023`. The orbital period change of $33.0 \pm 1.0$ minutes was measured by {cite:t}`Thomas2023`, with a detailed reconstruction of the impact site and Dimorphos shape provided by {cite:t}`Daly2023`.
+The orbital period of Dimorphos around Didymos shortened by approximately 33 minutes, a much larger effect than would be expected from simple momentum transfer; the additional momentum came from the recoil of the ejecta plume the impact generated, a physical effect quantified by the *momentum-transfer enhancement factor* $\beta = 3.61^{+0.19}_{-0.25}$ {cite:p}`Cheng2023`. The orbital period change of $33.0 \pm 1.0$ minutes was measured by {cite:t}`Thomas2023` from post-impact eclipse light-curves ({numref}`fig:l12-dimorphos`), with a detailed reconstruction of the impact site and Dimorphos shape provided by {cite:t}`Daly2023`.
 DART is the first time human beings have measurably altered the orbit of a celestial body.
 
 That a small moon can stably orbit Didymos at all requires that its orbit lie inside the primary's **Hill sphere**, the region in which the gravity of the asteroid dominates over the tidal pull of the Sun.
@@ -723,7 +723,7 @@ The trans-Neptunian region has several distinct dynamical sub-populations:
 - **Hot classical Kuiper Belt**: orbits at similar semimajor axes but with much higher inclinations (up to $30^{\circ}$) and eccentricities. These are interpreted as objects scattered into the belt during the Nice Model dynamical instability of the giant planets.
 - **Resonant population**: objects in mean-motion resonances with Neptune. The largest sub-population is the **plutinos**, in the 3:2 resonance at $a \approx 39.4$ AU. Pluto itself belongs to this group, hence the name. Other resonances are populated more sparsely, including the 2:1 ("twotinos"), 5:3, 7:4, and 5:2 groups.
 - **Scattered disk**: highly eccentric orbits with perihelia near Neptune ($q \sim 30$ AU) and aphelia extending to 100 AU and beyond. These objects are still being scattered by Neptune today.
-- **Detached objects**: extremely eccentric orbits with perihelia *beyond* Neptune ($q > 40$ AU), so high that no current solar system planet can perturb them significantly. They form a dynamically decoupled population whose origin is debated.
+- **Detached objects**: extremely eccentric orbits with perihelia *beyond* Neptune ($q > 40$ AU), so high that no current solar system planet can perturb them significantly. They form a dynamically decoupled population whose origin is debated ({numref}`fig:l12-kuiper-orbits`).
 
 ```{figure} figures/bannister_ossos_orbits.avif
 :name: fig:l12-kuiper-orbits
@@ -742,7 +742,7 @@ The three components of the CFEPS-L7 synthetic model of the main classical Kuipe
 ```
 
 The single most important point is that the orbital architecture of the trans-Neptunian region is a *fossil* of the dynamical history of the giant planets.
-The bimodal inclination distribution of classical KBOs, the resonant population locked at exact integer ratios with Neptune, and the existence of a broad scattered disk all require a phase of large-scale Neptune migration during the first few hundred Myr of solar system history.
+The bimodal inclination distribution of classical KBOs ({numref}`fig:l12-kuiper-inclination`), the resonant population locked at exact integer ratios with Neptune, and the existence of a broad scattered disk all require a phase of large-scale Neptune migration during the first few hundred Myr of solar system history.
 This is the empirical foundation of the Nice Model and its many variants ({ref}`lecture02`).
 
 
@@ -750,7 +750,7 @@ This is the empirical foundation of the Nice Model and its many variants ({ref}`
 
 Until 2015, Pluto was known mainly as a tiny pixel in Hubble images: clearly red in colour, with a probable polar cap, and a binary companion (Charon) of similar mass.
 The New Horizons spacecraft flyby in July 2015 transformed it into one of the most diverse and surprising worlds in the solar system.
-In a single nine-day high-resolution observing window, New Horizons mapped Pluto's surface, atmosphere, magnetosphere, and four small moons {cite:p}`Stern2015`.
+In a single nine-day high-resolution observing window, New Horizons mapped Pluto's surface, atmosphere, magnetosphere, and four small moons {cite:p}`Stern2015` ({numref}`fig:l12-pluto-color`).
 
 ```{figure} figures/pluto_color_stern.avif
 :name: fig:l12-pluto-color
@@ -767,7 +767,7 @@ The surface is a complex of nitrogen, methane, and carbon monoxide ices on top o
 The most striking surface feature is **Sputnik Planitia**, a $\sim 1{,}000$ km wide basin filled with nitrogen ice that is *currently undergoing solid-state convection*.
 The convection cells are tens of kilometres across and visible directly in the New Horizons images: a polygonal pattern of slowly upwelling and downwelling N$_2$ ice with overturn timescales of $\sim 10^{6}$ years {cite:p}`McKinnon2016`.
 The basin is essentially crater-free, indicating a surface age of less than about 10 Myr, which on a 4.5-Gyr-old body is essentially "yesterday".
-The mere existence of active convection requires an internal heat source, most likely radiogenic decay in the rocky interior.
+The mere existence of active convection requires an internal heat source, most likely radiogenic decay in the rocky interior ({numref}`fig:l12-sputnik-convection`).
 
 ```{figure} figures/sputnik_convection_mckinnon.avif
 :name: fig:l12-sputnik-convection
@@ -791,7 +791,7 @@ This is enough to make Pluto a very weakly *active* world with a measurable atmo
 Charon is Pluto's largest moon and an unusually massive one: at radius $606$ km and mass about an eighth that of Pluto, the system is effectively a *binary*.
 The barycentre of Pluto-Charon lies *outside* Pluto, the only such case among solar system planet-moon systems with a non-trivial primary.
 Charon's surface is older than Pluto's, with a heavily cratered terrain (Vulcan Planum) and large rifts and chasms (Argo Chasma).
-The most striking feature is **Mordor Macula**, a reddish-brown polar cap, which is interpreted as photochemically processed methane and other hydrocarbons that escaped Pluto's atmosphere, were captured by Charon's gravity, and froze onto its cold polar regions {cite:p}`Grundy2016`.
+The most striking feature is **Mordor Macula**, a reddish-brown polar cap, which is interpreted as photochemically processed methane and other hydrocarbons that escaped Pluto's atmosphere, were captured by Charon's gravity, and froze onto its cold polar regions {cite:p}`Grundy2016` ({numref}`fig:l12-mordor` and {numref}`fig:l12-pluto-charon`).
 
 ```{figure} figures/charon_mordor.avif
 :name: fig:l12-mordor
@@ -820,7 +820,7 @@ Arrokoth is dynamically primordial (it has never been close to Neptune), small (
 The flyby revealed it to be a **contact binary**: two flattened lobes joined at a narrow neck, the result of a *very gentle* low-velocity merger of two original components, with a relative velocity at contact of less than a few m s$^{-1}$ {cite:p}`Stern2019`.
 
 The contact-binary morphology and the absence of a high-energy impact crater on the merger surface are extremely strong evidence that Arrokoth formed from the **streaming instability** mechanism: gravitational collapse of a swarm of pebbles into a single bound object on a timescale shorter than the orbital period.
-Arrokoth is therefore the closest thing we currently have to a direct observation of how a $\sim 35$ km planetesimal forms in the disk: not by hierarchical accretion of smaller bodies but as a single low-velocity gravitational collapse {cite:p}`McKinnon2020`.
+Arrokoth is therefore the closest thing we currently have to a direct observation of how a $\sim 35$ km planetesimal forms in the disk: not by hierarchical accretion of smaller bodies but as a single low-velocity gravitational collapse {cite:p}`McKinnon2020` ({numref}`fig:l12-arrokoth`).
 This is the most important single result from the Arrokoth flyby and a major piece of evidence in favour of streaming-instability models.
 
 ```{figure} figures/arrokoth_color_stern.avif
@@ -836,14 +836,14 @@ Enhanced colour image of (486958) Arrokoth (then informally "Ultima Thule") at 1
 
 Aside from Pluto and Ceres, the IAU currently recognises three other dwarf planets, all in the trans-Neptunian region:
 
-- **Eris**, discovered in 2005 by Brown, Trujillo, and Rabinowitz. It is a scattered-disk object with perihelion 38 AU and aphelion 97 AU, and slightly *more massive* than Pluto, although now thought to be marginally smaller in radius (and therefore denser). Its discovery was the trigger for the IAU's 2006 redefinition of the term "planet", and it has a small moon, Dysnomia.
-- **Haumea**, an extraordinary fast rotator (rotation period of $\sim 3.9$ hours) that has been spun into a triaxial ellipsoid. It has a thin ring system, two moons (Hi'iaka and Namaka), and a dynamical family of fragments interpreted as the products of a giant impact {cite:p}`Ortiz2017`.
-- **Makemake**, a classical KBO with a methane-ice surface and one small known moon (S/2015 (136472) 1).
+- **Eris**, discovered in 2005 by Brown, Trujillo, and Rabinowitz. It is a scattered-disk object with perihelion 38 AU and aphelion 97 AU, and slightly *more massive* than Pluto, although now thought to be marginally smaller in radius (and therefore denser). Its discovery was the trigger for the IAU's 2006 redefinition of the term "planet", and it has a small moon, Dysnomia ({numref}`fig:l12-eris`).
+- **Haumea**, an extraordinary fast rotator (rotation period of $\sim 3.9$ hours) that has been spun into a triaxial ellipsoid. It has a thin ring system, two moons (Hi'iaka and Namaka), and a dynamical family of fragments interpreted as the products of a giant impact {cite:p}`Ortiz2017` ({numref}`fig:l12-haumea`).
+- **Makemake**, a classical KBO with a methane-ice surface and one small known moon (S/2015 (136472) 1) ({numref}`fig:l12-makemake`).
 
 Several other large TNOs (Gonggong, Quaoar, Orcus, Salacia, Sedna) are dwarf-planet candidates pending precise size and shape measurements.
 **Sedna** is particularly noteworthy: it has perihelion 76 AU and aphelion approximately 900 AU, with an orbital period of about 11{,}400 years.
 Such an extreme orbit cannot have been excited by Neptune (perihelion is too high) or by passing stars (aphelion is too low for the present galactic environment).
-Sedna is interpreted either as evidence for a previously closer perturber that no longer exists, or as a member of an inner Oort cloud population produced during the Sun's birth cluster phase {cite:p}`Brown2004`.
+Sedna is interpreted either as evidence for a previously closer perturber that no longer exists, or as a member of an inner Oort cloud population produced during the Sun's birth cluster phase {cite:p}`Brown2004` ({numref}`fig:l12-sedna-orbit`).
 
 ```{figure} figures/eris.avif
 :name: fig:l12-eris
@@ -881,7 +881,7 @@ Three-dimensional and projected views of the orbits of detached trans-Neptunian 
 ### The Oort cloud
 
 The **Oort cloud** is the most distant component of the solar system: a roughly spherical, isotropic shell of icy bodies at heliocentric distances of approximately $2{,}000$ to $50{,}000$ AU (with an inner Hills component at $\sim 2{,}000$–$20{,}000$ AU and an outer classical component at $\sim 20{,}000$–$50{,}000$ AU), named for Jan Oort, who first inferred its existence in 1950 from the orbital statistics of long-period comets {cite:p}`Oort1950`.
-Oort noticed that the long-period comets do *not* arrive isotropically with random energies; their distribution of orbital energies has a strong concentration at very small (almost-bound) values, exactly what you expect if the comets are slowly perturbed inward from a large reservoir at $\sim 10^{4}$-$10^{5}$ AU.
+Oort noticed that the long-period comets do *not* arrive isotropically with random energies; their distribution of orbital energies has a strong concentration at very small (almost-bound) values, exactly what you expect if the comets are slowly perturbed inward from a large reservoir at $\sim 10^{4}$-$10^{5}$ AU ({numref}`fig:l12-oort-schematic` shows the inferred cloud structure from a numerical formation model).
 
 ```{figure} figures/oort_cloud_kaib.avif
 :name: fig:l12-oort-schematic
@@ -937,11 +937,11 @@ Inside roughly 5 AU, sublimation of water ice becomes thermodynamically efficien
 - The **ion (plasma) tail**: ionised molecules in the coma, swept anti-sunward by the solar wind. The ion tail is typically blue (from CO$^+$ and other ions) and straight, and points directly away from the Sun.
 - The **dust tail**: solid dust grains released from the nucleus and pushed by the radiation pressure of sunlight. Larger grains experience weaker radiation pressure relative to gravity and lag behind the comet, producing a curved tail that trails along the orbit. The dust tail is typically yellow or white.
 
-The two tails *point in different directions*, and this is one of the easiest diagnostics for distinguishing a comet from an asteroid in a survey image.
+The two tails *point in different directions*, and this is one of the easiest diagnostics for distinguishing a comet from an asteroid in a survey image ({numref}`fig:l12-comet-anatomy`).
 
 Halley's Comet ({numref}`fig:l12-halley`) is the prototypical example.
 With a 76-year period it returns to the inner solar system roughly once per human lifetime; its 1986 apparition was the target of the Giotto, Vega, and Suisei spacecraft, which together provided the first close-up images of a comet nucleus.
-Halley's nucleus is approximately $15 \times 8 \times 8$ km, irregular and very dark, with the active jets confined to small fractions of the surface.
+Halley's nucleus is approximately $15 \times 8 \times 8$ km, irregular and very dark, with the active jets confined to small fractions of the surface. The 1986 apparition was also recorded from the ground as a long-tailed comet against the Milky Way ({numref}`fig:l12-halley1986`).
 
 ```{figure} figures/halley.avif
 :name: fig:l12-halley
@@ -996,7 +996,7 @@ Earth's ocean water has a well-measured D/H of $\sim 1.56 \times 10^{-4}$ (the s
 Carbonaceous chondrites span a relatively narrow range of D/H near this value.
 Comets, however, span a much wider range:
 
-- **103P/Hartley 2** (a Jupiter-family comet imaged by the EPOXI mission in 2010) has D/H very close to VSMOW {cite:p}`Hartogh2011`.
+- **103P/Hartley 2** (a Jupiter-family comet imaged by the EPOXI mission in 2010; {numref}`fig:l12-hartley2`) has D/H very close to VSMOW {cite:p}`Hartogh2011`.
 - **67P/Churyumov-Gerasimenko** (the Rosetta target, also a Jupiter-family comet) has D/H about three times VSMOW {cite:p}`Altwegg2015`.
 - **C/1995 O1 (Hale-Bopp)** and other long-period (Oort cloud) comets have D/H about twice VSMOW.
 
@@ -1026,7 +1026,7 @@ This final part of the lecture surveys the most important recent results from th
 
 The European Space Agency's **Rosetta** mission was the first to orbit a comet, the first to deploy a lander on one, and one of the most scientifically transformative small-body missions in history.
 Rosetta launched in 2004, made multiple gravity assists at Earth and Mars, and after a 10-year cruise rendezvoused with comet 67P/Churyumov-Gerasimenko in August 2014.
-The spacecraft remained with the comet through perihelion (August 2015) and beyond, and ended its mission in September 2016 with a controlled descent onto the nucleus.
+The spacecraft remained with the comet through perihelion (August 2015) and beyond, and ended its mission in September 2016 with a controlled descent onto the nucleus ({numref}`fig:l12-67p`).
 
 The lander, **Philae**, separated from Rosetta in November 2014 and made the first soft landing on a cometary nucleus.
 Philae's harpoon system failed at touchdown and the lander bounced twice before coming to rest in a partially shaded location.
@@ -1061,7 +1061,7 @@ Each was a significant engineering challenge and each has yielded laboratory sci
 **Hayabusa** (JAXA, 2003--2010) was the first.
 It visited the small ($\sim 535$ m long) S-type near-Earth asteroid (25143) **Itokawa** in 2005, briefly touched down twice on the surface, and returned a sample capsule to Earth in June 2010.
 The sample was tiny: about 1{,}500 microscopic grains, with a total mass under 1 mg.
-But the analysis was definitive: Itokawa's surface composition matches the LL-class ordinary chondrites, confirming the long-suspected link between S-type asteroids and ordinary chondrites {cite:p}`Nakamura2011`.
+But the analysis was definitive: Itokawa's surface composition matches the LL-class ordinary chondrites, confirming the long-suspected link between S-type asteroids and ordinary chondrites {cite:p}`Nakamura2011` ({numref}`fig:l12-itokawa`).
 
 ```{figure} figures/itokawa_full.avif
 :name: fig:l12-itokawa
@@ -1075,7 +1075,7 @@ The S-type near-Earth asteroid (25143) Itokawa imaged by Hayabusa AMICA in 2005.
 Ryugu's samples are extraordinarily volatile-rich: water-bearing phyllosilicates, carbonates, magnetite, and a wide variety of organic molecules including amino acids and pyrimidine nucleobases (uracil and thymine analogues) {cite:p}`Yokoyama2023,Oba2023`.
 Bulk composition analysis shows that Ryugu is essentially a CI chondrite, confirming the existence of CI-class material in a known parent body for the first time {cite:p}`Yokoyama2023`.
 Hayabusa2 included an artificial impactor that excavated a fresh subsurface crater, allowing the team to sample subsurface material that had been shielded from space weathering.
-The mission is currently extended for further small-body flybys.
+The mission is currently extended for further small-body flybys ({numref}`fig:l12-ryugu`).
 
 ```{figure} figures/ryugu.avif
 :name: fig:l12-ryugu
@@ -1089,7 +1089,7 @@ The C-type near-Earth asteroid (162173) Ryugu imaged by Hayabusa2 ONC-T on 12 Ju
 After two years of remote characterisation, the spacecraft executed a "touch-and-go" sample-collection event in October 2020, then returned to Earth and dropped its sample capsule in the Utah desert in September 2023.
 The total recovered sample was approximately $121$ g, far in excess of the original $\sim 60$ g goal {cite:p}`Lauretta2024`.
 First analyses show hydrated phyllosilicates, magnesium and sodium phosphates, carbonates (including a striking abundance of magnesium carbonate veins), carbon-rich organic matter, and a suite of amino acids and nucleobases, with high water content and a CI-chondrite-like bulk composition (with the most volatile elements more abundant than in CM, CO, CV, or CK chondrites) {cite:p}`Lauretta2024`.
-The mineralogy of Bennu is consistent with extensive aqueous alteration of an outer-solar-system precursor.
+The mineralogy of Bennu is consistent with extensive aqueous alteration of an outer-solar-system precursor ({numref}`fig:l12-bennu`).
 
 ```{figure} figures/bennu_lauretta.avif
 :name: fig:l12-bennu
@@ -1125,7 +1125,7 @@ The Dinkinesh-Selam system imaged by NASA's Lucy mission during the 1 November 2
 ```
 
 The Lucy mission has already produced a remarkable surprise.
-During the test flyby of (152830) Dinkinesh in November 2023, the spacecraft discovered that Dinkinesh has a small *contact-binary moonlet* in orbit around it: two attached fragments approximately $210$ m and $230$ m in diameter (about $500$ m end to end), the first such configuration ever seen orbiting another body {cite:p}`Levison2024`.
+During the test flyby of (152830) Dinkinesh in November 2023, the spacecraft discovered that Dinkinesh has a small *contact-binary moonlet* in orbit around it: two attached fragments approximately $210$ m and $230$ m in diameter (about $500$ m end to end), the first such configuration ever seen orbiting another body {cite:p}`Levison2024` ({numref}`fig:l12-dinkinesh`).
 Dinkinesh is therefore one of the more dynamically peculiar small bodies known, with a satellite that appears to have formed from a separate gentle merger event.
 This is exactly the kind of unexpected discovery that makes flyby missions worth doing.
 
@@ -1134,7 +1134,7 @@ This is exactly the kind of unexpected discovery that makes flyby missions worth
 
 NASA's **Psyche** mission, launched in October 2023, is en route to (16) **Psyche**, the largest M-type asteroid ($\sim 222$ km effective diameter) with arrival scheduled for 2029.
 Psyche is one of the most enigmatic large asteroids: M-type spectra usually indicate metal-rich surfaces, and ground-based radar reflectivity measurements suggest that (16) Psyche has a much higher metal content than typical asteroids.
-The most popular interpretation is that Psyche is the **exposed core** of a once-larger differentiated planetesimal whose silicate mantle was stripped by a giant impact in the early solar system {cite:p}`ElkinsTanton2020`.
+The most popular interpretation is that Psyche is the **exposed core** of a once-larger differentiated planetesimal whose silicate mantle was stripped by a giant impact in the early solar system {cite:p}`ElkinsTanton2020` ({numref}`fig:l12-psyche`).
 If correct, Psyche would be the only place in the solar system where we can observe a planetary core directly, without any overlying mantle.
 
 ```{figure} figures/psyche_shape_shepard.avif
@@ -1158,8 +1158,8 @@ Within eight years, three have been found.
 
 **1I/'Oumuamua** (October 2017), discovered by the Pan-STARRS survey, was the first.
 Its hyperbolic orbit immediately identified it as unbound to the Sun: it was *passing through* our solar system on a one-way trip.
-Tracking observations revealed a small ($\sim 100$-$200$ m long), highly elongated body with a distinctive light curve indicating an axial ratio of at least 6:1 (and possibly 10:1 or more, depending on the rotation pole orientation), making 'Oumuamua one of the most elongated bodies ever observed in our solar system; it also showed a non-gravitational acceleration on its way out of the solar system that has never been fully explained {cite:p}`Meech2017,Micheli2018,OumuamuaTeam2019`.
-'Oumuamua showed no detectable coma or dust tail at the limit of available observations, despite the non-gravitational acceleration suggesting comet-like outgassing.
+Tracking observations revealed a small ($\sim 100$-$200$ m long), highly elongated body with a distinctive light curve indicating an axial ratio of at least 6:1 (and possibly 10:1 or more, depending on the rotation pole orientation), making 'Oumuamua one of the most elongated bodies ever observed in our solar system; it also showed a non-gravitational acceleration on its way out of the solar system that has never been fully explained {cite:p}`Meech2017,Micheli2018,OumuamuaTeam2019` ({numref}`fig:l12-oumuamua-discovery`).
+'Oumuamua showed no detectable coma or dust tail at the limit of available observations, despite the non-gravitational acceleration suggesting comet-like outgassing. The Pan-STARRS detection of a single ISO already implies a much larger space density of interstellar objects than any pre-discovery estimate ({numref}`fig:l12-oumuamua`).
 Its physical nature remains debated: candidates include a fragment of a tidally disrupted parent body, an extreme cometary nucleus rich in molecular hydrogen ice, a nitrogen ice fragment from a Pluto-like exoplanet, or, more exotically, a fractal aggregate.
 
 ```{figure} figures/oumuamua_discovery_meech.avif
@@ -1179,7 +1179,7 @@ Inferred space number density of interstellar objects in pc$^{-3}$ implied by th
 ```
 
 **2I/Borisov** (August 2019), discovered by amateur astronomer Gennady Borisov, was the second confirmed interstellar object and the first that was unambiguously *cometary*.
-It displayed a coma and a dust tail consistent with sublimating volatiles, and its bulk composition (as derived from spectroscopy) was broadly similar to solar-system comets but with an unusually high CO/H$_2$O ratio, suggesting that it formed in a colder region than typical solar-system comets {cite:p}`Bodewits2020`.
+It displayed a coma and a dust tail consistent with sublimating volatiles, and its bulk composition (as derived from spectroscopy) was broadly similar to solar-system comets but with an unusually high CO/H$_2$O ratio, suggesting that it formed in a colder region than typical solar-system comets {cite:p}`Bodewits2020` ({numref}`fig:l12-borisov`).
 2I/Borisov was the first opportunity to study the outgassed composition of a *cometary* body from another planetary system, and it was treated as an early demonstration of how rapidly the scientific community can mobilise to observe a transient interstellar visitor.
 
 ```{figure} figures/borisov_composition_bodewits.avif
@@ -1201,7 +1201,7 @@ Interstellar objects are therefore likely a substantial component of the small-b
 The European Space Agency's **Comet Interceptor** mission (planned launch 2029) is designed precisely to take advantage of this new population.
 Unlike traditional comet missions, which require a years-long cruise to a known target, Comet Interceptor will be parked at the Sun-Earth L2 Lagrange point and wait until a suitable target is discovered, either an unusually pristine long-period comet or an interstellar visitor.
 When a target is identified with enough warning time, Comet Interceptor will launch onto an intercept trajectory.
-The science payload includes three flyby probes (one main spacecraft, one smaller ESA sub-probe, and one smaller JAXA sub-probe) that will image and sample the target from multiple geometries during a single rapid flyby {cite:p}`Snodgrass2019`.
+The science payload includes three flyby probes (one main spacecraft, one smaller ESA sub-probe, and one smaller JAXA sub-probe) that will image and sample the target from multiple geometries during a single rapid flyby {cite:p}`Snodgrass2019` ({numref}`fig:l12-comet-interceptor`).
 
 ```{figure} figures/comet_interceptor.avif
 :name: fig:l12-comet-interceptor
