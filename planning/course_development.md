@@ -674,17 +674,17 @@ Each homework requires:
 - Full solutions (for instructors)
 - Student solution template (partial solutions / answer boxes)
 
-#### Exams (2 sets, each with solutions)
+#### Exams (2 sets, each with solutions) — developed in the **private repository** (see §11)
 
-| Exam | Scope | Status |
-|------|-------|--------|
-| Mid-term | Lectures 1–7 | Not started |
-| Final | Lectures 1–14 (cumulative) | Not started |
+| Exam | Scope | Status | Location |
+|------|-------|--------|----------|
+| Mid-term | Lectures 1–7 | Not started | private repo |
+| Final | Lectures 1–14 (cumulative) | Not started | private repo |
 
 Each exam requires:
-- Exam paper
-- Full solutions and marking scheme
-- Equation sheet
+- Exam paper (private until exam day; released to students at exam start)
+- Full solutions and marking scheme (private; released to students after marking, or retained for instructor use only)
+- Equation sheet (may be public if released as a study aid before the exam; decide per exam)
 
 ### Reusable Material from course2025
 
@@ -725,10 +725,10 @@ The previous iteration (12 lectures, 9 tutorials) provides a foundation to draw 
 9. **Phase 4d — Inline figure references (Lectures 9–14):** ⏭️ Next. Every figure must be referenced in the body text with `` {numref}`fig:...` ``, rendering as "(Fig. NN.M)". L01-L08 already have near-complete coverage (24 / 25 to 26 / 26 per lecture). L09-L14 are sparse: L9 has 4 / 28, L10 has 1 / 31, L11 has 1 / 40, L12 has 10 / 48, L13 has 2 / 42, L14 has 8 / 30. About 193 figures need an inline reference placed at the natural point in the prose where the figure is discussed. Also closes the two L04 / L06 stragglers. Run lecture-by-lecture; commit per lecture to `origin/main` so the deployed site iterates immediately.
 10. **Phase 4e — Figure-by-figure walkthrough with Tim:** After 4d, walk through every figure in every lecture one at a time, in order (L01 Fig. 1.1 first, L14 Fig. 14.30 last). For each figure: render the page section, present the figure to Tim, Tim decides accept / replace / re-crop / re-caption / drop. The session is interactive: Tim drives the verdict, Claude executes the agreed action immediately (replace from another source, re-crop, edit caption, swap citation, remove the figure and its inline reference). Total scope is 461 figures. Pace: 25-50 figures per session, lecture-by-lecture, with a per-lecture commit at the end. This pass supersedes any earlier "figure spot-check" notes.
 11. **Phase 5 — Lecture slides (Lectures 9–14):** ✅ Complete. L9-L14 slide decks built (60+ frames each), three-pass review applied, final deck commit `c53d778` (2026-04-26).
-12. **Phase 3 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7. Reuses tutorial material from `content/course2025` (resonances, N-body, heat-transport, atmosphere-escape problem sets). Open.
-13. **Phase 6 — Homework sheets 5–7 + final exam:** Remaining homework and cumulative final exam. Open.
+12. **Phase 3 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7. Reuses tutorial material from `content/course2025` (resonances, N-body, heat-transport, atmosphere-escape problem sets). Homework problem sheets are public (this repo); **mid-term exam paper, full solutions, and marking scheme are developed in the private repository** (see §11). Open.
+13. **Phase 6 — Homework sheets 5–7 + final exam:** Remaining homework and cumulative final exam. Homework problem sheets are public; **final exam paper, full solutions, and marking scheme are developed in the private repository** (see §11). Open.
 14. **Phase 7 — Review and polish:** Cross-referencing between lectures, consistency check, equation sheet compilation, deployed-site smoke test before the September 2026 teaching slot.
-15. **Phase 8 — Video narration scripts and audio recording (final item):** Produce a written narration script per lecture, slide-by-slide, that Tim records as audio. The audio is then overlaid on the slide PDF for YouTube delivery. Scripts written only after all notes, slides, homework, and exams are final, because the narration must match the published material verbatim. See §10 below for the per-lecture script structure, slide-timing protocol, and recording / overlay workflow.
+15. **Phase 8 — Video narration scripts and audio recording (final item):** Produce a written narration script per lecture, slide-by-slide, that Tim records as audio. The audio is then overlaid on the slide PDF for YouTube delivery. Scripts written only after all notes, slides, homework, and exams are final, because the narration must match the published material verbatim. **Scripts, audio masters, per-slide WAV stems, and composited video files all live in the private repository** (see §11); only the YouTube-published video is publicly accessible. See §10 below for the per-lecture script structure, slide-timing protocol, and recording / overlay workflow.
 
 ---
 
@@ -1178,8 +1178,8 @@ Date opened: **2026-05-16**. Cannot start until Phases 4d, 4e, 3, 6, and 7 are a
 
 **Tooling to add (deferred until 4d/4e/3/6/7 close).**
 
-- `narration/` top-level directory, gitignored except for the per-lecture markdown scripts and CSV cue sheets (audio + video stay out of git; they go on Google Drive or YouTube).
-- `Makefile` targets `narration-build-l<NN>` and `narration-build-all` wrapping the pdftoppm + ffmpeg + cue-sheet pipeline.
+- `narration/` top-level directory lives in the **private repository** (see §11), not this public repo. Scripts, cue sheets, audio stems, audio masters, and composited video files all live together there. Public exposure of narration material is via YouTube only.
+- `Makefile` targets `narration-build-l<NN>` and `narration-build-all` in the private repo, wrapping the pdftoppm + ffmpeg + cue-sheet pipeline. The build reads the public repo's slide PDFs via a relative path (`../IntroductionToPlanetaryScience/slides/lecture<NN>/lecture<NN>.pdf`) so both repos can be checked out side by side.
 - Per-lecture sub-Makefile or shell script that re-renders only changed slides on edit.
 
 **Pacing estimate.** Script drafting ~6-10 hours per lecture (60 slides × 6-10 minutes each, plus the slide-and-notes re-read). Recording ~2× lecture length (90 min lecture → ~3 hours of recording incl. re-takes). Post-production ~3-4 hours per lecture. Total ~12-18 hours per lecture × 14 lectures ≈ 170-250 hours of work. Plan for at least one full month of focused effort, more if spread across other commitments.
@@ -1190,3 +1190,85 @@ Date opened: **2026-05-16**. Cannot start until Phases 4d, 4e, 3, 6, and 7 are a
 2. **Length cap per video.** Strict 90 min (matches in-person lecture) or split into ~30 min chunks per YouTube video (helps retention and re-watching)?
 3. **Closed captions.** Use YouTube auto-captions plus manual corrections, or commission proper SRT/VTT subtitle files? Latter is ~2-3 hours per lecture more work but is the right call for a publicly published BSc course.
 4. **Hosting.** Public YouTube channel under Tim's existing handle, a dedicated course channel, or unlisted videos linked from the deployed Jupyter Book?
+
+---
+
+## 11. Private repository (open, blocked on Tim creating it)
+
+Date opened: **2026-05-16**.
+
+**Why.** Two distinct classes of material must not be publicly accessible:
+
+1. **Exam papers, full solutions, and marking schemes** for the mid-term (L1-L7) and final (L1-L14). If these reach students before the exam, the assessment is meaningless. They must be developed somewhere students cannot read them, even by inspecting commit history of a temporarily-private artifact.
+2. **YouTube narration material**: scripts, audio stems, audio masters, composited video files (Phase 8, §10). These are creative work specific to Tim's narration; the only public-facing artifact is the YouTube video itself. Keeping the source material in a private repo also avoids bloating this public repo with multi-gigabyte audio and video files.
+
+**Repository to create.**
+
+- **Suggested name:** `IntroductionToPlanetaryScience-private`.
+- **Suggested host:** GitHub, **private** visibility, under the `FormingWorlds` organisation (mirrors the public repo's org). Tim chooses whether co-instructors or TAs get read access.
+- **Suggested local path:** `~/git/IntroductionToPlanetaryScience-private/` — side by side with the public checkout so the narration `Makefile` can resolve relative paths to `../IntroductionToPlanetaryScience/slides/`.
+
+**Layout inside the private repo.**
+
+```
+IntroductionToPlanetaryScience-private/
+├── README.md                       # private; describes scope and access policy
+├── .gitignore
+├── exams/
+│   ├── midterm/
+│   │   ├── midterm_paper.tex
+│   │   ├── midterm_solutions.tex
+│   │   ├── midterm_marking_scheme.md
+│   │   └── equation_sheet.tex      # optional; may be released publicly later
+│   └── final/
+│       ├── final_paper.tex
+│       ├── final_solutions.tex
+│       ├── final_marking_scheme.md
+│       └── equation_sheet.tex
+├── narration/
+│   ├── lecture01/
+│   │   ├── lecture01_script.md
+│   │   ├── lecture01_cues.csv
+│   │   ├── lecture01_audio.wav
+│   │   ├── lecture01_video.mp4
+│   │   └── stems/
+│   │       ├── slide_01.wav
+│   │       └── ...
+│   └── ...                          # lecture02 .. lecture14
+├── Makefile                         # narration-build-l<NN>, exam-build-midterm, ...
+└── tools/
+    └── pdf_to_pages.sh              # pdftoppm + ffmpeg helper for video assembly
+```
+
+**Cross-repo conventions.**
+
+- The private repo treats the public repo as upstream content. It never modifies public-repo files; it only reads slide PDFs and lecture markdown for narration alignment.
+- Both repos share the same `references.bib` policy: if the private repo needs a new citation (e.g. in an exam-question prompt that references a specific paper), the BibTeX entry is added to the **public** repo's `book/references.bib` so the public lecture notes can also use it. Never duplicate bib entries across the two repos.
+- Slide PDFs are produced in the public repo (`make slides` there) and **read** by the private repo's narration build. Never copy slide PDFs into the private repo.
+
+**Release flow for exams.**
+
+1. Exam paper drafted in the private repo over several months.
+2. ~2 weeks before the exam: equation sheet (if any) released to students via a public PDF in the public repo, announced on the Jupyter Book landing page.
+3. Exam day: paper printed from the private repo and distributed in the exam hall. PDF version uploaded to the university LMS at the exam start time, not before.
+4. After marking: solutions optionally released to students via the LMS (Tim decides per exam); marking scheme stays private indefinitely.
+
+**Release flow for narration audio + video.**
+
+1. Recorded and edited in the private repo per §10.
+2. Composited video uploaded to YouTube (public or unlisted, decided per Tim's hosting choice in §10 question 4).
+3. YouTube video link added to the deployed Jupyter Book lecture landing page (public). The link is the **only** public-facing artifact; the underlying script, audio stems, and master video stay private.
+
+**Bootstrap steps when this phase starts.**
+
+1. Tim creates `FormingWorlds/IntroductionToPlanetaryScience-private` on GitHub (private, no default branch protection needed yet).
+2. Clone locally: `git clone git@github.com:FormingWorlds/IntroductionToPlanetaryScience-private.git ~/git/IntroductionToPlanetaryScience-private`.
+3. Initial commit: README.md describing scope + access policy, `.gitignore` excluding build artifacts (PDFs from .tex, .aux, .log, .out, etc), the layout above scaffolded as empty directories with `.gitkeep`.
+4. Add the new repo path to `CLAUDE.md`'s scope-containment exceptions for this project, with a note that exam content must never leak from private to public and that narration audio/video must never be committed to the public repo.
+
+**Open decisions for Tim.**
+
+1. **Repo name.** `IntroductionToPlanetaryScience-private` vs shorter `IPS-private` vs domain-flavoured `IPS-exams-narration`. The first matches the public repo's naming and is the safest default.
+2. **Org vs personal.** Under `FormingWorlds` (org-managed, easier to share with co-instructors and TAs) or under `timlichtenberg` (simpler, but harder to delegate access later).
+3. **Homework full solutions.** Plan §5 says "Full solutions (for instructors)" for each homework. Should those also live in the private repo (consistent with exam solutions), or stay in this public repo behind a release-after-deadline policy? Defaulting to public for now per the current §5 wording, but worth a deliberate choice before Phase 3 starts.
+4. **Access tier.** Tim only, Tim + co-instructors, Tim + co-instructors + TAs? Affects branch protection and review policy.
