@@ -1193,9 +1193,20 @@ Date opened: **2026-05-16**. Cannot start until Phases 4d, 4e, 3, 6, and 7 are a
 
 ---
 
-## 11. Private repository (open, blocked on Tim creating it)
+## 11. Private repository (bootstrapped 2026-05-16)
 
-Date opened: **2026-05-16**.
+Date opened: **2026-05-16**. **Bootstrap complete 2026-05-16.**
+
+**Repo:** [`timlichtenberg/IntroductionToPlanetaryScience-private`](https://github.com/timlichtenberg/IntroductionToPlanetaryScience-private), **private visibility, single owner** (`@timlichtenberg`). Local checkout at `~/git/IntroductionToPlanetaryScience-private/`. Initial commit pushed to `origin/main` with the scaffolded layout (README, .gitignore, `exams/{midterm,final}/`, `narration/lecture01..14/`, `tools/`, plus a `narration/README.md` documenting the Google Drive symlink convention).
+
+**Decisions taken at bootstrap:**
+
+1. Repo name: `IntroductionToPlanetaryScience-private` (matches public repo naming).
+2. Host: `timlichtenberg` personal account (not org-managed), so only Tim has access. Co-instructor / TA access deferred until needed.
+3. Homework full solutions: stay in the **public** repo (Tim's call: "full open access policy; the students are adults"). Only exam material and narration source material live private.
+4. Audio + video storage: **not in git**. Audio masters and composited videos live in a Google Drive folder, accessed through a per-machine `narration/gdrive-<username>` symlink that is gitignored. Mirrors the convention from `~/git/paper-writing/`.
+
+The rest of this section documents the rationale, layout, and release flows. Most of it stands as written before bootstrap; the bootstrap-time changes are reflected above.
 
 **Why.** Two distinct classes of material must not be publicly accessible:
 
@@ -1259,16 +1270,9 @@ IntroductionToPlanetaryScience-private/
 2. Composited video uploaded to YouTube (public or unlisted, decided per Tim's hosting choice in §10 question 4).
 3. YouTube video link added to the deployed Jupyter Book lecture landing page (public). The link is the **only** public-facing artifact; the underlying script, audio stems, and master video stay private.
 
-**Bootstrap steps when this phase starts.**
+**Bootstrap steps (executed 2026-05-16).** ✅ Complete.
 
-1. Tim creates `FormingWorlds/IntroductionToPlanetaryScience-private` on GitHub (private, no default branch protection needed yet).
-2. Clone locally: `git clone git@github.com:FormingWorlds/IntroductionToPlanetaryScience-private.git ~/git/IntroductionToPlanetaryScience-private`.
-3. Initial commit: README.md describing scope + access policy, `.gitignore` excluding build artifacts (PDFs from .tex, .aux, .log, .out, etc), the layout above scaffolded as empty directories with `.gitkeep`.
-4. Add the new repo path to `CLAUDE.md`'s scope-containment exceptions for this project, with a note that exam content must never leak from private to public and that narration audio/video must never be committed to the public repo.
-
-**Open decisions for Tim.**
-
-1. **Repo name.** `IntroductionToPlanetaryScience-private` vs shorter `IPS-private` vs domain-flavoured `IPS-exams-narration`. The first matches the public repo's naming and is the safest default.
-2. **Org vs personal.** Under `FormingWorlds` (org-managed, easier to share with co-instructors and TAs) or under `timlichtenberg` (simpler, but harder to delegate access later).
-3. **Homework full solutions.** Plan §5 says "Full solutions (for instructors)" for each homework. Should those also live in the private repo (consistent with exam solutions), or stay in this public repo behind a release-after-deadline policy? Defaulting to public for now per the current §5 wording, but worth a deliberate choice before Phase 3 starts.
-4. **Access tier.** Tim only, Tim + co-instructors, Tim + co-instructors + TAs? Affects branch protection and review policy.
+1. ✅ Repo created: `gh repo create timlichtenberg/IntroductionToPlanetaryScience-private --private`.
+2. ✅ Cloned locally to `~/git/IntroductionToPlanetaryScience-private/`.
+3. ✅ Initial commit: README.md (scope + access policy + cross-repo conventions), `.gitignore` (LaTeX build artifacts, audio + video binaries, `gdrive-*` symlinks), directory scaffold (`exams/midterm`, `exams/final`, `narration/lecture01..14`, `tools/`) with `.gitkeep` placeholders, `narration/README.md` documenting the per-machine Google Drive symlink convention.
+4. ✅ `CLAUDE.md` in this public repo updated with the "Companion private repository" section listing five hard rules: no exam content here, no narration audio/video here, no slide PDFs copied across, single shared `references.bib`, single-owner private repo.

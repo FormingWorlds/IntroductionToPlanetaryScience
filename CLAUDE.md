@@ -19,6 +19,20 @@ University course materials repository for "Introduction to Planetary Science" a
 - `content/course2025` — Symlink to Google Drive containing previous lecture materials (slides, data, etc.); gitignored and not tracked
 - `.github/workflows/book.yml` — GitHub Actions workflow deploying HTML to GitHub Pages
 
+## Companion private repository
+
+A private companion repository lives at [`timlichtenberg/IntroductionToPlanetaryScience-private`](https://github.com/timlichtenberg/IntroductionToPlanetaryScience-private), checked out locally at `~/git/IntroductionToPlanetaryScience-private/`. It holds material that must not be publicly accessible: exam papers, exam full solutions, exam marking schemes, and the source material for the YouTube lecture narration (scripts, cue sheets, audio stems, audio masters, composited videos).
+
+**Hard rules:**
+
+1. **Never commit exam content to this public repo.** Mid-term and final exam papers, full solutions, and marking schemes live in the private repo only. The public release of an exam paper is via the university LMS at exam start time, not via git.
+2. **Never commit narration audio or video to this public repo.** Scripts and cue sheets live in the private repo too. The only public-facing artifact of the narration work is the YouTube video.
+3. **Never copy slide PDFs into the private repo.** Slides are built in this public repo and read from there by the private repo's narration build via a relative path (`../IntroductionToPlanetaryScience/slides/lectureNN/lectureNN.pdf`).
+4. **`references.bib` lives only in this public repo.** If an exam question or narration script needs a new citation, add the entry here and reference it from the private repo. Never fork the bibliography across repos.
+5. The private repo is single-owner; do not invite collaborators without Tim's explicit approval.
+
+See §11 of `planning/course_development.md` for the full rationale, layout, and release flows.
+
 ## Workflow: push directly to `origin/main`
 
 **Override of the global "feature-branch + PR" rule.** For this repository, push every change directly to `origin/main`. Do not create feature branches, do not open PRs.
