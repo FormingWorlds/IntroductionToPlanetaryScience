@@ -446,7 +446,7 @@ On Jupiter and Saturn, the same physics operates on a grander scale. The alterna
 :width: 420px
 :align: center
 
-Jupiter's cloud-top zonal wind profile $u(\phi)$, schematic representation of the Cassini-era HST composite of {cite:t}`GarciaMelendo2001`.
+Jupiter's cloud-top zonal wind profile $u(\phi)$, schematic representation of the HST composite (1995-2000) of {cite:t}`GarciaMelendo2001`.
 A ladder of narrow prograde (eastward, blue) and retrograde (westward, red) jets is stacked from the broad equatorial superrotating jet at the centre out to $\sim$60° latitude (the schematic resolves only the principal jets to keep the figure legible).
 The jets coincide with the boundaries between bright zones and dark belts visible in {numref}`fig:jupiter-global-map`, and Juno gravity measurements yield a best-fit e-folding decay depth of $\sim$1800 km, with the full uncertainty range spanning $\sim$1000-3000 km into the molecular envelope {cite:p}`Kaspi2018`.
 ```
@@ -463,7 +463,7 @@ Mars experiences dramatic weather driven by its thin atmosphere and strong seaso
 
 - **Dust storms:** Local dust storms are common, lofting mineral particles to $\sim$10–30 km altitude. Occasionally, these storms grow to engulf the entire planet in a **global dust storm** ({numref}`fig:mars-dust-storm`), reducing surface visibility to near zero for weeks. The most recent global dust storms occurred in 2018 and 2007. The feedback mechanism is straightforward: dust absorbs solar radiation $\Rightarrow$ heats the atmosphere $\Rightarrow$ drives stronger winds $\Rightarrow$ lofts more dust, a positive feedback loop.
 
-- **Seasonal $\mathrm{CO_2}$ cycle:** Mars's polar caps contain solid $\mathrm{CO_2}$ (dry ice). During winter, atmospheric $\mathrm{CO_2}$ freezes onto the polar cap; during summer, it sublimes back into the atmosphere. This exchange involves $\sim$25–30% of the total atmospheric mass, causing surface pressure to swing from $\sim$5 mbar (summer pole) to $\sim$7 mbar (winter pole), a phenomenon with no analogue on Earth.
+- **Seasonal $\mathrm{CO_2}$ cycle:** Mars's polar caps contain solid $\mathrm{CO_2}$ (dry ice). During winter at a given hemisphere, atmospheric $\mathrm{CO_2}$ freezes onto that polar cap; during summer, it sublimes back into the atmosphere. This exchange involves $\sim$25–30% of the total atmospheric mass: global mean surface pressure swings from $\sim$7 mbar in southern spring and summer, when the massive southern $\mathrm{CO_2}$ cap sublimates, to $\sim$5 mbar in southern winter, when the cap refreezes, a phenomenon with no analogue on Earth.
 
 ```{figure} figures/mars_dust_storm.avif
 :name: fig:mars-dust-storm
@@ -509,7 +509,7 @@ The GRS sits between two zonal jets with opposite directions, which confine and 
 Polar cyclone cluster at Jupiter's north pole imaged by the JIRAM infrared spectrometer on NASA's *Juno* spacecraft.
 A central cyclone is encircled by eight smaller cyclones in a stable octagonal arrangement, demonstrating that Jupiter's atmospheric dynamics produce coherent polygonal vortex patterns analogous to Saturn's hexagonal jet ({numref}`fig:saturn-hexagon`).
 The cyclones have remained in this configuration over multiple Juno perijoves spanning several years, far longer than any Earth analogue.
-At the south pole, a pentagonal cluster of five circumpolar cyclones persists; JIRAM observations through perijove 18 (February 2019) recorded the appearance of a new vortex with the southern ring beginning to transition toward a hexagonal configuration {cite:p}`Adriani2020`.
+At the south pole, a pentagonal cluster of five circumpolar cyclones remained remarkably stable through perijove 18 (February 2019) {cite:p}`Adriani2020`; a sixth cyclone subsequently joined the cluster at perijove 23 (November 2019), transitioning the south-polar ring toward a hexagonal arrangement.
 Adapted from {cite:t}`Adriani2018`.
 Credit: NASA/JPL-Caltech/SwRI/ASI/INAF/JIRAM, public domain.
 ```
