@@ -164,7 +164,7 @@ $$
 D_t \approx D_{t,\text{Moon}} \cdot \frac{g_{\text{Moon}}}{g}
 $$ (eq:transition-diameter)
 
-where $D_{t,\text{Moon}} \approx 15$ km and $g_{\text{Moon}} = 1.62$ m s$^{-2}$. On Earth ($g = 9.81$ m s$^{-2}$), $D_t \approx 15 \times 1.62/9.81 \approx 2.5$ km, explaining why virtually all terrestrial craters larger than a few kilometres are complex. The morphological signature of a complex crater (central peak + terraced walls) is shown in {numref}`fig:crater-morphology`.
+where $D_{t,\text{Moon}} \approx 15$ km and $g_{\text{Moon}} = 1.62$ m s$^{-2}$ {cite:p}`Melosh2011`. On Earth ($g = 9.81$ m s$^{-2}$), this gravity-only scaling gives $D_t \approx 15 \times 1.62/9.81 \approx 2.5$ km; target rock strength shifts the transition between $\sim 2$ km in crystalline rock and $\sim 4$ km in sedimentary targets, but virtually all terrestrial craters larger than a few kilometres are complex. The morphological signature of a complex crater (central peak + terraced walls) is shown in {numref}`fig:crater-morphology`.
 
 ```{figure} figures/crater_morphology.avif
 :name: fig:crater-morphology
@@ -368,7 +368,7 @@ Cassini Synthetic Aperture Radar (SAR) image of longitudinal dune fields in the 
 Liquid water is the most powerful erosive agent on Earth, and evidence for past fluvial activity on Mars is one of the most important discoveries in planetary science:
 
 - **Earth:** Rivers, glacial meltwater, and coastal waves continuously reshape the surface. The Grand Canyon was carved by the Colorado River over $\sim$5–6 Myr.
-- **Mars:** **Valley networks** on the Noachian-aged southern highlands resemble terrestrial river drainage systems, implying sustained liquid water flow during the late Noachian to early Hesperian, with development continuing in some regions to <3.0 Ga {cite:p}`Ansan2006`. **Outflow channels** (e.g., Ares Vallis, Kasei Valles) are enormous flood features, hundreds of kilometres long and tens of kilometres wide, carved by catastrophic releases of groundwater. These features are discussed further in {ref}`Lecture 10 <lecture10>`.
+- **Mars:** **Valley networks** on the Noachian-aged southern highlands resemble terrestrial river drainage systems, implying sustained liquid water flow during the late Noachian to early Hesperian, with localised reactivation continuing into the Amazonian for individual systems such as Warrego Valles {cite:p}`Ansan2006`. **Outflow channels** (e.g., Ares Vallis, Kasei Valles) are enormous flood features, hundreds of kilometres long and tens of kilometres wide, carved by catastrophic releases of groundwater. These features are discussed further in {ref}`Lecture 10 <lecture10>`.
 - **Titan:** Saturn's largest moon has **methane rivers** that carve channels into its icy surface. The Huygens probe imaged rounded ice pebbles in a dry riverbed during its 2005 landing ({numref}`fig:titan-huygens`). Titan's methane hydrological cycle is the only known active fluvial system beyond Earth. The two flavours of Martian water-carved features (catastrophic outflow channels and sustained-discharge dendritic valley networks) are shown in {numref}`fig:mars-outflow` and {numref}`fig:mars-valley-networks`.
 
 ```{figure} figures/mars_outflow_aram.avif
@@ -509,7 +509,7 @@ Saturn's small moon Enceladus ($R \approx 252$ km) provides the most dramatic ex
 
 The plumes are sourced from a **global subsurface ocean** in contact with the rocky core, maintained by tidal heating from Enceladus's orbital resonance with Dione ({ref}`Lecture 3 <lecture03>`). Cassini's mass spectrometer detected molecular hydrogen ($\mathrm{H_2}$), silica nanoparticles, and complex organic molecules in the plume material, consistent with active hydrothermal vents on the ocean floor similar to those that support chemosynthetic ecosystems in Earth's deep oceans {cite:p}`NimmoPappalardo2016`.
 
-The measured thermal emission from the tiger stripes corresponds to an endogenic heat flow of $\sim$15.8 GW in the original Cassini CIRS analysis of {cite:t}`Howett2011`, with subsequent reanalyses preferring a lower value of order $\sim$5–10 GW; in either case the heat flow is far more than can be explained by radiogenic heating alone, confirming the importance of tidal dissipation. Enceladus is one of the most promising targets in the search for extraterrestrial life ({ref}`Lecture 14 <lecture14>`).
+The measured thermal emission from the tiger stripes corresponds to an endogenic heat flow of $\sim$15.8 GW in the Cassini CIRS analysis of {cite:t}`Howett2011`; the heat flow is far more than can be explained by radiogenic heating alone, confirming the importance of tidal dissipation. Enceladus is one of the most promising targets in the search for extraterrestrial life ({ref}`Lecture 14 <lecture14>`).
 
 ### Europa
 
