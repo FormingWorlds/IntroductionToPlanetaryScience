@@ -624,7 +624,7 @@ Cumulative size-frequency distribution of near-Earth objects as a function of ab
 To order of magnitude, the rates are:
 
 - **10 m diameter** ($\sim$10 kt energy): roughly once per year, mostly as harmless airbursts in the upper atmosphere.
-- **20 m diameter** ($\sim$0.5 Mt): once per decade or so. The 2013 Chelyabinsk event ({numref}`fig:l12-chelyabinsk`) was a 19 m object that entered the atmosphere at $17^{\circ}$ and produced an airburst peaking near 30 km altitude, releasing $\sim 500 \pm 100$ kt of TNT-equivalent energy, shattering windows over a wide area and injuring about 1{,}500 people {cite:p}`Brown2013`.
+- **20 m diameter** ($\sim$0.5 Mt): once per decade or so. The 2013 Chelyabinsk event ({numref}`fig:l12-chelyabinsk`) was a 19 m object that entered the atmosphere at $\sim 18^{\circ}$ and produced an airburst peaking near 30 km altitude, releasing $\sim 500 \pm 100$ kt of TNT-equivalent energy, shattering windows over a wide area and injuring about 1{,}500 people {cite:p}`Brown2013`.
 - **50 m diameter** ($\sim 10$ Mt): once per few millennia. The 1908 Tunguska event ({numref}`fig:l12-tunguska`) was an airburst of approximately this energy that flattened $\sim 2{,}000$ km$^2$ of Siberian forest.
 - **140 m diameter** (PHA threshold, $\sim$300 Mt): once per $\sim 30{,}000$ years. Capable of regional devastation.
 - **1 km diameter** ($\sim 10^5$ Mt): once per $\sim 500{,}000$ years. Capable of global climate disruption (the "civilisation-ending" threshold).
@@ -689,7 +689,7 @@ Together, DART and Hera have moved planetary defence from concept to a quantitat
 
 ### Ceres and the dwarf planets of the inner solar system
 
-Ceres is the largest body in the asteroid belt, a near-spherical rocky-icy world with a mean radius of $470$ km and a mass of $9.4 \times 10^{20}$ kg, about $1\%$ of the Moon's mass.
+Ceres is the largest body in the asteroid belt, a near-spherical rocky-icy world with a mean radius of $470$ km and a mass of $9.4 \times 10^{20}$ kg, about $1.3\%$ of the Moon's mass.
 It is the only object in the inner solar system officially classified as a dwarf planet.
 The Dawn mission arrived in 2015 and orbited Ceres until 2018, mapping the surface in detail and revealing several genuinely surprising features.
 
@@ -866,7 +866,7 @@ Stellar occultation light curve of the dwarf planet Haumea on 21 January 2017, r
 :width: 360px
 :align: center
 
-Makemake imaged by the Hubble Space Telescope alongside its small moon S/2015 (136472) 1. Makemake is a classical KBO with a methane-ice surface; it is the third largest known dwarf planet after Pluto and Eris. Image credit: NASA / ESA / A. Parker / M. Buie, public domain.
+Makemake imaged by the Hubble Space Telescope alongside its small moon S/2015 (136472) 1. Makemake is a classical KBO with a methane-ice surface; it is the fourth largest known dwarf planet after Pluto, Eris, and Haumea. Image credit: NASA / ESA / A. Parker / M. Buie, public domain.
 ```
 
 ```{figure} figures/sedna_orbits_batygin.avif
@@ -1071,7 +1071,7 @@ But the analysis was definitive: Itokawa's surface composition matches the LL-cl
 The S-type near-Earth asteroid (25143) Itokawa imaged by Hayabusa AMICA in 2005. Itokawa is approximately 535 m long with a distinctive bilobed sea-otter profile: two rougher lobes joined by the smoother "Muses Sea" neck region (the central tan area). The complete absence of large craters and the high boulder fraction are signatures of a rubble-pile internal structure. Itokawa is the parent body of the LL-class ordinary chondrites. Image credit: ISAS / JAXA, CC BY 4.0.
 ```
 
-**Hayabusa2** (JAXA, 2014--2020) visited the carbonaceous (Cb-type) asteroid (162173) **Ryugu**, a $\sim 1$ km diameter spinning-top body, and returned $5.4$ g of sample to Earth in December 2020.
+**Hayabusa2** (JAXA, 2014--2020) visited the carbonaceous (Cb-type) asteroid (162173) **Ryugu**, a $\sim 900$ m diameter spinning-top body, and returned $5.4$ g of sample to Earth in December 2020.
 Ryugu's samples are extraordinarily volatile-rich: water-bearing phyllosilicates, carbonates, magnetite, and a wide variety of organic molecules including amino acids and pyrimidine nucleobases (uracil and thymine analogues) {cite:p}`Yokoyama2023,Oba2023`.
 Bulk composition analysis shows that Ryugu is essentially a CI chondrite, confirming the existence of CI-class material in a known parent body for the first time {cite:p}`Yokoyama2023`.
 Hayabusa2 included an artificial impactor that excavated a fresh subsurface crater, allowing the team to sample subsurface material that had been shielded from space weathering.
