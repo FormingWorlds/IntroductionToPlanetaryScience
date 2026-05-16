@@ -92,8 +92,8 @@ The total heat flowing out of Earth's interior is approximately **47 TW** {cite:
 
 | Source | Contribution |
 |--------|:-:|
-| Radiogenic heating (mantle + crust) | ~22 TW |
-| Primordial (secular cooling) | ~15 TW |
+| Radiogenic heating (mantle + crust) | ~20 TW |
+| Primordial (secular cooling) | ~17 TW |
 | Core cooling and solidification | ~10 TW |
 | Tidal dissipation (from the Moon) | ~0.1 TW |
 | **Total** | **~47 TW** |
@@ -103,7 +103,7 @@ The total heat flowing out of Earth's interior is approximately **47 TW** {cite:
 :width: 450px
 :align: center
 
-Earth's surface heat-flux budget (~47 TW), decomposed into radiogenic (~22 TW), primordial / secular cooling (~15 TW), core cooling and solidification (~10 TW), and lunar tidal dissipation (~0.1 TW). Tidal contribution is too small to render at this scale. After {cite:p}`DaviesDavies2010`.
+Earth's surface heat-flux budget (~47 TW), decomposed into radiogenic (~20 TW), primordial / secular cooling (~17 TW), core cooling and solidification (~10 TW), and lunar tidal dissipation (~0.1 TW). Tidal contribution is too small to render at this scale. After {cite:p}`DaviesDavies2010`.
 ```
 
 Roughly 40% of Earth's current heat loss is powered by ongoing radioactive decay, with the rest being the slow release of primordial heat stored since formation ({numref}`fig:earth-heat-budget`). This means Earth is still cooling: its interior temperature is gradually decreasing over geological time. The relative importance of these sources varies strongly across the solar system: small bodies like the Moon have lost most of their primordial heat long ago, while a tidally heated moon like Io has a heat budget dominated by tidal dissipation rather than radiogenic or primordial heat.
@@ -447,7 +447,7 @@ Surface heat flux $q$ as a function of seafloor age, predicted by the half-space
 | Earth | ~90 | ~47 | Radiogenic + primordial |
 | Moon | ~10–15 | ~0.3 | Primordial (largely cooled) |
 | Mars | ~15–25 (estimated) | ~2–4 | Radiogenic + primordial |
-| Io | ~2000–2500 | ~$10^{14}$ W | Tidal dissipation |
+| Io | ~2000–2500 | ~100 | Tidal dissipation |
 
 The Moon and Mars have much lower surface heat flow than Earth, reflecting their smaller sizes (faster cooling through their conductive cooling timescale), the absence of plate tectonics (stagnant lid), and their smaller inventories of heat-producing elements. Io stands out dramatically: its surface heat flux is 20–30 times higher than Earth's, entirely driven by tidal heating. NASA's InSight mission ({numref}`fig:insight-mars`) recently provided the first direct seismological constraints on Mars's interior, including the radius of its core.
 
@@ -485,7 +485,7 @@ Origin of tidal heating on an eccentric orbit. **Left:** at periapsis ($r=a(1-e)
 
 The tidal heating rate depends on:
 - **Orbital eccentricity** $e$: zero eccentricity means zero tidal heating
-- **Orbital distance** $a$: tidal forces fall off steeply with distance (heating $\propto a^{-6}$ for a given eccentricity)
+- **Orbital distance** $a$: tidal forces fall off steeply with distance (heating $\propto a^{-15/2}$ for a given eccentricity, combining the explicit $a^{-6}$ in the dissipation formula with the Keplerian scaling $n \propto a^{-3/2}$ of the mean motion)
 - **Internal dissipation**, parameterised by the tidal quality factor $Q$ (lower $Q$ means more dissipation per deformation cycle)
 - **Body rigidity**: a stiffer body deforms less per cycle but may dissipate more depending on rheology
 
@@ -532,7 +532,7 @@ The Tvashtar volcanic plume on Io, captured by the New Horizons spacecraft durin
 :width: 600px
 :align: center
 
-Global distribution of Io's volcanic hotspots projected on a basemap, with each marker indicating an individually catalogued emission centre from combined Galileo, New Horizons, and ground-based monitoring. {cite:t}`Davies2024PSJ` report 343 active hotspots with an integrated emission of $\sim 58$ TW, approximately 56% of Io's total endogenic heat output of $\sim 10^{14}$ W {cite:p}`Spencer2000`; the remainder is attributed to buried and subsurface volcanic activity. The emission pattern is consistent with tidal-dissipation heating driven by the Laplace-resonance forcing of Io's orbital eccentricity. Credit: NASA/JPL-Caltech, public domain.
+Global distribution of Io's volcanic hotspots projected on a basemap, with each marker indicating an individually catalogued emission centre from combined Galileo, New Horizons, and ground-based monitoring. {cite:t}`Davies2024PSJ` report 343 active hotspots with an integrated emission of $\sim 58$ TW, approximately 55% of Io's total endogenic heat output of $105 \pm 12$ TW; the remainder is attributed to buried and subsurface volcanic activity. The emission pattern is consistent with tidal-dissipation heating driven by the Laplace-resonance forcing of Io's orbital eccentricity. Credit: NASA/JPL-Caltech, public domain.
 ```
 
 ### Enceladus: a tiny moon with a big secret
