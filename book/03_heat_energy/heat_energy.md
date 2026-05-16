@@ -1,5 +1,5 @@
 (lecture03)=
-# Lecture 3: Planetary Heat & Energy Transport
+# Planetary Heat & Energy Transport
 
 ```{highlights}
 **Learning objectives:** By the end of this lecture, you will be able to identify the main energy sources driving planetary evolution, distinguish between heat transport mechanisms, and apply scaling laws for convection and thermal evolution.
@@ -17,7 +17,7 @@ There are four principal sources of heat in planets:
 
 ### Accretional heating
 
-During planet formation ({ref}`lecture02`), gravitational potential energy is converted into kinetic energy as material falls onto the growing body, and that kinetic energy is converted into heat upon impact. The total gravitational energy released in assembling a uniform sphere of mass $M$ and radius $R$ from dispersed material is:
+During planet formation ({ref}`Lecture 2 <lecture02>`), gravitational potential energy is converted into kinetic energy as material falls onto the growing body, and that kinetic energy is converted into heat upon impact. The total gravitational energy released in assembling a uniform sphere of mass $M$ and radius $R$ from dispersed material is:
 
 $$
 E_{\mathrm{acc}} \sim \frac{3}{5} \frac{G M^2}{R}
@@ -83,7 +83,7 @@ Decay of the principal short-lived radionuclides ${}^{26}\mathrm{Al}$ ($t_{1/2}=
 When a body on a non-circular orbit is tidally deformed by a nearby massive companion, the periodic flexing of its interior dissipates energy as heat. This is a significant heat source for certain moons in the outer solar system, particularly Io and Enceladus. We will discuss tidal heating in detail in [section 7](tidal-dissipation) of this lecture.
 
 ```{note}
-Cartoon visualisations of accretional heating and core-formation differentiation are deferred; the schematic content is fully covered by the formation cartoons in {ref}`lecture02` (impact heating during oligarchic growth) and the differentiation cutaways in {ref}`lecture04` (metal-silicate segregation).
+Cartoon visualisations of accretional heating and core-formation differentiation are deferred; the schematic content is fully covered by the formation cartoons in {ref}`Lecture 2 <lecture02>` (impact heating during oligarchic growth) and the differentiation cutaways in {ref}`Lecture 4 <lecture04>` (metal-silicate segregation).
 ```
 
 ### Earth's heat budget
@@ -469,7 +469,7 @@ A planet's surface heat flow is intimately linked to its tectonic regime:
 (tidal-dissipation)=
 ## Tidal dissipation
 
-We introduced tidal forces in {ref}`lecture02` as a consequence of the gradient in gravitational acceleration across an extended body. Here we explore the consequences: when tidal forces are combined with **orbital eccentricity**, they become a sustained source of internal heating that drives some of the most spectacular geological activity in the solar system.
+We introduced tidal forces in {ref}`Lecture 2 <lecture02>` as a consequence of the gradient in gravitational acceleration across an extended body. Here we explore the consequences: when tidal forces are combined with **orbital eccentricity**, they become a sustained source of internal heating that drives some of the most spectacular geological activity in the solar system.
 
 ### How tidal heating works
 
@@ -493,7 +493,7 @@ The tidal heating rate depends on:
 
 Jupiter's innermost Galilean moon **Io** (radius 1821 km, similar in size to our Moon) is the most extreme example of tidal heating in the solar system. Despite having no significant radiogenic heat sources at present, Io produces a staggering ~$10^{14}$ W of tidal heat {cite:p}`Spencer2000`, roughly twice Earth's total heat output, from a body with only 1.5% of Earth's mass.
 
-This was predicted before it was observed. In a landmark 1979 paper, Peale, Cassen, and Reynolds calculated that tidal dissipation in Io, maintained by the **Laplace resonance** with Europa and Ganymede ({ref}`lecture02`), should be sufficient to melt Io's interior {cite:p}`Peale1979`. Just days after the paper was published, the Voyager 1 spacecraft flew past Io and discovered active volcanic eruptions, a stunning confirmation of theory.
+This was predicted before it was observed. In a landmark 1979 paper, Peale, Cassen, and Reynolds calculated that tidal dissipation in Io, maintained by the **Laplace resonance** with Europa and Ganymede ({ref}`Lecture 2 <lecture02>`), should be sufficient to melt Io's interior {cite:p}`Peale1979`. Just days after the paper was published, the Voyager 1 spacecraft flew past Io and discovered active volcanic eruptions, a stunning confirmation of theory.
 
 The Laplace resonance is essential: it forces Io's orbital eccentricity to remain at $e \approx 0.004$ ({numref}`fig:laplace-resonance-tidal`). Without the resonance, tidal forces would circularise Io's orbit on a timescale of $\sim 10^7$ yr and tidal heating would cease. The resonance continuously pumps the eccentricity, maintaining a steady heat source.
 
@@ -573,16 +573,16 @@ Inferred interior structure of Europa (NASA/JPL artist's cutaway). From the cent
 
 - **Titan** (Saturn): Saturn's largest moon shows evidence for a subsurface water ocean from measurements of its rotational state and tidal response by Cassini. Titan's ocean may be maintained by a combination of tidal heating and radiogenic heat in its rocky core.
 
-These "ocean worlds" are among the most promising targets in the search for extraterrestrial life, because they possess liquid water, chemical energy sources (from rock–water interactions at the ocean floor), and the organic building blocks needed for biology. We will return to this topic in {ref}`lecture14`.
+These "ocean worlds" are among the most promising targets in the search for extraterrestrial life, because they possess liquid water, chemical energy sources (from rock–water interactions at the ocean floor), and the organic building blocks needed for biology. We will return to this topic in {ref}`Lecture 14 <lecture14>`.
 
 
 ## Recent advances
 
-NASA's InSight mission (2018–2022) provided the first direct seismological measurements of another planet, fundamentally advancing our understanding of Mars's thermal state. Seismic wave travel times revealed Mars's core radius ($\sim$1830 km), mantle structure, and crustal thickness {cite:p}`Stahler2021,Khan2021` (see also {ref}`lecture08`). The mission's heat flow probe (HP$^3$) was unable to penetrate to the required depth due to unexpected soil properties, but the attempt provided valuable constraints on regolith thermal conductivity and near-surface heat flow.
+NASA's InSight mission (2018–2022) provided the first direct seismological measurements of another planet, fundamentally advancing our understanding of Mars's thermal state. Seismic wave travel times revealed Mars's core radius ($\sim$1830 km), mantle structure, and crustal thickness {cite:p}`Stahler2021,Khan2021` (see also {ref}`Lecture 8 <lecture08>`). The mission's heat flow probe (HP$^3$) was unable to penetrate to the required depth due to unexpected soil properties, but the attempt provided valuable constraints on regolith thermal conductivity and near-surface heat flow.
 
-Tidal heating models for icy moons have been refined using updated rheological models and orbital evolution calculations {cite:p}`NimmoPappalardo2016`. Recent work suggests that tidal dissipation in Enceladus may be concentrated in its ice shell rather than its rocky core, affecting predictions for the longevity and temperature of its subsurface ocean. For Europa, estimates of ice shell thickness have been narrowed to $\sim$15–25 km using multiple independent constraints, with implications for the Europa Clipper mission {cite:p}`HowellPappalardo2020` (see also {ref}`lecture14`).
+Tidal heating models for icy moons have been refined using updated rheological models and orbital evolution calculations {cite:p}`NimmoPappalardo2016`. Recent work suggests that tidal dissipation in Enceladus may be concentrated in its ice shell rather than its rocky core, affecting predictions for the longevity and temperature of its subsurface ocean. For Europa, estimates of ice shell thickness have been narrowed to $\sim$15–25 km using multiple independent constraints, with implications for the Europa Clipper mission {cite:p}`HowellPappalardo2020` (see also {ref}`Lecture 14 <lecture14>`).
 
-Updated analyses of chondritic meteorites continue to refine our understanding of the radiogenic heating budget available during early solar system evolution {cite:p}`Lichtenberg2023`, with implications for the thermal history of planetesimals and the onset of differentiation ({ref}`lecture04`).
+Updated analyses of chondritic meteorites continue to refine our understanding of the radiogenic heating budget available during early solar system evolution {cite:p}`Lichtenberg2023`, with implications for the thermal history of planetesimals and the onset of differentiation ({ref}`Lecture 4 <lecture04>`).
 
 
 ## References

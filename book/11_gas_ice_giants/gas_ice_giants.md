@@ -1,5 +1,5 @@
 (lecture11)=
-# Lecture 11: Gas & Ice Giants: Jupiter, Saturn, Uranus, Neptune
+# Gas & Ice Giants: Jupiter, Saturn, Uranus, Neptune
 
 ```{highlights}
 **Learning objectives:** By the end of this lecture, you will be able to compare the internal structures and atmospheric dynamics of the four giant planets, describe the diversity of their satellite systems, derive the Roche limit and apply it to Saturn's rings, and use the gas giant / ice giant dichotomy as a natural laboratory for exoplanet analogues.
@@ -13,7 +13,7 @@ The four giant planets of our solar system together hold more than 99.5% of the 
 They are not, however, four examples of the same kind of object.
 Jupiter and Saturn are dominated by hydrogen and helium and are best thought of as failed stars whose envelopes never collapsed gravitationally.
 Uranus and Neptune are roughly an order of magnitude less massive, contain only modest hydrogen and helium envelopes, and are dominated by what astronomers loosely call "ices".
-The split between gas giants and ice giants is one of the most informative features of the solar system: it reflects the timing of core formation, the migration history of the outer planets, and the lifetime of the protoplanetary disk that we discussed in {ref}`lecture02`.
+The split between gas giants and ice giants is one of the most informative features of the solar system: it reflects the timing of core formation, the migration history of the outer planets, and the lifetime of the protoplanetary disk that we discussed in {ref}`Lecture 2 <lecture02>`.
 This lecture treats each subgroup in turn, integrates the diverse satellite and ring systems into the planetary narratives, and closes with a comparative payoff and a survey of the missions that will define outer solar system science for the next two decades.
 
 
@@ -28,7 +28,7 @@ Saturn is the second largest, with 95 $\Mearth$ and an equatorial radius of 60{,
 Its mean density of 687 kg m$^{-3}$ is famously lower than that of liquid water at standard conditions, a fact that captures the imagination of every introductory astronomy student and immediately tells us that the bulk of the planet is hydrogen and helium under high pressure.
 Together the two gas giants account for about 92% of the total planetary mass of the solar system.
 
-Both planets have envelopes whose composition is dominated by molecular hydrogen ($\mathrm{H_2}$) and helium (He), in proportions broadly similar to those of the Sun, with only a few percent enrichment in heavier elements ({ref}`lecture02`).
+Both planets have envelopes whose composition is dominated by molecular hydrogen ($\mathrm{H_2}$) and helium (He), in proportions broadly similar to those of the Sun, with only a few percent enrichment in heavier elements ({ref}`Lecture 2 <lecture02>`).
 Crucially, neither has a solid surface in the sense familiar from the rocky planets.
 Pressure and temperature rise smoothly with depth, and the planet transitions from a tenuous gas to a supercritical fluid to a metallic plasma over a continuous range.
 "Surface" is therefore defined for the gas giants as the level where the atmospheric pressure reaches 1 bar, which is a convention rather than a physical interface {cite:p}`Stevenson2020`.
@@ -52,7 +52,7 @@ Just below the visible cloud tops the envelope is a mixture of $\mathrm{H_2}$ an
 Compression with depth turns the molecular hydrogen into a denser molecular fluid, then into a state in which the electrons become delocalised: metallic hydrogen.
 The transition from molecular to metallic hydrogen is gradual rather than a true first-order phase change at Jovian conditions.
 Laboratory shock experiments and density-functional-theory calculations place the conducting transition at a pressure of approximately $100$ GPa and a temperature of order $5000$ K, which corresponds to a fractional radius of about $0.85\,R_J$ in Jupiter {cite:p}`Wahl2017`.
-Below this depth the fluid conducts electricity well enough to support the dynamo that generates Jupiter's strong magnetic field ({ref}`lecture04`).
+Below this depth the fluid conducts electricity well enough to support the dynamo that generates Jupiter's strong magnetic field ({ref}`Lecture 4 <lecture04>`).
 At the centre of the planet, models constrained by Juno gravity data converge on conditions near $\sim4000$ GPa and $\sim20{,}000$ K {cite:p}`Wahl2017,Militzer2022`.
 
 ```{figure} figures/jupiter_dilute_core_wahl2017.avif
@@ -71,7 +71,7 @@ This "dilute core" or "fuzzy core" picture was first established by {cite:t}`Wah
 The dilute core is now the standard model and represents one of the most striking re-evaluations of giant planet interiors in the last decade ({numref}`fig:jupiter_dilute_core`).
 
 The discovery of the dilute core has direct implications for how Jupiter formed.
-A purely compact core of $\sim10\,\Mearth$ assembled by core accretion ({ref}`lecture02`) should not naturally erode into the envelope on the age of the solar system; the core material is much denser than metallic hydrogen and is buoyantly stable against mixing.
+A purely compact core of $\sim10\,\Mearth$ assembled by core accretion ({ref}`Lecture 2 <lecture02>`) should not naturally erode into the envelope on the age of the solar system; the core material is much denser than metallic hydrogen and is buoyantly stable against mixing.
 The fact that the heavy elements are now distributed over an extended interior region therefore implies either that mixing was efficient at some early epoch, perhaps following a giant impact during late accretion, or that the original core was assembled by a different process, perhaps the late hydrodynamic accretion of an envelope that already contained substantial amounts of dissolved heavy elements.
 Both options remain under active discussion {cite:p}`Militzer2022`.
 The example illustrates how a single mission's gravity science can rewrite the textbook picture of a familiar planet.
@@ -79,7 +79,7 @@ The example illustrates how a single mission's gravity science can rewrite the t
 ### Jupiter atmosphere and weather
 
 Jupiter's visible atmosphere is the cloud-bearing layer at pressures between approximately 0.1 and 10 bar.
-As discussed in {ref}`lecture06`, the composition of the cloud layers is set by the condensation curves of the most abundant volatile species: ammonia ice ($\mathrm{NH_3}$) condenses near the 0.5--1 bar level to form the highest cloud deck, ammonium hydrosulphide ($\mathrm{NH_4SH}$) condenses near 2--3 bar, and water ice and water cloud occur deepest at $\sim 5\text{--}7$ bar.
+As discussed in {ref}`Lecture 6 <lecture06>`, the composition of the cloud layers is set by the condensation curves of the most abundant volatile species: ammonia ice ($\mathrm{NH_3}$) condenses near the 0.5--1 bar level to form the highest cloud deck, ammonium hydrosulphide ($\mathrm{NH_4SH}$) condenses near 2--3 bar, and water ice and water cloud occur deepest at $\sim 5\text{--}7$ bar.
 Galileo probe mass spectrometer measurements during its 1995 atmospheric entry confirmed the layered structure but found the entry site unusually dry, a reminder that local meteorology can deviate strongly from horizontally averaged models {cite:p}`Niemann1998`.
 
 ```{figure} figures/jupiter_grs_juno.avif
@@ -119,7 +119,7 @@ The pattern persists across multiple Juno orbits and is currently the best const
 Juno gravity science has also constrained the depth to which the equatorial zonal jets extend: by detecting subtle north-south asymmetries in the gravity field, {cite:t}`Kaspi2018` showed that the jets penetrate to several thousand kilometres depth, with a characteristic decay depth of $\sim$2{,}000 km and the flow falling to negligible speeds by $\sim$3{,}000 km, a substantial fraction of the molecular hydrogen envelope.
 Below this depth the magnetic stress associated with metallic hydrogen damps the differential rotation, and the deep interior approaches solid-body rotation.
 
-The aurorae of Jupiter, the most powerful in the solar system, are powered by a combination of magnetospheric processes ({ref}`lecture04`) and the heavy mass loading from Io, whose volcanism feeds about $1$ tonne s$^{-1}$ of sulphur and oxygen into the Jovian magnetosphere.
+The aurorae of Jupiter, the most powerful in the solar system, are powered by a combination of magnetospheric processes ({ref}`Lecture 4 <lecture04>`) and the heavy mass loading from Io, whose volcanism feeds about $1$ tonne s$^{-1}$ of sulphur and oxygen into the Jovian magnetosphere.
 The auroral footprints of Io, Europa, and Ganymede have all been imaged in the ultraviolet, providing a direct visualisation of the electromagnetic coupling between the giant planet and its moons.
 The "Great Blue Spot", an isolated region of intense magnetic flux near Jupiter's equator, is a magnetic anomaly mapped by Juno that bears no relation to atmospheric features and probably reflects unusual structure in the dynamo source region {cite:p}`Connerney2022`.
 
@@ -127,7 +127,7 @@ The "Great Blue Spot", an isolated region of intense magnetic flux near Jupiter'
 
 Io is Jupiter's innermost large moon and the most volcanically active body in the solar system.
 Its discovery as one of the four "Medicean stars" by Galileo in 1610 was the first direct observation of a body orbiting another planet.
-Modern remote sensing reveals about 400 active volcanic centres and a global heat output of about $10^{14}$ W, dissipated as tidally driven volcanism rather than radiogenic heat ({ref}`lecture03`).
+Modern remote sensing reveals about 400 active volcanic centres and a global heat output of about $10^{14}$ W, dissipated as tidally driven volcanism rather than radiogenic heat ({ref}`Lecture 3 <lecture03>`).
 This staggering heat flow is sustained by tidal flexing in the eccentric, locked-in 1:2:4 Laplace mean-motion resonance with Europa and Ganymede, identified theoretically by {cite:t}`Peale1979gas` immediately before the Voyager 1 flyby provided the first images of Io's volcanism in 1979.
 
 ```{figure} figures/io_loki_volcano.avif
@@ -199,7 +199,7 @@ Europa Clipper is the first dedicated mission to a potentially habitable ocean w
 ### Ganymede
 
 Ganymede is the largest moon in the solar system, with a radius of 2634 km, larger than Mercury and roughly three quarters the size of Mars.
-It is the only known moon to possess an intrinsic dynamo magnetic field, a fact discovered by the Galileo magnetometer in 1996 ({ref}`lecture04`, {ref}`lecture08`).
+It is the only known moon to possess an intrinsic dynamo magnetic field, a fact discovered by the Galileo magnetometer in 1996 ({ref}`Lecture 4 <lecture04>`, {ref}`Lecture 8 <lecture08>`).
 Its interior is fully differentiated into a metallic iron core, a silicate mantle, and an outer ice layer that includes a subsurface liquid water ocean sandwiched between high-pressure ice phases. Surface imaging from Galileo and Juno reveals contrasting bright grooved terrain and ancient dark cratered terrain ({numref}`fig:ganymede_juno` and {numref}`fig:ganymede_grooves`).
 
 ```{figure} figures/ganymede_juno_closeup.avif
@@ -313,7 +313,7 @@ The current best value, $10$ h $33$ min $38$ s, comes from Cassini ring seismolo
 Determination of Saturn's bulk rotation period from C-ring seismology by {cite:t}`Mankovich2019`. Each black curve shows the RMS pattern-speed residual between an interior model and the set of observed C-ring density waves identified with Saturnian $f$-modes, plotted as a function of the assumed rotation period. The thick blue curve gives the cumulative distribution of best-fit rotation periods. The seismological median is $P_{\rm S} \approx 10\,{\rm h}\,33\,{\rm min}\,38\,{\rm s}$, well separated from the older Voyager and Cassini magnetospheric estimates indicated by the coloured vertical bars.
 ```
 Second, the near-perfect axial alignment of Saturn's magnetic dipole is itself a problem.
-A dynamo generally requires some asymmetry between the rotation and magnetic axes to operate: Cowling's anti-dynamo theorem states that a purely axisymmetric flow cannot sustain a magnetic field against ohmic decay, so a working dynamo must contain non-axisymmetric components even if the resulting external field appears almost perfectly axisymmetric (see also {ref}`lecture04` for the basic dynamo concept).
+A dynamo generally requires some asymmetry between the rotation and magnetic axes to operate: Cowling's anti-dynamo theorem states that a purely axisymmetric flow cannot sustain a magnetic field against ohmic decay, so a working dynamo must contain non-axisymmetric components even if the resulting external field appears almost perfectly axisymmetric (see also {ref}`Lecture 4 <lecture04>` for the basic dynamo concept).
 The question is therefore how Saturn's dynamo manages to produce such a clean dipole.
 The leading explanation is that the convecting metallic hydrogen layer is overlain by a stably stratified helium-rain region that filters out non-axisymmetric magnetic field components before they reach the planet's surface.
 
@@ -517,7 +517,7 @@ Lakes and seas of liquid methane and ethane near Titan's north pole, mapped by t
 ```
 
 Titan's atmosphere is dominated by molecular nitrogen ($\mathrm{N_2}$) at a surface pressure of about 1.5 bar, roughly 50% higher than Earth's; because the surface is cold ($\sim$94 K), the actual surface mass density ($\sim$5 kg m$^{-3}$) is about four times that of Earth's near-surface air.
-The minor constituent methane ($\mathrm{CH_4}$) drives a surprisingly Earth-like hydrological cycle, except with methane in the role of water: methane evaporates from polar lakes and seas, condenses in the upper atmosphere, falls as methane rain, and carves dendritic river valleys that drain into the lakes ({ref}`lecture06`) {cite:p}`Stofan2007` ({numref}`fig:huygens`).
+The minor constituent methane ($\mathrm{CH_4}$) drives a surprisingly Earth-like hydrological cycle, except with methane in the role of water: methane evaporates from polar lakes and seas, condenses in the upper atmosphere, falls as methane rain, and carves dendritic river valleys that drain into the lakes ({ref}`Lecture 6 <lecture06>`) {cite:p}`Stofan2007` ({numref}`fig:huygens`).
 Cassini RADAR imaging mapped hundreds of lakes and seas in the polar regions; the largest, Kraken Mare and Ligeia Mare, are comparable in size to the Caspian Sea ({numref}`fig:titan_lakes`).
 The surface temperature of about 94 K places methane near its triple point, which is what makes the cycle possible.
 
@@ -573,7 +573,7 @@ The total heat flow from the south polar region exceeds 10 GW, much more than ra
 
 The combination of liquid water, rock contact, energy, organic chemistry, and now phosphorus and silica makes Enceladus arguably the most accessible candidate for life beyond Earth, certainly more accessible than Europa or Titan.
 A future "Enceladus Orbilander" or sample-return mission has been recommended as a high-priority concept by the 2022 US Planetary Science Decadal Survey {cite:p}`NationalAcademies2022`, although no such mission has yet been formally selected.
-Cassini repeatedly flew through the plumes and sampled them with mass spectrometers, but the instruments were not designed to detect biosignatures and the question of whether life exists in the Enceladus ocean remains open ({ref}`lecture14`).
+Cassini repeatedly flew through the plumes and sampled them with mass spectrometers, but the instruments were not designed to detect biosignatures and the question of whether life exists in the Enceladus ocean remains open ({ref}`Lecture 14 <lecture14>`).
 
 ### Other Saturnian moons
 
@@ -613,7 +613,7 @@ Iapetus is also the only moon in the solar system with a significant equatorial 
 
 Hyperion is a chaotic rotator: its irregular shape and orbital resonance with Titan combine to make its rotation axis tumble unpredictably, and Voyager and Cassini observations have shown that its orientation is essentially impossible to predict more than a few months in advance.
 Phoebe is a captured outer body in a retrograde, highly inclined orbit at $\sim$13 million km from Saturn; its colour, density, and surface chemistry strongly suggest that it is a Kuiper Belt object captured by Saturn long after the planet formed {cite:p}`Agnor2006`.
-Phoebe is therefore a free sample of the trans-Neptunian population that we will discuss in {ref}`lecture12`, accessible without leaving Saturn ({numref}`fig:phoebe`).
+Phoebe is therefore a free sample of the trans-Neptunian population that we will discuss in {ref}`Lecture 12 <lecture12>`, accessible without leaving Saturn ({numref}`fig:phoebe`).
 
 The mid-sized icy moons Tethys, Dione, and Rhea are intermediate in radius between Enceladus and Titan and complete the satellite family.
 Each shows variable amounts of cratering and tectonism, and recent work suggests that one or more may host subsurface oceans of their own, although the evidence is far weaker than for Enceladus and Europa.
@@ -773,7 +773,7 @@ Triton is the only outer-solar-system body other than Enceladus and Io known to 
 Its tenuous atmosphere of nitrogen at $\sim$14 microbar surface pressure is consistent with an active nitrogen cycle between ice and atmosphere.
 
 Triton is large enough that its capture should have left it with a substantial primordial eccentricity, which would have been damped by tidal heating during the first few hundred Myr after capture, possibly melting the interior and producing a subsurface water and ammonia ocean that may persist today {cite:p}`McKinnon1995`.
-Triton is therefore a hybrid body: a captured Kuiper Belt object, with the same compositional ancestry as Pluto and the bodies we will discuss in {ref}`lecture12`, but one that has been sculpted by Neptunian tides into a uniquely active world.
+Triton is therefore a hybrid body: a captured Kuiper Belt object, with the same compositional ancestry as Pluto and the bodies we will discuss in {ref}`Lecture 12 <lecture12>`, but one that has been sculpted by Neptunian tides into a uniquely active world.
 Its retrograde orbit is decaying; tidal interaction with Neptune is causing it to spiral inward, and on a timescale of order 3.6 Gyr it will reach the Roche limit and tidally disrupt, producing a temporary ring system around Neptune.
 
 ### Ice giant rings
@@ -813,14 +813,14 @@ JWST observations of the Uranus system in 2023 revealed previously undetected fi
 
 ### Why gas giants and ice giants diverged
 
-In the core-accretion picture of planet formation that we developed in {ref}`lecture02`, all four giant planets began as solid cores that accreted gas from the protoplanetary disk.
+In the core-accretion picture of planet formation that we developed in {ref}`Lecture 2 <lecture02>`, all four giant planets began as solid cores that accreted gas from the protoplanetary disk.
 For a core to capture and retain a massive $\mathrm{H_2}$/He envelope, two conditions must be met simultaneously: the core must reach a critical mass (typically $\sim$10 $\Mearth$) at which the gas it has already attracted contracts dynamically and a runaway gas accretion phase begins, and the disk must still contain sufficient gas at the planet's location at that time.
-Disk lifetimes are $\sim$3--5 Myr ({ref}`lecture02`), which sets a strict deadline.
+Disk lifetimes are $\sim$3--5 Myr ({ref}`Lecture 2 <lecture02>`), which sets a strict deadline.
 
 In this framework, Jupiter and Saturn are planets whose cores reached the critical mass early enough to capture massive envelopes before disk dispersal, and whose final masses were then determined by how much gas they could accrete in the remaining disk lifetime.
 Uranus and Neptune, by contrast, either reached critical mass too late, or formed in a region where the gas surface density was too low, or both.
 They captured only modest envelopes (a few Earth masses of $\mathrm{H_2}$/He at most) and stalled at their current masses.
-The Nice model ({ref}`lecture02`, {cite:t}`Tsiganis2005`) further argues that the ice giants underwent significant late migration, with Uranus and Neptune scattering each other and the population of trans-Neptunian planetesimals after the disk had dispersed.
+The Nice model ({ref}`Lecture 2 <lecture02>`, {cite:t}`Tsiganis2005`) further argues that the ice giants underwent significant late migration, with Uranus and Neptune scattering each other and the population of trans-Neptunian planetesimals after the disk had dispersed.
 The 10--20 $\Mearth$ ice-giant mass therefore appears to be a natural intermediate outcome of core accretion under the conditions of the early outer solar system.
 
 ### Common themes across all four giants
@@ -831,7 +831,7 @@ Despite the gas/ice dichotomy, the four giants share a number of striking common
 2. **All four host strong zonal jet streams** and banded atmospheres, even though the underlying meteorology differs in detail. Counterintuitively, the equatorial jet speeds tend to increase, not decrease, with distance from the Sun: Jupiter $\sim$180 m s$^{-1}$, Saturn $\sim$400 m s$^{-1}$, Uranus $\sim$250 m s$^{-1}$, Neptune $\sim$450 m s$^{-1}$ (westward at the equator). This pattern is the opposite of what naive solar-driven convection would predict and is a strong constraint on global circulation models.
 3. **All four have global magnetic fields** generated by electrically conducting fluid interiors. The dynamo source regions are very different: metallic hydrogen for Jupiter and Saturn, superionic / ionic fluid for Uranus and Neptune. The corresponding field morphologies are dipole-dominated for the gas giants (with anomalies like Jupiter's Great Blue Spot and Saturn's perfect axisymmetry) and multipolar, off-axis for the ice giants. The diversity is a natural test bed for dynamo theory.
 4. **All four have moon and ring systems**, but with very different inventories. Jupiter has the four large Galilean moons and a faint dust ring; Saturn has the spectacular A through F rings and dozens of small to mid-sized icy moons plus the giant Titan; Uranus has a dark, narrow ring system and five mid-sized moons; Neptune has dark ring arcs and the captured Triton. The contrasts encode the formation, dynamical, and bombardment histories of the outer solar system.
-5. **All four are natural laboratories for the gas giants and Neptune-mass planets that dominate the exoplanet population.** As we will see in {ref}`lecture13`, the most common types of exoplanets discovered to date are sub-Neptunes and Neptunes ($\sim 2$--4 $\Rearth$) and hot Jupiters ($\sim 1\,\Rjup$). Our four giants are the only such objects we can study at high spatial resolution, and they provide essential ground truth for the interpretation of the much larger exoplanet sample.
+5. **All four are natural laboratories for the gas giants and Neptune-mass planets that dominate the exoplanet population.** As we will see in {ref}`Lecture 13 <lecture13>`, the most common types of exoplanets discovered to date are sub-Neptunes and Neptunes ($\sim 2$--4 $\Rearth$) and hot Jupiters ($\sim 1\,\Rjup$). Our four giants are the only such objects we can study at high spatial resolution, and they provide essential ground truth for the interpretation of the much larger exoplanet sample.
 
 ### What we still don't know
 

@@ -1,5 +1,5 @@
 (lecture02)=
-# Lecture 2: Planet Formation 101 & Orbital Dynamics
+# Planet Formation 101 & Orbital Dynamics
 
 ```{highlights}
 **Learning objectives:** By the end of this lecture, you will be able to describe the stages of planet formation from protoplanetary disks, apply Kepler's laws and the vis-viva equation, and explain the role of orbital resonances, tides, and migration in shaping planetary systems.
@@ -233,7 +233,7 @@ In the inner solar system, after the disk has dispersed and gas drag is no longe
 
 ### Geophysical evolution during formation
 
-Planet formation is not merely an assembly process: it drives profound geophysical changes. The energy delivered by accretion and giant impacts melts the growing planet, producing a global **magma ocean**. In this molten state, dense metallic iron sinks to form a core, while lighter silicates float to form the mantle, a process called **core-mantle differentiation**. Early radioactive heating from short-lived isotopes (particularly ${}^{26}\mathrm{Al}$, with a half-life of 0.7 Myr) can melt even small planetesimals, initiating differentiation before the planet has finished assembling {cite:p}`Lichtenberg2023`. The thermal and chemical state inherited from this formation epoch profoundly shapes a planet's subsequent evolution: its magnetic field, volcanic activity, atmospheric outgassing, and ultimately its habitability ({ref}`lecture03`, {ref}`lecture04`).
+Planet formation is not merely an assembly process: it drives profound geophysical changes. The energy delivered by accretion and giant impacts melts the growing planet, producing a global **magma ocean**. In this molten state, dense metallic iron sinks to form a core, while lighter silicates float to form the mantle, a process called **core-mantle differentiation**. Early radioactive heating from short-lived isotopes (particularly ${}^{26}\mathrm{Al}$, with a half-life of 0.7 Myr) can melt even small planetesimals, initiating differentiation before the planet has finished assembling {cite:p}`Lichtenberg2023`. The thermal and chemical state inherited from this formation epoch profoundly shapes a planet's subsequent evolution: its magnetic field, volcanic activity, atmospheric outgassing, and ultimately its habitability ({ref}`Lecture 3 <lecture03>`, {ref}`Lecture 4 <lecture04>`).
 
 
 ## Kepler's laws and orbital elements
@@ -254,7 +254,7 @@ $$
 P^2 = \frac{4\pi^2}{G(M_1 + M_2)}\, a^3
 $$ (eq:kepler-third-law)
 
-As we saw in {ref}`lecture01`, Newton showed that all three laws follow from his universal law of gravitation. Kepler's third law, in its Newtonian form (Eq. {eq}`eq:kepler-third-law`), is one of the most useful equations in astronomy: it connects an easily measured quantity (the orbital period) to the total mass of the system. The geometry of the three laws is summarised in {numref}`fig:kepler-laws`, and the resulting solar-system architecture, with all eight planets plus the asteroid belt and Kuiper belt on a logarithmic semi-major-axis axis, is shown in {numref}`fig:ss-architecture`.
+As we saw in {ref}`Lecture 1 <lecture01>`, Newton showed that all three laws follow from his universal law of gravitation. Kepler's third law, in its Newtonian form (Eq. {eq}`eq:kepler-third-law`), is one of the most useful equations in astronomy: it connects an easily measured quantity (the orbital period) to the total mass of the system. The geometry of the three laws is summarised in {numref}`fig:kepler-laws`, and the resulting solar-system architecture, with all eight planets plus the asteroid belt and Kuiper belt on a logarithmic semi-major-axis axis, is shown in {numref}`fig:ss-architecture`.
 
 ```{figure} figures/kepler_laws.svg
 :name: fig:kepler-laws
@@ -431,7 +431,7 @@ For a dramatic contrast, consider Halley's comet ($a = 17.83$ AU, $e = 0.967$):
 
 Halley's comet hurtles through the inner solar system at nearly twice Earth's speed, yet crawls beyond Neptune's orbit at less than 1 km s$^{-1}$. This enormous range is a direct consequence of the vis-viva equation applied to a highly eccentric orbit; both speed profiles are plotted in {numref}`fig:visviva`.
 
-**Note:** The vis-viva equation is the generalisation of the Kepler mass formula derived in {ref}`lecture01`. There, we used a circular orbit ($r = a$) to get $v^2 = GM/a$, which is just the vis-viva equation with $r = a$.
+**Note:** The vis-viva equation is the generalisation of the Kepler mass formula derived in {ref}`Lecture 1 <lecture01>`. There, we used a circular orbit ($r = a$) to get $v^2 = GM/a$, which is just the vis-viva equation with $r = a$.
 ```
 
 ```{figure} figures/visviva_earth_halley.avif
@@ -457,7 +457,7 @@ Resonances are widespread in the solar system:
 |-----------|--------|-------------|
 | 3:2 | Pluto-Neptune | Pluto completes 2 orbits per 3 of Neptune |
 | Near 5:2 | Jupiter-Saturn | "Great inequality": near-resonance drives long-period perturbations |
-| 3:1, 5:2, 7:3, 2:1 | Several asteroid gaps | Kirkwood gaps in the asteroid belt ({ref}`lecture12`) |
+| 3:1, 5:2, 7:3, 2:1 | Several asteroid gaps | Kirkwood gaps in the asteroid belt ({ref}`Lecture 12 <lecture12>`) |
 | 1:1 | Jupiter Trojans | Co-orbital asteroids at L4 and L5 Lagrange points |
 
 ### The Laplace resonance
@@ -470,7 +470,7 @@ The most famous resonance in the solar system is the **Laplace resonance** of Ju
 | Europa | 3.551 | $\approx$ 2 |
 | Ganymede | 7.155 | $\approx$ 4 |
 
-This three-body resonance is maintained by tidal interactions with Jupiter. The key consequence is that it **forces non-zero orbital eccentricities**: Io's eccentricity is maintained at $e \approx 0.004$ (small, but crucial). This continual eccentricity forcing drives tidal flexing inside Io, generating enough heat to make it the most volcanically active body in the solar system ({numref}`fig:laplace-resonance`, {numref}`fig:io-volcanism`), a connection we will explore in {ref}`lecture03`.
+This three-body resonance is maintained by tidal interactions with Jupiter. The key consequence is that it **forces non-zero orbital eccentricities**: Io's eccentricity is maintained at $e \approx 0.004$ (small, but crucial). This continual eccentricity forcing drives tidal flexing inside Io, generating enough heat to make it the most volcanically active body in the solar system ({numref}`fig:laplace-resonance`, {numref}`fig:io-volcanism`), a connection we will explore in {ref}`Lecture 3 <lecture03>`.
 
 ```{figure} figures/laplace_resonance.avif
 :name: fig:laplace-resonance
@@ -503,7 +503,7 @@ This $1/d^3$ dependence (compared to the $1/d^2$ dependence of gravity itself) m
 
 ### Tidal bulges and energy dissipation
 
-The tidal force raises **tidal bulges** on both sides of the body: one facing the perturber and one on the opposite side. If the body rotates at a different rate than it orbits (which is initially the case for most moons and planets), the bulges are carried away from the line connecting the two bodies. This misalignment creates a torque that transfers angular momentum between the body's spin and its orbit, gradually changing both. The energy dissipated in continually deforming the body is converted to heat: this is **tidal heating**, which powers Io's volcanism and may maintain subsurface oceans on Europa and Enceladus ({ref}`lecture03`).
+The tidal force raises **tidal bulges** on both sides of the body: one facing the perturber and one on the opposite side. If the body rotates at a different rate than it orbits (which is initially the case for most moons and planets), the bulges are carried away from the line connecting the two bodies. This misalignment creates a torque that transfers angular momentum between the body's spin and its orbit, gradually changing both. The energy dissipated in continually deforming the body is converted to heat: this is **tidal heating**, which powers Io's volcanism and may maintain subsurface oceans on Europa and Enceladus ({ref}`Lecture 3 <lecture03>`).
 
 ### Tidal locking (synchronous rotation)
 
@@ -541,7 +541,7 @@ $$
 d_R \approx 2.46 \times 58{,}232 \times \left(\frac{687}{1000}\right)^{1/3} \approx 126{,}500 \text{ km} \approx 2.17\, R_p
 $$
 
-Saturn's main ring system ({numref}`fig:saturn-rings`) extends from about 67,000 km to 137,000 km from Saturn's centre, mostly within the Roche limit (the fluid approximation gives $d_R \approx 126{,}000$ km, but the exact boundary depends on the rigidity and composition of the orbiting material; the outer A ring extends slightly beyond the fluid Roche limit but remains within the rigid-body limit). The rings consist of countless small particles that cannot coalesce into a moon because tidal forces prevent their gravitational aggregation. We will derive the Roche limit in full in {ref}`lecture11`.
+Saturn's main ring system ({numref}`fig:saturn-rings`) extends from about 67,000 km to 137,000 km from Saturn's centre, mostly within the Roche limit (the fluid approximation gives $d_R \approx 126{,}000$ km, but the exact boundary depends on the rigidity and composition of the orbiting material; the outer A ring extends slightly beyond the fluid Roche limit but remains within the rigid-body limit). The rings consist of countless small particles that cannot coalesce into a moon because tidal forces prevent their gravitational aggregation. We will derive the Roche limit in full in {ref}`Lecture 11 <lecture11>`.
 
 ```{figure} figures/saturn_rings.avif
 :name: fig:saturn-rings
@@ -604,7 +604,7 @@ The Grand Tack scenario from a Walsh et al. (2011) simulation. Top panel: mass e
 
 ### Observational evidence for migration
 
-The strongest evidence that migration is real comes from **hot Jupiters**: gas giant exoplanets orbiting their host stars with periods of just a few days ($a \lesssim 0.1$ AU). These planets cannot have formed in situ (there is not enough material, and temperatures are too high for solids to exist), so they must have formed further out and migrated inward ({numref}`fig:hot-jupiters`). Additionally, ALMA observations of gaps in protoplanetary disks (such as those in HL Tau) may represent the signatures of embedded planets undergoing migration. We will revisit exoplanet demographics and the evidence for migration in {ref}`lecture13`.
+The strongest evidence that migration is real comes from **hot Jupiters**: gas giant exoplanets orbiting their host stars with periods of just a few days ($a \lesssim 0.1$ AU). These planets cannot have formed in situ (there is not enough material, and temperatures are too high for solids to exist), so they must have formed further out and migrated inward ({numref}`fig:hot-jupiters`). Additionally, ALMA observations of gaps in protoplanetary disks (such as those in HL Tau) may represent the signatures of embedded planets undergoing migration. We will revisit exoplanet demographics and the evidence for migration in {ref}`Lecture 13 <lecture13>`.
 
 ```{figure} figures/hot_jupiter_mass_period.avif
 :name: fig:hot-jupiters
@@ -619,7 +619,7 @@ Confirmed exoplanets in mass-period space, generated from the NASA Exoplanet Arc
 
 The study of planet formation has been transformed by high-resolution imaging of protoplanetary disks. The ALMA DSHARP survey {cite:p}`Andrews2018` revealed that ring-and-gap substructure is ubiquitous in protoplanetary disks, even around young ($\lesssim 1$ Myr) stars. These structures are widely interpreted as signatures of embedded planets clearing gaps in the disk, implying that planet formation begins earlier and proceeds faster than previously thought, consistent with the pebble accretion paradigm {cite:p}`Lambrechts2012`.
 
-Theoretical advances have been consolidated in the *Protostars and Planets VII* review volume {cite:p}`Drazkowska2023`, which presents an updated synthesis of planet formation theory incorporating ALMA constraints. Key developments include refined models of the streaming instability that forms planetesimals, improved treatments of pebble accretion in evolving disks, and new constraints on giant planet formation timescales from isotopic analyses of meteorites and Juno gravity measurements {cite:p}`Wahl2017`. The emerging picture is that giant planet cores must form within the first 1–3 Myr of disk evolution (before the gas disperses), placing tight constraints on the growth mechanisms ({ref}`lecture08`).
+Theoretical advances have been consolidated in the *Protostars and Planets VII* review volume {cite:p}`Drazkowska2023`, which presents an updated synthesis of planet formation theory incorporating ALMA constraints. Key developments include refined models of the streaming instability that forms planetesimals, improved treatments of pebble accretion in evolving disks, and new constraints on giant planet formation timescales from isotopic analyses of meteorites and Juno gravity measurements {cite:p}`Wahl2017`. The emerging picture is that giant planet cores must form within the first 1–3 Myr of disk evolution (before the gas disperses), placing tight constraints on the growth mechanisms ({ref}`Lecture 8 <lecture08>`).
 
 
 ## References

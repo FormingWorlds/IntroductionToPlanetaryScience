@@ -1,5 +1,5 @@
 (lecture01)=
-# Lecture 1: Introduction & History of Planetary Science
+# Introduction & History of Planetary Science
 
 ```{highlights}
 **Learning objectives:** By the end of this lecture, you will be able to describe the scope of planetary science, explain how the field has evolved from antiquity to the space age, and identify the key properties and classification of solar system bodies.
@@ -151,7 +151,7 @@ Trajectory of NASA's Voyager 2 spacecraft during its grand tour of the outer sol
 
 ### The exoplanet revolution
 
-In 1992, Aleksander Wolszczan and Dale Frail announced the discovery of planets orbiting a pulsar, the first confirmed exoplanets {cite:p}`Wolszczan1992`. Three years later, Michel Mayor and Didier Queloz detected 51 Pegasi b, the first planet orbiting a Sun-like star: a "hot Jupiter" with a 4.2-day orbit that challenged all existing formation theories {cite:p}`MayorQueloz1995`. NASA's Kepler mission (2009–2018) discovered thousands of transiting exoplanets, while the ongoing TESS mission (launched 2018) surveys the brightest nearby stars. JWST, launched in December 2021, is now characterising exoplanet atmospheres through transmission and emission spectroscopy ({ref}`lecture13`).
+In 1992, Aleksander Wolszczan and Dale Frail announced the discovery of planets orbiting a pulsar, the first confirmed exoplanets {cite:p}`Wolszczan1992`. Three years later, Michel Mayor and Didier Queloz detected 51 Pegasi b, the first planet orbiting a Sun-like star: a "hot Jupiter" with a 4.2-day orbit that challenged all existing formation theories {cite:p}`MayorQueloz1995`. NASA's Kepler mission (2009–2018) discovered thousands of transiting exoplanets, while the ongoing TESS mission (launched 2018) surveys the brightest nearby stars. JWST, launched in December 2021, is now characterising exoplanet atmospheres through transmission and emission spectroscopy ({ref}`Lecture 13 <lecture13>`).
 The cumulative tally of confirmed detections is shown in {numref}`fig:exoplanet-cumulative`.
 
 ```{figure} figures/exoplanet_cumulative.avif
@@ -243,7 +243,7 @@ The table below summarises the key physical and orbital properties of the eight 
 | Uranus | 14.54 | 4.01 | 19.19 | 84.01 | 0.047 | 1271 |
 | Neptune | 17.15 | 3.88 | 30.07 | 164.8 | 0.009 | 1638 |
 
-Two patterns stand out immediately. First, **density decreases with distance** ({numref}`fig:density-vs-distance`): the inner planets have $\rho > 3900$ kg m$^{-3}$ (rock and metal), while the outer planets have $\rho < 1700$ kg m$^{-3}$ (gas and ice). Saturn is famously less dense than water. This gradient reflects the temperature structure of the protoplanetary disk from which the planets formed ({ref}`lecture02`). Second, **mass is concentrated in Jupiter** ({numref}`fig:mass-vs-distance`): it contains more than twice the mass of all other planets combined. We will quantify this in the blackboard derivation below.
+Two patterns stand out immediately. First, **density decreases with distance** ({numref}`fig:density-vs-distance`): the inner planets have $\rho > 3900$ kg m$^{-3}$ (rock and metal), while the outer planets have $\rho < 1700$ kg m$^{-3}$ (gas and ice). Saturn is famously less dense than water. This gradient reflects the temperature structure of the protoplanetary disk from which the planets formed ({ref}`Lecture 2 <lecture02>`). Second, **mass is concentrated in Jupiter** ({numref}`fig:mass-vs-distance`): it contains more than twice the mass of all other planets combined. We will quantify this in the blackboard derivation below.
 
 ```{figure} figures/density_vs_distance.avif
 :name: fig:density-vs-distance
@@ -265,9 +265,9 @@ Planetary mass versus orbital semi-major axis on a log-log scale. Jupiter's mass
 
 Planets are broadly classified by composition and structure:
 
-- **Terrestrial planets** (Mercury, Venus, Earth, Mars): Rocky surfaces, iron cores, thin or no atmospheres (Venus being the exception with its massive CO$_2$ atmosphere). Covered in {ref}`lecture09` and {ref}`lecture10`.
-- **Gas giants** (Jupiter, Saturn): Massive hydrogen–helium envelopes with no well-defined solid surface, likely rocky/icy cores at high pressure. Covered in {ref}`lecture11`.
-- **Ice giants** (Uranus, Neptune): Smaller than gas giants, with interiors dominated by heavier volatiles (H$_2$O, NH$_3$, CH$_4$) under extreme pressures, topped by hydrogen–helium atmospheres. Also covered in {ref}`lecture11`.
+- **Terrestrial planets** (Mercury, Venus, Earth, Mars): Rocky surfaces, iron cores, thin or no atmospheres (Venus being the exception with its massive CO$_2$ atmosphere). Covered in {ref}`Lecture 9 <lecture09>` and {ref}`Lecture 10 <lecture10>`.
+- **Gas giants** (Jupiter, Saturn): Massive hydrogen–helium envelopes with no well-defined solid surface, likely rocky/icy cores at high pressure. Covered in {ref}`Lecture 11 <lecture11>`.
+- **Ice giants** (Uranus, Neptune): Smaller than gas giants, with interiors dominated by heavier volatiles (H$_2$O, NH$_3$, CH$_4$) under extreme pressures, topped by hydrogen–helium atmospheres. Also covered in {ref}`Lecture 11 <lecture11>`.
 
 ## Blackboard derivation: Solar mass from planetary orbits
 
@@ -302,7 +302,7 @@ $$ (eq:kepler-mass)
 
 This is Newton's form of Kepler's third law (for $M_p \ll M_*$). The planet's mass cancels: the orbital period depends only on the central mass and the orbital radius.
 
-**Note:** For elliptical orbits, the same relation holds with $r$ replaced by the semi-major axis $a$. The derivation of the general case requires the vis-viva equation, which we will cover in {ref}`lecture02`.
+**Note:** For elliptical orbits, the same relation holds with $r$ replaced by the semi-major axis $a$. The derivation of the general case requires the vis-viva equation, which we will cover in {ref}`Lecture 2 <lecture02>`.
 
 **Application.**
 
@@ -327,7 +327,7 @@ The more precise form of Kepler's third law is $P^2 = 4\pi^2 a^3 / [G(M_* + M_p)
 - Jupiter, the most massive planet: $\Mjup \approx 318 \, \Mearth \approx 1.90 \times 10^{27}$ kg, giving $\Mjup / \Msun \approx 9.5 \times 10^{-4}$.
 - Total mass of all eight planets: $\approx 446 \, \Mearth \approx 2.7 \times 10^{27}$ kg, giving $M_\mathrm{planets}/\Msun \approx 1.3 \times 10^{-3}$.
 
-The Sun contains **99.87%** of the solar system's total mass. Jupiter alone accounts for 71% of the planetary mass ({numref}`fig:ss-mass-budget`). This extreme concentration of mass in the central star is a fundamental property of planetary systems, and one that planet formation theory must explain ({ref}`lecture02`).
+The Sun contains **99.87%** of the solar system's total mass. Jupiter alone accounts for 71% of the planetary mass ({numref}`fig:ss-mass-budget`). This extreme concentration of mass in the central star is a fundamental property of planetary systems, and one that planet formation theory must explain ({ref}`Lecture 2 <lecture02>`).
 ```
 
 ```{figure} figures/ss_mass_budget.avif
@@ -381,7 +381,7 @@ By comparing these three cases, we can isolate which differences arise from dist
 The four Galilean moons of Jupiter at correct relative size. Left to right: Io (volcanically active), Europa (icy crust over a global liquid-water ocean), Ganymede (largest moon in the solar system; intrinsic magnetic field), Callisto (heavily cratered, geologically inert). Despite a common formation environment, tidal heating and ice content drive vastly different geological outcomes. Credit: NASA/JPL/DLR, Galileo mission.
 ```
 
-This comparative approach now extends to thousands of exoplanets, where we can study how planetary properties vary as a function of stellar type, orbital distance, and system architecture ({ref}`lecture13`). It is one of the most powerful tools in modern planetary science, and we will apply it throughout this course.
+This comparative approach now extends to thousands of exoplanets, where we can study how planetary properties vary as a function of stellar type, orbital distance, and system architecture ({ref}`Lecture 13 <lecture13>`). It is one of the most powerful tools in modern planetary science, and we will apply it throughout this course.
 
 ## Observational techniques
 
@@ -457,7 +457,7 @@ Several missions are in flight or planned for the coming decade, including ESA's
 
 ## Recent advances
 
-Planetary science is advancing rapidly, driven by new space missions and observatories. The **James Webb Space Telescope** (JWST), launched in 2021, has begun characterising the atmospheres of rocky exoplanets for the first time, including thermal emission measurements of planets in the TRAPPIST-1 system {cite:p}`Greene2023` (see also {ref}`lecture13`). The system architecture, with seven roughly Earth-sized planets in tightly-packed orbits around a cool M-dwarf, is shown in {numref}`fig:trappist1-system`. These observations are providing the first direct constraints on whether Earth-sized planets around other stars retain atmospheres; the first such measurement, the dayside thermal emission of TRAPPIST-1 b, is shown in {numref}`fig:trappist1b-jwst`.
+Planetary science is advancing rapidly, driven by new space missions and observatories. The **James Webb Space Telescope** (JWST), launched in 2021, has begun characterising the atmospheres of rocky exoplanets for the first time, including thermal emission measurements of planets in the TRAPPIST-1 system {cite:p}`Greene2023` (see also {ref}`Lecture 13 <lecture13>`). The system architecture, with seven roughly Earth-sized planets in tightly-packed orbits around a cool M-dwarf, is shown in {numref}`fig:trappist1-system`. These observations are providing the first direct constraints on whether Earth-sized planets around other stars retain atmospheres; the first such measurement, the dayside thermal emission of TRAPPIST-1 b, is shown in {numref}`fig:trappist1b-jwst`.
 
 ```{figure} figures/trappist1_system.avif
 :name: fig:trappist1-system
@@ -475,9 +475,9 @@ The seven planets of the TRAPPIST-1 system (top row, b through h) compared with 
 JWST MIRI F1500W secondary-eclipse measurement of TRAPPIST-1 b (data point near 15 μm) compared with model dayside spectra. The measurement is consistent with a 503 K bare-rock blackbody and excludes thick CO$_2$-dominated atmospheres (cyan) and hybrid O$_2$+CO$_2$ atmospheres (magenta) at the level shown. Credit: {cite:t}`Greene2023`.
 ```
 
-Closer to home, NASA's **OSIRIS-REx** mission returned samples from the carbon-rich asteroid Bennu in September 2023, revealing hydrated minerals and organic compounds that illuminate the primordial building blocks of planets ({ref}`lecture12`). NASA's **Europa Clipper**, launched in October 2024, is en route to Jupiter's moon Europa to investigate its subsurface ocean and assess habitability {cite:p}`HowellPappalardo2020` (see also {ref}`lecture14`). ESA's **JUICE** mission, launched in 2023, will arrive at the Jupiter system in 2031 to study Ganymede, Europa, and Callisto.
+Closer to home, NASA's **OSIRIS-REx** mission returned samples from the carbon-rich asteroid Bennu in September 2023, revealing hydrated minerals and organic compounds that illuminate the primordial building blocks of planets ({ref}`Lecture 12 <lecture12>`). NASA's **Europa Clipper**, launched in October 2024, is en route to Jupiter's moon Europa to investigate its subsurface ocean and assess habitability {cite:p}`HowellPappalardo2020` (see also {ref}`Lecture 14 <lecture14>`). ESA's **JUICE** mission, launched in 2023, will arrive at the Jupiter system in 2031 to study Ganymede, Europa, and Callisto.
 
-The Mars exploration programme continues with the **Perseverance** rover caching samples in Jezero crater for eventual return to Earth {cite:p}`Farley2022`, while NASA's **Dragonfly** rotorcraft (a nuclear-powered drone that will explore Titan's surface chemistry) is planned for launch in 2028 ({ref}`lecture06`). These missions collectively address the three driving questions of this course: how planetary systems form, what makes a planet habitable, and whether life exists beyond Earth.
+The Mars exploration programme continues with the **Perseverance** rover caching samples in Jezero crater for eventual return to Earth {cite:p}`Farley2022`, while NASA's **Dragonfly** rotorcraft (a nuclear-powered drone that will explore Titan's surface chemistry) is planned for launch in 2028 ({ref}`Lecture 6 <lecture06>`). These missions collectively address the three driving questions of this course: how planetary systems form, what makes a planet habitable, and whether life exists beyond Earth.
 
 
 ## References

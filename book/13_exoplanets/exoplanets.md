@@ -1,5 +1,5 @@
 (lecture13)=
-# Lecture 13: Exoplanets, Detection Methods, Demographics & Characterisation
+# Exoplanets, Detection Methods, Demographics & Characterisation
 
 ```{highlights}
 **Learning objectives:** By the end of this lecture, you will be able to describe the main exoplanet detection methods and their observational biases, interpret the period-radius diagram and its key features (radius valley, hot Neptune desert, peas-in-a-pod), apply the transit and radial velocity geometry to derive planetary mass, radius, and bulk density, and evaluate JWST-era atmospheric characterisation results and their implications for habitability and biosignatures.
@@ -27,14 +27,14 @@ The precision of their pulse arrival times rivals the best atomic clocks, and an
 The original 1992 *Nature* announcement reported two planets with minimum masses of about $2.8$ and $3.4\,\Mearth$ (assuming coplanar orbits) in $66$ and $98$ day orbits around the pulsar. The subsequent analysis by {cite:t}`Wolszczan1994`, which detected the predicted near-3:2 mutual gravitational perturbation between the two bodies, confirmed these mass estimates (final values $3.4/\sin i\,\Mearth$ and $2.8/\sin i\,\Mearth$, with orbital inclinations greater than 60 degrees) and additionally revealed a much smaller third body of about $0.015\,\Mearth$ (roughly a lunar mass) in a $25.34$-day orbit.
 These were not the planets anyone was looking for.
 They are the survivors, or perhaps the second-generation products, of a supernova explosion.
-They remain a striking reminder that planets can form, or at least exist, in environments that have nothing to do with the textbook picture of star and disk we developed in {ref}`lecture02`.
+They remain a striking reminder that planets can form, or at least exist, in environments that have nothing to do with the textbook picture of star and disk we developed in {ref}`Lecture 2 <lecture02>`.
 
 Three years later Michel Mayor and Didier Queloz used the ELODIE spectrograph at the Observatoire de Haute-Provence to detect a planet around an ordinary main-sequence star, **51 Pegasi b** {cite:p}`MayorQueloz1995`.
 This is the discovery for which they shared the 2019 Nobel Prize in Physics.
 The planet had roughly half the mass of Jupiter, but the orbital period was a stunning 4.23 days.
 A Jupiter-mass body so close to its star contradicted every textbook picture: gas giants were supposed to form beyond the ice line at several AU, where ice could condense and provide raw material for the runaway accretion phase {cite:p}`Pollack1996`.
 Either 51 Peg b had formed in situ in a way nobody had imagined, or it had formed at large distance and **migrated inward**.
-The migration interpretation won out within a few years and reshaped planet-formation theory; the modern picture of disk-driven Type I and Type II migration was largely a response to the existence of close-in giants like 51 Peg b (recap from {ref}`lecture02`).
+The migration interpretation won out within a few years and reshaped planet-formation theory; the modern picture of disk-driven Type I and Type II migration was largely a response to the existence of close-in giants like 51 Peg b (recap from {ref}`Lecture 2 <lecture02>`).
 A single object, found because it happened to be unusually easy to detect, redirected the entire field.
 
 ```{figure} figures/hd209458b_first_transit.avif
@@ -305,11 +305,11 @@ The first ground-based direct image of $\beta$ Pictoris b, a $\sim 9\pm 3\,\Mjup
 ```
 
 PDS 70 deserves a special mention because it is the first system in which a planet was unambiguously detected **inside the gap of a still-present protoplanetary disk** {cite:p}`Keppler2018,Haffert2019`.
-The host is a 5 Myr K7 star surrounded by an obvious cleared central cavity, exactly the kind of structure predicted by models of planet-disk interaction (recap from {ref}`lecture02`).
+The host is a 5 Myr K7 star surrounded by an obvious cleared central cavity, exactly the kind of structure predicted by models of planet-disk interaction (recap from {ref}`Lecture 2 <lecture02>`).
 SPHERE at near-infrared wavelengths and MUSE at H$\alpha$ emission both detected a point source inside the gap; this is PDS 70 b.
 A second protoplanet, PDS 70 c, was identified in a similar position later.
 Both objects are still actively accreting from the surrounding disk gas, as evidenced by the H$\alpha$ emission line that traces accretion shocks.
-This is the first case in which a forming planet, its host disk, and the gap it has carved are all visible simultaneously, providing a direct test of the planet-disk-interaction models discussed in {ref}`lecture02` ({numref}`fig:pds70b`, {numref}`fig:pds70bc`, and {numref}`fig:pds70disk`).
+This is the first case in which a forming planet, its host disk, and the gap it has carved are all visible simultaneously, providing a direct test of the planet-disk-interaction models discussed in {ref}`Lecture 2 <lecture02>` ({numref}`fig:pds70b`, {numref}`fig:pds70bc`, and {numref}`fig:pds70disk`).
 
 ```{figure} figures/pds70b_keppler.avif
 :align: center
@@ -626,7 +626,7 @@ Period-ratio correlation in Kepler multi-planet systems, from {cite:t}`Weiss2018
 The interpretation favoured by Weiss et al. is that compact inner systems form by a **smooth, local process** rather than by stochastic large impacts.
 A formation channel dominated by giant impacts and dynamical chaos would tend to produce systems of randomly spaced planets with random sizes.
 The observed regularity is more consistent with a slow growth and migration process in which neighbouring planets feel each other's gravity throughout formation and end up with similar sizes and uniform spacing.
-This is a remarkable inversion of the lessons drawn from the solar system, where the late stages of terrestrial planet formation are dominated by giant impacts (compare the Earth-Moon system, recap from {ref}`lecture02`).
+This is a remarkable inversion of the lessons drawn from the solar system, where the late stages of terrestrial planet formation are dominated by giant impacts (compare the Earth-Moon system, recap from {ref}`Lecture 2 <lecture02>`).
 It may be that the inner solar system is dynamically unusual relative to typical compact systems.
 
 Not every multi-planet system is a peas-in-a-pod arrangement.
@@ -656,7 +656,7 @@ The Roche limit is therefore one of the two physical scales (the other being the
 There are three competing mechanisms for the inward migration that delivers planets to this region.
 
 **Disk migration** (Type II) is the smoothest of the three.
-A giant planet embedded in a still-gaseous disk excites density waves in the disk that exert a net torque back on the planet, and the torque drives the planet inward on a timescale set by the local disk viscosity and gas density (recap from {ref}`lecture02`).
+A giant planet embedded in a still-gaseous disk excites density waves in the disk that exert a net torque back on the planet, and the torque drives the planet inward on a timescale set by the local disk viscosity and gas density (recap from {ref}`Lecture 2 <lecture02>`).
 Type II migration is quiescent and predicts low orbital eccentricities and orbits well aligned with the host star spin axis (because the disk and the stellar equator are themselves typically aligned to better than a few degrees).
 
 **High-eccentricity migration** is more violent.
@@ -948,7 +948,7 @@ The debate remains open as of early 2026.
 
 The pedagogical value of K2-18 b is independent of the specific outcome.
 **Whatever the final consensus on DMS turns out to be, K2-18 b is the textbook example of how a tentative biosignature claim is tested, challenged, and revised in real time.**
-The same general pattern, of a single team's tentative detection followed by community reanalysis, has played out many times in the history of biosignature claims (the historical Mars methane debate, the Venus phosphine controversy from {ref}`lecture06`, the ALH84001 nano-fossil claim).
+The same general pattern, of a single team's tentative detection followed by community reanalysis, has played out many times in the history of biosignature claims (the historical Mars methane debate, the Venus phosphine controversy from {ref}`Lecture 6 <lecture06>`, the ALH84001 nano-fossil claim).
 The K2-18 b discussion has been faster, more transparent, and better documented than any of those previous cases, and it sets a useful template for how the much louder claims of the next decade should be evaluated.
 
 A separate strand of JWST atmospheric work has come from the **direct imaging** instruments on NIRCam and MIRI.
@@ -960,7 +960,7 @@ These spectra provide the first direct atmospheric retrievals of self-luminous g
 Lecture 9 (Earth and Venus) introduced the **classical habitable zone** as the range of stellar fluxes for which a rocky planet can plausibly maintain liquid surface water.
 The classical formulation goes back to {cite:t}`Kasting1993`, who used a one-dimensional radiative-convective climate model to identify two boundaries.
 The **inner edge** is set by the **Simpson-Nakajima runaway greenhouse limit**: as the planet warms, the atmospheric water vapour content rises following the Clausius-Clapeyron relation, the outgoing longwave radiation reaches a maximum, and any further increase in absorbed flux drives the planet into a runaway state in which the entire ocean evaporates.
-The numerical value of the limiting outgoing longwave radiation is about $280$--$310$ W/m$^2$, depending on details, and it implies that an Earth-twin climate cannot be sustained at solar fluxes much above $\sim 1.06$ times the Earth value, corresponding to a critical orbital distance of $\sim 0.97$ AU around a Sun-like star (the runaway greenhouse limit; the more conservative moist greenhouse limit lies just inside Earth's orbit at $\sim 0.99$ AU; recap from {ref}`lecture09`).
+The numerical value of the limiting outgoing longwave radiation is about $280$--$310$ W/m$^2$, depending on details, and it implies that an Earth-twin climate cannot be sustained at solar fluxes much above $\sim 1.06$ times the Earth value, corresponding to a critical orbital distance of $\sim 0.97$ AU around a Sun-like star (the runaway greenhouse limit; the more conservative moist greenhouse limit lies just inside Earth's orbit at $\sim 0.99$ AU; recap from {ref}`Lecture 9 <lecture09>`).
 The **outer edge** is set by the **maximum $\mathrm{CO_2}$ greenhouse**: as a planet at large stellar distance accumulates more $\mathrm{CO_2}$ to compensate for the lower flux, eventually the increased atmospheric $\mathrm{CO_2}$ starts to condense out as ice clouds and the greenhouse effect saturates, leaving the planet too cold for surface water regardless of the atmospheric inventory.
 
 ```{figure} figures/kopparapu_hz.avif
@@ -976,7 +976,7 @@ The Kopparapu boundaries are the standard input to most recent occurrence rate e
 Two important caveats apply to the classical habitable zone.
 
 First, **history matters**, not just snapshot conditions.
-A planet currently inside the formal habitable zone is not necessarily habitable if its early evolution drove it through a runaway greenhouse phase that desiccated it (the Venus alternative discussed in {ref}`lecture09`).
+A planet currently inside the formal habitable zone is not necessarily habitable if its early evolution drove it through a runaway greenhouse phase that desiccated it (the Venus alternative discussed in {ref}`Lecture 9 <lecture09>`).
 A planet currently inside the formal habitable zone of an M dwarf has spent hundreds of Myr inside the runaway greenhouse boundary during the host's pre-main-sequence high-luminosity phase {cite:p}`LugerBarnes2015`, and may have lost its initial water inventory entirely.
 The habitable zone is not a line that a planet either lies inside or outside at the present epoch.
 It is a **trajectory** through climate-evolution space that the planet has followed since formation.
@@ -1001,7 +1001,7 @@ An astonishing number of abiotic processes can produce $\mathrm{O_2}$ and $\math
 {cite:t}`Wordsworth2014` showed that water vapour photolysis followed by hydrogen escape can build up substantial abiotic $\mathrm{O_2}$ on dry planets, particularly during the early evolution of M dwarf habitable-zone planets.
 $\mathrm{CO_2}$ photolysis in a dry $\mathrm{CO_2}$-rich atmosphere can produce comparable amounts of $\mathrm{O_2}$ via splitting of $\mathrm{CO_2}$ into CO and O.
 Both of these abiotic $\mathrm{O_2}$ pathways are common consequences of M dwarf XUV history, and they specifically contaminate the most accessible class of habitable-zone targets.
-Methane is also a non-trivial false positive: volcanic outgassing, serpentinisation reactions in hydrothermal systems, and impact-driven shocks can all release abiotic $\mathrm{CH_4}$ in measurable quantities (recap from {ref}`lecture10` Mars methane discussion).
+Methane is also a non-trivial false positive: volcanic outgassing, serpentinisation reactions in hydrothermal systems, and impact-driven shocks can all release abiotic $\mathrm{CH_4}$ in measurable quantities (recap from {ref}`Lecture 10 <lecture10>` Mars methane discussion).
 
 The community consensus is that biosignature detection is fundamentally an **inverse problem**: a given combination of gases must be tested against all plausible abiotic explanations, and the biosignature interpretation is only convincing if the abiotic pathways are demonstrably insufficient.
 This is much harder than it sounds, because the catalogue of plausible abiotic pathways is constantly being extended by new theoretical and experimental work.
@@ -1010,7 +1010,7 @@ The DMS-on-K2-18 b debate is a useful microcosm: the original biosignature claim
 
 ### Comparative payoff: the solar system in the exoplanet landscape
 
-We can now ask the question that has been waiting since {ref}`lecture01`: **is the solar system typical?**
+We can now ask the question that has been waiting since {ref}`Lecture 1 <lecture01>`: **is the solar system typical?**
 
 The answer depends on what we mean by "typical".
 If "typical" means "the most common configuration in the bias-corrected exoplanet archive", then the answer is unambiguously **no**.
@@ -1031,7 +1031,7 @@ Whether the solar system is genuinely **rare** or simply lives in an **undersamp
 
 The honest answer in 2026 is: the solar system is **not obviously typical**, but it is also not yet known to be rare.
 The two main lines of evidence that should resolve the question over the next decade are (a) Gaia DR4 and DR5 astrometry of long-period giant planets around nearby stars, which will populate the Jupiter analogue regime, and (b) PLATO photometry of true Earth analogues around bright Sun-like stars, which will close the inner-system gap.
-The full discussion will return in {ref}`lecture14`.
+The full discussion will return in {ref}`Lecture 14 <lecture14>`.
 
 ### Frontier missions, part 1: transits and atmospheres (2026--2035)
 
@@ -1093,7 +1093,7 @@ Temporal variability (seasonal cycles) on a habitable-zone target?
 Unambiguous spectral evidence of vegetation or photosynthetic surface features?
 The answer depends on how much we trust our catalogue of false positives and how much we trust our atmospheric models.
 Each of the missions listed above is designed against a specific definition of "convincing", but none of those definitions is universally agreed upon.
-The forward question for {ref}`lecture14` is exactly this: how do we move from "we have a candidate biosignature" to "we have detected life", and what would the post-detection scientific landscape look like?
+The forward question for {ref}`Lecture 14 <lecture14>` is exactly this: how do we move from "we have a candidate biosignature" to "we have detected life", and what would the post-detection scientific landscape look like?
 
 ## Summary
 
@@ -1106,7 +1106,7 @@ The forward question for {ref}`lecture14` is exactly this: how do we move from "
 - **JWST has moved exoplanet atmospheric characterisation from a promise to a routine capability.** WASP-39 b $\mathrm{SO_2}$ is the first unambiguous detection of disequilibrium photochemistry. TRAPPIST-1 b/c rule out thick $\mathrm{CO_2}$ atmospheres on close-in M dwarf rocky planets. 55 Cancri e and TOI-561 b are tentative detections of secondary atmospheres on rocky planets around Sun-like and metal-poor hosts. K2-18 b is the textbook case study in how biosignature claims are tested and revised.
 - **The solar system is not obviously typical**: it lacks sub-Neptunes, lacks compact inner-system architecture, lacks hot giants, and has wide low-eccentricity outer giants. Whether it is genuinely rare or just lives in an undersampled corner of parameter space is the central observational question of the next decade.
 - **Habitability is a history-dependent trajectory**, not a snapshot line on the HR diagram, and biosignature detection is an inverse problem with unavoidable false-positive challenges.
-- The 2026--2040 mission queue (PLATO, Ariel, Roman, HWO, LIFE, ELTs) will push the field from statistical demography to individual characterisation of potentially habitable worlds. The forward question of what constitutes convincing life detection is taken up in {ref}`lecture14`.
+- The 2026--2040 mission queue (PLATO, Ariel, Roman, HWO, LIFE, ELTs) will push the field from statistical demography to individual characterisation of potentially habitable worlds. The forward question of what constitutes convincing life detection is taken up in {ref}`Lecture 14 <lecture14>`.
 
 ## References
 

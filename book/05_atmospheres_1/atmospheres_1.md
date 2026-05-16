@@ -1,5 +1,5 @@
 (lecture05)=
-# Lecture 5: Atmospheres I: Composition, Structure, & Energy Balance
+# Atmospheres I: Composition, Structure, & Energy Balance
 
 ```{highlights}
 **Learning objectives:** By the end of this lecture, you will be able to classify atmospheric types (primary, secondary, tertiary), derive pressure–temperature profiles from hydrostatic equilibrium, explain the greenhouse effect and planetary energy balance, and evaluate atmospheric escape mechanisms.
@@ -29,13 +29,13 @@ Earth's atmosphere as a thin blue line on the limb, photographed from the Intern
 
 **Primary atmospheres** are captured directly from the protoplanetary disk during planet formation. Because the disk is composed predominantly of hydrogen and helium (reflecting the solar composition), primary atmospheres are dominated by $\mathrm{H_2}$ and He, with trace amounts of $\mathrm{CH_4}$, $\mathrm{NH_3}$, $\mathrm{H_2O}$, and noble gases.
 
-Only sufficiently massive bodies (those exceeding roughly $5$–$10 \, \Mearth$) can gravitationally capture and retain significant quantities of nebular gas before the disk disperses (within $\sim$3–10 Myr; {ref}`lecture02`). The **gas giants** Jupiter and Saturn are the primary examples: their massive $\mathrm{H_2}$/He envelopes constitute the vast majority of their total mass. The **ice giants** Uranus and Neptune also captured primary atmospheres, but far less gas: their envelopes are only $\sim$10–20% of their total mass, reflecting their slower growth and the disk's dissipation.
+Only sufficiently massive bodies (those exceeding roughly $5$–$10 \, \Mearth$) can gravitationally capture and retain significant quantities of nebular gas before the disk disperses (within $\sim$3–10 Myr; {ref}`Lecture 2 <lecture02>`). The **gas giants** Jupiter and Saturn are the primary examples: their massive $\mathrm{H_2}$/He envelopes constitute the vast majority of their total mass. The **ice giants** Uranus and Neptune also captured primary atmospheres, but far less gas: their envelopes are only $\sim$10–20% of their total mass, reflecting their slower growth and the disk's dissipation.
 
 Terrestrial planets like Earth, Venus, and Mars were too small to capture significant nebular gas. Any primordial hydrogen they did accrete was quickly lost to space (see [atmospheric escape](atm-escape) below). Their present-day atmospheres are therefore **not** primary.
 
 ### Secondary atmospheres
 
-**Secondary atmospheres** are produced by **outgassing**: the release of volatiles from the planet's interior through volcanism and magma ocean degassing. As discussed in {ref}`lecture04`, the speciation of outgassed volatiles depends on the oxygen fugacity of the magma: oxidising conditions produce $\mathrm{CO_2}$, $\mathrm{H_2O}$, and $\mathrm{N_2}$, while reducing conditions produce $\mathrm{H_2}$, CO, and $\mathrm{N_2}$ {cite:p}`Hirschmann2012`.
+**Secondary atmospheres** are produced by **outgassing**: the release of volatiles from the planet's interior through volcanism and magma ocean degassing. As discussed in {ref}`Lecture 4 <lecture04>`, the speciation of outgassed volatiles depends on the oxygen fugacity of the magma: oxidising conditions produce $\mathrm{CO_2}$, $\mathrm{H_2O}$, and $\mathrm{N_2}$, while reducing conditions produce $\mathrm{H_2}$, CO, and $\mathrm{N_2}$ {cite:p}`Hirschmann2012`.
 
 The present-day atmospheres of **Venus** ($\mathrm{CO_2}$-dominated) and **Mars** ($\mathrm{CO_2}$-dominated but much thinner) are essentially secondary atmospheres: their compositions reflect volcanic outgassing with relatively modest subsequent modification. Titan's thick $\mathrm{N_2}$ atmosphere also originated from outgassing (likely from the conversion of accreted $\mathrm{NH_3}$).
 
@@ -207,7 +207,7 @@ Real atmospheres are not isothermal: temperature varies with altitude, creating 
 
 ### Troposphere
 
-The **troposphere** is the lowest layer, heated primarily from below by the surface (which absorbs sunlight and re-emits thermal radiation). Warm air near the surface rises, cool air aloft sinks: this is **convection**, the same process we encountered in planetary interiors ({ref}`lecture03`). Convection keeps the troposphere well-mixed and imposes a characteristic temperature decrease with altitude called the **lapse rate**.
+The **troposphere** is the lowest layer, heated primarily from below by the surface (which absorbs sunlight and re-emits thermal radiation). Warm air near the surface rises, cool air aloft sinks: this is **convection**, the same process we encountered in planetary interiors ({ref}`Lecture 3 <lecture03>`). Convection keeps the troposphere well-mixed and imposes a characteristic temperature decrease with altitude called the **lapse rate**.
 
 For a parcel of dry air rising adiabatically (without exchanging heat with its surroundings), the temperature decreases at the **dry adiabatic lapse rate**:
 
@@ -365,7 +365,7 @@ $$ (eq:stellar-flux)
 
 The planet intercepts this flux over its cross-sectional area $\pi R_p^2$ and reflects a fraction $A$ (the **Bond albedo**). The absorbed power is therefore $(1 - A) \, F_\star \, \pi R_p^2$.
 
-In equilibrium, this absorbed power equals the thermal radiation emitted from the entire surface ($4\pi R_p^2$) at the **effective temperature** $T_{\mathrm{eff}}$ via the Stefan–Boltzmann law ({ref}`lecture03`):
+In equilibrium, this absorbed power equals the thermal radiation emitted from the entire surface ($4\pi R_p^2$) at the **effective temperature** $T_{\mathrm{eff}}$ via the Stefan–Boltzmann law ({ref}`Lecture 3 <lecture03>`):
 
 $$
 (1 - A) \frac{L_\star}{4\pi d^2} \pi R_p^2 = 4\pi R_p^2 \, \sigma \, T_{\mathrm{eff}}^4
@@ -402,7 +402,7 @@ The table below compares the effective temperature with the measured surface tem
 
 \*Jupiter's "surface temperature" refers to the 1-bar level.
 
-The discrepancy $\Delta T = T_{\mathrm{surface}} - T_{\mathrm{eff}}$ reveals the strength of the **greenhouse effect**. Venus has a staggering 510 K greenhouse warming, by far the largest in the solar system. Earth's 33 K greenhouse warming, though modest by comparison, is sufficient to keep the oceans liquid. Mars has only a small greenhouse warming ($\sim 5$ K) because its CO$_2$ atmosphere is very thin (surface pressure only 6 mbar) and lacks the water-vapour amplifier that boosts the warming on Earth and Venus. Jupiter's excess temperature is partly due to internal heat left over from formation ({ref}`lecture03`), not solely the greenhouse effect.
+The discrepancy $\Delta T = T_{\mathrm{surface}} - T_{\mathrm{eff}}$ reveals the strength of the **greenhouse effect**. Venus has a staggering 510 K greenhouse warming, by far the largest in the solar system. Earth's 33 K greenhouse warming, though modest by comparison, is sufficient to keep the oceans liquid. Mars has only a small greenhouse warming ($\sim 5$ K) because its CO$_2$ atmosphere is very thin (surface pressure only 6 mbar) and lacks the water-vapour amplifier that boosts the warming on Earth and Venus. Jupiter's excess temperature is partly due to internal heat left over from formation ({ref}`Lecture 3 <lecture03>`), not solely the greenhouse effect.
 
 ### The greenhouse mechanism
 
@@ -451,7 +451,7 @@ $$ (eq:greenhouse-surface-temp)
 When $\varepsilon = 0$ (no greenhouse gases), $T_s = T_{\mathrm{eff}}$: no warming. When $\varepsilon = 1$ (perfect absorber), $T_s = 2^{1/4} \, T_{\mathrm{eff}} \approx 1.19 \, T_{\mathrm{eff}}$, a 19% increase in surface temperature. For Earth, this gives $T_s \approx 1.19 \times 255 \approx 303$ K, a reasonable first estimate, though the real greenhouse effect involves multiple absorbing layers and a more complex radiative transfer calculation. The flux balance is summarised in {numref}`fig:greenhouse-effect`.
 
 ```{note}
-This one-layer model is deliberately simple. In {ref}`lecture09`, we will extend this treatment to examine the **runaway greenhouse effect**: what happens when the surface temperature rises so high that the outgoing longwave radiation reaches a maximum and can no longer balance the absorbed stellar flux. This is the mechanism that likely transformed Venus from a potentially habitable world into the 737 K inferno we see today.
+This one-layer model is deliberately simple. In {ref}`Lecture 9 <lecture09>`, we will extend this treatment to examine the **runaway greenhouse effect**: what happens when the surface temperature rises so high that the outgoing longwave radiation reaches a maximum and can no longer balance the absorbed stellar flux. This is the mechanism that likely transformed Venus from a potentially habitable world into the 737 K inferno we see today.
 ```
 
 ```{figure} figures/greenhouse_one_layer.avif
@@ -528,13 +528,13 @@ The following table illustrates $\lambda_J$ for several atmospheric species on E
 | $\mathrm{N_2}$ | 28 | 200 | 150 |
 | $\mathrm{CO_2}$ | 44 | 310 | 230 |
 
-For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so large that Jeans escape is negligible on both planets. For atomic hydrogen, $\lambda_J$ is moderate, leading to significant escape: this is why both Earth and Mars lose hydrogen to space ({numref}`fig:mb-jeans`). Earth's exobase temperature is not fixed at 1000 K: it varies from $\sim$600 K at solar minimum to $\sim$1500 K at solar maximum, which modulates the escape flux of the lightest species by orders of magnitude. We will revisit this derivation in full detail (starting from the Maxwell–Boltzmann distribution) in {ref}`lecture10`.
+For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so large that Jeans escape is negligible on both planets. For atomic hydrogen, $\lambda_J$ is moderate, leading to significant escape: this is why both Earth and Mars lose hydrogen to space ({numref}`fig:mb-jeans`). Earth's exobase temperature is not fixed at 1000 K: it varies from $\sim$600 K at solar minimum to $\sim$1500 K at solar maximum, which modulates the escape flux of the lightest species by orders of magnitude. We will revisit this derivation in full detail (starting from the Maxwell–Boltzmann distribution) in {ref}`Lecture 10 <lecture10>`.
 
 ### Hydrodynamic escape
 
 When the energy input to the upper atmosphere is very large (for example, from intense **extreme ultraviolet (EUV)** radiation from a young, active star), the escape can transition from the slow, molecule-by-molecule Jeans process to a bulk **hydrodynamic outflow** in which the entire upper atmosphere flows outward like a wind. This is analogous to the solar wind but driven by stellar heating rather than the star's own thermal energy {cite:p}`Hunten1987`.
 
-Hydrodynamic escape is most important during a planet's first few hundred million years, when the host star's EUV luminosity is 10–100 times higher than at present. It can strip hydrogen-rich primary atmospheres from planets up to several Earth masses, and is the leading explanation for the observed **radius valley** in the exoplanet population ({numref}`fig:owen-radius-valley`), the deficit of planets with radii between $\sim$1.5 and $2 \, \Rearth$ ({ref}`lecture13`). During hydrodynamic escape, the outflowing hydrogen can also **drag along heavier species** (such as He, C, N, O), leading to more extensive atmospheric loss than Jeans escape alone would produce {cite:p}`Hunten1987`.
+Hydrodynamic escape is most important during a planet's first few hundred million years, when the host star's EUV luminosity is 10–100 times higher than at present. It can strip hydrogen-rich primary atmospheres from planets up to several Earth masses, and is the leading explanation for the observed **radius valley** in the exoplanet population ({numref}`fig:owen-radius-valley`), the deficit of planets with radii between $\sim$1.5 and $2 \, \Rearth$ ({ref}`Lecture 13 <lecture13>`). During hydrodynamic escape, the outflowing hydrogen can also **drag along heavier species** (such as He, C, N, O), leading to more extensive atmospheric loss than Jeans escape alone would produce {cite:p}`Hunten1987`.
 
 ```{figure} figures/radius_valley_owen2019.avif
 :name: fig:owen-radius-valley
@@ -637,13 +637,13 @@ Atmospheric retention is not simply a present-day snapshot: it evolves over a pl
 
 - **Young stars are UV-bright:** Stars on the main sequence emit 10–100 times more EUV radiation in their first few hundred million years. This drives intense hydrodynamic escape that can strip primary atmospheres from low-mass planets.
 
-- **Magnetic field loss:** A planet that loses its global magnetic field (like Mars $\sim$4 Gyr ago; {ref}`lecture04`) becomes exposed to solar wind sputtering and ion pickup, accelerating atmospheric loss.
+- **Magnetic field loss:** A planet that loses its global magnetic field (like Mars $\sim$4 Gyr ago; {ref}`Lecture 4 <lecture04>`) becomes exposed to solar wind sputtering and ion pickup, accelerating atmospheric loss.
 
 - **Outgassing replenishment:** Ongoing volcanism can replenish atmospheric gases. Earth's atmosphere is maintained in part by the continuous volcanic outgassing of $\mathrm{CO_2}$, $\mathrm{H_2O}$, and $\mathrm{SO_2}$. A planet with active tectonics (and thus active volcanism) has a better chance of maintaining its atmosphere.
 
 - **Atmospheric chemistry:** Photochemical reactions can transform atmospheric species. For example, solar UV dissociates $\mathrm{H_2O}$ into H and O; the hydrogen escapes while the oxygen may be incorporated into surface rocks. This irreversible loss of hydrogen is the leading hypothesis for how Venus lost its primordial water inventory.
 
-We will examine the long-term atmospheric evolution of specific planets in detail: Venus's runaway greenhouse and water loss ({ref}`lecture09`), Mars's atmospheric collapse and escape ({ref}`lecture10`), and the atmospheric characterisation of exoplanets ({ref}`lecture13`). Clouds, weather, and climate feedbacks are the focus of {ref}`lecture06`; the runaway greenhouse limit itself is derived in {ref}`lecture09`.
+We will examine the long-term atmospheric evolution of specific planets in detail: Venus's runaway greenhouse and water loss ({ref}`Lecture 9 <lecture09>`), Mars's atmospheric collapse and escape ({ref}`Lecture 10 <lecture10>`), and the atmospheric characterisation of exoplanets ({ref}`Lecture 13 <lecture13>`). Clouds, weather, and climate feedbacks are the focus of {ref}`Lecture 6 <lecture06>`; the runaway greenhouse limit itself is derived in {ref}`Lecture 9 <lecture09>`.
 
 ```{figure} figures/escape_velocity_temperature.svg
 :name: fig:escape-velocity-temperature
@@ -676,9 +676,9 @@ Evolutionary tracks for stellar X-ray luminosity for slow, medium, and fast rota
 JWST/MIRI 15 $\mu$m thermal emission measurement of TRAPPIST-1 b (black point with error bars labelled "Measured F1500W") compared with predicted spectra. The measured dayside flux matches a bare-rock blackbody at $T_B = 503$ K (blue curve, equal to the apparent temperature with no heat redistribution and no atmosphere) and is significantly above the 400 K isotropic-redistribution blackbody (orange) that would be expected for an efficient atmospheric heat engine. Thick atmospheres (e.g. 93 bar $\mathrm{CO_2}$, cyan; 10 bar $\mathrm{O_2}/\mathrm{CO_2}$, magenta) absorb in the 15 $\mu$m band and would suppress the observed flux by a factor of two or more, inconsistent with the data. The result is best explained by little-to-no redistribution from a thin or absent atmosphere on the dayside of TRAPPIST-1 b. Figure from {cite:t}`Greene2023`.
 ```
 
-For solar system bodies, the MAVEN mission at Mars has quantified present-day atmospheric loss rates for multiple species, establishing that ion escape driven by the solar wind dominates over Jeans escape for most atmospheric constituents {cite:p}`Jakosky2018`. Integrated over Mars's history, these loss rates can account for the removal of a substantial fraction of Mars's early atmosphere, though the total amount of $\mathrm{CO_2}$ lost to space versus sequestered in surface carbonates and the polar caps remains debated ({ref}`lecture10`).
+For solar system bodies, the MAVEN mission at Mars has quantified present-day atmospheric loss rates for multiple species, establishing that ion escape driven by the solar wind dominates over Jeans escape for most atmospheric constituents {cite:p}`Jakosky2018`. Integrated over Mars's history, these loss rates can account for the removal of a substantial fraction of Mars's early atmosphere, though the total amount of $\mathrm{CO_2}$ lost to space versus sequestered in surface carbonates and the polar caps remains debated ({ref}`Lecture 10 <lecture10>`).
 
-These results underscore a central theme of atmospheric science: a planet's ability to retain its atmosphere depends not only on its mass and temperature (the Jeans escape criterion derived in this lecture) but also on the intensity of stellar radiation, the presence or absence of a global magnetic field ({ref}`lecture04`), and the planet's geological activity.
+These results underscore a central theme of atmospheric science: a planet's ability to retain its atmosphere depends not only on its mass and temperature (the Jeans escape criterion derived in this lecture) but also on the intensity of stellar radiation, the presence or absence of a global magnetic field ({ref}`Lecture 4 <lecture04>`), and the planet's geological activity.
 
 
 ## References

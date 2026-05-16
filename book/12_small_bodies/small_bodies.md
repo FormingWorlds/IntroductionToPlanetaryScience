@@ -1,5 +1,5 @@
 (lecture12)=
-# Lecture 12: Meteorites, Asteroids, Minor Planets & Comets
+# Meteorites, Asteroids, Minor Planets & Comets
 
 ```{highlights}
 **Learning objectives:** By the end of this lecture, you will be able to classify meteorites and use isotopic chronometers to date the early solar system, describe the dynamics and populations of the asteroid belt and trans-Neptunian region, explain the origin and structure of comets, and use small bodies as formation fossils that record the solar system's dynamical and chemical history.
@@ -9,7 +9,7 @@
 **Slides:** [Download Lecture 12 (PDF)](../_static/slides/lecture12.pdf)
 ```
 
-The previous lectures have followed the planets one by one: rocky worlds in {ref}`lecture09` and {ref}`lecture10`, gas and ice giants in {ref}`lecture11`.
+The previous lectures have followed the planets one by one: rocky worlds in {ref}`Lecture 9 <lecture09>` and {ref}`Lecture 10 <lecture10>`, gas and ice giants in {ref}`Lecture 11 <lecture11>`.
 This lecture is about everything that did *not* become a planet.
 Small bodies are the leftover pieces of the planet-building process: asteroids and meteorites in the inner solar system, comets and Kuiper Belt objects (KBOs) in the outer solar system, dwarf planets like Ceres and Pluto in between, and the Oort cloud at the gravitational edge of the Sun's domain.
 Most of them are physically tiny.
@@ -408,7 +408,7 @@ Once Jupiter's solid core grew massive enough, around $\sim 20\,\Mearth$, it ope
 The NC reservoir, isolated inside Jupiter's orbit, evolved separately from the CC reservoir outside.
 For this to work, Jupiter had to be in place very early indeed: the timing constraint is approximately $1$ Myr after CAI formation.
 This was the first widely accepted physical interpretation of the NC-CC split and had the side effect of pushing Jupiter's formation timescale earlier than most pre-2017 disk models had favoured.
-It is consistent with the modern picture that giant planet cores grow primarily by **pebble accretion** rather than slow planetesimal accretion ({ref}`lecture02`).
+It is consistent with the modern picture that giant planet cores grow primarily by **pebble accretion** rather than slow planetesimal accretion ({ref}`Lecture 2 <lecture02>`).
 Subsequent re-analysis of cosmic-ray-exposure corrections {cite:p}`SpitzerPt2021` has revised the NC core-formation ages downward by $\sim 0.8$ Myr, suggesting NC and CC parent bodies in fact accreted approximately contemporaneously within $\sim 1$ Myr of CAI formation but at different radial locations in the disk; in this updated reading the radial separation, rather than the accretion delay, is the more robust constraint that the Jupiter-barrier picture must satisfy.
 
 
@@ -548,7 +548,7 @@ Compositional mass distribution across the asteroid belt as a function of semima
 ```
 
 This taxonomic gradient is also key evidence for the role of giant-planet migration in shaping the solar system.
-The Grand Tack and Nice Model scenarios ({ref}`lecture02`) make specific predictions for how much the belt was reshuffled, mixed, and depleted by giant-planet motion.
+The Grand Tack and Nice Model scenarios ({ref}`Lecture 2 <lecture02>`) make specific predictions for how much the belt was reshuffled, mixed, and depleted by giant-planet motion.
 The fact that the C-types in the outer belt have isotopic affinities with carbonaceous chondrites, while the S-types resemble ordinary chondrites, supports a picture in which a fraction of the outer belt population was implanted from much farther out by Jupiter's outward migration after the Grand Tack {cite:p}`Walsh2011,Raymond2017`.
 
 
@@ -704,7 +704,7 @@ The Occator crater on Ceres, imaged by NASA's Dawn mission. The bright deposits 
 Ceres has a hydrated, ammonia-bearing surface, and globally its outer few tens of kilometres are likely a mixture of water ice, hydrated salts, carbonates, and silicate clays.
 The brightest spots on Ceres are in **Occator crater** ({numref}`fig:l12-occator`), where Dawn's near-infrared spectrometer identified hydrated sodium carbonate (natrite) and ammonium chloride: in other words, evaporitic salts left behind by *brine* that erupted from a subsurface reservoir and froze on the surface {cite:p}`DeSanctis2016`.
 Ceres therefore has, or had until recently, a partially liquid water layer at depth, and probably an internal heat source.
-This makes it strikingly similar to icy moons such as Enceladus and Europa ({ref}`lecture11`), despite its very different formation environment.
+This makes it strikingly similar to icy moons such as Enceladus and Europa ({ref}`Lecture 11 <lecture11>`), despite its very different formation environment.
 
 This observation has prompted a debate over whether Ceres might be a **displaced outer-solar-system body**, captured into the asteroid belt during the Nice-Model rearrangement {cite:p}`McKinnon2008`.
 Its high water content and its surface ammonia (which is unstable in the inner solar system on long timescales) are both more easily explained if Ceres formed beyond the snow line and was later transported inward by Neptune's outward migration.
@@ -743,7 +743,7 @@ The three components of the CFEPS-L7 synthetic model of the main classical Kuipe
 
 The single most important point is that the orbital architecture of the trans-Neptunian region is a *fossil* of the dynamical history of the giant planets.
 The bimodal inclination distribution of classical KBOs ({numref}`fig:l12-kuiper-inclination`), the resonant population locked at exact integer ratios with Neptune, and the existence of a broad scattered disk all require a phase of large-scale Neptune migration during the first few hundred Myr of solar system history.
-This is the empirical foundation of the Nice Model and its many variants ({ref}`lecture02`).
+This is the empirical foundation of the Nice Model and its many variants ({ref}`Lecture 2 <lecture02>`).
 
 
 ### Pluto: a dwarf planet visited
@@ -1013,7 +1013,7 @@ Comet 103P/Hartley 2 imaged by NASA's EPOXI mission during the close flyby on 4 
 The implication is that **Earth's water cannot have come from comets alone**: no single class of comet matches Earth, and the diversity of cometary D/H values means that the bulk delivery would have produced an Earth significantly heavier in deuterium than observed.
 Mixing models that combine carbonaceous chondrite water with a small contribution of cometary water can match Earth's D/H budget, but the carbonaceous chondrite component must dominate by mass {cite:p}`Alexander2017`.
 More broadly, the lesson is that the D/H ratio is *not* a single number but a *distribution*, and the modern picture is that Earth's water reflects the integrated history of inner solar system processing of an inheritance of mostly carbonaceous-chondrite-like material with a small cometary tail.
-This connects directly to the broader question of inner solar system volatile budgets discussed in {ref}`lecture09`.
+This connects directly to the broader question of inner solar system volatile budgets discussed in {ref}`Lecture 9 <lecture09>`.
 
 
 ## Part 3: Messengers and visitors
@@ -1222,7 +1222,7 @@ These are the questions you can still help to answer in your own careers.
 
 - **What is the structure of the Oort cloud?** Has it been directly imaged or sampled? It remains an inferred population, with no direct observations.
 - **Is there a Planet Nine, or some other massive perturber, in the outer solar system?** The clustering of orbital elements among the most distant trans-Neptunian objects is suggestive but not yet definitive {cite:p}`Batygin2019`. The Vera Rubin survey will provide a much larger sample of detached and inner-Oort-cloud bodies and is the best near-term hope for resolving this question.
-- **Where did Earth's water actually come from?** The mix of carbonaceous chondrite and cometary contributions, and the role of inner-disk processing, remains an active area of research that connects to {ref}`lecture09` and {ref}`lecture14`.
+- **Where did Earth's water actually come from?** The mix of carbonaceous chondrite and cometary contributions, and the role of inner-disk processing, remains an active area of research that connects to {ref}`Lecture 9 <lecture09>` and {ref}`Lecture 14 <lecture14>`.
 - **How did the NC-CC dichotomy arise and survive?** The three-way debate sketched above is genuinely live and is expected to be resolved or substantially modified within the next five to ten years.
 - **What does the diversity of interstellar visitors tell us about planetary system formation across the galaxy?** Each new ISO is a single sample from the formation chemistry of a different planetary system; the population statistics will eventually become a comparative-cosmochemistry probe across stars.
 - **How complete is our inventory of Potentially Hazardous Asteroids?** Rubin will close the inventory of bodies larger than 140 m within a decade, but the population of $\sim 30$-$140$ m objects, the size most likely to cause local damage, remains substantially undersampled.
@@ -1232,11 +1232,11 @@ These are the questions you can still help to answer in your own careers.
 
 Small bodies are the **formation fossils** of the solar system: everything that did not become a planet.
 The inner small bodies (main-belt asteroids and the meteorites they deliver) are dominantly rocky leftovers; the outer small bodies (Kuiper Belt, scattered disk, Oort cloud, comets) are dominantly icy leftovers.
-This compositional gradient with heliocentric distance mirrors the temperature gradient in the original protoplanetary disk ({ref}`lecture02`), and it preserves the imprint of how the solar system's planetesimal reservoirs first separated chemically and dynamically.
+This compositional gradient with heliocentric distance mirrors the temperature gradient in the original protoplanetary disk ({ref}`Lecture 2 <lecture02>`), and it preserves the imprint of how the solar system's planetesimal reservoirs first separated chemically and dynamically.
 
 The orbital architecture of these populations records the dynamical history of the giant planets.
 Kirkwood gaps in the main belt, the bimodal inclination distribution of the classical Kuiper Belt, the existence of a populated 3:2 resonance with Neptune (the plutinos including Pluto), and the trapped Trojan swarms at Jupiter's L4 and L5 Lagrange points are all fossils of giant-planet migration.
-The Nice Model, the Grand Tack, and their descendants ({ref}`lecture02`) make specific predictions for these structures, and the small-body populations are where those predictions are tested.
+The Nice Model, the Grand Tack, and their descendants ({ref}`Lecture 2 <lecture02>`) make specific predictions for these structures, and the small-body populations are where those predictions are tested.
 
 **Meteorites** are the only solar-system samples that can be studied in a terrestrial laboratory, and they provide direct ground-truth on ages and compositions that no spacecraft instrument can match.
 The Pb-Pb age of CAIs at $4567.30 \pm 0.16$ Myr is the most precise number in planetary science.
@@ -1257,7 +1257,7 @@ And LSST/Rubin will increase the discovery rate of NEAs, KBOs, and ISOs by an or
 The new and most unexpected category is **interstellar visitors**.
 Three confirmed objects in eight years (1I/'Oumuamua, 2I/Borisov, 3I/ATLAS) means that small bodies from other planetary systems are passing through ours all the time.
 Each one is a single sample from the formation chemistry of an exoplanetary system, and the next decade will turn the trickle into a flood as Rubin and Comet Interceptor come online.
-Interstellar visitors are the conceptual link between the small-body science of this lecture and the exoplanet science we turn to next: they are the first physical samples of other planetary systems that we will ever directly observe in our own solar neighbourhood, providing a complement to the remote-sensing approaches developed in {ref}`lecture13`.
+Interstellar visitors are the conceptual link between the small-body science of this lecture and the exoplanet science we turn to next: they are the first physical samples of other planetary systems that we will ever directly observe in our own solar neighbourhood, providing a complement to the remote-sensing approaches developed in {ref}`Lecture 13 <lecture13>`.
 
 
 ## References
