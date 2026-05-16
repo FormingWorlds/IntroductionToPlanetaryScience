@@ -157,7 +157,7 @@ The history of transit surveys is essentially a history of expanding field of vi
 **Kepler** (2009--2013) and its **K2** extension (2014--2018) monitored about 150,000 stars in a single field continuously for four years and delivered the first statistically complete sample of small exoplanets {cite:p}`Borucki2010,Fressin2013`.
 **TESS** (2018--present) is an all-sky survey designed to find small planets around the brightest, nearest stars where atmospheric follow-up is possible.
 **CHEOPS** (2019--present) is a follow-up photometer that obtains high-precision transit light curves of known target systems for refined radius measurements.
-**PLATO**, scheduled for launch in 2026, is the next ESA exoplanet mission and is designed specifically to find Earth-sized planets in the habitable zones of bright Sun-like stars over 2--3 year monitoring baselines {cite:p}`Rauer2014`.
+**PLATO**, scheduled for launch in early 2027, is the next ESA exoplanet mission and is designed specifically to find Earth-sized planets in the habitable zones of bright Sun-like stars over 2--3 year monitoring baselines {cite:p}`Rauer2014`.
 Selection biases for these surveys are similar but not identical: Kepler favoured Sun-like stars at moderate distance, TESS favours bright nearby stars across all spectral types, and PLATO will favour bright Sun-like stars where radial-velocity follow-up is feasible.
 
 ## Blackboard derivation: Transit depth, radial velocity, and bulk density
@@ -382,7 +382,7 @@ It is also sensitive to planets at projected separations of $0.5$--$10$ AU, a re
 The microlensing event itself is **one-shot**: the lens-source alignment is unique and never repeats, so there is no possibility of follow-up confirmation in the same way that radial velocity or transit detections allow.
 Consequences of this include a higher false-alarm rate in marginal events and the impossibility of subsequent characterisation of the host or the planet.
 Active microlensing surveys include OGLE in Chile, MOA in New Zealand, and KMTNet, a three-site network in Chile, South Africa, and Australia that achieves continuous coverage of the Galactic bulge.
-The **Nancy Grace Roman Space Telescope**, scheduled for launch in 2027, will conduct a dedicated microlensing survey of the Galactic bulge that is expected to find $\sim 1400$ bound exoplanets at separations of $\sim 0.5$--$10$ AU, with mass sensitivity reaching down to lunar-mass bodies {cite:p}`Penny2019`. A comparable population of free-floating, "rogue" planets unbound from any host is anticipated and will be quantified by follow-up yield analyses.
+The **Nancy Grace Roman Space Telescope**, scheduled for launch in late 2026, will conduct a dedicated microlensing survey of the Galactic bulge that is expected to find $\sim 1400$ bound exoplanets at separations of $\sim 0.5$--$10$ AU, with mass sensitivity reaching down to lunar-mass bodies {cite:p}`Penny2019`. A comparable population of free-floating, "rogue" planets unbound from any host is anticipated and will be quantified by follow-up yield analyses.
 
 ### Timing methods
 
@@ -1039,7 +1039,7 @@ The exoplanet mission queue for the next decade is dense.
 The first cluster of missions, scheduled for launches in 2026--2030, is focused on transit photometry and atmospheric spectroscopy of an extended sample of known and new targets.
 All dates quoted below are planning targets as of early 2026 and are commonly revised by months to years over the course of mission development.
 
-**PLATO** (PLAnetary Transits and Oscillations of stars) is an ESA medium-class mission scheduled for launch at the end of 2026 {cite:p}`Rauer2014`.
+**PLATO** (PLAnetary Transits and Oscillations of stars) is an ESA medium-class mission scheduled for launch in January 2027 {cite:p}`Rauer2014`.
 PLATO carries 24 small telescopes operating as a single multi-aperture photometric array and is designed for high-precision photometry of a large sample of bright Sun-like stars over 2--3 year monitoring baselines.
 The primary goal is the detection of true Earth analogues in the habitable zones of G dwarfs, complementing Kepler by observing brighter targets that are accessible to radial velocity follow-up for mass measurement.
 PLATO is also designed to provide stellar oscillation (asteroseismic) measurements of the host stars themselves, which gives much more precise stellar radii and ages than spectroscopy alone, propagating directly into much more precise planet radii.
@@ -1049,7 +1049,7 @@ Ariel will conduct a dedicated transmission and emission spectroscopic survey of
 Unlike JWST, which observes a small number of targets in great depth, Ariel will observe a large number of targets at moderate depth, generating a statistical census of atmospheric composition as a function of planet size, equilibrium temperature, host star properties, and orbital parameters.
 The Ariel sample will span the full hot Jupiter through warm sub-Neptune range and is the first dedicated atmospheric statistics mission.
 
-**The Nancy Grace Roman Space Telescope** is a NASA flagship scheduled for launch in 2027.
+**The Nancy Grace Roman Space Telescope** is a NASA flagship scheduled for launch in late 2026.
 Roman is primarily a wide-field survey instrument with a 2.4 m mirror equal in diameter to HST but with a $100\times$ larger field of view.
 Two of its core programmes are exoplanet related.
 The microlensing survey in the Galactic bulge will, as discussed in Part 1, deliver $\sim 1400$ bound exoplanets at separations of $\sim 0.5$--$10$ AU with sensitivity down to lunar masses {cite:p}`Penny2019`, plus a comparable but separately analysed sample of free-floating rogue planets.
