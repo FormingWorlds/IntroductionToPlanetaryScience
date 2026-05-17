@@ -21,10 +21,6 @@ On 14 February 1990, the Voyager 1 spacecraft turned its camera back toward the 
 The Pale Blue Dot. Earth appears as a tiny bright speck roughly halfway down the rightmost sunbeam. Captured by Voyager 1 on 14 February 1990 from approximately 6 billion km (40 AU). Image PIA00452. Credit: NASA/JPL-Caltech.
 ```
 
-
-
-
-
 The Pale Blue Dot is one frame in a much larger 60-frame "Family Portrait" mosaic that Voyager 1 returned the same day, the only time a spacecraft has imaged the entire planetary system from outside ({numref}`fig:family-portrait`).
 
 ```{figure} figures/family_portrait.avif
@@ -250,7 +246,7 @@ Two patterns stand out immediately. First, **density decreases with distance** (
 :width: 600px
 :align: center
 
-Bulk density of the eight solar-system planets versus orbital semi-major axis (log $x$). The terrestrial planets (red) cluster at $\rho > 3900$ kg m$^{-3}$; the giant planets (blue) sit below 1700 kg m$^{-3}$, with Saturn the lowest at 687 kg m$^{-3}$, below the density of liquid water (grey dashed line). The brown dashed line marks the **uncompressed density of typical silicate mantle rock** ($\sim 3300$ kg m$^{-3}$, the 1-bar density of olivine and peridotite): Mars sits close to this value, while Earth, Venus, and Mercury exceed it because (a) iron-rich cores raise the bulk density and (b) self-gravity compresses their interiors. The formation context of this density gradient is developed in {ref}`Lecture 2 <lecture02>`. Data from {cite:p}`NASAFactSheet`.
+Bulk density of the eight solar-system planets versus orbital semi-major axis (log $x$). The terrestrial planets (red) cluster at $\rho > 3900$ kg m$^{-3}$; the giant planets (blue) sit below 1700 kg m$^{-3}$, with Saturn the lowest at 687 kg m$^{-3}$, below the density of liquid water (grey dashed line). The tan dashed line marks the **uncompressed density of typical silicate mantle rock** ($\sim 3300$ kg m$^{-3}$, the 1-bar density of olivine and peridotite): Mars sits close to this value, while Earth, Venus, and Mercury exceed it because (a) iron-rich cores raise the bulk density and (b) self-gravity compresses their interiors. The formation context of this density gradient is developed in {ref}`Lecture 2 <lecture02>`. Data from {cite:p}`NASAFactSheet`.
 ```
 
 ```{figure} figures/mass_vs_distance.avif
@@ -298,7 +294,7 @@ Solving for the stellar mass:
 
 $$
 \boxed{M_* = \frac{4\pi^2 r^3}{G P^2}}
-$$ (eq:kepler-mass)
+$$
 
 This is Newton's form of Kepler's third law (for $M_p \ll M_*$). The planet's mass cancels: the orbital period depends only on the central mass and the orbital radius.
 
@@ -327,7 +323,7 @@ The more precise form of Kepler's third law is $P^2 = 4\pi^2 a^3 / [G(M_* + M_p)
 - Jupiter, the most massive planet: $\Mjup \approx 318 \, \Mearth \approx 1.90 \times 10^{27}$ kg, giving $\Mjup / \Msun \approx 9.5 \times 10^{-4}$.
 - Total mass of all eight planets: $\approx 446 \, \Mearth \approx 2.7 \times 10^{27}$ kg, giving $M_\mathrm{planets}/\Msun \approx 1.3 \times 10^{-3}$.
 
-The Sun contains **99.87%** of the solar system's total mass. Jupiter alone accounts for 71% of the planetary mass ({numref}`fig:ss-mass-budget`). This extreme concentration of mass in the central star is a fundamental property of planetary systems, and one that planet formation theory must explain ({ref}`Lecture 2 <lecture02>`).
+The Sun contains **99.86%** of the solar system's total mass. Jupiter alone accounts for 71% of the planetary mass ({numref}`fig:ss-mass-budget`). This extreme concentration of mass in the central star is a fundamental property of planetary systems, and one that planet formation theory must explain ({ref}`Lecture 2 <lecture02>`).
 ```
 
 ```{figure} figures/ss_mass_budget.avif
@@ -335,7 +331,7 @@ The Sun contains **99.87%** of the solar system's total mass. Jupiter alone acco
 :width: 700px
 :align: center
 
-Mass budget of the solar system. *Left:* the Sun contains 99.87% of the total mass; the eight planets together contribute the remaining 0.13%. *Right:* among the planets, Jupiter accounts for $\sim 71\%$ and Saturn $\sim 21\%$; the ice giants Neptune ($3.8\%$) and Uranus ($3.3\%$) make up most of the rest; the four terrestrial planets (Mercury, Venus, Earth, Mars) together contribute only $0.44\%$ of the planetary mass and are grouped into a single wedge for legibility. Data from {cite:p}`NASAFactSheet`.
+Mass budget of the solar system. *Left:* the Sun contains 99.86% of the total mass; the eight planets together contribute the remaining 0.13%. *Right:* among the planets, Jupiter accounts for $\sim 71\%$ and Saturn $\sim 21\%$; the ice giants Neptune ($3.8\%$) and Uranus ($3.3\%$) make up most of the rest; the four terrestrial planets (Mercury, Venus, Earth, Mars) together contribute only $0.44\%$ of the planetary mass and are grouped into a single wedge for legibility. Data from {cite:p}`NASAFactSheet`.
 ```
 
 
@@ -378,7 +374,7 @@ By comparing these three cases, we can isolate which differences arise from dist
 :width: 700px
 :align: center
 
-The four Galilean moons of Jupiter at correct relative size. Left to right: Io (volcanically active), Europa (icy crust over a global liquid-water ocean), Ganymede (largest moon in the solar system at 5268 km in diameter, larger than Mercury at 4880 km; intrinsic magnetic field), Callisto (heavily cratered, geologically inert). Despite a common formation environment, tidal heating and ice content drive vastly different geological outcomes; the giant-planet moon systems are revisited in {ref}`Lecture 11 <lecture11>`. Credit: NASA/JPL/DLR, Galileo mission.
+The four Galilean moons of Jupiter at correct relative size. Left to right: Io (volcanically active), Europa (icy crust over a global liquid-water ocean), Ganymede (largest moon in the solar system at 5262 km in diameter, larger than Mercury at 4880 km; intrinsic magnetic field), Callisto (heavily cratered, geologically inert). Despite a common formation environment, tidal heating and ice content drive vastly different geological outcomes; the giant-planet moon systems are revisited in {ref}`Lecture 11 <lecture11>`. Credit: NASA/JPL/DLR, Galileo mission.
 ```
 
 This comparative approach now extends to thousands of exoplanets, where we can study how planetary properties vary as a function of stellar type, orbital distance, and system architecture ({ref}`Lecture 13 <lecture13>`). It is one of the most powerful tools in modern planetary science, and we will apply it throughout this course.
@@ -492,7 +488,7 @@ Backlit view of Saturn imaged by the Cassini spacecraft on 19 July 2013 from ins
 :width: 600px
 :align: center
 
-First colour view of Mars from NASA's Perseverance rover, taken from one of its hazard-avoidance cameras shortly after landing in Jezero crater on 18 February 2021. The rover's shadow is visible in the foreground; the rocky plain ahead is part of an ancient lake-delta system that filled Jezero crater during the Noachian, around 3.6 Ga ago. Perseverance is caching rock and regolith samples for return to Earth via the Mars Sample Return campaign, whose return architecture is currently being re-baselined; Jezero stratigraphy, the Mars climate history, and the sample-return programme are returned to in {ref}`Lecture 10 <lecture10>`. Credit: NASA/JPL-Caltech.
+First colour view of Mars from NASA's Perseverance rover, taken from one of its hazard-avoidance cameras shortly after landing in Jezero crater on 18 February 2021. The rover's shadow and parts of its body are visible in the foreground; the rocky plain ahead is part of an ancient lake-delta system that filled Jezero crater during the Noachian, around 3.6 Ga ago. Perseverance is caching rock and regolith samples for return to Earth via the Mars Sample Return campaign, whose return architecture is currently being re-baselined; Jezero stratigraphy, the Mars climate history, and the sample-return programme are returned to in {ref}`Lecture 10 <lecture10>`. Credit: NASA/JPL-Caltech.
 ```
 
 Several missions are in flight or planned for the coming decade, including ESA's JUICE (Jupiter Icy Moons Explorer, launched April 2023, Jupiter system arrival 2031, Ganymede orbit insertion 2034), the Mars Sample Return campaign, and the Dragonfly rotorcraft to Titan (launch ~2028).
