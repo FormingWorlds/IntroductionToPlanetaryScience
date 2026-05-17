@@ -350,7 +350,7 @@ Consider the terrestrial planets ({numref}`fig:terrestrial-planets`). Venus, Ear
 :width: 600px
 :align: center
 
-The four terrestrial planets at approximate relative scale. From left to right: Mercury, Venus, Earth, and Mars. Despite forming in the same protoplanetary disk, these worlds span a factor of about 18 in mass and have followed dramatically different evolutionary paths. Credit: NASA/JPL, public domain.
+The four terrestrial planets at approximate relative scale. From left to right: Mercury, Venus, Earth, and Mars. Despite forming in the same protoplanetary disk, these worlds span a factor of about 18 in mass and have followed dramatically different evolutionary paths. Earth and Venus are studied in detail in {ref}`Lecture 9 <lecture09>`; Mercury and Mars in {ref}`Lecture 10 <lecture10>`. Credit: NASA/JPL, public domain.
 ```
 
 | Property | Venus | Earth | Mars |
@@ -378,7 +378,7 @@ By comparing these three cases, we can isolate which differences arise from dist
 :width: 700px
 :align: center
 
-The four Galilean moons of Jupiter at correct relative size. Left to right: Io (volcanically active), Europa (icy crust over a global liquid-water ocean), Ganymede (largest moon in the solar system; intrinsic magnetic field), Callisto (heavily cratered, geologically inert). Despite a common formation environment, tidal heating and ice content drive vastly different geological outcomes. Credit: NASA/JPL/DLR, Galileo mission.
+The four Galilean moons of Jupiter at correct relative size. Left to right: Io (volcanically active), Europa (icy crust over a global liquid-water ocean), Ganymede (largest moon in the solar system at 5268 km in diameter, larger than Mercury at 4880 km; intrinsic magnetic field), Callisto (heavily cratered, geologically inert). Despite a common formation environment, tidal heating and ice content drive vastly different geological outcomes; the giant-planet moon systems are revisited in {ref}`Lecture 11 <lecture11>`. Credit: NASA/JPL/DLR, Galileo mission.
 ```
 
 This comparative approach now extends to thousands of exoplanets, where we can study how planetary properties vary as a function of stellar type, orbital distance, and system architecture ({ref}`Lecture 13 <lecture13>`). It is one of the most powerful tools in modern planetary science, and we will apply it throughout this course.

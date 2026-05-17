@@ -65,17 +65,44 @@ def make_plot() -> Path:
     ax_P.set_yscale("log")
     ax_P.set_ylabel(r"Surface pressure $P_s$ (bar, log scale)", color="#1f77b4")
     ax_P.tick_params(axis="y", labelcolor="#1f77b4")
-    ax_P.set_ylim(1e-3, 200)
+    ax_P.set_ylim(1e-3, 500)
 
-    # Value labels on each bar
-    for bar, val in zip(bars_T, df["Tsurf_K"]):
-        ax_T.text(bar.get_x() + bar.get_width() / 2, val + 15,
-                  f"{int(val)} K", ha="center", fontsize=9, color="#a83232")
-    for bar, val in zip(bars_P, df["Psurf_bar"]):
-        if val >= 1e-3:
-            label = f"{val:.3g} bar"
-            ax_P.text(bar.get_x() + bar.get_width() / 2, val * 1.4,
-                      label, ha="center", fontsize=9, color="#1d4d80")
+    # Value labels on each bar. Use `bar_label` with a fixed pixel
+    # padding so labels sit a consistent visual distance above each
+    # bar, including the very short Mars pressure bar on the log
+    # y-axis (where a multiplicative offset is inadequate). Mars
+    # surface pressure (6.36e-3 bar) uses scientific notation so the
+    # label string is narrow enough to clear the adjacent T bar.
+    def _fmt_p(v: float) -> str:
+        if v < 0.01:
+            exp = int(np.floor(np.log10(v)))
+            mant = v / 10.0 ** exp
+            return rf"${mant:.2f}{{\times}}10^{{{exp}}}$ bar"
+        if v >= 10:
+            return f"{v:.0f} bar"
+        return f"{v:.2f} bar"
+
+    ax_T.bar_label(bars_T,
+                   labels=[f"{int(v)} K" for v in df["Tsurf_K"]],
+                   padding=8, fontsize=9, color="#a83232")
+    # Pressure labels: Venus and Earth sit just above their own bars
+    # with 8 px of padding. Mars is plotted on a log P axis so its
+    # 6e-3 bar bar is tiny; the label is hard-pinned at y = 0.06 bar
+    # (well above the 210 K T-bar label across the gap) to remove any
+    # ambiguity about which bar each label belongs to.
+    MARS_P_LABEL_Y = 0.06
+    for bar, body, v in zip(bars_P, BODIES, df["Psurf_bar"]):
+        x_center = bar.get_x() + bar.get_width() / 2
+        if body == "Mars":
+            ax_P.annotate(_fmt_p(v), (x_center, MARS_P_LABEL_Y),
+                          xytext=(0, 0), textcoords="offset points",
+                          ha="center", va="bottom",
+                          fontsize=9, color="#1d4d80")
+        else:
+            ax_P.annotate(_fmt_p(v), (x_center, v),
+                          xytext=(0, 8), textcoords="offset points",
+                          ha="center", va="bottom",
+                          fontsize=9, color="#1d4d80")
 
     ax_T.spines["top"].set_visible(False)
     ax_P.spines["top"].set_visible(False)
