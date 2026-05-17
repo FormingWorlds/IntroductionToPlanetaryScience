@@ -408,7 +408,7 @@ Chemical reactions between surface rocks and atmospheric or liquid agents alter 
 
 - **Earth:** Silicate weathering by carbonic acid is the critical carbon sink in the carbonate-silicate cycle ({ref}`Lecture 6 <lecture06>`), regulating climate over geological time.
 - **Mars:** Orbital spectroscopy (OMEGA on Mars Express, CRISM on MRO) has detected hydrated minerals (phyllosilicates or clays, sulfates, and carbonates) formed by aqueous alteration of basaltic rock, providing mineralogical evidence for past liquid water.
-- **Venus:** The high surface temperature ($\sim$735 K) and dense $\mathrm{CO_2}$ atmosphere drive surface–atmosphere chemical reactions that may alter rock compositions on relatively short timescales.
+- **Venus:** The high surface temperature ($\sim$737 K) and dense $\mathrm{CO_2}$ atmosphere drive surface-atmosphere chemical reactions that may alter rock compositions on relatively short timescales.
 
 
 ## Remote sensing of surfaces
