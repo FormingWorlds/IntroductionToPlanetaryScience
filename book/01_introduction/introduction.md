@@ -484,7 +484,7 @@ Two iconic mission products illustrate the breadth of these efforts: the Cassini
 :width: 600px
 :align: center
 
-Backlit view of Saturn imaged by the Cassini spacecraft on 19 July 2013, with Earth visible as a faint pale point through the rings (lower right). Cassini operated in Saturn orbit from 2004 to 2017 and discovered the global subsurface ocean of Enceladus and the hydrocarbon lakes of Titan. Credit: NASA/JPL-Caltech/Space Science Institute.
+Backlit view of Saturn imaged by the Cassini spacecraft on 19 July 2013 from inside the planet's shadow, with Earth visible as a faint pale point through the rings (lower right). The image is known as "The Day the Earth Smiled" because it is the only Earth portrait from a Saturn-orbit spacecraft that was pre-announced to the public, alongside Voyager 1's Pale Blue Dot ({numref}`fig:pale-blue-dot`) and the Voyager Family Portrait ({numref}`fig:family-portrait`). Cassini operated in Saturn orbit from 2004 to 2017 and discovered the global subsurface ocean of Enceladus and the hydrocarbon lakes of Titan; Saturn's rings, Enceladus, and Titan are returned to in {ref}`Lecture 11 <lecture11>`. Credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
 ```{figure} figures/perseverance_mars.avif
@@ -492,7 +492,7 @@ Backlit view of Saturn imaged by the Cassini spacecraft on 19 July 2013, with Ea
 :width: 600px
 :align: center
 
-First colour view of Mars from NASA's Perseverance rover, taken from one of its hazard-avoidance cameras shortly after landing in Jezero crater on 18 February 2021. The rover's shadow is visible in the foreground; the rocky plain ahead is part of an ancient lake-delta system. Perseverance is caching rock and regolith samples for eventual return to Earth via the Mars Sample Return campaign. Credit: NASA/JPL-Caltech.
+First colour view of Mars from NASA's Perseverance rover, taken from one of its hazard-avoidance cameras shortly after landing in Jezero crater on 18 February 2021. The rover's shadow is visible in the foreground; the rocky plain ahead is part of an ancient lake-delta system that filled Jezero crater during the Noachian, around 3.6 Ga ago. Perseverance is caching rock and regolith samples for return to Earth via the Mars Sample Return campaign, whose return architecture is currently being re-baselined; Jezero stratigraphy, the Mars climate history, and the sample-return programme are returned to in {ref}`Lecture 10 <lecture10>`. Credit: NASA/JPL-Caltech.
 ```
 
 Several missions are in flight or planned for the coming decade, including ESA's JUICE (Jupiter Icy Moons Explorer, launched 2023, Jupiter arrival 2031), the Mars Sample Return campaign, and the Dragonfly rotorcraft to Titan (launch ~2028).
@@ -506,7 +506,7 @@ Planetary science is advancing rapidly, driven by new space missions and observa
 :width: 700px
 :align: center
 
-The seven planets of the TRAPPIST-1 system (top row, b through h) compared with the inner solar system (bottom row), shown with measured or estimated orbital periods, distances, radii, masses, densities, and surface gravities. All seven TRAPPIST-1 planets are roughly Earth-sized and orbit closer to their cool M-dwarf host than Mercury does to the Sun, with three planets (e, f, g) inside the conservative habitable zone and a fourth (d) near its inner edge. Credit: NASA/JPL-Caltech.
+The seven planets of the TRAPPIST-1 system (top row, b through h) compared with the inner solar system (bottom row), shown with measured or estimated orbital periods, distances, radii, masses, densities, and surface gravities. All seven TRAPPIST-1 planets are roughly Earth-sized and orbit closer to their cool M-dwarf host than Mercury does to the Sun: their orbital periods range from 1.5 days (b) to 19 days (h), so the entire system fits well inside Mercury's 88-day orbit. The seven planets sit in a chain of six mean-motion resonances {cite:p}`Gillon2017,Luger2017` that locks the orbital periods into integer ratios; three planets (e, f, g) are inside the conservative habitable zone and a fourth (d) sits near its inner edge. The planet renderings in the top row are artist's illustrations, not telescope images: TRAPPIST-1 lies $\sim 12$ pc from Earth and its planets are far too small and faint to be spatially resolved with current instruments, while the bottom-row inner solar system images are spacecraft photographs. Credit: NASA/JPL-Caltech.
 ```
 
 ```{figure} figures/trappist1b_jwst.avif
@@ -514,10 +514,19 @@ The seven planets of the TRAPPIST-1 system (top row, b through h) compared with 
 :width: 600px
 :align: center
 
-JWST MIRI F1500W secondary-eclipse measurement of TRAPPIST-1 b (data point near 15 μm) compared with model dayside spectra. The measurement is consistent with a 503 K bare-rock blackbody and excludes thick CO$_2$-dominated atmospheres (cyan) and hybrid O$_2$+CO$_2$ atmospheres (magenta) at the level shown. Credit: {cite:t}`Greene2023`.
+JWST MIRI F1500W secondary-eclipse measurement of TRAPPIST-1 b: the first thermal measurement of a rocky exoplanet around an M dwarf. The horizontal axis is wavelength in microns; the vertical axis is the planet's dayside flux divided by the host-star flux, in parts per million. The single black data point with error bars (near 15 μm) is the JWST observation: the depth of the dip in brightness when the planet passes behind the star during secondary eclipse, which directly gives the planet's emission at that wavelength. The smooth curves are theoretical predictions for different surface and atmosphere scenarios: a hot bare-rock surface with no atmosphere (dark line, dayside brightness temperature $T_b = 503 \pm 27$ K), a thick $\mathrm{CO_2}$-dominated atmosphere with no heat redistribution (cyan), and an $\mathrm{O_2}+\mathrm{CO_2}$ hybrid atmosphere (magenta). $\mathrm{CO_2}$ absorbs strongly near 15 μm, so atmospheric models predict a deep absorption feature and a lower flux ratio at that wavelength; the bare-rock case predicts no absorption and therefore higher flux. The data sit on top of the bare-rock prediction, ruling out the thick-$\mathrm{CO_2}$ scenarios at the levels shown and indicating that TRAPPIST-1 b retains little or no thick atmosphere. The atmospheric retention of M-dwarf rocky planets is the central question this kind of measurement is built to answer, treated in detail in {ref}`Lecture 13 <lecture13>`. Reproduced from {cite:t}`Greene2023`.
 ```
 
-Closer to home, NASA's **OSIRIS-REx** mission returned samples from the carbon-rich asteroid Bennu in September 2023, revealing hydrated minerals and organic compounds that illuminate the primordial building blocks of planets ({ref}`Lecture 12 <lecture12>`). NASA's **Europa Clipper**, launched in October 2024, is en route to Jupiter's moon Europa to investigate its subsurface ocean and assess habitability {cite:p}`HowellPappalardo2020` (see also {ref}`Lecture 14 <lecture14>`). ESA's **JUICE** mission, launched in 2023, will arrive at the Jupiter system in 2031 to study Ganymede, Europa, and Callisto.
+Closer to home, NASA's **OSIRIS-REx** mission returned samples from the carbon-rich asteroid Bennu in September 2023, revealing hydrated minerals and organic compounds that illuminate the primordial building blocks of planets ({ref}`Lecture 12 <lecture12>`). The moment of sample acquisition is shown in {numref}`fig:osiris-rex-tag`: the spacecraft's TAGSAM head pressed into Bennu's surface for six seconds, fired a burst of nitrogen gas to mobilise the regolith, and then backed away.
+
+```{figure} figures/osiris_rex_tag.gif
+:name: fig:osiris-rex-tag
+:width: 550px
+:align: center
+
+NASA's OSIRIS-REx spacecraft samples asteroid Bennu, 20 October 2020 (animation; refresh the page if it is not playing). The SamCam imager recorded the Touch-and-Go (TAG) event at sample site Nightingale from initial approach through touch-down and back-away. The TAGSAM sampling head visibly crushes the porous surface regolith on contact; the bright pulse one second after contact is the nitrogen-gas jet that mobilised the material later captured for return to Earth. The mission returned 121.6 g of pristine asteroid material to the Utah Test and Training Range on 24 September 2023, the largest asteroid sample ever brought to Earth. Asteroids and small bodies are returned to in {ref}`Lecture 12 <lecture12>`. Credit: NASA / Goddard / University of Arizona {cite:p}`OSIRISRExTAG2020`.
+```
+
 
 The Mars exploration programme continues with the **Perseverance** rover caching samples in Jezero crater for eventual return to Earth {cite:p}`Farley2022`, while NASA's **Dragonfly** rotorcraft (a nuclear-powered drone that will explore Titan's surface chemistry) is planned for launch in 2028 ({ref}`Lecture 6 <lecture06>`). These missions collectively address the three driving questions of this course: how planetary systems form, what makes a planet habitable, and whether life exists beyond Earth.
 
