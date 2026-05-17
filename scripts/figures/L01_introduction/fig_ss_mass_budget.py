@@ -1,16 +1,19 @@
-"""Generate Fig. 2.18 (`fig:ss-mass-budget`).
+"""Generate Fig. 1.18 (`fig:ss-mass-budget`).
 
 Mass budget of the solar system: a two-panel pie chart.
 - Left panel: Sun vs total planetary mass.
-- Right panel: planet masses.
+- Right panel: planet masses, with the four terrestrial planets
+  (Mercury, Venus, Earth, Mars) grouped into a single wedge so that
+  the labels do not collide. Individual terrestrial contributions
+  to total planetary mass are below 0.25% each.
 
 Data are static (JPL Solar System Dynamics) and stored
-verbatim in `data/solar_system_masses.csv` next to this script. Update
-the CSV (and bump its sidecar JSON) only when planetary mass values are
-formally revised in the Fact Sheet.
+verbatim in `data/solar_system_masses.csv` next to this script.
+Update the CSV (and bump its sidecar JSON) only when planetary mass
+values are formally revised.
 
-Caption / figure id : Fig. 2.18 / `fig:ss-mass-budget`
-Markdown source     : book/01_introduction/introduction.md (around line 322)
+Caption / figure id : Fig. 1.18 / `fig:ss-mass-budget`
+Markdown source     : book/01_introduction/introduction.md
 Citation key        : NASAFactSheet
 """
 from __future__ import annotations
@@ -53,7 +56,7 @@ def write_data() -> None:
     META.write_text(json.dumps({
         "purpose": "Fig. 2.18 (fig:ss-mass-budget): solar system mass budget pie",
         "source": "JPL Solar System Dynamics",
-        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+        "source_url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
         "retrieved_date": "2026-04-23",
         "citation_key": "NASAFactSheet",
         "columns": {
@@ -94,18 +97,63 @@ def make_plot() -> Path:
     )
     axes[0].set_title("Sun vs planets")
 
-    # Right: among the planets
-    sizes = df["mass_kg"] / total_planet_kg * 100.0
-    colors = ["#bb6c44", "#e09e58", "#1e88e5", "#d62728",
-              "#cc8f3d", "#e6c97a", "#76d6e2", "#3a87bd"]
-    axes[1].pie(
-        sizes,
-        labels=[f"{n}\n{p:.1f}%" for n, p in zip(df["body"], sizes)],
-        colors=colors,
+    # Right: among the planets. Terrestrials are grouped into a single
+    # wedge because their individual contributions (Mercury 0.01%,
+    # Venus 0.18%, Earth 0.22%, Mars 0.02%) are too small for separate
+    # labels to remain legible at this scale. Wedge order is chosen so
+    # that the four small wedges (Saturn, Neptune, Uranus, Terrestrials)
+    # all sit on the right side of the pie and Jupiter occupies the
+    # entire left half; this gives each small wedge enough angular
+    # separation from its neighbours to carry a colour-coded label just
+    # outside the wedge without any leader lines.
+    import numpy as np
+    terrestrials = {"Mercury", "Venus", "Earth", "Mars"}
+    is_terrestrial = df["body"].isin(terrestrials)
+    terr_pct = (df.loc[is_terrestrial, "mass_kg"].sum()
+                / total_planet_kg * 100.0)
+    giants = df[~is_terrestrial].copy()
+    giants["pct"] = giants["mass_kg"] / total_planet_kg * 100.0
+    pct_by = {row["body"]: row["pct"] for _, row in giants.iterrows()}
+
+    # Explicit order around the pie: starting at 12 o'clock and going
+    # clockwise, the small wedges come first (Saturn down to Terrestrials
+    # on the right side), then Jupiter sweeps the whole bottom-left.
+    order = ["Saturn", "Neptune", "Uranus", "Terrestrials", "Jupiter"]
+    pct_by["Terrestrials"] = terr_pct
+    right_sizes = [pct_by[n] for n in order]
+    right_names = order
+    # Colours match the wedge order above (Saturn, Neptune, Uranus,
+    # Terrestrials, Jupiter).
+    right_colors = ["#e09e58", "#3a87bd", "#76d6e2", "#d62728", "#bb6c44"]
+    wedges, _ = axes[1].pie(
+        right_sizes,
+        labels=None,
+        colors=right_colors,
         startangle=90, counterclock=False,
         wedgeprops={"edgecolor": "white", "linewidth": 1.0},
-        textprops={"fontsize": 9},
     )
+    # Place labels: large wedges (>=10%) get the label inside the wedge
+    # in white-on-colour. Small wedges get a colour-coded label just
+    # outside their own wedge, on the right side of the pie. No leader
+    # lines.
+    LARGE_PCT_INSIDE = 10.0
+    for wedge, name, pct, colour in zip(wedges, right_names, right_sizes,
+                                        right_colors):
+        theta = np.deg2rad(0.5 * (wedge.theta1 + wedge.theta2))
+        x_pie, y_pie = np.cos(theta), np.sin(theta)
+        if pct >= LARGE_PCT_INSIDE:
+            axes[1].text(0.62 * x_pie, 0.62 * y_pie,
+                         f"{name}\n{pct:.1f}%",
+                         ha="center", va="center", fontsize=11,
+                         color="white", weight="bold")
+        else:
+            label = (f"{name}  {pct:.2f}%" if name == "Terrestrials"
+                     else f"{name}  {pct:.1f}%")
+            axes[1].text(1.07 * x_pie, 1.07 * y_pie, label,
+                         ha="left", va="center", fontsize=10,
+                         color=colour, weight="bold")
+    # Widen the right axes so the offset small-wedge labels stay visible.
+    axes[1].set_xlim(-1.25, 1.65)
     axes[1].set_title("Among the planets")
 
     fig.suptitle("Mass budget of the solar system", fontsize=12, y=0.98)

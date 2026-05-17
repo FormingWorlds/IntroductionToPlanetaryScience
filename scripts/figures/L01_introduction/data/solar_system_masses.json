@@ -1,7 +1,7 @@
 {
   "purpose": "Fig. 2.18 (fig:ss-mass-budget): solar system mass budget pie",
   "source": "JPL Solar System Dynamics",
-  "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+  "source_url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
   "retrieved_date": "2026-04-23",
   "citation_key": "NASAFactSheet",
   "columns": {

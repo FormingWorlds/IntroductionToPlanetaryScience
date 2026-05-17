@@ -335,7 +335,7 @@ The Sun contains **99.87%** of the solar system's total mass. Jupiter alone acco
 :width: 700px
 :align: center
 
-Mass budget of the solar system. *Left:* the Sun contains 99.87% of the total mass; the eight planets together contribute the remaining 0.13%. *Right:* among the planets, Jupiter accounts for ~71% and Saturn ~21%, with the other six planets contributing ~8% combined. Data from {cite:p}`NASAFactSheet`.
+Mass budget of the solar system. *Left:* the Sun contains 99.87% of the total mass; the eight planets together contribute the remaining 0.13%. *Right:* among the planets, Jupiter accounts for $\sim 71\%$ and Saturn $\sim 21\%$; the ice giants Neptune ($3.8\%$) and Uranus ($3.3\%$) make up most of the rest; the four terrestrial planets (Mercury, Venus, Earth, Mars) together contribute only $0.44\%$ of the planetary mass and are grouped into a single wedge for legibility. Data from {cite:p}`NASAFactSheet`.
 ```
 
 
