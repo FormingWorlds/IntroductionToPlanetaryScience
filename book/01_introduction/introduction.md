@@ -258,7 +258,7 @@ Bulk density of the eight solar-system planets versus orbital semi-major axis (l
 :width: 600px
 :align: center
 
-Planetary mass versus orbital semi-major axis on a log-log scale, on the same x-axis as {numref}`fig:density-vs-distance`. The grey dashed line marks the **sum of all planetary masses except Jupiter** ($\approx 129\,\Mearth$); Jupiter alone, at $317.83\,\Mearth$, exceeds this sum by a factor of $\approx 2.5$ and sits well above the line. Jupiter and Saturn together account for more than $90\%$ of the total planetary mass in the solar system. This concentration reflects the fact that Jupiter formed first and accreted the bulk of the protoplanetary disk's remaining gas before the disk dispersed; later-forming planets, including the ice giants Uranus and Neptune, were left to compete for the comparatively gas-poor remnant ({ref}`Lecture 2 <lecture02>`). Data from {cite:p}`NASAFactSheet`.
+Planetary mass versus orbital semi-major axis on a log-log scale, on the same x-axis as {numref}`fig:density-vs-distance`. The grey dashed line marks the **sum of all planetary masses except Jupiter** ($\approx 129\,\Mearth$); Jupiter alone, at $317.83\,\Mearth$, exceeds this sum by a factor of $\approx 2.5$ and sits well above the line. Jupiter and Saturn together account for more than $90\%$ of the total planetary mass in the solar system. The formation context of this mass concentration is developed in {ref}`Lecture 2 <lecture02>`. Data from {cite:p}`NASAFactSheet`.
 ```
 
 ### Classification
