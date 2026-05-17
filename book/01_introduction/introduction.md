@@ -55,7 +55,7 @@ That image captures something essential about planetary science: it asks us to s
 
 ```{figure} figures/eta_earth_posterior.avif
 :name: fig:eta-earth
-:width: 600px
+:width: 100%
 :align: center
 
 Posterior probability density on $\eta_\oplus$, the average number of rocky habitable-zone planets per Sun-like star, derived from Kepler data. **Left panel:** *conservative* habitable-zone definition (moist-greenhouse inner edge to maximum-greenhouse outer edge, the range over which liquid water can be reliably maintained at the surface). **Right panel:** *optimistic* habitable-zone definition (inner edge extended to the recent-Venus insolation bound and outer edge to early-Mars, capturing the wider range over which surface water may have been transiently stable). Coloured curves correspond to two extrapolation assumptions for the stellar bolometric flux range. The posterior peak shifts from $\eta_\oplus \approx 0.37$ planets per star for the conservative HZ to $\approx 0.60$ for the optimistic HZ, the range quoted in the text. Either way, habitable-zone rocky planets around Sun-like stars are common. Credit: {cite:t}`Bryson2021`.
@@ -146,7 +146,7 @@ The first close-up image of another planet's surface: Mariner 4, 15 July 1965. M
 :width: 500px
 :align: center
 
-Trajectory of NASA's Voyager 2 spacecraft during its grand tour of the outer solar system, with the spacecraft itself shown schematically as the small grey silhouette near the Uranus-Neptune segment of the trajectory (not an annotation on Uranus). Gravity assists at Jupiter (1979), Saturn (1981), Uranus (1986), and Neptune (1989) successively redirected the spacecraft to each subsequent target, a trajectory made possible by a rare alignment of the outer planets that occurs roughly once every 175 years. Voyager 1, launched two weeks earlier on a faster trajectory, flew only by Jupiter (1979) and Saturn (1980) before being deflected northward out of the ecliptic. Both spacecraft are now in interstellar space: Voyager 1 crossed the heliopause in 2012, Voyager 2 in 2018. Credit: NASA/JPL, public domain.
+Trajectory of NASA's Voyager 2 spacecraft during its grand tour of the outer solar system, with the spacecraft itself shown schematically as the small grey silhouette near the Uranus-Neptune segment of the trajectory. Gravity assists at Jupiter (1979), Saturn (1981), Uranus (1986), and Neptune (1989) successively redirected the spacecraft to each subsequent target, a trajectory made possible by a rare alignment of the outer planets that occurs roughly once every 175 years. Voyager 1, launched two weeks earlier on a faster trajectory, flew only by Jupiter (1979) and Saturn (1980) before being deflected northward out of the ecliptic. Both spacecraft are now in interstellar space: Voyager 1 crossed the heliopause in 2012, Voyager 2 in 2018. Credit: NASA/JPL, public domain.
 ```
 
 ### The exoplanet revolution
@@ -169,7 +169,7 @@ The same set of detections plotted in mass-period space ({numref}`fig:exoplanet-
 :width: 700px
 :align: center
 
-Planet mass (or $M\sin i$) versus orbital period for all confirmed exoplanets, colour-coded by detection method, with the eight solar-system planets shown as gold stars for reference. Selection effects favour large, short-period planets in the upper-left of the diagram. The Earth-analogue regime, near mass $\sim 1\,\Mearth$ and orbital period $\sim 1$ year, sits in the lower-middle of the plot and remains sparsely populated because radial-velocity and transit surveys with multi-year baselines are required to detect such low-amplitude, long-period signals. Credit: NASA Exoplanet Archive (Caltech), accessed 2026-05-17 {cite:p}`NASAExoplanetArchive2026`.
+Planet mass (or $M\sin i$) versus orbital period for all confirmed exoplanets, colour-coded by detection method, with the eight solar-system planets shown as gold stars for reference. Selection effects favour large, short-period planets in the upper-left of the diagram. The Earth-analogue regime, near mass $\sim 1\,\Mearth$ and orbital period $\sim 1$ year, sits in the lower-middle of the plot and remains sparsely populated because radial-velocity and transit surveys with multi-year baselines have only recently begun to access it; future direct-imaging missions (in particular the Habitable Worlds Observatory and the LIFE interferometer concept) are explicitly designed to fill this region by spatially separating reflected or thermal planet light from the host star. Credit: NASA Exoplanet Archive (Caltech), accessed 2026-05-17 {cite:p}`NASAExoplanetArchive2026`.
 ```
 
 Within the small-planet regime, the Kepler sample reveals a bimodal radius distribution ({numref}`fig:radius-gap`) with peaks near $1.3\,\Rearth$ and $2.4\,\Rearth$ separated by a "radius valley", interpreted as the boundary between rocky planets and those retaining a thin H/He envelope.
@@ -189,7 +189,7 @@ Beyond the demographics, ALMA imaging of the young star HL Tauri ({numref}`fig:h
 :width: 450px
 :align: center
 
-ALMA 1.3 mm continuum image of the protoplanetary disk around the young star HL Tauri (distance $\sim 140$ pc). The concentric dark gaps are widely interpreted as carved by forming protoplanets, although alternative explanations involving ice lines and magnetorotational dead zones remain on the table. ALMA's $\sim 5$ AU angular resolution at HL Tau's distance is what made this multi-ringed substructure visible for the first time. Protoplanetary disks and planet formation are covered in {ref}`Lecture 2 <lecture02>`. Credit: ALMA (ESO/NAOJ/NRAO); {cite:t}`ALMAPartnership2015`.
+ALMA 1.3 mm continuum image of the protoplanetary disk around the young star HL Tauri (distance $\sim 140$ pc). The concentric dark gaps are widely interpreted as carved by forming protoplanets, although alternative explanations involving local pile-ups of dust grains at ice lines and other disk substructures remain on the table. ALMA's $\sim 5$ AU angular resolution at HL Tau's distance is what made this multi-ringed substructure visible for the first time. Protoplanetary disks and planet formation are covered in {ref}`Lecture 2 <lecture02>`. Credit: ALMA (ESO/NAOJ/NRAO); {cite:t}`ALMAPartnership2015`.
 ```
 
 The most recent step in exoplanet science has been the direct chemical characterisation of atmospheres. JWST measures the absorption spectrum of starlight that filters through a transiting planet's atmosphere and identifies individual molecules in it. In August 2022, JWST recorded the first unambiguous detection of carbon dioxide in an exoplanet atmosphere on the hot gas giant WASP-39 b ({numref}`fig:wasp39b-spectrum`) {cite:p}`Rustamkulov2023`. The 4.3 $\mu$m $\mathrm{CO_2}$ absorption feature is unmistakable; it was the prototype result for the wider JWST exoplanet-atmosphere programme that is now examining dozens of planets and is the principal subject of {ref}`Lecture 13 <lecture13>`.
