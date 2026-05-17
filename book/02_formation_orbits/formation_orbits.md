@@ -269,7 +269,7 @@ Illustration of Kepler's three laws of planetary motion. (1) Orbits are ellipses
 :width: 750px
 :align: center
 
-Architecture of the Solar System on a logarithmic semi-major axis scale. The eight planets, Pluto, the asteroid main belt, and the Kuiper belt are shown to scale in distance; symbol size is scaled by $\log(1 + R/R_\oplus)$ so that all bodies remain visible. The asteroid main belt sits between Mars and Jupiter, near the present-day H$_2$O snow line at $\sim 3$ AU separating the rocky inner planets from the gas and ice giants. Planetary semi-major axes from the NASA Planetary Fact Sheet.
+Architecture of the Solar System on a logarithmic semi-major axis scale. The eight planets, Pluto, the asteroid main belt, and the Kuiper belt are shown to scale in distance; symbol size is scaled by $\log(1 + R/R_\oplus)$ so that all bodies remain visible. The asteroid main belt sits between Mars and Jupiter, near the present-day H$_2$O snow line at $\sim 3$ AU separating the rocky inner planets from the gas and ice giants. Planetary semi-major axes from {cite:t}`NASAFactSheet`.
 ```
 
 ### Orbital elements

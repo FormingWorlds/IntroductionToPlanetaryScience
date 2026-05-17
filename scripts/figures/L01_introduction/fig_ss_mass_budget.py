@@ -4,7 +4,7 @@ Mass budget of the solar system: a two-panel pie chart.
 - Left panel: Sun vs total planetary mass.
 - Right panel: planet masses.
 
-Data are static (NASA Planetary Fact Sheet, Williams 2024) and stored
+Data are static (JPL Solar System Dynamics) and stored
 verbatim in `data/solar_system_masses.csv` next to this script. Update
 the CSV (and bump its sidecar JSON) only when planetary mass values are
 formally revised in the Fact Sheet.
@@ -52,7 +52,7 @@ def write_data() -> None:
     df.to_csv(CSV, index=False)
     META.write_text(json.dumps({
         "purpose": "Fig. 2.18 (fig:ss-mass-budget): solar system mass budget pie",
-        "source": "NASA Planetary Fact Sheet (Williams 2024)",
+        "source": "JPL Solar System Dynamics",
         "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
         "retrieved_date": "2026-04-23",
         "citation_key": "NASAFactSheet",
@@ -65,7 +65,7 @@ def write_data() -> None:
             "M_sun_kg": M_SUN_KG,
             "M_earth_kg": 5.9722e24,
         },
-        "license_note": "NASA Planetary Fact Sheet content is public domain.",
+        "license_note": "JPL Solar System Dynamics content is in the public domain (NASA).",
     }, indent=2))
 
 

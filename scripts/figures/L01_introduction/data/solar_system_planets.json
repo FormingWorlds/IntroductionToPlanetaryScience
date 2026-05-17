@@ -1,6 +1,6 @@
 {
   "purpose": "Bulk planetary data for L01 figures: ss-mass-budget, density-vs-distance, mass-vs-distance, vem-atmospheres, planet-sizes (and reused by other lectures).",
-  "source": "NASA Planetary Fact Sheet (Williams 2024)",
+  "source": "JPL Solar System Dynamics",
   "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
   "retrieved_date": "2026-04-23",
   "citation_key": "NASAFactSheet",
@@ -21,6 +21,6 @@
     "dominant_species": "Most abundant atmospheric constituent by volume.",
     "notes": "Free-form notes."
   },
-  "license_note": "NASA Planetary Fact Sheet content is public domain.",
+  "license_note": "JPL Solar System Dynamics content is in the public domain (NASA).",
   "uncertainties_note": "Surface temperatures for terrestrial bodies are global means; for Mars in particular, diurnal and seasonal variability is large."
 }

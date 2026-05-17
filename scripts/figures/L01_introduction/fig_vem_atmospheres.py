@@ -6,7 +6,7 @@ labelled. The point is to show the ~500 K range in T_surf and ~10^4
 range in P_surf despite the three planets having broadly similar bulk
 compositions.
 
-Data: NASA Planetary Fact Sheet (Williams 2024); see
+Data: JPL Solar System Dynamics; see
 `solar_system_planets.json`.
 
 Caption / figure id : `fig:vem-atmospheres`

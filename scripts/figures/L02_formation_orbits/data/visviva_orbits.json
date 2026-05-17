@@ -9,7 +9,7 @@
     "Earth": {
       "a_AU": 1.0,
       "e": 0.01671,
-      "source": "NASA Planetary Fact Sheet (Williams 2024)"
+      "source": "JPL Solar System Dynamics"
     },
     "Halley's comet": {
       "a_AU": 17.834,

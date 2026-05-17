@@ -230,7 +230,7 @@ Composite at true relative size of the principal bodies of the solar system, map
 
 The table below summarises the key physical and orbital properties of the eight planets. Note the enormous dynamic range: Jupiter is over 5,700 times more massive than Mercury, yet both orbit the same star.
 
-**Key properties of the eight solar system planets.** Data from the NASA Planetary Fact Sheet {cite:p}`NASAFactSheet`.
+**Key properties of the eight solar system planets.** Data from {cite:p}`NASAFactSheet`.
 
 | Planet | Mass ($\Mearth$) | Radius ($\Rearth$) | $a$ (AU) | $P$ (yr) | $e$ | $\rho$ (kg m$^{-3}$) |
 |--------|------:|--------:|------:|------:|------:|------:|

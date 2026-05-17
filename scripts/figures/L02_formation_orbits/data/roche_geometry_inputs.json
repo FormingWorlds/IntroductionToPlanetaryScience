@@ -5,7 +5,7 @@
     "M_kg": 5.6834e+26,
     "R_m": 58232000.0,
     "mean_density_kg_m3": 687.0,
-    "source": "NASA Planetary Fact Sheet (Williams 2024)"
+    "source": "JPL Solar System Dynamics"
   },
   "satellite": {
     "kind": "Icy body",

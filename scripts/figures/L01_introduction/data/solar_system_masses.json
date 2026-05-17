@@ -1,6 +1,6 @@
 {
   "purpose": "Fig. 2.18 (fig:ss-mass-budget): solar system mass budget pie",
-  "source": "NASA Planetary Fact Sheet (Williams 2024)",
+  "source": "JPL Solar System Dynamics",
   "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
   "retrieved_date": "2026-04-23",
   "citation_key": "NASAFactSheet",
@@ -13,5 +13,5 @@
     "M_sun_kg": 1.98892e+30,
     "M_earth_kg": 5.9722e+24
   },
-  "license_note": "NASA Planetary Fact Sheet content is public domain."
+  "license_note": "JPL Solar System Dynamics content is in the public domain (NASA)."
 }

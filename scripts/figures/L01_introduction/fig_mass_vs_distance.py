@@ -6,11 +6,10 @@ extreme concentration of mass in Jupiter rather than the rocky-vs-gas
 density gradient.
 
 Data: JPL Solar System Dynamics, Planetary Physical Parameters,
-https://ssd.jpl.nasa.gov/planets/phys_par.html. Values agree with
-the NASA Planetary Fact Sheet (NSSDC) to all quoted significant
-figures; NSSDC has been offline for maintenance since August 2025
-so the live JPL SSD page is the active primary source. See
-`solar_system_planets.json` for column descriptions and units.
+https://ssd.jpl.nasa.gov/planets/phys_par.html. Values derive from
+the IAU/IAG Working Group report (Archinal et al. 2018, CMDA 130:22)
+and current GM estimates. See `solar_system_planets.json` for column
+descriptions and units.
 
 Caption / figure id : `fig:mass-vs-distance`
 Markdown source     : book/01_introduction/introduction.md

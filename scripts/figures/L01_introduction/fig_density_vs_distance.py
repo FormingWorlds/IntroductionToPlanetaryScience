@@ -7,11 +7,10 @@ structure. A horizontal reference line marks the uncompressed
 density of typical silicate mantle rock (~3300 kg m^-3).
 
 Data: JPL Solar System Dynamics, Planetary Physical Parameters,
-https://ssd.jpl.nasa.gov/planets/phys_par.html. Values agree with
-the NASA Planetary Fact Sheet (NSSDC) to all quoted significant
-figures; NSSDC has been offline for maintenance since August 2025
-so the live JPL SSD page is the active primary source. See sibling
-`solar_system_planets.json` for full column descriptions and units.
+https://ssd.jpl.nasa.gov/planets/phys_par.html. Values derive from
+the IAU/IAG Working Group report (Archinal et al. 2018, CMDA 130:22)
+and current GM estimates. See sibling `solar_system_planets.json`
+for full column descriptions and units.
 
 Caption / figure id : `fig:density-vs-distance`
 Markdown source     : book/01_introduction/introduction.md

@@ -41,7 +41,7 @@ OUT_AVIF = REPO_ROOT / "book/02_formation_orbits/figures/roche_geometry.avif"
 # Physical constants (SI)
 G = 6.67430e-11
 
-# Saturn primary (NASA Fact Sheet, Williams 2024)
+# Saturn primary (JPL Solar System Dynamics)
 M_SATURN = 5.6834e26   # kg
 R_SATURN = 58_232.0e3  # m, volumetric mean radius
 RHO_SATURN = 687.0     # kg/m^3 (mean)
@@ -60,7 +60,7 @@ def write_metadata() -> None:
             "M_kg": M_SATURN,
             "R_m": R_SATURN,
             "mean_density_kg_m3": RHO_SATURN,
-            "source": "NASA Planetary Fact Sheet (Williams 2024)",
+            "source": "JPL Solar System Dynamics",
         },
         "satellite": {
             "kind": "Icy body",

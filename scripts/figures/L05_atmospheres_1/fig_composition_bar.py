@@ -3,7 +3,7 @@
 Stacked bar chart of atmospheric volume mixing ratios for five
 representative solar-system bodies.
 
-The data are static (NASA Planetary Fact Sheet, Williams 2024) and are
+The data are static (JPL Solar System Dynamics) and are
 captured verbatim in `data/atmospheric_compositions.csv` next to this
 script. Update the CSV (and bump its sidecar JSON) only when the Fact
 Sheet revises its values.
@@ -53,13 +53,13 @@ def write_data() -> None:
     df.to_csv(CSV, index=False)
     META.write_text(json.dumps({
         "purpose": "Fig. 6.2 (fig:composition-bar): atmospheric VMR by body",
-        "source": "NASA Planetary Fact Sheet (Williams 2024)",
+        "source": "JPL Solar System Dynamics",
         "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
         "retrieved_date": "2026-04-23",
         "citation_key": "NASAFactSheet",
         "units": "Volume mixing ratio in percent.",
         "columns": {sp: f"{sp} volume mixing ratio (%)" for sp in SPECIES},
-        "license_note": "NASA Planetary Fact Sheet content is public domain.",
+        "license_note": "JPL Solar System Dynamics content is in the public domain (NASA).",
     }, indent=2))
 
 

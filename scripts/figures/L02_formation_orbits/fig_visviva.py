@@ -35,7 +35,7 @@ M_SUN = 1.98892e30
 AU = 1.495978707e11
 
 # Orbits to plot. Source values as recorded in the JSON sidecar:
-#   Earth          a = 1 AU,        e = 0.01671 (NASA Fact Sheet, Williams 2024)
+#   Earth          a = 1 AU,        e = 0.01671 (JPL Solar System Dynamics)
 #   Halley's comet a = 17.834 AU,   e = 0.9671  (JPL Small-Body Database, 2024)
 ORBITS = {
     "Earth":          {"a_AU": 1.0,    "e": 0.01671, "color": "#1f77b4"},
@@ -54,7 +54,7 @@ def write_metadata() -> None:
         },
         "orbits": {
             "Earth":          {"a_AU": 1.0,    "e": 0.01671,
-                               "source": "NASA Planetary Fact Sheet (Williams 2024)"},
+                               "source": "JPL Solar System Dynamics"},
             "Halley's comet": {"a_AU": 17.834, "e": 0.9671,
                                "source": "JPL Small-Body Database, accessed 2026"},
         },

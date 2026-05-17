@@ -6,7 +6,7 @@ Two-panel schematic of the Galilean Laplace resonance:
 (b) Bar chart of orbital periods, normalised to Io's, showing the
     1 : 2 : 4 commensurability.
 
-Orbital data: NASA / JPL Galilean moon fact sheets (Williams 2024 et al.);
+Orbital data: JPL Solar System Dynamics (Galilean moon pages);
 periods: 1.769138, 3.551181, 7.154553 days.
 
 Caption / figure id : `fig:laplace-resonance`
