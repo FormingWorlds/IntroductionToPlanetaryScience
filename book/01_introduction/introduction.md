@@ -32,7 +32,7 @@ The Pale Blue Dot is one frame in a much larger 60-frame "Family Portrait" mosai
 :width: 700px
 :align: center
 
-The Voyager 1 "Family Portrait" of the solar system, 14 February 1990, taken from approximately 6 billion km. Six planets are visible across this 60-frame mosaic spanning roughly 70 degrees of sky: Venus, Earth, Jupiter, Saturn, Uranus, and Neptune. Mercury was lost in the Sun's glare, and Mars was too small to be detected. The Pale Blue Dot ({numref}`fig:pale-blue-dot`) is a zoom into the Earth frame. Credit: NASA/JPL-Caltech, PIA00451.
+The Voyager 1 "Family Portrait" of the solar system, 14 February 1990, taken from approximately 6 billion km. Six planets are visible across this 60-frame mosaic spanning roughly 70 degrees of sky: Venus, Earth, Jupiter, Saturn, Uranus, and Neptune. Mercury was too close to the Sun to be seen, and Mars showed only a thin sunlit crescent from Voyager 1's viewpoint and could not be detected; Pluto was too small and distant to image. The Pale Blue Dot ({numref}`fig:pale-blue-dot`) is a zoom into the Earth frame. Credit: NASA/JPL-Caltech, PIA00451.
 ```
 
 A second image taken from lunar orbit two decades earlier captured the same essential idea from much closer in: Earth as a finite, fragile world set against an empty sky ({numref}`fig:earthrise-apollo8`).
@@ -101,7 +101,7 @@ Planetary science as a discipline is remarkably young, but its roots reach back 
 
 Babylonian astronomers systematically tracked planetary positions as early as 1800 BCE, developing arithmetical methods to predict conjunctions and oppositions. Greek natural philosophers constructed geometric models: Aristotle's geocentric spheres (~350 BCE) and Ptolemy's epicyclic system (~150 CE) remained the standard framework for over a millennium.
 
-The Copernican revolution began in 1543, when Nicolaus Copernicus published *De revolutionibus*, placing the Sun at the centre ({numref}`fig:copernican-system`). Johannes Kepler refined this model into his three empirical laws of planetary motion (1609–1619), replacing circles with ellipses. Isaac Newton's *Principia* (1687) showed that all three of Kepler's laws follow from a single universal law of gravitation, the first grand unification in physics.
+The Copernican revolution began in 1543, when Nicolaus Copernicus published *De revolutionibus*, placing the Sun at the centre ({numref}`fig:copernican-system`). Johannes Kepler refined this model into his three empirical laws of planetary motion (1609 to 1619), replacing circles with ellipses. Isaac Newton's *Principia* (1687) showed that all three of Kepler's laws follow from a single universal law of gravitation, the first grand unification in physics.
 
 ```{figure} figures/copernican_system.avif
 :name: fig:copernican-system
@@ -192,14 +192,14 @@ Beyond the demographics, ALMA imaging of the young star HL Tauri ({numref}`fig:h
 ALMA 1.3 mm continuum image of the protoplanetary disk around the young star HL Tauri (distance $\sim 140$ pc). The concentric dark gaps are widely interpreted as carved by forming protoplanets, although alternative explanations involving local pile-ups of dust grains at ice lines and other disk substructures remain on the table. ALMA's $\sim 5$ AU angular resolution at HL Tau's distance is what made this multi-ringed substructure visible for the first time. Protoplanetary disks and planet formation are covered in {ref}`Lecture 2 <lecture02>`. Credit: ALMA (ESO/NAOJ/NRAO); {cite:t}`ALMAPartnership2015`.
 ```
 
-The most recent step in exoplanet science has been the direct chemical characterisation of atmospheres. JWST measures the absorption spectrum of starlight that filters through a transiting planet's atmosphere and identifies individual molecules in it. In August 2022, JWST recorded the first unambiguous detection of carbon dioxide in an exoplanet atmosphere on the hot gas giant WASP-39 b ({numref}`fig:wasp39b-spectrum`) {cite:p}`Rustamkulov2023`. The 4.3 $\mu$m $\mathrm{CO_2}$ absorption feature is unmistakable; it was the prototype result for the wider JWST exoplanet-atmosphere programme that is now examining dozens of planets and is the principal subject of {ref}`Lecture 13 <lecture13>`.
+The most recent step in exoplanet science has been the direct chemical characterisation of atmospheres. JWST measures the absorption spectrum of starlight that filters through a transiting planet's atmosphere and identifies individual molecules in it. JWST observed the hot Saturn WASP-39 b in July 2022, and in August 2022 the NIRSpec team announced the first unambiguous detection of carbon dioxide in an exoplanet atmosphere ({numref}`fig:wasp39b-spectrum`) {cite:p}`Rustamkulov2023`. The 4.3 $\mu$m $\mathrm{CO_2}$ absorption feature is unmistakable; it was the prototype result for the wider JWST exoplanet-atmosphere programme that is now examining dozens of planets and is the principal subject of {ref}`Lecture 13 <lecture13>`.
 
 ```{figure} figures/wasp39b_jwst_co2.avif
 :name: fig:wasp39b-spectrum
 :width: 600px
 :align: center
 
-NASA outreach graphic of the first unambiguous detection of carbon dioxide in an exoplanet atmosphere, from JWST/NIRSpec observations of the hot gas giant WASP-39 b in July 2022. The "amount of light blocked" (transit depth) is plotted as a function of wavelength from 3.0 to 5.5 $\mu$m. The prominent peak near 4.3 $\mu$m is the $\mathrm{CO_2}$ absorption band. White points are data with uncertainty bars; the blue curve is the best-fit atmospheric model {cite:p}`Rustamkulov2023`. Image credit: NASA, ESA, CSA, Joseph Olmsted (STScI).
+NASA outreach graphic of the first unambiguous detection of carbon dioxide in an exoplanet atmosphere, from JWST/NIRSpec observations of the hot Saturn WASP-39 b ($0.28\,\Mjup$, comparable in mass to Saturn) in July 2022. The "amount of light blocked" (transit depth) is plotted as a function of wavelength from 3.0 to 5.5 $\mu$m. The prominent peak near 4.3 $\mu$m is the $\mathrm{CO_2}$ absorption band. White points are data with uncertainty bars; the blue curve is the best-fit atmospheric model {cite:p}`Rustamkulov2023`. Image credit: NASA, ESA, CSA, Joseph Olmsted (STScI).
 ```
 
 Today, planetary science integrates astronomy, physics, chemistry, geology, and atmospheric science. It spans scales from dust grains in protoplanetary disks to the demographics of planetary systems across the Galaxy.
@@ -208,13 +208,13 @@ Today, planetary science integrates astronomy, physics, chemistry, geology, and 
 
 ### Architecture and scale
 
-The solar system extends from the Sun (radius $\Rsun = 6.96 \times 10^8$ m) to the Oort Cloud, a hypothetical reservoir of comets at roughly $10^4$–$10^5$ AU. Its principal components, from the inside out, are:
+The solar system extends from the Sun (radius $\Rsun = 6.96 \times 10^8$ m) to the Oort Cloud, a hypothetical reservoir of comets at roughly $10^4$ to $10^5$ AU. Its principal components, from the inside out, are:
 
 - **The inner solar system:** Four rocky (terrestrial) planets (Mercury, Venus, Earth, Mars) with semi-major axes between 0.39 and 1.52 AU. These are small, dense, and composed primarily of rock and metal.
 - **The asteroid belt:** A population of rocky and metallic bodies between roughly 2.1 and 3.3 AU, dominated by the dwarf planet Ceres (diameter ~940 km). The total mass of the asteroid belt is only ~$4 \times 10^{-4}$ $\Mearth$.
-- **The outer solar system:** Four giant planets, Jupiter and Saturn (gas giants) and Uranus and Neptune (ice giants), between 5.2 and 30.1 AU. These are massive, with thick hydrogen–helium envelopes and extensive moon systems.
+- **The outer solar system:** Four giant planets, Jupiter and Saturn (gas giants) and Uranus and Neptune (ice giants), between 5.2 and 30.1 AU. These are massive, with thick hydrogen-helium envelopes and extensive moon systems.
 - **The Kuiper Belt and scattered disk:** A region of icy bodies beyond Neptune. The classical Kuiper Belt sits at roughly 30 to 50 AU and contains the dwarf planets Pluto, Makemake, and Haumea. The scattered disk extends to much greater distances on more eccentric orbits and contains Eris ({cite:t}`Brown2005`); the inner Oort cloud / detached-object population (Sedna and others) lies further out still.
-- **The Oort Cloud:** A spherical shell of icy bodies at $10^4$–$10^5$ AU, believed to be the source of long-period comets. Its existence is inferred from cometary orbits but has not been directly observed.
+- **The Oort Cloud:** A spherical shell of icy bodies at $10^4$ to $10^5$ AU, believed to be the source of long-period comets. Its existence is inferred from cometary orbits but has not been directly observed.
 
 The principal solar-system bodies span more than two orders of magnitude in size, from Jupiter (diameter $\sim 143{,}000$ km, roughly $29\times$ that of Mercury) down to the largest Kuiper Belt and scattered-disk objects (diameters $\sim 2{,}000$ to $2{,}400$ km). {numref}`fig:solar-system-composite` brings the four populations introduced above together at true relative size.
 
@@ -266,8 +266,8 @@ Planetary mass versus orbital semi-major axis on a log-log scale, on the same x-
 Planets are broadly classified by composition and structure:
 
 - **Terrestrial planets** (Mercury, Venus, Earth, Mars): Rocky surfaces, iron cores, thin or no atmospheres (Venus being the exception with its massive CO$_2$ atmosphere). Covered in {ref}`Lecture 9 <lecture09>` and {ref}`Lecture 10 <lecture10>`.
-- **Gas giants** (Jupiter, Saturn): Massive hydrogen–helium envelopes with no well-defined solid surface, likely rocky/icy cores at high pressure. Covered in {ref}`Lecture 11 <lecture11>`.
-- **Ice giants** (Uranus, Neptune): Smaller than gas giants, with interiors dominated by heavier volatiles (H$_2$O, NH$_3$, CH$_4$) under extreme pressures, topped by hydrogen–helium atmospheres. Also covered in {ref}`Lecture 11 <lecture11>`.
+- **Gas giants** (Jupiter, Saturn): Massive hydrogen-helium envelopes with no well-defined solid surface, likely rocky/icy cores at high pressure. Covered in {ref}`Lecture 11 <lecture11>`.
+- **Ice giants** (Uranus, Neptune): Smaller than gas giants, with interiors dominated by heavier volatiles (H$_2$O, NH$_3$, CH$_4$) under extreme pressures, topped by hydrogen-helium atmospheres. Also covered in {ref}`Lecture 11 <lecture11>`.
 
 ## Blackboard derivation: Solar mass from planetary orbits
 
@@ -355,7 +355,7 @@ The four terrestrial planets at approximate relative scale. From left to right: 
 
 | Property | Venus | Earth | Mars |
 |----------|-------|-------|------|
-| Surface temperature | 464 °C | 15 °C | $-60$ °C |
+| Surface temperature | 464 °C | 15 °C | $-63$ °C |
 | Surface pressure | 92 bar | 1 bar | 0.006 bar |
 | Dominant atmosphere | CO$_2$ (96.5%) | N$_2$/O$_2$ (99%) | CO$_2$ (95%) |
 | Magnetic field | None | Strong dipole | Remnant crustal |
@@ -399,7 +399,7 @@ Ground-based telescopes observe planets across the electromagnetic spectrum. Opt
 Aerial view of ESO's Paranal Observatory at sunset, Atacama Desert, Chile. The four 8.2 m Unit Telescopes of the Very Large Telescope (VLT) and the 4.1 m VISTA survey telescope (on an adjacent peak) are visible on the summit ridge, with the Pacific coast and inversion-layer cloud deck in the distance. The dry, high-altitude site delivers some of the best optical and near-infrared seeing in the world. Image credit: G. Hüdepohl (atacamaphoto.com)/ESO {cite:p}`ESOVLT2015`.
 ```
 
-Space-based observatories avoid atmospheric absorption and distortion. The Hubble Space Telescope ({numref}`fig:hst-orbit`) has monitored atmospheric changes on the giant planets for decades; its Outer Planets Atmospheres Legacy (OPAL) programme has tracked Jupiter's Great Red Spot, Saturn's polar hexagon, and Uranus / Neptune cloud variability with annual cadence since 2014. JWST ({numref}`fig:jwst-mirror`), operating at infrared wavelengths from the Sun–Earth L2 point, is now the primary tool for exoplanet atmospheric characterisation; the carbon-dioxide detection in WASP-39 b ({numref}`fig:wasp39b-spectrum`) and the thermal emission of TRAPPIST-1 b ({numref}`fig:trappist1b-jwst`) are early examples.
+Space-based observatories avoid atmospheric absorption and distortion. The Hubble Space Telescope ({numref}`fig:hst-orbit`) has monitored atmospheric changes on the giant planets for decades; its Outer Planets Atmospheres Legacy (OPAL) programme has tracked Jupiter's Great Red Spot, Saturn's polar hexagon, and Uranus / Neptune cloud variability with annual cadence since 2014. JWST ({numref}`fig:jwst-mirror`), operating at infrared wavelengths from the Sun-Earth L2 point, is now the primary tool for exoplanet atmospheric characterisation; the carbon-dioxide detection in WASP-39 b ({numref}`fig:wasp39b-spectrum`) and the thermal emission of TRAPPIST-1 b ({numref}`fig:trappist1b-jwst`) are early examples.
 
 ```{figure} figures/hst_orbit.avif
 :name: fig:hst-orbit
@@ -440,9 +440,9 @@ ESA's past, present, and future Solar System exploration missions (status Septem
 Mission types include, in order of increasing complexity and cost:
 
 - **Flyby:** The spacecraft passes a target once, collecting data during a brief encounter. Example: Voyager 2 at Neptune (1989).
-- **Orbiter:** The spacecraft enters orbit, enabling long-term monitoring. Example: Cassini at Saturn (2004–2017).
+- **Orbiter:** The spacecraft enters orbit, enabling long-term monitoring. Example: Cassini at Saturn (2004 to 2017).
 - **Lander:** The spacecraft lands on the surface and measures conditions in situ. Example: Viking 1 on Mars (1976).
-- **Rover:** A mobile lander that traverses the surface. Example: Perseverance on Mars (2021–present).
+- **Rover:** A mobile lander that traverses the surface. Example: Perseverance on Mars (2021 to present).
 - **Sample return:** Material is collected and returned to Earth for laboratory analysis. Example: Hayabusa2 returned samples from asteroid Ryugu (2020).
 
 ### Remote sensing methods
@@ -467,15 +467,15 @@ The table below lists landmark missions that have shaped our understanding of th
 | Apollo 11 | NASA | 1969 | Moon | First crewed landing on another world |
 | Venera 7 | USSR | 1970 | Venus | First successful landing on another planet |
 | Viking 1 & 2 | NASA | 1976 | Mars | First Mars landers; life-detection experiments |
-| Voyager 1 & 2 | NASA | 1977–1989 | Outer planets | Grand tour of Jupiter, Saturn, Uranus, Neptune |
-| Galileo | NASA | 1995–2003 | Jupiter | First Jupiter orbiter; Europa's subsurface ocean |
-| Cassini-Huygens | NASA/ESA | 2004–2017 | Saturn | Huygens landed on Titan; Enceladus plumes |
-| Spirit & Opportunity | NASA | 2004–2018 | Mars | Long-duration rovers; evidence for past water |
+| Voyager 1 & 2 | NASA | 1977-1989 | Outer planets | Grand tour of Jupiter, Saturn, Uranus, Neptune |
+| Galileo | NASA | 1995-2003 | Jupiter | First Jupiter orbiter; Europa's subsurface ocean |
+| Cassini-Huygens | NASA/ESA | 2004-2017 | Saturn | Huygens landed on Titan; Enceladus plumes |
+| Spirit & Opportunity | NASA | 2004-2018 | Mars | Long-duration rovers; evidence for past water |
 | New Horizons | NASA | 2015 | Pluto | First Pluto flyby; revealed geological complexity |
-| Hayabusa2 | JAXA | 2018–2020 | Ryugu | Returned samples from a carbonaceous asteroid |
-| Perseverance | NASA | 2021– | Mars | Sample caching for future return; Ingenuity helicopter |
-| JWST | NASA/ESA/CSA | 2021– | Exoplanets | Atmospheric characterisation of exoplanets |
-| Europa Clipper | NASA | 2024– | Europa | Investigating habitability of Europa's ocean |
+| Hayabusa2 | JAXA | 2018-2020 | Ryugu | Returned samples from a carbonaceous asteroid |
+| Perseverance | NASA | 2021- | Mars | Sample caching for future return; Ingenuity helicopter |
+| JWST | NASA/ESA/CSA | 2021- | Exoplanets | Atmospheric characterisation of exoplanets |
+| Europa Clipper | NASA | 2024- | Europa | Investigating habitability of Europa's ocean |
 
 Two iconic mission products illustrate the breadth of these efforts: the Cassini orbiter's backlit view of Saturn from inside the planet's shadow ({numref}`fig:cassini-saturn`), and the first colour view from Perseverance on Mars ({numref}`fig:perseverance-mars`) showing the rocky plain in Jezero crater where samples for eventual return are being cached.
 
@@ -484,7 +484,7 @@ Two iconic mission products illustrate the breadth of these efforts: the Cassini
 :width: 600px
 :align: center
 
-Backlit view of Saturn imaged by the Cassini spacecraft on 19 July 2013 from inside the planet's shadow, with Earth visible as a faint pale point through the rings (lower right). The image is known as "The Day the Earth Smiled" because it is the only Earth portrait from a Saturn-orbit spacecraft that was pre-announced to the public, alongside Voyager 1's Pale Blue Dot ({numref}`fig:pale-blue-dot`) and the Voyager Family Portrait ({numref}`fig:family-portrait`). Cassini operated in Saturn orbit from 2004 to 2017 and discovered the global subsurface ocean of Enceladus and the hydrocarbon lakes of Titan; Saturn's rings, Enceladus, and Titan are returned to in {ref}`Lecture 11 <lecture11>`. Credit: NASA/JPL-Caltech/Space Science Institute.
+Backlit view of Saturn imaged by the Cassini spacecraft on 19 July 2013 from inside the planet's shadow, with Earth visible as a faint pale point through the rings (lower right). The image is known as "The Day the Earth Smiled" because it is the first Earth portrait from deep space that was pre-announced to the public; Voyager 1's Pale Blue Dot ({numref}`fig:pale-blue-dot`) and the Voyager Family Portrait ({numref}`fig:family-portrait`) were imaged without public advance notice. Cassini operated in Saturn orbit from 2004 to 2017 and discovered the global subsurface ocean of Enceladus and the hydrocarbon lakes of Titan; Saturn's rings, Enceladus, and Titan are returned to in {ref}`Lecture 11 <lecture11>`. Credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
 ```{figure} figures/perseverance_mars.avif
