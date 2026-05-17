@@ -216,14 +216,14 @@ The solar system extends from the Sun (radius $\Rsun = 6.96 \times 10^8$ m) to t
 - **The Kuiper Belt:** A disk of icy bodies beyond Neptune (~30–50 AU), including the dwarf planets Pluto, Eris, and Makemake. The scattered disk extends to greater distances with more eccentric orbits.
 - **The Oort Cloud:** A spherical shell of icy bodies at $10^4$–$10^5$ AU, believed to be the source of long-period comets. Its existence is inferred from cometary orbits but has not been directly observed.
 
-The relative sizes of the eight planets are shown in {numref}`fig:planet-sizes`, with Jupiter's diameter roughly $29\times$ that of Mercury.
+The principal solar-system bodies span more than two orders of magnitude in size, from Jupiter (diameter $\sim 143{,}000$ km, roughly $29\times$ that of Mercury) down to the largest Kuiper Belt and scattered-disk objects (diameters $\sim 2{,}000$ to $2{,}400$ km). {numref}`fig:solar-system-composite` brings the four populations introduced above together at true relative size.
 
-```{figure} figures/planet_sizes.avif
-:name: fig:planet-sizes
-:width: 700px
+```{figure} figures/solar_system_composite.avif
+:name: fig:solar-system-composite
+:width: 100%
 :align: center
 
-The eight planets of the solar system shown at approximate relative sizes. The four giant planets, Jupiter and Saturn at upper-left with Uranus and Neptune below, dominate the frame; the four terrestrial planets, Earth, Venus, Mars, and Mercury, are clustered at lower-right. Jupiter's diameter is roughly 29 times that of Mercury. Credit: NASA/JPL-Caltech composite, public domain.
+Composite at true relative size of the principal bodies of the solar system, mapping onto the four populations introduced in the text. **Inner solar system:** Mercury, Venus, Earth (with the Moon), and Mars (with Phobos and Deimos). **Asteroid belt:** represented by the dwarf planet Ceres. **Outer solar system:** Jupiter, Saturn, Uranus, and Neptune, each shown with their largest moons (Io, Europa, Ganymede, Callisto for Jupiter; Mimas, Enceladus, Tethys, Dione, Rhea, Titan for Saturn; Miranda, Ariel, Umbriel, Titania, Oberon for Uranus; Triton for Neptune). **Kuiper Belt, scattered disk, and detached objects:** Pluto (with Charon), Haumea (with Namaka and Hi'iaka), Makemake, Quaoar (with Weywot), Orcus (with Vanth), Eris (with Dysnomia), Gonggong (with Xiangliu), and Sedna. The Sun's limb is shown at right for scale. Body sizes are to scale relative to each other; **distances between bodies are not to scale**. The Oort Cloud is not depicted since its constituent comet nuclei are individually too small to image. Composite by CactiStaccingCrane (Wikimedia Commons, CC BY-SA 4.0); source imagery: NASA, ESA, ISRO.
 ```
 
 ### Planetary properties
@@ -243,14 +243,14 @@ The table below summarises the key physical and orbital properties of the eight 
 | Uranus | 14.54 | 4.01 | 19.19 | 84.01 | 0.047 | 1271 |
 | Neptune | 17.15 | 3.88 | 30.07 | 164.8 | 0.009 | 1638 |
 
-Two patterns stand out immediately. First, **density decreases with distance** ({numref}`fig:density-vs-distance`): the inner planets have $\rho > 3900$ kg m$^{-3}$ (rock and metal), while the outer planets have $\rho < 1700$ kg m$^{-3}$ (gas and ice). Saturn is famously less dense than water. This gradient reflects the temperature structure of the protoplanetary disk from which the planets formed ({ref}`Lecture 2 <lecture02>`). Second, **mass is concentrated in Jupiter** ({numref}`fig:mass-vs-distance`): it contains more than twice the mass of all other planets combined. We will quantify this in the blackboard derivation below.
+Two patterns stand out immediately. First, **density decreases with distance** ({numref}`fig:density-vs-distance`): the inner planets have $\rho > 3900$ kg m$^{-3}$ (rock and metal), while the outer planets have $\rho < 1700$ kg m$^{-3}$ (gas and ice). Saturn is famously less dense than water. The **canonical** interpretation is that this gradient reflects the temperature structure of the protoplanetary disk: rock condenses everywhere, ices only beyond the snow line at $\sim 3$ to $5$ AU, and hydrogen and helium are accreted as gas by the cores that form quickly enough to capture it before the disk dispersed. Alternative scenarios attribute part of the present-day pattern to planetary migration after formation (the Grand Tack and Nice models), in which case the planets we see today need not all have formed at their present orbits. Both views are developed in {ref}`Lecture 2 <lecture02>`. Second, **mass is concentrated in Jupiter** ({numref}`fig:mass-vs-distance`): it contains more than twice the mass of all other planets combined. We will quantify this in the blackboard derivation below.
 
 ```{figure} figures/density_vs_distance.avif
 :name: fig:density-vs-distance
 :width: 600px
 :align: center
 
-Bulk density of the eight solar-system planets versus orbital semi-major axis (log scale). The terrestrial planets cluster at $\rho > 3900$ kg m$^{-3}$; the giant planets sit below 1700 kg m$^{-3}$, with Saturn the lowest at 687 kg m$^{-3}$, below the density of liquid water (dashed line). Data from {cite:p}`NASAFactSheet`.
+Bulk density of the eight solar-system planets versus orbital semi-major axis (log $x$). The terrestrial planets (red) cluster at $\rho > 3900$ kg m$^{-3}$ because they are composed of rock and metal that condensed at the high temperatures of the inner protoplanetary disk. The giant planets (blue) sit below 1700 kg m$^{-3}$ because they accreted abundant hydrogen, helium, and ice beyond the disk's snow lines at $\sim 3$ to $5$ AU; Saturn is the lowest at 687 kg m$^{-3}$, below the density of liquid water (grey dashed line). The brown dashed line marks the **uncompressed density of typical silicate mantle rock** ($\sim 3300$ kg m$^{-3}$, the 1-bar density of olivine and peridotite): Mars sits close to this value, while Earth, Venus, and Mercury exceed it because (a) iron-rich cores raise the bulk density and (b) self-gravity compresses their interiors. The disk-temperature origin of this gradient is developed in {ref}`Lecture 2 <lecture02>`. Data from {cite:p}`NASAFactSheet`.
 ```
 
 ```{figure} figures/mass_vs_distance.avif
@@ -258,7 +258,7 @@ Bulk density of the eight solar-system planets versus orbital semi-major axis (l
 :width: 600px
 :align: center
 
-Planetary mass versus orbital semi-major axis on a log-log scale. Jupiter's mass exceeds the sum of all other planetary masses by more than a factor of two, illustrating the extreme concentration of mass in the central giant. Data from {cite:p}`NASAFactSheet`.
+Planetary mass versus orbital semi-major axis on a log-log scale, on the same x-axis as {numref}`fig:density-vs-distance`. Jupiter ($317.83\,\Mearth$) is by far the most massive planet: its mass alone is about 2.5 times the combined mass of all other planets, and Jupiter plus Saturn together account for more than $90\%$ of the total planetary mass in the solar system. This concentration reflects the fact that Jupiter formed first and accreted the bulk of the protoplanetary disk's remaining gas before the disk dispersed; later-forming planets, including the ice giants Uranus and Neptune, were left to compete for the comparatively gas-poor remnant ({ref}`Lecture 2 <lecture02>`). Data from {cite:p}`NASAFactSheet`.
 ```
 
 ### Classification

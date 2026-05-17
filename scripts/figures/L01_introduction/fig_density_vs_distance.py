@@ -3,13 +3,18 @@
 Bulk density of the eight solar-system planets versus orbital
 semi-major axis on a log-x scale, illustrating the rocky-versus-gas
 density gradient set by the protoplanetary disk's temperature
-structure.
+structure. A horizontal reference line marks the uncompressed
+density of typical silicate mantle rock (~3300 kg m^-3).
 
-Data: NASA Planetary Fact Sheet (Williams 2024); see sibling
+Data: JPL Solar System Dynamics, Planetary Physical Parameters,
+https://ssd.jpl.nasa.gov/planets/phys_par.html. Values agree with
+the NASA Planetary Fact Sheet (NSSDC) to all quoted significant
+figures; NSSDC has been offline for maintenance since August 2025
+so the live JPL SSD page is the active primary source. See sibling
 `solar_system_planets.json` for full column descriptions and units.
 
 Caption / figure id : `fig:density-vs-distance`
-Markdown source     : book/01_introduction/introduction.md (around line 237)
+Markdown source     : book/01_introduction/introduction.md
 Citation key        : NASAFactSheet
 """
 from __future__ import annotations
@@ -29,7 +34,24 @@ OUT_AVIF = REPO_ROOT / "book/01_introduction/figures/density_vs_distance.avif"
 
 # Constants used to derive bulk density from the CSV columns.
 M_EARTH_KG = 5.9722e24
-RHO_WATER = 1000.0  # kg / m^3, reference for "less dense than water"
+RHO_WATER = 1000.0       # kg / m^3, reference for "less dense than water"
+RHO_ROCK = 3300.0        # kg / m^3, uncompressed silicate mantle rock (olivine / peridotite)
+
+# Per-planet label offsets in (dx, dy) points to keep text from
+# overlapping any markers, the reference lines, or neighbouring labels.
+# Venus is dropped below its marker to separate from Earth; all other
+# labels sit above their markers, with Saturn raised to avoid the
+# liquid-water reference line at 1000 kg/m^3.
+LABEL_OFFSETS = {
+    "Mercury": (10, 12),
+    "Venus":   (10, -18),
+    "Earth":   (10, 12),
+    "Mars":    (10, 12),
+    "Jupiter": (10, 12),
+    "Saturn":  (10, 18),
+    "Uranus":  (-36, 12),
+    "Neptune": (10, 12),
+}
 
 
 def compute_densities(df: pd.DataFrame) -> pd.DataFrame:
@@ -65,12 +87,18 @@ def make_plot() -> Path:
         ax.annotate(
             row["body"],
             (row["semi_major_axis_AU"], row["density_kg_m3"]),
-            xytext=(7, 5), textcoords="offset points", fontsize=10,
+            xytext=LABEL_OFFSETS[row["body"]], textcoords="offset points",
+            fontsize=10,
         )
 
     ax.axhline(RHO_WATER, color="gray", linestyle="--", linewidth=1.0)
     ax.text(0.32, RHO_WATER * 1.05, r"density of liquid water",
             fontsize=8, color="gray")
+
+    ax.axhline(RHO_ROCK, color="saddlebrown", linestyle="--", linewidth=1.0)
+    ax.text(0.32, RHO_ROCK * 1.04,
+            r"uncompressed silicate rock ($\sim$3300 kg m$^{-3}$)",
+            fontsize=8, color="saddlebrown")
 
     ax.set_xscale("log")
     ax.set_xlabel("Orbital semi-major axis (AU)")

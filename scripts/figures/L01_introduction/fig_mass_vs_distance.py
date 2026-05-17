@@ -5,11 +5,15 @@ Companion to fig:density-vs-distance: this view emphasises the
 extreme concentration of mass in Jupiter rather than the rocky-vs-gas
 density gradient.
 
-Data: NASA Planetary Fact Sheet (Williams 2024); see
-`solar_system_planets.json`.
+Data: JPL Solar System Dynamics, Planetary Physical Parameters,
+https://ssd.jpl.nasa.gov/planets/phys_par.html. Values agree with
+the NASA Planetary Fact Sheet (NSSDC) to all quoted significant
+figures; NSSDC has been offline for maintenance since August 2025
+so the live JPL SSD page is the active primary source. See
+`solar_system_planets.json` for column descriptions and units.
 
 Caption / figure id : `fig:mass-vs-distance`
-Markdown source     : book/01_introduction/introduction.md (around line 245)
+Markdown source     : book/01_introduction/introduction.md
 Citation key        : NASAFactSheet
 """
 from __future__ import annotations
@@ -25,6 +29,20 @@ from scripts.figures._shared.style import apply_style, save_figure
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_CSV = Path(__file__).resolve().parent / "data" / "solar_system_planets.csv"
 OUT_AVIF = REPO_ROOT / "book/01_introduction/figures/mass_vs_distance.avif"
+
+# Per-planet label offsets in (dx, dy) points. Close pairs on the
+# log-log axes (Venus-Earth, Uranus-Neptune) are staggered so the
+# labels are visually separated from each other and from their markers.
+LABEL_OFFSETS = {
+    "Mercury": (10, 12),
+    "Venus":   (-34, -18),
+    "Earth":   (10, 12),
+    "Mars":    (10, 12),
+    "Jupiter": (10, 12),
+    "Saturn":  (10, 12),
+    "Uranus":  (-34, 12),
+    "Neptune": (10, 12),
+}
 
 
 def make_plot() -> Path:
@@ -48,7 +66,8 @@ def make_plot() -> Path:
         ax.annotate(
             row["body"],
             (row["semi_major_axis_AU"], row["mass_earth_units"]),
-            xytext=(7, 5), textcoords="offset points", fontsize=10,
+            xytext=LABEL_OFFSETS[row["body"]], textcoords="offset points",
+            fontsize=10,
         )
 
     ax.set_xscale("log")

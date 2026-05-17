@@ -33,7 +33,7 @@ Each entry has:
 | `fig:density-vs-distance` | pending | data-plot, static | Bulk density vs semi-major axis for the 8 planets. Reuse `solar_system_masses.csv`; add radius column. |
 | `fig:mass-vs-distance` | pending | data-plot, static | Same datasets as above. |
 | `fig:vem-atmospheres` | pending | data-plot, static | Surface T and P bars for Venus, Earth, Mars. NASA Fact Sheet. |
-| `fig:planet-sizes` | pending | data-plot, static | Visual size comparison of the 8 planets. |
+| `fig:solar-system-composite` | done | image swap | Replaced earlier 8-planet composite with the Wikimedia Commons CC BY-SA 4.0 true-color composite (Sun, 8 planets + major moons, Ceres for the asteroid belt, Pluto/Haumea/Makemake/Quaoar/Orcus/Eris/Gonggong/Sedna for the Kuiper Belt and scattered disk). |
 | `fig:terrestrial-planets` | pending | mosaic | Compositing four NASA images — could be mechanical. |
 | `fig:trappist1-system` | pending | schematic / data-plot | TRAPPIST-1 orbital architecture diagram; data from Agol+ 2021. |
 
