@@ -593,13 +593,35 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 ## 5. Development Roadmap
 
+### Lock-down sequence (agreed 2026-05-17)
+
+The remaining work is paired lecture-by-lecture: each lecture's prose ("notes") is locked first, then its slide deck is brought into agreement with the locked notes, then the next lecture begins. A problem-set worksheet bridges every two-lecture block. Once a lecture is **locked**, downstream artifacts (later lectures, slides, worksheets, exam, narration) must not introduce numbers, terminology, or claims that contradict it.
+
+Order:
+
+1. L01 notes (LOCKED 2026-05-17, commit `ec67259`)
+2. L01 slides (scheduled 2026-05-18)
+3. L02 notes
+4. L02 slides
+5. Worksheet 01 (L01 + L02)
+6. L03 notes
+7. L03 slides
+8. L04 notes
+9. L04 slides
+10. Worksheet 02 (L03 + L04)
+11. L05 notes → L05 slides → L06 notes → L06 slides → Worksheet 03 (L05 + L06)
+12. L07 notes → L07 slides → L08 notes → L08 slides → Worksheet 04 (L07 + L08)
+13. L09 notes → L09 slides → L10 notes → L10 slides → Worksheet 05 (L09 + L10)
+14. L11 notes → L11 slides → L12 notes → L12 slides → Worksheet 06 (L11 + L12)
+15. L13 notes → L13 slides → L14 notes → L14 slides → Worksheet 07 (L13 + L14)
+
 ### Materials to Create
 
 #### Lecture Notes (14 sets)
 
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
-| 1 | Introduction & history | Verified | High |
+| 1 | Introduction & history | **LOCKED 2026-05-17** (31 figures, three-question closer + L02 bridge, final 5-agent adversarial review with 28 fixes) | High |
 | 2 | Planet formation & orbital dynamics | Verified | High |
 | 3 | Planetary heat & energy transport | Verified | High |
 | 4 | Chemical differentiation & magnetospheres | Verified | High |
@@ -614,7 +636,9 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 | 13 | Exoplanets | Verified (42 figures, transit + RV derivations) | Medium |
 | 14 | Synthesis & astrobiology | Verified (30 figures, habitable-zone derivation) | Low |
 
-**Priority rationale:** Lectures 1–8 cover foundational topics needed before planet-specific lectures; Lectures 9–13 build on these; Lecture 14 synthesizes the full course.
+**Verified vs LOCKED:** "Verified" means the lecture has been through the multi-cycle review pass and is internally consistent. "LOCKED" means it has additionally passed the final five-agent adversarial review and is the canonical reference for downstream artifacts.
+
+**Priority rationale:** Lectures 1-8 cover foundational topics needed before planet-specific lectures; Lectures 9-13 build on these; Lecture 14 synthesizes the full course.
 
 #### Lecture Slides (14 sets, PDF from LaTeX)
 
@@ -622,7 +646,7 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
-| 1 | Introduction & history | Draft complete | High |
+| 1 | Introduction & history | Draft complete (lock pending 2026-05-18) | High |
 | 2 | Planet formation & orbital dynamics | Draft complete | High |
 | 3 | Planetary heat & energy transport | Draft complete | High |
 | 4 | Chemical differentiation & magnetospheres | Draft complete | High |
