@@ -223,7 +223,7 @@ The principal solar-system bodies span more than two orders of magnitude in size
 :width: 100%
 :align: center
 
-Composite at true relative size of the principal bodies of the solar system, mapping onto the four populations introduced in the text. **Inner solar system:** Mercury, Venus, Earth (with the Moon), and Mars (with Phobos and Deimos). **Asteroid belt:** represented by the dwarf planet Ceres. **Outer solar system:** Jupiter, Saturn, Uranus, and Neptune, each shown with their largest moons (Io, Europa, Ganymede, Callisto for Jupiter; Mimas, Enceladus, Tethys, Dione, Rhea, Titan for Saturn; Miranda, Ariel, Umbriel, Titania, Oberon for Uranus; Triton for Neptune). **Kuiper Belt, scattered disk, and detached objects:** Pluto (with Charon), Haumea (with Namaka and Hi'iaka), Makemake, Quaoar (with Weywot), Orcus (with Vanth), Eris (with Dysnomia), Gonggong (with Xiangliu), and Sedna. The Sun's limb is shown at right for scale. Body sizes are to scale relative to each other; **distances between bodies are not to scale**. The Oort Cloud is not depicted since its constituent comet nuclei are individually too small to image. Composite by CactiStaccingCrane (Wikimedia Commons, CC BY-SA 4.0); source imagery: NASA, ESA, ISRO.
+Composite at true relative size of the principal bodies of the solar system, mapping onto the four populations introduced in the text. **Inner solar system:** Mercury, Venus, Earth (with the Moon), and Mars (with Phobos and Deimos). **Asteroid belt:** represented by the dwarf planet Ceres. **Outer solar system:** Jupiter, Saturn, Uranus, and Neptune, each shown with their largest moons (Io, Europa, Ganymede, Callisto for Jupiter; Mimas, Enceladus, Tethys, Dione, Rhea, Titan for Saturn; Miranda, Ariel, Umbriel, Titania, Oberon for Uranus; Triton for Neptune). **Kuiper Belt, scattered disk, and detached objects:** Pluto (with the labelled moons Charon, Styx, Nix, Kerberos, and Hydra), Haumea (with Namaka and Hi'iaka), Makemake, Quaoar (with Weywot), Orcus (with Vanth), Eris (with Dysnomia), Gonggong (with Xiangliu), and Sedna. The Sun's limb is shown at right for scale. Body sizes are to scale relative to each other; **distances between bodies are not to scale**. The Oort Cloud is not depicted since its constituent comet nuclei are individually too small to image. Composite by CactiStaccingCrane (Wikimedia Commons, CC BY-SA 4.0); source imagery: NASA, ESA, ISRO.
 ```
 
 ### Planetary properties
@@ -396,7 +396,7 @@ Ground-based telescopes observe planets across the electromagnetic spectrum. Opt
 :width: 700px
 :align: center
 
-Aerial view of ESO's Paranal Observatory at sunset, Atacama Desert, Chile. The four 8.2 m Unit Telescopes of the Very Large Telescope (VLT) and the 4.1 m VISTA survey telescope (on an adjacent peak) are visible on the summit ridge, with the Pacific coast and inversion-layer cloud deck in the distance. The dry, high-altitude site delivers some of the best optical and near-infrared seeing in the world. Image credit: G. Hüdepohl (atacamaphoto.com)/ESO {cite:p}`ESOVLT2015`.
+Aerial view of ESO's Paranal Observatory at sunset, Atacama Desert, Chile. The four 8.2 m Unit Telescopes of the Very Large Telescope (VLT) and the 4.1 m VISTA survey telescope (on an adjacent peak) are visible on the summit ridge. The dry, high-altitude site delivers some of the best optical and near-infrared seeing in the world. Image credit: G. Hüdepohl (atacamaphoto.com)/ESO {cite:p}`ESOVLT2015`.
 ```
 
 Space-based observatories avoid atmospheric absorption and distortion. The Hubble Space Telescope ({numref}`fig:hst-orbit`) has monitored atmospheric changes on the giant planets for decades; its Outer Planets Atmospheres Legacy (OPAL) programme has tracked Jupiter's Great Red Spot, Saturn's polar hexagon, and Uranus / Neptune cloud variability with annual cadence since 2014. JWST ({numref}`fig:jwst-mirror`), operating at infrared wavelengths from the Sun-Earth L2 point, is now the primary tool for exoplanet atmospheric characterisation; the carbon-dioxide detection in WASP-39 b ({numref}`fig:wasp39b-spectrum`) and the thermal emission of TRAPPIST-1 b ({numref}`fig:trappist1b-jwst`) are early examples.
@@ -426,7 +426,7 @@ Spacecraft provide the most detailed planetary data. NASA's currently active and
 :width: 750px
 :align: center
 
-NASA's planetary fleet of currently operating and planned missions, organised by target (inner Solar System, Mars, asteroids and small bodies, outer planets, heliopause). Status May 2026; bodies and orbits are not to scale. Image credit: NASA Scientific Visualization Studio / Goddard Space Flight Center; graphics by J. Mottar {cite:p}`NASAPlanetaryFleet2026`.
+NASA's current planetary fleet, per the FY26 appropriations, organised by target (inner Solar System, Mars, asteroids and small bodies, outer planets, heliopause). Status May 2026; bodies and orbits are not to scale. The poster reflects budgeted mission state and therefore omits a few extended-mission and concept-stage projects that may still be active. Image credit: NASA Scientific Visualization Studio / Goddard Space Flight Center; graphics by J. Mottar {cite:p}`NASAPlanetaryFleet2026`.
 ```
 
 ```{figure} figures/esa_planetary_fleet.avif
@@ -434,7 +434,7 @@ NASA's planetary fleet of currently operating and planned missions, organised by
 :width: 750px
 :align: center
 
-ESA's past, present, and future Solar System exploration missions (status September 2025). Highlights include Giotto at Halley (1986), the Cassini-Huygens partnership (Huygens landed on Titan in 2005), Rosetta and Philae at comet 67P/Churyumov-Gerasimenko (2014-2016), Venus Express (2006-2014), Mars Express (2003-active), BepiColombo (en route to Mercury), JUICE (en route to the Jupiter system), and the upcoming EnVision Venus orbiter, ExoMars Rosalind Franklin rover, and Comet Interceptor. Image credit: ESA (CC BY-SA 3.0 IGO) {cite:p}`ESAFleet2025`.
+ESA's past, present, and future Solar System exploration missions (status September 2025). Planetary highlights include Giotto at Halley (1986), the Cassini-Huygens partnership (Huygens landed on Titan in 2005), Rosetta and Philae at comet 67P/Churyumov-Gerasimenko (2014-2016), Venus Express (2006-2014), Mars Express (2003-active), BepiColombo (en route to Mercury), JUICE (en route to the Jupiter system), and the upcoming EnVision Venus orbiter, ExoMars Rosalind Franklin rover, and Comet Interceptor. The poster also labels several lunar and heliospheric missions (Ulysses, SOHO, SMART-1, Chandrayaan-1, Solar Orbiter, Proba-2/3, MMX) that contribute to the broader Solar System exploration programme but lie outside the planetary highlights named here. Image credit: ESA (CC BY-SA 3.0 IGO) {cite:p}`ESAFleet2025`.
 ```
 
 Mission types include, in order of increasing complexity and cost:
@@ -472,7 +472,7 @@ The table below lists landmark missions that have shaped our understanding of th
 | Cassini-Huygens | NASA/ESA | 2004-2017 | Saturn | Huygens landed on Titan; Enceladus plumes |
 | Spirit & Opportunity | NASA | 2004-2018 | Mars | Long-duration rovers; evidence for past water |
 | New Horizons | NASA | 2015 | Pluto | First Pluto flyby; revealed geological complexity |
-| Hayabusa2 | JAXA | 2018-2020 | Ryugu | Returned samples from a carbonaceous asteroid |
+| Hayabusa2 | JAXA | 2014-2020 | Ryugu | Returned samples from a carbonaceous asteroid |
 | Perseverance | NASA | 2021- | Mars | Sample caching for future return; Ingenuity helicopter |
 | JWST | NASA/ESA/CSA | 2021- | Exoplanets | Atmospheric characterisation of exoplanets |
 | Europa Clipper | NASA | 2024- | Europa | Investigating habitability of Europa's ocean |
@@ -495,18 +495,18 @@ Backlit view of Saturn imaged by the Cassini spacecraft on 19 July 2013 from ins
 First colour view of Mars from NASA's Perseverance rover, taken from one of its hazard-avoidance cameras shortly after landing in Jezero crater on 18 February 2021. The rover's shadow is visible in the foreground; the rocky plain ahead is part of an ancient lake-delta system that filled Jezero crater during the Noachian, around 3.6 Ga ago. Perseverance is caching rock and regolith samples for return to Earth via the Mars Sample Return campaign, whose return architecture is currently being re-baselined; Jezero stratigraphy, the Mars climate history, and the sample-return programme are returned to in {ref}`Lecture 10 <lecture10>`. Credit: NASA/JPL-Caltech.
 ```
 
-Several missions are in flight or planned for the coming decade, including ESA's JUICE (Jupiter Icy Moons Explorer, launched 2023, Jupiter arrival 2031), the Mars Sample Return campaign, and the Dragonfly rotorcraft to Titan (launch ~2028).
+Several missions are in flight or planned for the coming decade, including ESA's JUICE (Jupiter Icy Moons Explorer, launched April 2023, Jupiter system arrival 2031, Ganymede orbit insertion 2034), the Mars Sample Return campaign, and the Dragonfly rotorcraft to Titan (launch ~2028).
 
 ## Recent advances
 
-Planetary science is advancing rapidly, driven by new space missions and observatories. The **James Webb Space Telescope** (JWST), launched in 2021, has begun characterising the atmospheres of rocky exoplanets for the first time, including thermal emission measurements of planets in the TRAPPIST-1 system {cite:p}`Greene2023` (see also {ref}`Lecture 13 <lecture13>`). The system architecture, with seven roughly Earth-sized planets in tightly-packed orbits around a cool M-dwarf, is shown in {numref}`fig:trappist1-system`. These observations are providing the first direct constraints on whether Earth-sized planets around other stars retain atmospheres; the first such measurement, the dayside thermal emission of TRAPPIST-1 b, is shown in {numref}`fig:trappist1b-jwst`.
+Planetary science is advancing rapidly, driven by new space missions and observatories. The **James Webb Space Telescope** (JWST), launched in 2021, has begun characterising the atmospheres of rocky exoplanets for the first time, including thermal emission measurements of planets in the TRAPPIST-1 system {cite:p}`Greene2023` (see also {ref}`Lecture 13 <lecture13>`). The system architecture, with seven roughly Earth-sized planets in tightly-packed orbits around a ultra-cool dwarf star, is shown in {numref}`fig:trappist1-system`. These observations are providing the first direct constraints on whether Earth-sized planets around other stars retain atmospheres; the first such measurement, the dayside thermal emission of TRAPPIST-1 b, is shown in {numref}`fig:trappist1b-jwst`.
 
 ```{figure} figures/trappist1_system.avif
 :name: fig:trappist1-system
 :width: 700px
 :align: center
 
-The seven planets of the TRAPPIST-1 system (top row, b through h) compared with the inner solar system (bottom row), shown with measured or estimated orbital periods, distances, radii, masses, densities, and surface gravities. All seven TRAPPIST-1 planets are roughly Earth-sized and orbit closer to their cool M-dwarf host than Mercury does to the Sun: their orbital periods range from 1.5 days (b) to 19 days (h), so the entire system fits well inside Mercury's 88-day orbit. The seven planets sit in a chain of six mean-motion resonances {cite:p}`Gillon2017,Luger2017` that locks the orbital periods into integer ratios; three planets (e, f, g) are inside the conservative habitable zone and a fourth (d) sits near its inner edge. The planet renderings in the top row are artist's illustrations, not telescope images: TRAPPIST-1 lies $\sim 12$ pc from Earth and its planets are far too small and faint to be spatially resolved with current instruments, while the bottom-row inner solar system images are spacecraft photographs. Credit: NASA/JPL-Caltech.
+The seven planets of the TRAPPIST-1 system (top row, b through h) compared with the inner solar system (bottom row), shown with measured or estimated orbital periods, distances, radii, masses, densities, and surface gravities. All seven TRAPPIST-1 planets are roughly Earth-sized and orbit closer to their ultra-cool dwarf star host than Mercury does to the Sun: their orbital periods range from 1.5 days (b) to 19 days (h), so the entire system fits well inside Mercury's 88-day orbit. The seven planets sit in a chain of six mean-motion resonances {cite:p}`Gillon2017,Luger2017` that locks the orbital periods into integer ratios; three planets (e, f, g) are inside the conservative habitable zone and a fourth (d) sits near its inner edge. The planet renderings in the top row are artist's illustrations, not telescope images: TRAPPIST-1 lies $\sim 12$ pc from Earth and its planets are far too small and faint to be spatially resolved with current instruments, while the bottom-row inner solar system images are spacecraft photographs. Credit: NASA/JPL-Caltech.
 ```
 
 ```{figure} figures/trappist1b_jwst.avif

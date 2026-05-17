@@ -863,7 +863,7 @@ Decomposition of the JWST/NIRSpec G395H transmission spectrum of WASP-39 b into 
 ```
 
 **TRAPPIST-1 b**, the innermost rocky planet of the TRAPPIST-1 system, was the first habitable-zone-adjacent rocky planet observed by JWST in MIRI thermal emission.
-{cite:t}`GreeneTrappist2023` measured the dayside flux at 15 $\mu$m and found it to be consistent with a **bare rock dayside** at the equilibrium temperature, with no evidence for any atmospheric heat redistribution.
+{cite:t}`Greene2023` measured the dayside flux at 15 $\mu$m and found it to be consistent with a **bare rock dayside** at the equilibrium temperature, with no evidence for any atmospheric heat redistribution.
 The implication is that TRAPPIST-1 b has either no substantial atmosphere or only a very thin one, ruling out thick $\mathrm{CO_2}$ Venus-analogue atmospheres at high statistical significance ({numref}`fig:trappist1beclipse` and {numref}`fig:trappist1bemiss`).
 
 ```{figure} figures/trappist1b_eclipse.avif
@@ -871,7 +871,7 @@ The implication is that TRAPPIST-1 b has either no substantial atmosphere or onl
 :name: fig:trappist1beclipse
 :width: 90%
 
-JWST MIRI 15 $\mu$m secondary eclipse light curve of **TRAPPIST-1 b**, from {cite:t}`GreeneTrappist2023`. The eclipse depth $f_p / f_\star = 861 \pm 99$ ppm corresponds to a dayside brightness temperature of $T_B = 503^{+26}_{-27}$ K, consistent with a bare rock dayside in radiative equilibrium with the stellar flux and no significant heat redistribution. This is the **first** thermal emission detection of an Earth-sized exoplanet.
+JWST MIRI 15 $\mu$m secondary eclipse light curve of **TRAPPIST-1 b**, from {cite:t}`Greene2023`. The eclipse depth $f_p / f_\star = 861 \pm 99$ ppm corresponds to a dayside brightness temperature of $T_B = 503^{+26}_{-27}$ K, consistent with a bare rock dayside in radiative equilibrium with the stellar flux and no significant heat redistribution. This is the **first** thermal emission detection of an Earth-sized exoplanet.
 ```
 
 ```{figure} figures/trappist1b_emission.avif
@@ -879,7 +879,7 @@ JWST MIRI 15 $\mu$m secondary eclipse light curve of **TRAPPIST-1 b**, from {cit
 :name: fig:trappist1bemiss
 :width: 90%
 
-The TRAPPIST-1 b dayside emission compared with model atmospheres of different compositions, from {cite:t}`GreeneTrappist2023`. The data are inconsistent with thick $\mathrm{CO_2}$ + $\mathrm{N_2}$ atmospheres and inconsistent with $\mathrm{O_2}$ + $\mathrm{CO_2}$ atmospheres at any plausible mass-loading. They are consistent with a bare-rock dayside (the 503 K blackbody curve, magenta).
+The TRAPPIST-1 b dayside emission compared with model atmospheres of different compositions, from {cite:t}`Greene2023`. The data are inconsistent with thick $\mathrm{CO_2}$ + $\mathrm{N_2}$ atmospheres and inconsistent with $\mathrm{O_2}$ + $\mathrm{CO_2}$ atmospheres at any plausible mass-loading. They are consistent with a bare-rock dayside (the 503 K blackbody curve, magenta).
 ```
 
 **TRAPPIST-1 c**, the second-innermost planet, was observed similarly by {cite:t}`Zieba2023` and shows the same behaviour.
