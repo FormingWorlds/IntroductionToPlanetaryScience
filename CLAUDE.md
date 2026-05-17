@@ -37,7 +37,7 @@ See §11 of `planning/course_development.md` for the full rationale, layout, and
 
 **Override of the global "feature-branch + PR" rule.** For this repository, push every change directly to `origin/main`. Do not create feature branches, do not open PRs.
 
-**Why:** the GitHub Pages workflow deploys `book/_build/html/` to https://formingworlds.github.io/IntroductionToPlanetaryScience/ on every push to `main`. The slide PDFs at `book/_static/slides/lectureNN.pdf` are served from that deployment. Tim and the students treat the deployed website as the canonical channel for the latest material. A feature-branch + PR roundtrip would force a manual merge step every time a slide caption is fixed, which is unwanted friction for this teaching repository.
+**Why:** the GitHub Pages workflow deploys `book/_build/html/` on every push to `main`, served at the custom domain https://ips.formingworlds.space/ (the underlying `formingworlds.github.io/IntroductionToPlanetaryScience/` URL 301-redirects to the same site). The slide PDFs at `book/_static/slides/lectureNN.pdf` are served from that deployment. Tim and the students treat the deployed website as the canonical channel for the latest material. A feature-branch + PR roundtrip would force a manual merge step every time a slide caption is fixed, which is unwanted friction for this teaching repository.
 
 When the user requests a change, work locally, run any local builds (`make html`, `make slides`, `jupyter-book build book/`), commit, and push directly to `origin/main`. Do not push without an explicit request, but when the request is clear, do not ask whether to use a feature branch.
 
@@ -86,8 +86,10 @@ Build artifacts in `book/_build/` are gitignored. The `pdflatex` and `slides` ta
 
 ### Deployed site
 
-HTML is auto-deployed to GitHub Pages on push to `main`:
-https://formingworlds.github.io/IntroductionToPlanetaryScience/
+HTML is auto-deployed to GitHub Pages on push to `main`, served at the custom domain:
+https://ips.formingworlds.space/
+
+The underlying GitHub Pages URL `https://formingworlds.github.io/IntroductionToPlanetaryScience/` 301-redirects to the same content.
 
 ## Key Technical Details
 

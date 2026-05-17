@@ -8,7 +8,7 @@ Course materials for **WBAS002-05 — Introduction to Planetary Science**, a 5 E
 
 The lecture notes are available as a Jupyter Book at:
 
-**https://formingworlds.github.io/IntroductionToPlanetaryScience/**
+**https://ips.formingworlds.space/**
 
 ## Topics
 
