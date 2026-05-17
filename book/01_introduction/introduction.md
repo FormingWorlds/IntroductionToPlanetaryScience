@@ -399,7 +399,23 @@ Ground-based telescopes observe planets across the electromagnetic spectrum. Opt
 Aerial view of ESO's Paranal Observatory at sunset, Atacama Desert, Chile. The four 8.2 m Unit Telescopes of the Very Large Telescope (VLT) and the 4.1 m VISTA survey telescope (on an adjacent peak) are visible on the summit ridge, with the Pacific coast and inversion-layer cloud deck in the distance. The dry, high-altitude site delivers some of the best optical and near-infrared seeing in the world. Image credit: G. Hüdepohl (atacamaphoto.com)/ESO {cite:p}`ESOVLT2015`.
 ```
 
-Space-based observatories avoid atmospheric absorption and distortion. The Hubble Space Telescope has monitored atmospheric changes on the giant planets for decades. JWST, operating at infrared wavelengths from the Sun–Earth L2 point, is now the primary tool for exoplanet atmospheric characterisation.
+Space-based observatories avoid atmospheric absorption and distortion. The Hubble Space Telescope ({numref}`fig:hst-orbit`) has monitored atmospheric changes on the giant planets for decades; its Outer Planets Atmospheres Legacy (OPAL) programme has tracked Jupiter's Great Red Spot, Saturn's polar hexagon, and Uranus / Neptune cloud variability with annual cadence since 2014. JWST ({numref}`fig:jwst-mirror`), operating at infrared wavelengths from the Sun–Earth L2 point, is now the primary tool for exoplanet atmospheric characterisation; the carbon-dioxide detection in WASP-39 b ({numref}`fig:wasp39b-spectrum`) and the thermal emission of TRAPPIST-1 b ({numref}`fig:trappist1b-jwst`) are early examples.
+
+```{figure} figures/hst_orbit.avif
+:name: fig:hst-orbit
+:width: 600px
+:align: center
+
+The Hubble Space Telescope photographed from Space Shuttle Atlantis on 19 May 2009, immediately after release at the end of Servicing Mission 4 (STS-125). Five servicing missions between 1993 and 2009 extended Hubble's lifetime by replacing instruments, gyroscopes, batteries, and solar arrays; SM4 added Wide Field Camera 3 and the Cosmic Origins Spectrograph, both still operating today. Image credit: NASA {cite:p}`HSTSM42009`.
+```
+
+```{figure} figures/jwst_mirror.avif
+:name: fig:jwst-mirror
+:width: 600px
+:align: center
+
+The James Webb Space Telescope's 6.5 m primary mirror, made of 18 gold-coated beryllium hexagons, fully deployed in a clean room at NASA's Goddard Space Flight Center in April 2017 prior to launch. JWST observes from the Sun-Earth L2 Lagrange point, 1.5 million km from Earth, and combines a $\sim 25 \mathrm{\,m^2}$ collecting area with cryogenic ($T < 50$ K) optics optimised for near- and mid-infrared spectroscopy of exoplanet atmospheres. Image credit: NASA / D. Stover {cite:p}`JWSTMirror2017`.
+```
 
 ### Spacecraft exploration
 
