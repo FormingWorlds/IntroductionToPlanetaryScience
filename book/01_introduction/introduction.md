@@ -389,19 +389,43 @@ Planetary science draws on a wide range of observational methods, from ground-ba
 
 ### Telescopes
 
-Ground-based telescopes observe planets across the electromagnetic spectrum. Optical imaging resolves surface and atmospheric features, infrared spectroscopy probes thermal emission and atmospheric composition, and radio observations measure subsurface properties and atmospheric dynamics. Adaptive optics on large telescopes (e.g., VLT, Keck) achieve angular resolutions approaching those of space telescopes.
+Ground-based telescopes observe planets across the electromagnetic spectrum. Optical imaging resolves surface and atmospheric features, infrared spectroscopy probes thermal emission and atmospheric composition, and radio observations measure subsurface properties and atmospheric dynamics. Adaptive optics on large telescopes (e.g., VLT, Keck) achieve angular resolutions approaching those of space telescopes. The next generation of ground-based facilities is led by ESO's Extremely Large Telescope (ELT, {numref}`fig:elt-milkyway`), under construction on Cerro Armazones in Chile and expected to see first light in 2028; its 39 m segmented primary mirror will be the largest optical/near-infrared aperture ever built, with diffraction-limited resolution sufficient to image rocky planets around the nearest stars.
 
-Space-based observatories avoid atmospheric absorption and distortion. The Hubble Space Telescope has monitored atmospheric changes on the giant planets for decades. JWST, operating at infrared wavelengths from the Sun–Earth L2 point, is now the primary tool for exoplanet atmospheric characterisation.
+```{figure} figures/elt_milkyway.avif
+:name: fig:elt-milkyway
+:width: 700px
+:align: center
+
+The Milky Way arcs over ESO's Extremely Large Telescope under construction on Cerro Armazones in the Chilean Atacama Desert, with the partially-clad dome visible at lower left. With its 39 m segmented primary mirror, the ELT will be the largest optical/near-infrared telescope ever built when it sees first light in 2028. Image credit: C. Letelier/ESO {cite:p}`ESOELT2025`.
+```
+
+Space-based observatories avoid atmospheric absorption and distortion. The Hubble Space Telescope has monitored atmospheric changes on the giant planets for decades. JWST, operating at infrared wavelengths from the Sun–Earth L2 point, is now the primary tool for exoplanet atmospheric characterisation. {numref}`fig:nasa-science-fleet` summarises NASA's operating and near-future science fleet, which spans astrophysics observatories (Hubble, Chandra, JWST, Roman, Pandora), heliophysics, Earth observation, and the planetary mission set returned to throughout this lecture.
+
+```{figure} figures/nasa_science_fleet.avif
+:name: fig:nasa-science-fleet
+:width: 750px
+:align: center
+
+NASA's operating and future science fleet across Astrophysics, Planetary, Heliophysics, and Earth Science, as of May 2026. Bodies and orbits are not to scale; the chart is organised by destination (Sun-Earth L1/L2, Moon, Mars, asteroids, outer planets, heliopause). Image credit: NASA Scientific Visualization Studio / Goddard Space Flight Center {cite:p}`NASASVSFleet2026`.
+```
 
 ### Spacecraft exploration
 
-Spacecraft provide the most detailed planetary data. Mission types include, in order of increasing complexity and cost:
+Spacecraft provide the most detailed planetary data. The European counterpart to the planetary side of {numref}`fig:nasa-science-fleet` is ESA's portfolio of past, present, and future Solar System missions ({numref}`fig:esa-planetary-fleet`), built up over four decades from Giotto's 1986 Halley flyby through current missions (BepiColombo at Mercury, Mars Express, JUICE en route to the Jupiter system) and into the planned EnVision Venus orbiter and the Comet Interceptor that will wait at L2 for a target. Mission types include, in order of increasing complexity and cost:
 
 - **Flyby:** The spacecraft passes a target once, collecting data during a brief encounter. Example: Voyager 2 at Neptune (1989).
 - **Orbiter:** The spacecraft enters orbit, enabling long-term monitoring. Example: Cassini at Saturn (2004–2017).
 - **Lander:** The spacecraft lands on the surface and measures conditions in situ. Example: Viking 1 on Mars (1976).
 - **Rover:** A mobile lander that traverses the surface. Example: Perseverance on Mars (2021–present).
 - **Sample return:** Material is collected and returned to Earth for laboratory analysis. Example: Hayabusa2 returned samples from asteroid Ryugu (2020).
+
+```{figure} figures/esa_planetary_fleet.avif
+:name: fig:esa-planetary-fleet
+:width: 750px
+:align: center
+
+ESA's past, present, and future Solar System exploration missions (status September 2025). Highlights include Giotto at Halley (1986), the Cassini-Huygens partnership (Huygens landed on Titan in 2005), Rosetta and Philae at comet 67P/Churyumov-Gerasimenko (2014-2016), Venus Express (2006-2014), Mars Express (2003-active), BepiColombo (en route to Mercury), JUICE (en route to the Jupiter system), and the upcoming EnVision Venus orbiter, ExoMars Rosalind Franklin rover, and Comet Interceptor. Image credit: ESA (CC BY-SA 3.0 IGO) {cite:p}`ESAFleet2025`.
+```
 
 ### Remote sensing methods
 
