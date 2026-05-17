@@ -52,6 +52,19 @@ SOLAR_SYSTEM = {
     "Neptune": (17.15,  60182.0),
 }
 
+# Per-planet label offsets in (dx, dy) points to prevent overlaps between
+# closely-spaced planets (Venus-Earth, Uranus-Neptune).
+LABEL_OFFSETS = {
+    "Mercury": (8, -12),
+    "Venus":   (-34, 6),
+    "Earth":   (8, 4),
+    "Mars":    (8, -10),
+    "Jupiter": (8, 6),
+    "Saturn":  (8, -10),
+    "Uranus":  (-34, 6),
+    "Neptune": (8, 4),
+}
+
 
 def fetch_data(refresh: bool = True) -> Path:
     fig_tag = "exoplanet_mass_period"
@@ -85,21 +98,26 @@ def make_plot(csv_path: Path) -> Path:
         ax.scatter(sub["pl_orbper"], sub["pl_bmasse"], s=10,
                    color=color, alpha=0.55, edgecolors="none", label=method)
 
-    # Solar system reference points
+    # Solar system reference points, with per-planet label offsets to
+    # prevent text-on-text overlap for Venus-Earth and Uranus-Neptune.
     for name, (mass, period) in SOLAR_SYSTEM.items():
         ax.scatter(period, mass, s=70, marker="*",
                    facecolor="gold", edgecolor="black", linewidth=0.6, zorder=5)
-        ax.annotate(name, (period, mass), xytext=(6, 3),
-                    textcoords="offset points", fontsize=8)
+        ax.annotate(name, (period, mass), xytext=LABEL_OFFSETS[name],
+                    textcoords="offset points", fontsize=8, zorder=6)
 
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_xlabel("Orbital period (days)")
     ax.set_ylabel(r"Planet mass or $M\sin i$ ($M_\oplus$)")
     ax.set_xlim(0.1, 5e5)
-    ax.set_ylim(1e-2, 1e5)
+    ax.set_ylim(1e-2, 1e4)
     ax.grid(which="both", linestyle=":", alpha=0.25)
-    ax.legend(loc="lower right", frameon=False, fontsize=8, ncol=2)
+    # Legend placed below the axis so it does not collide with Mercury or
+    # any low-mass exoplanet points.
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.14),
+              frameon=False, fontsize=8, ncol=4,
+              title="Discovery method", title_fontsize=9)
 
     fig.tight_layout()
     return save_figure(fig, OUT_AVIF, avif_quality=80)

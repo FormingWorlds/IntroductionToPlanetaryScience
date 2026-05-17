@@ -58,7 +58,7 @@ That image captures something essential about planetary science: it asks us to s
 :width: 600px
 :align: center
 
-Posterior probability density on $\eta_\oplus$, the average number of rocky habitable-zone planets per Sun-like star, derived from Kepler data. Left and right panels correspond to conservative and optimistic habitable-zone definitions; coloured curves correspond to two extrapolation assumptions for the bolometric flux range. Even with conservative cuts the posterior peaks at $\sim 0.4$ planets per star, implying that habitable-zone rocky planets around Sun-like stars are common. Credit: {cite:t}`Bryson2021`.
+Posterior probability density on $\eta_\oplus$, the average number of rocky habitable-zone planets per Sun-like star, derived from Kepler data. **Left panel:** *conservative* habitable-zone definition (moist-greenhouse inner edge to maximum-greenhouse outer edge, the range over which liquid water can be reliably maintained at the surface). **Right panel:** *optimistic* habitable-zone definition (inner edge extended to the recent-Venus insolation bound and outer edge to early-Mars, capturing the wider range over which surface water may have been transiently stable). Coloured curves correspond to two extrapolation assumptions for the stellar bolometric flux range. The posterior peak shifts from $\eta_\oplus \approx 0.37$ planets per star for the conservative HZ to $\approx 0.60$ for the optimistic HZ, the range quoted in the text. Either way, habitable-zone rocky planets around Sun-like stars are common. Credit: {cite:t}`Bryson2021`.
 ```
 
 Every topic in this course, from orbital dynamics and interior structure to atmospheric physics and surface geology, connects back to these three questions. By the end, you will have the tools to think about them quantitatively.
@@ -69,7 +69,7 @@ The word "planet" derives from the Greek *planetes* (πλανήτης), meaning 
 
 For over two millennia, the list of planets seemed settled. That changed with the invention of the telescope. William Herschel discovered Uranus in 1781, the first planet found in modern times. In 1846, Johann Galle observed Neptune at a position predicted independently by Urbain Le Verrier and John Couch Adams from perturbations in Uranus's orbit, a triumph of Newtonian mechanics. And in 1930, Clyde Tombaugh discovered Pluto at Lowell Observatory after a painstaking photographic search.
 
-But Pluto was always an oddity: small, icy, with an eccentric and inclined orbit that crosses Neptune's. When astronomers began discovering other large objects in the Kuiper Belt in the 1990s and 2000s, culminating in the discovery of Eris in 2005 by Brown, Trujillo, and Rabinowitz, which appeared comparable in size to Pluto, the question became unavoidable: either these new objects were also planets, or Pluto was not. The 2015 New Horizons flyby ({numref}`fig:pluto-new-horizons`) revealed an unexpectedly active world, complicating the debate further.
+But Pluto was always an oddity: small, icy, with an eccentric and inclined orbit that crosses Neptune's. When astronomers began discovering other large objects in the Kuiper Belt in the 1990s and 2000s, culminating in the discovery of Eris in 2005 by {cite:t}`Brown2005`, which appeared comparable in size to Pluto, the question became unavoidable: either these new objects were also planets, or Pluto was not. The 2015 New Horizons flyby ({numref}`fig:pluto-new-horizons`) revealed an unexpectedly active world, complicating the debate further.
 
 ```{figure} figures/pluto_new_horizons.avif
 :name: fig:pluto-new-horizons
@@ -108,7 +108,7 @@ The Copernican revolution began in 1543, when Nicolaus Copernicus published *De 
 :width: 350px
 :align: center
 
-Heliocentric model of the solar system from Copernicus's *De revolutionibus orbium coelestium* (1543). The Sun (*Sol*) sits at the centre, with the planets, including Earth (*Terra*), orbiting around it. This woodcut marks the conceptual shift from the geocentric cosmology that had dominated for over a millennium. Credit: Nicolaus Copernicus, public domain.
+Heliocentric model of the solar system from Copernicus's *De revolutionibus orbium coelestium* (1543). The Sun sits at the centre, with the planets orbiting outward in concentric spheres. The Latin inscriptions, from the centre out, read *Sol* (Sun), *Mercurius* (Mercury), *Venus*, *Terra* (Earth, with the Moon as a small orbit attached), *Mars*, *Iupiter* (Jupiter), *Saturnus* (Saturn), and the outer band *Stellarum Fixarum Sphaera Immobilis* (the immobile sphere of the fixed stars). This woodcut marks the conceptual shift from the geocentric cosmology that had dominated for over a millennium. Credit: Nicolaus Copernicus, public domain.
 ```
 
 ### The telescopic era
@@ -120,7 +120,7 @@ Galileo Galilei's telescope observations in 1610 transformed planetary science f
 :width: 334px
 :align: center
 
-Page from Galileo's *Sidereus Nuncius* (1610) showing his observations of Jupiter and its four largest moons, the *Medicea Sidera* (Medicean Stars). Each row records the positions of the moons (small dots) relative to Jupiter (open circle) on successive nights. The systematic motion of the four points, repeating with periods of days, was direct evidence that not all celestial bodies orbit the Earth. Credit: Galileo Galilei, public domain.
+Page from Galileo's *Sidereus Nuncius* (1610) showing his observations of Jupiter and its four largest moons, named here the *Medicea Sidera* (Medicean Stars) in honour of Galileo's Medici patrons. Each row records the positions of the moons (small dots) relative to Jupiter (open circle) on successive nights. The systematic motion of the four points, repeating with periods of days, was direct evidence that not all celestial bodies orbit the Earth. Simon Marius proposed the mythological names *Io*, *Europa*, *Ganymede*, and *Callisto* in 1614; these gradually replaced the Medicean designation and are the names you will meet in {ref}`Lecture 11 <lecture11>`. Credit: Galileo Galilei, public domain.
 ```
 
 Over the following centuries, improving telescopes revealed surface features on Mars, the Great Red Spot on Jupiter, and the detailed ring structure of Saturn.
@@ -138,7 +138,7 @@ The pace of exploration accelerated rapidly. Mariner 4 returned the first close-
 :width: 350px
 :align: center
 
-The first close-up image of another planet's surface: Mariner 4, 15 July 1965. The image shows a heavily cratered, Moon-like terrain, decisively ending speculation about Martian canals and surface vegetation. Credit: NASA/JPL.
+The first close-up image of another planet's surface: Mariner 4, 15 July 1965. Mariner 4 returned 21 frames during the brief Mars encounter, of which this is one of the most reproduced. The heavily cratered, Moon-like terrain visible here decisively ended speculation about Martian canals and surface vegetation. Mars's geology and atmosphere are revisited in {ref}`Lecture 10 <lecture10>`. Credit: NASA/JPL.
 ```
 
 ```{figure} figures/voyager2_trajectory.avif
@@ -146,12 +146,12 @@ The first close-up image of another planet's surface: Mariner 4, 15 July 1965. T
 :width: 500px
 :align: center
 
-Trajectory of NASA's Voyager 2 spacecraft during its grand tour of the outer solar system. Gravity assists at Jupiter (1979), Saturn (1981), Uranus (1986), and Neptune (1989) successively redirected the spacecraft to each subsequent target, a trajectory made possible by a rare alignment of the outer planets that occurs roughly once every 175 years. Credit: NASA/JPL, public domain.
+Trajectory of NASA's Voyager 2 spacecraft during its grand tour of the outer solar system, with the spacecraft itself shown schematically as the small grey silhouette near the Uranus-Neptune segment of the trajectory (not an annotation on Uranus). Gravity assists at Jupiter (1979), Saturn (1981), Uranus (1986), and Neptune (1989) successively redirected the spacecraft to each subsequent target, a trajectory made possible by a rare alignment of the outer planets that occurs roughly once every 175 years. Voyager 1, launched two weeks earlier on a faster trajectory, flew only by Jupiter (1979) and Saturn (1980) before being deflected northward out of the ecliptic. Both spacecraft are now in interstellar space: Voyager 1 crossed the heliopause in 2012, Voyager 2 in 2018. Credit: NASA/JPL, public domain.
 ```
 
 ### The exoplanet revolution
 
-In 1992, Aleksander Wolszczan and Dale Frail announced the discovery of planets orbiting a pulsar, the first confirmed exoplanets {cite:p}`Wolszczan1992`. Three years later, Michel Mayor and Didier Queloz detected 51 Pegasi b, the first planet orbiting a Sun-like star: a "hot Jupiter" with a 4.2-day orbit that challenged all existing formation theories {cite:p}`MayorQueloz1995`. NASA's Kepler mission (2009–2018) discovered thousands of transiting exoplanets, while the ongoing TESS mission (launched 2018) surveys the brightest nearby stars. JWST, launched in December 2021, is now characterising exoplanet atmospheres through transmission and emission spectroscopy ({ref}`Lecture 13 <lecture13>`).
+In 1992, Aleksander Wolszczan and Dale Frail announced the discovery of planets orbiting a pulsar, the first confirmed exoplanets {cite:p}`Wolszczan1992`. Three years later, Michel Mayor and Didier Queloz detected 51 Pegasi b, the first planet orbiting a Sun-like star: a "hot Jupiter" with a 4.2-day orbit that challenged all existing formation theories {cite:p}`MayorQueloz1995`. The French-led CoRoT space mission then announced the first transiting rocky exoplanet, CoRoT-7b, in 2009, a super-Earth with a measured radius of $1.58\,\Rearth$ and a 0.85-day orbit {cite:p}`Leger2009`. NASA's Kepler mission {cite:p}`Borucki2010` operated from 2009 to 2018 and discovered thousands of transiting exoplanets, while the ongoing TESS mission (launched 2018) surveys the brightest nearby stars. JWST, launched in December 2021, is now characterising exoplanet atmospheres through transmission and emission spectroscopy ({ref}`Lecture 13 <lecture13>`).
 The cumulative tally of confirmed detections is shown in {numref}`fig:exoplanet-cumulative`.
 
 ```{figure} figures/exoplanet_cumulative.avif
@@ -159,7 +159,7 @@ The cumulative tally of confirmed detections is shown in {numref}`fig:exoplanet-
 :width: 700px
 :align: center
 
-Cumulative number of confirmed exoplanets per discovery year, colour-coded by detection method. The first detection (1992, pulsar timing) was followed by the radial-velocity revolution of the late 1990s and 2000s, and then the explosion of transit discoveries during and after NASA's Kepler mission (2009 to 2018). Credit: NASA Exoplanet Archive (Caltech), accessed 2026-05-08 {cite:p}`NASAExoplanetArchive2026`.
+Cumulative number of confirmed exoplanets per discovery year, colour-coded by detection method. The first detection (1992, pulsar timing) was followed by the radial-velocity revolution of the late 1990s and 2000s, and then the explosion of transit discoveries during and after NASA's Kepler mission (2009 to 2018). The visible step-jumps in 2014 and 2016 are the Kepler team's statistical-validation batch releases, in which hundreds (2014) and over a thousand (2016) Kepler candidates were promoted to confirmed planets simultaneously rather than one-by-one. Credit: NASA Exoplanet Archive (Caltech), accessed 2026-05-08 {cite:p}`NASAExoplanetArchive2026`.
 ```
 
 The same set of detections plotted in mass-period space ({numref}`fig:exoplanet-mass-period`) reveals strong selection biases: large short-period planets dominate the upper-left of the diagram, while Earth analogues in the lower-right remain sparsely populated.
@@ -169,7 +169,7 @@ The same set of detections plotted in mass-period space ({numref}`fig:exoplanet-
 :width: 700px
 :align: center
 
-Planet mass (or $M\sin i$) versus orbital period for all confirmed exoplanets, colour-coded by detection method, with solar-system planets shown for reference. Selection effects favour large, short-period planets in the upper-left; the lower-right is sparsely populated despite likely being where Earth analogues reside. Credit: NASA Exoplanet Archive (Caltech), accessed 2026-05-08 {cite:p}`NASAExoplanetArchive2026`.
+Planet mass (or $M\sin i$) versus orbital period for all confirmed exoplanets, colour-coded by detection method, with the eight solar-system planets shown as gold stars for reference. Selection effects favour large, short-period planets in the upper-left of the diagram. The Earth-analogue regime, near mass $\sim 1\,\Mearth$ and orbital period $\sim 1$ year, sits in the lower-middle of the plot and remains sparsely populated because radial-velocity and transit surveys with multi-year baselines are required to detect such low-amplitude, long-period signals. Credit: NASA Exoplanet Archive (Caltech), accessed 2026-05-17 {cite:p}`NASAExoplanetArchive2026`.
 ```
 
 Within the small-planet regime, the Kepler sample reveals a bimodal radius distribution ({numref}`fig:radius-gap`) with peaks near $1.3\,\Rearth$ and $2.4\,\Rearth$ separated by a "radius valley", interpreted as the boundary between rocky planets and those retaining a thin H/He envelope.
@@ -179,7 +179,7 @@ Within the small-planet regime, the Kepler sample reveals a bimodal radius distr
 :width: 600px
 :align: center
 
-Occurrence rate of small exoplanets (period $< 100$ d, host stars FGK) as a function of planet radius, from the California-Kepler Survey. The bimodal distribution shows two peaks near $1.3\,\Rearth$ (super-Earths) and $2.4\,\Rearth$ (sub-Neptunes) separated by a "radius valley" near $1.8\,\Rearth$, interpreted as the boundary between rocky planets and those that retain a thin H/He envelope. Credit: {cite:t}`Fulton2017`.
+Completeness-corrected histogram of planet radii from the California-Kepler Survey, restricted to planets with orbital periods $< 100$ d around FGK host stars. The bimodal distribution shows two peaks near $1.3\,\Rearth$ (super-Earths) and $2.4\,\Rearth$ (sub-Neptunes) separated by a "radius valley" near $1.8\,\Rearth$, interpreted as the boundary between rocky planets and those that retain a thin H/He envelope. Error bars are 1-$\sigma$ from Poisson statistics on the binned detection counts; the light-grey segment below $1.14\,\Rearth$ marks the radius range where the Kepler survey suffers from low completeness and the inferred occurrence is unreliable. The "typical uncert." marker in the upper right is the median radius measurement uncertainty for an individual planet. The radius valley and its implications for atmospheric escape are revisited in {ref}`Lecture 13 <lecture13>`. Reproduced from {cite:t}`Fulton2017`, Fig. 7 (top panel).
 ```
 
 Beyond the demographics, ALMA imaging of the young star HL Tauri ({numref}`fig:hl-tau-alma`) provides direct visual evidence of planet formation in progress: concentric gaps in the protoplanetary disk are widely interpreted as carved by forming protoplanets.
@@ -189,17 +189,17 @@ Beyond the demographics, ALMA imaging of the young star HL Tauri ({numref}`fig:h
 :width: 450px
 :align: center
 
-ALMA 1.3 mm continuum image of the protoplanetary disk around the young star HL Tauri (distance $\sim 140$ pc). The concentric dark gaps are widely interpreted as carved by forming protoplanets. This was the first resolved view of disk substructure on AU scales. Credit: ALMA (ESO/NAOJ/NRAO); {cite:t}`ALMAPartnership2015`.
+ALMA 1.3 mm continuum image of the protoplanetary disk around the young star HL Tauri (distance $\sim 140$ pc). The concentric dark gaps are widely interpreted as carved by forming protoplanets, although alternative explanations involving ice lines and magnetorotational dead zones remain on the table. ALMA's $\sim 5$ AU angular resolution at HL Tau's distance is what made this multi-ringed substructure visible for the first time. Protoplanetary disks and planet formation are covered in {ref}`Lecture 2 <lecture02>`. Credit: ALMA (ESO/NAOJ/NRAO); {cite:t}`ALMAPartnership2015`.
 ```
 
-The transit-detection method itself is illustrated by the discovery light curve of HD 209458 b ({numref}`fig:transit-hd209458b`), the first transiting exoplanet, in which the $\sim 1.7\%$ flux decrement during planetary transit gave the planet-to-star radius ratio via $\Delta F/F \approx (R_p/R_\star)^2$.
+The most recent step in exoplanet science has been the direct chemical characterisation of atmospheres. JWST measures the absorption spectrum of starlight that filters through a transiting planet's atmosphere and identifies individual molecules in it. In August 2022, JWST recorded the first unambiguous detection of carbon dioxide in an exoplanet atmosphere on the hot gas giant WASP-39 b ({numref}`fig:wasp39b-spectrum`) {cite:p}`Rustamkulov2023`. The 4.3 $\mu$m $\mathrm{CO_2}$ absorption feature is unmistakable; it was the prototype result for the wider JWST exoplanet-atmosphere programme that is now examining dozens of planets and is the principal subject of {ref}`Lecture 13 <lecture13>`.
 
-```{figure} figures/transit_hd209458b.avif
-:name: fig:transit-hd209458b
-:width: 500px
+```{figure} figures/wasp39b_jwst_co2.avif
+:name: fig:wasp39b-spectrum
+:width: 600px
 :align: center
 
-Discovery transit of HD 209458 b, the first transiting exoplanet ever detected. The relative stellar flux drops by about 1.7% as the planet crosses the disk of its host star, recovering symmetrically afterwards. The depth gives the planet-to-star radius ratio via $\Delta F / F \approx (R_p / R_\star)^2$, and the duration constrains the orbital geometry. Credit: {cite:t}`Charbonneau2000`.
+NASA outreach graphic of the first unambiguous detection of carbon dioxide in an exoplanet atmosphere, from JWST/NIRSpec observations of the hot gas giant WASP-39 b in July 2022. The "amount of light blocked" (transit depth) is plotted as a function of wavelength from 3.0 to 5.5 $\mu$m. The prominent peak near 4.3 $\mu$m is the $\mathrm{CO_2}$ absorption band. White points are data with uncertainty bars; the blue curve is the best-fit atmospheric model {cite:p}`Rustamkulov2023`. Image credit: NASA, ESA, CSA, Joseph Olmsted (STScI).
 ```
 
 Today, planetary science integrates astronomy, physics, chemistry, geology, and atmospheric science. It spans scales from dust grains in protoplanetary disks to the demographics of planetary systems across the Galaxy.
