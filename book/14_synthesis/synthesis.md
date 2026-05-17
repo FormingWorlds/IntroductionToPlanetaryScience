@@ -621,7 +621,15 @@ All dates below are planning targets as of early 2026 and are commonly revised b
 
 **Now to 2030.** JWST continues to deliver atmospheric spectra of every accessible exoplanet. Europa Clipper arrives at Jupiter in 2030 and begins its 50-flyby ice-shell and ocean-chemistry campaign. JUICE is in cruise and arrives at Jupiter in 2031; its dedicated Ganymede orbital phase begins in 2034. BepiColombo enters Mercury orbit in 2026. The Mars Sample Return architecture is being re-baselined; samples are still cached at Jezero awaiting the new return plan. DART/Hera continue to characterise the Didymos system after the kinetic deflection test. Lucy completed its main-belt flybys of Dinkinesh (2023) and Donaldjohanson (2025) and is in cruise to its first Jupiter Trojan encounter, Eurybates, in August 2027. Roman launches in late 2026, PLATO in early 2027, Dragonfly in 2028, and Ariel in 2029.
 
-**2030s.** Europa Clipper science peaks. JUICE begins Ganymede orbit. Dragonfly arrives at Titan in 2034 and rotorcraft surface science begins. Ariel delivers its statistical exoplanet atmosphere survey. ELT, GMT, and TMT come online for high-contrast imaging and high-resolution spectroscopy of nearby exoplanets. DAVINCI, EnVision, and VERITAS deliver Venus atmospheric, surface, and subsurface results. Mars Sample Return delivery, if the re-baselined plan holds, is also in this decade. Uranus orbiter mission concept advances toward a probable launch in the early 2030s.
+**2030s.** Europa Clipper science peaks. JUICE begins Ganymede orbit. Dragonfly arrives at Titan in 2034 and rotorcraft surface science begins. Ariel delivers its statistical exoplanet atmosphere survey. ELT ({numref}`fig:l14:elt-milkyway`), GMT, and TMT come online for high-contrast imaging and high-resolution spectroscopy of nearby exoplanets. DAVINCI, EnVision, and VERITAS deliver Venus atmospheric, surface, and subsurface results. Mars Sample Return delivery, if the re-baselined plan holds, is also in this decade. Uranus orbiter mission concept advances toward a probable launch in the early 2030s.
+
+```{figure} figures/elt_milkyway.avif
+:name: fig:l14:elt-milkyway
+:width: 700px
+:align: center
+
+The Milky Way arcs over ESO's Extremely Large Telescope under construction on Cerro Armazones in the Chilean Atacama Desert, with the partially-clad dome visible at lower left (August 2025). With its 39 m segmented primary mirror, the ELT will be the largest optical/near-infrared telescope ever built when it sees first light in 2028 and will, together with GMT and TMT, enable the first direct-imaging searches for atmospheric biosignatures on rocky planets around nearby M dwarfs. Image credit: C. Letelier/ESO {cite:p}`ESOELT2025`.
+```
 
 **2040s.** HWO and LIFE concept maturation transitions into hardware. The first plausible direct atmospheric characterisation of Earth-analogue exoplanets becomes possible. A full multi-line biosignature campaign on the most promising targets can be designed and executed. Whatever the answer, it will fundamentally change planetary science.
 
