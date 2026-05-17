@@ -70,6 +70,18 @@ def make_plot() -> Path:
             fontsize=10,
         )
 
+    # Horizontal reference line: sum of all planetary masses except Jupiter.
+    # Jupiter alone exceeds this value (it sits above the line), illustrating
+    # the >50% mass concentration in a single body.
+    is_jupiter = df["body"] == "Jupiter"
+    sum_no_jupiter = df.loc[~is_jupiter, "mass_earth_units"].sum()
+    ax.axhline(sum_no_jupiter, color="gray", linestyle="--", linewidth=1.0)
+    ax.text(0.32, sum_no_jupiter * 1.10,
+            r"sum of all planets except Jupiter ($\approx$"
+            f"{sum_no_jupiter:.0f}"
+            r"$\,M_\oplus$)",
+            fontsize=8, color="gray")
+
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_xlabel("Orbital semi-major axis (AU)")
