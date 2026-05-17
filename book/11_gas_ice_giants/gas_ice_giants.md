@@ -37,7 +37,7 @@ Both gas giants rotate rapidly.
 Jupiter completes one rotation in about 9 h 56 min, Saturn in about 10 h 33 min, much faster than any rocky planet.
 Their rotation drives strong Coriolis forces that organise atmospheric motion into long-lived, latitude-aligned bands of east-west wind, the most conspicuous example of which is the alternating pattern of bright "zones" and darker "belts" on Jupiter that has been recognised since the seventeenth century.
 The rapid rotation also makes both planets visibly oblate: Jupiter is flattened by about 6.5%, Saturn by about 9.8%.
-This oblateness is not a curiosity but a quantitative diagnostic of the interior density distribution, because the gravitational potential outside an oblate spinning body is encoded in a series of zonal harmonics $J_2, J_4, J_6, \dots$ that the Juno and Cassini spacecraft have measured to ever higher precision {cite:p}`Iess2018,Iess2019`.
+This oblateness is not a curiosity but a quantitative diagnostic of the interior density distribution, because the gravitational potential outside an oblate spinning body is encoded in a series of zonal harmonics $J_2, J_4, J_6, \dots$ that the Juno {cite:p}`Bolton2017` and Cassini spacecraft have measured to ever higher precision {cite:p}`Iess2018,Iess2019`.
 
 A final shared feature is that both planets emit more energy than they absorb from the Sun.
 Jupiter radiates about 1.7 times the absorbed solar flux; Saturn radiates about 1.8 times the absorbed flux.

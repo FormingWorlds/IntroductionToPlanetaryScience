@@ -429,7 +429,7 @@ That is the runaway-greenhouse branch, and the next derivation makes the thresho
 
 But the bound is not infinite.
 There is a maximum OLR that a water-rich atmosphere can radiate to space, set by the saturation vapour pressure of water at the temperature of the IR-photosphere; if the absorbed solar flux exceeds this limit, no surface temperature can balance the radiation budget, the ocean evaporates entirely, and the planet enters a **runaway greenhouse** state.
-This maximum OLR is the **Simpson-Nakajima limit** ({numref}`fig:kopparapu-runaway` and {numref}`fig:goldblatt-spectrum`).
+This maximum OLR is the **Simpson-Nakajima limit**, named after the foundational analyses of {cite:t}`Ingersoll1969` and {cite:t}`NakajimaIngersoll1992` ({numref}`fig:kopparapu-runaway` and {numref}`fig:goldblatt-spectrum`).
 
 ```{figure} figures/kopparapu2013_runaway_panels.avif
 :name: fig:kopparapu-runaway

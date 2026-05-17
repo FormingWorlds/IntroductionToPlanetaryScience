@@ -281,7 +281,7 @@ NASA's "Inside Mars" infographic summarising the interior structure constrained 
 Inferred lunar interior from re-analysis of the Apollo passive seismic experiment, showing a silicate mantle, a partial-melt boundary layer at $\sim$480 km from the centre, a liquid Fe-alloy outer core at $\sim$330 km radius, and a small solid inner core at $\sim$240 km radius. The red dots inside the wedge mark the deep-moonquake source regions used to constrain the deepest part of the interior. The GRAIL+LLR moment of inertia of the solid Moon, $I_s/MR^2 = 0.392728 \pm 0.000012$ {cite:p}`Williams2014`, is consistent with this layered structure. Reproduced from {cite:p}`Weber2011`, Fig. 1A.
 ```
 
-**Mars** ($C/MR^2 = 0.364$, $\bar{\rho} = 3934$ kg m$^{-3}$) was transformed from a one-data-point problem into a seismically characterised planet by NASA's **InSight mission** (2018–2022; {numref}`fig:mars-interior`). The SEIS seismometer detected hundreds of marsquakes, revealing {cite:p}`Khan2021,Stahler2021`:
+**Mars** ($C/MR^2 = 0.364$, $\bar{\rho} = 3934$ kg m$^{-3}$) was transformed from a one-data-point problem into a seismically characterised planet by NASA's **InSight mission** {cite:p}`Banerdt2020` (2018–2022; {numref}`fig:mars-interior`). The SEIS seismometer detected hundreds of marsquakes, revealing {cite:p}`Khan2021,Stahler2021`:
 
 - A **crust** 24–72 km thick (varying between the thin northern lowlands and thick southern highlands)
 - A **mantle** extending to $\sim$1560 km depth (i.e. to the top of the core)
