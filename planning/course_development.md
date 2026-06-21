@@ -1,4 +1,4 @@
-# Course Development: Introduction to Planetary Science
+# Course Development: Planetary Systems
 
 **Course code:** WBAS002-05
 **Institution:** Kapteyn Astronomical Institute, University of Groningen
@@ -33,10 +33,10 @@ Students completing this course will be able to:
 
 | Component | Weight | Format |
 |-----------|--------|--------|
-| Mid-term exam | 30% | Written, 60 minutes |
-| Final exam | 70% | Written, 90 minutes, cumulative |
+| Final exam | 100% | Written, cumulative (L1–14) |
 
-- **Homework sheets** (7 total) are **ungraded formative practice**. Students are strongly encouraged to complete them as preparation for exams; solutions are discussed in tutorial sessions.
+- A final grade of at least 5.5 is required to pass. The re-sit has the same format; if fewer than four students are enrolled, an oral exam is offered instead.
+- **Homework sheets** (7 total) are **ungraded formative practice**. Students are strongly encouraged to complete them as preparation for the exam; solutions are discussed in tutorial sessions.
 - All lecture notes are custom-developed for this course (no required textbook).
 
 ### Weekly Structure
@@ -52,11 +52,11 @@ Each week consists of:
 | 1 | L1: Introduction & History; L2: Formation & Orbits | | |
 | 2 | L3: Heat & Energy; L4: Differentiation & Magnetospheres | HW 1 due | |
 | 3 | L5: Atmospheres I; L6: Atmospheres II | HW 2 due | |
-| 4 | L7: Surfaces; **Mid-term exam (60 min)** | HW 3 due | Mid-term covers L1–7 |
-| 5 | L8: Interiors; L9: Earth & Venus | HW 4 due | |
-| 6 | L10: Mercury & Mars; L11: Gas & Ice Giants | HW 5 due | |
-| 7 | L12: Small Bodies; L13: Exoplanets; L14: Synthesis | HW 6 due | 3 lectures this week |
-| 8 | **Final exam (90 min)** | HW 7 due | Exam week |
+| 4 | L7: Surfaces; L8: Interiors | HW 3 due | |
+| 5 | L9: Earth & Venus; L10: Mercury & Mars | HW 4 due | |
+| 6 | L11: Gas & Ice Giants; L12: Small Bodies | HW 5 due | |
+| 7 | L13: Exoplanets; L14: Synthesis | HW 6 due | |
+| 8 | **Final exam** | HW 7 due | Exam week; cumulative L1–14 |
 
 ---
 
@@ -548,12 +548,15 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 ## 4. Exam Structure
 
-### Mid-term Exam
+The course is assessed by a single final written exam (100% of the final grade).
+A final grade of at least 5.5 is required to pass.
+The re-sit has the same format; if fewer than four students are enrolled, an oral exam is offered instead.
 
-**Timing:** Week 4 (replaces one lecture slot, after Lecture 7)
-**Weight:** 30%
-**Duration:** 60 minutes
-**Scope:** Lectures 1–7
+### Final Exam
+
+**Timing:** Exam week (after Week 7)
+**Weight:** 100%
+**Scope:** Cumulative (Lectures 1–14)
 
 **Coverage:**
 - Planet formation and orbital dynamics (Lecture 2)
@@ -561,21 +564,6 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 - Chemical differentiation and magnetospheres (Lecture 4)
 - Atmospheric structure, composition, and dynamics (Lectures 5–6)
 - Surface processes and geology (Lecture 7)
-
-**Format:**
-- Part A: Short-answer questions (conceptual understanding, ~40%)
-- Part B: Longer quantitative problems (derivations and calculations, ~60%)
-- Closed book; equation sheet provided
-
-### Final Exam
-
-**Timing:** Week 8 (exam week)
-**Weight:** 70%
-**Duration:** 90 minutes
-**Scope:** Cumulative (Lectures 1–14, emphasis on Lectures 8–14)
-
-**Coverage:**
-- All topics from the mid-term (broadly tested, ~30% of final)
 - Planetary interiors (Lecture 8)
 - Rocky planets: Earth, Venus, Mercury, Mars (Lectures 9–10)
 - Gas and ice giants (Lecture 11)

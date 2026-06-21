@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-University course materials repository for "Introduction to Planetary Science" at the Kapteyn Astronomical Institute of the University of Groningen. The main lecturer is Tim Lichtenberg from the Kapteyn Institute. This course is a BSc Astronomy mandatory course for 2nd-year students, covering fundamental concepts in planetary science, including planet formation, solar system dynamics, exoplanets, and astrobiology. The repository contains lecture notes, figures, and planning documents for the course. The lecture notes are written in MyST Markdown and built into HTML and PDF formats using Jupyter Book. The course emphasizes scientific accuracy, proper citation of sources, and clear explanations suitable for undergraduate students.
+University course materials repository for "Planetary Systems" (course code WBAS002-05) at the Kapteyn Astronomical Institute of the University of Groningen. The main lecturer is Tim Lichtenberg from the Kapteyn Institute. This course is a BSc Astronomy mandatory course for 2nd-year students, covering fundamental concepts in planetary science, including planet formation, solar system dynamics, exoplanets, and astrobiology. The repository contains lecture notes, figures, and planning documents for the course. The lecture notes are written in MyST Markdown and built into HTML and PDF formats using Jupyter Book. The course emphasizes scientific accuracy, proper citation of sources, and clear explanations suitable for undergraduate students.
 
 ## Repository Structure
 

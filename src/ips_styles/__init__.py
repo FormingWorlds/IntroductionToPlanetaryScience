@@ -1,1 +1,1 @@
-# Custom pybtex styles for Introduction to Planetary Science
+# Custom pybtex styles for Planetary Systems

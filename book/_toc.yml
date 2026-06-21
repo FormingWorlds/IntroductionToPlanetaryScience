@@ -5,6 +5,10 @@ format: jb-book
 root: intro
 
 parts:
+  - caption: Course information
+    numbered: false
+    chapters:
+      - file: course_info
   - caption: Slides
     numbered: false
     chapters:

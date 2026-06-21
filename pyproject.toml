@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "introduction-to-planetary-science"
 version = "2026.0"
-description = "Lecture notes for Introduction to Planetary Science (WBAS002-05), Kapteyn Institute"
+description = "Lecture notes for Planetary Systems (WBAS002-05), Kapteyn Institute"
 requires-python = ">=3.12"
 dependencies = [
     "jupyter-book<2",

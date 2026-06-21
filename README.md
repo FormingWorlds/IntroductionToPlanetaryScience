@@ -1,6 +1,6 @@
-# Introduction to Planetary Science
+# Planetary Systems
 
-Course materials for **WBAS002-05 — Introduction to Planetary Science**, a 5 ECTS mandatory course for 2nd-year BSc Astronomy students at the [Kapteyn Astronomical Institute](https://www.rug.nl/research/kapteyn/), University of Groningen.
+Course materials for **WBAS002-05 — Planetary Systems**, a 5 ECTS mandatory course for 2nd-year BSc Astronomy students at the [Kapteyn Astronomical Institute](https://www.rug.nl/research/kapteyn/), University of Groningen.
 
 **Lecturer:** Tim Lichtenberg
 

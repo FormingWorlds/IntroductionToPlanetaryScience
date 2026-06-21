@@ -1,12 +1,14 @@
-# Introduction to Planetary Science
+(intro)=
 
-**[WBAS022-05](https://ocasys.rug.nl/2026-2027/catalog/course/WBAS022-05)** | [Kapteyn Astronomical Institute](https://www.astro.rug.nl/), University of Groningen
+# Planetary Systems
+
+**[WBAS002-05](https://ocasys.rug.nl/2026-2027/catalog/course/WBAS002-05) Planetary Systems** | [Kapteyn Astronomical Institute](https://www.astro.rug.nl/), University of Groningen
 **Level:** 2nd-year BSc Astronomy | **Credits:** 5 ECTS
-**Period:** September to November 2026
+**Period:** September to November 2026 | See the {ref}`course information <course_info>` page for the full syllabus.
 
 ---
 
-These lecture notes accompany the course *Introduction to Planetary Science*, covering the formation, structure, and evolution of planets in our solar system and beyond.
+These lecture notes accompany the course *Planetary Systems*, covering the formation, structure, and evolution of planets in our solar system and beyond.
 
 ## Lectures
 
