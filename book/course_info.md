@@ -18,6 +18,8 @@ The official course catalogue entry is maintained in [Ocasys](https://ocasys.rug
 | **Language of instruction** | English |
 | **Period** | Semester 1a (September to November 2026) |
 | **Coordinator and lecturer** | dr. [Tim Lichtenberg](https://www.formingworlds.space/) |
+| **Guest lecturer** | dr. Mara Attia (Atmospheres I and II) |
+| **Timetable** | [rooster.rug.nl](https://rooster.rug.nl/2026-2027?courseOffering=195171) |
 
 ## Course description
 
@@ -52,8 +54,12 @@ The course is assessed by a single final written exam, which determines the full
 A final grade of at least 5.5 is required to pass.
 The re-sit has the same format as the exam; if very few students are enrolled (fewer than four), an oral exam is offered instead.
 
+The exam lasts two hours and has the same shape and level as the homework sheets, with approximately one question per lecture; not necessarily every lecture is covered, and some lectures may be combined into one question.
+It is closed book: a calculator and a pen are all that is needed.
+
 Seven homework sheets are provided as ungraded formative practice and are discussed in the tutorial sessions.
 They are strongly recommended as exam preparation but do not count towards the final grade.
+The homework sheets and their full solutions, together with a few mock exams with full solutions, are available on this website.
 
 ## Course structure
 
@@ -67,8 +73,8 @@ The indicative study-load breakdown for the 5 ECTS (140 hours total) is:
 |---|---|
 | Lectures | 28 |
 | Tutorials | 14 |
-| Final exam | 3 |
-| Self-study | 95 |
+| Final exam | 2 |
+| Self-study | 96 |
 | **Total** | **140** |
 
 ## Course materials

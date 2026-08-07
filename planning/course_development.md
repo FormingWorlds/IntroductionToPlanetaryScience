@@ -572,10 +572,10 @@ The re-sit has the same format; if fewer than four students are enrolled, an ora
 - Synthesis and astrobiology (Lecture 14)
 
 **Format:**
-- Part A: Short-answer questions (conceptual understanding, ~30%)
-- Part B: Longer quantitative problems (derivations and calculations, ~50%)
-- Part C: Essay/synthesis question requiring integration across topics (~20%)
-- Closed book; equation sheet provided
+- The exam has the exact same shape and level as the homework problem sets: approximately one question per lecture. To fit the two-hour slot, not necessarily every lecture is covered, and some lectures may be combined into one question.
+- Closed book; students bring a calculator and a pen, nothing else is needed (no equation sheet).
+- Duration: 2 hours. Exam Wed 28 Oct 2026, 15:00-17:00, Exam Hall 4 (5263.0226); re-sit Mon 25 Jan 2027, 15:00-17:00, Exam Hall 1 (5263.0102).
+- A few mock exams with full solutions are published on the course website as practice material, alongside the worksheets and their full solutions.
 
 ---
 
@@ -634,7 +634,7 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
-| 1 | Introduction & history | Rebuilt against locked notes (2026-05-18); polish pass 2026-08-07: Pale Blue Dot title background, SDO Sun + Webb deep-field section dividers, assessment updated to 100% final exam, OSIRIS-REx still corrected and converted to AVIF, frame-overflow fixes; sign-off pending | High |
+| 1 | Introduction & history | Rebuilt against locked notes (2026-05-18); polish pass 2026-08-07: Pale Blue Dot title background, SDO Sun + Webb deep-field section dividers, assessment updated to 100% final exam, OSIRIS-REx still corrected and converted to AVIF, frame-overflow fixes; course-organisation slides added 2026-08-07 (course title slide, Ocasys description + outcomes, two schedule slides with dates, times, rooms, and lecturers incl. dr. Mara Attia for L5 + L6), deck now 93 pages; sign-off pending | High |
 | 2 | Planet formation & orbital dynamics | Draft complete | High |
 | 3 | Planetary heat & energy transport | Draft complete | High |
 | 4 | Chemical differentiation & magnetospheres | Draft complete | High |
@@ -690,13 +690,12 @@ Each homework requires:
 
 | Exam | Scope | Status | Location |
 |------|-------|--------|----------|
-| Mid-term | Lectures 1–7 | Not started | private repo |
 | Final | Lectures 1–14 (cumulative) | Not started | private repo |
+| Mock exams (a few, with full solutions) | Representative coverage, same shape and level as the final | Not started | public website |
 
-Each exam requires:
+The final exam requires:
 - Exam paper (private until exam day; released to students at exam start)
 - Full solutions and marking scheme (private; released to students after marking, or retained for instructor use only)
-- Equation sheet (may be public if released as a study aid before the exam; decide per exam)
 
 ### Reusable Material from course2025
 

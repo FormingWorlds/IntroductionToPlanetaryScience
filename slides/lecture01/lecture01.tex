@@ -21,23 +21,46 @@
 % ════════════════════════════════════════════════════════════
 \begin{document}
 
-% ── Title slide ─────────────────────────────────────────────
+% ── Course title slide (whole course, not L1) ───────────────
 \begin{frame}[plain,noframenumbering]
-  \titlepage
+  \begin{tikzpicture}[remember picture, overlay]
+    \ipscontain{course_title_background}
+    \fill[ipsPrimary, opacity=0.45] (current page.north west) rectangle (current page.south east);
+    \node[anchor=south east, inner sep=0pt] at ([xshift=-6pt, yshift=4pt]current page.south east) {%
+      {\tiny\color{white!50} The TRAPPIST-1 system, artist concept. Credit: NASA/JPL-Caltech}%
+    };
+  \end{tikzpicture}
+  \vfill
+  \begin{center}
+    {\color{white}\Huge\bfseries Planetary Systems}\\[10pt]
+    {\color{white!90}\large WBAS002-05 \;$\cdot$\; 5 ECTS \;$\cdot$\; Semester 1a, 2026--2027}\\[22pt]
+    {\color{white!90} dr.\ Tim Lichtenberg (coordinator + lecturer) \;$\cdot$\; \texttt{tim.lichtenberg@rug.nl}}\\[4pt]
+    {\color{white!90} dr.\ Mara Attia (lecturer, atmospheres) \;$\cdot$\; \texttt{m.attia@rug.nl}}\\[12pt]
+    {\color{white!85}\small Teaching assistants:}\\[3pt]
+    {\color{white!80}\footnotesize Mariana Sastre \texttt{villamilsastre@astro.rug.nl} \;$\cdot$\; Emma Postolec \texttt{postolec@astro.rug.nl}}\\[2pt]
+    {\color{white!80}\footnotesize Soumil Kelkar \texttt{s.m.kelkar@rug.nl} \;$\cdot$\; Imre Kisvárdai \texttt{kisvardai@astro.rug.nl}}\\[14pt]
+    {\color{white!80}\small Kapteyn Astronomical Institute, University of Groningen}\\[10pt]
+    {\color{white!70}\small\texttt{https://ips.formingworlds.space/}}
+  \end{center}
+  \vfill
 \end{frame}
 
-% ── Learning objectives ─────────────────────────────────────
-\begin{frame}{Learning objectives}
-  By the end of this lecture, you will be able to:
-  \vskip6pt\relax
-  \begin{itemize}
-    \item Describe the scope of planetary science and its three driving questions.
-    \item Outline how the field evolved from antiquity through the space age into the exoplanet era.
-    \item Identify the principal solar-system populations and their gross physical properties.
-    \item Derive the stellar mass from a planet's orbital period and semi-major axis.
-  \end{itemize}
-  \vskip6pt\relax
-  \keyresult{Planetary science is the comparative, physical study of planets, moons, and small bodies, in our solar system and beyond.}
+% ── Course description + learning outcomes (Ocasys) ─────────
+\begin{frame}{What this course is about}
+  \small
+  A physics-based introduction to the solar system's planets and to extrasolar planetary systems: how they form and evolve, how atmospheres, surfaces, and interiors couple, and what both reveal about planetary diversity and habitability.
+  \vskip4pt\relax
+  \textbf{At the end of this course, you are able to:}
+  {\footnotesize
+  \begin{enumerate}
+    \item Describe planetary-system formation and evolution, and place the solar system among exoplanets.
+    \item Explain heat generation and energy transport in planetary interiors and atmospheres.
+    \item Describe the structure and dynamics of atmospheres, surfaces, interiors, and magnetospheres.
+    \item Apply orbital mechanics, thermodynamics, and radiative transfer to quantitative problems.
+    \item Compare the major classes of solar-system bodies in formation, structure, and observables.
+    \item Evaluate exoplanet detection methods and interpret demographics and characterisation data.
+    \item Synthesise across these fields to assess planetary diversity and habitability.
+  \end{enumerate}}
 \end{frame}
 
 % ── Course overview ─────────────────────────────────────────
@@ -64,9 +87,114 @@
         \item Are we alone?
       \end{enumerate}
     \end{block}
+    \vskip12pt\relax
+    \textbf{Participation:} nothing is mandatory; lectures and tutorials are opt-in. The only requirement is passing the exam with a grade $> 5.5$.
   \end{columns}
 \end{frame}
 
+% ── Course schedule 1/2 (September) ─────────────────────────
+\begin{frame}{Course schedule: September}
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{5pt}
+  \begin{tabular}{llll}
+    \toprule
+     & Date & Time & Content \\
+    \midrule
+    L1  & Mon 7 Sep  & 15:00--17:00 & Introduction \& history of planetary science \\
+    L2  & Thu 10 Sep & 11:00--13:00 & Planet formation \& orbital dynamics \\
+    T1  & Fri 11 Sep & 13:00--15:00 & Tutorial 1 \\
+    L3  & Mon 14 Sep & 15:00--17:00 & Planetary heat \& energy transport \\
+    L4  & Thu 17 Sep & 11:00--13:00 & Chemical differentiation \& magnetospheres \\
+    T2  & Fri 18 Sep & 13:00--15:00 & Tutorial 2 \\
+    L5  & Mon 21 Sep & 15:00--17:00 & Atmospheres I \emph{(dr.\ Mara Attia)} \\
+    L6  & Thu 24 Sep & 11:00--13:00 & Atmospheres II \emph{(dr.\ Mara Attia)} \\
+    T3  & Fri 25 Sep & 13:00--15:00 & Tutorial 3 \\
+    L7  & Mon 28 Sep & 15:00--17:00 & Planetary surfaces \\
+    L8  & Thu 1 Oct  & 11:00--13:00 & Planetary interiors \\
+    T4  & Fri 2 Oct  & 13:00--15:00 & Tutorial 4 \\
+    \bottomrule
+  \end{tabular}
+  \vskip6pt\relax
+  {\footnotesize Room 5419.0161 (Collegezaal). Lecturer: dr.\ Tim Lichtenberg unless noted.}
+\end{frame}
+
+% ── Course schedule 2/2 (October + exams) ───────────────────
+\begin{frame}{Course schedule: October \& exams}
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{5pt}
+  \begin{tabular}{llll}
+    \toprule
+     & Date & Time & Content \\
+    \midrule
+    L9  & Mon 5 Oct  & 15:00--17:00 & Rocky planets: Earth \& Venus \\
+    L10 & \textbf{Tue 6 Oct} & \textbf{17:00--19:00} & Rocky planets: Mercury \& Mars \\
+    T5  & Fri 9 Oct  & 13:00--15:00 & Tutorial 5 \\
+    L11 & Mon 12 Oct & 15:00--17:00 & Gas \& ice giants \\
+    L12 & Thu 15 Oct & 11:00--13:00 & Meteorites, asteroids \& comets \\
+    T6  & Fri 16 Oct & 13:00--15:00 & Tutorial 6 \\
+    L13 & Mon 19 Oct & 15:00--17:00 & Exoplanets \\
+    L14 & Thu 22 Oct & 11:00--13:00 & Synthesis \& astrobiology \\
+    T7  & Fri 23 Oct & 13:00--15:00 & Tutorial 7 \\
+    \midrule
+    Exam   & Wed 28 Oct 2026 & 15:00--17:00 & Exam Hall 4 (5263.0226) \\
+    Re-sit & Mon 25 Jan 2027 & 15:00--17:00 & Exam Hall 1 (5263.0102) \\
+    \bottomrule
+  \end{tabular}
+  \vskip6pt\relax
+  {\footnotesize Note the Tuesday \emph{evening} slot for L10. Lectures and tutorials: room 5419.0161 (Collegezaal).}
+\end{frame}
+
+% ── Tutorials & worksheets ──────────────────────────────────
+\begin{frame}{Tutorials \& worksheets}
+  \textbf{Worksheets:} seven problem sets, one per two-lecture block.
+  \begin{itemize}
+    \item Worksheets \emph{and} full solutions are available on the course website.
+    \item In addition, a few \textbf{mock exams} with full solutions are provided there.
+  \end{itemize}
+  \vskip4pt\relax
+  \textbf{Tutorials (Fridays):}
+  \begin{itemize}
+    \item Start with a $\sim$5--10 min \textbf{mini-recap} of the concepts most important for the worksheet.
+    \item The TAs are there to \textbf{answer questions and discuss the problem sets} with you.
+    \item They may put a few qualitative questions to the classroom to get discussion going.
+    \item They will \emph{not} present full solutions; you are given those in full already.
+  \end{itemize}
+  \vskip2pt\relax
+  \keyresult{Suggestion: first try to solve each problem set alone and really think it through before looking at the solutions.}
+\end{frame}
+
+% ── The exam ────────────────────────────────────────────────
+\begin{frame}{The exam}
+  \begin{itemize}
+    \item The exam has the \textbf{exact same shape and level as the problem sets}.
+    \item Approximately \textbf{one question per lecture}; to fit into two hours, not necessarily every lecture is covered, and some may be combined into one question.
+    \item \textbf{Everything is relevant}: all content in the course lecture notes (the website), the lectures, and the slides; no exceptions.
+    \item \textbf{Closed book}: you can only bring a calculator and a pen; nothing else is needed.
+    \item Regular \textbf{2-hour} written exam: Wed 28 October 2026, 15:00--17:00, Exam Hall 4.
+    \item Practice with the worksheets and the mock exams; they define the level.
+  \end{itemize}
+\end{frame}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Learning objectives ─────────────────────────────────────
+\begin{frame}{Learning objectives}
+  By the end of this lecture, you will be able to:
+  \vskip6pt\relax
+  \begin{itemize}
+    \item Describe the scope of planetary science and its three driving questions.
+    \item Outline how the field evolved from antiquity through the space age into the exoplanet era.
+    \item Identify the principal solar-system populations and their gross physical properties.
+    \item Derive the stellar mass from a planet's orbital period and semi-major axis.
+  \end{itemize}
+  \vskip6pt\relax
+  \keyresult{Planetary science is the comparative, physical study of planets, moons, and small bodies, in our solar system and beyond.}
+\end{frame}
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{earthrise_apollo8}{Earthrise, Apollo 8 (1968). Credit: NASA / W.~Anders}
