@@ -588,7 +588,7 @@ The remaining work is paired lecture-by-lecture: each lecture's prose ("notes") 
 Order:
 
 1. L01 notes (LOCKED 2026-05-17, commit `ec67259`)
-2. L01 slides (scheduled 2026-05-18)
+2. L01 slides (rebuilt 2026-05-18; polished 2026-08-07, sign-off pending)
 3. L02 notes
 4. L02 slides
 5. Worksheet 01 (L01 + L02)
@@ -634,7 +634,7 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
-| 1 | Introduction & history | Draft complete (lock pending 2026-05-18) | High |
+| 1 | Introduction & history | Rebuilt against locked notes (2026-05-18); polish pass 2026-08-07: Pale Blue Dot title background, SDO Sun + Webb deep-field section dividers, assessment updated to 100% final exam, OSIRIS-REx still corrected and converted to AVIF, frame-overflow fixes; sign-off pending | High |
 | 2 | Planet formation & orbital dynamics | Draft complete | High |
 | 3 | Planetary heat & energy transport | Draft complete | High |
 | 4 | Chemical differentiation & magnetospheres | Draft complete | High |

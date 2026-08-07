@@ -120,12 +120,16 @@
 % Set the title background credit per lecture: \titlebgcredit{Credit text}
 \newcommand{\titlebgcredit}[1]{\def\ips@titlebgcredit{#1}}
 \titlebgcredit{}% default empty
+% Overlay opacity for the title background, settable per lecture for dark
+% or low-contrast images: \titlebgopacity{0.45}
+\newcommand{\titlebgopacity}[1]{\def\ips@titlebgopacity{#1}}
+\titlebgopacity{0.70}% default
 
 \setbeamertemplate{title page}{%
   \begin{tikzpicture}[remember picture, overlay]
     \ipscontain{title_background}
     % Dark overlay for text readability
-    \fill[ipsPrimary, opacity=0.70] (current page.north west) rectangle (current page.south east);
+    \fill[ipsPrimary, opacity=\ips@titlebgopacity] (current page.north west) rectangle (current page.south east);
     % (accent stripe removed)
     % Background image credit
     \ifx\ips@titlebgcredit\empty\else
