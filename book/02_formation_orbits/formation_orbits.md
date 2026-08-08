@@ -79,7 +79,7 @@ Ice lines for other species ($\mathrm{CO_2}$, $\mathrm{CO}$, $\mathrm{N_2}$, $\m
 :width: 600px
 :align: center
 
-Sequential condensation of major volatile species across a protoplanetary disk and the resulting C/O ratio of grains (dashed) and gas (solid) as a function of disk radius. The H$_2$O ice line at $\sim 2$ AU lowers grain C/O and raises gas C/O; the CO$_2$ ice line at $\sim 10$ AU shifts gas C/O further upward; and beyond the CO ice line at $\sim 40$ AU the gas C/O reaches unity. The dotted line marks the solar reference. The radial sequencing of these ice lines controls the volatile composition that forming planets inherit from their formation zone. The exact H$_2$O ice-line location is model-dependent and varies between $\sim 2$ and $3.5$ AU depending on the assumed disk temperature profile and accretion rate. Reproduced from {cite:t}`Oberg2011`, Fig. 2.
+Sequential condensation of major volatile species across a protoplanetary disk and the resulting C/O ratio of grains (dashed) and gas (solid) as a function of disk radius. The H$_2$O ice line at $\sim 2$ AU lowers grain C/O and raises gas C/O; beyond the CO$_2$ ice line at $\sim 10$ AU the gas C/O reaches unity and holds that value out to the CO ice line at $\sim 40$ AU, beyond which essentially all carbon and oxygen are frozen onto grains and the grain C/O returns to the stellar value (dotted line, solar C/O $= 0.54$). The radial sequencing of these ice lines controls the volatile composition that forming planets inherit from their formation zone. The exact H$_2$O ice-line location is model-dependent and varies between $\sim 2$ and $3.5$ AU depending on the assumed disk temperature profile and accretion rate. Reproduced from {cite:t}`Oberg2011`, Fig. 1.
 ```
 
 ### Observational evidence: ALMA
@@ -295,7 +295,7 @@ The first five elements define the size, shape, and orientation of the orbit; th
 The six classical orbital elements. The reference plane is shown in grey; the orbital plane is tilted by the inclination $i$. The ascending node ($\Omega$) and argument of perihelion ($\omega$) orient the orbit in space. Credit: Lasunncty, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 ```
 
-In the solar system, most planets have nearly circular orbits ($e < 0.1$) and low inclinations ($i < 3°$), reflecting the disk-like origin of the system. Exceptions include Mercury ($e = 0.206$) and, among dwarf planets, Pluto ($e = 0.25$, $i = 17°$), hinting at a more complex dynamical history.
+In the solar system, most planets have nearly circular orbits ($e < 0.1$) and low inclinations ($i < 3°$), reflecting the disk-like origin of the system. Exceptions include Mercury ($e = 0.206$, $i = 7.0°$) and, among dwarf planets, Pluto ($e = 0.25$, $i = 17°$), hinting at a more complex dynamical history.
 
 
 ## Two-body problem and the vis-viva equation
@@ -426,7 +426,7 @@ For a dramatic contrast, consider Halley's comet ($a = 17.83$ AU, $e = 0.967$):
 
 | Point | Distance $r$ | Velocity |
 |-------|-------------|----------|
-| Perihelion | $a(1-e) = 0.588$ AU | $v_p = 54.6$ km s$^{-1}$ |
+| Perihelion | $a(1-e) = 0.588$ AU | $v_p = 54.5$ km s$^{-1}$ |
 | Aphelion | $a(1+e) = 35.1$ AU | $v_a = 0.91$ km s$^{-1}$ |
 
 Halley's comet hurtles through the inner solar system at nearly twice Earth's speed, yet crawls beyond Neptune's orbit at less than 1 km s$^{-1}$. This enormous range is a direct consequence of the vis-viva equation applied to a highly eccentric orbit; both speed profiles are plotted in {numref}`fig:visviva`.
@@ -439,7 +439,7 @@ Halley's comet hurtles through the inner solar system at nearly twice Earth's sp
 :width: 600px
 :align: center
 
-Orbital speed $v(r)$ from the vis-viva equation for Earth ($a = 1$ AU, $e = 0.0167$) and Halley's comet ($a = 17.83$ AU, $e = 0.967$). Filled circles mark perihelion and aphelion of each orbit. Earth's nearly circular orbit gives $v \approx 30$ km s$^{-1}$ throughout, whereas Halley's high eccentricity produces a $\sim 60\times$ swing in speed between perihelion ($54.6$ km s$^{-1}$) and aphelion ($0.91$ km s$^{-1}$).
+Orbital speed $v(r)$ from the vis-viva equation for Earth ($a = 1$ AU, $e = 0.0167$) and Halley's comet ($a = 17.83$ AU, $e = 0.967$). Filled circles mark perihelion and aphelion of each orbit. Earth's nearly circular orbit gives $v \approx 30$ km s$^{-1}$ throughout, whereas Halley's high eccentricity produces a $\sim 60\times$ swing in speed between perihelion ($54.5$ km s$^{-1}$) and aphelion ($0.91$ km s$^{-1}$).
 ```
 
 
@@ -538,10 +538,10 @@ Roche limit geometry. (a) A self-gravitating fluid satellite (blue) is rounded a
 For Saturn ($R_p = 58{,}232$ km, $\rho_p = 687$ kg m$^{-3}$) and an icy satellite ($\rho_s \approx 1000$ kg m$^{-3}$):
 
 $$
-d_R \approx 2.46 \times 58{,}232 \times \left(\frac{687}{1000}\right)^{1/3} \approx 126{,}500 \text{ km} \approx 2.17\, R_p
+d_R \approx 2.46 \times 58{,}232 \times \left(\frac{687}{1000}\right)^{1/3} \approx 126{,}000 \text{ km} \approx 2.17\, R_p
 $$
 
-Saturn's main ring system ({numref}`fig:saturn-rings`) extends from about 67,000 km to 137,000 km from Saturn's centre, mostly within the Roche limit (the fluid approximation gives $d_R \approx 126{,}000$ km, but the exact boundary depends on the rigidity and composition of the orbiting material; the outer A ring extends slightly beyond the fluid Roche limit but remains within the rigid-body limit). The rings consist of countless small particles that cannot coalesce into a moon because tidal forces prevent their gravitational aggregation. We will derive the Roche limit in full in {ref}`Lecture 11 <lecture11>`.
+Saturn's main ring system ({numref}`fig:saturn-rings`), the D through A rings, extends from about 67,000 km to 137,000 km from Saturn's centre, mostly within this fluid Roche limit. The outer part of the A ring lies slightly beyond the nominal boundary: its sharp outer edge is maintained by a 7:6 mean-motion resonance with the moon Janus, and the ring particles are porous, so their density is below that of solid ice, which shifts the effective Roche limit outward. The rings consist of countless small particles that cannot coalesce into a moon because tidal forces prevent their gravitational aggregation. We will derive the Roche limit in full in {ref}`Lecture 11 <lecture11>`.
 
 ```{figure} figures/saturn_rings.avif
 :name: fig:saturn-rings
@@ -580,14 +580,14 @@ Disk surface-density response to an embedded planet, showing the outer-Lindblad 
 
 ### The Nice model
 
-After the gas disk has dispersed, the giant planets can still undergo migration through interactions with a remnant disk of planetesimals. The **Nice model** {cite:p}`Tsiganis2005` proposes that the giant planets formed in a more compact configuration than today (all within $\sim 20$ AU) and subsequently underwent a dynamical instability, likely triggered when Jupiter and Saturn crossed their mutual 2:1 mean-motion resonance ({numref}`fig:nice-model`). This instability scattered Uranus and Neptune outward to their current orbits, disrupted the primordial Kuiper Belt, and may have triggered a spike of impacts throughout the inner solar system (the "Late Heavy Bombardment," although its timing and intensity remain debated).
+After the gas disk has dispersed, the giant planets can still undergo migration through interactions with a remnant disk of planetesimals. The **Nice model** {cite:p}`Tsiganis2005` proposes that the giant planets formed in a more compact configuration than today, with the outermost ice giant well inside Neptune's present 30 AU orbit, and subsequently underwent a dynamical instability. In the original version of the model, the instability was triggered when Jupiter and Saturn slowly crossed their mutual 2:1 mean-motion resonance. Modern versions revise this picture: the orbital structure of the asteroid belt and the near-circular orbits of the terrestrial planets require that the Jupiter-Saturn period ratio changed discontinuously rather than smoothly, which is most naturally achieved if the outer solar system originally contained a **fifth giant planet** that was scattered off Jupiter and ejected during the instability, the so-called *jumping-Jupiter* scenario ({numref}`fig:nice-model`) {cite:p}`Nesvorny2018`. In either version, the instability scattered Uranus and Neptune outward to their current orbits, disrupted the primordial Kuiper Belt, and may have triggered a spike of impacts throughout the inner solar system (the "Late Heavy Bombardment," although its timing and intensity remain debated).
 
 ```{figure} figures/nesvorny2018_nice.avif
 :name: fig:nice-model
 :width: 600px
 :align: center
 
-Evolution of the giant planets through the Nice-model instability. Left panel: semi-major axes vs time, beginning compact (Jupiter at $\sim 5.4$ AU, Saturn at $\sim 8.7$ AU, Uranus at $\sim 15$ AU, Neptune at $\sim 20$ AU). Right panel: the Saturn / Jupiter period ratio, showing the rapid 2:1 mean-motion resonance crossing that triggers the instability. The crossing scatters Uranus and Neptune outward to their present orbits and disrupts the primordial trans-Neptunian planetesimal disk {cite:p}`Nesvorny2018`. Note that the original Tsiganis et al. 2005 simulation used a slightly more compact configuration (Neptune at $\sim 13.5$–$17$ AU); the figure shown is from {cite:t}`Nesvorny2018`.
+Evolution of the giant planets through the Nice-model instability in a five-planet "jumping-Jupiter" simulation. Panel (a): semi-major axes vs time for five giant planets started in a compact resonant chain, with a fifth ice giant (magenta) initially between Saturn and Uranus. At the instability ($\sim 6$ Myr into this run) the extra ice giant is scattered off Jupiter and ejected from the solar system, while Uranus and Neptune move outward onto their present orbits (horizontal dashed lines). Panel (b): the Saturn/Jupiter period ratio jumps discontinuously from its initial 3:2 resonance value ($P_{\mathrm{Sat}}/P_{\mathrm{Jup}} = 1.5$) toward the present-day value of 2.49 (dashed line) during the planet-planet encounters. The jump carries the system over the shaded band ($2.1 \lesssim P_{\mathrm{Sat}}/P_{\mathrm{Jup}} \lesssim 2.3$) in which slow migration would activate secular resonances that excite the asteroid belt and the terrestrial-planet orbits; avoiding this zone is the central argument for the jumping-Jupiter scenario over the smooth 2:1 resonance crossing of the original Nice model {cite:p}`Tsiganis2005`. Reproduced from {cite:t}`Nesvorny2018`, Fig. 3.
 ```
 
 ### The Grand Tack
