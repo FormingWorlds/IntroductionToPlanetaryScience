@@ -103,7 +103,7 @@ Gallery of 240 GHz ($1.25$ mm) continuum images of the 20 disks in the ALMA DSHA
 
 ### Disk lifetimes
 
-Infrared excess surveys of young stellar clusters at different ages show that the fraction of stars retaining optically thick inner disks declines from $\sim 80$% at 1 Myr to $< 10$% by $\sim 6$ Myr {cite:p}`Haisch2001`. Half of all stars lose their inner disks within $\sim 3$ Myr, and essentially all disks are gone within **a few million years** (the $\sim 1$–$3$ Myr protostellar accretion phase noted above is the earlier, embedded part of this lifetime). This sets a hard deadline for gas giant formation: if a planet's core does not grow large enough to capture a gaseous envelope before the disk disperses, it will remain a rocky or icy body.
+Infrared excess surveys of young stellar clusters at different ages show that the fraction of stars retaining optically thick inner disks declines from $\sim 80$% at 1 Myr to $< 10$% by $\sim 6$ Myr {cite:p}`Haisch2001`. Half of all stars lose their inner disks within $\sim 3$ Myr, and essentially all disks are gone by $\sim 6$ Myr (the $\sim 1$–$3$ Myr protostellar accretion phase noted above is the earlier, embedded part of this lifetime). This sets a hard deadline for gas giant formation: if a planet's core does not grow large enough to capture a gaseous envelope before the disk disperses, it will remain a rocky or icy body.
 
 Disk dispersal is driven by a combination of viscous accretion onto the star, photoevaporation by stellar ultraviolet and X-ray radiation, and possibly magnetohydrodynamic winds.
 
@@ -251,7 +251,7 @@ $$
 P^2 = \frac{4\pi^2}{G(M_1 + M_2)}\, a^3
 $$ (eq:kepler-third-law)
 
-As we saw in {ref}`Lecture 1 <lecture01>`, Newton showed that all three laws follow from his universal law of gravitation. Kepler's third law, in its Newtonian form (Eq. {eq}`eq:kepler-third-law`), is one of the most useful equations in astronomy: it connects an easily measured quantity (the orbital period) to the total mass of the system. The geometry of the three laws is summarised in {numref}`fig:kepler-laws`, and the resulting solar-system architecture, with all eight planets plus the asteroid belt and Kuiper Belt on a logarithmic semi-major-axis axis, is shown in {numref}`fig:ss-architecture`.
+As we saw in {ref}`Lecture 1 <lecture01>`, Newton showed that all three laws follow from his universal law of gravitation. Kepler's third law, in its Newtonian form (Eq. {eq}`eq:kepler-third-law`), is one of the most useful equations in astronomy: it connects an easily measured quantity (the orbital period) to the total mass of the system. The geometry of the three laws is summarised in {numref}`fig:kepler-laws`, and the resulting solar-system architecture, with all eight planets plus the asteroid belt and Kuiper Belt on a logarithmic semi-major-axis scale, is shown in {numref}`fig:ss-architecture`.
 
 ```{figure} figures/kepler_laws.svg
 :name: fig:kepler-laws
@@ -572,7 +572,7 @@ The disk-flow patterns that drive these torques, including the spiral wakes at L
 :width: 600px
 :align: center
 
-Disk surface-density response to an embedded planet, showing the outer-Lindblad spiral wake and the partial gap carved by the planet's gravity. The inset zoom shows the horseshoe streamlines and density-wave structure in the co-orbital region that exchange angular momentum with the planet. The torque imbalance between these structures sets whether the planet migrates inward or outward and underlies both Type I and Type II migration. Adapted from {cite:t}`Paardekooper2023`.
+Disk surface-density response to an embedded Neptune-mass planet ($q = 10^{-4}$) on a circular orbit. Top panel: the planet launches a one-armed spiral density wave; the colour scale gives the surface density relative to its unperturbed value (no gap is cleared at this planet mass). Bottom panel: zoom on the co-orbital region, with schematic streamlines marking the horseshoe trajectories and the trajectories feeding the spiral wave. The imbalance between the inner and outer wave torques, together with the corotation torque from the horseshoe region, sets the direction and speed of Type I migration. Adapted from {cite:t}`Paardekooper2023`, Fig. 2.
 ```
 
 ### The Nice model

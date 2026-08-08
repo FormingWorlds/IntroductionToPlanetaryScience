@@ -589,7 +589,7 @@ Order:
 
 1. L01 notes (LOCKED 2026-05-17, commit `ec67259`)
 2. L01 slides (LOCKED 2026-08-08; 95-page deck signed off and deployed)
-3. L02 notes
+3. L02 notes (LOCKED 2026-08-08)
 4. L02 slides
 5. Worksheet 01 (L01 + L02)
 6. L03 notes
@@ -610,7 +610,7 @@ Order:
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
 | 1 | Introduction & history | **LOCKED 2026-05-17** (31 figures, three-question closer + L02 bridge, final 5-agent adversarial review with 28 fixes) | High |
-| 2 | Planet formation & orbital dynamics | Lock-down in progress (2026-08-08: full source-verification sweep; DSHARP gallery + three-phase core-accretion figures swapped in, four self-made figures rebuilt from tracked scripts, ~40 caption/body/citation corrections; closer section pending) | High |
+| 2 | Planet formation & orbital dynamics | **LOCKED 2026-08-08** (25 figures all source- or pixel-verified, two swapped to genuine source figures, five rebuilt from tracked scripts; ~55 corrections across five verification dimensions; three-question closer + bridge to L03) | High |
 | 3 | Planetary heat & energy transport | Verified | High |
 | 4 | Chemical differentiation & magnetospheres | Verified | High |
 | 5 | Atmospheres I | Verified | High |
