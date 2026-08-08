@@ -619,6 +619,21 @@ The study of planet formation has been transformed by high-resolution imaging of
 Theoretical advances have been consolidated in the *Protostars and Planets VII* review volume {cite:p}`Drazkowska2023`, which presents an updated synthesis of planet formation theory incorporating ALMA constraints. Key developments include refined models of the streaming instability that forms planetesimals, improved treatments of pebble accretion in evolving disks, new constraints on giant-planet formation timescales from isotopic analyses of meteorites {cite:p}`Kruijer2017`, and the discovery of Jupiter's dilute core in Juno gravity data {cite:p}`Wahl2017` ({ref}`Lecture 8 <lecture08>`). Together these suggest that giant-planet cores grow within the first few Myr of disk evolution, before the gas disperses, although how early Jupiter's core in particular had to form is still contested ({ref}`Lecture 12 <lecture12>`, {ref}`Lecture 14 <lecture14>`).
 
 
+## Three questions to take forward
+
+The material of this lecture condenses into three questions worth carrying through the rest of the course.
+
+**1. How does nature build a planet out of dust?** Not by patient sticking alone: collisional growth stalls at the bouncing, fragmentation, and radial-drift barriers ({numref}`fig:growth-barriers`), and the leap from pebbles to planetesimals requires the collective physics of the streaming instability ({numref}`fig:streaming`). From there, gravitational focusing, pebble accretion, and gas capture assemble planets across twelve orders of magnitude in size ({numref}`fig:core-accretion`). Where and when the first planetesimals formed, and how early Jupiter's core grew, remain genuinely open ({ref}`Lecture 12 <lecture12>`, {ref}`Lecture 14 <lecture14>`).
+
+**2. Why does an orbit's energy depend only on its semi-major axis?** The vis-viva equation (Eq. {eq}`eq:vis-viva`) compresses all of Keplerian dynamics into one statement: $a$ fixes the energy, $e$ merely redistributes speed along the orbit, from Halley's 54.5 km s$^{-1}$ plunge at perihelion to its 0.91 km s$^{-1}$ crawl at aphelion ({numref}`fig:visviva`). Kepler's third law turns any measured period into a mass. These two tools carry directly to the exoplanet detection methods of {ref}`Lecture 13 <lecture13>`.
+
+**3. Why is Io the most volcanically active body in the solar system?** Because orbital dynamics has thermal consequences: the Laplace resonance forces an eccentricity of just 0.004 ({numref}`fig:laplace-resonance`), which tidal flexing converts into more heat per kilogram than radioactivity provides anywhere else ({numref}`fig:io-volcanism`). A locked moon on a circular orbit would be geologically dead; a resonance keeps Io molten.
+
+## Looking ahead to Lecture 3
+
+This lecture assembled the planets and set their orbits; the next asks what happens inside them. {ref}`Lecture 3 <lecture03>` follows the energy: the heat delivered by accretion and differentiation, the short-lived radionuclides (led by $^{26}\mathrm{Al}$, half-life 0.72 Myr) that melted even small planetesimals, the long-lived isotopes that still power Earth's 47 TW heat flow today, and the tidal dissipation whose consequences we just saw on Io. It then turns to how that heat escapes, by conduction and by convection, because the balance between the two decides whether a planet convects, sustains a dynamo, and stays geologically alive.
+
+
 ## References
 
 ```{bibliography}
