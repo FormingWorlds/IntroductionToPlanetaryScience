@@ -83,8 +83,9 @@ def make_plot() -> Path:
     # ------- Panel (a): cartoon -------
     ax_geom.set_aspect("equal")
 
-    # Primary
-    primary = mpatches.Circle((0, 0), 0.55, color="#f4c542",
+    # Primary, drawn with radius 1.0 in plot units so the dashed circle
+    # at 2.46 units sits at the labelled 2.46 R_p.
+    primary = mpatches.Circle((0, 0), 1.0, color="#f4c542",
                               ec="#a87f1d", lw=1.2)
     ax_geom.add_patch(primary)
     ax_geom.text(0, 0, "Primary", ha="center", va="center", fontsize=10)

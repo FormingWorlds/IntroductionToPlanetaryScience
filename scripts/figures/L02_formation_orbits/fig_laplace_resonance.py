@@ -59,25 +59,35 @@ def make_plot() -> Path:
 
     fig, (ax_orbits, ax_periods) = plt.subplots(1, 2, figsize=(10, 4.5))
 
-    # Panel (a): orbits
+    # Panel (a): orbits, drawn at a Europa-Ganymede conjunction. The
+    # Laplace angle librates about 180 deg, so Io sits on the OPPOSITE
+    # side of Jupiter at these conjunctions; a triple conjunction never
+    # occurs.
     theta = np.linspace(0, 2 * np.pi, 360)
+    moon_phase = {"Io": np.pi, "Europa": 0.0, "Ganymede": 0.0}
     for name, p in MOONS.items():
         a = p["a_kkm"]
         ax_orbits.plot(a * np.cos(theta), a * np.sin(theta),
                        color=p["color"], lw=1.5, label=name)
-        # Conjunction-snapshot point at theta=0
-        ax_orbits.plot(a, 0, "o", color=p["color"],
-                       markeredgecolor="black", markersize=8, zorder=5)
+        phi = moon_phase[name]
+        ax_orbits.plot(a * np.cos(phi), a * np.sin(phi), "o",
+                       color=p["color"], markeredgecolor="black",
+                       markersize=8, zorder=5)
 
     # Jupiter at origin (visually exaggerated for legibility)
     ax_orbits.plot(0, 0, "o", color="orange", markersize=22,
                    markeredgecolor="brown", label="Jupiter")
 
-    # Conjunction line annotation
+    # Conjunction annotations
     ax_max = MOONS["Ganymede"]["a_kkm"] * 1.1
-    ax_orbits.annotate("conjunction\nline",
+    ax_orbits.annotate("Europa-Ganymede\nconjunction",
                        xy=(MOONS["Ganymede"]["a_kkm"], 0),
-                       xytext=(MOONS["Ganymede"]["a_kkm"] * 1.05, 200),
+                       xytext=(MOONS["Europa"]["a_kkm"] * 1.15, 320),
+                       fontsize=9, color="dimgray",
+                       arrowprops=dict(arrowstyle="-", color="dimgray", lw=0.7))
+    ax_orbits.annotate("Io: always on the\nfar side at these\nconjunctions",
+                       xy=(-MOONS["Io"]["a_kkm"], 0),
+                       xytext=(-1150, 700), ha="left",
                        fontsize=9, color="dimgray",
                        arrowprops=dict(arrowstyle="-", color="dimgray", lw=0.7))
 

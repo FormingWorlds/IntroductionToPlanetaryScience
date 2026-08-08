@@ -21,7 +21,7 @@ where $c_s$ is the sound speed, $G$ is the gravitational constant, and $\rho$ is
 
 ### From collapse to disk
 
-As a cloud core collapses, conservation of angular momentum plays a decisive role. Even a small initial rotation (inevitable in a turbulent interstellar medium) is amplified enormously as the material contracts. A cloud core with radius $R_0 \sim 0.1$ pc collapsing to stellar scales ($\sim 1$ $\Rsun$) would need to spin up by a factor of $\sim 10^7$ if angular momentum were perfectly conserved. The material cannot all fall onto the central protostar; instead, it settles into a **protoplanetary disk** (also called a circumstellar disk) orbiting the young star.
+As a cloud core collapses, conservation of angular momentum plays a decisive role. Even a small initial rotation (inevitable in a turbulent interstellar medium) is amplified enormously as the material contracts. For a cloud core with radius $R_0 \sim 0.1$ pc collapsing to stellar scales ($\sim 1$ $\Rsun$), perfect angular-momentum conservation would demand that the rotation rate rise by a factor of $(R_0/\Rsun)^2 \sim 10^{13}$, an absurd spin no star could sustain. The material cannot all fall onto the central protostar; instead, it settles into a **protoplanetary disk** (also called a circumstellar disk) orbiting the young star.
 
 The result is a flattened, rotating structure of gas and dust extending from a few stellar radii to hundreds of AU. The central protostar accretes material from the disk over timescales of $\sim 1$–$3$ Myr, while the disk itself becomes the raw material for planet formation. Such regions are visible today in nearby star-forming complexes ({numref}`fig:carina-cliffs`).
 
@@ -40,7 +40,7 @@ Protoplanetary disks are not uniform: they have well-defined radial and vertical
 
 - **Temperature gradient:** The disk is heated by stellar irradiation and viscous dissipation. Temperatures range from $> 1500$ K in the innermost regions (where silicates are vaporised) to $< 30$ K in the outer disk {cite:p}`Andrews2020`. This temperature profile determines which materials can condense as solids at each distance.
 
-- **Surface density:** The mass distribution follows roughly a power-law profile $\Sigma(r) \propto r^{-p}$ with $p \approx 0.5$–$1.5$, meaning most of the mass is concentrated in the inner disk. Inferred disk masses decline from a few percent of the stellar mass in the youngest, embedded systems to of order $0.1$% by the Class II stage, although these estimates carry substantial systematic uncertainty {cite:p}`Miotello2023`.
+- **Surface density:** The mass distribution follows roughly a power-law profile $\Sigma(r) \propto r^{-p}$ with $p \approx 0.5$–$1.5$, meaning the surface density is highest in the inner disk (the integrated mass budget, by contrast, is dominated by the vastly larger area of the outer disk). Inferred disk masses decline from a few percent of the stellar mass in the youngest, embedded systems to of order $0.1$% by the Class II stage, although these estimates carry substantial systematic uncertainty {cite:p}`Miotello2023`.
 
 - **Dust-to-gas ratio:** In the interstellar medium, dust makes up about 1% of the total mass. In disks, this ratio can be locally enhanced by dust settling to the midplane and radial drift, with important consequences for planet formation.
 
@@ -110,7 +110,7 @@ Disk dispersal is driven by a combination of viscous accretion onto the star, ph
 
 ## Dust coagulation and planetesimal formation
 
-The raw building material for planets consists of sub-micrometre dust grains (silicates, metal oxides, and, beyond the snow line, ices) embedded in the gas disk. Growing from micrometre-sized dust to thousand-kilometre planets is a factor of $\sim 10^{13}$ in size, and the physics changes dramatically at each scale.
+The raw building material for planets consists of sub-micrometre dust grains (silicates, metal oxides, and, beyond the snow line, ices) embedded in the gas disk. Growing from micrometre-sized dust to thousand-kilometre planets is a factor of $\sim 10^{12}$ in size, and the physics changes dramatically at each scale.
 
 ### Grain growth: sticking and settling
 
@@ -195,7 +195,7 @@ $$
 \sigma_{\mathrm{eff}} = \pi R^2 \left(1 + \frac{v_{\mathrm{esc}}^2}{v_{\infty}^2}\right)
 $$ (eq:grav-focusing)
 
-where $R$ is the body's radius, $v_{\mathrm{esc}} = \sqrt{2GM/R}$ is the escape velocity, and $v_{\infty}$ is the relative velocity at infinity (approach velocity). When $v_{\mathrm{esc}} \gg v_{\infty}$ (which occurs when the random velocities of planetesimals are small), the focusing factor can be enormous. Because $v_{\mathrm{esc}}$ increases with mass, the largest body grows faster than its neighbours: this is **runaway growth**. A single body can rapidly outpace the rest of the swarm, reaching lunar to Mars mass within $\sim 10^5$–$10^6$ years at 1 AU {cite:p}`Kokubo1998`, although assembling the final terrestrial planets from these embryos takes far longer ({ref}`Lecture 4 <lecture04>`).
+where $R$ is the body's radius, $v_{\mathrm{esc}} = \sqrt{2GM/R}$ is the escape velocity, and $v_{\infty}$ is the relative velocity at infinity (approach velocity). When $v_{\mathrm{esc}} \gg v_{\infty}$ (which occurs when the random velocities of planetesimals are small), the focusing factor can be enormous. Because $v_{\mathrm{esc}}$ increases with mass, the largest body grows faster than its neighbours: this is **runaway growth**. A single body can rapidly outpace the rest of the swarm, reaching roughly lunar mass within $\sim 10^5$ years at 1 AU {cite:p}`Kokubo1998`; growth toward Mars-mass embryos continues in the slower oligarchic phase described below, and assembling the final terrestrial planets takes far longer still ({ref}`Lecture 4 <lecture04>`).
 
 ### Oligarchic growth
 
@@ -292,7 +292,7 @@ The first five elements define the size, shape, and orientation of the orbit; th
 The four angular orbital elements. The reference plane is shown in grey; the orbital plane is tilted by the inclination $i$. The ascending node ($\Omega$) and argument of perihelion ($\omega$; labelled "argument of periapsis" in the figure, the general term) orient the orbit in space, and the true anomaly ($\nu$) locates the body along it. Credit: Lasunncty, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 ```
 
-In the solar system, most planets have nearly circular orbits ($e < 0.1$) and low inclinations ($i < 3^{\circ}$), reflecting the disk-like origin of the system. Exceptions include Mercury ($e = 0.206$, $i = 7.0^{\circ}$) and, among dwarf planets, Pluto ($e = 0.25$, $i = 17^{\circ}$), hinting at a more complex dynamical history.
+In the solar system, most planets have nearly circular orbits ($e < 0.1$) and low inclinations ($i \lesssim 3.5^{\circ}$), reflecting the disk-like origin of the system. Exceptions include Mercury ($e = 0.206$, $i = 7.0^{\circ}$) and, among dwarf planets, Pluto ($e = 0.25$, $i = 17^{\circ}$), hinting at a more complex dynamical history.
 
 
 ## Two-body problem and the vis-viva equation
@@ -474,7 +474,7 @@ This three-body resonance is maintained by tidal interactions with Jupiter. The 
 :width: 500px
 :align: center
 
-The Laplace resonance of the Galilean moons. Io, Europa, and Ganymede have orbital periods in the ratio 1 : 2 : 4, so the pattern of successive conjunctions repeats every Ganymede period (four Io orbits). The resulting periodic gravitational kicks force a non-zero eccentricity on Io ($e \approx 0.004$), driving the tidal heating that powers its volcanism {cite:p}`Peale1979`.
+The Laplace resonance of the Galilean moons. Panel (a): the orbits of Io, Europa, and Ganymede to scale, drawn at a Europa-Ganymede conjunction; the resonance locks the moons' phases such that Io is always on the opposite side of Jupiter at these conjunctions, so a triple conjunction never occurs. Panel (b): the orbital periods stand in the ratio 1 : 2 : 4, and the pattern of successive conjunctions repeats every Ganymede period (four Io orbits). The resulting periodic gravitational kicks force a non-zero eccentricity on Io ($e \approx 0.004$), driving the tidal heating that powers its volcanism {cite:p}`Peale1979`.
 ```
 
 ```{figure} figures/io_volcanism.avif
@@ -490,7 +490,7 @@ Half-disk view of Jupiter's moon Io imaged by the Galileo spacecraft, showing an
 
 ### The tidal force
 
-A tidal force arises whenever a gravitational field varies across the finite extent of an extended body. Consider a moon of radius $R_s$ at distance $d$ from a planet of mass $M_p$. The near side of the moon experiences a stronger gravitational pull than the far side, creating a differential force that tends to elongate the moon along the line connecting it to the planet. The tidal acceleration across the moon is approximately:
+A tidal force arises whenever a gravitational field varies across the finite extent of an extended body. Consider a moon of radius $R_s$ at distance $d$ from a planet of mass $M_p$. The near side of the moon experiences a stronger gravitational pull than the far side, creating a differential force that tends to elongate the moon along the line connecting it to the planet. The tidal acceleration between the moon's centre and its near side is approximately:
 
 $$
 \Delta a_{\mathrm{tidal}} \approx \frac{2 G M_p R_s}{d^3}
@@ -529,7 +529,7 @@ $$ (eq:roche-limit)
 :width: 750px
 :align: center
 
-Roche limit geometry. (a) A self-gravitating fluid satellite (blue) is rounded at safe orbital distance, but at the Roche limit $d_R$ the differential tidal acceleration across its diameter exceeds its self-gravity and it is stretched and torn apart along the line to the primary. (b) Tidal acceleration across a $200$ km icy body and the body's surface self-gravity, plotted against orbital distance from Saturn (in units of $R_p$). The simple crossing of the two curves defines the *rigid* Roche limit at $d_R^{\mathrm{rigid}} \approx 1.11\,R_p$ for $\rho_s = 1000$ kg m$^{-3}$; the textbook *fluid* Roche limit $d_R \approx 2.17\,R_p$ (red dotted line) carries an additional factor that accounts for tidal deformation of the satellite.
+Roche limit geometry. (a) A self-gravitating fluid satellite (blue) is rounded at safe orbital distance, but at the Roche limit $d_R$ the differential tidal acceleration between its centre and its surface exceeds its self-gravity and it is stretched and torn apart along the line to the primary. (b) Tidal acceleration between the centre and the surface of a $200$ km icy body compared with the body's surface self-gravity, plotted against orbital distance from Saturn (in units of $R_p$). The simple crossing of the two curves defines the *rigid* Roche limit at $d_R^{\mathrm{rigid}} \approx 1.11\,R_p$ for $\rho_s = 1000$ kg m$^{-3}$; the textbook *fluid* Roche limit $d_R \approx 2.17\,R_p$ (red dotted line) carries an additional factor that accounts for tidal deformation of the satellite.
 ```
 
 Evaluating Eq. {eq}`eq:roche-limit` for Saturn ($R_p = 58{,}232$ km, $\rho_p = 687$ kg m$^{-3}$) and an icy satellite ($\rho_s \approx 1000$ kg m$^{-3}$):
@@ -538,14 +538,14 @@ $$
 d_R \approx 2.46 \times 58{,}232 \times \left(\frac{687}{1000}\right)^{1/3} \approx 126{,}000 \text{ km} \approx 2.17\, R_p
 $$
 
-Saturn's main ring system ({numref}`fig:saturn-rings`), the D through A rings, extends from about 67,000 km to 137,000 km from Saturn's centre, mostly within this fluid Roche limit; the narrow F ring lies just beyond, at $\sim 140{,}000$ km. The outer part of the A ring lies slightly beyond the nominal boundary: its sharp outer edge is maintained by a 7:6 mean-motion resonance with the moon Janus, and the ring particles are porous, so their density is below that of solid ice, which shifts the effective Roche limit outward. The rings consist of countless small particles that cannot coalesce into a moon because tidal forces prevent their gravitational aggregation. We will derive the Roche limit in full in {ref}`Lecture 11 <lecture11>`.
+Saturn's main ring system ({numref}`fig:saturn-rings`), the D through A rings, extends from about 67,000 km to 137,000 km from Saturn's centre; the narrow F ring lies just beyond, at $\sim 140{,}000$ km. The dense B and C rings sit well inside this fluid Roche limit, while much of the A ring's radial extent lies beyond the nominal boundary: its sharp outer edge is maintained by a 7:6 mean-motion resonance with the moon Janus, and the ring particles are porous, so their density is below that of solid ice, which shifts the effective Roche limit outward. The rings consist of countless small particles that cannot coalesce into a moon because tidal forces prevent their gravitational aggregation. We will derive the Roche limit in full in {ref}`Lecture 11 <lecture11>`.
 
 ```{figure} figures/saturn_rings.avif
 :name: fig:saturn-rings
 :width: 700px
 :align: center
 
-Saturn and its rings imaged by the Cassini wide-angle camera in April 2016. The main ring system spans roughly $67{,}000$ km to $137{,}000$ km from Saturn's centre and lies almost entirely within the fluid Roche limit at $\sim 126{,}000$ km. The countless cm- to m-sized icy particles that make up the rings cannot coalesce into a moon because Saturn's tides exceed their mutual self-gravity. Credit: NASA/JPL-Caltech/Space Science Institute (PIA21046).
+Saturn and its rings imaged by the Cassini wide-angle camera in April 2016. The main ring system spans roughly $67{,}000$ km to $137{,}000$ km from Saturn's centre, with the dense B and C rings well inside the fluid Roche limit at $\sim 126{,}000$ km and much of the A ring's width just outside it. The countless cm- to m-sized icy particles that make up the rings cannot coalesce into a moon because Saturn's tides exceed their mutual self-gravity. Credit: NASA/JPL-Caltech/Space Science Institute (PIA21046).
 ```
 
 
@@ -555,11 +555,11 @@ The orbits of planets are not fixed after formation. Interactions between planet
 
 ### Planet-disk interactions
 
-A planet embedded in a gaseous disk excites spiral density waves at **Lindblad resonances** (where the disk material orbits at frequencies commensurate with the planet's orbital frequency plus/minus its epicyclic frequency). These waves carry angular momentum away from the planet. Additionally, material co-orbiting with the planet (at the **corotation resonances**) exchanges angular momentum through horseshoe-shaped streamlines. The net torque on the planet determines whether it migrates inward or outward.
+A planet embedded in a gaseous disk excites spiral density waves at **Lindblad resonances** (the locations where the orbital frequency of the disk material differs from the planet's by $\pm \kappa/m$, with $\kappa$ the local epicyclic frequency and $m$ a positive integer, so that the planet's periodic forcing resonates with the gas's radial oscillations). These waves carry angular momentum away from the planet. Additionally, material co-orbiting with the planet (at the **corotation resonances**) exchanges angular momentum through horseshoe-shaped streamlines. The net torque on the planet determines whether it migrates inward or outward.
 
 ### Types of migration
 
-- **Type I migration:** A low-mass planet (up to a few Earth masses) remains fully embedded in the disk and migrates due to the imbalance between inner and outer Lindblad torques. In a simple disk model, the outer torque slightly dominates, driving inward migration on timescales of $\sim 10^5$ years, potentially too fast, suggesting that additional physics (thermal effects, magnetic fields, disk structure) must slow or reverse migration in many cases.
+- **Type I migration:** A low-mass planet (below the gap-opening threshold, up to a few tens of Earth masses for typical disk parameters) remains fully embedded in the disk and migrates due to the imbalance between inner and outer Lindblad torques. In a simple disk model, the outer torque slightly dominates, driving inward migration on timescales of $\sim 10^5$ years, potentially too fast, suggesting that additional physics (thermal effects, magnetic fields, disk structure) must slow or reverse migration in many cases.
 
 - **Type II migration:** A massive planet (roughly Jupiter-mass and above) opens a **gap** in the disk, an annular region cleared of gas by the planet's gravity. The planet then migrates on the slower viscous timescale of the disk ($\sim 10^5$–$10^6$ years) as the disk accretes onto the star.
 
