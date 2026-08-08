@@ -128,7 +128,7 @@ The "Great Blue Spot", an isolated region of intense magnetic flux near Jupiter'
 Io is Jupiter's innermost large moon and the most volcanically active body in the solar system.
 Its discovery as one of the four "Medicean stars" by Galileo in 1610 was the first direct observation of a body orbiting another planet.
 Modern remote sensing reveals about 400 active volcanic centres and a global heat output of about $10^{14}$ W, dissipated as tidally driven volcanism rather than radiogenic heat ({ref}`Lecture 3 <lecture03>`).
-This staggering heat flow is sustained by tidal flexing in the eccentric, locked-in 1:2:4 Laplace mean-motion resonance with Europa and Ganymede, identified theoretically by {cite:t}`Peale1979gas` immediately before the Voyager 1 flyby provided the first images of Io's volcanism in 1979.
+This staggering heat flow is sustained by tidal flexing in the eccentric, locked-in 1:2:4 Laplace mean-motion resonance with Europa and Ganymede, identified theoretically by {cite:t}`Peale1979` immediately before the Voyager 1 flyby provided the first images of Io's volcanism in 1979.
 
 ```{figure} figures/io_loki_volcano.avif
 :align: center
