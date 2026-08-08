@@ -1,0 +1,14 @@
+{
+  "purpose": "Fig. fig:tidal-locking: schematic contrast of free vs synchronous rotation.",
+  "construction": {
+    "orbital_phases_deg": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "panel_a": "spin faster than orbit: surface marker bearing = 2x orbital phase",
+    "panel_b": "synchronous: surface marker always points at the planet"
+  },
+  "license_note": "Course-original schematic; no external data."
+}

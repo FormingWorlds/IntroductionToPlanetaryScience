@@ -96,12 +96,13 @@ def make_plot() -> Path:
     ax_geom.plot(d_R * np.cos(theta), d_R * np.sin(theta),
                  color="#d62728", lw=1.0, linestyle="--")
 
-    # Safe satellite (rounded)
-    safe = mpatches.Circle((1.0, 1.4), 0.25, color="#a8c8ff",
+    # Safe satellite (rounded), placed OUTSIDE the Roche circle
+    safe = mpatches.Circle((2.35, 2.0), 0.25, color="#a8c8ff",
                            ec="#1f4f99", lw=1.0)
     ax_geom.add_patch(safe)
-    ax_geom.annotate("Safe distance\n(spherical)", xy=(1.0, 1.4),
-                     xytext=(1.5, 2.05), fontsize=9, ha="center")
+    ax_geom.annotate("Safe distance\n(spherical)", xy=(2.35, 2.0),
+                     xytext=(2.9, 1.35), fontsize=9, ha="center",
+                     bbox=dict(facecolor="white", edgecolor="none", alpha=0.9))
 
     # Stretched satellite at Roche limit
     stretched = mpatches.Ellipse((d_R, -0.05), 0.6, 0.22,
@@ -114,12 +115,15 @@ def make_plot() -> Path:
                      arrowprops=dict(arrowstyle="->", color="#d62728", lw=1.5))
 
     ax_geom.text(d_R, -0.55, "At Roche limit $d_R$\n(stretched, breaks up)",
-                 ha="center", fontsize=9)
+                 ha="center", fontsize=9,
+                 bbox=dict(facecolor="white", edgecolor="none", alpha=0.9))
     ax_geom.text(-2.6, 2.45, r"$d_R \approx 2.46\,R_p\,(\rho_p/\rho_s)^{1/3}$",
-                 fontsize=10, color="#a83232")
+                 fontsize=10, color="#a83232",
+                 bbox=dict(facecolor="white", edgecolor="none", alpha=0.9))
     ax_geom.text(-2.6, 2.08,
                  r"(dashed circle: equal-density case $\rho_p = \rho_s$)",
-                 fontsize=8, color="#a83232", style="italic")
+                 fontsize=8, color="#a83232", style="italic",
+                 bbox=dict(facecolor="white", edgecolor="none", alpha=0.9))
 
     ax_geom.set_xlim(-3.0, 3.5)
     ax_geom.set_ylim(-2.0, 2.7)

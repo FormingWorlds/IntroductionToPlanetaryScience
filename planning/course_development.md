@@ -610,7 +610,7 @@ Order:
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
 | 1 | Introduction & history | **LOCKED 2026-05-17** (31 figures, three-question closer + L02 bridge, final 5-agent adversarial review with 28 fixes) | High |
-| 2 | Planet formation & orbital dynamics | Lock-down in progress (pre-sweep fixes 2026-08-08: Nice-model five-planet caption, Roche A-ring physics, Öberg C/O caption) | High |
+| 2 | Planet formation & orbital dynamics | Lock-down in progress (2026-08-08: full source-verification sweep; DSHARP gallery + three-phase core-accretion figures swapped in, four self-made figures rebuilt from tracked scripts, ~40 caption/body/citation corrections; closer section pending) | High |
 | 3 | Planetary heat & energy transport | Verified | High |
 | 4 | Chemical differentiation & magnetospheres | Verified | High |
 | 5 | Atmospheres I | Verified | High |

@@ -34,16 +34,13 @@ The "Cosmic Cliffs" of the Carina Nebula imaged by JWST/NIRCam. Embedded protost
 ```
 
 
-
-
-
 ### Disk structure and properties
 
 Protoplanetary disks are not uniform: they have well-defined radial and vertical structure governed by the balance of gravity, pressure, and rotation:
 
-- **Temperature gradient:** The disk is heated by stellar irradiation and viscous dissipation. Temperatures range from $> 1500$ K in the innermost regions (where silicates are vaporised) to $< 30$ K in the outer disk. This temperature profile determines which materials can condense as solids at each distance.
+- **Temperature gradient:** The disk is heated by stellar irradiation and viscous dissipation. Temperatures range from $> 1500$ K in the innermost regions (where silicates are vaporised) to $< 30$ K in the outer disk {cite:p}`Andrews2020`. This temperature profile determines which materials can condense as solids at each distance.
 
-- **Surface density:** The mass distribution follows roughly a power-law profile $\Sigma(r) \propto r^{-p}$ with $p \approx 0.5$–$1.5$, meaning most of the mass is concentrated in the inner disk. Typical total disk masses are $\sim 0.01$–$0.1$ $\Msun$, a few percent of the stellar mass {cite:p}`Miotello2023`.
+- **Surface density:** The mass distribution follows roughly a power-law profile $\Sigma(r) \propto r^{-p}$ with $p \approx 0.5$–$1.5$, meaning most of the mass is concentrated in the inner disk. Inferred disk masses decline from a few percent of the stellar mass in the youngest, embedded systems to of order $0.1$% by the Class II stage, although these estimates carry substantial systematic uncertainty {cite:p}`Miotello2023`.
 
 - **Dust-to-gas ratio:** In the interstellar medium, dust makes up about 1% of the total mass. In disks, this ratio can be locally enhanced by dust settling to the midplane and radial drift, with important consequences for planet formation.
 
@@ -62,12 +59,12 @@ Edge-on view of the embedded protoplanetary disk around HH 30, imaged by HST. Th
 :width: 600px
 :align: center
 
-Schematic vertical and radial structure of a protoplanetary disk. The dust temperature decreases with radius from $> 1500$ K at the silicate sublimation front to $< 30$ K beyond the CO snow line; the gas scale height $H/r$ increases with radius, producing a flared geometry. Adapted from {cite:t}`Andrews2020`; see also {cite:t}`WilliamsCieza2011` for an earlier review of disk structure.
+Schematic cross-section of a protoplanetary disk. Gas is shown in grayscale and solids with exaggerated sizes; the flared geometry and the settling of larger solids to the dense midplane are directly visible. The left half labels the observational tracer of each region ($\mathrm{CO}$ and other emission lines from the disk surface, infrared scattered light from small grains in the atmosphere, (sub-)mm/cm continuum from large grains near the midplane); the right half gives the structural vocabulary (gas *atmosphere* with small suspended grains, *midplane* layer of gas and larger solids). Adapted from {cite:t}`Andrews2020`, Fig. 1; see also {cite:t}`WilliamsCieza2011` for an earlier review of disk structure.
 ```
 
 ### The snow line and volatile distribution
 
-A critical feature of any protoplanetary disk is the **snow line** (or ice line): the distance from the star beyond which water can condense as ice. In the solar nebula, this was located at roughly 2.5–3.5 AU, between the orbits of Mars and Jupiter. The snow line matters because:
+A critical feature of any protoplanetary disk is the **snow line** (or ice line): the distance from the star beyond which water can condense as ice. In the solar nebula, this was located at roughly 2.5–3.5 AU, between the orbits of Mars and Jupiter. Quoted snow-line distances vary because the snow line moves: while the disk is young and accretion heating is strong it can sit out at $\sim 5$ AU, and it migrates inward as the accretion rate declines and the disk cools {cite:p}`Drazkowska2023,Lichtenberg2021`; the 2.5–3.5 AU range is the location imprinted on the asteroid belt's compositional gradient ({ref}`Lecture 4 <lecture04>`, {ref}`Lecture 12 <lecture12>`). The snow line matters because:
 
 1. **Beyond the snow line**, solid material is much more abundant: adding water ice to the rocky/metallic inventory roughly triples the available solid mass.
 2. **The CHNOPS elements** (carbon, hydrogen, nitrogen, oxygen, phosphorus, sulphur), essential for biology, are distributed between volatile and refractory phases depending on local disk temperature {cite:p}`Krijt2023`. The location where a planet forms relative to various ice lines determines its initial volatile budget.
@@ -79,7 +76,7 @@ Ice lines for other species ($\mathrm{CO_2}$, $\mathrm{CO}$, $\mathrm{N_2}$, $\m
 :width: 600px
 :align: center
 
-Sequential condensation of major volatile species across a protoplanetary disk and the resulting C/O ratio of grains (dashed) and gas (solid) as a function of disk radius. The H$_2$O ice line at $\sim 2$ AU lowers grain C/O and raises gas C/O; beyond the CO$_2$ ice line at $\sim 10$ AU the gas C/O reaches unity and holds that value out to the CO ice line at $\sim 40$ AU, beyond which essentially all carbon and oxygen are frozen onto grains and the grain C/O returns to the stellar value (dotted line, solar C/O $= 0.54$). The radial sequencing of these ice lines controls the volatile composition that forming planets inherit from their formation zone. The exact H$_2$O ice-line location is model-dependent and varies between $\sim 2$ and $3.5$ AU depending on the assumed disk temperature profile and accretion rate. Reproduced from {cite:t}`Oberg2011`, Fig. 1.
+Sequential condensation of major volatile species across a protoplanetary disk and the resulting C/O ratio of grains (dashed) and gas (solid) as a function of disk radius. The $\mathrm{H_2O}$ ice line at $\sim 2$ AU lowers grain C/O and raises gas C/O; beyond the $\mathrm{CO_2}$ ice line at $\sim 10$ AU the gas C/O reaches unity and holds that value out to the CO ice line at $\sim 40$ AU, beyond which essentially all carbon and oxygen are frozen onto grains and the grain C/O returns to the stellar value (dotted line, solar C/O $= 0.54$). The radial sequencing of these ice lines controls the volatile composition that forming planets inherit from their formation zone. The exact $\mathrm{H_2O}$ ice-line location is model-dependent and varies between $\sim 2$ and $3.5$ AU depending on the assumed disk temperature profile. Reproduced from {cite:t}`Oberg2011`, Fig. 1.
 ```
 
 ### Observational evidence: ALMA
@@ -94,19 +91,19 @@ The Atacama Large Millimeter/submillimeter Array (ALMA) has revolutionised our u
 ALMA image of the protoplanetary disk around HL Tauri, a young ($\sim 1$ Myr) star in the Taurus molecular cloud, at 1.3 mm wavelength {cite:p}`ALMAPartnership2015`. The concentric bright rings and dark gaps extend to $\sim 100$ AU. The gaps may be carved by forming planets, though other mechanisms (ice lines, magnetically driven structures) have also been proposed. Credit: ALMA (ESO/NAOJ/NRAO), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 ```
 
-The DSHARP survey (Disk Substructures at High Angular Resolution Project) extended this to 20 nearby disks ({numref}`fig:dsharp`), revealing that ring-and-gap substructure is ubiquitous: virtually every disk observed at high resolution shows some form of structure {cite:p}`Andrews2018`. This suggests that the conditions for planet formation are established very early in disk evolution.
+The DSHARP survey (Disk Substructures at High Angular Resolution Project) extended this to 20 nearby disks ({numref}`fig:dsharp`), revealing rings and gaps in every one of its targets {cite:p}`Andrews2018`. The sample was deliberately biased toward the largest and brightest disks, so not every disk need be so richly structured, but the result shows that the conditions for planet formation are established very early in disk evolution.
 
 ```{figure} figures/dsharp_composite.avif
 :name: fig:dsharp
 :width: 700px
 :align: center
 
-Composite of protoplanetary disks observed at $\sim 5$ AU resolution by the ALMA DSHARP survey {cite:p}`Andrews2018`. Each panel shows a different young system at the same spatial scale; rings, gaps, spirals, and crescents are present in essentially every target, demonstrating that such substructure is the rule rather than the exception in young disks. Credit: ALMA (ESO/NAOJ/NRAO), S. Andrews et al. 2018, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Gallery of 240 GHz ($1.25$ mm) continuum images of the 20 disks in the ALMA DSHARP sample, observed at $\sim 5$ AU resolution. Beam sizes and $10$ AU scale bars are shown in the lower left and right corners of each panel, and the colour stretch is chosen to bring out faint substructure. Rings and gaps appear in nearly every disk. Reproduced from {cite:t}`Andrews2018`, Fig. 3.
 ```
 
 ### Disk lifetimes
 
-Infrared excess surveys of young stellar clusters at different ages show that the fraction of stars retaining optically thick inner disks declines from $\sim 80$% at 1 Myr to $< 10$% by $\sim 6$ Myr {cite:p}`Haisch2001`. The median disk lifetime is roughly **3–5 Myr**, with significant scatter. This sets a hard deadline for gas giant formation: if a planet's core does not grow large enough to capture a gaseous envelope before the disk disperses, it will remain a rocky or icy body.
+Infrared excess surveys of young stellar clusters at different ages show that the fraction of stars retaining optically thick inner disks declines from $\sim 80$% at 1 Myr to $< 10$% by $\sim 6$ Myr {cite:p}`Haisch2001`. Half of all stars lose their inner disks within $\sim 3$ Myr, and essentially all disks are gone within **a few million years** (the $\sim 1$–$3$ Myr protostellar accretion phase noted above is the earlier, embedded part of this lifetime). This sets a hard deadline for gas giant formation: if a planet's core does not grow large enough to capture a gaseous envelope before the disk disperses, it will remain a rocky or icy body.
 
 Disk dispersal is driven by a combination of viscous accretion onto the star, photoevaporation by stellar ultraviolet and X-ray radiation, and possibly magnetohydrodynamic winds.
 
@@ -124,12 +121,12 @@ In the dense midplane of the disk, dust grains collide due to Brownian motion, t
 :width: 500px
 :align: center
 
-Microgravity laboratory experiments on the earliest stage of dust coagulation. Inset: image of fractal aggregates of $1.9$ µm SiO$_2$ monomers grown in space-shuttle experiments. Main panel: the mean aggregate mass (in units of monomer mass) grows as a power law in time under Brownian-motion-driven sticking, with fractal dimension $D \approx 1.4$. Adapted from {cite:t}`Blum2008`.
+Microgravity laboratory experiments on the earliest stage of dust coagulation. Inset: fractal aggregates (fractal dimension $D \approx 1.4$) of $1.9$ µm $\mathrm{SiO_2}$ monomers grown in space-shuttle experiments. Main panel: mean aggregate mass, in units of the monomer mass, versus time in units of the monomer collision timescale; the experimental points follow the solution of a monodisperse Smoluchowski coagulation model (curve) under Brownian-motion-driven sticking. Reproduced from {cite:t}`Blum2008`, Fig. 2.
 ```
 
 ### Growth barriers
 
-Beyond centimetre scales, several barriers impede further growth:
+Beyond centimetre scales, several barriers impede further growth {cite:p}`Birnstiel2016`:
 
 - **Bouncing barrier ($\sim$ mm):** At slightly higher collision velocities, compacted aggregates bounce off each other rather than sticking, stalling growth at millimetre sizes.
 
@@ -144,33 +141,33 @@ The combined effect of these barriers is summarised in {numref}`fig:growth-barri
 :width: 600px
 :align: center
 
-Grain size as a function of orbital distance, with the classical growth barriers indicated. The fragmentation barrier (red, shown for three fragmentation velocities) and drift barrier (blue) bound the achievable grain size; their location depends on disk radius and the local fragmentation velocity, so the canonical "mm bouncing, cm fragmentation, m drift" sequence is realised only at characteristic disk radii of a few AU. Together these barriers prevent classical incremental sticking from bridging the gap between dust grains and planetesimals, motivating collective mechanisms such as the streaming instability. Adapted from {cite:t}`Drazkowska2023` (see also {cite:t}`Birnstiel2016`).
+Maximum grain size as a function of orbital distance in a standard disk model. Red curves mark where typical collision velocities reach the threshold for bouncing ($v_{\mathrm{th}} = 1$ cm s$^{-1}$) or fragmentation ($1$ and $10$ m s$^{-1}$); the blue curve is the radial-drift limit, above which grains drift inward faster than they grow. Grey contours show constant Stokes number (the degree of aerodynamic coupling to the gas), and the black curves trace representative dust-growth histories. Depending on location and material strength, incremental sticking stalls between tens of µm and dm sizes, far short of planetesimals, motivating collective mechanisms such as the streaming instability. Adapted from {cite:t}`Drazkowska2023`, Fig. 4 (see also {cite:t}`Birnstiel2016`).
 ```
 
 ### The streaming instability
 
 The solution to the radial drift problem appears to be **collective effects**. When the local dust-to-gas mass ratio approaches or exceeds unity (which can happen through settling to the midplane and accumulation at pressure bumps), the drag interaction between dust and gas changes qualitatively. Instead of all particles drifting inward, they can spontaneously clump through a process called the **streaming instability** {cite:p}`Johansen2007`.
 
-In the streaming instability, particles that happen to be concentrated accelerate the local gas toward the Keplerian velocity (reducing the headwind), which attracts more drifting particles from further out. This positive feedback loop creates dense filaments and clumps of pebbles ({numref}`fig:streaming`). When these clumps become sufficiently dense, they collapse under their own gravity to form **planetesimals**, solid bodies with radii of $\sim 50$–$500$ km, essentially bypassing the difficult metre-to-kilometre growth step that direct sticking cannot achieve.
+In the streaming instability, particles that happen to be concentrated accelerate the local gas toward the Keplerian velocity (reducing the headwind), which attracts more drifting particles from further out. This positive feedback loop creates dense filaments and clumps of pebbles ({numref}`fig:streaming`). When these clumps become sufficiently dense, they collapse under their own gravity to form **planetesimals**, solid bodies with radii from tens to a few hundred kilometres {cite:p}`Simon2016`, essentially bypassing the difficult metre-to-kilometre growth step that direct sticking cannot achieve.
 
 ```{figure} figures/simon2016_streaming.avif
 :name: fig:streaming
 :width: 500px
 :align: center
 
-Snapshot of a local shearing-box simulation showing the streaming instability concentrating pebbles into dense filaments that exceed the local Roche density and gravitationally collapse into planetesimals. Reproduced from {cite:t}`Simon2016`.
+Four snapshots of the particle surface density (normalised to its mean, logarithmic colour scale; axes in gas scale heights $H$) in a local shearing-box simulation of the streaming instability. Time increases from top left to bottom right: drag feedback concentrates the pebbles into dense, azimuthally extended filaments, which fragment under their own gravity; in the final snapshot the bound clumps (red points) have collapsed into planetesimals. Reproduced from {cite:t}`Simon2016`, Fig. 3.
 ```
 
 ### Pebble accretion
 
-Once planetesimals exist, those that are large enough can grow efficiently by sweeping up the abundant mm- to cm-sized "pebbles" that pervade the disk. This **pebble accretion** mechanism ({numref}`fig:pebble-accretion`) {cite:p}`Lambrechts2012` is far more efficient than the classical picture of accreting only planetesimals, because gas drag causes pebbles to be strongly deflected toward the growing body, dramatically increasing the effective cross-section. Pebble accretion enables planetary cores to grow to $\sim 10$ $\Mearth$ within the disk lifetime, fast enough to trigger gas accretion and form giant planets.
+Once planetesimals exist, those that are large enough can grow efficiently by sweeping up the abundant mm- to cm-sized "pebbles" that pervade the disk. This **pebble accretion** mechanism ({numref}`fig:pebble-accretion`) {cite:p}`Lambrechts2012` is far more efficient than the classical picture of accreting only planetesimals, because gas drag causes pebbles to be strongly deflected toward the growing body, dramatically increasing the effective cross-section. Pebble accretion enables planetary cores to grow to $\sim 10$ $\Mearth$ within the disk lifetime, fast enough to trigger gas accretion and form giant planets. It is also self-limiting: once a planet grows massive enough, its gravity raises a pressure bump in the gas just outside its orbit that halts the inward pebble drift. Beyond this **pebble isolation mass** the planet's pebble supply is cut off, and so is that of the entire disk interior to its orbit, a mechanism we will meet again in {ref}`Lecture 12 <lecture12>` {cite:p}`Drazkowska2023`.
 
 ```{figure} figures/lambrechts2012_pebble_accretion.avif
 :name: fig:pebble-accretion
 :width: 500px
 :align: center
 
-Schematic of pebble accretion. Gas drag deflects mm- to cm-sized particles toward a growing planetary embryo, enlarging the effective accretion cross-section far beyond the geometric value. This mechanism allows cores to reach $\sim 10\,\Mearth$ within the disk lifetime, in contrast to the much slower classical planetesimal-only accretion. Adapted from {cite:t}`Lambrechts2012`.
+Pebble trajectories around a growing planetary embryo, in the frame co-moving with the embryo (axes in units of the Hill radius $r_{\mathrm{H}}$; the red circle marks the Hill sphere, inside which the embryo's gravity dominates over the stellar tide). Line styles distinguish three dimensionless friction times ($\tau_{\mathrm{f}} = 0.01$, $0.1$, $1$), i.e. increasing degrees of decoupling from the gas. Gas drag causes pebbles entering the Hill sphere to lose angular momentum and spiral onto the embryo, enlarging the effective accretion cross-section far beyond the geometric value and allowing cores to reach $\sim 10\,\Mearth$ within the disk lifetime. Adapted from {cite:t}`Lambrechts2012`.
 ```
 
 ### Preferential formation sites
@@ -182,7 +179,7 @@ Planet formation does not proceed uniformly throughout the disk. Planets prefere
 :width: 600px
 :align: center
 
-Modern roadmap of the planet-formation sequence: sub-µm dust grains in the parent molecular cloud, settling and coagulation in the disk midplane, planetesimal formation via the streaming instability, growth to planetary cores via pebble accretion, and either gas envelope capture (giant planets) or terrestrial planet assembly via giant impacts after disk dispersal. Adapted from {cite:t}`Drazkowska2023`.
+Roadmap of the planet-formation sequence, organised by body size from sub-µm dust to gas giants (note the reference bodies Ceres, Moon, Mars, Earth, and Jupiter along the axis). Grey bars span the size range over which each process operates: dust growth to pebbles, planetesimal formation, runaway and oligarchic growth, pebble accretion, giant impacts, and gas accretion; the hatched giant-impact bar marks the one process that continues after the gas disk has dispersed. Red bands mark the two great obstacles: radial drift at pebble-to-boulder sizes and planet migration at planetary masses. Adapted from {cite:t}`Drazkowska2023`.
 ```
 
 
@@ -198,11 +195,11 @@ $$
 \sigma_{\mathrm{eff}} = \pi R^2 \left(1 + \frac{v_{\mathrm{esc}}^2}{v_{\infty}^2}\right)
 $$ (eq:grav-focusing)
 
-where $R$ is the body's radius, $v_{\mathrm{esc}} = \sqrt{2GM/R}$ is the escape velocity, and $v_{\infty}$ is the relative velocity at infinity (approach velocity). When $v_{\mathrm{esc}} \gg v_{\infty}$ (which occurs when the random velocities of planetesimals are small), the focusing factor can be enormous. Because $v_{\mathrm{esc}}$ increases with mass, the largest body grows faster than its neighbours: this is **runaway growth**. A single body can rapidly outpace the rest of the swarm, reaching the mass of the Moon to Mars within $\sim 10^5$ years.
+where $R$ is the body's radius, $v_{\mathrm{esc}} = \sqrt{2GM/R}$ is the escape velocity, and $v_{\infty}$ is the relative velocity at infinity (approach velocity). When $v_{\mathrm{esc}} \gg v_{\infty}$ (which occurs when the random velocities of planetesimals are small), the focusing factor can be enormous. Because $v_{\mathrm{esc}}$ increases with mass, the largest body grows faster than its neighbours: this is **runaway growth**. A single body can rapidly outpace the rest of the swarm, reaching lunar to Mars mass within $\sim 10^5$–$10^6$ years at 1 AU {cite:p}`Kokubo1998`, although assembling the final terrestrial planets from these embryos takes far longer ({ref}`Lecture 4 <lecture04>`).
 
 ### Oligarchic growth
 
-Runaway growth is self-limiting. As the largest bodies grow, they gravitationally stir up the surrounding planetesimals, increasing the random velocities $v_{\infty}$ and thereby reducing the gravitational focusing factor. Growth transitions to the **oligarchic regime** {cite:p}`Kokubo1998`, in which a few dozen roughly equal-mass "oligarchs" dominate their local feeding zones, each separated by $\sim 5$–$10$ mutual Hill radii. They continue to grow by accreting the remaining smaller planetesimals, but more slowly, until each reaches its **isolation mass**: the mass at which it has consumed all available material in its feeding zone. In the inner solar system, the isolation mass is $\sim 0.01$–$0.1$ $\Mearth$, insufficient to explain the terrestrial planets.
+Runaway growth is self-limiting. As the largest bodies grow, they gravitationally stir up the surrounding planetesimals, increasing the random velocities $v_{\infty}$ and thereby reducing the gravitational focusing factor. Growth transitions to the **oligarchic regime** {cite:p}`Kokubo1998`, in which a few dozen roughly equal-mass "oligarchs" dominate their local feeding zones, each separated by $\sim 5$–$10$ mutual Hill radii. They continue to grow by accreting the remaining smaller planetesimals, but more slowly, until each reaches its **isolation mass**: the mass at which it has consumed all available material in its feeding zone. In the inner solar system, the isolation mass is $\sim 0.01$–$0.1$ $\Mearth$ {cite:p}`Kokubo1998`, insufficient to explain the terrestrial planets.
 
 ### Core accretion: building giant planets
 
@@ -215,17 +212,17 @@ The dominant model for giant planet formation is the **core accretion** model {c
 
 This model naturally explains why Jupiter and Saturn are massive (they formed in the solid-rich region beyond the snow line and reached critical core mass before disk dispersal) and why Uranus and Neptune are smaller (they likely reached critical mass too late, after most gas had been removed). The mass-vs-time evolution of the three core-accretion phases is shown in {numref}`fig:core-accretion`.
 
-```{figure} figures/drazkowska2023_core_accretion.avif
+```{figure} figures/helled2014_core_accretion.avif
 :name: fig:core-accretion
-:width: 600px
+:width: 550px
 :align: center
 
-Mass evolution of a forming giant planet in the core-accretion picture, originally proposed by {cite:t}`Pollack1996` with planetesimal accretion in Phase 1 and extended in modern models to include pebble accretion {cite:p}`Lambrechts2012`. Phase 1: rapid solid-core growth by planetesimal and pebble accretion. Phase 2: slow envelope contraction at near-constant total mass. Phase 3: runaway gas accretion once the gas envelope mass equals the core mass ($\sim 10$–$20\,\Mearth$ for the nominal Jupiter case), leading to a Jupiter-mass object on a $\sim 10^5$ yr timescale. Adapted from {cite:t}`Drazkowska2023`.
+Growth of a giant planet by core accretion, from a classic simulation of Jupiter's formation at $5.2$ AU in the framework of {cite:t}`Pollack1996`. Solid line: core mass; dash-dotted line: envelope mass; dashed line: total mass. The three phases are clearly visible: rapid core growth to $\sim 10\,\Mearth$ (Phase 1), a long plateau of slow, quasi-hydrostatic envelope growth (Phase 2), and runaway gas accretion after the envelope mass overtakes the core mass at the crossover point, at $2.3$ Myr in this run, reaching a Jupiter mass by $3$ Myr (Phase 3). Reproduced from {cite:t}`Helled2014`, Fig. 1; simulation from {cite:t}`Lissauer2009`.
 ```
 
 ### Gravitational instability: an alternative pathway
 
-An alternative scenario for gas giant formation is **direct gravitational instability** of the gas disk {cite:p}`Boss1997`. If a massive disk cools sufficiently rapidly, it can fragment into self-gravitating clumps that contract directly into giant planets, bypassing the slow step of building a solid core. This mechanism can form giant planets very quickly ($\sim 10^3$ years), but requires disk conditions (high mass, efficient cooling) that may only be realised at large orbital distances ($\gtrsim 30$–$50$ AU) or in unusually massive disks. It remains debated whether the giant planets of the solar system formed this way.
+An alternative scenario for gas giant formation is **direct gravitational instability** of the gas disk {cite:p}`Boss1997`. If a massive disk cools sufficiently rapidly, it can fragment into self-gravitating clumps that contract directly into giant planets, bypassing the slow step of building a solid core. This mechanism can form giant planets very quickly (on orbital timescales, $\sim 10^3$ years), but the required conditions of high disk mass and efficient cooling are only realised at large orbital distances ($\gtrsim 30$–$50$ AU) in unusually massive disks {cite:p}`KratterLodato2016`, so it is today considered a pathway for massive companions on wide orbits rather than for the solar system's giant planets.
 
 ### The giant impact phase
 
@@ -233,7 +230,7 @@ In the inner solar system, after the disk has dispersed and gas drag is no longe
 
 ### Geophysical evolution during formation
 
-Planet formation is not merely an assembly process: it drives profound geophysical changes. The energy delivered by accretion and giant impacts melts the growing planet, producing a global **magma ocean**. In this molten state, dense metallic iron sinks to form a core, while lighter silicates float to form the mantle, a process called **core-mantle differentiation**. Early radioactive heating from short-lived isotopes (particularly ${}^{26}\mathrm{Al}$, with a half-life of 0.7 Myr) can melt even small planetesimals, initiating differentiation before the planet has finished assembling {cite:p}`Lichtenberg2023`. The thermal and chemical state inherited from this formation epoch profoundly shapes a planet's subsequent evolution: its magnetic field, volcanic activity, atmospheric outgassing, and ultimately its habitability ({ref}`Lecture 3 <lecture03>`, {ref}`Lecture 4 <lecture04>`).
+Planet formation is not merely an assembly process: it drives profound geophysical changes. The energy delivered by accretion and giant impacts melts the growing planet, producing a global **magma ocean**. In this molten state, dense metallic iron sinks to form a core, while lighter silicates float to form the mantle, a process called **core-mantle differentiation**. Early radioactive heating from short-lived isotopes (particularly ${}^{26}\mathrm{Al}$, with a half-life of 0.72 Myr) can melt even small planetesimals, initiating differentiation before the planet has finished assembling {cite:p}`Lichtenberg2023`. The thermal and chemical state inherited from this formation epoch profoundly shapes a planet's subsequent evolution: its magnetic field, volcanic activity, atmospheric outgassing, and ultimately its habitability ({ref}`Lecture 3 <lecture03>`, {ref}`Lecture 4 <lecture04>`).
 
 
 ## Kepler's laws and orbital elements
@@ -254,7 +251,7 @@ $$
 P^2 = \frac{4\pi^2}{G(M_1 + M_2)}\, a^3
 $$ (eq:kepler-third-law)
 
-As we saw in {ref}`Lecture 1 <lecture01>`, Newton showed that all three laws follow from his universal law of gravitation. Kepler's third law, in its Newtonian form (Eq. {eq}`eq:kepler-third-law`), is one of the most useful equations in astronomy: it connects an easily measured quantity (the orbital period) to the total mass of the system. The geometry of the three laws is summarised in {numref}`fig:kepler-laws`, and the resulting solar-system architecture, with all eight planets plus the asteroid belt and Kuiper belt on a logarithmic semi-major-axis axis, is shown in {numref}`fig:ss-architecture`.
+As we saw in {ref}`Lecture 1 <lecture01>`, Newton showed that all three laws follow from his universal law of gravitation. Kepler's third law, in its Newtonian form (Eq. {eq}`eq:kepler-third-law`), is one of the most useful equations in astronomy: it connects an easily measured quantity (the orbital period) to the total mass of the system. The geometry of the three laws is summarised in {numref}`fig:kepler-laws`, and the resulting solar-system architecture, with all eight planets plus the asteroid belt and Kuiper Belt on a logarithmic semi-major-axis axis, is shown in {numref}`fig:ss-architecture`.
 
 ```{figure} figures/kepler_laws.svg
 :name: fig:kepler-laws
@@ -269,7 +266,7 @@ Illustration of Kepler's three laws of planetary motion. (1) Orbits are ellipses
 :width: 750px
 :align: center
 
-Architecture of the Solar System on a logarithmic semi-major axis scale. The eight planets, Pluto, the asteroid main belt, and the Kuiper belt are shown to scale in distance; symbol size is scaled by $\log(1 + R/R_\oplus)$ so that all bodies remain visible. The asteroid main belt sits between Mars and Jupiter, near the present-day H$_2$O snow line at $\sim 3$ AU separating the rocky inner planets from the gas and ice giants. Planetary semi-major axes from {cite:t}`NASAFactSheet`.
+Architecture of the Solar System on a logarithmic semi-major-axis scale. The eight planets and Pluto are drawn with symbol area scaled as $\log(1 + R/R_\oplus)$ so that all bodies remain visible; shaded spans mark the asteroid main belt ($2.1$–$3.3$ AU), the classical Kuiper Belt ($30$–$50$ AU), and the $2.5$–$3.5$ AU range in which the solar nebula's water snow line lay, separating the rocky inner planets from the gas and ice giants. Semi-major axes and radii from {cite:t}`NSSDCPlanetaryFactSheet`.
 ```
 
 ### Orbital elements
@@ -285,17 +282,17 @@ The orbit of a body in a gravitational field is fully described by **six orbital
 | Argument of perihelion | $\omega$ | Orientation of the ellipse within the orbital plane |
 | True anomaly | $\nu$ | Position of the body along the orbit at a given time |
 
-The first five elements define the size, shape, and orientation of the orbit; the sixth specifies where the body is at any moment. The geometric meaning of each element is illustrated in {numref}`fig:orbital-elements`.
+The first five elements define the size, shape, and orientation of the orbit; the sixth specifies where the body is at any moment. The geometric meaning of the four angular elements is illustrated in {numref}`fig:orbital-elements`; the remaining two, $a$ and $e$, set the size and shape of the ellipse itself.
 
 ```{figure} figures/orbital_elements.svg
 :name: fig:orbital-elements
 :width: 400px
 :align: center
 
-The six classical orbital elements. The reference plane is shown in grey; the orbital plane is tilted by the inclination $i$. The ascending node ($\Omega$) and argument of perihelion ($\omega$) orient the orbit in space. Credit: Lasunncty, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+The four angular orbital elements. The reference plane is shown in grey; the orbital plane is tilted by the inclination $i$. The ascending node ($\Omega$) and argument of perihelion ($\omega$; labelled "argument of periapsis" in the figure, the general term) orient the orbit in space, and the true anomaly ($\nu$) locates the body along it. Credit: Lasunncty, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 ```
 
-In the solar system, most planets have nearly circular orbits ($e < 0.1$) and low inclinations ($i < 3°$), reflecting the disk-like origin of the system. Exceptions include Mercury ($e = 0.206$, $i = 7.0°$) and, among dwarf planets, Pluto ($e = 0.25$, $i = 17°$), hinting at a more complex dynamical history.
+In the solar system, most planets have nearly circular orbits ($e < 0.1$) and low inclinations ($i < 3^{\circ}$), reflecting the disk-like origin of the system. Exceptions include Mercury ($e = 0.206$, $i = 7.0^{\circ}$) and, among dwarf planets, Pluto ($e = 0.25$, $i = 17^{\circ}$), hinting at a more complex dynamical history.
 
 
 ## Two-body problem and the vis-viva equation
@@ -338,7 +335,7 @@ $$
 v^2 = GM\left(\frac{2}{r} - \frac{1}{a}\right)
 $$
 
-The vis-viva equation tells us the speed $v$ of an orbiting body at any distance $r$ from the central mass, given the semi-major axis $a$. It has important special cases:
+Equation {eq}`eq:vis-viva` tells us the speed $v$ of an orbiting body at any distance $r$ from the central mass, given the semi-major axis $a$. It has important special cases:
 
 - **Circular orbit** ($r = a$): $v_{\mathrm{circ}} = \sqrt{GM/a}$
 - **Escape velocity** ($a \to \infty$, $E = 0$): $v_{\mathrm{esc}} = \sqrt{2GM/r}$
@@ -431,7 +428,7 @@ For a dramatic contrast, consider Halley's comet ($a = 17.83$ AU, $e = 0.967$):
 
 Halley's comet hurtles through the inner solar system at nearly twice Earth's speed, yet crawls beyond Neptune's orbit at less than 1 km s$^{-1}$. This enormous range is a direct consequence of the vis-viva equation applied to a highly eccentric orbit; both speed profiles are plotted in {numref}`fig:visviva`.
 
-**Note:** The vis-viva equation is the generalisation of the Kepler mass formula derived in {ref}`Lecture 1 <lecture01>`. There, we used a circular orbit ($r = a$) to get $v^2 = GM/a$, which is just the vis-viva equation with $r = a$.
+**Note:** The vis-viva equation generalises the circular-orbit force balance of {ref}`Lecture 1 <lecture01>`: there, setting the gravitational attraction equal to the centripetal acceleration gave $v^2 = GM/r$, which is the vis-viva equation for the special case $r = a$.
 ```
 
 ```{figure} figures/visviva_earth_halley.avif
@@ -462,7 +459,7 @@ Resonances are widespread in the solar system:
 
 ### The Laplace resonance
 
-The most famous resonance in the solar system is the **Laplace resonance** of Jupiter's three inner Galilean moons: Io, Europa, and Ganymede. Their orbital periods are in a 1:2:4 ratio {cite:p}`Peale1979`:
+The most famous resonance in the solar system is the **Laplace resonance** of Jupiter's three inner Galilean moons: Io, Europa, and Ganymede. Their orbital periods are in a 1:2:4 ratio (equivalently, mean motions $n_{\mathrm{Io}} : n_{\mathrm{Eur}} : n_{\mathrm{Gan}} = 4:2:1$; Io completes four orbits for each orbit of Ganymede):
 
 | Moon | Period (days) | Ratio to Io |
 |------|:---:|:---:|
@@ -470,14 +467,14 @@ The most famous resonance in the solar system is the **Laplace resonance** of Ju
 | Europa | 3.551 | $\approx$ 2 |
 | Ganymede | 7.155 | $\approx$ 4 |
 
-This three-body resonance is maintained by tidal interactions with Jupiter. The key consequence is that it **forces non-zero orbital eccentricities**: Io's eccentricity is maintained at $e \approx 0.004$ (small, but crucial). This continual eccentricity forcing drives tidal flexing inside Io, generating enough heat to make it the most volcanically active body in the solar system ({numref}`fig:laplace-resonance`, {numref}`fig:io-volcanism`), a connection we will explore in {ref}`Lecture 3 <lecture03>`.
+This three-body resonance is maintained by tidal interactions with Jupiter. The key consequence is that it **forces non-zero orbital eccentricities**: Io's eccentricity is maintained at $e \approx 0.004$ (small, but crucial) {cite:p}`Peale1979`. This continual eccentricity forcing drives tidal flexing inside Io, generating enough heat to make it the most volcanically active body in the solar system ({numref}`fig:laplace-resonance`, {numref}`fig:io-volcanism`), a connection we will explore in {ref}`Lecture 3 <lecture03>`.
 
 ```{figure} figures/laplace_resonance.avif
 :name: fig:laplace-resonance
 :width: 500px
 :align: center
 
-The Laplace resonance of the Galilean moons. Io, Europa, and Ganymede have orbital periods in the ratio 1 : 2 : 4, so the same conjunction geometry repeats every Io period. The resulting periodic gravitational kicks force a non-zero eccentricity on Io ($e \approx 0.004$), driving the tidal heating that powers its volcanism {cite:p}`Peale1979`.
+The Laplace resonance of the Galilean moons. Io, Europa, and Ganymede have orbital periods in the ratio 1 : 2 : 4, so the pattern of successive conjunctions repeats every Ganymede period (four Io orbits). The resulting periodic gravitational kicks force a non-zero eccentricity on Io ($e \approx 0.004$), driving the tidal heating that powers its volcanism {cite:p}`Peale1979`.
 ```
 
 ```{figure} figures/io_volcanism.avif
@@ -507,17 +504,17 @@ The tidal force raises **tidal bulges** on both sides of the body: one facing th
 
 ### Tidal locking (synchronous rotation)
 
-Over time, the tidal torque slows the faster-spinning body until its rotation period equals its orbital period, a state called **synchronous rotation** or **tidal locking** ({numref}`fig:tidal-locking`). In this configuration, the same face always points toward the perturber, and the tidal bulge is aligned with the connecting line, so no further torque acts.
+Over time, the tidal torque slows the faster-spinning body until its rotation period equals its orbital period, a state called **synchronous rotation** or **tidal locking** ({numref}`fig:tidal-locking`). In this configuration, the same face always points toward the perturber, and the tidal bulge is aligned with the connecting line, so no further torque acts. Synchronous rotation does not switch off tidal dissipation entirely, however: on an eccentric orbit the distance to the perturber and the apparent direction of the bulge vary over each orbit, so a locked body continues to flex and heat. This is precisely Io's situation: its eccentricity, pinned at $e \approx 0.004$ by the Laplace resonance, sustains the tidal heating behind its volcanism ({ref}`Lecture 3 <lecture03>`).
 
 ```{figure} figures/tidal_locking.avif
 :name: fig:tidal-locking
 :width: 500px
 :align: center
 
-Tidal locking of the Moon with the Earth. The Moon's rotation period equals its orbital period, so the same hemisphere always faces Earth and the tidal bulge raised by Earth stays aligned with the Earth-Moon line. This synchronous state was reached through billions of years of tidal dissipation {cite:p}`MurrayDermott1999`. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+Free versus synchronous rotation. Panel (a): a moon whose spin period differs from its orbital period shows different faces to the planet (P) over one orbit; the black surface marker and the body-fixed axis (red arrow) decouple from the direction to the planet. Panel (b): in synchronous rotation the spin and orbital periods are equal, so the surface marker, and with it the tidal bulge, always faces the planet. The Moon reached this state through billions of years of tidal dissipation {cite:p}`MurrayDermott1999`. Course-original schematic.
 ```
 
-The Moon is tidally locked to Earth; this is why we always see the same face. All four Galilean moons are tidally locked to Jupiter. Most large moons in the solar system are synchronous rotators. The timescale for tidal locking scales as $\propto d^6 / (M_p^2 R_s^3)$, which is why more distant moons and smaller bodies take longer to lock {cite:p}`MurrayDermott1999`.
+The Moon is tidally locked to Earth; this is why we always see the same face. All four Galilean moons are tidally locked to Jupiter. Most large moons in the solar system are synchronous rotators. The timescale for tidal locking grows steeply with orbital distance ($\propto d^6$) and decreases with the square of the primary's mass, which is why close-in moons of massive planets lock almost immediately while distant, small companions may never do so {cite:p}`MurrayDermott1999`.
 
 ### The Roche limit
 
@@ -532,16 +529,16 @@ $$ (eq:roche-limit)
 :width: 750px
 :align: center
 
-Roche limit geometry. (a) A self-gravitating fluid satellite (blue) is rounded at safe orbital distance, but at the Roche limit $d_R$ the differential tidal acceleration across its diameter exceeds its self-gravity and it is stretched and torn apart along the line to the primary. (b) Tidal acceleration across a $200$ km icy body and the body's surface self-gravity, plotted against orbital distance from Saturn (in units of $R_p$). The simple crossing of the two curves defines the *rigid* Roche limit at $d_R^{\rm rigid} \approx 1.11\,R_p$ for $\rho_s = 1000$ kg m$^{-3}$; the textbook *fluid* Roche limit $d_R \approx 2.17\,R_p$ (red dotted line) carries an additional factor that accounts for tidal deformation of the satellite.
+Roche limit geometry. (a) A self-gravitating fluid satellite (blue) is rounded at safe orbital distance, but at the Roche limit $d_R$ the differential tidal acceleration across its diameter exceeds its self-gravity and it is stretched and torn apart along the line to the primary. (b) Tidal acceleration across a $200$ km icy body and the body's surface self-gravity, plotted against orbital distance from Saturn (in units of $R_p$). The simple crossing of the two curves defines the *rigid* Roche limit at $d_R^{\mathrm{rigid}} \approx 1.11\,R_p$ for $\rho_s = 1000$ kg m$^{-3}$; the textbook *fluid* Roche limit $d_R \approx 2.17\,R_p$ (red dotted line) carries an additional factor that accounts for tidal deformation of the satellite.
 ```
 
-For Saturn ($R_p = 58{,}232$ km, $\rho_p = 687$ kg m$^{-3}$) and an icy satellite ($\rho_s \approx 1000$ kg m$^{-3}$):
+Evaluating Eq. {eq}`eq:roche-limit` for Saturn ($R_p = 58{,}232$ km, $\rho_p = 687$ kg m$^{-3}$) and an icy satellite ($\rho_s \approx 1000$ kg m$^{-3}$):
 
 $$
 d_R \approx 2.46 \times 58{,}232 \times \left(\frac{687}{1000}\right)^{1/3} \approx 126{,}000 \text{ km} \approx 2.17\, R_p
 $$
 
-Saturn's main ring system ({numref}`fig:saturn-rings`), the D through A rings, extends from about 67,000 km to 137,000 km from Saturn's centre, mostly within this fluid Roche limit. The outer part of the A ring lies slightly beyond the nominal boundary: its sharp outer edge is maintained by a 7:6 mean-motion resonance with the moon Janus, and the ring particles are porous, so their density is below that of solid ice, which shifts the effective Roche limit outward. The rings consist of countless small particles that cannot coalesce into a moon because tidal forces prevent their gravitational aggregation. We will derive the Roche limit in full in {ref}`Lecture 11 <lecture11>`.
+Saturn's main ring system ({numref}`fig:saturn-rings`), the D through A rings, extends from about 67,000 km to 137,000 km from Saturn's centre, mostly within this fluid Roche limit; the narrow F ring lies just beyond, at $\sim 140{,}000$ km. The outer part of the A ring lies slightly beyond the nominal boundary: its sharp outer edge is maintained by a 7:6 mean-motion resonance with the moon Janus, and the ring particles are porous, so their density is below that of solid ice, which shifts the effective Roche limit outward. The rings consist of countless small particles that cannot coalesce into a moon because tidal forces prevent their gravitational aggregation. We will derive the Roche limit in full in {ref}`Lecture 11 <lecture11>`.
 
 ```{figure} figures/saturn_rings.avif
 :name: fig:saturn-rings
@@ -587,7 +584,7 @@ After the gas disk has dispersed, the giant planets can still undergo migration 
 :width: 600px
 :align: center
 
-Evolution of the giant planets through the Nice-model instability in a five-planet "jumping-Jupiter" simulation. Panel (a): semi-major axes vs time for five giant planets started in a compact resonant chain, with a fifth ice giant (magenta) initially between Saturn and Uranus. At the instability ($\sim 6$ Myr into this run) the extra ice giant is scattered off Jupiter and ejected from the solar system, while Uranus and Neptune move outward onto their present orbits (horizontal dashed lines). Panel (b): the Saturn/Jupiter period ratio jumps discontinuously from its initial 3:2 resonance value ($P_{\mathrm{Sat}}/P_{\mathrm{Jup}} = 1.5$) toward the present-day value of 2.49 (dashed line) during the planet-planet encounters. The jump carries the system over the shaded band ($2.1 \lesssim P_{\mathrm{Sat}}/P_{\mathrm{Jup}} \lesssim 2.3$) in which slow migration would activate secular resonances that excite the asteroid belt and the terrestrial-planet orbits; avoiding this zone is the central argument for the jumping-Jupiter scenario over the smooth 2:1 resonance crossing of the original Nice model {cite:p}`Tsiganis2005`. Reproduced from {cite:t}`Nesvorny2018`, Fig. 3.
+Evolution of the giant planets through the Nice-model instability in a five-planet "jumping-Jupiter" simulation by {cite:t}`NesvornyMorbidelli2012`. Panel (a): semi-major axes vs time for five giant planets started in a compact resonant chain, with a fifth ice giant (magenta) initially between Saturn and Uranus; horizontal dashed lines mark the present-day semi-major axes of the four surviving giants. At the instability ($\sim 6$ Myr into this run) the extra ice giant is scattered off Jupiter and ejected from the solar system, while Uranus and Neptune move outward onto their present orbits. Panel (b): the Saturn/Jupiter period ratio, starting near its 3:2 resonance value of 1.5, first drifts slowly upward through planetesimal-driven migration and then jumps discontinuously (from $\approx 1.7$ to $\approx 2.4$ in under $10^5$ yr) during the planet-planet encounters, approaching the present-day value of 2.49 (dashed line). The jump carries the system over the shaded band ($2.1 \lesssim P_{\mathrm{Sat}}/P_{\mathrm{Jup}} \lesssim 2.3$) in which slow migration would activate secular resonances that excite the asteroid belt and the terrestrial-planet orbits; avoiding this zone is the central argument for the jumping-Jupiter scenario over the smooth 2:1 resonance crossing of the original Nice model {cite:p}`Tsiganis2005`. Reproduced from {cite:t}`Nesvorny2018`, Fig. 3.
 ```
 
 ### The Grand Tack
@@ -599,27 +596,27 @@ The **Grand Tack hypothesis** {cite:p}`Walsh2011` proposes that Jupiter first mi
 :width: 600px
 :align: center
 
-The Grand Tack scenario from a Walsh et al. (2011) simulation. Top panel: mass evolution of the four giant planets during the disk phase. Bottom panel: semi-major axis evolution; each curve is labelled with the planet's name on the track. Jupiter migrates inward to $\sim 1.5$ AU via Type II migration; once Saturn catches up and the two planets become trapped in their mutual 3:2 mean-motion resonance, the combined torques reverse the migration and both planets move outward. The episode depletes solid material in the inner disk, with consequences for Mars's small mass and the asteroid belt's compositional structure. Reproduced from {cite:t}`Walsh2011`.
+The Grand Tack scenario. Top panel: mass growth of the four giant planets during the disk phase. Bottom panel: semi-major-axis evolution, with each curve labelled with the planet's name; the tracks show the migration prescription imposed on the planets in the reference simulation, following the inward-then-outward path found in hydrodynamical studies. Jupiter migrates in to $\sim 1.5$ AU; once Saturn catches up and the two planets become trapped in their mutual 3:2 mean-motion resonance, the migration reverses and both move outward. The episode depletes solid material in the inner disk, with consequences for Mars's small mass and the asteroid belt's compositional structure. Reproduced from {cite:t}`Walsh2011`, Fig. 1.
 ```
 
 ### Observational evidence for migration
 
-The strongest evidence that migration is real comes from **hot Jupiters**: gas giant exoplanets orbiting their host stars with periods of just a few days ($a \lesssim 0.1$ AU). These planets cannot have formed in situ (there is not enough material, and temperatures are too high for solids to exist), so they must have formed further out and migrated inward ({numref}`fig:hot-jupiters`). Additionally, ALMA observations of gaps in protoplanetary disks (such as those in HL Tau) may represent the signatures of embedded planets undergoing migration. We will revisit exoplanet demographics and the evidence for migration in {ref}`Lecture 13 <lecture13>`.
+The strongest evidence that migration is real comes from **hot Jupiters**: gas giant exoplanets orbiting their host stars with periods of just a few days ($a \lesssim 0.1$ AU). These planets cannot have formed in situ (there is not enough material, and temperatures are too high for solids to exist), so they must have formed further out and moved inward, either by disk migration or by later high-eccentricity migration followed by tidal circularisation ({numref}`fig:hot-jupiters`; {ref}`Lecture 13 <lecture13>`). Additionally, ALMA observations of gaps in protoplanetary disks (such as those in HL Tau) may represent the signatures of embedded planets undergoing migration. We will revisit exoplanet demographics and the evidence for migration in {ref}`Lecture 13 <lecture13>`.
 
 ```{figure} figures/hot_jupiter_mass_period.avif
 :name: fig:hot-jupiters
 :width: 600px
 :align: center
 
-Confirmed exoplanets in mass-period space, generated from the NASA Exoplanet Archive (accessed 2026-04). Detection methods are colour-coded; Solar System planets are overplotted as black stars for reference. The cluster of giant planets ($M \gtrsim 0.1\,M_J$) at orbital periods of a few days, the "hot Jupiters", cannot have formed in situ at such close-in orbital distances and is widely interpreted as evidence for large-scale orbital migration; see {cite:t}`DawsonJohnson2018` for a review of the proposed formation pathways.
+Confirmed exoplanets in mass-period space, generated from the NASA Exoplanet Archive {cite:p}`NASAExoplanetArchive2026` (accessed 2026-08). Detection methods are colour-coded, and the eight Solar System planets are overplotted as black stars for reference. Red circles mark the hot Jupiters, selected here as $M > 0.1\,M_{\mathrm{J}}$ and $P < 10$ d (dotted lines). This population cannot have formed in situ at such close-in orbital distances and is widely interpreted as evidence for large-scale orbital migration; see {cite:t}`DawsonJohnson2018` for a review of the proposed pathways.
 ```
 
 
 ## Recent advances
 
-The study of planet formation has been transformed by high-resolution imaging of protoplanetary disks. The ALMA DSHARP survey {cite:p}`Andrews2018` revealed that ring-and-gap substructure is ubiquitous in protoplanetary disks, even around young ($\lesssim 1$ Myr) stars. These structures are widely interpreted as signatures of embedded planets clearing gaps in the disk, implying that planet formation begins earlier and proceeds faster than previously thought, consistent with the pebble accretion paradigm {cite:p}`Lambrechts2012`.
+The study of planet formation has been transformed by high-resolution imaging of protoplanetary disks. The ALMA DSHARP survey {cite:p}`Andrews2018` revealed rings and gaps in all 20 of its large, bright target disks, even around young ($\lesssim 1$ Myr) stars. These structures are widely interpreted as signatures of embedded planets clearing gaps in the disk, although ice lines and magnetically structured zones remain viable alternatives for some of them; if planets are indeed responsible, planet formation begins earlier and proceeds faster than previously thought, consistent with the pebble-accretion paradigm {cite:p}`Lambrechts2012`.
 
-Theoretical advances have been consolidated in the *Protostars and Planets VII* review volume {cite:p}`Drazkowska2023`, which presents an updated synthesis of planet formation theory incorporating ALMA constraints. Key developments include refined models of the streaming instability that forms planetesimals, improved treatments of pebble accretion in evolving disks, and new constraints on giant planet formation timescales from isotopic analyses of meteorites and Juno gravity measurements {cite:p}`Wahl2017`. The emerging picture is that giant planet cores must form within the first 1–3 Myr of disk evolution (before the gas disperses), placing tight constraints on the growth mechanisms ({ref}`Lecture 8 <lecture08>`).
+Theoretical advances have been consolidated in the *Protostars and Planets VII* review volume {cite:p}`Drazkowska2023`, which presents an updated synthesis of planet formation theory incorporating ALMA constraints. Key developments include refined models of the streaming instability that forms planetesimals, improved treatments of pebble accretion in evolving disks, new constraints on giant-planet formation timescales from isotopic analyses of meteorites {cite:p}`Kruijer2017`, and the discovery of Jupiter's dilute core in Juno gravity data {cite:p}`Wahl2017` ({ref}`Lecture 8 <lecture08>`). Together these suggest that giant-planet cores grow within the first few Myr of disk evolution, before the gas disperses, although how early Jupiter's core in particular had to form is still contested ({ref}`Lecture 12 <lecture12>`, {ref}`Lecture 14 <lecture14>`).
 
 
 ## References

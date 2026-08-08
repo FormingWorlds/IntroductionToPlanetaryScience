@@ -1,0 +1,55 @@
+{
+  "purpose": "Fig. fig:ss-architecture: solar-system architecture on log semi-major axis.",
+  "bodies": {
+    "Mercury": {
+      "a": 0.387,
+      "R": 0.383
+    },
+    "Venus": {
+      "a": 0.723,
+      "R": 0.949
+    },
+    "Earth": {
+      "a": 1.0,
+      "R": 1.0
+    },
+    "Mars": {
+      "a": 1.524,
+      "R": 0.532
+    },
+    "Jupiter": {
+      "a": 5.204,
+      "R": 10.97
+    },
+    "Saturn": {
+      "a": 9.573,
+      "R": 9.14
+    },
+    "Uranus": {
+      "a": 19.165,
+      "R": 3.98
+    },
+    "Neptune": {
+      "a": 30.178,
+      "R": 3.87
+    },
+    "Pluto": {
+      "a": 39.482,
+      "R": 0.186
+    }
+  },
+  "asteroid_belt_AU": [
+    2.1,
+    3.3
+  ],
+  "kuiper_belt_AU": [
+    30.0,
+    50.0
+  ],
+  "snow_line_AU": [
+    2.5,
+    3.5
+  ],
+  "symbol_scaling": "marker area proportional to log10(1 + R/R_earth)",
+  "source": "NASA NSSDCA Planetary Fact Sheet (semi-major axes, mean radii)"
+}
