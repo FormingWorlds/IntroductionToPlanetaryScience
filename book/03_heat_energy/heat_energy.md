@@ -456,7 +456,7 @@ The Moon and Mars have much lower surface heat flow than Earth, reflecting their
 :width: 700px
 :align: center
 
-NASA InSight mission concept showing how marsquake travel times constrain Mars's interior structure. The lander's seismometer (SEIS) records P- and S-wave arrivals from quakes and from impactors, which combined with InSight's heat-flow probe (HP$^3$) and rotation-rate measurements yielded the first direct seismic constraints on the radius of the Martian core ($\sim 1830$ km), the thickness of the crust, and the structure of the mantle {cite:p}`Stahler2021,Khan2021`. Credit: NASA/JPL-Caltech, public domain.
+NASA InSight mission concept showing how marsquake travel times constrain Mars's interior structure. The lander's seismometer (SEIS) records P- and S-wave arrivals from quakes and from impactors, which combined with InSight's heat-flow probe (HP$^3$) and rotation-rate measurements yielded the first direct seismic constraints on the radius of the Martian core, the thickness of the crust, and the structure of the mantle {cite:p}`Stahler2021,Khan2021`; the 2023 reanalyses place the metallic-core radius at $\sim 1675$ km beneath a molten silicate layer {cite:p}`Khan2023,Samuel2023`. Credit: NASA/JPL-Caltech, public domain.
 ```
 
 ### Connection to tectonic regime
@@ -578,7 +578,7 @@ These "ocean worlds" are among the most promising targets in the search for extr
 
 ## Recent advances
 
-NASA's InSight mission (2018–2022) provided the first direct seismological measurements of another planet, fundamentally advancing our understanding of Mars's thermal state. Seismic wave travel times revealed Mars's core radius ($\sim$1830 km), mantle structure, and crustal thickness {cite:p}`Stahler2021,Khan2021` (see also {ref}`Lecture 8 <lecture08>`). The mission's heat flow probe (HP$^3$) was unable to penetrate to the required depth due to unexpected soil properties, but the attempt provided valuable constraints on regolith thermal conductivity and near-surface heat flow.
+NASA's InSight mission (2018–2022) provided the first direct seismological measurements of another planet, fundamentally advancing our understanding of Mars's thermal state. Seismic wave travel times revealed Mars's core size, mantle structure, and crustal thickness {cite:p}`Stahler2021,Khan2021`; reanalyses place the metallic-core radius at $\sim$1675 km beneath a $\sim$150 km molten silicate layer {cite:p}`Khan2023,Samuel2023` (see also {ref}`Lecture 8 <lecture08>`). The mission's heat flow probe (HP$^3$) was unable to penetrate to the required depth due to unexpected soil properties, but the attempt provided valuable constraints on regolith thermal conductivity and near-surface heat flow.
 
 Tidal heating models for icy moons have been refined using updated rheological models and orbital evolution calculations {cite:p}`NimmoPappalardo2016`. Recent work suggests that tidal dissipation in Enceladus may be concentrated in its ice shell rather than its rocky core, affecting predictions for the longevity and temperature of its subsurface ocean. For Europa, estimates of ice shell thickness have been narrowed to $\sim$15–25 km using multiple independent constraints, with implications for the Europa Clipper mission {cite:p}`HowellPappalardo2020` (see also {ref}`Lecture 14 <lecture14>`).
 
