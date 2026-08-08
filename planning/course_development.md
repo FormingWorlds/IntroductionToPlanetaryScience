@@ -588,7 +588,7 @@ The remaining work is paired lecture-by-lecture: each lecture's prose ("notes") 
 Order:
 
 1. L01 notes (LOCKED 2026-05-17, commit `ec67259`)
-2. L01 slides (rebuilt 2026-05-18; polished 2026-08-07, sign-off pending)
+2. L01 slides (LOCKED 2026-08-08; 95-page deck signed off and deployed)
 3. L02 notes
 4. L02 slides
 5. Worksheet 01 (L01 + L02)
@@ -610,7 +610,7 @@ Order:
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
 | 1 | Introduction & history | **LOCKED 2026-05-17** (31 figures, three-question closer + L02 bridge, final 5-agent adversarial review with 28 fixes) | High |
-| 2 | Planet formation & orbital dynamics | Verified | High |
+| 2 | Planet formation & orbital dynamics | Lock-down in progress (pre-sweep fixes 2026-08-08: Nice-model five-planet caption, Roche A-ring physics, Öberg C/O caption) | High |
 | 3 | Planetary heat & energy transport | Verified | High |
 | 4 | Chemical differentiation & magnetospheres | Verified | High |
 | 5 | Atmospheres I | Verified | High |
@@ -634,7 +634,7 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
-| 1 | Introduction & history | Rebuilt against locked notes (2026-05-18); polish pass 2026-08-07: Pale Blue Dot title background, SDO Sun + Webb deep-field section dividers, assessment updated to 100% final exam, OSIRIS-REx still corrected and converted to AVIF, frame-overflow fixes; course-organisation slides added 2026-08-07 (course title slide, Ocasys description + outcomes, two schedule slides with dates, times, rooms, and lecturers incl. dr. Mara Attia for L5 + L6), deck now 93 pages; sign-off pending | High |
+| 1 | Introduction & history | **LOCKED 2026-08-08** (95-page deck: course-organisation block, Pale Blue Dot title page, SDO + Webb dividers, full schedule; signed off and deployed) | High |
 | 2 | Planet formation & orbital dynamics | Draft complete | High |
 | 3 | Planetary heat & energy transport | Draft complete | High |
 | 4 | Chemical differentiation & magnetospheres | Draft complete | High |
