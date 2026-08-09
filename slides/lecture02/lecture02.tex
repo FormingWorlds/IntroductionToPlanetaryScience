@@ -1,5 +1,6 @@
 % lecture02.tex: Lecture 2: Planet Formation 101 & Orbital Dynamics
-% Planetary Systems, Kapteyn Institute
+% Planetary Systems, Kapteyn Institute, University of Groningen
+% Source of truth: book/02_formation_orbits/formation_orbits.md (locked 2026-08-08, commit 7c47ff4)
 
 \documentclass[aspectratio=169, 11pt]{beamer}
 
@@ -9,12 +10,13 @@
 \graphicspath{{figures/}{../common/}}
 
 % ── Metadata ────────────────────────────────────────────────
-\title[Lecture 2: Planet Formation \& Orbital Dynamics]{Lecture 2: Planet Formation 101\\\& Orbital Dynamics}
+\title[L2: Planet Formation \& Orbital Dynamics]{Lecture 2: Planet Formation 101\\\& Orbital Dynamics}
 \subtitle{Planetary Systems}
-\author[L2]{Tim Lichtenberg}
+\author[T.~Lichtenberg]{Tim Lichtenberg}
 \institute{Kapteyn Astronomical Institute\\University of Groningen}
 \date{2026}
-\titlebgcredit{Protoplanetary disk HL Tauri. Credit: ALMA/ESO/NAOJ/NRAO}
+\titlebgcredit{HL Tauri, ALMA (2014). Credit: ALMA (ESO/NAOJ/NRAO)}
+\titlebgopacity{0.55}
 
 % ════════════════════════════════════════════════════════════
 \begin{document}
@@ -25,1018 +27,1446 @@
 \end{frame}
 
 % ── Learning objectives ─────────────────────────────────────
-\begin{frame}{Learning Objectives}
+\begin{frame}{Learning objectives}
   By the end of this lecture, you will be able to:
-  \vskip8pt
+  \vskip6pt\relax
   \begin{itemize}
-    \item Describe the stages of planet formation from molecular cloud to planets
-    \item Explain how dust grows into planetesimals and planets
-    \item Apply Kepler's laws and the vis-viva equation to orbital problems
-    \item Discuss orbital resonances, tidal forces, and planetary migration
+    \item Describe the stages of planet formation, from molecular cloud collapse to assembled planets.
+    \item Explain how dust overcomes the growth barriers to become planetesimals, and how planetesimals become planets.
+    \item Apply Kepler's laws and the vis-viva equation to quantitative orbital problems.
+    \item Explain how resonances, tides, and migration reshape a planetary system after it forms.
   \end{itemize}
+  \vskip6pt\relax
+  \keyresult{Planet formation is a race: solids must assemble into cores before the gas disk disperses, and dynamics keeps rearranging the result long afterwards.}
 \end{frame}
 
 % ── Recap ───────────────────────────────────────────────────
 \begin{frame}{Recap: Lecture 1}
-  \begin{itemize}
-    \item Three driving questions: formation, habitability, life
-    \item The IAU planet definition and the Pluto debate
-    \item Solar system architecture: inner rocky, outer gas/ice
-    \item Derived $\Msun$ from Kepler's third law
-    \item Comparative planetology as methodology
-  \end{itemize}
-  \vskip8pt
-  \textbf{Today:} How did all of this come to be?
-\end{frame}
-
-
-% ════════════════════════════════════════════════════════════
-\sectionimage{orion_nebula}{Orion Nebula, HST (2006). Credit: NASA/ESA/M.~Robberto}
-\section{Star Formation \& Protoplanetary Disks}
-% ════════════════════════════════════════════════════════════
-
-% ── Molecular cloud collapse ───────────────────────────────
-\begin{frame}{From Molecular Cloud to Star}
-  \begin{itemize}
-    \item Stars form from cold ($T \sim 10$--$20$~K), dense molecular clouds
-    \item Collapse triggered when self-gravity overcomes thermal pressure
-    \item Critical mass for collapse, the \textbf{Jeans mass}:
-    $$M_J \sim \frac{c_s^3}{\sqrt{G^3 \rho}}$$
-    \vskip-4pt
-    \item For typical conditions: $M_J \sim 1$--$10\;\Msun$
-    \item Angular momentum conservation $\Rightarrow$ \textbf{disk} forms around the protostar
-  \end{itemize}
-\end{frame}
-
-% ── Jeans instability detail ──────────────────────────
-\begin{frame}{Jeans Instability: When Gravity Wins}
-  \textbf{Derivation.} Compare gravitational free-fall time to sound-crossing time.
-  \vskip6pt
-  \begin{itemize}
-    \item Free-fall time: $t_{\mathrm{ff}} = \sqrt{3\pi/(32\,G\rho)}$
-    \item Sound-crossing time across scale $L$: $t_{\mathrm{sc}} = L/c_s$
-    \item Collapse requires $t_{\mathrm{ff}} < t_{\mathrm{sc}}$, giving:
-  \end{itemize}
-  \vskip4pt
-  $$L > L_J = c_s\,t_{\mathrm{ff}} \sim \frac{c_s}{\sqrt{G\rho}}$$
-  \vskip6pt
-  \begin{itemize}
-    \item For typical cloud conditions ($T = 10$~K, $n_{\mathrm{H_2}} = 10^4$~cm$^{-3}$): $L_J \sim 0.1$~pc, $M_J \sim 1$--$10\,\Msun$
-    \item Free-fall time $\sim 10^5$~yr
-    \item Fragmentation: if the cloud contains multiple Jeans masses, it can split into many protostars
-  \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Jeans (1902); Shu (1977)}
-\end{frame}
-
-% ── Protoplanetary disk structure ─────────────────────────
-\begin{frame}{Protoplanetary Disk Structure}
-  \begin{columns}[c]
-    \column{0.45\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{protoplanetary_disk}
-    \source{ESO/L.~Cal\c{c}ada, CC BY 4.0}
-
+  \begin{columns}[T]
     \column{0.52\textwidth}
+    Where we ended up last time:
     \begin{itemize}
-      \item Flattened rotating structure, $\sim$few AU to $\sim$hundreds AU
-      \item Total mass $\sim$0.01--0.1~$\Msun$
-      \item \textbf{Temperature gradient:} $>$1500~K (inner) to $<$30~K (outer)
-      \item \textbf{Dust-to-gas ratio:} $\sim$1:100 (by mass)
-      \item Surface density: $\Sigma(r) \propto r^{-p}$
+      \item Planetary science is \textbf{comparative}: planets as a set of natural experiments.
+      \item Three driving questions: formation, habitability, life.
+      \item The solar system has \textbf{structure}: rocky inside, gas and ice giants outside.
+      \item The Sun holds \textbf{99.86\%} of the system's mass; Jupiter holds $71\%$ of the rest.
     \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Our one derivation so far}
+      \[
+        M_* = \frac{4\pi^2 r^3}{G P^2}
+      \]
+      Newton's form of Kepler's third law, for a \emph{circular} orbit.
+    \end{block}
+    \vskip8pt\relax
+    \textbf{Today:} where that structure came from, and the general orbital tools that replace the circular-orbit shortcut.
   \end{columns}
 \end{frame}
 
-% ── Vertical structure ──────────────────────────────────
-\begin{frame}{Vertical Structure and Flaring}
-  The disk is not razor-thin: it has a finite vertical scale.
-  \vskip6pt
-  \begin{itemize}
-    \item Hydrostatic balance gives a Gaussian density profile with scale height $H$
-    \item $H/r = c_s / v_\mathrm{K}$ where $c_s$ is sound speed and $v_\mathrm{K}$ is Keplerian speed
-    \item Typical $H/r \sim 0.03$--$0.1$, increases outward (flared disk)
-    \item Dust \textbf{settles} toward the midplane under vertical gravity
-    \item Settling creates a denser dust layer ($H_\mathrm{dust}/H_\mathrm{gas} \sim 0.1$)
-    \item Once the midplane dust-to-gas ratio approaches unity, instabilities take over
-  \end{itemize}
-  \vskip6pt
-  \keyresult{Dust settling is the first step toward planetesimal formation: it creates the conditions where streaming instability can act.}
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{carina_cliffs_jwst}{``Cosmic Cliffs'', Carina Nebula, JWST/NIRCam (2022). Credit: NASA/ESA/CSA/STScI}
+\section{Star formation and protoplanetary disks}
+% ════════════════════════════════════════════════════════════
+
+% ── Molecular clouds ────────────────────────────────────────
+\begin{frame}{Every planetary system starts in a cold cloud}
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Molecular clouds: $T \sim 10$--$20$ K, mostly $\mathrm{H_2}$ and helium, with $\sim 1\%$ by mass in microscopic \textbf{dust grains}.
+    \vskip6pt\relax
+    Collapse begins when self-gravity beats thermal and magnetic pressure support. The critical mass is the \textbf{Jeans mass}:
+    \[
+      M_J \sim \frac{c_s^3}{\sqrt{G^3 \rho}}
+    \]
+
+    \column{0.44\textwidth}
+    \begin{block}{Order of magnitude}
+      For $T \approx 10$ K and $n_{\mathrm{H_2}} \approx 10^4$ cm$^{-3}$:
+      \[
+        M_J \sim 1\text{--}10\ \Msun
+      \]
+    \end{block}
+    \vskip8pt\relax
+    Not a coincidence: the Jeans mass under molecular-cloud conditions is \emph{comparable to a stellar mass}. Clouds fragment into star-sized pieces.
+  \end{columns}
 \end{frame}
 
-% ── Minimum Mass Solar Nebula ────────────────────────────
-\begin{frame}{The Minimum-Mass Solar Nebula}
-  If we spread the solar system's planets back into a disk, what mass would we need?
-  \vskip6pt
-  \begin{itemize}
-    \item Augment each planet's mass by solar H/He to match solar composition
-    \item Spread over an annulus centred on each planet
-    \item Result: \textbf{Minimum-Mass Solar Nebula (MMSN)}, Hayashi (1981)
-    \item Total mass: $\sim$0.01--0.02~$\Msun$
-    \item Surface density: $\Sigma_\mathrm{MMSN}(r) \approx 1700\,(r/\mathrm{AU})^{-3/2}$ g/cm$^2$
-    \item A convenient scaling, but modern observations favour more massive disks for Jovian cores
-  \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Hayashi (1981); Desch (2007) for revisions}
-\end{frame}
-
-% ── The snow line ──────────────────────────────────────────
-\begin{frame}{The Snow Line}
-  \begin{itemize}
-    \item \textbf{Snow line} = distance where water condenses as ice ($\sim$150--170~K)
-    \item In our solar system: $\sim$2.5--3.5~AU (between Mars and Jupiter)
-    \vskip6pt
-    \item Beyond the snow line:
-    \begin{itemize}
-      \item Solid material $\sim$3$\times$ more abundant (ice added to rock/metal)
-      \item Enables faster growth of planetary cores
-    \end{itemize}
-    \vskip6pt
-    \item Other ice lines at greater distances: $\mathrm{CO_2}$, CO, $\mathrm{N_2}$, $\mathrm{NH_3}$
-    \item Creates a \textbf{compositional gradient} across the disk
-  \end{itemize}
-  \vskip4pt
-  \keyresult{The snow line explains the fundamental architecture of the solar system: small rocky planets inside, massive gas/ice giants outside.}
-\end{frame}
-
-% ── ALMA observations ──────────────────────────────────────
-\begin{frame}{ALMA: Disks Resolved}
+% ── Carina cliffs ───────────────────────────────────────────
+\begin{frame}{Star formation, caught in the act}
   \begin{columns}[c]
-    \column{0.42\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{hl_tau_alma}
-    \source{ALMA/ESO/NAOJ/NRAO (2014)}
-
     \column{0.55\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.72\textheight, keepaspectratio]{carina_cliffs_jwst}
+    \source{NASA/ESA/CSA/STScI (JWST/NIRCam)}
+
+    \column{0.42\textwidth}
+    The ``Cosmic Cliffs'' at the edge of the Carina Nebula.
+    \vskip6pt\relax
     \begin{itemize}
-      \item \textbf{HL Tauri} (2014): $\sim$1~Myr old star
-      \item Concentric rings and gaps at AU resolution
-      \item Gaps possibly carved by forming planets
-      \item Disk substructure present even in very young systems
+      \item Embedded protostars and outflows along the eroding cloud edge.
+      \item Ultraviolet radiation from young massive stars sculpts the gas.
+      \item A present-day analogue of the environment the Solar System was born in.
     \end{itemize}
-    \vskip6pt
-    \begin{alertblock}{}
-      Planet formation begins earlier than previously thought.
-    \end{alertblock}
   \end{columns}
 \end{frame}
 
-% ── DSHARP ─────────────────────────────────────────────────
-\begin{frame}{DSHARP Survey: Substructure Is Universal}
+% ── Angular momentum ────────────────────────────────────────
+\begin{frame}{Why collapse makes a disk, not a ball}
+  Angular momentum is the decisive constraint: even a slow initial rotation is amplified enormously by contraction. For a cloud core of radius $R_0 \sim 0.1$ pc collapsing to stellar scales ($\sim 1\,\Rsun$):
+  \[
+    \frac{\Omega_{\mathrm{final}}}{\Omega_{\mathrm{initial}}} \;=\; \left(\frac{R_0}{\Rsun}\right)^{\!2} \;\sim\; 10^{13}
+  \]
+  \vskip2pt\relax
+  \begin{itemize}
+    \item No star could sustain that spin: the material cannot all fall onto the protostar.
+    \item Instead it settles into a rotating, flattened \textbf{protoplanetary disk}.
+    \item The protostar accretes from it over $\sim 1$--$3$ Myr; the disk becomes the raw material for planets.
+  \end{itemize}
+  \vskip2pt\relax
+  \keyresult{Planet formation is a by-product of the angular-momentum problem of star formation.}
+\end{frame}
+
+% ── HH 30 ───────────────────────────────────────────────────
+\begin{frame}{A disk seen edge-on: HH 30}
+  \begin{columns}[c]
+    \column{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.72\textheight, keepaspectratio]{hh30_edge_on}
+    \source{NASA/ESA/STScI (HST)}
+
+    \column{0.49\textwidth}
+    The geometry is directly visible:
+    \begin{itemize}
+      \item \textbf{Dark lane}: the dusty midplane, opaque even in the optical.
+      \item \textbf{Two bright lobes}: starlight scattering off the upper and lower disk surfaces.
+      \item The star itself is hidden behind the midplane.
+    \end{itemize}
+    \vskip6pt\relax
+    This is what ``geometrically thin and flared'' looks like on the sky.
+  \end{columns}
+\end{frame}
+
+% ── Disk schematic hero ─────────────────────────────────────
+\begin{frame}[plain]
   \centering
-  \includegraphics[width=0.75\textwidth]{dsharp_gallery}
-  \source{ALMA/ESO/NAOJ/NRAO, Andrews et al.\ 2018}
-  \vskip4pt
-  {\small 20 nearby protoplanetary disks at the same spatial scale. Every disk shows rings, gaps, spirals, or crescents: structure is \textbf{ubiquitous}.}
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{andrews2020_disk_schematic}}\\
+  {\footnotesize Schematic cross-section of a protoplanetary disk. Adapted from Andrews (2020), Fig.~1.}
 \end{frame}
 
-% ── PDS 70 ───────────────────────────────────────────────
-\begin{frame}{PDS 70: Planets Caught in the Act}
-  \begin{columns}[c]
-    \column{0.42\textwidth}
-    \centering
-    \includegraphics[width=\linewidth,height=0.60\textheight,keepaspectratio]{pds70}
-    \source{ALMA/ESO/NAOJ/NRAO (Benisty et al.\ 2021)}
-
-    \column{0.55\textwidth}
-    In 2018--2019, VLT/SPHERE and ALMA directly imaged two protoplanets in the disk gap.
-    \vskip6pt
-    \begin{itemize}
-      \item PDS 70 b: $\sim$6~$M_\mathrm{Jup}$, $\sim$20~AU
-      \item PDS 70 c: similar mass, at $\sim$35~AU
-      \item H$\alpha$ emission: active accretion onto both planets
-      \item Circumplanetary disk around PDS 70 c (2021)
-      \item First direct evidence of giant planets forming in disk gaps
-      \item Supports the DSHARP picture: gaps sculpted by embedded protoplanets
-    \end{itemize}
-    \vskip4pt
-    {\tiny\color{ipsText!60} Source: Keppler et al.\ (2018); Benisty et al.\ (2021)}
-  \end{columns}
-\end{frame}
-
-% ── ALMA MAPS ────────────────────────────────────────────
-\begin{frame}{ALMA MAPS: Chemical Diversity in Disks}
-  The Molecules with ALMA at Planet-Forming Scales (MAPS) survey (2021) resolved the chemical composition of 5 disks.
-  \vskip6pt
+\begin{frame}{Reading the disk schematic}
+  Gas in grayscale; solids drawn with \emph{exaggerated} sizes.
+  \vskip4pt\relax
   \begin{itemize}
-    \item Mapped the distributions of CO, HCO$^+$, HCN, C$_2$H, CH$_3$CN, H$_2$CO, \ldots
-    \item Showed that complex organic molecules are present at planet-forming distances
-    \item Different chemistries at different radii: volatile C/O ratios vary with distance
-    \item Snow lines for multiple species are directly observable
-    \item Implications: the compositions inherited by forming planets depend on where in the disk they assemble
+    \item \textbf{Left half, what we observe}: emission lines ($\mathrm{CO}$ and others) from the warm surface; infrared scattered light from small grains in the atmosphere; (sub-)mm/cm continuum from large grains near the midplane.
+    \item \textbf{Right half, the vocabulary}: a gas \emph{atmosphere} holding small suspended grains, and a \emph{midplane} layer of gas plus larger solids.
+    \item \textbf{Flaring}: the disk gets vertically thicker, in relative terms, with distance.
+    \item \textbf{Settling}: bigger particles sink toward the midplane, so different wavelengths trace different heights \emph{and} different particle sizes.
   \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: \"{O}berg et al.\ (2021), \textit{ApJS}}
+  \vskip2pt\relax
+  \keyresult{Every observation of a disk is a slice through this structure: know which slice before interpreting it.}
 \end{frame}
 
-% ── Disk lifetimes ─────────────────────────────────────────
-\begin{frame}{Disk Lifetimes: A Hard Deadline}
+% ── Disk properties ─────────────────────────────────────────
+\begin{frame}{Disk structure in four numbers}
   \begin{itemize}
-    \item Infrared surveys of young stellar clusters show disk dispersal:
-    \begin{itemize}
-      \item $\sim$80\% of stars have disks at 1~Myr
-      \item $<$10\% by 10~Myr
-    \end{itemize}
-    \item \textbf{Median disk lifetime: 3--5~Myr}
-    \vskip6pt
-    \item Dispersal driven by:
-    \begin{itemize}
-      \item Viscous accretion onto the star
-      \item Photoevaporation by stellar UV/X-ray radiation
-      \item Magnetohydrodynamic winds
-    \end{itemize}
+    \item \textbf{Temperature gradient}: $> 1500$ K in the innermost disk, where silicates vaporise, falling to $< 30$ K in the outer disk. This profile decides what can condense where.
+    \item \textbf{Surface density}: $\Sigma(r) \propto r^{-p}$ with $p \approx 0.5$--$1.5$. Densest in the inner disk, but the \emph{mass budget} is dominated by the far larger area outside.
+    \item \textbf{Disk mass}: from a few percent of the stellar mass in the youngest embedded systems, down to $\sim 0.1\%$ by the Class II stage. These estimates carry large systematic uncertainty.
+    \item \textbf{Dust-to-gas ratio}: $\sim 1\%$ inherited from the interstellar medium, but locally enhanced by settling and radial drift, which is what makes planet formation possible.
   \end{itemize}
-  \vskip6pt
-  \keyresult{The disk is gone by $\sim$3--5~Myr. Giant-planet \textbf{cores} must reach critical mass well before that, typically in the first 1--3~Myr, to capture substantial gas envelopes (Lambrechts \& Johansen 2014).}
+  \vskip2pt\relax
+  Vertical structure: scale height $H/r \sim 0.03$--$0.1$, increasing outward (a \textbf{flared} disk).
+  \vskip2pt\relax
+  {\footnotesize Andrews (2020); Miotello et al.\ (2023).}
 \end{frame}
 
-
-% ════════════════════════════════════════════════════════════
-\sectionimage{hl_tau_alma}{HL Tauri, ALMA (2014). Credit: ALMA/ESO/NAOJ/NRAO}
-\section{From Dust to Planets}
-% ════════════════════════════════════════════════════════════
-
-% ── Grain growth ───────────────────────────────────────────
-\begin{frame}{Grain Growth: Sticking and Settling}
-  \begin{itemize}
-    \item Starting material: sub-$\mu$m dust grains (silicates, oxides, ices)
-    \item Growth factor to planets: $\sim$10$^{13}$ in size
-    \vskip6pt
-    \item \textbf{Step 1: Sticking}
-    \begin{itemize}
-      \item Low-velocity collisions ($\lesssim$1~m\,s$^{-1}$): van der Waals forces
-      \item Forms fractal aggregates up to mm--cm sizes
-    \end{itemize}
-    \vskip6pt
-    \item \textbf{Step 2: Settling}
-    \begin{itemize}
-      \item Dust settles to the disk midplane under vertical gravity
-      \item Creates a dense dust layer within the gas disk
-    \end{itemize}
-  \end{itemize}
-\end{frame}
-
-% ── Stokes number ────────────────────────────────────────
-\begin{frame}{Dust--Gas Coupling: The Stokes Number}
-  How tightly is a particle coupled to the gas?
-  \vskip6pt
-  \keyresult{$$\mathrm{St} = \tau_{\mathrm{stop}}\,\Omega_K$$}
-  \vskip6pt
-  where $\tau_{\mathrm{stop}}$ is the friction stopping time and $\Omega_K$ is the Keplerian frequency.
-  \vskip6pt
-  \begin{description}
-    \item[$\mathrm{St} \ll 1$ (small grains)] perfectly coupled to gas; follow the flow
-    \item[$\mathrm{St} \sim 1$ (pebbles, cm-dm)] partially decoupled; experience maximum radial drift
-    \item[$\mathrm{St} \gg 1$ (boulders, km)] decoupled; move on Keplerian orbits
-  \end{description}
-  \vskip6pt
-  Particles with $\mathrm{St} \sim 0.1$ are the ``sweet spot'' for pebble accretion: they drift efficiently yet can still be deflected by planetary gravity.
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Weidenschilling (1977); Johansen et al.\ (2014) in \textit{Protostars \& Planets VI}}
-\end{frame}
-
-% ── Growth barriers ────────────────────────────────────────
-\begin{frame}{Growth Barriers}
-  Three barriers impede growth beyond cm-scale:
-  \vskip6pt
-  \begin{description}
-    \item[Bouncing barrier ($\sim$mm):] Compacted aggregates bounce rather than stick
-    \item[Fragmentation barrier ($\sim$cm):] Collision velocities $>$1--10~m\,s$^{-1}$ shatter aggregates
-    \item[Radial drift barrier ($\sim$metre):] Gas headwind drains angular momentum\\
-    $\rightarrow$ Metre-sized boulders spiral into the star in $\sim$100--1000~yr
-  \end{description}
-  \vskip8pt
-  \begin{alertblock}{The metre-size problem}
-    How does nature bridge the gap from cm to km?
-  \end{alertblock}
-\end{frame}
-
-% ── Streaming instability ─────────────────────────────────
-\begin{frame}{Streaming Instability: Skipping the Barrier}
-  \begin{itemize}
-    \item When local dust-to-gas ratio $\gtrsim$1 (from settling + pressure bumps):
-    \begin{enumerate}
-      \item Concentrated particles accelerate gas toward Keplerian speed
-      \item Reduced headwind attracts more drifting particles
-      \item \textbf{Positive feedback} $\rightarrow$ dense filaments and clumps
-    \end{enumerate}
-    \item Dense clumps collapse under self-gravity
-    \item Directly form \textbf{planetesimals} ($\sim$50--500~km)
-    \item Skips the problematic cm-to-metre range entirely
-  \end{itemize}
-  \vskip6pt
-  \keyresult{The streaming instability solves the radial drift barrier by collective effects: particles help each other avoid falling into the star.}
-\end{frame}
-
-% ── Streaming instability simulation ─────────────────────
-\begin{frame}{Streaming Instability: A Simulation Snapshot}
-  \begin{columns}[c]
-    \column{0.58\textwidth}
-    \centering
-    \includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{streaming_instability}
-    \source{Johansen et al.\ (2007), Nature 448, 1022 (arXiv:0708.3890)}
-
-    \column{0.40\textwidth}
-    \begin{itemize}
-      \item \textbf{Panels a--c}: particle column density vs.\ radial position and time
-      \item \textbf{Panel a}: no back-reaction on gas $\rightarrow$ only weak drift banding
-      \item \textbf{Panel b}: with back-reaction $\rightarrow$ dense clumps form
-      \item \textbf{Panel d}: maximum particle density rises to $>$10$^3$ background
-      \item Clumps are dense enough for self-gravitating collapse to planetesimals
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
-% ── Pebble accretion ──────────────────────────────────────
-\begin{frame}{Pebble Accretion: Fast Growth}
-  \begin{itemize}
-    \item Once planetesimals exist, they sweep up mm--cm ``pebbles''
-    \item Gas drag deflects pebbles strongly toward growing body
-    \item Effective cross-section $\gg$ geometric cross-section
-    \item Enables growth to $\sim$10~$\Mearth$ within disk lifetime
-    \item Fast enough to trigger gas accretion $\rightarrow$ giant planets
-  \end{itemize}
-  \vskip8pt
-  \begin{block}{Planet formation sequence}
-    Dust grains $\xrightarrow{\text{sticking}}$ aggregates $\xrightarrow{\text{streaming inst.}}$ planetesimals $\xrightarrow{\text{pebble acc.}}$ planetary cores
-  \end{block}
-\end{frame}
-
-% ── Gravitational focusing ───────────────────────────────
-\begin{frame}{Gravitational Focusing}
-  Why does the largest body in a swarm grow fastest?
-  \vskip6pt
-  \keyresult{$$\sigma_\mathrm{eff} = \pi R^2 \left(1 + \frac{v_\mathrm{esc}^2}{v_\infty^2}\right)$$}
-  \vskip6pt
-  \begin{itemize}
-    \item Classical hard-sphere cross-section $= \pi R^2$
-    \item Gravity of the body curves nearby trajectories inward
-    \item Effective collision cross-section is enhanced by $(1 + v_\mathrm{esc}^2/v_\infty^2)$
-    \item When $v_\mathrm{esc} \gg v_\infty$ (low random velocities), focusing is enormous
-    \item Because $v_\mathrm{esc} \propto \sqrt{M/R}$, the \textbf{largest} body focuses most effectively
-  \end{itemize}
-  \vskip4pt
-  Consequence: an initially small mass excess runs away into a dominant body.
-\end{frame}
-
-% ── Runaway and oligarchic growth ──────────────────────────
-\begin{frame}{Runaway \& Oligarchic Growth}
+% ── Snow line ───────────────────────────────────────────────
+\begin{frame}{The snow line}
   \begin{columns}[T]
-    \column{0.48\textwidth}
-    \textbf{Runaway growth:}
+    \column{0.54\textwidth}
+    The distance beyond which water condenses as ice. In the solar nebula: roughly \textbf{2.5--3.5 AU}, between Mars and Jupiter.
+    \vskip6pt\relax
+    Why quoted values differ: \emph{the snow line moves}.
     \begin{itemize}
-      \item Biggest body focuses best
-      \item Grows fastest (positive feedback)
-      \item Reaches Moon--Mars mass in $\sim$10$^5$~yr
-      \item Ends when the big body stirs up the swarm
-    \end{itemize}
-
-    \column{0.48\textwidth}
-    \textbf{Oligarchic growth:}
-    \begin{itemize}
-      \item Winners stir up leftovers $\rightarrow$ focusing weakens
-      \item A few dozen ``oligarchs'' dominate
-      \item Each separated by $\sim$5--10 Hill radii
-      \item Isolation mass: $\sim$0.01--0.1~$\Mearth$
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
-% ── Isolation mass ───────────────────────────────────────
-\begin{frame}{Isolation Mass}
-  How big can oligarchs get?
-  \vskip6pt
-  The \textbf{isolation mass} is reached when an oligarch has consumed all available planetesimals within its feeding zone:
-  \vskip6pt
-  $$M_\mathrm{iso} \sim \frac{(4\pi B a^2 \Sigma_s)^{3/2}}{(3 M_*)^{1/2}}$$
-  \vskip6pt
-  where $B \sim 5$--$10$ is the feeding zone width in Hill radii.
-  \vskip6pt
-  \begin{itemize}
-    \item Inner solar system ($\Sigma_s \sim 10$~g/cm$^2$): $M_\mathrm{iso} \sim 0.01$--$0.1\;\Mearth$
-    \item Outer solar system (beyond snow line, $\Sigma_s \sim 30$~g/cm$^2$): $M_\mathrm{iso} \sim 10\;\Mearth$
-    \item Explains why giant planet cores can reach critical mass outside the snow line but not inside
-  \end{itemize}
-\end{frame}
-
-% ── Core accretion ─────────────────────────────────────────
-\begin{frame}{Core Accretion: Building Giant Planets}
-  \begin{enumerate}
-    \item Solid core grows beyond the snow line (more solids available)
-    \item Core reaches \textbf{critical mass} $\sim$5--15~$\Mearth$
-    \item Gravity binds a gas envelope from the disk
-    \item Envelope contracts, cools $\rightarrow$ \textbf{runaway gas accretion}
-    \item Accretion stops when planet opens a gap or disk disperses
-  \end{enumerate}
-  \vskip8pt
-  This explains:
-  \begin{itemize}
-    \item Jupiter \& Saturn: formed beyond snow line, reached critical mass early
-    \item Uranus \& Neptune: reached critical mass too late, less gas captured
-  \end{itemize}
-\end{frame}
-
-% ── Gravitational instability ──────────────────────────────
-\begin{frame}{Alternative: Gravitational Instability}
-  \begin{columns}[T]
-    \column{0.55\textwidth}
-    \begin{itemize}
-      \item If the disk is massive and cools rapidly:
-      \item Gas disk fragments directly into giant planets
-      \item Very fast: $\sim$10$^3$~yr (vs.\ $\sim$10$^6$ for core accretion)
-      \item May work at large orbital distances ($\gtrsim$30--50~AU)
-      \item Debated for solar system giants
+      \item Young disk, strong accretion heating: out at $\sim 5$ AU.
+      \item As accretion declines and the disk cools, it migrates \textbf{inward}.
+      \item The $2.5$--$3.5$ AU range is the location \emph{imprinted on the asteroid belt's} compositional gradient (L4, L12).
     \end{itemize}
 
     \column{0.42\textwidth}
-    \begin{block}{Two pathways}
-      \textbf{Core accretion:}\\bottom-up (dust $\to$ core $\to$ gas)\\[4pt]
-      \textbf{Grav.\ instability:}\\top-down (disk $\to$ clump $\to$ planet)
+    \begin{block}{Why it matters}
+      \begin{enumerate}
+        \item Adding water ice to the rock-and-metal inventory roughly \textbf{triples} the solid mass available.
+        \item The \textbf{CHNOPS} elements partition between volatile and refractory phases by local temperature, so \emph{where} a planet forms sets its initial volatile budget.
+      \end{enumerate}
     \end{block}
   \end{columns}
+  \vskip2pt\relax
+  {\footnotesize Dr\k{a}\.zkowska et al.\ (2023); Lichtenberg et al.\ (2021); Krijt et al.\ (2023).}
 \end{frame}
 
-% ── Planet-planet scattering ─────────────────────────────
-\begin{frame}{Planet--Planet Scattering}
-  After the gas disk disperses, gravitational interactions among embryos become \textbf{chaotic}.
-  \vskip6pt
+% ── Öberg hero ──────────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{oberg2011_snowlines}}\\
+  {\footnotesize Sequential volatile condensation and the resulting C/O ratio across a disk. Reproduced from \"Oberg et al.\ (2011), Fig.~1.}
+\end{frame}
+
+\begin{frame}{Reading the ice-line sequence}
+  Solid curve: C/O of the \emph{gas}. Dashed: C/O of the \emph{grains}. Dotted: the stellar value, solar C/O $= 0.54$.
+  \vskip4pt\relax
   \begin{itemize}
-    \item Initially packed oligarchs cross each other's Hill radii
-    \item Close encounters pump eccentricities on $\sim$Myr timescales
-    \item Orbits intersect $\Rightarrow$ collisions or ejections
-    \item Survivors spiral toward stable separations ($\sim$10--20 mutual Hill radii)
-    \item Damping by residual planetesimals circularises orbits over 10--100~Myr
+    \item $\mathrm{H_2O}$ ice line at $\sim 2$ AU: freezing out water \emph{lowers} grain C/O and \emph{raises} gas C/O.
+    \item Beyond the $\mathrm{CO_2}$ ice line at $\sim 10$ AU the gas reaches C/O $= 1$ and holds it out to the CO line at $\sim 40$ AU.
+    \item Beyond the CO line essentially all C and O are frozen onto grains, so grain C/O returns to the stellar value.
+    \item The exact $\mathrm{H_2O}$ line position is model-dependent, $\sim 2$--$3.5$ AU depending on the assumed temperature profile.
   \end{itemize}
-  \vskip6pt
-  \keyresult{Scattering is the dominant mechanism for producing the observed eccentricity distribution of exoplanets, including eccentric giant planets at intermediate separations.}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Rasio \& Ford (1996); Chambers (2004); Lissauer et al.\ (2011)}
+  \vskip2pt\relax
+  \keyresult{A planet inherits the chemistry of its formation zone. Composition is a \emph{location} record, and we will use it as one in L12 and L13.}
 \end{frame}
 
-% ── Giant impacts ──────────────────────────────────────────
-\begin{frame}{The Giant Impact Phase}
-  \begin{columns}[c]
-    \column{0.42\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{giant_impact}
-    \source{NASA/JPL-Caltech (artist's concept)}
+% ── HL Tau hero ─────────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{hl_tau}}\\
+  {\footnotesize HL Tauri at $1.3$ mm, ALMA (2014). Credit: ALMA (ESO/NAOJ/NRAO), CC BY 4.0.}
+\end{frame}
 
-    \column{0.55\textwidth}
+\begin{frame}{Reading HL Tau}
+  The 2014 image that reset expectations for how early structure appears.
+  \vskip4pt\relax
+  \begin{itemize}
+    \item Star age $\sim 1$ Myr: \textbf{young}, and already highly structured.
+    \item Concentric bright rings and dark gaps out to $\sim 100$ AU, resolved at AU scales.
+    \item Gaps \emph{may} be carved by forming planets, but ice lines and magnetically driven structures remain viable alternatives.
+    \item Either way: the dust is not smoothly distributed, and the conditions for planet formation are set early.
+  \end{itemize}
+  \vskip2pt\relax
+  {\footnotesize ALMA Partnership et al.\ (2015).}
+\end{frame}
+
+% ── DSHARP hero ─────────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{dsharp_composite}}\\
+  {\footnotesize The 20 disks of the ALMA DSHARP survey at $240$ GHz. Reproduced from Andrews et al.\ (2018), Fig.~3.}
+\end{frame}
+
+\begin{frame}{Reading the DSHARP gallery}
+  \begin{itemize}
+    \item 20 nearby disks at $240$ GHz ($1.25$ mm), $\sim 5$ AU resolution.
+    \item Beam sizes (lower left) and $10$ AU scale bars (lower right) in each panel; the colour stretch is chosen to bring out faint substructure.
+    \item Rings and gaps appear in \emph{nearly every} disk, not just HL Tau.
+    \item \textbf{Caveat that matters}: the sample was deliberately biased toward the largest and brightest disks. Not every disk need be this richly structured.
+  \end{itemize}
+  \vskip4pt\relax
+  \keyresult{Substructure is the norm among bright disks, and it appears early. Whatever forms planets is already at work in the first Myr.}
+\end{frame}
+
+% ── Disk lifetimes ──────────────────────────────────────────
+\begin{frame}{The deadline: disk lifetimes}
+  Infrared-excess surveys of clusters at different ages measure the fraction of stars still holding an optically thick \emph{inner} disk.
+  \vskip6pt\relax
+  \begin{itemize}
+    \item $\sim 80\%$ at $1$ Myr, falling to $< 10\%$ by $\sim 6$ Myr.
+    \item Half of all stars lose their inner disks within $\sim 3$ Myr.
+    \item Essentially all disks are gone by $\sim 6$ Myr.
+  \end{itemize}
+  \vskip6pt\relax
+  Dispersal is driven by viscous accretion onto the star, photoevaporation by stellar UV and X-rays, and probably magnetohydrodynamic winds.
+  \vskip4pt\relax
+  \keyresult{A hard deadline for gas-giant formation: no core massive enough before the gas goes, no giant planet. This single constraint drives most of the theory that follows.}
+  \vskip2pt\relax
+  {\footnotesize Haisch, Lada \& Lada (2001).}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{protoplanetary_disk}{Protoplanetary disk, artist's concept. Credit: ESO/L.~Cal\c{c}ada, CC BY 4.0}
+\section{From dust to planetesimals}
+% ════════════════════════════════════════════════════════════
+
+% ── The scale problem ───────────────────────────────────────
+\begin{frame}{Twelve orders of magnitude}
+  The raw material is sub-micrometre dust: silicates, metal oxides, and, beyond the snow line, ices.
+  \vskip8pt\relax
+  \begin{center}
+    \large
+    $1\ \mu\mathrm{m}\ \longrightarrow\ 1000\ \mathrm{km}$ \qquad is a factor $\sim 10^{12}$ in size.
+  \end{center}
+  \vskip8pt\relax
+  The physics changes character at almost every decade along the way:
+  \begin{itemize}
+    \item \textbf{Contact forces} (van der Waals) hold the smallest aggregates together.
+    \item \textbf{Aerodynamics} (gas drag) dominates the pebble-to-boulder range.
+    \item \textbf{Self-gravity} takes over only above roughly a kilometre.
+  \end{itemize}
+  \vskip4pt\relax
+  There is no single mechanism that spans the whole range, which is why this section has several.
+\end{frame}
+
+% ── Grain growth ────────────────────────────────────────────
+\begin{frame}{Grain growth: sticking and settling}
+  \begin{columns}[c]
+    \column{0.48\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{blum2008_aggregate_growth}
+    \source{Blum \& Wurm (2008), Fig.~2}
+
+    \column{0.49\textwidth}
+    Grains collide through Brownian motion, turbulence, and settling.
     \begin{itemize}
-      \item After disk dispersal: embryos' orbits become chaotic
-      \item $\sim$10--100~Myr of collisions assemble final terrestrial planets
-      \item \textbf{Moon-forming impact:} proto-Earth hit by Mars-sized Theia
-      \item Melts the planet $\rightarrow$ magma ocean $\rightarrow$ core formation
+      \item At $\lesssim 1$ m s$^{-1}$ they \textbf{stick}, held by van der Waals forces.
+      \item The products are \textbf{fractal aggregates}: fluffy, porous, $D \approx 1.4$.
+      \item \textbf{Inset}: $1.9$ µm $\mathrm{SiO_2}$ monomers aggregated in microgravity.
+      \item \textbf{Main panel}: aggregate mass vs time, in monomer units, against a Smoluchowski model.
+      \item Efficient to mm and cm sizes. Then it stops.
     \end{itemize}
   \end{columns}
-  \vskip4pt
-  \keyresult{Formation is not just assembly; it drives differentiation, outgassing, and sets the stage for all subsequent evolution (Lectures 3 \& 4).}
 \end{frame}
 
-% ── Formation roadmap overview ─────────────────────────────
-\begin{frame}{From Dust to Planets: The Full Sequence}
-  \begin{columns}[c]
-    \column{0.22\textwidth}
-    \centering
-    \includegraphics[height=0.82\textheight,keepaspectratio]{solar_nebula_stages}
-    \source{Wikimedia, public domain}
+% ── Growth barriers ─────────────────────────────────────────
+\begin{frame}{Three barriers stop incremental growth}
+  \begin{itemize}
+    \item \textbf{Bouncing barrier} ($\sim$ mm). Slightly faster collisions compact the aggregates, and compacted aggregates bounce instead of sticking.
+    \vskip3pt\relax
+    \item \textbf{Fragmentation barrier} ($\sim$ cm). Above $\sim 1$--$10$ m s$^{-1}$, depending on material, aggregates shatter. Silicates are fragile; ices survive faster impacts.
+    \vskip3pt\relax
+    \item \textbf{Radial drift barrier} ($\sim$ metre). Gas is partly pressure-supported, so it orbits slightly slower than Keplerian. Solids feel a \textbf{headwind}, lose angular momentum, and spiral inward. The drift rate \emph{peaks} for metre-sized boulders, which reach the star in $\sim 100$--$1000$ years.
+  \end{itemize}
+  \vskip6pt\relax
+  \keyresult{The metre-size barrier is the central problem: growth by sticking is slower than removal by drift, exactly in the size range you must cross.}
+  \vskip2pt\relax
+  {\footnotesize Birnstiel et al.\ (2016).}
+\end{frame}
 
-    \column{0.75\textwidth}
-    Four key stages, from top to bottom:
-    \vskip8pt
-    \begin{enumerate}
-      \item \textbf{Cloud collapse:} a cold, dense molecular cloud fragments and contracts under self-gravity
-      \item \textbf{Protoplanetary disk:} conservation of angular momentum flattens the infalling gas into a rotating disk
-      \item \textbf{Disk substructure:} dust settles and concentrates into rings; streaming instability builds planetesimals
-      \item \textbf{Mature system:} runaway and oligarchic growth, followed by giant impacts, produce the planets on stable orbits
-    \end{enumerate}
-    \vskip8pt
-    Total timescale: $\sim$100~Myr from first collapse to a settled planetary system.
+% ── Growth-barrier hero ─────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{drazkowska2023_growth_barriers}}\\
+  {\footnotesize Maximum grain size vs orbital distance in a standard disk model. Adapted from Dr\k{a}\.zkowska et al.\ (2023), Fig.~4.}
+\end{frame}
+
+\begin{frame}{Reading the growth-barrier map}
+  Axes: orbital distance against the largest grain size that can survive there.
+  \vskip4pt\relax
+  \begin{itemize}
+    \item \textbf{Red curves}: where collision speeds reach the bouncing ($v_{\mathrm{th}} = 1$ cm s$^{-1}$) or fragmentation ($1$ and $10$ m s$^{-1}$) thresholds.
+    \item \textbf{Blue curve}: the radial-drift limit. Above it, grains drift inward faster than they grow.
+    \item \textbf{Grey contours}: constant Stokes number, i.e.\ how tightly a particle couples to the gas.
+    \item \textbf{Black curves}: representative growth histories, running into whichever limit is lowest.
+  \end{itemize}
+  \vskip2pt\relax
+  Sticking stalls between tens of µm and dm; planetesimals are kilometres.
+  \vskip2pt\relax
+  \keyresult{The gap is not marginal. Incremental sticking is off by many orders of magnitude, so a \emph{collective} mechanism is required.}
+\end{frame}
+
+% ── Streaming instability ───────────────────────────────────
+\begin{frame}{The streaming instability}
+  The way out is not stronger glue but \textbf{collective aerodynamics}.
+  \vskip6pt\relax
+  When the local dust-to-gas ratio approaches unity, through settling to the midplane or accumulation at pressure bumps, the drag coupling changes character:
+  \begin{enumerate}
+    \item A local clump of particles \textbf{drags the gas along}, accelerating it toward the Keplerian velocity.
+    \item Faster gas means a \textbf{weaker headwind}, so the clump's own drift slows.
+    \item Particles drifting in from further out \textbf{catch up and join} the clump.
+    \item Positive feedback: dense filaments form, and where they are dense enough they \textbf{collapse under self-gravity}.
+  \end{enumerate}
+  \vskip6pt\relax
+  The product is a \textbf{planetesimal}, radius tens to a few hundred km, formed directly. The awkward metre-to-kilometre range is simply skipped.
+  \vskip2pt\relax
+  {\footnotesize Johansen et al.\ (2007); Simon et al.\ (2016).}
+\end{frame}
+
+% ── Simon hero ──────────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{simon2016_streaming}}\\
+  {\footnotesize Streaming-instability simulation: particle surface density in a local shearing box. Reproduced from Simon et al.\ (2016), Fig.~3.}
+\end{frame}
+
+\begin{frame}{Reading the streaming-instability snapshots}
+  Four snapshots, time increasing from top left to bottom right. Colour: particle surface density normalised to its mean, logarithmic scale. Axes in gas scale heights $H$.
+  \vskip4pt\relax
+  \begin{itemize}
+    \item \textbf{Early}: drag feedback has already organised the pebbles into loose, azimuthally extended \textbf{filaments}.
+    \item \textbf{Then}: the filaments merge and sharpen into one dominant dense band.
+    \item \textbf{Then}: the filaments fragment along their length under self-gravity.
+    \item \textbf{Final panel}: gravitationally bound clumps (red points) have collapsed into planetesimals.
+  \end{itemize}
+  \vskip4pt\relax
+  Note the scale: this is a \emph{local} box, a few scale heights across, not a whole disk. The instability is a midplane process.
+\end{frame}
+
+% ── Pebble accretion ────────────────────────────────────────
+\begin{frame}{Pebble accretion}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{lambrechts2012_pebble_accretion}
+    \source{Adapted from Lambrechts \& Johansen (2012)}
+
+    \column{0.51\textwidth}
+    Large planetesimals sweep up the abundant mm- to cm-sized pebbles.
+    \begin{itemize}
+      \item Frame co-moving with the embryo; axes in Hill radii $r_{\mathrm{H}}$; red circle is the Hill sphere.
+      \item Line styles: friction times $\tau_{\mathrm{f}} = 0.01$, $0.1$, $1$, i.e.\ weaker gas coupling.
+      \item Gas drag makes pebbles entering the Hill sphere \textbf{spiral in} instead of passing by.
+      \item The effective cross-section far exceeds the geometric one.
+      \item Cores reach $\sim 10\,\Mearth$ \emph{within} the disk lifetime.
+    \end{itemize}
   \end{columns}
+\end{frame}
+
+% ── Pebble isolation ────────────────────────────────────────
+\begin{frame}{Pebble accretion switches itself off}
+  Pebble accretion is \textbf{self-limiting}, and how it stops matters as much as how it works.
+  \vskip4pt\relax
+  \begin{block}{Pebble isolation mass}
+    A sufficiently massive planet raises a \textbf{pressure bump} in the gas just outside its orbit. Inward-drifting pebbles pile up there and stop: the planet's supply is cut off.
+  \end{block}
+  \vskip4pt\relax
+  The consequence is not local:
+  \begin{itemize}
+    \item The supply to the \emph{entire disk interior to that orbit} is cut off at the same time, so one planet changes the solid budget everywhere inside it.
+    \item A leading explanation for the isotopic split between inner and outer solar-system material (L12).
+  \end{itemize}
+  \vskip2pt\relax
+  {\footnotesize Dr\k{a}\.zkowska et al.\ (2023).}
+\end{frame}
+
+% ── Preferential sites ──────────────────────────────────────
+\begin{frame}{Planets do not form everywhere at once}
+  Formation concentrates where solids concentrate:
+  \vskip6pt\relax
+  \begin{itemize}
+    \item \textbf{Pressure bumps}: a local gas-pressure maximum halts radial drift, so solids accumulate instead of passing through.
+    \item \textbf{Ice lines}: sublimation and recondensation enhance the local solid density and change grain stickiness.
+    \item \textbf{Dead-zone edges}: boundaries between turbulent and quiescent regions trap material.
+  \end{itemize}
+  \vskip4pt\relax
+  \keyresult{A non-uniform distribution of formation sites is one reason exoplanetary architectures are so diverse (L13).}
+  \vskip2pt\relax
+  {\footnotesize Dr\k{a}\.zkowska et al.\ (2023).}
+\end{frame}
+
+% ── Roadmap hero ────────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{drazkowska2023_roadmap}}\\
+  {\footnotesize Roadmap of the planet-formation sequence, organised by body size. Adapted from Dr\k{a}\.zkowska et al.\ (2023).}
+\end{frame}
+
+\begin{frame}{Reading the formation roadmap}
+  Horizontal axis: body size, from sub-µm dust to gas giants. Reference bodies (Ceres, Moon, Mars, Earth, Jupiter) mark the scale.
+  \vskip4pt\relax
+  \begin{itemize}
+    \item \textbf{Grey bars}: the size range over which each process operates, in order: dust growth to pebbles, planetesimal formation, runaway and oligarchic growth, pebble accretion, giant impacts, gas accretion.
+    \item \textbf{Hatched bar}: giant impacts, the one process that \emph{continues after the gas disk has dispersed}.
+    \item \textbf{Red bands}: the two great obstacles. Radial drift at pebble-to-boulder sizes, and planet migration at planetary masses.
+  \end{itemize}
+  \vskip4pt\relax
+  \keyresult{The formation half of this lecture climbs this size axis from left to right; the right-hand red band, migration, is where we end today.}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{giant_impact}{Giant impact, artist's concept. Credit: NASA/JPL-Caltech}
+\section{Building planets: runaway growth to gas giants}
+% ════════════════════════════════════════════════════════════
+
+% ── Runaway growth ──────────────────────────────────────────
+\begin{frame}{Runaway growth}
+  Once planetesimals exist, \textbf{gravity} takes over from aerodynamics. A larger body bends incoming trajectories toward itself, so it collides with far more than its geometric cross-section:
+  \vskip4pt\relax
+  \[
+    \sigma_{\mathrm{eff}} = \pi R^2 \left(1 + \frac{v_{\mathrm{esc}}^2}{v_{\infty}^2}\right),
+    \qquad v_{\mathrm{esc}} = \sqrt{\frac{2GM}{R}}
+  \]
+  \vskip4pt\relax
+  \begin{itemize}
+    \item In a dynamically cold swarm ($v_{\infty} \ll v_{\mathrm{esc}}$) the \textbf{focusing factor} is enormous.
+    \item $v_{\mathrm{esc}}$ grows with mass, so \emph{the biggest body grows fastest}: the size gap widens with time.
+    \item At $1$ AU, a single body reaches roughly \textbf{lunar mass within $\sim 10^5$ years}.
+  \end{itemize}
+  \vskip2pt\relax
+  Growth toward Mars-mass embryos continues more slowly; the final terrestrial planets take far longer still (L4).
+  \vskip2pt\relax
+  {\footnotesize Kokubo \& Ida (1998).}
+\end{frame}
+
+% ── Oligarchic growth ───────────────────────────────────────
+\begin{frame}{Oligarchic growth}
+  Runaway growth destroys its own precondition.
+  \vskip6pt\relax
+  \begin{itemize}
+    \item The growing bodies \textbf{stir up} the surrounding planetesimals, raising $v_{\infty}$.
+    \item Higher $v_{\infty}$ shrinks the focusing factor, so the runaway slows into the \textbf{oligarchic regime}.
+    \item A few dozen comparable-mass \textbf{oligarchs} each dominate a feeding zone, separated by $\sim 5$--$10$ mutual Hill radii.
+    \item Each grows until it reaches its \textbf{isolation mass}: all material in its feeding zone consumed.
+  \end{itemize}
+  \vskip6pt\relax
+  \begin{block}{The problem this leaves behind}
+    In the inner solar system the isolation mass is only $\sim 0.01$--$0.1\,\Mearth$, an order of magnitude short of Earth. Something later must merge the oligarchs.
+  \end{block}
+  \vskip2pt\relax
+  {\footnotesize Kokubo \& Ida (1998).}
+\end{frame}
+
+% ── Core accretion ──────────────────────────────────────────
+\begin{frame}{Core accretion: how to build a giant}
+  The dominant model for giant-planet formation, in four steps:
+  \vskip6pt\relax
+  \begin{enumerate}
+    \item A \textbf{solid core} grows from planetesimals and pebbles \emph{beyond the snow line}, where solids are abundant.
+    \item At a critical core mass of $\sim 10$--$20\,\Mearth$, gravity can bind a substantial \textbf{gas envelope}.
+    \item The envelope contracts and cools, admitting more gas: \textbf{runaway gas accretion}. Hundreds of Earth masses of H and He within $\sim 10^5$ years.
+    \item Accretion ends when the planet \textbf{opens a gap} or the disk \textbf{dissipates}.
+  \end{enumerate}
+  \vskip6pt\relax
+  \keyresult{This explains the solar system's giants in one sentence: Jupiter and Saturn reached critical core mass before dispersal; Uranus and Neptune reached it too late, after most gas was gone.}
+  \vskip2pt\relax
+  {\footnotesize Pollack et al.\ (1996).}
+\end{frame}
+
+% ── Helled hero ─────────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{helled2014_core_accretion}}\\
+  {\footnotesize Growth of a giant planet by core accretion at $5.2$ AU. Reproduced from Helled et al.\ (2014), Fig.~1; simulation from Lissauer et al.\ (2009).}
+\end{frame}
+
+\begin{frame}{Reading the core-accretion curves}
+  Mass against time for a classic simulation of Jupiter's formation at $5.2$ AU.
+  \vskip4pt\relax
+  \begin{itemize}
+    \item \textbf{Solid line}: core mass. \textbf{Dash-dotted}: envelope mass. \textbf{Dashed}: total.
+    \item \textbf{Phase 1}: rapid core growth to $\sim 10\,\Mearth$.
+    \item \textbf{Phase 2}: a long plateau of slow, quasi-hydrostatic envelope growth. This phase sets the clock, and it is what must fit inside the disk lifetime.
+    \item \textbf{Phase 3}: runaway gas accretion, beginning at the \textbf{crossover point} where envelope mass overtakes core mass, at $2.3$ Myr in this run, reaching a Jupiter mass by $3$ Myr.
+  \end{itemize}
+  \vskip4pt\relax
+  \keyresult{Compare $3$ Myr here with the disk-lifetime plot: giant-planet formation only just fits inside the deadline.}
+\end{frame}
+
+% ── Gravitational instability ───────────────────────────────
+\begin{frame}{Gravitational instability: the alternative pathway}
+  \begin{columns}[T]
+    \column{0.50\textwidth}
+    A massive disk that cools rapidly enough can \textbf{fragment directly} into self-gravitating clumps, which contract into giant planets. No solid core needed first.
+    \vskip6pt\relax
+    \begin{itemize}
+      \item Fast: orbital timescales, $\sim 10^3$ years.
+      \item But it needs high disk mass \emph{and} efficient cooling.
+    \end{itemize}
+
+    \column{0.46\textwidth}
+    \begin{block}{Where those conditions hold}
+      Only at large orbital distances, $\gtrsim 30$--$50$ AU, in unusually massive disks.
+    \end{block}
+    \vskip8pt\relax
+    So it is today regarded as a pathway for \textbf{massive companions on wide orbits}, not for the solar system's giants.
+  \end{columns}
+  \vskip6pt\relax
+  {\footnotesize Boss (1997); Kratter \& Lodato (2016).}
+\end{frame}
+
+% ── Giant impacts ───────────────────────────────────────────
+\begin{frame}{The giant impact phase}
+  \begin{columns}[c]
+    \column{0.44\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{giant_impact}
+    \source{NASA/JPL-Caltech (artist's concept)}
+
+    \column{0.53\textwidth}
+    After the disk disperses, there is no gas drag left to damp eccentricities.
+    \begin{itemize}
+      \item Embryo orbits grow eccentric and start crossing.
+      \item $\sim 10$--$100$ Myr of chaotic \textbf{giant impacts} merges the oligarchs into the final terrestrial planets.
+      \item The \textbf{Moon-forming impact}, proto-Earth struck by the Mars-sized body Theia, is our most dramatic example.
+    \end{itemize}
+    \vskip4pt\relax
+    This is the process that finally bridges the isolation-mass gap.
+  \end{columns}
+\end{frame}
+
+% ── Geophysical consequences ────────────────────────────────
+\begin{frame}{Formation is also a geophysical process}
+  Assembly is not just bookkeeping of mass. The energy delivered changes what the planet \emph{is}.
+  \vskip4pt\relax
+  \begin{itemize}
+    \item Accretion and giant impacts \textbf{melt} the planet: a global \textbf{magma ocean}.
+    \item Molten, dense metallic iron sinks and light silicates float: \textbf{core-mantle differentiation}.
+    \item Short-lived radionuclides, above all $^{26}\mathrm{Al}$ (half-life $0.72$ Myr), melt even \emph{small planetesimals}, so differentiation can begin before assembly finishes.
+  \end{itemize}
+  \vskip4pt\relax
+  \keyresult{The thermal and chemical state inherited from formation shapes everything downstream: magnetic field, volcanism, outgassing, habitability (L3, L4).}
+  \vskip2pt\relax
+  {\footnotesize Lichtenberg et al.\ (2023).}
 \end{frame}
 
 
 % ── Break ───────────────────────────────────────────────────
 \breakslide
 
+
 % ════════════════════════════════════════════════════════════
-\sectionimage{saturn_rings}{Saturn's rings, Cassini (2009). Credit: NASA/JPL/SSI}
-\section{Kepler's Laws \& Orbital Elements}
+\sectionimage{copernican_system}{Heliocentric model, Copernicus, \emph{De revolutionibus} (1543). Public domain}
+\section{Kepler's laws and orbital elements}
 % ════════════════════════════════════════════════════════════
 
-% ── Kepler's three laws ────────────────────────────────────
-\begin{frame}{Kepler's Three Laws}
+% ── Kepler's three laws ─────────────────────────────────────
+\begin{frame}{Kepler's three laws}
+  Distilled by Kepler from Tycho Brahe's observations, early 17th century. Empirical first, explained later.
+  \vskip2pt\relax
   \begin{enumerate}
-    \item \textbf{Law of ellipses:} Each planet orbits the Sun on an \textbf{ellipse} with the Sun at one focus.
-    \vskip6pt
-    \item \textbf{Equal areas:} A line from planet to Sun sweeps \textbf{equal areas in equal times}.\\
-    $\Rightarrow$ faster at perihelion, slower at aphelion
-    \vskip6pt
-    \item \textbf{Harmonic law:}
-    $$P^2 = \frac{4\pi^2}{G(M_1 + M_2)}\,a^3$$
-    Connects period $P$ to semi-major axis $a$ and total mass.
+    \item \textbf{The law of ellipses.} Each planet moves on an ellipse with the Sun at one \emph{focus}, not the centre.
+    \vskip2pt\relax
+    \item \textbf{The law of equal areas.} The Sun-planet line sweeps equal areas in equal times: fastest at perihelion, slowest at aphelion.
+    \vskip2pt\relax
+    \item \textbf{The harmonic law.} $P^2 \propto a^3$, which in Newton's form reads
+    \[
+      P^2 = \frac{4\pi^2}{G(M_1 + M_2)}\, a^3
+    \]
   \end{enumerate}
-  \vskip4pt
-  Newton showed: \textbf{all three follow from universal gravitation}.
+  \vskip2pt\relax
+  Newton showed all three follow from one universal law of gravitation (L1).
+  \vskip2pt\relax
+  \keyresult{The third law is the workhorse of the whole course: it turns a \emph{measured period} into a \emph{mass}.}
 \end{frame}
 
-% ── Kepler's laws diagram ─────────────────────────────────
-\begin{frame}{Visualising Kepler's Laws}
-  \centering
-  \includegraphics[width=0.85\textwidth,height=0.70\textheight,keepaspectratio]{kepler_laws}
-  \source{Hankwang, CC BY 2.5}
-  \vskip4pt
-  {\small Elliptical orbit (left), equal areas (centre, shaded regions have equal area), and the period--semi-major axis relation (right).}
-\end{frame}
-
-% ── Orbital elements ──────────────────────────────────────
-\begin{frame}{Six Orbital Elements}
+% ── Kepler figure ───────────────────────────────────────────
+\begin{frame}{The three laws, geometrically}
   \begin{columns}[c]
-    \column{0.38\textwidth}
+    \column{0.50\textwidth}
     \centering
-    \includegraphics[width=\linewidth,height=0.65\textheight,keepaspectratio]{orbital_elements}
+    \includegraphics[width=\linewidth, height=0.70\textheight, keepaspectratio]{kepler_laws}
+    \source{Hankwang, CC BY 2.5}
+
+    \column{0.47\textwidth}
+    \begin{itemize}
+      \item \textbf{(1)} The Sun sits at a focus. The empty focus has no physical meaning, which is why the ellipse was so hard to accept.
+      \item \textbf{(2)} The shaded wedges have \emph{equal area}, so they are swept in equal time: short and fat near perihelion, long and thin near aphelion.
+      \item \textbf{(3)} $P^2 \propto a^3$ ties different planets' orbits to each other.
+      \item Law 2 is angular-momentum conservation in disguise. We use it in the derivation shortly.
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Architecture hero ───────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{solar_system_architecture}}\\
+  {\footnotesize Architecture of the Solar System on a logarithmic semi-major-axis scale. Course-original figure; data: NSSDC Planetary Fact Sheet.}
+\end{frame}
+
+\begin{frame}{Reading the solar-system architecture}
+  Logarithmic semi-major axis. Symbol areas scale as $\log(1 + R/\Rearth)$ so that small bodies stay visible.
+  \vskip4pt\relax
+  \begin{itemize}
+    \item \textbf{Main belt} shaded at $2.1$--$3.3$ AU; \textbf{classical Kuiper Belt} at $30$--$50$ AU.
+    \item The $2.5$--$3.5$ AU band marks where the solar nebula's \textbf{water snow line} lay: rocky planets inside, gas and ice giants outside.
+    \item Note how much of the system is empty. The eight planets occupy a handful of decades in radius.
+    \item This is the structure the first half of the lecture had to produce, and the second half will rearrange.
+  \end{itemize}
+\end{frame}
+
+% ── Orbital elements table ──────────────────────────────────
+\begin{frame}{Six orbital elements}
+  \centering
+  \footnotesize
+  \begin{tabular}{lcl}
+    \toprule
+    Element & Symbol & Meaning \\
+    \midrule
+    Semi-major axis            & $a$      & Size of the orbit \\
+    Eccentricity               & $e$      & Shape ($e = 0$ circular, $0 < e < 1$ elliptical) \\
+    Inclination                & $i$      & Tilt of the orbital plane vs a reference plane \\
+    Longitude of ascending node& $\Omega$ & Where the orbit crosses the reference plane \\
+    Argument of perihelion     & $\omega$ & Orientation of the ellipse within its plane \\
+    True anomaly               & $\nu$    & Where the body is, right now \\
+    \bottomrule
+  \end{tabular}
+  \vskip8pt\relax
+  \normalsize
+  \begin{itemize}
+    \item The first five are \textbf{constant} for a Keplerian orbit: they define size, shape, and orientation.
+    \item Only the sixth changes with time.
+  \end{itemize}
+  \vskip4pt\relax
+  Perturbations, resonances, tides, and migration all act by \emph{slowly changing the first five}. That is the subject of the rest of this lecture.
+\end{frame}
+
+% ── Orbital elements figure ─────────────────────────────────
+\begin{frame}{The four angular elements}
+  \begin{columns}[c]
+    \column{0.44\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.66\textheight, keepaspectratio]{orbital_elements}
     \source{Lasunncty, CC BY-SA 3.0}
 
-    \column{0.58\textwidth}
-    \small
-    \begin{tabular}{l c l}
-      \toprule
-      \textbf{Element} & \textbf{Symbol} & \textbf{Controls} \\
-      \midrule
-      Semi-major axis & $a$ & Size \\
-      Eccentricity & $e$ & Shape \\
-      Inclination & $i$ & Tilt \\
-      Long.\ asc.\ node & $\Omega$ & Twist \\
-      Arg.\ perihelion & $\omega$ & Orientation \\
-      True anomaly & $\nu$ & Position \\
-      \bottomrule
-    \end{tabular}
-    \vskip6pt
-    First five $=$ orbit shape \& orientation.\\
-    Sixth $=$ where the body is now.
+    \column{0.53\textwidth}
+    \begin{itemize}
+      \item \textbf{Grey}: the reference plane, usually the ecliptic for solar-system work.
+      \item The orbital plane is tilted from it by the inclination $i$.
+      \item $\Omega$ locates the \textbf{ascending node}, where the body crosses northward.
+      \item $\omega$ rotates the ellipse \emph{within} its plane (here ``argument of periapsis'', the general term).
+      \item $\nu$ finally locates the body along the orbit.
+      \item With $a$ and $e$ for size and shape, the description is complete.
+    \end{itemize}
   \end{columns}
 \end{frame}
 
-% ── Two-body problem ──────────────────────────────────────
-\begin{frame}{The Two-Body Problem}
-  Two masses $m_1$, $m_2$ interacting through gravity:
-  \vskip6pt
-  \begin{itemize}
-    \item Reduces to \textbf{reduced mass} $\mu = m_1 m_2 / (m_1 + m_2)$ in central field of $M = m_1 + m_2$
-    \item Total orbital energy:
-    $$E = \frac{1}{2}\mu v^2 - \frac{G m_1 m_2}{r}$$
-    \item Fundamental result: energy depends \textbf{only on $a$}:
-  \end{itemize}
-  \vskip4pt
-  \keyresult{$$E = -\frac{G m_1 m_2}{2a}$$}
-  \vskip4pt
-  Same $a$ $\rightarrow$ same energy, regardless of eccentricity.
+% ── Solar system e and i ────────────────────────────────────
+\begin{frame}{What the solar system's elements tell us}
+  \begin{columns}[T]
+    \column{0.50\textwidth}
+    Most planets have
+    \begin{itemize}
+      \item nearly circular orbits, $e < 0.1$;
+      \item low inclinations, $i \lesssim 3.5^{\circ}$.
+    \end{itemize}
+    \vskip6pt\relax
+    That is not an accident: it is the \textbf{fossil signature of the disk} the planets formed in. A flat, cold disk makes flat, circular orbits.
+
+    \column{0.46\textwidth}
+    \begin{block}{The exceptions are the interesting part}
+      \begin{itemize}
+        \item \textbf{Mercury}: $e = 0.206$, $i = 7.0^{\circ}$.
+        \item \textbf{Pluto}: $e = 0.25$, $i = 17^{\circ}$.
+      \end{itemize}
+    \end{block}
+    \vskip8pt\relax
+    Both point to a more complicated dynamical history than ``formed here, stayed here''. Pluto's case we solve later today, with resonances.
+  \end{columns}
 \end{frame}
 
 
 % ════════════════════════════════════════════════════════════
-\sectionimage{jupiter}{Jupiter, Hubble (2014). Credit: NASA/ESA/A.~Simon}
-\section{Blackboard Derivation: Vis-Viva Equation}
+\sectionimage{halley2}{Comet 1P/Halley, 21 March 1986. Credit: R.~Haefner / ESO, CC BY 4.0}
+\section{The two-body problem and vis-viva}
 % ════════════════════════════════════════════════════════════
 
-% ── Setup ──────────────────────────────────────────────────
-\begin{frame}{Deriving the Vis-Viva Equation}
-  \textbf{Goal:} Find the speed $v$ at any distance $r$ in an orbit with semi-major axis $a$.
-  \vskip10pt
-  \textbf{Starting point:} Total energy is conserved and equals $E = -GMm/(2a)$.
-  \vskip8pt
-  At any point on the orbit:
-  $$\frac{1}{2}mv^2 - \frac{GMm}{r} = -\frac{GMm}{2a}$$
-  \vskip6pt
-  where $M$ is the central mass ($m \ll M$).
-\end{frame}
-
-% ── Derivation step 1 ────────────────────────────────────
-\begin{frame}{Step 1: Evaluate at Perihelion \& Aphelion}
-  At perihelion ($r_p = a(1-e)$) and aphelion ($r_a = a(1+e)$):
-  $$\frac{1}{2}mv_p^2 - \frac{GMm}{a(1-e)} = \frac{1}{2}mv_a^2 - \frac{GMm}{a(1+e)}$$
-  \vskip8pt
-  Angular momentum conservation:
-  $$v_p \cdot a(1-e) = v_a \cdot a(1+e)$$
-  \vskip6pt
-  $\Rightarrow$ $v_p / v_a = (1+e)/(1-e)$
-  \vskip8pt
-  Solving yields $E = -GMm/(2a)$
-  \vskip4pt
-  \textbf{Key insight:} Energy depends only on $a$, \textbf{not} on $e$.
-\end{frame}
-
-% ── Derivation step 2 ────────────────────────────────────
-\begin{frame}{Step 2: The Vis-Viva Equation}
-  Setting instantaneous energy equal to the total:
-  $$\frac{1}{2}mv^2 - \frac{GMm}{r} = -\frac{GMm}{2a}$$
-  \vskip6pt
-  Dividing by $m/2$ and rearranging:
-  \vskip6pt
-  \keyresult{$$\boxed{v^2 = GM\left(\frac{2}{r} - \frac{1}{a}\right)}$$}
-  \vskip8pt
-  Important special cases:
+% ── Two-body reduction ──────────────────────────────────────
+\begin{frame}{Reducing two bodies to one}
+  Two masses $m_1$ and $m_2$ interacting through gravity alone. In the centre-of-mass frame this becomes a \emph{single} body of \textbf{reduced mass}
+  \[
+    \mu = \frac{m_1 m_2}{m_1 + m_2}
+  \]
+  moving in the field of a fixed central mass $M = m_1 + m_2$.
+  \vskip6pt\relax
+  The total orbital energy is then
+  \[
+    E = \frac{1}{2}\mu v^2 - \frac{G m_1 m_2}{r}
+  \]
+  \vskip4pt\relax
   \begin{itemize}
-    \item \textbf{Circular orbit} ($r = a$): $v_{\mathrm{circ}} = \sqrt{GM/a}$
-    \item \textbf{Escape velocity} ($a \to \infty$): $v_{\mathrm{esc}} = \sqrt{2GM/r} = \sqrt{2}\;v_{\mathrm{circ}}$
+    \item For a planet around a star, $m_2 \ll m_1$, so $\mu \to m_2$ and $M \to m_1$: the familiar one-body picture.
+    \item The reduction is exact, not an approximation. It is what makes the two-body problem solvable in closed form, and the three-body problem not.
   \end{itemize}
 \end{frame}
 
-% ── Application: Earth ────────────────────────────────────
-\begin{frame}{Application: Earth's Orbital Velocity}
-  \centering
-  \begin{tabular}{l c c}
-    \toprule
-    \textbf{Point} & \textbf{Distance} $r$ & \textbf{Velocity} \\
-    \midrule
-    Perihelion & $a(1-e) = 1.471 \times 10^{11}$~m & $v_p = 30.3$~km\,s$^{-1}$ \\
-    Aphelion   & $a(1+e) = 1.521 \times 10^{11}$~m & $v_a = 29.3$~km\,s$^{-1}$ \\
-    Mean       & $a = 1.496 \times 10^{11}$~m       & $\bar{v} = 29.8$~km\,s$^{-1}$ \\
-    \bottomrule
-  \end{tabular}
-  \vskip10pt
-  Nearly circular orbit ($e = 0.017$) $\rightarrow$ only $\pm 0.5$~km\,s$^{-1}$ variation.
+% ── Energy depends only on a ────────────────────────────────
+\begin{frame}{The central result: energy depends only on $a$}
+  \begin{center}
+    \[
+      \boxed{\;E = -\frac{G m_1 m_2}{2a}\;}
+    \]
+  \end{center}
+  \vskip8pt\relax
+  \begin{itemize}
+    \item No $e$ anywhere on the right-hand side.
+    \item Two orbits with the same semi-major axis have the \textbf{same total energy}, however different their shapes.
+    \item A circular orbit and a wildly eccentric one with the same $a$ are energetically \emph{equivalent}: eccentricity only redistributes kinetic and potential energy \emph{along} the orbit.
+  \end{itemize}
+  \vskip8pt\relax
+  \keyresult{This is why $a$ is the natural coordinate for everything dynamical: migration changes energy, resonance and tides trade $e$ against it.}
 \end{frame}
 
-% ── Application: Halley ──────────────────────────────────
-\begin{frame}{Application: Halley's Comet}
-  Halley: $a = 17.8$~AU, $e = 0.967$ (extreme eccentricity)
-  \vskip8pt
-  \centering
-  \begin{tabular}{l c c}
-    \toprule
-    \textbf{Point} & \textbf{Distance} & \textbf{Velocity} \\
-    \midrule
-    Perihelion & 0.586~AU & 54.6~km\,s$^{-1}$ \\
-    Aphelion   & 35.1~AU  & 0.91~km\,s$^{-1}$ \\
-    \bottomrule
-  \end{tabular}
-  \vskip10pt
+% ── Vis-viva ────────────────────────────────────────────────
+\begin{frame}{The vis-viva equation}
+  Combining the total energy with the instantaneous kinetic plus potential energy gives \emph{vis viva}, Latin for ``living force'':
+  \vskip2pt\relax
+  \[
+    \boxed{\; v^2 = G(m_1 + m_2)\left(\frac{2}{r} - \frac{1}{a}\right) \;}
+  \]
+  \vskip4pt\relax
+  For $m_2 \ll m_1$: $v^2 = GM\left(2/r - 1/a\right)$, the speed at \emph{any} point of \emph{any} orbit.
+  \vskip4pt\relax
+  Two special cases worth memorising:
   \begin{itemize}
-    \item Races through the inner solar system at $\sim$2$\times$ Earth's speed
-    \item Crawls beyond Neptune at $<$1~km\,s$^{-1}$
-    \item Same total energy, just redistributed between $K$ and $U$ along the orbit
+    \item \textbf{Circular orbit} ($r = a$): $\quad v_{\mathrm{circ}} = \sqrt{GM/a}$
+    \item \textbf{Escape} ($a \to \infty$, $E = 0$): $\quad v_{\mathrm{esc}} = \sqrt{2GM/r}$
   \end{itemize}
+  \vskip2pt\relax
+  \keyresult{Escape velocity is exactly $\sqrt{2}$ times the circular velocity at the same distance. Worth remembering, and worth checking on the exam.}
 \end{frame}
 
 
 % ════════════════════════════════════════════════════════════
-\sectionimage{jupiter}{Jupiter, Hubble (2014). Credit: NASA/ESA/A.~Simon}
-\section{Orbital Resonances \& Tidal Forces}
+\sectionimage{halley}{Comet 1P/Halley's nucleus, Giotto HMC (1986). Credit: ESA / MPAe Lindau}
+\section{Blackboard derivation: the vis-viva equation}
 % ════════════════════════════════════════════════════════════
 
-% ── Mean-motion resonances ─────────────────────────────────
-\begin{frame}{Mean-Motion Resonances}
+% ── Setup ───────────────────────────────────────────────────
+\begin{frame}{Setup}
+  A planet of mass $m$ orbiting a star of mass $M$, with $m \ll M$. Orbit has semi-major axis $a$ and eccentricity $e$. At any moment the planet is at distance $r$ and moves with speed $v$.
+  \vskip8pt\relax
+  Total mechanical energy is conserved:
+  \[
+    E = \frac{1}{2}mv^2 - \frac{GMm}{r} = \mathrm{constant}
+  \]
+  \vskip8pt\relax
+  \textbf{Goal:} express $E$ in terms of $a$ alone, then solve for $v(r)$.
+  \vskip6pt\relax
+  The trick throughout is to evaluate the conserved quantities at the two points where the geometry is simplest.
+\end{frame}
+
+% ── Step 1 ──────────────────────────────────────────────────
+\begin{frame}{Step 1: evaluate the energy at perihelion and aphelion}
+  At those two points the distances are fixed by the geometry of the ellipse:
+  \[
+    r_p = a(1 - e), \qquad r_a = a(1 + e)
+  \]
+  \vskip4pt\relax
+  Energy conservation between them:
+  \[
+    \frac{1}{2}mv_p^2 - \frac{GMm}{a(1-e)} \;=\; \frac{1}{2}mv_a^2 - \frac{GMm}{a(1+e)}
+  \]
+  \vskip6pt\relax
+  Two unknown speeds, one equation. We need a second relation between $v_p$ and $v_a$.
+\end{frame}
+
+% ── Step 2 ──────────────────────────────────────────────────
+\begin{frame}{Step 2: use angular momentum}
+  At perihelion and aphelion, and \emph{only} there, the velocity is purely tangential. So the angular momentum is just $m v r$:
+  \[
+    L = m\, v_p\, r_p = m\, v_a\, r_a
+    \quad \Longrightarrow \quad
+    v_p\, a(1-e) = v_a\, a(1+e)
+  \]
+  \vskip6pt\relax
+  \[
+    \frac{v_p}{v_a} = \frac{1+e}{1-e}
+  \]
+  \vskip6pt\relax
+  This is Kepler's second law doing the work: equal areas in equal times \emph{is} conservation of angular momentum.
+\end{frame}
+
+% ── Step 3 ──────────────────────────────────────────────────
+\begin{frame}{Step 3: solve for the total energy}
+  Substituting the speed ratio back into the energy equation and simplifying (the algebra is a good exercise; do it):
+  \vskip8pt\relax
+  \[
+    \boxed{\; E = -\frac{GMm}{2a} \;}
+  \]
+  \vskip8pt\relax
   \begin{itemize}
-    \item \textbf{$p$:$q$ resonance}: inner body completes $p$ orbits per $q$ of the outer body
-    \item Gravitational kicks add up coherently $\rightarrow$ can stabilise \textbf{or} destabilise
+    \item The eccentricity has \textbf{cancelled}.
+    \item $E < 0$ for any bound orbit, and $E \to 0$ as $a \to \infty$.
+    \item A remarkable result for how little it costs: two conservation laws, evaluated at two convenient points.
   \end{itemize}
-  \vskip6pt
+\end{frame}
+
+% ── Step 4 ──────────────────────────────────────────────────
+\begin{frame}{Step 4: write the vis-viva equation}
+  Set the total energy equal to the instantaneous kinetic plus potential energy at an arbitrary point:
+  \[
+    \frac{1}{2}mv^2 - \frac{GMm}{r} = -\frac{GMm}{2a}
+  \]
+  \vskip4pt\relax
+  Divide through by $m/2$ and rearrange:
+  \vskip4pt\relax
+  \[
+    \boxed{\; v^2 = GM\left(\frac{2}{r} - \frac{1}{a}\right) \;}
+  \]
+  \vskip8pt\relax
+  \keyresult{This generalises L1: setting gravity equal to the centripetal acceleration gave $v^2 = GM/r$, which is vis-viva for the special case $r = a$.}
+\end{frame}
+
+% ── Application: Earth ──────────────────────────────────────
+\begin{frame}{Application 1: Earth}
+  For Earth, $a = 1$ AU $= 1.496 \times 10^{11}$ m and $e = 0.0167$:
+  \vskip6pt\relax
   \centering
-  \small
-  \begin{tabular}{l l l}
+  \footnotesize
+  \begin{tabular}{lll}
     \toprule
-    \textbf{Resonance} & \textbf{Bodies} & \textbf{Effect} \\
+    Point & Distance $r$ & Speed \\
     \midrule
-    3:2 & Pluto--Neptune & Protects Pluto from close encounters \\
-    Near 5:2 & Jupiter--Saturn & ``Great inequality'' \\
-    2:1 & Asteroid belt gaps & Kirkwood gaps (destabilising) \\
-    1:1 & Jupiter Trojans & Co-orbital at L4, L5 \\
+    Perihelion & $a(1-e) = 1.471 \times 10^{11}$ m & $v_p = 30.29$ km s$^{-1}$ \\
+    Aphelion   & $a(1+e) = 1.521 \times 10^{11}$ m & $v_a = 29.29$ km s$^{-1}$ \\
     \bottomrule
   \end{tabular}
+  \vskip8pt\relax
+  \normalsize
+  \begin{itemize}
+    \item Variation of only about $\pm 0.5$ km s$^{-1}$ around the mean, because the orbit is nearly circular.
+    \item Mean orbital speed $v \approx 2\pi a / P \approx 29.8$ km s$^{-1}$.
+  \end{itemize}
 \end{frame}
 
-% ── Laplace resonance ──────────────────────────────────────
-\begin{frame}{The Laplace Resonance}
-  The Galilean moons Io, Europa, Ganymede are in a \textbf{1:2:4 period ratio}:
-  \vskip6pt
+% ── Application: Halley ─────────────────────────────────────
+\begin{frame}{Application 2: Halley's comet}
+  Same equation, an orbit as different as the solar system provides: $a = 17.83$ AU, $e = 0.967$.
+  \vskip6pt\relax
   \centering
-  \begin{tabular}{l c c}
+  \footnotesize
+  \begin{tabular}{lll}
     \toprule
-    \textbf{Moon} & \textbf{Period (days)} & \textbf{Ratio to Io} \\
+    Point & Distance $r$ & Speed \\
     \midrule
-    Io      & 1.769 & 1 \\
-    Europa  & 3.551 & $\approx$2 \\
-    Ganymede & 7.155 & $\approx$4 \\
+    Perihelion & $a(1-e) = 0.588$ AU & $v_p = 54.5$ km s$^{-1}$ \\
+    Aphelion   & $a(1+e) = 35.1$ AU  & $v_a = 0.91$ km s$^{-1}$ \\
     \bottomrule
   \end{tabular}
-  \vskip8pt
-  \begin{itemize}
-    \item Maintained by tidal interactions with Jupiter
-    \item \textbf{Forces non-zero eccentricities}
-    \item Io's $e \approx 0.004$ drives tidal flexing $\rightarrow$ extreme volcanism (Lecture~3)
-  \end{itemize}
-  \vskip4pt
-  \keyresult{Orbital resonances can drive geological activity billions of years after formation.}
+  \vskip8pt\relax
+  \normalsize
+  Halley crosses the inner solar system at nearly twice Earth's speed, then crawls beyond Neptune's orbit at under $1$ km s$^{-1}$.
+  \vskip4pt\relax
+  \keyresult{A factor $\sim 60$ in speed on a single orbit, from one equation and one number: the eccentricity.}
 \end{frame}
 
-% ── Secular resonances ──────────────────────────────────
-\begin{frame}{Secular Resonances: Slow Dynamical Chaos}
-  Beyond mean-motion resonances, orbits are also coupled by \textbf{secular} (long-term) precession frequencies.
-  \vskip6pt
-  \begin{itemize}
-    \item A secular resonance occurs when the apsidal or nodal precession frequency of one body matches another's
-    \item In the solar system: $\nu_5$ (Jupiter's apsidal frequency) and $\nu_6$ (Saturn's) resonances define the inner edges of the asteroid belt
-    \item Asteroids near $\nu_6$ at 2.1~AU have their eccentricity pumped until they are ejected or collide with the Sun
-    \item Secular chaos operates on $10^4$--$10^7$~yr timescales
-    \item Laskar (1989): Earth's eccentricity evolution is \textbf{intrinsically chaotic} beyond $\sim$60~Myr
-    \item Relevance: explains Kirkwood gaps and long-term orbital instabilities
-  \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Laskar (1989, 1990); Murray \& Dermott (1999)}
+% ── Vis-viva hero ───────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{visviva_earth_halley}}\\
+  {\footnotesize Orbital speed $v(r)$ from the vis-viva equation, for Earth and for Halley's comet. Course-original figure.}
 \end{frame}
 
-% ── Tidal forces ──────────────────────────────────────────
-\begin{frame}{Tidal Forces}
+\begin{frame}{Reading the vis-viva curves}
+  Speed against distance for the two orbits just computed. Filled circles mark perihelion and aphelion.
+  \vskip4pt\relax
   \begin{itemize}
-    \item Gravity varies across an extended body $\rightarrow$ \textbf{differential force}
-    \item Tidal acceleration across a moon of radius $R_s$ at distance $d$:
-    $$\Delta a_{\mathrm{tidal}} \approx \frac{2 G M_p R_s}{d^3}$$
-    \item Falls off as $d^{-3}$ (steeper than gravity's $d^{-2}$)
-    \vskip6pt
-    \item \textbf{Tidal bulges:} elongation along the line connecting the bodies
-    \item If rotation $\neq$ orbital period $\rightarrow$ bulge misalignment $\rightarrow$ torque
-    \item Energy dissipated as heat $\rightarrow$ \textbf{tidal heating} (Lecture~3)
+    \item \textbf{Earth}: a short, almost flat segment near $30$ km s$^{-1}$. Nearly circular means nearly constant speed.
+    \item \textbf{Halley}: a steep curve spanning $54.5$ km s$^{-1}$ down to $0.91$ km s$^{-1}$.
+    \item Both curves obey the \emph{same} equation with the \emph{same} $GM$. Only $a$ and $e$ differ.
+    \item The curves never cross: at any shared $r$, $v^2$ differs by the \emph{constant} $GM(1/a_{\oplus} - 1/a_{\mathrm{H}})$, so the larger-$a$ orbit is faster. Passing Earth's orbit, Halley moves at $41.5$ km s$^{-1}$ against Earth's $29.8$.
   \end{itemize}
 \end{frame}
 
-% ── Tidal locking ─────────────────────────────────────────
-\begin{frame}{Tidal Locking (Synchronous Rotation)}
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{galilean_moons}{The Galilean moons: Io, Europa, Ganymede, Callisto. Credit: NASA/JPL}
+\section{Orbital resonances}
+% ════════════════════════════════════════════════════════════
+
+% ── MMR concept ─────────────────────────────────────────────
+\begin{frame}{Mean-motion resonances}
+  When two orbital periods stand in a ratio of \textbf{small integers}, the bodies are in a \textbf{mean-motion resonance} (MMR).
+  \vskip6pt\relax
   \begin{itemize}
-    \item Tidal torque gradually slows rotation until $P_{\mathrm{rot}} = P_{\mathrm{orb}}$
-    \item Same face always points toward the planet
-    \item The Moon is tidally locked to Earth (same face always visible)
-    \item All four Galilean moons are tidally locked to Jupiter
-    \item Locking timescale: $\tau_{\mathrm{lock}} \propto d^6 / (M_p^2 R_s^3)$
+    \item A $p$:$q$ resonance (with $p > q$) means the inner body completes $p$ orbits while the outer completes $q$.
+    \item Conjunctions then always happen at the \emph{same orbital phases}.
+    \item So the mutual gravitational kicks \textbf{add coherently} over many orbits, instead of averaging to zero.
   \end{itemize}
-  \vskip8pt
-  \begin{exampleblock}{Note}
-    Tidal locking is the \textbf{equilibrium state}. Tidal heating occurs during the approach to equilibrium (or when resonances maintain eccentricity, preventing full equilibrium).
-  \end{exampleblock}
+  \vskip6pt\relax
+  \keyresult{Resonance is a lever: a tiny force applied always at the same phase produces a large cumulative effect. Depending on geometry it can either protect an orbit or destroy it.}
+  \vskip2pt\relax
+  {\footnotesize Murray \& Dermott (1999).}
 \end{frame}
 
-% ── Roche limit ───────────────────────────────────────────
-\begin{frame}{The Roche Limit}
+% ── Resonances in the solar system ──────────────────────────
+\begin{frame}{Resonances are everywhere in the solar system}
+  \centering
+  \footnotesize
+  \begin{tabular}{lll}
+    \toprule
+    Resonance & Bodies & What it does \\
+    \midrule
+    3:2               & Pluto--Neptune    & Pluto completes 2 orbits per 3 of Neptune \\
+    Near 5:2          & Jupiter--Saturn   & ``Great inequality'': long-period perturbations \\
+    3:1, 5:2, 7:3, 2:1& Asteroid belt     & Kirkwood gaps, cleared of asteroids (L12) \\
+    1:1               & Jupiter Trojans   & Co-orbital swarms at the L4 and L5 points \\
+    \bottomrule
+  \end{tabular}
+  \vskip10pt\relax
+  \normalsize
+  \begin{itemize}
+    \item \textbf{Protective}: the 3:2 with Neptune is why Pluto can cross Neptune's orbit and never meet it.
+    \item \textbf{Destructive}: the Kirkwood gaps are resonances that \emph{pump eccentricity} until the asteroid is removed.
+  \end{itemize}
+  \vskip2pt\relax
+  Same physics, opposite outcome, decided by the geometry of the encounter.
+\end{frame}
+
+% ── Laplace resonance ───────────────────────────────────────
+\begin{frame}{The Laplace resonance}
+  Jupiter's three inner Galilean moons, the most famous resonance in the solar system.
+  \vskip4pt\relax
+  \centering
+  \footnotesize
+  \begin{tabular}{lcc}
+    \toprule
+    Moon & Period (days) & Ratio to Io \\
+    \midrule
+    Io       & $1.769$ & $1$ \\
+    Europa   & $3.551$ & $\approx 2$ \\
+    Ganymede & $7.155$ & $\approx 4$ \\
+    \bottomrule
+  \end{tabular}
+  \vskip8pt\relax
+  \normalsize
+  \begin{itemize}
+    \item Periods in a $1 : 2 : 4$ ratio, equivalently mean motions $n_{\mathrm{Io}} : n_{\mathrm{Eur}} : n_{\mathrm{Gan}} = 4 : 2 : 1$.
+    \item A genuine \textbf{three-body} resonance, maintained by tidal interaction with Jupiter.
+    \item Its key consequence: it \textbf{forces non-zero eccentricities}. Io's is pinned at $e \approx 0.004$.
+  \end{itemize}
+  \vskip2pt\relax
+  {\footnotesize Peale, Cassen \& Reynolds (1979).}
+\end{frame}
+
+% ── Laplace hero ────────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{laplace_resonance}}\\
+  {\footnotesize The Laplace resonance of Io, Europa, and Ganymede. Course-original figure.}
+\end{frame}
+
+\begin{frame}{Reading the Laplace resonance}
+  \begin{itemize}
+    \item \textbf{Panel (a)}: the three orbits to scale, drawn at a Europa--Ganymede conjunction. The resonance locks the phases so that Io is always on the \emph{opposite side of Jupiter} at those conjunctions.
+    \item Consequence, and a common misconception to avoid: a \textbf{triple conjunction never occurs}. The three moons are never lined up together.
+    \item \textbf{Panel (b)}: the periods in their $1 : 2 : 4$ ratio. The pattern of successive conjunctions repeats every Ganymede period, that is, every four Io orbits.
+    \item The periodic kicks arrive always at the same phase, which is what sustains Io's $e \approx 0.004$ against tidal damping.
+  \end{itemize}
+  \vskip2pt\relax
+  \keyresult{An eccentricity of $0.004$ sounds negligible. It is the reason Io is the most volcanically active body in the solar system.}
+\end{frame}
+
+% ── Io ──────────────────────────────────────────────────────
+\begin{frame}{Io: orbital dynamics with thermal consequences}
   \begin{columns}[c]
-    \column{0.42\textwidth}
+    \column{0.48\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{saturn_rings}
-    \source{NASA/JPL/SSI (Cassini)}
+    \includegraphics[width=\linewidth, height=0.70\textheight, keepaspectratio]{io_volcanism}
+    \source{NASA/JPL/University of Arizona (Galileo)}
 
-    \column{0.55\textwidth}
-    Inside the \textbf{Roche limit}, tidal forces exceed self-gravity:\\
-    $\rightarrow$ satellites are torn apart
-    \vskip6pt
-    For a fluid satellite:
-    $$d_R \approx 2.46\, R_p \left(\frac{\rho_p}{\rho_s}\right)^{1/3}$$
-    \vskip6pt
-    For Saturn + icy satellite:\\
-    $d_R \approx 126{,}000$~km $\approx 2.16\,R_{\mathrm{Saturn}}$
-    \vskip4pt
-    Saturn's main rings extend from 67,000 to 137,000~km, \textbf{mostly within the Roche limit} (the formula is approximate; rigid-body and compositional effects shift the boundary).
+    \column{0.49\textwidth}
+    Half-disk view from Galileo, with an active volcanic plume rising in profile against the dark sky at the limb.
+    \vskip6pt\relax
+    \begin{itemize}
+      \item The mottled, sulphur-rich surface is resurfaced on geological timescales.
+      \item Resonance-forced eccentricity feeds continuous tidal dissipation in the interior.
+      \item Remove the resonance and Io circularises, stops flexing, and goes geologically dead.
+    \end{itemize}
+    \vskip4pt\relax
+    We quantify the heating in L3.
   \end{columns}
 \end{frame}
 
 
 % ════════════════════════════════════════════════════════════
-\sectionimage{hot_jupiter}{Hot Jupiter (artist's concept). Credit: ESO/L.~Cal\c{c}ada}
-\section{Planetary Migration}
+\sectionimage{cassini_saturn}{Saturn backlit, Cassini (2013). Credit: NASA/JPL-Caltech/Space Science Institute}
+\section{Tides, locking, and the Roche limit}
 % ════════════════════════════════════════════════════════════
 
-% ── Planet-disk interactions ──────────────────────────────
-\begin{frame}{Planet--Disk Interactions}
+% ── Tidal force ─────────────────────────────────────────────
+\begin{frame}{The tidal force}
+  A tidal force arises whenever a gravitational field \textbf{varies across the extent} of an extended body.
+  \vskip6pt\relax
+  For a moon of radius $R_s$ at distance $d$ from a planet of mass $M_p$, the acceleration difference between the moon's centre and its near side is
+  \[
+    \Delta a_{\mathrm{tidal}} \approx \frac{2 G M_p R_s}{d^3}
+  \]
+  \vskip6pt\relax
   \begin{itemize}
-    \item Planets embedded in a disk excite spiral density waves
-    \item Waves carry angular momentum away from the planet
-    \item Net torque can push the planet \textbf{inward or outward}
+    \item The near side is pulled harder than the centre, the far side less hard: the body is \textbf{stretched} along the line to the planet.
+    \item Note the exponent: $1/d^3$, not $1/d^2$. Tides fall off much faster than gravity itself.
   \end{itemize}
-  \vskip8pt
-  \begin{description}
-    \item[Type I:] Low-mass planet ($\lesssim$ few $\Mearth$), fully embedded\\
-    Migrates on $\sim$10$^5$~yr timescale (potentially too fast!)
-    \item[Type II:] Massive planet ($\sim \Mjup$) opens a \textbf{gap}\\
-    Migrates with the disk on viscous timescale ($\sim$10$^5$--$10^6$~yr)
-    \item[Type III:] Rapid runaway migration in massive disks
-  \end{description}
+  \vskip2pt\relax
+  \keyresult{The steep distance dependence is why tides are irrelevant for most of a planetary system and utterly dominant close in.}
 \end{frame}
 
-% ── Lindblad and corotation resonances ───────────────────
-\begin{frame}{Lindblad and Corotation Torques}
-  Two kinds of torques act on a planet embedded in a disk:
-  \vskip6pt
-  \begin{itemize}
-    \item \textbf{Lindblad torques:} arise at inner and outer Lindblad resonances where spiral density waves form
-    \begin{itemize}
-      \item Inner LR exerts a positive torque (outward push)
-      \item Outer LR exerts a negative torque (inward push)
-      \item Outer typically wins slightly $\Rightarrow$ inward migration
-    \end{itemize}
-    \vskip4pt
-    \item \textbf{Corotation torques:} arise from material co-orbiting with the planet
-    \begin{itemize}
-      \item Depends sensitively on the disk temperature and density gradients
-      \item Can be positive (outward) and partially balance Lindblad
-    \end{itemize}
-  \end{itemize}
-  \vskip6pt
-  The real net torque depends on disk structure; this is an active area of research.
-\end{frame}
-
-% ── Gas disk dispersal ───────────────────────────────────
-\begin{frame}{How Does the Gas Disk Go Away?}
-  Planet formation has a hard deadline.
-  \vskip6pt
-  \begin{itemize}
-    \item \textbf{Viscous accretion:} gas accretes onto the central star, feeding its growth
-    \item \textbf{Photoevaporation:} X-ray and EUV photons from the young star heat the upper disk layers, driving thermal winds
-    \item \textbf{MHD winds:} magnetised winds launched from the disk surface carry mass and angular momentum
-    \item Once surface density drops below a threshold, photoevaporation ``drains'' the remaining gas rapidly
-    \item Total lifetime: 3--5~Myr median (Haisch 2001)
-  \end{itemize}
-  \vskip6pt
-  \keyresult{Giant planets must form within 1--3~Myr to capture substantial gas envelopes before the disk disappears.}
-\end{frame}
-
-% ── Nice model ─────────────────────────────────────────────
-\begin{frame}{The Nice Model}
-  \begin{columns}[c]
-    \column{0.45\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{nice_model}
-    \source{Wikimedia Commons, CC BY-SA 3.0}
-
-    \column{0.52\textwidth}
-    \begin{itemize}
-      \item Giant planets formed in a \textbf{compact} configuration (5--17~AU)
-      \item Jupiter--Saturn crossed 2:1 resonance $\rightarrow$ \textbf{instability}
-      \item Uranus \& Neptune scattered outward
-      \item Disrupted the primordial Kuiper Belt
-      \item May explain the Late Heavy Bombardment
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
-% ── Grand Tack ─────────────────────────────────────────────
-\begin{frame}{The Grand Tack Hypothesis}
+% ── Bulges and dissipation ──────────────────────────────────
+\begin{frame}{Bulges, torques, and heat}
+  The tidal force raises \textbf{two bulges}, one facing the perturber and one on the opposite side.
+  \vskip6pt\relax
   \begin{enumerate}
-    \item Jupiter migrated \textbf{inward} to $\sim$1.5~AU (Type~II migration)
-    \item Saturn caught up, trapped in resonance
-    \item Combined torques drove both planets \textbf{outward} (``tacking'')
-    \item Jupiter swept through the inner solar system twice
+    \item If the body rotates at a different rate than it orbits, which is the generic starting condition, the bulges are \textbf{carried away} from the line joining the two bodies.
+    \item That misalignment gives the perturber a lever arm: a \textbf{torque} that exchanges angular momentum between spin and orbit.
+    \item Continually deforming the body \textbf{dissipates energy as heat}: \textbf{tidal heating}.
   \end{enumerate}
-  \vskip8pt
-  Potentially explains:
-  \begin{itemize}
-    \item The small mass of Mars
-    \item The compositional structure of the asteroid belt
-    \item The distribution of water-bearing material in the inner solar system
-  \end{itemize}
+  \vskip6pt\relax
+  Tidal heating powers Io's volcanism and may maintain the subsurface oceans of Europa and Enceladus (L3, L11).
 \end{frame}
 
-% ── Evidence: hot Jupiters ─────────────────────────────────
-\begin{frame}{Evidence for Migration: Hot Jupiters}
-  \begin{columns}[c]
-    \column{0.42\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{hot_jupiter}
-    \source{ESO/L.~Cal\c{c}ada}
+% ── Tidal locking ───────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{tidal_locking}}\\
+  {\footnotesize Free versus synchronous rotation. Course-original schematic.}
+\end{frame}
 
-    \column{0.55\textwidth}
+\begin{frame}{Tidal locking}
+  Over time the tidal torque slows the faster-spinning body until its rotation period equals its orbital period: \textbf{synchronous rotation}.
+  \vskip4pt\relax
+  \begin{itemize}
+    \item \textbf{Panel (a)}, free rotation: spin and orbital periods differ, so the moon shows different faces to the planet (P) over one orbit. The black surface marker and the body-fixed axis (red arrow) decouple from the direction to P.
+    \item \textbf{Panel (b)}, \textbf{synchronous rotation}: the periods are equal, so the marker, and with it the tidal bulge, always faces the planet.
+    \item With the bulge aligned, the torque vanishes and the configuration is stable.
+    \item The Moon reached this state through billions of years of dissipation. All four Galilean moons are locked to Jupiter; most large moons in the solar system are synchronous rotators.
+  \end{itemize}
+  \vskip2pt\relax
+  {\footnotesize Murray \& Dermott (1999).}
+\end{frame}
+
+% ── Locking is not the end of heating ───────────────────────
+\begin{frame}{Locked does not mean cold}
+  A common and consequential misconception: that synchronous rotation switches tidal dissipation off.
+  \vskip4pt\relax
+  \begin{itemize}
+    \item On a \textbf{circular} orbit it essentially does. Bulge aligned, nothing flexes, no heat.
+    \item On an \textbf{eccentric} orbit it does not. Distance and apparent bulge direction both vary over each orbit, so a locked body \textbf{keeps flexing}.
+  \end{itemize}
+  \vskip4pt\relax
+  Exactly Io's situation: locked to Jupiter, but with $e \approx 0.004$ pinned by the Laplace resonance.
+  \vskip4pt\relax
+  \begin{block}{How fast does locking happen?}
+    The timescale scales as $d^6 / M_p^2$: steeply with distance, inversely with the square of the primary's mass. Close-in moons of massive planets lock almost immediately; distant, small companions may never lock at all.
+  \end{block}
+\end{frame}
+
+% ── Roche limit ─────────────────────────────────────────────
+\begin{frame}{The Roche limit}
+  There is a minimum distance at which a self-gravitating body survives the tide of a larger one. Inside it, tides beat self-gravity and the body is torn apart.
+  \vskip6pt\relax
+  For a \emph{fluid} satellite of density $\rho_s$ orbiting a planet of radius $R_p$ and density $\rho_p$:
+  \[
+    d_R \approx 2.46\, R_p \left(\frac{\rho_p}{\rho_s}\right)^{1/3}
+  \]
+  \vskip6pt\relax
+  \begin{itemize}
+    \item Note what does \emph{not} appear: the satellite's \textbf{size}. Only the densities and the primary's radius matter.
+    \item The numerical coefficient depends on the assumed satellite rheology, which is the subject of the next slide.
+  \end{itemize}
+  \vskip4pt\relax
+  We derive this in full in L11.
+\end{frame}
+
+% ── Roche hero ──────────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{roche_geometry}}\\
+  {\footnotesize Roche limit geometry, and the tidal-versus-self-gravity crossing for a $200$ km icy body at Saturn. Course-original figure.}
+\end{frame}
+
+\begin{frame}{Reading the Roche geometry}
+  \begin{itemize}
+    \item \textbf{Panel (a)}: a fluid satellite is rounded at a safe distance. At $d_R$ the differential tidal acceleration between its centre and its surface exceeds its own self-gravity, and it is stretched and torn apart along the line to the primary.
+    \item \textbf{Panel (b)}: tidal acceleration compared with surface self-gravity for a $200$ km icy body, against distance from Saturn in units of $R_p$.
+    \item The simple \textbf{crossing} of the two curves gives the \emph{rigid} limit, $d_R^{\mathrm{rigid}} \approx 1.11\,R_p$ for $\rho_s = 1000$ kg m$^{-3}$.
+    \item The textbook \emph{fluid} limit, $d_R \approx 2.17\,R_p$ (red dotted), lies further out because it adds the tidal \textbf{deformation} of the satellite, which weakens it further.
+  \end{itemize}
+  \vskip2pt\relax
+  \keyresult{Two limits, a factor of two apart. Which one applies depends on whether the body can hold its shape, so real bodies fall between them.}
+\end{frame}
+
+% ── Saturn numbers ──────────────────────────────────────────
+\begin{frame}{Evaluating the Roche limit at Saturn}
+  With $R_p = 58{,}232$ km, $\rho_p = 687$ kg m$^{-3}$, and an icy satellite $\rho_s \approx 1000$ kg m$^{-3}$:
+  \vskip4pt\relax
+  \[
+    d_R \approx 2.46 \times 58{,}232\ \mathrm{km} \times \left(\frac{687}{1000}\right)^{1/3}
+    \approx 126{,}000\ \mathrm{km} \approx 2.17\, R_p
+  \]
+  \vskip6pt\relax
+  Compare with the actual ring system:
+  \begin{itemize}
+    \item Main rings (D through A): $\sim 67{,}000$ km to $137{,}000$ km from Saturn's centre.
+    \item The narrow F ring lies just beyond, at $\sim 140{,}000$ km.
+    \item The dense \textbf{B and C rings sit well inside} the fluid limit, as expected.
+    \item But \textbf{much of the A ring's width lies outside} it.
+  \end{itemize}
+  \vskip4pt\relax
+  Two reasons the simple number is not the whole story: the A ring's sharp outer edge is held by a \textbf{7:6 resonance with Janus}, and the particles are \textbf{porous}, so their density is below solid ice, which pushes the effective limit outward.
+\end{frame}
+
+% ── Saturn rings figure ─────────────────────────────────────
+\begin{frame}{Saturn's rings}
+  \begin{columns}[c]
+    \column{0.56\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{saturn_rings}
+    \source{NASA/JPL-Caltech/Space Science Institute (PIA21046)}
+
+    \column{0.41\textwidth}
     \begin{itemize}
-      \item Gas giants orbiting at $a \lesssim 0.1$~AU
-      \item Orbital periods of just a few \textbf{days}
-      \item Cannot have formed in situ (too hot, too little material)
-      \item Must have formed further out and \textbf{migrated inward}
+      \item Cassini wide-angle view, April 2016.
+      \item Countless cm- to m-sized icy particles.
+      \item They cannot coalesce: Saturn's tide beats their mutual self-gravity.
+      \item A ring system is a \textbf{moon that is not allowed to assemble}.
+      \item Run in reverse, this is why large moons avoid very tight orbits.
     \end{itemize}
-    \vskip6pt
-    \begin{alertblock}{}
-      Hot Jupiters are the strongest evidence that planetary migration is real.
-    \end{alertblock}
   \end{columns}
 \end{frame}
 
 
 % ════════════════════════════════════════════════════════════
-\sectionimage{dsharp_gallery}{Protoplanetary disks, DSHARP. Credit: ALMA/ESO/NAOJ/NRAO}
-\section{Recent Advances \& Outlook}
+\sectionimage{hot_jupiter}{Hot Jupiter, artist's concept. Credit: ESO/L.~Cal\c{c}ada}
+\section{Planetary migration}
 % ════════════════════════════════════════════════════════════
 
-% ── High-eccentricity migration ──────────────────────────
-\begin{frame}{High-Eccentricity Migration}
-  Not all migration is disk-driven.
-  \vskip6pt
+% ── Planet-disk interaction ─────────────────────────────────
+\begin{frame}{Planets do not stay where they form}
+  A planet embedded in a gaseous disk exchanges angular momentum with it, through two distinct channels.
+  \vskip4pt\relax
   \begin{itemize}
-    \item \textbf{Planet--planet scattering:} close encounters between giant planets scatter one inward on a highly eccentric orbit
-    \item \textbf{Kozai--Lidov mechanism:} an inclined ($i \gtrsim 40$\textdegree) outer companion drives secular oscillations that conserve $L_z = \sqrt{1-e^2}\cos i$, trading inclination for eccentricity (and back)
-    \item Once eccentric, tidal interactions with the star circularise the orbit at short periods
-    \item Produces hot Jupiters on \textbf{high-obliquity} orbits (misaligned with stellar spin)
-    \item Observed: $\sim$1/3 of hot Jupiters have spin-orbit misalignments $>$30\textdegree
+    \item \textbf{Lindblad resonances.} The planet excites spiral density waves at the radii where the disk's orbital frequency differs from the planet's by $\pm \kappa/m$, with $\kappa$ the local epicyclic frequency and $m$ a positive integer. The waves carry angular momentum away.
+    \item \textbf{Corotation resonances.} Material co-orbiting with the planet exchanges angular momentum along \textbf{horseshoe-shaped streamlines}.
   \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Rasio \& Ford (1996); Winn et al.\ (2010); Dawson \& Johnson (2018)}
+  \vskip6pt\relax
+  The \emph{net} torque decides whether the planet moves in or out, and how fast.
+  \vskip2pt\relax
+  \keyresult{Migration is not an exotic add-on. Any planet massive enough to perturb the disk is being pushed by it.}
+  \vskip2pt\relax
+  {\footnotesize Paardekooper et al.\ (2023).}
 \end{frame}
 
-% ── Meteoritic dichotomy ─────────────────────────────────
-\begin{frame}{Meteoritic Dichotomy: NC vs.\ CC}
-  Meteorites divide cleanly into two isotopic groups:
-  \vskip6pt
+% ── Types of migration ──────────────────────────────────────
+\begin{frame}{Three types of migration}
   \begin{itemize}
-    \item \textbf{Non-carbonaceous (NC):} ordinary, enstatite, and aubrite chondrites; most iron meteorites; originated in the inner solar system
-    \item \textbf{Carbonaceous (CC):} CI, CM, CV, CR, CB chondrites; some iron meteorites; originated in the outer solar system
-    \item Distinct $^{50}\mathrm{Ti}$, $^{54}\mathrm{Cr}$, $^{48}\mathrm{Ca}$, $^{94}\mathrm{Mo}$ isotopic signatures
-    \item Implies two separate reservoirs that did not mix for $\sim$3--4~Myr
-    \item Natural explanation: \textbf{Jupiter} formed early, blocking inward drift of pebbles
+    \item \textbf{Type I.} A low-mass planet (below the gap-opening threshold, a few tens of Earth masses) stays fully embedded and migrates on the imbalance between inner and outer Lindblad torques. In simple models the outer torque slightly wins: \emph{inward} migration on $\sim 10^5$ yr.
+    \vskip3pt\relax
+    \item \textbf{Type II.} A massive planet, roughly Jupiter-mass and up, \textbf{opens a gap}: an annulus cleared of gas. It then migrates on the slower viscous timescale, $\sim 10^5$--$10^6$ yr, as the disk drains onto the star.
+    \vskip3pt\relax
+    \item \textbf{Type III.} In massive disks with a sharp density gradient near the planet, a runaway sets in when the \textbf{co-orbital mass deficit} approaches the planet's mass. Very fast, either direction.
   \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Kruijer et al.\ (2017), \textit{PNAS}; Warren (2011)}
+  \vskip2pt\relax
+  \textbf{The Type I problem}: $10^5$ yr is uncomfortably short against a $\sim 3$ Myr disk lifetime. Taken literally, cores fall into the star before they finish growing; extra physics (thermal effects, magnetic fields, disk structure) must slow or reverse it.
 \end{frame}
 
-% ── OSIRIS-REx / Hayabusa2 ──────────────────────────────
-\begin{frame}{Sample-Return Missions: Accretion Fossils}
-  Recent missions have delivered pristine asteroid samples to Earth.
-  \vskip6pt
-  \begin{itemize}
-    \item \textbf{Hayabusa2} (JAXA): returned 5.4~g of asteroid \textbf{Ryugu} in 2020
-    \item C-type rubble-pile asteroid, carbonaceous chondrite affinity
-    \item Contains organic molecules including all RNA/DNA bases
-    \item \textbf{OSIRIS-REx} (NASA): returned $\sim$70~g of asteroid \textbf{Bennu} in 2023
-    \item Hydrated clays, carbonates, phosphates: aqueous alteration
-    \item Both targets formed in the outer main belt; provide snapshots of primordial accretion
-  \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Yada et al.\ (2022) on Ryugu; Lauretta et al.\ (2024) on Bennu}
+% ── Migration hero ──────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{paardekooper2023_disk_flow}}\\
+  {\footnotesize Disk surface-density response to an embedded Neptune-mass planet. Adapted from Paardekooper et al.\ (2023), Fig.~2.}
 \end{frame}
 
-% ── Juno dilute core ─────────────────────────────────────
-\begin{frame}{Juno: Jupiter's Dilute Core}
-  Juno's gravity measurements (Wahl et al.\ 2017) revolutionised our picture of Jupiter's interior.
-  \vskip6pt
+\begin{frame}{Reading the disk-flow figure}
+  A planet of mass ratio $q = 10^{-4}$, Neptune-like, on a circular orbit.
+  \vskip4pt\relax
   \begin{itemize}
-    \item Pre-Juno assumption: compact heavy-element core, pure H/He envelope
-    \item Juno data: the ``core'' extends to \textbf{30--50\%} of Jupiter's radius
-    \item Smooth compositional gradient rather than a sharp boundary
-    \item Total heavy-element content: $\sim$20--40~$\Mearth$
-    \item Implication: Jupiter's formation was not a clean core-accretion event
-    \item Possible cause: an early giant impact dispersed the compact core (Liu et al.\ 2019), or gradual mixing during gas accretion
-  \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Wahl et al.\ (2017); Militzer et al.\ (2022)}
-\end{frame}
-
-% ── Recent results ─────────────────────────────────────────
-\begin{frame}{More Recent Advances}
-  \begin{itemize}
-    \item \textbf{ALMA MAPS (2021):} chemical maps of 5 disks at planet-forming scales
-    \vskip4pt
-    \item \textbf{JWST protoplanetary disks:} MIRI detects water and organic molecules in the terrestrial zone of young disks (2023--2024)
-    \vskip4pt
-    \item \textbf{Pebble accretion:} refined timing constraints on giant-planet formation ($<$1--3~Myr)
-    \vskip4pt
-    \item \textbf{Meteorite isotopics:} NC-CC dichotomy + Mo isotopes timing of inner vs.\ outer disk
-    \vskip4pt
-    \item \textbf{Psyche:} NASA mission (launched October 2023, arrival 2029) to study a metal-rich asteroid, a possible naked core
+    \item \textbf{Top panel}: the planet launches a one-armed \textbf{spiral density wave}. Colour is surface density relative to unperturbed.
+    \item Note what is absent: \textbf{no gap}. At this mass the planet perturbs the disk without clearing it, which is the definition of the Type I regime.
+    \item \textbf{Bottom panel}: zoom on the co-orbital region, with schematic streamlines showing the \textbf{horseshoe trajectories} and the flows feeding the spiral wave.
+    \item The imbalance between inner and outer wave torques, plus the corotation torque from the horseshoe region, sets both the direction and the speed.
   \end{itemize}
 \end{frame}
 
-% ── JWST in disks ────────────────────────────────────────
-\begin{frame}{JWST: Water and Molecules in Terrestrial Zones}
-  JWST's MIRI instrument can detect molecular emission lines from the inner disks of young stars.
-  \vskip6pt
+% ── Nice model ──────────────────────────────────────────────
+\begin{frame}{The Nice model}
+  Migration continues after the gas goes: the giants scatter a remnant \textbf{planetesimal disk}.
+  \vskip2pt\relax
   \begin{itemize}
-    \item Detected H$_2$O, CO$_2$, C$_2$H$_2$, HCN, CH$_3$ in the inner 1--10~AU of several disks
-    \item Water vapour abundance traces ice transport across the snow line
-    \item Pebble drift may enhance inner-disk water content during planet formation
-    \item Evidence that delivery of water to the terrestrial zone is an active, ongoing process during planet formation
+    \item The giants formed \textbf{more compact}, the outermost ice giant well inside Neptune's present $30$ AU orbit, until a dynamical instability rearranged the system.
+    \item \textbf{Original version}: triggered when Jupiter and Saturn slowly crossed their mutual \textbf{2:1} resonance.
+    \item \textbf{Modern version}: the belt's structure and the near-circular terrestrial orbits require the Jupiter--Saturn period ratio to change \textbf{discontinuously}, most naturally if a \textbf{fifth giant planet} was scattered off Jupiter and ejected: \emph{jumping Jupiter}.
+    \item Either way: Uranus and Neptune scattered outward, the primordial Kuiper Belt disrupted, and possibly an impact spike inside (the ``Late Heavy Bombardment'', still debated).
   \end{itemize}
-  \vskip6pt
-  {\tiny\color{ipsText!60} Source: Kamp et al.\ (2023); Banzatti et al.\ (2023); Perotti et al.\ (2023)}
+  \vskip2pt\relax
+  {\footnotesize Tsiganis et al.\ (2005); Nesvorn\'y (2018).}
 \end{frame}
 
-% ── Exoplanet architectures preview ──────────────────────
-\begin{frame}{What Kind of Planets Form?}
-  The outcomes of planet formation, seen in exoplanet surveys:
-  \vskip6pt
-  \begin{itemize}
-    \item \textbf{Hot Jupiters:} rare ($\sim$1\% of solar-type stars), clear evidence for migration
-    \item \textbf{Warm/cool gas giants:} $\sim$10\% of stars at 1--10~AU
-    \item \textbf{Super-Earths / mini-Neptunes:} extremely common, $\sim$30--50\% of stars
-    \item \textbf{Radius valley:} gap in planet radii around 1.5--2~$\Rearth$ (Lecture~13)
-    \item \textbf{Compact multi-planet systems:} many stars host 3--8 planets inside 1~AU
-    \item \textbf{Solar-system analogues:} relatively rare
-  \end{itemize}
-  \vskip6pt
-  We will return to exoplanet demographics in Lecture~13.
+% ── Nice hero ───────────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{nesvorny2018_nice}}\\
+  {\footnotesize A five-planet ``jumping-Jupiter'' instability. Reproduced from Nesvorn\'y (2018), Fig.~3; simulation from Nesvorn\'y \& Morbidelli (2012).}
 \end{frame}
 
-% ── Summary ────────────────────────────────────────────────
+\begin{frame}{Reading the jumping-Jupiter simulation}
+  \begin{itemize}
+    \item \textbf{Panel (a)}: semi-major axes vs time for five giants in a compact resonant chain, with an extra ice giant (magenta) between Saturn and Uranus. Dashed lines mark today's values.
+    \item At the instability, $\sim 6$ Myr in, the extra ice giant is scattered off Jupiter and \textbf{ejected}; Uranus and Neptune move outward onto their present orbits.
+    \item \textbf{Panel (b)}: the Saturn/Jupiter period ratio starts near the 3:2 value of $1.5$, drifts up through planetesimal-driven migration, then \textbf{jumps} from $\approx 1.7$ to $\approx 2.4$ in under $10^5$ yr, approaching today's $2.49$.
+    \item \textbf{The shaded band}, $2.1 \lesssim P_{\mathrm{Sat}}/P_{\mathrm{Jup}} \lesssim 2.3$: crossing it \emph{slowly} would activate secular resonances that excite the belt and the terrestrial orbits.
+  \end{itemize}
+  \vskip1pt\relax
+  \keyresult{Avoiding that band is the central argument for jumping Jupiter over the smooth 2:1 crossing; the evidence is the solar system we have.}
+\end{frame}
+
+% ── Grand Tack ──────────────────────────────────────────────
+\begin{frame}{The Grand Tack}
+  A proposal for what Jupiter did \emph{while} the gas disk was still present:
+  \vskip4pt\relax
+  \begin{enumerate}
+    \item Jupiter migrates \textbf{inward} to $\sim 1.5$ AU by Type II migration.
+    \item Saturn, migrating faster, catches up and is captured into the \textbf{3:2 resonance} with Jupiter.
+    \item Their combined interaction with the disk reverses the torque, and both planets move \textbf{outward}: the ``tack'', as in sailing.
+  \end{enumerate}
+  \vskip4pt\relax
+  The inward excursion would have depleted solids in the inner disk, which could explain \textbf{Mars's small mass} and the belt's compositional structure.
+  \vskip4pt\relax
+  \keyresult{Read it as a hypothesis with consequences, not a settled result: the migration in the reference simulation is an \emph{imposed prescription}, not an outcome of the model.}
+  \vskip2pt\relax
+  {\footnotesize Walsh et al.\ (2011).}
+\end{frame}
+
+% ── Grand Tack hero ─────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{walsh2011_grand_tack}}\\
+  {\footnotesize The Grand Tack scenario: giant-planet growth and the imposed migration tracks. Reproduced from Walsh et al.\ (2011), Fig.~1.}
+\end{frame}
+
+\begin{frame}{Reading the Grand Tack tracks}
+  \begin{itemize}
+    \item \textbf{Top panel}: mass growth of the four giant planets during the disk phase.
+    \item \textbf{Bottom panel}: semi-major axis against time, each curve labelled with its planet.
+    \item Follow Jupiter: inward to $\sim 1.5$ AU, then the \textbf{reversal} once Saturn catches up and the 3:2 resonance locks them together, then outward.
+    \item \textbf{Important caveat}: these tracks are the migration \emph{prescription imposed} on the planets in the reference simulation, following the inward-then-outward path found in hydrodynamical studies. The figure shows the scenario, not a derivation of it.
+  \end{itemize}
+\end{frame}
+
+% ── Hot Jupiters ────────────────────────────────────────────
+\begin{frame}{The observational case for migration}
+  The strongest evidence is a population that cannot be explained any other way: \textbf{hot Jupiters}.
+  \vskip6pt\relax
+  \begin{itemize}
+    \item Gas giants with orbital periods of a few days, $a \lesssim 0.1$ AU.
+    \item They \textbf{cannot have formed in situ}: there is not enough material that close in, and it is far too hot for solids.
+    \item So they formed further out and moved inward, by \emph{either}
+      \begin{itemize}
+        \item \textbf{disk migration}, smooth and early, or
+        \item \textbf{high-eccentricity migration} followed by tidal circularisation, violent and late.
+      \end{itemize}
+  \end{itemize}
+  \vskip6pt\relax
+  Independently: the gaps ALMA sees in disks such as HL Tau may be the signature of embedded planets already migrating. We return to exoplanet demographics in L13.
+  \vskip2pt\relax
+  {\footnotesize Dawson \& Johnson (2018).}
+\end{frame}
+
+% ── Hot Jupiter hero ────────────────────────────────────────
+\begin{frame}[plain]
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{hot_jupiter_mass_period}}\\
+  {\footnotesize Confirmed exoplanets in mass--period space. Course-original figure; data: NASA Exoplanet Archive (accessed 2026-08).}
+\end{frame}
+
+\begin{frame}{Reading the mass--period diagram}
+  \begin{itemize}
+    \item Every confirmed planet with a measured mass and period, colour-coded by \textbf{detection method}. The method boundaries are selection effects, not physics: remember that before reading structure into the plot.
+    \item \textbf{Black stars}: the eight Solar System planets, for reference.
+    \item \textbf{Red circles}: hot Jupiters, selected here as $M > 0.1\,\Mjup$ and $P < 10$ d (dotted lines).
+    \item That clump sits where no planet should be able to form. It is the population that made migration unavoidable in the theory.
+  \end{itemize}
+  \vskip4pt\relax
+  \keyresult{Our solar system has no hot Jupiter. Whether that makes it unusual is a question we can only ask now that we have the comparison sample (L13).}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{pds70}{PDS 70, protoplanets in a disk gap. Credit: ALMA (ESO/NAOJ/NRAO)}
+\section{Recent advances}
+% ════════════════════════════════════════════════════════════
+
+% ── ALMA transformation ─────────────────────────────────────
+\begin{frame}{What high-resolution imaging changed}
+  \begin{itemize}
+    \item DSHARP found rings and gaps in \textbf{all 20} of its large, bright target disks, including around stars younger than $\sim 1$ Myr.
+    \item If embedded planets carve those gaps, then planet formation \textbf{begins earlier and proceeds faster} than the classical picture allowed, which is what the pebble-accretion paradigm predicts.
+    \item The honest caveat: ice lines and magnetically structured zones remain viable alternatives for some of the observed structures.
+  \end{itemize}
+  \vskip6pt\relax
+  \keyresult{The debate is no longer whether disks are structured. It is what the structure means.}
+  \vskip2pt\relax
+  {\footnotesize Andrews et al.\ (2018); Lambrechts \& Johansen (2012).}
+\end{frame}
+
+% ── Theory synthesis ────────────────────────────────────────
+\begin{frame}{Where the theory stands}
+  The \emph{Protostars and Planets VII} volume consolidates the current synthesis, incorporating the ALMA constraints. Key developments:
+  \vskip6pt\relax
+  \begin{itemize}
+    \item Refined models of the \textbf{streaming instability} and the conditions under which planetesimals actually form.
+    \item Improved treatment of \textbf{pebble accretion} in evolving, structured disks.
+    \item New constraints on giant-planet formation timescales from \textbf{meteorite isotopes}: the inner and outer solar system stayed chemically separated early, which dates Jupiter's core.
+    \item Juno gravity data revealing Jupiter's \textbf{dilute core}, which is not the sharp core-envelope boundary the classical model assumed (L8).
+  \end{itemize}
+  \vskip6pt\relax
+  Together these point to giant-planet cores growing within the first few Myr, before the gas disperses, although \emph{how early} Jupiter's core in particular had to form is still contested (L12, L14).
+  \vskip2pt\relax
+  {\footnotesize Dr\k{a}\.zkowska et al.\ (2023); Kruijer et al.\ (2017); Wahl et al.\ (2017).}
+\end{frame}
+
+
+% ════════════════════════════════════════════════════════════
+\sectionimage{orion_nebula}{Orion Nebula, HST (2006). Credit: NASA/ESA/M.~Robberto}
+\section{Three questions to take forward}
+% ════════════════════════════════════════════════════════════
+
+% ── Q1 ──────────────────────────────────────────────────────
+\begin{frame}{Q1. How does nature build a planet out of dust?}
+  Not by patient sticking alone.
+  \vskip6pt\relax
+  \begin{itemize}
+    \item Collisional growth stalls at the \textbf{bouncing, fragmentation, and radial-drift barriers}.
+    \item The leap from pebbles to planetesimals needs the \textbf{collective physics} of the streaming instability.
+    \item From there, gravitational focusing, pebble accretion, and gas capture assemble planets across \textbf{twelve orders of magnitude} in size.
+  \end{itemize}
+  \vskip6pt\relax
+  \textbf{Still genuinely open:} where and when the first planetesimals formed, and how early Jupiter's core grew (L12, L14).
+\end{frame}
+
+% ── Q2 ──────────────────────────────────────────────────────
+\begin{frame}{Q2. Why does an orbit's energy depend only on its semi-major axis?}
+  The vis-viva equation compresses all of Keplerian dynamics into one statement:
+  \vskip4pt\relax
+  \begin{center}
+    $a$ fixes the \textbf{energy}; \quad $e$ merely \textbf{redistributes} speed along the orbit.
+  \end{center}
+  \vskip6pt\relax
+  \begin{itemize}
+    \item From Halley's $54.5$ km s$^{-1}$ plunge at perihelion to its $0.91$ km s$^{-1}$ crawl at aphelion: same energy, same $a$, all of it eccentricity.
+    \item Kepler's third law turns any measured period into a mass.
+  \end{itemize}
+  \vskip6pt\relax
+  These two tools carry directly into the exoplanet detection methods of L13, where a period and a velocity are often \emph{all} you get.
+\end{frame}
+
+% ── Q3 ──────────────────────────────────────────────────────
+\begin{frame}{Q3. Why is Io the most volcanically active body in the solar system?}
+  Because orbital dynamics has \textbf{thermal} consequences.
+  \vskip6pt\relax
+  \begin{itemize}
+    \item The Laplace resonance forces an eccentricity of just $0.004$.
+    \item Tidal flexing converts that into more heat per kilogram than radioactivity provides anywhere else.
+    \item A locked moon on a circular orbit would be geologically dead. A \textbf{resonance keeps Io molten}.
+  \end{itemize}
+  \vskip8pt\relax
+  \keyresult{Orbits are not just where a body is. They are part of its energy budget, and therefore part of its geology.}
+\end{frame}
+
+% ── Bridge to L3 ────────────────────────────────────────────
+\begin{frame}{Next time: Lecture 3}
+  This lecture assembled the planets and set their orbits. The next asks what happens \emph{inside} them.
+  \vskip6pt\relax
+  \textbf{L3 follows the energy:}
+  \begin{itemize}
+    \item Heat delivered by accretion and differentiation.
+    \item Short-lived radionuclides, led by $^{26}\mathrm{Al}$ (half-life $0.72$ Myr), that melted even small planetesimals.
+    \item Long-lived isotopes still powering Earth's $47$ TW heat flow today.
+    \item Tidal dissipation, whose consequences we just saw on Io.
+  \end{itemize}
+  \vskip6pt\relax
+  Then: how that heat \emph{escapes}, by conduction and by convection. The balance between the two decides whether a planet convects, sustains a dynamo, and stays geologically alive.
+\end{frame}
+
+% ── Summary ─────────────────────────────────────────────────
 \begin{frame}{Summary}
   \begin{enumerate}
-    \item Planets form in \textbf{protoplanetary disks} around young stars (lifetime $\sim$3--5~Myr)
-    \item Dust grows to planetesimals via sticking, streaming instability, and pebble accretion
-    \item Giant planets form by \textbf{core accretion}: solid core $\rightarrow$ critical mass $\rightarrow$ runaway gas capture
-    \item Orbits follow Kepler's laws; the \textbf{vis-viva equation} gives speed at any point
-    \item Orbital \textbf{resonances} can protect or destabilise orbits, and drive tidal heating
-    \item Planets \textbf{migrate} through disk and planetesimal interactions, confirmed by hot Jupiters
+    \item \textbf{Disks are inevitable}: angular momentum forbids direct collapse onto the star, and the disk's temperature structure sets the snow line at $2.5$--$3.5$ AU.
+    \item \textbf{Growth is not incremental}: bouncing, fragmentation, and radial drift stop sticking well short of planetesimals; the streaming instability jumps the gap.
+    \item \textbf{Giant-planet formation is a race} against a $\sim 3$ Myr disk lifetime, and core accretion only just wins it.
+    \item \textbf{Vis-viva}, $v^2 = GM(2/r - 1/a)$, gives the speed anywhere on any orbit; the energy depends only on $a$.
+    \item \textbf{Resonances and tides} convert orbital configuration into interior heat: Io's $e \approx 0.004$ is the reason it is the most volcanically active body we know.
+    \item \textbf{Migration is the rule}: hot Jupiters, the Nice model, and the Grand Tack all say that where a planet is now is not where it formed.
   \end{enumerate}
 \end{frame}
 
@@ -1044,15 +1474,13 @@
 \begin{frame}[plain,noframenumbering]
   \begin{tikzpicture}[remember picture, overlay]
     \ipscontain{title_background}
-    \fill[ipsPrimary, opacity=0.70] (current page.north west) rectangle (current page.south east);
+    \fill[ipsPrimary, opacity=0.55] (current page.north west) rectangle (current page.south east);
   \end{tikzpicture}
   \vfill
   \begin{center}
-    {\color{white}\Large\bfseries Questions?}
-    \vskip20pt
-    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~3. Planetary Heat \& Energy Transport}}
-    \vskip16pt
-    {\color{ipsLightFill!70}\small Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
+    {\color{white}\LARGE\bfseries Questions?}\\[14pt]
+    {\color{white!85}\large Next: Lecture 3, Planetary heat \& energy transport}\\[20pt]
+    {\color{white!70}\small \texttt{https://ips.formingworlds.space/}}
   \end{center}
   \vfill
 \end{frame}

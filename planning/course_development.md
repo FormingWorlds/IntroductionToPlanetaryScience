@@ -590,7 +590,7 @@ Order:
 1. L01 notes (LOCKED 2026-05-17, commit `ec67259`)
 2. L01 slides (LOCKED 2026-08-08; 95-page deck signed off and deployed)
 3. L02 notes (LOCKED 2026-08-08)
-4. L02 slides
+4. L02 slides (rebuilt against the locked notes and deployed 2026-08-09; 107-page deck, under review)
 5. Worksheet 01 (L01 + L02)
 6. L03 notes
 7. L03 slides
@@ -660,6 +660,8 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 - L9-L14: built and reviewed in the L9-L14 slide series, final deck commit `c53d778` (2026-04-26)
 - All em-dash instances across the 14 decks replaced per CLAUDE.md style
 - All SVG figures in column layouts audited and constrained with `width=\linewidth, keepaspectratio` to prevent overflow
+- L02 is a 107-page deck carrying all 25 figures of the locked notes across 11 sections, with hero-plus-walkthrough pairs for every publication figure, a five-step vis-viva derivation section, and the break at the formation-to-dynamics boundary
+- Full-bleed hero figures wider than about 2:1 must be wrapped in `\makebox[\linewidth][c]{...}`; a bare `\includegraphics[width=0.95\paperwidth]` is set flush left and its right edge is clipped by the page
 - `slides/Makefile` carries `svg2pdf` (cairosvg) and `avif2png` (magick) targets for xelatex
 - Decks include recent-developments frames (Juno, JUICE, Europa Clipper, OSIRIS-REx, Hayabusa2, DART, JWST MAPS, Perseverance, BepiColombo, Psyche, MAVEN, InSight, Tarduno paleomagnetism, ARIEL, Roman, PLATO), dedicated physics-derivation frames (Rayleigh number comparison, Nusselt scaling, adiabatic gradient, Jeans parameter, energy-limited escape, partition coefficients, Hf-W chronometer, magnetopause derivation, tidal dissipation rate, Simpson-Nakajima OLR limit, Roche limit, Pb-Pb dating, transit and RV derivations, habitable-zone derivation), and deeper notes-coverage frames (mantle reservoirs, mantle plumes, snowball Earth, runaway greenhouse, Milankovitch cycles, thermal tides, super-ionic ice, Ganymede interior, crater size-frequency distribution, NC/CC dichotomy, Trappist-1 system, exoplanet demographics)
 
