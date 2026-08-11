@@ -29,4 +29,4 @@ These lecture notes accompany the course *Planetary Systems*, covering the forma
 
 ## About
 
-These notes are developed by [Tim Lichtenberg](https://www.formingworlds.space/) at the [Kapteyn Astronomical Institute](https://www.astro.rug.nl/). They are designed to be self-contained and do not require a separate textbook.
+These notes are developed by [Tim Lichtenberg](https://timlichtenberg.net/) at the [Kapteyn Astronomical Institute](https://www.astro.rug.nl/). They are designed to be self-contained and do not require a separate textbook.

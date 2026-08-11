@@ -17,8 +17,9 @@ The official course catalogue entry is maintained in [Ocasys](https://ocasys.rug
 | **Institute** | [Kapteyn Astronomical Institute](https://www.astro.rug.nl/) |
 | **Language of instruction** | English |
 | **Period** | Semester 1a (September to November 2026) |
-| **Coordinator and lecturer** | dr. [Tim Lichtenberg](https://www.formingworlds.space/) |
-| **Guest lecturer** | dr. Mara Attia (Atmospheres I and II) |
+| **Coordinator and lecturer** | dr. [Tim Lichtenberg](https://timlichtenberg.net/) |
+| **Guest lecturer** | dr. [Mara Attia](https://maraattia.github.io/) (they/them), Atmospheres I and II |
+| **Teaching assistants** | [Soumil Kelkar](https://research.rug.nl/en/persons/soumil-kelkar), [Imre Kisvárdai](https://research.rug.nl/en/persons/imre-kisvardai), [Emma Postolec](https://research.rug.nl/en/persons/emma-postolec), [Mariana Sastre](https://planetmariana.github.io/) |
 | **Timetable** | [rooster.rug.nl](https://rooster.rug.nl/2026-2027?courseOffering=195171) |
 
 ## Course description
@@ -65,6 +66,7 @@ The homework sheets and their full solutions, together with a few mock exams wit
 
 The course runs over the teaching period of Semester 1a and comprises 14 lectures, weekly tutorial sessions, and a final written exam.
 Each teaching week consists of two 90-minute lectures and one tutorial in which the homework sheet for that block is discussed.
+The tutorials are led by the teaching assistants listed above.
 The full lecture sequence is listed on the {ref}`landing page <intro>`, and the lecture notes follow that order.
 
 The indicative study-load breakdown for the 5 ECTS (140 hours total) is:
