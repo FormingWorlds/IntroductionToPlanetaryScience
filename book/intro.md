@@ -27,6 +27,10 @@ These lecture notes accompany the course *Planetary Systems*, covering the forma
 13. {ref}`Lecture 13 <lecture13>`: Exoplanets: Detection, Demographics, & Characterization
 14. {ref}`Lecture 14 <lecture14>`: Synthesis & Astrobiology
 
+## Worksheets and mock exams
+
+The seven worksheet problem sets with full solutions are collected on the {ref}`worksheets <worksheets>` page, and the mock exams on the {ref}`mock exams <mock_exams>` page.
+
 ## About
 
 These notes are developed by [Tim Lichtenberg](https://timlichtenberg.net/) at the [Kapteyn Astronomical Institute](https://www.astro.rug.nl/). They are designed to be self-contained and do not require a separate textbook.

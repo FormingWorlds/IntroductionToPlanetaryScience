@@ -88,15 +88,12 @@
   \vskip4pt%
 }
 
-% ── Footline: lecture number | short title | slide number ───
+% ── Footline: short title (left) | slide number (right) ─────
 \setbeamertemplate{footline}{%
   \leavevmode%
   \hbox{%
-    \begin{beamercolorbox}[wd=.30\paperwidth,ht=2.5ex,dp=1ex,left]{footline}%
-      \hspace*{6pt}\insertshortauthor%
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=.40\paperwidth,ht=2.5ex,dp=1ex,center]{footline}%
-      \insertshorttitle%
+    \begin{beamercolorbox}[wd=.70\paperwidth,ht=2.5ex,dp=1ex,left]{footline}%
+      \hspace*{6pt}\insertshorttitle%
     \end{beamercolorbox}%
     \begin{beamercolorbox}[wd=.30\paperwidth,ht=2.5ex,dp=1ex,right]{footline}%
       \insertframenumber\hspace*{6pt}%

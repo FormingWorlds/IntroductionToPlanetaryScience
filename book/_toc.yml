@@ -13,6 +13,11 @@ parts:
     numbered: false
     chapters:
       - file: lecture_slides
+  - caption: Sheets
+    numbered: false
+    chapters:
+      - file: worksheets
+      - file: mock_exams
   - caption: Lectures
     numbered: true
     chapters:

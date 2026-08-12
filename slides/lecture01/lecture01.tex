@@ -40,7 +40,7 @@
     {\color{white!80}\footnotesize Mariana Sastre \texttt{villamilsastre@astro.rug.nl} \;$\cdot$\; Emma Postolec \texttt{postolec@astro.rug.nl}}\\[2pt]
     {\color{white!80}\footnotesize Soumil Kelkar \texttt{s.m.kelkar@rug.nl} \;$\cdot$\; Imre Kisvárdai \texttt{kisvardai@astro.rug.nl}}\\[14pt]
     {\color{white!80}\small Kapteyn Astronomical Institute, University of Groningen}\\[10pt]
-    {\color{white!70}\small\texttt{https://ips.formingworlds.space/}}
+    {\color{white}\normalsize\bfseries\texttt{https://ips.formingworlds.space}}
   \end{center}
   \vfill
 \end{frame}
@@ -148,6 +148,13 @@
 
 % ── Tutorials & worksheets ──────────────────────────────────
 \begin{frame}{Tutorials \& worksheets}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north east, xshift=-6pt, yshift=-6pt, fill=ipsAccent,
+          rounded corners=3pt, inner sep=5pt, align=center] at (current page.north east) {%
+      {\color{white}\footnotesize\bfseries Download the worksheets:}\\[1pt]
+      \href{https://ips.formingworlds.space/worksheets.html}{\color{white}\scriptsize\texttt{ips.formingworlds.space/worksheets.html}}%
+    };
+  \end{tikzpicture}%
   \textbf{Worksheets:} seven problem sets, one per two-lecture block.
   \begin{itemize}
     \item Worksheets \emph{and} full solutions are available on the course website.
@@ -167,6 +174,13 @@
 
 % ── The exam ────────────────────────────────────────────────
 \begin{frame}{The exam}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north east, xshift=-6pt, yshift=-6pt, fill=ipsAccent,
+          rounded corners=3pt, inner sep=5pt, align=center] at (current page.north east) {%
+      {\color{white}\footnotesize\bfseries Download the mock exams:}\\[1pt]
+      \href{https://ips.formingworlds.space/mock_exams.html}{\color{white}\scriptsize\texttt{ips.formingworlds.space/mock\_exams.html}}%
+    };
+  \end{tikzpicture}%
   \begin{itemize}
     \item The exam has the \textbf{exact same shape and level as the problem sets}.
     \item Approximately \textbf{one question per lecture}; to fit into two hours, not necessarily every lecture is covered, and some may be combined into one question.
@@ -223,22 +237,31 @@
 \end{frame}
 
 % ── Family Portrait hero ────────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{family_portrait}}\\
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{family_portrait}}\\
   {\footnotesize Voyager 1 ``Family Portrait'' mosaic, 14 February 1990. Credit: NASA/JPL-Caltech, PIA00451.}
 \end{frame}
 
 \begin{frame}{Reading the Family Portrait}
-  60-frame mosaic spanning $\sim 70^{\circ}$ of sky, taken from $\sim 6$ billion km the same day as the Pale Blue Dot.
-  \vskip6pt\relax
-  \begin{itemize}
-    \item Six of the eight planets are visible: \textbf{Venus, Earth, Jupiter, Saturn, Uranus, Neptune.}
-    \item \textbf{Mercury} sat too close to the Sun's glare to be safely imaged.
-    \item \textbf{Mars} showed only a thin sunlit crescent from Voyager 1's viewpoint and could not be detected.
-    \item \textbf{Pluto} was too small and too distant.
-    \item The only spacecraft image of our entire planetary system from outside.
-  \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{family_portrait}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \small
+        60-frame mosaic spanning $\sim 70^{\circ}$ of sky, taken from $\sim 6$ billion km the same day as the Pale Blue Dot.
+        \vskip6pt\relax
+        \begin{itemize}
+          \item Six of the eight planets are visible: \textbf{Venus, Earth, Jupiter, Saturn, Uranus, Neptune.}
+          \item \textbf{Mercury} sat too close to the Sun's glare to be safely imaged.
+          \item \textbf{Mars} showed only a thin sunlit crescent from Voyager 1's viewpoint and could not be detected.
+          \item \textbf{Pluto} was too small and too distant.
+          \item The only spacecraft image of our entire planetary system from outside.
+        \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── Earthrise ────────────────────────────────────────────────
@@ -273,24 +296,33 @@
 \end{frame}
 
 % ── eta_Earth hero ──────────────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.84\paperheight, keepaspectratio]{eta_earth_posterior}}\\
+  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.80\paperheight, keepaspectratio]{eta_earth_posterior}}\\
   {\footnotesize Posterior on $\eta_\oplus$ from Kepler. Conservative (left) vs.\ optimistic (right) habitable zones. From Bryson et al.\ (2021).}
 \end{frame}
 
 \begin{frame}{Reading the $\eta_\oplus$ posterior}
-  \textbf{$\eta_\oplus$}: average number of rocky habitable-zone planets per Sun-like star.
-  \vskip2pt\relax
-  \begin{itemize}
-    \item \textbf{Left:} \emph{conservative} HZ (moist-greenhouse $\to$ maximum-greenhouse). Liquid water reliably maintained.
-    \item \textbf{Right:} \emph{optimistic} HZ (recent-Venus $\to$ early-Mars). Wider, includes transient surface water.
-    \item Two coloured posteriors bracket the completeness extrapolation past Kepler's 500-day limit: blue $=$ constant (\emph{lower} bound); orange $=$ drops to zero (\emph{upper} bound).
-    \item Diamonds above each panel: \textbf{posterior medians + 68\% credible intervals.}
-    \item Conservative HZ: $\eta_\oplus \approx 0.37 \to 0.60$. Optimistic HZ: $0.58 \to 0.88$.
-  \end{itemize}
-  \vskip2pt\relax
-  \keyresult{Either way, habitable-zone rocky planets around Sun-like stars are \emph{common}.}
+  \begin{columns}[c]
+    \begin{column}{0.26\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{eta_earth_posterior_conservative}
+    \end{column}
+    \begin{column}{0.72\textwidth}
+      \footnotesize
+        \textbf{$\eta_\oplus$}: average number of rocky habitable-zone planets per Sun-like star.
+        \vskip0pt\relax
+        \begin{itemize}
+          \item \textbf{Left:} \emph{conservative} HZ (moist-greenhouse $\to$ maximum-greenhouse). Liquid water reliably maintained.
+          \item \textbf{Right:} \emph{optimistic} HZ (recent-Venus $\to$ early-Mars). Wider, includes transient surface water.
+          \item Two coloured posteriors bracket the completeness extrapolation past Kepler's 500-day limit: blue $=$ constant (\emph{lower} bound); orange $=$ drops to zero (\emph{upper} bound).
+          \item Diamonds above each panel: \textbf{posterior medians + 68\% credible intervals.}
+          \item Conservative HZ: $\eta_\oplus \approx 0.37 \to 0.60$. Optimistic HZ: $0.58 \to 0.88$.
+        \end{itemize}
+        \vskip0pt\relax
+        \keyresult{Either way, habitable-zone rocky planets around Sun-like stars are \emph{common}.}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 
@@ -537,77 +569,113 @@
 \end{frame}
 
 % ── Mass-period hero ────────────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.84\paperheight, keepaspectratio]{exoplanet_mass_period}}\\
+  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.80\paperheight, keepaspectratio]{exoplanet_mass_period}}\\
   {\footnotesize Planet mass (or $M\sin i$) vs orbital period, coloured by detection method. Solar-system planets shown as gold stars. NASA Exoplanet Archive (2026-05-17).}
 \end{frame}
 
 \begin{frame}{Reading the mass-period diagram}
-  \begin{itemize}
-    \item \textbf{Upper-left}: hot Jupiters and other large, short-period planets. Easiest to detect; \emph{selection effects} dominate this region.
-    \item \textbf{Lower-middle}: the Earth-analogue regime ($\sim 1\,\Mearth$, period $\sim 1$ yr). Sparsely populated.
-    \item Radial-velocity and transit surveys need \emph{multi-year baselines} to access long periods.
-    \item \textbf{Future direct-imaging missions} (HWO, LIFE) are designed to fill the Earth-analogue region by spatially separating planet light from stellar light.
-    \item Detection method colours reveal which technique works where (e.g.\ transits at short periods, microlensing at intermediate periods).
-  \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.34\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{exoplanet_mass_period}
+    \end{column}
+    \begin{column}{0.64\textwidth}
+      \footnotesize
+        \begin{itemize}
+          \item \textbf{Upper-left}: hot Jupiters and other large, short-period planets. Easiest to detect; \emph{selection effects} dominate this region.
+          \item \textbf{Lower-middle}: the Earth-analogue regime ($\sim 1\,\Mearth$, period $\sim 1$ yr). Sparsely populated.
+          \item Radial-velocity and transit surveys need \emph{multi-year baselines} to access long periods.
+          \item \textbf{Future direct-imaging missions} (HWO, LIFE) are designed to fill the Earth-analogue region by spatially separating planet light from stellar light.
+          \item Detection method colours reveal which technique works where (e.g.\ transits at short periods, microlensing at intermediate periods).
+        \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── Radius gap ──────────────────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.90\paperwidth, height=0.84\paperheight, keepaspectratio]{radius_gap_fulton}}\\
+  \makebox[\linewidth][c]{\includegraphics[width=0.90\paperwidth, height=0.80\paperheight, keepaspectratio]{radius_gap_fulton}}\\
   {\footnotesize Completeness-corrected radius distribution, California-Kepler Survey. Reproduced from Fulton et al.\ (2017), Fig.~7 (top panel).}
 \end{frame}
 
 \begin{frame}{Reading the radius valley}
-  Restricted to orbital periods $< 100$ d around FGK stars.
-  \vskip6pt\relax
-  \begin{itemize}
-    \item Two peaks: \textbf{super-Earths} at $\sim 1.3\,\Rearth$ and \textbf{sub-Neptunes} at $\sim 2.4\,\Rearth$.
-    \item Separated by the \textbf{radius valley} near $1.8\,\Rearth$.
-    \item Interpreted as the boundary between \emph{rocky} planets and those with a thin H/He envelope.
-    \item Error bars: 1-$\sigma$ Poisson on bin counts.
-    \item \textbf{Light-grey segment} below $1.14\,\Rearth$: low completeness, occurrence unreliable.
-    \item Atmospheric escape and the radius valley revisited in L13.
-  \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{radius_gap_fulton}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \small
+        Restricted to orbital periods $< 100$ d around FGK stars.
+        \vskip6pt\relax
+        \begin{itemize}
+          \item Two peaks: \textbf{super-Earths} at $\sim 1.3\,\Rearth$ and \textbf{sub-Neptunes} at $\sim 2.4\,\Rearth$.
+          \item Separated by the \textbf{radius valley} near $1.8\,\Rearth$.
+          \item Interpreted as the boundary between \emph{rocky} planets and those with a thin H/He envelope.
+          \item Error bars: 1-$\sigma$ Poisson on bin counts.
+          \item \textbf{Light-grey segment} below $1.14\,\Rearth$: low completeness, occurrence unreliable.
+          \item Atmospheric escape and the radius valley revisited in L13.
+        \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── HL Tau ALMA ─────────────────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \includegraphics[width=0.78\paperwidth, height=0.86\paperheight, keepaspectratio]{hl_tau_alma}\\
+  \includegraphics[width=0.78\paperwidth, height=0.80\paperheight, keepaspectratio]{hl_tau_alma}\\
   {\footnotesize ALMA 1.3\,mm continuum image of HL Tauri. Credit: ALMA (ESO/NAOJ/NRAO); ALMA Partnership et al.\ (2015).}
 \end{frame}
 
 \begin{frame}{Reading HL Tau}
-  \begin{itemize}
-    \item Protoplanetary disk around the young star \textbf{HL Tauri} ($\sim 140$ pc).
-    \item Concentric \textbf{dark gaps} are widely interpreted as carved by forming protoplanets.
-    \item Alternative interpretations remain in play: local dust pile-ups at \textbf{ice lines}, MRI-dead-zone substructures.
-    \item ALMA's $\sim 5$ AU angular resolution at HL Tau's distance is what made this multi-ringed substructure visible for the \emph{first time}.
-    \item Disks and planet formation: L2.
-  \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{hl_tau_alma}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \small
+        \begin{itemize}
+          \item Protoplanetary disk around the young star \textbf{HL Tauri} ($\sim 140$ pc).
+          \item Concentric \textbf{dark gaps} are widely interpreted as carved by forming protoplanets.
+          \item Alternative interpretations remain in play: local dust pile-ups at \textbf{ice lines}, MRI-dead-zone substructures.
+          \item ALMA's $\sim 5$ AU angular resolution at HL Tau's distance is what made this multi-ringed substructure visible for the \emph{first time}.
+          \item Disks and planet formation: L2.
+        \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── WASP-39 b ───────────────────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \includegraphics[width=0.86\paperwidth, height=0.85\paperheight, keepaspectratio]{wasp39b_jwst_co2}\\
+  \includegraphics[width=0.86\paperwidth, height=0.80\paperheight, keepaspectratio]{wasp39b_jwst_co2}\\
   {\footnotesize First unambiguous $\mathrm{CO_2}$ detection in an exoplanet atmosphere. NASA, ESA, CSA, J.~Olmsted (STScI). Data: Rustamkulov et al.\ (2023).}
 \end{frame}
 
 \begin{frame}{Reading WASP-39 b's $\mathrm{CO_2}$ detection}
-  WASP-39 b: hot Saturn, $0.28\,\Mjup$ (Saturn-mass).
-  \vskip6pt\relax
-  \begin{itemize}
-    \item JWST/NIRSpec transmission spectrum, July 2022.
-    \item Plotted as \textbf{transit depth vs wavelength}, 3.0--5.5 $\mu$m.
-    \item Prominent peak near \textbf{4.3 $\mu$m} is the $\mathrm{CO_2}$ absorption band.
-    \item White points = data with error bars; blue curve = best-fit atmospheric model.
-    \item \textbf{First unambiguous $\mathrm{CO_2}$} detection in any exoplanet atmosphere.
-    \item Prototype result for the wider JWST atmospheric programme (L13).
-  \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{wasp39b_jwst_co2}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \small
+        WASP-39 b: hot Saturn, $0.28\,\Mjup$ (Saturn-mass).
+        \vskip6pt\relax
+        \begin{itemize}
+          \item JWST/NIRSpec transmission spectrum, July 2022.
+          \item Plotted as \textbf{transit depth vs wavelength}, 3.0--5.5 $\mu$m.
+          \item Prominent peak near \textbf{4.3 $\mu$m} is the $\mathrm{CO_2}$ absorption band.
+          \item White points = data with error bars; blue curve = best-fit atmospheric model.
+          \item \textbf{First unambiguous $\mathrm{CO_2}$} detection in any exoplanet atmosphere.
+          \item Prototype result for the wider JWST atmospheric programme (L13).
+        \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 
@@ -637,32 +705,33 @@
 \end{frame}
 
 % ── Solar system composite hero ─────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.96\paperwidth, height=0.86\paperheight, keepaspectratio]{solar_system_composite}}\\
+  \makebox[\linewidth][c]{\includegraphics[width=0.96\paperwidth, height=0.80\paperheight, keepaspectratio]{solar_system_composite}}\\
   {\footnotesize Solar system composite at \emph{true relative size}. Distances not to scale. Credit: CactiStaccingCrane (Wikimedia, CC BY-SA 4.0).}
 \end{frame}
 
 \begin{frame}{Reading the solar-system composite}
-  \begin{columns}[T]
-    \column{0.48\textwidth}
-    \textbf{Body sizes to scale (distances not):}
-    \begin{itemize}
-      \item Inner: Mercury, Venus, Earth (+ Moon), Mars (+ Phobos, Deimos)
-      \item Asteroid belt: Ceres
-      \item Giants: Jupiter, Saturn, Uranus, Neptune (each with their largest moons; e.g.\ Io, Europa, Ganymede, Callisto at Jupiter)
-    \end{itemize}
-
-    \column{0.48\textwidth}
-    \textbf{Continued:}
-    \begin{itemize}
-      \item Kuiper belt + scattered disk + detached: Pluto + Charon system, Haumea, Makemake, Quaoar, Orcus, Eris + Dysnomia, Gonggong, Sedna
-      \item Sun's limb at far right (for scale)
-      \item Oort cloud not depicted; its constituents are individually too small to image
-    \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.40\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{solar_system_composite}
+    \end{column}
+    \begin{column}{0.58\textwidth}
+      \footnotesize
+      \textbf{Body sizes to scale (distances not):}
+      \begin{itemize}
+        \item Inner: Mercury, Venus, Earth (+ Moon), Mars (+ Phobos, Deimos)
+        \item Asteroid belt: Ceres
+        \item Giants: Jupiter, Saturn, Uranus, Neptune (each with their largest moons; e.g.\ Io, Europa, Ganymede, Callisto at Jupiter)
+        \item Kuiper belt + scattered disk + detached: Pluto + Charon system, Haumea, Makemake, Quaoar, Orcus, Eris + Dysnomia, Gonggong, Sedna
+        \item Sun's limb at far right (for scale)
+        \item Oort cloud not depicted; its constituents are individually too small to image
+      \end{itemize}
+      \vskip2pt\relax
+      Jupiter's diameter ($\sim 143{,}000$ km) is $\sim 29\times$ Mercury's. The largest KBOs are $\sim 2{,}000$--$2{,}400$ km.
+    \end{column}
   \end{columns}
-  \vskip4pt\relax
-  Jupiter's diameter ($\sim 143{,}000$ km) is $\sim 29\times$ Mercury's. The largest KBOs are $\sim 2{,}000$--$2{,}400$ km.
 \end{frame}
 
 % ── Planet table ────────────────────────────────────────────
@@ -845,24 +914,33 @@
 \end{frame}
 
 % ── Mass budget hero ────────────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.84\paperheight, keepaspectratio]{ss_mass_budget}}\\
+  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.80\paperheight, keepaspectratio]{ss_mass_budget}}\\
   {\footnotesize Mass budget of the solar system. Data: JPL SSD Planetary Physical Parameters.}
 \end{frame}
 
 \begin{frame}{Reading the mass budget}
-  \textbf{Left pie:} the Sun contains 99.86\% of total mass; the eight planets together contribute the remaining 0.13\%.
-  \vskip6pt\relax
-  \textbf{Right pie} (planetary mass only):
-  \begin{itemize}
-    \item Jupiter: $\sim 71\%$
-    \item Saturn: $\sim 21\%$
-    \item Neptune: $3.8\%$ \quad Uranus: $3.3\%$
-    \item All four terrestrials together: $0.44\%$ (one wedge for legibility)
-  \end{itemize}
-  \vskip4pt\relax
-  This extreme mass concentration in the central star is a fundamental property of planetary systems, and any formation theory must explain it (L2).
+  \begin{columns}[c]
+    \begin{column}{0.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{ss_mass_budget}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \small
+        \textbf{Left pie:} the Sun contains 99.86\% of total mass; the eight planets together contribute the remaining 0.13\%.
+        \vskip6pt\relax
+        \textbf{Right pie} (planetary mass only):
+        \begin{itemize}
+          \item Jupiter: $\sim 71\%$
+          \item Saturn: $\sim 21\%$
+          \item Neptune: $3.8\%$ \quad Uranus: $3.3\%$
+          \item All four terrestrials together: $0.44\%$ (one wedge for legibility)
+        \end{itemize}
+        \vskip4pt\relax
+        This extreme mass concentration in the central star is a fundamental property of planetary systems, and any formation theory must explain it (L2).
+    \end{column}
+  \end{columns}
 \end{frame}
 
 
@@ -889,20 +967,29 @@
 \end{frame}
 
 % ── Terrestrial planets hero ────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.84\paperheight, keepaspectratio]{terrestrial_planets}}\\
+  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.80\paperheight, keepaspectratio]{terrestrial_planets}}\\
   {\footnotesize Mercury, Venus, Earth, Mars at approximate relative scale. Credit: NASA/JPL (public domain).}
 \end{frame}
 
 \begin{frame}{Reading the four terrestrial planets}
-  \begin{itemize}
-    \item Span a factor of $\sim 18$ in mass.
-    \item Same protoplanetary disk, broadly similar bulk compositions.
-    \item Dramatically different evolutionary paths.
-    \item Earth, Venus: detailed in L9.
-    \item Mercury, Mars: detailed in L10.
-  \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{terrestrial_planets}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \small
+        \begin{itemize}
+          \item Span a factor of $\sim 18$ in mass.
+          \item Same protoplanetary disk, broadly similar bulk compositions.
+          \item Dramatically different evolutionary paths.
+          \item Earth, Venus: detailed in L9.
+          \item Mercury, Mars: detailed in L10.
+        \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── V/E/M property table ────────────────────────────────────
@@ -925,44 +1012,62 @@
 \end{frame}
 
 % ── VEM atmospheres hero ────────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.84\paperheight, keepaspectratio]{venus_earth_mars_atmospheres}}\\
+  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.80\paperheight, keepaspectratio]{venus_earth_mars_atmospheres}}\\
   {\footnotesize Surface $T$ and $P$ for Venus, Earth, Mars. Data: JPL SSD Planetary Physical Parameters.}
 \end{frame}
 
 \begin{frame}{Reading the atmospheric divergence}
-  \begin{itemize}
-    \item \textbf{Red bars (left axis):} surface temperature.
-    \item \textbf{Blue bars (right axis, log scale):} surface pressure.
-    \item Dominant atmospheric species labelled below each planet.
-    \item Despite similar bulk compositions and shared formation environment:
-    \begin{itemize}
-      \item factor of $\sim 10^4$ in surface pressure;
-      \item $\sim 500$ K range in surface temperature.
-    \end{itemize}
-    \item Drives the L9--L10 case studies: why did three sibling planets diverge?
-  \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{venus_earth_mars_atmospheres}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \small
+        \begin{itemize}
+          \item \textbf{Red bars (left axis):} surface temperature.
+          \item \textbf{Blue bars (right axis, log scale):} surface pressure.
+          \item Dominant atmospheric species labelled below each planet.
+          \item Despite similar bulk compositions and shared formation environment:
+          \begin{itemize}
+            \item factor of $\sim 10^4$ in surface pressure;
+            \item $\sim 500$ K range in surface temperature.
+          \end{itemize}
+          \item Drives the L9--L10 case studies: why did three sibling planets diverge?
+        \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── Galilean moons hero ─────────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.84\paperheight, keepaspectratio]{galilean_moons}}\\
+  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.80\paperheight, keepaspectratio]{galilean_moons}}\\
   {\footnotesize Io, Europa, Ganymede, Callisto at correct relative size. Credit: NASA/JPL/DLR, Galileo mission.}
 \end{frame}
 
 \begin{frame}{Reading the Galilean comparison}
-  Four moons, common formation environment around Jupiter.
-  \vskip6pt\relax
-  \begin{itemize}
-    \item \textbf{Io}: most volcanically active body in the solar system.
-    \item \textbf{Europa}: icy crust over a global liquid-water ocean.
-    \item \textbf{Ganymede}: \emph{largest moon in the solar system}, 5262 km (vs.\ Mercury, 4880 km); intrinsic magnetic field.
-    \item \textbf{Callisto}: heavily cratered, geologically inert.
-  \end{itemize}
-  \vskip4pt\relax
-  Tidal heating + ice content drive vastly different outcomes. Moon systems revisited in L11.
+  \begin{columns}[c]
+    \begin{column}{0.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{galilean_moons}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \small
+        Four moons, common formation environment around Jupiter.
+        \vskip6pt\relax
+        \begin{itemize}
+          \item \textbf{Io}: most volcanically active body in the solar system.
+          \item \textbf{Europa}: icy crust over a global liquid-water ocean.
+          \item \textbf{Ganymede}: \emph{largest moon in the solar system}, 5262 km (vs.\ Mercury, 4880 km); intrinsic magnetic field.
+          \item \textbf{Callisto}: heavily cratered, geologically inert.
+        \end{itemize}
+        \vskip4pt\relax
+        Tidal heating + ice content drive vastly different outcomes. Moon systems revisited in L11.
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Comparative method generalises to exoplanets}
@@ -1162,21 +1267,30 @@
 \end{frame}
 
 % ── Cassini Saturn hero ─────────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.84\paperheight, keepaspectratio]{cassini_saturn}}\\
+  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.80\paperheight, keepaspectratio]{cassini_saturn}}\\
   {\footnotesize Backlit Saturn with Earth in the rings (lower right). Credit: NASA/JPL-Caltech/SSI (19 July 2013).}
 \end{frame}
 
 \begin{frame}{Reading ``The Day the Earth Smiled''}
-  \begin{itemize}
-    \item Cassini imaged Saturn from \emph{inside} the planet's shadow on 19 July 2013.
-    \item Earth visible as a faint pale point through the rings (lower right).
-    \item \textbf{First Earth portrait from deep space pre-announced to the public}; Voyager Pale Blue Dot and Family Portrait were unannounced.
-    \item Cassini operated in Saturn orbit 2004--2017.
-    \item Discovered Enceladus's global subsurface ocean and Titan's hydrocarbon lakes.
-    \item Saturn rings, Enceladus, Titan revisited in L11.
-  \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{cassini_saturn}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \small
+        \begin{itemize}
+          \item Cassini imaged Saturn from \emph{inside} the planet's shadow on 19 July 2013.
+          \item Earth visible as a faint pale point through the rings (lower right).
+          \item \textbf{First Earth portrait from deep space pre-announced to the public}; Voyager Pale Blue Dot and Family Portrait were unannounced.
+          \item Cassini operated in Saturn orbit 2004--2017.
+          \item Discovered Enceladus's global subsurface ocean and Titan's hydrocarbon lakes.
+          \item Saturn rings, Enceladus, Titan revisited in L11.
+        \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── Perseverance on Mars ────────────────────────────────────
@@ -1233,48 +1347,59 @@
 \end{frame}
 
 % ── TRAPPIST-1 system hero ──────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.84\paperheight, keepaspectratio]{trappist1_system}}\\
+  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.80\paperheight, keepaspectratio]{trappist1_system}}\\
   {\footnotesize TRAPPIST-1 planets (top row) vs.\ the inner solar system (bottom row). Credit: NASA/JPL-Caltech.}
 \end{frame}
 
 \begin{frame}{Reading the TRAPPIST-1 comparison}
-  \begin{itemize}
-    \item Top row: TRAPPIST-1 b through h; \emph{artist's illustrations} (the planets are too small and too faint to be spatially resolved).
-    \item Bottom row: inner solar system, \emph{spacecraft photographs}.
-    \item Orbital periods: 1.5 days (b) to 19 days (h). The entire system fits inside Mercury's 88-day orbit.
-    \item Measured / estimated values shown: period, distance, radius, mass, density, surface gravity.
-    \item Six-link resonance chain locks the periods (Gillon et al.\ 2017, Luger et al.\ 2017).
-    \item This is the closest available \emph{laboratory} for testing M-dwarf habitability.
-  \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.34\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{trappist1_system}
+    \end{column}
+    \begin{column}{0.64\textwidth}
+      \footnotesize
+        \begin{itemize}
+          \item Top row: TRAPPIST-1 b through h; \emph{artist's illustrations} (the planets are too small and too faint to be spatially resolved).
+          \item Bottom row: inner solar system, \emph{spacecraft photographs}.
+          \item Orbital periods: 1.5 days (b) to 19 days (h). The entire system fits inside Mercury's 88-day orbit.
+          \item Measured / estimated values shown: period, distance, radius, mass, density, surface gravity.
+          \item Six-link resonance chain locks the periods (Gillon et al.\ 2017, Luger et al.\ 2017).
+          \item This is the closest available \emph{laboratory} for testing M-dwarf habitability.
+        \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── TRAPPIST-1 b hero ───────────────────────────────────────
-\begin{frame}[plain]
+\begin{frame}
   \centering
-  \includegraphics[width=0.86\paperwidth, height=0.85\paperheight, keepaspectratio]{trappist1b_jwst}\\
+  \includegraphics[width=0.86\paperwidth, height=0.80\paperheight, keepaspectratio]{trappist1b_jwst}\\
   {\footnotesize JWST MIRI F1500W secondary eclipse of TRAPPIST-1 b. Reproduced from Greene et al.\ (2023).}
 \end{frame}
 
 \begin{frame}{Reading the M-dwarf atmosphere test}
-  First thermal measurement of a rocky exoplanet around an M dwarf.
-  \vskip0pt\relax
-  \begin{itemize}
-    \item $x$-axis: wavelength ($\mu$m); $y$-axis: planet spectral flux density ($\mu$Jy).
-    \item Two black data points: F1280W (\emph{expected}, 12.8 $\mu$m) and F1500W (\emph{measured}, 15 $\mu$m).
-    \item Five model curves:
-    \begin{itemize}
-      \item Blue: $503 \pm 27$ K dayside blackbody.
-      \item Orange: 400 K equilibrium with full heat redistribution.
-      \item Green: 508 K bare-rock prediction (zero albedo, no redistribution).
-      \item Cyan: 93-bar $\mathrm{CO_2}$-dominated atmosphere.
-      \item Magenta: 10-bar $\mathrm{O_2 + CO_2}$ atmosphere.
-    \end{itemize}
-    \item $\mathrm{CO_2}$ absorbs at $\sim 15$ $\mu$m; atmospheric models would suppress flux there.
-  \end{itemize}
-  \vskip0pt\relax
-  \keyresult{F1500W point sits on the \emph{bare-rock} blackbody and well above the atmospheric models. Rules out thick $\mathrm{CO_2}$-rich atmospheres on TRAPPIST-1 b. (L13.)}
+  \begin{columns}[c]
+    \begin{column}{0.26\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{trappist1b_jwst}
+    \end{column}
+    \begin{column}{0.72\textwidth}
+      \footnotesize
+        First thermal measurement of a rocky exoplanet around an M dwarf.
+        \vskip0pt\relax
+        \begin{itemize}
+          \item $x$-axis: wavelength ($\mu$m); $y$-axis: planet spectral flux density ($\mu$Jy).
+          \item Two black data points: F1280W (\emph{expected}, 12.8 $\mu$m) and F1500W (\emph{measured}, 15 $\mu$m).
+          \item Five model curves: blue: $503 \pm 27$ K dayside blackbody; orange: 400 K equilibrium with full heat redistribution; green: 508 K bare-rock prediction (zero albedo, no redistribution); cyan: 93-bar $\mathrm{CO_2}$-dominated atmosphere; magenta: 10-bar $\mathrm{O_2 + CO_2}$ atmosphere.
+          \item $\mathrm{CO_2}$ absorbs at $\sim 15$ $\mu$m; atmospheric models would suppress flux there.
+        \end{itemize}
+        \vskip0pt\relax
+        \keyresult{F1500W point sits on the \emph{bare-rock} blackbody and well above the atmospheric models. Rules out thick $\mathrm{CO_2}$-rich atmospheres on TRAPPIST-1 b. (L13.)}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── OSIRIS-REx ──────────────────────────────────────────────
