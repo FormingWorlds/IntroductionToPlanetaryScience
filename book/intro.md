@@ -30,3 +30,10 @@ These lecture notes accompany the course *Planetary Systems*, covering the forma
 ## About
 
 These notes are developed by [Tim Lichtenberg](https://timlichtenberg.net/) at the [Kapteyn Astronomical Institute](https://www.astro.rug.nl/). They are designed to be self-contained and do not require a separate textbook.
+
+## Reporting errors & typos
+
+If you find a mistake, an error, a typo, or a mislabelled figure anywhere in these notes or in the slide decks, please report it.
+Students taking the course and readers outside it are equally welcome to do so, and corrections of any size are useful.
+
+Either open an issue in the [GitHub repository](https://github.com/FormingWorlds/IntroductionToPlanetaryScience/issues), or send an email to [tim.lichtenberg@rug.nl](mailto:tim.lichtenberg@rug.nl).

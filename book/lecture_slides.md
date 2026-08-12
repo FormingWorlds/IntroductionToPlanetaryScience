@@ -2,9 +2,9 @@
 # Lecture Slides
 
 Downloadable PDF slide decks for each lecture.
-Each deck contains $\sim 60$--$90$ frames matching the lecture-notes structure on this site, with the same figures and the same blackboard derivations.
+Each deck contains the slides matching the lecture-notes structure on this site, with the same figures and the same blackboard derivations.
 
-The slides are designed for $90$ minute classroom delivery and complement, rather than duplicate, the written lecture notes.
+The slides are designed for an approximately $90$ minute classroom delivery and complement, rather than duplicate, the written lecture notes.
 For full prose and bibliography, use the lecture pages.
 For visual material in classroom format, use the slide decks.
 
@@ -24,24 +24,3 @@ For visual material in classroom format, use the slide decks.
 | 12 | {ref}`lecture12` | [Download (PDF)](_static/slides/lecture12.pdf) |
 | 13 | {ref}`lecture13` | [Download (PDF)](_static/slides/lecture13.pdf) |
 | 14 | {ref}`lecture14` | [Download (PDF)](_static/slides/lecture14.pdf) |
-
-The decks share a common visual style (custom Beamer theme `beamerthemeIPS`) and use AVIF figures rendered via XeLaTeX.
-LaTeX source for each deck lives at `slides/lectureNN/lectureNN.tex` in the [GitHub repository](https://github.com/FormingWorlds/IntroductionToPlanetaryScience).
-
-## Build instructions
-
-To rebuild a single deck locally:
-
-```bash
-cd slides
-make lectureNN  # e.g. make lecture09
-```
-
-To rebuild all decks at once:
-
-```bash
-make slides     # from project root
-```
-
-Both targets handle the AVIF $\rightarrow$ PNG conversion automatically.
-The build requires XeLaTeX with `fontspec` and `unicode-math` (TeX Live $\geq 2020$ is sufficient).

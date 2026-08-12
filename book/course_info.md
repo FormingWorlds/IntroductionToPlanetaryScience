@@ -13,14 +13,15 @@ The official course catalogue entry is maintained in [Ocasys](https://ocasys.rug
 | **Course code** | WBAS002-05 |
 | **Credits** | 5 ECTS |
 | **Level** | 2nd-year BSc Astronomy (Bachelor) |
-| **Faculty** | Science and Engineering (FSE) |
+| **Faculty** | [Science and Engineering (FSE)](https://www.rug.nl/fse/) |
 | **Institute** | [Kapteyn Astronomical Institute](https://www.astro.rug.nl/) |
 | **Language of instruction** | English |
 | **Period** | Semester 1a (September to November 2026) |
 | **Coordinator and lecturer** | dr. [Tim Lichtenberg](https://timlichtenberg.net/) |
 | **Guest lecturer** | dr. [Mara Attia](https://maraattia.github.io/) (they/them), Atmospheres I and II |
-| **Teaching assistants** | [Soumil Kelkar](https://research.rug.nl/en/persons/soumil-kelkar), [Imre Kisvárdai](https://research.rug.nl/en/persons/imre-kisvardai), [Emma Postolec](https://research.rug.nl/en/persons/emma-postolec), [Mariana Sastre](https://planetmariana.github.io/) |
+| **Teaching assistants** | [Mariana Sastre](https://planetmariana.github.io/), [Emma Postolec](https://research.rug.nl/en/persons/emma-postolec), [Soumil Kelkar](https://research.rug.nl/en/persons/soumil-kelkar), [Imre Kisvárdai](https://research.rug.nl/en/persons/imre-kisvardai) |
 | **Timetable** | [rooster.rug.nl](https://rooster.rug.nl/2026-2027?courseOffering=195171) |
+| **Contact** | [tim.lichtenberg@rug.nl](mailto:tim.lichtenberg@rug.nl) |
 
 ## Course description
 
@@ -53,7 +54,7 @@ No prior planetary science is assumed.
 
 The course is assessed by a single final written exam, which determines the full final grade (100%).
 A final grade of at least 5.5 is required to pass.
-The re-sit has the same format as the exam; if very few students are enrolled (fewer than four), an oral exam is offered instead.
+The re-sit has the same format as the exam; if very few students are enrolled, an oral exam is offered instead.
 
 The exam lasts two hours and has the same shape and level as the homework sheets, with approximately one question per lecture; not necessarily every lecture is covered, and some lectures may be combined into one question.
 It is closed book: a calculator and a pen are all that is needed.
