@@ -156,16 +156,27 @@
 \end{frame}
 
 \begin{frame}{Reading the disk schematic}
-  Gas in grayscale; solids drawn with \emph{exaggerated} sizes.
-  \vskip4pt\relax
-  \begin{itemize}
-    \item \textbf{Left half, what we observe}: emission lines ($\mathrm{CO}$ and others) from the warm surface; infrared scattered light from small grains in the atmosphere; (sub-)mm/cm continuum from large grains near the midplane.
-    \item \textbf{Right half, the vocabulary}: a gas \emph{atmosphere} holding small suspended grains, and a \emph{midplane} layer of gas plus larger solids.
-    \item \textbf{Flaring}: the disk gets vertically thicker, in relative terms, with distance.
-    \item \textbf{Settling}: bigger particles sink toward the midplane, so different wavelengths trace different heights \emph{and} different particle sizes.
-  \end{itemize}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.42\textheight, keepaspectratio]{andrews2020_disk_schematic}}
   \vskip2pt\relax
-  \keyresult{Every observation of a disk is a slice through this structure: know which slice before interpreting it.}
+  \small
+    Gas in grayscale; solids drawn with \emph{exaggerated} sizes.
+    \vskip2pt\relax
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item \textbf{Left half, what we observe}: emission lines ($\mathrm{CO}$ and others) from the warm surface; infrared scattered light from small grains in the atmosphere; (sub-)mm/cm continuum from large grains near the midplane.
+      \item \textbf{Right half, the vocabulary}: a gas \emph{atmosphere} holding small suspended grains, and a \emph{midplane} layer of gas plus larger solids.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Reading the disk schematic}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.42\textheight, keepaspectratio]{andrews2020_disk_schematic}}
+  \vskip2pt\relax
+  \small
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item \textbf{Flaring}: the disk gets vertically thicker, in relative terms, with distance.
+      \item \textbf{Settling}: bigger particles sink toward the midplane, so different wavelengths trace different heights \emph{and} different particle sizes.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Every observation of a disk is a slice through this structure: know which slice before interpreting it.}
 \end{frame}
 
 % ── Disk properties ─────────────────────────────────────────
@@ -215,16 +226,25 @@
 \end{frame}
 
 \begin{frame}{Reading the ice-line sequence}
-  Solid curve: C/O of the \emph{gas}. Dashed: C/O of the \emph{grains}. Dotted: the stellar value, solar C/O $= 0.54$.
-  \vskip4pt\relax
-  \begin{itemize}
-    \item $\mathrm{H_2O}$ ice line at $\sim 2$ AU: freezing out water \emph{lowers} grain C/O and \emph{raises} gas C/O.
-    \item Beyond the $\mathrm{CO_2}$ ice line at $\sim 10$ AU the gas reaches C/O $= 1$ and holds it out to the CO line at $\sim 40$ AU.
-    \item Beyond the CO line essentially all C and O are frozen onto grains, so grain C/O returns to the stellar value.
-    \item The exact $\mathrm{H_2O}$ line position is model-dependent, $\sim 2$--$3.5$ AU depending on the assumed temperature profile.
-  \end{itemize}
-  \vskip2pt\relax
-  \keyresult{A planet inherits the chemistry of its formation zone. Composition is a \emph{location} record, and we will use it as one in L12 and L13.}
+  \begin{columns}[c]
+    \begin{column}{0.34\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{oberg2011_snowlines}
+    \end{column}
+    \begin{column}{0.64\textwidth}
+      \footnotesize
+        Solid curve: C/O of the \emph{gas}. Dashed: C/O of the \emph{grains}. Dotted: the stellar value, solar C/O $= 0.54$.
+        \vskip2pt\relax
+        \begin{itemize}
+          \item $\mathrm{H_2O}$ ice line at $\sim 2$ AU: freezing out water \emph{lowers} grain C/O and \emph{raises} gas C/O.
+          \item Beyond the $\mathrm{CO_2}$ ice line at $\sim 10$ AU the gas reaches C/O $= 1$ and holds it out to the CO line at $\sim 40$ AU.
+          \item Beyond the CO line essentially all C and O are frozen onto grains, so grain C/O returns to the stellar value.
+          \item The exact $\mathrm{H_2O}$ line position is model-dependent, $\sim 2$--$3.5$ AU depending on the assumed temperature profile.
+        \end{itemize}
+        \vskip2pt\relax
+        \keyresult{A planet inherits the chemistry of its formation zone. Composition is a \emph{location} record, and we will use it as one in L12 and L13.}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── HL Tau hero ─────────────────────────────────────────────
@@ -235,16 +255,25 @@
 \end{frame}
 
 \begin{frame}{Reading HL Tau}
-  The 2014 image that reset expectations for how early structure appears.
-  \vskip4pt\relax
-  \begin{itemize}
-    \item Star age $\sim 1$ Myr: \textbf{young}, and already highly structured.
-    \item Concentric bright rings and dark gaps out to $\sim 100$ AU, resolved at AU scales.
-    \item Gaps \emph{may} be carved by forming planets, but ice lines and magnetically driven structures remain viable alternatives.
-    \item Either way: the dust is not smoothly distributed, and the conditions for planet formation are set early.
-  \end{itemize}
-  \vskip2pt\relax
-  {\footnotesize ALMA Partnership et al.\ (2015).}
+  \begin{columns}[c]
+    \begin{column}{0.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{hl_tau}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \small
+        The 2014 image that reset expectations for how early structure appears.
+        \vskip4pt\relax
+        \begin{itemize}
+          \item Star age $\sim 1$ Myr: \textbf{young}, and already highly structured.
+          \item Concentric bright rings and dark gaps out to $\sim 100$ AU, resolved at AU scales.
+          \item Gaps \emph{may} be carved by forming planets, but ice lines and magnetically driven structures remain viable alternatives.
+          \item Either way: the dust is not smoothly distributed, and the conditions for planet formation are set early.
+        \end{itemize}
+        \vskip2pt\relax
+        {\footnotesize ALMA Partnership et al.\ (2015).}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── DSHARP hero ─────────────────────────────────────────────
@@ -255,14 +284,23 @@
 \end{frame}
 
 \begin{frame}{Reading the DSHARP gallery}
-  \begin{itemize}
-    \item 20 nearby disks at $240$ GHz ($1.25$ mm), $\sim 5$ AU resolution.
-    \item Beam sizes (lower left) and $10$ AU scale bars (lower right) in each panel; the colour stretch is chosen to bring out faint substructure.
-    \item Rings and gaps appear in \emph{nearly every} disk, not just HL Tau.
-    \item \textbf{Caveat that matters}: the sample was deliberately biased toward the largest and brightest disks. Not every disk need be this richly structured.
-  \end{itemize}
-  \vskip4pt\relax
-  \keyresult{Substructure is the norm among bright disks, and it appears early. Whatever forms planets is already at work in the first Myr.}
+  \begin{columns}[c]
+    \begin{column}{0.34\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{dsharp_composite}
+    \end{column}
+    \begin{column}{0.64\textwidth}
+      \footnotesize
+        \begin{itemize}
+          \item 20 nearby disks at $240$ GHz ($1.25$ mm), $\sim 5$ AU resolution.
+          \item Beam sizes (lower left) and $10$ AU scale bars (lower right) in each panel; the colour stretch is chosen to bring out faint substructure.
+          \item Rings and gaps appear in \emph{nearly every} disk, not just HL Tau.
+          \item \textbf{Caveat that matters}: the sample was deliberately biased toward the largest and brightest disks. Not every disk need be this richly structured.
+        \end{itemize}
+        \vskip2pt\relax
+        \keyresult{Substructure is the norm among bright disks, and it appears early. Whatever forms planets is already at work in the first Myr.}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── Disk lifetimes ──────────────────────────────────────────
@@ -350,18 +388,27 @@
 \end{frame}
 
 \begin{frame}{Reading the growth-barrier map}
-  Axes: orbital distance against the largest grain size that can survive there.
-  \vskip4pt\relax
-  \begin{itemize}
-    \item \textbf{Red curves}: where collision speeds reach the bouncing ($v_{\mathrm{th}} = 1$ cm s$^{-1}$) or fragmentation ($1$ and $10$ m s$^{-1}$) thresholds.
-    \item \textbf{Blue curve}: the radial-drift limit. Above it, grains drift inward faster than they grow.
-    \item \textbf{Grey contours}: constant Stokes number, i.e.\ how tightly a particle couples to the gas.
-    \item \textbf{Black curves}: representative growth histories, running into whichever limit is lowest.
-  \end{itemize}
-  \vskip2pt\relax
-  Sticking stalls between tens of µm and dm; planetesimals are kilometres.
-  \vskip2pt\relax
-  \keyresult{The gap is not marginal. Incremental sticking is off by many orders of magnitude, so a \emph{collective} mechanism is required.}
+  \begin{columns}[c]
+    \begin{column}{0.28\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{drazkowska2023_growth_barriers}
+    \end{column}
+    \begin{column}{0.70\textwidth}
+      \footnotesize
+        Axes: orbital distance against the largest grain size that can survive there.
+        \vskip0pt\relax
+        \begin{itemize}
+          \item \textbf{Red curves}: where collision speeds reach the bouncing ($v_{\mathrm{th}} = 1$ cm s$^{-1}$) or fragmentation ($1$ and $10$ m s$^{-1}$) thresholds.
+          \item \textbf{Blue curve}: the radial-drift limit. Above it, grains drift inward faster than they grow.
+          \item \textbf{Grey contours}: constant Stokes number, i.e.\ how tightly a particle couples to the gas.
+          \item \textbf{Black curves}: representative growth histories, running into whichever limit is lowest.
+        \end{itemize}
+        \vskip0pt\relax
+        Sticking stalls between tens of µm and dm; planetesimals are kilometres.
+        \vskip0pt\relax
+        \keyresult{The gap is not marginal. Incremental sticking is off by many orders of magnitude, so a \emph{collective} mechanism is required.}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── Streaming instability ───────────────────────────────────
@@ -389,16 +436,25 @@
 \end{frame}
 
 \begin{frame}{Reading the streaming-instability snapshots}
-  Four snapshots, time increasing from top left to bottom right. Colour: particle surface density normalised to its mean, logarithmic scale. Axes in gas scale heights $H$.
-  \vskip4pt\relax
-  \begin{itemize}
-    \item \textbf{Early}: drag feedback has already organised the pebbles into loose, azimuthally extended \textbf{filaments}.
-    \item \textbf{Then}: the filaments merge and sharpen into one dominant dense band.
-    \item \textbf{Then}: the filaments fragment along their length under self-gravity.
-    \item \textbf{Final panel}: gravitationally bound clumps (red points) have collapsed into planetesimals.
-  \end{itemize}
-  \vskip4pt\relax
-  Note the scale: this is a \emph{local} box, a few scale heights across, not a whole disk. The instability is a midplane process.
+  \begin{columns}[c]
+    \begin{column}{0.34\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{simon2016_streaming}
+    \end{column}
+    \begin{column}{0.64\textwidth}
+      \footnotesize
+        Four snapshots, time increasing from top left to bottom right. Colour: particle surface density normalised to its mean, logarithmic scale. Axes in gas scale heights $H$.
+        \vskip2pt\relax
+        \begin{itemize}
+          \item \textbf{Early}: drag feedback has already organised the pebbles into loose, azimuthally extended \textbf{filaments}.
+          \item \textbf{Then}: the filaments merge and sharpen into one dominant dense band.
+          \item \textbf{Then}: the filaments fragment along their length under self-gravity.
+          \item \textbf{Final panel}: gravitationally bound clumps (red points) have collapsed into planetesimals.
+        \end{itemize}
+        \vskip2pt\relax
+        Note the scale: this is a \emph{local} box, a few scale heights across, not a whole disk. The instability is a midplane process.
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── Pebble accretion ────────────────────────────────────────
@@ -461,15 +517,26 @@
 \end{frame}
 
 \begin{frame}{Reading the formation roadmap}
-  Horizontal axis: body size, from sub-µm dust to gas giants. Reference bodies (Ceres, Moon, Mars, Earth, Jupiter) mark the scale.
-  \vskip4pt\relax
-  \begin{itemize}
-    \item \textbf{Grey bars}: the size range over which each process operates, in order: dust growth to pebbles, planetesimal formation, runaway and oligarchic growth, pebble accretion, giant impacts, gas accretion.
-    \item \textbf{Hatched bar}: giant impacts, the one process that \emph{continues after the gas disk has dispersed}.
-    \item \textbf{Red bands}: the two great obstacles. Radial drift at pebble-to-boulder sizes, and planet migration at planetary masses.
-  \end{itemize}
-  \vskip4pt\relax
-  \keyresult{The formation half of this lecture climbs this size axis from left to right; the right-hand red band, migration, is where we end today.}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.42\textheight, keepaspectratio]{drazkowska2023_roadmap}}
+  \vskip2pt\relax
+  \small
+    Horizontal axis: body size, from sub-µm dust to gas giants. Reference bodies (Ceres, Moon, Mars, Earth, Jupiter) mark the scale.
+    \vskip2pt\relax
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item \textbf{Grey bars}: the size range over which each process operates, in order: dust growth to pebbles, planetesimal formation, runaway and oligarchic growth, pebble accretion, giant impacts, gas accretion.
+      \item \textbf{Hatched bar}: giant impacts, the one process that \emph{continues after the gas disk has dispersed}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Reading the formation roadmap}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.42\textheight, keepaspectratio]{drazkowska2023_roadmap}}
+  \vskip2pt\relax
+  \small
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item \textbf{Red bands}: the two great obstacles. Radial drift at pebble-to-boulder sizes, and planet migration at planetary masses.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{The formation half of this lecture climbs this size axis from left to right; the right-hand red band, migration, is where we end today.}
 \end{frame}
 
 
@@ -540,16 +607,25 @@
 \end{frame}
 
 \begin{frame}{Reading the core-accretion curves}
-  Mass against time for a classic simulation of Jupiter's formation at $5.2$ AU.
-  \vskip4pt\relax
-  \begin{itemize}
-    \item \textbf{Solid line}: core mass. \textbf{Dash-dotted}: envelope mass. \textbf{Dashed}: total.
-    \item \textbf{Phase 1}: rapid core growth to $\sim 10\,\Mearth$.
-    \item \textbf{Phase 2}: a long plateau of slow, quasi-hydrostatic envelope growth. This phase sets the clock, and it is what must fit inside the disk lifetime.
-    \item \textbf{Phase 3}: runaway gas accretion, beginning at the \textbf{crossover point} where envelope mass overtakes core mass, at $2.3$ Myr in this run, reaching a Jupiter mass by $3$ Myr.
-  \end{itemize}
-  \vskip4pt\relax
-  \keyresult{Compare $3$ Myr here with the disk-lifetime plot: giant-planet formation only just fits inside the deadline.}
+  \begin{columns}[c]
+    \begin{column}{0.34\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{helled2014_core_accretion}
+    \end{column}
+    \begin{column}{0.64\textwidth}
+      \footnotesize
+        Mass against time for a classic simulation of Jupiter's formation at $5.2$ AU.
+        \vskip2pt\relax
+        \begin{itemize}
+          \item \textbf{Solid line}: core mass. \textbf{Dash-dotted}: envelope mass. \textbf{Dashed}: total.
+          \item \textbf{Phase 1}: rapid core growth to $\sim 10\,\Mearth$.
+          \item \textbf{Phase 2}: a long plateau of slow, quasi-hydrostatic envelope growth. This phase sets the clock, and it is what must fit inside the disk lifetime.
+          \item \textbf{Phase 3}: runaway gas accretion, beginning at the \textbf{crossover point} where envelope mass overtakes core mass, at $2.3$ Myr in this run, reaching a Jupiter mass by $3$ Myr.
+        \end{itemize}
+        \vskip2pt\relax
+        \keyresult{Compare $3$ Myr here with the disk-lifetime plot: giant-planet formation only just fits inside the deadline.}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── Gravitational instability ───────────────────────────────
@@ -665,14 +741,25 @@
 \end{frame}
 
 \begin{frame}{Reading the solar-system architecture}
-  Logarithmic semi-major axis. Symbol areas scale as $\log(1 + R/\Rearth)$ so that small bodies stay visible.
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.50\textheight, keepaspectratio]{solar_system_architecture}}
   \vskip4pt\relax
-  \begin{itemize}
-    \item \textbf{Main belt} shaded at $2.1$--$3.3$ AU; \textbf{classical Kuiper Belt} at $30$--$50$ AU.
-    \item The $2.5$--$3.5$ AU band marks where the solar nebula's \textbf{water snow line} lay: rocky planets inside, gas and ice giants outside.
-    \item Note how much of the system is empty. The eight planets occupy a handful of decades in radius.
-    \item This is the structure the first half of the lecture had to produce, and the second half will rearrange.
-  \end{itemize}
+  \small
+    Logarithmic semi-major axis. Symbol areas scale as $\log(1 + R/\Rearth)$ so that small bodies stay visible.
+    \vskip4pt\relax
+    \begin{itemize}
+      \item \textbf{Main belt} shaded at $2.1$--$3.3$ AU; \textbf{classical Kuiper Belt} at $30$--$50$ AU.
+      \item The $2.5$--$3.5$ AU band marks where the solar nebula's \textbf{water snow line} lay: rocky planets inside, gas and ice giants outside.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Reading the solar-system architecture}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.50\textheight, keepaspectratio]{solar_system_architecture}}
+  \vskip4pt\relax
+  \small
+    \begin{itemize}
+      \item Note how much of the system is empty. The eight planets occupy a handful of decades in radius.
+      \item This is the structure the first half of the lecture had to produce, and the second half will rearrange.
+    \end{itemize}
 \end{frame}
 
 % ── Orbital elements table ──────────────────────────────────
@@ -939,14 +1026,23 @@
 \end{frame}
 
 \begin{frame}{Reading the vis-viva curves}
-  Speed against distance for the two orbits just computed. Filled circles mark perihelion and aphelion.
-  \vskip4pt\relax
-  \begin{itemize}
-    \item \textbf{Earth}: a short, almost flat segment near $30$ km s$^{-1}$. Nearly circular means nearly constant speed.
-    \item \textbf{Halley}: a steep curve spanning $54.5$ km s$^{-1}$ down to $0.91$ km s$^{-1}$.
-    \item Both curves obey the \emph{same} equation with the \emph{same} $GM$. Only $a$ and $e$ differ.
-    \item The curves never cross: at any shared $r$, $v^2$ differs by the \emph{constant} $GM(1/a_{\oplus} - 1/a_{\mathrm{H}})$, so the larger-$a$ orbit is faster. Passing Earth's orbit, Halley moves at $41.5$ km s$^{-1}$ against Earth's $29.8$.
-  \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{visviva_earth_halley}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \small
+        Speed against distance for the two orbits just computed. Filled circles mark perihelion and aphelion.
+        \vskip4pt\relax
+        \begin{itemize}
+          \item \textbf{Earth}: a short, almost flat segment near $30$ km s$^{-1}$. Nearly circular means nearly constant speed.
+          \item \textbf{Halley}: a steep curve spanning $54.5$ km s$^{-1}$ down to $0.91$ km s$^{-1}$.
+          \item Both curves obey the \emph{same} equation with the \emph{same} $GM$. Only $a$ and $e$ differ.
+          \item The curves never cross: at any shared $r$, $v^2$ differs by the \emph{constant} $GM(1/a_{\oplus} - 1/a_{\mathrm{H}})$, so the larger-$a$ orbit is faster. Passing Earth's orbit, Halley moves at $41.5$ km s$^{-1}$ against Earth's $29.8$.
+        \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 
@@ -1028,14 +1124,25 @@
 \end{frame}
 
 \begin{frame}{Reading the Laplace resonance}
-  \begin{itemize}
-    \item \textbf{Panel (a)}: the three orbits to scale, drawn at a Europa--Ganymede conjunction. The resonance locks the phases so that Io is always on the \emph{opposite side of Jupiter} at those conjunctions.
-    \item Consequence, and a common misconception to avoid: a \textbf{triple conjunction never occurs}. The three moons are never lined up together.
-    \item \textbf{Panel (b)}: the periods in their $1 : 2 : 4$ ratio. The pattern of successive conjunctions repeats every Ganymede period, that is, every four Io orbits.
-    \item The periodic kicks arrive always at the same phase, which is what sustains Io's $e \approx 0.004$ against tidal damping.
-  \end{itemize}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.38\textheight, keepaspectratio]{laplace_resonance}}
   \vskip2pt\relax
-  \keyresult{An eccentricity of $0.004$ sounds negligible. It is the reason Io is the most volcanically active body in the solar system.}
+  \footnotesize
+    \begin{itemize}
+      \item \textbf{Panel (a)}: the three orbits to scale, drawn at a Europa--Ganymede conjunction. The resonance locks the phases so that Io is always on the \emph{opposite side of Jupiter} at those conjunctions.
+      \item Consequence, and a common misconception to avoid: a \textbf{triple conjunction never occurs}. The three moons are never lined up together.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Reading the Laplace resonance}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.38\textheight, keepaspectratio]{laplace_resonance}}
+  \vskip2pt\relax
+  \footnotesize
+    \begin{itemize}
+      \item \textbf{Panel (b)}: the periods in their $1 : 2 : 4$ ratio. The pattern of successive conjunctions repeats every Ganymede period, that is, every four Io orbits.
+      \item The periodic kicks arrive always at the same phase, which is what sustains Io's $e \approx 0.004$ against tidal damping.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{An eccentricity of $0.004$ sounds negligible. It is the reason Io is the most volcanically active body in the solar system.}
 \end{frame}
 
 % ── Io ──────────────────────────────────────────────────────
@@ -1103,16 +1210,27 @@
 \end{frame}
 
 \begin{frame}{Tidal locking}
-  Over time the tidal torque slows the faster-spinning body until its rotation period equals its orbital period: \textbf{synchronous rotation}.
-  \vskip4pt\relax
-  \begin{itemize}
-    \item \textbf{Panel (a)}, free rotation: spin and orbital periods differ, so the moon shows different faces to the planet (P) over one orbit. The black surface marker and the body-fixed axis (red arrow) decouple from the direction to P.
-    \item \textbf{Panel (b)}, \textbf{synchronous rotation}: the periods are equal, so the marker, and with it the tidal bulge, always faces the planet.
-    \item With the bulge aligned, the torque vanishes and the configuration is stable.
-    \item The Moon reached this state through billions of years of dissipation. All four Galilean moons are locked to Jupiter; most large moons in the solar system are synchronous rotators.
-  \end{itemize}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.42\textheight, keepaspectratio]{tidal_locking}}
   \vskip2pt\relax
-  {\footnotesize Murray \& Dermott (1999).}
+  \small
+    Over time the tidal torque slows the faster-spinning body until its rotation period equals its orbital period: \textbf{synchronous rotation}.
+    \vskip2pt\relax
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item \textbf{Panel (a)}, free rotation: spin and orbital periods differ, so the moon shows different faces to the planet (P) over one orbit. The black surface marker and the body-fixed axis (red arrow) decouple from the direction to P.
+      \item \textbf{Panel (b)}, \textbf{synchronous rotation}: the periods are equal, so the marker, and with it the tidal bulge, always faces the planet.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Tidal locking}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.42\textheight, keepaspectratio]{tidal_locking}}
+  \vskip2pt\relax
+  \small
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item With the bulge aligned, the torque vanishes and the configuration is stable.
+      \item The Moon reached this state through billions of years of dissipation. All four Galilean moons are locked to Jupiter; most large moons in the solar system are synchronous rotators.
+    \end{itemize}
+    \vskip2pt\relax
+    {\footnotesize Murray \& Dermott (1999).}
 \end{frame}
 
 % ── Locking is not the end of heating ───────────────────────
@@ -1156,14 +1274,25 @@
 \end{frame}
 
 \begin{frame}{Reading the Roche geometry}
-  \begin{itemize}
-    \item \textbf{Panel (a)}: a fluid satellite is rounded at a safe distance. At $d_R$ the differential tidal acceleration between its centre and its surface exceeds its own self-gravity, and it is stretched and torn apart along the line to the primary.
-    \item \textbf{Panel (b)}: tidal acceleration compared with surface self-gravity for a $200$ km icy body, against distance from Saturn in units of $R_p$.
-    \item The simple \textbf{crossing} of the two curves gives the \emph{rigid} limit, $d_R^{\mathrm{rigid}} \approx 1.11\,R_p$ for $\rho_s = 1000$ kg m$^{-3}$.
-    \item The textbook \emph{fluid} limit, $d_R \approx 2.17\,R_p$ (red dotted), lies further out because it adds the tidal \textbf{deformation} of the satellite, which weakens it further.
-  \end{itemize}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.38\textheight, keepaspectratio]{roche_geometry}}
   \vskip2pt\relax
-  \keyresult{Two limits, a factor of two apart. Which one applies depends on whether the body can hold its shape, so real bodies fall between them.}
+  \footnotesize
+    \begin{itemize}
+      \item \textbf{Panel (a)}: a fluid satellite is rounded at a safe distance. At $d_R$ the differential tidal acceleration between its centre and its surface exceeds its own self-gravity, and it is stretched and torn apart along the line to the primary.
+      \item \textbf{Panel (b)}: tidal acceleration compared with surface self-gravity for a $200$ km icy body, against distance from Saturn in units of $R_p$.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Reading the Roche geometry}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.38\textheight, keepaspectratio]{roche_geometry}}
+  \vskip2pt\relax
+  \footnotesize
+    \begin{itemize}
+      \item The simple \textbf{crossing} of the two curves gives the \emph{rigid} limit, $d_R^{\mathrm{rigid}} \approx 1.11\,R_p$ for $\rho_s = 1000$ kg m$^{-3}$.
+      \item The textbook \emph{fluid} limit, $d_R \approx 2.17\,R_p$ (red dotted), lies further out because it adds the tidal \textbf{deformation} of the satellite, which weakens it further.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Two limits, a factor of two apart. Which one applies depends on whether the body can hold its shape, so real bodies fall between them.}
 \end{frame}
 
 % ── Saturn numbers ──────────────────────────────────────────
@@ -1248,14 +1377,23 @@
 \end{frame}
 
 \begin{frame}{Reading the disk-flow figure}
-  A planet of mass ratio $q = 10^{-4}$, Neptune-like, on a circular orbit.
-  \vskip4pt\relax
-  \begin{itemize}
-    \item \textbf{Top panel}: the planet launches a one-armed \textbf{spiral density wave}. Colour is surface density relative to unperturbed.
-    \item Note what is absent: \textbf{no gap}. At this mass the planet perturbs the disk without clearing it, which is the definition of the Type I regime.
-    \item \textbf{Bottom panel}: zoom on the co-orbital region, with schematic streamlines showing the \textbf{horseshoe trajectories} and the flows feeding the spiral wave.
-    \item The imbalance between inner and outer wave torques, plus the corotation torque from the horseshoe region, sets both the direction and the speed.
-  \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.34\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{paardekooper2023_disk_flow}
+    \end{column}
+    \begin{column}{0.64\textwidth}
+      \footnotesize
+        A planet of mass ratio $q = 10^{-4}$, Neptune-like, on a circular orbit.
+        \vskip2pt\relax
+        \begin{itemize}
+          \item \textbf{Top panel}: the planet launches a one-armed \textbf{spiral density wave}. Colour is surface density relative to unperturbed.
+          \item Note what is absent: \textbf{no gap}. At this mass the planet perturbs the disk without clearing it, which is the definition of the Type I regime.
+          \item \textbf{Bottom panel}: zoom on the co-orbital region, with schematic streamlines showing the \textbf{horseshoe trajectories} and the flows feeding the spiral wave.
+          \item The imbalance between inner and outer wave torques, plus the corotation torque from the horseshoe region, sets both the direction and the speed.
+        \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── Nice model ──────────────────────────────────────────────
@@ -1280,14 +1418,25 @@
 \end{frame}
 
 \begin{frame}{Reading the jumping-Jupiter simulation}
-  \begin{itemize}
-    \item \textbf{Panel (a)}: semi-major axes vs time for five giants in a compact resonant chain, with an extra ice giant (magenta) between Saturn and Uranus. Dashed lines mark today's values.
-    \item At the instability, $\sim 6$ Myr in, the extra ice giant is scattered off Jupiter and \textbf{ejected}; Uranus and Neptune move outward onto their present orbits.
-    \item \textbf{Panel (b)}: the Saturn/Jupiter period ratio starts near the 3:2 value of $1.5$, drifts up through planetesimal-driven migration, then \textbf{jumps} from $\approx 1.7$ to $\approx 2.4$ in under $10^5$ yr, approaching today's $2.49$.
-    \item \textbf{The shaded band}, $2.1 \lesssim P_{\mathrm{Sat}}/P_{\mathrm{Jup}} \lesssim 2.3$: crossing it \emph{slowly} would activate secular resonances that excite the belt and the terrestrial orbits.
-  \end{itemize}
-  \vskip1pt\relax
-  \keyresult{Avoiding that band is the central argument for jumping Jupiter over the smooth 2:1 crossing; the evidence is the solar system we have.}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.38\textheight, keepaspectratio]{nesvorny2018_nice}}
+  \vskip2pt\relax
+  \footnotesize
+    \begin{itemize}
+      \item \textbf{Panel (a)}: semi-major axes vs time for five giants in a compact resonant chain, with an extra ice giant (magenta) between Saturn and Uranus. Dashed lines mark today's values.
+      \item At the instability, $\sim 6$ Myr in, the extra ice giant is scattered off Jupiter and \textbf{ejected}; Uranus and Neptune move outward onto their present orbits.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Reading the jumping-Jupiter simulation}
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.38\textheight, keepaspectratio]{nesvorny2018_nice}}
+  \vskip2pt\relax
+  \footnotesize
+    \begin{itemize}
+      \item \textbf{Panel (b)}: the Saturn/Jupiter period ratio starts near the 3:2 value of $1.5$, drifts up through planetesimal-driven migration, then \textbf{jumps} from $\approx 1.7$ to $\approx 2.4$ in under $10^5$ yr, approaching today's $2.49$.
+      \item \textbf{The shaded band}, $2.1 \lesssim P_{\mathrm{Sat}}/P_{\mathrm{Jup}} \lesssim 2.3$: crossing it \emph{slowly} would activate secular resonances that excite the belt and the terrestrial orbits.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Avoiding that band is the central argument for jumping Jupiter over the smooth 2:1 crossing; the evidence is the solar system we have.}
 \end{frame}
 
 % ── Grand Tack ──────────────────────────────────────────────
@@ -1315,12 +1464,21 @@
 \end{frame}
 
 \begin{frame}{Reading the Grand Tack tracks}
-  \begin{itemize}
-    \item \textbf{Top panel}: mass growth of the four giant planets during the disk phase.
-    \item \textbf{Bottom panel}: semi-major axis against time, each curve labelled with its planet.
-    \item Follow Jupiter: inward to $\sim 1.5$ AU, then the \textbf{reversal} once Saturn catches up and the 3:2 resonance locks them together, then outward.
-    \item \textbf{Important caveat}: these tracks are the migration \emph{prescription imposed} on the planets in the reference simulation, following the inward-then-outward path found in hydrodynamical studies. The figure shows the scenario, not a derivation of it.
-  \end{itemize}
+  \begin{columns}[c]
+    \begin{column}{0.42\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{walsh2011_grand_tack}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \small
+        \begin{itemize}
+          \item \textbf{Top panel}: mass growth of the four giant planets during the disk phase.
+          \item \textbf{Bottom panel}: semi-major axis against time, each curve labelled with its planet.
+          \item Follow Jupiter: inward to $\sim 1.5$ AU, then the \textbf{reversal} once Saturn catches up and the 3:2 resonance locks them together, then outward.
+          \item \textbf{Important caveat}: these tracks are the migration \emph{prescription imposed} on the planets in the reference simulation, following the inward-then-outward path found in hydrodynamical studies. The figure shows the scenario, not a derivation of it.
+        \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 % ── Hot Jupiters ────────────────────────────────────────────
@@ -1350,14 +1508,23 @@
 \end{frame}
 
 \begin{frame}{Reading the mass--period diagram}
-  \begin{itemize}
-    \item Every confirmed planet with a measured mass and period, colour-coded by \textbf{detection method}. The method boundaries are selection effects, not physics: remember that before reading structure into the plot.
-    \item \textbf{Black stars}: the eight Solar System planets, for reference.
-    \item \textbf{Red circles}: hot Jupiters, selected here as $M > 0.1\,\Mjup$ and $P < 10$ d (dotted lines).
-    \item That clump sits where no planet should be able to form. It is the population that made migration unavoidable in the theory.
-  \end{itemize}
-  \vskip4pt\relax
-  \keyresult{Our solar system has no hot Jupiter. Whether that makes it unusual is a question we can only ask now that we have the comparison sample (L13).}
+  \begin{columns}[c]
+    \begin{column}{0.34\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{hot_jupiter_mass_period}
+    \end{column}
+    \begin{column}{0.64\textwidth}
+      \footnotesize
+        \begin{itemize}
+          \item Every confirmed planet with a measured mass and period, colour-coded by \textbf{detection method}. The method boundaries are selection effects, not physics: remember that before reading structure into the plot.
+          \item \textbf{Black stars}: the eight Solar System planets, for reference.
+          \item \textbf{Red circles}: hot Jupiters, selected here as $M > 0.1\,\Mjup$ and $P < 10$ d (dotted lines).
+          \item That clump sits where no planet should be able to form. It is the population that made migration unavoidable in the theory.
+        \end{itemize}
+        \vskip2pt\relax
+        \keyresult{Our solar system has no hot Jupiter. Whether that makes it unusual is a question we can only ask now that we have the comparison sample (L13).}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 
@@ -1479,8 +1646,10 @@
   \vfill
   \begin{center}
     {\color{white}\LARGE\bfseries Questions?}\\[14pt]
-    {\color{white!85}\large Next: Lecture 3, Planetary heat \& energy transport}\\[20pt]
-    {\color{white!70}\small \texttt{https://ips.formingworlds.space/}}
+    {\color{white!85}\large Next: Lecture 3, Planetary heat \& energy transport}\\[4pt]
+    {\color{white!85}\small Mon 14 Sep, 15:00--17:00, room 5419.0161 (Collegezaal)}\\[12pt]
+    {\color{white!85}\small Next tutorial: Fri 11 Sep, 13:00--15:00, room 5419.0161 (Collegezaal)}\\[20pt]
+    {\color{white!70}\small \texttt{https://ips.formingworlds.space}}
   \end{center}
   \vfill
 \end{frame}
