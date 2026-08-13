@@ -945,17 +945,41 @@
 \end{frame}
 
 % ── Step 3 ──────────────────────────────────────────────────
-\begin{frame}{Step 3: solve for the total energy}
-  Substituting the speed ratio back into the energy equation and simplifying (the algebra is a good exercise; do it):
-  \vskip8pt\relax
+\begin{frame}{Step 3: eliminate $v_p$}
+  Substitute $v_p = v_a\,\frac{1+e}{1-e}$ from Step 2 into the energy equality of Step 1 (divided through by $m$), and collect kinetic left, potential right:
+  \[
+    \frac{1}{2}v_a^2\left[\frac{(1+e)^2 - (1-e)^2}{(1-e)^2}\right] = \frac{GM}{a}\left[\frac{1}{1-e} - \frac{1}{1+e}\right]
+  \]
+  \vskip4pt\relax
+  Both brackets collapse: $(1+e)^2 - (1-e)^2 = 4e$ and $\frac{1}{1-e} - \frac{1}{1+e} = \frac{2e}{(1-e)(1+e)}$:
+  \[
+    \frac{2e\,v_a^2}{(1-e)^2} = \frac{GM}{a}\,\frac{2e}{(1-e)(1+e)}
+    \quad \Longrightarrow \quad
+    v_a^2 = \frac{GM}{a}\,\frac{1-e}{1+e}
+  \]
+  \vskip4pt\relax
+  {\footnotesize (Taking $e \neq 0$; for $e = 0$ the apsides coincide, the orbit is circular, and the L1 force balance gives the result of Step 4 directly.)}
+\end{frame}
+
+% ── Step 3, continued ───────────────────────────────────────
+\begin{frame}{Step 3, continued: the total energy}
+  Insert $v_a^2$ into the energy evaluated at aphelion:
+  \[
+    \frac{E}{m} = \frac{1}{2}v_a^2 - \frac{GM}{a(1+e)}
+    = \frac{GM}{2a}\,\frac{1-e}{1+e} - \frac{GM}{a(1+e)}
+  \]
+  \[
+    = \frac{GM}{a(1+e)}\left[\frac{1-e}{2} - 1\right]
+    = -\frac{GM}{a(1+e)}\,\frac{1+e}{2}
+  \]
+  \vskip6pt\relax
   \[
     \boxed{\; E = -\frac{GMm}{2a} \;}
   \]
-  \vskip8pt\relax
+  \vskip6pt\relax
   \begin{itemize}
     \item The eccentricity has \textbf{cancelled}.
     \item $E < 0$ for any bound orbit, and $E \to 0$ as $a \to \infty$.
-    \item A remarkable result for how little it costs: two conservation laws, evaluated at two convenient points.
   \end{itemize}
 \end{frame}
 

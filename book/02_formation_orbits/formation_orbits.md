@@ -258,7 +258,7 @@ As we saw in {ref}`Lecture 1 <lecture01>`, Newton showed that all three laws fol
 :width: 500px
 :align: center
 
-Illustration of Kepler's three laws of planetary motion. (1) Orbits are ellipses with the Sun at one focus; (2) the radius vector sweeps out equal areas in equal times (shaded regions have equal area); (3) the period-squared is proportional to the semi-major axis cubed. Credit: Hankwang, [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/).
+Illustration of Kepler's three laws of planetary motion. (1) Orbits are ellipses with the Sun at one focus; (2) the radius vector sweeps out equal areas in equal times (shaded regions have equal area); (3) the period-squared is proportional to the semi-major axis cubed. Redrawn after Hankwang (Wikimedia Commons), [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/).
 ```
 
 ```{figure} figures/solar_system_architecture.avif
@@ -384,7 +384,38 @@ Therefore $v_p / v_a = (1+e)/(1-e)$.
 
 **Step 3: Solve for the total energy.**
 
-Substituting back and solving (the algebra is left as an exercise; try it!), we find:
+Substitute $v_p = v_a\,(1+e)/(1-e)$ from Step 2 into the energy equality of Step 1, after dividing every term by $m$:
+
+$$
+\frac{1}{2}v_a^2\,\frac{(1+e)^2}{(1-e)^2} - \frac{GM}{a(1-e)} = \frac{1}{2}v_a^2 - \frac{GM}{a(1+e)}
+$$
+
+Collect the kinetic terms on the left and the potential terms on the right:
+
+$$
+\frac{1}{2}v_a^2\left[\frac{(1+e)^2 - (1-e)^2}{(1-e)^2}\right] = \frac{GM}{a}\left[\frac{1}{1-e} - \frac{1}{1+e}\right]
+$$
+
+Both brackets collapse: $(1+e)^2 - (1-e)^2 = 4e$, and $1/(1-e) - 1/(1+e) = 2e/[(1-e)(1+e)]$, so
+
+$$
+\frac{2e\,v_a^2}{(1-e)^2} = \frac{GM}{a}\,\frac{2e}{(1-e)(1+e)}
+$$
+
+Divide both sides by $2e/(1-e)^2$ (taking $e \neq 0$; for $e = 0$ the two apsides coincide, the orbit is circular, and the result of Step 4 follows directly from the force balance of {ref}`Lecture 1 <lecture01>`):
+
+$$
+v_a^2 = \frac{GM}{a}\,\frac{1-e}{1+e}
+$$
+
+Insert this into the total energy evaluated at aphelion:
+
+$$
+\begin{aligned}
+\frac{E}{m} &= \frac{1}{2}v_a^2 - \frac{GM}{a(1+e)} = \frac{GM}{2a}\,\frac{1-e}{1+e} - \frac{GM}{a(1+e)} \\
+&= \frac{GM}{a(1+e)}\left[\frac{1-e}{2} - 1\right] = -\frac{GM}{a(1+e)}\,\frac{1+e}{2}
+\end{aligned}
+$$
 
 $$
 E = -\frac{GMm}{2a}
