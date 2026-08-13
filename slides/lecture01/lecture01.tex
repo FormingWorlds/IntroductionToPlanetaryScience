@@ -151,8 +151,7 @@
   \begin{tikzpicture}[remember picture, overlay]
     \node[anchor=north east, xshift=-6pt, yshift=-6pt, fill=ipsAccent,
           rounded corners=3pt, inner sep=5pt, align=center] at (current page.north east) {%
-      {\color{white}\footnotesize\bfseries Download the worksheets:}\\[1pt]
-      \href{https://ips.formingworlds.space/worksheets.html}{\color{white}\scriptsize\texttt{ips.formingworlds.space/worksheets.html}}%
+      \href{https://ips.formingworlds.space/worksheets.html}{\color{white}\footnotesize\bfseries\texttt{ips.formingworlds.space/worksheets.html}}%
     };
   \end{tikzpicture}%
   \textbf{Worksheets:} seven problem sets, one per two-lecture block.
@@ -177,8 +176,7 @@
   \begin{tikzpicture}[remember picture, overlay]
     \node[anchor=north east, xshift=-6pt, yshift=-6pt, fill=ipsAccent,
           rounded corners=3pt, inner sep=5pt, align=center] at (current page.north east) {%
-      {\color{white}\footnotesize\bfseries Download the mock exams:}\\[1pt]
-      \href{https://ips.formingworlds.space/mock_exams.html}{\color{white}\scriptsize\texttt{ips.formingworlds.space/mock\_exams.html}}%
+      \href{https://ips.formingworlds.space/mock_exams.html}{\color{white}\footnotesize\bfseries\texttt{ips.formingworlds.space/mock\_exams.html}}%
     };
   \end{tikzpicture}%
   \begin{itemize}
@@ -298,8 +296,8 @@
 % ── eta_Earth hero ──────────────────────────────────────────
 \begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.80\paperheight, keepaspectratio]{eta_earth_posterior}}\\
-  {\footnotesize Posterior on $\eta_\oplus$ from Kepler. Conservative (left) vs.\ optimistic (right) habitable zones. From Bryson et al.\ (2021).}
+  \makebox[\linewidth][c]{\includegraphics[width=0.94\paperwidth, height=0.80\paperheight, keepaspectratio]{eta_earth_posterior_conservative}}\\
+  {\footnotesize Posterior on $\eta_\oplus$ from Kepler, for the conservative habitable zone. From Bryson et al.\ (2021).}
 \end{frame}
 
 \begin{frame}{Reading the $\eta_\oplus$ posterior}
@@ -313,10 +311,10 @@
         \textbf{$\eta_\oplus$}: average number of rocky habitable-zone planets per Sun-like star.
         \vskip0pt\relax
         \begin{itemize}
-          \item \textbf{Left:} \emph{conservative} HZ (moist-greenhouse $\to$ maximum-greenhouse). Liquid water reliably maintained.
-          \item \textbf{Right:} \emph{optimistic} HZ (recent-Venus $\to$ early-Mars). Wider, includes transient surface water.
+          \item Shown: \emph{conservative} HZ (moist-greenhouse $\to$ maximum-greenhouse). Liquid water reliably maintained.
+          \item The \emph{optimistic} HZ (recent-Venus $\to$ early-Mars) is wider and includes transient surface water.
           \item Two coloured posteriors bracket the completeness extrapolation past Kepler's 500-day limit: blue $=$ constant (\emph{lower} bound); orange $=$ drops to zero (\emph{upper} bound).
-          \item Diamonds above each panel: \textbf{posterior medians + 68\% credible intervals.}
+          \item Diamonds above the panel: \textbf{posterior medians + 68\% credible intervals.}
           \item Conservative HZ: $\eta_\oplus \approx 0.37 \to 0.60$. Optimistic HZ: $0.58 \to 0.88$.
         \end{itemize}
         \vskip0pt\relax
@@ -1243,7 +1241,8 @@
 \begin{frame}{Selected landmark planetary missions}
   \centering
   \scriptsize
-  \setlength{\tabcolsep}{2.8pt}
+  \setlength{\tabcolsep}{2.0pt}
+  \renewcommand{\arraystretch}{0.9}
   \begin{tabular}{lllll}
     \toprule
     Mission & Agency & Year(s) & Target & Key achievement \\
@@ -1254,13 +1253,20 @@
     Venera 7      & USSR      & 1970      & Venus       & First successful planetary landing \\
     Viking 1/2    & NASA      & 1976      & Mars        & First Mars landers; life-detection tests \\
     Voyager 1/2   & NASA      & 1977--89  & Outer pl.\  & Grand tour of the four giant planets \\
+    Giotto        & ESA       & 1986      & 1P/Halley   & First close-up images of a comet nucleus \\
     Galileo       & NASA      & 1995--2003& Jupiter     & First Jupiter orbiter; Europa's ocean \\
+    Mars Express  & ESA       & 2003--    & Mars        & First ESA planetary orbiter; subsurface ice \\
     Cassini-Huygens & NASA/ESA & 2004--17 & Saturn     & Huygens lands on Titan; Enceladus plumes \\
     Spirit / Opp.\ & NASA     & 2004--18  & Mars        & Long-duration rovers; past-water evidence \\
+    Venus Express & ESA       & 2006--14  & Venus       & Long-term monitoring of Venus's atmosphere \\
+    Rosetta / Philae & ESA    & 2014--16  & 67P         & First comet orbiter; first comet landing \\
     New Horizons  & NASA      & 2015      & Pluto       & First Pluto flyby; geological complexity \\
     Hayabusa2     & JAXA      & 2014--20  & Ryugu       & Returned carbonaceous-asteroid sample \\
+    Juno          & NASA      & 2016--25  & Jupiter     & First Jupiter polar orbiter; deep interior \\
+    BepiColombo   & ESA/JAXA  & 2018--    & Mercury     & Two orbiters; Mercury arrival Nov 2026 \\
     Perseverance  & NASA      & 2021--    & Mars        & Sample caching; Ingenuity helicopter \\
     JWST          & NASA/ESA/CSA & 2021-- & Exoplanets  & Atmospheric characterisation \\
+    Chang'e 6     & CNSA      & 2024      & Moon        & First lunar far-side sample return \\
     Europa Clipper& NASA      & 2024--    & Europa      & Habitability of Europa's ocean \\
     \bottomrule
   \end{tabular}
@@ -1521,8 +1527,10 @@
   \vfill
   \begin{center}
     {\color{white}\LARGE\bfseries Questions?}\\[14pt]
-    {\color{white!85}\large Next: Lecture 2, Protoplanetary disks \& orbital dynamics}\\[20pt]
-    {\color{white!70}\small \texttt{https://ips.formingworlds.space/}}
+    {\color{white!85}\large Next: Lecture 2, Protoplanetary disks \& orbital dynamics}\\[4pt]
+    {\color{white!85}\small Thu 10 Sep, 11:00--13:00, room 5419.0161 (Collegezaal)}\\[12pt]
+    {\color{white!85}\small Next tutorial: Fri 11 Sep, 13:00--15:00, room 5419.0161 (Collegezaal)}\\[20pt]
+    {\color{white!70}\small \texttt{https://ips.formingworlds.space}}
   \end{center}
   \vfill
 \end{frame}
