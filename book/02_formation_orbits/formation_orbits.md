@@ -121,7 +121,7 @@ In the dense midplane of the disk, dust grains collide due to Brownian motion, t
 :width: 500px
 :align: center
 
-Microgravity laboratory experiments on the earliest stage of dust coagulation. Inset: fractal aggregates (fractal dimension $D \approx 1.4$) of $1.9$ µm $\mathrm{SiO_2}$ monomers grown in space-shuttle experiments. Main panel: mean aggregate mass, in units of the monomer mass, versus time in units of the monomer collision timescale; the experimental points follow the solution of a monodisperse Smoluchowski coagulation model (curve) under Brownian-motion-driven sticking. Reproduced from {cite:t}`Blum2008`, Fig. 2.
+Microgravity laboratory experiments on the earliest stage of dust coagulation. Inset: fractal aggregates (fractal dimension $D \approx 1.4$) of $1.9$ µm $\mathrm{SiO_2}$ monomers grown in space-shuttle experiments. Main panel: mean aggregate mass, in units of the monomer mass, versus time in units of the monomer collision timescale; the experimental points follow the solution of a monodisperse Smoluchowski coagulation model (curve) under Brownian-motion-driven sticking. Redrawn from {cite:t}`Blum2008`, Fig. 2; the data points and the model curve are digitized from the published figure.
 ```
 
 ### Growth barriers
@@ -167,7 +167,7 @@ Once planetesimals exist, those that are large enough can grow efficiently by sw
 :width: 500px
 :align: center
 
-Pebble trajectories around a growing planetary embryo, in the frame co-moving with the embryo (axes in units of the Hill radius $r_{\mathrm{H}}$; the red circle marks the Hill sphere, inside which the embryo's gravity dominates over the stellar tide). Line styles distinguish three dimensionless friction times ($\tau_{\mathrm{f}} = 0.01$, $0.1$, $1$), i.e. increasing degrees of decoupling from the gas. Gas drag causes pebbles entering the Hill sphere to lose angular momentum and spiral onto the embryo, enlarging the effective accretion cross-section far beyond the geometric value and allowing cores to reach $\sim 10\,\Mearth$ within the disk lifetime. Adapted from {cite:t}`Lambrechts2012`.
+Pebble trajectories around a growing planetary embryo, in the frame co-moving with the embryo (axes in units of the Hill radius $r_{\mathrm{H}}$; the red circle marks the Hill sphere, inside which the embryo's gravity dominates over the stellar tide). Line styles distinguish three dimensionless friction times ($\tau_{\mathrm{f}} = 0.01$, $0.1$, $1$), i.e. increasing degrees of decoupling from the gas. Gas drag causes pebbles entering the Hill sphere to lose angular momentum and spiral onto the embryo, enlarging the effective accretion cross-section far beyond the geometric value and allowing cores to reach $\sim 10\,\Mearth$ within the disk lifetime. Reproduced from {cite:t}`Lambrechts2012`, Fig. 7.
 ```
 
 ### Preferential formation sites
@@ -176,7 +176,7 @@ Planet formation does not proceed uniformly throughout the disk. Planets prefere
 
 ```{figure} figures/drazkowska2023_roadmap.avif
 :name: fig:solar-nebula
-:width: 600px
+:width: 100%
 :align: center
 
 Roadmap of the planet-formation sequence, organised by body size from sub-µm dust to gas giants (note the reference bodies Ceres, Moon, Mars, Earth, and Jupiter along the axis). Grey bars span the size range over which each process operates: dust growth to pebbles, planetesimal formation, runaway and oligarchic growth, pebble accretion, giant impacts, and gas accretion; the hatched giant-impact bar marks the one process that continues after the gas disk has dispersed. Red bands mark the two great obstacles: radial drift at pebble-to-boulder sizes and planet migration at planetary masses. Adapted from {cite:t}`Drazkowska2023`.
@@ -471,7 +471,7 @@ This three-body resonance is maintained by tidal interactions with Jupiter. The 
 
 ```{figure} figures/laplace_resonance.avif
 :name: fig:laplace-resonance
-:width: 500px
+:width: 100%
 :align: center
 
 The Laplace resonance of the Galilean moons. Panel (a): the orbits of Io, Europa, and Ganymede to scale, drawn at a Europa-Ganymede conjunction; the resonance locks the moons' phases such that Io is always on the opposite side of Jupiter at these conjunctions, so a triple conjunction never occurs. Panel (b): the orbital periods stand in the ratio 1 : 2 : 4, and the pattern of successive conjunctions repeats every Ganymede period (four Io orbits). The resulting periodic gravitational kicks force a non-zero eccentricity on Io ($e \approx 0.004$), driving the tidal heating that powers its volcanism {cite:p}`Peale1979`.
@@ -508,7 +508,7 @@ Over time, the tidal torque slows the faster-spinning body until its rotation pe
 
 ```{figure} figures/tidal_locking.avif
 :name: fig:tidal-locking
-:width: 500px
+:width: 100%
 :align: center
 
 Free versus synchronous rotation. Panel (a): a moon whose spin period differs from its orbital period shows different faces to the planet (P) over one orbit; the black surface marker and the body-fixed axis (red arrow) decouple from the direction to the planet. Panel (b): in synchronous rotation the spin and orbital periods are equal, so the surface marker, and with it the tidal bulge, always faces the planet. The Moon reached this state through billions of years of tidal dissipation {cite:p}`MurrayDermott1999`. Course-original schematic.
@@ -581,7 +581,7 @@ After the gas disk has dispersed, the giant planets can still undergo migration 
 
 ```{figure} figures/nesvorny2018_nice.avif
 :name: fig:nice-model
-:width: 600px
+:width: 100%
 :align: center
 
 Evolution of the giant planets through the Nice-model instability in a five-planet "jumping-Jupiter" simulation by {cite:t}`NesvornyMorbidelli2012`. Panel (a): semi-major axes vs time for five giant planets started in a compact resonant chain, with a fifth ice giant (magenta) initially between Saturn and Uranus; horizontal dashed lines mark the present-day semi-major axes of the four surviving giants. At the instability ($\sim 6$ Myr into this run) the extra ice giant is scattered off Jupiter and ejected from the solar system, while Uranus and Neptune move outward onto their present orbits. Panel (b): the Saturn/Jupiter period ratio, starting near its 3:2 resonance value of 1.5, first drifts slowly upward through planetesimal-driven migration and then jumps discontinuously (from $\approx 1.7$ to $\approx 2.4$ in under $10^5$ yr) during the planet-planet encounters, approaching the present-day value of 2.49 (dashed line). The jump carries the system over the shaded band ($2.1 \lesssim P_{\mathrm{Sat}}/P_{\mathrm{Jup}} \lesssim 2.3$) in which slow migration would activate secular resonances that excite the asteroid belt and the terrestrial-planet orbits; avoiding this zone is the central argument for the jumping-Jupiter scenario over the smooth 2:1 resonance crossing of the original Nice model {cite:p}`Tsiganis2005`. Reproduced from {cite:t}`Nesvorny2018`, Fig. 3.
@@ -605,7 +605,7 @@ The strongest evidence that migration is real comes from **hot Jupiters**: gas g
 
 ```{figure} figures/hot_jupiter_mass_period.avif
 :name: fig:hot-jupiters
-:width: 600px
+:width: 100%
 :align: center
 
 Confirmed exoplanets in mass-period space, generated from the NASA Exoplanet Archive {cite:p}`NASAExoplanetArchive2026` (accessed 2026-08). Detection methods are colour-coded, and the eight Solar System planets are overplotted as black stars for reference. Red circles mark the hot Jupiters, selected here as $M > 0.1\,M_{\mathrm{J}}$ and $P < 10$ d (dotted lines). This population cannot have formed in situ at such close-in orbital distances and is widely interpreted as evidence for large-scale orbital migration; see {cite:t}`DawsonJohnson2018` for a review of the proposed pathways.
@@ -618,16 +618,6 @@ The study of planet formation has been transformed by high-resolution imaging of
 
 Theoretical advances have been consolidated in the *Protostars and Planets VII* review volume {cite:p}`Drazkowska2023`, which presents an updated synthesis of planet formation theory incorporating ALMA constraints. Key developments include refined models of the streaming instability that forms planetesimals, improved treatments of pebble accretion in evolving disks, new constraints on giant-planet formation timescales from isotopic analyses of meteorites {cite:p}`Kruijer2017`, and the discovery of Jupiter's dilute core in Juno gravity data {cite:p}`Wahl2017` ({ref}`Lecture 8 <lecture08>`). Together these suggest that giant-planet cores grow within the first few Myr of disk evolution, before the gas disperses, although how early Jupiter's core in particular had to form is still contested ({ref}`Lecture 12 <lecture12>`, {ref}`Lecture 14 <lecture14>`).
 
-
-## Three questions to take forward
-
-The material of this lecture condenses into three questions worth carrying through the rest of the course.
-
-**1. How does nature build a planet out of dust?** Not by patient sticking alone: collisional growth stalls at the bouncing, fragmentation, and radial-drift barriers ({numref}`fig:growth-barriers`), and the leap from pebbles to planetesimals requires the collective physics of the streaming instability ({numref}`fig:streaming`). From there, gravitational focusing, pebble accretion, and gas capture assemble planets across twelve orders of magnitude in size ({numref}`fig:core-accretion`). Where and when the first planetesimals formed, and how early Jupiter's core grew, remain open questions ({ref}`Lecture 12 <lecture12>`, {ref}`Lecture 14 <lecture14>`).
-
-**2. Why does an orbit's energy depend only on its semi-major axis?** The vis-viva equation (Eq. {eq}`eq:vis-viva`) compresses all of Keplerian dynamics into one statement: $a$ fixes the energy, $e$ merely redistributes speed along the orbit, from Halley's 54.5 km s$^{-1}$ plunge at perihelion to its 0.91 km s$^{-1}$ crawl at aphelion ({numref}`fig:visviva`). Kepler's third law turns any measured period into a mass. These two tools carry directly to the exoplanet detection methods of {ref}`Lecture 13 <lecture13>`.
-
-**3. Why is Io the most volcanically active body in the solar system?** Because orbital dynamics has thermal consequences: the Laplace resonance forces an eccentricity of just 0.004 ({numref}`fig:laplace-resonance`), which tidal flexing converts into more heat per kilogram than radioactivity provides anywhere else ({numref}`fig:io-volcanism`). A locked moon on a circular orbit would be geologically dead; a resonance keeps Io molten.
 
 ## Looking ahead to Lecture 3
 
