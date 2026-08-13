@@ -29,9 +29,9 @@ Earth's atmosphere as a thin blue line on the limb, photographed from the Intern
 
 **Primary atmospheres** are captured directly from the protoplanetary disk during planet formation. Because the disk is composed predominantly of hydrogen and helium (reflecting the solar composition), primary atmospheres are dominated by $\mathrm{H_2}$ and He, with trace amounts of $\mathrm{CH_4}$, $\mathrm{NH_3}$, $\mathrm{H_2O}$, and noble gases.
 
-Only sufficiently massive bodies (those exceeding roughly $5$–$10 \, \Mearth$) can gravitationally capture and retain significant quantities of nebular gas before the disk disperses (within $\sim$3–10 Myr; {ref}`Lecture 2 <lecture02>`). The **gas giants** Jupiter and Saturn are the primary examples: their massive $\mathrm{H_2}$/He envelopes constitute the vast majority of their total mass. The **ice giants** Uranus and Neptune also captured primary atmospheres, but far less gas: their envelopes are only $\sim$10–20% of their total mass, reflecting their slower growth and the disk's dissipation.
+Only sufficiently massive bodies (those exceeding roughly $5$–$10 \, \Mearth$) can gravitationally capture and retain large quantities of nebular gas before the disk disperses (within $\sim$3–10 Myr; {ref}`Lecture 2 <lecture02>`). The **gas giants** Jupiter and Saturn are the primary examples: their massive $\mathrm{H_2}$/He envelopes constitute the vast majority of their total mass. The **ice giants** Uranus and Neptune also captured primary atmospheres, but far less gas: their envelopes are only $\sim$10–20% of their total mass, reflecting their slower growth and the disk's dissipation.
 
-Terrestrial planets like Earth, Venus, and Mars were too small to capture significant nebular gas. Any primordial hydrogen they did accrete was quickly lost to space (see [atmospheric escape](atm-escape) below). Their present-day atmospheres are therefore **not** primary.
+Terrestrial planets like Earth, Venus, and Mars were too small to capture much nebular gas. Any primordial hydrogen they did accrete was quickly lost to space (see [atmospheric escape](atm-escape) below). Their present-day atmospheres are therefore **not** primary.
 
 ### Secondary atmospheres
 
@@ -252,7 +252,7 @@ Earth's vertical temperature profile from the US Standard Atmosphere 1976, with 
 The vertical structure varies dramatically across the solar system {cite:p}`Catling2017`:
 
 - **Venus:** A massive troposphere extends to $\sim$65 km. Above the cloud deck ($\sim$48–70 km), temperature decreases slowly. There is no Earth-like stratospheric temperature inversion because Venus lacks an ozone layer.
-- **Mars:** A thin troposphere ($\sim$40 km) directly overlain by a thermosphere. Mars also lacks a significant ozone layer and stratospheric inversion.
+- **Mars:** A thin troposphere ($\sim$40 km) directly overlain by a thermosphere. Mars also lacks an appreciable ozone layer and stratospheric inversion.
 - **Jupiter:** The troposphere extends deep into the planet (hundreds of kilometres). The stratosphere is heated by $\mathrm{CH_4}$ and hydrocarbon haze absorption. There is no solid surface; pressure increases continuously with depth.
 - **Titan:** A thick troposphere ($\sim$40 km), a stratosphere extending up to $\sim$300 km heated by organic haze absorption ({numref}`fig:titan-haze`), and an extended thermosphere reaching $\sim$1400 km, remarkably high for such a small body, reflecting Titan's weak gravity and large scale height. The Huygens-derived T(z) profile is shown in {numref}`fig:titan-tz-hasi`; the canonical Venus T(z) used for comparison is shown in {numref}`fig:venus-tz-vira`.
 
@@ -500,7 +500,7 @@ $$ (eq:jeans-parameter)
 
 where $M_p$ is the planet's mass, $m$ is the molecular mass, $T_{\mathrm{exo}}$ is the exobase temperature, $r_{\mathrm{exo}}$ is the exobase radius, $v_{\mathrm{esc}} = \sqrt{2GM_p/r_{\mathrm{exo}}}$ is the escape speed, and $v_{\mathrm{th}} = \sqrt{2\kB T_{\mathrm{exo}}/m}$ is the most probable thermal speed.
 
-The Jeans escape parameter is the ratio of gravitational binding energy to thermal energy for a molecule at the exobase. When $\lambda_J \gg 1$, very few molecules have enough energy to escape and escape is slow. When $\lambda_J \lesssim 2$–3, a significant fraction of molecules can escape, and the atmosphere erodes rapidly.
+The Jeans escape parameter is the ratio of gravitational binding energy to thermal energy for a molecule at the exobase. When $\lambda_J \gg 1$, very few molecules have enough energy to escape and escape is slow. When $\lambda_J \lesssim 2$–3, a substantial fraction of molecules can escape, and the atmosphere erodes rapidly.
 
 The **Jeans escape flux** (number of molecules escaping per unit area per unit time from the exobase) is:
 
@@ -528,7 +528,7 @@ The following table illustrates $\lambda_J$ for several atmospheric species on E
 | $\mathrm{N_2}$ | 28 | 200 | 150 |
 | $\mathrm{CO_2}$ | 44 | 310 | 230 |
 
-For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so large that Jeans escape is negligible on both planets. For atomic hydrogen, $\lambda_J$ is moderate, leading to significant escape: this is why both Earth and Mars lose hydrogen to space ({numref}`fig:mb-jeans`). Earth's exobase temperature is not fixed at 1000 K: it varies from $\sim$600 K at solar minimum to $\sim$1500 K at solar maximum, which modulates the escape flux of the lightest species by orders of magnitude. We will revisit this derivation in full detail (starting from the Maxwell–Boltzmann distribution) in {ref}`Lecture 10 <lecture10>`.
+For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so large that Jeans escape is negligible on both planets. For atomic hydrogen, $\lambda_J$ is moderate, leading to measurable escape: this is why both Earth and Mars lose hydrogen to space ({numref}`fig:mb-jeans`). Earth's exobase temperature is not fixed at 1000 K: it varies from $\sim$600 K at solar minimum to $\sim$1500 K at solar maximum, which modulates the escape flux of the lightest species by orders of magnitude. We will revisit this derivation in full detail (starting from the Maxwell–Boltzmann distribution) in {ref}`Lecture 10 <lecture10>`.
 
 ### Hydrodynamic escape
 
@@ -564,7 +564,7 @@ Several processes can eject atmospheric particles to space without relying on th
 
 - **Ion pickup:** Atmospheric atoms ionised by solar UV or charge exchange are picked up by the solar wind magnetic field and swept away from the planet. This process is particularly effective at unmagnetised planets like Mars and Venus.
 
-- **Impact erosion:** Large asteroid or comet impacts can eject significant fractions of a planet's atmosphere. The efficiency depends on the impactor size relative to the atmospheric scale height: very large impacts can blow off a substantial atmospheric mass in a single event.
+- **Impact erosion:** Large asteroid or comet impacts can eject a large fraction of a planet's atmosphere. The efficiency depends on the impactor size relative to the atmospheric scale height: very large impacts can blow off a substantial atmospheric mass in a single event.
 
 The MAVEN mission at Mars has measured the present-day total atmospheric escape rate at $\sim 1$–$3$ kg s$^{-1}$ for H and O combined, with H escape varying seasonally by nearly an order of magnitude, integrated across photochemical, thermal, and solar-wind-driven channels {cite:p}`Jakosky2018`. MAVEN's elliptical science orbit ({numref}`fig:maven-science-orbit`) samples the thermosphere/exobase at periapsis and the ionised tail at apoapsis; the resulting picture of ion escape is shown in {numref}`fig:maven-ion-plume`, and the partitioning of oxygen loss across photochemical, ion, and sputtering channels is summarised in {numref}`fig:maven-o-loss-channels`. The thin atmosphere that remains today is photographed on the limb in {numref}`fig:mars-atmosphere`.
 
@@ -678,7 +678,7 @@ JWST/MIRI 15 $\mu$m thermal emission measurement of TRAPPIST-1 b (black point wi
 
 For solar system bodies, the MAVEN mission at Mars has quantified present-day atmospheric loss rates for multiple species, establishing that ion escape driven by the solar wind dominates over Jeans escape for most atmospheric constituents {cite:p}`Jakosky2018`. Integrated over Mars's history, these loss rates can account for the removal of a substantial fraction of Mars's early atmosphere, though the total amount of $\mathrm{CO_2}$ lost to space versus sequestered in surface carbonates and the polar caps remains debated ({ref}`Lecture 10 <lecture10>`).
 
-These results underscore a central theme of atmospheric science: a planet's ability to retain its atmosphere depends not only on its mass and temperature (the Jeans escape criterion derived in this lecture) but also on the intensity of stellar radiation, the presence or absence of a global magnetic field ({ref}`Lecture 4 <lecture04>`), and the planet's geological activity.
+These results reflect a central theme of atmospheric science: a planet's ability to retain its atmosphere depends not only on its mass and temperature (the Jeans escape criterion derived in this lecture) but also on the intensity of stellar radiation, the presence or absence of a global magnetic field ({ref}`Lecture 4 <lecture04>`), and the planet's geological activity.
 
 
 ## References

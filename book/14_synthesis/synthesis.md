@@ -132,7 +132,7 @@ Mass-radius diagram for rocky and small exoplanets from {cite:t}`Lichtenberg2025
 
 ### "Is the solar system rare?"
 
-The natural follow-up question is whether the solar system is genuinely rare, or whether we have just looked under the streetlamp and missed the dimmer corner of the parameter space where it lives. The honest answer is that we do not yet know, for two reasons:
+The natural follow-up question is whether the solar system is actually rare, or whether we have just looked under the streetlamp and missed the dimmer corner of the parameter space where it lives. The honest answer is that we do not yet know, for two reasons:
 
 First, the long-period detection floor is set by survey duration. Kepler monitored its target stars for about four years. To detect a planet in a 12-year (Jupiter-like) orbit with the same statistical confidence requires three full transits, and therefore requires either continuous monitoring for decades or radial-velocity baselines of comparable length. We are only just now starting to have those baselines, and Gaia DR4 (expected 2026) is the first survey with sensitivity to astrometric Jupiter analogues at scale.
 

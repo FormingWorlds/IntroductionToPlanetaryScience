@@ -591,7 +591,7 @@ Combined with a greenhouse effect similar to today's, this would yield a surface
 
 - **Zircon crystals** from 4.4 Ga show oxygen isotope ratios ($\delta^{18}\mathrm{O}$) consistent with liquid water interacting with rock at the surface.
 - **Pillow basalts** (lava cooled underwater) and **sedimentary rocks** (requiring liquid water for transport and deposition) date back to at least 3.8 Ga.
-- **Stromatolites** (microbial mat fossils) at 3.5 Ga and possible carbon isotope signatures of life at 3.8 Ga imply not just liquid water, but conditions warm enough for biology.
+- **Stromatolites** (microbial mat fossils) at 3.5 Ga and possible carbon isotope signatures of life at 3.8 Ga imply liquid water and conditions warm enough for biology.
 
 This contradiction, a faint Sun that should have frozen the Earth versus geological evidence for liquid water, is the **faint young Sun paradox**, first articulated by {cite:t}`SaganMullen1972`.
 
@@ -700,7 +700,7 @@ The carbonate-silicate cycle requires two essential ingredients: **liquid water*
 
 - **Mars:** Mars's interior cooled and volcanism largely ceased by the end of the Hesperian ($\sim$3 Ga). Without a volcanic $\mathrm{CO_2}$ source, the remaining atmospheric $\mathrm{CO_2}$ was gradually drawn down by weathering and possibly lost to space, leaving the thin 6 mbar atmosphere we see today. We will discuss Mars's atmospheric evolution in {ref}`Lecture 10 <lecture10>`.
 
-The requirement for both liquid water and active volcanism to maintain the carbonate-silicate cycle has profound implications for **planetary habitability**: a planet needs not just the right temperature, but also the right geological activity to sustain that temperature over billions of years. This theme will return in {ref}`Lecture 14 <lecture14>` when we discuss the habitability of exoplanets.
+The requirement for both liquid water and active volcanism to maintain the carbonate-silicate cycle has profound implications for **planetary habitability**: a planet needs both the right temperature and the right geological activity to sustain that temperature over billions of years. This theme will return in {ref}`Lecture 14 <lecture14>` when we discuss the habitability of exoplanets.
 
 
 ## Recent advances

@@ -718,7 +718,7 @@ The two interior signatures map onto observable differences in the chemistry of 
 Reproduced from {cite:t}`Constantinou2024`.
 ```
 
-### The D/H ratio: smoking gun for water loss
+### The D/H ratio: evidence for water loss
 
 Whichever scenario is correct, there is one strong piece of empirical evidence that Venus once had at least $100\times$ more water than it does today: the deuterium-to-hydrogen ratio.
 The original Pioneer Venus mass spectrometer measurement of {cite:t}`Donahue1982` gave $D/H \approx 1.6 \times 10^{-2}$, about $100$ times the terrestrial standard mean ocean water value of $D/H = 1.6 \times 10^{-4}$.
@@ -913,7 +913,7 @@ This is the agenda we will pursue in {ref}`Lecture 13 <lecture13>`.
 
 ### Recent advances and upcoming missions
 
-The 2030s will be a transformative decade for Venus science, with three new orbital missions and at least one in-situ probe planned.
+The 2030s will be a decisive decade for Venus science, with three new orbital missions and at least one in-situ probe planned.
 **NASA's DAVINCI** (Deep Atmosphere Venus Investigation of Noble gases, Chemistry, and Imaging) is expected to launch in $2029$--$2030$ and will release an instrumented descent probe into the atmosphere of Venus to measure noble gas isotopic abundances, atmospheric chemistry, and surface morphology during the descent.
 The noble gas measurements are particularly important: they provide the time-integrated record of atmospheric escape that should distinguish between the early-loss and late-loss scenarios for Venus' water history.
 **NASA's VERITAS** (Venus Emissivity, Radio Science, InSAR, Topography, and Spectroscopy) is currently scheduled for launch no earlier than $2031$ and will provide global high-resolution radar topography and near-infrared surface emissivity, which will resolve the tessera composition question and constrain the present-day style of mantle convection through high-precision measurement of the moment of inertia and the tidal Love numbers.
@@ -943,7 +943,7 @@ Once Venus lost its water, the sink was destroyed; once the subduction stopped, 
 Volcanic outgassing of $\mathrm{CO_2}$ continued, and atmospheric $\mathrm{CO_2}$ accumulated to its present $92$ bar value over hundreds of millions of years.
 The total carbon inventory of Earth (mostly stored as carbonate rocks) is comparable in magnitude to the atmospheric carbon inventory of Venus, suggesting that the two planets have similar carbon inventories and the difference is where the carbon ended up.
 
-The **D/H ratio** of Venus, enriched by a factor of $\sim$150 over the terrestrial value, is the smoking gun for water loss: it implies that Venus has lost at least $100\times$ more water than its present inventory, regardless of the loss mechanism or timing.
+The **D/H ratio** of Venus, enriched by a factor of $\sim$150 over the terrestrial value, is the clearest evidence for water loss: it implies that Venus has lost at least $100\times$ more water than its present inventory, regardless of the loss mechanism or timing.
 The remaining open question is whether the loss happened early (during a perpetual magma ocean phase, the Hamano scenario) or late (after a few-Gyr period of habitability, the Way scenario), and the answer matters for whether early Venus was ever habitable.
 This question will be addressed in the next decade by the new wave of Venus missions (DAVINCI, VERITAS, EnVision), particularly the noble-gas isotopic measurements that DAVINCI will return from its descent probe.
 

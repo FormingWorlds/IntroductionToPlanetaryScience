@@ -36,7 +36,7 @@ Pressure and temperature rise smoothly with depth, and the planet transitions fr
 Both gas giants rotate rapidly.
 Jupiter completes one rotation in about 9 h 56 min, Saturn in about 10 h 33 min, much faster than any rocky planet.
 Their rotation drives strong Coriolis forces that organise atmospheric motion into long-lived, latitude-aligned bands of east-west wind, the most conspicuous example of which is the alternating pattern of bright "zones" and darker "belts" on Jupiter that has been recognised since the seventeenth century.
-The rapid rotation also makes both planets visibly oblate: Jupiter is flattened by about 6.5%, Saturn by about 9.8%.
+The rapid rotation also makes both planets visibly oblate. Jupiter is flattened by about 6.5%, Saturn by about 9.8%.
 This oblateness is not a curiosity but a quantitative diagnostic of the interior density distribution, because the gravitational potential outside an oblate spinning body is encoded in a series of zonal harmonics $J_2, J_4, J_6, \dots$ that the Juno {cite:p}`Bolton2017` and Cassini spacecraft have measured to ever higher precision {cite:p}`Iess2018,Iess2019`.
 
 A final shared feature is that both planets emit more energy than they absorb from the Sun.
@@ -146,7 +146,7 @@ Loki Patera, the largest volcanic depression on Io, imaged by Voyager 1 in 1979.
 Composite Galileo view of the active fire fountain at Tvashtar Catena on Io, combining low-resolution colour imaging from orbit C21 with visible and infrared data from orbits I25 (26 Nov 1999) and I27 (22 Feb 2000) that captured the active lava flow in the act. Tvashtar is one of the most dramatic active volcanic eruptions documented in the solar system. Image credit: NASA/JPL/University of Arizona.
 ```
 
-Io has essentially no impact craters: the surface is resurfaced on $\sim$Myr timescales by ongoing volcanic deposition, making it the youngest surface in the solar system after Earth's seafloor.
+Io has essentially no impact craters. The surface is resurfaced on $\sim$Myr timescales by ongoing volcanic deposition, making it the youngest surface in the solar system after Earth's seafloor.
 The largest volcanic centre, Loki Patera, is a $\sim$200 km wide lava lake that periodically overturns and contributes a substantial fraction of Io's total heat output ({numref}`fig:io_loki` and {numref}`fig:io_tvashtar`).
 Io's atmosphere is a tenuous, patchy mix of $\mathrm{SO_2}$ sublimating from frosts on the night side and venting from volcanic plumes; it freezes onto the surface on the night side and re-sublimes during local day, producing strong day-night asymmetries.
 
@@ -167,7 +167,7 @@ This is a clear example of how an external gravity measurement, taken with care 
 
 Europa is the second of the Galilean moons, slightly smaller than Earth's Moon ($R = 1561$ km), and one of the most compelling habitability targets in the solar system.
 Its surface is dominated by water ice, criss-crossed by long fracture systems called "lineae" and patches of disrupted "chaos" terrain where the ice appears to have foundered, broken up, and refrozen ({numref}`fig:europa_galileo` and {numref}`fig:europa_chaos`).
-Crater counts are extraordinarily low: the surface age is only 40--90 Myr, which on a geologically inactive moon would be inexplicable {cite:p}`Pappalardo1999`.
+Crater counts are extraordinarily low. The surface age is only 40--90 Myr, which on a geologically inactive moon would be inexplicable {cite:p}`Pappalardo1999`.
 
 ```{figure} figures/europa_galileo_mosaic.avif
 :align: center
@@ -579,7 +579,7 @@ Cassini repeatedly flew through the plumes and sampled them with mass spectromet
 
 Beyond Titan and Enceladus, Saturn's mid-sized moons form a remarkable comparative laboratory.
 Mimas, the smallest of Saturn's classical moons, is dominated by the giant Herschel impact crater (130 km across, on a moon only 200 km in radius), giving it a strong resemblance to the Death Star from popular culture ({numref}`fig:mimas`).
-The impact that formed Herschel must have been close to the catastrophic disruption threshold; somehow the moon survived intact.
+The impact that formed Herschel must have been close to the catastrophic disruption threshold. Somehow the moon survived intact.
 Recent gravity science suggests that Mimas itself may host a young subsurface ocean, although the evidence is contested.
 
 ```{figure} figures/mimas_close.avif
@@ -606,7 +606,7 @@ Iapetus showing the two-toned hemispheric pattern, Cassini global mosaic from th
 Phoebe, an outer irregular moon of Saturn in a retrograde, highly inclined orbit. Phoebe is widely interpreted as a captured Kuiper Belt object and is the source of dark dust that infalls onto Iapetus's leading hemisphere. Image credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
-Iapetus is famous for its two-faced appearance: the leading hemisphere is darker than asphalt while the trailing hemisphere is bright water ice.
+Iapetus is famous for its two-faced appearance. The leading hemisphere is darker than asphalt while the trailing hemisphere is bright water ice.
 The dark coating on the leading hemisphere is now understood to be thin material infalling from the distant retrograde moon Phoebe, swept up onto Iapetus's leading face as it orbits Saturn.
 The contrast is amplified by a thermal segregation feedback: the dark side absorbs more sunlight, warms enough to sublimate any ice that lands on it, and becomes darker still, while the bright side stays cold and accumulates frost.
 Iapetus is also the only moon in the solar system with a significant equatorial ridge, a chain of mountains $\sim$20 km high that rings the moon's equator and whose origin remains debated ({numref}`fig:iapetus`).
@@ -644,7 +644,7 @@ Almost everything we know in detail about their atmospheres, magnetic fields, an
 Uranus as seen by Voyager 2 in 1986. The planet appeared remarkably featureless at the time of the flyby, a consequence of being seen near solstice with one pole pointing nearly toward the Sun. Image credit: NASA/JPL-Caltech.
 ```
 
-Uranus has the most extreme axial tilt of any planet: $97.8^\circ$, which means the rotation axis lies almost in the orbital plane.
+Uranus has the most extreme axial tilt of any planet: $97.8^\circ$. The rotation axis lies almost in the orbital plane.
 The pole therefore alternately points toward and away from the Sun over the planet's 84-year orbit, producing extreme seasonal cycles in which each pole experiences 42 years of continuous daylight followed by 42 years of darkness.
 The cause of the tilt is most plausibly a giant impact during the late stages of Uranus's formation, during which a body of at least $\sim 2\,\Mearth$ struck the proto-Uranus and torqued its spin axis nearly $90^\circ$ from the orbital normal ({numref}`fig:uranus_impact`).
 The challenge for any such scenario is to reconcile the impact with the fact that Uranus's regular satellites all orbit in the planet's equatorial plane: the same impact must have spun up an equatorial debris disk from which the satellites later re-accreted.
@@ -675,7 +675,7 @@ A cyclonic feature near Uranus's north pole detected by ground-based radio obser
 ```
 
 At the time of the Voyager flyby, Uranus appeared remarkably featureless, with only a few faint cloud bands visible after extreme image processing ({numref}`fig:uranus_voyager` and {numref}`fig:uranus_clouds`).
-This was partly an accident of timing: in 1986 the south pole was pointing nearly directly at the Sun, and the planet was near solstice.
+This was partly an accident of timing. In 1986 the south pole pointed nearly directly at the Sun, and the planet was near solstice.
 As Uranus has progressed toward equinox over the past two decades, ground-based observatories and Hubble have recorded increasing levels of cloud activity, including a major storm system that erupted in 2014 and was so bright it was detected by amateur astronomers, plus a long-lived polar cyclone confirmed in JWST imaging ({numref}`fig:uranus_cyclone`).
 Early JWST observations of Uranus in 2022 revealed a vivid ring system and a polar cap structure with much more atmospheric texture than Voyager saw {cite:p}`DePater2022`.
 
@@ -894,7 +894,7 @@ Voyager 2's Uranus and Neptune flyby data continue to be reanalysed with modern 
 
 The lesson of Voyager is twofold.
 First, the scientific return from a flyby is finite, and after several decades, a single short visit cannot substitute for sustained, dedicated investigation.
-Our ice giant knowledge is genuinely 35 years out of date, while our gas giant knowledge has been continuously refreshed by Galileo, Cassini, Juno, and JWST.
+Our ice giant knowledge is 35 years out of date, while our gas giant knowledge has been continuously refreshed by Galileo, Cassini, Juno, and JWST.
 Second, the data from any well-designed mission continue to yield new science long after the spacecraft is gone, particularly when combined with new theoretical tools and laboratory experiments.
 A single mission to the ice giants in the 2030s could plausibly anchor the science for the rest of the twenty-first century.
 

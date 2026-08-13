@@ -49,12 +49,12 @@ That image captures something essential about planetary science: it asks us to s
 
 3. **Are we alone?** JWST is currently attempting to detect and characterise atmospheres on rocky exoplanets, including the TRAPPIST-1 system. Within your careers, this question may become answerable, but only if we understand what makes a planet habitable in the first place.
 
-```{figure} figures/eta_earth_posterior.avif
+```{figure} figures/eta_earth_posterior_conservative.avif
 :name: fig:eta-earth
-:width: 100%
+:width: 60%
 :align: center
 
-Posterior probability density on $\eta_\oplus$, the average number of rocky habitable-zone planets per Sun-like star, derived from Kepler data. **Left panel:** *conservative* habitable-zone definition (moist-greenhouse inner edge to maximum-greenhouse outer edge, the range over which liquid water can be reliably maintained at the surface). **Right panel:** *optimistic* habitable-zone definition (inner edge extended to the recent-Venus insolation bound and outer edge to early-Mars, capturing the wider range over which surface water may have been transiently stable). The two coloured posteriors bracket the unknown survey completeness at orbital periods beyond Kepler's 500-day calibration limit: the **blue** curve (legend `extrap_const`) assumes that the detection completeness stays constant at its 500-day value, which overestimates completeness for longer periods and therefore gives a *lower* bound on $\eta_\oplus$; the **orange** curve (legend `extrap_zero`) assumes that completeness drops to zero beyond 500 days, underestimating completeness and therefore giving an *upper* bound on $\eta_\oplus$. The headline central values from {cite:t}`Bryson2021` are $\eta_\oplus \approx 0.37$ (extrap_const) and $\eta_\oplus \approx 0.60$ (extrap_zero) for the conservative HZ, and $\eta_\oplus \approx 0.58$ and $\approx 0.88$ for the optimistic HZ. The numbers are the diamond markers above each panel (medians of the posterior, with 68% credible intervals), not the histogram modes. Either way, habitable-zone rocky planets around Sun-like stars are common.
+Posterior probability density on $\eta_\oplus$, the average number of rocky habitable-zone planets per Sun-like star, derived from Kepler data, for the *conservative* habitable-zone definition (moist-greenhouse inner edge to maximum-greenhouse outer edge, the range over which liquid water can be reliably maintained at the surface). The two coloured posteriors bracket the unknown survey completeness at orbital periods beyond Kepler's 500-day calibration limit: the **blue** curve (legend `extrap_const`) assumes that the detection completeness stays constant at its 500-day value, which overestimates completeness for longer periods and therefore gives a *lower* bound on $\eta_\oplus$; the **orange** curve (legend `extrap_zero`) assumes that completeness drops to zero beyond 500 days, underestimating completeness and therefore giving an *upper* bound on $\eta_\oplus$. The headline central values from {cite:t}`Bryson2021` are $\eta_\oplus \approx 0.37$ (extrap_const) and $\eta_\oplus \approx 0.60$ (extrap_zero); the wider *optimistic* habitable-zone definition (inner edge at the recent-Venus insolation bound, outer edge at early-Mars) raises these to $\approx 0.58$ and $\approx 0.88$. The numbers are the diamond markers above the histograms (medians of the posterior, with 68% credible intervals), not the histogram modes. Either way, habitable-zone rocky planets around Sun-like stars are common.
 ```
 
 Every topic in this course, from orbital dynamics and interior structure to atmospheric physics and surface geology, connects back to these three questions. By the end, you will have the tools to think about them quantitatively.
@@ -464,13 +464,20 @@ The table below lists landmark missions that have shaped our understanding of th
 | Venera 7 | USSR | 1970 | Venus | First successful landing on another planet |
 | Viking 1 & 2 | NASA | 1976 | Mars | First Mars landers; life-detection experiments |
 | Voyager 1 & 2 | NASA | 1977-1989 | Outer planets | Grand tour of Jupiter, Saturn, Uranus, Neptune |
+| Giotto | ESA | 1986 | Comet 1P/Halley | First close-up images of a comet nucleus |
 | Galileo | NASA | 1995-2003 | Jupiter | First Jupiter orbiter; Europa's subsurface ocean |
+| Mars Express | ESA | 2003- | Mars | First ESA planetary orbiter; subsurface water-ice detection |
 | Cassini-Huygens | NASA/ESA | 2004-2017 | Saturn | Huygens landed on Titan; Enceladus plumes |
 | Spirit & Opportunity | NASA | 2004-2018 | Mars | Long-duration rovers; evidence for past water |
+| Venus Express | ESA | 2006-2014 | Venus | Long-term monitoring of the Venusian atmosphere |
+| Rosetta / Philae | ESA | 2014-2016 | Comet 67P | First comet orbiter; Philae made the first comet landing |
 | New Horizons | NASA | 2015 | Pluto | First Pluto flyby; revealed geological complexity |
 | Hayabusa2 | JAXA | 2014-2020 | Ryugu | Returned samples from a carbonaceous asteroid |
+| Juno | NASA | 2016-2025 | Jupiter | First Jupiter polar orbiter; interior structure from gravity and magnetic mapping |
+| BepiColombo | ESA/JAXA | 2018- | Mercury | Two-orbiter mission; Mercury orbit insertion November 2026 |
 | Perseverance | NASA | 2021- | Mars | Sample caching for future return; Ingenuity helicopter |
 | JWST | NASA/ESA/CSA | 2021- | Exoplanets | Atmospheric characterisation of exoplanets |
+| Chang'e 6 | CNSA | 2024 | Moon (far side) | First samples returned from the lunar far side |
 | Europa Clipper | NASA | 2024- | Europa | Investigating habitability of Europa's ocean |
 
 Two iconic mission products illustrate the breadth of these efforts: the Cassini orbiter's backlit view of Saturn from inside the planet's shadow ({numref}`fig:cassini-saturn`), and the first colour view from Perseverance on Mars ({numref}`fig:perseverance-mars`) showing the rocky plain in Jezero crater where samples for eventual return are being cached.
