@@ -27,7 +27,7 @@ Students completing this course will be able to:
 - Classical Mechanics (orbital dynamics, energy conservation)
 - Thermodynamics (heat transfer, phase equilibria)
 - Introduction to Astrophysics or equivalent (stellar structure basics, electromagnetic spectrum)
-- Basic Python programming (for computational homework problems)
+- Basic Python programming (for computational worksheet problems)
 
 ### Assessment
 
@@ -36,27 +36,27 @@ Students completing this course will be able to:
 | Final exam | 100% | Written, cumulative (L1–14) |
 
 - A final grade of at least 5.5 is required to pass. The re-sit has the same format; if fewer than four students are enrolled, an oral exam is offered instead.
-- **Homework sheets** (7 total) are **ungraded formative practice**. Students are strongly encouraged to complete them as preparation for the exam; solutions are discussed in tutorial sessions.
+- **Worksheets** (7 total) are **ungraded formative practice**. Students are strongly encouraged to complete them as preparation for the exam; solutions are discussed in tutorial sessions.
 - All lecture notes are custom-developed for this course (no required textbook).
 
 ### Weekly Structure
 
 Each week consists of:
 - 2 × 90-minute lectures
-- 1 tutorial/exercise session (weeks with homework due)
+- 1 tutorial/exercise session (weeks with a worksheet due), opening with a TA-presented mini-lecture of at most 10 minutes
 
 ### Week-by-Week Schedule
 
-| Week | Lectures | Homework | Notes |
+| Week | Lectures | Worksheet | Notes |
 |------|----------|----------|-------|
 | 1 | L1: Introduction & History; L2: Formation & Orbits | | |
-| 2 | L3: Heat & Energy; L4: Differentiation & Magnetospheres | HW 1 due | |
-| 3 | L5: Atmospheres I; L6: Atmospheres II | HW 2 due | |
-| 4 | L7: Surfaces; L8: Interiors | HW 3 due | |
-| 5 | L9: Earth & Venus; L10: Mercury & Mars | HW 4 due | |
-| 6 | L11: Gas & Ice Giants; L12: Small Bodies | HW 5 due | |
-| 7 | L13: Exoplanets; L14: Synthesis | HW 6 due | |
-| 8 | **Final exam** | HW 7 due | Exam week; cumulative L1–14 |
+| 2 | L3: Heat & Energy; L4: Differentiation & Magnetospheres | Worksheet 1 due | |
+| 3 | L5: Atmospheres I; L6: Atmospheres II | Worksheet 2 due | |
+| 4 | L7: Surfaces; L8: Interiors | Worksheet 3 due | |
+| 5 | L9: Earth & Venus; L10: Mercury & Mars | Worksheet 4 due | |
+| 6 | L11: Gas & Ice Giants; L12: Small Bodies | Worksheet 5 due | |
+| 7 | L13: Exoplanets; L14: Synthesis | Worksheet 6 due | |
+| 8 | **Final exam** | Worksheet 7 due | Exam week; cumulative L1–14 |
 
 ---
 
@@ -456,23 +456,36 @@ Capstone synthesis lecture. Unlike L9–L13, the structure is integration-first 
 
 ---
 
-## 3. Homework Sheets
+## 3. Worksheets
 
-All homework sheets are **ungraded formative practice**. Each contains 4–6 problems mixing analytical derivations, order-of-magnitude estimates, and conceptual questions. Some sheets include computational components (Python/Jupyter notebooks).
+All worksheets are **ungraded formative practice** at the level of the final exam; the exam has the same shape, so the worksheets define what students should expect. The design rules below apply to every sheet:
 
-### Homework 1: Orbits & Formation
+- **Time budget: strictly under 3 hours** for a student who works the sheet seriously. Problem count and part count are trimmed to fit this cap, never the other way around.
+- **Shape: 5 problems with lettered parts** (about 20 parts per sheet). Each problem has the size and shape of one exam question (about 15 minutes for a well-prepared student).
+- **Mix: roughly 60% quantitative, 40% qualitative.** The qualitative parts use four forms: explain a mechanism, read the limits and special cases of a derived formula, sketch or read a figure, and judge a stated claim with justification.
+- **Coverage: the core physics sections of the two lectures only** (equations and derivations); historical and descriptive material stays in the lectures.
+- **Checkpoints: key intermediate results are stated in the problem text** ("show that ..."), so a student who stalls on one step can verify their work and continue. Checkpoint values carry 4 significant figures and the worked solutions continue from the printed checkpoint values, never from a more precise internal value.
+- **Difficulty: exam level throughout**, no warm-up tier and no stretch tier.
+- **Self-containment: the lecture notes contain strictly all information needed to answer a worksheet.** A worksheet introduces no substantial new material, in its solutions included; data values in the given box and assumptions stated in a problem are fine. When a gap appears, the worksheet changes, not the locked notes.
+
+Each worksheet is accompanied by a **tutorial mini-lecture**: a deck the teaching assistants present in **at most 10 minutes** at the start of the tutorial. It summarises and highlights the concepts from the block's two lectures that the worksheet trains; it uses the same beamer theme and visual language as the lecture decks; it introduces no material beyond the lectures; and it closes with working guidance for the sheet. Source in `minilectures/minilectureNN/`, published to `book/_static/minilectures/` and listed on the Mini-Lectures page of the site.
+- Worksheet 1 is fully analytical (pen, paper, calculator, matching the exam); some later sheets add computational components (Python/Jupyter notebooks).
+
+### Worksheet 1: Orbits & Formation
 **Follows:** Lectures 1–2
 **Due:** Week 2
 **Topics covered:**
-- Applying Kepler's laws: orbital periods, semi-major axes, eccentricities
-- Vis-viva equation applications
-- Tidal forces: Roche limit calculation for different bodies
-- Orbital resonances: calculate resonance ratios for Galilean moons
-- Order-of-magnitude estimate: disk mass required to form the solar system
+- Kepler's third law as a scale: the Sun's mass from Jupiter's orbit, Jupiter's from Ganymede's, and what the neglected planet mass does to the result
+- Vis-viva equation: the minimum-energy transfer to Mars, with a sketch of $v(r)$ along the transfer
+- The Laplace resonance of the Galilean moons: period ratios, the three-body mean-motion relation, conjunction geometry, tidal heating of Io
+- Tidal forces and the fluid Roche limit: derivation of the tidal acceleration, limits of the formula, Saturn's rings, the ISS as a domain check
+- Gravitational focusing, runaway versus oligarchic growth, and the minimum mass of the solar nebula against a Class II disk
 
-**Format:** Problem set (analytical)
+The synodic-period and launch-window calculation is held back for a mock exam.
 
-### Homework 2: Thermal Evolution & Differentiation
+**Format:** Problem set (analytical); 5 problems, 20 parts
+
+### Worksheet 2: Thermal Evolution & Differentiation
 **Follows:** Lectures 3–4
 **Due:** Week 3
 **Topics covered:**
@@ -484,7 +497,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 **Format:** Problem set (analytical + one computational component: thermal evolution model)
 
-### Homework 3: Atmospheres
+### Worksheet 3: Atmospheres
 **Follows:** Lectures 5–6
 **Due:** Week 4
 **Topics covered:**
@@ -496,7 +509,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 **Format:** Problem set (analytical + one computational component: radiative balance model)
 
-### Homework 4: Surfaces & Interiors
+### Worksheet 4: Surfaces & Interiors
 **Follows:** Lectures 7–8
 **Due:** Week 5
 **Topics covered:**
@@ -508,7 +521,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 **Format:** Problem set (analytical)
 
-### Homework 5: Terrestrial Planets
+### Worksheet 5: Terrestrial Planets
 **Follows:** Lectures 9–10
 **Due:** Week 6
 **Topics covered:**
@@ -520,7 +533,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 **Format:** Problem set (analytical + conceptual)
 
-### Homework 6: Giant Planets & Small Bodies
+### Worksheet 6: Giant Planets & Small Bodies
 **Follows:** Lectures 11–12
 **Due:** Week 7
 **Topics covered:**
@@ -532,7 +545,7 @@ All homework sheets are **ungraded formative practice**. Each contains 4–6 pro
 
 **Format:** Problem set (analytical + one computational component: N-body or orbital integration)
 
-### Homework 7: Exoplanets & Synthesis
+### Worksheet 7: Exoplanets & Synthesis
 **Follows:** Lectures 13–14
 **Due:** Week 8 (before final exam)
 **Topics covered:**
@@ -572,9 +585,9 @@ The re-sit has the same format; if fewer than four students are enrolled, an ora
 - Synthesis and astrobiology (Lecture 14)
 
 **Format:**
-- The exam has the exact same shape and level as the homework problem sets: approximately one question per lecture. To fit the two-hour slot, not necessarily every lecture is covered, and some lectures may be combined into one question.
+- The exam has the exact same shape and level as the worksheets: approximately one question per lecture. To fit the two-hour slot, not necessarily every lecture is covered, and some lectures may be combined into one question.
 - Closed book; students bring a calculator and a pen, nothing else is needed (no equation sheet).
-- Duration: 2 hours. Exam Wed 28 Oct 2026, 15:00-17:00, Exam Hall 4 (5263.0226); re-sit Mon 25 Jan 2027, 15:00-17:00, Exam Hall 1 (5263.0102).
+- Duration: the scheduled slot is 2 hours, and the paper is sized for about 90 minutes of work for a well-prepared student, so the slot carries slack. Exam Wed 28 Oct 2026, 15:00-17:00, Exam Hall 4 (5263.0226); re-sit Mon 25 Jan 2027, 15:00-17:00, Exam Hall 1 (5263.0102).
 - A few mock exams with full solutions are published on the course website as practice material, alongside the worksheets and their full solutions.
 
 ---
@@ -591,17 +604,18 @@ Order:
 2. L01 slides (LOCKED 2026-08-08; 95-page deck signed off and deployed)
 3. L02 notes (LOCKED 2026-08-08)
 4. L02 slides (rebuilt against the locked notes and deployed 2026-08-09; 107-page deck, under review)
-5. Worksheet 01 (L01 + L02)
-6. L03 notes
-7. L03 slides
-8. L04 notes
-9. L04 slides
-10. Worksheet 02 (L03 + L04)
-11. L05 notes → L05 slides → L06 notes → L06 slides → Worksheet 03 (L05 + L06)
-12. L07 notes → L07 slides → L08 notes → L08 slides → Worksheet 04 (L07 + L08)
-13. L09 notes → L09 slides → L10 notes → L10 slides → Worksheet 05 (L09 + L10)
-14. L11 notes → L11 slides → L12 notes → L12 slides → Worksheet 06 (L11 + L12)
-15. L13 notes → L13 slides → L14 notes → L14 slides → Worksheet 07 (L13 + L14)
+5. Worksheet 01 (L01 + L02) (drafted 2026-08-14; 5 problems / 20 parts, 4-page sheet plus 12-page solutions, under review)
+6. Mini-lecture 01 (Tutorial 1, L01 + L02) (drafted 2026-08-14; 8 slides, under review)
+7. L03 notes
+8. L03 slides
+9. L04 notes
+10. L04 slides
+11. Worksheet 02 (L03 + L04)
+12. L05 notes → L05 slides → L06 notes → L06 slides → Worksheet 03 (L05 + L06)
+13. L07 notes → L07 slides → L08 notes → L08 slides → Worksheet 04 (L07 + L08)
+14. L09 notes → L09 slides → L10 notes → L10 slides → Worksheet 05 (L09 + L10)
+15. L11 notes → L11 slides → L12 notes → L12 slides → Worksheet 06 (L11 + L12)
+16. L13 notes → L13 slides → L14 notes → L14 slides → Worksheet 07 (L13 + L14)
 
 ### Materials to Create
 
@@ -672,11 +686,11 @@ Each slide deck requires:
 - Figures and diagrams consistent with the Jupyter Book lecture notes
 - All raster images in AVIF format (`.avif`); the build system auto-converts to PNG for XeLaTeX
 
-#### Homework Sheets (7 sets, each with solutions)
+#### Worksheets (7 sets, each with solutions)
 
-| # | Homework | Follows Lectures | Status |
+| # | Worksheet | Follows Lectures | Status |
 |---|----------|-----------------|--------|
-| 1 | Orbits & Formation | 1–2 | Not started |
+| 1 | Orbits & Formation | 1–2 | Draft complete |
 | 2 | Thermal Evolution & Differentiation | 3–4 | Not started |
 | 3 | Atmospheres | 5–6 | Not started |
 | 4 | Surfaces & Interiors | 7–8 | Not started |
@@ -684,10 +698,23 @@ Each slide deck requires:
 | 6 | Giant Planets & Small Bodies | 11–12 | Not started |
 | 7 | Exoplanets & Synthesis | 13–14 | Not started |
 
-Each homework requires:
-- Problem sheet (PDF, from LaTeX or Jupyter notebook source)
-- Full solutions (for instructors)
-- Student solution template (partial solutions / answer boxes)
+Each worksheet requires:
+- Problem sheet (PDF, built with XeLaTeX from `worksheets/worksheetNN/`)
+- Full solutions, published alongside the problem sheet
+
+Both PDFs are generated from a single content file: `worksheetNN_content.tex` holds the problems and their solutions, and the two drivers `worksheetNN.tex` and `worksheetNN_solutions.tex` select whether the solutions are typeset. `make -C worksheets web` copies both to `book/_static/worksheets/`, which is where the website links to them. Every printed number is recomputed by `scripts/worksheets/check_worksheetNN.py`.
+
+#### Tutorial mini-lectures (7 decks)
+
+| # | Tutorial | Follows Lectures | Status |
+|---|----------|-----------------|--------|
+| 1 | Orbits & Formation | 1–2 | Draft complete |
+| 2 | Thermal Evolution & Differentiation | 3–4 | Not started |
+| 3 | Atmospheres | 5–6 | Not started |
+| 4 | Surfaces & Interiors | 7–8 | Not started |
+| 5 | Terrestrial Planets | 9–10 | Not started |
+| 6 | Giant Planets & Small Bodies | 11–12 | Not started |
+| 7 | Exoplanets & Synthesis | 13–14 | Not started |
 
 #### Exams (2 sets, each with solutions) — developed in the **private repository** (see §11)
 
@@ -704,14 +731,14 @@ The final exam requires:
 
 The previous iteration (12 lectures, 9 tutorials) provides a foundation to draw from. Key assets:
 
-- **Tutorial problems:** Many problems from tutorials 1–9 can be adapted for the new homework sheets, particularly:
-  - Tutorial 1 (Dynamics): Jupyter notebooks on resonances and N-body → Homework 1
-  - Tutorial 2 (Heat): Analytical problems → Homework 2
-  - Tutorial 3 (Atmospheres): Analytical problems → Homework 3
-  - Tutorial 4 (Surfaces & interiors): Can be split across Homeworks 4 and 5
-  - Tutorial 5 (Magnetospheres): Problems → fold into Homework 2
-  - Tutorials 7–8 (Minor planets, comets): Combine → Homework 6
-  - Tutorial 9 (Planet formation): Fold into Homework 1
+- **Tutorial problems:** Many problems from tutorials 1–9 can be adapted for the new worksheets, particularly:
+  - Tutorial 1 (Dynamics): Jupyter notebooks on resonances and N-body → Worksheet 1
+  - Tutorial 2 (Heat): Analytical problems → Worksheet 2
+  - Tutorial 3 (Atmospheres): Analytical problems → Worksheet 3
+  - Tutorial 4 (Surfaces & interiors): Can be split across Worksheets 4 and 5
+  - Tutorial 5 (Magnetospheres): Problems → fold into Worksheet 2
+  - Tutorials 7–8 (Minor planets, comets): Combine → Worksheet 6
+  - Tutorial 9 (Planet formation): Fold into Worksheet 1
 
 - **Exam questions:** Previous mid-term and final exams provide a question bank to draw from and adapt.
 
@@ -725,24 +752,24 @@ The previous iteration (12 lectures, 9 tutorials) provides a foundation to draw 
 
 ### Development Sequence
 
-1. **Phase 1a — Lecture notes (Lectures 1–8):** ✅ Complete. Core foundational content, needed first since all other lectures build on these.
-2. **Phase 1b — Lecture notes images (Lectures 1–8):** ✅ Complete. Figures and diagrams for the first 8 lectures. We want to end up with about 10–15 figures per lecture, including:
+1. **Phase 1a: Lecture notes (Lectures 1–8).** ✅ Complete. Core foundational content, needed first since all other lectures build on these.
+2. **Phase 1b: Lecture notes images (Lectures 1–8).** ✅ Complete. Figures and diagrams for the first 8 lectures. We want to end up with about 10–15 figures per lecture, including:
    - Diagrams of planetary interiors, atmospheres, and surfaces; physical and chemical processes; and comparative planetology schematics
    - Plots of observational data (e.g., planetary demographics, atmospheric profiles)
    - Conceptual illustrations (e.g., orbital resonances, heat transport mechanisms)
-3. **Phase 1c — Lecture notes verification (Lectures 1–8):** ✅ Complete. Double check consistency of all notes and pedagogic approach. Deeply verify the scientific validity of all content, in particular of all derivations and equations, facts and values of any parameters, constants, and calculations. Double check all figures, and ensure all derivations are clear and correct before moving on to slides. Validate that the lecture notes are self-contained and can be understood without external references, as they will be the primary resource for students. Verify all references and citations for accuracy and relevance. Ensure all BibTeX entries use Chicago author-date format (custom pybtex style in `src/ips_styles/chicago.py`), include DOIs where available, and link to open-access sources (NASA ADS preferred, then arXiv, then publisher open access).
-4. **Phase 2a — Lecture slides (Lectures 1–8):** ✅ Complete (L1–L8 draft + three-pass review applied; 60+ frames per deck; all SVG/AVIF conversion pipeline working). PDF slide decks from LaTeX, covering the same content as the Jupyter Book notes for classroom delivery. The slide decks should be visually engaging and include key figures from the lecture notes, but distilled into a presentation format suitable for teaching. Each slide deck should be consistent in style and formatting across lectures. The slides should cover a lecture of about 90 minutes, with a mix of text, equations, and figures to effectively communicate the material. The slide decks should be designed to complement the lecture notes, not duplicate them, and should focus on the key concepts and takeaways for each lecture.
-5. **Phase 3 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7.
-6. **Phase 4a — Lecture notes (Lectures 9–14):** ✅ Complete. Full prose drafts for all six lectures (~88,600 words aggregate), each with a blackboard derivation (Simpson-Nakajima, Jeans escape, Roche limit, Pb-Pb dating, transit/RV, habitable zone). Three-part descriptive-first / comparative-payoff layout (Part 1 object description, Part 2 dynamics or mechanisms, Part 3 comparative synthesis), inverted for L14 because it is the synthesis lecture.
-7. **Phase 4b — Lecture notes images (Lectures 9–14):** ✅ Complete. 222 figures across L9–L14 (30 / 31 / 40 / 48 / 42 / 31), sourced from arXiv tarballs and NASA/ESA mission imagery, capped at two figures per source paper (mission imagery exempt). All AVIF, all referenced in `{figure}` directives with self-contained captions.
-8. **Phase 4c — Lecture notes verification (Lectures 9–14):** ✅ Complete. First, three-tier adversarial review arc per lecture (mechanical rendering, substantive equation/attribution, LOW polish + BibTeX hygiene), then a second independent verification pass on L9 and L10 (39 findings closed in §6), then the full L01-L14 self-made-figure replacement cycle (21 of 21 literature replacements shipped, May 2026), then the sequential L01-L14 adversarial-review cycle (14 atomic commits ending at `546a337`, ~50 fixes, ~530 PDFs read across the cycle; 2026-05-09). All lectures cross-checked for numerical drift (Venus 737 K, CO2 lambda 230, Mars lambda_H 5.3, Earth heat budget 47 TW), figure-caption fidelity, and citation-to-claim accuracy. Bib silent-failure modes fixed (`e80b416`).
-9. **Phase 4d — Inline figure references (Lectures 9–14):** ⏭️ Next. Every figure must be referenced in the body text with `` {numref}`fig:...` ``, rendering as "(Fig. NN.M)". L01-L08 already have near-complete coverage (24 / 25 to 26 / 26 per lecture). L09-L14 are sparse: L9 has 4 / 28, L10 has 1 / 31, L11 has 1 / 40, L12 has 10 / 48, L13 has 2 / 42, L14 has 8 / 30. About 193 figures need an inline reference placed at the natural point in the prose where the figure is discussed. Also closes the two L04 / L06 stragglers. Run lecture-by-lecture; commit per lecture to `origin/main` so the deployed site iterates immediately.
-10. **Phase 4e — Figure-by-figure walkthrough with Tim:** After 4d, walk through every figure in every lecture one at a time, in order (L01 Fig. 1.1 first, L14 Fig. 14.30 last). For each figure: render the page section, present the figure to Tim, Tim decides accept / replace / re-crop / re-caption / drop. The session is interactive: Tim drives the verdict, Claude executes the agreed action immediately (replace from another source, re-crop, edit caption, swap citation, remove the figure and its inline reference). Total scope is 461 figures. Pace: 25-50 figures per session, lecture-by-lecture, with a per-lecture commit at the end. This pass supersedes any earlier "figure spot-check" notes.
-11. **Phase 5 — Lecture slides (Lectures 9–14):** ✅ Complete. L9-L14 slide decks built (60+ frames each), three-pass review applied, final deck commit `c53d778` (2026-04-26).
-12. **Phase 3 — Homework sheets 1–4 + mid-term exam:** Homework covering Lectures 1–8 and mid-term covering Lectures 1–7. Reuses tutorial material from `content/course2025` (resonances, N-body, heat-transport, atmosphere-escape problem sets). Homework problem sheets are public (this repo); **mid-term exam paper, full solutions, and marking scheme are developed in the private repository** (see §11). Open.
-13. **Phase 6 — Homework sheets 5–7 + final exam:** Remaining homework and cumulative final exam. Homework problem sheets are public; **final exam paper, full solutions, and marking scheme are developed in the private repository** (see §11). Open.
-14. **Phase 7 — Review and polish:** Cross-referencing between lectures, consistency check, equation sheet compilation, deployed-site smoke test before the September 2026 teaching slot.
-15. **Phase 8 — Video narration scripts and audio recording (final item):** Produce a written narration script per lecture, slide-by-slide, that Tim records as audio. The audio is then overlaid on the slide PDF for YouTube delivery. Scripts written only after all notes, slides, homework, and exams are final, because the narration must match the published material verbatim. **Scripts, audio masters, per-slide WAV stems, and composited video files all live in the private repository** (see §11); only the YouTube-published video is publicly accessible. See §10 below for the per-lecture script structure, slide-timing protocol, and recording / overlay workflow.
+3. **Phase 1c: Lecture notes verification (Lectures 1–8).** ✅ Complete. Double check consistency of all notes and pedagogic approach. Deeply verify the scientific validity of all content, in particular of all derivations and equations, facts and values of any parameters, constants, and calculations. Double check all figures, and ensure all derivations are clear and correct before moving on to slides. Validate that the lecture notes are self-contained and can be understood without external references, as they will be the primary resource for students. Verify all references and citations for accuracy and relevance. Ensure all BibTeX entries use Chicago author-date format (custom pybtex style in `src/ips_styles/chicago.py`), include DOIs where available, and link to open-access sources (NASA ADS preferred, then arXiv, then publisher open access).
+4. **Phase 2a: Lecture slides (Lectures 1–8).** ✅ Complete (L1–L8 draft + three-pass review applied; 60+ frames per deck; all SVG/AVIF conversion pipeline working). PDF slide decks from LaTeX, covering the same content as the Jupyter Book notes for classroom delivery. The slide decks should be visually engaging and include key figures from the lecture notes, but distilled into a presentation format suitable for teaching. Each slide deck should be consistent in style and formatting across lectures. The slides should cover a lecture of about 90 minutes, with a mix of text, equations, and figures to effectively communicate the material. The slide decks should be designed to complement the lecture notes, not duplicate them, and should focus on the key concepts and takeaways for each lecture.
+5. **Phase 3: Worksheets 1–4 + mid-term exam.** Worksheets covering Lectures 1–8 and mid-term covering Lectures 1–7.
+6. **Phase 4a: Lecture notes (Lectures 9–14).** ✅ Complete. Full prose drafts for all six lectures (~88,600 words aggregate), each with a blackboard derivation (Simpson-Nakajima, Jeans escape, Roche limit, Pb-Pb dating, transit/RV, habitable zone). Three-part descriptive-first / comparative-payoff layout (Part 1 object description, Part 2 dynamics or mechanisms, Part 3 comparative synthesis), inverted for L14 because it is the synthesis lecture.
+7. **Phase 4b: Lecture notes images (Lectures 9–14).** ✅ Complete. 222 figures across L9–L14 (30 / 31 / 40 / 48 / 42 / 31), sourced from arXiv tarballs and NASA/ESA mission imagery, capped at two figures per source paper (mission imagery exempt). All AVIF, all referenced in `{figure}` directives with self-contained captions.
+8. **Phase 4c: Lecture notes verification (Lectures 9–14).** ✅ Complete. First, three-tier adversarial review arc per lecture (mechanical rendering, substantive equation/attribution, LOW polish + BibTeX hygiene), then a second independent verification pass on L9 and L10 (39 findings closed in §6), then the full L01-L14 self-made-figure replacement cycle (21 of 21 literature replacements shipped, May 2026), then the sequential L01-L14 adversarial-review cycle (14 atomic commits ending at `546a337`, ~50 fixes, ~530 PDFs read across the cycle; 2026-05-09). All lectures cross-checked for numerical drift (Venus 737 K, CO2 lambda 230, Mars lambda_H 5.3, Earth heat budget 47 TW), figure-caption fidelity, and citation-to-claim accuracy. Bib silent-failure modes fixed (`e80b416`).
+9. **Phase 4d: Inline figure references (Lectures 9–14).** ⏭️ Next. Every figure must be referenced in the body text with `` {numref}`fig:...` ``, rendering as "(Fig. NN.M)". L01-L08 already have near-complete coverage (24 / 25 to 26 / 26 per lecture). L09-L14 are sparse: L9 has 4 / 28, L10 has 1 / 31, L11 has 1 / 40, L12 has 10 / 48, L13 has 2 / 42, L14 has 8 / 30. About 193 figures need an inline reference placed at the natural point in the prose where the figure is discussed. Also closes the two L04 / L06 stragglers. Run lecture-by-lecture; commit per lecture to `origin/main` so the deployed site iterates immediately.
+10. **Phase 4e: Figure-by-figure walkthrough with Tim.** After 4d, walk through every figure in every lecture one at a time, in order (L01 Fig. 1.1 first, L14 Fig. 14.30 last). For each figure: render the page section, present the figure to Tim, Tim decides accept / replace / re-crop / re-caption / drop. The session is interactive: Tim drives the verdict, Claude executes the agreed action immediately (replace from another source, re-crop, edit caption, swap citation, remove the figure and its inline reference). Total scope is 461 figures. Pace: 25-50 figures per session, lecture-by-lecture, with a per-lecture commit at the end. This pass supersedes any earlier "figure spot-check" notes.
+11. **Phase 5: Lecture slides (Lectures 9–14).** ✅ Complete. L9-L14 slide decks built (60+ frames each), three-pass review applied, final deck commit `c53d778` (2026-04-26).
+12. **Phase 3: Worksheets 1–4 + mid-term exam.** Worksheets covering Lectures 1–8 and mid-term covering Lectures 1–7. Reuses tutorial material from `content/course2025` (resonances, N-body, heat-transport, atmosphere-escape problem sets). Worksheet problem sheets are public (this repo); **mid-term exam paper, full solutions, and marking scheme are developed in the private repository** (see §11). Open.
+13. **Phase 6: Worksheets 5–7 + final exam.** Remaining worksheets and the cumulative final exam. Worksheet problem sheets are public; **final exam paper, full solutions, and marking scheme are developed in the private repository** (see §11). Open.
+14. **Phase 7: Review and polish.** Cross-referencing between lectures, consistency check, equation sheet compilation, deployed-site smoke test before the September 2026 teaching slot.
+15. **Phase 8: Video narration scripts and audio recording (final item).** Produce a written narration script per lecture, slide-by-slide, that Tim records as audio. The audio is then overlaid on the slide PDF for YouTube delivery. Scripts written only after all notes, slides, worksheets, and exams are final, because the narration must match the published material verbatim. **Scripts, audio masters, per-slide WAV stems, and composited video files all live in the private repository** (see §11); only the YouTube-published video is publicly accessible. See §10 below for the per-lecture script structure, slide-timing protocol, and recording / overlay workflow.
 
 ---
 
@@ -1217,7 +1244,7 @@ Date opened: **2026-05-16**. **Bootstrap complete 2026-05-16.**
 
 1. Repo name: `IntroductionToPlanetaryScience-private` (matches public repo naming).
 2. Host: `timlichtenberg` personal account (not org-managed), so only Tim has access. Co-instructor / TA access deferred until needed.
-3. Homework full solutions: stay in the **public** repo (Tim's call: "full open access policy; the students are adults"). Only exam material and narration source material live private.
+3. Worksheet full solutions: stay in the **public** repo (Tim's call: "full open access policy; the students are adults"). Only exam material and narration source material live private.
 4. Audio + video storage: **not in git**. Audio masters and composited videos live in a Google Drive folder, accessed through a per-machine `narration/gdrive-<username>` symlink that is gitignored. Mirrors the convention from `~/git/paper-writing/`.
 
 The rest of this section documents the rationale, layout, and release flows. Most of it stands as written before bootstrap; the bootstrap-time changes are reflected above.
