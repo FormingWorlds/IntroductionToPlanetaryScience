@@ -25,7 +25,7 @@
 \end{frame}
 
 % ── Learning objectives ─────────────────────────────────────
-\begin{frame}{Learning Objectives}
+\begin{frame}{Learning objectives}
   By the end of this lecture, you will be able to:
   \vskip8pt
   \begin{itemize}
@@ -54,11 +54,11 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{venus_uv_clouds}{Venus in UV, Mariner 10 (1974). Credit: NASA/JPL-Caltech}
-\section{Cloud Formation}
+\section{Cloud formation}
 % ════════════════════════════════════════════════════════════
 
 % ── Saturation ───────────────────────────────────────────────
-\begin{frame}{Saturation and Condensation}
+\begin{frame}{Saturation and condensation}
   \begin{itemize}
     \item Every vapour has a \textbf{saturation vapour pressure} $P_{\mathrm{sat}}(T)$
     \item When actual vapour pressure exceeds $P_{\mathrm{sat}}$: air is \textbf{supersaturated}
@@ -70,8 +70,30 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{psat_curves}}\\
+  {\footnotesize Saturation vapour pressure for the five main condensables. Course figure.}
+\end{frame}
+
+\begin{frame}{Reading the saturation curves}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{psat_curves}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Every curve is one Clausius-Clapeyron law: near-exponential rise, steeper for larger $L_v/R_v$.
+      \item The lanes at the bottom mark where each species condenses: $\mathrm{CH_4}$ at 80--90~K on Titan, $\mathrm{CO_2}$ at 100--150~K on Mars, $\mathrm{H_2O}$ at 200--280~K, $\mathrm{H_2SO_4}$ across Venus's 230--360~K cloud deck.
+      \item For water, a 20~K cooling cuts $P_{\mathrm{sat}}$ to a quarter (611 vs.\ 2360~Pa across 273--293~K): rising air saturates quickly.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{A single equation, evaluated per species, predicts every cloud deck in the solar system.}
+  \end{columns}
+\end{frame}
+
 % ── Nucleation ──────────────────────────────────────────────
-\begin{frame}{Nucleation: How Droplets Form}
+\begin{frame}{Nucleation: how droplets form}
   Even in supersaturated air, condensation needs a \textbf{seed}.
   \vskip8pt
   \begin{description}
@@ -81,7 +103,7 @@
     \vskip6pt
     \item[Heterogeneous nucleation:] Condensation onto pre-existing particles\\
     \textbf{Condensation nuclei}: dust, volcanic aerosols, sea salt, soot\\
-    Occurs at modest supersaturation ($\mathrm{RH} \gtrsim 100\%$): the dominant mechanism
+    Activates at only $\sim$0.04--0.4\% supersaturation: the dominant mechanism
   \end{description}
   \vskip6pt
   \begin{itemize}
@@ -91,8 +113,30 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{kohler_curves}}\\
+  {\footnotesize K\"ohler curves: equilibrium supersaturation of solution droplets. Course figure.}
+\end{frame}
+
+\begin{frame}{Reading the K\"ohler curves}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{kohler_curves}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item The dashed Kelvin curve is the pure-water barrier: $\sim$12\% supersaturation at $r = 0.01~\mu$m, rising further for smaller embryos.
+      \item Dissolved salt (the Raoult term) pulls the curves down: droplets on condensation nuclei activate at peaks of only 0.04--0.4\%.
+      \item Past its activation peak a droplet grows freely: the peaks decide which aerosols become cloud droplets.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Real clouds nucleate heterogeneously: aerosols lower the barrier by two orders of magnitude.}
+  \end{columns}
+\end{frame}
+
 % ── Lifting condensation level ──────────────────────────────
-\begin{frame}{Lifting Condensation Level (LCL)}
+\begin{frame}{The lifting condensation level (LCL)}
   \begin{itemize}
     \item Rising air cools at the dry adiabatic lapse rate $\Gamma_d = g/c_p$
     \item Vapour pressure stays roughly constant during ascent
@@ -100,13 +144,13 @@
     \item At the altitude where $P_{\mathrm{vapour}} = P_{\mathrm{sat}}(T)$: condensation begins
   \end{itemize}
   \vskip6pt
-  \keyresult{The \textbf{lifting condensation level} (LCL) marks the \textbf{cloud base}. Above it, latent heat release produces the moist adiabatic lapse rate ($\sim$5--6~K\,km$^{-1}$ on Earth vs.\ $\sim$9.8~K\,km$^{-1}$ dry).}
+  \keyresult{The \textbf{lifting condensation level} (LCL) marks the \textbf{cloud base}. Above it, latent heat release produces the moist adiabatic lapse rate ($\sim$5~K\,km$^{-1}$ in Earth's warm lower troposphere vs.\ $\sim$9.8~K\,km$^{-1}$ dry; the observed tropospheric mean is $\sim$6.5).}
   \vskip6pt
   Latent heat $\rightarrow$ buoyancy $\rightarrow$ vigorous convection $\rightarrow$ thunderstorms, hurricanes, cumulonimbus.
 \end{frame}
 
 % ── Cloud types across solar system ─────────────────────────
-\begin{frame}{Cloud Types of the Solar System}
+\begin{frame}{Cloud types of the solar system}
   What condenses depends on temperature and composition:
   \vskip6pt
   \centering
@@ -130,11 +174,11 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{venus_uv_clouds}{Venus in UV. Credit: NASA/JPL-Caltech}
-\section{Blackboard Derivation: Clausius-Clapeyron Equation}
+\section{Blackboard derivation: the Clausius-Clapeyron equation}
 % ════════════════════════════════════════════════════════════
 
 % ── Setup ────────────────────────────────────────────────────
-\begin{frame}{Deriving the Clausius-Clapeyron Equation}
+\begin{frame}{Deriving the Clausius-Clapeyron equation}
   \textbf{Goal:} Derive the exponential dependence of saturation vapour pressure on temperature from thermodynamic phase equilibrium.
   \vskip10pt
   \textbf{Setup: phase equilibrium.}
@@ -148,7 +192,7 @@
 \end{frame}
 
 % ── Derivation ──────────────────────────────────────────────
-\begin{frame}{Derivation: Exact Clausius-Clapeyron}
+\begin{frame}{Derivation: the exact Clausius-Clapeyron relation}
   From thermodynamics: $\dd g = -s\,\dd T + v\,\dd P$
   \vskip6pt
   Setting $\dd g_\ell = \dd g_v$:
@@ -166,7 +210,7 @@
 \end{frame}
 
 % ── Integration step ───────────────────────────────────────
-\begin{frame}{Integrating the Differential Form}
+\begin{frame}{Integrating the differential form}
   Starting from
   $$\dv{P_{\mathrm{sat}}}{T} = \frac{L_v\,P_{\mathrm{sat}}}{R_v\,T^2}$$
   separate variables:
@@ -179,7 +223,7 @@
 \end{frame}
 
 % ── Result ──────────────────────────────────────────────────
-\begin{frame}{The Clausius-Clapeyron Equation}
+\begin{frame}{The Clausius-Clapeyron equation}
   \keyresult{$$\boxed{P_{\mathrm{sat}}(T) = P_{\mathrm{ref}} \exp\!\left[-\frac{L_v}{R_v}\left(\frac{1}{T} - \frac{1}{T_{\mathrm{ref}}}\right)\right]}$$}
   \source{Derivation follows Catling (2017), \textit{Atmospheric Evolution on Inhabited and Lifeless Worlds}, Ch.~1}
   \vskip8pt
@@ -191,8 +235,30 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{water_phase_diagram}}\\
+  {\footnotesize Phase diagram of water. Course figure.}
+\end{frame}
+
+\begin{frame}{The phase diagram behind the equation}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{water_phase_diagram}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item The liquid-vapour curve from the triple point (273.16~K, 611~Pa) to the critical point (647~K, 22.1~MPa) is the integrated Clausius-Clapeyron relation.
+      \item The sublimation branch uses the larger latent heat of sublimation: a steeper curve below the triple point.
+      \item Earth's surface sits inside the liquid field; Mars's $\sim$6~mbar surface lies below the triple-point pressure, so liquid water is not stable there today.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Wherever a $P$--$T$ profile crosses the blue curve, the equation predicts a cloud, a rain, or a frost.}
+  \end{columns}
+\end{frame}
+
 % ── Worked example: water ──────────────────────────────────
-\begin{frame}{Worked Example: Water on Earth}
+\begin{frame}{Worked example: water on Earth}
   For water vapour:
   \vskip4pt
   \centering
@@ -215,66 +281,89 @@
 \end{frame}
 
 % ── Condensing species table ────────────────────────────────
-\begin{frame}{Condensing Species in the Solar System}
+\begin{frame}{Condensing species in the solar system}
   \centering
-  \small
+  \footnotesize
   \begin{tabular}{l c c c c l}
     \toprule
     \textbf{Species} & $L_v$ (kJ\,kg$^{-1}$) & $R_v$ (J\,kg$^{-1}$\,K$^{-1}$) & $L_v/R_v$ (K) & $T_{\mathrm{cond}}$ (K) & \textbf{Where} \\
     \midrule
     $\mathrm{H_2O}$      & 2500 & 462 & 5400 & 200--280 & Earth, Mars \\
-    $\mathrm{H_2SO_4}$   & 540  & 85  & 6400 & 340--380 & Venus \\
+    $\mathrm{H_2SO_4}$   & 540  & 85  & 6400 & 230--360 & Venus \\
     $\mathrm{NH_3}$      & 1370 & 488 & 2800 & 130--150 & Jupiter, Saturn \\
-    $\mathrm{CH_4}$      & 510  & 519 & 980  & 80--90   & Titan \\
-    $\mathrm{CO_2}$      & 571  & 189 & 3020 & 145--175 & Mars \\
+    $\mathrm{CH_4}$      & 510  & 519 & 980  & 80--90   & Titan, Uranus, Neptune \\
+    $\mathrm{CO_2}$      & 571  & 189 & 3020 & 100--150 & Mars \\
     \bottomrule
   \end{tabular}
   \vskip6pt
-  {\tiny\color{ipsText!60} Source: Catling (2017), de Pater \& Lissauer (2010); $T_{\mathrm{cond}}$ is typical cloud-base range}
+  {\tiny\color{ipsText!60} Source: Catling (2017), de Pater \& Lissauer (2010); $T_{\mathrm{cond}}$ is the approximate condensation range at each body's pressure levels}
   \vskip8pt
   \flushleft
   \begin{itemize}
-    \item High $L_v/R_v$ for $\mathrm{H_2SO_4}$: Venus's clouds confined to a narrow altitude range
-    \item Low $L_v/R_v$ for $\mathrm{CH_4}$: Titan's methane clouds extend over a wide range
+    \item High $L_v/R_v$ for $\mathrm{H_2SO_4}$: steep saturation curve, sharply defined cloud base on Venus
+    \item Low $L_v/R_v$ for $\mathrm{CH_4}$: flat curve, Titan stays near saturation over a wide altitude range
   \end{itemize}
 \end{frame}
 
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{jupiter_cloud_layers}{Jupiter cloud layers. Credit: Wikimedia, CC BY-SA 3.0}
-\section{Clouds of the Solar System}
+\section{Clouds of the solar system}
 % ════════════════════════════════════════════════════════════
 
 % ── Venus clouds ────────────────────────────────────────────
-\begin{frame}{Venus: Sulfuric Acid Clouds}
+\begin{frame}{Venus: sulfuric acid clouds}
   \begin{columns}[c]
-    \column{0.40\textwidth}
+    \column{0.46\textwidth}
     \centering
-    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{venus_uv_clouds}
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{venus_uv_clouds}
     \source{NASA/JPL-Caltech (1974)}
 
-    \column{0.57\textwidth}
+    \column{0.50\textwidth}
     \begin{itemize}
       \item $\mathrm{H_2SO_4}$ clouds from 48 to 70~km altitude
       \item Completely obscure the surface at visible wavelengths
       \item Photochemistry:
-      $$\mathrm{SO_2} + \mathrm{O} \rightarrow \mathrm{SO_3}, \quad \mathrm{SO_3} + \mathrm{H_2O} \rightarrow \mathrm{H_2SO_4}$$
+      $$\mathrm{SO_2} + \mathrm{O} \rightarrow \mathrm{SO_3}, \;\, \mathrm{SO_3} + \mathrm{H_2O} \rightarrow \mathrm{H_2SO_4}$$
       \item $\mathrm{SO_2}$ supplied by volcanic outgassing; O from $\mathrm{CO_2}$ photolysis
       \item Unidentified \textbf{UV absorber} creates banded patterns
-      \item Sub-cloud haze extends to $\sim$30~km
+      \item Sub-cloud haze extends down to $\sim$31~km
     \end{itemize}
   \end{columns}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{venus_tz_profile}}\\
+  {\footnotesize Venus thermal structure, VIRA / Venus Express VeRa. Course figure.}
+\end{frame}
+
+\begin{frame}{Where the Venus clouds live}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{venus_tz_profile}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item The deck occupies 48--70~km, where $T$ runs from $\sim$360~K at the base to $\sim$230~K at the top: the stability window of concentrated $\mathrm{H_2SO_4}$ droplets.
+      \item Below it: a thin haze down to $\sim$31~km, then clear, oven-hot $\mathrm{CO_2}$ to the 737~K, 92~bar surface.
+      \item The cold-collar inversion near 65~km shapes the cloud top at high latitudes.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{The clouds sit where Clausius-Clapeyron allows them: a 22~km deck bounded by evaporation below and photochemical $\mathrm{H_2SO_4}$ supply above.}
+  \end{columns}
+\end{frame}
+
 % ── Mars RSL ─────────────────────────────────────────────
-\begin{frame}{Mars Recurring Slope Lineae (RSL)}
+\begin{frame}{Mars recurring slope lineae (RSL)}
   \begin{columns}[c]
-    \column{0.42\textwidth}
+    \column{0.46\textwidth}
     \centering
-    \includegraphics[width=\linewidth,height=0.60\textheight,keepaspectratio]{mars_rsl}
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{mars_rsl}
     \source{NASA/JPL-Caltech/UA/MRO HiRISE}
 
-    \column{0.55\textwidth}
+    \column{0.50\textwidth}
+    \footnotesize
     First seen by HiRISE in 2011: narrow dark streaks that grow during the warmest months.
     \vskip6pt
     \begin{itemize}
@@ -289,11 +378,11 @@
 \end{frame}
 
 % ── Mars clouds ─────────────────────────────────────────────
-\begin{frame}{Mars: Dust and Ice Clouds}
+\begin{frame}{Mars: dust and ice clouds}
   Mars's thin atmosphere ($\sim$6~mbar) supports two cloud types:
   \vskip6pt
   \begin{itemize}
-    \item \textbf{$\mathrm{CO_2}$ ice clouds:} High altitude (50--100~km), frost point $\sim$148~K
+    \item \textbf{$\mathrm{CO_2}$ ice clouds:} High altitude (50--100~km); frost point $\sim$148~K at the 6~mbar surface, near 100~K at mesospheric pressures
     \item \textbf{$\mathrm{H_2O}$ ice clouds:} Lower altitude (10--30~km), over Tharsis region, aphelion cloud belt
     \vskip6pt
     \item \textbf{Mineral dust} plays a central role:
@@ -306,19 +395,20 @@
 \end{frame}
 
 % ── Titan methane cycle detailed ────────────────────────
-\begin{frame}{Titan's Methane Cycle: An Earthlike Analogue}
+\begin{frame}{Titan's methane cycle: an Earthlike analogue}
   \begin{columns}[c]
-    \column{0.40\textwidth}
+    \column{0.46\textwidth}
     \centering
-    \includegraphics[width=\linewidth,height=0.60\textheight,keepaspectratio]{titan_lakes}
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{titan_lakes}
     \source{NASA/JPL-Caltech/ASI/USGS (Cassini)}
 
-    \column{0.57\textwidth}
+    \column{0.50\textwidth}
+    \footnotesize
     Titan has the only other active hydrological cycle in the solar system, with methane replacing water.
     \vskip6pt
     \begin{itemize}
       \item \textbf{Surface:} liquid methane seas near the north pole
-      \item \textbf{Kraken Mare:} $\sim$$1\,100{,}000$~km$^2$, $\sim$300~m deep
+      \item \textbf{Kraken Mare:} $\sim$400{,}000~km$^2$ (Caspian-sized), locally $>$100~m deep (Hayes 2016; Poggiali et al.\ 2020)
       \item Rivers carve channels; methane rain fills lakebeds
       \item Evaporation at equator, rain at poles
       \item 30-yr Titan year drives slow seasonal cycling
@@ -327,8 +417,14 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{titan_clouds}}\\
+  {\footnotesize Methane clouds at Titan's mid-southern latitudes, Cassini ISS. Credit: NASA/JPL-Caltech/SSI.}
+\end{frame}
+
 % ── Titan ────────────────────────────────────────────────────
-\begin{frame}{Titan: Methane Rain}
+\begin{frame}{Titan: methane rain}
   \begin{itemize}
     \item Only known active \textbf{hydrological cycle} beyond Earth, with $\mathrm{CH_4}$ replacing $\mathrm{H_2O}$
     \item Surface: $T \approx 94$~K, $P \approx 1.5$~bar, near the triple point of methane
@@ -340,14 +436,15 @@
 \end{frame}
 
 % ── Giant planet cloud layers ────────────────────────────────
-\begin{frame}{Giant Planets: Layered Cloud Structure}
+\begin{frame}{Giant planets: layered cloud structure}
   \begin{columns}[c]
-    \column{0.42\textwidth}
+    \column{0.46\textwidth}
     \centering
-    \includegraphics[width=\linewidth,height=0.60\textheight,keepaspectratio]{jupiter_cloud_layers}
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{jupiter_cloud_layers}
     \source{Wikimedia, CC BY-SA 3.0}
 
-    \column{0.55\textwidth}
+    \column{0.50\textwidth}
+    \footnotesize
     Vertically layered, predicted by Clausius-Clapeyron:
     \vskip4pt
     \begin{enumerate}
@@ -370,19 +467,19 @@
 \breakslide
 
 % ════════════════════════════════════════════════════════════
-\sectionimage{hadley_cells}{Atmospheric circulation cells. Credit: Wikimedia, public domain}
-\section{Atmospheric Dynamics}
+\sectionimage{earth_jet_stream}{Jet-stream cirrus from orbit. Credit: NASA/JSC}
+\section{Atmospheric dynamics}
 % ════════════════════════════════════════════════════════════
 
 % ── Hadley cell ─────────────────────────────────────────────
-\begin{frame}{The Hadley Cell}
+\begin{frame}{The Hadley cell}
   \begin{columns}[c]
-    \column{0.42\textwidth}
+    \column{0.46\textwidth}
     \centering
-    \includegraphics[width=\linewidth,height=0.60\textheight,keepaspectratio]{hadley_cells}
-    \source{Wikimedia, public domain}
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{hadley_observed}
+    \source{Course figure}
 
-    \column{0.55\textwidth}
+    \column{0.50\textwidth}
     \begin{enumerate}
       \item Intense solar heating at equator $\rightarrow$ air rises
       \item At altitude, air flows poleward
@@ -399,8 +496,14 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{hadley_observed}}\\
+  {\footnotesize Zonal-mean (averaged along latitude circles) overturning circulation of Earth's troposphere. Course figure.}
+\end{frame}
+
 % ── Coriolis effect ─────────────────────────────────────────
-\begin{frame}{The Coriolis Effect}
+\begin{frame}{The Coriolis effect}
   On a rotating planet, moving air is \textbf{deflected}:
   \begin{itemize}
     \item \textbf{Right} in the Northern Hemisphere
@@ -411,7 +514,7 @@
   $$f = 2\Omega \sin\phi$$
   \vskip4pt
   \begin{itemize}
-    \item Earth: $\Omega = 7.27 \times 10^{-5}$~rad\,s$^{-1}$
+    \item Earth: $\Omega = 7.29 \times 10^{-5}$~rad\,s$^{-1}$ (sidereal)
     \item At mid-latitudes ($\phi = 45$\textdegree{}): $f \approx 1.03 \times 10^{-4}$~s$^{-1}$
     \item At equator ($\phi = 0$\textdegree{}): $f = 0$, so no Coriolis deflection
   \end{itemize}
@@ -419,8 +522,30 @@
   \keyresult{The Coriolis effect explains why winds do not blow directly from high to low pressure, and why weather systems rotate.}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{coriolis_effect}}\\
+  {\footnotesize The Coriolis effect seen from the inertial and the rotating frame. Course figure.}
+\end{frame}
+
+\begin{frame}{Two views of one deflection}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{coriolis_effect}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Inertial frame (left): the parcel keeps the eastward speed of its launch point, so its straight path ends up east of the meridian aimed at the pole.
+      \item The ground at higher latitude moves east more slowly: the parcel outruns it.
+      \item Rotating frame (right): the same motion appears as a smooth curve to the right, with strength set by $f = 2\Omega\sin\phi$.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{No force pushes the parcel sideways. The deflection is the rotating planet turning beneath a straight path.}
+  \end{columns}
+\end{frame}
+
 % ── Rossby number ───────────────────────────────────────────
-\begin{frame}{The Rossby Number}
+\begin{frame}{The Rossby number}
   Does rotation matter for a given flow?
   \vskip8pt
   $$\mathrm{Ro} = \frac{U}{fL}$$
@@ -437,7 +562,7 @@
 \end{frame}
 
 % ── Circulation cells vs rotation ───────────────────────────
-\begin{frame}{Circulation Cells and Rotation Rate}
+\begin{frame}{Circulation cells and rotation rate}
   \begin{description}
     \item[Slowly rotating] (Venus, Titan):\\
     Single Hadley cell from equator to pole in each hemisphere.\\
@@ -459,11 +584,11 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{jupiter_cloud_layers}{Jupiter's atmosphere. Credit: Wikimedia, CC BY-SA 3.0}
-\section{Geostrophic Balance \& Jet Streams}
+\section{Geostrophic balance \& jet streams}
 % ════════════════════════════════════════════════════════════
 
 % ── Geostrophic balance ─────────────────────────────────────
-\begin{frame}{Geostrophic Balance}
+\begin{frame}{Geostrophic balance}
   At large scales ($\mathrm{Ro} \ll 1$), steady state = Coriolis force balances pressure gradient:
   \vskip6pt
   $$f\,\hat{k} \times \mathbf{v}_g = -\frac{1}{\rho}\nabla P$$
@@ -477,7 +602,7 @@
 \end{frame}
 
 % ── Thermal wind and jet streams ─────────────────────────────
-\begin{frame}{Jet Streams and the Thermal Wind}
+\begin{frame}{Jet streams and the thermal wind}
   \textbf{Jet streams:} Narrow bands of fast winds ($\sim$30--70~m\,s$^{-1}$ on Earth).
   \vskip6pt
   The \textbf{thermal wind relation} connects vertical wind shear to horizontal temperature gradients:
@@ -490,18 +615,46 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{jupiter_global_map}}\\
+  {\footnotesize Jupiter's equatorial belts and the Great Red Spot, HST/WFC3. Credit: NASA/ESA/STScI/A.~Simon.}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{jupiter_zonal_winds}}\\
+  {\footnotesize Jupiter's cloud-top zonal winds, schematic after Garc\'ia Melendo \& S\'anchez-Lavega (2001). Course figure.}
+\end{frame}
+
+\begin{frame}{Reading Jupiter's jet ladder}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{jupiter_zonal_winds}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Alternating prograde (eastward, blue) and retrograde (westward, red) jets stack from the fast eastward equatorial jet out to $\sim$$\pm 60$\textdegree{} latitude.
+      \item The jets sit at the boundaries between bright zones and dark belts; peak speeds reach $\sim$180~m\,s$^{-1}$.
+      \item Juno gravity data: best-fit e-folding (1/e-decay) depth $\sim$1800~km (range 1000--3000~km) into the molecular envelope.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{How deep do the bands go? Juno's gravity data put the jets thousands of kilometres into the envelope.}
+  \end{columns}
+\end{frame}
+
 % ── Giant planet banding ────────────────────────────────────
-\begin{frame}{Giant Planet Banding}
+\begin{frame}{Giant planet banding}
   \begin{itemize}
     \item \textbf{Zones} (light): rising air, high clouds (ammonia ice tops)
     \item \textbf{Belts} (dark): sinking air, deeper cloud layers exposed
     \item Strong \textbf{zonal jets} between adjacent bands:
     \begin{itemize}
-      \item Jupiter: $\sim$150~m\,s$^{-1}$
+      \item Jupiter: peaks of $\sim$180~m\,s$^{-1}$
       \item Saturn: $\sim$400~m\,s$^{-1}$
     \end{itemize}
     \item Jets remarkably stable over decades of observation
-    \item Juno gravity measurements: jets extend deep into the interior
+    \item Juno gravity: best-fit decay depth $\sim$1800~km into the molecular envelope
   \end{itemize}
   \vskip6pt
   \keyresult{The same geostrophic and thermal wind physics that produces Earth's jet streams creates the banded structure of the giant planets, just with many more cells due to rapid rotation.}
@@ -510,18 +663,19 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{jupiter_great_red_spot}{Jupiter's Great Red Spot. Credit: NASA/JPL-Caltech/SwRI/MSSS}
-\section{Weather \& Storms in the Solar System}
+\section{Weather \& storms in the solar system}
 % ════════════════════════════════════════════════════════════
 
 % ── Mars dust storms ────────────────────────────────────────
-\begin{frame}{Mars: Dust Storms}
+\begin{frame}{Mars: dust storms}
   \begin{columns}[c]
-    \column{0.45\textwidth}
+    \column{0.46\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{mars_dust_storm}
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{mars_dust_storm}
     \source{NASA/JPL-Caltech/MSSS}
 
-    \column{0.52\textwidth}
+    \column{0.50\textwidth}
+    \footnotesize
     \begin{itemize}
       \item Local storms: dust lofted to 10--30~km
       \item Occasionally grow into \textbf{global dust storms}
@@ -539,7 +693,7 @@
 \end{frame}
 
 % ── Venus super-rotation ────────────────────────────────────
-\begin{frame}{Venus: Super-Rotation}
+\begin{frame}{Venus: super-rotation}
   \begin{itemize}
     \item Venus's surface rotates once every 243 Earth days (retrograde)
     \item Cloud-top winds: $\sim$100~m\,s$^{-1}$, circling the planet in $\sim$4 days
@@ -554,20 +708,42 @@
   \end{alertblock}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{sanchezlavega2008_venus_winds}}\\
+  {\footnotesize Venus cloud-level winds from VIRTIS, Venus Express's imaging spectrometer. Reproduced from S\'anchez-Lavega et al.\ (2008).}
+\end{frame}
+
+\begin{frame}{Measuring super-rotation}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{sanchezlavega2008_venus_winds}}
+    \column{0.50\textwidth}
+    \small
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Cloud tracking at three wavelengths probes three altitudes: $\sim$66~km and $\sim$61~km by day, $\sim$47~km by night.
+      \item Zonal winds: $\sim$105~m\,s$^{-1}$ at the cloud top, 60--70~m\,s$^{-1}$ at the cloud base: the whole deck super-rotates.
+      \item Meridional winds are ten times weaker, poleward at the top: a slow overturning beneath a fast zonal spin.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{The super-rotation extends through the whole cloud deck, 60 times faster than the planet beneath.}
+  \end{columns}
+\end{frame}
+
 % ── Jupiter GRS ─────────────────────────────────────────────
-\begin{frame}{Jupiter: The Great Red Spot}
+\begin{frame}{Jupiter: the Great Red Spot}
   \begin{columns}[c]
-    \column{0.45\textwidth}
+    \column{0.46\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{jupiter_great_red_spot}
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{jupiter_great_red_spot}
     \source{NASA/JPL-Caltech/SwRI/MSSS (Juno)}
 
-    \column{0.52\textwidth}
+    \column{0.50\textwidth}
     \begin{itemize}
       \item \textbf{Largest storm in the solar system}
       \item Anticyclonic vortex, larger than Earth
       \item Winds: $\sim$120~m\,s$^{-1}$ at periphery
-      \item First recorded 1664; continuous observations since $\sim$1830
+      \item First telescopic sightings 1664--65 (possibly a different spot); uninterrupted records since $\sim$1830
       \item Confined between two opposing zonal jets
       \item Sustained by absorbing smaller vortices + deep $\mathrm{H_2O}$ latent heat
       \item Slowly \textbf{shrinking} over the past century
@@ -575,19 +751,41 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{juno_polar_cyclones}}\\
+  {\footnotesize Jupiter's north-polar cyclone cluster from JIRAM, Juno's infrared imager. Credit: NASA/JPL-Caltech/SwRI/ASI/INAF.}
+\end{frame}
+
+\begin{frame}{Polar order instead of polar chaos}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{juno_polar_cyclones}}
+    \column{0.50\textwidth}
+    \small
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Eight cyclones ring a central one at Jupiter's north pole; five ring the south pole.
+      \item The clusters have stayed in place over years of Juno perijoves (closest-approach flybys): no merging, no drifting apart.
+      \item A sixth southern cyclone appeared in late 2019 and dissipated within about two months (Mura et al.\ 2021).
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Stable polygons of cyclones: a regime with no Earth analogue, probing how deep rotating convection organises itself.}
+  \end{columns}
+\end{frame}
+
 % ── Saturn hexagon ──────────────────────────────────────────
-\begin{frame}{Saturn: The Hexagonal Jet Stream}
+\begin{frame}{Saturn: the hexagonal jet stream}
   \begin{columns}[c]
-    \column{0.42\textwidth}
+    \column{0.46\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{saturn_hexagon}
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{saturn_hexagon}
     \source{NASA/JPL-Caltech/SSI (Cassini, 2013)}
 
-    \column{0.55\textwidth}
+    \column{0.50\textwidth}
     \begin{itemize}
       \item Persistent hexagonal pattern at $\sim$78\textdegree{}N
       \item Diameter: $\sim$30,000~km ($>$ Earth's diameter)
-      \item Discovered by Voyager (1981), imaged by Cassini
+      \item First seen in the Voyager flyby images (1980--81), imaged by Cassini
       \item Explained as a stable \textbf{Rossby wave} with six-fold symmetry
       \item Resonance between jet speed, width, and Coriolis gradient
     \end{itemize}
@@ -596,8 +794,14 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{neptune_great_dark_spot}}\\
+  {\footnotesize Neptune's Great Dark Spot, Voyager 2 (1989). Credit: NASA/JPL-Caltech.}
+\end{frame}
+
 % ── Neptune ─────────────────────────────────────────────────
-\begin{frame}{Neptune: Extreme Weather on a Cold World}
+\begin{frame}{Neptune: extreme weather on a cold world}
   \begin{itemize}
     \item Receives only $\sim$1/900th of Earth's solar flux
     \item Yet has the \textbf{fastest winds} in the solar system: $\sim$580~m\,s$^{-1}$
@@ -613,11 +817,11 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{mars_dust_storm}{Mars global dust storm (2018). Credit: NASA/JPL-Caltech/MSSS}
-\section{Climate Evolution \& the Faint Young Sun}
+\section{Climate evolution \& the faint young Sun}
 % ════════════════════════════════════════════════════════════
 
 % ── Solar luminosity evolution ──────────────────────────────
-\begin{frame}{Solar Luminosity Evolution}
+\begin{frame}{Solar luminosity evolution}
   The Sun brightens as H $\rightarrow$ He increases the core mean molecular weight:
   \vskip6pt
   $$\frac{L(t)}{\Lsun} \approx \left[1 + \frac{2}{5}\left(1 - \frac{t}{t_\odot}\right)\right]^{-1}$$
@@ -630,8 +834,30 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{feulner2012_solar_luminosity}}\\
+  {\footnotesize Solar luminosity across the geologic eons. Reproduced from Feulner (2012).}
+\end{frame}
+
+\begin{frame}{Reading the faint-young-Sun curve}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{feulner2012_solar_luminosity}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item The standard solar model and Gough's analytic formula agree to $\sim$0.1\% over the past 4~Gyr.
+      \item At the start of the Archean the Sun was $\sim$25\% fainter: with today's greenhouse, Earth would have been frozen.
+      \item The eon labels along the top tie the luminosity curve to the geological record: liquid water is inferred throughout.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{The Sun brightened by a third over Earth's lifetime, yet the sedimentary record never freezes over. Something compensated.}
+  \end{columns}
+\end{frame}
+
 % ── The paradox ─────────────────────────────────────────────
-\begin{frame}{The Faint Young Sun Paradox}
+\begin{frame}{The faint young Sun paradox}
   A 30\% fainter Sun $\rightarrow$ $T_{\mathrm{eff}} \approx 255 \times (0.71)^{1/4} \approx 234$~K
   \vskip4pt
   With a modern greenhouse: surface well below freezing $\rightarrow$ \textbf{frozen ocean}.
@@ -648,10 +874,10 @@
 \end{frame}
 
 % ── Solutions ────────────────────────────────────────────────
-\begin{frame}{Possible Solutions}
+\begin{frame}{Possible solutions}
   \begin{itemize}
     \item \textbf{Enhanced $\mathrm{CO_2}$ greenhouse:} 10--1000$\times$ more $\mathrm{CO_2}$ than today\\
-    Plausible before the emergence of land plants
+    Plausible: less exposed continental area, so the weathering thermostat settles at higher $\mathrm{CO_2}$
 
     \vskip4pt
     \item \textbf{Methane greenhouse:} Biogenic $\mathrm{CH_4}$ from early methanogens\\
@@ -668,8 +894,14 @@
   Most likely: \textbf{combination} of elevated $\mathrm{CO_2}$ and $\mathrm{CH_4}$, regulated by the carbonate-silicate cycle.
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{mars_valley_networks}}\\
+  {\footnotesize Noachian valley networks, Mars Express HRSC. Credit: ESA/DLR/FU Berlin (G.~Neukum).}
+\end{frame}
+
 % ── Mars climate puzzle ─────────────────────────────────────
-\begin{frame}{The Mars Climate Puzzle}
+\begin{frame}{The Mars climate puzzle}
   Mars at 1.52~AU $\rightarrow$ less than half of Earth's solar flux. With a faint young Sun: even worse.
   \vskip6pt
   Yet the geological evidence for warm, wet conditions in the Noachian ($>$3.7~Ga) is strong:
@@ -685,11 +917,11 @@
 \end{frame}
 
 % ── Milankovitch cycles ──────────────────────────────────
-\begin{frame}{Milankovitch Cycles: Orbital Forcing}
+\begin{frame}{Milankovitch cycles: orbital forcing}
   \begin{columns}[c]
-    \column{0.48\textwidth}
+    \column{0.46\textwidth}
     \centering
-    \includegraphics[width=\linewidth,height=0.75\textheight,keepaspectratio]{milankovitch_cycles}
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{milankovitch_cycles}
     \source{Wikimedia, CC BY-SA}
 
     \column{0.50\textwidth}
@@ -707,7 +939,7 @@
 \end{frame}
 
 % ── Climate feedbacks ───────────────────────────────────────
-\begin{frame}{Climate Feedbacks}
+\begin{frame}{Climate feedbacks}
   Climate stability depends on feedback mechanisms:
   \vskip6pt
   \begin{description}
@@ -718,7 +950,7 @@
     \vskip4pt
     \item[Water vapour feedback] (positive):\\
     Warming $\rightarrow$ more evaporation $\rightarrow$ $\mathrm{H_2O}$ is a greenhouse gas $\rightarrow$ more warming.\\
-    Approximately doubles CO$_2$ warming. If runaway: \textbf{Venus scenario}.
+    The largest positive feedback: with all feedbacks, CO$_2$ doubling warms $\sim$3~K vs.\ $\sim$1.2~K without. If runaway: \textbf{Venus scenario}.
 
     \vskip4pt
     \item[Cloud feedback] (complex):\\
@@ -730,11 +962,11 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{carbonate_silicate_cycle}{Carbonate-silicate cycle. Credit: Wikimedia, CC BY-SA 4.0}
-\section{The Carbonate-Silicate Cycle}
+\section{The carbonate-silicate cycle}
 % ════════════════════════════════════════════════════════════
 
 % ── Urey reaction ───────────────────────────────────────────
-\begin{frame}{The Urey Reaction}
+\begin{frame}{The Urey reaction}
   Silicate weathering by atmospheric $\mathrm{CO_2}$ dissolved in rainwater:
   \vskip8pt
   \keyresult{$$\mathrm{CaSiO_3} + \mathrm{CO_2} + \mathrm{H_2O} \longrightarrow \mathrm{CaCO_3} + \mathrm{SiO_2} + \mathrm{H_2O}$$}
@@ -749,14 +981,14 @@
 \end{frame}
 
 % ── Volcanic source ─────────────────────────────────────────
-\begin{frame}{Volcanic Outgassing: The Carbon Source}
+\begin{frame}{Volcanic outgassing: the carbon source}
   \begin{columns}[c]
-    \column{0.42\textwidth}
+    \column{0.46\textwidth}
     \centering
-    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{carbonate_silicate_cycle}
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{carbonate_silicate_cycle}
     \source{Wikimedia, CC BY-SA 4.0}
 
-    \column{0.55\textwidth}
+    \column{0.50\textwidth}
     \begin{itemize}
       \item \textbf{Plate tectonics} closes the cycle
       \item Carbonate ocean floor is subducted into the mantle
@@ -769,8 +1001,30 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{foley2024_carbonate_silicate}}\\
+  {\footnotesize The carbonate-silicate cycle on the plate-tectonic Earth. Reproduced from Foley (2024).}
+\end{frame}
+
+\begin{frame}{Sources and sinks of the thermostat}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{foley2024_carbonate_silicate}}
+    \column{0.50\textwidth}
+    \small
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Sources: arc, ridge, and plume volcanism return $\mathrm{CO_2}$ from the mantle and from subducted carbonates.
+      \item Sinks: silicate weathering and carbonate burial, with seafloor weathering as a secondary sink.
+      \item Warmer climate $\rightarrow$ faster weathering $\rightarrow$ $\mathrm{CO_2}$ drawdown $\rightarrow$ cooling; response time $\sim$0.5~Myr.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{A closed loop through atmosphere, ocean, crust, and mantle: break any link (Venus, Mars) and the thermostat fails.}
+  \end{columns}
+\end{frame}
+
 % ── Negative feedback ───────────────────────────────────────
-\begin{frame}{The Negative Feedback Thermostat}
+\begin{frame}{The negative feedback thermostat}
   Weathering rate depends strongly on temperature (Arrhenius-type):
   \vskip6pt
   \begin{enumerate}
@@ -788,7 +1042,8 @@
 \end{frame}
 
 % ── Venus and Mars ──────────────────────────────────────────
-\begin{frame}{Venus \& Mars: Failed Thermostats}
+\begin{frame}{Venus \& Mars: failed thermostats}
+  \footnotesize
   The cycle requires \textbf{liquid water} (to weather rocks) and \textbf{active volcanism} (to recycle carbon):
   \vskip8pt
   \begin{columns}[T]
@@ -817,17 +1072,17 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{saturn_hexagon}{Saturn's hexagonal jet stream. Credit: NASA/JPL-Caltech/SSI}
-\section{Recent Advances \& Outlook}
+\section{Recent advances \& outlook}
 % ════════════════════════════════════════════════════════════
 
 % ── Runaway greenhouse ──────────────────────────────────
-\begin{frame}{The Runaway Greenhouse}
+\begin{frame}{The runaway greenhouse}
   A planet that absorbs too much stellar flux can lose its oceans entirely.
   \vskip6pt
   \begin{itemize}
     \item Water vapour is a strong greenhouse gas
     \item Warmer surface $\rightarrow$ more evaporation $\rightarrow$ more greenhouse $\rightarrow$ hotter surface
-    \item Outgoing longwave radiation asymptotes to $\sim$280--350~W/m$^2$ (Simpson-Nakajima limit)
+    \item Outgoing longwave radiation asymptotes to $\sim$280--310~W/m$^2$ (Simpson-Nakajima limit)
     \item If absorbed stellar flux exceeds this, the positive feedback is unstoppable
     \item Oceans fully evaporate; H$_2$O photolysed by UV; H escapes hydrodynamically
     \item End state: dry, CO$_2$-rich atmosphere (Venus today)
@@ -837,7 +1092,7 @@
 \end{frame}
 
 % ── Ice-albedo feedback ────────────────────────────────
-\begin{frame}{Ice-Albedo Feedback: The Ultimate Amplifier}
+\begin{frame}{Ice-albedo feedback: the ultimate amplifier}
   A positive feedback loop that can destabilise climate:
   \vskip6pt
   \begin{center}
@@ -847,26 +1102,48 @@
   \begin{itemize}
     \item Ice and snow reflect $\sim$60--90\% of incident sunlight vs.\ $\sim$10--30\% for ocean and land
     \item For Earth: the feedback is strong enough to create a \textbf{tipping point}
-    \item If global ice cover reaches $\sim$30\% (down to $\sim$30\textdegree{} latitude), the feedback becomes irreversible
-    \item Runaway cooling drives the planet into a \textbf{snowball state}
-    \item Amplification factor: $\Delta T_{\mathrm{total}} \approx 2\text{--}3\times\Delta T_{\mathrm{forcing}}$ on modern Earth
-    \item The dominant concern for modern climate: loss of Arctic sea ice accelerates warming regionally
+    \item If the ice line advances to $\sim$30\textdegree{} latitude (about half the surface area), the feedback runs away
+    \item Runaway cooling then drives the planet into a \textbf{snowball state}
+    \item On modern Earth the same feedback amplifies polar warming (Arctic amplification), far from the runaway threshold
   \end{itemize}
   \vskip4pt
   {\tiny\color{ipsText!60} Source: Pierrehumbert (2010); North et al.\ (1981)}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{snowball_bistability}}\\
+  {\footnotesize Energy-balance bistability of the ice-albedo feedback. Course figure.}
+\end{frame}
+
+\begin{frame}{Reading the bistability diagram}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{snowball_bistability}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Red: outgoing longwave $\varepsilon\sigma T^4$; blue: absorbed sunlight, with albedo stepping from 0.3 (ice-free) to 0.6 (ice-covered).
+      \item Three crossings: a stable snowball at 250~K, an unstable threshold at 267~K, a stable warm state at 287~K.
+      \item Push the climate past the middle crossing and the feedback carries it the rest of the way, in either direction.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Same Sun, two stable Earths: which one you get depends on where you start.}
+  \end{columns}
+\end{frame}
+
 % ── Snowball Earth ──────────────────────────────────────
 \begin{frame}{Snowball Earth}
   \begin{columns}[c]
-    \column{0.42\textwidth}
+    \column{0.46\textwidth}
     \centering
-    \includegraphics[width=\linewidth,height=0.60\textheight,keepaspectratio]{snowball_earth}
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{snowball_earth}
     \source{Wikimedia Commons, public domain}
 
-    \column{0.55\textwidth}
+    \column{0.50\textwidth}
+    \footnotesize
     \begin{itemize}
-      \item Earth may have gone through \textbf{two snowball states} in the Neoproterozoic ($\sim$720 and 635~Ma)
+      \item Earth may have gone through \textbf{two snowball states} in the Neoproterozoic ($\sim$717 and 635~Ma)
       \item Triggered by ice-albedo runaway when the ice line reaches $\sim$30\textdegree{} latitude
       \item Surface temperatures drop below $-50$\textdegree C
       \item Volcanic CO$_2$ accumulates over $\sim$10--100~Myr
@@ -879,17 +1156,15 @@
 \end{frame}
 
 % ── Thermal tides ────────────────────────────────────────
-\begin{frame}{Venus' Super-Rotation: Thermal Tides}
-  How does Venus' atmosphere rotate 60 times faster than the surface?
+\begin{frame}{Venus's super-rotation: thermal tides}
+  How does Venus's atmosphere rotate 60 times faster than the surface?
   \vskip6pt
   \begin{itemize}
     \item Surface rotation: 243 days, retrograde
     \item Cloud-top winds: 4 days, $\sim$100~m/s
-    \item Drives the atmosphere equatorward and upward from the surface
-    \item \textbf{Thermal tides:} solar heating of the cloud layer creates day-night pressure gradients
-    \item These generate atmospheric waves that transport angular momentum upward
-    \item \textbf{Planetary-scale waves} redistribute angular momentum meridionally
-    \item Combined effect: upward-equatorward flux sustains super-rotation
+    \item Sustaining this requires angular momentum transport \textbf{upward and equatorward}
+    \item \textbf{Thermal tides:} solar heating of the cloud layer creates day-night pressure gradients, which launch waves that carry angular momentum upward
+    \item \textbf{Planetary-scale waves} redistribute angular momentum toward the equator
     \item Detailed mechanism still debated; Akatsuki measurements ongoing
   \end{itemize}
   \vskip4pt
@@ -897,7 +1172,7 @@
 \end{frame}
 
 % ── Carbonate-silicate equation detail ────────────────
-\begin{frame}{Quantifying the Weathering Feedback}
+\begin{frame}{Quantifying the weathering feedback}
   A simple model for the carbonate-silicate thermostat:
   \vskip6pt
   $$W(T) = W_0 \exp\!\left(\frac{T - T_0}{T_e}\right)$$
@@ -915,41 +1190,24 @@
   {\tiny\color{ipsText!60} Source: Walker et al.\ (1981); Pierrehumbert (2010)}
 \end{frame}
 
-% ── Neptune storms ─────────────────────────────────────
-\begin{frame}{Neptune's Extreme Weather}
-  Despite receiving only 1/900$^{\mathrm{th}}$ of Earth's solar flux, Neptune has the fastest winds in the solar system.
-  \vskip6pt
-  \begin{itemize}
-    \item Wind speeds up to 580~m/s ($\sim$2100~km/h)
-    \item \textbf{Great Dark Spot} discovered by Voyager 2 (1989)
-    \item Disappeared by 1994 (HST observations); new dark spots have since formed
-    \item Energy source: internal heat, not sunlight
-    \item Neptune radiates $\sim$2.6$\times$ more power than it absorbs from the Sun
-    \item Heat from slow contraction + possible compositional settling in the interior
-    \item Transient storms contrast with Jupiter's long-lived GRS
-  \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Hammel et al.\ (1989); Pearl \& Conrath (1991)}
-\end{frame}
-
 % ── Venus phosphine ─────────────────────────────────────
-\begin{frame}{The Venus Phosphine Debate}
-  In 2020, a team reported tentative detection of phosphine (PH$_3$) in Venus' clouds.
+\begin{frame}{The Venus phosphine debate}
+  In 2020, a team reported tentative detection of phosphine (PH$_3$) in Venus's clouds.
   \vskip6pt
   \begin{itemize}
-    \item Greaves et al.\ (2020): $\sim$20~ppb PH$_3$ at 53--60~km altitude
-    \item No known abiotic source in Venus' atmosphere could explain this abundance
+    \item Greaves et al.\ (2021): $\sim$20~ppb PH$_3$ at 53--60~km altitude
+    \item No known abiotic source in Venus's atmosphere could explain this abundance
     \item Sparked biological speculation: could PH$_3$ be produced by hypothetical Venusian microbes?
-    \item Subsequent reanalyses: the signal is much weaker (Villanueva et al.\ 2021)
+    \item Subsequent reanalyses: signal much weaker or absent (Villanueva et al.\ 2021); mesospheric SO$_2$ reproduces the feature (Lincowski et al.\ 2021)
     \item Current status: unconfirmed, controversial
     \item Motivated new Venus missions: DAVINCI (NASA), EnVision (ESA), VERITAS (NASA)
   \end{itemize}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Greaves et al.\ (2020), \textit{Nat.\ Astron.}; Villanueva et al.\ (2021)}
+  {\tiny\color{ipsText!60} Source: Greaves et al.\ (2021), \textit{Nat.\ Astron.}; Villanueva et al.\ (2021)}
 \end{frame}
 
 % ── Dragonfly ───────────────────────────────────────────
-\begin{frame}{Dragonfly: A Rotorcraft for Titan}
+\begin{frame}{Dragonfly: a rotorcraft for Titan}
   NASA's Dragonfly (launch 2028, arrival 2034) will explore Titan's surface.
   \vskip6pt
   \begin{itemize}
@@ -961,17 +1219,17 @@
     \item 2.7~year primary mission, visiting 20+ sites
   \end{itemize}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Turtle et al.\ (2019)}
+  {\tiny\color{ipsText!60} Source: Barnes et al.\ (2021), \textit{PSJ}}
 \end{frame}
 
 % ── JWST exoplanet weather ─────────────────────────────
-\begin{frame}{JWST: Weather on Distant Worlds}
+\begin{frame}{JWST: weather on distant worlds}
   JWST is transforming our view of exoplanet atmospheres.
   \vskip6pt
   \begin{itemize}
-    \item WASP-39 b: first clear detection of CO$_2$ in an exoplanet atmosphere (2022)
-    \item WASP-18 b: sub-micron wavelength thermal emission shows dayside-to-nightside heat redistribution
-    \item WASP-107 b: first firm detection of SO$_2$ $\Rightarrow$ photochemistry in action
+    \item WASP-39 b: first clear detection of CO$_2$ in an exoplanet atmosphere (2022), then SO$_2$ from photochemistry (2023)
+    \item WASP-107 b: SO$_2$ and silicate cloud signatures (2024)
+    \item Phase curves map dayside-to-nightside heat redistribution on hot Jupiters
     \item Measurements of terminator cloudiness (east-west asymmetry)
     \item Searching for weather patterns, circulation signatures
     \item First steps toward characterising habitable-zone rocky planet atmospheres
@@ -981,17 +1239,17 @@
 \end{frame}
 
 % ── Early Mars climate ─────────────────────────────────
-\begin{frame}{Recent Advances: Early Mars Climate}
+\begin{frame}{Recent advances: early Mars climate}
   \begin{itemize}
     \item Updated 3D climate models with reducing gases (H$_2$, CH$_4$) can warm early Mars
-    \item Wordsworth et al.\ (2021): collisionally-induced absorption by H$_2$-CO$_2$ is a strong greenhouse effect at high CO$_2$ pressures
+    \item Collision-induced H$_2$-CO$_2$ absorption is a strong greenhouse at high CO$_2$ pressures (Wordsworth et al.\ 2017)
     \item Impact-triggered warming events: large impactors deliver heat and deflect vapour into the atmosphere
     \item Localised glaciation models: the ``icy highlands'' picture
     \item Episodic vs.\ sustained warming: still debated
     \item Perseverance (Jezero crater, 2021--) investigating the aqueous record
   \end{itemize}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Wordsworth (2016); Wordsworth et al.\ (2021)}
+  {\tiny\color{ipsText!60} Source: Wordsworth (2016); Wordsworth et al.\ (2017)}
 \end{frame}
 
 % ── Summary ────────────────────────────────────────────────
@@ -1008,6 +1266,15 @@
   \end{enumerate}
 \end{frame}
 
+% ── Looking ahead ───────────────────────────────────────────
+\begin{frame}{Looking ahead to Lecture 7}
+  \begin{itemize}
+    \item Three lectures treated planets from the top down: energy budgets, vertical structure, and now clouds, winds, and climate.
+    \item Lecture~7 turns to the solid surfaces beneath: impact craters as chronometers, volcanism and tectonics from within, erosion and weathering from above.
+    \item The climate story returns as geology: Mars's valley networks become a record to read, not only a puzzle to solve.
+  \end{itemize}
+\end{frame}
+
 % ── Final slide ─────────────────────────────────────────────
 \begin{frame}[plain,noframenumbering]
   \begin{tikzpicture}[remember picture, overlay]
@@ -1018,9 +1285,10 @@
   \begin{center}
     {\color{white}\Large\bfseries Questions?}
     \vskip20pt
-    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~7. Planetary Surfaces: Geology, Geomorphology, \& Geophysics}}
-    \vskip16pt
-    {\color{ipsLightFill!70}\small Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
+    {\color{white!85}\large Next: Lecture 7, Planetary surfaces: geology, geomorphology \& geophysics}\\[4pt]
+    {\color{white!85}\small Mon 28 Sep, 15:00--17:00, room 5419.0161 (Collegezaal)}\\[12pt]
+    {\color{white!85}\small Next tutorial: Fri 25 Sep, 13:00--15:00, room 5419.0161 (Collegezaal)}\\[20pt]
+    {\color{white!70}\small \texttt{https://ips.formingworlds.space}}
   \end{center}
   \vfill
 \end{frame}

@@ -223,7 +223,7 @@ $$
 \mathrm{SO_2} + \mathrm{O} \longrightarrow \mathrm{SO_3}, \qquad \mathrm{SO_3} + \mathrm{H_2O} \longrightarrow \mathrm{H_2SO_4}
 $$
 
-where the atomic oxygen comes from ultraviolet photolysis of $\mathrm{CO_2}$ high in the atmosphere, and the $\mathrm{SO_2}$ is supplied by volcanic outgassing. Below the main cloud deck lies a diffuse sub-cloud haze extending down to $\sim$30 km. An unidentified **UV absorber** in the upper clouds absorbs roughly half the solar UV flux and creates the distinctive banded patterns visible in ultraviolet images. Venus's vertical thermal structure with cloud-deck and sub-cloud-haze altitude bands is shown in {numref}`fig:venus-tz`.
+where the atomic oxygen comes from ultraviolet photolysis of $\mathrm{CO_2}$ high in the atmosphere, and the $\mathrm{SO_2}$ is supplied by volcanic outgassing. Below the main cloud deck lies a diffuse sub-cloud haze extending down to $\sim$31 km. An unidentified **UV absorber** in the upper clouds absorbs roughly half the solar UV flux and creates the distinctive banded patterns visible in ultraviolet images. Venus's vertical thermal structure with cloud-deck and sub-cloud-haze altitude bands is shown in {numref}`fig:venus-tz`.
 
 ```{figure} figures/venus_uv_clouds.avif
 :name: fig:venus-uv-clouds
