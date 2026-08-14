@@ -13,6 +13,7 @@ parts:
     numbered: false
     chapters:
       - file: lecture_slides
+      - file: minilectures
   - caption: Sheets
     numbered: false
     chapters:

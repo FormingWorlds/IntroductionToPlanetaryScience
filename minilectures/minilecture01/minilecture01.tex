@@ -1,0 +1,193 @@
+% minilecture01.tex: Tutorial 1 mini-lecture: Orbits & Formation
+% Planetary Systems, Kapteyn Institute, University of Groningen
+% A 5-10 minute recap, presented by the TAs at the start of Tutorial 1,
+% of the Lecture 1-2 concepts that Worksheet 1 trains.
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme and macros (shared with the lecture decks) ────────
+\usepackage{../../slides/common/beamerthemeIPS}
+\input{../../slides/common/macros}
+\graphicspath{{figures/}{../../slides/lecture02/figures/}{../../slides/common/}}
+
+% ── Metadata ────────────────────────────────────────────────
+\title[T1 mini-lecture: Orbits \& Formation]{Tutorial 1 Mini-Lecture:\\Orbits \& Formation}
+\subtitle{The concepts behind Worksheet 1 \textbullet\ Lectures 1--2}
+\author{}
+\institute{Kapteyn Astronomical Institute\\University of Groningen}
+\date{2026}
+\titlebgcredit{HL Tauri, ALMA (2014). Credit: ALMA (ESO/NAOJ/NRAO)}
+\titlebgopacity{0.55}
+
+% ════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Roadmap ─────────────────────────────────────────────────
+\begin{frame}{What Worksheet 1 trains}
+  Five problems, all built on Lectures 1--2. The physics you need, per problem:
+  \vskip6pt\relax
+  \begin{enumerate}
+    \item \textbf{Weighing the Sun and Jupiter}: Kepler's third law as a scale.
+    \item \textbf{The cheapest route to Mars}: vis-viva and orbital energy.
+    \item \textbf{The Laplace resonance}: period ratios, conjunctions, tidal heating.
+    \item \textbf{Tides and the Roche limit}: differential gravity, reading a formula.
+    \item \textbf{Planetesimals to planets}: gravitational focusing, the disk's mass budget.
+  \end{enumerate}
+  \vskip6pt\relax
+  \keyresult{Every problem has the shape and level of one exam question. The worksheets define what the exam expects.}
+\end{frame}
+
+% ── Problem 1 concepts ──────────────────────────────────────
+\begin{frame}{Weighing by orbits: Kepler's third law}
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Force balance on a circular orbit gives
+    \[
+      \boxed{M = \frac{4\pi^2 r^3}{G P^2}}
+    \]
+    \begin{itemize}
+      \item One period + one orbital size $=$ the \textbf{central mass}.
+      \item The orbiter's own mass \textbf{cancels}.
+      \item Works for \emph{any} central body: the Sun from a planet, Jupiter from a moon.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{The fine print}
+      The exact form contains $G(M + m)$: what you measure is the \emph{sum} of both masses.
+      For Jupiter about the Sun that is a $\sim 0.1\%$ effect.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{Kepler's third law is a scale. Read carefully \emph{what} it weighs.}
+\end{frame}
+
+% ── Problem 2 concepts ──────────────────────────────────────
+\begin{frame}{Vis-viva and orbital energy}
+  \begin{columns}[T]
+    \column{0.50\textwidth}
+    Energy depends on $a$ \textbf{alone}, and speed follows:
+    \[
+      E = -\frac{GMm}{2a},
+      \qquad
+      \boxed{v^2 = GM\left(\frac{2}{r} - \frac{1}{a}\right)}
+    \]
+    \begin{itemize}
+      \item Circular orbit ($r = a$): $v = \sqrt{GM/a}$.
+      \item Escape ($E = 0$): $v = \sqrt{2GM/r}$.
+      \item Apsis distances: $r_p + r_a = 2a$.
+    \end{itemize}
+
+    \column{0.46\textwidth}
+    {\footnotesize An Earth--Mars transfer (curve) vs the circular speeds (circles); arrows mark the two speed increases.}
+    \begin{center}
+    \begin{tikzpicture}[line cap=round, scale=0.62]
+      \draw[->, ipsText] (0,0) -- (6.3,0) node[right=1pt, font=\scriptsize] {$r$};
+      \draw[->, ipsText] (0,0) -- (0,4.4) node[above=1pt, font=\scriptsize] {$v$};
+      \foreach \x/\lab in {0.45/1.000, 5.17/1.524}{
+        \draw[ipsText] (\x,0) -- (\x,-0.10) node[below, font=\scriptsize] {\lab\,AU};}
+      \draw[ipsAccent, thick] plot[smooth] coordinates
+        {(0.45,3.82) (0.90,3.43) (1.35,3.05) (2.25,2.36) (3.15,1.72) (4.05,1.13) (5.17,0.44)};
+      \fill[ipsAccent] (0.45,3.82) circle (0.07);
+      \fill[ipsAccent] (5.17,0.44) circle (0.07);
+      \draw[ipsOrange, fill=white, thick] (0.45,2.94) circle (0.07);
+      \draw[ipsOrange, fill=white, thick] (5.17,1.24) circle (0.07);
+      \draw[->, ipsOrange, thick] (0.45,2.94) -- (0.45,3.74);
+      \draw[->, ipsOrange, thick] (5.17,0.52) -- (5.17,1.16);
+    \end{tikzpicture}
+    \end{center}
+  \end{columns}
+  \vskip0pt\relax
+  \keyresult{Same $a$ means same energy, whatever the eccentricity. Speeds then follow from vis-viva.}
+\end{frame}
+
+% ── Problem 3 concepts ──────────────────────────────────────
+\begin{frame}{The Laplace resonance}
+  \begin{columns}[T]
+    \column{0.55\textwidth}
+    \begin{itemize}
+      \item Io, Europa, Ganymede: $P = 1.769$, $3.551$, $7.155$ d, close to $1:2:4$; each pairwise ratio misses its integer slightly.
+      \item The sharp statement uses \textbf{mean motions} $n = 2\pi/P$: a three-moon combination holds almost exactly.
+      \item Io is always \textbf{opposite} at Europa--Ganymede conjunctions; no triple conjunction.
+    \end{itemize}
+
+    \column{0.41\textwidth}
+    \begin{block}{Why Io glows}
+      The resonance pins $e \approx 0.004$. A locked moon on a \emph{circular} orbit does not heat; the forced eccentricity keeps Io flexing: the most volcanically active body in the solar system.
+    \end{block}
+  \end{columns}
+  \vskip0pt\relax
+  \keyresult{Resonances act through repeated geometry: the same configuration returns, so small kicks add up.}
+\end{frame}
+
+% ── Problem 4 concepts ──────────────────────────────────────
+\begin{frame}{Tides and the Roche limit}
+  \begin{columns}[T]
+    \column{0.50\textwidth}
+    Tides are \textbf{differential} gravity, falling as $d^{-3}$:
+    \[
+      \Delta a \approx \frac{2 G M_p R_s}{d^3}
+    \]
+    Inside the \textbf{Roche limit}, tides beat self-gravity and a body bound only by its own gravity is torn apart:
+    \[
+      d_R \approx 2.46\,R_p \left(\frac{\rho_p}{\rho_s}\right)^{1/3}
+    \]
+
+    \column{0.46\textwidth}
+    \begin{block}{Read the formula before you use it}
+      \begin{itemize}
+        \item The satellite's \emph{size} cancels; only the \textbf{density ratio} matters.
+        \item Saturn + solid ice: $d_R = 2.17\,R_p$.
+        \item Valid for bodies held by \textbf{self-gravity alone}; material strength is outside its domain.
+      \end{itemize}
+    \end{block}
+  \end{columns}
+  \vskip0pt\relax
+  \keyresult{Check limits and domain of a formula first; the numbers come second.}
+\end{frame}
+
+% ── Problem 5 concepts ──────────────────────────────────────
+\begin{frame}{Planetesimals to planets, and the disk's budget}
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Gravitational focusing enlarges the cross-section:
+    \[
+      \sigma_{\mathrm{eff}} = \pi R^2 \left(1 + \frac{v_{\mathrm{esc}}^2}{v_\infty^2}\right),
+      \qquad v_{\mathrm{esc}} \propto R
+    \]
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Cold swarm ($v_\infty \ll v_{\mathrm{esc}}$): $\sigma_{\mathrm{eff}} \propto R^4$, \textbf{runaway growth}.
+      \item The winners stir the swarm, focusing switches off: \textbf{oligarchic growth}.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{The mass budget}
+      \begin{itemize}\setlength\itemsep{1pt}
+        \item Solids are $\sim 1\%$ of the disk's mass.
+        \item Giant cores need $\sim 10$--$20\,\Mearth$ of solids \emph{before} the gas goes.
+        \item Disks fade to $\sim 0.1\%$ of the stellar mass by the Class II stage.
+      \end{itemize}
+    \end{block}
+  \end{columns}
+  \vskip0pt\relax
+  \keyresult{Runaway growth ends itself; solids must lock in early.}
+\end{frame}
+
+% ── Working the sheet ───────────────────────────────────────
+\begin{frame}{Working the worksheet}
+  \begin{itemize}
+    \item \textbf{Show your algebra.} The exam asks for the steps, not only the number.
+    \item Carry \textbf{4 significant figures} through intermediate steps; round at the end.
+    \item Use the \textbf{checkpoints} ("show that \ldots") to verify your work and to keep moving if a step resists.
+    \item Qualitative parts want \textbf{2 to 3 sentences} of physics, not an essay.
+    \item Try each problem alone \emph{before} opening the solutions; they are complete, so reading first removes most of the benefit.
+  \end{itemize}
+  \vskip8pt\relax
+  \keyresult{Worksheet and full solutions: \texttt{ips.formingworlds.space/worksheets.html}. We discuss questions, not presentations of the solutions.}
+\end{frame}
+
+\end{document}
