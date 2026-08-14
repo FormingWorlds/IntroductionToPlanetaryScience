@@ -265,7 +265,7 @@ Credit: NASA/JPL-Caltech/ASI/USGS, public domain.
 :align: center
 
 Methane-ethane clouds at Titan's mid-southern latitudes captured by the *Cassini* Imaging Science Subsystem in the 938 nm methane window.
-The bright streaks near the limb are tropospheric clouds organised along the local zonal wind, demonstrating that Titan supports an active condensation cycle of the same Clausius-Clapeyron physics described in this lecture, but with $\mathrm{CH_4}$ replacing $\mathrm{H_2O}$ at $T \approx 90$ K.
+The bright streaks near the limb are tropospheric clouds organised along the local zonal wind, which shows that Titan supports an active condensation cycle of the same Clausius-Clapeyron physics described in this lecture, but with $\mathrm{CH_4}$ replacing $\mathrm{H_2O}$ at $T \approx 90$ K.
 Credit: NASA/JPL-Caltech/Space Science Institute, public domain.
 ```
 
@@ -507,7 +507,7 @@ The GRS sits between two zonal jets with opposite directions, which confine and 
 :align: center
 
 Polar cyclone cluster at Jupiter's north pole imaged by the JIRAM infrared spectrometer on NASA's *Juno* spacecraft.
-A central cyclone is encircled by eight smaller cyclones in a stable octagonal arrangement, demonstrating that Jupiter's atmospheric dynamics produce coherent polygonal vortex patterns analogous to Saturn's hexagonal jet ({numref}`fig:saturn-hexagon`).
+A central cyclone is encircled by eight smaller cyclones in a stable octagonal arrangement, which shows that Jupiter's atmospheric dynamics produce coherent polygonal vortex patterns analogous to Saturn's hexagonal jet ({numref}`fig:saturn-hexagon`).
 The cyclones have remained in this configuration over multiple Juno perijoves spanning several years, far longer than any Earth analogue.
 At the south pole, a pentagonal cluster of five circumpolar cyclones remained remarkably stable through perijove 18 (February 2019) {cite:p}`Adriani2020`; a sixth cyclone subsequently joined the cluster at perijove 23 (November 2019), transitioning the south-polar ring toward a hexagonal arrangement.
 Adapted from {cite:t}`Adriani2018`.
@@ -544,7 +544,7 @@ Despite receiving only $\sim$1/900th of Earth's solar flux, Neptune has the **fa
 
 Neptune's *Great Dark Spot* (centre-left, with bright "scooter" cloud feature below) and *Dark Spot 2* (lower right), imaged by *Voyager 2* in August 1989.
 The Great Dark Spot was a high-pressure anticyclone roughly the size of Earth. The adjacent zonal flow (Neptune's equatorial retrograde jet reaches $\sim 580$ m s$^{-1}$, the fastest winds measured in the solar system) helped confine and transport the storm.
-Hubble follow-up imaging just a few years later showed that the original Great Dark Spot had dissipated and new dark spots had appeared elsewhere on the planet, demonstrating that Neptune's storms are far more transient than Jupiter's GRS.
+Hubble follow-up imaging just a few years later showed that the original Great Dark Spot had dissipated and new dark spots had appeared elsewhere on the planet, which shows that Neptune's storms are far more transient than Jupiter's GRS.
 Credit: NASA/JPL-Caltech, public domain.
 ```
 

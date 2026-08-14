@@ -85,7 +85,7 @@ On 24 August 2006, the International Astronomical Union (IAU) adopted Resolution
 
 A body satisfying criteria 1 and 2 but not 3 is a **dwarf planet**. Under this definition, the solar system has eight planets and five officially recognised dwarf planets: Ceres, Pluto, Eris, Makemake, and Haumea. Many additional candidates exist in the Kuiper Belt.
 
-The definition remains debated. Critics note that "clearing the neighbourhood" is not precisely defined and depends on heliocentric distance: Earth would not clear its zone if placed at Neptune's orbit. An alternative **geophysical definition** proposes that any body massive enough to achieve hydrostatic equilibrium should count as a planet, regardless of its orbital dynamics {cite:p}`Runyon2017`. Under this broader definition, the solar system would have well over 100 planets.
+The definition remains debated: "clearing the neighbourhood" is not precisely defined and depends on heliocentric distance, and Earth would not clear its zone if placed at Neptune's orbit. An alternative **geophysical definition** proposes that any body massive enough to achieve hydrostatic equilibrium should count as a planet, regardless of its orbital dynamics {cite:p}`Runyon2017`. Under this broader definition, the solar system would have well over 100 planets.
 
 For this course, the exact classification matters less than the physics. The important point is that the solar system contains a continuous spectrum of objects, from dust grains to gas giants, governed by the same physical laws.
 

@@ -29,7 +29,7 @@ Earth's atmosphere as a thin blue line on the limb, photographed from the Intern
 
 **Primary atmospheres** are captured directly from the protoplanetary disk during planet formation. Because the disk is composed predominantly of hydrogen and helium (reflecting the solar composition), primary atmospheres are dominated by $\mathrm{H_2}$ and He, with trace amounts of $\mathrm{CH_4}$, $\mathrm{NH_3}$, $\mathrm{H_2O}$, and noble gases.
 
-Only sufficiently massive bodies (those exceeding roughly $5$–$10 \, \Mearth$) can gravitationally capture and retain large quantities of nebular gas before the disk disperses (within $\sim$3–10 Myr; {ref}`Lecture 2 <lecture02>`). The **gas giants** Jupiter and Saturn are the primary examples: their massive $\mathrm{H_2}$/He envelopes constitute the vast majority of their total mass. The **ice giants** Uranus and Neptune also captured primary atmospheres, but far less gas: their envelopes are only $\sim$10–20% of their total mass, reflecting their slower growth and the disk's dissipation.
+Only sufficiently massive bodies (those exceeding roughly $5$–$10 \, \Mearth$) can gravitationally capture and retain large quantities of nebular gas before the disk disperses (within $\sim$3–10 Myr; {ref}`Lecture 2 <lecture02>`). The **gas giants** Jupiter and Saturn are the primary examples: their massive $\mathrm{H_2}$/He envelopes constitute the vast majority of their total mass. The **ice giants** Uranus and Neptune also captured primary atmospheres, but far less gas: their envelopes are only $\sim$10–20% of their total mass, which reflects their slower growth and the disk's dissipation.
 
 Terrestrial planets like Earth, Venus, and Mars were too small to capture much nebular gas. Any primordial hydrogen they did accrete was quickly lost to space (see [atmospheric escape](atm-escape) below). Their present-day atmospheres are therefore **not** primary.
 
@@ -244,7 +244,7 @@ Above this, the **thermosphere** (85–600 km) is heated by the absorption of ex
 :width: 520px
 :align: center
 
-Earth's vertical temperature profile from the US Standard Atmosphere 1976, with the four named layers (troposphere, stratosphere, mesosphere, thermosphere) shaded. Pause levels (tropopause $\sim$11 km, stratopause $\sim$50 km, mesopause $\sim$85 km) are marked with dashed grey lines. The sign of $\dv{T}{z}$ flips at each pause, reflecting the transition between dominant heating sources (surface re-radiation in the troposphere, ozone UV absorption in the stratosphere, EUV absorption in the thermosphere). Data: US Standard Atmosphere 1976 {cite:p}`USStandardAtmosphere1976`; plot generated for this course.
+Earth's vertical temperature profile from the US Standard Atmosphere 1976, with the four named layers (troposphere, stratosphere, mesosphere, thermosphere) shaded. Pause levels (tropopause $\sim$11 km, stratopause $\sim$50 km, mesopause $\sim$85 km) are marked with dashed grey lines. The sign of $\dv{T}{z}$ flips at each pause, which reflects the transition between dominant heating sources (surface re-radiation in the troposphere, ozone UV absorption in the stratosphere, EUV absorption in the thermosphere). Data: US Standard Atmosphere 1976 {cite:p}`USStandardAtmosphere1976`; plot generated for this course.
 ```
 
 ### Comparative vertical structures
@@ -254,7 +254,7 @@ The vertical structure varies dramatically across the solar system {cite:p}`Catl
 - **Venus:** A massive troposphere extends to $\sim$65 km. Above the cloud deck ($\sim$48–70 km), temperature decreases slowly. There is no Earth-like stratospheric temperature inversion because Venus lacks an ozone layer.
 - **Mars:** A thin troposphere ($\sim$40 km) directly overlain by a thermosphere. Mars also lacks an appreciable ozone layer and stratospheric inversion.
 - **Jupiter:** The troposphere extends deep into the planet (hundreds of kilometres). The stratosphere is heated by $\mathrm{CH_4}$ and hydrocarbon haze absorption. There is no solid surface; pressure increases continuously with depth.
-- **Titan:** A thick troposphere ($\sim$40 km), a stratosphere extending up to $\sim$300 km heated by organic haze absorption ({numref}`fig:titan-haze`), and an extended thermosphere reaching $\sim$1400 km, remarkably high for such a small body, reflecting Titan's weak gravity and large scale height. The Huygens-derived T(z) profile is shown in {numref}`fig:titan-tz-hasi`; the canonical Venus T(z) used for comparison is shown in {numref}`fig:venus-tz-vira`.
+- **Titan:** A thick troposphere ($\sim$40 km), a stratosphere extending up to $\sim$300 km heated by organic haze absorption ({numref}`fig:titan-haze`), and an extended thermosphere reaching $\sim$1400 km, remarkably high for such a small body, which reflects Titan's weak gravity and large scale height. The Huygens-derived T(z) profile is shown in {numref}`fig:titan-tz-hasi`; the canonical Venus T(z) used for comparison is shown in {numref}`fig:venus-tz-vira`.
 
 ```{figure} figures/titan_haze_pia06160.avif
 :name: fig:titan-haze
@@ -613,7 +613,7 @@ $$
 v_{\mathrm{esc}} \gtrsim 6 \, v_{\mathrm{th}}
 $$
 
-A planet retains a given gas species if its escape velocity exceeds roughly 6 times the thermal velocity of that species (corresponding to $\lambda_J \gtrsim 18$, ensuring negligible Jeans escape over billions of years).
+A planet retains a given gas species if its escape velocity exceeds roughly 6 times the thermal velocity of that species (corresponding to $\lambda_J \gtrsim 18$, which keeps Jeans escape negligible over billions of years).
 
 ### Solar system trends
 

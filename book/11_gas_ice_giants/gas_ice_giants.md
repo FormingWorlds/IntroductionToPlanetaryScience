@@ -110,7 +110,7 @@ Cluster of cyclones encircling Jupiter's north pole, imaged by Juno's JIRAM ther
 :name: fig:jupiter_s_pole
 :width: 75%
 
-Jupiter's south pole as seen by JunoCam in visible light. A central cyclone (diameter $\sim$5{,}800 km) is surrounded by five companion cyclones, each $\sim$5{,}600--7{,}000 km across. Unlike the north pole (where the central cyclone is encircled by eight companions $\sim$4{,}000--4{,}600 km in diameter), the south pole hosts a pentagonal arrangement, demonstrating that the polar cyclone clusters are stable but not unique solutions of the deep-jet dynamics. Image credit: NASA/JPL-Caltech/SwRI/MSSS/Betsy Asher Hall/Gervasio Robles. See {cite:t}`Adriani2018`.
+Jupiter's south pole as seen by JunoCam in visible light. A central cyclone (diameter $\sim$5{,}800 km) is surrounded by five companion cyclones, each $\sim$5{,}600--7{,}000 km across. Unlike the north pole (where the central cyclone is encircled by eight companions $\sim$4{,}000--4{,}600 km in diameter), the south pole hosts a pentagonal arrangement, which shows that the polar cyclone clusters are stable but not unique solutions of the deep-jet dynamics. Image credit: NASA/JPL-Caltech/SwRI/MSSS/Betsy Asher Hall/Gervasio Robles. See {cite:t}`Adriani2018`.
 ```
 
 Some of the most striking results from Juno concern the polar regions of Jupiter, which were not seen at high resolution before the spacecraft's arrival in 2016.
@@ -708,7 +708,7 @@ Neptune presented a stark contrast to the muted Uranus when Voyager 2 arrived in
 The Great Dark Spot, a large anticyclonic storm comparable in size to Earth, dominated the southern hemisphere and was accompanied by bright methane cirrus clouds at higher altitudes ({numref}`fig:neptune_dark`).
 The small bright feature nicknamed "Scooter" drifted westward (i.e. opposite to Neptune's spin direction) at $\sim$100 m s$^{-1}$ relative to the System III magnetic-rotation frame, providing one of the first tracer measurements of Neptune's strong mid-latitude zonal flow ({numref}`fig:neptune_scooter`).
 By the time Hubble observed Neptune four years later in 1994, the Great Dark Spot had vanished.
-Subsequent dark spots have appeared and disappeared on decade timescales, demonstrating that Neptune's atmosphere supports vigorous, transient large-scale convection.
+Subsequent dark spots have appeared and disappeared on decade timescales, which shows that Neptune's atmosphere supports vigorous, transient large-scale convection.
 
 Neptune has the fastest winds in the solar system, reaching peak westward speeds of $\sim$450 m s$^{-1}$ in the equatorial easterly jet (so named because the air blows from east to west, i.e. opposite to Neptune's rotation) {cite:p}`Smith1989`.
 This is counterintuitive because Neptune is also the planet that receives the least solar radiation, only about $1/900$ of Earth's solar constant.
@@ -912,7 +912,7 @@ Whichever ice giant is visited first, its dataset will revolutionise our underst
 
 ## Summary and takeaways
 
-- **Gas giants and ice giants form a compositional continuum**, from the H/He-dominated Jupiter and Saturn to the ice-dominated Uranus and Neptune, reflecting the timing of core formation, the available disk gas, and the migration history.
+- **Gas giants and ice giants form a compositional continuum**, from the H/He-dominated Jupiter and Saturn to the ice-dominated Uranus and Neptune; the sequence records the timing of core formation, the available disk gas, and the migration history.
 - **Both gas giants now appear to host extended, dilute heavy-element distributions** rather than compact cores, a major reinterpretation driven by Juno (Jupiter) and Cassini Grand Finale + ring seismology (Saturn). The fuzzy core picture has direct implications for how the giants formed and evolved.
 - **Saturn's rings are young and transient**, with current best estimates of $\sim$100 Myr age and a comparable remaining lifetime. They are not a permanent feature of Saturn but a phase in its evolution that we happen to observe.
 - **The Galilean moons span a remarkable diversity**: tidally heated and volcanic Io, ocean-bearing Europa, dynamo-generating Ganymede, and ancient, partially differentiated Callisto. Together with Titan, Enceladus, and Triton, they offer a wider variety of geological and potentially habitable environments than the inner rocky planets.

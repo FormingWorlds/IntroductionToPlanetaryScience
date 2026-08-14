@@ -788,7 +788,7 @@ The first input is the **solar flux**.
 At $0.723$ AU, Venus receives $1.91 \times$ the solar flux per unit area that Earth does at $1$ AU.
 This is the single biggest lever, and it is the only input where the two planets are very different at the start.
 With the present-day Sun, Venus is comfortably above the Simpson-Nakajima limit and Earth is comfortably below.
-With a young, faint Sun, the picture is more nuanced: Venus may have been just above or just below the threshold, depending on cloud cover and atmospheric composition, and the question of whether early Venus was habitable becomes a question of how the solar flux interacted with the cloud feedback and the carbonate-silicate cycle.
+With a young, faint Sun, the picture is more complicated: Venus may have been just above or just below the threshold, depending on cloud cover and atmospheric composition, and the question of whether early Venus was habitable becomes a question of how the solar flux interacted with the cloud feedback and the carbonate-silicate cycle.
 If Venus had formed even $0.05$ AU farther from the Sun, the runaway might have been delayed for billions of years and Venus might today look much more Earth-like; conversely, if Earth had formed $0.05$ AU closer to the Sun, Earth might have followed the Venus trajectory.
 The two planets are at the very edge of the Simpson-Nakajima boundary, on opposite sides of the line.
 

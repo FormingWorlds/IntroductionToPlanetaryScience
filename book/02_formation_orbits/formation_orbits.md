@@ -292,7 +292,7 @@ The first five elements define the size, shape, and orientation of the orbit; th
 The four angular orbital elements. The reference plane is shown in grey; the orbital plane is tilted by the inclination $i$. The ascending node ($\Omega$) and argument of perihelion ($\omega$; labelled "argument of periapsis" in the figure, the general term) orient the orbit in space, and the true anomaly ($\nu$) locates the body along it. Credit: Lasunncty, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 ```
 
-In the solar system, most planets have nearly circular orbits ($e < 0.1$) and low inclinations ($i \lesssim 3.5^{\circ}$), reflecting the disk-like origin of the system. Exceptions include Mercury ($e = 0.206$, $i = 7.0^{\circ}$) and, among dwarf planets, Pluto ($e = 0.25$, $i = 17^{\circ}$), hinting at a more complex dynamical history.
+In the solar system, most planets have nearly circular orbits ($e < 0.1$) and low inclinations ($i \lesssim 3.5^{\circ}$), which reflects the disk-like origin of the system. Exceptions include Mercury ($e = 0.206$, $i = 7.0^{\circ}$) and, among dwarf planets, Pluto ($e = 0.25$, $i = 17^{\circ}$), hinting at a more complex dynamical history.
 
 
 ## Two-body problem and the vis-viva equation

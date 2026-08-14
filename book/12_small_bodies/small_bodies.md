@@ -465,7 +465,7 @@ All three are consistent with rapid Jupiter formation, in the sense that none re
 And all three are consistent with the observed iron-meteorite age distribution and the present-day spatial distribution of asteroid spectral types.
 
 What distinguishes them in principle is the predicted *spatial* distribution of NC and CC bodies before any dynamical reshuffling, the precise isotopic gradient inside the NC (and inside the CC) populations, the predicted CC content of bodies originating in the inner solar system, and the relative rates of planetesimal formation as a function of time.
-In practice, distinguishing them at the level of current data is genuinely difficult and the question is actively debated.
+In practice, distinguishing them at the level of current data is hard, and the question is actively debated.
 A pedagogical point worth highlighting: this is what science looks like in the middle of a major shift.
 The same set of measurements supports several physically different stories, and ranking them requires both higher-precision data and tighter dynamical models.
 You should expect the resolution of this debate to be one of the major goals of cosmochemistry over the next decade.
@@ -691,7 +691,7 @@ Together, DART and Hera have moved planetary defence from concept to a quantitat
 
 Ceres is the largest body in the asteroid belt, a near-spherical rocky-icy world with a mean radius of $470$ km and a mass of $9.4 \times 10^{20}$ kg, about $1.3\%$ of the Moon's mass.
 It is the only object in the inner solar system officially classified as a dwarf planet.
-The Dawn mission arrived in 2015 and orbited Ceres until 2018, mapping the surface in detail and revealing several genuinely surprising features.
+The Dawn mission arrived in 2015 and orbited Ceres until 2018, mapping the surface in detail and revealing several surprising features.
 
 ```{figure} figures/ceres_occator.avif
 :name: fig:l12-occator
@@ -1024,7 +1024,7 @@ This final part of the lecture surveys the most important recent results from th
 
 ### Rosetta and 67P/Churyumov-Gerasimenko
 
-The European Space Agency's **Rosetta** mission was the first to orbit a comet, the first to deploy a lander on one, and one of the most scientifically transformative small-body missions in history.
+The European Space Agency's **Rosetta** mission was the first to orbit a comet, the first to deploy a lander on one, and one of the most important small-body missions in history.
 Rosetta launched in 2004, made multiple gravity assists at Earth and Mars, and after a 10-year cruise rendezvoused with comet 67P/Churyumov-Gerasimenko in August 2014.
 The spacecraft remained with the comet through perihelion (August 2015) and beyond, and ended its mission in September 2016 with a controlled descent onto the nucleus ({numref}`fig:l12-67p`).
 
@@ -1125,7 +1125,7 @@ The Dinkinesh-Selam system imaged by NASA's Lucy mission during the 1 November 2
 ```
 
 The Lucy mission has already produced a remarkable surprise.
-During the test flyby of (152830) Dinkinesh in November 2023, the spacecraft discovered that Dinkinesh has a small *contact-binary moonlet* in orbit around it: two attached fragments approximately $210$ m and $230$ m in diameter (about $500$ m end to end), the first such configuration ever seen orbiting another body {cite:p}`Levison2024` ({numref}`fig:l12-dinkinesh`).
+During the test flyby of (152830) Dinkinesh in November 2023, the spacecraft discovered that Dinkinesh has a small *contact-binary moonlet* in orbit around it: two attached fragments approximately $210$ m and $230$ m in diameter (about $500$ m tip to tip), the first such configuration ever seen orbiting another body {cite:p}`Levison2024` ({numref}`fig:l12-dinkinesh`).
 Dinkinesh is therefore one of the more dynamically peculiar small bodies known, with a satellite that appears to have formed from a separate gentle merger event.
 This is exactly the kind of unexpected discovery that makes flyby missions worth doing.
 
@@ -1223,7 +1223,7 @@ These are the questions you can still help to answer in your own careers.
 - **What is the structure of the Oort cloud?** Has it been directly imaged or sampled? It remains an inferred population, with no direct observations.
 - **Is there a Planet Nine, or some other massive perturber, in the outer solar system?** The clustering of orbital elements among the most distant trans-Neptunian objects is suggestive but not yet definitive {cite:p}`Batygin2019`. The Vera Rubin survey will provide a much larger sample of detached and inner-Oort-cloud bodies and is the best near-term hope for resolving this question.
 - **Where did Earth's water actually come from?** The mix of carbonaceous chondrite and cometary contributions, and the role of inner-disk processing, remains an active area of research that connects to {ref}`Lecture 9 <lecture09>` and {ref}`Lecture 14 <lecture14>`.
-- **How did the NC-CC dichotomy arise and survive?** The three-way debate sketched above is genuinely live and is expected to be resolved or substantially modified within the next five to ten years.
+- **How did the NC-CC dichotomy arise and survive?** The three-way debate sketched above is open and is expected to be resolved or substantially modified within the next five to ten years.
 - **What does the diversity of interstellar visitors tell us about planetary system formation across the galaxy?** Each new ISO is a single sample from the formation chemistry of a different planetary system; the population statistics will eventually become a comparative-cosmochemistry probe across stars.
 - **How complete is our inventory of Potentially Hazardous Asteroids?** Rubin will close the inventory of bodies larger than 140 m within a decade, but the population of $\sim 30$-$140$ m objects, the size most likely to cause local damage, remains substantially undersampled.
 

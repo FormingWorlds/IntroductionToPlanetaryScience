@@ -911,7 +911,7 @@ JWST/NIRSpec G395H transmission spectrum of the rocky exoplanet **LHS 475 b**, a
 The dayside is so hot ($\sim 2000$ K) that the surface is plausibly molten.
 {cite:t}`Hu2024` reported a JWST MIRI thermal emission and phase curve measurement showing a much lower dayside brightness temperature than would be expected from a bare rock surface in equilibrium and a phase curve modulation consistent with the presence of a **secondary CO/$\mathrm{CO_2}$-rich atmosphere** outgassed from the molten surface.
 This is the **first tentative atmospheric detection on a rocky world around a Sun-like star** and is currently being scrutinised by the wider community.
-The interpretation depends on the precise treatment of the data systematics and on whether the atmosphere is genuinely a stable secondary atmosphere or is an episodically replenished one tied to surface volcanism ({numref}`fig:55cnce`).
+The interpretation depends on the precise treatment of the data systematics and on whether the atmosphere is a stable secondary atmosphere or an episodically replenished one tied to surface volcanism ({numref}`fig:55cnce`).
 
 ```{figure} figures/55cnce_hu_emission.avif
 :align: center
@@ -1027,7 +1027,7 @@ A Jupiter analogue at $5$ AU produces a radial velocity signal of only $\sim 12$
 A Saturn analogue at $9.5$ AU is even harder.
 An Earth analogue at 1 AU around a Sun-like star is at the very edge of detectability for any current technique.
 The corner of parameter space in which the solar system sits is also the corner that current surveys are least sensitive to.
-Whether the solar system is genuinely **rare** or simply lives in an **undersampled** region of parameter space is therefore an open question that the next decade of observations will answer.
+Whether the solar system is truly **rare** or merely **undersampled** in parameter space is therefore an open question that the next decade of observations will answer.
 
 The honest answer in 2026 is: the solar system is **not obviously typical**, but it is also not yet known to be rare.
 The two main lines of evidence that should resolve the question over the next decade are (a) Gaia DR4 and DR5 astrometry of long-period giant planets around nearby stars, which will populate the Jupiter analogue regime, and (b) PLATO photometry of true Earth analogues around bright Sun-like stars, which will close the inner-system gap.
@@ -1104,7 +1104,7 @@ The forward question for {ref}`Lecture 14 <lecture14>` is exactly this: how do w
 - The **radius valley** at $\sim 1.8\,\Rearth$ is the defining empirical feature of small-planet demographics. It points to atmospheric mass loss (photoevaporation and core-powered) as a universal sculptor of the close-in planet population, and means that many of today's super-Earths are the bare cores of former sub-Neptunes.
 - The **hot Neptune desert**, the **peas-in-a-pod** correlation, and the **TRAPPIST-1** resonant chain are the other three central architectural results that any planet formation theory must explain.
 - **JWST has moved exoplanet atmospheric characterisation from a promise to a routine capability.** WASP-39 b $\mathrm{SO_2}$ is the first unambiguous detection of disequilibrium photochemistry. TRAPPIST-1 b/c rule out thick $\mathrm{CO_2}$ atmospheres on close-in M dwarf rocky planets. 55 Cancri e and TOI-561 b are tentative detections of secondary atmospheres on rocky planets around Sun-like and metal-poor hosts. K2-18 b is the textbook case study in how biosignature claims are tested and revised.
-- **The solar system is not obviously typical**: it lacks sub-Neptunes, lacks compact inner-system architecture, lacks hot giants, and has wide low-eccentricity outer giants. Whether it is genuinely rare or just lives in an undersampled corner of parameter space is the central observational question of the next decade.
+- **The solar system is not obviously typical**: it lacks sub-Neptunes, lacks compact inner-system architecture, lacks hot giants, and has wide low-eccentricity outer giants. Whether it is rare or simply undersampled is the central observational question of the next decade.
 - **Habitability is a history-dependent trajectory**, not a snapshot line on the HR diagram, and biosignature detection is an inverse problem with unavoidable false-positive challenges.
 - The 2026--2040 mission queue (PLATO, Ariel, Roman, HWO, LIFE, ELTs) will push the field from statistical demography to individual characterisation of potentially habitable worlds. The forward question of what constitutes convincing life detection is taken up in {ref}`Lecture 14 <lecture14>`.
 
