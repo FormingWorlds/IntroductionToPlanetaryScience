@@ -56,12 +56,12 @@ The course is assessed by a single final written exam, which determines the full
 A final grade of at least 5.5 is required to pass.
 The re-sit has the same format as the exam; if very few students are enrolled, an oral exam is offered instead.
 
-The exam lasts two hours and has the same shape and level as the worksheets, with approximately one question per lecture; not necessarily every lecture is covered, and some lectures may be combined into one question.
+The exam lasts two hours and consists of six questions at the shape and level of the worksheet problems; each question spans two to three lectures, and the central formula a question needs is printed in the question.
 It is closed book: a calculator and a pen are all that is needed.
 
 Seven worksheets are provided as ungraded formative practice and are discussed in the tutorial sessions.
 They are strongly recommended as exam preparation but do not count towards the final grade.
-The worksheets and their full solutions, together with a few mock exams with full solutions, are available on this website.
+The worksheets and their full solutions, together with three mock exams with full solutions, are available on this website.
 
 ## Course structure
 

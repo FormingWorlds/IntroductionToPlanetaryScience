@@ -585,10 +585,14 @@ The re-sit has the same format; if fewer than four students are enrolled, an ora
 - Synthesis and astrobiology (Lecture 14)
 
 **Format:**
-- The exam has the exact same shape and level as the worksheets: approximately one question per lecture. To fit the two-hour slot, not necessarily every lecture is covered, and some lectures may be combined into one question.
+- The exam has 6 questions of about 15 minutes each, at the shape and level of the worksheet problems; each question spans 2 to 3 lectures, so one paper touches most of the course, and not every lecture carries weight on every paper.
+- The mix is about half quantitative, half qualitative (the worksheets run 60/40); qualitative parts use the same four forms as the worksheets.
+- Each multi-step question carries 1 intermediate checkpoint, placed so an early stall does not cascade; fewer than the worksheets carry.
+- The central formula a question needs is printed inside the question, and a constants-and-data box like the worksheets' is attached to the paper; there is no separate equation sheet, and derivations appear only as steps inside applied questions.
+- Marks per part are printed on the paper; the marking scheme maps points to grades, with the pass mark at 5.5.
 - Closed book; students bring a calculator and a pen, nothing else is needed (no equation sheet).
 - Duration: the scheduled slot is 2 hours, and the paper is sized for about 90 minutes of work for a well-prepared student, so the slot carries slack. Exam Wed 28 Oct 2026, 15:00-17:00, Exam Hall 4 (5263.0226); re-sit Mon 25 Jan 2027, 15:00-17:00, Exam Hall 1 (5263.0102).
-- A few mock exams with full solutions are published on the course website as practice material, alongside the worksheets and their full solutions.
+- Three mock exams with full solutions and the points-to-grade key are published on the course website as practice material, alongside the worksheets and their full solutions. The real final and the re-sit papers are developed in the private repository (see §11).
 
 ---
 
