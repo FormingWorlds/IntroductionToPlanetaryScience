@@ -67,17 +67,27 @@ tau_s = 3.0172e12 / 1e-6
 chk("P2a tau (s)", tau_s, 3.0172e18)
 chk("P2a tau (yr, checkpoint)", 3.0172e18 / 3.156e7, 9.5602e10)
 chk("P2a tau / age", 9.56e10 / 4.57e9, 20.9, 2e-3)
-
 t_age = 4.57e9 * 3.156e7
-chk("P2b age (s)", t_age, 1.4423e17)
-chk("P2b L (m)", math.sqrt(1e-6 * 1.4423e17), 3.798e5)
+chk("P2a age (s)", t_age, 1.4423e17)
+chk("P2a L (m)", math.sqrt(1e-6 * 1.4423e17), 3.798e5)
 
 num1 = 4000 * 10 * 2e-5 * 2500
-chk("P2c rho g alpha dT", num1, 2000)
-chk("P2c D^3", (3e6) ** 3, 2.7e19)
-chk("P2c Ra (checkpoint)", 2000 * 2.7e19 / 1e15, 5.4e7)
-chk("P2c Ra/Ra_c", 5.4e7 / 1708, 3.162e4)
-chk("P2d Nu", (3.162e4) ** (1 / 3), 31.62)
+chk("P2b alpha rho g dT", num1, 2000)
+chk("P2b d^3", (3e6) ** 3, 2.7e19)
+chk("P2b Ra (checkpoint)", 2000 * 2.7e19 / 1e15, 5.4e7)
+chk("P2b Ra/Ra_c", 5.4e7 / 1708, 3.162e4)
+chk("P2c Nu", (3.162e4) ** (1 / 3), 31.62)
+
+# P2d sketch: TikZ mapping x = T/700 (per cm), y = -depth/578; anchors from the notes
+chk("P2d sketch x(300 K)", 300 / 700, 0.43, 5e-3)
+chk("P2d sketch x(2500 K)", 2500 / 700, 3.57, 2e-3)
+chk("P2d sketch x(4000 K)", 4000 / 700, 5.71, 2e-3)
+chk("P2d sketch y(100 km)", 100 / 578, 0.17, 2e-2)
+chk("P2d sketch y(2690 km)", 2690 / 578, 4.65, 2e-3)
+chk("P2d sketch y(2890 km)", 2890 / 578, 5.0, 1e-3)
+# drawn adiabat slope between the lithosphere base and the top of D-double-prime
+slope = (3.57 - 1.86) * 700 / ((4.65 - 0.17) * 578)
+chk("P2d sketch adiabat slope (K/km)", slope, 0.5, 0.1)
 chk("P2e 2^(4/3)", 2 ** (4 / 3), 2.52, 1e-3)
 
 # ── Problem 3: thermal evolution model ──────────────────────────────────
@@ -118,7 +128,7 @@ denom = 1e4 * 25 * 1.02e-4
 chk("P4d denominator", denom, 25.5)
 chk("P4d e^-lt (checkpoint)", 20 / 25.5, 0.784, 1e-3)
 chk("P4d t_c (Myr)", -math.log(0.784) / 7.79e-2, 3.1238)
-chk("P4d Hf-W window (Myr)", 5 * 8.9, 44.5)
+chk("P4e Hf-W window (Myr)", 5 * 8.9, 44.5)
 
 # ── Problem 5: dynamos and shields ──────────────────────────────────────
 chk("P5a 10^(1/6)", 10 ** (1 / 6), 1.4678)

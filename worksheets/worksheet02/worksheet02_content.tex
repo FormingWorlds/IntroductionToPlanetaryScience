@@ -167,8 +167,9 @@ Whether a body can cool by conduction alone is a question of size.
 Here you find the size limit, then show that Earth's mantle convects instead, and how vigorously.
 
 \parti Compute the conductive cooling timescale $\tau = L^2/\kappa$ for the Moon, using
-$L = R_\mathrm{Moon}$ (show that $\tau \approx 9.6 \times 10^{10}$ yr).
-Compare with the age of the solar system.
+$L = R_\mathrm{Moon}$ (show that $\tau \approx 9.6 \times 10^{10}$ yr), and compare with the
+age of the solar system. Then invert the timescale: what is the largest body size that
+\emph{can} cool conductively within $4.57$ Gyr?
 
 \begin{solution}
 \[
@@ -180,25 +181,14 @@ In years:
 \[
   \tau = \frac{3.0172 \times 10^{18}}{3.156 \times 10^{7}} = 9.5602 \times 10^{10}\ \mathrm{yr},
 \]
-matching the checkpoint. This is about 21 times the age of the solar system (4.57 Gyr):
-even the Moon cannot have cooled through its full radius by conduction alone.
-\answer{$\tau \approx 9.6 \times 10^{10}$ yr $\gg$ 4.57 Gyr.}
-\end{solution}
-
-\parti What is the largest body size that \emph{can} cool conductively within the age of the
-solar system ($4.57$ Gyr)? Invert the timescale to find $L$.
-
-\begin{solution}
-The age in seconds:
-\[
-  t = 4.57 \times 10^{9} \times 3.156 \times 10^{7} = 1.4423 \times 10^{17}\ \mathrm{s}.
-\]
-Setting $\tau = t$ and solving for $L$:
+matching the checkpoint: about 21 times the age of the solar system, so even the Moon cannot
+have cooled through its full radius by conduction alone. Inverting, with the age in seconds
+$t = 4.57 \times 10^{9} \times 3.156 \times 10^{7} = 1.4423 \times 10^{17}$ s:
 \[
   L = \sqrt{\kappa\,t} = \sqrt{10^{-6} \times 1.4423 \times 10^{17}} = \sqrt{1.4423 \times 10^{11}}
     = 3.798 \times 10^{5}\ \mathrm{m} \approx 380\ \mathrm{km}.
 \]
-\answer{$L \approx 380$ km: bodies larger than a few hundred kilometres must convect, or stay hot.}
+\answer{$\tau \approx 9.6 \times 10^{10}$ yr $\gg$ 4.57 Gyr; only bodies below $\approx 380$ km cool conductively, larger ones must convect, or stay hot.}
 \end{solution}
 
 \parti Compute the Rayleigh number of Earth's mantle,
@@ -237,7 +227,7 @@ $\mathrm{Nu} = (\mathrm{Ra}/\mathrm{Ra}_c)^{1/3}$.
 Compute Nu for the mantle and state what it means for the heat flux.
 
 \begin{solution}
-From the printed ratio of part (c):
+From the printed ratio of part (b):
 \[
   \mathrm{Nu} = \left(3.162 \times 10^{4}\right)^{1/3} = 31.62 \approx 32.
 \]
@@ -245,6 +235,44 @@ The Nusselt number is the ratio of the actual (convective) heat flux to the flux
 conduction alone would carry across the same layer and temperature drop: convection moves
 heat about 32 times faster than conduction would.
 \answer{$\mathrm{Nu} \approx 32$, inside the 18--39 range quoted in the notes for $\mathrm{Ra} = 10^{7}$--$10^{8}$.}
+\end{solution}
+
+\parti Sketch the horizontally averaged temperature profile through Earth's mantle, from the
+cold surface to the core-mantle boundary at 2890 km depth. Label the two thermal boundary
+layers and the nearly adiabatic interior, with approximate thicknesses and the anchor
+temperatures from the notes. In one sentence: why is almost the entire temperature drop
+confined to the two thin boundary layers?
+
+\begin{solution}
+The profile has three segments: a steep conductive gradient across the cold thermal boundary
+layer (the lithosphere, $\sim$100 km); a shallow, nearly adiabatic gradient
+($\sim 0.5$ K\,km$^{-1}$) through the stirred interior, reaching $\sim$2500 K at the base of
+the mantle; and a second steep gradient across the hot boundary layer (the D$''$ layer,
+$\sim$200 km), rising to $T_\mathrm{CMB} \sim 4000$ K.
+
+\begin{center}
+\begin{tikzpicture}[line cap=round, x=1cm, y=1cm]
+  % axes: T rightward (0-4000 K -> 0-5.7), depth downward (0-2890 km -> 0-5.0)
+  \draw[->, thick] (0, 0) -- (6.2, 0) node[right, font=\small] {$T$};
+  \draw[->, thick] (0, 0) -- (0, -5.5) node[below, font=\small] {depth};
+  \draw (0.43, 0.08) -- (0.43, -0.08) node[above=6pt, font=\scriptsize] {$300$ K};
+  \draw (3.57, 0.08) -- (3.57, -0.08) node[above=6pt, font=\scriptsize] {$2500$ K};
+  \draw (5.71, 0.08) -- (5.71, -0.08) node[above=6pt, font=\scriptsize] {$4000$ K};
+  \draw (0.08, -5.0) -- (-0.08, -5.0) node[left, font=\scriptsize] {$2890$ km};
+  \draw[dashed, gray] (0, -5.0) -- (5.71, -5.0);
+  % profile: lithosphere, adiabat, D''
+  \draw[very thick, ipsAccent] (0.43, 0) -- (1.86, -0.17)
+    -- (3.57, -4.65) -- (5.71, -5.0);
+  \node[right, font=\scriptsize, align=left] at (2.1, -0.35) {lithosphere (cold TBL, $\sim$100 km)};
+  \node[right, font=\scriptsize, align=left, rotate=0] at (3.1, -2.4) {adiabat, $\sim 0.5$ K\,km$^{-1}$};
+  \node[above right, font=\scriptsize, align=left] at (4.35, -4.95) {D$''$ (hot TBL, $\sim$200 km)};
+\end{tikzpicture}
+\end{center}
+
+The interior is stirred by convection, which keeps it close to the shallow adiabat: a large
+gradient cannot survive there, so the full contrast between surface and core is squeezed
+into the two thin conductive layers at the top and bottom.
+\answer{Steep gradients exist only where heat moves by conduction: in the two thin boundary layers. The convecting interior follows the adiabat.}
 \end{solution}
 
 \parti Judge this claim in 2 to 3 sentences:
@@ -444,8 +472,7 @@ chondritic addition preserves the ratios.
 with an Hf/W enrichment factor $(\mathrm{Hf}/\mathrm{W})/(\mathrm{Hf}/\mathrm{W})_\mathrm{CHUR} = 26$,
 so the bracketed factor in the notes' two-stage equation is 25. Using the Hf-W constants from
 the data box, show that $e^{-\lambda t_c} = 0.784$ and find the two-stage core-formation age
-$t_c$. Compare with the accretion-timeline figure in the Lecture~4 notes, and state why the
-same method cannot date any core-forming event later than $\sim$45 Myr after CAIs.
+$t_c$. Compare with the accretion-timeline figure in the Lecture~4 notes.
 
 \begin{solution}
 The two-stage equation rearranges to
@@ -460,10 +487,20 @@ the printed checkpoint. Solving for $t_c$:
 \]
 This sits squarely in the planetesimal band of the accretion-timeline figure, which shows
 planetesimal cores differentiating within the first few Myr, well before the planets finish
-growing. The method fails beyond $\sim$5 half-lives ($\approx 45$ Myr): by then
-${}^{182}\mathrm{Hf}$ is effectively extinct, so later core extraction produces no
-$\varepsilon^{182}\mathrm{W}$ excess at all, and the clock reads nothing.
-\answer{$t_c \approx 3.1$ Myr, in the planetesimal era; after $\sim$45 Myr the parent isotope is extinct and the chronometer is blind.}
+growing.
+\answer{$t_c \approx 3.1$ Myr: this body formed its core in the planetesimal era.}
+\end{solution}
+
+\parti In 2 to 3 sentences: why can the Hf-W chronometer not date any core-forming event
+later than roughly 45 Myr after CAIs, and what tool takes over for such late events?
+
+\begin{solution}
+Beyond $\sim$5 half-lives ($\approx 45$ Myr) the parent ${}^{182}\mathrm{Hf}$ is effectively
+extinct: whatever ${}^{182}\mathrm{W}$ exists is already made and distributed, so a later
+core extraction changes nothing in the mantle's $\varepsilon^{182}\mathrm{W}$ and the clock
+reads nothing. Late events (such as the nucleation of Earth's inner core, billions of years
+after formation) are instead constrained by thermal-evolution modelling, as in the notes.
+\answer{After $\sim$45 Myr the parent isotope is extinct and the chronometer is blind; thermal-evolution modelling takes over.}
 \end{solution}
 
 
@@ -517,19 +554,20 @@ surprising and its driving (compositional buoyancy, possibly tidally modulated) 
 \answer{$\mathrm{Rm} = 150 \gtrsim \mathrm{Rm}_c$: feasible, with little margin.}
 \end{solution}
 
-\parti If Ganymede's convection stopped, how long would its field survive? Compute the ohmic
-decay time $\tau_\mathrm{ohm} = L^2/\eta$ for the 300 km shell, in years. What does the
-comparison with the age of the solar system prove about the field Galileo measured in 1996?
+\parti If Ganymede's convection stopped, its field would decay ohmically on the timescale
+$\tau_\mathrm{ohm} = L^2/\eta \approx 3 \times 10^{3}$ yr (verify this in one line if you
+wish). Explain in 2 to 3 sentences what this timescale, set against the age of the solar
+system, proves about the field the Galileo spacecraft measured in 1996, and why a
+``fossil field'' interpretation fails.
 
 \begin{solution}
-\[
-  \tau_\mathrm{ohm} = \frac{(3.0 \times 10^{5})^2}{1} = 9.0 \times 10^{10}\ \mathrm{s}
-  = \frac{9.0 \times 10^{10}}{3.156 \times 10^{7}} = 2852\ \mathrm{yr} \approx 2.9 \times 10^{3}\ \mathrm{yr}.
-\]
-On any geological timescale this is an instant: the field we observe today is being
-regenerated continuously, so Galileo's 1996 detection is proof of a currently operating
-dynamo, not of a fossil field.
-\answer{$\tau_\mathrm{ohm} \approx 3 \times 10^{3}$ yr: the observed field demands active regeneration now.}
+The one-line check: $\tau_\mathrm{ohm} = (3.0 \times 10^{5})^2 / 1 = 9.0 \times 10^{10}$ s
+$= 9.0 \times 10^{10} / 3.156 \times 10^{7} = 2852$ yr.
+Against 4.57 Gyr this is an instant: any field created in Ganymede's past would have
+decayed away millions of times over. A fossil field therefore cannot survive; the field
+Galileo measured must be regenerated continuously, so the 1996 detection is direct proof of
+a dynamo operating \emph{now}.
+\answer{$\tau_\mathrm{ohm} \approx 3 \times 10^{3}$ yr $\lll$ 4.57 Gyr: no fossil field survives, so the measured field proves a currently running dynamo.}
 \end{solution}
 
 \parti Judge this claim in 2 to 3 sentences:

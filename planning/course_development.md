@@ -462,14 +462,14 @@ All worksheets are **ungraded formative practice** at the level of the final exa
 
 - **Time budget: strictly under 3 hours** for a student who works the sheet seriously. Problem count and part count are trimmed to fit this cap, never the other way around.
 - **Shape: 5 problems with lettered parts** (about 20 parts per sheet). Each problem has the size and shape of one exam question (about 15 minutes for a well-prepared student).
-- **Mix: roughly 60% quantitative, 40% qualitative.** The qualitative parts use four forms: explain a mechanism, read the limits and special cases of a derived formula, sketch or read a figure, and judge a stated claim with justification.
+- **Qualitative parts make up at least 40% of the lettered parts, up to half.** The qualitative parts use four forms: explain a mechanism, read the limits and special cases of a derived formula, sketch or read a figure, and judge a stated claim with justification.
 - **Coverage: the core physics sections of the two lectures only** (equations and derivations); historical and descriptive material stays in the lectures.
 - **Checkpoints: key intermediate results are stated in the problem text** ("show that ..."), so a student who stalls on one step can verify their work and continue. Checkpoint values carry 4 significant figures and the worked solutions continue from the printed checkpoint values, never from a more precise internal value.
 - **Difficulty: exam level throughout**, no warm-up tier and no stretch tier.
 - **Self-containment: the lecture notes contain strictly all information needed to answer a worksheet.** A worksheet introduces no substantial new material, in its solutions included; data values in the given box and assumptions stated in a problem are fine. When a gap appears, the worksheet changes, not the locked notes.
 
 Each worksheet is accompanied by a **tutorial mini-lecture**: a deck the teaching assistants present in **at most 10 minutes** at the start of the tutorial. It summarises and highlights the concepts from the block's two lectures that the worksheet trains; it uses the same beamer theme and visual language as the lecture decks; it introduces no material beyond the lectures; and it closes with working guidance for the sheet. Source in `minilectures/minilectureNN/`, published to `book/_static/minilectures/` and listed on the Mini-Lectures page of the site.
-- Worksheet 1 is fully analytical (pen, paper, calculator, matching the exam); some later sheets add computational components (Python/Jupyter notebooks).
+- Worksheets are analytical by default (pen, paper, calculator, matching the exam). A short computational part is the exception, at most one per sheet, and only where it teaches something analytical work cannot; Worksheet 2's two-line Python fill-in is the model.
 
 ### Worksheet 1: Orbits & Formation
 **Follows:** Lectures 1–2
@@ -495,7 +495,7 @@ The synodic-period and launch-window calculation is held back for a mock exam.
 - Core formation: siderophile partitioning problem
 - Magnetic Reynolds number and dynamo feasibility for different planets
 
-**Format:** Problem set (analytical + one computational component: thermal evolution model)
+**Format:** Problem set (analytical, plus one short computational part: the thermal evolution model)
 
 ### Worksheet 3: Atmospheres
 **Follows:** Lectures 5–6
@@ -507,7 +507,7 @@ The synodic-period and launch-window calculation is held back for a mock exam.
 - Atmospheric escape: Jeans escape rates for different species on Earth, Mars, Titan
 - Cloud condensation: predict cloud layers in a giant planet atmosphere
 
-**Format:** Problem set (analytical + one computational component: radiative balance model)
+**Format:** Problem set (analytical)
 
 ### Worksheet 4: Surfaces & Interiors
 **Follows:** Lectures 7–8
@@ -543,7 +543,7 @@ The synodic-period and launch-window calculation is held back for a mock exam.
 - Kirkwood gaps: calculate resonance locations in the asteroid belt
 - Comet activity: sublimation rates and gas production as a function of heliocentric distance
 
-**Format:** Problem set (analytical + one computational component: N-body or orbital integration)
+**Format:** Problem set (analytical)
 
 ### Worksheet 7: Exoplanets & Synthesis
 **Follows:** Lectures 13–14
@@ -555,7 +555,7 @@ The synodic-period and launch-window calculation is held back for a mock exam.
 - Transmission spectroscopy: estimate atmospheric signal strength for different planet types
 - Synthesis: compare solar system planet properties with exoplanet population statistics
 
-**Format:** Problem set (analytical + one computational component: transit light curve fitting or HZ calculation)
+**Format:** Problem set (analytical)
 
 ---
 
@@ -586,7 +586,7 @@ The re-sit has the same format; if fewer than four students are enrolled, an ora
 
 **Format:**
 - The exam has 6 questions of about 15 minutes each, at the shape and level of the worksheet problems; each question spans 2 to 3 lectures, so one paper touches most of the course, and not every lecture carries weight on every paper.
-- The mix is about half quantitative, half qualitative (the worksheets run 60/40); qualitative parts use the same four forms as the worksheets.
+- The mix is about half quantitative, half qualitative, matching the worksheets; qualitative parts use the same four forms as the worksheets.
 - Each multi-step question carries 1 intermediate checkpoint, placed so an early stall does not cascade; fewer than the worksheets carry.
 - The central formula a question needs is printed inside the question, and a constants-and-data box like the worksheets' is attached to the paper; there is no separate equation sheet, and derivations appear only as steps inside applied questions.
 - Marks per part are printed on the paper; the marking scheme maps points to grades, with the pass mark at 5.5.
