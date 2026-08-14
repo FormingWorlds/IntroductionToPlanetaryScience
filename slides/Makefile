@@ -27,7 +27,7 @@ web: $(LECTURES)
 # Force 8-bit sRGB without alpha: xdvipdfmx silently drops 16-bit and graya PNGs
 avif2png:
 	@echo "Converting AVIF → PNG for slides..."
-	@find . -name '*.avif' -exec sh -c 'magick "$$1" -depth 8 -alpha remove -alpha off -colorspace sRGB -type TrueColor "$${1%.avif}.png"' _ {} \;
+	@find . -name '*.avif' -exec sh -c 'out="$${1%.avif}.png"; err=$$(magick "$$1" -depth 8 -alpha remove -alpha off -colorspace sRGB -type TrueColor "$$out" 2>&1); file "$$out" 2>/dev/null | grep -q "PNG image" || ffmpeg -v error -y -i "$$1" -pix_fmt rgb24 "$$out" || { printf "avif2png: magick and ffmpeg both failed for %s\nmagick said: %s\n" "$$1" "$$err" >&2; exit 1; }' _ {} \;
 
 # Convert SVG→PDF for XeLaTeX (vector figures)
 # XeLaTeX cannot read SVG directly; cairosvg produces a PDF that xdvipdfmx can embed.

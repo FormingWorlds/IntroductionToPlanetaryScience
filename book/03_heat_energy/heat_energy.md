@@ -319,7 +319,7 @@ $$ (eq:nu-ra-scaling)
 where $\beta \approx 1/3$ for simple convection in a layer heated from below {cite:p}`Turcotte2002`. For Earth's mantle, $\mathrm{Ra} \sim 10^7$ to $10^8$, well above $\mathrm{Ra}_c \approx 1700$. Adopting the $\mathrm{Nu} = (\mathrm{Ra}/\mathrm{Ra}_c)^{1/3}$ scaling that vanishes at marginal stability:
 
 $$
-\mathrm{Nu} \sim \left(\frac{10^7}{1700}\right)^{1/3} \approx 18 \quad \text{to} \quad \left(\frac{10^8}{1700}\right)^{1/3} \approx 38
+\mathrm{Nu} \sim \left(\frac{10^7}{1700}\right)^{1/3} \approx 18 \quad \text{to} \quad \left(\frac{10^8}{1700}\right)^{1/3} \approx 39
 $$
 
 This means convection transports heat roughly 20 to 40 times more efficiently than conduction would across the same temperature drop ({numref}`fig:nu-ra-scaling`), confirming the essential role of convection in planetary thermal evolution.
@@ -445,7 +445,7 @@ Surface heat flux $q$ as a function of seafloor age, predicted by the half-space
 | Mars | ~15–25 (estimated) | ~2–4 | Radiogenic + primordial |
 | Io | ~2000–2500 | ~100 | Tidal dissipation |
 
-The Moon and Mars have much lower surface heat flow than Earth, reflecting their smaller sizes (faster cooling through their conductive cooling timescale), the absence of plate tectonics (stagnant lid), and their smaller inventories of heat-producing elements. Io stands out dramatically: its surface heat flux is 20–30 times higher than Earth's, entirely driven by tidal heating. NASA's InSight mission ({numref}`fig:insight-mars`) recently provided the first direct seismological constraints on Mars's interior, including the radius of its core ({ref}`Lecture 10 <lecture10>`).
+The Moon and Mars have much lower surface heat flow than Earth, which reflects their smaller sizes (faster cooling through their conductive cooling timescale), the absence of plate tectonics (stagnant lid), and their smaller inventories of heat-producing elements. Io stands out dramatically: its surface heat flux is 20–30 times higher than Earth's, entirely driven by tidal heating. NASA's InSight mission ({numref}`fig:insight-mars`) recently provided the first direct seismological constraints on Mars's interior, including the radius of its core ({ref}`Lecture 10 <lecture10>`).
 
 ```{figure} figures/insight_mars_cutaway.avif
 :name: fig:insight-mars
@@ -580,6 +580,10 @@ Tidal heating models for icy moons have been refined using updated rheological m
 
 Updated analyses of chondritic meteorites continue to refine our understanding of the radiogenic heating budget available during early solar system evolution {cite:p}`Lichtenberg2023`, with implications for the thermal history of planetesimals and the onset of differentiation ({ref}`Lecture 4 <lecture04>`).
 
+
+## Looking ahead to Lecture 4
+
+This lecture followed the heat: where it comes from and how it escapes. {ref}`Lecture 4 <lecture04>` follows the chemistry that the heat enables. A molten planet separates into a metallic core and a silicate mantle, and the elements sort themselves between the two: **siderophile** ("iron-loving") elements follow the metal down, while lithophile elements stay behind in the silicates. The Hf-W chronometer turns this sorting into a clock for how fast core formation happened. A convecting metallic core, finally, generates the magnetic field that shields a planet's atmosphere. The heat sources assembled here set the pace for all of it: differentiation needs melting, and the dynamo needs a cooling core.
 
 ## References
 
