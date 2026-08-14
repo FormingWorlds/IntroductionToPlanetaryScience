@@ -1,6 +1,6 @@
 """Generate Fig. (`fig:venus-tz`).
 
-Venus thermal structure from the surface (735 K, 92 bar) up to
+Venus thermal structure from the surface (737 K, 92 bar) up to
 100 km, based on the Venus International Reference Atmosphere
 (VIRA, Seiff 1985) and Venus Express radio-science (VeRa,
 Tellmann 2009).
@@ -32,7 +32,7 @@ OUT_AVIF = REPO_ROOT / "book/06_atmospheres_2/figures/venus_tz_profile.avif"
 
 # (altitude_km, temperature_K) anchor points - VIRA / VeRa mid-latitudes
 PROFILE = [
-    (  0, 735.0),
+    (  0, 737.0),
     ( 10, 658.0),
     ( 20, 575.0),
     ( 30, 495.0),
@@ -67,9 +67,9 @@ def make_plot() -> Path:
             label="Venus T(z) (VIRA / Venus Express VeRa)")
 
     # Surface annotation
-    ax.plot(735, 0, "o", color="#a83232", ms=8, zorder=5)
-    ax.annotate("Surface\n(735 K, 92 bar)",
-                xy=(735, 0), xytext=(610, 18),
+    ax.plot(737, 0, "o", color="#a83232", ms=8, zorder=5)
+    ax.annotate("Surface\n(737 K, 92 bar)",
+                xy=(737, 0), xytext=(610, 18),
                 fontsize=10,
                 arrowprops=dict(arrowstyle="-", color="0.4", lw=0.5))
 

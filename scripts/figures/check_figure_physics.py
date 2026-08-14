@@ -180,6 +180,11 @@ chk("L04 magnetopause: nose distance (R_E)", rho0 / 0.6, 10.0, 1e-9)
 # ════════════════════════════════════════════════════════════════════
 section("L05: atmospheres I")
 
+m = load("scripts/figures/L05_atmospheres_1/fig_venus_tz_vira.py")
+chk("L05 Venus profile: surface T (K)", m.PROFILE[0][1], 737.0, 1e-6)
+m = load("scripts/figures/L06_atmospheres_2/fig_venus_tz.py")
+chk("L06 Venus profile: surface T (K)", m.PROFILE[0][1], 737.0, 1e-6)
+
 m = load("scripts/figures/L05_atmospheres_1/fig_earth_tz_layers.py")
 chk("L05 USSA76: T at surface (K)", float(m.ussa76(np.array([0.0]))[0]), 288.15, 1e-6)
 chk("L05 USSA76: T at 11 km (K)", float(m.ussa76(np.array([11.0]))[0]), 216.65, 1e-3)

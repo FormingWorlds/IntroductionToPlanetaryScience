@@ -616,7 +616,7 @@ Mars poses an even more extreme version of the same problem. At 1.52 AU, Mars re
 :align: center
 
 Perspective view of an ancient valley network in the Noachian highlands of Mars, derived from the *Mars Express* High Resolution Stereo Camera (HRSC) digital terrain model.
-The dendritic, river-like channel pattern requires sustained surface runoff and is incompatible with the present-day Mars climate, where mean surface temperature is $\sim$210 K and surface pressure is below the triple point of water.
+The dendritic, river-like channel pattern requires sustained surface runoff and is incompatible with the present-day Mars climate, where mean surface temperature is $\sim$215 K and surface pressure is below the triple point of water.
 Such networks are among the strongest geological constraints on the warm-wet Noachian climate problem discussed by {cite:t}`Wordsworth2016`.
 Credit: ESA / DLR / FU Berlin (G. Neukum), CC BY-SA 3.0 IGO.
 ```

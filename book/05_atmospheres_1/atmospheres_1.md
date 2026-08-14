@@ -50,7 +50,7 @@ The diversity of atmospheres across the solar system is remarkable. The table be
 | Property | Venus | Earth | Mars | Jupiter | Titan |
 |----------|:-----:|:-----:|:----:|:-------:|:-----:|
 | Surface pressure (bar) | 92 | 1.0 | 0.006 | n/a | 1.5 |
-| Surface temperature (K) | 737 | 288 | 210 | n/a | 94 |
+| Surface temperature (K) | 737 | 288 | 215 | n/a | 94 |
 | Dominant gas | $\mathrm{CO_2}$ (96.5%) | $\mathrm{N_2}$ (78%) | $\mathrm{CO_2}$ (95%) | $\mathrm{H_2}$ (86%) | $\mathrm{N_2}$ (95%) |
 | Secondary gas | $\mathrm{N_2}$ (3.5%) | $\mathrm{O_2}$ (21%) | $\mathrm{N_2}$ (2.7%) | He (14%) | $\mathrm{CH_4}$ (5%) |
 | Mean molecular weight $\mu$ | 43.4 | 28.97 | 43.3 | 2.2 | 28.6 |
@@ -131,7 +131,7 @@ $$
 H = \frac{\kB T}{\mu \, m_u \, g}
 $$ (eq:scale-height-preview)
 
-The barometric formula tells us that atmospheric pressure decreases **exponentially** with altitude. Every scale height $H$, the pressure drops by a factor of $e \approx 2.718$. This exponential decay is why atmospheres are thin compared to the size of the planet: typically, 99% of the atmospheric mass lies below $\sim 5H$.
+The barometric formula tells us that atmospheric pressure decreases **exponentially** with altitude. Every scale height $H$, the pressure drops by a factor of $e \approx 2.718$. This exponential decay is why atmospheres are thin compared to the size of the planet: for an isothermal column, 99% of the mass lies below $4.6\,H$; in the real atmosphere, colder layers aloft compress this to $\sim$30 km for Earth ({numref}`fig:thin-blue-line`).
 
 
 ## Blackboard derivation: The atmospheric scale height
@@ -183,11 +183,11 @@ We can now compute scale heights for several bodies using their characteristic a
 
 | Body | $T$ (K) | $\mu$ | $g$ (m s$^{-2}$) | $H$ (km) |
 |------|:-------:|:-----:|:-----------------:|:---------:|
-| Venus | 737 | 43.4 | 8.87 | 15.8 |
-| Earth | 288 | 28.97 | 9.81 | 8.5 |
-| Mars | 210 | 43.3 | 3.72 | 10.8 |
+| Venus | 737 | 43.4 | 8.87 | 15.9 |
+| Earth | 288 | 28.97 | 9.81 | 8.4 |
+| Mars | 215 | 43.3 | 3.72 | 11.1 |
 | Jupiter | 165 | 2.2 | 24.8 | 25 |
-| Titan | 94 | 28.6 | 1.35 | 21 |
+| Titan | 94 | 28.6 | 1.35 | 20 |
 
 **Worked example for Earth:**
 
@@ -482,7 +482,7 @@ Schematic regime diagram for atmospheric escape as a function of the Jeans param
 
 The most fundamental escape mechanism is **Jeans escape**, which arises from the thermal velocity distribution of gas molecules. In a gas at temperature $T$, molecules have a range of speeds described by the Maxwell–Boltzmann distribution. The mean thermal speed is $v_{\mathrm{th}} \sim \sqrt{\kB T / m}$, where $m$ is the molecular mass. Most molecules are far too slow to escape, but the tail of the distribution extends to arbitrarily high speeds, and some molecules in this high-velocity tail exceed the escape speed.
 
-The **exobase** ({numref}`fig:exobase`) is the altitude at which the mean free path $\ell = 1/(n \sigma \sqrt{2})$ equals the pressure scale height $H$. Below this level, collisions dominate and the gas behaves as a fluid; above it, collisions are rare enough that molecules travel on ballistic trajectories, and those with $v > v_\mathrm{esc}$ escape to space without further interaction. For Earth, the exobase sits near 500 km altitude; for Mars, closer to 200 km.
+The **exobase** ({numref}`fig:exobase`) is the altitude at which the mean free path $\ell = 1/(n \sigma)$, with $\sigma$ an effective collision cross-section, equals the pressure scale height $H$. Below this level, collisions dominate and the gas behaves as a fluid; above it, collisions are rare enough that molecules travel on ballistic trajectories, and those with $v > v_\mathrm{esc}$ escape to space without further interaction. For Earth, the exobase sits near 500 km altitude; for Mars, closer to 200 km.
 
 ```{figure} figures/exobase_definition.avif
 :name: fig:exobase
@@ -566,7 +566,7 @@ Several processes can eject atmospheric particles to space without relying on th
 
 - **Impact erosion:** Large asteroid or comet impacts can eject a large fraction of a planet's atmosphere. The efficiency depends on the impactor size relative to the atmospheric scale height: very large impacts can blow off a substantial atmospheric mass in a single event.
 
-The MAVEN mission at Mars has measured the present-day total atmospheric escape rate at $\sim 1$–$3$ kg s$^{-1}$ for H and O combined, with H escape varying seasonally by nearly an order of magnitude, integrated across photochemical, thermal, and solar-wind-driven channels {cite:p}`Jakosky2018`. MAVEN's elliptical science orbit ({numref}`fig:maven-science-orbit`) samples the thermosphere/exobase at periapsis and the ionised tail at apoapsis; the resulting picture of ion escape is shown in {numref}`fig:maven-ion-plume`, and the partitioning of oxygen loss across photochemical, ion, and sputtering channels is summarised in {numref}`fig:maven-o-loss-channels`. The thin atmosphere that remains today is photographed on the limb in {numref}`fig:mars-atmosphere`.
+The MAVEN mission at Mars has measured the present-day total atmospheric escape rate at $\sim 2$–$3$ kg s$^{-1}$ for H and O combined, with H escape varying seasonally by nearly an order of magnitude, integrated across photochemical, thermal, and solar-wind-driven channels {cite:p}`Jakosky2018`. MAVEN's elliptical science orbit ({numref}`fig:maven-science-orbit`) samples the thermosphere/exobase at periapsis and the ionised tail at apoapsis; the resulting picture of ion escape is shown in {numref}`fig:maven-ion-plume`, and the partitioning of oxygen loss across photochemical, ion, and sputtering channels is summarised in {numref}`fig:maven-o-loss-channels`. The thin atmosphere that remains today is photographed on the limb in {numref}`fig:mars-atmosphere`.
 
 ```{figure} figures/maven_science_orbit.avif
 :name: fig:maven-science-orbit
@@ -613,7 +613,7 @@ $$
 v_{\mathrm{esc}} \gtrsim 6 \, v_{\mathrm{th}}
 $$
 
-A planet retains a given gas species if its escape velocity exceeds roughly 6 times the thermal velocity of that species (corresponding to $\lambda_J \gtrsim 18$, which keeps Jeans escape negligible over billions of years).
+A planet retains a given gas species if its escape velocity exceeds roughly 6 times the thermal velocity of that species (corresponding to $\lambda_J \gtrsim 36$, deep inside the retention regime of {numref}`fig:escape-regime`, which keeps Jeans escape negligible over billions of years).
 
 ### Solar system trends
 
@@ -680,6 +680,10 @@ For solar system bodies, the MAVEN mission at Mars has quantified present-day at
 
 These results reflect a central theme of atmospheric science: a planet's ability to retain its atmosphere depends not only on its mass and temperature (the Jeans escape criterion derived in this lecture) but also on the intensity of stellar radiation, the presence or absence of a global magnetic field ({ref}`Lecture 4 <lecture04>`), and the planet's geological activity.
 
+
+## Looking ahead to Lecture 6
+
+This lecture treated an atmosphere as a static column: its composition, its vertical structure, and the energy budget that sets its temperature. {ref}`Lecture 6 <lecture06>` sets that column in motion. Condensation turns vapour into clouds wherever the saturation curve is crossed, planetary rotation organises the resulting flows into circulation cells and jets, and the feedbacks between temperature, ice, and radiation decide between stable climates and runaway states. The hydrostatic and radiative results assembled here return in every one of those pieces.
 
 ## References
 

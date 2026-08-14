@@ -2,7 +2,7 @@
 
 Venus T(z) profile combining Pioneer Venus / VIRA (Seiff 1985)
 lower-atmosphere data with VeRa (Venus Express) radio-occultation
-results (Tellmann 2009). Falls monotonically from 735 K, 92 bar
+results (Tellmann 2009). Falls monotonically from 737 K, 92 bar
 surface through the cloud deck (48-70 km) to the mesopause near
 100 km.
 
@@ -24,7 +24,7 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 OUT_AVIF = REPO_ROOT / "book/05_atmospheres_1/figures/venus_tz_vira.avif"
 
 PROFILE = [
-    (  0, 735.0),
+    (  0, 737.0),
     ( 10, 658.0),
     ( 20, 575.0),
     ( 30, 495.0),
@@ -55,9 +55,9 @@ def make_plot() -> Path:
     ax.plot(T, z, color="#e07a3a", lw=2.5)
 
     # Surface
-    ax.plot(735, 0, "o", color="#e07a3a", ms=7, zorder=5)
-    ax.annotate("Surface\n735 K, 92 bar",
-                xy=(735, 0), xytext=(620, 22),
+    ax.plot(737, 0, "o", color="#e07a3a", ms=7, zorder=5)
+    ax.annotate("Surface\n737 K, 92 bar",
+                xy=(737, 0), xytext=(620, 22),
                 fontsize=10,
                 arrowprops=dict(arrowstyle="-", color="0.4", lw=0.5))
 
