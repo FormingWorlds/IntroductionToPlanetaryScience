@@ -27,13 +27,17 @@ web: $(LECTURES)
 # Force 8-bit sRGB without alpha: xdvipdfmx silently drops 16-bit and graya PNGs
 avif2png:
 	@echo "Converting AVIF → PNG for slides..."
-	@find . -name '*.avif' -exec sh -c 'out="$${1%.avif}.png"; err=$$(magick "$$1" -depth 8 -alpha remove -alpha off -colorspace sRGB -type TrueColor "$$out" 2>&1); file "$$out" 2>/dev/null | grep -q "PNG image" || ffmpeg -v error -y -i "$$1" -pix_fmt rgb24 "$$out" || { printf "avif2png: magick and ffmpeg both failed for %s\nmagick said: %s\n" "$$1" "$$err" >&2; exit 1; }' _ {} \;
+	@rm -f .conv_failed
+	@find . -name '*.avif' -exec sh -c 'out="$${1%.avif}.png"; err=$$(magick "$$1" -depth 8 -alpha remove -alpha off -colorspace sRGB -type TrueColor "$$out" 2>&1); file "$$out" 2>/dev/null | grep -q "PNG image" || ffmpeg -v error -y -i "$$1" -pix_fmt rgb24 "$$out" || { printf "avif2png: magick and ffmpeg both failed for %s\nmagick said: %s\n" "$$1" "$$err" >&2; touch .conv_failed; }' _ {} \;
+	@test ! -f .conv_failed
 
 # Convert SVG→PDF for XeLaTeX (vector figures)
 # XeLaTeX cannot read SVG directly; cairosvg produces a PDF that xdvipdfmx can embed.
 svg2pdf:
 	@echo "Converting SVG → PDF for slides..."
-	@find . -name '*.svg' -exec sh -c 'python3 -c "import cairosvg; cairosvg.svg2pdf(url=\"$$1\", write_to=\"$${1%.svg}.pdf\")"' _ {} \;
+	@rm -f .conv_failed
+	@find . -name '*.svg' -exec sh -c 'out="$${1%.svg}.pdf"; python3 -c "import cairosvg; cairosvg.svg2pdf(url=\"$$1\", write_to=\"$$out\")" 2>/dev/null || rsvg-convert -f pdf -o "$$out" "$$1" || { echo "svg2pdf: cairosvg and rsvg-convert both failed for $$1" >&2; touch .conv_failed; }' _ {} \;
+	@test ! -f .conv_failed
 
 $(LECTURES): avif2png svg2pdf
 	cd $@ && $(LATEXMK) $@.tex

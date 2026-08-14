@@ -1,4 +1,4 @@
-SHEETS  = worksheet01
+SHEETS  = worksheet01 worksheet02
 LATEXMK = latexmk -xelatex -interaction=nonstopmode
 
 .PHONY: all clean web $(SHEETS)

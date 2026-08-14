@@ -10,3 +10,4 @@ Use them as a compact revision aid: if a slide feels unfamiliar, the correspondi
 | # | Tutorial | Covers | Slides |
 |---|---|---|---|
 | 1 | Orbits & Formation | {ref}`Lecture 1 <lecture01>`, {ref}`Lecture 2 <lecture02>` | [Download (PDF)](_static/minilectures/minilecture01.pdf) |
+| 2 | Thermal Evolution & Differentiation | {ref}`Lecture 3 <lecture03>`, {ref}`Lecture 4 <lecture04>` | [Download (PDF)](_static/minilectures/minilecture02.pdf) |

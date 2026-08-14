@@ -10,6 +10,9 @@ Work each problem through on paper before opening the solutions: the solutions a
 | # | Covers | Problems | Solutions |
 |---|---|---|---|
 | 1 | {ref}`Lecture 1 <lecture01>`, {ref}`Lecture 2 <lecture02>` | [Download (PDF)](_static/worksheets/worksheet01.pdf) | [Download (PDF)](_static/worksheets/worksheet01_solutions.pdf) |
+| 2 | {ref}`Lecture 3 <lecture03>`, {ref}`Lecture 4 <lecture04>` | [Download (PDF)](_static/worksheets/worksheet02.pdf) | [Download (PDF)](_static/worksheets/worksheet02_solutions.pdf) |
+
+Worksheet 2, Problem 3 uses the Python template [`thermal_evolution.py`](_static/worksheets/thermal_evolution.py): download it, complete the two marked lines, and run it with any Python 3 installation that has `numpy` and `matplotlib`.
 
 ## What each worksheet covers
 

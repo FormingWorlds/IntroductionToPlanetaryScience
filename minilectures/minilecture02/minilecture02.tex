@@ -1,0 +1,184 @@
+% minilecture02.tex: Tutorial 2 mini-lecture: Thermal Evolution & Differentiation
+% Planetary Systems, Kapteyn Institute, University of Groningen
+% A 5-10 minute recap, presented by the TAs at the start of Tutorial 2,
+% of the Lecture 3-4 concepts that Worksheet 2 trains.
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme and macros (shared with the lecture decks) ────────
+\usepackage{../../slides/common/beamerthemeIPS}
+\input{../../slides/common/macros}
+\graphicspath{{figures/}{../../slides/lecture04/figures/}{../../slides/lecture03/figures/}{../../slides/common/}}
+
+% ── Metadata ────────────────────────────────────────────────
+\title[T2 mini-lecture: Heat \& Differentiation]{Tutorial 2 Mini-Lecture:\\Thermal Evolution \& Differentiation}
+\subtitle{The concepts behind Worksheet 2 \textbullet\ Lectures 3--4}
+\author{}
+\institute{Kapteyn Astronomical Institute\\University of Groningen}
+\date{2026}
+\titlebgcredit{Aurora australis, ISS. Credit: NASA}
+\titlebgopacity{0.55}
+
+% ════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Roadmap ─────────────────────────────────────────────────
+\begin{frame}{What Worksheet 2 trains}
+  Five problems, all built on Lectures 3--4. The physics you need, per problem:
+  \vskip6pt\relax
+  \begin{enumerate}
+    \item \textbf{The radiogenic clock}: isotope table to heating power, now and at formation.
+    \item \textbf{Conduction fails, convection takes over}: $\tau = L^2/\kappa$, Ra, Nu.
+    \item \textbf{A minimal thermal evolution model}: heat in minus heat out, on paper and in Python.
+    \item \textbf{Building a core and dating it}: Stokes settling, partitioning, Hf-W ages.
+    \item \textbf{Dynamos and shields}: magnetic Reynolds number, standoff distance.
+  \end{enumerate}
+  \vskip6pt\relax
+  \keyresult{Every problem has the shape and level of one exam question. Problem 3(c) is the only part that needs a computer.}
+\end{frame}
+
+% ── Problem 1 concepts ──────────────────────────────────────
+\begin{frame}{The radiogenic clock}
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Specific heating $=$ concentration $\times$ heat per kg of isotope, summed:
+    \[
+      h = \sum_i c_i\,h_i,
+      \qquad
+      \boxed{c_i(\text{past}) = c_i\,2^{\,t/t_{1/2}}}
+    \]
+    \begin{itemize}
+      \item Today: $\approx 4.9 \times 10^{-12}$ W\,kg$^{-1}$ of BSE rock $\Rightarrow$ $\approx$ 20 TW.
+      \item At formation (4.5 Gyr ago): 4.7 times more, $\approx$ 92 TW.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Two clocks, two eras}
+      ${}^{26}\mathrm{Al}$ ($t_{1/2} = 0.72$ Myr) out-heats everything for the first few Myr, then dies: planetesimals melt on the short clock, planets stay warm on the long one.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{The isotope table is the whole calculation: concentrations, half-lives, heat rates. Everything else is bookkeeping.}
+\end{frame}
+
+% ── Problem 2 concepts ──────────────────────────────────────
+\begin{frame}{Conduction fails, convection takes over}
+  \begin{columns}[T]
+    \column{0.50\textwidth}
+    \small
+    Conductive cooling time and convective vigour:
+    \[
+      \tau = \frac{L^2}{\kappa},
+      \qquad
+      \boxed{\mathrm{Ra} = \frac{\rho g \alpha \Delta T D^3}{\kappa \mu}}
+    \]
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Moon: $\tau \approx 10^{11}$ yr $\gg$ age.
+      \item Only bodies $\lesssim 400$ km cool conductively in 4.57 Gyr.
+      \item Mantle: $\mathrm{Ra} \approx 5 \times 10^{7} \gg \mathrm{Ra}_c \approx 1708$.
+    \end{itemize}
+
+    \column{0.46\textwidth}
+    \begin{block}{How much faster is convection?}
+      \small
+      $\mathrm{Nu} = (\mathrm{Ra}/\mathrm{Ra}_c)^{1/3} \approx 32$: thirtyfold. And since $\mathrm{Nu} \propto \Delta T^{1/3}$, the flux scales as $\Delta T^{4/3}$: hotter mantles shed heat disproportionately fast.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{$L^2$ decides who conducts; Ra decides who convects; Nu says how vigorously.}
+\end{frame}
+
+% ── Problem 3 concepts ──────────────────────────────────────
+\begin{frame}{A minimal thermal evolution model}
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    \small
+    One line of energy conservation:
+    \[
+      \boxed{C\,\frac{\mathrm{d}T}{\mathrm{d}t} = H(t) - Q(T)}
+    \]
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item $H(t)$: radiogenic heating, a decaying exponential.
+      \item $Q(T) \propto T^{4/3}$: convective loss (from $\mathrm{Nu} \propto \mathrm{Ra}^{1/3}$).
+      \item You complete two lines of Python and press run.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{What the curve does}
+      \small
+      Start hot but under-radiating: the interior \emph{warms} until $Q$ catches $H$ ($\sim$1 Gyr), then tracks the dying heat source down. Today: the model cools at $\sim$170 K per Gyr (the real mantle nearer 50--100), Urey ratio $H/Q \approx 0.4$.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{Planets self-regulate: the $T^{4/3}$ thermostat ties the heat loss to the heat supply.}
+\end{frame}
+
+% ── Problem 4 concepts ──────────────────────────────────────
+\begin{frame}{Building a core and dating it}
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Three tools, one story:
+    \[
+      v_\mathrm{Stokes} = \frac{2}{9}\frac{\Delta\rho\,g\,r^2}{\mu},
+      \qquad
+      \frac{C^\mathrm{sil}}{C^\mathrm{bulk}} = \frac{1}{1 + x(D-1)}
+    \]
+    \begin{itemize}
+      \item Iron rain crosses a magma ocean in \textbf{weeks}.
+      \item Siderophile elements ($D \gg 1$) vanish into the core; their leftover excess records the \textbf{late veneer}.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{The Hf-W stopwatch}
+      ${}^{182}\mathrm{Hf} \to {}^{182}\mathrm{W}$, $t_{1/2} = 8.9$ Myr: Hf stays in the mantle, W leaves with the metal. The mantle's $\varepsilon^{182}\mathrm{W}$ excess dates core formation, until the parent goes extinct at $\sim$45 Myr.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{Core formation is fast, chemically selective, and datable: three properties, three worksheet parts.}
+\end{frame}
+
+% ── Problem 5 concepts ──────────────────────────────────────
+\begin{frame}{Dynamos and shields}
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    \small
+    Dynamo feasibility and its shield:
+    \[
+      \boxed{\mathrm{Rm} = \frac{U L}{\eta} \gtrsim 10\text{--}100},
+      \;\;
+      r_\mathrm{mp} = R_p\left(\frac{B_0^2}{\mu_0 \rho_\mathrm{sw} v_\mathrm{sw}^2}\right)^{1/6}
+    \]
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Even Ganymede's 300 km shell clears the bar.
+      \item $\tau_\mathrm{ohm} = L^2/\eta \sim$ kyr: an observed field is regenerated \emph{now}.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{The sixth root}
+      \small
+      A tenfold solar-wind surge moves Earth's magnetopause only from 10 to 6.8 $R_\oplus$. Weak dependence is the shield's strength.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{Rm asks whether a dynamo can run; the pressure balance says how far its shield reaches.}
+\end{frame}
+
+% ── Working the sheet ───────────────────────────────────────
+\begin{frame}{Working the worksheet}
+  \begin{itemize}
+    \item \textbf{Show your algebra.} The exam asks for the steps, not only the number.
+    \item Carry \textbf{4 significant figures} through intermediate steps; round at the end.
+    \item Use the \textbf{checkpoints} ("show that \ldots") to verify your work and to keep moving if a step resists.
+    \item Qualitative parts want \textbf{2 to 3 sentences} of physics, not an essay.
+    \item For Problem 3(c), download \texttt{thermal\_evolution.py} from the worksheets page; any Python 3 with numpy and matplotlib works.
+  \end{itemize}
+  \vskip8pt\relax
+  \keyresult{Worksheet and full solutions: \texttt{ips.formingworlds.space/worksheets.html}. We discuss questions, not presentations of the solutions.}
+\end{frame}
+
+\end{document}
