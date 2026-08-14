@@ -2,7 +2,9 @@
 
 Phase diagram of water in P-T space:
 - liquid-vapour coexistence: integrated Clausius-Clapeyron with
-  L_vap = 2.5e6 J/kg
+  L_vap = 2.289e6 J/kg (effective constant value: the integrated
+  curve then passes through both the triple point and the critical
+  point; the true L falls from 2.50e6 at 273 K to 0 at T_crit)
 - solid-vapour (sublimation): integrated Clausius-Clapeyron with
   L_sub = 2.83e6 J/kg
 - solid-liquid: anomalously negative slope, dP/dT = L_fus / (T DV)
@@ -27,7 +29,7 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 OUT_AVIF = REPO_ROOT / "book/06_atmospheres_2/figures/water_phase_diagram.avif"
 
 R_V = 461.5      # J/kg/K specific gas constant of water vapour
-L_VAP = 2.5e6    # J/kg
+L_VAP = 2.289e6  # J/kg, effective: pins the constant-L curve to both anchors
 L_SUB = 2.83e6   # J/kg
 L_FUS = 3.34e5   # J/kg
 DV_FUSION = -9.05e-5  # m^3/kg (V_liquid - V_solid; negative because ice less dense)
