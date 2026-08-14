@@ -52,7 +52,7 @@ def absorbed(T: np.ndarray) -> np.ndarray:
     return (1.0 - albedo(T)) * S_TODAY / 4.0
 
 
-def make_plot() -> Path:
+def make_plot(label_states: bool = True) -> Path:
     apply_style()
     T = np.linspace(220, 320, 600)
 
@@ -90,7 +90,10 @@ def make_plot() -> Path:
         else:
             ax.text(t_eq, flux_eq + 25, f"{t_eq:.0f} K",
                     ha="center", fontsize=10)
-        # Region labels
+        # Region labels (omitted for the unlabeled worksheet variant,
+        # which asks the reader to classify the crossings themselves)
+        if not label_states:
+            continue
         if "Snowball" in label:
             # Above the blue flat branch, left of the cold intersection
             ax.text(t_eq - 18, flux_eq + 42, label, color=color,

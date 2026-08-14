@@ -1,0 +1,178 @@
+% minilecture03.tex: Tutorial 3 mini-lecture: Atmospheres
+% Planetary Systems, Kapteyn Institute, University of Groningen
+% A 5-10 minute recap, presented by the TAs at the start of Tutorial 3,
+% of the Lecture 5-6 concepts that Worksheet 3 trains.
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme and macros (shared with the lecture decks) ────────
+\usepackage{../../slides/common/beamerthemeIPS}
+\input{../../slides/common/macros}
+\graphicspath{{figures/}{../../slides/lecture06/figures/}{../../slides/lecture05/figures/}{../../slides/common/}}
+
+% ── Metadata ────────────────────────────────────────────────
+\title[T3 mini-lecture: Atmospheres]{Tutorial 3 Mini-Lecture:\\Atmospheres: Structure, Clouds, \& Climate}
+\subtitle{The concepts behind Worksheet 3 \textbullet\ Lectures 5--6}
+\author{}
+\institute{Kapteyn Astronomical Institute\\University of Groningen}
+\date{2026}
+\titlebgcredit{Jupiter's atmosphere. Credit: NASA/JPL-Caltech/SwRI/MSSS}
+\titlebgopacity{0.55}
+
+% ════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Roadmap ─────────────────────────────────────────────────
+\begin{frame}{What Worksheet 3 trains}
+  Five problems, all built on Lectures 5--6. The physics you need, per problem:
+  \vskip6pt\relax
+  \begin{enumerate}
+    \item \textbf{How thick is an atmosphere?}: scale height, hydrostatic balance, column mass.
+    \item \textbf{Sunlight in, infrared out}: equilibrium temperature, the one-layer greenhouse.
+    \item \textbf{From vapour to cloud base}: Clausius-Clapeyron, dew point, the LCL, one sketch.
+    \item \textbf{Winds on a rotating planet}: Coriolis parameter, Rossby number, geostrophic balance.
+    \item \textbf{Climate on the edge}: the faint young Sun, ice-albedo bistability, the carbonate-silicate thermostat.
+  \end{enumerate}
+  \vskip2pt\relax
+  \keyresult{Every problem has the shape and level of one exam question. All parts are analytical; no computer is needed.}
+\end{frame}
+
+% ── P1 ──────────────────────────────────────────────────────
+\begin{frame}{How thick is an atmosphere?}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Two workhorses of Lecture 5:
+    \[
+      \boxed{H = \frac{\kB T}{\mu\,m_u\,g}}
+      \qquad
+      P_0 = m_{\mathrm{col}}\,g
+    \]
+    \begin{itemize}
+      \item $H$ compares thermal energy against gravitational confinement: Earth 8.4 km, Titan 20 km.
+      \item Integrating $\dd P = -\rho g\,\dd z$ over the column: surface pressure is the weight of the air overhead.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Watch the ratio, not the terms}
+      $H \propto T/g$: when two effects pull in opposite directions, put numbers on both ratios before deciding which one wins. Problem 1(b) turns exactly on this.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{Ten tonnes of air stand on every square metre of Earth; the scale height says how thickly it is spread.}
+\end{frame}
+
+% ── P2 ──────────────────────────────────────────────────────
+\begin{frame}{Sunlight in, infrared out}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Balance absorbed sunlight against emitted infrared:
+    \[
+      \boxed{(1-A)\,\frac{S}{4} = \sigma T_{\mathrm{eq}}^4}
+      \qquad
+      T_s = 2^{1/4}\,T_{\mathrm{eq}}\ \ (\varepsilon = 1)
+    \]
+    \begin{itemize}
+      \item $S$ falls with the inverse square of distance; $A$ is the Bond albedo.
+      \item Venus: brilliant clouds give $T_{\mathrm{eq}} = 227$ K, colder than Earth's 255 K, above a 737 K surface.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{The greenhouse in one sentence}
+      The atmosphere passes sunlight but blocks the surface's infrared, so the surface must heat up until its share leaks through.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{The place to test any claim about the greenhouse budget is the top of the atmosphere: check whether absorbed sunlight and outgoing infrared still balance there.}
+\end{frame}
+
+% ── P3 ──────────────────────────────────────────────────────
+\begin{frame}{From vapour to cloud base}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    The blackboard result of Lecture 6:
+    \[
+      \boxed{P_{\mathrm{sat}}(T) = P_{\mathrm{ref}}\,
+      e^{-\frac{L_v}{R_v}\left(\frac{1}{T} - \frac{1}{T_{\mathrm{ref}}}\right)}}
+    \]
+    \begin{itemize}
+      \item Invert it for the dew point $T_d$; rising air cools at $\Gamma_d = 9.8$ K\,km$^{-1}$ until it gets there.
+      \item $z_{\mathrm{LCL}} = (T - T_d)/\Gamma_d$: the cloud base. Above it, the moist adiabat ($\sim$5 K\,km$^{-1}$) takes over.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{The sketch part}
+      Problem 3(c) asks for the $T$--$z$ profile: two straight lines meeting at the LCL. Label both slopes; the kink is the physics.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{One exponential governs every cloud in the solar system; $L_v/R_v$ sets how sharply it bites.}
+\end{frame}
+
+% ── P4 ──────────────────────────────────────────────────────
+\begin{frame}{Winds on a rotating planet}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Three numbers decide the flow:
+    \[
+      f = 2\Omega\sin\phi, \quad
+      \mathrm{Ro} = \frac{U}{fL}, \quad
+      u_g = \frac{1}{f\rho}\Bigl|\pdv{P}{y}\Bigr|
+    \]
+    \begin{itemize}
+      \item $\mathrm{Ro} \ll 1$: rotation wins, wind blows along isobars (geostrophic balance).
+      \item $f = 0$ at the equator: no deflection, no cyclones there.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Slow vs fast rotators}
+      The number of circulation cells follows from the strength of the Coriolis deflection. Reason it out from the Rossby number before you judge the claim in Problem 4(e).
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{Check the balance with numbers: a 2000 km low with 15 m\,s$^{-1}$ winds has $\mathrm{Ro} \approx 0.06$; geostrophy predicts its wind to a few percent.}
+\end{frame}
+
+% ── P5 ──────────────────────────────────────────────────────
+\begin{frame}{Climate on the edge}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Long-term climate is a balance with feedbacks:
+    \begin{itemize}
+      \item Young Sun at 71\%: $T_{\mathrm{eff}} = 234$ K, yet the rocks record liquid water: the faint young Sun paradox.
+      \item Ice-albedo feedback: two stable climates under the same Sun.
+      \item Carbonate-silicate thermostat: warmer $\rightarrow$ faster weathering $\rightarrow$ less $\mathrm{CO_2}$ $\rightarrow$ cooler.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Reading the bistability figure}
+      Classify each crossing from the local slopes: nudge the temperature slightly and ask whether absorption or emission grows faster. Problem 5(b) asks you to argue this from the curves.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{A thermostat needs a working source and a working sink: Venus lost its water, Mars lost its volcanism, Earth kept both.}
+\end{frame}
+
+% ── Closer ──────────────────────────────────────────────────
+\begin{frame}{Working the worksheet}
+  \begin{itemize}
+    \item \textbf{Show your algebra.} The exam asks for the steps, not only the number.
+    \item Carry \textbf{4 significant figures} through intermediate steps; round at the end.
+    \item Use the \textbf{checkpoints} ("show that \ldots") to verify your work and to keep moving if a step resists.
+    \item Qualitative parts want \textbf{2 to 3 sentences} of physics, not an essay.
+    \item Two parts read figures printed on the sheet (the saturation curves and the bistability diagram); argue from the curves, not from memory.
+  \end{itemize}
+  \vskip8pt\relax
+  \keyresult{Worksheet and full solutions: \texttt{ips.formingworlds.space/worksheets.html}. We discuss questions, not presentations of the solutions.}
+\end{frame}
+
+\end{document}
