@@ -8,7 +8,7 @@ values in the data sidecar so each value is traceable.
 
 Caption / figure id : Fig. 4.2 / `fig:short-lived-decay`
 Markdown source     : book/03_heat_energy/heat_energy.md (around line 73)
-Citation keys       : Lugmair2003 (^26Al t_1/2), Rugel2009 (^60Fe t_1/2)
+Citation keys       : CastilloRogez2009 (^26Al t_1/2), Rugel2009 (^60Fe t_1/2)
 """
 from __future__ import annotations
 
@@ -29,7 +29,7 @@ OUT_AVIF = REPO_ROOT / "book/03_heat_energy/figures/short_lived_decay.avif"
 # Half-lives in Myr. Each value is documented (with primary reference)
 # in the JSON sidecar that this script writes/refreshes.
 HALF_LIVES_MYR = {
-    "26Al": 0.717,    # Lugmair & Galer 2003; LA-MC-ICPMS
+    "26Al": 0.717,    # Castillo-Rogez et al. 2009
     "60Fe": 2.62,     # Rugel et al. 2009 PRL; AMS half-life redetermination
 }
 
@@ -50,8 +50,8 @@ def write_data() -> None:
             "26Al": {
                 "value_Myr": 0.717,
                 "uncertainty_Myr": 0.024,
-                "reference": "Lugmair & Galer (2003)",
-                "doi": "10.1016/0016-7037(94)90419-7",
+                "reference": "Castillo-Rogez et al. (2009)",
+                "doi": "10.1016/j.icarus.2009.07.025",
             },
             "60Fe": {
                 "value_Myr": 2.62,

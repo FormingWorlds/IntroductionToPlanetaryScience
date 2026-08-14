@@ -8,8 +8,8 @@
     "26Al": {
       "value_Myr": 0.717,
       "uncertainty_Myr": 0.024,
-      "reference": "Lugmair & Galer (2003)",
-      "doi": "10.1016/S0016-7037(00)00405-X"
+      "reference": "Castillo-Rogez et al. (2009)",
+      "doi": "10.1016/j.icarus.2009.07.025"
     },
     "60Fe": {
       "value_Myr": 2.62,

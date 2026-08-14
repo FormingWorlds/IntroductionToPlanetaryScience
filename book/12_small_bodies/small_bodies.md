@@ -437,7 +437,7 @@ The two-epoch planetesimal formation signal had already been identified in indep
 
 #### Interpretation 3: NC and CC as two formation epochs (Bizzarro, Connelly, Johansen and collaborators)
 
-A third interpretation, developed by Bizzarro, Connelly, Johansen and their collaborators in a series of papers including {cite:t}`Schiller2018`, {cite:t}`Nanne2019`, and {cite:t}`Spitzer2021`, argues that NC and CC are not two *spatial* reservoirs at all.
+A third interpretation, developed by Bizzarro, Connelly, Johansen and their collaborators in a series of papers including {cite:t}`Schiller2018`, {cite:t}`Nanne2019`, and {cite:t}`Spitzer2020`, argues that NC and CC are not two *spatial* reservoirs at all.
 Instead, they are two distinct *temporal epochs* of planetesimal formation, both occurring across a wide range of orbital distances.
 
 In this picture, the inner protoplanetary disk was initially formed from infall of nearly-solar composition material (the NC reservoir).
