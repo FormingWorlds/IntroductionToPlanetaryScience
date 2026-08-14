@@ -11,15 +11,11 @@ droplets condensed on dry NaCl CCN of three different solute masses.
 Caption / figure id : `fig:kohler-curves`
 Markdown source     : book/06_atmospheres_2/atmospheres_2.md
 
-NOTE on solute masses:
-The L06 caption text quotes "m_s = 10^-19 to 10^-17 g". That range
-gives unrealistic activation supersaturations of 1-13 percent. The
-canonical textbook range for atmospheric CCN (Wallace & Hobbs 2nd
-ed., Pruppacher & Klett 1997, Rogers & Yau) is m_s = 10^-16 to
-10^-14 g ("large" to "giant" CCN), which gives realistic activation
-peaks at S - 1 ~ 0.04 to 0.4 percent. This script uses the
-canonical literature range; the caption mass range should be
-corrected to match.
+Solute masses m_s = 10^-16 to 10^-14 g are the canonical textbook
+range for atmospheric CCN (Wallace & Hobbs 2nd ed., Pruppacher &
+Klett 1997, Rogers & Yau); they give activation peaks at
+S - 1 ~ 0.04 to 0.4 percent, matching observed supersaturations
+in adiabatically cooled updraughts.
 """
 from __future__ import annotations
 

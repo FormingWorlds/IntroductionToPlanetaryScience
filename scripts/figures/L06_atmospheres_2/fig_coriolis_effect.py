@@ -4,11 +4,14 @@ Two-panel schematic of the Coriolis effect viewed from above the
 North Pole.
 
 Left panel (inertial frame): a parcel launched poleward from a low
-latitude moves in a straight line; the surface beneath rotates east
-with angular velocity Omega.
+latitude keeps the eastward velocity of its launch point, so its
+straight inertial path is a chord tilted east of the pole. The
+surface rotates east with angular velocity Omega, but the ground at
+higher latitude moves east more slowly than the parcel.
 
 Right panel (rotating frame of the planet): the same parcel appears
-to curve to the right of its motion in the Northern Hemisphere.
+to curve east, to the right of its motion, in the Northern
+Hemisphere.
 
 Caption / figure id : `fig:coriolis`
 Markdown source     : book/06_atmospheres_2/atmospheres_2.md
@@ -30,10 +33,13 @@ OUT_AVIF = REPO_ROOT / "book/06_atmospheres_2/figures/coriolis_effect.avif"
 DISK = "#cfe5ff"
 
 
-def draw_disk(ax) -> None:
+def draw_disk(ax, label_side: str = "right") -> None:
     ax.add_patch(Circle((0, 0), 1.0, facecolor=DISK, edgecolor="black", lw=1.0))
     ax.plot(0, 0, "+", color="black", ms=12)
-    ax.text(0.05, 0.05, "N pole", fontsize=9, ha="left", va="bottom")
+    if label_side == "right":
+        ax.text(0.05, 0.05, "N pole", fontsize=9, ha="left", va="bottom")
+    else:
+        ax.text(-0.05, 0.05, "N pole", fontsize=9, ha="right", va="bottom")
 
 
 def panel_left(ax) -> None:
@@ -46,17 +52,25 @@ def panel_left(ax) -> None:
         (np.cos(np.radians(80)) * 1.2, np.sin(np.radians(80)) * 1.2),
         (np.cos(np.radians(85)) * 1.2, np.sin(np.radians(85)) * 1.2),
         arrowstyle="->", mutation_scale=12, color="black", lw=1.0))
-    ax.text(0.95, 1.3, r"$\Omega$", fontsize=14, ha="left", va="bottom")
+    # Next to the midpoint of the rotation arc (radius 1.2, 45 deg)
+    ax.text(1.0, 1.0, r"$\Omega$", fontsize=14, ha="left", va="bottom")
 
-    # Launch point near south, parcel goes straight north
+    # Launch point near south. The parcel keeps the eastward (+x here)
+    # velocity of its launch point, so the straight inertial path is a
+    # chord tilted east of the pole, not a radial line through it.
     launch = (0.0, -0.85)
-    end = (0.0, 0.7)
+    end = (0.52, 0.62)
     ax.plot(*launch, "o", color="#1f77b4", ms=10, zorder=5)
     ax.add_patch(FancyArrowPatch(launch, end,
                                  arrowstyle="->", mutation_scale=14,
                                  color="#1f77b4", lw=2.0))
-    ax.text(launch[0] + 0.05, launch[1] - 0.03, "Launch\n(low latitude)",
-            color="#1f77b4", fontsize=9, va="top")
+    # Empty left half of the disk: the path, pole label, and markers
+    # all sit at x >= 0
+    ax.text(-0.47, 0.20, "Straight path carries\nthe launch point's\neastward speed",
+            color="#1f77b4", fontsize=8.5, ha="center", va="center")
+    # Label below the disk so the text never crosses the rim
+    ax.text(0.0, -1.08, "Launch\n(low latitude)",
+            color="#1f77b4", fontsize=9, ha="center", va="top")
 
     # Surface point that rotates east during flight: indicate launch point and
     # show the same patch of ground at the end of flight rotated by ~25 deg.
@@ -64,8 +78,10 @@ def panel_left(ax) -> None:
     surf_x = launch[0] * np.cos(rot_angle) - launch[1] * np.sin(rot_angle)
     surf_y = launch[0] * np.sin(rot_angle) + launch[1] * np.cos(rot_angle)
     ax.plot(surf_x, surf_y, "s", color="#888", ms=10, zorder=4)
-    ax.text(surf_x + 0.06, surf_y, "Surface point\n(rotated east)",
-            color="#555", fontsize=9, va="center")
+    ax.annotate("Surface point\n(rotated east)",
+                xy=(surf_x + 0.04, surf_y - 0.04), xytext=(0.62, -1.08),
+                color="#555", fontsize=9, ha="left", va="top",
+                arrowprops=dict(arrowstyle="-", color="0.6", lw=0.6))
 
     ax.set_xlim(-1.4, 1.4)
     ax.set_ylim(-1.4, 1.4)
@@ -76,7 +92,8 @@ def panel_left(ax) -> None:
 
 
 def panel_right(ax) -> None:
-    draw_disk(ax)
+    # N-pole label on the left: the red curve occupies the right of centre
+    draw_disk(ax, label_side="left")
     # In the rotating frame, the parcel curves to the right (east in NH).
     # Parametric path: start at launch heading north (+y), bend eastward (+x).
     launch = (0.0, -0.85)
@@ -95,16 +112,18 @@ def panel_right(ax) -> None:
         (x[-3], y[-3]), (x[-1], y[-1]),
         arrowstyle="->", mutation_scale=16, color="#d62728", lw=2.0))
 
-    ax.text(launch[0] + 0.05, launch[1] - 0.05, "Launch\n(low latitude)",
-            color="#d62728", fontsize=9, va="top")
+    ax.text(0.0, -1.08, "Launch\n(low latitude)",
+            color="#d62728", fontsize=9, ha="center", va="top")
     # Place "Deflection to the right" label near the actual end of the curve
     ax.text(x[-1] + 0.05, y[-1] + 0.05, "Deflection\nto the right",
             color="#d62728", fontsize=10, ha="left", va="bottom")
 
     # Reference straight line (greyed out)
     ax.plot([0, 0], [-0.85, 0.7], color="0.6", linestyle="--", lw=1.0)
-    ax.text(0.05, 0.0, "Expected\n(no deflection)", color="0.5", fontsize=9,
-            va="center", ha="left")
+    # Left of the dashed line: keeps clear of "N pole" (x > 0) and the
+    # red curve (x > 0 everywhere)
+    ax.text(-0.07, 0.35, "Expected\n(no deflection)", color="0.5", fontsize=9,
+            va="center", ha="right")
 
     ax.set_xlim(-1.4, 1.4)
     ax.set_ylim(-1.4, 1.4)

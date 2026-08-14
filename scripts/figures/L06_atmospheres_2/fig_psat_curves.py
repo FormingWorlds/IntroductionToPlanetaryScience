@@ -41,12 +41,16 @@ OUT_AVIF = REPO_ROOT / "book/06_atmospheres_2/figures/psat_curves.avif"
 R_UNIV = 8.314  # J/mol/K
 
 # (label, M [kg/mol], L [J/kg], T_ref [K], P_ref [Pa], color, condensation_T_band [K, K])
+# Condensation bands match the species table in the lecture notes:
+# H2O on Earth+Mars, H2SO4 across the Venus cloud deck (base ~360 K
+# to top ~230 K), NH3 on Jupiter/Saturn, CH4 on Titan/Uranus/Neptune,
+# CO2 on Mars (mesospheric clouds ~100-130 K, winter polar cap ~148 K)
 SPECIES = [
-    (r"H$_2$O",   18.015e-3, 2.50e6, 373.15, 101325.0, "#1f77b4", (250, 320)),
-    (r"H$_2$SO$_4$", 98.08e-3, 5.40e5, 610.0, 101325.0, "#d62728", (300, 420)),
-    (r"NH$_3$",   17.031e-3, 1.371e6, 239.7,  101325.0, "#2ca02c", (130, 180)),
-    (r"CH$_4$",   16.043e-3, 5.10e5, 111.7,  101325.0, "#ff7f0e", (90, 150)),
-    (r"CO$_2$ (subl.)", 44.01e-3, 5.71e5, 194.7, 101325.0, "#9467bd", (110, 180)),
+    (r"H$_2$O",   18.015e-3, 2.50e6, 373.15, 101325.0, "#1f77b4", (200, 280)),
+    (r"H$_2$SO$_4$", 98.08e-3, 5.40e5, 610.0, 101325.0, "#d62728", (230, 360)),
+    (r"NH$_3$",   17.031e-3, 1.371e6, 239.7,  101325.0, "#2ca02c", (130, 150)),
+    (r"CH$_4$",   16.043e-3, 5.10e5, 111.7,  101325.0, "#ff7f0e", (80, 90)),
+    (r"CO$_2$ (subl.)", 44.01e-3, 5.71e5, 194.7, 101325.0, "#9467bd", (100, 150)),
 ]
 
 
@@ -68,10 +72,14 @@ def make_plot() -> Path:
     ax.axhline(101325.0, color="0.5", linestyle=":", lw=0.8)
     ax.text(580, 1.4e5, "1 atm", color="0.4", fontsize=9, ha="right")
 
-    # Coloured bands at the bottom for typical condensation T ranges
-    for label, M, L, T_ref, P_ref, color, band in SPECIES:
-        ax.fill_betweenx([1e-5, 1e-4], band[0], band[1],
-                         color=color, alpha=0.6)
+    # Coloured bands at the bottom for typical condensation T ranges:
+    # one lane per species, stacked in list order, so overlapping
+    # ranges stay visible; zorder keeps the lanes under the curves
+    for i, (label, M, L, T_ref, P_ref, color, band) in enumerate(SPECIES):
+        y0 = 10 ** (-5 + 0.30 * i)
+        y1 = 10 ** (-5 + 0.30 * i + 0.24)
+        ax.fill_betweenx([y0, y1], band[0], band[1],
+                         color=color, alpha=0.6, zorder=0)
 
     ax.set_yscale("log")
     ax.set_xlim(80, 600)
@@ -80,7 +88,9 @@ def make_plot() -> Path:
     ax.set_ylabel(r"Saturation vapour pressure $P_{\mathrm{sat}}$ [Pa]")
     ax.set_title("Saturation vapour pressure curves (Clausius-Clapeyron)")
     ax.grid(which="both", linestyle=":", alpha=0.3)
-    ax.legend(loc="upper left", frameon=False, fontsize=10)
+    # Lower right is the empty quadrant: curves stay above ~2.5 kPa
+    # for T > 450 K and the condensation lanes end at 360 K
+    ax.legend(loc="lower right", frameon=False, fontsize=10)
 
     fig.tight_layout()
     return save_figure(fig, OUT_AVIF, avif_quality=80)

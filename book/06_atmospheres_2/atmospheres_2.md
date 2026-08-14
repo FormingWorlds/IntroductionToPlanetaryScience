@@ -39,9 +39,6 @@ Plot generated from thermodynamic data in {cite:p}`Catling2017` and {cite:p}`Pie
 ```
 
 
-
-
-
 ### Nucleation
 
 Even when air is supersaturated, condensation does not happen instantly. Forming a new droplet requires overcoming an energy barrier: the surface energy of the tiny embryonic droplet. This process is called **nucleation** {cite:p}`Catling2017`.
@@ -49,7 +46,7 @@ Even when air is supersaturated, condensation does not happen instantly. Forming
 - **Homogeneous nucleation** (forming droplets from vapour alone, without any pre-existing surface) requires very high supersaturations (RH $\gg$ 100%) and is extremely rare in planetary atmospheres.
 - **Heterogeneous nucleation** (condensation onto pre-existing particles called **condensation nuclei**: dust grains, volcanic aerosols, sea salt, soot, cosmic ray ions) occurs at much lower supersaturations (RH $\gtrsim$ 100%) and is the dominant cloud formation mechanism on all planets.
 
-The availability of condensation nuclei therefore controls where and how easily clouds form. On Earth, the oceans and biosphere provide abundant nuclei. On Mars, wind-lofted mineral dust serves the same role. On the giant planets, photochemical hazes produced in the upper atmosphere provide nuclei for cloud formation deeper down. The energy-balance trade-off between the Kelvin (curvature) and Raoult (solute) terms is captured by the Köhler curves ({numref}`fig:kohler-curves`), which show why heterogeneous nucleation activates at $\sim 0.1$-$0.4\%$ supersaturation while homogeneous nucleation requires $\gtrsim 4\%$.
+The availability of condensation nuclei therefore controls where and how easily clouds form. On Earth, the oceans and biosphere provide abundant nuclei. On Mars, wind-lofted mineral dust serves the same role. On the giant planets, photochemical hazes produced in the upper atmosphere provide nuclei for cloud formation deeper down. The energy-balance trade-off between the Kelvin (curvature) and Raoult (solute) terms is captured by the Köhler curves ({numref}`fig:kohler-curves`), which show why heterogeneous nucleation activates at only $\sim$0.04-0.4% supersaturation, while a pure-water droplet would need $\sim$12% even at $r = 10^{-2}\,\mu$m and far more at the nanometre size of a fresh embryo.
 
 ```{figure} figures/kohler_curves.avif
 :name: fig:kohler-curves
@@ -57,9 +54,9 @@ The availability of condensation nuclei therefore controls where and how easily 
 :align: center
 
 Köhler curves: equilibrium supersaturation $S - 1$ at which a solution droplet of radius $r$ neither grows nor evaporates.
-The dashed black curve is the pure-water Kelvin term, $S = 1 + A/r$, which formalises the energy cost of homogeneous nucleation: forming a pure droplet from vapour requires reaching $S - 1 \gtrsim 4\%$ at $r \sim 10^{-2}\,\mu$m, a supersaturation almost never sustained in planetary atmospheres.
-The coloured curves show the Köhler form $S = 1 + A/r - B/r^3$ for solution droplets condensed on dry condensation nuclei (CCN) of three different solute masses ($m_s = 10^{-16}$ to $10^{-14}$ g, spanning the "large" to "giant" CCN range of {cite:p}`Pruppacher1997`).
-The Raoult term $-B/r^3$ pushes the equilibrium curve below the Kelvin curve, so heterogeneous nucleation activates at peak supersaturations of only $\sim$0.1-0.4%, easily reached in adiabatically cooled updraughts.
+The dashed black curve is the pure-water Kelvin term, $S = 1 + A/r$, which formalises the energy cost of homogeneous nucleation: the equilibrium supersaturation is already $S - 1 \approx 12\%$ at $r = 10^{-2}\,\mu$m and climbs toward $\sim$100% at the nanometre scale of freshly formed embryos, far beyond anything sustained in planetary atmospheres.
+The coloured curves show the Köhler form $S = 1 + A/r - B/r^3$ for solution droplets condensed on dry condensation nuclei (CCN) of three solute masses spanning the typical atmospheric range, $m_s = 10^{-16}$, $10^{-15}$, and $10^{-14}$ g {cite:p}`Pruppacher1997`.
+The Raoult term $-B/r^3$ pushes the equilibrium curve below the Kelvin curve, so heterogeneous nucleation activates at peak supersaturations of only $\sim$0.04-0.4%, easily reached in adiabatically cooled updraughts.
 This is why heterogeneous nucleation dominates on every planet with abundant aerosols.
 Adapted from the formulation in {cite:p}`Catling2017`.
 ```
@@ -68,7 +65,7 @@ Adapted from the formulation in {cite:p}`Catling2017`.
 
 As an air parcel rises through the troposphere, it cools at the dry adiabatic lapse rate $\Gamma_d = g/c_p$ (Eq. {eq}`eq:dry-adiabat` from {ref}`Lecture 5 <lecture05>`). Its vapour pressure remains roughly constant (since the mass of vapour is conserved during adiabatic ascent), but $P_{\mathrm{sat}}(T)$ decreases as the temperature drops. At the altitude where the parcel temperature has cooled enough that $P_{\mathrm{vapour}} = P_{\mathrm{sat}}(T)$, condensation begins. This altitude is the **lifting condensation level (LCL)** and marks the cloud base.
 
-Above the LCL, the rising parcel releases **latent heat** as vapour condenses, warming the parcel relative to the dry adiabat. This gives the **moist adiabatic lapse rate**, which is shallower (typically $\sim$5–6 K km$^{-1}$ on Earth) than the dry adiabat ($\sim$9.8 K km$^{-1}$). The latent heat release also provides buoyancy, driving vigorous convection in moist atmospheres: the mechanism behind thunderstorms, hurricanes, and the towering cumulonimbus clouds on Earth.
+Above the LCL, the rising parcel releases **latent heat** as vapour condenses, warming the parcel relative to the dry adiabat. This gives the **moist adiabatic lapse rate**, which is shallower than the dry adiabat ($\sim$9.8 K km$^{-1}$): a representative value in Earth's warm lower troposphere is $\sim$5 K km$^{-1}$, and the observed tropospheric mean of $\sim$6.5 K km$^{-1}$ lies between the two limits ({ref}`Lecture 5 <lecture05>`). The latent heat release also provides buoyancy, driving vigorous convection in moist atmospheres: the mechanism behind thunderstorms, hurricanes, and the towering cumulonimbus clouds on Earth.
 
 ### Cloud types depend on the condensing species
 
@@ -141,7 +138,19 @@ $$
 \dv{P_{\mathrm{sat}}}{T} = \frac{L_v \, P_{\mathrm{sat}}}{R_v \, T^2}
 $$
 
-This is a separable ODE: $\dd P / P = (L_v / R_v) \, \dd T / T^2$. Integrating from a reference state $(T_{\mathrm{ref}}, P_{\mathrm{ref}})$ to $(T, P_{\mathrm{sat}})$, and assuming $L_v$ is approximately constant:
+This is a separable ODE: $\dd P / P = (L_v / R_v) \, \dd T / T^2$. Integrating from a reference state $(T_{\mathrm{ref}}, P_{\mathrm{ref}})$ to $(T, P_{\mathrm{sat}})$, with $L_v$ treated as constant:
+
+$$
+\int_{P_{\mathrm{ref}}}^{P_{\mathrm{sat}}} \frac{\dd P'}{P'} = \frac{L_v}{R_v} \int_{T_{\mathrm{ref}}}^{T} \frac{\dd T'}{T'^2}
+$$
+
+The left-hand integral gives $\ln(P_{\mathrm{sat}}/P_{\mathrm{ref}})$. The right-hand integral gives $\left[-1/T'\right]_{T_{\mathrm{ref}}}^{T} = -(1/T - 1/T_{\mathrm{ref}})$. Therefore:
+
+$$
+\ln \frac{P_{\mathrm{sat}}}{P_{\mathrm{ref}}} = -\frac{L_v}{R_v}\left(\frac{1}{T} - \frac{1}{T_{\mathrm{ref}}}\right)
+$$
+
+Exponentiating both sides:
 
 $$
 \boxed{P_{\mathrm{sat}}(T) = P_{\mathrm{ref}} \exp\!\left[-\frac{L_v}{R_v}\left(\frac{1}{T} - \frac{1}{T_{\mathrm{ref}}}\right)\right]}
@@ -173,17 +182,17 @@ The Clausius-Clapeyron equation applies to *any* vapour-to-liquid (or vapour-to-
 | Species | $L_v$ (kJ kg$^{-1}$) | $R_v$ (J kg$^{-1}$ K$^{-1}$) | $L_v/R_v$ (K) | $T_{\mathrm{cond}}$ (K)$^*$ | Where it condenses |
 |---------|:-----:|:-----:|:-----:|:-----:|------|
 | $\mathrm{H_2O}$ | 2500 | 462 | 5400 | 200–280 | Earth, Mars |
-| $\mathrm{H_2SO_4}$ | 540 | 85 | 6400 | 340–380 | Venus |
+| $\mathrm{H_2SO_4}$ | 540 | 85 | 6400 | 230–360 | Venus |
 | $\mathrm{NH_3}$ | 1370 | 488 | 2800 | 130–150 | Jupiter, Saturn |
 | $\mathrm{CH_4}$ | 510 | 519 | 980 | 80–90 | Titan, Uranus, Neptune |
-| $\mathrm{CO_2}$ | 571$^\dagger$ | 189 | 3020 | 145–175 | Mars |
+| $\mathrm{CO_2}$ | 571$^\dagger$ | 189 | 3020 | 100–150 | Mars |
 
 $^*$Approximate condensation temperature at the pressure levels found in each planet's atmosphere.
 $^\dagger$Latent heat of sublimation (solid $\leftrightarrow$ vapour).
 
 Data from {cite:p}`Catling2017` and {cite:p}`dePaterLissauer2010`.
 
-The large $L_v/R_v$ ratio for $\mathrm{H_2SO_4}$ explains why Venus's sulfuric acid clouds occupy a relatively narrow altitude range: the exponential sensitivity confines condensation to a thin temperature band. Conversely, $\mathrm{CH_4}$ has a low $L_v/R_v$, meaning its saturation curve is flatter and methane clouds on Titan can extend over a wider altitude range.
+The large $L_v/R_v$ ratio for $\mathrm{H_2SO_4}$ makes its saturation curve extremely steep, so the crossing from vapour to droplets happens over a small temperature interval: Venus's cloud base near 48 km is sharply defined, and droplets that settle below it evaporate quickly. Conversely, $\mathrm{CH_4}$ has a low $L_v/R_v$: its flat saturation curve keeps methane on Titan close to saturation through much of the troposphere, so clouds can form over a wide range of altitudes.
 ```
 
 ```{figure} figures/water_phase_diagram.avif
@@ -206,15 +215,15 @@ Every planet and moon with a substantial atmosphere has clouds, but the condensi
 
 ### Venus: sulfuric acid clouds
 
-Venus is permanently shrouded in thick clouds that completely obscure the surface at visible wavelengths. These clouds are composed of $\mathrm{H_2SO_4}$ (sulfuric acid) droplets and extend from $\sim$48 km to $\sim$70 km altitude, spanning a temperature range of roughly 350–230 K {cite:p}`Catling2017`.
+Venus is permanently shrouded in thick clouds that completely obscure the surface at visible wavelengths. These clouds are composed of $\mathrm{H_2SO_4}$ (sulfuric acid) droplets and extend from $\sim$48 km to $\sim$70 km altitude, spanning a temperature range of roughly 360–230 K between cloud base and cloud top {cite:p}`Catling2017`.
 
 The cloud deck completely obscures the surface in visible light ({numref}`fig:venus-uv-clouds`); UV imaging reveals the banded super-rotational pattern. The sulfuric acid is produced by **photochemistry** in the upper atmosphere:
 
 $$
-\mathrm{SO_2} + \mathrm{H_2O} \xrightarrow{h\nu} \mathrm{H_2SO_4}
+\mathrm{SO_2} + \mathrm{O} \longrightarrow \mathrm{SO_3}, \qquad \mathrm{SO_3} + \mathrm{H_2O} \longrightarrow \mathrm{H_2SO_4}
 $$
 
-where $\mathrm{SO_2}$ is supplied by volcanic outgassing. Below the main cloud deck lies a diffuse sub-cloud haze extending down to $\sim$30 km. An unidentified **UV absorber** in the upper clouds absorbs roughly half the solar UV flux and creates the distinctive banded patterns visible in ultraviolet images. Venus's vertical thermal structure with cloud-deck and sub-cloud-haze altitude bands is shown in {numref}`fig:venus-tz`.
+where the atomic oxygen comes from ultraviolet photolysis of $\mathrm{CO_2}$ high in the atmosphere, and the $\mathrm{SO_2}$ is supplied by volcanic outgassing. Below the main cloud deck lies a diffuse sub-cloud haze extending down to $\sim$30 km. An unidentified **UV absorber** in the upper clouds absorbs roughly half the solar UV flux and creates the distinctive banded patterns visible in ultraviolet images. Venus's vertical thermal structure with cloud-deck and sub-cloud-haze altitude bands is shown in {numref}`fig:venus-tz`.
 
 ```{figure} figures/venus_uv_clouds.avif
 :name: fig:venus-uv-clouds
@@ -230,7 +239,7 @@ Venus imaged by the *Mariner 10* spacecraft in February 1974, using a false-colo
 :align: center
 
 Venus thermal structure from the surface (737 K, 92 bar) to 100 km altitude, based on the *Venus International Reference Atmosphere* and the *Venus Express* radio-science experiment {cite:p}`Tellmann2009`.
-The $\mathrm{H_2SO_4}$ cloud deck (yellow band, 48-70 km) sits where the temperature traverses $\sim$230-350 K between cloud top and cloud base, within the thermodynamic stability field of concentrated sulfuric acid droplets; the sub-cloud haze (peach band, 31-48 km) lies just below.
+The $\mathrm{H_2SO_4}$ cloud deck (yellow band, 48-70 km) sits where the temperature traverses $\sim$230-360 K between cloud top and cloud base, within the thermodynamic stability field of concentrated sulfuric acid droplets; the sub-cloud haze (peach band, 31-48 km) lies just below.
 The cold collar inversion layer near 62-65 km altitude, prominent in the VeRa retrievals at high latitudes ($\sim$65-75°), sits where the temperature inversion shapes the upper boundary of the cloud system.
 ```
 
@@ -238,7 +247,7 @@ The cold collar inversion layer near 62-65 km altitude, prominent in the VeRa re
 
 Mars's thin atmosphere ($\sim$6 mbar surface pressure) supports two types of clouds:
 
-- **$\mathrm{CO_2}$ ice clouds** form at high altitudes ($\sim$50–100 km) where temperatures drop below the frost point of $\mathrm{CO_2}$ ($\sim$148 K at 6 mbar). These are thin, wispy clouds, sometimes called "mesospheric" clouds.
+- **$\mathrm{CO_2}$ ice clouds** form at high altitudes ($\sim$50–100 km) where temperatures drop below the local $\mathrm{CO_2}$ frost point ($\sim$148 K at the 6 mbar surface pressure, near 100 K at mesospheric pressures). These are thin, wispy clouds, sometimes called "mesospheric" clouds.
 - **$\mathrm{H_2O}$ ice clouds** form at lower altitudes ($\sim$10–30 km), particularly over the Tharsis volcanic region and in the aphelion cloud belt near the equator during northern summer.
 
 **Mineral dust** plays a central role in Martian atmospheric physics: wind-lofted dust particles serve as condensation nuclei for ice clouds, and dust itself is a powerful radiative agent, absorbing solar radiation and heating the atmosphere, which can trigger positive feedback loops leading to global dust storms (see [weather and storms](weather-storms) below).
@@ -332,7 +341,7 @@ Schematic of Earth's atmospheric circulation, showing the three-cell structure i
 :align: center
 
 Idealised zonal-mean meridional streamfunction of Earth's troposphere, plotted as latitude versus altitude.
-Solid blue contours mark counter-clockwise overturning (Northern-Hemisphere Hadley cell sense), dashed red contours mark clockwise overturning, and the dashed black curve indicates the tropopause.
+Solid blue contours mark clockwise overturning in this latitude-altitude view, the sense of the Northern-Hemisphere Hadley cell (rising at the equator, poleward aloft, sinking near 30°); dashed red contours mark counter-clockwise overturning, arrows on the two Hadley cells show the flow direction, and the dashed black line indicates the tropopause.
 The two thermally direct Hadley cells flank the equator from the surface to $\sim$15 km, the indirect Ferrel cells lie between $\sim$30° and $\sim$60° in each hemisphere, and the weak polar cells sit poleward of $\sim$60°.
 The cell structure follows the {cite:t}`Held1980` axisymmetric theory of nearly inviscid atmospheres.
 ```
@@ -355,8 +364,8 @@ For Earth, $\Omega = 7.29 \times 10^{-5}$ rad s$^{-1}$ (sidereal rotation rate).
 :align: center
 
 Geometric origin of the Coriolis effect, viewed from above the rotating planet's north pole.
-Left panel (inertial frame): a parcel launched poleward from a low latitude travels in a straight line, while the surface beneath rotates east with angular velocity $\Omega$.
-Right panel (rotating frame of the planet): the same parcel appears to curve to the right of its motion in the Northern Hemisphere, with apparent acceleration $f = 2 \Omega \sin \phi$.
+Left panel (inertial frame): a parcel launched poleward keeps the eastward velocity of its low-latitude launch point, so it travels in a straight line tilted east of the pole, while the surface beneath rotates east with angular velocity $\Omega$; the ground at higher latitude moves east more slowly than the parcel.
+Right panel (rotating frame of the planet): the same parcel appears to curve east, to the right of its motion in the Northern Hemisphere; the strength of the deflection is characterised by the Coriolis parameter $f = 2 \Omega \sin \phi$.
 The deflection vanishes at the equator and is strongest at the poles; in the Southern Hemisphere the deflection is mirrored to the left.
 Plot generated for this lecture from the kinematic identity $f = 2\Omega \sin\phi$.
 ```
@@ -509,14 +518,14 @@ The GRS sits between two zonal jets with opposite directions, which confine and 
 Polar cyclone cluster at Jupiter's north pole imaged by the JIRAM infrared spectrometer on NASA's *Juno* spacecraft.
 A central cyclone is encircled by eight smaller cyclones in a stable octagonal arrangement, which shows that Jupiter's atmospheric dynamics produce coherent polygonal vortex patterns analogous to Saturn's hexagonal jet ({numref}`fig:saturn-hexagon`).
 The cyclones have remained in this configuration over multiple Juno perijoves spanning several years, far longer than any Earth analogue.
-At the south pole, a pentagonal cluster of five circumpolar cyclones remained remarkably stable through perijove 18 (February 2019) {cite:p}`Adriani2020`; a sixth cyclone subsequently joined the cluster at perijove 23 (November 2019), transitioning the south-polar ring toward a hexagonal arrangement.
+At the south pole, a pentagonal cluster of five circumpolar cyclones remained remarkably stable through perijove 18 (February 2019) {cite:p}`Adriani2020`; a sixth cyclone briefly joined the southern pentagon in late 2019 but dissipated within about two months without merging, leaving the pentagonal arrangement intact {cite:p}`Mura2021`.
 Adapted from {cite:t}`Adriani2018`.
 Credit: NASA/JPL-Caltech/SwRI/ASI/INAF/JIRAM, public domain.
 ```
 
 ### Saturn: the hexagonal jet stream
 
-Saturn's north pole hosts one of the most geometrically striking features in the solar system: a persistent **hexagonal jet stream** ({numref}`fig:saturn-hexagon`) encircling the pole at $\sim$78°N latitude, first discovered by Voyager in 1981 and extensively imaged by Cassini.
+Saturn's north pole hosts one of the most geometrically striking features in the solar system: a persistent **hexagonal jet stream** ({numref}`fig:saturn-hexagon`) encircling the pole at $\sim$78°N latitude, first seen in the Voyager flyby images of 1980-81 and extensively imaged by Cassini.
 
 ```{figure} figures/saturn_hexagon.avif
 :name: fig:saturn-hexagon
@@ -525,7 +534,7 @@ Saturn's north pole hosts one of the most geometrically striking features in the
 
 Saturn's hexagonal jet stream encircling the north pole at $\sim$78°N, imaged by NASA's *Cassini* spacecraft in November 2012.
 The hexagonal pattern is interpreted as a stable Rossby wave with six-fold symmetry, sustained by the prograde polar jet at its boundary.
-The hexagon spans $\sim$30,000 km across, larger than Earth's diameter, and has been observed continuously since the *Voyager 1* and *2* flybys in 1980-81.
+The hexagon spans $\sim$30,000 km across, larger than Earth's diameter, and has persisted since its discovery in the *Voyager 1* and *2* flyby images of 1980-81.
 Credit: NASA/JPL-Caltech/SSI/Hampton University, public domain.
 ```
 
@@ -599,7 +608,7 @@ This contradiction, a faint Sun that should have frozen the Earth versus geologi
 
 Several mechanisms have been proposed to resolve the paradox {cite:p}`Feulner2012`:
 
-- **Enhanced $\mathrm{CO_2}$ greenhouse:** If the early atmosphere contained 10–1000 times more $\mathrm{CO_2}$ than today (plausible, given that the carbonate-silicate cycle was less efficient before the emergence of land plants), the enhanced greenhouse warming could compensate for the weaker Sun.
+- **Enhanced $\mathrm{CO_2}$ greenhouse:** If the early atmosphere contained 10–1000 times more $\mathrm{CO_2}$ than today (plausible: with less continental area exposed to weathering on the early Earth, the carbonate-silicate thermostat of the next section settles at a higher $\mathrm{CO_2}$ level), the enhanced greenhouse warming could compensate for the weaker Sun.
 - **Methane greenhouse:** Biogenic $\mathrm{CH_4}$ from early methanogens could have provided additional greenhouse warming. $\mathrm{CH_4}$ is a potent greenhouse gas, and in an anoxic (oxygen-free) early atmosphere, it would have had a much longer lifetime than today.
 - **$\mathrm{N_2}$ pressure broadening:** A thicker $\mathrm{N_2}$ atmosphere (2–3 times present levels) would enhance greenhouse warming through pressure broadening of $\mathrm{CO_2}$ and $\mathrm{H_2O}$ absorption lines.
 - **Lower albedo:** Without continents (less land area in the Archean) and potentially fewer clouds, the early Earth may have reflected less sunlight, absorbing more energy despite the lower luminosity.
@@ -635,13 +644,13 @@ The stability of a planet's climate depends on **feedback mechanisms**, processe
 :align: center
 
 Energy-balance illustration of the ice-albedo feedback and snowball bistability.
-The red curve is the outgoing longwave radiation $\sigma T^4$ (with a fixed grey greenhouse), and the blue curve is the absorbed solar flux $(1 - \alpha(T))\,S/4$ with a temperature-dependent albedo that drops from $\sim$0.6 (ice-covered) to $\sim$0.3 (ice-free) across the freezing region.
+The red curve is the outgoing longwave radiation $\varepsilon \sigma T^4$ with a fixed grey emissivity $\varepsilon = 0.62$ (a constant greenhouse), and the blue curve is the absorbed solar flux $(1 - \alpha(T))\,S/4$ with a temperature-dependent albedo that drops from $\sim$0.6 (ice-covered) to $\sim$0.3 (ice-free) across the freezing region.
 Three energy-balance equilibria exist: a stable cold *snowball* state (left intersection), an unstable deglaciation threshold (middle), and a stable warm state (right).
 Pushing the system across the unstable middle point triggers a runaway transition.
 The snowball events of the Neoproterozoic ($\sim$717 and $\sim$635 Ma) are interpreted as global excursions of this bifurcation diagram {cite:p}`Hoffman1998,Hoffman2017`.
 ```
 
-- **Water vapour feedback** (positive): If the planet warms, more water evaporates $\Rightarrow$ $\mathrm{H_2O}$ is a strong greenhouse gas $\Rightarrow$ enhanced warming $\Rightarrow$ more evaporation. This feedback is the largest positive feedback in Earth's climate system; combined with the lapse-rate feedback it roughly doubles the no-feedback $\mathrm{CO_2}$ warming, and with cloud and albedo feedbacks contributes to an IPCC AR6 best-estimate equilibrium climate sensitivity of $\sim 3$ K for $\mathrm{CO_2}$ doubling {cite:p}`IPCC2021`. If it runs away (as may have happened on Venus), it leads to the **runaway greenhouse effect**, where the oceans completely evaporate (discussed in detail in {ref}`Lecture 9 <lecture09>`).
+- **Water vapour feedback** (positive): If the planet warms, more water evaporates $\Rightarrow$ $\mathrm{H_2O}$ is a strong greenhouse gas $\Rightarrow$ enhanced warming $\Rightarrow$ more evaporation. This feedback is the largest positive feedback in Earth's climate system: without any feedbacks, doubling $\mathrm{CO_2}$ would warm Earth by only $\sim$1.2 K, while the IPCC AR6 best estimate of the equilibrium warming, with the water vapour, lapse-rate, cloud, and albedo feedbacks included, is $\sim 3$ K {cite:p}`IPCC2021`. If it runs away (as may have happened on Venus), it leads to the **runaway greenhouse effect**, where the oceans completely evaporate (discussed in detail in {ref}`Lecture 9 <lecture09>`).
 
 - **Cloud feedback** (complex): Low-altitude clouds reflect sunlight (cooling), while high-altitude cirrus clouds trap infrared radiation (warming). The net cloud feedback is the largest source of uncertainty in Earth climate models and is one of the key unknowns for exoplanet climate predictions ({ref}`Lecture 13 <lecture13>`).
 
@@ -705,11 +714,16 @@ The requirement for both liquid water and active volcanism to maintain the carbo
 
 ## Recent advances
 
-In 2020, a team reported a tentative detection of phosphine ($\mathrm{PH_3}$) in the cloud decks of Venus using submillimetre spectroscopy, sparking intense debate about possible biological or unknown chemical sources. Subsequent reanalyses by independent groups found that the original signal was significantly weaker than first claimed, and the detection remains controversial. Regardless of the outcome, the episode highlighted how little we understand about Venus's atmospheric chemistry and motivated renewed interest in Venus exploration. ESA's **EnVision** orbiter and NASA's **DAVINCI** probe (both selected for launch in the early 2030s) will provide new measurements of Venus's atmospheric composition and surface-atmosphere interactions.
+In 2020, a team reported a tentative detection of phosphine ($\mathrm{PH_3}$) in the cloud decks of Venus using millimetre-wavelength spectroscopy {cite:p}`Greaves2021`, sparking intense debate about possible biological or unknown chemical sources. Independent reanalyses contested the detection, showing among other things that mesospheric $\mathrm{SO_2}$ can reproduce the observed spectral feature, and it remains controversial {cite:p}`Lincowski2021`. Regardless of the outcome, the episode highlighted how little we understand about Venus's atmospheric chemistry and motivated renewed interest in Venus exploration. ESA's **EnVision** orbiter and NASA's **DAVINCI** probe (both selected for launch in the early 2030s) will provide new measurements of Venus's atmospheric composition and surface-atmosphere interactions.
 
 NASA's **Dragonfly** mission, a nuclear-powered rotorcraft scheduled for launch in 2028, will explore Titan's surface and lower atmosphere in unprecedented detail. Dragonfly will sample the organic-rich dunes and investigate the products of Titan's atmospheric photochemistry at the surface, testing whether the combination of complex organics and transient liquid water (from impact melts or cryovolcanism) could drive prebiotic chemistry ({ref}`Lecture 14 <lecture14>`).
 
 Updated three-dimensional climate models for early Mars continue to challenge the "warm and wet" hypothesis, suggesting that episodic warming from impacts, volcanism, or atmospheric $\mathrm{H_2}$ greenhouse effects may be needed to explain the geological evidence for liquid water on early Mars ({ref}`Lecture 10 <lecture10>`). The interplay between atmospheric composition, climate feedbacks, and surface geology remains an active area of research.
+
+
+## Looking ahead to Lecture 7
+
+The last three lectures treated planets from the top down: energy budgets, vertical structure, and now clouds, winds, and climate. {ref}`Lecture 7 <lecture07>` moves to the solid surfaces these atmospheres act upon. Impact cratering provides the clocks by which planetary surfaces are dated, volcanism and tectonics resurface them from within, and erosion and weathering, driven by the winds, rain, and chemistry of this lecture, rework them from above. The climate history written into Mars's valley networks returns there as a geological record to be read.
 
 
 ## References

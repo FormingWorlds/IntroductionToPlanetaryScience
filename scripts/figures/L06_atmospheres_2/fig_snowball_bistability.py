@@ -58,7 +58,7 @@ def make_plot() -> Path:
 
     fig, ax = plt.subplots(figsize=(8.5, 5.5))
     ax.plot(T, OLR(T), color="#d62728", lw=2.0,
-            label=r"Outgoing longwave $\sigma T^4$")
+            label=rf"Outgoing longwave $\varepsilon\,\sigma T^4$ ($\varepsilon = {EPSILON_EFF}$)")
     ax.plot(T, absorbed(T), color="#1f77b4", lw=2.0,
             label=r"Absorbed solar $(1 - \alpha(T))\, S/4$")
 
@@ -82,18 +82,27 @@ def make_plot() -> Path:
     for t_eq, (label, color) in zip(eq_T, eq_labels):
         flux_eq = OLR(np.array([t_eq]))[0]
         ax.plot(t_eq, flux_eq, "o", color="black", ms=8, zorder=5)
-        ax.text(t_eq, flux_eq + 25, f"{t_eq:.0f} K",
-                ha="center", fontsize=10)
+        # The blue sigmoid rises through the region right above the
+        # middle root; its value label goes up-left instead
+        if "Unstable" in label:
+            ax.text(t_eq - 9, flux_eq + 38, f"{t_eq:.0f} K",
+                    ha="center", fontsize=10)
+        else:
+            ax.text(t_eq, flux_eq + 25, f"{t_eq:.0f} K",
+                    ha="center", fontsize=10)
         # Region labels
         if "Snowball" in label:
-            ax.text(t_eq - 10, flux_eq - 15, label, color=color,
-                    fontsize=10, ha="right", va="top")
+            # Above the blue flat branch, left of the cold intersection
+            ax.text(t_eq - 18, flux_eq + 42, label, color=color,
+                    fontsize=10, ha="center", va="bottom")
         elif "Unstable" in label:
             ax.text(t_eq, flux_eq + 70, label, color=color,
                     fontsize=10, ha="center")
         else:
-            ax.text(t_eq + 10, flux_eq + 30, label, color=color,
-                    fontsize=10, ha="left")
+            # Below the blue flat branch; the OLR curve passes
+            # through the region up-right of the intersection
+            ax.text(t_eq + 14, flux_eq - 18, label, color=color,
+                    fontsize=10, ha="left", va="top")
 
     ax.set_xlim(220, 320)
     ax.set_ylim(0, 500)

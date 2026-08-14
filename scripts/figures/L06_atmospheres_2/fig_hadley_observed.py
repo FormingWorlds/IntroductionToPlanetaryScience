@@ -4,8 +4,11 @@ Idealised zonal-mean meridional streamfunction of Earth's
 troposphere (latitude vs altitude). Three pairs of cells per
 hemisphere: thermally-direct Hadley cells (equator to ~30 deg),
 indirect Ferrel cells (~30-60 deg), weak polar cells (poleward
-of ~60 deg). Solid blue = counter-clockwise (NH Hadley sense),
-dashed red = clockwise.
+of ~60 deg). With latitude on the x-axis and altitude on the
+y-axis, the NH Hadley overturning (up at the equator, poleward
+aloft, down at 30 deg N) is clockwise: solid blue = clockwise,
+dashed red = counter-clockwise. Arrows on the two Hadley cells
+mark the flow direction.
 
 Caption / figure id : `fig:hadley-observed`
 Markdown source     : book/06_atmospheres_2/atmospheres_2.md
@@ -40,8 +43,8 @@ def streamfunction(phi_deg: np.ndarray, z_km: np.ndarray) -> np.ndarray:
     )
 
     Implemented as a sum of latitudinal lobes with appropriate signs
-    so that NH Hadley is counter-clockwise (rising at equator,
-    sinking at 30 deg N).
+    so that NH Hadley circulates clockwise in the latitude-altitude
+    view (rising at the equator, sinking at 30 deg N).
     """
     PHI, Z = np.meshgrid(phi_deg, z_km)
     # Vertical envelope (zero at surface and tropopause)
@@ -88,9 +91,16 @@ def make_plot() -> Path:
                          colors="#a83232", linewidths=1.2,
                          linestyles="--")
 
-    # Tropopause
+    # Tropopause (named in the legend; an in-plot label would sit
+    # under the legend box)
     ax.axhline(15, color="black", linestyle="--", lw=1.0)
-    ax.text(85, 15.5, "Tropopause", color="0.3", fontsize=9, ha="right")
+
+    # Flow-direction arrows on the two Hadley cells: poleward aloft,
+    # equatorward at the surface
+    arrow_kw = dict(arrowstyle="->", color="0.25", lw=1.4)
+    for x0, x1 in [(9, 21), (-9, -21)]:
+        ax.annotate("", xy=(x1, 13.6), xytext=(x0, 13.6), arrowprops=arrow_kw)
+        ax.annotate("", xy=(x0, 1.2), xytext=(x1, 1.2), arrowprops=arrow_kw)
 
     # Cell labels
     cell_labels = [
@@ -117,9 +127,9 @@ def make_plot() -> Path:
     from matplotlib.lines import Line2D
     handles = [
         Line2D([0], [0], color="#1f4e79", lw=1.5,
-               label="Counter-clockwise (NH Hadley sense)"),
+               label="Clockwise (NH Hadley sense)"),
         Line2D([0], [0], color="#a83232", lw=1.5, linestyle="--",
-               label="Clockwise"),
+               label="Counter-clockwise"),
         Line2D([0], [0], color="black", lw=1.0, linestyle="--",
                label="Tropopause"),
     ]

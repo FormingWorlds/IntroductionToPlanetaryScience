@@ -229,6 +229,41 @@ chk("L06 Koehler: S_crit-1 for m_s = 1e-16 g", s_crit, 3.9e-3, 5e-2)
 m = load("scripts/figures/L06_atmospheres_2/fig_psat_curves.py")
 chk("L06 psat: H2O anchor at 373.15 K (Pa)",
     float(m.psat(np.array([373.15]), 18.015e-3, 2.50e6, 373.15, 101325.0)[0]), 101325.0, 1e-6)
+# CO2 frost point at the 6 mbar Mars surface pressure sits inside the
+# plotted condensation band (species table: 100-150 K)
+_co2 = dict(zip(("label", "M", "L", "T_ref", "P_ref", "color", "band"), m.SPECIES[4]))
+_T = np.linspace(80, 200, 24001)
+_frost = float(_T[np.argmin(np.abs(m.psat(_T, _co2["M"], _co2["L"], _co2["T_ref"], _co2["P_ref"]) - 600.0))])
+chk("L06 psat: CO2 frost point at 600 Pa (K)", _frost, 147.5, 2e-2)
+chk_true("L06 psat: CO2 frost point inside plotted band",
+         _co2["band"][0] <= _frost <= _co2["band"][1], f"frost {_frost:.1f} K, band {_co2['band']}")
+# CH4 dew point at Titan's near-surface partial pressure (~0.09 bar)
+_ch4 = dict(zip(("label", "M", "L", "T_ref", "P_ref", "color", "band"), m.SPECIES[3]))
+_dew = float(_T[np.argmin(np.abs(m.psat(_T, _ch4["M"], _ch4["L"], _ch4["T_ref"], _ch4["P_ref"]) - 9000.0))])
+chk("L06 psat: CH4 dew point at 0.09 bar (K)", _dew, 88.0, 3e-2)
+chk_true("L06 psat: CH4 dew point inside plotted band",
+         _ch4["band"][0] <= _dew <= _ch4["band"][1], f"dew {_dew:.1f} K, band {_ch4['band']}")
+# The condensation column of the species table in the lecture notes
+# must match the plotted bands, or the two drift apart silently
+import re as _re
+_md = (ROOT / "book/06_atmospheres_2/atmospheres_2.md").read_text(encoding="utf-8")
+_tbl_names = ["H_2O", "H_2SO_4", "NH_3", "CH_4", "CO_2"]
+for _i, _nm in enumerate(_tbl_names):
+    _row = next((ln for ln in _md.splitlines()
+                 if ln.startswith("|") and ("\\mathrm{" + _nm + "}") in ln
+                 and ln.count("|") >= 7), None)
+    chk_true(f"L06 psat: notes table row found for {_nm}", _row is not None, "")
+    if _row is None:
+        continue
+    _cells = [c.strip() for c in _row.split("|")]
+    _mt = _re.match(r"(\d+)[–-](\d+)", _cells[5])
+    chk_true(f"L06 psat: notes table range parses for {_nm}", _mt is not None, _cells[5])
+    if _mt is None:
+        continue
+    _tbl_band = (int(_mt.group(1)), int(_mt.group(2)))
+    chk_true(f"L06 psat: notes table matches plotted band for {_nm}",
+             _tbl_band == tuple(m.SPECIES[_i][6]),
+             f"table {_tbl_band} vs figure {tuple(m.SPECIES[_i][6])}")
 
 m = load("scripts/figures/L06_atmospheres_2/fig_snowball_bistability.py")
 T = np.linspace(220, 320, 200000)

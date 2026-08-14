@@ -69,7 +69,7 @@ def make_plot() -> Path:
     # Surface annotation
     ax.plot(737, 0, "o", color="#a83232", ms=8, zorder=5)
     ax.annotate("Surface\n(737 K, 92 bar)",
-                xy=(737, 0), xytext=(610, 18),
+                xy=(737, 0), xytext=(645, 24),
                 fontsize=10,
                 arrowprops=dict(arrowstyle="-", color="0.4", lw=0.5))
 
