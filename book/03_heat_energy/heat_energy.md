@@ -54,16 +54,16 @@ The decay of naturally occurring radioactive isotopes provides a sustained heat 
 | ${}^{232}\mathrm{Th}$ | 14.0 | $2.6 \times 10^{-5}$ | 80 ppb |
 | ${}^{40}\mathrm{K}$ | 1.25 | $2.9 \times 10^{-5}$ | 28 ppb |
 
-These isotopes are **lithophile** ("rock-loving") elements that concentrate in the silicate mantle and crust rather than the metallic core. Together, they produce Earth's present-day radiogenic heat of approximately 20 TW (terawatts) {cite:p}`Jaupart2015`. Because the shorter-lived isotopes (${}^{235}\mathrm{U}$, ${}^{40}\mathrm{K}$) were more abundant in the past, total radiogenic heat production was 3–4 times higher at the time of Earth's formation (4.5 Gyr ago) than it is today ({numref}`fig:radiogenic-heat`).
+These isotopes are **lithophile** ("rock-loving") elements that concentrate in the silicate mantle and crust rather than the metallic core. Together, they produce Earth's present-day radiogenic heat of approximately 20 TW (terawatts) {cite:p}`Jaupart2015`. Because the shorter-lived isotopes (${}^{235}\mathrm{U}$, ${}^{40}\mathrm{K}$) were more abundant in the past, total radiogenic heat production was almost 5 times higher at the time of Earth's formation (4.5 Gyr ago) than it is today, a factor of 4.7 with the abundances in the table ({numref}`fig:radiogenic-heat`).
 
-**Short-lived isotopes** had half-lives of only a few million years and are now extinct, but were present when the solar system formed. The most important is ${}^{26}\mathrm{Al}$ (half-life 0.72 Myr), which was produced by nearby stellar nucleosynthesis and incorporated into the solar nebula. In the first few million years, ${}^{26}\mathrm{Al}$ was an extraordinarily potent heat source: it could melt planetesimals as small as a few kilometres in radius, initiating core formation and volatile loss even before planet-sized bodies had assembled ({numref}`fig:short-lived-decay`) {cite:p}`Lichtenberg2023`. The short-lived isotope ${}^{60}\mathrm{Fe}$ (half-life 2.6 Myr) also contributed, though to a lesser extent.
+**Short-lived isotopes** had half-lives of only a few million years and are now extinct, but were present when the solar system formed. The most important is ${}^{26}\mathrm{Al}$ (half-life 0.72 Myr), which was produced by nearby stellar nucleosynthesis and incorporated into the solar nebula. In the first few million years, ${}^{26}\mathrm{Al}$ dominated the total heating rate by almost four orders of magnitude ({numref}`fig:radiogenic-heat`): it could melt planetesimals as small as a few kilometres in radius, initiating core formation and volatile loss even before planet-sized bodies had assembled ({numref}`fig:short-lived-decay`) {cite:p}`Lichtenberg2023`. The short-lived isotope ${}^{60}\mathrm{Fe}$ (half-life 2.6 Myr) also contributed, though to a lesser extent.
 
-```{figure} figures/radiogenic_heat_evolution.svg
+```{figure} figures/radiogenic_heat_evolution.avif
 :name: fig:radiogenic-heat
-:width: 500px
+:width: 650px
 :align: center
 
-Evolution of Earth's radiogenic heat production over time. The total heat production (black curve) is the sum of contributions from four long-lived isotopes: ${}^{238}\mathrm{U}$ (red), ${}^{235}\mathrm{U}$ (green), ${}^{232}\mathrm{Th}$ (grey), and ${}^{40}\mathrm{K}$ (blue). At the time of Earth's formation (4.5 Gyr ago), total radiogenic heat production was about 3–4 times higher than today, primarily due to the larger contributions of ${}^{40}\mathrm{K}$ and ${}^{235}\mathrm{U}$. Credit: Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Specific radiogenic heating rate of planetary material from CAI formation to the present. Dashed curves: the short-lived isotopes ${}^{26}\mathrm{Al}$ (orange) and ${}^{60}\mathrm{Fe}$ (brown) in primitive chondritic rock, from their canonical initial abundances (${}^{26}\mathrm{Al}/{}^{27}\mathrm{Al} = 5.25 \times 10^{-5}$, ${}^{60}\mathrm{Fe}/{}^{56}\mathrm{Fe} = 10^{-8}$) {cite:p}`Lichtenberg2023`, with half-lives from {cite:p}`CastilloRogez2009,Rugel2009`. Solid curves: the four long-lived isotopes in bulk-silicate-Earth rock, computed from the parameters in the table above, with their sum in black. ${}^{26}\mathrm{Al}$ dominates the first few Myr by almost four orders of magnitude, the window in which planetesimals melt; after $\sim 10$ Myr the long-lived isotopes take over, and their summed output falls by a factor of 4.7 between Earth's formation and today (92 TW to 19 TW for the bulk silicate Earth). Course-original figure.
 ```
 
 
@@ -75,16 +75,12 @@ Evolution of Earth's radiogenic heat production over time. The total heat produc
 :width: 500px
 :align: center
 
-Decay of the principal short-lived radionuclides ${}^{26}\mathrm{Al}$ ($t_{1/2}=0.72$ Myr; {cite:p}`Lugmair2003`) and ${}^{60}\mathrm{Fe}$ ($t_{1/2}=2.62$ Myr; {cite:p}`Rugel2009`) over the first 10 Myr of solar-system history. Despite half-lives of only a few million years, these isotopes were the dominant heat source in the first few Myr and could melt planetesimals as small as a few kilometres in radius.
+Decay of the principal short-lived radionuclides ${}^{26}\mathrm{Al}$ ($t_{1/2}=0.72$ Myr; {cite:p}`CastilloRogez2009`) and ${}^{60}\mathrm{Fe}$ ($t_{1/2}=2.62$ Myr; {cite:p}`Rugel2009`) over the first 10 Myr of solar-system history. Despite half-lives of only a few million years, these isotopes were the dominant heat source in the first few Myr and could melt planetesimals as small as a few kilometres in radius.
 ```
 
 ### Tidal heating
 
 When a body on a non-circular orbit is tidally deformed by a nearby massive companion, the periodic flexing of its interior dissipates energy as heat. This is a significant heat source for certain moons in the outer solar system, particularly Io and Enceladus. We will discuss tidal heating in detail in [section 7](tidal-dissipation) of this lecture.
-
-```{note}
-Cartoon visualisations of accretional heating and core-formation differentiation are deferred; the schematic content is fully covered by the formation cartoons in {ref}`Lecture 2 <lecture02>` (impact heating during oligarchic growth) and the differentiation cutaways in {ref}`Lecture 4 <lecture04>` (metal-silicate segregation).
-```
 
 ### Earth's heat budget
 
@@ -154,7 +150,7 @@ F = \epsilon \sigma T^4
 $$ (eq:stefan-boltzmann)
 
 where $\sigma = 5.67 \times 10^{-8}$ W m$^{-2}$ K$^{-4}$ is the Stefan–Boltzmann constant and $\epsilon$ is the emissivity (close to 1 for most planetary surfaces). Radiation is the dominant mechanism for:
-- Heat loss from planetary **surfaces** to space
+- Heat loss from planetary **surfaces** to space; the planetary energy balance built on this is the subject of {ref}`Lecture 5 <lecture05>`
 - Energy transport through optically thin **atmospheres**
 - Cooling of magma ocean surfaces in the early stages of planetary evolution
 
@@ -363,7 +359,7 @@ Schematic temperature profile through Earth's mantle. The cold thermal boundary 
 
 The cold thermal boundary layer at Earth's surface behaves in a remarkable way: rather than remaining as a stagnant conductive lid, it **breaks into rigid plates** that move laterally, subduct back into the mantle at convergent boundaries, and are recycled. This is **plate tectonics**, the surface expression of mantle convection in a **mobile lid regime**.
 
-Plate tectonics is the most efficient way for a rocky planet to lose heat, because subducting plates carry cold surface material deep into the mantle, while hot material rises at mid-ocean ridges and volcanic hotspots ({numref}`fig:plate-boundaries`). This vigorous recycling is why Earth's surface heat flow is as high as it is.
+Plate tectonics is the most efficient way for a rocky planet to lose heat, because subducting plates carry cold surface material deep into the mantle, while hot material rises at mid-ocean ridges and volcanic hotspots ({numref}`fig:plate-boundaries`). This vigorous recycling is why Earth's surface heat flow is as high as it is. The surface geology of plate boundaries is treated in {ref}`Lecture 7 <lecture07>`, and the contrast with Venus's episodic resurfacing in {ref}`Lecture 9 <lecture09>`.
 
 ```{figure} figures/usgs_plate_boundaries_cross_section.avif
 :name: fig:plate-boundaries
@@ -375,7 +371,7 @@ Cross-section through the upper mantle and lithosphere illustrating the principa
 
 ### The stagnant lid regime
 
-Most other rocky bodies in the solar system (including Venus, Mars, Mercury, and the Moon) appear to operate in a **stagnant lid regime**, where the cold thermal boundary layer forms a single, thick, immobile shell. Without plate tectonics, heat can only escape through the lid by conduction (and volcanism, where magma punches through the lid). This is less efficient than plate tectonics, so stagnant lid planets cool more slowly and may retain more internal heat. The full taxonomy of plausible tectonic modes ({numref}`fig:lid-regimes`) is broader than the simple binary, including sluggish-lid and episodic regimes intermediate between the active and stagnant end-members {cite:p}`Lenardic2018`.
+Most other rocky bodies in the solar system (including Venus, Mars, Mercury, and the Moon; {ref}`Lecture 9 <lecture09>`, {ref}`Lecture 10 <lecture10>`) appear to operate in a **stagnant lid regime**, where the cold thermal boundary layer forms a single, thick, immobile shell. Without plate tectonics, heat can only escape through the lid by conduction (and volcanism, where magma punches through the lid). This is less efficient than plate tectonics, so stagnant lid planets cool more slowly and may retain more internal heat. The full taxonomy of plausible tectonic modes ({numref}`fig:lid-regimes`) is broader than the simple binary, including sluggish-lid and episodic regimes intermediate between the active and stagnant end-members {cite:p}`Lenardic2018`.
 
 ```{figure} figures/lenardic2018_tectonic_modes.avif
 :name: fig:lid-regimes
@@ -449,7 +445,7 @@ Surface heat flux $q$ as a function of seafloor age, predicted by the half-space
 | Mars | ~15–25 (estimated) | ~2–4 | Radiogenic + primordial |
 | Io | ~2000–2500 | ~100 | Tidal dissipation |
 
-The Moon and Mars have much lower surface heat flow than Earth, reflecting their smaller sizes (faster cooling through their conductive cooling timescale), the absence of plate tectonics (stagnant lid), and their smaller inventories of heat-producing elements. Io stands out dramatically: its surface heat flux is 20–30 times higher than Earth's, entirely driven by tidal heating. NASA's InSight mission ({numref}`fig:insight-mars`) recently provided the first direct seismological constraints on Mars's interior, including the radius of its core.
+The Moon and Mars have much lower surface heat flow than Earth, reflecting their smaller sizes (faster cooling through their conductive cooling timescale), the absence of plate tectonics (stagnant lid), and their smaller inventories of heat-producing elements. Io stands out dramatically: its surface heat flux is 20–30 times higher than Earth's, entirely driven by tidal heating. NASA's InSight mission ({numref}`fig:insight-mars`) recently provided the first direct seismological constraints on Mars's interior, including the radius of its core ({ref}`Lecture 10 <lecture10>`).
 
 ```{figure} figures/insight_mars_cutaway.avif
 :name: fig:insight-mars
@@ -491,7 +487,7 @@ The tidal heating rate depends on:
 
 ### Io: the most volcanically active body in the solar system
 
-Jupiter's innermost Galilean moon **Io** (radius 1821 km, similar in size to our Moon) is the most extreme example of tidal heating in the solar system. Despite having no significant radiogenic heat sources at present, Io produces a staggering ~$10^{14}$ W of tidal heat {cite:p}`Spencer2000`, roughly twice Earth's total heat output, from a body with only 1.5% of Earth's mass.
+Jupiter's innermost Galilean moon **Io** (radius 1821 km, similar in size to our Moon) is the most extreme example of tidal heating in the solar system; the giant-planet moon systems are surveyed in {ref}`Lecture 11 <lecture11>`. Despite having no significant radiogenic heat sources at present, Io produces a staggering ~$10^{14}$ W of tidal heat {cite:p}`Spencer2000`, roughly twice Earth's total heat output, from a body with only 1.5% of Earth's mass.
 
 This was predicted before it was observed. In a landmark 1979 paper, Peale, Cassen, and Reynolds calculated that tidal dissipation in Io, maintained by the **Laplace resonance** with Europa and Ganymede ({ref}`Lecture 2 <lecture02>`), should be sufficient to melt Io's interior {cite:p}`Peale1979`. Just days after the paper was published, the Voyager 1 spacecraft flew past Io and discovered active volcanic eruptions, a stunning confirmation of theory.
 
@@ -532,7 +528,7 @@ The Tvashtar volcanic plume on Io, captured by the New Horizons spacecraft durin
 :width: 600px
 :align: center
 
-Global distribution of Io's volcanic hotspots projected on a basemap, with each marker indicating an individually catalogued emission centre from combined Galileo, New Horizons, and ground-based monitoring. {cite:t}`Davies2024PSJ` report 343 active hotspots with an integrated emission of $\sim 58$ TW, approximately 55% of Io's total endogenic heat output of $105 \pm 12$ TW; the remainder is attributed to buried and subsurface volcanic activity. The emission pattern is consistent with tidal-dissipation heating driven by the Laplace-resonance forcing of Io's orbital eccentricity. Credit: NASA/JPL-Caltech, public domain.
+Global map of Io's 343 catalogued volcanic hot spots, in Mollweide projection centred on the anti-Jovian point, from nearly 30 years of combined Galileo, Juno, New Horizons, and ground-based monitoring. Marker size and colour indicate each hot spot's estimated power output, increasing from blue to yellow; prominent volcanoes are named, with Loki Patera the most powerful at $6000$ to $12{,}000$ GW. The catalogued hot spots emit $58 \pm 1$ TW, approximately 55% of Io's total endogenic heat output of $105 \pm 12$ TW; the remainder is attributed to buried and subsurface volcanic activity. The emission pattern is consistent with tidal-dissipation heating driven by the Laplace-resonance forcing of Io's orbital eccentricity. Reproduced from {cite:t}`Davies2024PSJ`, Fig. 1.
 ```
 
 ### Enceladus: a tiny moon with a big secret
@@ -554,12 +550,12 @@ Geysers of water ice erupt from the "tiger stripe" fractures near the south pole
 :width: 400px
 :align: center
 
-Cassini CIRS thermal-emission map of Enceladus's south polar region (yellow/orange overlay) draped on a monochrome basemap. The hottest emission is concentrated along the four "tiger stripe" fractures and falls off rapidly with distance. Total integrated thermal power along the stripes is $\sim 16$ GW ($15.8 \pm 3.1$ GW; {cite:t}`Howett2011`), revising upward the earlier $\sim 6$ GW estimate from the FP3-only Spencer et al. 2006 analysis, and far above any plausible radiogenic budget for a body of this size. Credit: NASA/JPL/GSFC/SwRI/SSI, public domain.
+High-resolution Cassini CIRS thermal scan (colour overlay) along a segment of one tiger-stripe fracture in Enceladus's south polar terrain, draped on a visible-light mosaic. The warmest emission hugs the fracture and falls off within a few kilometres to either side, localising the heat loss to the fractures themselves. Integrated over the full south polar terrain, the thermal output is $15.8 \pm 3.1$ GW {cite:p}`Howett2011`, revising upward the earlier $\sim 6$ GW estimate and far above any plausible radiogenic budget for a body of this size. Credit: NASA/JPL/GSFC/SwRI/SSI, public domain.
 ```
 
 ### Europa and Titan: subsurface oceans
 
-Tidal heating is also implicated in maintaining subsurface oceans on other outer solar system moons {cite:p}`NimmoPappalardo2016`:
+Tidal heating is also implicated in maintaining subsurface oceans on other outer solar system moons ({ref}`Lecture 11 <lecture11>`) {cite:p}`NimmoPappalardo2016`:
 
 - **Europa** (Jupiter): The Laplace resonance forces Europa's eccentricity, generating tidal heat (though less than Io's, because Europa is further from Jupiter). Magnetic field measurements by the Galileo spacecraft, combined with gravity data, strongly suggest a global liquid water ocean ~100 km deep beneath an ice shell of ~15–25 km ({numref}`fig:europa-interior-tidal`).
 
