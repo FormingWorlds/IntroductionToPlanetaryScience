@@ -45,7 +45,7 @@ def make_plot() -> Path:
     k = np.linspace(0.4, 8.0, 400)
     pi = np.pi
     free_slip = (k ** 2 + pi ** 2) ** 3 / k ** 2
-    free_slip_min = (4.0 / 27.0) * (3.0 * pi ** 2) ** 3 / (3 * pi ** 2) ** 2  # value at k = pi/sqrt(2)
+    free_slip_min = 27.0 * pi ** 4 / 4.0  # value at k = pi/sqrt(2): 657.51
     # Scale and shift in k so the minimum hits (K_C, RA_C)
     scale_k = K_C / (pi / np.sqrt(2))
     k_shifted = k * scale_k
