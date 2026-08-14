@@ -1,0 +1,20 @@
+{
+  "purpose": "Fig. fig:radiogenic-heat: specific radiogenic heating vs time, both isotope families",
+  "reservoirs": {
+    "long_lived": "bulk silicate Earth, concentrations as in the lecture table",
+    "short_lived": "primitive chondritic rock (Al 0.865 wt%, 56Fe 16.7 wt%)"
+  },
+  "initial_ratios": {
+    "26Al/27Al": 5.25e-05,
+    "60Fe/56Fe": 1e-08
+  },
+  "H_W_per_kg_isotope": {
+    "26Al": 0.3532,
+    "60Fe": 0.03656
+  },
+  "long_lived_total_now_W_per_kg": 4.871800000000002e-12,
+  "long_lived_total_now_TW_BSE": 19.49,
+  "long_lived_total_start_TW_BSE": 91.85,
+  "ratio_start_to_now": 4.71,
+  "sources": "Isotope table as in the lecture (after Jaupart et al. 2015; Turcotte & Schubert 2002); short-lived parameters after Lichtenberg et al. (2023); half-lives Castillo-Rogez et al. (2009), Rugel et al. (2009)"
+}

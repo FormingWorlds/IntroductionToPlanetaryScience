@@ -27,8 +27,8 @@ META = DATA_DIR / "earth_heat_budget.json"
 OUT_AVIF = REPO_ROOT / "book/03_heat_energy/figures/earth_heat_budget.avif"
 
 COMPONENTS = [
-    ("Radiogenic\n(mantle + crust)", 22.0, "#d62728"),
-    ("Primordial\n(secular cooling)", 15.0, "#ff7f0e"),
+    ("Radiogenic\n(mantle + crust)", 20.0, "#d62728"),
+    ("Primordial\n(secular cooling)", 17.0, "#ff7f0e"),
     ("Core cooling\nand solidification", 10.0, "#1f77b4"),
     ("Tidal (lunar)", 0.1, "#2ca02c"),
 ]

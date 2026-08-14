@@ -4,11 +4,11 @@
   "components": [
     {
       "label": "Radiogenic\n(mantle + crust)",
-      "TW": 22.0
+      "TW": 20.0
     },
     {
       "label": "Primordial\n(secular cooling)",
-      "TW": 15.0
+      "TW": 17.0
     },
     {
       "label": "Core cooling\nand solidification",
