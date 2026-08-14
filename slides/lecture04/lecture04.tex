@@ -25,7 +25,7 @@
 \end{frame}
 
 % ── Learning objectives ─────────────────────────────────────
-\begin{frame}{Learning Objectives}
+\begin{frame}{Learning objectives}
   By the end of this lecture, you will be able to:
   \vskip8pt
   \begin{itemize}
@@ -53,11 +53,11 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{planetary_differentiation}{Planetary differentiation. Credit: Wikimedia, CC BY-SA 4.0}
-\section{Accretion, Melting, \& Core Formation}
+\section{Accretion, melting, \& core formation}
 % ════════════════════════════════════════════════════════════
 
 % ── Metal-silicate separation ──────────────────────────────
-\begin{frame}{Metal--Silicate Separation}
+\begin{frame}{Metal--silicate separation}
   \begin{columns}[c]
     \column{0.40\textwidth}
     \centering
@@ -77,8 +77,30 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{stokes_settling}}\\
+  {\footnotesize Stokes settling of iron droplets in a silicate magma ocean. Course figure.}
+\end{frame}
+
+\begin{frame}{Reading the settling-velocity plot}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{stokes_settling}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item The line is $v \propto r^2$ on log-log axes (slope 2).
+      \item Markers: 1 mm at 0.044 m\,s$^{-1}$, 1 cm at 4.4 m\,s$^{-1}$; left of the dashed line ($\mathrm{Re} \approx 1$), Stokes' law holds exactly.
+      \item To its right the flow is turbulent and the true speed at 1 cm is nearer 0.5 m\,s$^{-1}$, still crossing a 1000 km magma ocean within weeks.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Iron rain empties a magma ocean of its metal within weeks: on geological clocks, core formation is instantaneous.}
+  \end{columns}
+\end{frame}
+
 % ── Magma ocean state ──────────────────────────────────────
-\begin{frame}{The Magma Ocean State}
+\begin{frame}{The magma ocean state}
   After accretion, the outer few thousand kilometres of a terrestrial planet are molten.
   \vskip8pt
   \begin{itemize}
@@ -93,7 +115,7 @@
 \end{frame}
 
 % ── Moon-forming impact ────────────────────────────────────
-\begin{frame}{The Moon-Forming Giant Impact}
+\begin{frame}{The Moon-forming giant impact}
   \begin{itemize}
     \item Mars-sized body (Theia) collided with proto-Earth $\sim$4.5~Ga
     \item Re-melted most of Earth's mantle, vaporised part of it
@@ -105,8 +127,44 @@
   \keyresult{Core formation is not a single event but a series of episodes, culminating in the giant impact.}
 \end{frame}
 
+\begin{frame}{Giant impacts that remove mantles}
+  Not every giant impact ends in net accretion: an oblique, fast collision can strip more silicate than it delivers.
+  \vskip6pt
+  \begin{itemize}
+    \item \textbf{Mercury:} core mass fraction 65--70\% (Earth $\sim$32\%, Mars $\sim$24\%); a hit-and-run impact stripped $\sim$50--70\% of the pre-impact mantle
+    \item \textbf{Mars:} the hemispheric dichotomy ($\sim$6 km elevation, $\sim$30 km crustal-thickness contrast) is the relaxed scar of a Borealis-scale impact; crust moved sideways, not lost
+    \item \textbf{Earth--Moon:} the opposite endpoint, net accretion of the impactor
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Mercury and Earth are the two endpoints of the same process: giant impacts set the final core-to-mantle ratio.}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Benz et al.\ (2007); Andrews-Hanna et al.\ (2008); Marinova et al.\ (2008)}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{benz2007_mercury_impact}}\\
+  {\footnotesize SPH simulation of the proto-Mercury hit-and-run impact. Benz et al.\ (2007).}
+\end{frame}
+
+\begin{frame}{Reading the Mercury impact frames}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{benz2007_mercury_impact}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Top left: the differentiated pre-impact bodies (iron red, silicate blue); top right: closest approach, with deep tidal disruption of both.
+      \item Bottom: silicate mantle is preferentially flung to heliocentric orbit while the iron cores reassemble into one body.
+      \item The remnant keeps its core but loses $\sim$50--70\% of its mantle, matching the observed core mass fraction.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{One oblique collision at several escape velocities converts an ordinary protoplanet into iron-rich Mercury.}
+  \end{columns}
+\end{frame}
+
 % ── Late veneer ────────────────────────────────────────────
-\begin{frame}{The Late Veneer}
+\begin{frame}{The late veneer}
   Highly siderophile elements (Ir, Pt, Os, Au) are \textbf{overabundant} in Earth's mantle compared to the deep-core equilibration prediction.
   \vskip6pt
   \begin{itemize}
@@ -123,7 +181,7 @@
 \end{frame}
 
 % ── Goldschmidt classification ─────────────────────────────
-\begin{frame}{Goldschmidt Classification}
+\begin{frame}{Goldschmidt classification}
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
@@ -131,8 +189,9 @@
     \source{Wikimedia, CC BY-SA 3.0}
 
     \column{0.52\textwidth}
-    \small
-    \begin{tabular}{l l l}
+    \footnotesize
+    \setlength\tabcolsep{4pt}
+    \begin{tabular}{@{}l l l@{}}
       \toprule
       \textbf{Class} & \textbf{Affinity} & \textbf{Examples} \\
       \midrule
@@ -148,7 +207,7 @@
 \end{frame}
 
 % ── Partition coefficients ────────────────────────────────
-\begin{frame}{Metal--Silicate Partition Coefficients}
+\begin{frame}{Metal--silicate partition coefficients}
   How strongly does an element prefer metal vs.\ silicate?
   \vskip4pt
   $$D_i^{\mathrm{met/sil}} \equiv \frac{C_i^{\mathrm{metal}}}{C_i^{\mathrm{silicate}}}$$
@@ -174,7 +233,7 @@
 \end{frame}
 
 % ── Partition coefficient pressure dependence ────────────
-\begin{frame}{Why Silicon Is in the Core}
+\begin{frame}{Why silicon is in the core}
   Partition coefficients depend strongly on pressure, temperature, and oxygen fugacity.
   \vskip6pt
   \begin{itemize}
@@ -189,8 +248,30 @@
   {\tiny\color{ipsText!60} Source: Rubie et al.\ (2015); Fischer et al.\ (2015)}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{siebert2013_partition_coefficients}}\\
+  {\footnotesize Metal-silicate partition coefficients versus pressure. Course figure, after Siebert et al.\ (2013).}
+\end{frame}
+
+\begin{frame}{Reading the partitioning experiments}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{siebert2013_partition_coefficients}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Curves: laboratory $D^{\mathrm{met/sil}}$ for Ni, Co, V, Cr from 1 to 75 GPa at magma-ocean temperatures, 2 log-units below the iron-w\"ustite buffer.
+      \item Grey band: the depletion level the present-day bulk silicate Earth requires.
+      \item All four curves cross the band near 40--60 GPa: equilibration at the base of a 1000--1500 km deep magma ocean.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{The mantle's siderophile depletions remember the depth of the magma ocean in which the core formed.}
+  \end{columns}
+\end{frame}
+
 % ── Hf-W chronometry ──────────────────────────────────────
-\begin{frame}{Hf--W Chronometry: When Did Cores Form?}
+\begin{frame}{Hf--W chronometry: when did cores form?}
   \begin{itemize}
     \item ${}^{182}\mathrm{Hf}$ $\rightarrow$ ${}^{182}\mathrm{W}$, half-life = 8.9~Myr
     \item Hf is \textbf{lithophile} (stays in mantle)
@@ -204,7 +285,7 @@
     \textbf{Body} & $\boldsymbol{\varepsilon^{182}\mathrm{W}}$ & \textbf{Core formation timing} \\
     \midrule
     Earth & $+2$ & 30--60~Myr after solar system \\
-    Mars  & $+3$ to $+5$ & 10--20~Myr (faster, smaller) \\
+    Mars  & $+0.4$ (bulk) & complete within $\sim$10~Myr \\
     Moon  & $\sim$Earth & Consistent with giant impact \\
     \bottomrule
   \end{tabular}
@@ -213,7 +294,7 @@
 \end{frame}
 
 % ── Hf-W evolution schematic ──────────────────────────────
-\begin{frame}{How the Hf--W Clock Works}
+\begin{frame}{How the Hf--W clock works}
   \textbf{Two bodies diverging from chondritic composition:}
   \vskip6pt
   \begin{columns}[T]
@@ -222,7 +303,7 @@
     \begin{itemize}
       \item Core extracts all W, stops producing ${}^{182}\mathrm{W}$
       \item Mantle keeps Hf, continues making ${}^{182}\mathrm{W}$
-      \item Result: strong mantle excess ($+3$ to $+5\varepsilon$)
+      \item Result: a clear mantle excess ($\varepsilon \approx +0.4$ bulk; up to $+1.8$ in depleted shergottites)
     \end{itemize}
 
     \column{0.48\textwidth}
@@ -237,8 +318,30 @@
   Earth's moderate excess ($+2\varepsilon$) places core formation in the 30--60~Myr window.
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{mezger2020_accretion_timescales}}\\
+  {\footnotesize Accretion and differentiation timescales after CAI condensation. Mezger et al.\ (2020).}
+\end{frame}
+
+\begin{frame}{Reading the accretion timeline}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{mezger2020_accretion_timescales}}
+    \column{0.50\textwidth}
+    \small
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Logarithmic axis, 0.1--100 Myr after CAI: CAIs and chondrules form first; planetesimal cores differentiate within $\sim$1 Myr (Hf-W); Mars finishes accreting within $\sim$5--10 Myr.
+      \item Jupiter must form before the NC/CC isotopic dichotomy is locked in.
+      \item Earth assembles in three stages: proto-Earth ($\sim$90\%), Moon-forming impact ($\sim$10\%), late accretion ($\sim$0.5\%).
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Small bodies differentiate within 1 Myr; Earth needs tens of Myr: radiometric clocks resolve the whole hierarchy.}
+  \end{columns}
+\end{frame}
+
 % ── Mantle differentiation ─────────────────────────────────
-\begin{frame}{Magma Ocean Crystallisation}
+\begin{frame}{Magma ocean crystallisation}
   Core formation is not the end. As the magma ocean cools:
   \vskip6pt
   \begin{itemize}
@@ -252,8 +355,30 @@
   {\tiny\color{ipsText!60} Source: Elkins-Tanton (2012), \textit{Annu. Rev. Earth Planet. Sci.}}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{elkinstanton2012_magma_ocean_crystallisation}}\\
+  {\footnotesize Magma-ocean crystallisation sequence. Elkins-Tanton (2012).}
+\end{frame}
+
+\begin{frame}{Reading the crystallisation diagram}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{elkinstanton2012_magma_ocean_crystallisation}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Depth versus time: the dense assemblage (bridgmanite, magnesiow\"ustite, majorite) solidifies first at the base; the front migrates upward as heat leaves through the surface.
+      \item Olivine and orthopyroxene follow at shallower depths; the final residual liquid (yellow) pools near the top.
+      \item Incompatible elements (U, Th, K, REE, H$_2$O) ride the residual liquid: the future crust and KREEP source.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Bottom-up crystallisation concentrates the heat-producing elements at the top: the crust inherits the magma ocean's dregs.}
+  \end{columns}
+\end{frame}
+
 % ── Incompatible element enrichment ──────────────────────
-\begin{frame}{Incompatible Element Enrichment}
+\begin{frame}{Incompatible element enrichment}
   \begin{itemize}
     \item Large ions (U$^{4+}$, Th$^{4+}$, K$^+$) do not fit well into crystal lattices
     \item Progressively concentrated in the shrinking residual liquid
@@ -266,7 +391,7 @@
 \end{frame}
 
 % ── Mantle reservoirs ─────────────────────────────────────
-\begin{frame}{Mantle Reservoirs}
+\begin{frame}{Mantle reservoirs}
   Magma ocean crystallisation and billions of years of processing leave distinct mantle reservoirs:
   \vskip6pt
   \begin{description}
@@ -281,7 +406,7 @@
 \end{frame}
 
 % ── Lunar magma ocean ─────────────────────────────────────
-\begin{frame}{The Lunar Magma Ocean: Direct Evidence}
+\begin{frame}{The lunar magma ocean: direct evidence}
   The Moon shows the clearest record of magma ocean differentiation:
   \vskip6pt
   \begin{itemize}
@@ -295,8 +420,30 @@
   \keyresult{The Moon is the textbook case of magma ocean differentiation; its exposed anorthosite confirms the theoretical crystallisation sequence.}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{elkinstanton2012_lunar_magma_ocean}}\\
+  {\footnotesize End-state of the lunar magma ocean. Course figure, after Elkins-Tanton (2012).}
+\end{frame}
+
+\begin{frame}{Reading the lunar cross-section}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{elkinstanton2012_lunar_magma_ocean}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Outer pale shell: the 40--50 km anorthosite flotation crust; directly beneath it, the yellow urKREEP layer (primordial KREEP) is the last $\sim$1\% of liquid to solidify.
+      \item Green band: pyroxenite and dunite cumulates from the intermediate stages; the dark ilmenite-rich layer formed last and is denser than everything below it.
+      \item The ilmenite layer sinks (mantle overturn), dominating lunar tectonics for the first $\sim$500 Myr; an iron core sits at the centre.
+    \end{itemize}
+    \vskip0pt\relax
+    \keyresult{Apollo samples match this predicted stratigraphy in detail: the Moon is the clearest test case of magma-ocean theory.}
+  \end{columns}
+\end{frame}
+
 % ── Volatile delivery: classical vs modern ────────────────
-\begin{frame}{Volatile Delivery: Classical vs.\ Modern View}
+\begin{frame}{Volatile delivery: classical vs.\ modern view}
   \textbf{Classical picture:}
   \begin{itemize}
     \item Inner solar system forms dry, inside the water snow line
@@ -313,8 +460,30 @@
   Giant impacts can either deliver \textbf{or} strip volatiles depending on impact geometry and atmospheric state.
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{lichtenberg2021_fig1}}\\
+  {\footnotesize Two planetesimal reservoirs from snow-line migration. Lichtenberg et al.\ (2021).}
+\end{frame}
+
+\begin{frame}{Reading the two-reservoir diagram}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{lichtenberg2021_fig1}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Reservoir I (red): early planetesimals form just inside the inward-migrating water snow line during the Class I disk stage and accrete ice.
+      \item Reservoir II (blue): later planetesimals form in the outer disk once Jupiter grows large enough to halt the inward pebble drift, starving the inner disk of ice.
+      \item The spatial and temporal split maps onto the NC/CC meteorite dichotomy and the inner-solar-system volatile gradient.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{When a planetesimal forms matters as much as where: timing sets its water budget.}
+  \end{columns}
+\end{frame}
+
 % ── Outgassing from the magma ocean ───────────────────────
-\begin{frame}{Outgassing from the Magma Ocean}
+\begin{frame}{Outgassing from the magma ocean}
   During magma ocean cooling, dissolved volatiles \textbf{outgas} into the overlying atmosphere.
   \vskip8pt
   Speciation depends on \textbf{oxygen fugacity} ($f_{\mathrm{O}_2}$), set by the mantle redox state:
@@ -328,7 +497,7 @@
 \end{frame}
 
 % ── Water solubility law ──────────────────────────────────
-\begin{frame}{Water in Silicate Melt: A Square-Root Law}
+\begin{frame}{Water in silicate melt: a square-root law}
   The solubility of water in silicate magma follows:
   \vskip4pt
   \keyresult{$$X_{\mathrm{H_2O}} \propto p_{\mathrm{H_2O}}^{1/2}$$}
@@ -345,8 +514,55 @@
   {\tiny\color{ipsText!60} Source: Hirschmann (2012), \textit{Earth Planet. Sci. Lett.}}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{water_solubility}}\\
+  {\footnotesize Solubility of H$_2$O in basaltic melt at 1573 K. Course figure.}
+\end{frame}
+
+\begin{frame}{Reading the solubility law}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{water_solubility}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item A straight line on log-log axes: the square-root law $X_{\mathrm{H_2O}} = K\,p^{1/2}$ with $K \approx 0.42$ wt\% MPa$^{-1/2}$; dissolved water speciates as OH$^-$ groups.
+      \item Marked points: a 1 kbar steam atmosphere dissolves $\sim$4 wt\%; 5 kbar dissolves $\sim$9 wt\%.
+      \item As outgassing thickens the atmosphere, $p_{\mathrm{H_2O}}$ rises and the melt holds more water back: outgassing is self-limiting.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{A magma ocean never gives up all its water: the square-root law locks part of the inventory into the mantle.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Impact erosion: two regimes}
+  \begin{itemize}
+    \item \textbf{Local:} an ordinary impactor blows off at most the air above the tangent plane at the impact point: a fraction $H/2R \approx 6 \times 10^{-4}$ of Earth's atmosphere per event
+    \item Erosion by ordinary impacts is therefore cumulative; km-scale planetesimals are the most efficient eroders per unit impactor mass
+    \item \textbf{Global:} a giant impact shakes the whole planet; air is lost wherever the ground approaches $v_\mathrm{esc}$
+    \item Even the Moon-forming impact removes only $\sim$20\%; a surface ocean raises the loss substantially
+  \end{itemize}
+  \vskip6pt
+  \keyresult{No single impact strips an atmosphere: erosion is the integral of many small events plus rare giant shakes.}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Melosh \& Vickery (1989); Schlichting et al.\ (2015); Genda \& Abe (2003, 2005)}
+\end{frame}
+
+\begin{frame}{Delivery versus erosion}
+  \begin{itemize}
+    \item The same planetesimals that erode also deliver volatiles; the net budget depends on impactor sizes, velocities, and volatile content
+    \item Venus keeps $\sim$50$\times$ more $^{36}\mathrm{Ar}$ than Earth: oceans on proto-Earth enhanced its loss, while dry proto-Venus kept its primordial noble gases
+    \item Any primordial H$_2$-He envelope died by attrition: repeated impacts plus XUV-driven thermal escape (Lecture 5)
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Earth's air and oceans are the ledger of delivery minus erosion, closed by magma-ocean outgassing.}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Genda \& Abe (2005); Schlichting et al.\ (2015)}
+\end{frame}
+
 % ── NC-CC dichotomy ───────────────────────────────────────
-\begin{frame}{Meteoritic Dichotomy: NC vs.\ CC}
+\begin{frame}{Meteoritic dichotomy: NC vs.\ CC}
   Meteorites split into two isotopic groups: \textbf{non-carbonaceous (NC)} and \textbf{carbonaceous (CC)}.
   \vskip6pt
   \begin{itemize}
@@ -368,11 +584,11 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{geodynamo_schematic}{Geodynamo. Credit: Wikimedia, CC BY-SA 4.0}
-\section{Planetary Dynamos}
+\section{Planetary dynamos}
 % ════════════════════════════════════════════════════════════
 
 % ── Space weather consequences ───────────────────────────
-\begin{frame}{Magnetic Fields and Habitability}
+\begin{frame}{Magnetic fields and habitability}
   A magnetic field is more than a compass-maker. It shapes a planet's long-term viability.
   \vskip6pt
   \begin{itemize}
@@ -388,7 +604,7 @@
 \end{frame}
 
 % ── Why magnetic fields matter ─────────────────────────────
-\begin{frame}{Why Magnetic Fields Matter}
+\begin{frame}{Why magnetic fields matter}
   \begin{itemize}
     \item \textbf{Atmospheric shielding:} deflects solar wind, reduces erosion\\
     Mars lost its field $\sim$4~Ga $\rightarrow$ lost most of its atmosphere
@@ -402,7 +618,7 @@
 \end{frame}
 
 % ── Induction equation ─────────────────────────────────────
-\begin{frame}{The Induction Equation}
+\begin{frame}{The induction equation}
   Magnetic fields in a conducting fluid obey:
   $$\pdv{\vec{B}}{t} = \underbrace{\nabla \times (\vec{v} \times \vec{B})}_{\text{advection}} + \underbrace{\eta \nabla^2 \vec{B}}_{\text{diffusion}}$$
   \vskip6pt
@@ -416,7 +632,7 @@
 \end{frame}
 
 % ── Dynamo requirements ────────────────────────────────────
-\begin{frame}{Three Requirements for a Dynamo}
+\begin{frame}{Three requirements for a dynamo}
   \begin{enumerate}
     \item \textbf{Electrically conducting fluid}\\
     Terrestrial planets: liquid iron alloy in the core\\
@@ -437,11 +653,11 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{aurora}{Aurora australis, ISS. Credit: NASA}
-\section{Blackboard Derivation: Magnetic Reynolds Number}
+\section{Blackboard derivation: magnetic Reynolds number}
 % ════════════════════════════════════════════════════════════
 
 % ── Setup ──────────────────────────────────────────────────
-\begin{frame}{Deriving the Magnetic Reynolds Number}
+\begin{frame}{Deriving the magnetic Reynolds number}
   \textbf{Goal:} From the induction equation, derive $\mathrm{Rm} = UL/\eta$ and show that advection dominates in Earth's core.
   \vskip10pt
   Dimensional analysis of each term:
@@ -453,7 +669,7 @@
 \end{frame}
 
 % ── Result ─────────────────────────────────────────────────
-\begin{frame}{The Magnetic Reynolds Number}
+\begin{frame}{The magnetic Reynolds number}
   $$\mathrm{Rm} = \frac{\text{advection}}{\text{diffusion}} = \frac{UB/L}{\eta B/L^2}$$
   \vskip6pt
   The field strength $B$ \textbf{cancels}:
@@ -470,7 +686,7 @@
 \end{frame}
 
 % ── Application: Earth ────────────────────────────────────
-\begin{frame}{Application: Earth's Outer Core}
+\begin{frame}{Application: Earth's outer core}
   \centering
   \begin{tabular}{l c r}
     \toprule
@@ -490,35 +706,52 @@
 \end{frame}
 
 % ── Dynamo regime diagram ──────────────────────────────
-\begin{frame}{Dynamo Scaling Laws}
+\begin{frame}{Dynamo scaling laws}
   \begin{columns}[c]
     \column{0.55\textwidth}
     \centering
-    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{dynamo_scaling}
-    \source{Davidson (2013), arXiv:1302.7140, after Christensen \& Aubert (2006)}
+    \includegraphics[width=\linewidth,height=0.48\textheight,keepaspectratio]{christensen2006_dynamo_scaling}
+    \source{Course figure, after Christensen \& Aubert (2006)}
 
     \column{0.43\textwidth}
-    Christensen \& Aubert (2006) showed that dynamo simulations collapse onto simple power laws:
-    \vskip6pt
+    \small
+    Dynamo simulations collapse onto simple power laws:
+    \vskip4pt
     \begin{itemize}
       \item Field strength $\propto$ (convective power)$^{1/3}$
       \item \textbf{Independent of rotation rate}
       \item Predicts Earth, Jupiter, Mercury, Ganymede from first principles
-      \item Works across 2 orders of magnitude in parameters
+      \item Works across $\sim$4 orders of magnitude in parameters
     \end{itemize}
   \end{columns}
   \vskip4pt
   \keyresult{Planetary magnetic field strength is set by the \textbf{available convective power}, not by rotation rate or geometry.}
 \end{frame}
 
+\begin{frame}{Reading the dynamo scaling law}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{christensen2006_dynamo_scaling}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Horizontal axis: a combination of convective buoyancy flux, shell thickness, and core density; vertical: the observed or simulated dipole field.
+      \item Grey crosses: dozens of numerical dynamos collapsing onto one line over $\sim$4 orders of magnitude.
+      \item Earth, Jupiter, Saturn, Mercury, and Ganymede sit on the same regression within factors of order unity; Venus is absent, its dynamo off.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{$B_\mathrm{dip} \propto \sqrt{\rho\mu_0}\,(F_q D)^{1/3}$: field strength is bought with convective power, not rotation.}
+  \end{columns}
+\end{frame}
+
 % ── Hf-W chronometry refinements ────────────────────────
-\begin{frame}{Hf--W Chronometry: Beyond the First Estimate}
+\begin{frame}{Hf--W chronometry: beyond the first estimate}
   Modern refinements of the core formation timescale.
   \vskip6pt
   \begin{itemize}
     \item Pressure-dependent partitioning: $D_W^{\mathrm{met/sil}}$ decreases at high $P$
     \item At deep magma ocean pressures ($\sim$60~GPa), $D_W$ is $\sim$10 instead of $\sim$40 (surface)
-    \item This \textbf{delays} the inferred Earth core formation time from 30~Myr to 60--100~Myr
+    \item This widens the permitted window to $\sim$30--100~Myr, depending on how much metal re-equilibrates
     \item Complementary isotope systems (Pd--Ag, Pt--Os) cross-check the timing
     \item Evidence for \textbf{disequilibrium core formation}: not all metal re-equilibrates with silicate before sinking
     \item Earth's core likely formed in episodic accretion events, not continuous
@@ -528,7 +761,7 @@
 \end{frame}
 
 % ── Archean paleomag ────────────────────────────────────
-\begin{frame}{The Archean-Proterozoic Paleomagnetic Record}
+\begin{frame}{The Archean-Proterozoic paleomagnetic record}
   Geologists trace Earth's dynamo history through preserved magnetic signals.
   \vskip6pt
   \begin{itemize}
@@ -544,7 +777,7 @@
 \end{frame}
 
 % ── How old is Earth's field? ─────────────────────────────
-\begin{frame}{How Old Is Earth's Magnetic Field?}
+\begin{frame}{How old is Earth's magnetic field?}
   Paleomagnetism records the field in ancient rocks.
   \vskip6pt
   \begin{itemize}
@@ -562,11 +795,11 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{magnetosphere_structure}{Earth's magnetosphere. Credit: Wikimedia, CC BY-SA 3.0}
-\section{Earth's Dynamo \& Comparative Magnetospheres}
+\section{Earth's dynamo \& comparative magnetospheres}
 % ════════════════════════════════════════════════════════════
 
 % ── Earth's dynamo ─────────────────────────────────────────
-\begin{frame}{Earth's Geodynamo}
+\begin{frame}{Earth's geodynamo}
   \begin{columns}[c]
     \column{0.40\textwidth}
     \centering
@@ -589,14 +822,14 @@
 \end{frame}
 
 % ── Core structure detail ────────────────────────────────
-\begin{frame}{Earth's Core: Composition \& Growth}
+\begin{frame}{Earth's core: composition \& growth}
   \begin{columns}[c]
     \column{0.48\textwidth}
     \textbf{Inner core} (0--1220~km):
     \begin{itemize}
       \item Solid iron--nickel alloy
       \item Growing at $\sim$0.5~mm/yr
-      \item Age: 0.5--1.5~Gyr (not as old as Earth)
+      \item Age: $\sim$0.5--1~Gyr (far younger than Earth)
       \item Latent heat of crystallisation powers the dynamo today
     \end{itemize}
 
@@ -613,8 +846,36 @@
   Compositional convection (inner core crystallisation ejects light elements) is the \textbf{dominant} driver of today's geodynamo.
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{earth_interior}}\\
+  {\footnotesize Cross-section of Earth's interior. Credit: NASA/JPL-Caltech/SwRI (PIA25063).}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{prem_profile}}\\
+  {\footnotesize PREM seismic velocities and density versus depth. Course figure, after Dziewonski \& Anderson (1981).}
+\end{frame}
+
+\begin{frame}{Reading the PREM profile}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{prem_profile}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item $V_s$ (red) vanishes between 2890 and 5150 km depth: the outer core transmits no shear waves, so it is liquid.
+      \item Density (green) jumps at the core-mantle boundary and again at the inner-core boundary: the metal-silicate and the solid-liquid interfaces.
+      \item The liquid-shell geometry read off this curve is exactly the arena the dynamo needs.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Seismology hands the dynamo its arena: a 2260 km thick shell of convecting liquid iron.}
+  \end{columns}
+\end{frame}
+
 % ── Secular variation ─────────────────────────────────────
-\begin{frame}{Secular Variation of the Field}
+\begin{frame}{Secular variation of the field}
   Earth's field is not static. It varies on many timescales:
   \vskip6pt
   \begin{itemize}
@@ -629,12 +890,12 @@
 \end{frame}
 
 % ── Polarity reversals ────────────────────────────────────
-\begin{frame}{Magnetic Field Reversals}
+\begin{frame}{Magnetic field reversals}
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
     \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{geomagnetic_polarity_timescale}
-    \source{Wikimedia, CC BY-SA 3.0}
+    \source{Course figure; chron ages after Gradstein et al.\ (2020)}
 
     \column{0.52\textwidth}
     \begin{itemize}
@@ -652,8 +913,8 @@
   Not all times have frequent reversals.
   \vskip6pt
   \begin{itemize}
-    \item \textbf{Cretaceous Normal Superchron} (CNS): $\sim$124--84~Ma
-    \item The field kept a \textbf{single polarity for 40~Myr}
+    \item \textbf{Cretaceous Normal Superchron} (CNS): $\sim$121--83~Ma
+    \item The field kept a \textbf{single polarity for $\sim$38~Myr}
     \item Also a Permo-Carboniferous reversed superchron ($\sim$312--262~Ma)
     \item Superchrons may reflect changes in core--mantle boundary heat flow, controlled by slow mantle convection patterns
   \end{itemize}
@@ -664,7 +925,7 @@
 \end{frame}
 
 % ── Comparative table ──────────────────────────────────────
-\begin{frame}{Magnetic Fields Across the Solar System}
+\begin{frame}{Magnetic fields across the solar system}
   \centering
   \small
   \begin{tabular}{l l c c}
@@ -684,8 +945,52 @@
   Jupiter's field is $\sim$20,000$\times$ Earth's, generated in metallic hydrogen.
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{soderlund2020_planetary_field_morphologies}}\\
+  {\footnotesize Surface radial magnetic fields of six solar-system dynamos. Soderlund \& Stanley (2020).}
+\end{frame}
+
+\begin{frame}{Reading the field morphologies}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{soderlund2020_planetary_field_morphologies}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Earth, Jupiter, and Saturn: dipoles roughly aligned with the rotation axis; Saturn almost perfectly axisymmetric.
+      \item Uranus and Neptune: multipolar, tilted $\sim$59$^\circ$ and $\sim$47$^\circ$, offset from the planet centre.
+      \item Mercury: weak and offset $\sim$500 km northward; the per-panel colour scales span four orders of magnitude.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{One mechanism, many faces: geometry and shell structure sculpt what the dynamo shows at the surface.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{olson2006_dipole_scaling}}\\
+  {\footnotesize Dipolar versus multipolar dynamo regimes. Olson \& Christensen (2006).}
+\end{frame}
+
+\begin{frame}{Reading the regime diagram}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{olson2006_dipole_scaling}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Axes: dimensionless dipole moment versus local Rossby number (a measure of inertia relative to rotation); dark region dipolar, light multipolar, calibrated on numerical dynamo runs.
+      \item Earth, Jupiter, Saturn, and Ganymede sit in the dipolar regime; Mercury, Uranus, and Neptune lie in or near the multipolar one.
+      \item Two control parameters predict the field morphology without simulating each planet individually.
+    \end{itemize}
+    \vskip0pt\relax
+    \keyresult{Whether a planet wears a clean dipole is set by its Rossby number: rapidly rotating, thick-shell dynamos stay dipolar.}
+  \end{columns}
+\end{frame}
+
 % ── Venus puzzle ──────────────────────────────────────────
-\begin{frame}{The Venus Magnetic Field Puzzle}
+\begin{frame}{The Venus magnetic field puzzle}
   Venus: Earth's twin in size and composition, yet \textbf{no magnetic field}.
   \vskip6pt
   \begin{itemize}
@@ -698,12 +1003,12 @@
 \end{frame}
 
 % ── Mercury MESSENGER ─────────────────────────────────────
-\begin{frame}{Mercury: An Offset Dynamo}
+\begin{frame}{Mercury: an offset dynamo}
   Mercury's magnetic field is weak but intriguing.
   \vskip6pt
   \begin{itemize}
     \item Surface field: $\sim$0.3~$\mu$T, 1\% of Earth's
-    \item Field is \textbf{offset $\sim$480~km north} of the geometric centre
+    \item Field is \textbf{offset $\sim$500~km north} of the geometric centre
     \item Dominated by the dipole component (g$_{10}$), weak higher harmonics
     \item MESSENGER (2011--2015) mapped this asymmetry
     \item Interpretation: thin liquid outer shell above a partially solidified deeper core
@@ -714,7 +1019,7 @@
 \end{frame}
 
 % ── Mars crustal magnetism ────────────────────────────────
-\begin{frame}{Mars: A Fossil Magnetic Field}
+\begin{frame}{Mars: a fossil magnetic field}
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
@@ -731,20 +1036,20 @@
     This tells us:
     \begin{enumerate}
       \item Mars \textbf{had} an active dynamo
-      \item Dynamo died $\sim$4.1~Ga
+      \item Dynamo died between $\sim$4.1 and 3.7~Ga
       \item Atmosphere left unshielded $\rightarrow$ erosion by solar wind
     \end{enumerate}
   \end{columns}
 \end{frame}
 
 % ── Mars dynamo revisited ─────────────────────────────────
-\begin{frame}{Mars Dynamo: A More Recent Shutdown?}
+\begin{frame}{Mars dynamo: a more recent shutdown?}
   The classical Acuña (1999) interpretation placed the dynamo death at $\sim$4.1~Ga. Recent work has revised this:
   \vskip6pt
   \begin{itemize}
-    \item Mittelholz et al.\ (2020): magnetisation in the 3.9~Ga Lucus Planum lavas
+    \item Mittelholz et al.\ (2020): magnetisation in the $\sim$3.7~Ga Lucus Planum lavas
     \item Implies Mars dynamo was \textbf{intermittent} or shut down \textbf{later} than thought
-    \item Consistent with core cooling becoming insufficient over 4.1--3.9~Ga
+    \item Consistent with core cooling becoming insufficient over 4.1--3.7~Ga
     \item MAVEN: measured present-day atmospheric loss rate of $\sim$100~g/s (O$^+$)
     \item Extrapolated over 4~Gyr: consistent with Mars losing $\gtrsim$ 0.8~bar of CO$_2$
   \end{itemize}
@@ -752,8 +1057,30 @@
   {\tiny\color{ipsText!60} Source: Mittelholz et al.\ (2020), \textit{Science Advances}; Jakosky et al.\ (2018)}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{stahler2021_mars_core}}\\
+  {\footnotesize InSight's Mars core: radius and density posteriors. St\"ahler et al.\ (2021).}
+\end{frame}
+
+\begin{frame}{Reading the Mars core inversion}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{stahler2021_mars_core}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Three independent inversions converge on $R_\mathrm{core} \approx 1830$ km and mean density $\approx 6.0$ g\,cm$^{-3}$.
+      \item The purple bands (lines of fixed composition) demand several wt\% of light elements: the core is too light for pure iron.
+      \item A sulfur-rich core may never nucleate an inner core: no compositional buoyancy, an early-dying dynamo.
+    \end{itemize}
+    \vskip0pt\relax
+    \keyresult{InSight's big, light core explains the fossil field: without inner-core growth there is no compositional buoyancy to keep the dynamo alive.}
+  \end{columns}
+\end{frame}
+
 % ── Jupiter metallic H ────────────────────────────────────
-\begin{frame}{Jupiter: Dynamo in Metallic Hydrogen}
+\begin{frame}{Jupiter: dynamo in metallic hydrogen}
   Jupiter has the strongest magnetic field in the solar system, $\sim$20{,}000$\times$ Earth's dipole moment.
   \vskip6pt
   \begin{itemize}
@@ -770,7 +1097,7 @@
 \end{frame}
 
 % ── Ganymede dynamo ───────────────────────────────────────
-\begin{frame}{Ganymede: The Only Moon with a Dynamo}
+\begin{frame}{Ganymede: the only moon with a dynamo}
   Ganymede is the \textbf{only moon} in the solar system with an intrinsic magnetic field.
   \vskip6pt
   \begin{itemize}
@@ -789,7 +1116,7 @@
 \end{frame}
 
 % ── Magnetosphere structure ───────────────────────────────
-\begin{frame}{Magnetosphere--Solar Wind Interaction}
+\begin{frame}{Magnetosphere--solar wind interaction}
   \begin{columns}[c]
     \column{0.50\textwidth}
     \centering
@@ -809,7 +1136,7 @@
 \end{frame}
 
 % ── Magnetopause standoff derivation ─────────────────────
-\begin{frame}{Magnetopause Standoff Distance}
+\begin{frame}{Magnetopause standoff distance}
   Pressure balance at the magnetopause:
   \vskip6pt
   $$\underbrace{\frac{1}{2}\rho_{\mathrm{sw}}v_{\mathrm{sw}}^2}_{\text{solar wind ram pressure}} = \underbrace{\frac{B_{\mathrm{mp}}^2}{2\mu_0}}_{\text{magnetic pressure}}$$
@@ -824,8 +1151,30 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{magnetopause_pressure_balance}}\\
+  {\footnotesize Pressure balance at the dayside magnetopause. Course figure.}
+\end{frame}
+
+\begin{frame}{Reading the pressure-balance sketch}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{magnetopause_pressure_balance}}
+    \column{0.50\textwidth}
+    \small
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item The solar wind arrives from the left; the bow shock (orange dashed) decelerates it, and the magnetopause (red) sits where ram pressure equals magnetic pressure.
+      \item The compressed dayside field and the stretched nightside tail both follow from that single balance.
+      \item The arrow marks $r_\mathrm{mp} \approx 10\,R_\oplus$ from Earth's centre under typical solar wind.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{One pressure equality fixes the size of the whole dayside magnetosphere.}
+  \end{columns}
+\end{frame}
+
 % ── Magnetotail and reconnection ─────────────────────────
-\begin{frame}{Magnetotail Reconnection}
+\begin{frame}{Magnetotail reconnection}
   \begin{itemize}
     \item On the night side, Earth's field is stretched into a long tail ($>$200~$R_\oplus$)
     \item Opposing field lines in the magnetotail can \textbf{reconnect}, releasing stored magnetic energy
@@ -839,7 +1188,7 @@
 \end{frame}
 
 % ── Van Allen belts ──────────────────────────────────────
-\begin{frame}{The Van Allen Radiation Belts}
+\begin{frame}{The Van Allen radiation belts}
   Earth's magnetosphere traps energetic particles in two toroidal belts:
   \vskip6pt
   \begin{description}
@@ -857,8 +1206,14 @@
   {\tiny\color{ipsText!60} Source: de Pater \& Lissauer (2010); Baker et al.\ (2013)}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{van_allen_belts}}\\
+  {\footnotesize Cross-section of Earth's Van Allen radiation belts. Credit: Booyabazooka / NASA, public domain.}
+\end{frame}
+
 % ── Aurorae ────────────────────────────────────────────────
-\begin{frame}{Aurorae: Light from the Magnetosphere}
+\begin{frame}{Aurorae: light from the magnetosphere}
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
@@ -879,7 +1234,7 @@
 \end{frame}
 
 % ── Auroral physics ──────────────────────────────────────
-\begin{frame}{Why Aurorae Happen at the Poles}
+\begin{frame}{Why aurorae happen at the poles}
   \begin{itemize}
     \item Earth's dipole focuses incoming particles toward the magnetic poles
     \item \textbf{Cusps} near the poles are regions where solar wind has direct access to the atmosphere
@@ -893,7 +1248,7 @@
 \end{frame}
 
 % ── Jupiter aurorae ──────────────────────────────────────
-\begin{frame}{Jupiter's Aurorae: The Most Powerful in the Solar System}
+\begin{frame}{Jupiter's aurorae: the most powerful in the solar system}
   \begin{itemize}
     \item Total UV power: $10^{13}$--$10^{14}$~W (10$^3$--10$^4\times$ Earth's auroral power)
     \item Powered by:
@@ -911,12 +1266,18 @@
 
 
 % ════════════════════════════════════════════════════════════
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{jupiter_uv_aurora}}\\
+  {\footnotesize Jupiter's ultraviolet aurora over an optical image, Hubble Space Telescope. Credit: NASA, ESA, J. Nichols (University of Leicester).}
+\end{frame}
+
 \sectionimage{aurora}{Aurora australis. Credit: NASA/ISS}
-\section{Recent Advances \& Outlook}
+\section{Recent advances \& outlook}
 % ════════════════════════════════════════════════════════════
 
 % ── Recent advances ───────────────────────────────────────
-\begin{frame}{Juno: Jupiter's Asymmetric Dynamo}
+\begin{frame}{Juno: Jupiter's asymmetric dynamo}
   \begin{itemize}
     \item Juno (2016--) has measured Jupiter's gravity and magnetic field in unprecedented detail
     \item Surface field dramatically \textbf{non-dipolar}
@@ -929,7 +1290,29 @@
   {\tiny\color{ipsText!60} Source: Connerney et al.\ (2022), \textit{Journal of Geophysical Research}}
 \end{frame}
 
-\begin{frame}{BepiColombo: New Eyes on Mercury}
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{jupiter_great_blue_spot}}\\
+  {\footnotesize Jupiter's surface radial field from the Juno JRM33 model. Credit: NASA/JPL-Caltech/SwRI (PIA25040).}
+\end{frame}
+
+\begin{frame}{Reading Jupiter's magnetic map}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{jupiter_great_blue_spot}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Red marks outward flux, blue inward: the surface field is strongly non-dipolar.
+      \item The Great Blue Spot: an intense localised patch of inward flux near the equator, paired with a strong outward patch immediately to its west.
+      \item The morphology places the dynamo in a deep but not razor-thin shell of metallic hydrogen.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Juno turned Jupiter's field from a textbook dipole into a weather map of the deep interior.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{BepiColombo: new eyes on Mercury}
   \begin{itemize}
     \item ESA/JAXA joint mission, launched 2018
     \item Multiple Mercury flybys (2021--2025) en route to orbit insertion
@@ -942,7 +1325,7 @@
   {\tiny\color{ipsText!60} Source: Benkhoff et al.\ (2021), \textit{Space Science Reviews}}
 \end{frame}
 
-\begin{frame}{JUICE: Mapping Ganymede's Dynamo}
+\begin{frame}{JUICE: mapping Ganymede's dynamo}
   \begin{itemize}
     \item Jupiter Icy Moons Explorer, launched April 2023
     \item Arrives at Jupiter in 2031; Ganymede orbit insertion 2034
@@ -956,7 +1339,7 @@
   {\tiny\color{ipsText!60} Source: Grasset et al.\ (2013) on JUICE science goals}
 \end{frame}
 
-\begin{frame}{MAVEN and the Escape of Mars' Atmosphere}
+\begin{frame}{MAVEN and the escape of Mars' atmosphere}
   \begin{itemize}
     \item NASA MAVEN (2014--) measures Mars atmospheric loss in situ
     \item Total escape rate: $\sim$1--2~kg/s of all species (O, H, CO$_2$)
@@ -970,7 +1353,7 @@
 \end{frame}
 
 % ── Psyche mission ────────────────────────────────────────
-\begin{frame}{Psyche: Visiting a Naked Core}
+\begin{frame}{Psyche: visiting a naked core}
   NASA Psyche launched in October 2023, arrives at asteroid 16 Psyche in 2029.
   \vskip6pt
   \begin{itemize}
@@ -986,11 +1369,11 @@
 \end{frame}
 
 % ── Open questions ──────────────────────────────────────
-\begin{frame}{Open Questions in Planetary Magnetism}
+\begin{frame}{Open questions in planetary magnetism}
   Despite decades of work, key questions remain:
   \vskip6pt
   \begin{itemize}
-    \item \textbf{When did the inner core nucleate?} (Estimates range from 0.5 to 2~Gyr ago)
+    \item \textbf{When did the inner core nucleate?} (Most estimates now 0.5--1~Gyr ago)
     \item \textbf{How did Earth sustain a dynamo before inner core formation?}
     \item \textbf{Why does Venus have no detectable field?} Inner core, rotation, or tectonics?
     \item \textbf{Why is Mercury's field so weak yet active?} What powers it?
@@ -1003,15 +1386,28 @@
   Future missions (JUICE, BepiColombo, Europa Clipper, MSR) will address several of these.
 \end{frame}
 
+\begin{frame}{Looking ahead to Lecture 5}
+  This lecture ended with a planet that has a core, a mantle, a magnetic field, and a freshly outgassed secondary atmosphere.
+  \vskip8pt
+  \begin{itemize}
+    \item Lecture 5 (dr.\ Mara Attia) picks up that atmosphere: primary, secondary, and tertiary atmospheres
+    \item Pressure and temperature with height: hydrostatic equilibrium
+    \item The greenhouse effect and planetary energy balance
+    \item How atmospheres are lost to space; magnetic shielding is one control on escape, but thermal escape proceeds regardless
+  \end{itemize}
+  \vskip8pt
+  \keyresult{Differentiation builds the planet; the atmosphere it outgasses is where climate and habitability are decided.}
+\end{frame}
+
 % ── Summary ────────────────────────────────────────────────
 \begin{frame}{Summary}
   \begin{enumerate}
     \item Magma oceans drive \textbf{metal--silicate separation}: iron sinks, silicates float
-    \item Hf--W chronometry dates Earth's core formation to $\sim$30--60~Myr (classic); refined to $\sim$60--100~Myr with pressure-dependent partitioning
+    \item Hf--W chronometry dates Earth's core formation to $\sim$30--60~Myr (classic); widened to $\sim$30--100~Myr by pressure-dependent partitioning and disequilibrium
     \item Magma ocean crystallisation creates chemically distinct layers (crust, mantle reservoirs)
     \item Dynamos require: conducting fluid + convection + sufficient Rm ($\gtrsim$10--100)
     \item Earth's $\mathrm{Rm} \approx 1750$: vigorous dynamo action
-    \item Mars lost its dynamo around 4.1--3.9~Ga (possibly intermittent, Mittelholz 2020) $\rightarrow$ atmospheric erosion
+    \item Mars lost its dynamo between $\sim$4.1 and 3.7~Ga (possibly intermittent, Mittelholz 2020) $\rightarrow$ atmospheric erosion
     \item Venus has no detectable field: likely a combination of stagnant-lid tectonics, slow rotation, and/or absence of an inner core
   \end{enumerate}
 \end{frame}
@@ -1026,9 +1422,10 @@
   \begin{center}
     {\color{white}\Large\bfseries Questions?}
     \vskip20pt
-    {\color{ipsLightFill}\normalsize Next: \textbf{Lecture~5. Atmospheres I: Composition, Structure, \& Energy Balance}}
-    \vskip16pt
-    {\color{ipsLightFill!70}\small Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
+    {\color{white!85}\large Next: Lecture 5, Atmospheres I: composition, structure \& energy balance (Mara Attia)}\\[4pt]
+    {\color{white!85}\small Mon 21 Sep, 15:00--17:00, room 5419.0161 (Collegezaal)}\\[12pt]
+    {\color{white!85}\small Next tutorial: Fri 25 Sep, 13:00--15:00, room 5419.0161 (Collegezaal)}\\[20pt]
+    {\color{white!70}\small \texttt{https://ips.formingworlds.space}}
   \end{center}
   \vfill
 \end{frame}
