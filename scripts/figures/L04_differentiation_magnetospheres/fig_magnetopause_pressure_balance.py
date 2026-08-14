@@ -99,9 +99,9 @@ def make_plot() -> Path:
 
     # Standoff arrow on -x side
     ax.add_patch(FancyArrowPatch(
-        (-R_E - 0.05, -7.8), (-10.0 * R_E + 0.1, -7.8),
+        (0.0, -7.8), (-10.0 * R_E, -7.8),
         arrowstyle="<->", mutation_scale=14, color="black", lw=1.0))
-    ax.text(-0.5 * (R_E + 10 * R_E), -8.2,
+    ax.text(-6.1, -8.25,
             r"$r_{\mathrm{mp}} \approx 10\,R_\oplus$",
             ha="center", va="top", fontsize=11)
 

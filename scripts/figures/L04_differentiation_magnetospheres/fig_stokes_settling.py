@@ -37,7 +37,7 @@ def v_stokes(r_m: np.ndarray) -> np.ndarray:
 
 def make_plot() -> Path:
     apply_style()
-    r_cm = np.logspace(-1, 2, 400)
+    r_cm = np.logspace(-2, 2, 400)
     r_m = r_cm * 1e-2
     v = v_stokes(r_m)
 
@@ -53,7 +53,8 @@ def make_plot() -> Path:
     for rc, label in refs:
         v_pt = v_stokes(rc * 1e-2)
         ax.plot(rc, v_pt, "o", color="black", ms=5, zorder=5)
-        ax.annotate(f"{label}\n({v_pt:.2g} m s$^{{-1}}$)",
+        v_str = np.format_float_positional(float(f"{v_pt:.2g}"), trim="-")
+        ax.annotate(f"{label}\n({v_str} m s$^{{-1}}$)",
                     xy=(rc, v_pt), xytext=(rc * 1.6, v_pt * 0.25),
                     fontsize=9, ha="left", va="top")
 
@@ -66,9 +67,16 @@ def make_plot() -> Path:
             bbox=dict(facecolor="white", edgecolor="0.6",
                       boxstyle="round,pad=0.4"))
 
+    # Laminar limit: Re = rho_melt * v_stokes * 2r / mu = 1 (rho_melt = 3000 kg/m3)
+    r_lam_m = (9.0 * MU**2 / (4.0 * 3000.0 * DELTA_RHO * G)) ** (1.0 / 3.0)
+    r_lam_cm = r_lam_m * 1e2
+    ax.axvline(r_lam_cm, color="0.4", ls="--", lw=1.2)
+    ax.text(r_lam_cm * 0.82, 3e-3, r"laminar limit ($\mathrm{Re} \approx 1$)",
+            rotation=90, fontsize=9, color="0.35", ha="right", va="bottom")
+
     ax.set_xscale("log")
     ax.set_yscale("log")
-    ax.set_xlim(0.1, 100)
+    ax.set_xlim(0.01, 100)
     ax.set_ylim(1e-4, 1e3)
     ax.set_xlabel("Iron droplet radius (cm)")
     ax.set_ylabel(r"Settling velocity (m s$^{-1}$)")
