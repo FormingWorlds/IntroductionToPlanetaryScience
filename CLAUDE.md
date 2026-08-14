@@ -15,6 +15,9 @@ University course materials repository for "Planetary Systems" (course code WBAS
   - `book/01_introduction/` through `book/14_synthesis/` — 14 lecture chapters, each with a `.md` file and `figures/` directory
   - `book/references.bib` — BibTeX bibliography
   - `book/_static/custom.css` — Custom styles
+- `worksheets/` — Worksheet problem sets and their full solutions (XeLaTeX). `worksheets/common/worksheetIPS.sty` carries the shared style; each `worksheets/worksheetNN/` holds one content file plus two drivers, one for the problem sheet and one for the solutions. `make -C worksheets web` publishes both PDFs to `book/_static/worksheets/`.
+- `minilectures/` — Tutorial mini-lecture decks (beamer/XeLaTeX, same theme as `slides/`): a recap of at most 10 minutes per tutorial, presented by the TAs, covering the concepts the block's worksheet trains. `make -C minilectures web` publishes to `book/_static/minilectures/`.
+- `scripts/` — Figure-generation scripts (`scripts/figures/`) and worksheet answer checkers (`scripts/worksheets/`), which recompute every number a worksheet prints.
 - `planning/` — Curriculum outlines and course planning documents
 - `content/course2025` — Symlink to Google Drive containing previous lecture materials (slides, data, etc.); gitignored and not tracked
 - `.github/workflows/book.yml` — GitHub Actions workflow deploying HTML to GitHub Pages
@@ -79,6 +82,7 @@ make html       # Build browsable HTML → book/_build/html/
 make pdf        # Build PDF via pdfhtml → book/_build/pdf/
 make pdflatex   # Build PDF via XeLaTeX → book/_build/latex/
 make slides     # Build slide PDFs → slides/lectureNN/lectureNN.pdf
+make worksheets # Build worksheet PDFs → worksheets/worksheetNN/
 make clean      # Remove build artifacts + generated PNGs
 ```
 
@@ -93,7 +97,7 @@ The underlying GitHub Pages URL `https://formingworlds.github.io/IntroductionToP
 
 ## Key Technical Details
 
-- The course covers 14 lectures spanning planet formation through exoplanets and astrobiology (see `planning/course_development.md` for full curriculum, schedule, homework, and exam structure).
+- The course covers 14 lectures spanning planet formation through exoplanets and astrobiology (see `planning/course_development.md` for full curriculum, schedule, worksheets, and exam structure).
 - Each lecture includes a ~10 min blackboard derivation of a foundational concept.
 - Lecture notes use MyST Markdown with cross-reference labels `(lecture01)=` through `(lecture14)=`.
 - Math macros are defined in both `mathjax3_config` (HTML) and `latex_elements.preamble` (PDF) in `_config.yml` — new macros must be added to both.
@@ -193,7 +197,7 @@ For entries that have BOTH a DOI and an arXiv eprint, include both fields — th
 4. **Always update `planning/course_development.md`** to reflect the changes — this includes:
    - The lecture outline (section 2) if topics are added, removed, or reordered
    - The status table (section 5) to track progress (e.g., "Not started" → "In progress" → "Draft complete")
-   - The homework or exam sections if related content changes
+   - The worksheet or exam sections if related content changes
 
 ### When adding or editing slide content
 

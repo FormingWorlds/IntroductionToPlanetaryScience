@@ -1,4 +1,4 @@
-.PHONY: html pdf pdflatex slides clean avif2png gif2png
+.PHONY: html pdf pdflatex slides worksheets minilectures clean avif2png gif2png
 
 html:
 	jupyter-book build book/
@@ -30,6 +30,12 @@ gif2png:
 
 slides:
 	$(MAKE) -C slides
+
+worksheets:
+	$(MAKE) -C worksheets
+
+minilectures:
+	$(MAKE) -C minilectures
 
 clean:
 	jupyter-book clean book/

@@ -1,0 +1,793 @@
+% Content of Worksheet 01, shared by the problem sheet and the solution sheet.
+% Solutions are wrapped in the `solution` environment and appear only when the
+% driver defines \ipsshowsolutions.
+
+\ipsmaketitle
+
+This worksheet is ungraded practice, with the same shape and level as the final exam.
+Plan up to 3 hours for a serious pass.
+Work each problem through on paper before you open the solutions, and show your algebra:
+the exam asks for the steps, not only the number.
+Some parts state an intermediate result ("show that\,\ldots"); use it to check your work, and to continue if a step resists.
+Carry at least four significant figures through the intermediate steps (the worked solutions print five) and round only at the end.
+
+\begin{given}[Constants and data]
+$G = 6.674 \times 10^{-11}\ \mathrm{m^3\,kg^{-1}\,s^{-2}}$ \quad
+$1\ \mathrm{AU} = 1.496 \times 10^{11}\ \mathrm{m}$ \quad
+$1\ \mathrm{yr} = 3.156 \times 10^{7}\ \mathrm{s}$ \quad
+$1\ \mathrm{d} = 86\,400\ \mathrm{s}$ \quad
+$\Msun = 1.989 \times 10^{30}\ \mathrm{kg}$ \quad
+$\Mearth = 5.972 \times 10^{24}\ \mathrm{kg}$ \quad
+$\Rearth = 6371\ \mathrm{km}$
+
+\vskip6pt
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Body & $a$ & $P$ & Mass $(\Mearth)$ & $\rho\ (\mathrm{kg\,m^{-3}})$ \\
+\midrule
+Mercury & $0.387\ \mathrm{AU}$ & $0.241\ \mathrm{yr}$ & $0.055$ & $5427$ \\
+Venus   & $0.723\ \mathrm{AU}$ & $0.615\ \mathrm{yr}$ & $0.815$ & $5243$ \\
+Earth   & $1.000\ \mathrm{AU}$ & $1.000\ \mathrm{yr}$ & $1.000$ & $5514$ \\
+Mars    & $1.524\ \mathrm{AU}$ & $1.881\ \mathrm{yr}$ & $0.107$ & $3934$ \\
+Jupiter & $5.203\ \mathrm{AU}$ & $11.86\ \mathrm{yr}$ & $317.8$ & $1326$ \\
+Saturn  & $9.537\ \mathrm{AU}$ & $29.46\ \mathrm{yr}$ & $95.16$ & $687$ \\
+Uranus  & $19.19\ \mathrm{AU}$ & $84.01\ \mathrm{yr}$ & $14.54$ & $1271$ \\
+Neptune & $30.07\ \mathrm{AU}$ & $164.8\ \mathrm{yr}$ & $17.15$ & $1638$ \\
+\midrule
+Moon      & $3.844 \times 10^{5}\ \mathrm{km}$ & $27.32\ \mathrm{d}$ & $0.0123$ & $3344$ \\
+Io        & & $1.769\ \mathrm{d}$ & & \\
+Europa    & & $3.551\ \mathrm{d}$ & & \\
+Ganymede  & $1.0704 \times 10^{6}\ \mathrm{km}$ & $7.155\ \mathrm{d}$ & & \\
+\bottomrule
+\end{tabular}
+
+\vskip4pt
+{\footnotesize Saturn's mean radius is $58\,232\ \mathrm{km}$. Planetary and satellite values from
+NASA/JPL Solar System Dynamics; Galilean satellite periods as quoted in the Lecture~2 notes.}
+\end{given}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{Weighing the Sun and Jupiter}
+
+Newton's form of Kepler's third law turns a period and an orbital size into a mass.
+Here you apply the same equation twice, to two different central bodies, and then ask how far it can be trusted.
+
+\parti A planet of mass $m$ moves on a circular orbit of radius $r$ about a star of mass $M$,
+with $m \ll M$. Starting from the balance between the gravitational force and the centripetal
+force, derive
+\[
+  M = \frac{4\pi^2 r^3}{G P^2}.
+\]
+
+\begin{solution}
+The gravitational force supplies the centripetal force:
+\[
+  \frac{G M m}{r^2} = \frac{m v^2}{r}.
+\]
+The orbital speed on a circular orbit is $v = 2\pi r / P$, so
+\[
+  \frac{G M m}{r^2} = \frac{m}{r}\left(\frac{2\pi r}{P}\right)^{2}
+                    = \frac{m}{r}\,\frac{4\pi^2 r^2}{P^2}
+                    = \frac{4\pi^2 m r}{P^2}.
+\]
+Divide both sides by $m$:
+\[
+  \frac{G M}{r^2} = \frac{4\pi^2 r}{P^2}.
+\]
+Multiply both sides by $r^2/G$:
+\[
+  M = \frac{4\pi^2 r^3}{G P^2}.
+\]
+\end{solution}
+
+\parti Judge this claim in 2 to 3 sentences: \emph{"If Jupiter were twice as massive, its
+orbital period at its present distance would be noticeably longer."}
+
+\begin{solution}
+False, on two counts. The planet's mass cancels in part~(a): it sets both the gravitational
+pull and the inertia, so the period contains only the stellar mass and the orbital size, and
+doubling Jupiter changes nothing at this order. In the exact two-body form,
+$P^2 = 4\pi^2 a^3 / [G(M + m)]$, a heavier planet raises the total attracting mass, so the
+period becomes slightly \emph{shorter}, not longer; for a second Jupiter mass the change is
+$\tfrac{1}{2}\,\Mjup/\Msun \approx 5 \times 10^{-4}$, far below "noticeable".
+\answer{False: to leading order the planet's mass cancels, and the exact correction is tiny
+and has the opposite sign.}
+\end{solution}
+
+\parti Apply part~(a) twice. First compute the mass of the Sun from Jupiter's orbit
+($a = 5.203\ \mathrm{AU}$, $P = 11.86\ \mathrm{yr}$; show first that
+$r = 7.784 \times 10^{11}\ \mathrm{m}$ and $P = 3.743 \times 10^{8}\ \mathrm{s}$). Then compute
+the mass of Jupiter from Ganymede's orbit ($a = 1.0704 \times 10^{6}\ \mathrm{km}$,
+$P = 7.155\ \mathrm{d}$; show that $P^2 = 3.822 \times 10^{11}\ \mathrm{s^2}$), and express it in
+Earth masses.
+
+\begin{solution}
+\textbf{The Sun from Jupiter.} Convert to SI units:
+\[
+  r = 5.203 \times 1.496 \times 10^{11}\ \mathrm{m} = 7.7837 \times 10^{11}\ \mathrm{m},
+  \qquad
+  P = 11.86 \times 3.156 \times 10^{7}\ \mathrm{s} = 3.7430 \times 10^{8}\ \mathrm{s}.
+\]
+Form the two powers:
+\[
+  r^3 = (7.7837 \times 10^{11})^3 = 4.7158 \times 10^{35}\ \mathrm{m^3},
+  \qquad
+  P^2 = (3.7430 \times 10^{8})^2 = 1.4010 \times 10^{17}\ \mathrm{s^2}.
+\]
+Numerator and denominator separately:
+\[
+  4\pi^2 r^3 = 39.478 \times 4.7158 \times 10^{35} = 1.8617 \times 10^{37}\ \mathrm{m^3},
+\]
+\[
+  G P^2 = 6.674 \times 10^{-11} \times 1.4010 \times 10^{17}
+        = 9.3503 \times 10^{6}\ \mathrm{m^3\,kg^{-1}}.
+\]
+Divide:
+\[
+  M = \frac{1.8617 \times 10^{37}}{9.3503 \times 10^{6}} = 1.991 \times 10^{30}\ \mathrm{kg}.
+\]
+
+\textbf{Jupiter from Ganymede.} The same equation, with Jupiter now the central body:
+\[
+  a = 1.0704 \times 10^{9}\ \mathrm{m},
+  \qquad
+  P = 7.155 \times 86\,400\ \mathrm{s} = 6.1819 \times 10^{5}\ \mathrm{s},
+\]
+\[
+  a^3 = (1.0704 \times 10^{9})^3 = 1.2264 \times 10^{27}\ \mathrm{m^3},
+  \qquad
+  P^2 = (6.1819 \times 10^{5})^2 = 3.8216 \times 10^{11}\ \mathrm{s^2},
+\]
+\[
+  M = \frac{4\pi^2 a^3}{G P^2}
+    = \frac{39.478 \times 1.2264 \times 10^{27}}{6.674 \times 10^{-11} \times 3.8216 \times 10^{11}}
+    = \frac{4.8416 \times 10^{28}}{25.505}
+    = 1.898 \times 10^{27}\ \mathrm{kg}.
+\]
+In Earth masses:
+\[
+  \frac{1.898 \times 10^{27}}{5.972 \times 10^{24}} = 317.9.
+\]
+\answer{$\Msun \approx 1.991 \times 10^{30}\ \mathrm{kg}$ ($0.10\%$ above the accepted
+$1.989 \times 10^{30}\ \mathrm{kg}$; part~(d) accounts for that excess) and
+$\Mjup \approx 1.898 \times 10^{27}\ \mathrm{kg} = 317.9\,\Mearth$, matching the data table.}
+\end{solution}
+
+\parti Your solar mass in part~(c) exceeds the accepted value by $0.10\%$. Use the exact form
+$P^2 = 4\pi^2 a^3 / [G(M + m)]$ to explain what that computation actually measured, and to
+account for the excess. Would the same effect be visible in your Jupiter mass? The mass of
+Ganymede is $1.482 \times 10^{23}\ \mathrm{kg}$.
+
+\begin{solution}
+The exact form returns the \emph{sum} of the two masses, so the first computation, which
+neglected $m$, actually measured $\Msun + \Mjup$:
+\[
+  \Msun + \Mjup = \Msun\left(1 + \frac{\Mjup}{\Msun}\right),
+  \qquad
+  \frac{\Mjup}{\Msun} = \frac{1.898 \times 10^{27}}{1.991 \times 10^{30}}
+                      = 9.533 \times 10^{-4},
+\]
+\[
+  1.989 \times 10^{30} \times (1 + 9.533 \times 10^{-4}) = 1.9909 \times 10^{30}\ \mathrm{kg},
+\]
+which agrees with the $1.9911 \times 10^{30}\ \mathrm{kg}$ of part~(c) to $0.01\%$. The $0.10\%$
+excess is therefore not an arithmetic slip and not a rounding artefact: it is Jupiter's own mass.
+
+For Jupiter from Ganymede the same correction is
+\[
+  \frac{M_{\mathrm{Gan}}}{\Mjup} = \frac{1.482 \times 10^{23}}{1.898 \times 10^{27}}
+                                 = 7.81 \times 10^{-5},
+\]
+that is $0.008\%$, a factor of $12$ smaller and below the four-significant-figure precision of
+the input data.
+\answer{The neglected orbiter mass shifts the derived central mass by the fraction $m/M$:
+$0.095\%$ for Jupiter about the Sun, invisible $0.008\%$ for Ganymede about Jupiter.}
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{The cheapest route to Mars}
+
+Treat the orbits of Earth and Mars as circular and coplanar, with radii $1.000\ \mathrm{AU}$ and
+$1.524\ \mathrm{AU}$. A spacecraft transfers between them on an ellipse whose perihelion touches
+Earth's orbit and whose aphelion touches Mars's orbit. At each end the spacecraft fires its engine
+briefly (a \emph{burn}), changing its speed by an increment $\Delta v$; a burn along the direction
+of motion is \emph{prograde}. Work entirely in the Sun's gravitational field and ignore the
+gravity of Earth and Mars themselves.
+
+\parti Two spacecraft of equal mass are on orbits with the same semi-major axis $a$ but different
+eccentricities. Judge each claim, with justification: (i) \emph{"they have the same total
+energy"}; (ii) \emph{"they pass through the distance $r = a$ at the same speed"}.
+
+\begin{solution}
+Both claims are true. (i) The total energy of a Keplerian orbit is $E = -GMm/2a$, which depends
+on $a$ alone; eccentricity only changes how the fixed total is divided between kinetic and
+potential energy along the orbit. (ii) Put $r = a$ into the vis-viva equation:
+\[
+  v^2 = GM\left(\frac{2}{a} - \frac{1}{a}\right) = \frac{GM}{a},
+  \qquad\text{so}\qquad
+  v = \sqrt{\frac{GM}{a}},
+\]
+independent of $e$. On the circular orbit this speed holds everywhere; on the eccentric orbit it
+holds at the two points where the body is at distance $a$ from the focus, the ends of the minor
+axis.
+\answer{Both true; both follow from $E$ depending only on $a$.}
+\end{solution}
+
+\parti Show that the transfer ellipse has $a_t = 1.262\ \mathrm{AU}$. Explain why the flight
+time is half the period of that ellipse, and compute it in days.
+
+\begin{solution}
+The transfer ellipse has perihelion $r_p = 1.000\ \mathrm{AU}$ and aphelion
+$r_a = 1.524\ \mathrm{AU}$. Since $r_p = a(1 - e)$ and $r_a = a(1 + e)$, adding the two gives
+\[
+  r_p + r_a = a(1 - e) + a(1 + e) = 2a ,
+\]
+so
+\[
+  a_t = \frac{r_p + r_a}{2} = \frac{1.000 + 1.524}{2} = 1.262\ \mathrm{AU}
+      = 1.88795 \times 10^{11}\ \mathrm{m}.
+\]
+Departure is at perihelion and arrival is at aphelion. These are the two ends of the major axis, so
+they are separated by half a revolution and the flight takes half a period.
+
+With $GM = 6.674 \times 10^{-11} \times 1.989 \times 10^{30}
+      = 1.32746 \times 10^{20}\ \mathrm{m^3\,s^{-2}}$:
+\[
+  a_t^3 = (1.88795 \times 10^{11})^3 = 6.7293 \times 10^{33}\ \mathrm{m^3},
+  \qquad
+  \frac{a_t^3}{GM} = \frac{6.7293 \times 10^{33}}{1.32746 \times 10^{20}}
+                   = 5.0693 \times 10^{13}\ \mathrm{s^2},
+\]
+\[
+  P_t = 2\pi \sqrt{5.0693 \times 10^{13}}
+      = 2\pi \times 7.1199 \times 10^{6}
+      = 4.4736 \times 10^{7}\ \mathrm{s}.
+\]
+Half of that is
+\[
+  t = \tfrac{1}{2} P_t = 2.2368 \times 10^{7}\ \mathrm{s}
+    = \frac{2.2368 \times 10^{7}}{86\,400} = 258.9\ \mathrm{d}.
+\]
+\answer{$a_t = 1.262\ \mathrm{AU}$; flight time $259\ \mathrm{d}$, about $8.5$ months.}
+
+A faster route to the same number: dividing Kepler's third law for the transfer ellipse by the
+same law for Earth's orbit ($a = 1\ \mathrm{AU}$, $P = 1\ \mathrm{yr}$) cancels every constant
+and leaves $P^2 = a^3$ in units of AU and years, so $P_t = 1.262^{3/2} = 1.418\ \mathrm{yr}$ and
+$t = 0.709\ \mathrm{yr}$.
+\end{solution}
+
+\parti Use the vis-viva equation to show that the spacecraft moves at
+$v_p = 32.7\ \mathrm{km\,s^{-1}}$ at the transfer perihelion and $v_a = 21.5\ \mathrm{km\,s^{-1}}$
+at the transfer aphelion. Then compute the circular orbital speeds of Earth and Mars, and from the
+four speeds the two velocity increments $\Delta v_1$ (departure), $\Delta v_2$ (arrival), and
+their sum.
+
+\begin{solution}
+At perihelion, $r = 1.000\ \mathrm{AU} = 1.496 \times 10^{11}\ \mathrm{m}$ and
+$a = a_t = 1.88795 \times 10^{11}\ \mathrm{m}$:
+\[
+  \frac{2}{r} = 1.3369 \times 10^{-11}\ \mathrm{m^{-1}},
+  \qquad
+  \frac{1}{a_t} = 5.2968 \times 10^{-12}\ \mathrm{m^{-1}},
+  \qquad
+  \frac{2}{r} - \frac{1}{a_t} = 8.0722 \times 10^{-12}\ \mathrm{m^{-1}},
+\]
+\[
+  v_p^2 = GM\left(\frac{2}{r} - \frac{1}{a_t}\right)
+        = 1.32746 \times 10^{20} \times 8.0722 \times 10^{-12}
+        = 1.0716 \times 10^{9}\ \mathrm{m^2\,s^{-2}},
+\]
+\[
+  v_p = 3.2735 \times 10^{4}\ \mathrm{m\,s^{-1}} = 32.73\ \mathrm{km\,s^{-1}}.
+\]
+At aphelion, $r = 1.524\ \mathrm{AU} = 2.2799 \times 10^{11}\ \mathrm{m}$:
+\[
+  \frac{2}{r} = 8.7723 \times 10^{-12}\ \mathrm{m^{-1}},
+  \qquad
+  \frac{2}{r} - \frac{1}{a_t} = 3.4755 \times 10^{-12}\ \mathrm{m^{-1}},
+\]
+\[
+  v_a^2 = 1.32746 \times 10^{20} \times 3.4755 \times 10^{-12}
+        = 4.6136 \times 10^{8}\ \mathrm{m^2\,s^{-2}},
+\]
+\[
+  v_a = 2.1479 \times 10^{4}\ \mathrm{m\,s^{-1}} = 21.48\ \mathrm{km\,s^{-1}}.
+\]
+The circular speeds are the $r = a$ case of the vis-viva equation:
+\[
+  v_\oplus = \sqrt{\frac{GM}{r_p}}
+           = \sqrt{\frac{1.32746 \times 10^{20}}{1.496 \times 10^{11}}}
+           = \sqrt{8.8734 \times 10^{8}}
+           = 29.79\ \mathrm{km\,s^{-1}},
+\]
+\[
+  v_{\mathrm{Mars}} = \sqrt{\frac{1.32746 \times 10^{20}}{2.2799 \times 10^{11}}}
+                    = \sqrt{5.8224 \times 10^{8}}
+                    = 24.13\ \mathrm{km\,s^{-1}}.
+\]
+The increments:
+\[
+  \Delta v_1 = v_p - v_\oplus = 32.73 - 29.79 = 2.95\ \mathrm{km\,s^{-1}},
+\]
+\[
+  \Delta v_2 = v_{\mathrm{Mars}} - v_a = 24.13 - 21.48 = 2.65\ \mathrm{km\,s^{-1}},
+\]
+\[
+  \Delta v_{\mathrm{total}} = 2.95 + 2.65 = 5.60\ \mathrm{km\,s^{-1}}.
+\]
+\answer{$\Delta v_1 = 2.95$, $\Delta v_2 = 2.65$, total $\Delta v = 5.60\ \mathrm{km\,s^{-1}}$.}
+\end{solution}
+
+\parti Sketch the spacecraft's speed $v(r)$ along the transfer, from departure at
+$1.000\ \mathrm{AU}$ to arrival at $1.524\ \mathrm{AU}$. Mark the four speeds of part~(c): $v_p$,
+$v_a$, and the circular speeds of Earth and Mars. Use the sketch to explain why \emph{both} burns
+point in the direction of motion.
+
+\begin{solution}
+The vis-viva speed falls monotonically from perihelion to aphelion:
+
+\begin{center}
+\begin{tikzpicture}[line cap=round]
+  % axes
+  \draw[->, ipsText] (0,0) -- (6.4,0) node[right=1pt, font=\footnotesize] {$r$ (AU)};
+  \draw[->, ipsText] (0,0) -- (0,4.4) node[above=2pt, font=\footnotesize] {$v$ (km\,s$^{-1}$)};
+  % x ticks at 1.000, 1.262, 1.524 AU  [x = (r-0.95)*9]
+  \foreach \x/\lab in {0.45/1.000, 2.81/1.262, 5.17/1.524}{
+    \draw[ipsText] (\x,0) -- (\x,-0.08) node[below, font=\scriptsize] {\lab};}
+  % y ticks at 20, 25, 30 km/s  [y = (v-20)*0.30]
+  \foreach \y/\lab in {0.0/20, 1.5/25, 3.0/30}{
+    \draw[ipsText] (0,\y) -- (-0.08,\y) node[left, font=\scriptsize] {\lab};}
+  % transfer curve through computed points
+  \draw[ipsAccent, thick] plot[smooth] coordinates
+    {(0.45,3.82) (0.90,3.43) (1.35,3.05) (2.25,2.36) (3.15,1.72) (4.05,1.13) (5.17,0.44)};
+  % endpoint markers
+  \fill[ipsAccent] (0.45,3.82) circle (0.055) node[above right=1pt, font=\scriptsize, color=ipsText] {$v_p = 32.7$};
+  \fill[ipsAccent] (5.17,0.44) circle (0.055) node[below left=1pt, font=\scriptsize, color=ipsText] {$v_a = 21.5$};
+  % circular speeds
+  \draw[ipsOrange, fill=white, thick] (0.45,2.94) circle (0.055) node[right=3pt, font=\scriptsize, color=ipsText] {$v_\oplus = 29.8$};
+  \draw[ipsOrange, fill=white, thick] (5.17,1.24) circle (0.055) node[above left=1pt, font=\scriptsize, color=ipsText] {$v_{\mathrm{Mars}} = 24.1$};
+  % burn arrows
+  \draw[->, ipsOrange, thick] (0.45,2.94) -- (0.45,3.76);
+  \node[right, font=\scriptsize, color=ipsOrange] at (0.55,3.36) {$\Delta v_1$};
+  \draw[->, ipsOrange, thick] (5.17,0.50) -- (5.17,1.18);
+  \node[left, font=\scriptsize, color=ipsOrange] at (5.07,0.84) {$\Delta v_2$};
+\end{tikzpicture}
+\end{center}
+
+At departure the transfer demands $32.7\ \mathrm{km\,s^{-1}}$ while Earth's orbit provides
+$29.8$: the spacecraft must \emph{gain} speed, so the first burn is prograde. At arrival the
+spacecraft crawls at its aphelion speed of $21.5\ \mathrm{km\,s^{-1}}$ while Mars passes at
+$24.1$: the spacecraft is the slower body and must again \emph{gain} speed to match, so the
+second burn is prograde too.
+\answer{The transfer curve starts above Earth's circular speed and ends below Mars's; closing
+each gap means adding speed along the direction of motion, so both burns are prograde.}
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{The Laplace resonance of the Galilean moons}
+
+Lecture~2 describes the orbital periods of Io, Europa and Ganymede as standing in a $1:2:4$ ratio.
+This problem asks how exact that statement is, and what the resonance geometry enforces.
+
+\parti Compute the two consecutive period ratios and the Ganymede-to-Io ratio, and give the
+percentage by which each misses its integer value.
+
+\begin{solution}
+\[
+  \frac{P_{\mathrm{Eur}}}{P_{\mathrm{Io}}} = \frac{3.551}{1.769} = 2.00735,
+  \qquad
+  \frac{2.00735 - 2}{2} = +0.37\% ,
+\]
+\[
+  \frac{P_{\mathrm{Gan}}}{P_{\mathrm{Eur}}} = \frac{7.155}{3.551} = 2.01493,
+  \qquad
+  \frac{2.01493 - 2}{2} = +0.75\% ,
+\]
+\[
+  \frac{P_{\mathrm{Gan}}}{P_{\mathrm{Io}}} = \frac{7.155}{1.769} = 4.04466,
+  \qquad
+  \frac{4.04466 - 4}{4} = +1.12\% .
+\]
+\answer{The ratios exceed $2$, $2$ and $4$ by $0.37\%$, $0.75\%$ and $1.12\%$.}
+
+These offsets are real, not measurement error: the periods are known to far better than a part in
+$10^{4}$. Part~(b) shows what the resonance does hold exactly: a combination of all three mean
+motions, not any pairwise ratio.
+\end{solution}
+
+\parti The mean motion is $n = 2\pi / P$. Evaluate the combination
+\[
+  n_{\mathrm{Io}} - 3\,n_{\mathrm{Eur}} + 2\,n_{\mathrm{Gan}}
+\]
+and express the result as a fraction of $n_{\mathrm{Io}}$. Keep 7 decimal digits through the
+arithmetic; as a checkpoint, $3\,n_{\mathrm{Eur}} = 0.8448324 \times 2\pi\ \mathrm{d^{-1}}$.
+Contrast the outcome with part~(a).
+
+\begin{solution}
+The factor $2\pi$ is common to all three terms, so it can be carried outside and the arithmetic done
+with $1/P$ in units of $\mathrm{d^{-1}}$:
+\[
+  \frac{1}{P_{\mathrm{Io}}}  = \frac{1}{1.769} = 0.5652911\ \mathrm{d^{-1}},
+\]
+\[
+  \frac{3}{P_{\mathrm{Eur}}} = \frac{3}{3.551} = 3 \times 0.2816108 = 0.8448324\ \mathrm{d^{-1}},
+\]
+\[
+  \frac{2}{P_{\mathrm{Gan}}} = \frac{2}{7.155} = 2 \times 0.1397624 = 0.2795248\ \mathrm{d^{-1}}.
+\]
+Combine, keeping every digit because this is a difference of nearly equal numbers:
+\[
+  0.5652911 - 0.8448324 = -0.2795413\ \mathrm{d^{-1}},
+\]
+\[
+  -0.2795413 + 0.2795248 = -0.0000165\ \mathrm{d^{-1}},
+\]
+so, restoring the $2\pi$,
+\[
+  n_{\mathrm{Io}} - 3 n_{\mathrm{Eur}} + 2 n_{\mathrm{Gan}}
+    = -1.04 \times 10^{-4}\ \mathrm{rad\,d^{-1}},
+  \qquad
+  \frac{n_{\mathrm{Io}} - 3 n_{\mathrm{Eur}} + 2 n_{\mathrm{Gan}}}{n_{\mathrm{Io}}}
+    = -2.9 \times 10^{-5}.
+\]
+\answer{The combination vanishes to three parts in $10^{5}$, although no individual ratio in
+part~(a) came closer than three parts in $10^{3}$.}
+
+This is the Laplace relation. Each pairwise ratio misses its integer by a few tenths of a percent,
+yet the particular three-body combination is zero to a hundred times better precision. The exact
+constraint the system obeys is the one on all three moons together, not the one on any pair. With
+the NASA/JPL sidereal periods quoted to seven digits ($1.769138$, $3.551181$, $7.154553\ \mathrm{d}$) the residual
+falls further, to about $10^{-7}$ of $n_{\mathrm{Io}}$.
+\end{solution}
+
+\parti The figure shows the three orbits at the moment of a Europa--Ganymede conjunction; the
+resonance locks the phases such that Io then stands on the \emph{opposite} side of Jupiter.
+
+\begin{center}
+\begin{tikzpicture}[line cap=round]
+  \draw[gray!55] (0,0) circle (0.62);
+  \draw[gray!55] (0,0) circle (1.00);
+  \draw[gray!55] (0,0) circle (1.52);
+  \fill[ipsPrimary] (0,0) circle (0.10);
+  \node[below, font=\scriptsize, color=ipsText] at (0,-0.14) {Jupiter};
+  \fill[ipsOrange] (180:0.62) circle (0.065);
+  \node[left=2pt, font=\scriptsize, color=ipsText] at (180:0.62) {Io};
+  \fill[ipsAccent] (0:1.00) circle (0.065);
+  \node[above=2pt, font=\scriptsize, color=ipsText] at (0:1.00) {Europa};
+  \fill[ipsPrimary!75] (0:1.52) circle (0.065);
+  \node[right=2pt, font=\scriptsize, color=ipsText] at (0:1.52) {Ganymede};
+\end{tikzpicture}
+\end{center}
+
+Idealise the periods as exactly $1:2:4$. Sketch the positions of the three moons after $1$, $2$,
+and $4$ Io periods. From your sketch: (i) where does Io stand at every Europa--Ganymede
+conjunction, and (ii) can a triple conjunction occur?
+
+\begin{solution}
+Per Io period, Io advances $360^\circ$, Europa $180^\circ$, and Ganymede $90^\circ$. Starting from
+the printed configuration (Io at $180^\circ$, Europa and Ganymede at $0^\circ$):
+
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Time (Io periods) & Io & Europa & Ganymede \\
+\midrule
+$0$ & $180^\circ$ & $0^\circ$   & $0^\circ$   \\
+$1$ & $180^\circ$ & $180^\circ$ & $90^\circ$  \\
+$2$ & $180^\circ$ & $0^\circ$   & $180^\circ$ \\
+$4$ & $180^\circ$ & $0^\circ$   & $0^\circ$   \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[line cap=round, scale=0.62]
+  \foreach \dx/\t/\io/\eu/\ga in {0/0/180/0/0, 4.2/1/180/180/90, 8.4/2/180/0/180, 12.6/4/180/0/0}{
+    \begin{scope}[shift={(\dx,0)}]
+      \draw[gray!55] (0,0) circle (0.62);
+      \draw[gray!55] (0,0) circle (1.00);
+      \draw[gray!55] (0,0) circle (1.52);
+      \fill[ipsPrimary] (0,0) circle (0.09);
+      \fill[ipsOrange] (\io:0.62) circle (0.09);
+      \fill[ipsAccent] (\eu:1.00) circle (0.09);
+      \fill[ipsPrimary!75] (\ga:1.52) circle (0.09);
+      \node[below, font=\scriptsize, color=ipsText] at (0,-1.75) {$t = \t\,P_{\mathrm{Io}}$};
+    \end{scope}}
+  \node[right, font=\scriptsize, color=ipsText, align=left] at (14.5,0.6)
+    {\textcolor{ipsOrange}{$\bullet$} Io\\[-1pt]
+     \textcolor{ipsAccent}{$\bullet$} Europa\\[-1pt]
+     \textcolor{ipsPrimary!75}{$\bullet$} Ganymede};
+\end{tikzpicture}
+\end{center}
+
+Because Io always advances by full turns per Io period, it returns to $180^\circ$ at every integer
+time; Europa alternates between $0^\circ$ and $180^\circ$; Ganymede steps through
+$90^\circ$ per Io period. The pattern repeats after $4$ Io periods, one Ganymede period.
+
+(i) Europa--Ganymede conjunctions occur at $t = 0, 4, 8, \ldots$, always at $0^\circ$, and Io then
+stands at $180^\circ$: at every Europa--Ganymede conjunction, Io is on the opposite side of
+Jupiter. (ii) Each pairwise conjunction finds the third moon elsewhere: Io--Europa conjunctions
+(odd $t$, at $180^\circ$) find Ganymede at $90^\circ$ or $270^\circ$; the Io--Ganymede conjunction
+($t = 2$, at $180^\circ$) finds Europa at $0^\circ$.
+\answer{A triple conjunction never occurs. The resonance phase-protects the system: the moons
+never line up all on one side, which caps how coherently their mutual perturbations can add.}
+\end{solution}
+
+\parti The resonance holds Io's eccentricity at $e \approx 0.004$ rather than letting tides
+circularise the orbit. Explain why a non-zero eccentricity is needed for tidal heating to continue
+in a moon that is already tidally locked, and name the observable consequence.
+
+\begin{solution}
+A tidally locked moon on a perfectly circular orbit keeps the same face toward the planet at a
+constant distance. Its tidal bulge is then fixed in the body frame: it neither rises and falls nor
+moves across the surface, so no work is done deforming the interior and no heat is released.
+
+An eccentric orbit breaks this in two ways at once. The distance to the planet varies over each
+orbit, so the height of the bulge varies with it. And the moon spins at a constant rate while its
+orbital angular velocity is fastest at periapsis and slowest at apoapsis, so the direction to the
+planet librates back and forth in longitude and drags the bulge with it. Both effects flex the
+interior once per orbit, and internal friction converts that mechanical work into heat.
+
+Left alone, tidal dissipation would damp the eccentricity to zero and switch itself off. The
+Laplace resonance prevents that by continually re-forcing $e$.
+\answer{Observable consequence: Io is the most volcanically active body in the solar system.}
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{Tides and the Roche limit}
+
+\parti A moon of radius $R_s$ orbits at distance $d$ from a planet of mass $M_p$, with
+$R_s \ll d$. Show that the difference between the planet's gravitational acceleration at the moon's
+near surface and at its centre is
+\[
+  \Delta a \approx \frac{2 G M_p R_s}{d^3}.
+\]
+Use $(1 - x)^{-2} \approx 1 + 2x$ for $x \ll 1$.
+
+\begin{solution}
+The near surface sits at distance $d - R_s$ from the planet, the centre at $d$:
+\[
+  a_{\mathrm{near}} = \frac{G M_p}{(d - R_s)^2},
+  \qquad
+  a_{\mathrm{centre}} = \frac{G M_p}{d^2}.
+\]
+Factor $d$ out of the first denominator:
+\[
+  a_{\mathrm{near}} = \frac{G M_p}{d^2}\left(1 - \frac{R_s}{d}\right)^{-2}
+                    \approx \frac{G M_p}{d^2}\left(1 + \frac{2 R_s}{d}\right).
+\]
+Subtract:
+\[
+  \Delta a = a_{\mathrm{near}} - a_{\mathrm{centre}}
+           = \frac{G M_p}{d^2}\left(1 + \frac{2 R_s}{d}\right) - \frac{G M_p}{d^2}
+           = \frac{G M_p}{d^2} \cdot \frac{2 R_s}{d}
+           = \frac{2 G M_p R_s}{d^3}.
+\]
+The direct pull falls as $d^{-2}$ but the tidal difference falls as $d^{-3}$, so their ratio is
+$\Delta a / a = 2 R_s / d$: tides are a small correction far away and dominate close in.
+\end{solution}
+
+\parti The fluid Roche limit is
+\[
+  d_R \approx 2.46\, R_p \left(\frac{\rho_p}{\rho_s}\right)^{1/3}.
+\]
+Interrogate this formula before using it: (i) why does the \emph{satellite's} radius $R_s$ not
+appear? (ii) what does it predict as $\rho_s \to \infty$, and does that make sense? (iii) what
+does it predict for $\rho_s = \rho_p$, and what does that say about how close \emph{any}
+self-gravitating satellite can orbit?
+
+\begin{solution}
+(i) Both sides of the comparison scale the same way with satellite size: the tidal acceleration
+across the satellite, $2 G M_p R_s / d^3$, grows linearly with $R_s$, and so does the satellite's
+own surface gravity, $G m_s / R_s^2 = \tfrac{4}{3}\pi G \rho_s R_s$. The radius cancels in the
+ratio and only the densities survive. Big and small satellites of the same density are torn apart
+at the same distance.
+
+(ii) As $\rho_s \to \infty$, $d_R \to 0$: an arbitrarily dense satellite can orbit arbitrarily
+close, because its self-gravity grows without bound while the tidal stress at fixed $d$ does not.
+The trend is physically sensible.
+
+(iii) For $\rho_s = \rho_p$ the density factor is unity and $d_R = 2.46\,R_p$: even a satellite
+as dense as its planet is destroyed within $2.46$ planetary radii. The limit falls inside the
+planet, $d_R < R_p$, only for $\rho_s > 2.46^3\,\rho_p \approx 15\,\rho_p$, far denser than any
+satellite material, so for every real satellite density the forbidden zone extends well beyond
+the planet's surface.
+\answer{$R_s$ cancels because tidal stress and self-gravity both scale linearly with it; only the
+density ratio matters, and even equal density leaves a forbidden zone of $2.46\,R_p$.}
+\end{solution}
+
+\parti Evaluate $d_R$ for Saturn ($R_p = 58\,232\ \mathrm{km}$,
+$\rho_p = 687\ \mathrm{kg\,m^{-3}}$) and a satellite of solid water ice
+($\rho_s = 1000\ \mathrm{kg\,m^{-3}}$); as a checkpoint, $(687/1000)^{1/3} = 0.8824$. Saturn's
+main rings span $67\,000$ to $137\,000\ \mathrm{km}$ from the planet's centre, with the F ring
+near $140\,000\ \mathrm{km}$: compare. Ring particles are in fact porous aggregates with
+$\rho_s \approx 500\ \mathrm{kg\,m^{-3}}$; \emph{without} recomputing from scratch, state the
+factor by which the limit moves and what that does to your comparison.
+
+\begin{solution}
+Solid ice:
+\[
+  d_R = 2.46 \times 58\,232 \times 0.8824 = 2.46 \times 51\,384
+      = 1.264 \times 10^{5}\ \mathrm{km} = 2.17\,R_p .
+\]
+This sits at $126\,400\ \mathrm{km}$: the C, B and inner A rings lie inside it, but the outer A
+ring ($126\,400$ to $137\,000\ \mathrm{km}$) and the F ring lie outside, which the solid-ice
+limit fails to explain.
+
+Halving the density multiplies $d_R$ by $(1000/500)^{1/3} = 2^{1/3} = 1.26$, because
+$d_R \propto \rho_s^{-1/3}$:
+\[
+  d_R = 1.26 \times 126\,400 = 1.59 \times 10^{5}\ \mathrm{km} = 2.73\,R_p ,
+\]
+and the \emph{entire} ring system, F ring included, now lies inside the limit.
+\answer{$d_R = 126\,400\ \mathrm{km}$ ($2.17\,R_p$) for solid ice; porosity moves it out by
+$2^{1/3} = 1.26$ to $159\,000\ \mathrm{km}$ ($2.73\,R_p$), enclosing the whole ring system.}
+\end{solution}
+
+\parti For the Earth--Moon pair the same formula gives $d_R \approx 18\,500\ \mathrm{km}
+= 2.91\,\Rearth$; the Moon orbits $21$ times further out. The International Space Station orbits
+$420\ \mathrm{km}$ above Earth's surface, far \emph{inside} that limit. Judge this claim in 2 to
+3 sentences: \emph{"the ISS survives inside the Roche limit, so the Roche formula must be
+wrong."}
+
+\begin{solution}
+False. The Roche limit compares the tidal stress with a body's \emph{self-gravity}, so it applies
+only to objects held together by gravity alone: fluid bodies and loose aggregates bound only by their own self-gravity. The ISS is held
+together by the material strength of its structure, which at its mass exceeds its self-gravity by
+many orders of magnitude, so it sits outside the formula's domain rather than refuting it. The
+same escape applies to solid rock, which is why small rigid moons survive well inside the fluid
+limit.
+\answer{False: the formula presupposes self-gravity as the only glue; the ISS is bolted, not
+gravitationally bound.}
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{From planetesimals to planets, and the mass of the solar nebula}
+
+\parti Gravitational focusing raises the collision cross-section of a body of radius $R$ to
+\[
+  \sigma_{\mathrm{eff}} = \pi R^2 \left(1 + \frac{v_{\mathrm{esc}}^2}{v_\infty^2}\right).
+\]
+Two planetesimals of density $3000\ \mathrm{kg\,m^{-3}}$ have radii $50\ \mathrm{km}$ and
+$500\ \mathrm{km}$. Show that the smaller body has $v_{\mathrm{esc}} = 64.8\ \mathrm{m\,s^{-1}}$,
+and explain why $v_{\mathrm{esc}} \propto R$ at fixed density. Then compute both focusing factors
+for a swarm with random velocity $v_\infty = 10\ \mathrm{m\,s^{-1}}$, and compare the ratio of the
+two effective cross-sections with the ratio of the geometric ones.
+
+\begin{solution}
+For the $50\ \mathrm{km}$ body, $R = 5.0 \times 10^{4}\ \mathrm{m}$:
+\[
+  M = \tfrac{4}{3}\pi R^3 \rho
+    = \tfrac{4}{3}\pi (5.0 \times 10^{4})^3 \times 3000
+    = 1.571 \times 10^{18}\ \mathrm{kg},
+\]
+\[
+  v_{\mathrm{esc}} = \sqrt{\frac{2 G M}{R}}
+    = \sqrt{\frac{2 \times 6.674 \times 10^{-11} \times 1.571 \times 10^{18}}{5.0 \times 10^{4}}}
+    = \sqrt{4194}
+    = 64.8\ \mathrm{m\,s^{-1}} .
+\]
+At fixed density $M \propto R^3$, so
+$v_{\mathrm{esc}} = \sqrt{2GM/R} \propto \sqrt{R^3/R} = R$: the $500\ \mathrm{km}$ body has ten
+times the escape speed, $v_{\mathrm{esc}} = 648\ \mathrm{m\,s^{-1}}$.
+
+Focusing factors at $v_\infty = 10\ \mathrm{m\,s^{-1}}$, using
+$v_{\mathrm{esc}}^2 = 4194\ \mathrm{m^2\,s^{-2}}$ from above and, since
+$v_{\mathrm{esc}} \propto R$, $100$ times that value for the larger body:
+\[
+  1 + \frac{4194}{10^2} = 1 + 41.9 = 42.9
+  \qquad\text{and}\qquad
+  1 + \frac{4.194 \times 10^{5}}{10^2} = 1 + 4194 = 4195 .
+\]
+The cross-sections are in the ratio
+\[
+  \frac{\sigma_{\mathrm{eff}}(500)}{\sigma_{\mathrm{eff}}(50)}
+    = \left(\frac{500}{50}\right)^2 \times \frac{4195}{42.9}
+    = 100 \times 97.8
+    = 9.8 \times 10^{3},
+\]
+against a geometric ratio of only $(500/50)^2 = 100$.
+\answer{Focusing gives the larger body an extra factor of $98$ on top of its geometric advantage.}
+\end{solution}
+
+\parti Read the limits of the focusing formula: what does $\sigma_{\mathrm{eff}}$ reduce to for
+$v_\infty \gg v_{\mathrm{esc}}$, and how does it scale with $R$ for
+$v_\infty \ll v_{\mathrm{esc}}$? Confirm the first limit by evaluating both focusing factors at
+$v_\infty = 500\ \mathrm{m\,s^{-1}}$. The growing bodies themselves stir the swarm toward their
+own escape speed: name the two growth regimes these limits correspond to, and explain why the
+first regime shuts itself down.
+
+\begin{solution}
+For $v_\infty \gg v_{\mathrm{esc}}$ the bracket tends to $1$ and
+$\sigma_{\mathrm{eff}} \to \pi R^2$: the purely geometric cross-section, growing only as $R^2$.
+For $v_\infty \ll v_{\mathrm{esc}}$ the second term dominates,
+\[
+  \sigma_{\mathrm{eff}} \approx \pi R^2 \frac{v_{\mathrm{esc}}^2}{v_\infty^2}
+    \propto R^2 \times R^2 = R^4,
+\]
+using $v_{\mathrm{esc}} \propto R$ from part~(a): the biggest body gains a steeply
+super-geometric advantage.
+
+At $v_\infty = 500\ \mathrm{m\,s^{-1}}$, with the same $v_{\mathrm{esc}}^2$ values:
+\[
+  1 + \frac{4194}{500^2} = 1.02,
+  \qquad
+  1 + \frac{4.194 \times 10^{5}}{500^2} = 2.68,
+\]
+so the large body's advantage over pure $R^2$ scaling collapses from the factor $98$ of part~(a)
+to $2.6$.
+
+The cold-swarm limit is \textbf{runaway growth}: the largest body eats fastest, pulls away from
+the swarm, and the mass spread widens. The hot-swarm limit is \textbf{oligarchic growth}: a few
+similar-sized bodies grow slowly and in step. The transition is self-inflicted: the winners of
+runaway growth gravitationally stir the planetesimals, raising $v_\infty$ toward their own
+$v_{\mathrm{esc}}$, which switches their focusing advantage off.
+\answer{Geometric $\pi R^2$ for a hot swarm, $\propto R^4$ for a cold one; runaway growth creates
+the stirring that ends it, handing over to oligarchic growth.}
+\end{solution}
+
+\parti Estimate the minimum mass of the solar nebula. Assume the four terrestrial planets are made
+entirely of solids, each of the four giant planets needed a solid core of $15\,\Mearth$, and
+solids make up $1\%$ of the disk by mass. As a checkpoint, the terrestrial planets contribute
+$1.98\,\Mearth$ of solids. Give the answer in Earth masses and as a fraction of $\Msun$.
+
+\begin{solution}
+Solids locked into the terrestrial planets:
+\[
+  0.055 + 0.815 + 1.000 + 0.107 = 1.977\ \Mearth .
+\]
+Solids locked into the four giant-planet cores:
+\[
+  4 \times 15 = 60\ \Mearth .
+\]
+Total solid inventory:
+\[
+  M_{\mathrm{solid}} = 1.977 + 60 = 61.98\ \Mearth .
+\]
+If solids are $1\%$ of the disk by mass, the disk must have held
+\[
+  M_{\mathrm{disk}} = \frac{61.98}{0.01} = 6198\ \Mearth
+    = 6198 \times 5.972 \times 10^{24} = 3.701 \times 10^{28}\ \mathrm{kg},
+\]
+\[
+  \frac{M_{\mathrm{disk}}}{\Msun} = \frac{3.701 \times 10^{28}}{1.989 \times 10^{30}} = 0.0186 .
+\]
+\answer{About $6.2 \times 10^{3}\,\Mearth$, or $1.9\%$ of a solar mass.}
+
+This is a lower bound twice over. Giant-planet heavy-element inventories are probably larger than
+a bare $15\,\Mearth$ core, and no disk converts $100\%$ of its solids into planets, so the true
+requirement is higher.
+\end{solution}
+
+\parti By the Class~II stage of disk evolution, a typical disk holds about $0.1\%$ of the stellar
+mass. Judge this claim, with numbers: \emph{"a Class~II disk still holds enough material to build
+the solar system's planets."} What does your verdict imply for \emph{when} the planets' solid
+material had to be locked into large bodies?
+
+\begin{solution}
+A Class~II disk around the Sun holds
+\[
+  0.001 \times \frac{1.989 \times 10^{30}}{5.972 \times 10^{24}} = 333\ \Mearth
+\]
+of gas and dust in total. The claim fails on both budgets. The four giant planets alone sum to
+\[
+  317.8 + 95.16 + 14.54 + 17.15 = 444.7\ \Mearth ,
+\]
+more than the entire disk. And at $1\%$ dust, the disk carries only $3.33\ \Mearth$ of solids
+against the $61.98\ \Mearth$ required by part~(c), short by a factor of
+\[
+  \frac{61.98}{3.33} = 18.6 .
+\]
+\answer{False: a Class~II disk holds neither the gas ($333 < 445\,\Mearth$) nor the solids
+($3.3$ vs $62\,\Mearth$) that the planets demand.}
+
+The implication is about timing. The solid inventory, and the giant-planet cores with their gas
+envelopes, had to be assembled \emph{earlier}, while the disk was still young and held a few
+percent of a solar mass, as in part~(c). This is consistent with giant-planet cores completing
+their growth within the first few Myr, before the gas disperses.
+\end{solution}

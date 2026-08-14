@@ -1,0 +1,157 @@
+% worksheetIPS.sty — Shared style for Planetary Systems worksheets
+% Kapteyn Astronomical Institute, University of Groningen
+% Requires XeLaTeX (fontspec/unicode-math), matching the lecture slides.
+
+\ProvidesPackage{worksheetIPS}[2026/08/14 IPS Worksheet Style]
+
+% ── Solution switch ─────────────────────────────────────────
+% The problem sheet and the solution sheet share one content file. A driver
+% defines \ipsshowsolutions before loading this package to render solutions.
+\newif\ifipssolutions
+\ifdefined\ipsshowsolutions\ipssolutionstrue\else\ipssolutionsfalse\fi
+
+% ── Packages ────────────────────────────────────────────────
+\RequirePackage[a4paper, margin=25mm, top=24mm, bottom=22mm, headsep=9mm]{geometry}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{booktabs}
+\RequirePackage{enumitem}
+\RequirePackage{fancyhdr}
+\RequirePackage{microtype}
+\RequirePackage{xcolor}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{comment}
+\RequirePackage{hyperref}
+
+% ── Colour palette (shared with the lecture slides) ────────
+\definecolor{ipsPrimary}{HTML}{1B2A4A}
+\definecolor{ipsAccent}{HTML}{2C7A7B}
+\definecolor{ipsText}{HTML}{2D3748}
+\definecolor{ipsLightFill}{HTML}{EDF2F7}
+\definecolor{ipsOrange}{HTML}{DD6B20}
+
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = ipsAccent,
+  urlcolor   = ipsAccent,
+  citecolor  = ipsAccent,
+  pdfborder  = {0 0 0},
+}
+
+% ── Fonts ───────────────────────────────────────────────────
+\RequirePackage{fontspec}
+\RequirePackage{unicode-math}
+\setsansfont{Inter-Regular.otf}[
+  BoldFont       = Inter-Bold.otf,
+  ItalicFont     = Inter-Italic.otf,
+  BoldItalicFont = Inter-BoldItalic.otf,
+]
+\setmathfont{FiraMath-Regular.otf}
+\renewcommand{\familydefault}{\sfdefault}
+% Units are written \mathrm{...}, which unicode-math resolves through the serif
+% \rmdefault. Alias it to the sans upright alphabet so units match the body text.
+\AtBeginDocument{\let\mathrm\mathsf\color{ipsText}}
+
+% ── Sheet metadata ──────────────────────────────────────────
+\newcommand{\ipsnumber}[1]{\def\ipsx@number{#1}}
+\newcommand{\ipstitle}[1]{\def\ipsx@title{#1}}
+\newcommand{\ipscovers}[1]{\def\ipsx@covers{#1}}
+\ipsnumber{}\ipstitle{}\ipscovers{}
+
+% ── Running head and foot ───────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[L]{\footnotesize\color{ipsPrimary}Planetary Systems \textbullet\ Worksheet \ipsx@number}
+\fancyhead[R]{\footnotesize\color{ipsPrimary}\ifipssolutions Solutions\else Problems\fi}
+\fancyfoot[C]{\footnotesize\color{ipsPrimary!60}\thepage}
+
+% ── Title block ─────────────────────────────────────────────
+\newcommand{\ipsmaketitle}{%
+  \thispagestyle{fancy}%
+  \begingroup
+  \noindent{\color{ipsAccent}\rule{\linewidth}{1.2pt}}\\[8pt]
+  {\LARGE\bfseries\color{ipsPrimary} Worksheet \ipsx@number: \ipsx@title\par}
+  \ifipssolutions
+    \vskip5pt{\large\bfseries\color{ipsOrange} Full solutions\par}
+  \fi
+  \vskip7pt
+  {\normalsize\color{ipsAccent} Covers \ipsx@covers\par}
+  \vskip3pt
+  {\footnotesize Planetary Systems (WBAS002-05) \textbullet\ Kapteyn Astronomical Institute, University of Groningen\par}
+  \vskip7pt
+  \noindent{\color{ipsAccent}\rule{\linewidth}{0.6pt}}
+  \vskip10pt
+  \endgroup
+}
+
+% ── Problem heading and lettered parts ──────────────────────
+\newcounter{ipsproblem}
+% Nesting the part counter under the problem counter both auto-resets it and
+% qualifies the hyperref anchor, so parts of different problems do not collide.
+\newcounter{ipspart}[ipsproblem]
+\renewcommand{\theipspart}{\alph{ipspart}}
+
+\newcommand{\problem}[1]{%
+  \par\addvspace{12pt plus 4pt}%
+  \refstepcounter{ipsproblem}%
+  \noindent{\large\bfseries\color{ipsPrimary} Problem \theipsproblem\quad #1\par}%
+  \vskip3pt
+  \noindent{\color{ipsAccent}\rule{\linewidth}{0.6pt}}%
+  \par\addvspace{5pt}%
+}
+
+\newcommand{\parti}{%
+  \par\addvspace{6pt plus 2pt}%
+  \refstepcounter{ipspart}%
+  \noindent\textbf{(\theipspart)}\enspace\ignorespaces
+}
+
+% ── Given-data block ────────────────────────────────────────
+\newtcolorbox{given}[1][Data]{%
+  enhanced, breakable,
+  colback = ipsLightFill, colframe = ipsAccent,
+  boxrule = 0.5pt, arc = 2pt,
+  left = 7pt, right = 7pt, top = 5pt, bottom = 5pt,
+  fonttitle = \bfseries\small, coltitle = white,
+  title = {#1},
+}
+
+% ── Worked solution, present only on the solution sheet ─────
+\newtcolorbox{ipssolutionbox}{%
+  enhanced, breakable,
+  colback = ipsLightFill!55, colframe = ipsOrange,
+  boxrule = 0pt, arc = 0pt,
+  left = 9pt, right = 7pt, top = 5pt, bottom = 5pt,
+  borderline west = {2pt}{0pt}{ipsOrange},
+}
+
+\ifipssolutions
+  \newenvironment{solution}
+    {\begin{ipssolutionbox}\noindent{\bfseries\color{ipsOrange}Solution.}\enspace\ignorespaces}
+    {\end{ipssolutionbox}}
+\else
+  \excludecomment{solution}
+\fi
+
+% ── Result callout inside a solution ────────────────────────
+\newcommand{\answer}[1]{%
+  \par\vskip4pt
+  \noindent\textcolor{ipsAccent}{\rule{2.5pt}{10pt}}\enspace{\bfseries\color{ipsPrimary}#1}%
+  \par\vskip4pt
+}
+
+% ── Physical-quantity macros (mirrors the slide macros) ─────
+\newcommand{\Msun}{M_{\odot}}
+\newcommand{\Rsun}{R_{\odot}}
+\newcommand{\Mearth}{M_{\oplus}}
+\newcommand{\Rearth}{R_{\oplus}}
+\newcommand{\Mjup}{M_{\mathrm{J}}}
+\newcommand{\Rjup}{R_{\mathrm{J}}}
+
+% ── Layout defaults ─────────────────────────────────────────
+\setlist[itemize]{leftmargin=16pt, itemsep=2pt, topsep=3pt, parsep=0pt}
+\setlist[enumerate]{leftmargin=18pt, itemsep=2pt, topsep=3pt, parsep=0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt plus 1pt}

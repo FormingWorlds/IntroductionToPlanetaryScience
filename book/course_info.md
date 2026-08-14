@@ -56,17 +56,17 @@ The course is assessed by a single final written exam, which determines the full
 A final grade of at least 5.5 is required to pass.
 The re-sit has the same format as the exam; if very few students are enrolled, an oral exam is offered instead.
 
-The exam lasts two hours and has the same shape and level as the homework sheets, with approximately one question per lecture; not necessarily every lecture is covered, and some lectures may be combined into one question.
+The exam lasts two hours and has the same shape and level as the worksheets, with approximately one question per lecture; not necessarily every lecture is covered, and some lectures may be combined into one question.
 It is closed book: a calculator and a pen are all that is needed.
 
-Seven homework sheets are provided as ungraded formative practice and are discussed in the tutorial sessions.
+Seven worksheets are provided as ungraded formative practice and are discussed in the tutorial sessions.
 They are strongly recommended as exam preparation but do not count towards the final grade.
-The homework sheets and their full solutions, together with a few mock exams with full solutions, are available on this website.
+The worksheets and their full solutions, together with a few mock exams with full solutions, are available on this website.
 
 ## Course structure
 
 The course runs over the teaching period of Semester 1a and comprises 14 lectures, weekly tutorial sessions, and a final written exam.
-Each teaching week consists of two 90-minute lectures and one tutorial in which the homework sheet for that block is discussed.
+Each teaching week consists of two 90-minute lectures and one tutorial in which the worksheet for that block is discussed.
 The tutorials are led by the teaching assistants listed above.
 The full lecture sequence is listed on the {ref}`landing page <intro>`, and the lecture notes follow that order.
 

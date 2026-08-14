@@ -20,6 +20,29 @@ slides/**/figures/*.pdf
 # is gitignored; copy to book/_static/slides/ when ready to publish.
 slides/**/lecture*.pdf
 
+# Generated at worksheet build time (see worksheets/Makefile). Worksheet PDFs
+# are committed at book/_static/worksheets/, the website-facing location; the
+# build artefacts in worksheets/worksheetNN/ are not.
+worksheets/**/*.pdf
+worksheets/**/*.aux
+worksheets/**/*.out
+worksheets/**/*.xdv
+worksheets/**/*.fls
+worksheets/**/*.fdb_latexmk
+
+# Generated at mini-lecture build time (see minilectures/Makefile). The decks
+# are committed at book/_static/minilectures/, the website-facing location.
+minilectures/**/*.pdf
+minilectures/**/*.aux
+minilectures/**/*.out
+minilectures/**/*.xdv
+minilectures/**/*.fls
+minilectures/**/*.fdb_latexmk
+minilectures/**/*.nav
+minilectures/**/*.snm
+minilectures/**/*.toc
+minilectures/**/*.vrb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
