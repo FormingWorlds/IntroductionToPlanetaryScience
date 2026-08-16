@@ -280,9 +280,9 @@ Convection occurs when Ra exceeds a critical value. For Rayleigh-Bénard convect
 
 $$
 \mathrm{Ra}_c \approx 1708
-$$
+$$ (eq:critical-rayleigh)
 
-(the exact value depends on the boundary conditions; $\mathrm{Ra}_c = 657.5$ for free-slip boundaries and $\mathrm{Ra}_c = 1707.8$ for rigid boundaries {cite:p}`Turcotte2002`). When $\mathrm{Ra} < \mathrm{Ra}_c$, heat is transported by conduction alone. When $\mathrm{Ra} \gg \mathrm{Ra}_c$, vigorous convection dominates. The marginal-stability curve, with its minimum at $\mathrm{Ra}_c$, is shown in {numref}`fig:marginal-stability`.
+(the exact value depends on the boundary conditions; $\mathrm{Ra}_c = 657.5$ for free-slip boundaries, where fluid slides parallel to the surface without friction, and $\mathrm{Ra}_c = 1707.8$ for rigid boundaries, where fluid sticks to the wall with zero velocity {cite:p}`Turcotte2002`). When $\mathrm{Ra} < \mathrm{Ra}_c$, heat is transported by conduction alone. When $\mathrm{Ra} \gg \mathrm{Ra}_c$, vigorous convection dominates. The marginal-stability curve, with its minimum at $\mathrm{Ra}_c$, is shown in {numref}`fig:marginal-stability`.
 
 ```{figure} figures/marginal_stability.avif
 :name: fig:marginal-stability
