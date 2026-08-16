@@ -54,11 +54,16 @@ def make_plot() -> Path:
     ax.axhline(13.8e9, color="black", lw=1.0, linestyle=":",
                label="Age of the universe (13.8 Gyr)")
 
+    labels = []
     for name, R in BODIES:
         ax.plot(R, (R ** 2) / KAPPA / SECONDS_PER_YR, "o",
                 color="#ff7f0e", markeredgecolor="black", markersize=8, zorder=5)
-        ax.annotate(name, (R, (R ** 2) / KAPPA / SECONDS_PER_YR),
-                    xytext=(8, -2), textcoords="offset points", fontsize=9)
+        labels.append((name, (R, (R ** 2) / KAPPA / SECONDS_PER_YR)))
+
+    import sys
+    sys.path.append("/Users/timlichtenberg/.gemini/skills/figlab")
+    import figlab
+    figlab.place_labels(ax, labels, fontsize=9.0)
 
     ax.set_xscale("log")
     ax.set_yscale("log")
@@ -70,7 +75,7 @@ def make_plot() -> Path:
     ax.legend(loc="upper left", frameon=False, fontsize=9)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, keep_png=True)
 
 
 def main() -> None:
