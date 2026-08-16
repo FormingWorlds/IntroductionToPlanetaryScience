@@ -236,7 +236,7 @@ A small boulder cools in days, consistent with everyday experience. A 100 km ast
 Conductive cooling timescale $\tau_{\mathrm{cond}}=L^2/\kappa$ as a function of body lengthscale, for $\kappa=10^{-6}$ m$^2$ s$^{-1}$ (silicate rock). Reference horizontal lines mark the ages of the Solar System (4.57 Gyr) and the universe (13.8 Gyr). Bodies plotted to the right of these lines (Moon, Mars, Earth) cannot have cooled appreciably by conduction alone, motivating the need for convection. Boulders cool in days; ~100 km asteroids cool in a few hundred Myr.
 ```
 
-A specific application of the heat-equation solution that we will return to repeatedly is the **half-space cooling model** for oceanic lithosphere ({numref}`fig:half-space-cooling`): a hot half-space with surface temperature held fixed cools by conduction, growing a thermal boundary layer whose thickness scales as $\sqrt{\kappa t}$.
+A specific application of the heat-equation solution that we will return to repeatedly is the **half-space cooling model** for oceanic lithosphere ({numref}`fig:half-space-cooling`). A "half-space" refers to a mathematical domain bounded by a single flat surface (here, the seafloor) that extends infinitely downward. In this model, a hot half-space with its surface temperature held fixed cools by conduction, growing a thermal boundary layer whose thickness scales as $\sqrt{\kappa t}$.
 
 ```{figure} figures/half_space_cooling.avif
 :name: fig:half-space-cooling
