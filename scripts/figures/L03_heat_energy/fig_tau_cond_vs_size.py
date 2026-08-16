@@ -55,7 +55,7 @@ def make_plot() -> Path:
                label="Age of the universe (13.8 Gyr)")
 
     offsets = {
-        "Chondrule": (25, -2),         # more to the right
+        "Chondrule": (25, 5),          # a bit higher
         "Asteroid (1 km)": (25, -5),   # as well
         "Moon": (-45, 5),              # to the left
         "Mars": (15, -5),              # right bottom, but higher to clear lines
