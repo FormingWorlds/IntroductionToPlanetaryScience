@@ -281,6 +281,44 @@ slope = m.L_FUS / (m.T_TP * m.DV_FUSION)
 chk("L06 water: melting slope (bar/K)", slope / 1e5, -135, 2e-2)
 
 # ════════════════════════════════════════════════════════════════════
+section("L07: surfaces")
+
+m = load("scripts/figures/L07_surfaces/fig_neukum_chronology.py")
+# Below ~3 Gyr the linear term carries the whole curve
+chk("L07 chronology: N(1) at T = 1 Gyr (km^-2)", float(m.n_of_t(1.0)), m.B_LIN, 1e-6)
+# The exponential term overtakes the linear one inside the labelled upturn
+_t = np.linspace(2.0, 4.5, 250001)
+_cross = float(_t[np.argmin(np.abs(m.A_EXP * (np.exp(m.LAMBDA * _t) - 1.0) - m.B_LIN * _t))])
+chk("L07 chronology: exponential-linear crossover (Gyr)", _cross, 3.57, 5e-3)
+# The read-off drawn on the figure must invert the plotted curve
+_t_read = m.age_from_density(m.READ_OFF_DENSITY)
+chk("L07 chronology: read-off round-trip (km^-2)",
+    float(m.n_of_t(_t_read)), m.READ_OFF_DENSITY, 1e-8)
+_md = (ROOT / "book/07_surfaces/surfaces.md").read_text(encoding="utf-8")
+chk_true("L07 chronology: caption age matches the curve",
+         f"about {_t_read:.1f} Gyr" in _md, f"curve gives {_t_read:.3f} Gyr")
+
+# Blackboard box: the crater scaling exponents follow from the dimensions
+# of D = C E^a rho^b g^c, solved as mass, time, and length balances
+_A = np.array([[1.0, 1.0, 0.0], [-2.0, 0.0, -2.0], [2.0, -3.0, 1.0]])
+_abc = np.linalg.solve(_A, np.array([0.0, 0.0, 1.0]))
+chk("L07 crater scaling: exponent of E", _abc[0], 0.25, 1e-12)
+chk("L07 crater scaling: exponent of rho", _abc[1], -0.25, 1e-12)
+chk("L07 crater scaling: exponent of g", _abc[2], -0.25, 1e-12)
+# Worked example: 1 km asteroid at 20 km/s onto the Moon
+_E = 0.5 * (4.0 / 3.0 * math.pi * 500.0**3 * 3000.0) * 2.0e4**2
+chk("L07 crater scaling: impact energy (J)", _E, 3.1416e20, 1e-4)
+chk_true("L07 crater scaling: notes round the energy to 3e20 J",
+         abs(_E - 3e20) / 3e20 < 0.1, f"{_E:.4e} J")
+# The diameter check starts from the rounded energy the notes print
+_D = (3e20 / (2500.0 * 1.62)) ** 0.25
+chk("L07 crater scaling: crater diameter (km)", _D / 1e3, 16.5, 5e-3)
+chk_true("L07 crater scaling: notes quote the computed diameter",
+         r"\approx 16.5 \text{ km}" in _md, f"computed {_D / 1e3:.2f} km")
+# D grows as L^(3/4) at fixed velocity and density, so Tycho needs ~9x
+chk("L07 crater scaling: Tycho impactor ratio", (85.0 / (_D / 1e3)) ** (4.0 / 3.0), 8.9, 1e-2)
+
+# ════════════════════════════════════════════════════════════════════
 section("L08: interiors")
 
 m = load("scripts/figures/L08_interiors/fig_convection_regimes.py")

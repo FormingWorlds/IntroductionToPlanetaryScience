@@ -125,10 +125,10 @@ This is the **crater scaling law** in the gravity regime {cite:p}`Holsapple1993`
 For our 1 km asteroid ($E \approx 3 \times 10^{20}$ J) impacting the Moon ($\rho \approx 2500$ kg m$^{-3}$ for the regolith, $g = 1.62$ m s$^{-2}$):
 
 $$
-D \sim \left(\frac{3 \times 10^{20}}{2500 \times 1.62}\right)^{1/4} = \left(7.4 \times 10^{16}\right)^{1/4} \approx 1.65 \times 10^{4} \text{ m} \approx 17 \text{ km}
+D \sim \left(\frac{3 \times 10^{20}}{2500 \times 1.62}\right)^{1/4} = \left(7.4 \times 10^{16}\right)^{1/4} \approx 1.65 \times 10^{4} \text{ m} \approx 16.5 \text{ km}
 $$
 
-This is consistent with the observed sizes of lunar craters formed by $\sim$1 km impactors. For comparison, the 85 km crater Tycho was formed by a much larger impactor ($\sim$8 km). The dimensionless prefactor $C$ in the full scaling law depends on target material properties and is of order unity for rocky surfaces.
+This is consistent with the observed sizes of lunar craters formed by $\sim$1 km impactors. The same law also fixes how crater size grows with impactor size: at fixed impact velocity and target density, $E \propto L^3$ for an impactor of diameter $L$, so $D \propto L^{3/4}$. Applied to the 85 km crater Tycho, this gives an impactor $(85/16.5)^{4/3} \approx 9$ times wider than our 1 km asteroid, so roughly 9 km across. Read that as an order of magnitude, not a measurement: the law describes the transient cavity in the gravity regime, whereas Tycho is a complex crater whose final rim was widened by collapse, and the dimensionless prefactor $C$ is not fixed by dimensional analysis (it depends on target material properties and is of order unity for rocky surfaces).
 
 The more complete **pi-scaling framework** of {cite:p}`Holsapple1993` parameterises the transition between the gravity regime and the strength regime (where material cohesion, not gravity, limits crater growth) and accounts for target porosity and impactor properties. The two regimes are illustrated in {numref}`fig:holsapple-piscaling`.
 ```
@@ -210,7 +210,7 @@ The lunar farside as imaged by NASA's Lunar Reconnaissance Orbiter, showing a he
 :width: 600px
 :align: center
 
-The lunar crater chronology of {cite:t}`Neukum2001`. The black curve gives the cumulative density of craters with $D \geq 1$ km expected on a surface of model age $T$ (in Gyr); red points mark Apollo and Luna sample sites where radiometric ages of returned basalts and breccias calibrate the curve. The function has two regimes: a roughly linear segment for $T \lesssim 3$ Gyr (steady impact flux) and a steep exponential upturn at $T \gtrsim 3.5$ Gyr that reflects the much higher impact rate during the early bombardment of the inner solar system. Surface ages on other bodies are estimated by counting craters in a chosen size bin and inverting this relation, with corrections for the local impact flux and gravity. Reproduced from {cite:p}`Neukum2001`.
+The lunar crater chronology of {cite:t}`Neukum2001`, plotted from the published coefficients $a = 5.44 \times 10^{-14}$ km$^{-2}$, $\lambda = 6.93$ Gyr$^{-1}$, and $b = 8.38 \times 10^{-4}$ km$^{-2}$ Gyr$^{-1}$. The black curve gives the cumulative density of craters with $D \geq 1$ km expected on a surface of model age $T$. The function has two regimes: a roughly linear segment for $T \lesssim 3$ Gyr, where the linear term $bT$ describes a steady impact flux, and a steep upturn beyond $T \approx 3.6$ Gyr, where the exponential term overtakes the linear one and reflects the much higher impact rate during the early bombardment of the inner solar system. The red construction shows how the relation is used in practice: a measured crater density of $10^{-2}$ km$^{-2}$ inverts to a surface age of about 3.7 Gyr. The shaded intervals mark where the calibration is weakest: no returned sample dates a lunar unit between about 1 and 3 Gyr, and none dates a unit older than 3.92 Gyr, so the curve is an interpolation over the first interval and an extrapolation beyond the second {cite:p}`Robbins2014`. Ages on other bodies follow from the same inversion, with corrections for the local impact flux and gravity.
 ```
 
 
@@ -297,7 +297,7 @@ Plate tectonics enables the **carbonate-silicate cycle** ({ref}`Lecture 6 <lectu
 :width: 600px
 :align: center
 
-Earth's major tectonic plates and their boundaries. **Divergent boundaries** (red lines) mark mid-ocean ridges where new crust is created; **convergent boundaries** (blue lines with triangles) mark subduction zones where one plate descends beneath another; **transform boundaries** (green lines) mark where plates slide past each other. Earth is the only known body with active plate tectonics; all other terrestrial planets and moons operate in the stagnant-lid regime. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+Earth's major tectonic plates, each drawn in its own colour, with the plate boundaries as dark outlines. The red arrows give the sense of relative motion at each boundary: arrows pointing away from one another mark **divergent boundaries** (mid-ocean ridges, where new crust is created), arrows pointing towards one another mark **convergent boundaries** (subduction zones, where one plate descends beneath another), and offset parallel arrows mark **transform boundaries** (where plates slide past each other). Earth is the only known body with active plate tectonics; all other terrestrial planets and moons operate in the stagnant-lid regime. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 ```
 
 ### Stagnant-lid convection
@@ -312,7 +312,7 @@ The stagnant-lid regime is the *default* outcome of mantle convection with stron
 
 **Venus** shows a puzzling tectonic style. The uniform crater density across the surface implies a mean age of $\sim$300–700 Myr, leading to the **episodic resurfacing hypothesis**: Venus may experience periodic catastrophic overturns where the stagnant lid founders and the entire surface is volcanically resurfaced in a geologically short interval. Between these episodes, the surface remains tectonically quiet. This idea remains debated; we will discuss Venus's geology in detail in {ref}`Lecture 9 <lecture09>`.
 
-**Mercury** has undergone significant **global contraction** as its large iron core cooled and solidified over time, shrinking the planet's radius by up to $\sim$7 km (with method-dependent estimates spanning $\sim$4–7 km) {cite:p}`Byrne2014`. This contraction compressed the crust, producing **lobate scarps** ({numref}`fig:mercury-scarp`), thrust faults up to several hundred kilometres long and 1–3 km high, discovered by Mariner 10 and mapped extensively by MESSENGER. We will discuss Mercury's surface in {ref}`Lecture 10 <lecture10>`.
+**Mercury** has undergone significant **global contraction** as its large iron core cooled and solidified over time ({ref}`Lecture 4 <lecture04>`), shrinking the planet's radius by up to $\sim$7 km (with method-dependent estimates spanning $\sim$4–7 km) {cite:p}`Byrne2014`. This contraction compressed the crust, producing **lobate scarps** ({numref}`fig:mercury-scarp`), thrust faults up to several hundred kilometres long and 1–3 km high, discovered by Mariner 10 and mapped extensively by MESSENGER. We will discuss Mercury's surface in {ref}`Lecture 10 <lecture10>`.
 
 The Tharsis-related rifting on Mars is recorded in Valles Marineris ({numref}`fig:valles-marineris`).
 
@@ -321,7 +321,7 @@ The Tharsis-related rifting on Mars is recorded in Valles Marineris ({numref}`fi
 :width: 400px
 :align: center
 
-A lobate scarp near Pourquoi-Pas crater on Mercury, imaged by the MESSENGER spacecraft. The scarp (running diagonally across the field of view) is the surface expression of a thrust fault formed during global contraction as Mercury's interior cooled and the radius shrank by $\sim$7 km. The scarp clearly cross-cuts and offsets pre-existing impact craters, demonstrating that the contraction continued long after the early bombardment. Credit: NASA/Johns Hopkins APL/Carnegie Institution of Washington, public domain.
+A lobate scarp near Pourquoi-Pas crater on Mercury, imaged by the MESSENGER spacecraft. The scarp (running diagonally across the field of view) is the surface expression of a thrust fault formed during global contraction as Mercury's interior cooled and the radius shrank by up to $\sim$7 km. The scarp clearly cross-cuts and offsets pre-existing impact craters, demonstrating that the contraction continued long after the early bombardment. Credit: NASA/Johns Hopkins APL/Carnegie Institution of Washington, public domain.
 ```
 
 ```{figure} figures/valles_marineris.avif
@@ -339,7 +339,7 @@ Erosion is the removal and transport of surface material by wind, water, ice, or
 
 ### Aeolian (wind) processes
 
-Wind-driven erosion and deposition require an atmosphere with sufficient density to mobilise surface particles. Active aeolian processes shape the surfaces of {cite:p}`Catling2017`:
+Wind-driven erosion and deposition require an atmosphere dense enough to mobilise surface particles, so the surface pressures compared in {ref}`Lecture 5 <lecture05>` set which bodies can have aeolian landforms at all. Active aeolian processes shape the surfaces of {cite:p}`Catling2017`:
 
 - **Mars:** Extensive dune fields in craters and polar regions. Global dust storms can loft particles to 30 km altitude. Sand dunes in Gale Crater show active migration observed by the Curiosity rover.
 - **Titan:** Vast equatorial dune fields composed of organic particles (tholins) produced by atmospheric photochemistry. The dunes are longitudinal, up to 150 m tall and hundreds of kilometres long.
@@ -466,7 +466,7 @@ Lunar crustal thickness derived from the GRAIL mission, shown for the nearside (
 :width: 650px
 :align: center
 
-Global cylindrical topographic map of Mars from the Mars Orbiter Laser Altimeter (MOLA) on Mars Global Surveyor {cite:p}`Smith2001`. Elevations span $\sim$21 km, from the summit of Olympus Mons (white, left) to the floor of the Hellas basin ($\sim$8 km below datum, deep blue, lower right). The Tharsis bulge and its four shield volcanoes dominate the western hemisphere; Valles Marineris stretches eastward across the equator. The $\sim$6 km elevation difference between the cratered southern highlands and the smooth northern lowlands (the **hemispheric dichotomy**) remains one of the major unsolved problems in Martian geology. Credit: NASA/JPL/GSFC/MOLA Science Team, public domain.
+Global cylindrical topographic map of Mars from the Mars Orbiter Laser Altimeter (MOLA) on Mars Global Surveyor {cite:p}`Smith2001`. Elevations span $\sim$30 km, from the summit of Olympus Mons ($\sim$21 km above datum, white, left) to the floor of the Hellas basin ($\sim$8 km below datum, deep blue, lower right). The Tharsis bulge and its four shield volcanoes dominate the western hemisphere; Valles Marineris stretches eastward across the equator. The $\sim$6 km elevation difference between the cratered southern highlands and the smooth northern lowlands (the **hemispheric dichotomy**) remains one of the major unsolved problems in Martian geology. Credit: NASA/JPL/GSFC/MOLA Science Team, public domain.
 ```
 
 
@@ -476,7 +476,7 @@ On airless bodies (the Moon, Mercury, asteroids), the surface is not bedrock but
 
 ### Regolith
 
-The lunar regolith is a layer of unconsolidated debris (rock fragments, mineral grains, and glass beads) produced by the cumulative effect of impacts at all scales, from micrometeorite bombardment to basin-forming events. This process is called **impact gardening**: each impact excavates material, mixes the surface layer, and breaks rocks into progressively finer particles. The lunar regolith is 5–15 m thick in the maria and potentially deeper in the ancient highlands ({numref}`fig:lunar-regolith`).
+The lunar regolith is a layer of unconsolidated debris (rock fragments, mineral grains, and glass beads) produced by the cumulative effect of impacts at all scales, from micrometeorite bombardment to basin-forming events. This process is called **impact gardening**: each impact excavates material, mixes the surface layer, and breaks rocks into progressively finer particles. Regolith depth therefore tracks how long a surface has been exposed. A global survey of crater morphologies in Lunar Reconnaissance Orbiter images gives median depths of typically 2–4 m on the young mare basalts and 6–8 m on the farside and non-mare nearside, so the ancient highlands hold roughly twice as much regolith as the maria {cite:p}`Bart2011` ({numref}`fig:lunar-regolith`).
 
 The Hayabusa2 (asteroid Ryugu) and OSIRIS-REx (asteroid Bennu) sample return missions revealed that even small ($\sim$500 m) rubble-pile asteroids have regolith, a surprising finding since these bodies have negligible gravity and were expected to lose ejecta to space rather than retain it.
 
@@ -554,7 +554,7 @@ Dramatic plumes of water vapour and ice particles erupting from the south polar 
 
 NASA's Perseverance rover, operating in Jezero crater since 2021, has confirmed that the crater floor is composed of igneous rock (olivine-bearing cumulates) that was subsequently altered by liquid water {cite:p}`Farley2022`. The rover has cached over 20 sample tubes for eventual return to Earth by the Mars Sample Return campaign, a joint NASA/ESA effort that, if successful, would provide the first laboratory analysis of Martian rocks and address questions about past habitability and possible biosignatures ({ref}`Lecture 10 <lecture10>`).
 
-The **DART** (Double Asteroid Redirection Test) mission in 2022 demonstrated the first successful planetary defence experiment: a kinetic impactor deliberately crashed into the asteroid moonlet Dimorphos, shortening its orbital period around the larger asteroid Didymos by $33.0 \pm 1.0$ minutes {cite:p}`Thomas2023`. Companion analyses derived a momentum enhancement factor $\beta \sim 3.6$ from ejecta carrying away momentum well beyond the impactor's own {cite:p}`Cheng2023` and reconstructed the impact site from pre-impact imagery to constrain the mechanical properties of Dimorphos's rubble-pile surface {cite:p}`Daly2023`. Together these results confirmed that kinetic impact is a viable deflection strategy for hazardous near-Earth asteroids.
+The **DART** (Double Asteroid Redirection Test) mission in 2022 demonstrated the first successful planetary defence experiment: a kinetic impactor deliberately crashed into the asteroid moonlet Dimorphos, shortening its orbital period around the larger asteroid Didymos by $33.0 \pm 1.0$ minutes {cite:p}`Thomas2023`. Companion analyses derived a momentum enhancement factor $\beta \sim 3.6$ from ejecta carrying away momentum well beyond the impactor's own {cite:p}`Cheng2023` and reconstructed the impact site from pre-impact imagery to constrain the mechanical properties of Dimorphos's rubble-pile surface {cite:p}`Daly2023`. Together these results confirmed that kinetic impact is a viable deflection strategy for hazardous near-Earth asteroids, the subject taken up in full in {ref}`Lecture 12 <lecture12>`.
 
 Ongoing monitoring of Io by the Juno extended mission and ground-based adaptive optics has revealed new details of Io's volcanic activity, including the discovery of previously unknown eruption sites ({numref}`fig:io-nusku`) and constraints on the spatial distribution of heat flow. For Venus, planned radar mapping missions (VERITAS, EnVision) in the early 2030s will provide the first high-resolution surface data since Magellan, enabling tests of whether Venus has experienced recent or ongoing volcanic activity ({ref}`Lecture 9 <lecture09>`).
 
