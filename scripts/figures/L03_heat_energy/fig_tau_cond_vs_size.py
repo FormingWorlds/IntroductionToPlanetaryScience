@@ -63,7 +63,7 @@ def make_plot() -> Path:
     import sys
     sys.path.append("/Users/timlichtenberg/.gemini/skills/figlab")
     import figlab
-    figlab.place_labels(ax, labels, fontsize=9.0)
+    figlab.place_labels(ax, labels, fontsize=9.0, min_leader_dist=15, max_iter=20, overlap_threshold=0.1, halo=True)
 
     ax.set_xscale("log")
     ax.set_yscale("log")
