@@ -54,16 +54,27 @@ def make_plot() -> Path:
     ax.axhline(13.8e9, color="black", lw=1.0, linestyle=":",
                label="Age of the universe (13.8 Gyr)")
 
-    labels = []
-    for name, R in BODIES:
-        ax.plot(R, (R ** 2) / KAPPA / SECONDS_PER_YR, "o",
-                color="#ff7f0e", markeredgecolor="black", markersize=8, zorder=5)
-        labels.append((name, (R, (R ** 2) / KAPPA / SECONDS_PER_YR)))
+    offsets = {
+        "Chondrule": (25, -2),         # more to the right
+        "Asteroid (1 km)": (25, -5),   # as well
+        "Moon": (-45, 5),              # to the left
+        "Mars": (15, -15),             # right bottom
+        "Earth": (10, 15),             # right top
+    }
 
-    import sys
-    sys.path.append("/Users/timlichtenberg/.gemini/skills/figlab")
-    import figlab
-    figlab.place_labels(ax, labels, fontsize=9.0, min_leader_dist=15, max_iter=20, overlap_threshold=0.1, halo=True)
+    for name, R in BODIES:
+        y = (R ** 2) / KAPPA / SECONDS_PER_YR
+        ax.plot(R, y, "o", color="#ff7f0e", markeredgecolor="black", markersize=8, zorder=5)
+        
+        ha = "left" if offsets[name][0] > 0 else "right"
+        va = "bottom" if offsets[name][1] > 0 else "top"
+        
+        ax.annotate(
+            name, (R, y),
+            xytext=offsets[name], textcoords="offset points",
+            fontsize=9, ha=ha, va=va,
+            arrowprops=dict(arrowstyle="-", color="0.4", lw=0.6, shrinkA=0, shrinkB=4)
+        )
 
     ax.set_xscale("log")
     ax.set_yscale("log")
