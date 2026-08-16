@@ -42,7 +42,7 @@ def make_plot() -> Path:
 
     # Free-slip stability curve (analytic) shifted to land on the
     # rigid-rigid critical values for visualisation.
-    k = np.linspace(0.4, 8.0, 400)
+    k = np.linspace(0.05, 8.0, 400)
     pi = np.pi
     free_slip = (k ** 2 + pi ** 2) ** 3 / k ** 2
     free_slip_min = 27.0 * pi ** 4 / 4.0  # value at k = pi/sqrt(2): 657.51

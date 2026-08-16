@@ -282,7 +282,9 @@ $$
 \mathrm{Ra}_c \approx 1708
 $$ (eq:critical-rayleigh)
 
-(the exact value depends on the boundary conditions; $\mathrm{Ra}_c = 657.5$ for free-slip boundaries, where fluid slides parallel to the surface without friction, and $\mathrm{Ra}_c = 1707.8$ for rigid boundaries, where fluid sticks to the wall with zero velocity {cite:p}`Turcotte2002`). When $\mathrm{Ra} < \mathrm{Ra}_c$, heat is transported by conduction alone. When $\mathrm{Ra} \gg \mathrm{Ra}_c$, vigorous convection dominates. The marginal-stability curve, with its minimum at $\mathrm{Ra}_c$, is shown in {numref}`fig:marginal-stability`.
+(the exact value depends on the boundary conditions; $\mathrm{Ra}_c = 657.5$ for free-slip boundaries, where fluid slides parallel to the surface without friction, and $\mathrm{Ra}_c = 1707.8$ for rigid boundaries, where fluid sticks to the wall with zero velocity {cite:p}`Turcotte2002`). When $\mathrm{Ra} < \mathrm{Ra}_c$, heat is transported by conduction alone. When $\mathrm{Ra} \gg \mathrm{Ra}_c$, vigorous convection dominates.
+
+Whether the fluid is stable or convecting depends on both the Rayleigh number and the horizontal size of the circulation. This size is expressed as a **non-dimensional horizontal wavenumber** $k = 2\pi d/\lambda$, where $\lambda$ is the horizontal wavelength of a convection cell and $d$ is the fluid depth. The threshold for convection across different wavenumbers forms a **marginal-stability curve** ({numref}`fig:marginal-stability`). The fluid first becomes unstable at the absolute minimum of this curve, which defines both the critical Rayleigh number $\mathrm{Ra}_c$ and the preferred cell size $k_c$.
 
 ```{figure} figures/marginal_stability.avif
 :name: fig:marginal-stability
