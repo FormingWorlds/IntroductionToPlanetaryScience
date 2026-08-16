@@ -58,7 +58,7 @@ def make_plot() -> Path:
         "Chondrule": (25, -2),         # more to the right
         "Asteroid (1 km)": (25, -5),   # as well
         "Moon": (-45, 5),              # to the left
-        "Mars": (15, -15),             # right bottom
+        "Mars": (15, -5),              # right bottom, but higher to clear lines
         "Earth": (10, 15),             # right top
     }
 
