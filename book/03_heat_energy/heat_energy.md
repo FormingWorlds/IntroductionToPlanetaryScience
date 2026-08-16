@@ -345,7 +345,7 @@ A convecting planetary interior does not have a uniform temperature gradient. In
 
 2. **Well-mixed convecting interior**: the bulk of the mantle, where temperatures vary only slowly with depth (following an **adiabatic gradient**). Vigorous convective stirring keeps this region nearly isothermal on large scales.
 
-3. **Hot thermal boundary layer at the base**: a thin layer above the core–mantle boundary where temperature rises steeply into the hot core. In Earth, this corresponds to the **D'' layer** (the lowermost ~200 km of the mantle), where the temperature increases from the mantle adiabat (~2500 K) to the core–mantle boundary temperature (~4000 K).
+3. **Hot thermal boundary layer at the base**: a thin layer above the core–mantle boundary where temperature rises steeply into the hot core. In Earth, this corresponds to the **D'' layer** (pronounced "D double prime", the lowermost ~200 km of the mantle), where the temperature increases from the mantle adiabat (~2500 K) to the core–mantle boundary temperature (~4000 K).
 
 The temperature drop across the whole mantle is accommodated almost entirely in these two thin boundary layers, while the interior between them is nearly isothermal ({numref}`fig:mantle-adiabat`).
 
