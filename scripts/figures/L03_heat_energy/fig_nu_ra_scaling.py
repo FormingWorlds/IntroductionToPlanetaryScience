@@ -48,11 +48,16 @@ def make_plot() -> Path:
                label=r"Earth's mantle (Ra $\sim 10^7$-$10^8$)")
 
     # Asymptotic slope label
-    ax.text(1e9, (1e9 / RA_C) ** (1.0 / 3.0) * 1.4,
-            r"$\mathrm{Nu} \propto \mathrm{Ra}^{1/3}$",
-            fontsize=11, color="#1f77b4")
-    ax.text(20, 0.7, r"$\mathrm{Nu} = 1$ (conduction)",
-            fontsize=10, color="#1f77b4")
+    ax.annotate(r"$\mathrm{Nu} \propto \mathrm{Ra}^{1/3}$",
+                xy=(3e9, (3e9 / RA_C) ** (1.0 / 3.0)),
+                xytext=(0, 15), textcoords="offset points",
+                fontsize=11, color="#1f77b4", ha="center")
+    
+    # Conduction label
+    ax.annotate(r"$\mathrm{Nu} = 1$ (conduction)",
+                xy=(3e2, 1.0),
+                xytext=(0, 15), textcoords="offset points",
+                fontsize=10, color="#1f77b4", ha="center")
 
     ax.set_xscale("log")
     ax.set_yscale("log")
