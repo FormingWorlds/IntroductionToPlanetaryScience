@@ -653,7 +653,7 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | # | Lecture | Status | Priority |
 |---|--------|--------|----------|
 | 1 | Introduction & history | **LOCKED 2026-08-08** (95-page deck: course-organisation block, Pale Blue Dot title page, SDO + Webb dividers, full schedule; signed off and deployed) | High |
-| 2 | Planet formation & orbital dynamics | Draft complete | High |
+| 2 | Planet formation & orbital dynamics | **LOCKED 2026-08-16** | High |
 | 3 | Planetary heat & energy transport | Draft complete | High |
 | 4 | Chemical differentiation & magnetospheres | Draft complete | High |
 | 5 | Atmospheres I | Draft complete | High |
@@ -694,7 +694,7 @@ Each slide deck requires:
 
 | # | Worksheet | Follows Lectures | Status |
 |---|----------|-----------------|--------|
-| 1 | Orbits & Formation | 1–2 | Draft complete |
+| 1 | Orbits & Formation | 1–2 | **LOCKED 2026-08-16** |
 | 2 | Thermal Evolution & Differentiation | 3–4 | Not started |
 | 3 | Atmospheres | 5–6 | Not started |
 | 4 | Surfaces & Interiors | 7–8 | Not started |
@@ -712,7 +712,7 @@ Both PDFs are generated from a single content file: `worksheetNN_content.tex` ho
 
 | # | Tutorial | Follows Lectures | Status |
 |---|----------|-----------------|--------|
-| 1 | Orbits & Formation | 1–2 | Draft complete |
+| 1 | Orbits & Formation | 1–2 | **LOCKED 2026-08-16** |
 | 2 | Thermal Evolution & Differentiation | 3–4 | Not started |
 | 3 | Atmospheres | 5–6 | Not started |
 | 4 | Surfaces & Interiors | 7–8 | Not started |
