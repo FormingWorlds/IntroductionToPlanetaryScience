@@ -25,7 +25,7 @@
 \end{frame}
 
 % ── Learning objectives ─────────────────────────────────────
-\begin{frame}{Learning Objectives}
+\begin{frame}{Learning objectives}
   By the end of this lecture, you will be able to:
   \vskip8pt
   \begin{itemize}
@@ -54,12 +54,12 @@
 
 
 % ════════════════════════════════════════════════════════════
-\sectionimage{surface_processes_montage}{Mars surface, Curiosity rover. Credit: NASA/JPL-Caltech/MSSS}
-\section{Surface Processes}
+\sectionimage{surface_processes_montage}{Valles Marineris hemisphere of Mars, Viking Orbiter mosaic. Credit: NASA/JPL/USGS}
+\section{Surface processes}
 % ════════════════════════════════════════════════════════════
 
 % ── Endogenic vs exogenic ─────────────────────────────────
-\begin{frame}{Endogenic vs.\ Exogenic Processes}
+\begin{frame}{Endogenic vs.\ exogenic processes}
   A planet's surface is its geological record: billions of years of competing processes that create, modify, and destroy landforms.
   \vskip8pt
   \begin{columns}[T]
@@ -84,7 +84,7 @@
 \end{frame}
 
 % ── Dominant processes table ──────────────────────────────
-\begin{frame}{Dominant Surface Processes by Body}
+\begin{frame}{Dominant surface process by body}
   \centering
   \small
   \begin{tabular}{l c c}
@@ -105,9 +105,10 @@
 \end{frame}
 
 % ── Surface processes montage ────────────────────────────
-\begin{frame}{Reading the Surface Record}
+\begin{frame}{Reading the surface record}
   \begin{columns}[c]
     \column{0.50\textwidth}
+    \small
     \centering
     \includegraphics[width=\textwidth]{surface_processes_montage}
     \source{NASA/JPL-Caltech/MSSS}
@@ -125,11 +126,11 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{crater_morphology}{Lunar crater morphology. Credit: NASA/GSFC/ASU}
-\section{Impact Cratering}
+\section{Impact cratering}
 % ════════════════════════════════════════════════════════════
 
 % ── Universality ──────────────────────────────────────────
-\begin{frame}{The Most Universal Geological Process}
+\begin{frame}{The most universal geological process}
   \begin{itemize}
     \item \textbf{Every} solid body in the solar system bears impact craters
     \item On bodies without atmospheres or geology (Moon, Mercury), craters survive billions of years
@@ -147,7 +148,7 @@
 \end{frame}
 
 % ── Stage 1: Contact and compression ─────────────────────
-\begin{frame}{Stage 1: Contact and Compression}
+\begin{frame}{Stage 1: contact and compression}
   \begin{itemize}
     \item Projectile strikes at 10--70~km\,s$^{-1}$
     \item Shock wave propagates into both target and impactor
@@ -161,7 +162,7 @@
 \end{frame}
 
 % ── Worked energy example ─────────────────────────────────
-\begin{frame}{Example: 1~km Asteroid Impact}
+\begin{frame}{Example: a 1~km asteroid impact}
   Rocky asteroid: $\rho \approx 3000$~kg\,m$^{-3}$, diameter = 1~km
   $$m = \frac{4}{3}\pi r^3 \rho \approx \frac{4}{3}\pi (500)^3 \times 3000 \approx 1.6 \times 10^{12}\;\text{kg}$$
   \vskip4pt
@@ -172,7 +173,7 @@
 \end{frame}
 
 % ── Stages 2 and 3 ───────────────────────────────────────
-\begin{frame}{Stages 2 \& 3: Excavation and Modification}
+\begin{frame}{Stages 2 \& 3: excavation and modification}
   \textbf{Excavation:}
   \begin{itemize}
     \item Shock wave expands hemispherically outward
@@ -191,12 +192,12 @@
 
 
 % ════════════════════════════════════════════════════════════
-\sectionimage{crater_morphology}{Lunar surface. Credit: NASA/GSFC/ASU}
-\section{Blackboard Derivation: Crater Scaling Law}
+\sectionimage{mercury_caloris_basin}{Caloris basin, Mercury. Credit: NASA/Johns Hopkins APL/Carnegie Institution of Washington}
+\section{Blackboard derivation: the crater scaling law}
 % ════════════════════════════════════════════════════════════
 
 % ── Setup ─────────────────────────────────────────────────
-\begin{frame}{Setup: Crater Size from Dimensional Analysis}
+\begin{frame}{Setup: crater size from dimensional analysis}
   \textbf{Goal:} How does crater diameter $D$ depend on impact energy $E$, target density $\rho$, and surface gravity $g$?
   \vskip10pt
   In the \textbf{gravity regime} (craters $\gtrsim$100~m, where gravity limits size):
@@ -213,7 +214,7 @@
 \end{frame}
 
 % ── Dimensional analysis ──────────────────────────────────
-\begin{frame}{Solving for the Exponents}
+\begin{frame}{Solving for the exponents}
   Require $[E^a \rho^b g^c] = L$:
   \vskip6pt
   \begin{tabular}{l l}
@@ -224,14 +225,13 @@
   \vskip8pt
   Substituting $b = -a$ and $c = -a$:
   $$2a + 3a - a = 1 \implies 4a = 1 \implies a = \frac{1}{4}$$
-  \vskip6pt
+  \vskip2pt
   Therefore $a = 1/4$, $b = -1/4$, $c = -1/4$:
-  \vskip6pt
   \keyresult{$$\boxed{D \sim \left(\frac{E}{\rho g}\right)^{1/4}}$$}
 \end{frame}
 
 % ── Interpretation ────────────────────────────────────────
-\begin{frame}{Interpretation of the Scaling Law}
+\begin{frame}{Interpretation of the scaling law}
   \begin{itemize}
     \item $D$ scales as the \textbf{fourth root} of energy
     \item Doubling the energy increases $D$ by only $2^{1/4} \approx 1.19$ (19\%)
@@ -239,13 +239,40 @@
   \end{itemize}
   \vskip6pt
   \textbf{Dimensional check:}
-  $$\left[\frac{E}{\rho g}\right] = \frac{M L^2 T^{-2}}{M L^{-3} \cdot L T^{-2}} = L^4 \quad \Rightarrow \quad [D] = L \;\checkmark$$
+  $$\left[\frac{E}{\rho g}\right] = \frac{M L^2 T^{-2}}{M L^{-3} \cdot L T^{-2}} = L^4 \quad \Rightarrow \quad [D] = L$$
   \vskip6pt
   The more complete \textbf{pi-scaling framework} (Holsapple \& Schmidt, 1993) parameterises the transition between the gravity and strength regimes.
 \end{frame}
 
+% ── Strength vs gravity regime ────────────────────────────
+\begin{frame}{Where the fourth-root law applies}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{holsapple1993_strength_gravity_regimes}
+    \source{Holsapple (1993), Fig.~3}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    Cratering efficiency $\pi_V = \rho V/m$ against gravity-scaled size $\pi_2 = ga/U^2$:
+    \begin{itemize}
+      \item \textbf{Strength regime} (left): target cohesion limits growth, so $\pi_V$ depends on impact velocity and the three curves separate
+      \item \textbf{Gravity regime} (right): gravity limits growth, the curves converge on one law, $\pi_V \propto \pi_2^{-\alpha}$
+      \item Laboratory impacts sit on the left, planetary craters on the right
+    \end{itemize}
+    \vskip6pt
+    \keyresult{Our $D \sim (E/\rho g)^{1/4}$ is the gravity-regime limit. Below $\sim$100~m on the Moon, strength takes over and the law fails.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{holsapple1993_strength_gravity_regimes}}\\
+  {\footnotesize The two cratering regimes for a target with strength, at impact velocities $U = 2.5$, 10 and 40~km\,s$^{-1}$. Reproduced from Holsapple (1993), Fig.~3.}
+\end{frame}
+
 % ── Worked example: Moon ──────────────────────────────────
-\begin{frame}{Worked Example: 1~km Asteroid on the Moon}
+\begin{frame}{Worked example: a 1~km asteroid on the Moon}
   \centering
   \begin{tabular}{l c r}
     \toprule
@@ -266,15 +293,15 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{crater_counting}{Lunar farside. Credit: NASA/GSFC/ASU}
-\section{Crater Morphology \& Chronology}
+\section{Crater morphology and chronology}
 % ════════════════════════════════════════════════════════════
 
 % ── Morphological classes ─────────────────────────────────
-\begin{frame}{Crater Morphology: Three Classes}
+\begin{frame}{Crater morphology: three classes}
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
-    \includegraphics[height=0.60\textheight]{crater_morphology}
+    \includegraphics[width=\linewidth,height=0.60\textheight,keepaspectratio]{crater_morphology}
     \source{NASA/GSFC/ASU}
 
     \column{0.52\textwidth}
@@ -295,8 +322,35 @@
   \end{columns}
 \end{frame}
 
+% ── Caloris basin ─────────────────────────────────────────
+\begin{frame}{Multi-ring basins: Caloris on Mercury}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{mercury_caloris_basin}
+    \source{NASA/Johns Hopkins APL/Carnegie Institution of Washington}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    Caloris is $\sim$1550~km across, one of the largest and best preserved multi-ring basins:
+    \begin{itemize}
+      \item Orange interior plains are smooth volcanic deposits emplaced \emph{after} the impact
+      \item The surrounding annulus holds the ejecta and the concentric rings
+      \item Chaotic ``weird terrain'' sits at the basin's antipode, focused there by the seismic shock of the same event
+    \end{itemize}
+    \vskip6pt
+    \keyresult{A basin this size is not a scaled-up crater: the ring structure and the antipodal terrain are signatures only the largest impacts produce.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{mercury_caloris_basin}}\\
+  {\footnotesize The Caloris basin on Mercury in enhanced colour, $\sim$1550~km in diameter. Credit: NASA/Johns Hopkins APL/Carnegie Institution of Washington.}
+\end{frame}
+
 % ── Transition diameter ───────────────────────────────────
-\begin{frame}{Transition Diameter}
+\begin{frame}{Transition diameter}
   The simple-to-complex transition scales with surface gravity:
   $$D_t \approx D_{t,\mathrm{Moon}} \cdot \frac{g_{\mathrm{Moon}}}{g}$$
   \vskip6pt
@@ -316,7 +370,7 @@
 \end{frame}
 
 % ── Size-frequency distribution ──────────────────────────
-\begin{frame}{Crater Size-Frequency Distribution}
+\begin{frame}{Crater size-frequency distribution}
   The number of craters larger than a given diameter $D$ follows an approximate power law:
   \vskip6pt
   \keyresult{$$N(>D) \propto D^{-b}, \quad b \approx 2\text{--}3$$}
@@ -333,7 +387,7 @@
 \end{frame}
 
 % ── Crater counting principle ─────────────────────────────
-\begin{frame}{Crater Counting: Principle}
+\begin{frame}{Crater counting: the principle}
   \textbf{Key idea:} Older surfaces have had more time to accumulate craters.
   \vskip8pt
   The \textbf{crater size-frequency distribution (SFD)} follows a power law:
@@ -350,11 +404,11 @@
 \end{frame}
 
 % ── Lunar calibration ─────────────────────────────────────
-\begin{frame}{The Lunar Chronology}
+\begin{frame}{The lunar chronology}
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
-    \includegraphics[height=0.60\textheight]{crater_counting}
+    \includegraphics[width=\linewidth,height=0.60\textheight,keepaspectratio]{crater_counting}
     \source{NASA/GSFC/ASU}
 
     \column{0.52\textwidth}
@@ -375,8 +429,35 @@
   \end{columns}
 \end{frame}
 
+% ── The chronology function ───────────────────────────────
+\begin{frame}{The chronology function}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{neukum_chronology}
+    \source{Course figure, after Neukum, Ivanov and Hartmann (2001)}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    $$N(1) = a\left[e^{\lambda T} - 1\right] + b\,T$$
+    \begin{itemize}
+      \item Linear term $bT$: the steady impact flux of the last $\sim$3~Gyr
+      \item Exponential term: the early bombardment, which overtakes the linear term near 3.6~Gyr
+      \item Read it backwards: a measured $N(1) = 10^{-2}$~km$^{-2}$ gives a surface age of $\sim$3.7~Gyr
+    \end{itemize}
+    \vskip6pt
+    \keyresult{The shaded bands hold no dated sample: 1--3~Ga and older than 3.92~Ga. There the curve is interpolation and extrapolation, not calibration.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{neukum_chronology}}\\
+  {\footnotesize The lunar chronology of Neukum, Ivanov and Hartmann (2001), with the intervals that no returned sample constrains. Course figure.}
+\end{frame}
+
 % ── Key results from crater chronology ────────────────────
-\begin{frame}{Key Results from Crater Chronology}
+\begin{frame}{Key results from crater chronology}
   \begin{itemize}
     \item \textbf{Late Heavy Bombardment} ($\sim$3.9~Ga): spike in impact rate recorded on the Moon
     \vskip4pt
@@ -403,7 +484,7 @@
 % ════════════════════════════════════════════════════════════
 
 % ── Effusive vs explosive ─────────────────────────────────
-\begin{frame}{Effusive vs.\ Explosive Volcanism}
+\begin{frame}{Effusive vs.\ explosive volcanism}
   The key variable is \textbf{magma viscosity}, controlled by $\mathrm{SiO_2}$ content:
   \vskip8pt
   \begin{columns}[T]
@@ -432,7 +513,7 @@
 \end{frame}
 
 % ── Olympus Mons ──────────────────────────────────────────
-\begin{frame}{Olympus Mons: Largest Volcano in the Solar System}
+\begin{frame}{Olympus Mons: the largest volcano in the solar system}
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
@@ -452,8 +533,37 @@
   \end{columns}
 \end{frame}
 
+% ── Olympus Mons scale comparison ─────────────────────────
+\begin{frame}{How big is Olympus Mons?}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{olympus_mons_size_comparison}
+    \source{Wikimedia Commons, public domain}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    Cross-sections at a common vertical scale:
+    \begin{itemize}
+      \item Olympus Mons: $\sim$21.2~km above the Mars datum, $\sim$600~km base
+      \item Mauna Kea: $\sim$10.2~km measured from the ocean floor
+      \item Everest: $\sim$8.85~km above sea level (not a volcano, shown for scale)
+    \end{itemize}
+    \vskip6pt
+    On Earth, plate motion carries a hotspot volcano away from its magma source within a few Myr, so no single edifice keeps growing.
+    \vskip6pt
+    \keyresult{Mars has no plate motion, so one plume feeds one edifice for billions of years. The size difference is a tectonic result, not a magma-supply one.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{olympus_mons_size_comparison}}\\
+  {\footnotesize Olympus Mons, Mauna Kea and Mount Everest at a common vertical scale (exaggerated for clarity). Credit: Wikimedia Commons, public domain.}
+\end{frame}
+
 % ── Lunar maria ───────────────────────────────────────────
-\begin{frame}{Lunar Maria: Flood Basalts}
+\begin{frame}{Lunar maria: flood basalts}
   \begin{itemize}
     \item Vast basalt plains filling ancient impact basins on the nearside
     \item Erupted between 3.9 and 3.1~Ga (radiometric ages from Apollo samples)
@@ -466,11 +576,11 @@
 \end{frame}
 
 % ── Venus and Io volcanism ────────────────────────────────
-\begin{frame}{Venus \& Io: Active Volcanic Worlds}
+\begin{frame}{Venus and Io: active volcanic worlds}
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
-    \includegraphics[height=0.55\textheight]{io_volcanism}
+    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{io_volcanism}
     \source{NASA/JPL-Caltech}
 
     \column{0.52\textwidth}
@@ -491,10 +601,37 @@
   \end{columns}
 \end{frame}
 
-% ── Volcanism comparison table ────────────────────────────
-\begin{frame}{Volcanism Across the Solar System}
+% ── Venus from Magellan ───────────────────────────────────
+\begin{frame}{Venus under the clouds}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{venus_magellan}
+    \source{NASA/JPL}
+
+    \column{0.50\textwidth}
+    \small
+    Magellan (1990--1994) mapped 98\% of the surface at $\sim$100~m resolution, through a permanent cloud deck:
+    \begin{itemize}
+      \item More than 1600 volcanic centres
+      \item Lava plains over $\sim$80\% of the surface
+      \item A crater population so uniform it gives one mean surface age of 300--700~Myr
+    \end{itemize}
+    \vskip6pt
+    \keyresult{Radar is the only way to see this surface at all. Everything we know of Venus geology rests on one mission, which is why VERITAS and EnVision matter.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
   \centering
-  \small
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{venus_magellan}}\\
+  {\footnotesize Hemispheric view of Venus from Magellan radar, coloured from Venera lander measurements. Credit: NASA/JPL.}
+\end{frame}
+
+% ── Volcanism comparison table ────────────────────────────
+\begin{frame}{Volcanism across the solar system}
+  \centering
+  \footnotesize
   \begin{tabular}{l l l l}
     \toprule
     \textbf{Body} & \textbf{Style} & \textbf{Driving mechanism} & \textbf{Examples} \\
@@ -510,12 +647,12 @@
 
 
 % ════════════════════════════════════════════════════════════
-\sectionimage{valles_marineris}{Valles Marineris, Mars. Credit: NASA/JPL/USGS}
+\sectionimage{plate_tectonics}{Earth's plate boundaries. Credit: Wikimedia Commons, CC BY-SA 3.0}
 \section{Tectonics}
 % ════════════════════════════════════════════════════════════
 
 % ── Plate tectonics ───────────────────────────────────────
-\begin{frame}{Plate Tectonics: Earth's Unique Regime}
+\begin{frame}{Plate tectonics: Earth's unique regime}
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
@@ -537,7 +674,7 @@
 \end{frame}
 
 % ── Stagnant lid ──────────────────────────────────────────
-\begin{frame}{Stagnant-Lid Convection}
+\begin{frame}{Stagnant-lid convection}
   \begin{itemize}
     \item All other terrestrial bodies: \textbf{single rigid lithospheric lid}
     \item Mantle convects beneath, but lid does not participate
@@ -578,17 +715,44 @@
   \end{columns}
 \end{frame}
 
-% ── Mars topography ───────────────────────────────────────
-\begin{frame}{Mars Topography: The Hemispheric Dichotomy}
+% ── Valles Marineris ──────────────────────────────────────
+\begin{frame}{Valles Marineris}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{valles_marineris}
+    \source{NASA/JPL/USGS}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    The largest canyon system in the solar system:
+    \begin{itemize}
+      \item $\sim$4000~km long, up to 7~km deep, 200~km wide
+      \item Formed by extensional rifting tied to the Tharsis bulge to the west
+      \item Widened afterwards by mass wasting and possibly by water
+    \end{itemize}
+    \vskip6pt
+    \keyresult{Mars has no plate boundaries, yet it has the solar system's largest rift. Loading by one volcanic province did what plate divergence does on Earth.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
   \centering
-  \includegraphics[height=0.55\textheight]{mars_topography}
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{valles_marineris}}\\
+  {\footnotesize Valles Marineris in a Viking Orbiter mosaic: Noctis Labyrinthus on the left, then the Melas, Candor and Coprates chasmata, and the chaotic terrain feeding Chryse Planitia on the right. Credit: NASA/JPL/USGS.}
+\end{frame}
+
+% ── Mars topography ───────────────────────────────────────
+\begin{frame}{Mars topography: the hemispheric dichotomy}
+  \centering
+  \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{mars_topography}
   \source{NASA/JPL/GSFC (MOLA)}
   \vskip4pt
   {\small $\sim$6~km elevation difference between southern highlands and northern lowlands.\\Tharsis bulge with 4 giant volcanoes; Hellas basin ($-$8.2~km); Valles Marineris at equator.}
 \end{frame}
 
 % ── Venus and Mercury tectonics ───────────────────────────
-\begin{frame}{Venus \& Mercury: Contrasting Tectonic Styles}
+\begin{frame}{Venus and Mercury: contrasting tectonic styles}
   \textbf{Venus, episodic resurfacing:}
   \begin{itemize}
     \item Uniform crater density $\rightarrow$ mean age $\sim$300--700~Myr
@@ -607,13 +771,40 @@
 \end{frame}
 
 
+% ── Mercury lobate scarp ──────────────────────────────────
+\begin{frame}{Mercury: a planet that shrank}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{mercury_lobate_scarp}
+    \source{NASA/Johns Hopkins APL/Carnegie Institution of Washington}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    A lobate scarp near Pourquoi-Pas crater, the surface expression of a thrust fault:
+    \begin{itemize}
+      \item Mercury's large iron core cooled and solidified, shrinking the radius by up to $\sim$7~km
+      \item The crust took up that contraction along thrust faults hundreds of kilometres long and 1--3~km high
+      \item Mariner~10 found them; MESSENGER mapped them globally
+    \end{itemize}
+    \vskip6pt
+    \keyresult{The scarp cuts across older craters, so the contraction continued long after the early bombardment. A cooling interior keeps deforming a stagnant lid.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{mercury_lobate_scarp}}\\
+  {\footnotesize A lobate scarp cross-cutting older craters on Mercury, imaged by MESSENGER. Credit: NASA/Johns Hopkins APL/Carnegie Institution of Washington.}
+\end{frame}
+
 % ════════════════════════════════════════════════════════════
 \sectionimage{mars_valley_networks}{Fluvial channels, Mars. Credit: NASA/JPL-Caltech/U.\ Arizona}
-\section{Erosion \& Weathering}
+\section{Erosion and weathering}
 % ════════════════════════════════════════════════════════════
 
 % ── Aeolian processes ─────────────────────────────────────
-\begin{frame}{Aeolian (Wind) Processes}
+\begin{frame}{Aeolian (wind) processes}
   Wind erosion and deposition require a sufficiently dense atmosphere:
   \vskip6pt
   \begin{itemize}
@@ -629,15 +820,70 @@
   \end{itemize}
 \end{frame}
 
+% ── Dunes on Mars and Titan ───────────────────────────────
+\begin{frame}{Sand that still moves}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{mars_dunes_bridges}
+    \source{NASA/JPL-Caltech/University of Arizona}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    A streaming sand sheet inside the Nili Patera caldera, imaged repeatedly by HiRISE:
+    \begin{itemize}
+      \item Mars's surface pressure is $\sim$600~Pa, about 170 times thinner than Earth's
+      \item Time-resolved imaging still measures sand fluxes comparable to terrestrial ones
+      \item That settled a long argument over whether Martian dunes are active today
+    \end{itemize}
+    \vskip6pt
+    \keyresult{A thin atmosphere does not mean a dead surface. Once grains are moving, low density is partly offset by the low gravity and the long saltation hops.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{mars_dunes_bridges}}\\
+  {\footnotesize A migrating sand sheet in Nili Patera, Mars, from HiRISE on the Mars Reconnaissance Orbiter. Credit: NASA/JPL-Caltech/University of Arizona.}
+\end{frame}
+
+% ── Titan dune fields ─────────────────────────────────────
+\begin{frame}{Titan's organic dunes}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{titan_dunes}
+    \source{NASA/JPL-Caltech/ASI}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    Cassini radar of the Shangri-La dune fields near Titan's equator:
+    \begin{itemize}
+      \item Dark parallel ridges are dunes of tholins, organic grains that settle out of the atmosphere
+      \item Up to $\sim$150~m tall and hundreds of kilometres long
+      \item Bright patches are water-ice bedrock that the sand flows around
+    \end{itemize}
+    \vskip6pt
+    \keyresult{Same landform, different chemistry: the grains are organic and the bedrock is ice, yet the dune shapes follow the same aeolian physics as on Earth and Mars.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{titan_dunes}}\\
+  {\footnotesize Longitudinal dunes of organic sand in Titan's Shangri-La region, Cassini SAR. Credit: NASA/JPL-Caltech/ASI.}
+\end{frame}
+
 % ── Fluvial processes ─────────────────────────────────────
-\begin{frame}{Fluvial (Water) Processes}
+\begin{frame}{Fluvial (water) processes}
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
-    \includegraphics[height=0.55\textheight]{mars_valley_networks}
+    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{mars_valley_networks}
     \source{NASA/JPL-Caltech/U.\ Arizona}
 
     \column{0.52\textwidth}
+    \raggedright
     \textbf{Mars valley networks:}
     \begin{itemize}
       \item Noachian-aged ($>$3.7~Ga)
@@ -651,12 +897,68 @@
       \item Catastrophic groundwater releases
     \end{itemize}
     \vskip4pt
-    \textbf{Titan:} Active methane rivers; Huygens imaged rounded ice pebbles in a dry riverbed (2005).
+    \textbf{Titan:} methane rivers; Huygens found rounded ice pebbles in a dry riverbed (2005).
   \end{columns}
 \end{frame}
 
+% ── Two kinds of Martian water feature ────────────────────
+\begin{frame}{Two kinds of water feature on Mars}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{mars_outflow_aram}
+    \source{NASA/JPL-Caltech/MSSS}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    \textbf{Outflow channels} (shown here, Aram Chaos):
+    \begin{itemize}
+      \item Braided streamlined islands, broad scoured troughs
+      \item Tens of kilometres wide, hundreds long
+      \item Catastrophic discharge, plausibly a sudden release of groundwater or subsurface ice
+    \end{itemize}
+    \vskip4pt
+    \textbf{Valley networks} are the other kind: dendritic, low discharge, sustained for long enough to need precipitation.
+    \vskip6pt
+    \keyresult{Read the shape, not just the presence of water. One says flood, the other says climate.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{mars_outflow_aram}}\\
+  {\footnotesize A Martian outflow channel cutting through Aram Chaos. Credit: NASA/JPL-Caltech/MSSS.}
+\end{frame}
+
+% ── Huygens on Titan ──────────────────────────────────────
+\begin{frame}{Standing on Titan}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{titan_huygens_surface}
+    \source{ESA/NASA/JPL-Caltech/University of Arizona}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    The Huygens probe landed on 14 January 2005, the only surface image ever returned from the outer solar system:
+    \begin{itemize}
+      \item Rounded decimetre-scale blocks of water ice, shaped by methane flow
+      \item A damp, dark plain of methane-soaked organic sediment in a dried-out riverbed
+      \item Descent images showed dendritic drainage above it
+    \end{itemize}
+    \vskip6pt
+    \keyresult{Titan runs the only active fluvial cycle beyond Earth. The liquid is methane, the bedrock is ice, and the rounding of the cobbles is the same process as in a terrestrial stream.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{titan_huygens_surface}}\\
+  {\footnotesize The Huygens surface image, in three progressive enlargements; the bottom panel is at the true apparent size. Credit: ESA/NASA/JPL-Caltech/University of Arizona.}
+\end{frame}
+
 % ── Glacial and chemical weathering ───────────────────────
-\begin{frame}{Glacial \& Chemical Weathering}
+\begin{frame}{Glacial and chemical weathering}
   \textbf{Glacial processes:}
   \begin{itemize}
     \item Earth: ice sheets covered $\sim$30\% of land at Last Glacial Maximum ($\sim$20~ka)
@@ -672,7 +974,7 @@
 \end{frame}
 
 % ── CRISM mineral map ─────────────────────────────────────
-\begin{frame}{Remote Sensing of Surfaces: Overview}
+\begin{frame}{Remote sensing of surfaces}
   We can visit only a few sites. Most surface knowledge comes from orbital remote sensing.
   \vskip8pt
   \begin{description}
@@ -685,9 +987,10 @@
   Each technique probes a different length scale and physical property; together they build a three-dimensional picture of the surface and shallow interior.
 \end{frame}
 
-\begin{frame}{Reflectance Spectroscopy: Mineral Mapping}
+\begin{frame}{Reflectance spectroscopy: mineral mapping}
   \begin{columns}[c]
     \column{0.50\textwidth}
+    \small
     \centering
     \includegraphics[width=\textwidth]{crism_mineral_map}
     \source{NASA/JPL-Caltech/JHU APL}
@@ -705,7 +1008,7 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{Radar Imaging: Seeing Through Clouds}
+\begin{frame}{Radar imaging: seeing through clouds}
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
@@ -727,11 +1030,11 @@
       \item Mapped hydrocarbon lakes and seas
     \end{itemize}
   \end{columns}
-  \vskip4pt
+  \vskip-4pt
   \keyresult{Radar is the only way to image surfaces shrouded by thick atmospheres.}
 \end{frame}
 
-\begin{frame}{Laser Altimetry and Gravity Mapping}
+\begin{frame}{Laser altimetry and gravity mapping}
   \textbf{Laser altimetry (MOLA, LOLA, BELA):}
   \begin{itemize}
     \item Time-of-flight of laser pulses from orbit
@@ -749,12 +1052,39 @@
   Altimetry and gravity together tell us what the interior \textbf{looks like} from above.
 \end{frame}
 
+% ── GRAIL crustal thickness ───────────────────────────────
+\begin{frame}{Weighing the lunar crust}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{grail_crustal_thickness}
+    \source{NASA/MIT/GSFC/JPL-Caltech}
+
+    \column{0.50\textwidth}
+    \small
+    GRAIL tracked the distance between two co-orbiting satellites to map the Moon's gravity field:
+    \begin{itemize}
+      \item Gravity plus topography gives the depth to the crust-mantle interface
+      \item Mean crustal thickness $\sim$34--43~km
+      \item Strong thinning under the largest basins (deep blue), a thicker farside crust
+    \end{itemize}
+    \vskip6pt
+    \keyresult{Gravity sees what images cannot: an impact basin is not just a surface scar, it is a hole punched through most of the crust.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{grail_crustal_thickness}}\\
+  {\footnotesize Lunar crustal thickness from GRAIL, nearside (left) and farside (right). Credit: NASA/MIT/GSFC/JPL-Caltech.}
+\end{frame}
+
 % ── Regolith and space weathering ─────────────────────────
-\begin{frame}{Regolith \& Space Weathering}
+\begin{frame}{Regolith and space weathering}
   \begin{columns}[c]
     \column{0.40\textwidth}
     \centering
-    \includegraphics[height=0.55\textheight]{lunar_regolith}
+    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{lunar_regolith}
     \source{NASA/Apollo 11}
 
     \column{0.57\textwidth}
@@ -778,11 +1108,11 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{enceladus_cryovolcanism}{Enceladus plumes. Credit: NASA/JPL-Caltech/SSI}
-\section{Cryovolcanism on Icy Bodies}
+\section{Cryovolcanism on icy bodies}
 % ════════════════════════════════════════════════════════════
 
 % ── Cryovolcanism overview ────────────────────────────────
-\begin{frame}{Cryovolcanism: Ice World Volcanism}
+\begin{frame}{Cryovolcanism: volcanism on ice worlds}
   In the outer solar system, ``volcanic'' eruptions involve volatiles rather than silicate melts:
   \vskip6pt
   \begin{itemize}
@@ -794,32 +1124,33 @@
 \end{frame}
 
 % ── Enceladus ─────────────────────────────────────────────
-\begin{frame}{Enceladus: Tiger Stripes and Geysers}
+\begin{frame}{Enceladus: tiger stripes and geysers}
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
-    \includegraphics[height=0.55\textheight]{enceladus_cryovolcanism}
+    \includegraphics[width=\linewidth,height=0.55\textheight,keepaspectratio]{enceladus_cryovolcanism}
     \source{NASA/JPL-Caltech/SSI (Cassini)}
 
     \column{0.52\textwidth}
+    \raggedright
     \begin{itemize}
       \item Radius only 252~km
       \item Water ice jets from 4 parallel ``tiger stripe'' fractures
       \item Sourced from \textbf{global subsurface ocean}
       \item Ocean in contact with rocky core
-      \item Thermal emission: $\sim$15~GW
+      \item Thermal emission: $\sim$15.8~GW
     \end{itemize}
     \vskip4pt
     Plume composition:
     \begin{itemize}
-      \item $\mathrm{H_2}$, silica nanoparticles, complex organics
+      \item $\mathrm{H_2}$, silica grains, organics
       \item Consistent with hydrothermal vents
     \end{itemize}
   \end{columns}
 \end{frame}
 
 % ── Europa ────────────────────────────────────────────────
-\begin{frame}{Europa: A Hidden Ocean}
+\begin{frame}{Europa: a hidden ocean}
   \begin{itemize}
     \item Jupiter's moon, $R \approx 1561$~km
     \item Global ocean $\sim$100~km deep; ice shell $\sim$10--30~km thick
@@ -836,8 +1167,35 @@
   \textbf{Europa Clipper} (launched 2024): dozens of close flybys to characterise the ice shell, ocean, and habitability.
 \end{frame}
 
+% ── Europa lineae and chaos ───────────────────────────────
+\begin{frame}{Europa's cracked shell}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{europa_chaos}
+    \source{NASA/JPL-Caltech/University of Arizona/University of Colorado}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    Galileo imaged the region around Pwyll crater, the bright ray system at lower right:
+    \begin{itemize}
+      \item Dark double ridges and lineae criss-cross the whole surface
+      \item Each set records one episode of fracturing as tidal stress flexed the brittle ice
+      \item Chaos terrain marks where the shell broke up, rotated and refroze
+    \end{itemize}
+    \vskip6pt
+    \keyresult{A crater density this low means a surface age of only 40--90~Myr. On a 4.5~Gyr-old moon, that is resurfacing happening now.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{europa_chaos}}\\
+  {\footnotesize Double ridges and lineae near Pwyll crater on Europa, Galileo SSI. Credit: NASA/JPL-Caltech/University of Arizona/University of Colorado.}
+\end{frame}
+
 % ── Triton and ocean worlds ───────────────────────────────
-\begin{frame}{Triton \& the Ocean Worlds}
+\begin{frame}{Triton and the ocean worlds}
   \textbf{Triton} (Neptune's largest moon):
   \begin{itemize}
     \item Nitrogen geysers observed by Voyager~2 (1989)
@@ -851,12 +1209,39 @@
 
 
 % ════════════════════════════════════════════════════════════
-\sectionimage{surface_processes_montage}{Mars surface. Credit: NASA/JPL-Caltech/MSSS}
-\section{Recent Advances}
+% ── Triton ────────────────────────────────────────────────
+\begin{frame}{Triton's nitrogen geysers}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{triton_voyager}
+    \source{NASA/JPL/Voyager 2}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    Voyager~2 flew past in 1989 and found an active surface:
+    \begin{itemize}
+      \item A pinkish southern polar cap of $\mathrm{N_2}$ and $\mathrm{CH_4}$ frost
+      \item Dark streaks are dust carried downwind from nitrogen geysers rising $\sim$8~km
+      \item North of the cap, ``cantaloupe terrain'' that has no analogue anywhere else
+    \end{itemize}
+    \vskip6pt
+    \keyresult{Triton orbits retrograde, so it is a captured Kuiper-belt object. Its active surface is our closest look at what a Pluto-class body does when it is warmed.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{triton_voyager}}\\
+  {\footnotesize Voyager~2 colour mosaic of Triton, 1989. Credit: NASA/JPL/Voyager 2.}
+\end{frame}
+
+\sectionimage{io_nusku_change}{A new eruption on Io, JunoCam 2024. Credit: NASA/JPL-Caltech/SwRI/MSSS/Jason Perry}
+\section{Recent advances}
 % ════════════════════════════════════════════════════════════
 
 % ── OSIRIS-REx / Bennu ───────────────────────────────────
-\begin{frame}{OSIRIS-REx: Rubble-Pile Asteroids}
+\begin{frame}{OSIRIS-REx: rubble-pile asteroids}
   \begin{columns}[c]
     \column{0.42\textwidth}
     \centering
@@ -880,7 +1265,7 @@
 \end{frame}
 
 % ── Hayabusa2 / Ryugu ───────────────────────────────────
-\begin{frame}{Hayabusa2: Sampling Ryugu}
+\begin{frame}{Hayabusa2: sampling Ryugu}
   JAXA's Hayabusa2 delivered 5.4~g of asteroid Ryugu to Earth in December 2020.
   \vskip6pt
   \begin{itemize}
@@ -896,7 +1281,7 @@
 \end{frame}
 
 % ── Pluto Sputnik Planitia ──────────────────────────────
-\begin{frame}{Pluto: A Surprisingly Active World}
+\begin{frame}{Pluto: a surprisingly active world}
   \begin{columns}[c]
     \column{0.48\textwidth}
     \centering
@@ -904,6 +1289,7 @@
     \source{NASA/JHUAPL/SwRI (New Horizons 2015)}
 
     \column{0.50\textwidth}
+    \small
     New Horizons (2015) revealed Pluto's geological diversity.
     \vskip6pt
     \begin{itemize}
@@ -919,7 +1305,7 @@
 \end{frame}
 
 % ── Perseverance ──────────────────────────────────────────
-\begin{frame}{Perseverance Rover at Jezero Crater}
+\begin{frame}{Perseverance at Jezero crater}
   \begin{itemize}
     \item Operating in Jezero crater since February 2021
     \item Crater floor: igneous rock (olivine-bearing cumulates)
@@ -933,7 +1319,7 @@
 \end{frame}
 
 % ── DART mission ──────────────────────────────────────────
-\begin{frame}{DART: Planetary Defence Experiment}
+\begin{frame}{DART: a planetary defence experiment}
   \begin{itemize}
     \item \textbf{Double Asteroid Redirection Test} (September 2022)
     \item Kinetic impactor deliberately crashed into moonlet \textbf{Dimorphos}
@@ -949,7 +1335,7 @@
 \end{frame}
 
 % ── Io and Venus ──────────────────────────────────────────
-\begin{frame}{Ongoing Exploration: Io and Venus}
+\begin{frame}{Ongoing exploration: Io and Venus}
   \textbf{Io monitoring:}
   \begin{itemize}
     \item Juno extended mission: close Io flybys in 2023--2024
@@ -967,6 +1353,33 @@
 \end{frame}
 
 
+% ── Io monitoring ─────────────────────────────────────────
+\begin{frame}{Catching an eruption in the act}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{io_nusku_change}
+    \source{NASA/JPL-Caltech/SwRI/MSSS/Jason Perry}
+
+    \column{0.50\textwidth}
+    \small
+    JunoCam imaged the Nusku region twice, two months apart in early 2024:
+    \begin{itemize}
+      \item February: nothing unusual around the vent
+      \item April: a bright red ring of fresh sulfur-rich pyroclastic deposits
+      \item One eruption, recorded between two flybys
+    \end{itemize}
+    \vskip6pt
+    \keyresult{Io is the only body where we can watch surface geology change on a timescale of weeks. Juno gives the first sustained monitoring since Galileo.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{io_nusku_change}}\\
+  {\footnotesize The Nusku region on Io two months apart in 2024, JunoCam. Credit: NASA/JPL-Caltech/SwRI/MSSS/Jason Perry.}
+\end{frame}
+
 % ── Summary ────────────────────────────────────────────────
 \begin{frame}{Summary}
   \begin{enumerate}
@@ -981,6 +1394,15 @@
   \end{enumerate}
 \end{frame}
 
+% ── Looking ahead ───────────────────────────────────────────
+\begin{frame}{Looking ahead to Lecture 8}
+  \begin{itemize}
+    \item This lecture read planetary surfaces as a record: craters date them, volcanism and tectonics build them, erosion wears them down.
+    \item Lecture~8 goes underneath, to the interiors that drive the endogenic half of that record: seismology, moment of inertia, and the layered structure they reveal.
+    \item The stagnant lid and the plate-tectonic regime return there as consequences of interior heat transport rather than as surface styles.
+  \end{itemize}
+\end{frame}
+
 % ── Final slide ─────────────────────────────────────────────
 \begin{frame}[plain,noframenumbering]
   \begin{tikzpicture}[remember picture, overlay]
@@ -991,9 +1413,10 @@
   \begin{center}
     {\color{white}\Large\bfseries Questions?}
     \vskip20pt
-    {\color{ipsLightFill}\normalsize Next (after mid-term exam): \textbf{Lecture~8. Planetary Interiors: Structure, Composition, \& Dynamics}}
-    \vskip16pt
-    {\color{ipsLightFill!70}\small Lecture notes: \texttt{formingworlds.github.io/IntroductionToPlanetaryScience}}
+    {\color{white!85}\large Next: Lecture 8, Planetary interiors: structure, composition \& dynamics}\\[4pt]
+    {\color{white!85}\small Thu 1 Oct, 11:00--13:00, room 5419.0161 (Collegezaal)}\\[12pt]
+    {\color{white!85}\small Next tutorial: Fri 2 Oct, 13:00--15:00, room 5419.0161 (Collegezaal)}\\[20pt]
+    {\color{white!70}\small \texttt{https://ips.formingworlds.space}}
   \end{center}
   \vfill
 \end{frame}
