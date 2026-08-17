@@ -537,7 +537,15 @@ Global map of Io's 343 catalogued volcanic hot spots, in Mollweide projection ce
 
 Saturn's small moon **Enceladus** (radius 252 km) provides another dramatic example of tidal heating. In 2005, the Cassini spacecraft discovered jets of water ice and vapour erupting from four parallel fractures (dubbed "tiger stripes") near the south pole {cite:p}`Porco2006`. Subsequent CIRS far-infrared measurements showed that the south polar terrain emits $\sim 16$ GW of thermal power ($15.8 \pm 3.1$ GW; {cite:t}`Howett2011`), revising upward an earlier $\sim 6$ GW estimate, and far more than can be explained by radioactive decay alone for such a small body.
 
-The heat source is tidal dissipation, driven by Enceladus's 2:1 orbital resonance with the larger moon Dione. The heating is sufficient to maintain a **global subsurface ocean** of liquid water beneath an ice shell $\sim$15–25 km thick {cite:p}`NimmoPappalardo2016`. The erupted material from the tiger stripes ({numref}`fig:enceladus-plumes`) feeds Saturn's E ring and provides direct samples of the subsurface ocean: analysis by Cassini's instruments revealed the presence of salts, silica nanoparticles (indicating hydrothermal activity on the ocean floor), and even complex organic molecules. The thermal-emission map in {numref}`fig:enceladus-thermal` localises the heat output along the four "tiger stripe" fractures.
+The heat source is tidal dissipation, driven by Enceladus's 2:1 orbital resonance with the larger moon Dione. The heating is sufficient to maintain a **global subsurface ocean** of liquid water beneath an ice shell $\sim$15–25 km thick {cite:p}`NimmoPappalardo2016`. The erupted material from the tiger stripes ({numref}`fig:enceladus-tiger-stripes-full`, {numref}`fig:enceladus-plumes`) feeds Saturn's E ring and provides direct samples of the subsurface ocean: analysis by Cassini's instruments revealed the presence of salts, silica nanoparticles (indicating hydrothermal activity on the ocean floor), and even complex organic molecules. The thermal-emission map in {numref}`fig:enceladus-thermal` localises the heat output along the four "tiger stripe" fractures.
+
+```{figure} figures/enceladus_tiger_stripes_full.avif
+:name: fig:enceladus-tiger-stripes-full
+:width: 500px
+:align: center
+
+Full-disk false-color mosaic of the anti-Saturn hemisphere of Enceladus. The prominent "tiger stripe" fractures are visible in blue near the south pole. Credit: NASA/JPL/Space Science Institute, public domain.
+```
 
 ```{figure} figures/enceladus_plumes.avif
 :name: fig:enceladus-plumes
