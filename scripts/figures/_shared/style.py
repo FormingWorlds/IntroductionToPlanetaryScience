@@ -86,10 +86,28 @@ def save_figure(
     avif.parent.mkdir(parents=True, exist_ok=True)
     png = avif.with_suffix(".png")
     fig.savefig(png)
+    _crop_to_even(png)
     _encode_avif(png, avif, avif_quality)
     if not keep_png:
         png.unlink(missing_ok=True)
     return avif
+
+
+def _crop_to_even(png: Path) -> None:
+    """Trim an odd width or height by one pixel before the AVIF encode.
+
+    AV1 encodes 4:2:0 frames in even dimensions; an odd PNG comes back with a
+    dark padding column or row on its right or bottom edge that renders as a
+    grey bar in the browser and on the slides. The trimmed pixel is the tight
+    bbox margin, so no content is lost.
+    """
+    from PIL import Image
+
+    with Image.open(png) as im:
+        w, h = im.size
+        if w % 2 == 0 and h % 2 == 0:
+            return
+        im.crop((0, 0, w - w % 2, h - h % 2)).save(png)
 
 
 def _is_avif(path: Path) -> bool:
