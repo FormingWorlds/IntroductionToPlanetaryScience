@@ -23,10 +23,22 @@ def make_plot() -> Path:
     apply_style()
     fig, ax = plt.subplots(figsize=(7, 7.5))
 
-    # Depth and Temperature points
-    # Surface -> Base of Lithosphere -> Top of D'' -> Core-Mantle Boundary
-    depths = np.array([0, 100, 2700, 2900])
-    temps = np.array([300, 1600, 2900, 4000])
+    import math
+
+    # Generate smooth analytical geotherm with error-function thermal boundary layers
+    # Surface ~300 K, Adiabat potential temp ~1550 K, CMB ~4000 K
+    depths = np.linspace(0, 2900, 500)
+    
+    # 1. Adiabatic mantle interior (~0.5 K/km)
+    temps_adiabat = 1550.0 + 0.5 * depths
+    
+    # 2. Cold TBL (lithosphere): conductive profile ~erfc
+    cold_tbl = 1250.0 * np.array([math.erfc(z / 50.0) for z in depths])
+    
+    # 3. Hot TBL (D''): conductive profile ~erfc
+    hot_tbl = 1005.0 * np.array([math.erfc((2900.0 - z) / 100.0) for z in depths])
+    
+    temps = temps_adiabat - cold_tbl + hot_tbl
 
     # Plot the main temperature profile line
     ax.plot(temps, depths, color="#1f77b4", lw=3.0)
