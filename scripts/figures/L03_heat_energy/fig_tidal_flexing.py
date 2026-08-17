@@ -30,7 +30,7 @@ MOON = "#9aa0c7"
 DASH = "#9b9b9b"
 
 
-def draw_orbit(ax, a: float, e: float, center=(0.0, 0.0)) -> None:
+def draw_orbit(ax, a: float, e: float, flip: bool = False, center=(0.0, 0.0)) -> None:
     """Draw a dashed ellipse representing the orbit. The planet is
     placed at the origin (one focus); for the schematic we draw the
     ellipse centred such that periapsis distance = a(1-e) and apoapsis
@@ -38,7 +38,10 @@ def draw_orbit(ax, a: float, e: float, center=(0.0, 0.0)) -> None:
     theta = np.linspace(0, 2 * np.pi, 200)
     # Conic with focus at origin: r = a(1-e^2) / (1 + e cos theta)
     r = a * (1 - e ** 2) / (1 + e * np.cos(theta))
-    x = r * np.cos(theta) + center[0]
+    x = r * np.cos(theta)
+    if flip:
+        x = -x
+    x = x + center[0]
     y = r * np.sin(theta) + center[1]
     ax.plot(x, y, ls="--", color=DASH, lw=1.0, zorder=1)
 
@@ -51,7 +54,7 @@ def draw_panel(ax, mode: str) -> None:
     R_moon = 0.32
 
     # Orbit (focus at origin = Jupiter centre)
-    draw_orbit(ax, a, e)
+    draw_orbit(ax, a, e, flip=(mode == "apo"))
 
     # Jupiter at origin
     ax.add_patch(Circle((0, 0), R_jup, color=JUPITER, ec="black", lw=0.6, zorder=3))
