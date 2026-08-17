@@ -238,6 +238,8 @@ Conductive cooling timescale $\tau_{\mathrm{cond}}=L^2/\kappa$ as a function of 
 
 A specific application of the heat-equation solution that we will return to repeatedly is the **half-space cooling model** for oceanic lithosphere ({numref}`fig:half-space-cooling`). A "half-space" refers to a mathematical domain bounded by a single flat surface (here, the seafloor) that extends infinitely downward. In this model, a hot half-space with its surface temperature held fixed cools by conduction, growing a thermal boundary layer whose thickness scales as $\sqrt{\kappa t}$.
 
+This analytical solution is of major historical importance. In the late nineteenth century, Lord Kelvin used this conductive cooling model to estimate the age of the Earth. Assuming the planet began as a molten sphere and cooled strictly by conduction, he calculated an age of 20 to 400 million years. This result ignited a fierce debate. Kelvin's timescale was much longer than the few thousand years asserted by religious interpretations, but far too short for geologists and biologists (such as Charles Lyell and Charles Darwin), who recognised that the rock record and evolution required hundreds of millions or billions of years. Kelvin's mathematics were correct, but his physical premises were flawed: he knew nothing of radiogenic heating (which continuously adds energy) or solid-state mantle convection (which transports heat far more efficiently than conduction).
+
 ```{figure} figures/half_space_cooling.avif
 :name: fig:half-space-cooling
 :width: 550px
