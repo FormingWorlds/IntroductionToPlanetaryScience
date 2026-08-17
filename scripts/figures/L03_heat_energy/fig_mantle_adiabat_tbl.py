@@ -33,7 +33,7 @@ def make_plot() -> Path:
 
     # Shaded region for Cold TBL (lithosphere)
     ax.axhspan(0, 100, color="#1f77b4", alpha=0.15)
-    ax.text(1900, 50, "Cold TBL\n(lithosphere, ~100 km)", color="#1f77b4",
+    ax.text(2500, 50, "Cold TBL\n(lithosphere, ~100 km)", color="#1f77b4",
             ha="center", va="center", fontsize=11)
 
     # Shaded region for Hot TBL (D'')
