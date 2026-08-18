@@ -91,11 +91,12 @@ def draw_curves(ax: plt.Axes) -> None:
         ax.axvline(t_cf, color=color, lw=0.8, ls=":", alpha=0.6)
 
     ax.axhline(0.0, color="0.4", lw=1.0)
-    ax.annotate("chondrites (never differentiated)", xy=(64, 0.12),
-                fontsize=8.5, color="0.35")
+    ax.annotate("chondrites (never differentiated)", xy=(64, 0.15),
+                fontsize=8.5, color="0.35", va="bottom")
     ax.axhline(EPS_EARTH, color="0.2", lw=1.0, ls="--")
     ax.annotate("Earth's mantle today ($+2\\,\\varepsilon$)",
-                xy=(64, EPS_EARTH + 0.12), fontsize=8.5, color="0.2")
+                xy=(64, EPS_EARTH + 0.15), fontsize=8.5, color="0.2",
+                va="bottom")
 
     ax.set_xlim(0, 130)
     ax.set_ylim(-0.4, 9)

@@ -57,7 +57,7 @@ def make_plot() -> Path:
     ax.axvspan(P_LO, P_HI, color="#1f77b4", alpha=0.10, zorder=0)
     ax.axhspan(BAND_LO, BAND_HI, color="0.55", alpha=0.30, zorder=1)
 
-    for el, p_lab, dy in ((NI, 22.0, 0.12), (CO, 22.0, -0.30)):
+    for el, p_lab, dy in ((NI, 22.0, 0.25), (CO, 22.0, -0.32)):
         d = el["a"] + el["b"] * p
         ax.plot(p, d, color=el["color"], lw=2.2, zorder=3)
         ax.annotate(el["label"], xy=(p_lab, el["a"] + el["b"] * p_lab + dy),
@@ -65,9 +65,9 @@ def make_plot() -> Path:
                     ha="center", va="center")
 
     ax.annotate("$D$ required to match the\nmantle's Ni and Co content",
-                xy=(4, (BAND_LO + BAND_HI) / 2), fontsize=9.5,
-                color="0.25", va="center")
-    ax.annotate("inferred equilibration\npressure 40–60 GPa",
+                xy=(4, BAND_HI + 0.08), fontsize=9.5,
+                color="0.25", va="bottom")
+    ax.annotate("inferred equilibration\npressure 40-60 GPa",
                 xy=(50, 3.55), fontsize=9.5, color="#1f77b4",
                 ha="center", va="top")
 
@@ -75,7 +75,7 @@ def make_plot() -> Path:
     ax.set_ylim(0, 4.3)
     ax.set_xlabel("Pressure (GPa)")
     ax.set_ylabel(r"$\log_{10}\, D^{\mathrm{met/sil}}$")
-    ax.set_title("Metal–silicate partitioning of Ni and Co vs pressure\n"
+    ax.set_title("Metal-silicate partitioning of Ni and Co vs pressure\n"
                  r"(schematic, at $T \approx 3500$ K, $f_{\mathrm{O_2}} \approx$ IW$-$2)")
 
     fig.tight_layout()
