@@ -165,7 +165,7 @@
 \end{frame}
 
 \begin{frame}{Reading the radiogenic heating curves}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{radiogenic_heat_evolution}}
     \column{0.50\textwidth}
@@ -298,7 +298,7 @@
 
 % ── Heat budget pie ───────────────────────────────────────
 \begin{frame}{Earth's heat budget at a glance}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{earth_heat_budget}}
     \column{0.50\textwidth}
@@ -428,7 +428,7 @@
 \end{frame}
 
 \begin{frame}{Reading the convection schematic}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{rayleigh_benard_schematic}}
     \column{0.50\textwidth}
@@ -526,7 +526,7 @@
 \end{frame}
 
 \begin{frame}{Reading the cooling-timescale plot}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{tau_cond_vs_size}}
     \column{0.50\textwidth}
@@ -549,19 +549,19 @@
 \end{frame}
 
 \begin{frame}{Reading the half-space cooling profiles}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{half_space_cooling}}
     \column{0.50\textwidth}
     \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
-      \item A ``half-space'' is a domain bounded by a single flat surface (here, the seafloor) extending infinitely downward.
-      \item Each curve is $T(z,t) = T_s + (T_m - T_s)\,\mathrm{erf}\!\big(z/2\sqrt{\kappa t}\big)$ for seafloor ages 1 to 200 Myr.
+      \item A ``half-space'' is a domain bounded by one flat surface (the seafloor).
+      \item Each curve is the error-function (erf) solution $T(z,t) = T_s + (T_m - T_s)\,\mathrm{erf}\!\big(z/2\sqrt{\kappa t}\big)$ for ages 1 to 200 Myr.
       \item The cold boundary layer (the \textbf{lithosphere}) thickens as $\sqrt{\kappa t}$: fast when young, slower as it ages.
-      \item The same solution predicts seafloor heat flux $q \propto t^{-1/2}$ and, through thermal contraction, ocean depth increasing with age.
+      \item It also predicts heat flux $q \propto t^{-1/2}$ and ocean depth increasing with age (thermal contraction).
     \end{itemize}
     \vskip2pt\relax
-    \keyresult{One erf-solution of the heat equation explains lithosphere thickness, seafloor heat flow, and ocean bathymetry at once.}
+    \keyresult{One erf-solution explains lithosphere thickness, seafloor heat flow, and bathymetry at once.}
   \end{columns}
 \end{frame}
 
@@ -612,7 +612,7 @@
 \end{frame}
 
 \begin{frame}{Reading the marginal stability curve}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{marginal_stability}}
     \column{0.50\textwidth}
@@ -692,7 +692,7 @@
 \end{frame}
 
 \begin{frame}{Reading the Nu-Ra diagram}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{nu_ra_scaling}}
     \column{0.50\textwidth}
@@ -750,7 +750,7 @@
 \end{frame}
 
 \begin{frame}{Reading the mantle temperature profile}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{mantle_adiabat_tbl}}
     \column{0.50\textwidth}
@@ -768,27 +768,32 @@
 
 % ── Tectonic regimes ──────────────────────────────────────
 \begin{frame}{Two tectonic regimes}
-  \begin{columns}[T]
-    \column{0.48\textwidth}
+  \begin{columns}[c]
+    \column{0.52\textwidth}
+    \small
     \textbf{Mobile lid (plate tectonics):}
-    \begin{itemize}
+    \begin{itemize}\setlength\itemsep{0pt}
       \item Cold boundary layer \textbf{breaks} into plates
       \item Plates subduct, recycle material
       \item Most efficient heat loss
       \item \textbf{Only Earth}
     \end{itemize}
-
-    \column{0.48\textwidth}
+    \vskip1pt
     \textbf{Stagnant lid:}
-    \begin{itemize}
+    \begin{itemize}\setlength\itemsep{0pt}
       \item Single thick, immobile shell
       \item Heat escapes by conduction + volcanism
       \item Less efficient cooling
       \item Venus, Mars, Mercury, Moon
     \end{itemize}
+    \vskip1pt
+    Why Earth is unique: likely a combination of water, size, and thermal history.
+
+    \column{0.46\textwidth}
+    \centering
+    \makebox[\linewidth][c]{\includegraphics[width=0.86\linewidth, height=0.72\textheight, keepaspectratio]{stern2018_tectonic_stages}}
+    \source{Reproduced from Stern et al.\ (2018), Fig.~3}
   \end{columns}
-  \vskip8pt
-  Why Earth is unique: likely a combination of water, size, and thermal history.
 \end{frame}
 
 % ── Tectonic modes pair ───────────────────────────────────
@@ -799,7 +804,7 @@
 \end{frame}
 
 \begin{frame}{Reading the tectonic-mode taxonomy}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{lenardic2018_tectonic_modes}}
     \column{0.50\textwidth}
@@ -822,7 +827,7 @@
 \end{frame}
 
 \begin{frame}{Reading the plate-boundary cross-section}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{usgs_plate_boundaries_cross_section}}
     \column{0.50\textwidth}
@@ -841,16 +846,23 @@
 
 % ── Why Earth has plate tectonics ────────────────────────
 \begin{frame}{Why does Earth have plate tectonics?}
-  One of the biggest open questions in planetary geophysics.
-  \vskip2pt
-  Proposed factors:
-  \begin{itemize}
-    \item \textbf{Water:} weakens rocks at fault zones; lowers melting point in subducting slabs
-    \item \textbf{Planet size:} higher convective stresses in a larger mantle
-    \item \textbf{Thermal state:} must be cold enough for a rigid lid but hot enough to sustain plume-driven rifting
-    \item \textbf{Prior history:} once plate tectonics starts, it may be self-sustaining (recycling weakens the lid)
-    \item Venus may have had plate tectonics in the past (tessera highlands); lost it after drying out
-  \end{itemize}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+    \footnotesize
+    One of the biggest open questions in planetary geophysics. Proposed factors:
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item \textbf{Water:} weakens faults; lowers the melting point in subducting slabs
+      \item \textbf{Planet size:} higher convective stresses in a larger mantle
+      \item \textbf{Thermal state:} cold enough for a rigid lid, hot enough for rifting
+      \item \textbf{Prior history:} once started, recycling weakens the lid; may be self-sustaining
+      \item Venus: deformed tessera terrain records past plate tectonics, lost after drying out
+    \end{itemize}
+
+    \column{0.48\textwidth}
+    \centering
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth]{lyu2025_regime_map}}
+    \source{Simulated tectonic regimes vs.\ lithosphere strength and internal heating; reproduced from Lyu et al.\ (2025), Fig.~5b, CC BY 4.0}
+  \end{columns}
   \vskip2pt
   \keyresult{Habitability-oriented view: plate tectonics is linked to liquid water, and both are linked to long-term climate stability.}
 \end{frame}
@@ -858,16 +870,25 @@
 % ── Heat-pipe volcanism ──────────────────────────────────
 \begin{frame}{Heat-pipe volcanism}
   An alternative heat-loss regime for very hot bodies.
-  \vskip6pt
-  \begin{itemize}
-    \item Magma rises through conduits (``heat pipes'')
-    \item Erupts on the surface, cools, and is buried by new lava
-    \item Old crust subsides into the hot interior as new lava covers it
-    \item \textbf{Io today:} global resurfacing by volcanism every $\sim$10$^6$~yr
-    \item \textbf{Early Earth:} may have been a heat-pipe regime (Hadean, $>$4~Ga)
-    \item Allows efficient cooling of a very hot mantle without plate tectonics
-  \end{itemize}
-  \vskip6pt
+  \vskip4pt
+  \begin{columns}[c]
+    \column{0.48\textwidth}
+    \small
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Magma rises through conduits (``heat pipes'')
+      \item Erupts on the surface, cools, and is buried by new lava
+      \item Old crust subsides into the hot interior as new lava covers it
+      \item \textbf{Io today:} global resurfacing by volcanism every $\sim$10$^6$~yr
+      \item \textbf{Early Earth:} may have been a heat-pipe regime (Hadean, $>$4~Ga)
+      \item Allows efficient cooling of a very hot mantle without plate tectonics
+    \end{itemize}
+
+    \column{0.50\textwidth}
+    \centering
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth]{heat_pipe}}
+    \source{Custom schematic, after Moore \& Webb (2013)}
+  \end{columns}
+  \vskip2pt
   {\tiny\color{ipsText!60} Source: Turcotte (1989); Moore \& Webb (2013), \textit{Nature}}
 \end{frame}
 
@@ -895,7 +916,7 @@
 \end{frame}
 
 \begin{frame}{Reading the global hotspot map}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{usgs_global_hotspots_map}}
     \column{0.50\textwidth}
@@ -934,39 +955,33 @@
 
 % ── Whole-mantle vs layered convection ──────────────────
 \begin{frame}{Whole-mantle vs.\ layered convection}
-  \begin{columns}[c]
-    \column{0.48\textwidth}
-    \centering
-    \includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{seismic_tomography}
-    \source{Wikimedia (USGS/Caltech), CC BY-SA}
-
-    \column{0.50\textwidth}
-    \textbf{The debate:} does Earth's mantle convect as one layer or two?
-    \vskip6pt
-    \begin{itemize}
-      \item Seismic tomography images the Farallon slab descending to the core--mantle boundary
-      \item Plumes rise from the hot bottom boundary layer through the full mantle
-      \item Strong evidence for \textbf{whole-mantle convection}
-      \item A partial barrier at 660~km slows, but does not stop, slabs; the mantle convects as one layer
-    \end{itemize}
-  \end{columns}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Grand (2002); Ritsema et al.\ (2011)}
+  \textbf{The debate:} does Earth's mantle convect as one layer or two?
+  \vskip2pt
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.72\linewidth, height=0.41\textheight, keepaspectratio]{whole_vs_layered_convection}}
+  \vskip2pt
+  \small
+  \begin{itemize}\setlength\itemsep{1pt}
+    \item Seismic tomography (3-D imaging with earthquake waves) shows the Farallon slab, an ancient subducted plate, sinking to the core--mantle boundary, with plumes rooted at its base
+    \item Strong evidence for \textbf{whole-mantle convection}: the 660~km boundary slows slabs but does not stop them
+  \end{itemize}
+  \vskip2pt
+  {\tiny\color{ipsText!60} Custom schematic; tomographic evidence: Grand (2002); Ritsema et al.\ (2011)}
 \end{frame}
 
 % ── Mantle plume detail ──────────────────────────────────
 \begin{frame}{Plumes vs.\ plates: two modes of upwelling}
-  \begin{itemize}
-    \item \textbf{Mid-ocean ridges:} passive upwelling where plates pull apart
-    \item Temperatures close to the ambient mantle
-    \item \textbf{Mantle plumes:} active upwelling from the deep mantle
-    \item $\sim$200--300~K hotter than the ambient mantle (from olivine thermobarometry)
-    \item Plumes deliver primordial (3He-rich) material from the lower mantle
-    \item Large Igneous Provinces (LIPs) may be plume-heads: Deccan Traps, Siberian Traps, Ontong-Java Plateau
-    \item LIPs correlate with mass extinction events in geological history
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.80\linewidth, height=0.36\textheight, keepaspectratio]{plume_vs_ridge_upwelling}}
+  \vskip2pt
+  \small
+  \begin{itemize}\setlength\itemsep{1pt}
+    \item \textbf{Mid-ocean ridges:} passive upwelling where plates pull apart; temperatures close to the ambient mantle
+    \item \textbf{Mantle plumes:} active upwelling from the deep mantle, $\sim$200 to 300~K hotter; they carry primordial ($^3$He-rich) material from the lower mantle
+    \item \textbf{Large Igneous Provinces (LIPs)}, regions covered by exceptionally voluminous basalt eruptions, may be plume-heads (Deccan Traps, Siberian Traps, Ontong-Java Plateau); LIPs correlate with mass extinctions
   \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Courtillot \& Renne (2003), \textit{Comptes Rendus Geoscience}}
+  \vskip2pt
+  {\tiny\color{ipsText!60} Custom schematic; source: Courtillot \& Renne (2003), \textit{Comptes Rendus Geoscience}}
 \end{frame}
 
 
@@ -1019,7 +1034,7 @@
 \end{frame}
 
 \begin{frame}{Reading the global heat-flow map}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{earth_heat_flow_map}}
     \column{0.50\textwidth}
@@ -1039,66 +1054,22 @@
 \begin{frame}
   \centering
   \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{q_vs_seafloor_age}}\\
-  {\footnotesize Seafloor heat flux against crustal age. Course figure; plate-cooling asymptote after Stein \& Stein (1992).}
+  {\footnotesize Seafloor heat flux against crustal age. Data: Richards et al. (2018), 2.5 Myr bins; plate-cooling asymptote after Stein \& Stein (1992).}
 \end{frame}
 
 \begin{frame}{Reading the heat flux vs age curve}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
+  \begin{columns}[c]
+    \column{0.42\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{q_vs_seafloor_age}}
-    \column{0.50\textwidth}
+    \column{0.54\textwidth}
     \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
-      \item The blue curve is the half-space prediction $q \propto t^{-1/2}$: the same erf-solution as before, differentiated at the surface.
-      \item At old ages the data level off at the plate-cooling asymptote ($\sim$48 mW\,m$^{-2}$): the lithosphere reaches an equilibrium thickness.
-      \item Over young crust, measured values fall \emph{below} the curve because hydrothermal circulation carries part of the heat.
+      \item Blue: the half-space prediction $q \propto t^{-1/2}$ (the erf-solution differentiated at the surface).
+      \item Grey: measured heat flow in 2.5 Myr bins, filtered against hydrothermal sites (Richards et al.\ 2018); they follow the curve.
+      \item Raw young-crust surveys fall \emph{below} it: hydrothermal circulation carries part of the heat.
+      \item Old ages: plate-cooling asymptote ($\sim$48 mW\,m$^{-2}$), equilibrium lithosphere thickness.
     \end{itemize}
-    \vskip2pt\relax
     \keyresult{One curve connects the heat equation to ship-borne heat-flow surveys, and its deviations are physics too.}
-  \end{columns}
-\end{frame}
-
-
-% ── Tidal heating mechanism ───────────────────────────────
-\begin{frame}{Tidal heating: how it works}
-  \begin{itemize}
-    \item Circular orbit + tidal lock $\rightarrow$ static bulge, \textbf{no heating}
-    \item \textbf{Eccentric orbit:} distance varies each orbit
-    \begin{itemize}
-      \item Closer: tidal force stronger, moon moves faster
-      \item Farther: tidal force weaker, moon moves slower
-    \end{itemize}
-    \item Continuously varying deformation $\rightarrow$ \textbf{flexing dissipates heat}
-  \end{itemize}
-  \vskip6pt
-  Heating depends on:
-  \begin{itemize}
-    \item Eccentricity $e$ (zero $e$ $\rightarrow$ zero heating)
-    \item Distance $a$: heating $\propto a^{-15/2}$ at fixed $e$ (the explicit $a^{-6}$ times $n \propto a^{-3/2}$)
-    \item Internal dissipation (tidal quality factor $Q$)
-  \end{itemize}
-\end{frame}
-
-% ── Tidal flexing pair ────────────────────────────────────
-\begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{tidal_flexing}}\\
-  {\footnotesize Tidal flexing on an eccentric orbit: the origin of tidal heating. Course schematic.}
-\end{frame}
-
-\begin{frame}{Reading the tidal-flexing schematic}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{tidal_flexing}}
-    \column{0.50\textwidth}
-    \small
-    \begin{itemize}\setlength\itemsep{1pt}
-      \item \textbf{Left, periapsis} ($r = a(1-e)$): the moon is closest and its tidal bulge is largest.
-      \item \textbf{Right, apoapsis} ($r = a(1+e)$): the bulge is smallest.
-      \item Each orbit, the body is squeezed and stretched between the two states; internal friction turns that cyclic work into heat at a rate $\propto e^2/Q$.
-    \end{itemize}
-    \vskip2pt\relax
-    \keyresult{Eccentricity is the on-off switch of tidal heating: no $e$, no flexing, no heat.}
   \end{columns}
 \end{frame}
 
@@ -1118,24 +1089,68 @@
   \keyresult{All terrestrial planets are in net secular cooling; Earth's is slowed by convective resurfacing but not stopped.}
 \end{frame}
 
+% ── Tidal heating mechanism ───────────────────────────────
+\begin{frame}{Tidal heating: how it works}
+  \begin{itemize}
+    \item Circular orbit + tidal lock $\rightarrow$ static bulge, \textbf{no heating}
+    \item \textbf{Eccentric orbit:} distance varies each orbit
+    \begin{itemize}
+      \item Closer: tidal force stronger, moon moves faster
+      \item Farther: tidal force weaker, moon moves slower
+    \end{itemize}
+    \item Continuously varying deformation $\rightarrow$ \textbf{flexing dissipates heat}
+  \end{itemize}
+  \vskip6pt
+  Heating depends on:
+  \begin{itemize}
+    \item Eccentricity $e$ (zero $e$ $\rightarrow$ zero heating)
+    \item Distance $a$: heating $\propto a^{-15/2}$ at fixed $e$ (the explicit $a^{-6}$ in the dissipation formula, next slide, times $n \propto a^{-3/2}$)
+    \item Internal dissipation, the tidal quality factor $Q$ (lower $Q$ = more heat per flexing cycle)
+  \end{itemize}
+\end{frame}
+
 % ── Tidal heating rate formula ────────────────────────────
 \begin{frame}{Tidal dissipation rate}
   For a synchronously rotating body on an eccentric orbit, the tidal heating power is (to leading order in $e$):
   \vskip2pt
-  \keyresult{$$\dot{E}_{\mathrm{tidal}} = \frac{21}{2}\,\frac{k_2}{Q}\,\frac{G M_*^2 R^5 n e^2}{a^6}$$}
+  \keyresult{$$\dot{E}_{\mathrm{tidal}} = \frac{21}{2}\,\frac{k_2}{Q}\,\frac{G M_p^2 R^5 n e^2}{a^6}$$}
   \vskip2pt
   where:
   \begin{itemize}
-    \item $k_2$ = Love number (dimensionless, $\sim$0.3 for rocky bodies)
+    \item $k_2$ = Love number: how strongly the body deforms ($\sim$0.3 for rocky bodies)
     \item $Q$ = tidal quality factor (lower = more dissipative)
-    \item $M_*$ = mass of the primary (Jupiter, Saturn, etc.)
+    \item $M_p$ = mass of the primary (Jupiter, Saturn, etc.)
     \item $R$ = radius of the moon
-    \item $n$ = mean motion ($= \sqrt{GM_*/a^3}$); $a$, $e$ = semi-major axis and eccentricity
+    \item $n$ = mean motion ($= \sqrt{GM_p/a^3}$); $a$, $e$ = semi-major axis and eccentricity
   \end{itemize}
   \vskip2pt
   \flushleft
   {\small Note the steep $R^5/a^6$ dependence: heating is dramatic for close-in moons.}
 \end{frame}
+
+% ── Tidal flexing pair ────────────────────────────────────
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{tidal_flexing}}\\
+  {\footnotesize Tidal flexing on an eccentric orbit: the origin of tidal heating. Course schematic.}
+\end{frame}
+
+\begin{frame}{Reading the tidal-flexing schematic}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{tidal_flexing}}
+    \column{0.50\textwidth}
+    \small
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item \textbf{Left, periapsis} ($r = a(1-e)$): the moon is closest and its tidal bulge is largest.
+      \item \textbf{Right, apoapsis} ($r = a(1+e)$): the bulge is smallest.
+      \item Each orbit, the body is squeezed and stretched between the two states; internal friction turns that cyclic work into heat at a rate $\propto e^2/Q$.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Eccentricity is the on-off switch of tidal heating: no $e$, no flexing, no heat.}
+  \end{columns}
+\end{frame}
+
 
 % ── Laplace resonance ─────────────────────────────────────
 \begin{frame}{The Laplace resonance: sustaining eccentricity}
@@ -1160,7 +1175,7 @@
 \end{frame}
 
 \begin{frame}{Reading the Laplace resonance figure}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{laplace_resonance}}
     \column{0.50\textwidth}
@@ -1204,7 +1219,7 @@
 \end{frame}
 
 \begin{frame}{Reading Io's hot-spot map}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{io_volcanic_heatmap}}
     \column{0.50\textwidth}
@@ -1225,9 +1240,9 @@
   \begin{columns}[c]
     \column{0.45\textwidth}
     \centering
-    \includegraphics[width=\textwidth,height=0.38\textheight,keepaspectratio]{enceladus_tiger_stripes_full}
+    \includegraphics[width=\textwidth,height=0.29\textheight,keepaspectratio]{enceladus_tiger_stripes_full}
     \vskip4pt
-    \includegraphics[width=\textwidth,height=0.38\textheight,keepaspectratio]{enceladus_plumes}
+    \includegraphics[width=\textwidth,height=0.29\textheight,keepaspectratio]{enceladus_plumes}
     \source{NASA/JPL/SSI (Cassini)}
 
     \column{0.52\textwidth}
@@ -1246,7 +1261,7 @@
 % ── Enceladus dissipation location ──────────────────────
 \begin{frame}{Where in Enceladus is tidal heat dissipated?}
   Two competing scenarios explain the observed $\sim$16~GW of thermal power:
-  \vskip6pt
+  \vskip1pt
   \begin{columns}[T]
     \column{0.48\textwidth}
     \textbf{Rocky core dissipation:}
@@ -1262,19 +1277,19 @@
     \begin{itemize}
       \item Viscous dissipation concentrated in the warm ice shell base
       \item Positive feedback: softer ice $\rightarrow$ more dissipation
-      \item Can reach 10--20~GW with realistic rheology
+      \item Can reach 10--20~GW with realistic ice rheology (deformation behaviour)
       \item Concentrates heat near the south pole tiger stripes
     \end{itemize}
   \end{columns}
-  \vskip6pt
+  \vskip1pt
   Likely: both contribute, with the ice shell dominating the plume heat flux.
-  \vskip4pt
+  \vskip1pt
   {\tiny\color{ipsText!60} Source: \v{C}adek et al.\ (2016); Hemingway \& Mittal (2019)}
 \end{frame}
 
 % ── Enceladus thermal scan ────────────────────────────────
 \begin{frame}{Where the heat leaves Enceladus}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{enceladus_thermal_map}}
     \column{0.50\textwidth}
@@ -1331,7 +1346,7 @@
 \end{frame}
 
 \begin{frame}{Reading Europa's interior cutaway}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{europa_interior_cutaway}}
     \column{0.50\textwidth}
@@ -1377,7 +1392,7 @@
     \item Seismic core radius: $1830 \pm 40$~km, larger than pre-mission estimates
     \item Reanalyses (2023): a $\sim$1675~km metal core beneath a $\sim$150~km molten silicate layer
     \item Crustal thickness: 24--72~km (two-layer model)
-    \item Heat flow probe stuck at 40~cm depth in unexpectedly cohesive regolith
+    \item Heat flow probe stuck at 40~cm depth in unexpectedly cohesive regolith (the fragmented surface soil)
     \item Upper limit on near-surface heat flux: $\sim$22~mW\,m$^{-2}$
   \end{itemize}
   \vskip6pt
@@ -1392,7 +1407,7 @@
 \end{frame}
 
 \begin{frame}{Reading the InSight cutaway}
-  \begin{columns}[T]
+  \begin{columns}[c]
     \column{0.46\textwidth}
     \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{insight_mars_cutaway}}
     \column{0.50\textwidth}

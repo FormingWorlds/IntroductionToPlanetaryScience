@@ -137,7 +137,7 @@ The concept of solid-state convection in planetary mantles often requires a shif
 
 Convection is the dominant heat transport mechanism in:
 - Earth's **mantle** (solid-state convection of slowly creeping rock, with velocities of ~cm/year)
-- Earth's **outer core** (liquid metal convection, driving the geodynamo)
+- Earth's **outer core** (liquid metal convection, driving the **geodynamo**, the convection-powered generator of Earth's magnetic field; {ref}`Lecture 4 <lecture04>`)
 - **Giant planet interiors** (convecting metallic hydrogen and other fluids)
 - Planetary **atmospheres** (rising thermals, Hadley cells)
 
@@ -168,7 +168,7 @@ Schematic of Rayleigh-Bénard convection. A fluid layer of depth $d$ is heated f
 
 ### Comparison
 
-The key distinction is one of **timescale**. Conduction is a diffusive process that becomes prohibitively slow for large bodies. Convection is an advective process that can transport heat over large distances much more rapidly. This difference explains why small bodies (asteroids, small moons) cool primarily by conduction, while larger bodies (terrestrial planets, giant planets) must convect to lose their internal heat.
+The key distinction is one of **timescale**. Conduction is a diffusive process that becomes prohibitively slow for large bodies. Convection is an **advective** process (the moving material itself carries the heat) that can transport heat over large distances much more rapidly. This difference explains why small bodies (asteroids, small moons) cool primarily by conduction, while larger bodies (terrestrial planets, giant planets) must convect to lose their internal heat.
 
 
 ## Blackboard derivation: The conductive cooling timescale
@@ -247,7 +247,7 @@ This analytical solution is of major historical importance. In the late nineteen
 :width: 550px
 :align: center
 
-Half-space cooling solution for the temperature profile beneath cooling oceanic lithosphere. Temperature $T(z,t)=T_s+(T_m-T_s)\,\mathrm{erf}\!\big(z/2\sqrt{\kappa t}\big)$ is shown for ages of 1 to 200 Myr ($T_s=273$ K, $T_m=1600$ K, $\kappa=10^{-6}$ m$^2$ s$^{-1}$). The thermal lithosphere thickens as $\sqrt{t}$, in agreement with seafloor bathymetry and heat-flow observations on young oceanic crust {cite:p}`Turcotte2002`.
+Half-space cooling solution for the temperature profile beneath cooling oceanic lithosphere. Temperature $T(z,t)=T_s+(T_m-T_s)\,\mathrm{erf}\!\big(z/2\sqrt{\kappa t}\big)$ is shown for ages of 1 to 200 Myr ($T_s=273$ K, $T_m=1600$ K, $\kappa=10^{-6}$ m$^2$ s$^{-1}$); $\mathrm{erf}$ is the error function, which rises smoothly from 0 at the surface to 1 at depth. The thermal lithosphere thickens as $\sqrt{t}$, in agreement with seafloor bathymetry (ocean depth) and heat-flow observations on young oceanic crust {cite:p}`Turcotte2002`.
 ```
 
 (rayleigh-nusselt)=
@@ -347,7 +347,7 @@ A convecting planetary interior does not have a uniform temperature gradient. In
 
 1. **Cold thermal boundary layer (TBL) at the top**: a thin conductive layer where temperature drops steeply from the hot interior to the cold surface. In Earth, this is the **lithosphere**, the rigid outer shell of the planet, approximately 100 km thick beneath oceans and up to 200 km beneath continents.
 
-2. **Well-mixed convecting interior**: the bulk of the mantle, where temperatures vary only slowly with depth (following an **adiabatic gradient**). Vigorous convective stirring keeps this region nearly isothermal on large scales.
+2. **Well-mixed convecting interior**: the bulk of the mantle, where temperatures vary only slowly with depth, following an **adiabatic gradient**: the small temperature increase with depth caused by compression alone, with no heat exchanged between rising or sinking material and its surroundings. Vigorous convective stirring keeps this region nearly isothermal on large scales.
 
 3. **Hot thermal boundary layer at the base**: a thin layer above the core–mantle boundary where temperature rises steeply into the hot core. In Earth, this corresponds to the **D'' layer** (pronounced "D double prime", the lowermost ~200 km of the mantle), where the temperature increases from the mantle adiabat (~2500 K) to the core–mantle boundary temperature (~4000 K).
 
@@ -387,14 +387,48 @@ Most other rocky bodies in the solar system (including Venus, Mars, Mercury, and
 Modern taxonomy of tectonic modes for terrestrial planets, beyond the simple mobile-vs-stagnant binary. Active-lid behaviour can present as plate tectonics, ridge-only, or distributed deformation; sub-lithospheric convection-driven tectonics can drive regional or global mobility; episodic (transient) modes can be global or local (non-recyclable "continental" regions); stagnant-lid modes are split into cold (thermal-stress) and hot (heat pipes + vertical cycling; plumes + lower-crust recycling) variants. Reproduced from {cite:p}`Lenardic2018`, Fig. 2.
 ```
 
+This spectrum is not just a classification scheme: numerical mantle convection models reproduce it from a single set of physics. Depending on the strength of the lithosphere and the thermal state of the interior, the same simulations settle into mobile, episodic, sluggish, stagnant, or magmatism-dominated ("squishy") lid regimes ({numref}`fig:tectonic-regime-sims`; {cite:p}`Lyu2025`).
+
+```{figure} figures/lyu2025_tectonic_regimes.avif
+:name: fig:tectonic-regime-sims
+:width: 700px
+:align: center
+
+Six tectonic lid regimes emerging in numerical mantle convection simulations of terrestrial planets. Each annulus shows one simulation snapshot, with temperature on the left half and basalt fraction on the right half: mobile, stagnant, episodic, sluggish, plutonic-squishy, and episodic-squishy lid. Reproduced from {cite:p}`Lyu2025`, Fig. 1 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
+```
+
 Why Earth has plate tectonics while other rocky planets do not is one of the major unsolved problems in geophysics. Factors likely include:
 - The presence of **water** in the mantle, which weakens rocks and enables the formation of narrow shear zones (plate boundaries)
 - The **size** of the planet: a larger planet has more vigorous convection and higher stresses in the lithosphere
 - The **thermal history**: the balance between internal heating and surface cooling
 
+### Whole-mantle or layered convection?
+
+A long-standing question for Earth is whether the mantle convects as a single layer or as two. The mantle transition zone ends at a depth of 660 km with a phase transition in olivine that resists vertical flow: it deflects some subducting slabs and could, in principle, separate the mantle into two independently convecting shells. In **layered convection**, separate circulation systems would operate above and below 660 km, and the upper and lower mantle would exchange little material. In **whole-mantle convection**, convection cells span the full mantle depth: slabs sink through the 660 km boundary into the lower mantle, and plumes rise from the core-mantle boundary to the surface ({numref}`fig:whole-vs-layered`).
+
+Seismic tomography has settled the question in favour of whole-mantle convection. Images of the mantle beneath North America show the Farallon slab (the remnant of an ancient oceanic plate that subducted beneath the continent) descending far below 660 km toward the core-mantle boundary, and global tomographic models trace plume conduits rooted near the core-mantle boundary beneath major hotspots {cite:p}`French2015`. The 660 km phase transition acts as a partial barrier that slows and deforms slabs, but it does not stop them: the mantle convects as one layer.
+
+```{figure} figures/whole_vs_layered_convection.avif
+:name: fig:whole-vs-layered
+:width: 700px
+:align: center
+
+Layered versus whole-mantle convection. In layered convection (left), the phase transition at 660 km depth would act as an impermeable boundary, with separate circulation systems in the upper and lower mantle. In whole-mantle convection (right), the 660 km boundary is only a partial barrier: convection cells span the full mantle depth, subducting slabs sink through the transition zone to the deep mantle, and plumes rise from the core-mantle boundary (CMB) to feed surface volcanism. Seismic tomography supports the whole-mantle picture. Custom schematic.
+```
+
 ### Mantle plumes
 
 In addition to the broad convective circulation, hot upwellings can develop from the hot thermal boundary layer at the base of the mantle. These **mantle plumes** are narrow columns of anomalously hot material that rise through the mantle and produce localised volcanism at the surface (so-called **hotspots**, e.g., Hawaii, Iceland, Yellowstone; {numref}`fig:global-hotspots`). Plumes are a direct consequence of the thermal boundary layer structure: just as the cold TBL can become gravitationally unstable and sink (subduction), the hot TBL can become unstable and rise. Whole-mantle seismic tomography directly images broad plume conduits rooted near the core-mantle boundary beneath several major hotspots {cite:p}`French2015`. A cutaway view of the layered Earth that ties the mantle-convection picture to the inner-core/outer-core/mantle/crust geometry is shown in {numref}`fig:earth-interior-heat`.
+
+Plumes and plates represent two distinct modes of mantle upwelling ({numref}`fig:plume-vs-ridge`). Upwelling beneath a mid-ocean ridge is **passive**: the diverging plates pull apart, and ambient-temperature mantle rises broadly to fill the gap, melting by **decompression** (the drop in pressure lowers the melting point below the rock's actual temperature). A plume, in contrast, is an **active** upwelling: a narrow conduit of material some 200 to 300 K hotter than its surroundings, driven upward by its own buoyancy and rooted in the deep mantle. Because a plume is anchored in the deep mantle while the plate above it moves, a long-lived plume produces an age-progressive chain of volcanoes such as the Hawaiian-Emperor chain. When a large plume head first arrives beneath the lithosphere, it can generate a **Large Igneous Province (LIP)**: a region covered by exceptionally voluminous eruptions of basalt (the dark volcanic rock produced when mantle rock melts), far larger than any historical volcanic activity. Examples include the Deccan Traps in India, the Siberian Traps, and the Ontong-Java Plateau in the western Pacific. The eruption ages of several LIPs coincide with mass extinction events in the fossil record, most prominently the Siberian Traps with the end-Permian extinction {cite:p}`CourtillotRenne2003`.
+
+```{figure} figures/plume_vs_ridge_upwelling.avif
+:name: fig:plume-vs-ridge
+:width: 700px
+:align: center
+
+Two modes of mantle upwelling. Beneath a mid-ocean ridge (left), upwelling is passive: diverging plates draw a broad column of ambient-temperature mantle upward, which melts by decompression at shallow depth. In a mantle plume (right), upwelling is active: a narrow conduit of anomalously hot material ($\Delta T \approx 200$ to $300$ K) rises buoyantly from the deep mantle, feeding a hotspot volcano; the moving plate carries older, extinct volcanoes away from the plume. Custom schematic.
+```
 
 ```{figure} figures/usgs_global_hotspots_map.avif
 :name: fig:global-hotspots
@@ -424,7 +458,7 @@ Earth's average surface heat flux is approximately $90$ mW m$^{-2}$, totalling a
 - **Oceanic regions** account for about 70% of the total heat loss, despite covering about 60% of the surface. The high oceanic heat flow reflects the thinness of oceanic lithosphere and the creation of new, hot crust at mid-ocean ridges.
 - **Continental regions** account for about 30% of the total heat loss. Continental heat flow is lower on average because the thick continental lithosphere is an effective insulator, and because continents preferentially accumulate heat-producing elements (U, Th, K) in the crust.
 
-The spatial pattern of heat flow (highest at mid-ocean ridges, decreasing with the age of the ocean floor, lowest in old continental shields; {numref}`fig:earth-heat-flow-map`) is a direct expression of plate tectonics and confirms that convection controls Earth's heat loss. The age-dependence is captured by the half-space cooling prediction $q\propto t^{-1/2}$ ({numref}`fig:q-vs-age`), which describes the data well over young oceanic crust and converges to a finite asymptote at old ages.
+The spatial pattern of heat flow (highest at mid-ocean ridges, decreasing with the age of the ocean floor, lowest in old continental shields, the ancient stable cores of the continents; {numref}`fig:earth-heat-flow-map`) is a direct expression of plate tectonics and confirms that convection controls Earth's heat loss. The age-dependence is captured by the half-space cooling prediction $q\propto t^{-1/2}$ ({numref}`fig:q-vs-age`), which describes the data well over young oceanic crust and converges to a finite asymptote at old ages.
 
 ```{figure} figures/earth_heat_flow_map.avif
 :name: fig:earth-heat-flow-map
@@ -439,7 +473,7 @@ Global surface heat-flow map of Earth (mW m$^{-2}$). The map combines a half-spa
 :width: 600px
 :align: center
 
-Surface heat flux $q$ as a function of seafloor age, predicted by the half-space cooling model: $q(t)=k(T_m-T_s)/\sqrt{\pi\kappa t}\propto t^{-1/2}$ (blue curve, $k=3.3$ W m$^{-1}$ K$^{-1}$, $\Delta T=1327$ K, $\kappa=10^{-6}$ m$^2$ s$^{-1}$). The plate-cooling model converges to a finite asymptote (~48 mW m$^{-2}$, dashed red) at very old ages once the lithosphere reaches its equilibrium thickness {cite:p}`SteinStein1992`. Direct heat-flow measurements over young hydrothermally cooled ridges fall below the half-space curve because hydrothermal circulation removes additional heat.
+Surface heat flux $q$ as a function of seafloor age. The half-space cooling model predicts $q(t)=k(T_m-T_s)/\sqrt{\pi\kappa t}\propto t^{-1/2}$ (blue curve, $k=3.3$ W m$^{-1}$ K$^{-1}$, $\Delta T=1327$ K, $\kappa=10^{-6}$ m$^2$ s$^{-1}$); the plate-cooling model instead converges to a finite asymptote (~48 mW m$^{-2}$, dashed red) at old ages once the lithosphere reaches its equilibrium thickness {cite:p}`SteinStein1992`. Grey points show the global compilation of marine heat-flow measurements of {cite:t}`Richards2018`, binned in 2.5 Myr age windows (filled circles: bin median with interquartile range; open circles: bins containing a single measurement). Over young crust the compilation retains only measurements at thickly sedimented sites away from seamounts, where hydrothermal circulation (seawater circulating through the hot, permeable young crust) is suppressed, and corrects for the thermal effect of rapid sedimentation; these filtered data follow the conductive $t^{-1/2}$ prediction, while raw unfiltered surveys over young crust fall well below it because hydrothermal circulation carries part of the heat. At old ages the measurements level off near the plate-cooling asymptote.
 ```
 
 ### Comparison across the solar system
@@ -458,7 +492,7 @@ The Moon and Mars have much lower surface heat flow than Earth, which reflects t
 :width: 700px
 :align: center
 
-NASA InSight mission concept showing how marsquake travel times constrain Mars's interior structure. The lander's seismometer (SEIS) records P- and S-wave arrivals from quakes and from impactors, which combined with InSight's heat-flow probe (HP$^3$) and rotation-rate measurements yielded the first direct seismic constraints on the radius of the Martian core, the thickness of the crust, and the structure of the mantle {cite:p}`Stahler2021,Khan2021`; the 2023 reanalyses place the metallic-core radius at $\sim 1675$ km beneath a molten silicate layer {cite:p}`Khan2023,Samuel2023`. Credit: NASA/JPL-Caltech, public domain.
+NASA InSight mission concept showing how marsquake travel times constrain Mars's interior structure. The lander's seismometer (SEIS) records the arrivals of P- and S-waves (compressional and shear seismic waves) from quakes and from impactors, which combined with InSight's heat-flow probe (HP$^3$) and rotation-rate measurements yielded the first direct seismic constraints on the radius of the Martian core, the thickness of the crust, and the structure of the mantle {cite:p}`Stahler2021,Khan2021`; the 2023 reanalyses place the metallic-core radius at $\sim 1675$ km beneath a molten silicate layer {cite:p}`Khan2023,Samuel2023`. Credit: NASA/JPL-Caltech, public domain.
 ```
 
 ### Connection to tectonic regime
@@ -475,7 +509,7 @@ We introduced tidal forces in {ref}`Lecture 2 <lecture02>` as a consequence of t
 
 ### How tidal heating works
 
-On a circular orbit, a tidally locked moon maintains a constant distance from its planet, and the tidal bulge points steadily toward the planet: there is no flexing and no heat generation. But if the orbit has even a small **eccentricity**, the distance varies periodically: at periapsis the tidal force is stronger (and the moon moves faster than it rotates), and at apoapsis it is weaker (and the moon rotates faster than it orbits). The result is a continually varying tidal deformation: the body is rhythmically squeezed and stretched every orbit ({numref}`fig:tidal-flexing`). The energy dissipated in this cyclic deformation is converted to heat.
+On a circular orbit, a tidally locked moon maintains a constant distance from its planet, and the tidal bulge points steadily toward the planet: there is no flexing and no heat generation. But if the orbit has even a small **eccentricity**, the distance varies periodically: at periapsis (the closest point of the orbit) the tidal force is stronger and the moon moves faster than it rotates, and at apoapsis (the farthest point) it is weaker and the moon rotates faster than it orbits. The result is a continually varying tidal deformation: the body is rhythmically squeezed and stretched every orbit ({numref}`fig:tidal-flexing`). The energy dissipated in this cyclic deformation is converted to heat.
 
 ```{figure} figures/tidal_flexing.avif
 :name: fig:tidal-flexing
@@ -487,9 +521,17 @@ Origin of tidal heating on an eccentric orbit. **Left:** at periapsis ($r=a(1-e)
 
 The tidal heating rate depends on:
 - **Orbital eccentricity** $e$: zero eccentricity means zero tidal heating
-- **Orbital distance** $a$: tidal forces fall off steeply with distance (heating $\propto a^{-15/2}$ for a given eccentricity, combining the explicit $a^{-6}$ in the dissipation formula with the Keplerian scaling $n \propto a^{-3/2}$ of the mean motion)
+- **Orbital distance** $a$: tidal forces fall off steeply with distance (heating $\propto a^{-15/2}$ for a given eccentricity, combining the explicit $a^{-6}$ in Eq. {eq}`eq:tidal-heating` with the Keplerian scaling $n \propto a^{-3/2}$ of the mean motion)
 - **Internal dissipation**, parameterised by the tidal quality factor $Q$ (lower $Q$ means more dissipation per deformation cycle)
-- **Body rigidity**: a stiffer body deforms less per cycle but may dissipate more depending on rheology
+- **Body rigidity**: a stiffer body deforms less per cycle but may dissipate more depending on its rheology (how the material deforms and flows under stress)
+
+These dependencies are collected in the standard expression for the tidal heating rate of a synchronously rotating satellite on an orbit of small eccentricity {cite:p}`Peale1979`:
+
+$$
+\dot E_\mathrm{tidal} = \frac{21}{2}\,\frac{k_2}{Q}\,\frac{G M_p^2 R^5 n\, e^2}{a^6}
+$$ (eq:tidal-heating)
+
+where $M_p$ is the mass of the planet, $R$ the radius of the satellite, $n = \sqrt{G M_p/a^3}$ the orbital mean motion, and $k_2$ the tidal **Love number**, which measures how strongly the satellite's shape responds to the tidal potential (larger $k_2$ means a larger tidal bulge for the same forcing). Every dependence discussed above is visible in this formula: the heating vanishes as $e^2 \to 0$, scales inversely with $Q$, grows steeply with satellite radius as $R^5$, and falls off with distance as $a^{-6} \times n \propto a^{-15/2}$.
 
 ### Io: the most volcanically active body in the solar system
 
@@ -534,12 +576,12 @@ The Tvashtar volcanic plume on Io, captured by the New Horizons spacecraft durin
 :width: 600px
 :align: center
 
-Global map of Io's 343 catalogued volcanic hot spots, in Mollweide projection centred on the anti-Jovian point, from nearly 30 years of combined Galileo, Juno, New Horizons, and ground-based monitoring. Marker size and colour indicate each hot spot's estimated power output, increasing from blue to yellow; prominent volcanoes are named, with Loki Patera the most powerful at $6000$ to $12{,}000$ GW. The catalogued hot spots emit $58 \pm 1$ TW, approximately 55% of Io's total endogenic heat output of $105 \pm 12$ TW; the remainder is attributed to buried and subsurface volcanic activity. The emission pattern is consistent with tidal-dissipation heating driven by the Laplace-resonance forcing of Io's orbital eccentricity. Reproduced from {cite:t}`Davies2024PSJ`, Fig. 1.
+Global map of Io's 343 catalogued volcanic hot spots, in Mollweide (equal-area) projection centred on the anti-Jovian point, from nearly 30 years of combined Galileo, Juno, New Horizons, and ground-based monitoring. Marker size and colour indicate each hot spot's estimated power output, increasing from blue to yellow; prominent volcanoes are named, with Loki Patera the most powerful at $6000$ to $12{,}000$ GW. The catalogued hot spots emit $58 \pm 1$ TW, approximately 55% of Io's total endogenic heat output of $105 \pm 12$ TW; the remainder is attributed to buried and subsurface volcanic activity. The emission pattern is consistent with tidal-dissipation heating driven by the Laplace-resonance forcing of Io's orbital eccentricity. Reproduced from {cite:t}`Davies2024PSJ`, Fig. 1.
 ```
 
 ### Enceladus: a tiny moon with a big secret
 
-Saturn's small moon **Enceladus** (radius 252 km) provides another dramatic example of tidal heating. In 2005, the Cassini spacecraft discovered jets of water ice and vapour erupting from four parallel fractures (dubbed "tiger stripes") near the south pole {cite:p}`Porco2006`. Subsequent CIRS far-infrared measurements showed that the south polar terrain emits $\sim 16$ GW of thermal power ($15.8 \pm 3.1$ GW; {cite:t}`Howett2011`), revising upward an earlier $\sim 6$ GW estimate, and far more than can be explained by radioactive decay alone for such a small body.
+Saturn's small moon **Enceladus** (radius 252 km) provides another dramatic example of tidal heating. In 2005, the Cassini spacecraft discovered jets of water ice and vapour erupting from four parallel fractures (dubbed "tiger stripes") near the south pole {cite:p}`Porco2006`. Subsequent far-infrared measurements with Cassini's Composite Infrared Spectrometer (CIRS) showed that the south polar terrain emits $\sim 16$ GW of thermal power ($15.8 \pm 3.1$ GW; {cite:t}`Howett2011`), revising upward an earlier $\sim 6$ GW estimate, and far more than can be explained by radioactive decay alone for such a small body.
 
 The heat source is tidal dissipation, driven by Enceladus's 2:1 orbital resonance with the larger moon Dione. The heating is sufficient to maintain a **global subsurface ocean** of liquid water beneath an ice shell $\sim$15–25 km thick {cite:p}`NimmoPappalardo2016`. The erupted material from the tiger stripes ({numref}`fig:enceladus-tiger-stripes-full`, {numref}`fig:enceladus-plumes`) feeds Saturn's E ring and provides direct samples of the subsurface ocean: analysis by Cassini's instruments revealed the presence of salts, silica nanoparticles (indicating hydrothermal activity on the ocean floor), and even complex organic molecules. The thermal-emission map in {numref}`fig:enceladus-thermal` localises the heat output along the four "tiger stripe" fractures.
 
@@ -588,7 +630,7 @@ These "ocean worlds" are among the most promising targets in the search for extr
 
 ## Recent advances
 
-NASA's InSight mission (2018–2022) provided the first direct seismological measurements of another planet, fundamentally advancing our understanding of Mars's thermal state. Seismic wave travel times revealed Mars's core size, mantle structure, and crustal thickness {cite:p}`Stahler2021,Khan2021`; reanalyses place the metallic-core radius at $\sim$1675 km beneath a $\sim$150 km molten silicate layer {cite:p}`Khan2023,Samuel2023` (see also {ref}`Lecture 8 <lecture08>`). The mission's heat flow probe (HP$^3$) was unable to penetrate to the required depth due to unexpected soil properties, but the attempt provided valuable constraints on regolith thermal conductivity and near-surface heat flow.
+NASA's InSight mission (2018–2022) provided the first direct seismological measurements of another planet, fundamentally advancing our understanding of Mars's thermal state. Seismic wave travel times revealed Mars's core size, mantle structure, and crustal thickness {cite:p}`Stahler2021,Khan2021`; reanalyses place the metallic-core radius at $\sim$1675 km beneath a $\sim$150 km molten silicate layer {cite:p}`Khan2023,Samuel2023` (see also {ref}`Lecture 8 <lecture08>`). The mission's heat flow probe (HP$^3$) was unable to penetrate to the required depth due to unexpected soil properties, but the attempt provided valuable constraints on the thermal conductivity of the regolith (the fragmented surface soil) and on near-surface heat flow.
 
 Tidal heating models for icy moons have been refined using updated rheological models and orbital evolution calculations {cite:p}`NimmoPappalardo2016`. Recent work suggests that tidal dissipation in Enceladus may be concentrated in its ice shell rather than its rocky core, affecting predictions for the longevity and temperature of its subsurface ocean. For Europa, estimates of ice shell thickness have been narrowed to $\sim$15–25 km using multiple independent constraints, with implications for the Europa Clipper mission {cite:p}`HowellPappalardo2020` (see also {ref}`Lecture 14 <lecture14>`).
 
