@@ -532,7 +532,17 @@ Earth's core extends from the centre of the planet to a depth of 2890 km (the co
 Cross-section of Earth's interior, showing the solid inner core ($r < 1220$ km), the liquid iron-alloy outer core (1220–3480 km), the silicate mantle (from $\sim 30$ km depth at the crust base down to 2890 km at the core-mantle boundary), and the thin crust. The geodynamo operates in the convecting outer core; the inner core grows slowly as light elements are expelled into the outer core. Credit: NASA/JPL-Caltech/SwRI/J.E.P. Connerney (PIA25063), public domain.
 ```
 
-The structure above is inferred primarily from seismology: the travel times of $P$ and $S$ waves through Earth, recorded by global seismometer networks, constrain the density and elastic-wave velocities as a function of depth ({numref}`fig:prem`). The most widely used reference profile is the **Preliminary Reference Earth Model** {cite:p}`Dziewonski1981`.
+The structure above is inferred primarily from seismology, and the logic is illustrated in {numref}`fig:seismic-shadow-zones`. $S$ waves are transverse waves and cannot travel through a liquid: they are absorbed at the core-mantle boundary, so no direct $S$ wave arrives beyond an epicentral distance of about 103°. The absence of shear-wave arrivals over the entire far hemisphere is the primary evidence that the outer core is liquid, and the systematic delay and deflection of waves crossing the deep interior first revealed that Earth has a core at all {cite:p}`Oldham1906`. $P$ waves do cross the core, but the sharp drop in $P$-wave velocity at the core-mantle boundary (from about 13.7 to 8 km s$^{-1}$) refracts them steeply towards the vertical, which opens a **shadow zone** between epicentral distances of about 103° and 143° in which no direct $P$ wave arrives; the refracted core phases (PKP) emerge only beyond 143°. In 1936, Inge Lehmann explained weak $P$ arrivals *inside* the shadow zone as waves refracted a second time by a distinct solid inner core, the phase now labelled PKIKP.
+
+```{figure} figures/seismic_shadow_zones.avif
+:name: fig:seismic-shadow-zones
+:width: 100%
+:align: center
+
+How $P$ and $S$ waves constrain the structure of the core. (a) $S$ waves (red) travel through the solid mantle but stop at the core-mantle boundary because the liquid outer core cannot support shear: no direct $S$ wave arrives beyond an epicentral distance of about 103°, which shows that the outer core is liquid. (b) $P$ waves (blue) cross the core but are refracted towards the vertical at the core-mantle boundary, where the $P$-wave velocity drops from about 13.7 to 8 km s$^{-1}$; the refracted rays (PKP) emerge only beyond about 143°, leaving a $P$-wave shadow zone between 103° and 143°. Waves refracted a second time through the solid inner core (PKIKP, dashed) arrive inside the shadow zone; their detection revealed the inner core. The shadow-zone argument located the core itself {cite:p}`Oldham1906`. Layer radii are to scale; the ray paths are schematic.
+```
+
+The travel times of these phases, recorded by global seismometer networks, constrain the density and elastic-wave velocities as a function of depth ({numref}`fig:prem`). The most widely used reference profile is the **Preliminary Reference Earth Model** {cite:p}`Dziewonski1981`.
 
 ```{figure} figures/prem_profile.avif
 :name: fig:prem
@@ -550,7 +560,15 @@ Convection in the outer core is driven by two sources of buoyancy {cite:p}`Rober
 
 2. **Compositional convection:** As the inner core crystallises, it preferentially incorporates iron and rejects light elements (S, Si, O) into the liquid outer core. This light, buoyant fluid rises, providing a powerful source of convection. The latent heat released by crystallisation further contributes to thermal buoyancy.
 
-Compositional convection is thought to be the dominant driver of the present-day geodynamo. The growth of the inner core, currently at a rate of about 0.5 mm per year, provides a steady supply of both compositional buoyancy and latent heat.
+Compositional convection is thought to be the dominant driver of the present-day geodynamo. The growth of the inner core, currently at a rate of about 0.5 mm per year, provides a steady supply of both compositional buoyancy and latent heat. The two buoyancy sources are sketched in {numref}`fig:core-convection-drivers`.
+
+```{figure} figures/core_convection_drivers.avif
+:name: fig:core-convection-drivers
+:width: 100%
+:align: center
+
+The two buoyancy sources that drive convection in Earth's liquid outer core. (a) Thermal convection: the core is hotter than the overlying mantle, so heat flows out across the core-mantle boundary; fluid cooled near the top of the core sinks while hot fluid rises from depth. (b) Compositional convection: iron crystallises onto the growing inner core and the light elements (S, Si, O) are rejected into the liquid at the inner-core boundary; the buoyant, light-element-enriched fluid rises, and the latent heat of crystallisation adds thermal buoyancy. Compositional buoyancy dominates the power budget of the present-day geodynamo {cite:p}`Roberts2013`. Layer radii are to scale; the flow arrows are schematic.
+```
 
 ### Field morphology
 
