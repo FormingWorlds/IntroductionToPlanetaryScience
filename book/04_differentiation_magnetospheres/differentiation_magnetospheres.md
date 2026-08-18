@@ -716,14 +716,14 @@ $$
 r_{\mathrm{mp}} \approx 10 \, R_\oplus
 $$ (eq:magnetopause-distance)
 
-for Earth under typical solar wind conditions. The dayside pressure-balance geometry, with bow shock, magnetosheath, and compressed dipolar field, is sketched in {numref}`fig:magnetopause-balance`.
+for Earth under typical solar wind conditions. The dayside pressure-balance geometry, with the bow shock, the magnetosheath, and the compressed dipolar field, is shown in {numref}`fig:magnetopause-balance`.
 
-```{figure} figures/magnetopause_pressure_balance.avif
+```{figure} figures/magnetosphere_anatomy_esa.avif
 :name: fig:magnetopause-balance
-:width: 600px
+:width: 700px
 :align: center
 
-Schematic of pressure balance at the dayside magnetopause. The supersonic solar wind (green arrows, arriving from the left) is decelerated at the bow shock (orange dashed curve) and then deflected around the magnetopause (red curve), which compresses Earth's predominantly dipolar field on the dayside and stretches it into a long magnetotail on the nightside. The boundary lies at the radius $r_{\mathrm{mp}}$ where the solar wind ram pressure equals the magnetic pressure of the planetary field (Eq. {eq}`eq:magnetopause-pressure`); for Earth under typical conditions $r_{\mathrm{mp}} \approx 10\,R_\oplus$. Adapted from textbook descriptions in {cite:t}`Kivelson1995`.
+Anatomy of Earth's magnetosphere. The solar wind (orange arrows, arriving from the left) is slowed and deflected at the bow shock, and the shocked plasma flows around the planet through the turbulent magnetosheath. The magnetopause is the surface where the solar wind ram pressure is balanced by the magnetic pressure of Earth's field (Eq. {eq}`eq:magnetopause-pressure`); under typical conditions it lies at the standoff distance $r_{\mathrm{mp}} \approx 10\,R_\oplus$. Inside it, the dayside field is compressed, while the nightside field is stretched into the long magnetotail. Credit: [ESA](https://www.esa.int/ESA_Multimedia/Images/2026/02/Anatomy_of_Earth_s_magnetosphere), [CC BY-SA 3.0 IGO](https://creativecommons.org/licenses/by-sa/3.0/igo/).
 ```
 
 ### Magnetosphere structure
