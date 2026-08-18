@@ -3,14 +3,14 @@
 Two-panel schematic contrasting the classical and the revised picture
 of volatile delivery to the terrestrial planets. Panel (a): a fixed
 snow line separates a dry inner disk from an ice-rich outer disk, and
-water arrives late from outside. Panel (b): the snow line migrates
-inward as the disk cools, so early inner-disk planetesimals accrete
+water arrives late from outside. Panel (b): the snow line sweeps
+outward and then back inward, early inner-disk planetesimals carry
 ice, and Jupiter's growth blocks the inward drift of icy pebbles,
 splitting the disk into the NC and CC meteorite reservoirs.
 
 Caption / figure id : `fig:volatile-delivery`
 Markdown source     : book/04_differentiation_magnetospheres/differentiation_magnetospheres.md
-Citation keys       : Alexander2019a, Lichtenberg2021, Grewal2019
+Citation keys       : Alexander2019a, Lichtenberg2021, Grewal2019, Grewal2024
 """
 from __future__ import annotations
 
@@ -88,12 +88,16 @@ def panel_b(ax):
                          edgecolor="0.45", lw=0.8))
     ax.text(5.22, -0.22, "Jupiter", ha="center", va="top", fontsize=10,
             color="0.2")
-    # Snow line migrates inward
-    ax.add_patch(FancyArrowPatch((4.2, 1.05), (1.3, 1.05),
-                                 arrowstyle="-|>", mutation_scale=16,
+    # Snow line sweeps outward early, then back inward as the disk cools
+    ax.add_patch(FancyArrowPatch((1.3, 1.05), (4.2, 1.05),
+                                 arrowstyle="<|-|>", mutation_scale=16,
                                  lw=1.4, ls="--", color="0.3"))
-    ax.text(2.75, 1.20, "snow line moves inward as the disk cools",
+    ax.text(2.75, 1.20, "snow line sweeps outward, then back in",
             ha="center", va="bottom", fontsize=10, color="0.25")
+    # Ice-bearing bodies inside the inner reservoir
+    for x in (1.1, 1.9, 2.7, 3.5):
+        ax.add_patch(Circle((x, 0.45), 0.06, facecolor=ICE_DOT,
+                            edgecolor="none"))
     # Icy pebbles drift inward and pile up at Jupiter
     for x in (6.0, 6.3, 6.6):
         ax.add_patch(Circle((x, 0.45), 0.045, facecolor=ICE_DOT,
