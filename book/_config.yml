@@ -20,9 +20,11 @@ bibtex_bibfiles:
 sphinx:
   extra_extensions:
     - sphinx_proof
+    - sphinxcontrib.rsvgconverter
   config:
     bibtex_reference_style: author_year
     bibtex_default_style: chicago
+    
     suppress_warnings:
       - bibtex.duplicate_citation
     # Per-lecture figure numbering: "Fig. 4.3" rather than "Fig. 93".
