@@ -99,6 +99,17 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}{Why the magma ocean stage is essential}
+  Metal--silicate separation needs a \textbf{liquid} mantle.
+  \vskip8pt
+  \begin{itemize}
+    \item \textbf{Liquid mantle:} iron droplets sink at m\,s$^{-1}$, a core forms within weeks
+    \item \textbf{Solid mantle:} rock flows so slowly ($\mu \sim 10^{21}$~Pa\,s, 22 orders of magnitude higher than silicate melt) that even a km-sized iron body would need longer than the age of the universe to sink to the centre
+  \end{itemize}
+  \vskip8pt
+  \keyresult{Core formation happens while the planet is molten, or not at all; chondritic asteroids that never melted never formed cores.}
+\end{frame}
+
 % ── Magma ocean state ──────────────────────────────────────
 \begin{frame}{The magma ocean state}
   After accretion, the outer few thousand kilometres of a terrestrial planet are molten.
@@ -130,7 +141,8 @@
 \begin{frame}
   \centering
   \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.70\paperheight, keepaspectratio]{kegerreis2022_moon_impact}}\\
-  {\footnotesize SPH simulation of the Moon-forming giant impact: (a) Mars-sized Theia approaches the proto-Earth, (b) contact and tidal disruption, (c) part of the debris falls back while outer clumps survive, (d) a satellite on a wide orbit. The animated version is in the lecture notes. Kegerreis et al.\ (2022).}
+  {\footnotesize SPH simulation of the Moon-forming giant impact: (a) Mars-sized Theia approaches the proto-Earth, (b) contact and tidal disruption, (c) part of the debris falls back while outer clumps survive, (d) a satellite on a wide orbit. Kegerreis et al.\ (2022).}\\[2pt]
+  \mediabutton{https://ips.formingworlds.space/_images/kegerreis2022_moon_impact.gif}{Play animation}\hspace{6pt}\mediabutton{https://www.youtube.com/watch?v=gFYZ9k0aFsk}{Source video}
 \end{frame}
 
 \begin{frame}{Giant impacts that remove mantles}
@@ -164,6 +176,12 @@
   \end{itemize}
   \vskip2pt
   \keyresult{One oblique collision at several escape velocities converts an ordinary protoplanet into iron-rich Mercury.}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.74\paperheight, keepaspectratio]{mola_mars_topography}}\\
+  {\footnotesize Mars's hemispheric dichotomy in MOLA global topography: smooth, low northern plains (blue) against cratered southern highlands (orange to red); the deep blue basin on the right is Hellas. Credit: NASA/JPL.}
 \end{frame}
 
 % ── Late veneer ────────────────────────────────────────────
@@ -238,17 +256,18 @@
 % ── Partition coefficient pressure dependence ────────────
 \begin{frame}{Why silicon is in the core}
   Partition coefficients depend strongly on pressure, temperature, and oxygen fugacity (an effective O$_2$ partial pressure setting the melt's redox state).
-  \vskip6pt
+  \vskip2pt
   \begin{itemize}
     \item At low pressure ($<$10~GPa): Si is strongly lithophile, $D_\mathrm{Si}^{\mathrm{met/sil}} \ll 1$
     \item At 40--60~GPa (deep magma ocean base): $D_\mathrm{Si}^{\mathrm{met/sil}}$ rises to $\sim$1
     \item This implies Earth's core contains \textbf{several wt\%} silicon
     \item Si in core helps explain the $\sim$5--10\% core density deficit (Lecture~8)
+    \item Not the only candidate: S, O, C, and H are invoked alongside Si, in proportions set by the redox conditions of core formation
   \end{itemize}
-  \vskip6pt
+  \vskip4pt
   \keyresult{Deep magma ocean partitioning (40--60 GPa) is the standard model for Earth's core composition, matching observed siderophile element depletions.}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Rubie et al.\ (2015); Fischer et al.\ (2015)}
+  {\tiny\color{ipsText!60} Source: Rubie et al.\ (2015); Fischer et al.\ (2015); reviews: Hirose et al.\ (2021); Shahar et al.\ (2026)}
 \end{frame}
 
 \begin{frame}
@@ -264,9 +283,9 @@
     \column{0.50\textwidth}
     \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
-      \item Curves: laboratory $D^{\mathrm{met/sil}}$ for Ni, Co, V, Cr from 1 to 75 GPa at magma-ocean temperatures, 2 log-units below the iron-w\"ustite buffer (a standard redox reference scale).
-      \item Grey band: the depletion level the present-day bulk silicate Earth requires.
-      \item All four curves cross the band near 40--60 GPa: equilibration at the base of a 1000--1500 km deep magma ocean.
+      \item Curves: laboratory $D^{\mathrm{met/sil}}$ for Ni and Co at magma-ocean conditions. At low pressure $D \sim 10^3$--$10^4$: the mantle should keep almost no Ni or Co.
+      \item Grey band: $D \approx 24$--26, required by the Ni and Co content actually observed in the mantle.
+      \item Both curves reach the band only near 40--60 GPa (blue band): equilibration at 54\,$\pm$\,5 GPa, the base of a 1000--1500 km deep magma ocean (Fischer et al.\ 2015).
     \end{itemize}
     \vskip2pt\relax
     \keyresult{The mantle's siderophile depletions remember the depth of the magma ocean in which the core formed.}
@@ -287,13 +306,13 @@
     \toprule
     \textbf{Body} & $\boldsymbol{\varepsilon^{182}\mathrm{W}}$ & \textbf{Core formation timing} \\
     \midrule
-    Earth & $+2$ & 30--60~Myr after solar system \\
+    Earth & $+2$ & two-stage age $\sim$30~Myr (lower limit) \\
     Mars  & $+0.4$ (bulk) & complete within $\sim$10~Myr \\
     Moon  & $\sim$Earth & Consistent with giant impact \\
     \bottomrule
   \end{tabular}
   \vskip6pt
-  {\tiny\color{ipsText!60} Source: Kleine et al.\ (2009), \textit{Geochim. Cosmochim. Acta}}
+  {\tiny\color{ipsText!60} Sources: Kleine et al.\ (2009); Nimmo \& Kleine (2015); Kleine \& Walker (2017)}
 \end{frame}
 
 % ── Hf-W evolution schematic ──────────────────────────────
@@ -318,7 +337,13 @@
     \end{itemize}
   \end{columns}
   \vskip8pt
-  Earth's moderate excess ($+2\varepsilon$) places core formation in the 30--60~Myr window.
+  Earth's moderate excess ($+2\varepsilon$) gives a two-stage age of $\sim$30~Myr, a lower limit: the bulk of core formation finished within $\sim$100~Myr (Nimmo \& Kleine 2015; Kleine \& Walker 2017).
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{hf_w_schematic}}\\
+  {\footnotesize (a) Core formation separates parent (Hf, mantle) from daughter reservoir (W, core). (b) Mantle $^{182}$W excess vs.\ time of core formation, two-stage model with Earth's mantle Hf/W: the measured $+2\,\varepsilon$ gives $\sim$28 Myr. Course figure.}
 \end{frame}
 
 \begin{frame}
@@ -1406,7 +1431,7 @@
 \begin{frame}{Summary}
   \begin{enumerate}
     \item Magma oceans drive \textbf{metal--silicate separation}: iron sinks, silicates float
-    \item Hf--W chronometry dates Earth's core formation to $\sim$30--60~Myr (classic); widened to $\sim$30--100~Myr by pressure-dependent partitioning and disequilibrium
+    \item Hf--W chronometry gives a two-stage age of $\sim$30~Myr for Earth's core formation, a lower limit; protracted accretion and partial equilibration place completion within $\sim$100~Myr
     \item Magma ocean crystallisation creates chemically distinct layers (crust, mantle reservoirs)
     \item Dynamos require: conducting fluid + convection + sufficient Rm ($\gtrsim$10--100)
     \item Earth's $\mathrm{Rm} \approx 1750$: vigorous dynamo action
