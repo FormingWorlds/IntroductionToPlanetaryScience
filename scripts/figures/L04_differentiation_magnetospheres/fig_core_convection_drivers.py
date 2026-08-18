@@ -1,20 +1,21 @@
 """Generate Fig. (`fig:core-convection-drivers`).
 
-Two-panel schematic of the two buoyancy sources that drive convection
-in Earth's liquid outer core:
+Two-panel quarter-section cutout of Earth showing the two buoyancy
+sources that drive convection in the liquid outer core:
 
-(a) Thermal convection: the core is hotter than the mantle, so heat
-    flows out across the core-mantle boundary. The cooling from above
-    makes fluid near the CMB dense; it sinks, while hot buoyant fluid
+(a) Thermal convection: the mantle extracts heat across the
+    core-mantle boundary, so the core cools from above. The cooled
+    fluid at the top of the outer core is dense and sinks; hot fluid
     rises from depth.
-(b) Compositional convection: the inner core grows as iron
-    crystallises at the inner-core boundary. Crystallisation rejects
-    the light elements (S, Si, O) into the liquid, and the resulting
-    buoyant, light-element-rich fluid rises; the latent heat released
-    at the ICB adds thermal buoyancy.
+(b) Compositional convection: iron crystallises onto the growing
+    inner core and the light elements (S, Si, O) are rejected into
+    the liquid at the inner-core boundary. The buoyant,
+    light-element-rich fluid rises, displaced fluid sinks back, and
+    the latent heat released at the ICB adds thermal buoyancy.
 
-Geometry: radii to scale (R = 6371 km, CMB at r = 3480 km, ICB at
-r = 1220 km); the flow arrows are illustrative.
+Geometry: quarter wedge (0 to 90 degrees), radii to scale
+(R = 6371 km, CMB at r = 3480 km, ICB at r = 1220 km); the flow
+arrows are illustrative.
 
 Caption / figure id : `fig:core-convection-drivers`
 Markdown source     : book/04_differentiation_magnetospheres/differentiation_magnetospheres.md
@@ -26,7 +27,7 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.patches import Circle, FancyArrowPatch
+from matplotlib.patches import Arc, FancyArrowPatch, Wedge
 
 from scripts.figures._shared.style import apply_style, save_figure
 
@@ -53,12 +54,13 @@ def _pol(r: float, ang_deg: float) -> tuple[float, float]:
 
 
 def draw_shell(ax: plt.Axes) -> None:
-    ax.add_patch(Circle((0, 0), R_SURF, facecolor=C_MANTLE,
-                        edgecolor="0.3", lw=1.2, zorder=1))
-    ax.add_patch(Circle((0, 0), R_CMB, facecolor=C_OUTER,
-                        edgecolor="0.35", lw=1.0, zorder=2))
-    ax.add_patch(Circle((0, 0), R_ICB, facecolor=C_INNER,
-                        edgecolor="0.3", lw=1.0, zorder=3))
+    """Quarter-section cutout, layers outside in, radii to scale."""
+    for r_out, r_in, fill in ((R_SURF, R_CMB, C_MANTLE),
+                              (R_CMB, R_ICB, C_OUTER),
+                              (R_ICB, 0.0, C_INNER)):
+        ax.add_patch(Wedge((0, 0), r_out, 0, 90, width=r_out - r_in,
+                           facecolor=fill, edgecolor="0.35", lw=0.9,
+                           zorder=1))
 
 
 def radial_arrow(ax, ang, r0, r1, color, lw=1.8, wiggle=0.0, zorder=5):
@@ -72,75 +74,78 @@ def radial_arrow(ax, ang, r0, r1, color, lw=1.8, wiggle=0.0, zorder=5):
                                  lw=lw, zorder=zorder))
 
 
+def leader(ax, text, xy_text, xy_tip, color, ha, va="center", fs=9):
+    """Label outside the wedge with a thin leader arrow to its target."""
+    ax.annotate(text, xy=xy_tip, xytext=xy_text, fontsize=fs, ha=ha,
+                va=va, color=color, zorder=6,
+                arrowprops=dict(arrowstyle="->", color=color, lw=1.0,
+                                shrinkA=4, shrinkB=2))
+
+
+def layer_labels(ax) -> None:
+    """Layer names below the horizontal cut face, staggered to fit."""
+    for text, xy_tip, xy_text in (("inner core", (0.10, 0.06), (0.04, -0.26)),
+                                  ("outer core", (0.37, 0.06), (0.40, -0.10)),
+                                  ("mantle", (0.78, 0.06), (0.80, -0.10))):
+        ax.annotate(text, xy=xy_tip, xytext=xy_text, fontsize=9,
+                    ha="center", va="top", color="0.25", zorder=6,
+                    arrowprops=dict(arrowstyle="-|>", color="0.4",
+                                    lw=1.0))
+
+
 def draw_thermal(ax: plt.Axes) -> None:
     draw_shell(ax)
-    # heat crossing the CMB into the mantle
-    for ang in (90, 30, -30, -90, 150, 210):
-        radial_arrow(ax, ang, R_CMB + 0.01, R_CMB + 0.22, C_HOT, lw=2.0)
-    # convection: hot fluid rises (right), cooled fluid sinks (left)
-    for ang in (45, -45):
-        radial_arrow(ax, ang, R_ICB + 0.06, R_CMB - 0.06, C_HOT,
-                     wiggle=0.25)
-    for ang in (135, 225):
-        radial_arrow(ax, ang, R_CMB - 0.06, R_ICB + 0.06, C_COLD,
-                     wiggle=0.25)
+    layer_labels(ax)
+    # the mantle extracts heat across the CMB
+    for ang in (25, 50, 75):
+        radial_arrow(ax, ang, R_CMB - 0.03, R_CMB + 0.20, C_HOT, lw=2.0)
+    # circulation: hot fluid rises, cooled fluid sinks
+    radial_arrow(ax, 33, R_ICB + 0.05, R_CMB - 0.05, C_HOT, wiggle=0.2)
+    radial_arrow(ax, 62, R_CMB - 0.05, R_ICB + 0.05, C_COLD, wiggle=0.2)
 
-    ax.annotate("heat flow\ninto the mantle", xy=(0.0, 0.79),
-                xytext=(0.0, 1.12), fontsize=9, ha="center",
-                color=C_HOT, zorder=6,
-                arrowprops=dict(arrowstyle="->", color=C_HOT, lw=1.0,
-                                shrinkB=2))
-    ax.annotate("hot fluid\nrises", xy=_pol(0.42, 45),
-                xytext=(1.06, 0.06), fontsize=8.5, ha="left",
-                color=C_HOT, zorder=6,
-                arrowprops=dict(arrowstyle="->", color=C_HOT, lw=1.0,
-                                shrinkB=2))
-    ax.annotate("cooled fluid\nsinks", xy=_pol(0.42, 135),
-                xytext=(-1.06, 0.06), fontsize=8.5, ha="right",
-                color=C_COLD, zorder=6,
-                arrowprops=dict(arrowstyle="->", color=C_COLD, lw=1.0,
-                                shrinkB=2))
-    ax.annotate("mantle", xy=(0.0, -0.88), fontsize=9, ha="center",
-                color="#7a5c1e", zorder=6)
+    leader(ax, "heat extracted by the mantle:\nthe core cools from above",
+           (0.72, 1.00), _pol(R_CMB + 0.10, 50), C_HOT, ha="left")
+    leader(ax, "hot fluid\nrises", (1.12, 0.30), _pol(0.44, 33), C_HOT,
+           ha="left")
+    leader(ax, "cooled fluid\nsinks", (-0.12, 0.48), _pol(0.40, 62),
+           C_COLD, ha="right")
     ax.set_title("(a) thermal convection: the core cools", fontsize=11)
 
 
 def draw_compositional(ax: plt.Axes) -> None:
     draw_shell(ax)
     # the growing inner core
-    ax.add_patch(Circle((0, 0), R_ICB + 0.05, facecolor="none",
-                        edgecolor="0.25", lw=1.1, ls="--", zorder=4))
+    r_grow = R_ICB + 0.045
+    ax.add_patch(Arc((0, 0), 2 * r_grow, 2 * r_grow, theta1=0,
+                     theta2=90, ls="--", color="0.25", lw=1.1, zorder=4))
     # iron crystallises onto the inner core
-    for ang in (200, 250):
-        radial_arrow(ax, ang, R_ICB + 0.13, R_ICB + 0.015, "0.25",
+    for ang in (15, 40):
+        radial_arrow(ax, ang, R_ICB + 0.115, R_ICB + 0.015, "0.25",
                      lw=1.5)
-    # light-element-rich buoyant fluid rises from the ICB
-    for ang in (0, 45, 90, 135):
-        radial_arrow(ax, ang, R_ICB + 0.03, R_CMB - 0.05, C_LIGHT,
-                     wiggle=0.3)
+    # buoyant light-element-rich fluid rises; displaced fluid returns
+    for ang in (58, 80):
+        radial_arrow(ax, ang, R_ICB + 0.04, R_CMB - 0.05, C_LIGHT,
+                     wiggle=0.25)
+    radial_arrow(ax, 30, R_CMB - 0.05, R_ICB + 0.10, C_COLD, wiggle=0.2,
+                 lw=1.5)
 
-    ax.annotate("inner core grows:\niron crystallises,\nlatent heat released",
-                xy=_pol(R_ICB + 0.10, 225), xytext=(-1.52, -0.98),
-                fontsize=8.5, ha="left", color="0.15", zorder=6,
-                arrowprops=dict(arrowstyle="->", color="0.25", lw=1.0,
-                                shrinkB=2))
-    ax.annotate("light elements\n(S, Si, O) expelled:\nbuoyant fluid rises",
-                xy=_pol(0.40, 45), xytext=(0.80, 0.86), fontsize=8.5,
-                ha="left", color=C_LIGHT, zorder=6,
-                arrowprops=dict(arrowstyle="->", color=C_LIGHT, lw=1.0,
-                                shrinkB=2))
-    ax.annotate("outer core", xy=(0.0, -0.42), fontsize=9, ha="center",
-                color="#1a4a6e", zorder=6)
+    leader(ax, "iron crystallises onto the\ngrowing inner core (dashed);\nlatent heat released",
+           (0.55, -0.14), _pol(R_ICB + 0.07, 15), "0.15", ha="center",
+           va="top", fs=8.5)
+    leader(ax, "light elements (S, Si, O)\nexpelled: buoyant\nfluid rises",
+           (-0.12, 0.72), _pol(0.42, 80), C_LIGHT, ha="right", fs=8.5)
+    leader(ax, "displaced fluid\nsinks back", (1.12, 0.35),
+           _pol(0.42, 30), C_COLD, ha="left", fs=8.5)
     ax.set_title("(b) compositional convection: the inner core grows",
                  fontsize=11)
 
 
 def make_plot() -> Path:
     apply_style()
-    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(10.6, 5.4))
+    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(11.8, 5.6))
     for ax in (ax_a, ax_b):
-        ax.set_xlim(-1.55, 1.55)
-        ax.set_ylim(-1.25, 1.25)
+        ax.set_xlim(-0.80, 1.72)
+        ax.set_ylim(-0.42, 1.30)
         ax.set_aspect("equal")
         ax.axis("off")
     draw_thermal(ax_a)
