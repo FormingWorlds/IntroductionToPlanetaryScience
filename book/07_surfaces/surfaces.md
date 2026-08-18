@@ -51,7 +51,7 @@ When a projectile strikes a planetary surface at typical solar system velocities
 
 1. **Contact and compression:** The projectile makes contact and a shock wave propagates into both the target and the impactor, compressing them to pressures of $\sim$100 GPa (comparable to pressures at Earth's core–mantle boundary). The shock wave converts kinetic energy into internal energy, vaporising and melting material near the impact point.
 
-2. **Excavation:** The shock wave expands hemispherically outward and reflects off the free surface, generating a rarefaction wave that accelerates material upward and outward. A transient cavity forms, with a depth-to-diameter ratio of roughly 1:3. Material is ejected in a cone-shaped curtain, creating the **ejecta blanket**.
+2. **Excavation:** The shock wave expands hemispherically outward and reflects off the free surface, generating a **rarefaction wave** (a decompression pulse that follows the initial shock) that accelerates material upward and outward. A transient cavity forms, with a depth-to-diameter ratio of roughly 1:3. Material is ejected in a cone-shaped curtain, creating the **ejecta blanket**, the layer of debris draped over the terrain surrounding the crater.
 
 3. **Modification:** The transient cavity is gravitationally unstable. In small craters, the walls simply slump inward, producing a bowl-shaped **simple crater**. In larger craters, the floor rebounds upward (forming a **central peak**) and the walls collapse in terraces, producing a **complex crater**.
 
@@ -122,7 +122,7 @@ This is the **crater scaling law** in the gravity regime {cite:p}`Holsapple1993`
 
 **Worked example: 1 km asteroid on the Moon.**
 
-For our 1 km asteroid ($E \approx 3 \times 10^{20}$ J) impacting the Moon ($\rho \approx 2500$ kg m$^{-3}$ for the regolith, $g = 1.62$ m s$^{-2}$):
+For our 1 km asteroid ($E \approx 3 \times 10^{20}$ J) impacting the Moon's regolith, the loose, fragmented layer of surface debris ($\rho \approx 2500$ kg m$^{-3}$, $g = 1.62$ m s$^{-2}$):
 
 $$
 D \sim \left(\frac{3 \times 10^{20}}{2500 \times 1.62}\right)^{1/4} = \left(7.4 \times 10^{16}\right)^{1/4} \approx 1.65 \times 10^{4} \text{ m} \approx 16.5 \text{ km}
@@ -222,12 +222,12 @@ Volcanism is the primary mechanism by which a planet's internal heat reaches the
 
 The key variable is **magma viscosity**, which is controlled primarily by the $\mathrm{SiO_2}$ (silica) content:
 
-- **Low-viscosity (basaltic) magma** ($\sim$50% $\mathrm{SiO_2}$): Flows easily, producing broad, flat **shield volcanoes** and extensive **flood basalt** plains. Dissolved volatiles ($\mathrm{H_2O}$, $\mathrm{CO_2}$) escape gradually from the fluid magma, so eruptions are typically **effusive** (gentle lava flows). This is the dominant style on the Moon, Mars, and Io.
-- **High-viscosity (silicic) magma** ($>$65% $\mathrm{SiO_2}$): Traps dissolved volatiles until the pressure exceeds the magma's strength, producing violent **explosive** eruptions (e.g., Mount St. Helens, Krakatoa). These build steep **stratovolcanoes** and deposit widespread ash layers. Explosive volcanism requires both high-silica magma *and* significant volatile content, conditions met primarily on Earth.
+- **Low-viscosity (basaltic) magma** ($\sim$50% $\mathrm{SiO_2}$): Flows easily, producing broad, flat **shield volcanoes** and extensive **flood basalt** plains, broad sheets of low-viscosity lava erupted from fissures rather than a single central vent. Dissolved volatiles ($\mathrm{H_2O}$, $\mathrm{CO_2}$) escape gradually from the fluid magma, so eruptions are typically **effusive** (gentle lava flows). This is the dominant style on the Moon, Mars, and Io.
+- **High-viscosity (silicic) magma** ($>$65% $\mathrm{SiO_2}$): Traps dissolved volatiles until the pressure exceeds the magma's strength, producing violent **explosive** eruptions (e.g., Mount St. Helens, Krakatoa). These build steep **stratovolcanoes** (cone-shaped edifices built from alternating layers of lava and ash) and deposit widespread ash layers. Explosive volcanism requires both high-silica magma *and* significant volatile content, conditions met primarily on Earth.
 
 ### Volcanic landforms across the solar system
 
-**Olympus Mons (Mars)** is the largest volcano in the solar system: a shield volcano with a base diameter of $\sim$600 km and a summit elevation of $\sim$21.2 km above the Mars datum (2.4 times the height of Mount Everest above sea level). It grows so large because Mars lacks plate tectonics: the volcanic hotspot remains stationary beneath the lithosphere for billions of years, piling up lava in one location. On Earth, plate motion carries the crust over the hotspot, creating chains of smaller volcanoes (e.g., the Hawaiian Islands) rather than a single massive edifice {cite:p}`dePaterLissauer2010`.
+**Olympus Mons (Mars)** is the largest volcano in the solar system: a shield volcano with a base diameter of $\sim$600 km and a summit elevation of $\sim$21.2 km above the Mars datum (2.4 times the height of Mount Everest above sea level). It grows so large because Mars lacks plate tectonics: the volcanic hotspot remains stationary beneath the **lithosphere**, the rigid outer shell of crust and uppermost mantle, for billions of years, piling up lava in one location. On Earth, plate motion carries the crust over the hotspot, creating chains of smaller volcanoes (e.g., the Hawaiian Islands) rather than a single massive edifice {cite:p}`dePaterLissauer2010`.
 
 **Lunar maria** are vast flood basalt plains that fill ancient impact basins on the Moon's nearside. Radiometric dating of Apollo samples shows they erupted between 3.9 and 3.1 Ga, during a period of residual internal heating. The maria cover $\sim$16% of the lunar surface but are visible from Earth as the dark patches that form the "face" of the Moon.
 
@@ -308,7 +308,7 @@ The stagnant-lid regime is the *default* outcome of mantle convection with stron
 
 ### Tectonic features across the solar system
 
-**Mars** displays dramatic tectonic features despite lacking plate tectonics. The **Tharsis bulge** (a volcanic plateau $\sim$5000 km across and $\sim$10 km high) may have been uplifted by a mantle plume. **Valles Marineris**, the solar system's largest canyon system ($\sim$4000 km long, up to 7 km deep, and 200 km wide), formed by extensional rifting associated with the Tharsis bulge {cite:p}`dePaterLissauer2010`.
+**Mars** displays dramatic tectonic features despite lacking plate tectonics. The **Tharsis bulge** (a volcanic plateau $\sim$5000 km across and $\sim$10 km high) may have been uplifted by a **mantle plume**, a persistent upwelling of hot, buoyant rock rising through the mantle. **Valles Marineris**, the solar system's largest canyon system ($\sim$4000 km long, up to 7 km deep, and 200 km wide), formed by extensional rifting associated with the Tharsis bulge {cite:p}`dePaterLissauer2010`.
 
 **Venus** shows a puzzling tectonic style. The uniform crater density across the surface implies a mean age of $\sim$300–700 Myr, leading to the **episodic resurfacing hypothesis**: Venus may experience periodic catastrophic overturns where the stagnant lid founders and the entire surface is volcanically resurfaced in a geologically short interval. Between these episodes, the surface remains tectonically quiet. This idea remains debated; we will discuss Venus's geology in detail in {ref}`Lecture 9 <lecture09>`.
 
@@ -368,7 +368,7 @@ Cassini Synthetic Aperture Radar (SAR) image of longitudinal dune fields in the 
 Liquid water is the most powerful erosive agent on Earth, and evidence for past fluvial activity on Mars is one of the most important discoveries in planetary science:
 
 - **Earth:** Rivers, glacial meltwater, and coastal waves continuously reshape the surface. The Grand Canyon was carved by the Colorado River over $\sim$5–6 Myr.
-- **Mars:** **Valley networks** on the Noachian-aged southern highlands resemble terrestrial river drainage systems, implying sustained liquid water flow during the late Noachian to early Hesperian, with localised reactivation continuing into the Amazonian for individual systems such as Warrego Valles {cite:p}`Ansan2006`. **Outflow channels** (e.g., Ares Vallis, Kasei Valles) are enormous flood features, hundreds of kilometres long and tens of kilometres wide, carved by catastrophic releases of groundwater. These features are discussed further in {ref}`Lecture 10 <lecture10>`.
+- **Mars:** **Valley networks** on the Noachian-aged southern highlands (the **Noachian** is the oldest of the three main Martian geological periods, spanning roughly 4.1 to 3.7 Ga) resemble terrestrial river drainage systems, implying sustained liquid water flow during the late Noachian to early Hesperian, with localised reactivation continuing into the Amazonian for individual systems such as Warrego Valles {cite:p}`Ansan2006`. **Outflow channels** (e.g., Ares Vallis, Kasei Valles) are enormous flood features, hundreds of kilometres long and tens of kilometres wide, carved by catastrophic releases of groundwater. These features are discussed further in {ref}`Lecture 10 <lecture10>`.
 - **Titan:** Saturn's largest moon has **methane rivers** that carve channels into its icy surface. The Huygens probe imaged rounded ice pebbles in a dry riverbed during its 2005 landing ({numref}`fig:titan-huygens`). Titan's methane hydrological cycle is the only known active fluvial system beyond Earth. The two flavours of Martian water-carved features (catastrophic outflow channels and sustained-discharge dendritic valley networks) are shown in {numref}`fig:mars-outflow` and {numref}`fig:mars-valley-networks`.
 
 ```{figure} figures/mars_outflow_aram.avif
@@ -478,7 +478,7 @@ On airless bodies (the Moon, Mercury, asteroids), the surface is not bedrock but
 
 The lunar regolith is a layer of unconsolidated debris (rock fragments, mineral grains, and glass beads) produced by the cumulative effect of impacts at all scales, from micrometeorite bombardment to basin-forming events. This process is called **impact gardening**: each impact excavates material, mixes the surface layer, and breaks rocks into progressively finer particles. Regolith depth therefore tracks how long a surface has been exposed. A global survey of crater morphologies in Lunar Reconnaissance Orbiter images gives median depths of typically 2–4 m on the young mare basalts and 6–8 m on the farside and non-mare nearside, so the ancient highlands hold roughly twice as much regolith as the maria {cite:p}`Bart2011` ({numref}`fig:lunar-regolith`).
 
-The Hayabusa2 (asteroid Ryugu) and OSIRIS-REx (asteroid Bennu) sample return missions revealed that even small ($\sim$500 m) rubble-pile asteroids have regolith, a surprising finding since these bodies have negligible gravity and were expected to lose ejecta to space rather than retain it.
+The Hayabusa2 (asteroid Ryugu) and OSIRIS-REx (asteroid Bennu) sample return missions revealed that even small ($\sim$500 m) **rubble-pile** asteroids, loosely bound aggregates of rock and dust held together mainly by their own weak gravity, have regolith, a surprising finding since these bodies have negligible gravity and were expected to lose ejecta to space rather than retain it.
 
 ```{figure} figures/lunar_regolith.avif
 :name: fig:lunar-regolith
@@ -552,7 +552,7 @@ Dramatic plumes of water vapour and ice particles erupting from the south polar 
 
 ## Recent advances
 
-NASA's Perseverance rover, operating in Jezero crater since 2021, has confirmed that the crater floor is composed of igneous rock (olivine-bearing cumulates) that was subsequently altered by liquid water {cite:p}`Farley2022`. The rover has cached over 20 sample tubes for eventual return to Earth by the Mars Sample Return campaign, a joint NASA/ESA effort that, if successful, would provide the first laboratory analysis of Martian rocks and address questions about past habitability and possible biosignatures ({ref}`Lecture 10 <lecture10>`).
+NASA's Perseverance rover, operating in Jezero crater since 2021, has confirmed that the crater floor is composed of igneous rock, olivine-bearing **cumulates** (crystals that settled and accumulated from a cooling magma), that was subsequently altered by liquid water {cite:p}`Farley2022`. The rover has cached over 20 sample tubes for eventual return to Earth by the Mars Sample Return campaign, a joint NASA/ESA effort that, if successful, would provide the first laboratory analysis of Martian rocks and address questions about past habitability and possible biosignatures ({ref}`Lecture 10 <lecture10>`).
 
 The **DART** (Double Asteroid Redirection Test) mission in 2022 demonstrated the first successful planetary defence experiment: a kinetic impactor deliberately crashed into the asteroid moonlet Dimorphos, shortening its orbital period around the larger asteroid Didymos by $33.0 \pm 1.0$ minutes {cite:p}`Thomas2023`. Companion analyses derived a momentum enhancement factor $\beta \sim 3.6$ from ejecta carrying away momentum well beyond the impactor's own {cite:p}`Cheng2023` and reconstructed the impact site from pre-impact imagery to constrain the mechanical properties of Dimorphos's rubble-pile surface {cite:p}`Daly2023`. Together these results confirmed that kinetic impact is a viable deflection strategy for hazardous near-Earth asteroids, the subject taken up in full in {ref}`Lecture 12 <lecture12>`.
 

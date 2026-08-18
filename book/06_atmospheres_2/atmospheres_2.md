@@ -46,7 +46,7 @@ Even when air is supersaturated, condensation does not happen instantly. Forming
 - **Homogeneous nucleation** (forming droplets from vapour alone, without any pre-existing surface) requires very high supersaturations (RH $\gg$ 100%) and is extremely rare in planetary atmospheres.
 - **Heterogeneous nucleation** (condensation onto pre-existing particles called **condensation nuclei**: dust grains, volcanic aerosols, sea salt, soot, cosmic ray ions) occurs at much lower supersaturations (RH $\gtrsim$ 100%) and is the dominant cloud formation mechanism on all planets.
 
-The availability of condensation nuclei therefore controls where and how easily clouds form. On Earth, the oceans and biosphere provide abundant nuclei. On Mars, wind-lofted mineral dust serves the same role. On the giant planets, photochemical hazes produced in the upper atmosphere provide nuclei for cloud formation deeper down. The energy-balance trade-off between the Kelvin (curvature) and Raoult (solute) terms is captured by the Köhler curves ({numref}`fig:kohler-curves`), which show why heterogeneous nucleation activates at only $\sim$0.04-0.4% supersaturation, while a pure-water droplet would need $\sim$12% even at $r = 10^{-2}\,\mu$m and far more at the nanometre size of a fresh embryo.
+The availability of condensation nuclei therefore controls where and how easily clouds form. On Earth, the oceans and biosphere provide abundant nuclei. On Mars, wind-lofted mineral dust serves the same role. On the giant planets, **photochemical** hazes, aerosol particles formed when ultraviolet sunlight breaks apart atmospheric molecules whose fragments recombine into new compounds, provide nuclei for cloud formation deeper down. The energy-balance trade-off between the Kelvin (curvature) and Raoult (solute) terms is captured by the Köhler curves ({numref}`fig:kohler-curves`), which show why heterogeneous nucleation activates at only $\sim$0.04-0.4% supersaturation, while a pure-water droplet would need $\sim$12% even at $r = 10^{-2}\,\mu$m and far more at the nanometre size of a fresh embryo.
 
 ```{figure} figures/kohler_curves.avif
 :name: fig:kohler-curves
@@ -217,7 +217,7 @@ Every planet and moon with a substantial atmosphere has clouds, but the condensi
 
 Venus is permanently shrouded in thick clouds that completely obscure the surface at visible wavelengths. These clouds are composed of $\mathrm{H_2SO_4}$ (sulfuric acid) droplets and extend from $\sim$48 km to $\sim$70 km altitude, spanning a temperature range of roughly 360–230 K between cloud base and cloud top {cite:p}`Catling2017`.
 
-The cloud deck completely obscures the surface in visible light ({numref}`fig:venus-uv-clouds`); UV imaging reveals the banded super-rotational pattern. The sulfuric acid is produced by **photochemistry** in the upper atmosphere:
+The cloud deck completely obscures the surface in visible light ({numref}`fig:venus-uv-clouds`); UV imaging reveals the banded pattern produced by **super-rotation**, the clouds circling the planet far faster than the solid surface rotates beneath them. The sulfuric acid is produced by **photochemistry** in the upper atmosphere:
 
 $$
 \mathrm{SO_2} + \mathrm{O} \longrightarrow \mathrm{SO_3}, \qquad \mathrm{SO_3} + \mathrm{H_2O} \longrightarrow \mathrm{H_2SO_4}
@@ -274,7 +274,7 @@ Credit: NASA/JPL-Caltech/ASI/USGS, public domain.
 :align: center
 
 Methane-ethane clouds at Titan's mid-southern latitudes captured by the *Cassini* Imaging Science Subsystem in the 938 nm methane window.
-The bright streaks near the limb are tropospheric clouds organised along the local zonal wind, which shows that Titan supports an active condensation cycle of the same Clausius-Clapeyron physics described in this lecture, but with $\mathrm{CH_4}$ replacing $\mathrm{H_2O}$ at $T \approx 90$ K.
+The bright streaks near the limb are tropospheric clouds organised along the local zonal (east-west) wind, which shows that Titan supports an active condensation cycle of the same Clausius-Clapeyron physics described in this lecture, but with $\mathrm{CH_4}$ replacing $\mathrm{H_2O}$ at $T \approx 90$ K.
 Credit: NASA/JPL-Caltech/Space Science Institute, public domain.
 ```
 
@@ -293,7 +293,7 @@ The vertical layering of these three cloud decks is sketched in {numref}`fig:jup
 :width: 450px
 :align: center
 
-Temperature–pressure profile of Jupiter's atmosphere, showing the three main cloud layers: ammonia ($\mathrm{NH_3}$) ice at the top ($\sim$1 bar), ammonium hydrosulfide ($\mathrm{NH_4SH}$) in the middle ($\sim$2–3 bar), and water ($\mathrm{H_2O}$) at the deepest level ($\sim$5–7 bar). The tropopause at $\sim$50 km and the stratosphere–thermosphere boundary at $\sim$320 km are marked. Each cloud layer forms where the local temperature crosses the saturation curve for that species. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+Temperature–pressure profile of Jupiter's atmosphere, showing the three main cloud layers: ammonia ($\mathrm{NH_3}$) ice at the top ($\sim$1 bar), ammonium hydrosulfide ($\mathrm{NH_4SH}$) in the middle ($\sim$2–3 bar), and water ($\mathrm{H_2O}$) at the deepest level ($\sim$5–7 bar). The **tropopause**, the boundary where temperature stops falling with altitude and convective mixing gives way to a stably stratified layer above, sits at $\sim$50 km, and the stratosphere–thermosphere boundary at $\sim$320 km is marked as well. Each cloud layer forms where the local temperature crosses the saturation curve for that species. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 ```
 
 ```{figure} figures/jupiter_global_map.avif
@@ -325,7 +325,7 @@ The simplest atmospheric circulation pattern, first described by George Hadley i
 4. As it moves poleward, it cools radiatively, becomes denser, and **sinks** at $\sim$30° latitude (the subtropics), creating high-pressure zones (where Earth's great deserts are located).
 5. At the surface, air flows back toward the equator to replace the rising air: these return flows are the **trade winds**.
 
-This loop is the **Hadley cell** ({numref}`fig:hadley-cells`). It is the dominant circulation pattern in the tropics on Earth and the primary mechanism for transporting heat from the equator toward the poles. The full three-cell structure (Hadley + Ferrel + polar) per hemisphere is captured by the zonal-mean meridional streamfunction in {numref}`fig:hadley-observed`.
+This loop is the **Hadley cell** ({numref}`fig:hadley-cells`). It is the dominant circulation pattern in the tropics on Earth and the primary mechanism for transporting heat from the equator toward the poles. The full three-cell structure (Hadley + Ferrel + polar) per hemisphere is captured by the zonal-mean (averaged around each latitude circle) meridional (north-south) streamfunction in {numref}`fig:hadley-observed`.
 
 ```{figure} figures/hadley_cells.svg
 :name: fig:hadley-cells
@@ -457,7 +457,7 @@ On Jupiter and Saturn, the same physics operates on a grander scale. The alterna
 
 Jupiter's cloud-top zonal wind profile $u(\phi)$, schematic representation of the HST composite (1995-2000) of {cite:t}`GarciaMelendo2001`.
 A ladder of narrow prograde (eastward, blue) and retrograde (westward, red) jets is stacked from the broad equatorial superrotating jet at the centre out to $\sim$60° latitude (the schematic resolves only the principal jets to keep the figure legible).
-The jets coincide with the boundaries between bright zones and dark belts visible in {numref}`fig:jupiter-global-map`, and Juno gravity measurements yield a best-fit e-folding decay depth of $\sim$1800 km, with the full uncertainty range spanning $\sim$1000-3000 km into the molecular envelope {cite:p}`Kaspi2018`.
+The jets coincide with the boundaries between bright zones and dark belts visible in {numref}`fig:jupiter-global-map`, and Juno gravity measurements yield a best-fit e-folding decay depth (the depth over which the jet strength falls by a factor of $1/e$) of $\sim$1800 km, with the full uncertainty range spanning $\sim$1000-3000 km into the molecular envelope {cite:p}`Kaspi2018`.
 ```
 
 
@@ -517,7 +517,7 @@ The GRS sits between two zonal jets with opposite directions, which confine and 
 
 Polar cyclone cluster at Jupiter's north pole imaged by the JIRAM infrared spectrometer on NASA's *Juno* spacecraft.
 A central cyclone is encircled by eight smaller cyclones in a stable octagonal arrangement, which shows that Jupiter's atmospheric dynamics produce coherent polygonal vortex patterns analogous to Saturn's hexagonal jet ({numref}`fig:saturn-hexagon`).
-The cyclones have remained in this configuration over multiple Juno perijoves spanning several years, far longer than any Earth analogue.
+The cyclones have remained in this configuration over multiple Juno **perijoves** (the spacecraft's closest approaches to Jupiter on each orbit) spanning several years, far longer than any Earth analogue.
 At the south pole, a pentagonal cluster of five circumpolar cyclones remained remarkably stable through perijove 18 (February 2019) {cite:p}`Adriani2020`; a sixth cyclone briefly joined the southern pentagon in late 2019 but dissipated within about two months without merging, leaving the pentagonal arrangement intact {cite:p}`Mura2021`.
 Adapted from {cite:t}`Adriani2018`.
 Credit: NASA/JPL-Caltech/SwRI/ASI/INAF/JIRAM, public domain.
@@ -716,7 +716,7 @@ The requirement for both liquid water and active volcanism to maintain the carbo
 
 In 2020, a team reported a tentative detection of phosphine ($\mathrm{PH_3}$) in the cloud decks of Venus using millimetre-wavelength spectroscopy {cite:p}`Greaves2021`, sparking intense debate about possible biological or unknown chemical sources. Independent reanalyses contested the detection, showing among other things that mesospheric $\mathrm{SO_2}$ can reproduce the observed spectral feature, and it remains controversial {cite:p}`Lincowski2021`. Regardless of the outcome, the episode highlighted how little we understand about Venus's atmospheric chemistry and motivated renewed interest in Venus exploration. ESA's **EnVision** orbiter and NASA's **DAVINCI** probe (both selected for launch in the early 2030s) will provide new measurements of Venus's atmospheric composition and surface-atmosphere interactions.
 
-NASA's **Dragonfly** mission, a nuclear-powered rotorcraft scheduled for launch in 2028, will explore Titan's surface and lower atmosphere in unprecedented detail. Dragonfly will sample the organic-rich dunes and investigate the products of Titan's atmospheric photochemistry at the surface, testing whether the combination of complex organics and transient liquid water (from impact melts or cryovolcanism) could drive prebiotic chemistry ({ref}`Lecture 14 <lecture14>`).
+NASA's **Dragonfly** mission, a nuclear-powered rotorcraft scheduled for launch in 2028, will explore Titan's surface and lower atmosphere in unprecedented detail. Dragonfly will sample the organic-rich dunes and investigate the products of Titan's atmospheric photochemistry at the surface, testing whether the combination of complex organics and transient liquid water (from impact melts or **cryovolcanism**, the eruption of water or other volatiles rather than molten rock) could drive **prebiotic chemistry**, reactions that build the organic precursors of life, without life being present ({ref}`Lecture 14 <lecture14>`).
 
 Updated three-dimensional climate models for early Mars continue to challenge the "warm and wet" hypothesis, suggesting that episodic warming from impacts, volcanism, or atmospheric $\mathrm{H_2}$ greenhouse effects may be needed to explain the geological evidence for liquid water on early Mars ({ref}`Lecture 10 <lecture10>`). The interplay between atmospheric composition, climate feedbacks, and surface geology remains an active area of research.
 

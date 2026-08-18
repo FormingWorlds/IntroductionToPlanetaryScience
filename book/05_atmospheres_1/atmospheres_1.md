@@ -35,7 +35,7 @@ Terrestrial planets like Earth, Venus, and Mars were too small to capture much n
 
 ### Secondary atmospheres
 
-**Secondary atmospheres** are produced by **outgassing**: the release of volatiles from the planet's interior through volcanism and magma ocean degassing. As discussed in {ref}`Lecture 4 <lecture04>`, the speciation of outgassed volatiles depends on the oxygen fugacity of the magma: oxidising conditions produce $\mathrm{CO_2}$, $\mathrm{H_2O}$, and $\mathrm{N_2}$, while reducing conditions produce $\mathrm{H_2}$, CO, and $\mathrm{N_2}$ {cite:p}`Hirschmann2012`.
+**Secondary atmospheres** are produced by **outgassing**: the release of volatiles from the planet's interior through volcanism and magma ocean degassing. As discussed in {ref}`Lecture 4 <lecture04>`, the speciation of outgassed volatiles depends on the **oxygen fugacity** of the magma (an effective partial pressure of $\mathrm{O_2}$ that measures how oxidising or reducing the melt is): oxidising conditions produce $\mathrm{CO_2}$, $\mathrm{H_2O}$, and $\mathrm{N_2}$, while reducing conditions produce $\mathrm{H_2}$, CO, and $\mathrm{N_2}$ {cite:p}`Hirschmann2012`.
 
 The present-day atmospheres of **Venus** ($\mathrm{CO_2}$-dominated) and **Mars** ($\mathrm{CO_2}$-dominated but much thinner) are essentially secondary atmospheres: their compositions reflect volcanic outgassing with relatively modest subsequent modification. Titan's thick $\mathrm{N_2}$ atmosphere also originated from outgassing (likely from the conversion of accreted $\mathrm{NH_3}$).
 
@@ -237,7 +237,7 @@ Earth's stratosphere extends to the **stratopause** at $\sim$50 km.
 
 Above the stratopause, the **mesosphere** (50–85 km) cools with altitude again as ozone heating diminishes. The **mesopause** at $\sim$85 km is the coldest point in Earth's atmosphere ($\sim$190 K).
 
-Above this, the **thermosphere** (85–600 km) is heated by the absorption of extreme ultraviolet (EUV) radiation and energetic particles. Temperatures rise steeply to $>$1000 K, but the gas is so rarefied that this "temperature" (reflecting the kinetic energy of individual molecules) would not feel hot. The thermosphere merges into the **exosphere**, the outermost region where the mean free path exceeds the scale height, and molecules on ballistic trajectories can escape to space. The full layered structure of Earth's atmosphere with its named pause levels is shown in {numref}`fig:earth-tz-layers`.
+Above this, the **thermosphere** (85–600 km) is heated by the absorption of extreme ultraviolet (EUV) radiation and energetic particles. Temperatures rise steeply to $>$1000 K, but the gas is so rarefied that this "temperature" (reflecting the kinetic energy of individual molecules) would not feel hot. The thermosphere merges into the **exosphere**, the outermost region where the mean free path (the average distance a molecule travels between collisions) exceeds the scale height, and molecules on ballistic trajectories can escape to space. The full layered structure of Earth's atmosphere with its named pause levels is shown in {numref}`fig:earth-tz-layers`.
 
 ```{figure} figures/earth_tz_layers.avif
 :name: fig:earth-tz-layers
@@ -269,7 +269,7 @@ Detached haze layers in Titan's upper atmosphere imaged at the limb by the Cassi
 :width: 550px
 :align: center
 
-Titan's atmospheric temperature profile from the *Huygens* Atmospheric Structure Instrument (HASI) descent on 14 January 2005. Solid line: HASI measurements; dashed line: pre-encounter Titan engineering model. Above 160 km, $T$ and $P$ are derived from the measured density via the ideal gas law; below 160 km, $T$ is measured directly by the TEM sensor. Horizontal markers indicate the mesopause (152 K at 490 km), stratopause (186 K at 250 km), and tropopause (70.43 K at 44 km). Wave-like fluctuations above 250 km reflect gravity-wave activity that complements the haze-layer UV absorption (cf. {numref}`fig:titan-haze`). Reproduced from {cite:p}`Fulchignoni2005`, Fig. 2.
+Titan's atmospheric temperature profile from the *Huygens* Atmospheric Structure Instrument (HASI) descent on 14 January 2005. Solid line: HASI measurements; dashed line: pre-encounter Titan engineering model. Above 160 km, $T$ and $P$ are derived from the measured density via the ideal gas law; below 160 km, $T$ is measured directly by the TEM sensor. Horizontal markers indicate the mesopause (152 K at 490 km), stratopause (186 K at 250 km), and tropopause (70.43 K at 44 km). Wave-like fluctuations above 250 km reflect gravity-wave activity (buoyancy-driven oscillations of displaced air parcels, unrelated to gravitational waves in general relativity) that complements the haze-layer UV absorption (cf. {numref}`fig:titan-haze`). Reproduced from {cite:p}`Fulchignoni2005`, Fig. 2.
 ```
 
 ```{figure} figures/venus_tz_vira.avif
@@ -468,14 +468,14 @@ Energy budget of the one-layer greenhouse model. Stellar shortwave flux $(1-A)F_
 
 An atmosphere is not permanent. Over geological time, gas molecules can be lost to space through several physical mechanisms. The balance between outgassing supply and escape loss determines a planet's atmospheric mass and composition over its history {cite:p}`Lammer2008`.
 
-The dominant escape regime for a given planet-species pair depends on two quantities: the **Jeans escape parameter** $\lambda_J$ (the ratio of gravitational binding energy to thermal energy at the exobase) and the incident **EUV flux** from the host star (which heats the upper atmosphere and drives bulk outflow). Low $\lambda_J$ or high EUV flux pushes the system into hydrodynamic outflow; high $\lambda_J$ with low EUV flux corresponds to the retention regime in which escape is negligible on Gyr timescales. The three regimes and representative species-planet pairs are shown in {numref}`fig:escape-regime`.
+The dominant escape regime for a given planet-species pair depends on two quantities: the **Jeans escape parameter** $\lambda_J$ (the ratio of gravitational binding energy to thermal energy at the exobase, the altitude above which the atmosphere becomes collisionless) and the incident **EUV flux** from the host star (which heats the upper atmosphere and drives bulk outflow). Low $\lambda_J$ or high EUV flux pushes the system into hydrodynamic outflow, a bulk, wind-like escape of the entire upper atmosphere; high $\lambda_J$ with low EUV flux corresponds to the retention regime in which escape is negligible on Gyr timescales. The three regimes and representative species-planet pairs are shown in {numref}`fig:escape-regime`.
 
 ```{figure} figures/escape_regime_diagram.avif
 :name: fig:escape-regime
 :width: 680px
 :align: center
 
-Schematic regime diagram for atmospheric escape as a function of the Jeans parameter $\lambda_J = v_\mathrm{esc}^2/v_\mathrm{th}^2$ (x-axis) and stellar EUV flux in units of the present-day Earth value (y-axis). Three regimes are shaded: **hydrodynamic outflow** (left column, low $\lambda_J$, and top row, high EUV); **Jeans thermal escape** (centre, moderate $\lambda_J$ at present-day flux); **retention** (right column, negligible escape over Gyr). Marker positions show representative species-planet pairs: atomic H on Earth and Mars sits in the Jeans regime; $\mathrm{N_2}$ on Titan and $\mathrm{CO_2}$ on Mars are retained; $\mathrm{H_2}$ on an early sub-Neptune around a young active star is driven into hydrodynamic outflow. Schematic after {cite:t}`Hunten1987` and {cite:t}`Tian2009`; boundaries are approximate.
+Schematic regime diagram for atmospheric escape as a function of the Jeans parameter $\lambda_J = v_\mathrm{esc}^2/v_\mathrm{th}^2$ (x-axis) and stellar EUV flux in units of the present-day Earth value (y-axis). Three regimes are shaded: **hydrodynamic outflow** (left column, low $\lambda_J$, and top row, high EUV); **Jeans thermal escape** (centre, moderate $\lambda_J$ at present-day flux); **retention** (right column, negligible escape over Gyr). Marker positions show representative species-planet pairs: atomic H on Earth and Mars sits in the Jeans regime; $\mathrm{N_2}$ on Titan and $\mathrm{CO_2}$ on Mars are retained; $\mathrm{H_2}$ on an early sub-Neptune (a planet between Earth and Neptune in size, typically retaining a thin H/He envelope) around a young active star is driven into hydrodynamic outflow. Schematic after {cite:t}`Hunten1987` and {cite:t}`Tian2009`; boundaries are approximate.
 ```
 
 ### Thermal (Jeans) escape
@@ -658,7 +658,7 @@ Escape velocity versus surface temperature for solar system bodies. Diagonal lin
 
 The James Webb Space Telescope (JWST) has opened a new era in exoplanet atmospheric characterisation. Thermal emission measurements of TRAPPIST-1 b, an Earth-sized planet orbiting an M dwarf, indicate a dayside temperature consistent with bare rock and no significant atmosphere ({numref}`fig:greene-trappist`) {cite:p}`Greene2023`. Similar results for TRAPPIST-1 c {cite:p}`Zieba2023` suggest that the innermost rocky planets around active M dwarfs may be stripped of their atmospheres by intense stellar irradiation, consistent with theoretical predictions of enhanced atmospheric escape around low-mass stars {cite:p}`Wordsworth2022`.
 
-A central reason M-dwarf planets are so vulnerable to escape is that late-type stars remain in the high-activity **saturated regime** for much longer than Sun-like stars, exposing their close-in planets to intense XUV irradiation for $\gtrsim 1$ Gyr after formation. The mass-dependence of this XUV evolution is shown in {numref}`fig:xuv-evolution`:
+A central reason M-dwarf planets are so vulnerable to escape is that late-type stars remain in the high-activity **saturated regime** (a phase in which a star's X-ray and EUV output holds at a roughly constant fraction of its bolometric luminosity, independent of its declining rotation rate) for much longer than Sun-like stars, exposing their close-in planets to intense **XUV** (combined X-ray and extreme-ultraviolet) irradiation for $\gtrsim 1$ Gyr after formation. The mass-dependence of this XUV evolution is shown in {numref}`fig:xuv-evolution`:
 
 ```{figure} figures/johnstone2021_xuv_evolution.avif
 :name: fig:xuv-evolution

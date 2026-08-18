@@ -26,7 +26,7 @@ Pluto is treated here as the largest known KBO, not as a planet. {numref}`fig:l1
 :width: 700px
 :align: center
 
-Size comparison of representative small bodies visited by spacecraft, scaled against terrestrial landmarks for reference. Comet and asteroid nuclei span a range from sub-kilometre fragments to several hundred kilometres for the largest main-belt asteroids and dwarf planets. The major dynamical reservoirs from which these bodies are drawn (main belt asteroids and Trojans inside Jupiter's orbit, the Kuiper Belt and scattered disk just beyond Neptune, and the Oort cloud at $10^4$-$10^5$ AU) are surveyed in the rest of this lecture. Image credit: NASA/JPL-Caltech, public domain.
+Size comparison of representative small bodies visited by spacecraft, scaled against terrestrial landmarks for reference. Comet and asteroid nuclei span a range from sub-kilometre fragments to several hundred kilometres for the largest main-belt asteroids and dwarf planets. The major dynamical reservoirs from which these bodies are drawn (main belt asteroids and Trojans, asteroids that share Jupiter's orbit while librating around its leading and trailing Lagrange points, inside Jupiter's orbit; the Kuiper Belt and scattered disk just beyond Neptune; and the Oort cloud at $10^4$-$10^5$ AU) are surveyed in the rest of this lecture. Image credit: NASA/JPL-Caltech, public domain.
 ```
 
 
@@ -370,7 +370,7 @@ The Hayabusa2 samples from Ryugu plot squarely with the CI chondrites; the OSIRI
 ### The NC-CC isotopic dichotomy: three competing interpretations
 
 The oxygen-isotope diagram already shows that meteorites separate into clusters, but the discovery in the 2010s of a much sharper, more general dichotomy has reshaped our picture of the early solar system.
-When researchers measured nucleosynthetic anomalies in elements heavier than oxygen, $^{50}\mathrm{Ti}$, $^{54}\mathrm{Cr}$, $^{48}\mathrm{Ca}$, $^{94}\mathrm{Mo}$, $^{100}\mathrm{Ru}$, and others, they found that meteorites split cleanly into *exactly two* groups in every element, with essentially no overlap {cite:p}`Warren2011,Trinquier2009,Burkhardt2011`.
+When researchers measured **nucleosynthetic anomalies**, small isotope-ratio offsets inherited from the particular mix of stellar sources that seeded the solar nebula's dust, in elements heavier than oxygen, $^{50}\mathrm{Ti}$, $^{54}\mathrm{Cr}$, $^{48}\mathrm{Ca}$, $^{94}\mathrm{Mo}$, $^{100}\mathrm{Ru}$, and others, they found that meteorites split cleanly into *exactly two* groups in every element, with essentially no overlap {cite:p}`Warren2011,Trinquier2009,Burkhardt2011`.
 
 The two groups are now called **NC** ("non-carbonaceous", which includes the ordinary chondrites, the enstatite chondrites, the HEDs, the angrites, Mars, and Earth) and **CC** ("carbonaceous", which includes all the carbonaceous chondrite groups, the IIC, IID, IIF, IIIF, and IVB iron groups, and more recently several outer-solar-system bodies like Trojans and probably Jupiter itself).
 Crucially, the NC/CC dichotomy is *temporally robust*: NC and CC meteorites with overlapping formation ages (from 0 to 4 Myr after CAIs) have isotopically distinct signatures.
@@ -408,7 +408,7 @@ Once Jupiter's solid core grew massive enough, around $\sim 20\,\Mearth$, it ope
 The NC reservoir, isolated inside Jupiter's orbit, evolved separately from the CC reservoir outside.
 For this to work, Jupiter had to be in place very early indeed: the timing constraint is approximately $1$ Myr after CAI formation.
 This was the first widely accepted physical interpretation of the NC-CC split and had the side effect of pushing Jupiter's formation timescale earlier than most pre-2017 disk models had favoured.
-It is consistent with the modern picture that giant planet cores grow primarily by **pebble accretion** rather than slow planetesimal accretion ({ref}`Lecture 2 <lecture02>`).
+It is consistent with the modern picture that giant planet cores grow primarily by **pebble accretion**, the direct capture of small, aerodynamically drifting disk particles, rather than by the slow collisional accretion of similarly sized planetesimals ({ref}`Lecture 2 <lecture02>`).
 Subsequent re-analysis of cosmic-ray-exposure corrections {cite:p}`SpitzerPt2021` has revised the NC core-formation ages downward by $\sim 0.8$ Myr, suggesting NC and CC parent bodies in fact accreted approximately contemporaneously within $\sim 1$ Myr of CAI formation but at different radial locations in the disk; in this updated reading the radial separation, rather than the accretion delay, is the more robust constraint that the Jupiter-barrier picture must satisfy.
 
 
@@ -427,7 +427,7 @@ Pebble flux and planetesimal growth timescales from the disk model of {cite:t}`L
 
 The mechanism is the *cold finger effect*: as the disk cools, the water snow line migrates inward, and ice condenses onto the surfaces of grains crossing into the colder region.
 Sublimating water vapour diffuses back through the snow line and recondenses, building up an enhanced solid surface density just outside the snow line.
-This makes pebbles sticky and triggers a second wave of planetesimal formation (the streaming instability) at later times.
+This makes pebbles sticky and triggers a second wave of planetesimal formation through the **streaming instability**, the gravitational collapse of a locally dense clump of pebbles into a single bound body, at later times.
 In this picture, two distinct epochs of planetesimal formation arise naturally from disk evolution itself, separated in both time and chemistry: an early dry inner reservoir (NC) and a later ice-rich outer reservoir (CC).
 Jupiter's role is reduced to *halting pebble drift at its orbit* once the planet has grown massive enough to reach **pebble isolation mass**, which is a much weaker constraint than acting as a gravitational dam. {numref}`fig:l12-lichtenberg-fig2` shows the corresponding pebble fluxes and planetesimal growth timescales at 2 AU and 15 AU in this picture.
 
@@ -548,7 +548,7 @@ Compositional mass distribution across the asteroid belt as a function of semima
 ```
 
 This taxonomic gradient is also key evidence for the role of giant-planet migration in shaping the solar system.
-The Grand Tack and Nice Model scenarios ({ref}`Lecture 2 <lecture02>`) make specific predictions for how much the belt was reshuffled, mixed, and depleted by giant-planet motion.
+The **Grand Tack** (an early inward-then-outward migration of Jupiter) and **Nice Model** (a later dynamical instability among the giant planets' orbits) scenarios ({ref}`Lecture 2 <lecture02>`) make specific predictions for how much the belt was reshuffled, mixed, and depleted by giant-planet motion.
 The fact that the C-types in the outer belt have isotopic affinities with carbonaceous chondrites, while the S-types resemble ordinary chondrites, supports a picture in which a fraction of the outer belt population was implanted from much farther out by Jupiter's outward migration after the Grand Tack {cite:p}`Walsh2011,Raymond2017`.
 
 
@@ -563,7 +563,7 @@ Yet the population is in approximate steady state, which means new NEAs must be 
 The supply mechanism is now understood in detail.
 The principal source is the main belt, with new NEAs continuously injected through three pathways:
 (i) the Kirkwood gaps just discussed, particularly the 3:1 and 5:2 resonances;
-(ii) the $\nu_6$ secular resonance at the inner edge of the belt, where the asteroid's apsidal precession matches Saturn's;
+(ii) the $\nu_6$ **secular resonance**, a matching of orbital precession rates rather than orbital periods, at the inner edge of the belt, where the asteroid's apsidal precession matches Saturn's;
 (iii) the Yarkovsky effect.
 
 The **Yarkovsky effect** is a small but cumulative non-gravitational force on a rotating body absorbing sunlight on one side and re-emitting it as thermal radiation on the (delayed) afternoon side.
@@ -757,7 +757,7 @@ In a single nine-day high-resolution observing window, New Horizons mapped Pluto
 :width: 500px
 :align: center
 
-True-colour Ralph instrument image of Pluto acquired by New Horizons during the 2015 flyby. The bright heart-shaped feature is Tombaugh Regio; the western lobe is the nitrogen-ice basin Sputnik Planitia. The dark equatorial band is Cthulhu Macula, a tholin-rich plain. The image is constructed from blue, red, and near-IR filters and stretched linearly to maximum reflectance per channel. From Figure 3 of {cite:t}`Stern2015`.
+True-colour Ralph instrument image of Pluto acquired by New Horizons during the 2015 flyby. The bright heart-shaped feature is Tombaugh Regio; the western lobe is the nitrogen-ice basin Sputnik Planitia. The dark equatorial band is Cthulhu Macula, a plain rich in **tholins**, reddish-brown organic solids produced when ultraviolet light and cosmic rays break down simple ices such as methane and nitrogen. The image is constructed from blue, red, and near-IR filters and stretched linearly to maximum reflectance per channel. From Figure 3 of {cite:t}`Stern2015`.
 ```
 
 Pluto's bulk properties are: radius $1187 \pm 4$ km, mass $1.303 \times 10^{22}$ kg, mean density $1860 \pm 13$ kg m$^{-3}$ {cite:p}`Stern2015`.
@@ -777,7 +777,7 @@ The mere existence of active convection requires an internal heat source, most l
 Numerical model of solid-state convection in a layer of $\mathrm{N_2}$ ice on Pluto, applied to Sputnik Planitia. (a) Snapshot of the temperature field across one wavelength of the convective cell, showing hot upwellings (red) separated by cold downwellings (blue) at the modelled Rayleigh number $\mathrm{Ra}_b \approx 3 \times 10^5$. (b) Surface horizontal velocity profile, showing convergence above downwellings and divergence above upwellings. (c) Dynamic topography: upwellings produce broad surface highs of order tens of metres, in agreement with the observed cell relief. (d) Surface heat flow profile, peaked above the upwellings. The model demonstrates that present-day radiogenic heating of Pluto's rocky interior is sufficient to drive convective overturn in a several-km-thick $\mathrm{N_2}$ ice layer, with overturn timescales of $\sim 10^6$ years. From Figure 4 of {cite:t}`McKinnon2016`.
 ```
 
-Beyond Sputnik Planitia, New Horizons revealed water-ice mountain ranges (some peaks above 3 km, comparable to terrestrial mid-altitude ranges), tectonic rifts, possible cryovolcanic edifices (Wright Mons and Piccard Mons), bright methane snow on equatorial highlands, and nitrogen glaciers that flow into Sputnik Planitia from surrounding terrain.
+Beyond Sputnik Planitia, New Horizons revealed water-ice mountain ranges (some peaks above 3 km, comparable to terrestrial mid-altitude ranges), tectonic rifts, possible **cryovolcanic** edifices, structures built by the eruption of water or other volatile-rich melts rather than molten rock (Wright Mons and Piccard Mons), bright methane snow on equatorial highlands, and nitrogen glaciers that flow into Sputnik Planitia from surrounding terrain.
 There is also evidence of a possible **subsurface liquid water ocean** between the rocky core and the ice shell, inferred from the fact that the centre of mass of Sputnik Planitia is offset from its geometric centre, and from the requirement that the basin have positive gravity anomaly (a "load") to maintain a tidally-locked alignment with Charon {cite:p}`Nimmo2016`.
 If real, this ocean would make Pluto an *ocean world* in the same family as Europa, Ganymede, Titan, and Enceladus, despite forming in a much colder and more isolated environment.
 
@@ -1068,7 +1068,7 @@ But the analysis was definitive: Itokawa's surface composition matches the LL-cl
 :width: 500px
 :align: center
 
-The S-type near-Earth asteroid (25143) Itokawa imaged by Hayabusa AMICA in 2005. Itokawa is approximately 535 m long with a distinctive bilobed sea-otter profile: two rougher lobes joined by the smoother "Muses Sea" neck region (the central tan area). The complete absence of large craters and the high boulder fraction are signatures of a rubble-pile internal structure. Itokawa is the parent body of the LL-class ordinary chondrites. Image credit: ISAS / JAXA, CC BY 4.0.
+The S-type near-Earth asteroid (25143) Itokawa imaged by Hayabusa AMICA in 2005. Itokawa is approximately 535 m long with a distinctive bilobed sea-otter profile: two rougher lobes joined by the smoother "Muses Sea" neck region (the central tan area). The complete absence of large craters and the high boulder fraction are signatures of a **rubble-pile** internal structure: a body held together by self-gravity and inter-fragment friction rather than by internal cohesion. Itokawa is the parent body of the LL-class ordinary chondrites. Image credit: ISAS / JAXA, CC BY 4.0.
 ```
 
 **Hayabusa2** (JAXA, 2014--2020) visited the carbonaceous (Cb-type) asteroid (162173) **Ryugu**, a $\sim 900$ m diameter spinning-top body, and returned $5.4$ g of sample to Earth in December 2020.

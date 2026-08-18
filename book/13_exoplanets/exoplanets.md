@@ -23,7 +23,7 @@ The lecture follows the same descriptive-first, payoff-at-the-end structure as L
 Exoplanet science is younger than most of the students taking this course.
 The first confirmed planets outside the solar system were announced in 1992 by Aleksander Wolszczan and Dale Frail, who used the radio pulsar **PSR B1257+12** as a precision clock {cite:p}`Wolszczan1992`.
 Pulsars are the rapidly spinning, highly magnetised remnants of massive stars that have already gone supernova.
-The precision of their pulse arrival times rivals the best atomic clocks, and any unmodelled motion of the pulsar around a system barycentre shows up as a small periodic shift in those arrival times.
+The precision of their pulse arrival times rivals the best atomic clocks, and any unmodelled motion of the pulsar around a system barycentre (the shared centre of mass) shows up as a small periodic shift in those arrival times.
 The original 1992 *Nature* announcement reported two planets with minimum masses of about $2.8$ and $3.4\,\Mearth$ (assuming coplanar orbits) in $66$ and $98$ day orbits around the pulsar. The subsequent analysis by {cite:t}`Wolszczan1994`, which detected the predicted near-3:2 mutual gravitational perturbation between the two bodies, confirmed these mass estimates (final values $3.4/\sin i\,\Mearth$ and $2.8/\sin i\,\Mearth$, with orbital inclinations greater than 60 degrees) and additionally revealed a much smaller third body of about $0.015\,\Mearth$ (roughly a lunar mass) in a $25.34$-day orbit.
 These were not the planets anyone was looking for.
 They are the survivors, or perhaps the second-generation products, of a supernova explosion.
@@ -32,7 +32,7 @@ They remain a striking reminder that planets can form, or at least exist, in env
 Three years later Michel Mayor and Didier Queloz used the ELODIE spectrograph at the Observatoire de Haute-Provence to detect a planet around an ordinary main-sequence star, **51 Pegasi b** {cite:p}`MayorQueloz1995`.
 This is the discovery for which they shared the 2019 Nobel Prize in Physics.
 The planet had roughly half the mass of Jupiter, but the orbital period was a stunning 4.23 days.
-A Jupiter-mass body so close to its star contradicted every textbook picture: gas giants were supposed to form beyond the ice line at several AU, where ice could condense and provide raw material for the runaway accretion phase {cite:p}`Pollack1996`.
+A Jupiter-mass body so close to its star contradicted every textbook picture: gas giants were supposed to form beyond the ice line at several AU, where ice could condense and provide raw material for the runaway accretion phase, the stage at which a growing core rapidly pulls in surrounding nebular gas {cite:p}`Pollack1996`.
 Either 51 Peg b had formed in situ in a way nobody had imagined, or it had formed at large distance and **migrated inward**.
 The migration interpretation won out within a few years and reshaped planet-formation theory; the modern picture of disk-driven Type I and Type II migration was largely a response to the existence of close-in giants like 51 Peg b (recap from {ref}`Lecture 2 <lecture02>`).
 A single object, found because it happened to be unusually easy to detect, redirected the entire field.
@@ -47,7 +47,7 @@ The first ground-based detection of a transiting exoplanet, **HD 209458 b**, obs
 
 After 1995 the field grew explosively.
 Ground-based radial velocity surveys at Lick, Keck, La Silla, and elsewhere expanded the catalogue from one object to a few hundred over the following decade.
-The first transit detection of an already-known radial velocity planet, HD 209458 b in 1999, was a watershed: combining transit depth and radial velocity gave the first **bulk density** of an extrasolar world, confirming that hot Jupiters were indeed gas-dominated and not exotic high-density objects {cite:p}`Charbonneau2000,Henry2000` ({numref}`fig:hd209458b`).
+The first transit detection of an already-known radial velocity planet, HD 209458 b in 1999, was a watershed: combining transit depth and radial velocity gave the first **bulk density** of an extrasolar world, confirming that **hot Jupiters**, Jupiter-mass planets on orbits of only a few days, were indeed gas-dominated and not exotic high-density objects {cite:p}`Charbonneau2000,Henry2000` ({numref}`fig:hd209458b`).
 The space-based transit era opened with the French-led **CoRoT** mission in 2006 and exploded with NASA's **Kepler** mission in 2009, which monitored about 150,000 stars continuously for four years {cite:p}`Borucki2010`.
 The K2 extension (2014--2018), TESS (2018--present), CHEOPS (2019--present), and JWST (2022--present) followed.
 By 2026 the **NASA Exoplanet Archive** records more than 6000 confirmed exoplanets in more than 4500 planetary systems {cite:p}`NASAExoArchive2025`.
@@ -61,7 +61,7 @@ Instead, both the star (mass $M_\star$) and the planet orbit their common centre
 The star's orbit around the barycentre is small but not zero, with radius $a_\star = (m_p / M_\star)\,a_p$.
 For a Jupiter analogue around a Sun-like star this is about one solar radius; for an Earth analogue it is closer to a hundredth of a solar radius.
 The motion of the star can be detected as a periodic shift in the wavelengths of stellar absorption lines via the Doppler effect: when the star is moving towards us its lines blueshift, and when it is moving away they redshift.
-The observable is the line-of-sight component of the stellar velocity, and the time series traces a periodic curve from which orbital period $P$, eccentricity $e$, and semi-amplitude $K_\star$ can be extracted.
+The observable is the line-of-sight component of the stellar velocity, and the time series traces a periodic curve from which orbital period $P$, eccentricity $e$, and semi-amplitude $K_\star$, the peak stellar reflex velocity, can be extracted.
 
 For a circular orbit and an edge-on geometry the semi-amplitude takes the compact form
 
@@ -90,13 +90,13 @@ For a face-on system $i = 0$ and $\sin i = 0$, so a real planet would produce no
 For an edge-on system $i = 90^\circ$ and $\sin i = 1$, recovering the true mass.
 With radial velocities alone we cannot distinguish a low-mass planet seen edge-on from a more massive planet seen at an inclined orbit.
 This is the famous **$m \sin i$ degeneracy**.
-It can be broken if we have an independent measurement of the inclination, for instance from a transit (which constrains $\sin i \approx 1$ to within the impact parameter), from astrometry (which gives the inclination directly), or from direct imaging.
+It can be broken if we have an independent measurement of the inclination, for instance from a transit (which constrains $\sin i \approx 1$ to within the impact parameter, the sky-projected offset of the planet from the stellar disk centre at mid-transit), from astrometry (which gives the inclination directly), or from direct imaging.
 The combination of radial velocity with **any** of these methods turns the inferred minimum mass into a true mass.
 
 Radial velocity surveys are biased toward massive planets on relatively short orbits around bright, slowly rotating, magnetically quiet host stars.
 A planet that produces only a 10 cm/s signal needs to be observed for many orbital periods at high precision to be detected unambiguously.
 A long-period Jupiter analogue requires at least one decade of consistent observing baseline, which is a substantial commitment.
-M dwarfs and F dwarfs at the extremes of the spectral type range are harder targets: M dwarfs because they are faint at optical wavelengths and have molecular features that complicate spectral fitting, and F dwarfs because they rotate fast and have few sharp lines.
+**M dwarfs**, small, cool, low-mass stars, and F dwarfs at the extremes of the spectral type range are harder targets: M dwarfs because they are faint at optical wavelengths and have molecular features that complicate spectral fitting, and F dwarfs because they rotate fast and have few sharp lines.
 The strongest yields of pure radial velocity surveys have therefore come around quiet G and K main-sequence stars in the 5 to 10 parsec neighbourhood, where high signal-to-noise spectra can be acquired in a few minutes.
 
 ### Transit method
@@ -157,7 +157,7 @@ The history of transit surveys is essentially a history of expanding field of vi
 **Kepler** (2009--2013) and its **K2** extension (2014--2018) monitored about 150,000 stars in a single field continuously for four years and delivered the first statistically complete sample of small exoplanets {cite:p}`Borucki2010,Fressin2013`.
 **TESS** (2018--present) is an all-sky survey designed to find small planets around the brightest, nearest stars where atmospheric follow-up is possible.
 **CHEOPS** (2019--present) is a follow-up photometer that obtains high-precision transit light curves of known target systems for refined radius measurements.
-**PLATO**, scheduled for launch in early 2027, is the next ESA exoplanet mission and is designed specifically to find Earth-sized planets in the habitable zones of bright Sun-like stars over 2--3 year monitoring baselines {cite:p}`Rauer2014`.
+**PLATO**, scheduled for launch in early 2027, is the next ESA exoplanet mission and is designed specifically to find Earth-sized planets in the **habitable zones**, the orbital distances at which a rocky planet could plausibly sustain liquid surface water, of bright Sun-like stars over 2--3 year monitoring baselines {cite:p}`Rauer2014`.
 Selection biases for these surveys are similar but not identical: Kepler favoured Sun-like stars at moderate distance, TESS favours bright nearby stars across all spectral types, and PLATO will favour bright Sun-like stars where radial-velocity follow-up is feasible.
 
 ## Blackboard derivation: Transit depth, radial velocity, and bulk density
@@ -287,14 +287,14 @@ Currently active high-contrast facilities include SPHERE on the VLT, GPI on Gemi
 :name: fig:hr8799
 :width: 80%
 
-Discovery image of the **HR 8799** planetary system from {cite:t}`Marois2008`. Three of the four giant planets (b, c, d) are visible at projected separations of $24$, $38$, and $68$ AU after subtraction of the stellar PSF using angular differential imaging. The Keck and Gemini AO observations spanned 2004 to 2008. The fourth planet, HR 8799 e (at $\sim 14$ AU), was added by Marois et al.\ in 2010. The four planets have masses of roughly $5$--$10\,\Mjup$ and span orbital separations of $14$--$68$ AU. They are young, hot, self-luminous, and still cooling: this is the regime in which direct imaging works.
+Discovery image of the **HR 8799** planetary system from {cite:t}`Marois2008`. Three of the four giant planets (b, c, d) are visible at projected separations of $24$, $38$, and $68$ AU after subtraction of the stellar PSF (point-spread function, the blurred image of the star itself) using angular differential imaging. The Keck and Gemini AO observations spanned 2004 to 2008. The fourth planet, HR 8799 e (at $\sim 14$ AU), was added by Marois et al.\ in 2010. The four planets have masses of roughly $5$--$10\,\Mjup$ and span orbital separations of $14$--$68$ AU. They are young, hot, self-luminous, and still cooling: this is the regime in which direct imaging works.
 ```
 
 The current sensitivity of direct imaging is dominated by the planet's brightness.
 Young giant planets, $\lesssim 100$ Myr old, are still radiating away the gravitational binding energy of their formation and are luminous in the infrared.
 Old planets, like Jupiter, have cooled and emit a thousand times less.
 The directly imaged planet population is therefore strongly biased toward young (10--500 Myr), massive ($> 1\,\Mjup$), wide-orbit ($> 10$ AU) giants around nearby stars.
-Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 60$ Myr (formal range $30$--$160$ Myr) {cite:p}`Marois2008` ({numref}`fig:hr8799`), **$\beta$ Pictoris b/c** orbiting an A6V star embedded in the famous debris disk (system age $\sim 12$--$23$ Myr from successive Beta Pictoris Moving Group calibrations; planet b reported by {cite:t}`Lagrange2010` and planet c later identified by {cite:t}`Nowak2020`) ({numref}`fig:betapic`), **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
+Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 60$ Myr (formal range $30$--$160$ Myr) {cite:p}`Marois2008` ({numref}`fig:hr8799`), **$\beta$ Pictoris b/c** orbiting an A6V star embedded in the famous debris disk, a ring of leftover dust and planetesimals (system age $\sim 12$--$23$ Myr from successive Beta Pictoris Moving Group calibrations; planet b reported by {cite:t}`Lagrange2010` and planet c later identified by {cite:t}`Nowak2020`) ({numref}`fig:betapic`), **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
 
 ```{figure} figures/betapic_imaging.avif
 :align: center
@@ -444,12 +444,12 @@ Kepler-derived planet occurrence rates as a function of orbital period and plane
 :name: fig:bryson
 :width: 594px
 
-Marginalised differential occurrence rate of small planets from the Kepler analysis of {cite:t}`Bryson2021`. **Left**: occurrence per unit planetary radius, $\dd N / \dd R$, evaluated at $\Delta R = 0.25\,\Rearth$. **Right**: occurrence per unit instellation flux, $\dd N / \dd I$, evaluated at $\Delta I = 0.18$ (note the inverted x-axis, with low instellation on the right). Dark and light shaded bands are the 68\% and 95\% credible intervals. The observed occurrence rates give central values of $\eta_\oplus \sim 0.4$ for the conservative habitable zone, with 68\% credible intervals of roughly $0.2$--$0.9$ depending on the precise definition of habitable-zone Earth analogue. This is the range typically quoted in mission yield estimates for HWO and LIFE (see Part 3).
+Marginalised differential occurrence rate of small planets from the Kepler analysis of {cite:t}`Bryson2021`. **Left**: occurrence per unit planetary radius, $\dd N / \dd R$, evaluated at $\Delta R = 0.25\,\Rearth$. **Right**: occurrence per unit instellation flux (the stellar radiative flux received at the planet's orbit), $\dd N / \dd I$, evaluated at $\Delta I = 0.18$ (note the inverted x-axis, with low instellation on the right). Dark and light shaded bands are the 68\% and 95\% credible intervals. The observed occurrence rates give central values of $\eta_\oplus \sim 0.4$ for the conservative habitable zone, with 68\% credible intervals of roughly $0.2$--$0.9$ depending on the precise definition of habitable-zone Earth analogue. This is the range typically quoted in mission yield estimates for HWO and LIFE (see Part 3).
 ```
 
 A particularly important "laboratory" target system is **TRAPPIST-1**, an ultra-cool dwarf at 12 parsecs hosting **seven** transiting Earth-sized planets in a tightly packed inner system, all within 0.06 AU {cite:p}`Gillon2017`.
 The system was discovered with the ground-based TRAPPIST-South 60 cm telescope and its successor SPECULOOS, then characterised in detail with Spitzer transit photometry and TTV mass measurements.
-The seven planets form a chain of mean-motion resonances, evidence of an early disk-driven migration phase that captured them into orbital lock and stabilised them long enough to survive 4 Gyr of dynamical evolution.
+The seven planets form a chain of **mean-motion resonances**, orbital periods locked near ratios of small integers, evidence of an early disk-driven migration phase that captured them into orbital lock and stabilised them long enough to survive 4 Gyr of dynamical evolution.
 TRAPPIST-1 has become the central reference for several reasons: the planets are small (Earth-sized rather than mini-Neptune-sized), the host star is an M dwarf where atmospheric characterisation is geometrically favourable, several of the planets lie in or near the classical habitable zone, and the system is so geometrically well-aligned that all seven planets transit (a probability of less than $10^{-3}$ for random orientations, which suggests that compact M-dwarf systems are intrinsically very flat) ({numref}`fig:trappist1transits`). The dynamical mass measurements come from transit timing variations rather than from radial velocities, since the host is too faint at optical wavelengths for precision RV work ({numref}`fig:trappist1ttvs`).
 
 ```{figure} figures/trappist1_transits.avif
@@ -552,7 +552,7 @@ The rocky core's own thermal evolution sets the survival probability of any enve
 Core-powered mass loss model from {cite:t}`Ginzburg2018`. The figure shows the predicted radius distribution of small planets when envelope mass loss is driven by the cooling rocky interior rather than by external XUV photons. The distribution is bimodal in the same sense as photoevaporation models, with a gap at $\sim 1.8\,\Rearth$ separating bare rocky cores from sub-Neptunes that retain their envelopes.
 ```
 
-A key follow-up by Vincent Van Eylen and collaborators used asteroseismic stellar radii (which are more precise than spectroscopic radii) for a sample of transiting Kepler small planets to quantify the **slope** of the radius valley with orbital period {cite:p}`VanEylen2018`.
+A key follow-up by Vincent Van Eylen and collaborators used **asteroseismic** stellar radii, derived from the natural oscillation frequencies of the host stars and more precise than spectroscopic radii, for a sample of transiting Kepler small planets to quantify the **slope** of the radius valley with orbital period {cite:p}`VanEylen2018`.
 They found that the valley shifts to smaller radius at longer orbital period, consistent with both photoevaporation and core-powered mass loss models.
 The two physical mechanisms predict somewhat different slopes and somewhat different dependences on stellar mass and metallicity; current data are not yet decisive enough to discriminate between them.
 The community consensus is that **both** mechanisms operate, that they predict broadly similar valleys, and that the valley itself is now the strongest individual constraint on the close-in evolution of small planets ({numref}`fig:vaneylen` and {numref}`fig:vaneylenmodels`).
@@ -597,7 +597,7 @@ The **hot Neptune desert** in the period-mass and period-radius planes from {cit
 
 The desert is interpreted as the result of two processes acting on a population formed with thick H/He envelopes but with relatively weak gravitational binding.
 Photoevaporation strips the envelopes of the lower-mass population (below the desert), turning would-be hot Neptunes into bare hot super-Earths.
-Roche-lobe overflow truncates the upper edge: a sufficiently inflated planet on a sufficiently close orbit fills its Roche lobe and loses additional mass through tidal stripping, depleting the heavier population from above.
+Roche-lobe overflow truncates the upper edge: a sufficiently inflated planet on a sufficiently close orbit fills its **Roche lobe**, the region around the planet within which gas stays gravitationally bound to it rather than to the star, and loses additional mass through tidal stripping, depleting the heavier population from above.
 The hot Neptune desert is therefore a second, independent piece of evidence that **mass loss is the dominant sculptor of close-in planet populations**, and that the planets we see today are not the same planets that formed.
 
 ### Planetary system architectures
@@ -746,7 +746,7 @@ The biggest concern for M dwarf habitability is **stellar activity**.
 M dwarfs spend a longer fraction of their early life in a high-luminosity pre-main-sequence phase than Sun-like stars do, with surface luminosities up to ten times their main-sequence value for hundreds of Myr.
 A planet that ends up in the M dwarf habitable zone will, during this early phase, have been well inside its **runaway-greenhouse boundary** and will have lost much of its initial water inventory.
 M dwarfs are also magnetically more active than Sun-like stars and emit much more XUV flux per unit bolometric luminosity.
-{cite:t}`LugerBarnes2015` showed that the integrated XUV history of an early M dwarf can drive complete loss of an Earth-equivalent ocean's worth of water on a habitable-zone planet, leaving an oxygen-rich abiotic atmosphere as a false-positive biosignature.
+{cite:t}`LugerBarnes2015` showed that the integrated XUV history of an early M dwarf can drive complete loss of an Earth-equivalent ocean's worth of water on a habitable-zone planet, leaving an oxygen-rich abiotic atmosphere as a false-positive **biosignature**, a chemical sign that mimics evidence of life without a biological origin.
 Whether modern habitable-zone M dwarf planets have any atmospheric water at all remains an open empirical question that JWST is now beginning to address (Part 3).
 
 A second concern is **tidal locking**.
@@ -767,7 +767,7 @@ $$
 \delta(\lambda) = \frac{[R_p + n_H H(\lambda)]^2}{R_\star^2},
 $$
 
-where $H = \kB T / (\mu m_u g)$ is the atmospheric scale height, $\mu$ is the mean molecular weight in atomic mass units, $m_u$ is the atomic mass unit, $g$ is the surface gravity, and $n_H$ is the number of scale heights probed at wavelength $\lambda$ (typically a few).
+where $H = \kB T / (\mu m_u g)$ is the atmospheric **scale height**, the vertical distance over which the atmospheric density falls by a factor of $e$, $\mu$ is the mean molecular weight in atomic mass units, $m_u$ is the atomic mass unit, $g$ is the surface gravity, and $n_H$ is the number of scale heights probed at wavelength $\lambda$ (typically a few).
 A short numerical exercise makes the sensitivity scaling concrete.
 For a typical hot Jupiter with dayside-terminator temperature $T \approx 1500$ K, an $\mathrm{H_2}$/He envelope of mean molecular weight $\mu \approx 2.3$, and surface gravity $g \approx 25$ m s$^{-2}$, the scale height is
 
@@ -811,7 +811,7 @@ Featureless transmission spectrum of the warm sub-Neptune **GJ 1214 b** from {ci
 
 Transmission spectroscopy probes the day-night terminator at low pressure.
 A complementary technique is **emission spectroscopy**, which observes the planet's own thermal radiation directly when the planet passes **behind** the star (the **secondary eclipse**) and then reappears.
-The drop in flux during secondary eclipse measures the brightness temperature of the planet's dayside.
+The drop in flux during secondary eclipse measures the **brightness temperature** of the planet's dayside, the temperature of the blackbody that would emit the same flux.
 Continuous monitoring of the planet across its full orbit produces a **phase curve**, which traces the apparent brightness as different parts of the planet rotate into view.
 A strong day-night contrast in the phase curve indicates inefficient heat redistribution and therefore a thin or absent atmosphere; a weak contrast indicates strong heat redistribution by an optically thick, dynamically active atmosphere ({numref}`fig:wasp43`).
 

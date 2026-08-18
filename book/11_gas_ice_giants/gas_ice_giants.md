@@ -30,14 +30,14 @@ Together the two gas giants account for about 92% of the total planetary mass of
 
 Both planets have envelopes whose composition is dominated by molecular hydrogen ($\mathrm{H_2}$) and helium (He), in proportions broadly similar to those of the Sun, with only a few percent enrichment in heavier elements ({ref}`Lecture 2 <lecture02>`).
 Crucially, neither has a solid surface in the sense familiar from the rocky planets.
-Pressure and temperature rise smoothly with depth, and the planet transitions from a tenuous gas to a supercritical fluid to a metallic plasma over a continuous range.
+Pressure and temperature rise smoothly with depth, and the planet transitions from a tenuous gas to a supercritical fluid, a phase above a substance's critical point at which the distinction between liquid and gas disappears, to a metallic plasma over a continuous range.
 "Surface" is therefore defined for the gas giants as the level where the atmospheric pressure reaches 1 bar, which is a convention rather than a physical interface {cite:p}`Stevenson2020`.
 
 Both gas giants rotate rapidly.
 Jupiter completes one rotation in about 9 h 56 min, Saturn in about 10 h 33 min, much faster than any rocky planet.
 Their rotation drives strong Coriolis forces that organise atmospheric motion into long-lived, latitude-aligned bands of east-west wind, the most conspicuous example of which is the alternating pattern of bright "zones" and darker "belts" on Jupiter that has been recognised since the seventeenth century.
 The rapid rotation also makes both planets visibly oblate. Jupiter is flattened by about 6.5%, Saturn by about 9.8%.
-This oblateness is not a curiosity but a quantitative diagnostic of the interior density distribution, because the gravitational potential outside an oblate spinning body is encoded in a series of zonal harmonics $J_2, J_4, J_6, \dots$ that the Juno {cite:p}`Bolton2017` and Cassini spacecraft have measured to ever higher precision {cite:p}`Iess2018,Iess2019`.
+This oblateness is not a curiosity but a quantitative diagnostic of the interior density distribution, because the gravitational potential outside an oblate spinning body is encoded in a series of zonal harmonics $J_2, J_4, J_6, \dots$, coefficients that describe how the gravity field departs from that of a uniform sphere at successively finer angular scales, that the Juno {cite:p}`Bolton2017` and Cassini spacecraft have measured to ever higher precision {cite:p}`Iess2018,Iess2019`.
 
 A final shared feature is that both planets emit more energy than they absorb from the Sun.
 Jupiter radiates about 1.7 times the absorbed solar flux; Saturn radiates about 1.8 times the absorbed flux.
@@ -52,7 +52,7 @@ Just below the visible cloud tops the envelope is a mixture of $\mathrm{H_2}$ an
 Compression with depth turns the molecular hydrogen into a denser molecular fluid, then into a state in which the electrons become delocalised: metallic hydrogen.
 The transition from molecular to metallic hydrogen is gradual rather than a true first-order phase change at Jovian conditions.
 Laboratory shock experiments and density-functional-theory calculations place the conducting transition at a pressure of approximately $100$ GPa and a temperature of order $5000$ K, which corresponds to a fractional radius of about $0.85\,R_J$ in Jupiter {cite:p}`Wahl2017`.
-Below this depth the fluid conducts electricity well enough to support the dynamo that generates Jupiter's strong magnetic field ({ref}`Lecture 4 <lecture04>`).
+Below this depth the fluid conducts electricity well enough to support the dynamo that generates Jupiter's strong magnetic field, the self-sustaining process by which motion in an electrically conducting fluid maintains a magnetic field ({ref}`Lecture 4 <lecture04>`).
 At the centre of the planet, models constrained by Juno gravity data converge on conditions near $\sim4000$ GPa and $\sim20{,}000$ K {cite:p}`Wahl2017,Militzer2022`.
 
 ```{figure} figures/jupiter_dilute_core_wahl2017.avif
@@ -71,7 +71,7 @@ This "dilute core" or "fuzzy core" picture was first established by {cite:t}`Wah
 The dilute core is now the standard model and represents one of the most striking re-evaluations of giant planet interiors in the last decade ({numref}`fig:jupiter_dilute_core`).
 
 The discovery of the dilute core has direct implications for how Jupiter formed.
-A purely compact core of $\sim10\,\Mearth$ assembled by core accretion ({ref}`Lecture 2 <lecture02>`) should not naturally erode into the envelope on the age of the solar system; the core material is much denser than metallic hydrogen and is buoyantly stable against mixing.
+A purely compact core of $\sim10\,\Mearth$ assembled by core accretion, the formation pathway in which a solid core grows large enough to gravitationally bind a substantial surrounding gas envelope ({ref}`Lecture 2 <lecture02>`), should not naturally erode into the envelope on the age of the solar system; the core material is much denser than metallic hydrogen and is buoyantly stable against mixing.
 The fact that the heavy elements are now distributed over an extended interior region therefore implies either that mixing was efficient at some early epoch, perhaps following a giant impact during late accretion, or that the original core was assembled by a different process, perhaps the late hydrodynamic accretion of an envelope that already contained substantial amounts of dissolved heavy elements.
 Both options remain under active discussion {cite:p}`Militzer2022`.
 The example illustrates how a single mission's gravity science can rewrite the textbook picture of a familiar planet.
@@ -94,7 +94,7 @@ Jupiter's banded appearance reflects an atmosphere organised into about fifteen 
 The jets reach velocities of order 180 m s$^{-1}$ at the equator and at several mid-latitude bands {cite:p}`dePaterLissauer2010`.
 Bright zones correspond to rising air masses topped by ammonia clouds, while darker belts correspond to descending air that exposes deeper, browner haze layers.
 The pattern is far more stable than terrestrial weather: individual jets persist for decades, and the global zone-belt structure, although it changes in detail, has been recognisable for the entire era of telescopic observation.
-Embedded in this flow are storms of all sizes, the most famous of which is the **Great Red Spot** (GRS), an anticyclonic vortex in the southern hemisphere that has been observed continuously since at least 1830 and possibly since the seventeenth century.
+Embedded in this flow are storms of all sizes, the most famous of which is the **Great Red Spot** (GRS), an anticyclonic vortex, a storm that rotates in the sense opposite to a cyclone at the same latitude, in the southern hemisphere that has been observed continuously since at least 1830 and possibly since the seventeenth century.
 The GRS is shrinking: at the start of the twentieth century it spanned about 40{,}000 km, while today it has contracted to roughly 14{,}000 km, although the mechanisms driving its contraction remain debated ({numref}`fig:jupiter_grs`).
 
 ```{figure} figures/jupiter_north_pole_cyclones_juno.avif
@@ -119,7 +119,7 @@ The pattern persists across multiple Juno orbits and is currently the best const
 Juno gravity science has also constrained the depth to which the equatorial zonal jets extend: by detecting subtle north-south asymmetries in the gravity field, {cite:t}`Kaspi2018` showed that the jets penetrate to several thousand kilometres depth, with a characteristic decay depth of $\sim$2{,}000 km and the flow falling to negligible speeds by $\sim$3{,}000 km, a substantial fraction of the molecular hydrogen envelope.
 Below this depth the magnetic stress associated with metallic hydrogen damps the differential rotation, and the deep interior approaches solid-body rotation.
 
-The aurorae of Jupiter, the most powerful in the solar system, are powered by a combination of magnetospheric processes ({ref}`Lecture 4 <lecture04>`) and the heavy mass loading from Io, whose volcanism feeds about $1$ tonne s$^{-1}$ of sulphur and oxygen into the Jovian magnetosphere.
+The aurorae of Jupiter, the most powerful in the solar system, are powered by a combination of magnetospheric processes ({ref}`Lecture 4 <lecture04>`; the magnetosphere is the region of space around a planet where its own magnetic field dominates over the solar wind) and the heavy mass loading from Io, whose volcanism feeds about $1$ tonne s$^{-1}$ of sulphur and oxygen into the Jovian magnetosphere.
 The auroral footprints of Io, Europa, and Ganymede have all been imaged in the ultraviolet, providing a direct visualisation of the electromagnetic coupling between the giant planet and its moons.
 The "Great Blue Spot", an isolated region of intense magnetic flux near Jupiter's equator, is a magnetic anomaly mapped by Juno that bears no relation to atmospheric features and probably reflects unusual structure in the dynamo source region {cite:p}`Connerney2022`.
 
@@ -128,7 +128,7 @@ The "Great Blue Spot", an isolated region of intense magnetic flux near Jupiter'
 Io is Jupiter's innermost large moon and the most volcanically active body in the solar system.
 Its discovery as one of the four "Medicean stars" by Galileo in 1610 was the first direct observation of a body orbiting another planet.
 Modern remote sensing reveals about 400 active volcanic centres and a global heat output of about $10^{14}$ W, dissipated as tidally driven volcanism rather than radiogenic heat ({ref}`Lecture 3 <lecture03>`).
-This staggering heat flow is sustained by tidal flexing in the Laplace resonance with Europa and Ganymede (orbital periods 1:2:4, mean motions 4:2:1), identified theoretically by {cite:t}`Peale1979` immediately before the Voyager 1 flyby provided the first images of Io's volcanism in 1979.
+This staggering heat flow is sustained by tidal flexing in the Laplace resonance, a chain of mean-motion resonances in which orbital periods lock into simple integer ratios that reinforce the bodies' mutual gravitational tugs each orbit, with Europa and Ganymede (orbital periods 1:2:4, mean motions 4:2:1), identified theoretically by {cite:t}`Peale1979` immediately before the Voyager 1 flyby provided the first images of Io's volcanism in 1979.
 
 ```{figure} figures/io_loki_volcano.avif
 :align: center
@@ -159,7 +159,7 @@ Comparison of two interior models for Io constrained by Juno gravity science. Le
 ```
 
 Earlier interpretations of Galileo magnetometer data had argued for a global, shallow magma ocean below Io's lithosphere.
-Juno's recent close flybys of Io in late 2023 and early 2024 measured the tidal response of Io directly, using two-way Doppler tracking to determine the gravitational $k_2$ tidal Love number {cite:p}`Park2024`.
+Juno's recent close flybys of Io in late 2023 and early 2024 measured the tidal response of Io directly, using two-way Doppler tracking to determine the gravitational $k_2$ tidal Love number, a dimensionless measure of how much a body's mass distribution deforms in response to tidal forcing, which is sensitive to internal structure {cite:p}`Park2024`.
 The result was a surprise: $k_2 \approx 0.125 \pm 0.047$, which is too small for a body with a global subsurface magma ocean and instead requires a mostly solid silicate mantle, with localised partial melting feeding the surface volcanism rather than a continuous magma layer.
 This is a clear example of how an external gravity measurement, taken with care during a brief flyby, can rewrite our picture of a body's interior in a way that orbital imaging alone cannot ({numref}`fig:io_tidal`).
 
@@ -226,7 +226,7 @@ JUICE will use radar, laser altimetry, magnetometry, and gravity science to map 
 ### Callisto
 
 Callisto, the outermost of the four Galilean moons, is in many ways a quieter sibling.
-Its radius of 2410 km makes it nearly as large as Mercury, but its bulk density of 1834 kg m$^{-3}$ is intermediate between those of Ganymede and Europa, and its dimensionless moment of inertia $C/MR^2 \approx 0.355$ implies that the interior is only partially differentiated, with rock and ice incompletely separated even after 4.5 Gyr of evolution {cite:p}`Anderson2001`.
+Its radius of 2410 km makes it nearly as large as Mercury, but its bulk density of 1834 kg m$^{-3}$ is intermediate between those of Ganymede and Europa, and its dimensionless moment of inertia $C/MR^2 \approx 0.355$, a measure of how centrally concentrated the mass is (a uniform sphere has $C/MR^2 = 0.4$, with lower values indicating denser material concentrated toward the centre), implies that the interior is only partially differentiated, with rock and ice incompletely separated even after 4.5 Gyr of evolution {cite:p}`Anderson2001`.
 This makes Callisto a useful counterpoint to the other Galileans, in which differentiation has run to completion ({numref}`fig:callisto` and {numref}`fig:callisto_cutaway`).
 
 ```{figure} figures/callisto_global.avif
@@ -332,7 +332,7 @@ Saturn's hexagonal polar jet imaged by Cassini, false-colour view (PIA14946). Th
 ```
 
 The most distinctive feature of Saturn's atmosphere is the **hexagonal jet stream** at $\sim 78^\circ$ N latitude, a six-sided standing wave that has been present continuously since Voyager observed it in 1981 and was mapped in detail by Cassini through its 13-year tour ({numref}`fig:saturn_hexagon`).
-The hexagon is interpreted as a Rossby wave locked to a strong eastward zonal jet whose meridional shear sets the wavenumber of the standing pattern; laboratory experiments with rotating-tank flows can reproduce stable polygonal jet patterns in similar conditions, although the exact physical mechanism that selects six rather than five or seven sides is not yet definitively understood.
+The hexagon is interpreted as a Rossby wave, a large-scale wave that arises because the effective rotation felt by a fluid parcel varies with latitude, locked to a strong eastward zonal jet whose meridional shear sets the wavenumber of the standing pattern; laboratory experiments with rotating-tank flows can reproduce stable polygonal jet patterns in similar conditions, although the exact physical mechanism that selects six rather than five or seven sides is not yet definitively understood.
 
 Saturn's equatorial jet is one of the fastest in the solar system, with peak speeds reaching $\sim$400 m s$^{-1}$, more than double the equivalent on Jupiter, though it is itself surpassed by Neptune's $\sim$450 m s$^{-1}$ westward equatorial flow (see Part 2).
 The "Great White Storms" are massive convective outbursts that erupt every $\sim$30 years (one Saturnian year), span thousands of kilometres, and circle the planet within a few months before dissipating.
@@ -603,7 +603,7 @@ Iapetus showing the two-toned hemispheric pattern, Cassini global mosaic from th
 :name: fig:phoebe
 :width: 55%
 
-Phoebe, an outer irregular moon of Saturn in a retrograde, highly inclined orbit. Phoebe is widely interpreted as a captured Kuiper Belt object and is the source of dark dust that infalls onto Iapetus's leading hemisphere. Image credit: NASA/JPL-Caltech/Space Science Institute.
+Phoebe, an outer irregular moon of Saturn, meaning its distant, retrograde, and highly inclined orbit marks it as captured rather than formed in place around the planet. Phoebe is widely interpreted as a captured Kuiper Belt object and is the source of dark dust that infalls onto Iapetus's leading hemisphere. Image credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
 Iapetus is famous for its two-faced appearance. The leading hemisphere is darker than asphalt while the trailing hemisphere is bright water ice.
@@ -820,7 +820,7 @@ Disk lifetimes are $\sim$3--5 Myr ({ref}`Lecture 2 <lecture02>`), which sets a s
 In this framework, Jupiter and Saturn are planets whose cores reached the critical mass early enough to capture massive envelopes before disk dispersal, and whose final masses were then determined by how much gas they could accrete in the remaining disk lifetime.
 Uranus and Neptune, by contrast, either reached critical mass too late, or formed in a region where the gas surface density was too low, or both.
 They captured only modest envelopes (a few Earth masses of $\mathrm{H_2}$/He at most) and stalled at their current masses.
-The Nice model, in its modern five-planet form ({ref}`Lecture 2 <lecture02>`; {cite:p}`Tsiganis2005,Nesvorny2018`), further argues that the ice giants underwent significant late migration, scattering the population of trans-Neptunian planetesimals after the disk had dispersed.
+The Nice model, a dynamical model of the giant planets' post-formation orbital migration, in its modern five-planet form ({ref}`Lecture 2 <lecture02>`; {cite:p}`Tsiganis2005,Nesvorny2018`), further argues that the ice giants underwent significant late migration, scattering the population of trans-Neptunian planetesimals, the km-to-hundred-km-scale bodies left over from planet formation, after the disk had dispersed.
 The 10--20 $\Mearth$ ice-giant mass therefore appears to be a natural intermediate outcome of core accretion under the conditions of the early outer solar system.
 
 ### Common themes across all four giants
