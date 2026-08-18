@@ -611,14 +611,14 @@ Magnetic fields vary enormously across the solar system. Comparing them reveals 
 
 | Body | Field type | Surface field | Dipole moment (relative to Earth) | Notes |
 |------|-----------|:---:|:---:|-------|
-| **Earth** | Active dynamo | 25–65 $\mu$T | 1 | Liquid Fe outer core, growing inner core |
+| **Earth** | Active dynamo | 25 to 65 $\mu$T | 1 | Liquid Fe outer core, growing inner core |
 | **Mercury** | Active dynamo | ~0.3 $\mu$T | $\sim 5 \times 10^{-4}$ | Weak; thin liquid shell {cite:p}`Anderson2012` |
 | **Venus** | None detected | $< 0.01$ $\mu$T | $< 10^{-5}$ | No dynamo despite large iron core |
-| **Mars** | Remnant crustal | Up to ~1500 nT | n/a | Dynamo ceased $\sim 4.1$-$3.7$ Ga {cite:p}`Acuna1999,Mittelholz2020` |
-| **Jupiter** | Active dynamo | ~400–1400 $\mu$T | $\sim 20{,}000$ | Metallic H dynamo {cite:p}`Connerney2022` |
+| **Mars** | Remnant crustal | Up to ~1500 nT | n/a | Dynamo ceased $\sim 4.1$ to $3.7$ Ga {cite:p}`Acuna1999,Mittelholz2020` |
+| **Jupiter** | Active dynamo | ~400 to 1400 $\mu$T | $\sim 20{,}000$ | Metallic H dynamo {cite:p}`Connerney2022` |
 | **Saturn** | Active dynamo | ~20 $\mu$T | ~600 | Remarkably axisymmetric |
-| **Uranus** | Active dynamo | ~10–100 $\mu$T | ~50 | Multipolar, tilted ~59° and offset from centre |
-| **Neptune** | Active dynamo | ~10–60 $\mu$T | ~28 | Multipolar, tilted ~47° and offset from centre |
+| **Uranus** | Active dynamo | ~10 to 100 $\mu$T | ~50 | Multipolar, tilted ~59° and offset from centre |
+| **Neptune** | Active dynamo | ~10 to 60 $\mu$T | ~28 | Multipolar, tilted ~47° and offset from centre |
 | **Ganymede** | Active dynamo | ~0.7 $\mu$T | $\sim 1.5 \times 10^{-3}$ | Only moon with intrinsic dynamo |
 
 These nine bodies span four orders of magnitude in surface field strength and a range of morphologies from cleanly dipolar (Earth, Jupiter, Saturn, Ganymede) to weak and offset (Mercury) to strongly multipolar (Uranus, Neptune), as illustrated in {numref}`fig:planetary-field-morphologies`.
@@ -631,6 +631,8 @@ These nine bodies span four orders of magnitude in surface field strength and a 
 Radial magnetic field at the surfaces of (a) Mercury, (b) Earth, (c) Jupiter, (d) Saturn, (e) Uranus, and (f) Neptune, in Mollweide projections. Earth, Jupiter, and Saturn are predominantly dipolar with the dipole axis approximately aligned with the rotation axis; Uranus and Neptune are clearly multipolar with dipoles tilted by $\sim 59°$ and $\sim 47°$ respectively and offset from the planet centre; Mercury's field is weak and asymmetric, with the dipole offset $\sim 500$ km northward. Field intensities span four orders of magnitude (note the per-panel colour scales). Reproduced from {cite:p}`Soderlund2020`, Fig. 1.
 ```
 
+### Dipolar versus multipolar fields
+
 The same nine-decade range can be understood as a single dynamical family by placing each body in the parameter space of dimensionless dipole moment versus local **Rossby number** (the ratio of inertial to Coriolis forces in the fluid, a measure of how strongly planetary rotation constrains the convective flow). {numref}`fig:dipole-scaling` shows the strongly dipolar regime (dark shading) and multipolar regime (light shading) inferred from numerical dynamo models, with the six dynamo-hosting planets and Ganymede plotted at their estimated control-parameter values.
 
 ```{figure} figures/olson2006_dipole_scaling.avif
@@ -641,27 +643,35 @@ The same nine-decade range can be understood as a single dynamical family by pla
 Dimensionless dipole moment (the dipole Lorentz number $\mathrm{Lo}_{\rm dip}$ scaled by the buoyancy-flux Rayleigh number, $\mathrm{Lo}_{\rm dip}/\mathrm{Ra}_Q^{1/3}$) versus local Rossby number $\mathrm{Ro}_l$. The transition from the strongly dipolar regime (dark shading) to the multipolar regime (light shading) is calibrated against numerical dynamo simulations; the dotted line marks the regime transition at $\mathrm{Ro}_l \sim 0.1$. The six dynamo-hosting planets and Ganymede are placed at their estimated control-parameter values; the grey circle next to each symbol indicates the strength of the observational constraint. Earth, Jupiter, Saturn, and Ganymede sit in or near the dipolar regime; Uranus and Neptune sit lower, and Mercury falls in the multipolar regime, consistent with their tilted, offset, or weak surface fields. Reproduced from {cite:p}`OlsonChristensen2006`, Fig. 7.
 ```
 
+### The dynamo scaling law
+
+How strong a field should a given dynamo produce? Numerical dynamo simulations establish a robust empirical scaling between the surface dipole field $B_\mathrm{dip}$, the convective buoyancy flux $F_q$ that drives the flow, and the thickness $D$ of the convecting shell {cite:p}`ChristensenAubert2006,OlsonChristensen2006`:
+
+$$
+B_\mathrm{dip} \propto \sqrt{\rho_\mathrm{core} \mu_0} \cdot \big( F_q \cdot D \big)^{1/3}
+$$ (eq:dynamo-scaling)
+
+where $\rho_\mathrm{core}$ is the mean density of the convecting fluid and $\mu_0$ is the permeability of free space. The scaling is independent of the rotation rate, provided the flow rotates rapidly, as every planetary core does. Its physical content is that the field strength is set by the rate at which convection generates magnetic energy, which grows with the buoyancy flux and with the depth over which that flux is integrated. The same relation collapses dozens of three-dimensional dynamo simulations and the observed fields of Earth, Jupiter, Saturn, Mercury, and Ganymede onto a single line spanning roughly four orders of magnitude ({numref}`fig:dynamo-scaling`), the central empirical support for a universal dynamo mechanism across the solar system.
+
+```{figure} figures/christensen2006_dynamo_scaling.avif
+:name: fig:dynamo-scaling
+:width: 620px
+:align: center
+
+Predicted vs observed magnetic-field strength for convection-driven dynamos, following the scaling law of Eq. {eq}`eq:dynamo-scaling`. The horizontal axis is a non-dimensional combination of convective buoyancy flux, shell thickness, and core density; the vertical axis is the measured (observed) or computed (simulated) dipole field. The grey crosses illustrate the published result that numerical dynamo simulations collapse onto a single line over roughly four orders of magnitude; Earth, Jupiter, Saturn, Mercury, and Ganymede (coloured symbols) lie on the same relation within factors of order unity. Venus is omitted because its present-day dynamo is shut off. Illustration after {cite:t}`ChristensenAubert2006` and {cite:t}`OlsonChristensen2006`.
+```
+
 ### Mercury
 
-Mercury possesses a weak but **active** dynamo: its surface field is only about 1% of Earth's. The MESSENGER mission revealed that Mercury's field is strongly offset northward from the planet's centre, suggesting an unusual dynamo geometry. Mercury's liquid outer core shell is thought to be relatively thin (perhaps only a few hundred kilometres), which limits the vigour of convection and the resulting field strength {cite:p}`Anderson2012`.
+Mercury possesses a weak but **active** dynamo: its surface field is only about 1% of Earth's, and the MESSENGER mission revealed that it is strongly offset northward from the planet's centre {cite:p}`Anderson2012`. The liquid part of Mercury's large core is thought to form only a thin shell, perhaps a few hundred kilometres thick, above a solidifying interior; in the favoured iron-snow scenario, iron crystallises near the top of this shell and the sinking crystals release compositional buoyancy only episodically. The product $F_q \cdot D$ in Eq. {eq}`eq:dynamo-scaling` is therefore small, and Mercury's dynamo is intrinsically weak at its source, not merely attenuated on the way to the surface.
 
 ### Venus
 
-Venus presents a puzzle: it is nearly identical to Earth in size and bulk composition, and should have a liquid iron core, yet it has **no detected magnetic field**. Several explanations have been proposed:
-
-- **Slow rotation:** Venus rotates extremely slowly (243-day period), but numerical dynamo simulations show that slow rotation alone does not prevent dynamo action.
-- **No inner core:** If Venus's core is entirely liquid (no solid inner core has nucleated), then compositional convection (the dominant driver of Earth's dynamo) would be absent. Thermal convection alone may be insufficient.
-- **Stagnant lid tectonics:** Without plate tectonics ({ref}`Lecture 9 <lecture09>`), the mantle may not extract heat from the core efficiently enough to drive vigorous core convection.
-
-The relative importance of these factors remains debated. Venus's lack of a magnetic field likely reflects a combination of reduced core cooling (due to stagnant lid tectonics insulating the core) and potentially the absence of an inner core {cite:p}`dePaterLissauer2010`.
+Venus presents a puzzle: it is nearly identical to Earth in size and bulk composition, and should have a liquid iron core, yet it has **no detected magnetic field**. Slow rotation alone cannot explain this, because numerical dynamo simulations show that even Venus's 243-day rotation period leaves the core rotation-dominated. The leading explanation combines 2 factors: no solid inner core has nucleated, so the compositional convection that dominates Earth's dynamo is absent, and the stagnant mantle lid ({ref}`Lecture 9 <lecture09>`) insulates the core and extracts heat too slowly to drive thermal convection. In the scaling of Eq. {eq}`eq:dynamo-scaling`, both $F_q$ and the convecting-shell geometry are suppressed at the same time. Venus is thus the clearest example of a planet whose magnetic state is limited not by core composition but by **mantle dynamics** controlling heat loss from the core {cite:p}`dePaterLissauer2010`.
 
 ### Mars
 
-Mars has no global magnetic field today, but the Mars Global Surveyor spacecraft discovered intense **remnant crustal magnetism** in the ancient southern highlands ({numref}`fig:mars-crustal-magnetism`), patches of magnetisation with field strengths up to $\sim$1500 nT measured at $\sim$100–200 km aerobraking altitude, far stronger than crustal magnetisation on Earth {cite:p}`Acuna1999`. These crustal magnetic anomalies are absent in the younger northern lowlands and in large impact basins (Hellas, Argyre, Isidis), indicating that:
-
-1. Mars once had an active dynamo that magnetised the ancient crust.
-2. The dynamo shut down between **~4.1 and ~3.7 Gyr ago**: the original basin-demagnetisation analysis of {cite:t}`Acuna1999` placed the cessation around 4.1-3.9 Ga, while more recent low-altitude *MAVEN* data analysed by {cite:t}`Mittelholz2020` push the last detectable dynamo activity to as late as $\sim 3.7$ Ga.
-3. The loss of the global magnetic field left Mars's atmosphere unshielded against solar wind erosion, likely contributing to the dramatic atmospheric loss that transformed Mars from a warmer, wetter world to the cold, thin-atmosphere planet we see today (see {ref}`Lecture 10 <lecture10>`).
+Mars has no global magnetic field today, but the Mars Global Surveyor spacecraft discovered intense **remnant crustal magnetism** in the ancient southern highlands ({numref}`fig:mars-crustal-magnetism`), patches of magnetisation with field strengths up to $\sim$1500 nT, far stronger than crustal magnetisation on Earth {cite:p}`Acuna1999`. These anomalies are absent in the younger northern lowlands and in the large impact basins (Hellas, Argyre, Isidis): Mars once had an active dynamo, and it shut down between $\sim 4.1$ Ga {cite:p}`Acuna1999` and $\sim 3.7$ Ga, the youngest dynamo activity detectable in low-altitude *MAVEN* data {cite:p}`Mittelholz2020`. The loss of the global field left the atmosphere unshielded against solar wind erosion, a likely contributor to the transformation of Mars from a warmer, wetter world into the cold, thin-atmosphere planet of today ({ref}`Lecture 10 <lecture10>`). Seismic and magnetic measurements by the InSight lander constrain why the dynamo died; they are discussed in the recent advances section below.
 
 ```{figure} figures/mars_crustal_magnetism.avif
 :name: fig:mars-crustal-magnetism
@@ -669,16 +679,6 @@ Mars has no global magnetic field today, but the Mars Global Surveyor spacecraft
 :align: center
 
 Global map of the radial component $\Delta B_r$ of Mars's crustal magnetic field, compiled from Mars Global Surveyor (MGS) MAG/ER data at $\sim 400$ km mapping-orbit altitude. Red and blue regions indicate strong crustal magnetisation in opposite polarities, concentrated in the ancient southern highlands. The younger northern lowlands and the large impact basins (Hellas, Argyre, Isidis) show little to no magnetisation, indicating the dynamo had ceased before these features formed {cite:p}`Connerney2005`. The original detection of Mars's crustal field is reported in {cite:t}`Acuna1999`. Credit: NASA/Goddard Space Flight Center, public domain.
-```
-
-Recent constraints on Mars's interior come from the InSight lander, which deployed the first seismometer on the Martian surface and detected $S$-wave reflections from the core-mantle boundary. Joint inversion of these seismic data with geodetic constraints (mean density, moment of inertia, tidal **Love number** $k_2$, a dimensionless measure of how much a body's mass redistributes in response to tidal forcing) gives a core radius of $R_{\rm core} = 1830 \pm 40$ km ({numref}`fig:stahler2021-mars-core`), larger than expected from many pre-mission models {cite:p}`Stahler2021`. The implied core density is too low for pure iron, requiring a substantial complement of light elements (S, O, H, C). The large, light core informs models of when and why the Martian dynamo shut down: a core that is too sulfur-rich may never have nucleated a solid inner core, depriving the dynamo of compositional buoyancy.
-
-```{figure} figures/stahler2021_mars_core.avif
-:name: fig:stahler2021-mars-core
-:width: 550px
-:align: center
-
-Sampled core properties of Mars from InSight. The central panel shows mean core density versus core radius for models from the geophysical (blue shades) and geodynamical (warm shades, yellow to red) inversions, with each point colour-coded by how well the model fits the observed degree-2 tidal Love number $k_2$ (inset). Marginal histograms are shown at the top and right; the purely seismic inversion (green histogram) constrains only the core radius. All three methods converge on a core radius near 1830 km, and the implied mean core density of $\sim 6$ g cm$^{-3}$ is too low for pure iron: the purple bands, which trace the core sulfur content of Fe alloys with light elements (S, O, H, C), require several wt% of light elements. Reproduced from {cite:t}`Stahler2021`, Fig. 2C.
 ```
 
 ### Jupiter
@@ -695,44 +695,7 @@ Radial component of Jupiter's surface magnetic field from a field model built fr
 
 ### Ganymede
 
-Jupiter's largest moon Ganymede is the only moon in the solar system with its own **intrinsic dynamo**. Its surface field of $\sim$0.7 $\mu$T implies a small but actively convecting liquid iron core. The existence of Ganymede's dynamo is surprising given the moon's small size and is not yet fully understood: it may be sustained by tidal heating or compositional convection from a freezing core {cite:p}`dePaterLissauer2010`.
-
-### Thin-shell dynamos: Mercury and Ganymede contrasted
-
-Mercury and Ganymede present a striking puzzle. Both have sustained dynamos in surprisingly small bodies: Mercury's radius is $2440$ km ($38\%$ of Earth's), and Ganymede's radius is $2634$ km ($41\%$ of Earth's). Yet their surface-field strengths differ by a factor of $\sim 2$ and their internal structures are almost certainly very different. In both cases, the leading hypothesis is a **thin-shell dynamo** operating in a narrow layer of liquid iron alloy that has not yet solidified beneath a growing inner core or between an inner core and a silicate mantle.
-
-Numerical dynamo simulations establish a robust empirical **Christensen-Aubert scaling** between the surface dipole field $B_\mathrm{dip}$, the convective buoyancy flux $F_q$ driving the flow, and the thickness $D$ of the convecting shell {cite:p}`ChristensenAubert2006,OlsonChristensen2006`:
-
-$$
-B_\mathrm{dip} \propto \sqrt{\rho_\mathrm{core} \mu_0} \cdot \big( F_q \cdot D \big)^{1/3}
-$$ (eq:dynamo-scaling)
-
-where $\rho_\mathrm{core}$ is the mean density of the convecting fluid and $\mu_0$ is the permeability of free space. This scaling is independent of the fluid's rotation rate (provided the flow is rapidly rotating, as it is in every planetary core), and it collapses the output of dozens of three-dimensional numerical dynamo runs onto a single regression line that also passes through Earth, Jupiter, and Saturn. The physical content is that the field strength is set by the rate at which convection generates magnetic energy, which scales with the buoyancy flux and the depth over which that flux is integrated.
-
-The contrast between Mercury and Ganymede follows from applying Eq. {eq}`eq:dynamo-scaling` with very different internal-structure inputs:
-
-| Quantity | **Mercury** | **Ganymede** |
-|---|:---:|:---:|
-| Planet radius $R_\mathrm{planet}$ | $2440$ km | $2634$ km |
-| Core radius $R_\mathrm{core}$ | $\sim 2020$ km {cite:p}`MargotHauck2018` | $\sim 700$ km |
-| Liquid-shell thickness $D$ | $\sim 200$–$400$ km (narrow shell above a solidifying inner core) | $\sim 300$ km (liquid iron sandwiched between solid iron inner core and rocky mantle) |
-| Buoyancy driver | Latent heat + light-element release from iron snow / inner-core growth | Inner-core growth + tidal-heat modulation |
-| Surface dipole $B_\mathrm{dip}$ | $\sim 0.3\ \mu$T | $\sim 0.7\ \mu$T |
-| Dynamo regime | Iron-snow / thin liquid shell {cite:p}`Anderson2012` | Convective crystallising core shell {cite:p}`dePaterLissauer2010` |
-
-The key points are: (i) Mercury's dynamo shell is thin in absolute terms because its large core leaves only a shallow convecting layer, whereas Ganymede's dynamo shell is similarly thin but sits in a much smaller absolute core; (ii) both bodies nonetheless satisfy the magnetic-Reynolds criterion ($\mathrm{Rm} \gtrsim 10$) and the scaling of Eq. {eq}`eq:dynamo-scaling`, because the product $F_q \cdot D$ is what matters rather than either factor alone. Geometric considerations magnify the comparison: for a dipole source at the top of the convecting region, the surface field is reduced from the dynamo-region field by $(R_\mathrm{core}/R_\mathrm{planet})^3$, the standard dipole attenuation. For Mercury the ratio is $(2020/2440)^3 \approx 0.57$, so only $\sim 40\%$ of the dynamo-region field strength is lost at the surface. For Ganymede the ratio is $(700/2634)^3 \approx 0.019$, so the surface retains less than $2\%$ of the dynamo-region field. Mercury's observed weaker surface field ($0.3\,\mu$T vs Ganymede's $0.7\,\mu$T) *despite* its much smaller attenuation therefore implies that Mercury's dynamo is **intrinsically much weaker** at source than Ganymede's, i.e. a smaller $F_q \cdot D$ product. This is consistent with the iron-snow scenario for Mercury, in which a thin solidification shell at the bottom of the liquid core releases light elements episodically rather than continuously and drives convection at a more modest rate than Ganymede's steadier compositional buoyancy source.
-
-The geometric attenuation also explains why giant-planet dynamos dominate in absolute field strength. Jupiter's metallic-hydrogen dynamo extends to $\sim 0.85\,R_\mathrm{Jup}$, so surface fields retain $\sim 60\%$ of the dynamo-region strength. Even a modest enhancement of $F_q \cdot D$ from Jupiter's deep, vigorous convection then yields a $20{,}000\,\times$ stronger surface field than Earth's, without requiring Jupiter's convection to be $20{,}000\,\times$ more vigorous.
-
-Venus is the odd one out: despite having a core that is nearly Earth-like by composition and size, it has no detectable dynamo today. The most likely explanation is that Venus's core has not yet begun to crystallise (no inner core) *and* that the stagnant-lid mantle above the core extracts heat too slowly to drive vigorous thermal convection {cite:p}`dePaterLissauer2010`. In the scaling of Eq. {eq}`eq:dynamo-scaling`, both $F_q$ and the convective shell geometry are simultaneously suppressed, and the dynamo cannot sustain itself. Venus is thus the clearest example of a planet whose magnetic state is limited not by core composition but by **mantle dynamics** controlling heat loss from the core. Across the bodies that do host dynamos, the same scaling collapses numerical simulations and observed fields onto a single relation ({numref}`fig:dynamo-scaling`).
-
-```{figure} figures/christensen2006_dynamo_scaling.avif
-:name: fig:dynamo-scaling
-:width: 620px
-:align: center
-
-Predicted vs observed magnetic-field strength for convection-driven dynamos, following the scaling law of Eq. {eq}`eq:dynamo-scaling`. The horizontal axis is a non-dimensional combination of convective buoyancy flux, shell thickness, and core density; the vertical axis is the measured (observed) or computed (simulated) dipole field. The grey crosses illustrate the published result that numerical dynamo simulations collapse onto a single line over roughly four orders of magnitude; Earth, Jupiter, Saturn, Mercury, and Ganymede (coloured symbols) lie on the same relation within factors of order unity. Venus is omitted because its present-day dynamo is shut off. The universality of this scaling is the central empirical support for the dynamo mechanism being universal across the solar system. Illustration after {cite:t}`ChristensenAubert2006` and {cite:t}`OlsonChristensen2006`.
-```
+Jupiter's largest moon Ganymede ($R = 2634$ km) is the only moon in the solar system with its own **intrinsic dynamo**, generated in a liquid iron shell around a crystallising inner core, possibly modulated by tidal heating {cite:p}`dePaterLissauer2010`. Its core is small ($R_\mathrm{core} \sim 700$ km) and buried deep inside the moon, and a dipole field falls off with the cube of the distance from its source: the surface retains only $(R_\mathrm{core}/R_\mathrm{body})^3 \approx 2\%$ of the dynamo-region field. That Ganymede's surface field ($\sim 0.7$ $\mu$T) still exceeds Mercury's ($\sim 0.3$ $\mu$T), although Mercury's much larger core loses far less field to this geometric attenuation, shows that Ganymede's dynamo is intrinsically the stronger of the two: a larger $F_q \cdot D$ product in Eq. {eq}`eq:dynamo-scaling`, sustained by a steadier compositional buoyancy source than Mercury's episodic iron snow.
 
 
 ## Magnetosphere–solar wind interaction
@@ -835,7 +798,15 @@ NASA's Juno mission has produced the most detailed map of Jupiter's magnetic fie
 
 ### InSight: no present-day Mars dynamo
 
-NASA's **InSight** lander, operating on the Martian surface from 2018 to 2022, carried a magnetometer that recorded the local crustal field at Elysium Planitia. The measurements showed a static crustal field of $\sim 2000$ nT at the landing site, ten times stronger than satellite-based models had predicted, with time-varying signals of ionospheric origin but no global dynamo field {cite:p}`Johnson2020`. Combined with InSight seismic inferences of a fully liquid but light-element-rich core (core radius $\approx 1830$ km, mean density $\approx 6.0$ g cm$^{-3}$) {cite:p}`Stahler2021`, this supports the scenario that Mars's dynamo shut off early because compositional buoyancy from inner-core growth never began and thermal convection alone could not sustain the dynamo once the initial heat-of-accretion budget was exhausted. The exact age of the dynamo shutdown remains uncertain. The original basin-demagnetisation analysis of {cite:t}`Acuna1999` placed it at $\sim 4.1$ Gyr; subsequent low-altitude *MAVEN* magnetometer data refined the picture to a longer-lived or episodic dynamo lasting until $\sim 3.7$ Gyr {cite:p}`Mittelholz2020` (see {ref}`Lecture 10 <lecture10>` for the full chronology).
+NASA's **InSight** lander, operating on the Martian surface from 2018 to 2022, carried a magnetometer that recorded the local crustal field at Elysium Planitia. The measurements showed a static crustal field of $\sim 2000$ nT at the landing site, ten times stronger than satellite-based models had predicted, with time-varying signals of ionospheric origin but no global dynamo field {cite:p}`Johnson2020`. Combined with InSight seismic inferences of a fully liquid but light-element-rich core (core radius $\approx 1830$ km, mean density $\approx 6.0$ g cm$^{-3}$; {numref}`fig:stahler2021-mars-core`) {cite:p}`Stahler2021`, this supports the scenario that Mars's dynamo shut off early because compositional buoyancy from inner-core growth never began and thermal convection alone could not sustain the dynamo once the initial heat-of-accretion budget was exhausted. The exact age of the dynamo shutdown remains uncertain. The original basin-demagnetisation analysis of {cite:t}`Acuna1999` placed it at $\sim 4.1$ Gyr; subsequent low-altitude *MAVEN* magnetometer data refined the picture to a longer-lived or episodic dynamo lasting until $\sim 3.7$ Gyr {cite:p}`Mittelholz2020` (see {ref}`Lecture 10 <lecture10>` for the full chronology).
+
+```{figure} figures/stahler2021_mars_core.avif
+:name: fig:stahler2021-mars-core
+:width: 550px
+:align: center
+
+Sampled core properties of Mars from InSight. The central panel shows mean core density versus core radius for models from the geophysical (blue shades) and geodynamical (warm shades, yellow to red) inversions, with each point colour-coded by how well the model fits the observed degree-2 tidal Love number $k_2$ (inset), a dimensionless measure of how much a body's mass redistributes in response to tidal forcing. Marginal histograms are shown at the top and right; the purely seismic inversion (green histogram) constrains only the core radius. All three methods converge on a core radius near 1830 km, and the implied mean core density of $\sim 6$ g cm$^{-3}$ is too low for pure iron: the purple bands, which trace the core sulfur content of Fe alloys with light elements (S, O, H, C), require several wt% of light elements. Reproduced from {cite:t}`Stahler2021`, Fig. 2C.
+```
 
 ### The lunar dynamo paradox
 
