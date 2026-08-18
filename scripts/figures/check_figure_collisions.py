@@ -37,6 +37,9 @@ sys.path.insert(0, str(REPO_ROOT))
 # figure; their geometry is checked at the SVG level instead
 SKIP = {
     "scripts.figures.L02_formation_orbits.fig_kepler_laws",
+    # Needs the fwl-calliope package, which is not part of the default
+    # figure-build environment
+    "scripts.figures.L04_differentiation_magnetospheres.fig_outgassing_speciation_fO2",
 }
 
 # Ink darker than this luminance (0-255) counts as line work; light

@@ -314,20 +314,24 @@ The speciation of the outgassed atmosphere depends critically on the **oxygen fu
 - Under **reducing** conditions (low $f_{\mathrm{O_2}}$): the dominant outgassed species are $\mathrm{H_2}$, CO, and $\mathrm{N_2}$
 - Under **oxidising** conditions (high $f_{\mathrm{O_2}}$, like present-day Earth): the dominant species are $\mathrm{H_2O}$, $\mathrm{CO_2}$, and $\mathrm{N_2}$
 
-The solubility of water in silicate melt follows a square-root law:
+How the volatile inventory divides between the melt and the atmosphere is set by the **solubility** of each gas in silicate melt, and solubility is a chemical property, not a universal constant. Each volatile dissolves through its own reaction with the melt: water enters the melt structure as hydroxyl groups, CO$_2$ dissolves as carbonate ions and is roughly two orders of magnitude less soluble, nitrogen barely dissolves under oxidising conditions but forms soluble nitride species under reducing ones, and sulfur exchanges with the melt as sulfide or sulfate depending on the oxidation state. The solubility of a given species therefore depends on the melt composition and its redox state as well as on the pressure of the overlying gas {cite:p}`Hirschmann2012,Nicholls2024`.
+
+The dissolution chemistry leaves a direct imprint on the solubility law. Because each dissolving water molecule splits into two hydroxyl groups, the dissolved water fraction grows with the *square root* of the vapour pressure:
 
 $$
 X_{\mathrm{H_2O}} \propto p_{\mathrm{H_2O}}^{1/2}
 $$ (eq:water-solubility)
 
-where $X_{\mathrm{H_2O}}$ is the mole fraction of dissolved water and $p_{\mathrm{H_2O}}$ is the partial pressure of water vapour above the melt. This means that as the atmosphere thickens with outgassed $\mathrm{H_2O}$, the magma ocean can retain an increasing fraction of its water in solution, a self-limiting feedback that determines the partitioning of water between the interior and the atmosphere ({numref}`fig:water-solubility`) {cite:p}`Hirschmann2012`.
+where $X_{\mathrm{H_2O}}$ is the mole fraction of dissolved water and $p_{\mathrm{H_2O}}$ is the partial pressure of water vapour above the melt. This means that as the atmosphere thickens with outgassed $\mathrm{H_2O}$, the magma ocean can retain an increasing fraction of its water in solution, a self-limiting feedback that determines the partitioning of water between the interior and the atmosphere {cite:p}`Hirschmann2012`.
 
-```{figure} figures/water_solubility.avif
-:name: fig:water-solubility
-:width: 550px
+The consequence of this solubility contrast is easy to underestimate: **during the magma ocean stage, most of a planet's water is in the magma, not in the atmosphere.** {numref}`fig:outgassing-speciation` shows the equilibrium partitioning of Earth's volatile inventory (the bulk silicate Earth H/C/N/S budget of {cite:t}`Krijt2023`) between a fully molten mantle at 2000 K and the overlying atmosphere, computed with an equilibrium outgassing model {cite:p}`Nicholls2024` across the plausible range of mantle oxidation states. Two features stand out. First, water is roughly two orders of magnitude more soluble in silicate melt than CO$_2$, so across most of the oxidation range the melt holds essentially the entire water inventory ($\sim 5 \times 10^{21}$ kg, more than 3 times the mass of the present-day ocean) while the atmosphere above it contains only a few bar of steam; only under strongly reducing conditions does a large fraction of the hydrogen enter the atmosphere as H$_2$. Carbon behaves in the opposite way: it is poorly soluble, so it dominates the atmosphere as CO$_2$ and CO at hundreds to thousands of bar. Second, the atmospheric speciation swings with the redox state of the melt, from H$_2$-, CO-, and CH$_4$-rich under reducing conditions to CO$_2$- and eventually SO$_2$-rich under oxidising conditions, exactly the trend anticipated in the bullet list above.
+
+```{figure} figures/outgassing_speciation_fO2.avif
+:name: fig:outgassing-speciation
+:width: 100%
 :align: center
 
-Solubility of H$_2$O in basaltic silicate melt as a function of the H$_2$O partial pressure above the melt, on a log-log scale. The straight line on log-log axes is the signature of the Henrian square-root law of Eq. {eq}`eq:water-solubility`, which arises because dissolved water speciates predominantly as OH$^-$ groups in the melt. A 1 kbar magma ocean atmosphere can dissolve $\sim 4$ wt% H$_2$O; a 5 kbar atmosphere can dissolve $\sim 9$ wt%. The plot uses $K \approx 0.42$ wt% MPa$^{-1/2}$ representative of basalt at 1573 K {cite:p}`Hirschmann2012`.
+Equilibrium partitioning of Earth's volatile inventory between a fully molten magma ocean and its outgassed atmosphere, as a function of the melt oxygen fugacity (expressed as the logarithmic shift $\Delta$IW relative to the iron-wüstite buffer), computed with an equilibrium outgassing model {cite:p}`Nicholls2024` for the bulk silicate Earth H/C/N/S inventory of {cite:t}`Krijt2023` and a mantle temperature of 2000 K. **(a)** Mass of each volatile species dissolved in the melt. The dissolved water mass is nearly constant at $\sim 5 \times 10^{21}$ kg, more than 3 times the mass of the present-day ocean: the melt retains nearly the whole water inventory at all but the most reducing conditions. **(b)** Partial pressures in the atmosphere. Carbon species dominate throughout (CO on the reduced side, CO$_2$ on the oxidised side) because carbon is far less soluble in the melt than water; the steam partial pressure never exceeds a few bar. Under reducing conditions H$_2$ and CH$_4$ take over from CO$_2$; at the most oxidised end SO$_2$ rises steeply. Course figure.
 ```
 
 ### Impact erosion versus delivery
@@ -424,7 +428,7 @@ Schematic of the geodynamo mechanism. Convective motions in the electrically con
 
 **Setup.**
 
-We start from the magnetic induction equation derived in the previous section (Eq. {eq}`eq:induction-equation`):
+We start from the magnetic induction equation introduced in the previous section (Eq. {eq}`eq:induction-equation`):
 
 $$
 \pdv{\vec{B}}{t} = \underbrace{\nabla \times (\vec{v} \times \vec{B})}_{\text{advection}} + \underbrace{\eta \nabla^2 \vec{B}}_{\text{diffusion}}

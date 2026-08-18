@@ -164,10 +164,6 @@ chk("L04 Stokes: v at 1 cm (m/s)", float(m.v_stokes(0.01)), 4.444, 1e-3)
 r_lam = (9.0 * m.MU ** 2 / (4.0 * 3000.0 * m.DELTA_RHO * m.G)) ** (1.0 / 3.0)
 chk("L04 Stokes: laminar limit radius (mm)", r_lam * 1e3, 0.72, 2e-2)
 
-m = load("scripts/figures/L04_differentiation_magnetospheres/fig_water_solubility.py")
-chk("L04 solubility: X at 1 kbar (wt%)", float(m.x_h2o(np.array([100.0]))[0]), 4.2, 1e-3)
-chk("L04 solubility: X at 5 kbar (wt%)", float(m.x_h2o(np.array([500.0]))[0]), 9.39, 2e-3)
-
 m = load("scripts/figures/L04_differentiation_magnetospheres/fig_geomagnetic_polarity.py")
 chk("L04 polarity: CNS young end (Ma)", m.C34N_START, 83.0, 1e-6)
 chk("L04 polarity: CNS old end (Ma)", m.C34N_END, 121.0, 1e-6)

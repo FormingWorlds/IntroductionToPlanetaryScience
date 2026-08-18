@@ -530,43 +530,42 @@
   \keyresult{The oxidation state of the mantle at magma ocean solidification sets the initial atmosphere, which then conditions habitability (Lectures 5--6).}
 \end{frame}
 
-% ── Water solubility law ──────────────────────────────────
-\begin{frame}{Water in silicate melt: a square-root law}
-  The solubility of water in silicate magma follows:
-  \vskip4pt
-  \keyresult{$$X_{\mathrm{H_2O}} \propto p_{\mathrm{H_2O}}^{1/2}$$}
+% ── Volatile solubility in silicate melt ──────────────────
+\begin{frame}{Volatile solubility in silicate melt}
+  Solubility is a chemical property: each gas dissolves through its own reaction with the melt, and depends on melt composition and redox state.
   \vskip4pt
   \begin{itemize}
-    \item $X_{\mathrm{H_2O}}$ = mole fraction dissolved in melt
-    \item $p_{\mathrm{H_2O}}$ = partial pressure of water vapour above melt
-    \item Higher atmospheric $p_{\mathrm{H_2O}}$ $\rightarrow$ more water retained in the magma
-    \item Self-limiting feedback during atmosphere build-up
+    \item H$_2$O enters the melt as hydroxyl groups; CO$_2$ as carbonate ions, $\sim$100$\times$ less soluble
+    \item N barely dissolves when oxidised, forms soluble nitrides when reduced; S dissolves as sulfide or sulfate
+    \item Water: each molecule splits into two OH groups, giving a square-root law
   \end{itemize}
-  \vskip6pt
-  Consequence: a planet cannot outgas its entire water budget; some fraction remains locked in the solidifying mantle, potentially for Gyr.
+  \vskip2pt
+  \keyresult{$$X_{\mathrm{H_2O}} \propto p_{\mathrm{H_2O}}^{1/2}$$}
+  \vskip2pt
+  A thicker steam atmosphere lets the magma retain more water in solution: a self-limiting feedback, so a planet cannot outgas its entire water budget.
   \vskip4pt
   {\tiny\color{ipsText!60} Source: Hirschmann (2012), \textit{Earth Planet. Sci. Lett.}}
 \end{frame}
 
 \begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{water_solubility}}\\
-  {\footnotesize Solubility of H$_2$O in basaltic melt at 1573 K. Course figure.}
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{outgassing_speciation_fO2}}\\
+  {\footnotesize Volatile partitioning between magma ocean and atmosphere vs.\ oxygen fugacity, computed with an equilibrium outgassing model (Nicholls et al.\ 2024) for the bulk silicate Earth inventory of Krijt et al.\ (2023).}
 \end{frame}
 
-\begin{frame}{Reading the solubility law}
+\begin{frame}{Reading the outgassing diagram}
   \begin{columns}[T]
     \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{water_solubility}}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{outgassing_speciation_fO2}}
     \column{0.50\textwidth}
     \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
-      \item A straight line on log-log axes: the square-root law $X_{\mathrm{H_2O}} = K\,p^{1/2}$ with $K \approx 0.42$ wt\% MPa$^{-1/2}$; dissolved water speciates as OH$^-$ groups.
-      \item Marked points: a 1 kbar steam atmosphere dissolves $\sim$4 wt\%; 5 kbar dissolves $\sim$9 wt\%.
-      \item As outgassing thickens the atmosphere, $p_{\mathrm{H_2O}}$ rises and the melt holds more water back: outgassing is self-limiting.
+      \item (a) The melt keeps almost the whole water inventory dissolved ($\sim 5 \times 10^{21}$ kg, over 3 present-day oceans) at all but the most reducing conditions.
+      \item (b) Carbon is far less soluble: CO$_2$ and CO fill the atmosphere at hundreds to thousands of bar, while steam stays at a few bar.
+      \item Redox controls speciation: H$_2$, CO, CH$_4$ when reduced; CO$_2$, then SO$_2$, when oxidised.
     \end{itemize}
     \vskip2pt\relax
-    \keyresult{A magma ocean never gives up all its water: the square-root law locks part of the inventory into the mantle.}
+    \keyresult{During the magma ocean stage most of the planet's water sits in the magma, not in the atmosphere.}
   \end{columns}
 \end{frame}
 
