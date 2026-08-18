@@ -621,24 +621,24 @@ Magnetic fields vary enormously across the solar system. Comparing them reveals 
 | **Neptune** | Active dynamo | ~10–60 $\mu$T | ~28 | Multipolar, tilted ~47° and offset from centre |
 | **Ganymede** | Active dynamo | ~0.7 $\mu$T | $\sim 1.5 \times 10^{-3}$ | Only moon with intrinsic dynamo |
 
-These nine bodies span four orders of magnitude in surface field strength and a range of morphologies from cleanly dipolar (Earth, Jupiter, Saturn, Ganymede) to weak and offset (Mercury) to strongly multipolar (Uranus, Neptune), as illustrated in {numref}`fig:planetary-dipole-moments`.
+These nine bodies span four orders of magnitude in surface field strength and a range of morphologies from cleanly dipolar (Earth, Jupiter, Saturn, Ganymede) to weak and offset (Mercury) to strongly multipolar (Uranus, Neptune), as illustrated in {numref}`fig:planetary-field-morphologies`.
 
 ```{figure} figures/soderlund2020_planetary_field_morphologies.avif
-:name: fig:planetary-dipole-moments
+:name: fig:planetary-field-morphologies
 :width: 700px
 :align: center
 
 Radial magnetic field at the surfaces of (a) Mercury, (b) Earth, (c) Jupiter, (d) Saturn, (e) Uranus, and (f) Neptune, in Mollweide projections. Earth, Jupiter, and Saturn are predominantly dipolar with the dipole axis approximately aligned with the rotation axis; Uranus and Neptune are clearly multipolar with dipoles tilted by $\sim 59°$ and $\sim 47°$ respectively and offset from the planet centre; Mercury's field is weak and asymmetric, with the dipole offset $\sim 500$ km northward. Field intensities span four orders of magnitude (note the per-panel colour scales). Reproduced from {cite:p}`Soderlund2020`, Fig. 1.
 ```
 
-The same nine-decade range can be understood as a single dynamical family by placing each body in the parameter space of dimensionless dipole moment versus local **Rossby number** (the ratio of inertial to Coriolis forces in the fluid, a measure of how strongly planetary rotation constrains the convective flow). {numref}`fig:dipole-scaling` shows the strongly dipolar regime (top-left, dark shading) and multipolar regime (lower-right, light shading) inferred from numerical dynamo models, with the eight planets and Ganymede plotted at their estimated control-parameter values.
+The same nine-decade range can be understood as a single dynamical family by placing each body in the parameter space of dimensionless dipole moment versus local **Rossby number** (the ratio of inertial to Coriolis forces in the fluid, a measure of how strongly planetary rotation constrains the convective flow). {numref}`fig:dipole-scaling` shows the strongly dipolar regime (dark shading) and multipolar regime (light shading) inferred from numerical dynamo models, with the six dynamo-hosting planets and Ganymede plotted at their estimated control-parameter values.
 
 ```{figure} figures/olson2006_dipole_scaling.avif
 :name: fig:dipole-scaling
 :width: 600px
 :align: center
 
-Dimensionless planetary dipole moment $L_{\mathrm{O}_{\rm dip}}/\mathrm{Ra}_Q^{1/3}$ versus local Rossby number $\mathrm{Ro}_l$. The transition from strongly dipolar (dark shading) to multipolar (light shading) regimes is calibrated against numerical dynamo simulations. The eight planets and Ganymede are placed at their estimated control-parameter values; symbol shading indicates the strength of the constraint. Earth, Jupiter, Saturn, and Ganymede sit in the dipolar regime; Mercury, Uranus, and Neptune lie in or near the multipolar regime, consistent with their tilted, offset, or weak surface fields. Reproduced from {cite:p}`OlsonChristensen2006`, Fig. 7.
+Dimensionless dipole moment (the dipole Lorentz number $\mathrm{Lo}_{\rm dip}$ scaled by the buoyancy-flux Rayleigh number, $\mathrm{Lo}_{\rm dip}/\mathrm{Ra}_Q^{1/3}$) versus local Rossby number $\mathrm{Ro}_l$. The transition from the strongly dipolar regime (dark shading) to the multipolar regime (light shading) is calibrated against numerical dynamo simulations; the dotted line marks the regime transition at $\mathrm{Ro}_l \sim 0.1$. The six dynamo-hosting planets and Ganymede are placed at their estimated control-parameter values; the grey circle next to each symbol indicates the strength of the observational constraint. Earth, Jupiter, Saturn, and Ganymede sit in or near the dipolar regime; Uranus and Neptune sit lower, and Mercury falls in the multipolar regime, consistent with their tilted, offset, or weak surface fields. Reproduced from {cite:p}`OlsonChristensen2006`, Fig. 7.
 ```
 
 ### Mercury
@@ -678,19 +678,19 @@ Recent constraints on Mars's interior come from the InSight lander, which deploy
 :width: 550px
 :align: center
 
-Joint posterior distribution of Mars's mean core density and core radius from three independent inversions of InSight seismic and geodetic data: a geophysical inversion (blue), a geodynamical inversion (orange), and a mineralogical inversion (yellow). All three converge on a core radius near 1830 km and a mean core density near 6.0 g cm$^{-3}$. Purple bands show iso-composition curves for Fe-S-O-H-C alloys; the data require several wt% of light elements. Reproduced from {cite:t}`Stahler2021`, Fig. 2C.
+Sampled core properties of Mars from InSight. The central panel shows mean core density versus core radius for models from the geophysical (blue shades) and geodynamical (warm shades, yellow to red) inversions, with each point colour-coded by how well the model fits the observed degree-2 tidal Love number $k_2$ (inset). Marginal histograms are shown at the top and right; the purely seismic inversion (green histogram) constrains only the core radius. All three methods converge on a core radius near 1830 km, and the implied mean core density of $\sim 6$ g cm$^{-3}$ is too low for pure iron: the purple bands, which trace the core sulfur content of Fe alloys with light elements (S, O, H, C), require several wt% of light elements. Reproduced from {cite:t}`Stahler2021`, Fig. 2C.
 ```
 
 ### Jupiter
 
-Jupiter has the **strongest magnetic field** of any planet, roughly 20,000 times Earth's dipole moment. The field is generated by convection in Jupiter's deep interior, where hydrogen is compressed to a metallic state (at pressures above $\sim$100 GPa, hydrogen becomes an electrical conductor). The Juno mission has mapped Jupiter's magnetic field in unprecedented detail, revealing a surprisingly complex and asymmetric field at the surface, with a concentrated magnetic flux patch in the northern hemisphere, the "Great Blue Spot" ({numref}`fig:jupiter-great-blue-spot`) {cite:p}`Connerney2022`.
+Jupiter has the **strongest magnetic field** of any planet, roughly 20,000 times Earth's dipole moment. The field is generated by convection in Jupiter's deep interior, where hydrogen is compressed to a metallic state (at pressures above $\sim$100 GPa, hydrogen becomes an electrical conductor). The Juno mission has mapped Jupiter's magnetic field in unprecedented detail, revealing a surprisingly complex and asymmetric field at the surface, including an intense, isolated patch of inward magnetic flux near the equator, the "Great Blue Spot" ({numref}`fig:jupiter-great-blue-spot`) {cite:p}`Connerney2022`.
 
 ```{figure} figures/jupiter_great_blue_spot.avif
 :name: fig:jupiter-great-blue-spot
 :width: 600px
 :align: center
 
-Mollweide projection of the radial component of Jupiter's surface magnetic field, derived from the Juno JRM33 model {cite:p}`Connerney2022`. Red marks outward field, blue inward; latitude and longitude grid in System III coordinates. Unlike Earth's field, which is dominated by an axial dipole at the surface, Jupiter's surface field shows pronounced non-dipolar structure, including the intense localised patch of inward flux near the equator (the "Great Blue Spot", deep-blue feature near $0^\circ$ latitude) paired with a strong outward patch immediately to its west. The morphology constrains the depth at which the metallic-hydrogen dynamo operates and indicates that the dynamo is not confined to a thin shell. Credit: NASA/JPL-Caltech/SwRI/J.E.P. Connerney (PIA25040), public domain.
+Radial component of Jupiter's surface magnetic field from a field model built from the orbits of Juno's prime mission (top), compared with the pre-Juno picture assembled from earlier missions (Pioneer 10 and 11, Voyager 1 and 2, Ulysses, and Galileo; bottom) {cite:p}`Connerney2022`. Field lines emerge from the planet in the yellow and red regions and enter it in the blue regions. Unlike Earth's field, which is dominated by an axial dipole at the surface, Jupiter's surface field shows pronounced non-dipolar structure, most strikingly the intense localised patch of inward flux near the equator (the "Great Blue Spot"). This morphology constrains the depth at which the metallic-hydrogen dynamo operates. Credit: NASA/JPL-Caltech/SwRI/J.E.P. Connerney (PIA25040), public domain.
 ```
 
 ### Ganymede
@@ -724,14 +724,14 @@ The key points are: (i) Mercury's dynamo shell is thin in absolute terms because
 
 The geometric attenuation also explains why giant-planet dynamos dominate in absolute field strength. Jupiter's metallic-hydrogen dynamo extends to $\sim 0.85\,R_\mathrm{Jup}$, so surface fields retain $\sim 60\%$ of the dynamo-region strength. Even a modest enhancement of $F_q \cdot D$ from Jupiter's deep, vigorous convection then yields a $20{,}000\,\times$ stronger surface field than Earth's, without requiring Jupiter's convection to be $20{,}000\,\times$ more vigorous.
 
-Venus is the odd one out: despite having a core that is nearly Earth-like by composition and size, it has no detectable dynamo today. The most likely explanation is that Venus's core has not yet begun to crystallise (no inner core) *and* that the stagnant-lid mantle above the core extracts heat too slowly to drive vigorous thermal convection {cite:p}`dePaterLissauer2010`. In the scaling of Eq. {eq}`eq:dynamo-scaling`, both $F_q$ and the convective shell geometry are simultaneously suppressed, and the dynamo cannot sustain itself. Venus is thus the clearest example of a planet whose magnetic state is limited not by core composition but by **mantle dynamics** controlling heat loss from the core.
+Venus is the odd one out: despite having a core that is nearly Earth-like by composition and size, it has no detectable dynamo today. The most likely explanation is that Venus's core has not yet begun to crystallise (no inner core) *and* that the stagnant-lid mantle above the core extracts heat too slowly to drive vigorous thermal convection {cite:p}`dePaterLissauer2010`. In the scaling of Eq. {eq}`eq:dynamo-scaling`, both $F_q$ and the convective shell geometry are simultaneously suppressed, and the dynamo cannot sustain itself. Venus is thus the clearest example of a planet whose magnetic state is limited not by core composition but by **mantle dynamics** controlling heat loss from the core. Across the bodies that do host dynamos, the same scaling collapses numerical simulations and observed fields onto a single relation ({numref}`fig:dynamo-scaling`).
 
 ```{figure} figures/christensen2006_dynamo_scaling.avif
 :name: fig:dynamo-scaling
 :width: 620px
 :align: center
 
-Predicted vs observed magnetic-field strength for numerical dynamo simulations and solar-system bodies, following the scaling law of Eq. {eq}`eq:dynamo-scaling`. The horizontal axis is a non-dimensional combination of convective buoyancy flux, shell thickness, and core density; the vertical axis is the measured (observed) or computed (simulated) dipole field. Numerical simulations (grey crosses) collapse onto a single line over roughly four orders of magnitude; Earth, Jupiter, Saturn, Mercury, and Ganymede (coloured symbols) lie on the same regression within factors of order unity. Venus is omitted because its present-day dynamo is shut off. The universality of this scaling is the central empirical support for the dynamo mechanism being universal across the solar system. Redrawn from {cite:t}`ChristensenAubert2006` and {cite:t}`OlsonChristensen2006`.
+Predicted vs observed magnetic-field strength for convection-driven dynamos, following the scaling law of Eq. {eq}`eq:dynamo-scaling`. The horizontal axis is a non-dimensional combination of convective buoyancy flux, shell thickness, and core density; the vertical axis is the measured (observed) or computed (simulated) dipole field. The grey crosses illustrate the published result that numerical dynamo simulations collapse onto a single line over roughly four orders of magnitude; Earth, Jupiter, Saturn, Mercury, and Ganymede (coloured symbols) lie on the same relation within factors of order unity. Venus is omitted because its present-day dynamo is shut off. The universality of this scaling is the central empirical support for the dynamo mechanism being universal across the solar system. Illustration after {cite:t}`ChristensenAubert2006` and {cite:t}`OlsonChristensen2006`.
 ```
 
 

@@ -39,8 +39,11 @@ def make_plot() -> Path:
     R_E = 0.6
     ax.add_patch(Circle((0, 0), R_E, color="#2b6cb0",
                         ec="black", lw=0.6, zorder=5))
-    ax.text(0, -1.1, "Earth", ha="center", va="top",
-            fontsize=10, color="black")
+    # Label sits clear of the field-line loops, tied back by a leader
+    ax.annotate("Earth", xy=(-0.45, -0.45), xytext=(-3.4, -4.9),
+                fontsize=10, color="black", ha="center", va="center",
+                arrowprops=dict(arrowstyle="-", color="0.5", lw=0.7,
+                                shrinkA=6, shrinkB=2))
 
     # Magnetic dipole field lines: dayside is -x (sunward), tail is +x.
     # Compress -x side and stretch +x side.
