@@ -10,6 +10,7 @@ requires-python = ">=3.12"
 dependencies = [
     "jupyter-book<2",
     "sphinx-proof",
+    "sphinxcontrib-svg2pdfconverter",
 ]
 
 [tool.setuptools.packages.find]
