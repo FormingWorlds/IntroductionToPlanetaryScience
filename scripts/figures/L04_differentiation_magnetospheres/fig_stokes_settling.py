@@ -71,8 +71,9 @@ def make_plot() -> Path:
     r_lam_m = (9.0 * MU**2 / (4.0 * 3000.0 * DELTA_RHO * G)) ** (1.0 / 3.0)
     r_lam_cm = r_lam_m * 1e2
     ax.axvline(r_lam_cm, color="0.4", ls="--", lw=1.2)
-    ax.text(r_lam_cm * 0.82, 3e-3, r"laminar limit ($\mathrm{Re} \approx 1$)",
-            rotation=90, fontsize=9, color="0.35", ha="right", va="bottom")
+    # Top of the axis keeps the label clear of the settling curve
+    ax.text(r_lam_cm * 0.82, 6e2, r"laminar limit ($\mathrm{Re} \approx 1$)",
+            rotation=90, fontsize=9, color="0.35", ha="right", va="top")
 
     ax.set_xscale("log")
     ax.set_yscale("log")
