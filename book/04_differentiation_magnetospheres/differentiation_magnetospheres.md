@@ -702,9 +702,9 @@ Jupiter's largest moon Ganymede ($R = 2634$ km) is the only moon in the solar sy
 
 A planetary magnetic field does not exist in isolation: it interacts dynamically with the **solar wind**, the continuous stream of charged particles (mostly protons and electrons) flowing outward from the Sun at speeds of 300–800 km s$^{-1}$, carrying an embedded magnetic field (the interplanetary magnetic field, or IMF) {cite:p}`Kivelson1995`.
 
-### Magnetopause standoff distance
+### Magnetopause and magnetosphere structure
 
-The boundary between the planetary magnetic field and the solar wind is the **magnetopause**. Its distance is determined by pressure balance between the solar wind dynamic pressure and the magnetic pressure of the planet's field:
+The boundary between the planetary magnetic field and the solar wind is the **magnetopause**. Its location is set by pressure balance between the solar wind ram pressure and the magnetic pressure of the planet's field:
 
 $$
 \frac{1}{2} \rho_{\mathrm{sw}} v_{\mathrm{sw}}^2 = \frac{B_{\mathrm{mp}}^2}{2\mu_0}
@@ -716,7 +716,9 @@ $$
 r_{\mathrm{mp}} \approx 10 \, R_\oplus
 $$ (eq:magnetopause-distance)
 
-for Earth under typical solar wind conditions. The dayside pressure-balance geometry, with the bow shock, the magnetosheath, and the compressed dipolar field, is shown in {numref}`fig:magnetopause-balance`.
+for Earth under typical solar wind conditions.
+
+{numref}`fig:magnetopause-balance` shows the structure this interaction creates. Upstream of the magnetopause, the supersonic solar wind is decelerated at the **bow shock**, and the shocked plasma flows around the planet through the turbulent **magnetosheath**. On the nightside, the field is stretched into a **magnetotail** extending more than 200 $R_\oplus$ downstream, where **magnetic reconnection** (the breaking and rejoining of oppositely directed field lines) converts magnetic energy into particle acceleration and heat. In the inner magnetosphere, a torus of cool, dense plasma trapped on closed field lines, the **plasmasphere**, co-rotates with Earth {cite:p}`Kivelson1995`.
 
 ```{figure} figures/magnetosphere_anatomy_esa.avif
 :name: fig:magnetopause-balance
@@ -724,28 +726,6 @@ for Earth under typical solar wind conditions. The dayside pressure-balance geom
 :align: center
 
 Anatomy of Earth's magnetosphere. The solar wind (orange arrows, arriving from the left) is slowed and deflected at the bow shock, and the shocked plasma flows around the planet through the turbulent magnetosheath. The magnetopause is the surface where the solar wind ram pressure is balanced by the magnetic pressure of Earth's field (Eq. {eq}`eq:magnetopause-pressure`); under typical conditions it lies at the standoff distance $r_{\mathrm{mp}} \approx 10\,R_\oplus$. Inside it, the dayside field is compressed, while the nightside field is stretched into the long magnetotail. Credit: [ESA](https://www.esa.int/ESA_Multimedia/Images/2026/02/Anatomy_of_Earth_s_magnetosphere), [CC BY-SA 3.0 IGO](https://creativecommons.org/licenses/by-sa/3.0/igo/).
-```
-
-### Magnetosphere structure
-
-The interaction between the solar wind and the planetary field creates a complex structure {cite:p}`Kivelson1995`:
-
-- **Bow shock:** The supersonic solar wind is decelerated to subsonic speeds at the bow shock, located roughly 3 $R_\oplus$ upstream of the magnetopause. This is analogous to the shock wave in front of a supersonic aircraft.
-
-- **Magnetosheath:** The shocked, heated solar wind plasma flows around the magnetopause in this turbulent region between the bow shock and magnetopause.
-
-- **Magnetotail:** On the night side, the magnetic field is stretched into a long tail extending more than 200 $R_\oplus$ downstream, where **magnetic reconnection** events (the breaking and rejoining of oppositely directed field lines, which converts magnetic energy into particle acceleration and heat) release energy and accelerate particles.
-
-- **Plasmasphere:** A torus of cool, dense plasma trapped on closed magnetic field lines in the inner magnetosphere, co-rotating with Earth.
-
-The full structure, including the long magnetotail extending tens of $R_\oplus$ downstream, is shown in {numref}`fig:magnetosphere`.
-
-```{figure} figures/magnetosphere_structure.svg
-:name: fig:magnetosphere
-:width: 600px
-:align: center
-
-Structure of Earth's magnetosphere, showing the bow shock, magnetopause, magnetosheath, magnetotail, and Van Allen radiation belts. The solar wind (arriving from the left) is deflected around the magnetopause, while the magnetic field is compressed on the dayside and stretched into a long tail on the nightside. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 ```
 
 ### Auroral processes
