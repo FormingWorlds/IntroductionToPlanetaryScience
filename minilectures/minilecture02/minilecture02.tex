@@ -32,14 +32,14 @@
   Five problems, all built on Lectures 3--4. The physics you need, per problem:
   \vskip6pt\relax
   \begin{enumerate}
-    \item \textbf{The radiogenic clock}: isotope table to heating power, now and at formation.
-    \item \textbf{Conduction fails, convection takes over}: $\tau = L^2/\kappa$, Ra, Nu.
-    \item \textbf{A minimal thermal evolution model}: heat in minus heat out, on paper and in Python.
-    \item \textbf{Building a core and dating it}: Stokes settling, partitioning, Hf-W ages.
-    \item \textbf{Dynamos and shields}: magnetic Reynolds number, standoff distance.
+    \item \textbf{The radiogenic clock}: isotope table to heating power, and the two heating eras.
+    \item \textbf{Conduction fails, convection takes over}: $\tau = L^2/\kappa$, Ra, the $\Delta T^{4/3}$ flux law.
+    \item \textbf{A minimal thermal evolution model}: heat in minus heat out, on paper and from its solution curve.
+    \item \textbf{Building a core and dating it}: partitioning, the late veneer, Hf-W ages.
+    \item \textbf{Dynamos and shields}: standoff distance, ohmic decay.
   \end{enumerate}
   \vskip6pt\relax
-  \keyresult{Every problem has the shape and level of one exam question. Problem 3(c) is the only part that needs a computer.}
+  \keyresult{Every problem has the shape and level of one exam question. No part needs a computer.}
 \end{frame}
 
 % ── Problem 1 concepts ──────────────────────────────────────
@@ -54,7 +54,7 @@
     \]
     \begin{itemize}
       \item Today: $\approx 4.9 \times 10^{-12}$ W\,kg$^{-1}$ of BSE rock $\Rightarrow$ $\approx$ 20 TW.
-      \item At formation (4.5 Gyr ago): 4.7 times more, $\approx$ 92 TW.
+      \item The same $2^{\,t/t_{1/2}}$ law runs every clock: at 10 Myr, ${}^{26}$Al is 13.9 half-lives down, a factor $1.5 \times 10^{4}$.
     \end{itemize}
 
     \column{0.44\textwidth}
@@ -86,7 +86,7 @@
     \column{0.46\textwidth}
     \begin{block}{How much faster is convection?}
       \small
-      $\mathrm{Nu} = (\mathrm{Ra}/\mathrm{Ra}_c)^{1/3} \approx 32$: thirtyfold. And since $\mathrm{Nu} \propto \Delta T^{1/3}$, the flux scales as $\Delta T^{4/3}$: hotter mantles shed heat disproportionately fast.
+      The Nusselt number $\mathrm{Nu} = (\mathrm{Ra}/\mathrm{Ra}_c)^{1/3}$ is the factor by which convection beats conduction. Since $\mathrm{Nu} \propto \Delta T^{1/3}$, the flux scales as $\Delta T^{4/3}$: hotter mantles shed heat disproportionately fast.
     \end{block}
   \end{columns}
   \vskip2pt\relax
@@ -105,13 +105,13 @@
     \begin{itemize}\setlength\itemsep{1pt}
       \item $H(t)$: radiogenic heating, a decaying exponential.
       \item $Q(T) \propto T^{4/3}$: convective loss (from $\mathrm{Nu} \propto \mathrm{Ra}^{1/3}$).
-      \item You complete two lines of Python and press run.
+      \item You read peak, endpoint, and Urey ratio off the printed solution curve.
     \end{itemize}
 
     \column{0.44\textwidth}
     \begin{block}{What the curve does}
       \small
-      Start hot but under-radiating: the interior \emph{warms} until $Q$ catches $H$ ($\sim$1 Gyr), then tracks the dying heat source down. Today: the model cools at $\sim$170 K per Gyr (the real mantle nearer 50--100), Urey ratio $H/Q \approx 0.4$.
+      Start hot but under-radiating: the interior \emph{warms} until $Q$ catches $H$ ($\sim$1 Gyr), then tracks the dying heat source down. Today: Urey ratio $H/Q \approx 0.4$.
     \end{block}
   \end{columns}
   \vskip2pt\relax
@@ -122,15 +122,13 @@
 \begin{frame}{Building a core and dating it}
   \begin{columns}[T]
     \column{0.52\textwidth}
-    Three tools, one story:
+    One formula, one story:
     \[
-      v_\mathrm{Stokes} = \frac{2}{9}\frac{\Delta\rho\,g\,r^2}{\mu},
-      \qquad
       \frac{C^\mathrm{sil}}{C^\mathrm{bulk}} = \frac{1}{1 + x(D-1)}
     \]
     \begin{itemize}
-      \item Iron rain crosses a magma ocean in \textbf{weeks}.
-      \item Siderophile elements ($D \gg 1$) vanish into the core; their leftover excess records the \textbf{late veneer}.
+      \item Siderophile elements ($D \gg 1$) vanish into the core.
+      \item Their leftover excess in the mantle records the \textbf{late veneer}.
     \end{itemize}
 
     \column{0.44\textwidth}
@@ -139,7 +137,7 @@
     \end{block}
   \end{columns}
   \vskip2pt\relax
-  \keyresult{Core formation is fast, chemically selective, and datable: three properties, three worksheet parts.}
+  \keyresult{Core formation is chemically selective and datable: the mantle keeps both the receipt and the clock.}
 \end{frame}
 
 % ── Problem 5 concepts ──────────────────────────────────────
@@ -147,15 +145,15 @@
   \begin{columns}[T]
     \column{0.52\textwidth}
     \small
-    Dynamo feasibility and its shield:
+    The shield and its lifetime:
     \[
-      \boxed{\mathrm{Rm} = \frac{U L}{\eta} \gtrsim 10\text{--}100},
+      \boxed{r_\mathrm{mp} = R_p\left(\frac{B_0^2}{\mu_0 \rho_\mathrm{sw} v_\mathrm{sw}^2}\right)^{1/6}},
       \;\;
-      r_\mathrm{mp} = R_p\left(\frac{B_0^2}{\mu_0 \rho_\mathrm{sw} v_\mathrm{sw}^2}\right)^{1/6}
+      \tau_\mathrm{ohm} = \frac{L^2}{\eta}
     \]
     \begin{itemize}\setlength\itemsep{1pt}
-      \item Even Ganymede's 300 km shell clears the bar.
-      \item $\tau_\mathrm{ohm} = L^2/\eta \sim$ kyr: an observed field is regenerated \emph{now}.
+      \item For Ganymede's 300 km shell, $\tau_\mathrm{ohm} \sim$ kyr.
+      \item So an observed field is regenerated \emph{now}: no fossil survives.
     \end{itemize}
 
     \column{0.44\textwidth}
@@ -165,7 +163,7 @@
     \end{block}
   \end{columns}
   \vskip2pt\relax
-  \keyresult{Rm asks whether a dynamo can run; the pressure balance says how far its shield reaches.}
+  \keyresult{The pressure balance says how far the shield reaches; ohmic decay says a field must be driven today.}
 \end{frame}
 
 % ── Working the sheet ───────────────────────────────────────
@@ -175,7 +173,7 @@
     \item Carry \textbf{4 significant figures} through intermediate steps; round at the end.
     \item Use the \textbf{checkpoints} ("show that \ldots") to verify your work and to keep moving if a step resists.
     \item Qualitative parts want \textbf{2 to 3 sentences} of physics, not an essay.
-    \item For Problem 3(c), download \texttt{thermal\_evolution.py} from the worksheets page; any Python 3 with numpy and matplotlib works.
+    \item Problem 3 prints the model's solution curves: read the peak, the endpoint, and the Urey ratio straight off them.
   \end{itemize}
   \vskip8pt\relax
   \keyresult{Worksheet and full solutions: \texttt{ips.formingworlds.space/worksheets.html}. We discuss questions, not presentations of the solutions.}

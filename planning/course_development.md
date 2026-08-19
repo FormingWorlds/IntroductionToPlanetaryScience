@@ -27,7 +27,6 @@ Students completing this course will be able to:
 - Classical Mechanics (orbital dynamics, energy conservation)
 - Thermodynamics (heat transfer, phase equilibria)
 - Introduction to Astrophysics or equivalent (stellar structure basics, electromagnetic spectrum)
-- Basic Python programming (for computational worksheet problems)
 
 ### Assessment
 
@@ -460,8 +459,8 @@ Capstone synthesis lecture. Unlike L9–L13, the structure is integration-first 
 
 All worksheets are **ungraded formative practice** at the level of the final exam; the exam has the same shape, so the worksheets define what students should expect. The design rules below apply to every sheet:
 
-- **Time budget: strictly under 3 hours** for a student who works the sheet seriously. Problem count and part count are trimmed to fit this cap, never the other way around.
-- **Shape: 5 problems with lettered parts** (about 20 parts per sheet). Each problem has the size and shape of one exam question (about 15 minutes for a well-prepared student).
+- **Time budget: 2 hours** for a student who works the sheet seriously. Problem count and part count are trimmed to fit this cap, never the other way around.
+- **Shape: 5 problems with lettered parts** (about 15 parts per sheet). Each problem has the size and shape of one exam question (about 15 minutes for a well-prepared student).
 - **Qualitative parts make up at least 40% of the lettered parts, up to half.** The qualitative parts use four forms: explain a mechanism, read the limits and special cases of a derived formula, sketch or read a figure, and judge a stated claim with justification.
 - **Coverage: the core physics sections of the two lectures only** (equations and derivations); historical and descriptive material stays in the lectures.
 - **Checkpoints: key intermediate results are stated in the problem text** ("show that ..."), so a student who stalls on one step can verify their work and continue. Checkpoint values carry 4 significant figures and the worked solutions continue from the printed checkpoint values, never from a more precise internal value.
@@ -469,33 +468,33 @@ All worksheets are **ungraded formative practice** at the level of the final exa
 - **Self-containment: the lecture notes contain strictly all information needed to answer a worksheet.** A worksheet introduces no substantial new material, in its solutions included; data values in the given box and assumptions stated in a problem are fine. When a gap appears, the worksheet changes, not the locked notes.
 
 Each worksheet is accompanied by a **tutorial mini-lecture**: a deck the teaching assistants present in **at most 10 minutes** at the start of the tutorial. It summarises and highlights the concepts from the block's two lectures that the worksheet trains; it uses the same beamer theme and visual language as the lecture decks; it introduces no material beyond the lectures; and it closes with working guidance for the sheet. Source in `minilectures/minilectureNN/`, published to `book/_static/minilectures/` and listed on the Mini-Lectures page of the site.
-- Worksheets are analytical by default (pen, paper, calculator, matching the exam). A short computational part is the exception, at most one per sheet, and only where it teaches something analytical work cannot; Worksheet 2's two-line Python fill-in is the model.
+- Worksheets are entirely analytical (pen, paper, calculator, matching the exam); no part requires a computer. Where a problem rests on a numerical model, the sheet prints the model's solution figure and students read values off it; Worksheet 2's thermal-evolution figure is the template.
 
 ### Worksheet 1: Orbits & Formation
 **Follows:** Lectures 1–2
 **Due:** Week 2
 **Topics covered:**
-- Kepler's third law as a scale: the Sun's mass from Jupiter's orbit, Jupiter's from Ganymede's, and what the neglected planet mass does to the result
-- Vis-viva equation: the minimum-energy transfer to Mars, with a sketch of $v(r)$ along the transfer
+- Kepler's third law as a scale: the Sun's mass from Jupiter's orbit, and what the neglected planet mass does to the result
+- Vis-viva equation: the minimum-energy transfer to Mars
 - The Laplace resonance of the Galilean moons: period ratios, the three-body mean-motion relation, conjunction geometry, tidal heating of Io
-- Tidal forces and the fluid Roche limit: derivation of the tidal acceleration, limits of the formula, Saturn's rings, the ISS as a domain check
-- Gravitational focusing, runaway versus oligarchic growth, and the minimum mass of the solar nebula against a Class II disk
+- Tidal forces and the fluid Roche limit: derivation of the tidal acceleration, limits of the formula, Saturn's rings
+- Gravitational focusing and runaway versus oligarchic growth
 
 The synodic-period and launch-window calculation is held back for a mock exam.
 
-**Format:** Problem set (analytical); 5 problems, 20 parts
+**Format:** Problem set (analytical); 5 problems, 14 parts
 
 ### Worksheet 2: Thermal Evolution & Differentiation
 **Follows:** Lectures 3–4
 **Due:** Week 3
 **Topics covered:**
-- Heat conduction: cooling timescales for bodies of different sizes
-- Rayleigh number calculation and convective regime assessment
-- Radioactive heating: calculate present-day vs. early solar system heat production
-- Core formation: siderophile partitioning problem
-- Magnetic Reynolds number and dynamo feasibility for different planets
+- Radiogenic heating: the isotope table, present-day versus early solar system heat production
+- Heat conduction versus convection: cooling timescales, the Rayleigh number, the $\Delta T^{4/3}$ flux law
+- A minimal thermal evolution model: the energy balance on paper, values read off the solution figure printed on the sheet
+- Core formation: siderophile partitioning, the late veneer, Hf-W dating
+- Dynamos and shields: magnetopause standoff and ohmic decay
 
-**Format:** Problem set (analytical, plus one short computational part: the thermal evolution model)
+**Format:** Problem set (analytical); 5 problems, 16 parts; one part reads the printed solution figure
 
 ### Worksheet 3: Atmospheres
 **Follows:** Lectures 5–6
@@ -608,7 +607,7 @@ Order:
 2. L01 slides (LOCKED 2026-08-08; 95-page deck signed off and deployed)
 3. L02 notes (LOCKED 2026-08-08)
 4. L02 slides (rebuilt against the locked notes and deployed 2026-08-09; 107-page deck, under review)
-5. Worksheet 01 (L01 + L02) (drafted 2026-08-14; 5 problems / 20 parts, 4-page sheet plus 12-page solutions, under review)
+5. Worksheet 01 (L01 + L02) (drafted 2026-08-14; 5 problems / 14 parts, 3-page sheet plus 9-page solutions, under review)
 6. Mini-lecture 01 (Tutorial 1, L01 + L02) (drafted 2026-08-14; 8 slides, under review)
 7. L03 notes
 8. L03 slides

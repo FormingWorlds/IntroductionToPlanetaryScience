@@ -1,10 +1,11 @@
-"""Generate the solution figure for Worksheet 2, Problem 3(c).
+"""Generate the thermal-evolution figure for Worksheet 2, Problem 3.
 
-Runs the completed thermal-evolution model (the two fill-in lines of
-``worksheets/worksheet02/thermal_evolution.py`` written out) and saves the
-two-panel temperature and power history to
-``worksheets/worksheet02/figures/thermal_evolution_solution.pdf``, which the
-solutions sheet embeds.
+Integrates the worksheet's thermal-evolution model and saves the two-panel
+temperature and power history to
+``worksheets/worksheet02/figures/thermal_evolution_solution.pdf``. The problem
+statement embeds the figure, so it appears on both the problem sheet and the
+solutions sheet; students read the peak, the endpoint, and the Urey ratio off
+its curves.
 
 Run from the repository root:  python3 scripts/worksheets/ws02_solution_figure.py
 """
@@ -49,9 +50,6 @@ def main() -> None:
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(6.4, 6.0), sharex=True)
     ax1.plot(t_arr, T_arr, color="#1f77b4", lw=2.0)
     ax1.set_ylabel("Mantle temperature contrast $T$ (K)")
-    ax1.annotate(f"peak {T_arr[i_max]:.0f} K", (t_arr[i_max], T_arr[i_max]),
-                 xytext=(t_arr[i_max] + 0.5, T_arr[i_max] - 40), fontsize=9,
-                 arrowprops=dict(arrowstyle="->", lw=0.8))
     ax2.plot(t_arr, H_arr / 1e12, color="#d62728", lw=1.8, label="$H(t)$ heating")
     ax2.plot(t_arr, Q_arr / 1e12, color="#2ca02c", lw=1.8, label="$Q(T)$ heat loss")
     ax2.set_xlabel("Time after formation (Gyr)")

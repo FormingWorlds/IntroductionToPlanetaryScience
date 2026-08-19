@@ -5,12 +5,11 @@
 \ipsmaketitle
 
 This worksheet is ungraded practice, with the same shape and level as the final exam.
-Plan up to 3 hours for a serious pass.
+Plan up to 2 hours for a serious pass.
 Work each problem through on paper before you open the solutions, and show your algebra:
 the exam asks for the steps, not only the number.
 Some parts state an intermediate result (``show that\,\ldots''); use it to check your work, and to continue if a step resists.
 Carry at least four significant figures through the intermediate steps (the worked solutions print five) and round only at the end.
-Problem~3 has a short computational part; everything else is analytical.
 
 \begin{given}[Constants and data]
 $1\ \mathrm{yr} = 3.156 \times 10^{7}\ \mathrm{s}$ \quad
@@ -49,7 +48,7 @@ $\lambda = 7.79 \times 10^{-2}\ \mathrm{Myr^{-1}}$ ($t_{1/2} = 8.9$ Myr).}
 \problem{The radiogenic clock}
 
 Radioactive decay powers planetary interiors on two very different timescales.
-Here you reconstruct both from the isotope table, then place them in the planetary context.
+Here you compute the long-lived budget from the isotope table, then place both timescales in the planetary context.
 
 \parti The isotope table refers to the bulk silicate Earth (BSE): the mantle plus crust, without the core.
 Compute the BSE mass from $\Mearth$ and the core mass fraction $x$
@@ -86,45 +85,6 @@ which matches the printed checkpoint. With the round BSE mass:
   P_\mathrm{today} = 4.872 \times 10^{-12} \times 4.0 \times 10^{24} = 1.9488 \times 10^{13}\ \mathrm{W} \approx 19.5\ \mathrm{TW}.
 \]
 \answer{$P_\mathrm{today} \approx 19.5$ TW, consistent with the 19--20 TW quoted in the Lecture~3 notes.}
-\end{solution}
-
-\parti Each isotope was more abundant in the past by a factor $2^{\,t/t_{1/2}}$ with $t = 4.5$ Gyr.
-Compute this factor for each isotope, then the specific heating rate at Earth's formation
-(show that it is $2.297 \times 10^{-11}\ \mathrm{W\,kg^{-1}}$), the corresponding power,
-and the ratio of the heating rate at formation to today.
-
-\begin{solution}
-The abundance factors over $t = 4.5$ Gyr:
-\[
-  {}^{238}\mathrm{U}:\ 2^{4.5/4.47} = 2^{1.0067} = 2.0093,
-  \qquad
-  {}^{235}\mathrm{U}:\ 2^{4.5/0.704} = 2^{6.3920} = 83.98,
-\]
-\[
-  {}^{232}\mathrm{Th}:\ 2^{4.5/14.0} = 2^{0.32143} = 1.2497,
-  \qquad
-  {}^{40}\mathrm{K}:\ 2^{4.5/1.25} = 2^{3.6000} = 12.126.
-\]
-Scaling each present-day contribution from part (a) by its factor:
-\[
-  1.9000 \times 2.0093 = 3.8177, \qquad
-  0.0798 \times 83.98 = 6.7016,
-\]
-\[
-  2.0800 \times 1.2497 = 2.5994, \qquad
-  0.8120 \times 12.126 = 9.8463,
-\]
-all in units of $10^{-12}$ W\,kg$^{-1}$. The sum is
-\[
-  h_\mathrm{form} = 2.2965 \times 10^{-11}\ \mathrm{W\,kg^{-1}},
-\]
-matching the checkpoint. The power and the ratio:
-\[
-  P_\mathrm{form} = 2.297 \times 10^{-11} \times 4.0 \times 10^{24} = 9.188 \times 10^{13}\ \mathrm{W} \approx 92\ \mathrm{TW},
-  \qquad
-  \frac{h_\mathrm{form}}{h_\mathrm{today}} = \frac{2.297 \times 10^{-11}}{4.872 \times 10^{-12}} = 4.71.
-\]
-\answer{$P_\mathrm{form} \approx 92$ TW and $h_\mathrm{form}/h_\mathrm{today} \approx 4.7$: exactly the factor and the formation-era power printed in the Lecture~3 notes and figure.}
 \end{solution}
 
 \parti The radiogenic-heating figure in the Lecture~3 notes shows the short-lived isotope
@@ -222,65 +182,13 @@ matching the checkpoint, and
 \answer{$\mathrm{Ra} \approx 5.4 \times 10^{7}$, over $3 \times 10^4$ times critical: the mantle convects vigorously despite its enormous viscosity.}
 \end{solution}
 
-\parti The Nusselt number, normalised to vanish at onset, is
-$\mathrm{Nu} = (\mathrm{Ra}/\mathrm{Ra}_c)^{1/3}$.
-Compute Nu for the mantle and state what it means for the heat flux.
-
-\begin{solution}
-From the printed ratio of part (b):
-\[
-  \mathrm{Nu} = \left(3.162 \times 10^{4}\right)^{1/3} = 31.62 \approx 32.
-\]
-The Nusselt number is the ratio of the actual (convective) heat flux to the flux that
-conduction alone would carry across the same layer and temperature drop: convection moves
-heat about 32 times faster than conduction would.
-\answer{$\mathrm{Nu} \approx 32$, inside the 18--39 range quoted in the notes for $\mathrm{Ra} = 10^{7}$--$10^{8}$.}
-\end{solution}
-
-\parti Sketch the horizontally averaged temperature profile through Earth's mantle, from the
-cold surface to the core-mantle boundary at 2890 km depth. Label the two thermal boundary
-layers and the nearly adiabatic interior, with approximate thicknesses and the anchor
-temperatures from the notes. In one sentence: why is almost the entire temperature drop
-confined to the two thin boundary layers?
-
-\begin{solution}
-The profile has three segments: a steep conductive gradient across the cold thermal boundary
-layer (the lithosphere, $\sim$100 km); a shallow, nearly adiabatic gradient
-($\sim 0.5$ K\,km$^{-1}$) through the stirred interior, reaching $\sim$2500 K at the base of
-the mantle; and a second steep gradient across the hot boundary layer (the D$''$ layer,
-$\sim$200 km), rising to $T_\mathrm{CMB} \sim 4000$ K.
-
-\begin{center}
-\begin{tikzpicture}[line cap=round, x=1cm, y=1cm]
-  % axes: T rightward (0-4000 K -> 0-5.7), depth downward (0-2890 km -> 0-5.0)
-  \draw[->, thick] (0, 0) -- (6.2, 0) node[right, font=\small] {$T$};
-  \draw[->, thick] (0, 0) -- (0, -5.5) node[below, font=\small] {depth};
-  \draw (0.43, 0.08) -- (0.43, -0.08) node[above=6pt, font=\scriptsize] {$300$ K};
-  \draw (3.57, 0.08) -- (3.57, -0.08) node[above=6pt, font=\scriptsize] {$2500$ K};
-  \draw (5.71, 0.08) -- (5.71, -0.08) node[above=6pt, font=\scriptsize] {$4000$ K};
-  \draw (0.08, -5.0) -- (-0.08, -5.0) node[left, font=\scriptsize] {$2890$ km};
-  \draw[dashed, gray] (0, -5.0) -- (5.71, -5.0);
-  % profile: lithosphere, adiabat, D''
-  \draw[very thick, ipsAccent] (0.43, 0) -- (1.86, -0.17)
-    -- (3.57, -4.65) -- (5.71, -5.0);
-  \node[right, font=\scriptsize, align=left] at (2.1, -0.35) {lithosphere (cold TBL, $\sim$100 km)};
-  \node[right, font=\scriptsize, align=left, rotate=0] at (3.1, -2.4) {adiabat, $\sim 0.5$ K\,km$^{-1}$};
-  \node[above right, font=\scriptsize, align=left] at (4.35, -4.95) {D$''$ (hot TBL, $\sim$200 km)};
-\end{tikzpicture}
-\end{center}
-
-The interior is stirred by convection, which keeps it close to the shallow adiabat: a large
-gradient cannot survive there, so the full contrast between surface and core is squeezed
-into the two thin conductive layers at the top and bottom.
-\answer{Steep gradients exist only where heat moves by conduction: in the two thin boundary layers. The convecting interior follows the adiabat.}
-\end{solution}
-
 \parti Judge this claim in 2 to 3 sentences:
 \emph{``Doubling the mantle's temperature contrast $\Delta T$ would double the convective heat flux.''}
 
 \begin{solution}
-False. The convective flux is $q \propto \mathrm{Nu} \times \Delta T$ with
-$\mathrm{Nu} \propto \mathrm{Ra}^{1/3} \propto \Delta T^{1/3}$, so
+False. The convective flux is $q \propto \mathrm{Nu} \times \Delta T$, where the Nusselt
+number Nu (the factor by which convection beats conduction) scales as
+$\mathrm{Ra}^{1/3} \propto \Delta T^{1/3}$, so
 $q \propto \Delta T^{4/3}$: doubling $\Delta T$ raises the flux by
 $2^{4/3} = 2.52$, more than double. A hotter mantle does not just carry more heat per
 parcel, it also convects more vigorously.
@@ -293,9 +201,9 @@ parcel, it also convects more vigorously.
 
 The heat budget of the Lecture~3 notes (radiogenic heating in, convective heat loss out) can be
 turned into a one-line model of Earth's thermal history. This problem assembles the model on
-paper and then integrates it in Python.
+paper and then reads Earth's thermal history from its numerical solution.
 
-\parti Problem 2(e) already used the scaling $q \propto \Delta T^{4/3}$; derive it now in one
+\parti Problem 2(c) already used the scaling $q \propto \Delta T^{4/3}$; derive it now in one
 line from $\mathrm{Nu} \propto \mathrm{Ra}^{1/3}$ and $\mathrm{Ra} \propto \Delta T$ (all other
 parameters fixed). Writing $T$ for the mantle temperature contrast, energy
 conservation for the silicate shell then reads
@@ -321,55 +229,28 @@ rising steeply with mantle temperature. The balance of the two drives $\mathrm{d
 \answer{$Q \propto \Delta T^{4/3}$; heating in, parametrised convective cooling out.}
 \end{solution}
 
-\parti Take today's values $H = 20$ TW, $Q_0 = 47$ TW at $T_0 = 2500$ K, and
+\parti The figure shows the numerical solution of the model, integrated from
+$T(0) = 3000$ K over 4.5 Gyr with $H_\mathrm{f} = 94$ TW, $\tau_r = 2.91$ Gyr,
+$Q_0 = 47$ TW at $T_0 = 2500$ K, and
 $C = 4.0 \times 10^{24} \times 1250 = 5.0 \times 10^{27}\ \mathrm{J\,K^{-1}}$.
-Show that the model's present-day cooling rate is
-$\mathrm{d}T/\mathrm{d}t \approx -170$ K per Gyr.
-Name one reason this simple estimate overstates the true mantle cooling rate.
-
-\begin{solution}
-\[
-  \frac{\mathrm{d}T}{\mathrm{d}t} = \frac{(20 - 47) \times 10^{12}}{5.0 \times 10^{27}}
-  = -5.400 \times 10^{-15}\ \mathrm{K\,s^{-1}}.
-\]
-Per Gyr ($3.156 \times 10^{16}$ s):
-\[
-  \frac{\mathrm{d}T}{\mathrm{d}t} = -5.400 \times 10^{-15} \times 3.156 \times 10^{16} = -170.4\ \mathrm{K\,Gyr^{-1}},
-\]
-matching the checkpoint. The estimate charges the full 47 TW to the silicate shell, but
-roughly 10 TW of it is heat leaving the core (which is resupplied by core cooling and
-crystallisation, not by the mantle's own reservoir), so the mantle itself cools more slowly;
-estimates from petrology give closer to $50$--$100$ K per Gyr.
-\answer{$\mathrm{d}T/\mathrm{d}t \approx -170$ K Gyr$^{-1}$, an overestimate because part of the surface heat flow is paid by the core, not the mantle.}
-\end{solution}
-
-\parti The template \texttt{thermal\_evolution.py} (next to this sheet on the course site)
-integrates the model from $T(0) = 3000$ K over 4.5 Gyr with
-$H_\mathrm{f} = 94$ TW (today's round 20 TW multiplied by the factor 4.7; the more precise
-chain of Problem 1(b) gives 92 TW) and $\tau_r = 2.91$ Gyr.
-Complete the two marked lines (the expressions for $H(t)$ and $Q(T)$), run the script, and
-report: the maximum temperature and when it occurs, the final temperature $T(4.5\ \mathrm{Gyr})$,
-and the final Urey ratio $H/Q$.
-Your run should give $T(4.5\ \mathrm{Gyr}) \approx 2670$ K.
-Describe the shape of the curve in one or two sentences.
-
-\begin{solution}
-The completed lines are
-\begin{verbatim}
-H = H_F * np.exp(-t / TAU_R)
-Q = Q_0 * (T / T_0) ** (4.0 / 3.0)
-\end{verbatim}
-The run gives a maximum of $T \approx 3110$ K at $t \approx 1.2$ Gyr, a final temperature
-$T(4.5\ \mathrm{Gyr}) \approx 2670$ K, and a final Urey ratio
-$H/Q = 20.0/51.4 \approx 0.39$.
-The curve first \emph{rises}: at 3000 K the convective loss ($\approx 60$ TW) is smaller than
-the initial heating (94 TW), so the interior warms until $Q$ catches up with $H$; from
-$\sim$1.2 Gyr onward the planet tracks the decaying heat source downward, cooling ever after.
-The solution figure shows $T(t)$, $H(t)$, and $Q(t)$:
 
 \begin{center}
 \includegraphics[width=0.72\linewidth]{figures/thermal_evolution_solution}
 \end{center}
+
+Read off: the maximum temperature and when it occurs, the final temperature
+$T(4.5\ \mathrm{Gyr})$, and the final Urey ratio $H/Q$.
+Then explain in one or two sentences why the temperature first \emph{rises} although the
+heat source only decays.
+
+\begin{solution}
+The temperature curve peaks at $T \approx 3110$ K at $t \approx 1.2$ Gyr and ends at
+$T(4.5\ \mathrm{Gyr}) \approx 2670$ K. At 4.5 Gyr the two power curves read
+$H \approx 20$ TW and $Q \approx 51$ TW, so the final Urey ratio is
+$H/Q \approx 20/51 \approx 0.39$.
+The curve first rises because at 3000 K the convective loss ($\approx 60$ TW) is smaller than
+the initial heating (94 TW): the interior warms until $Q$ catches up with $H$; from
+$\sim$1.2 Gyr onward the planet tracks the decaying heat source downward, cooling ever after.
 \answer{Peak $\approx 3110$ K at $\approx 1.2$ Gyr; $T(4.5) \approx 2670$ K; Urey ratio $\approx 0.39$. Early self-heating, then long secular cooling.}
 \end{solution}
 
@@ -403,28 +284,7 @@ driving contrast collapses.
 \problem{Building a core and dating it}
 
 Core formation is fast, chemically selective, and datable.
-Here you follow one iron droplet down, predict what it leaves behind, and read the isotopic clock it starts.
-
-\parti An iron droplet of radius $r = 5$ mm sinks through a magma ocean with density contrast
-$\Delta\rho = 4000\ \mathrm{kg\,m^{-3}}$, gravity $g = 5\ \mathrm{m\,s^{-2}}$, and melt
-viscosity $\mu = 0.1$ Pa\,s. Compute its Stokes settling velocity
-(show that $v \approx 1.11\ \mathrm{m\,s^{-1}}$) and the time to cross a magma ocean
-1500 km deep, in days. State also why this crossing time is a lower limit.
-
-\begin{solution}
-\[
-  v = \frac{2}{9}\,\frac{\Delta\rho\,g\,r^2}{\mu}
-    = \frac{2}{9} \times \frac{4000 \times 5 \times (5 \times 10^{-3})^2}{0.1}
-    = \frac{2}{9} \times \frac{2 \times 10^{4} \times 2.5 \times 10^{-5}}{0.1}
-    = \frac{2}{9} \times 5.0 = 1.1111\ \mathrm{m\,s^{-1}},
-\]
-matching the checkpoint. The crossing time:
-\[
-  t = \frac{1.5 \times 10^{6}}{1.111} = 1.3501 \times 10^{6}\ \mathrm{s}
-    = \frac{1.3501 \times 10^{6}}{86\,400} = 15.6\ \mathrm{d}.
-\]
-\answer{$v \approx 1.11$ m\,s$^{-1}$; the droplet crosses 1500 km in about 16 days. The time is a lower limit: at 5 mm the flow around the droplet is already turbulent (the notes place the laminar limit near 1 mm), so the true settling is slower and the crossing takes weeks rather than days.}
-\end{solution}
+Here you predict what it leaves behind in the mantle, and read the isotopic clock it starts.
 
 \parti Let $x$ be the core mass fraction and $D = C^\mathrm{metal}/C^\mathrm{silicate}$ the
 metal-silicate partition coefficient of a trace element. Assuming the whole planet
@@ -452,7 +312,7 @@ using $C^\mathrm{metal} = D\,C^\mathrm{silicate}$. Inverting gives the stated fr
 \end{solution}
 
 \parti The observed iridium depletion of Earth's mantle is a factor $\sim 1000$, i.e.\ the
-mantle retains $\sim 10^{-3}$ of chondritic. Compare with your prediction from part (b) and
+mantle retains $\sim 10^{-3}$ of chondritic. Compare with your prediction from part (a) and
 explain, in 2 to 3 sentences, what the discrepancy implies. What single observation about the
 element \emph{ratios} clinches the interpretation?
 
@@ -535,26 +395,9 @@ $\rho_\mathrm{sw}^{-1/6}$ at fixed $B_0$ and $v_\mathrm{sw}$:
 \answer{$r_\mathrm{mp} \propto (B_0^2/\rho_\mathrm{sw} v_\mathrm{sw}^2)^{1/6}$; a tenfold density surge compresses Earth's magnetopause from $10$ to $\approx 6.8\,R_\oplus$. The sixth root is why the magnetosphere is so stable against solar-wind buffeting.}
 \end{solution}
 
-\parti Ganymede's dynamo operates in a liquid iron shell of thickness $L \approx 300$ km.
-Taking the convective speed to be the same as in Earth's core,
-$U = 5 \times 10^{-4}\ \mathrm{m\,s^{-1}}$, and magnetic diffusivity
-$\eta = 1\ \mathrm{m^2\,s^{-1}}$, compute the magnetic Reynolds number
-$\mathrm{Rm} = U L/\eta$ (show that $\mathrm{Rm} = 150$) and judge dynamo feasibility
-against the critical range $\mathrm{Rm}_c \sim 10$--$100$.
-
-\begin{solution}
-\[
-  \mathrm{Rm} = \frac{5 \times 10^{-4} \times 3.0 \times 10^{5}}{1} = 150,
-\]
-matching the checkpoint. This clears the upper end of the critical range: even a shell only
-300 km thick can sustain a dynamo at Earth-like convective speeds, consistent with the
-observed $\sim 0.7\ \mu$T surface field. The margin is modest, though: a few times slower
-convection would put Ganymede below threshold, which is why its dynamo is considered
-surprising and its driving (compositional buoyancy, possibly tidally modulated) matters.
-\answer{$\mathrm{Rm} = 150 \gtrsim \mathrm{Rm}_c$: feasible, with little margin.}
-\end{solution}
-
-\parti If Ganymede's convection stopped, its field would decay ohmically on the timescale
+\parti Ganymede's dynamo operates in a liquid iron shell of thickness $L \approx 300$ km
+with magnetic diffusivity $\eta = 1\ \mathrm{m^2\,s^{-1}}$. If its convection stopped, the
+field would decay ohmically on the timescale
 $\tau_\mathrm{ohm} = L^2/\eta \approx 3 \times 10^{3}$ yr (verify this in one line if you
 wish). Explain in 2 to 3 sentences what this timescale, set against the age of the solar
 system, proves about the field the Galileo spacecraft measured in 1996, and why a
