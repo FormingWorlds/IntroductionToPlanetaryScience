@@ -5,7 +5,7 @@
 \ipsmaketitle
 
 This worksheet is ungraded practice, with the same shape and level as the final exam.
-Plan up to 3 hours for a serious pass.
+Plan up to 2 hours for a serious pass.
 Work each problem through on paper before you open the solutions, and show your algebra:
 the exam asks for the steps, not only the number.
 Some parts state an intermediate result (``show that\,\ldots''); use it to check your work, and to continue if a step resists.
@@ -20,7 +20,7 @@ $S_\oplus = 1361\ \mathrm{W\,m^{-2}}$ (solar constant at 1 AU) \quad
 $\Mearth = 5.972 \times 10^{24}\ \mathrm{kg}$
 
 \vskip4pt
-Earth: $P_0 = 1.013 \times 10^{5}$ Pa, $\Rearth = 6371$ km, $T_{\mathrm{eff}} = 255$ K, surface $288$ K, air density near the surface $\rho = 1.2\ \mathrm{kg\,m^{-3}}$, $\Omega = 7.29 \times 10^{-5}\ \mathrm{rad\,s^{-1}}$, $\Gamma_d = 9.8\ \mathrm{K\,km^{-1}}$
+Earth: $P_0 = 1.013 \times 10^{5}$ Pa, $\Rearth = 6371$ km, $T_{\mathrm{eff}} = 255$ K, surface $288$ K, $\Omega = 7.29 \times 10^{-5}\ \mathrm{rad\,s^{-1}}$, $\Gamma_d = 9.8\ \mathrm{K\,km^{-1}}$
 
 \vskip4pt
 Water: $L_v = 2.50 \times 10^{6}\ \mathrm{J\,kg^{-1}}$, $R_v = 462\ \mathrm{J\,kg^{-1}\,K^{-1}}$ ($L_v/R_v = 5400$ K), triple point $(273\ \mathrm{K},\ 611\ \mathrm{Pa})$
@@ -37,7 +37,7 @@ Titan           & 94 (surface)  & 28.6 & 1.35 & --- \\
 \end{tabular}
 
 \vskip4pt
-{\footnotesize Atmospheric data as in the Lecture 5 notes. Molar masses: $\mathrm{CO_2}$ 44.01, air 28.97 (dimensionless $\mu$, in units of $m_u$). The young Sun had $L/\Lsun = 0.71$ (Lecture 6 notes).}
+{\footnotesize Atmospheric data as in the Lecture 5 notes; $\mu$ is dimensionless, in units of $m_u$. The young Sun had $L/\Lsun = 0.71$ (Lecture 6 notes).}
 \end{given}
 
 
@@ -99,19 +99,6 @@ $$
 about one millionth of Earth's mass.
 \end{solution}
 
-\parti Suppose Earth's atmosphere were pure $\mathrm{CO_2}$ at the same temperature and pressure.
-Compute the new scale height from your answer to part (a), and state in one sentence what this
-change would do to the visible thickness of the atmosphere.
-
-\begin{solution}
-Only $\mu$ changes, and $H \propto 1/\mu$:
-$$
-H_{\mathrm{CO_2}} = H_\oplus\,\frac{28.97}{44.01} = 8.426 \times \frac{28.97}{44.01} = 5.546\ \mathrm{km}.
-$$
-The heavier gas is held more tightly: the same pressure would be packed into a layer about
-two thirds as thick, and the atmosphere would hug the surface more closely.
-\end{solution}
-
 
 % ════════════════════════════════════════════════════════════
 \problem{Sunlight in, infrared out}
@@ -155,21 +142,6 @@ The equilibrium temperature still describes what the planet radiates to space, b
 leaves from cold, high atmospheric layers rather than from the ground.
 \end{solution}
 
-\parti In the one-layer greenhouse model of Lecture 5, a fully absorbing layer ($\varepsilon = 1$)
-gives $T_s = 2^{1/4}\,T_{\mathrm{eff}}$.
-Evaluate this for Earth and compare it with the observed 288 K.
-What does the comparison tell you about Earth's actual infrared opacity?
-
-\begin{solution}
-$$
-T_s = 2^{1/4} \times 255 = 1.1892 \times 255 = 303.2\ \mathrm{K}.
-$$
-The observed surface temperature, 288 K, lies between $T_{\mathrm{eff}} = 255$ K (no greenhouse) and
-303.2 K (perfect single-layer greenhouse).
-Earth's atmosphere is therefore a partial absorber: in the notation of the notes, an emissivity
-$\varepsilon < 1$, so the real greenhouse sits below the fully opaque limit.
-\end{solution}
-
 \parti A fellow student writes: ``back-radiation from the atmosphere is a second energy source,
 so the surface receives more energy than the Sun provides, and that violates energy conservation.''
 Judge this claim and correct what is wrong with it.
@@ -190,26 +162,15 @@ temperature the surface needs to pass its share outward.
 \problem{From vapour to cloud base}
 
 The Clausius-Clapeyron equation from the blackboard derivation of Lecture 6 predicts where clouds
-form. The figure below reproduces the saturation curves from the notes; part (d) reads it.
+form. The figure below reproduces the saturation curves from the notes; part (b) reads it.
 
 \begin{center}
 \includegraphics[width=0.62\linewidth]{figures/psat_curves}
 \end{center}
 
-\parti Use the integrated Clausius-Clapeyron equation with the triple point of water as the reference state
-to compute the saturation vapour pressure of water at $263$ K
-(show that $P_{\mathrm{sat}}(263\ \mathrm{K}) \approx 288.0$ Pa).
-
-\begin{solution}
-$$
-P_{\mathrm{sat}}(263) = 611\,\exp\!\left[-5400\left(\frac{1}{263} - \frac{1}{273}\right)\right]
-= 611\,\exp(-0.75211) = 611 \times 0.47137 = 288.0\ \mathrm{Pa},
-$$
-matching the checkpoint. Ten kelvin below freezing, the air can hold less than half the vapour it holds at the triple point: this steep decline is the exponential sensitivity derived on the blackboard.
-\end{solution}
-
 \parti A parcel at the surface has $T = 293$ K and relative humidity 50\%.
-Compute its vapour pressure (show that $P_{\mathrm{sat}}(293\ \mathrm{K}) \approx 2357$ Pa and
+Use the integrated Clausius-Clapeyron equation with the triple point of water as the reference state
+to compute its vapour pressure (show that $P_{\mathrm{sat}}(293\ \mathrm{K}) \approx 2357$ Pa and
 $P_{\mathrm{vap}} \approx 1179$ Pa), invert the Clausius-Clapeyron equation for the dew point
 (show that $T_d \approx 282.4$ K), and from the dry adiabatic cooling rate find the altitude
 of the cloud base. Take the vapour pressure as constant during ascent.
@@ -221,7 +182,7 @@ P_{\mathrm{sat}}(293) = 611\,\exp\!\left[-5400\left(\frac{1}{293} - \frac{1}{273
 = 611\,\exp(1.3502) = 2357\ \mathrm{Pa},
 $$
 so at 50\% relative humidity $P_{\mathrm{vap}} = 0.5 \times 2357 = 1179$ Pa (checkpoints match).
-The dew point is the temperature at which this vapour pressure saturates. Inverting the boxed equation:
+The dew point is the temperature at which this vapour pressure saturates. Inverting the Clausius-Clapeyron equation:
 $$
 \frac{1}{T_d} = \frac{1}{273} - \frac{\ln(P_{\mathrm{vap}}/611)}{5400}
 = 3.6630 \times 10^{-3} - \frac{\ln(1.9296)}{5400} = 3.5413 \times 10^{-3}\ \mathrm{K^{-1}},
@@ -234,46 +195,6 @@ z_{\mathrm{LCL}} = \frac{T - T_d}{\Gamma_d} = \frac{293 - 282.4}{9.8} = 1.082\ \
 $$
 This is the lifting condensation level, and it sits exactly in the 1--2 km range the notes quote for
 Earth's typical cloud base.
-\end{solution}
-
-\parti Sketch the temperature of this rising parcel against altitude from the surface to about 6 km.
-Mark the dry adiabat below the cloud base, the lifting condensation level from part (b), and the
-shallower moist adiabat above it (a representative value on Earth is $5\ \mathrm{K\,km^{-1}}$).
-Label both slopes with numbers.
-
-\begin{solution}
-The profile is two straight segments meeting at the LCL:
-from $(293\ \mathrm{K},\ 0)$ up to $(282.4\ \mathrm{K},\ 1.08\ \mathrm{km})$ with slope
-$-9.8\ \mathrm{K\,km^{-1}}$, then continuing with the shallower moist slope $-5\ \mathrm{K\,km^{-1}}$,
-reaching about $258$ K at 6 km.
-
-\begin{center}
-\begin{tikzpicture}[x=0.16cm, y=0.75cm]
-  % x axis: temperature 250-295 K mapped as (T-250)*0.16cm; y: altitude km
-  \draw[->] (0,0) -- (48,0);
-  \node[below] at (24,-0.55) {\footnotesize $T$ (K)};
-  \draw[->] (0,0) -- (0,6.8);
-  \node[left] at (-0.6,6.5) {\footnotesize $z$ (km)};
-  \foreach \T in {250, 260, 270, 280, 290}
-    \draw ({(\T-250)},0.08) -- ({(\T-250)},-0.08) node[below] {\footnotesize \T};
-  \foreach \z in {0, 2, 4, 6}
-    \draw (0.3,\z) -- (-0.3,\z) node[left] {\footnotesize \z};
-  % dry adiabat: (293,0) to (282.4,1.082)
-  \draw[very thick, ipsPrimary] ({(293-250)},0) -- ({(282.4-250)},1.082);
-  % moist adiabat: slope 5 K/km up to 6 km: T(6) = 282.4 - 5*(6-1.082) = 257.8
-  \draw[very thick, ipsAccent] ({(282.4-250)},1.082) -- ({(257.8-250)},6.0);
-  \draw[dashed] (0,1.082) -- ({(282.4-250)},1.082);
-  % labels sit in empty regions; thin leaders point at the segments
-  \node at (20,0.5) {\footnotesize dry: $-9.8\ \mathrm{K\,km^{-1}}$};
-  \draw[->, thin, gray] (28.5,0.5) -- (37.2,0.55);
-  \node at (32,4.2) {\footnotesize moist: $-5\ \mathrm{K\,km^{-1}}$};
-  \draw[->, thin, gray] (25,4.2) -- (19.6,4.1);
-  \node[left] at (0,1.45) {\footnotesize LCL $\approx 1.1$ km};
-  \fill ({(282.4-250)},1.082) circle (2.2pt);
-\end{tikzpicture}
-\end{center}
-
-The kink at the LCL is the cloud base: above it, condensation releases latent heat and slows the cooling.
 \end{solution}
 
 \parti Read the saturation-curve figure: a body with a solid surface has regions at $90$ K where one
@@ -315,7 +236,7 @@ One equation, two extremes of its exponential sensitivity.
 \problem{Winds on a rotating planet}
 
 Rotation organises all large-scale flow.
-Here you quantify it for the air above the Netherlands, then judge two claims.
+Here you quantify it for the air above the Netherlands, then judge a claim.
 
 \parti Compute the Coriolis parameter $f = 2\Omega\sin\phi$ for Groningen ($\phi = 53^\circ$N;
 show that $f \approx 1.164 \times 10^{-4}\ \mathrm{s^{-1}}$).
@@ -338,35 +259,6 @@ $$
 $$
 Since $\mathrm{Ro} \ll 1$, rotation dominates over inertia and the system is in geostrophic balance:
 the pressure gradient force is balanced by the Coriolis force.
-\end{solution}
-
-\parti The pressure in that system drops by 20 hPa over 1000 km.
-Compute the geostrophic wind speed from the scalar geostrophic relation of Lecture 6, and compare it
-with the quoted $15\ \mathrm{m\,s^{-1}}$.
-
-\begin{solution}
-The horizontal pressure gradient is
-$$
-\left|\pdv{P}{y}\right| = \frac{2000\ \mathrm{Pa}}{10^{6}\ \mathrm{m}} = 2.0 \times 10^{-3}\ \mathrm{Pa\,m^{-1}},
-$$
-so
-$$
-u_g = \frac{1}{f\rho}\left|\pdv{P}{y}\right| = \frac{2.0 \times 10^{-3}}{1.164 \times 10^{-4} \times 1.2}
-= 14.32\ \mathrm{m\,s^{-1}}.
-$$
-This agrees with the quoted wind to within a few percent: mid-latitude weather systems really are
-geostrophic to good approximation.
-\end{solution}
-
-\parti Hurricanes and mid-latitude cyclones spin, yet no cyclone ever forms within a few degrees of the
-equator. Explain why, using the latitude dependence of $f$.
-
-\begin{solution}
-At the equator $\sin\phi = 0$, so $f = 0$: there is no Coriolis deflection at all.
-Without it, air accelerates straight down the pressure gradient and a low fills in instead of spinning up;
-no balanced rotating flow can be established.
-A developing storm needs a finite $f$ to convert convergence into rotation, which in practice requires
-a few degrees of latitude before the Coriolis force is strong enough.
 \end{solution}
 
 \parti A fellow student writes: ``Venus rotates 243 times more slowly than Earth, so the Coriolis force

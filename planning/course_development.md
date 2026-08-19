@@ -501,12 +501,12 @@ The synodic-period and launch-window calculation is held back for a mock exam.
 **Due:** Week 4
 **Topics covered:**
 - Hydrostatic equilibrium: scale heights and column mass for different planets
-- Radiative equilibrium: effective temperature vs. actual surface temperature; the one-layer greenhouse
-- Cloud condensation: Clausius-Clapeyron, dew point, and the lifting condensation level, with a sketch part
+- Radiative equilibrium: effective temperature vs. actual surface temperature; the greenhouse effect
+- Cloud condensation: Clausius-Clapeyron, dew point, and the lifting condensation level
 - Rotation and winds: Coriolis parameter, Rossby number, geostrophic balance
 - Long-term climate: the faint young Sun, ice-albedo bistability, the carbonate-silicate thermostat
 
-**Format:** Problem set (analytical); two parts read course figures printed on the sheet
+**Format:** Problem set (analytical); 5 problems, 16 parts; two parts read course figures printed on the sheet
 
 ### Worksheet 4: Surfaces & Interiors
 **Follows:** Lectures 7–8

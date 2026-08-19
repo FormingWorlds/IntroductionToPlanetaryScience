@@ -33,8 +33,8 @@
   \vskip6pt\relax
   \begin{enumerate}
     \item \textbf{How thick is an atmosphere?}: scale height, hydrostatic balance, column mass.
-    \item \textbf{Sunlight in, infrared out}: equilibrium temperature, the one-layer greenhouse.
-    \item \textbf{From vapour to cloud base}: Clausius-Clapeyron, dew point, the LCL, one sketch.
+    \item \textbf{Sunlight in, infrared out}: equilibrium temperature, the greenhouse effect.
+    \item \textbf{From vapour to cloud base}: Clausius-Clapeyron, dew point, the LCL, the saturation-curve figure.
     \item \textbf{Winds on a rotating planet}: Coriolis parameter, Rossby number, geostrophic balance.
     \item \textbf{Climate on the edge}: the faint young Sun, ice-albedo bistability, the carbonate-silicate thermostat.
   \end{enumerate}
@@ -75,8 +75,6 @@
     Balance absorbed sunlight against emitted infrared:
     \[
       \boxed{(1-A)\,\frac{S}{4} = \sigma T_{\mathrm{eq}}^4}
-      \qquad
-      T_s = 2^{1/4}\,T_{\mathrm{eq}}\ \ (\varepsilon = 1)
     \]
     \begin{itemize}
       \item $S$ falls with the inverse square of distance; $A$ is the Bond albedo.
@@ -104,12 +102,12 @@
     \]
     \begin{itemize}
       \item Invert it for the dew point $T_d$; rising air cools at $\Gamma_d = 9.8$ K\,km$^{-1}$ until it gets there.
-      \item $z_{\mathrm{LCL}} = (T - T_d)/\Gamma_d$: the cloud base. Above it, the moist adiabat ($\sim$5 K\,km$^{-1}$) takes over.
+      \item $z_{\mathrm{LCL}} = (T - T_d)/\Gamma_d$: the cloud base. Problem 3(a) runs this chain from surface humidity to cloud-base height.
     \end{itemize}
 
     \column{0.44\textwidth}
-    \begin{block}{The sketch part}
-      Problem 3(c) asks for the $T$--$z$ profile: two straight lines meeting at the LCL. Label both slopes; the kink is the physics.
+    \begin{block}{The figure part}
+      Problem 3(b) reads the saturation curves printed on the sheet: find the species whose curve passes the given $(T, P)$ point, then name the body. Argue from the curves, not from memory.
     \end{block}
   \end{columns}
   \vskip2pt\relax
@@ -121,24 +119,23 @@
   \small
   \begin{columns}[T]
     \column{0.52\textwidth}
-    Three numbers decide the flow:
+    Two numbers decide the flow:
     \[
       f = 2\Omega\sin\phi, \quad
-      \mathrm{Ro} = \frac{U}{fL}, \quad
-      u_g = \frac{1}{f\rho}\Bigl|\pdv{P}{y}\Bigr|
+      \mathrm{Ro} = \frac{U}{fL}
     \]
     \begin{itemize}
+      \item $1/f$ is the timescale on which rotation bites: about 2.4 hours at our latitude.
       \item $\mathrm{Ro} \ll 1$: rotation wins, wind blows along isobars (geostrophic balance).
-      \item $f = 0$ at the equator: no deflection, no cyclones there.
     \end{itemize}
 
     \column{0.44\textwidth}
     \begin{block}{Slow vs fast rotators}
-      The number of circulation cells follows from the strength of the Coriolis deflection. Reason it out from the Rossby number before you judge the claim in Problem 4(e).
+      The number of circulation cells follows from the strength of the Coriolis deflection. Reason it out from the Rossby number before you judge the claim in Problem 4(c).
     \end{block}
   \end{columns}
   \vskip2pt\relax
-  \keyresult{Check the balance with numbers: a 2000 km low with 15 m\,s$^{-1}$ winds has $\mathrm{Ro} \approx 0.06$; geostrophy predicts its wind to a few percent.}
+  \keyresult{Check the balance with numbers: a 2000 km low with 15 m\,s$^{-1}$ winds has $\mathrm{Ro} \approx 0.06$; rotation, not inertia, steers mid-latitude weather.}
 \end{frame}
 
 % ── P5 ──────────────────────────────────────────────────────

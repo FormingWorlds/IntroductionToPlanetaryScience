@@ -51,8 +51,6 @@ m_col = 1.013e5 / 9.81
 chk("P1c column mass (kg m^-2)", m_col, 1.0326e4, 1e-3)
 M_atm = 4 * math.pi * (6.371e6) ** 2 * 1.033e4
 chk("P1c atmosphere mass (kg)", M_atm, 5.269e18, 1e-3)
-# P1d CO2 scale height from printed 8.426
-chk("P1d H_CO2 (km)", 8.426 * 28.97 / 44.01, 5.546, 1e-3)
 
 # ── Problem 2: sunlight in, infrared out ────────────────────────────────
 S_V = S0 / 0.72 ** 2
@@ -61,31 +59,22 @@ T_eq = ((1 - 0.77) * 2625.4 / (4 * sigma)) ** 0.25
 # printed-chain: the bracket from the PRINTED S_Venus checkpoint
 chk("P2a inner bracket (K^4)", (1 - 0.77) * 2625.4 / (4 * sigma), 2.6624e9, 5e-5)
 chk("P2a T_eq Venus (K)", T_eq, 227.2, 5e-4)
-# P2c one-layer greenhouse
-chk("P2c 2^(1/4)", 2 ** 0.25, 1.1892, 1e-4)
-chk("P2c T_s one-layer (K)", 1.1892 * 255, 303.2, 5e-4)
 
 # ── Problem 3: from vapour to cloud base ────────────────────────────────
-P263 = 611 * math.exp(-5400 * (1 / 263 - 1 / 273))
-chk("P3a exponent", -5400 * (1 / 263 - 1 / 273), -0.75211, 2e-4)
-chk("P3a exp factor", math.exp(-0.75211), 0.47137, 1e-4)
-chk("P3a P_sat(263) (Pa)", P263, 288.0, 1e-3)
 P293 = 611 * math.exp(-5400 * (1 / 293 - 1 / 273))
-chk("P3b exponent", -5400 * (1 / 293 - 1 / 273), 1.3502, 2e-4)
-chk("P3b P_sat(293) (Pa)", P293, 2357, 1e-3)
-chk("P3b P_vap (Pa)", 0.5 * 2357, 1179, 1e-3)
+chk("P3a exponent", -5400 * (1 / 293 - 1 / 273), 1.3502, 2e-4)
+chk("P3a P_sat(293) (Pa)", P293, 2357, 1e-3)
+chk("P3a P_vap (Pa)", 0.5 * 2357, 1179, 1e-3)
 inv_Td = 1 / 273 - math.log(1179 / 611) / 5400
-chk("P3b ln ratio", math.log(1179 / 611), math.log(1.9296), 2e-4)
-chk("P3b 1/T_d (K^-1)", inv_Td, 3.5413e-3, 2e-4)
-chk("P3b T_d (K)", 1 / inv_Td, 282.4, 5e-4)
-chk("P3b z_LCL (km)", (293 - 282.4) / 9.8, 1.082, 1e-3)
-# P3c sketch anchors: moist adiabat from the LCL at 5 K/km reaches ~258 K at 6 km
-chk("P3c sketch top T (K)", 282.4 - 5 * (6.0 - 1.082), 257.8, 2e-3)
-# P3d figure read: CH4 at 90 K vs 1e4 Pa, from the psat script constants
+chk("P3a ln ratio", math.log(1179 / 611), math.log(1.9296), 2e-4)
+chk("P3a 1/T_d (K^-1)", inv_Td, 3.5413e-3, 2e-4)
+chk("P3a T_d (K)", 1 / inv_Td, 282.4, 5e-4)
+chk("P3a z_LCL (km)", (293 - 282.4) / 9.8, 1.082, 1e-3)
+# P3b figure read: CH4 at 90 K vs 1e4 Pa, from the psat script constants
 R_UNIV = 8.314
 L_ch4, M_ch4, Tref_ch4 = 5.10e5, 16.043e-3, 111.7
 psat_ch4_90 = 101325 * math.exp(-(L_ch4 / (R_UNIV / M_ch4)) * (1 / 90 - 1 / Tref_ch4))
-chk("P3d CH4 psat at 90 K (Pa, order 1e4)", psat_ch4_90, 1.2e4, 0.05)
+chk("P3b CH4 psat at 90 K (Pa, order 1e4)", psat_ch4_90, 1.2e4, 0.05)
 
 # ── Problem 4: winds on a rotating planet ───────────────────────────────
 f = 2 * 7.29e-5 * math.sin(math.radians(53))
@@ -93,8 +82,6 @@ chk("P4a sin 53 deg", math.sin(math.radians(53)), 0.79864, 1e-4)
 chk("P4a f (s^-1)", f, 1.164e-4, 5e-4)
 chk("P4a 1/f (hours)", 1 / 1.164e-4 / 3600, 2.4, 1e-2)
 chk("P4b Rossby number", 15 / (1.164e-4 * 2.0e6), 0.064, 1e-2)
-chk("P4c pressure gradient (Pa/m)", 2000 / 1e6, 2.0e-3)
-chk("P4c u_g (m/s)", 2.0e-3 / (1.164e-4 * 1.2), 14.32, 1e-3)
 
 # ── Problem 5: climate on the edge ──────────────────────────────────────
 chk("P5a 0.71^(1/4)", 0.71 ** 0.25, 0.91794, 1e-4)
