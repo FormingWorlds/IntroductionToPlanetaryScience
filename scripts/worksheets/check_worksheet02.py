@@ -83,8 +83,8 @@ chk("P3b final Q (TW)", Q_end / 1e12, 51.4, 3e-3)
 chk("P3b Urey ratio", H_end / Q_end, 0.39, 3e-3)
 
 # ── Problem 4: core formation and Hf-W ──────────────────────────────────
-chk("P4a x(D-1)", 0.32 * 9999, 3200, 2e-4)
-chk("P4a fraction (checkpoint)", 1 / 3201, 3.124e-4)
+chk("P4a x(D-1)", 0.32 * 9999, 3199.7, 2e-4)
+chk("P4a fraction (checkpoint)", 1 / 3200.7, 3.124e-4)
 chk("P4b excess ratio", 1e-3 / 3.124e-4, 3.20, 2e-3)
 
 denom = 1e4 * 25 * 1.02e-4

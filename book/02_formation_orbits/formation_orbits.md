@@ -40,7 +40,7 @@ Protoplanetary disks are not uniform: they have well-defined radial and vertical
 
 - **Temperature gradient:** The disk is heated by stellar irradiation and viscous dissipation. Temperatures range from $> 1500$ K in the innermost regions (where silicates are vaporised) to $< 30$ K in the outer disk {cite:p}`Andrews2020`. This temperature profile determines which materials can condense as solids at each distance.
 
-- **Surface density:** The mass distribution follows roughly a power-law profile $\Sigma(r) \propto r^{-p}$ with $p \approx 0.5$–$1.5$, meaning the surface density is highest in the inner disk (the integrated mass budget, by contrast, is dominated by the vastly larger area of the outer disk). Inferred disk masses decline from a few percent of the stellar mass in the youngest, embedded systems to of order $0.1$% by the Class II stage, although these estimates carry substantial systematic uncertainty {cite:p}`Miotello2023`.
+- **Surface density:** The mass distribution follows roughly a power-law profile $\Sigma(r) \propto r^{-p}$ with $p \approx 0.5$–$1.5$, meaning the surface density is highest in the inner disk (the integrated mass budget, by contrast, is dominated by the vastly larger area of the outer disk). Inferred disk masses decline from a few percent of the stellar mass in the youngest, embedded systems to of order $0.1$% by the Class II stage (the phase in which the envelope has cleared and the star is surrounded by a protoplanetary disk), although these estimates carry substantial systematic uncertainty {cite:p}`Miotello2023`.
 
 - **Dust-to-gas ratio:** In the interstellar medium, dust makes up about 1% of the total mass. In disks, this ratio can be locally enhanced by dust settling to the midplane and radial drift, with important consequences for planet formation.
 
@@ -243,7 +243,7 @@ In the early 17th century, Johannes Kepler distilled decades of precise observat
 
 1. **The law of ellipses:** Each planet moves in an **elliptical orbit** with the Sun at one focus.
 
-2. **The law of equal areas:** A line connecting the planet to the Sun sweeps out **equal areas in equal times**. This means the planet moves fastest at perihelion (closest approach) and slowest at aphelion (farthest distance).
+2. **The law of equal areas:** A line connecting the planet to the Sun sweeps out **equal areas in equal times**. This means the planet moves fastest at perihelion (closest approach) and slowest at aphelion (farthest distance). For an orbit around an arbitrary central body these two turning points are called the periapsis and the apoapsis, together the apsides.
 
 3. **The harmonic law:** The square of the orbital period is proportional to the cube of the semi-major axis:
 
@@ -490,7 +490,7 @@ Resonances are widespread in the solar system:
 
 ### The Laplace resonance
 
-The most famous resonance in the solar system is the **Laplace resonance** of Jupiter's three inner Galilean moons: Io, Europa, and Ganymede. Their orbital periods are in a 1:2:4 ratio (equivalently, mean motions $n_{\mathrm{Io}} : n_{\mathrm{Eur}} : n_{\mathrm{Gan}} = 4:2:1$; Io completes four orbits for each orbit of Ganymede):
+The most famous resonance in the solar system is the **Laplace resonance** of Jupiter's three inner Galilean moons: Io, Europa, and Ganymede. Their orbital periods are in a 1:2:4 ratio (equivalently, mean motions $n \equiv 2\pi/P$, the orbital angular frequencies, in the ratio $n_{\mathrm{Io}} : n_{\mathrm{Eur}} : n_{\mathrm{Gan}} = 4:2:1$; Io completes four orbits for each orbit of Ganymede):
 
 | Moon | Period (days) | Ratio to Io |
 |------|:---:|:---:|
@@ -586,7 +586,7 @@ The orbits of planets are not fixed after formation. Interactions between planet
 
 ### Planet-disk interactions
 
-A planet embedded in a gaseous disk excites spiral density waves at **Lindblad resonances** (the locations where the orbital frequency of the disk material differs from the planet's by $\pm \kappa/m$, with $\kappa$ the local epicyclic frequency and $m$ a positive integer, so that the planet's periodic forcing resonates with the gas's radial oscillations). These waves carry angular momentum away from the planet. Additionally, material co-orbiting with the planet (at the **corotation resonances**) exchanges angular momentum through horseshoe-shaped streamlines. The net torque on the planet determines whether it migrates inward or outward.
+A planet embedded in a gaseous disk excites spiral density waves at **Lindblad resonances** (the locations where the orbital frequency of the disk material differs from the planet's by $\pm \kappa/m$, with $\kappa$ the local epicyclic frequency, the natural frequency of radial oscillations of a gas parcel, which equals the orbital frequency $\Omega$ in a Keplerian disk, and $m$ a positive integer, so that the planet's periodic forcing resonates with the gas's radial oscillations). These waves carry angular momentum away from the planet. Additionally, material co-orbiting with the planet (at the **corotation resonances**) exchanges angular momentum through horseshoe-shaped streamlines. The net torque on the planet determines whether it migrates inward or outward.
 
 ### Types of migration
 
@@ -615,7 +615,7 @@ After the gas disk has dispersed, the giant planets can still undergo migration 
 :width: 100%
 :align: center
 
-Evolution of the giant planets through the Nice-model instability in a five-planet "jumping-Jupiter" simulation by {cite:t}`NesvornyMorbidelli2012`. Panel (a): semi-major axes vs time for five giant planets started in a compact resonant chain, with a fifth ice giant (magenta) initially between Saturn and Uranus; horizontal dashed lines mark the present-day semi-major axes of the four surviving giants. At the instability ($\sim 6$ Myr into this run) the extra ice giant is scattered off Jupiter and ejected from the solar system, while Uranus and Neptune move outward onto their present orbits. Panel (b): the Saturn/Jupiter period ratio, starting near its 3:2 resonance value of 1.5, first drifts slowly upward through planetesimal-driven migration and then jumps discontinuously (from $\approx 1.7$ to $\approx 2.4$ in under $10^5$ yr) during the planet-planet encounters, approaching the present-day value of 2.49 (dashed line). The jump carries the system over the shaded band ($2.1 \lesssim P_{\mathrm{Sat}}/P_{\mathrm{Jup}} \lesssim 2.3$) in which slow migration would activate secular resonances that excite the asteroid belt and the terrestrial-planet orbits; avoiding this zone is the central argument for the jumping-Jupiter scenario over the smooth 2:1 resonance crossing of the original Nice model {cite:p}`Tsiganis2005`. Reproduced from {cite:t}`Nesvorny2018`, Fig. 3.
+Evolution of the giant planets through the Nice-model instability in a five-planet "jumping-Jupiter" simulation by {cite:t}`NesvornyMorbidelli2012`. Panel (a): semi-major axes vs time for five giant planets started in a compact resonant chain, with a fifth ice giant (magenta) initially between Saturn and Uranus; horizontal dashed lines mark the present-day semi-major axes of the four surviving giants. At the instability ($\sim 6$ Myr into this run) the extra ice giant is scattered off Jupiter and ejected from the solar system, while Uranus and Neptune move outward onto their present orbits. Panel (b): the Saturn/Jupiter period ratio, starting near its 3:2 resonance value of 1.5, first drifts slowly upward through planetesimal-driven migration and then jumps discontinuously (from $\approx 1.7$ to $\approx 2.4$ in under $10^5$ yr) during the planet-planet encounters, approaching the present-day value of 2.49 (dashed line). The jump carries the system over the shaded band ($2.1 \lesssim P_{\mathrm{Sat}}/P_{\mathrm{Jup}} \lesssim 2.3$) in which slow migration would activate secular resonances (resonances between the slow precession rates of orbits, rather than between orbital periods) that excite the asteroid belt and the terrestrial-planet orbits; avoiding this zone is the central argument for the jumping-Jupiter scenario over the smooth 2:1 resonance crossing of the original Nice model {cite:p}`Tsiganis2005`. Reproduced from {cite:t}`Nesvorny2018`, Fig. 3.
 ```
 
 ### The Grand Tack
