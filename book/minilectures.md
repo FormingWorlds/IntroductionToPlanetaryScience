@@ -11,5 +11,5 @@ Use them as a compact revision aid: if a slide feels unfamiliar, the correspondi
 |---|---|---|---|
 | 1 | Orbits & Formation | {ref}`Lecture 1 <lecture01>`, {ref}`Lecture 2 <lecture02>` | [Download (PDF)](_static/minilectures/minilecture01.pdf) |
 | 2 | Thermal Evolution & Differentiation | {ref}`Lecture 3 <lecture03>`, {ref}`Lecture 4 <lecture04>` | [Download (PDF)](_static/minilectures/minilecture02.pdf) |
-| 3 | Atmospheres: Structure, Clouds, & Climate | {ref}`Lecture 5 <lecture05>`, {ref}`Lecture 6 <lecture06>` | [Download (PDF)](_static/minilectures/minilecture03.pdf) |
-| 4 | Surfaces & Interiors: Craters, Pressure, & Seismology | {ref}`Lecture 7 <lecture07>`, {ref}`Lecture 8 <lecture08>` | [Download (PDF)](_static/minilectures/minilecture04.pdf) |
+| 3 | Atmospheres | {ref}`Lecture 5 <lecture05>`, {ref}`Lecture 6 <lecture06>` | [Download (PDF)](_static/minilectures/minilecture03.pdf) |
+| 4 | Surfaces & Interiors | {ref}`Lecture 7 <lecture07>`, {ref}`Lecture 8 <lecture08>` | [Download (PDF)](_static/minilectures/minilecture04.pdf) |
