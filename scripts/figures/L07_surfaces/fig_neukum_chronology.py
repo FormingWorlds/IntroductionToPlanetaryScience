@@ -62,7 +62,8 @@ def age_from_density(n: float) -> float:
     return brentq(lambda t: n_of_t(t) - n, 1e-6, 4.5)
 
 
-def make_plot() -> Path:
+def make_plot(show_readoff: bool = True) -> Path:
+    """Draw the chronology; `show_readoff=False` omits the worked read-off."""
     apply_style()
     t = np.linspace(0.0, 4.5, 900)
 
@@ -74,13 +75,14 @@ def make_plot() -> Path:
     ax.plot(t, n_of_t(t), color="black", lw=2.0,
             label="Neukum, Ivanov and Hartmann (2001)")
 
-    # Read-off: a measured crater density inverts to a surface age
-    t_read = age_from_density(READ_OFF_DENSITY)
-    ax.plot([0.0, t_read], [READ_OFF_DENSITY] * 2,
-            color="#b02418", lw=1.2, ls="--")
-    ax.plot([t_read, t_read], [1e-5, READ_OFF_DENSITY],
-            color="#b02418", lw=1.2, ls="--")
-    ax.plot([t_read], [READ_OFF_DENSITY], "o", color="#b02418", ms=6)
+    if show_readoff:
+        # Read-off: a measured crater density inverts to a surface age
+        t_read = age_from_density(READ_OFF_DENSITY)
+        ax.plot([0.0, t_read], [READ_OFF_DENSITY] * 2,
+                color="#b02418", lw=1.2, ls="--")
+        ax.plot([t_read, t_read], [1e-5, READ_OFF_DENSITY],
+                color="#b02418", lw=1.2, ls="--")
+        ax.plot([t_read], [READ_OFF_DENSITY], "o", color="#b02418", ms=6)
 
     ax.set_xlim(0.0, 4.5)
     # The curve passes 1 km^-2 near 4.4 Gyr, so the top of the axis has to
@@ -111,10 +113,11 @@ def make_plot() -> Path:
     ax.text(4.21, 2.2e-5, "unconstrained", fontsize=9, color="0.35",
             rotation=90, ha="center", va="bottom")
 
-    ax.text(0.16, 1.9e-2,
-            f"measured $N(1) = 10^{{-2}}$ km$^{{-2}}$\n"
-            f"$\\rightarrow T \\approx {t_read:.2f}$ Gyr",
-            fontsize=9.5, color="#b02418", va="bottom")
+    if show_readoff:
+        ax.text(0.16, 1.9e-2,
+                f"measured $N(1) = 10^{{-2}}$ km$^{{-2}}$\n"
+                f"$\\rightarrow T \\approx {t_read:.2f}$ Gyr",
+                fontsize=9.5, color="#b02418", va="bottom")
 
     ax.legend(loc="lower right", frameon=True, fontsize=9)
 

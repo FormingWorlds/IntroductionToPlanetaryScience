@@ -1,0 +1,177 @@
+% minilecture04.tex: Tutorial 4 mini-lecture: Surfaces & Interiors
+% Planetary Systems, Kapteyn Institute, University of Groningen
+% A 5-10 minute recap, presented by the TAs at the start of Tutorial 4,
+% of the Lecture 7-8 concepts that Worksheet 4 trains.
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme and macros (shared with the lecture decks) ────────
+\usepackage{../../slides/common/beamerthemeIPS}
+\input{../../slides/common/macros}
+\graphicspath{{figures/}{../../slides/lecture08/figures/}{../../slides/lecture07/figures/}{../../slides/common/}}
+
+% ── Metadata ────────────────────────────────────────────────
+\title[T4 mini-lecture: Surfaces \& Interiors]{Tutorial 4 Mini-Lecture:\\Surfaces \& Interiors: Craters, Pressure, \& Seismology}
+\subtitle{The concepts behind Worksheet 4 \textbullet\ Lectures 7--8}
+\author{}
+\institute{Kapteyn Astronomical Institute\\University of Groningen}
+\date{2026}
+\titlebgcredit{Earth's interior cross-section. Credit: NASA/JPL-Caltech}
+\titlebgopacity{0.55}
+
+% ════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Roadmap ─────────────────────────────────────────────────
+\begin{frame}{What Worksheet 4 trains}
+  Five problems, all built on Lectures 7--8. The physics you need, per problem:
+  \vskip4pt\relax
+  \begin{enumerate}
+    \item \textbf{Impact energetics on Mars}: impactor mass and energy, gravity-regime crater scaling, the simple-to-complex transition.
+    \item \textbf{Reading ages from craters}: the crater chronology $N(T)$, its linear and exponential branches, the printed chronology figure.
+    \item \textbf{Moment of inertia and the inside of Mercury}: the two-layer model, layer densities, what $C/MR^2$ measures.
+    \item \textbf{Central pressure}: hydrostatic equilibrium, the uniform-density pressure profile, why it is a lower bound.
+    \item \textbf{Seismology}: shadow zones, what liquid layers do to S and P waves, the Adams-Williamson assumptions.
+  \end{enumerate}
+  \vskip2pt\relax
+  \keyresult{Every problem has the shape and level of one exam question. All parts are analytical; no computer is needed.}
+\end{frame}
+
+% ── P1 ──────────────────────────────────────────────────────
+\begin{frame}{Impact energetics on Mars}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    The gravity-regime scaling of Lecture 7:
+    \[
+      \boxed{D \approx \left(\frac{E_k}{\rho_t\,g}\right)^{1/4}}
+      \qquad D \propto L^{3/4}
+    \]
+    \begin{itemize}
+      \item $E_k = \tfrac{1}{2}mv^2$ with $m = \tfrac{4}{3}\pi r^3 \rho$: the whole chain runs in SI units.
+      \item The fourth root compresses hard: check how many orders of magnitude in energy correspond to one order of magnitude in diameter.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Simple or complex?}
+      The transition diameter scales as $D_t \propto 1/g$: stronger gravity collapses smaller cavities. Locate the martian transition from the lunar one, then classify your crater against it.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{One scaling law connects the impactor you cannot see to the crater you can measure.}
+\end{frame}
+
+% ── P2 ──────────────────────────────────────────────────────
+\begin{frame}{Reading ages from craters}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    The lunar chronology of Lecture 7:
+    \[
+      \boxed{N(\geq 1\,\mathrm{km}) = a\left(e^{\lambda T} - 1\right) + b\,T}
+    \]
+    \begin{itemize}
+      \item Young surfaces lie on the linear branch: steady flux, $N \approx bT$, age is a division.
+      \item Old surfaces lie on the exponential branch of the early bombardment: $N$ grows exponentially with $T$.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Iterate, do not invert}
+      The full $N(T)$ has no closed-form inverse. On the steep branch, neglect the small term, solve, then correct once with the term you dropped. On the shallow branch, check the dropped term is small instead.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{The same measurement error means different things on different branches: check which branch you are on before you trust a crater age.}
+\end{frame}
+
+% ── P3 ──────────────────────────────────────────────────────
+\begin{frame}{Moment of inertia and the inside of Mercury}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    The two-layer model of Lecture 8:
+    \[
+      \boxed{\frac{C}{MR^2} = \frac{2}{5}\,\frac{(f-1)\,x^5 + 1}{(f-1)\,x^3 + 1}}
+      \quad f = \frac{\rho_c}{\rho_m}
+    \]
+    \begin{itemize}
+      \item A uniform sphere gives $0.400$; every planet measures below it, and the deficit measures central condensation.
+      \item Mass balance fixes the layer densities: core mass in core volume, the rest in the mantle shell.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Small cores hide well}
+      A core of radius fraction $x$ fills only $x^3$ of the volume. Before judging any claim from $C/MR^2$, compute how far a plausible core can move the number at all.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{$C/MR^2$ is measured from spin and gravity without drilling a hole; it is the single most informative number about a planetary interior.}
+\end{frame}
+
+% ── P4 ──────────────────────────────────────────────────────
+\begin{frame}{Central pressure}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Hydrostatic equilibrium at uniform density:
+    \[
+      \boxed{P_c = \frac{2\pi}{3}\,G\bar\rho^2 R^2 = \frac{3GM^2}{8\pi R^4}}
+    \]
+    \begin{itemize}
+      \item Derive it once: integrate $\dd P/\dd r = -Gm(r)\rho/r^2$ from the centre to the surface.
+      \item The two forms must agree; use the second as a cross-check on the first.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{What changes if density is not uniform?}
+      Compare the enclosed-mass term at fixed $r$ for a centrally concentrated profile against a uniform one. State only which term grows, not the direction of the final inequality.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{The central pressure of a uniform body depends only on its mass and radius; the strong $M^2/R^4$ scaling separates the planets by orders of magnitude.}
+\end{frame}
+
+% ── P5 ──────────────────────────────────────────────────────
+\begin{frame}{Seismology: listening to interiors}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    The wave speeds of Lecture 8:
+    \[
+      \boxed{v_S = \sqrt{\frac{\mu}{\rho}}
+      \qquad
+      v_P = \sqrt{\frac{K + \tfrac{4}{3}\mu}{\rho}}}
+    \]
+    \begin{itemize}
+      \item A liquid has no shear modulus: $\mu = 0$ stops S waves entirely.
+      \item P waves pass through liquids, but a speed drop at a boundary bends the rays and opens a shadow ring.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Two shadows, two mechanisms}
+      One shadow comes from absorption, the other from refraction. For each observation, state which mechanism makes it and which interior property it therefore proves.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{What is missing from a seismogram tells as much as what arrives: shadow zones map liquid layers on any planet with a seismometer.}
+\end{frame}
+
+% ── Closer ──────────────────────────────────────────────────
+\begin{frame}{Working the worksheet}
+  \begin{itemize}
+    \item \textbf{Show your algebra.} The exam asks for the steps, not only the number.
+    \item Carry \textbf{4 significant figures} through intermediate steps; round at the end.
+    \item Use the \textbf{checkpoints} ("show that \ldots") to verify your work and to keep moving if a step resists.
+    \item Qualitative parts want \textbf{2 to 3 sentences} of physics, not an essay.
+    \item Problem 2 reads the chronology figure printed on the sheet; Problem 5 is entirely qualitative and trains the exam skill of arguing from mechanisms.
+  \end{itemize}
+  \vskip8pt\relax
+  \keyresult{Worksheet and full solutions: \texttt{ips.formingworlds.space/worksheets.html}. We discuss questions, not presentations of the solutions.}
+\end{frame}
+
+\end{document}

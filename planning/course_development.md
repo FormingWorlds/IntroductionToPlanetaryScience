@@ -515,10 +515,10 @@ The synodic-period and launch-window calculation is held back for a mock exam.
 - Crater counting: derive surface ages from crater size–frequency distributions
 - Impact energy: calculate energy released by impactors of different sizes and velocities
 - Moment of inertia: constrain internal structure from C/MR² values
-- Isostasy: crustal thickness variations and gravitational anomalies
-- Interior pressure: estimate central pressure of a terrestrial planet
+- Interior pressure: estimate central pressure of a terrestrial planet, and why a uniform-density estimate is a lower bound
+- Seismology: shadow zones and what liquid layers do to S and P waves
 
-**Format:** Problem set (analytical)
+**Format:** Problem set (analytical); 5 problems, 15 parts; one part reads the printed chronology figure
 
 ### Worksheet 5: Terrestrial Planets
 **Follows:** Lectures 9–10
@@ -615,10 +615,11 @@ Order:
 10. L04 slides
 11. Worksheet 02 (L03 + L04)
 12. L05 notes → L05 slides → L06 notes → L06 slides → Worksheet 03 (L05 + L06)
-13. L07 notes → L07 slides → L08 notes → L08 slides → Worksheet 04 (L07 + L08)
-14. L09 notes → L09 slides → L10 notes → L10 slides → Worksheet 05 (L09 + L10)
-15. L11 notes → L11 slides → L12 notes → L12 slides → Worksheet 06 (L11 + L12)
-16. L13 notes → L13 slides → L14 notes → L14 slides → Worksheet 07 (L13 + L14)
+13. L07 notes → L07 slides → L08 notes → L08 slides → Worksheet 04 (L07 + L08) (drafted 2026-08-20; 5 problems / 15 parts, 3-page sheet plus solutions)
+14. Mini-lecture 04 (Tutorial 4, L07 + L08) (drafted 2026-08-20; 8 slides)
+15. L09 notes → L09 slides → L10 notes → L10 slides → Worksheet 05 (L09 + L10)
+16. L11 notes → L11 slides → L12 notes → L12 slides → Worksheet 06 (L11 + L12)
+17. L13 notes → L13 slides → L14 notes → L14 slides → Worksheet 07 (L13 + L14)
 
 ### Materials to Create
 
