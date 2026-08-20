@@ -34,7 +34,7 @@ Students completing this course will be able to:
 |-----------|--------|--------|
 | Final exam | 100% | Written, cumulative (L1–14) |
 
-- A final grade of at least 5.5 is required to pass. The re-sit has the same format; if fewer than four students are enrolled, an oral exam is offered instead.
+- A final grade of higher than 5.5 is required to pass the course. The re-sit has the same format; if fewer than four students are enrolled, an oral exam is offered instead.
 - **Worksheets** (7 total) are **ungraded formative practice**. Students are strongly encouraged to complete them as preparation for the exam; solutions are discussed in tutorial sessions.
 - All lecture notes are custom-developed for this course (no required textbook).
 
@@ -561,7 +561,7 @@ The synodic-period and launch-window calculation is held back for a mock exam.
 ## 4. Exam Structure
 
 The course is assessed by a single final written exam (100% of the final grade).
-A final grade of at least 5.5 is required to pass.
+A final grade of higher than 5.5 is required to pass the course.
 The re-sit has the same format; if fewer than four students are enrolled, an oral exam is offered instead.
 
 ### Final Exam

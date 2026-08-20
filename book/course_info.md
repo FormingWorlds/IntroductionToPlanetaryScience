@@ -53,7 +53,7 @@ No prior planetary science is assumed.
 ## Assessment
 
 The course is assessed by a single final written exam, which determines the full final grade (100%).
-A final grade of at least 5.5 is required to pass.
+A final grade of higher than 5.5 is required to pass the course.
 The re-sit has the same format as the exam; if very few students are enrolled, an oral exam is offered instead.
 
 The exam lasts two hours and consists of six questions at the shape and level of the worksheet problems; each question spans two to three lectures, and the central formula a question needs is printed in the question.
