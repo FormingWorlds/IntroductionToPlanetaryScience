@@ -104,9 +104,11 @@ def make_plot() -> Path:
             style="italic")
 
     # Pause levels
+    # Labels at 400 K: the profile never enters 300-900 K below 110 km,
+    # and va="bottom" holds each box a fixed gap above its dashed line
     for z, label in [(11, "Tropopause"), (50, "Stratopause"), (85, "Mesopause")]:
         ax.axhline(z, color="0.5", linestyle="--", lw=0.6)
-        ax.text(150, z + 1.5, label, color="0.4", fontsize=9)
+        ax.text(400, z + 2, label, color="0.4", fontsize=9, va="bottom")
 
     ax.plot(T_lower, z_lower, color="#1f77b4", lw=2.5)
     ax.plot(T_thermo, z_thermo, color="#1f77b4", lw=2.5)

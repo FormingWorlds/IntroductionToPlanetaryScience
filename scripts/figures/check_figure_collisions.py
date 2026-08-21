@@ -47,10 +47,11 @@ SKIP = {
 INK_LUMINANCE = 180.0
 # Fraction of the padded text box that may contain foreign ink
 MAX_INK_FRACTION = 0.005
-# At or above this coverage the text sits on a solid dark background;
-# that is a deliberate contrast label ONLY if the text itself is light
+# At or above this coverage the text sits on a solid fill; that is a
+# deliberate contrast label only when the text colour clears the WCAG
+# large-text contrast ratio against the fill it sits on
 SOLID_FILL_FRACTION = 0.85
-LIGHT_TEXT_LUMINANCE = 180.0
+MIN_SOLID_FILL_CONTRAST = 3.0
 PAD_PX = 2
 
 # Not covered by this check: framed legends (the frame masks the ink
@@ -83,12 +84,22 @@ def _has_halo(t) -> bool:
     return face[3] > 0.8
 
 
-def _is_light(t) -> bool:
-    """True when the text colour itself reads as light ink."""
+def _wcag_luminance(rgb) -> float:
+    """WCAG 2.x relative luminance of an sRGB colour in [0, 1]."""
+    lin = [c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4
+           for c in rgb]
+    return 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2]
+
+
+def _solid_fill_contrast(t, patch: np.ndarray) -> float:
+    """WCAG contrast ratio between the text colour and the median
+    colour of the fill it sits on."""
     from matplotlib.colors import to_rgb
 
-    r, g, b = to_rgb(t.get_color())
-    return (0.2126 * r + 0.7152 * g + 0.0722 * b) * 255.0 > LIGHT_TEXT_LUMINANCE
+    lum_text = _wcag_luminance(to_rgb(t.get_color()))
+    lum_fill = _wcag_luminance(np.median(patch / 255.0, axis=(0, 1)))
+    hi, lo = max(lum_text, lum_fill), min(lum_text, lum_fill)
+    return (hi + 0.05) / (lo + 0.05)
 
 
 def _text_artists(fig):
@@ -162,8 +173,9 @@ def check_module(mod_name: str) -> list[str]:
         if patch.size == 0:
             continue
         ink = (_luminance(patch) < INK_LUMINANCE).mean()
-        if ink >= SOLID_FILL_FRACTION and _is_light(t):
-            # Light text on a solid dark background is contrast design
+        if (ink >= SOLID_FILL_FRACTION
+                and _solid_fill_contrast(t, patch) >= MIN_SOLID_FILL_CONTRAST):
+            # Readable text on a solid fill is contrast design
             continue
         if ink > MAX_INK_FRACTION:
             failures.append(

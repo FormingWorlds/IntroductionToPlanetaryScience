@@ -91,9 +91,10 @@ def make_plot() -> Path:
         elif "Mars today" in label:
             xytext = (lam * 0.45, fxuv * 1.6)
             ha = "right"
-        else:  # Earth
-            xytext = (lam * 1.4, fxuv * 1.7)
-            ha = "left"
+        else:  # Earth: centred below the marker, short of the
+            # lambda = 30 boundary line that a rightward label crosses
+            xytext = (lam, fxuv * 0.55)
+            ha = "center"
         ax.annotate(label, xy=(lam, fxuv), xytext=xytext, ha=ha,
                     fontsize=9, color=color,
                     arrowprops=dict(arrowstyle="-", color=color,

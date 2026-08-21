@@ -21,7 +21,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from scripts.figures._shared.style import apply_style, save_figure
+from scripts.figures._shared.style import (apply_style, save_figure,
+                                           text_color_on)
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -81,9 +82,9 @@ def make_plot() -> Path:
                label=LABELS[i], edgecolor="white", linewidth=0.4)
         for j, v in enumerate(vals):
             if v >= LABEL_VALUE_THRESHOLD:
-                txt_color = "white" if i in (0, 1, 3, 4) else "black"
                 ax.text(x[j], bottoms[j] + v / 2.0, f"{v:.1f}%",
-                        ha="center", va="center", color=txt_color, fontsize=9)
+                        ha="center", va="center",
+                        color=text_color_on(COLORS[i]), fontsize=9)
         bottoms += vals
 
     ax.set_xticks(x)

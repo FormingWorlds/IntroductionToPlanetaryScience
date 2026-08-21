@@ -87,7 +87,9 @@ def make_plot() -> Path:
     ax.set_ylabel("Altitude (km)")
     ax.set_title("Dry vs moist adiabatic lapse rates (Earth)")
     ax.grid(linestyle=":", alpha=0.3)
-    ax.legend(loc="upper left", frameon=False, fontsize=9)
+    # Lower left is the one empty quadrant: all three profiles stay
+    # above 239 K below 5 km, clear of the legend's footprint
+    ax.legend(loc="lower left", frameon=False, fontsize=9)
 
     fig.tight_layout()
     return save_figure(fig, OUT_AVIF, avif_quality=80)

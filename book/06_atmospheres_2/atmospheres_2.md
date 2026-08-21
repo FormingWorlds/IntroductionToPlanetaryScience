@@ -418,12 +418,12 @@ $$
 
 where $x$ and $y$ are the eastward and northward directions, respectively.
 
-```{figure} figures/geostrophic_wind.svg
+```{figure} figures/geostrophic_balance.avif
 :name: fig:geostrophic-balance
 :width: 480px
 :align: center
 
-Geostrophic balance between the horizontal pressure-gradient force ($-\nabla P / \rho$, blue arrow) and the Coriolis force ($-f \hat{k} \times \mathbf{v}_g$, red arrow), giving a wind $\mathbf{v}_g$ that blows parallel to the isobars rather than down the pressure gradient. In the Northern Hemisphere the balanced wind keeps low pressure to its left. This is the dominant balance for large-scale flow on Earth and the giant planets ({numref}`fig:jupiter-zonal-winds`) where the Rossby number is small. Credit: Wikimedia Commons, public domain.
+Geostrophic balance between the horizontal pressure-gradient force ($-\nabla P / \rho$, blue arrow) and the Coriolis force ($-f \hat{k} \times \mathbf{v}_g$, red arrow), giving a wind $\mathbf{v}_g$ that blows parallel to the isobars rather than down the pressure gradient. In the Northern Hemisphere the balanced wind keeps low pressure to its left. This is the dominant balance for large-scale flow on Earth and the giant planets ({numref}`fig:jupiter-zonal-winds`) where the Rossby number is small.
 ```
 
 ### Jet streams
@@ -585,7 +585,7 @@ The early Sun was **$\sim$30% less luminous** than today. Even 4 Gyr ago (when t
 :width: 700px
 :align: center
 
-Evolution of solar luminosity over the four geologic eons (Hadean, Archean, Proterozoic, Phanerozoic; coloured bands at top), normalised to the present-day value. The standard-solar-model curve from Bahcall et al. (2001) (solid line) and the analytic approximation by {cite:t}`Gough1981` (dashed line, Eq. {eq}`eq:solar-luminosity-evolution`) agree to better than $\sim 0.1\%$ over the past 4 Gyr. At $t = 0$ (left edge, $\sim 4.5$ Gyr ago) the Sun was about $30\%$ less luminous than today; the Archean climate problem of maintaining liquid surface water under this faint young Sun is the *faint young Sun paradox*. Reproduced from {cite:p}`Feulner2012`, Fig. 1.
+Evolution of solar luminosity over the four geologic eons (Hadean, Archean, Proterozoic, Phanerozoic; labelled bands at top), normalised to the present-day value. The standard-solar-model curve from Bahcall et al. (2001) (solid line) and the analytic approximation by {cite:t}`Gough1981` (dashed line, Eq. {eq}`eq:solar-luminosity-evolution`) agree to better than $\sim 0.1\%$ over the past 4 Gyr. At $t = 0$ (left edge, $\sim 4.5$ Gyr ago) the Sun was about $30\%$ less luminous than today; the Archean climate problem of maintaining liquid surface water under this faint young Sun is the *faint young Sun paradox*. Reproduced from {cite:p}`Feulner2012`, Fig. 1.
 ```
 
 ### The paradox

@@ -69,8 +69,9 @@ def panel_b(ax) -> None:
     ax.text(0.5, 0.92, "Space", color="white", fontsize=12,
             ha="center", weight="bold")
 
-    # Photons from tau<1 escape (red arrows above tau=1 line, stop at space band)
-    for x_ in (0.55, 0.70, 0.85):
+    # Photons from tau<1 escape (red arrows above tau=1 line, stop at
+    # space band); rightmost arrow stays left of the escape label box
+    for x_ in (0.46, 0.57, 0.68):
         ax.add_patch(FancyArrowPatch(
             (x_, 0.55), (x_, 0.78),
             arrowstyle="->", mutation_scale=12, color=RED, lw=1.4))
@@ -80,8 +81,9 @@ def panel_b(ax) -> None:
             bbox=dict(facecolor="white", edgecolor="none", pad=1.5,
                       alpha=0.85))
 
-    # Deep IR photons reabsorbed (red arrow stops at tau=1)
-    for x_ in (0.18, 0.32):
+    # Deep IR photons reabsorbed (red arrow stops at tau=1);
+    # both arrows stay right of the reabsorbed label box
+    for x_ in (0.24, 0.38):
         ax.add_patch(FancyArrowPatch(
             (x_, 0.18), (x_, 0.50),
             arrowstyle="->", mutation_scale=12, color=RED, lw=1.4))

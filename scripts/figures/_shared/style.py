@@ -61,6 +61,17 @@ def apply_style() -> None:
     })
 
 
+def text_color_on(fill) -> str:
+    """Pick black or white label text, whichever gives the higher WCAG
+    contrast ratio against the given fill colour."""
+    from matplotlib.colors import to_rgb
+
+    lin = [c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4
+           for c in to_rgb(fill)]
+    lum = 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2]
+    return "white" if 1.05 / (lum + 0.05) >= (lum + 0.05) / 0.05 else "black"
+
+
 def save_figure(
     fig: plt.Figure,
     avif_path: str | Path,

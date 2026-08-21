@@ -49,8 +49,10 @@ def make_plot() -> Path:
 
     # Cloud deck shading
     ax.axhspan(48, 70, color="#f0e3a8", alpha=0.5, zorder=0)
-    ax.text(170, 59, "Cloud deck\n(48 to 70 km)", color="#9b7b18",
-            fontsize=10, va="center", style="italic")
+    # Right edge of the band: the profile stays below 360 K here,
+    # so the label sits in clear space at 48-70 km
+    ax.text(780, 59, "Cloud deck\n(48 to 70 km)", color="#9b7b18",
+            fontsize=10, ha="right", va="center", style="italic")
 
     ax.plot(T, z, color="#e07a3a", lw=2.5)
 

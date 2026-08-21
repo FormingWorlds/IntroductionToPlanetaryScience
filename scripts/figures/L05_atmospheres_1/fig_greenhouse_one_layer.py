@@ -35,7 +35,7 @@ def make_plot() -> Path:
     # Background bands
     ax.add_patch(Rectangle((0, 0.85), 1, 0.15, color=SPACE))
     ax.add_patch(Rectangle((0, 0.15), 1, 0.70, color=SKY, alpha=0.6))
-    ax.add_patch(Rectangle((0, 0.0), 1, 0.15, color=GROUND, alpha=0.7))
+    ax.add_patch(Rectangle((0, 0.0), 1, 0.15, color=GROUND, alpha=0.85))
 
     # Top of atmosphere line and label
     ax.plot([0, 1], [0.85, 0.85], "k-", lw=0.8)
@@ -79,10 +79,11 @@ def make_plot() -> Path:
 
     # 3) Atmosphere transmits part of surface IR straight to space
     # (red arrow rising through layer to space at the right side)
-    ax.add_patch(FancyArrowPatch((0.62, 0.16), (0.62, 0.95),
+    # At x=0.68 the arrow clears the layer label, whose box ends near 0.62
+    ax.add_patch(FancyArrowPatch((0.68, 0.16), (0.68, 0.95),
                                  arrowstyle="->", mutation_scale=14,
                                  color=RED, lw=1.4, alpha=0.6))
-    ax.text(0.55, 0.70, r"$(1-\varepsilon)\,\sigma T_s^4$",
+    ax.text(0.665, 0.70, r"$(1-\varepsilon)\,\sigma T_s^4$",
             color=RED, fontsize=10, ha="right", va="center",
             bbox=dict(facecolor="white", edgecolor="none", pad=1.5))
 

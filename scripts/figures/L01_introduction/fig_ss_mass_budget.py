@@ -24,7 +24,8 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from scripts.figures._shared.style import apply_style, save_figure
+from scripts.figures._shared.style import (apply_style, save_figure,
+                                           text_color_on)
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -132,10 +133,10 @@ def make_plot() -> Path:
         startangle=90, counterclock=False,
         wedgeprops={"edgecolor": "white", "linewidth": 1.0},
     )
-    # Place labels: large wedges (>=10%) get the label inside the wedge
-    # in white-on-colour. Small wedges get a colour-coded label just
-    # outside their own wedge, on the right side of the pie. No leader
-    # lines.
+    # Place labels: large wedges (>=10%) get the label inside the wedge,
+    # black or white by contrast. Small wedges get a colour-coded label
+    # just outside their own wedge, on the right side of the pie. No
+    # leader lines.
     LARGE_PCT_INSIDE = 10.0
     for wedge, name, pct, colour in zip(wedges, right_names, right_sizes,
                                         right_colors):
@@ -145,7 +146,7 @@ def make_plot() -> Path:
             axes[1].text(0.62 * x_pie, 0.62 * y_pie,
                          f"{name}\n{pct:.1f}%",
                          ha="center", va="center", fontsize=11,
-                         color="white", weight="bold")
+                         color=text_color_on(colour), weight="bold")
         else:
             label = (f"{name}  {pct:.2f}%" if name == "Terrestrials"
                      else f"{name}  {pct:.1f}%")

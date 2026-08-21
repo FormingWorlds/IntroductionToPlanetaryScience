@@ -36,7 +36,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Circle, Wedge
 
-from scripts.figures._shared.style import apply_style, save_figure
+from scripts.figures._shared.style import (apply_style, save_figure,
+                                           text_color_on)
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -103,7 +104,8 @@ def draw_earth(ax: plt.Axes, label_layers: bool) -> None:
         ax.annotate("outer core\n(liquid)", xy=(0.0, 0.31), fontsize=9,
                     ha="center", color="#1a4a6e", zorder=6)
         ax.annotate("inner core\n(solid)", xy=(0.0, 0.0), fontsize=7,
-                    ha="center", va="center", color="white", zorder=6)
+                    ha="center", va="center", color=text_color_on(C_INNER),
+                    zorder=6)
 
 
 def shadow_wedge(ax: plt.Axes, th1: float, th2: float, color: str) -> None:
