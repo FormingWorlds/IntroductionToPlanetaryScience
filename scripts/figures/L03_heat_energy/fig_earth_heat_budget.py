@@ -17,8 +17,9 @@ import json
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+import numpy as np
 
-from scripts.figures._shared.style import apply_style, save_figure
+from scripts.figures._shared.style import apply_style, save_figure, text_color_on
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -63,14 +64,14 @@ def make_plot() -> Path:
     )
 
     # Inside-wedge values for the larger components
-    for w, val in zip(wedges, sizes):
+    for w, val, colour in zip(wedges, sizes, colors):
         if val >= 5:
             ang = (w.theta1 + w.theta2) / 2
-            import numpy as np
             x = 0.6 * np.cos(np.radians(ang))
             y = 0.6 * np.sin(np.radians(ang))
             ax.text(x, y, f"{val:.0f} TW", ha="center", va="center",
-                    fontsize=11, color="white", fontweight="bold")
+                    fontsize=11, color=text_color_on(colour),
+                    fontweight="bold")
 
     ax.set_title("Earth's surface heat-flux budget (~47 TW)", fontsize=12, pad=18)
     fig.tight_layout()

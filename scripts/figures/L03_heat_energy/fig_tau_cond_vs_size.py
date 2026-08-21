@@ -55,7 +55,7 @@ def make_plot() -> Path:
                label="Age of the universe (13.8 Gyr)")
 
     offsets = {
-        "Chondrule": (25, 5),          # a bit higher
+        "Chondrule": (33, 5),          # right of the curve's rise
         "Asteroid (1 km)": (25, -5),   # as well
         "Moon": (-45, 5),              # to the left
         "Mars": (15, -5),              # right bottom, but higher to clear lines
@@ -73,7 +73,7 @@ def make_plot() -> Path:
             name, (R, y),
             xytext=offsets[name], textcoords="offset points",
             fontsize=9, ha=ha, va=va,
-            arrowprops=dict(arrowstyle="-", color="0.4", lw=0.6, shrinkA=0, shrinkB=4)
+            arrowprops=dict(arrowstyle="-", color="0.4", lw=0.6, shrinkA=4, shrinkB=4)
         )
 
     ax.set_xscale("log")

@@ -15,7 +15,33 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check-figures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install figure dependencies
+        # matplotlib is pinned: text extents vary between releases and
+        # the collision thresholds are calibrated against this version
+        run: pip install "matplotlib==3.11.1" numpy scipy pandas pillow pymupdf
+
+      - name: Cache downloaded source images
+        uses: actions/cache@v4
+        with:
+          path: output_files/source_images
+          key: source-images-v1
+
+      - name: Check figure collisions
+        run: python scripts/figures/check_figure_collisions.py
+
   build:
+    needs: check-figures
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

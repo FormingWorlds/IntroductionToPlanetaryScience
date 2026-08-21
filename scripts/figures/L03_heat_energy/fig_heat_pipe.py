@@ -50,11 +50,16 @@ def make_plot() -> Path:
     ax.plot([10, 10], [0, Y_SURF], color=C_LINE, lw=1.0, zorder=4)
     ax.plot([0, 10], [0, 0], color=C_LINE, lw=1.5, zorder=4)
 
-    # buried older flows: stratified layers that sag under new deposits
-    for y0 in np.linspace(2.9, 6.7, 6):
-        x = np.linspace(0.15, 9.85, 200)
+    # buried older flows: stratified layers that sag under new deposits;
+    # the layer behind the melt-pipes label breaks so the label sits on
+    # clear ground
+    for i, y0 in enumerate(np.linspace(2.9, 6.7, 6)):
+        x = np.linspace(0.15, 9.85, 400)
         sag = 0.22 * np.exp(-((x - 5.0) ** 2) / 4.5)
-        ax.plot(x, y0 - sag * (Y_SURF - y0), color="#8fa1ad", lw=0.8, zorder=1)
+        y = y0 - sag * (Y_SURF - y0)
+        if i == 4:
+            y[(x > 3.40) & (x < 5.02)] = np.nan
+        ax.plot(x, y, color="#8fa1ad", lw=0.8, zorder=1)
 
     # two volcanic conduits feeding surface eruptions
     for xc in (3.0, 7.0):
@@ -97,10 +102,10 @@ def make_plot() -> Path:
     ax.text(3.55, 5.05, "melt ascends\nin narrow pipes", ha="left",
             va="bottom", fontsize=9, color=C_MAGMA, zorder=5,
             bbox=dict(fc="white", ec="none", alpha=0.7, pad=1.0))
-    ax.text(4.5, 4.9, "sill", ha="center", va="top", fontsize=8.5,
+    ax.text(4.45, 4.15, "sill", ha="left", va="center", fontsize=8.5,
             color=C_MAGMA, zorder=5)
     ax.text(9.75, 1.1, "partially molten interior", ha="right", va="center",
-            fontsize=9.5, color="#8c2f1b", zorder=5)
+            fontsize=9.5, color="#5c1e0c", zorder=5)
 
     fig.tight_layout()
     return save_figure(fig, OUT_AVIF, avif_quality=80)

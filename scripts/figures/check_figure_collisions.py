@@ -236,6 +236,11 @@ def main() -> int:
                 failures += check_module(mod_name)
             except Exception as exc:  # a build failure is a failure
                 failures.append(f"{mod_name}: build error: {exc}")
+    if n_figs == 0:
+        # An empty sweep means the layout moved or the arguments are wrong;
+        # exiting 0 here would let CI pass without checking anything.
+        print("ERROR: no figure scripts matched")
+        return 1
     print(f"checked {n_figs} figure scripts")
     for f in failures:
         print(f"FAIL {f}")

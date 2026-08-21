@@ -115,7 +115,7 @@ def make_plot() -> Path:
              fontsize=8, color="#7a6a58")
     axr.text(4.45, 3.4, "narrow conduit,\n$\\Delta T \\approx$ 200 to 300 K",
              ha="left", va="center", fontsize=9, color=C_PLUME)
-    axr.text(5.0, 0.55, "rooted in the deep mantle", ha="center", va="bottom",
+    axr.text(6.5, 0.55, "rooted in the deep mantle", ha="center", va="bottom",
              fontsize=9, color="#7a6134",
              bbox=dict(fc="white", ec="none", alpha=0.6, pad=1.0))
 

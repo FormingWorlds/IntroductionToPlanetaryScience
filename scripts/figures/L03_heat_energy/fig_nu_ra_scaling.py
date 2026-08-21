@@ -50,14 +50,15 @@ def make_plot() -> Path:
     # Asymptotic slope label
     ax.annotate(r"$\mathrm{Nu} \propto \mathrm{Ra}^{1/3}$",
                 xy=(3e9, (3e9 / RA_C) ** (1.0 / 3.0)),
-                xytext=(0, 15), textcoords="offset points",
-                fontsize=11, color="#1f77b4", ha="center")
-    
-    # Conduction label
-    ax.annotate(r"$\mathrm{Nu} = 1$ (conduction)",
-                xy=(3e2, 1.0),
-                xytext=(0, 15), textcoords="offset points",
-                fontsize=10, color="#1f77b4", ha="center")
+                xytext=(-8, 16), textcoords="offset points",
+                fontsize=11, color="#1f77b4", ha="right")
+
+    # Conduction label: two lines so the box fits between the left
+    # spine and the dashed Ra_c line
+    ax.annotate("$\\mathrm{Nu} = 1$\n(conduction)",
+                xy=(4.1e2, 1.0),
+                xytext=(0, 10), textcoords="offset points",
+                fontsize=9, color="#1f77b4", ha="center", va="bottom")
 
     ax.set_xscale("log")
     ax.set_yscale("log")

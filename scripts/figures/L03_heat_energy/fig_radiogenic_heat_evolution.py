@@ -66,19 +66,19 @@ SHORT_LIVED = [
 LABELS = {
     r"$^{238}$U": (0.014, 0.225),
     r"$^{232}$Th": (0.014, 0.166),
-    r"$^{40}$K": (0.924, 0.121),
+    r"$^{40}$K": (0.914, 0.121),
     r"$^{235}$U": (0.943, 0.062),
     "long-lived total": (0.789, 0.406),
-    r"$^{26}$Al": (0.396, 0.506),
-    r"$^{60}$Fe": (0.518, 0.103),
+    r"$^{26}$Al": (0.412, 0.506),
+    r"$^{60}$Fe": (0.540, 0.103),
 }
 
 # Leader lines for the labels that sit away from their curve, drawn from the
 # label's anchor-facing edge to the curve (axes-fraction coordinates).
 LEADERS = [
-    ((0.040, 0.245), (0.004, 0.300)),   # 238U label -> curve start
-    ((0.040, 0.186), (0.004, 0.282)),   # 232Th label -> curve start
-    ((0.952, 0.145), (0.996, 0.220)),   # 40K label -> curve end
+    ((0.010, 0.262), (0.004, 0.300)),   # 238U label -> curve start
+    ((0.010, 0.203), (0.004, 0.282)),   # 232Th label -> curve start
+    ((0.952, 0.150), (0.996, 0.220)),   # 40K label -> curve end
 ]
 
 

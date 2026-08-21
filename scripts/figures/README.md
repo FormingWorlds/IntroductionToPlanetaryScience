@@ -64,6 +64,11 @@ convert it to AVIF via ImageMagick, (d) place the AVIF in the right
 `book/<lecture>/figures/` directory, and (e) print the data and figure
 paths it touched.
 
+Use matplotlib 3.11.1 to regenerate figures: text extents shift between
+matplotlib releases, and the CI collision check
+(`scripts/figures/check_figure_collisions.py`, run by the `check-figures`
+job in `.github/workflows/book.yml`) pins that version.
+
 ## Conventions
 
 ### Script docstring
@@ -137,7 +142,7 @@ The shared `save_figure()` helper writes the PNG at 200 dpi and then
 converts to AVIF at quality 80 for text-heavy plots, 65 for
 photographic content. Always size the matplotlib figure so that the
 saved PNG is at least as wide in pixels as the `:width:` value in the
-markdown directive — otherwise the browser will upscale and the
+markdown directive; otherwise the browser will upscale and the
 figure will look soft. The `output_files/figure_triage.py` helper
 flags any AVIF that violates this.
 

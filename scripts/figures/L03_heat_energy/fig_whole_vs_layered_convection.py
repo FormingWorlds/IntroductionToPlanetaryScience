@@ -91,7 +91,7 @@ def make_plot() -> Path:
     axl.text(5.0, Y_660 - 0.35, "impermeable boundary: no mass exchange",
              ha="center", va="top", fontsize=9, color=C_LINE, zorder=5,
              bbox=dict(fc="white", ec="none", alpha=0.75, pad=1.5))
-    axl.text(5.0, 0.65, "separate lower-mantle cells", ha="center",
+    axl.text(5.0, 0.45, "separate lower-mantle cells", ha="center",
              va="center", fontsize=9, color="#6b4f2a", zorder=5,
              bbox=dict(fc="white", ec="none", alpha=0.6, pad=1.0))
 
@@ -99,7 +99,7 @@ def make_plot() -> Path:
     _frame(axr, "Whole-mantle convection")
     axr.plot([0, 10], [Y_660, Y_660], color=C_LINE, lw=1.0,
              linestyle=(0, (2, 4)), zorder=3)
-    axr.text(0.25, Y_660 + 0.25, "partial barrier only", ha="left",
+    axr.text(3.55, Y_660 + 0.25, "partial barrier\nonly", ha="center",
              va="bottom", fontsize=8.5, color="#555555", zorder=5)
     # one mantle-depth circulation between the slab and the plume
     _cell(axr, 5.9, 5.0, 1.4, 3.9, sense=1)
@@ -118,9 +118,8 @@ def make_plot() -> Path:
     axr.add_patch(Circle((8.6, 8.8), 0.55, fc=C_PLUME, ec="none", zorder=4))
     axr.add_patch(Polygon([[8.2, Y_SURF], [9.0, Y_SURF], [8.6, 10.35]],
                           closed=True, fc="#7f4f24", ec="none", zorder=5))
-    axr.text(9.75, 4.4, "plume rises\nfrom the CMB", ha="right", va="center",
-             fontsize=9, color=C_PLUME, zorder=5,
-             bbox=dict(fc=C_MANTLE_LO, ec="none", alpha=0.8, pad=1.0))
+    axr.text(7.2, 0.64, "plume rises\nfrom the CMB", ha="center", va="center",
+             fontsize=9, color=C_PLUME, zorder=5)
 
     fig.tight_layout()
     return save_figure(fig, OUT_AVIF, avif_quality=80)

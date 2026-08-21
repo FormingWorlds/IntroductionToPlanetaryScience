@@ -68,15 +68,19 @@ def draw_panel(ax, mode: str) -> None:
         # Bulge (large): elongate along Jupiter-moon axis
         ax.add_patch(Ellipse((r_peri, 0), 2 * R_moon * 1.55, 2 * R_moon * 0.95,
                              color=MOON, ec="black", lw=0.6, zorder=3))
-        ax.text(r_peri, -R_moon - 0.25, "Io", fontsize=11, ha="center",
-                va="top", weight="bold")
+        # Label right of the moon: outside the orbit, clear of the
+        # dashed ellipse that passes vertically through periapsis
+        ax.text(r_peri + R_moon * 1.55 + 0.12, 0, "Io", fontsize=11,
+                ha="left", va="center", weight="bold")
         # Distance arrow
         ax.add_patch(FancyArrowPatch((R_jup + 0.05, -R_jup - 1.0),
                                      (r_peri - R_moon * 1.55, -R_jup - 1.0),
                                      arrowstyle="<->", mutation_scale=12,
                                      color="black", lw=1.0))
-        ax.text((R_jup + r_peri) / 2, -R_jup - 1.35,
-                r"$r=a(1-e)$", fontsize=11, ha="center", va="top")
+        # Left-aligned past x = 1.95: the orbit's lower branch crosses
+        # this depth band at x < 1.85
+        ax.text(1.95, -R_jup - 1.35,
+                r"$r=a(1-e)$", fontsize=11, ha="left", va="top")
 
     else:
         ax.set_title("Apoapsis: small tidal bulge", fontsize=12)
@@ -84,8 +88,10 @@ def draw_panel(ax, mode: str) -> None:
         # Moon at apoapsis (smaller bulge)
         ax.add_patch(Ellipse((r_apo, 0), 2 * R_moon * 1.10, 2 * R_moon * 0.92,
                              color=MOON, ec="black", lw=0.6, zorder=3))
-        ax.text(r_apo, -R_moon - 0.25, "Io", fontsize=11, ha="center",
-                va="top", weight="bold")
+        # Label left of the moon, inside the orbit: the dashed ellipse
+        # passes vertically through apoapsis and clears |y| < 1.8 here
+        ax.text(r_apo - R_moon * 1.10 - 0.12, 0, "Io", fontsize=11,
+                ha="right", va="center", weight="bold")
         ax.add_patch(FancyArrowPatch((R_jup + 0.05, -R_jup - 1.0),
                                      (r_apo - R_moon * 1.10, -R_jup - 1.0),
                                      arrowstyle="<->", mutation_scale=12,
