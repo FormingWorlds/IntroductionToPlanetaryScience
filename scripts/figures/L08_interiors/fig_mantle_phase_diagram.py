@@ -65,13 +65,19 @@ def make_plot() -> Path:
     ax.plot(GEOTHERM_T, GEOTHERM_P, color="#d62728", lw=2.0, linestyle="--",
             label="Earth mantle geotherm")
 
-    # Phase region labels
-    ax.text(1100, 4, r"Olivine ($\alpha$-Mg$_2$SiO$_4$)", fontsize=10)
-    ax.text(1100, 16, r"Wadsleyite ($\beta$)", fontsize=10)
+    # Phase region labels, each placed clear of the boundary lines that
+    # bound its own field
+    ax.text(1620, 4, r"Olivine ($\alpha$-Mg$_2$SiO$_4$)", fontsize=10)
+    # The wadsleyite field is too thin for an in-field label, so the
+    # label sits in the olivine field with a leader arrow into the strip.
+    ax.annotate(r"Wadsleyite ($\beta$)", xy=(2700, 18.8), xytext=(3100, 6.5),
+                fontsize=10, ha="center", va="center",
+                arrowprops=dict(arrowstyle="->", color="0.3", lw=0.8,
+                                shrinkA=2))
     ax.text(1100, 21, r"Ringwoodite ($\gamma$)", fontsize=10)
-    ax.text(1500, 60, "Bridgmanite + Ferropericlase\n(perovskite-structured)",
+    ax.text(1150, 60, "Bridgmanite + Ferropericlase\n(perovskite-structured)",
             fontsize=10, ha="left")
-    ax.text(3500, 138, "Post-perovskite (PPv)", fontsize=10, ha="center")
+    ax.text(3150, 138, "Post-perovskite (PPv)", fontsize=10, ha="center")
 
     ax.invert_yaxis()
     ax.set_xlim(1000, 4500)

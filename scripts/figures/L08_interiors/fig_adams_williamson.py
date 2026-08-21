@@ -98,9 +98,13 @@ def make_plot() -> Path:
     ax_a.set_xlabel(r"Density $\rho$ (kg m$^{-3}$)")
     ax_a.set_ylabel("Depth (km)")
     ax_a.set_title("(a) Lower mantle: approximately uniform composition")
-    ax_a.legend(loc="upper left", frameon=True, fontsize=10)
+    # Lower left: density increases with depth, so the deep low-density
+    # corner holds no curve and no text box.
+    ax_a.legend(loc="lower left", frameon=True, fontsize=10)
     ax_a.grid(linestyle=":", alpha=0.3)
-    ax_a.text(4350, 1000, "AW reproduces PREM well\n"
+    # Below-left of the curve: density rises with depth, so this
+    # triangle holds no curve, and the box clears the axis tick labels.
+    ax_a.text(4550, 2150, "AW reproduces PREM well\n"
               "(compositional gradient small)",
               fontsize=9, color="0.3",
               bbox=dict(facecolor="#f6f4e6", edgecolor="0.7", pad=4))
@@ -152,7 +156,10 @@ def make_plot() -> Path:
     ax_b.invert_yaxis()
     ax_b.set_xlabel(r"Density $\rho$ (kg m$^{-3}$)")
     ax_b.set_title("(b) Across the core-mantle boundary")
-    ax_b.legend(loc="upper left", frameon=True, fontsize=10)
+    # Upper right: the mantle-side curves sit at low density and the
+    # core-side curves below the CMB line, so the shallow high-density
+    # corner stays clear.
+    ax_b.legend(loc="upper right", frameon=True, fontsize=10)
     ax_b.grid(linestyle=":", alpha=0.3)
     ax_b.set_xlim(4500, 12500)
     ax_b.annotate("Compositional jump\n(silicate -> Fe-alloy)",

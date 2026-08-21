@@ -1039,30 +1039,6 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
          x="93.511833"
          y="365.979"
-         id="text4736-de"
-         systemLanguage="de"><tspan
-           sodipodi:role="line"
-           id="tspan4734-de"
-           x="93.511833"
-           y="365.979"
-           style="stroke-width:0.09493653">Wellenlänge</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="93.511833"
-         y="365.979"
-         id="text4736-fr"
-         systemLanguage="fr"><tspan
-           sodipodi:role="line"
-           id="tspan4734-fr"
-           x="93.511833"
-           y="365.979"
-           style="stroke-width:0.09493653">Longueur d'onde</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="93.511833"
-         y="365.979"
          id="text4736"><tspan
            sodipodi:role="line"
            id="tspan4734"
@@ -1074,30 +1050,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="switch203"
        transform="translate(-177.14292,6.7580363)">
-      <text
-         id="text4740-de"
-         y="233.51231"
-         x="202.16443"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="de"><tspan
-           y="233.51231"
-           x="202.16443"
-           sodipodi:role="line"
-           id="tspan4790-de"
-           style="text-align:start;text-anchor:start;stroke-width:0.09493653">Kohlenstoffdioxid</tspan></text>
-      <text
-         id="text4740-fr"
-         y="233.51231"
-         x="202.16443"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="fr"><tspan
-           y="233.51231"
-           x="202.16443"
-           sodipodi:role="line"
-           id="tspan4790-fr"
-           style="text-align:start;text-anchor:start;stroke-width:0.09493653">Dioxyde de carbone</tspan></text>
       <text
          id="text4740"
          y="233.51231"
@@ -1119,30 +1071,6 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
          x="202.16443"
          y="243.67953"
-         id="text4744-de"
-         systemLanguage="de"><tspan
-           sodipodi:role="line"
-           id="tspan4742-de"
-           x="202.16443"
-           y="243.67953"
-           style="text-align:start;text-anchor:start;stroke-width:0.09493653">Sauerstoff und Ozon</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="202.16443"
-         y="243.67953"
-         id="text4744-fr"
-         systemLanguage="fr"><tspan
-           sodipodi:role="line"
-           id="tspan4742-fr"
-           x="202.16443"
-           y="243.67953"
-           style="text-align:start;text-anchor:start;stroke-width:0.09493653">Oxygène et ozone</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="202.16443"
-         y="243.67953"
          id="text4744"><tspan
            sodipodi:role="line"
            id="tspan4742"
@@ -1154,30 +1082,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="switch219"
        transform="translate(-177.43575,8.3885894)">
-      <text
-         id="text4748-de"
-         y="254.96509"
-         x="202.16443"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="de"><tspan
-           y="254.96509"
-           x="202.16443"
-           id="tspan4746-de"
-           sodipodi:role="line"
-           style="text-align:start;text-anchor:start;stroke-width:0.09493653">Methan</tspan></text>
-      <text
-         id="text4748-fr"
-         y="254.96509"
-         x="202.16443"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="fr"><tspan
-           y="254.96509"
-           x="202.16443"
-           id="tspan4746-fr"
-           sodipodi:role="line"
-           style="text-align:start;text-anchor:start;stroke-width:0.09493653">Méthane</tspan></text>
       <text
          id="text4748"
          y="254.96509"
@@ -1199,30 +1103,6 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
          x="202.1102"
          y="275.8526"
-         id="text4752-de"
-         systemLanguage="de"><tspan
-           sodipodi:role="line"
-           id="tspan4750-de"
-           x="202.1102"
-           y="275.8526"
-           style="text-align:start;text-anchor:start;stroke-width:0.09493653">Rayleigh-Streuung</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="202.1102"
-         y="275.8526"
-         id="text4752-fr"
-         systemLanguage="fr"><tspan
-           sodipodi:role="line"
-           id="tspan4750-fr"
-           x="202.1102"
-           y="275.8526"
-           style="text-align:start;text-anchor:start;stroke-width:0.09493653">Diffusion de Rayleigh</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="202.1102"
-         y="275.8526"
          id="text4752"><tspan
            sodipodi:role="line"
            id="tspan4750"
@@ -1234,30 +1114,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="switch235"
        transform="translate(-177.4737,9.7671083)">
-      <text
-         id="text4717-de"
-         y="265.12823"
-         x="202.20238"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="de"><tspan
-           y="265.12823"
-           x="202.20238"
-           id="tspan4715-de"
-           sodipodi:role="line"
-           style="text-align:start;text-anchor:start;stroke-width:0.09493653">Stickoxide</tspan></text>
-      <text
-         id="text4717-fr"
-         y="265.12823"
-         x="202.20238"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="fr"><tspan
-           y="265.12823"
-           x="202.20238"
-           id="tspan4715-fr"
-           sodipodi:role="line"
-           style="text-align:start;text-anchor:start;stroke-width:0.09493653">Oxydes d'azote</tspan></text>
       <text
          id="text4717"
          y="265.12823"
@@ -1331,18 +1187,6 @@
        id="switch249"
        transform="translate(-0.26485162,-114.12691)">
       <text
-         id="text4774-fr"
-         y="287.16617"
-         x="203.46036"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="fr"><tspan
-           y="287.16617"
-           x="203.46036"
-           id="tspan4772-fr"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653">70</tspan></text>
-      <text
          id="text4774"
          y="287.16617"
          x="203.46036"
@@ -1363,18 +1207,6 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
          x="143.29776"
          y="287.2485"
-         id="text4778-fr"
-         systemLanguage="fr"><tspan
-           sodipodi:role="line"
-           id="tspan4776-fr"
-           x="143.29776"
-           y="287.2485"
-           style="stroke-width:0.09493653">10</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="143.29776"
-         y="287.2485"
          id="text4778"><tspan
            sodipodi:role="line"
            id="tspan4776"
@@ -1386,18 +1218,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="switch261"
        transform="translate(-0.26485162,-114.29537)">
-      <text
-         id="text4782-fr"
-         y="287.2485"
-         x="72.322052"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="fr"><tspan
-           y="287.2485"
-           x="72.322052"
-           id="tspan4780-fr"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653">1</tspan></text>
       <text
          id="text4782"
          y="287.2485"
@@ -1419,30 +1239,6 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
          x="22.70425"
          y="287.19415"
-         id="text4786-de"
-         systemLanguage="de"><tspan
-           sodipodi:role="line"
-           id="tspan4784-de"
-           x="22.70425"
-           y="287.19415"
-           style="stroke-width:0.09493653">0,2 μm</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="22.70425"
-         y="287.19415"
-         id="text4786-fr"
-         systemLanguage="fr"><tspan
-           sodipodi:role="line"
-           id="tspan4784-fr"
-           x="22.70425"
-           y="287.19415"
-           style="stroke-width:0.09493653">0,2 μm</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="22.70425"
-         y="287.19415"
          id="text4786"><tspan
            sodipodi:role="line"
            id="tspan4784"
@@ -1454,30 +1250,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="switch277"
        transform="translate(-176.87932,6.3510723)">
-      <text
-         id="text4824-de"
-         y="222.14679"
-         x="201.98007"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="de"><tspan
-           y="222.14679"
-           x="201.98007"
-           id="tspan4822-de"
-           sodipodi:role="line"
-           style="text-align:start;text-anchor:start;stroke-width:0.09493653">Wasserdampf</tspan></text>
-      <text
-         id="text4824-fr"
-         y="222.14679"
-         x="201.98007"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="fr"><tspan
-           y="222.14679"
-           x="201.98007"
-           id="tspan4822-fr"
-           sodipodi:role="line"
-           style="text-align:start;text-anchor:start;stroke-width:0.09493653">Vapeur d'eau</tspan></text>
       <text
          id="text4824"
          y="222.14679"
@@ -1494,50 +1266,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="switch288"
        transform="translate(0,-2.1166667)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="181.52914"
-         y="189.82797"
-         id="text4828-de"
-         systemLanguage="de"><tspan
-           sodipodi:role="line"
-           x="178.61578"
-           y="191.15222"
-           id="tspan4832-de"
-           style="fill:#ffffff;stroke-width:0.09493653">Gesamtabsorption</tspan><tspan
-           sodipodi:role="line"
-           x="178.61578"
-           y="199.08972"
-           style="fill:#ffffff;stroke-width:0.09493653"
-           id="tspan317-de">und</tspan><tspan
-           sodipodi:role="line"
-           x="178.61578"
-           y="207.02722"
-           style="fill:#ffffff;stroke-width:0.09493653"
-           id="tspan1379-de">-streuung</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="181.52914"
-         y="189.82797"
-         id="text4828-fr"
-         systemLanguage="fr"><tspan
-           sodipodi:role="line"
-           x="178.61578"
-           y="191.15222"
-           id="tspan4832-fr"
-           style="fill:#ffffff;stroke-width:0.09493653">Absorption</tspan><tspan
-           sodipodi:role="line"
-           x="178.61578"
-           y="199.08972"
-           style="fill:#ffffff;stroke-width:0.09493653"
-           id="tspan317-fr">totale,</tspan><tspan
-           sodipodi:role="line"
-           x="178.61578"
-           y="207.02722"
-           style="fill:#ffffff;stroke-width:0.09493653"
-           id="tspan1379-fr">et diffusion</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
@@ -1569,19 +1297,6 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
          x="-109.32488"
          y="100.13816"
-         id="text4836-fr"
-         transform="rotate(-61.599699)"
-         systemLanguage="fr"><tspan
-           sodipodi:role="line"
-           id="tspan4834-fr"
-           x="-109.32488"
-           y="100.13816"
-           style="stroke-width:0.09493653">5 525 K</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="-109.32488"
-         y="100.13816"
          id="text4836"
          transform="rotate(-61.599699)"><tspan
            sodipodi:role="line"
@@ -1594,40 +1309,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="switch305"
        transform="translate(-2.1166667,5.8208336)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="96.798523"
-         y="127.89326"
-         id="text5388-de"
-         systemLanguage="de"><tspan
-           style="stroke-width:0.09493653"
-           sodipodi:role="line"
-           x="96.798523"
-           y="127.89326"
-           id="tspan5386-de">reines Schwarz-</tspan><tspan
-           style="stroke-width:0.09493653"
-           sodipodi:role="line"
-           x="96.798523"
-           y="135.83075"
-           id="tspan335-de">körperspektrum</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="96.798523"
-         y="127.89326"
-         id="text5388-fr"
-         systemLanguage="fr"><tspan
-           style="stroke-width:0.09493653"
-           sodipodi:role="line"
-           x="98.038757"
-           y="127.89326"
-           id="tspan5386-fr">Spectre d'un </tspan><tspan
-           style="stroke-width:0.09493653"
-           sodipodi:role="line"
-           x="96.798523"
-           y="135.83075"
-           id="tspan335-fr">corps noir parfait</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
@@ -1650,19 +1331,6 @@
        id="switch311"
        transform="rotate(2,138.71117,186.56688)">
       <text
-         id="text4840-fr"
-         y="178.47481"
-         x="-64.418541"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         transform="rotate(-61.027387)"
-         systemLanguage="fr"><tspan
-           y="178.47481"
-           x="-64.418541"
-           id="tspan4838-fr"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653">210-310 K</tspan></text>
-      <text
          id="text4840"
          y="178.47481"
          x="-64.418541"
@@ -1679,40 +1347,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="switch322"
        transform="translate(0,3.7041668)">
-      <text
-         id="text4848-de"
-         y="114.201"
-         x="140.58157"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="de"><tspan
-           id="tspan4846-de"
-           y="114.201"
-           x="140.58157"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653">abgestrahlte thermische</tspan><tspan
-           y="122.1385"
-           x="140.58157"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653"
-           id="tspan331-de">Strahlung</tspan></text>
-      <text
-         id="text4848-fr"
-         y="114.201"
-         x="140.58157"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="fr"><tspan
-           id="tspan4846-fr"
-           y="97.250511"
-           x="164.86388"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653">Radiation thermique</tspan><tspan
-           y="105.18801"
-           x="163.62364"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653"
-           id="tspan331-fr">sortante</tspan></text>
       <text
          id="text4848"
          y="97.250511"
@@ -1746,30 +1380,6 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
          x="125.42377"
          y="166.74196"
-         id="text4889-de"
-         systemLanguage="de"><tspan
-           sodipodi:role="line"
-           id="tspan4887-de"
-           x="125.42377"
-           y="166.74196"
-           style="stroke-width:0.09493653">infrarot</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="125.42377"
-         y="166.74196"
-         id="text4889-fr"
-         systemLanguage="fr"><tspan
-           sodipodi:role="line"
-           id="tspan4887-fr"
-           x="125.42377"
-           y="166.74196"
-           style="stroke-width:0.09493653">infrarouge</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="125.42377"
-         y="166.74196"
          id="text4889"><tspan
            sodipodi:role="line"
            id="tspan4887"
@@ -1781,18 +1391,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="switch337"
        transform="translate(-1.082084,-49.333445)">
-      <text
-         id="text4893-fr"
-         y="167.88597"
-         x="33.989105"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         systemLanguage="fr"><tspan
-           y="167.88597"
-           x="33.989105"
-           id="tspan4891-fr"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653">UV</tspan></text>
       <text
          id="text4893"
          y="167.88597"
@@ -1814,18 +1412,6 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
          x="51.486641"
          y="167.57855"
-         id="text4897-fr"
-         systemLanguage="fr"><tspan
-           sodipodi:role="line"
-           id="tspan4895-fr"
-           x="51.486641"
-           y="167.57855"
-           style="stroke-width:0.09493653">Vis</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="51.486641"
-         y="167.57855"
          id="text4897"><tspan
            sodipodi:role="line"
            id="tspan4895"
@@ -1837,40 +1423,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="switch354"
        transform="translate(1.0594053,-13.246319)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="55.010159"
-         y="114.201"
-         id="text4913-de"
-         systemLanguage="de"><tspan
-           sodipodi:role="line"
-           x="55.010162"
-           y="114.201"
-           id="tspan4917-de"
-           style="stroke-width:0.09493653">einfallende</tspan><tspan
-           sodipodi:role="line"
-           x="55.010162"
-           y="122.1385"
-           style="stroke-width:0.09493653"
-           id="tspan324-de">Sonnenstrahlung</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="55.010159"
-         y="114.201"
-         id="text4913-fr"
-         systemLanguage="fr"><tspan
-           sodipodi:role="line"
-           x="55.010162"
-           y="114.201"
-           id="tspan4917-fr"
-           style="stroke-width:0.09493653">Radiation</tspan><tspan
-           sodipodi:role="line"
-           x="55.010159"
-           y="122.1385"
-           style="stroke-width:0.09493653"
-           id="tspan324-fr">solaire entrante</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
@@ -1892,42 +1444,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="switch395"
        transform="translate(46.106857,-3.9770573)">
-      <text
-         id="text4966-de"
-         y="5.9420967"
-         x="-192.64516"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         transform="rotate(-90)"
-         systemLanguage="de"><tspan
-           id="tspan4964-de"
-           y="-36.169262"
-           x="-200.85555"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653">Intensitäts</tspan><tspan
-           y="-28.231762"
-           x="-200.85555"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653"
-           id="tspan1295-de">verlust / %</tspan></text>
-      <text
-         id="text4966-fr"
-         y="5.9420967"
-         x="-192.64516"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         transform="rotate(-90)"
-         systemLanguage="fr"><tspan
-           id="tspan4964-fr"
-           y="-36.169262"
-           x="-200.85555"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653">Perte</tspan><tspan
-           y="-28.231762"
-           x="-200.85555"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653"
-           id="tspan1295-fr">(%)</tspan></text>
       <text
          id="text4966"
          y="-36.169262"
@@ -1953,32 +1469,6 @@
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="-248.28595"
-         y="6.2641277"
-         id="text4974-de"
-         transform="rotate(-90)"
-         systemLanguage="de"><tspan
-           sodipodi:role="line"
-           x="-248.28595"
-           y="6.2641277"
-           id="tspan4976-de"
-           style="stroke-width:0.09493653">Hauptkomponenten</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         x="-248.28595"
-         y="6.2641277"
-         id="text4974-fr"
-         transform="rotate(-90)"
-         systemLanguage="fr"><tspan
-           sodipodi:role="line"
-           x="-248.28595"
-           y="6.2641277"
-           id="tspan4976-fr"
-           style="stroke-width:0.09493653">Composants majeurs</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
          x="-249.6102"
          y="9.9720459"
          id="text4974"
@@ -1998,42 +1488,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
        id="switch411"
        transform="translate(3.5751427,2.1166667)">
-      <text
-         id="text4982-de"
-         y="6.1316309"
-         x="-138.28964"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         transform="rotate(-90)"
-         systemLanguage="de"><tspan
-           y="6.1316309"
-           x="-138.28964"
-           sodipodi:role="line"
-           id="tspan4986-de"
-           style="stroke-width:0.09493653">Spektrale</tspan><tspan
-           y="14.069131"
-           x="-138.28964"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653"
-           id="tspan1293-de">Intensität</tspan></text>
-      <text
-         id="text4982-fr"
-         y="6.1316309"
-         x="-138.28964"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:7.9375px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09493653;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-         xml:space="preserve"
-         transform="rotate(-90)"
-         systemLanguage="fr"><tspan
-           y="6.1316309"
-           x="-138.28964"
-           sodipodi:role="line"
-           id="tspan4986-fr"
-           style="stroke-width:0.09493653">Intensité</tspan><tspan
-           y="14.069131"
-           x="-138.28964"
-           sodipodi:role="line"
-           style="stroke-width:0.09493653"
-           id="tspan1293-fr">spectrale</tspan></text>
       <text
          id="text4982"
          y="6.1316309"

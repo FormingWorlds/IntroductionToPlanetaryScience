@@ -56,10 +56,10 @@ SOLAR_SYSTEM = {
 # closely-spaced planets (Venus-Earth, Uranus-Neptune).
 LABEL_OFFSETS = {
     "Mercury": (8, -12),
-    "Venus":   (-34, 6),
+    "Venus":   (-8, -16),
     "Earth":   (8, 4),
     "Mars":    (8, -10),
-    "Jupiter": (8, 6),
+    "Jupiter": (9, -12),
     "Saturn":  (8, -10),
     "Uranus":  (-34, 6),
     "Neptune": (8, 4),

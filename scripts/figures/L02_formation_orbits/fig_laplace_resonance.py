@@ -68,7 +68,7 @@ def make_plot() -> Path:
     for name, p in MOONS.items():
         a = p["a_kkm"]
         ax_orbits.plot(a * np.cos(theta), a * np.sin(theta),
-                       color=p["color"], lw=1.5, label=name)
+                       color=p["color"], lw=1.5)
         phi = moon_phase[name]
         ax_orbits.plot(a * np.cos(phi), a * np.sin(phi), "o",
                        color=p["color"], markeredgecolor="black",
@@ -76,19 +76,41 @@ def make_plot() -> Path:
 
     # Jupiter at origin (visually exaggerated for legibility)
     ax_orbits.plot(0, 0, "o", color="orange", markersize=22,
-                   markeredgecolor="brown", label="Jupiter")
+                   markeredgecolor="brown")
+    ax_orbits.annotate("Jupiter", xy=(0, 0), xytext=(0, -26),
+                       textcoords="offset points", ha="center", va="center",
+                       fontsize=9, color="#a87f1d", zorder=6)
+
+    # Moon name labels, offset clear of each disc. Europa is boxed in
+    # by its neighbours' rings, so it gets a leader line instead.
+    ax_orbits.annotate("Io", xy=(-MOONS["Io"]["a_kkm"], 0), xytext=(-10, 0),
+                       textcoords="offset points", ha="right", va="center",
+                       fontsize=9, color=MOONS["Io"]["color"], zorder=6)
+    ax_orbits.annotate("Ganymede", xy=(MOONS["Ganymede"]["a_kkm"], 0),
+                       xytext=(10, 0), textcoords="offset points",
+                       ha="left", va="center", fontsize=9,
+                       color=MOONS["Ganymede"]["color"], zorder=6)
+    ax_orbits.annotate("Europa", xy=(MOONS["Europa"]["a_kkm"], 0),
+                       xytext=(450, 750), ha="center", va="center",
+                       fontsize=9, color=MOONS["Europa"]["color"],
+                       arrowprops=dict(arrowstyle="-",
+                                        color=MOONS["Europa"]["color"], lw=0.7))
 
     # Conjunction annotations
     ax_max = MOONS["Ganymede"]["a_kkm"] * 1.1
     ax_orbits.annotate("Europa-Ganymede\nconjunction",
                        xy=(MOONS["Ganymede"]["a_kkm"], 0),
-                       xytext=(MOONS["Europa"]["a_kkm"] * 1.15, 320),
+                       xytext=(1100, 300),
                        fontsize=9, color="dimgray",
                        arrowprops=dict(arrowstyle="-", color="dimgray", lw=0.7))
+    # The outer Ganymede ring sweeps through the whole upper-left
+    # margin, so a light halo masks the ring instead of an offset.
     ax_orbits.annotate("Io: always on the\nfar side at these\nconjunctions",
                        xy=(-MOONS["Io"]["a_kkm"], 0),
                        xytext=(-1150, 700), ha="left",
                        fontsize=9, color="dimgray",
+                       bbox=dict(facecolor="white", edgecolor="none",
+                                 alpha=0.85, pad=2),
                        arrowprops=dict(arrowstyle="-", color="dimgray", lw=0.7))
 
     ax_orbits.set_aspect("equal")
@@ -97,7 +119,6 @@ def make_plot() -> Path:
     ax_orbits.set_xlabel(r"$x$ ($10^3$ km)")
     ax_orbits.set_ylabel(r"$y$ ($10^3$ km)")
     ax_orbits.set_title("(a) Galilean satellite orbits")
-    ax_orbits.legend(loc="lower left", frameon=False, fontsize=9)
     ax_orbits.grid(linestyle=":", alpha=0.3)
 
     # Panel (b): period commensurability

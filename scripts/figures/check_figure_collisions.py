@@ -54,9 +54,12 @@ SOLID_FILL_FRACTION = 0.85
 MIN_SOLID_FILL_CONTRAST = 3.0
 PAD_PX = 2
 
-# Not covered by this check: framed legends (the frame masks the ink
-# beneath), axes titles and axis labels (outside the data region),
-# tick labels, and annotation leader lines crossing other text.
+# Not covered by this check: axes titles and axis labels (outside the
+# data region), tick labels, and annotation leader lines crossing
+# other text. Figure-level text (suptitle, fig.text) is checked when
+# it overlaps an axes data region. Legends are checked as whole
+# artists: hiding the legend reveals any geometry its box would cover,
+# framed or not.
 
 
 def _luminance(rgb: np.ndarray) -> np.ndarray:
@@ -103,10 +106,11 @@ def _solid_fill_contrast(t, patch: np.ndarray) -> float:
 
 
 def _text_artists(fig):
-    """Text artists that live inside an axes data region."""
+    """Text artists that live inside an axes data region, including
+    figure-level text (suptitle, fig.text) overlapping any axes."""
     arts = []
-    for ax in fig.axes:
-        ax_bb = ax.get_window_extent()
+    ax_bbs = [ax.get_window_extent() for ax in fig.axes]
+    for ax, ax_bb in zip(fig.axes, ax_bbs):
         for t in ax.texts:
             if not t.get_text().strip() or not t.get_visible():
                 continue
@@ -114,11 +118,21 @@ def _text_artists(fig):
                 continue
             if _text_bbox(t).overlaps(ax_bb):
                 arts.append(t)
-        # An unframed legend inside the axes has no frame to mask ink
-        leg = ax.get_legend()
-        if leg is not None and not leg.get_frame_on():
-            arts.extend(t for t in leg.get_texts() if t.get_text().strip())
+    for t in fig.texts:
+        if not t.get_text().strip() or not t.get_visible():
+            continue
+        if _has_halo(t):
+            continue
+        if any(_text_bbox(t).overlaps(bb) for bb in ax_bbs):
+            arts.append(t)
     return arts
+
+
+def _legends(fig):
+    """Every legend on the figure, checked as one opaque artist."""
+    legs = [ax.get_legend() for ax in fig.axes]
+    legs += list(fig.legends)
+    return [lg for lg in legs if lg is not None and lg.get_visible()]
 
 
 def check_module(mod_name: str) -> list[str]:
@@ -180,6 +194,25 @@ def check_module(mod_name: str) -> list[str]:
         if ink > MAX_INK_FRACTION:
             failures.append(
                 f"{mod_name}: text {t.get_text()[:40]!r} sits on ink "
+                f"(fraction {ink:.3f} > {MAX_INK_FRACTION})"
+            )
+    for lg in _legends(fig):
+        bb = lg.get_window_extent(fig.canvas.get_renderer())
+        lg.set_visible(False)
+        bare = _render(fig)
+        lg.set_visible(True)
+        h, w = bare.shape[:2]
+        x0 = max(int(bb.x0) - PAD_PX, 0)
+        x1 = min(int(bb.x1) + PAD_PX, w)
+        y0 = max(int(h - bb.y1) - PAD_PX, 0)
+        y1 = min(int(h - bb.y0) + PAD_PX, h)
+        patch = bare[y0:y1, x0:x1]
+        if patch.size == 0:
+            continue
+        ink = (_luminance(patch) < INK_LUMINANCE).mean()
+        if ink > MAX_INK_FRACTION:
+            failures.append(
+                f"{mod_name}: legend covers ink "
                 f"(fraction {ink:.3f} > {MAX_INK_FRACTION})"
             )
     plt.close(fig)

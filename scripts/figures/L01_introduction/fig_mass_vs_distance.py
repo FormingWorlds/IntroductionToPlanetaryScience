@@ -75,11 +75,15 @@ def make_plot() -> Path:
     is_jupiter = df["body"] == "Jupiter"
     sum_no_jupiter = df.loc[~is_jupiter, "mass_earth_units"].sum()
     ax.axhline(sum_no_jupiter, color="gray", linestyle="--", linewidth=1.0)
-    ax.text(0.32, sum_no_jupiter * 1.10,
-            r"sum of all planets except Jupiter ($\approx$"
-            f"{sum_no_jupiter:.0f}"
-            r"$\,M_\oplus$)",
-            fontsize=8, color="gray")
+    # Anchor to the line and offset in points, not a data-fraction
+    # multiplier, so the label clears the dashed line on a log axis.
+    ax.annotate(
+        r"sum of all planets except Jupiter ($\approx$"
+        f"{sum_no_jupiter:.0f}"
+        r"$\,M_\oplus$)",
+        xy=(0.32, sum_no_jupiter), xytext=(0, 8), textcoords="offset points",
+        fontsize=8, color="gray", va="bottom",
+    )
 
     ax.set_xscale("log")
     ax.set_yscale("log")

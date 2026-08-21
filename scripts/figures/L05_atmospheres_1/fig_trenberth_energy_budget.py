@@ -32,18 +32,21 @@ GROUND = "#8b6648"
 SKY = "#cfe5ff"
 SPACE = "#1a2440"
 
+# Dark label colours: one per arrow colour, readable on the sky band
+LABEL_COLORS = {YELLOW: "#6e4a00", GREEN: "#175e35", RED: "#8f1d1d"}
+
 # (label, x, y_from, y_to, flux W m^-2, colour, y_label)
 # y_label None centres the label on the arrow; explicit values keep the
-# rotated text inside the sky band and clear of the split line at 0.68
+# rotated text inside the sky band and clear of the split line at 0.66
 ARROWS = [
-    ("Incoming solar 340",         0.07, 0.965, 0.680, 340, YELLOW, 0.78),
-    ("Reflected 100",              0.15, 0.680, 0.965, 100, YELLOW, 0.80),
-    ("Absorbed in atmosphere 80",  0.23, 0.680, 0.440,  80, YELLOW, 0.51),
-    ("Absorbed at surface 160",    0.31, 0.680, 0.145, 160, YELLOW, None),
+    ("Incoming solar 340",         0.07, 0.965, 0.660, 340, YELLOW, 0.74),
+    ("Reflected 100",              0.15, 0.660, 0.965, 100, YELLOW, 0.78),
+    ("Absorbed in atmosphere 80",  0.23, 0.660, 0.440,  80, YELLOW, 0.435),
+    ("Absorbed at surface 160",    0.31, 0.660, 0.145, 160, YELLOW, None),
     ("Latent + sensible 97",       0.45, 0.145, 0.520,  97, GREEN, None),
     ("Surface LW 396",             0.57, 0.145, 0.600, 396, RED, None),
     ("Back-radiation 333",         0.66, 0.600, 0.145, 333, RED, None),
-    ("Outgoing LW 240",            0.82, 0.600, 0.965, 240, RED, None),
+    ("Outgoing LW 240",            0.82, 0.600, 0.965, 240, RED, 0.75),
 ]
 
 
@@ -64,7 +67,7 @@ def make_plot() -> Path:
             weight="bold")
 
     # Split node: the incoming beam divides into its three branches
-    ax.plot([0.07, 0.31], [0.68, 0.68], color="0.45", lw=1.0)
+    ax.plot([0.07, 0.31], [0.66, 0.66], color="0.45", lw=1.0)
 
     for label, x, y0, y1, flux, color, y_lab in ARROWS:
         lw = float(np.clip(flux / 45.0, 1.5, 8.0))
@@ -74,7 +77,8 @@ def make_plot() -> Path:
                                      color=color, lw=lw))
         if y_lab is None:
             y_lab = 0.5 * (y0 + y1)
-        ax.text(x - 0.033, y_lab, label, fontsize=10, color=color,
+        ax.text(x - 0.036, y_lab, label, fontsize=12, weight="bold",
+                color=LABEL_COLORS[color],
                 ha="center", va="center", rotation=90)
 
     ax.set_xlim(0, 1)

@@ -45,9 +45,10 @@ def draw_panel(ax, mode: str) -> None:
     ax.text(0, 0, "Core", ha="center", va="center", fontsize=11,
             color="white", weight="bold")
 
-    # 660 km label
-    ax.text(R_660 * np.cos(np.radians(110)),
-            R_660 * np.sin(np.radians(110)),
+    # 660 km label, offset inward so it clears the dashed ring itself
+    r_label = R_660 - 0.075
+    ax.text(r_label * np.cos(np.radians(110)),
+            r_label * np.sin(np.radians(110)),
             "660 km", color="0.4", fontsize=8, ha="center", va="center")
 
     # Surface label above

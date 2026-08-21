@@ -52,10 +52,10 @@ SOLAR_SYSTEM = {
 # Per-planet label offsets (points) to keep neighbouring labels apart.
 LABEL_OFFSETS = {
     "Mercury": (8, -11),
-    "Venus":   (-36, 5),
+    "Venus":   (8, -11),
     "Earth":   (8, 3),
     "Mars":    (8, -11),
-    "Jupiter": (8, 5),
+    "Jupiter": (8, -11),
     "Saturn":  (8, -11),
     "Uranus":  (-36, 5),
     "Neptune": (8, 3),
@@ -103,7 +103,7 @@ def make_plot(csv_path: Path) -> Path:
     # Selection thresholds, labelled inside the axes away from data clumps.
     ax.axvline(HJ_PERIOD_D, color="#777", lw=0.8, linestyle=":", zorder=2)
     ax.axhline(HJ_MASS_MJ, color="#777", lw=0.8, linestyle=":", zorder=2)
-    ax.text(HJ_PERIOD_D * 1.15, 1.6e-4, r"$P = 10$ d", rotation=90,
+    ax.text(HJ_PERIOD_D * 1.6, 1.3e-4, r"$P = 10$ d", rotation=90,
             fontsize=8, color="#555", va="bottom")
     ax.text(1.3e5, HJ_MASS_MJ * 1.25, r"$M = 0.1\,M_{\mathrm{J}}$",
             fontsize=8, color="#555")

@@ -91,8 +91,11 @@ def make_plot() -> Path:
         )
 
     ax.axhline(RHO_WATER, color="gray", linestyle="--", linewidth=1.0)
-    ax.text(0.32, RHO_WATER * 1.05, r"density of liquid water",
-            fontsize=8, color="gray")
+    # Anchor to the line and offset in points, not a data-fraction
+    # multiplier, so the label clears the dashed line at any y-range.
+    ax.annotate(r"density of liquid water", xy=(0.32, RHO_WATER),
+                xytext=(0, 8), textcoords="offset points",
+                fontsize=8, color="gray", va="bottom")
 
     ax.axhline(RHO_ROCK, color="saddlebrown", linestyle="--", linewidth=1.0)
     ax.text(0.32, RHO_ROCK * 1.04,

@@ -102,7 +102,7 @@ def make_plot() -> Path:
                            ec="#1f4f99", lw=1.0)
     ax_geom.add_patch(safe)
     # Label above the satellite, outside the dashed circle.
-    ax_geom.text(3.0, 2.55, "Safe distance\n(spherical)",
+    ax_geom.text(3.0, 2.65, "Safe distance\n(spherical)",
                  fontsize=11, ha="center", va="center")
 
     # Stretched satellite at Roche limit
@@ -115,10 +115,10 @@ def make_plot() -> Path:
     ax_geom.annotate("", xy=(d_R - 0.45, -0.05), xytext=(d_R - 0.05, -0.05),
                      arrowprops=dict(arrowstyle="->", color="#d62728", lw=1.5))
 
-    # Label below and right of the arc, tied back with a thin leader.
-    ax_geom.text(3.05, -1.45, "At Roche limit $d_R$\n(stretched, breaks up)",
+    # Label further below and right of the arc, tied back with a thin leader.
+    ax_geom.text(3.5, -2.0, "At Roche limit $d_R$\n(stretched, breaks up)",
                  ha="center", va="center", fontsize=11)
-    ax_geom.plot([2.62, 2.95], [-0.30, -1.12], color="0.45", lw=0.7)
+    ax_geom.plot([2.62, 3.2], [-0.30, -1.75], color="0.45", lw=0.7)
 
     # Formula and its footnote below the circle, clear of every curve.
     ax_geom.text(-3.1, -2.82,

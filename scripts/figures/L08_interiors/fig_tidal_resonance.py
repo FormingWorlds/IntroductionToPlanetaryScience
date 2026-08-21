@@ -47,6 +47,10 @@ def panel_a(ax) -> None:
     # Orbits and moons (placed at conjunction at t=0 for illustration: Io
     # at +x, Europa at +y direction from periapsis line, Ganymede at -y)
     moon_angles_deg = [0, -10, 80]  # arbitrary positions for visual
+    # Default label offset is up and to the right of the moon marker;
+    # Europa's default spot sits on the Ganymede orbit circle, so it
+    # gets pulled down and clear instead
+    label_offsets = {"Europa": (-0.02, -0.15)}
     for (name, _, color), R, theta in zip(MOON_PERIODS, ORBIT_RADII,
                                             moon_angles_deg):
         # Orbit circle
@@ -57,7 +61,8 @@ def panel_a(ax) -> None:
         y = R * np.sin(np.radians(theta))
         ax.add_patch(Circle((x, y), 0.07, color=color, ec="black",
                             lw=0.6, zorder=5))
-        ax.text(x + 0.1, y + 0.05, name, fontsize=11, va="center")
+        dx, dy = label_offsets.get(name, (0.1, 0.05))
+        ax.text(x + dx, y + dy, name, fontsize=11, va="center")
 
     ax.set_xlim(-1.7, 1.9)
     ax.set_ylim(-1.7, 1.9)

@@ -60,7 +60,7 @@ Data from {cite:p}`dePaterLissauer2010` and {cite:p}`NASAFactSheet`. The fractio
 
 ```{figure} figures/composition_bar.avif
 :name: fig:composition-bar
-:width: 700px
+:width: 100%
 :align: center
 
 Atmospheric composition (by volume) for five representative solar system bodies. Venus and Mars are $\mathrm{CO_2}$-dominated secondary atmospheres; Earth's $\mathrm{N_2}$/$\mathrm{O_2}$ mix is biogenically modified (tertiary); Jupiter retains a primary $\mathrm{H_2}$/He envelope; Titan's massive $\mathrm{N_2}$ atmosphere is unusual for such a small body. Numbers rounded to one decimal place. Data from {cite:p}`NASAFactSheet`.
@@ -68,10 +68,10 @@ Atmospheric composition (by volume) for five representative solar system bodies.
 
 ```{figure} figures/venera13_venus_surface.avif
 :name: fig:venera13-venus
-:width: 600px
+:width: 500px
 :align: center
 
-The surface of Venus photographed by the Soviet *Venera 13* lander on 1 March 1982. The image shows flat basaltic rocks under an orange sky coloured by the thick $\mathrm{CO_2}$ atmosphere (surface pressure 92 bar, temperature 737 K). The lander survived for 127 minutes before succumbing to the extreme conditions, a vivid demonstration of how a massive secondary atmosphere transforms a planet's surface environment. Credit: USSR Academy of Sciences / NASA NSSDC, public domain.
+The surface of Venus photographed in colour by the Soviet *Venera 13* lander on 1 March 1982. The image shows flat basaltic rock slabs and soil under an orange sky coloured by the thick $\mathrm{CO_2}$ atmosphere (surface pressure 92 bar, temperature 737 K); the striped bar is a colour calibration target, and the toothed ring is part of the lander. The lander survived for 127 minutes before succumbing to the extreme conditions, a vivid demonstration of how a massive secondary atmosphere transforms a planet's surface environment. Credit: USSR Academy of Sciences / NASA NSSDC, public domain.
 ```
 
 
@@ -87,13 +87,21 @@ Consider a thin horizontal slab of atmosphere with cross-sectional area $A$, thi
 - **Pressure from above** (pushing down): $P(z + \dd z) \cdot A$
 - **Weight** (pulling down): $\rho(z) \, g \, A \, \dd z$
 
+```{figure} figures/hydrostatic_slab.avif
+:name: fig:hydrostatic-slab
+:width: 100%
+:align: center
+
+Force balance on a thin horizontal slab of atmosphere with cross-sectional area $A$, thickness $\dd z$, and density $\rho(z)$. Pressure acting on the lower face pushes the slab up with force $P(z)\,A$ (blue), while pressure on the upper face pushes down with force $P(z+\dd z)\,A$ (blue) and gravity pulls the slab down with its weight $\rho(z)\,g\,A\,\dd z$ (red). Setting the net force to zero and taking the limit $\dd z \to 0$ yields the equation of hydrostatic equilibrium.
+```
+
 In equilibrium, the net upward pressure force balances the weight:
 
 $$
 P(z) \, A - P(z + \dd z) \, A = \rho(z) \, g \, A \, \dd z
 $$
 
-Dividing by $A \, \dd z$ and taking the limit:
+Dividing by $A \, \dd z$ and taking the limit $\dd z \to 0$, in which $[P(z + \dd z) - P(z)]/\dd z$ becomes the derivative $\dv{P}{z}$:
 
 $$
 \dv{P}{z} = -\rho \, g
@@ -219,7 +227,7 @@ where $c_p$ is the specific heat capacity at constant pressure. For Earth, $g = 
 
 ```{figure} figures/dry_moist_adiabat.avif
 :name: fig:dry-moist-adiabat
-:width: 399px
+:width: 100%
 :align: center
 
 Dry adiabatic lapse rate ($\Gamma_d = g/c_p \approx 9.8$ K km$^{-1}$, dashed) compared with a representative saturated moist adiabat ($\sim 5$ K km$^{-1}$ in the warm lower troposphere, dotted) and the observed mean Earth profile (US Standard Atmosphere 1976, solid). The moist adiabat is shallower than the dry adiabat because condensing water vapour releases latent heat to the rising parcel; the observed mean ($\sim 6.5$ K km$^{-1}$) lies between the two limits. Above the tropopause the adiabats no longer apply: the actual profile becomes nearly isothermal and then warms in the stratosphere.
@@ -241,7 +249,7 @@ Above this, the **thermosphere** (85–600 km) is heated by the absorption of ex
 
 ```{figure} figures/earth_tz_layers.avif
 :name: fig:earth-tz-layers
-:width: 520px
+:width: 100%
 :align: center
 
 Earth's vertical temperature profile from the US Standard Atmosphere 1976, with the four named layers (troposphere, stratosphere, mesosphere, thermosphere) shaded. Pause levels (tropopause $\sim$11 km, stratopause $\sim$50 km, mesopause $\sim$85 km) are marked with dashed grey lines. The sign of $\dv{T}{z}$ flips at each pause, which reflects the transition between dominant heating sources (surface re-radiation in the troposphere, ozone UV absorption in the stratosphere, EUV absorption in the thermosphere). Data: US Standard Atmosphere 1976 {cite:p}`USStandardAtmosphere1976`; plot generated for this course.
@@ -266,7 +274,7 @@ Detached haze layers in Titan's upper atmosphere imaged at the limb by the Cassi
 
 ```{figure} figures/fulchignoni2005_titan_tz.avif
 :name: fig:titan-tz-hasi
-:width: 550px
+:width: 100%
 :align: center
 
 Titan's atmospheric temperature profile from the *Huygens* Atmospheric Structure Instrument (HASI) descent on 14 January 2005. Solid line: HASI measurements; dashed line: pre-encounter Titan engineering model. Above 160 km, $T$ and $P$ are derived from the measured density via the ideal gas law; below 160 km, $T$ is measured directly by the TEM sensor. Horizontal markers indicate the mesopause (152 K at 490 km), stratopause (186 K at 250 km), and tropopause (70.43 K at 44 km). Wave-like fluctuations above 250 km reflect gravity-wave activity (buoyancy-driven oscillations of displaced air parcels, unrelated to gravitational waves in general relativity) that complements the haze-layer UV absorption (cf. {numref}`fig:titan-haze`). Reproduced from {cite:p}`Fulchignoni2005`, Fig. 2.
@@ -274,7 +282,7 @@ Titan's atmospheric temperature profile from the *Huygens* Atmospheric Structure
 
 ```{figure} figures/venus_tz_vira.avif
 :name: fig:venus-tz-vira
-:width: 500px
+:width: 100%
 :align: center
 
 Venus T(z) profile combining Pioneer Venus / VIRA {cite:p}`Seiff1985` lower-atmosphere data with VeRa (Venus Express) radio-occultation results {cite:p}`Tellmann2009`. The profile falls monotonically from the 737 K, 92 bar surface through the cloud deck (48 to 70 km, shaded) to the mesopause near 100 km, with no ozone-driven stratospheric inversion. The near-adiabatic deep troposphere reflects efficient convection in a $\mathrm{CO_2}$-dominated, optically thick atmosphere. Pedagogical fit; not a direct reproduction.
@@ -284,10 +292,10 @@ A striking unifying observation is that, despite differences of orders of magnit
 
 ```{figure} figures/atmosphere_tp_robinson.avif
 :name: fig:tp-profiles
-:width: 600px
+:width: 100%
 :align: center
 
-Vertical temperature profiles of six solar system atmospheres (Earth, Titan, Jupiter, Saturn, Uranus, Neptune) plotted against pressure (note the log scale, with low pressures at the top). The tropopause, the temperature minimum separating troposphere from stratosphere, consistently occurs near 0.1 bar in all six bodies. The same physics that defines layers in Earth's atmosphere produces comparable structure on the giant planets and Titan. Schematic adapted from {cite:t}`Robinson2014`; profiles are pedagogical fits anchored at the published surface and tropopause values.
+Measured vertical temperature profiles of seven solar system atmospheres (Venus, Earth, Titan, Jupiter, Saturn, Uranus, Neptune) plotted against pressure (note the log scale, with low pressures at the top). The tropopause, the temperature minimum separating troposphere from stratosphere, consistently occurs near 0.1 bar in Earth, Titan, and the four giant planets; Venus, which lacks a strong stratospheric inversion, shows only a weak global-mean minimum there {cite:p}`Robinson2014`. The same physics that defines layers in Earth's atmosphere produces comparable structure on the giant planets and Titan. Profiles digitized from {cite:t}`Robinson2014`, Fig. 1, and replotted; the underlying data come from spacecraft radio occultations, infrared spectroscopy, and reference atmosphere compilations.
 ```
 
 
@@ -309,7 +317,7 @@ The wavelength dependence of stellar versus planetary emission is the physical b
 
 ```{figure} figures/blackbody_spectrum.svg
 :name: fig:blackbody-spectrum
-:width: 550px
+:width: 100%
 :align: center
 
 Blackbody radiation curves for objects at several temperatures (representative of stellar and planetary emission). The Sun ($\sim$5800 K) emits primarily at visible wavelengths ($\sim$0.5 $\mu$m), while a planet at $\sim$300 K emits in the thermal infrared ($\sim$10 $\mu$m). This wavelength separation between incoming stellar radiation and outgoing planetary emission is the physical basis of the greenhouse effect: atmospheric gases can be transparent at one set of wavelengths while opaque at the other. Credit: Wikimedia Commons, public domain.
@@ -346,7 +354,7 @@ Just as a star has a **photosphere**, the layer from which photons escape to spa
 
 ```{figure} figures/tau_one_schematic.avif
 :name: fig:tau-one
-:width: 572px
+:width: 100%
 :align: center
 
 The atmospheric "photosphere" concept. (a) Beer–Lambert attenuation: the transmitted intensity decreases exponentially with optical depth, $I/I_0 = e^{-\tau}$ (Eq. {eq}`eq:beer-lambert`); the $\tau = 1$ level transmits a fraction $1/e \approx 0.37$ of the incident intensity. (b) An infrared photon emitted from deep in the atmosphere ($\tau \gg 1$) is absorbed before reaching space; only photons emitted from $\tau \lesssim 1$ escape freely. The effective emission level at $\tau \approx 1$ sets the planet's effective temperature as observed from space.
@@ -383,7 +391,7 @@ For Earth, satellite radiometry has measured the individual flux components of t
 
 ```{figure} figures/trenberth_energy_budget.avif
 :name: fig:trenberth
-:width: 800px
+:width: 100%
 :align: center
 
 Earth's globally averaged energy budget in W m$^{-2}$. Of $\sim$340 W m$^{-2}$ incoming shortwave (SW) flux, $\sim$100 W m$^{-2}$ is reflected (Bond albedo $A \approx 0.30$), $\sim$80 W m$^{-2}$ is absorbed by the atmosphere, and $\sim$160 W m$^{-2}$ is absorbed at the surface. The surface re-radiates $\sim$396 W m$^{-2}$ in the longwave (LW), and the atmosphere returns $\sim$333 W m$^{-2}$ as downward back-radiation, the dominant surface heating term. Latent and sensible heat fluxes ($\sim$97 W m$^{-2}$) carry the remainder of the surface energy balance to the atmosphere. At the top of atmosphere, 340 W m$^{-2}$ in matches 100 W m$^{-2}$ reflected plus $\sim$240 W m$^{-2}$ outgoing IR. Schematic adapted from {cite:t}`Trenberth2009`.
@@ -418,7 +426,7 @@ The atmospheric absorption spectrum that underlies this asymmetry is shown in {n
 
 ```{figure} figures/atmospheric_transmission.svg
 :name: fig:atmospheric-absorption
-:width: 600px
+:width: 100%
 :align: center
 
 Atmospheric absorption spectrum of Earth's atmosphere from ultraviolet through infrared wavelengths. The top panel shows the solar radiation spectrum; the bottom panels show absorption by individual gases. Note the strong absorption bands of $\mathrm{H_2O}$ and $\mathrm{CO_2}$ in the infrared, and the "atmospheric window" near 8–13 $\mu$m where the atmosphere is relatively transparent. Credit: Wikimedia Commons, public domain.
@@ -456,7 +464,7 @@ This one-layer model is deliberately simple. In {ref}`Lecture 9 <lecture09>`, we
 
 ```{figure} figures/greenhouse_one_layer.avif
 :name: fig:greenhouse-effect
-:width: 380px
+:width: 100%
 :align: center
 
 Energy budget of the one-layer greenhouse model. Stellar shortwave flux $(1-A)F_\star/4$ (yellow) passes unimpeded through the atmosphere and is absorbed at the surface. The surface re-radiates $\sigma T_s^4$ in the infrared (red); a fraction $(1-\varepsilon)$ is transmitted directly to space, while a fraction $\varepsilon$ is absorbed in the atmospheric layer. The layer re-emits $\varepsilon\,\sigma T_a^4$ both upward (to space) and downward (back to the surface). The downward emission is the additional energy source that raises $T_s$ above the no-atmosphere effective temperature $T_\mathrm{eff}$. Schematic following the one-layer derivation in {cite:t}`Pierrehumbert2010`.
@@ -472,10 +480,10 @@ The dominant escape regime for a given planet-species pair depends on two quanti
 
 ```{figure} figures/escape_regime_diagram.avif
 :name: fig:escape-regime
-:width: 680px
+:width: 100%
 :align: center
 
-Schematic regime diagram for atmospheric escape as a function of the Jeans parameter $\lambda_J = v_\mathrm{esc}^2/v_\mathrm{th}^2$ (x-axis) and stellar EUV flux in units of the present-day Earth value (y-axis). Three regimes are shaded: **hydrodynamic outflow** (left column, low $\lambda_J$, and top row, high EUV); **Jeans thermal escape** (centre, moderate $\lambda_J$ at present-day flux); **retention** (right column, negligible escape over Gyr). Marker positions show representative species-planet pairs: atomic H on Earth and Mars sits in the Jeans regime; $\mathrm{N_2}$ on Titan and $\mathrm{CO_2}$ on Mars are retained; $\mathrm{H_2}$ on an early sub-Neptune (a planet between Earth and Neptune in size, typically retaining a thin H/He envelope) around a young active star is driven into hydrodynamic outflow. Schematic after {cite:t}`Hunten1987` and {cite:t}`Tian2009`; boundaries are approximate.
+Schematic regime diagram for atmospheric escape as a function of the Jeans parameter $\lambda_J = v_\mathrm{esc}^2/v_\mathrm{th}^2$ (x-axis) and stellar EUV flux in units of the present-day Earth value (y-axis). Three regimes are shaded: **hydrodynamic outflow** (left column, low $\lambda_J$, and top row, high EUV); **Jeans thermal escape** (centre, moderate $\lambda_J$ at present-day flux); **retention** (right column, negligible escape over Gyr). Marker positions show representative species-planet pairs: atomic H on Earth and Mars sits in the Jeans regime; $\mathrm{N_2}$ on Titan and $\mathrm{CO_2}$ on Mars are retained; $\mathrm{H_2}$ on an early sub-Neptune (a planet between Earth and Neptune in size, typically retaining a thin H/He envelope) around a young active star is driven into hydrodynamic outflow. Exoplanets with directly observed escaping atmospheres populate the EUV-driven band: atomic H on the hot Jupiter HD 209458 b {cite:p}`VidalMadjar2003` and on the warm Neptune GJ 436 b {cite:p}`Ehrenreich2015`, and He on the inflated super-Neptune WASP-107 b {cite:p}`Spake2018`; their positions are order-of-magnitude estimates. Schematic after {cite:t}`Hunten1987` and {cite:t}`Tian2009`; boundaries are approximate.
 ```
 
 ### Thermal (Jeans) escape
@@ -486,7 +494,7 @@ The **exobase** ({numref}`fig:exobase`) is the altitude at which the mean free p
 
 ```{figure} figures/exobase_definition.avif
 :name: fig:exobase
-:width: 650px
+:width: 100%
 :align: center
 
 The exobase as the altitude where the mean free path $\ell$ (blue) equals the pressure scale height $H$ (red dashed) in Earth's upper atmosphere. Below the crossing (blue shading) the atmosphere is collisional (thermosphere); above it (orange shading) the atmosphere is effectively collisionless (exosphere) and ballistic trajectories carry individual molecules to escape. The crossing altitude is approximately 450 to 500 km for present-day Earth, depending on solar activity and exobase temperature. Plot generated for this course using the US Standard Atmosphere 1976 + MSIS-86 number density and an effective cross-section $\sigma = 10^{-18}\ \mathrm{m}^2$.
@@ -512,7 +520,7 @@ where $n_{\mathrm{exo}}$ is the number density at the exobase. The exponential f
 
 ```{figure} figures/maxwell_boltzmann_jeans.avif
 :name: fig:mb-jeans
-:width: 473px
+:width: 100%
 :align: center
 
 Maxwell–Boltzmann speed distribution for atomic hydrogen at the exobase temperatures of Earth ($T_\mathrm{exo} = 1000$ K, blue) and Mars ($T_\mathrm{exo} = 270$ K, red). Dashed vertical lines mark the escape velocity $v_\mathrm{esc}$ at the exobase of each planet ($\sim$10.6 km s$^{-1}$ and $\sim$4.9 km s$^{-1}$ respectively). Only molecules in the high-speed tail above $v_\mathrm{esc}$ (shaded) contribute to Jeans escape; the exponential dependence of the tail area on $\lambda_J = v_\mathrm{esc}^2 / v_\mathrm{th}^2$ explains why escape rates vary by orders of magnitude across species and bodies.
@@ -538,20 +546,20 @@ Hydrodynamic escape is most important during a planet's first few hundred millio
 
 ```{figure} figures/radius_valley_owen2019.avif
 :name: fig:owen-radius-valley
-:width: 750px
+:width: 100%
 :align: center
 
-Population synthesis of close-in exoplanets that have undergone EUV-driven hydrodynamic atmospheric escape. *Left*: planet radius vs orbital separation after 10 Gyr of evolution, for cores with masses 6.5–15 $\Mearth$ (different colours indicate different core masses; the published axis label reads "Seperation" [sic] in the original figure). The "evaporation desert" at small separations and large radii is empty because all H/He envelopes have been stripped, and the "evaporation valley" appears as a thin gap near $1.5\!-\!2\,\Rearth$. *Right*: planet radius vs incident bolometric flux ($F_\oplus$, in units of Earth's), colour-coded by retained atmospheric mass fraction (% H/He). Greyscale shading shows the predicted population density. Reproduced from {cite:t}`Owen2019`, Fig. 3 (left panel originally from {cite:t}`OwenWu2013`; right panel from Lopez & Fortney 2013).
+Population synthesis of close-in exoplanets that have undergone EUV-driven hydrodynamic atmospheric escape. *Left*: planet radius vs orbital separation after 10 Gyr of evolution, for cores with masses 6.5–15 $\Mearth$ (different colours indicate different core masses; the published axis label reads "Seperation" [sic] in the original figure). The "evaporation desert" at small separations and large radii is empty because all H/He envelopes have been stripped, and the "evaporation valley" appears as a thin gap near $1.5\!-\!2\,\Rearth$. *Right*: planet radius vs incident bolometric flux ($F_\oplus$, in units of Earth's), colour-coded by retained atmospheric mass fraction (% H/He). Greyscale shading shows the predicted population density. Reproduced from {cite:t}`Owen2019`, Fig. 3 (left panel originally from {cite:t}`OwenWu2013`; right panel from {cite:t}`LopezFortney2013`).
 ```
 
 The observational counterpart was established by {cite:t}`Fulton2017`, who measured the planet radius distribution for short-period exoplanets in the California-Kepler Survey (CKS) and found a clear bimodality ({numref}`fig:fulton-radius-valley`):
 
 ```{figure} figures/fulton2017_radius_valley.avif
 :name: fig:fulton-radius-valley
-:width: 700px
+:width: 100%
 :align: center
 
-Observed radius distribution of short-period ($P < 100$ days) small planets from the California-Kepler Survey {cite:p}`Fulton2017`. Two distinct populations appear: a super-Earth peak near $1.3\ \Rearth$ (likely stripped rocky cores) and a sub-Neptune peak near $2.4\ \Rearth$ (cores with retained H/He envelopes of a few percent by mass). The gap between them near $1.8\ \Rearth$ (shaded) is the observational signature of the radius valley predicted by photoevaporation models (cf. {numref}`fig:owen-radius-valley`). Stylised histogram based on Fig. 7 of {cite:t}`Fulton2017`; bin heights are approximate.
+Observed radius distribution of short-period ($P < 100$ days) small planets from the California-Kepler Survey {cite:p}`Fulton2017`. Two distinct populations appear: a super-Earth peak near $1.3\ \Rearth$ (likely stripped rocky cores) and a sub-Neptune peak near $2.4\ \Rearth$ (cores with retained H/He envelopes of a few percent by mass). The gap between them near $1.8\ \Rearth$ is the observational signature of the radius valley predicted by photoevaporation models (cf. {numref}`fig:owen-radius-valley`). Completeness-corrected histogram reproduced from {cite:t}`Fulton2017`, Fig. 7 (top panel); the light grey region below $1.14\ \Rearth$ suffers from low completeness, and the population labels are added here.
 ```
 
 ### Non-thermal escape mechanisms
@@ -578,7 +586,7 @@ MAVEN's science orbit around Mars, showing how the spacecraft transitioned from 
 
 ```{figure} figures/maven_ion_plume.avif
 :name: fig:maven-ion-plume
-:width: 650px
+:width: 100%
 :align: center
 
 NASA Scientific Visualization Studio rendering of the ion plume escaping from Mars, based on MAVEN data. The most energetic ions (red) are accelerated in a plume above the planet, while the bulk of escaping ions (green) are lost along the tail region behind Mars relative to the solar wind. Unmagnetised Mars is particularly vulnerable to this class of solar-wind-driven escape because the solar wind reaches deep into the upper atmosphere rather than being deflected by a global dipole field. Credit: NASA's Scientific Visualization Studio (SVS ID 4370), PI Bruce Jakosky, public domain.
@@ -586,7 +594,7 @@ NASA Scientific Visualization Studio rendering of the ion plume escaping from Ma
 
 ```{figure} figures/maven_o_loss_channels.avif
 :name: fig:maven-o-loss-channels
-:width: 527px
+:width: 100%
 :align: center
 
 Present-day oxygen loss rates from Mars decomposed into escape channels, after {cite:t}`Jakosky2018` Fig. 6. Horizontal bars indicate the loss rate (log$_{10}$ s$^{-1}$) for O ion escape, photochemical escape, and sputtering, plus the combined total. Photochemical escape dominates the oxygen budget today; sputtering is sub-dominant at present solar activity but was likely comparable or larger in the young, EUV-active Sun epoch. The three channels sum to the total at the top of the panel and, together with hydrogen escape, give the $\sim 2$–$3$ kg s$^{-1}$ figure quoted in the text. Redrawn from {cite:t}`Jakosky2018`.
@@ -647,7 +655,7 @@ We will examine the long-term atmospheric evolution of specific planets in detai
 
 ```{figure} figures/escape_velocity_temperature.svg
 :name: fig:escape-velocity-temperature
-:width: 550px
+:width: 100%
 :align: center
 
 Escape velocity versus surface temperature for solar system bodies. Diagonal lines indicate the thermal velocity of different gas species (scaled by a factor of 6 for long-term retention). Bodies above and to the left of a species line can retain that gas; bodies below and to the right cannot. The gas giants retain everything; Earth and Venus retain heavy species but lose H; Mars and Titan are marginal; the Moon and Mercury retain essentially nothing. Credit: Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
@@ -662,15 +670,15 @@ A central reason M-dwarf planets are so vulnerable to escape is that late-type s
 
 ```{figure} figures/johnstone2021_xuv_evolution.avif
 :name: fig:xuv-evolution
-:width: 500px
+:width: 100%
 :align: center
 
-Evolutionary tracks for stellar X-ray luminosity for slow, medium, and fast rotators (three coloured lines per panel) at four stellar masses: 1.0, 0.75, 0.5, and 0.25 $M_\odot$ (top to bottom). Shaded bands give one standard deviation around the mean track. Lower-mass stars remain in the saturated regime $L_X / L_\mathrm{bol} \sim 10^{-3}$ for far longer than Sun-like stars: $\sim 100$ Myr for $1.0\,M_\odot$, $\gtrsim 1$ Gyr for $0.25\,M_\odot$. Close-in rocky planets around late-M stars (e.g. the TRAPPIST-1 system) therefore experience prolonged high-XUV irradiation that drives sustained atmospheric escape. Reproduced from {cite:p}`Johnstone2021`, Fig. 11.
+Evolutionary tracks for stellar X-ray luminosity for slow, medium, and fast rotators (three coloured lines per panel) for a Sun-like star (1.0 $M_\odot$, top) and a mid-M dwarf (0.25 $M_\odot$, bottom). Shaded bands give one standard deviation around the mean track. Lower-mass stars remain in the saturated regime $L_X / L_\mathrm{bol} \sim 10^{-3}$ for far longer than Sun-like stars: $\sim 100$ Myr for $1.0\,M_\odot$, $\gtrsim 1$ Gyr for $0.25\,M_\odot$. Close-in rocky planets around late-M stars (e.g. the TRAPPIST-1 system) therefore experience prolonged high-XUV irradiation that drives sustained atmospheric escape. Reproduced from {cite:p}`Johnstone2021`, Fig. 11 (two of the four stellar-mass panels shown).
 ```
 
 ```{figure} figures/trappist1b_jwst_greene2023.avif
 :name: fig:greene-trappist
-:width: 700px
+:width: 100%
 :align: center
 
 JWST/MIRI 15 $\mu$m thermal emission measurement of TRAPPIST-1 b (black point with error bars labelled "Measured F1500W") compared with predicted spectra. The measured dayside flux matches a bare-rock blackbody at $T_B = 503$ K (blue curve), close to the 508 K blackbody predicted for zero heat redistribution and no atmosphere (green curve), and is significantly above the 400 K isotropic-redistribution blackbody (orange) that would be expected for an efficient atmospheric heat engine. The second black point ("Expected F1280W") marks the flux the bare-rock fit predicts in the neighbouring 12.8 $\mu$m band. Thick atmospheres (e.g. 93 bar $\mathrm{CO_2}$, cyan; 10 bar $\mathrm{O_2}/\mathrm{CO_2}$, magenta) absorb in the 15 $\mu$m band and would suppress the observed flux by a factor of two or more, inconsistent with the data. The result is best explained by little-to-no redistribution from a thin or absent atmosphere on the dayside of TRAPPIST-1 b. Figure from {cite:t}`Greene2023`.

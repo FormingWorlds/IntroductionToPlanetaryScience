@@ -13,6 +13,14 @@ Marker positions are illustrative and follow the caption text:
 - atomic H on Earth and Mars  -> Jeans regime
 - N2 on Titan, CO2 on Mars     -> retained
 - H2 on early sub-Neptune      -> hydrodynamic
+
+Observed exoplanets with detected hydrodynamic escape sit in the
+EUV-driven band (order-of-magnitude placements; lambda_J from
+published mass and radius with an assumed thermosphere temperature
+of order 10^3 to 10^4 K, EUV flux scaled from the orbital distance):
+- H on HD 209458 b   (Vidal-Madjar et al. 2003)
+- H on GJ 436 b      (Ehrenreich et al. 2015)
+- He on WASP-107 b   (Spake et al. 2018)
 """
 from __future__ import annotations
 
@@ -39,7 +47,7 @@ def make_plot() -> Path:
     fig, ax = plt.subplots(figsize=(8.5, 6.5))
 
     lam_min, lam_max = 0.3, 500
-    f_min, f_max = 0.4, 300
+    f_min, f_max = 0.4, 2000
 
     # Shaded regions
     # Hydrodynamic: lambda < LAM_HYDRO  OR  EUV > EUV_HYDRO
@@ -61,44 +69,34 @@ def make_plot() -> Path:
     # Region labels
     ax.text(0.7, 4.0, "Hydrodynamic\noutflow",
             fontsize=11, color="#a14a25", weight="bold", ha="left")
-    ax.text(8.0, 80, "EUV-driven hydrodynamic\n(young-star regime)",
+    ax.text(150, 1100, "EUV-driven hydrodynamic\n(young-star regime)",
             fontsize=11, color="#a14a25", weight="bold", ha="center")
     ax.text(9.0, 8.0, "Jeans\n(thermal)",
             fontsize=11, color="#9b7b18", weight="bold", ha="center")
     ax.text(80, 8.0, "Retained",
             fontsize=11, color="#1f6b3b", weight="bold", ha="center")
 
-    # Markers (place labels ABOVE markers to keep them inside the plot)
+    # Markers: (label, lambda_J, F_EUV, colour, label position, alignment).
+    # Each label sits directly beside its marker with no leader line; the
+    # collision checker enforces clearance from all drawn geometry.
     markers = [
-        ("H on Earth today", 8.0, 1.0, "#1f77b4"),
-        ("H on Mars today", 5.5, 1.5, "#d62728"),
-        ("N$_2$ on Titan today", 70.0, 0.6, "#b8860b"),
-        ("CO$_2$ on Mars today", 250.0, 1.5, "#2ca02c"),
-        (r"H$_2$ on early sub-Neptune", 2.0, 50.0, "#6a3d9a"),
+        ("H on Earth today", 8.0, 1.0, "#1f77b4", (8.0, 0.6), "center"),
+        ("H on Mars today", 5.5, 1.5, "#d62728", (6.5, 2.4), "center"),
+        ("N$_2$ on Titan today", 70.0, 0.6, "#b8860b", (85, 0.6), "left"),
+        ("CO$_2$ on Mars today", 250.0, 1.5, "#2ca02c", (250, 2.4), "center"),
+        ("H$_2$ on early\nsub-Neptune", 2.0, 50.0, "#6a3d9a",
+         (2.0, 90), "center"),
+        ("H on HD 209458 b", 10.0, 450.0, "#c2452e", (10.0, 750), "center"),
+        ("H on GJ 436 b", 14.0, 150.0, "#e377c2", (14.0, 85), "center"),
+        # Two lines: the one-line label is wider than the 1-dex gap
+        # between the two dashed regime boundaries and would cross one.
+        ("He on\nWASP-107 b", 9.0, 300.0, "#2c7f8c", (9.0, 185), "center"),
     ]
-    for label, lam, fxuv, color in markers:
+    for label, lam, fxuv, color, xytext, ha in markers:
         ax.plot(lam, fxuv, "o", color=color, ms=9, mec="black", mew=0.5,
                 zorder=5)
-        if "Titan" in label:
-            xytext = (lam * 1.5, fxuv * 1.7)
-            ha = "left"
-        elif "CO" in label:
-            xytext = (lam * 0.4, fxuv * 1.6)
-            ha = "right"
-        elif "sub-Neptune" in label:
-            xytext = (lam * 1.6, fxuv * 0.45)
-            ha = "left"
-        elif "Mars today" in label:
-            xytext = (lam * 0.45, fxuv * 1.6)
-            ha = "right"
-        else:  # Earth: centred below the marker, short of the
-            # lambda = 30 boundary line that a rightward label crosses
-            xytext = (lam, fxuv * 0.55)
-            ha = "center"
-        ax.annotate(label, xy=(lam, fxuv), xytext=xytext, ha=ha,
-                    fontsize=9, color=color,
-                    arrowprops=dict(arrowstyle="-", color=color,
-                                    lw=0.6))
+        ax.text(*xytext, label, ha=ha, va="center",
+                fontsize=9, color=color)
 
     # Boundary lines
     ax.axvline(LAM_HYDRO, color="0.35", linestyle="--", lw=0.8, zorder=1)

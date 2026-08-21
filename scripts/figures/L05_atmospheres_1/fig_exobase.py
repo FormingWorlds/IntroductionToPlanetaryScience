@@ -107,7 +107,8 @@ def make_plot() -> Path:
     ax.axhspan(z_exo, z[-1], color="#fde6c8", alpha=0.4, zorder=0)
     ax.text(1e-3, (z[0] + z_exo) / 2, "Thermosphere\n(collisional)",
             color="#3a4f6f", fontsize=11, style="italic", va="center")
-    ax.text(2e3, (z_exo + z[-1]) / 2,
+    # Left of the mean-free-path curve, below the legend
+    ax.text(1e-3, (z_exo + z[-1]) / 2,
             "Exosphere\n(collisionless,\nballistic trajectories)",
             color="#a14a25", fontsize=11, style="italic", va="center",
             ha="left")
@@ -130,7 +131,9 @@ def make_plot() -> Path:
     ax.set_ylabel("Altitude (km)")
     ax.set_title(r"Exobase definition: $\ell = H$ in Earth's upper atmosphere")
     ax.grid(which="both", linestyle=":", alpha=0.3)
-    ax.legend(loc="upper right", frameon=True, fontsize=10)
+    # Upper left: the mean-free-path curve occupies the upper right and
+    # both profiles stay clear of this corner.
+    ax.legend(loc="upper left", frameon=True, fontsize=10)
 
     fig.tight_layout()
     return save_figure(fig, OUT_AVIF, avif_quality=80)

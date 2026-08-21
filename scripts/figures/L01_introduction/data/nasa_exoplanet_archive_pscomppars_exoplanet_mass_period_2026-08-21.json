@@ -1,0 +1,26 @@
+{
+  "source": "NASA Exoplanet Archive (Caltech-IPAC)",
+  "endpoint": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync",
+  "table": "pscomppars",
+  "adql_query": "select pl_name, pl_bmassj, pl_bmasse, pl_orbper, discoverymethod from pscomppars",
+  "retrieved_utc": "2026-08-21T08:10:48Z",
+  "retrieved_date": "2026-08-21",
+  "n_rows": 6354,
+  "columns": [
+    "pl_name",
+    "pl_bmassj",
+    "pl_bmasse",
+    "pl_orbper",
+    "discoverymethod"
+  ],
+  "column_descriptions": {
+    "pl_name": "Planet name (string)",
+    "pl_bmassj": "Best-determined mass or M sin i, Jupiter masses",
+    "pl_bmasse": "Best-determined mass or M sin i, Earth masses",
+    "pl_orbper": "Orbital period (days)",
+    "discoverymethod": "Discovery method (string)"
+  },
+  "citation_key": "NASAExoArchive2025",
+  "purpose": "Fig. 2.11 (fig:exoplanet-mass-period): planet mass vs orbital period scatter, by method",
+  "license_note": "NASA Exoplanet Archive data are public domain. Cite the Archive (Akeson et al. 2013) and the individual discovery papers as appropriate."
+}

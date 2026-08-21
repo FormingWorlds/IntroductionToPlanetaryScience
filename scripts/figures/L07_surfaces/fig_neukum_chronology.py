@@ -99,7 +99,7 @@ def make_plot(show_readoff: bool = True) -> Path:
             fontsize=12, va="center",
             bbox=dict(boxstyle="round,pad=0.35", facecolor="white",
                       edgecolor="0.7", alpha=1.0))
-    ax.text(0.16, 1.05e-1,
+    ax.text(0.16, 8.6e-2,
             f"$a = {_sci(A_EXP)}$ km$^{{-2}}$\n"
             f"$\\lambda = {LAMBDA:g}$ Gyr$^{{-1}}$\n"
             f"$b = {_sci(B_LIN)}$ km$^{{-2}}$ Gyr$^{{-1}}$",

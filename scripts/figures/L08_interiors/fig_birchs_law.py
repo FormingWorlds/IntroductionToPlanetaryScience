@@ -63,9 +63,19 @@ def make_plot() -> Path:
 
     ax.plot(main_x, main_y, "o", color="#1f3a5f", ms=11,
             mec="black", mew=0.4, zorder=5)
+
+    # Points sitting close to the trend line need their label pushed off
+    # the line rather than the default sideways offset; (dx, dy, ha, va).
+    LABEL_OVERRIDE = {
+        "Forsterite":  (0, 10, "center", "bottom"),
+        "Periclase":   (-9, 0, "right", "center"),
+        "Ringwoodite": (-8, 14, "center", "bottom"),
+        "Corundum":    (0, 10, "center", "bottom"),
+    }
     for x, y, n in zip(main_x, main_y, main_n):
-        ax.annotate(n, xy=(x, y), xytext=(8, 0), textcoords="offset points",
-                    fontsize=9, va="center")
+        dx, dy, ha, va = LABEL_OVERRIDE.get(n, (8, 0, "left", "center"))
+        ax.annotate(n, xy=(x, y), xytext=(dx, dy), textcoords="offset points",
+                    fontsize=9, ha=ha, va=va)
 
     # Fayalite outlier in different colour, with annotation
     if out_x:
@@ -77,9 +87,10 @@ def make_plot() -> Path:
         # Annotation arrow showing the offset
         ax.annotate("Higher mean atomic\nmass (Fe-rich)\noffsets the trend",
                     xy=(out_x[0] - 0.05, out_y[0] + 0.2),
-                    xytext=(2.7, 7.7),
+                    xytext=(3.3, 6.35),
                     fontsize=9, color="#7a2a2a", ha="left", va="center",
-                    arrowprops=dict(arrowstyle="->", color="#7a2a2a", lw=0.7))
+                    arrowprops=dict(arrowstyle="->", color="#7a2a2a", lw=0.7,
+                                    shrinkA=4))
 
     ax.set_xlim(2.3, 4.6)
     ax.set_ylim(5, 11.5)

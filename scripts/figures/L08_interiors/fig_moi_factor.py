@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib import cm
 
-from scripts.figures._shared.style import apply_style, save_figure
+from scripts.figures._shared.style import apply_style, save_figure, text_color_on
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -46,10 +46,11 @@ def make_plot() -> Path:
            color=colors, edgecolor="black", lw=0.5,
            ecolor="black", error_kw=dict(lw=1.0))
 
-    # Numerical value labels inside or above each bar
-    for xi, v, err in zip(x, vals, errs):
+    # Numerical value labels inside each bar, colour picked per bar for
+    # WCAG contrast against that bar's fill
+    for xi, v, err, fill in zip(x, vals, errs, colors):
         ax.text(xi, v - 0.012, f"{v:.3f}", ha="center", va="top",
-                color="white", fontsize=10, weight="bold")
+                color=text_color_on(fill), fontsize=10, weight="bold")
 
     ax.axhline(UNIFORM_VALUE, color="#d62728", linestyle="--", lw=1.6)
     ax.text(len(bodies) - 0.5, UNIFORM_VALUE + 0.003,
