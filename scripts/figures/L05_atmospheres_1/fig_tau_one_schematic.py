@@ -81,12 +81,17 @@ def panel_b(ax) -> None:
             bbox=dict(facecolor="white", edgecolor="none", pad=1.5,
                       alpha=0.85))
 
-    # Deep IR photons reabsorbed (red arrow stops at tau=1);
-    # both arrows stay right of the reabsorbed label box
+    # Deep IR photons reabsorbed: the upward path ends at an absorption
+    # point (dot) below tau=1 and the arrowhead returns downward, so the
+    # photon visibly does not escape; paths stay right of the label box
     for x_ in (0.24, 0.38):
+        ax.plot([x_, x_], [0.18, 0.47], color=RED, lw=1.4,
+                solid_capstyle="round")
+        ax.plot(x_, 0.47, "o", ms=5, color=RED)
         ax.add_patch(FancyArrowPatch(
-            (x_, 0.18), (x_, 0.50),
-            arrowstyle="->", mutation_scale=12, color=RED, lw=1.4))
+            (x_, 0.47), (x_ + 0.055, 0.30),
+            arrowstyle="->", mutation_scale=12, color=RED, lw=1.4,
+            connectionstyle="arc3,rad=-0.35"))
     ax.text(0.05, 0.36, "deep IR\nphotons\nreabsorbed",
             fontsize=9, ha="left", va="center", color=RED)
 
