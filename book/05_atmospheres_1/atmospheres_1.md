@@ -311,7 +311,15 @@ When a beam of radiation passes through an atmosphere, three things can happen:
 
 2. **Emission:** By Kirchhoff's law, any gas that absorbs radiation at a given wavelength also emits at that wavelength when it is warm. This thermal emission is the mechanism by which the atmosphere radiates energy to space.
 
-3. **Scattering:** Photons are redirected without being absorbed. Rayleigh scattering by $\mathrm{N_2}$ and $\mathrm{O_2}$ (which goes as $\lambda^{-4}$) explains why the sky is blue and sunsets are red. Mie scattering by larger particles (aerosols, cloud droplets) is less wavelength-dependent.
+3. **Scattering:** Photons are redirected without being absorbed. Rayleigh scattering by $\mathrm{N_2}$ and $\mathrm{O_2}$ (which goes as $\lambda^{-4}$) explains why the sky is blue and sunsets are red ({numref}`fig:rayleigh-scattering`). Mie scattering by larger particles (aerosols, cloud droplets) is less wavelength-dependent.
+
+```{figure} figures/rayleigh_scattering.avif
+:name: fig:rayleigh-scattering
+:width: 100%
+:align: center
+
+Rayleigh scattering and the colour of the sky. Panel (a): two sunlight paths to the same observer, with the atmosphere thickness exaggerated for clarity. At noon the beam crosses the atmosphere nearly vertically and loses much less blue light to scattering than at sunset; the scattered blue reaches the eye from every direction, so the sky looks blue. At sunset the beam follows a slant path roughly 40 times longer (the tangent-path estimate $\sqrt{2R/H} \approx 40$ for a scale height of $H \approx 8.5$ km), so most of the blue is scattered out before arrival and the transmitted light is reddened. Panel (b): relative Rayleigh scattering cross-section $\sigma \propto \lambda^{-4}$ across the visible band, normalised to 550 nm; blue light (450 nm) is scattered about 4.4 times more strongly than red light (650 nm). Plot generated for this course.
+```
 
 The wavelength dependence of stellar versus planetary emission is the physical basis of the greenhouse effect ({numref}`fig:blackbody-spectrum`): the Sun radiates predominantly in the visible while a $\sim 300$ K planet radiates in the thermal infrared, and atmospheric gases can be opaque at one set of wavelengths while transparent at the other.
 
