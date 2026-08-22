@@ -230,7 +230,7 @@ where $c_p$ is the specific heat capacity at constant pressure. For Earth, $g = 
 :width: 100%
 :align: center
 
-Dry adiabatic lapse rate ($\Gamma_d = g/c_p \approx 9.8$ K km$^{-1}$, dashed) compared with a representative saturated moist adiabat ($\sim 5$ K km$^{-1}$ in the warm lower troposphere, dotted) and the observed mean Earth profile (US Standard Atmosphere 1976, solid). The moist adiabat is shallower than the dry adiabat because condensing water vapour releases latent heat to the rising parcel; the observed mean ($\sim 6.5$ K km$^{-1}$) lies between the two limits. Above the tropopause the adiabats no longer apply: the actual profile becomes nearly isothermal and then warms in the stratosphere.
+Dry adiabatic lapse rate ($\Gamma_d = g/c_p \approx 9.8$ K km$^{-1}$, dashed) compared with a representative saturated moist adiabat ($\sim 5$ K km$^{-1}$ in the warm lower troposphere, dotted) and the US Standard Atmosphere 1976 reference profile (solid), a defined standard for year-round midlatitude conditions {cite:p}`USStandardAtmosphere1976`. The moist adiabat is shallower than the dry adiabat because condensing water vapour releases latent heat to the rising parcel; the reference profile's tropospheric lapse rate (6.5 K km$^{-1}$, close to the observed midlatitude mean) lies between the two limits. Above the tropopause the adiabats no longer apply: the profile becomes nearly isothermal and then warms in the stratosphere.
 ```
 
 Earth's troposphere extends from the surface to the **tropopause** at $\sim$12 km altitude (varying from $\sim$8 km at the poles to $\sim$17 km at the equator).
@@ -497,7 +497,7 @@ The **exobase** ({numref}`fig:exobase`) is the altitude at which the mean free p
 :width: 100%
 :align: center
 
-The exobase as the altitude where the mean free path $\ell$ (blue) equals the pressure scale height $H$ (red dashed) in Earth's upper atmosphere. Below the crossing (blue shading) the atmosphere is collisional (thermosphere); above it (orange shading) the atmosphere is effectively collisionless (exosphere) and ballistic trajectories carry individual molecules to escape. The crossing altitude is approximately 450 to 500 km for present-day Earth, depending on solar activity and exobase temperature. Plot generated for this course using the US Standard Atmosphere 1976 + MSIS-86 number density and an effective cross-section $\sigma = 10^{-18}\ \mathrm{m}^2$.
+The exobase as the altitude where the mean free path $\ell$ (blue) equals the pressure scale height $H$ (red dashed) in Earth's upper atmosphere. Below the crossing (blue shading) the atmosphere is collisional (thermosphere); above it (orange shading) the atmosphere is effectively collisionless (exosphere) and ballistic trajectories carry individual molecules to escape. The crossing altitude is approximately 450 to 500 km for present-day Earth, depending on solar activity and exobase temperature. Plot generated for this course using the US Standard Atmosphere 1976 {cite:p}`USStandardAtmosphere1976` + MSIS-86 number density and an effective cross-section $\sigma = 10^{-18}\ \mathrm{m}^2$.
 ```
 
 The key parameter governing Jeans escape is the **Jeans escape parameter** $\lambda_J$, defined at the exobase:

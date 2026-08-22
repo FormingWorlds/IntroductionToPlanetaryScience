@@ -8,8 +8,8 @@ temperature vs altitude up to 18 km.
 Caption / figure id : `fig:dry-moist-adiabat`
 Markdown source     : book/05_atmospheres_1/atmospheres_1.md
 
-The "observed" curve is the USSA76 piecewise-linear definition, not
-measured data; layer breakpoints are tabulated in the standard.
+The solid curve is the USSA76 piecewise-linear definition (Table 4
+of NOAA-S/T 76-1562), a defined standard rather than measured data.
 The dry adiabat anchors at the surface (288.15 K, 0 km). The moist
 adiabat is approximated as 5 K/km below the tropopause, then frozen
 to the dry-adiabat-anchored isothermal value above 11 km.
@@ -75,7 +75,7 @@ def make_plot() -> Path:
     ax.plot(T_moist, z, ":", lw=2.0, color="#1f77b4",
             label=r"Saturated moist adiabat ($\sim 5$ K km$^{-1}$)")
     ax.plot(T_obs, z, "-", lw=2.0, color="#1f77b4",
-            label="Observed mean (US Standard 1976)")
+            label="US Standard Atmosphere 1976")
 
     ax.axhline(z_trop, color="0.7", linestyle=":", lw=0.8)
     ax.text(298, z_trop + 0.2, "tropopause", color="0.5",
