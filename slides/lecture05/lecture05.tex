@@ -849,23 +849,23 @@
 
 \begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{escape_regime_diagram}}\\
-  {\footnotesize Escape regimes as a function of Jeans parameter and stellar EUV flux. Course figure.}
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{escape_processes_gronoff2020}}\\
+  {\footnotesize The main atmospheric escape processes. Gronoff et al.\ (2020).}
 \end{frame}
 
-\begin{frame}{Reading the escape regimes}
+\begin{frame}{Reading the escape processes}
   \begin{columns}[T]
     \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{escape_regime_diagram}}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{escape_processes_gronoff2020}}
     \column{0.50\textwidth}
-    \small
+    \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
-      \item Two axes decide the fate: gravitational binding ($\lambda_J$, horizontal) and EUV heating (vertical).
-      \item Atomic H on Earth and Mars sits in the Jeans regime today; $\mathrm{N_2}$ on Titan and $\mathrm{CO_2}$ on Mars are retained.
-      \item $\mathrm{H_2}$ on a sub-Neptune (Earth--Neptune size) enters hydrodynamic outflow, driven by its saturated star (X-ray peak).
+      \item Centre: thermal (Jeans, hydrodynamic), photochemical, and bulk ion escape act on every planet, powered mainly by stellar EUV.
+      \item Left, unmagnetised (Venus, Mars): the stellar wind hits the atmosphere directly; sputtering, ion pickup, charge exchange.
+      \item Right, magnetised (Earth): the field deflects the wind but opens ionospheric outflow and trapped-ion charge exchange.
     \end{itemize}
     \vskip2pt\relax
-    \keyresult{Two numbers place every species on every planet into one of three fates: outflow, leak, or retention.}
+    \keyresult{A magnetic field does not switch escape off; it selects which loss processes operate.}
   \end{columns}
 \end{frame}
 
@@ -945,6 +945,28 @@
     \item Leading explanation for the exoplanet \textbf{radius valley}\\
     (deficit at $\sim$1.5--2~$\Rearth$; Lecture~13)
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{hot_jupiter_outflow_tripathi2015}}\\
+  {\footnotesize Simulated hydrodynamic outflow from a hot Jupiter. Owen (2019); simulation by Tripathi et al.\ (2015).}
+\end{frame}
+
+\begin{frame}{Reading the outflow simulation}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{hot_jupiter_outflow_tripathi2015}}
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Colour: neutral hydrogen fraction; arrows: flow velocity. The star is to the left; axes in planetary radii.
+      \item Day-side gas is heated, ionised, and accelerated away as a wind that wraps around the terminator.
+      \item A partially neutral wake trails on the night side; the shear against it produces Kelvin-Helmholtz rolls near $x \approx 1\,R_p$.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{The whole upper atmosphere leaves as a fluid wind, not a molecule-by-molecule leak.}
+  \end{columns}
 \end{frame}
 
 % ── Evaporation of primary atmospheres ──────────────────

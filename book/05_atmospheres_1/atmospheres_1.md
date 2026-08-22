@@ -365,7 +365,7 @@ Just as a star has a **photosphere**, the layer from which photons escape to spa
 :width: 100%
 :align: center
 
-The atmospheric "photosphere" concept. (a) Beer–Lambert attenuation: the transmitted intensity decreases exponentially with optical depth, $I/I_0 = e^{-\tau}$ (Eq. {eq}`eq:beer-lambert`); the $\tau = 1$ level transmits a fraction $1/e \approx 0.37$ of the incident intensity. (b) An infrared photon emitted from deep in the atmosphere ($\tau \gg 1$) is absorbed before reaching space; only photons emitted from $\tau \lesssim 1$ escape freely. The effective emission level at $\tau \approx 1$ sets the planet's effective temperature as observed from space.
+The atmospheric "photosphere" concept. (a) Beer–Lambert attenuation: the transmitted intensity decreases exponentially with optical depth, $I/I_0 = e^{-\tau}$ (Eq. {eq}`eq:beer-lambert`); the $\tau = 1$ level transmits a fraction $1/e \approx 0.37$ of the incident intensity. (b) An infrared photon emitted from deep in the atmosphere ($\tau \gg 1$) is absorbed before reaching space and re-emitted in a random direction (the short arrows mark possible re-emission directions); only photons emitted from $\tau \lesssim 1$ escape freely. The effective emission level at $\tau \approx 1$ sets the planet's effective temperature as observed from space.
 ```
 
 
@@ -484,14 +484,14 @@ Energy budget of the one-layer greenhouse model. Stellar shortwave flux $(1-A)F_
 
 An atmosphere is not permanent. Over geological time, gas molecules can be lost to space through several physical mechanisms. The balance between outgassing supply and escape loss determines a planet's atmospheric mass and composition over its history {cite:p}`Lammer2008`.
 
-The dominant escape regime for a given planet-species pair depends on two quantities: the **Jeans escape parameter** $\lambda_J$ (the ratio of gravitational binding energy to thermal energy at the exobase, the altitude above which the atmosphere becomes collisionless) and the incident **EUV flux** from the host star (which heats the upper atmosphere and drives bulk outflow). Low $\lambda_J$ or high EUV flux pushes the system into hydrodynamic outflow, a bulk, wind-like escape of the entire upper atmosphere; high $\lambda_J$ with low EUV flux corresponds to the retention regime in which escape is negligible on Gyr timescales. The three regimes and representative species-planet pairs are shown in {numref}`fig:escape-regime`.
+The dominant escape regime for a given planet-species pair depends on two quantities: the **Jeans escape parameter** $\lambda_J$ (the ratio of gravitational binding energy to thermal energy at the exobase, the altitude above which the atmosphere becomes collisionless) and the incident **EUV flux** from the host star (which heats the upper atmosphere and drives bulk outflow). Low $\lambda_J$ or high EUV flux pushes the system into hydrodynamic outflow, a bulk, wind-like escape of the entire upper atmosphere; high $\lambda_J$ with low EUV flux corresponds to the retention regime in which escape is negligible on Gyr timescales. Thermal escape is not the only loss channel: the stellar wind and a planetary magnetic field enable or suppress several additional escape processes, summarised in {numref}`fig:escape-overview`.
 
-```{figure} figures/escape_regime_diagram.avif
-:name: fig:escape-regime
+```{figure} figures/escape_processes_gronoff2020.avif
+:name: fig:escape-overview
 :width: 100%
 :align: center
 
-Schematic regime diagram for atmospheric escape as a function of the Jeans parameter $\lambda_J = v_\mathrm{esc}^2/v_\mathrm{th}^2$ (x-axis) and stellar EUV flux in units of the present-day Earth value (y-axis). Three regimes are shaded: **hydrodynamic outflow** (left column, low $\lambda_J$, and top row, high EUV); **Jeans thermal escape** (centre, moderate $\lambda_J$ at present-day flux); **retention** (right column, negligible escape over Gyr). Marker positions show representative species-planet pairs: atomic H on Earth and Mars sits in the Jeans regime; $\mathrm{N_2}$ on Titan and $\mathrm{CO_2}$ on Mars are retained; $\mathrm{H_2}$ on an early sub-Neptune (a planet between Earth and Neptune in size, typically retaining a thin H/He envelope) around a young active star is driven into hydrodynamic outflow. Exoplanets with directly observed escaping atmospheres populate the EUV-driven band: atomic H on the hot Jupiter HD 209458 b {cite:p}`VidalMadjar2003` and on the warm Neptune GJ 436 b {cite:p}`Ehrenreich2015`, and He on the inflated super-Neptune WASP-107 b {cite:p}`Spake2018`; their positions are order-of-magnitude estimates. Schematic after {cite:t}`Hunten1987` and {cite:t}`Tian2009`; boundaries are approximate.
+Overview of the main atmospheric escape processes and the conditions under which each operates. The central column lists the processes that act on both magnetised and unmagnetised planets, powered mainly by the stellar EUV flux: thermal escape (Jeans and hydrodynamic), photochemical escape, and bulk ion escape. On unmagnetised planets such as Venus and Mars (left), the stellar wind interacts directly with the upper atmosphere and drives sputtering, ion pickup, and charge exchange. On magnetised planets such as Earth (right), the magnetic field deflects the stellar wind but channels ions into ionospheric outflow along open field lines and permits charge exchange of magnetospherically trapped ions. Each process operates either near the exobase, the altitude above which the atmosphere becomes collisionless, or in the extended region above it. Reproduced from {cite:t}`Gronoff2020`, Fig. 2.
 ```
 
 ### Thermal (Jeans) escape
@@ -548,7 +548,17 @@ For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so lar
 
 ### Hydrodynamic escape
 
-When the energy input to the upper atmosphere is very large (for example, from intense **extreme ultraviolet (EUV)** radiation from a young, active star), the escape can transition from the slow, molecule-by-molecule Jeans process to a bulk **hydrodynamic outflow** in which the entire upper atmosphere flows outward like a wind. This is analogous to the solar wind but driven by stellar heating rather than the star's own thermal energy {cite:p}`Hunten1987`.
+When the energy input to the upper atmosphere is very large (for example, from intense **extreme ultraviolet (EUV)** radiation from a young, active star), the escape can transition from the slow, molecule-by-molecule Jeans process to a bulk **hydrodynamic outflow** in which the entire upper atmosphere flows outward like a wind. This is analogous to the solar wind but driven by stellar heating rather than the star's own thermal energy {cite:p}`Hunten1987`. {numref}`fig:hydro-outflow` shows the structure of such an outflow from a 3D radiation-hydrodynamic simulation of a hot Jupiter: gas streams off the irradiated day side, flows around the terminator, and becomes progressively ionised as it accelerates away from the planet.
+
+```{figure} figures/hot_jupiter_outflow_tripathi2015.avif
+:name: fig:hydro-outflow
+:width: 80%
+:align: center
+
+Velocity field (arrows) and neutral hydrogen fraction (colour scale) of an EUV-driven hydrodynamic outflow from a hot Jupiter (radius $2.14\ \Rjup$, mass $0.53\ \Mjup$), from the 3D radiation-hydrodynamic simulations of {cite:t}`Tripathi2015`. Axes are in units of the planetary radius $R_p$; the star is to the left. The bound atmosphere (dark red, neutral) is compressed on the irradiated day side, and the heated gas accelerates outward, flowing around the terminator into a partially neutral wake on the night side (right). The shear between the day-side wind and the night-side gas produces the Kelvin-Helmholtz rolls visible near $x \approx 1\,R_p$; away from the planet the outflow is almost fully ionised (light shading). Reproduced from {cite:t}`Owen2019`, Fig. 2.
+```
+
+Hydrodynamic outflows of this kind are observed directly. Ultraviolet transit spectroscopy has detected extended envelopes of escaping atomic hydrogen around the hot Jupiter HD 209458 b {cite:p}`VidalMadjar2003` and the warm Neptune GJ 436 b {cite:p}`Ehrenreich2015`, and near-infrared spectroscopy has revealed escaping helium around the warm super-Neptune WASP-107 b {cite:p}`Spake2018`.
 
 Hydrodynamic escape is most important during a planet's first few hundred million years, when the host star's EUV luminosity is 10–100 times higher than at present. It can strip hydrogen-rich primary atmospheres from planets up to several Earth masses, and is the leading explanation for the observed **radius valley** in the exoplanet population ({numref}`fig:owen-radius-valley`), the deficit of planets with radii between $\sim$1.5 and $2 \, \Rearth$ ({ref}`Lecture 13 <lecture13>`). During hydrodynamic escape, the outflowing hydrogen can also **drag along heavier species** (such as He, C, N, O), leading to more extensive atmospheric loss than Jeans escape alone would produce {cite:p}`Hunten1987`.
 
@@ -629,7 +639,7 @@ $$
 v_{\mathrm{esc}} \gtrsim 6 \, v_{\mathrm{th}}
 $$
 
-A planet retains a given gas species if its escape velocity exceeds roughly 6 times the thermal velocity of that species (corresponding to $\lambda_J \gtrsim 36$, deep inside the retention regime of {numref}`fig:escape-regime`, which keeps Jeans escape negligible over billions of years).
+A planet retains a given gas species if its escape velocity exceeds roughly 6 times the thermal velocity of that species (corresponding to $\lambda_J \gtrsim 36$, which keeps Jeans escape negligible over billions of years).
 
 ### Solar system trends
 
@@ -692,7 +702,7 @@ Evolutionary tracks for stellar X-ray luminosity for slow, medium, and fast rota
 JWST/MIRI 15 $\mu$m thermal emission measurement of TRAPPIST-1 b (black point with error bars labelled "Measured F1500W") compared with predicted spectra. The measured dayside flux matches a bare-rock blackbody at $T_B = 503$ K (blue curve), close to the 508 K blackbody predicted for zero heat redistribution and no atmosphere (green curve), and is significantly above the 400 K isotropic-redistribution blackbody (orange) that would be expected for an efficient atmospheric heat engine. The second black point ("Expected F1280W") marks the flux the bare-rock fit predicts in the neighbouring 12.8 $\mu$m band. Thick atmospheres (e.g. 93 bar $\mathrm{CO_2}$, cyan; 10 bar $\mathrm{O_2}/\mathrm{CO_2}$, magenta) absorb in the 15 $\mu$m band and would suppress the observed flux by a factor of two or more, inconsistent with the data. The result is best explained by little-to-no redistribution from a thin or absent atmosphere on the dayside of TRAPPIST-1 b. Figure from {cite:t}`Greene2023`.
 ```
 
-For solar system bodies, the MAVEN mission at Mars has quantified present-day atmospheric loss rates for multiple species, establishing that ion escape driven by the solar wind dominates over Jeans escape for most atmospheric constituents {cite:p}`Jakosky2018`. Integrated over Mars's history, these loss rates can account for the removal of a substantial fraction of Mars's early atmosphere, though the total amount of $\mathrm{CO_2}$ lost to space versus sequestered in surface carbonates and the polar caps remains debated ({ref}`Lecture 10 <lecture10>`).
+For solar system bodies, the MAVEN mission at Mars has quantified present-day atmospheric loss rates for multiple species, establishing that ion escape driven by the solar wind dominates over Jeans escape for most atmospheric constituents {cite:p}`Jakosky2018`. Integrated over Mars's history, these loss rates can account for the removal of a substantial fraction of Mars's early atmosphere, though the total amount of $\mathrm{CO_2}$ lost to space versus sequestered in surface carbonates and the polar caps remains debated ({ref}`Lecture 10 <lecture10>`). Thermal escape of carbon under the strong EUV flux of the young Sun may in addition have prevented a dense $\mathrm{CO_2}$ atmosphere from persisting through Mars's first few hundred million years {cite:p}`Tian2009`.
 
 These results reflect a central theme of atmospheric science: a planet's ability to retain its atmosphere depends not only on its mass and temperature (the Jeans escape criterion derived in this lecture) but also on the intensity of stellar radiation, the presence or absence of a global magnetic field ({ref}`Lecture 4 <lecture04>`), and the planet's geological activity.
 
