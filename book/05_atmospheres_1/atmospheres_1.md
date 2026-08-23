@@ -531,7 +531,7 @@ where $n_{\mathrm{exo}}$ is the number density at the exobase. The exponential f
 :width: 100%
 :align: center
 
-Maxwell–Boltzmann speed distribution for atomic hydrogen at the exobase temperatures of Earth ($T_\mathrm{exo} = 1000$ K, blue) and Mars ($T_\mathrm{exo} = 270$ K, red). Dashed vertical lines mark the escape velocity $v_\mathrm{esc}$ at the exobase of each planet ($\sim$10.6 km s$^{-1}$ and $\sim$4.9 km s$^{-1}$ respectively). Only molecules in the high-speed tail above $v_\mathrm{esc}$ (shaded) contribute to Jeans escape; the exponential dependence of the tail area on $\lambda_J = v_\mathrm{esc}^2 / v_\mathrm{th}^2$ explains why escape rates vary by orders of magnitude across species and bodies.
+Maxwell–Boltzmann speed distribution for atomic hydrogen at the exobase temperatures of Earth ($T_\mathrm{exo} = 1000$ K, blue) and Mars ($T_\mathrm{exo} = 270$ K, red). Dashed vertical lines mark the escape velocity $v_\mathrm{esc}$ at the exobase of each planet: 10.8 km s$^{-1}$ at 500 km altitude for Earth, and 4.9 km s$^{-1}$ at 200 km altitude for Mars. These are the same exobase altitudes used for the $\lambda_J$ values tabulated below. Only molecules in the high-speed tail above $v_\mathrm{esc}$ (shaded) contribute to Jeans escape; the exponential dependence of the tail area on $\lambda_J = v_\mathrm{esc}^2 / v_\mathrm{th}^2$ explains why escape rates vary by orders of magnitude across species and bodies.
 ```
 
 The following table illustrates $\lambda_J$ for several atmospheric species on Earth and Mars, evaluated at the exobase: $T_\mathrm{exo} = 1000$ K and $r_\mathrm{exo} = R_\oplus + 500$ km for Earth, $T_\mathrm{exo} = 270$ K and $r_\mathrm{exo} = R_M + 200$ km for Mars.
@@ -540,7 +540,7 @@ The following table illustrates $\lambda_J$ for several atmospheric species on E
 |---------|:-------:|:--------------------:|:-------------------:|
 | H | 1 | 7.0 | 5.3 |
 | $\mathrm{H_2}$ | 2 | 14 | 11 |
-| He | 4 | 28 | 22 |
+| He | 4 | 28 | 21 |
 | $\mathrm{N_2}$ | 28 | 200 | 150 |
 | $\mathrm{CO_2}$ | 44 | 310 | 230 |
 
@@ -577,7 +577,7 @@ The observational counterpart was established by {cite:t}`Fulton2017`, who measu
 :width: 100%
 :align: center
 
-Observed radius distribution of short-period ($P < 100$ days) small planets from the California-Kepler Survey {cite:p}`Fulton2017`. Two distinct populations appear: a super-Earth peak near $1.3\ \Rearth$ (likely stripped rocky cores) and a sub-Neptune peak near $2.4\ \Rearth$ (cores with retained H/He envelopes of a few percent by mass). The gap between them near $1.8\ \Rearth$ is the observational signature of the radius valley predicted by photoevaporation models (cf. {numref}`fig:owen-radius-valley`). Completeness-corrected histogram reproduced from {cite:t}`Fulton2017`, Fig. 7 (top panel); the light grey region below $1.14\ \Rearth$ suffers from low completeness, and the population labels are added here.
+Observed radius distribution of short-period ($P < 100$ days) small planets from the California-Kepler Survey {cite:p}`Fulton2017`. Two distinct populations appear: a super-Earth peak near $1.3\ \Rearth$ (likely stripped rocky cores) and a sub-Neptune peak near $2.4\ \Rearth$ (cores with retained H/He envelopes of a few percent by mass). The gap between them near $1.8\ \Rearth$ is the observational signature of the radius valley predicted by photoevaporation models (cf. {numref}`fig:owen-radius-valley`). Completeness-corrected histogram reproduced from {cite:t}`Fulton2017`, Fig. 7 (top panel); the light grey portion of the histogram, below about $1.1\ \Rearth$, is where survey completeness is lowest, and the population labels are added here.
 ```
 
 ### Non-thermal escape mechanisms

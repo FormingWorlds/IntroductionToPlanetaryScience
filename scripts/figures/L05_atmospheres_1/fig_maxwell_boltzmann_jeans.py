@@ -3,9 +3,10 @@
 Maxwell-Boltzmann speed distribution f(v) for atomic hydrogen at the
 exobase temperatures of Earth (T_exo = 1000 K) and Mars
 (T_exo = 270 K), with vertical dashed lines at the local escape
-velocities (v_esc ~ 10.6 km/s for Earth, ~4.9 km/s for Mars at the
-exobase ~500 km altitude). The high-speed tail above v_esc is the
-Jeans escape population.
+speed. Each escape speed is computed from the same exobase radius the
+chapter's Jeans-parameter table uses, 500 km altitude for Earth and
+200 km for Mars, giving ~10.8 km/s and ~4.9 km/s. The high-speed tail
+above v_esc is the Jeans escape population.
 
 Caption / figure id : `fig:mb-jeans`
 Markdown source     : book/05_atmospheres_1/atmospheres_1.md
@@ -31,11 +32,38 @@ OUT_AVIF = REPO_ROOT / "book/05_atmospheres_1/figures/maxwell_boltzmann_jeans.av
 # Constants
 K_B = 1.380649e-23      # J/K
 M_H = 1.6735575e-27     # kg, atomic hydrogen mass
+GM_EARTH = 3.986004418e14   # m^3/s^2
+GM_MARS = 4.282837e13       # m^3/s^2
+R_EARTH = 6371.0e3      # m, volumetric mean radius
+R_MARS = 3389.5e3       # m, volumetric mean radius
+Z_EXO_EARTH = 500.0e3   # m, exobase altitude used by the L05 lambda_J table
+Z_EXO_MARS = 200.0e3    # m
 
-# Per-body parameters (T_exo in K, v_esc at exobase in m/s)
+
+def escape_speed(gm: float, radius: float) -> float:
+    """Escape speed at a given radius.
+
+    Parameters
+    ----------
+    gm : float
+        Standard gravitational parameter GM of the body, m^3 s^-2.
+    radius : float
+        Distance from the body centre, m.
+
+    Returns
+    -------
+    float
+        Escape speed sqrt(2 GM / r), m s^-1.
+    """
+    return float(np.sqrt(2.0 * gm / radius))
+
+
+# Per-body parameters (T_exo in K, v_esc at the exobase in m/s)
 BODIES = [
-    ("Earth, $T_\\mathrm{exo} = 1000$ K", 1000.0, 10.6e3, "#1f77b4"),
-    ("Mars, $T_\\mathrm{exo} = 270$ K",   270.0,   4.9e3, "#d62728"),
+    ("Earth, $T_\\mathrm{exo} = 1000$ K", 1000.0,
+     escape_speed(GM_EARTH, R_EARTH + Z_EXO_EARTH), "#1f77b4"),
+    ("Mars, $T_\\mathrm{exo} = 270$ K", 270.0,
+     escape_speed(GM_MARS, R_MARS + Z_EXO_MARS), "#d62728"),
 ]
 
 
