@@ -164,14 +164,14 @@ $$
 D_t \approx D_{t,\text{Moon}} \cdot \frac{g_{\text{Moon}}}{g}
 $$ (eq:transition-diameter)
 
-where $D_{t,\text{Moon}} \approx 15$ km and $g_{\text{Moon}} = 1.62$ m s$^{-2}$ {cite:p}`Melosh2011`. On Earth ($g = 9.81$ m s$^{-2}$), this gravity-only scaling gives $D_t \approx 15 \times 1.62/9.81 \approx 2.5$ km; target rock strength shifts the transition between $\sim 2$ km in crystalline rock and $\sim 4$ km in sedimentary targets, but virtually all terrestrial craters larger than a few kilometres are complex. The morphological signature of a complex crater (central peak + terraced walls) is shown in {numref}`fig:crater-morphology`.
+where $D_{t,\text{Moon}} \approx 15$ km and $g_{\text{Moon}} = 1.62$ m s$^{-2}$ {cite:p}`Melosh2011`. On Earth ($g = 9.81$ m s$^{-2}$), this gravity-only scaling gives $D_t \approx 15 \times 1.62/9.81 \approx 2.5$ km; target rock strength shifts the transition between $\sim 2$ km in crystalline rock and $\sim 4$ km in sedimentary targets, but virtually all terrestrial craters larger than a few kilometres are complex. The central peak that gives a complex crater its morphological signature is shown in {numref}`fig:crater-morphology`.
 
 ```{figure} figures/crater_morphology.avif
 :name: fig:crater-morphology
 :width: 600px
 :align: center
 
-Oblique view of the central peak of Tycho Crater (~85 km diameter), imaged by NASA's Lunar Reconnaissance Orbiter Camera (LROC) in low Sun illumination. The prominent ~2 km tall central peak in the foreground formed by gravitational rebound of the crater floor immediately after the impact, and the surrounding rim shows the terraced walls characteristic of complex craters (visible as stepped scarps in the background). The transition from simple bowl-shaped craters to complex craters with central peaks and terraced walls occurs near $D_t \approx 15$ km on the Moon and scales inversely with surface gravity (Eq. {eq}`eq:transition-diameter`). Credit: NASA/GSFC/Arizona State University, public domain.
+Oblique view of the central peak of Tycho Crater (~85 km diameter), imaged by NASA's Lunar Reconnaissance Orbiter Camera (LROC) in low Sun illumination. The prominent ~2 km tall central peak in the foreground formed by gravitational rebound of the crater floor immediately after the impact; the rough terrain behind it is the hummocky interior of the crater, and the low Sun casts the peak's shadow across it. The transition from simple bowl-shaped craters to complex craters with central peaks and terraced walls occurs near $D_t \approx 15$ km on the Moon and scales inversely with surface gravity (Eq. {eq}`eq:transition-diameter`). Credit: NASA/GSFC/Arizona State University, public domain.
 ```
 
 
@@ -195,14 +195,14 @@ Key results from crater counting include:
 - Mars's southern highlands are heavily cratered ($\sim$4 Gyr), while the northern lowlands are much younger.
 - Venus has a remarkably **uniform** crater density across its entire surface, implying a mean surface age of $\sim$300–700 Myr, suggesting a global resurfacing event (see {ref}`Lecture 9 <lecture09>`).
 
-The contrast between heavily cratered farside highlands and smoother nearside maria is shown in {numref}`fig:crater-counting`; the calibrated lunar-chronology curve relating cumulative crater density to surface age is shown in {numref}`fig:neukum-chronology`.
+The heavily cratered lunar farside highlands are shown in {numref}`fig:crater-counting`; the calibrated lunar-chronology curve relating cumulative crater density to surface age is shown in {numref}`fig:neukum-chronology`.
 
 ```{figure} figures/crater_counting.avif
 :name: fig:crater-counting
 :width: 450px
 :align: center
 
-The lunar farside as imaged by NASA's Lunar Reconnaissance Orbiter, showing a heavily cratered surface. The high crater density of the farside highlands ($>$4 Gyr) contrasts with the smoother nearside maria (3.1–3.9 Gyr), illustrating how crater counting reveals relative and absolute surface ages. Forward references: crater chronology is applied to Mars in {ref}`Lecture 10 <lecture10>`. Credit: NASA/GSFC/Arizona State University, public domain.
+The lunar farside as imaged by NASA's Lunar Reconnaissance Orbiter, showing a heavily cratered surface. Almost the whole hemisphere is ancient highland crust ($>$4 Gyr); the few dark patches are small farside maria, and the large nearside maria (3.1–3.9 Gyr) lie on the opposite hemisphere and are not visible here. The difference in crater density between the two hemispheres is what crater counting turns into relative and absolute surface ages. Forward references: crater chronology is applied to Mars in {ref}`Lecture 10 <lecture10>`. Credit: NASA/GSFC/Arizona State University, public domain.
 ```
 
 ```{figure} figures/neukum_chronology.avif
@@ -373,7 +373,7 @@ Liquid water is the most powerful erosive agent on Earth, and evidence for past 
 
 ```{figure} figures/mars_outflow_aram.avif
 :name: fig:mars-outflow
-:width: 400px
+:width: 320px
 :align: center
 
 A Martian outflow channel cutting through Aram Chaos. The braided streamlined islands and broad scoured trough are the geomorphological signature of catastrophic flood discharges, plausibly fed by sudden release of subsurface ice or groundwater on early Mars. Such channels are tens of kilometres wide and hundreds of kilometres long, dwarfing any terrestrial flood feature, and are distinct from the dendritic valley networks ({numref}`fig:mars-valley-networks`) which formed under more sustained, lower-discharge conditions. Credit: NASA/JPL-Caltech/MSSS, public domain.
@@ -387,12 +387,12 @@ A Martian outflow channel cutting through Aram Chaos. The braided streamlined is
 Scale composite of three progressively enlarged crops from the post-landing surface image returned by ESA's Huygens probe on 14 January 2005, the only in-situ image ever taken from the surface of an outer-solar-system body. The rounded, decimetre-scale "rocks" in the foreground (bottom panel, shown at their actual apparent size) are blocks of water-ice rounded by methane fluvial transport; the surface is a damp dark plain of methane-soaked organic sediment in a dried-out riverbed. Together with the descent imagery showing dendritic drainage networks, this image confirmed that liquid methane actively shapes Titan's surface today. Credit: ESA/NASA/JPL-Caltech/University of Arizona, public domain.
 ```
 
-```{figure} figures/mars_valley_networks.avif
+```{figure} figures/mars_valley_networks_viking.avif
 :name: fig:mars-valley-networks
 :width: 600px
 :align: center
 
-Branching valley networks in the Martian highlands imaged by NASA's Viking Orbiter (PIA02810). The dendritic tributary pattern, with multiple stream orders feeding into trunk valleys, closely resembles terrestrial fluvial drainage and is among the strongest geomorphological evidence for sustained surface runoff (and hence precipitation) during the late Noachian to Hesperian on early Mars; for the Warrego Valles type locality, formation continued to $\lesssim$3.0 Ga {cite:p}`Ansan2006`. Such networks are concentrated in the ancient southern highlands and are central to the case that early Mars had a warmer and wetter climate than today. Credit: NASA/JPL/USGS, public domain.
+Fine dendritic channel networks dissecting the heavily cratered Martian highlands, imaged by the Viking Orbiters (detail from PIA00413, a composite of high-resolution monochrome frames with lower-resolution colour). The branching tributary pattern closely resembles terrestrial fluvial drainage and is among the strongest geomorphological evidence for sustained surface runoff (and hence precipitation) during the late Noachian to Hesperian on early Mars. Such networks are concentrated in the ancient southern highlands and are central to the case that early Mars had a warmer and wetter climate than today. Credit: NASA/JPL/USGS, public domain.
 ```
 
 ### Glacial processes
@@ -526,7 +526,7 @@ Hubble Space Telescope ultraviolet transit observations have reported candidate 
 :width: 450px
 :align: center
 
-Galileo SSI image of Europa's surface near Pwyll crater (the bright ray system at lower right), showing the network of dark double ridges and lineae that crisscross the moon's icy crust. The criss-crossing lineae record successive episodes of fracturing and resurfacing as tidal stresses flexed the brittle ice shell over a $\sim$100 km deep subsurface ocean {cite:p}`NimmoPappalardo2016`. Europa's crater density implies a mean surface age of only 40–90 Myr, making it among the youngest surfaces in the solar system. Credit: NASA/JPL-Caltech/University of Arizona/University of Colorado, public domain.
+Galileo SSI image of Europa's surface near Pwyll crater (the bright ray system in the lower centre, with the dark crater floor at its hub), showing the network of dark double ridges and lineae that crisscross the moon's icy crust. The criss-crossing lineae record successive episodes of fracturing and resurfacing as tidal stresses flexed the brittle ice shell over a $\sim$100 km deep subsurface ocean {cite:p}`NimmoPappalardo2016`. Europa's crater density implies a mean surface age of only 40–90 Myr, making it among the youngest surfaces in the solar system. Credit: NASA/JPL-Caltech/University of Arizona/University of Colorado, public domain.
 ```
 
 ### Triton
