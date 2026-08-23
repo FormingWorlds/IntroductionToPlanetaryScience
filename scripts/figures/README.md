@@ -18,7 +18,9 @@ you should be able to answer in seconds:
 
 `manifest.csv` is the index that ties figures, scripts, data files,
 and citation keys together. Update it whenever you add or migrate a
-figure.
+figure. Every row names a script that generates its figure, so a
+figure reproduced from a published paper has no row; its provenance
+lives in the caption and its BibTeX key.
 
 ## Directory layout
 
