@@ -78,7 +78,7 @@ def make_plot() -> Path:
     ax.plot(T_sl[-1], P_sl[-1], "o", color="black", ms=6, mfc="white",
             mew=1.2, zorder=5)
     ax.annotate("Ice Ih field ends near 0.2 GPa;\nhigh-pressure ice phases\nnot shown",
-                xy=(T_sl[-1], P_sl[-1]), xytext=(283, 7.5e8),
+                xy=(T_sl[-1], P_sl[-1]), xytext=(480, 9.5e8),
                 fontsize=8.5, color="0.35", ha="left", va="top",
                 arrowprops=dict(arrowstyle="-", color="0.5", lw=0.6))
 
