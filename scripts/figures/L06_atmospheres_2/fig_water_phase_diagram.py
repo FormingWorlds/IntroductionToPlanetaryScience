@@ -39,6 +39,11 @@ P_TP = 611.657   # Pa
 T_CRIT = 647.0   # K
 P_CRIT = 22.064e6  # Pa
 
+# Ice Ih / ice III / liquid triple point: the high-pressure end of the ice Ih
+# field, where the melting curve turns and higher-pressure ice phases begin.
+T_IH_END = 251.165  # K
+P_IH_END = 208.566e6  # Pa
+
 
 def cc_curve(T: np.ndarray, T_anchor: float, P_anchor: float, L: float) -> np.ndarray:
     return P_anchor * np.exp(-(L / R_V) * (1.0 / T - 1.0 / T_anchor))
@@ -48,29 +53,38 @@ def make_plot() -> Path:
     apply_style()
     fig, ax = plt.subplots(figsize=(8.5, 6.0))
 
-    # Liquid-vapour: T from triple point to critical
+    # Liquid-vapour (vaporisation): triple point to critical point.
     T_lv = np.linspace(T_TP, T_CRIT, 400)
     P_lv = cc_curve(T_lv, T_TP, P_TP, L_VAP)
     ax.plot(T_lv, P_lv, color="#1f77b4", lw=2.0,
-            label="Liquid-vapour")
+            label="Vaporisation (liquid-vapour)")
 
-    # Solid-vapour (sublimation): T from low to triple point
+    # Solid-vapour (sublimation): low temperature up to the triple point.
     T_sv = np.linspace(180.0, T_TP, 400)
     P_sv = cc_curve(T_sv, T_TP, P_TP, L_SUB)
     ax.plot(T_sv, P_sv, color="#2bbcd6", lw=2.0,
-            label="Solid-vapour (sublimation)")
+            label="Sublimation (solid-vapour)")
 
-    # Solid-liquid: dP/dT = L_fus / (T * DV); integrate from triple point
-    # P_sl(T) = P_TP + (L_fus / DV) * ln(T / T_TP)
-    T_sl = np.linspace(T_TP - 30, T_TP + 1, 400)
-    P_sl = P_TP + (L_FUS / DV_FUSION) * np.log(T_sl / T_TP)
-    ok = P_sl > 1e-2
-    ax.plot(T_sl[ok], P_sl[ok], color="black", lw=2.0,
-            label="Solid-liquid")
+    # Solid-liquid (melting): Clapeyron slope dP/dT = L_fus / (T DV).
+    # Invert to T(P) = T_TP exp((P - P_TP) DV / L_fus) and sample in
+    # pressure, so the near-vertical curve is anchored exactly at the
+    # triple point and stays well resolved along its steep length.
+    # DV_FUSION is the ice Ih value, so the curve stops where that field
+    # ends; past it the slope reverses and the curve would be wrong.
+    P_sl = np.logspace(np.log10(P_TP), np.log10(P_IH_END), 400)
+    T_sl = T_TP * np.exp((P_sl - P_TP) * DV_FUSION / L_FUS)
+    ax.plot(T_sl, P_sl, color="black", lw=2.0,
+            label="Melting (solid-liquid, ice Ih)")
+    ax.plot(T_sl[-1], P_sl[-1], "o", color="black", ms=6, mfc="white",
+            mew=1.2, zorder=5)
+    ax.annotate("Ice Ih field ends near 0.2 GPa;\nhigh-pressure ice phases\nnot shown",
+                xy=(T_sl[-1], P_sl[-1]), xytext=(283, 7.5e8),
+                fontsize=8.5, color="0.35", ha="left", va="top",
+                arrowprops=dict(arrowstyle="-", color="0.5", lw=0.6))
 
     # Triple point
     ax.plot(T_TP, P_TP, "o", color="black", ms=8, zorder=5)
-    ax.annotate(f"Triple point\n({T_TP:.2f} K, {P_TP:.0f} Pa)",
+    ax.annotate(f"Triple point\n({T_TP:.2f} K, {P_TP:.1f} Pa)",
                 xy=(T_TP, P_TP), xytext=(T_TP + 20, P_TP * 0.06),
                 fontsize=10, ha="left",
                 arrowprops=dict(arrowstyle="-", color="0.4", lw=0.6))

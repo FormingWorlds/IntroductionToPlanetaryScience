@@ -34,7 +34,7 @@ When $\mathrm{RH} = 100\%$, the air is saturated; when $\mathrm{RH} > 100\%$, it
 
 Saturation vapour pressure $P_{\mathrm{sat}}(T)$ as a function of temperature for the major condensable species in solar system atmospheres: $\mathrm{H_2O}$, $\mathrm{H_2SO_4}$, $\mathrm{NH_3}$, $\mathrm{CH_4}$, and $\mathrm{CO_2}$ (sublimation curve).
 The exponential temperature dependence predicted by the Clausius-Clapeyron equation (Eq. {eq}`eq:clausius-clapeyron`) is evident on the logarithmic vertical axis, and the species ordering mirrors the order in which each condenses in its host atmosphere.
-Coloured bands at the bottom mark the temperature ranges over which each species condenses on the relevant body.
+Coloured bands at the bottom mark the temperature ranges over which each species condenses: $\mathrm{H_2O}$ on Earth and Mars; $\mathrm{H_2SO_4}$ on Venus; $\mathrm{NH_3}$ on Jupiter and Saturn; $\mathrm{CH_4}$ on Titan, Uranus, and Neptune; and $\mathrm{CO_2}$ on Mars.
 Plot generated from thermodynamic data in {cite:p}`Catling2017` and {cite:p}`Pierrehumbert2010`.
 ```
 
@@ -46,7 +46,29 @@ Even when air is supersaturated, condensation does not happen instantly. Forming
 - **Homogeneous nucleation** (forming droplets from vapour alone, without any pre-existing surface) requires very high supersaturations (RH $\gg$ 100%) and is extremely rare in planetary atmospheres.
 - **Heterogeneous nucleation** (condensation onto pre-existing particles called **condensation nuclei**: dust grains, volcanic aerosols, sea salt, soot, cosmic ray ions) occurs at much lower supersaturations (RH $\gtrsim$ 100%) and is the dominant cloud formation mechanism on all planets.
 
-The availability of condensation nuclei therefore controls where and how easily clouds form. On Earth, the oceans and biosphere provide abundant nuclei. On Mars, wind-lofted mineral dust serves the same role. On the giant planets, **photochemical** hazes, aerosol particles formed when ultraviolet sunlight breaks apart atmospheric molecules whose fragments recombine into new compounds, provide nuclei for cloud formation deeper down. The energy-balance trade-off between the Kelvin (curvature) and Raoult (solute) terms is captured by the Köhler curves ({numref}`fig:kohler-curves`), which show why heterogeneous nucleation activates at only $\sim$0.04-0.4% supersaturation, while a pure-water droplet would need $\sim$12% even at $r = 10^{-2}\,\mu$m and far more at the nanometre size of a fresh embryo.
+The availability of condensation nuclei therefore controls where and how easily clouds form. On Earth, the oceans and biosphere provide abundant nuclei. On Mars, wind-lofted mineral dust serves the same role. On the giant planets, **photochemical** hazes, aerosol particles formed when ultraviolet sunlight breaks apart atmospheric molecules whose fragments recombine into new compounds, provide nuclei for cloud formation deeper down.
+
+Whether a given nucleus grows into a cloud droplet depends on two competing effects on the equilibrium vapour pressure at the droplet surface. The **Köhler equation** combines them: for a solution droplet of radius $r$, the saturation ratio at which the droplet neither grows nor evaporates is
+
+$$
+S(r) \approx 1 + \frac{A}{r} - \frac{B}{r^3},
+$$ (eq:kohler)
+
+where $S$ is the vapour pressure over the droplet divided by the saturation vapour pressure over a flat pure-water surface. The **Kelvin (curvature) term** $A/r$ raises the equilibrium vapour pressure over a convex surface, because a molecule on a tightly curved droplet has fewer neighbours to hold it than one on a flat surface. It diverges as $r \to 0$, so the smallest embryos demand the highest supersaturation. Its coefficient is
+
+$$
+A = \frac{2\sigma_w}{\rho_w R_v T},
+$$
+
+with $\sigma_w$ the surface tension of water, $\rho_w$ the liquid density, $R_v$ the specific gas constant of water vapour, and $T$ the temperature. The **Raoult (solute) term** $-B/r^3$ lowers the vapour pressure, because dissolved solute leaves fewer surface water molecules free to evaporate. The solution concentrates as the droplet shrinks, so this term steepens as $r^{-3}$ and dominates at small radius. Its coefficient is
+
+$$
+B = \frac{3\, i\, M_w\, m_s}{4\pi \rho_w M_s},
+$$
+
+with $i$ the van 't Hoff factor (the number of dissolved ions per solute formula unit), $m_s$ the solute mass, and $M_w$ and $M_s$ the molar masses of water and the solute. Because the curvature term wins at large radius and the solute term at small radius, $S(r)$ passes through a maximum, the **activation peak** at the critical radius $r_*$. A droplet held below $r_*$ rests in stable equilibrium as a haze particle; once it is pushed past $r_*$, growth becomes self-sustaining and a cloud droplet forms.
+
+The competition between these two terms is captured by the Köhler curves ({numref}`fig:kohler-curves`), which show why heterogeneous nucleation activates at only $\sim$0.04-0.4% supersaturation, while a pure-water droplet would need $\sim$12% even at $r = 10^{-2}\,\mu$m and far more at the nanometre size of a fresh embryo.
 
 ```{figure} figures/kohler_curves.avif
 :name: fig:kohler-curves
@@ -66,6 +88,15 @@ Adapted from the formulation in {cite:p}`Catling2017`.
 As an air parcel rises through the troposphere, it cools at the dry adiabatic lapse rate $\Gamma_d = g/c_p$ (Eq. {eq}`eq:dry-adiabat` from {ref}`Lecture 5 <lecture05>`). Its vapour pressure remains roughly constant (since the mass of vapour is conserved during adiabatic ascent), but $P_{\mathrm{sat}}(T)$ decreases as the temperature drops. At the altitude where the parcel temperature has cooled enough that $P_{\mathrm{vapour}} = P_{\mathrm{sat}}(T)$, condensation begins. This altitude is the **lifting condensation level (LCL)** and marks the cloud base.
 
 Above the LCL, the rising parcel releases **latent heat** as vapour condenses, warming the parcel relative to the dry adiabat. This gives the **moist adiabatic lapse rate**, which is shallower than the dry adiabat ($\sim$9.8 K km$^{-1}$): a representative value in Earth's warm lower troposphere is $\sim$5 K km$^{-1}$, and the observed tropospheric mean of $\sim$6.5 K km$^{-1}$ lies between the two limits ({ref}`Lecture 5 <lecture05>`). The latent heat release also provides buoyancy, driving vigorous convection in moist atmospheres: the mechanism behind thunderstorms, hurricanes, and the towering cumulonimbus clouds on Earth.
+
+```{figure} figures/cumulonimbus_anvil.avif
+:name: fig:cumulonimbus-anvil
+:width: 560px
+:align: center
+
+A cumulonimbus cloud spreading into a flat **anvil** (incus) at its top, seen from above the surrounding cloud deck. Latent heat released by condensing water vapour keeps the rising air warmer than its surroundings and drives the convective tower upward. The tower climbs until it reaches the tropopause, where the stable stratosphere above stops the ascent and the cloud spreads sideways into the anvil. The anvil top therefore marks the altitude where convective buoyancy ends.
+Credit: Eulenjäger, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons.
+```
 
 ### Cloud types depend on the condensing species
 
@@ -170,7 +201,10 @@ The characteristic temperature scale is $L_v / R_v = 2.50 \times 10^6 / 462 \app
 At $T = 293$ K (20°C):
 
 $$
-P_{\mathrm{sat}} = 611 \exp\!\left[-5400\left(\frac{1}{293} - \frac{1}{273}\right)\right] = 611 \exp(1.35) \approx 611 \times 3.86 \approx 2360 \text{ Pa} \approx 2.4 \text{ kPa}
+\begin{aligned}
+P_{\mathrm{sat}} &= 611 \exp\!\left[-5400\left(\frac{1}{293} - \frac{1}{273}\right)\right] \\
+&= 611 \exp(1.35) \approx 611 \times 3.86 \approx 2360 \text{ Pa} \approx 2.4 \text{ kPa}
+\end{aligned}
 $$
 
 The measured value is 2.3 kPa (excellent agreement). The small discrepancy arises because $L_v$ decreases slightly with temperature (from $2.50 \times 10^6$ J kg$^{-1}$ at 0°C to $2.26 \times 10^6$ J kg$^{-1}$ at 100°C), which we neglected by treating $L_v$ as constant.
@@ -179,7 +213,7 @@ The measured value is 2.3 kPa (excellent agreement). The small discrepancy arise
 
 The Clausius-Clapeyron equation applies to *any* vapour-to-liquid (or vapour-to-solid) transition. The following table lists the key condensing species in solar system atmospheres and their thermodynamic properties:
 
-| Species | $L_v$ (kJ kg$^{-1}$) | $R_v$ (J kg$^{-1}$ K$^{-1}$) | $L_v/R_v$ (K) | $T_{\mathrm{cond}}$ (K)$^*$ | Where it condenses |
+| Species | $L_v$<br>(kJ kg$^{-1}$) | $R_v$<br>(J kg$^{-1}$ K$^{-1}$) | $L_v/R_v$<br>(K) | $T_{\mathrm{cond}}$<br>(K)$^*$ | Where it condenses |
 |---------|:-----:|:-----:|:-----:|:-----:|------|
 | $\mathrm{H_2O}$ | 2500 | 462 | 5400 | 200–280 | Earth, Mars |
 | $\mathrm{H_2SO_4}$ | 540 | 85 | 6400 | 230–360 | Venus |
@@ -202,7 +236,9 @@ The large $L_v/R_v$ ratio for $\mathrm{H_2SO_4}$ makes its saturation curve extr
 
 Phase diagram of water in $P$-$T$ space.
 The liquid-vapour coexistence curve (blue) is the integrated Clausius-Clapeyron relation (Eq. {eq}`eq:clausius-clapeyron`); the solid-vapour (sublimation) curve (cyan) is the analogous Clausius-Clapeyron relation with the latent heat of sublimation; and the solid-liquid curve (black) has the anomalously negative slope characteristic of water (ice less dense than liquid).
-The triple point (273.16 K, 611 Pa) defines the unique state at which all three phases coexist.
+Because the integrated relation assumes a constant $L_v$, the blue curve is drawn with an effective $L_v = 2.29 \times 10^6$ J kg$^{-1}$, the single value that makes it pass through both the triple point and the critical point; the worked example above instead uses the 0°C value $L_v = 2.50 \times 10^6$ J kg$^{-1}$ over a much narrower temperature range.
+The black curve is the melting curve of ice Ih only, and it stops where that field ends near 0.2 GPa; at higher pressure the slope reverses and denser ice phases take over, which the figure does not show.
+The triple point (273.16 K, 611.7 Pa) defines the unique state at which all three phases coexist.
 The critical point (647 K, 22.1 MPa) marks the end of the liquid-vapour distinction.
 Earth's surface (288 K, 1 bar) sits well within the liquid-vapour stability field, which is why liquid water is the dominant condensable on the planet.
 The blackboard derivation in this lecture integrates the Clausius-Clapeyron equation along the blue curve.
@@ -227,7 +263,8 @@ where the atomic oxygen comes from ultraviolet photolysis of $\mathrm{CO_2}$ hig
 
 ```{figure} figures/venus_uv_clouds.avif
 :name: fig:venus-uv-clouds
-:width: 400px
+:figwidth: 100%
+:width: 100%
 :align: center
 
 Venus imaged by the *Mariner 10* spacecraft in February 1974, using a false-colour composite of orange and ultraviolet filters to reveal the banded cloud structure driven by atmospheric super-rotation. The $\mathrm{H_2SO_4}$ cloud deck extends from $\sim$48 to $\sim$70 km altitude and completely obscures the surface. Credit: NASA/JPL-Caltech, public domain.
@@ -251,6 +288,16 @@ Mars's thin atmosphere ($\sim$6 mbar surface pressure) supports two types of clo
 - **$\mathrm{H_2O}$ ice clouds** form at lower altitudes ($\sim$10–30 km), particularly over the Tharsis volcanic region and in the aphelion cloud belt near the equator during northern summer.
 
 **Mineral dust** plays a central role in Martian atmospheric physics: wind-lofted dust particles serve as condensation nuclei for ice clouds, and dust itself is a powerful radiative agent, absorbing solar radiation and heating the atmosphere, which can trigger positive feedback loops leading to global dust storms (see [weather and storms](weather-storms) below).
+
+```{figure} figures/mars_water_ice_clouds.avif
+:name: fig:mars-water-ice-clouds
+:figwidth: 100%
+:width: 100%
+:align: center
+
+Water-ice clouds over the Tharsis region of Mars near dawn, viewed along the limb from orbit. The dark peak breaking through the bright cloud canopy (left of centre) is the summit of the shield volcano **Arsia Mons**. These are the $\mathrm{H_2O}$ ice clouds described above. They form when air cools as it rises over the high volcanic terrain, and again near the equator when the seasonal aphelion cloud belt develops. The panorama was recorded by the THEMIS instrument on NASA's *Mars Odyssey* orbiter on 2 May 2025.
+Credit: NASA/JPL-Caltech/ASU, public domain.
+```
 
 ### Titan: methane rain
 
@@ -286,11 +333,12 @@ The hydrogen-dominated atmospheres of Jupiter and Saturn host a **vertically lay
 2. **$\mathrm{NH_4SH}$** (ammonium hydrosulfide): condensing at $T \sim 200$–240 K, $P \sim 2$–3 bar. Formed by the reaction $\mathrm{NH_3} + \mathrm{H_2S} \to \mathrm{NH_4SH}$.
 3. **$\mathrm{H_2O}$ ice and liquid** (deepest layer): condensing at $T \sim 270$–300 K, $P \sim 5$–7 bar. These deep water clouds are difficult to observe directly but are thought to play a critical role in powering Jupiter's weather through latent heat release.
 
-The vertical layering of these three cloud decks is sketched in {numref}`fig:jupiter-cloud-layers`; the visible cloud-band morphology is shown in the HST equatorial-band strip in {numref}`fig:jupiter-global-map`.
+The vertical layering of these three cloud decks is sketched in {numref}`fig:jupiter-cloud-layers`; the visible cloud-band morphology is shown in the full-disk Hubble portrait in {numref}`fig:jupiter-global-map`.
 
 ```{figure} figures/jupiter_cloud_layers.avif
 :name: fig:jupiter-cloud-layers
-:width: 450px
+:figwidth: 100%
+:width: 100%
 :align: center
 
 Temperature–pressure profile of Jupiter's atmosphere, showing the three main cloud layers: ammonia ($\mathrm{NH_3}$) ice at the top ($\sim$1 bar), ammonium hydrosulfide ($\mathrm{NH_4SH}$) in the middle ($\sim$2–3 bar), and water ($\mathrm{H_2O}$) at the deepest level ($\sim$5–7 bar). The **tropopause**, the boundary where temperature stops falling with altitude and convective mixing gives way to a stably stratified layer above, sits at $\sim$50 km, and the stratosphere–thermosphere boundary at $\sim$320 km is marked as well. Each cloud layer forms where the local temperature crosses the saturation curve for that species. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
@@ -298,14 +346,14 @@ Temperature–pressure profile of Jupiter's atmosphere, showing the three main c
 
 ```{figure} figures/jupiter_global_map.avif
 :name: fig:jupiter-global-map
-:width: 700px
+:width: 480px
 :align: center
 
-Equatorial-band strip from a cylindrical projection of Jupiter assembled from Hubble Space Telescope WFC3 imagery (PIA19643), cropped to the $\sim \pm 20^\circ$ latitude range to emphasise the Great Red Spot and the adjacent equatorial belts.
-Visible are the pattern of light *zones* (regions of rising air with high $\mathrm{NH_3}$-ice clouds) and dark *belts* (sinking air revealing deeper $\mathrm{NH_4SH}$ levels).
-The Great Red Spot is visible at $\sim$22°S, embedded in the South Equatorial Belt.
-The narrow latitudinal contrasts trace the alternating zonal-jet system that long-term HST programmes have now monitored for over a decade {cite:p}`Wong2020`; the full alternating jet system extends to $\sim \pm 60^\circ$ and is summarised quantitatively in {numref}`fig:jupiter-zonal-winds`.
-Credit: NASA/ESA/STScI/A. Simon (Goddard), public domain.
+Full-disk portrait of Jupiter from the Hubble Space Telescope, observed on 4 September 2021 as part of the Outer Planets Atmospheres Legacy (OPAL) programme.
+The banded structure is clear: light *zones* (rising air topped by high $\mathrm{NH_3}$-ice clouds) alternate with dark *belts* (sinking air that exposes the deeper $\mathrm{NH_4SH}$ layer).
+The Great Red Spot appears at $\sim$22°S, just south of the dark South Equatorial Belt.
+These narrow latitudinal contrasts trace the alternating zonal-jet system that long-term Hubble programmes have monitored for over a decade {cite:p}`Wong2020`; the jets extend to $\sim \pm 60^\circ$ and are summarised quantitatively in {numref}`fig:jupiter-zonal-winds`.
+Credit: NASA, ESA, A. Simon (GSFC), M. H. Wong (UC Berkeley), and the OPAL team; ESA/Hubble, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 ```
 
 The ice giants **Uranus** and **Neptune** have a different cloud hierarchy reflecting their colder temperatures and distinct compositions: $\mathrm{CH_4}$ ice forms the uppermost visible cloud layer ($T \sim 80$ K), with $\mathrm{H_2S}$ below it, and deeper $\mathrm{NH_4SH}$ and $\mathrm{H_2O}$ layers.
@@ -332,7 +380,7 @@ This loop is the **Hadley cell** ({numref}`fig:hadley-cells`). It is the dominan
 :width: 500px
 :align: center
 
-Schematic of Earth's atmospheric circulation, showing the three-cell structure in each hemisphere: the Hadley cell (equator to $\sim$30°), the Ferrel cell ($\sim$30° to $\sim$60°), and the polar cell ($\sim$60° to the pole). The trade winds, westerlies, and polar easterlies are the surface manifestations of these circulation cells. The Coriolis effect deflects the winds to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. Credit: Wikimedia Commons, public domain.
+Schematic of Earth's atmospheric circulation, showing the three-cell structure in each hemisphere: the Hadley cell (equator to $\sim$30°), the Ferrel cell ($\sim$30° to $\sim$60°, labelled "mid-latitude cell" here), and the polar cell ($\sim$60° to the pole). The northeasterly and southeasterly trade winds and the westerlies are labelled as the surface expression of these cells, together with the intertropical convergence zone at the equator and the subtropical high-pressure belt. The Coriolis effect deflects the winds to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. Credit: Wikimedia Commons, public domain.
 ```
 
 ```{figure} figures/hadley_observed.avif
@@ -360,14 +408,15 @@ For Earth, $\Omega = 7.29 \times 10^{-5}$ rad s$^{-1}$ (sidereal rotation rate).
 
 ```{figure} figures/coriolis_effect.avif
 :name: fig:coriolis
-:width: 640px
+:width: 560px
 :align: center
 
-Geometric origin of the Coriolis effect, viewed from above the rotating planet's north pole.
-Left panel (inertial frame): a parcel launched poleward keeps the eastward velocity of its low-latitude launch point, so it travels in a straight line tilted east of the pole, while the surface beneath rotates east with angular velocity $\Omega$; the ground at higher latitude moves east more slowly than the parcel.
-Right panel (rotating frame of the planet): the same parcel appears to curve east, to the right of its motion in the Northern Hemisphere; the strength of the deflection is characterised by the Coriolis parameter $f = 2 \Omega \sin \phi$.
-The deflection vanishes at the equator and is strongest at the poles; in the Southern Hemisphere the deflection is mirrored to the left.
-Plot generated for this lecture from the kinematic identity $f = 2\Omega \sin\phi$.
+Geometric origin of the Coriolis deflection, viewed from above the rotating planet's north pole (centre), with the equator at the rim.
+A projectile launched from the pole has no eastward velocity, so on a non-rotating planet it would travel straight to its target (dashed line).
+Because the planet turns east under the flight with angular velocity $\Omega$, the track over the ground curves to the right of the direction of travel in the Northern Hemisphere (red curve) and lands to the right of the target.
+Launching from the pole isolates the effect: the aim is a straight radial line, and the deflection comes entirely from the ground rotating beneath the flight.
+The strength of the deflection is set by the Coriolis parameter $f = 2 \Omega \sin \phi$: it vanishes at the equator and is strongest at the poles, and in the Southern Hemisphere the deflection is mirrored to the left.
+The deflection angle shown is exaggerated for clarity.
 ```
 
 ### The Rossby number
@@ -636,7 +685,26 @@ A dense $\mathrm{CO_2}$ atmosphere alone struggles to explain warm conditions on
 
 The stability of a planet's climate depends on **feedback mechanisms**, processes where a change in temperature triggers secondary effects that either amplify (positive feedback) or counteract (negative feedback) the original change:
 
-- **Ice-albedo feedback** (positive): If the planet cools, ice sheets expand $\Rightarrow$ the surface becomes more reflective (higher albedo) $\Rightarrow$ less sunlight is absorbed $\Rightarrow$ further cooling. This feedback can drive a planet into a **snowball state** if triggered strongly enough (as may have happened on Earth during the Neoproterozoic, $\sim$700 Ma). The energy-balance bistability that supports a stable snowball and a stable warm equilibrium, with an unstable deglaciation threshold between them, is shown in {numref}`fig:snowball-bistability`.
+- **Ice-albedo feedback** (positive): If the planet cools, ice and snow expand $\Rightarrow$ the surface becomes more reflective (higher albedo) $\Rightarrow$ less sunlight is absorbed $\Rightarrow$ further cooling. Pushed far enough, this feedback can lock a planet into a globally frozen **snowball state**, as may have happened on Earth during the Neoproterozoic. The energy balance behind this behaviour is set out below.
+
+- **Water vapour feedback** (positive): If the planet warms, more water evaporates $\Rightarrow$ $\mathrm{H_2O}$ is a strong greenhouse gas $\Rightarrow$ enhanced warming $\Rightarrow$ more evaporation. This feedback is the largest positive feedback in Earth's climate system: without any feedbacks, doubling $\mathrm{CO_2}$ would warm Earth by only $\sim$1.2 K, while the IPCC AR6 best estimate of the equilibrium warming, with the water vapour, lapse-rate, cloud, and albedo feedbacks included, is $\sim 3$ K {cite:p}`IPCC2021`. If it runs away (as may have happened on Venus), it leads to the **runaway greenhouse effect**, where the oceans completely evaporate (discussed in detail in {ref}`Lecture 9 <lecture09>`).
+
+- **Cloud feedback** (complex): Low-altitude clouds reflect sunlight (cooling), while high-altitude cirrus clouds trap infrared radiation (warming). The net cloud feedback is the largest source of uncertainty in Earth climate models and is one of the key unknowns for exoplanet climate predictions ({ref}`Lecture 13 <lecture13>`).
+
+#### Snowball Earth and climate bistability
+
+The ice-albedo feedback is the clearest case of how a single feedback can give a planet more than one stable climate. Taken to its extreme it produces a **snowball Earth**, a state in which ice and snow cover almost the whole surface, from the poles to the equator ({numref}`fig:snowball-earth`). The evidence is geological: glacial deposits laid down at tropical latitudes show that Earth entered such states around 717 and 635 Ma {cite:p}`Hoffman1998,Hoffman2017`.
+
+```{figure} figures/snowball_earth.avif
+:name: fig:snowball-earth
+:width: 560px
+:align: center
+
+Artist's impression of a fully ice-covered "snowball" Earth, with the continents buried under ice and only faint outlines showing through. A bright frozen surface reflects most of the incoming sunlight, which is what makes the snowball state so stable.
+Credit: Oleg Kuznetsov (3depix.com), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+```
+
+A planet's surface temperature settles where the sunlight it absorbs equals the thermal radiation it emits to space. {numref}`fig:snowball-bistability` plots both terms against surface temperature $T$, and the two behave very differently. The emitted radiation (red) follows the grey-body law $\varepsilon \sigma T^4$ and rises smoothly and steeply with temperature, because a warmer surface always radiates more. The absorbed sunlight (blue) is $(1 - \alpha(T))\,S/4$, where $S$ is the stellar flux and $\alpha(T)$ the planetary albedo, so its temperature dependence enters only through the albedo. That albedo is not fixed: a frozen surface is bright ($\alpha \approx 0.6$), an ice-free surface dark ($\alpha \approx 0.3$). As the planet warms through the freezing range and its ice retreats, the albedo falls, so the blue curve climbs steeply across a narrow band of temperature and is nearly flat on either side of it.
 
 ```{figure} figures/snowball_bistability.avif
 :name: fig:snowball-bistability
@@ -650,9 +718,9 @@ Pushing the system across the unstable middle point triggers a runaway transitio
 The snowball events of the Neoproterozoic ($\sim$717 and $\sim$635 Ma) are interpreted as global excursions of this bifurcation diagram {cite:p}`Hoffman1998,Hoffman2017`.
 ```
 
-- **Water vapour feedback** (positive): If the planet warms, more water evaporates $\Rightarrow$ $\mathrm{H_2O}$ is a strong greenhouse gas $\Rightarrow$ enhanced warming $\Rightarrow$ more evaporation. This feedback is the largest positive feedback in Earth's climate system: without any feedbacks, doubling $\mathrm{CO_2}$ would warm Earth by only $\sim$1.2 K, while the IPCC AR6 best estimate of the equilibrium warming, with the water vapour, lapse-rate, cloud, and albedo feedbacks included, is $\sim 3$ K {cite:p}`IPCC2021`. If it runs away (as may have happened on Venus), it leads to the **runaway greenhouse effect**, where the oceans completely evaporate (discussed in detail in {ref}`Lecture 9 <lecture09>`).
+Wherever the two curves cross, absorbed and emitted power balance, so each crossing is an equilibrium. For the values shown they cross three times. Their stability follows from a simple slope test. At the cold ($\sim$250 K) and warm ($\sim$287 K) crossings the radiation curve is the steeper of the two, so a small warming radiates away more energy than it gains and the planet slides back to the crossing; a small cooling is undone the same way. Both are **stable** climates. The middle crossing ($\sim$267 K) is different: there the absorbed-sunlight curve is steeper, so a small warming absorbs more than it emits and the planet keeps warming, while a small cooling runs away downward. This state is an **unstable** deglaciation threshold, and no planet can rest on it.
 
-- **Cloud feedback** (complex): Low-altitude clouds reflect sunlight (cooling), while high-altitude cirrus clouds trap infrared radiation (warming). The net cloud feedback is the largest source of uncertainty in Earth climate models and is one of the key unknowns for exoplanet climate predictions ({ref}`Lecture 13 <lecture13>`).
+Two stable climates for the same stellar flux is a **bistability**. Which one a planet occupies then depends on its history, not on the sunlight alone. Cool a warm world past the middle threshold, by a fall in greenhouse gases or in stellar flux, and it drops onto the snowball branch; climbing back out means crossing the threshold again from the cold side. Escape is hard. The bright frozen surface reflects most of the incoming sunlight, so only a large greenhouse forcing can lift the blue curve far enough to erase the cold crossing. On Earth that forcing builds up as volcanic $\mathrm{CO_2}$ accumulates in an atmosphere where the ice cover has shut down the silicate weathering that normally removes it, the negative feedback described in the next section.
 
 
 ## The carbonate-silicate cycle
@@ -667,7 +735,7 @@ $$
 \mathrm{CaSiO_3} + \mathrm{CO_2} + \mathrm{H_2O} \longrightarrow \mathrm{CaCO_3} + \mathrm{SiO_2} + \mathrm{H_2O}
 $$
 
-This is sometimes called the **Urey reaction**. In words: carbon dioxide from the atmosphere dissolves in rainwater to form a weak acid, which reacts with silicate minerals in surface rocks. The products (calcium carbonate, $\mathrm{CaCO_3}$, limestone; and silica, $\mathrm{SiO_2}$) are transported by rivers to the ocean, where the carbonate precipitates (biologically or abiotically) and is deposited on the ocean floor as sedimentary rock.
+This is sometimes called the **Urey reaction**. In words: carbon dioxide from the atmosphere dissolves in rainwater to form a weak acid, which reacts with silicate minerals in surface rocks. The products (calcium carbonate, $\mathrm{CaCO_3}$, limestone; and silica, $\mathrm{SiO_2}$) are transported by rivers to the ocean, where the carbonate precipitates, that is, comes out of solution as solid grains (biologically, as the shells and skeletons of marine organisms, or abiotically), and is deposited on the ocean floor as sedimentary rock.
 
 The net effect is to **draw $\mathrm{CO_2}$ out of the atmosphere** and lock it into carbonate rocks. This is the long-term carbon *sink*.
 

@@ -31,7 +31,7 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 OUT_AVIF = REPO_ROOT / "book/06_atmospheres_2/figures/kohler_curves.avif"
 
 # Constants
-SIGMA_W = 0.0728       # N/m surface tension of water at 273 K
+SIGMA_W = 0.0756       # N/m surface tension of water at 273 K
 RHO_W = 1000.0         # kg/m^3
 R_V = 461.5            # J/kg/K specific gas constant of water vapour
 T = 273.0              # K
@@ -85,8 +85,10 @@ def make_plot() -> Path:
                 fontsize=10, ha="left",
                 arrowprops=dict(arrowstyle="-", color="0.4", lw=0.6))
 
+    # Anchor on the visible Kelvin curve just inside the top edge (it leaves
+    # the frame near r = 0.075 um), so the label sits beside the curve it names.
     ax.annotate("Kelvin curve\nrises off-frame",
-                xy=(0.011, 1.55), xytext=(0.014, 1.10),
+                xy=(0.082, 1.46), xytext=(0.115, 1.44),
                 color="0.3", fontsize=9, ha="left", va="center",
                 arrowprops=dict(arrowstyle="->", color="0.3", lw=0.6))
 

@@ -1,17 +1,16 @@
 """Generate Fig. (`fig:coriolis`).
 
-Two-panel schematic of the Coriolis effect viewed from above the
-North Pole.
+Single-panel schematic of the Coriolis deflection, viewed from above
+the North Pole (centre = pole, rim = equator).
 
-Left panel (inertial frame): a parcel launched poleward from a low
-latitude keeps the eastward velocity of its launch point, so its
-straight inertial path is a chord tilted east of the pole. The
-surface rotates east with angular velocity Omega, but the ground at
-higher latitude moves east more slowly than the parcel.
-
-Right panel (rotating frame of the planet): the same parcel appears
-to curve east, to the right of its motion, in the Northern
-Hemisphere.
+A projectile is launched from the pole, which has no rotational
+velocity, toward a target on the equator. On a non-rotating Earth it
+would travel straight to the target (dashed line). Because the Earth
+turns eastward under the flight, its track over the ground curves to
+the right in the Northern Hemisphere (red curve) and lands to the right
+of the target. Launching from the pole keeps the geometry simple: the
+straight path is radial and the deflection comes entirely from the
+ground rotating beneath the flight.
 
 Caption / figure id : `fig:coriolis`
 Markdown source     : book/06_atmospheres_2/atmospheres_2.md
@@ -31,126 +30,102 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 OUT_AVIF = REPO_ROOT / "book/06_atmospheres_2/figures/coriolis_effect.avif"
 
 DISK = "#cfe5ff"
-
-
-def draw_disk(ax, label_side: str = "right") -> None:
-    ax.add_patch(Circle((0, 0), 1.0, facecolor=DISK, edgecolor="black", lw=1.0))
-    ax.plot(0, 0, "+", color="black", ms=12)
-    if label_side == "right":
-        ax.text(0.05, 0.05, "N pole", fontsize=9, ha="left", va="bottom")
-    else:
-        ax.text(-0.05, 0.05, "N pole", fontsize=9, ha="right", va="bottom")
-
-
-def panel_left(ax) -> None:
-    draw_disk(ax)
-    # Arrow indicating Omega rotation (counterclockwise viewed from N)
-    arc = Arc((0, 0), 2.4, 2.4, angle=0, theta1=10, theta2=80,
-              color="black", lw=1.0)
-    ax.add_patch(arc)
-    ax.add_patch(FancyArrowPatch(
-        (np.cos(np.radians(80)) * 1.2, np.sin(np.radians(80)) * 1.2),
-        (np.cos(np.radians(85)) * 1.2, np.sin(np.radians(85)) * 1.2),
-        arrowstyle="->", mutation_scale=12, color="black", lw=1.0))
-    # Next to the midpoint of the rotation arc (radius 1.2, 45 deg)
-    ax.text(1.0, 1.0, r"$\Omega$", fontsize=14, ha="left", va="bottom")
-
-    # Launch point near south. The parcel keeps the eastward (+x here)
-    # velocity of its launch point, so the straight inertial path is a
-    # chord tilted east of the pole, not a radial line through it.
-    launch = (0.0, -0.85)
-    end = (0.52, 0.62)
-    ax.plot(*launch, "o", color="#1f77b4", ms=10, zorder=5)
-    ax.add_patch(FancyArrowPatch(launch, end,
-                                 arrowstyle="->", mutation_scale=14,
-                                 color="#1f77b4", lw=2.0))
-    # Empty left half of the disk: the path, pole label, and markers
-    # all sit at x >= 0
-    ax.text(-0.47, 0.20, "Straight path carries\nthe launch point's\neastward speed",
-            color="#1f77b4", fontsize=8.5, ha="center", va="center")
-    # Label below the disk so the text never crosses the rim
-    ax.text(0.0, -1.08, "Launch\n(low latitude)",
-            color="#1f77b4", fontsize=9, ha="center", va="top")
-
-    # Surface point that rotates east during flight: indicate launch point and
-    # show the same patch of ground at the end of flight rotated by ~25 deg.
-    rot_angle = np.radians(25.0)
-    surf_x = launch[0] * np.cos(rot_angle) - launch[1] * np.sin(rot_angle)
-    surf_y = launch[0] * np.sin(rot_angle) + launch[1] * np.cos(rot_angle)
-    ax.plot(surf_x, surf_y, "s", color="#888", ms=10, zorder=4)
-    ax.annotate("Surface point\n(rotated east)",
-                xy=(surf_x + 0.04, surf_y - 0.04), xytext=(0.62, -1.08),
-                color="#555", fontsize=9, ha="left", va="top",
-                arrowprops=dict(arrowstyle="-", color="0.6", lw=0.6))
-
-    ax.set_xlim(-1.4, 1.4)
-    ax.set_ylim(-1.4, 1.4)
-    ax.set_aspect("equal")
-    ax.axis("off")
-    ax.set_title("Inertial (non-rotating) frame:\n"
-                 "parcel travels in a straight line", fontsize=11)
-
-
-def panel_right(ax) -> None:
-    # N-pole label on the left: the red curve occupies the right of centre
-    draw_disk(ax, label_side="left")
-    # In the rotating frame, the parcel curves to the right (east in NH).
-    # Parametric path: start at launch heading north (+y), bend eastward (+x).
-    launch = (0.0, -0.85)
-    ax.plot(*launch, "o", color="#d62728", ms=10, zorder=5)
-
-    # Quadratic-in-t east drift, linear-in-t north drift. Initial tangent
-    # (dx/dt, dy/dt) at t=0 is (0, b), purely northward (correct boundary
-    # condition); curvature is to the east (parcel deflects right in NH).
-    t = np.linspace(0, 1, 200)
-    a = 0.85   # eastward drift coefficient (sets endpoint x)
-    b = 1.55   # northward drift coefficient (sets endpoint y above origin)
-    x = launch[0] + a * t ** 2
-    y = launch[1] + b * t
-    ax.plot(x, y, color="#d62728", lw=2.0)
-    ax.add_patch(FancyArrowPatch(
-        (x[-3], y[-3]), (x[-1], y[-1]),
-        arrowstyle="->", mutation_scale=16, color="#d62728", lw=2.0))
-
-    ax.text(0.0, -1.08, "Launch\n(low latitude)",
-            color="#d62728", fontsize=9, ha="center", va="top")
-    # Place "Deflection to the right" label near the actual end of the curve
-    ax.text(x[-1] + 0.05, y[-1] + 0.05, "Deflection\nto the right",
-            color="#d62728", fontsize=10, ha="left", va="bottom")
-
-    # Reference straight line (greyed out)
-    ax.plot([0, 0], [-0.85, 0.7], color="0.6", linestyle="--", lw=1.0)
-    # Left of the dashed line: keeps clear of "N pole" (x > 0) and the
-    # red curve (x > 0 everywhere)
-    ax.text(-0.07, 0.35, "Expected\n(no deflection)", color="0.5", fontsize=9,
-            va="center", ha="right")
-
-    ax.set_xlim(-1.4, 1.4)
-    ax.set_ylim(-1.4, 1.4)
-    ax.set_aspect("equal")
-    ax.axis("off")
-    ax.set_title("Rotating (planet) frame:\n"
-                 "parcel appears deflected to the right (NH)", fontsize=11)
+AIM = "0.40"
+PATH = "#d62728"
+DEFLECT_DEG = 25.0  # schematic deflection, exaggerated for clarity
 
 
 def make_plot() -> Path:
     apply_style()
-    fig, axes = plt.subplots(1, 2, figsize=(11, 5.5))
-    panel_left(axes[0])
-    panel_right(axes[1])
-    fig.suptitle(
-        "Geometric origin of the Coriolis effect (view from above the North Pole)",
-        fontsize=12, y=1.02)
+    fig, ax = plt.subplots(figsize=(7.4, 7.8))
 
-    # Build a manual legend at the bottom
-    handles = [
-        plt.Line2D([0], [0], color="#1f77b4", lw=2, label="Parcel path (inertial frame)"),
-        plt.Line2D([0], [0], color="#d62728", lw=2, label="Apparent path (rotating frame)"),
-    ]
-    fig.legend(handles=handles, loc="lower center", ncol=2,
-               frameon=False, fontsize=10, bbox_to_anchor=(0.5, -0.02))
+    # Earth seen from above the North Pole: centre = pole, rim = equator.
+    ax.add_patch(Circle((0, 0), 1.0, facecolor=DISK, edgecolor="black",
+                        lw=1.2, zorder=0))
+    # Faint meridians (offset off the axes so none overlaps the aim line or
+    # the equator label) and one mid-latitude circle, as a light reference
+    # that the disk is a rotating globe seen from above.
+    for ang in range(22, 360, 45):
+        a = np.radians(ang)
+        ax.plot([0.12 * np.sin(a), np.sin(a)], [0.12 * np.cos(a), np.cos(a)],
+                color="white", lw=0.7, alpha=0.35, zorder=1)
+    ax.add_patch(Circle((0, 0), 0.5, facecolor="none", edgecolor="white",
+                        lw=0.7, alpha=0.35, zorder=1))
+    # Equator label sits just outside the rim, clear of the disk interior.
+    ax.text(0.0, -1.10, "Equator (rim)", color="0.45", fontsize=9,
+            ha="center", va="top", zorder=2)
 
-    fig.tight_layout(rect=(0, 0.04, 1, 1.0))
+    # Pole (launch point). Meridians start at r = 0.12, so the centre is clear.
+    ax.plot(0, 0, "o", color="black", ms=8, zorder=6)
+    ax.text(0.0, -0.10, "Launch\n(North Pole)", fontsize=10,
+            ha="center", va="top", zorder=6)
+
+    # Target on the equator (top of the rim).
+    target = np.array([0.0, 1.0])
+    ax.plot(*target, "*", color="black", ms=17, zorder=6)
+    ax.text(target[0] - 0.05, target[1] + 0.04, "Target", fontsize=11,
+            ha="right", va="bottom", zorder=6)
+
+    # Intended path on a non-rotating Earth: straight pole -> target.
+    ax.add_patch(FancyArrowPatch((0, 0), tuple(target * 0.99),
+                                 arrowstyle="->", mutation_scale=14,
+                                 color=AIM, lw=1.8,
+                                 linestyle=(0, (6, 4)), zorder=4))
+    # Label outside the disk on the left, with a leader to the aim line.
+    ax.annotate("Aim: straight to target\n(non-rotating Earth)",
+                xy=(0.0, 0.52), xytext=(-1.24, 0.55),
+                color="0.35", fontsize=9.5, ha="center", va="center", zorder=5,
+                arrowprops=dict(arrowstyle="-", color="0.6", lw=0.7))
+
+    # Actual track over the rotating Earth: deflects to the right (NH).
+    a = np.radians(DEFLECT_DEG)
+    land = np.array([np.sin(a), np.cos(a)])  # on the rim, right of target
+    t = np.linspace(0, 1, 200)
+    x = land[0] * t ** 2   # start tangent purely +y, curvature toward +x
+    y = land[1] * t
+    ax.plot(x, y, color=PATH, lw=2.6, zorder=5)
+    ax.add_patch(FancyArrowPatch((x[-3], y[-3]), (x[-1], y[-1]),
+                                 arrowstyle="->", mutation_scale=18,
+                                 color=PATH, lw=2.6, zorder=5))
+    ax.plot(*land, "o", color=PATH, ms=9, zorder=6)
+    # Both red labels sit outside the disk on the right, each with a leader.
+    ax.annotate("Lands here\n(deflected right)",
+                xy=(land[0] + 0.02, land[1]), xytext=(land[0] + 0.36, land[1] + 0.12),
+                color=PATH, fontsize=10, ha="left", va="center", zorder=6,
+                arrowprops=dict(arrowstyle="-", color=PATH, lw=0.8))
+    ax.annotate("Actual track over\nthe rotating Earth",
+                xy=(0.26, 0.72), xytext=(1.00, 0.48),
+                color=PATH, fontsize=10, ha="left", va="center", zorder=5,
+                arrowprops=dict(arrowstyle="-", color=PATH, lw=0.8))
+
+    # Earth's rotation arrow: counterclockwise = eastward from above the pole.
+    r_arc = 1.25
+    ax.add_patch(Arc((0, 0), 2 * r_arc, 2 * r_arc, angle=0,
+                    theta1=-70, theta2=-20, color="black", lw=1.2))
+    a_tail, a_head = np.radians(-25), np.radians(-20)
+    ax.add_patch(FancyArrowPatch(
+        (r_arc * np.cos(a_tail), r_arc * np.sin(a_tail)),
+        (r_arc * np.cos(a_head), r_arc * np.sin(a_head)),
+        arrowstyle="->", mutation_scale=14, color="black", lw=1.2))
+    ax.text(1.32, -1.00, "$\\Omega$: Earth spins\neastward",
+            fontsize=11, ha="center", va="center")
+
+    # One-line mechanism note, below the disk.
+    ax.text(0, -1.38,
+            "The Earth turns east under the flight, so the track bends to the "
+            "right of\nthe direction of travel (Northern Hemisphere; it bends "
+            "left in the Southern).",
+            fontsize=10, ha="center", va="top")
+
+    lim = 1.7
+    ax.set_xlim(-lim, lim)
+    ax.set_ylim(-lim, lim)
+    ax.set_aspect("equal")
+    ax.axis("off")
+    ax.set_title("Geometric origin of the Coriolis deflection\n"
+                 "(view from above the North Pole)", fontsize=12)
+
+    fig.tight_layout()
     return save_figure(fig, OUT_AVIF, avif_quality=80)
 
 

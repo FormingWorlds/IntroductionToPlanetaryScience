@@ -11,7 +11,7 @@
 % ── Metadata ────────────────────────────────────────────────
 \title[Lecture 6: Atmospheres II]{Lecture 6: Atmospheres II\\Clouds, Weather, \& Climate}
 \subtitle{Planetary Systems}
-\author[L6]{Tim Lichtenberg}
+\author[L6]{Mara Attia}
 \institute{Kapteyn Astronomical Institute\\University of Groningen}
 \date{2026}
 \titlebgcredit{Jupiter's atmosphere. Credit: NASA/JPL-Caltech/SwRI/MSSS}
@@ -77,10 +77,10 @@
 \end{frame}
 
 \begin{frame}{Reading the saturation curves}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{psat_curves}}
-    \column{0.50\textwidth}
+  \begin{columns}[c]
+    \column{\recapfigcolnarrow}
+    \ipsrecapfig{psat_curves}
+    \column{\recaptextcolwide}
     \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
       \item Every curve is one Clausius-Clapeyron law: near-exponential rise, steeper for larger $L_v/R_v$.
@@ -113,6 +113,34 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}{The K\"ohler equation}
+  \footnotesize
+  Saturation ratio at which a solution droplet of radius $r$ neither grows nor evaporates:
+  \vskip-4pt
+  \begin{equation*}
+    S(r) \approx 1 + \underbrace{\frac{A}{r}}_{\text{Kelvin}} - \underbrace{\frac{B}{r^3}}_{\text{Raoult}},
+    \qquad A = \frac{2\sigma_w}{\rho_w R_v T},
+    \qquad B = \frac{3\, i\, M_w\, m_s}{4\pi \rho_w M_s}
+  \end{equation*}
+  \vskip-4pt
+  \begin{itemize}\setlength\itemsep{2pt}
+    \item \textbf{Kelvin (curvature) term} $+A/r$: raises the vapour pressure over a
+    convex surface, because a molecule on a tightly curved droplet has fewer neighbours
+    holding it. Diverges as $r \rightarrow 0$, so the smallest embryos demand the most
+    supersaturation.
+    \item \textbf{Raoult (solute) term} $-B/r^3$: lowers it, because dissolved solute
+    leaves fewer surface water molecules free to evaporate. The solution concentrates as
+    the droplet shrinks, so this term steepens and dominates at small radius.
+    \item $\sigma_w$ surface tension, $\rho_w$ liquid density, $R_v$ gas constant of water
+    vapour, $i$ the van 't Hoff factor (ions per formula unit), $m_s$ solute mass, $M$ the
+    molar masses.
+  \end{itemize}
+  \vskip2pt
+  \keyresult{Curvature wins at large $r$, solute at small $r$, so $S(r)$ peaks at the
+  \textbf{critical radius} $r_*$: below it a stable haze particle, past it a cloud droplet.}
+  \source{Catling (2017); Pruppacher \& Klett (1997)}
+\end{frame}
+
 \begin{frame}
   \centering
   \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{kohler_curves}}\\
@@ -120,10 +148,10 @@
 \end{frame}
 
 \begin{frame}{Reading the K\"ohler curves}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{kohler_curves}}
-    \column{0.50\textwidth}
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{kohler_curves}
+    \column{\recaptextcol}
     \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
       \item The dashed Kelvin curve is the pure-water barrier: $\sim$12\% supersaturation at $r = 0.01~\mu$m, rising further for smaller embryos.
@@ -147,6 +175,15 @@
   \keyresult{The \textbf{lifting condensation level} (LCL) marks the \textbf{cloud base}. Above it, latent heat release produces the moist adiabatic lapse rate ($\sim$5~K\,km$^{-1}$ in Earth's warm lower troposphere vs.\ $\sim$9.8~K\,km$^{-1}$ dry; the observed tropospheric mean is $\sim$6.5).}
   \vskip6pt
   Latent heat $\rightarrow$ buoyancy $\rightarrow$ vigorous convection $\rightarrow$ thunderstorms, hurricanes, cumulonimbus.
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{cumulonimbus_anvil}}\\
+  {\footnotesize A cumulonimbus tower spreading into a flat \textbf{anvil}. Latent heat keeps
+  the rising air warmer than its surroundings and drives the tower up until the stable
+  stratosphere stops it at the tropopause. The anvil top marks where buoyancy ends.\\
+  Credit: Eulenj\"ager, CC BY-SA 3.0, via Wikimedia Commons.}
 \end{frame}
 
 % ── Cloud types across solar system ─────────────────────────
@@ -242,13 +279,13 @@
 \end{frame}
 
 \begin{frame}{The phase diagram behind the equation}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{water_phase_diagram}}
-    \column{0.50\textwidth}
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{water_phase_diagram}
+    \column{\recaptextcol}
     \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
-      \item The liquid-vapour curve from the triple point (273.16~K, 611~Pa; all phases coexist) to the critical point (647~K, 22.1~MPa) is the integrated Clausius-Clapeyron relation.
+      \item The liquid-vapour curve from the triple point (273.16~K, 611.7~Pa; all phases coexist) to the critical point (647~K, 22.1~MPa) is the integrated Clausius-Clapeyron relation.
       \item The sublimation branch uses the larger latent heat of sublimation: a steeper curve below the triple point.
       \item Earth's surface sits inside the liquid field; Mars's $\sim$6~mbar surface lies below the triple-point pressure, so liquid water is not stable there today.
     \end{itemize}
@@ -339,10 +376,10 @@
 \end{frame}
 
 \begin{frame}{Where the Venus clouds live}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{venus_tz_profile}}
-    \column{0.50\textwidth}
+  \begin{columns}[c]
+    \column{\recapfigcolnarrow}
+    \ipsrecapfig{venus_tz_profile}
+    \column{\recaptextcolwide}
     \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
       \item The deck occupies 48--70~km, where $T$ runs from $\sim$360~K at the base to $\sim$230~K at the top: the stability window of concentrated $\mathrm{H_2SO_4}$ droplets.
@@ -379,19 +416,29 @@
 
 % ── Mars clouds ─────────────────────────────────────────────
 \begin{frame}{Mars: dust and ice clouds}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.88\linewidth]{mars_water_ice_clouds}}
+  {\tiny\color{ipsText!60} Water-ice clouds over Tharsis at dawn, seen along the limb. The
+  dark peak breaking through the canopy is Arsia Mons. Credit: NASA/JPL-Caltech/ASU (Mars
+  Odyssey THEMIS, 2 May 2025)}
+  \vskip2pt
+  \raggedright\scriptsize
   Mars's thin atmosphere ($\sim$6~mbar) supports two cloud types:
-  \vskip6pt
-  \begin{itemize}
-    \item \textbf{$\mathrm{CO_2}$ ice clouds:} High altitude (50--100~km); frost point $\sim$148~K at the 6~mbar surface, near 100~K at mesospheric pressures
-    \item \textbf{$\mathrm{H_2O}$ ice clouds:} Lower altitude (10--30~km), over Tharsis region, aphelion cloud belt
-    \vskip6pt
-    \item \textbf{Mineral dust} plays a central role:
-    \begin{itemize}
+  \vskip2pt
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item \textbf{$\mathrm{CO_2}$ ice clouds:} 50--100~km; frost point $\sim$148~K at the 6~mbar surface, $\sim$100~K at mesospheric pressure
+      \item \textbf{$\mathrm{H_2O}$ ice clouds:} 10--30~km, over Tharsis, aphelion cloud belt
+    \end{itemize}
+    \column{0.44\textwidth}
+    \textbf{Mineral dust} plays a central role:
+    \begin{itemize}\setlength\itemsep{1pt}
       \item Condensation nuclei for ice clouds
       \item Absorbs solar radiation, heats atmosphere
-      \item Positive feedback: more dust $\rightarrow$ more heating $\rightarrow$ stronger winds $\rightarrow$ more dust
+      \item More dust $\rightarrow$ more heating $\rightarrow$ stronger winds $\rightarrow$ more dust
     \end{itemize}
-  \end{itemize}
+  \end{columns}
 \end{frame}
 
 % ── Titan methane cycle detailed ────────────────────────
@@ -525,19 +572,19 @@
 \begin{frame}
   \centering
   \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{coriolis_effect}}\\
-  {\footnotesize The Coriolis effect seen from the inertial and the rotating frame. Course figure.}
+  {\footnotesize Coriolis deflection of a polar launch, viewed from above the North Pole. Course figure.}
 \end{frame}
 
-\begin{frame}{Two views of one deflection}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{coriolis_effect}}
-    \column{0.50\textwidth}
+\begin{frame}{Where the deflection comes from}
+  \begin{columns}[c]
+    \column{\recapfigcolnarrow}
+    \ipsrecapfig{coriolis_effect}
+    \column{\recaptextcolwide}
     \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
-      \item Inertial frame (left): the parcel keeps the eastward speed of its launch point, so its straight path ends up east of the meridian aimed at the pole.
-      \item The ground at higher latitude moves east more slowly: the parcel outruns it.
-      \item Rotating frame (right): the same motion appears as a smooth curve to the right, with strength set by $f = 2\Omega\sin\phi$.
+      \item A projectile launched from the pole has no eastward velocity: on a non-rotating planet it would fly straight to its target (dashed line).
+      \item The planet turns east under the flight, so the track over the ground curves right of the direction of travel and lands right of the target.
+      \item Launching from the pole isolates the effect. Strength is set by $f = 2\Omega\sin\phi$: zero at the equator, largest at the poles, mirrored left in the Southern Hemisphere.
     \end{itemize}
     \vskip2pt\relax
     \keyresult{No force pushes the parcel sideways. The deflection is the rotating planet turning beneath a straight path.}
@@ -562,6 +609,16 @@
 \end{frame}
 
 % ── Circulation cells vs rotation ───────────────────────────
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.68\paperheight, keepaspectratio]{hadley_cells}}\\
+  {\footnotesize The three-cell circulation of a moderately rotating planet: the Hadley cell
+  (equator to $\sim$30\textdegree{}), the mid-latitude or \textbf{Ferrel} cell
+  ($\sim$30--60\textdegree{}), and the polar cell. The northeasterly and southeasterly trades
+  and the westerlies are their surface expression.
+  Credit: Wikimedia Commons, public domain.}
+\end{frame}
+
 \begin{frame}{Circulation cells and rotation rate}
   \begin{description}
     \item[Slowly rotating] (Venus, Titan):\\
@@ -576,7 +633,7 @@
     \vskip6pt
     \item[Rapidly rotating] (Jupiter, Saturn):\\
     Many alternating cells $\rightarrow$ \textbf{banded structure}.\\
-    Jupiter: $\sim$15 alternating jet streams per hemisphere.\\
+    Jupiter: many alternating jets per hemisphere, out to $\sim\pm60$\textdegree{}.\\
     Light zones (rising air, high clouds) and dark belts (sinking air).
   \end{description}
 \end{frame}
@@ -589,16 +646,20 @@
 
 % ── Geostrophic balance ─────────────────────────────────────
 \begin{frame}{Geostrophic balance}
-  At large scales ($\mathrm{Ro} \ll 1$), steady state = Coriolis force balances pressure gradient:
-  \vskip6pt
-  $$f\,\hat{k} \times \mathbf{v}_g = -\frac{1}{\rho}\nabla P$$
-  \vskip6pt
-  In scalar form:
-  $$u_g = -\frac{1}{f\rho}\pdv{P}{y}, \qquad v_g = \frac{1}{f\rho}\pdv{P}{x}$$
-  \vskip6pt
-  \keyresult{The geostrophic wind blows \textbf{parallel to isobars} (constant-pressure lines), not high to low. In the Northern Hemisphere: low pressure to the left of the wind.}
-  \vskip4pt
-  This is why cyclones and anticyclones \textbf{rotate} around pressure centres.
+  \begin{columns}[c]
+    \column{\recapfigcolnarrow}
+    \ipsrecapfig{geostrophic_balance}
+    \column{\recaptextcolwide}
+    \footnotesize
+    At large scales ($\mathrm{Ro} \ll 1$), steady state = Coriolis force balances pressure gradient:
+    $$f\,\hat{k} \times \mathbf{v}_g = -\frac{1}{\rho}\nabla P$$
+    In scalar form:
+    $$u_g = -\frac{1}{f\rho}\pdv{P}{y}, \qquad v_g = \frac{1}{f\rho}\pdv{P}{x}$$
+    \vskip2pt
+    \keyresult{The geostrophic wind blows \textbf{parallel to isobars} (constant-pressure lines), not high to low. In the Northern Hemisphere: low pressure to the left of the wind.}
+    \vskip2pt
+    This is why cyclones and anticyclones \textbf{rotate} around pressure centres.
+  \end{columns}
 \end{frame}
 
 % ── Thermal wind and jet streams ─────────────────────────────
@@ -618,7 +679,7 @@
 \begin{frame}
   \centering
   \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{jupiter_global_map}}\\
-  {\footnotesize Jupiter's equatorial belts and the Great Red Spot, HST/WFC3. Credit: NASA/ESA/STScI/A.~Simon.}
+  {\footnotesize Full-disk Jupiter, HST/OPAL, 4 September 2021. Credit: NASA, ESA, A.~Simon (GSFC), M.~H.~Wong (UC Berkeley) and the OPAL team; ESA/Hubble, CC BY 4.0.}
 \end{frame}
 
 \begin{frame}
@@ -628,10 +689,10 @@
 \end{frame}
 
 \begin{frame}{Reading Jupiter's jet ladder}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{jupiter_zonal_winds}}
-    \column{0.50\textwidth}
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{jupiter_zonal_winds}
+    \column{\recaptextcol}
     \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
       \item Alternating prograde (eastward, blue) and retrograde (westward, red) jets stack from the fast eastward equatorial jet out to $\sim$$\pm 60$\textdegree{} latitude.
@@ -715,10 +776,10 @@
 \end{frame}
 
 \begin{frame}{Measuring super-rotation}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{sanchezlavega2008_venus_winds}}
-    \column{0.50\textwidth}
+  \begin{columns}[c]
+    \column{\recapfigcolnarrow}
+    \ipsrecapfig{sanchezlavega2008_venus_winds}
+    \column{\recaptextcolwide}
     \small
     \begin{itemize}\setlength\itemsep{1pt}
       \item Cloud tracking at three wavelengths probes three altitudes: $\sim$66~km and $\sim$61~km by day, $\sim$47~km by night.
@@ -758,11 +819,11 @@
 \end{frame}
 
 \begin{frame}{Polar order instead of polar chaos}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{juno_polar_cyclones}}
-    \column{0.50\textwidth}
-    \small
+  \begin{columns}[c]
+    \column{\recapfigcolnarrow}
+    \ipsrecapfig{juno_polar_cyclones}
+    \column{\recaptextcolwide}
+    \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
       \item Eight cyclones ring a central one at Jupiter's north pole; five ring the south pole.
       \item The clusters have stayed in place over years of Juno perijoves (closest-approach flybys): no merging, no drifting apart.
@@ -841,10 +902,10 @@
 \end{frame}
 
 \begin{frame}{Reading the faint-young-Sun curve}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{feulner2012_solar_luminosity}}
-    \column{0.50\textwidth}
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{feulner2012_solar_luminosity}
+    \column{\recaptextcol}
     \footnotesize
     \begin{itemize}\setlength\itemsep{1pt}
       \item The standard solar model and Gough's analytic formula agree to $\sim$0.1\% over the past 4~Gyr.
@@ -897,7 +958,7 @@
 \begin{frame}
   \centering
   \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{mars_valley_networks}}\\
-  {\footnotesize Noachian valley networks, Mars Express HRSC. Credit: ESA/DLR/FU Berlin (G.~Neukum).}
+  {\footnotesize Noachian valley networks, Mars Express HRSC. Credit: ESA/DLR/FU Berlin, CC BY-SA 3.0 IGO.}
 \end{frame}
 
 % ── Mars climate puzzle ─────────────────────────────────────
@@ -941,22 +1002,88 @@
 % ── Climate feedbacks ───────────────────────────────────────
 \begin{frame}{Climate feedbacks}
   Climate stability depends on feedback mechanisms:
-  \vskip6pt
+  \vskip2pt
   \begin{description}
     \item[Ice-albedo feedback] (positive):\\
     Cooling $\rightarrow$ ice expands $\rightarrow$ higher albedo $\rightarrow$ less absorption $\rightarrow$ more cooling.\\
-    Can trigger \textbf{snowball Earth} (Neoproterozoic, $\sim$700~Ma).
+    Can trigger \textbf{snowball Earth} (Neoproterozoic; see later).
 
-    \vskip4pt
+    \vskip2pt
     \item[Water vapour feedback] (positive):\\
     Warming $\rightarrow$ more evaporation $\rightarrow$ $\mathrm{H_2O}$ is a greenhouse gas $\rightarrow$ more warming.\\
-    The largest positive feedback: with all feedbacks, CO$_2$ doubling warms $\sim$3~K vs.\ $\sim$1.2~K without. If runaway: \textbf{Venus scenario}.
+    Largest positive feedback: CO$_2$ doubling warms $\sim$3~K with feedbacks, $\sim$1.2~K without (IPCC AR6). If runaway: \textbf{Venus scenario}.
 
-    \vskip4pt
+    \vskip2pt
     \item[Cloud feedback] (complex):\\
-    Low clouds: reflect sunlight (cooling). High cirrus: trap IR (warming).\\
+    Low clouds reflect sunlight (cooling); high cirrus traps IR (warming).\\
     Net effect: largest uncertainty in climate models.
   \end{description}
+\end{frame}
+
+% ── Ice-albedo feedback ────────────────────────────────
+\begin{frame}{Ice-albedo feedback: the ultimate amplifier}
+  A positive feedback loop that can destabilise climate:
+  \vskip6pt
+  \begin{center}
+    $T$ drops $\rightarrow$ ice cover grows $\rightarrow$ albedo rises $\rightarrow$ less solar absorption $\rightarrow$ $T$ drops further
+  \end{center}
+  \vskip6pt
+  \begin{itemize}
+    \item Ice and snow reflect $\sim$60--90\% of incident sunlight vs.\ $\sim$10--30\% for ocean and land
+    \item For Earth: the feedback is strong enough to create a \textbf{tipping point}
+    \item If the ice line advances to $\sim$30\textdegree{} latitude (about half the surface area), the feedback runs away
+    \item Runaway cooling then drives the planet into a \textbf{snowball state}
+    \item On modern Earth the same feedback amplifies polar warming (Arctic amplification), far from the runaway threshold
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Pierrehumbert (2010); North et al.\ (1981)}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{snowball_bistability}}\\
+  {\footnotesize Energy-balance bistability of the ice-albedo feedback. Course figure.}
+\end{frame}
+
+\begin{frame}{Reading the bistability diagram}
+  \begin{columns}[c]
+    \column{\recapfigcolnarrow}
+    \ipsrecapfig{snowball_bistability}
+    \column{\recaptextcolwide}
+    \footnotesize
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item Red: outgoing longwave $\varepsilon\sigma T^4$; blue: absorbed sunlight, albedo 0.3 (ice-free) to 0.6 (ice-covered).
+      \item Three crossings: snowball 250~K, threshold 267~K, warm state 287~K.
+      \item The steeper curve decides stability: red steeper at 250 and 287~K pulls the planet back (stable); blue steeper at 267~K amplifies any nudge (unstable).
+      \item Past the middle crossing the feedback carries the climate the rest of the way.
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{Same Sun, two stable Earths: which one you get depends on history.}
+  \end{columns}
+\end{frame}
+
+% ── Snowball Earth ──────────────────────────────────────
+\begin{frame}{Snowball Earth}
+  \begin{columns}[c]
+    \column{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{snowball_earth}
+    \source{Oleg Kuznetsov (3depix.com), CC BY-SA 4.0}
+
+    \column{0.50\textwidth}
+    \footnotesize
+    \begin{itemize}
+      \item \textbf{Two snowball states} in the Neoproterozoic ($\sim$717 and 635~Ma)
+      \item Evidence: glacial deposits laid down at tropical latitudes
+      \item Triggered by ice-albedo runaway when the ice line reaches $\sim$30\textdegree{} latitude
+      \item Surface temperatures drop below $-50$\textdegree C
+      \item Ice shuts down silicate weathering, so volcanic CO$_2$ builds up unchecked over $\sim$10--100~Myr
+      \item Greenhouse overwhelms albedo; ice melts rapidly
+      \item Correlated with the rise of complex life soon after
+    \end{itemize}
+    \vskip4pt
+    {\tiny\color{ipsText!60} Source: Hoffman et al.\ (1998); Hoffman et al.\ (2017)}
+  \end{columns}
 \end{frame}
 
 
@@ -975,7 +1102,7 @@
     \item $\mathrm{CO_2}$ dissolves in rain $\rightarrow$ weak acid
     \item Acid reacts with silicate minerals at the surface
     \item Products: limestone ($\mathrm{CaCO_3}$) and silica ($\mathrm{SiO_2}$)
-    \item Transported by rivers to the ocean $\rightarrow$ deposited as sediment
+    \item Transported by rivers to the ocean $\rightarrow$ carbonate precipitates (shells and skeletons, or abiotically) $\rightarrow$ sediment
     \item Net effect: \textbf{draws $\mathrm{CO_2}$ out of the atmosphere} (carbon sink)
   \end{itemize}
 \end{frame}
@@ -1008,10 +1135,10 @@
 \end{frame}
 
 \begin{frame}{Sources and sinks of the thermostat}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{foley2024_carbonate_silicate}}
-    \column{0.50\textwidth}
+  \begin{columns}[c]
+    \column{\recapfigcolnarrow}
+    \ipsrecapfig{foley2024_carbonate_silicate}
+    \column{\recaptextcolwide}
     \small
     \begin{itemize}\setlength\itemsep{1pt}
       \item Sources: arc, ridge, and plume volcanism return $\mathrm{CO_2}$ from the mantle and from subducted carbonates.
@@ -1089,70 +1216,6 @@
   \end{itemize}
   \vskip4pt
   {\tiny\color{ipsText!60} Source: Nakajima et al.\ (1992); Goldblatt et al.\ (2013)}
-\end{frame}
-
-% ── Ice-albedo feedback ────────────────────────────────
-\begin{frame}{Ice-albedo feedback: the ultimate amplifier}
-  A positive feedback loop that can destabilise climate:
-  \vskip6pt
-  \begin{center}
-    $T$ drops $\rightarrow$ ice cover grows $\rightarrow$ albedo rises $\rightarrow$ less solar absorption $\rightarrow$ $T$ drops further
-  \end{center}
-  \vskip6pt
-  \begin{itemize}
-    \item Ice and snow reflect $\sim$60--90\% of incident sunlight vs.\ $\sim$10--30\% for ocean and land
-    \item For Earth: the feedback is strong enough to create a \textbf{tipping point}
-    \item If the ice line advances to $\sim$30\textdegree{} latitude (about half the surface area), the feedback runs away
-    \item Runaway cooling then drives the planet into a \textbf{snowball state}
-    \item On modern Earth the same feedback amplifies polar warming (Arctic amplification), far from the runaway threshold
-  \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Pierrehumbert (2010); North et al.\ (1981)}
-\end{frame}
-
-\begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{snowball_bistability}}\\
-  {\footnotesize Energy-balance bistability of the ice-albedo feedback. Course figure.}
-\end{frame}
-
-\begin{frame}{Reading the bistability diagram}
-  \begin{columns}[T]
-    \column{0.46\textwidth}
-    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{snowball_bistability}}
-    \column{0.50\textwidth}
-    \footnotesize
-    \begin{itemize}\setlength\itemsep{1pt}
-      \item Red: outgoing longwave $\varepsilon\sigma T^4$; blue: absorbed sunlight, with albedo stepping from 0.3 (ice-free) to 0.6 (ice-covered).
-      \item Three crossings: a stable snowball at 250~K, an unstable threshold at 267~K, a stable warm state at 287~K.
-      \item Push the climate past the middle crossing and the feedback carries it the rest of the way, in either direction.
-    \end{itemize}
-    \vskip2pt\relax
-    \keyresult{Same Sun, two stable Earths: which one you get depends on where you start.}
-  \end{columns}
-\end{frame}
-
-% ── Snowball Earth ──────────────────────────────────────
-\begin{frame}{Snowball Earth}
-  \begin{columns}[c]
-    \column{0.46\textwidth}
-    \centering
-    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{snowball_earth}
-    \source{Wikimedia Commons, public domain}
-
-    \column{0.50\textwidth}
-    \footnotesize
-    \begin{itemize}
-      \item Earth may have gone through \textbf{two snowball states} in the Neoproterozoic ($\sim$717 and 635~Ma)
-      \item Triggered by ice-albedo runaway when the ice line reaches $\sim$30\textdegree{} latitude
-      \item Surface temperatures drop below $-50$\textdegree C
-      \item Volcanic CO$_2$ accumulates over $\sim$10--100~Myr
-      \item Greenhouse overwhelms albedo; ice melts rapidly
-      \item Correlated with the rise of complex life shortly afterward
-    \end{itemize}
-    \vskip4pt
-    {\tiny\color{ipsText!60} Source: Hoffman \& Schrag (2002); Pierrehumbert et al.\ (2011)}
-  \end{columns}
 \end{frame}
 
 % ── Thermal tides ────────────────────────────────────────
@@ -1259,7 +1322,7 @@
     \item The Clausius-Clapeyron equation gives $P_{\mathrm{sat}}(T) \propto \exp(-L_v/R_v T)$; governs all clouds
     \item Cloud species vary: $\mathrm{H_2O}$ (Earth), $\mathrm{H_2SO_4}$ (Venus), $\mathrm{NH_3}$/$\mathrm{H_2O}$ layers (Jupiter)
     \item Atmospheric circulation: Hadley cells, Coriolis deflection, jet streams
-    \item Rotation rate sets number of circulation cells (1 on Venus, 3 on Earth, $\sim$15 on Jupiter)
+    \item Rotation rate sets number of circulation cells (1 on Venus, 3 on Earth, many on Jupiter)
     \item Weather: Mars dust storms, Venus super-rotation, Jupiter GRS, Saturn hexagon
     \item Faint young Sun paradox: early Sun 30\% fainter, yet Earth had liquid water
     \item Carbonate-silicate cycle: Earth's climate thermostat; failed on Venus and Mars
