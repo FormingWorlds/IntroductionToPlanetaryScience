@@ -660,12 +660,16 @@ Their main result is summarised in a hysteresis diagram showing the conditions u
 
 ```{figure} figures/turbet2021_water_clouds_emission.avif
 :name: fig:turbet-clouds
-:width: 55%
+:width: 90%
 :align: center
 
-Three-dimensional simulation of an early Venus near the runaway threshold from {cite:t}`Turbet2021`, showing vertically integrated water-cloud column density (top, panel b) and thermal emission to space (bottom, panel d) at a stellar flux $S = 340.5$ W/m$^2$, with subsolar longitudes near $0^\circ$.
-The cool night-side hosts thick water clouds that trap outgoing thermal radiation as a greenhouse blanket, while the substellar dayside is largely cloud-free and absorbs nearly all the incoming sunlight, so the dayside dominates the emission to space.
-This day-night asymmetry is the mechanism by which the runaway state is preserved; on Earth, the corresponding panels of the same figure (not reproduced here) show a more zonally distributed cloud cover that allows the planet to sit on the condensed branch of the hysteresis curve.
+Three-dimensional simulations of an initially hot and steamy Earth (**a**, **c**) and Venus (**b**, **d**), both forced to a stellar flux $S = 340.5$ W/m$^2$, the present-day Earth insolation.
+The upper row shows the vertically integrated water-cloud column and the lower row the thermal emission to space.
+The maps are in the heliocentric frame, so subsolar longitude $0^\circ$ is the substellar point and $\pm 180^\circ$ the antistellar point.
+In both cases the clouds are concentrated on the night-side, where they act as a greenhouse blanket and cut the thermal cooling to space, so the emission maps are anticorrelated with the cloud maps.
+The substellar region stays comparatively cloud-free, which keeps the planetary albedo low.
+The two planets rotate at very different rates, Earth with $P_\mathrm{rot} \approx 24$ h and Venus with $P_\mathrm{rot} \approx 5833$ h, about 244 times longer, yet the same night-side cloud pattern appears in both, so the mechanism does not depend on slow rotation.
+Reproduced from {cite:t}`Turbet2021`, Fig. 2a-d.
 ```
 
 ```{figure} figures/turbet2021_hysteresis.avif
@@ -676,7 +680,7 @@ This day-night asymmetry is the mechanism by which the runaway state is preserve
 Hysteresis loops for ocean formation on early Earth and Venus, from {cite:t}`Turbet2021`.
 **Panel (a)** shows surface temperature as a function of incoming solar flux for Earth: at $4$ Ga, water condenses from a steam atmosphere if the atmosphere is initially condensed (operating point near present-day) but enters the runaway greenhouse if it starts hot (red branch).
 **Panel (b)** shows the same for Venus: the runaway and condensed branches do not overlap, so an early Venus that started in the runaway state (the natural endpoint of magma ocean cooling at high solar flux) cannot reach the condensed branch even at $4$ Ga, when the insolation at Venus was $\sim$25% lower than today and Venus still received $\sim$500 W/m$^2$, well above the cloud-modified condensation threshold of $\sim$325 W/m$^2$.
-Reproduced from {cite:t}`Turbet2021`.
+Reproduced from {cite:t}`Turbet2021`, Fig. 4.
 ```
 
 These three papers illustrate the current state of the field: there are strong theoretical arguments on both sides, the evidence from Venus itself is ambiguous, and definitive resolution will require new observations (the most decisive being noble-gas measurements from a future descent probe, which would constrain the time-integrated escape history, and high-resolution near-IR emissivity mapping of tessera regions, which would test for ancient felsic crust formed in the presence of liquid water).
