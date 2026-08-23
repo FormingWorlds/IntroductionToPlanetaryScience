@@ -332,7 +332,7 @@ Jupiter's internal structure shown as a radial cross-section (with Earth for sca
 
 - **Molecular hydrogen envelope** (outer ~15% by radius): $\mathrm{H_2}$ gas transitioning to liquid, $\rho \sim 0.2$–$1$ g cm$^{-3}$
 - **Metallic hydrogen layer** (extending to ~80% of the radius): at pressures above $\sim$1–4 Mbar ($10^{11}$–$4 \times 10^{11}$ Pa), hydrogen undergoes a gradual transition to a **metallic state** where electrons are delocalised and the material conducts electricity. This conducting metallic hydrogen is the source of Jupiter's powerful magnetic field ({ref}`Lecture 4 <lecture04>`)
-- **Core region**: Juno's gravity data show that heavy elements (rock and ice) are not concentrated in a small compact core but are instead spread over a large **dilute core** extending to perhaps 30–50% of Jupiter's radius ({numref}`fig:jupiter-z`) {cite:p}`Wahl2017`. This may be a relic of the formation process or the result of erosion of an initially compact core by convective mixing
+- **Core region**: Juno's gravity data show that most of the heavy elements (rock and ice) are not concentrated in a small compact core but are instead spread over a large **dilute core** extending to perhaps 30–50% of Jupiter's radius ({numref}`fig:jupiter-z`) {cite:p}`Wahl2017`. A small pure heavy-element core of between 1 and 5 $\Mearth$ at the very centre is still allowed by the gravity data, but is not required by them {cite:p}`Helled2022`. The dilute core may be a relic of the formation process or the result of erosion of an initially compact core by convective mixing
 
 ```{figure} figures/wahl2017_jupiter_density.avif
 :name: fig:jupiter-z
