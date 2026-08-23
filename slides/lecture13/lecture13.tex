@@ -210,7 +210,7 @@
 \begin{frame}[plain]
   \begin{center}
     \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{jwst_transit_lightcurve}\\
-    \footnotesize JWST/NIRSpec transit photometry of WASP-39 b: 200--500 ppm precision per channel. Alderson et al.\ (2023).
+    \footnotesize JWST/NIRSpec transit photometry of WASP-39 b: transit depth measured to 200--600 ppm per spectroscopic bin. Alderson et al.\ (2023).
   \end{center}
 \end{frame}
 
@@ -347,7 +347,7 @@
 \begin{frame}[plain]
   \begin{center}
     \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{pds70bc_haffert}\\
-    \footnotesize H$\alpha$ confirmation of PDS 70 b + c forming inside a disk gap. Haffert et al.\ (2019).
+    \footnotesize PDS 70 b + c inside the disk gap in three bands: MUSE H$\alpha$ (a), SPHERE K1 (b), NACO L$'$ (c). Haffert et al.\ (2019).
   \end{center}
 \end{frame}
 
@@ -785,20 +785,20 @@
   \begin{columns}[T]
     \column{0.5\textwidth}
     \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{sing_hotjup_spectra}\\
-    \footnotesize HST + Spitzer ten hot Jupiters
+    \footnotesize HST + Spitzer, ten hot Jupiters, ordered by optical-to-mid-IR altitude difference. Sing+ 2016.
     \column{0.5\textwidth}
     \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{gj1214b_clouds}\\
     \footnotesize GJ 1214 b: featureless. Kreidberg+ 2014.
   \end{columns}
   \vskip4pt
-  Continuum from clear (Na, K, H$_2$O) to fully cloudy. Diversity at similar $T$, $g$ is one of the central puzzles.
+  Continuum from clear (Na, H$_2$O at top) to aerosol-dominated (bottom). Diversity at similar $T$, $g$ is one of the central puzzles.
 \end{frame}
 
 % Hero: WASP-39 b PRISM spectrum
 \begin{frame}[plain]
   \begin{center}
-    \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{wasp39b_prism_spectrum}\\
-    \footnotesize JWST/NIRSpec PRISM transmission spectrum of WASP-39 b: Na, K, H$_2$O, CO, CO$_2$, SO$_2$, CH$_4$, clouds. Rustamkulov+ 2023.
+    \includegraphics[width=0.95\paperwidth, height=0.78\paperheight, keepaspectratio]{wasp39b_prism_spectrum}\\
+    \footnotesize JWST/NIRSpec PRISM transmission spectrum of WASP-39 b. Shaded bands are model opacity contributions; the data support H$_2$O (33$\sigma$), CO$_2$ (28$\sigma$), cloud (21$\sigma$), Na (19$\sigma$), CO (7$\sigma$), not K, H$_2$S or CH$_4$. Rustamkulov+ 2023.
   \end{center}
 \end{frame}
 
@@ -809,10 +809,10 @@
     \column{\recaptextcol}
     \begin{itemize}
       \item ERS target: 0.28 $\Mjup$ hot Saturn.
-      \item Clean detection of \textbf{photochemical SO$_2$}.
-      \item Four panels = four photochemistry codes; follow the SO$_2$ feature at $\sim 4\,\mu$m, not the panel labels.
-      \item SO$_2$ requires UV photolysis of H$_2$S; \emph{not} from equilibrium chemistry.
-      \item Tsai+ 2023. First unambiguous disequilibrium photochemistry.
+      \item The 4.05 $\mu$m feature is \textbf{photochemical SO$_2$}.
+      \item Panels are four wavelength ranges; each shows the same four codes (VULCAN, KINETICS, ARGO, ATMO).
+      \item Panel d: MIRI prediction, grey is SO$_2$ removed.
+      \item SO$_2$ needs UV photolysis of H$_2$S, \emph{not} equilibrium chemistry. Tsai+ 2023.
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -823,9 +823,9 @@
     \ipsrecapfig{wasp39b_alderson_species}
     \column{\recaptextcol}
     \begin{itemize}
-      \item Per-species decomposition of NIRSpec G395H.
-      \item CO$_2$ near 4.3 $\mu$m: $28.5\sigma$.
-      \item Strongest single absorption feature ever in any exoplanet atmosphere.
+      \item Each coloured curve: best-fit model with one opacity removed.
+      \item Panel a: full spectrum. Panel d: the CO$_2$ band alone.
+      \item CO$_2$ near 4.3 $\mu$m: $28.5\sigma$, against $21.5\sigma$ (H$_2$O) and $4.8\sigma$ (SO$_2$).
       \item Alderson+ 2023.
     \end{itemize}
   \end{columns}
