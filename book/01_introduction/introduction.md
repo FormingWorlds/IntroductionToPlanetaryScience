@@ -165,7 +165,7 @@ The same set of detections plotted in mass-period space ({numref}`fig:exoplanet-
 :width: 700px
 :align: center
 
-Planet mass (or $M\sin i$) versus orbital period for all confirmed exoplanets, colour-coded by detection method, with the eight solar-system planets shown as gold stars for reference. Selection effects favour large, short-period planets in the upper-left of the diagram. The Earth-analogue regime, near mass $\sim 1\,\Mearth$ and orbital period $\sim 1$ year, sits in the lower-middle of the plot and remains sparsely populated because radial-velocity and transit surveys with multi-year baselines have only recently begun to access it; future direct-imaging missions (in particular the Habitable Worlds Observatory and the LIFE interferometer concept) are explicitly designed to fill this region by spatially separating reflected or thermal planet light from the host star. Credit: NASA Exoplanet Archive (Caltech), accessed 2026-05-17 {cite:p}`NASAExoplanetArchive2026`.
+Planet mass (or $M\sin i$) versus orbital period for all confirmed exoplanets, colour-coded by detection method, with the eight solar-system planets shown as gold stars for reference. Selection effects favour large, short-period planets in the upper-left of the diagram. The Earth-analogue regime, near mass $\sim 1\,\Mearth$ and orbital period $\sim 1$ year, sits in the lower-middle of the plot and remains sparsely populated because radial-velocity and transit surveys with multi-year baselines have only recently begun to access it; future direct-imaging missions (in particular the Habitable Worlds Observatory and the LIFE interferometer concept) are explicitly designed to fill this region by spatially separating reflected or thermal planet light from the host star. Credit: NASA Exoplanet Archive (Caltech), accessed 2026-08-21 {cite:p}`NASAExoplanetArchive2026`.
 ```
 
 Within the small-planet regime, the Kepler sample reveals a bimodal radius distribution ({numref}`fig:radius-gap`) with peaks near $1.3\,\Rearth$ and $2.4\,\Rearth$ separated by a "radius valley", interpreted as the boundary between rocky planets and those retaining a thin H/He envelope.
@@ -323,7 +323,7 @@ The more precise form of Kepler's third law is $P^2 = 4\pi^2 a^3 / [G(M_* + M_p)
 - Jupiter, the most massive planet: $\Mjup \approx 318 \, \Mearth \approx 1.90 \times 10^{27}$ kg, giving $\Mjup / \Msun \approx 9.5 \times 10^{-4}$.
 - Total mass of all eight planets: $\approx 446 \, \Mearth \approx 2.7 \times 10^{27}$ kg, giving $M_\mathrm{planets}/\Msun \approx 1.3 \times 10^{-3}$.
 
-The Sun contains **99.86%** of the solar system's total mass. Jupiter alone accounts for 71% of the planetary mass ({numref}`fig:ss-mass-budget`). This extreme concentration of mass in the central star is a fundamental property of planetary systems, and one that planet formation theory must explain ({ref}`Lecture 2 <lecture02>`).
+The Sun contains **99.87%** of the solar system's total mass. Jupiter alone accounts for 71% of the planetary mass ({numref}`fig:ss-mass-budget`). This extreme concentration of mass in the central star is a fundamental property of planetary systems, and one that planet formation theory must explain ({ref}`Lecture 2 <lecture02>`).
 ```
 
 ```{figure} figures/ss_mass_budget.avif
@@ -331,7 +331,7 @@ The Sun contains **99.86%** of the solar system's total mass. Jupiter alone acco
 :width: 700px
 :align: center
 
-Mass budget of the solar system. *Left:* the Sun contains 99.86% of the total mass; the eight planets together contribute the remaining 0.13%. *Right:* among the planets, Jupiter accounts for $\sim 71\%$ and Saturn $\sim 21\%$; the ice giants Neptune ($3.8\%$) and Uranus ($3.3\%$) make up most of the rest; the four terrestrial planets (Mercury, Venus, Earth, Mars) together contribute only $0.44\%$ of the planetary mass and are grouped into a single wedge for legibility. Data from {cite:p}`NASAFactSheet`.
+Mass budget of the solar system. *Left:* the Sun contains 99.87% of the total mass; the eight planets together contribute the remaining 0.13%. *Right:* among the planets, Jupiter accounts for $\sim 71\%$ and Saturn $\sim 21\%$; the ice giants Neptune ($3.8\%$) and Uranus ($3.3\%$) make up most of the rest; the four terrestrial planets (Mercury, Venus, Earth, Mars) together contribute only $0.44\%$ of the planetary mass and are grouped into a single wedge for legibility. Data from {cite:p}`NASAFactSheet`.
 ```
 
 
