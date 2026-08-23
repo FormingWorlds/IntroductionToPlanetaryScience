@@ -25,10 +25,14 @@ web: $(LECTURES)
 
 # Convert AVIF→PNG for XeLaTeX (figures + common assets)
 # Force 8-bit sRGB without alpha: xdvipdfmx silently drops 16-bit and graya PNGs
+# A PNG is reused only while its timestamp still matches its source exactly, so a
+# figure replaced by a copy that carries an older timestamp is reconverted. The PNG
+# is deleted before conversion, so a decoder failure cannot leave a stale image that
+# the success check then accepts.
 avif2png:
 	@echo "Converting AVIF → PNG for slides..."
 	@rm -f .conv_failed
-	@find . -name '*.avif' -exec sh -c 'out="$${1%.avif}.png"; err=$$(magick "$$1" -depth 8 -alpha remove -alpha off -colorspace sRGB -type TrueColor "$$out" 2>&1); file "$$out" 2>/dev/null | grep -q "PNG image" || ffmpeg -v error -y -i "$$1" -pix_fmt rgb24 "$$out" || { printf "avif2png: magick and ffmpeg both failed for %s\nmagick said: %s\n" "$$1" "$$err" >&2; touch .conv_failed; }' _ {} \;
+	@find . -name '*.avif' -exec sh -c 'out="$${1%.avif}.png"; if [ -f "$$out" ] && [ ! "$$1" -nt "$$out" ] && [ ! "$$out" -nt "$$1" ]; then exit 0; fi; rm -f "$$out"; err=$$(magick "$$1" -depth 8 -alpha remove -alpha off -colorspace sRGB -type TrueColor "$$out" 2>&1); file "$$out" 2>/dev/null | grep -q "PNG image" || ffmpeg -v error -y -i "$$1" -pix_fmt rgb24 "$$out" || { printf "avif2png: magick and ffmpeg both failed for %s\nmagick said: %s\n" "$$1" "$$err" >&2; touch .conv_failed; }; file "$$out" 2>/dev/null | grep -q "PNG image" && touch -r "$$1" "$$out"' _ {} \;
 	@test ! -f .conv_failed
 
 # Convert SVG→PDF for XeLaTeX (vector figures)
