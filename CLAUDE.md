@@ -209,6 +209,38 @@ For entries that have BOTH a DOI and an arXiv eprint, include both fields — th
 6. The slides should be visually engaging, with clear labels, legends, and annotations to aid understanding
 7. All slides should share a common visual style (colors, fonts, layout) consistent with the course branding.
 
+### Recap slides: figure beside context bullets
+
+A recap slide shows a figure next to the bullet points that interpret it, usually one slide after the same figure was projected full width. On every such slide the figure must be **as large as the column allows** and **centred both horizontally and vertically** against the text column. A figure pinned to the top of its column with empty space beneath it is wrong.
+
+Use the shared layout from `slides/common/beamerthemeIPS.sty`:
+
+```latex
+\begin{frame}{Reading the composition bars}
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{composition_bar}
+    \column{\recaptextcol}
+    \small
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item ...
+    \end{itemize}
+    \vskip2pt\relax
+    \keyresult{...}
+  \end{columns}
+\end{frame}
+```
+
+Rules:
+
+- Use `\begin{columns}[c]`, never `\begin{columns}[T]`. `[T]` pins the figure to the top of the column, which is the layout this standard exists to prevent.
+- Use `\ipsrecapfig{name}` rather than a bare `\includegraphics`. Do not add a `height=0.62\textheight` style cap: for a landscape figure the column width binds first, so a low height cap only shrinks portrait figures for no reason. Pass the optional argument when a frame carries unusually long bullets: `\ipsrecapfig[0.6\textheight]{name}`.
+- Use `\recapfigcol` and `\recaptextcol` for the two column widths. They are defined once in the theme, so retuning the figure/text balance across the whole course is a one-line change. Do not hard-code column fractions on individual frames.
+- When the bullets do not fit that pair, use `\recapfigcolnarrow` and `\recaptextcolwide` instead. The figure stays the widest the text allows. Keep the bullet text at `\footnotesize` on a frame with three or more long bullets.
+- For a panorama figure wider than about 3:1, use `\recapfigcolwide` and `\recaptextcolnarrow`. Width binds on such a figure, so only a wider column makes it larger. A frame whose bullets already need `\recaptextcolwide` cannot also take a wide figure column; leave it on the pair its text needs.
+- A figure wider than about 3.5:1 whose bullets fill the slide belongs full width across the top, with the bullets in two columns beneath it, rather than in a side column at any width.
+- Check the build log for `Overfull \vbox` after changing a recap slide. A recap frame must produce none.
+
 ## Scientific Accuracy & Source Verification
 
 ### Verification requirements

@@ -114,6 +114,39 @@
   };
 }
 
+% ── Recap layout (figure beside context bullets) ────────────
+% Course standard for a slide that recaps a figure shown full-width on the
+% preceding slide. The figure must stay as large as the column allows and sit
+% centred both horizontally and vertically.
+%
+%   \begin{columns}[c]
+%     \column{\recapfigcol}\ipsrecapfig{figure_name}
+%     \column{\recaptextcol} ... bullets, then \keyresult{...}
+%   \end{columns}
+%
+% Use columns[c], never columns[T]: [c] centres the figure against the text
+% column, which is what places it vertically. Change these two widths to
+% retune every recap slide in the course at once.
+\newcommand{\recapfigcol}{0.52\textwidth}
+\newcommand{\recaptextcol}{0.45\textwidth}
+
+% Second pair for a frame whose bullets need more room. The figure is still the
+% widest the text allows. Pick the pair that builds with no overfull box.
+\newcommand{\recapfigcolnarrow}{0.46\textwidth}
+\newcommand{\recaptextcolwide}{0.50\textwidth}
+
+% Third pair for a panorama figure, wider than about 3:1. Width binds on such a
+% figure, so only a wider column makes it larger; the height cap cannot.
+\newcommand{\recapfigcolwide}{0.62\textwidth}
+\newcommand{\recaptextcolnarrow}{0.35\textwidth}
+
+% Largest image the column width allows, centred horizontally. The height cap
+% only binds for portrait figures; lower it for a frame with unusually long
+% bullets: \ipsrecapfig[0.6\textheight]{fig}
+\newcommand{\ipsrecapfig}[2][0.80\textheight]{%
+  \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=#1, keepaspectratio]{#2}}%
+}
+
 % ── Title page ──────────────────────────────────────────────
 % Set the title background credit per lecture: \titlebgcredit{Credit text}
 \newcommand{\titlebgcredit}[1]{\def\ips@titlebgcredit{#1}}
