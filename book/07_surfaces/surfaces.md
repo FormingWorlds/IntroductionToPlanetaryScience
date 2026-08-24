@@ -352,7 +352,7 @@ Repeat HiRISE imaging of Martian dune fields from the Mars Reconnaissance Orbite
 :width: 600px
 :align: center
 
-Barchan and barchanoid dunes on the floor of Nili Patera, a volcanic caldera on Mars, imaged by HiRISE on the Mars Reconnaissance Orbiter in March 2014. The crescent horns and the steep lee faces point downwind, and small ripples cover the gentler upwind slopes. Comparison with an image of the same field from November 2012 shows ripple movement, shifting dune margins, and fresh landslides on the lee face of the central dune. Repeat imaging of this dune field established that entire dunes advance, not only the ripples on them, at sand fluxes comparable to terrestrial values despite the thin atmosphere {cite:p}`Bridges2012`. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
+Barchan and barchanoid dunes on the floor of Nili Patera, a volcanic caldera on Mars, imaged by HiRISE on the Mars Reconnaissance Orbiter in March 2014 (PIA18244, observation ESP_035603_1890). The horns of each crescent extend downwind, the steep lee face is the concave slope between them, and small ripples cover the gentler upwind side. Comparison with an image of the same field from November 2012 shows ripple movement, shifting dune margins, and fresh landslides on the lee face of the central dune. An earlier study of this same dune field measured sand fluxes comparable to terrestrial values and showed that entire dunes advance, not only the ripples on them, despite the thin atmosphere {cite:p}`Bridges2012`. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
 ```
 
 ```{figure} figures/titan_dunes.avif
