@@ -78,6 +78,7 @@ def save_figure(
     *,
     avif_quality: int = 75,
     keep_png: bool = False,
+    dpi: int | None = None,
 ) -> Path:
     """Save figure as a high-resolution PNG, convert to AVIF, return AVIF path.
 
@@ -89,14 +90,18 @@ def save_figure(
         Final AVIF path (typically `book/<lecture>/figures/<name>.avif`).
     avif_quality
         AVIF q parameter. 65 is the project default for photographic
-        figures; 75–80 for text/line-heavy plots.
+        figures; 75-80 for text/line-heavy plots.
     keep_png
         Keep the intermediate PNG alongside the AVIF if True.
+    dpi
+        Render resolution. Defaults to the 200 dpi in `apply_style`. Raise it
+        for a figure that also appears full-width on a slide, where 200 dpi
+        leaves fewer pixels than the projector paints.
     """
     avif = Path(avif_path)
     avif.parent.mkdir(parents=True, exist_ok=True)
     png = avif.with_suffix(".png")
-    fig.savefig(png)
+    fig.savefig(png, **({"dpi": dpi} if dpi else {}))
     _crop_to_even(png)
     _encode_avif(png, avif, avif_quality)
     if not keep_png:

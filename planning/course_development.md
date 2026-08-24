@@ -656,8 +656,8 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | 2 | Planet formation & orbital dynamics | **LOCKED 2026-08-16** | High |
 | 3 | Planetary heat & energy transport | Draft complete | High |
 | 4 | Chemical differentiation & magnetospheres | Draft complete | High |
-| 5 | Atmospheres I | Draft complete (9 sections aligned 1:1 with the notes, including a separate Atmospheric retention section) | High |
-| 6 | Atmospheres II | Draft complete (92-page deck, 9 sections aligned 1:1 with the notes; forward-looking material points to the lecture that derives it) | High |
+| 5 | Atmospheres I | Draft complete (99-page deck, 9 sections aligned 1:1 with the notes, including a separate Atmospheric retention section; hero figures rebuilt from higher-resolution sources) | High |
+| 6 | Atmospheres II | Draft complete (92-page deck, 9 sections aligned 1:1 with the notes; forward-looking material points to the lecture that derives it; the Venus wind figure and its recap slide carry the colour-to-wavelength key) | High |
 | 7 | Planetary surfaces | Draft complete | High |
 | 8 | Planetary interiors | Draft complete | High |
 | 9 | Rocky planets: Earth & Venus | Draft complete | Medium |

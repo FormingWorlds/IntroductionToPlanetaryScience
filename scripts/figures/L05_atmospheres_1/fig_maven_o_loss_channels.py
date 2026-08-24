@@ -55,7 +55,9 @@ def make_plot() -> Path:
     ax.grid(axis="x", linestyle=":", alpha=0.3)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    # 300 dpi: the figure runs full-width on a slide, where 200 dpi is
+    # fewer pixels than the projector paints.
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=300)
 
 
 def main() -> None:
