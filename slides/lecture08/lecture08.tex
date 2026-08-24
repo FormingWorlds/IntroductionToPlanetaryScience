@@ -96,39 +96,34 @@
 % ── Shadow zone ──────────────────────────────────────────────
 \begin{frame}{The shadow zone: proof of a liquid core}
   \begin{itemize}
-    \item P-waves are refracted by the liquid outer core, creating a \textbf{P-wave shadow zone} (a band with no direct arrivals) between $\sim$104\textdegree{} and $\sim$140\textdegree{} from the epicentre
-    \item S-waves are \textbf{entirely absorbed} by the liquid core: shadow beyond 104\textdegree{}
+    \item At the core-mantle boundary $v_P$ drops from 13.7 to 8.1~km\,s$^{-1}$, so P-waves entering the core are bent sharply downward
+    \item Result: a \textbf{P-wave shadow zone} with no direct arrivals from $\sim$98\textdegree{} to $\sim$145\textdegree{} (classically quoted as 103\textdegree{} to 143\textdegree{})
+    \item S-waves cannot cross a liquid at all: \textbf{no direct S beyond} $\sim$103\textdegree{}
     \item Discovered by Oldham (1906) and Gutenberg (1914)
   \end{itemize}
   \vskip8pt
   \keyresult{The absence of S-waves through the outer core is the definitive evidence that it is liquid.}
 \end{frame}
 
-% ── Shadow zones walkthrough ─────────────────────────────────
-\begin{frame}{Where the waves go silent}
-  \begin{columns}[c]
-    \column{\recapfigcolnarrow}
-    \ipsrecapfig{shadow_zones_usgs}
-    \source{U.S. Geological Survey, public domain}
-
-    \column{\recaptextcolwide}
-    \small
-    Ray paths through Earth reveal the core:
-    \begin{itemize}
-      \item P-wave shadow zone at 104\textdegree{}--140\textdegree{}: refraction at the CMB, where $v_P$ drops from $\sim$13.7 to $\sim$8.1~km\,s$^{-1}$
-      \item S-wave shadow beyond $\sim$104\textdegree{}: shear waves do not cross the liquid outer core at all
-      \item Both zones were mapped from global earthquake records long before any drill or sample
-    \end{itemize}
-    \vskip6pt
-    \keyresult{Two shadow zones, one conclusion: the outer core is liquid.}
-  \end{columns}
+% ── Ray parameter ────────────────────────────────────────────
+\begin{frame}{Why the rays bend: one conserved quantity}
+  In a spherically symmetric body the \textbf{ray parameter} is constant along a ray:
+  \[
+    p = \frac{r \sin i}{v(r)}
+  \]
+  where $i$ is the angle to the local vertical.
+  \begin{itemize}
+    \item A ray bottoms out where $r/v(r) = p$
+    \item Angular distance: $\displaystyle \Delta = 2\!\int_{r_{\rm turn}}^{R} \frac{p \, \mathrm{d}r}{r\sqrt{(r/v)^2 - p^2}}$
+    \item Feed PREM into this integral and both shadow zones fall out, with no free parameters
+  \end{itemize}
 \end{frame}
 
 % ── Shadow zones hero ────────────────────────────────────────
 \begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{shadow_zones_usgs}}\\
-  {\footnotesize The P-wave shadow zone. Credit: U.S. Geological Survey, public domain.}
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{prem_shadow_zones}}\\
+  {\footnotesize Rays traced through PREM. Faint PKIKP arrivals through the solid inner core return into the P shadow from $\sim$116\textdegree{}. Course original, from the PREM tabulation of Dziewonski \& Anderson (1981).}
 \end{frame}
 
 % ── Gravity field ────────────────────────────────────────────
@@ -436,7 +431,7 @@
   \begin{columns}[c]
     \column{\recapfigcol}
     \ipsrecapfig{prem_density}
-    \source{Dziewonski \& Anderson (1981)}
+    \source{Course original; PREM coefficients from Dziewonski \& Anderson (1981)}
 
     \column{\recaptextcol}
     \textbf{Preliminary Reference Earth Model} (PREM):
@@ -534,7 +529,7 @@
 
 
 % ════════════════════════════════════════════════════════════
-\sectionimage{usgs_plate_boundaries_cross_section}{Plate boundaries and subduction, the surface expression of mantle convection. Credit: USGS, public domain}
+\sectionimage{earth_heat_flow_map}{Global surface heat flow, the surface expression of mantle convection. Credit: Fabio Crameri, Wikimedia Commons, CC BY-SA 4.0}
 \section{Mantle rheology \& convection}
 % ════════════════════════════════════════════════════════════
 
@@ -638,8 +633,8 @@
 % ── Convection regimes hero ──────────────────────────────────
 \begin{frame}
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{convection_regimes}}\\
-  {\footnotesize End-member regimes of mantle convection. Schematic; not to scale.}
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.76\paperheight, keepaspectratio]{convection_regimes}}\\
+  {\footnotesize End-member regimes of mantle convection. The 660~km boundary is dashed where flow crosses it, solid where it blocks flow. Schematic; boundary radius exaggerated.}
 \end{frame}
 
 
@@ -993,8 +988,13 @@
   {\footnotesize Helium phase separation in Jupiter and Saturn. Credit: Mankovich \& Fortney (2020), Fig.~3.}
 \end{frame}
 
-% ── Ice giants ───────────────────────────────────────────────
-\begin{frame}{Uranus \& Neptune: ice giant interiors}
+% ════════════════════════════════════════════════════════════
+\sectionimage{uranus_clouds_voyager}{Uranus from Voyager 2. Credit: NASA/JPL-Caltech}
+\section{Ice giant interiors}
+% ════════════════════════════════════════════════════════════
+
+% ── Three-layer model ────────────────────────────────────────
+\begin{frame}{Uranus \& Neptune: the canonical three layers}
   Canonical three-layer model:
   \vskip6pt
   \begin{enumerate}

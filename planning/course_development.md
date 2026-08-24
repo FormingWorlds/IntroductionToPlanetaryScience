@@ -633,8 +633,8 @@ Order:
 | 4 | Chemical differentiation & magnetospheres | Verified | High |
 | 5 | Atmospheres I | Verified (9 sections mapping 1:1 onto the slide deck; carries radiative-convective equilibrium and the energy-limited escape rate, the two boxed results of the deck) | High |
 | 6 | Atmospheres II | Verified (9 sections mapping 1:1 onto the slide deck; carries orbital forcing and the weathering-rate parameterisation, the two results the deck quantifies) | High |
-| 7 | Planetary surfaces | Verified | High |
-| 8 | Planetary interiors | Verified | High |
+| 7 | Planetary surfaces | Verified (11 sections mapping 1:1 onto the slide deck; every caption of a generated figure names the script that draws it) | High |
+| 8 | Planetary interiors | Verified (11 sections mapping 1:1 onto the slide deck; carries the PREM shadow-zone ray tracing and the two convection end-members, the results the deck builds on) | High |
 | 9 | Rocky planets: Earth & Venus | Verified (28 figures, Simpson-Nakajima derivation) | Medium |
 | 10 | Rocky planets: Mercury & Mars | Verified (31 figures, Jeans escape derivation) | Medium |
 | 11 | Gas & ice giants | Verified (40 figures, Roche-limit derivation) | Medium |
@@ -658,8 +658,8 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | 4 | Chemical differentiation & magnetospheres | Draft complete | High |
 | 5 | Atmospheres I | Draft complete (99-page deck, 9 sections aligned 1:1 with the notes, including a separate Atmospheric retention section; hero figures rebuilt from higher-resolution sources) | High |
 | 6 | Atmospheres II | Draft complete (92-page deck, 9 sections aligned 1:1 with the notes; forward-looking material points to the lecture that derives it; the Venus wind figure and its recap slide carry the colour-to-wavelength key) | High |
-| 7 | Planetary surfaces | Draft complete | High |
-| 8 | Planetary interiors | Draft complete | High |
+| 7 | Planetary surfaces | Draft complete (93-page deck, 11 sections aligned 1:1 with the notes; no raster placement is scaled beyond 1.11 of its native resolution) | High |
+| 8 | Planetary interiors | Draft complete (100-page deck, 11 sections aligned 1:1 with the notes; the convection schematic marks the 660 km boundary dashed where flow crosses it and solid where it blocks flow, and generated plots carry course-original credits) | High |
 | 9 | Rocky planets: Earth & Venus | Draft complete | Medium |
 | 10 | Rocky planets: Mercury & Mars | Draft complete | Medium |
 | 11 | Gas & ice giants | Draft complete | Medium |

@@ -7,6 +7,11 @@ Two-panel schematic of mantle convection end-members:
 (b) layered convection: separate cells in upper and lower mantle,
     decoupled by the 660 km phase transition.
 
+The drawn radius of the 660 km boundary is exaggerated. To scale the
+upper mantle is 23% of the mantle thickness, which leaves too little
+room for a legible arrow, so the boundary is placed at 45% instead.
+The captions state that the figure is schematic and not to scale.
+
 Caption / figure id : `fig:convection-regimes`
 Markdown source     : book/08_interiors/interiors.md
 Citation key        : Schubert2001
@@ -26,7 +31,7 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 OUT_AVIF = REPO_ROOT / "book/08_interiors/figures/convection_regimes.avif"
 
 R_TOTAL = 1.0          # surface radius (normalised; R_E = 6371 km)
-R_660 = 0.896          # 660 km discontinuity (depth = 0.104 of R_E)
+R_660 = 0.800          # 660 km discontinuity, radius exaggerated (true: 0.896)
 R_CMB = 0.546          # core-mantle boundary at 2891 km depth
 CORE_COLOR = "#c0524a"
 MANTLE_COLOR = "#f6f4f2"
@@ -34,12 +39,28 @@ COLD_DOWN = "#1f77b4"
 HOT_UP = "#e07a3a"
 
 
+def radial_arrow(ax, phi_deg: float, r0: float, r1: float, color: str,
+                 lw: float, head: float) -> None:
+    """Draw one curved arrow along the radius `phi_deg`, from `r0` to `r1`."""
+    phi = np.radians(phi_deg)
+    start = (r0 * np.cos(phi), r0 * np.sin(phi))
+    end = (r1 * np.cos(phi), r1 * np.sin(phi))
+    ax.add_patch(FancyArrowPatch(
+        start, end, arrowstyle="->", mutation_scale=head, color=color,
+        lw=lw, connectionstyle="arc3,rad=0.18"))
+
+
 def draw_panel(ax, mode: str) -> None:
+    # The 660 km ring is dashed where flow crosses it and solid where it
+    # blocks flow, so the line style carries the physics of each regime.
+    if mode == "whole":
+        ring = dict(edgecolor="0.55", lw=0.9, linestyle="--")
+    else:
+        ring = dict(edgecolor="0.35", lw=1.8, linestyle="-")
     # Surface, 660, CMB rings
     ax.add_patch(Circle((0, 0), R_TOTAL, facecolor=MANTLE_COLOR,
                         edgecolor="black", lw=1.0))
-    ax.add_patch(Circle((0, 0), R_660, facecolor=MANTLE_COLOR,
-                        edgecolor="0.55", lw=0.8, linestyle="--"))
+    ax.add_patch(Circle((0, 0), R_660, facecolor=MANTLE_COLOR, **ring))
     ax.add_patch(Circle((0, 0), R_CMB, facecolor=CORE_COLOR,
                         edgecolor="black", lw=1.0))
     ax.text(0, 0, "Core", ha="center", va="center", fontsize=11,
@@ -59,73 +80,44 @@ def draw_panel(ax, mode: str) -> None:
         ax.set_title("(a) Whole-mantle convection", fontsize=11)
         # 6 alternating plumes from CMB to surface, passing through 660
         for i, phi_deg in enumerate(range(20, 360, 60)):
-            phi = np.radians(phi_deg)
-            color = HOT_UP if i % 2 == 0 else COLD_DOWN
-            r0 = R_CMB + 0.02
-            r1 = R_TOTAL - 0.02
-            x0, y0 = r0 * np.cos(phi), r0 * np.sin(phi)
-            x1, y1 = r1 * np.cos(phi), r1 * np.sin(phi)
-            if i % 2 == 0:
-                start, end = (x0, y0), (x1, y1)
-            else:
-                start, end = (x1, y1), (x0, y0)
-            ax.add_patch(FancyArrowPatch(
-                start, end, arrowstyle="->", mutation_scale=14,
-                color=color, lw=2.0,
-                connectionstyle="arc3,rad=0.18"))
+            up = i % 2 == 0
+            r0, r1 = R_CMB + 0.02, R_TOTAL - 0.02
+            radial_arrow(ax, phi_deg, r0 if up else r1, r1 if up else r0,
+                         HOT_UP if up else COLD_DOWN, 2.0, 14)
         ax.text(0, -1.18, "Single circulation\nfrom CMB to surface",
                 ha="center", va="top", fontsize=9, color="0.3")
     else:
         ax.set_title("(b) Layered convection", fontsize=11)
-        # Lower-mantle cells (CMB to 660) - 6 plumes
+        # Lower-mantle cells, from the CMB up to the 660 km boundary
         for i, phi_deg in enumerate(range(20, 360, 60)):
-            phi = np.radians(phi_deg)
-            color = HOT_UP if i % 2 == 0 else COLD_DOWN
-            r0 = R_CMB + 0.02
-            r1 = R_660 - 0.02
-            x0, y0 = r0 * np.cos(phi), r0 * np.sin(phi)
-            x1, y1 = r1 * np.cos(phi), r1 * np.sin(phi)
-            if i % 2 == 0:
-                start, end = (x0, y0), (x1, y1)
-            else:
-                start, end = (x1, y1), (x0, y0)
-            ax.add_patch(FancyArrowPatch(
-                start, end, arrowstyle="->", mutation_scale=11,
-                color=color, lw=1.5,
-                connectionstyle="arc3,rad=0.18"))
-        # Upper-mantle cells (660 to surface) - 6 short plumes
-        for i, phi_deg in enumerate(range(40, 360, 60)):
-            phi = np.radians(phi_deg)
-            color = HOT_UP if i % 2 == 1 else COLD_DOWN
-            r0 = R_660 + 0.01
-            r1 = R_TOTAL - 0.02
-            x0, y0 = r0 * np.cos(phi), r0 * np.sin(phi)
-            x1, y1 = r1 * np.cos(phi), r1 * np.sin(phi)
-            if i % 2 == 1:
-                start, end = (x0, y0), (x1, y1)
-            else:
-                start, end = (x1, y1), (x0, y0)
-            ax.add_patch(FancyArrowPatch(
-                start, end, arrowstyle="->", mutation_scale=10,
-                color=color, lw=1.3,
-                connectionstyle="arc3,rad=0.20"))
+            up = i % 2 == 0
+            r0, r1 = R_CMB + 0.02, R_660 - 0.02
+            radial_arrow(ax, phi_deg, r0 if up else r1, r1 if up else r0,
+                         HOT_UP if up else COLD_DOWN, 1.8, 12)
+        # Upper-mantle cells, offset by 30 degrees from the lower ones so
+        # the two layers read as decoupled rather than aligned.
+        for i, phi_deg in enumerate(range(50, 360, 60)):
+            up = i % 2 == 1
+            r0, r1 = R_660 + 0.02, R_TOTAL - 0.02
+            radial_arrow(ax, phi_deg, r0 if up else r1, r1 if up else r0,
+                         HOT_UP if up else COLD_DOWN, 1.6, 10)
         ax.text(0, -1.18, "Upper- and lower-mantle\ncells separated by 660 km",
                 ha="center", va="top", fontsize=9, color="0.3")
 
-    ax.set_xlim(-1.3, 1.3)
-    ax.set_ylim(-1.4, 1.25)
+    ax.set_xlim(-1.12, 1.12)
+    ax.set_ylim(-1.40, 1.18)
     ax.set_aspect("equal")
     ax.axis("off")
 
 
 def make_plot() -> Path:
     apply_style()
-    fig, axes = plt.subplots(1, 2, figsize=(11, 5.8))
+    fig, axes = plt.subplots(1, 2, figsize=(10.4, 6.0))
     draw_panel(axes[0], "whole")
     draw_panel(axes[1], "layered")
     fig.suptitle("Mantle convection regimes", fontsize=12, y=0.98)
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=300)
 
 
 def main() -> None:

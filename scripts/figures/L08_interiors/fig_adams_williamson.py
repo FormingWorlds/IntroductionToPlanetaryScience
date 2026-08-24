@@ -57,7 +57,9 @@ def gravity_at_depth(z_km: np.ndarray) -> np.ndarray:
     shell_mass = 4 * np.pi * (0.5 * (r_asc[:-1] + r_asc[1:])) ** 2 \
                  * 0.5 * (rho_asc[:-1] + rho_asc[1:]) * dr
     m_asc = np.concatenate([[0.0], np.cumsum(shell_mass)])
-    g_asc = np.where(r_asc > 0, G_NEWTON * m_asc / r_asc ** 2, 0.0)
+    # g(0) is set to zero explicitly; dividing there would be 0/0.
+    g_asc = np.zeros_like(r_asc)
+    np.divide(G_NEWTON * m_asc, r_asc ** 2, out=g_asc, where=r_asc > 0)
     g_at_depth_grid = g_asc[::-1]  # back to descending depth
     # Interpolate to caller's depth
     return np.interp(z_km, z_grid, g_at_depth_grid)
