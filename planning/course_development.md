@@ -631,7 +631,7 @@ Order:
 | 2 | Planet formation & orbital dynamics | **LOCKED 2026-08-08** (25 figures all source- or pixel-verified, two swapped to genuine source figures, five rebuilt from tracked scripts; ~55 corrections across five verification dimensions; three-question closer + bridge to L03) | High |
 | 3 | Planetary heat & energy transport | Verified | High |
 | 4 | Chemical differentiation & magnetospheres | Verified | High |
-| 5 | Atmospheres I | Verified | High |
+| 5 | Atmospheres I | Verified (9 sections mapping 1:1 onto the slide deck; carries radiative-convective equilibrium and the energy-limited escape rate, the two boxed results of the deck) | High |
 | 6 | Atmospheres II | Verified | High |
 | 7 | Planetary surfaces | Verified | High |
 | 8 | Planetary interiors | Verified | High |
@@ -656,7 +656,7 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | 2 | Planet formation & orbital dynamics | **LOCKED 2026-08-16** | High |
 | 3 | Planetary heat & energy transport | Draft complete | High |
 | 4 | Chemical differentiation & magnetospheres | Draft complete | High |
-| 5 | Atmospheres I | Draft complete | High |
+| 5 | Atmospheres I | Draft complete (9 sections aligned 1:1 with the notes, including a separate Atmospheric retention section) | High |
 | 6 | Atmospheres II | Draft complete | High |
 | 7 | Planetary surfaces | Draft complete | High |
 | 8 | Planetary interiors | Draft complete | High |

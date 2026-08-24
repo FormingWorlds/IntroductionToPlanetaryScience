@@ -371,6 +371,12 @@ The atmospheric "photosphere" concept. (a) Beer–Lambert attenuation: the trans
 
 ## Energy balance and the greenhouse effect
 
+### Radiative-convective equilibrium
+
+An atmosphere in which radiation alone carried the energy would not be stable. Near the surface the absorbing gases are optically thick, and the temperature gradient that pure radiative transfer would require there is steeper than the dry adiabat of {eq}`eq:dry-adiabat`. A parcel displaced upward in such a profile remains warmer than its surroundings and keeps rising, so the layer overturns: convection sets in and holds the gradient close to the adiabat. Higher up the atmosphere becomes optically thin, radiation carries the energy efficiently, and the radiative gradient is shallower than the adiabat, so displaced parcels sink back. The **tropopause** is the level where the two gradients cross. It is therefore an outcome of the energy balance rather than a boundary imposed by hand. This combined state, convective below and radiative above, is called **radiative-convective equilibrium**, and it is the reason the troposphere and the stratosphere described above behave so differently.
+
+{cite:t}`Manabe1964` first solved for such a profile self-consistently in one dimension. Their model computed the radiative fluxes of the main absorbers ($\mathrm{H_2O}$, $\mathrm{CO_2}$, $\mathrm{O_3}$) and applied a **convective adjustment**: wherever the radiative solution gave a lapse rate steeper than a prescribed critical value, the profile was reset to that value and the energy redistributed. The calculation reproduced both the surface temperature and the height of the tropopause without either being prescribed. The same framework, extended to a fixed distribution of relative humidity, was used to estimate the warming produced by an increase in atmospheric $\mathrm{CO_2}$ {cite:p}`Manabe1967`, and it is the direct ancestor of the general circulation models used for climate projection today. Syukuro Manabe shared the 2021 Nobel Prize in Physics for the physical modelling of Earth's climate.
+
 ### Planetary energy balance
 
 Every planet reaches a thermal equilibrium in which the rate of **absorbed stellar energy** equals the rate of **emitted thermal radiation**. The stellar flux received at a planet's orbital distance $d$ from its star (luminosity $L_\star$) is:
@@ -559,6 +565,14 @@ Velocity field (arrows) and neutral hydrogen fraction (colour scale) of an EUV-d
 ```
 
 Hydrodynamic outflows of this kind are observed directly. Ultraviolet transit spectroscopy has detected extended envelopes of escaping atomic hydrogen around the hot Jupiter HD 209458 b {cite:p}`VidalMadjar2003` and the warm Neptune GJ 436 b {cite:p}`Ehrenreich2015`, and near-infrared spectroscopy has revealed escaping helium around the warm super-Neptune WASP-107 b {cite:p}`Spake2018`.
+
+A first estimate of the loss rate in this regime follows from equating the stellar EUV energy absorbed by the upper atmosphere to the gravitational binding energy of the gas that leaves {cite:p}`Watson1981`. If a fraction $\eta$ of the incident flux $F_{\mathrm{EUV}}$ intercepted over the planetary disc goes into lifting material out of the potential well, the **energy-limited** mass-loss rate is
+
+$$
+\dot{M}_{\mathrm{EL}} = \eta \, \frac{\pi \, F_{\mathrm{EUV}} \, R_p^3}{G \, M_p}
+$$ (eq:energy-limited-escape)
+
+with $\eta \approx 0.1-0.2$ for hydrogen-dominated atmospheres. Two scalings matter most. The rate rises as $R_p^3$, so an extended, low-density envelope is stripped far faster than a compact one, and it falls as $1/M_p$, so a low surface gravity makes escape easier. Equation {eq}`eq:energy-limited-escape` holds only while the absorbed energy is spent on the outflow. When the gas is dense enough that recombination radiation carries away most of the deposited energy, the true loss rate falls below this estimate {cite:p}`Owen2019`.
 
 Hydrodynamic escape is most important during a planet's first few hundred million years, when the host star's EUV luminosity is 10–100 times higher than at present. It can strip hydrogen-rich primary atmospheres from planets up to several Earth masses, and is the leading explanation for the observed **radius valley** in the exoplanet population ({numref}`fig:owen-radius-valley`), the deficit of planets with radii between $\sim$1.5 and $2 \, \Rearth$ ({ref}`Lecture 13 <lecture13>`). During hydrodynamic escape, the outflowing hydrogen can also **drag along heavier species** (such as He, C, N, O), leading to more extensive atmospheric loss than Jeans escape alone would produce {cite:p}`Hunten1987`.
 
