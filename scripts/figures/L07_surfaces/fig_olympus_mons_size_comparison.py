@@ -13,11 +13,11 @@ quoted height belongs to:
 
 Only the vertical axis carries a scale. The horizontal axis is unlabelled
 because the three footprints are too unequal to share one scale: Olympus
-Mons is about 600 km across at its base and the two terrestrial mountains
-are a few tens of km, so a true horizontal scale would reduce Everest to a
-line. The drawn widths are compressed, and keep the ordering of the real
-footprints so that Olympus Mons still reads as the broad, gently sloping
-shield it is rather than as a steep peak.
+Mons is about 600 km across at its base, many times the width of either
+terrestrial mountain, so a true horizontal scale would reduce Everest to a
+line. The drawn widths are compressed. The compression keeps the order of
+the real footprints, and it keeps Olympus Mons the flattest of the three
+profiles, so the shield stays broad and gently sloping rather than steep.
 
 Caption / figure id : `fig:olympus-comparison`
 Markdown source     : book/07_surfaces/surfaces.md
@@ -45,9 +45,11 @@ OLYMPUS_FILL = "#c07a4e"
 MAUNA_KEA_FILL = "#4f7d4a"
 EVEREST_FILL = "#8d8f96"
 
-# Drawn half-widths and centres, in schematic x units. The widths are
-# compressed but keep the ordering of the real footprints.
-LAYOUT = {"olympus": (1.55, 1.75), "mauna_kea": (1.00, 5.00), "everest": (0.72, 7.40)}
+# Drawn half-widths and centres, in schematic x units. Real width-to-height
+# is about 28 for Olympus Mons and several times less for the two terrestrial
+# mountains. The drawn values compress that range hard but keep its order, so
+# Olympus Mons stays the flattest silhouette of the three.
+LAYOUT = {"olympus": (3.05, 3.35), "mauna_kea": (0.85, 8.20), "everest": (0.55, 10.60)}
 
 
 def shield_profile(half_width: float, height: float, exponent: float) -> tuple[np.ndarray, np.ndarray]:
@@ -104,7 +106,7 @@ def main() -> Path:
         ax.axhline(height, color=colour, linestyle="--", linewidth=1.0,
                    alpha=0.85, zorder=1)
 
-    ax.set_xlim(-0.6, 11.0)
+    ax.set_xlim(-0.5, 12.4)
     ax.set_ylim(-3.4, 23.6)
     ax.set_yticks(np.arange(0, 25, 5))
     ax.set_ylabel("Height above base (km)")
@@ -114,7 +116,7 @@ def main() -> Path:
     ax.grid(axis="x", visible=False)
     ax.axhline(0.0, color="#3a3a3a", linewidth=1.0, zorder=2)
 
-    ax.text(10.8, 22.6,
+    ax.text(12.2, 22.6,
             "Olympus Mons is 2.4 times the height\n"
             "of Everest and 2.1 times the height\n"
             "of Mauna Kea. Heights share one scale;\n"
