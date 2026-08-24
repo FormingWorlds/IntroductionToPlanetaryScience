@@ -261,12 +261,12 @@ The size and morphology of Olympus Mons are shown in {numref}`fig:olympus-mons`,
 Olympus Mons on Mars, the largest volcano in the solar system, seen from above in this Viking Orbiter colour mosaic. The shield volcano has a base diameter of $\sim$600 km and a summit elevation of $\sim$21.2 km above the Mars datum. The caldera complex at the summit (centre) contains multiple nested collapse craters formed by episodic magma withdrawal. The steep basal escarpment (up to 6 km high) is visible as the sharp boundary encircling the edifice. Olympus Mons grew to this immense size because Mars lacks plate tectonics: the volcanic source remained fixed beneath the lithosphere for billions of years. Credit: NASA/JPL/USGS, public domain.
 ```
 
-```{figure} figures/olympus_mons_size_comparison.svg
+```{figure} figures/olympus_mons_size_comparison.avif
 :name: fig:olympus-comparison
 :width: 600px
 :align: center
 
-Cross-sectional comparison of Olympus Mons (Mars), Mauna Kea (Hawaii, measured from its base on the ocean floor at $\sim$10.2 km total relief), and Mount Everest (Earth, $\sim$8.85 km above sea level). At $\sim$21.2 km summit elevation above the Mars datum and $\sim$600 km base diameter, Olympus Mons stands roughly twice as tall as Mauna Kea (measured edifice-to-summit) and dwarfs Earth's tallest subaerial mountain. The contrast is set by the absence of plate tectonics on Mars: a stationary mantle plume has continuously fed the same volcanic edifice for billions of years, whereas the Pacific plate carries Hawaiian volcanoes off the underlying hotspot in $\sim$10$^6$ yr, capping their possible size. Vertical scale exaggerated for clarity. Credit: Wikimedia Commons, public domain.
+Height comparison of Olympus Mons (Mars), Mauna Kea (Hawaii) and Mount Everest (Earth). Each edifice rises from the base that its quoted height is measured against: the Mars datum for Olympus Mons at 21.2 km, the ocean floor for Mauna Kea at 10.2 km of total relief, and sea level for Mount Everest at 8.8 km. The three heights share one linear scale, so they can be read directly against each other; Olympus Mons is 2.4 times the height of Everest and 2.1 times the height of Mauna Kea. The drawn widths are schematic and strongly compressed, since Olympus Mons is $\sim$600 km across at its base while the two terrestrial mountains span a few tens of km, so no single horizontal scale can show all three. The height contrast is set by the absence of plate tectonics on Mars: a stationary mantle plume has continuously fed the same volcanic edifice for billions of years, whereas the Pacific plate carries Hawaiian volcanoes off the underlying hotspot in $\sim$10$^6$ yr, capping their possible size.
 ```
 
 ```{figure} figures/venus_magellan.avif
@@ -321,7 +321,7 @@ The Tharsis-related rifting on Mars is recorded in Valles Marineris ({numref}`fi
 :width: 400px
 :align: center
 
-A lobate scarp near Pourquoi-Pas crater on Mercury, imaged by the MESSENGER spacecraft. The scarp (running diagonally across the field of view) is the surface expression of a thrust fault formed during global contraction as Mercury's interior cooled and the radius shrank by up to $\sim$7 km. The scarp clearly cross-cuts and offsets pre-existing impact craters, demonstrating that the contraction continued long after the early bombardment. Credit: NASA/Johns Hopkins APL/Carnegie Institution of Washington, public domain.
+A lobate scarp near Pourquoi-Pas crater on Mercury, imaged by the MESSENGER spacecraft. The scarp runs diagonally across the field of view as a sinuous step in the surface, picked out by the shadow along its steep front. It is the surface expression of a thrust fault formed during global contraction as Mercury's interior cooled and the radius shrank by up to $\sim$7 km. Because such a fault breaks the surface it cuts, the contraction that produced it must post-date the cratered terrain it deforms {cite:p}`Byrne2014`. Credit: NASA/Johns Hopkins APL/Carnegie Institution of Washington, public domain.
 ```
 
 ```{figure} figures/valles_marineris.avif
@@ -427,7 +427,7 @@ Every mineral has a characteristic pattern of absorption features in the visible
 :width: 600px
 :align: center
 
-Two complementary views of carbonate-bearing terrain near Nili Fossae on Mars (PIA19816). (a) Thermal-infrared composite from the THEMIS instrument on Mars Odyssey, showing surface morphology and thermal-inertia variations. (b) Spectral classification map from the CRISM instrument on the Mars Reconnaissance Orbiter, where colour codes indicate the dominant mineralogy: Mg-carbonates (green), olivine-bearing sands (brown/yellow), and basaltic terrain (purple). The carbonates form by aqueous alteration of basaltic crust and provide direct mineralogical evidence for sustained liquid water on early Mars; nearby Mg/Fe-phyllosilicates (clays) detected in the same Nili Fossae region by CRISM further constrain the alteration history {cite:p}`Ehlmann2008`. Credit: NASA/JPL-Caltech/ASU/JHU APL, public domain.
+Two complementary views of carbonate-bearing terrain near Nili Fossae on Mars (PIA19816). Left (labelled THEMIS TI): thermal-inertia map derived from thermal-infrared observations by the THEMIS instrument on Mars Odyssey, showing surface morphology and the contrast between dusty and rocky ground. Right (labelled CRISM): spectral classification strips from the CRISM instrument on the Mars Reconnaissance Orbiter, laid over a greyscale basemap, where colour codes the dominant mineralogy: Mg-carbonates (green), olivine-bearing sands (yellow to brown), and basaltic terrain (blue). Each panel carries its own 20 km scale bar. The carbonates form by aqueous alteration of basaltic crust and provide direct mineralogical evidence for sustained liquid water on early Mars; nearby Mg/Fe-phyllosilicates (clays) detected in the same Nili Fossae region by CRISM further constrain the alteration history {cite:p}`Ehlmann2008`. Credit: NASA/JPL-Caltech/ASU/JHU APL, public domain.
 ```
 
 ### Radar imaging (SAR)
