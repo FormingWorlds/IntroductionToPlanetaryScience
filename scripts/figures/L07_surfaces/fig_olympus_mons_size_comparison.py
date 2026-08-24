@@ -78,7 +78,7 @@ def shield_profile(half_width: float, height: float, exponent: float) -> tuple[n
     return x, y
 
 
-def main() -> Path:
+def make_plot() -> Path:
     """Draw the comparison and write the AVIF."""
     apply_style()
     fig, ax = plt.subplots(figsize=(10.0, 5.625))
@@ -127,5 +127,9 @@ def main() -> Path:
     return save_figure(fig, OUT_AVIF, avif_quality=80)
 
 
+def main() -> None:
+    print(make_plot())
+
+
 if __name__ == "__main__":
-    print(main())
+    main()
