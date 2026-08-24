@@ -391,29 +391,6 @@
   \end{columns}
 \end{frame}
 
-% ── Mars RSL ─────────────────────────────────────────────
-\begin{frame}{Mars recurring slope lineae (RSL)}
-  \begin{columns}[c]
-    \column{0.46\textwidth}
-    \centering
-    \includegraphics[width=\linewidth,height=0.62\textheight,keepaspectratio]{mars_rsl}
-    \source{NASA/JPL-Caltech/UA/MRO HiRISE}
-
-    \column{0.50\textwidth}
-    \footnotesize
-    First seen by HiRISE in 2011: narrow dark streaks that grow during the warmest months.
-    \vskip6pt
-    \begin{itemize}
-      \item Found on steep, equator-facing slopes
-      \item Appear in spring/summer, fade in winter
-      \item Length: 50--300~m; width: 0.5--5~m
-      \item \textbf{Initial interpretation:} briny water flow (perchlorate salts depress freezing point)
-      \item \textbf{Revised view (2017+):} likely \textbf{dry granular flow}; spectroscopic water signal re-interpreted
-      \item Still debated: some sites may involve transient liquid brines
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
 % ── Mars clouds ─────────────────────────────────────────────
 \begin{frame}{Mars: dust and ice clouds}
   \centering
@@ -791,6 +768,22 @@
   \end{columns}
 \end{frame}
 
+% ── Thermal tides ────────────────────────────────────────
+\begin{frame}{Venus's super-rotation: thermal tides}
+  How does Venus's atmosphere rotate 60 times faster than the surface?
+  \vskip6pt
+  \begin{itemize}
+    \item Surface rotation: 243 days, retrograde
+    \item Cloud-top winds: 4 days, $\sim$100~m/s
+    \item Sustaining this requires angular momentum transport \textbf{upward and equatorward}
+    \item \textbf{Thermal tides:} solar heating of the cloud layer creates day-night pressure gradients, which launch waves that carry angular momentum upward
+    \item \textbf{Planetary-scale waves} redistribute angular momentum toward the equator
+    \item Detailed mechanism still debated; Akatsuki measurements ongoing
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: S\'{a}nchez-Lavega et al.\ (2017)}
+\end{frame}
+
 % ── Jupiter GRS ─────────────────────────────────────────────
 \begin{frame}{Jupiter: the Great Red Spot}
   \begin{columns}[c]
@@ -989,7 +982,7 @@
     \begin{itemize}
       \item \textbf{Obliquity} (axial tilt): 22.1\textdegree--24.5\textdegree{} on $\sim$41~kyr
       \item \textbf{Eccentricity:} $e = 0$--0.06 on 100 and 400~kyr
-      \item \textbf{Precession} (wobble of the spin axis): $\sim$26~kyr
+      \item \textbf{Climatic precession} (spin-axis wobble combined with the turning of the orbital ellipse): 19--23~kyr
       \item Change seasonal/latitudinal insolation
       \item Pace glacial-interglacial cycles
       \item Match $\delta^{18}$O in ocean sediments
@@ -1168,6 +1161,25 @@
   \keyresult{This thermostat operates on $\sim$0.5~Myr timescales. It is the primary reason Earth has maintained habitable temperatures for $>$4~Gyr despite a 30\% increase in solar luminosity.}
 \end{frame}
 
+% ── Carbonate-silicate equation detail ────────────────
+\begin{frame}{Quantifying the weathering feedback}
+  A simple model for the carbonate-silicate thermostat:
+  \vskip6pt
+  \[ W(T) = W_0 \exp\!\left(\frac{T - T_0}{T_e}\right) \]
+  \vskip6pt
+  where $W$ is the weathering rate, $T_e \approx 10$~K is the $e$-folding temperature.
+  \vskip6pt
+  \begin{itemize}
+    \item Doubling weathering requires $\sim$7~K warming
+    \item Halving it requires $\sim$7~K cooling
+    \item In steady state, $W = V$ (volcanism) sets atmospheric pCO$_2$
+    \item Perturbation analysis: climate damping timescale $\sim$0.5~Myr
+    \item Works only if liquid water and active volcanism coexist
+  \end{itemize}
+  \vskip4pt
+  {\tiny\color{ipsText!60} Source: Walker et al.\ (1981); Pierrehumbert (2010)}
+\end{frame}
+
 % ── Venus and Mars ──────────────────────────────────────────
 \begin{frame}{Venus \& Mars: failed thermostats}
   \footnotesize
@@ -1204,53 +1216,12 @@
 
 % ── Runaway greenhouse ──────────────────────────────────
 \begin{frame}{The runaway greenhouse}
-  A planet that absorbs too much stellar flux can lose its oceans entirely.
-  \vskip6pt
+  The water-vapour feedback has a limit, and past it a planet loses its oceans.
+  \vskip8pt
   \begin{itemize}
-    \item Water vapour is a strong greenhouse gas
-    \item Warmer surface $\rightarrow$ more evaporation $\rightarrow$ more greenhouse $\rightarrow$ hotter surface
-    \item Outgoing longwave radiation asymptotes to $\sim$280--310~W/m$^2$ (Simpson-Nakajima limit)
-    \item If absorbed stellar flux exceeds this, the positive feedback is unstoppable
-    \item Oceans fully evaporate; H$_2$O photolysed by UV; H escapes hydrodynamically (as a bulk outflow, not atom by atom)
-    \item End state: dry, CO$_2$-rich atmosphere (Venus today)
+    \item Outgoing longwave radiation cannot rise without bound as the surface warms: there is a maximum, and above it the feedback no longer closes
+    \item {\bf Lecture 9} derives that maximum and applies it to Venus
   \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Nakajima et al.\ (1992); Goldblatt et al.\ (2013)}
-\end{frame}
-
-% ── Thermal tides ────────────────────────────────────────
-\begin{frame}{Venus's super-rotation: thermal tides}
-  How does Venus's atmosphere rotate 60 times faster than the surface?
-  \vskip6pt
-  \begin{itemize}
-    \item Surface rotation: 243 days, retrograde
-    \item Cloud-top winds: 4 days, $\sim$100~m/s
-    \item Sustaining this requires angular momentum transport \textbf{upward and equatorward}
-    \item \textbf{Thermal tides:} solar heating of the cloud layer creates day-night pressure gradients, which launch waves that carry angular momentum upward
-    \item \textbf{Planetary-scale waves} redistribute angular momentum toward the equator
-    \item Detailed mechanism still debated; Akatsuki measurements ongoing
-  \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: S\'{a}nchez-Lavega et al.\ (2017)}
-\end{frame}
-
-% ── Carbonate-silicate equation detail ────────────────
-\begin{frame}{Quantifying the weathering feedback}
-  A simple model for the carbonate-silicate thermostat:
-  \vskip6pt
-  $$W(T) = W_0 \exp\!\left(\frac{T - T_0}{T_e}\right)$$
-  \vskip6pt
-  where $W$ is the weathering rate, $T_e \approx 10$~K is the $e$-folding temperature.
-  \vskip6pt
-  \begin{itemize}
-    \item Doubling weathering requires $\sim$7~K warming
-    \item Halving it requires $\sim$7~K cooling
-    \item In steady state, $W = V$ (volcanism) sets atmospheric pCO$_2$
-    \item Perturbation analysis: climate damping timescale $\sim$0.5~Myr
-    \item Works only if liquid water and active volcanism coexist
-  \end{itemize}
-  \vskip4pt
-  {\tiny\color{ipsText!60} Source: Walker et al.\ (1981); Pierrehumbert (2010)}
 \end{frame}
 
 % ── Venus phosphine ─────────────────────────────────────

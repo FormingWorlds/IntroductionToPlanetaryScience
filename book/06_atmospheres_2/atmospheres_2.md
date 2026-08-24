@@ -681,6 +681,31 @@ Credit: ESA / DLR / FU Berlin (G. Neukum), CC BY-SA 3.0 IGO.
 
 A dense $\mathrm{CO_2}$ atmosphere alone struggles to explain warm conditions on early Mars: $\mathrm{CO_2}$ condenses into ice clouds at the high pressures required, which can actually *cool* the planet by increasing the albedo. Reducing greenhouse gases ($\mathrm{H_2}$, $\mathrm{CH_4}$) produced by volcanism and water-rock reactions have been proposed as additional warming agents. The early Mars climate remains one of the major unsolved problems in planetary science.
 
+### Orbital forcing: Milankovitch cycles
+
+Stellar luminosity sets the trend over billions of years. On timescales of tens of thousands of years the dominant forcing is instead geometric: the orbit and the spin axis of the planet both change slowly, driven by the gravitational pull of the other planets. Three quantities matter, and together they are known as the **Milankovitch cycles** ({numref}`fig:milankovitch`).
+
+- **Obliquity** $\varepsilon$, the tilt of the spin axis away from the orbit normal, oscillates between $22.1^\circ$ and $24.5^\circ$ with a period near 41 kyr. A larger tilt strengthens the seasonal contrast at both poles at once.
+
+- **Eccentricity** $e$, the departure of the orbit from a circle, varies between $e \approx 0$ and $e \approx 0.06$ with beating periods near 100 and 400 kyr. It controls how much the star-planet distance changes over one orbit.
+
+- **Climatic precession**, the wobble of the spin axis combined with the slow turning of the orbital ellipse itself, has a period of 19-23 kyr. It sets which season falls at perihelion, and its amplitude is scaled by $e$, so the two are not independent. The combination $e \sin \varpi$, where $\varpi$ is the longitude of perihelion, is the quantity that enters the insolation.
+
+The essential point is that obliquity and precession move sunlight around; they do not add any. Averaged over a full orbit and over the whole globe, the flux a planet receives is $L_\star / (4 \pi a^2 \sqrt{1 - e^2})$, which is independent of both the tilt and the phase of the wobble. Only eccentricity enters, and weakly: swinging $e$ from 0 to 0.06 changes the annual global mean by less than 0.2%. What the cycles do change, by tens of watts per square metre, is the insolation at a given latitude in a given season. Summer insolation at $65^\circ$N is the classical index, because that is where the northern ice sheets grow and melt, and a cool summer that fails to melt the previous winter's snow is what lets an ice sheet survive.
+
+```{figure} figures/milankovitch_cycles.avif
+:name: fig:milankovitch
+:width: 620px
+:align: center
+
+The Milankovitch cycles over the past and next 800 kyr. From top: obliquity $\varepsilon$; eccentricity $e$; the precession term $\sin \varpi$ and the precession index $e \sin \varpi$; the resulting daily-mean summer insolation at $65^\circ$N; and two climate records, the $\delta^{18}\mathrm{O}$ of benthic foraminifera and the temperature anomaly from the Vostok ice core. The orbital quantities are computed, not measured; the two lowest curves are data. The 100 kyr rhythm of the glacial cycles in the lower panels has no counterpart of matching strength in the insolation curve above it, which is the unsolved part of the problem.
+Credit: Wikimedia Commons, [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0/).
+```
+
+The evidence that these cycles pace the ice ages is spectral. {cite:t}`Hays1976` measured $\delta^{18}\mathrm{O}$ down two deep-sea sediment cores from the southern Indian Ocean and found peaks in the power spectrum at roughly 100, 41 and 23 kyr, matching the three orbital periods. The $\delta^{18}\mathrm{O}$ ratio in the shells of marine organisms records global ice volume, because evaporation preferentially removes the lighter isotope $^{16}\mathrm{O}$ from the ocean and locks it into ice sheets, leaving the remaining seawater enriched in $^{18}\mathrm{O}$. Modern orbital solutions integrate the full planetary system and are reliable over the last 40 Myr or so {cite:p}`Laskar2004`; beyond that the inner solar system is chaotic and individual cycles cannot be traced.
+
+One tension remains. The largest signal in the ice records is the 100 kyr eccentricity rhythm, yet eccentricity is by far the weakest of the three forcings in terms of insolation. The response is therefore not a simple linear one, and the amplification is generally attributed to the feedbacks described next, above all to the ice-albedo feedback and to the way $\mathrm{CO_2}$ is exchanged with the ocean.
+
 ### Climate feedbacks
 
 The stability of a planet's climate depends on **feedback mechanisms**, processes where a change in temperature triggers secondary effects that either amplify (positive feedback) or counteract (negative feedback) the original change:
@@ -750,6 +775,14 @@ The weathering rate depends strongly on temperature through an **Arrhenius-type 
 1. **If the planet warms** (e.g., due to increasing solar luminosity or volcanic outgassing): more rainfall + faster chemical reactions → **weathering rate increases** → more $\mathrm{CO_2}$ is drawn out of the atmosphere → greenhouse weakens → planet **cools back down**.
 
 2. **If the planet cools** (e.g., due to reduced volcanic activity or orbital changes): less rainfall + slower reactions → **weathering rate decreases** → $\mathrm{CO_2}$ from volcanism accumulates in the atmosphere → greenhouse strengthens → planet **warms back up**.
+
+Both loops are usually captured in climate models by a single parameterisation of the weathering rate $W$ as a function of surface temperature $T$,
+
+$$
+W(T) = W_0 \exp\!\left( \frac{T - T_0}{T_e} \right),
+$$ (eq:weathering-rate)
+
+where $W_0$ is the weathering rate at a reference temperature $T_0$ and $T_e$ is an *$e$-folding temperature*. For Earth $T_e \approx 10$ K, a value that absorbs both the Arrhenius kinetics of the mineral reactions and the increase in runoff with temperature. Two consequences follow directly. Doubling the weathering rate requires a warming of $T_e \ln 2 \approx 7$ K, and halving it requires a cooling of the same amount; the feedback is therefore strong enough to matter but gentle enough that the planet is not driven to an extreme by a small perturbation. And in steady state the sink must match the source, $W = V$, where $V$ is the volcanic outgassing rate. It is that balance, not the total carbon inventory, which fixes the atmospheric $p\mathrm{CO_2}$ of a planet: raise the volcanic supply and the atmosphere warms only until weathering has sped up enough to remove the extra carbon again.
 
 This thermostat operates on geological timescales of $\sim 10^5$-$10^6$ yr, long by human standards but short compared to geological time. It is the primary reason Earth has maintained habitable surface temperatures for over 4 billion years despite the 30% increase in solar luminosity. The geologic cycle as a whole is summarised in {numref}`fig:carbonate-silicate-cycle`, and the modern plate-tectonic version of the cycle from {cite:p}`Foley2024` is shown in {numref}`fig:walker-loop`.
 

@@ -632,7 +632,7 @@ Order:
 | 3 | Planetary heat & energy transport | Verified | High |
 | 4 | Chemical differentiation & magnetospheres | Verified | High |
 | 5 | Atmospheres I | Verified (9 sections mapping 1:1 onto the slide deck; carries radiative-convective equilibrium and the energy-limited escape rate, the two boxed results of the deck) | High |
-| 6 | Atmospheres II | Verified | High |
+| 6 | Atmospheres II | Verified (9 sections mapping 1:1 onto the slide deck; carries orbital forcing and the weathering-rate parameterisation, the two results the deck quantifies) | High |
 | 7 | Planetary surfaces | Verified | High |
 | 8 | Planetary interiors | Verified | High |
 | 9 | Rocky planets: Earth & Venus | Verified (28 figures, Simpson-Nakajima derivation) | Medium |
@@ -657,7 +657,7 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | 3 | Planetary heat & energy transport | Draft complete | High |
 | 4 | Chemical differentiation & magnetospheres | Draft complete | High |
 | 5 | Atmospheres I | Draft complete (9 sections aligned 1:1 with the notes, including a separate Atmospheric retention section) | High |
-| 6 | Atmospheres II | Draft complete | High |
+| 6 | Atmospheres II | Draft complete (92-page deck, 9 sections aligned 1:1 with the notes; forward-looking material points to the lecture that derives it) | High |
 | 7 | Planetary surfaces | Draft complete | High |
 | 8 | Planetary interiors | Draft complete | High |
 | 9 | Rocky planets: Earth & Venus | Draft complete | Medium |
