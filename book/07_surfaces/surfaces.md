@@ -345,14 +345,14 @@ Wind-driven erosion and deposition require an atmosphere dense enough to mobilis
 - **Titan:** Vast equatorial dune fields composed of organic particles (tholins) produced by atmospheric photochemistry. The dunes are longitudinal, up to 150 m tall and hundreds of kilometres long.
 - **Venus:** Despite its dense atmosphere, surface winds are only $\sim$1 m s$^{-1}$ due to the sluggish near-surface dynamics, limiting aeolian activity. However, the thick atmosphere allows even these slow winds to mobilise fine particles.
 
-Repeat HiRISE imaging of Martian dune fields from the Mars Reconnaissance Orbiter has shown that these dunes migrate at sand fluxes comparable to those of terrestrial dunes despite Mars's $\sim$170$\times$ thinner atmosphere (Mars surface pressure $\sim$600 Pa vs Earth's $\sim$10$^5$ Pa), overturning the long-held view that Mars dunes are inactive {cite:p}`Bridges2012`. {numref}`fig:mars-dunes` shows an example of a sand sheet streaming through Nili Patera; Titan's massive equatorial dune fields are visible in Cassini SAR imagery ({numref}`fig:titan-dunes`).
+Repeat HiRISE imaging of Martian dune fields from the Mars Reconnaissance Orbiter has shown that these dunes migrate at sand fluxes comparable to those of terrestrial dunes despite Mars's $\sim$170$\times$ thinner atmosphere (Mars surface pressure $\sim$600 Pa vs Earth's $\sim$10$^5$ Pa), and that entire dunes advance rather than only the ripples on their surfaces {cite:p}`Bridges2012`. {numref}`fig:mars-dunes` shows the barchan dune field of Nili Patera; Titan's massive equatorial dune fields are visible in Cassini SAR imagery ({numref}`fig:titan-dunes`).
 
 ```{figure} figures/mars_dunes_bridges.avif
 :name: fig:mars-dunes
 :width: 600px
 :align: center
 
-A streaming sand sheet ("river of sand") within the Nili Patera caldera on Mars, imaged by HiRISE on the Mars Reconnaissance Orbiter. Time-resolved imaging of dune fields like this established that present-day Martian sand fluxes can match terrestrial values despite the thin atmosphere, settling the long-standing debate over whether Mars dunes are presently active {cite:p}`Bridges2012`. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
+Barchan and barchanoid dunes on the floor of Nili Patera, a volcanic caldera on Mars, imaged by HiRISE on the Mars Reconnaissance Orbiter in March 2014. The crescent horns and the steep lee faces point downwind, and small ripples cover the gentler upwind slopes. Comparison with an image of the same field from November 2012 shows ripple movement, shifting dune margins, and fresh landslides on the lee face of the central dune. Repeat imaging of this dune field established that entire dunes advance, not only the ripples on them, at sand fluxes comparable to terrestrial values despite the thin atmosphere {cite:p}`Bridges2012`. Credit: NASA/JPL-Caltech/University of Arizona, public domain.
 ```
 
 ```{figure} figures/titan_dunes.avif
