@@ -23,8 +23,8 @@ This lecture treats each subgroup in turn, integrates the diverse satellite and 
 
 Jupiter is by far the largest planet in the solar system.
 Its mass of $1.898 \times 10^{27}$ kg corresponds to 318 $\Mearth$, or roughly one-thousandth of a solar mass.
-Its equatorial radius of 71{,}492 km is 11.2 $\Rearth$, and its mean density of 1326 kg m$^{-3}$ already tells us that the bulk composition cannot resemble a rocky planet {cite:p}`NASAFactSheet`.
-Saturn is the second largest, with 95 $\Mearth$ and an equatorial radius of 60{,}268 km (9.4 $\Rearth$).
+Its equatorial radius of 71,492 km is 11.2 $\Rearth$, and its mean density of 1326 kg m$^{-3}$ already tells us that the bulk composition cannot resemble a rocky planet {cite:p}`NASAFactSheet`.
+Saturn is the second largest, with 95 $\Mearth$ and an equatorial radius of 60,268 km (9.4 $\Rearth$).
 Its mean density of 687 kg m$^{-3}$ is famously lower than that of liquid water at standard conditions, a fact that captures the imagination of every introductory astronomy student and immediately tells us that the bulk of the planet is hydrogen and helium under high pressure.
 Together the two gas giants account for about 92% of the total planetary mass of the solar system.
 
@@ -95,7 +95,7 @@ The jets reach velocities of order 180 m s$^{-1}$ at the equator and at several 
 Bright zones correspond to rising air masses topped by ammonia clouds, while darker belts correspond to descending air that exposes deeper, browner haze layers.
 The pattern is far more stable than terrestrial weather: individual jets persist for decades, and the global zone-belt structure, although it changes in detail, has been recognisable for the entire era of telescopic observation.
 Embedded in this flow are storms of all sizes, the most famous of which is the **Great Red Spot** (GRS), an anticyclonic vortex, a storm that rotates in the sense opposite to a cyclone at the same latitude, in the southern hemisphere that has been observed continuously since at least 1830 and possibly since the seventeenth century.
-The GRS is shrinking: at the start of the twentieth century it spanned about 40{,}000 km, while today it has contracted to roughly 14{,}000 km, although the mechanisms driving its contraction remain debated ({numref}`fig:jupiter_grs`).
+The GRS is shrinking: at the start of the twentieth century it spanned about 40,000 km, while today it has contracted to roughly 14,000 km, although the mechanisms driving its contraction remain debated ({numref}`fig:jupiter_grs`).
 
 ```{figure} figures/jupiter_north_pole_cyclones_juno.avif
 :align: center
@@ -110,13 +110,13 @@ Cluster of cyclones encircling Jupiter's north pole, imaged by Juno's JIRAM ther
 :name: fig:jupiter_s_pole
 :width: 75%
 
-Jupiter's south pole as seen by JunoCam in visible light. A central cyclone (diameter $\sim$5{,}800 km) is surrounded by five companion cyclones, each $\sim$5{,}600--7{,}000 km across. Unlike the north pole (where the central cyclone is encircled by eight companions $\sim$4{,}000--4{,}600 km in diameter), the south pole hosts a pentagonal arrangement, which shows that the polar cyclone clusters are stable but not unique solutions of the deep-jet dynamics. Image credit: NASA/JPL-Caltech/SwRI/MSSS/Betsy Asher Hall/Gervasio Robles. See {cite:t}`Adriani2018`.
+Jupiter's south pole as seen by JunoCam in visible light. A central cyclone (diameter $\sim$5,800 km) is surrounded by five companion cyclones, each $\sim$5,600--7,000 km across. Unlike the north pole (where the central cyclone is encircled by eight companions $\sim$4,000--4,600 km in diameter), the south pole hosts a pentagonal arrangement, which shows that the polar cyclone clusters are stable but not unique solutions of the deep-jet dynamics. Image credit: NASA/JPL-Caltech/SwRI/MSSS/Betsy Asher Hall/Gervasio Robles. See {cite:t}`Adriani2018`.
 ```
 
 Some of the most striking results from Juno concern the polar regions of Jupiter, which were not seen at high resolution before the spacecraft's arrival in 2016.
 Both poles are dominated by clusters of long-lived cyclones arranged in remarkably stable polygonal patterns: the north pole hosts a central cyclone surrounded by eight others, while the south pole hosts a central cyclone surrounded by five {cite:p}`Adriani2018` ({numref}`fig:jupiter_n_pole` and {numref}`fig:jupiter_s_pole`).
 The pattern persists across multiple Juno orbits and is currently the best constraint on the structure and depth of polar weather on a gas giant.
-Juno gravity science has also constrained the depth to which the equatorial zonal jets extend: by detecting subtle north-south asymmetries in the gravity field, {cite:t}`Kaspi2018` showed that the jets penetrate to several thousand kilometres depth, with a characteristic decay depth of $\sim$2{,}000 km and the flow falling to negligible speeds by $\sim$3{,}000 km, a substantial fraction of the molecular hydrogen envelope.
+Juno gravity science has also constrained the depth to which the equatorial zonal jets extend: by detecting subtle north-south asymmetries in the gravity field, {cite:t}`Kaspi2018` showed that the jets penetrate to several thousand kilometres depth, with a characteristic decay depth of $\sim$2,000 km and the flow falling to negligible speeds by $\sim$3,000 km, a substantial fraction of the molecular hydrogen envelope.
 Below this depth the magnetic stress associated with metallic hydrogen damps the differential rotation, and the deep interior approaches solid-body rotation.
 
 The aurorae of Jupiter, the most powerful in the solar system, are powered by a combination of magnetospheric processes ({ref}`Lecture 4 <lecture04>`; the magnetosphere is the region of space around a planet where its own magnetic field dominates over the solar wind) and the heavy mass loading from Io, whose volcanism feeds about $1$ tonne s$^{-1}$ of sulphur and oxygen into the Jovian magnetosphere.
@@ -274,7 +274,7 @@ The molecular-metallic hydrogen transition therefore occurs at a smaller fractio
 Cassini's Grand Finale orbits in 2017 measured Saturn's gravity field with sufficient precision to constrain the interior on essentially the same footing as Juno did for Jupiter, and analyses of these data combined with seismology of the rings have produced a detailed picture of Saturn's structure {cite:p}`Iess2019,Mankovich2021`.
 
 The most striking feature of Saturn's interior is the strong evidence for **helium rain**.
-At pressures of order 1--3 Mbar and temperatures of order 5000--10{,}000 K, helium becomes immiscible in metallic hydrogen and condenses into droplets that fall through the molecular envelope under gravity.
+At pressures of order 1--3 Mbar and temperatures of order 5000--10,000 K, helium becomes immiscible in metallic hydrogen and condenses into droplets that fall through the molecular envelope under gravity.
 As these droplets sink, they release gravitational potential energy that is converted to heat, providing the additional luminosity that closes Saturn's energy budget {cite:p}`Stevenson1980`.
 The process simultaneously depletes helium from the upper envelope, which is consistent with the lower-than-protosolar helium abundance measured in Saturn's atmosphere by Voyager.
 The same process occurs in Jupiter, but at a less advanced stage because Jupiter's interior is hotter and the immiscibility region is narrower.
@@ -342,15 +342,15 @@ Saturn's modest $26.7^\circ$ axial tilt also imposes strong seasonal forcing, an
 ### Saturn's rings: structure and composition
 
 Saturn's rings are the most spectacular ring system in the solar system and have been a defining feature of telescopic astronomy since Galileo first noticed Saturn's "ears" in 1610 and Christiaan Huygens correctly interpreted them as a flat disk in 1655.
-The main ring system extends from the inner D ring at $\sim$67{,}000 km from Saturn's centre out to the F ring at $\sim$140{,}000 km. The B and C rings sit well inside the classical fluid Roche limit derived below ($\sim$126{,}000 km); the A ring straddles it, with its outer edge held sharp by a 7:6 mean-motion resonance with Janus rather than by tidal physics alone, and the F ring sits just beyond it.
-The seven main rings are labelled with letters in the rough historical order of their discovery (A and B by Galileo and Cassini in the 17th century, C by Bond in 1850, D by Barabashov and Semeykin in 1933, E by Feibelman in 1967, F by Pioneer 11 in 1979, G by Voyager 1 in 1980) but are arranged spatially from inner to outer as D, C, B, A, F, G, and E, with the most prominent being the bright A and B rings separated by the Cassini Division at $\sim$118{,}000 km ({numref}`fig:cassini_division`).
+The main ring system extends from the inner D ring at $\sim$67,000 km from Saturn's centre out to the F ring at $\sim$140,000 km. The B and C rings sit well inside the classical fluid Roche limit derived below ($\sim$126,000 km); the A ring straddles it, with its outer edge held sharp by a 7:6 mean-motion resonance with Janus rather than by tidal physics alone, and the F ring sits just beyond it.
+The seven main rings are labelled with letters in the rough historical order of their discovery (A and B by Galileo and Cassini in the 17th century, C by Bond in 1850, D by Barabashov and Semeykin in 1933, E by Feibelman in 1967, F by Pioneer 11 in 1979, G by Voyager 1 in 1980) but are arranged spatially from inner to outer as D, C, B, A, F, G, and E, with the most prominent being the bright A and B rings separated by the Cassini Division at $\sim$118,000 km ({numref}`fig:cassini_division`).
 
 ```{figure} figures/saturn_cassini_division.avif
 :align: center
 :name: fig:cassini_division
 :width: 95%
 
-Natural-colour radial scan across Saturn's main rings as imaged by Cassini (PIA08389). The C ring appears as the inner faint band, followed by the bright B ring, the dark Cassini Division at $\sim$118{,}000 km from Saturn's centre, and the outer A ring. The Cassini Division is maintained by a 2:1 mean-motion resonance with the moon Mimas: ring particles inside the gap are perturbed onto eccentric orbits and are eventually swept out, leaving the gap as a persistent feature. Image credit: NASA/JPL-Caltech/Space Science Institute.
+Natural-colour radial scan across Saturn's main rings as imaged by Cassini (PIA08389). The C ring appears as the inner faint band, followed by the bright B ring, the dark Cassini Division at $\sim$118,000 km from Saturn's centre, and the outer A ring. The Cassini Division is maintained by a 2:1 mean-motion resonance with the moon Mimas: ring particles inside the gap are perturbed onto eccentric orbits and are eventually swept out, leaving the gap as a persistent feature. Image credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
 ```{figure} figures/saturn_propeller_targeted.avif
@@ -488,7 +488,7 @@ d_R \approx 2.46 \times 58{,}232 \,\mathrm{km} \times \left( \frac{687}{1000} \r
 $$
 
 This matches the observed outer edge of the A ring (at $\sim 137{,}000$ km) to within $\sim$10%, the discrepancy being plausibly accounted for by the finite material strength of cold ice (which gives the satellite a non-zero rigidity), by the fact that the ring particles have lower density than pure ice because they are porous, and by the density wave structure at the very edge of the A ring.
-The faint G ring at $\sim$170{,}000 km lies outside the formal Roche limit; it is held together by the small moon Aegaeon embedded within it rather than by self-gravity.
+The faint G ring at $\sim$170,000 km lies outside the formal Roche limit; it is held together by the small moon Aegaeon embedded within it rather than by self-gravity.
 
 The physical interpretation is that, interior to $d_R$, the differential pull of the planet across any solid agglomerate is so strong that the agglomerate cannot grow above $\sim$$10$ m without being torn apart.
 Ring particles therefore orbit as a collisional disk maintained by mutual scattering rather than as a single coalesced moon.
@@ -780,7 +780,7 @@ Its retrograde orbit is decaying; tidal interaction with Neptune is causing it t
 
 Both Uranus and Neptune have ring systems, but they are much fainter and darker than Saturn's.
 The Uranus rings were discovered in 1977 from stellar occultations: as a star passed behind Uranus it dimmed five times before disappearing behind the planet and five times after re-emerging, signalling the presence of five narrow rings (four more were subsequently identified in the same year, bringing the pre-Voyager total to nine).
-Voyager 2 imaging in 1986 added two faint rings, for a total of eleven; Hubble Space Telescope imaging in 2003--2005 identified two more outer, dusty rings, bringing the known Uranian ring system to thirteen. All are narrow ($\lesssim$10 km wide for the main rings), with the most prominent being the epsilon ring at $\sim$51{,}000 km from Uranus's centre.
+Voyager 2 imaging in 1986 added two faint rings, for a total of eleven; Hubble Space Telescope imaging in 2003--2005 identified two more outer, dusty rings, bringing the known Uranian ring system to thirteen. All are narrow ($\lesssim$10 km wide for the main rings), with the most prominent being the epsilon ring at $\sim$51,000 km from Uranus's centre.
 Some of the narrow Uranian rings are confined by small "shepherd" moonlets that gravitationally constrain their inner and outer edges.
 
 Neptune's rings were even more puzzling.

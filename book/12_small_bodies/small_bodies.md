@@ -555,8 +555,8 @@ The fact that the C-types in the outer belt have isotopic affinities with carbon
 ### Near-Earth asteroids and the impact hazard
 
 A **near-Earth asteroid** (NEA) is one with perihelion $q < 1.3$ AU.
-About 38{,}000 NEAs are currently known (early 2026), with several thousand new discoveries per year, and the rate is accelerating with new wide-field surveys.
-About 2{,}500 of them are classified as Potentially Hazardous Asteroids (PHAs): larger than $\sim 140$ m and with orbits that approach Earth's to within 0.05 AU.
+About 38,000 NEAs are currently known (early 2026), with several thousand new discoveries per year, and the rate is accelerating with new wide-field surveys.
+About 2,500 of them are classified as Potentially Hazardous Asteroids (PHAs): larger than $\sim 140$ m and with orbits that approach Earth's to within 0.05 AU.
 Their orbits are dynamically young in the sense that the typical NEA has a residence time in near-Earth space of only $\sim 10$ Myr before it is either ejected from the inner solar system, falls into the Sun, or hits a planet.
 Yet the population is in approximate steady state, which means new NEAs must be supplied continuously at the rate of removal {cite:p}`Bottke2002`.
 
@@ -624,7 +624,7 @@ Cumulative size-frequency distribution of near-Earth objects as a function of ab
 To order of magnitude, the rates are:
 
 - **10 m diameter** ($\sim$10 kt energy): roughly once per year, mostly as harmless airbursts in the upper atmosphere.
-- **20 m diameter** ($\sim$0.5 Mt): once per decade or so. The 2013 Chelyabinsk event ({numref}`fig:l12-chelyabinsk`) was a 19 m object that entered the atmosphere at $\sim 18^{\circ}$ and produced an airburst peaking near 30 km altitude, releasing $\sim 500 \pm 100$ kt of TNT-equivalent energy, shattering windows over a wide area and injuring about 1{,}500 people {cite:p}`Brown2013`.
+- **20 m diameter** ($\sim$0.5 Mt): once per decade or so. The 2013 Chelyabinsk event ({numref}`fig:l12-chelyabinsk`) was a 19 m object that entered the atmosphere at $\sim 18^{\circ}$ and produced an airburst peaking near 30 km altitude, releasing $\sim 500 \pm 100$ kt of TNT-equivalent energy, shattering windows over a wide area and injuring about 1,500 people {cite:p}`Brown2013`.
 - **50 m diameter** ($\sim 10$ Mt): once per few millennia. The 1908 Tunguska event ({numref}`fig:l12-tunguska`) was an airburst of approximately this energy that flattened $\sim 2{,}000$ km$^2$ of Siberian forest.
 - **140 m diameter** (PHA threshold, $\sim$300 Mt): once per $\sim 30{,}000$ years. Capable of regional devastation.
 - **1 km diameter** ($\sim 10^5$ Mt): once per $\sim 500{,}000$ years. Capable of global climate disruption (the "civilisation-ending" threshold).
@@ -635,7 +635,7 @@ To order of magnitude, the rates are:
 :width: 480px
 :align: center
 
-The Chelyabinsk meteor of 15 February 2013, photographed shortly after entry from a passing car. The bolide was a 19 m near-Earth asteroid that disintegrated at $\sim 30$ km altitude, releasing about 0.5 Mt TNT equivalent. The shock wave shattered windows across Chelyabinsk and injured about 1{,}500 people. Image credit: Aleksandr Ivanov, CC BY 3.0 (Wikimedia Commons).
+The Chelyabinsk meteor of 15 February 2013, photographed shortly after entry from a passing car. The bolide was a 19 m near-Earth asteroid that disintegrated at $\sim 30$ km altitude, releasing about 0.5 Mt TNT equivalent. The shock wave shattered windows across Chelyabinsk and injured about 1,500 people. Image credit: Aleksandr Ivanov, CC BY 3.0 (Wikimedia Commons).
 ```
 
 ```{figure} figures/tunguska.avif
@@ -715,7 +715,7 @@ This is one of the more direct pieces of evidence that the present asteroid belt
 
 Beyond Neptune lies the second great reservoir of small bodies: the **trans-Neptunian region**.
 Its components are dynamically heterogeneous and were not all discovered at once.
-The first KBO after Pluto, $1992\,\mathrm{QB}_1$, was found in 1992; over 4{,}000 are now known, with thousands more expected from Rubin observations {cite:p}`Bannister2018`.
+The first KBO after Pluto, $1992\,\mathrm{QB}_1$, was found in 1992; over 4,000 are now known, with thousands more expected from Rubin observations {cite:p}`Bannister2018`.
 
 The trans-Neptunian region has several distinct dynamical sub-populations:
 
@@ -841,7 +841,7 @@ Aside from Pluto and Ceres, the IAU currently recognises three other dwarf plane
 - **Makemake**, a classical KBO with a methane-ice surface and one small known moon (S/2015 (136472) 1) ({numref}`fig:l12-makemake`).
 
 Several other large TNOs (Gonggong, Quaoar, Orcus, Salacia, Sedna) are dwarf-planet candidates pending precise size and shape measurements.
-**Sedna** is particularly noteworthy: it has perihelion 76 AU and aphelion approximately 900 AU, with an orbital period of about 11{,}400 years.
+**Sedna** is particularly noteworthy: it has perihelion 76 AU and aphelion approximately 900 AU, with an orbital period of about 11,400 years.
 Such an extreme orbit cannot have been excited by Neptune (perihelion is too high) or by passing stars (aphelion is too low for the present galactic environment).
 Sedna is interpreted either as evidence for a previously closer perturber that no longer exists, or as a member of an inner Oort cloud population produced during the Sun's birth cluster phase {cite:p}`Brown2004` ({numref}`fig:l12-sedna-orbit`).
 
@@ -1060,7 +1060,7 @@ Each was a significant engineering challenge and each has yielded laboratory sci
 
 **Hayabusa** (JAXA, 2003--2010) was the first.
 It visited the small ($\sim 535$ m long) S-type near-Earth asteroid (25143) **Itokawa** in 2005, briefly touched down twice on the surface, and returned a sample capsule to Earth in June 2010.
-The sample was tiny: about 1{,}500 microscopic grains, with a total mass under 1 mg.
+The sample was tiny: about 1,500 microscopic grains, with a total mass under 1 mg.
 But the analysis was definitive: Itokawa's surface composition matches the LL-class ordinary chondrites, confirming the long-suspected link between S-type asteroids and ordinary chondrites {cite:p}`Nakamura2011` ({numref}`fig:l12-itokawa`).
 
 ```{figure} figures/itokawa_full.avif

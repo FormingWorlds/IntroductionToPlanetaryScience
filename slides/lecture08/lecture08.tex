@@ -97,7 +97,7 @@
 \begin{frame}
   \centering
   \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{prem_shadow_zones}}\\
-  {\footnotesize Rays traced through PREM. Faint PKIKP arrivals through the solid inner core return into the P shadow from $\sim$116\textdegree{}. Course original, from the PREM tabulation of Dziewonski \& Anderson (1981).}
+  {\footnotesize Rays traced through the Preliminary Reference Earth Model (PREM), the standard seismological model of Earth's interior. Faint PKIKP arrivals through the solid inner core return into the P shadow from $\sim$116\textdegree{}. Course original, from the PREM tabulation of Dziewonski \& Anderson (1981).}
 \end{frame}
 
 % ── Shadow zone ──────────────────────────────────────────────
@@ -216,11 +216,18 @@
 
 % ── Setup ────────────────────────────────────────────────────
 \begin{frame}{Deriving $C/MR^2$}
-  \textbf{Goal:} Derive the moment of inertia factor for (a) a uniform sphere and (b) a two-layer differentiated body. Show how the measured value constrains core size.
-  \vskip10pt
-  \textbf{Starting point:} For a spherically symmetric body, the moment of inertia about the rotation axis is:
-  $$C = \frac{8\pi}{3}\int_0^R \rho(r)\,r^4\,\dd r$$
-  This comes from summing $\frac{2}{3}r^2\,\dd m$ over thin spherical shells.
+  \begin{columns}[c]
+    \column{\recapfigcolnarrow}
+    \ipsrecapfig{moi_shell_sketch}
+    \source{Course original}
+
+    \column{\recaptextcolwide}
+    \textbf{Goal:} Derive the moment of inertia factor for (a) a uniform sphere and (b) a two-layer differentiated body.
+    \vskip6pt
+    \textbf{Starting point:} For a spherically symmetric body, the moment of inertia about the rotation axis is:
+    $$C = \frac{8\pi}{3}\int_0^R \rho(r)\,r^4\,\dd r$$
+    A mass element at colatitude $\theta$ contributes $r_\perp^2\,\dd m = r^2\sin^2\theta\,\dd m$; averaged over a thin shell, $\sin^2\theta \to 2/3$.
+  \end{columns}
 \end{frame}
 
 % ── Uniform sphere ───────────────────────────────────────────
@@ -269,6 +276,26 @@
   Remaining difference: continuous density increase within each layer, especially the $\sim$30\% jump from outer to inner core.
 \end{frame}
 
+% ── Two-layer bodies visualised ──────────────────────────────
+\begin{frame}{Why differentiation lowers $C/MR^2$}
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{moi_two_layer}
+    \source{Course original}
+
+    \column{\recaptextcol}
+    \footnotesize
+    \begin{itemize}
+      \item Same outer radius, fixed $f = \rho_c/\rho_m = 2.5$; only $x = R_c/R$ varies
+      \item Moving mass into the core removes it from large distances to the rotation axis: $C$ falls faster than $M$
+      \item $x = 0.546$ is the Earth-like worked example: $C/MR^2 \approx 0.345$
+      \item As $x \to 1$ the curve returns to $2/5$: a uniform sphere of core material
+    \end{itemize}
+    \vskip4pt
+    \keyresult{Any dense core pulls $C/MR^2$ below 0.4.}
+  \end{columns}
+\end{frame}
+
 
 % ════════════════════════════════════════════════════════════
 \sectionimage[0.65]{jupiter_interior}{Jupiter's interior. Credit: NASA/JPL-Caltech/SwRI/John E. Connerney (PIA25062)}
@@ -305,6 +332,48 @@
   \vskip8pt
   \raggedright
   The uniform-density estimate is always \textbf{too low} because real bodies have higher density at the centre.
+\end{frame}
+
+% ── Thermal vs elastic pressure ──────────────────────────────
+\begin{frame}{Thermal versus elastic pressure}
+  In a dilute gas, pressure is \textbf{thermal}: $P = \rho\,k_B T/(\mu m_u)$ describes atmospheres and most of the Sun.
+  \vskip6pt
+  In rock, iron, or ice, pressure is \textbf{elastic}: interatomic spacing is set by electrostatic attraction against electron-shell repulsion ($\sim$eV per atom), while $k_B T \approx 0.2$~eV at 2000~K.
+  \vskip8pt
+  The ideal gas law applied to MgSiO$_3$ ($\mu \approx 20$):
+  \begin{itemize}
+    \item Lower mantle ($100$~GPa, $2500$~K): predicts $\rho \approx 10^5$~kg\,m$^{-3}$, $\sim$20$\times$ too high
+    \item Surface (1~bar, 300~K): predicts $\rho \approx 1$~kg\,m$^{-3}$, $\sim$3000$\times$ too low
+  \end{itemize}
+  \vskip6pt
+  \keyresult{Planetary interiors need condensed-matter equations of state, anchored in laboratory compression data and quantum-mechanical calculations.}
+\end{frame}
+
+% ── PALEOS EOS hero ──────────────────────────────────────────
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.80\paperheight, keepaspectratio]{eos_paleos}}\\
+  {\footnotesize Multiphase equations of state for iron, silicate, and water: density against pressure for a cold ($\sim$300~K) and a hot ($\sim$4000~K) isotherm. Course original, from the PALEOS tables of Attia et al. (2026).}
+\end{frame}
+
+% ── PALEOS EOS walkthrough ───────────────────────────────────
+\begin{frame}{Condensed matter under pressure}
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{eos_paleos}
+    \source{Course original, from the PALEOS tables of Attia et al. (2026)}
+
+    \column{\recaptextcol}
+    \footnotesize
+    \begin{itemize}
+      \item \textbf{Stiff:} even at $10^4$~GPa iron is compressed only $\sim$5-fold
+      \item \textbf{Stepped:} density jumps at phase transitions ($\alpha \to \varepsilon$ iron; bridgmanite $\to$ post-perovskite; ices VII, X)
+      \item \textbf{Temperature matters only at low pressure:} iron at 4000~K is 12\% less dense at 0.1~GPa, 2\% at Earth's centre
+      \item Hot low-pressure water: supercritical fluid, $20\times$ less dense than cold liquid water
+    \end{itemize}
+    \vskip2pt
+    \keyresult{The foundation of exoplanet mass--radius relations (Lecture 13).}
+  \end{columns}
 \end{frame}
 
 % ── Birch's law ──────────────────────────────────────────────
@@ -586,7 +655,7 @@
 \end{frame}
 
 % ── Convection patterns ──────────────────────────────────────
-\begin{frame}{Convection patterns: an open debate}
+\begin{frame}{Convection patterns: whole-mantle or layered?}
   \begin{columns}[T]
     \column{0.48\textwidth}
     \textbf{Whole-mantle convection:}
@@ -594,7 +663,6 @@
       \item Material circulates from surface to CMB
       \item Slabs penetrate through 660~km
       \item \textbf{Plumes} (hot upwellings) rise from CMB to surface
-      \item Supported by seismic tomography (3D imaging) of some subducting slabs
     \end{itemize}
 
     \column{0.48\textwidth}
@@ -602,12 +670,13 @@
     \begin{itemize}
       \item 660~km discontinuity impedes flow
       \item Separate upper and lower cells
-      \item Some slabs stagnate at 660~km
       \item Different chemical reservoirs persist
     \end{itemize}
   \end{columns}
-  \vskip10pt
-  \keyresult{Reality is likely a \textbf{mixed regime}: some slabs penetrate, others stagnate. The 660~km boundary is a partial barrier, not an absolute one.}
+  \vskip8pt
+  Seismic tomography settled the core question: slabs are traced deep into the lower mantle (van der Hilst et al.\ 1997) and broad plumes rise from the CMB (French \& Romanowicz 2015), so strict layering is out.
+  \vskip6pt
+  \keyresult{Mass crosses 660~km, but some slabs stagnate there: the boundary is a partial, regionally variable barrier (Fukao \& Obayashi 2013).}
 \end{frame}
 
 % ── Convection regimes hero ──────────────────────────────────
@@ -628,13 +697,28 @@
     \small
     The two end-member regimes:
     \begin{itemize}
-      \item (a) Whole-mantle: a single circulation carries material from the CMB to the surface; the 660~km boundary only weakly impedes flow
+      \item (a) Whole-mantle: one circulation from the CMB to the surface; 660~km only weakly impedes flow
       \item (b) Layered: separate cells above and below 660~km, decoupled by the negative Clapeyron slope
-      \item Seismic tomography of subducting slabs shows both behaviours
+      \item Both are idealisations: slabs cross 660~km in some regions, stagnate in others
     \end{itemize}
-    \vskip6pt
-    \keyresult{The 660~km phase boundary sets the style of mantle convection.}
+    \vskip4pt
+    \keyresult{Whole-mantle circulation, with regionally variable resistance at 660~km.}
   \end{columns}
+\end{frame}
+
+% ── Modern convection debate ─────────────────────────────────
+\begin{frame}{The debate has moved to deep heterogeneity}
+  \small
+  Slab behaviour at 660~km varies regionally: penetrating, stagnant, or trapped between 660 and 1000~km (Fukao \& Obayashi 2013).
+  \vskip4pt
+  The open questions now concern chemistry within a whole-mantle circulation:
+  \begin{itemize}
+    \item Two continent-sized \textbf{LLSVPs} (large low shear velocity provinces) beneath Africa and the Pacific, possibly thermochemically distinct piles (McNamara 2019)
+    \item Intrinsically viscous, silica-enriched domains may resist mixing and persist near 1000--2200~km depth (Ballmer et al.\ 2017)
+    \item The transition zone as a \textbf{water filter}: dehydration melting at 410~km separates trace elements without blocking flow (Bercovici \& Karato 2003)
+  \end{itemize}
+  \vskip2pt
+  \keyresult{The question is no longer one layer or two, but how heterogeneous the deep mantle is.}
 \end{frame}
 
 % ════════════════════════════════════════════════════════════
