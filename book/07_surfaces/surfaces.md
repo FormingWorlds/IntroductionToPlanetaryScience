@@ -331,7 +331,7 @@ A lobate scarp near Pourquoi-Pas crater on Mercury, imaged by the MESSENGER spac
 :width: 650px
 :align: center
 
-Valles Marineris, the solar system's largest canyon system, stretching $\sim$4000 km across the Martian surface (roughly the distance from Lisbon to Moscow). The canyon is up to 7 km deep and 200 km wide, dwarfing Earth's Grand Canyon. It formed primarily through extensional rifting associated with the Tharsis volcanic bulge to the west, with subsequent widening by mass wasting and possibly fluvial erosion. This Viking Orbiter mosaic is a horizontal strip showing the canyon along its full $\sim$2000 km central extent, from the fractured terrain of Noctis Labyrinthus on the west (left) through the main Melas, Candor, and Coprates chasmata, to the chaotic terrain at the canyon's eastern outflow into Chryse Planitia (right); the Tharsis Montes lie off the left edge of the frame. Credit: NASA/JPL/USGS, public domain.
+Valles Marineris, the solar system's largest canyon system, stretching $\sim$4000 km across the Martian surface (roughly the distance from Lisbon to Moscow). The canyon is up to 7 km deep and 200 km wide, dwarfing Earth's Grand Canyon. It formed primarily through extensional rifting associated with the Tharsis volcanic bulge to the west, with subsequent widening by mass wasting and possibly fluvial erosion. This Viking Orbiter mosaic is a horizontal strip showing the canyon along its full $\sim$4000 km length, from the fractured terrain of Noctis Labyrinthus on the west (left) through the main Melas, Candor, and Coprates chasmata, to the chaotic terrain at the canyon's eastern outflow into Chryse Planitia (right); the Tharsis Montes lie off the left edge of the frame. Credit: NASA/JPL/USGS, public domain.
 ```
 
 
