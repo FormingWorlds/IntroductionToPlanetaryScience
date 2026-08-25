@@ -26,7 +26,7 @@
 \setbeamercolor{framesubtitle}{fg=ipsAccent}
 
 \setbeamercolor{title}{fg=ipsBackground, bg=ipsPrimary}
-\setbeamercolor{subtitle}{fg=ipsLightFill}
+\setbeamercolor{subtitle}{fg=white}
 \setbeamercolor{author}{fg=ipsLightFill}
 \setbeamercolor{institute}{fg=ipsLightFill}
 \setbeamercolor{date}{fg=ipsLightFill}
@@ -63,7 +63,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 
 \setbeamerfont{title}{size=\Large, series=\bfseries}
-\setbeamerfont{subtitle}{size=\normalsize}
+\setbeamerfont{subtitle}{size=\normalsize, series=\bfseries}
 \setbeamerfont{frametitle}{size=\large, series=\bfseries}
 \setbeamerfont{framesubtitle}{size=\small}
 \setbeamerfont{footline}{size=\tiny}
@@ -185,8 +185,10 @@
 }
 
 % ── Section divider slides ──────────────────────────────────
-% Set per-section background: \sectionimage{filename}{credit text}
-\newcommand{\sectionimage}[2]{\def\ips@secimg{#1}\def\ips@seccredit{#2}}
+% Set per-section background: \sectionimage[overlay opacity]{filename}{credit text}
+% The optional first argument darkens the navy overlay for light-background
+% images so the white title stays legible; it defaults to 0.45.
+\newcommand{\sectionimage}[3][0.45]{\def\ips@secimg{#2}\def\ips@seccredit{#3}\def\ips@secopacity{#1}}
 \sectionimage{}{}% default empty
 
 \AtBeginSection[]{%
@@ -197,7 +199,7 @@
         \fill[ipsPrimary] (current page.north west) rectangle (current page.south east);
       \else
         \ipscontain{\ips@secimg}
-        \fill[ipsPrimary, opacity=0.45] (current page.north west) rectangle (current page.south east);
+        \fill[ipsPrimary, opacity=\ips@secopacity] (current page.north west) rectangle (current page.south east);
       \fi
       % Section title
       \node[anchor=center] at (current page.center) {%
