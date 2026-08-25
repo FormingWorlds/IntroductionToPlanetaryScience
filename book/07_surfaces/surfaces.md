@@ -231,7 +231,15 @@ The key variable is **magma viscosity**, which is controlled primarily by the $\
 
 **Olympus Mons (Mars)** is the largest volcano in the solar system: a shield volcano with a base diameter of $\sim$600 km and a summit elevation of $\sim$21.2 km above the Mars datum (2.4 times the height of Mount Everest above sea level). It grows so large because Mars lacks plate tectonics: the volcanic hotspot remains stationary beneath the **lithosphere**, the rigid outer shell of crust and uppermost mantle, for billions of years, piling up lava in one location. On Earth, plate motion carries the crust over the hotspot, creating chains of smaller volcanoes (e.g., the Hawaiian Islands) rather than a single massive edifice {cite:p}`dePaterLissauer2010`.
 
-**Lunar maria** are vast flood basalt plains that fill ancient impact basins on the Moon's nearside. Radiometric dating of Apollo samples shows they erupted between 3.9 and 3.1 Ga, during a period of residual internal heating. The maria cover $\sim$16% of the lunar surface but are visible from Earth as the dark patches that form the "face" of the Moon.
+**Lunar maria** are vast flood basalt plains that fill ancient impact basins on the Moon's nearside ({numref}`fig:lunar-maria`). Radiometric dating of Apollo samples shows they erupted between 3.9 and 3.1 Ga, during a period of residual internal heating. The maria cover $\sim$16% of the lunar surface but are visible from Earth as the dark patches that form the "face" of the Moon.
+
+```{figure} figures/moon_nearside_annotated.avif
+:name: fig:lunar-maria
+:width: 500px
+:align: center
+
+The lunar nearside, dominated by the dark **maria**: flood-basalt plains that erupted into the great impact basins between 3.9 and 3.1 Ga and now form the pattern visible from Earth. The bright, heavily cratered ground is the older anorthositic highland crust; the smooth, low-albedo maria are younger basaltic lava that flooded Mare Imbrium, Serenitatis, Tranquillitatis, and the other nearside basins, covering $\sim$16% of the lunar surface. Their concentration on the nearside, and near-absence on the farside, reflects the thinner nearside crust that the basaltic melt could reach. Lunar Reconnaissance Orbiter Camera wide-angle mosaic (PIA14011). Credit: NASA/GSFC/Arizona State University, public domain; annotations added.
+```
 
 **Venus** is dominated by volcanic landforms: lava plains cover $\sim$80% of the surface, with $>$1600 identified volcanic centres. The uniform crater density suggests that much of the surface was resurfaced in a relatively short interval, possibly through a catastrophic global volcanic episode $\sim$300–700 Myr ago (see {ref}`Lecture 9 <lecture09>`).
 
@@ -369,9 +377,17 @@ Cassini Synthetic Aperture Radar (SAR) image of longitudinal dune fields in the 
 
 Liquid water is the most powerful erosive agent on Earth, and evidence for past fluvial activity on Mars is one of the most important discoveries in planetary science:
 
-- **Earth:** Rivers, glacial meltwater, and coastal waves continuously reshape the surface. The Grand Canyon was carved by the Colorado River over $\sim$5–6 Myr.
+- **Earth:** Rivers, glacial meltwater, and coastal waves continuously reshape the surface. The Grand Canyon was carved by the Colorado River over $\sim$5–6 Myr ({numref}`fig:grand-canyon`).
 - **Mars:** **Valley networks** on the Noachian-aged southern highlands (the **Noachian** is the oldest of the three main Martian geological periods, spanning roughly 4.1 to 3.7 Ga) resemble terrestrial river drainage systems, implying sustained liquid water flow during the late Noachian to early Hesperian, with localised reactivation continuing into the Amazonian for individual systems such as Warrego Valles {cite:p}`Ansan2006`. **Outflow channels** (e.g., Ares Vallis, Kasei Valles) are enormous flood features, hundreds of kilometres long and tens of kilometres wide, carved by catastrophic releases of groundwater. These features are discussed further in {ref}`Lecture 10 <lecture10>`.
 - **Titan:** Saturn's largest moon has **methane rivers** that carve channels into its icy surface. The Huygens probe imaged rounded ice pebbles in a dry riverbed during its 2005 landing ({numref}`fig:titan-huygens`). Titan's methane hydrological cycle is the only known active fluvial system beyond Earth. The two flavours of Martian water-carved features (catastrophic outflow channels and sustained-discharge dendritic valley networks) are shown in {numref}`fig:mars-outflow` and {numref}`fig:mars-valley-networks`.
+
+```{figure} figures/grand_canyon_colorado.avif
+:name: fig:grand-canyon
+:width: 550px
+:align: center
+
+The Colorado River winding through the Grand Canyon, Arizona. The river has incised roughly 1.6 km through nearly flat-lying Paleozoic sedimentary rock over the past 5 to 6 Myr, the type example of sustained fluvial erosion on Earth. The stepped canyon walls record differential erosion: resistant limestone and sandstone form cliffs, and weaker shale erodes to slopes. Credit: Alex Demas/USGS, public domain.
+```
 
 ```{figure} figures/mars_outflow_aram.avif
 :name: fig:mars-outflow
@@ -401,16 +417,32 @@ Fine dendritic channel networks dissecting the heavily cratered Martian highland
 
 Ice can flow slowly under its own weight, carving valleys and transporting debris:
 
-- **Earth:** Glaciers and ice sheets have profoundly shaped mid- and high-latitude landscapes. During the Last Glacial Maximum ($\sim$20 ka), ice sheets covered $\sim$30% of Earth's land area.
+- **Earth:** Glaciers and ice sheets have profoundly shaped mid- and high-latitude landscapes ({numref}`fig:fedchenko-glacier`). During the Last Glacial Maximum ($\sim$20 ka), ice sheets covered $\sim$30% of Earth's land area.
 - **Mars:** Polar ice caps of $\mathrm{CO_2}$ and $\mathrm{H_2O}$ ice. Mid-latitude features including lobate debris aprons and lineated valley fill strongly resemble terrestrial rock glaciers, suggesting subsurface ice flow.
+
+```{figure} figures/fedchenko_glacier.avif
+:name: fig:fedchenko-glacier
+:width: 550px
+:align: center
+
+The Fedchenko Glacier in the Pamir Mountains of Tajikistan, photographed from the International Space Station. At roughly 77 km long it is the longest glacier outside the polar regions. Tributary ice streams join the main trunk from side valleys, and the dark medial moraines that trace each junction downstream mark the rock debris carried along the flow. Valley glaciers erode U-shaped troughs and transport sediment over long distances, a dominant landscape-shaping process at mid and high latitudes on Earth. Credit: NASA/ISS Crew Earth Observations Facility, Johnson Space Center, public domain.
+```
 
 ### Chemical weathering
 
 Chemical reactions between surface rocks and atmospheric or liquid agents alter mineral compositions:
 
 - **Earth:** Silicate weathering by carbonic acid is the critical carbon sink in the carbonate-silicate cycle ({ref}`Lecture 6 <lecture06>`), regulating climate over geological time.
-- **Mars:** Orbital spectroscopy (OMEGA on Mars Express, CRISM on MRO) has detected hydrated minerals (phyllosilicates or clays, sulfates, and carbonates) formed by aqueous alteration of basaltic rock, providing mineralogical evidence for past liquid water.
+- **Mars:** Orbital spectroscopy (OMEGA on Mars Express, CRISM on MRO) has detected hydrated minerals (phyllosilicates or clays, sulfates, and carbonates) formed by aqueous alteration of basaltic rock, providing mineralogical evidence for past liquid water ({numref}`fig:mars-clay-unit`).
 - **Venus:** The high surface temperature ($\sim$737 K) and dense $\mathrm{CO_2}$ atmosphere drive surface-atmosphere chemical reactions that may alter rock compositions on relatively short timescales.
+
+```{figure} figures/mars_clay_unit_glen_torridon.avif
+:name: fig:mars-clay-unit
+:width: 500px
+:align: center
+
+Layered bedrock of the clay-bearing unit at Glen Torridon on the lower slopes of Mount Sharp, Gale crater, imaged by the Curiosity rover's Mastcam (the rover's nameplate is visible in the foreground). Orbital and in-situ spectroscopy show this unit is rich in phyllosilicate clay minerals, which form when liquid water chemically alters basaltic rock. Clay deposits like this are among the strongest mineralogical evidence that early Mars sustained surface or near-surface water. Credit: NASA/JPL-Caltech/MSSS, public domain.
+```
 
 
 ## Remote sensing of surfaces
@@ -507,11 +539,19 @@ In the outer solar system, where surface temperatures are far below the freezing
 
 ### Enceladus
 
-Saturn's small moon Enceladus ($R \approx 252$ km) provides the most dramatic example of active cryovolcanism in the solar system. NASA's Cassini spacecraft discovered that Enceladus ejects powerful geysers of water vapour and ice particles from four parallel fractures, the **"tiger stripes"**, near its south pole {cite:p}`Porco2006`.
+Saturn's small moon Enceladus ($R \approx 252$ km) provides the most dramatic example of active cryovolcanism in the solar system. NASA's Cassini spacecraft discovered that Enceladus ejects powerful geysers of water vapour and ice particles from four parallel fractures, the **"tiger stripes"**, near its south pole ({numref}`fig:enceladus-cryovolcanism`) {cite:p}`Porco2006`.
 
 The plumes are sourced from a **global subsurface ocean** in contact with the rocky core, maintained by tidal heating from Enceladus's orbital resonance with Dione ({ref}`Lecture 3 <lecture03>`). Cassini's mass spectrometer detected molecular hydrogen ($\mathrm{H_2}$), silica nanoparticles, and complex organic molecules in the plume material, consistent with active hydrothermal vents on the ocean floor similar to those that support chemosynthetic ecosystems in Earth's deep oceans {cite:p}`NimmoPappalardo2016`.
 
 The measured thermal emission from the tiger stripes corresponds to an endogenic heat flow of $\sim$15.8 GW in the Cassini CIRS analysis of {cite:t}`Howett2011`; the heat flow is far more than can be explained by radiogenic heating alone, confirming the importance of tidal dissipation. Enceladus is one of the most promising targets in the search for extraterrestrial life ({ref}`Lecture 14 <lecture14>`).
+
+```{figure} figures/enceladus_cryovolcanism.avif
+:name: fig:enceladus-cryovolcanism
+:width: 500px
+:align: center
+
+Dramatic plumes of water vapour and ice particles erupting from the south polar region of Saturn's moon Enceladus, captured by NASA's *Cassini* spacecraft. The geysers originate from four parallel fractures called "tiger stripes" and are sourced from a global subsurface ocean in contact with the rocky core. The plumes contain molecular hydrogen, silica nanoparticles, and complex organic molecules: ingredients consistent with active hydrothermal chemistry on the ocean floor. Enceladus is one of the most promising targets in the search for life beyond Earth ({ref}`Lecture 14 <lecture14>`). Credit: NASA/JPL-Caltech/SSI, public domain.
+```
 
 ### Europa
 
@@ -533,7 +573,7 @@ Galileo SSI image of Europa's surface near Pwyll crater (the bright ray system i
 
 ### Triton
 
-Neptune's largest moon Triton shows **nitrogen geysers** that were observed by Voyager 2 during its 1989 flyby: plumes of nitrogen gas and dark dust rising $\sim$8 km above the surface before being carried downwind by thin atmospheric currents ({numref}`fig:triton-surface`). Triton's very young surface, retrograde orbit (suggesting it is a captured Kuiper Belt object), and possible subsurface ocean make it an intriguing target for future exploration. The active plume activity on Enceladus is shown in {numref}`fig:enceladus-cryovolcanism`.
+Neptune's largest moon Triton shows **nitrogen geysers** that were observed by Voyager 2 during its 1989 flyby: plumes of nitrogen gas and dark dust rising $\sim$8 km above the surface before being carried downwind by thin atmospheric currents ({numref}`fig:triton-surface`). Triton's very young surface, retrograde orbit (suggesting it is a captured Kuiper Belt object), and possible subsurface ocean make it an intriguing target for future exploration.
 
 ```{figure} figures/triton_voyager.avif
 :name: fig:triton-surface
@@ -541,14 +581,6 @@ Neptune's largest moon Triton shows **nitrogen geysers** that were observed by V
 :align: center
 
 Voyager 2 colour mosaic of Neptune's moon Triton (PIA00317), captured during the 1989 flyby. The pinkish southern polar cap (lower half) is a thin $\mathrm{N_2}$/$\mathrm{CH_4}$ frost; the dark streaks pointing northeast across the cap are wind-deposited dust from active nitrogen geysers, the only confirmed cryovolcanic plumes outside Enceladus. North of the cap, the "cantaloupe terrain" of dimples and ridges is unique in the solar system and remains poorly understood. Triton's retrograde orbit suggests it is a captured Kuiper-belt object, making it a probable analogue for Pluto-class dwarf planets. Credit: NASA/JPL/Voyager 2, public domain.
-```
-
-```{figure} figures/enceladus_cryovolcanism.avif
-:name: fig:enceladus-cryovolcanism
-:width: 500px
-:align: center
-
-Dramatic plumes of water vapour and ice particles erupting from the south polar region of Saturn's moon Enceladus, captured by NASA's *Cassini* spacecraft. The geysers originate from four parallel fractures called "tiger stripes" and are sourced from a global subsurface ocean in contact with the rocky core. The plumes contain molecular hydrogen, silica nanoparticles, and complex organic molecules: ingredients consistent with active hydrothermal chemistry on the ocean floor. Enceladus is one of the most promising targets in the search for life beyond Earth ({ref}`Lecture 14 <lecture14>`). Credit: NASA/JPL-Caltech/SSI, public domain.
 ```
 
 
