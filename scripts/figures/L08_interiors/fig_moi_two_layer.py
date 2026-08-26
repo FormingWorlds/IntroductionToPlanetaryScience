@@ -66,8 +66,10 @@ def draw_cutaway(ax, cx: float, cy: float, r: float, x: float) -> None:
         ax.add_patch(Wedge((cx, cy), r, 0, 90, facecolor="white",
                            edgecolor="black", lw=1.0, zorder=4))
         ax.plot([cx, cx + r * x], [cy, cy], color="black", lw=0.8, zorder=5)
-        ax.annotate(r"$R_c$", (cx + 0.55 * r * x, cy + 0.05 * r),
-                    fontsize=9, zorder=6)
+        # a fixed point offset keeps the label box clear of the radius line
+        ax.annotate(r"$R_c$", (cx + 0.55 * r * x, cy),
+                    textcoords="offset points", xytext=(0, 4),
+                    va="bottom", fontsize=9, zorder=6)
 
 
 def make_plot() -> Path:

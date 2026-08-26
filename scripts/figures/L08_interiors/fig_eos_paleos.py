@@ -129,8 +129,25 @@ PHASE_LABELS = {
 }
 
 
+# Along-run position fraction per isotherm role and phase ID, overriding
+# the default placement where a label would sit on the Earth-centre marker
+POS_FRAC = {
+    "mgsio3": {"cold": {"solid-ppv": 0.62}},
+    "water": {"cold": {"solid-ice-X": 0.78},
+              "hot": {"supercritical": 0.25}},
+}
+
+# Extra perpendicular clearance in points for labels whose curve bends
+# strongly, where the straight-tangent offset underestimates the gap
+PAD_EXTRA = {
+    "water": {"hot": {"supercritical": 8.0}},
+}
+
+
 def _label_runs(ax, iso: dict, color: str, above: bool,
-                min_decades: float = 0.45) -> None:
+                min_decades: float = 0.45,
+                frac_overrides: dict[str, float] | None = None,
+                pad_overrides: dict[str, float] | None = None) -> None:
     """Label each phase run of one isotherm at its geometric-mean pressure.
 
     Cold-isotherm labels go above the curve and hot-isotherm labels below
@@ -149,7 +166,10 @@ def _label_runs(ax, iso: dict, color: str, above: bool,
         text = PHASE_LABELS.get(run["phase"], run["phase"])
         # above-curve labels sit toward the low-P end of their run, keeping
         # them clear of the steep high-P region where the isotherms merge
-        pm = p0 * (p1 / p0) ** (0.42 if above else 0.5)
+        frac = 0.42 if above else 0.5
+        if frac_overrides:
+            frac = frac_overrides.get(run["phase"], frac)
+        pm = p0 * (p1 / p0) ** frac
         rm = np.interp(np.log10(pm), np.log10(p), r)
         # local curve direction in display coordinates
         pa, pb = pm * 0.85, pm * 1.18
@@ -163,7 +183,10 @@ def _label_runs(ax, iso: dict, color: str, above: bool,
         # clearance: project the label's half-extent onto the normal
         half_w = 0.5 * len(text) * fontsize * 0.62
         half_h = 0.62 * fontsize
-        off = abs(nx) * half_w + abs(ny) * half_h + 4.0
+        pad = 4.0
+        if pad_overrides:
+            pad += pad_overrides.get(run["phase"], 0.0)
+        off = abs(nx) * half_w + abs(ny) * half_h + pad
         ax.annotate(text, (pm / 1e9, rm), textcoords="offset points",
                     xytext=(nx * off, ny * off), fontsize=fontsize,
                     color=color, ha="center", va="center",
@@ -202,8 +225,12 @@ def make_plot() -> Path:
         ax.legend(loc="upper left", frameon=False)
         # label after scales and limits are set: the perpendicular offsets
         # in _label_runs use the display-space transform
-        _label_runs(ax, cold, COLD_COLOR, above=True)
-        _label_runs(ax, hot, HOT_COLOR, above=False)
+        _label_runs(ax, cold, COLD_COLOR, above=True,
+                    frac_overrides=POS_FRAC.get(mat, {}).get("cold"),
+                    pad_overrides=PAD_EXTRA.get(mat, {}).get("cold"))
+        _label_runs(ax, hot, HOT_COLOR, above=False,
+                    frac_overrides=POS_FRAC.get(mat, {}).get("hot"),
+                    pad_overrides=PAD_EXTRA.get(mat, {}).get("hot"))
     axes[0].set_ylabel(r"Density [kg m$^{-3}$]")
     # above the iron curve at 364 GPa, in the clear upper-left region
     axes[0].text(P_EARTH_CENTRE / 1e9 * 1.3, 2.4e4, "Earth centre",

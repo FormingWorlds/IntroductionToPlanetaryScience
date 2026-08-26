@@ -92,7 +92,9 @@ def make_plot() -> Path:
                                  lw=1.0, mutation_scale=8, shrinkA=0,
                                  shrinkB=0, zorder=5))
     ax.text(p1[0] + 0.07, p1[1] - 0.10, r"$dr$", fontsize=12)
-    ax.text(-0.60, -0.60, r"$\rho(r)$", fontsize=12, ha="center")
+    # in the body interior, clear of the shell ring and the radius
+    # construction lines
+    ax.text(-0.28, -0.35, r"$\rho(r)$", fontsize=12, ha="center")
 
     # Shell mass, spelt out once below the sketch
     ax.text(0, -1.22, r"shell: $dm_{\rm shell} = 4\pi r^2 \rho(r)\,dr$",
