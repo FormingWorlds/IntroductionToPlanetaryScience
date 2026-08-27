@@ -204,7 +204,7 @@ This equation allows seismologists to determine the density profile from measure
 :width: 720px
 :align: center
 
-Test of the Adams-Williamson relation against PREM. **(a)** In the lower mantle (771-2741 km depth), where composition is approximately uniform, the density predicted by integrating $d\ln\rho/dr = -g/\phi$ (red dashed) reproduces the observed PREM profile (blue) closely: the density rise is dominated by self-compression. **(b)** Across the core-mantle boundary at 2891 km depth, the observed density (blue) jumps discontinuously from $\sim$5570 to $\sim$9900 kg m$^{-3}$, whereas a no-composition-change Adams-Williamson extrapolation (red dashed) predicts a smooth, far smaller increase. The deviation directly exposes the compositional change from silicate mantle to iron-alloy core. Course-original from the PREM tabulation of {cite:t}`Dziewonski1981`.
+Test of the Adams-Williamson relation against PREM. **(a)** In the lower mantle (771-2741 km depth), where composition is approximately uniform, the density predicted by integrating $d\ln\rho/dr = -g/\phi$ (red dashed) reproduces the observed PREM profile (blue) closely: the density rise is dominated by self-compression. **(b)** Across the core-mantle boundary at 2891 km depth, the observed density (blue) jumps discontinuously from $\sim$5570 to $\sim$9900 kg m$^{-3}$, whereas a no-composition-change Adams-Williamson extrapolation (red dashed) predicts a smooth, far smaller increase. The deviation directly exposes the compositional change from silicate mantle to iron-alloy core. Course-original figure from the PREM tabulation of {cite:t}`Dziewonski1981`.
 ```
 
 

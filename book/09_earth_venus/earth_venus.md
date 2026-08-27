@@ -805,7 +805,8 @@ Both planets accreted in roughly the same region of the protoplanetary disk and 
 :align: center
 
 Probability density function for the chromium-bearing fraction of Earth's accreting mass as a function of the cumulative accreted mass fraction, from {cite:t}`Dauphas2017` (Cr panel of their five-isotope Fig. 1).
-The red triangle on the $x$-axis marks $x_{0.95} = 0.85$, the mass fraction at which $95\%$ of Earth's present mantle Cr inventory was delivered, demonstrating that Cr is delivered approximately proportionally to accreted mass (described by the paper as "nearly linear"), in contrast to Mo and Ru, which are strongly back-loaded toward the final stages of accretion.
+In the paper's notation, $x_{0.95} = 0.85$ for Cr: $95\%$ of Earth's present mantle Cr inventory arrived during the final $85\%$ of accretion, and the red triangle on the $x$-axis marks the start of this terminal window at $1 - x_{0.95} = 0.15$.
+Mass-proportional delivery would give $x_{0.95} = 0.95$, so Cr is delivered approximately proportionally to accreted mass (described by the paper as "nearly linear"), in contrast to Mo and Ru, which are strongly back-loaded toward the final stages of accretion.
 Combined with the O, Ti, Ni, Mo, and Ru tracers from the same study (not reproduced here), {cite:t}`Dauphas2017` reconstruct three accretion stages: stage I ($0\text{--}60\%$ of Earth's mass) is best fit by $\sim 51\%$ enstatite-meteorite-like (E-type) plus $\sim 40\%$ ordinary-chondrite plus $\sim 9\%$ carbonaceous-chondrite (CO/CV) material; stages II ($60\text{--}99.5\%$) and III (the last $0.5\%$, the "late veneer") are essentially $100\%$ E-type.
 The carbonaceous component, and therefore the bulk of Earth's water if it was delivered with that material, was concentrated in the early stages of main accretion rather than in the late veneer.
 ```
