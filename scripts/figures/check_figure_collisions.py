@@ -106,8 +106,9 @@ def _solid_fill_contrast(t, patch: np.ndarray) -> float:
 
 
 def _text_artists(fig):
-    """Text artists that live inside an axes data region, including
-    figure-level text (suptitle, fig.text) overlapping any axes."""
+    """Text artists inside an axes data region, including figure-level
+    text (suptitle, fig.text) overlapping any axes. The canvas must be
+    drawn first; stale extents make the overlap filter drop texts."""
     arts = []
     ax_bbs = [ax.get_window_extent() for ax in fig.axes]
     for ax, ax_bb in zip(fig.axes, ax_bbs):
@@ -170,8 +171,9 @@ def check_module(mod_name: str) -> list[str]:
         return [f"{mod_name}: no figure captured"]
 
     failures = []
+    # Text extents are wrong until the canvas is drawn once
+    _render(fig)
     texts = _text_artists(fig)
-    full = _render(fig)
     for t in texts:
         bb = _text_bbox(t)
         t.set_visible(False)

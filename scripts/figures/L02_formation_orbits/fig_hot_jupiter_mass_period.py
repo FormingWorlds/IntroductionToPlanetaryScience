@@ -51,7 +51,7 @@ SOLAR_SYSTEM = {
 
 # Per-planet label offsets (points) to keep neighbouring labels apart.
 LABEL_OFFSETS = {
-    "Mercury": (8, -11),
+    "Mercury": (8, 3),
     "Venus":   (8, -11),
     "Earth":   (8, 3),
     "Mars":    (8, -11),
