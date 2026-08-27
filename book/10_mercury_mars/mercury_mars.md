@@ -376,7 +376,7 @@ Other notable features include **Hellas Planitia**, a $2300$-km-diameter, $\sim 
 
 The central discovery of the last two decades is that liquid water once flowed across Mars' surface, accumulated in basins, weathered the rocks, and left a globally distributed record. The lines of evidence are diverse and reinforcing.
 
-**Valley networks**, branching channels reminiscent of terrestrial drainage systems, are concentrated in the Noachian highlands. Their morphology (high drainage density, dendritic geometry, integrated catchment areas) most plausibly requires precipitation-fed runoff, which in turn requires sustained warm conditions over thousands or tens of thousands of years.
+**Valley networks**, branching channels reminiscent of terrestrial drainage systems, are concentrated in the Noachian highlands. Their morphology (locally high drainage density, dendritic geometry, integrated catchment areas) most plausibly requires precipitation-fed runoff, which in turn requires sustained warm conditions over thousands or tens of thousands of years. Global mapping gives an average drainage density over Noachian units of $\sim 0.0115\ \mathrm{km^{-1}}$, well below the terrestrial precipitation-formed range, while the densest individual networks reach $\sim 0.20\ \mathrm{km^{-1}}$ and fall within the range of terrestrial systems {cite:p}`Hynek2010`.
 
 **Outflow channels** such as Kasei Valles and Ares Vallis are large-scale, scoured features that record catastrophic single events: the discharge of confined sub-permafrost aquifers in volumes orders of magnitude greater than any historical terrestrial flood. They are mostly Hesperian.
 
