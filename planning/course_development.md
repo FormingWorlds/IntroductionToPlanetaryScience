@@ -664,7 +664,7 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | 10 | Rocky planets: Mercury & Mars | Draft complete (figures repaired for resolution and dead borders; the Hyodo et al. 2017 impact-snapshot composite is rebuilt at 1584x1020 from the arXiv e-print figure, and the Viking valley-network mosaic and the Mariner 4 frame stay at the native resolution of their published NASA sources) | Medium |
 | 11 | Gas & ice giants | Draft complete (16 NASA figures rebuilt from full-resolution JPL Photojournal sources; the Titan lakes radar mosaic keeps a small residual upscale because PIA17656 is its largest published form, and the published Triton map PIA18668 carries a faint graticule the old preview hid) | Medium |
 | 12 | Meteorites, asteroids, minor planets & comets | Draft complete (the Occator and Mordor Macula figures are rebuilt from full-resolution Photojournal sources and the DeMeo & Carry belt figure from its Nature-typeset version; the 67P nucleus and Chelyabinsk photographs stay at the largest published form, with credits corrected to the OSIRIS team and to A. Alishevskikh) | Medium |
-| 13 | Exoplanets | Draft complete | Medium |
+| 13 | Exoplanets | Draft complete (the Bryson et al. 2021 occurrence panels are rebuilt from the published AJ figure, the Owen & Wu 2013 evolution tracks from a 400 dpi render of the vector source with the full time-axis label, and the 55 Cancri e emission spectrum from the arXiv-embedded raster of Hu et al. 2024) | Medium |
 | 14 | Synthesis & astrobiology | Draft complete | Low |
 
 **Slide infrastructure (complete):**
