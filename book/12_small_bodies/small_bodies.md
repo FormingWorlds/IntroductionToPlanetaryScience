@@ -635,7 +635,7 @@ To order of magnitude, the rates are:
 :width: 480px
 :align: center
 
-The Chelyabinsk meteor of 15 February 2013, photographed shortly after entry from a passing car. The bolide was a 19 m near-Earth asteroid that disintegrated at $\sim 30$ km altitude, releasing about 0.5 Mt TNT equivalent. The shock wave shattered windows across Chelyabinsk and injured about 1,500 people. Image credit: Aleksandr Ivanov, CC BY 3.0 (Wikimedia Commons).
+The vapour trail of the Chelyabinsk meteor of 15 February 2013, photographed about a minute after entry from a distance of roughly 200 km. The bolide was a 19 m near-Earth asteroid that disintegrated at $\sim 30$ km altitude, releasing about 0.5 Mt TNT equivalent. The shock wave shattered windows across Chelyabinsk and injured about 1,500 people. Image credit: Alex Alishevskikh, CC BY-SA 2.0 (Wikimedia Commons).
 ```
 
 ```{figure} figures/tunguska.avif
@@ -1038,7 +1038,7 @@ The bouncy landing meant Philae operated in a less-than-ideal environment, but t
 :width: 600px
 :align: center
 
-The nucleus of comet 67P/Churyumov-Gerasimenko imaged by Rosetta. The bilobed "duck" shape is one of the most distinctive features of the comet; the two lobes are joined at a narrow neck region (the bright collar visible in this image). The bilobed morphology is interpreted as a contact binary formed from the gentle merger of two primordial cometesimals, much like Arrokoth on a smaller scale. Image credit: ESA/Rosetta/NavCam, CC BY-SA 3.0 IGO.
+The nucleus of comet 67P/Churyumov-Gerasimenko imaged by Rosetta. The bilobed "duck" shape is one of the most distinctive features of the comet; the two lobes are joined at a narrow neck region (the bright collar visible in this image). The bilobed morphology is interpreted as a contact binary formed from the gentle merger of two primordial cometesimals, much like Arrokoth on a smaller scale. Image credit: ESA/Rosetta/MPS for OSIRIS Team MPS/UPD/LAM/IAA/SSO/INTA/UPM/DASP/IDA (ESA Standard Licence).
 ```
 
 Rosetta's headline scientific findings include:
