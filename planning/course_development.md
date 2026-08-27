@@ -662,7 +662,7 @@ Each lecture requires a companion PDF slide deck compiled from LaTeX source file
 | 8 | Planetary interiors | Draft complete (100-page deck, 11 sections aligned 1:1 with the notes; the convection schematic marks the 660 km boundary dashed where flow crosses it and solid where it blocks flow, and generated plots carry course-original credits) | High |
 | 9 | Rocky planets: Earth & Venus | Draft complete (88-page deck; the four-panel runaway-greenhouse figure is `kopparapu2013_runaway_panels.avif`, credited to Kopparapu et al. 2013 with its 291 W/m² OLR asymptote, while the Goldblatt et al. 2013 line-by-line value of 282 W/m² stays on the spectrum-verification frame; figures repaired for resolution and dead borders, with three placements (Dauphas 2017, Lyons 2014, Hamano 2013 Type-I) still awaiting institutional-access sources) | Medium |
 | 10 | Rocky planets: Mercury & Mars | Draft complete (figures repaired for resolution and dead borders; the Hyodo et al. 2017 impact-snapshot composite is rebuilt at 1584x1020 from the arXiv e-print figure, and the Viking valley-network mosaic and the Mariner 4 frame stay at the native resolution of their published NASA sources) | Medium |
-| 11 | Gas & ice giants | Draft complete | Medium |
+| 11 | Gas & ice giants | Draft complete (16 NASA figures rebuilt from full-resolution JPL Photojournal sources; the Titan lakes radar mosaic keeps a small residual upscale because PIA17656 is its largest published form, and the published Triton map PIA18668 carries a faint graticule the old preview hid) | Medium |
 | 12 | Meteorites, asteroids, minor planets & comets | Draft complete | Medium |
 | 13 | Exoplanets | Draft complete | Medium |
 | 14 | Synthesis & astrobiology | Draft complete | Low |
