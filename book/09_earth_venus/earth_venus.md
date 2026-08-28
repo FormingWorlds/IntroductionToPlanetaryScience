@@ -51,6 +51,49 @@ The three legs of the tripod hold each other up.
 Remove any one and the system collapses.
 This coupling is the essential reason Earth has remained habitable for billions of years and the essential reason we suspect Venus, lacking all three legs today, lost the configuration early.
 
+### The geologic eons of Earth
+
+Everything that follows in this lecture quotes ages: the oldest crust, the onset of the geodynamo, the rise of oxygen, the great glaciations.
+These ages only carry meaning within the standard temporal frame of Earth history, so we set it up first.
+Geologists divide the $4.54$ Gyr since Earth's formation into four **eons**, whose boundary ages are calibrated by radiometric dating of the rock record ({ref}`Lecture 12 <lecture12>`) and standardised in the Geologic Time Scale {cite:p}`Gradstein2020` ({numref}`fig:earth-eons`).
+
+```{figure} figures/earth_eons_timeline.avif
+:name: fig:earth-eons
+:width: 100%
+:align: center
+
+The geologic eons and eras of Earth.
+**Top bar:** the four eons spanning the full $4.54$ Gyr of Earth history, with the eras of the Archean and Proterozoic marked above; note that the Hadean, Archean, and Proterozoic together (the informal "Precambrian") occupy almost $90\%$ of the timeline.
+**Bottom bar:** the Phanerozoic eon stretched to the full figure width, divided into the Paleozoic, Mesozoic, and Cenozoic eras at the end-Permian ($252$ Ma) and end-Cretaceous ($66$ Ma) mass extinctions.
+Boundary ages follow the Geologic Time Scale 2020 {cite:p}`Gradstein2020`.
+```
+
+The **Hadean** eon ($4.54$ to $4.0$ Ga) covers the violent infancy of the planet: the final giant impacts of accretion, including the Moon-forming impact ({ref}`Lecture 4 <lecture04>`), the solidification of the last global magma ocean, and the formation of the earliest crust, atmosphere, and oceans.
+Almost no intact Hadean rock survives; the record consists mainly of individual **zircon** crystals, chemically resistant zirconium-silicate minerals eroded out of their long-destroyed host rocks and redeposited in younger sediments.
+The oldest of these detrital zircons, from the Jack Hills in Western Australia, date to $4.4$ Ga, and their oxygen-isotope compositions indicate that continental-type crust and liquid surface water already existed then {cite:p}`Wilde2001`.
+The picture of the Hadean has therefore shifted from the hellish landscape the name implies toward a world that acquired oceans, and possibly the first habitable environments, within $\sim$150 Myr of formation; we return to this evidence when discussing the faint young Sun below.
+
+The **Archean** eon ($4.0$ to $2.5$ Ga) opens with the age of the oldest in-place continental rocks, $4.0$ Gyr, and is the first eon with a substantial rock record.
+Archean Earth was a recognisable but alien planet: liquid water oceans and continents existed, the geodynamo was running by at least $3.4$ Ga {cite:p}`Tarduno2010`, and life was already present, but the atmosphere was anoxic, dominated by $\mathrm{N_2}$ and $\mathrm{CO_2}$ with a greenhouse boost plausibly supplied by methane {cite:p}`Catling2020`.
+The **Proterozoic** eon ($2.5$ Ga to $539$ Ma) is bracketed by the two great environmental revolutions of Earth history: it opens with the Great Oxidation Event and the Huronian glaciations at $\sim$2.4 Ga and closes with the Neoproterozoic Snowball Earth episodes, the second rise of oxygen, and the first macroscopic animal fossils, each of which we treat in its own section below.
+The **Phanerozoic** eon ($539$ Ma to the present, the name means "visible life") is the familiar territory of animal and plant evolution, and its three eras are separated by the two largest mass extinctions in the fossil record: the end-Permian crisis at $252$ Ma and the end-Cretaceous impact at $66$ Ma ({ref}`Lecture 12 <lecture12>`).
+{numref}`fig:catling-precambrian` compiles the environmental and biological milestones of the first three eons in one column; it is worth study now, because most of the Earth history invoked in this lecture, and in the habitability arguments of {ref}`Lecture 13 <lecture13>` and {ref}`Lecture 14 <lecture14>`, happened in the Precambrian.
+
+```{figure} figures/catling2020_precambrian_events.avif
+:name: fig:catling-precambrian
+:width: 60%
+:align: center
+
+Geologic time scale of the Precambrian with the major environmental and biological events, from the Moon-forming impact and the earliest evidence for life through the Great Oxidation Event ($\sim$2.4 Ga) to the Neoproterozoic glaciations and the first Ediacaran biota.
+The left columns give the eons and eras; the annotations mark the atmospheric transition from an anoxic, reducing composition to an oxidising one with an ozone layer.
+Reproduced from {cite:t}`Catling2020`.
+```
+
+The essential quantitative point of {numref}`fig:earth-eons` is the extreme imbalance of the timeline.
+Complex multicellular life occupies only the last $\sim$12% of Earth history; for the preceding $\sim$4 Gyr the planet was inhabited exclusively by microbes.
+When we use Earth as the reference case for habitability, we must remember that "Earth-like" has meant several radically different planets over time: a Hadean water-world with a $\mathrm{CO_2}$-rich atmosphere, an anoxic Archean planet under a fainter Sun, a Proterozoic world with an ozone layer but almost no macroscopic life, and only recently the oxygen-rich planet we inhabit.
+This point returns with full force in {ref}`Lecture 14 <lecture14>` when we ask what a remote observer could have detected at each of these stages.
+
 ### Plate tectonics in action
 
 We covered the dynamical basis of mantle convection and the surface expression of mobile-lid tectonics in {ref}`Lecture 7 <lecture07>`.
@@ -221,6 +264,49 @@ The arithmetic is suggestive but not exact: it tells us that Earth and Venus pro
 We will return to this in Part 3.
 The connection between the biosphere and biosignatures (the spectroscopic signatures of life that future telescopes might use to characterise exoplanets) is taken up explicitly in {ref}`Lecture 13 <lecture13>` and {ref}`Lecture 14 <lecture14>`.
 
+### The history of life on Earth
+
+The biosphere whose geological footprint we just described has a history as long as the planet's, and its major transitions are milestones of the eon framework introduced above ({numref}`fig:earth-life-history`).
+
+```{figure} figures/earth_life_timeline.avif
+:name: fig:earth-life-history
+:width: 100%
+:align: center
+
+Major events in the history of life on Earth, plotted on the eon strip of {numref}`fig:earth-eons`.
+Stemmed markers give representative ages for the milestones discussed in the text, from the formation of Earth and the first liquid water oceans through the earliest biosignatures, the Great Oxidation Event, the first eukaryotes and multicellular algae, to the Ediacaran biota, the Cambrian explosion, and the end-Cretaceous impact.
+Blue bands on the strip mark the Huronian and Neoproterozoic snowball glaciations.
+Event ages are representative values from the cited literature {cite:p}`Mojzsis1996,Dodd2017,Nutman2016,Lyons2014,Catling2020,Hoffman2017`; eon boundaries follow {cite:t}`Gradstein2020`.
+```
+
+The record of life's origin is frustratingly incomplete, because the rocks that could hold it have mostly been destroyed by the very tectonic recycling celebrated earlier in this lecture.
+The oldest claimed traces are chemical rather than morphological: isotopically light carbon in $3.8$ Gyr old Isua metasediments {cite:p}`Mojzsis1996` and putative microfossil textures in rocks that may exceed $3.77$ Gyr in age {cite:p}`Dodd2017`, both contested because non-biological processes can mimic the signatures.
+Claimed $3.7$ Gyr old stromatolite structures from Isua {cite:p}`Nutman2016` are similarly debated.
+The oldest widely accepted fossils are **stromatolites** from the Pilbara region of Western Australia at $3.48$ Ga {cite:p}`Catling2020`: layered sedimentary mounds built by microbial mats that trap and bind sediment.
+Living stromatolites still grow today in a few hypersaline refuges such as Shark Bay ({numref}`fig:stromatolites`), giving us a direct modern analogue for the dominant visible life form of the planet's first $3$ Gyr.
+
+```{figure} figures/stromatolites_shark_bay.avif
+:name: fig:stromatolites
+:width: 70%
+:align: center
+
+Modern stromatolites in the hypersaline waters of Shark Bay, Western Australia.
+Microbial mats trap and bind sediment into these layered mounds; fossil stromatolites of the same construction, dated to $3.48$ Ga in the nearby Pilbara region, are the oldest widely accepted evidence for life on Earth.
+Photo by Paul Harrison (Wikimedia Commons), [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/).
+```
+
+However one weighs the contested traces, the conclusion stands: taking only the Pilbara stromatolites as secure, life was established within the first billion years after liquid water oceans appeared at $4.3\text{--}4.4$ Ga; if any of the older traces holds up, that window shrinks to a few hundred million years.
+The subsequent pace could hardly be more different.
+Microbial life then held the planet essentially alone for some $3$ Gyr, through the Great Oxidation Event and the Lomagundi excursion described in the previous section.
+The first fossils plausibly attributed to **eukaryotes**, cells with nuclei and organelles, are coiled Grypania impressions at $\sim$1.87 Ga, and the first convincing multicellular algae appear at $\sim$1.05 Ga {cite:p}`Catling2020`.
+Macroscopic animal life arrives only after the Neoproterozoic snowball glaciations and the second oxygenation step: the soft-bodied **Ediacaran biota** at $\sim$571 Ma {cite:p}`Catling2020`, followed by the **Cambrian explosion** of skeletonised animal phyla at $539$ Ma.
+The entire familiar history of complex life, including its punctuation by mass extinctions such as the end-Cretaceous impact at $66$ Ma ({ref}`Lecture 12 <lecture12>`), fits into the final $12\%$ of the planet's existence.
+
+Two lessons from this history matter for the rest of the course.
+First, the asymmetry of the timeline (life arose fast, complexity arose slowly) suggests that microbial biospheres may be far more common than complex ones, which shapes what {ref}`Lecture 13 <lecture13>` and {ref}`Lecture 14 <lecture14>` treat as realistic exoplanet biosignature targets.
+Second, the most detectable global signature of Earth's biosphere, atmospheric oxygen, is a biological product whose abundance was negligible for the first $2$ Gyr of life's existence; an observer surveying Archean Earth with our own telescopes could have found an inhabited planet with no oxygen signal at all.
+Both points rest on the oxygen history of {numref}`fig:lyons-oxygen` and the event compilation of {numref}`fig:catling-precambrian`.
+
 
 ## Part 2: Venus, the alien twin
 
@@ -318,7 +404,7 @@ Recent analysis of Magellan gravity data has identified coronae that appear to o
 Global geological-terrain map of Venus from {cite:t}`Widemann2023` Fig. 15, overlaid on a Magellan radar base. Coloured polygons are the Regions of Interest (RoIs) defined in the ESA EnVision Science Operations Reference Scenario; together they cover roughly 30% of Venus's surface and span the major terrain classes: **plains** (light green), **tessera** highlands (tan), **deformed terrain** (pale yellow), **rift zones** (red), **Artemis chasma** (purple), and **craters** (grey). Named regional landmarks (Maxwell Montes, Fortuna Tessera, Ishtar Terra, Beta Regio, Aphrodite Terra, Alpha Regio, and others) are labelled. Terrain classification after {cite:t}`IvanovHead2015`; reproduced from {cite:t}`Widemann2023`.
 ```
 
-**Impact crater density** on Venus is low, corresponding to a global average crater retention age of $150\text{--}250$ Myr in recent reanalyses {cite:p}`Smrekar2018`, with older crater-counting estimates extending to $300\text{--}1000$ Myr {cite:p}`Widemann2023`.
+**Impact crater density** on Venus is low, corresponding to a global average crater retention age of $150\text{--}250$ Myr in recent reanalyses, with earlier crater-counting estimates spanning $300\text{--}1000$ Myr {cite:p}`Smrekar2018`.
 This is a striking number: it implies that the surface of Venus was effectively wiped clean some time in the geologically recent past, and that the present surface dates from the resurfacing event rather than from accretion.
 There are essentially two competing interpretations of this resurfacing.
 The **catastrophic resurfacing** model (sometimes called the global lithospheric overturn model) proposes that the planet experienced a brief, planet-wide volcanic and tectonic event roughly $500$ Myr ago that resurfaced essentially all of the crust at once.
@@ -377,7 +463,8 @@ We will not repeat the radiative-transfer derivations from {ref}`Lecture 5 <lect
 
 The composition is overwhelmingly $\mathrm{CO_2}$ ($96.5\%$), with $\mathrm{N_2}$ ($3.5\%$) the only other major species.
 Trace gases include $\mathrm{SO_2}$ at $\sim$150 ppm, water vapour at $\sim$30 ppm in the lower atmosphere (rising slightly to $\sim$80 ppm in the cloud-deck region), and noble gases (argon, neon, krypton, xenon) at concentrations that are comparable to or much higher than terrestrial values, depending on the species.
-The high primordial $^{36}$Ar concentration argues that Venus has had less efficient atmospheric escape than Earth, while the low radiogenic $^{40}$Ar (produced by the radioactive decay of $^{40}$K rather than inherited at formation; only $\sim$24% of the mantle inventory has been outgassed, compared with $\sim$50% on Earth) argues that Venus has outgassed less of its mantle volatile inventory than Earth {cite:p}`Lammer2018,Widemann2023`.
+The high primordial $^{36}$Ar abundance shows that Venus holds a larger primordial noble-gas inventory than Earth; whether this reflects enhanced delivery of volatile-rich material or capture of solar-nebula gas by the growing planet is still debated {cite:p}`Lammer2018`.
+The radiogenic $^{40}$Ar (produced by the radioactive decay of $^{40}$K rather than inherited at formation) tells a complementary story: the atmospheric $^{40}$Ar/$^{36}$Ar ratio is only $\approx 1.1$, compared with $\approx 300$ on Earth, and mass-balance estimates suggest that only $\sim 10\text{--}34$% of all the $^{40}$Ar produced over the planet's history has been outgassed, compared with $\sim$50% on Earth, so Venus has outgassed less of its mantle volatile inventory than Earth {cite:p}`Gillmann2022`.
 
 The thermal profile is roughly adiabatic from the surface ($T_s = 737$ K, $P_s = 92$ bar) up to about $65$ km altitude, where the cloud tops sit and the troposphere meets the stratosphere.
 The atmospheric scale height at the surface is about $16$ km, much larger than Earth's $\sim$8 km, mainly because the surface temperature is so much higher (gas molecules are more energetic), in spite of the larger mean molecular weight of $\mathrm{CO_2}$ ($M = 44$ g/mol vs $\sim 29$ g/mol for air); the scale height is a competition between these factors, and the temperature wins.
@@ -516,7 +603,13 @@ $$ (eq:photosphere-pressure)
 where $g$ is the surface gravity.
 This equation says: the photosphere occurs at the level where the saturation vapour pressure equals the local hydrostatic pressure required to give an optical depth of order unity.
 
-Solving Eq. {eq}`eq:photosphere-pressure` for $T_{\mathrm{phot}}$ via Clausius-Clapeyron:
+To solve Eq. {eq}`eq:photosphere-pressure` for $T_{\mathrm{phot}}$, substitute the Clausius-Clapeyron form of the saturation curve and take the logarithm of both sides:
+
+$$
+\ln p_{\mathrm{ref}} - \frac{L}{R_v}\left(\frac{1}{T_{\mathrm{phot}}} - \frac{1}{T_{\mathrm{ref}}}\right) = \ln\frac{g}{\kappa}
+$$
+
+Collecting the $1/T_{\mathrm{phot}}$ term on one side, $\frac{L}{R_v T_{\mathrm{phot}}} = \ln(p_{\mathrm{ref}} \kappa / g) + L/(R_v T_{\mathrm{ref}})$, and inverting:
 
 $$
 T_{\mathrm{phot}} \approx \frac{L/R_v}{\ln(p_{\mathrm{ref}} \kappa / g) + L/(R_v T_{\mathrm{ref}})}
@@ -668,7 +761,7 @@ The upper row shows the vertically integrated water-cloud column and the lower r
 The maps are in the heliocentric frame, so subsolar longitude $0^\circ$ is the substellar point and $\pm 180^\circ$ the antistellar point.
 In both cases the clouds are concentrated on the night-side, where they act as a greenhouse blanket and cut the thermal cooling to space, so the emission maps are anticorrelated with the cloud maps.
 The substellar region stays comparatively cloud-free, which keeps the planetary albedo low.
-The two planets rotate at very different rates, Earth with $P_\mathrm{rot} \approx 24$ h and Venus with $P_\mathrm{rot} \approx 5833$ h, about 244 times longer, yet the same night-side cloud pattern appears in both, so the mechanism does not depend on slow rotation.
+The two planets rotate at very different rates, Earth with $P_\mathrm{rot} \approx 24$ h and Venus with $P_\mathrm{rot} \approx 5833$ h, about 243 times longer, yet the same night-side cloud pattern appears in both, so the mechanism does not depend on slow rotation.
 Reproduced from {cite:t}`Turbet2021`, Fig. 2a-d.
 ```
 
@@ -726,7 +819,7 @@ Reproduced from {cite:t}`Constantinou2024`.
 
 Whichever scenario is correct, there is one strong piece of empirical evidence that Venus once had at least $100\times$ more water than it does today: the deuterium-to-hydrogen ratio.
 The original Pioneer Venus mass spectrometer measurement of {cite:t}`Donahue1982` gave $D/H \approx 1.6 \times 10^{-2}$, about $100$ times the terrestrial standard mean ocean water value of $D/H = 1.6 \times 10^{-4}$.
-Subsequent Earth-based near-IR night-side spectroscopy refined the value to $(1.9 \pm 0.6) \times 10^{-2}$, corresponding to $\sim 120 \pm 40$ times terrestrial {cite:p}`deBergh1991`; later high-resolution measurements have converged on the now widely quoted enrichment factor of $\sim 150 \pm 30$ relative to Earth {cite:p}`Widemann2023`.
+Subsequent Earth-based near-IR night-side spectroscopy refined the value to $(1.9 \pm 0.6) \times 10^{-2}$, corresponding to $\sim 120 \pm 40$ times terrestrial {cite:p}`deBergh1991`, and a re-analysis of the full Pioneer Venus data set gave the widely quoted enrichment factor of $\sim 150 \pm 30$ relative to Earth {cite:p}`Donahue1997`.
 
 The physical reason is straightforward.
 In hydrodynamic escape (or any escape mechanism in which the energy per particle is comparable to the escape energy), the lighter isotope escapes more efficiently than the heavier one, because the lighter molecules acquire higher thermal velocities for a given temperature.
@@ -740,8 +833,8 @@ $$
 The fractionation factor $\alpha$ depends on the escape regime, and two limiting cases give very different answers.
 In a **mass-ratio limit** (the strongest defensible fractionation), $\alpha \approx m_{\mathrm{H}}/m_{\mathrm{D}} \approx 0.5$.
 In a **thermal-velocity limit** (the weakest defensible fractionation, using only the Maxwell-Boltzmann velocity ratio at fixed temperature), $\alpha \approx \sqrt{m_{\mathrm{H}}/m_{\mathrm{D}}} \approx 0.71$.
-Setting $R/R_0 = 150$ and solving $f = 150^{1/(\alpha-1)}$ gives $f_{\mathrm{diff}} \approx 150^{-2} \approx 4 \times 10^{-5}$ in the diffusion-limited limit, and $f_{\mathrm{Jeans}} \approx 150^{-3.4} \approx 4 \times 10^{-8}$ in the bare thermal-velocity limit.
-Multiplying the present water column ($\sim 2$ cm of global equivalent layer in the lower atmosphere) by $1/f$ then implies an initial water inventory of order *several hundred metres* of global equivalent depth in the diffusion-limited case (a shallow Earth ocean), or order *several hundred kilometres* in the bare thermal-velocity case, which corresponds to more than 100 Earth-ocean masses and is plainly unphysical for a delivery scenario.
+Setting $R/R_0 = 150$ and solving $f = 150^{1/(\alpha-1)}$ gives $f_{\mathrm{mass}} \approx 150^{-2} \approx 4 \times 10^{-5}$ in the mass-ratio limit, and $f_{\mathrm{thermal}} \approx 150^{-3.4} \approx 4 \times 10^{-8}$ in the thermal-velocity limit.
+Multiplying the present water column ($\sim 2$ cm of global equivalent layer in the lower atmosphere) by $1/f$ then implies an initial water inventory of order *several hundred metres* of global equivalent depth in the mass-ratio case (a shallow Earth ocean), or order *several hundred kilometres* in the thermal-velocity case, which corresponds to more than 100 Earth-ocean masses and is plainly unphysical for a delivery scenario.
 The contradiction in the second case is itself instructive: a pure velocity-tail interpretation of hydrogen escape cannot be the full story.
 The actual integrated escape history of Venus likely combined an early **hydrodynamic** phase (with $\alpha$ close to unity, requiring large total losses but producing little fractionation per escaping atom) with a later **diffusion-limited** phase that produced most of the observed enrichment.
 This is therefore a *lower-bound* argument: even under the most-fractionating defensible single-regime assumption, the present hydrogen reservoir is at most $\sim 4 \times 10^{-5}$ of the original, requiring an initial inventory of at least several hundred metres global equivalent.
