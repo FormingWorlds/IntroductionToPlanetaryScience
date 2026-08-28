@@ -56,8 +56,9 @@ The course is assessed by a single final written exam, which determines the full
 A final grade of higher than 5.5 is required to pass the course.
 The re-sit has the same format as the exam; if very few students are enrolled, an oral exam is offered instead.
 
-The exam lasts two hours and consists of six questions at the shape and level of the worksheet problems; each question spans two to three lectures, and the central formula a question needs is printed in the question.
+The exam lasts two hours and consists of six questions at the shape and level of the worksheet problems; each question spans two to three lectures, and any formula a question needs beyond the short must-know list is printed in the question.
 It is closed book: a calculator and a pen are all that is needed.
+The short list of relations every student must know from memory is published on the {ref}`mock exams page <must_know_list>`, together with a downloadable PDF version.
 
 Seven worksheets are provided as ungraded formative practice and are discussed in the tutorial sessions.
 They are strongly recommended as exam preparation but do not count towards the final grade.

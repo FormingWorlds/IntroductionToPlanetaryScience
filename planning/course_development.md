@@ -584,13 +584,16 @@ The re-sit has the same format; if fewer than four students are enrolled, an ora
 - Synthesis and astrobiology (Lecture 14)
 
 **Format:**
-- The exam has 6 questions of about 15 minutes each, at the shape and level of the worksheet problems; each question spans 2 to 3 lectures, so one paper touches most of the course, and not every lecture carries weight on every paper.
-- The mix is about half quantitative, half qualitative, matching the worksheets; qualitative parts use the same four forms as the worksheets.
+- The exam has 6 questions of about 13 minutes each, at the shape and level of the worksheet problems; each question spans 2 to 3 lectures, so one paper touches most of the course, and not every lecture carries weight on every paper.
+- The mix is about half quantitative, half qualitative, matching the worksheets; qualitative parts use the same four forms as the worksheets and carry a printed answer budget ("answer in 2 to 3 sentences").
 - Each multi-step question carries 1 intermediate checkpoint, placed so an early stall does not cascade; fewer than the worksheets carry.
-- The central formula a question needs is printed inside the question, and a constants-and-data box like the worksheets' is attached to the paper; there is no separate equation sheet, and derivations appear only as steps inside applied questions.
+- Formula policy: a short must-know list of 12 basic relations, published on the mock-exams page of the course website and as a downloadable PDF (`book/_static/exams/formulalist.pdf`, source in `exams/formulalist/`), is expected from memory; every other formula a question needs is printed inside the question. A constants-and-data box like the worksheets' is attached to the paper; there is no separate equation sheet, and derivations appear only as steps inside applied questions.
+- All numeric parts are solvable on a simple calculator from the data box, to 2 or 3 significant figures.
 - Marks per part are printed on the paper; the marking scheme maps points to grades, with the pass mark at 5.5.
-- Closed book; students bring a calculator and a pen, nothing else is needed (no equation sheet).
-- Duration: the scheduled slot is 2 hours, and the paper is sized for about 90 minutes of work for a well-prepared student, so the slot carries slack. Exam Wed 28 Oct 2026, 15:00-17:00, Exam Hall 4 (5263.0226); re-sit Mon 25 Jan 2027, 15:00-17:00, Exam Hall 1 (5263.0102).
+- Pass floor is breadth-based: every question opens with an accessible part (a), about 35% of the points sit at reproduction level, and the hardest roughly 20% of the points discriminate the 8-to-10 grade range.
+- Closed book; students bring a calculator and a pen, nothing else is needed.
+- Duration: the scheduled slot is 2 hours, and the paper is sized for about 80 minutes of work for a well-prepared student, so the slot carries slack; the sizing check is that the instructor can solve the full paper in about 25 minutes. Exam Wed 28 Oct 2026, 15:00-17:00, Exam Hall 4 (5263.0226); re-sit Mon 25 Jan 2027, 15:00-17:00, Exam Hall 1 (5263.0102).
+- Reuse policy: a worksheet problem's skill may return in a mock or real exam applied to a different system ("same skill, new system"); numbers, bodies, and context change, the physics does not.
 - Three mock exams with full solutions and the points-to-grade key are published on the course website as practice material, alongside the worksheets and their full solutions. The real final and the re-sit papers are developed in the private repository (see §11).
 
 ---

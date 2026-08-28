@@ -1,0 +1,145 @@
+% formulalist.tex: Must-know relations for the Planetary Systems exam
+% Planetary Systems, Kapteyn Institute, University of Groningen
+
+\documentclass[11pt]{article}
+\usepackage{../../worksheets/common/worksheetIPS}
+
+% This document is not a worksheet: replace the running head accordingly.
+\fancyhead[L]{\footnotesize\color{ipsPrimary}Planetary Systems \textbullet\ Exam formula list}
+\fancyhead[R]{\footnotesize\color{ipsPrimary}Must-know relations}
+
+% Numbered relation entry: title line, displayed equation, short explanation.
+\newcounter{ipsrelation}
+\newcommand{\relation}[1]{%
+  \par\addvspace{11pt plus 3pt}%
+  \refstepcounter{ipsrelation}%
+  \noindent{\large\bfseries\color{ipsPrimary}\arabic{ipsrelation}.\enspace #1\par}%
+  \vskip1pt
+  \noindent{\color{ipsAccent}\rule{\linewidth}{0.5pt}}%
+  \par\addvspace{3pt}%
+}
+
+% Lecture links point at the published course site.
+\newcommand{\lecref}[2]{\href{https://ips.formingworlds.space/#1}{#2}}
+
+% Total derivative, matching the lecture-notes macro of the same name.
+\providecommand{\dv}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+
+\begin{document}
+\thispagestyle{fancy}
+
+\begingroup
+\noindent{\color{ipsAccent}\rule{\linewidth}{1.2pt}}\\[8pt]
+{\LARGE\bfseries\color{ipsPrimary} Exam formula list: must-know relations\par}
+\vskip7pt
+{\normalsize\color{ipsAccent} Planetary Systems final exam \textbullet\ closed book\par}
+\vskip3pt
+{\footnotesize Planetary Systems (WBAS002-05) \textbullet\ Kapteyn Astronomical Institute, University of Groningen\par}
+\vskip7pt
+\noindent{\color{ipsAccent}\rule{\linewidth}{0.6pt}}
+\vskip10pt
+\endgroup
+
+The final exam is closed book: a calculator and a pen are all that is allowed.
+The twelve relations on this list are the ones you are expected to know from memory and apply without prompting.
+Every other formula a question needs, for example the vis-viva equation, the Roche limit, or the Jeans escape flux, is printed in the question itself.
+Each entry below states where the relation is introduced in the \href{https://ips.formingworlds.space}{lecture notes}; the same list with the same links appears on the \href{https://ips.formingworlds.space/mock_exams.html}{mock exams page}.
+
+\relation{Newton's law of gravitation}
+\begin{equation*}
+F = \frac{G M m}{r^2}, \qquad U = -\frac{G M m}{r}
+\end{equation*}
+The attractive force between masses $M$ and $m$ at separation $r$, and the corresponding gravitational potential energy.
+This pair underlies all orbital dynamics and the energy release of accretion and differentiation.
+The force law drives the orbit derivations of \lecref{01_introduction/introduction.html}{Lecture 1}; the energy form is introduced in \lecref{02_formation_orbits/formation_orbits.html}{Lecture 2} and drives the heating budgets of \lecref{04_differentiation_magnetospheres/differentiation_magnetospheres.html}{Lecture 4}.
+
+\relation{Circular orbit speed}
+\begin{equation*}
+v_{\mathrm{c}} = \sqrt{\frac{G M}{r}}
+\end{equation*}
+The speed of a body on a circular orbit of radius $r$ around a central mass $M$, from the balance of gravitational and centripetal acceleration.
+Derived in \lecref{01_introduction/introduction.html}{Lecture 1}; generalised by the vis-viva equation of \lecref{02_formation_orbits/formation_orbits.html}{Lecture 2}.
+
+\relation{Escape velocity}
+\begin{equation*}
+v_{\mathrm{esc}} = \sqrt{\frac{2 G M}{r}}
+\end{equation*}
+The minimum speed needed to escape to infinity from distance $r$, from setting kinetic plus potential energy to zero.
+It controls impact energetics and which gases a planet can retain.
+Introduced in \lecref{02_formation_orbits/formation_orbits.html}{Lecture 2}; central to atmospheric escape in \lecref{05_atmospheres_1/atmospheres_1.html}{Lecture 5}.
+
+\relation{Kepler's third law}
+\begin{equation*}
+P^2 = \frac{4 \pi^2 a^3}{G M}
+\end{equation*}
+The orbital period $P$ of an orbit with semi-major axis $a$ around a central mass $M$.
+It is the primary tool for weighing central bodies and for converting exoplanet periods into orbital distances.
+Derived in Newtonian form in \lecref{01_introduction/introduction.html}{Lecture 1}; restated in \lecref{02_formation_orbits/formation_orbits.html}{Lecture 2} and applied to exoplanets in \lecref{13_exoplanets/exoplanets.html}{Lecture 13}.
+
+\relation{Mean density}
+\begin{equation*}
+M = \frac{4}{3} \pi R^3 \bar{\rho}
+\end{equation*}
+The relation between mass, radius, and bulk density $\bar{\rho}$.
+Bulk density is the first-order constraint on whether a body is made of rock, ice, or gas.
+Used throughout \lecref{08_interiors/interiors.html}{Lecture 8} and \lecref{13_exoplanets/exoplanets.html}{Lecture 13}.
+
+\relation{Hydrostatic equilibrium}
+\begin{equation*}
+\dv{P}{r} = -\rho g
+\end{equation*}
+The pressure gradient that balances gravity in any static fluid layer.
+It structures both atmospheres and interiors and is the starting point of the scale-height and central-pressure estimates.
+Introduced in \lecref{05_atmospheres_1/atmospheres_1.html}{Lecture 5} and \lecref{08_interiors/interiors.html}{Lecture 8}.
+
+\relation{Ideal gas law}
+\begin{equation*}
+P = n \kB T = \frac{\rho \kB T}{\mu\, m_u}
+\end{equation*}
+The equation of state of a dilute gas, with number density $n$, mean molecular weight $\mu$, and atomic mass unit $m_u$.
+It closes the hydrostatic equation for atmospheres.
+Introduced in \lecref{05_atmospheres_1/atmospheres_1.html}{Lecture 5}.
+
+\relation{Isothermal scale height}
+\begin{equation*}
+H = \frac{\kB T}{\mu\, m_u\, g}
+\end{equation*}
+The e-folding height of pressure in an isothermal atmosphere, from hydrostatic equilibrium plus the ideal gas law.
+Hotter or lighter atmospheres are more extended; stronger gravity compresses them.
+Derived in \lecref{05_atmospheres_1/atmospheres_1.html}{Lecture 5}.
+
+\relation{Stefan--Boltzmann law}
+\begin{equation*}
+F = \sigma T^4
+\end{equation*}
+The radiative flux from an ideal (blackbody) surface at temperature $T$, with $\sigma$ the Stefan--Boltzmann constant.
+\lecref{03_heat_energy/heat_energy.html}{Lecture 3} states the general form $F = \epsilon \sigma T^4$, with emissivity $\epsilon \leq 1$ close to 1 for most planetary surfaces.
+It governs how planets shed heat to space.
+
+\relation{Equilibrium temperature (energy balance)}
+\begin{equation*}
+\frac{S}{4} (1 - A) = \sigma T_{\mathrm{eq}}^4
+\qquad \Longrightarrow \qquad
+T_{\mathrm{eq}} = \left[ \frac{S (1 - A)}{4 \sigma} \right]^{1/4}
+\end{equation*}
+Absorbed stellar flux (stellar constant $S$, Bond albedo $A$, the factor 4 from the ratio of a sphere's surface to its cross-section) equals emitted thermal flux.
+This balance sets the baseline temperature of every planet before greenhouse warming.
+Derived in \lecref{05_atmospheres_1/atmospheres_1.html}{Lecture 5}; extended to the greenhouse model in \lecref{09_earth_venus/earth_venus.html}{Lecture 9} and applied to exoplanets in \lecref{13_exoplanets/exoplanets.html}{Lecture 13}.
+
+\relation{Thermal energy per particle}
+\begin{equation*}
+E_{\mathrm{th}} = \frac{3}{2} \kB T
+\end{equation*}
+The mean kinetic energy of a gas particle at temperature $T$.
+Comparing thermal and gravitational energy per molecule decides between retention and escape of an atmosphere.
+The escape physics of \lecref{05_atmospheres_1/atmospheres_1.html}{Lecture 5} and \lecref{10_mercury_mars/mercury_mars.html}{Lecture 10} builds on this comparison; the Jeans parameter there uses $\kB T$ as the thermal scale.
+
+\relation{Radioactive decay}
+\begin{equation*}
+N(t) = N_0\, e^{-\lambda t}, \qquad t_{1/2} = \frac{\ln 2}{\lambda}
+\end{equation*}
+The exponential decay of a parent isotope with decay constant $\lambda$ and half-life $t_{1/2}$.
+It powers radiogenic heating of interiors and underlies all radiometric dating.
+The half-lives behind radiogenic heating appear in \lecref{03_heat_energy/heat_energy.html}{Lecture 3}; the decay law itself is introduced with radiometric dating in \lecref{12_small_bodies/small_bodies.html}{Lecture 12}.
+
+\end{document}

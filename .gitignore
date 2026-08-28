@@ -30,6 +30,15 @@ worksheets/**/*.xdv
 worksheets/**/*.fls
 worksheets/**/*.fdb_latexmk
 
+# Generated at exam-material build time (see exams/Makefile). The published
+# PDFs are committed at book/_static/exams/, the website-facing location.
+exams/**/*.pdf
+exams/**/*.aux
+exams/**/*.out
+exams/**/*.xdv
+exams/**/*.fls
+exams/**/*.fdb_latexmk
+
 # Generated at mini-lecture build time (see minilectures/Makefile). The decks
 # are committed at book/_static/minilectures/, the website-facing location.
 minilectures/**/*.pdf
