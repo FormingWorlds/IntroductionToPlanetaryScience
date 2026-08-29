@@ -14,6 +14,10 @@ parts:
     chapters:
       - file: lecture_slides
       - file: minilectures
+  - caption: Recordings
+    numbered: false
+    chapters:
+      - file: recordings
   - caption: Sheets
     numbered: false
     chapters:
