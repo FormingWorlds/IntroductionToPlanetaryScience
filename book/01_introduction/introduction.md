@@ -8,7 +8,7 @@
 ```{seealso}
 **Slides:** [Download Lecture 1 (PDF)](../_static/slides/lecture01.pdf)
 
-**Recording:** [Watch Lecture 1 on YouTube](https://youtu.be/KYN-DHZJu8U) (see {ref}`recordings`)
+**Recording:** [Watch Lecture 1 on YouTube](https://www.youtube.com/watch?v=KYN-DHZJu8U&list=PLF4Ysvttm-1s) (see {ref}`recordings`)
 ```
 
 ## A pale blue dot

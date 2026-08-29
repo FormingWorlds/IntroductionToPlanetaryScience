@@ -9,6 +9,8 @@ For full prose and bibliography, use the lecture pages.
 For the classroom slides, use the {ref}`lecture_slides` page.
 The recordings are published on YouTube as the course runs, so this page grows through the term.
 
+All lectures are collected in the [course playlist on YouTube](https://www.youtube.com/playlist?list=PLF4Ysvttm-1s).
+
 ## Lecture 1: Introduction & History of Planetary Science
 
 <div style="position: relative; width: 100%; max-width: 800px; aspect-ratio: 16 / 9; margin: 1em 0;">
