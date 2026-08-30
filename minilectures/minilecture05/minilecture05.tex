@@ -1,0 +1,183 @@
+% minilecture05.tex: Tutorial 5 mini-lecture: Atmospheres & Divergence
+% Planetary Systems, Kapteyn Institute, University of Groningen
+% A 5-10 minute recap, presented by the TAs at the start of Tutorial 5,
+% of the Lecture 9-10 concepts that Worksheet 5 trains.
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme and macros (shared with the lecture decks) ────────
+\usepackage{../../slides/common/beamerthemeIPS}
+\input{../../slides/common/macros}
+\graphicspath{{figures/}{../../slides/lecture09/figures/}{../../slides/lecture10/figures/}{../../slides/common/}}
+
+% ── Metadata ────────────────────────────────────────────────
+\title[T5 mini-lecture: Atmospheres \& Divergence]{Tutorial 5 Mini-Lecture:\\Atmospheres \& Divergence}
+\subtitle{The concepts behind Worksheet 5 \textbullet\ Lectures 9--10}
+\author{}
+\institute{Kapteyn Astronomical Institute\\University of Groningen}
+\date{2026}
+\titlebgcredit{Three Venus-bound missions over a Magellan radar mosaic. Credit: Widemann et al.\ (2023), SSRv 219, 56}
+\titlebgopacity{0.60}
+
+% ════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Roadmap ─────────────────────────────────────────────────
+\begin{frame}{What Worksheet 5 trains}
+  Five problems, all built on Lectures 9--10. The physics you need, per problem:
+  \vskip4pt\relax
+  \begin{enumerate}
+    \item \textbf{Equilibrium temperature and the greenhouse}: radiative balance, the one-layer greenhouse factor, the gap to the true surface temperature.
+    \item \textbf{The runaway greenhouse}: the vapour-pressure photosphere, the Simpson-Nakajima ceiling on outgoing infrared, which planet crosses it.
+    \item \textbf{Deuterium and Venus's lost water}: Rayleigh distillation, the D/H clock, the size of the vanished ocean.
+    \item \textbf{Thermal escape from Mars}: the escape speed, the Jeans parameter, why light molecules leave first.
+    \item \textbf{Mercury and Mars, two ways to end}: the spin-orbit resonance, thermal contraction, Phobos below the synchronous orbit.
+  \end{enumerate}
+  \vskip2pt\relax
+  \keyresult{Every problem has the shape and level of one exam question. All parts are analytical; no computer is needed.}
+\end{frame}
+
+% ── P1 ──────────────────────────────────────────────────────
+\begin{frame}{Equilibrium temperature and the greenhouse}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Radiative balance from Lecture 9:
+    \[
+      \boxed{T_\mathrm{eq} = \left[\frac{S(1-A)}{4\sigma}\right]^{1/4}}
+      \qquad T_s = 2^{1/4}\,T_\mathrm{eq}
+    \]
+    \begin{itemize}
+      \item The factor $1/4$ is geometry: a disc of area $\pi R^2$ intercepts, a sphere of area $4\pi R^2$ radiates.
+      \item One opaque layer warms the surface by exactly $2^{1/4} \approx 1.19$; the true greenhouse is larger.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Same law, two planets}
+      Venus intercepts $1.91$ times Earth's flux yet reflects most of it. Run both planets through the one formula, then measure each equilibrium temperature against the observed surface. That gap is the greenhouse.
+    \end{block}
+  \end{columns}
+  \keyresult{One radiative balance sets the baseline temperature; the distance from it to the surface is the greenhouse you must explain.}
+\end{frame}
+
+% ── P2 ──────────────────────────────────────────────────────
+\begin{frame}{The runaway greenhouse}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    The infrared ceiling of Lecture 9:
+    \[
+      \boxed{F_\mathrm{OLR}^\mathrm{max} = \sigma T_\mathrm{phot}^4}
+      \qquad p_\mathrm{phot} = \frac{g}{\kappa}
+    \]
+    \begin{itemize}
+      \item Clausius-Clapeyron fixes $T_\mathrm{phot}$ at the vapour-pressure photosphere, independent of the surface below.
+      \item A hotter surface cannot raise the outgoing flux: it caps at the Simpson-Nakajima limit.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Cross the ceiling, run away}
+      If the absorbed sunlight $F_\mathrm{abs} = S(1-A)/4$ exceeds this cap, no steady surface temperature can balance it and the ocean evaporates. Test $F_\mathrm{abs}$ against the cap for both planets.
+    \end{block}
+  \end{columns}
+  \vspace{-2pt}
+  \keyresult{A saturated steam atmosphere has a fixed ceiling on its outgoing infrared; exceed it with sunlight, and no ocean survives.}
+\end{frame}
+
+% ── P3 ──────────────────────────────────────────────────────
+\begin{frame}{Deuterium and Venus's lost water}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Rayleigh distillation of Lecture 9:
+    \[
+      \boxed{\frac{R}{R_0} = f^{\,\alpha-1}}
+      \qquad f = \left(\frac{R}{R_0}\right)^{1/(\alpha-1)}
+    \]
+    \begin{itemize}
+      \item $f$ is the surviving hydrogen fraction, $R/R_0 = 150$ the measured deuterium enrichment, $\alpha < 1$ the fractionation factor.
+      \item Invert for $f$, then divide today's water by $f$ to recover the initial inventory.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{How much can it prove?}
+      Diffusion-limited escape ($\alpha = 0.5$) fractionates most efficiently and gives the smallest initial water, about $0.17$ Earth ocean. A weaker model needs far more water for the same enrichment. The isotope ratio sets a lower bound only.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{The deuterium enrichment is a lower bound on Venus's lost water, of order a tenth of an Earth ocean, not proof of a full ocean.}
+\end{frame}
+
+% ── P4 ──────────────────────────────────────────────────────
+\begin{frame}{Thermal escape from Mars}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    The escape parameter of Lecture 10:
+    \[
+      \boxed{\lambda = \frac{GMm}{k_B T_\mathrm{exo}\,r_\mathrm{exo}}}
+      \qquad v_\mathrm{esc} = \sqrt{\frac{2GM}{r_\mathrm{exo}}}
+    \]
+    \begin{itemize}
+      \item $\lambda$ is the ratio of gravitational to thermal energy at the exobase; it scales linearly with molecular mass.
+      \item The Jeans flux carries $(1+\lambda)\,e^{-\lambda}$ and a thermal-speed factor $\propto m^{-1/2}$; the exponential decides the outcome.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Light first, heavy never}
+      Atomic hydrogen ($\lambda \approx 5.3$) escapes about $150$ times faster than $\mathrm{H_2}$ ($\lambda \approx 10.6$). Carbon dioxide ($\lambda \approx 233$) is suppressed by $e^{-233}$: thermal escape cannot remove it at all.
+    \end{block}
+  \end{columns}
+  \vskip2pt\relax
+  \keyresult{One exponential in the mass sorts which gases a planet keeps; Mars loses its hydrogen and holds its $\mathrm{CO_2}$.}
+\end{frame}
+
+% ── P5 ──────────────────────────────────────────────────────
+\begin{frame}{Mercury and Mars: two ways to end}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Three independent clocks:
+    \[
+      \boxed{\frac{1}{T_\mathrm{solar}} = \frac{1}{P_\mathrm{rot}} - \frac{1}{P_\mathrm{orb}}}
+    \]
+    \vspace{-10pt}
+    \[
+      \frac{\Delta A}{A} = 2\,\frac{\Delta R}{R}
+      \qquad
+      T = 2\pi\sqrt{\frac{a^3}{GM}}
+    \]
+    \vspace{-6pt}
+    \begin{itemize}
+      \item Mercury's $3\!:\!2$ resonance makes a solar day last two Mercury years.
+      \item Cooling shrank Mercury by $\Delta R \approx 7$ km, a $0.57\%$ area loss taken up as lobate scarps.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Above or below synchronous?}
+      Phobos orbits in $7.7$ h, faster than Mars turns ($24.62$ h), so it is below the areostationary radius. The tidal bulge it raises lags and drags it inward, so Phobos spirals down.
+    \end{block}
+  \end{columns}
+  \vspace{-2pt}
+  \keyresult{Size sets the cooling rate, cooling sets the dynamo lifetime, and gravity sets atmospheric retention; the same three controls produced Mercury and Mars.}
+\end{frame}
+
+% ── Closer ──────────────────────────────────────────────────
+\begin{frame}{Working the worksheet}
+  \begin{itemize}
+    \item \textbf{Show your algebra.} The exam asks for the steps, not only the number.
+    \item Carry \textbf{4 significant figures} through intermediate steps; round at the end.
+    \item Use the \textbf{checkpoints} ("show that \ldots") to verify your work and to keep moving if a step resists.
+    \item Qualitative parts want \textbf{2 to 3 sentences} of physics, not an essay.
+    \item Most parts close by asking what the number means: that interpretation is graded, not only the arithmetic.
+  \end{itemize}
+  \vskip8pt\relax
+  \keyresult{Worksheet and full solutions: \texttt{ips.formingworlds.space/worksheets.html}. We discuss questions, not presentations of the solutions.}
+\end{frame}
+
+\end{document}

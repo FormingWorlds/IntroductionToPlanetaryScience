@@ -1,0 +1,441 @@
+% Content of Worksheet 05, shared by the problem sheet and the solution sheet.
+% Solutions are wrapped in the `solution` environment and appear only when the
+% driver defines \ipsshowsolutions.
+
+\ipsmaketitle
+
+This worksheet is ungraded practice, with the same shape and level as the final exam.
+Plan up to 2 hours for a serious pass.
+Work each problem through on paper before you open the solutions, and show your algebra:
+the exam asks for the steps, not only the number.
+Some parts state an intermediate result (``show that\,\ldots''); use it to check your work, and to continue if a step resists.
+Carry at least four significant figures through the intermediate steps (the worked solutions print five) and round only at the end.
+All parts are analytical; no computer is needed.
+
+\begin{given}[Constants and data]
+$\sigma = 5.670 \times 10^{-8}\ \mathrm{W\,m^{-2}\,K^{-4}}$,\quad
+$k_B = 1.381 \times 10^{-23}\ \mathrm{J\,K^{-1}}$,\quad
+$G = 6.674 \times 10^{-11}\ \mathrm{m^3\,kg^{-1}\,s^{-2}}$,\quad
+$u = 1.661 \times 10^{-27}$ kg,\quad
+$S_0 = 1361\ \mathrm{W\,m^{-2}}$ (at $1$ AU)
+
+\vskip4pt
+Water and grey atmosphere: latent heat $L = 2.5 \times 10^{6}\ \mathrm{J\,kg^{-1}}$, vapour gas constant $R_v = 461\ \mathrm{J\,kg^{-1}\,K^{-1}}$, reference $(p_0, T_0) = (611\ \mathrm{Pa}, 273\ \mathrm{K})$, grey opacity $\kappa = 5 \times 10^{-2}\ \mathrm{m^2\,kg^{-1}}$, $g = 10\ \mathrm{m\,s^{-2}}$
+
+\vskip4pt
+Earth: $A = 0.30$, $T_\mathrm{surf} = 288$ K, $a = 1.00$ AU.\quad
+Venus: $A = 0.77$, $a = 0.723$ AU, $S = 1.91\,S_0$, $T_\mathrm{surf} = 737$ K
+
+\vskip4pt
+Mars: $M = 6.4 \times 10^{23}$ kg, exobase radius $r_\mathrm{exo} = 3.6 \times 10^{6}$ m, exobase temperature $T_\mathrm{exo} = 270$ K, rotation period $24.62$ h
+
+\vskip4pt
+Mercury: $R = 2440$ km, spin period $P_\mathrm{rot} = 58.65$ d, orbital period $P_\mathrm{orb} = 87.97$ d, radius change $\Delta R \approx 7$ km.\quad
+Phobos: orbital radius $a = 9376$ km
+
+\vskip4pt
+Relative molecular masses (in $u$): H $= 1$, H$_2 = 2$, CO$_2 = 44$
+
+\vskip4pt
+{\footnotesize Atmospheric and escape data as in the Lecture 9 and 10 notes. A global equivalent layer (GEL) is the depth of a uniform global water layer holding a given mass; take Earth's ocean as $\approx 2700$ m GEL and Venus's current atmospheric water as $\approx 0.02$ m GEL.}
+\end{given}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{Equilibrium temperature and the greenhouse effect}
+
+The equilibrium temperature is the first number to compute for any planet:
+it is what the surface would reach with no atmosphere, set by the balance of absorbed sunlight against emitted infrared.
+The gap between it and the true surface temperature measures the greenhouse effect.
+
+\parti The energy balance for a rapidly rotating planet of Bond albedo $A$ at insolation $S$ is
+$\pi R^2 S(1-A) = 4\pi R^2 \sigma T_\mathrm{eq}^4$,
+so $T_\mathrm{eq} = \left[S(1-A)/4\sigma\right]^{1/4}$.
+Compute Earth's equilibrium temperature (show that $T_\mathrm{eq} \approx 255$ K).
+
+\begin{solution}
+$$
+T_\mathrm{eq} = \left[\frac{S_0(1-A)}{4\sigma}\right]^{1/4}
+= \left[\frac{1361 \times 0.70}{4 \times 5.670\times10^{-8}}\right]^{1/4}
+= \left[\frac{952.70}{2.2680\times10^{-7}}\right]^{1/4},
+$$
+which gives
+$$
+T_\mathrm{eq} = \left(4.2006\times10^{9}\right)^{1/4} = 254.58\ \mathrm{K} \approx 255\ \mathrm{K}.
+$$
+The factor of $4$ is the ratio of the sphere's surface area to its intercepting disc:
+the planet catches sunlight on a disc of area $\pi R^2$ and radiates from the whole sphere of area $4\pi R^2$.
+\end{solution}
+
+\parti A single infrared-opaque layer in radiative equilibrium re-radiates downward as well as upward,
+so the surface energy balance becomes $\sigma T_s^4 = 2\sigma T_\mathrm{eq}^4$.
+Show that $T_s = 2^{1/4}\,T_\mathrm{eq}$, evaluate it for Earth, and compare with the observed surface temperature of $288$ K.
+
+\begin{solution}
+The opaque layer absorbs the surface infrared and re-emits $\sigma T_a^4$ both up and down.
+Radiative equilibrium at the top of the atmosphere requires $T_a = T_\mathrm{eq}$,
+and the surface then receives the absorbed sunlight plus the downward emission, $2\sigma T_\mathrm{eq}^4$, giving
+$$
+T_s = 2^{1/4}\,T_\mathrm{eq} = 1.18921 \times 254.58 = 302.75\ \mathrm{K}.
+$$
+The one-layer model over-predicts the observed $288$ K by about $15$ K.
+A single fully opaque layer is too strong a greenhouse for Earth, whose atmosphere is only partly opaque in the infrared.
+The model captures the mechanism, downward re-radiation warming the surface above $T_\mathrm{eq}$, but not the magnitude.
+\end{solution}
+
+\parti Compute Venus's equilibrium temperature from its own albedo and insolation (show that $T_\mathrm{eq} \approx 227$ K),
+compare it with Earth's, and state the greenhouse warming $\Delta T = T_\mathrm{surf} - T_\mathrm{eq}$ for each planet.
+
+\begin{solution}
+$$
+T_\mathrm{eq}^\mathrm{Venus} = \left[\frac{1.91 \times 1361 \times (1 - 0.77)}{4 \times 5.670\times10^{-8}}\right]^{1/4}
+= \left[\frac{2599.5 \times 0.23}{2.2680\times10^{-7}}\right]^{1/4},
+$$
+so
+$$
+T_\mathrm{eq}^\mathrm{Venus} = \left(2.6362\times10^{9}\right)^{1/4} = 226.59\ \mathrm{K} \approx 227\ \mathrm{K}.
+$$
+Venus's equilibrium temperature is lower than Earth's ($227$ against $255$ K), even though Venus is closer to the Sun,
+because its bright clouds reflect $77\%$ of the incident sunlight.
+The greenhouse warmings are
+$$
+\Delta T_\mathrm{Earth} = 288 - 254.58 = 33.42\ \mathrm{K},
+\qquad
+\Delta T_\mathrm{Venus} = 737 - 226.59 = 510.41\ \mathrm{K}.
+$$
+The two planets have similar equilibrium temperatures but greenhouse effects that differ by a factor of fifteen.
+\end{solution}
+
+\parti A fellow student writes: ``Venus is hotter than Earth mainly because it is closer to the Sun.''
+Judge this claim, using your numbers from parts (a) and (c).
+
+\begin{solution}
+The claim is wrong.
+Distance from the Sun sets the equilibrium temperature, and by that measure Venus is actually cooler than Earth:
+its high albedo more than cancels its larger insolation, giving $T_\mathrm{eq} = 227$ K against Earth's $255$ K.
+The $737$ K surface is produced almost entirely by the greenhouse effect of a massive $\mathrm{CO_2}$ atmosphere,
+$\Delta T_\mathrm{Venus} = 510$ K against Earth's $33$ K.
+Proximity changes the equilibrium temperature between the two planets by less than $30$ K;
+the greenhouse effect changes the surface temperature by nearly $500$ K.
+Venus is hot because of its atmosphere, not its orbit.
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{The runaway greenhouse}
+
+A planet stays habitable only while its atmosphere can radiate away the sunlight it absorbs.
+A moist atmosphere has a ceiling on how much infrared it can emit, and crossing it triggers a runaway greenhouse.
+This problem locates that ceiling and applies it to early Venus.
+
+\parti Consider a young terrestrial planet with liquid water and Earth-like water clouds, so $A = 0.30$.
+Compute the absorbed solar flux per unit surface area, $F_\mathrm{abs} = S(1-A)/4$,
+for a planet at Earth's orbit and for one at Venus's orbit
+(show that $F_\mathrm{abs} \approx 238$ and $455\ \mathrm{W\,m^{-2}}$).
+
+\begin{solution}
+$$
+F_\mathrm{abs}^\mathrm{Earth} = \frac{1361 \times 0.70}{4} = 238.18\ \mathrm{W\,m^{-2}},
+\qquad
+F_\mathrm{abs}^\mathrm{Venus} = \frac{1.91 \times 1361 \times 0.70}{4} = 454.91\ \mathrm{W\,m^{-2}}.
+$$
+At a common albedo the only difference is the insolation: Venus's orbit delivers $1.91$ times Earth's, so it absorbs $1.91$ times as much.
+This is the flux the atmosphere must radiate back to space to hold a steady temperature.
+\end{solution}
+
+\parti In a steam atmosphere the infrared photosphere forms where the overlying water-vapour column reaches optical depth of order unity,
+at pressure $p_\mathrm{phot} = g/\kappa$.
+Compute $p_\mathrm{phot}$, then use the integrated Clausius-Clapeyron relation
+$$
+\ln\!\frac{p}{p_0} = -\frac{L}{R_v}\left(\frac{1}{T} - \frac{1}{T_0}\right)
+$$
+to find the temperature at which saturated water vapour reaches this pressure
+(show that $p_\mathrm{phot} = 200$ Pa and $T_\mathrm{phot} \approx 258$ K).
+
+\begin{solution}
+$$
+p_\mathrm{phot} = \frac{g}{\kappa} = \frac{10}{5\times10^{-2}} = 200\ \mathrm{Pa}.
+$$
+Invert Clausius-Clapeyron for $T$ at $p = 200$ Pa, with $L/R_v = 2.5\times10^{6}/461 = 5423.0$ K:
+$$
+\frac{1}{T_\mathrm{phot}} = \frac{1}{T_0} - \frac{R_v}{L}\ln\!\frac{p_\mathrm{phot}}{p_0}
+= 3.6630\times10^{-3} - \frac{\ln(200/611)}{5423.0},
+$$
+which evaluates to
+$$
+\frac{1}{T_\mathrm{phot}} = 3.6630\times10^{-3} + 2.0593\times10^{-4} = 3.8689\times10^{-3}\ \mathrm{K^{-1}},
+$$
+so $T_\mathrm{phot} = 258.47\ \mathrm{K} \approx 258\ \mathrm{K}$.
+The photosphere temperature is fixed by the vapour-pressure curve alone: it does not depend on the surface temperature below it.
+This is the key to the runaway.
+\end{solution}
+
+\parti The outgoing longwave radiation of the steam atmosphere cannot exceed the blackbody emission of its photosphere,
+$F_\mathrm{OLR}^\mathrm{max} = \sigma T_\mathrm{phot}^4$.
+Compute this limit (show that $F_\mathrm{OLR}^\mathrm{max} \approx 253\ \mathrm{W\,m^{-2}}$),
+compare it with the absorbed fluxes from part (a), and state which planet enters a runaway greenhouse.
+
+\begin{solution}
+$$
+F_\mathrm{OLR}^\mathrm{max} = \sigma T_\mathrm{phot}^4
+= 5.670\times10^{-8} \times (258.47)^4
+= 5.670\times10^{-8} \times 4.4631\times10^{9} = 253.06\ \mathrm{W\,m^{-2}}.
+$$
+The Earth-orbit planet absorbs $238\ \mathrm{W\,m^{-2}}$, below the ceiling, so it settles into a steady moist climate.
+The Venus-orbit planet absorbs $455\ \mathrm{W\,m^{-2}}$, above the ceiling:
+no surface temperature lets its atmosphere radiate away the absorbed sunlight,
+so the oceans evaporate entirely and the surface heats without a stable balance until all the water is in the atmosphere.
+This is the runaway greenhouse.
+The simple grey estimate places the limit at $253\ \mathrm{W\,m^{-2}}$;
+full radiative-convective models, and the Lecture 9 notes, give a somewhat higher value near $280\ \mathrm{W\,m^{-2}}$,
+but the conclusion is unchanged.
+\end{solution}
+
+\parti Explain in words why the outgoing infrared flux of a steam atmosphere saturates at an upper limit,
+and why this defines the inner edge of the habitable zone.
+
+\begin{solution}
+As the surface warms, more water evaporates and the atmosphere grows more opaque in the infrared,
+so the emitting photosphere moves to higher, colder levels.
+Once the atmosphere is saturated with water vapour, the photosphere pressure is fixed at $g/\kappa$
+and the photosphere temperature is fixed by the vapour-pressure curve, independent of how hot the surface below becomes.
+The emitted flux $\sigma T_\mathrm{phot}^4$ therefore stops rising: it is capped at the Simpson-Nakajima limit.
+The inner edge of the habitable zone is the orbit where the absorbed solar flux equals this cap.
+Inside it, absorbed sunlight always exceeds the maximum the atmosphere can radiate,
+so liquid water cannot persist and any ocean runs away.
+\end{solution}
+
+\parti Venus's present albedo is $A = 0.77$, high enough that at its actual albedo it absorbs less than the limit you found in part (c).
+Explain why this does not contradict the conclusion that Venus underwent a runaway greenhouse.
+
+\begin{solution}
+Two points resolve the apparent tension.
+First, the runaway happened on a young Venus that still had liquid water and water clouds, with an albedo near Earth's $0.30$, not the present $0.77$.
+At that albedo Venus absorbed $455\ \mathrm{W\,m^{-2}}$, well above the ceiling, so the runaway was unavoidable.
+Second, the present high albedo is a consequence of the runaway, not a cause of cooling:
+the bright cloud deck is sulphuric acid, formed only after the surface water vaporised and the atmosphere transformed.
+By then the water had been photodissociated and its hydrogen lost to space, so a high albedo today cannot bring the oceans back.
+The albedo that decides whether a runaway starts is the one the planet has while it still holds water clouds. That albedo doomed Venus.
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{Deuterium and Venus's lost water}
+
+Venus's atmosphere is enriched in deuterium relative to ordinary hydrogen by about a factor of $150$ compared with Earth's oceans.
+This fingerprint of preferential hydrogen escape lets us estimate how much water Venus began with.
+The isotope ratio in the remaining water follows the Rayleigh distillation law $R/R_0 = f^{\,\alpha - 1}$,
+where $f$ is the fraction of the original hydrogen inventory that remains, $R/R_0$ is the deuterium enrichment,
+and $\alpha$ is the fractionation factor (the ratio of the deuterium to the hydrogen escape efficiency).
+Diffusion-limited escape gives $\alpha = 0.5$.
+Take the measured enrichment $R/R_0 = 150$.
+
+\parti Solve the Rayleigh law for the fraction of the original water that remains (show that $f \approx 4.44 \times 10^{-5}$).
+
+\begin{solution}
+With $\alpha = 0.5$ the exponent is $\alpha - 1 = -0.5$, so
+$$
+f = (R/R_0)^{1/(\alpha - 1)} = 150^{-2} = 4.4444\times10^{-5}.
+$$
+Only about $4\times10^{-3}$ percent of Venus's original hydrogen is left:
+an enrichment of a factor of $150$ requires losing almost all of it.
+\end{solution}
+
+\parti Convert to an initial water inventory in global-equivalent-layer depth (show that the initial water is $\approx 450$ m GEL),
+and compare it with Earth's ocean.
+
+\begin{solution}
+The current inventory is the surviving fraction $f$ of the original, so
+$$
+d_\mathrm{init} = \frac{d_\mathrm{now}}{f} = \frac{0.02}{4.4444\times10^{-5}} = 450.00\ \mathrm{m\ GEL}.
+$$
+This is about $450/2700 = 0.17$ of an Earth ocean: on this estimate early Venus held roughly a sixth of Earth's surface water.
+Because the escape may have been episodic, and some of the present water is juvenile or delivered by comets,
+this is best read as a lower bound of order $0.1$ Earth ocean.
+\end{solution}
+
+\parti Explain physically why the water left behind is enriched in deuterium,
+and what the enrichment would approach if essentially all the hydrogen escaped.
+
+\begin{solution}
+Deuterium is twice the mass of ordinary hydrogen, so it escapes less efficiently.
+At each stage the escaping flux is depleted in deuterium relative to what stays behind,
+and the residual reservoir grows steadily richer in deuterium.
+This is isotopic distillation, the same principle as boiling off a mixture and finding the heavier component concentrated in what remains.
+As $f \to 0$ the Rayleigh law $R/R_0 = f^{\,\alpha - 1}$ diverges, because with $\alpha < 1$ the exponent is negative,
+so in the limit of near-total hydrogen loss the enrichment grows without bound.
+A large but finite enrichment therefore signals large, but not total, water loss.
+\end{solution}
+
+\parti A fellow student writes: ``The factor-of-$150$ enrichment proves Venus once had a full ocean like Earth's.''
+Judge this claim, using the sensitivity of the estimate to the escape model.
+
+\begin{solution}
+The claim overstates what the measurement proves.
+The initial-water estimate depends strongly on the fractionation factor $\alpha$, which depends on the escape mechanism.
+Diffusion-limited escape ($\alpha = 0.5$) is the most efficient fractionation and gives the smallest initial inventory,
+about $0.17$ Earth ocean: a lower bound, and already less than a full ocean.
+A less efficient model, such as bare Jeans escape with $\alpha \approx 0.71$, fractionates more weakly,
+so reaching the same enrichment demands losing far more water: $f$ falls to about $3\times10^{-8}$
+and the implied initial inventory rises to hundreds of Earth oceans, which is physically implausible.
+The enrichment therefore constrains only a lower bound on Venus's initial water, of order a tenth of an Earth ocean,
+and cannot by itself establish a full ocean; the upper end is set by the escape physics, not by the isotope ratio.
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{Thermal escape from Mars}
+
+Whether a planet keeps its atmosphere is decided at the exobase, the level where a molecule makes its last collision and the fastest ones escape.
+The Jeans parameter compares gravity's grip on a molecule to its thermal energy, and it sorts which gases a planet can hold.
+
+\parti Compute the escape speed at Mars's exobase (show that $v_\mathrm{esc} \approx 4.9\ \mathrm{km\,s^{-1}}$).
+
+\begin{solution}
+$$
+v_\mathrm{esc} = \sqrt{\frac{2GM}{r_\mathrm{exo}}}
+= \sqrt{\frac{2 \times 6.674\times10^{-11} \times 6.4\times10^{23}}{3.6\times10^{6}}}
+= \sqrt{\frac{8.5427\times10^{13}}{3.6\times10^{6}}},
+$$
+so
+$$
+v_\mathrm{esc} = \sqrt{2.3730\times10^{7}} = 4871.3\ \mathrm{m\,s^{-1}} \approx 4.9\ \mathrm{km\,s^{-1}}.
+$$
+\end{solution}
+
+\parti The Jeans escape parameter for a molecule of mass $m$ is $\lambda = GMm/(k_B T_\mathrm{exo}\,r_\mathrm{exo})$,
+the ratio of gravitational to thermal energy at the exobase.
+Compute $\lambda$ for atomic hydrogen, molecular hydrogen, and carbon dioxide
+(show that $\lambda_\mathrm{H} \approx 5.29$, $\lambda_{\mathrm{H_2}} \approx 10.6$, and $\lambda_{\mathrm{CO_2}} \approx 233$).
+
+\begin{solution}
+Compute the mass-independent group first:
+$$
+\frac{GM}{k_B T_\mathrm{exo}\,r_\mathrm{exo}}
+= \frac{6.674\times10^{-11} \times 6.4\times10^{23}}{1.381\times10^{-23} \times 270 \times 3.6\times10^{6}}
+= \frac{4.2714\times10^{13}}{1.3423\times10^{-14}} = 3.1820\times10^{27}\ \mathrm{kg^{-1}}.
+$$
+Multiplying by each molecular mass $m = (\text{relative mass}) \times u$:
+$$
+\lambda_\mathrm{H} = 3.1820\times10^{27} \times 1 \times 1.661\times10^{-27} = 5.2854,
+$$
+$$
+\lambda_{\mathrm{H_2}} = 2 \times 5.2854 = 10.571,
+\qquad
+\lambda_{\mathrm{CO_2}} = 44 \times 5.2854 = 232.56.
+$$
+The parameter scales linearly with molecular mass: heavier molecules are bound far more tightly.
+\end{solution}
+
+\parti The Jeans escape flux carries a factor $(1 + \lambda)\,e^{-\lambda}$ and a thermal-speed factor $\propto m^{-1/2}$.
+Form the ratio of the escape fluxes of atomic and molecular hydrogen
+(show that hydrogen escapes about $150$ times faster as H than as $\mathrm{H_2}$),
+and state whether $\mathrm{CO_2}$ can escape thermally at all.
+
+\begin{solution}
+The exponential factors are $e^{-\lambda_\mathrm{H}} = e^{-5.2854} = 5.0651\times10^{-3}$
+and $e^{-\lambda_{\mathrm{H_2}}} = e^{-10.571} = 2.5656\times10^{-5}$. The flux ratio is
+$$
+\frac{\Phi_\mathrm{H}}{\Phi_{\mathrm{H_2}}}
+= \sqrt{\frac{m_{\mathrm{H_2}}}{m_\mathrm{H}}}\,\frac{(1 + \lambda_\mathrm{H})\,e^{-\lambda_\mathrm{H}}}{(1 + \lambda_{\mathrm{H_2}})\,e^{-\lambda_{\mathrm{H_2}}}}
+= \sqrt{2} \times \frac{6.2854 \times 5.0651\times10^{-3}}{11.571 \times 2.5656\times10^{-5}}
+= 1.4142 \times 107.25 = 151.67.
+$$
+Atomic hydrogen escapes about $150$ times faster than molecular hydrogen,
+both because it is lighter and, mostly, because its smaller Jeans parameter puts far more of the velocity tail above the escape speed.
+For carbon dioxide, $e^{-\lambda_{\mathrm{CO_2}}} = e^{-232.56} \approx 10^{-101}$:
+the thermal escape flux is zero for any practical purpose.
+Mars cannot lose $\mathrm{CO_2}$ by Jeans escape.
+\end{solution}
+
+\parti A fellow student writes: ``If Mars had kept a stronger magnetic field, it would have retained its $\mathrm{CO_2}$ atmosphere.''
+Judge this claim.
+
+\begin{solution}
+The claim confuses two different loss processes.
+Jeans escape, the process just computed, does not depend on the magnetic field at all,
+and in any case it cannot remove $\mathrm{CO_2}$ from Mars: the Jeans parameter of $\mathrm{CO_2}$ is so large that its thermal escape is negligible.
+So $\mathrm{CO_2}$ was never lost thermally, with or without a field.
+The martian atmosphere was thinned mainly by non-thermal processes:
+once Mars lost its dynamo, the solar wind reached the upper atmosphere and stripped ions directly by pickup and sputtering,
+and photochemistry let carbon and oxygen leave as lighter fragments.
+A magnetic field does matter here, by deflecting the solar wind and reducing ion escape,
+so a sustained field would have slowed the atmospheric loss.
+But the mechanism in the claim is wrong: a field acts on the non-thermal, solar-wind-driven loss of the upper atmosphere,
+not on a thermal escape of $\mathrm{CO_2}$ that never happened.
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{Mercury and Mars: two ways to end}
+
+Mercury and Mars sit at the inner and outer edges of the terrestrial planets. They diverged completely.
+This problem collects four independent measurements, each marking one step in that divergence.
+
+\parti Mercury rotates on its axis every $58.65$ days and orbits the Sun every $87.97$ days.
+The length of a solar day, from noon to noon, satisfies $1/T_\mathrm{solar} = 1/P_\mathrm{rot} - 1/P_\mathrm{orb}$.
+Compute $T_\mathrm{solar}$ (show that $T_\mathrm{solar} \approx 176$ d) and express it in Mercury years.
+
+\begin{solution}
+$$
+\frac{1}{T_\mathrm{solar}} = \frac{1}{58.65} - \frac{1}{87.97}
+= 1.70503\times10^{-2} - 1.13675\times10^{-2} = 5.6828\times10^{-3}\ \mathrm{d^{-1}},
+$$
+so $T_\mathrm{solar} = 175.97$ d.
+This is almost exactly two Mercury years ($2 \times 87.97 = 175.94$ d).
+The spin and orbit are locked in a $3\!:\!2$ resonance, three rotations for every two orbits,
+so a solar day on Mercury lasts two of its years: the Sun rises, and the next sunrise comes two orbits later.
+\end{solution}
+
+\parti As Mercury's interior cooled, its radius shrank by $\Delta R \approx 7$ km.
+Estimate the fractional decrease in surface area (show that $\Delta A/A \approx 0.57\%$),
+and connect it to the lobate scarps seen across the surface.
+
+\begin{solution}
+For a sphere $A = 4\pi R^2$, so $\Delta A/A = 2\,\Delta R/R$:
+$$
+\frac{\Delta A}{A} = \frac{2 \times 7}{2440} = 5.7377\times10^{-3} \approx 0.57\%.
+$$
+The surface had to shrink by about half a percent, and a solid crust accommodates that only by breaking.
+The result is a global system of lobate scarps, thrust faults where one block of crust has been pushed up over another.
+Their near-random orientations show the contraction acted in all directions, as a global radius decrease requires,
+and their total shortening measures how much the interior has cooled since the crust formed.
+Mercury has a single, globally contracting lithosphere, in contrast to Earth's segmented plates.
+\end{solution}
+
+\parti Phobos orbits Mars at a radius of $9376$ km.
+Compute its orbital period from Kepler's third law (show that $T \approx 7.7$ h),
+compare it with Mars's rotation period of $24.62$ h, and state what this predicts for the moon's future.
+
+\begin{solution}
+$$
+T = 2\pi\sqrt{\frac{a^3}{GM}}
+= 2\pi\sqrt{\frac{(9.376\times10^{6})^3}{6.674\times10^{-11} \times 6.4\times10^{23}}}
+= 2\pi\sqrt{\frac{8.2424\times10^{20}}{4.2714\times10^{13}}},
+$$
+so
+$$
+T = 2\pi\sqrt{1.9297\times10^{7}} = 2.7601\times10^{4}\ \mathrm{s} = 7.667\ \mathrm{h}.
+$$
+Phobos completes an orbit in $7.7$ hours, far faster than Mars turns beneath it ($24.62$ h).
+It therefore orbits below the areostationary radius, sweeping ahead of the planet's rotation.
+The tidal bulge it raises on Mars lags behind it and pulls it backward, draining its orbital energy,
+so Phobos spirals inward.
+In a few tens of millions of years it will cross the Roche limit and break apart, or strike the surface:
+Phobos is a moon on its way down, the opposite of our own outward-migrating Moon.
+\end{solution}
+
+\parti Mercury still has a magnetic field and a large iron core; Mars lost its field early and has a smaller core fraction.
+In two or three sentences, connect planet size to this divergence,
+using the ideas of cooling rate and atmospheric escape from this worksheet.
+
+\begin{solution}
+A small planet cools fast, because it has a large surface-area-to-volume ratio,
+so Mars, though larger than Mercury, was still small enough that its core convection and dynamo shut down within the first several hundred million years.
+Once the martian field died, the solar wind reached the upper atmosphere and stripped it by the non-thermal processes of Problem 4,
+and the planet cooled into the thin, cold state seen today.
+Mercury is smaller still, but it is dense and iron-rich, so a large fraction of its interior is core;
+that core has stayed partly liquid and convecting, and it still drives a magnetic field.
+Size sets the cooling rate, cooling sets the lifetime of the dynamo, and the dynamo, together with gravity, sets how much atmosphere a planet keeps:
+the same three factors, acting differently, produced Mercury and Mars.
+\end{solution}
