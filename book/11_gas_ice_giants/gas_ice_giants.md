@@ -9,10 +9,6 @@
 **Slides:** [Download Lecture 11 (PDF)](../_static/slides/lecture11.pdf)
 ```
 
-```{note}
-These notes are still work in progress and may change before the lecture is given.
-```
-
 The four giant planets of our solar system together hold more than 99.5% of the planetary mass beyond the Sun.
 They are not, however, four examples of the same kind of object.
 Jupiter and Saturn are dominated by hydrogen and helium and are best thought of as failed stars whose envelopes never collapsed gravitationally.
@@ -347,7 +343,7 @@ Saturn's modest $26.7^\circ$ axial tilt also imposes strong seasonal forcing, an
 
 Saturn's rings are the most spectacular ring system in the solar system and have been a defining feature of telescopic astronomy since Galileo first noticed Saturn's "ears" in 1610 and Christiaan Huygens correctly interpreted them as a flat disk in 1655.
 The main ring system extends from the inner D ring at $\sim$67,000 km from Saturn's centre out to the F ring at $\sim$140,000 km. The B and C rings sit well inside the classical fluid Roche limit derived below ($\sim$126,000 km); the A ring straddles it, with its outer edge held sharp by a 7:6 mean-motion resonance with Janus rather than by tidal physics alone, and the F ring sits just beyond it.
-The seven main rings are labelled with letters in the rough historical order of their discovery (A and B by Galileo and Cassini in the 17th century, C by Bond in 1850, D by Barabashov and Semeykin in 1933, E by Feibelman in 1967, F by Pioneer 11 in 1979, G by Voyager 1 in 1980) but are arranged spatially from inner to outer as D, C, B, A, F, G, and E, with the most prominent being the bright A and B rings separated by the Cassini Division at $\sim$118,000 km ({numref}`fig:cassini_division`).
+The seven main rings are labelled with letters that broadly follow the order of their discovery (A and B by Galileo and Cassini in the 17th century, C by Bond in 1850, D by Guérin in 1969, E by Feibelman in 1967, F by Pioneer 11 in 1979, G by Voyager 1 in 1980), though the lettering is not strictly chronological. They are arranged spatially from inner to outer as D, C, B, A, F, G, and E, with the most prominent being the bright A and B rings separated by the Cassini Division at $\sim$118,000 km ({numref}`fig:cassini_division`).
 
 ```{figure} figures/saturn_cassini_division.avif
 :align: center
