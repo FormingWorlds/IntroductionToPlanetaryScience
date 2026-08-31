@@ -9,10 +9,6 @@
 **Slides:** [Download Lecture 12 (PDF)](../_static/slides/lecture12.pdf)
 ```
 
-```{note}
-These notes are still work in progress and may change before the lecture is given.
-```
-
 The previous lectures have followed the planets one by one: rocky worlds in {ref}`Lecture 9 <lecture09>` and {ref}`Lecture 10 <lecture10>`, gas and ice giants in {ref}`Lecture 11 <lecture11>`.
 This lecture is about everything that did *not* become a planet.
 Small bodies are the leftover pieces of the planet-building process: asteroids and meteorites in the inner solar system, comets and Kuiper Belt objects (KBOs) in the outer solar system, dwarf planets like Ceres and Pluto in between, and the Oort cloud at the gravitational edge of the Sun's domain.
@@ -87,7 +83,7 @@ Achondrites sample their crusts and mantles.
 :width: 480px
 :align: center
 
-Polished and acid-etched surface of an iron meteorite displaying the **Widmanstätten pattern**: an interlocking lattice of kamacite and taenite, two Fe-Ni phases. The pattern can only form if a metallic melt cools at a rate slower than $\sim 100$ K per million years. Such slow cooling is only possible inside the metallic core of a body of asteroid size or larger; the spacing of the lattice constrains the original parent body radius. Image credit: H. Raab, CC BY-SA 3.0 (Wikimedia Commons).
+Polished and acid-etched surface of an iron meteorite displaying the **Widmanstätten pattern**: an interlocking lattice of kamacite and taenite, two Fe-Ni phases. The pattern can only form if the solid metal cools at a rate slower than $\sim 100$ K per million years. Such slow cooling is only possible inside the metallic core of a body of asteroid size or larger; the spacing of the lattice constrains the original parent body radius. Image credit: H. Raab, CC BY-SA 3.0 (Wikimedia Commons).
 ```
 
 The Widmanstätten pattern shown in {numref}`fig:l12-widmanstatten` is one of the cleanest pieces of geophysical reasoning in cosmochemistry.
@@ -381,7 +377,7 @@ Crucially, the NC/CC dichotomy is *temporally robust*: NC and CC meteorites with
 The two reservoirs were separate from very early times, and they did not mix for at least the first $\sim 3$-$4$ Myr of disk history {cite:p}`Kruijer2017,Burkhardt2021`.
 
 That much is observation.
-What it *means* is debated, and at the time of writing in 2026 there are at least three live and competing physical interpretations. {numref}`fig:l12-spitzer-ages` shows the Hf-W chronology that any of these interpretations must reproduce: NC iron parent bodies cluster at core-formation ages of $1.0$ to $2.6$ Myr after CAI formation, while CC parent bodies cluster near $3.3$ Myr.
+What it *means* is debated: there are at least three live and competing physical interpretations. {numref}`fig:l12-spitzer-ages` shows the Hf-W chronology that any of these interpretations must reproduce: NC iron parent bodies cluster at core-formation ages of $1.0$ to $2.6$ Myr after CAI formation, while CC parent bodies cluster near $3.3$ Myr.
 
 ```{figure} figures/spitzer_nc_cc_ages.avif
 :name: fig:l12-spitzer-ages
@@ -457,12 +453,12 @@ The interpretation is consistent with streaming-instability and pebble-accretion
 
 #### What the three interpretations agree on, and where they disagree
 
-It is worth pausing to note that all three interpretations are consistent with the *same observational data*: the same isotope ratios, the same Hf-W and Pb-Pb ages, the same chemical groupings.
+All three interpretations are consistent with the *same observational data*: the same isotope ratios, the same Hf-W and Pb-Pb ages, the same chemical groupings.
 What they disagree on is the physical *cause* of the NC-CC bifurcation:
 
 - A **spatial** cause (Kruijer 2017): a gravitational barrier in the disk, namely Jupiter, separates two spatially distinct reservoirs.
 - A **dynamical** cause (Lichtenberg 2021): the disk's own thermal evolution and pebble drift physics produce two epochs of planetesimal formation in different chemical states; Jupiter is involved only weakly through pebble isolation.
-- A **temporal** cause (Schiller 2018, Nanne 2019, Spitzer 2021): the disk composition itself evolves with time as outer-disk material drifts inward, and NC versus CC is just a marker of formation epoch.
+- A **temporal** cause (Schiller 2018, Nanne 2019, Spitzer 2020): the disk composition itself evolves with time as outer-disk material drifts inward, and NC versus CC is just a marker of formation epoch.
 
 What all three agree on is that the early solar system imposed *some* form of structural or temporal order on its planetesimal reservoirs very early, within the first few Myr of CAI formation.
 All three are consistent with rapid Jupiter formation, in the sense that none requires Jupiter to be slow.
@@ -485,7 +481,7 @@ Where in the solar system do small bodies live, what shapes their orbits, and wh
 
 The asteroid belt is the largest reservoir of small bodies inside Neptune's orbit.
 More than $1.4$ million asteroids of all sizes have so far been catalogued by the Minor Planet Center, and the estimated total main-belt population larger than $1$ km is on the order of $10^6$, with several tens of millions of bodies above $\sim 100$ m {cite:p}`Bottke2020`.
-The total mass of the belt is approximately $4 \times 10^{-4}\,\Mearth$, of which Ceres alone contributes about $30\%$.
+The total mass of the belt is approximately $4 \times 10^{-4}\,\Mearth$, of which Ceres alone contributes nearly $40\%$.
 The bulk of the orbital distribution lies between $a = 2.1$ AU and $a = 3.3$ AU, with prograde, low-to-moderate eccentricity ($e < 0.3$) orbits and inclinations mostly under $20^{\circ}$.
 The population is sparse: at any given moment the typical separation between belt asteroids is millions of kilometres, far larger than what science fiction usually depicts ({numref}`fig:l12-asteroid-orbits`).
 
@@ -516,7 +512,7 @@ Steady-state orbit distributions of the near-Earth objects that leave the main b
 ### Asteroid families and spectral taxonomy
 
 A modern catalogue of asteroid orbits reveals not just a smooth distribution but distinct *families*: clusters of asteroids that share similar **proper elements** (semimajor axis, eccentricity, inclination averaged over secular variations).
-{cite:t}`Hirayama1918` identified the first such families more than a century ago: Eos, Themis, Koronis, Maria, and Flora.
+{cite:t}`Hirayama1918` identified the first such families more than a century ago: Themis, Eos, and Koronis.
 We now know dozens of significant families, including the Vesta family (fragments of the Rheasilvia impact on Vesta) and many smaller groups.
 Each family is interpreted as the debris of a single collisional disruption: a parent body of a few hundred kilometres broken apart by a high-energy impact, with the fragments inheriting roughly the same orbit and dispersing into a ribbon along the original trajectory.
 By analysing the size distribution and present-day spread of a family, one can estimate the original parent body size, the impact energy, and the age of the disruption event {cite:p}`Nesvorny2015` ({numref}`fig:l12-asteroid-families`).
@@ -702,11 +698,11 @@ The Dawn mission arrived in 2015 and orbited Ceres until 2018, mapping the surfa
 :width: 320px
 :align: center
 
-The Occator crater on Ceres, imaged by NASA's Dawn mission. The bright deposits in the crater floor (Cerealia Facula and Vinalia Faculae) are evaporitic salts, primarily hydrated sodium carbonate ($\mathrm{Na_2CO_3 \cdot H_2O}$), interpreted as relict brine that erupted from a subsurface reservoir and froze. Image credit: NASA/JPL-Caltech/UCLA/MPS/DLR/IDA, public domain.
+The Occator crater on Ceres, imaged by NASA's Dawn mission. The bright deposits in the crater floor (Cerealia Facula and Vinalia Faculae) are evaporitic salts, primarily sodium carbonate ($\mathrm{Na_2CO_3}$), interpreted as relict brine that erupted from a subsurface reservoir and froze. Image credit: NASA/JPL-Caltech/UCLA/MPS/DLR/IDA, public domain.
 ```
 
 Ceres has a hydrated, ammonia-bearing surface, and globally its outer few tens of kilometres are likely a mixture of water ice, hydrated salts, carbonates, and silicate clays.
-The brightest spots on Ceres are in **Occator crater** ({numref}`fig:l12-occator`), where Dawn's near-infrared spectrometer identified hydrated sodium carbonate (natrite) and ammonium chloride: in other words, evaporitic salts left behind by *brine* that erupted from a subsurface reservoir and froze on the surface {cite:p}`DeSanctis2016`.
+The brightest spots on Ceres are in **Occator crater** ({numref}`fig:l12-occator`), where Dawn's near-infrared spectrometer identified sodium carbonate and ammonium chloride: in other words, evaporitic salts left behind by *brine* that erupted from a subsurface reservoir and froze on the surface {cite:p}`DeSanctis2016`.
 Ceres therefore has, or had until recently, a partially liquid water layer at depth, and probably an internal heat source.
 This makes it strikingly similar to icy moons such as Enceladus and Europa ({ref}`Lecture 11 <lecture11>`), despite its very different formation environment.
 
@@ -884,7 +880,7 @@ Three-dimensional and projected views of the orbits of detached trans-Neptunian 
 
 ### The Oort cloud
 
-The **Oort cloud** is the most distant component of the solar system: a roughly spherical, isotropic shell of icy bodies at heliocentric distances of approximately $2{,}000$ to $50{,}000$ AU (with an inner Hills component at $\sim 2{,}000$–$20{,}000$ AU and an outer classical component at $\sim 20{,}000$–$50{,}000$ AU), named for Jan Oort, who first inferred its existence in 1950 from the orbital statistics of long-period comets {cite:p}`Oort1950`.
+The **Oort cloud** is the most distant component of the solar system: a roughly spherical, isotropic shell of icy bodies at heliocentric distances of approximately $2{,}000$ to $50{,}000$ AU (with an inner Hills component at $\sim 2{,}000$ to $20{,}000$ AU and an outer classical component at $\sim 20{,}000$ to $50{,}000$ AU), named for Jan Oort, who first inferred its existence in 1950 from the orbital statistics of long-period comets {cite:p}`Oort1950`.
 Oort noticed that the long-period comets do *not* arrive isotropically with random energies; their distribution of orbital energies has a strong concentration at very small (almost-bound) values, exactly what you expect if the comets are slowly perturbed inward from a large reservoir at $\sim 10^{4}$-$10^{5}$ AU ({numref}`fig:l12-oort-schematic` shows the inferred cloud structure from a numerical formation model).
 
 ```{figure} figures/oort_cloud_kaib.avif
@@ -1183,7 +1179,7 @@ Inferred space number density of interstellar objects in pc$^{-3}$ implied by th
 ```
 
 **2I/Borisov** (August 2019), discovered by amateur astronomer Gennady Borisov, was the second confirmed interstellar object and the first that was unambiguously *cometary*.
-It displayed a coma and a dust tail consistent with sublimating volatiles, and simultaneous HST and Swift observations after perihelion gave a CO abundance of 130 to 155% relative to water, against 0.2 to 23% for comets that reach the inner solar system, with typical values near 4% {cite:p}`Bodewits2020` ({numref}`fig:l12-borisov`).
+It displayed a coma and a dust tail consistent with sublimating volatiles, and simultaneous HST and Swift observations after perihelion gave a CO abundance of at least 173% relative to water, against 0.2 to 23% for comets that reach the inner solar system, with typical values near 4% {cite:p}`Bodewits2020` ({numref}`fig:l12-borisov`).
 A CO/H$_2$O ratio above unity is not seen in any solar-system comet, and it implies that 2I/Borisov formed and stayed beyond the CO snowline of its own planetary system, in a colder region than typical solar-system comets.
 2I/Borisov was the first opportunity to study the outgassed composition of a *cometary* body from another planetary system, and it was treated as an early demonstration of how rapidly the scientific community can mobilise to observe a transient interstellar visitor.
 
@@ -1196,7 +1192,7 @@ Composition of volatiles in the coma of 2I/Borisov compared with comets in our s
 ```
 
 **3I/ATLAS** (July 2025) is the third confirmed interstellar object, discovered by the ATLAS survey.
-Its initial characterisation is ongoing at the time of writing, but it appears to be larger than the first two and shows clear cometary activity.
+Its characterisation is still at an early stage, but it appears to be larger than the first two and shows clear cometary activity.
 The accelerating discovery rate is a direct consequence of survey sensitivity: the LSST survey at Vera Rubin, which began operations in 2025, is expected to find approximately one interstellar object per year on average, and possibly considerably more {cite:p}`Marceta2023`.
 
 The population statistics implied by three discoveries in eight years are striking.
