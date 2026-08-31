@@ -25,20 +25,21 @@ from scripts.figures.L09_earth_venus.fig_earth_eons import (
 REPO_ROOT = Path(__file__).resolve().parents[3]
 OUT_AVIF = REPO_ROOT / "book" / "09_earth_venus" / "figures" / "earth_life_timeline.avif"
 
-# Events as (age in Ma, label, stem level). Levels stagger the 45-degree
-# labels; a label may cover younger events only if their stems are shorter,
-# which the level assignment below guarantees.
+# Events as (age in Ma, label, stem level, label x-offset in points). Levels
+# stagger the labels; a label may cover younger events only if their stems
+# are shorter. Ediacaran biota and Cambrian explosion sit only 32 Myr apart,
+# so their labels need extra sideways offset to clear each other's stem.
 EVENTS = [
-    (4540.0, "Earth forms", 2),
-    (4300.0, "liquid water oceans", 1),
-    (3770.0, "oldest claimed biosignatures", 3),
-    (3480.0, "oldest stromatolites", 1),
-    (2400.0, "Great Oxidation Event", 2),
-    (1870.0, "first probable eukaryote fossils", 1),
-    (1050.0, "multicellular algae", 3),
-    (571.0, "Ediacaran biota", 3),
-    (539.0, "Cambrian explosion", 1),
-    (66.0, "end-Cretaceous impact", 2),
+    (4540.0, "Earth forms", 2, 4),
+    (4300.0, "liquid water oceans", 1, 4),
+    (3770.0, "oldest claimed biosignatures", 3, 4),
+    (3480.0, "oldest stromatolites", 1, 4),
+    (2400.0, "Great Oxidation Event", 2, 4),
+    (1870.0, "first probable eukaryote fossils", 1, 4),
+    (1050.0, "multicellular algae", 3, 4),
+    (571.0, "Ediacaran biota", 3, 4),
+    (539.0, "Cambrian explosion", 1, 20),
+    (66.0, "end-Cretaceous impact", 2, 4),
 ]
 
 # Glaciation intervals drawn as bands on the eon strip, labelled below it.
@@ -87,13 +88,13 @@ def make_plot() -> Path:
         ax.text(0.5 * (old + young), -0.08, label, ha="center", va="top",
                 fontsize=10, color="0.3", zorder=5)
 
-    # Lollipop events: stem from the strip top, marker, 45-degree label.
-    for age, label, level in EVENTS:
+    # Lollipop events: stem from the strip top, marker, steep diagonal label.
+    for age, label, level, dx in EVENTS:
         top = LEVEL_TOPS[level]
         ax.plot([age, age], [STRIP_Y1, top], color="0.45", lw=1.3, zorder=3)
         ax.plot([age], [top], marker="o", ms=5, color="0.25", zorder=4)
-        ax.annotate(label, xy=(age, top), xytext=(4, 4),
-                    textcoords="offset points", rotation=45,
+        ax.annotate(label, xy=(age, top), xytext=(dx, 4),
+                    textcoords="offset points", rotation=65,
                     rotation_mode="anchor", ha="left", va="bottom",
                     fontsize=12, color="0.2", zorder=5)
 

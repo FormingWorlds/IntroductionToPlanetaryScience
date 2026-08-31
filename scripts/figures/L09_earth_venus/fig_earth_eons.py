@@ -37,7 +37,7 @@ EONS = [
     ("Phanerozoic", PHANEROZOIC_BASE, 0.0),
 ]
 
-# Eras of the Archean and Proterozoic, labelled at 45 degrees above the bar.
+# Eras of the Archean and Proterozoic, labelled at 65 degrees above the bar.
 ERAS = [
     ("Eoarchean", 4000.0, 3600.0),
     ("Paleoarchean", 3600.0, 3200.0),
@@ -92,7 +92,7 @@ def make_plot() -> Path:
         center = 0.5 * (old + young)
         ax.plot([center, center], [BAR1_Y1, BAR1_Y1 + 0.12],
                 color="0.4", lw=0.8, zorder=3)
-        ax.text(center, BAR1_Y1 + 0.18, name, rotation=45,
+        ax.text(center, BAR1_Y1 + 0.18, name, rotation=65,
                 rotation_mode="anchor", ha="left", va="bottom",
                 fontsize=10, color="0.35", zorder=4)
 
