@@ -62,7 +62,7 @@ The short list of relations every student must know from memory is published on 
 
 Seven worksheets are provided as ungraded formative practice and are discussed in the tutorial sessions.
 They are strongly recommended as exam preparation but do not count towards the final grade.
-The worksheets and their full solutions, together with three mock exams with full solutions, are available on this website.
+The worksheets and their full solutions, together with three mock exams with full solutions, are published on this website as the course runs.
 
 ## Course structure
 

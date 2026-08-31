@@ -9,6 +9,10 @@
 **Slides:** [Download Lecture 13 (PDF)](../_static/slides/lecture13.pdf)
 ```
 
+```{note}
+These notes are still work in progress and may change before the lecture is given.
+```
+
 In all the lectures so far we have studied a single planetary system in extraordinary detail.
 We know its age, its eight planets, its hundreds of moons, its Kuiper belt, its formation history.
 We do not yet know whether any of this is typical.

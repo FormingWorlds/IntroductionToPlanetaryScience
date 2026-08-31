@@ -4,6 +4,12 @@
 The mock exams and their full solutions are collected on this page as the course runs.
 They have the same shape and level as the final written exam and are the best gauge of what to expect.
 
+| # | Exam | Solutions |
+|---|---|---|
+| 1 | Coming soon | Coming soon |
+| 2 | Coming soon | Coming soon |
+| 3 | Coming soon | Coming soon |
+
 (must_know_list)=
 ## What you must know by heart
 

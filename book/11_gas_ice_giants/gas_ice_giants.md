@@ -9,6 +9,10 @@
 **Slides:** [Download Lecture 11 (PDF)](../_static/slides/lecture11.pdf)
 ```
 
+```{note}
+These notes are still work in progress and may change before the lecture is given.
+```
+
 The four giant planets of our solar system together hold more than 99.5% of the planetary mass beyond the Sun.
 They are not, however, four examples of the same kind of object.
 Jupiter and Saturn are dominated by hydrogen and helium and are best thought of as failed stars whose envelopes never collapsed gravitationally.

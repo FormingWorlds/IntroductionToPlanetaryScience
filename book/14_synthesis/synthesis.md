@@ -9,6 +9,10 @@
 **Slides:** [Download Lecture 14 (PDF)](../_static/slides/lecture14.pdf)
 ```
 
+```{note}
+These notes are still work in progress and may change before the lecture is given.
+```
+
 ## Part 1: The solar system in the exoplanet context
 
 ### Recap: what this course has shown

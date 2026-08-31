@@ -9,6 +9,10 @@
 **Slides:** [Download Lecture 12 (PDF)](../_static/slides/lecture12.pdf)
 ```
 
+```{note}
+These notes are still work in progress and may change before the lecture is given.
+```
+
 The previous lectures have followed the planets one by one: rocky worlds in {ref}`Lecture 9 <lecture09>` and {ref}`Lecture 10 <lecture10>`, gas and ice giants in {ref}`Lecture 11 <lecture11>`.
 This lecture is about everything that did *not* become a planet.
 Small bodies are the leftover pieces of the planet-building process: asteroids and meteorites in the inner solar system, comets and Kuiper Belt objects (KBOs) in the outer solar system, dwarf planets like Ceres and Pluto in between, and the Oort cloud at the gravitational edge of the Sun's domain.

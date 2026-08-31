@@ -15,6 +15,8 @@ Work each problem through before opening the solutions: the solutions are comple
 | 3 | {ref}`Lecture 5 <lecture05>`, {ref}`Lecture 6 <lecture06>` | [Download (PDF)](_static/worksheets/worksheet03.pdf) | [Download (PDF)](_static/worksheets/worksheet03_solutions.pdf) |
 | 4 | {ref}`Lecture 7 <lecture07>`, {ref}`Lecture 8 <lecture08>` | [Download (PDF)](_static/worksheets/worksheet04.pdf) | [Download (PDF)](_static/worksheets/worksheet04_solutions.pdf) |
 | 5 | {ref}`Lecture 9 <lecture09>`, {ref}`Lecture 10 <lecture10>` | [Download (PDF)](_static/worksheets/worksheet05.pdf) | [Download (PDF)](_static/worksheets/worksheet05_solutions.pdf) |
+| 6 | {ref}`Lecture 11 <lecture11>`, {ref}`Lecture 12 <lecture12>` | Coming soon | Coming soon |
+| 7 | {ref}`Lecture 13 <lecture13>`, {ref}`Lecture 14 <lecture14>` | Coming soon | Coming soon |
 
 
 ## What each worksheet covers
