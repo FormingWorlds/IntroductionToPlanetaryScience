@@ -22,6 +22,7 @@ The official course catalogue entry is maintained in [Ocasys](https://ocasys.rug
 | **Teaching assistants** | [Mariana Sastre](https://planetmariana.github.io/), [Emma Postolec](https://research.rug.nl/en/persons/emma-postolec), [Soumil Kelkar](https://research.rug.nl/en/persons/soumil-kelkar), [Imre Kisvárdai](https://research.rug.nl/en/persons/imre-kisvardai) |
 | **Timetable** | [rooster.rug.nl](https://rooster.rug.nl/2026-2027?courseOffering=195171) |
 | **Contact** | [tim.lichtenberg@rug.nl](mailto:tim.lichtenberg@rug.nl) |
+| **Tutorial and worksheet questions** | [ips-tas-2026@formingworlds.space](mailto:ips-tas-2026@formingworlds.space) |
 
 ## Course description
 
@@ -70,6 +71,11 @@ The course runs over the teaching period of Semester 1a and comprises 14 lecture
 Each teaching week consists of two 90-minute lectures and one tutorial in which the worksheet for that block is discussed.
 The tutorials are led by the teaching assistants listed above.
 The full lecture sequence is listed on the {ref}`landing page <intro>`, and the lecture notes follow that order.
+
+```{note}
+Send all questions about the tutorials and worksheets to the teaching assistants at [ips-tas-2026@formingworlds.space](mailto:ips-tas-2026@formingworlds.space).
+The lead assistant for that week's worksheet replies.
+```
 
 The indicative study-load breakdown for the 5 ECTS (140 hours total) is:
 
