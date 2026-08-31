@@ -1,0 +1,169 @@
+% minilecture06.tex: Tutorial 6 mini-lecture: Giant Planets and Small Bodies
+% Planetary Systems, Kapteyn Institute, University of Groningen
+% A 5-10 minute recap, presented by the TAs at the start of Tutorial 6,
+% of the Lecture 11-12 concepts that Worksheet 6 trains.
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme and macros (shared with the lecture decks) ────────
+\usepackage{../../slides/common/beamerthemeIPS}
+\input{../../slides/common/macros}
+\graphicspath{{figures/}{../../slides/lecture11/figures/}{../../slides/lecture12/figures/}{../../slides/common/}}
+
+% ── Metadata ────────────────────────────────────────────────
+\title[T6 mini-lecture: Giant Planets and Small Bodies]{Tutorial 6 Mini-Lecture:\\Giant Planets and Small Bodies}
+\subtitle{The concepts behind Worksheet 6 \textbullet\ Lectures 11--12}
+\author{}
+\institute{Kapteyn Astronomical Institute\\University of Groningen}
+\date{2026}
+\titlebgcredit{Jupiter's south pole, JunoCam. Credit: NASA/JPL-Caltech/SwRI/MSSS}
+\titlebgopacity{0.60}
+
+% ════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Roadmap ─────────────────────────────────────────────────
+\begin{frame}{What Worksheet 6 trains}
+  Five problems, all built on Lectures 11--12. The physics you need, per problem:
+  \vskip4pt\relax
+  \begin{enumerate}
+    \item \textbf{Giant-planet interiors}: the uniform-density central pressure, the metallic-hydrogen transition, why Saturn needs helium rain.
+    \item \textbf{The Roche limit and rings}: the rigid and fluid limits, why the main rings end where they do, why moonlets survive inside them.
+    \item \textbf{Radioactive dating}: the decay law, short-lived $^{26}$Al heating, the long-lived Pb-Pb isochron.
+    \item \textbf{Kirkwood gaps}: the resonance condition, the gap locations, how a resonance empties an orbit.
+    \item \textbf{Cometary activity}: the grey-body temperature, the onset distance, the sublimation rate and its fall-off.
+  \end{enumerate}
+  \vskip2pt\relax
+  \keyresult{Every problem has the shape and level of one exam question. All parts are analytical; no computer is needed.}
+\end{frame}
+
+% ── P1 ──────────────────────────────────────────────────────
+\begin{frame}{Giant-planet interiors and metallic hydrogen}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Uniform-density hydrostatic pressure from Lecture 11:
+    \[
+      \boxed{P_c = \frac{3GM^2}{8\pi R^4}}
+    \]
+    \begin{itemize}
+      \item Jupiter's bulk density is $\sim 1326\ \mathrm{kg\,m^{-3}}$: mostly hydrogen and helium, not rock.
+      \item Metallic hydrogen appears above $\sim 100$ GPa, where hydrogen becomes an electrical conductor.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Two planets, one transition}
+      Jupiter's central pressure ($\sim 1200$ GPa) is $12$ times the metallization value, so its metallic region is large. Saturn's ($\sim 224$ GPa) only just crosses it, so helium separates and rains, supplying Saturn's extra luminosity.
+    \end{block}
+  \end{columns}
+  \keyresult{The central pressure decides how much of each planet is metallic hydrogen, and whether helium rain is needed to explain its heat.}
+\end{frame}
+
+% ── P2 ──────────────────────────────────────────────────────
+\begin{frame}{The Roche limit and Saturn's rings}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    The tidal disruption distance of Lecture 11:
+    \[
+      \boxed{d_R = C\,R_p\left(\frac{\rho_p}{\rho_s}\right)^{1/3}}
+    \]
+    \begin{itemize}
+      \item Rigid body: $C = 1.26$; strengthless fluid: $C = 2.46$. The real limit lies between them.
+      \item The fluid limit for ice, $\sim 126{,}350$ km, matches the A-ring outer edge to $\sim 8\%$.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Rings inside, moonlets survive}
+      Ice is disrupted out to the fluid limit, so it stays as rings; a denser rocky body survives much closer in. Pan and Daphnis sit between the rigid and fluid limits, held by gravity plus finite strength.
+    \end{block}
+  \end{columns}
+  \keyresult{The Roche limit sets where a disk of ice cannot accrete into a moon; the two limits bracket where solid moonlets can still survive.}
+\end{frame}
+
+% ── P3 ──────────────────────────────────────────────────────
+\begin{frame}{Dating the Solar System}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    The decay law and two clocks:
+    \[
+      \boxed{N = N_0\,e^{-\lambda t}} \qquad \lambda = \frac{\ln 2}{t_{1/2}}
+    \]
+    \begin{itemize}
+      \item $^{26}$Al ($t_{1/2} = 0.717$ Myr) decays in a few Myr: a body forming $2$ Myr late has only $\sim 14\%$ of the heating.
+      \item Pb-Pb uses two uranium chains; the isochron slope $\sim 0.625$ at $4.567$ Gyr gives an absolute age.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Short-lived vs long-lived}
+      Short-lived isotopes give fine relative timing but are now extinct, so they need an anchor. Long-lived isotopes give the absolute age but blur the first few million years. Together they date the first solids to $4567.3$ Myr.
+    \end{block}
+  \end{columns}
+  \keyresult{One decay law runs two clocks: $^{26}$Al resolves the first few Myr, uranium fixes the absolute age.}
+\end{frame}
+
+% ── P4 ──────────────────────────────────────────────────────
+\begin{frame}{Kirkwood gaps and resonances}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    The resonance location from Kepler's third law:
+    \[
+      \boxed{a = a_\mathrm{J}\left(\frac{k}{j}\right)^{2/3}}
+    \]
+    \begin{itemize}
+      \item At a $j\!:\!k$ resonance the asteroid completes $j$ orbits per $k$ of Jupiter's.
+      \item The $3\!:\!1$, $5\!:\!2$ and $2\!:\!1$ gaps fall at $2.50$, $2.82$ and $3.28$ AU.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Why the gaps are empty}
+      At resonance Jupiter kicks the asteroid at the same phase each cycle; the kicks add, the eccentricity grows, and the orbit becomes planet-crossing. The clearing acts on the semi-major axis, so it shows only in a plot of $a$, not in a snapshot.
+    \end{block}
+  \end{columns}
+  \keyresult{Simple period ratios set the gap positions; coherent resonant kicks pump eccentricity until the body is removed.}
+\end{frame}
+
+% ── P5 ──────────────────────────────────────────────────────
+\begin{frame}{Cometary activity and distance}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Grey-body balance and sublimation of Lecture 12:
+    \[
+      \boxed{T(r) = \left[\frac{S_0(1\,\mathrm{AU}/r)^2}{4\sigma}\right]^{1/4}} \quad
+      Z = \frac{S_0(1\,\mathrm{AU}/r)^2}{4Lm}
+    \]
+    \begin{itemize}
+      \item $T \approx 278$ K at $1$ AU, falling as $r^{-1/2}$; water activity switches on near $3.4$ AU.
+      \item Sublimation-limited $Z \approx 4\times10^{21}\ \mathrm{m^{-2}\,s^{-1}}$ at $1$ AU, scaling as $r^{-2}$.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Active only near the Sun}
+      Beyond a few AU the surface is too cold, reradiation takes the energy, and the vapour-pressure cutoff makes production collapse far faster than $r^{-2}$. Comets are dormant in the outer Solar System.
+    \end{block}
+  \end{columns}
+  \keyresult{Temperature sets sublimation; the geometric $r^{-2}$ is only an upper bound, and the true fall-off is steeper.}
+\end{frame}
+
+% ── Closer ──────────────────────────────────────────────────
+\begin{frame}{Working the worksheet}
+  \begin{itemize}
+    \item \textbf{Show your algebra.} The exam asks for the steps, not only the number.
+    \item Carry \textbf{4 significant figures} through intermediate steps; round at the end.
+    \item Use the \textbf{checkpoints} ("show that \ldots") to verify your work and to keep moving if a step resists.
+    \item Qualitative parts want \textbf{2 to 3 sentences} of physics, not an essay.
+    \item Most parts close by asking what the number means: that interpretation is graded, not only the arithmetic.
+  \end{itemize}
+  \vskip8pt\relax
+  \keyresult{Worksheet and full solutions: \texttt{ips.formingworlds.space/worksheets.html}. We discuss questions, not presentations of the solutions.}
+\end{frame}
+
+\end{document}
