@@ -20,7 +20,7 @@ The blackboard derivation in the middle introduces the Simpson-Nakajima runaway 
 
 ```{figure} figures/lammer2018_venus_earth_mars_accretion.avif
 :name: fig:lammer-accretion
-:width: 60%
+:width: 100%
 :align: center
 
 Schematic accretion histories of **Venus** (top), **Earth** (middle), and Mars (bottom) during the first $\sim$110 Myr of the Solar System.
@@ -81,7 +81,7 @@ The **Phanerozoic** eon ($539$ Ma to the present, the name means "visible life")
 
 ```{figure} figures/catling2020_precambrian_events.avif
 :name: fig:catling-precambrian
-:width: 60%
+:width: 100%
 :align: center
 
 Geologic time scale of the Precambrian with the major environmental and biological events, from the Moon-forming impact and the earliest evidence for life through the Great Oxidation Event ($\sim$2.4 Ga) to the Neoproterozoic glaciations and the first Ediacaran biota.
@@ -112,7 +112,7 @@ Holding this thought is essential for understanding Venus, where there is no obs
 
 ```{figure} figures/honing2021_carbon_cycle_diagram.avif
 :name: fig:honing-carbon-cycle
-:width: 85%
+:width: 100%
 :align: center
 
 Schematic of the carbon cycle on a **stagnant-lid** Venus, a planet whose rigid outer shell forms a single immobile plate rather than being broken into moving tectonic plates, from {cite:t}`Honing2021`.
@@ -133,11 +133,28 @@ More importantly for long-term planetary evolution, the magnetosphere suppresses
 Hydrogen escape from Earth still occurs, by Jeans escape (thermal evaporation of the fastest atoms in the high-velocity tail of the Maxwell-Boltzmann distribution) and polar wind (a steady outflow of ions along open magnetic field lines near the poles), but at rates many orders of magnitude lower than the loss rates that have desiccated Mars (which lost its dynamo around $4.1\text{--}3.9$ Ga; {ref}`Lecture 10 <lecture10>`) and that may have helped strip Venus of its water during periods of intense solar EUV (extreme ultraviolet) radiation in the early Solar System {cite:p}`Lammer2018`.
 The contrast with Venus, which has no detectable internal magnetic field today, is stark, and we will return to it in Part 2.
 
+```{figure} figures/magnetosphere_anatomy_esa.avif
+:name: fig:earth-magnetosphere
+:width: 100%
+:align: center
+
+Structure of Earth's magnetosphere. The solar wind (orange arrows, arriving from the left) is deflected at the bow shock, and the shocked plasma flows around the planet through the magnetosheath. The magnetopause, where the solar-wind ram pressure balances the magnetic pressure of Earth's field, stands at roughly $10\,\Rearth$ on the dayside, while the nightside field is drawn out into the long magnetotail. This cavity shields the surface from most solar-wind particles and suppresses ion-pickup escape from the regions of closed field lines, in contrast to the open field lines at the poles that permit polar wind.
+Credit: [ESA](https://www.esa.int/ESA_Multimedia/Images/2026/02/Anatomy_of_Earth_s_magnetosphere), [CC BY-SA 3.0 IGO](https://creativecommons.org/licenses/by-sa/3.0/igo/).
+```
+
 ### The hydrosphere and cryosphere
 
 Earth's surface water inventory is dominated by the oceans, which hold $1.34 \times 10^{21}$ kg of water (about $97\%$ of the total) at an average depth of $3.7$ km.
-Polar ice caps, mountain glaciers, sea ice, and permafrost together (the **cryosphere**) account for another $\sim$2%, and groundwater, lakes, rivers, and atmospheric vapour collectively contribute the remaining $\sim$1%.
+Polar ice caps, mountain glaciers, sea ice, and permafrost together (the **cryosphere**) account for another $\sim$2% ({numref}`fig:blue-marble-apollo17`), and groundwater, lakes, rivers, and atmospheric vapour collectively contribute the remaining $\sim$1%.
 Spreading the oceans evenly over the entire surface of the planet would give a global equivalent water layer of about $2.7$ km thickness; this is the natural unit for comparing total water inventories across planets.
+
+```{figure} figures/blue_marble_apollo17.avif
+:name: fig:blue-marble-apollo17
+:width: 100%
+:align: center
+
+"The Blue Marble", Apollo 17, 7 December 1972. Earth photographed by the crew en route to the Moon, with the hydrosphere and cryosphere visible together. Ocean covers most of the sunlit disk on both sides of Africa, from the South Atlantic in the west to the Indian Ocean in the east, while the Antarctic ice cap forms the bright cryosphere along the lower limb. Africa, the Arabian Peninsula, and Madagascar lie near the centre of the disk. NASA image AS17-148-22727. Credit: NASA / Apollo 17 crew.
+```
 
 The thermohaline circulation (driven by gradients in temperature and salinity) and the wind-driven surface circulation together transport heat poleward, smoothing the equator-to-pole temperature gradient and stabilising the climate against local instabilities.
 Sea ice and continental ice exhibit the **ice-albedo feedback** that we covered in {ref}`Lecture 6 <lecture06>`: ice has a much higher reflectivity than open ocean or bare ground, so growing ice cools the climate further and shrinking ice warms it.
@@ -149,7 +166,7 @@ The Urey reaction, the textbook prototype for the silicate weathering sink, is a
 
 ```{figure} figures/lammer2018_carbonate_silicate.avif
 :name: fig:lammer-carbsil
-:width: 75%
+:width: 100%
 :align: center
 
 Cartoon of the **carbonate-silicate cycle** on a planet with active plate tectonics.
@@ -173,7 +190,7 @@ The standard resolution is a higher concentration of greenhouse gases (most like
 
 ```{figure} figures/zahnle2007_solar_evolution.avif
 :name: fig:zahnle-solar
-:width: 75%
+:width: 100%
 :align: center
 
 Solar luminosity (left axis, solid black curve) and EUV/X-ray flux (right axis, coloured curves) over the first $\sim$5 Gyr after the Sun reached the main sequence, normalised to present values.
@@ -184,7 +201,7 @@ Reproduced from {cite:t}`Zahnle2007`.
 
 ```{figure} figures/charnay2013_archean_temperature.avif
 :name: fig:charnay-archean
-:width: 70%
+:width: 100%
 :align: center
 
 Three-dimensional general-circulation model results for the global mean surface temperature of the Archean Earth between $3.8$ Ga and $2.5$ Ga, from {cite:t}`Charnay2013`.
@@ -207,6 +224,15 @@ This is a key conceptual point we will come back to when comparing with Venus.
 Earth came perilously close to a different climate failure mode (ice rather than heat) during the Cryogenian period.
 At least two global glaciations are well documented, the **Sturtian** (lasting from roughly $717$ Ma to $660$ Ma) and the **Marinoan** (around $645$ Ma to $635$ Ma) {cite:p}`Hoffman1998,Hoffman2017`; a much earlier candidate, the **Huronian** glaciation around $2.4$ Ga, may have been similarly extensive.
 The geological evidence is striking: glacial diamictites (poorly sorted glacial deposits) are found at palaeolatitudes within $10^\circ$ of the equator, banded iron formations, layered iron-oxide sediments that only form when dissolved iron in the ocean reacts with available oxygen, re-appear in the rock record after a billion-year absence, and the glacial deposits are capped by thick "cap carbonates" that record an abrupt return to high-$\mathrm{CO_2}$, high-temperature greenhouse conditions immediately after deglaciation.
+
+```{figure} figures/snowball_earth.avif
+:name: fig:snowball-earth-cryogenian
+:width: 100%
+:align: center
+
+Artist's impression of a fully ice-covered "snowball" Earth, with the continents buried under ice and only faint outlines visible. The bright frozen surface reflects most of the incoming sunlight; this high albedo is what makes the snowball state self-sustaining until volcanic $\mathrm{CO_2}$ accumulates enough to force deglaciation.
+Credit: Oleg Kuznetsov (3depix.com), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Snowball_Huronian.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+```
 
 The mechanism is straightforward in concept.
 Once the polar ice caps grow to roughly $30^\circ$ latitude, the ice-albedo feedback runs away: the increased reflectivity cools the climate, more ice forms, which cools the climate further, and so on, until ice covers most or all of the ocean and the surface temperature drops to $\sim$240 K.
@@ -233,7 +259,7 @@ The observed surface temperature response, about $1.1$ K of warming since the la
 
 ```{figure} figures/lyons2014_oxygen_history.avif
 :name: fig:lyons-oxygen
-:width: 90%
+:width: 100%
 :align: center
 
 Evolution of Earth's atmospheric oxygen content through time, on a logarithmic scale of $p\mathrm{O_2}$ relative to present atmospheric level (PAL).
@@ -287,7 +313,7 @@ Living stromatolites still grow today in a few hypersaline refuges such as Shark
 
 ```{figure} figures/stromatolites_shark_bay.avif
 :name: fig:stromatolites
-:width: 70%
+:width: 100%
 :align: center
 
 Modern stromatolites in the hypersaline waters of Shark Bay, Western Australia.
@@ -331,7 +357,7 @@ Each of these contrasts deserves explanation, and that is the project of this pa
 
 ```{figure} figures/widemann2023_three_missions_render.avif
 :name: fig:venus-render
-:width: 70%
+:width: 100%
 :align: center
 
 Artist's rendering of three new missions in the **Venus exploration decade** of the 2030s, against a global view of the planet from Akatsuki UV imaging.
@@ -398,7 +424,7 @@ Recent analysis of Magellan gravity data has identified coronae that appear to o
 
 ```{figure} figures/widemann2023_venus_geological_terrains.avif
 :name: fig:venus-terrains
-:width: 95%
+:width: 100%
 :align: center
 
 Global geological-terrain map of Venus from {cite:t}`Widemann2023` Fig. 15, overlaid on a Magellan radar base. Coloured polygons are the Regions of Interest (RoIs) defined in the ESA EnVision Science Operations Reference Scenario; together they cover roughly 30% of Venus's surface and span the major terrain classes: **plains** (light green), **tessera** highlands (tan), **deformed terrain** (pale yellow), **rift zones** (red), **Artemis chasma** (purple), and **craters** (grey). Named regional landmarks (Maxwell Montes, Fortuna Tessera, Ishtar Terra, Beta Regio, Aphrodite Terra, Alpha Regio, and others) are labelled. Terrain classification after {cite:t}`IvanovHead2015`; reproduced from {cite:t}`Widemann2023`.
@@ -434,7 +460,7 @@ On this view, Venus may once have had Earth-like mobile-lid tectonics (when its 
 
 ```{figure} figures/smrekar2018_venus_tectonic_evolution.avif
 :name: fig:venus-tectonic-evol
-:width: 85%
+:width: 100%
 :align: center
 
 Surface temperature evolution of Venus over $\sim$4.5 Gyr from a numerical tectonic-regime model, from the bottom panel of {cite:t}`Smrekar2018`.
@@ -520,7 +546,7 @@ This maximum OLR is the **Simpson-Nakajima limit**, named after the foundational
 
 ```{figure} figures/kopparapu2013_runaway_panels.avif
 :name: fig:kopparapu-runaway
-:width: 80%
+:width: 100%
 :align: center
 
 Climate-model calculation of the runaway greenhouse limit and the inner edge of the habitable zone for an Earth-like planet, from {cite:t}`Kopparapu2013` Fig. 3.
@@ -534,7 +560,7 @@ Reproduced from {cite:t}`Kopparapu2013`.
 
 ```{figure} figures/goldblatt2013_olr_spectrum.avif
 :name: fig:goldblatt-spectrum
-:width: 446px
+:width: 100%
 :align: center
 
 Thermal-radiance spectra of an Earth-like atmosphere as a function of wavelength for surface temperatures $T_\mathrm{s} = 280, 310, 340, 370, 400$ K (bottom to top), from {cite:t}`Goldblatt2013` Fig. 3(b).
@@ -556,7 +582,7 @@ The robustness of the limit across very different model assumptions is one of th
 
 ```{figure} figures/zahnle2007_runaway_threshold.avif
 :name: fig:zahnle-runaway
-:width: 75%
+:width: 100%
 :align: center
 
 Surface temperature as a function of net insolation plus geothermal heat flow for a steam atmosphere over a magma ocean, from {cite:t}`Zahnle2007` (after {cite:t}`Kasting1988` and Abe \& Matsui 1988).
@@ -667,7 +693,7 @@ The inner habitable zone edge has therefore been moving **outward** over Solar S
 
 ```{figure} figures/wordsworth2013_OLR_ASR_equilibria.avif
 :name: fig:wordsworth-equilibria
-:width: 75%
+:width: 100%
 :align: center
 
 OLR (red), ASR (absorbed shortwave radiation, blue), and OLR$-$ASR (bottom) as a function of surface temperature for an atmosphere with $100$ ppm $\mathrm{CO_2}$ at a stellar flux of $F = 1.025\, F_0$, from {cite:t}`Wordsworth2013`.
@@ -705,7 +731,7 @@ Reproduced from {cite:t}`Hamano2013`.
 
 ```{figure} figures/hamano2013_typeI_evolution.avif
 :name: fig:hamano-typeI
-:width: 70%
+:width: 100%
 :align: center
 
 Typical evolution of a Type I planet at $1$ AU with initial water inventory $\approx 5$ Earth-ocean masses, from {cite:t}`Hamano2013` Fig. 1.
@@ -719,7 +745,7 @@ Reproduced from {cite:t}`Hamano2013`.
 
 ```{figure} figures/lebrun2013_magma_ocean_evolution.avif
 :name: fig:lebrun-magma
-:width: 60%
+:width: 100%
 :align: center
 
 Time evolution of potential temperature (black line) and surface temperature (grey line) for a crystallising magma ocean coupled to its outgassed steam atmosphere on a Venus-mass planet at the orbital distance of Venus, from panel (a) of {cite:t}`Lebrun2013` Fig. 12.
@@ -737,7 +763,7 @@ On the late-loss picture, Venus then loses its water gradually as the Sun bright
 
 ```{figure} figures/way2016_paleo_venus_temperature.avif
 :name: fig:way-paleo
-:width: 504px
+:width: 100%
 :align: center
 
 Three-dimensional climate model simulation of the surface air temperature on a hypothetical paleo-Venus at $2.9$ Ga with $75\%$ of present solar irradiance, from panel (a) of {cite:t}`Way2016` Fig. 2, plotted on a Mollweide global projection.
@@ -753,7 +779,7 @@ Their main result is summarised in a hysteresis diagram showing the conditions u
 
 ```{figure} figures/turbet2021_water_clouds_emission.avif
 :name: fig:turbet-clouds
-:width: 90%
+:width: 100%
 :align: center
 
 Three-dimensional simulations of an initially hot and steamy Earth (**a**, **c**) and Venus (**b**, **d**), both forced to a stellar flux $S = 340.5$ W/m$^2$, the present-day Earth insolation.
@@ -767,7 +793,7 @@ Reproduced from {cite:t}`Turbet2021`, Fig. 2a-d.
 
 ```{figure} figures/turbet2021_hysteresis.avif
 :name: fig:turbet-hysteresis
-:width: 90%
+:width: 100%
 :align: center
 
 Hysteresis loops for ocean formation on early Earth and Venus, from {cite:t}`Turbet2021`.
@@ -781,7 +807,7 @@ For the purposes of this lecture, we should treat both the early-loss and late-l
 
 ```{figure} figures/gillmann2022_dry_wet_venus_scenarios.avif
 :name: fig:gillmann-scenarios
-:width: 75%
+:width: 100%
 :align: center
 
 The two main scenarios for Venus' early evolution as summarised by {cite:t}`Gillmann2022`.
@@ -793,7 +819,7 @@ Reproduced from {cite:t}`Gillmann2022`.
 
 ```{figure} figures/honing2021_reference_evolution.avif
 :name: fig:honing-reference
-:width: 90%
+:width: 100%
 :align: center
 
 Reference scenario for the coupled interior-atmosphere evolution of a stagnant-lid Venus from panels (a) and (b) of {cite:t}`Honing2021` Fig. 3.
@@ -805,7 +831,7 @@ The remaining panels (c)-(f) of the original figure (not reproduced here) show t
 
 ```{figure} figures/constantinou2024_venus_pathways.avif
 :name: fig:constantinou-pathways
-:width: 90%
+:width: 100%
 :align: center
 
 The two dichotomous climate pathways for Venus from {cite:t}`Constantinou2024`, ending in interiors with very different water inventories.
@@ -846,7 +872,7 @@ Future noble gas measurements, particularly $^{36}$Ar/$^{38}$Ar and Xe isotopic 
 
 ```{figure} figures/wordsworth2014_abiotic_o2_schematic.avif
 :name: fig:wordsworth-abiotic-o2
-:width: 50%
+:width: 100%
 :align: center
 
 Schematic of the abiotic build-up of an $\mathrm{O_2}$-dominated atmosphere by photolytic water loss on a terrestrial habitable-zone planet, from {cite:t}`Wordsworth2014`.
@@ -894,7 +920,7 @@ Both planets accreted in roughly the same region of the protoplanetary disk and 
 
 ```{figure} figures/dauphas2017_earth_accreting_material.avif
 :name: fig:dauphas-accretion
-:width: 45%
+:width: 100%
 :align: center
 
 Probability density function for the chromium-bearing fraction of Earth's accreting mass as a function of the cumulative accreted mass fraction, from {cite:t}`Dauphas2017` (Cr panel of their five-isotope Fig. 1).
@@ -924,7 +950,7 @@ On Earth, the surface ends up moderately oxidising with most of the nitrogen par
 
 ```{figure} figures/wordsworth2016_n2_redox_pump.avif
 :name: fig:wordsworth-n2pump
-:width: 80%
+:width: 100%
 :align: center
 
 Schematic of the **water-loss redox pump** linking the differing atmospheric $\mathrm{N_2}$ inventories of Earth and Venus to their early water-loss histories, from {cite:t}`WordsworthN2016`.
@@ -946,7 +972,7 @@ On this view, the tectonic regimes of Earth and Venus are not independent inputs
 
 ```{figure} figures/gillmann2022_earth_venus_systems.avif
 :name: fig:earth-venus-systems
-:width: 95%
+:width: 100%
 :align: center
 
 System diagram comparing the climate and interior couplings of Earth (left) and Venus (right), from {cite:t}`Gillmann2022`.
@@ -991,7 +1017,7 @@ The habitable zone is not a region in space but a region in **history**, and the
 
 ```{figure} figures/nasa_trappist1_solarsystem_comparison.avif
 :name: fig:trappist1
-:width: 80%
+:width: 100%
 :align: center
 
 Comparison of the seven TRAPPIST-1 planets (b through h) with the inner Solar System (Mercury, Venus, Earth, Mars), in the plane of planetary density (vertical) versus stellar illumination (horizontal, in units of Earth's illumination).

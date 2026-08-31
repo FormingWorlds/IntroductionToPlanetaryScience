@@ -67,7 +67,7 @@ def make_plot() -> Path:
                       facecolor=fill, edgecolor="none", zorder=2)
         )
         ax.text(0.5 * (old + young), 0.5 * (STRIP_Y0 + STRIP_Y1), name,
-                ha="center", va="center", fontsize=8,
+                ha="center", va="center", fontsize=11,
                 color=text_color_on(fill), zorder=5)
     for boundary in (4000.0, 2500.0, PHANEROZOIC_BASE):
         ax.plot([boundary, boundary], [STRIP_Y0, STRIP_Y1],
@@ -85,7 +85,7 @@ def make_plot() -> Path:
                       alpha=0.9, zorder=4)
         )
         ax.text(0.5 * (old + young), -0.08, label, ha="center", va="top",
-                fontsize=8, color="0.3", zorder=5)
+                fontsize=10, color="0.3", zorder=5)
 
     # Lollipop events: stem from the strip top, marker, 45-degree label.
     for age, label, level in EVENTS:
@@ -95,7 +95,7 @@ def make_plot() -> Path:
         ax.annotate(label, xy=(age, top), xytext=(4, 4),
                     textcoords="offset points", rotation=45,
                     rotation_mode="anchor", ha="left", va="bottom",
-                    fontsize=9, color="0.2", zorder=5)
+                    fontsize=12, color="0.2", zorder=5)
 
     ax.set_xticks([4000, 3000, 2000, 1000, 0])
     ax.set_xticklabels(["4", "3", "2", "1", "0"])

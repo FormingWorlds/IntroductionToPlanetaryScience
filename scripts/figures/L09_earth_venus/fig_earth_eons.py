@@ -80,7 +80,7 @@ def make_plot() -> Path:
                       facecolor=fill, edgecolor="none", zorder=2)
         )
         ax.text(0.5 * (old + young), 0.5 * (BAR1_Y0 + BAR1_Y1), name,
-                ha="center", va="center", fontsize=9.5,
+                ha="center", va="center", fontsize=11,
                 color=text_color_on(fill), zorder=4)
 
     # White separators at the internal era boundaries.
@@ -94,13 +94,13 @@ def make_plot() -> Path:
                 color="0.4", lw=0.8, zorder=3)
         ax.text(center, BAR1_Y1 + 0.18, name, rotation=45,
                 rotation_mode="anchor", ha="left", va="bottom",
-                fontsize=8.5, color="0.35", zorder=4)
+                fontsize=10, color="0.35", zorder=4)
 
     # Boundary ages below the top bar.
     for t, label, ha in [(T0, "4.54 Ga", "left"), (4000.0, "4.0 Ga", "center"),
                          (2500.0, "2.5 Ga", "center")]:
         ax.text(t, BAR1_Y0 - 0.12, label, ha=ha, va="top",
-                fontsize=9, color="0.25", zorder=4)
+                fontsize=10.5, color="0.25", zorder=4)
 
     # Bottom bar: the Phanerozoic stretched to full width.
     for name, old, young, fill in PHANEROZOIC_ERAS:
@@ -110,7 +110,7 @@ def make_plot() -> Path:
                       facecolor=fill, edgecolor="none", zorder=2)
         )
         ax.text(0.5 * (x_old + x_young), 0.5 * (BAR2_Y0 + BAR2_Y1), name,
-                ha="center", va="center", fontsize=9.5,
+                ha="center", va="center", fontsize=11,
                 color=text_color_on(fill), zorder=4)
 
     # Boundary ages below the zoom bar.
@@ -118,7 +118,7 @@ def make_plot() -> Path:
                          (251.9, "252 Ma", "center"),
                          (66.0, "66 Ma", "center"), (0.0, "0", "right")]:
         ax.text(_zoom_x(t), BAR2_Y0 - 0.12, label, ha=ha, va="top",
-                fontsize=9, color="0.25", zorder=4)
+                fontsize=10.5, color="0.25", zorder=4)
 
     # Dashed fan lines tie the Phanerozoic block to its zoom bar.
     ax.plot([PHANEROZOIC_BASE, _zoom_x(PHANEROZOIC_BASE)], [BAR1_Y0, BAR2_Y1],
