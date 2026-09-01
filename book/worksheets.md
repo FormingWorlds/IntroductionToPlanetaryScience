@@ -16,7 +16,7 @@ Work each problem through before opening the solutions: the solutions are comple
 | 4 | {ref}`Lecture 7 <lecture07>`, {ref}`Lecture 8 <lecture08>` | [Download (PDF)](_static/worksheets/worksheet04.pdf) | [Download (PDF)](_static/worksheets/worksheet04_solutions.pdf) |
 | 5 | {ref}`Lecture 9 <lecture09>`, {ref}`Lecture 10 <lecture10>` | [Download (PDF)](_static/worksheets/worksheet05.pdf) | [Download (PDF)](_static/worksheets/worksheet05_solutions.pdf) |
 | 6 | {ref}`Lecture 11 <lecture11>`, {ref}`Lecture 12 <lecture12>` | [Download (PDF)](_static/worksheets/worksheet06.pdf) | [Download (PDF)](_static/worksheets/worksheet06_solutions.pdf) |
-| 7 | {ref}`Lecture 13 <lecture13>`, {ref}`Lecture 14 <lecture14>` | Coming soon | Coming soon |
+| 7 | {ref}`Lecture 13 <lecture13>`, {ref}`Lecture 14 <lecture14>` | [Download (PDF)](_static/worksheets/worksheet07.pdf) | [Download (PDF)](_static/worksheets/worksheet07_solutions.pdf) |
 
 
 ## What each worksheet covers
@@ -27,4 +27,4 @@ Work each problem through before opening the solutions: the solutions are comple
 4. **Surfaces and interiors** ({ref}`lecture07`, {ref}`lecture08`): impact energetics, crater chronology, moment of inertia, central pressure, seismology.
 5. **Terrestrial planets** ({ref}`lecture09`, {ref}`lecture10`): comparative energy balance, water loss from Venus, the Martian volatile inventory, Mercury's spin-orbit resonance.
 6. **Giant planets and small bodies** ({ref}`lecture11`, {ref}`lecture12`): interior transitions, ring dynamics, isotopic dating, Kirkwood gaps, cometary activity.
-7. **Exoplanets and synthesis** ({ref}`lecture13`, {ref}`lecture14`): radial-velocity and transit measurements, the habitable zone, transmission spectroscopy, the solar system in the exoplanet population.
+7. **Exoplanets and habitable worlds** ({ref}`lecture13`, {ref}`lecture14`): transit depths and detection bias, radial-velocity masses and bulk density, atmospheric scale heights and transmission spectroscopy, the habitable zone, direct imaging, the Drake equation.

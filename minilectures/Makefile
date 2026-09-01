@@ -1,4 +1,4 @@
-MINIS   = minilecture01 minilecture02 minilecture03 minilecture04 minilecture05 minilecture06
+MINIS   = minilecture01 minilecture02 minilecture03 minilecture04 minilecture05 minilecture06 minilecture07
 LATEXMK = latexmk -xelatex -interaction=nonstopmode
 
 .PHONY: all clean web assets $(MINIS)

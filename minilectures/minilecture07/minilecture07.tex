@@ -1,0 +1,168 @@
+% minilecture07.tex: Tutorial 7 mini-lecture: Exoplanets and Habitable Worlds
+% Planetary Systems, Kapteyn Institute, University of Groningen
+% A 5-10 minute recap, presented by the TAs at the start of Tutorial 7,
+% of the Lecture 13-14 concepts that Worksheet 7 trains.
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme and macros (shared with the lecture decks) ────────
+\usepackage{../../slides/common/beamerthemeIPS}
+\input{../../slides/common/macros}
+\graphicspath{{figures/}{../../slides/lecture13/figures/}{../../slides/lecture14/figures/}{../../slides/common/}}
+
+% ── Metadata ────────────────────────────────────────────────
+\title[T7 mini-lecture: Exoplanets and Habitable Worlds]{Tutorial 7 Mini-Lecture:\\Exoplanets and Habitable Worlds}
+\subtitle{The concepts behind Worksheet 7 \textbullet\ Lectures 13--14}
+\author{}
+\institute{Kapteyn Astronomical Institute\\University of Groningen}
+\date{2026}
+\titlebgcredit{JWST/NIRSpec transit of WASP-39 b. Credit: Alderson et al.\ (2023)}
+\titlebgopacity{0.60}
+
+% ════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Title slide ─────────────────────────────────────────────
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+
+% ── Roadmap ─────────────────────────────────────────────────
+\begin{frame}{What Worksheet 7 trains}
+  Five problems, all built on Lectures 13--14. The physics you need, per problem:
+  \vskip4pt\relax
+  \begin{enumerate}
+    \item \textbf{Transits}: the depth $(R_p/R_\star)^2$, the geometric probability $R_\star/a$, why the catalogue is biased.
+    \item \textbf{Radial velocities}: the semi-amplitude $K_\star$, from 51 Peg b to the Earth analogue, mass plus radius gives density.
+    \item \textbf{Transmission spectroscopy}: the scale height, the $2n_H H/R_p$ modulation, flat spectra and how eclipses break them.
+    \item \textbf{The habitable zone}: equilibrium temperature, the Kopparapu flux limits, scaling to K and M dwarfs.
+    \item \textbf{Direct imaging and Drake}: angular separations and contrast, the log-uniform Drake toy model.
+  \end{enumerate}
+  \vskip2pt\relax
+  \keyresult{Every problem has the shape and level of one exam question. All parts are analytical; no computer is needed.}
+\end{frame}
+
+% ── P1 ──────────────────────────────────────────────────────
+\begin{frame}{Transit depths and geometry}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Depth and probability from Lecture 13:
+    \[
+      \boxed{\delta = \left(\frac{R_p}{R_\star}\right)^2} \qquad p \approx \frac{R_\star}{a}
+    \]
+    \begin{itemize}
+      \item A hot Jupiter dims a Sun-like star by $\sim 1.5\%$; an Earth analogue by only $\sim 84$ ppm.
+      \item At $0.05$ AU the transit probability is $\sim 9\%$; at $1$ AU it drops to $\sim 0.5\%$.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{The catalogue is not the population}
+      Close-in planets transit more often, and small stars give deeper transits, so the raw catalogue over-represents both. Occurrence rates follow only after the selection bias is modelled out.
+    \end{block}
+  \end{columns}
+  \keyresult{Two small numbers, $(R_p/R_\star)^2$ and $R_\star/a$, decide what the transit method can see.}
+\end{frame}
+
+% ── P2 ──────────────────────────────────────────────────────
+\begin{frame}{Radial-velocity masses and densities}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    The stellar reflex semi-amplitude of Lecture 13:
+    \[
+      \boxed{K_\star = \left(\frac{2\pi G}{P}\right)^{1/3}\frac{m_p \sin i}{M_\star^{2/3}}}
+    \]
+    \begin{itemize}
+      \item 51 Peg b: $K_\star \approx 63\ \mathrm{m\,s^{-1}}$, six times the ELODIE precision.
+      \item An Earth analogue: $\approx 9\ \mathrm{cm\,s^{-1}}$, at the ESPRESSO photon limit but below the activity floor.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{From $m_p \sin i$ to composition}
+      RV alone gives a minimum mass. A transit forces $\sin i \approx 1$ and adds $R_p$, so mass and radius combine into a bulk density: K2-18 b at $\sim 2700\ \mathrm{kg\,m^{-3}}$ cannot be bare rock.
+    \end{block}
+  \end{columns}
+  \keyresult{The RV amplitude scales as $m_p P^{-1/3}$; combined with a transit it turns into a density and a first look at composition.}
+\end{frame}
+
+% ── P3 ──────────────────────────────────────────────────────
+\begin{frame}{Scale heights and transmission spectra}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    The atmospheric lever arm of Lecture 13:
+    \[
+      \boxed{H = \frac{k_\mathrm{B} T}{\mu\,u\,g}} \qquad \frac{\Delta\delta}{\delta} \approx \frac{2 n_H H}{R_p}
+    \]
+    \begin{itemize}
+      \item Hot Jupiter: $H \approx 630$ km and $\Delta\delta \approx 1120$ ppm, a signal even pre-JWST instruments could see.
+      \item Rocky $\mathrm{CO_2}$ planet: $H \approx 5.8$ km, a factor $\sim 109$ smaller signal.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{When the spectrum is flat}
+      An airless rock, a heavy compact atmosphere, and high clouds all look featureless in transmission. The $15\,\mu$m eclipse of TRAPPIST-1 b ($503$ K, matching the $508$ K bare-rock value) is what broke the tie there: a thick atmosphere is ruled out, a thin one not yet.
+    \end{block}
+  \end{columns}
+  \keyresult{Hot and light atmospheres are easy; cold and heavy ones hide, and thermal emission has to break the tie.}
+\end{frame}
+
+% ── P4 ──────────────────────────────────────────────────────
+\begin{frame}{Equilibrium temperature and the habitable zone}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Radiation balance and the flux limits of Lecture 14:
+    \[
+      \boxed{T_\mathrm{eq} = \left[\frac{L_\star(1-A_\mathrm{B})}{16\pi\sigma\epsilon d^2}\right]^{1/4}} \quad d = \sqrt{\frac{L_\star/L_\odot}{S_\mathrm{eff}}}\ \mathrm{AU}
+    \]
+    \begin{itemize}
+      \item Earth: $T_\mathrm{eq} \approx 255$ K; the $33$ K to the observed $288$ K is the greenhouse effect.
+      \item The Sun's zone spans $0.97$ to $1.69$ AU; at TRAPPIST-1 it shrinks to a few hundredths of an AU.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Small stars, mixed blessing}
+      M dwarfs offer deep transits and long lifetimes, but their habitable-zone planets are tidally locked, baked during the pre-main-sequence phase, and flared for Gyr. K dwarfs may be the best compromise.
+    \end{block}
+  \end{columns}
+  \keyresult{The habitable zone moves as $\sqrt{L_\star}$ while stellar lifetime grows as $M^{-2.5}$: the trade-offs are quantitative, not rhetorical.}
+\end{frame}
+
+% ── P5 ──────────────────────────────────────────────────────
+\begin{frame}{Direct imaging and the Drake equation}
+  \small
+  \begin{columns}[T]
+    \column{0.52\textwidth}
+    Small angles and honest priors from Lectures 13--14:
+    \[
+      \boxed{\theta[\mathrm{arcsec}] = \frac{a[\mathrm{AU}]}{d[\mathrm{pc}]}}
+    \]
+    \begin{itemize}
+      \item An Earth analogue at $10$ pc sits at $0.1$ arcsec but at $10^{-10}$ contrast: the contrast is the blocker, not the angle.
+      \item The M-dwarf habitable zone collapses to milliarcseconds: imaging and transits divide the sky between stellar types.
+    \end{itemize}
+
+    \column{0.44\textwidth}
+    \begin{block}{Drake as a framing tool}
+      With four factors log-uniform over ten decades, $\log_{10} N$ has mean $-20$ and $\sigma \approx 5.8$: the output restates the priors. ``We are alone in the galaxy'' is fully consistent with current knowledge.
+    \end{block}
+  \end{columns}
+  \keyresult{Direct imaging is a contrast problem; the Drake equation is a map of ignorance, and both statements are quantitative.}
+\end{frame}
+
+% ── Closer ──────────────────────────────────────────────────
+\begin{frame}{Working the worksheet}
+  \begin{itemize}
+    \item \textbf{Show your algebra.} The exam asks for the steps, not only the number.
+    \item Carry \textbf{4 significant figures} through intermediate steps; round at the end.
+    \item Use the \textbf{checkpoints} (``show that \ldots'') to verify your work and to keep moving if a step resists.
+    \item Qualitative parts want \textbf{2 to 3 sentences} of physics, not an essay.
+    \item Most parts close by asking what the number means: that interpretation is graded, not only the arithmetic.
+  \end{itemize}
+  \vskip8pt\relax
+  \keyresult{Worksheet and full solutions: \texttt{ips.formingworlds.space/worksheets.html}. We discuss questions, not presentations of the solutions.}
+\end{frame}
+
+\end{document}

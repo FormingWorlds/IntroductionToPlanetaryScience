@@ -15,4 +15,4 @@ Use them as a compact revision aid: if a slide feels unfamiliar, the correspondi
 | 4 | Surfaces & Interiors | {ref}`Lecture 7 <lecture07>`, {ref}`Lecture 8 <lecture08>` | [Download (PDF)](_static/minilectures/minilecture04.pdf) |
 | 5 | Terrestrial Planets | {ref}`Lecture 9 <lecture09>`, {ref}`Lecture 10 <lecture10>` | [Download (PDF)](_static/minilectures/minilecture05.pdf) |
 | 6 | Giant Planets & Small Bodies | {ref}`Lecture 11 <lecture11>`, {ref}`Lecture 12 <lecture12>` | [Download (PDF)](_static/minilectures/minilecture06.pdf) |
-| 7 | Exoplanets & Synthesis | {ref}`Lecture 13 <lecture13>`, {ref}`Lecture 14 <lecture14>` | Coming soon |
+| 7 | Exoplanets & Habitable Worlds | {ref}`Lecture 13 <lecture13>`, {ref}`Lecture 14 <lecture14>` | [Download (PDF)](_static/minilectures/minilecture07.pdf) |
