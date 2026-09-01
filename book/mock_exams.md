@@ -3,11 +3,11 @@
 
 Three mock exams and their full solutions are collected on this page as the course runs.
 They have the same shape and level as the final written exam and are the best gauge of what to expect.
-All three are in preparation and will appear here soon.
+The first is available below; the other two will appear here as the course runs.
 
 | # | Exam | Solutions |
 |---|---|---|
-| 1 | Coming soon | Coming soon |
+| 1 | [Mock exam 1 (PDF)](_static/exams/mockexam01.pdf) | [Solutions (PDF)](_static/exams/mockexam01_solutions.pdf) |
 | 2 | Coming soon | Coming soon |
 | 3 | Coming soon | Coming soon |
 

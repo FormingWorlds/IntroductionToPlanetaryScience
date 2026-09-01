@@ -589,7 +589,7 @@ The re-sit has the same format; if fewer than four students are enrolled, an ora
 - Each multi-step question carries 1 intermediate checkpoint, placed so an early stall does not cascade; fewer than the worksheets carry.
 - Formula policy: a short must-know list of 12 basic relations, published on the mock-exams page of the course website and as a downloadable PDF (`book/_static/exams/formulalist.pdf`, source in `exams/formulalist/`), is expected from memory; every other formula a question needs is printed inside the question. A constants-and-data box like the worksheets' is attached to the paper; there is no separate equation sheet, and derivations appear only as steps inside applied questions.
 - All numeric parts are solvable on a simple calculator from the data box, to 2 or 3 significant figures.
-- Marks per part are printed on the paper; the marking scheme maps points to grades, with the pass mark at 5.5.
+- Marks per part are printed on the paper; the marking scheme maps points to grades. The pass grade is 6.0, which is why the course entry states that a final grade higher than 5.5 is required to pass.
 - Pass floor is breadth-based: every question opens with an accessible part (a), about 35% of the points sit at reproduction level, and the hardest roughly 20% of the points discriminate the 8-to-10 grade range.
 - Closed book; students bring a calculator and a pen, nothing else is needed.
 - Duration: the scheduled slot is 2 hours, and the paper is sized for about 80 minutes of work for a well-prepared student, so the slot carries slack; the sizing check is that the instructor can solve the full paper in about 25 minutes. Exam Wed 28 Oct 2026, 15:00-17:00, Exam Hall 4 (5263.0226); re-sit Mon 25 Jan 2027, 15:00-17:00, Exam Hall 1 (5263.0102).

@@ -40,8 +40,24 @@ jobs:
       - name: Check figure collisions
         run: python scripts/figures/check_figure_collisions.py
 
+  check-exams:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check exam arithmetic
+        # stdlib-only scripts that recompute every number printed on each exam sheet
+        run: |
+          for f in scripts/exams/check_*.py; do python "$f"; done
+
   build:
-    needs: check-figures
+    needs: [check-figures, check-exams]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

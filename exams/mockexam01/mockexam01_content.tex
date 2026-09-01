@@ -1,0 +1,482 @@
+% Content of Mock exam 1, shared by the problem sheet and the solution sheet.
+% Solutions are wrapped in the `solution` environment and appear only when the
+% driver defines \ipsshowsolutions.
+
+% Marks per part, printed in the accent colour.
+\newcommand{\pts}[1]{{\normalfont\small\bfseries\color{ipsAccent}[#1~pts]}\enspace}
+
+\thispagestyle{fancy}
+
+\begingroup
+\noindent{\color{ipsAccent}\rule{\linewidth}{1.2pt}}\\[8pt]
+{\LARGE\bfseries\color{ipsPrimary} Mock exam 1\ifipssolutions: full solutions\fi\par}
+\vskip7pt
+{\normalsize\color{ipsAccent} Planetary Systems final exam practice \textbullet\ closed book \textbullet\ 120 minutes\par}
+\vskip3pt
+{\footnotesize Planetary Systems (WBAS002-05) \textbullet\ Kapteyn Astronomical Institute, University of Groningen\par}
+\vskip7pt
+\noindent{\color{ipsAccent}\rule{\linewidth}{0.6pt}}
+\vskip10pt
+\endgroup
+
+This mock exam has the same shape and level as the final exam: 6 questions of 15 points each, 90 points in total, in a 120-minute closed-book sitting where a calculator and a pen are all that is allowed.
+Your grade is $1 + \text{points}/10$; the pass mark of 6.0 corresponds to 50 points.
+The twelve relations on the exam formula list are assumed known; every other formula a question needs is printed in the question itself.
+Marks per part are shown in brackets, and the steps carry marks, not only the number: show your algebra.
+Some parts state an intermediate result (``show that\,\ldots''); use it to check your work, and to continue if a step resists.
+Carry at least four significant figures through the intermediate steps and round only at the end.
+
+\begin{given}[Constants and data]
+$G = 6.674 \times 10^{-11}\ \mathrm{m^3\,kg^{-1}\,s^{-2}}$ \quad
+$1\ \mathrm{AU} = 1.496 \times 10^{11}\ \mathrm{m}$ \quad
+$1\ \mathrm{yr} = 3.156 \times 10^{7}\ \mathrm{s} = 365.25\ \mathrm{d}$ \quad
+$1\ \mathrm{d} = 86\,400\ \mathrm{s}$ \quad
+$\Msun = 1.989 \times 10^{30}\ \mathrm{kg}$ \quad
+$\Rsun = 6.957 \times 10^{8}\ \mathrm{m}$ \quad
+$\Rjup = 71\,492\ \mathrm{km}$ \quad
+$\kB = 1.381 \times 10^{-23}\ \mathrm{J\,K^{-1}}$ \quad
+$m_u = 1.661 \times 10^{-27}\ \mathrm{kg}$ \quad
+$\sigma = 5.670 \times 10^{-8}\ \mathrm{W\,m^{-2}\,K^{-4}}$ \quad
+$S_0 = 1361\ \mathrm{W\,m^{-2}}$ (solar constant at $1\ \mathrm{AU}$)
+
+\vskip6pt
+\begin{tabular}{@{}llp{8.2cm}@{}}
+\toprule
+Body & $a$, $A$ & Further data \\
+\midrule
+Earth & $1.000\ \mathrm{AU}$, $A = 0.30$ & mean surface heat flux $0.092\ \mathrm{W\,m^{-2}}$ \\
+Venus & $0.723\ \mathrm{AU}$, $A = 0.77$ & surface $T = 737\ \mathrm{K}$, surface $P = 92\ \mathrm{bar}$, $g = 8.87\ \mathrm{m\,s^{-2}}$, $\mu = 43.4$, $c_p = 1130\ \mathrm{J\,kg^{-1}\,K^{-1}}$ \\
+Mars & $1.524\ \mathrm{AU}$, $A = 0.25$ & mean surface $T = 215\ \mathrm{K}$, atmospheric $\mathrm{D/H}$ 6 times Earth's, present surface water $\approx 25\ \mathrm{m}$ global equivalent layer \\
+Io & & $M = 8.93 \times 10^{22}\ \mathrm{kg}$, $R = 1821\ \mathrm{km}$, tidal heat output $1 \times 10^{14}\ \mathrm{W}$ \\
+\bottomrule
+\end{tabular}
+
+\vskip4pt
+{\footnotesize A total power $L$ spread over a sphere of radius $r$ gives a flux $L/(4\pi r^2)$; for sunlight this means $S = S_0/a^2$ with $a$ in AU.
+Present-day radiogenic heating rate of chondritic rock: $5 \times 10^{-12}\ \mathrm{W\,kg^{-1}}$.
+Half-life of $^{40}\mathrm{K}$: $1.25\ \mathrm{Gyr}$. Age of the solar system: $4.567\ \mathrm{Gyr}$.}
+\end{given}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{Route to Venus}
+
+Treat the orbits of Earth and Venus as circular and coplanar.
+A spacecraft transfers between them on an ellipse whose aphelion touches Earth's orbit and whose perihelion touches Venus's orbit.
+At each end the spacecraft fires its engine briefly (a \emph{burn}); a burn along the direction of motion (\emph{prograde}) speeds it up, a burn against it (\emph{retrograde}) slows it down.
+Work entirely in the Sun's gravitational field and ignore the gravity of the planets themselves.
+The vis-viva equation gives the speed at distance $r$ on an orbit with semi-major axis $a$:
+\[
+  v^2 = G \Msun \left( \frac{2}{r} - \frac{1}{a} \right).
+\]
+
+\parti \pts{2} Compute the orbital period of Venus, in days.
+
+\begin{solution}
+Kepler's third law with the Sun as central mass, in ratio to Earth's orbit
+($P$ in years, $a$ in AU):
+\[
+  P = a^{3/2} = 0.723^{3/2} = 0.61476\ \mathrm{yr} = 0.61476 \times 365.25\ \mathrm{d} = 224.54\ \mathrm{d}.
+\]
+\answer{$P_{\mathrm{V}} = 0.6148\ \mathrm{yr} = 224.5\ \mathrm{d}$.}
+\end{solution}
+
+\parti \pts{4} Compute the semi-major axis of the transfer ellipse, and show that the flight to Venus takes $146.0$ days.
+
+\begin{solution}
+The ellipse touches Earth's orbit at aphelion and Venus's orbit at perihelion, so its major axis spans both orbital radii:
+\[
+  a_{\mathrm{t}} = \frac{1.000 + 0.723}{2}\ \mathrm{AU} = 0.8615\ \mathrm{AU}.
+\]
+The flight is half an orbit of this ellipse:
+\[
+  t = \frac{P_{\mathrm{t}}}{2} = \frac{0.8615^{3/2}}{2}\ \mathrm{yr} = \frac{0.79962}{2}\ \mathrm{yr}
+    = 0.39981\ \mathrm{yr} = 146.03\ \mathrm{d}.
+\]
+\answer{$a_{\mathrm{t}} = 0.8615\ \mathrm{AU}$; the flight takes $146.0\ \mathrm{d}$, about five months.}
+\end{solution}
+
+\parti \pts{4} The spacecraft starts at the aphelion of the transfer ellipse, on Earth's orbit.
+Compute its speed there and the speed of Earth on its own orbit, and state the magnitude and direction (prograde or retrograde) of the departure burn.
+
+\begin{solution}
+Vis-viva at $r = 1.000\ \mathrm{AU} = 1.496 \times 10^{11}\ \mathrm{m}$ with
+$a_{\mathrm{t}} = 0.8615\ \mathrm{AU} = 1.2888 \times 10^{11}\ \mathrm{m}$ and
+$G\Msun = 6.674 \times 10^{-11} \times 1.989 \times 10^{30} = 1.3275 \times 10^{20}\ \mathrm{m^3\,s^{-2}}$:
+\begin{align*}
+  v^2 &= 1.3275 \times 10^{20} \left( \frac{2}{1.496 \times 10^{11}} - \frac{1}{1.2888 \times 10^{11}} \right) \\
+      &= 1.3275 \times 10^{20} \times 5.6098 \times 10^{-12} = 7.4469 \times 10^{8}\ \mathrm{m^2\,s^{-2}},
+\end{align*}
+so $v = 27.29\ \mathrm{km\,s^{-1}}$.
+Earth moves on a circular orbit:
+\[
+  v_{\mathrm{c}} = \sqrt{\frac{G\Msun}{r}} = \sqrt{\frac{1.3275 \times 10^{20}}{1.496 \times 10^{11}}} = 29.79\ \mathrm{km\,s^{-1}}.
+\]
+The transfer speed at aphelion is \emph{lower} than Earth's orbital speed, so the spacecraft must slow down relative to the Sun:
+\[
+  \Delta v = 29.79 - 27.29 = 2.50\ \mathrm{km\,s^{-1}}, \quad \text{retrograde}.
+\]
+\answer{$v_{\mathrm{aph}} = 27.29\ \mathrm{km\,s^{-1}}$, $v_{\mathrm{c,E}} = 29.79\ \mathrm{km\,s^{-1}}$: a retrograde burn of $2.50\ \mathrm{km\,s^{-1}}$.
+Travelling \emph{inward} means braking, the opposite of a transfer to Mars.}
+\end{solution}
+
+\parti \pts{3} Launch opportunities repeat with the \emph{synodic period} $S$, the time between successive identical alignments of Earth and Venus.
+Starting from the angular speeds $2\pi/P$ of the two planets, show that
+\[
+  \frac{1}{S} = \frac{1}{P_{\mathrm{V}}} - \frac{1}{P_{\mathrm{E}}},
+\]
+and compute $S$ in days.
+
+\begin{solution}
+Venus gains angle on Earth at the rate $2\pi/P_{\mathrm{V}} - 2\pi/P_{\mathrm{E}}$.
+The same alignment recurs when the gained angle reaches $2\pi$, after a time $S$:
+\[
+  \frac{2\pi}{S} = \frac{2\pi}{P_{\mathrm{V}}} - \frac{2\pi}{P_{\mathrm{E}}}
+  \quad \Longrightarrow \quad
+  \frac{1}{S} = \frac{1}{P_{\mathrm{V}}} - \frac{1}{P_{\mathrm{E}}}.
+\]
+Numerically, with $P_{\mathrm{V}} = 0.61476\ \mathrm{yr}$ and $P_{\mathrm{E}} = 1\ \mathrm{yr}$:
+\[
+  \frac{1}{S} = 1.6266 - 1.0000 = 0.6266\ \mathrm{yr^{-1}}
+  \quad \Longrightarrow \quad
+  S = 1.5958\ \mathrm{yr} = 582.9\ \mathrm{d}.
+\]
+\answer{$S = 1.596\ \mathrm{yr} = 582.9\ \mathrm{d}$: a launch window to Venus opens about every 19 months.}
+\end{solution}
+
+\parti \pts{2} At launch, must Venus lead or trail Earth along its orbit for the spacecraft to meet it at arrival? Compute the required angle.
+
+\begin{solution}
+During the flight of $0.39981\ \mathrm{yr}$, Venus sweeps
+\[
+  360^\circ \times \frac{0.39981}{0.61476} = 234.1^\circ,
+\]
+while the spacecraft sweeps $180^\circ$ from aphelion to perihelion.
+Venus must therefore start $234.1^\circ - 180^\circ = 54.1^\circ$ \emph{behind} the launch point:
+it trails Earth by $54.1^\circ$.
+\answer{Venus must trail Earth by $54.1^\circ$ at launch.
+For an inward transfer the target trails; for an outward transfer (Earth to Mars) it leads.}
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{Beneath the clouds of Venus}
+
+The surface conditions of Venus and the properties of its $\mathrm{CO_2}$-dominated atmosphere are listed in the data table.
+
+\parti \pts{3} Assume the atmosphere near the surface is isothermal at the surface temperature.
+Show that its pressure scale height is $H = 15.9\ \mathrm{km}$.
+
+\begin{solution}
+\[
+  H = \frac{\kB T}{\mu\, m_u\, g}
+    = \frac{1.381 \times 10^{-23} \times 737}{43.4 \times 1.661 \times 10^{-27} \times 8.87}
+    = \frac{1.0178 \times 10^{-20}}{6.3942 \times 10^{-25}}
+    = 1.5918 \times 10^{4}\ \mathrm{m}.
+\]
+\answer{$H = 15.92\ \mathrm{km}$, about twice Earth's $8.5\ \mathrm{km}$: the higher temperature more than compensates the heavier gas and the slightly weaker gravity.}
+\end{solution}
+
+\parti \pts{4} In this isothermal approximation the pressure falls with altitude as $P(z) = P_0\, e^{-z/H}$.
+At what altitude does the pressure fall to $1\ \mathrm{bar}$?
+The $1\ \mathrm{bar}$ level on Venus actually sits near $50\ \mathrm{km}$.
+Explain in 1 to 2 sentences why the isothermal estimate overshoots.
+
+\begin{solution}
+Hydrostatic balance with constant $H$ gives $P(z) = P_0\, e^{-z/H}$, so
+\[
+  z = H \ln \frac{P_0}{P} = 15.918 \times \ln 92\ \mathrm{km} = 15.918 \times 4.5218\ \mathrm{km} = 71.98\ \mathrm{km}.
+\]
+The estimate overshoots because the real atmosphere cools with altitude: the local scale height $H \propto T$ shrinks with height, so the pressure falls off faster than the surface-temperature value predicts.
+\answer{$z \approx 72\ \mathrm{km}$ in the isothermal approximation, versus $\approx 50\ \mathrm{km}$ in reality: temperature, and with it $H$, decreases with altitude.}
+\end{solution}
+
+\parti \pts{4} Below the clouds the temperature profile of Venus is close to dry adiabatic, with lapse rate
+\[
+  \Gamma = \frac{g}{c_p}.
+\]
+Compute $\Gamma$ and the temperature at $50\ \mathrm{km}$ altitude.
+
+\begin{solution}
+\[
+  \Gamma = \frac{8.87}{1130} = 7.850 \times 10^{-3}\ \mathrm{K\,m^{-1}} = 7.85\ \mathrm{K\,km^{-1}},
+\]
+about $0.8\ \mathrm{K}$ per $100\ \mathrm{m}$ of altitude.
+Descending from the surface value:
+\[
+  T(50\ \mathrm{km}) = 737 - 7.850 \times 50 = 737 - 392.5 = 344.5\ \mathrm{K}.
+\]
+\answer{$\Gamma = 7.85\ \mathrm{K\,km^{-1}}$; $T(50\ \mathrm{km}) \approx 345\ \mathrm{K}$, near the cloud deck conditions where temperatures approach the habitable range.}
+\end{solution}
+
+\parti \pts{4} Judge this claim with a supporting calculation, in 3 to 4 sentences:
+\emph{``Venus is hotter than Earth at the surface because its clouds absorb more sunlight.''}
+
+\begin{solution}
+False.
+The clouds \emph{reflect} sunlight: with $A = 0.77$, Venus absorbs
+\[
+  \frac{S_{\mathrm{V}}}{4}(1 - A) = \frac{1361/0.723^2}{4} \times 0.23 = \frac{2603.6}{4} \times 0.23 = 149.7\ \mathrm{W\,m^{-2}},
+\]
+\emph{less} than Earth's $\frac{1361}{4} \times 0.70 = 238.2\ \mathrm{W\,m^{-2}}$.
+The corresponding equilibrium temperatures are $T_{\mathrm{eq,V}} = (149.7/\sigma)^{1/4} = 227\ \mathrm{K}$ and $T_{\mathrm{eq,E}} = 255\ \mathrm{K}$: without an atmosphere Venus would be the \emph{colder} planet.
+The $737\ \mathrm{K}$ surface is the work of the $92\ \mathrm{bar}$ $\mathrm{CO_2}$ atmosphere, whose infrared opacity traps outgoing thermal radiation (a greenhouse warming of over $500\ \mathrm{K}$), not of sunlight absorbed in the clouds.
+\answer{False: Venus absorbs less sunlight per square metre than Earth ($150$ versus $238\ \mathrm{W\,m^{-2}}$); the heat comes from the $\mathrm{CO_2}$ greenhouse.}
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{Io's heat engine}
+
+Io, the innermost Galilean moon of Jupiter, is the most volcanically active body in the solar system.
+Its mass, radius, and measured heat output are listed in the data table.
+
+\parti \pts{2} Compute Io's mean density. Is Io made mostly of rock or of ice?
+
+\begin{solution}
+\[
+  \bar{\rho} = \frac{M}{\frac{4}{3}\pi R^3}
+             = \frac{8.93 \times 10^{22}}{\frac{4}{3}\pi (1.821 \times 10^{6})^3}
+             = \frac{8.93 \times 10^{22}}{2.5294 \times 10^{19}}
+             = 3530\ \mathrm{kg\,m^{-3}}.
+\]
+\answer{$\bar{\rho} = 3530\ \mathrm{kg\,m^{-3}}$: rock. Ice-rich bodies have densities of $1000$ to $2000\ \mathrm{kg\,m^{-3}}$.}
+\end{solution}
+
+\parti \pts{3} Compute Io's mean surface heat flux and compare it with Earth's.
+
+\begin{solution}
+\[
+  q = \frac{L}{4\pi R^2} = \frac{1 \times 10^{14}}{4\pi (1.821 \times 10^{6})^2}
+    = \frac{1 \times 10^{14}}{4.1672 \times 10^{13}} = 2.400\ \mathrm{W\,m^{-2}}.
+\]
+This is $2.400/0.092 \approx 26$ times Earth's mean surface heat flux, from a body of only $1.5\%$ of Earth's mass.
+\answer{$q = 2.40\ \mathrm{W\,m^{-2}}$, about $26$ times Earth's $0.092\ \mathrm{W\,m^{-2}}$.}
+\end{solution}
+
+\parti \pts{3} Explain in 2 to 3 sentences where Io's heat comes from, and why the mechanism would shut down if Io were the only large moon of Jupiter.
+
+\begin{solution}
+Io's orbit is kept slightly eccentric ($e \approx 0.004$) by the 4:2:1 Laplace resonance with Europa and Ganymede, so its distance from Jupiter oscillates every orbit and the varying tidal deformation flexes and heats the interior.
+The heating is paid for by orbital energy.
+Without the resonance, this same tidal dissipation would circularise the orbit in a time short compared to the age of the solar system, the flexing would cease, and the heat source would shut down.
+\answer{Tidal dissipation, sustained by the resonance-forced eccentricity; alone, Io's orbit would circularise and the heating would stop.}
+\end{solution}
+
+\parti \pts{4} Judge this claim with a supporting calculation, in 2 to 3 sentences:
+\emph{``Io's volcanism is powered by radioactive decay, like the interior heat of Earth.''}
+
+\begin{solution}
+Radiogenic heating at the chondritic rate would supply
+\[
+  L_{\mathrm{rad}} = 5 \times 10^{-12} \times 8.93 \times 10^{22} = 4.465 \times 10^{11}\ \mathrm{W},
+\]
+a factor $1 \times 10^{14} / 4.465 \times 10^{11} \approx 220$ short of the observed output.
+Radioactive decay is therefore a negligible contributor to Io's heat budget; the volcanism is powered by tidal dissipation.
+\answer{False by a factor of about $220$: radiogenic heating yields $\sim 4.5 \times 10^{11}\ \mathrm{W}$ against the observed $10^{14}\ \mathrm{W}$.}
+\end{solution}
+
+\parti \pts{3} The Moon has nearly the same size and density as Io, yet shows no volcanic activity today.
+Explain the difference in 2 to 3 sentences.
+
+\begin{solution}
+The Moon has no resonance partner forcing its eccentricity, so tidal heating by Earth is negligible today.
+Its only remaining heat sources, primordial heat and radioactive decay, are too weak for a body this small: small bodies have a large surface-to-volume ratio and cooled off long ago, which is why lunar mare volcanism ended billions of years ago.
+Io stays molten only because the resonance keeps feeding orbital energy into its interior.
+\answer{No forced eccentricity means no tidal heating; primordial and radiogenic heat alone cannot keep a Moon-sized body active.}
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{Reading time from rock}
+
+Planetary surfaces are dated in two ways: relatively, by crater counting, and absolutely, by radiometric dating of samples.
+The decay law and the half-life relation are on the formula list; the half-life of $^{40}\mathrm{K}$ is in the data table.
+
+\parti \pts{3} Explain in 3 to 4 sentences how crater densities order planetary surfaces in time, and what anchors the \emph{absolute} ages of lunar surfaces.
+
+\begin{solution}
+Impacts accumulate over time, so an older surface has collected more craters per unit area than a younger one: crater density gives a relative age ordering.
+On its own, a crater count cannot give an age in years, because that requires knowing the impact rate and its history.
+For the Moon, the Apollo and Luna missions returned rocks from surfaces whose crater densities had been measured; radiometric ages of those samples anchor the lunar crater-density-versus-age curve.
+Surfaces without samples are dated by interpolating along this calibrated curve.
+\answer{Craters accumulate with time (relative ages); returned samples with radiometric ages calibrate the lunar curve (absolute ages).}
+\end{solution}
+
+\parti \pts{5} A lunar mare basalt contains 7 times as many $^{40}\mathrm{Ar}$ atoms as $^{40}\mathrm{K}$ atoms.
+Assume the rock has retained all argon since it solidified, and that every decayed $^{40}\mathrm{K}$ atom became $^{40}\mathrm{Ar}$ (in reality about $11\%$ do; ignore this here).
+Show first that one eighth of the original $^{40}\mathrm{K}$ remains, then compute the age of the rock.
+
+\begin{solution}
+Every $^{40}\mathrm{Ar}$ atom was once a $^{40}\mathrm{K}$ atom, so the original potassium inventory is the sum of both:
+\[
+  \frac{N}{N_0} = \frac{N_{\mathrm{K}}}{N_{\mathrm{K}} + N_{\mathrm{Ar}}} = \frac{1}{1 + 7} = \frac{1}{8}.
+\]
+One eighth is $(1/2)^3$: three half-lives have elapsed,
+\[
+  t = 3 \times 1.25\ \mathrm{Gyr} = 3.75\ \mathrm{Gyr}.
+\]
+Equivalently, from the decay law: $t = t_{1/2} \ln 8 / \ln 2 = 1.25 \times 3 = 3.75\ \mathrm{Gyr}$.
+\answer{$t = 3.75\ \mathrm{Gyr}$, in the age range of the lunar maria.
+The real $^{40}\mathrm{K}$ decay branches: only about $11\%$ becomes $^{40}\mathrm{Ar}$ (the rest becomes $^{40}\mathrm{Ca}$), which the full K-Ar method corrects for.}
+\end{solution}
+
+\parti \pts{3} By what factor was a planet's $^{40}\mathrm{K}$ inventory larger at the formation of the solar system than it is today?
+State in 1 sentence what this implies for the heat budgets of young planets.
+
+\begin{solution}
+Running the decay law backwards over the age of the solar system:
+\[
+  \frac{N_0}{N} = 2^{t/t_{1/2}} = 2^{4.567/1.25} = 2^{3.654} = 12.6.
+\]
+Young planets therefore received an order of magnitude more heating from $^{40}\mathrm{K}$ than planets do today, which contributed to early melting and differentiation.
+\answer{A factor of $12.6$.
+The total radiogenic heating (all isotopes combined) was about a factor $5$ higher at formation, smaller than the $^{40}\mathrm{K}$ factor because uranium and thorium decay more slowly.}
+\end{solution}
+
+\parti \pts{4} A volcanic plain on Mars has the same crater density as the lunar mare from part~(b).
+A fellow student concludes that both surfaces are $3.75\ \mathrm{Gyr}$ old.
+Judge this conclusion in 2 to 3 sentences.
+
+\begin{solution}
+The conclusion does not follow: equal crater density implies equal age only if both surfaces accumulated craters at the same rate, and the impact rate at Mars differs from the lunar one (Mars sits next to the asteroid belt, and gravitational focusing and target properties differ too).
+The sample-calibrated chronology exists only for the Moon; applying it to Mars requires a model-based correction of the impact rate, which introduces substantial uncertainty.
+The Martian plain could be systematically younger or older than $3.75\ \mathrm{Gyr}$ even with an identical count.
+\answer{Invalid: the lunar calibration transfers to Mars only through a modelled impact-rate correction, so equal density does not mean equal age.}
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{The climate history of Mars}
+
+Orbital and surface data for Mars are listed in the data table.
+Geological evidence (valley networks, lake beds) shows that liquid water flowed on early Mars.
+
+\parti \pts{3} Show first that the stellar constant at Mars is $S = 586\ \mathrm{W\,m^{-2}}$, then compute the equilibrium temperature of Mars and compare its present greenhouse warming with Earth's $33\ \mathrm{K}$.
+
+\begin{solution}
+The solar flux falls off with the inverse square of distance:
+\[
+  S = \frac{S_0}{a^2} = \frac{1361}{1.524^2} = \frac{1361}{2.3226} = 586.0\ \mathrm{W\,m^{-2}}.
+\]
+Energy balance with $A = 0.25$:
+\[
+  T_{\mathrm{eq}} = \left[ \frac{S(1-A)}{4\sigma} \right]^{1/4}
+                  = \left[ \frac{586.0 \times 0.75}{4 \times 5.670 \times 10^{-8}} \right]^{1/4}
+                  = \left( 1.9378 \times 10^{9} \right)^{1/4} = 209.8\ \mathrm{K}.
+\]
+The mean surface temperature is $215\ \mathrm{K}$, so the greenhouse warming is only about $5\ \mathrm{K}$, against Earth's $33\ \mathrm{K}$: the thin $6\ \mathrm{mbar}$ $\mathrm{CO_2}$ atmosphere traps very little infrared radiation.
+\answer{$T_{\mathrm{eq}} = 210\ \mathrm{K}$; greenhouse warming $\approx 5\ \mathrm{K}$, roughly $6$ times weaker than Earth's.}
+\end{solution}
+
+\parti \pts{4} Deuterium (D) is twice as heavy as ordinary hydrogen (H) and escapes to space far less easily.
+Assume early Mars started with the same D/H ratio as Earth today.
+Use the measured D/H enrichment to estimate the minimum depth of the water layer early Mars possessed, and explain in 1 to 2 sentences why your estimate is a lower limit.
+
+\begin{solution}
+If hydrogen escapes but deuterium is fully retained, the number of D atoms is conserved while the water reservoir shrinks, so D/H rises inversely with reservoir size:
+\[
+  \frac{(\mathrm{D/H})_{\mathrm{now}}}{(\mathrm{D/H})_{\mathrm{early}}} = \frac{R_{\mathrm{early}}}{R_{\mathrm{now}}} = 6
+  \quad \Longrightarrow \quad
+  R_{\mathrm{early}} = 6 \times 25\ \mathrm{m} = 150\ \mathrm{m}
+\]
+global equivalent layer, taking early Mars to have started at Earth-like D/H.
+This is a lower limit because deuterium does escape too, only more slowly: real fractionation is incomplete, so a given enrichment corresponds to more lost water than the perfect-retention estimate, and water bound in subsurface ice adds to the early inventory as well.
+\answer{$R_{\mathrm{early}} \gtrsim 150\ \mathrm{m}$ global equivalent layer, enough for a substantial northern ocean.}
+\end{solution}
+
+\parti \pts{4} On Earth, the carbonate-silicate cycle stabilises the climate over millions of years.
+Explain in 3 to 4 sentences how this feedback works, and why it failed on Mars.
+
+\begin{solution}
+On Earth, $\mathrm{CO_2}$ is removed from the atmosphere by silicate weathering, whose rate increases with temperature and rainfall, and the carbon is buried on the seafloor as carbonate; subduction and volcanism return the $\mathrm{CO_2}$ to the atmosphere.
+A warmer climate weathers faster and draws $\mathrm{CO_2}$ down, a colder climate weathers slower and lets volcanic $\mathrm{CO_2}$ accumulate: a negative feedback that acts as a thermostat.
+The cycle needs sustained volcanic outgassing to close the loop.
+Mars, being small, cooled quickly: volcanism waned and there is no plate tectonics to recycle buried carbonate, so weathered $\mathrm{CO_2}$ stayed locked in the crust while further atmosphere was stripped to space, and the thermostat broke with the atmosphere thinning and the climate freezing.
+\answer{Weathering draws down $\mathrm{CO_2}$ when warm, volcanism restores it: a thermostat.
+Mars lost the volcanic return path when its interior cooled, so the feedback could not maintain the atmosphere.}
+\end{solution}
+
+\parti \pts{4} A water-rich planet cannot radiate more than roughly $280$ to $310\ \mathrm{W\,m^{-2}}$ from a moist atmosphere (the runaway greenhouse limit).
+Judge this claim with a supporting calculation, in 3 to 4 sentences, keeping Mars's albedo unchanged:
+\emph{``If Mars orbited at Venus's distance, it would undergo a runaway greenhouse.''}
+
+\begin{solution}
+At $a = 0.723\ \mathrm{AU}$, keeping Mars's albedo $A = 0.25$, the absorbed flux would be
+\[
+  \frac{S_0/a^2}{4}(1 - A) = \frac{2603.6}{4} \times 0.75 = 488.2\ \mathrm{W\,m^{-2}},
+\]
+well above the runaway limit of $\approx 300\ \mathrm{W\,m^{-2}}$: a water-rich planet at that distance cannot balance its energy budget and its oceans boil into steam.
+For \emph{present-day} Mars the claim still fails in one respect: a runaway requires a condensable water reservoir to evaporate, and modern Mars retains only $\sim 25\ \mathrm{m}$ global equivalent layer of water.
+Early, water-rich Mars at Venus's distance would run away; today's dry Mars would merely become hot.
+\answer{The flux comparison supports a runaway ($488 > 300\ \mathrm{W\,m^{-2}}$), but only for a Mars that still has its water; the claim is true for early Mars and only partially for the present planet.}
+\end{solution}
+
+
+% ════════════════════════════════════════════════════════════
+\problem{A planet from a light curve}
+
+A transit survey observes a Sun-like star ($M_* = 1.00\ \Msun$, $R_* = 1.00\ \Rsun$).
+The star's brightness dips by $1.00\%$, and the dip repeats every $3.50$ days.
+The transit depth $\delta$ measures the sky-projected area ratio:
+\[
+  \delta = \left( \frac{R_{\mathrm{p}}}{R_*} \right)^2.
+\]
+
+\parti \pts{3} Compute the radius of the transiting object, in Jupiter radii.
+
+\begin{solution}
+\[
+  \frac{R_{\mathrm{p}}}{R_*} = \sqrt{\delta} = \sqrt{0.0100} = 0.100
+  \quad \Longrightarrow \quad
+  R_{\mathrm{p}} = 0.100 \times 6.957 \times 10^{8}\ \mathrm{m} = 6.957 \times 10^{7}\ \mathrm{m} = 69\,570\ \mathrm{km}.
+\]
+In Jupiter radii: $69\,570 / 71\,492 = 0.973$.
+\answer{$R_{\mathrm{p}} = 0.97\ \Rjup$: Jupiter-sized.}
+\end{solution}
+
+\parti \pts{4} Show that the orbital semi-major axis is $a = 0.0451\ \mathrm{AU}$.
+
+\begin{solution}
+Kepler's third law with $P = 3.50 \times 86\,400 = 3.024 \times 10^{5}\ \mathrm{s}$ and
+$G M_* = 1.3275 \times 10^{20}\ \mathrm{m^3\,s^{-2}}$:
+\[
+  a^3 = \frac{G M_* P^2}{4\pi^2}
+      = \frac{1.3275 \times 10^{20} \times (3.024 \times 10^{5})^2}{39.478}
+      = \frac{1.2139 \times 10^{31}}{39.478}
+      = 3.0749 \times 10^{29}\ \mathrm{m^3},
+\]
+so $a = 6.750 \times 10^{9}\ \mathrm{m} = 0.04512\ \mathrm{AU}$.
+(Equivalently, in solar units: $a = P^{2/3}$ with $P = 3.50/365.25 = 9.582 \times 10^{-3}\ \mathrm{yr}$ gives the same $0.0451\ \mathrm{AU}$.)
+\answer{$a = 0.0451\ \mathrm{AU}$, about $9.7$ stellar radii: the planet orbits $22$ times closer to its star than Earth does to the Sun.}
+\end{solution}
+
+\parti \pts{4} Compute the stellar constant at the planet's orbit and, assuming a Bond albedo of $A = 0.10$, its equilibrium temperature.
+What kind of planet is this?
+
+\begin{solution}
+The star is Sun-like, so the flux at $a$ follows from the solar constant:
+\[
+  S = \frac{S_0}{a^2} = \frac{1361}{0.04512^2} = \frac{1361}{2.0358 \times 10^{-3}} = 6.685 \times 10^{5}\ \mathrm{W\,m^{-2}},
+\]
+about $490$ times the flux at Earth.
+Energy balance:
+\[
+  T_{\mathrm{eq}} = \left[ \frac{S(1-A)}{4\sigma} \right]^{1/4}
+                  = \left[ \frac{6.685 \times 10^{5} \times 0.90}{4 \times 5.670 \times 10^{-8}} \right]^{1/4}
+                  = \left( 2.6529 \times 10^{12} \right)^{1/4} = 1276\ \mathrm{K}.
+\]
+A Jupiter-sized planet at $1280\ \mathrm{K}$ on a $3.5$-day orbit is a \emph{hot Jupiter}.
+\answer{$S = 6.69 \times 10^{5}\ \mathrm{W\,m^{-2}}$, $T_{\mathrm{eq}} \approx 1280\ \mathrm{K}$: a hot Jupiter.}
+\end{solution}
+
+\parti \pts{4} Judge this claim in 3 to 4 sentences:
+\emph{``From this light curve alone we know that the object is a gas giant planet.''}
+
+\begin{solution}
+The light curve constrains only the \emph{size}: a $1\%$ dip around a Sun-like star means a Jupiter-sized object, but says nothing about its mass.
+Composition follows from bulk density, which needs mass and radius together, and the mass must come from a second method, radial velocity monitoring of the host star.
+Jupiter-sized radii are shared by objects spanning a huge mass range (gas giants, brown dwarfs, even the smallest stars), so the transit alone cannot exclude the heavier impostors.
+Historically this is exactly how HD~209458~b confirmed hot Jupiters as gas giants: the transit radius combined with the radial velocity mass gave a gas-dominated bulk density.
+\answer{Overstated: the transit gives the radius; only the density, via a radial velocity mass, identifies a gas giant.}
+\end{solution}
