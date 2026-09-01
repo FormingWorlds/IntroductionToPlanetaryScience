@@ -171,6 +171,16 @@ The stack looks roughly like this:
 
 Each level in the stack is necessary. None of them by itself is sufficient. What makes habitability a *systems* property rather than a checklist is that the levels are *coupled*: the star drives the photochemistry, the photochemistry feeds back on the cloud structure, the cloud structure changes the albedo and the temperature, the temperature controls the weathering, the weathering pulls $\mathrm{CO_2}$ out of the atmosphere, the loss of $\mathrm{CO_2}$ depends on the interior outgassing rate, and the outgassing rate depends on the tectonic regime. Break any link and the system can drift into a regime where surface liquid water is no longer thermodynamically possible.
 
+The same stack, organised by the part of the system each factor belongs to, is drawn in {numref}`fig:l14:habitability-factors` from {cite:t}`MeadowsBarnes2018`. The diagram sorts the known habitability factors into stellar, planetary-system, and planetary properties, and colour-codes each by how we can access it: some can be observed directly, some require models to interpret the observations, and some are reachable only through theory. That last distinction matters for the observational programme of the next section, because it tells us which of these couplings a telescope can actually test.
+
+```{figure} figures/meadowsbarnes2018_habitability_factors.avif
+:align: center
+:name: fig:l14:habitability-factors
+:width: 80%
+
+Factors affecting planetary habitability: the currently understood stellar, planetary-system, and planetary properties that may impact whether a planet can sustain surface liquid water. Font colour denotes how each characteristic is accessible: blue for properties that could be observed directly with sufficiently powerful telescopes, green for those that require modelling interpretation, possibly constrained by observations, and orange for properties or processes accessible primarily through theoretical modelling. The larger the number of these factors that can be determined for a habitable zone candidate, the more robust the assessment of its habitability. Reproduced from {cite:t}`MeadowsBarnes2018`.
+```
+
 ### The habitability coupling loop
 
 The atmospheric segment of this coupled system is drawn in {numref}`fig:l14:tidal-couplings`, a schematic from the {cite:t}`Wordsworth2022` review for a tidally locked rocky planet, one whose rotation period equals its orbital period, so that the same hemisphere always faces the star. The schematic shows the atmosphere's response to one-sided irradiation: clouds form and reflect starlight near the substellar point, super-rotating winds transport heat from the dayside to the nightside, and condensable volatiles are cold-trapped at the antistellar point. In the extreme case the atmosphere collapses onto the nightside surface. Each arrow on the schematic corresponds to a process that the course has covered.
