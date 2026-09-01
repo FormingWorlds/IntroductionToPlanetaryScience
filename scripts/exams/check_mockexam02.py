@@ -21,7 +21,6 @@ from _checker_common import SIGMA, check, check_points, teq, verdict
 # SIGMA (Stefan-Boltzmann) is imported above with the shared helpers.
 G = 6.674e-11  # m^3 kg^-1 s^-2
 AU = 1.496e11  # m
-YR_S = 3.156e7  # s
 YR_D = 365.25  # d
 MSUN = 1.989e30  # kg
 KB = 1.381e-23  # J K^-1
@@ -30,8 +29,6 @@ S0 = 1361.0  # W m^-2 at 1 AU
 
 R_EARTH = 6.371e6  # m
 RHO_EARTH = 5514.0  # kg m^-3
-M_OCEAN = 1.4e21  # kg
-H_ESCAPE = 3.0  # kg s^-1
 A_VENUS = 0.723  # AU
 A_MARS = 1.524  # AU
 M_MARS, R_MARS = 6.417e23, 3.390e6
@@ -40,8 +37,7 @@ M_SAT, R_SAT = 5.683e26, 5.8232e7
 TEFF_SAT = 95.0  # K
 M_TITAN, R_TITAN, T_TITAN = 1.345e23, 2.575e6, 160.0
 M_MOON, R_MOON, T_MOON = 7.342e22, 1.737e6, 390.0
-Q_PERI, Q_APH, ALB_COMET = 0.59, 35.1, 0.04
-T_SUBL = 170.0  # K, ice sublimation threshold (data-box footnote)
+Q_PERI, Q_APH = 0.59, 35.1
 
 # Values printed in the problem statements
 CP_ROCK = 1000.0  # J kg^-1 K^-1
@@ -77,25 +73,6 @@ check("(b) v_p checkpoint [km/s]", v_peri / 1e3, 54.39)
 v_aph = 54.39 * Q_PERI / Q_APH  # hands forward the printed 54.39
 check("(b) v_a [km/s]", v_aph, 0.914)
 check("(b) speed ratio ~60", v_peri / 1e3 / v_aph, 60.0, rtol=1e-2)
-
-s_peri = S0 / Q_PERI**2
-check("(c) S at perihelion", s_peri, 3910.0)
-inner_p = 3910.0 * (1.0 - ALB_COMET) / (4.0 * SIGMA)
-check("(c) T_p^4 argument", inner_p, 1.6550e10)
-t_peri = teq(s_peri, ALB_COMET)
-check("(c) T_p [K]", t_peri, 358.7)
-s_aph = S0 / Q_APH**2
-check("(c) S at aphelion", s_aph, 1.105)
-inner_a = 1.105 * (1.0 - ALB_COMET) / (4.0 * SIGMA)
-check("(c) T_a^4 argument", inner_a, 4.6771e6)
-t_aph = teq(s_aph, ALB_COMET)
-check("(c) T_a [K]", t_aph, 46.5)
-ratio_sq = (358.7 / T_SUBL) ** 2  # hands forward the displayed 358.7
-check("(c) (T_p/170)^2", ratio_sq, 4.452)
-check("(c) activity distance [AU]", Q_PERI * ratio_sq, 2.63, rtol=2e-3)
-# Cross-check without intermediate rounding: solve S(1-A)/4 = sigma T^4 for a.
-a_direct = Q_PERI * (t_peri / T_SUBL) ** 2
-check("(c) activity distance, full precision", a_direct, 2.63, rtol=2e-3)
 
 # ── Problem 2: The energy of building Mars ──────────────────
 print("Problem 2  The energy of building Mars")
@@ -146,8 +123,6 @@ s_sat = S0 / A_SAT**2
 check("(c) S at Saturn", s_sat, 14.83)
 absorbed = (14.83 / 4.0) * (1.0 - ALB_SAT)  # hands forward 14.83
 check("(c) absorbed flux", absorbed, 2.447)
-check("(c) T_eq^4 argument", absorbed / SIGMA, 4.3156e7)
-check("(c) T_eq [K]", (absorbed / SIGMA) ** 0.25, 81.05)
 emitted = SIGMA * TEFF_SAT**4
 check("(c) emitted flux", emitted, 4.618)
 check("(c) emitted/absorbed", 4.618 / 2.447, 1.89, rtol=2e-3)
@@ -187,12 +162,6 @@ vth_moon = math.sqrt(vth_moon_sq)
 check("(c) v_th N2 at 390 K [m/s]", vth_moon, 481.0, rtol=1e-3)
 check("(c) ratio Moon", 2375.0 / 481.3, 4.9, rtol=1e-2)
 
-m_h_ocean = (2.0 / 18.0) * M_OCEAN
-check("(d) ocean hydrogen mass [kg]", m_h_ocean, 1.556e20)
-t_ocean_s = m_h_ocean / H_ESCAPE
-check("(d) hydrogen lifetime [s]", t_ocean_s, 5.185e19)
-check("(d) hydrogen lifetime [yr]", t_ocean_s / YR_S, 1.6e12, rtol=3e-2)
-
 # ── Problem 6: The habitable zone ───────────────────────────
 print("Problem 6  The habitable zone")
 check("(a) inner edge [AU]", math.sqrt(1.0 / HZ_SIN), 0.976)
@@ -200,7 +169,7 @@ check("(a) outer edge [AU]", math.sqrt(1.0 / HZ_SOUT), 1.690)
 check("(a) Mars inside zone", float(A_MARS < math.sqrt(1.0 / HZ_SOUT)), 1.0)
 check("(a) Earth inside zone", float(math.sqrt(1.0 / HZ_SIN) < 1.000 < math.sqrt(1.0 / HZ_SOUT)), 1.0)
 check("(a) Venus inside inner edge", float(A_VENUS < math.sqrt(1.0 / HZ_SIN)), 1.0)
-check("(d) Mars flux [S0] > outer limit", float(1.0 / A_MARS**2 > HZ_SOUT), 1.0)
+check("(c) Mars flux [S0] > outer limit", float(1.0 / A_MARS**2 > HZ_SOUT), 1.0)
 
 check("(b) dwarf inner edge [AU]", math.sqrt(L_DWARF / HZ_SIN), 0.138)
 check("(b) dwarf outer edge [AU]", math.sqrt(L_DWARF / HZ_SOUT), 0.239)
@@ -216,6 +185,6 @@ check("(b) P [d], SI cross-check", p_si / 86400.0, 34.2, rtol=2e-3)
 
 # ── Marks bookkeeping and verdict ───────────────────────────
 print("Marks")
-check_points("mockexam02/mockexam02_content.tex")
+check_points("mockexam02/mockexam02_content.tex", expected=60.0, each=10.0)
 
 verdict()

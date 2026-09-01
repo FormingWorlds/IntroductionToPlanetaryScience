@@ -19,8 +19,8 @@
 \vskip10pt
 \endgroup
 
-This mock exam has the same shape and level as the final exam: 6 questions of 15 points each, 90 points in total, in a 120-minute closed-book sitting where a calculator and a pen are all that is allowed.
-Your grade is $1 + \text{points}/10$; the pass mark of 6.0 corresponds to 50 points.
+This mock exam has the same shape and level as the final exam: 6 questions of 10 points each, 60 points in total, in a 120-minute closed-book sitting where a calculator and a pen are all that is allowed.
+Your grade is $1 + 0.15 \times \text{points}$; the pass mark of 6.0 corresponds to 33.4 points.
 The twelve relations on the exam formula list are assumed known; every other formula a question needs is printed in the question itself.
 Marks per part are shown in brackets, and the steps carry marks, not only the number: show your algebra.
 Some parts state an intermediate result (``show that\,\ldots''); use it to check your work, and to continue if a step resists.
@@ -43,18 +43,17 @@ $S_0 = 1361\ \mathrm{W\,m^{-2}}$ (solar constant at $1\ \mathrm{AU}$)
 Body & $a$, $A$ & Further data \\
 \midrule
 Venus & $0.723\ \mathrm{AU}$ & \\
-Earth & $1.000\ \mathrm{AU}$ & $R = 6371\ \mathrm{km}$, $\bar{\rho} = 5514\ \mathrm{kg\,m^{-3}}$, ocean mass $1.4 \times 10^{21}\ \mathrm{kg}$, present hydrogen escape rate $3\ \mathrm{kg\,s^{-1}}$ \\
+Earth & $1.000\ \mathrm{AU}$ & $R = 6371\ \mathrm{km}$, $\bar{\rho} = 5514\ \mathrm{kg\,m^{-3}}$ \\
 Mars & $1.524\ \mathrm{AU}$ & $M = 6.417 \times 10^{23}\ \mathrm{kg}$, $R = 3390\ \mathrm{km}$ \\
 Saturn & $9.58\ \mathrm{AU}$, $A = 0.34$ & $M = 5.683 \times 10^{26}\ \mathrm{kg}$, $R = 58\,232\ \mathrm{km}$, effective temperature $95\ \mathrm{K}$, outer edge of the main rings at $136\,800\ \mathrm{km}$ from the centre \\
 Titan & & $M = 1.345 \times 10^{23}\ \mathrm{kg}$, $R = 2575\ \mathrm{km}$, upper-atmosphere $T = 160\ \mathrm{K}$ \\
 Moon & & $M = 7.342 \times 10^{22}\ \mathrm{kg}$, $R = 1737\ \mathrm{km}$, dayside surface $T = 390\ \mathrm{K}$ \\
-Comet & $q = 0.59\ \mathrm{AU}$, $Q = 35.1\ \mathrm{AU}$, $A = 0.04$ & \\
+Comet & $q = 0.59\ \mathrm{AU}$, $Q = 35.1\ \mathrm{AU}$ & \\
 \bottomrule
 \end{tabular}
 
 \vskip4pt
-{\footnotesize A total power $L$ spread over a sphere of radius $r$ gives a flux $L/(4\pi r^2)$; for sunlight this means $S = S_0/a^2$ with $a$ in AU.
-Water ice in vacuum sublimates appreciably above about $170\ \mathrm{K}$.}
+{\footnotesize A total power $L$ spread over a sphere of radius $r$ gives a flux $L/(4\pi r^2)$; for sunlight this means $S = S_0/a^2$ with $a$ in AU.}
 \end{given}
 
 
@@ -72,7 +71,7 @@ The vis-viva equation gives the speed at distance $r$ on an orbit with semi-majo
 \]
 and at the two extremes of the orbit, where the velocity is perpendicular to the radius, conservation of angular momentum gives $v_{\mathrm{p}}\, q = v_{\mathrm{a}}\, Q$.
 
-\parti \pts{4} Compute the semi-major axis, the eccentricity, and the orbital period of the comet.
+\parti \pts{3} Compute the semi-major axis, the eccentricity, and the orbital period of the comet.
 
 \begin{solution}
 The major axis spans perihelion to aphelion:
@@ -108,27 +107,6 @@ Angular momentum conservation between the extremes:
 \answer{$v_{\mathrm{p}} = 54.4\ \mathrm{km\,s^{-1}}$, $v_{\mathrm{a}} = 0.914\ \mathrm{km\,s^{-1}}$: a factor of $60$ between the two ends of the orbit.}
 \end{solution}
 
-\parti \pts{4} Compute the equilibrium temperature of the comet's surface at perihelion and at aphelion, and estimate the distance from the Sun inside which the comet becomes active (its ice starts to sublimate).
-
-\begin{solution}
-At perihelion, $S = S_0/q^2 = 1361/0.59^2 = 3910\ \mathrm{W\,m^{-2}}$, and with $A = 0.04$:
-\[
-  T_{\mathrm{eq}} = \left[ \frac{S(1-A)}{4\sigma} \right]^{1/4}
-                  = \left[ \frac{3910 \times 0.96}{4 \times 5.670 \times 10^{-8}} \right]^{1/4}
-                  = \left( 1.6550 \times 10^{10} \right)^{1/4} = 358.7\ \mathrm{K}.
-\]
-At aphelion, $S = 1361/35.1^2 = 1.105\ \mathrm{W\,m^{-2}}$, so
-\[
-  T_{\mathrm{eq}} = \left[ \frac{1.105 \times 0.96}{4 \times 5.670 \times 10^{-8}} \right]^{1/4}
-                  = \left( 4.6771 \times 10^{6} \right)^{1/4} = 46.5\ \mathrm{K}.
-\]
-Since $S \propto a^{-2}$, the equilibrium temperature scales as $T_{\mathrm{eq}} \propto a^{-1/2}$, and $T_{\mathrm{eq}} = 170\ \mathrm{K}$ is reached at
-\[
-  a = q \left( \frac{358.7}{170} \right)^{2} = 0.59 \times 4.452 = 2.63\ \mathrm{AU}.
-\]
-\answer{$T_{\mathrm{eq}} \approx 359\ \mathrm{K}$ at perihelion and $46.5\ \mathrm{K}$ at aphelion; the comet becomes active inside $\approx 2.6\ \mathrm{AU}$, which is why comets grow comae and tails only in the inner solar system.}
-\end{solution}
-
 \parti \pts{3} Judge this claim in 2 to 3 sentences, using your result from part (b):
 \emph{``A comet on this orbit spends most of its time in the inner solar system, where it is bright and easy to observe.''}
 
@@ -151,7 +129,7 @@ The gravitational binding energy of a uniform sphere of mass $M$ and radius $R$,
 is the energy released when the body is assembled from material dispersed to infinity.
 The heat needed to warm a mass $M$ by $\Delta T$ is $E = M c_p \Delta T$; for rock, $c_p \approx 1000\ \mathrm{J\,kg^{-1}\,K^{-1}}$, and silicate rock starts to melt near $1400\ \mathrm{K}$.
 
-\parti \pts{4} Show that the accretion of Mars released about $4.9 \times 10^{30}\ \mathrm{J}$.
+\parti \pts{3} Show that the accretion of Mars released about $4.9 \times 10^{30}\ \mathrm{J}$.
 
 \begin{solution}
 With the mass and radius from the data table:
@@ -164,7 +142,7 @@ With the mass and radius from the data table:
 \answer{$E = 4.864 \times 10^{30}\ \mathrm{J}$.}
 \end{solution}
 
-\parti \pts{4} Assume for the moment that all of this energy is retained as heat.
+\parti \pts{3} Assume for the moment that all of this energy is retained as heat.
 Compute the temperature rise of Mars and compare it with the melting temperature of rock.
 Explain in 1 to 2 sentences why the actual temperature rise was smaller, and what the comparison nevertheless implies for the early state of Mars.
 
@@ -176,14 +154,6 @@ several times the melting temperature of rock.
 The actual rise was smaller because much of the accretion energy was radiated back to space as the surface was heated impact by impact; the estimate is an upper limit.
 The margin is so large, however, that even partial retention (deep energy burial by large impacts, plus the blanketing of an early atmosphere) melts a substantial part of the planet: early Mars went through a magma ocean stage.
 \answer{$\Delta T \approx 7600\ \mathrm{K}$ if fully retained, far above the $\approx 1400\ \mathrm{K}$ melting point: accretion energy is ample to melt Mars even if only a fraction is kept.}
-\end{solution}
-
-\parti \pts{3} Explain in 2 to 3 sentences why a molten planet differentiates into an iron core and a rocky mantle, and name one observation showing that differentiation also happened in small bodies, early in the solar system.
-
-\begin{solution}
-In a molten body the constituents are mobile, and the denser iron sinks through the silicate liquid to the centre while the lighter rock rises: gravity sorts the interior into core and mantle, and the sinking itself releases further gravitational energy that keeps the interior hot.
-Iron meteorites are fragments of the metallic cores of disrupted planetesimals, so differentiation operated even in bodies of a few hundred kilometres, within the first few million years of the solar system.
-\answer{Dense iron sinks through molten rock; iron meteorites are shards of early planetesimal cores.}
 \end{solution}
 
 \parti \pts{4} Judge this claim in 3 to 4 sentences:
@@ -209,7 +179,7 @@ The mean density of such a body is the volume-weighted average of the two layer 
 \]
 where $R_{\mathrm{c}}$ is the core radius.
 
-\parti \pts{5} Show that the two-layer model puts the core radius near $3400\ \mathrm{km}$, then compute the fraction of Earth's mass that resides in the core.
+\parti \pts{4} Show that the two-layer model puts the core radius near $3400\ \mathrm{km}$, then compute the fraction of Earth's mass that resides in the core.
 
 \begin{solution}
 Let $x = R_{\mathrm{c}}/R$.
@@ -231,7 +201,7 @@ The core mass fraction is
 \answer{$R_{\mathrm{c}} \approx 3430\ \mathrm{km}$ (measured: $3480\ \mathrm{km}$); the core holds $\approx 31\%$ of Earth's mass in $\approx 16\%$ of its volume.}
 \end{solution}
 
-\parti \pts{4} Inside a uniform sphere of density $\rho$, the local gravitational acceleration is
+\parti \pts{3} Inside a uniform sphere of density $\rho$, the local gravitational acceleration is
 \[
   g(r) = \frac{4}{3} \pi G \rho\, r.
 \]
@@ -257,16 +227,6 @@ integrating from the surface ($P = 0$) inward. At the centre:
 \]
 The estimate falls short of the measured $364\ \mathrm{GPa}$ because the real Earth concentrates its mass in a dense core, which raises both the interior gravity and the pressure above the uniform-density values.
 \answer{$P_{\mathrm{c}} \approx 170\ \mathrm{GPa}$, about half the true value: central mass concentration raises the real pressure.}
-\end{solution}
-
-\parti \pts{3} We have never drilled deeper than a few kilometres.
-Explain in 2 to 3 sentences how we nevertheless know that Earth has a core at all, and that its outer part is liquid.
-
-\begin{solution}
-Earthquake waves probe the deep interior: the core casts a shadow in which direct P~waves do not arrive, because they are refracted at the sharp core-mantle boundary, and the size of this shadow fixes the core radius.
-S~waves (shear waves) do not propagate through the outer core at all, and shear waves cannot travel through a fluid: the outer core is liquid.
-The mean density and the moment of inertia agree: both demand far more mass at the centre than surface rock can provide.
-\answer{Refraction of P~waves locates the core; the absence of transmitted S~waves shows the outer core is fluid.}
 \end{solution}
 
 \parti \pts{3} Judge this claim in 2 to 3 sentences:
@@ -320,18 +280,14 @@ The rings occupy exactly the zone where moons cannot exist.
 \answer{$d \approx 130\,000\ \mathrm{km} \approx 2.2\, R_{\mathrm{Saturn}}$: rings inside, moons outside. Tides prevent accretion inside the limit.}
 \end{solution}
 
-\parti \pts{5} Compute the sunlight flux Saturn absorbs per square metre of its surface, and the equilibrium temperature this alone would sustain.
-The measured effective temperature is higher (data table): show that Saturn emits about $1.9$ times the power it absorbs, and explain in 1 to 2 sentences where the excess comes from.
+\parti \pts{3} Compute the sunlight flux Saturn absorbs per square metre of its surface.
+Then use the measured effective temperature (data table) to show that Saturn emits about $1.9$ times the power it absorbs, and explain in 1 to 2 sentences where the excess comes from.
 
 \begin{solution}
 The solar flux at Saturn is $S = S_0/a^2 = 1361/9.58^2 = 14.83\ \mathrm{W\,m^{-2}}$.
 Absorbed per unit surface area, with $A = 0.34$:
 \[
-  \frac{S}{4}(1 - A) = \frac{14.83}{4} \times 0.66 = 2.447\ \mathrm{W\,m^{-2}},
-\]
-which alone would sustain
-\[
-  T_{\mathrm{eq}} = \left( \frac{2.447}{5.670 \times 10^{-8}} \right)^{1/4} = \left( 4.3156 \times 10^{7} \right)^{1/4} = 81.05\ \mathrm{K}.
+  \frac{S}{4}(1 - A) = \frac{14.83}{4} \times 0.66 = 2.447\ \mathrm{W\,m^{-2}}.
 \]
 The measured effective temperature of $95\ \mathrm{K}$ corresponds to an emitted flux
 \[
@@ -340,16 +296,6 @@ The measured effective temperature of $95\ \mathrm{K}$ corresponds to an emitted
 a factor $4.618/2.447 = 1.89$ above the absorbed flux.
 The excess ($\approx 2.2\ \mathrm{W\,m^{-2}}$) is internal heat: slow gravitational contraction, and for Saturn in particular the settling of helium droplets through the metallic hydrogen interior (helium rain), both convert gravitational energy into heat.
 \answer{Absorbed $2.45\ \mathrm{W\,m^{-2}}$ versus emitted $4.62\ \mathrm{W\,m^{-2}}$: Saturn radiates $1.9$ times what it absorbs, powered by contraction and helium rain.}
-\end{solution}
-
-\parti \pts{3} Judge this claim in 2 to 3 sentences:
-\emph{``Saturn's rings must be as old as Saturn itself.''}
-
-\begin{solution}
-This does not follow, and the evidence points the other way.
-The rings are nearly pure bright water ice, yet infalling micrometeoroid dust steadily darkens icy surfaces, so old rings should be dark; spacecraft measurements also give a low ring mass and a steady rain of ring material into the planet, which limits the rings' lifetime.
-Both suggest the rings are much younger than Saturn, perhaps the debris of a moon destroyed within the last few hundred million years, though their age remains debated.
-\answer{Does not follow: the brightness of the ice and the measured erosion rates favour young rings; nothing requires them to be primordial.}
 \end{solution}
 
 
@@ -375,7 +321,7 @@ Molecular masses: $m = \mu\, m_u$ with $\mu = 28$ for $\mathrm{N_2}$ and $\mu = 
 \answer{$v_{\mathrm{esc}} = 2.64\ \mathrm{km\,s^{-1}}$.}
 \end{solution}
 
-\parti \pts{5} Compute the most probable thermal speeds of $\mathrm{N_2}$ and $\mathrm{H_2}$ at the temperature of Titan's upper atmosphere, and apply the rule of thumb to each gas.
+\parti \pts{4} Compute the most probable thermal speeds of $\mathrm{N_2}$ and $\mathrm{H_2}$ at the temperature of Titan's upper atmosphere, and apply the rule of thumb to each gas.
 What does the result explain about Titan's atmosphere?
 
 \begin{solution}
@@ -395,7 +341,7 @@ This is why Titan keeps a dense $\mathrm{N_2}$ (and methane) atmosphere while th
 \answer{$v_{\mathrm{th}}(\mathrm{N_2}) = 308\ \mathrm{m\,s^{-1}}$ (ratio $8.6$: retained), $v_{\mathrm{th}}(\mathrm{H_2}) = 1153\ \mathrm{m\,s^{-1}}$ (ratio $2.3$: lost).}
 \end{solution}
 
-\parti \pts{4} The Moon's escape velocity is close to Titan's, yet the Moon has no atmosphere.
+\parti \pts{3} The Moon's escape velocity is close to Titan's, yet the Moon has no atmosphere.
 Compute the numbers that resolve this apparent contradiction.
 
 \begin{solution}
@@ -415,20 +361,6 @@ Titan holds an atmosphere with the same gravity because at $9.6\ \mathrm{AU}$ it
 \answer{Moon: $v_{\mathrm{esc}} = 2.38\ \mathrm{km\,s^{-1}}$ but $v_{\mathrm{th}}(\mathrm{N_2}) = 481\ \mathrm{m\,s^{-1}}$ at $390\ \mathrm{K}$, ratio $4.9 < 6$: too warm to keep gas that Titan, at the same gravity but $160\ \mathrm{K}$, retains.}
 \end{solution}
 
-\parti \pts{3} Judge this claim with a supporting calculation, in 2 to 3 sentences, using the Earth data in the table (hydrogen makes up $2/18$ of the mass of water):
-\emph{``Hydrogen escapes from Earth today, so Earth will lose its ocean within a billion years.''}
-
-\begin{solution}
-What escapes is hydrogen, so first take the hydrogen out of the ocean: $M_{\mathrm{H}} = \frac{2}{18} \times 1.4 \times 10^{21} = 1.556 \times 10^{20}\ \mathrm{kg}$.
-At the present escape rate this lasts
-\[
-  t = \frac{1.556 \times 10^{20}\ \mathrm{kg}}{3\ \mathrm{kg\,s^{-1}}} = 5.185 \times 10^{19}\ \mathrm{s} = 1.6 \times 10^{12}\ \mathrm{yr},
-\]
-more than a hundred times the age of the universe: the claim is wrong by more than three orders of magnitude.
-The escape is throttled not by gravity but by supply: water is frozen out at the cold tropopause (the cold trap), so almost no hydrogen reaches the upper atmosphere where escape operates.
-\answer{False: at $3\ \mathrm{kg\,s^{-1}}$ the ocean's hydrogen lasts $\sim 10^{12}\ \mathrm{yr}$. The cold trap starves the escape of hydrogen.}
-\end{solution}
-
 
 % ════════════════════════════════════════════════════════════
 \problem{The habitable zone}
@@ -440,7 +372,7 @@ For a star of luminosity $L$, the flux at distance $a$ (in AU) is
   S = \frac{L}{L_\odot} \frac{S_0}{a^2}.
 \]
 
-\parti \pts{4} Compute the inner and outer edge of the Sun's habitable zone, in AU.
+\parti \pts{3} Compute the inner and outer edge of the Sun's habitable zone, in AU.
 Which of the planets of the solar system orbit inside it?
 
 \begin{solution}
@@ -453,7 +385,7 @@ Earth ($1.000\ \mathrm{AU}$) and Mars ($1.524\ \mathrm{AU}$) orbit inside the zo
 \answer{$0.976$ to $1.690\ \mathrm{AU}$: Earth and Mars are in the habitable zone, Venus is not.}
 \end{solution}
 
-\parti \pts{5} A red dwarf star has $L = 0.02\, L_\odot$ and $M_* = 0.30\ \Msun$.
+\parti \pts{4} A red dwarf star has $L = 0.02\, L_\odot$ and $M_* = 0.30\ \Msun$.
 Compute the edges of its habitable zone, and the orbital period of a planet at the inner edge.
 
 \begin{solution}
@@ -467,16 +399,6 @@ Kepler's third law in solar units ($P$ in years, $a$ in AU, $M_*$ in solar masse
   P = \sqrt{\frac{0.138^3}{0.30}} = \sqrt{8.7602 \times 10^{-3}} = 0.09360\ \mathrm{yr} = 34.2\ \mathrm{d}.
 \]
 \answer{$0.138$ to $0.239\ \mathrm{AU}$; a planet at the inner edge orbits in $34.2\ \mathrm{d}$. Habitable-zone planets of red dwarfs hug their star.}
-\end{solution}
-
-\parti \pts{3} Most stars in the Galaxy are red dwarfs, and their habitable zones are the easiest to search for transiting planets.
-Name and explain in 2 to 3 sentences two properties of these systems that work \emph{against} habitability.
-
-\begin{solution}
-So close to the star, tidal forces are strong and the planet is driven into synchronous rotation: one hemisphere faces permanent day and the other permanent night, an extreme climate configuration.
-Red dwarfs are also magnetically active for billions of years: frequent flares and a high X-ray and ultraviolet output erode atmospheres, and the star's long, bright pre-main-sequence phase can desiccate a planet before habitable conditions ever begin.
-(Any two of: tidal locking, flare and XUV activity, the early runaway phase.)
-\answer{Tidal locking and sustained flare/XUV activity (or the early luminous phase): proximity buys warmth at the cost of a hostile environment.}
 \end{solution}
 
 \parti \pts{3} Judge this claim in 2 to 3 sentences, using your result from part (a):

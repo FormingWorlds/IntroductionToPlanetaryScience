@@ -19,8 +19,8 @@
 \vskip10pt
 \endgroup
 
-This mock exam has the same shape and level as the final exam: 6 questions of 15 points each, 90 points in total, in a 120-minute closed-book sitting where a calculator and a pen are all that is allowed.
-Your grade is $1 + \text{points}/10$; the pass mark of 6.0 corresponds to 50 points.
+This mock exam has the same shape and level as the final exam: 6 questions of 10 points each, 60 points in total, in a 120-minute closed-book sitting where a calculator and a pen are all that is allowed.
+Your grade is $1 + 0.15 \times \text{points}$; the pass mark of 6.0 corresponds to 33.4 points.
 The twelve relations on the exam formula list are assumed known; every other formula a question needs is printed in the question itself.
 Marks per part are shown in brackets, and the steps carry marks, not only the number: show your algebra.
 Some parts state an intermediate result (``show that\,\ldots''); use it to check your work, and to continue if a step resists.
@@ -44,9 +44,9 @@ Body & $a$, $A$ & Further data \\
 Sun & & $R = 6.957 \times 10^{5}\ \mathrm{km}$ \\
 Jupiter & & $R = 69\,911\ \mathrm{km}$ \\
 Callisto & & orbits Jupiter with $a = 1.883 \times 10^{6}\ \mathrm{km}$, $P = 16.69\ \mathrm{d}$ \\
-Earth & $1.000\ \mathrm{AU}$, $A = 0.30$ & $P = 1\ \mathrm{yr}$, $R = 6371\ \mathrm{km}$, $g = 9.81\ \mathrm{m\,s^{-2}}$, surface $T = 288\ \mathrm{K}$, mean molecular weight $\mu = 28.97$ \\
+Earth & $1.000\ \mathrm{AU}$, $A = 0.30$ & $P = 1\ \mathrm{yr}$, $g = 9.81\ \mathrm{m\,s^{-2}}$, surface $T = 288\ \mathrm{K}$, mean molecular weight $\mu = 28.97$ \\
 Moon & & $g = 1.62\ \mathrm{m\,s^{-2}}$ \\
-Mercury & $0.387\ \mathrm{AU}$, $A = 0.088$ & $R = 2440\ \mathrm{km}$, $\bar{\rho} = 5427\ \mathrm{kg\,m^{-3}}$ \\
+Mercury & & $R = 2440\ \mathrm{km}$, $\bar{\rho} = 5427\ \mathrm{kg\,m^{-3}}$ \\
 Titan & & surface $T = 94\ \mathrm{K}$, surface pressure $1.5 \times 10^{5}\ \mathrm{Pa}$, methane mole fraction $5\%$ \\
 \bottomrule
 \end{tabular}
@@ -64,7 +64,7 @@ Dry air on Earth cools by $9.8\ \mathrm{K}$ per kilometre of ascent (the dry adi
 An orbit is a balance you can read a mass from: the central mass alone sets how fast a small companion circles at a given distance.
 This problem uses only relations from the formula list.
 
-\parti \pts{5} Use the Earth's orbit (data table) to compute the mass of the Sun in kilograms.
+\parti \pts{4} Use the Earth's orbit (data table) to compute the mass of the Sun in kilograms.
 
 \begin{solution}
 Kepler's third law solved for the central mass, with $a = 1.496 \times 10^{11}\ \mathrm{m}$ and $P = 3.156 \times 10^{7}\ \mathrm{s}$:
@@ -77,7 +77,7 @@ Kepler's third law solved for the central mass, with $a = 1.496 \times 10^{11}\ 
 \answer{$M_\odot = 1.988 \times 10^{30}\ \mathrm{kg}$, the accepted value to the precision of the input data.}
 \end{solution}
 
-\parti \pts{4} Use Callisto's orbit (data table) to compute the mass of Jupiter in kilograms.
+\parti \pts{3} Use Callisto's orbit (data table) to compute the mass of Jupiter in kilograms.
 
 \begin{solution}
 The same relation with $a = 1.883 \times 10^{9}\ \mathrm{m}$ and $P = 16.69 \times 86\,400 = 1.442 \times 10^{6}\ \mathrm{s}$:
@@ -101,16 +101,6 @@ From $\bar{\rho} = M / (\tfrac{4}{3}\pi R^3)$ with $R_\odot = 6.957 \times 10^{8
 \answer{$\bar{\rho}_\odot = 1409\ \mathrm{kg\,m^{-3}}$ and $\bar{\rho}_{\mathrm{J}} = 1327\ \mathrm{kg\,m^{-3}}$: both close to the density of water.}
 \end{solution}
 
-\parti \pts{3} Judge this claim in 2 to 3 sentences, using your result from part (c):
-\emph{``Because their mean densities are nearly equal, Jupiter and the Sun must have very similar interiors.''}
-
-\begin{solution}
-False.
-The similar mean densities reflect a similar hydrogen-helium composition, but the interiors differ fundamentally: the Sun is a plasma at millions of kelvin supported by thermal pressure from fusion, while Jupiter is a cold body of molecular and metallic hydrogen supported by the pressure of compressed, partially degenerate matter.
-A mean density is a single number that erases the internal structure; bodies with very different temperature and pressure profiles can share it.
-\answer{False: the near-equal mean densities come from similar composition, not similar structure; a fusing plasma ball and a cold compressed fluid planet merely happen to average out alike.}
-\end{solution}
-
 
 % ════════════════════════════════════════════════════════════
 \problem{Reading a cratered surface}
@@ -121,13 +111,13 @@ In the gravity regime, an impact of energy $E$ into a target of density $\rho_t$
   D \approx \left( \frac{E}{\rho_t\, g} \right)^{1/4}
 \]
 (all quantities in SI units, $D$ in metres).
-Craters larger than a transition diameter $D_{\mathrm{t}}$ collapse into complex craters with central peaks and terraces; on the Moon $D_{\mathrm{t}} \approx 15\ \mathrm{km}$, and $D_{\mathrm{t}}$ scales inversely with surface gravity, $D_{\mathrm{t}} \propto 1/g$.
+Craters larger than a transition diameter $D_{\mathrm{t}}$ collapse into complex craters with central peaks and terraces; on the Moon $D_{\mathrm{t}} \approx 15\ \mathrm{km}$.
 For surfaces younger than about $3\ \mathrm{Gyr}$, the cumulative density of craters larger than $1\ \mathrm{km}$ grows linearly with age $T$:
 \[
   N(\geq 1\ \mathrm{km}) \approx b\,T, \qquad b = 8.38 \times 10^{-4}\ \mathrm{km^{-2}\,Gyr^{-1}}.
 \]
 
-\parti \pts{4} A rocky asteroid of diameter $1.2\ \mathrm{km}$ and density $3000\ \mathrm{kg\,m^{-3}}$ hits at $18\ \mathrm{km\,s^{-1}}$.
+\parti \pts{3} A rocky asteroid of diameter $1.2\ \mathrm{km}$ and density $3000\ \mathrm{kg\,m^{-3}}$ hits at $18\ \mathrm{km\,s^{-1}}$.
 Show that its kinetic energy is $4.397 \times 10^{20}\ \mathrm{J}$.
 
 \begin{solution}
@@ -142,7 +132,7 @@ Kinetic energy at $v = 1.8 \times 10^{4}\ \mathrm{m\,s^{-1}}$:
 \answer{$E = 4.397 \times 10^{20}\ \mathrm{J}$, roughly two thousand times the largest nuclear test.}
 \end{solution}
 
-\parti \pts{4} This asteroid strikes the Moon, where the target rock has density $2500\ \mathrm{kg\,m^{-3}}$.
+\parti \pts{3} This asteroid strikes the Moon, where the target rock has density $2500\ \mathrm{kg\,m^{-3}}$.
 Compute the crater diameter and state whether the crater is simple or complex.
 
 \begin{solution}
@@ -154,23 +144,6 @@ With $E = 4.397 \times 10^{20}\ \mathrm{J}$, $\rho_t = 2500\ \mathrm{kg\,m^{-3}}
 \]
 This exceeds the lunar transition diameter of $15\ \mathrm{km}$.
 \answer{$D \approx 18.2\ \mathrm{km}$, larger than $D_{\mathrm{t}} = 15\ \mathrm{km}$: a complex crater with a central peak and terraced walls.}
-\end{solution}
-
-\parti \pts{3} The same asteroid strikes the Earth, where the target rock has density $2700\ \mathrm{kg\,m^{-3}}$.
-Compute the crater diameter and the transition diameter on Earth, and classify the crater.
-
-\begin{solution}
-On Earth, $g = 9.81\ \mathrm{m\,s^{-2}}$:
-\[
-  D \approx \left( \frac{4.397 \times 10^{20}}{2700 \times 9.81} \right)^{1/4}
-    = \left( 1.6601 \times 10^{16} \right)^{1/4}
-    = 1.135 \times 10^{4}\ \mathrm{m} = 11.35\ \mathrm{km}.
-\]
-The transition diameter scales down with gravity:
-\[
-  D_{\mathrm{t,Earth}} = 15 \times \frac{1.62}{9.81} = 2.477\ \mathrm{km}.
-\]
-\answer{$D \approx 11.4\ \mathrm{km}$ against $D_{\mathrm{t}} \approx 2.5\ \mathrm{km}$: strongly complex. The same impactor makes a smaller crater on Earth because the stronger gravity resists excavation, yet the crater collapses more readily.}
 \end{solution}
 
 \parti \pts{4} A lava plain on the Moon shows $N(\geq 1\ \mathrm{km}) = 1.8 \times 10^{-3}\ \mathrm{km^{-2}}$.
@@ -190,10 +163,6 @@ The oldest highlands date from before about $3.6\ \mathrm{Gyr}$, when the impact
 \problem{The birth of a core and a dynamo}
 
 Terrestrial planets separate into an iron core and a rocky mantle early in their history, and a convecting liquid core can drive a magnetic dynamo.
-In a magma ocean of viscosity $\mu$, an iron droplet of radius $r$ and excess density $\Delta\rho$ sinks at the Stokes settling speed
-\[
-  v = \frac{2\, \Delta\rho\, g\, r^2}{9 \mu}.
-\]
 A convecting core of flow speed $U$, size $L$, and magnetic diffusivity $\eta$ sustains a dynamo when the magnetic Reynolds number
 \[
   \mathrm{Rm} = \frac{U L}{\eta}
@@ -215,21 +184,7 @@ By $45\ \mathrm{Myr}$, about five half-lives have passed and only about $3\%$ of
 \answer{$\lambda = 7.788 \times 10^{-2}\ \mathrm{Myr^{-1}}$; $9.7\%$ remains at $30\ \mathrm{Myr}$. A radioactive clock goes silent after roughly five half-lives, here $\approx 45\ \mathrm{Myr}$.}
 \end{solution}
 
-\parti \pts{4} In a crystal-rich magma ocean with $g = 5\ \mathrm{m\,s^{-2}}$ and effective viscosity $\mu = 100\ \mathrm{Pa\,s}$, an iron droplet of radius $1\ \mathrm{cm}$ has excess density $\Delta\rho = 4000\ \mathrm{kg\,m^{-3}}$.
-Compute its settling speed and the time it needs to sink through a magma ocean $800\ \mathrm{km}$ deep.
-
-\begin{solution}
-\[
-  v = \frac{2 \times 4000 \times 5 \times (0.01)^2}{9 \times 100} = 4.444 \times 10^{-3}\ \mathrm{m\,s^{-1}}.
-\]
-Sinking time over $8 \times 10^{5}\ \mathrm{m}$:
-\[
-  t = \frac{8 \times 10^{5}}{4.444 \times 10^{-3}} = 1.800 \times 10^{8}\ \mathrm{s} \approx 5.7\ \mathrm{yr}.
-\]
-\answer{$v = 4.444 \times 10^{-3}\ \mathrm{m\,s^{-1}}$; the droplet crosses the magma ocean in about $6$ years. Once a planet is molten, metal-silicate separation is essentially instantaneous on geological timescales, which is why cores form within the first tens of Myr.}
-\end{solution}
-
-\parti \pts{4} Early Mars had a convecting liquid core with $U = 5 \times 10^{-4}\ \mathrm{m\,s^{-1}}$, $L = 1.8 \times 10^{6}\ \mathrm{m}$, and $\eta = 1\ \mathrm{m^2\,s^{-1}}$.
+\parti \pts{3} Early Mars had a convecting liquid core with $U = 5 \times 10^{-4}\ \mathrm{m\,s^{-1}}$, $L = 1.8 \times 10^{6}\ \mathrm{m}$, and $\eta = 1\ \mathrm{m^2\,s^{-1}}$.
 Compute the magnetic Reynolds number and state whether a dynamo is expected then, and what happens once core convection stops.
 
 \begin{solution}
@@ -247,7 +202,7 @@ When core convection stops, $U \to 0$ and $\mathrm{Rm}$ falls below critical; th
 \begin{solution}
 False.
 Portions of the ancient southern-highlands crust carry strong remanent magnetization, which the rocks could only acquire by cooling in a global field: direct evidence for an early Martian dynamo.
-The dynamo died when the small core stopped convecting, but the magnetized crust preserves the memory of the field, just as your part (c) reasoning predicts.
+The dynamo died when the small core stopped convecting, but the magnetized crust preserves the memory of the field, just as your part (b) reasoning predicts.
 \answer{False: crustal remanent magnetization records an ancient dynamo; the absence of a field today only shows that core convection has ceased.}
 \end{solution}
 
@@ -275,18 +230,7 @@ For methane, $L_v/R_v = 980\ \mathrm{K}$ with reference point $(90.7\ \mathrm{K}
 \answer{$H \approx 8.4\ \mathrm{km}$: the pressure drops by a factor $e$ for every $8.4\ \mathrm{km}$ of altitude.}
 \end{solution}
 
-\parti \pts{4} Compute the saturation vapour pressure of water at $303\ \mathrm{K}$ (a hot summer day).
-
-\begin{solution}
-\[
-  P_{\mathrm{sat}}(303) = 611 \exp\!\left[ -5400 \left( \frac{1}{303} - \frac{1}{273} \right) \right]
-                        = 611\, e^{1.9584}
-                        = 611 \times 7.088 = 4331\ \mathrm{Pa}.
-\]
-\answer{$P_{\mathrm{sat}} \approx 4.33\ \mathrm{kPa}$, seven times the value at the freezing point: the exponential is steep for water because $L_v/R_v$ is large.}
-\end{solution}
-
-\parti \pts{4} An air parcel at the surface has temperature $303\ \mathrm{K}$ and water vapour pressure $1.7\ \mathrm{kPa}$.
+\parti \pts{3} An air parcel at the surface has temperature $303\ \mathrm{K}$ and water vapour pressure $1.7\ \mathrm{kPa}$.
 Compute the dew point of the parcel, and use the dry adiabatic lapse rate to estimate the altitude of the cloud base it forms when it rises.
 
 \begin{solution}
@@ -328,36 +272,10 @@ Because $L_v/R_v$ is small for methane, the saturation curve is shallow, and met
 \problem{Mercury, the shrinking planet}
 
 Mercury is scarred by long cliffs (lobate scarps) that record a global contraction of the planet as its interior cooled.
-A surface element facing the Sun directly reaches the subsolar temperature given by
-\[
-  \sigma T_{\mathrm{ss}}^4 = S\,(1 - A).
-\]
 Cooling the whole planet by $\Delta T$ releases the heat $E = M c\, \Delta T$, with specific heat capacity $c = 800\ \mathrm{J\,kg^{-1}\,K^{-1}}$, and shrinks the radius by
 \[
   \Delta R = \frac{\alpha_V}{3}\, R\, \Delta T, \qquad \alpha_V = 3 \times 10^{-5}\ \mathrm{K^{-1}}.
 \]
-
-\parti \pts{4} Compute the solar flux at Mercury's orbit, its global equilibrium temperature, and its subsolar temperature.
-
-\begin{solution}
-\[
-  S = \frac{S_0}{a^2} = \frac{1361}{0.387^2} = 9087\ \mathrm{W\,m^{-2}},
-\]
-about $6.7$ times the flux at Earth.
-The global equilibrium temperature with $A = 0.088$:
-\[
-  T_{\mathrm{eq}} = \left[ \frac{S (1-A)}{4\sigma} \right]^{1/4}
-                  = \left[ \frac{9087 \times 0.912}{4 \times 5.670 \times 10^{-8}} \right]^{1/4}
-                  = \left( 3.6539 \times 10^{10} \right)^{1/4} = 437.2\ \mathrm{K}.
-\]
-The subsolar point absorbs the full flux on one face instead of spreading it over the sphere:
-\[
-  T_{\mathrm{ss}} = \left[ \frac{9087 \times 0.912}{5.670 \times 10^{-8}} \right]^{1/4}
-                  = \left( 1.4616 \times 10^{11} \right)^{1/4} = 618.3\ \mathrm{K},
-\]
-a factor $4^{1/4} = 1.414$ above the global value.
-\answer{$S = 9087\ \mathrm{W\,m^{-2}}$, $T_{\mathrm{eq}} = 437\ \mathrm{K}$, $T_{\mathrm{ss}} = 618\ \mathrm{K}$: hot enough at noon to melt lead, yet Mercury's poles hold water ice in permanent shadow.}
-\end{solution}
 
 \parti \pts{4} Compute Mercury's mass from its radius and mean density, and show that cooling the whole planet by $\Delta T = 200\ \mathrm{K}$ releases $5.283 \times 10^{28}\ \mathrm{J}$.
 
@@ -372,7 +290,7 @@ The released heat:
 \answer{$M = 3.302 \times 10^{23}\ \mathrm{kg}$ and $E = 5.283 \times 10^{28}\ \mathrm{J}$.}
 \end{solution}
 
-\parti \pts{4} Assume this heat left the planet at a constant rate over $4.5\ \mathrm{Gyr}$.
+\parti \pts{3} Assume this heat left the planet at a constant rate over $4.5\ \mathrm{Gyr}$.
 Compute the mean surface heat flow in $\mathrm{mW\,m^{-2}}$ and compare it with the Earth's present mean surface heat flow of $87\ \mathrm{mW\,m^{-2}}$.
 
 \begin{solution}
@@ -404,11 +322,9 @@ This matches the scarp record to within a factor of order unity: secular cooling
 \problem{A planet around a K dwarf}
 
 Stars less massive than the Sun burn slower and live longer.
-On the main sequence, luminosity and lifetime scale with stellar mass as
+On the main sequence, luminosity scales with stellar mass as
 \[
   \frac{L}{L_\odot} = \left( \frac{M}{\Msun} \right)^{3.5},
-  \qquad
-  t_{\mathrm{MS}} \approx 10 \left( \frac{M}{\Msun} \right)^{-2.5}\ \mathrm{Gyr},
 \]
 and Kepler's third law for an orbit around a star of mass $M$ reads, in convenient units,
 \[
@@ -423,17 +339,6 @@ Consider a K dwarf of mass $M = 0.7\ \Msun$.
   \frac{L}{L_\odot} = 0.7^{3.5} = 0.2870.
 \]
 \answer{$L = 0.287\, L_\odot$: a $30\%$ reduction in mass cuts the luminosity by a factor of $3.5$, the steep price of the mass-luminosity relation.}
-\end{solution}
-
-\parti \pts{4} Compute the main-sequence lifetime of the K dwarf, compare it with the Sun's, and state in one sentence what this means for life on its planets.
-
-\begin{solution}
-\[
-  t_{\mathrm{MS}} = 10 \times 0.7^{-2.5} = 24.39\ \mathrm{Gyr},
-\]
-against $10\ \mathrm{Gyr}$ for the Sun: almost $2.5$ times longer, and longer than the current age of the universe.
-A planet around a K dwarf has a stable stellar energy source for tens of gigayears, giving biology far more time than Earth will get before the Sun leaves the main sequence.
-\answer{$t_{\mathrm{MS}} \approx 24\ \mathrm{Gyr}$: no K dwarf that ever formed has yet left the main sequence.}
 \end{solution}
 
 \parti \pts{4} Show that a planet receives the same flux as the Earth at $d = 0.5357\ \mathrm{AU}$ from this star, and verify that with the Earth's albedo it has the Earth's equilibrium temperature.
@@ -452,7 +357,7 @@ identical to the Earth's equilibrium temperature, as it must be for identical fl
 \answer{$d = 0.5357\ \mathrm{AU}$ and $T_{\mathrm{eq}} = 255\ \mathrm{K}$: the habitable zone moves inward around dimmer stars, tracking constant flux.}
 \end{solution}
 
-\parti \pts{4} Compute the orbital period of this planet.
+\parti \pts{3} Compute the orbital period of this planet.
 Then judge this claim in 2 to 3 sentences:
 \emph{``The smaller the star, the better for life, because the star lives longer.''}
 

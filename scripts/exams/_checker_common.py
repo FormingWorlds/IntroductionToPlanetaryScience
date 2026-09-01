@@ -35,8 +35,11 @@ def teq(flux: float, albedo: float) -> float:
     return (flux * (1.0 - albedo) / (4.0 * SIGMA)) ** 0.25
 
 
-def check_points(content_tex: str, expected: float = 90.0) -> None:
+def check_points(content_tex: str, expected: float, each: float | None = None) -> None:
     """Sum the ``\\pts{n}`` marks in an exam content file against the total.
+
+    Comment lines are stripped first, so a commented-out part cannot keep
+    the sums looking right.
 
     Parameters
     ----------
@@ -45,9 +48,18 @@ def check_points(content_tex: str, expected: float = 90.0) -> None:
         e.g. ``"mockexam02/mockexam02_content.tex"``.
     expected : float
         The advertised points total of the exam.
+    each : float, optional
+        The advertised points total of every single question. When given,
+        the marks inside each ``\\problem`` block must sum to this value.
     """
     path = Path(__file__).resolve().parents[2] / "exams" / content_tex
-    marks = [int(m) for m in re.findall(r"\\pts\{(\d+)\}", path.read_text())]
+    text = re.sub(r"(?<!\\)%.*", "", path.read_text())
+    if each is not None:
+        blocks = re.split(r"\\problem\{", text)[1:]
+        for i, block in enumerate(blocks, start=1):
+            q_marks = [int(m) for m in re.findall(r"\\pts\{(\d+)\}", block)]
+            check(f"points sum question {i}", float(sum(q_marks)), each)
+    marks = [int(m) for m in re.findall(r"\\pts\{(\d+)\}", text)]
     check(f"points sum over {len(marks)} parts", float(sum(marks)), expected)
 
 

@@ -32,14 +32,12 @@ S0 = 1361.0  # W m^-2 at 1 AU
 
 A_VENUS, ALB_VENUS = 0.723, 0.77
 T_VENUS, P_VENUS_BAR = 737.0, 92.0
-G_VENUS, MU_VENUS, CP_VENUS = 8.87, 43.4, 1130.0
+G_VENUS, MU_VENUS = 8.87, 43.4
 A_MARS, ALB_MARS, T_MARS = 1.524, 0.25, 215.0
-ALB_EARTH, Q_EARTH = 0.30, 0.092
+ALB_EARTH = 0.30
 M_IO, R_IO, L_IO = 8.93e22, 1.821e6, 1e14
-M_EARTH = 5.972e24  # kg
 H_RADIOGENIC = 5e-12  # W kg^-1
 THALF_K40 = 1.25  # Gyr
-AGE_SS = 4.567  # Gyr
 
 gm_sun = G * MSUN
 
@@ -63,16 +61,6 @@ check("(c) v_aphelion [km/s]", v_aph / 1e3, 27.29)
 check("(c) v_circ Earth [km/s]", v_earth / 1e3, 29.79)
 check("(c) dv retrograde [km/s]", (v_earth - v_aph) / 1e3, 2.50, rtol=2e-3)
 
-s_syn_yr = 1.0 / (1.0 / p_venus_yr - 1.0)
-check("(d) 1/P_V [1/yr]", 1.0 / p_venus_yr, 1.6266)
-check("(d) 1/S [1/yr]", 1.0 / p_venus_yr - 1.0, 0.6266)
-check("(d) S [yr]", s_syn_yr, 1.5958)
-check("(d) S [d]", s_syn_yr * YR_D, 582.9)
-
-phase_venus = 360.0 * t_flight_yr / p_venus_yr
-check("(e) Venus arc [deg]", phase_venus, 234.1)
-check("(e) trail angle [deg]", phase_venus - 180.0, 54.1, rtol=1e-3)
-
 # ── Problem 2: Beneath the clouds of Venus ──────────────────
 print("Problem 2  Beneath the clouds of Venus")
 h_venus = KB * T_VENUS / (MU_VENUS * MU_ATOMIC * G_VENUS)
@@ -84,18 +72,14 @@ z_1bar = h_venus * math.log(P_VENUS_BAR)
 check("(b) ln 92", math.log(P_VENUS_BAR), 4.5218)
 check("(b) z(1 bar) [km]", z_1bar / 1e3, 71.98, rtol=1e-3)
 
-lapse = G_VENUS / CP_VENUS
-check("(c) Gamma [K/km]", lapse * 1e3, 7.85, rtol=1e-3)
-check("(c) T(50 km) [K]", T_VENUS - lapse * 50e3, 344.5)
-
 s_venus = S0 / A_VENUS**2
-check("(d) S_Venus", s_venus, 2603.6)
+check("(c) S_Venus", s_venus, 2603.6)
 abs_venus = s_venus / 4.0 * (1.0 - ALB_VENUS)
 abs_earth = S0 / 4.0 * (1.0 - ALB_EARTH)
-check("(d) absorbed Venus", abs_venus, 149.7)
-check("(d) absorbed Earth", abs_earth, 238.2)
-check("(d) Teq Venus", teq(s_venus, ALB_VENUS), 227.0, rtol=2e-3)
-check("(d) Teq Earth", teq(S0, ALB_EARTH), 255.0, rtol=2e-3)
+check("(c) absorbed Venus", abs_venus, 149.7)
+check("(c) absorbed Earth", abs_earth, 238.2)
+check("(c) Teq Venus", teq(s_venus, ALB_VENUS), 227.0, rtol=2e-3)
+check("(c) Teq Earth", teq(S0, ALB_EARTH), 255.0, rtol=2e-3)
 
 # ── Problem 3: Io's heat engine ─────────────────────────────
 print("Problem 3  Io's heat engine")
@@ -103,24 +87,15 @@ vol_io = 4.0 / 3.0 * math.pi * R_IO**3
 check("(a) volume", vol_io, 2.5294e19)
 check("(a) density", M_IO / vol_io, 3530.0)
 
-area_io = 4.0 * math.pi * R_IO**2
-check("(b) area", area_io, 4.1672e13)
-q_io = L_IO / area_io
-check("(b) flux", q_io, 2.400, rtol=1e-3)
-check("(b) ratio to Earth", q_io / Q_EARTH, 26.0, rtol=5e-3)
-check("(b) Io/Earth mass [%]", M_IO / M_EARTH * 100.0, 1.5, rtol=1e-2)
-
 l_rad = H_RADIOGENIC * M_IO
-check("(d) radiogenic power", l_rad, 4.465e11)
-check("(d) shortfall factor", L_IO / l_rad, 220.0, rtol=2e-2)
+check("(c) radiogenic power", l_rad, 4.465e11)
+check("(c) shortfall factor", L_IO / l_rad, 220.0, rtol=2e-2)
 
 # ── Problem 4: Reading time from rock ───────────────────────
 print("Problem 4  Reading time from rock")
 frac = 1.0 / (1.0 + 7.0)
 check("(b) K remaining checkpoint", frac, 0.125)
 check("(b) age [Gyr]", THALF_K40 * math.log(8.0) / math.log(2.0), 3.75)
-
-check("(c) K40 factor", 2.0 ** (AGE_SS / THALF_K40), 12.6, rtol=2e-3)
 
 # ── Problem 5: The climate history of Mars ──────────────────
 print("Problem 5  The climate history of Mars")
@@ -134,9 +109,6 @@ check("(a) greenhouse [K]", T_MARS - t_eq_mars, 5.0, rtol=5e-2)
 check("(a) Earth/Mars greenhouse", 33.0 / (T_MARS - t_eq_mars), 6.0, rtol=1e-1)
 
 check("(b) early water [m GEL]", 6.0 * 25.0, 150.0)
-
-abs_mars_at_venus = S0 / A_VENUS**2 / 4.0 * (1.0 - ALB_MARS)
-check("(d) absorbed flux", abs_mars_at_venus, 488.2)
 
 # ── Problem 6: A planet from a light curve ──────────────────
 print("Problem 6  A planet from a light curve")
@@ -152,21 +124,13 @@ check("(b) numerator", gm_sun * p_orb**2, 1.2139e31)
 check("(b) a^3", a3, 3.0749e29)
 a_m = a3 ** (1.0 / 3.0)
 check("(b) a [m]", a_m, 6.750e9)
-check("(b) a [AU] checkpoint", a_m / AU, 0.04512, rtol=1e-3)
+check("(b) a [AU]", a_m / AU, 0.04512, rtol=1e-3)
 check("(b) AU-yr route [AU]", (3.50 / YR_D) ** (2.0 / 3.0), 0.0451, rtol=2e-3)
 check("(b) a in stellar radii", a_m / RSUN, 9.7, rtol=2e-2)
 check("(b) Earth/planet a ratio", AU / a_m, 22.0, rtol=1e-2)
 
-a_au = a_m / AU
-s_planet = S0 / a_au**2
-check("(c) a^2 [AU^2]", a_au**2, 2.0358e-3)
-check("(c) S at planet", s_planet, 6.685e5, rtol=1e-3)
-check("(c) flux ratio to Earth", s_planet / S0, 490.0, rtol=5e-3)
-check("(c) argument", s_planet * 0.90 / (4.0 * SIGMA), 2.6529e12, rtol=1e-3)
-check("(c) Teq [K]", teq(s_planet, 0.10), 1276.0, rtol=1e-3)
-
 # ── Marks bookkeeping and verdict ───────────────────────────
 print("Marks")
-check_points("mockexam01/mockexam01_content.tex")
+check_points("mockexam01/mockexam01_content.tex", expected=60.0, each=10.0)
 
 verdict()

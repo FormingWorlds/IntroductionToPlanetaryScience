@@ -728,7 +728,7 @@ Both PDFs are generated from a single content file: `worksheetNN_content.tex` ho
 | Exam | Scope | Status | Location |
 |------|-------|--------|----------|
 | Final | Lectures 1–14 (cumulative) | Not started | private repo |
-| Mock exams (a few, with full solutions) | Representative coverage, same shape and level as the final | Not started | public website |
+| Mock exams (3, with full solutions) | Representative coverage, same shape and level as the final: 6 questions of 10 points each, 60 points, 120 min | Published | public website |
 
 The final exam requires:
 - Exam paper (private until exam day; released to students at exam start)
