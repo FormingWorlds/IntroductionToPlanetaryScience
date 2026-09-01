@@ -1,15 +1,15 @@
 (mock_exams)=
 # Mock exams
 
-Three mock exams and their full solutions are collected on this page as the course runs.
+Three mock exams and their full solutions are collected on this page.
 They have the same shape and level as the final written exam and are the best gauge of what to expect.
-The first two are available below; the third will appear here as the course runs.
+Together the three cover every lecture of the course.
 
 | # | Exam | Solutions |
 |---|---|---|
 | 1 | [Mock exam 1 (PDF)](_static/exams/mockexam01.pdf) | [Solutions (PDF)](_static/exams/mockexam01_solutions.pdf) |
 | 2 | [Mock exam 2 (PDF)](_static/exams/mockexam02.pdf) | [Solutions (PDF)](_static/exams/mockexam02_solutions.pdf) |
-| 3 | Coming soon | Coming soon |
+| 3 | [Mock exam 3 (PDF)](_static/exams/mockexam03.pdf) | [Solutions (PDF)](_static/exams/mockexam03_solutions.pdf) |
 
 (must_know_list)=
 ## What you must know by heart

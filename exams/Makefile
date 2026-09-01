@@ -1,5 +1,5 @@
 DOCS    = formulalist
-EXAMS   = mockexam01 mockexam02
+EXAMS   = mockexam01 mockexam02 mockexam03
 LATEXMK = latexmk -xelatex -interaction=nonstopmode
 
 .PHONY: all clean web $(DOCS) $(EXAMS)
