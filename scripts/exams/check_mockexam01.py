@@ -14,9 +14,11 @@ python scripts/exams/check_mockexam01.py
 from __future__ import annotations
 
 import math
-import sys
+
+from _checker_common import SIGMA, check, check_points, teq, verdict
 
 # ── Constants and data printed on the exam ──────────────────
+# SIGMA (Stefan-Boltzmann) is imported above with the shared helpers.
 G = 6.674e-11  # m^3 kg^-1 s^-2
 AU = 1.496e11  # m
 YR_D = 365.25  # d
@@ -26,7 +28,6 @@ RSUN = 6.957e8  # m
 RJUP_KM = 71492.0  # km
 KB = 1.381e-23  # J K^-1
 MU_ATOMIC = 1.661e-27  # kg
-SIGMA = 5.670e-8  # W m^-2 K^-4
 S0 = 1361.0  # W m^-2 at 1 AU
 
 A_VENUS, ALB_VENUS = 0.723, 0.77
@@ -39,26 +40,6 @@ M_EARTH = 5.972e24  # kg
 H_RADIOGENIC = 5e-12  # W kg^-1
 THALF_K40 = 1.25  # Gyr
 AGE_SS = 4.567  # Gyr
-
-_n_checks = 0
-_failures: list[str] = []
-
-
-def check(name: str, got: float, printed: float, rtol: float = 5e-4) -> None:
-    """Compare a recomputed value against the printed one within rtol."""
-    global _n_checks
-    _n_checks += 1
-    ok = math.isfinite(got) and abs(got - printed) <= rtol * abs(printed)
-    tag = "ok " if ok else "FAIL"
-    print(f"  [{tag}] {name}: got {got:.5g}, printed {printed:.5g}")
-    if not ok:
-        _failures.append(name)
-
-
-def teq(flux: float, albedo: float) -> float:
-    """Equilibrium temperature in K for absorbed flux S(1-A)/4."""
-    return (flux * (1.0 - albedo) / (4.0 * SIGMA)) ** 0.25
-
 
 gm_sun = G * MSUN
 
@@ -184,8 +165,8 @@ check("(c) flux ratio to Earth", s_planet / S0, 490.0, rtol=5e-3)
 check("(c) argument", s_planet * 0.90 / (4.0 * SIGMA), 2.6529e12, rtol=1e-3)
 check("(c) Teq [K]", teq(s_planet, 0.10), 1276.0, rtol=1e-3)
 
-# ── Verdict ─────────────────────────────────────────────────
-if _failures:
-    print(f"\nFAILED: {len(_failures)} of {_n_checks} checks: {', '.join(_failures)}")
-    sys.exit(1)
-print(f"\nALL OK ({_n_checks} checks)")
+# ── Marks bookkeeping and verdict ───────────────────────────
+print("Marks")
+check_points("mockexam01/mockexam01_content.tex")
+
+verdict()
