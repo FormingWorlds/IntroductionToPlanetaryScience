@@ -1404,7 +1404,8 @@ Conventions that hold in all chapters:
 - Animated figures (gif, avif) stay, since they show motion that a still image cannot.
 - No filler transitions ("Furthermore", "Moreover") and no em dashes in prose.
 
+- The sentence lengths in L09, L10 and L11 now vary as much as in L01 to L08 (ratio of the standard deviation to the mean 0.50, 0.51 and 0.50, from 0.36 to 0.39 before the read-through); the read-through split compound sentences and joined a few linked pairs without changing content.
+
 Open:
 
-- The sentence lengths in L09, L10 and L11 vary less than in L01 to L08; a read-through that splits or joins a few sentences per section would restore the rhythm.
 - The Ceres share of the belt mass (L12) is kept at 40%, which follows from the belt mass and Ceres mass quoted in the same chapter ($9.4 \times 10^{20}$ kg over $2.4 \times 10^{21}$ kg); one third also appears in the literature. The Scooter direction is settled as prograde (about 16 h period against 16.1 h interior rotation, roughly 10 m s$^{-1}$).
