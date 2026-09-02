@@ -1409,3 +1409,13 @@ Conventions that hold in all chapters:
 Open:
 
 - The Ceres share of the belt mass (L12) is kept at 40%, which follows from the belt mass and Ceres mass quoted in the same chapter ($9.4 \times 10^{20}$ kg over $2.4 \times 10^{21}$ kg); one third also appears in the literature. The Scooter direction is settled as prograde (about 16 h period against 16.1 h interior rotation, roughly 10 m s$^{-1}$).
+
+## 15. Figure crops in L10 and L11 (2026-09-02)
+
+Four figures in L10 and L11 use cleaner files of the same content:
+
+- `tanaka2014_periods` (L10) is the complete correlation chart of the USGS SIM 3292 map sheet, from the lowland column to the crater-density scale, without the explanatory paragraph of the map sheet. The caption names the crater-density scale (craters larger than 1, 5, and 16 km per $10^6$ km$^2$) and states that the Hesperian has only an early and a late epoch.
+- `io_tidal_park2024` (L11) is Fig. 1 of Park et al. (2024) without the journal header. The caption describes the axes ($|k_2|/Q$ on the vertical axis against $\mathrm{Re}(k_2)$), the model curves in $d$ or $h$ with markers in $\beta$, and the Juno and astrometry constraints. It closes with the interpretive point that one gravity measurement rules out a class of interior structures.
+- `neptune_great_dark_spot` (L11) is the L06 file `neptune_great_dark_spot`, and `jupiter_north_pole_cyclones_juno` (L11) is the L06 file `juno_polar_cyclones`; both are free of frame borders. The Great Dark Spot caption names Scooter and Dark Spot 2 in one sentence and points to `fig:neptune_scooter` for the Scooter detail, so the two adjacent Neptune figures keep their split between overview and detail.
+
+Rule for reused images: when two chapters show the same picture, both use the cleanest available file, and the captions may differ to fit each chapter's argument.

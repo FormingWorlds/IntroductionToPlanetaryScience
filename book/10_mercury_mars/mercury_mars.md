@@ -443,7 +443,7 @@ Global geologic map of Mars from the chronostratigraphic mapping of {cite:t}`Tan
 :width: 700px
 :align: center
 
-Correlation chart of Mars map units across the three main epochs from {cite:t}`Tanaka2014`. Columns separate the major terrain categories (lowland, impact, polar, basin, volcanic, apron, transition, highland) and rows correspond to the Amazonian, Hesperian, and Noachian periods (with subdivisions into early, middle, late). The progressive contraction of unit ages from the Noachian to the Amazonian is itself a key constraint on Mars' thermal and atmospheric evolution.
+Correlation chart of the map units in the global geologic map of Mars by {cite:t}`Tanaka2014`. Columns separate the major terrain categories (lowland, impact, polar, basin, volcanic, apron, transition, highland) and rows correspond to the Amazonian, Hesperian, and Noachian periods, each split into early, middle, and late epochs except the Hesperian, which has only an early and a late epoch. Each box spans the age range of one map unit. The numbers on the right give the crater densities that define the epoch boundaries: the number of craters larger than 1, 5, and 16 km per $10^6$ km$^2$. The decline in the number and extent of new units from the Noachian to the Amazonian records the slowing of resurfacing on Mars and is a key constraint on its thermal and atmospheric evolution. Image credit: USGS (public domain).
 ```
 
 The **Noachian** epoch ($\sim 4.1$ to $\sim 3.7$ Ga) is the oldest period, preserved in the heavily cratered southern highlands.

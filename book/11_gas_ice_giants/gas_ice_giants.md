@@ -143,7 +143,7 @@ Io's tenuous $\mathrm{SO_2}$ atmosphere is supplied by volcanic plumes and subli
 :name: fig:io_tidal
 :width: 90%
 
-Comparison of two interior models for Io constrained by Juno gravity science. Left panel (a): a model **without** a global magma ocean, with an elastic lithosphere over a mostly solid silicate mantle. Right panel (b): a model **with** a global shallow magma ocean below a $\sim$50 km lithosphere. The dotted curves show $k_2$ as a function of dissipation parameter $Q$. The measured Juno tidal Love number $k_2$ rules out the right-panel model. {cite:t}`Park2024` conclude that the data **preclude a shallow magma ocean** of the kind invoked in earlier interpretations and require the rigid, mostly solid mantle of the left panel. The figure illustrates how external gravity measurements can directly distinguish solid from liquid interiors. Reproduced from {cite:t}`Park2024`.
+Io's measured tidal response compared with interior models **without** (a) and **with** (b) a global magma ocean. The sketches show the layering of each model. The plots show the dissipation factor $|k_2|/Q$ (vertical axis, logarithmic) against the real part of the tidal Love number, $\mathrm{Re}(k_2)$ (horizontal axis). Separate curves correspond to different lithosphere thicknesses $d$ (a) or to different depths $h$ of a 100 km thick magma ocean (b); the markers along each curve mark models with different values of the mantle rheology parameter $\beta$, which sets how strongly the mantle dissipates tidal energy. Green boxes are the 1$\sigma$ and 3$\sigma$ Juno constraints, and grey bands mark the earlier astrometry-only constraint. Models without a magma ocean pass through the Juno box for low values of $\beta$, whereas a magma ocean shallower than about 500 km produces a far larger $\mathrm{Re}(k_2)$ than measured. The data therefore **preclude a shallow magma ocean** and are consistent with a mostly solid mantle: a single gravity measurement can rule out a whole class of interior structures. Reproduced from {cite:t}`Park2024`.
 ```
 
 Juno measured the gravitational **$k_2$ tidal Love number** (a dimensionless measure of tidal deformation) to be $k_2 \approx 0.125 \pm 0.047$ {cite:p}`Park2024`.
@@ -664,7 +664,7 @@ A dedicated Uranus orbiter would be the most direct test.
 :name: fig:neptune_dark
 :width: 70%
 
-The Great Dark Spot of Neptune, an anticyclonic storm in the southern hemisphere, imaged by Voyager 2 in 1989. The dark spot was comparable in size to Earth and was bordered by bright methane cirrus clouds. Image credit: NASA/JPL-Caltech.
+The Great Dark Spot of Neptune (centre left), an anticyclonic storm in the southern hemisphere, imaged by Voyager 2 in August 1989. The dark spot was comparable in size to Earth and was bordered by bright methane cirrus clouds. The small bright cloud below the Great Dark Spot is Scooter (see {numref}`fig:neptune_scooter`), and the second dark storm at lower right is Dark Spot 2. Image credit: NASA/JPL-Caltech.
 ```
 
 ```{figure} figures/neptune_scooter.avif
