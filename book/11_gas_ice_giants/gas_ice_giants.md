@@ -638,12 +638,12 @@ The Great Dark Spot of Neptune, an anticyclonic storm in the southern hemisphere
 :name: fig:neptune_scooter
 :width: 70%
 
-Neptune's southern hemisphere with the small bright cloud feature known informally as "Scooter" visible below the Great Dark Spot. Scooter is at about $42^\circ$ S latitude and drifts westward (i.e. against Neptune's spin) by $\sim$100 m s$^{-1}$ relative to the System III magnetic-rotation frame, one of the tracers used to map Neptune's mid-latitude zonal winds. Image credit: NASA/JPL-Caltech.
+Neptune's southern hemisphere with the small bright cloud feature known informally as "Scooter" visible below the Great Dark Spot. Scooter is at about $42^\circ$ S latitude and circles the planet in about 16 h, slightly faster than the 16.1 h interior rotation measured from the magnetic field, so it drifts slowly eastward (prograde) at roughly 10 m s$^{-1}$; it is one of the tracers used to map Neptune's mid-latitude zonal winds. Image credit: NASA/JPL-Caltech.
 ```
 
 Voyager 2 revealed an active atmosphere on Neptune in 1989, contrasting with Uranus.
 The **Great Dark Spot** was an Earth-sized anticyclonic storm bordered by methane cirrus clouds ({numref}`fig:neptune_dark`).
-Features like "Scooter" drifted westward at $\sim$100 m s$^{-1}$, tracing Neptune's **zonal flow** (winds aligned with latitude) ({numref}`fig:neptune_scooter`).
+Tracked cloud features such as "Scooter" (which circles the planet in about 16 h, slightly faster than the interior) trace Neptune's **zonal flow** (winds aligned with latitude) ({numref}`fig:neptune_scooter`).
 The spot vanished by 1994, a sign of vigorous, transient atmospheric convection.
 
 Neptune hosts the fastest winds in the solar system, reaching peak westward speeds of $\sim$400 m s$^{-1}$ in its equatorial jet {cite:p}`Smith1989`.

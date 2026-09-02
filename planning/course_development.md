@@ -1334,7 +1334,7 @@ Where the lecture notes and the slides quoted different values for the same quan
 - L08: inner-core density jump about 5% (PREM), not 30%.
 - L09: geodynamo active since at least 3.45 Ga (Tarduno et al. 2010); critical distance 0.77 AU (Hamano et al. 2013); SMOW D/H $1.56 \times 10^{-4}$; EnVision launch November 2031; Magellan 1990 to 1994, Venus Express 2006 to 2014; Venus crater-retention age 150 to 250 Myr with the older 300 to 1000 Myr range noted; $T_\mathrm{eq}$ 227 K; Venus turns 243 times slower than Earth.
 - L10: Mercury core mass fraction about 74%; InSight ScS reflections give a core radius of about 1830 km; faint young Sun 25% less luminous at 4 Ga.
-- L11: Saturn and Neptune equatorial jets both about 400 m s$^{-1}$; Europa ice shell 6 to 25 km; Scooter drift about 100 m s$^{-1}$ westward in the System III frame.
+- L11: Saturn and Neptune equatorial jets both about 400 m s$^{-1}$; Europa ice shell 6 to 25 km; Scooter circles in about 16 h, slightly prograde against the 16.1 h interior rotation (Voyager 2 imaging and radio period).
 - L12: Ceres about 40% of a $4 \times 10^{-4}$ Earth-mass belt; impactor bins 10 m (about 100 kt, once per decade) and 20 m (about 0.5 Mt, once per few decades to a century); Psyche 222 km; Pluto 1187 km and 1860 kg m$^{-3}$; $^{26}$Al half-life 0.717 Myr; 2I/Borisov CO/H$_2$O at least 173% (Bodewits et al. 2020, HST/COS with Swift water rates).
 - L13: $\eta_\oplus$ 0.2 to 0.9 with a central 0.4 (Bryson et al. 2021); K2-18b DMS at or below 2$\sigma$; WASP-43b one transit and two eclipses; HR 8799 age 30 to 60 Myr; $\beta$ Pic b about 9 $M_\mathrm{Jup}$ at about 9 AU.
 - L14: K-dwarf main-sequence lifetimes 17 to 70 Gyr, 24 Gyr for $\epsilon$ Eri; LHS 3844b dayside 503 K against a 508 K bare-rock prediction.
@@ -1400,4 +1400,4 @@ Conventions that hold in all chapters:
 Open:
 
 - The sentence lengths in L09, L10 and L11 vary less than in L01 to L08; a read-through that splits or joins a few sentences per section would restore the rhythm.
-- The Scooter drift direction (L11) and the Ceres share of the belt mass (L12) are still the two values with conflicting literature support; see §12.
+- The Ceres share of the belt mass (L12) is kept at 40%, which follows from the belt mass and Ceres mass quoted in the same chapter ($9.4 \times 10^{20}$ kg over $2.4 \times 10^{21}$ kg); one third also appears in the literature. The Scooter direction is settled as prograde (about 16 h period against 16.1 h interior rotation, roughly 10 m s$^{-1}$).
