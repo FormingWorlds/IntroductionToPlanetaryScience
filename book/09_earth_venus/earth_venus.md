@@ -29,33 +29,25 @@ Volatile species ($\mathrm{H_2O}$, $\mathrm{CO_2}$, noble gases) outgas from the
 Reproduced from {cite:t}`Lammer2018`.
 ```
 
-
-
-
-
 ## Part 1: Earth as reference
 
 ### Earth's bulk properties and what makes it habitable
 
-Earth is the third planet from the Sun, with a semimajor axis of $1$ AU, a mass of $\Mearth = 5.97 \times 10^{24}$ kg, and an equatorial radius of $\Rearth = 6378$ km.
-Its mean density is $5.51$ g/cm$^3$, the highest of any planet in the Solar System, indicating a strongly differentiated interior with a metallic iron-nickel core ({ref}`Lecture 8 <lecture08>`) {cite:p}`Dziewonski1981,NASAEarthFactSheet`.
-Its dimensionless moment of inertia factor $C/MR^2$, a measure of how strongly mass is concentrated toward the centre relative to a uniform sphere (for which $C/MR^2 = 0.4$), takes the value $0.331$, confirming the strong central concentration of mass; this is a direct consequence of having an iron core that occupies roughly $17\%$ of the planet's volume but $32\%$ of its mass.
-The surface conditions are easy to memorise: a global mean surface temperature of $T_s \approx 288$ K, a mean atmospheric pressure of $P_s = 1.013$ bar, and an atmospheric composition dominated by molecular nitrogen ($78\%$ $\mathrm{N_2}$) and oxygen ($21\%$ $\mathrm{O_2}$), with trace species (argon, water vapour, $\mathrm{CO_2}$) making up the remainder.
+Earth has a semimajor axis of $1$ AU, mass $\Mearth = 5.97 \times 10^{24}$ kg, and equatorial radius $\Rearth = 6378$ km.
+Its mean density of $5.51$ g/cm$^3$, the highest in the Solar System, indicates a differentiated interior with a metallic iron-nickel core ({ref}`Lecture 8 <lecture08>`) {cite:p}`Dziewonski1981`.
+The dimensionless moment of inertia factor $C/MR^2 = 0.331$, compared to $0.4$ for a uniform sphere, indicates that an iron core holds $32\%$ of Earth's mass in $17\%$ of its volume.
+Mean surface conditions are $T_s \approx 288$ K and $P_s = 1.013$ bar, under an atmosphere of $78\%$ $\mathrm{N_2}$, $21\%$ $\mathrm{O_2}$, and trace species (argon, water vapour, $\mathrm{CO_2}$).
 
-These bulk numbers, taken on their own, are unremarkable.
-What makes Earth distinctive is the combination of three properties that, together, are unique to Earth in the Solar System today: an active **mobile-lid** plate tectonic regime, in which the rigid outer shell is broken into plates that move independently over the mantle, a global biosphere, and persistent liquid surface water covering roughly $71\%$ of the planet.
-None of the other rocky planets, no moon, and no dwarf planet has even one of these features today; only Earth has all three.
-The deep insight from comparative planetology is that **the three are coupled**.
-Plate tectonics requires hydration of the **lithosphere**, the rigid outer shell comprising the crust and uppermost mantle, by liquid water to weaken the rocks enough that **subduction**, the sinking of one plate back into the mantle beneath another, can occur ({ref}`Lecture 7 <lecture07>`); the biosphere has set and maintained the atmospheric balance of $\mathrm{O_2}$ and $\mathrm{CO_2}$ for the last $\sim$2.4 billion years {cite:p}`Lyons2014`; and the persistence of liquid water on $4$-Gyr timescales is in turn stabilised by the carbonate-silicate cycle ({ref}`Lecture 6 <lecture06>`), a negative feedback that requires both volcanic outgassing of $\mathrm{CO_2}$ and silicate weathering on a wet surface {cite:p}`Walker1981`.
-The three legs of the tripod hold each other up.
-Remove any one and the system collapses.
-This coupling is the essential reason Earth has remained habitable for billions of years and the essential reason we suspect Venus, lacking all three legs today, lost the configuration early.
+Earth is unique today in combining three coupled systems: an active **mobile-lid** plate tectonic regime, where the rigid outer shell is broken into independently moving plates; persistent liquid surface water covering $71\%$ of the planet; and a global biosphere.
+Liquid water hydrates the **lithosphere**, the rigid outer shell comprising the crust and uppermost mantle, enabling **subduction**, the sinking of one plate beneath another into the mantle ({ref}`Lecture 7 <lecture07>`).
+The biosphere has maintained atmospheric $\mathrm{O_2}$ and $\mathrm{CO_2}$ for the last $\sim$2.4 billion years {cite:p}`Lyons2014`.
+Persistent liquid water on $4$-Gyr timescales is stabilised by the **carbonate-silicate cycle** ({ref}`Lecture 6 <lecture06>`), a negative feedback requiring volcanic outgassing of $\mathrm{CO_2}$ and silicate weathering on a wet surface {cite:p}`Walker1981`.
+This mutual coupling maintains Earth's habitability over billions of years; removing any component causes the system to collapse, as likely occurred early on Venus.
 
 ### The geologic eons of Earth
 
-Everything that follows in this lecture quotes ages: the oldest crust, the onset of the geodynamo, the rise of oxygen, the great glaciations.
-These ages only carry meaning within the standard temporal frame of Earth history, so we set it up first.
-Geologists divide the $4.54$ Gyr since Earth's formation into four **eons**, whose boundary ages are calibrated by radiometric dating of the rock record ({ref}`Lecture 12 <lecture12>`) and standardised in the Geologic Time Scale {cite:p}`Gradstein2020` ({numref}`fig:earth-eons`).
+Geologists divide the $4.54$ Gyr of Earth history into four **eons**, the primary formal subdivisions of geologic time ({numref}`fig:earth-eons`).
+Boundary ages are calibrated by radiometric dating ({ref}`Lecture 12 <lecture12>`) and standardised in the Geologic Time Scale {cite:p}`Gradstein2020`.
 
 ```{figure} figures/earth_eons_timeline.avif
 :name: fig:earth-eons
@@ -68,16 +60,14 @@ The geologic eons and eras of Earth.
 Boundary ages follow the Geologic Time Scale 2020 {cite:p}`Gradstein2020`.
 ```
 
-The **Hadean** eon ($4.54$ to $4.0$ Ga) covers the violent infancy of the planet: the final giant impacts of accretion, including the Moon-forming impact ({ref}`Lecture 4 <lecture04>`), the solidification of the last global magma ocean, and the formation of the earliest crust, atmosphere, and oceans.
-Almost no intact Hadean rock survives; the record consists mainly of individual **zircon** crystals, chemically resistant zirconium-silicate minerals eroded out of their long-destroyed host rocks and redeposited in younger sediments.
-The oldest of these detrital zircons, from the Jack Hills in Western Australia, date to $4.4$ Ga, and their oxygen-isotope compositions indicate that continental-type crust and liquid surface water already existed then {cite:p}`Wilde2001`.
-The picture of the Hadean has therefore shifted from the hellish landscape the name implies toward a world that acquired oceans, and possibly the first habitable environments, within $\sim$150 Myr of formation; we return to this evidence when discussing the faint young Sun below.
+The **Hadean** eon ($4.54$ to $4.0$ Ga) covers accretion, the Moon-forming impact ({ref}`Lecture 4 <lecture04>`), magma ocean solidification, and early crust and oceans.
+Because intact rocks are absent, the record relies on detrital **zircon** grains, chemically resistant zirconium-silicate minerals eroded from ancient crust.
+Detrital zircons from Jack Hills date to $4.4$ Ga, with oxygen isotopes indicating liquid surface water and continental crust formed within $\sim$150 Myr of formation {cite:p}`Wilde2001`.
 
-The **Archean** eon ($4.0$ to $2.5$ Ga) opens with the age of the oldest in-place continental rocks, $4.0$ Gyr, and is the first eon with a substantial rock record.
-Archean Earth was a recognisable but alien planet: liquid water oceans and continents existed, the geodynamo was running by at least $3.45$ Ga {cite:p}`Tarduno2010`, and life was already present, but the atmosphere was anoxic, dominated by $\mathrm{N_2}$ and $\mathrm{CO_2}$ with a greenhouse boost plausibly supplied by methane {cite:p}`Catling2020`.
-The **Proterozoic** eon ($2.5$ Ga to $539$ Ma) is bracketed by the two great environmental revolutions of Earth history: it opens with the Great Oxidation Event and the Huronian glaciations at $\sim$2.4 Ga and closes with the Neoproterozoic Snowball Earth episodes, the second rise of oxygen, and the first macroscopic animal fossils, each of which we treat in its own section below.
-The **Phanerozoic** eon ($539$ Ma to the present, the name means "visible life") is the familiar territory of animal and plant evolution, and its three eras are separated by the two largest mass extinctions in the fossil record: the end-Permian crisis at $252$ Ma and the end-Cretaceous impact at $66$ Ma ({ref}`Lecture 12 <lecture12>`).
-{numref}`fig:catling-precambrian` compiles the environmental and biological milestones of the first three eons in one column; it is worth study now, because most of the Earth history invoked in this lecture, and in the habitability arguments of {ref}`Lecture 13 <lecture13>` and {ref}`Lecture 14 <lecture14>`, happened in the Precambrian.
+The **Archean** eon ($4.0$ to $2.5$ Ga) preserves the oldest continental rocks ($4.0$ Gyr), an active geodynamo by $3.45$ Ga {cite:p}`Tarduno2010`, early life, and an anoxic $\mathrm{N_2}$ and $\mathrm{CO_2}$ atmosphere with methane {cite:p}`Catling2020`.
+The **Proterozoic** eon ($2.5$ Ga to $539$ Ma) spans from the Great Oxidation Event and Huronian glaciations ($\sim$2.4 Ga) to Neoproterozoic Snowball Earth episodes and the first macroscopic animals.
+The **Phanerozoic** eon ($539$ Ma to present, meaning "visible life") encompasses animal and plant evolution, punctuated by mass extinctions at $252$ Ma and $66$ Ma ({ref}`Lecture 12 <lecture12>`).
+Precambrian milestones in {numref}`fig:catling-precambrian` provide the foundation for habitability in {ref}`Lecture 13 <lecture13>` and {ref}`Lecture 14 <lecture14>`.
 
 ```{figure} figures/catling2020_precambrian_events.avif
 :name: fig:catling-precambrian
@@ -89,26 +79,20 @@ The left columns give the eons and eras; the annotations mark the atmospheric tr
 Reproduced from {cite:t}`Catling2020`.
 ```
 
-The essential quantitative point of {numref}`fig:earth-eons` is the extreme imbalance of the timeline.
-Complex multicellular life occupies only the last $\sim$12% of Earth history; for the preceding $\sim$4 Gyr the planet was inhabited exclusively by microbes.
-When we use Earth as the reference case for habitability, we must remember that "Earth-like" has meant several radically different planets over time: a Hadean water-world with a $\mathrm{CO_2}$-rich atmosphere, an anoxic Archean planet under a fainter Sun, a Proterozoic world with an ozone layer but almost no macroscopic life, and only recently the oxygen-rich planet we inhabit.
-This point returns with full force in {ref}`Lecture 14 <lecture14>` when we ask what a remote observer could have detected at each of these stages.
+{numref}`fig:earth-eons` highlights an extreme temporal imbalance: complex multicellular life occupies only the final $\sim$12% of Earth history, following $\sim$4 Gyr of microbial dominance.
+Earth has represented distinct states over time: a Hadean water-world, an anoxic Archean planet, an oxygenating Proterozoic world, and the modern biosphere.
+These distinct evolutionary stages govern the observable biosignatures discussed in {ref}`Lecture 14 <lecture14>`.
 
 ### Plate tectonics in action
 
-We covered the dynamical basis of mantle convection and the surface expression of mobile-lid tectonics in {ref}`Lecture 7 <lecture07>`.
-Here we recap only the elements that matter for the comparison with Venus.
-Earth's lithosphere is divided into roughly a dozen major rigid plates that move horizontally at speeds of order $1\text{--}10$ cm/yr over an underlying ductile **asthenosphere**, the hotter, slowly flowing mantle layer beneath the lithosphere.
-New oceanic crust is created at mid-ocean ridges by partial melting of the upwelling mantle, and old oceanic crust is consumed at subduction zones, where one plate descends back into the mantle beneath another.
-The result is that no oceanic crust on Earth is older than $\sim$200 Myr, despite the planet itself being $4.54$ Gyr old; oceanic lithosphere is the most short-lived component of the solid Earth, recycled completely roughly twenty times over the planet's history.
-Continental crust, by contrast, is buoyant relative to the mantle, resists subduction, and contains rocks as old as $4.0$ Gyr.
+As covered in {ref}`Lecture 7 <lecture07>`, Earth's lithosphere is divided into rigid plates that move over the ductile **asthenosphere**, the hotter mantle layer beneath.
+New oceanic crust is created at mid-ocean ridges and consumed at subduction zones, leaving no oceanic crust older than $\sim$200 Myr.
+Continental crust resists subduction and contains rocks as old as $4.0$ Gyr.
 
-For the Earth-Venus comparison, the key role of plate tectonics is climatological, not just geological.
-Subduction is the **return leg of the carbon cycle**.
-$\mathrm{CO_2}$ released to the atmosphere by volcanism reacts with silicate minerals in the presence of liquid water to form carbonate sediments on the seafloor; these are subsequently subducted into the mantle, where the carbon is partly returned to the deep interior and partly recycled back to the atmosphere through arc volcanism over hundreds of millions of years {cite:p}`Walker1981,KrissansenTotton2018`.
-The cycle's timescale to equilibrate atmospheric $\mathrm{CO_2}$ in response to a perturbation is $\sim$0.5 Myr {cite:p}`Walker1981`.
-Without an active subduction system, the sink half of the cycle stops working, and the carbon released from the interior accumulates in the atmosphere indefinitely.
-Holding this thought is essential for understanding Venus, where there is no observed subduction and no observed carbonate sink ({numref}`fig:honing-carbon-cycle`).
+Subduction is also the return leg of the carbon cycle.
+Volcanic $\mathrm{CO_2}$ reacts with silicate minerals in the presence of liquid water to form carbonate sediments, which are subducted into the mantle and partly recycled to the atmosphere {cite:p}`KrissansenTotton2018`.
+This cycle equilibrates atmospheric $\mathrm{CO_2}$ on a timescale of $\sim$0.5 Myr {cite:p}`Walker1981`.
+Without subduction, carbon released from the interior accumulates in the atmosphere indefinitely, as on Venus ({numref}`fig:honing-carbon-cycle`).
 
 ```{figure} figures/honing2021_carbon_cycle_diagram.avif
 :name: fig:honing-carbon-cycle
@@ -123,15 +107,14 @@ Reproduced from {cite:t}`Honing2021`.
 
 ### Earth's magnetic field and its consequences
 
-Earth has a global, dipole-dominated magnetic field generated by convection in the liquid outer core, with surface field strengths in the range $25\text{--}65$ microtesla and a dipole tilt of about $11^\circ$ from the geographic axis.
-The geodynamo has been continuously active for at least $3.45$ Gyr, on the basis of palaeomagnetic measurements of single zircon crystals {cite:p}`Tarduno2010`.
-We discussed the physics of the dynamo mechanism in {ref}`Lecture 4 <lecture04>`; what matters here is its consequences at the planetary surface and for atmospheric escape.
+Earth possesses a global magnetic field driven by the **geodynamo**, convection in the liquid outer core ({ref}`Lecture 4 <lecture04>`), with surface field strengths of $25$ to $65$ microtesla.
+Palaeomagnetic measurements of single zircon crystals show that this dynamo has operated for at least $3.45$ Gyr {cite:p}`Tarduno2010`.
 
-The magnetosphere deflects most of the solar wind around the planet, creating a teardrop-shaped cavity that extends to roughly $10\, \Rearth$ on the dayside and many tens of $\Rearth$ in the magnetotail on the nightside.
-Trapped energetic particles populate the Van Allen radiation belts, but at the surface the geomagnetic field reduces the atmospheric ionising-radiation dose by orders of magnitude relative to what would be experienced on an unshielded planet.
-More importantly for long-term planetary evolution, the magnetosphere suppresses several pathways of atmospheric loss: ion-pickup escape, in which atmospheric ions are accelerated by the solar-wind motional electric field, is essentially eliminated for the upper-atmospheric region magnetically connected to closed field lines.
-Hydrogen escape from Earth still occurs, by Jeans escape (thermal evaporation of the fastest atoms in the high-velocity tail of the Maxwell-Boltzmann distribution) and polar wind (a steady outflow of ions along open magnetic field lines near the poles), but at rates many orders of magnitude lower than the loss rates that have desiccated Mars (which lost its dynamo around $4.1\text{--}3.9$ Ga; {ref}`Lecture 10 <lecture10>`) and that may have helped strip Venus of its water during periods of intense solar EUV (extreme ultraviolet) radiation in the early Solar System {cite:p}`Lammer2018`.
-The contrast with Venus, which has no detectable internal magnetic field today, is stark, and we will return to it in Part 2.
+The resulting **magnetosphere** deflects the solar wind into a cavity extending roughly $10\, \Rearth$ on the dayside, shielding the surface from ionising radiation.
+It suppresses atmospheric loss by eliminating **ion-pickup escape**, the acceleration of atmospheric ions by the solar-wind motional electric field across closed field lines.
+Earth still loses hydrogen through **Jeans escape** (thermal loss of high-velocity atoms) and **polar wind** (ion outflow along open magnetic field lines near the poles).
+These loss rates are far lower than the escape that desiccated Mars after its dynamo died around $4.1$ to $3.9$ Ga ({ref}`Lecture 10 <lecture10>`) and stripped early Venus under solar EUV radiation {cite:p}`Lammer2018`.
+Venus lacks a detectable internal magnetic field today, a contrast explored in Part 2.
 
 ```{figure} figures/magnetosphere_anatomy_esa.avif
 :name: fig:earth-magnetosphere
@@ -144,9 +127,8 @@ Credit: [ESA](https://www.esa.int/ESA_Multimedia/Images/2026/02/Anatomy_of_Earth
 
 ### The hydrosphere and cryosphere
 
-Earth's surface water inventory is dominated by the oceans, which hold $1.34 \times 10^{21}$ kg of water (about $97\%$ of the total) at an average depth of $3.7$ km.
-Polar ice caps, mountain glaciers, sea ice, and permafrost together (the **cryosphere**) account for another $\sim$2% ({numref}`fig:blue-marble-apollo17`), and groundwater, lakes, rivers, and atmospheric vapour collectively contribute the remaining $\sim$1%.
-Spreading the oceans evenly over the entire surface of the planet would give a global equivalent water layer of about $2.7$ km thickness; this is the natural unit for comparing total water inventories across planets.
+The oceans hold $1.34 \times 10^{21}$ kg of water (about $97\%$), forming a $2.7$ km global equivalent layer.
+The **cryosphere** (the frozen water reservoir) holds $\sim$2% ({numref}`fig:blue-marble-apollo17`), with remaining water contributing $\sim$1%.
 
 ```{figure} figures/blue_marble_apollo17.avif
 :name: fig:blue-marble-apollo17
@@ -156,13 +138,11 @@ Spreading the oceans evenly over the entire surface of the planet would give a g
 "The Blue Marble", Apollo 17, 7 December 1972. Earth photographed by the crew en route to the Moon, with the hydrosphere and cryosphere visible together. Ocean covers most of the sunlit disk on both sides of Africa, from the South Atlantic in the west to the Indian Ocean in the east, while the Antarctic ice cap forms the bright cryosphere along the lower limb. Africa, the Arabian Peninsula, and Madagascar lie near the centre of the disk. NASA image AS17-148-22727. Credit: NASA / Apollo 17 crew.
 ```
 
-The thermohaline circulation (driven by gradients in temperature and salinity) and the wind-driven surface circulation together transport heat poleward, smoothing the equator-to-pole temperature gradient and stabilising the climate against local instabilities.
-Sea ice and continental ice exhibit the **ice-albedo feedback** that we covered in {ref}`Lecture 6 <lecture06>`: ice has a much higher reflectivity than open ocean or bare ground, so growing ice cools the climate further and shrinking ice warms it.
-This feedback is positive (it amplifies perturbations in either direction), and it played the central role in the Snowball Earth glaciations described below.
+Ocean circulation transports heat poleward, smoothing equator-to-pole temperature gradients.
+The **ice-albedo feedback** ({ref}`Lecture 6 <lecture06>`), a positive feedback where growing ice amplifies cooling and shrinking warms, drove Snowball Earth glaciations.
 
-Ocean chemistry is dominated by the carbonate buffer system: dissolved $\mathrm{CO_2}$ exists in equilibrium with carbonate ($\mathrm{CO_3^{2-}}$) and bicarbonate ($\mathrm{HCO_3^-}$) ions, with a present-day surface ocean $\mathrm{pH}$ of about $8.1$.
-This buffer keeps the ocean mildly alkaline and provides the chemical machinery for the carbonate-silicate cycle to operate.
-The Urey reaction, the textbook prototype for the silicate weathering sink, is a simplification of the actual mineral chemistry but captures the essential mass balance: silicate rocks plus water plus atmospheric $\mathrm{CO_2}$ produce dissolved bicarbonate, which precipitates as carbonate sediments on the seafloor ({numref}`fig:lammer-carbsil`).
+The carbonate buffer balances dissolved $\mathrm{CO_2}$, $\mathrm{CO_3^{2-}}$, and $\mathrm{HCO_3^-}$, keeping ocean $\mathrm{pH}$ near $8.1$.
+This enables the carbonate-silicate cycle, whose Urey reaction sink precipitates atmospheric $\mathrm{CO_2}$ as seafloor carbonates ({numref}`fig:lammer-carbsil`).
 
 ```{figure} figures/lammer2018_carbonate_silicate.avif
 :name: fig:lammer-carbsil
@@ -178,15 +158,12 @@ Reproduced from {cite:t}`Lammer2018`.
 
 ### Earth's climate system
 
-We covered the foundations of planetary energy balance and the greenhouse effect in {ref}`Lecture 5 <lecture05>` and the dynamics of clouds, weather, and climate feedbacks in {ref}`Lecture 6 <lecture06>`.
-Here we collect only what is needed to set up the Venus comparison.
-The present-day Earth absorbs about $240$ W/m$^2$ of incoming solar radiation (after accounting for the planetary albedo of $\sim$0.30) and emits the same average flux back to space in the thermal infrared.
-Without an atmospheric greenhouse, the equilibrium surface temperature would be about $255$ K, well below the freezing point of water.
-The natural greenhouse effect of water vapour, $\mathrm{CO_2}$, methane, and other trace gases warms the surface by about $33$ K to its observed value of $288$ K.
+Following {ref}`Lecture 5 <lecture05>` and {ref}`Lecture 6 <lecture06>`, Earth absorbs $240$ W/m$^2$ of solar radiation (albedo $\sim$0.30) and emits equally in the infrared.
+Without an atmospheric greenhouse, the equilibrium temperature is $255$ K.
+The natural greenhouse effect of water vapour and $\mathrm{CO_2}$ warms the surface by $33$ K to $288$ K.
 
-A persistent puzzle is the **faint young Sun problem**: standard stellar evolution models predict that the Sun was about $30\%$ less luminous at $4.4$ Ga than today, which would have led to a frozen Earth surface for the first half of the planet's history if greenhouse forcing had been the same as now.
-The geological record tells the opposite story: there is good evidence for liquid water at the surface of Earth from at least $4.3$ Ga onwards, including detrital zircons with hydrothermal alteration signatures {cite:p}`Feulner2012,Zahnle2007`.
-The standard resolution is a higher concentration of greenhouse gases (most likely $\mathrm{CO_2}$ and possibly $\mathrm{CH_4}$) in the early atmosphere, drawn down over time as the Sun brightened, by silicate weathering and biological feedbacks ({numref}`fig:zahnle-solar` and {numref}`fig:charnay-archean`).
+The **faint young Sun problem** is the contradiction between a $30\%$ fainter early Sun at $4.4$ Ga and geological evidence for liquid water from at least $4.3$ Ga {cite:p}`Feulner2012`.
+Higher early levels of $\mathrm{CO_2}$, and possibly $\mathrm{CH_4}$, most likely resolved this, drawn down by silicate weathering as the Sun brightened ({numref}`fig:zahnle-solar` and {numref}`fig:charnay-archean`).
 
 ```{figure} figures/zahnle2007_solar_evolution.avif
 :name: fig:zahnle-solar
@@ -211,19 +188,15 @@ A few mbar of $\mathrm{CO_2}$ together with trace methane is marginal at $3.8$ G
 Reproduced from {cite:t}`Charnay2013`.
 ```
 
-On shorter timescales, **Milankovitch cycles** in Earth's orbit (eccentricity, axial obliquity, and the precession of the equinoxes, with periods of $\sim$100 kyr, $41$ kyr, and $19\text{--}23$ kyr respectively) modulate the seasonal and latitudinal distribution of solar insolation and pace the Pleistocene glacial-interglacial cycles of the last $\sim$2.6 Myr.
-These are the cycles imprinted on the Vostok and EPICA ice cores, with surface temperature swings of $\sim$8 K between glacial maxima and interglacials.
-Crucially, **Earth's climate has been remarkably stable on long timescales** in the sense that liquid water has persisted continuously for at least $4$ Gyr.
-But "stable" does not mean "constant".
-Surface temperatures have ranged from $\sim$240 K during deep Snowball Earth episodes to perhaps $\sim$300 K during Phanerozoic hothouses, and biosphere composition has changed dramatically (from the Archean anoxic ocean through the Great Oxidation Event to the present oxic atmosphere).
-The climate system explores a wide range of states, but the carbonate-silicate thermostat keeps the surface within the liquid-water window.
-This is a key conceptual point we will come back to when comparing with Venus.
+On shorter timescales, **Milankovitch cycles** in orbital eccentricity, obliquity, and precession ($\sim$100 kyr, $41$ kyr, and $19\text{--}23$ kyr) pace Pleistocene glacial cycles with $\sim$8 K variations.
+Over long timescales, liquid water has persisted continuously for at least $4$ Gyr.
+Despite excursions from $\sim$240 K Snowball episodes to $\sim$300 K hothouses, the carbonate-silicate thermostat maintains surface liquid water, setting up the Venus comparison.
 
 ### Snowball Earth episodes
 
-Earth came perilously close to a different climate failure mode (ice rather than heat) during the Cryogenian period.
-At least two global glaciations are well documented, the **Sturtian** (lasting from roughly $717$ Ma to $660$ Ma) and the **Marinoan** (around $645$ Ma to $635$ Ma) {cite:p}`Hoffman1998,Hoffman2017`; a much earlier candidate, the **Huronian** glaciation around $2.4$ Ga, may have been similarly extensive.
-The geological evidence is striking: glacial diamictites (poorly sorted glacial deposits) are found at palaeolatitudes within $10^\circ$ of the equator, banded iron formations, layered iron-oxide sediments that only form when dissolved iron in the ocean reacts with available oxygen, re-appear in the rock record after a billion-year absence, and the glacial deposits are capped by thick "cap carbonates" that record an abrupt return to high-$\mathrm{CO_2}$, high-temperature greenhouse conditions immediately after deglaciation.
+During the Cryogenian period, Earth experienced global glaciations documented by the **Sturtian** (roughly $717$ to $660$ Ma) and **Marinoan** ($645$ to $635$ Ma) episodes {cite:p}`Hoffman2017`.
+Geological evidence includes **glacial diamictites** (poorly sorted glacial deposits) preserved within $10^\circ$ of the equator and banded iron formations returning after a billion-year absence.
+These glacial layers are capped by thick **cap carbonates** that record an abrupt transition to warm greenhouse conditions immediately after deglaciation.
 
 ```{figure} figures/snowball_earth.avif
 :name: fig:snowball-earth-cryogenian
@@ -234,28 +207,22 @@ Artist's impression of a fully ice-covered "snowball" Earth, with the continents
 Credit: Oleg Kuznetsov (3depix.com), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Snowball_Huronian.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 ```
 
-The mechanism is straightforward in concept.
-Once the polar ice caps grow to roughly $30^\circ$ latitude, the ice-albedo feedback runs away: the increased reflectivity cools the climate, more ice forms, which cools the climate further, and so on, until ice covers most or all of the ocean and the surface temperature drops to $\sim$240 K.
-During the snowball state, silicate weathering essentially shuts down (because the surface is frozen), but volcanism continues to outgas $\mathrm{CO_2}$ at roughly its normal rate.
-Atmospheric $\mathrm{CO_2}$ accumulates over $\sim$10 Myr {cite:p}`Hoffman2017`, the timescale preferred by coupled hysteresis modelling, until the greenhouse forcing eventually overcomes the ice-albedo cooling, the ice melts catastrophically (over only $\sim$2 kyr once the tropical ocean reopens), and the planet swings into a hothouse state.
-The cap carbonates record the rapid drawdown of the post-snowball $\mathrm{CO_2}$ excess by extremely intense weathering of newly exposed silicate surfaces.
+When polar ice caps expand past roughly $30^\circ$ latitude, runaway **ice-albedo feedback** (where increased surface reflectivity drives cooling) covers the globe in ice and drops surface temperatures to $\sim$240 K.
+During this snowball state, frozen surfaces shut down silicate weathering while volcanism continues to outgas $\mathrm{CO_2}$ at roughly its normal rate.
+Atmospheric $\mathrm{CO_2}$ accumulates over $\sim$10 Myr {cite:p}`Hoffman2017` until greenhouse forcing overcomes the ice albedo, melting the ice catastrophically in only $\sim$2 kyr.
+Intense weathering of newly exposed silicate surfaces then rapidly draws down atmospheric $\mathrm{CO_2}$ to form cap carbonates.
 
-The Snowball Earth episodes are pedagogically important for two reasons.
-First, they show that Earth's carbonate-silicate thermostat can rescue the planet from extreme cold states as well as warm ones; the Walker feedback ({ref}`Lecture 6 <lecture06>`) is symmetric in this sense.
-Second, they show that Earth came close to a catastrophic failure mode different from that of Venus.
-Where Venus failed by overheating, Earth nearly failed by freezing.
-That Earth survived both possibilities is a measure of how robust the carbonate-silicate feedback is, provided liquid water and active volcanism both persist.
-There is also a tantalising correlation with biological evolution: the first multicellular animals appear in the fossil record shortly after the Marinoan deglaciation, and some authors have argued that the dramatic environmental swings of the snowball episodes drove evolutionary innovation.
+These episodes demonstrate that the carbonate-silicate thermostat (the Walker feedback, {ref}`Lecture 6 <lecture06>`) operates symmetrically to rescue the planet from extreme cold states as well as warm ones.
+While Venus failed by overheating, Earth nearly failed by freezing.
+That Earth survived both is a measure of how robust the carbonate-silicate feedback is, provided liquid water and active volcanism both persist.
 
 ### Earth today in its long-term context
 
-To set up the Venus comparison properly, it helps to look at present-day Earth in the same physical language we will use for Venus.
-Anthropogenic climate change is best understood as a planetary-scale forcing experiment in real time, and the physics is the same as for any other greenhouse perturbation.
+Anthropogenic climate change is a planetary-scale perturbation governed by the same greenhouse physics as Venus.
 
-The atmospheric concentration of $\mathrm{CO_2}$ has risen from a pre-industrial value of about $280$ ppm to over $420$ ppm in $2024$, a level higher than at any time in the last $\sim$3 Myr based on direct ice-core records {cite:p}`NOAACO2,IPCC2021`.
-The current rate of change, roughly $2\text{--}3$ ppm/yr, is approximately $100$ times faster than the natural rate of $\mathrm{CO_2}$ rise during deglaciation at the end of the last ice age.
-The net anthropogenic radiative forcing (greenhouse gases plus aerosols) is about $2.7$ W/m$^2$ at the top of the atmosphere {cite:p}`IPCC2021`.
-The observed surface temperature response, about $1.1$ K of warming since the late nineteenth century {cite:p}`IPCC2021`, is consistent with what radiative-convective climate models predict for this forcing once ocean heat uptake is accounted for.
+Atmospheric $\mathrm{CO_2}$ has risen from $280$ ppm pre-industrial to over $420$ ppm in $2024$, the highest level in $\sim$3 Myr {cite:p}`IPCC2021`.
+The current rate of $2$ to $3$ ppm/yr is roughly $100$ times faster than natural deglacial rates.
+The net anthropogenic radiative forcing is about $2.7$ W/m$^2$, and the observed $1.1$ K of warming since the late nineteenth century is consistent with the response that climate models predict for this forcing {cite:p}`IPCC2021`.
 
 ```{figure} figures/lyons2014_oxygen_history.avif
 :name: fig:lyons-oxygen
@@ -268,31 +235,27 @@ The two-stage rise reflects the gradual buildup of the photosynthetic biosphere 
 Reproduced from {cite:t}`Lyons2014`.
 ```
 
-The crucial point for comparative planetology is that the carbonate-silicate thermostat will not save us on human timescales.
-Silicate weathering equilibrates atmospheric $\mathrm{CO_2}$ on a timescale of order $\sim$0.5 Myr, which is roughly five orders of magnitude longer than the duration of the current anthropogenic perturbation.
-Earth's climate system is responding to a well-understood radiative forcing on a timescale set by ocean heat uptake (decades to centuries) and ice-sheet response (centuries to millennia), not by the geological feedbacks that have buffered deep-time climate.
-A second consequence of the rapid $\mathrm{CO_2}$ rise is **ocean acidification**: dissolution of atmospheric $\mathrm{CO_2}$ has raised seawater $\mathrm{H^+}$ concentrations by about $30\%$ since pre-industrial times, dropping the surface ocean $\mathrm{pH}$ from about $8.2$ to $8.1$.
-The point is not political but physical: the same radiative-transfer machinery that warms Venus to $737$ K, given enough $\mathrm{CO_2}$, is operating on Earth right now, and the long-term geological feedbacks that bound Earth's climate over $4$ Gyr operate too slowly to compensate for it on timescales relevant to human civilisation.
+The carbonate-silicate thermostat cannot buffer climate on human timescales, as silicate weathering equilibrates $\mathrm{CO_2}$ over $\sim$0.5 Myr, roughly five orders of magnitude slower than the perturbation.
+Earth responds instead on timescales of ocean heat uptake (decades to centuries) and ice sheets (centuries to millennia).
+Dissolution of $\mathrm{CO_2}$ also drives **ocean acidification**, raising seawater $\mathrm{H^+}$ by $30\%$ and lowering surface ocean $\mathrm{pH}$ from $8.2$ to $8.1$.
+The radiative physics that warms Venus to $737$ K operates on Earth, and $4$-Gyr geological feedbacks cannot compensate on human timescales.
 
 ### The biosphere's geological footprint
 
-Although this lecture is mainly about physical and geological evolution, the biosphere has rewritten the surface chemistry of Earth in ways that we cannot ignore when comparing with Venus.
-The most spectacular biotic event is the **Great Oxidation Event** at $\sim$2.4 Ga, when atmospheric $\mathrm{O_2}$ rose from negligible Archean levels (pre-GOE $p_{\mathrm{O_2}} < 10^{-5}$ atm) to roughly $0.1\text{--}1\%$ of modern values in the mid-Proterozoic plateau, with a transient overshoot to $10\text{--}20\times$ modern during the Lomagundi excursion at $2.3\text{--}2.1$ Ga {cite:p}`Lyons2014` ({numref}`fig:lyons-oxygen`).
-The mechanism is oxygenic photosynthesis by cyanobacteria, which had already been present for several hundred million years before the event itself.
-The trigger for the rise is debated (changes in oxygen sinks, in continental weathering, in volcanic outgassing redox state, or in the burial of organic carbon are all candidates), but the consequences are unmistakable in the rock record: banded iron formations disappear, redbeds (sediments reddened by iron oxide, a sign of an oxidising environment) appear, and the biosphere acquires the oxidising redox state that has dominated ever since.
-A second oxygenation step in the late Neoproterozoic raised $\mathrm{O_2}$ to near-modern values just before the Cambrian explosion of complex animal life.
-
+The biosphere has rewritten Earth's surface chemistry in ways that distinguish it from Venus.
+The **Great Oxidation Event** at $\sim$2.4 Ga marks the rise of atmospheric $\mathrm{O_2}$ from negligible Archean levels (pre-GOE $p_{\mathrm{O_2}} < 10^{-5}$ atm) to roughly $0.1\text{--}1\%$ of modern values, driven by oxygenic photosynthesis by cyanobacteria {cite:p}`Lyons2014` ({numref}`fig:lyons-oxygen`).
+In the rock record, banded iron formations disappeared and redbeds (sediments reddened by iron oxide in an oxidising environment) appeared.
+A second oxygenation step in the late Neoproterozoic raised $\mathrm{O_2}$ to near-modern values just before the Cambrian explosion.
 
 Carbonate platforms, formed primarily by the calcification of marine organisms over the past $\sim$540 Myr, represent a substantial planetary $\mathrm{CO_2}$ sink.
-On Earth, the total carbon stored in surface and crustal reservoirs (overwhelmingly in marine carbonate sediments, with smaller contributions from organic-rich shales and the dispersed carbon in oceanic crust) is on the order of $10^{20}$ kg, equivalent to a $\mathrm{CO_2}$ partial pressure of order $\sim 100$ bar if it were all returned to the atmosphere {cite:p}`Catling2017`.
-This is a striking number, because it is comparable in order of magnitude to the $92$ bar of $\mathrm{CO_2}$ in the present-day Venus atmosphere.
-The arithmetic is suggestive but not exact: it tells us that Earth and Venus probably acquired comparable carbon inventories during accretion, and that the difference in atmospheric carbon today is largely due to where the carbon ended up (in carbonates on Earth, in the atmosphere on Venus) rather than how much was originally present.
-We will return to this in Part 3.
-The connection between the biosphere and biosignatures (the spectroscopic signatures of life that future telescopes might use to characterise exoplanets) is taken up explicitly in {ref}`Lecture 13 <lecture13>` and {ref}`Lecture 14 <lecture14>`.
+On Earth, total carbon stored in surface and crustal reservoirs is on the order of $10^{20}$ kg, equivalent to a $\mathrm{CO_2}$ partial pressure of $\sim 100$ bar if returned to the atmosphere {cite:p}`Catling2017`.
+This is comparable in order of magnitude to the $92$ bar of $\mathrm{CO_2}$ in the present-day Venus atmosphere.
+Earth and Venus probably acquired comparable carbon inventories during accretion, but Earth stored its carbon in carbonates while Venus retained it in the atmosphere.
+The link between the biosphere and **biosignatures** (spectroscopic signatures of life used to characterise exoplanets) is taken up in {ref}`Lecture 13 <lecture13>` and {ref}`Lecture 14 <lecture14>`.
 
 ### The history of life on Earth
 
-The biosphere whose geological footprint we just described has a history as long as the planet's, and its major transitions are milestones of the eon framework introduced above ({numref}`fig:earth-life-history`).
+Earth's biosphere spans geological history, and its major transitions define the eon framework ({numref}`fig:earth-life-history`).
 
 ```{figure} figures/earth_life_timeline.avif
 :name: fig:earth-life-history
@@ -305,11 +268,9 @@ Blue bands on the strip mark the Huronian and Neoproterozoic snowball glaciation
 Event ages are representative values from the cited literature {cite:p}`Mojzsis1996,Dodd2017,Nutman2016,Lyons2014,Catling2020,Hoffman2017`; eon boundaries follow {cite:t}`Gradstein2020`.
 ```
 
-The record of life's origin is frustratingly incomplete, because the rocks that could hold it have mostly been destroyed by the very tectonic recycling celebrated earlier in this lecture.
-The oldest claimed traces are chemical rather than morphological: isotopically light carbon in $3.8$ Gyr old Isua metasediments {cite:p}`Mojzsis1996` and putative microfossil textures in rocks that may exceed $3.77$ Gyr in age {cite:p}`Dodd2017`, both contested because non-biological processes can mimic the signatures.
-Claimed $3.7$ Gyr old stromatolite structures from Isua {cite:p}`Nutman2016` are similarly debated.
-The oldest widely accepted fossils are **stromatolites** from the Pilbara region of Western Australia at $3.48$ Ga {cite:p}`Catling2020`: layered sedimentary mounds built by microbial mats that trap and bind sediment.
-Living stromatolites still grow today in a few hypersaline refuges such as Shark Bay ({numref}`fig:stromatolites`), giving us a direct modern analogue for the dominant visible life form of the planet's first $3$ Gyr.
+Crustal recycling destroyed most rocks from life's origin, leaving traces older than $3.7$ Gyr contested.
+The oldest accepted fossils are **stromatolites**, layered mounds built by microbial mats, from the Pilbara at $3.48$ Ga {cite:p}`Catling2020`.
+Modern stromatolites in Shark Bay ({numref}`fig:stromatolites`) provide an analogue for this dominant early life form.
 
 ```{figure} figures/stromatolites_shark_bay.avif
 :name: fig:stromatolites
@@ -321,39 +282,29 @@ Microbial mats trap and bind sediment into these layered mounds; fossil stromato
 Photo by Paul Harrison (Wikimedia Commons), [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/).
 ```
 
-However one weighs the contested traces, the conclusion stands: taking only the Pilbara stromatolites as secure, life was established within the first billion years after liquid water oceans appeared at $4.3\text{--}4.4$ Ga; if any of the older traces holds up, that window shrinks to a few hundred million years.
-The subsequent pace could hardly be more different.
-Microbial life then held the planet essentially alone for some $3$ Gyr, through the Great Oxidation Event and the Lomagundi excursion described in the previous section.
-The first fossils plausibly attributed to **eukaryotes**, cells with nuclei and organelles, are coiled Grypania impressions at $\sim$1.87 Ga, and the first convincing multicellular algae appear at $\sim$1.05 Ga {cite:p}`Catling2020`.
-Macroscopic animal life arrives only after the Neoproterozoic snowball glaciations and the second oxygenation step: the soft-bodied **Ediacaran biota** at $\sim$571 Ma {cite:p}`Catling2020`, followed by the **Cambrian explosion** of skeletonised animal phyla at $539$ Ma.
-The entire familiar history of complex life, including its punctuation by mass extinctions such as the end-Cretaceous impact at $66$ Ma ({ref}`Lecture 12 <lecture12>`), fits into the final $12\%$ of the planet's existence.
+Life arose within a billion years after liquid oceans formed at $4.3$ to $4.4$ Ga, but microbes dominated alone for $3$ Gyr.
+The earliest **eukaryotes**, cells with nuclei and organelles, date to $\sim$1.87 Ga, and multicellular algae to $\sim$1.05 Ga {cite:p}`Catling2020`.
+Animals appeared after Neoproterozoic glaciations: the soft-bodied **Ediacaran biota** at $\sim$571 Ma, and the **Cambrian explosion** at $539$ Ma.
+Complex life, punctuated by mass extinctions like the end-Cretaceous impact at $66$ Ma ({ref}`Lecture 12 <lecture12>`), spans only the final $12\%$ of Earth's history.
 
-Two lessons from this history matter for the rest of the course.
-First, the asymmetry of the timeline (life arose fast, complexity arose slowly) suggests that microbial biospheres may be far more common than complex ones, which shapes what {ref}`Lecture 13 <lecture13>` and {ref}`Lecture 14 <lecture14>` treat as realistic exoplanet biosignature targets.
-Second, the most detectable global signature of Earth's biosphere, atmospheric oxygen, is a biological product whose abundance was negligible for the first $2$ Gyr of life's existence; an observer surveying Archean Earth with our own telescopes could have found an inhabited planet with no oxygen signal at all.
-Both points rest on the oxygen history of {numref}`fig:lyons-oxygen` and the event compilation of {numref}`fig:catling-precambrian`.
-
+This history offers two lessons for planetary science.
+First, because life arose fast while complexity arose slowly, microbial biospheres may be far more common than complex ones ({ref}`Lecture 13 <lecture13>`, {ref}`Lecture 14 <lecture14>`).
+Second, atmospheric oxygen was negligible during life's first $2$ Gyr, so the inhabited Archean Earth lacked an oxygen biosignature.
+Both points build on the records in {numref}`fig:lyons-oxygen` and {numref}`fig:catling-precambrian`.
 
 ## Part 2: Venus, the alien twin
 
 ### Venus overview: why it is the twin and why it is not
 
-Venus is the second planet from the Sun, with a semimajor axis of $0.723$ AU, a mass of $0.815\, \Mearth = 4.87 \times 10^{24}$ kg, an equatorial radius of $0.950\, \Rearth = 6052$ km, and a mean density of $5.24$ g/cm$^3$ {cite:p}`NASAVenusFactSheet`.
-By every bulk measure, Venus is Earth's near-twin: a similar size, a similar density (suggesting a similar bulk composition of silicate mantle and iron core), and a formation distance only $0.28$ AU closer to the Sun than Earth.
-First-order theory says it should look much like Earth.
+Venus is the second planet from the Sun, with a semimajor axis of $0.723$ AU, mass $0.815\, \Mearth$, radius $0.950\, \Rearth$, and mean density $5.24$ g/cm$^3$ {cite:p}`NASAVenusFactSheet`.
+By bulk measure, Venus is Earth's near-twin with a silicate mantle and iron core.
 
-It does not.
-The contrast is dramatic on every observable axis.
-The surface pressure on Venus is $92$ bar, about $90$ times the pressure at the bottom of Earth's atmosphere, comparable to the pressure under $\sim$1 km of water on Earth.
-The surface temperature is $737$ K, hot enough to melt lead and well above the temperature at which any organic chemistry survives.
-The atmospheric composition is almost entirely $\mathrm{CO_2}$ ($96.5\%$), with $\mathrm{N_2}$ ($3.5\%$) as the only major minor constituent and trace amounts of $\mathrm{SO_2}$, water vapour, and noble gases.
-The cloud layers are not water clouds but **sulfuric acid** ($\mathrm{H_2SO_4}$) droplets, formed by photochemistry of $\mathrm{SO_2}$ and water vapour at altitudes between roughly $48$ and $70$ km.
-Venus rotates retrograde (against the orbital direction) with a sidereal rotation period of $243.0$ Earth days, longer than its orbital period of $224.7$ Earth days, so a single solar day on Venus lasts $116.75$ Earth days.
-There is no detectable global magnetic field; the upper limit on any internal dipole is roughly $10^{-5}$ of Earth's surface field {cite:p}`Smrekar2018`.
-And the present surface water inventory is staggeringly small: roughly $20\text{--}30$ ppm of water vapour in the lower atmosphere, equivalent to a global ocean about $1$--$3$ cm deep if it were condensed onto the surface.
-For comparison, Earth's water inventory is about $2.7$ km of global equivalent depth, or roughly $10^5$ times more.
-
-Each of these contrasts deserves explanation, and that is the project of this part of the lecture.
+However, its surface and atmospheric conditions contrast sharply with Earth.
+Surface pressure is $92$ bar and surface temperature reaches $737$ K.
+The atmosphere is $96.5\%$ $\mathrm{CO_2}$ and $3.5\%$ $\mathrm{N_2}$, with sulfuric acid ($\mathrm{H_2SO_4}$) cloud droplets between $48$ and $70$ km altitude.
+Venus exhibits **retrograde rotation** (rotation against the orbital direction), with a sidereal period of $243.0$ Earth days and a solar day of $116.75$ Earth days.
+It lacks a global magnetic field, with an internal dipole upper limit of $10^{-5}$ of Earth's field {cite:p}`Smrekar2018`.
+The water inventory is only $20$ to $30$ ppm ($1$ to $3$ cm equivalent depth), roughly $10^5$ times less than Earth's $2.7$ km.
 
 ```{figure} figures/widemann2023_three_missions_render.avif
 :name: fig:venus-render
@@ -368,34 +319,27 @@ Reproduced from {cite:t}`Widemann2023`.
 
 ### Exploring Venus: the mission history
 
-The history of Venus exploration breaks neatly into three eras.
-The first era, from $1962$ to $1985$, was dominated by Soviet Venera and Vega missions and produced essentially all of the in-situ measurements we have today.
-Mariner 2 in $1962$ was the first successful interplanetary flyby of any planet; it confirmed the high surface temperature inferred from earlier ground-based microwave observations and ruled out the possibility (popular until then) of a habitable Venusian surface beneath thick clouds.
-Venera 4 in $1967$ was the first probe to enter the atmosphere of another planet and report in-situ measurements.
-Venera 7 in $1970$ was the first lander to transmit data from the surface of another planet.
-Venera 9 in $1975$ returned the first surface images, showing a fractured rocky landscape under sulfuric-acid haze.
-Venera 13 in $1982$ took colour panoramas and analysed the surface chemistry, finding basaltic compositions consistent with volcanic plains.
-The Vega missions in $1985$ deployed instrumented balloons that floated through the cloud layer for $\sim$2 days, a unique and to-date unrepeated measurement of cloud-level dynamics.
+The history of Venus exploration breaks into three eras.
+The first era, from $1962$ to $1985$, was dominated by Soviet Venera and Vega missions alongside early flybys.
+Mariner 2 in $1962$ confirmed high surface temperatures, ruling out a habitable surface beneath the clouds.
+Venera probes and landers between $1967$ and $1982$ returned the first in-situ atmospheric measurements, surface images, and basaltic chemical analyses.
+The Vega missions in $1985$ deployed balloons that tracked cloud dynamics for $\sim$2 days.
 
-The second era, the orbital radar era, was dominated by NASA's Pioneer Venus Orbiter ($1978$--$1992$) and Magellan ($1990$--$1994$).
-Magellan in particular was a transformational mission: it mapped $\sim$98% of the Venusian surface at $\sim$100 m horizontal resolution using synthetic-aperture radar, providing the global topographic and morphological dataset that all subsequent Venus geology has been built on.
-Pioneer Venus also carried an atmospheric probe whose mass spectrometer measured the noble gas isotopic ratios that anchor much of what we know about Venus' atmospheric history.
+The second era focused on orbital radar mapping, dominated by NASA's Pioneer Venus ($1978$ to $1992$) and Magellan ($1990$ to $1994$).
+Magellan mapped $\sim$98% of the surface at $\sim$100 m resolution using **synthetic-aperture radar** (radar imaging that penetrates cloud cover), providing the global topographic dataset for Venus geology.
+Pioneer Venus also carried an atmospheric probe that measured noble gas isotopic ratios to constrain atmospheric history.
 
-The third era, after a long gap, began with ESA's Venus Express ($2006$--$2014$) and JAXA's Akatsuki ($2015$--present).
-Venus Express measured atmospheric dynamics, polar vortices, thermal emission from the surface in near-IR spectral windows, and the present-day rates of hydrogen and oxygen escape to space.
-Akatsuki has produced ongoing UV cloud imaging and infrared maps of the lower atmosphere.
-Critically, **no orbital mission flew between 1994 and 2006**, and **no in-situ probe has visited Venus since Vega in 1985**.
-The Venus dataset is therefore old by the standards of modern planetary science, and many of the open questions are direct consequences of this gap.
-Three new orbiters and one or more probes are planned for the 2030s (NASA's VERITAS and DAVINCI, and ESA's EnVision), forming the Venus decade we discuss at the end of Part 3 ({numref}`fig:venus-render`).
+The third era began after a long gap with ESA's Venus Express ($2006$ to $2014$) and JAXA's Akatsuki ($2015$ to present).
+Venus Express measured atmospheric dynamics, surface thermal emission, and hydrogen and oxygen escape rates, while Akatsuki provided UV and infrared imaging.
+Because no orbital mission flew between 1994 and 2006 and no in-situ probe has visited since 1985, the planetary dataset has substantial observational gaps.
+Three new orbiters and probes planned for the 2030s (NASA's VERITAS and DAVINCI, and ESA's EnVision) aim to resolve these questions ({numref}`fig:venus-render`).
 
 ### Venus surface morphology
 
-The single most diagnostic observation about Venus' surface is its **hypsometry**: the global statistical distribution of surface elevations.
-Earth has a famously **bimodal** hypsometry, with two distinct populations of surface elevations corresponding to ocean basins (around $-4$ km) and continental crust (around $0$ to $+1$ km), separated by a sharp transition at the continental margins.
-This bimodality is a direct fingerprint of plate tectonics: the two distinct crustal types (basaltic oceanic crust and granitic continental crust) have different densities, undergo different histories, and reach different isostatic equilibria, the buoyant balance in which crust of a given density floats at a characteristic level on the denser mantle below.
-Venus, by contrast, has a **unimodal** hypsometry, a single broad peak with a narrow tail to higher elevations.
-There is no equivalent of Earth's continent-ocean dichotomy.
-This is the most direct, observation-based argument that Venus does not have plate tectonics in the Earth-like sense {cite:p}`Smrekar2018`.
+The primary diagnostic observation of Venus' surface is its **hypsometry**, the statistical distribution of surface elevations across a planet.
+Earth displays a bimodal hypsometry because plate tectonics produces low basaltic ocean basins (around $-4$ km) and high granitic continents (around $0$ to $+1$ km) in distinct isostatic equilibria.
+In contrast, Venus exhibits a unimodal hypsometry with a single broad elevation peak and no continent-ocean dichotomy.
+This unimodal distribution indicates that Venus lacks Earth-like plate tectonics {cite:p}`Smrekar2018`.
 
 ```{figure} figures/smrekar2018_earth_venus_topography.avif
 :name: fig:earth-venus-topo
@@ -407,20 +351,14 @@ Earth's bimodal pattern (deep ocean basins vs. continents) is conspicuously abse
 Reproduced from {cite:t}`Smrekar2018`.
 ```
 
+The surface of Venus is dominated by **volcanic plains**, broad flood-basalt expanses that cover about $80\%$ of the planet ({numref}`fig:venus-terrains`).
+Embedded within these plains are **tesserae**, elevated plateaus covering roughly $8\%$ of the surface that represent the oldest mapped terrain and record complex tectonic deformation.
+Near-infrared emissivity measurements suggest that some tesserae may have felsic compositions, which would indicate ancient water-rock interaction and early liquid surface water {cite:p}`Widemann2023`.
 
-The Venus surface is dominated by **volcanic plains**, which cover about $80\%$ of the planet, formed from successive flood-basalt eruptions over hundreds of millions of years.
-Embedded in these plains are several distinctive terrain types unique to Venus or unusually prominent here ({numref}`fig:venus-terrains` shows a global geological-terrain map):
-
-**Tesserae** are the oldest mapped terrain on Venus, characterised by intersecting sets of ridges and grooves that record multiple episodes of compressional and extensional deformation.
-They form roughly $8\%$ of the surface, occur as elevated plateaus (Aphrodite Terra, Ovda Regio, Thetis Regio), and are stratigraphically older than the surrounding plains.
-The compositional nature of tessera material is debated: VIRTIS infrared emissivity measurements from Venus Express suggested that some tessera regions have higher emissivity in the $1$-$\mu$m near-infrared window than the surrounding plains, which is consistent with felsic (more silicic, possibly granitic) compositions and would point to ancient water-rock interaction {cite:p}`Widemann2023`.
-If confirmed, this would imply that early Venus had liquid surface water, which is a cornerstone observational test for the wet-Venus scenarios discussed below.
-A direct surface measurement by a future lander (or near-IR spectroscopy from VERITAS) is needed to settle the question.
-
-**Coronae** are circular volcano-tectonic features unique to Venus, ranging in diameter from about $100$ to $1000$ km.
-They are generally thought to be the surface expression of mantle plumes, localised columns of hot, buoyant material rising from deep in the mantle, or broader upwellings, with a complex annular structure of fractures, raised rims, and central volcanic edifices.
-The largest coronae occupy the same diameter range as oceanic large igneous provinces (LIPs) on Earth, vast outpourings of flood-basalt volcanism, and they may be a distinctive expression of stagnant-lid volcanism in which heat escapes through localised plume upwellings rather than through global plate-tectonic recycling.
-Recent analysis of Magellan gravity data has identified coronae that appear to overlie active mantle plumes today, suggesting that some are still volcanically active.
+**Coronae** are circular volcano-tectonic structures unique to Venus, ranging from about $100$ to $1000$ km in diameter.
+They represent the surface expression of upwelling mantle plumes, characterized by annular fractures, raised rims, and volcanic edifices.
+These structures reflect stagnant-lid volcanism, where internal heat escapes through localized plumes rather than plate-tectonic recycling.
+Gravity observations indicate that some coronae overlie active mantle plumes today.
 
 ```{figure} figures/widemann2023_venus_geological_terrains.avif
 :name: fig:venus-terrains
@@ -430,33 +368,26 @@ Recent analysis of Magellan gravity data has identified coronae that appear to o
 Global geological-terrain map of Venus from {cite:t}`Widemann2023` Fig. 15, overlaid on a Magellan radar base. Coloured polygons are the Regions of Interest (RoIs) defined in the ESA EnVision Science Operations Reference Scenario; together they cover roughly 30% of Venus's surface and span the major terrain classes: **plains** (light green), **tessera** highlands (tan), **deformed terrain** (pale yellow), **rift zones** (red), **Artemis chasma** (purple), and **craters** (grey). Named regional landmarks (Maxwell Montes, Fortuna Tessera, Ishtar Terra, Beta Regio, Aphrodite Terra, Alpha Regio, and others) are labelled. Terrain classification after {cite:t}`IvanovHead2015`; reproduced from {cite:t}`Widemann2023`.
 ```
 
-**Impact crater density** on Venus is low, corresponding to a global average crater retention age of $150\text{--}250$ Myr in recent reanalyses, with earlier crater-counting estimates spanning $300\text{--}1000$ Myr {cite:p}`Smrekar2018`.
-This is a striking number: it implies that the surface of Venus was effectively wiped clean some time in the geologically recent past, and that the present surface dates from the resurfacing event rather than from accretion.
-There are essentially two competing interpretations of this resurfacing.
-The **catastrophic resurfacing** model (sometimes called the global lithospheric overturn model) proposes that the planet experienced a brief, planet-wide volcanic and tectonic event roughly $500$ Myr ago that resurfaced essentially all of the crust at once.
-The **steady-state** model, by contrast, proposes that resurfacing has been continuous and roughly uniform over time.
-The crater statistics alone cannot distinguish these decisively because the spatial distribution of craters is consistent with random within statistical uncertainty.
-The latest modelling and the structural analysis of crater rims suggest that something between these two extremes (perhaps episodic regional resurfacing) is most likely {cite:p}`Smrekar2018,Widemann2023`.
-
+Venus has a low **impact crater density**, corresponding to a young average crater retention age of $150$ to $250$ Myr {cite:p}`Smrekar2018`.
+This young surface age implies that widespread resurfacing erased the earlier cratering record.
+Two end-member models explain this resurfacing: **catastrophic resurfacing**, proposing a global lithospheric overturn roughly $500$ Myr ago, and **steady-state resurfacing**, proposing continuous and uniform volcanic renewal.
+Because the spatial distribution of craters is consistent with random, intermediate models involving episodic regional resurfacing are considered most likely {cite:p}`Widemann2023`.
 
 ### Venus interior and tectonic regime
 
-What we know about Venus' interior structure comes almost entirely from gravity data and the rotation rate, augmented by theoretical extrapolation from Earth.
-The Magellan gravity field (combined with the geoid in {numref}`fig:earth-venus-topo`) has been mapped to spherical harmonic degree $\sim$70 globally and higher locally; the long-wavelength gravity field is strongly correlated with topography on Venus, indicating that surface topography is supported in part by deep mantle density anomalies (mantle plumes and downwellings) rather than by purely flexural support of a rigid lithosphere {cite:p}`Smrekar2018`.
-The strength of this gravity-topography correlation is unusual compared with Earth and points to a very different style of mantle dynamics.
+Venus' interior structure is inferred primarily from gravity data, rotation rate, and theoretical extrapolation from Earth.
+The Magellan gravity field ({numref}`fig:earth-venus-topo`) is mapped to spherical harmonic degree $\sim$70, showing a strong correlation between long-wavelength gravity and topography {cite:p}`Smrekar2018`.
+This correlation indicates that topography is supported by deep mantle density anomalies (mantle plumes and downwellings) rather than purely lithospheric flexure, pointing to mantle dynamics distinct from Earth's.
 
-The bulk composition of Venus is probably close to Earth's, given the similar bulk density once compressional effects are removed.
-The presumption is that Venus has a metallic iron-nickel core of roughly Earth-like fractional size, surrounded by a silicate mantle and a basaltic crust.
-But several key parameters are unknown.
-We do not know whether Venus' core is fully liquid, partly solid, or fully solid, because the moment of inertia factor of Venus is not well determined from current data (the slow rotation rate makes the determination difficult).
-We also do not know the present-day mantle temperature, the composition of the lower mantle, or whether there is any inner-core nucleation, the onset of solid-core crystallisation from the surrounding liquid core.
-Future radio-science measurements from VERITAS and EnVision are designed to pin down the moment of inertia and the tidal Love numbers, dimensionless parameters that describe how much a planet deforms under tidal forcing, which together would constrain the size and state of the core.
+Given its similar uncompressed bulk density, Venus likely has an Earth-like bulk composition with an iron-nickel core, silicate mantle, and basaltic crust.
+However, whether the core is liquid or solid remains unknown because the slow rotation rate makes the moment of inertia difficult to determine.
+We also lack constraints on mantle temperature, lower mantle composition, and **inner-core nucleation**, the onset of solid-core crystallisation from the surrounding liquid core.
+Future radio-science measurements from VERITAS and EnVision aim to determine the moment of inertia and tidal **Love numbers**, dimensionless parameters describing how much a planet deforms under tidal forcing, to constrain core state.
 
-The tectonic regime of present-day Venus is **stagnant-lid**: there are no continuous plate boundaries, no observed subduction zones, and no observed seafloor-spreading equivalents.
-The lithosphere appears to be a single, globally connected layer that does not subduct.
-We discussed the physics of mobile- vs. stagnant-lid regimes in {ref}`Lecture 7 <lecture07>`; what matters for Venus is that the choice of regime is set by a combination of mantle viscosity (which depends sensitively on water content; a dry mantle is much stiffer) and the state of the lithosphere (which can become either dry and brittle or wet and ductile).
-The leading hypothesis for why Venus is in stagnant-lid mode today is that the dehydration of the mantle following the loss of surface water (which we will come to in the runaway greenhouse discussion) raised the mantle viscosity to a value at which the Earth-like mobile-lid regime cannot be sustained.
-On this view, Venus may once have had Earth-like mobile-lid tectonics (when its mantle was wet), and it transitioned to stagnant lid as a consequence of losing its water ({numref}`fig:venus-tectonic-evol`).
+Present-day Venus operates in a **stagnant-lid** regime, where the lithosphere forms a single globally connected shell without plate boundaries or subduction zones.
+As discussed in {ref}`Lecture 7 <lecture07>`, the tectonic regime depends on mantle viscosity and lithospheric state, which vary strongly with water content because dry rock is much stiffer.
+The leading hypothesis suggests that mantle dehydration following the loss of surface water raised mantle viscosity, preventing mobile-lid convection.
+Under this scenario, Venus may have transitioned from an early mobile-lid regime to a stagnant lid as it dried ({numref}`fig:venus-tectonic-evol`).
 
 ```{figure} figures/smrekar2018_venus_tectonic_evolution.avif
 :name: fig:venus-tectonic-evol
@@ -468,64 +399,50 @@ The boxed labels mark successive **stagnant-lid**, **mobile-lid**, **stagnant-li
 The episodic-lid phase produces the resurfacing pulses inferred from present-day crater statistics; the mantle-temperature and volcanic-production-rate panels of the same model (not reproduced here) show the corresponding pulses in interior heat transport.
 ```
 
-There is a related possibility, the **episodic-lid** or catastrophic-overturn model, in which the lithosphere is normally stagnant but becomes unstable on long timescales (every $\sim$500 Myr) and undergoes a brief episode of global subduction and volcanism, after which it returns to stagnant-lid behaviour.
-This model is attractive because it naturally explains the resurfacing inferred from crater statistics, but it is not unique, and other models can fit the same observations.
-The point is that we do not yet have the seismic, heat-flow, or detailed gravity data needed to distinguish these scenarios.
-There is also no Venus seismic record of any kind: no marsquake-equivalent dataset exists for Venus, although several mission concepts (including a long-lived surface seismic station and a balloon-based atmospheric pressure-wave detector) are under consideration for future flights.
+Alternatively, an **episodic-lid** model proposes that a normally stagnant lithosphere becomes unstable every $\sim$500 Myr, undergoing brief episodes of global subduction and volcanism before returning to stagnant behaviour.
+This model naturally explains the resurfacing inferred from crater statistics, though other models remain viable.
+Distinguishing between these tectonic scenarios is currently hindered by the lack of seismic, heat-flow, or detailed gravity data.
 
-Finally, the absence of a Venusian magnetic field is consistent with several of these scenarios.
-We discussed the geodynamo in {ref}`Lecture 4 <lecture04>`.
-For a planetary dynamo to operate, the core must be convecting, which generally requires either thermal cooling (the outer mantle must be cool enough that heat is being efficiently extracted from the core) or compositional buoyancy (an inner core is freezing, releasing light elements that drive convection in the outer core).
-On Venus, the stagnant lid insulates the core from efficient cooling, slowing the heat flow out of the core and possibly preventing the core convection that would drive a dynamo.
-Alternatively, Venus may simply not have an inner core nucleation, depriving it of the compositional convection that helps power Earth's dynamo.
-The slow rotation rate (which sets the planet's Coriolis force and thus the geometry of dynamo flows) is not by itself fatal: theoretical models and dynamo simulations show that dynamo action can persist at much slower rotation rates than Venus.
-The most likely explanation is the combination of inefficient core cooling (because of the stagnant lid) and possibly a lack of inner-core nucleation, but pinning down which factor dominates requires interior data we do not yet have.
+The absence of a Venusian magnetic field is also tied to its interior state ({ref}`Lecture 4 <lecture04>`).
+For a planetary dynamo to operate, core convection requires either efficient thermal cooling by the mantle or compositional buoyancy from inner-core freezing.
+On Venus, the stagnant lid insulates the core and impedes heat flow across the core-mantle boundary, which can suppress thermal convection.
+Without inner-core nucleation, the core lacks the compositional buoyancy that helps power Earth's dynamo.
+Because dynamo action can persist even at slow rotation rates, inefficient core cooling and a possible lack of inner-core nucleation are the leading explanations for the lack of a dynamo.
 
 ### Venus atmosphere: structure and dynamics
 
-The Venusian atmosphere is the most thoroughly studied non-Earth planetary atmosphere in the Solar System.
-The vertical structure is well characterised down to the surface from in-situ Venera and Pioneer Venus probe data and from atmospheric occultation profiles by orbiting spacecraft.
-We will not repeat the radiative-transfer derivations from {ref}`Lecture 5 <lecture05>` and {ref}`Lecture 6 <lecture06>`; instead we collect the key facts that distinguish Venus from Earth and motivate the runaway greenhouse derivation that follows.
+The vertical structure of the Venusian atmosphere provides key contrasts with Earth that motivate the runaway greenhouse derivation following {ref}`Lecture 5 <lecture05>` and {ref}`Lecture 6 <lecture06>`.
 
 The composition is overwhelmingly $\mathrm{CO_2}$ ($96.5\%$), with $\mathrm{N_2}$ ($3.5\%$) the only other major species.
-Trace gases include $\mathrm{SO_2}$ at $\sim$150 ppm, water vapour at $\sim$30 ppm in the lower atmosphere (rising slightly to $\sim$80 ppm in the cloud-deck region), and noble gases (argon, neon, krypton, xenon) at concentrations that are comparable to or much higher than terrestrial values, depending on the species.
-The high primordial $^{36}$Ar abundance shows that Venus holds a larger primordial noble-gas inventory than Earth; whether this reflects enhanced delivery of volatile-rich material or capture of solar-nebula gas by the growing planet is still debated {cite:p}`Lammer2018`.
-The radiogenic $^{40}$Ar (produced by the radioactive decay of $^{40}$K rather than inherited at formation) tells a complementary story: the atmospheric $^{40}$Ar/$^{36}$Ar ratio is only $\approx 1.1$, compared with $\approx 300$ on Earth, and mass-balance estimates suggest that only $\sim 10\text{--}34$% of all the $^{40}$Ar produced over the planet's history has been outgassed, compared with $\sim$50% on Earth, so Venus has outgassed less of its mantle volatile inventory than Earth {cite:p}`Gillmann2022`.
+Trace gases include $\mathrm{SO_2}$ at $\sim$150 ppm, water vapour at $\sim$30 ppm, and noble gases that preserve the history of volatile delivery and degassing.
+A high primordial $^{36}$Ar abundance shows that Venus holds a larger primordial noble-gas inventory than Earth {cite:p}`Lammer2018`.
+In contrast, the atmospheric $^{40}$Ar/$^{36}$Ar ratio of $\approx 1.1$ (compared with $\approx 300$ on Earth) indicates that only $\sim 10$ to $34$% of radiogenic $^{40}$Ar has outgassed compared with $\sim 50$% on Earth, so Venus has outgassed less of its mantle volatile inventory {cite:p}`Gillmann2022`.
 
-The thermal profile is roughly adiabatic from the surface ($T_s = 737$ K, $P_s = 92$ bar) up to about $65$ km altitude, where the cloud tops sit and the troposphere meets the stratosphere.
-The atmospheric scale height at the surface is about $16$ km, much larger than Earth's $\sim$8 km, mainly because the surface temperature is so much higher (gas molecules are more energetic), in spite of the larger mean molecular weight of $\mathrm{CO_2}$ ($M = 44$ g/mol vs $\sim 29$ g/mol for air); the scale height is a competition between these factors, and the temperature wins.
-We can verify the Venus number directly from the hydrostatic scale height derived in {ref}`Lecture 5 <lecture05>`:
+The thermal profile is roughly adiabatic from the surface ($T_s = 737$ K, $P_s = 92$ bar) up to about $65$ km altitude at the cloud tops.
+The atmospheric **scale height**, the characteristic vertical distance over which pressure decreases by a factor of $e$, is about $16$ km at the surface compared with $\sim 8$ km on Earth.
+This difference is evaluated using the hydrostatic scale height from {ref}`Lecture 5 <lecture05>`:
 
 $$
 H = \frac{\kB T}{m\, g}.
 $$
 
-Plugging in $T = 737$ K, $m = 44 \times 1.66 \times 10^{-27}$ kg $= 7.30 \times 10^{-26}$ kg for $\mathrm{CO_2}$, and $g = 8.87$ m/s$^2$ gives $H \approx 1.57 \times 10^4$ m, or $\sim 16$ km.
-The same formula applied to Earth's near-surface air ($T = 288$ K, $m = 4.81 \times 10^{-26}$ kg for a mean molecular weight of $29$, $g = 9.81$ m/s$^2$) gives $H \approx 8.4$ km.
-The factor-of-two contrast between the two planets is set almost entirely by the temperature ratio $T_{\mathrm{Venus}} / T_{\mathrm{Earth}} \approx 2.55$, partly offset by the heavier molecule and the slightly weaker Venusian gravity.
-Above the cloud tops the temperature drops with altitude through the mesosphere, then rises again in the thermosphere where solar EUV is absorbed.
+Plugging in $T = 737$ K, $m = 7.30 \times 10^{-26}$ kg for $\mathrm{CO_2}$, and $g = 8.87$ m/s$^2$ gives $H \approx 1.57 \times 10^4$ m, or $\sim 16$ km.
+For Earth ($T = 288$ K, $m = 4.81 \times 10^{-26}$ kg, $g = 9.81$ m/s$^2$), $H \approx 8.4$ km.
+This factor-of-two difference is set primarily by the higher temperature ratio $T_{\mathrm{Venus}} / T_{\mathrm{Earth}} \approx 2.55$, which outweighs the heavier molecular weight of $\mathrm{CO_2}$.
+Above the clouds, temperature decreases through the mesosphere and rises in the thermosphere where solar EUV is absorbed.
 
-The cloud system is one of the most distinctive features of Venus.
-**Sulfuric acid droplets** form three vertically stacked layers between roughly $48$ and $70$ km altitude: a lower cloud deck dominated by larger particles, a middle deck of intermediate sizes, and an upper deck of smaller particles.
-They are produced by photochemistry in the upper atmosphere: solar UV photolyses $\mathrm{SO_2}$ to atomic sulfur and oxygen, the products combine with water vapour to form $\mathrm{SO_3}$ and then $\mathrm{H_2SO_4}$, which condenses to form droplets.
-The clouds are optically thick (the visible-band albedo is $\sim$0.77, the highest of any planet in the Solar System), and they are the effective radiating surface of the planet for visible and near-IR wavelengths.
-An unidentified UV absorber (sometimes called the "blue absorber") gives the cloud tops their characteristic banded appearance in UV imagery; its identity is one of the long-standing puzzles of Venus atmospheric chemistry.
-Phosphine ($\mathrm{PH_3}$) was claimed in 2020 as a possible cloud-layer trace species, with potential biological implications, but the detection has been contested and remains the subject of an active and unresolved debate that we touched on in {ref}`Lecture 6 <lecture06>`.
+The cloud system consists of three vertically stacked layers between roughly $48$ and $70$ km altitude.
+Solar UV photolyses $\mathrm{SO_2}$ to form $\mathrm{SO_3}$, which combines with water vapour to produce $\mathrm{H_2SO_4}$ droplets.
+These clouds are optically thick with a visible-band albedo of $\sim 0.77$, and they form the effective radiating surface at visible and near-IR wavelengths.
+An unidentified UV absorber produces banded features at the cloud tops, while contested trace detections such as phosphine ($\mathrm{PH_3}$) were examined in {ref}`Lecture 6 <lecture06>`.
 
-The atmospheric circulation is dominated by **super-rotation**: the cloud-top atmosphere circles the planet in roughly $4$ Earth days, despite the solid planet rotating in $243$ Earth days.
-This means that at the cloud tops, the atmosphere is moving roughly $60$ times faster than the surface beneath it, in a direction opposed to the planet's rotation.
-The maintenance of super-rotation against frictional drag at the surface is one of the deep open problems of planetary atmospheric dynamics; the leading explanation involves thermal tides, atmospheric waves driven by the day-night heating cycle, and planetary-scale waves transporting angular momentum upward from the lower atmosphere to the cloud-deck region.
+Atmospheric circulation is dominated by **super-rotation**, where the atmosphere rotates substantially faster than the underlying solid planet.
+The cloud-top atmosphere circles Venus in roughly $4$ Earth days (moving roughly $60$ times faster than the surface), in a direction opposed to the solid planet rotation of $243$ Earth days.
+Maintaining this circulation against surface friction requires upward angular momentum transport by thermal tides and planetary-scale waves.
 
 ### The runaway greenhouse and how Venus locked into it
 
-We come to the central piece of physics in this lecture: why and how Venus' climate ended up where it is.
-The blackboard derivation in the next subsection makes the argument quantitative, but it helps to state the conclusion first.
-
-A planet with surface water and an atmospheric absorber (water vapour itself, in the simplest case) has a feedback loop: warming raises the water vapour concentration via the Clausius-Clapeyron relation, which strengthens the greenhouse effect, which warms the surface further, and so on.
-On modern Earth, this feedback is bounded because the troposphere only carries water vapour up to a saturation profile that decreases with altitude, and the outgoing longwave radiation (OLR) that escapes to space rises with surface temperature roughly fast enough to balance increasing absorbed solar flux.
-
-It is worth pausing to ask whether a textbook one-layer grey greenhouse, of the kind we built in {ref}`Lecture 5 <lecture05>`, can already explain the Venus surface temperature.
-In that model the surface is in radiative balance with a single optically thick atmospheric layer, which gives the well-known result
+A one-layer grey greenhouse model ({ref}`Lecture 5 <lecture05>`) gives:
 
 $$
 T_s^4 = 2\, T_{\mathrm{eq}}^4,
@@ -533,16 +450,14 @@ T_s^4 = 2\, T_{\mathrm{eq}}^4,
 T_{\mathrm{eq}} = \left[ \frac{S\, (1-A)}{4\, \sigma} \right]^{1/4},
 $$
 
-so that $T_s = 2^{1/4}\, T_{\mathrm{eq}} \approx 1.19\, T_{\mathrm{eq}}$.
-For Earth, $S_\oplus = 1361$ W/m$^2$ and $A = 0.30$ give $T_{\mathrm{eq}} \approx 255$ K and $T_s \approx 303$ K, within $\sim 15$ K of the observed $288$ K.
-For Venus, $S_{\mathrm{Venus}} = 2604$ W/m$^2$ but the present cloud albedo is $A \approx 0.77$, so $T_{\mathrm{eq}} \approx 227$ K and the one-layer model predicts only $T_s \approx 270$ K.
-The observed surface temperature is $737$ K, almost $500$ K hotter than the simple model allows.
-The one-layer picture fails by hundreds of kelvin, and the failure is not a small correction: it tells us that Venus is not on the same equilibrium branch as Earth, and that we need a different kind of solution, in which the atmosphere is dense enough that the IR photosphere, the effective infrared-radiating level, lifts far above the surface.
-That is the runaway-greenhouse branch, and the next derivation makes the threshold quantitative.
+yielding $T_s \approx 1.19\, T_{\mathrm{eq}}$.
+For Earth ($S_\oplus = 1361$ W/m$^2$, $A = 0.30$), this gives $T_s \approx 303$ K, close to the observed $288$ K.
+For Venus ($S_{\mathrm{Venus}} = 2604$ W/m$^2$, $A \approx 0.77$), it predicts $T_s \approx 270$ K.
+The observed Venus surface temperature of $737$ K is far hotter than predicted because a dense atmosphere lifts the infrared photosphere far above the surface.
 
-But the bound is not infinite.
-There is a maximum OLR that a water-rich atmosphere can radiate to space, set by the saturation vapour pressure of water at the temperature of the IR-photosphere; if the absorbed solar flux exceeds this limit, no surface temperature can balance the radiation budget, the ocean evaporates entirely, and the planet enters a **runaway greenhouse** state.
-This maximum OLR is the **Simpson-Nakajima limit**, named after the foundational analyses of {cite:t}`Ingersoll1969` and {cite:t}`NakajimaIngersoll1992` ({numref}`fig:kopparapu-runaway` and {numref}`fig:goldblatt-spectrum`).
+Warming increases atmospheric water vapour via the Clausius-Clapeyron relation, strengthening the greenhouse effect.
+When absorbed solar flux exceeds the maximum outgoing longwave radiation (OLR) that a moist atmosphere can emit, the planet enters a **runaway greenhouse**, a state where oceans evaporate completely.
+This upper bound is the **Simpson-Nakajima limit**, the maximum OLR a water-rich atmosphere can radiate to space ({cite:t}`NakajimaIngersoll1992`; {numref}`fig:kopparapu-runaway`, {numref}`fig:goldblatt-spectrum`).
 
 ```{figure} figures/kopparapu2013_runaway_panels.avif
 :name: fig:kopparapu-runaway
@@ -570,15 +485,10 @@ Above $T_\mathrm{s} \sim 340$ K the integrated outgoing flux saturates at the **
 Reproduced from {cite:t}`Goldblatt2013`.
 ```
 
-In numbers, the Simpson-Nakajima limit comes out to about $280\text{--}310$ W/m$^2$, depending on details of the radiative transfer model and the assumed atmospheric composition {cite:p}`Goldblatt2013,Kasting1988`.
-Earth today absorbs about $240$ W/m$^2$ of stellar flux, comfortably below the limit.
-Venus, at $0.723$ AU, absorbs roughly $1.91 \times$ more stellar flux per unit area than Earth would at the top of its atmosphere; the absorbed solar flux at Venus is much higher than the Simpson-Nakajima limit, which is precisely why Venus cannot host liquid water at the surface today ({numref}`fig:zahnle-runaway`).
-Once Venus crossed the limit some time in its history, the runaway became a one-way process: the ocean evaporated to space, water photolysed in the upper atmosphere, hydrogen escaped (preferentially over deuterium, leaving the residual D/H ratio strongly enriched), and the surface dried out permanently.
-What is left is the dry, $\mathrm{CO_2}$-dominated, $737$ K hothouse we observe today.
-
-A subtlety is that the runaway greenhouse state is a thermodynamic feature of the water phase diagram and the radiative transfer through a saturated atmosphere; it is not an artefact of any particular climate model or numerical scheme.
-{cite:t}`Goldblatt2013` showed that even the most modern line-by-line radiative-transfer codes converge on a limit in the same range as the original {cite:t}`Kasting1988` and {cite:t}`Kasting1993` calculations.
-The robustness of the limit across very different model assumptions is one of the strongest theoretical arguments that the runaway greenhouse on Venus was inevitable given enough solar flux.
+Radiative transfer calculations place the Simpson-Nakajima limit at approximately $280\text{--}310$ W/m$^2$ {cite:p}`Goldblatt2013`.
+Earth absorbs about $240$ W/m$^2$, remaining below this limit.
+Venus, at $0.723$ AU, absorbs roughly $1.91 \times$ more stellar flux per unit area, exceeding the threshold ({numref}`fig:zahnle-runaway`).
+Upper-atmospheric water photolysed and hydrogen escaped to space, leaving the dry, $\mathrm{CO_2}$-dominated, $737$ K surface observed today.
 
 ```{figure} figures/zahnle2007_runaway_threshold.avif
 :name: fig:zahnle-runaway
@@ -704,17 +614,10 @@ Reproduced from {cite:t}`Wordsworth2013`.
 
 ### When did Venus lose its water?
 
-The Simpson-Nakajima derivation tells us that runaway greenhouse on Venus was inevitable given enough solar flux.
-What it does not tell us is **when** the transition happened.
-Two competing scenarios are physically plausible and remain unresolved ({numref}`fig:wordsworth-equilibria` illustrates the underlying bistability of a saturated water-rich atmosphere that supports the hysteresis between wet and dry states).
+The Simpson-Nakajima limit makes a runaway greenhouse inevitable, but the timing of the transition remains unresolved ({numref}`fig:wordsworth-equilibria`).
 
-The **early loss** scenario, championed by {cite:t}`Hamano2013`, assumes that Venus formed with a hot, magma-ocean surface and a primordial steam atmosphere.
-Because Venus is closer to the Sun, the absorbed flux is high enough that the atmosphere stays above the Simpson-Nakajima limit indefinitely; the magma ocean never solidifies because the optically thick steam atmosphere prevents efficient heat loss.
-Water vapour photolyses in the upper atmosphere, hydrogen escapes hydrodynamically, that is, as part of a bulk outflow of the upper atmosphere rather than atom by atom, under the strong EUV flux of the young Sun, and Venus is desiccated within a few hundred million years of its formation.
-On this view, Venus never had liquid surface water, and the present-day desiccation reflects the original failure of the magma ocean to crystallise into a solid surface with a condensed ocean.
-{cite:t}`Hamano2013` quantified this scenario and showed that for water-rich planets at distances less than about $0.77$ AU, the magma ocean phase becomes self-sustaining and the planet becomes a "Type II" world, distinct from the "Type I" worlds (like Earth, at greater distances) that crystallise normally and develop a condensed ocean ({numref}`fig:hamano-two-types` and {numref}`fig:hamano-typeI`).
-
-An independent coupled magma-ocean and atmosphere model by {cite:t}`Lebrun2013` ({numref}`fig:lebrun-magma`) puts the magma-ocean lifetime at Venus' orbital distance at $\sim$10 Myr, an order of magnitude longer than at Earth's orbit, consistent with sustained hydrodynamic hydrogen escape during the magma-ocean phase.
+In the **early loss** scenario, a primordial steam atmosphere prevents magma-ocean solidification, sustaining rapid water loss ({numref}`fig:hamano-two-types` and {numref}`fig:hamano-typeI`) {cite:p}`Hamano2013`.
+Coupled magma-ocean models find a prolonged lifetime of $\sim$10 Myr ({numref}`fig:lebrun-magma`) {cite:p}`Lebrun2013`.
 
 ```{figure} figures/hamano2013_two_types.avif
 :name: fig:hamano-two-types
@@ -755,11 +658,8 @@ The longer magma-ocean lifetime at smaller heliocentric distances gives the stea
 {cite:t}`Lebrun2013` further showed (their Fig. 11, not shown) that below a critical distance of about $0.66$ AU around a Sun-like star, an Earth-mass planet's magma ocean cannot freeze at all and the planet remains molten indefinitely; Venus at $0.72$ AU sits just outside this limit.
 ```
 
-The **late loss** scenario, championed by {cite:t}`Way2016`, takes the opposite view.
-On this picture, Venus formed with a cooler, water-bearing surface and condensed a global ocean at the end of its magma ocean stage, just as Earth did.
-Three-dimensional climate model simulations by {cite:t}`Way2016` demonstrated that, with the slower rotation rate of Venus and a thick day-side cloud cover, surface conditions on Venus could remain temperate (with surface temperatures from $\sim$280 K to $310$ K, depending on the assumed solar constant and topography) for billions of years, even at solar fluxes that are well above the Simpson-Nakajima limit obtained from one-dimensional models.
-The key physics in their three-dimensional simulations is the formation of optically thick water clouds on the substellar dayside that reflect a large fraction of the incoming solar flux back to space, raising the planetary albedo and reducing the absorbed flux below the runaway limit.
-On the late-loss picture, Venus then loses its water gradually as the Sun brightens and the cloud feedback weakens, and the runaway is triggered some time within the last $\sim$1 Gyr, leaving the planet looking exactly like the early-loss case today ({numref}`fig:way-paleo`).
+In the **late loss** scenario, Venus condensed a surface ocean and remained temperate for billions of years {cite:p}`Way2016`.
+Substellar clouds reflected sunlight until water loss occurred within the last $\sim$1 Gyr ({numref}`fig:way-paleo`).
 
 ```{figure} figures/way2016_paleo_venus_temperature.avif
 :name: fig:way-paleo
@@ -771,11 +671,8 @@ Surface temperatures range from below freezing in polar regions to about $40^\ci
 {cite:t}`Way2016` confirmed similar temperate conditions for several variants (different epochs, modern Earth topography in place of Venusian topography, faster rotation), shown in panels (b)-(d) of the same figure (not reproduced here).
 ```
 
-The {cite:t}`Turbet2021` paper revisited the question with a different physical conclusion.
-Their three-dimensional simulations of an early Venus showed that water clouds preferentially form on the **night-side**, driven by direct subsolar absorption of incoming sunlight by water vapour on the dayside. Counter-intuitively, these nightside clouds act as a greenhouse layer that traps outgoing thermal radiation, producing a net warming of $+50$ to $+120$ W m$^{-2}$ over the relevant insolations.
-The day-side, by contrast, has a much weaker cloud cover and so absorbs nearly all incoming sunlight, compounding the problem ({numref}`fig:turbet-clouds`).
-On their picture, the asymmetric day-night cloud distribution prevents an ocean from condensing on Venus from the start, even if the planet enters the post-magma-ocean phase with a low surface temperature; the runaway greenhouse therefore traps Venus from the very beginning.
-Their main result is summarised in a hysteresis diagram showing the conditions under which an ocean can form: Venus is on the wrong side of the hysteresis loop for ocean formation throughout its history, while Earth is on the right side ({numref}`fig:turbet-hysteresis`).
+Three-dimensional simulations show that water clouds preferentially form on the nightside ({numref}`fig:turbet-clouds`) {cite:p}`Turbet2021`.
+Nightside cloud warming prevents ocean condensation, trapping Venus in a runaway state ({numref}`fig:turbet-hysteresis`).
 
 ```{figure} figures/turbet2021_water_clouds_emission.avif
 :name: fig:turbet-clouds
@@ -802,8 +699,8 @@ Hysteresis loops for ocean formation on early Earth and Venus, from {cite:t}`Tur
 Reproduced from {cite:t}`Turbet2021`, Fig. 4.
 ```
 
-These three papers illustrate the current state of the field: there are strong theoretical arguments on both sides, the evidence from Venus itself is ambiguous, and definitive resolution will require new observations (the most decisive being noble-gas measurements from a future descent probe, which would constrain the time-integrated escape history, and high-resolution near-IR emissivity mapping of tessera regions, which would test for ancient felsic crust formed in the presence of liquid water).
-For the purposes of this lecture, we should treat both the early-loss and late-loss scenarios as physically plausible and observationally untested, and accept that one of the central questions of comparative rocky-planet evolution remains open. {numref}`fig:gillmann-scenarios` summarises the two competing branches side by side, {numref}`fig:honing-reference` shows a quantitative wet-Venus reference scenario with coupled interior-atmosphere weathering, and {numref}`fig:constantinou-pathways` traces the two pathways through to predicted differences in the present-day volcanic-gas chemistry.
+Both early-loss and late-loss scenarios remain observationally untested ({numref}`fig:gillmann-scenarios`).
+Future measurements of noble gases and crustal composition may distinguish between an early ocean ({numref}`fig:honing-reference`) and a dry history ({numref}`fig:constantinou-pathways`).
 
 ```{figure} figures/gillmann2022_dry_wet_venus_scenarios.avif
 :name: fig:gillmann-scenarios
@@ -843,32 +740,26 @@ Reproduced from {cite:t}`Constantinou2024`.
 
 ### The D/H ratio: evidence for water loss
 
-Whichever scenario is correct, there is one strong piece of empirical evidence that Venus once had at least $100\times$ more water than it does today: the deuterium-to-hydrogen ratio.
-The original Pioneer Venus mass spectrometer measurement of {cite:t}`Donahue1982` gave $D/H \approx 1.6 \times 10^{-2}$, about $100$ times the terrestrial standard mean ocean water value of $D/H = 1.56 \times 10^{-4}$.
-Subsequent Earth-based near-IR night-side spectroscopy refined the value to $(1.9 \pm 0.6) \times 10^{-2}$, corresponding to $\sim 120 \pm 40$ times terrestrial {cite:p}`deBergh1991`, and a re-analysis of the full Pioneer Venus data set gave the widely quoted enrichment factor of $\sim 150 \pm 30$ relative to Earth {cite:p}`Donahue1997`.
+The **deuterium-to-hydrogen ratio** (D/H) provides strong empirical evidence that Venus once possessed at least $100\times$ more water than today.
+Early measurements gave an atmospheric $D/H \approx 1.6 \times 10^{-2}$ for Venus, about $100$ times the terrestrial standard mean ocean water value ($D/H = 1.56 \times 10^{-4}$) {cite:p}`Donahue1982`.
+Later analyses revised the enrichment factor to $\sim 150 \pm 30$ {cite:p}`Donahue1997`.
 
-The physical reason is straightforward.
-In hydrodynamic escape (or any escape mechanism in which the energy per particle is comparable to the escape energy), the lighter isotope escapes more efficiently than the heavier one, because the lighter molecules acquire higher thermal velocities for a given temperature.
-In the limit of efficient mass fractionation, the residual water in the planet becomes progressively enriched in deuterium relative to its initial isotopic composition.
-The textbook description is **Rayleigh distillation** {cite:p}`Hunten1987`: if $f$ is the fraction of the original hydrogen reservoir still left, and $\alpha < 1$ is the fractionation factor (the ratio of deuterium to hydrogen escape efficiencies), then the present isotopic ratio $R$ relative to the initial ratio $R_0$ obeys
+Because lighter hydrogen molecules acquire higher thermal velocities, they escape more efficiently than deuterium, progressively enriching the remaining reservoir in deuterium.
+This process follows **Rayleigh distillation** (isotopic fractionation during reservoir loss) {cite:p}`Hunten1987`: if $f$ is the remaining hydrogen fraction and $\alpha < 1$ is the fractionation factor (the ratio of deuterium to hydrogen escape efficiencies), the present isotopic ratio $R$ relative to the initial ratio $R_0$ obeys
 
 $$
 \frac{R}{R_0} = f^{(\alpha - 1)}.
 $$
 
-The fractionation factor $\alpha$ depends on the escape regime, and two limiting cases give very different answers.
-In a **mass-ratio limit** (the strongest defensible fractionation), $\alpha \approx m_{\mathrm{H}}/m_{\mathrm{D}} \approx 0.5$.
-In a **thermal-velocity limit** (the weakest defensible fractionation, using only the Maxwell-Boltzmann velocity ratio at fixed temperature), $\alpha \approx \sqrt{m_{\mathrm{H}}/m_{\mathrm{D}}} \approx 0.71$.
-Setting $R/R_0 = 150$ and solving $f = 150^{1/(\alpha-1)}$ gives $f_{\mathrm{mass}} \approx 150^{-2} \approx 4 \times 10^{-5}$ in the mass-ratio limit, and $f_{\mathrm{thermal}} \approx 150^{-3.4} \approx 4 \times 10^{-8}$ in the thermal-velocity limit.
-Multiplying the present water column ($\sim 2$ cm of global equivalent layer in the lower atmosphere) by $1/f$ then implies an initial water inventory of order *several hundred metres* of global equivalent depth in the mass-ratio case (a shallow Earth ocean), or order *several hundred kilometres* in the thermal-velocity case, which corresponds to more than 100 Earth-ocean masses and is plainly unphysical for a delivery scenario.
-The contradiction in the second case is itself instructive: a pure velocity-tail interpretation of hydrogen escape cannot be the full story.
-The actual integrated escape history of Venus likely combined an early **hydrodynamic** phase (with $\alpha$ close to unity, requiring large total losses but producing little fractionation per escaping atom) with a later **diffusion-limited** phase that produced most of the observed enrichment.
-This is therefore a *lower-bound* argument: even under the most-fractionating defensible single-regime assumption, the present hydrogen reservoir is at most $\sim 4 \times 10^{-5}$ of the original, requiring an initial inventory of at least several hundred metres global equivalent.
-The exact number also depends on the integration time and on the rate at which fresh deuterium-rich water might have been added by cometary impact, but **all such models require the original Venusian water inventory to have been at least $\sim$100 times the present value**, equivalent to a global ocean of at least a few metres depth.
+The fractionation factor $\alpha$ depends on the escape regime: $\alpha \approx m_{\mathrm{H}}/m_{\mathrm{D}} \approx 0.5$ in the mass-ratio limit, and $\alpha \approx \sqrt{m_{\mathrm{H}}/m_{\mathrm{D}}} \approx 0.71$ in the thermal-velocity limit.
+Setting $R/R_0 = 150$ and solving $f = 150^{1/(\alpha-1)}$ yields $f_{\mathrm{mass}} \approx 150^{-2} \approx 4 \times 10^{-5}$ and $f_{\mathrm{thermal}} \approx 150^{-3.4} \approx 4 \times 10^{-8}$.
+Multiplying the present water column ($\sim 2$ cm of global equivalent layer) by $1/f$ implies an initial inventory of several hundred metres for the mass-ratio case, but an unphysical several hundred kilometres (more than 100 Earth-ocean masses) for the thermal-velocity case.
+This contradiction shows that Venusian escape combined an early hydrodynamic phase with $\alpha$ near unity and a later diffusion-limited phase that produced the observed enrichment.
+Under this lower-bound argument, the original Venusian water inventory was at least $\sim 100$ times the present value.
 
-This is the strongest direct observational constraint we have that Venus has lost most of its primordial water to space. The accompanying buildup of $\mathrm{O_2}$ from photolysis, partly retained in the atmosphere and partly absorbed by oxidation of the planetary interior, is illustrated schematically in {numref}`fig:wordsworth-abiotic-o2`.
-What it does not tell us is when the loss happened: hydrogen escape rates change over time as the EUV flux of the Sun decreases, and the integrated escape history can equally well be early (during a magma-ocean phase) or distributed over billions of years.
-Future noble gas measurements, particularly $^{36}$Ar/$^{38}$Ar and Xe isotopic ratios from a descent probe (planned by DAVINCI), are expected to discriminate between these histories, because different escape regimes leave different fractionation signatures across the noble gas series.
+The D/H ratio provides direct evidence that Venus lost most of its primordial water to space, accompanied by photolytic $\mathrm{O_2}$ buildup and interior oxidation ({numref}`fig:wordsworth-abiotic-o2`).
+However, D/H alone cannot determine whether water loss occurred early during a magma-ocean phase or over billions of years as solar EUV flux declined.
+Future noble gas measurements, particularly $^{36}$Ar/$^{38}$Ar and Xe isotopic ratios from the DAVINCI probe, will help distinguish between these escape histories.
 
 ```{figure} figures/wordsworth2014_abiotic_o2_schematic.avif
 :name: fig:wordsworth-abiotic-o2
@@ -882,41 +773,36 @@ The same chain of processes (water photolysis, hydrogen escape, oxygen sinks) is
 Reproduced from {cite:t}`Wordsworth2014`.
 ```
 
-
 ### Volcanic activity today: is Venus alive?
 
-A long-standing question in Venus science is whether the planet is volcanically active right now, or whether the geologically recent volcanic activity inferred from crater statistics has died out.
-Several lines of indirect evidence have suggested ongoing activity over the years.
-$\mathrm{SO_2}$ concentrations in the upper atmosphere have varied by factors of several over the $40$-year baseline of Pioneer Venus, Magellan, and Venus Express observations, and the simplest explanation for the variability is episodic volcanic injection of $\mathrm{SO_2}$ from below.
-Thermal emission anomalies detected by Venus Express in near-IR atmospheric windows over Idunn Mons and other Venus volcanoes are consistent with cooling from recent (geologically speaking) lava flows, although the dating of those flows from the thermal data alone is not precise.
+Whether Venus is currently volcanically active has long been debated.
+Indirect evidence includes factor-of-several variations in upper-atmosphere $\mathrm{SO_2}$ concentrations over the $40$-year baseline of Pioneer Venus, Magellan, and Venus Express observations, likely caused by episodic volcanic outgassing.
+Venus Express detected near-IR thermal emission anomalies over Idunn Mons consistent with cooling from recent lava flows.
 
-The decisive observation came in $2023$, when {cite:t}`HerrickHensley2023` reanalysed archival Magellan radar data from $1990$ to $1992$ and identified a clear morphological change in a volcanic vent on the flank of **Maat Mons**.
-A vent that appeared roughly circular in early Magellan cycles had become irregularly shaped and substantially enlarged in later cycles, with surrounding terrain consistent with a fresh lava flow.
-This is the first direct evidence of an active volcanic eruption on Venus from spacecraft data, and it establishes that Venus is volcanically active today rather than in a quiescent interval.
-The implications are significant: any model of Venus that posits a long-dead surface is wrong, the resurfacing process is at least episodic, and the present-day volcanism provides an ongoing source of $\mathrm{CO_2}$ and $\mathrm{SO_2}$ to the atmosphere.
+Direct evidence arrived in $2023$, when {cite:t}`HerrickHensley2023` reanalysed Magellan radar data from $1990$ to $1992$ and identified morphological changes in a volcanic vent on the flank of Maat Mons.
+Between observation cycles, the vent enlarged, changed from circular to irregular, and developed surrounding terrain consistent with a fresh lava flow.
+This spacecraft observation provides the first direct evidence of an active eruption on Venus. Modern resurfacing is at least episodic and continues to supply $\mathrm{CO_2}$ and $\mathrm{SO_2}$ to the atmosphere.
 
-The natural question then is: is this active volcanism comparable to Earth's volcanic flux, or is it much smaller?
-This question is central to the carbon and sulfur balance of Venus, because the volcanic source has to be in steady state (or near it) with whatever sinks operate today, and the only known sinks for $\mathrm{CO_2}$ and $\mathrm{SO_2}$ on Venus are the weathering reactions of surface basalts and the chemistry of the cloud-deck region.
-The rates of these reactions are uncertain by orders of magnitude, and pinning them down is one of the main scientific objectives of EnVision and DAVINCI.
-
+A key open question is whether this volcanic flux is comparable to Earth's or much smaller.
+Because volcanic outgassing must roughly balance atmospheric sinks in steady state, the gas flux is tied to surface basalt weathering and cloud-deck chemistry.
+The rates of these reactions remain uncertain by orders of magnitude, making their measurement a primary goal of EnVision and DAVINCI.
 
 ## Part 3: Comparative payoff
 
 ### Why did Earth and Venus diverge?
 
-We are now in a position to answer the question that opened this lecture, namely what set two nearly identical starting points onto such radically different evolutionary paths.
-The answer involves four physical inputs that differed (or differed slightly) between Earth and Venus, plus the nonlinear couplings that turned modest input differences into runaway outcomes.
+Earth and Venus began from similar initial conditions but followed divergent paths.
+This divergence arose from four physical inputs and the nonlinear feedbacks that amplified their differences.
 
-The first input is the **solar flux**.
-At $0.723$ AU, Venus receives $1.91 \times$ the solar flux per unit area that Earth does at $1$ AU.
-This is the single biggest lever, and it is the only input where the two planets are very different at the start.
-With the present-day Sun, Venus is comfortably above the Simpson-Nakajima limit and Earth is comfortably below.
-With a young, faint Sun, the picture is more complicated: Venus may have been just above or just below the threshold, depending on cloud cover and atmospheric composition, and the question of whether early Venus was habitable becomes a question of how the solar flux interacted with the cloud feedback and the carbonate-silicate cycle.
-If Venus had formed even $0.05$ AU farther from the Sun, the runaway might have been delayed for billions of years and Venus might today look much more Earth-like; conversely, if Earth had formed $0.05$ AU closer to the Sun, Earth might have followed the Venus trajectory.
-The two planets are at the very edge of the Simpson-Nakajima boundary, on opposite sides of the line.
+The first input is **solar flux**, the solar power received per unit area.
+At $0.723$ AU, Venus receives $1.91 \times$ the solar flux of Earth at $1$ AU.
+Today, Venus lies above the Simpson-Nakajima limit and Earth sits below it.
+Under a faint young Sun, early Venus was near this threshold, governed by cloud feedbacks.
+An orbital difference of $0.05$ AU could have swapped their evolutionary outcomes.
 
-The second input is the **timing of water delivery and loss**.
-Both planets accreted in roughly the same region of the protoplanetary disk and likely had similar primordial water inventories (though we cannot measure this directly for Venus). Isotopic tracers in Earth's mantle (O, Ti, Cr, Ni, Mo, Ru) provide independent constraints on the composition of the accreting material at different stages: {numref}`fig:dauphas-accretion` shows that Cr was delivered approximately proportionally to accreted mass, whereas Mo and Ru were strongly back-loaded toward the final stages and the late veneer.
+The second input is the timing of water delivery.
+Both planets accreted in the same disk region with similar initial water inventories.
+Mantle isotopic tracers suggest that water, if it arrived with the carbonaceous material, was delivered mainly during main accretion rather than with the late veneer ({numref}`fig:dauphas-accretion`).
 
 ```{figure} figures/dauphas2017_earth_accreting_material.avif
 :name: fig:dauphas-accretion
@@ -930,23 +816,19 @@ Combined with the O, Ti, Ni, Mo, and Ru tracers from the same study (not reprodu
 The carbonaceous component, and therefore the bulk of Earth's water if it was delivered with that material, was concentrated in the early stages of main accretion rather than in the late veneer.
 ```
 
-The difference is in what happened to the water as the planet cooled.
-On Earth, the water survived the magma-ocean phase, condensed at the surface, and persisted as an ocean for the next $4$ Gyr.
-On Venus, the water either failed to condense in the first place (the Hamano-Turbet picture) or condensed and was subsequently lost during a slow runaway over billions of years (the Way picture).
-The end result is the same, but the timing changes our interpretation of habitability: in the first case, Venus was never habitable, while in the second case, it was for billions of years.
-The D/H ratio confirms that water was lost; the noble gas isotopes (yet to be measured) will eventually tell us when.
+The divergence lies in water retention as each planet cooled.
+On Earth, water condensed after the magma ocean and persisted as an ocean for $4$ Gyr.
+On Venus, water either never condensed or was lost during a runaway greenhouse.
+The D/H ratio records water loss, while noble gas isotopes will date when it occurred.
 
-The third input is the **rotation rate**.
-Venus rotates retrograde with a $243$-day period, dramatically slower than Earth's $24$-hour rotation.
-This affects the planet in two ways.
-First, it changes the atmospheric circulation pattern: the Coriolis force, which dominates Earth's mid-latitude weather, is much weaker on slowly rotating Venus, and the cloud-top circulation is dominated by zonal super-rotation rather than by Hadley-Ferrel cells.
-This changes the cloud distribution and hence the planetary albedo.
-Second, the slow rotation may suppress dynamo action in the core: Earth's geodynamo benefits from the strong Coriolis force that organises the convective flow, while a slowly rotating planet may struggle to maintain a coherent dynamo even if the core is convecting.
-The slow rotation is itself a puzzle (it may be the result of a giant impact, of solid-body tidal interaction with the Sun, or of atmospheric thermal tides braking the spin), but its consequences for the climate and the magnetic field are at least qualitatively understood.
+The third input is the rotation rate.
+Venus rotates retrograde with a $243$-day period, much slower than Earth's $24$-hour rotation.
+The weak Coriolis force drives zonal super-rotation instead of mid-latitude cells, altering cloud albedo.
+Slow rotation may also weaken the organisation of core convection, which may help explain why Venus lacks an intrinsic magnetic field.
 
-A useful way to visualise the consequences of the diverging water history is the **redox pump** sketched in {numref}`fig:wordsworth-n2pump`.
-Earth and Venus may have started from a similar reducing steam atmosphere over a magma ocean, but the choice of whether the surface ocean condenses (Earth) or whether photolysis and hydrogen escape destroy the steam atmosphere first (Venus) drives the planet through very different sequences of redox states.
-On Earth, the surface ends up moderately oxidising with most of the nitrogen partitioned into a $1$-bar $\mathrm{N_2}$ atmosphere; on Venus, the loss of hydrogen and oxidation of the interior leaves a much smaller $\mathrm{N_2}$ inventory in a hot, $\mathrm{CO_2}$-dominated atmosphere {cite:p}`WordsworthN2016`.
+A **redox pump**, a mechanism linking volatile loss to planetary oxidation, connects atmospheric evolution to early water loss ({numref}`fig:wordsworth-n2pump`).
+Retaining surface water left Earth with a moderately oxidising mantle and a $1$-bar $\mathrm{N_2}$ atmosphere.
+On Venus, hydrogen escape oxidised the interior, generating a hot $\mathrm{CO_2}$-dominated atmosphere with depleted $\mathrm{N_2}$ {cite:p}`WordsworthN2016`.
 
 ```{figure} figures/wordsworth2016_n2_redox_pump.avif
 :name: fig:wordsworth-n2pump
@@ -962,13 +844,10 @@ The four-panel layout is retained because the redox sequence A$\to$C (Earth) ver
 Reproduced from {cite:t}`WordsworthN2016`.
 ```
 
-The fourth input is the **tectonic regime**.
-Earth is in mobile-lid mode and Venus is in stagnant-lid mode.
-The two regimes correspond to different climate-coupling structures: Earth's plate tectonic system supports the carbonate-silicate cycle, while Venus' stagnant-lid system breaks the cycle once the oceans are gone.
-The crucial point is that **the tectonic regime is not independent of the water inventory**.
-A wet mantle is much weaker than a dry mantle (water reduces the viscosity of olivine by orders of magnitude at upper-mantle conditions), and a wet lithosphere is more likely to undergo subduction.
-Loss of surface water (and the associated dehydration of the mantle by recycling of dehydrated lithosphere) makes the planet stiffer, slows down the convective heat loss, and may eventually shut off plate tectonics altogether.
-On this view, the tectonic regimes of Earth and Venus are not independent inputs; they are partly consequences of the water inventory and the runaway greenhouse history ({numref}`fig:earth-venus-systems` summarises the coupled climate-interior feedback loops on Earth and Venus side by side).
+The fourth input is the tectonic regime.
+Earth operates in mobile-lid plate tectonics, whereas Venus is in a stagnant-lid regime.
+Tectonic mode depends on water inventory, as water weakens mantle olivine and enables subduction.
+Desiccation may have stiffened Venus' lithosphere and shut down plate tectonics and the climate-buffering cycles ({numref}`fig:earth-venus-systems`).
 
 ```{figure} figures/gillmann2022_earth_venus_systems.avif
 :name: fig:earth-venus-systems
@@ -984,36 +863,32 @@ Reproduced from {cite:t}`Gillmann2022`.
 
 ### The carbonate-silicate cycle failure mode on Venus
 
-The carbonate-silicate cycle is the central feedback that has stabilised Earth's climate over $4$ Gyr.
-We covered the mechanism in {ref}`Lecture 6 <lecture06>`; here we ask why it cannot save Venus.
-The cycle has three essential ingredients: a source of $\mathrm{CO_2}$ (volcanism), a sink (silicate weathering followed by carbonate burial), and a return leg (subduction).
-Earth has all three.
-Venus, in its present state, has only the source.
+The **carbonate-silicate cycle** is the negative feedback that has stabilised Earth's climate over $4$ Gyr ({ref}`Lecture 6 <lecture06>`).
+The cycle requires three essential components: a $\mathrm{CO_2}$ source (volcanism), a sink (silicate weathering and carbonate burial), and a return leg (subduction).
+Earth has all three, whereas Venus retains only the source.
 
-When Venus' surface ocean was lost (whenever that happened), the silicate weathering sink stopped operating because silicate weathering requires liquid water at the surface to dissolve the silicate minerals into the ions that are eventually precipitated as carbonates.
-Volcanism continued, however, releasing $\mathrm{CO_2}$ from the interior at roughly its normal rate.
-With the source running and the sink shut down, atmospheric $\mathrm{CO_2}$ accumulated until it reached the present level of $\sim 92$ bar.
-In the absence of subduction, even if the weathering sink were somehow restored (by a hypothetical re-watering of the planet), there would be no return leg to recycle the carbon back to the mantle, and the system would not relax to a thermostat-controlled steady state.
+When Venus lost its surface liquid water, the silicate weathering sink stopped operating because dissolving silicate minerals to precipitate carbonates requires water.
+Volcanism continued releasing $\mathrm{CO_2}$ from the interior.
+With the source active and the sink shut down, atmospheric $\mathrm{CO_2}$ accumulated to the present level of $\sim 92$ bar.
+In the absence of subduction, Venus also lacks a return leg to recycle crustal carbon back into the mantle.
 
-The arithmetic of the carbon inventory is striking.
-Earth's total surface and crustal carbon, including the carbonate platforms accumulated over $\sim$540 Myr of marine biology, is on the order of $10^{20}$ kg of carbon, equivalent to a $\mathrm{CO_2}$ partial pressure of order $\sim 100$ bar if it were all in the atmosphere {cite:p}`Catling2017`.
-Venus' atmospheric $\mathrm{CO_2}$ inventory of $92$ bar is comparable to this number.
-The implication is that Earth and Venus probably acquired roughly similar amounts of carbon during accretion, and the difference is in where it ended up.
-On Earth, almost all of the carbon is in the crustal carbonates and the deep mantle reservoir; in the atmosphere only a few hundred ppm.
-On Venus, almost all of the carbon is in the atmosphere.
-This is the central comparative result of the lecture: **the difference between Earth and Venus is not how much carbon they have, but how the carbon is distributed**, and the distribution is set by whether the carbonate-silicate cycle is operating or has failed.
+Earth and Venus acquired similar amounts of carbon during accretion, but the carbon is distributed differently.
+Earth's crustal and surface carbon reservoir totals on the order of $10^{20}$ kg, equivalent to $\sim 100$ bar of atmospheric $\mathrm{CO_2}$ {cite:p}`Catling2017`.
+Venus holds a comparable inventory of $92$ bar entirely in its atmosphere.
+On Earth, almost all carbon is stored in crustal carbonates and the mantle, leaving only a few hundred ppm in the atmosphere.
+On Venus, cycle failure has left nearly all carbon in the atmosphere.
 
-The irreversibility of the failure is what makes Venus a cautionary tale.
-There is no thermodynamic path from the present Venus atmosphere back to a wet, Earth-like state; even if some unknown mechanism removed all of the atmospheric $\mathrm{CO_2}$, the resulting planet would still lack a surface ocean, would still have a stagnant lid, and would lack the geochemical machinery to maintain a habitable surface.
-Once a planet drops below the inner habitable zone edge in the runaway sense, it does not climb back out without an external rescue.
-The carbonate-silicate thermostat that protects Earth is not infinitely robust; it is a feedback that operates within a specific set of conditions, and outside those conditions, it breaks irreversibly.
+This cycle failure is irreversible.
+There is no thermodynamic path back to an Earth-like state because Venus lacks surface oceans, plate tectonics, and geochemical recycling.
+Once runaway greenhouse conditions push a planet past the inner edge of the habitable zone, it cannot recover.
+The carbonate-silicate thermostat operates only within bounded conditions, outside of which it breaks irreversibly.
 
 ### What this means for habitability
 
-The traditional concept of the **habitable zone** as a fixed annulus around a star, defined by the orbital distances at which an Earth-like planet could host liquid surface water, is a useful first cut but it is not enough.
-For one thing, the boundaries of the zone evolve with the host star's luminosity over its main-sequence lifetime (the inner edge moves outward as the star brightens).
-For another, whether a planet is habitable at any given moment depends on its history: a planet that was once inside the runaway greenhouse limit and lost its water cannot become habitable again just because the inner edge later sweeps past it as the star ages.
-The habitable zone is not a region in space but a region in **history**, and the relevant calculation is not "is this planet inside the habitable zone today" but "does the integrated history of this planet's solar flux, water inventory, and feedback systems leave it in a habitable state today". A useful comparison is the TRAPPIST-1 system placed alongside the inner Solar System in the plane of density vs stellar illumination ({numref}`fig:trappist1`): three TRAPPIST-1 planets sit within the classical habitable zone today, but whether they actually retain surface water depends on their integrated histories, exactly as for Venus.
+The **habitable zone** is classically defined as the range of orbital distances where an Earth-like planet can support liquid surface water.
+However, stellar luminosity increases over time, shifting the inner edge outward.
+A planet that enters a runaway greenhouse and loses its water cannot become habitable again later simply because stellar conditions evolve.
+Habitability is therefore determined by the integrated history of solar flux, water inventory, and feedback systems rather than instantaneous orbital location ({numref}`fig:trappist1`).
 
 ```{figure} figures/nasa_trappist1_solarsystem_comparison.avif
 :name: fig:trappist1
@@ -1027,27 +902,22 @@ Whether any of these planets actually retain surface water depends on their hist
 Image credit: NASA/JPL-Caltech.
 ```
 
-Earth and Venus exemplify this distinction.
-Earth sits comfortably inside the inner edge of the long-term habitable zone, and the carbonate-silicate thermostat has kept it habitable throughout its history.
-Venus sits outside the inner edge today and (depending on which scenario you favour) either was always outside or crossed it at some point in the past.
-A few percent change in solar flux, or a slightly different impact history, would have shifted the dividing line.
-The Earth-Venus contrast is not the result of a deep, predictable physical law that says "Earth-like planets at $1$ AU are habitable and Venus-like planets at $0.7$ AU are not"; it is the result of a sensitive balance between radiative input, water inventory, tectonic regime, and biospheric feedback.
-When we apply the lessons of Earth and Venus to exoplanets, the message is that **single-snapshot habitable zone arguments are insufficient** and that climate-evolution models that follow a planet through its full history are essential.
-This is the agenda we will pursue in {ref}`Lecture 13 <lecture13>`.
+Earth and Venus exemplify this principle.
+Earth remains habitable inside the inner edge because the carbonate-silicate thermostat has regulated its climate, whereas Venus sits outside the inner edge today and either was always outside it or crossed it at some point in the past.
+The contrast between Earth at $1$ AU and Venus at $0.7$ AU is the result of a sensitive balance between radiative input, water inventory, tectonic regime, and biospheric feedback.
+Applying these lessons to exoplanets requires climate-evolution models that follow a planet through its full history, which is the focus of {ref}`Lecture 13 <lecture13>`.
 
 ### Recent advances and upcoming missions
 
-The 2030s will be a decisive decade for Venus science, with three new orbital missions and at least one in-situ probe planned.
-**NASA's DAVINCI** (Deep Atmosphere Venus Investigation of Noble gases, Chemistry, and Imaging) is expected to launch in $2029$--$2030$ and will release an instrumented descent probe into the atmosphere of Venus to measure noble gas isotopic abundances, atmospheric chemistry, and surface morphology during the descent.
-The noble gas measurements are particularly important: they provide the time-integrated record of atmospheric escape that should distinguish between the early-loss and late-loss scenarios for Venus' water history.
-**NASA's VERITAS** (Venus Emissivity, Radio Science, InSAR, Topography, and Spectroscopy) is currently scheduled for launch no earlier than $2031$ and will provide global high-resolution radar topography and near-infrared surface emissivity, which will resolve the tessera composition question and constrain the present-day style of mantle convection through high-precision measurement of the moment of inertia and the tidal Love numbers.
-**ESA's EnVision** is expected to launch in November $2031$ and combines synthetic-aperture radar at multiple frequencies, atmospheric spectroscopy, and a subsurface radar sounder; its science goals include searching for ongoing volcanism, mapping near-surface water (if any), characterising the radar properties of tessera regions, and measuring the gravity field at unprecedented resolution.
+The 2030s will see three new orbital missions and one in-situ descent probe to Venus.
+NASA's DAVINCI is scheduled to launch in $2029$--$2030$ and will send an instrumented probe into the atmosphere to measure noble gas isotopic abundances and atmospheric chemistry.
+These noble gas measurements record atmospheric escape over time, distinguishing between early-loss and late-loss scenarios for Venus' water history.
+NASA's VERITAS, launching no earlier than $2031$, will obtain global radar topography and near-infrared surface emissivity to determine tessera composition and constrain mantle convection through the tidal Love numbers and moment of inertia.
+ESA's EnVision is expected to launch in $2031$, combining synthetic-aperture radar, atmospheric spectroscopy, and a subsurface sounder to search for active volcanism, characterise tessera regions, and map the gravity field.
 
-
-In parallel, theoretical modelling is advancing rapidly: 3D climate models of early Venus {cite:p}`Way2016,Turbet2021`, coupled magma-ocean atmosphere-interior models {cite:p}`Hamano2013,Gillmann2022`, and thermo-chemical models of the long-term atmospheric evolution {cite:p}`Lammer2018,Gillmann2022` are converging on a coherent picture of how the early divergence of Earth and Venus could have happened and what observations would distinguish the remaining alternatives.
-A separate active research front is the search for biosignatures in the Venus cloud layer: the temperature and pressure conditions at $50$-$60$ km altitude are similar to surface Earth conditions, and the question of whether Venus could harbour an aerial biosphere there has been an open one since the original Sagan and Morowitz proposal in $1967$.
-The phosphine controversy of $2020$ ({ref}`Lecture 6 <lecture06>`) brought this question briefly into the spotlight, and although the original detection has been contested, the question itself remains and will be addressed by the new missions.
-
+In parallel, 3D climate models and coupled magma-ocean interior models are clarifying how Earth and Venus diverged early in their history {cite:p}`Turbet2021,Gillmann2022`.
+Another active area of research is the search for biosignatures in the Venus cloud layer at $50$-$60$ km altitude, where temperature and pressure conditions match surface Earth conditions.
+Although the $2020$ detection of phosphine ({ref}`Lecture 6 <lecture06>`) remains contested, the possibility of an aerial biosphere first proposed in $1967$ will be tested by upcoming missions.
 
 ## Summary and takeaways
 
@@ -1079,7 +949,6 @@ What we learn from Venus directly informs our framework for assessing exoplanet 
 **Key physics takeaway**: The Simpson-Nakajima limit is a thermodynamic boundary in phase space, not a model artefact. It defines the irreversible threshold beyond which the runaway greenhouse drives a wet planet to a dry, hot end state, and Venus is the textbook example.
 
 **Key comparative takeaway**: Earth's long-term habitability rests on a coupled set of feedbacks (carbonate-silicate cycle, plate tectonics, biosphere, dynamo) that all require liquid water and active volcanism to operate. Loss of any one of these feedbacks risks losing the others; Earth has been lucky, and Venus shows what happens when you are not.
-
 
 ## References
 

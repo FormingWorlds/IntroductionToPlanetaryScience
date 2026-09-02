@@ -1372,3 +1372,32 @@ Open:
 - The solar constant is `S_\oplus` in WS03 and the notes and `S_0` in WS05, WS06, ML06 and the mock exams. Pick one.
 - L05 notes use `T_eff` where the worksheets use `T_eq` for the equilibrium temperature.
 - CI runs neither the worksheet checkers nor the LaTeX builds; a wrong number or a broken frame is only caught on a local `make`.
+
+## 14. Notes length and level across the second half (2026-09-02)
+
+The chapters for L04 and L09 to L14 are shortened to the length and register of L01 to L08, the target style for a second-year BSc course. Every equation, figure, cross-reference and scientific statement of the long versions is kept; the cut removes repeated explanations, historical asides, and citation strings that supported a single sentence with three or four references.
+
+| Chapter | Words before | Words now | Ratio | Citations before | Citations now |
+|---|---|---|---|---|---|
+| L04 | 14830 | 9409 | 0.63 | 118 | 100 |
+| L09 | 17784 | 11612 | 0.65 | 114 | 100 |
+| L10 | 17593 | 11003 | 0.63 | 107 | 95 |
+| L11 | 14424 | 9173 | 0.64 | 86 | 80 |
+| L12 | 18684 | 12019 | 0.64 | 121 | 115 |
+| L13 | 18290 | 11549 | 0.63 | 110 | 102 |
+| L14 | 15315 | 9929 | 0.65 | 116 | 111 |
+
+Word counts include the MyST directives, captions and math; the prose itself is cut harder than the ratio suggests. For comparison, L01 has 8461 words and L05 has 9501.
+
+Conventions that hold in all chapters:
+
+- Hedging follows the evidence: an observation is stated flatly, an interpretation or a model prediction stays hedged ("suggests", "is consistent with"). A cut never turns one into the other.
+- En dashes appear only inside numeric ranges (40–90 Myr); compound terms use a hyphen (metal-silicate, core-mantle, Hf-W).
+- The spelling is sulfur, sulfide, sulfate.
+- Animated figures (gif, avif) stay, since they show motion that a still image cannot.
+- No filler transitions ("Furthermore", "Moreover") and no em dashes in prose.
+
+Open:
+
+- The sentence lengths in L09, L10 and L11 vary less than in L01 to L08; a read-through that splits or joins a few sentences per section would restore the rhythm.
+- The Scooter drift direction (L11) and the Ceres share of the belt mass (L12) are still the two values with conflicting literature support; see §12.
