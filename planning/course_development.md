@@ -1367,10 +1367,15 @@ Minilectures:
 
 Everywhere: the spelling is sulfur, sulfide, sulfate.
 
+Settled:
+
+- The solar constant is `S_\oplus` in every document (notes, WS03, WS05, WS06, ML06 and the three mock exams).
+- Frames that ran over the page are fixed in ML02 (`\small` on the radiogenic-clock frame), ML07 (`\small` and shorter bullets on the roadmap, P4 and P5 frames), L11 (the Scooter frame) and L13 (the PDS 70 hero image at `\linewidth`, shorter K2-18 b and LIFE bullets).
+  L01 is locked and keeps its one overfull frame.
+
 Open:
 
-- The solar constant is `S_\oplus` in WS03 and the notes and `S_0` in WS05, WS06, ML06 and the mock exams. Pick one.
-- L05 notes use `T_eff` where the worksheets use `T_eq` for the equilibrium temperature.
+- The L05, L06 and L13 notes call the equilibrium temperature `T_eff` (13, 1 and 2 uses); L09, L14 and the worksheets call it `T_eq`. The physics is the same quantity in each case, so this is a naming choice, not an error.
 - CI runs neither the worksheet checkers nor the LaTeX builds; a wrong number or a broken frame is only caught on a local `make`.
 
 ## 14. Notes length and level across the second half (2026-09-02)

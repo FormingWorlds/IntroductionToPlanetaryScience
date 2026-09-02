@@ -29,8 +29,8 @@
 
 % ── Roadmap ─────────────────────────────────────────────────
 \begin{frame}{What Worksheet 7 trains}
+  \small
   Five problems, all built on Lectures 13--14. The physics you need, per problem:
-  \vskip4pt\relax
   \begin{enumerate}
     \item \textbf{Transits}: the depth $(R_p/R_\star)^2$, the geometric probability $R_\star/a$, why the catalogue is biased.
     \item \textbf{Radial velocities}: the semi-amplitude $K_\star$, from 51 Peg b to the Earth analogue, mass plus radius gives density.
@@ -38,7 +38,6 @@
     \item \textbf{The habitable zone}: equilibrium temperature, the Kopparapu flux limits, scaling to K and M dwarfs.
     \item \textbf{Direct imaging and Drake}: angular separations and contrast, the log-uniform Drake toy model.
   \end{enumerate}
-  \vskip2pt\relax
   \keyresult{Every problem has the shape and level of one exam question. All parts are analytical; no computer is needed.}
 \end{frame}
 
@@ -118,16 +117,16 @@
       \boxed{T_\mathrm{eq} = \left[\frac{L_\star(1-A_\mathrm{B})}{16\pi\sigma\epsilon d^2}\right]^{1/4}} \quad d = \sqrt{\frac{L_\star/\Lsun}{S_\mathrm{eff}}}\ \mathrm{AU}
     \]
     \begin{itemize}
-      \item Earth: $T_\mathrm{eq} \approx 255$ K; the $33$ K to the observed $288$ K is the greenhouse effect.
-      \item The Sun's zone spans $0.97$ to $1.69$ AU; at TRAPPIST-1 it shrinks to a few hundredths of an AU.
+      \item Earth: $T_\mathrm{eq} \approx 255$ K; the greenhouse effect adds $33$ K.
+      \item Sun: $0.97$ to $1.69$ AU; TRAPPIST-1: a few hundredths of an AU.
     \end{itemize}
 
     \column{0.44\textwidth}
     \begin{block}{Small stars, mixed blessing}
-      M dwarfs offer deep transits and long lifetimes, but their habitable-zone planets are tidally locked, baked during the pre-main-sequence phase, and flared for Gyr. K dwarfs may be the best compromise.
+      M dwarfs give deep transits and long lifetimes, but their habitable-zone planets are tidally locked, baked in the pre-main-sequence phase and flared for Gyr. K dwarfs may be the compromise.
     \end{block}
   \end{columns}
-  \keyresult{The habitable zone moves as $\sqrt{L_\star}$ while stellar lifetime grows as $M^{-2.5}$: the trade-offs are quantitative, not rhetorical.}
+  \keyresult{The habitable zone moves as $\sqrt{L_\star}$, the stellar lifetime as $M^{-2.5}$: the trade-offs are quantitative.}
 \end{frame}
 
 % ── P5 ──────────────────────────────────────────────────────
@@ -140,16 +139,16 @@
       \boxed{\theta[\mathrm{arcsec}] = \frac{a[\mathrm{AU}]}{d[\mathrm{pc}]}}
     \]
     \begin{itemize}
-      \item An Earth analogue at $10$ pc sits at $0.1$ arcsec but at $10^{-10}$ contrast: the contrast is the blocker, not the angle.
-      \item The M-dwarf habitable zone collapses to milliarcseconds: imaging and transits divide the sky between stellar types.
+      \item An Earth analogue at $10$ pc: $0.1$ arcsec at $10^{-10}$ contrast. The contrast is the blocker, not the angle.
+      \item The M-dwarf habitable zone collapses to milliarcseconds: imaging and transits split the sky by stellar type.
     \end{itemize}
 
     \column{0.44\textwidth}
     \begin{block}{Drake as a framing tool}
-      With four factors log-uniform over ten decades, $\log_{10} N$ has mean $-20$ and $\sigma \approx 5.8$: the output restates the priors. ``We are alone in the galaxy'' is fully consistent with current knowledge.
+      Four factors log-uniform over ten decades give $\log_{10} N$ a mean of $-20$ and $\sigma \approx 5.8$: the output restates the priors, and ``we are alone'' is consistent with current knowledge.
     \end{block}
   \end{columns}
-  \keyresult{Direct imaging is a contrast problem; the Drake equation is a map of ignorance, and both statements are quantitative.}
+  \keyresult{Direct imaging is a contrast problem; the Drake equation is a map of ignorance.}
 \end{frame}
 
 % ── Closer ──────────────────────────────────────────────────

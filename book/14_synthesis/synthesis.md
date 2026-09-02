@@ -411,10 +411,10 @@ $$
 The planet absorbs a fraction $(1 - A_B)$ of the incident flux, where $A_B$ is the Bond albedo. For a fast-rotating spherical planet, the absorbed power per unit area, averaged over the whole planet, is $(1 - A_B) F_\star / 4$, because the projected area is $\pi R_p^2$ but the radiating area is $4\pi R_p^2$. Equating absorbed and emitted power gives the equilibrium temperature
 
 $$
-T_{\rm eq}(d) = \left[\frac{L_\star (1 - A_B)}{16\pi\sigma\epsilon d^2}\right]^{1/4}\,,
+T_{\mathrm{eq}}(d) = \left[\frac{L_\star (1 - A_B)}{16\pi\sigma\epsilon d^2}\right]^{1/4}\,,
 $$
 
-where $\epsilon$ is the effective emissivity of the atmosphere (which in the bare-rock limit is $1$) and $\sigma$ is the Stefan-Boltzmann constant. For Earth around the Sun, plugging in $A_B \approx 0.3$, $\epsilon \approx 1$, $L_\star = \Lsun$, and $d = 1$ AU gives $T_{\rm eq} \approx 255$ K. The actual surface temperature is $\sim 288$ K because the greenhouse effect adds $\sim 33$ K.
+where $\epsilon$ is the effective emissivity of the atmosphere (which in the bare-rock limit is $1$) and $\sigma$ is the Stefan-Boltzmann constant. For Earth around the Sun, plugging in $A_B \approx 0.3$, $\epsilon \approx 1$, $L_\star = \Lsun$, and $d = 1$ AU gives $T_{\mathrm{eq}} \approx 255$ K. The actual surface temperature is $\sim 288$ K because the greenhouse effect adds $\sim 33$ K.
 
 **Effective stellar flux scaling.** The cleanest way to express habitable-zone boundaries is in terms of the **effective stellar flux** $S_{\rm eff}$, defined as the top-of-atmosphere stellar flux at the HZ boundary divided by Earth's present TOA flux $S_\oplus = 1361$ W/m$^2$. Because $F_{\rm TOA} = L_\star / (4\pi d^2)$, the orbital distance corresponding to a given $S_{\rm eff}$ is
 
