@@ -40,9 +40,9 @@ jobs:
       - name: Check figure collisions
         run: python scripts/figures/check_figure_collisions.py
 
-  check-exams:
+  check-numbers:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -51,13 +51,22 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install checker dependencies
+        # the worksheet 4 checker imports the Lecture 7 chronology figure script
+        run: pip install "matplotlib==3.11.1" numpy scipy
+
       - name: Check exam arithmetic
         # stdlib-only scripts that recompute every number printed on each exam sheet
         run: |
           for f in scripts/exams/check_*.py; do python "$f"; done
 
+      - name: Check worksheet arithmetic
+        # each script recomputes every number printed on its sheet and exits nonzero on a mismatch
+        run: |
+          for f in scripts/worksheets/check_*.py; do python "$f"; done
+
   build:
-    needs: [check-figures, check-exams]
+    needs: [check-figures, check-numbers]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
