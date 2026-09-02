@@ -623,8 +623,8 @@ Cumulative size-frequency distribution of near-Earth objects as a function of ab
 
 To order of magnitude, the rates are:
 
-- **10 m diameter** ($\sim$10 kt energy): roughly once per year, mostly as harmless airbursts in the upper atmosphere.
-- **20 m diameter** ($\sim$0.5 Mt): once per decade or so. The 2013 Chelyabinsk event ({numref}`fig:l12-chelyabinsk`) was a 19 m object that entered the atmosphere at $\sim 18^{\circ}$ and produced an airburst peaking near 30 km altitude, releasing $\sim 500 \pm 100$ kt of TNT-equivalent energy, shattering windows over a wide area and injuring about 1,500 people {cite:p}`Brown2013`.
+- **10 m diameter** ($\sim$100 kt energy): roughly once per decade, mostly as harmless airbursts in the upper atmosphere.
+- **20 m diameter** ($\sim$0.5 Mt): once per few decades to a century. The 2013 Chelyabinsk event ({numref}`fig:l12-chelyabinsk`) was a 19 m object that entered the atmosphere at $\sim 18^{\circ}$ and produced an airburst peaking near 30 km altitude, releasing $\sim 500 \pm 100$ kt of TNT-equivalent energy, shattering windows over a wide area and injuring about 1,500 people {cite:p}`Brown2013`.
 - **50 m diameter** ($\sim 10$ Mt): once per few millennia. The 1908 Tunguska event ({numref}`fig:l12-tunguska`) was an airburst of approximately this energy that flattened $\sim 2{,}000$ km$^2$ of Siberian forest.
 - **140 m diameter** (PHA threshold, $\sim$300 Mt): once per $\sim 30{,}000$ years. Capable of regional devastation.
 - **1 km diameter** ($\sim 10^5$ Mt): once per $\sim 500{,}000$ years. Capable of global climate disruption (the "civilisation-ending" threshold).

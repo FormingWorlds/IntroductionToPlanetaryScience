@@ -128,7 +128,7 @@ $$
 \kappa = \frac{k}{\rho c_p}
 $$ (eq:thermal-diffusivity)
 
-where $\rho$ is the density and $c_p$ is the specific heat capacity. Typical values for silicate rock are $k \approx 3$–$4$ W m$^{-1}$ K$^{-1}$ and $\kappa \approx 10^{-6}$ m$^2$ s$^{-1}$.
+where $\rho$ is the density and $c_p$ is the specific heat capacity. Typical values for silicate rock are $k \approx 3$–$5$ W m$^{-1}$ K$^{-1}$ and $\kappa \approx 10^{-6}$ m$^2$ s$^{-1}$.
 
 Conduction is inherently a **diffusive** process, slow and inefficient over large distances. As we will show in the blackboard derivation, the time for heat to conduct through a distance $L$ scales as $L^2/\kappa$, which becomes enormous for planet-sized bodies.
 
@@ -495,7 +495,7 @@ Surface heat flux $q$ as a function of seafloor age. The half-space cooling mode
 | Earth | ~90 | ~47 | Radiogenic + primordial |
 | Moon | ~10–15 | ~0.3 | Primordial (largely cooled) |
 | Mars | ~15–25 (estimated) | ~2–4 | Radiogenic + primordial |
-| Io | ~2000–2500 | ~100 | Tidal dissipation |
+| Io | ~2000–2500 | ~105 | Tidal dissipation |
 
 The Moon and Mars have much lower surface heat flow than Earth, which reflects their smaller sizes (faster cooling through their conductive cooling timescale), the absence of plate tectonics (stagnant lid), and their smaller inventories of heat-producing elements. Io stands out dramatically: its surface heat flux is 20–30 times higher than Earth's, entirely driven by tidal heating. NASA's InSight mission ({numref}`fig:insight-mars`) recently provided the first direct seismological constraints on Mars's interior, including the radius of its core ({ref}`Lecture 10 <lecture10>`).
 

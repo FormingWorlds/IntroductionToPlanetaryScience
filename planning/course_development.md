@@ -1324,3 +1324,19 @@ IntroductionToPlanetaryScience-private/
 2. ✅ Cloned locally to `~/git/IntroductionToPlanetaryScience-private/`.
 3. ✅ Initial commit: README.md (scope + access policy + cross-repo conventions), `.gitignore` (LaTeX build artifacts, audio + video binaries, `gdrive-*` symlinks), directory scaffold (`exams/midterm`, `exams/final`, `narration/lecture01..14`, `tools/`) with `.gitkeep` placeholders, `narration/README.md` documenting the per-machine Google Drive symlink convention.
 4. ✅ `CLAUDE.md` in this public repo updated with the "Companion private repository" section listing five hard rules: no exam content here, no narration audio/video here, no slide PDFs copied across, single shared `references.bib`, single-owner private repo.
+
+## 12. Numbers reconciled between notes and slides (2026-09-02)
+
+Where the lecture notes and the slides quoted different values for the same quantity, one value now stands in both, chosen from the primary source. The notes are the anchor unless the slide value had the better source.
+
+- L03: Mars heat loss 2 to 4 TW (from 15 to 25 mW m$^{-2}$); Io 105 TW (Veeder et al. 2004) in both; upper-mantle adiabat 0.3 to 0.5 K/km; rock conductivity 3 to 5 W m$^{-1}$ K$^{-1}$ in the notes.
+- L05: mean molecular weight of dry air 28.97 g/mol.
+- L08: inner-core density jump about 5% (PREM), not 30%.
+- L09: geodynamo active since at least 3.45 Ga (Tarduno et al. 2010); critical distance 0.77 AU (Hamano et al. 2013); SMOW D/H $1.56 \times 10^{-4}$; EnVision launch November 2031; Magellan 1990 to 1994, Venus Express 2006 to 2014; Venus crater-retention age 150 to 250 Myr with the older 300 to 1000 Myr range noted; $T_\mathrm{eq}$ 227 K; Venus turns 243 times slower than Earth.
+- L10: Mercury core mass fraction about 74%; InSight ScS reflections give a core radius of about 1830 km; faint young Sun 25% less luminous at 4 Ga.
+- L11: Saturn and Neptune equatorial jets both about 400 m s$^{-1}$; Europa ice shell 6 to 25 km; Scooter drift about 100 m s$^{-1}$ westward in the System III frame.
+- L12: Ceres about 40% of a $4 \times 10^{-4}$ Earth-mass belt; impactor bins 10 m (about 100 kt, once per decade) and 20 m (about 0.5 Mt, once per few decades to a century); Psyche 222 km; Pluto 1187 km and 1860 kg m$^{-3}$; $^{26}$Al half-life 0.717 Myr; 2I/Borisov CO/H$_2$O at least 173% (Bodewits et al. 2020, HST/COS with Swift water rates).
+- L13: $\eta_\oplus$ 0.2 to 0.9 with a central 0.4 (Bryson et al. 2021); K2-18b DMS at or below 2$\sigma$; WASP-43b one transit and two eclipses; HR 8799 age 30 to 60 Myr; $\beta$ Pic b about 9 $M_\mathrm{Jup}$ at about 9 AU.
+- L14: K-dwarf main-sequence lifetimes 17 to 70 Gyr, 24 Gyr for $\epsilon$ Eri; LHS 3844b dayside 503 K against a 508 K bare-rock prediction.
+
+Open: the Venera mission dates in L09 and the L04 lunar-crust wording still differ between notes and slides and are left for the content trim.

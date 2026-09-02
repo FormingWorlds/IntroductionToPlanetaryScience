@@ -294,14 +294,14 @@ The current sensitivity of direct imaging is dominated by the planet's brightnes
 Young giant planets, $\lesssim 100$ Myr old, are still radiating away the gravitational binding energy of their formation and are luminous in the infrared.
 Old planets, like Jupiter, have cooled and emit a thousand times less.
 The directly imaged planet population is therefore strongly biased toward young (10--500 Myr), massive ($> 1\,\Mjup$), wide-orbit ($> 10$ AU) giants around nearby stars.
-Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 60$ Myr (formal range $30$--$160$ Myr) {cite:p}`Marois2008` ({numref}`fig:hr8799`), **$\beta$ Pictoris b/c** orbiting an A6V star embedded in the famous debris disk, a ring of leftover dust and planetesimals (system age $\sim 12$--$23$ Myr from successive Beta Pictoris Moving Group calibrations; planet b reported by {cite:t}`Lagrange2010` and planet c, first found in radial velocity data, later imaged interferometrically by {cite:t}`Nowak2020`) ({numref}`fig:betapic`), **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
+Notable systems include **HR 8799**, with four giant planets around a young A-type star whose age is best estimated at $\sim 30$--$60$ Myr {cite:p}`Marois2008` ({numref}`fig:hr8799`), **$\beta$ Pictoris b/c** orbiting an A6V star embedded in the famous debris disk, a ring of leftover dust and planetesimals (system age $\sim 12$--$23$ Myr from successive Beta Pictoris Moving Group calibrations; planet b reported by {cite:t}`Lagrange2010` and planet c, first found in radial velocity data, later imaged interferometrically by {cite:t}`Nowak2020`) ({numref}`fig:betapic`), **51 Eridani b**, and the youngest system of all, **PDS 70 b/c**.
 
 ```{figure} figures/betapic_imaging.avif
 :align: center
 :name: fig:betapic
 :width: 80%
 
-The first ground-based direct image of $\beta$ Pictoris b, a $\sim 9\pm 3\,\Mjup$ planet (hot-start models) at $\sim 8$--$15$ AU from the central young A-type star. The two epochs (2003 left, 2009 right) show clear orbital motion in the projected sky position, decisively confirming a bound companion rather than a chance alignment. From {cite:t}`Lagrange2010`. The same star hosts an extensively imaged debris disk and a second giant planet (c), discovered later on a closer orbit at $\sim 2.7$ AU, interior to planet b.
+The first ground-based direct image of $\beta$ Pictoris b, a $\sim 9\pm 3\,\Mjup$ planet (hot-start models) at $\sim 9$ AU from the central young A-type star. The two epochs (2003 left, 2009 right) show clear orbital motion in the projected sky position, decisively confirming a bound companion rather than a chance alignment. From {cite:t}`Lagrange2010`. The same star hosts an extensively imaged debris disk and a second giant planet (c), discovered later on a closer orbit at $\sim 2.7$ AU, interior to planet b.
 ```
 
 PDS 70 deserves a special mention because it is the first system in which a planet was unambiguously detected **inside the gap of a still-present protoplanetary disk** {cite:p}`Keppler2018,Haffert2019`.
