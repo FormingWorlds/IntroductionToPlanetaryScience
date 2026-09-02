@@ -227,18 +227,25 @@
 
 % Source/credit line for figures
 \newcommand{\source}[1]{\par\vspace{-4pt}{\tiny\color{ipsText!60} Credit: #1}}
+\newcommand{\sourcenote}[1]{{\tiny\color{ipsText!60} Source: #1}}
 
 % ── Break slide ─────────────────────────────────────────────
 % Reusable break slide (Earthrise, Apollo 8 — NASA, public domain)
-\newcommand{\breakslide}{%
+\newcommand{\breakslide}[1][]{%
+  \def\ips@breaktext{#1}%
   \begin{frame}[plain,noframenumbering]
     \begin{tikzpicture}[remember picture, overlay]
       \ipscontain{break_background}
       \fill[black, opacity=0.30] (current page.north west) rectangle (current page.south east);
-      % Break text
-      \node[anchor=center] at (current page.center) {%
-        {\color{white}\LARGE\bfseries Break}%
+      % Break text, with the optional part transition set below it
+      \node[anchor=center, text=white] at (current page.center) {%
+        {\LARGE\bfseries Break}%
       };
+      \ifx\ips@breaktext\@empty\else
+        \node[anchor=north, align=center, text=white] at ([yshift=-14pt]current page.center) {%
+          \normalsize\ips@breaktext
+        };
+      \fi
       % Image credit
       \node[anchor=south east, inner sep=0pt] at ([xshift=-6pt, yshift=4pt]current page.south east) {%
         {\tiny\color{white!60} Earthrise, Apollo 8 (1968). Credit: NASA}%

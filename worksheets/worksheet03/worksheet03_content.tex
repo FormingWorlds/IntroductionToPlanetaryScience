@@ -20,7 +20,7 @@ $S_\oplus = 1361\ \mathrm{W\,m^{-2}}$ (solar constant at 1 AU) \quad
 $\Mearth = 5.972 \times 10^{24}\ \mathrm{kg}$
 
 \vskip4pt
-Earth: $P_0 = 1.013 \times 10^{5}$ Pa, $\Rearth = 6371$ km, $T_{\mathrm{eff}} = 255$ K, surface $288$ K, $\Omega = 7.29 \times 10^{-5}\ \mathrm{rad\,s^{-1}}$, $\Gamma_d = 9.8\ \mathrm{K\,km^{-1}}$
+Earth: $P_0 = 1.013 \times 10^{5}$ Pa, $\Rearth = 6371$ km, $T_{\mathrm{eq}} = 255$ K, surface $288$ K, $\Omega = 7.29 \times 10^{-5}\ \mathrm{rad\,s^{-1}}$, $\Gamma_d = 9.8\ \mathrm{K\,km^{-1}}$
 
 \vskip4pt
 Water: $L_v = 2.50 \times 10^{6}\ \mathrm{J\,kg^{-1}}$, $R_v = 462\ \mathrm{J\,kg^{-1}\,K^{-1}}$ ($L_v/R_v = 5400$ K), triple point $(273\ \mathrm{K},\ 611\ \mathrm{Pa})$
@@ -62,6 +62,7 @@ H_{\mathrm{Titan}} &= \frac{1.381 \times 10^{-23} \times 94}{28.6 \times 1.661 \
 = \frac{1.2981 \times 10^{-21}}{6.4131 \times 10^{-26}} = 20241\ \mathrm{m} \approx 20.24\ \mathrm{km},
 \end{align*}
 matching the table in the Lecture 5 notes (8.4 and 20 km).
+\answer{$H_\oplus \approx 8.426\ \mathrm{km}$ and $H_{\mathrm{Titan}} \approx 20.24\ \mathrm{km}$, matching the $8.4$ and $20\ \mathrm{km}$ in the Lecture 5 notes.}
 \end{solution}
 
 \parti Titan is far colder than Earth, and its nitrogen atmosphere has nearly the same $\mu$ as air.
@@ -73,6 +74,7 @@ Titan's temperature is lower by a factor of about 3 ($94$ vs $288$ K), which by 
 But Titan's surface gravity is weaker by a factor of about 7 ($1.35$ vs $9.81\ \mathrm{m\,s^{-2}}$), and $H \propto T/g$ with $\mu$ essentially equal for the two nitrogen atmospheres.
 The gravity ratio wins: $(288/94) \approx 3.1$ against $(9.81/1.35) \approx 7.3$, so $H_{\mathrm{Titan}}/H_\oplus \approx 7.3/3.1 \approx 2.4$.
 Weak confinement, not warmth, is what puffs up Titan's atmosphere.
+\answer{$H \propto T/g$: the gravity ratio $(9.81/1.35 \approx 7.3)$ dominates over the temperature ratio $(288/94 \approx 3.1)$, so $H_{\mathrm{Titan}}/H_\oplus \approx 7.3/3.1 \approx 2.4$. Weak confinement, not warmth, puffs up Titan's atmosphere.}
 \end{solution}
 
 \parti Integrate hydrostatic balance $\dd P = -\rho g\,\dd z$ over the whole column to show that
@@ -83,19 +85,20 @@ and from it the total mass of Earth's atmosphere.
 
 \begin{solution}
 Integrating from the surface to the top of the atmosphere, where $P \to 0$:
-$$
+\[
 P_0 - 0 = \int_0^{\infty} \rho g\,\dd z = g \int_0^{\infty} \rho\,\dd z = g\,m_{\mathrm{col}},
-$$
+\]
 with $g$ taken constant over the thin atmospheric shell. Therefore
-$$
+\[
 m_{\mathrm{col}} = \frac{P_0}{g} = \frac{1.013 \times 10^{5}}{9.81} = 1.0326 \times 10^{4}\ \mathrm{kg\,m^{-2}},
-$$
+\]
 about ten tonnes of air on every square metre.
 The total atmospheric mass is the column mass times the surface area:
-$$
-M_{\mathrm{atm}} = 4\pi \Rearth^2\,m_{\mathrm{col}} = 4\pi\,(6.371 \times 10^{6})^2 \times 1.033 \times 10^{4} = 5.269 \times 10^{18}\ \mathrm{kg},
-$$
+\[
+M_{\mathrm{atm}} = 4\pi \Rearth^2\,m_{\mathrm{col}} = 4\pi\,(6.371 \times 10^{6})^2 \times 1.0326 \times 10^{4} = 5.267 \times 10^{18}\ \mathrm{kg},
+\]
 about one millionth of Earth's mass.
+\answer{$m_{\mathrm{col}} = 1.0326 \times 10^{4}\ \mathrm{kg\,m^{-2}}$ and $M_{\mathrm{atm}} = 5.267 \times 10^{18}\ \mathrm{kg}$, about one millionth of Earth's mass.}
 \end{solution}
 
 
@@ -107,23 +110,24 @@ the greenhouse effect explains why surfaces are warmer than that.
 
 \parti Compute the solar flux at Venus's orbit,
 then the equilibrium temperature of Venus,
-$$
+\[
 T_{\mathrm{eq}} = \left[\frac{(1 - A)\,S}{4\sigma}\right]^{1/4},
-$$
+\]
 and compare it with the value in the Lecture 5 notes.
 
 \begin{solution}
 The flux falls off with the inverse square of distance:
-$$
+\[
 S_{\mathrm{Venus}} = \frac{S_\oplus}{(0.72)^2} = \frac{1361}{0.5184} = 2625.4\ \mathrm{W\,m^{-2}}.
-$$
+\]
 With $A = 0.77$:
-$$
+\[
 T_{\mathrm{eq}} = \left[\frac{0.23 \times 2625.4}{4 \times 5.670 \times 10^{-8}}\right]^{1/4}
-= \left[2.6624 \times 10^{9}\ \mathrm{K^4}\right]^{1/4} = 227.2\ \mathrm{K},
-$$
+= \left[2.6624 \times 10^{9}\ \mathrm{K}^4\right]^{1/4} = 227.2\ \mathrm{K},
+\]
 matching the notes' 227 K. Venus's brilliant clouds reflect so much sunlight that its equilibrium
 temperature is lower than Earth's 255 K, despite Venus being closer to the Sun.
+\answer{$S_{\mathrm{Venus}} = 2625.4\ \mathrm{W\,m^{-2}}$ and $T_{\mathrm{eq}} = 227.2\ \mathrm{K}$, matching the notes' $227\ \mathrm{K}$: Venus reflects so much sunlight that its equilibrium temperature is lower than Earth's $255\ \mathrm{K}$.}
 \end{solution}
 
 \parti Venus's measured surface temperature is 737 K, more than 500 K above the value you just computed.
@@ -139,6 +143,7 @@ To push the same absorbed solar power out through this blanket, the surface must
 which by the Stefan-Boltzmann law means it must be far hotter.
 The equilibrium temperature still describes what the planet radiates to space, but that radiation now
 leaves from cold, high atmospheric layers rather than from the ground.
+\answer{The 92-bar $\mathrm{CO_2}$ atmosphere blocks outgoing thermal infrared from the surface, forcing the ground to radiate far more strongly and heat up to push the absorbed solar flux to space.}
 \end{solution}
 
 \parti A fellow student writes: ``back-radiation from the atmosphere is a second energy source,
@@ -154,6 +159,7 @@ Every joule still originates from the Sun, and at the top of the atmosphere abso
 outgoing infrared balance exactly.
 Energy is conserved at every level; the greenhouse effect only slows the escape of energy and raises the
 temperature the surface needs to pass its share outward.
+\answer{False: the atmosphere is not a new energy source but recycles energy originally radiated by the surface, conserving energy at every level while slowing its escape to space.}
 \end{solution}
 
 
@@ -176,24 +182,25 @@ of the cloud base. Take the vapour pressure as constant during ascent.
 
 \begin{solution}
 First the saturation pressure at the surface temperature:
-$$
+\[
 P_{\mathrm{sat}}(293) = 611\,\exp\!\left[-5400\left(\frac{1}{293} - \frac{1}{273}\right)\right]
 = 611\,\exp(1.3502) = 2357\ \mathrm{Pa},
-$$
+\]
 so at 50\% relative humidity $P_{\mathrm{vap}} = 0.5 \times 2357 = 1179$ Pa (checkpoints match).
 The dew point is the temperature at which this vapour pressure saturates. Inverting the Clausius-Clapeyron equation:
-$$
+\[
 \frac{1}{T_d} = \frac{1}{273} - \frac{\ln(P_{\mathrm{vap}}/611)}{5400}
 = 3.6630 \times 10^{-3} - \frac{\ln(1.9296)}{5400} = 3.5413 \times 10^{-3}\ \mathrm{K^{-1}},
-$$
+\]
 so $T_d = 282.4$ K, matching the checkpoint. Rising air cools at $\Gamma_d = 9.8\ \mathrm{K\,km^{-1}}$
 while its vapour pressure stays nearly constant, so condensation begins where the parcel temperature
 meets the dew point:
-$$
+\[
 z_{\mathrm{LCL}} = \frac{T - T_d}{\Gamma_d} = \frac{293 - 282.4}{9.8} = 1.082\ \mathrm{km}.
-$$
+\]
 This is the lifting condensation level, and it sits exactly in the 1--2 km range the notes quote for
 Earth's typical cloud base.
+\answer{$P_{\mathrm{vap}} = 1179\ \mathrm{Pa}$, $T_d = 282.4\ \mathrm{K}$, and $z_{\mathrm{LCL}} = 1.082\ \mathrm{km}$, sitting in the typical $1$--$2\ \mathrm{km}$ range for Earth's cloud base.}
 \end{solution}
 
 \parti Read the saturation-curve figure: a body with a solid surface has regions at $90$ K where one
@@ -211,6 +218,7 @@ have no solid surface at these levels: the body with a surface is Titan.
 The given-data table quotes 94 K for Titan's mean surface; the methane curve is so flat that both 90 and
 94 K sit within a factor of two of saturation for a $\sim$0.1 bar methane partial pressure, which is
 exactly why methane there cycles between vapour, rain, and lakes.
+\answer{The species is $\mathrm{CH_4}$ and the body is Titan: methane is at saturation near $10^4\ \mathrm{Pa}$ at $90\ \mathrm{K}$, driving Titan's methane cycle of vapour, rain, and lakes.}
 \end{solution}
 
 \parti The Lecture 6 notes state that Venus's sulfuric-acid cloud base is sharply defined, while Titan's
@@ -228,6 +236,7 @@ For $\mathrm{CH_4}$, the low $L_v/R_v$ makes the curve flat: methane vapour stay
 over a wide range of temperatures, so modest cooling anywhere in Titan's troposphere can push it over
 the line, and clouds can appear across many kilometres of altitude.
 One equation, two extremes of its exponential sensitivity.
+\answer{A large $L_v/R_v$ makes the saturation curve steep and the $\mathrm{H_2SO_4}$ cloud base sharp, whereas a low $L_v/R_v$ for $\mathrm{CH_4}$ allows condensation across many kilometres of altitude.}
 \end{solution}
 
 
@@ -237,26 +246,28 @@ One equation, two extremes of its exponential sensitivity.
 Rotation organises all large-scale flow.
 Here you quantify it for the air above the Netherlands, then judge a claim.
 
-\parti Compute the Coriolis parameter $f = 2\Omega\sin\phi$ for Groningen ($\phi = 53^\circ$N).
+\parti Compute the Coriolis parameter $f = 2\Omega\sin\phi$ for Groningen ($\phi = 53^\circ\mathrm{N}$).
 
 \begin{solution}
-$$
+\[
 f = 2 \times 7.29 \times 10^{-5} \times \sin 53^\circ = 1.458 \times 10^{-4} \times 0.79864
 = 1.164 \times 10^{-4}\ \mathrm{s^{-1}}.
-$$
+\]
 The associated timescale $1/f \approx 2.4$ hours: any motion lasting longer
 than a few hours feels the rotation.
+\answer{$f = 1.164 \times 10^{-4}\ \mathrm{s^{-1}}$, giving an inertial timescale $1/f \approx 2.4\ \mathrm{hours}$ beyond which motions feel planetary rotation.}
 \end{solution}
 
 \parti A low-pressure system 2000 km across has winds of $15\ \mathrm{m\,s^{-1}}$.
 Compute its Rossby number and state which force balance governs the flow.
 
 \begin{solution}
-$$
+\[
 \mathrm{Ro} = \frac{U}{f L} = \frac{15}{1.164 \times 10^{-4} \times 2.0 \times 10^{6}} = 0.064.
-$$
+\]
 Since $\mathrm{Ro} \ll 1$, rotation dominates over inertia and the system is in geostrophic balance:
 the pressure gradient force is balanced by the Coriolis force.
+\answer{$\mathrm{Ro} = 0.064 \ll 1$: rotation dominates over inertia, putting the system in geostrophic balance where the pressure gradient force balances the Coriolis force.}
 \end{solution}
 
 \parti A fellow student writes: ``Venus rotates 243 times more slowly than Earth, so the Coriolis force
@@ -267,10 +278,11 @@ Judge this claim.
 The premise is right and the conclusion is backwards.
 Weak rotation means a weak Coriolis force, and it is the Coriolis deflection that breaks the
 equator-to-pole overturning into separate cells: on Earth it halts the Hadley circulation near
-30$^\circ$ and forces the three-cell structure.
+$30^\circ$ and forces the three-cell structure.
 With almost no deflection, Venus's overturning runs uninterrupted from equator to pole: one giant Hadley
 cell per hemisphere, fewer cells, not more.
 Many alternating cells are the signature of fast rotators such as Jupiter.
+\answer{False: weak Coriolis deflection allows overturning to run uninterrupted from equator to pole in one giant Hadley cell per hemisphere, creating fewer cells than Earth, not more.}
 \end{solution}
 
 
@@ -290,14 +302,15 @@ and state the paradox this number creates
 when combined with the geological record.
 
 \begin{solution}
-Effective temperature scales as the fourth root of the absorbed flux, so
-$$
-T_{\mathrm{eff}} = 255 \times (0.71)^{1/4} = 255 \times 0.91794 = 234.1\ \mathrm{K}.
-$$
+The equilibrium temperature scales as the fourth root of the absorbed flux, so
+\[
+T_{\mathrm{eq}} = 255 \times (0.71)^{1/4} = 255 \times 0.91794 = 234.1\ \mathrm{K}.
+\]
 With a greenhouse like today's ($+33$ K), the mean surface would sit near
 $267$ K, well below freezing, and the oceans should have been ice.
 Yet zircons, pillow basalts, and stromatolites record liquid water and life throughout the Archean.
 A frozen prediction against a wet record: this is the faint young Sun paradox.
+\answer{$T_{\mathrm{eq}} = 234.1\ \mathrm{K}$ implies a frozen surface near $267\ \mathrm{K}$ (with a $+33\ \mathrm{K}$ greenhouse), contradicting Archean geological evidence of liquid water and life (the faint young Sun paradox).}
 \end{solution}
 
 \parti Read the bistability figure: identify which of the three intersections are stable and which is
@@ -314,6 +327,7 @@ further; the imbalance grows until the climate lands at the stable warm state at
 The same nudge cooler would run away into the snowball.
 One incoming sunlight curve therefore supports two possible Earths, and history decides which one you
 inhabit.
+\answer{The outer crossings at $250\ \mathrm{K}$ (snowball) and $287\ \mathrm{K}$ (warm state) are stable, while the middle crossing at $267\ \mathrm{K}$ is unstable; a warm nudge from $267\ \mathrm{K}$ runs away to the stable warm state at $287\ \mathrm{K}$.}
 \end{solution}
 
 \parti A large volcanic province doubles the volcanic $\mathrm{CO_2}$ outgassing rate for a few million
@@ -330,6 +344,7 @@ state is only modestly warmer, with weathering again matching the (elevated) out
 On Mars the loop is broken at its source: volcanism largely ceased about 3 Gyr ago, so there is no
 carbon resupply, and whatever $\mathrm{CO_2}$ weathering and escape removed was never returned.
 A thermostat needs both a working sink and a working source; Mars kept neither.
+\answer{Elevated $\mathrm{CO_2}$ warms Earth and speeds silicate weathering to bury carbonate until balance is restored; on Mars volcanism ceased about $3\ \mathrm{Gyr}$ ago, breaking the carbon source.}
 \end{solution}
 
 \parti A fellow student proposes: ``the faint young Sun paradox is solved because the early Earth had
@@ -346,4 +361,5 @@ The notes' albedo contribution to resolving the paradox rests exactly on this: a
 area (plus possibly fewer clouds) lowered the early Earth's albedo and helped the fainter Sun keep the
 surface unfrozen, alongside the dominant contribution from a stronger $\mathrm{CO_2}$ and $\mathrm{CH_4}$
 greenhouse.
+\answer{Both halves are wrong: early Earth had less land, not more, and ocean is darker than land, so smaller continental area lowered the planetary albedo.}
 \end{solution}

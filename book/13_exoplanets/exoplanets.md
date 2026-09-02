@@ -850,7 +850,7 @@ The JWST/NIRSpec PRISM transmission spectrum of **WASP-39 b**, from Figure 4 of 
 The most striking discovery in the WASP-39 b ERS data was the identification of the $4$ $\mu$m feature as **photochemically produced $\mathrm{SO_2}$** {cite:p}`Tsai2023`.
 $\mathrm{SO_2}$ is not predicted by any equilibrium chemistry model for a hot Jupiter atmosphere.
 Fits to the data that assume a vertically constant mixing ratio give $\approx 1$--$10$ ppm from PRISM and $\approx 2.5$--$4.6$ ppm from G395H, while the photochemical models peak at $10$--$100$ ppm between $0.01$ and $1$ mbar; the column above $10$ mbar agrees between the two, so the vertically constant assumption understates the peak.
-Either way the abundance requires a non-equilibrium production pathway driven by stellar UV photolysis of $\mathrm{H_2S}$, followed by oxidation of the resulting atomic sulphur to SO and then $\mathrm{SO_2}$.
+Either way the abundance requires a non-equilibrium production pathway driven by stellar UV photolysis of $\mathrm{H_2S}$, followed by oxidation of the resulting atomic sulfur to SO and then $\mathrm{SO_2}$.
 This is the first **photochemical product identified in any exoplanet atmosphere**, and it establishes that photochemical models, calibrated against $\mathrm{SO_2}$ as a tracer, can be used to extract metallicity and C/O ratios from a wider planet sample ({numref}`fig:wasp39so2`).
 The individual significances are modest, $2.7\sigma$ in PRISM and $4.8\sigma$ in G395H, so the strength of the case rests on two instruments seeing the same feature at the same wavelength and on four independent photochemistry codes reproducing it.
 
@@ -859,7 +859,7 @@ The individual significances are modest, $2.7\sigma$ in PRISM and $4.8\sigma$ in
 :name: fig:wasp39so2
 :width: 90%
 
-Terminator-averaged theoretical transmission spectra of WASP-39 b from photochemical models, from Figure 3 of {cite:t}`Tsai2023`. Every panel plots transit depth in per cent against wavelength in $\mu$m, and each panel shows the same four photochemistry codes, VULCAN (blue), KINETICS (orange), ARGO (green), and ATMO (red). The panels differ by wavelength range and by the data they are compared against. Panel a is the NIRSpec PRISM measurement (grey points), panel b the NIRSpec G395H measurement, and panel c the existing HST and VLT/FORS2 optical data, where the dashed blue curve is the same VULCAN model run without sulphur species and shows how much of the near-ultraviolet opacity the sulphur chemistry supplies. Panel d is a prediction rather than a comparison: the MIRI range from $5$ to $15$ $\mu$m, with the grey curve the VULCAN model with $\mathrm{SO_2}$ removed, so the separation between grey and coloured is the $\mathrm{SO_2}$ contribution. All four codes reproduce the strength and the shape of the $4.05$ $\mu$m $\mathrm{SO_2}$ feature, and all predict stronger $\mathrm{SO_2}$ bands near $7.5$ and $8.7$ $\mu$m that MIRI can reach.
+Terminator-averaged theoretical transmission spectra of WASP-39 b from photochemical models, from Figure 3 of {cite:t}`Tsai2023`. Every panel plots transit depth in per cent against wavelength in $\mu$m, and each panel shows the same four photochemistry codes, VULCAN (blue), KINETICS (orange), ARGO (green), and ATMO (red). The panels differ by wavelength range and by the data they are compared against. Panel a is the NIRSpec PRISM measurement (grey points), panel b the NIRSpec G395H measurement, and panel c the existing HST and VLT/FORS2 optical data, where the dashed blue curve is the same VULCAN model run without sulfur species and shows how much of the near-ultraviolet opacity the sulfur chemistry supplies. Panel d is a prediction rather than a comparison: the MIRI range from $5$ to $15$ $\mu$m, with the grey curve the VULCAN model with $\mathrm{SO_2}$ removed, so the separation between grey and coloured is the $\mathrm{SO_2}$ contribution. All four codes reproduce the strength and the shape of the $4.05$ $\mu$m $\mathrm{SO_2}$ feature, and all predict stronger $\mathrm{SO_2}$ bands near $7.5$ and $8.7$ $\mu$m that MIRI can reach.
 ```
 
 ```{figure} figures/wasp39b_alderson_species.avif
@@ -937,7 +937,7 @@ This is a useful case study in how challenging it is to claim atmospheric detect
 
 **K2-18 b** is the case study that has drawn the most attention, and the most controversy.
 It is a sub-Neptune of $2.6\,\Rearth$ and $8.6\,\Mearth$ in the habitable zone of an M3 host star.
-{cite:t}`Madhusudhan2023` reported a JWST NIRISS plus NIRSpec transmission spectrum showing detections of $\mathrm{CH_4}$ and $\mathrm{CO_2}$, and a marginal detection of **dimethyl sulphide** ($\mathrm{(CH_3)_2 S}$, DMS) at the $\sim 2\sigma$ level (significance dropping further when retrieval-pipeline detector offsets are allowed to float).
+{cite:t}`Madhusudhan2023` reported a JWST NIRISS plus NIRSpec transmission spectrum showing detections of $\mathrm{CH_4}$ and $\mathrm{CO_2}$, and a marginal detection of **dimethyl sulfide** ($\mathrm{(CH_3)_2 S}$, DMS) at the $\sim 2\sigma$ level (significance dropping further when retrieval-pipeline detector offsets are allowed to float).
 On Earth, DMS is produced almost exclusively by marine phytoplankton, with no significant abiotic sources known.
 The Madhusudhan et al.\ team interpreted the detection as a tentative biosignature consistent with the **hycean** scenario discussed earlier: a sub-Neptune with a deep $\mathrm{H_2}$ atmosphere overlying a planet-wide liquid-water ocean at the base ({numref}`fig:k218b`).
 
@@ -946,7 +946,7 @@ The Madhusudhan et al.\ team interpreted the detection as a tentative biosignatu
 :name: fig:k218b
 :width: 90%
 
-JWST transmission spectrum of **K2-18 b** from {cite:t}`Madhusudhan2023`, combining NIRISS SOSS and NIRSpec G395H data. The black points are the data and the colour-coded model spectrum shows contributions from $\mathrm{CH_4}$, $\mathrm{CO_2}$, and tentatively dimethyl sulphide (DMS). The $\mathrm{CH_4}$ and $\mathrm{CO_2}$ detections are robust; the DMS feature is at the edge of the JWST sensitivity floor and is heavily dependent on the retrieval assumptions. The interpretation is contested.
+JWST transmission spectrum of **K2-18 b** from {cite:t}`Madhusudhan2023`, combining NIRISS SOSS and NIRSpec G395H data. The black points are the data and the colour-coded model spectrum shows contributions from $\mathrm{CH_4}$, $\mathrm{CO_2}$, and tentatively dimethyl sulfide (DMS). The $\mathrm{CH_4}$ and $\mathrm{CO_2}$ detections are robust; the DMS feature is at the edge of the JWST sensitivity floor and is heavily dependent on the retrieval assumptions. The interpretation is contested.
 ```
 
 The community response was swift and largely sceptical.
@@ -1003,7 +1003,7 @@ The classical answer is that life produces **disequilibrium gas combinations** t
 On Earth, the simultaneous presence of substantial $\mathrm{O_2}$ ($\sim 21\%$ of the atmosphere) and $\mathrm{CH_4}$ ($\sim 1.8$ ppm) is the canonical example: $\mathrm{O_2}$ and $\mathrm{CH_4}$ react with each other photochemically in a few decades, so their joint presence in the modern atmosphere requires both gases to be replenished by living systems ($\mathrm{O_2}$ by oxygenic photosynthesis, $\mathrm{CH_4}$ by methanogenesis and biomass-mediated processes).
 On the early Earth, before the Great Oxidation Event around 2.4 Ga, the analogous disequilibrium combination would have been $\mathrm{CH_4}$ + $\mathrm{N_2O}$ or $\mathrm{CH_4}$ + $\mathrm{CO_2}$ in a low-$\mathrm{O_2}$ atmosphere.
 
-The catalogue of "classical biosignature gases" therefore includes $\mathrm{O_2}$, $\mathrm{O_3}$ (which is photochemically derived from $\mathrm{O_2}$ and easier to detect spectroscopically at some wavelengths), $\mathrm{CH_4}$, $\mathrm{N_2O}$, and a longer list of organosulphur and organohalogen compounds.
+The catalogue of "classical biosignature gases" therefore includes $\mathrm{O_2}$, $\mathrm{O_3}$ (which is photochemically derived from $\mathrm{O_2}$ and easier to detect spectroscopically at some wavelengths), $\mathrm{CH_4}$, $\mathrm{N_2O}$, and a longer list of organosulfur and organohalogen compounds.
 A single gas, in isolation, almost never constitutes a biosignature: the question is whether the combination of detected gases is consistent with any plausible abiotic source.
 
 The big problem with biosignature detection is **false positives**.

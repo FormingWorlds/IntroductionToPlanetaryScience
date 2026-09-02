@@ -14,9 +14,9 @@ All parts are analytical; no computer is needed.
 
 \begin{given}[Constants and data]
 $\sigma = 5.670 \times 10^{-8}\ \mathrm{W\,m^{-2}\,K^{-4}}$,\quad
-$k_B = 1.381 \times 10^{-23}\ \mathrm{J\,K^{-1}}$,\quad
+$\kB = 1.381 \times 10^{-23}\ \mathrm{J\,K^{-1}}$,\quad
 $G = 6.674 \times 10^{-11}\ \mathrm{m^3\,kg^{-1}\,s^{-2}}$,\quad
-$u = 1.661 \times 10^{-27}$ kg,\quad
+$m_u = 1.661 \times 10^{-27}$ kg,\quad
 $S_0 = 1361\ \mathrm{W\,m^{-2}}$ (at $1$ AU)
 
 \vskip4pt
@@ -34,7 +34,7 @@ Mercury: $R = 2440$ km, spin period $P_\mathrm{rot} = 58.65$ d, orbital period $
 Phobos: orbital radius $a = 9376$ km
 
 \vskip4pt
-Relative molecular masses (in $u$): H $= 1$, H$_2 = 2$, CO$_2 = 44$
+Relative molecular masses (in units of $m_u$): H $= 1$, H$_2 = 2$, CO$_2 = 44$
 
 \vskip4pt
 {\footnotesize Atmospheric and escape data as in the Lecture 9 and 10 notes. A global equivalent layer (GEL) is the depth of a uniform global water layer holding a given mass; take Earth's ocean as $\approx 2700$ m GEL and Venus's current atmospheric water as $\approx 0.02$ m GEL.}
@@ -54,17 +54,18 @@ so $T_\mathrm{eq} = \left[S(1-A)/4\sigma\right]^{1/4}$.
 Compute Earth's equilibrium temperature.
 
 \begin{solution}
-$$
+\[
 T_\mathrm{eq} = \left[\frac{S_0(1-A)}{4\sigma}\right]^{1/4}
 = \left[\frac{1361 \times 0.70}{4 \times 5.670\times10^{-8}}\right]^{1/4}
 = \left[\frac{952.70}{2.2680\times10^{-7}}\right]^{1/4},
-$$
+\]
 which gives
-$$
+\[
 T_\mathrm{eq} = \left(4.2006\times10^{9}\right)^{1/4} = 254.58\ \mathrm{K} \approx 255\ \mathrm{K}.
-$$
+\]
 The factor of $4$ is the ratio of the sphere's surface area to its intercepting disc:
 the planet catches sunlight on a disc of area $\pi R^2$ and radiates from the whole sphere of area $4\pi R^2$.
+\answer{$T_\mathrm{eq} = 254.58\ \mathrm{K} \approx 255\ \mathrm{K}$; the factor of $4$ accounts for intercepting solar flux on area $\pi R^2$ while radiating over the entire sphere $4\pi R^2$.}
 \end{solution}
 
 \parti A single infrared-opaque layer in radiative equilibrium re-radiates downward as well as upward,
@@ -75,35 +76,37 @@ Show that $T_s = 2^{1/4}\,T_\mathrm{eq}$, evaluate it for Earth, and compare wit
 The opaque layer absorbs the surface infrared and re-emits $\sigma T_a^4$ both up and down.
 Radiative equilibrium at the top of the atmosphere requires $T_a = T_\mathrm{eq}$,
 and the surface then receives the absorbed sunlight plus the downward emission, $2\sigma T_\mathrm{eq}^4$, giving
-$$
+\[
 T_s = 2^{1/4}\,T_\mathrm{eq} = 1.18921 \times 254.58 = 302.75\ \mathrm{K}.
-$$
+\]
 The one-layer model over-predicts the observed $288$ K by about $15$ K.
 A single fully opaque layer is too strong a greenhouse for Earth, whose atmosphere is only partly opaque in the infrared.
 The model captures the mechanism, downward re-radiation warming the surface above $T_\mathrm{eq}$, but not the magnitude.
+\answer{$T_s = 302.75\ \mathrm{K}$, which over-predicts the observed $288\ \mathrm{K}$ by about $15\ \mathrm{K}$ because Earth's atmosphere is only partly opaque in the infrared.}
 \end{solution}
 
 \parti Compute Venus's equilibrium temperature from its own albedo and insolation,
 compare it with Earth's, and state the greenhouse warming $\Delta T = T_\mathrm{surf} - T_\mathrm{eq}$ for each planet.
 
 \begin{solution}
-$$
+\[
 T_\mathrm{eq}^\mathrm{Venus} = \left[\frac{1.91 \times 1361 \times (1 - 0.77)}{4 \times 5.670\times10^{-8}}\right]^{1/4}
 = \left[\frac{2599.5 \times 0.23}{2.2680\times10^{-7}}\right]^{1/4},
-$$
+\]
 so
-$$
+\[
 T_\mathrm{eq}^\mathrm{Venus} = \left(2.6362\times10^{9}\right)^{1/4} = 226.59\ \mathrm{K} \approx 227\ \mathrm{K}.
-$$
+\]
 Venus's equilibrium temperature is lower than Earth's ($227$ against $255$ K), even though Venus is closer to the Sun,
 because its bright clouds reflect $77\%$ of the incident sunlight.
 The greenhouse warmings are
-$$
+\[
 \Delta T_\mathrm{Earth} = 288 - 254.58 = 33.42\ \mathrm{K},
 \qquad
 \Delta T_\mathrm{Venus} = 737 - 226.59 = 510.41\ \mathrm{K}.
-$$
+\]
 The two planets have similar equilibrium temperatures but greenhouse effects that differ by a factor of fifteen.
+\answer{$T_\mathrm{eq}^\mathrm{Venus} = 226.59\ \mathrm{K} \approx 227\ \mathrm{K}$ (below Earth's $255\ \mathrm{K}$); greenhouse warmings are $\Delta T_\mathrm{Earth} = 33.42\ \mathrm{K}$ and $\Delta T_\mathrm{Venus} = 510.41\ \mathrm{K}$, differing by a factor of fifteen.}
 \end{solution}
 
 \parti A fellow student writes: ``Venus is hotter than Earth mainly because it is closer to the Sun.''
@@ -118,6 +121,7 @@ $\Delta T_\mathrm{Venus} = 510$ K against Earth's $33$ K.
 Proximity changes the equilibrium temperature between the two planets by less than $30$ K;
 the greenhouse effect changes the surface temperature by nearly $500$ K.
 Venus is hot because of its atmosphere, not its orbit.
+\answer{False: Venus is hot because of its atmosphere, not its orbit; $T_\mathrm{eq} = 227\ \mathrm{K}$ is cooler than Earth's $255\ \mathrm{K}$, while greenhouse warming provides $\Delta T_\mathrm{Venus} = 510\ \mathrm{K}$ versus $33\ \mathrm{K}$ for Earth.}
 \end{solution}
 
 
@@ -133,39 +137,41 @@ Compute the absorbed solar flux per unit surface area, $F_\mathrm{abs} = S(1-A)/
 for a planet at Earth's orbit and for one at Venus's orbit.
 
 \begin{solution}
-$$
+\[
 F_\mathrm{abs}^\mathrm{Earth} = \frac{1361 \times 0.70}{4} = 238.18\ \mathrm{W\,m^{-2}},
 \qquad
 F_\mathrm{abs}^\mathrm{Venus} = \frac{1.91 \times 1361 \times 0.70}{4} = 454.91\ \mathrm{W\,m^{-2}}.
-$$
+\]
 At a common albedo the only difference is the insolation: Venus's orbit delivers $1.91$ times Earth's, so it absorbs $1.91$ times as much.
 This is the flux the atmosphere must radiate back to space to hold a steady temperature.
+\answer{$F_\mathrm{abs}^\mathrm{Earth} = 238.18\ \mathrm{W\,m^{-2}}$ and $F_\mathrm{abs}^\mathrm{Venus} = 454.91\ \mathrm{W\,m^{-2}}$; at equal albedo Venus absorbs $1.91$ times more flux purely due to its higher insolation.}
 \end{solution}
 
 \parti In a steam atmosphere the infrared photosphere forms where the overlying water-vapour column reaches optical depth of order unity,
 at pressure $p_\mathrm{phot} = g/\kappa$.
 Compute $p_\mathrm{phot}$, then use the integrated Clausius-Clapeyron relation
-$$
+\[
 \ln\!\frac{p}{p_0} = -\frac{L}{R_v}\left(\frac{1}{T} - \frac{1}{T_0}\right)
-$$
+\]
 to find the temperature at which saturated water vapour reaches this pressure.
 
 \begin{solution}
-$$
+\[
 p_\mathrm{phot} = \frac{g}{\kappa} = \frac{10}{5\times10^{-2}} = 200\ \mathrm{Pa}.
-$$
+\]
 Invert Clausius-Clapeyron for $T$ at $p = 200$ Pa, with $L/R_v = 2.5\times10^{6}/461 = 5423.0$ K:
-$$
+\[
 \frac{1}{T_\mathrm{phot}} = \frac{1}{T_0} - \frac{R_v}{L}\ln\!\frac{p_\mathrm{phot}}{p_0}
 = 3.6630\times10^{-3} - \frac{\ln(200/611)}{5423.0},
-$$
+\]
 which evaluates to
-$$
+\[
 \frac{1}{T_\mathrm{phot}} = 3.6630\times10^{-3} + 2.0593\times10^{-4} = 3.8689\times10^{-3}\ \mathrm{K^{-1}},
-$$
+\]
 so $T_\mathrm{phot} = 258.47\ \mathrm{K} \approx 258\ \mathrm{K}$.
 The photosphere temperature is fixed by the vapour-pressure curve alone: it does not depend on the surface temperature below it.
 This is the key to the runaway.
+\answer{$p_\mathrm{phot} = 200\ \mathrm{Pa}$ and $T_\mathrm{phot} = 258.47\ \mathrm{K} \approx 258\ \mathrm{K}$; the photosphere temperature is fixed entirely by the vapour-pressure curve and does not depend on the surface temperature below.}
 \end{solution}
 
 \parti The outgoing longwave radiation of the steam atmosphere cannot exceed the blackbody emission of its photosphere,
@@ -174,11 +180,11 @@ Compute this limit,
 compare it with the absorbed fluxes from part (a), and state which planet enters a runaway greenhouse.
 
 \begin{solution}
-$$
+\[
 F_\mathrm{OLR}^\mathrm{max} = \sigma T_\mathrm{phot}^4
 = 5.670\times10^{-8} \times (258.47)^4
 = 5.670\times10^{-8} \times 4.4631\times10^{9} = 253.06\ \mathrm{W\,m^{-2}}.
-$$
+\]
 The Earth-orbit planet absorbs $238\ \mathrm{W\,m^{-2}}$, below the ceiling, so it settles into a steady moist climate.
 The Venus-orbit planet absorbs $455\ \mathrm{W\,m^{-2}}$, above the ceiling:
 no surface temperature lets its atmosphere radiate away the absorbed sunlight,
@@ -187,6 +193,7 @@ This is the runaway greenhouse.
 The simple grey estimate places the limit at $253\ \mathrm{W\,m^{-2}}$;
 full radiative-convective models, and the Lecture 9 notes, give a somewhat higher value near $280\ \mathrm{W\,m^{-2}}$,
 but the conclusion is unchanged.
+\answer{$F_\mathrm{OLR}^\mathrm{max} = 253.06\ \mathrm{W\,m^{-2}}$: Earth ($238\ \mathrm{W\,m^{-2}}$) stays below the ceiling and remains stable, whereas Venus ($455\ \mathrm{W\,m^{-2}}$) exceeds it and enters a runaway greenhouse.}
 \end{solution}
 
 \parti Explain in words why the outgoing infrared flux of a steam atmosphere saturates at an upper limit,
@@ -201,6 +208,7 @@ The emitted flux $\sigma T_\mathrm{phot}^4$ therefore stops rising: it is capped
 The inner edge of the habitable zone is the orbit where the absorbed solar flux equals this cap.
 Inside it, absorbed sunlight always exceeds the maximum the atmosphere can radiate,
 so liquid water cannot persist and any ocean runs away.
+\answer{Water-vapour opacity fixes the photosphere pressure at $g/\kappa$ and its temperature via the vapour-pressure curve, capping OLR at the Simpson-Nakajima limit; inside the orbit where absorbed flux exceeds this cap, oceans run away.}
 \end{solution}
 
 \parti Venus's present albedo is $A = 0.77$, high enough that at its actual albedo it absorbs less than the limit you found in part (c).
@@ -211,9 +219,10 @@ Two points resolve the apparent tension.
 First, the runaway happened on a young Venus that still had liquid water and water clouds, with an albedo near Earth's $0.30$, not the present $0.77$.
 At that albedo Venus absorbed $455\ \mathrm{W\,m^{-2}}$, well above the ceiling, so the runaway was unavoidable.
 Second, the present high albedo is a consequence of the runaway, not a cause of cooling:
-the bright cloud deck is sulphuric acid, formed only after the surface water vaporised and the atmosphere transformed.
+the bright cloud deck is sulfuric acid, formed only after the surface water vaporised and the atmosphere transformed.
 By then the water had been photodissociated and its hydrogen lost to space, so a high albedo today cannot bring the oceans back.
 The albedo that decides whether a runaway starts is the one the planet has while it still holds water clouds. That albedo doomed Venus.
+\answer{The runaway occurred when young Venus had water clouds with $A \approx 0.30$ (absorbing $455\ \mathrm{W\,m^{-2}}$, above the ceiling); the current $A = 0.77$ is a consequence of the runaway from sulfuric acid clouds formed after water was lost.}
 \end{solution}
 
 
@@ -232,11 +241,12 @@ Take the measured enrichment $R/R_0 = 150$.
 
 \begin{solution}
 With $\alpha = 0.5$ the exponent is $\alpha - 1 = -0.5$, so
-$$
+\[
 f = (R/R_0)^{1/(\alpha - 1)} = 150^{-2} = 4.4444\times10^{-5}.
-$$
+\]
 Only about $4\times10^{-3}$ percent of Venus's original hydrogen is left:
 an enrichment of a factor of $150$ requires losing almost all of it.
+\answer{$f = 4.4444\times10^{-5}$ (about $4\times10^{-3}$ percent remains); producing a factor of $150$ deuterium enrichment requires losing almost all of Venus's original hydrogen.}
 \end{solution}
 
 \parti Convert to an initial water inventory in global-equivalent-layer depth,
@@ -244,12 +254,13 @@ and compare it with Earth's ocean.
 
 \begin{solution}
 The current inventory is the surviving fraction $f$ of the original, so
-$$
-d_\mathrm{init} = \frac{d_\mathrm{now}}{f} = \frac{0.02}{4.4444\times10^{-5}} = 450.00\ \mathrm{m\ GEL}.
-$$
+\[
+d_\mathrm{init} = \frac{d_\mathrm{now}}{f} = \frac{0.02}{4.4444\times10^{-5}} = 450.0\ \mathrm{m\ GEL}.
+\]
 This is about $450/2700 = 0.17$ of an Earth ocean: on this estimate early Venus held roughly a sixth of Earth's surface water.
 Because the escape may have been episodic, and some of the present water is juvenile or delivered by comets,
 this is best read as a lower bound of order $0.1$ Earth ocean.
+\answer{$d_\mathrm{init} = 450.0\ \mathrm{m\ GEL}$, which is about $0.17$ of an Earth ocean (roughly a sixth); this provides a lower bound of order $0.1$ Earth ocean on early Venus's water inventory.}
 \end{solution}
 
 \parti Explain physically why the water left behind is enriched in deuterium,
@@ -263,6 +274,7 @@ This is isotopic distillation, the same principle as boiling off a mixture and f
 As $f \to 0$ the Rayleigh law $R/R_0 = f^{\,\alpha - 1}$ diverges, because with $\alpha < 1$ the exponent is negative,
 so in the limit of near-total hydrogen loss the enrichment grows without bound.
 A large but finite enrichment therefore signals large, but not total, water loss.
+\answer{Heavier deuterium escapes less efficiently than hydrogen, concentrating in the residual reservoir by isotopic distillation; as $f \to 0$ enrichment grows without bound, so the finite enrichment indicates massive but incomplete water loss.}
 \end{solution}
 
 \parti A fellow student writes: ``The factor-of-$150$ enrichment proves Venus once had a full ocean like Earth's.''
@@ -278,6 +290,7 @@ so reaching the same enrichment demands losing far more water: $f$ falls to abou
 and the implied initial inventory rises to hundreds of Earth oceans, which is physically implausible.
 The enrichment therefore constrains only a lower bound on Venus's initial water, of order a tenth of an Earth ocean,
 and cannot by itself establish a full ocean; the upper end is set by the escape physics, not by the isotope ratio.
+\answer{False: the enrichment provides only a lower bound of order $0.17$ Earth ocean under efficient diffusion-limited escape ($\alpha = 0.5$), whereas weaker fractionation models require implausibly huge initial oceans.}
 \end{solution}
 
 
@@ -290,38 +303,40 @@ The Jeans parameter compares gravity's grip on a molecule to its thermal energy,
 \parti Compute the escape speed at Mars's exobase.
 
 \begin{solution}
-$$
+\[
 v_\mathrm{esc} = \sqrt{\frac{2GM}{r_\mathrm{exo}}}
 = \sqrt{\frac{2 \times 6.674\times10^{-11} \times 6.4\times10^{23}}{3.6\times10^{6}}}
 = \sqrt{\frac{8.5427\times10^{13}}{3.6\times10^{6}}},
-$$
+\]
 so
-$$
+\[
 v_\mathrm{esc} = \sqrt{2.3730\times10^{7}} = 4871.3\ \mathrm{m\,s^{-1}} \approx 4.9\ \mathrm{km\,s^{-1}}.
-$$
+\]
+\answer{$v_\mathrm{esc} = 4871.3\ \mathrm{m\,s^{-1}} \approx 4.9\ \mathrm{km\,s^{-1}}$ at Mars's exobase.}
 \end{solution}
 
-\parti The Jeans escape parameter for a molecule of mass $m$ is $\lambda = GMm/(k_B T_\mathrm{exo}\,r_\mathrm{exo})$,
+\parti The Jeans escape parameter for a molecule of mass $m$ is $\lambda = GMm/(\kB T_\mathrm{exo}\,r_\mathrm{exo})$,
 the ratio of gravitational to thermal energy at the exobase.
 Compute $\lambda$ for atomic hydrogen, molecular hydrogen, and carbon dioxide.
 
 \begin{solution}
 Compute the mass-independent group first:
-$$
-\frac{GM}{k_B T_\mathrm{exo}\,r_\mathrm{exo}}
+\[
+\frac{GM}{\kB T_\mathrm{exo}\,r_\mathrm{exo}}
 = \frac{6.674\times10^{-11} \times 6.4\times10^{23}}{1.381\times10^{-23} \times 270 \times 3.6\times10^{6}}
 = \frac{4.2714\times10^{13}}{1.3423\times10^{-14}} = 3.1820\times10^{27}\ \mathrm{kg^{-1}}.
-$$
-Multiplying by each molecular mass $m = (\text{relative mass}) \times u$:
-$$
+\]
+Multiplying by each molecular mass $m = (\text{relative mass}) \times m_u$:
+\[
 \lambda_\mathrm{H} = 3.1820\times10^{27} \times 1 \times 1.661\times10^{-27} = 5.2854,
-$$
-$$
+\]
+\[
 \lambda_{\mathrm{H_2}} = 2 \times 5.2854 = 10.571,
 \qquad
 \lambda_{\mathrm{CO_2}} = 44 \times 5.2854 = 232.56.
-$$
+\]
 The parameter scales linearly with molecular mass: heavier molecules are bound far more tightly.
+\answer{$\lambda_\mathrm{H} = 5.2854$, $\lambda_{\mathrm{H_2}} = 10.571$, and $\lambda_{\mathrm{CO_2}} = 232.56$; the Jeans escape parameter scales linearly with molecular mass, binding heavier species far more tightly.}
 \end{solution}
 
 \parti The Jeans escape flux carries a factor $(1 + \lambda)\,e^{-\lambda}$ and a thermal-speed factor $\propto m^{-1/2}$.
@@ -331,17 +346,18 @@ and state whether $\mathrm{CO_2}$ can escape thermally at all.
 \begin{solution}
 The exponential factors are $e^{-\lambda_\mathrm{H}} = e^{-5.2854} = 5.0651\times10^{-3}$
 and $e^{-\lambda_{\mathrm{H_2}}} = e^{-10.571} = 2.5656\times10^{-5}$. The flux ratio is
-$$
+\[
 \frac{\Phi_\mathrm{H}}{\Phi_{\mathrm{H_2}}}
 = \sqrt{\frac{m_{\mathrm{H_2}}}{m_\mathrm{H}}}\,\frac{(1 + \lambda_\mathrm{H})\,e^{-\lambda_\mathrm{H}}}{(1 + \lambda_{\mathrm{H_2}})\,e^{-\lambda_{\mathrm{H_2}}}}
 = \sqrt{2} \times \frac{6.2854 \times 5.0651\times10^{-3}}{11.571 \times 2.5656\times10^{-5}}
 = 1.4142 \times 107.25 = 151.67.
-$$
+\]
 Atomic hydrogen escapes about $150$ times faster than molecular hydrogen,
 both because it is lighter and, mostly, because its smaller Jeans parameter puts far more of the velocity tail above the escape speed.
 For carbon dioxide, $e^{-\lambda_{\mathrm{CO_2}}} = e^{-232.56} \approx 10^{-101}$:
 the thermal escape flux is zero for any practical purpose.
 Mars cannot lose $\mathrm{CO_2}$ by Jeans escape.
+\answer{$\Phi_\mathrm{H}/\Phi_{\mathrm{H_2}} = 151.67$ (about $150$), while for $\mathrm{CO_2}$ the factor $e^{-\lambda_{\mathrm{CO_2}}} \approx 10^{-101}$ means thermal Jeans escape is negligible.}
 \end{solution}
 
 \parti A fellow student writes: ``If Mars had kept a stronger magnetic field, it would have retained its $\mathrm{CO_2}$ atmosphere.''
@@ -359,6 +375,7 @@ A magnetic field does matter here, by deflecting the solar wind and reducing ion
 so a sustained field would have slowed the atmospheric loss.
 But the mechanism in the claim is wrong: a field acts on the non-thermal, solar-wind-driven loss of the upper atmosphere,
 not on a thermal escape of $\mathrm{CO_2}$ that never happened.
+\answer{False as stated: $\mathrm{CO_2}$ has too large a Jeans parameter to escape thermally regardless of a field, but a magnetic field would have slowed non-thermal solar-wind stripping and ion pickup.}
 \end{solution}
 
 
@@ -373,14 +390,15 @@ The length of a solar day, from noon to noon, satisfies $1/T_\mathrm{solar} = 1/
 Compute $T_\mathrm{solar}$ and express it in Mercury years.
 
 \begin{solution}
-$$
+\[
 \frac{1}{T_\mathrm{solar}} = \frac{1}{58.65} - \frac{1}{87.97}
 = 1.70503\times10^{-2} - 1.13675\times10^{-2} = 5.6828\times10^{-3}\ \mathrm{d^{-1}},
-$$
+\]
 so $T_\mathrm{solar} = 175.97$ d.
 This is almost exactly two Mercury years ($2 \times 87.97 = 175.94$ d).
 The spin and orbit are locked in a $3\!:\!2$ resonance, three rotations for every two orbits,
 so a solar day on Mercury lasts two of its years: the Sun rises, and the next sunrise comes two orbits later.
+\answer{$T_\mathrm{solar} = 175.97\ \mathrm{d}$, which equals almost exactly $2$ Mercury years ($175.94\ \mathrm{d}$) because Mercury is locked in a $3\!:\!2$ spin-orbit resonance.}
 \end{solution}
 
 \parti As Mercury's interior cooled, its radius shrank by $\Delta R \approx 7$ km.
@@ -389,14 +407,15 @@ and connect it to the lobate scarps seen across the surface.
 
 \begin{solution}
 For a sphere $A = 4\pi R^2$, so $\Delta A/A = 2\,\Delta R/R$:
-$$
+\[
 \frac{\Delta A}{A} = \frac{2 \times 7}{2440} = 5.7377\times10^{-3} \approx 0.57\%.
-$$
+\]
 The surface had to shrink by about half a percent, and a solid crust accommodates that only by breaking.
 The result is a global system of lobate scarps, thrust faults where one block of crust has been pushed up over another.
 Their near-random orientations show the contraction acted in all directions, as a global radius decrease requires,
 and their total shortening measures how much the interior has cooled since the crust formed.
 Mercury has a single, globally contracting lithosphere, in contrast to Earth's segmented plates.
+\answer{$\Delta A/A = 5.7377\times10^{-3} \approx 0.57\%$: global cooling caused Mercury's surface to contract by about half a percent, producing a global network of thrust-fault lobate scarps.}
 \end{solution}
 
 \parti Phobos orbits Mars at a radius of $9376$ km.
@@ -404,21 +423,22 @@ Compute its orbital period from Kepler's third law,
 compare it with Mars's rotation period of $24.62$ h, and state what this predicts for the moon's future.
 
 \begin{solution}
-$$
+\[
 T = 2\pi\sqrt{\frac{a^3}{GM}}
 = 2\pi\sqrt{\frac{(9.376\times10^{6})^3}{6.674\times10^{-11} \times 6.4\times10^{23}}}
 = 2\pi\sqrt{\frac{8.2424\times10^{20}}{4.2714\times10^{13}}},
-$$
+\]
 so
-$$
+\[
 T = 2\pi\sqrt{1.9297\times10^{7}} = 2.7601\times10^{4}\ \mathrm{s} = 7.667\ \mathrm{h}.
-$$
+\]
 Phobos completes an orbit in $7.7$ hours, far faster than Mars turns beneath it ($24.62$ h).
 It therefore orbits below the areostationary radius, sweeping ahead of the planet's rotation.
 The tidal bulge it raises on Mars lags behind it and pulls it backward, draining its orbital energy,
 so Phobos spirals inward.
 In a few tens of millions of years it will cross the Roche limit and break apart, or strike the surface:
 Phobos is a moon on its way down, the opposite of our own outward-migrating Moon.
+\answer{$T = 7.667\ \mathrm{h} \approx 7.7\ \mathrm{h}$, faster than Mars's rotation period of $24.62\ \mathrm{h}$; orbiting below the areostationary radius causes tidal torques to drain its orbital energy, spiraling Phobos inward.}
 \end{solution}
 
 \parti Mercury still has a magnetic field and a large iron core; Mars lost its field early and has a smaller core fraction.
@@ -434,4 +454,5 @@ Mercury is smaller still, but it is dense and iron-rich, so a large fraction of 
 that core has stayed partly liquid and convecting, and it still drives a magnetic field.
 Size sets the cooling rate, cooling sets the lifetime of the dynamo, and the dynamo, together with gravity, sets how much atmosphere a planet keeps:
 the same three factors, acting differently, produced Mercury and Mars.
+\answer{Size sets the cooling rate and dynamo lifetime: Mars cooled enough for its dynamo to shut down, exposing its atmosphere to solar-wind stripping, while Mercury's large iron core has maintained a magnetic field.}
 \end{solution}

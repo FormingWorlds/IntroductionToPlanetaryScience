@@ -27,7 +27,7 @@ silicate heat capacity $c_p = 1250\ \mathrm{J\,kg^{-1}\,K^{-1}}$
 \vskip6pt
 \begin{tabular}{@{}lccc@{}}
 \toprule
-Isotope & Half-life (Gyr) & Heat production (W per kg isotope) & BSE concentration \\
+Isotope & Half-life (Gyr) & Heat production (W\,kg$^{-1}$ of isotope) & BSE concentration \\
 \midrule
 ${}^{238}\mathrm{U}$  & $4.47$  & $9.5 \times 10^{-5}$ & $20\ \mathrm{ppb}$ \\
 ${}^{235}\mathrm{U}$  & $0.704$ & $5.7 \times 10^{-4}$ & $0.14\ \mathrm{ppb}$ \\
@@ -162,7 +162,7 @@ Compare with the critical value $\mathrm{Ra}_c \approx 1708$.
 \begin{solution}
 Numerator first:
 \[
-  \alpha\,\rho\,g\,\Delta T = 2 \times 10^{-5} \times 4000 \times 10 \times 2500 = 2000\ \mathrm{kg\,m^{-3}\,s^{-2}},
+  \alpha\,\rho\,g\,\Delta T = 2 \times 10^{-5} \times 4000 \times 10 \times 2500 = 2000\ \mathrm{kg\,m^{-2}\,s^{-2}},
   \qquad
   d^3 = (3 \times 10^{6})^3 = 2.7 \times 10^{19}\ \mathrm{m^3},
 \]
@@ -207,7 +207,7 @@ line from $\mathrm{Nu} \propto \mathrm{Ra}^{1/3}$ and $\mathrm{Ra} \propto \Delt
 parameters fixed). Writing $T$ for the mantle temperature contrast, energy
 conservation for the silicate shell then reads
 \[
-  C\,\frac{\mathrm{d}T}{\mathrm{d}t} = H(t) - Q(T),
+  C\,\frac{\dd T}{\dd t} = H(t) - Q(T),
   \qquad
   Q(T) = Q_0 \left(\frac{T}{T_0}\right)^{4/3},
   \qquad
@@ -224,7 +224,7 @@ multiplies it by Nu:
 \]
 $H(t)$ is the radiogenic heat input, a single exponential standing in for the summed decay
 of the four long-lived isotopes; $Q(T)$ is the convective heat loss through the surface,
-rising steeply with mantle temperature. The balance of the two drives $\mathrm{d}T/\mathrm{d}t$.
+rising steeply with mantle temperature. The balance of the two drives $\dd T/\dd t$.
 \answer{$Q \propto \Delta T^{4/3}$; heating in, parametrised convective cooling out.}
 \end{solution}
 
@@ -260,11 +260,11 @@ What does this limit say about how quickly a small, radiogenically dead body fad
 \begin{solution}
 With $H = 0$,
 \[
-  C\,\frac{\mathrm{d}T}{\mathrm{d}t} = -\frac{Q_0}{T_0^{4/3}}\,T^{4/3}.
+  C\,\frac{\dd T}{\dd t} = -\frac{Q_0}{T_0^{4/3}}\,T^{4/3}.
 \]
 Separate variables:
 \[
-  T^{-4/3}\,\mathrm{d}T = -\frac{Q_0}{C\,T_0^{4/3}}\,\mathrm{d}t
+  T^{-4/3}\,\dd T = -\frac{Q_0}{C\,T_0^{4/3}}\,\dd t
   \quad\Rightarrow\quad
   -3\,T^{-1/3} = -\frac{Q_0}{C\,T_0^{4/3}}\,t + \mathrm{const},
 \]
@@ -375,7 +375,7 @@ field $B(r) = B_0\,(R_p/r)^3$. Show that the standoff distance obeys
   r_\mathrm{mp} = R_p \left(\frac{B_0^{2}}{\mu_0\,\rho_\mathrm{sw} v_\mathrm{sw}^{2}}\right)^{1/6}.
 \]
 During a coronal mass ejection the solar-wind density rises tenfold at fixed speed.
-Starting from Earth's typical $r_\mathrm{mp} = 10\,R_\oplus$, compute the new standoff
+Starting from Earth's typical $r_\mathrm{mp} = 10\,\Rearth$, compute the new standoff
 distance.
 
 \begin{solution}
@@ -388,9 +388,9 @@ Insert the dipole law at $r = r_\mathrm{mp}$ into the pressure balance:
 which is the stated result after taking the sixth root. The standoff therefore scales as
 $\rho_\mathrm{sw}^{-1/6}$ at fixed $B_0$ and $v_\mathrm{sw}$:
 \[
-  r_\mathrm{mp}' = 10\,R_\oplus \times 10^{-1/6} = \frac{10}{1.4678}\,R_\oplus = 6.813\,R_\oplus \approx 6.8\,R_\oplus.
+  r_\mathrm{mp}' = 10\,\Rearth \times 10^{-1/6} = \frac{10}{1.4678}\,\Rearth = 6.813\,\Rearth \approx 6.8\,\Rearth.
 \]
-\answer{$r_\mathrm{mp} \propto (B_0^2/\rho_\mathrm{sw} v_\mathrm{sw}^2)^{1/6}$; a tenfold density surge compresses Earth's magnetopause from $10$ to $\approx 6.8\,R_\oplus$. The sixth root is why the magnetosphere is so stable against solar-wind buffeting.}
+\answer{$r_\mathrm{mp} \propto (B_0^2/\rho_\mathrm{sw} v_\mathrm{sw}^2)^{1/6}$; a tenfold density surge compresses Earth's magnetopause from $10$ to $\approx 6.8\,\Rearth$. The sixth root is why the magnetosphere is so stable against solar-wind buffeting.}
 \end{solution}
 
 \parti Ganymede's dynamo operates in a liquid iron shell of thickness $L \approx 300$ km

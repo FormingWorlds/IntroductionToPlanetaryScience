@@ -67,7 +67,7 @@ Schematic cross-section of a protoplanetary disk. Gas is shown in grayscale and 
 A critical feature of any protoplanetary disk is the **snow line** (or ice line): the distance from the star beyond which water can condense as ice. In the solar nebula, this was located at roughly 2.5–3.5 AU, between the orbits of Mars and Jupiter. Quoted snow-line distances vary because the snow line moves: while the disk is young and accretion heating is strong it can sit out at $\sim 5$ AU, and it migrates inward as the accretion rate declines and the disk cools {cite:p}`Drazkowska2023,Lichtenberg2021`; the 2.5–3.5 AU range is the location imprinted on the asteroid belt's compositional gradient ({ref}`Lecture 4 <lecture04>`, {ref}`Lecture 12 <lecture12>`). The snow line matters because:
 
 1. **Beyond the snow line**, solid material is much more abundant: adding water ice to the rocky/metallic inventory roughly triples the available solid mass.
-2. **The CHNOPS elements** (carbon, hydrogen, nitrogen, oxygen, phosphorus, sulphur), essential for biology, are distributed between volatile and refractory phases depending on local disk temperature {cite:p}`Krijt2023`. The location where a planet forms relative to various ice lines determines its initial volatile budget.
+2. **The CHNOPS elements** (carbon, hydrogen, nitrogen, oxygen, phosphorus, sulfur), essential for biology, are distributed between volatile and refractory phases depending on local disk temperature {cite:p}`Krijt2023`. The location where a planet forms relative to various ice lines determines its initial volatile budget.
 
 Ice lines for other species ($\mathrm{CO_2}$, $\mathrm{CO}$, $\mathrm{N_2}$, $\mathrm{NH_3}$) exist at progressively larger distances, creating a compositional gradient across the disk ({numref}`fig:snowlines`).
 
@@ -518,7 +518,7 @@ The Laplace resonance of the Galilean moons. Panel (a): the orbits of Io, Europa
 :width: 500px
 :align: center
 
-Half-disk view of Jupiter's moon Io imaged by the Galileo spacecraft, showing an active volcanic plume rising in profile against the dark sky at the limb. The mottled, sulphur-rich surface is reshaped on geological timescales by the underlying volcanism. Resonance-forced eccentricity from the Laplace resonance feeds tidal dissipation that makes Io the most volcanically active body in the Solar System. Credit: NASA/JPL/University of Arizona.
+Half-disk view of Jupiter's moon Io imaged by the Galileo spacecraft, showing an active volcanic plume rising in profile against the dark sky at the limb. The mottled, sulfur-rich surface is reshaped on geological timescales by the underlying volcanism. Resonance-forced eccentricity from the Laplace resonance feeds tidal dissipation that makes Io the most volcanically active body in the Solar System. Credit: NASA/JPL/University of Arizona.
 ```
 
 

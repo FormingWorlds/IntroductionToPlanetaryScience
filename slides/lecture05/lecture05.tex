@@ -164,12 +164,12 @@
 % ── Venus surface ────────────────────────────────────────────
 \begin{frame}{Venus: a secondary atmosphere in extremis}
   \begin{columns}[c]
-    \column{0.45\textwidth}
+    \column{\recapfigcolnarrow}
     \centering
-    \includegraphics[width=\textwidth]{venera13_venus_surface}
+    \ipsrecapfig{venera13_venus_surface}
     \source{USSR/NASA NSSDC, public domain}
 
-    \column{0.52\textwidth}
+    \column{\recaptextcolwide}
     \begin{itemize}
       \item \textit{Venera 13} lander, 1 March 1982
       \item Surface pressure: 92~bar
@@ -331,14 +331,15 @@
 % ── Layers overview ──────────────────────────────────────────
 \begin{frame}{Atmospheric layers}
   \begin{columns}[c]
-    \column{0.35\textwidth}
+    \column{\recapfigcolnarrow}
     \centering
-    \includegraphics[width=\linewidth,height=0.65\textheight,keepaspectratio]{earth_tz_layers}
+    \ipsrecapfig[0.65\textheight]{earth_tz_layers}
     \source{Course figure; US Standard Atmosphere 1976}
 
-    \column{0.62\textwidth}
+    \column{\recaptextcolwide}
+    \small
     Layers defined by the sign of $\dv{T}{z}$:
-    \vskip6pt
+    \vskip2pt
     \begin{enumerate}
       \item \textbf{Troposphere} (0--12~km): $T$ decreases with $z$\\
       Heated from below; convective
@@ -402,7 +403,7 @@
     \item Moist convection is \textbf{deeper and more vigorous} than dry: latent heat supplies the buoyancy that lifts tropical convection to the tropopause, and drives thunderstorms and hurricanes
   \end{itemize}
   \vskip2pt
-  {\tiny\color{ipsText!60} Source: Pierrehumbert (2010); Catling \& Kasting (2017)}
+  \sourcenote{Pierrehumbert (2010); Catling \& Kasting (2017)}
 \end{frame}
 
 % ── Comparative vertical structure ───────────────────────────
@@ -528,12 +529,12 @@
 % ── Blackbody spectrum figure ────────────────────────────────
 \begin{frame}{Stellar vs.\ planetary emission}
   \begin{columns}[c]
-    \column{0.55\textwidth}
+    \column{\recapfigcol}
     \centering
-    \includegraphics[width=\textwidth]{blackbody_spectrum}
+    \ipsrecapfig{blackbody_spectrum}
     \source{Wikimedia, public domain}
 
-    \column{0.42\textwidth}
+    \column{\recaptextcol}
     \begin{itemize}
       \item Sun ($\sim$5800~K): peak at $\sim$0.5~$\mu$m (visible)
       \item Planet ($\sim$300~K): peak at $\sim$10~$\mu$m (thermal IR)
@@ -670,7 +671,7 @@
     \item Manabe shared the 2021 Nobel Prize in Physics for the physical modelling of Earth's climate
   \end{itemize}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Manabe \& Strickler (1964); Manabe \& Wetherald (1967), \textit{J.\ Atmos.\ Sci.}}
+  \sourcenote{Manabe \& Strickler (1964); Manabe \& Wetherald (1967), \textit{J.\ Atmos.\ Sci.}}
 \end{frame}
 
 % ── Energy balance derivation ────────────────────────────────
@@ -735,12 +736,12 @@
 % ── Greenhouse mechanism ─────────────────────────────────────
 \begin{frame}{The greenhouse mechanism}
   \begin{columns}[c]
-    \column{0.42\textwidth}
+    \column{\recapfigcolnarrow}
     \centering
-    \includegraphics[width=\textwidth]{greenhouse_one_layer}
+    \ipsrecapfig{greenhouse_one_layer}
     \source{Course figure}
 
-    \column{0.55\textwidth}
+    \column{\recaptextcolwide}
     \begin{enumerate}
       \item Sunlight (visible, $\sim$0.5~$\mu$m) reaches the surface
       \item Surface emits thermal IR ($\sim$10--15~$\mu$m)
@@ -906,7 +907,7 @@
     \item Seen directly: HD~209458~b (H), GJ~436~b (H), WASP-107~b (He)
   \end{itemize}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Vidal-Madjar et al.\ (2003); Ehrenreich et al.\ (2015); Spake et al.\ (2018)}
+  \sourcenote{Vidal-Madjar et al.\ (2003); Ehrenreich et al.\ (2015); Spake et al.\ (2018)}
 \end{frame}
 
 \begin{frame}
@@ -943,7 +944,7 @@
     \item Produces the ``evaporation valley'' at $\sim$1.8~$\Rearth$ in Kepler data
   \end{itemize}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Owen \& Wu (2013); Lopez \& Fortney (2013); Fulton et al.\ (2017)}
+  \sourcenote{Owen \& Wu (2013); Lopez \& Fortney (2013); Fulton et al.\ (2017)}
 \end{frame}
 
 \begin{frame}
@@ -1004,7 +1005,7 @@
     \item Valid when recombination is negligible (``energy-limited regime'')
   \end{itemize}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Watson et al.\ (1981); Owen (2019)}
+  \sourcenote{Watson et al.\ (1981); Owen (2019)}
 \end{frame}
 
 % ── Non-thermal escape ───────────────────────────────────────
@@ -1070,12 +1071,12 @@
 % ── Escape velocity–temperature diagram ──────────────────────
 \begin{frame}{Atmospheric retention: $v_{\mathrm{esc}}$ vs.\ $T$ diagram}
   \begin{columns}[c]
-    \column{0.50\textwidth}
+    \column{\recapfigcolnarrow}
     \centering
-    \includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{escape_velocity_temperature}
+    \ipsrecapfig{escape_velocity_temperature}
     \source{Wikimedia, CC BY-SA 4.0}
 
-    \column{0.47\textwidth}
+    \column{\recaptextcolwide}
     Rule of thumb for long-term retention:
     $$v_{\mathrm{esc}} \gtrsim 6\,v_{\mathrm{th}}$$
     \vskip4pt
@@ -1092,12 +1093,12 @@
 % ── Mars atmosphere ──────────────────────────────────────────
 \begin{frame}{Mars: a lost atmosphere}
   \begin{columns}[c]
-    \column{0.45\textwidth}
+    \column{\recapfigcolnarrow}
     \centering
-    \includegraphics[width=\textwidth,height=0.60\textheight,keepaspectratio]{mars_atmosphere}
+    \ipsrecapfig{mars_atmosphere}
     \source{NASA/JPL (Viking 1, 1976)}
 
-    \column{0.52\textwidth}
+    \column{\recaptextcolwide}
     \begin{itemize}
       \item Present surface pressure: only 6~mbar
       \item Too thin for liquid water or significant greenhouse warming
@@ -1141,7 +1142,7 @@
     \item Signature: noble gas isotope ratios record impact-driven loss
   \end{itemize}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Schlichting \& Mukhopadhyay (2018); Genda \& Abe (2003, 2005)}
+  \sourcenote{Schlichting \& Mukhopadhyay (2018); Genda \& Abe (2003, 2005)}
 \end{frame}
 
 % ── Volcanic replenishment ───────────────────────────────
@@ -1173,7 +1174,7 @@
     \item Young-Sun EUV may also have driven thermal escape of carbon, which blocks a dense early CO$_2$ atmosphere
   \end{itemize}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Jakosky et al.\ (2018), \textit{Icarus}; Lillis et al.\ (2017); Tian et al.\ (2009)}
+  \sourcenote{Jakosky et al.\ (2018), \textit{Icarus}; Lillis et al.\ (2017); Tian et al.\ (2009)}
 \end{frame}
 
 % ── JWST TRAPPIST results ───────────────────────────────
@@ -1189,7 +1190,7 @@
     \item JWST will target TRAPPIST-1 e, f during Cycle 3--4
   \end{itemize}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Greene et al.\ (2023); Zieba et al.\ (2023), \textit{Nature}}
+  \sourcenote{Greene et al.\ (2023); Zieba et al.\ (2023), \textit{Nature}}
 \end{frame}
 
 \begin{frame}
@@ -1206,7 +1207,7 @@
     \small
     \begin{itemize}\setlength\itemsep{1pt}
       \item Two panels, two stellar masses; each curve a rotation history. All stars start saturated at $L_X/L_\mathrm{bol} \sim 10^{-3}$.
-      \item A Sun-like star leaves saturation after $\sim$100 Myr; a 0.25 $M_\odot$ M dwarf stays saturated beyond a gigayear.
+      \item A Sun-like star leaves saturation after $\sim$100 Myr; a 0.25 $\Msun$ M dwarf stays saturated beyond a gigayear.
       \item Close-in rocky planets around late M dwarfs therefore receive saturated \textbf{XUV} (X-ray + EUV) through their entire early history.
     \end{itemize}
     \vskip2pt\relax
@@ -1243,14 +1244,14 @@
   \vskip6pt
   \begin{itemize}
     \item Absorbing molecules imprint dark features in the transmission spectrum
-    \item Path length $\sim$$2\sqrt{2 R_p H}$ through a layer of scale height $H$
+    \item Path length $\sim 2\sqrt{2 R_p H}$ through a layer of scale height $H$
     \item Signal: $\Delta(R_p/R_\star)^2 \sim 2 R_p H/R_\star^2$
     \item Bigger signal for puffy atmospheres (large $H$) around small stars
     \item JWST has detected H$_2$O, CO$_2$, CH$_4$, SO$_2$ in multiple exoplanet atmospheres
     \item Full treatment in Lecture 13 (Exoplanet Atmospheres)
   \end{itemize}
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Seager \& Sasselov (2000); Kreidberg et al.\ (2014)}
+  \sourcenote{Seager \& Sasselov (2000); Kreidberg et al.\ (2014)}
 \end{frame}
 
 % ── Runaway greenhouse preview ──────────────────────────
@@ -1268,7 +1269,7 @@
   \vskip6pt
   Derived in full in \textbf{Lecture 9: Earth \& Venus}.
   \vskip4pt
-  {\tiny\color{ipsText!60} Source: Ingersoll (1969); Nakajima et al.\ (1992)}
+  \sourcenote{Ingersoll (1969); Nakajima et al.\ (1992)}
 \end{frame}
 
 \begin{frame}{Looking ahead to Lecture 6}

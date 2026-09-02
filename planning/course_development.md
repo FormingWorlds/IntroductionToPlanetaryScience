@@ -1340,3 +1340,35 @@ Where the lecture notes and the slides quoted different values for the same quan
 - L14: K-dwarf main-sequence lifetimes 17 to 70 Gyr, 24 Gyr for $\epsilon$ Eri; LHS 3844b dayside 503 K against a 508 K bare-rock prediction.
 
 Open: the Venera mission dates in L09 and the L04 lunar-crust wording still differ between notes and slides and are left for the content trim.
+
+## 13. Shared layout and notation across slides, worksheets and minilectures (2026-09-02)
+
+The three secondary material sets follow one convention set. The rules below describe the current state and apply to new material.
+
+Slides:
+
+- Figure-plus-text frames use the shared recap layout from `slides/common/beamerthemeIPS.sty`: `\begin{columns}[c]`, `\column{\recapfigcol}` with `\ipsrecapfig{name}`, `\column{\recaptextcol}`, or the narrow/wide pair when the text needs more room. No frame carries a hard-coded column fraction. Frames whose figure spans the full width above two text columns keep their own layout.
+- Source lines under figures and tables use `\sourcenote{...}`, which sets the small grey "Source:" line.
+- The break between the two parts of a long deck is `\breakslide[...]`: the optional argument holds the part-transition text, used in L12, L13 and L14. Short decks call `\breakslide` without an argument.
+- Every title page is the theme `\titlepage`; L13 sets `\titlebgopacity{0.85}` for its bright background image.
+- Constants and units use the macros in `slides/common/macros.tex` (`\Msun`, `\Mearth`, `\Rearth`, `\kB`, `\dd`).
+
+Worksheets:
+
+- Display equations use `\[ \]`, never `$$`. Quotes are LaTeX quotes. No space before punctuation inside math.
+- Every solution part closes with an `\answer{...}` callout that states the final value with its unit, so students can check a result without reading the derivation.
+- Constants use the shared macros in `worksheets/common/worksheetIPS.sty`. The atomic mass unit is `m_u`; the equilibrium temperature is `T_eq` (WS03 used `T_eff` for the same quantity).
+- WS02 states the unit of the buoyancy term $\alpha \rho g \Delta T$ as kg m$^{-2}$ s$^{-2}$. `check_worksheet03.py` derives the atmosphere mass from the column mass printed in the sheet, so the checker and the text agree to the printed precision.
+- WS06 problem 3 carries four significant figures through the intermediate steps: $e^{-1.9334} = 0.1447$, $1/137.82 = 7.256 \times 10^{-3}$ and a slope of 0.6252. The boxed answers (0.625, 14.5%, 3.4 AU) are unchanged.
+
+Minilectures:
+
+- The same macros as the slides (`\dd`, `\kB`, `\Lsun`, `\Rearth`), `${}^{26}$Al` for the isotope, LaTeX quotes, and a live `\href` on the worksheet link.
+
+Everywhere: the spelling is sulfur, sulfide, sulfate.
+
+Open:
+
+- The solar constant is `S_\oplus` in WS03 and the notes and `S_0` in WS05, WS06, ML06 and the mock exams. Pick one.
+- L05 notes use `T_eff` where the worksheets use `T_eq` for the equilibrium temperature.
+- CI runs neither the worksheet checkers nor the LaTeX builds; a wrong number or a broken frame is only caught on a local `make`.

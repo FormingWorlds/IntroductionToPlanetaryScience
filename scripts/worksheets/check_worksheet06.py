@@ -75,11 +75,11 @@ chk("P2c rocky fluid Roche (km)", 2.46 * RP * 0.612, 87670.0, 1e-3)
 # ── Problem 3: radioactive dating ────────────────────────────────────────
 # (a) Al-26 decay constant and survival after 2 Myr
 chk("P3a lambda_Al26 (Myr^-1)", LN2 / 0.717, 0.9667, 1e-3)
-chk("P3a N/N0 at 2 Myr", math.exp(-0.9667 * 2), 0.1446, 1e-3)
+chk("P3a N/N0 at 2 Myr", math.exp(-0.9667 * 2), 0.1447, 1e-3)
 
 # (b) live Al-26/Al-27 at 2 Myr, heating factor
-chk("P3b (Al26/Al27) at 2 Myr", 5.2e-5 * 0.1446, 7.52e-6, 1e-3)
-chk("P3b heating factor (~6.9)", 1 / 0.1446, 6.9, 1e-2)
+chk("P3b (Al26/Al27) at 2 Myr", 5.2e-5 * 0.1447, 7.52e-6, 1e-3)
+chk("P3b heating factor (~6.9)", 1 / 0.1447, 6.9, 1e-2)
 
 # (c) Pb-Pb isochron slope at CAI age
 chk("P3c lambda_235 (Gyr^-1)", LN2 / 0.7038, 0.9848, 1e-3)
@@ -88,9 +88,9 @@ chk("P3c lambda_235 t", 0.9848 * 4.5673, 4.498, 1e-3)
 chk("P3c lambda_238 t", 0.1551 * 4.5673, 0.7084, 1e-3)
 chk("P3c exp(l235 t) - 1", math.exp(4.498) - 1, 88.84, 1e-3)
 chk("P3c exp(l238 t) - 1", math.exp(0.7084) - 1, 1.031, 1e-3)
-chk("P3c 235U/238U", 1 / 137.82, 7.254e-3, 1e-3)
+chk("P3c 235U/238U", 1 / 137.82, 7.256e-3, 1e-3)
 chk("P3c ratio (e235-1)/(e238-1)", 88.84 / 1.031, 86.17, 1e-3)
-chk("P3c Pb-Pb slope", 7.254e-3 * 86.17, 0.6251, 1e-3)
+chk("P3c Pb-Pb slope", 7.256e-3 * 86.17, 0.6252, 1e-3)
 
 # ── Problem 4: Kirkwood gaps ─────────────────────────────────────────────
 AJ = 5.203

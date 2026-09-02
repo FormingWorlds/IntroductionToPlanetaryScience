@@ -46,11 +46,11 @@ chk("P1a H_Earth printed-chain (m)", 3.9773e-21 / 4.7205e-25, 8425.6, 5e-5)
 chk("P1b T ratio", 288 / 94, 3.1, 2e-2)
 chk("P1b g ratio", 9.81 / 1.35, 7.3, 1e-2)
 chk("P1b H ratio", 7.3 / 3.1, 2.4, 2e-2)
-# P1c column mass and atmosphere mass (chain: printed 1.033e4)
+# P1c column mass and atmosphere mass (chain: printed 1.0326e4)
 m_col = 1.013e5 / 9.81
 chk("P1c column mass (kg m^-2)", m_col, 1.0326e4, 1e-3)
-M_atm = 4 * math.pi * (6.371e6) ** 2 * 1.033e4
-chk("P1c atmosphere mass (kg)", M_atm, 5.269e18, 1e-3)
+M_atm = 4 * math.pi * (6.371e6) ** 2 * 1.0326e4
+chk("P1c atmosphere mass (kg)", M_atm, 5.267e18, 1e-3)
 
 # ── Problem 2: sunlight in, infrared out ────────────────────────────────
 S_V = S0 / 0.72 ** 2
@@ -85,7 +85,7 @@ chk("P4b Rossby number", 15 / (1.164e-4 * 2.0e6), 0.064, 1e-2)
 
 # ── Problem 5: climate on the edge ──────────────────────────────────────
 chk("P5a 0.71^(1/4)", 0.71 ** 0.25, 0.91794, 1e-4)
-chk("P5a T_eff young Sun (K)", 255 * 0.91794, 234.1, 5e-4)
+chk("P5a T_eq young Sun (K)", 255 * 0.91794, 234.1, 5e-4)
 chk("P5a implied surface (K)", 234.1 + 33, 267.1, 1e-3)
 # P5b figure read: the three equilibria as asserted by the figure checker
 import importlib.util as _ilu

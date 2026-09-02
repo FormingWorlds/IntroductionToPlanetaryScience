@@ -79,7 +79,7 @@ The example illustrates how a single mission's gravity science can rewrite the t
 ### Jupiter atmosphere and weather
 
 Jupiter's visible atmosphere is the cloud-bearing layer at pressures between approximately 0.1 and 10 bar.
-As discussed in {ref}`Lecture 6 <lecture06>`, the composition of the cloud layers is set by the condensation curves of the most abundant volatile species: ammonia ice ($\mathrm{NH_3}$) condenses near the 0.5--1 bar level to form the highest cloud deck, ammonium hydrosulphide ($\mathrm{NH_4SH}$) condenses near 2--3 bar, and water ice and water cloud occur deepest at $\sim 5\text{--}7$ bar.
+As discussed in {ref}`Lecture 6 <lecture06>`, the composition of the cloud layers is set by the condensation curves of the most abundant volatile species: ammonia ice ($\mathrm{NH_3}$) condenses near the 0.5--1 bar level to form the highest cloud deck, ammonium hydrosulfide ($\mathrm{NH_4SH}$) condenses near 2--3 bar, and water ice and water cloud occur deepest at $\sim 5\text{--}7$ bar.
 Galileo probe mass spectrometer measurements during its 1995 atmospheric entry confirmed the layered structure but found the entry site unusually dry, a reminder that local meteorology can deviate strongly from horizontally averaged models {cite:p}`Niemann1998`.
 
 ```{figure} figures/jupiter_grs_juno.avif
@@ -119,7 +119,7 @@ The pattern persists across multiple Juno orbits and is currently the best const
 Juno gravity science has also constrained the depth to which the equatorial zonal jets extend: by detecting subtle north-south asymmetries in the gravity field, {cite:t}`Kaspi2018` showed that the jets penetrate to several thousand kilometres depth, with a characteristic decay depth of $\sim$2,000 km and the flow falling to negligible speeds by $\sim$3,000 km, a substantial fraction of the molecular hydrogen envelope.
 Below this depth the magnetic stress associated with metallic hydrogen damps the differential rotation, and the deep interior approaches solid-body rotation.
 
-The aurorae of Jupiter, the most powerful in the solar system, are powered by a combination of magnetospheric processes ({ref}`Lecture 4 <lecture04>`; the magnetosphere is the region of space around a planet where its own magnetic field dominates over the solar wind) and the heavy mass loading from Io, whose volcanism feeds about $1$ tonne s$^{-1}$ of sulphur and oxygen into the Jovian magnetosphere.
+The aurorae of Jupiter, the most powerful in the solar system, are powered by a combination of magnetospheric processes ({ref}`Lecture 4 <lecture04>`; the magnetosphere is the region of space around a planet where its own magnetic field dominates over the solar wind) and the heavy mass loading from Io, whose volcanism feeds about $1$ tonne s$^{-1}$ of sulfur and oxygen into the Jovian magnetosphere.
 The auroral footprints of Io, Europa, and Ganymede have all been imaged in the ultraviolet, providing a direct visualisation of the electromagnetic coupling between the giant planet and its moons.
 The "Great Blue Spot", an isolated region of intense magnetic flux near Jupiter's equator, is a magnetic anomaly mapped by Juno that bears no relation to atmospheric features and probably reflects unusual structure in the dynamo source region {cite:p}`Connerney2022`.
 

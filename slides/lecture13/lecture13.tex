@@ -15,38 +15,15 @@
 \institute{Kapteyn Astronomical Institute\\University of Groningen}
 \date{2026}
 \titlebgcredit{JWST/NIRSpec transit of WASP-39 b. Credit: Alderson et al.\ (2023)}
+\titlebgopacity{0.85}
 
 % ════════════════════════════════════════════════════════════
 \begin{document}
 
 % ── Title slide ─────────────────────────────────────────────
-% Custom title slide (overrides shared template) with stronger overlay
-% so the JWST broadband-light-curve background does not collide with
-% the title text and credit line.
-\makeatletter
 \begin{frame}[plain,noframenumbering]
-  \begin{tikzpicture}[remember picture, overlay]
-    \ipscontain{title_background}
-    \fill[ipsPrimary, opacity=0.85] (current page.north west) rectangle (current page.south east);
-    \node[anchor=south east, inner sep=0pt] at ([xshift=-6pt, yshift=4pt]current page.south east) {%
-      {\tiny\color{white!50} \ips@titlebgcredit}%
-    };
-  \end{tikzpicture}
-  \vfill
-  \begin{center}
-    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
-    \vskip8pt
-    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
-    \vskip20pt
-    {\usebeamercolor[fg]{author}\insertauthor\par}
-    \vskip4pt
-    {\usebeamercolor[fg]{institute}\small\insertinstitute\par}
-    \vskip4pt
-    {\usebeamercolor[fg]{date}\small\insertdate\par}
-  \end{center}
-  \vfill
+  \titlepage
 \end{frame}
-\makeatother
 
 % ── Learning objectives ─────────────────────────────────────
 \begin{frame}{Learning Objectives}
@@ -282,6 +259,8 @@
 
 \begin{frame}{Density Maps to Composition}
   \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{chenkipping_mass_radius}
     \column{\recaptextcol}
     \begin{itemize}
       \item $\bar\rho \approx 5.5$: rocky (Earth, Venus).
@@ -289,8 +268,6 @@
       \item $\bar\rho \approx 0.5$: inflated H/He envelope.
       \item $\bar\rho \approx 2$--$4$: \emph{sub-Neptune}, the most common type with no solar-system analogue.
     \end{itemize}
-    \column{\recapfigcol}
-    \ipsrecapfig{chenkipping_mass_radius}
   \end{columns}
 \end{frame}
 
@@ -410,18 +387,8 @@
 \end{frame}
 
 
-% ════════════════════════════════════════════════════════════
-% BREAK
-% ════════════════════════════════════════════════════════════
-\begin{frame}[plain,noframenumbering]
-  \vfill
-  \begin{center}
-    {\Huge \textcolor{ipsAccent}{Break}}\\[10pt]
-    {\large End of Part 1: Detection Methods}\\[6pt]
-    {\normalsize Part 2: Demographics, Architectures, Atmospheres}
-  \end{center}
-  \vfill
-\end{frame}
+% ── Break ───────────────────────────────────────────────────
+\breakslide[End of Part 1: Detection Methods\\Part 2: Demographics, Architectures, Atmospheres]
 
 
 % ════════════════════════════════════════════════════════════
@@ -498,10 +465,6 @@
     \end{itemize}
   \end{columns}
 \end{frame}
-
-
-% ── Break ───────────────────────────────────────────────────
-\breakslide
 
 
 % ════════════════════════════════════════════════════════════
@@ -976,7 +939,7 @@
 \begin{frame}{Biosignature Gases and False Positives}
   \begin{itemize}
     \item Classical: \emph{disequilibrium combinations}. On Earth: O$_2$ + CH$_4$.
-    \item Catalogue: O$_2$, O$_3$, CH$_4$, N$_2$O, organosulphur, organohalogen species.
+    \item Catalogue: O$_2$, O$_3$, CH$_4$, N$_2$O, organosulfur, organohalogen species.
     \item No single gas in isolation is convincing.
     \item \textbf{False positives are the main challenge.}
     \begin{itemize}
