@@ -601,7 +601,7 @@ Saturn also experiences periodic **Great White Storms** roughly every 30 years (
 
 ### Neptune: extreme weather on a cold world
 
-Despite receiving only $\sim$1/900th of Earth's solar flux, Neptune has the **fastest winds** in the solar system, with its retrograde equatorial jet reaching $\sim$580 m s$^{-1}$ ($\sim$2100 km h$^{-1}$). The Voyager 2 flyby in 1989 revealed a **Great Dark Spot** similar to Jupiter's GRS ({numref}`fig:neptune-dark-spot`), though subsequent Hubble observations showed it had vanished while new ones had formed, suggesting Neptune's storms are more transient than Jupiter's.
+Despite receiving only $\sim$1/900th of Earth's solar flux, Neptune has the **fastest winds** in the solar system, with its retrograde equatorial jet reaching $\sim$400 m s$^{-1}$ ($\sim$1400 km h$^{-1}$) {cite:p}`Smith1989`. The Voyager 2 flyby in 1989 revealed a **Great Dark Spot** similar to Jupiter's GRS ({numref}`fig:neptune-dark-spot`), though subsequent Hubble observations showed it had vanished while new ones had formed, suggesting Neptune's storms are more transient than Jupiter's.
 
 ```{figure} figures/neptune_great_dark_spot.avif
 :name: fig:neptune-dark-spot
@@ -609,7 +609,7 @@ Despite receiving only $\sim$1/900th of Earth's solar flux, Neptune has the **fa
 :align: center
 
 Neptune's *Great Dark Spot* (centre-left, with bright "scooter" cloud feature below) and *Dark Spot 2* (lower right), imaged by *Voyager 2* in August 1989.
-The Great Dark Spot was a high-pressure anticyclone roughly the size of Earth. The adjacent zonal flow (Neptune's equatorial retrograde jet reaches $\sim 580$ m s$^{-1}$, the fastest winds measured in the solar system) helped confine and transport the storm.
+The Great Dark Spot was a high-pressure anticyclone roughly the size of Earth. The adjacent zonal flow (Neptune's equatorial retrograde jet reaches $\sim 400$ m s$^{-1}$, the fastest winds measured in the solar system) helped confine and transport the storm.
 Hubble follow-up imaging just a few years later showed that the original Great Dark Spot had dissipated and new dark spots had appeared elsewhere on the planet, which shows that Neptune's storms are far more transient than Jupiter's GRS.
 Credit: NASA/JPL-Caltech, public domain.
 ```

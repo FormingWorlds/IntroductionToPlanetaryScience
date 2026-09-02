@@ -146,9 +146,9 @@ Io's tenuous $\mathrm{SO_2}$ atmosphere is supplied by volcanic plumes and subli
 Io's measured tidal response compared with interior models **without** (a) and **with** (b) a global magma ocean. The sketches show the layering of each model. The plots show the dissipation factor $|k_2|/Q$ (vertical axis, logarithmic) against the real part of the tidal Love number, $\mathrm{Re}(k_2)$ (horizontal axis). Separate curves correspond to different lithosphere thicknesses $d$ (a) or to different depths $h$ of a 100 km thick magma ocean (b); the markers along each curve mark models with different values of the mantle rheology parameter $\beta$, which sets how strongly the mantle dissipates tidal energy. Green boxes are the 1$\sigma$ and 3$\sigma$ Juno constraints, and grey bands mark the earlier astrometry-only constraint. Models without a magma ocean pass through the Juno box for low values of $\beta$, whereas a magma ocean shallower than about 500 km produces a far larger $\mathrm{Re}(k_2)$ than measured. The data therefore **preclude a shallow magma ocean** and are consistent with a mostly solid mantle: a single gravity measurement can rule out a whole class of interior structures. Reproduced from {cite:t}`Park2024`.
 ```
 
-Juno measured the gravitational **$k_2$ tidal Love number** (a dimensionless measure of tidal deformation) to be $k_2 \approx 0.125 \pm 0.047$ {cite:p}`Park2024`.
+Juno measured the gravitational **$k_2$ tidal Love number** (a dimensionless measure of tidal deformation) to be $\mathrm{Re}(k_2) = 0.125 \pm 0.047$ {cite:p}`Park2024`.
 This rules out a global shallow magma ocean.
-It requires a mostly solid silicate mantle with localised partial melting ({numref}`fig:io_tidal`).
+It is consistent with a mostly solid silicate mantle with localised partial melting ({numref}`fig:io_tidal`).
 
 ### Europa
 

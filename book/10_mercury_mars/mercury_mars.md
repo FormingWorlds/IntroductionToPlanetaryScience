@@ -2,7 +2,7 @@
 # Rocky Planets, Mercury & Mars
 
 ```{highlights}
-**Learning objectives:** By the end of this lecture, you will be able to explain Mercury's unusual spin-orbit resonance and metal-rich interior, reconstruct the geological history of Mars across its three main epochs, derive and apply the Jeans escape flux formula, interpret the seismic structure of Mars from {ref}`InSight <lecture08>` data, and use Mercury and Mars as limiting cases that isolate the roles of planet size, distance, and timing in rocky-planet evolution.
+**Learning objectives:** By the end of this lecture, you will be able to explain Mercury's unusual spin-orbit resonance and metal-rich interior, reconstruct the geological history of Mars across its three main periods, derive and apply the Jeans escape flux formula, interpret the seismic structure of Mars from {ref}`InSight <lecture08>` data, and use Mercury and Mars as limiting cases that isolate the roles of planet size, distance, and timing in rocky-planet evolution.
 ```
 
 ```{seealso}
@@ -21,7 +21,7 @@ It preserves a sedimentary and atmospheric record of a wetter, warmer past.
 
 The lecture is divided into three parts.
 Part 1 examines Mercury as a metal-world case study, covering orbital dynamics, interior structure, surface morphology, polar volatiles, and the exosphere.
-Part 2 focuses on Mars, exploring its interior, geological epochs, evidence for past water, and thermal atmospheric loss via the Jeans escape flux.
+Part 2 focuses on Mars, exploring its interior, geological periods, evidence for past water, and thermal atmospheric loss via the Jeans escape flux.
 Part 3 compares these extremes to show how size, heliocentric distance, and dynamo longevity govern planetary evolution and habitability.
 
 Our understanding of both planets has advanced dramatically over the last fifteen years.
@@ -426,9 +426,9 @@ $$
 With a value below unity, Mars is losing heat slightly faster than radioactive decay deposits it, but its cooling rate is substantially slower than Earth's ($\mathrm{Ur}_\oplus \approx 0.3$ to $0.5$).
 This slow secular cooling reflects a stagnant-lid regime where an insulating lithosphere impedes heat loss from the interior.
 
-### Mars' geological epochs: Noachian, Hesperian, Amazonian
+### Mars' geological periods: Noachian, Hesperian, Amazonian
 
-Mars is divided into three major geological epochs based on impact crater density {cite:p}`Hartmann2001`, compiled globally by {cite:t}`Tanaka2014` ({numref}`fig:tanaka-global` and {numref}`fig:tanaka-periods`).
+Mars is divided into three major geological periods (each subdivided into epochs) based on impact crater density {cite:p}`Hartmann2001`, compiled globally by {cite:t}`Tanaka2014` ({numref}`fig:tanaka-global` and {numref}`fig:tanaka-periods`).
 
 ```{figure} figures/tanaka2014_geomap.avif
 :name: fig:tanaka-global
@@ -446,17 +446,17 @@ Global geologic map of Mars from the chronostratigraphic mapping of {cite:t}`Tan
 Correlation chart of the map units in the global geologic map of Mars by {cite:t}`Tanaka2014`. Columns separate the major terrain categories (lowland, impact, polar, basin, volcanic, apron, transition, highland) and rows correspond to the Amazonian, Hesperian, and Noachian periods, each split into early, middle, and late epochs except the Hesperian, which has only an early and a late epoch. Each box spans the age range of one map unit. The numbers on the right give the crater densities that define the epoch boundaries: the number of craters larger than 1, 5, and 16 km per $10^6$ km$^2$. The decline in the number and extent of new units from the Noachian to the Amazonian records the slowing of resurfacing on Mars and is a key constraint on its thermal and atmospheric evolution. Image credit: USGS (public domain).
 ```
 
-The **Noachian** epoch ($\sim 4.1$ to $\sim 3.7$ Ga) is the oldest period, preserved in the heavily cratered southern highlands.
+The **Noachian** period ($\sim 4.1$ to $\sim 3.7$ Ga) is the oldest, preserved in the heavily cratered southern highlands.
 It hosted an active core dynamo.
 Most water-related features formed then: valley networks, open-basin lakes, and clay minerals.
 
-The **Hesperian** epoch ($\sim 3.7$ to $\sim 3.0$ Ga) is marked by widespread volcanism and catastrophic outflow channels.
+The **Hesperian** period ($\sim 3.7$ to $\sim 3.0$ Ga) is marked by widespread volcanism and catastrophic outflow channels.
 Surface chemistry shifted from clay-forming to sulfate-forming environments as the dynamo shut off and the atmosphere thinned.
 
-The **Amazonian** epoch ($\sim 3.0$ Ga to present) covers two thirds of Mars' history with minimal geological activity.
+The **Amazonian** period ($\sim 3.0$ Ga to present) covers two thirds of Mars' history with minimal geological activity.
 Surfaces exhibit low crater densities, cold and dry conditions, and sporadic Tharsis volcanism within the last $1$ Gyr.
 
-Across these epochs, surface renewal fell by over an order of magnitude.
+Across these periods, surface renewal fell by over an order of magnitude.
 Liquid water was concentrated in the Noachian.
 
 ### Mars surface highlights: dichotomy, Tharsis, Olympus, Valles
