@@ -1334,7 +1334,7 @@ Where the lecture notes and the slides quoted different values for the same quan
 - L08: inner-core density jump about 5% (PREM), not 30%.
 - L09: geodynamo active since at least 3.45 Ga (Tarduno et al. 2010); critical distance 0.77 AU (Hamano et al. 2013); SMOW D/H $1.56 \times 10^{-4}$; EnVision launch November 2031; Magellan 1990 to 1994, Venus Express 2006 to 2014; Venus crater-retention age 150 to 250 Myr with the older 300 to 1000 Myr range noted; $T_\mathrm{eq}$ 227 K; Venus turns 243 times slower than Earth.
 - L10: Mercury core mass fraction about 74%; InSight ScS reflections give a core radius of about 1830 km; faint young Sun 25% less luminous at 4 Ga.
-- L11: Saturn and Neptune equatorial jets both about 400 m s$^{-1}$; Europa ice shell 6 to 25 km; Scooter circles in about 16 h, slightly prograde against the 16.1 h interior rotation (Voyager 2 imaging and radio period).
+- L11: Saturn and Neptune equatorial jets both about 400 m s$^{-1}$; Europa ice shell 6 to 25 km; Scooter at about 42 S drifts westward (retrograde), circling more slowly than the 16.1 h interior rotation (Voyager 2 imaging and radio period).
 - L12: Ceres about 40% of a $4 \times 10^{-4}$ Earth-mass belt; impactor bins 10 m (about 100 kt, once per decade) and 20 m (about 0.5 Mt, once per few decades to a century); Psyche 222 km; Pluto 1187 km and 1860 kg m$^{-3}$; $^{26}$Al half-life 0.717 Myr; 2I/Borisov CO/H$_2$O at least 173% (Bodewits et al. 2020, HST/COS with Swift water rates).
 - L13: $\eta_\oplus$ 0.2 to 0.9 with a central 0.4 (Bryson et al. 2021); K2-18b DMS at or below 2$\sigma$; WASP-43b one transit and two eclipses; HR 8799 age 30 to 60 Myr; $\beta$ Pic b about 9 $M_\mathrm{Jup}$ at about 9 AU.
 - L14: K-dwarf main-sequence lifetimes 17 to 70 Gyr, 24 Gyr for $\epsilon$ Eri; LHS 3844b dayside 503 K against a 508 K bare-rock prediction.
@@ -1408,7 +1408,7 @@ Conventions that hold in all chapters:
 
 Open:
 
-- The Ceres share of the belt mass (L12) is kept at 40%, which follows from the belt mass and Ceres mass quoted in the same chapter ($9.4 \times 10^{20}$ kg over $2.4 \times 10^{21}$ kg); one third also appears in the literature. The Scooter direction is settled as prograde (about 16 h period against 16.1 h interior rotation, roughly 10 m s$^{-1}$).
+- The Ceres share of the belt mass (L12) is kept at 40%, which follows from the belt mass and Ceres mass quoted in the same chapter ($9.4 \times 10^{20}$ kg over $2.4 \times 10^{21}$ kg); one third also appears in the literature. The Scooter direction is westward (retrograde): at about 42 S, equatorward of the roughly 53 S zonal-wind zero-crossing, cloud features rotate with periods longer than the 16.1 h interior rotation and so drift westward, consistent with Neptune's 400 m s$^{-1}$ westward equatorial jet (Limaye and Sromovsky 1989, Science 245:1367).
 
 ## 15. Figure crops in L10 and L11 (2026-09-02)
 
@@ -1416,6 +1416,6 @@ Four figures in L10 and L11 use cleaner files of the same content:
 
 - `tanaka2014_periods` (L10) is the complete correlation chart of the USGS SIM 3292 map sheet, from the lowland column to the crater-density scale, without the explanatory paragraph of the map sheet. The caption names the crater-density scale (craters larger than 1, 5, and 16 km per $10^6$ km$^2$) and states that the Hesperian has only an early and a late epoch.
 - `io_tidal_park2024` (L11) is Fig. 1 of Park et al. (2024) without the journal header. The caption describes the axes ($|k_2|/Q$ on the vertical axis against $\mathrm{Re}(k_2)$), the model curves in $d$ or $h$ with markers in $\beta$, and the Juno and astrometry constraints. It closes with the interpretive point that one gravity measurement rules out a class of interior structures.
-- `neptune_great_dark_spot` (L11) is the L06 file `neptune_great_dark_spot`, and `jupiter_north_pole_cyclones_juno` (L11) is the L06 file `juno_polar_cyclones`; both are free of frame borders. The Great Dark Spot caption names Scooter and Dark Spot 2 in one sentence and points to `fig:neptune_scooter` for the Scooter detail, so the two adjacent Neptune figures keep their split between overview and detail.
+- `neptune_great_dark_spot` (L11) is the L06 file `neptune_great_dark_spot`, and `jupiter_north_pole_cyclones_juno` (L11) is the L06 file `juno_polar_cyclones`; both are free of frame borders. The Great Dark Spot caption names Scooter and Dark Spot 2 and carries the Scooter wind-tracer detail, in a single Neptune figure.
 
 Rule for reused images: when two chapters show the same picture, both use the cleanest available file, and the captions may differ to fit each chapter's argument.

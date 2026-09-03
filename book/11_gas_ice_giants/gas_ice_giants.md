@@ -664,21 +664,13 @@ A dedicated Uranus orbiter would be the most direct test.
 :name: fig:neptune_dark
 :width: 70%
 
-The Great Dark Spot of Neptune (centre left), an anticyclonic storm in the southern hemisphere, imaged by Voyager 2 in August 1989. The dark spot was comparable in size to Earth and was bordered by bright methane cirrus clouds. The small bright cloud below the Great Dark Spot is Scooter (see {numref}`fig:neptune_scooter`), and the second dark storm at lower right is Dark Spot 2. Image credit: NASA/JPL-Caltech.
-```
-
-```{figure} figures/neptune_scooter.avif
-:align: center
-:name: fig:neptune_scooter
-:width: 70%
-
-Neptune's southern hemisphere with the small bright cloud feature known informally as "Scooter" visible below the Great Dark Spot. Scooter is at about $42^\circ$ S latitude and circles the planet in about 16 h, slightly faster than the 16.1 h interior rotation measured from the magnetic field, so it drifts slowly eastward (prograde) at roughly 10 m s$^{-1}$; it is one of the tracers used to map Neptune's mid-latitude zonal winds. Image credit: NASA/JPL-Caltech.
+The Great Dark Spot of Neptune (centre left), an anticyclonic storm in the southern hemisphere, imaged by Voyager 2 in August 1989. It was comparable in size to Earth and was bordered by bright methane cirrus clouds; a second dark storm, Dark Spot 2, lies at lower right. The small bright cloud below the Great Dark Spot is Scooter, at about $42^\circ$ S latitude. Cloud features at these mid-southern latitudes circle the planet more slowly than the 16.1 h interior rotation measured from the magnetic field, so they drift westward (retrograde); Scooter is one of the tracers used to map these zonal winds {cite:p}`Smith1989`. Image credit: NASA/JPL-Caltech.
 ```
 
 Voyager 2 revealed an active atmosphere on Neptune in 1989.
 This contrasted with Uranus.
 The **Great Dark Spot** was an Earth-sized anticyclonic storm bordered by methane cirrus clouds ({numref}`fig:neptune_dark`).
-Tracked cloud features such as "Scooter" (which circles the planet in about 16 h, slightly faster than the interior) trace Neptune's **zonal flow** (winds aligned with latitude) ({numref}`fig:neptune_scooter`).
+Tracked cloud features such as "Scooter" (which drift slowly westward relative to the interior rotation) trace Neptune's **zonal flow** (winds aligned with latitude).
 The spot vanished by 1994.
 This is a sign of vigorous, transient atmospheric convection.
 
