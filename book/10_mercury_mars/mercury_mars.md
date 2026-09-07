@@ -536,17 +536,18 @@ Conditions were colder and drier thereafter.
 ### The early Mars climate puzzle
 
 Valley networks indicate surface liquid water on early Mars despite $25\%$ lower solar luminosity at $4$ Ga (the **faint young Sun problem**, the reduced solar output) {cite:p}`Feulner2012`.
-Because $\mathrm{CO_2}$ ice clouds raise albedo and cap temperatures below $273\ \mathrm{K}$ {cite:p}`Wordsworth2016`, the "icy highlands" model proposes snow accumulation with episodic melting ({numref}`fig:wordsworth-schematic`).
+A pure $\mathrm{CO_2}$-$\mathrm{H_2O}$ atmosphere cannot close the gap: radiative-convective models give mean surface temperatures of about $225\ \mathrm{K}$ or less, because $\mathrm{CO_2}$ spectral windows stay open and the water-vapour feedback is weak at low temperature, and $\mathrm{CO_2}$ ice clouds add little net warming {cite:p}`Wordsworth2016`.
+One proposed solution invokes reducing gases such as $\mathrm{H_2}$ or $\mathrm{CH_4}$, which warm the surface through **collision-induced absorption (CIA)** with $\mathrm{CO_2}$, transient absorption during molecular collisions {cite:p}`Wordsworth2017`.
+The $\mathrm{H_2}$ can come from volcanic outgassing, from **serpentinisation** (water-rock reactions altering ultramafic minerals), or from large impacts; the volcanic supply rate is poorly constrained {cite:p}`Wordsworth2017,Wordsworth2021`.
+The "icy highlands" hypothesis proposes a cold baseline in which snow accumulates on the southern highlands, with repeated warm excursions that melt it ({numref}`fig:early-mars-climate-schematic`); in the phase diagram of steady climate states this is the cold and relatively dry quadrant ({numref}`fig:wordsworth-phase`) {cite:p}`Wordsworth2016,Kite2019`.
 
-```{figure} figures/wordsworth2016_schematic.avif
-:name: fig:wordsworth-schematic
+```{figure} figures/early_mars_climate_schematic.avif
+:name: fig:early-mars-climate-schematic
 :width: 700px
 :align: center
 
-Schematic of the major climate processes on early Mars in the Noachian and early Hesperian periods, reproduced from Figure 5 of the {cite:t}`Wordsworth2016` AREPS review (Wordsworth's own hand-drawn cartoon). The "icy highlands" picture: snow accumulates in the elevated southern highlands, where adiabatic cooling under a thicker atmosphere makes them effective cold traps; episodic warming from impacts and volcanism delivers transient meltwater that flows downhill into the northern lowlands as standing bodies of water. $\mathrm{CO_2}$ clouds at high altitude can scatter or absorb infrared radiation but in net cool more than they warm.
+Schematic of the "cold baseline with transient warm excursions" picture of the early Mars climate, drawn as an idealised cross-section from the northern lowlands (left) to the southern highlands (right); rock is brown, the cryosphere grey, surface ice white, and liquid water blue. **(a)** Cold baseline. Under the faint young Sun a pure $\mathrm{CO_2}$-$\mathrm{H_2O}$ atmosphere holds the mean surface temperature at or below about $225\ \mathrm{K}$. Water vapour moves uphill and condenses as snow on the highlands, which adiabatic cooling under a thicker atmosphere turns into cold traps, and the lowland basins stay frozen. $\mathrm{CO_2}$ ice clouds scatter infrared radiation but their net warming is small. **(b)** Transient warm excursion. $\mathrm{H_2}$ from volcanism, serpentinisation or a large impact adds collision-induced absorption with $\mathrm{CO_2}$, and high-altitude water-ice clouds add warming in some models. The surface then becomes warm enough, at least seasonally, for highland snow to melt and run downhill, cutting valley networks and feeding lakes with deltas. In $\mathrm{H_2}$ outgassing models each excursion lasts $10^5$ to $10^6$ yr and ends when $\mathrm{H_2}$ escapes to space. Carbonate formation in wet ground is the slower sink that lowers $p\mathrm{CO_2}$ over many excursions, until $\mathrm{H_2}$-$\mathrm{CO_2}$ warming can no longer melt the snow. The geological record indicates several such excursions, and the icy-highlands baseline is a hypothesis, not a consensus. Based on {cite:t}`Wordsworth2016`, {cite:t}`Wordsworth2017`, {cite:t}`Wordsworth2021`, {cite:t}`Kite2019`, {cite:t}`KiteEpisodic2021`, {cite:t}`KiteConway2024` and {cite:t}`Kite2025`. Course-original figure.
 ```
-
-One proposed solution invokes reducing gases such as $\mathrm{H_2}$ or $\mathrm{CH_4}$, supplied by volcanic outgassing or by **serpentinisation** (water-rock reactions altering ultramafic minerals), which warm the surface through **collisionally induced absorption (CIA)** with $\mathrm{CO_2}$, transient absorption during molecular collisions ({numref}`fig:wordsworth-phase`) {cite:p}`Wordsworth2017`.
 
 ```{figure} figures/wordsworth2016_phasediagram.avif
 :name: fig:wordsworth-phase
@@ -556,7 +557,8 @@ One proposed solution invokes reducing gases such as $\mathrm{H_2}$ or $\mathrm{
 Idealised two-dimensional phase diagram for the steady-state climate of early Mars under a denser atmosphere, with steady-state mean surface temperature on the horizontal axis and total surface $\mathrm{H_2O}$ inventory on the vertical axis. The two dividers are drawn at $T_{\mathrm{surf}} \approx 280$ K and at a water inventory of $\approx 200$ m global equivalent layer, so each quadrant is one end-member regime: cold-and-wet (top left, thick highland icesheets with basal melting), warm-and-wet (top right, extreme greenhouse warming required), cold-and-relatively-dry (bottom left, thin highland ice and snow with episodic melting), and warm-and-dry (bottom right, liquid water only in low-lying regions). The schematic cross-section in each quadrant runs from the northern lowlands on the left to the southern highlands on the right and shows the resulting distribution of rock (orange), surface ice (grey), and liquid water (blue). The cold and relatively dry state, combined with episodic melting, fits most of the geological evidence; the cold-and-wet state conflicts with it. Reproduced from {cite:t}`Wordsworth2016`, Fig. 7.
 ```
 
-Alternatively, **episodic warming** (transient heating from impacts or volcanism) could form valleys on a cold planet {cite:p}`KiteEpisodic2021`.
+Impact heating alone was an earlier proposal for valley formation on a cold planet, but it does not match the duration and number of the wet episodes now inferred from the record {cite:p}`KiteConway2024`.
+A greenhouse effect from high-altitude water-ice clouds offers a longer-lived warming mechanism when surface water is patchy {cite:p}`KiteEpisodic2021`, although in some models it works only with large ice particles {cite:p}`KiteConway2024`.
 Fluvial features shifted from Noachian valleys to late Hesperian **alluvial fans** (deposits where channels slow) at mid-latitudes ({numref}`fig:kite-distribution`), indicating a transition from global to seasonal greenhouse warming ({numref}`fig:kite-schematic`) {cite:p}`KiteCarter2022`.
 
 ```{figure} figures/kite2022_valley_distribution.avif
@@ -575,8 +577,10 @@ Changing spatial distribution of water-worn landforms on Mars. **Top:** early-st
 Graphical summary of the {cite:t}`KiteCarter2022` model for the climate evolution of Mars. **Left:** geographically idealised cross-sections of the two eras, with the early-stage valley networks (blue) cut into the highlands at about $3.6$ Ga, and the late-stage alluvial fans (orange) confined to lower ground at $3.5$ to $3$ Ga; the grey subsurface band is the cryosphere. **Right:** the climate states of the model as a function of $\mathrm{CO_2}$ loss (horizontal, from $1000$ to $10$ mbar) and loss of non-$\mathrm{CO_2}$ warming (vertical, gray-gas column optical depth $\tau$ from $5$ down to $0$), with the present-day state marked at the bottom right. The bands run from warm and wet at the top, through warm lowlands with cold highlands, then cold and wet, to cold and dry at the bottom. The blue outline encloses the states that match the early era and the orange outline those that match the late era. The two can be connected with or without a change in $p\mathrm{CO_2}$, but a decline in non-$\mathrm{CO_2}$ radiative forcing is very probably required. Reproduced from {cite:t}`KiteCarter2022`, Fig. 6.
 ```
 
-Early Mars climate probably fluctuated on $10^4$ to $10^7$-year timescales before a one-way transition to modern cold, dry conditions.
-The balance between sustained warm conditions, episodic warming, and impact-driven hydrology remains debated.
+Early Mars climate probably fluctuated.
+The longest single river-forming period lasted more than $10^2$ to $10^3$ yr, the wet years add up to more than $10^5$ yr, and the record holds at least two river-forming periods {cite:p}`Kite2019`.
+Later work counts about seven major climate transitions between wetter and drier states, ending in the modern cold, dry state; volcanic eruptions and changes in mean obliquity are candidate drivers {cite:p}`KiteConway2024`.
+The relative roles of sustained warming, $\mathrm{H_2}$-driven excursions, cloud warming, and impact-driven hydrology remain debated.
 
 ### Modern Mars: thin atmosphere, dust, and methane
 
