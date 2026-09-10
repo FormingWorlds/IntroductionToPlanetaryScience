@@ -13,10 +13,7 @@ Carry at least four significant figures through the intermediate steps (the work
 All parts are analytical; no computer is needed.
 
 \begin{given}[Constants and data]
-$\sigma = 5.670 \times 10^{-8}\ \mathrm{W\,m^{-2}\,K^{-4}}$,\quad
 $G = 6.674 \times 10^{-11}\ \mathrm{m^3\,kg^{-1}\,s^{-2}}$,\quad
-$u = 1.661 \times 10^{-27}$ kg,\quad
-$S_\oplus = 1361\ \mathrm{W\,m^{-2}}$ (at $1$ AU),\quad
 $\ln 2 = 0.6931$
 
 \vskip4pt
@@ -24,14 +21,11 @@ Jupiter: $M = 1.898 \times 10^{27}$ kg, $R = 6.991 \times 10^{7}$ m, semi-major 
 Saturn: $M = 5.683 \times 10^{26}$ kg, volumetric mean radius $R_p = 58{,}232$ km, bulk density $\rho_p = 687\ \mathrm{kg\,m^{-3}}$
 
 \vskip4pt
-Metallic-hydrogen transition near $100$ GPa. Ring and moon densities: water ice $\rho_s = 1000\ \mathrm{kg\,m^{-3}}$, rock $\rho_s = 3000\ \mathrm{kg\,m^{-3}}$. Saturn A-ring outer edge observed at $\sim 137{,}000$ km
+Metallic-hydrogen transition near $100$ GPa. Ring and moon densities: water ice $\rho_s = 1000\ \mathrm{kg\,m^{-3}}$. Saturn A-ring outer edge observed at $\sim 137{,}000$ km
 
 \vskip4pt
-$^{26}$Al: half-life $t_{1/2} = 0.717$ Myr, Solar-System initial ratio $(^{26}\mathrm{Al}/^{27}\mathrm{Al})_0 = 5.2 \times 10^{-5}$.\quad
-$^{238}$U: $t_{1/2} = 4.4683$ Gyr; $^{235}$U: $t_{1/2} = 0.7038$ Gyr; present $^{238}\mathrm{U}/^{235}\mathrm{U} = 137.82$; CAI age $t = 4567.3$ Myr
+$^{26}$Al: half-life $t_{1/2} = 0.717$ Myr, Solar-System initial ratio $(^{26}\mathrm{Al}/^{27}\mathrm{Al})_0 = 5.2 \times 10^{-5}$.
 
-\vskip4pt
-Water ice: latent heat of sublimation $L = 2.83 \times 10^{6}\ \mathrm{J\,kg^{-1}}$, molecular mass $m = 18\,u$. Cometary nucleus: Bond albedo $A \approx 0$ (a dark, fast rotator)
 
 \vskip4pt
 {\footnotesize The uniform-density central pressure of a self-gravitating sphere in hydrostatic equilibrium is $P_c = 3GM^2/(8\pi R^4)$; the fluid Roche limit is $d_R = 2.46\,R_p(\rho_p/\rho_s)^{1/3}$ and the rigid-body value is $d_R = 1.26\,R_p(\rho_p/\rho_s)^{1/3}$. Data as in the Lecture 11 and 12 notes.}
@@ -130,17 +124,6 @@ The A-ring outer edge lies at $137{,}000$ km, so the fluid estimate matches to
 \answer{The fluid Roche limit, $\approx 126{,}350$ km, matches the A-ring outer edge to within about $8\%$: the main rings end near where a self-gravitating fluid body would be disrupted.}
 \end{solution}
 
-\parti A ring particle made of rock rather than ice has $\rho_s = 3000\ \mathrm{kg\,m^{-3}}$. Recompute the fluid Roche limit and explain why the main rings, which extend out to near the fluid Roche limit of part (b), are icy rather than rocky.
-
-\begin{solution}
-With $(687/3000)^{1/3} = 0.612$,
-\[
-d_R = 2.46 \times 58{,}232\ \mathrm{km} \times 0.612 = 87{,}670\ \mathrm{km}.
-\]
-A denser body resists tidal disruption to smaller distances, so its Roche limit is closer in.
-\answer{A rocky body survives down to $\approx 87{,}670$ km, well inside the main rings, so a rock aggregate near $126{,}350$ km would not be disrupted and would accrete into a moon. Only ice, disrupted out to $126{,}350$ km, is forced to remain as a ring there.}
-\end{solution}
-
 \parti Small moons such as Pan and Daphnis orbit inside the A ring, well inside the fluid Roche limit of part (b) but outside the rigid-body limit of part (a). Explain in two or three sentences how both facts can be true, and what the two limits bracket.
 
 \begin{solution}
@@ -179,29 +162,6 @@ After $2$ Myr,
 \]
 The heating rate is proportional to the live $^{26}$Al, so it is lower by the factor $1/0.1447 = 6.9$.
 \answer{A body forming $2$ Myr late has $\approx 7.52\times10^{-6}$ live $^{26}\mathrm{Al}/^{27}\mathrm{Al}$, a factor $6.9$ less heating. Early planetesimals melt and differentiate; those forming more than a couple of million years late stay cold and undifferentiated.}
-\end{solution}
-
-\parti The Pb-Pb clock uses two uranium chains. For a sample of age $t$ the radiogenic ratio is
-\[
-\frac{^{207}\mathrm{Pb}^*}{^{206}\mathrm{Pb}^*} = \frac{^{235}\mathrm{U}}{^{238}\mathrm{U}}\,\frac{e^{\lambda_{235}t}-1}{e^{\lambda_{238}t}-1}.
-\]
-Using the CAI age $t = 4.5673$ Gyr and present $^{238}\mathrm{U}/^{235}\mathrm{U} = 137.82$, compute this ratio.
-
-\begin{solution}
-The decay constants are
-\[
-\lambda_{235} = \frac{0.6931}{0.7038} = 0.9848\ \mathrm{Gyr^{-1}}, \qquad
-\lambda_{238} = \frac{0.6931}{4.4683} = 0.1551\ \mathrm{Gyr^{-1}}.
-\]
-Then $\lambda_{235}t = 4.498$ and $\lambda_{238}t = 0.7084$, so
-\[
-e^{\lambda_{235}t}-1 = 88.84, \qquad e^{\lambda_{238}t}-1 = 1.031.
-\]
-With $^{235}\mathrm{U}/^{238}\mathrm{U} = 1/137.82 = 7.256\times10^{-3}$,
-\[
-\frac{^{207}\mathrm{Pb}^*}{^{206}\mathrm{Pb}^*} = 7.256\times10^{-3} \times \frac{88.84}{1.031} = 7.256\times10^{-3} \times 86.17 = 0.6252.
-\]
-\answer{The isochron slope is $\approx 0.625$. Measuring this Pb-Pb ratio in a meteorite gives its absolute age directly, which is how the CAI age $4567.3$ Myr is set.}
 \end{solution}
 
 \parti Explain in two or three sentences why the short-lived $^{26}$Al clock gives high time resolution but only relative ages, while the long-lived U-Pb clock gives absolute ages but coarser resolution over the first few million years.
@@ -243,16 +203,6 @@ a_{2:1} = 5.203 \times (1/2)^{2/3} = 5.203 \times 0.6300 = 3.278\ \mathrm{AU}.
 \answer{The $5\!:\!2$ gap is at $\approx 2.82$ AU and the $2\!:\!1$ gap at $\approx 3.28$ AU, the outer edge of the main belt.}
 \end{solution}
 
-\parti Using Kepler's third law, compute the orbital period of an asteroid at the $3\!:\!1$ location you found in part (a), and confirm it is one third of Jupiter's period.
-
-\begin{solution}
-\[
-T = a^{3/2} = 2.501^{3/2} = 2.501 \times \sqrt{2.501} = 2.501 \times 1.5814 = 3.955\ \mathrm{yr}.
-\]
-One third of Jupiter's period is $T_\mathrm{J}/3 = 11.86/3 = 3.953$ yr.
-\answer{$T \approx 3.955$ yr, equal to $T_\mathrm{J}/3 = 3.953$ yr to within rounding: the asteroid laps Jupiter exactly three times per Jupiter orbit, which is the resonance condition.}
-\end{solution}
-
 \parti An asteroid exactly at a Kirkwood gap and one just outside it look identical in a snapshot of positions. Explain in two or three sentences what physically empties the gap, and why the gaps are visible in a plot of semi-major axis but not in an instantaneous map of the belt.
 
 \begin{solution}
@@ -260,59 +210,4 @@ At the resonance Jupiter kicks the asteroid at the same orbital phase every cycl
 A high eccentricity eventually makes the orbit cross Mars or Jupiter, and a close encounter removes the asteroid.
 The clearing acts on the orbit's semi-major axis, not its instantaneous position, so it shows only when bodies are binned by $a$; at any instant a resonant asteroid can be anywhere along its orbit and looks ordinary.
 \answer{Coherent resonant kicks pump eccentricity until the orbit becomes planet-crossing and the body is removed; the depletion appears only in semi-major-axis space.}
-\end{solution}
-
-
-% ════════════════════════════════════════════════════════════
-\problem{Cometary activity and heliocentric distance}
-
-A comet is a dirty snowball that turns on as it nears the Sun and its ices sublimate.
-Distance is the control.
-Simple energy balance sets both the temperature and the gas production, and explains why comets are active only in the inner Solar System.
-
-\parti For a dark, fast-rotating nucleus ($A \approx 0$) the whole surface reradiates the absorbed sunlight, $S_\oplus(1\,\mathrm{AU}/r)^2 = 4\sigma T^4$. Compute the temperature at $1$ AU and give the scaling $T(r)$. Evaluate it at $3$ AU.
-
-\begin{solution}
-\[
-T(1\,\mathrm{AU}) = \left[\frac{S_\oplus}{4\sigma}\right]^{1/4}
-= \left[\frac{1361}{4 \times 5.670\times10^{-8}}\right]^{1/4}
-= \left(6.0009\times10^{9}\right)^{1/4} = 278.3\ \mathrm{K}.
-\]
-Since $T \propto r^{-1/2}$,
-\[
-T(r) = 278.3\ \mathrm{K} \times (r/\mathrm{AU})^{-1/2}, \qquad
-T(3\,\mathrm{AU}) = \frac{278.3}{\sqrt{3}} = 160.7\ \mathrm{K}.
-\]
-\answer{$T \approx 278.3$ K at $1$ AU and falls as $r^{-1/2}$, reaching $\approx 161$ K at $3$ AU.}
-\end{solution}
-
-\parti Water ice sublimates efficiently once the nucleus reaches about $150$ K. Find the heliocentric distance where $T(r) = 150$ K and interpret it as the onset distance for strong activity.
-
-\begin{solution}
-\[
-r = \left(\frac{278.3}{150}\right)^2 = (1.8553)^2 = 3.442\ \mathrm{AU}.
-\]
-\answer{Strong water-driven activity switches on near $3.4$ AU, consistent with comets brightening as they cross the outer asteroid belt and being efficiently active inside about $5$ AU.}
-\end{solution}
-
-\parti Close to the Sun almost all absorbed sunlight goes into latent heat, so the sublimation rate per unit area is $Z = S_\oplus(1\,\mathrm{AU}/r)^2 / (4Lm)$ molecules per square metre per second. Compute $Z$ at $1$ AU and give its scaling with $r$.
-
-\begin{solution}
-The molecular mass is $m = 18\,u = 18 \times 1.661\times10^{-27} = 2.990\times10^{-26}$ kg, so
-\[
-Z = \frac{S_\oplus}{4Lm}
-= \frac{1361}{4 \times 2.83\times10^{6} \times 2.990\times10^{-26}}
-= \frac{1361}{3.385\times10^{-19}} = 4.021\times10^{21}\ \mathrm{m^{-2}\,s^{-1}}.
-\]
-In this sublimation-limited regime $Z \propto r^{-2}$, so it falls by a factor $9$ between $1$ AU and $3$ AU.
-\answer{$Z \approx 4.0\times10^{21}\ \mathrm{m^{-2}\,s^{-1}}$ at $1$ AU, scaling as $r^{-2}$. This is an upper bound: near and beyond $3$ AU reradiation takes most of the energy and the true rate drops far faster.}
-\end{solution}
-
-\parti Explain in two or three sentences why comets are active only near the Sun and dormant in the outer Solar System, and why the true fall-off in gas production beyond a few AU is much steeper than the $r^{-2}$ of part (c).
-
-\begin{solution}
-Sublimation is controlled by temperature, which falls with distance, so beyond a few AU the nucleus is too cold for water ice to sublimate fast and the comet is dormant.
-The $r^{-2}$ law assumes every photon drives sublimation, but as the surface cools an ever larger share of the absorbed sunlight is lost to thermal reradiation instead.
-The sublimation flux also depends exponentially on temperature through the vapour pressure, so once reradiation dominates the production rate collapses far faster than $r^{-2}$.
-\answer{Activity needs a warm enough surface to sublimate ice; past a few AU reradiation and the exponential vapour-pressure cutoff shut it down far faster than the geometric $r^{-2}$ dilution alone.}
 \end{solution}
