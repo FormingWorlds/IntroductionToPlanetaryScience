@@ -151,8 +151,9 @@ Each week consists of:
 - Erosion and weathering: aeolian, fluvial, glacial, chemical
 - Remote sensing of surfaces: spectroscopy, radar, altimetry
 - Regolith formation and space weathering
-- Cryovolcanism on icy bodies: Enceladus, Triton, Europa
-- Recent advances: Perseverance rover surface analysis on Mars, DART mission impact results, new remote sensing of volcanic activity on Io and Venus
+- Cryovolcanism on icy bodies: the mechanism, with Enceladus, Europa and Triton in one section and a forward reference to Lecture 11
+- Recent advances: one item, the Io eruption caught by JunoCam in 2024
+- **Length budget (set 2026-09-10 after the L02 delivery ran 60 min to the break):** deck at most 60 frames, the board derivation at most 5 live steps, notes about 7500 to 8000 words. L07 deck 44 frames, notes 7650 words, board sheet 5 steps; the $D \propto L^{3/4}$ extension is stated, not derived, and Worksheet 4 problem 1b has the students show it. Mission catalogues (Perseverance, DART, OSIRIS-REx, Hayabusa2, Pluto) live in Lectures 10 and 12.
 
 ### Lecture 8: Planetary Interiors — Structure, Composition, & Dynamics
 
@@ -618,8 +619,8 @@ Order:
 10. L04 slides
 11. Worksheet 02 (L03 + L04)
 12. L05 notes → L05 slides → L06 notes → L06 slides → Worksheet 03 (L05 + L06)
-13. L07 notes → L07 slides → L08 notes → L08 slides → Worksheet 04 (L07 + L08) (drafted 2026-08-20; 5 problems / 15 parts, 3-page sheet plus solutions)
-14. Mini-lecture 04 (Tutorial 4, L07 + L08) (drafted 2026-08-20; 8 slides)
+13. L07 notes → L07 slides → L08 notes → L08 slides → Worksheet 04 (L07 + L08) (drafted 2026-08-20; 4 problems / 12 parts after the 2026-09-10 length budget, seismology problem removed, 3-page sheet plus solutions)
+14. Mini-lecture 04 (Tutorial 4, L07 + L08) (drafted 2026-08-20; 7 slides, one per problem)
 15. L09 notes → L09 slides → L10 notes → L10 slides → Worksheet 05 (L09 + L10)
 16. L11 notes → L11 slides → L12 notes → L12 slides → Worksheet 06 (L11 + L12)
 17. L13 notes → L13 slides → L14 notes → L14 slides → Worksheet 07 (L13 + L14)
@@ -1139,7 +1140,7 @@ Date opened: **2026-05-16**.
 | L04 | 25 | 24 | 1 |
 | L05 | 26 | 26 | 0 |
 | L06 | 26 | 25 | 1 |
-| L07 | 26 | 26 | 0 |
+| L07 | 25 | 25 | 0 |
 | L08 | 25 | 25 | 0 |
 | L09 | 28 | 4 | 24 |
 | L10 | 31 | 1 | 30 |
