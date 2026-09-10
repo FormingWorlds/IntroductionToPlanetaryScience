@@ -19,7 +19,7 @@ Lectures 9 to 12 walked the solar system body by body: Earth and Venus ({ref}`Le
 Lecture 13 showed how the same physics applies to several thousand planetary systems detected since 1995 {cite:p}`MayorQueloz1995`.
 
 The thread is simple: physical processes shape planetary outcomes everywhere.
-The diversity of planets in the galaxy, and the differences between Earth, Venus, and Mars, reflect the same physical levers operating across a wide range of boundary conditions.
+The diversity of planets in the galaxy, and the differences between Earth, Venus, and Mars, reflect the same physical processes operating across a wide range of boundary conditions.
 
 This final lecture provides the synthesis.
 Part 1 places the solar system inside the exoplanet population, identifying where it is typical and where it is atypical.
@@ -30,7 +30,7 @@ The blackboard derivation reconstructs the classical habitable zone from energy 
 ### Planet formation theory meets observation
 
 Dust in disks coagulates into pebbles forming **planetesimals**, bodies from roughly a kilometre across produced by the streaming instability.
-Accreting pebbles and planetesimals build cores that trigger runaway gas accretion {cite:p}`Drazkowska2023,Lambrechts2012` ({numref}`fig:l14:formation-overview` and {numref}`fig:l14:envelope-accretion`).
+Accreting pebbles and planetesimals build cores that trigger runaway gas accretion {cite:p}`Drazkowska2023` ({numref}`fig:l14:formation-overview`; {ref}`Lecture 2 <lecture02>`).
 
 ```{figure} figures/drazkowska2023_growth_processes.avif
 :align: center
@@ -40,37 +40,8 @@ Accreting pebbles and planetesimals build cores that trigger runaway gas accreti
 Overview of the dust-to-planet growth processes operating in protoplanetary disks. Dust grains coagulate into pebbles whose radial drift can either be halted at pressure traps (planetesimal formation via the streaming instability) or accreted directly onto growing embryos. Larger embryos compete via runaway and oligarchic growth and, once massive enough, trigger gas envelope accretion. Reproduced from {cite:t}`Drazkowska2023`.
 ```
 
-```{figure} figures/lambrechts2012_core_growth.avif
-:align: center
-:name: fig:l14:envelope-accretion
-:width: 90%
-
-Mass growth of a planetary core as a function of time at three orbital radii (0.5, 5, and 50 AU), comparing pebble accretion in the drift and Hill regimes (solid lines) with classical planetesimal accretion (grey dotted lines). Pebble accretion reaches 10 Earth masses well before the typical disk lifetime, while planetesimal accretion at 5 AU takes longer than the disk lifetime. The masses of Ceres and Pluto are marked for reference. Reproduced from {cite:t}`Lambrechts2012`.
-```
-
-ALMA images resolve disk gaps and rings formed by planets {cite:p}`Andrews2018` ({numref}`fig:l14:dsharp`).
-Infrared excess indicates disk lifetimes of 3 to 5 Myr {cite:p}`Haisch2001`, defining the window for gas accretion.
-
-```{figure} figures/andrews2018_dsharp_gallery.avif
-:align: center
-:name: fig:l14:dsharp
-:width: 90%
-
-Gallery of 240 GHz (1.25 mm) ALMA continuum images of 20 nearby protoplanetary disks from the DSHARP large programme. Concentric rings, gaps, and asymmetric features are nearly ubiquitous, and most are interpreted as signatures of planetary growth in progress. The combination of disk substructure surveys with disk dust mass measurements provides the strongest empirical constraints on the inputs to planet formation models. Reproduced from {cite:t}`Andrews2018`.
-```
-
-```{figure} figures/lambrechts2012_growth_time.avif
-:align: center
-:name: fig:l14:accretion-timescales
-:width: 90%
-
-Time required to grow a 10 Earth mass core as a function of distance from the star. The solid black line is pebble accretion in the Hill regime, the solid grey line is planetesimal accretion, and the dashed grey line is accretion of planetesimal fragments from a thin midplane layer. The red hatched band, roughly 1 to 10 Myr, is the interval over which the disk loses its gas, so a core that is to capture a gas envelope must reach 10 Earth masses before it. The pebble line stays below the band at every radius plotted, while the planetesimal line rises through it within a few AU and lies above it in the outer disk. Reproduced from {cite:t}`Lambrechts2012`.
-```
-
-Disk migration explains close-in giants and **resonant chains**, systems locked in near-integer period ratios {cite:p}`Paardekooper2023`.
-Pebble accretion allows cores to reach envelope runaway within disk lifetimes ({numref}`fig:l14:accretion-timescales`).
+Disk migration explains close-in giants and **resonant chains**, systems locked in near-integer period ratios ({ref}`Lecture 13 <lecture13>`).
 Jupiter's early growth may have isolated the non-carbonaceous and carbonaceous (NC-CC) meteorite reservoirs {cite:p}`Kruijer2017` ({numref}`fig:l14:nccc-timeline`).
-The **Nice model** (a late instability of the giant planets) and the **Grand Tack** (an inward and then outward migration of Jupiter) reproduce the depleted asteroid belt and the Trojan asteroids {cite:p}`Tsiganis2005,Walsh2011`.
 
 ```{figure} figures/lichtenberg2023_nccc_timeline.avif
 :align: center
@@ -80,16 +51,7 @@ The **Nice model** (a late instability of the giant planets) and the **Grand Tac
 Timeline of solar system formation reconstructed from isotopic dating of meteoritic materials. The non-carbonaceous (NC, red) and carbonaceous (CC, blue) reservoirs maintain distinct isotopic signatures from CAI (calcium-aluminium-rich inclusion, among the earliest solids to condense in the solar system) formation onwards, indicating that they accreted in physically separated regions of the disk for at least the first 2--3 Myr. Reproduced from {cite:t}`Lichtenberg2023`.
 ```
 
-Surveys reveal a **radius valley** at $\sim 1.8\,\Rearth$ separating super-Earths from sub-Neptunes {cite:p}`Fulton2017` ({numref}`fig:l14:fulton-valley`).
-Photoevaporation by stellar XUV {cite:p}`Owen2017` and core-powered mass loss {cite:p}`Gupta2019` both predict a valley in the right location, and current data cannot yet reject either mechanism.
-
-```{figure} figures/fulton2017_radius_valley.avif
-:align: center
-:name: fig:l14:fulton-valley
-:width: 70%
-
-The "Fulton gap" in the radius distribution of small close-in exoplanets. The two-dimensional map of planet size against incident stellar light shows a deficit of planets at $\sim 1.8\,\Rearth$ that separates a denser super-Earth population from a sub-Neptune population. The lower panel overlays the predictions of photoevaporation models, which can reproduce both the location and the slope of the valley with stellar irradiation. Reproduced from {cite:t}`Fulton2017`.
-```
+Surveys reveal a **radius valley** at $\sim 1.8\,\Rearth$ separating super-Earths from sub-Neptunes ({ref}`Lecture 13 <lecture13>`).
 
 Meteorite reservoir separation may require Jupiter core growth within $\sim 1$ Myr of CAIs {cite:p}`Kruijer2017`.
 Alternatively, the **snow line**, the disk radius where water ice condenses, divides reservoirs without an early core {cite:p}`Lichtenberg2021`.
@@ -98,34 +60,18 @@ This is unresolved and matters for whether Jupiter set the boundary conditions o
 Planets between $1$ and $4\,\Rearth$ are the most common exoplanets {cite:p}`Bryson2021`, yet the solar system contains none.
 This absence may reflect pebble blocking by Jupiter, low solid density, or stochastic history.
 
-**Population synthesis** models simulate planet formation to predict demographic outcomes ({numref}`fig:l14:popsyn`).
+**Population synthesis** models simulate planet formation to predict demographic outcomes.
 Synthetic populations produce super-Earths, confirming that their absence in the solar system requires a specific dynamical explanation.
-
-```{figure} figures/drazkowska2023_population_synthesis.avif
-:align: center
-:name: fig:l14:popsyn
-:width: 90%
-
-Population synthesis predictions for planet mass versus orbital period assuming planetesimal accretion (panel A) and pebble accretion (panel B). Both models populate the super-Earth, hot Jupiter, warm gas giant, and cold gas giant regimes, with super-Earth mass fractions of $\sim 35\%$ in models with pebble accretion. Reproduced from {cite:t}`Drazkowska2023`.
-```
 
 ### The solar system overlaid on the exoplanet diagram
 
-The period-radius diagram highlights where our solar system differs from exoplanet architectures ({numref}`fig:l14:periodradius`).
-
-```{figure} figures/raymond2022_period_radius.avif
-:align: center
-:name: fig:l14:periodradius
-:width: 70%
-
-Census of confirmed transiting exoplanets in orbital period and planet size. Open circles are all transiting planets. The box in the top panel is the region used to define a compact multi, a system with at least two planets inside it, and the filled circles are the planets that meet that definition. The middle panel joins the planets of five compact multis whose sizes and spacings are unusually uniform (Kepler-11, Kepler-172, Kepler-374, Kepler-444, Kepler-1542), the "peas-in-a-pod" pattern. The bottom panel joins three systems that do not show it: WASP-47 and KOI-94 meet the compact-multi definition but span a wide range of planet sizes, and the young system V1298 Tau fails it. Reproduced from {cite:t}`Weiss2023`.
-```
+The period-radius diagram highlights where our solar system differs from exoplanet architectures ({ref}`Lecture 13 <lecture13>`).
 
 A disk snow line creates a typical radial composition gradient {cite:p}`Weiss2023`, but four features are unusual:
 
 1. No planets between $1\,\Rearth$ and $\sim 4\,\Rearth$, though most stars host one within 1 AU {cite:p}`Bergsten2022`.
 2. Circular giant orbits at 5 and 10 AU rather than eccentric orbits.
-3. No **hot Jupiter** or hot Neptune; close-in gas giants orbit $0.5$ to $1\%$ of Sun-like stars, and we have neither.
+3. No **hot Jupiter**, found around $0.5$ to $1\%$ of Sun-like stars, and no hot Neptune, which is rarer still {cite:p}`Mazeh2016`.
 4. Irregular terrestrial spacings rather than uniform **peas-in-a-pod architectures** ({numref}`fig:l14:peas`; {cite:t}`Weiss2018`).
 
 ```{figure} figures/raymond2022_peas_in_a_pod.avif
@@ -150,11 +96,8 @@ Mass-radius diagram for rocky and small exoplanets from {cite:t}`Lichtenberg2025
 ### "Is the solar system rare?"
 
 Whether the solar system is rare remains unknown because survey limits have left much of its parameter space unobserved.
-Detecting a planet in a 12-year Jupiter-like orbit requires decades of monitoring or radial-velocity baselines, making Gaia DR4 (scheduled for December 2026) the first survey sensitive to astrometric Jupiter analogues at scale.
-Similarly, **Earth analogues** ($\Rearth$-sized planets in 1-year orbits around Sun-like G dwarfs) lie at the edge of current sensitivity and require upcoming missions such as PLATO (launch early 2027) and Gaia DR4/DR5.
-
-Existing exoplanet statistics reflect a sample heavily biased toward close-in, massive planets, leaving the true distribution unsettled.
-The inner solar system is atypical relative to known compact systems because our terrestrial planets are widely spaced and varied in mass rather than following a uniform peas-in-a-pod pattern.
+Detecting a planet in a 12-year Jupiter-like orbit requires decades of monitoring or radial-velocity baselines, making Gaia DR4 the first survey sensitive to astrometric Jupiter analogues at scale.
+Similarly, **Earth analogues** ($\Rearth$-sized planets in 1-year orbits around Sun-like G dwarfs) lie at the edge of current sensitivity and require upcoming missions such as PLATO and Gaia DR4/DR5.
 
 The planet **occurrence rate** (the average number of planets per star in a given parameter range) depends strongly on stellar type ({numref}`fig:l14:mulders-occurrence`).
 Rocky and sub-Neptune-sized planets on orbits with periods $< 50$ days are roughly twice as common around early M dwarfs as around F and G dwarfs, although whether this reflects formation efficiency or survey detection bias remains debated.
@@ -253,6 +196,7 @@ Habitability therefore depends on evolutionary trajectories, requiring coupled c
 
 The **carbonate-silicate cycle** is Earth's long-term thermostat by balancing volcanic $\mathrm{CO_2}$ outgassing with silicate weathering and carbonate subduction ({ref}`Lecture 6 <lecture06>`, {ref}`Lecture 9 <lecture09>`).
 Warmer surface temperatures increase weathering rates, accelerating $\mathrm{CO_2}$ removal and cooling the planet.
+On a body whose stagnant lid has cooled the interior (Mars after $\sim 1$ Ga), volcanic outgassing ceases and the thermostat loses its return path ({ref}`Lecture 7 <lecture07>`, {ref}`Lecture 10 <lecture10>`).
 
 This thermostat requires liquid water, active volcanism, and plate tectonic recycling.
 Venus illustrates the failure of this mechanism ({ref}`Lecture 9 <lecture09>`).
@@ -297,84 +241,59 @@ Different boundary conditions produce divergent atmospheric end states from iden
 Accretion timing also controls volatile retention.
 Planetesimals accreting within the first $\sim 1$ Myr after CAI formation are heated above the water-ice melting point by short-lived radionuclides ($^{26}\mathrm{Al}$, half-life $\sim 0.7$ Myr) and lose water by dehydration.
 Bodies accreting later beyond the snow line retain their volatiles {cite:p}`Lichtenberg2023`.
-Building blocks formed early are therefore systematically dryer than late-formed ones.
 
-The second mechanism is atmospheric escape during the magma ocean phase.
-Under an EUV-bright young Sun, hydrodynamic escape can remove water before the magma ocean solidifies ({ref}`Lecture 9 <lecture09>`; {cite:t}`Hamano2013`).
-For Venus, with $\sim 1.9$ times Earth's instellation, prolonged magma ocean solidification allowed extensive hydrogen escape, preventing liquid water accumulation ({numref}`fig:l14:hamano-typeII`).
-
-```{figure} figures/hamano2013_typeI_typeII.avif
-:align: center
-:name: fig:l14:hamano-typeII
-:width: 70%
-
-Two distinct types of terrestrial planet defined by the {cite:t}`Hamano2013` model. Panel (a) shows magma-ocean solidification time as a function of orbital distance and instellation for a range of initial water inventories; planets inside a critical orbital distance ($\sim 0.77$ AU around a Sun-like star) cannot solidify their magma oceans before most of their water is lost to hydrodynamic escape ("Type II"), while planets further out solidify quickly and retain most of their water ("Type I"). Panel (b) shows the resulting final water inventories at the end of magma-ocean solidification. Modified from {cite:t}`Hamano2013` as reproduced in {cite:t}`Lichtenberg2023`.
-```
+The second mechanism is atmospheric escape during the magma ocean phase, where, on planets inside the runaway threshold (Type II of {cite:t}`Hamano2013`), hydrodynamic escape removes the water before the surface solidifies ({ref}`Lecture 9 <lecture09>`).
 
 The third mechanism is long-term mantle-atmosphere volatile exchange.
 On planets with active plate tectonics, outgassing and subduction balance to maintain steady surface inventories over billions of years.
-On stagnant-lid planets, weak return flow causes surface inventories to drift.
-On small bodies that lose interior convection (such as the Moon, or Mars after $\sim 1$ Ga), volcanic outgassing ceases.
 
 The fourth mechanism is stellar evolution.
 For M-dwarf planets, the luminous pre-main-sequence phase keeps the habitable zone within the runaway greenhouse boundary for the first few hundred Myr ({ref}`Lecture 13 <lecture13>`; {cite:t}`LugerBarnes2015`).
-For G dwarfs, the faint young Sun of 4 Gyr ago required stronger greenhouse warming, while stellar brightening gradually shifts the habitable zone outward.
 
 Radiogenic clocks in meteorites and lunar samples show that core formation, magma ocean crystallisation, and silicate differentiation finished within the first $\sim 100$ Myr {cite:p}`Lichtenberg2023`.
-These early interior processes established the boundary conditions for all subsequent atmospheric evolution.
 
-Present-day water inventories are therefore set primarily by internal planetary evolution rather than initial delivery.
 The D/H ratios from {ref}`Lecture 12 <lecture12>` constrain delivery combined with evolutionary processing.
 Likewise, exoplanet atmospheric water observations reflect the integrated history of accretion, magma-ocean processing, escape, outgassing, and tectonic recycling.
 
 ### The Drake equation and its limitations
 
-The **Drake equation** is a heuristic factorisation used to organise questions about the abundance of communicating civilisations in the galaxy, originally written for the 1961 Green Bank meeting {cite:p}`Drake1965`:
+The **Drake equation** is a heuristic factorisation organising questions about communicating civilisations in the galaxy, written for the 1961 Green Bank meeting {cite:p}`Drake1965`:
 
 $$
 N = R_\star \cdot f_p \cdot n_e \cdot f_l \cdot f_i \cdot f_c \cdot L \,.
 $$
 
-Here $R_\star$ is the rate of star formation in the galaxy, $f_p$ is the fraction of stars with planets, $n_e$ is the number of habitable-zone planets per system, $f_l$ is the fraction of habitable planets on which life arises, $f_i$ is the fraction where intelligence evolves, $f_c$ is the fraction that develops detectable broadcasting technology, and $L$ is the average lifetime of the communicative phase.
-Multiplying these factors yields $N$, the expected number of communicating civilisations in the galaxy at any given time.
+Here $R_\star$ is the galactic star formation rate, $f_p$ the fraction of stars with planets, $n_e$ the number of habitable-zone planets per system, $f_l$ the fraction hosting life, $f_i$ the fraction evolving intelligence, $f_c$ the fraction developing broadcasting technology, and $L$ the communicative lifetime.
 
-The equation separates the problem into distinct disciplinary inputs, making plain that only the first three factors are currently constrained by observation.
 Stellar astrophysics determines $R_\star$, while exoplanet surveys show that $f_p$ is of order unity ({ref}`Lecture 13 <lecture13>`).
 For Sun-like stars, Kepler and TESS constrain $n_e$ to between $0.1$ and $0.6$ depending on the habitability definition {cite:p}`Bryson2021`.
-In contrast, the remaining four factors ($f_l$, $f_i$, $f_c$, $L$) lack quantitative empirical constraints.
-Earth provides the sole data point for $f_l$, whereas $f_i$, $f_c$, and $L$ have no statistical constraints beyond our own lineage and the last $\sim 100$ years.
+In contrast, Earth provides the sole data point for $f_l$, whereas $f_i$, $f_c$, and $L$ have no statistical constraints beyond our own lineage and the last $\sim 100$ years.
 
 The Drake equation is a qualitative framework rather than a predictive estimator, because point estimates of $N$ face five fundamental limitations:
 
-1. Coupled factors: biospheres co-evolve with planetary interiors and atmospheres, so the emergence of intelligence or communication cannot be strictly separated into independent multiplicative terms.
-2. Orders-of-magnitude uncertainty: published estimates for $f_l$, $f_i$, $f_c$, and $L$ span four to ten orders of magnitude, causing the product to reflect input priors rather than measurements.
-3. Non-equilibrium contingency: the origin of life is a historical, non-equilibrium process rather than a steady-state chain with stationary transition probabilities.
-4. Assumed uniformity: the single-parameter formulation averages across diverse stellar environments, planet types, and atmospheric histories.
-5. Anthropic selection: Earth is our only observed example of life, creating an observer selection effect that complicates extrapolation.
+1. Coupled factors: biospheres co-evolve with planetary interiors and atmospheres, preventing strict factor independence.
+2. Orders-of-magnitude uncertainty: published estimates for $f_l$, $f_i$, $f_c$, and $L$ span four to ten orders of magnitude, reflecting input priors rather than data.
+3. Non-equilibrium contingency: the origin of life is a historical, non-equilibrium process rather than a stationary Markov chain.
+4. Assumed uniformity: the single-parameter formulation averages across diverse stellar environments, planet types, and evolutionary histories.
+5. Anthropic selection: Earth is our only observed example of life, creating an observer selection effect.
 
-{cite:t}`SandbergDrexlerOrd2018` quantified this uncertainty by sampling each factor from its published range of scientific estimates ({numref}`fig:l14:sandberg-drake`).
-Propagating these broad distributions reveals that roughly one third of the posterior probability mass falls below $N = 1$ in the Milky Way, and about ten percent falls below the threshold for being alone in the observable universe.
+Sampling each factor across published ranges ({numref}`fig:l14:sandberg-drake`), {cite:t}`SandbergDrexlerOrd2018` found that roughly one third of the posterior probability mass falls below $N = 1$ in the Milky Way, and about ten percent falls below being alone in the observable universe.
 {cite:t}`SandbergDrexlerOrd2018` argue that this dissolves the **Fermi paradox**, the apparent contradiction between high estimates of extraterrestrial civilisations and the lack of observational evidence.
-The silence of the galaxy is fully consistent with current knowledge once the genuine uncertainty in the inputs is acknowledged.
 
-The broad posterior in {numref}`fig:l14:sandberg-drake` arises because unconstrained factors spanning multiple decades require log-uniform priors rather than uniform priors.
-Taking the logarithm converts the product into a sum:
+Because unconstrained factors spanning multiple decades require log-uniform priors, taking the logarithm converts the product into a sum:
 
 $$
 \log_{10} N = \log_{10}(R_\star f_p n_e) + \log_{10} f_l + \log_{10} f_i + \log_{10} f_c + \log_{10} L \,,
 $$
 
-The distribution of $\log_{10} N$ is the convolution of the individual log-factor distributions.
-If the four unconstrained factors are log-uniform over $[-10, 0]$, their sum spans $[-40, 0]$ with a central peak and tails extending to $\log_{10} N \sim -30$.
-Combining these terms with the bounded astronomical prefactor $R_\star f_p n_e$ yields a posterior distribution stretching across $\sim 30$ decades.
-Broad priors on multiplicative factors inevitably generate wide product distributions, showing that any point estimate of $N$ is determined by prior choice rather than data.
+If the four unconstrained factors are log-uniform over $[-10, 0]$, their sum spans $[-40, 0]$ with tails to $\log_{10} N \sim -30$, yielding a posterior stretching across $\sim 30$ decades.
 
 ```{figure} figures/sandberg2018_drake_posterior.avif
 :align: center
 :name: fig:l14:sandberg-drake
 :width: 80%
 
-Posterior probability distribution for the number $N$ of communicating civilisations in the observable universe, computed by {cite:t}`SandbergDrexlerOrd2018` by Monte-Carlo sampling each Drake-equation factor from its published range of estimates rather than from a single point estimate. (Top) Probability density: the distribution is heavily bimodal, with one peak below $N \sim 10^{-20}$ and another near $N \sim 1$ to $10^5$. The red circles mark Drake-style point estimates from the literature. (Middle) Cumulative distribution: roughly one third of the probability mass lies below $N = 1$, corresponding to "we are alone in the Milky Way"; only about $10\%$ of the probability mass lies below the much lower threshold $N \ll 1$ corresponding to "we are alone in the observable universe". (Bottom) Cumulative distribution of distance to the nearest civilisation. The two vertical lines mark the boundary "alone in the Milky Way" (red) and "alone in the observable universe" (blue). Reproduced from {cite:t}`SandbergDrexlerOrd2018`.
+Posterior distribution for the number $N$ of communicating civilisations in the observable universe from Monte-Carlo sampling across published parameter ranges {cite:p}`SandbergDrexlerOrd2018`. Roughly one third of the probability mass falls below $N = 1$ in the Milky Way, and ten percent falls below being alone in the observable universe.
 ```
 
 ### The Fermi paradox
@@ -518,7 +437,7 @@ None are in the classical HZ, yet all have liquid water in contact with rock and
 
 ### Origin of life on Earth
 
-The origin of life on Earth remains an unsolved scientific problem with several competing hypotheses:
+The origin of life on Earth remains an unsolved scientific problem (the Precambrian record is in {ref}`Lecture 9 <lecture09>`) with several competing hypotheses:
 
 - **RNA world**: the hypothesis that self-replicating RNA preceded protein-based metabolism.
   This model is supported by catalytic ribozymes in modern organisms and the ribosome, but prebiotic nucleotides do not easily polymerise without templating and are unstable on long timescales.
@@ -537,23 +456,15 @@ A second independent origin of life on Mars or an icy moon would provide the fir
 ### Biosignatures: what would we look for?
 
 A **biosignature** is an observable feature whose presence is more easily explained by biology than by abiotic processes alone.
-{cite:t}`Schwieterman2018` divide remotely detectable biosignatures into atmospheric gases, surface reflectance features, and temporal variability.
-{cite:t}`Catling2018` evaluate candidate biosignatures within a Bayesian framework that updates the probability of life given planetary and stellar context ({numref}`fig:l14:catling-framework` and {numref}`fig:l14:catling-bayes`).
-
-```{figure} figures/catling2018_assessment_framework.avif
-:align: center
-:name: fig:l14:catling-framework
-:width: 75%
-
-The four-component framework for assessing exoplanet biosignatures from {cite:t}`Catling2018`. The left side characterises the host star and the planet's external context; the right side characterises the planet's internal properties; the centre searches for biosignatures and tests for false positives. Each branch corresponds to a class of measurement that the next generation of telescopes is being designed to deliver. Reproduced from {cite:t}`Catling2018`.
-```
+{cite:t}`Schwieterman2018` divide remotely detectable biosignatures into atmospheric gases, surface reflectance features, and temporal variability ({numref}`fig:l14:biosig-classes`).
+{cite:t}`Catling2018` lay out an assessment framework for candidate biosignatures and evaluate them within a Bayesian framework that updates the probability of life given planetary and stellar context ({numref}`fig:l14:catling-bayes`).
 
 ```{figure} figures/catling2018_bayesian_framework.avif
 :align: center
 :name: fig:l14:catling-bayes
 :width: 80%
 
-A Bayesian framework for biosignature assessment. Spectral or photometric observations of an exoplanet must be combined with prior probabilities (from theory and from observations of the broader population) to compute the posterior probability that the planet hosts life. Detection is therefore not a yes-or-no statement about a single observation but a quantitative inference from a chain of measurements. Reproduced from {cite:t}`Catling2018`.
+A Bayesian framework combines exoplanet observations with theoretical and population priors to compute the posterior probability of life. Detection is a quantitative inference from a chain of measurements rather than a single observation; reproduced from {cite:t}`Catling2018`.
 ```
 
 On Earth, single gas biosignatures include $\mathrm{O_2}$ ($\sim 21\%$), photochemical $\mathrm{O_3}$, biogenic $\mathrm{CH_4}$, and $\mathrm{N_2O}$.
@@ -566,25 +477,18 @@ On the Archean Earth (roughly 4.0 to 2.5 billion years ago), coexisting $\mathrm
 :name: fig:l14:biosig-gases
 :width: 90%
 
-Wavelength-resolved infrared absorption features for ten potential biosignature gases ($\mathrm{O_2}$, $\mathrm{O_3}$, $\mathrm{N_2O}$, $\mathrm{CH_4}$, $\mathrm{CH_3Cl}$, $\mathrm{C_2H_6}$, $\mathrm{NH_3}$, DMS, DMDS, $\mathrm{CH_3SH}$). Each panel plots the line-by-line absorption strength versus wavelength from $0.4$ to $20\,\mu\mathrm{m}$. Different molecules have characteristic absorption regions: $\mathrm{O_3}$ near $9.6\,\mu\mathrm{m}$, $\mathrm{CH_4}$ at $3.3$ and $7.7\,\mu\mathrm{m}$, $\mathrm{N_2O}$ across the mid-infrared, and DMS/DMDS in the $6$ to $15\,\mu\mathrm{m}$ window (with characteristic bands near $6$-$7$, $8$-$12$, and $14$-$15\,\mu$m). Reproduced from {cite:t}`Schwieterman2018`.
+Wavelength-resolved infrared absorption spectra from $0.4$ to $20\,\mu\mathrm{m}$ for ten potential biosignature gases. Diagnostic bands include $\mathrm{O_3}$ near $9.6\,\mu\mathrm{m}$, $\mathrm{CH_4}$ at $3.3$ and $7.7\,\mu\mathrm{m}$, $\mathrm{N_2O}$, and DMS/DMDS in the $6$ to $15\,\mu\mathrm{m}$ window; reproduced from {cite:t}`Schwieterman2018`.
 ```
-
-Atmospheric composition reflects the integrated history of escape, weathering, and biology.
-Earth's atmosphere is highly fractionated relative to solar composition, showing noble gas and hydrogen depletion alongside $\mathrm{O_2}$ enrichment that abiotic processes cannot sustain in the presence of liquid water.
-Such fractionation patterns provide circumstantial evidence for life ({numref}`fig:l14:biosig-classes`).
 
 ```{figure} figures/schwieterman2018_biosignature_classes.avif
 :align: center
 :name: fig:l14:biosig-classes
 :width: 95%
 
-The three classes of remotely detectable biosignatures: gaseous (left), surface (middle), and temporal (right). Gaseous biosignatures are produced as direct or indirect by-products of biological processes (e.g. photosynthetic $\mathrm{O_2}$, photochemically derived $\mathrm{O_3}$). Surface biosignatures are spectral signatures imparted by reflected light interacting with biological pigments (e.g. the vegetation red edge). Temporal biosignatures are time-dependent variations in atmospheric or surface properties caused by biology (e.g. the seasonal Keeling curve in Earth's $\mathrm{CO_2}$). A convincing biosignature claim should ideally combine evidence from more than one of these classes. Reproduced from {cite:t}`Schwieterman2018`.
+The three classes of remotely detectable biosignatures comprise gaseous by-products, surface pigment features, and temporal variations. A convincing biosignature claim ideally combines evidence across multiple classes to exclude abiotic false positives; reproduced from {cite:t}`Schwieterman2018`.
 ```
 
-Surface biosignatures include the **vegetation red edge**, a sharp reflectance jump at $\sim 700$ nm characteristic of chlorophyll-bearing plants.
-Temporal biosignatures comprise seasonal cycles in atmospheric gas abundances (such as $\mathrm{CO_2}$ and $\mathrm{CH_4}$) and seasonal surface reflectance variations from vegetation growth.
-
-Returned-sample biosignatures, accessible only via spacecraft missions in the solar system, include microfossils, specific organic molecules (amino acids and lipids), and metabolic isotopic patterns such as light-carbon enrichment.
+Surface biosignatures include the **vegetation red edge**, a sharp reflectance jump at $\sim 700$ nm from chlorophyll, while temporal biosignatures comprise seasonal cycles in atmospheric gases and surface reflectance.
 
 ### False positives and the inverse problem
 
@@ -606,15 +510,13 @@ Curiosity and Perseverance established that Mars had liquid water, neutral pH, a
 Present-day habitability is more uncertain: the methane variability detected by Curiosity is intriguing but cannot be interpreted as biological without independent corroboration.
 The Mars Sample Return campaign remains the most direct path to laboratory analysis of returned material in full spatial and chemical context {cite:p}`MeyerMSPG2022`.
 
-**Europa** ({ref}`Lecture 11 <lecture11>`) has a global subsurface saltwater ocean confirmed by Galileo induced magnetic field measurements and surface brine chemistry.
-NASA's Europa Clipper (launched October 2024, arriving 2030) will conduct $\sim 50$ flybys to characterise ice shell thickness, ocean chemistry, and surface activity {cite:p}`Howell2020`.
+**Europa** ({ref}`Lecture 11 <lecture11>`) has a global subsurface saltwater ocean confirmed by Galileo induced magnetic field measurements and surface brine chemistry; Europa Clipper (arriving 2030) and JUICE (Ganymede orbit 2034) will measure the ice-shell thickness and ocean properties.
 
 **Enceladus** ({ref}`Lecture 11 <lecture11>`) ejects samples of its subsurface ocean directly into space through its south-polar plume.
 Cassini detected $\mathrm{H_2}$ from active serpentinisation at the rocky core, macromolecular organics, and sodium phosphates indicating phosphorus-rich ocean chemistry {cite:p}`Waite2017,Postberg2023`.
-Proposed missions like the Enceladus Orbilander would sample plume material for organics, isotopes, and cellular structures.
 
 **Titan** ({ref}`Lecture 11 <lecture11>`) is the only body other than Earth with stable surface liquids today, featuring methane and ethane lakes and active prebiotic photochemistry.
-NASA's Dragonfly rotorcraft (launch 2028, arrival 2034) will sample surface chemistry directly at Selk crater with mass spectrometry {cite:p}`Lorenz2018`.
+NASA's Dragonfly rotorcraft (launch 2028, arrival 2034) will sample the organic-rich surface ({ref}`Lecture 11 <lecture11>`).
 
 **Venus cloud layer.** {cite:t}`Greaves2021` claimed phosphine ($\mathrm{PH_3}$) in the temperate cloud deck at altitudes of $50$ to $60$ km as a possible biosignature lacking known abiotic sources.
 Reanalyses of JCMT and ALMA data showed the spectral feature was at the instrumental sensitivity limit and consistent with mesospheric $\mathrm{SO_2}$ {cite:p}`Lincowski2021` ({numref}`fig:l14:phosphine`).
@@ -632,42 +534,17 @@ The Venus phosphine episode parallels the K2-18 b DMS controversy on the exoplan
 In both cases, data at instrumental sensitivity limits allow plausible abiotic explanations that have not been ruled out.
 Extraordinary claims about biosignatures require extraordinary verification through independent datasets.
 
-Upcoming missions to Venus will provide higher-precision data.
-The DAVINCI descent probe will measure cloud chemistry and noble gases in situ, while EnVision and VERITAS (targeting 2031) will map the atmosphere and surface.
-These missions will resolve the phosphine claim and constrain present-day Venus cloud chemistry.
+Upcoming missions to Venus will provide higher-precision data ({ref}`Lecture 9 <lecture09>`).
 
 **Pedagogical point.** The Venus phosphine and K2-18 b DMS cases show that claims about life-relevant chemistry must clear a high bar through better data rather than rhetoric.
 Both controversies drive the design of next-generation instruments and missions.
 
 ### Exoplanet life detection: the strategy
 
-Exoplanet life detection relies entirely on spatially unresolved transmission, emission, or reflectance spectra ({numref}`fig:l14:lhs475b-spectrum`, {numref}`fig:l14:trappist1b`).
+Exoplanet life detection relies entirely on spatially unresolved transmission, emission, or reflectance spectra ({ref}`Lecture 13 <lecture13>`).
+For TRAPPIST-1 b, the degeneracy of a featureless transmission spectrum was broken by MIRI $15\,\mu\mathrm{m}$ secondary eclipse observations: a dayside brightness temperature $T_d \approx 503$ K matches the $508$ K expected for bare rock without heat redistribution ({ref}`Lecture 13 <lecture13>`).
 
-```{figure} figures/lustigyaeger2023_lhs475b_spectrum.avif
-:align: center
-:name: fig:l14:lhs475b-spectrum
-:width: 85%
-
-JWST/NIRSpec G395H transmission spectrum of the Earth-sized rocky exoplanet LHS 475 b (black points), compared with model atmospheres of various compositions. The data rule out clear hydrogen-dominated atmospheres at $1\times$ to $100\times$ solar metallicity at high significance (top panel). High mean molecular weight atmospheres (pure $\mathrm{H_2O}$, $\mathrm{CO_2}$-dominated, Earth-like) and a featureless airless-body spectrum remain consistent with the data, while a clear $\mathrm{CH_4}$-dominated atmosphere is weakly disfavoured (bottom panel). This is representative of what current JWST observations can and cannot say about the atmospheres of rocky exoplanets around nearby M dwarfs. Reproduced from {cite:t}`LustigYaeger2023`.
-```
-
-```{figure} figures/greene2023_trappist1b_eclipse.avif
-:align: center
-:name: fig:l14:trappist1b
-:width: 80%
-
-JWST MIRI secondary eclipse light curve of TRAPPIST-1 b at 15 $\mu$m. The observed eclipse depth corresponds to a measured dayside brightness temperature of $T_d \approx 503$ K, consistent with the 508 K bare-rock zero-redistribution prediction and indicating that the planet has no thick atmosphere to redistribute heat. Reproduced from {cite:t}`Greene2023`.
-```
-
-As shown for K2-18 b in {ref}`Lecture 13 <lecture13>`, a single-snapshot atmospheric detection is insufficient to establish the presence of biology ({numref}`fig:l14:k218b-spec`, {numref}`fig:l14:k218b-post`).
-
-```{figure} figures/madhusudhan2023_k218b_spectrum.avif
-:align: center
-:name: fig:l14:k218b-spec
-:width: 90%
-
-JWST transmission spectrum of K2-18 b from {cite:t}`Madhusudhan2023`. The combined NIRSpec and NIRISS data show clear $\mathrm{CH_4}$ and $\mathrm{CO_2}$ absorption features and the tentative DMS feature near 3.4 $\mu$m. The spectrum is consistent with a sub-Neptune atmosphere overlying either a "hycean" (hydrogen atmosphere over a global liquid-water ocean) layer or a deeper mini-Neptune envelope. Reproduced from {cite:t}`Madhusudhan2023`.
-```
+As shown for K2-18 b in {ref}`Lecture 13 <lecture13>`, a single-snapshot atmospheric detection is insufficient to establish the presence of biology ({numref}`fig:l14:k218b-post`).
 
 ```{figure} figures/madhusudhan_k218b_dms_post.avif
 :align: center
@@ -679,15 +556,6 @@ Posterior probability distributions for the mixing ratios of $\mathrm{CH_4}$, $\
 
 A convincing biosignature detection requires chemical disequilibrium, temporal variability, environmental context excluding abiotic pathways, and independent confirmation.
 The Habitable Worlds Observatory (HWO; {cite:t}`NAS2021`) will use a $\sim 6$ m space-based **coronagraph** (an instrument masking starlight to image faint planets) to characterise Earth-like planets around $\sim 25$ Sun-like stars in the 2040s.
-Complementing this, the LIFE concept uses a mid-infrared **nulling interferometer** (an array cancelling starlight by destructive interference) to measure diagnostic biosignature gases {cite:p}`Quanz2022` ({numref}`fig:l14:life-yields`).
-
-```{figure} figures/quanz2022_life_yields.avif
-:align: center
-:name: fig:l14:life-yields
-:width: 90%
-
-Predicted total exoplanet detection yields for the LIFE concept during a 2.5-year search phase, as a function of mirror aperture diameter ($D = 1$ to $3.5$ m), shown for two assumed instrument scenarios (lower and upper bars). A 3.5 m aperture LIFE configuration would detect of order $500$ to $800$ planets in total; for the 2 m reference case, {cite:t}`Quanz2022` report up to $\sim 550$ detectable planets, of which 25 to 45 are rocky planets orbiting within the empirical habitable zone of their host stars. Reproduced from {cite:t}`Quanz2022`.
-```
 
 Dedicated exoplanet life-detection flagships are expected in the 2040s following 2030s statistical surveys.
 Future observatories will constrain $f_l$, transforming the search for life into an empirical science.
@@ -712,29 +580,10 @@ Future observatories will constrain $f_l$, transforming the search for life into
 
 ### The next decade
 
-The mission queue from now to roughly 2040 is unusually rich.
-Dates reflect planning targets as of September 2026.
-
-Through 2030, JWST continues to deliver exoplanet atmospheric spectra.
-Europa Clipper arrives at Jupiter in 2030 to study ice-shell and ocean chemistry.
-JUICE arrives at Jupiter in 2031, entering Ganymede orbit in 2034.
-Roman launched in August 2026, followed by PLATO in 2027, Dragonfly in 2028, and Ariel in 2029.
-
-In the 2030s, Dragonfly arrives at Titan in 2034, and Ariel delivers its statistical exoplanet atmosphere survey.
-ELT ({numref}`fig:l14:elt-milkyway`), GMT, and TMT come online for high-contrast imaging and high-resolution spectroscopy of nearby exoplanets.
-DAVINCI, EnVision, and VERITAS deliver Venus results, alongside planned Mars Sample Return delivery.
-A recommended Uranus orbiter targets launch in the mid-to-late 2030s at the earliest.
-
-```{figure} figures/elt_milkyway.avif
-:name: fig:l14:elt-milkyway
-:width: 700px
-:align: center
-
-The Milky Way arcs over ESO's Extremely Large Telescope under construction on Cerro Armazones in the Chilean Atacama Desert, with the partially-clad dome visible at lower left (August 2025). With its 39 m segmented primary mirror, the ELT will be the largest optical/near-infrared telescope ever built when it sees first light in 2029 and will, together with GMT and TMT, enable the first direct-imaging searches for atmospheric biosignatures on rocky planets around nearby M dwarfs. Image credit: C. Letelier/ESO {cite:p}`ESOELT2025`.
-```
-
-In the 2040s, HWO and LIFE concept maturation transitions into hardware.
-This enables direct atmospheric characterisation and multi-line biosignature searches on Earth-analogue exoplanets.
+The most decisive advance in exoplanet characterisation over the coming decade will come from ground-based 30-metre-class observatories entering operation.
+With its 39 m segmented primary mirror, ESO's Extremely Large Telescope (ELT) will be the largest optical and near-infrared telescope ever constructed.
+Equipped with extreme adaptive optics and high-resolution spectrographs, the ELT will achieve the angular resolution and high contrast required to isolate reflected starlight and thermal emission from planets at small orbital separations.
+This will enable direct imaging and spectroscopic characterisation of temperate Earth-sized rocky planets in the habitable zones of nearby M dwarfs, testing for atmospheric water vapour, carbon dioxide, and candidate biosignatures.
 
 ### Final framing
 
