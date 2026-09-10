@@ -210,6 +210,8 @@ Each week consists of:
 - Implications for habitability: the habitable zone is not a line but a set of history-dependent trajectories; forward reference to Lecture 13 exoplanet habitability
 - Recent advances and upcoming missions: DAVINCI+ (NASA, ~2029), VERITAS (NASA, late 2020s), EnVision (ESA, 2031); first new orbital missions in decades; active research on early Venus climate (Way 2016, Turbet 2021); phosphine debate (Lecture 6)
 
+- **Length budget (2026-09-10):** deck 44 frames (from 79), notes about 7900 words (from 11648), board sheet 5 live steps; the closing item is the 2030s Venus missions on one hero frame; Worksheet 5 drops its deuterium problem and three parts (4 problems, 14 parts).
+
 ### Lecture 10: Rocky Planets — Mercury & Mars
 
 **Structure**: descriptive-first (Mercury then Mars) with comparative payoff at the end.
@@ -250,6 +252,8 @@ Each week consists of:
 - What makes a rocky planet habitable? (synthesised from L9 + L10) (1) liquid water, (2) active geology for volatile recycling, (3) magnetic shielding (debated), (4) long-term climate stability. Earth ticks all four; Venus and Mars failed on at least two; Mercury never had a chance
 - Recent advances and upcoming missions: Mars Sample Return (NASA/ESA, schedule in flux), BepiColombo (2026 orbit insertion), ExoMars Rosalind Franklin (~2028), JAXA MMX (2026 launch, 2031 return), Curiosity long-baseline results, subsurface radar reservoirs (contested), Ingenuity helicopter legacy, Perseverance ongoing geochemistry
 
+- **Length budget (2026-09-10):** deck 47 frames (from 65), notes about 8300 words (from 11643), board sheet 5 live steps; the closing item is BepiColombo at Mercury on one hero frame.
+
 ### Lecture 11: Gas & Ice Giants — Jupiter, Saturn, Uranus, Neptune
 
 **Structure**: descriptive-first (gas giants, then ice giants) with comparative payoff and exploration frontier in Part 3. Moons are integrated into planet narratives rather than given a separate section.
@@ -288,6 +292,8 @@ Each week consists of:
 - Dragonfly to Titan: 2028 launch, 2034 arrival, rotorcraft, prebiotic chemistry + impact-heated transient liquid water at Selk crater
 - **Dedicated slide: Voyager legacy** — only spacecraft to visit Uranus and Neptune; still operational in the interstellar medium; power declining toward ~2030 end of life; our ice giant knowledge is 40 years out of date
 - Future ice giant missions: 2023 US Decadal Survey prioritised a Uranus orbiter as the top flagship mission for the 2030s; mission concepts in study phase; launch window early 2030s; atmospheric entry probe + magnetosphere + moon reconnaissance
+
+- **Length budget (2026-09-10):** deck 45 frames (from 78), notes about 7300 words (from 9269), board sheet 5 live steps; the closing item is Europa Clipper and JUICE on one hero frame; Worksheet 6 drops its comet problem and three parts (4 problems, 13 parts).
 
 ### Lecture 12: Meteorites, Asteroids, Minor Planets & Comets
 
@@ -343,6 +349,8 @@ Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–
 - Recent mission bonanza (OSIRIS-REx, Hayabusa2, DART, Lucy, Psyche, Rosetta) + upcoming (Hera, Comet Interceptor, LSST) are transforming the field
 - Interstellar visitors connect solar system science directly to exoplanets (forward to L13/L14)
 
+- **Length budget (2026-09-10):** deck 45 frames (from 84), notes about 8100 words (from 12019), board sheet 5 live steps; the closing item is the interstellar visitors.
+
 ### Lecture 13: Exoplanets, Detection Methods, Demographics & Characterisation
 
 Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–L12: detection methods (Part 1), then demographics and architectures (Part 2), then characterisation, habitability, and the comparative payoff (Part 3).
@@ -395,6 +403,8 @@ Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–
   - Slide A (transits + atmospheres, 2026–2035): PLATO (ESA 2026, Earth analogues around G dwarfs), Ariel (ESA 2029, ~1000 atmospheres), Roman (NASA 2027, microlensing + coronagraph demo)
   - Slide B (direct imaging of Earth analogues, 2030s–2040s): HWO (NASA, ~6 m coronagraph, ~25 nearby sun-like stars), LIFE (ESA concept, mid-IR nulling interferometer), ELT/GMT/TMT (ground-based, first light 2028–2030s)
 - Open-ended question: what combination of evidence would constitute convincing life detection? Forward reference to L14
+
+- **Length budget (2026-09-10):** deck 46 frames (from 85), notes about 7900 words (from 11549), board sheet 5 live steps; the closing item is the frontier missions of the 2030s on one hero frame; Worksheet 7 drops its direct-imaging and Drake problem and three parts (4 problems, 13 parts).
 
 ### Lecture 14: Synthesis, Solar System in Context & Astrobiology
 
@@ -457,6 +467,9 @@ Capstone synthesis lecture. Unlike L9–L13, the structure is integration-first 
 - Final framing: planetary science has become the science of comparative climate, interior, and life-hosting trajectories; the frontier is moving fast
 
 ---
+
+- **Length budget (2026-09-10):** deck 41 frames (from 72), notes about 8000 words (from 9927), board sheet 5 live steps; the closing item is the TRAPPIST-1 b eclipse on one hero frame.
+
 
 ## 3. Worksheets
 
@@ -704,9 +717,9 @@ Each slide deck requires:
 | 2 | Thermal Evolution & Differentiation | 3–4 | Not started |
 | 3 | Atmospheres | 5–6 | Not started |
 | 4 | Surfaces & Interiors | 7–8 | Not started |
-| 5 | Terrestrial Planets | 9–10 | Not started |
-| 6 | Giant Planets & Small Bodies | 11–12 | Not started |
-| 7 | Exoplanets & Synthesis | 13–14 | Not started |
+| 5 | Terrestrial Planets | 9–10 | Cut to 4 problems and 14 parts (2026-09-10) |
+| 6 | Giant Planets & Small Bodies | 11–12 | Cut to 4 problems and 13 parts (2026-09-10) |
+| 7 | Exoplanets & Synthesis | 13–14 | Cut to 4 problems and 13 parts (2026-09-10) |
 
 Each worksheet requires:
 - Problem sheet (PDF, built with XeLaTeX from `worksheets/worksheetNN/`)
@@ -722,9 +735,9 @@ Both PDFs are generated from a single content file: `worksheetNN_content.tex` ho
 | 2 | Thermal Evolution & Differentiation | 3–4 | Not started |
 | 3 | Atmospheres | 5–6 | Not started |
 | 4 | Surfaces & Interiors | 7–8 | Not started |
-| 5 | Terrestrial Planets | 9–10 | Not started |
-| 6 | Giant Planets & Small Bodies | 11–12 | Not started |
-| 7 | Exoplanets & Synthesis | 13–14 | Not started |
+| 5 | Terrestrial Planets | 9–10 | Cut to 4 problems and 14 parts (2026-09-10) |
+| 6 | Giant Planets & Small Bodies | 11–12 | Cut to 4 problems and 13 parts (2026-09-10) |
+| 7 | Exoplanets & Synthesis | 13–14 | Cut to 4 problems and 13 parts (2026-09-10) |
 
 #### Exams (2 sets, each with solutions) — developed in the **private repository** (see §11)
 
@@ -1144,13 +1157,13 @@ Date opened: **2026-05-16**.
 | L06 | 26 | 25 | 1 |
 | L07 | 25 | 25 | 0 |
 | L08 | 21 | 21 | 0 |
-| L09 | 28 | 4 | 24 |
-| L10 | 31 | 1 | 30 |
-| L11 | 40 | 1 | 39 |
-| L12 | 48 | 10 | 38 |
-| L13 | 42 | 2 | 40 |
-| L14 | 30 | 8 | 22 |
-| **Total** | **421** | **226** | **195** |
+| L09 | 19 | 22 | 0 |
+| L10 | 20 | 20 | 0 |
+| L11 | 23 | 23 | 0 |
+| L12 | 32 | 32 | 0 |
+| L13 | 30 | 30 | 0 |
+| L14 | 19 | 20 | 0 |
+| **Total** | **340** | **342** | **2** |
 
 **Per-lecture procedure.**
 

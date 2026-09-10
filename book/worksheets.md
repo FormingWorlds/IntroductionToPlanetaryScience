@@ -24,7 +24,7 @@ Work each problem through before opening the solutions: the solutions are comple
 1. **Orbits and formation** ({ref}`lecture01`, {ref}`lecture02`): Kepler's laws, the vis-viva equation, orbital resonances, tides and the Roche limit, gravitational focusing and the growth regimes.
 2. **Thermal evolution and differentiation** ({ref}`lecture03`, {ref}`lecture04`): radiogenic heating, cooling timescales and convective regimes, the thermal-evolution energy balance, core formation, dynamo feasibility.
 3. **Atmospheres** ({ref}`lecture05`, {ref}`lecture06`): scale heights and column mass, radiative equilibrium and the greenhouse effect, cloud condensation and the lifting condensation level, rotation and geostrophic balance, the faint young Sun and the carbonate-silicate thermostat.
-4. **Surfaces and interiors** ({ref}`lecture07`, {ref}`lecture08`): impact energetics, crater chronology, moment of inertia, central pressure, seismology.
+4. **Surfaces and interiors** ({ref}`lecture07`, {ref}`lecture08`): impact energetics, crater chronology, moment of inertia, central pressure.
 5. **Terrestrial planets** ({ref}`lecture09`, {ref}`lecture10`): comparative energy balance, water loss from Venus, the Martian volatile inventory, Mercury's spin-orbit resonance.
-6. **Giant planets and small bodies** ({ref}`lecture11`, {ref}`lecture12`): interior transitions, ring dynamics, isotopic dating, Kirkwood gaps, cometary activity.
+6. **Giant planets and small bodies** ({ref}`lecture11`, {ref}`lecture12`): interior transitions, ring dynamics, isotopic dating, Kirkwood gaps.
 7. **Exoplanets and habitable worlds** ({ref}`lecture13`, {ref}`lecture14`): transit depths and detection bias, radial-velocity masses and bulk density, atmospheric scale heights and transmission spectroscopy, the habitable zone, direct imaging, the Drake equation.

@@ -29,14 +29,13 @@
 
 % ── Roadmap ─────────────────────────────────────────────────
 \begin{frame}{What Worksheet 5 trains}
-  Five problems, all built on Lectures 9--10. The physics you need, per problem:
+  Four problems, all built on Lectures 9--10. The physics you need, per problem:
   \vskip4pt\relax
   \begin{enumerate}
     \item \textbf{Equilibrium temperature and the greenhouse}: radiative balance, the one-layer greenhouse factor, the gap to the true surface temperature.
     \item \textbf{The runaway greenhouse}: the vapour-pressure photosphere, the Simpson-Nakajima ceiling on outgoing infrared, which planet crosses it.
-    \item \textbf{Deuterium and Venus's lost water}: Rayleigh distillation, the D/H clock, the size of the vanished ocean.
     \item \textbf{Thermal escape from Mars}: the escape speed, the Jeans parameter, why light molecules leave first.
-    \item \textbf{Mercury and Mars: two ways to end}: the spin-orbit resonance, thermal contraction, Phobos below the synchronous orbit.
+    \item \textbf{Mercury and Mars: two ways to end}: the spin-orbit resonance, thermal contraction, size against dynamo lifetime.
   \end{enumerate}
   \vskip2pt\relax
   \keyresult{Every problem has the shape and level of one exam question. All parts are analytical; no computer is needed.}
@@ -90,30 +89,6 @@
 \end{frame}
 
 % ── P3 ──────────────────────────────────────────────────────
-\begin{frame}{Deuterium and Venus's lost water}
-  \small
-  \begin{columns}[T]
-    \column{0.52\textwidth}
-    Rayleigh distillation of Lecture 9:
-    \[
-      \boxed{\frac{R}{R_0} = f^{\,\alpha-1}}
-      \qquad f = \left(\frac{R}{R_0}\right)^{1/(\alpha-1)}
-    \]
-    \begin{itemize}
-      \item $f$ is the surviving hydrogen fraction, $R/R_0 = 150$ the measured deuterium enrichment, $\alpha < 1$ the fractionation factor.
-      \item Invert for $f$, then divide today's water by $f$ to recover the initial inventory.
-    \end{itemize}
-
-    \column{0.44\textwidth}
-    \begin{block}{How much can it prove?}
-      Diffusion-limited escape ($\alpha = 0.5$) fractionates most efficiently and gives the smallest initial water, about $0.17$ Earth ocean. A weaker model needs far more water for the same enrichment. The isotope ratio sets a lower bound only.
-    \end{block}
-  \end{columns}
-  \vskip2pt\relax
-  \keyresult{The deuterium enrichment is a lower bound on Venus's lost water, of order a tenth of an Earth ocean, not proof of a full ocean.}
-\end{frame}
-
-% ── P4 ──────────────────────────────────────────────────────
 \begin{frame}{Thermal escape from Mars}
   \small
   \begin{columns}[T]
@@ -137,20 +112,16 @@
   \keyresult{One exponential in the mass sorts which gases a planet keeps; Mars loses its hydrogen and holds its $\mathrm{CO_2}$.}
 \end{frame}
 
-% ── P5 ──────────────────────────────────────────────────────
+% ── P4 ──────────────────────────────────────────────────────
 \begin{frame}{Mercury and Mars: two ways to end}
   \small
   \begin{columns}[T]
     \column{0.52\textwidth}
-    Three independent clocks:
+    Two clocks:
     \[
       \boxed{\frac{1}{T_\mathrm{solar}} = \frac{1}{P_\mathrm{rot}} - \frac{1}{P_\mathrm{orb}}}
-    \]
-    \vspace{-10pt}
-    \[
-      \frac{\Delta A}{A} = 2\,\frac{\Delta R}{R}
       \qquad
-      T = 2\pi\sqrt{\frac{a^3}{GM}}
+      \frac{\Delta A}{A} = 2\,\frac{\Delta R}{R}
     \]
     \vspace{-6pt}
     \begin{itemize}
@@ -159,8 +130,8 @@
     \end{itemize}
 
     \column{0.44\textwidth}
-    \begin{block}{Above or below synchronous?}
-      Phobos orbits in $7.7$ h, faster than Mars turns ($24.62$ h), so it is below the areostationary radius. The tidal bulge it raises lags and drags it inward, so Phobos spirals down.
+    \begin{block}{Why the two ended differently}
+      Size sets the cooling rate; cooling sets how long the dynamo runs; gravity sets what the atmosphere keeps. Argue from these three controls in part (c).
     \end{block}
   \end{columns}
   \vspace{-2pt}
