@@ -169,6 +169,8 @@ Each week consists of:
 - Icy moon interiors: subsurface oceans (Europa, Enceladus, Titan)
 - Recent advances: InSight seismology revealing Mars's core and mantle structure, revised models of Jupiter's dilute core from Juno gravity data, new constraints on Europa's ice shell thickness
 
+- **Length budget (2026-09-10):** deck 51 frames (from 93), notes about 7300 words (from 8422), board sheet 5 live steps with the $C/MR^2$ table stated in the closing box; the closing item is InSight seismology; the Juno dilute core and the ocean-world mission catalogue live in Lecture 11; Worksheet 4 drops its seismology problem.
+
 ### Lecture 9: Rocky Planets — Earth & Venus
 
 **Structure**: descriptive-first (Earth then Venus) with a comparative payoff at the end.
@@ -1141,7 +1143,7 @@ Date opened: **2026-05-16**.
 | L05 | 26 | 26 | 0 |
 | L06 | 26 | 25 | 1 |
 | L07 | 25 | 25 | 0 |
-| L08 | 25 | 25 | 0 |
+| L08 | 21 | 21 | 0 |
 | L09 | 28 | 4 | 24 |
 | L10 | 31 | 1 | 30 |
 | L11 | 40 | 1 | 39 |
