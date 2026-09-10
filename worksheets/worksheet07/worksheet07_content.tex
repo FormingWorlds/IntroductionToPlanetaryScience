@@ -35,7 +35,6 @@ Hot Jupiter (a 51 Peg b analogue): $R_p = 8.6 \times 10^{7}$ m, $m_p \sin i = 0.
 K2-18 b: $m_p = 8.6\,\Mearth$, $R_p = 2.6\,\Rearth$
 
 \vskip4pt
-Rocky planet with a $\mathrm{CO_2}$ atmosphere: $T = 300$ K, $\mu = 44$, $g = 9.81\ \mathrm{m\,s^{-2}}$.\quad
 Spectrograph precision: ELODIE $\sim 10\ \mathrm{m\,s^{-1}}$; ESPRESSO $0.10\ \mathrm{m\,s^{-1}}$ (photon limit), $\sim 0.5\ \mathrm{m\,s^{-1}}$ (long-term repeatability)
 
 \vskip4pt
@@ -44,8 +43,6 @@ K dwarf: $L = 0.3\,\Lsun$, $M = 0.7\,\Msun$.\quad
 M dwarf (TRAPPIST-1-like): $L = 5 \times 10^{-4}\,\Lsun$.\quad
 $t_\mathrm{MS,\odot} = 10$ Gyr
 
-\vskip4pt
-{\footnotesize Reflected-light contrast at visible wavelengths: $\sim 10^{-9}$ for a Jupiter analogue at $5$ AU, $\sim 10^{-10}$ for an Earth analogue; the Roman coronagraph reaches $10^{-8}$ to $10^{-9}$. Data as in the Lecture 13 and 14 notes.}
 \end{given}
 
 
@@ -66,17 +63,6 @@ These two numbers together explain what the transit catalogue contains, and what
 \answer{$\delta \approx 1.5\%$: a hot Jupiter dims a Sun-like star by more than one part in a hundred, which is why ground-based photometry could detect these transits from the start.}
 \end{solution}
 
-\parti Repeat for an Earth analogue transiting a Sun-like star, and express the result in parts per million.
-
-\begin{solution}
-\[
-\delta = \left(\frac{6.371\times10^{6}}{6.957\times10^{8}}\right)^2
-= (9.1577\times10^{-3})^2 = 8.3863\times10^{-5},
-\]
-or about $84$ ppm.
-\answer{$\delta \approx 84$ ppm, about $180$ times shallower than the hot-Jupiter transit. Detecting it needs space-based photometry at the $10$ ppm level, which is the Kepler and PLATO regime.}
-\end{solution}
-
 \parti Compute the geometric transit probability for the Earth analogue at $1$ AU and for the hot Jupiter at $0.05$ AU, and the ratio of the two.
 
 \begin{solution}
@@ -93,7 +79,7 @@ The ratio is $p_\mathrm{HJ}/p_\oplus = (1\ \mathrm{AU})/(0.05\ \mathrm{AU}) = 20
 \answer{$p_\oplus \approx 0.5\%$ against $p_\mathrm{HJ} \approx 9\%$: the close-in planet is $20$ times more likely to transit, purely from geometry.}
 \end{solution}
 
-\parti The transit catalogue is dominated by short-period planets and by planets of M dwarfs. Using your results from parts (a) to (c), explain in two or three sentences why this does not mean that such planets are intrinsically the most common.
+\parti The transit catalogue is dominated by short-period planets and by M-dwarf planets. Using your results from parts (a) and (b), explain in two or three sentences why this does not mean that such planets are intrinsically the most common.
 
 \begin{solution}
 The transit probability $R_\star/a$ strongly favours close-in planets, and both the probability and the depth $(R_p/R_\star)^2$ grow when the star is small, so M-dwarf planets are easier to find in both respects.
@@ -127,22 +113,6 @@ and $\Msun^{2/3} = (1.989\times10^{30})^{2/3} = 1.5816\times10^{20}$, so with $m
 K_\star = 1.0469\times10^{-5} \times \frac{9.490\times10^{26}}{1.5816\times10^{20}} = 62.82\ \mathrm{m\,s^{-1}}.
 \]
 \answer{$K_\star \approx 63\ \mathrm{m\,s^{-1}}$, six times the ELODIE precision: a close-in giant was the easiest possible first detection, and the short period meant the full orbit repeated every four days.}
-\end{solution}
-
-\parti Compute $K_\star$ for an Earth analogue ($m_p = \Mearth$, $P = 1$ yr) around a $1\,\Msun$ star, and compare it with the ESPRESSO photon-noise limit and long-term repeatability.
-
-\begin{solution}
-With $P = 3.156\times10^{7}$ s,
-\[
-\left(\frac{2\pi G}{P}\right)^{1/3}
-= (1.3287\times10^{-17})^{1/3} = 2.3685\times10^{-6},
-\]
-so
-\[
-K_\star = 2.3685\times10^{-6} \times \frac{5.972\times10^{24}}{1.5816\times10^{20}} = 8.943\times10^{-2}\ \mathrm{m\,s^{-1}},
-\]
-about $9\ \mathrm{cm\,s^{-1}}$.
-\answer{$K_\star \approx 9\ \mathrm{cm\,s^{-1}}$ sits at the ESPRESSO photon limit ($10\ \mathrm{cm\,s^{-1}}$) but a factor of five below the $\sim 0.5\ \mathrm{m\,s^{-1}}$ long-term repeatability, which is set by stellar activity, not photons. The true Earth analogue remains beyond current RV capability.}
 \end{solution}
 
 \parti K2-18 b has $m_p = 8.6\,\Mearth$ from radial velocities and $R_p = 2.6\,\Rearth$ from transits. Compute its bulk density and compare it with Earth's mean density of $5514\ \mathrm{kg\,m^{-3}}$.
@@ -183,18 +153,6 @@ H = \frac{\kB T}{\mu\,m_u\,g}
 \]
 about $630$ km.
 \answer{$H \approx 630$ km: hot, light, and weakly bound. A high temperature, an $\mathrm{H_2}$/He mean molecular weight of $2.3$, and the low gravity of an inflated giant puff the atmosphere up to a thickness that transmission spectroscopy can see.}
-\end{solution}
-
-\parti Compute the scale height of the rocky planet's $\mathrm{CO_2}$ atmosphere ($T = 300$ K, $\mu = 44$, $g = 9.81\ \mathrm{m\,s^{-2}}$), and the ratio of the two scale heights.
-
-\begin{solution}
-\[
-H = \frac{(1.381\times10^{-23})(300)}{(44)(1.661\times10^{-27})(9.81)}
-= \frac{4.1430\times10^{-21}}{7.1695\times10^{-25}} = 5778.6\ \mathrm{m},
-\]
-about $5.8$ km.
-The ratio is $6.3050\times10^{5}/5778.6 = 109.1$.
-\answer{$H \approx 5.8$ km, a factor of $\approx 109$ below the hot Jupiter: the colder temperature and the $19$ times heavier molecule compress the atmosphere, and the transmission signal shrinks with it.}
 \end{solution}
 
 \parti For the hot Jupiter, compute the fractional modulation $\Delta\delta/\delta = 2 n_H H/R_p$ with $n_H = 5$, then the absolute change in transit depth $\Delta\delta$ using the hot-Jupiter transit depth $\delta = 1.528 \times 10^{-2}$ of Problem 1(a), in ppm.
@@ -289,67 +247,4 @@ At a few hundredths of an AU every habitable-zone planet is tidally locked, with
 During the star's long pre-main-sequence phase the star was far more luminous, so the planets that now sit in the habitable zone spent their first $\sim 10^8$ yr inside the runaway-greenhouse boundary and may have lost their water before the star settled down.
 M dwarfs also stay magnetically active for Gyr, and their flares and winds erode atmospheres at such close orbital distances.
 \answer{Tidal locking, the luminous pre-main-sequence phase, and sustained flare activity all work against M-dwarf habitability; K dwarfs avoid most of these problems and may be the most favourable hosts.}
-\end{solution}
-
-
-% ════════════════════════════════════════════════════════════
-\problem{Direct imaging and the Drake equation}
-
-Direct imaging separates the planet's photons from the star's on the detector.
-By the small-angle formula the separation on the sky is $\theta = a/d$, which by the definition of the parsec is $\theta[\mathrm{arcsec}] = a[\mathrm{AU}]/d[\mathrm{pc}]$.
-The final problem turns from detection to the question the whole field serves: how many inhabited worlds are out there?
-
-\parti Compute the angular separation of an Earth analogue ($a = 1$ AU) and a Jupiter analogue ($a = 5$ AU) around a Sun-like star at $d = 10$ pc, in arcseconds.
-
-\begin{solution}
-\[
-\theta_\oplus = \frac{1.496\times10^{11}}{10 \times 3.086\times10^{16}} = 4.8477\times10^{-7}\ \mathrm{rad}
-= 4.8477\times10^{-7} \times 206{,}265 = 0.09999\ \mathrm{arcsec},
-\]
-and the Jupiter analogue at $5$ AU sits at $5 \times 0.09999 = 0.5000$ arcsec.
-\answer{$0.1$ and $0.5$ arcsec are resolvable separations for large telescopes; the difficulty of direct imaging is not the angle but the contrast, $10^{-10}$ for the Earth analogue against $10^{-9}$ for the Jupiter analogue, which is why the Roman coronagraph ($10^{-8}$ to $10^{-9}$) targets giants while Earth analogues wait for the next generation.}
-\end{solution}
-
-\parti Using the habitable-zone boundaries from Problem 4 ($0.9713$ to $1.690$ AU for the Sun, $0.02172$ to $0.03780$ AU for the M dwarf), compute the angular extent of the Sun's habitable zone and of the M dwarf's habitable zone, both at $10$ pc.
-
-\begin{solution}
-For the Sun-like star, $\theta = a[\mathrm{AU}]/d[\mathrm{pc}]$ gives $0.9713/10 = 0.09713$ arcsec at the inner edge and $1.6903/10 = 0.16903$ arcsec at the outer edge.
-For the M dwarf the same formula gives
-\[
-\theta_\mathrm{in} = \frac{0.02172}{10} = 2.172\times10^{-3}\ \mathrm{arcsec},
-\qquad
-\theta_\mathrm{out} = \frac{0.03780}{10} = 3.780\times10^{-3}\ \mathrm{arcsec},
-\]
-a few milliarcseconds.
-\answer{The Sun-like habitable zone spans a tenth of an arcsecond, within reach of a coronagraphic space telescope; the M-dwarf habitable zone collapses to milliarcseconds, out of reach for direct imaging. The two detection methods divide the sky: transits own the M dwarfs, direct imaging owns the Sun-like stars.}
-\end{solution}
-
-\parti The Drake equation factorises the number of communicating civilisations as
-\[
-N = R_\star f_p n_e f_l f_i f_c L,
-\]
-and only the first three factors are measured. Model the four unconstrained factors as independent and log-uniform, each with $\log_{10}$ distributed uniformly on $[-10, 0]$, and take the measured prefactor as $\log_{10}(R_\star f_p n_e) \approx 0$. Compute the mean and standard deviation of $\log_{10} N$, and the number of standard deviations separating the mean from $N = 1$.
-
-\begin{solution}
-Each factor contributes a mean of $-5$ and a variance of $10^2/12 = 8.3333$, so
-\[
-\langle \log_{10} N \rangle = 4 \times (-5) = -20,
-\qquad
-\sigma = \sqrt{4 \times 8.3333} = \sqrt{33.333} = 5.7735.
-\]
-The value $N = 1$ corresponds to $\log_{10} N = 0$, which lies
-\[
-\frac{0 - (-20)}{5.7735} = 3.464
-\]
-standard deviations above the mean.
-\answer{Under honestly broad priors the expectation sits twenty decades below one civilisation, and $N = 1$ is a $3.5\sigma$ upward excursion: ``we are alone in the galaxy'' is fully consistent with current knowledge. The point is not the specific number but that the output distribution restates the priors, which is why the Drake equation cannot function as an estimator.}
-\end{solution}
-
-\parti The lectures presented the Drake equation as a framing tool, not an estimator. Give the main reasons in two or three sentences.
-
-\begin{solution}
-The factors are not independent: biospheres co-evolve with their atmospheres and planets, so factorising the history into separate probabilities discards the connections between them.
-Four of the seven factors are unconstrained by many orders of magnitude, so any product restates the chosen priors rather than a measurement.
-And the single known origin of life is observed from the inside, so anthropic selection biases every extrapolation from the Earth case.
-\answer{Coupled factors, order-of-magnitude ignorance, and anthropic bias make the equation a map of what we do not know, which is precisely its pedagogical value.}
 \end{solution}

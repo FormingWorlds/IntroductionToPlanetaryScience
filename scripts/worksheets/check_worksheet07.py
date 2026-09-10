@@ -18,7 +18,6 @@ import sys
 FAIL = []
 N_CHECKS = 0
 
-
 def chk(name, got, printed, rel=5e-4):
     """Compare a recomputed value against the printed value."""
     global N_CHECKS
@@ -27,7 +26,6 @@ def chk(name, got, printed, rel=5e-4):
     print(f"{'OK  ' if ok else 'FAIL'} {name:46s} got {got:.6g}  printed {printed:.6g}")
     if not ok:
         FAIL.append(name)
-
 
 G = 6.674e-11
 SIGMA = 5.670e-8
@@ -50,16 +48,11 @@ RAD_ARCSEC = 206265.0
 chk("P1a R_p/R_star", 8.6e7 / RSUN, 0.12362, 1e-4)
 chk("P1a delta hot Jupiter", 0.12362**2, 1.5281e-2, 1e-4)
 
-# (b) Earth-analogue transit depth
-chk("P1b R_E/R_sun", RE / RSUN, 9.1577e-3, 1e-4)
-chk("P1b delta Earth", (9.1577e-3) ** 2, 8.3863e-5, 1e-4)
-chk("P1b delta Earth (ppm ~84)", 8.3863e-5 * 1e6, 84.0, 5e-3)
-
-# (c) geometric transit probabilities
-chk("P1c p_Earth", RSUN / AU, 4.6504e-3, 1e-4)
-chk("P1c 1/p_Earth (~215)", 1 / 4.6504e-3, 215.0, 5e-3)
-chk("P1c p_HJ", RSUN / (0.05 * AU), 9.3008e-2, 1e-4)
-chk("P1c ratio p_HJ/p_Earth", 9.3008e-2 / 4.6504e-3, 20.0, 1e-4)
+# (b) geometric transit probabilities
+chk("P1b p_Earth", RSUN / AU, 4.6504e-3, 1e-4)
+chk("P1b 1/p_Earth (~215)", 1 / 4.6504e-3, 215.0, 5e-3)
+chk("P1b p_HJ", RSUN / (0.05 * AU), 9.3008e-2, 1e-4)
+chk("P1b ratio p_HJ/p_Earth", 9.3008e-2 / 4.6504e-3, 20.0, 1e-4)
 
 # ── Problem 2: radial-velocity masses and K2-18 b density ────────────────
 # (a) 51 Peg b analogue semi-amplitude
@@ -71,16 +64,11 @@ chk("P2a M_sun^(2/3)", MSUN ** (2 / 3), 1.5816e20, 1e-4)
 chk("P2a m_p sin i (kg)", 0.5 * MJ, 9.490e26, 1e-4)
 chk("P2a K 51 Peg b (m/s)", 1.0469e-5 * 9.490e26 / 1.5816e20, 62.82, 5e-4)
 
-# (b) Earth-analogue semi-amplitude
-chk("P2b 2piG/P (1 yr)", 4.1934e-10 / YR, 1.3287e-17, 1e-4)
-chk("P2b (2piG/P)^(1/3)", (1.3287e-17) ** (1 / 3), 2.3685e-6, 1e-4)
-chk("P2b K Earth (m/s)", 2.3685e-6 * ME / 1.5816e20, 8.943e-2, 5e-4)
-
-# (c) K2-18 b bulk density
-chk("P2c m_p (kg)", 8.6 * ME, 5.1359e25, 1e-4)
-chk("P2c R_p (m)", 2.6 * RE, 1.6565e7, 1e-4)
-chk("P2c (4/3)pi R^3 (m^3)", 4 / 3 * math.pi * (1.6565e7) ** 3, 1.9038e22, 1e-4)
-chk("P2c rho K2-18 b (kg m^-3)", 5.1359e25 / 1.9038e22, 2697.7, 5e-4)
+# (b) K2-18 b bulk density
+chk("P2b m_p (kg)", 8.6 * ME, 5.1359e25, 1e-4)
+chk("P2b R_p (m)", 2.6 * RE, 1.6565e7, 1e-4)
+chk("P2b (4/3)pi R^3 (m^3)", 4 / 3 * math.pi * (1.6565e7) ** 3, 1.9038e22, 1e-4)
+chk("P2b rho K2-18 b (kg m^-3)", 5.1359e25 / 1.9038e22, 2697.7, 5e-4)
 
 # ── Problem 3: scale heights and transmission spectroscopy ───────────────
 # (a) hot-Jupiter terminator scale height
@@ -89,16 +77,10 @@ chk("P3a k_B T (J)", KB * 1500.0, 2.0715e-20, 1e-4)
 chk("P3a mu u g (kg m s^-2)", 2.3 * U * 8.6, 3.2855e-26, 1e-4)
 chk("P3a H hot Jupiter (m)", 2.0715e-20 / 3.2855e-26, 6.3050e5, 1e-4)
 
-# (b) rocky CO2 scale height and ratio
-chk("P3b k_B T (J)", KB * 300.0, 4.1430e-21, 1e-4)
-chk("P3b mu u g (kg m s^-2)", 44.0 * U * 9.81, 7.1695e-25, 1e-4)
-chk("P3b H rocky (m)", 4.1430e-21 / 7.1695e-25, 5778.6, 1e-4)
-chk("P3b H ratio (~109)", 6.3050e5 / 5778.6, 109.1, 5e-4)
-
-# (c) transmission modulation of the hot Jupiter
-chk("P3c ddelta/delta", 2 * 5 * 6.3050e5 / 8.6e7, 7.3314e-2, 1e-4)
-chk("P3c ddelta (abs)", 7.3314e-2 * 1.5281e-2, 1.1203e-3, 1e-4)
-chk("P3c ddelta (ppm ~1120)", 1.1203e-3 * 1e6, 1120.0, 5e-3)
+# (b) transmission modulation of the hot Jupiter
+chk("P3b ddelta/delta", 2 * 5 * 6.3050e5 / 8.6e7, 7.3314e-2, 1e-4)
+chk("P3b ddelta (abs)", 7.3314e-2 * 1.5281e-2, 1.1203e-3, 1e-4)
+chk("P3b ddelta (ppm ~1120)", 1.1203e-3 * 1e6, 1120.0, 5e-3)
 
 # ── Problem 4: equilibrium temperature and the habitable zone ────────────
 # (a) Earth equilibrium temperature
@@ -120,24 +102,6 @@ chk("P4c M dwarf d_in (AU)", math.sqrt(5e-4 / 1.06), 0.02172, 1e-4)
 chk("P4c M dwarf d_out (AU)", math.sqrt(5e-4 / 0.35), 0.03780, 1e-4)
 chk("P4c 0.7^-2.5", 0.7 ** (-2.5), 2.4392, 1e-4)
 chk("P4c t_MS K dwarf (Gyr)", 10 * 2.4392, 24.39, 5e-4)
-
-# ── Problem 5: direct imaging and the Drake equation ─────────────────────
-# (a) angular separations at 10 pc
-chk("P5a theta_Earth (rad)", AU / (10 * PC), 4.8477e-7, 1e-4)
-chk("P5a theta_Earth (arcsec)", 4.8477e-7 * RAD_ARCSEC, 0.09999, 1e-4)
-chk("P5a theta_Jupiter (arcsec)", 5 * 0.09999, 0.5000, 5e-4)
-
-# (b) habitable-zone angular extents at 10 pc
-chk("P5b Sun HZ inner (arcsec)", 0.9713 / 10, 0.09713, 1e-4)
-chk("P5b Sun HZ outer (arcsec)", 1.6903 / 10, 0.16903, 1e-4)
-chk("P5b M dwarf inner (arcsec)", 0.02172 / 10, 2.172e-3, 1e-4)
-chk("P5b M dwarf outer (arcsec)", 0.03780 / 10, 3.780e-3, 1e-4)
-
-# (c) log-uniform Drake toy model
-chk("P5c mean log10 N", 4 * (-5.0), -20.0, 1e-6)
-chk("P5c var one factor", 10**2 / 12, 8.3333, 1e-4)
-chk("P5c sigma log10 N", math.sqrt(4 * 8.3333), 5.7735, 1e-4)
-chk("P5c z-score of N=1", (0 - (-20.0)) / 5.7735, 3.464, 5e-4)
 
 print()
 print(f"{N_CHECKS} checks, {len(FAIL)} failures")

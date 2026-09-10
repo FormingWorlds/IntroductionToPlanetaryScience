@@ -30,13 +30,12 @@
 % ── Roadmap ─────────────────────────────────────────────────
 \begin{frame}{What Worksheet 7 trains}
   \small
-  Five problems, all built on Lectures 13--14. The physics you need, per problem:
+  Four problems, all built on Lectures 13--14. The physics you need, per problem:
   \begin{enumerate}
     \item \textbf{Transits}: the depth $(R_p/R_\star)^2$, the geometric probability $R_\star/a$, why the catalogue is biased.
     \item \textbf{Radial velocities}: the semi-amplitude $K_\star$, from 51 Peg b to the Earth analogue, mass plus radius gives density.
     \item \textbf{Transmission spectroscopy}: the scale height, the $2n_H H/R_p$ modulation, flat spectra and how eclipses break them.
     \item \textbf{The habitable zone}: equilibrium temperature, the Kopparapu flux limits, scaling to K and M dwarfs.
-    \item \textbf{Direct imaging and Drake}: angular separations and contrast, the log-uniform Drake toy model.
   \end{enumerate}
   \keyresult{Every problem has the shape and level of one exam question. All parts are analytical; no computer is needed.}
 \end{frame}
@@ -96,7 +95,7 @@
     \]
     \begin{itemize}
       \item Hot Jupiter: $H \approx 630$ km and $\Delta\delta \approx 1120$ ppm, a signal even pre-JWST instruments could see.
-      \item Rocky $\mathrm{CO_2}$ planet: $H \approx 5.8$ km, a factor $\sim 109$ smaller signal.
+      \item For comparison, a rocky $\mathrm{CO_2}$ planet has $H$ of a few km, so a signal $\sim 100$ times smaller.
     \end{itemize}
 
     \column{0.44\textwidth}
@@ -127,28 +126,6 @@
     \end{block}
   \end{columns}
   \keyresult{The habitable zone moves as $\sqrt{L_\star}$, the stellar lifetime as $M^{-2.5}$: the trade-offs are quantitative.}
-\end{frame}
-
-% ── P5 ──────────────────────────────────────────────────────
-\begin{frame}{Direct imaging and the Drake equation}
-  \small
-  \begin{columns}[T]
-    \column{0.52\textwidth}
-    Small angles and honest priors from Lectures 13--14:
-    \[
-      \boxed{\theta[\mathrm{arcsec}] = \frac{a[\mathrm{AU}]}{d[\mathrm{pc}]}}
-    \]
-    \begin{itemize}
-      \item An Earth analogue at $10$ pc: $0.1$ arcsec at $10^{-10}$ contrast. The contrast is the blocker, not the angle.
-      \item The M-dwarf habitable zone collapses to milliarcseconds: imaging and transits split the sky by stellar type.
-    \end{itemize}
-
-    \column{0.44\textwidth}
-    \begin{block}{Drake as a framing tool}
-      Four factors log-uniform over ten decades give $\log_{10} N$ a mean of $-20$ and $\sigma \approx 5.8$: the output restates the priors, and ``we are alone'' is consistent with current knowledge.
-    \end{block}
-  \end{columns}
-  \keyresult{Direct imaging is a contrast problem; the Drake equation is a map of ignorance.}
 \end{frame}
 
 % ── Closer ──────────────────────────────────────────────────
