@@ -24,10 +24,6 @@ Part 1 examines Mercury as a metal-world case study, covering orbital dynamics, 
 Part 2 focuses on Mars, exploring its interior, geological periods, evidence for past water, and thermal atmospheric loss via the Jeans escape flux.
 Part 3 compares these extremes to show how size, heliocentric distance, and dynamo longevity govern planetary evolution and habitability.
 
-Our understanding of both planets has advanced dramatically over the last fifteen years.
-NASA's *MESSENGER* mission explored Mercury between 2011 and 2015, while ESA/JAXA's *BepiColombo* arrives for orbit insertion in 2026.
-NASA's *InSight* lander constrained the Martian interior between 2018 and 2021, and *Curiosity* and *Perseverance* continue surface exploration.
-
 ## Part 1: Mercury, the metal world
 
 ### Mercury overview: the smallest, densest, closest
@@ -49,15 +45,13 @@ This allows polar ice to survive close to the Sun.
 ### Orbit and the 3:2 spin-orbit resonance
 
 Mercury rotates once every $58.65$ Earth days and orbits the Sun once every $87.97$ Earth days.
-Planetary scientists expected tidal dissipation to produce a $1:1$ synchronous resonance like Earth's Moon.
-Instead, 1965 radar observations revealed a $3:2$ **spin-orbit resonance** (a ratio where rotation and orbital frequencies are locked).
+Radar observations in 1965 revealed a $3:2$ **spin-orbit resonance** rather than synchronous rotation.
 
 Tidal torques act on a planet's **permanent quadrupole moment** (an equatorial bulge) most strongly at perihelion.
 In a $3:2$ resonance, this bulge points Sunward at alternate perihelia.
 The capture probability during Mercury's orbital evolution is $\sim 55\%$ {cite:p}`CorreiaLaskar2004`.
 
-Let $n_{\mathrm{spin}}$ and $n_{\mathrm{orb}}$ be the spin and mean orbital frequencies.
-Expanding the orbit-averaged torque in eccentricity Fourier components yields non-zero torque only when:
+Expanding the orbit-averaged torque in eccentricity Fourier components yields non-zero torque only when the spin ($n_{\mathrm{spin}}$) and orbital ($n_{\mathrm{orb}}$) frequencies satisfy:
 
 $$
 \frac{n_{\mathrm{spin}}}{n_{\mathrm{orb}}} \;=\; 1 + \frac{p}{2}\, , \qquad p \in \mathbb{Z}\, .
@@ -66,34 +60,23 @@ $$ (eq:spin-orbit-ladder)
 The allowed states in {eq}`eq:spin-orbit-ladder` are $1{:}1$ ($p=0$), $3{:}2$ ($p=1$), and $2{:}1$ ($p=2$).
 Resonance strength scales as a constant for $1{:}1$, as $e$ for $3{:}2$, and as $e^2$ for $2{:}1$.
 With eccentricity $e = 0.206$, the wide $3{:}2$ resonance dominates.
-Tidal dissipation cannot despin Mercury to $1{:}1$.
 
 Consequently, a **solar day** (time between local noons) lasts $\sim 176$ Earth days, twice the orbital year.
 Longitudes $0^\circ$ and $180^\circ$ face the Sun at alternate perihelia.
 These **hot poles** reach peak temperatures of $\sim 700$ K.
 Longitudes offset by $90^\circ$ reach perihelion at midnight, reaching peak temperatures of $\sim 570$ K.
-This thermal contrast shapes surface temperatures, exospheric sodium emission, and volatile distribution.
 
 ```{figure} figures/margot2007_libration.avif
 :name: fig:margot-libration
 :width: 600px
 :align: center
 
-Mercury spin rate deviations from the resonant rate of $3/2$ times the mean orbital frequency, measured by Earth-based radar speckle interferometry. Each data point is one observing epoch with its error bar; the red curve is a numerical integration of the torque equation whose phase is set by the time of pericentre passage. Panel **A** is a one-parameter fit that allows only the $88$-day forced libration, panel **B** a three-parameter fit that adds a $\approx 12$-year free libration component. The fitted forced-libration amplitude, $35.8 \pm 2$ arcseconds, is about twice the value a fully solid Mercury would show, so the mantle must be decoupled from a partially molten core. Reproduced from {cite:t}`Margot2007`, Fig. 3.
+Mercury spin rate deviations from the resonant $3/2$ rate measured by Earth-based radar speckle interferometry. The $88$-day forced libration amplitude ($35.8 \pm 2$ arcseconds) is twice the solid-planet value, showing mantle decoupling from a liquid core. Reproduced from {cite:t}`Margot2007`, Fig. 3.
 ```
 
-```{figure} figures/margot2007_libdata.avif
-:name: fig:margot-libdata
-:width: 600px
-:align: center
-
-Histograms of best-fit values for the diagnostic moment-of-inertia ratio $C_m/C$ (where $C_m$ is the moment of inertia of the silicate mantle alone and $C$ is the total moment of inertia, so $C_m/C$ is the fraction of the total moment of inertia contributed by the mantle), drawn from $10^5$ Monte Carlo draws on the measured libration amplitude and the gravity coefficient $C_{22}$. Panel **A** uses the radar measurements alone, panel **B** adds the relation between the gravitational harmonic coefficients and the obliquity that holds in a Cassini state, which tightens the result. Each panel shows two histograms, for the two extremes of the plausible total moment of inertia adopted in 2007: $C/MR^2 = 0.325$ in red and $0.380$ in blue. Radio science with *MESSENGER* has since put $C/MR^2 \approx 0.346$ between those two extremes, and that is the value used in the body text and in the interior structure inversion below. Every distribution peaks near $C_m/C \approx 0.5$, far from the value of unity a fully solid Mercury requires, so the core must be decoupled and at least partly liquid. Reproduced from {cite:t}`Margot2007`, Fig. 4.
-```
-
-Mercury's rotation also probes its interior through its **forced libration in longitude**, a periodic wobble over its $88$-day year.
+Mercury's rotation also probes its interior through its **forced libration in longitude** over its $88$-day year.
 Earth-based radar measurements yielded a libration amplitude of $35.8 \pm 2$ arcseconds ({numref}`fig:margot-libration`) {cite:p}`Margot2007`.
-This amplitude is roughly twice the value for a solid planet.
-The mantle therefore decouples from a liquid outer core ({numref}`fig:margot-libdata`).
+This amplitude is roughly twice the value for a solid planet, confirming that the mantle decouples from a liquid outer core and carries only $C_m/C \approx 0.5$ of the total moment of inertia, where $C_m$ is the moment of inertia of the silicate shell alone.
 
 ### Interior: a giant iron core
 
@@ -172,9 +155,6 @@ Mollweide maps of the radial magnetic field at the surface of Mercury (top) comp
 Two mechanisms explain these features: a **thermally stratified outer layer** at the top of the liquid core, in which heat is carried by conduction rather than convection, and a stable inner core boundary that introduces a north-south asymmetry.
 Numerical simulations combining these ingredients reproduce both the weakness and offset of the field {cite:p}`Wicht2017` ({numref}`fig:wicht-offset`).
 
-Mercury demonstrates that even small bodies with partially molten cores can sustain long-lived dynamos ({ref}`Lecture 13 <lecture13>`).
-Its offset dipole also shows that centered axial dipoles are not universal for rocky planets.
-
 ### The surface: ancient cratering, smooth plains, lobate scarps, and hollows
 
 Mercury's heavily cratered surface resembles the lunar highlands.
@@ -220,8 +200,6 @@ Such echoes are characteristic of water ice.
 Between 2011 and 2015, the *MESSENGER* spacecraft confirmed these deposits directly ({numref}`fig:mla-polar`).
 Topography from the Mercury Laser Altimeter showed that polar crater floors are **permanently shadowed**.
 Because of Mercury's nearly zero obliquity, they never receive direct sunlight {cite:p}`Paige2013`.
-The Neutron Spectrometer detected a fast-neutron deficit.
-This indicates hydrogen-rich material in the upper $\sim 1\ \mathrm{m}$ of regolith {cite:p}`Lawrence2013`.
 
 ```{figure} figures/messenger_mla_polar.avif
 :name: fig:mla-polar
@@ -238,8 +216,6 @@ The spatial coincidence of low reflectance, zero insolation, and low temperature
 
 Mercury hosts an estimated $\sim 10^{16}$ to $10^{18}\ \mathrm{g}$ of polar water across $\sim 5\times10^4\ \mathrm{km^2}$ of permanently shadowed terrain {cite:p}`Lawrence2013`.
 In a **cold trap**, water molecules delivered by comets, asteroids, or interior dehydration wander via ballistic hops and freeze onto crater floors at $\sim 100\ \mathrm{K}$.
-These deposits persist because Mercury's obliquity has stayed close to zero throughout history.
-The crater floors stay permanently cold despite intense equatorial solar heating.
 
 ### Exosphere and magnetosphere
 
@@ -252,33 +228,15 @@ Solar radiation pressure sweeps neutral sodium antisunward into a comet-like **s
 Ground-based and *MESSENGER* observations show that this tail varies with orbital phase and solar wind conditions.
 This makes it a tracer of space-weather coupling.
 
-Mercury possesses a compact **magnetosphere** (a region dominated by the planetary magnetic field).
-Because the intrinsic field is weak and solar wind dynamic pressure is large at $0.4$ AU, the magnetopause standoff distance is only $\sim 1.5\ R_M$ ($R_M = 2440\ \mathrm{km}$), compared to $\sim 10\ R_E$ at Earth.
-*MESSENGER* observed reconnection rates ten times higher than at Earth.
-Magnetic substorms unfold on timescales of just a few minutes ({numref}`fig:wicht-mag`).
-
-```{figure} figures/wicht_magnetosphere.avif
-:name: fig:wicht-mag
-:width: 450px
-:align: center
-
-Equatorial cross-section of Mercury's compact magnetosphere. The standoff distance is only about $1.5\,R_M$ and the magnetotail is correspondingly short. Reconnection at the dayside magnetopause and in the tail is fast and frequent compared to Earth. Reproduced from {cite:t}`Wicht2017`.
-```
+Mercury possesses a compact **magnetosphere**, the smallest in the solar system, with its subsolar magnetopause only $\sim 1.5$ Mercury radii from the centre.
 
 ### Mission history at Mercury
 
 *Mariner 10* flew past Mercury three times in 1974 and 1975.
-Because its orbit was resonant with Mercury, the same hemisphere was illuminated at each encounter.
-Only $\sim 45\%$ of the surface was imaged.
 The mission discovered Mercury's intrinsic magnetic field and revealed its heavily cratered surface.
-
 The *MESSENGER* mission transformed our understanding of the planet during its orbital phase from 2011 to 2015.
-It mapped the entire surface at high resolution, measured global topography and elemental composition, and characterized the magnetic field and exosphere.
 *MESSENGER* data established Mercury's offset dipole, polar ice deposits, hollows, global contraction, and unexpectedly high volatile content.
-
-*BepiColombo*, a joint ESA/JAXA mission launched in 2018, will enter orbit in late 2026 {cite:p}`Benkhoff2021`, and it carries two separate spacecraft: the Mercury Planetary Orbiter (MPO) for surface and interior science, and the Mercury Magnetospheric Orbiter (Mio) for magnetospheric science.
-Operating two orbiters simultaneously will allow correlated measurements of the magnetosphere and exosphere at different distances.
-Key objectives include measuring the moment of inertia to constrain core structure, refining polar ice inventories, and testing origin scenarios through surface volatile abundances.
+*BepiColombo* will enter orbit in late 2026 to constrain core structure, refine polar ice inventories, and test origin scenarios through surface volatile abundances.
 
 ## Part 2: Mars, the watery past
 
@@ -319,44 +277,23 @@ However, it predicts a Mars-mantle composition.
 Two snapshots of entropy gain (in $\mathrm{J\,K^{-1}\,kg^{-1}}$) from a smoothed-particle hydrodynamics simulation of a Borealis-scale giant impact onto early Mars by {cite:t}`Hyodo2017`, at $t = 0.17\ \mathrm{h}$ (left, immediately post-impact) and $t = 20\ \mathrm{h}$ (right, after the debris disc has expanded). The impact drives an entropy increase of $\sim 1500\ \mathrm{J\,K^{-1}\,kg^{-1}}$ in the disc material and ejects a circumplanetary disc containing both impactor and Martian-mantle material. Disc fragments collide at $1$--$5\ \mathrm{km\,s^{-1}}$ and grind down to $\sim 100\ \mu$m grains, providing the building blocks from which Phobos and Deimos may subsequently accrete. Two panels selected from the original 4 columns $\times$ 4 rows grid (composition, temperature, entropy, pressure across four times).
 ```
 
-The **Martian Moons eXploration** (MMX) mission will sample Phobos to test these models ({numref}`fig:mmx-orbit` and {numref}`fig:mmx-timeline`) {cite:p}`Kuramoto2022`.
-
-```{figure} figures/mmx_orbit.avif
-:name: fig:mmx-orbit
-:width: 480px
-:align: center
-
-Planned observation orbits for the JAXA MMX spacecraft around Phobos, drawn in a Phobos-fixed frame with Phobos at the centre, the $xy$ plane taken as the Phobos orbital plane and the $x$ axis pointing away from Mars. **Top:** the five quasi-satellite orbits confined to the $xy$ plane, from QSO-H at about $200\ \mathrm{km}$ along $y$ down to QSO-Lc at a few tens of kilometres; the low orbits support the sampling phase. **Bottom:** one three-dimensional quasi-satellite trajectory, at the QSO-M effective radius and an inclination of $45^\circ$, which carries the spacecraft over the whole surface rather than over the equatorial band alone. Reproduced from {cite:t}`Kuramoto2022`, Fig. 3.
-```
-
-```{figure} figures/mmx_timeline.avif
-:name: fig:mmx-timeline
-:width: 700px
-:align: center
-
-Operation plan for MMX during its three-year stay in the Martian system, in five mission phases. Both panels share the same time axis, with the arrival and the departure marked by red triangles on the lower axis. **Top:** eclipse duration for an assumed QSO-L orbit, with eclipses by Mars in orange and by Phobos in blue; N25, S25, and NS0 give the subsolar latitude on Phobos at the Martian solstices and equinoxes, and the arrows mark the landing site selection (LSS), the two touchdowns (TD1, TD2), a science observation block, and the Deimos flyby (DM). The bar below gives the orbit sequence: check out (CO), QSO-H, QSO-M, QSO-H again, QSO-La, QSO-Lb and QSO-Lc together, then the three-dimensional QSO-M (3D-M), with a long Mars observation block in the second half. **Bottom:** the Phobos to Earth distance (purple) and the Sun to Earth to Phobos separation angle (green); the grey bands are the solar conjunctions, when that angle falls to zero and the radio link is interrupted. The dates are those of the 2024 launch baseline, so they shift by about two years for the current launch date. Reproduced from {cite:t}`Kuramoto2022`, Fig. 4.
-```
+The **Martian Moons eXploration** (MMX) mission will sample Phobos to test these models {cite:p}`Kuramoto2022`.
 
 ### Mars' interior: the InSight revolution
 
-Before in situ seismology, Mars' interior was constrained by orbital gravity and topography {cite:p}`Smith2001`.
-These data yielded crustal thickness maps through **isostatic compensation**, the buoyant equilibrium where low-density crust floats on the mantle.
-The moment of inertia $C/MR^2 \approx 0.364$ ({ref}`Lecture 8 <lecture08>`) indicated a smaller relative core than Earth.
-Interior layering remained unknown.
-In 2018, the InSight lander placed a seismometer on Mars.
-It recorded over a thousand marsquakes that probed the deep interior.
+Before in situ seismology, orbital gravity and topography {cite:p}`Smith2001` gave crustal thickness maps through isostatic compensation, and the moment of inertia $C/MR^2 \approx 0.364$ ({ref}`Lecture 8 <lecture08>`) indicated a smaller relative core than Earth's; the InSight seismometer, deployed in 2018, then recorded over a thousand marsquakes.
 
 ```{figure} figures/stahler2021_marsquakes.avif
 :name: fig:stahler-quakes
 :width: 700px
 :align: center
 
-Detection of core-reflected $S$ waves ($ScS$) in InSight marsquake recordings. **Left**: the raw and polarisation-filtered transverse-component velocity for marsquake $S0173a$ (top), together with the polarisation-filtered envelope stack across multiple events (bottom), with the predicted $ScS$ arrival window marked in grey. **Right**: the stacked $ScS$ energy as a function of assumed core-radius offset (in km), with the best-fit and 95% confidence band; the maximum energy near the central value pins the core-mantle boundary at $r_{\mathrm{core}} \approx 1830\ \mathrm{km}$. From {cite:t}`Stahler2021`. The original figure also includes a six-event spectrogram panel and a residual-time panel; only the stack and the energy curve are reproduced here.
+Detection of core-reflected $S$ waves ($ScS$) in InSight marsquake recordings ({cite:t}`Stahler2021`). Stacked $ScS$ energy pins the core-mantle boundary at $r_{\mathrm{core}} \approx 1830\ \mathrm{km}$.
 ```
 
 From core-reflected shear waves ($ScS$), {cite:t}`Stahler2021` measured a core radius of $1830 \pm 40\ \mathrm{km}$ ({numref}`fig:stahler-quakes`).
-Reanalyses {cite:p}`Khan2023,Samuel2023` reinterpret this reflection as the top of a $150 \pm 15\ \mathrm{km}$ thick molten silicate layer, revising the metallic core radius to $\sim 1650$ to $1675\ \mathrm{km}$ ({ref}`Lecture 8 <lecture08>`).
-Detecting $ScS$ waves indicates a liquid outer core, as fluids do not transmit shear waves, and the core density ($5.7$ to $6.3\ \mathrm{g\ cm^{-3}}$) requires light elements dissolved in the iron.
+Reanalyses {cite:p}`Khan2023,Samuel2023` reinterpret this reflection as the top of a $150 \pm 15\ \mathrm{km}$ thick molten silicate layer, revising the metallic core radius to $\sim 1650$ to $1675\ \mathrm{km}$ and its density upward to $\sim 6500\ \mathrm{kg\,m^{-3}}$ ({ref}`Lecture 8 <lecture08>`).
+Detecting $ScS$ waves indicates a liquid outer core, as fluids do not transmit shear waves, and the low density of the 2021 core solution ($5.7$ to $6.3\ \mathrm{g\ cm^{-3}}$; $\sim 6.5$ for the smaller 2023 core) requires light elements dissolved in the iron.
 
 In a planet of radius $R$, direct shear waves cannot cross the liquid core of radius $r_{\mathrm{core}}$.
 The straight-ray limit for a ray grazing the core yields:
@@ -374,7 +311,7 @@ Quakes beyond $115^\circ$ fall into a shadow zone where only reflected $ScS$ wav
 :width: 480px
 :align: center
 
-Schematic interior of Mars constrained by InSight seismic observations from {cite:t}`Stahler2021`. The seismic discontinuity at $1830 \pm 40\ \mathrm{km}$ was originally interpreted as the core-mantle boundary marking a low-density, light-element-rich liquid metallic core; the 2023 reanalyses {cite:p}`Khan2023,Samuel2023` reinterpret it as the top of a molten silicate layer ({cite:t}`Khan2023`: $150 \pm 15$ km thick) overlying the metallic core, with the iron-core radius revised down to $\sim$1650–1675 km (see preceding text). $S$ waves reflect off this discontinuity, while $P$ waves transmit through and have been used to bound mantle structure. The $S$-wave shadow zone defines the "core shadow" cast by InSight at its landing site in Elysium Planitia.
+Schematic interior of Mars constrained by InSight seismic observations ({cite:t}`Stahler2021`). The $1830 \pm 40\ \mathrm{km}$ discontinuity reflects shear waves, but reanalyses {cite:p}`Khan2023,Samuel2023` place the metallic core beneath a $150 \pm 15\ \mathrm{km}$ molten silicate layer at radius $1650$–$1675\ \mathrm{km}$.
 ```
 
 Seismic velocity inversions indicate a $\sim 500\ \mathrm{km}$ thick lithosphere over a cool upper mantle {cite:p}`Khan2021`.
@@ -391,18 +328,10 @@ Mars is therefore a **planetary embryo**, a protoplanet that stopped growing bef
 :width: 700px
 :align: center
 
-Present-day crustal thickness of Mars in Mollweide projection (colourbar in km, dark blue thin, yellow thick), for three models that all match the gravity and topography data and are all anchored to the three-layer seismic crustal thickness under the InSight landing site (white triangle). Panel **a** is the thin end-member: $31\ \mathrm{km}$ under InSight, a uniform crustal density of $2550\ \mathrm{kg\,m^{-3}}$, and a global mean thickness of $40.6\ \mathrm{km}$. Panel **b** takes $47\ \mathrm{km}$ under InSight with separate densities for the northern lowlands ($3000\ \mathrm{kg\,m^{-3}}$) and the southern highlands ($2600\ \mathrm{kg\,m^{-3}}$), for a mean of $43.1\ \mathrm{km}$. Panel **c** is the thick end-member: $49\ \mathrm{km}$ under InSight, a uniform density of $3000\ \mathrm{kg\,m^{-3}}$, and a mean of $71.4\ \mathrm{km}$. The white and grey contours mark the zero level of MOLA topography. The thickness contrast across the dichotomy boundary is small in **a**, almost absent in **b**, where the density contrast absorbs it, and clear in **c**, so how strong a crustal dichotomy the map shows depends on the assumed density structure. Reproduced from {cite:t}`Plesa2022`, Fig. 1a-c; the heat flow and elastic lithosphere rows of the original are not shown.
+Present-day crustal thickness models of Mars from gravity, topography, and InSight seismic constraints ({cite:t}`Plesa2022`). Global mean thickness ranges from $40.6\ \mathrm{km}$ (thin end-member **a**, $31\ \mathrm{km}$ at InSight) to $71.4\ \mathrm{km}$ (thick end-member **c**, $49\ \mathrm{km}$ at InSight).
 ```
 
-```{figure} figures/plesa2022_convection.avif
-:name: fig:plesa-convection
-:width: 700px
-:align: center
-
-Cut-away renderings of the present-day mantle convection pattern in three thermal-evolution models of Mars. The dark red sphere is the core, the orange surfaces are the hot upwellings, and the outer shell shows the surface topography. All three models use the same crust, of mean thickness $61.3\ \mathrm{km}$ and density $2800\ \mathrm{kg\,m^{-3}}$, and differ only in core radius: $1500\ \mathrm{km}$ in **a**, $1700\ \mathrm{km}$ in **b**, and $1850\ \mathrm{km}$ in **c**. Only the largest core agrees with the InSight core-radius estimate. The larger the core, the more numerous and the smaller the plumes and downwellings become, which is hard to reconcile with building the crustal dichotomy by mantle convection alone and so favours an impact origin for it. Reproduced from {cite:t}`Plesa2022`, Fig. 10a-c; the mantle temperature-variation slices of the original are not shown.
-```
-
-Thermal models indicate that Mars is in a **stagnant-lid regime**, where an immobile lithosphere encloses a slowly convecting mantle and heat escapes by conduction ({numref}`fig:plesa-crust` and {numref}`fig:plesa-convection`) {cite:p}`Plesa2022`.
+Thermal models indicate that Mars is in a **stagnant-lid regime**, where an immobile lithosphere encloses a slowly convecting mantle and heat escapes by conduction ({numref}`fig:plesa-crust`) {cite:p}`Plesa2022` ({ref}`Lecture 3 <lecture03>`).
 Radioactive heat-producing elements (uranium, thorium, and potassium) are concentrated in the crust.
 The mantle is correspondingly depleted.
 This explains why core cooling halted the early dynamo while volcanic activity persisted into the recent past.
@@ -413,8 +342,6 @@ $$
 \mathrm{Ur} \;\equiv\; \frac{H_{\mathrm{rad}}}{Q_{\mathrm{surf}}}\, .
 $$ (eq:urey)
 
-A value $\mathrm{Ur} < 1$ indicates that a planet loses heat faster than it produces it.
-It draws on stored primordial energy.
 For Mars, the modern radiogenic heat production is $H_{\mathrm{rad}} \sim 2.5 \times 10^{12}\ \mathrm{W}$.
 Thermal models {cite:p}`Plesa2022` estimate a global surface heat loss of $Q_{\mathrm{surf}} \approx 20 \times 10^{-3}\ \mathrm{W\,m^{-2}} \times 1.45 \times 10^{14}\ \mathrm{m^2} \approx 3 \times 10^{12}\ \mathrm{W}$.
 Evaluating the ratio yields:
@@ -424,11 +351,10 @@ $$
 $$
 
 With a value below unity, Mars is losing heat slightly faster than radioactive decay deposits it, but its cooling rate is substantially slower than Earth's ($\mathrm{Ur}_\oplus \approx 0.3$ to $0.5$).
-This slow secular cooling reflects a stagnant-lid regime where an insulating lithosphere impedes heat loss from the interior.
 
 ### Mars' geological periods: Noachian, Hesperian, Amazonian
 
-Mars is divided into three major geological periods (each subdivided into epochs) based on impact crater density {cite:p}`Hartmann2001`, compiled globally by {cite:t}`Tanaka2014` ({numref}`fig:tanaka-global` and {numref}`fig:tanaka-periods`).
+Mars is divided into three major geological periods (each subdivided into epochs) based on impact crater density {cite:p}`Hartmann2001`, compiled globally by {cite:t}`Tanaka2014` ({numref}`fig:tanaka-global`); translating crater counts to absolute ages requires model corrections because the Martian impact rate differs from the Moon's.
 
 ```{figure} figures/tanaka2014_geomap.avif
 :name: fig:tanaka-global
@@ -436,14 +362,6 @@ Mars is divided into three major geological periods (each subdivided into epochs
 :align: center
 
 Global geologic map of Mars from the chronostratigraphic mapping of {cite:t}`Tanaka2014`, in a Robinson projection. Noachian units (red and brown shades) dominate the southern highlands; Hesperian units (greens and blues) cover the northern lowlands and large volcanic provinces; Amazonian units (yellows and tans) include the youngest volcanic and polar deposits. The dichotomy between the heavily cratered south and the smoother north is the dominant first-order feature.
-```
-
-```{figure} figures/tanaka2014_periods.avif
-:name: fig:tanaka-periods
-:width: 700px
-:align: center
-
-Correlation chart of the map units in the global geologic map of Mars by {cite:t}`Tanaka2014`. Columns separate the major terrain categories (lowland, impact, polar, basin, volcanic, apron, transition, highland) and rows correspond to the Amazonian, Hesperian, and Noachian periods, each split into early, middle, and late epochs except the Hesperian, which has only an early and a late epoch. Each box spans the age range of one map unit. The numbers on the right give the crater densities that define the epoch boundaries: the number of craters larger than 1, 5, and 16 km per $10^6$ km$^2$. The decline in the number and extent of new units from the Noachian to the Amazonian records the slowing of resurfacing on Mars and is a key constraint on its thermal and atmospheric evolution. Image credit: USGS (public domain).
 ```
 
 The **Noachian** period ($\sim 4.1$ to $\sim 3.7$ Ga) is the oldest, preserved in the heavily cratered southern highlands.
@@ -463,14 +381,10 @@ Liquid water was concentrated in the Noachian.
 
 Mars' topography {cite:p}`Smith2001` is dominated by two large-scale geological features.
 The first is the **hemispheric dichotomy**, a $\sim 6$-km elevation difference between the cratered southern highlands and the smooth northern lowlands.
-While mantle convection can produce degree-1 asymmetry, an exogenic giant impact {cite:p}`AndrewsHanna2008` is the more widely favoured explanation.
-The question is not settled.
-In this scenario, an early oblique impact excavated the elliptical Borealis basin ($\sim 10\,600 \times 8\,500\ \mathrm{km}$).
-This produced the thinner crust of the northern lowlands.
+An exogenic giant impact excavating the elliptical Borealis basin ($\sim 10\,600 \times 8\,500\ \mathrm{km}$) is the leading explanation for the thinner northern crust {cite:p}`AndrewsHanna2008`, though degree-1 mantle convection remains a competing hypothesis.
 
 The second feature is **Tharsis**, a continent-sized volcanic province covering roughly a quarter of Mars' surface and standing several kilometres above the datum.
 Tharsis hosts the solar system's largest volcanoes, including **Olympus Mons**, a shield volcano rising $\sim 21.3\ \mathrm{km}$ above the datum ($\sim 22\ \mathrm{km}$ above surrounding plains) with a base diameter of roughly $600\ \mathrm{km}$.
-Other major edifices include the three Tharsis Montes (Arsia, Pavonis, and Ascraeus, each $14$ to $18\ \mathrm{km}$ tall) and Alba Mons.
 
 These volcanoes grew to enormous sizes for two reasons.
 First, without plate tectonics, a stationary mantle plume delivers magma to the same location for hundreds of millions of years, building a single massive structure rather than a chain of separate volcanoes as on Earth.
@@ -479,29 +393,17 @@ Second, Mars' lower gravity ($g = 3.71\ \mathrm{m\,s^{-2}}$, $\sim 38\%$ of Eart
 Enormous lithospheric stresses from Tharsis opened **Valles Marineris**, a canyon system on its eastern flank.
 It stretches $\sim 4000\ \mathrm{km}$ along the equator and is up to $200\ \mathrm{km}$ wide and $7\ \mathrm{km}$ deep.
 Despite resembling fluvial canyons like the Grand Canyon, Valles Marineris is fundamentally a tectonic rift.
-Water erosion and catastrophic flooding later modified some features.
-The primary architecture, however, is structural.
 
 Other notable features include **Hellas Planitia**, a $2300$-km-diameter, $\sim 7$-km-deep impact basin.
 It is the largest unambiguous impact crater on Mars.
-The **polar caps** are layered deposits of permanent water ice overlain by seasonal $\mathrm{CO_2}$ ice.
-Finally, **chaotic terrain** at outflow channel heads consists of collapsed surface blocks produced by catastrophic volume loss.
 
 ### Evidence for past water
 
 **Valley networks** are branching channels in Noachian highlands formed by precipitation-fed runoff {cite:p}`Hynek2010`.
 **Outflow channels** are large scoured features carved during the Hesperian by catastrophic aquifer discharges.
 
-**Clay minerals** (phyllosilicates) formed by aqueous alteration of basalt at near-neutral pH during the Noachian ({numref}`fig:bibring-global`).
+**Clay minerals** (phyllosilicates) formed by aqueous alteration of basalt at near-neutral pH during the Noachian.
 {cite:t}`Bibring2006` divided Martian aqueous history into the clay-forming **phyllosian** (neutral pH), sulfate-rich **theiikian** (acidic, evaporative), and dry **siderikian** ({numref}`fig:bibring-timeline`).
-
-```{figure} figures/bibring2006_globalmap.avif
-:name: fig:bibring-global
-:width: 700px
-:align: center
-
-Global map of hydrated minerals on Mars from OMEGA/*Mars Express*. **Top:** detections only, on a black background. **Bottom:** the same detections overlaid on an MGS/MOLA altitude reference map. **Red** points mark phyllosilicate (clay) detections, **blue** points mark sulfate detections, and **yellow** points mark other hydrated minerals whose spectral signatures are not driven by metal-OH vibrations. Clays cluster preferentially in the Noachian southern highlands, consistent with neutral-pH aqueous alteration during the **phyllosian** stage. Sulfates are concentrated at lower-latitude and equatorial sites, consistent with later, drier, more acidic evaporative settings of the **theiikian** stage ({numref}`fig:bibring-timeline`). Reproduced from {cite:t}`Bibring2006`, Fig. 3.
-```
 
 ```{figure} figures/bibring2006_timeline.avif
 :name: fig:bibring-timeline
@@ -514,13 +416,9 @@ The three-stage aqueous history of Mars from OMEGA imaging-spectrometer mineralo
 **Sulfate deposits** record later acidic and evaporative settings at Meridiani Planum and Gale crater.
 **Lakebed sediments** and deltas at Jezero and Gale crater require standing water bodies that persisted for thousands of years {cite:p}`Grotzinger2014`.
 
-```{figure} figures/ehlmann2014_spectra.avif
-:name: fig:ehlmann-spectra
-:width: 600px
-:align: center
-
-Summary of Mars surface compositional spectra from infrared remote sensing and rover instruments, compiled by {cite:t}`EhlmannEdwards2014`. The diversity of spectral classes (basalts, hydrated silicates, sulfates, carbonates, hematite, opaline silica) is evidence for a wide range of aqueous and igneous environments through Mars history.
-```
+In situ analysis by the *Perseverance* rover in Jezero crater provided ground truth for these mineralogical stages {cite:p}`Farley2022`.
+PIXL and SHERLOC instrument observations revealed that the crater-floor Séítah formation consists of igneous olivine cumulates altered by multiple episodes of liquid water to form carbonates and sulfates.
+Visible and near-infrared reflectance spectroscopy from orbit maps these alteration suites globally ({ref}`Lecture 7 <lecture07>`).
 
 ```{figure} figures/ehlmann2014_olivine.avif
 :name: fig:ehlmann-olivine
@@ -530,16 +428,15 @@ Summary of Mars surface compositional spectra from infrared remote sensing and r
 Global distribution of olivine on the Martian surface from TES and OMEGA spectroscopic mapping, projected over a topographic basemap with major regional features labelled (Acidalia, Arabia Terra, Utopia, Tharsis, Terra Meridiani, Isidis, Hellas, Terra Sirenum, Argyre, Elysium). Olivine-rich units (coloured pixels) cluster in the equatorial-to-southern band including impact-exposed terrain around Hellas, Isidis, and Terra Sirenum. Fresh olivine implies limited aqueous alteration, helping identify regions where water was rare or absent. From {cite:t}`EhlmannEdwards2014`.
 ```
 
-Mineralogical and topographic records ({numref}`fig:ehlmann-spectra` and {numref}`fig:ehlmann-olivine`) indicate a warmer, wetter Noachian between $\sim 3.8$ and $3.6$ Ga.
+Mineralogical and topographic records indicate a warmer, wetter Noachian between $\sim 3.8$ and $3.6$ Ga, while the survival of unaltered olivine ({numref}`fig:ehlmann-olivine`) shows where liquid water did not reach.
 Conditions were colder and drier thereafter.
 
 ### The early Mars climate puzzle
 
-Valley networks indicate surface liquid water on early Mars despite $25\%$ lower solar luminosity at $4$ Ga (the **faint young Sun problem**, the reduced solar output) {cite:p}`Feulner2012`.
+Valley networks indicate surface liquid water on early Mars despite $25\%$ lower solar luminosity at $4$ Ga (the **faint young Sun problem**; {ref}`Lecture 9 <lecture09>`).
 A pure $\mathrm{CO_2}$-$\mathrm{H_2O}$ atmosphere cannot close the gap: radiative-convective models give mean surface temperatures of about $225\ \mathrm{K}$ or less, because $\mathrm{CO_2}$ spectral windows stay open and the water-vapour feedback is weak at low temperature, and $\mathrm{CO_2}$ ice clouds add little net warming {cite:p}`Wordsworth2016`.
-One proposed solution invokes reducing gases such as $\mathrm{H_2}$ or $\mathrm{CH_4}$, which warm the surface through **collision-induced absorption (CIA)** with $\mathrm{CO_2}$, transient absorption during molecular collisions {cite:p}`Wordsworth2017`.
-The $\mathrm{H_2}$ can come from volcanic outgassing, from **serpentinisation** (water-rock reactions altering ultramafic minerals), or from large impacts; the volcanic supply rate is poorly constrained {cite:p}`Wordsworth2017,Wordsworth2021`.
-To keep rivers flowing for $10^5$ to $10^6$ yr, volcanism would need to outgas $10^7$ to $10^8\ \mathrm{km^3}$ of magma in about $10^5$ yr, a rate $100$ to $1000$ times higher than in the most intense known volcanic events on Earth {cite:p}`KiteConway2024`.
+One proposed solution invokes reducing gases such as $\mathrm{H_2}$ or $\mathrm{CH_4}$, which warm the surface through **collision-induced absorption (CIA)** with $\mathrm{CO_2}$ {cite:p}`Wordsworth2017`.
+The $\mathrm{H_2}$ can come from volcanic outgassing, from **serpentinisation** (water-rock reactions altering ultramafic minerals), or from large impacts {cite:p}`Wordsworth2017,Wordsworth2021`.
 The "icy highlands" hypothesis proposes a cold baseline in which snow accumulates on the southern highlands, with repeated warm excursions that melt it ({numref}`fig:early-mars-climate-schematic`); in the phase diagram of steady climate states this is the cold and relatively dry quadrant ({numref}`fig:wordsworth-phase`) {cite:p}`Wordsworth2016,Kite2019`.
 
 ```{figure} figures/early_mars_climate_schematic.avif
@@ -547,7 +444,7 @@ The "icy highlands" hypothesis proposes a cold baseline in which snow accumulate
 :width: 700px
 :align: center
 
-Schematic of the "cold baseline with transient warm excursions" picture of the early Mars climate, drawn as an idealised cross-section from the northern lowlands (left) to the southern highlands (right); rock is brown, the cryosphere grey, surface ice white, and liquid water blue. **(a)** Cold baseline. Under the faint young Sun a pure $\mathrm{CO_2}$-$\mathrm{H_2O}$ atmosphere holds the mean surface temperature at or below about $225\ \mathrm{K}$. Water vapour moves uphill and condenses as snow on the highlands, which adiabatic cooling under a thicker atmosphere turns into cold traps, and the lowland basins stay frozen. $\mathrm{CO_2}$ ice clouds scatter infrared radiation but their net warming is small. **(b)** Transient warm excursion. $\mathrm{H_2}$ from volcanism, serpentinisation or a large impact adds collision-induced absorption with $\mathrm{CO_2}$, and high-altitude water-ice clouds add warming in some models. The surface then becomes warm enough, at least seasonally, for highland snow to melt and run downhill, cutting valley networks and feeding lakes with deltas. In $\mathrm{H_2}$ outgassing models each excursion lasts $10^5$ to $10^6$ yr and ends when $\mathrm{H_2}$ escapes to space. Carbonate formation in wet ground is the slower sink that lowers $p\mathrm{CO_2}$ over many excursions, until $\mathrm{H_2}$-$\mathrm{CO_2}$ warming can no longer melt the snow. The geological record indicates several such excursions, and the icy-highlands baseline is a hypothesis, not a consensus. Based on {cite:t}`Wordsworth2016`, {cite:t}`Wordsworth2017`, {cite:t}`Wordsworth2021`, {cite:t}`Kite2019`, {cite:t}`KiteEpisodic2021`, {cite:t}`KiteConway2024` and {cite:t}`Kite2025`. Course-original figure.
+Schematic of the "cold baseline with transient warm excursions" picture of the early Mars climate, drawn as an idealised cross-section from the northern lowlands (left) to the southern highlands (right). Under the faint young Sun a pure $\mathrm{CO_2}$-$\mathrm{H_2O}$ atmosphere leaves the surface frozen, whereas episodic $\mathrm{H_2}$ release adds collision-induced absorption and cloud warming that seasonally melts highland snow to carve valley networks during excursions lasting $10^5$ to $10^6$ yr. Course-original figure based on {cite:t}`Wordsworth2016`, {cite:t}`Wordsworth2017`, {cite:t}`Wordsworth2021`, {cite:t}`Kite2019` and {cite:t}`KiteConway2024`.
 ```
 
 ```{figure} figures/wordsworth2016_phasediagram.avif
@@ -555,13 +452,10 @@ Schematic of the "cold baseline with transient warm excursions" picture of the e
 :width: 600px
 :align: center
 
-Idealised two-dimensional phase diagram for the steady-state climate of early Mars under a denser atmosphere, with steady-state mean surface temperature on the horizontal axis and total surface $\mathrm{H_2O}$ inventory on the vertical axis. The two dividers are drawn at $T_{\mathrm{surf}} \approx 280$ K and at a water inventory of $\approx 200$ m global equivalent layer, so each quadrant is one end-member regime: cold-and-wet (top left, thick highland icesheets with basal melting), warm-and-wet (top right, extreme greenhouse warming required), cold-and-relatively-dry (bottom left, thin highland ice and snow with episodic melting), and warm-and-dry (bottom right, liquid water only in low-lying regions). The schematic cross-section in each quadrant runs from the northern lowlands on the left to the southern highlands on the right and shows the resulting distribution of rock (orange), surface ice (grey), and liquid water (blue). The cold and relatively dry state, combined with episodic melting, fits most of the geological evidence; the cold-and-wet state conflicts with it. Reproduced from {cite:t}`Wordsworth2016`, Fig. 7.
+Idealised two-dimensional phase diagram for the steady-state climate of early Mars under a denser atmosphere, with mean surface temperature on the horizontal axis and total surface $\mathrm{H_2O}$ inventory on the vertical axis across four end-member regimes. The cold and relatively dry quadrant (bottom left), combined with episodic melting, best matches the geological evidence. Reproduced from {cite:t}`Wordsworth2016`, Fig. 7.
 ```
 
-Impact heating alone was an earlier proposal for valley formation on a cold planet, but it fails to match newer data on the wet episodes {cite:p}`KiteConway2024`.
-A greenhouse effect from high-altitude water-ice clouds offers a longer-lived warming mechanism when surface water is patchy {cite:p}`KiteEpisodic2021`, although it requires cloud particles larger than $10\ \mathrm{\mu m}$, and the amount of warming is sensitive to details such as the abundance of ice nuclei {cite:p}`KiteConway2024`.
-
-Fluvial features shifted from Late Noachian and Early Hesperian valleys to Late Hesperian and younger **alluvial fans** (deposits where channels slow) at mid-latitudes ({numref}`fig:kite-distribution`), indicating a transition from global to seasonal greenhouse warming ({numref}`fig:kite-schematic`) {cite:p}`KiteCarter2022`.
+Fluvial features shifted from Late Noachian and Early Hesperian valleys to Late Hesperian and younger **alluvial fans** (deposits where channels slow) at mid-latitudes ({numref}`fig:kite-distribution`), indicating a transition from global to seasonal greenhouse warming {cite:p}`KiteCarter2022`.
 
 ```{figure} figures/kite2022_valley_distribution.avif
 :name: fig:kite-distribution
@@ -571,22 +465,7 @@ Fluvial features shifted from Late Noachian and Early Hesperian valleys to Late 
 Changing spatial distribution of water-worn landforms on Mars. **Top:** early-stage valley networks, about $3.6$ Ga and older (Late Noachian and Early Hesperian). **Bottom:** late-stage alluvial fans and deltas, $3.5$ to $3$ Ga and perhaps younger (Late Hesperian and Amazonian). Each feature is coloured by its elevation, from $-6$ km (blue) to $+6$ km (yellow). Grey marks the region excluded because the detection probability there is low or zero, and the elevation contours are spaced $3$ km apart. The rover letters are C for *Curiosity* at Gale crater, P for *Perseverance* at Jezero crater, and T-1 for the *Tianwen-1* rover *Zhurong*. Once the detection bias is corrected, the early features favour high ground, while the late ones lie lower and form bands at mid-latitude in both hemispheres. The control therefore passes from elevation to latitude, and that shift is what constrains the change in the greenhouse effect. Reproduced from {cite:t}`KiteCarter2022`, Fig. 1.
 ```
 
-```{figure} figures/kite2022_schematic.avif
-:name: fig:kite-schematic
-:width: 700px
-:align: center
-
-Graphical summary of the {cite:t}`KiteCarter2022` model for the climate evolution of Mars. **Left:** geographically idealised cross-sections of the two eras, with the early-stage valley networks (blue) cut into the highlands at about $3.6$ Ga, and the late-stage alluvial fans (orange) confined to lower ground at $3.5$ to $3$ Ga; the grey subsurface band is the cryosphere. **Right:** the climate states of the model as a function of $\mathrm{CO_2}$ loss (horizontal, from $1000$ to $10$ mbar) and loss of non-$\mathrm{CO_2}$ warming (vertical, gray-gas column optical depth $\tau$ from $5$ down to $0$), with the present-day state marked at the bottom right. The bands run from warm and wet at the top, through warm lowlands with cold highlands, then cold and wet, to cold and dry at the bottom. The blue outline encloses the states that match the early era and the orange outline those that match the late era. The two can be connected with or without a change in $p\mathrm{CO_2}$, but a decline in non-$\mathrm{CO_2}$ radiative forcing is very probably required. Reproduced from {cite:t}`KiteCarter2022`, Fig. 6.
-```
-
-Early Mars climate probably fluctuated.
-The longest single river-forming period lasted more than $10^2$ to $10^3$ yr, the wet years add up to more than $10^5$ yr, and the record holds at least two river-forming periods {cite:p}`Kite2019`.
-The Late Noachian to Early Hesperian valley networks formed over more than $10^4$ yr, probably longer, under a climate warm enough for runoff everywhere on the planet, which was not the case for the later wet events {cite:p}`KiteConway2024`.
-{cite:t}`KiteConway2024` interpret the record as seven major climate transitions between wetter and drier states, although a reading in which different watersheds record local, asynchronous events is not ruled out by the existing data.
-In their reading, some locations were fully dry after $3.6$ Ga, while rivers still formed elsewhere after $3$ Ga.
-Volcanic release of $\mathrm{CO_2}$, $\mathrm{H_2O}$ and $\mathrm{SO_2}$ is a candidate cause of these transitions, but the evidence for it is scarce: the peak degassing rate of a single mantle plume head is small relative to the $\mathrm{CO_2}$ and $\mathrm{H_2O}$ reservoirs of Mars, too small to warm the climate quickly, and $\mathrm{SO_2}$ aerosols cool the surface {cite:p}`KiteConway2024`.
-A plausible cause is instead a change in mean obliquity: at high obliquity polar water ice is unstable and accumulates at low latitude, where it is more likely to melt {cite:p}`KiteConway2024`.
-Whether early Mars was warm and wet or cold and icy is still an open question {cite:p}`KiteConway2024`, and the relative roles of sustained warming, $\mathrm{H_2}$-driven excursions, and cloud warming remain debated.
+Geological constraints indicate that early Mars climate fluctuated between cold baselines and wet episodes, with valley networks forming over $10^4$ yr or longer {cite:p}`Kite2019,KiteConway2024`.
 
 ### Modern Mars: thin atmosphere, dust, and methane
 
@@ -595,22 +474,13 @@ The mean surface temperature is $\sim 210\ \mathrm{K}$ and varies with latitude,
 
 Suspended **dust** heats the atmosphere by absorbing visible sunlight, driving winds that loft more dust.
 This positive feedback occasionally produces **global dust storms** that obscure the surface for weeks to months.
-The 2018 storm ended the *Opportunity* rover mission.
 
 In the **seasonal $\mathrm{CO_2}$ cycle**, roughly $25\%$ of the atmospheric mass condenses onto the winter pole and sublimates back in spring.
-The polar caps are layered structures of $\mathrm{CO_2}$ ice over permanent water-ice deposits that record past obliquity and orbital cycles.
 
-**Recurring slope lineae (RSL)** are dark streaks that form on steep, sun-facing slopes during warm seasons and fade in winter.
-RSL were initially interpreted as briny water flows.
-They are now explained by **dry granular flows** triggered by thermal stress or saltation without liquid water.
+**Recurring slope lineae (RSL)**, once interpreted as briny water flows, are now explained by **dry granular flows** without liquid water.
 
 **Methane** on Mars has a photochemical destruction lifetime of only $\sim 300$ years.
-Any detection implies an active source.
-The *Curiosity* rover reported background methane of $\sim 0.4$ to $0.7\ \mathrm{ppb}$ with occasional spikes inside Gale crater.
-However, the ESA *Trace Gas Orbiter*, launched in 2016, reported global upper limits of $< 0.05\ \mathrm{ppb}$ over the same epochs.
-This unresolved discrepancy may reflect localized, transient releases or instrumental effects.
-
-**Dust devils** and other sub-grid meteorological phenomena monitored by *InSight* provide a sustained record of high-frequency atmospheric variability.
+*Curiosity* reported background methane of $\sim 0.4$ to $0.7\ \mathrm{ppb}$ with occasional spikes, but the *Trace Gas Orbiter* found global upper limits of $< 0.05\ \mathrm{ppb}$.
 
 ## Blackboard derivation: The Jeans escape flux
 
@@ -737,15 +607,7 @@ Because Jeans escape removes only light species, heavier Martian volatiles escap
 Oxygen escape rates from Mars (in particles per second) for the four MAVEN-resolved channels (dissociative recombination, pick-up ions, ion outflow, and sputtering) extrapolated from present-day measurements back to $\sim 3.5$ Ga using estimates of the past solar EUV flux. All four channels were one to two orders of magnitude higher in the early Hesperian than today; the pick-up loss has dropped most steeply over time. From {cite:t}`Jakosky2018`. The integrated total atmospheric loss over $\sim 4$ Gyr (combining the oxygen channels shown here with hydrogen, carbon, and nitrogen loss inferred from other MAVEN datasets and isotopic constraints) is summarised in the body text below.
 ```
 
-```{figure} figures/jakosky2018_hloss.avif
-:name: fig:jakosky-h
-:width: 500px
-:align: center
-
-H corona column density at Mars as a function of solar longitude over a Mars year. Hydrogen escape varies by an order of magnitude over the seasonal cycle, peaking near perihelion when the lower atmosphere is warmer and water vapour rises to higher altitudes where it is photolysed. From {cite:t}`Jakosky2018`.
-```
-
-Extrapolating escape rates across solar EUV history indicates Mars lost $\sim 0.5$ to $1$ bar of $\mathrm{CO_2}$ and $\sim 23$ m of water equivalent over $4$ Gyr {cite:p}`Jakosky2018` ({numref}`fig:jakosky-loss` and {numref}`fig:jakosky-h`).
+Extrapolating escape rates across solar EUV history indicates Mars lost $\sim 0.5$ to $1$ bar of $\mathrm{CO_2}$ and $\sim 23$ m of water equivalent over $4$ Gyr {cite:p}`Jakosky2018` ({numref}`fig:jakosky-loss`).
 Carbon isotope ratios independently require an early atmospheric pressure below $\sim 1\ \mathrm{bar}$ {cite:p}`Hu2015` ({numref}`fig:hu-carbon`).
 
 ```{figure} figures/hu2015_carbon_evolution.avif
@@ -762,7 +624,7 @@ Atmospheric loss is regulated by the **Martian dynamo**, the internal process ge
 
 Although Mars lacks a global magnetic field today, its southern highlands retain intense **crustal magnetic anomalies**.
 These are remanent fields acquired below the Curie temperature in an ancient dynamo {cite:p}`Acuna1999`.
-The fields exceed $\sim 1500\ \mathrm{nT}$ at $\sim 100\ \mathrm{km}$ altitude ({numref}`fig:acuna-map` and {numref}`fig:acuna-dipoles`).
+The fields exceed $\sim 1500\ \mathrm{nT}$ at $\sim 100\ \mathrm{km}$ altitude ({numref}`fig:acuna-map`).
 That is an order of magnitude stronger than Earth's crustal anomalies.
 
 ```{figure} figures/acuna1999_magmap.avif
@@ -773,22 +635,9 @@ That is an order of magnitude stronger than Earth's crustal anomalies.
 Map of the radial component of the magnetic field measured by *Mars Global Surveyor* MAG/ER instrument during low-altitude aerobraking and science-phasing orbits (periapsis $\sim 100$--$200\ \mathrm{km}$). Strong remanent crustal magnetisation (red and blue patches) is concentrated in the Noachian-aged southern highlands; the younger northern lowlands and the Hellas and Argyre impact basins are essentially demagnetised. From {cite:t}`Acuna1999`. Courtesy NASA Goddard Space Flight Center.
 ```
 
-```{figure} figures/acuna1999_dipoles.avif
-:name: fig:acuna-dipoles
-:width: 600px
-:align: center
-
-Polar stereographic projection of the radial component $B_r$ of the Martian crustal magnetic field measured during low-altitude *MGS* orbits (periapsis $\sim 100$--$200\ \mathrm{km}$; left, colour-saturated at $\pm 1500$ nT) and the corresponding topographic basemap (right, greyscale), showing concentric latitude rings at $60^\circ$, $70^\circ$, $80^\circ$ and longitude meridians at $0^\circ$, $90^\circ\mathrm{W}$, $180^\circ$, $270^\circ\mathrm{W}$. Strong Noachian-age remanent magnetisation appears as concentrated red and blue patches confined to one azimuthal sector; the rest of the polar cap and the basin-reset terrains are essentially demagnetised. The lack of crustal magnetisation across Hellas, Argyre, and the Borealis lowlands implies that the dynamo had switched off before those basins formed and reset their thermal state. From {cite:t}`Acuna1999`. Courtesy NASA Goddard Space Flight Center.
-```
-
 The Hellas, Argyre, and Isidis impact basins ($4.0$ to $4.1\ \mathrm{Ga}$) are demagnetised relative to surrounding terrain.
 Impact heating above the magnetite Curie temperature ($\sim 850\ \mathrm{K}$) erased crustal magnetisation after the dynamo died.
 This originally dated dynamo shutdown to $4.1$ to $3.9\ \mathrm{Ga}$ {cite:p}`Acuna1999`.
-
-*MAVEN* data revealed crustal fields at $\sim 4.5\ \mathrm{Ga}$ and $\sim 3.7\ \mathrm{Ga}$.
-This suggests a longer-lived or episodic dynamo {cite:p}`Mittelholz2020`.
-Basin demagnetisation may also reflect impact excavation or a reversing dynamo rather than thermal erasure {cite:p}`Steele2024`.
-These mechanisms place dynamo shutdown in the early Hesperian.
 
 Collapse of the magnetic shield exposed the upper atmosphere to the solar wind.
 Ion escape accelerated and stripped $\mathrm{CO_2}$ and water.
@@ -796,58 +645,24 @@ Mars is the textbook case of a world where the loss of internal magnetism was fo
 
 ### Mars exploration: a brief history
 
-Mars exploration is the longest-running campaign of planetary science.
-The *Mariner 4* flyby in 1965 returned the first close-up images.
-They revealed a heavily cratered, desert-like world rather than Earth-like conditions.
-The *Mariner 9* orbiter in 1971--72 revealed volcanoes, canyons, and polar caps.
-It showed the dramatic contrast between the cratered south and smoother north.
-The *Viking* program (1976) landed two spacecraft to look for biology in Martian soil, yielding ambiguous results, while its meteorology and imaging set the framework for everything that followed.
-
-The 1990s were the decade of orbital mapping.
-*Mars Global Surveyor* (1997 to 2006) produced global topography {cite:p}`Smith2001` and discovered crustal magnetic anomalies {cite:p}`Acuna1999`.
-*Mars Pathfinder* (1997) operated the first Mars rover, *Sojourner*.
-*Mars Odyssey* (2001 to present) mapped subsurface hydrogen.
-This gave the first direct evidence for buried water ice in mid-latitudes.
-
-The 2000s were the decade of rovers.
-*Spirit* and *Opportunity* (2004) demonstrated sustained surface science and found in-situ evidence for past water.
-*Mars Express* (2003 to present) revealed global mineralogy summarised by {cite:t}`Bibring2006`, which *Mars Reconnaissance Orbiter* (2006 to present) refined with sub-metre imaging.
-
-The 2010s and 2020s have been dominated by *Curiosity* at Gale crater and *Perseverance* at Jezero crater.
-*Curiosity* (2012 to present) established a long-duration habitable lacustrine environment at Yellowknife Bay {cite:p}`Grotzinger2014`.
-*Perseverance* (2021 to present) is exploring delta deposits and caching rock cores for future return to Earth.
-The *Ingenuity* helicopter accompanied it and demonstrated powered atmospheric flight.
-Other recent additions include *InSight* (2018 to 2022), which operated as a stationary geophysical station, and China's *Tianwen-1* (2021), which delivered the *Zhurong* rover to Utopia Planitia.
+Six decades of Mars exploration have transitioned from initial reconnaissance to sustained surface science.
+The *Mariner 4* flyby (1965) showed a cratered, Moon-like world; *Mariner 9* (1971) and *Viking* then revealed the giant volcanoes, canyons, and outflow channels.
+Orbital mapping by *Mars Global Surveyor* produced global topography {cite:p}`Smith2001` and crustal magnetic maps {cite:p}`Acuna1999`, while *Mars Odyssey*, *Mars Express* {cite:t}`Bibring2006`, and *Mars Reconnaissance Orbiter* mapped subsurface ice and mineralogy.
+In situ exploration from *Pathfinder*, *Spirit*, and *Opportunity* to *Curiosity* {cite:p}`Grotzinger2014` and *Perseverance* confirmed past habitable environments, complemented by geophysics from *InSight* and surface exploration by *Tianwen-1*.
 
 ### Mars Sample Return and the question of biosignatures
 
-**Mars Sample Return** (MSR) is the joint NASA-ESA campaign to retrieve rock samples cached by *Perseverance* at Jezero.
+**Mars Sample Return** (MSR) is the joint NASA-ESA campaign to retrieve rock samples cached by *Perseverance* at Jezero; its architecture and schedule are being rebaselined after the 2024 cost review.
 Returning samples to Earth allows terrestrial laboratory instruments to analyze materials selected for high astrobiological potential.
-The primary scientific goal is to determine whether the samples contain definitive biosignatures from past or present Martian life {cite:p}`Beaty2019`.
+The primary scientific goal is to determine whether the samples contain definitive biosignatures from past or present Martian life ({ref}`Lecture 14 <lecture14>`).
 Even a confident negative result would tightly constrain models of the origin of life.
-
-{cite:t}`Orosei2018` reported *MARSIS* radar reflections at the south polar cap interpreted as a $\sim 20\ \mathrm{km}$-wide subglacial lake of liquid water.
-This would have been the first detection of stable liquid water on Mars.
-The implications for habitability would be strong.
-Subsequent reanalyses argued that conductive, clay-rich basal layers can reproduce the reflections without liquid water.
-The interpretation remains contested.
-
-The Mars Sample Return (MSR) programme itself is in difficulty.
-The original NASA-ESA architecture targeted return of the cached samples in the early 2030s.
-In 2023, an Independent Review Board concluded that the reference mission was too expensive and too slow {cite:p}`NASAESAMSR2023`.
-An architecture-review process followed in 2024.
-As of early 2026, the architecture, schedule, and cost remain uncertain while competing concepts are evaluated.
 
 ## Part 3: Comparative payoff for terrestrial planet evolution
 
 ### Mercury and Mars as opposite limiting cases
 
-As the smallest rocky planet closest to the Sun, Mercury cooled rapidly, froze most of its core, and lost its volatiles.
-Yet it maintains an active dynamo in a thin convecting outer core and hosts polar ice in cold traps from near-zero obliquity.
-
-Mars accreted volatiles at the outer edge of the habitable zone.
-It cooled more slowly than Mercury.
-It sustained a dynamo and surface liquid water for the first $\sim 700$ Myr of its history before losing its dynamo and atmosphere.
+Mercury cooled rapidly close to the Sun, lost its volatiles and froze much of its core, yet keeps a thin liquid outer shell that sustains a weak dynamo.
+Mars cooled more slowly, sustaining an early dynamo and surface liquid water for $\sim 700$ Myr before losing its dynamo and then its atmosphere.
 
 Both bracket Earth and Venus on the scaling relations of {ref}`Lecture 3 <lecture03>` and {ref}`Lecture 4 <lecture04>`:
 
@@ -864,7 +679,6 @@ Size and distance from the central star primarily determine the long-term evolut
 
 Size controls interior cooling rate, the dynamo heat budget, absolute radiogenic heating, and surface gravity (setting the escape parameter $\lambda$), whereas distance from the Sun controls equilibrium temperature, volatile delivery during accretion, stellar wind erosion, and early hot-phase dynamics.
 
-These outcomes are modulated by stochastic events such as giant impacts, accretion timing, and chaotic obliquity dynamics.
 This framework applies in {ref}`Lecture 13 <lecture13>` and {ref}`Lecture 14 <lecture14>` to exoplanets, where size and orbital distance are typically the only known parameters.
 
 ### The timing problem: dynamo lifetimes and habitability
@@ -873,14 +687,10 @@ The four rocky planets show distinct dynamo histories.
 Earth has an active dynamo sustained by **compositional buoyancy**, buoyancy released by inner-core crystallisation.
 Mercury has a weak dynamo sustained by partial core freezing and convection in a thin liquid shell.
 Mars had a dynamo for its first $\sim 500$ to $800$ Myr.
-It ceased around $4.0$ to $3.7$ Ga {cite:p}`Steele2024`.
+It ceased between $\sim 4.1$ Ga {cite:p}`Acuna1999` and $\sim 3.7$ Ga: MAVEN found crustal fields as young as $\sim 3.7$ Ga, which suggests a longer-lived or episodic dynamo {cite:p}`Mittelholz2020`, and the demagnetised basins may reflect impact excavation or a reversing dynamo {cite:p}`Steele2024`.
 Venus lacks a detectable intrinsic field, and its dynamo history remains unknown ({ref}`Lecture 9 <lecture09>`).
 
 Dynamo longevity correlates with atmospheric retention and surface habitability.
-Earth has a long-lived dynamo, a thick atmosphere stable on Gyr timescales, and surface life.
-Mars and Venus lack present-day dynamos, have lost most of their atmospheres (Mars to space, Venus to runaway greenhouse), and are uninhabitable today.
-Mercury never developed an Earth-like atmosphere because its small size and proximity to the Sun gave it neither volatile inventory nor gravitational retention.
-
 This correlation does not prove a causal link between dynamo longevity and habitability: *MAVEN* escape rates show that an unmagnetised Mars-sized planet loses its atmosphere on $10^9$-year timescales rather than through immediate collapse.
 However, a magnetic shield suppresses **ion escape** by up to an order of magnitude over Gyr timescales.
 
@@ -897,32 +707,21 @@ Synthesising {ref}`Lecture 9 <lecture09>` and this lecture, a rocky planet requi
 4. **Climate stability**: negative temperature feedbacks, notably the **carbonate-silicate cycle** (the Walker thermostat; {cite:p}`Walker1981`), regulate atmospheric $\mathrm{CO_2}$ by accelerating silicate weathering at higher temperatures to cool the surface.
 
 Earth satisfies all four ingredients.
-Venus and Mars each fail on at least two, and Mercury lacks volatiles and an atmosphere.
-These four ingredients provide a conceptual framework for evaluating exoplanet habitability.
-
-We will return to this synthesis in {ref}`Lecture 14 <lecture14>` when exploring habitability across the broader rocky-planet population.
+Venus and Mars each fail on at least two, and Mercury lacks volatiles and an atmosphere ({ref}`Lecture 14 <lecture14>`).
 
 ### Recent advances and upcoming missions
 
-The next decade will advance comparative rocky-planet science across several upcoming missions.
-BepiColombo enters orbit at Mercury in late 2026 to map the magnetic field, surface composition, polar ice inventory, and moment of inertia.
-JAXA MMX launches in 2026 for sample return from Phobos in 2031.
-It aims to resolve whether the Martian moons originated as captured asteroids or giant-impact debris.
-
-Exploration of Mars continues through orbital, surface, and sample return missions.
-ExoMars Rosalind Franklin is scheduled for launch in 2028 to perform subsurface drilling for biosignatures, and Mars Sample Return remains planned to return samples for biosignature detection.
-On the surface, Curiosity and Perseverance continue operations.
-*Curiosity* provides a long-baseline climate record from Gale crater.
-Orbital radar from MARSIS and SHARAD continues to map buried polar and mid-latitude ice.
-The success of the *Ingenuity* helicopter has also demonstrated aerial platforms for planetary exploration.
+The premier upcoming milestone for comparative rocky-planet science is the arrival of the joint ESA/JAXA *BepiColombo* mission, scheduled for orbit insertion at Mercury in late 2026.
+Carrying the Mercury Planetary Orbiter and Mercury Magnetospheric Orbiter, the mission will map the planet's offset magnetic field to test thin-shell dynamo models and measure forced librations to constrain the radius and state of the liquid core.
+Simultaneously, surface spectrometer mapping of volatile abundances, including potassium, sodium, and sulfur, will test giant-impact stripping against nebular condensation models, while radar and thermal instruments resolve the volatile inventory preserved in permanently shadowed polar craters.
 
 ## Summary and takeaways
 
 - **Mercury and Mars are limiting cases for rocky-planet evolution.** Mercury is too small, too close, and too volatile-poor. Mars is too small to retain its atmosphere once the dynamo died. Both bracket Earth and Venus on the parameters that matter most for long-term habitability: size, distance, dynamo longevity, atmospheric retention.
 - **Each of Mercury's oddities points to a specific physical mechanism.** The high uncompressed density requires non-standard formation, plausibly involving giant impacts. The persistent weak dynamo requires a thin convecting shell with thermal stratification. The polar ice survives because the obliquity is essentially zero. The lobate scarps and active faulting record ongoing global contraction.
-- **Mars preserves the geological record of an Earth-like planet that lost its habitability.** The Noachian was wet enough to form valley networks, lakes, and clays. The Hesperian saw transitional, more acidic conditions and the bulk of the volcanic resurfacing. The Amazonian is the cold dry modern Mars. The dynamo died sometime between $4.1$ and $3.7$ Ga (the basin-demagnetisation estimate of $4.1$--$3.9$ Ga, refined by more recent magnetometer analyses to as late as $\sim 3.7$ Ga), and atmospheric loss to space (now measured in real time by MAVEN) accumulated to $\sim 0.5$--$1$ bar of $\mathrm{CO_2}$ and $\sim 23$ m of water over geological time.
+- **Mars preserves the geological record of an Earth-like planet that lost its habitability.** The Noachian was wet enough to form valley networks, lakes, and clays; the Hesperian saw transitional, more acidic conditions and volcanic resurfacing; the Amazonian is cold and dry. The dynamo ceased around $4.1$–$3.7$ Ga, and atmospheric loss to space accumulated to $\sim 0.5$–$1$ bar of $\mathrm{CO_2}$ and $\sim 23$ m of water over geological time.
 - **The Jeans escape formula, equation {eq}`eq:jeans`, is selective.** Light species escape; heavy species do not. Mars' atmospheric loss is dominated by non-thermal (photochemical and ion-escape) processes, not by Jeans escape, except for hydrogen.
-- **Comparative planetology with the four rocky planets gives us four independent natural experiments** on the parameters that determine planetary evolution. This is the best calibration we will have for the inevitable next step of comparing those four solar-system worlds with the much larger sample of rocky exoplanets we will see in {ref}`Lecture 13 <lecture13>` and {ref}`Lecture 14 <lecture14>`.
+- **Comparative planetology with the four rocky planets gives four independent natural experiments** on the parameters governing planetary evolution, providing the baseline for evaluating rocky exoplanets in {ref}`Lecture 13 <lecture13>` and {ref}`Lecture 14 <lecture14>`.
 
 ## References
 

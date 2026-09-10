@@ -29,25 +29,23 @@
   By the end of this lecture, you will be able to:
   \vskip8pt
   \begin{itemize}
-    \item Explain Mercury's anomalously large iron core and the spin-orbit resonance
-    \item Describe Mars' interior, surface, and the InSight seismic results
-    \item Derive the Jeans escape flux and apply it to atomic H, $\mathrm{H_2}$, and $\mathrm{CO_2}$ on Mars
-    \item Distinguish thermal from non-thermal atmospheric escape mechanisms
+    \item Explain Mercury's large iron core and its 3:2 spin-orbit resonance
+    \item Describe Mars' interior, surface and the InSight seismic results
+    \item Derive the Jeans escape flux and apply it to H, $\mathrm{H_2}$ and $\mathrm{CO_2}$ on Mars
+    \item Distinguish thermal from non-thermal escape
     \item Compare Mercury and Mars as opposite limits of terrestrial-planet evolution
-    \item Outline the missions returning data from both worlds in the 2020s and 2030s
   \end{itemize}
 \end{frame}
 
 % ── Recap ───────────────────────────────────────────────────
 \begin{frame}{Recap: Lecture 9}
   \begin{itemize}
-    \item Earth and Venus: nearly identical bulk parameters, drastically different evolution
-    \item Simpson--Nakajima limit: maximum OLR of a saturated water atmosphere $\sim 280$ W\,m$^{-2}$
-    \item Venus inside the runaway-greenhouse threshold; D/H $\sim 150\times$ Earth's
-    \item Plate tectonics + magnetic field + biosphere = the Earth-only four-way coincidence
+    \item Earth and Venus: similar bulk parameters, radically divergent evolution
+    \item Simpson-Nakajima runaway limit: maximum OLR of a saturated water atmosphere $\sim 280$ W\,m$^{-2}$
+    \item Plate tectonics, dynamo, and biosphere form an Earth-only coincidence
   \end{itemize}
   \vskip8pt
-  \textbf{Today:} the smaller siblings, Mercury and Mars. Two opposite limits: largest iron-core fraction (Mercury) vs.\ near-extinct dynamo (Mars). \textbf{Why both?}
+  \textbf{Today:} Mercury and Mars, the smaller siblings at opposite evolutionary limits.
 \end{frame}
 
 
@@ -81,46 +79,20 @@
 
 % ── 3:2 resonance ─────────────────────────────────────────
 \begin{frame}{The 3:2 Spin-Orbit Resonance}
-  Mercury rotates exactly $3$ times for every $2$ orbits.
-  \vskip6pt
-  \begin{itemize}
-    \item Discovered by radar, Pettengill \& Dyce (1965)
-    \item Solar tidal torque on a permanent quadrupole moment (a bulge along the long axis) locks Mercury into the resonance
-    \item Stable because of high orbital eccentricity ($e = 0.206$)
-    \item Solar day on Mercury: $176$ Earth days = $2$ orbits
-    \item Hot pole and cold pole alternate with orbital phase
-  \end{itemize}
+  Mercury rotates exactly three times for every two orbital revolutions, locked into a stable 3:2 spin-orbit resonance.
   \vskip8pt
-  \keyresult{Mercury is the only known planet in a non-1:1 spin-orbit resonance. The capture is dynamically robust because of eccentricity-driven tidal evolution.}
+  \begin{itemize}
+    \item Discovered by radar (Pettengill \& Dyce 1965); stabilised by high eccentricity ($e = 0.206$)
+    \item Solar day lasts $176$ Earth days, exactly $2$ Mercury orbits
+    \item Solar tidal torque on a permanent quadrupole moment locks the resonance
+  \end{itemize}
 \end{frame}
 
 % ── Mercury surface walkthrough (hero) ───────────────────
-\begin{frame}[plain]
-  \begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=center, inner sep=0pt] at (current page.center) {%
-      \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{messenger_mla_global}%
-    };
-  \end{tikzpicture}
-  \begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=south, inner sep=0pt] at ([yshift=4pt]current page.south) {%
-      {\tiny\color{ipsText!60} MESSENGER MLA global topography. Credit: NASA/JHUAPL/CIW}%
-    };
-  \end{tikzpicture}
-\end{frame}
-
-% ── Reading the surface map ──────────────────────────────
-\begin{frame}{Reading Mercury's Topography}
-  MESSENGER's Mercury Laser Altimeter mapped the planet at $\sim 250$ m vertical resolution.
-  \vskip6pt
-  \begin{itemize}
-    \item Total topographic range: $\sim 10$ km (less than Mars or the Moon)
-    \item Highlands: ancient cratered terrain, $> 4$ Gyr old
-    \item Smooth plains: volcanic infill, $\sim 3.7$--$3.9$ Ga
-    \item \textbf{Caloris Basin} ($\sim 1550$ km diameter): one of the largest impacts in the inner solar system
-    \item \textbf{Lobate scarps}: thrust faults (crust overlapping under compression) from global contraction
-  \end{itemize}
-  \vskip6pt
-  \textbf{Two geological epochs:} pre-tectonic + heavy bombardment, then a long stagnant cooling.
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.74\paperheight, keepaspectratio]{messenger_mla_global}}\\
+  {\footnotesize MESSENGER MLA global topography: total relief spans $\sim 10$ km across ancient cratered highlands and younger volcanic plains ($3.7$--$3.9$ Ga). Credit: NASA/JHUAPL/CIW.}
 \end{frame}
 
 % ── Caloris Basin ─────────────────────────────────────────
@@ -143,19 +115,20 @@
 
 % ── Lobate scarps ─────────────────────────────────────────
 \begin{frame}{Lobate Scarps: Mercury Has Shrunk}
+  Global secular cooling caused Mercury to contract, forming compressional thrust faults across a single unbroken lithospheric lid.
+  \vskip6pt
   \begin{columns}[c]
     \column{\recapfigcol}
-    \ipsrecapfig{mercury_lobate_scarp}
+    \ipsrecapfig[0.62\textheight]{mercury_lobate_scarp}
     \source{NASA/JHUAPL (MESSENGER)}
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item Mercury contracted as it cooled: total radial shrinkage $\sim 7$ km
-      \item Compressional thrust faults form lobate scarps
-      \item Scarp height up to $3$ km, length $> 1000$ km
-      \item Sets a constraint on heat-flow history
+      \item Total radial shrinkage $\Delta R \approx 7$ km since late bombardment
+      \item Area loss $\Delta A/A = 2\Delta R/R \approx 0.6\%$, taken up by thrust scarps
+      \item Scarp relief reaches $3$ km with lengths exceeding $1000$ km
     \end{itemize}
-    \vskip6pt
+    \vskip4pt
     \sourcenote{Byrne et al.\ (2014)}
   \end{columns}
 \end{frame}
@@ -170,9 +143,9 @@
     \column{\recaptextcol}
     \begin{itemize}
       \item Permanently shadowed polar craters never see sunlight
-      \item $T < 100$ K $\Rightarrow$ cold trap for water ice
-      \item Panels A--D: MLA topography, reflectance, biannual-average insolation, max-illumination $T$ all coincident
-      \item Identity = $\mathrm{H_2O}$ ice (neutron spectrometer, Lawrence 2013); source: comet/asteroid impacts
+      \item $T < 100$ K creates an efficient cold trap for water ice
+      \item Topography, low insolation, and temperature maps all coincide
+      \item Neutron spectrometry confirms $\mathrm{H_2O}$ ice; source: comet and asteroid impacts
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -190,38 +163,20 @@
       \item High volatile abundances (S, K, Cl, Na) despite $700$ K daytime
       \item Low FeO ($< 2\%$): mantle is highly reducing
       \item Mg/Si ratio higher than Earth's
-      \item Constrains formation under low oxygen fugacity (effective $\mathrm{O_2}$ partial pressure)
+      \item Constrains formation under low oxygen fugacity
     \end{itemize}
   \end{columns}
 \end{frame}
 
-% ── Exosphere ────────────────────────────────────────────
+% ── Exosphere and magnetosphere ──────────────────────────
 \begin{frame}{Exosphere and Magnetosphere}
-  Mercury has no real atmosphere; instead, a tenuous \textbf{exosphere} of atoms knocked off the surface.
-  \vskip6pt
+  Mercury possesses a surface-bounded exosphere sustained by sputtering, photon desorption, and micrometeoroid impact vaporisation.
+  \vskip8pt
   \begin{itemize}
-    \item Surface pressure $\sim 10^{-12}$ bar (effectively vacuum)
-    \item Species detected: Na, K, Ca, Mg, He, H
-    \item Sources: micrometeorite impact, photon-stimulated desorption, sputtering, thermal release
-    \item Sodium tail extends $\sim 10^6$ km anti-sunward
+    \item Surface pressure $\sim 10^{-12}$ bar; detected species include Na, K, Ca, Mg, He, H
+    \item Sodium tail extends $\sim 10^6$ km anti-sunward via radiation pressure
+    \item Miniature magnetosphere stands off the solar wind at subsolar distance $\sim 1.5\,R_{Hg}$
   \end{itemize}
-  \vskip4pt
-  Magnetosphere: small, asymmetric, driven by the planet's weak global dipole + solar-wind interaction.
-\end{frame}
-
-% ── Mercury mission history ──────────────────────────────
-\begin{frame}{Missions to Mercury}
-  \begin{itemize}
-    \item \textbf{Mariner 10} (1974--1975): three flybys, $\sim 45\%$ of surface imaged
-    \item \textbf{MESSENGER} (2011--2015): orbiter, full surface mapping, MLA, MAG, X/GRS
-    \item \textbf{BepiColombo} (ESA/JAXA, launched 2018): two orbiters, Mercury orbit insertion late 2026
-    \begin{itemize}
-      \item MPO: surface, interior, exosphere
-      \item Mio (MMO): magnetosphere, plasma environment
-    \end{itemize}
-  \end{itemize}
-  \vskip6pt
-  \keyresult{In a year and a half, BepiColombo's two orbiters will revolutionise our view of Mercury's interior, magnetosphere, and surface composition.}
 \end{frame}
 
 
@@ -242,9 +197,8 @@
     \begin{itemize}
       \item Crust: $\sim 35$ km
       \item Mantle (silicate): $\sim 400$ km
-      \item Outer core (liquid): below $\sim 2440 - 400 - 35 = 2005$ km radius
+      \item Liquid outer core below $\sim 2020$ km radius, $\sim 83\%$ of the planetary radius
       \item Inner core (solid, possibly Fe-S)
-      \item Core radius $\sim 2020$ km, $\sim 83\%$ of planetary radius
       \item Core mass fraction $\sim 74\%$
     \end{itemize}
   \end{columns}
@@ -259,43 +213,22 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item Mercury rocks slightly back and forth as it orbits
-      \item Points: spin rate measured at each radar epoch; red curve: the fitted 88-day libration
-      \item Libration amplitude depends on whether the mantle is decoupled from the core
-      \item Earth-based radar speckle interferometry: amplitude $35.8 \pm 2$ arcseconds
-      \item Implies a liquid outer core: only the silicate mantle librates freely
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
-% ── Margot data plot ─────────────────────────────────────
-\begin{frame}{The Libration Measurement}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{margot2007_libdata}
-    \source{Margot et al.\ (2007), Fig.~4}
-
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Posterior on $C_m/C$ (mantle moment / total moment) from Monte Carlo realisations
-      \item Peaks at $\sim 0.5$, inconsistent with a fully solid Mercury (which would peak near $1$)
-      \item Direct evidence the silicate mantle floats on a fluid core
-      \item Combined with $C_{20}$ and $C_{22}$ from gravity, fully constrains $C/MR^2$ and core radius
+      \item Radar speckle interferometry measures an 88-day forced libration amplitude of $35.8 \pm 2$ arcseconds
+      \item Decoupling ratio $C_m/C \approx 0.5$: the silicate shell carries half the moment of inertia, so the mantle floats on a liquid core
+      \item Only the solid silicate mantle librates, decoupled from the fluid core
     \end{itemize}
   \end{columns}
 \end{frame}
 
 % ── Why iron-rich ───────────────────────────────────────
 \begin{frame}{Why is Mercury so Iron-Rich?}
-  Three competing hypotheses for Mercury's anomalous core fraction:
-  \vskip6pt
-  \begin{enumerate}
-    \item \textbf{One or more giant impacts} (leading hypothesis; Benz, Slattery \& Cameron 1988; Chau et al.\ 2018): late hit-and-run collisions strip a silicate mantle from a proto-Mercury
-    \item \textbf{Vapour and aerosol stripping by an early luminous Sun}: thermal evaporation / wind-driven loss of part of an originally silicate-rich proto-Mercury
-    \item \textbf{Selective condensation in the inner nebula}: hot inner-disk midplane condenses Fe-Ni metal preferentially over silicates (no longer favoured)
-  \end{enumerate}
-  \vskip6pt
-  \textit{MESSENGER} surface volatiles (Na, S, K) disfavour thermal stripping; the giant-impact family is the modern leading candidate.
+  Mercury's anomalous core fraction likely reflects giant-impact mantle stripping rather than high-temperature solar evaporation.
+  \vskip8pt
+  \begin{itemize}
+    \item \textbf{Giant impact hypothesis} (leading): hit-and-run collisions strip the silicate mantle
+    \item \textbf{Thermal vaporization}: disfavoured by MESSENGER retention of volatiles (Na, S, K)
+    \item \textbf{Selective condensation}: Fe-Ni metal condenses before silicates in the hot inner nebula (no longer favoured)
+  \end{itemize}
 \end{frame}
 
 % ── Franco mercury impact outcomes ──────────────────────
@@ -307,9 +240,9 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item N-body (gravity-only) terrestrial-formation simulations: remnant mass vs.\ semi-major axis
-      \item Six panels: surface-density slope $x = 0.5$--$5.5$; triangles = real planets
-      \item Mercury-mass + iron-rich at the right $a$ occurs in $\ll 1\%$ of trials
+      \item N-body terrestrial-formation simulations: remnant mass vs.\ semimajor axis
+      \item Six panels: surface-density slope $x = 0.5$--$5.5$; triangles mark real planets
+      \item Mercury-mass and iron-rich remnant at $0.39$ AU occurs in $\ll 1\%$ of trials
       \item Single-impact origin is dynamically rare
     \end{itemize}
   \end{columns}
@@ -324,27 +257,10 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item Mercury's dipole offset $\sim 0.2\, R_{Hg}$ northward
-      \item Surface field strength: $\sim 200$--$400$ nT (Earth's: $\sim 50,000$ nT)
-      \item Dynamo (self-sustained field from convection) in a thin outer-core shell
-      \item Stably stratified upper liquid-core layer suppresses high-degree harmonics; inner-core freezing asymmetry produces the offset
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
-% ── Wicht magnetosphere ─────────────────────────────────
-\begin{frame}{Mercury's Magnetosphere}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{wicht_magnetosphere}
-    \source{Wicht \& Heyner (2017)}
-
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Smallest planetary magnetosphere in the solar system
-      \item Subsolar magnetopause (boundary deflecting the solar wind): $\sim 1.5\,R_{Hg}$
-      \item Reconnection (magnetic field-line merging) events drive intense flux-transfer events
-      \item BepiColombo will measure plasma + field structure
+      \item Mercury's dipole is offset $\sim 0.2\, R_{Hg}$ northward
+      \item Surface field strength: $\sim 200$--$400$ nT (Earth: $\sim 50,000$ nT)
+      \item Dynamo generated by convection in a thin outer-core shell
+      \item Stably stratified liquid layer suppresses high-degree field harmonics
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -382,20 +298,13 @@
 
 % ── Phobos and Deimos ─────────────────────────────────────
 \begin{frame}{Phobos and Deimos}
-  Mars' two tiny moons:
-  \vskip6pt
+  Mars' two small rubble-pile moons reflect either captured carbonaceous asteroids or re-accretion from a giant-impact debris disk.
+  \vskip8pt
   \begin{itemize}
-    \item \textbf{Phobos}: $22$ km mean diameter, orbit at $9376$ km, period $7.7$ h (faster than Mars rotation)
-    \item \textbf{Deimos}: $12$ km, orbit at $23463$ km, period $30.3$ h
-    \item Both have very low density ($\sim 1900$ kg\,m$^{-3}$), consistent with rubble-pile internal structure
-    \item Two competing origin scenarios:
-    \begin{itemize}
-      \item Captured asteroids
-      \item In situ formation from a giant-impact debris disk
-    \end{itemize}
+    \item \textbf{Phobos}: diameter $22$ km, orbital period $7.7$ h at $9376$ km radius
+    \item \textbf{Deimos}: diameter $12$ km, orbital period $30.3$ h at $23463$ km radius
+    \item Phobos orbits below synchronous radius and will tidally disrupt in $30$--$50$ Myr
   \end{itemize}
-  \vskip4pt
-  Phobos is below synchronous orbit and will tidally decay onto Mars in $\sim 30$--$50$ Myr.
 \end{frame}
 
 % ── Hyodo phobos impact ─────────────────────────────────
@@ -410,8 +319,8 @@
       \item SPH simulation of a Borealis-scale impact
       \item Forms an extended debris disk around Mars
       \item Phobos and Deimos accrete from the disk
-      \item Reproduces orbital constraints; composition still debated (predicted Mars-mantle vs.\ observed D-type)
-      \item Predicts a fraction of Mars-derived material in the moons
+      \item Reproduces orbital constraints; composition still debated (Mars-mantle vs.\ D-type)
+      \item Predicts a fraction of Mars-derived material in both moons
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -426,30 +335,13 @@
     \column{\recaptextcol}
     \begin{itemize}
       \item JAXA's Martian Moons eXploration: launch 2026, sample return 2031
-      \item Operation plan for the three-year stay, in five phases
-      \item \textbf{Top:} eclipses by Mars (orange) and Phobos (blue); arrows mark the touchdowns and the Deimos flyby
-      \item \textbf{Bottom:} grey bands are solar conjunctions, radio link stops
-      \item Will distinguish capture vs.\ impact origin
+      \item Operation plan for three-year stay in five phases
+      \item Touchdowns and Deimos flyby planned between Mars eclipses
+      \item Returned samples will definitively distinguish capture from impact origin
     \end{itemize}
   \end{columns}
 \end{frame}
 
-% ── MMX orbit ────────────────────────────────────────────
-\begin{frame}{MMX Mission Architecture}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{mmx_orbit}
-    \source{Kuramoto et al.\ (2022), Fig.~3}
-
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Quasi-satellite orbits (stable relative orbits) around Phobos
-      \item \textbf{Top:} five planar orbits, QSO-H at $\sim 200$ km down to QSO-Lc at tens of km
-      \item \textbf{Bottom:} a 3D orbit inclined $45^\circ$, to cover the whole surface
-      \item Sampling phase: $\sim 10$ g of regolith (loose surface material)
-    \end{itemize}
-  \end{columns}
-\end{frame}
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{terrestrial_planets}{Terrestrial planets to scale. Credit: NASA/JPL-Caltech}
@@ -466,17 +358,18 @@
     \column{\recaptextcol}
     InSight SEIS results:
     \begin{itemize}
-      \item Crust: $24$--$72$ km thick, thinner in the north, thicker in the south
-      \item Mantle to $\sim 1560$ km depth
-      \item Tentative olivine--wadsleyite transition $\sim 1000$--$1100$ km (model-dependent)
-      \item \textbf{Liquid iron-alloy core} of radius $\sim 1830$ km
-      \item Core density $\sim 6000$ kg\,m$^{-3}$ (Earth: $\sim 10,900$)
+      \item Crust $24$--$72$ km (thin north, thick south); mantle to $\sim 1560$ km depth
+      \item Olivine-wadsleyite transition at $\sim 1000$--$1100$ km (model-dependent)
+      \item Seismic boundary at $\sim 1830$ km: liquid iron-alloy core (2021 reading)
+      \item 2023 reanalyses: molten silicate layer above a smaller core ($\sim 1650$--$1675$ km, $\sim 6500$ kg\,m$^{-3}$)
     \end{itemize}
   \end{columns}
 \end{frame}
 
 % ── Marsquakes ───────────────────────────────────────────
 \begin{frame}{Reading a Marsquake Waveform}
+  InSight seismology detected direct body waves and core-reflected shear arrivals that constrain Martian core size and state.
+  \vskip6pt
   \begin{columns}[c]
     \column{\recapfigcol}
     \ipsrecapfig{stahler2021_marsquakes}
@@ -484,10 +377,9 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item P-wave arrival, then S-wave arrival
-      \item Core reflections (ScS) detected: core radius $\sim 1830$ km, outer core liquid
-      \item $\sim 1300$ events catalogued during the mission
-      \item Largest event: S1222a, $M = 4.7$, May 2022
+      \item P-wave and S-wave phase arrivals locate marsquake hypocentres
+      \item Core-reflected ScS shear waves confirm a liquid core; far-side quakes and impacts (2023) refine its radius to $\sim 1650$--$1675$ km
+      \item Over $1300$ seismic events recorded; largest event S1222a reached $M = 4.7$
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -501,28 +393,10 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item $3$D thermal-evolution model consistent with InSight constraints
-      \item A small number of long-wavelength upwellings (low-degree convection)
-      \item Sluggish lower-mantle flow
-      \item Tharsis upwelling persists to the present
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
-% ── Plesa crustal thickness ─────────────────────────────
-\begin{frame}{Mars Crustal Thickness Map}
-  \begin{columns}[c]
-    \column{\recapfigcolwide}
-    \ipsrecapfig{plesa2022_crustalthickness}
-    \source{Ple\v{s}a et al.\ (2022), Fig.~1a-c}
-
-    \column{\recaptextcolnarrow}
-    \begin{itemize}
-      \item All anchored to the seismic crust under InSight (triangle)
-      \item \textbf{a:} mean $40.6$ km, $\rho = 2550$
-      \item \textbf{b:} mean $43.1$ km, lowlands $3000$, highlands $2600$
-      \item \textbf{c:} mean $71.4$ km, $\rho = 3000\ \mathrm{kg\,m^{-3}}$
-      \item Dichotomy clear in \textbf{c}, near-absent in \textbf{b}: it depends on the assumed density
+      \item 3D thermal-evolution model consistent with InSight constraints
+      \item Small number of long-wavelength upwellings (low-degree convection)
+      \item Sluggish lower-mantle flow under a thick stagnant lid
+      \item Tharsis mantle plume upwelling persists to the present
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -543,9 +417,9 @@
     \column{\recaptextcol}
     Three classical periods:
     \begin{itemize}
-      \item \textbf{Noachian} ($> 3.7$ Ga): heavy bombardment, valley networks, possible warm/wet
-      \item \textbf{Hesperian} ($3.7$--$3.0$ Ga): outflow channels (catastrophic flood-carved), large-scale volcanism, lake remnants
-      \item \textbf{Amazonian} ($< 3.0$ Ga): cold, dry, thin atmosphere
+      \item \textbf{Noachian} ($> 3.7$ Ga): heavy bombardment, valley networks, warm/wet episodes
+      \item \textbf{Hesperian} ($3.7$--$3.0$ Ga): catastrophic outflow channels, large-scale volcanism
+      \item \textbf{Amazonian} ($< 3.0$ Ga): cold, hyper-arid, thin atmosphere
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -560,66 +434,25 @@
     \column{\recaptextcol}
     \begin{itemize}
       \item Tharsis volcanic province dominates the western hemisphere
-      \item Hellas, Argyre, Isidis: large impact basins
-      \item Northern lowlands: relatively young, partly buried
-      \item Map gives direct visual of stratigraphic ages
+      \item Hellas, Argyre, and Isidis represent giant impact basins
+      \item Northern lowlands are young, smooth, and partly buried
+      \item Stratigraphic mapping reveals planet-wide geological evolution
     \end{itemize}
   \end{columns}
 \end{frame}
 
 % ── Olympus Mons hero ────────────────────────────────────
-\begin{frame}[plain]
-  \begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=center, inner sep=0pt] at (current page.center) {%
-      \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{olympus_mons}%
-    };
-  \end{tikzpicture}
-  \begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=south, inner sep=0pt] at ([yshift=4pt]current page.south) {%
-      {\tiny\color{ipsText!60} Olympus Mons, Mars Express. Credit: ESA/DLR/FU Berlin}%
-    };
-  \end{tikzpicture}
-\end{frame}
-
-% ── Olympus Mons walkthrough ────────────────────────────
-\begin{frame}{Olympus Mons: The Tallest Volcano}
-  \begin{itemize}
-    \item Summit $\sim 21.2$ km above the Mars areoid (its gravitational reference surface); $\sim 21.9$ km above the surrounding plains (Earth's tallest, Mauna Kea, is $\sim 10$ km from sea floor base)
-    \item Diameter: $600$ km (the size of Italy)
-    \item Shield volcano with low slope angles
-    \item Calderas at the summit: $\sim 80$ km across
-    \item Flank scarps: $\sim 6$ km cliffs
-    \item Stagnant-lid (rigid, non-recycling lithosphere) plumes can pile up to enormous heights without lateral plate motion to spread the load
-  \end{itemize}
-  \vskip4pt
-  Tharsis as a whole is loaded enough to have plausibly reoriented Mars' rotation axis ("true polar wander").
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.74\paperheight, keepaspectratio]{olympus_mons}}\\
+  {\footnotesize Olympus Mons: a shield volcano $\sim 21$ km high and $600$ km wide, built by stationary hotspot volcanism over a stagnant lid. Credit: ESA/DLR/FU Berlin.}
 \end{frame}
 
 % ── Valles Marineris hero ────────────────────────────────
-\begin{frame}[plain]
-  \begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=center, inner sep=0pt] at (current page.center) {%
-      \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{valles_marineris}%
-    };
-  \end{tikzpicture}
-  \begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=south, inner sep=0pt] at ([yshift=4pt]current page.south) {%
-      {\tiny\color{ipsText!60} Valles Marineris, Viking mosaic. Credit: NASA/JPL-Caltech}%
-    };
-  \end{tikzpicture}
-\end{frame}
-
-% ── Valles Marineris walkthrough ────────────────────────
-\begin{frame}{Valles Marineris: A Tectonic Canyon}
-  \begin{itemize}
-    \item $4000$ km long, $200$ km wide, up to $7$ km deep
-    \item As wide as the United States; as deep as four Grand Canyons stacked
-    \item Origin: extensional rifting linked to Tharsis loading + uplift
-    \item Outflow channels exit the eastern end into chaotic terrain (jumbled, collapsed surface blocks)
-    \item Possibly lake-filled in the Hesperian; layered sediments observed
-  \end{itemize}
-  \vskip6pt
-  \keyresult{Valles Marineris is not an erosional canyon; it is a tectonic graben (a down-dropped, fault-bounded block) modified by collapse and subsequent fluvial activity.}
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.74\paperheight, keepaspectratio]{valles_marineris}}\\
+  {\footnotesize Valles Marineris: a tectonic graben system $4000$ km long and up to $7$ km deep, formed by crustal extension associated with Tharsis loading. Credit: NASA/JPL-Caltech.}
 \end{frame}
 
 % ── Valley networks (water evidence) ────────────────────
@@ -631,10 +464,10 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item Dendritic drainage networks on Noachian terrain
-      \item Confluences, meanders, tributaries: liquid-water erosion
-      \item Drainage density well below Earth's; densest networks in Earth's range (Hynek et al.\ 2010)
-      \item Active for $> 100$ Myr in the late Noachian
+      \item Dendritic drainage networks carved into Noachian terrain
+      \item Confluences, meanders, and tributaries confirm liquid-water erosion
+      \item Drainage density approaches terrestrial arid network ranges
+      \item Fluvial valley formation active for $> 100$ Myr in the late Noachian
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -648,10 +481,10 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item \textbf{Top:} Late Noachian / Early Hesperian valley networks ($\sim 3.6$ Ga and older), on high ground
-      \item \textbf{Bottom:} Late Hesperian / Amazonian fans and deltas ($3.5$--$3$ Ga), lower and banded at mid-latitudes
-      \item Colour is elevation, $-6$ to $+6$ km; grey is masked out (detection unreliable)
-      \item Control passes from \textbf{elevation} to \textbf{latitude}: the key constraint on the greenhouse change
+      \item \textbf{Top:} Late Noachian valley networks ($\sim 3.6$ Ga and older) on high ground
+      \item \textbf{Bottom:} Late Hesperian to Amazonian fans ($3.5$--$3$ Ga) banded at mid-latitudes
+      \item Elevation ranges $-6$ to $+6$ km
+      \item Fluvial control shifts from \textbf{elevation} to \textbf{latitude} as climate cools
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -664,12 +497,11 @@
     \source{Bibring et al.\ (2006), Fig.~5}
 
     \column{\recaptextcol}
-    OMEGA (Mars Express) mineralogy framework:
+    OMEGA mineralogy timeline:
     \begin{itemize}
-      \item \textbf{Phyllosian} (earliest): clays, neutral-pH water
-      \item \textbf{Theiikian}: sulfates, acidic water
-      \item \textbf{Siderikian} (from $\sim 3.5$ Ga): anhydrous ferric oxides, oxidising, dry
-      \item Mineralogical eras, not chronostratigraphic: the boundaries differ from the Noachian / Hesperian / Amazonian ones
+      \item \textbf{Phyllosian} (earliest): phyllosilicates formed in neutral-pH water
+      \item \textbf{Theiikian}: sulfates deposited by acidic, evaporating water
+      \item \textbf{Siderikian} (from $\sim 3.5$ Ga): anhydrous ferric oxides in hyper-arid conditions
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -686,14 +518,16 @@
       \item Red: phyllosilicates (clays)
       \item Blue: sulfates
       \item Yellow: other hydrated minerals
-      \item Clays cluster in the southern Noachian highlands (neutral-pH water, phyllosian)
-      \item Sulfates concentrate at lower latitudes (acidic evaporative, theiikian)
+      \item Clays cluster in ancient southern Noachian highlands
+      \item Sulfates concentrate in equatorial evaporative basins
     \end{itemize}
   \end{columns}
 \end{frame}
 
 % ── Ehlmann olivine ────────────────────────────────────
 \begin{frame}{Olivine: The Aqueous Alteration Boundary}
+  Widespread unweathered olivine in the Martian crust: liquid water was restricted in space or time.
+  \vskip6pt
   \begin{columns}[c]
     \column{\recapfigcol}
     \ipsrecapfig{ehlmann2014_olivine}
@@ -701,26 +535,9 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item Olivine is unstable in liquid water (alters to serpentine + clays)
-      \item Detection of fresh olivine = surfaces never sustainedly wet
-      \item Olivine common across the equatorial region: most of Mars never had a long surface ocean
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
-% ── Ehlmann spectra ────────────────────────────────────
-\begin{frame}{CRISM Spectra: How We See the Minerals}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{ehlmann2014_spectra}
-    \source{Ehlmann \& Edwards (2014)}
-
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Mid-IR emissivity spectra ($\sim 6$--$25\,\mu$m, wavenumber $1500$--$500$ cm$^{-1}$)
-      \item Atmospheric $\mathrm{CO_2}$ band, basaltic minerals, sulfates, hematite endmembers
-      \item Diversity of spectral classes records a wide range of aqueous and igneous environments
-      \item Complementary near-IR CRISM spectra (not shown) resolve $1.4$, $1.9$, $2.2$, $2.4\,\mu$m hydration features
+      \item Olivine alters quickly in liquid water to serpentine and smectite clays
+      \item Surviving olivine rules out a persistent global ocean
+      \item Water activity was episodic or localised
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -739,68 +556,44 @@
 \begin{frame}{Setup: The Exobase}
   \textbf{Goal:} derive the rate at which thermal energy alone allows molecules to escape from a planetary atmosphere; apply it to Mars.
   \vskip6pt
-  \textbf{The exobase.} Altitude where the mean free path equals the atmospheric scale height. Above it, molecules move ballistically.
+  \textbf{The exobase:} Altitude where mean free path equals atmospheric scale height; molecules move ballistically above it.
   \vskip6pt
-  Most-probable speed in Maxwell-Boltzmann distribution:
-  $$v_{\mathrm{th}} = \sqrt{2 \kB T / m}$$
-  \vskip2pt
-  Escape velocity at the exobase:
-  $$v_{\mathrm{esc}} = \sqrt{2 G M / r_{\mathrm{exo}}}$$
+  Most-probable speed: $v_{\mathrm{th}} = \sqrt{2 \kB T / m}$
+  \vskip4pt
+  Escape velocity: $v_{\mathrm{esc}} = \sqrt{2 G M / r_{\mathrm{exo}}}$
 \end{frame}
 
-% ── Escape parameter ──────────────────────────────────────
-\begin{frame}{Step 1: The Escape Parameter}
-  Define dimensionless ratio:
+\begin{frame}{The Escape Parameter}
   \keyresult{$$\lambda \equiv \left(\frac{v_{\mathrm{esc}}}{v_{\mathrm{th}}}\right)^{\!2} = \frac{G\,M\,m}{\kB\,T\,r_{\mathrm{exo}}}$$}
   \vskip6pt
   \begin{itemize}
     \item $\lambda \gg 1$: molecules gravitationally bound; escape rare
     \item $\lambda \lesssim 1$: thermal energy comparable to escape energy; rapid loss
-    \item Depends strongly on molecular mass $m$
+    \item Depends strongly on molecular mass $m$; independent of magnetic field, ionisation and solar wind
   \end{itemize}
-\end{frame}
-
-% ── Maxwell distribution ─────────────────────────────────
-\begin{frame}{Step 2: Maxwell-Boltzmann Distribution}
-  At the exobase, gas in local thermal equilibrium:
-  $$f(v)\,\dd v = n\,\left(\frac{m}{2\pi \kB T}\right)^{3/2}\,4\pi v^2 \exp\!\left(-\frac{m v^2}{2 \kB T}\right) \dd v$$
-  \vskip6pt
-  Number flux of upward-moving molecules with $v_z > 0$:
-  $$\Phi = \int_{\mathrm{up}} v_z\, f(\mathbf{v})\,\dd^3 v$$
-  \vskip4pt
-  We need $v_z$ such that the speed exceeds $v_{\mathrm{esc}}$.
 \end{frame}
 
 % ── Jeans flux derivation ────────────────────────────────
-\begin{frame}{Step 3: The Jeans Formula}
-  Integrating over the upper hemisphere of velocity space, with the speed cutoff $v \geq v_{\mathrm{esc}}$:
+\begin{frame}{Result: The Jeans Formula}
+  Integrating upward velocity over the upper hemisphere with cutoff $v \geq v_{\mathrm{esc}}$:
   $$\Phi_J = n\,\langle v\rangle\,\frac{1}{4}\,(1+\lambda)\,e^{-\lambda}$$
   \vskip4pt
-  where $\langle v\rangle = \sqrt{8 \kB T / (\pi m)}$ is the mean speed.
-  \vskip4pt
+  where $\langle v\rangle = \sqrt{8 \kB T / (\pi m)}$ is the mean thermal speed.
+  \vskip6pt
   Substituting and simplifying:
   \keyresult{$$\Phi_J \;=\; n\,\sqrt{\frac{\kB T}{2\pi m}}\,(1+\lambda)\,e^{-\lambda}$$}
   \vskip4pt
-  This is the Jeans escape flux (Jeans 1925).
-\end{frame}
-
-% ── Limits ────────────────────────────────────────────────
-\begin{frame}{Step 4: Checking the Limits}
-  \begin{itemize}
-    \item $\lambda \to 0$: $(1+\lambda)e^{-\lambda} \to 1$, formula reduces to standard kinetic-theory effusion flux $n \sqrt{\kB T / (2 \pi m)}$
-    \item $\lambda \gg 1$: exponential decay dominates; flux $\propto \lambda\, e^{-\lambda}$
-    \item Steepness: a change in $\lambda$ from $5$ to $10$ reduces escape by a factor of $\sim 80$
-  \end{itemize}
-  \vskip8pt
-  \keyresult{Jeans escape is exponentially sensitive to $\lambda$: small changes in temperature or molecular mass change the loss rate by orders of magnitude.}
+  Jeans (1925). Limits: $\lambda \to 0$ gives the effusion flux $n\sqrt{\kB T/(2\pi m)}$; for $\lambda \gg 1$ the flux falls as $\lambda e^{-\lambda}$, so $\lambda$ from $5$ to $10$ cuts it by $\sim 80$.
 \end{frame}
 
 % ── Mars application ─────────────────────────────────────
-\begin{frame}{Step 5: Apply to Mars}
+\begin{frame}{Apply to Mars}
   $M = 6.4\times 10^{23}$ kg, $r_{\mathrm{exo}} \approx 3.6\times 10^6$ m, $T_{\mathrm{exo}} \approx 270$ K.
   \vskip2pt
   Escape velocity at the exobase: $v_{\mathrm{esc}} \approx 4.9\,\mathrm{km/s}$
-  \vskip2pt
+  \vskip4pt
+  \centering
+  \small
   \begin{tabular}{l c c}
     \toprule
     \textbf{Species} & $\lambda$ & $e^{-\lambda}$ \\
@@ -812,20 +605,8 @@
     $\mathrm{CO_2}$ & $230$ & $10^{-100}$ \\
     \bottomrule
   \end{tabular}
-  \vskip2pt
+  \vskip4pt
   \keyresult{Mars cannot lose $\mathrm{CO_2}$ thermally. Only H and $\mathrm{H_2}$ escape via Jeans; heavier species need non-thermal channels.}
-\end{frame}
-
-% ── Why robust ───────────────────────────────────────────
-\begin{frame}{Why Jeans Escape is the Foundation}
-  \begin{itemize}
-    \item Underpins atmospheric escape theory in general
-    \item Always present at any temperature above absolute zero
-    \item Sets the lower bound on escape rate
-    \item Independent of magnetic field, ionisation state, or solar wind
-  \end{itemize}
-  \vskip8pt
-  Other mechanisms (photochemical, sputtering, ion pickup, hydrodynamic) operate \textbf{in addition} to Jeans, with different mass selectivities and intensities.
 \end{frame}
 
 
@@ -834,20 +615,8 @@
 \section{Mars Atmosphere and Climate Loss}
 % ════════════════════════════════════════════════════════════
 
-% ── Early Mars climate puzzle ───────────────────────────
-\begin{frame}{The Early Mars Climate Puzzle}
-  \begin{itemize}
-    \item Geological evidence: liquid water flowed in the late Noachian
-    \item Solar luminosity at $4$ Ga was $\sim 75\%$ of today
-    \item Pure $\mathrm{CO_2}$ greenhouse cannot warm Mars above freezing at $1.5$ AU
-    \item Required: extra greenhouse gas (CH$_4$, $\mathrm{H_2}$ collision-induced absorption)
-  \end{itemize}
-  \vskip6pt
-  Active research: episodic warming + impacts + volcanism + reducing atmospheres in interplay.
-\end{frame}
-
-% ── Early Mars climate schematic ────────────────────────
-\begin{frame}{Cold Baseline, Transient Warm Excursions}
+% ── Early Mars climate puzzle & cold baseline ───────────
+\begin{frame}{Early Mars Climate: The Faint Young Sun}
   \begin{columns}[c]
     \column{\recapfigcol}
     \ipsrecapfig{early_mars_climate_schematic}
@@ -855,9 +624,9 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item Icy-highlands baseline (a hypothesis): pure $\mathrm{CO_2}$-$\mathrm{H_2O}$ gives $\lesssim 225$ K; snow collects on the highlands
-      \item $\mathrm{H_2}$-$\mathrm{CO_2}$ collision-induced absorption warms enough for snowmelt and rivers; $\mathrm{H_2}$ from volcanism, serpentinisation or impacts
-      \item Modelled excursions of $10^5$ to $10^6$ yr end when $\mathrm{H_2}$ escapes; carbonate is the slow $\mathrm{CO_2}$ sink
+      \item Solar luminosity at $4$ Ga was $\sim 75\%$ of modern flux; pure $\mathrm{CO_2}$ yields $T \le 225$ K
+      \item Geological valley networks require liquid water at the surface
+      \item Transient $\mathrm{H_2}$-$\mathrm{CO_2}$ collision-induced absorption triggers snowmelt excursions ($10^5$ to $10^6$ yr)
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -871,10 +640,10 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item Steady-state mean $T_{\rm surf}$ (horizontal, $\sim 280$ K divider) vs.\ surface $\mathrm{H_2O}$ inventory (vertical, $\sim 200$ m GEL divider)
-      \item Quadrant classification (warm/cold $\times$ wet/dry) of long-term states
-      \item Cross-sections run lowlands (left) to highlands (right): rock orange, ice grey, water blue
-      \item Geomorphology favours cold and relatively dry, with episodic melting
+      \item Steady-state mean $T_{\rm surf}$ ($\sim 280$ K divider) vs.\ surface $\mathrm{H_2O}$ inventory ($\sim 200$ m GEL divider)
+      \item Four quadrants classify long-term climate regimes
+      \item Cross-sections show ice-capped highlands vs.\ lowland water
+      \item Geomorphology favours a cold, dry baseline with episodic melting
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -888,11 +657,11 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item Coupled atmosphere-surface-interior carbon model
-      \item Initial $\mathrm{CO_2}$ $\sim 0.25$--$0.50$ bar (panel d; red $0.32$--$0.50$, blue $0.25$--$0.29$)
-      \item Reconstructed Late Noachian / Early Hesperian total carbon $\sim 0.5$--$1.8$ bar
-      \item Loss split between escape, carbonate burial, polar caps
-      \item Modern $6$ mbar: most of the original atmosphere is gone
+      \item Coupled atmosphere-surface-interior carbon evolution model
+      \item Initial $\mathrm{CO_2}$ inventory $\sim 0.25$--$0.50$ bar (red $0.32$--$0.50$, blue $0.25$--$0.29$)
+      \item Late Noachian carbon reconstructed at $\sim 0.5$--$1.8$ bar
+      \item Loss partitioned between atmospheric escape and carbonate burial
+      \item Modern $6$ mbar: bulk of primordial carbon inventory is lost
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -906,10 +675,10 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item \textbf{Left:} the two eras; valleys cut the highlands, later fans lie on lower ground above the cryosphere
-      \item \textbf{Right:} climate state vs.\ $\mathrm{CO_2}$ loss ($1000 \to 10$ mbar) and lost non-$\mathrm{CO_2}$ warming ($\tau = 5 \to 0$)
-      \item Blue outline: early era. Orange: late era. Between them, cooling of $\gtrsim 10$ K, from $T \geq 268$ K to $T \sim 258$ K
-      \item Driven mainly by \textbf{waning non-$\mathrm{CO_2}$ forcing}, not $\mathrm{CO_2}$ loss
+      \item Early era valleys cut high ground; later fans form at lower elevations
+      \item Climate state plotted against $\mathrm{CO_2}$ loss and lost non-$\mathrm{CO_2}$ greenhouse forcing
+      \item Net cooling of $\gtrsim 10$ K across the transition
+      \item Driven primarily by \textbf{waning non-$\mathrm{CO_2}$ forcing} rather than $\mathrm{CO_2}$ atmospheric thinning
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -922,39 +691,21 @@
     \source{Jakosky et al.\ (2018)}
 
     \column{\recaptextcol}
-    Figure: \textbf{oxygen} escape channels vs.\ time, extrapolated from MAVEN to $\sim 3.5$ Ga:
+    MAVEN oxygen escape channels extrapolated back to $\sim 3.5$ Ga:
     \begin{itemize}
-      \item \textbf{Dissociative recombination} (dominant O channel today)
-      \item \textbf{Pick-up ions} (steepest decline over time)
-      \item \textbf{Ion outflow}
-      \item \textbf{Sputtering} by solar-wind ions
+      \item \textbf{Dissociative recombination} (dominant modern O channel)
+      \item \textbf{Pick-up ions} (steepest historical decline)
+      \item \textbf{Ion outflow} and solar-wind \textbf{sputtering}
     \end{itemize}
-    \vskip3pt
-    {\small Present-day total escape $\sim 2$ kg\,s$^{-1}$; H and $\mathrm{CO_2^+}$ channels (not shown here) contribute additionally.}
-  \end{columns}
-\end{frame}
-
-% ── Jakosky H loss ──────────────────────────────────────
-\begin{frame}{Seasonal H Corona Variation}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{jakosky2018_hloss}
-    \source{Jakosky et al.\ (2018)}
-
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item H corona column density vs.\ $L_s$ (solar longitude, a seasonal marker) over a Mars year
-      \item Peak near $L_s \sim 270^\circ$: perihelion warming lifts $\mathrm{H_2O}$ to photolysis altitudes
-      \item Order-of-magnitude seasonal variation; proxy for the escape rate
-      \item Loss is Jeans + non-thermal; over $4$ Gyr implies a much wetter early Mars
-    \end{itemize}
+    \vskip4pt
+    {\small Present total escape $\sim 2$ kg\,s$^{-1}$; heavy species require non-thermal escape.}
   \end{columns}
 \end{frame}
 
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{mariner4_mars}{Early Mars from Mariner 4 (1965). Credit: NASA/JPL}
-\section{Mars Magnetism and Mission History}
+\section{Mars Magnetism}
 % ════════════════════════════════════════════════════════════
 
 % ── Acuna magnetic map ──────────────────────────────────
@@ -966,10 +717,10 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item No global field today
-      \item Strong remnant magnetisation in the southern highlands
-      \item Implies a vigorous early dynamo, then shutoff
-      \item Northern lowlands: weak (impact-erased or younger crust)
+      \item No global dipolar magnetic field today
+      \item Intense remnant crustal magnetisation in southern highlands
+      \item Requires a vigorous early core dynamo that shut down
+      \item Northern lowlands and major basins demagnetised by impacts
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -983,41 +734,12 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item Polar stereographic $B_r$; companion equatorial map shows mid-latitude stripes (polarity reversals)
-      \item Recorded by basaltic crust during cooling
-      \item Pre-Borealis-impact crust preserves the early dynamo signature
-      \item Dynamo cessation $\sim 4.1$ Ga (Acu\~na 1999); refined to $\sim 3.7$ Ga (Mittelholz 2020, Steele 2024)
+      \item Polar view of $B_r$; the companion equatorial map shows east-west lineated anomalies at mid-latitudes
+      \item Recorded by basaltic crust as it cooled, possibly through field reversals
+      \item Pre-Borealis crust preserves primordial dynamo signature
+      \item Dynamo cessation dated to $\sim 4.1$ Ga (refined to $\sim 3.7$ Ga)
     \end{itemize}
   \end{columns}
-\end{frame}
-
-% ── Mars exploration history ────────────────────────────
-\begin{frame}{Mars Mission History (Selected Highlights)}
-  \begin{itemize}
-    \item \textbf{Mariner 4} (1965): first flyby; cratered "Moon-like" Mars
-    \item \textbf{Viking 1\&2} (1976): first landers, first life-detection experiments (ambiguous results)
-    \item \textbf{MGS, Odyssey, MEX, MRO, Maven}: orbital era 1996--present
-    \item \textbf{Spirit, Opportunity, Curiosity, Perseverance}: rovers
-    \item \textbf{InSight} (2018--2022): seismometer + heat-flow probe
-    \item \textbf{Tianwen-1} (2021, China): orbiter + Zhurong rover
-    \item \textbf{Mars Sample Return}: planned 2030s
-  \end{itemize}
-\end{frame}
-
-% ── Sample Return ───────────────────────────────────────
-\begin{frame}{Mars Sample Return: The Next Decade}
-  Perseverance (since 2021) is caching samples from Jezero Crater, an ancient lake bed.
-  \vskip6pt
-  \begin{itemize}
-    \item Cores: igneous, sedimentary, organic-bearing rocks
-    \item ESA + NASA architecture under revision (cost overruns; IRB 2023)
-    \item Sample return earliest in the early 2030s
-    \item Will allow precise radiometric dating + biosignature analysis
-  \end{itemize}
-  \vskip6pt
-  \keyresult{Sample return is the difference between "consistent with biological origin" and "biological origin proven beyond reasonable doubt".}
-  \vskip2pt
-  \sourcenote{NASA/ESA MSR Independent Review Board (2023)}
 \end{frame}
 
 
@@ -1026,77 +748,34 @@
 \section{Comparative Payoff: Mercury vs Mars}
 % ════════════════════════════════════════════════════════════
 
-% ── Opposite limits ─────────────────────────────────────
-\begin{frame}{Mercury and Mars as Opposite Limits}
+% ── BepiColombo hero ────────────────────────────────────────
+\begin{frame}
   \centering
-  \small
-  \begin{tabular}{l c c}
-    \toprule
-    \textbf{Property} & \textbf{Mercury} & \textbf{Mars} \\
-    \midrule
-    Distance from Sun & $0.39$ AU & $1.52$ AU \\
-    Mass ($\Mearth$) & $0.055$ & $0.107$ \\
-    Core fraction & $\sim 74\%$ & $\sim 25\%$ \\
-    Mantle thickness & $\sim 400$ km & $\sim 1560$ km \\
-    Surface volatiles & cold trap ice only & once-flowing water \\
-    Magnetic field today & weak global & none global \\
-    Atmosphere & exosphere & $6$ mbar $\mathrm{CO_2}$ \\
-    Tectonics & shrinking, lobate scarps & stagnant lid \\
-    \bottomrule
-  \end{tabular}
-  \vskip8pt
-  \keyresult{Mercury sits at the maximum-iron, no-volatile end. Mars sits at the maximum-volatile, low-iron end. Earth and Venus fall in between.}
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.74\paperheight, keepaspectratio]{wicht_magnetosphere}}\\
+  {\footnotesize Mercury's magnetosphere, the smallest in the solar system, with its subsolar magnetopause at $\sim 1.5\,R_{Hg}$. BepiColombo (ESA/JAXA) enters Mercury orbit in late 2026 with two orbiters to map this offset field, the core and the exosphere. Credit: Wicht \& Heyner (2017).}
 \end{frame}
-
-% ── Size and distance set the trajectory ────────────────
-\begin{frame}{Size and Distance Set the Trajectory}
-  \begin{itemize}
-    \item \textbf{Small bodies cool fast}: surface-area-to-volume ratio $\propto 1/R$
-    \item Mars cools faster than Earth $\Rightarrow$ early dynamo shutoff
-    \item Mercury sustains a weak dynamo because light elements (S, Si) keep the outer core liquid; a thin convecting shell + thermal stratification produce the offset, weak field
-    \item \textbf{Distance from the Sun} sets atmospheric escape and irradiation history
-  \end{itemize}
-  \vskip6pt
-  Combined: small + warm $\Rightarrow$ Mercury (volatile-poor, iron-dominant). Small + cold $\Rightarrow$ Mars (water-rich early, escapes to space later).
-\end{frame}
-
-% ── Dynamo lifetimes ───────────────────────────────────
-\begin{frame}{The Timing Problem: Dynamo Lifetimes}
-  \begin{itemize}
-    \item Earth: dynamo active for $\geq 3.5$ Gyr, still going
-    \item Mars: dynamo active in the first $\sim 500$--$800$ Myr; cessation $\sim 4.1$ Ga (Acu\~na 1999), possibly as late as $\sim 3.7$ Ga (Mittelholz 2020, Steele 2024)
-    \item Mercury: dynamo weak but still active
-    \item Venus: dynamo unclear, possibly dead
-  \end{itemize}
-  \vskip6pt
-  \textbf{Lesson:} dynamo persistence depends on (a) core size, (b) cooling rate of the mantle, (c) chemical buoyancy from inner-core nucleation. Mars failed (b); Mercury preserves (a); Earth has all three.
-\end{frame}
-
-% ── What makes a planet habitable ────────────────────────
-\begin{frame}{Comparative View: What Makes a Rocky Planet Habitable?}
-  \begin{itemize}
-    \item Stellar flux inside the runaway-greenhouse limit (rules out Venus)
-    \item Long-lasting atmosphere (rules out Mercury, late Mars)
-    \item Liquid water reservoir at the surface (rules out Mercury entirely)
-    \item Internal heat sufficient for tectonic recycling (rules out Mars after $\sim 1$ Ga)
-    \item Magnetic shield against solar-wind erosion (helps but not strictly required)
-  \end{itemize}
-  \vskip6pt
-  \keyresult{Habitability is a multi-dimensional constraint. Each of Mercury, Venus, Mars fails on different axes; Earth happens to satisfy all of them simultaneously.}
-\end{frame}
-
 
 % ── Summary ────────────────────────────────────────────────
+\begin{frame}{Size and Distance Set the Trajectory}
+  \begin{itemize}
+    \item \textbf{Small bodies cool fast}: surface-area-to-volume ratio $\propto 1/R$; Mars cooled faster than Earth, so its dynamo shut off early
+    \item \textbf{Mercury keeps a weak dynamo}: light elements (S, Si) keep a thin outer-core shell liquid; thermal stratification gives the weak, offset field
+    \item \textbf{Lesson}: dynamo persistence needs (a) core size, (b) a slow-cooling mantle, (c) chemical buoyancy from inner-core growth; Mars failed (b), Mercury keeps (a), Earth has all three
+  \end{itemize}
+\end{frame}
+
 \begin{frame}{Summary}
   \begin{enumerate}
-    \item Mercury: 3:2 spin-orbit resonance, $\sim 74\%$ iron core, weak offset dynamo, polar ice in cold traps
-    \item Mars: half Earth's radius, one tenth its mass, lost its dynamo at $\sim 4.1$ Ga and most of its atmosphere thereafter
-    \item Jeans escape: $\Phi_J \propto (1+\lambda)e^{-\lambda}$, mass-selective; H and $\mathrm{H_2}$ escape Mars, $\mathrm{CO_2}$ does not
-    \item Non-thermal escape (photochemical, ion pickup, sputtering) drives the heavy-species loss
-    \item InSight delivered the first marsquake catalogue and confirmed a liquid Mars core
-    \item Mercury and Mars sit at opposite limits of terrestrial-planet evolution: maximum core fraction vs.\ maximum atmospheric volatile loss
-    \item BepiColombo (2026) and MMX (2026) will revolutionise our view of both planets in the next few years
+    \item \textbf{Resonance and core}: 3:2 spin-orbit resonance; $\sim 74\%$ iron core from mantle stripping
+    \item \textbf{Contraction}: Secular cooling shrank Mercury by $\Delta R \approx 7$ km forming lobate scarps
+    \item \textbf{Mars interior}: a liquid core, $\sim 1650$--$1675$ km below a molten silicate layer (2023 reanalyses)
+    \item \textbf{Jeans escape}: Flux $\Phi_J \propto (1+\lambda)e^{-\lambda}$ allows H loss but retains $\mathrm{CO_2}$
+    \item \textbf{Non-thermal loss}: sputtering and ion pickup remove the heavy species
+    \item \textbf{Dynamo death}: between $\sim 4.1$ and $\sim 3.7$ Ga
+    \item \textbf{Opposite limits}: Size and distance govern core cooling, dynamos, and volatile retention
   \end{enumerate}
+  \vskip6pt
+  \textbf{Next: Lecture 11}
 \end{frame}
 
 % ── Final slide ─────────────────────────────────────────────
