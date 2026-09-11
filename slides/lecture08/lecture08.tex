@@ -29,11 +29,9 @@
   By the end of this lecture, you will be able to:
   \vskip8pt
   \begin{itemize}
-    \item Explain how seismology, gravity, and moment of inertia probe interiors
-    \item Derive $C/MR^2$ for uniform and two-layer planets
-    \item Apply hydrostatic equilibrium and equations of state
-    \item Compare internal structures across the solar system
-    \item Describe recent interior results from InSight seismology
+    \item Explain how seismology, gravity fields and the moment of inertia probe interiors
+    \item Derive $C/MR^2$ for uniform and two-layer planets and apply hydrostatic equilibrium with an equation of state
+    \item Compare internal structures across the solar system, including the InSight results for Mars
   \end{itemize}
 \end{frame}
 
@@ -56,55 +54,31 @@
 
 % ── Three tools ──────────────────────────────────────────────
 \begin{frame}{Three ways to see inside a planet}
-  We cannot directly sample deep interiors. Three complementary tools:
-  \vskip8pt
-  \begin{enumerate}
+  \begin{enumerate}\setlength\itemsep{4pt}
     \item \textbf{Seismology:} wave speeds trace density and elastic moduli
-    \item \textbf{Gravity fields:} spacecraft tracking measures mass distribution ($J_2$)
+    \item \textbf{Gravity fields:} spacecraft tracking measures the mass distribution ($J_2$)
     \item \textbf{Moment of inertia:} degree of central mass concentration ($C/MR^2$)
   \end{enumerate}
-  \vskip8pt
-  For Earth, all three apply; for other worlds, gravity and $C/MR^2$ are often our only probes.
+  \vskip10pt
+  \keyresult{For Earth all three apply; for most other worlds, gravity and $C/MR^2$ are the only probes.}
 \end{frame}
 
 % ── Seismic waves ────────────────────────────────────────────
-\begin{frame}{Seismic waves: P-waves and S-waves}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{seismic_waves}
-    \source{Wikimedia Commons, public domain}
-
-    \column{\recaptextcol}
-    \textbf{P-waves} (primary, compressional):
-    \begin{itemize}
-      \item Travel through solids \textit{and} liquids
-      \item $v_P = \sqrt{(K + \tfrac{4}{3}\mu)/\rho}$
-    \end{itemize}
-    \vskip6pt
-    \textbf{S-waves} (secondary, shear):
-    \begin{itemize}
-      \item Travel through solids \textit{only}
-      \item $v_S = \sqrt{\mu/\rho}$
-      \item $\mu = 0$ in a liquid $\Rightarrow$ S-waves \textbf{cannot propagate}
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.67]{seismic_waves}{P- and S-wave paths through Earth's interior. Credit: Wikimedia Commons, public domain.}{P-waves ($v_P = \sqrt{(K + \tfrac{4}{3}\mu)/\rho}$) travel through solids and liquids; S-waves ($v_S = \sqrt{\mu/\rho}$) need $\mu > 0$, so they \textbf{cannot propagate} through a liquid.}
 \end{frame}
 
 % ── Shadow zones hero ────────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{prem_shadow_zones}}\\
-  {\footnotesize Rays traced through PREM, the standard seismological model of Earth's interior. The absence of S-waves beyond 103\textdegree{} proves the outer core is liquid, while P-wave refraction creates a shadow zone from 103\textdegree{} to 143\textdegree{}. Course original, from the PREM tabulation of Dziewonski \& Anderson (1981).}
+  \ipsherokey[0.66]{prem_shadow_zones}{Rays traced through PREM, the standard seismological model of Earth's interior. Course original, from the PREM tabulation of Dziewonski \& Anderson (1981).}{No S-waves beyond 103\textdegree{} proves the outer core is liquid; P-wave refraction creates a shadow zone from 103\textdegree{} to 143\textdegree{}.}
 \end{frame}
 
 % ── Gravity field ────────────────────────────────────────────
 \begin{frame}{Gravity field measurements}
-  Planetary rotation produces an oblate shape whose gravitational quadrupole $J_2$ is measured via spacecraft Doppler tracking.
-  \vskip8pt
-  \begin{itemize}
+  \begin{itemize}\setlength\itemsep{4pt}
     \item Rotational flattening produces a quadrupole potential term $J_2$
     \item Spacecraft radio tracking detects minute Doppler velocity shifts
-    \item Juno and GRAIL constrain internal mass distribution to high precision
+    \item Juno and GRAIL constrain the internal mass distribution to high precision
   \end{itemize}
 \end{frame}
 
@@ -142,16 +116,12 @@
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.66\paperheight, keepaspectratio]{moment_of_inertia_factors}}\\
-  {\footnotesize The moment of inertia factor $C/MR^2$: a uniform sphere gives 0.400; the Moon (0.393), Mars (0.364), Mercury (0.346) and Earth (0.331) fall below it in the order of their central mass concentration, from a small core to a large iron core. Values after de Pater \& Lissauer (2010). Course figure.}
+  \ipshero[0.76]{moment_of_inertia_factors}{The moment of inertia factor $C/MR^2$ from the uniform sphere (0.400) down to Earth (0.331), in the order of central mass concentration. Values after de Pater \& Lissauer (2010). Course figure.}
 \end{frame}
 
 % ── MoI factor hero ──────────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{moi_factor}}\\
-  {\footnotesize Moment of inertia factors for nine solar-system bodies. Every body falls below the uniform-sphere value of 0.400 because central mass concentration lowers $C/MR^2$. Course original; lunar value from Williams et al.\ (2014).}
+  \ipshero{moi_factor}{Moment of inertia factors for nine solar-system bodies, all below the uniform-sphere value of 0.400. Course original; lunar value from Williams et al.\ (2014).}
 \end{frame}
 
 
@@ -170,9 +140,9 @@
     \column{\recaptextcolwide}
     \textbf{Goal:} Derive the moment of inertia factor for (a) a uniform sphere and (b) a two-layer differentiated body.
     \vskip6pt
-    \textbf{Starting point:} For a spherically symmetric body, the moment of inertia about the rotation axis is:
+    \textbf{Starting point:} for a spherically symmetric body,
     $$C = \frac{8\pi}{3}\int_0^R \rho(r)\,r^4\,\dd r$$
-    A mass element at colatitude $\theta$ contributes $r_\perp^2\,\dd m = r^2\sin^2\theta\,\dd m$; averaged over a thin shell, $\sin^2\theta \to 2/3$.
+    A mass element at colatitude $\theta$ contributes $r_\perp^2\,\dd m = r^2\sin^2\theta\,\dd m$; over a thin shell, $\sin^2\theta \to 2/3$.
   \end{columns}
 \end{frame}
 
@@ -188,23 +158,8 @@
 \end{frame}
 
 % ── Two-layer bodies visualised ──────────────────────────────
-\begin{frame}{Why differentiation lowers $C/MR^2$}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{moi_two_layer}
-    \source{Course original}
-
-    \column{\recaptextcol}
-    \small
-    $C$ weights mass by $r^2$: mass moved inward lowers $C$ but not $M$.
-    \vskip4pt
-    \begin{itemize}
-      \item Fixed $f = \rho_c/\rho_m = 2.5$; core radius fraction $x = R_c/R$ varies
-      \item Earth ($x = 0.546$) gives $C/MR^2 \approx 0.345$; measured 0.331, the gap is self-compression
-    \end{itemize}
-    \vskip4pt
-    \keyresult{Any dense core pulls $C/MR^2$ below 0.400.}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.65]{moi_two_layer}{Two-layer body at fixed $f = \rho_c/\rho_m = 2.5$: $C/MR^2$ against the core radius fraction $x = R_c/R$. Course original.}{$C$ weights mass by $r^2$, so mass moved inward lowers $C$ but not $M$: Earth ($x = 0.546$) gives $C/MR^2 \approx 0.345$, and the gap to the measured 0.331 is self-compression.}
 \end{frame}
 
 
@@ -215,79 +170,46 @@
 
 % ── Hydrostatic equilibrium ──────────────────────────────────
 \begin{frame}{Hydrostatic equilibrium in spherical symmetry}
-  Pressure at each depth supports the weight of overlying material:
+  Pressure at each depth supports the weight of the overlying material:
   \vskip8pt
   \keyresult{$$\dv{P}{r} = -\rho(r)\,g(r) = -\frac{G\,m(r)\,\rho(r)}{r^2}$$}
   \vskip6pt
   where $m(r) = 4\pi\int_0^r \rho(r')\,r'^2\,\dd r'$ is the mass enclosed within radius $r$.
   \vskip8pt
-  Combined with an equation of state $P = P(\rho, T)$, this integrates inward to give the pressure-density profile.
+  With an equation of state $P = P(\rho, T)$, this integrates inward to the pressure-density profile.
 \end{frame}
 
-% ── Central pressure estimate ────────────────────────────────
-\begin{frame}{Central pressure estimate}
-  Uniform density gives an analytical central pressure; it is a lower bound for a differentiated body.
-  \vskip4pt
-  $$P_c \approx \frac{3\,G\,M^2}{8\pi\,R^4}$$
-  \vskip4pt
-  \begin{itemize}
-    \item Earth: estimate $\sim$170~GPa vs.\ actual $\sim$360~GPa
-    \item Mars: estimate $\sim$25~GPa vs.\ actual $\sim$40~GPa
-    \item Uniform estimate is always too low because real planets are centrally concentrated
-  \end{itemize}
-\end{frame}
-
+% ── Central pressure ─────────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{central_pressure}}\\
-  {\footnotesize Central pressure from interior models against the uniform-density estimate for six solar-system bodies. Real planets sit above the equality line because density increases inward, from a few per cent for the Moon to 3$\times$ for Jupiter. Course original.}
+  \ipsherokey[0.6]{central_pressure}{Central pressure from interior models against the uniform-density estimate for six solar-system bodies. Course original.}{Uniform density gives $P_c \approx 3GM^2/(8\pi R^4)$, a lower bound: about 170~GPa against the actual 360~GPa for Earth, 25 against 40~GPa for Mars; real planets sit above the line because density increases inward.}
 \end{frame}
 
 % ── PALEOS EOS hero ──────────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{eos_paleos}}\\
-  {\footnotesize Multiphase equations of state for iron, silicate, and water: density against pressure for a cold ($\sim$300~K) and a hot ($\sim$4000~K) isotherm. Condensed matter is stiff under planetary pressures, with discrete density jumps marking phase transitions. Course original, from the PALEOS tables of Attia et al. (2026).}
+  \ipshero{eos_paleos}{Equations of state for iron, silicate and water on a cold ($\sim$300~K) and a hot ($\sim$4000~K) isotherm; the density jumps mark phase transitions. Course original, from the PALEOS tables of Attia et al.\ (2026).}
 \end{frame}
 
 % ── Birch's law ──────────────────────────────────────────────
-\begin{frame}{Birch's law}
-  Birch's law provides an empirical linear bridge from measured seismic wave speeds directly to interior density.
-  \vskip4pt
-  $$v_P = a(\bar{M}) + b\,\rho$$
-  \vskip4pt
-  \begin{itemize}
-    \item Linear relation between compressional velocity $v_P$ and density $\rho$
-    \item Parameters depend primarily on mean atomic weight $\bar{M}$
-    \item Breaks down across compositional boundaries and phase transitions
-  \end{itemize}
-\end{frame}
-
-% ── Birch's law hero ─────────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{birchs_law}}\\
-  {\footnotesize Birch's law: $v_P$ against density for mantle minerals. Compressional velocity scales linearly with density at constant mean atomic mass, while iron-rich minerals plot below the trend. Course original; trend after Birch (1952).}
+  \ipsherokey[0.61]{birchs_law}{Birch's law: $v_P$ against density for mantle minerals, trend after Birch (1952). Course original.}{$v_P = a(\bar{M}) + b\,\rho$: compressional velocity scales linearly with density at a given mean atomic weight $\bar{M}$, so seismic speeds map to density; iron-rich minerals plot below the trend, and the law breaks down across compositional boundaries and phase transitions.}
 \end{frame}
 
 % ── Adams-Williamson equation ────────────────────────────────
 \begin{frame}{Adams-Williamson equation}
-  The Adams-Williamson equation integrates seismic wave speeds to determine density profiles under adiabatic self-compression.
+  Seismic wave speeds integrate to a density profile under adiabatic self-compression:
   \vskip4pt
   $$\dv{\rho}{r} = -\frac{\rho(r)\,g(r)}{\phi(r)}, \quad \phi = v_P^2 - \frac{4}{3}v_S^2$$
   \vskip4pt
-  \begin{itemize}
+  \begin{itemize}\setlength\itemsep{3pt}
     \item Seismic parameter $\phi \equiv K_S/\rho = v_P^2 - \tfrac{4}{3}v_S^2$
-    \item Assumes hydrostatic equilibrium, adiabatic gradient, and uniform composition
-    \item Discontinuities mark phase changes or compositional boundaries (e.g., at the core-mantle boundary)
+    \item Assumes hydrostatic equilibrium, an adiabatic gradient and uniform composition
+    \item Discontinuities mark phase changes or compositional boundaries (e.g., the core-mantle boundary)
   \end{itemize}
 \end{frame}
 
 % ── Adams-Williamson hero ────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{adams_williamson}}\\
-  {\footnotesize The Adams-Williamson relation tested against PREM. Adiabatic self-compression matches the lower mantle, but the sharp density jump at the core-mantle boundary exposes a change in composition. Course original, from the PREM tabulation of Dziewonski \& Anderson (1981).}
+  \ipshero[0.76]{adams_williamson}{The Adams-Williamson relation against PREM: adiabatic self-compression matches the lower mantle, and the density jump at the core-mantle boundary exposes a change in composition. Course original, from the PREM tabulation of Dziewonski \& Anderson (1981).}
 \end{frame}
 
 
@@ -297,58 +219,18 @@
 % ════════════════════════════════════════════════════════════
 
 % ── Earth cross-section ──────────────────────────────────────
-\begin{frame}{Earth's internal structure}
-  \begin{columns}[c]
-    \column{\recapfigcolnarrow}
-    \ipsrecapfig{earth_interior}
-    \source{NASA/JPL-Caltech}
-
-    \column{\recaptextcolwide}
-    Four major layers:
-    \begin{enumerate}
-      \item \textbf{Crust} (0--70~km)
-      \item \textbf{Mantle} (Moho to 2891~km)
-      \item \textbf{Outer core} (2891--5150~km): liquid
-      \item \textbf{Inner core} (5150--6371~km): solid
-    \end{enumerate}
-    \vskip4pt
-    {\small Solid inner core: at 330--360~GPa, melting point exceeds 5000--6000~K.}
-    \vskip4pt
-    \begin{tabular}{l r}
-      Mean density & 5515~kg\,m$^{-3}$ \\
-      $C/MR^2$ & 0.3307 \\
-      Central pressure & $\sim$360~GPa \\
-    \end{tabular}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.62]{earth_interior}{Earth's interior in cross-section. Credit: NASA/JPL-Caltech.}{\textbf{Crust} (0--70~km), \textbf{mantle} (Moho to 2891~km), liquid \textbf{outer core} (2891--5150~km) and solid \textbf{inner core} (5150--6371~km, where the melting point at 330--360~GPa exceeds 5000--6000~K); mean density 5515~kg\,m$^{-3}$, $C/MR^2 = 0.3307$, central pressure about 360~GPa.}
 \end{frame}
 
 % ── PREM ─────────────────────────────────────────────────────
-\begin{frame}{The PREM density profile}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{prem_density}
-    \source{Dziewonski \& Anderson (1981)}
-
-    \column{\recaptextcol}
-    \textbf{Preliminary Reference Earth Model} (PREM):
-    \begin{itemize}
-      \item Upper mantle: $\sim$3300~kg\,m$^{-3}$
-      \item Lower mantle base: $\sim$5500~kg\,m$^{-3}$
-      \item Outer core: $\sim$9900--12{,}200~kg\,m$^{-3}$
-      \item Inner core: $\sim$13{,}000~kg\,m$^{-3}$
-    \end{itemize}
-    \vskip4pt
-    Discontinuities at 410 and 660~km: phase transitions.
-    \vskip2pt
-    Core-mantle boundary ($\sim$3480~km): silicate to iron.
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.61]{prem_density}{Density against depth in the \textbf{Preliminary Reference Earth Model} (PREM). Credit: Dziewonski \& Anderson (1981).}{Density rises from $\sim$3300~kg\,m$^{-3}$ in the upper mantle to $\sim$5500 at its base, jumps to 9900--12{,}200 in the outer core and reaches $\sim$13{,}000 in the inner core; the 410 and 660~km steps are phase transitions, the core-mantle boundary is silicate to iron.}
 \end{frame}
 
 % ── PREM full profile hero ───────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{dziewonski_anderson1981_prem_model}}\\
-  {\footnotesize PREM radial profiles of wave speeds, density, and anisotropy; shear velocity $v_S$ vanishes in the liquid outer core and resumes in the solid inner core. Credit: Dziewonski \& Anderson (1981), Fig.~8.}
+  \ipshero{dziewonski_anderson1981_prem_model}{PREM radial profiles of wave speeds, density and anisotropy; $v_S$ vanishes in the liquid outer core and resumes in the solid inner core. Credit: Dziewonski \& Anderson (1981), Fig.~8.}
 \end{frame}
 
 % ── Crust, mantle, and core ──────────────────────────────────
@@ -367,9 +249,8 @@
     Inner core      & 5150--6371 & $\sim$13{,}000  & Solid Fe-Ni \\
     \bottomrule
   \end{tabular}
-  \vskip6pt
-  \raggedright
-  Convection in the liquid outer core powers Earth's geodynamo, fed by inner-core growth: crystallising iron releases latent heat and light elements.
+  \vskip8pt
+  \keyresult{Convection in the liquid outer core powers the geodynamo, fed by inner-core growth: crystallising iron releases latent heat and light elements.}
 \end{frame}
 
 
@@ -379,46 +260,30 @@
 % ════════════════════════════════════════════════════════════
 
 % ── Solid-state creep ────────────────────────────────────────
-\begin{frame}{Solid-state creep}
-  At high homologous temperatures the crystalline silicate mantle deforms by solid-state creep, behaving as a viscous fluid over geological time.
-  \vskip6pt
-  \begin{itemize}
-    \item Solid rock flows when $T > 0.5\,T_{\mathrm{melt}}$ via atomic migration
-    \item \textbf{Diffusion creep:} vacancy migration, dominant in lower mantle ($\eta \sim 10^{22}\text{--}10^{23}$~Pa\,s)
-    \item \textbf{Dislocation creep:} defect glide, dominant in upper mantle ($\eta \sim 10^{20}\text{--}10^{21}$~Pa\,s)
-  \end{itemize}
-\end{frame}
-
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.66\paperheight, keepaspectratio]{creep_viscosity_ranges}}\\
-  {\footnotesize Mantle viscosity by creep mechanism: dislocation creep (defect glide) in the upper mantle at $10^{20}$ to $10^{21}$ Pa\,s, diffusion creep (vacancy migration) in the lower mantle at $10^{22}$ to $10^{23}$ Pa\,s; solid rock flows once $T$ exceeds about $0.5\,T_\mathrm{melt}$. Course schematic.}
+  \ipsherokey[0.66]{creep_viscosity_ranges}{Mantle viscosity by creep mechanism. Course schematic.}{Solid rock flows once $T > 0.5\,T_{\mathrm{melt}}$: \textbf{dislocation creep} (defect glide) in the upper mantle at $10^{20}$ to $10^{21}$~Pa\,s, \textbf{diffusion creep} (vacancy migration) in the lower mantle at $10^{22}$ to $10^{23}$~Pa\,s.}
 \end{frame}
 
 % ── Rayleigh number ──────────────────────────────────────────
 \begin{frame}{The Rayleigh number}
-  The Rayleigh number balances thermal buoyancy against viscous resistance, determining whether a planetary mantle convects.
+  Thermal buoyancy against viscous resistance decides whether a mantle convects:
   \vskip4pt
   $$\mathrm{Ra} = \frac{\alpha\,\rho\,g\,\Delta T\,d^3}{\kappa\,\eta}$$
   \vskip4pt
-  \begin{itemize}
-    \item $\mathrm{Ra}$ measures the ratio of buoyancy driving forces to viscous dissipation
-    \item Critical threshold for convection onset is $\mathrm{Ra}_c \sim 10^3$
-    \item Earth's mantle has $\mathrm{Ra} \sim 10^7\text{--}10^8 \gg \mathrm{Ra}_c$, driving vigorous convection
+  \begin{itemize}\setlength\itemsep{3pt}
+    \item $\mathrm{Ra}$ is the ratio of buoyancy driving forces to viscous dissipation
+    \item Critical threshold for the onset of convection: $\mathrm{Ra}_c \sim 10^3$
+    \item Earth's mantle: $\mathrm{Ra} \sim 10^7\text{--}10^8 \gg \mathrm{Ra}_c$, vigorous convection
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.66\paperheight, keepaspectratio]{rayleigh_viscosity}}\\
-  {\footnotesize The Rayleigh number against mantle viscosity for the course's Earth-mantle values: convection sets in above $\mathrm{Ra}_c \approx 10^3$, and Earth's mantle at $\eta = 10^{21}$ to $10^{22}$ Pa\,s sits at $\mathrm{Ra} \approx 10^7$ to $10^8$, four to five orders of magnitude above the threshold. Course figure.}
+  \ipshero[0.76]{rayleigh_viscosity}{The Rayleigh number against mantle viscosity for the course's Earth-mantle values: Earth at $\eta = 10^{21}$ to $10^{22}$~Pa\,s sits at $\mathrm{Ra} \approx 10^7$ to $10^8$, four to five orders of magnitude above $\mathrm{Ra}_c \approx 10^3$. Course figure.}
 \end{frame}
 
 % ── Convection regimes hero ──────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.76\paperheight, keepaspectratio]{convection_regimes}}\\
-  {\footnotesize End-member regimes of mantle convection. Mantle convection operates primarily in a whole-mantle regime, with the 660~km discontinuity acting as a partial, regionally variable barrier. Schematic; boundary radius exaggerated.}
+  \ipshero[0.76]{convection_regimes}{End-member regimes of mantle convection; Earth convects mainly as a whole mantle, with the 660~km discontinuity a partial, regionally variable barrier. Schematic; boundary radius exaggerated.}
 \end{frame}
 
 
@@ -443,29 +308,27 @@
   \end{tabular}
   \vskip10pt
   \raggedright
-  \begin{itemize}
+  \begin{itemize}\setlength\itemsep{3pt}
     \item Same chemical composition ($\mathrm{(Mg,Fe)_2SiO_4}$), denser crystal structures
     \item Driven by pressure: atoms rearrange into denser packing
-    \item Transitions produce the primary seismic discontinuities in PREM
+    \item These transitions produce the primary seismic discontinuities in PREM
   \end{itemize}
 \end{frame}
 
 % ── Mantle phase diagram hero ────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{mantle_phase_diagram}}\\
-  {\footnotesize Phase boundaries of the mantle against an approximate geotherm. Seismic discontinuities occur where the geotherm crosses pressure-induced mineral phase boundaries. After Turcotte \& Schubert (2002) and Murakami et al.\ (2004).}
+  \ipshero[0.77]{mantle_phase_diagram}{Phase boundaries of the mantle against an approximate geotherm; seismic discontinuities occur where the geotherm crosses a phase boundary. After Turcotte \& Schubert (2002) and Murakami et al.\ (2004).}
 \end{frame}
 
 % ── 660 km discontinuity ─────────────────────────────────────
 \begin{frame}{The 660~km discontinuity}
-  A negative Clapeyron slope at 660~km makes the ringwoodite breakdown endothermic, creating buoyancy that resists slab penetration.
-  \vskip6pt
-  \begin{itemize}
+  \begin{itemize}\setlength\itemsep{4pt}
     \item Ringwoodite decomposes into bridgmanite plus ferropericlase with an $\sim$8\% density jump
     \item Negative Clapeyron slope ($\dd P/\dd T < 0$): in a cold slab the boundary sits deeper, so buoyant ringwoodite persists below 660~km
-    \item Produces upward buoyancy that acts as a partial barrier to whole-mantle convection
+    \item The upward buoyancy is a partial barrier to whole-mantle convection
   \end{itemize}
+  \vskip8pt
+  \keyresult{The endothermic ringwoodite breakdown at 660~km resists slab penetration.}
 \end{frame}
 
 
@@ -479,46 +342,18 @@
 % ════════════════════════════════════════════════════════════
 
 % ── The Moon ─────────────────────────────────────────────────
-\begin{frame}{The Moon}
-  The Moon's moment of inertia factor is 0.393, close to a uniform sphere: its metallic core is exceptionally small.
-  \vskip6pt
-  \begin{itemize}
-    \item Mean density $\bar{\rho} = 3346$~kg\,m$^{-3}$ is close to uncompressed mantle rock
-    \item Core radius fraction is only $R_c/R \sim 0.1\text{--}0.2$, containing $<2$\% of lunar mass
-    \item Low core fraction supports formation via a giant impact from Earth's mantle
-  \end{itemize}
-\end{frame}
-
-% ── Lunar core hero ──────────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{weber2011_lunar_core}}\\
-  {\footnotesize The lunar interior from Apollo seismology. Reanalysed Apollo seismograms reveal a small metallic core (200--380~km radius) with a liquid outer and a solid inner part. Credit: Weber et al.\ (2011), Fig.~1A.}
+  \ipsherokey[0.6]{weber2011_lunar_core}{The lunar interior from reanalysed Apollo seismograms: a small metallic core with a liquid outer and a solid inner part. Credit: Weber et al.\ (2011), Fig.~1A.}{$C/MR^2 = 0.393$ and $\bar{\rho} = 3346$~kg\,m$^{-3}$, close to uncompressed mantle rock: the core is only 200--380~km in radius ($R_c/R \sim 0.1$--0.2, $<2$\% of the mass), as expected for a Moon formed by a giant impact from Earth's mantle.}
 \end{frame}
 
 % ── Mars interior hero ───────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.66\paperheight, keepaspectratio]{mars_interior_insight}}\\
-  {\footnotesize Mars's interior as revealed by InSight seismology, showing a 24--72~km crust, a mantle to $\sim$1560~km, and a seismic boundary at $R_c \sim 1830$~km, reinterpreted in 2023 as the top of a molten silicate layer above a smaller ($\sim$1650--1675~km) liquid iron core of about 6500~kg\,m$^{-3}$. Credit: NASA/JPL-Caltech (PIA25282).}
+  \ipsherokey[0.61]{mars_interior_insight}{Mars's interior from InSight seismology: a 24--72~km crust, a mantle to $\sim$1560~km, and the core. Credit: NASA/JPL-Caltech (PIA25282).}{The seismic boundary at $R_c \sim 1830$~km was reinterpreted in 2023 as the top of a molten silicate layer above a smaller ($\sim$1650--1675~km) liquid iron core of about 6500~kg\,m$^{-3}$.}
 \end{frame}
 
 % ── Mercury ──────────────────────────────────────────────────
-\begin{frame}{Mercury: an iron world}
-  Mercury has the highest uncompressed density of any terrestrial planet, dominated by an enormous iron core.
-  \vskip6pt
-  \begin{itemize}
-    \item Moment of inertia factor $C/MR^2 = 0.346$ and mean density $\bar{\rho} = 5427$~kg\,m$^{-3}$
-    \item Metallic core reaches $R_c \sim 2000\text{--}2050$~km ($\sim$83\% of planetary radius)
-    \item Core accounts for $\sim$74\% of total mass; weak dynamo indicates a liquid outer core
-  \end{itemize}
-\end{frame}
-
-% ── Mercury interior hero ────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{mercury_interior}}\\
-  {\footnotesize Mercury's layered interior from MESSENGER gravity and libration data. The metallic core extends to $\sim$83\% of the planet's radius and accounts for $\sim$74\% of its mass. After Margot et al.\ (2018).}
+  \ipsherokey[0.61]{mercury_interior}{Mercury's layered interior from MESSENGER gravity and libration data. After Margot et al.\ (2018).}{$C/MR^2 = 0.346$ and $\bar{\rho} = 5427$~kg\,m$^{-3}$, the highest uncompressed density of the terrestrial planets: the metallic core reaches $R_c \sim 2000$--2050~km ($\sim$83\% of the radius, $\sim$74\% of the mass), and the weak dynamo indicates a liquid outer core.}
 \end{frame}
 
 % ── Comparative table ────────────────────────────────────────
@@ -540,18 +375,16 @@
   {\tiny\color{ipsText!60} Mars: upper value from Stähler et al.\ (2021), lower from the 2023 reanalyses (Khan et al.; Samuel et al.); Mercury: Margot et al.\ (2018)}
   \vskip6pt
   \raggedright
-  \begin{itemize}
+  \begin{itemize}\setlength\itemsep{3pt}
     \item Higher mean density $\Rightarrow$ larger iron core fraction
     \item Lower $C/MR^2$ $\Rightarrow$ stronger central mass concentration
-    \item Dynamo requires convecting liquid conductor
+    \item A dynamo requires a convecting liquid conductor
   \end{itemize}
 \end{frame}
 
 % ── Terrestrial comparison hero ──────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{terrestrial_interiors_comparison}}\\
-  {\footnotesize The terrestrial bodies in cross-section, at relative scale. All share a silicate mantle over a metallic core, but differentiation yields core fractions from $\sim$10--20\% to $\sim$83\%. Credit: NASA Solar System Exploration, public domain.}
+  \ipshero{terrestrial_interiors_comparison}{The terrestrial bodies in cross-section at relative scale: a silicate mantle over a metallic core, with core fractions from $\sim$10--20\% to $\sim$83\%. Credit: NASA Solar System Exploration, public domain.}
 \end{frame}
 
 
@@ -562,41 +395,21 @@
 
 % ── Jupiter interior hero ────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{jupiter_interior}}\\
-  {\footnotesize Jupiter's interior: molecular and metallic hydrogen above an extended, dilute core enriched in heavy elements. Credit: NASA/JPL-Caltech/SwRI/John E. Connerney (PIA25062).}
+  \ipshero{jupiter_interior}{Jupiter's interior: molecular and metallic hydrogen above an extended, dilute core enriched in heavy elements. Credit: NASA/JPL-Caltech/SwRI/John E. Connerney (PIA25062).}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{wahl2017_jupiter_density}}\\
-  {\footnotesize Density profiles of representative Jupiter interior models from Juno gravity. Dilute-core solutions expand heavy elements out to half the planetary radius, contrasting with classical compact-core models. Credit: Wahl et al.\ (2017), Fig.~1.}
+  \ipshero[0.76]{wahl2017_jupiter_density}{Density profiles of Jupiter interior models from Juno gravity: dilute-core solutions spread heavy elements out to half the radius, against classical compact cores. Credit: Wahl et al.\ (2017), Fig.~1.}
 \end{frame}
 
 % ── Saturn: helium rain ──────────────────────────────────────
-\begin{frame}{Saturn: helium rain}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{saturn_interior}
-    \source{NASA/JPL-Caltech}
-
-    \column{\recaptextcol}
-    \footnotesize
-    Cooling inside Saturn induces helium immiscibility in metallic hydrogen, releasing gravitational energy that powers its excess infrared luminosity.
-    \vskip6pt
-    \begin{itemize}\setlength\itemsep{2pt}
-      \item Helium separates into droplets at $P \sim 2$~Mbar and rains toward the planet centre
-      \item Sinking helium releases gravitational energy; with Kelvin-Helmholtz contraction it explains why Saturn radiates $\sim$1.8$\times$ the solar flux it absorbs
-      \item Ring seismology reveals a diffuse heavy-element core extending to $\sim$60\% of the radius
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.61]{saturn_interior}{Saturn's interior, with a diffuse heavy-element core that ring seismology extends to $\sim$60\% of the radius. Credit: NASA/JPL-Caltech.}{As Saturn cools, helium becomes immiscible in metallic hydrogen at $P \sim 2$~Mbar and rains toward the centre; the released gravitational energy, with Kelvin-Helmholtz contraction, explains why Saturn radiates $\sim$1.8$\times$ the solar flux it absorbs.}
 \end{frame}
 
 % ── Helium rain hero ─────────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{mankovich_fortney2020_jupiter_saturn_schematic}}\\
-  {\footnotesize Helium phase separation in Jupiter and Saturn; sinking helium droplets release gravitational potential energy to explain Saturn's excess luminosity. Credit: Mankovich \& Fortney (2020), Fig.~3.}
+  \ipshero[0.76]{mankovich_fortney2020_jupiter_saturn_schematic}{Helium phase separation in Jupiter and Saturn; sinking helium droplets release gravitational potential energy and explain Saturn's excess luminosity. Credit: Mankovich \& Fortney (2020), Fig.~3.}
 \end{frame}
 
 
@@ -605,39 +418,14 @@
 \section{Ice giant interiors}
 % ════════════════════════════════════════════════════════════
 
-% ── Three-layer model ────────────────────────────────────────
-\begin{frame}{Ice giants: canonical layers}
-  Uranus and Neptune are modelled with a hydrogen-helium envelope, a thick conducting fluid ice mantle, and a rocky core.
-  \vskip6pt
-  \begin{itemize}
-    \item Outer H/He envelope holds $\sim$20\% of total mass
-    \item Intermediate layer ($\sim$60--70\% mass): hot fluid $\mathrm{H_2O}$, $\mathrm{NH_3}$, and $\mathrm{CH_4}$ at 10--500~GPa
-    \item Deep water may reach an electrically conducting superionic state
-  \end{itemize}
-\end{frame}
-
 % ── Ice giant structures hero ────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{helled2020_icegiant_structures}}\\
-  {\footnotesize Four candidate internal structures of an ice giant. Gravity data alone cannot distinguish sharp layers from gradual compositional gradients, leaving their degree of differentiation open. Credit: Helled et al.\ (2020), Fig.~4.}
+  \ipsherokey{helled2020_icegiant_structures}{Four candidate internal structures of an ice giant. Credit: Helled et al.\ (2020), Fig.~4.}{Canonical layers: an H/He envelope ($\sim$20\% of the mass), a fluid ice mantle ($\sim$60--70\%: $\mathrm{H_2O}$, $\mathrm{NH_3}$, $\mathrm{CH_4}$ at 10--500~GPa, possibly superionic) and a rocky core; gravity alone cannot separate sharp layers from gradients.}
 \end{frame}
 
 % ── Unusual magnetic fields ──────────────────────────────────
-\begin{frame}{Ice giant magnetic fields: unusual geometry}
-  Ice giants generate highly tilted, non-dipolar magnetic fields in thin, shallow conducting shells.
-  \vskip6pt
-  \begin{itemize}
-    \item Field axes are tilted (59\textdegree{} Uranus, 47\textdegree{} Neptune) and offset from centre
-    \item Dynamos operate in thin outer fluid ice shells, not deep interiors
-    \item Uranus emits negligible internal heat; Neptune emits $\sim$2.6$\times$ solar flux
-  \end{itemize}
-\end{frame}
-
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{soderlund2020_planetary_field_morphologies}}\\
-  {\footnotesize Radial magnetic field at the surface of six planets in Mollweide projection. Uranus and Neptune generate multipolar fields tilted by 59\textdegree{} and 47\textdegree{} and offset from the centre, unlike the axial dipoles of Earth, Jupiter, and Saturn. Credit: Soderlund et al.\ (2020), Fig.~1.}
+  \ipsherokey[0.61]{soderlund2020_planetary_field_morphologies}{Radial magnetic field at the surface of six planets in Mollweide projection. Credit: Soderlund et al.\ (2020), Fig.~1.}{Uranus and Neptune generate multipolar fields tilted by 59\textdegree{} and 47\textdegree{} and offset from the centre, from dynamos in thin outer fluid ice shells; Uranus emits negligible internal heat, Neptune $\sim$2.6$\times$ the solar flux.}
 \end{frame}
 
 
@@ -666,30 +454,22 @@
 
 % ── Europa interior hero ─────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{europa_interior}}\\
-  {\footnotesize Europa's subsurface environment: an ice shell overlies a global ocean roughly 100~km deep in contact with a rocky seafloor. Credit: NASA/JPL-Caltech (PIA26438).}
+  \ipshero{europa_interior}{Europa's subsurface environment: an ice shell over a global ocean roughly 100~km deep in contact with a rocky seafloor. Credit: NASA/JPL-Caltech (PIA26438).}
 \end{frame}
 
 % ── Tidal resonance hero ─────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.66\paperheight, keepaspectratio]{tidal_resonance}}\\
-  {\footnotesize The Io-Europa-Ganymede 4:2:1 Laplace resonance forces non-zero eccentricities, driving tidal flexing that maintains Europa's liquid ocean; without the resonance, tides would circularise the orbit and the heating would stop. Course original; orbital periods from NASA/JPL Solar System Dynamics.}
+  \ipshero{tidal_resonance}{The Io-Europa-Ganymede 4:2:1 Laplace resonance forces the eccentricities whose tidal flexing keeps Europa's ocean liquid. Course original; orbital periods from NASA/JPL Solar System Dynamics.}
 \end{frame}
 
 % ── Enceladus interior hero ──────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{enceladus_interior}}\\
-  {\footnotesize Enceladus in cutaway: a global ocean between an ice shell and porous core sustains active hydrothermal venting and south-polar plumes radiating $\sim$16~GW. Credit: NASA/JPL-Caltech (PIA19656).}
+  \ipshero[0.77]{enceladus_interior}{Enceladus in cutaway: a global ocean between the ice shell and a porous core feeds hydrothermal venting and south-polar plumes radiating $\sim$16~GW. Credit: NASA/JPL-Caltech (PIA19656).}
 \end{frame}
 
 % ── Titan interior hero ──────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{titan_interior}}\\
-  {\footnotesize Titan's interior from Cassini gravity and radio science. A large tidal Love number $k_2$ indicates an interior ocean that decouples the outer ice shell from the high-pressure ice and rock below. Credit: NASA/JPL.}
+  \ipshero[0.76]{titan_interior}{Titan's interior from Cassini gravity and radio science: a large tidal Love number $k_2$ indicates an ocean that decouples the outer ice shell from the high-pressure ice and rock below. Credit: NASA/JPL.}
 \end{frame}
 
 
@@ -700,26 +480,20 @@
 
 % ── Stähler wedge hero ───────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{stahler2021_mars_wedge}}\\
-  {\footnotesize Seismic ray paths from InSight across Mars delineate mantle propagation and the core shadow zone; the 2023 reanalyses put a molten silicate layer above a smaller core of $\sim$1650--1675~km. Credit: St\"ahler et al.\ (2021), Fig.~3.}
+  \ipshero[0.76]{stahler2021_mars_wedge}{InSight seismic ray paths across Mars delineate the mantle and the core shadow zone; the 2023 reanalyses put a molten silicate layer above a $\sim$1650--1675~km core. Credit: St\"ahler et al.\ (2021), Fig.~3.}
 \end{frame}
 
 % ── Mars velocity profiles hero ──────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{stahler2021_mars_vp_vs}}\\
-  {\footnotesize Mars velocity profiles from InSight show $v_S$ dropping to zero at the core boundary, confirming a liquid metallic core. Credit: St\"ahler et al.\ (2021), Fig.~2A.}
+  \ipshero{stahler2021_mars_vp_vs}{Mars velocity profiles from InSight: $v_S$ drops to zero at the core boundary, confirming a liquid metallic core. Credit: St\"ahler et al.\ (2021), Fig.~2A.}
 \end{frame}
 
 % ── Summary ────────────────────────────────────────────────
 \begin{frame}{Summary}
-  \begin{enumerate}
-    \item Seismology, gravity, and $C/MR^2$ probe deep interiors
-    \item $C/MR^2 = 0.400$ for uniform sphere; lower values indicate differentiation
-    \item Hydrostatic equilibrium and equations of state set radial profiles
-    \item Mantle phase transitions at 410 and 660~km govern convection
-    \item Tidal heating maintains subsurface oceans across icy worlds
+  \begin{enumerate}\setlength\itemsep{6pt}
+    \item Seismology, gravity fields and $C/MR^2$ probe deep interiors: 0.400 for a uniform sphere, lower values mean differentiation
+    \item Hydrostatic equilibrium and equations of state set the radial profiles; mantle phase transitions at 410 and 660~km shape convection
+    \item Tidal heating maintains subsurface oceans across the icy worlds
   \end{enumerate}
   \vskip8pt
   \textbf{Next: Lecture 9} turns to Earth and Venus: twins in size, contrasts in evolution.
