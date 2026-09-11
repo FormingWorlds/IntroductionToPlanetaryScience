@@ -245,6 +245,21 @@
     \small #4
   \end{beamercolorbox}}
 
+% Hero with the figure on the left at full height and the caption plus key
+% line on the right: for a figure that a box under it would shrink too far.
+% \ipsherokeyside[figure column width]{image}{caption}{key result}
+\newcommand{\ipsherokeyside}[4][0.56]{%
+  \begin{columns}[c]
+    \column{#1\textwidth}
+    \makebox[\linewidth][c]{\includegraphics[width=\linewidth, height=0.90\textheight, keepaspectratio]{#2}}
+    \column{\dimexpr0.97\textwidth-#1\textwidth\relax}
+    {\footnotesize #3\par}
+    \vskip6pt
+    \begin{beamercolorbox}[rounded=true, shadow=false, sep=4pt]{block title example}
+      \small #4
+    \end{beamercolorbox}
+  \end{columns}}
+
 % ── Break slide ─────────────────────────────────────────────
 % Reusable break slide (Earthrise, Apollo 8 — NASA, public domain)
 \newcommand{\breakslide}[1][]{%
