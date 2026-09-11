@@ -56,7 +56,7 @@ The present-day atmospheres of **Venus** ($\mathrm{CO_2}$-dominated) and **Mars*
 :width: 500px
 :align: center
 
-The surface of Venus photographed in colour by the Soviet *Venera 13* lander on 1 March 1982. The image shows flat basaltic rock slabs and soil under an orange sky coloured by the thick $\mathrm{CO_2}$ atmosphere (surface pressure 92 bar, temperature 737 K); the striped bar is a colour calibration target, and the toothed ring is part of the lander. The lander survived for 127 minutes before succumbing to the extreme conditions, a vivid demonstration of how a massive secondary atmosphere transforms a planet's surface environment. Credit: USSR Academy of Sciences / NASA NSSDC, public domain.
+The surface of Venus photographed in colour by the Soviet *Venera 13* lander on 1 March 1982. The image shows flat basaltic rock slabs and soil lit by the orange light that filters through the thick $\mathrm{CO_2}$ atmosphere (surface pressure 92 bar, temperature 737 K); the striped bar is a colour calibration target, and the toothed ring is part of the lander. The lander survived for 127 minutes before succumbing to the extreme conditions, a vivid demonstration of how a massive secondary atmosphere transforms a planet's surface environment. Credit: USSR Academy of Sciences / NASA NSSDC, public domain.
 ```
 
 ### Tertiary atmospheres
@@ -79,9 +79,9 @@ The diversity of atmospheres across the solar system is remarkable. The table be
 |----------|:-----:|:-----:|:----:|:-------:|:-----:|
 | Surface pressure (bar) | 92 | 1.0 | 0.006 | n/a | 1.5 |
 | Surface temperature (K) | 737 | 288 | 215 | n/a | 94 |
-| Dominant gas | $\mathrm{CO_2}$ (96.5%) | $\mathrm{N_2}$ (78%) | $\mathrm{CO_2}$ (95%) | $\mathrm{H_2}$ (86%) | $\mathrm{N_2}$ (95%) |
-| Secondary gas | $\mathrm{N_2}$ (3.5%) | $\mathrm{O_2}$ (21%) | $\mathrm{N_2}$ (2.7%) | He (14%) | $\mathrm{CH_4}$ (5%) |
-| Mean molecular weight $\mu$ | 43.4 | 28.97 | 43.3 | 2.2 | 28.6 |
+| Dominant gas | $\mathrm{CO_2}$ (96.5%) | $\mathrm{N_2}$ (78%) | $\mathrm{CO_2}$ (95%) | $\mathrm{H_2}$ (90%) | $\mathrm{N_2}$ (95%) |
+| Secondary gas | $\mathrm{N_2}$ (3.5%) | $\mathrm{O_2}$ (21%) | $\mathrm{N_2}$ (2.7%) | He (10%) | $\mathrm{CH_4}$ (5%) |
+| Mean molecular weight $\mu$ | 43.4 | 28.97 | 43.3 | 2.2 | 27.4 |
 | Atmosphere type | Secondary | Tertiary | Secondary | Primary | Secondary |
 
 Data from {cite:p}`dePaterLissauer2010` and {cite:p}`NASAFactSheet`. The fractional composition of these five atmospheres is shown in {numref}`fig:composition-bar`.
@@ -251,7 +251,7 @@ We can now compute scale heights for several bodies using their characteristic a
 | Earth | 288 | 28.97 | 9.81 | 8.4 |
 | Mars | 215 | 43.3 | 3.72 | 11.1 |
 | Jupiter | 165 | 2.2 | 24.8 | 25 |
-| Titan | 94 | 28.6 | 1.35 | 20 |
+| Titan | 94 | 27.4 | 1.35 | 21 |
 
 **Worked example for Earth:**
 
@@ -297,7 +297,7 @@ where $c_p$ is the specific heat capacity at constant pressure. For Earth, $g = 
 :width: 100%
 :align: center
 
-Dry adiabatic lapse rate ($\Gamma_d = g/c_p \approx 9.8$ K km$^{-1}$, dashed) compared with a representative saturated moist adiabat ($\sim 5$ K km$^{-1}$ in the warm lower troposphere, dotted) and the US Standard Atmosphere 1976 reference profile (solid), a defined standard for year-round midlatitude conditions {cite:p}`USStandardAtmosphere1976`. The moist adiabat is shallower than the dry adiabat because condensing water vapour releases latent heat to the rising parcel; the reference profile's tropospheric lapse rate (6.5 K km$^{-1}$, close to the observed midlatitude mean) lies between the two limits. Above the tropopause the adiabats no longer apply: the profile becomes nearly isothermal and then warms in the stratosphere. Course-original figure.
+Dry adiabatic lapse rate ($\Gamma_d = g/c_p \approx 9.8$ K km$^{-1}$, dashed) compared with a representative saturated moist adiabat ($\sim 5$ K km$^{-1}$ in the warm lower troposphere, dotted) and the US Standard Atmosphere 1976 reference profile (solid), a defined standard for year-round midlatitude conditions {cite:p}`USStandardAtmosphere1976`. The moist adiabat is shallower than the dry adiabat because condensing water vapour releases latent heat to the rising parcel; the reference profile's tropospheric lapse rate (6.5 K km$^{-1}$, close to the observed midlatitude mean) lies between the two limits. Above the tropopause the adiabats no longer apply: the profile becomes nearly isothermal, and the stratospheric warming begins above the 18 km top of this plot. Course-original figure.
 ```
 
 Earth's troposphere extends from the surface to the **tropopause** at $\sim$12 km altitude (varying from $\sim$8 km at the poles to $\sim$17 km at the equator).
@@ -468,7 +468,7 @@ $$ (eq:stellar-flux)
 
 The planet intercepts this flux over its cross-sectional area $\pi R_p^2$ and reflects a fraction $A$ (the **Bond albedo**). The absorbed power is therefore $(1 - A) \, F_\star \, \pi R_p^2$.
 
-In equilibrium, this absorbed power equals the thermal radiation emitted from the entire surface ($4\pi R_p^2$) at the **effective temperature** $T_{\mathrm{eff}}$ via the Stefan-Boltzmann law ({ref}`Lecture 3 <lecture03>`):
+In equilibrium, this absorbed power equals the thermal radiation emitted from the entire surface ($4\pi R_p^2$) at the **effective temperature** $T_{\mathrm{eff}}$ (also called the equilibrium temperature and written $T_{\mathrm{eq}}$ on the worksheets and exams) via the Stefan-Boltzmann law ({ref}`Lecture 3 <lecture03>`):
 
 $$
 (1 - A) \frac{L_\star}{4\pi d^2} \pi R_p^2 = 4\pi R_p^2 \, \sigma \, T_{\mathrm{eff}}^4
@@ -524,7 +524,7 @@ The greenhouse effect arises because the atmosphere is **relatively transparent*
 2. The warm surface emits thermal radiation at infrared wavelengths (peak $\sim$10–15 $\mu$m for $T \sim 200$–$300$ K).
 3. Greenhouse gases ($\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, $\mathrm{O_3}$, etc.) absorb much of this outgoing IR radiation.
 4. The absorbing layer re-emits IR radiation in all directions: half upward (toward space), half downward (back toward the surface).
-5. The downward emission provides an **additional energy source** for the surface, raising its temperature above $T_{\mathrm{eff}}$.
+5. The downward emission adds a downward radiative flux at the surface (the atmosphere is not a new energy source: it returns part of what the surface emitted), raising its temperature above $T_{\mathrm{eff}}$.
 
 The atmospheric absorption spectrum underlying this asymmetry is shown in {numref}`fig:atmospheric-absorption`: infrared absorption bands of $\mathrm{H_2O}$ and $\mathrm{CO_2}$ block surface emission, leaving an atmospheric window near 8–13 $\mu$m.
 
@@ -598,7 +598,7 @@ The **exobase** ({numref}`fig:exobase`) is the altitude at which the mean free p
 :width: 100%
 :align: center
 
-The exobase as the altitude where the mean free path $\ell$ (blue) equals the pressure scale height $H$ (red dashed) in Earth's upper atmosphere. Below the crossing (blue shading) the atmosphere is collisional (thermosphere); above it (orange shading) the atmosphere is effectively collisionless (exosphere) and ballistic trajectories carry individual molecules to escape. The crossing altitude is approximately 450 to 500 km for present-day Earth, depending on solar activity and exobase temperature. Data: US Standard Atmosphere 1976 {cite:p}`USStandardAtmosphere1976` with MSIS-86 number density; effective cross-section $\sigma = 10^{-18}\ \mathrm{m}^2$. Course-original figure.
+The exobase as the altitude where the mean free path $\ell$ (blue) equals the pressure scale height $H$ (red dashed) in Earth's upper atmosphere. Below the crossing (blue shading) the atmosphere is collisional (thermosphere); above it (orange shading) the atmosphere is effectively collisionless (exosphere) and ballistic trajectories carry individual molecules to escape. The crossing altitude is approximately 450 to 500 km for present-day Earth, depending on solar activity and exobase temperature. Number densities follow the US Standard Atmosphere 1976 {cite:p}`USStandardAtmosphere1976` below 86 km, joined to an isothermal thermosphere above (an analytic profile, not an MSIS-86 tabulation); effective cross-section $\sigma = 10^{-18}\ \mathrm{m}^2$. Course-original figure.
 ```
 
 The key parameter governing Jeans escape is the **Jeans escape parameter** $\lambda_J$, defined at the exobase:
@@ -724,7 +724,7 @@ NASA Scientific Visualization Studio rendering of the ion plume escaping from Ma
 :width: 100%
 :align: center
 
-Present-day oxygen loss rates from Mars decomposed into escape channels, after {cite:t}`Jakosky2018` Fig. 6. Markers give the loss rate (log$_{10}$ of the number of O atoms per second) for O ion escape, photochemical escape, and sputtering, plus the combined total; a bar spans the published range of a channel. Photochemical escape dominates the oxygen budget today; sputtering is sub-dominant at present solar activity but was likely comparable or larger in the young, EUV-active Sun epoch. The three channels sum to the total at the top of the panel and, together with hydrogen escape, give the $\sim 2$–$3$ kg s$^{-1}$ figure quoted in the text. Course-original figure.
+Present-day oxygen loss rates from Mars decomposed into escape channels, after {cite:t}`Jakosky2018` Fig. 6. Markers give the loss rate (log$_{10}$ of the number of O atoms per second) for O ion escape, photochemical escape, and sputtering, plus the combined total; a bar spans the published range of a channel. Photochemical escape dominates the oxygen budget today; sputtering is sub-dominant at present solar activity but was likely comparable or larger in the young, EUV-active Sun epoch. The total is drawn as its own marker; the three channels add up to it in linear units, and together with hydrogen escape they give the $\sim 2$–$3$ kg s$^{-1}$ figure quoted in the text. Course-original figure.
 ```
 
 ## Atmospheric retention
@@ -749,7 +749,7 @@ Applying this criterion reveals a clear pattern across the solar system:
 
 - **Earth and Venus**: Escape velocities of $\sim$11 km s$^{-1}$ are sufficient to retain heavy molecules ($\mathrm{N_2}$, $\mathrm{O_2}$, $\mathrm{CO_2}$, $\mathrm{H_2O}$) but not atomic hydrogen. Earth and Venus lose H to space, which contributes to long-term water loss (via photodissociation of $\mathrm{H_2O}$ followed by H escape).
 
-- **Mars**: With $v_{\mathrm{esc}} = 5.0$ km s$^{-1}$ and an exosphere temperature of $\sim$270 K, Mars is marginal for retaining even heavy species like $\mathrm{CO_2}$. While Jeans escape of $\mathrm{CO_2}$ is negligible, non-thermal processes (sputtering, ion pickup) have eroded most of Mars's original atmosphere over 4 billion years {cite:p}`Jakosky2018`.
+- **Mars**: With $v_{\mathrm{esc}} = 5.0$ km s$^{-1}$ and an exosphere temperature of $\sim$270 K, Mars holds $\mathrm{CO_2}$ firmly against thermal escape ($\lambda_J \approx 230$) and is marginal only for lighter species such as $\mathrm{H_2O}$ and $\mathrm{N_2}$. While Jeans escape of $\mathrm{CO_2}$ is negligible, non-thermal processes (sputtering, ion pickup) have eroded most of Mars's original atmosphere over 4 billion years {cite:p}`Jakosky2018`.
 
 - **Titan**: Despite its low escape velocity (2.6 km s$^{-1}$), Titan retains a thick $\mathrm{N_2}$ atmosphere because it is extremely **cold** ($T_{\mathrm{exo}} \approx 150$ K). Low temperature means low thermal velocities, and the Jeans parameter remains large for $\mathrm{N_2}$; the hydrogen that methane photochemistry produces in the upper atmosphere has $\lambda_J$ of order a few and leaks away to space.
 

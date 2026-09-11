@@ -80,8 +80,8 @@
   \vskip8pt
   \begin{itemize}
     \item Magma ocean degassing and volcanism release dissolved volatiles
-    \item Speciation follows the mantle \textbf{oxygen fugacity}: oxidising gives $\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{N_2}$; reducing gives $\mathrm{H_2}$, CO, $\mathrm{N_2}$
-    \item \textbf{Venus:} 96.5\% $\mathrm{CO_2}$ at 92~bar; \textbf{Mars:} 95\% $\mathrm{CO_2}$ at 6~mbar; \textbf{Titan:} $\mathrm{N_2}$ (from $\mathrm{NH_3}$) at 1.5~bar
+    \item Speciation follows the mantle \textbf{oxygen fugacity}: oxidising $\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{N_2}$; reducing $\mathrm{H_2}$, CO, $\mathrm{N_2}$
+    \item \textbf{Venus:} 96.5\% $\mathrm{CO_2}$ at 92~bar; \textbf{Mars:} 95\% $\mathrm{CO_2}$ at 6~mbar; \textbf{Titan:} $\mathrm{N_2}$ at 1.5~bar
   \end{itemize}
 \end{frame}
 
@@ -106,7 +106,7 @@
     $T_{\mathrm{surf}}$ (K)   & 737 & 288 & 215 & n/a & 94 \\
     Dominant gas              & $\mathrm{CO_2}$ & $\mathrm{N_2}$ & $\mathrm{CO_2}$ & $\mathrm{H_2}$ & $\mathrm{N_2}$ \\
     Secondary gas             & $\mathrm{N_2}$ & $\mathrm{O_2}$ & $\mathrm{N_2}$ & He & $\mathrm{CH_4}$ \\
-    $\mu$                     & 43.4 & 28.97 & 43.3 & 2.2 & 28.6 \\
+    $\mu$                     & 43.4 & 28.97 & 43.3 & 2.2 & 27.4 \\
     Type                      & 2$^{\circ}$ & 3$^{\circ}$ & 2$^{\circ}$ & 1$^{\circ}$ & 2$^{\circ}$ \\
     \bottomrule
   \end{tabular}
@@ -138,7 +138,7 @@
 
     \column{\recaptextcol}
     \small
-    The net vertical force on a thin slab of area $A$ and thickness $\dd z$ vanishes:
+    The \textbf{pressure gradient} across a thin slab of area $A$ and thickness $\dd z$ balances its weight:
     $$P(z)A - P(z + \dd z)A = \rho\,g\,A\,\dd z$$
     \vskip4pt
     \keyresult{$$\boxed{\dv{P}{z} = -\rho\,g}$$}
@@ -227,7 +227,7 @@
     Earth   & 288  & 28.97 & 9.81  & 8.4  \\
     Mars    & 215  & 43.3 & 3.72  & 11.1 \\
     Jupiter & 165  & 2.2  & 24.8  & 25   \\
-    Titan   & 94   & 28.6 & 1.35  & 20   \\
+    Titan   & 94   & 27.4 & 1.35  & 21   \\
     \bottomrule
   \end{tabular}
   \vskip10pt
@@ -260,7 +260,7 @@
   \keyresult{$$\Gamma_d = -\dv{T}{z} = \frac{g}{c_p}$$}
   \vskip6pt
   \begin{itemize}
-    \item \textbf{Dry adiabatic lapse rate} for Earth: $\Gamma_d = 9.81/1004 \approx 9.8$~K\,km$^{-1}$; observed $\sim$6.5~K\,km$^{-1}$ because of latent heat
+    \item \textbf{Dry adiabatic lapse rate} for Earth: $\Gamma_d = 9.81/1004 = 0.0098$~K\,m$^{-1} \approx 9.8$~K\,km$^{-1}$; observed $\sim$6.5~K\,km$^{-1}$ because of latent heat
     \item Rising air expands, does work on its surroundings, and cools
     \item \textbf{Tropopause height:} $\sim$8~km (poles) to $\sim$17~km (equator)
   \end{itemize}
@@ -295,9 +295,9 @@
 % ── Absorption, emission, scattering ─────────────────────────
 \begin{frame}{Three interactions: radiation and matter}
   \begin{itemize}\setlength\itemsep{6pt}
-    \item \textbf{Absorption:} photon energy becomes internal molecular energy; key absorbers $\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, $\mathrm{O_3}$, $\mathrm{N_2O}$
-    \item \textbf{Emission:} warm gas radiates at the absorbed wavelengths (Kirchhoff's law); only emission from $\tau \lesssim 1$ reaches space
-    \item \textbf{Scattering:} photons redirected without absorption; Rayleigh ($\propto \lambda^{-4}$) and Mie scattering
+    \item \textbf{Absorption:} photon energy becomes molecular energy; key absorbers $\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, $\mathrm{O_3}$
+    \item \textbf{Emission:} warm gas radiates at the same wavelengths (Kirchhoff's law); only $\tau \lesssim 1$ reaches space
+    \item \textbf{Scattering:} redirection without absorption; Rayleigh ($\propto \lambda^{-4}$) and Mie
   \end{itemize}
 \end{frame}
 
@@ -355,7 +355,7 @@
   $$(1-A)\frac{S}{4} = \sigma\,T_{\mathrm{eff}}^4 \qquad\text{where}\quad S = \frac{L_\star}{4\pi d^2}$$
   \vskip4pt
   \begin{itemize}
-    \item $A$: Bond albedo; $S$: stellar flux ($S_0 = 1361$~W\,m$^{-2}$ at Earth)
+    \item $A$: Bond albedo; $S$: stellar flux ($S_0 = 1361$~W\,m$^{-2}$ at Earth); $T_{\mathrm{eff}}$ is also written $T_{\mathrm{eq}}$
     \item Factor $1/4$: intercepting cross-section $\pi R_p^2$ over the emitting sphere $4\pi R_p^2$
   \end{itemize}
   \vskip6pt
@@ -363,7 +363,7 @@
 \end{frame}
 
 \begin{frame}
-  \ipshero{trenberth_energy_budget}{Earth's globally averaged energy budget in W\,m$^{-2}$: back-radiation of 333~W\,m$^{-2}$ supplies more energy to the surface than direct sunlight (160~W\,m$^{-2}$). After Trenberth et al.\ (2009).}
+  \ipshero[0.77]{trenberth_energy_budget}{Earth's globally averaged energy budget in W\,m$^{-2}$: back-radiation of 333~W\,m$^{-2}$ supplies more energy to the surface than the sunlight absorbed at the surface (160~W\,m$^{-2}$). After Trenberth et al.\ (2009).}
 \end{frame}
 
 % ── Effective vs surface T ───────────────────────────────────
@@ -403,8 +403,8 @@
     \textbf{Flux balance:}
     \begin{align*}
       \text{Atmosphere:} & \quad \varepsilon\sigma T_s^4 = 2\varepsilon\sigma T_a^4 \\
-      \text{Surface:} & \quad (1-A)\frac{F_\star}{4} + \varepsilon\sigma T_a^4 = \sigma T_s^4 \\
-      \text{TOA:} & \quad (1-A)\frac{F_\star}{4} = \sigma T_{\mathrm{eff}}^4
+      \text{Surface:} & \quad (1-A)\frac{S}{4} + \varepsilon\sigma T_a^4 = \sigma T_s^4 \\
+      \text{TOA:} & \quad (1-A)\frac{S}{4} = \sigma T_{\mathrm{eff}}^4
     \end{align*}
 
     \column{0.48\textwidth}
@@ -431,7 +431,7 @@
   \keyresult{$$\lambda_J = \frac{G M_p\,m}{\kB T_{\mathrm{exo}}\,r_{\mathrm{exo}}} = \frac{v_{\mathrm{esc}}^2}{v_{\mathrm{th}}^2}, \qquad v_{\mathrm{th}} = \sqrt{2\kB T_{\mathrm{exo}}/m}$$}
   \vskip6pt
   \begin{itemize}
-    \item $\lambda_J \gg 1$: escape is negligible because very few molecules exceed $v_{\mathrm{esc}}$
+    \item $\lambda_J \gg 1$: escape is slow (exponentially suppressed) because very few molecules exceed $v_{\mathrm{esc}}$
     \item $\lambda_J \lesssim 2$--3: thermal escape drives rapid atmospheric loss
     \item Escape flux $\Phi_J \propto (1 + \lambda_J)\,e^{-\lambda_J}$: exponential in $\lambda_J$
   \end{itemize}
@@ -476,8 +476,8 @@
   \vskip8pt
   \begin{itemize}
     \item Strongest in the first few hundred Myr, when stellar EUV is 10--100$\times$ higher
-    \item Strips $\mathrm{H_2}$-rich primary envelopes from planets up to several $\Mearth$; outflowing H drags heavier volatiles along
-    \item The primary mechanism behind the exoplanet radius valley at $\sim$1.5--2~$\Rearth$
+    \item Strips $\mathrm{H_2}$ envelopes from planets up to several $\Mearth$; outflowing H drags heavier gases along
+    \item Carves the exoplanet radius valley at $\sim$1.5--2~$\Rearth$
   \end{itemize}
   \vskip4pt
   \sourcenote{Hunten et al.\ (1987); Owen (2019)}

@@ -34,7 +34,7 @@ When $\mathrm{RH} = 100\%$, the air is saturated; when $\mathrm{RH} > 100\%$, it
 :align: center
 
 Saturation vapour pressure $P_{\mathrm{sat}}(T)$ as a function of temperature for the major condensable species in solar system atmospheres: $\mathrm{H_2O}$, $\mathrm{H_2SO_4}$, $\mathrm{NH_3}$, $\mathrm{CH_4}$, and $\mathrm{CO_2}$ (sublimation curve).
-The exponential temperature dependence predicted by the Clausius-Clapeyron equation (Eq. {eq}`eq:clausius-clapeyron`) is evident on the logarithmic vertical axis, and the species ordering mirrors the order in which each condenses in its host atmosphere.
+The exponential temperature dependence predicted by the Clausius-Clapeyron equation (Eq. {eq}`eq:clausius-clapeyron`) is evident on the logarithmic vertical axis.
 Coloured bands at the bottom mark the temperature ranges over which each species condenses: $\mathrm{H_2O}$ on Earth and Mars; $\mathrm{H_2SO_4}$ on Venus; $\mathrm{NH_3}$ on Jupiter and Saturn; $\mathrm{CH_4}$ on Titan, Uranus, and Neptune; and $\mathrm{CO_2}$ on Mars.
 Plot generated from thermodynamic data in {cite:p}`Catling2017` and {cite:p}`Pierrehumbert2010`. Course-original figure.
 ```
@@ -54,7 +54,7 @@ The availability of condensation nuclei therefore controls where and how easily 
 :align: center
 
 Köhler curves: equilibrium supersaturation $S - 1$ at which a solution droplet of radius $r$ neither grows nor evaporates.
-The dashed black curve is the pure-water Kelvin term, $S = 1 + A/r$, which formalises the energy cost of homogeneous nucleation: the equilibrium supersaturation is already $S - 1 \approx 12\%$ at $r = 10^{-2}\,\mu$m and climbs toward $\sim$100% at the nanometre scale of freshly formed embryos, far beyond anything sustained in planetary atmospheres.
+The dashed black curve is the pure-water Kelvin term, $S = 1 + A/r$, which formalises the energy cost of homogeneous nucleation: the equilibrium supersaturation, computed from the same term above the top of the plotted range, is already $S - 1 \approx 12\%$ at $r = 10^{-2}\,\mu$m and climbs toward $\sim$100% at the nanometre scale of freshly formed embryos, far beyond anything sustained in planetary atmospheres.
 The coloured curves show the Köhler form $S = 1 + A/r - B/r^3$ for solution droplets condensed on dry condensation nuclei (CCN) of three solute masses spanning the typical atmospheric range, $m_s = 10^{-16}$, $10^{-15}$, and $10^{-14}$ g {cite:p}`Pruppacher1997`.
 The Raoult term $-B/r^3$ pushes the equilibrium curve below the Kelvin curve, so heterogeneous nucleation activates at peak supersaturations of only $\sim$0.04-0.4%, easily reached in adiabatically cooled updraughts.
 This is why heterogeneous nucleation dominates on every planet with abundant aerosols.
@@ -63,7 +63,7 @@ Adapted from the formulation in {cite:p}`Catling2017`. Course-original figure.
 
 ### The lifting condensation level
 
-As an air parcel rises through the troposphere, it cools at the dry adiabatic lapse rate $\Gamma_d = g/c_p$ (Eq. {eq}`eq:dry-adiabat` from {ref}`Lecture 5 <lecture05>`). Its vapour pressure remains roughly constant (since the mass of vapour is conserved during adiabatic ascent), but $P_{\mathrm{sat}}(T)$ decreases as the temperature drops. At the altitude where the parcel temperature has cooled enough that $P_{\mathrm{vapour}} = P_{\mathrm{sat}}(T)$, condensation begins. This altitude is the **lifting condensation level (LCL)** and marks the cloud base.
+As an air parcel rises through the troposphere, it cools at the dry adiabatic lapse rate $\Gamma_d = g/c_p$ (Eq. {eq}`eq:dry-adiabat` from {ref}`Lecture 5 <lecture05>`). Its vapour mixing ratio is conserved during adiabatic ascent, so its vapour pressure falls only in proportion to the total pressure, while $P_{\mathrm{sat}}(T)$ drops exponentially as the temperature falls. At the altitude where the parcel temperature has cooled enough that $P_{\mathrm{vapour}} = P_{\mathrm{sat}}(T)$, condensation begins. This altitude is the **lifting condensation level (LCL)** and marks the cloud base.
 
 Above the LCL, the rising parcel releases **latent heat** as vapour condenses, warming the parcel relative to the dry adiabat. This gives the **moist adiabatic lapse rate**, which is shallower than the dry adiabat ($\sim$9.8 K km$^{-1}$): a representative value in Earth's warm lower troposphere is $\sim$5 K km$^{-1}$, and the observed tropospheric mean of $\sim$6.5 K km$^{-1}$ lies between the two limits ({ref}`Lecture 5 <lecture05>`). The latent heat release also provides buoyancy, driving vigorous convection in moist atmospheres: the mechanism behind thunderstorms, hurricanes, and the towering cumulonimbus clouds on Earth ({numref}`fig:cumulonimbus-anvil`).
 
@@ -83,12 +83,12 @@ What condenses depends on what vapour is present and at what temperature. This v
 - **Earth:** $\mathrm{H_2O}$ clouds (liquid droplets and ice crystals), with cloud base at $\sim$1–2 km
 - **Venus:** $\mathrm{H_2SO_4}$ (sulfuric acid) droplets at 48–70 km altitude
 - **Mars:** $\mathrm{CO_2}$ ice and $\mathrm{H_2O}$ ice clouds at high altitude
-- **Titan:** $\mathrm{CH_4}$ and $\mathrm{C_2H_6}$ (ethane) clouds near the surface
+- **Titan:** $\mathrm{CH_4}$ and $\mathrm{C_2H_6}$ (ethane) clouds in the lower troposphere (about 8 to 30 km)
 - **Jupiter/Saturn:** Layered $\mathrm{NH_3}$, $\mathrm{NH_4SH}$, and $\mathrm{H_2O}$ clouds at successively deeper levels
 
 The physics of cloud formation is the same in every case: the Clausius-Clapeyron equation governs all of them. The difference is which species condenses and at what temperature.
 
-{numref}`fig:cloud-species-map` places the condensing species of the five bodies on one height axis.
+{numref}`fig:cloud-species-map` compares the condensing species and cloud altitudes of the five bodies in separate panels (the height scales differ).
 
 <!-- Generated by scripts/figures/L06_atmospheres_2/fig_cloud_species_map.py -->
 ```{figure} figures/cloud_species_map.avif
@@ -96,7 +96,7 @@ The physics of cloud formation is the same in every case: the Clausius-Clapeyron
 :width: 100%
 :align: center
 
-Which species condenses where: Earth's H$_2$O clouds with a base at 1 to 2 km, Venus's H$_2$SO$_4$ droplets at 48 to 70 km, CO$_2$ and H$_2$O ice clouds at high altitude on Mars, CH$_4$ and C$_2$H$_6$ clouds near Titan's surface, and the NH$_3$, NH$_4$SH and H$_2$O decks at successively deeper levels on Jupiter and Saturn. The same Clausius-Clapeyron physics governs every case; only the species and its condensation temperature differ. Schematic; only the altitudes stated in the text are drawn to scale. Course-original figure.
+Which species condenses where: Earth's H$_2$O clouds with a base at 1 to 2 km, Venus's H$_2$SO$_4$ droplets at 48 to 70 km, CO$_2$ and H$_2$O ice clouds at high altitude on Mars, CH$_4$ and C$_2$H$_6$ clouds in Titan's lower troposphere, and the NH$_3$, NH$_4$SH and H$_2$O decks at successively deeper levels on Jupiter and Saturn. The same Clausius-Clapeyron physics governs every case; only the species and its condensation temperature differ. Schematic; only the altitudes stated in the text are drawn to scale. Course-original figure.
 ```
 
 ## Blackboard derivation: The Clausius-Clapeyron equation
@@ -225,7 +225,7 @@ $^\dagger$Latent heat of sublimation (solid $\leftrightarrow$ vapour).
 
 Data from {cite:p}`Catling2017` and {cite:p}`dePaterLissauer2010`.
 
-The large $L_v/R_v$ ratio for $\mathrm{H_2SO_4}$ makes its saturation curve extremely steep, so the crossing from vapour to droplets happens over a small temperature interval: Venus's cloud base near 48 km is sharply defined, and droplets that settle below it evaporate quickly. Conversely, $\mathrm{CH_4}$ has a low $L_v/R_v$: its flat saturation curve keeps methane on Titan close to saturation through much of the troposphere, so clouds can form over a wide range of altitudes.
+The vertical sharpness of a cloud base follows from how fast $P_{\mathrm{sat}}$ changes with altitude, $\mathrm{d}\ln P_{\mathrm{sat}}/\mathrm{d}z = (L_v/R_v)\,\Gamma/T^2$, the product of the slope of the saturation curve and the lapse rate. Per kelvin the $\mathrm{CH_4}$ curve near 90 K is even steeper than the $\mathrm{H_2SO_4}$ curve near 350 K (0.12 against 0.05 K$^{-1}$), but Venus's lapse rate of about 8 K km$^{-1}$ compresses a factor-of-ten change of $P_{\mathrm{sat}}$ into about 5 km, so its cloud base near 48 km is sharply defined and droplets that settle below it evaporate quickly. On Titan the weak gravity gives a lapse rate of only about 1.3 K km$^{-1}$, the same factor of ten spans about 15 km, and methane clouds can form over a wide range of altitudes.
 ````
 
 <!-- Generated by scripts/figures/L06_atmospheres_2/fig_water_phase_diagram.py -->
@@ -278,7 +278,7 @@ where the atomic oxygen comes from ultraviolet photolysis of $\mathrm{CO_2}$ hig
 
 Venus thermal structure from the surface (737 K, 92 bar) to 100 km altitude, based on the *Venus International Reference Atmosphere* and the *Venus Express* radio-science experiment {cite:p}`Tellmann2009`.
 The $\mathrm{H_2SO_4}$ cloud deck (yellow band, 48-70 km) sits where the temperature traverses $\sim$230-360 K between cloud top and cloud base, within the thermodynamic stability field of concentrated sulfuric acid droplets; the sub-cloud haze (peach band, 31-48 km) lies just below.
-The cold collar inversion layer near 62-65 km altitude, prominent in the VeRa retrievals at high latitudes ($\sim$65-75°), sits where the temperature inversion shapes the upper boundary of the cloud system.
+The marker near 65 km locates the cold collar; this mid-latitude profile falls monotonically, and the temperature inversion that the VeRa retrievals show there at high latitudes ($\sim$65-75°) is not drawn.
 Course-original figure.
 ```
 
@@ -338,7 +338,7 @@ The vertical layering of these three cloud decks is sketched in {numref}`fig:jup
 :width: 100%
 :align: center
 
-Temperature–pressure profile of Jupiter's atmosphere, showing the three main cloud layers: ammonia ($\mathrm{NH_3}$) ice at the top ($\sim$1 bar), ammonium hydrosulfide ($\mathrm{NH_4SH}$) in the middle ($\sim$2–3 bar), and water ($\mathrm{H_2O}$) at the deepest level ($\sim$5–7 bar). The **tropopause**, the boundary where temperature stops falling with altitude and convective mixing gives way to a stably stratified layer above, sits at $\sim$50 km, and the stratosphere-thermosphere boundary at $\sim$320 km is marked as well. Each cloud layer forms where the local temperature crosses the saturation curve for that species. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+Temperature–pressure profile of Jupiter's atmosphere, showing the three main cloud layers: ammonia ($\mathrm{NH_3}$) ice at the top ($\sim$1 bar), ammonium hydrosulfide ($\mathrm{NH_4SH}$) in the middle ($\sim$2–3 bar), and water ($\mathrm{H_2O}$) at the deepest level ($\sim$5–7 bar). The **tropopause**, the boundary where temperature stops falling with altitude and convective mixing gives way to a stably stratified layer above, sits at $\sim$50 km, and the stratosphere-thermosphere boundary at $\sim$320 km is marked as well. Each cloud layer sits at the pressure level where the temperature profile crosses the condensation temperature of that species (the saturation curves themselves are not drawn). Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 ```
 
 The visible cloud-band morphology produced by these layers across Jupiter's full disk is shown in {numref}`fig:jupiter-global-map`.
@@ -464,7 +464,7 @@ $$
 f \hat{k} \times \mathbf{v}_g = -\frac{1}{\rho} \nabla P
 $$ (eq:geostrophic-balance)
 
-where $\hat{k}$ is the unit vector pointing upward (along the rotation axis), $\mathbf{v}_g$ is the geostrophic wind, $\rho$ is the air density, and $\nabla P$ is the horizontal pressure gradient.
+where $\hat{k}$ is the local vertical unit vector (normal to the surface), $\mathbf{v}_g$ is the geostrophic wind, $\rho$ is the air density, and $\nabla P$ is the horizontal pressure gradient.
 
 The key consequence is that the **geostrophic wind blows parallel to isobars** (lines of constant pressure), not from high to low pressure as one might naively expect. In the Northern Hemisphere, the wind blows with low pressure to its left; in the Southern Hemisphere, low pressure is to the right. This is why large-scale weather systems (cyclones and anticyclones) rotate around pressure centres rather than flowing directly toward them.
 
@@ -636,7 +636,7 @@ The early Sun was **$\sim$30% less luminous** than today. Even 4 Gyr ago (when t
 :width: 700px
 :align: center
 
-Evolution of solar luminosity over the four geologic eons (Hadean, Archean, Proterozoic, Phanerozoic; labelled bands at top), normalised to the present-day value. The standard-solar-model curve from Bahcall et al. (2001) (solid line) and the analytic approximation by {cite:t}`Gough1981` (dashed line, Eq. {eq}`eq:solar-luminosity-evolution`) agree to better than $\sim 0.1\%$ over the past 4 Gyr. At $t = 0$ (left edge, $\sim 4.5$ Gyr ago) the Sun was about $30\%$ less luminous than today; the Archean climate problem of maintaining liquid surface water under this faint young Sun is the *faint young Sun paradox*. Reproduced from {cite:p}`Feulner2012`, Fig. 1.
+Evolution of solar luminosity over the four geologic eons (Hadean, Archean, Proterozoic, Phanerozoic; labelled bands at top), normalised to the present-day value. The standard-solar-model curve from Bahcall et al. (2001) (solid line) and the analytic approximation by {cite:t}`Gough1981` (dashed line, Eq. {eq}`eq:solar-luminosity-evolution`) agree closely over the past 4 Gyr. At $t = 0$ (left edge, $\sim 4.5$ Gyr ago) the Sun was about $30\%$ less luminous than today; the Archean climate problem of maintaining liquid surface water under this faint young Sun is the *faint young Sun paradox*. Reproduced from {cite:p}`Feulner2012`, Fig. 1.
 ```
 
 ### The paradox
@@ -764,10 +764,10 @@ Earth has maintained liquid water at its surface for at least 4.4 billion years 
 
 ### The Urey reaction
 
-The cycle is built on the chemical weathering of silicate rocks by atmospheric $\mathrm{CO_2}$ dissolved in rainwater. The overall reaction (simplified) is:
+The cycle is built on the chemical weathering of silicate rocks by atmospheric $\mathrm{CO_2}$ dissolved in rainwater. The net reaction, with water as the medium that dissolves the $\mathrm{CO_2}$ and carries the ions, is:
 
 $$
-\mathrm{CaSiO_3} + \mathrm{CO_2} + \mathrm{H_2O} \longrightarrow \mathrm{CaCO_3} + \mathrm{SiO_2} + \mathrm{H_2O}
+\mathrm{CaSiO_3} + \mathrm{CO_2} \longrightarrow \mathrm{CaCO_3} + \mathrm{SiO_2}
 $$
 
 This is sometimes called the **Urey reaction**. In words: carbon dioxide from the atmosphere dissolves in rainwater to form a weak acid, which reacts with silicate minerals in surface rocks. The products (calcium carbonate, $\mathrm{CaCO_3}$, limestone; and silica, $\mathrm{SiO_2}$) are transported by rivers to the ocean, where the carbonate precipitates, that is, comes out of solution as solid grains (biologically, as the shells and skeletons of marine organisms, or abiotically), and is deposited on the ocean floor as sedimentary rock.
@@ -782,7 +782,7 @@ The net effect is to **draw $\mathrm{CO_2}$ out of the atmosphere** and lock it 
 :width: 100%
 :align: center
 
-The Urey reaction pathway: atmospheric CO$_2$ dissolves in rainwater as a weak carbonic acid, weathers silicate rock (CaSiO$_3$), and rivers carry the dissolved calcium, bicarbonate and silica to the ocean, where CaCO$_3$ precipitates as shells, skeletons or abiotic grains and is deposited as sedimentary rock. The overall reaction CaSiO$_3$ + CO$_2$ + H$_2$O $\rightarrow$ CaCO$_3$ + SiO$_2$ + H$_2$O draws CO$_2$ out of the atmosphere into carbonate rock, the long-term carbon sink. Course-original figure.
+The Urey reaction pathway: atmospheric CO$_2$ dissolves in rainwater as a weak carbonic acid, weathers silicate rock (CaSiO$_3$), and rivers carry the dissolved calcium, bicarbonate and silica to the ocean, where CaCO$_3$ precipitates as shells, skeletons or abiotic grains and is deposited as sedimentary rock. The net reaction CaSiO$_3$ + CO$_2$ $\rightarrow$ CaCO$_3$ + SiO$_2$, with water as the medium, draws CO$_2$ out of the atmosphere into carbonate rock, the long-term carbon sink. Course-original figure.
 ```
 
 ### Volcanic outgassing: the carbon source
@@ -842,7 +842,7 @@ The requirement for both liquid water and active volcanism to maintain the carbo
 :width: 100%
 :align: center
 
-The carbonate-silicate thermostat needs both liquid water and active volcanism. Earth has both and regulates CO$_2$ over billions of years; Venus lost its water, so weathering stopped and volcanic CO$_2$ accumulated to 92 bar; Mars lost its volcanism after about 3 Ga, so the source broke while weathering and escape to space drew CO$_2$ down to the present 6 mbar; with neither ingredient there is no cycle. Course-original figure.
+The carbonate-silicate thermostat needs both liquid water and active volcanism. Earth has both and regulates CO$_2$ over billions of years; Venus lost its water, so weathering stopped and volcanic CO$_2$ accumulated to 92 bar; on Mars the volcanic source faded after about 3 Ga while weathering and escape to space drew CO$_2$ down to the present 6 mbar, and today Mars has neither liquid water nor active volcanism, so no cycle runs. Course-original figure.
 ```
 
 ## Recent advances

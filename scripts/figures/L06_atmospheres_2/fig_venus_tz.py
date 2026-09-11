@@ -6,7 +6,7 @@ Venus thermal structure from the surface (737 K, 92 bar) up to
 Tellmann 2009).
 
 The H2SO4 cloud deck (48-70 km) is shaded yellow; the sub-cloud
-haze (31-48 km) is shaded peach. The cold-collar inversion near
+haze (31-48 km) is shaded peach. The cold-collar marker near
 65 km (prominent at high latitudes in VeRa retrievals) is marked.
 
 Caption / figure id : `fig:venus-tz`
@@ -40,7 +40,7 @@ PROFILE = [
     ( 50, 348.0),
     ( 55, 305.0),
     ( 60, 262.0),
-    ( 64, 245.0),  # cold collar inversion
+    ( 64, 245.0),  # cold collar marker
     ( 70, 230.0),
     ( 80, 195.0),
     ( 90, 175.0),

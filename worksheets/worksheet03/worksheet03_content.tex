@@ -20,10 +20,10 @@ $S_\oplus = 1361\ \mathrm{W\,m^{-2}}$ (solar constant at 1 AU) \quad
 $\Mearth = 5.972 \times 10^{24}\ \mathrm{kg}$
 
 \vskip4pt
-Earth: $P_0 = 1.013 \times 10^{5}$ Pa, $\Rearth = 6371$ km, $T_{\mathrm{eq}} = 255$ K, surface $288$ K, $\Gamma_d = 9.8\ \mathrm{K\,km^{-1}}$
+Earth: $P_0 = 1.013 \times 10^{5}$ Pa, $\Rearth = 6371$ km, $T_{\mathrm{eq}} = 255$ K (the effective temperature $T_{\mathrm{eff}}$ of Lecture 5), surface $288$ K, $\Gamma_d = 9.8\ \mathrm{K\,km^{-1}}$
 
 \vskip4pt
-Water: $L_v = 2.50 \times 10^{6}\ \mathrm{J\,kg^{-1}}$, $R_v = 462\ \mathrm{J\,kg^{-1}\,K^{-1}}$ ($L_v/R_v = 5400$ K), triple point $(273\ \mathrm{K},\ 611\ \mathrm{Pa})$
+Water: $L_v = 2.50 \times 10^{6}\ \mathrm{J\,kg^{-1}}$, $R_v = 462\ \mathrm{J\,kg^{-1}\,K^{-1}}$ (use $L_v/R_v = 5400$ K throughout), triple point $(273\ \mathrm{K},\ 611\ \mathrm{Pa})$
 
 \vskip6pt
 \begin{tabular}{@{}lcccc@{}}
@@ -32,7 +32,7 @@ Body & $T$ (K) & $\mu$ & $g$ (m\,s$^{-2}$) & Bond albedo $A$ \\
 \midrule
 Venus (0.72 AU) & 737 (surface) & 43.4 & 8.87 & 0.77 \\
 Earth (1 AU)    & 288 (surface) & 28.97 & 9.81 & 0.30 \\
-Titan           & 94 (surface)  & 28.6 & 1.35 & --- \\
+Titan           & 94 (surface)  & 27.4 & 1.35 & --- \\
 \bottomrule
 \end{tabular}
 
@@ -55,13 +55,13 @@ H_\oplus &= \frac{\kB T}{\mu\,m_u\,g}
 = \frac{1.381 \times 10^{-23} \times 288}{28.97 \times 1.661 \times 10^{-27} \times 9.81}
 = \frac{3.9773 \times 10^{-21}}{4.7205 \times 10^{-25}} = 8425.6\ \mathrm{m} \approx 8.426\ \mathrm{km}.
 \end{align*}
-For Titan, with $T = 94$ K, $\mu = 28.6$, $g = 1.35\ \mathrm{m\,s^{-2}}$:
+For Titan, with $T = 94$ K, $\mu = 27.4$, $g = 1.35\ \mathrm{m\,s^{-2}}$:
 \begin{align*}
-H_{\mathrm{Titan}} &= \frac{1.381 \times 10^{-23} \times 94}{28.6 \times 1.661 \times 10^{-27} \times 1.35}
-= \frac{1.2981 \times 10^{-21}}{6.4131 \times 10^{-26}} = 20241\ \mathrm{m} \approx 20.24\ \mathrm{km},
+H_{\mathrm{Titan}} &= \frac{1.381 \times 10^{-23} \times 94}{27.4 \times 1.661 \times 10^{-27} \times 1.35}
+= \frac{1.2981 \times 10^{-21}}{6.1440 \times 10^{-26}} = 21128\ \mathrm{m} \approx 21.13\ \mathrm{km},
 \end{align*}
-matching the table in the Lecture 5 notes (8.4 and 20 km).
-\answer{$H_\oplus \approx 8.426\ \mathrm{km}$ and $H_{\mathrm{Titan}} \approx 20.24\ \mathrm{km}$, matching the $8.4$ and $20\ \mathrm{km}$ in the Lecture 5 notes.}
+matching the table in the Lecture 5 notes (8.4 and 21 km).
+\answer{$H_\oplus \approx 8.426\ \mathrm{km}$ and $H_{\mathrm{Titan}} \approx 21.13\ \mathrm{km}$, matching the $8.4$ and $21\ \mathrm{km}$ in the Lecture 5 notes.}
 \end{solution}
 
 \parti Titan is far colder than Earth, and its nitrogen atmosphere has nearly the same $\mu$ as air.
@@ -190,7 +190,7 @@ The dew point is the temperature at which this vapour pressure saturates. Invert
 = 3.6630 \times 10^{-3} - \frac{\ln(1.9296)}{5400} = 3.5413 \times 10^{-3}\ \mathrm{K^{-1}},
 \]
 so $T_d = 282.4$ K, matching the checkpoint. Rising air cools at $\Gamma_d = 9.8\ \mathrm{K\,km^{-1}}$
-while its vapour pressure stays nearly constant, so condensation begins where the parcel temperature
+while its vapour pressure is taken as constant (as instructed; in reality it falls slowly with the total pressure), so condensation begins where the parcel temperature
 meets the dew point:
 \[
 z_{\mathrm{LCL}} = \frac{T - T_d}{\Gamma_d} = \frac{293 - 282.4}{9.8} = 1.082\ \mathrm{km}.
@@ -202,8 +202,8 @@ Earth's typical cloud base.
 
 \parti Read the saturation-curve figure: a body with a solid surface has regions at $90$ K where one
 atmospheric gas is present at a partial pressure of about $10^4$ Pa ($0.1$ bar). Identify from the
-figure which of the five species is at its saturation point under these conditions, and hence which
-body in the solar system this is. Justify your reading in one or two sentences.
+figure which of the five species is at its saturation point under these conditions, and deduce from the
+given data which body in the solar system this is. Justify your reading in one or two sentences.
 
 \begin{solution}
 At 90 K, only the $\mathrm{CH_4}$ curve passes close to $10^4$ Pa: every other species has a saturation
@@ -212,28 +212,34 @@ $\mathrm{H_2SO_4}$ all lie far off the bottom of the plot at 90 K).
 The gas is methane, at its saturation point.
 The Lecture 6 table lists $\mathrm{CH_4}$ condensation on Titan, Uranus, and Neptune, but the ice giants
 have no solid surface at these levels: the body with a surface is Titan.
-The given-data table quotes 94 K for Titan's mean surface; the methane curve is so flat that both 90 and
-94 K sit within a factor of two of saturation for a $\sim$0.1 bar methane partial pressure, which is
+The given-data table quotes 94 K for Titan's mean surface; the methane saturation pressure rises by only a factor of 1.6 from 90 to
+94 K, so both temperatures sit within a factor of two of saturation for a $\sim$0.1 bar methane partial pressure, which is
 exactly why methane there cycles between vapour, rain, and lakes.
 \answer{The species is $\mathrm{CH_4}$ and the body is Titan: methane is at saturation near $10^4\ \mathrm{Pa}$ at $90\ \mathrm{K}$, driving Titan's methane cycle of vapour, rain, and lakes.}
 \end{solution}
 
 \parti The Lecture 6 notes state that Venus's sulfuric-acid cloud base is sharply defined, while Titan's
-methane clouds can form over a wide range of altitudes. Use the shape of the saturation curves in the
-figure (steep for $\mathrm{H_2SO_4}$, flat for $\mathrm{CH_4}$) to explain both observations with the
-same argument.
+methane clouds can form over a wide range of altitudes. Use the slopes of the saturation curves in the
+figure together with the dry lapse rates $\Gamma_d = g/c_p$ of the two atmospheres (Venus: $g = 8.87\ \mathrm{m\,s^{-2}}$,
+$c_p \approx 900\ \mathrm{J\,kg^{-1}\,K^{-1}}$, cloud base near 350 K; Titan: $g = 1.35\ \mathrm{m\,s^{-2}}$,
+$c_p \approx 1040\ \mathrm{J\,kg^{-1}\,K^{-1}}$, clouds near 90 K) to explain both observations with the same argument.
 
 \begin{solution}
-Condensation begins where the local vapour pressure crosses the saturation curve.
-For $\mathrm{H_2SO_4}$, with its very large $L_v/R_v$, the saturation pressure changes by orders of
-magnitude across a small temperature interval: descending droplets evaporate almost immediately below the
-crossing, so the transition from clear air to cloud happens across a narrow altitude band and the cloud
-base is sharp.
-For $\mathrm{CH_4}$, the low $L_v/R_v$ makes the curve flat: methane vapour stays close to saturation
-over a wide range of temperatures, so modest cooling anywhere in Titan's troposphere can push it over
-the line, and clouds can appear across many kilometres of altitude.
-One equation, two extremes of its exponential sensitivity.
-\answer{A large $L_v/R_v$ makes the saturation curve steep and the $\mathrm{H_2SO_4}$ cloud base sharp, whereas a low $L_v/R_v$ for $\mathrm{CH_4}$ allows condensation across many kilometres of altitude.}
+Condensation begins where the local vapour pressure crosses the saturation curve, and the sharpness of a
+cloud base in altitude is set by how fast $P_{\mathrm{sat}}$ changes per kilometre of ascent:
+\[
+\frac{\mathrm{d}\ln P_{\mathrm{sat}}}{\mathrm{d}z} = \frac{L_v}{R_v T^2}\,\Gamma_d .
+\]
+Per kelvin, the $\mathrm{CH_4}$ curve at 90 K is the steeper one: $980/90^2 = 0.121\ \mathrm{K^{-1}}$ against
+$6400/350^2 = 0.052\ \mathrm{K^{-1}}$ for $\mathrm{H_2SO_4}$ at 350 K, so a factor of ten in $P_{\mathrm{sat}}$
+needs $\ln 10/0.121 = 19$ K on Titan and $\ln 10/0.052 = 44$ K on Venus.
+The lapse rates turn these temperature intervals into altitude: on Venus $\Gamma_d = 8.87/900 \approx 9.9\ \mathrm{K\,km^{-1}}$,
+so the factor of ten spans only $44/9.9 \approx 4.5$ km and the transition from clear air to cloud is sharp,
+with droplets that settle below the base evaporating within a few kilometres; on Titan
+$\Gamma_d = 1.35/1040 \approx 1.3\ \mathrm{K\,km^{-1}}$, so the same factor of ten spans $19/1.3 \approx 15$ km,
+and methane stays close to saturation over many kilometres of altitude, where clouds can appear.
+One equation, and it is the weak gravity of Titan, not a flat curve, that spreads its clouds.
+\answer{The saturation pressure changes with altitude at the rate $(L_v/R_v)\,\Gamma_d/T^2$: on Venus a factor of ten in $P_{\mathrm{sat}}$ spans about $4.5\ \mathrm{km}$, so the $\mathrm{H_2SO_4}$ cloud base is sharp; on Titan, with $\Gamma_d \approx 1.3\ \mathrm{K\,km^{-1}}$, it spans about $15\ \mathrm{km}$, so methane clouds form across many kilometres of altitude.}
 \end{solution}
 
 % ════════════════════════════════════════════════════════════
@@ -258,9 +264,9 @@ T_{\mathrm{eq}} = 255 \times (0.71)^{1/4} = 255 \times 0.91794 = 234.1\ \mathrm{
 \]
 With a greenhouse like today's ($+33$ K), the mean surface would sit near
 $267$ K, well below freezing, and the oceans should have been ice.
-Yet zircons, pillow basalts, and stromatolites record liquid water and life throughout the Archean.
+Yet Hadean zircons (4.4 Ga) and Archean pillow basalts and stromatolites record liquid water and, later, life.
 A frozen prediction against a wet record: this is the faint young Sun paradox.
-\answer{$T_{\mathrm{eq}} = 234.1\ \mathrm{K}$ implies a frozen surface near $267\ \mathrm{K}$ (with a $+33\ \mathrm{K}$ greenhouse), contradicting Archean geological evidence of liquid water and life (the faint young Sun paradox).}
+\answer{$T_{\mathrm{eq}} = 234.1\ \mathrm{K}$ implies a frozen surface near $267\ \mathrm{K}$ (with a $+33\ \mathrm{K}$ greenhouse), contradicting the Hadean and Archean geological evidence of liquid water and life (the faint young Sun paradox).}
 \end{solution}
 
 \parti Read the bistability figure: identify which of the three intersections are stable and which is

@@ -38,9 +38,9 @@
 % ── Recap ───────────────────────────────────────────────────
 \begin{frame}{Recap: Lecture 5}
   \begin{itemize}
-    \item Hydrostatic equilibrium $\dd P = -\rho g\,\dd z$ and scale height $H = \kB T / (\mu\,m_u\,g)$ set atmospheric structure
-    \item Radiative equilibrium and greenhouse warming set surface temperatures ($T_s > T_{\mathrm{eq}}$)
-    \item Convection drives the adiabatic lapse rate $\Gamma_d = g / c_p$ in the lower atmosphere
+    \item Hydrostatic equilibrium $\dd P = -\rho g\,\dd z$ and scale height $H = \kB T / (\mu\,m_u\,g)$
+    \item Greenhouse warming: $T_s > T_{\mathrm{eq}}$
+    \item Convection sets the adiabatic lapse rate $\Gamma_d = g / c_p$
   \end{itemize}
   \vskip8pt
   \textbf{Today:} What happens when vapour condenses? How do winds blow? Why has Earth's climate been stable for 4~Gyr?
@@ -67,12 +67,12 @@
 
 % ── Nucleation ──────────────────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.61]{kohler_curves}{K\"ohler curves: the equilibrium supersaturation of solution droplets against droplet radius. Course figure.}{Condensation needs a \textbf{seed}: homogeneous nucleation from vapour alone needs $\mathrm{RH} \gg 100\%$; heterogeneous nucleation on dust, sea salt or soot activates at only 0.04--0.4\% supersaturation.}
+  \ipsherokey[0.61]{kohler_curves}{K\"ohler curves: the equilibrium supersaturation of solution droplets against droplet radius. Course figure.}{Condensation needs a \textbf{seed}: homogeneous nucleation from vapour alone needs $\mathrm{RH} \gg 100\%$; heterogeneous nucleation on \textbf{condensation nuclei} (dust, sea salt, soot) activates at only 0.04--0.4\% supersaturation.}
 \end{frame}
 
 % ── Lifting condensation level ──────────────────────────────
 \begin{frame}
-  \ipsherokey[0.65]{cumulonimbus_anvil}{A cumulonimbus anvil spreading at the tropopause. Credit: Eulenj\"ager, CC BY-SA 3.0.}{Rising air cools at $\Gamma_d = g/c_p$ until it reaches its \textbf{dew point} $T_d$: the \textbf{lifting condensation level} (LCL) marks the \textbf{cloud base}, and above it latent heat lowers the lapse rate to about 5~K\,km$^{-1}$ (9.8 dry).}
+  \ipsherokey[0.65]{cumulonimbus_anvil}{A cumulonimbus anvil spreading at the tropopause. Credit: Eulenj\"ager, CC BY-SA 3.0.}{Rising air cools at $\Gamma_d = g/c_p$ until it reaches its \textbf{dew point} $T_d$: the \textbf{lifting condensation level} (LCL) marks the \textbf{cloud base}, and above it latent heat lowers it to the \textbf{moist adiabatic lapse rate}, about 5~K\,km$^{-1}$ (9.8 dry).}
 \end{frame}
 
 % ── Cloud types across solar system ─────────────────────────
@@ -86,7 +86,7 @@
     \textbf{Body} & \textbf{Cloud species} & \textbf{Cloud location} \\
     \midrule
     Earth    & $\mathrm{H_2O}$                          & $\sim$1--2~km \\
-    Venus    & $\mathrm{H_2SO_4}$                       & $\sim$48~km \\
+    Venus    & $\mathrm{H_2SO_4}$                       & 48--70~km \\
     Mars     & $\mathrm{CO_2}$ ice, $\mathrm{H_2O}$ ice & 10--100~km \\
     Titan    & $\mathrm{CH_4}$, $\mathrm{C_2H_6}$       & $\sim$8--30~km \\
     Jupiter  & $\mathrm{NH_3}$, $\mathrm{NH_4SH}$, $\mathrm{H_2O}$ & layered, 0.5--7~bar \\
@@ -175,11 +175,13 @@
     $\mathrm{H_2SO_4}$   & 540  & 85  & 6400 & 230--360 & Venus \\
     $\mathrm{NH_3}$      & 1370 & 488 & 2800 & 130--150 & Jupiter, Saturn \\
     $\mathrm{CH_4}$      & 510  & 519 & 980  & 80--90   & Titan, Uranus, Neptune \\
-    $\mathrm{CO_2}$      & 571  & 189 & 3020 & 100--150 & Mars \\
+    $\mathrm{CO_2}^{\dagger}$ & 571  & 189 & 3020 & 100--150 & Mars \\
     \bottomrule
   \end{tabular}
-  \vskip6pt
-  \keyresult{Steep $L_v/R_v$ curves sharpen cloud bases (Venus); flat curves broaden decks (Titan).}
+  \vskip2pt
+  {\scriptsize $^{\dagger}$latent heat of sublimation, solid to vapour}
+  \vskip4pt
+  \keyresult{Cloud-base sharpness scales with $(L_v/R_v)\,\Gamma/T^2$: Venus's lapse rate of 8~K\,km$^{-1}$ sharpens its base; Titan's 1.3~K\,km$^{-1}$ spreads methane clouds over about 15~km.}
 \end{frame}
 
 
@@ -190,7 +192,7 @@
 
 % ── Venus clouds ────────────────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.62]{venus_uv_clouds}{Venus in ultraviolet light, where an unidentified absorber traces the upper cloud motions. Credit: NASA/JPL-Caltech (1974).}{Concentrated $\mathrm{H_2SO_4}$ clouds span 48--70~km, made from outgassed $\mathrm{SO_2}$ and photolytic O ($\mathrm{SO_2} + \mathrm{O} \rightarrow \mathrm{SO_3}$, $\mathrm{SO_3} + \mathrm{H_2O} \rightarrow \mathrm{H_2SO_4}$); a sub-cloud haze reaches down to about 31~km.}
+  \ipsherokey[0.62]{venus_uv_clouds}{Venus in ultraviolet light, where an unidentified absorber traces the upper cloud motions. Credit: NASA/JPL-Caltech (1974).}{Concentrated $\mathrm{H_2SO_4}$ clouds span 48--70~km, made by \textbf{photochemistry} from outgassed $\mathrm{SO_2}$ ($\mathrm{SO_2} + \mathrm{O} \rightarrow \mathrm{SO_3}$, $\mathrm{SO_3} + \mathrm{H_2O} \rightarrow \mathrm{H_2SO_4}$); a sub-cloud haze reaches down to about 31~km.}
 \end{frame}
 
 \begin{frame}
@@ -289,12 +291,12 @@
 \end{frame}
 
 \begin{frame}
-  \ipshero[0.76]{jupiter_zonal_winds}{Jupiter's cloud-top zonal winds: alternating prograde and retrograde jets peak near 180~m\,s$^{-1}$ and reach thousands of kilometres deep. Course figure, after Garc\'ia Melendo \& S\'anchez-Lavega (2001).}
+  \ipshero[0.76]{jupiter_zonal_winds}{Jupiter's cloud-top zonal winds: alternating prograde and retrograde jets peak near 180~m\,s$^{-1}$. Course figure, after Garc\'ia Melendo \& S\'anchez-Lavega (2001).}
 \end{frame}
 
 % ── Giant planet banding ────────────────────────────────────
 \begin{frame}
-  \ipsherokeyside{jupiter_global_map}{Jupiter's global map from the Hubble OPAL programme. Credit: NASA/ESA/STScI.}{Bright \textbf{zones} are anticyclonic upwelling with cool ammonia ice tops, dark \textbf{belts} cyclonic downwelling exposing warmer layers; zonal jets flank the boundaries (Jupiter $\sim$180, Saturn $\sim$400~m\,s$^{-1}$); Juno gravity puts Jupiter's jet decay depth near 1800~km.}
+  \ipsherokeyside{jupiter_global_map}{Jupiter's global map from the Hubble OPAL programme. Credit: NASA/ESA/STScI.}{Bright \textbf{zones} are anticyclonic upwelling with cool ammonia ice tops, dark \textbf{belts} cyclonic downwelling exposing warmer layers; zonal jets flank the boundaries (Jupiter $\sim$180, Saturn $\sim$400~m\,s$^{-1}$); Juno gravity shows the jets reach about 3000~km deep (Kaspi et al.\ 2018).}
 \end{frame}
 
 
@@ -343,7 +345,7 @@
 \end{frame}
 
 \begin{frame}
-  \ipsherokey[0.62]{faint_young_sun}{(a) Equilibrium and greenhouse temperatures under the fainter Sun against the geological record of liquid water; (b) the proposed warming contributions. Course figure.}{Solutions: $\mathrm{CO_2}$ at 10 to 1000 times present, biogenic $\mathrm{CH_4}$, $\mathrm{N_2}$ at 2 to 3 times present, and a lower planetary albedo (less land, fewer clouds).}
+  \ipsherokey[0.6]{faint_young_sun}{(a) Effective temperature and surface temperature (33~K greenhouse warming added) under the fainter Sun against the geological record of liquid water; (b) the proposed warming contributions. Course figure.}{Solutions: $\mathrm{CO_2}$ at 10 to 1000 times present, biogenic $\mathrm{CH_4}$, $\mathrm{N_2}$ at 2 to 3 times present, and a lower planetary albedo (less land, fewer clouds).}
 \end{frame}
 
 \begin{frame}
@@ -372,14 +374,14 @@
 
 % ── Urey reaction ───────────────────────────────────────────
 \begin{frame}{The Urey reaction}
-  Silicate weathering draws atmospheric $\mathrm{CO_2}$ into mineral carbonates:
+  Silicate weathering, with water as the medium, draws atmospheric $\mathrm{CO_2}$ into carbonates:
   \vskip6pt
-  \keyresult{$$\mathrm{CaSiO_3} + \mathrm{CO_2} + \mathrm{H_2O} \longrightarrow \mathrm{CaCO_3} + \mathrm{SiO_2} + \mathrm{H_2O}$$}
+  \keyresult{$$\mathrm{CaSiO_3} + \mathrm{CO_2} \longrightarrow \mathrm{CaCO_3} + \mathrm{SiO_2}$$}
   \vskip6pt
   \begin{itemize}\setlength\itemsep{3pt}
-    \item $\mathrm{CO_2}$ dissolves in rain as carbonic acid ($\mathrm{H_2CO_3}$) and weathers surface silicates
-    \item Rivers carry $\mathrm{Ca}^{2+}$ and $\mathrm{HCO_3^-}$ to the oceans, where carbonate ($\mathrm{CaCO_3}$) precipitates
-    \item Carbon moves from atmosphere and ocean into the crust, until subduction and volcanism return it
+    \item $\mathrm{CO_2}$ dissolves in rain as carbonic acid and weathers silicates
+    \item Rivers carry $\mathrm{Ca}^{2+}$ and $\mathrm{HCO_3^-}$ to the ocean, where $\mathrm{CaCO_3}$ precipitates
+    \item \textbf{Plate tectonics} closes the loop: subduction and volcanism return the $\mathrm{CO_2}$
   \end{itemize}
 \end{frame}
 
@@ -413,7 +415,7 @@
 
 % ── Venus and Mars: failed thermostats ──────────────────────
 \begin{frame}
-  \ipsherokey[0.61]{thermostat_failure}{The thermostat needs liquid water and volcanism: Earth has both, Venus lost its water, Mars its volcanism. Course schematic.}{Venus lost the sink (no water, volcanic $\mathrm{CO_2}$ reached 92~bar); Mars lost the source (volcanism ceased $\sim$3~Ga, weathering and escape left $\sim$6~mbar): habitability needs active geological cycling, not sunlight alone.}
+  \ipsherokey[0.61]{thermostat_failure}{The thermostat needs liquid water and volcanism: Earth has both, Venus lost its water, Mars its volcanism and then its water. Course schematic.}{Venus lost the sink (no water, volcanic $\mathrm{CO_2}$ reached 92~bar); Mars lost the source (volcanism faded after $\sim$3~Ga, weathering and escape left $\sim$6~mbar) and today has neither: habitability needs active geological cycling, not sunlight alone.}
 \end{frame}
 
 

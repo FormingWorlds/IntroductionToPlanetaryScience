@@ -32,7 +32,7 @@ BODIES_DATA = [
     {"name": "Earth", "T": 288.0, "mu": 28.97, "g": 9.81, "H_table": 8.4, "color": "#2a6fdb"},
     {"name": "Mars", "T": 215.0, "mu": 43.3, "g": 3.72, "H_table": 11.1, "color": "#c1440e"},
     {"name": "Jupiter", "T": 165.0, "mu": 2.2, "g": 24.8, "H_table": 25.0, "color": "#c8a165"},
-    {"name": "Titan", "T": 94.0, "mu": 28.6, "g": 1.35, "H_table": 20.0, "color": "#e89242"},
+    {"name": "Titan", "T": 94.0, "mu": 27.4, "g": 1.35, "H_table": 21.0, "color": "#e89242"},
 ]
 
 
