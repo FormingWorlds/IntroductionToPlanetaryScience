@@ -6,6 +6,7 @@ as the lecture notes describe them. Schematic table figure.
 
 from __future__ import annotations
 
+import textwrap
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -42,7 +43,7 @@ def make_plot() -> plt.Figure:
         ax.text(0.9, y, body, fontsize=11, weight="bold", va="center")
         ax.add_patch(Circle((2.7, y), 0.16, facecolor=col, edgecolor="none"))
         ax.text(2.95, y, status, fontsize=10, va="center", color=col)
-        ax.text(4.5, y, note, fontsize=10, va="center")
+        ax.text(4.5, y, textwrap.fill(note, 52), fontsize=9.5, va="center", linespacing=1.15)
     fig.subplots_adjust(left=0.01, right=0.99, top=0.99, bottom=0.01)
     save_figure(fig, OUT_AVIF)
     return fig
