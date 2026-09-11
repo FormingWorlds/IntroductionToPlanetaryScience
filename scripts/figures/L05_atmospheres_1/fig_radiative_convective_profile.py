@@ -69,7 +69,7 @@ def make_plot() -> Path:
 
     # Convectively adjusted profile along dry adiabat and into stratosphere
     ax.plot(t_conv, z, linestyle="-", color="#1f77b4", lw=2.2,
-            label=r"radiative-convective profile (dry adiabat, $\approx 9.8$ K km$^{-1}$, below the tropopause)")
+            label="radiative-convective profile (dry adiabat)")
 
     # Tropopause level line and label
     ax.axhline(Z_TROPOPAUSE, color="0.55", linestyle=":", lw=1.0)
@@ -77,7 +77,7 @@ def make_plot() -> Path:
             color="0.35", va="bottom")
 
     # Stratosphere label in stable radiative region aloft
-    ax.text(310.0, 16.0, "stratosphere (radiative)", fontsize=10,
+    ax.text(330.0, 13.8, "stratosphere (radiative)", fontsize=10,
             color="0.25", ha="center", va="center", style="italic")
 
     # Convective adjustment annotation with arrow into the adjusted region
@@ -94,7 +94,7 @@ def make_plot() -> Path:
     ax.set_xlabel("Temperature", fontsize=11)
     ax.set_title("Radiative-convective equilibrium (schematic)", fontsize=12)
 
-    # Legend in the clear upper-right region
+    # Legend in the clear upper-right region, right of the stratospheric curve
     ax.legend(loc="upper right", frameon=True, facecolor="white",
               edgecolor="none", fontsize=10)
 
