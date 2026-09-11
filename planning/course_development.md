@@ -472,7 +472,7 @@ Capstone synthesis lecture. Unlike L9–L13, the structure is integration-first 
 
 ---
 
-- **Length budget (2026-09-10):** deck 41 frames (from 72), notes about 8000 words (from 9927), board sheet 5 live steps; the closing item is the TRAPPIST-1 b eclipse on one hero frame.
+- **Length budget (2026-09-10):** deck 48 frames (from 72; 41 after the cut, then figures added to concept frames), notes about 8000 words (from 9927), board sheet 5 live steps; the closing item is the TRAPPIST-1 b eclipse on one hero frame.
 
 
 ## 3. Worksheets
