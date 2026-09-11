@@ -46,13 +46,35 @@ Even when air is supersaturated, condensation does not happen instantly. Forming
 - **Homogeneous nucleation** (forming droplets from vapour alone, without any pre-existing surface) requires very high supersaturations (RH $\gg$ 100%) and is extremely rare in planetary atmospheres.
 - **Heterogeneous nucleation** (condensation onto pre-existing particles called **condensation nuclei**: dust grains, volcanic aerosols, sea salt, soot, cosmic ray ions) occurs at much lower supersaturations (RH $\gtrsim$ 100%) and is the dominant cloud formation mechanism on all planets.
 
-The availability of condensation nuclei therefore controls where and how easily clouds form. On Earth, the oceans and biosphere provide abundant nuclei. On Mars, wind-lofted mineral dust serves the same role. On the giant planets, **photochemical** hazes, aerosol particles formed when ultraviolet sunlight breaks apart atmospheric molecules whose fragments recombine into new compounds, provide nuclei for cloud formation deeper down.
+The availability of condensation nuclei therefore controls where and how easily clouds form. On Earth, the oceans and biosphere provide abundant nuclei. On Mars, wind-lofted mineral dust serves the same role. On the giant planets, **photochemical** hazes, aerosol particles formed when ultraviolet sunlight breaks apart atmospheric molecules whose fragments recombine into new compounds, provide nuclei for cloud formation deeper down. How solute condensation nuclei lower the supersaturation barrier relative to homogeneous nucleation is shown by the Köhler curves in {numref}`fig:kohler-curves`.
+
+```{figure} figures/kohler_curves.avif
+:name: fig:kohler-curves
+:width: 550px
+:align: center
+
+Köhler curves: equilibrium supersaturation $S - 1$ at which a solution droplet of radius $r$ neither grows nor evaporates.
+The dashed black curve is the pure-water Kelvin term, $S = 1 + A/r$, which formalises the energy cost of homogeneous nucleation: the equilibrium supersaturation is already $S - 1 \approx 12\%$ at $r = 10^{-2}\,\mu$m and climbs toward $\sim$100% at the nanometre scale of freshly formed embryos, far beyond anything sustained in planetary atmospheres.
+The coloured curves show the Köhler form $S = 1 + A/r - B/r^3$ for solution droplets condensed on dry condensation nuclei (CCN) of three solute masses spanning the typical atmospheric range, $m_s = 10^{-16}$, $10^{-15}$, and $10^{-14}$ g {cite:p}`Pruppacher1997`.
+The Raoult term $-B/r^3$ pushes the equilibrium curve below the Kelvin curve, so heterogeneous nucleation activates at peak supersaturations of only $\sim$0.04-0.4%, easily reached in adiabatically cooled updraughts.
+This is why heterogeneous nucleation dominates on every planet with abundant aerosols.
+Adapted from the formulation in {cite:p}`Catling2017`. Course-original figure.
+```
 
 ### The lifting condensation level
 
 As an air parcel rises through the troposphere, it cools at the dry adiabatic lapse rate $\Gamma_d = g/c_p$ (Eq. {eq}`eq:dry-adiabat` from {ref}`Lecture 5 <lecture05>`). Its vapour pressure remains roughly constant (since the mass of vapour is conserved during adiabatic ascent), but $P_{\mathrm{sat}}(T)$ decreases as the temperature drops. At the altitude where the parcel temperature has cooled enough that $P_{\mathrm{vapour}} = P_{\mathrm{sat}}(T)$, condensation begins. This altitude is the **lifting condensation level (LCL)** and marks the cloud base.
 
-Above the LCL, the rising parcel releases **latent heat** as vapour condenses, warming the parcel relative to the dry adiabat. This gives the **moist adiabatic lapse rate**, which is shallower than the dry adiabat ($\sim$9.8 K km$^{-1}$): a representative value in Earth's warm lower troposphere is $\sim$5 K km$^{-1}$, and the observed tropospheric mean of $\sim$6.5 K km$^{-1}$ lies between the two limits ({ref}`Lecture 5 <lecture05>`). The latent heat release also provides buoyancy, driving vigorous convection in moist atmospheres: the mechanism behind thunderstorms, hurricanes, and the towering cumulonimbus clouds on Earth.
+Above the LCL, the rising parcel releases **latent heat** as vapour condenses, warming the parcel relative to the dry adiabat. This gives the **moist adiabatic lapse rate**, which is shallower than the dry adiabat ($\sim$9.8 K km$^{-1}$): a representative value in Earth's warm lower troposphere is $\sim$5 K km$^{-1}$, and the observed tropospheric mean of $\sim$6.5 K km$^{-1}$ lies between the two limits ({ref}`Lecture 5 <lecture05>`). The latent heat release also provides buoyancy, driving vigorous convection in moist atmospheres: the mechanism behind thunderstorms, hurricanes, and the towering cumulonimbus clouds on Earth ({numref}`fig:cumulonimbus-anvil`).
+
+```{figure} figures/cumulonimbus_anvil.avif
+:name: fig:cumulonimbus-anvil
+:width: 560px
+:align: center
+
+A cumulonimbus cloud spreading into a flat **anvil** (incus) at its top, seen from above the surrounding cloud deck. Latent heat released by condensing water vapour keeps the rising air warmer than its surroundings and drives the convective tower upward. The tower climbs until it reaches the tropopause, where the stable stratosphere above stops the ascent and the cloud spreads sideways into the anvil. The anvil top therefore marks the altitude where convective buoyancy ends.
+Credit: Eulenjäger, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons.
+```
 
 ### Cloud types depend on the condensing species
 
@@ -208,7 +230,17 @@ Every planet and moon with a substantial atmosphere has clouds, but the condensi
 
 Venus is permanently shrouded in thick clouds that completely obscure the surface at visible wavelengths. These clouds are composed of $\mathrm{H_2SO_4}$ (sulfuric acid) droplets and extend from $\sim$48 km to $\sim$70 km altitude, spanning a temperature range of roughly 360–230 K between cloud base and cloud top {cite:p}`Catling2017`.
 
-The cloud deck completely obscures the surface in visible light; UV imaging reveals the banded pattern produced by **super-rotation**, the clouds circling the planet far faster than the solid surface rotates beneath them. The sulfuric acid is produced by **photochemistry** in the upper atmosphere:
+The cloud deck completely obscures the surface in visible light; UV imaging reveals the banded pattern produced by **super-rotation**, the clouds circling the planet far faster than the solid surface rotates beneath them ({numref}`fig:venus-uv-clouds`). The sulfuric acid is produced by **photochemistry** in the upper atmosphere:
+
+
+```{figure} figures/venus_uv_clouds.avif
+:name: fig:venus-uv-clouds
+:figwidth: 100%
+:width: 100%
+:align: center
+
+Venus imaged by the *Mariner 10* spacecraft in February 1974, using a false-colour composite of orange and ultraviolet filters to reveal the banded cloud structure driven by atmospheric super-rotation. The $\mathrm{H_2SO_4}$ cloud deck extends from $\sim$48 to $\sim$70 km altitude and completely obscures the surface. Credit: NASA/JPL-Caltech, public domain.
+```
 
 $$
 \mathrm{SO_2} + \mathrm{O} \longrightarrow \mathrm{SO_3}, \qquad \mathrm{SO_3} + \mathrm{H_2O} \longrightarrow \mathrm{H_2SO_4}
@@ -230,13 +262,43 @@ Course-original figure.
 
 ### Mars: dust and ice clouds
 
-Mars's thin atmosphere ($\sim$6 mbar surface pressure) supports high-altitude $\mathrm{CO_2}$ ice clouds and lower $\mathrm{H_2O}$ ice clouds nucleated on wind-lofted mineral dust.
+Mars's thin atmosphere ($\sim$6 mbar surface pressure) supports high-altitude $\mathrm{CO_2}$ ice clouds and lower $\mathrm{H_2O}$ ice clouds nucleated on wind-lofted mineral dust. An orbital view of such water-ice clouds draped across the Tharsis volcanoes is shown in {numref}`fig:mars-water-ice-clouds`.
+
+```{figure} figures/mars_water_ice_clouds.avif
+:name: fig:mars-water-ice-clouds
+:figwidth: 100%
+:width: 100%
+:align: center
+
+Water-ice clouds over the Tharsis region of Mars near dawn, viewed along the limb from orbit. The dark peak breaking through the bright cloud canopy (left of centre) is the summit of the shield volcano **Arsia Mons**. These are the $\mathrm{H_2O}$ ice clouds described above. They form when air cools as it rises over the high volcanic terrain, and again near the equator when the seasonal aphelion cloud belt develops. The panorama was recorded by the THEMIS instrument on NASA's *Mars Odyssey* orbiter on 2 May 2025.
+Credit: NASA/JPL-Caltech/ASU, public domain.
+```
 
 ### Titan: methane rain
 
-Saturn's moon Titan hosts the only known active **hydrological cycle** beyond Earth, but with $\mathrm{CH_4}$ (methane) playing the role of water. Titan's surface temperature ($\sim$94 K) and pressure ($\sim$1.5 bar) place it near the triple point of methane, enabling liquid methane on the surface (lakes and seas), methane clouds in the troposphere, and methane rain {cite:p}`dePaterLissauer2010`.
+Saturn's moon Titan hosts the only known active **hydrological cycle** beyond Earth, but with $\mathrm{CH_4}$ (methane) playing the role of water. Titan's surface temperature ($\sim$94 K) and pressure ($\sim$1.5 bar) place it near the triple point of methane, enabling liquid methane on the surface (lakes and seas), methane clouds in the troposphere, and methane rain {cite:p}`dePaterLissauer2010`. Streaks of these tropospheric methane clouds appear in {numref}`fig:titan-clouds`.
 
-Titan's clouds are mostly $\mathrm{CH_4}$ (condensing at $\sim$8–30 km altitude) with some $\mathrm{C_2H_6}$ (ethane); infrequent but intense methane rain feeds surface lakes and river channels {cite:p}`Stofan2007` ({ref}`Lecture 11 <lecture11>`).
+```{figure} figures/titan_clouds.avif
+:name: fig:titan-clouds
+:width: 480px
+:align: center
+
+Methane-ethane clouds at Titan's mid-southern latitudes captured by the *Cassini* Imaging Science Subsystem in the 938 nm methane window.
+The bright streaks near the limb are tropospheric clouds organised along the local zonal (east-west) wind, which shows that Titan supports an active condensation cycle of the same Clausius-Clapeyron physics described in this lecture, but with $\mathrm{CH_4}$ replacing $\mathrm{H_2O}$ at $T \approx 90$ K.
+Credit: NASA/JPL-Caltech/Space Science Institute, public domain.
+```
+
+Titan's clouds are mostly $\mathrm{CH_4}$ (condensing at $\sim$8–30 km altitude) with some $\mathrm{C_2H_6}$ (ethane); infrequent but intense methane rain feeds surface lakes and river channels {cite:p}`Stofan2007` ({ref}`Lecture 11 <lecture11>`). The radar-dark polar lakes and seas formed by this runoff are shown in {numref}`fig:titan-lakes`.
+
+```{figure} figures/titan_lakes.avif
+:name: fig:titan-lakes
+:width: 550px
+:align: center
+
+Titan's north polar lake district imaged by the *Cassini* RADAR instrument. The first detection {cite:p}`Stofan2007` resolved more than 75 radar-dark lake-like patches poleward of $\sim$70°N latitude, ranging from 3 to over 70 km across; subsequent Cassini RADAR coverage of the high-latitude seas mapped the three largest *maria*: *Kraken Mare*, *Ligeia Mare*, and *Punga Mare*, each hundreds of kilometres across, here interpreted as standing bodies of liquid methane and ethane.
+Together with the methane-cloud observations and inferred rainfall, these lakes constitute the visible surface end of the only active hydrocarbon hydrological cycle in the solar system.
+Credit: NASA/JPL-Caltech/ASI/USGS, public domain.
+```
 
 ### Giant planets: layered cloud structure
 
@@ -255,6 +317,20 @@ The vertical layering of these three cloud decks is sketched in {numref}`fig:jup
 :align: center
 
 Temperature–pressure profile of Jupiter's atmosphere, showing the three main cloud layers: ammonia ($\mathrm{NH_3}$) ice at the top ($\sim$1 bar), ammonium hydrosulfide ($\mathrm{NH_4SH}$) in the middle ($\sim$2–3 bar), and water ($\mathrm{H_2O}$) at the deepest level ($\sim$5–7 bar). The **tropopause**, the boundary where temperature stops falling with altitude and convective mixing gives way to a stably stratified layer above, sits at $\sim$50 km, and the stratosphere-thermosphere boundary at $\sim$320 km is marked as well. Each cloud layer forms where the local temperature crosses the saturation curve for that species. Credit: Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+```
+
+The visible cloud-band morphology produced by these layers across Jupiter's full disk is shown in {numref}`fig:jupiter-global-map`.
+
+```{figure} figures/jupiter_global_map.avif
+:name: fig:jupiter-global-map
+:width: 480px
+:align: center
+
+Full-disk portrait of Jupiter from the Hubble Space Telescope, observed on 4 September 2021 as part of the Outer Planets Atmospheres Legacy (OPAL) programme.
+The banded structure is clear: light *zones* (rising air topped by high $\mathrm{NH_3}$-ice clouds) alternate with dark *belts* (sinking air that exposes the deeper $\mathrm{NH_4SH}$ layer).
+The Great Red Spot appears at $\sim$22°S, just south of the dark South Equatorial Belt.
+These narrow latitudinal contrasts trace the alternating zonal-jet system that long-term Hubble programmes have monitored for over a decade {cite:p}`Wong2020`; the jets extend to $\sim \pm 60^\circ$ and are summarised quantitatively below.
+Credit: NASA, ESA, A. Simon (GSFC), M. H. Wong (UC Berkeley), and the OPAL team; ESA/Hubble, [CC BY 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 ```
 
 The ice giants **Uranus** and **Neptune** have a different cloud hierarchy topped by $\mathrm{CH_4}$ ice at $T \sim 80$ K with deeper $\mathrm{H_2S}$, $\mathrm{NH_4SH}$, and $\mathrm{H_2O}$ layers.
@@ -330,7 +406,18 @@ The number of circulation cells depends critically on the planet's rotation rate
 - **Moderately rotating planets** (Earth): The Hadley cell extends to $\sim$30° latitude, where the Coriolis deflection becomes strong enough to break the cell. Two additional cells form at higher latitudes: the **Ferrel cell** (mid-latitudes, driven indirectly by the Hadley and polar cells) and the **polar cell**. Earth has three cells per hemisphere.
 - **Rapidly rotating planets** (Jupiter, Saturn): Many alternating cells form, producing the characteristic **banded structure** of alternating light zones (rising air, high clouds) and dark belts (sinking air, deeper cloud exposure). Jupiter and Saturn each show many alternating jets per hemisphere, extending to roughly $\pm 60^\circ$ latitude.
 
-The transition between regimes is governed by the ratio of the planet's rotation timescale to the advective timescale across the planet. When rotation is fast compared to the time for air to flow from equator to pole, the flow breaks up into multiple cells.
+The transition between regimes is governed by the ratio of the planet's rotation timescale to the advective timescale across the planet. When rotation is fast compared to the time for air to flow from equator to pole, the flow breaks up into multiple cells. The resulting overturning circulation for a moderately rotating planet like Earth, showing the Hadley, Ferrel, and polar cells in latitude and altitude, is illustrated by the meridional streamfunction in {numref}`fig:hadley-observed`.
+
+```{figure} figures/hadley_observed.avif
+:name: fig:hadley-observed
+:width: 600px
+:align: center
+
+Idealised zonal-mean meridional streamfunction of Earth's troposphere, plotted as latitude versus altitude.
+Solid blue contours mark clockwise overturning in this latitude-altitude view, the sense of the Northern-Hemisphere Hadley cell (rising at the equator, poleward aloft, sinking near 30°); dashed red contours mark counter-clockwise overturning, arrows on the two Hadley cells show the flow direction, and the dashed black line indicates the tropopause.
+The two thermally direct Hadley cells flank the equator from the surface to $\sim$15 km, the indirect Ferrel cells lie between $\sim$30° and $\sim$60° in each hemisphere, and the weak polar cells sit poleward of $\sim$60°.
+The cell structure follows the {cite:t}`Held1980` axisymmetric theory of nearly inviscid atmospheres. Course-original figure.
+```
 
 ## Geostrophic balance and jet streams
 
@@ -362,7 +449,7 @@ where $x$ and $y$ are the eastward and northward directions, respectively.
 :width: 480px
 :align: center
 
-Geostrophic balance between the horizontal pressure-gradient force ($-\nabla P / \rho$, blue arrow) and the Coriolis force ($-f \hat{k} \times \mathbf{v}_g$, red arrow), giving a wind $\mathbf{v}_g$ that blows parallel to the isobars rather than down the pressure gradient. In the Northern Hemisphere the balanced wind keeps low pressure to its left. This is the dominant balance for large-scale flow on Earth and the giant planets ({numref}`fig:jupiter-zonal-winds`) where the Rossby number is small. Course-original figure.
+Geostrophic balance between the horizontal pressure-gradient force ($-\nabla P / \rho$, blue arrow) and the Coriolis force ($-f \hat{k} \times \mathbf{v}_g$, red arrow), giving a wind $\mathbf{v}_g$ that blows parallel to the isobars rather than down the pressure gradient. In the Northern Hemisphere the balanced wind keeps low pressure to its left. This is the dominant balance for large-scale flow on Earth and the giant planets (discussed below) where the Rossby number is small. Course-original figure.
 ```
 
 ### Jet streams
@@ -373,7 +460,17 @@ $$
 \pdv{\mathbf{v}_g}{z} \propto \hat{k} \times \nabla T
 $$
 
-Where the temperature gradient between the warm tropics and the cold poles is steepest (at $\sim$30° and $\sim$60° latitude on Earth), the wind speed increases with altitude, producing the subtropical and polar jet streams. These jet streams steer weather systems across the planet and are critical for understanding weather patterns.
+Where the temperature gradient between the warm tropics and the cold poles is steepest (at $\sim$30° and $\sim$60° latitude on Earth), the wind speed increases with altitude, producing the subtropical and polar jet streams. These jet streams steer weather systems across the planet and are critical for understanding weather patterns ({numref}`fig:earth-jet-stream`).
+
+```{figure} figures/earth_jet_stream.avif
+:name: fig:earth-jet-stream
+:width: 600px
+:align: center
+
+An Earth-from-orbit astronaut photograph showing long cirrus filaments streaked across the limb above a dark sea and coastline.
+Such aligned cirrus bands trace the upper-tropospheric jet core at $\sim$200-250 hPa, where horizontal temperature gradients drive thermal-wind shear of order 30-70 m s$^{-1}$; weather systems are steered along the layer in which these filaments form.
+Credit: NASA astronaut photograph, Johnson Space Center, public domain.
+```
 
 ### Giant planet banding
 
@@ -396,7 +493,15 @@ Planets and moons exhibit a stunning variety of weather phenomena, from gentle b
 
 ### Mars: dust storms and seasonal cycles
 
-Mars experiences dramatic weather driven by a seasonal $\mathrm{CO_2}$ cycle where polar cap condensation and sublimation swing atmospheric mass by $\sim$25–30% (from $\sim$5 to $\sim$7 mbar), while positive radiative feedback from wind-lofted mineral dust triggers global dust storms ({ref}`Lecture 10 <lecture10>`) {cite:p}`Catling2017`.
+Mars experiences dramatic weather driven by a seasonal $\mathrm{CO_2}$ cycle where polar cap condensation and sublimation swing atmospheric mass by $\sim$25–30% (from $\sim$5 to $\sim$7 mbar), while positive radiative feedback from wind-lofted mineral dust triggers global dust storms ({ref}`Lecture 10 <lecture10>`) {cite:p}`Catling2017`. The resulting global obscuration is shown for the 2018 event in {numref}`fig:mars-dust-storm`.
+
+```{figure} figures/mars_dust_storm.avif
+:name: fig:mars-dust-storm
+:width: 550px
+:align: center
+
+Mars before and during the 2018 global dust storm, as imaged by the Mars Reconnaissance Orbiter. The left panel shows clear atmospheric conditions with surface features visible; the right panel shows the planet almost completely obscured by wind-lofted mineral dust. The storm ultimately ended the *Opportunity* rover's 15-year mission by blocking sunlight to its solar panels. Credit: NASA/JPL-Caltech/MSSS, public domain.
+```
 
 ### Venus: super-rotation
 
@@ -414,9 +519,30 @@ Averaged zonal (top) and meridional (bottom) wind profiles in Venus's southern h
 
 ### Jupiter: the Great Red Spot
 
-Jupiter's **Great Red Spot (GRS)** is the largest and longest-lived storm in the solar system: an anticyclonic vortex larger than Earth, with winds reaching $\sim$120 m s$^{-1}$ at its periphery, observed continuously since 1830.
+Jupiter's **Great Red Spot (GRS)** is the largest and longest-lived storm in the solar system: an anticyclonic vortex larger than Earth, with winds reaching $\sim$120 m s$^{-1}$ at its periphery, observed continuously since 1830 ({numref}`fig:jupiter-grs`).
 
-The GRS is sustained between opposing zonal jets by absorbing smaller vortices and latent heat release {cite:p}`dePaterLissauer2010`, while Juno reveals stable polygonal clusters of circumpolar cyclones at both poles {cite:p}`Adriani2018` ({ref}`Lecture 11 <lecture11>`).
+```{figure} figures/jupiter_great_red_spot.avif
+:name: fig:jupiter-grs
+:width: 500px
+:align: center
+
+Jupiter's Great Red Spot and surrounding turbulent atmosphere, imaged by NASA's *Juno* spacecraft during a close flyby. The Great Red Spot is an anticyclonic storm larger than Earth that has persisted for centuries. The surrounding vortices and chaotic cloud patterns reveal the intense turbulence of Jupiter's upper troposphere. Credit: NASA/JPL-Caltech/SwRI/MSSS, public domain.
+```
+
+The GRS is sustained between opposing zonal jets by absorbing smaller vortices and latent heat release {cite:p}`dePaterLissauer2010`, while Juno reveals stable polygonal clusters of circumpolar cyclones at both poles ({numref}`fig:juno-polar-cyclones`) {cite:p}`Adriani2018` ({ref}`Lecture 11 <lecture11>`).
+
+```{figure} figures/juno_polar_cyclones.avif
+:name: fig:juno-polar-cyclones
+:width: 480px
+:align: center
+
+Polar cyclone cluster at Jupiter's north pole imaged by the JIRAM infrared spectrometer on NASA's *Juno* spacecraft.
+A central cyclone is encircled by eight smaller cyclones in a stable octagonal arrangement, which shows that Jupiter's atmospheric dynamics produce coherent polygonal vortex patterns analogous to Saturn's polar hexagonal jet.
+The cyclones have remained in this configuration over multiple Juno **perijoves** (the spacecraft's closest approaches to Jupiter on each orbit) spanning several years, far longer than any Earth analogue.
+At the south pole, a pentagonal cluster of five circumpolar cyclones remained remarkably stable through perijove 18 (February 2019) {cite:p}`Adriani2020`; a sixth cyclone briefly joined the southern pentagon in late 2019 but dissipated within about two months without merging, leaving the pentagonal arrangement intact {cite:p}`Mura2021`.
+Adapted from {cite:t}`Adriani2018`.
+Credit: NASA/JPL-Caltech/SwRI/ASI/INAF/JIRAM, public domain.
+```
 
 ### Saturn: the hexagonal jet stream
 
@@ -439,7 +565,18 @@ Saturn also experiences periodic **Great White Storms** roughly every 30 years (
 
 ### Neptune: extreme weather on a cold world
 
-Despite receiving only $\sim$1/900th of Earth's solar flux, Neptune sustains the fastest winds in the solar system, with a retrograde equatorial jet reaching $\sim$400 m s$^{-1}$ {cite:p}`Smith1989`, driven by an internal heat excess that also powers transient dark spot storms ({ref}`Lecture 11 <lecture11>`).
+Despite receiving only $\sim$1/900th of Earth's solar flux, Neptune sustains the fastest winds in the solar system, with a retrograde equatorial jet reaching $\sim$400 m s$^{-1}$ {cite:p}`Smith1989`, driven by an internal heat excess that also powers transient dark spot storms ({ref}`Lecture 11 <lecture11>`). The prominent anticyclonic storm imaged during the Voyager 2 flyby is shown in {numref}`fig:neptune-dark-spot`.
+
+```{figure} figures/neptune_great_dark_spot.avif
+:name: fig:neptune-dark-spot
+:width: 400px
+:align: center
+
+Neptune's *Great Dark Spot* (centre-left, with bright "scooter" cloud feature below) and *Dark Spot 2* (lower right), imaged by *Voyager 2* in August 1989.
+The Great Dark Spot was a high-pressure anticyclone roughly the size of Earth. The adjacent zonal flow (Neptune's equatorial retrograde jet reaches $\sim 400$ m s$^{-1}$, the fastest winds measured in the solar system) helped confine and transport the storm.
+Hubble follow-up imaging just a few years later showed that the original Great Dark Spot had dissipated and new dark spots had appeared elsewhere on the planet, which shows that Neptune's storms are far more transient than Jupiter's GRS.
+Credit: NASA/JPL-Caltech, public domain.
+```
 
 ## Climate evolution and the faint young Sun
 
@@ -498,7 +635,18 @@ The most likely resolution is a combination of elevated $\mathrm{CO_2}$ and $\ma
 
 ### The Mars climate puzzle
 
-Despite receiving less than half of Earth's solar flux, early Mars shows compelling geological evidence for warm, wet conditions during the Noachian period ($>3.7$ Ga) with valley networks carved by flowing water {cite:p}`Wordsworth2016` ({ref}`Lecture 10 <lecture10>`).
+Despite receiving less than half of Earth's solar flux, early Mars shows compelling geological evidence for warm, wet conditions during the Noachian period ($>3.7$ Ga) with valley networks carved by flowing water ({numref}`fig:mars-valleys`) {cite:p}`Wordsworth2016` ({ref}`Lecture 10 <lecture10>`).
+
+```{figure} figures/mars_valley_networks.avif
+:name: fig:mars-valleys
+:width: 600px
+:align: center
+
+Perspective view of an ancient valley network in the Noachian highlands of Mars, derived from the *Mars Express* High Resolution Stereo Camera (HRSC) digital terrain model.
+The dendritic, river-like channel pattern requires sustained surface runoff and is incompatible with the present-day Mars climate, where mean surface temperature is $\sim$215 K and surface pressure is below the triple point of water.
+Such networks are among the strongest geological constraints on the warm-wet Noachian climate problem discussed by {cite:t}`Wordsworth2016`.
+Credit: ESA / DLR / FU Berlin (G. Neukum), CC BY-SA 3.0 IGO.
+```
 
 ### Orbital forcing: Milankovitch cycles
 
@@ -535,7 +683,16 @@ The stability of a planet's climate depends on **feedback mechanisms**, processe
 
 #### Snowball Earth and climate bistability
 
-The ice-albedo feedback is the clearest case of how a single feedback can give a planet more than one stable climate. Taken to its extreme it produces a **snowball Earth**, a state in which ice and snow cover almost the whole surface, from the poles to the equator. The evidence is geological: glacial deposits laid down at tropical latitudes show that Earth entered such states around 717 and 635 Ma {cite:p}`Hoffman1998,Hoffman2017`.
+The ice-albedo feedback is the clearest case of how a single feedback can give a planet more than one stable climate. Taken to its extreme it produces a **snowball Earth** ({numref}`fig:snowball-earth`), a state in which ice and snow cover almost the whole surface, from the poles to the equator. The evidence is geological: glacial deposits laid down at tropical latitudes show that Earth entered such states around 717 and 635 Ma {cite:p}`Hoffman1998,Hoffman2017`.
+
+```{figure} figures/snowball_earth.avif
+:name: fig:snowball-earth
+:width: 560px
+:align: center
+
+Artist's impression of a fully ice-covered "snowball" Earth, with the continents buried under ice and only faint outlines showing through. A bright frozen surface reflects most of the incoming sunlight, which is what makes the snowball state so stable.
+Credit: Oleg Kuznetsov (3depix.com), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+```
 
 A planet's surface temperature settles where the sunlight it absorbs equals the thermal radiation it emits to space. {numref}`fig:snowball-bistability` plots both terms against surface temperature $T$, and the two behave very differently. The emitted radiation (red) follows the grey-body law $\varepsilon \sigma T^4$ and rises smoothly and steeply with temperature, because a warmer surface always radiates more. The absorbed sunlight (blue) is $(1 - \alpha(T))\,S/4$, where $S$ is the stellar flux and $\alpha(T)$ the planetary albedo, so its temperature dependence enters only through the albedo. That albedo is not fixed: a frozen surface is bright ($\alpha \approx 0.6$), an ice-free surface dark ($\alpha \approx 0.3$). As the planet warms through the freezing range and its ice retreats, the albedo falls, so the blue curve climbs steeply across a narrow band of temperature and is nearly flat on either side of it.
 
@@ -574,7 +731,7 @@ The net effect is to **draw $\mathrm{CO_2}$ out of the atmosphere** and lock it 
 
 ### Volcanic outgassing: the carbon source
 
-The cycle is closed by **plate tectonics**. Carbonate-bearing ocean floor is subducted into the mantle, where high temperatures and pressures decompose the carbonates, releasing $\mathrm{CO_2}$. This $\mathrm{CO_2}$ is returned to the atmosphere through **volcanic outgassing**, the long-term carbon *source*.
+The cycle is closed by **plate tectonics**. Carbonate-bearing ocean floor is subducted into the mantle, where high temperatures and pressures decompose the carbonates, releasing $\mathrm{CO_2}$. This $\mathrm{CO_2}$ is returned to the atmosphere through **volcanic outgassing**, the long-term carbon *source*. The modern plate-tectonic pathways that close the loop are shown in.
 
 ### The negative feedback
 
@@ -592,7 +749,16 @@ $$ (eq:weathering-rate)
 
 where $W_0$ is the weathering rate at a reference temperature $T_0$ and $T_e$ is an *$e$-folding temperature*. For Earth $T_e \approx 10$ K, a value that absorbs both the Arrhenius kinetics of the mineral reactions and the increase in runoff with temperature. Two consequences follow directly. Doubling the weathering rate requires a warming of $T_e \ln 2 \approx 7$ K, and halving it requires a cooling of the same amount; the feedback is therefore strong enough to matter but gentle enough that the planet is not driven to an extreme by a small perturbation. And in steady state the sink must match the source, $W = V$, where $V$ is the volcanic outgassing rate. It is that balance, not the total carbon inventory, which fixes the atmospheric $p\mathrm{CO_2}$ of a planet: raise the volcanic supply and the atmosphere warms only until weathering has sped up enough to remove the extra carbon again.
 
-This thermostat operates on geological timescales of $\sim 10^5$–$10^6$ yr, long by human standards but short compared to geological time. It is the primary reason Earth has maintained habitable surface temperatures for over 4 billion years despite the 30% increase in solar luminosity. The geologic cycle as a whole is summarised in {numref}`fig:carbonate-silicate-cycle`; the modern plate-tectonic version of the loop is reviewed by {cite:t}`Foley2024`.
+This thermostat operates on geological timescales of $\sim 10^5$–$10^6$ yr, long by human standards but short compared to geological time. It is the primary reason Earth has maintained habitable surface temperatures for over 4 billion years despite the 30% increase in solar luminosity. The geologic cycle as a whole is summarised in {numref}`fig:carbonate-silicate-cycle`; the modern plate-tectonic version of the loop is reviewed by {cite:t}`Foley2024` and drawn in {numref}`fig:walker-loop`.
+
+
+```{figure} figures/foley2024_carbonate_silicate.avif
+:name: fig:walker-loop
+:width: 700px
+:align: center
+
+Schematic diagram of the carbonate-silicate cycle as it operates on the modern-day, plate-tectonic Earth. $\mathrm{CO_2}$ released from the mantle by arc, ridge, and plume volcanism enters the atmosphere; silicate weathering and carbonate precipitation transfer carbon from the atmosphere to the crust; hydrothermal alteration of seafloor basalts (seafloor weathering) is a secondary sink; subduction returns carbon to the mantle. Negative feedback: higher temperature accelerates weathering, drains atmospheric $\mathrm{CO_2}$, cools the climate. The loop fails on Venus, which lost its liquid water, and on Mars, whose volcanic return path shut down as the interior cooled, as discussed below. Reproduced from {cite:p}`Foley2024`, Fig. 6.
+```
 
 ```{figure} figures/carbonate_silicate_cycle.avif
 :name: fig:carbonate-silicate-cycle
