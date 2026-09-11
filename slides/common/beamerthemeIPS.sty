@@ -229,6 +229,22 @@
 \newcommand{\source}[1]{\par\vspace{-4pt}{\tiny\color{ipsText!60} Credit: #1}}
 \newcommand{\sourcenote}[1]{{\tiny\color{ipsText!60} Source: #1}}
 
+% ── Hero frames ─────────────────────────────────────────────
+% One image alone on the frame with a one-line caption; the figure takes
+% about 0.80 of the frame height. \ipshero[height]{image}{caption}
+\newcommand{\ipshero}[3][0.80]{%
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=#1\paperheight, keepaspectratio]{#2}}\\
+  {\footnotesize #3}\par}
+% Hero with one key-result line under the caption, in a compact box so the
+% image keeps most of the frame. \ipsherokey[height]{image}{caption}{key result}
+\newcommand{\ipsherokey}[4][0.70]{%
+  \ipshero[#1]{#2}{#3}%
+  \vskip2pt
+  \begin{beamercolorbox}[rounded=true, shadow=false, sep=4pt]{block title example}
+    \small #4
+  \end{beamercolorbox}}
+
 % ── Break slide ─────────────────────────────────────────────
 % Reusable break slide (Earthrise, Apollo 8 — NASA, public domain)
 \newcommand{\breakslide}[1][]{%

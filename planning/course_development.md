@@ -91,7 +91,7 @@ Each week consists of:
 
 ### Lecture 3: Planetary Heat & Energy Transport
 
-- **Length budget (2026-09-11):** deck 70 frames (from 94; the 17 hero-and-walkthrough pairs merged into captioned heroes, 12 text frames merged into 5, the closing section on one hero and one missions frame), notes 33 figures (from 28; five course-original sketches for the subsections that had none, prose unchanged), Worksheet 2 and Mini-lecture 2 untouched.
+- **Length budget (2026-09-11):** deck 70 frames (from 94; the 17 hero-and-walkthrough pairs merged into captioned heroes, 12 text frames merged into 5, the closing section on one hero and one missions frame), notes 33 figures (from 28; five course-original sketches for the subsections that had none, prose unchanged), Worksheet 2 and Mini-lecture 2 untouched. Round 3 (2026-09-11): deck 61 frames after the declutter (hero captions one line, the figure at 0.65 to 0.80 of the frame, every frame that only summarised the preceding figure folded into one key-result line under that figure, bullet frames capped at 3 bullets, tables and derivation steps exempt); the board setup sketch joins the notes' derivation and the Goal and strategy frame.
 
 - Energy sources: accretional heating, gravitational differentiation, radioactive decay, tidal heating
 - Heat transport mechanisms: conduction, convection, radiation
@@ -117,7 +117,7 @@ Each week consists of:
 - Magnetosphere–solar wind interaction: bow shock, magnetopause, magnetotail
 - Auroral processes and radiation belts
 - Recent advances: Juno magnetometer data on Jupiter's dynamo, BepiColombo measurements of Mercury's magnetosphere, Ganymede's magnetic environment from JUICE
-- **Length budget (2026-09-11):** deck 71 frames (from 102; the 14 hero-and-walkthrough pairs merged into captioned heroes, 38 text frames merged into 17, the closing section on one missions frame and one open-questions frame), notes 37 figures (from 31; six course-original sketches for the subsections that had none, prose unchanged apart from one lead-in sentence per figure), Worksheet 2 and Mini-lecture 2 untouched.
+- **Length budget (2026-09-11):** deck 71 frames (from 102; the 14 hero-and-walkthrough pairs merged into captioned heroes, 38 text frames merged into 17, the closing section on one missions frame and one open-questions frame), notes 37 figures (from 31; six course-original sketches for the subsections that had none, prose unchanged apart from one lead-in sentence per figure), Worksheet 2 and Mini-lecture 2 untouched. Round 3 (2026-09-11): deck 65 frames after the same declutter as Lecture 3; the board setup sketch joins the notes' derivation and the Goal and strategy frame.
 
 ### Lecture 5: Atmospheres I — Composition, Structure, & Dynamics
 
