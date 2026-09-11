@@ -1,0 +1,8 @@
+\begin{tikzpicture}[scale=0.85, >=stealth]
+\fill[ipsLightFill] (-1.6,-1.0) rectangle (1.6,0);
+\draw[ipsPrimary, thick] (-1.6,0) -- (-1.0,0) .. controls (-0.6,-0.7) and (0.6,-0.7) .. (1.0,0) -- (1.6,0);
+\draw[<->, thin, gray] (-1.0,-0.72) -- (1.0,-0.72) node[midway, below=1pt, font=\tiny] {$D$};
+\draw[->, thick, ipsOrange] (-0.9,1.2) -- (-0.25,0.12);
+\node[font=\tiny, ipsOrange] at (-1.15,0.85) {$E$};
+\node[font=\tiny] at (1.3,-0.45) {$\rho,\ g$};
+\end{tikzpicture}

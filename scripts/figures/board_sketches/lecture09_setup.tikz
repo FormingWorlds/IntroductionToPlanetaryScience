@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=0.85, >=stealth]
+\fill[ipsLightFill] (-1.3,-1.1) rectangle (1.3,1.1);
+\draw[ipsPrimary, thick] (-1.3,-1.1) -- (1.3,-1.1);
+\node[font=\tiny, below] at (0,-1.1) {surface $T_s$};
+\draw[ipsOrange, thick, dashed] (-1.3,0.35) -- (1.3,0.35);
+\node[font=\tiny, ipsOrange, above] at (0,0.35) {$\tau \sim 1$: $T_{\mathrm{phot}}$};
+\draw[->, thick, ipsOrange] (0.95,0.4) -- (0.95,1.3) node[above, font=\tiny] {$\sigma T_{\mathrm{phot}}^4$};
+\draw[->, thin, gray] (-1.5,-1.1) -- (-1.5,1.2) node[left, font=\tiny] {$z$};
+\end{tikzpicture}

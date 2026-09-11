@@ -1,0 +1,12 @@
+\begin{tikzpicture}[scale=0.62, >=stealth]
+\draw[ipsPrimary, thick] (0,0) ellipse (1.6 and 1.0);
+\fill[ipsOrange] (1.25,0) circle (0.09) node[below=2pt, font=\tiny] {$M$};
+\fill[ipsAccent] (1.6,0) circle (0.06);
+\fill[ipsAccent] (-1.6,0) circle (0.06);
+\fill[ipsAccent] (0.55,0.94) circle (0.06);
+\draw[ipsAccent, thin] (1.25,0) -- (0.55,0.94) node[pos=0.55, right=2pt, font=\tiny] {$r$};
+\node[font=\tiny, ipsAccent, right=1pt] at (1.6,0) {$r_p$};
+\node[font=\tiny, ipsAccent, left=1pt] at (-1.6,0) {$r_a$};
+\node[font=\tiny, ipsAccent, above=1pt] at (0.55,0.94) {$m, v$};
+\draw[<->, thin, gray] (-1.6,-1.2) -- (0,-1.2) node[midway, below=1pt, font=\tiny] {$a$};
+\end{tikzpicture}

@@ -1,0 +1,10 @@
+\begin{tikzpicture}[scale=0.85, >=stealth]
+\fill[ipsLightFill] (-1.2,-0.3) rectangle (1.2,0.3);
+\draw[ipsPrimary, thick] (-1.2,-0.3) rectangle (1.2,0.3);
+\draw[->, thick, ipsAccent] (0,-0.9) -- (0,-0.35) node[midway, right=1pt, font=\tiny] {$P$};
+\draw[->, thick, ipsAccent] (0,0.9) -- (0,0.35) node[midway, right=1pt, font=\tiny] {$P + dP$};
+\draw[->, thick, ipsOrange] (0.3,0.22) -- (0.3,-0.22);
+\node[font=\tiny, ipsOrange, right] at (0.38,0) {$\rho g\,dz$};
+\draw[<->, thin, gray] (-1.45,-0.3) -- (-1.45,0.3) node[midway, left=1pt, font=\tiny] {$dz$};
+\draw[->, thin, gray] (1.6,-0.9) -- (1.6,0.9) node[above, font=\tiny] {$z$};
+\end{tikzpicture}

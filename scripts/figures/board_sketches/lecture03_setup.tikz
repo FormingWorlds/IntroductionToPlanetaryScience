@@ -1,0 +1,10 @@
+\begin{tikzpicture}[scale=0.85, >=stealth]
+\fill[ipsLightFill] (0,0) circle (1.1);
+\draw[ipsPrimary, thick] (0,0) circle (1.1);
+\fill[ipsOrange!60] (0,0) circle (0.5);
+\node[font=\tiny] at (0,0) {hot};
+\draw[->, thick, ipsOrange] (0.5,0) -- (1.5,0) node[right, font=\tiny] {$q$};
+\draw[->, thick, ipsOrange] (-0.35,0.35) -- (-1.05,1.05);
+\draw[->, thick, ipsOrange] (-0.35,-0.35) -- (-1.05,-1.05);
+\draw[<->, thin, gray] (0,-1.35) -- (1.1,-1.35) node[midway, below=1pt, font=\tiny] {$L \sim R$};
+\end{tikzpicture}

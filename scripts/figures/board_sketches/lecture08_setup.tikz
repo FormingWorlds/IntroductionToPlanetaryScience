@@ -1,0 +1,12 @@
+\begin{tikzpicture}[scale=0.85, >=stealth]
+\draw[ipsPrimary, thick] (0,0) circle (1.2);
+\fill[ipsAccent!35, even odd rule] (0,0) circle (0.68) (0,0) circle (0.6);
+\draw[->, thin, gray] (0,-1.5) -- (0,1.6) node[right, font=\tiny] {axis};
+\fill[ipsOrange] (0.42,0.5) circle (0.06);
+\draw[ipsOrange, thin] (0,0) -- (0.42,0.5);
+\node[font=\tiny, ipsOrange] at (0.36,0.16) {$r$};
+\draw[ipsOrange, thin, dashed] (0.42,0.5) -- (0,0.5);
+\node[font=\tiny, ipsOrange] at (0.2,0.68) {$r_\perp$};
+\node[font=\tiny] at (0.14,0.36) {$\theta$};
+\node[font=\tiny, ipsAccent] at (-0.55,-0.9) {shell};
+\end{tikzpicture}

@@ -1,0 +1,12 @@
+\begin{tikzpicture}[scale=0.85, >=stealth]
+\fill[ipsLightFill] (0,0) circle (1.25);
+\draw[ipsPrimary, thick] (0,0) circle (0.8);
+\draw[ipsOrange, thick, dashed] (0,0) circle (1.25);
+\node[font=\tiny] at (0,0) {planet};
+\node[font=\tiny, ipsOrange] at (0,-1.45) {exobase $r_{\mathrm{exo}}$};
+\fill[ipsAccent] (0.88,0.88) circle (0.06);
+\draw[->, thick, ipsAccent] (0.88,0.88) -- (1.45,1.45) node[right, font=\tiny] {$v > v_{\mathrm{esc}}$};
+\fill[ipsAccent] (-0.88,0.88) circle (0.06);
+\draw[->, thick, ipsAccent] (-0.88,0.88) to[bend right=70] (-1.245,0.11);
+\node[font=\tiny, ipsAccent, anchor=south east] at (-0.95,1.12) {$v < v_{\mathrm{esc}}$};
+\end{tikzpicture}

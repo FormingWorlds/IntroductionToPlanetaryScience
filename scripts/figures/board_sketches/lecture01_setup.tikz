@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=0.85, >=stealth]
+\draw[ipsPrimary, thick] (0,0) circle (1.3);
+\fill[ipsOrange] (0,0) circle (0.12) node[below=2pt, font=\tiny] {$M_\ast$};
+\fill[ipsAccent] (1.3,0) circle (0.07) node[right=1pt, font=\tiny] {$M_p$};
+\draw[<->, thin, gray] (0,-1.55) -- (1.3,-1.55) node[midway, below=1pt, font=\tiny] {$r$};
+\draw[->, thick, ipsAccent] (1.3,0) -- (1.3,0.7) node[above, font=\tiny] {$v$};
+\draw[->, thick, ipsOrange] (1.2,0) -- (0.55,0) ;
+\node[font=\tiny, ipsOrange] at (0.85,0.2) {$F_g$};
+\end{tikzpicture}
