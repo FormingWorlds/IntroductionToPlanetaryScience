@@ -279,7 +279,7 @@ This is the absolute zero of the solar system clock ({numref}`fig:l12-pb-pb` sho
 :width: 445px
 :align: center
 
-Pb-Pb isochrons for (A) the Efremovka CAI 22E, (B) an Allende chondrule (C30), and (C) an NWA 5697 chondrule (C2). Each panel plots $^{207}\mathrm{Pb}/^{206}\mathrm{Pb}$ versus $^{204}\mathrm{Pb}/^{206}\mathrm{Pb}$ for cogenetic mineral fractions; the slope of the isochron yields the absolute age. The single-isochron age for CAI 22E, $4567.35 \pm 0.28$ Myr, is consistent with the weighted-mean CAI age $4567.30 \pm 0.16$ Myr derived from multiple CAIs in the main text. The Allende chondrule is contemporaneous with CAIs to within uncertainties, while the NWA chondrule is about 2.6 Myr younger. Figure adapted from {cite:t}`Connelly2012`.
+Pb-Pb isochrons for (A) the Efremovka CAI 22E, (B) an Allende chondrule (C30), and (C) an NWA 5697 chondrule (C2). Each panel plots $^{207}\mathrm{Pb}/^{206}\mathrm{Pb}$ versus $^{204}\mathrm{Pb}/^{206}\mathrm{Pb}$ for cogenetic mineral fractions; on this inverse isochron the intercept at zero $^{204}\mathrm{Pb}/^{206}\mathrm{Pb}$ gives the radiogenic $^{207}\mathrm{Pb}/^{206}\mathrm{Pb}$ ratio, which yields the absolute age. The single-isochron age for CAI 22E, $4567.35 \pm 0.28$ Myr, is consistent with the weighted-mean CAI age $4567.30 \pm 0.16$ Myr derived from multiple CAIs in the main text. The Allende chondrule is contemporaneous with CAIs to within uncertainties, while the NWA chondrule is about 2.6 Myr younger. Figure adapted from {cite:t}`Connelly2012`.
 ```
 
 ````

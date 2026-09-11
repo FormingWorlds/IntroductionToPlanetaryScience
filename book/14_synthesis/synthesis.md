@@ -98,7 +98,7 @@ Photoevaporation by stellar XUV {cite:p}`Owen2017` and core-powered mass loss {c
 :name: fig:l14:fulton-valley
 :width: 70%
 
-The "Fulton gap" in the radius distribution of small close-in exoplanets. The two-dimensional map of planet size against incident stellar light shows a deficit of planets at $\sim 1.8\,\Rearth$ that separates a denser super-Earth population from a sub-Neptune population. The lower panel overlays the predictions of photoevaporation models, which can reproduce both the location and the slope of the valley with stellar irradiation. Reproduced from {cite:t}`Fulton2017`.
+The "Fulton gap" in the radius distribution of small close-in exoplanets. The two-dimensional map of planet size against incident stellar light shows a deficit of planets at $\sim 1.8\,\Rearth$ that separates a denser super-Earth population from a sub-Neptune population. The dashed line marks the prediction of atmospheric-loss (photoevaporation) models, which reproduce both the location and the slope of the valley with stellar irradiation; the dotted line marks a gas-poor formation model. Reproduced from {cite:t}`Fulton2017`.
 ```
 
 Meteorite reservoir separation may require Jupiter core growth within $\sim 1$ Myr of CAIs {cite:p}`Kruijer2017`.
@@ -116,7 +116,7 @@ Synthetic populations produce super-Earths, confirming that their absence in the
 :name: fig:l14:popsyn
 :width: 90%
 
-Population synthesis predictions for planet mass versus orbital period assuming planetesimal accretion (panel A) and pebble accretion (panel B). Both models populate the super-Earth, hot Jupiter, warm gas giant, and cold gas giant regimes, with super-Earth mass fractions of $\sim 35\%$ in models with pebble accretion. Reproduced from {cite:t}`Drazkowska2023`.
+Population synthesis predictions for planet mass versus orbital period from pebble accretion at low (panel B, $\alpha_\nu = 10^{-4}$) and moderate (panel C, $\alpha_\nu = 10^{-3}$) turbulence, drawn from the dust disc mass distribution of panel A. Both runs populate the super-Earth, hot Jupiter, warm gas giant, and cold gas giant regimes, with super-Earth fractions of $\sim 36\%$ and $\sim 27\%$. Reproduced from {cite:t}`Drazkowska2023`.
 ```
 
 ### The solar system overlaid on the exoplanet diagram
