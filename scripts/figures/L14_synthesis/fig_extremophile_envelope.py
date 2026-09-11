@@ -19,15 +19,15 @@ Citations and provenance:
   to subglacial lakes at -20 deg C"
 - Icy moons astrobiology targets: synthesis.md:497-498
   "Icy moons (Europa, Enceladus, Titan) became primary astrobiology targets"
-  "liquid water in contact with rock and a chemical free-energy gradient"
+  "liquid water and a chemical free-energy gradient"
 - Specification: material_13.txt:15
   "A temperature axis figure (x from -30 to 130 degrees C) showing the range
   of Earth life as a bar from -20 to 122 degrees C, with the classical
   temperate surface range (0 to 40 degrees C) as an inner bar, labelled
   environments at their temperatures (subglacial lakes -20, hydrothermal
   vents above 120), and below it a second axis row for icy-moon ocean
-  worlds (Europa, Enceladus, Titan) marked as 'liquid water in contact with
-  rock, outside the classical habitable zone'; no invented temperatures
+  worlds (Europa, Enceladus, Titan) marked as 'liquid water beneath
+  ice, outside the classical habitable zone'; no invented temperatures
   for the moons, use labels only."
 
 Caption / figure id : `fig:extremophile-envelope`
@@ -196,7 +196,7 @@ def panel_b(ax: plt.Axes) -> None:
     ax.add_patch(banner)
     ax.text(
         0.50, 0.26,
-        "liquid water in contact with rock, outside the classical habitable zone",
+        "liquid water beneath ice, outside the classical habitable zone",
         ha="center", va="center", fontsize=10, weight="bold",
         color=COLOR_BANNER_TEXT, zorder=3,
         bbox=dict(facecolor=COLOR_BANNER_BG, edgecolor="none", pad=1.5, alpha=0.9),

@@ -90,7 +90,16 @@ Jupiter's early growth may have isolated the non-carbonaceous and carbonaceous (
 Timeline of solar system formation reconstructed from isotopic dating of meteoritic materials. The non-carbonaceous (NC, red) and carbonaceous (CC, blue) reservoirs maintain distinct isotopic signatures from CAI (calcium-aluminium-rich inclusion, among the earliest solids to condense in the solar system) formation onwards, indicating that they accreted in physically separated regions of the disk for at least the first 2--3 Myr. Reproduced from {cite:t}`Lichtenberg2023`.
 ```
 
-Surveys reveal a **radius valley** at $\sim 1.8\,\Rearth$ separating super-Earths from sub-Neptunes ({ref}`Lecture 13 <lecture13>`).
+Surveys reveal a **radius valley** at $\sim 1.8\,\Rearth$ separating super-Earths from sub-Neptunes {cite:p}`Fulton2017` ({numref}`fig:l14:fulton-valley`; {ref}`Lecture 13 <lecture13>`).
+Photoevaporation by stellar XUV {cite:p}`Owen2017` and core-powered mass loss {cite:p}`Gupta2019` both predict a valley in the right location, and current data cannot yet reject either mechanism.
+
+```{figure} figures/fulton2017_radius_valley.avif
+:align: center
+:name: fig:l14:fulton-valley
+:width: 70%
+
+The "Fulton gap" in the radius distribution of small close-in exoplanets. The two-dimensional map of planet size against incident stellar light shows a deficit of planets at $\sim 1.8\,\Rearth$ that separates a denser super-Earth population from a sub-Neptune population. The lower panel overlays the predictions of photoevaporation models, which can reproduce both the location and the slope of the valley with stellar irradiation. Reproduced from {cite:t}`Fulton2017`.
+```
 
 Meteorite reservoir separation may require Jupiter core growth within $\sim 1$ Myr of CAIs {cite:p}`Kruijer2017`.
 Alternatively, the **snow line**, the disk radius where water ice condenses, divides reservoirs without an early core {cite:p}`Lichtenberg2021`.
@@ -537,7 +546,7 @@ The implication for astrobiology is that the classical HZ, defined for surface l
 Subsurface oceans on icy moons and high-pressure environments cannot be excluded on energetic grounds.
 
 Icy moons (Europa, Enceladus, Titan) became primary astrobiology targets, formalised in NASA's *Roadmap to Ocean Worlds* {cite:p}`HendrixVance2019`.
-None are in the classical HZ, yet all have liquid water in contact with rock and a chemical free-energy gradient ({ref}`Lecture 11 <lecture11>`).
+None are in the classical HZ, yet all have liquid water and a chemical free-energy gradient: Europa and Enceladus with the water in contact with rock, Titan with its ocean on a layer of high-pressure ice ({ref}`Lecture 8 <lecture08>`, {ref}`Lecture 11 <lecture11>`).
 
 {numref}`fig:extremophile-envelope` compares the temperature range of Earth life with the temperate surface conditions that the classical definition assumed.
 
@@ -547,7 +556,7 @@ None are in the classical HZ, yet all have liquid water in contact with rock and
 :width: 100%
 :align: center
 
-Extremophiles widen the definition of habitable. (a) The temperature range of Earth life, from subglacial lakes at $-20$ $^\circ$C to hydrothermal vents above $120$ $^\circ$C, compared with the temperate surface conditions that the classical definition of habitability assumed (inner bar, schematic range). (b) The icy moons Europa, Enceladus and Titan hold subsurface oceans with liquid water in contact with rock and lie outside the classical habitable zone. Course-original figure.
+Extremophiles widen the definition of habitable. (a) The temperature range of Earth life, from subglacial lakes at $-20$ $^\circ$C to hydrothermal vents above $120$ $^\circ$C, compared with the temperate surface conditions that the classical definition of habitability assumed (inner bar, schematic range). (b) The icy moons Europa, Enceladus and Titan hold subsurface oceans beneath ice and lie outside the classical habitable zone; at Europa and Enceladus the water touches rock, at Titan it rests on high-pressure ice. Course-original figure.
 ```
 
 ### Origin of life on Earth
