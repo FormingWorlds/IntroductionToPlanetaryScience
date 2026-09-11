@@ -595,7 +595,7 @@ Hot Jupiters around hot stars ($T_\mathrm{eff} > 6250$ K) show wide misalignment
 :name: fig:rmgeom
 :width: 80%
 
-Geometry of the **Rossiter-McLaughlin effect**, from the {cite:t}`Triaud2018` review chapter. As a transiting planet sequentially occults the approaching (blueshifted) and receding (redshifted) stellar hemispheres, the resulting line-profile distortion traces the sky-projected spin-orbit angle $\lambda$.
+Geometry of the **Rossiter-McLaughlin effect**, from the {cite:t}`Triaud2018` review chapter. As a transiting planet on an aligned prograde orbit sequentially occults the approaching (blueshifted) and receding (redshifted) stellar hemispheres, the resulting line-profile distortion traces the sky-projected spin-orbit angle $\lambda$.
 ```
 
 ```{figure} figures/obliquity_distribution.avif
