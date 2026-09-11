@@ -15,8 +15,16 @@
 
 Thirteen lectures have built a single argument from the bottom up.
 Lectures 1 to 8 introduced protoplanetary disks, interior evolution and differentiation, atmospheres, surfaces, and internal structure.
-Lectures 9 to 12 walked the solar system body by body: Earth and Venus ({ref}`Lecture 9 <lecture09>`), Mercury and Mars ({ref}`Lecture 10 <lecture10>`), the gas and ice giants ({ref}`Lecture 11 <lecture11>`), and small-body populations ({ref}`Lecture 12 <lecture12>`).
+Lectures 9 to 12 walked the solar system body by body: Earth and Venus ({ref}`Lecture 9 <lecture09>`), Mercury and Mars ({ref}`Lecture 10 <lecture10>`), the gas and ice giants ({ref}`Lecture 11 <lecture11>`), and small-body populations ({ref}`Lecture 12 <lecture12>`), surveying the overall architecture of our planetary system ({numref}`fig:l14:ss-architecture`).
 Lecture 13 showed how the same physics applies to several thousand planetary systems detected since 1995 {cite:p}`MayorQueloz1995`.
+
+```{figure} figures/solar_system_architecture.avif
+:name: fig:l14:ss-architecture
+:width: 750px
+:align: center
+
+Architecture of the Solar System on a logarithmic semi-major-axis scale. The eight planets and Pluto are drawn with symbol area scaled as $\log(1 + R/\Rearth)$ so that all bodies remain visible; shaded spans mark the asteroid main belt ($2.1$–$3.3$ AU), the classical Kuiper Belt ($30$–$50$ AU), and the $2.5$–$3.5$ AU range in which the solar nebula's water snow line lay, separating the rocky inner planets from the gas and ice giants. Semi-major axes and radii from {cite:t}`NSSDCPlanetaryFactSheet`. Course-original figure.
+```
 
 The thread is simple: physical processes shape planetary outcomes everywhere.
 The diversity of planets in the galaxy, and the differences between Earth, Venus, and Mars, reflect the same physical processes operating across a wide range of boundary conditions.
@@ -40,7 +48,28 @@ Accreting pebbles and planetesimals build cores that trigger runaway gas accreti
 Overview of the dust-to-planet growth processes operating in protoplanetary disks. Dust grains coagulate into pebbles whose radial drift can either be halted at pressure traps (planetesimal formation via the streaming instability) or accreted directly onto growing embryos. Larger embryos compete via runaway and oligarchic growth and, once massive enough, trigger gas envelope accretion. Reproduced from {cite:t}`Drazkowska2023`.
 ```
 
+Mass growth curves for cores growing by pebble versus planetesimal accretion are shown in {numref}`fig:l14:envelope-accretion`.
+
+```{figure} figures/lambrechts2012_core_growth.avif
+:align: center
+:name: fig:l14:envelope-accretion
+:width: 90%
+
+Mass growth of a planetary core as a function of time at three orbital radii (0.5, 5, and 50 AU), comparing pebble accretion in the drift and Hill regimes (solid lines) with classical planetesimal accretion (grey dotted lines). Pebble accretion reaches 10 Earth masses well before the typical disk lifetime, while planetesimal accretion at 5 AU takes longer than the disk lifetime. The masses of Ceres and Pluto are marked for reference. Reproduced from {cite:t}`Lambrechts2012`.
+```
+
+ALMA millimeter continuum images resolve concentric rings and gaps in protoplanetary disks, providing direct observational evidence for ongoing planet formation ({numref}`fig:l14:dsharp`).
+
+```{figure} figures/andrews2018_dsharp_gallery.avif
+:align: center
+:name: fig:l14:dsharp
+:width: 90%
+
+Gallery of 240 GHz (1.25 mm) ALMA continuum images of 20 nearby protoplanetary disks from the DSHARP large programme. Concentric rings, gaps, and asymmetric features are nearly ubiquitous, and most are interpreted as signatures of planetary growth in progress. The combination of disk substructure surveys with disk dust mass measurements provides the strongest empirical constraints on the inputs to planet formation models. Reproduced from {cite:t}`Andrews2018`.
+```
+
 Disk migration explains close-in giants and **resonant chains**, systems locked in near-integer period ratios ({ref}`Lecture 13 <lecture13>`).
+
 Jupiter's early growth may have isolated the non-carbonaceous and carbonaceous (NC-CC) meteorite reservoirs {cite:p}`Kruijer2017` ({numref}`fig:l14:nccc-timeline`).
 
 ```{figure} figures/lichtenberg2023_nccc_timeline.avif
@@ -60,8 +89,16 @@ This is unresolved and matters for whether Jupiter set the boundary conditions o
 Planets between $1$ and $4\,\Rearth$ are the most common exoplanets {cite:p}`Bryson2021`, yet the solar system contains none.
 This absence may reflect pebble blocking by Jupiter, low solid density, or stochastic history.
 
-**Population synthesis** models simulate planet formation to predict demographic outcomes.
+**Population synthesis** models simulate planet formation to predict demographic outcomes ({numref}`fig:l14:popsyn`).
 Synthetic populations produce super-Earths, confirming that their absence in the solar system requires a specific dynamical explanation.
+
+```{figure} figures/drazkowska2023_population_synthesis.avif
+:align: center
+:name: fig:l14:popsyn
+:width: 90%
+
+Population synthesis predictions for planet mass versus orbital period assuming planetesimal accretion (panel A) and pebble accretion (panel B). Both models populate the super-Earth, hot Jupiter, warm gas giant, and cold gas giant regimes, with super-Earth mass fractions of $\sim 35\%$ in models with pebble accretion. Reproduced from {cite:t}`Drazkowska2023`.
+```
 
 ### The solar system overlaid on the exoplanet diagram
 
@@ -90,7 +127,7 @@ Terrestrial planets follow the Earth-like rocky curve, while larger sub-Neptunes
 :name: fig:l14:massrad
 :width: 95%
 
-Mass-radius diagram for rocky and small exoplanets from {cite:t}`Lichtenberg2025` Fig. 2. Data points are observed exoplanets with measured masses and radii, colour-coded by equilibrium temperature into **temperate** (blue), **bistable** (light blue, able to sit in either a temperate or a runaway-greenhouse climate state), **lava** (red), and **rock-vapour** (orange) regimes; symbol shape marks **high-priority** atmospheric-characterisation targets (diamonds) and lower-priority targets (circles). Labelled planets include TRAPPIST-1 b through h, GJ 367 b, GJ 1132 b, GJ 486 b, K2-18 b, K2-141 b, LHS 1140 b, L 98-59 b/c/d, GJ 1252 b, LTT 1445 A b, and several TOI targets. Theoretical equation-of-state tracks range from **100% Fe** (bottom) through **Earth-like** rocky and **100% MgSiO$_3$**, with volatile-rich tracks for **Earth-like + 50 wt% H$_2$O**, **magma ocean + 0.1 wt%** or **5.4 wt% H$_2$O**, and a **gas-dwarf birth + H/He boil-off** curve that bounds the potential sub-Neptune population (shaded at upper left). Solar-system terrestrials sit on the Earth-like curve; exoplanets above it either retain volatile envelopes (H/He, water, or melt-water mixtures) or are otherwise reshaped by magma-ocean outgassing and photoevaporation. Reproduced from {cite:t}`Lichtenberg2025`.
+Mass-radius diagram for rocky and small exoplanets from {cite:t}`Lichtenberg2025` Fig. 2. Data points are observed exoplanets with measured masses and radii, colour-coded by equilibrium temperature into **temperate** (blue), **bistable** (light blue, able to sit in either a temperate or a runaway-greenhouse climate state), **lava** (red), and **rock-vapour** (orange) regimes; symbol shape marks **high-priority** atmospheric-characterisation targets (diamonds) and lower-priority targets (circles). Labelled planets include TRAPPIST-1 b through h, GJ 367 b, GJ 1132 b, GJ 486 b, K2-18 b, K2-141 b, LHS 1140 b, L 98-59 b/c/d, GJ 1252 b, LTT 1445 A b, and several TOI targets. Theoretical equation-of-state tracks range from **100% Fe** (bottom) through **Earth-like** rocky and **100% $\mathrm{MgSiO_3}$**, with volatile-rich tracks for **Earth-like + 50 wt% $\mathrm{H_2O}$**, **magma ocean + 0.1 wt%** or **5.4 wt% $\mathrm{H_2O}$**, and a **gas-dwarf birth + H/He boil-off** curve that bounds the potential sub-Neptune population (shaded at upper left). Solar-system terrestrials sit on the Earth-like curve; exoplanets above it either retain volatile envelopes (H/He, water, or melt-water mixtures) or are otherwise reshaped by magma-ocean outgassing and photoevaporation. Reproduced from {cite:t}`Lichtenberg2025`.
 ```
 
 ### "Is the solar system rare?"
@@ -195,8 +232,16 @@ Habitability therefore depends on evolutionary trajectories, requiring coupled c
 ### Tectonic regime and the long-term thermostat
 
 The **carbonate-silicate cycle** is Earth's long-term thermostat by balancing volcanic $\mathrm{CO_2}$ outgassing with silicate weathering and carbonate subduction ({ref}`Lecture 6 <lecture06>`, {ref}`Lecture 9 <lecture09>`).
-Warmer surface temperatures increase weathering rates, accelerating $\mathrm{CO_2}$ removal and cooling the planet.
+Warmer surface temperatures increase weathering rates, accelerating $\mathrm{CO_2}$ removal and cooling the planet ({numref}`fig:l14:carbonate-silicate`).
 On a body whose stagnant lid has cooled the interior (Mars after $\sim 1$ Ga), volcanic outgassing ceases and the thermostat loses its return path ({ref}`Lecture 7 <lecture07>`, {ref}`Lecture 10 <lecture10>`).
+
+```{figure} figures/lammer2018_carbonate_silicate.avif
+:align: center
+:name: fig:l14:carbonate-silicate
+:width: 85%
+
+Cartoon of the **carbonate-silicate cycle** on a planet with active plate tectonics. Atmospheric $\mathrm{CO_2}$ dissolves in rainwater to form weak carbonic acid, which weathers continental silicates into bicarbonate ions; rivers transport these to the ocean, where they are precipitated as carbonate rocks; subduction then returns the carbon to the mantle. Volcanism completes the cycle by outgassing fresh $\mathrm{CO_2}$. On geological timescales (of order $0.5$ Myr), this cycle stabilises the surface temperature against perturbations. Reproduced from {cite:t}`Lammer2018`.
+```
 
 This thermostat requires liquid water, active volcanism, and plate tectonic recycling.
 Venus illustrates the failure of this mechanism ({ref}`Lecture 9 <lecture09>`).
@@ -208,7 +253,16 @@ Because planetary tectonic regimes cannot be measured remotely with current or n
 
 ### Magnetic field as gatekeeper
 
-Lecture 4 and Lecture 10 showed how an active **magnetosphere**, a planetary magnetic shield, protects an atmosphere from solar-wind ion-pickup escape.
+Lecture 4 and Lecture 10 showed how an active **magnetosphere**, a planetary magnetic shield, protects an atmosphere from solar-wind ion-pickup escape; {numref}`fig:l14:magnetosphere-anatomy` shows the shape of that shield for Earth.
+
+```{figure} figures/magnetosphere_anatomy_esa.avif
+:align: center
+:name: fig:l14:magnetosphere-anatomy
+:width: 75%
+
+Anatomy of Earth's magnetosphere. The solar wind (orange arrows, arriving from the left) is slowed and deflected at the bow shock, and the shocked plasma flows around the planet through the turbulent magnetosheath. The magnetopause is the surface where the solar wind ram pressure is balanced by the magnetic pressure of Earth's field; under typical conditions it lies at the standoff distance $r_{\mathrm{mp}} \approx 10\,\Rearth$. Inside it, the dayside field is compressed, while the nightside field is stretched into the long magnetotail. Credit: [ESA](https://www.esa.int/ESA_Multimedia/Images/2026/02/Anatomy_of_Earth_s_magnetosphere), [CC BY-SA 3.0 IGO](https://creativecommons.org/licenses/by-sa/3.0/igo/).
+```
+
 Mars lost its global magnetic field early in its history, with remanent magnetization indicating dynamo activity until $\sim 3.7$ Ga near the Noachian-Hesperian boundary, later than the 4.1 to 3.9 Ga estimated from basin demagnetisation {cite:p}`Acuna1999,Mittelholz2020`.
 Mars subsequently lost most of its atmosphere to space, consistent with MAVEN constraints indicating an initially thicker $\mathrm{CO_2}$ atmosphere {cite:p}`Jakosky2018`.
 
@@ -242,7 +296,15 @@ Accretion timing also controls volatile retention.
 Planetesimals accreting within the first $\sim 1$ Myr after CAI formation are heated above the water-ice melting point by short-lived radionuclides ($^{26}\mathrm{Al}$, half-life $\sim 0.7$ Myr) and lose water by dehydration.
 Bodies accreting later beyond the snow line retain their volatiles {cite:p}`Lichtenberg2023`.
 
-The second mechanism is atmospheric escape during the magma ocean phase, where, on planets inside the runaway threshold (Type II of {cite:t}`Hamano2013`), hydrodynamic escape removes the water before the surface solidifies ({ref}`Lecture 9 <lecture09>`).
+The second mechanism is atmospheric escape during the magma ocean phase, where, on planets inside the runaway threshold (Type II of {cite:t}`Hamano2013`), hydrodynamic escape removes the water before the surface solidifies ({numref}`fig:l14:hamano-typeII`; {ref}`Lecture 9 <lecture09>`).
+
+```{figure} figures/hamano2013_typeI_typeII.avif
+:align: center
+:name: fig:l14:hamano-typeII
+:width: 70%
+
+Two distinct types of terrestrial planet defined by the {cite:t}`Hamano2013` model. Panel (a) shows magma-ocean solidification time as a function of orbital distance and instellation for a range of initial water inventories; planets inside a critical orbital distance ($\sim 0.77$ AU around a Sun-like star) cannot solidify their magma oceans before most of their water is lost to hydrodynamic escape ("Type II"), while planets further out solidify quickly and retain most of their water ("Type I"). Panel (b) shows the resulting final water inventories at the end of magma-ocean solidification. Modified from {cite:t}`Hamano2013` as reproduced in {cite:t}`Lichtenberg2023`.
+```
 
 The third mechanism is long-term mantle-atmosphere volatile exchange.
 On planets with active plate tectonics, outgassing and subduction balance to maintain steady surface inventories over billions of years.
@@ -407,7 +469,7 @@ $$
 \tau_{\rm lock} \;\sim\; \frac{\omega_0 \, a^6 \, I_p \, Q_p}{3 \, G \, M_\star^2 \, k_{2,p} \, R_p^5} \,.
 $$
 
-The strong $a^6$ dependence (an inverse-cube tidal force squared) means the answer changes by many orders of magnitude across the HZ. Plugging in Earth-like parameters ($\alpha_p \approx 0.33$, $k_{2,p} \approx 0.3$, $Q_p \approx 100$, $\omega_0 \sim 2\pi/(\text{day})$) for an Earth analogue at $a = 1$ AU around the Sun gives $\tau_{\rm lock} \sim 10^{12}$ yr, comfortably longer than the age of the universe, so an Earth analogue at 1 AU around a Sun-like star is not tidally locked. For a TRAPPIST-1 b analogue, however, $a \approx 0.011$ AU and $M_\star \approx 0.08\,\Msun$ shrink the numerator and the denominator together; the strong $a^6$ scaling dominates, so the net effect is that $\tau_{\rm lock}$ drops by many orders of magnitude to $\sim 10^7$ yr or shorter (the precise value depends on the highly uncertain $Q_p$), which is in any case far shorter than the $\sim 8$ Gyr age of the TRAPPIST-1 system. Every TRAPPIST-1 inner planet has therefore had ample time to reach a tidally locked or near-locked spin state, and the same conclusion holds for essentially every M-dwarf HZ planet known today. The 3D climate corrections in {numref}`fig:l14:shields-mdwarf-hz` are not an academic complication: they apply to the regime in which essentially all M-dwarf HZ planets sit.
+The strong $a^6$ dependence (an inverse-cube tidal force squared) means the answer changes by many orders of magnitude across the HZ. Plugging in Earth-like parameters ($\alpha_p \approx 0.33$, $k_{2,p} \approx 0.3$, $Q_p \approx 100$, $\omega_0 \sim 2\pi/(\text{day})$) for an Earth analogue at $a = 1$ AU around the Sun gives $\tau_{\rm lock} \sim 10^{12}$ yr, comfortably longer than the age of the universe, so an Earth analogue at 1 AU around a Sun-like star is not tidally locked. For a TRAPPIST-1 b analogue, however, $a \approx 0.011$ AU and $M_\star \approx 0.08\,\Msun$ shrink the numerator and the denominator together; the strong $a^6$ scaling dominates, so the net effect is that $\tau_{\rm lock}$ drops by many orders of magnitude to $\sim 10^7$ yr or shorter (the precise value depends on the highly uncertain $Q_p$), which is in any case far shorter than the $\sim 8$ Gyr age of the TRAPPIST-1 system. Every TRAPPIST-1 inner planet has therefore had ample time to reach a tidally locked or near-locked spin state, and the same conclusion holds for essentially every M-dwarf HZ planet known today. The 3D climate corrections shown above are not an academic complication: they apply to the regime in which essentially all M-dwarf HZ planets sit.
 
 **Key insight.** The HZ as derived above is a useful 1D radiative limit. It is *well-defined* as a thermodynamic boundary on the location of liquid surface water, but it is *not* a sufficient condition for habitability. Real habitability also depends on planetary boundary conditions (volatile inventory, tectonic regime, escape history, magnetic shielding, evolutionary trajectory) that the 1D HZ ignores. Part 2's coupling loop is the qualitative version of what a full 3D climate-evolution model computes quantitatively for an individual planet.
 ````
@@ -448,7 +510,15 @@ The origin of life on Earth remains an unsolved scientific problem (the Precambr
 
 The earliest direct evidence of life on Earth dates to about 3.5 Ga from microbial mat structures in Australia and South Africa.
 Possible isotopic and morphological biosignatures have been claimed at $\sim 3.8$ Ga in Isua banded iron formations {cite:p}`Mojzsis1996` and, more controversially, up to $\sim 4.3$ Ga in the Nuvvuagittuq Supracrustal Belt (minimum age $\sim 3.77$ Ga) {cite:p}`Dodd2017`.
-If validated, life arose within a few hundred Myr of the cooling of Earth's surface.
+If validated, life arose within a few hundred Myr of the cooling of Earth's surface, early in Earth's geologic history ({numref}`fig:l14:earth-eons`).
+
+```{figure} figures/earth_eons_timeline.avif
+:name: fig:l14:earth-eons
+:width: 100%
+:align: center
+
+The geologic eons and eras of Earth. **Top bar:** the four eons spanning the full $4.54$ Gyr of Earth history, with the eras of the Archean and Proterozoic marked above; note that the Hadean, Archean, and Proterozoic together (the informal "Precambrian") occupy almost $90\%$ of the timeline. **Bottom bar:** the Phanerozoic eon stretched to the full figure width, divided into the Paleozoic, Mesozoic, and Cenozoic eras at the end-Permian ($252$ Ma) and end-Cretaceous ($66$ Ma) mass extinctions. Boundary ages follow the Geologic Time Scale 2020 {cite:p}`Gradstein2020`. Course-original figure.
+```
 
 The unknown frequency of abiogenesis represents the largest uncertainty in quantitative habitability estimates, leaving $f_l$ in the Drake equation unconstrained.
 A second independent origin of life on Mars or an icy moon would provide the first empirical constraint on $f_l$.
@@ -499,7 +569,15 @@ Most candidate biosignature gases have a known abiotic production pathway under 
 - Dimethyl sulfide ($\mathrm{(CH_3)_2S}$, DMS) is the notable exception: it lacks known abiotic sources on Earth, but one could exist elsewhere.
 
 Biosignature detection is therefore an **inverse problem**: a single detection cannot prove life.
-Robust life detection requires context, gas combinations, and multi-wavelength observations that constrain planetary state, escape history, and atmospheric composition together.
+Reliable life detection requires context, gas combinations, and multi-wavelength observations that constrain planetary state, escape history, and atmospheric composition together ({numref}`fig:l14:catling-framework`).
+
+```{figure} figures/catling2018_assessment_framework.avif
+:align: center
+:name: fig:l14:catling-framework
+:width: 75%
+
+The four-component framework for assessing exoplanet biosignatures from {cite:t}`Catling2018`. The left side characterises the host star and the planet's external context; the right side characterises the planet's internal properties; the centre searches for biosignatures and tests for false positives. Each branch corresponds to a class of measurement that the next generation of telescopes is being designed to deliver. Reproduced from {cite:t}`Catling2018`.
+```
 
 ### Solar system targets for life detection
 
@@ -542,7 +620,26 @@ Both controversies drive the design of next-generation instruments and missions.
 ### Exoplanet life detection: the strategy
 
 Exoplanet life detection relies entirely on spatially unresolved transmission, emission, or reflectance spectra ({ref}`Lecture 13 <lecture13>`).
-For TRAPPIST-1 b, the degeneracy of a featureless transmission spectrum was broken by MIRI $15\,\mu\mathrm{m}$ secondary eclipse observations: a dayside brightness temperature $T_d \approx 503$ K matches the $508$ K expected for bare rock without heat redistribution ({ref}`Lecture 13 <lecture13>`).
+
+For TRAPPIST-1 b, the degeneracy of a featureless transmission spectrum was broken by MIRI $15\,\mu\mathrm{m}$ secondary eclipse observations: a dayside brightness temperature $T_d \approx 503$ K matches the $508$ K expected for bare rock without heat redistribution ({numref}`fig:l14:trappist1b`; {ref}`Lecture 13 <lecture13>`).
+
+```{figure} figures/greene2023_trappist1b_eclipse.avif
+:align: center
+:name: fig:l14:trappist1b
+:width: 80%
+
+JWST MIRI secondary eclipse light curve of TRAPPIST-1 b at 15 $\mu$m. The observed eclipse depth corresponds to a measured dayside brightness temperature of $T_d \approx 503$ K, consistent with the 508 K bare-rock zero-redistribution prediction and indicating that the planet has no thick atmosphere to redistribute heat. Reproduced from {cite:t}`Greene2023`.
+```
+
+The K2-18 b transmission spectrum in {numref}`fig:l14:k218b-spec` shows what such a molecular detection looks like.
+
+```{figure} figures/madhusudhan2023_k218b_spectrum.avif
+:align: center
+:name: fig:l14:k218b-spec
+:width: 90%
+
+JWST transmission spectrum of K2-18 b from {cite:t}`Madhusudhan2023`. The combined NIRSpec and NIRISS data show clear $\mathrm{CH_4}$ and $\mathrm{CO_2}$ absorption features and the tentative DMS feature near 3.4 $\mu$m. The spectrum is consistent with a sub-Neptune atmosphere overlying either a "hycean" (hydrogen atmosphere over a global liquid-water ocean) layer or a deeper mini-Neptune envelope. Reproduced from {cite:t}`Madhusudhan2023`.
+```
 
 As shown for K2-18 b in {ref}`Lecture 13 <lecture13>`, a single-snapshot atmospheric detection is insufficient to establish the presence of biology ({numref}`fig:l14:k218b-post`).
 
@@ -581,16 +678,32 @@ Future observatories will constrain $f_l$, transforming the search for life into
 ### The next decade
 
 The most decisive advance in exoplanet characterisation over the coming decade will come from ground-based 30-metre-class observatories entering operation.
-With its 39 m segmented primary mirror, ESO's Extremely Large Telescope (ELT) will be the largest optical and near-infrared telescope ever constructed.
+With its 39 m segmented primary mirror, ESO's Extremely Large Telescope (ELT; {numref}`fig:l14:elt-milkyway`) will be the largest optical and near-infrared telescope ever constructed.
 Equipped with extreme adaptive optics and high-resolution spectrographs, the ELT will achieve the angular resolution and high contrast required to isolate reflected starlight and thermal emission from planets at small orbital separations.
 This will enable direct imaging and spectroscopic characterisation of temperate Earth-sized rocky planets in the habitable zones of nearby M dwarfs, testing for atmospheric water vapour, carbon dioxide, and candidate biosignatures.
+
+```{figure} figures/elt_milkyway.avif
+:name: fig:l14:elt-milkyway
+:width: 700px
+:align: center
+
+The Milky Way arcs over ESO's Extremely Large Telescope under construction on Cerro Armazones in the Chilean Atacama Desert, with the partially-clad dome visible at lower left (August 2025). With its 39 m segmented primary mirror, the ELT will be the largest optical/near-infrared telescope ever built when it sees first light in 2029 and will, together with GMT and TMT, enable the first direct-imaging searches for atmospheric biosignatures on rocky planets around nearby M dwarfs. Image credit: C. Letelier/ESO {cite:p}`ESOELT2025`.
+```
 
 ### Final framing
 
 Planetary science has become the science of comparative climate, interior, and life-hosting trajectories.
-The solar system is the reference system, but no longer the benchmark.
+The solar system is the reference system ({numref}`fig:l14:solar-system-composite`), but no longer the benchmark.
 The exoplanet population provides the statistical context that the solar system on its own cannot.
 The questions covered across this course are open questions on a moving frontier.
+
+```{figure} figures/solar_system_composite.avif
+:name: fig:l14:solar-system-composite
+:width: 100%
+:align: center
+
+Composite at true relative size of the principal bodies of the solar system, grouped by region. **Inner solar system:** Mercury, Venus, Earth (with the Moon), and Mars (with Phobos and Deimos). **Asteroid belt:** represented by the dwarf planet Ceres. **Outer solar system:** Jupiter, Saturn, Uranus, and Neptune, each shown with their largest moons (Io, Europa, Ganymede, Callisto for Jupiter; Mimas, Enceladus, Tethys, Dione, Rhea, Titan for Saturn; Miranda, Ariel, Umbriel, Titania, Oberon for Uranus; Triton for Neptune). **Kuiper Belt, scattered disk, and detached objects:** Pluto (with the labelled moons Charon, Styx, Nix, Kerberos, and Hydra), Haumea (with Namaka and Hi'iaka), Makemake, Quaoar (with Weywot), Orcus (with Vanth), Eris (with Dysnomia), Gonggong (with Xiangliu), and Sedna. The Sun's limb is shown at right for scale. Body sizes are to scale relative to each other; **distances between bodies are not to scale**. The Oort Cloud is not depicted since its constituent comet nuclei are individually too small to image. Composite by CactiStaccingCrane (Wikimedia Commons, CC BY-SA 4.0); source imagery: NASA, ESA, ISRO.
+```
 
 A course like this is necessarily a snapshot.
 Specific topics, such as the Drake equation or the radius valley mechanism, will look different in 2030 than today.
