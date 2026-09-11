@@ -128,7 +128,7 @@ Each week consists of:
 - Atmospheric escape: Jeans escape, hydrodynamic escape, sputtering, photochemical escape
 - Atmospheric retention: the role of gravity and temperature
 - Recent advances: JWST detections of exoplanet atmospheres, revised atmospheric escape models, new constraints on early Earth and Mars atmospheric composition
-- **Length budget (2026-09-10):** deck 54 frames (from 89; 46 after the cut, then figures added to concept frames), notes about 7500 words (from 9501), board sheet 5 live steps with the isothermal column integration stated in the closing box; the closing item is the JWST/MIRI TRAPPIST-1 b secondary eclipse on one hero frame; Worksheet 3 drops its rotating-winds problem and part 5(d) (4 problems, 12 parts) and Mini-lecture 3 its winds frame.
+- **Length budget (2026-09-10):** deck 58 frames (from 89; 46 after the cut, then figures added to concept frames and four course-original sketches), notes about 7500 words (from 9501), board sheet 5 live steps with the isothermal column integration stated in the closing box; the closing item is the JWST/MIRI TRAPPIST-1 b secondary eclipse on one hero frame; Worksheet 3 drops its rotating-winds problem and part 5(d) (4 problems, 12 parts) and Mini-lecture 3 its winds frame.
 
 ### Lecture 6: Atmospheres II — Clouds, Weather, & Climate
 
@@ -157,7 +157,7 @@ Each week consists of:
 - Regolith formation and space weathering
 - Cryovolcanism on icy bodies: the mechanism, with Enceladus, Europa and Triton in one section and a forward reference to Lecture 11
 - Recent advances: one item, the Io eruption caught by JunoCam in 2024
-- **Length budget (set 2026-09-10 after the L02 delivery ran 60 min to the break):** deck at most 60 frames, the board derivation at most 5 live steps, notes about 7500 to 8000 words. L07 deck 42 frames, notes 8030 words with 29 figures, board sheet 5 steps; the $D \propto L^{3/4}$ extension is stated, not derived, and Worksheet 4 problem 1b has the students show it. Mission catalogues (Perseverance, DART, OSIRIS-REx, Hayabusa2, Pluto) live in Lectures 10 and 12.
+- **Length budget (set 2026-09-10 after the L02 delivery ran 60 min to the break):** deck at most 60 frames, the board derivation at most 5 live steps, notes about 7500 to 8000 words. L07 deck 45 frames, notes 8030 words with 32 figures, board sheet 5 steps; the $D \propto L^{3/4}$ extension is stated, not derived, and Worksheet 4 problem 1b has the students show it. Mission catalogues (Perseverance, DART, OSIRIS-REx, Hayabusa2, Pluto) live in Lectures 10 and 12.
 
 ### Lecture 8: Planetary Interiors — Structure, Composition, & Dynamics
 
@@ -214,7 +214,7 @@ Each week consists of:
 - Implications for habitability: the habitable zone is not a line but a set of history-dependent trajectories; forward reference to Lecture 13 exoplanet habitability
 - Recent advances and upcoming missions: DAVINCI+ (NASA, ~2029), VERITAS (NASA, late 2020s), EnVision (ESA, 2031); first new orbital missions in decades; active research on early Venus climate (Way 2016, Turbet 2021); phosphine debate (Lecture 6)
 
-- **Length budget (2026-09-10):** deck 59 frames (from 79; 44 after the cut, then figures added to concept frames), notes about 7900 words (from 11648), board sheet 5 live steps; the closing item is the 2030s Venus missions on one hero frame; Worksheet 5 drops its deuterium problem and three parts (4 problems, 14 parts).
+- **Length budget (2026-09-10):** deck 60 frames (from 79; 44 after the cut, then figures added to concept frames and a course-original sketch), notes about 7900 words (from 11648), board sheet 5 live steps; the closing item is the 2030s Venus missions on one hero frame; Worksheet 5 drops its deuterium problem and three parts (4 problems, 14 parts).
 
 ### Lecture 10: Rocky Planets — Mercury & Mars
 
@@ -256,7 +256,7 @@ Each week consists of:
 - What makes a rocky planet habitable? (synthesised from L9 + L10) (1) liquid water, (2) active geology for volatile recycling, (3) magnetic shielding (debated), (4) long-term climate stability. Earth ticks all four; Venus and Mars failed on at least two; Mercury never had a chance
 - Recent advances and upcoming missions: Mars Sample Return (NASA/ESA, schedule in flux), BepiColombo (2026 orbit insertion), ExoMars Rosalind Franklin (~2028), JAXA MMX (2026 launch, 2031 return), Curiosity long-baseline results, subsurface radar reservoirs (contested), Ingenuity helicopter legacy, Perseverance ongoing geochemistry
 
-- **Length budget (2026-09-10):** deck 51 frames (from 65; 47 after the cut, then figures added to concept frames), notes about 8300 words (from 11643), board sheet 5 live steps; the closing item is BepiColombo at Mercury on one hero frame.
+- **Length budget (2026-09-10):** deck 53 frames (from 65; 47 after the cut, then figures added to concept frames and two course-original sketches), notes about 8300 words (from 11643), board sheet 5 live steps; the closing item is BepiColombo at Mercury on one hero frame.
 
 ### Lecture 11: Gas & Ice Giants — Jupiter, Saturn, Uranus, Neptune
 
@@ -472,7 +472,7 @@ Capstone synthesis lecture. Unlike L9–L13, the structure is integration-first 
 
 ---
 
-- **Length budget (2026-09-10):** deck 48 frames (from 72; 41 after the cut, then figures added to concept frames), notes about 8000 words (from 9927), board sheet 5 live steps; the closing item is the TRAPPIST-1 b eclipse on one hero frame.
+- **Length budget (2026-09-10):** deck 53 frames (from 72; 41 after the cut, then figures added to concept frames and five course-original sketches), notes about 8000 words (from 9927), board sheet 5 live steps; the closing item is the TRAPPIST-1 b eclipse on one hero frame.
 
 
 ## 3. Worksheets
