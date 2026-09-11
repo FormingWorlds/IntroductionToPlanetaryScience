@@ -426,6 +426,15 @@ Direct detection of the Yarkovsky effect on the near-Earth asteroid (6489) Golev
 ```
 
 The **YORP effect** (Yarkovsky-O'Keefe-Radzievskii-Paddack) is a thermal recoil torque from asymmetric radiation that modifies the rotation rate and spin axis of bodies smaller than $\sim 10$ km, driving them to rotational fission or slowing them to near zero.
+This spin-up has been directly detected on the near-Earth asteroid (54509) YORP ({numref}`fig:l12-yorp`).
+
+```{figure} figures/yorp_detection_vokrouhlicky.avif
+:name: fig:l12-yorp
+:width: 500px
+:align: center
+
+Direct detection of the YORP effect on the small near-Earth asteroid (54509) YORP. The vertical axis shows the additional sidereal rotation phase (in degrees) accumulated relative to a constant-rotation model; the horizontal axis is time in days since 27 July 2001. Black points are independent measurements from successive radar and optical apparitions; the grey curve is a quadratic fit corresponding to a rotational acceleration $\dd \omega / \dd t \simeq 350 \times 10^{-8}$ rad d$^{-2}$. The accelerating spin is the predicted YORP signature: an asymmetric thermal recoil torque acting on an irregular rotating body. Adapted from Figure 5 of {cite:t}`Vokrouhlicky2015`.
+```
 
 ### Impact frequency and planetary defence
 
@@ -725,8 +734,16 @@ Rosetta's headline scientific findings include:
 
 **Sample-return missions** deliver physical material from small bodies back to Earth, establishing direct links between laboratory meteorite groups and known asteroid parent bodies.
 
-Hayabusa returned microscopic grains from S-type asteroid (25143) Itokawa in 2010, confirming a link to LL-class ordinary chondrites {cite:p}`Nakamura2011`.
+Hayabusa returned microscopic grains from S-type asteroid (25143) Itokawa in 2010 ({numref}`fig:l12-itokawa`), confirming a link to LL-class ordinary chondrites {cite:p}`Nakamura2011`.
 Itokawa, Ryugu and Bennu are all **rubble piles**: aggregates of boulders and gravel held together by weak self-gravity rather than monolithic rock, with bulk densities near $1.2$ to $1.9$ g cm$^{-3}$ and macroporosities of tens of per cent ({ref}`Lecture 8 <lecture08>`).
+
+```{figure} figures/itokawa_full.avif
+:name: fig:l12-itokawa
+:width: 500px
+:align: center
+
+The S-type near-Earth asteroid (25143) Itokawa imaged by Hayabusa AMICA in 2005. Itokawa is approximately 535 m long with a distinctive bilobed sea-otter profile: two rougher lobes joined by the smoother "Muses Sea" neck region (the central tan area). The complete absence of large craters and the high boulder fraction are signatures of a **rubble-pile** internal structure: a body held together by self-gravity and inter-fragment friction rather than by internal cohesion. Itokawa is the parent body of the LL-class ordinary chondrites. Image credit: ISAS / JAXA, CC BY 4.0.
+```
 
 Hayabusa2 visited the carbonaceous (Cb-type) asteroid (162173) Ryugu and returned 5.4 g of sample in 2020 ({numref}`fig:l12-ryugu`).
 The returned material is rich in water-bearing phyllosilicates, carbonates, and organic molecules, with a bulk composition matching CI chondrites {cite:p}`Yokoyama2023`.
@@ -783,6 +800,15 @@ Shape of (16) Psyche seen from above its south pole, from a combined radar and a
 
 **Interstellar objects** are bodies originating outside the solar system on unbound, hyperbolic orbits.
 Discovered in October 2017, 1I/'Oumuamua was the first confirmed interstellar visitor, a small ($\sim 100$–$200$ m long), highly elongated body with non-gravitational acceleration but no detectable coma {cite:p}`Micheli2018`.
+Its detection implies a much higher space density of interstellar objects than pre-discovery models predicted ({numref}`fig:l12-oumuamua`).
+
+```{figure} figures/oumuamua_iso_density.avif
+:name: fig:l12-oumuamua
+:width: 600px
+:align: center
+
+Inferred space number density of interstellar objects in pc$^{-3}$ implied by the discovery of 1I/'Oumuamua, broken down by assumed population type along the horizontal axis (asteroidal, comets from giant-planet ejection, comets from white-dwarf disruption, free-floating planetary fragments, two-population mixed models). The vertical axis is the implied space density. The Pan-STARRS detection of a single ISO already implies densities orders of magnitude larger than pre-discovery predictions for any reasonable assumed population, and survey statistics now imply $\sim 10^{4}$ ISOs larger than $\sim 100$ m within Neptune's orbit at any given time. From Figure 2 of {cite:t}`OumuamuaTeam2019`.
+```
 
 Discovered in August 2019, 2I/Borisov was the first confirmed interstellar comet ({numref}`fig:l12-borisov`).
 Spectroscopy revealed a CO abundance of at least 173% relative to water, compared to typical solar-system cometary values near 4% {cite:p}`Bodewits2020`.

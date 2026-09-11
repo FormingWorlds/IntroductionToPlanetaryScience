@@ -94,6 +94,15 @@ Mercury spin rate deviations from the resonant $3/2$ rate measured by Earth-base
 Mercury's rotation also probes its interior through its **forced libration in longitude** over its $88$-day year.
 Earth-based radar measurements yielded a libration amplitude of $35.8 \pm 2$ arcseconds ({numref}`fig:margot-libration`) {cite:p}`Margot2007`.
 This amplitude is roughly twice the value for a solid planet, confirming that the mantle decouples from a liquid outer core and carries only $C_m/C \approx 0.5$ of the total moment of inertia, where $C_m$ is the moment of inertia of the silicate shell alone.
+{numref}`fig:margot-libdata` shows the Monte Carlo distribution of $C_m/C$ behind this statement.
+
+```{figure} figures/margot2007_libdata.avif
+:name: fig:margot-libdata
+:width: 600px
+:align: center
+
+Histograms of best-fit values for the diagnostic moment-of-inertia ratio $C_m/C$ (where $C_m$ is the moment of inertia of the silicate mantle alone and $C$ is the total moment of inertia, so $C_m/C$ is the fraction of the total moment of inertia contributed by the mantle), drawn from $10^5$ Monte Carlo draws on the measured libration amplitude and the gravity coefficient $C_{22}$. Panel **A** uses the radar measurements alone, panel **B** adds the relation between the gravitational harmonic coefficients and the obliquity that holds in a Cassini state, which tightens the result. Each panel shows two histograms, for the two extremes of the plausible total moment of inertia adopted in 2007: $C/MR^2 = 0.325$ in red and $0.380$ in blue. Radio science with *MESSENGER* has since put $C/MR^2 \approx 0.346$ between those two extremes, and that is the value used in the body text and in the interior structure inversion below. Every distribution peaks near $C_m/C \approx 0.5$, far from the value of unity a fully solid Mercury requires, so the core must be decoupled and at least partly liquid. Reproduced from {cite:t}`Margot2007`, Fig. 4.
+```
 
 ### Interior: a giant iron core
 
@@ -383,10 +392,18 @@ Mars is therefore a **planetary embryo**, a protoplanet that stopped growing bef
 Present-day crustal thickness models of Mars from gravity, topography, and InSight seismic constraints ({cite:t}`Plesa2022`). Global mean thickness ranges from $40.6\ \mathrm{km}$ (thin end-member **a**, $31\ \mathrm{km}$ at InSight) to $71.4\ \mathrm{km}$ (thick end-member **c**, $49\ \mathrm{km}$ at InSight).
 ```
 
-Thermal models indicate that Mars is in a **stagnant-lid regime**, where an immobile lithosphere encloses a slowly convecting mantle and heat escapes by conduction ({numref}`fig:plesa-crust`) {cite:p}`Plesa2022` ({ref}`Lecture 3 <lecture03>`).
+Thermal models indicate that Mars is in a **stagnant-lid regime**, where an immobile lithosphere encloses a slowly convecting mantle and heat escapes by conduction ({numref}`fig:plesa-crust` and {numref}`fig:plesa-convection`) {cite:p}`Plesa2022` ({ref}`Lecture 3 <lecture03>`).
 Radioactive heat-producing elements (uranium, thorium, and potassium) are concentrated in the crust.
 The mantle is correspondingly depleted.
 This explains why core cooling halted the early dynamo while volcanic activity persisted into the recent past.
+
+```{figure} figures/plesa2022_convection.avif
+:name: fig:plesa-convection
+:width: 700px
+:align: center
+
+Cut-away renderings of the present-day mantle convection pattern in three thermal-evolution models of Mars. The dark red sphere is the core, the orange surfaces are the hot upwellings, and the outer shell shows the surface topography. All three models use the same crust, of mean thickness $61.3\ \mathrm{km}$ and density $2800\ \mathrm{kg\,m^{-3}}$, and differ only in core radius: $1500\ \mathrm{km}$ in **a**, $1700\ \mathrm{km}$ in **b**, and $1850\ \mathrm{km}$ in **c**. Only the largest core agrees with the InSight core-radius estimate. The larger the core, the more numerous and the smaller the plumes and downwellings become, which is hard to reconcile with building the crustal dichotomy by mantle convection alone and so favours an impact origin for it. Reproduced from {cite:t}`Plesa2022`, Fig. 10a-c; the mantle temperature-variation slices of the original are not shown.
+```
 
 Planetary thermal evolution is characterized by the **Urey number**, the ratio of internal radiogenic heat production to total surface heat loss:
 

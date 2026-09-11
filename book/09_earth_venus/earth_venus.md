@@ -244,9 +244,20 @@ The link between the biosphere and **biosignatures** (spectroscopic signatures o
 ### The history of life on Earth
 
 The oldest accepted fossils are **stromatolites** at $3.48$ Ga {cite:p}`Catling2020`, while the origin of life and Precambrian biosignatures are evaluated in {ref}`Lecture 14 <lecture14>`.
+Modern stromatolites in Shark Bay ({numref}`fig:stromatolites`) provide an analogue for this dominant early life form.
 Life arose within a billion years after liquid oceans formed at $4.3$ to $4.4$ Ga.
 Yet microbes dominated alone for $3$ Gyr.
 Complex life, punctuated by mass extinctions like the end-Cretaceous impact at $66$ Ma ({ref}`Lecture 12 <lecture12>`), spans only the final $12\%$ of Earth's history ({numref}`fig:earth-life-history`).
+
+```{figure} figures/stromatolites_shark_bay.avif
+:name: fig:stromatolites
+:width: 100%
+:align: center
+
+Modern stromatolites in the hypersaline waters of Shark Bay, Western Australia.
+Microbial mats trap and bind sediment into these layered mounds; fossil stromatolites of the same construction, dated to $3.48$ Ga in the nearby Pilbara region, are the oldest widely accepted evidence for life on Earth.
+Photo by Paul Harrison (Wikimedia Commons), [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/).
+```
 
 ```{figure} figures/earth_life_timeline.avif
 :name: fig:earth-life-history
@@ -658,7 +669,7 @@ Hysteresis loops for ocean formation on early Earth and Venus, from {cite:t}`Tur
 Reproduced from {cite:t}`Turbet2021`, Fig. 4.
 ```
 
-Both early-loss and late-loss scenarios remain observationally untested ({numref}`fig:gillmann-scenarios`), and future measurements of noble gases and crustal composition may distinguish between an early ocean and a dry history.
+Both early-loss and late-loss scenarios remain observationally untested ({numref}`fig:gillmann-scenarios`), and future measurements of noble gases and crustal composition may distinguish between an early ocean ({numref}`fig:honing-reference`) and a dry history ({numref}`fig:constantinou-pathways`).
 
 ```{figure} figures/gillmann2022_dry_wet_venus_scenarios.avif
 :name: fig:gillmann-scenarios
@@ -671,6 +682,18 @@ The two main scenarios for Venus' early evolution as summarised by {cite:t}`Gill
 Both end at the present state of Venus, and current data cannot distinguish them definitively.
 Reproduced from {cite:t}`Gillmann2022`.
 ```
+```{figure} figures/constantinou2024_venus_pathways.avif
+:name: fig:constantinou-pathways
+:width: 100%
+:align: center
+
+The two dichotomous climate pathways for Venus from {cite:t}`Constantinou2024`, ending in interiors with very different water inventories.
+**Upper branch (dry Venus):** the planet emerges from its magma-ocean stage at $t \approx 100$ Myr without ever condensing a surface ocean; water is lost early via photolysis and hydrogen escape, leaving an interior depleted in hydrogen and a present-day mantle that degasses S- and C-rich, $\mathrm{H_2O}$-poor volcanic gases.
+**Lower branch (temperate, wet Venus):** the magma ocean crystallises with a condensed ocean at the surface, the planet remains habitable for several Gyr, and the present-day mantle still contains significant water that emerges in $\mathrm{H_2O}$-rich volcanic gases.
+The two interior signatures map onto observable differences in the chemistry of Venus' atmosphere. {cite:t}`Constantinou2024` argue from the destruction rates of $\mathrm{H_2O}$, $\mathrm{CO_2}$, and $\mathrm{OCS}$ in the present atmosphere that the volcanic source must be water-poor (at most $\sim$6\% $\mathrm{H_2O}$ mole fraction), favouring the dry-Venus branch.
+Reproduced from {cite:t}`Constantinou2024`.
+```
+
 
 ### The D/H ratio: evidence for water loss
 

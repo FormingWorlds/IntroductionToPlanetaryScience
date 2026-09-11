@@ -527,6 +527,15 @@ On airless bodies (the Moon, Mercury, asteroids), the surface is not bedrock but
 The lunar regolith is a layer of unconsolidated debris (rock fragments, mineral grains, and glass beads) produced by the cumulative effect of impacts at all scales, from micrometeorite bombardment to basin-forming events. This process is called **impact gardening**: each impact excavates material, mixes the surface layer, and breaks rocks into progressively finer particles. Regolith depth therefore tracks how long a surface has been exposed. A global survey of crater morphologies in Lunar Reconnaissance Orbiter images gives median depths of typically 2–4 m on the young mare basalts and 6–8 m on the farside and non-mare nearside, so the ancient highlands hold roughly twice as much regolith as the maria {cite:p}`Bart2011` ({numref}`fig:lunar-regolith`).
 
 The Hayabusa2 and OSIRIS-REx sample returns showed that even sub-kilometre **rubble-pile** asteroids, with negligible gravity, retain a regolith rather than losing their ejecta to space; the returned samples themselves are discussed in {ref}`Lecture 12 <lecture12>`.
+{numref}`fig:bennu-osiris-rex` shows Bennu: boulders at every scale, no smooth ponded plains, and a bulk density that implies a porous rubble pile.
+
+```{figure} figures/bennu_osiris_rex.avif
+:name: fig:bennu-osiris-rex
+:width: 450px
+:align: center
+
+The near-Earth asteroid Bennu, a mosaic of images taken by NASA's OSIRIS-REx spacecraft in December 2018 from a range of 24 km. Boulders crowd the $\sim$490 m body at every scale, with no smooth ponded plains, and its very low bulk density implies high internal porosity: a rubble pile of collisional fragments reaccumulated under self-gravity. OSIRIS-REx returned 121.6 g of this material to Earth in September 2023; the samples carry hydrated clay minerals, carbonates, amino acids, and nucleobases {cite:p}`Lauretta2024`. Credit: NASA/Goddard/University of Arizona, public domain.
+```
 
 ```{figure} figures/lunar_regolith.avif
 :name: fig:lunar-regolith
@@ -603,6 +612,16 @@ Io is the one body beyond Earth where volcanic resurfacing can be watched from m
 :align: center
 
 JunoCam imagery of the Nusku volcanic region on Io taken two months apart in early 2024 (PIA26488). A new bright red ring of fresh sulfur-rich pyroclastic deposits appears around the central vent in the April image but is absent in February, recording a single eruptive event observed in real time. JunoCam's repeated close flybys in 2023 and 2024 provide the first sustained spatial monitoring of Io's volcanism since Galileo. Credit: NASA/JPL-Caltech/SwRI/MSSS/Jason Perry, public domain.
+```
+
+The New Horizons flyby in July 2015 showed that even a small, distant dwarf planet can be geologically active today ({numref}`fig:pluto-true-color`) {cite:p}`Stern2015`. Sputnik Planitia, a $\sim$1000 km wide plain of nitrogen ice, is divided into polygonal cells tens of kilometres across that record active solid-state convection in the ice, and its complete lack of impact craters implies a surface age below $\sim$10 Myr {cite:p}`McKinnon2016`. Water-ice mountains up to $\sim$3 km tall stand along its margins, and the deep interior may hold a liquid water ocean.
+
+```{figure} figures/pluto_true_color.avif
+:name: fig:pluto-true-color
+:width: 450px
+:align: center
+
+Pluto in enhanced true colour, from images taken by New Horizons on 14 July 2015. The bright western lobe of the heart-shaped Tombaugh Regio is Sputnik Planitia, a vast crater-free plain of convecting nitrogen ice bordered by water-ice mountain ranges; the dark reddish equatorial terrains are coated in tholins, complex organics produced by radiation chemistry. Credit: NASA/JHUAPL/SwRI, public domain.
 ```
 
 ## References

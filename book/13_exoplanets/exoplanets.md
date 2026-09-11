@@ -97,7 +97,15 @@ Schematic of a transit light curve. The four contact times $t_\mathrm{I}$ throug
 
 An orbit transits only if aligned within an angle $\Theta \approx R_\star / a$ of our line of sight.
 This probability is $\sim 0.005$ (one in 200) for an Earth-Sun analogue and $\sim 0.1$ (ten per cent) for a hot Jupiter at 0.05 AU, biasing detections toward short periods.
-Space photometry reaches parts-per-million precision.
+Space photometry reaches parts-per-million precision ({numref}`fig:wasp39_jwst`).
+
+```{figure} figures/jwst_transit_lightcurve.avif
+:align: center
+:name: fig:wasp39_jwst
+:width: 90%
+
+Modern transit photometry pushed to its current limit, from Figure 1 of {cite:t}`Alderson2023`. Panel a is the raw, uncorrected broadband transit light curve of the hot Saturn **WASP-39 b** ($0.28\,\Mjup$) observed with the two JWST NIRSpec G395H detectors, NRS1 (purple) and NRS2 (red); normalised flux against time in days. The inset magnifies a drop in flux (grey band) caused by a tilt of a primary-mirror segment, which leaves the two detectors offset from each other for the rest of the observation. Panel b is the same data resolved by wavelength: each column is one spectroscopic light curve, with time on the vertical axis and normalised flux as the colour. The white stripe at $3.72$--$3.82$ $\mu$m is the gap between the two detectors. Panel c is the precision reached in each spectroscopic bin: black points and the left axis are the scatter of the light curve, between about $1100$ ppm near $3.2$ $\mu$m and about $3000$ ppm near $5.1$ $\mu$m, and the two grey dashed curves are one and two times the photon noise. Blue points and the right axis are the resulting precision on the transit depth, about $200$ ppm at the blue end and about $600$ ppm at the red end. The strongest transmission feature of WASP-39 b, the $\mathrm{CO_2}$ band near $4.3$ $\mu$m, is about $1300$ ppm deep ({numref}`fig:wasp39species`), so a single spectroscopic bin now resolves it.
+```
 
 Kepler monitored 150,000 stars to deliver the first statistical sample of small exoplanets {cite:p}`Borucki2010`.
 TESS surveys bright nearby stars for atmospheric follow-up, while CHEOPS refines planet radii.
@@ -238,7 +246,15 @@ Direct image of $\beta$ Pictoris b from {cite:t}`Lagrange2010`, showing clear or
 ```
 
 PDS 70 contains the first planets detected directly inside a cleared protoplanetary disk gap {cite:p}`Keppler2018,Haffert2019`.
-Accretion onto b and c produces shock H$\alpha$ emission confirming planet-disk interaction models {cite:p}`Haffert2019` ({ref}`Lecture 2 <lecture02>`; {numref}`fig:pds70disk`).
+Accretion onto b and c produces shock H$\alpha$ emission confirming planet-disk interaction models {cite:p}`Haffert2019` ({ref}`Lecture 2 <lecture02>`; {numref}`fig:pds70bc` and {numref}`fig:pds70disk`).
+
+```{figure} figures/pds70bc_haffert.avif
+:align: center
+:name: fig:pds70bc
+:width: 90%
+
+Detection of PDS 70 b and c in three epochs and three wavelength bands, from Figure 2 of {cite:t}`Haffert2019`. All three panels show the same field: offset in right ascension against offset in declination, both in milliarcseconds, with the star at the origin (white star symbol) and the two planets marked by white circles. Each panel has its own colour bar, normalised from 0 to 1. Panel a is the MUSE H$\alpha$ detection map of 20 June 2018, after removal of the direct and scattered starlight; the band just south of PDS 70 b is most likely an artefact of the MUSE image slicer. Panel b is the SPHERE/IRDIS K1-band image of 31 May 2016 after angular differential imaging. Panel c is the NACO L$'$-band image of 1 June 2016, in which PDS 70 c is blended with the disk because the point spread function is broad at that wavelength. The H$\alpha$ emission of PDS 70 b and of the newly discovered PDS 70 c is interpreted as accretion shock luminosity from gas that falls onto the planets, which is evidence that two protoplanets accrete at the same time in the disk gap.
+```
 
 ```{figure} figures/pds70_disk.avif
 :align: center
@@ -674,7 +690,7 @@ Terminator-averaged theoretical transmission spectra of WASP-39 b from photochem
 Contribution of individual opacity sources to the JWST/NIRSpec G395H transmission spectrum of WASP-39 b, from Figure 4 of {cite:t}`Alderson2023`. Panel a is the full spectrum. Grey points with error bars are the measurement, the black curve is the best-fitting model with an injected $\mathrm{SO_2}$ volume mixing ratio of $10^{-5.6}$, and each coloured curve is that same model with one opacity source removed: cloud, $\mathrm{CH_4}$, $\mathrm{H_2O}$, $\mathrm{SO_2}$, $\mathrm{CO_2}$, or CO. The left axis is transit depth in per cent and the right axis is the same quantity in planetary scale heights; the horizontal axis is wavelength in $\mu$m. The wavelength range where a coloured curve separates from the black one is the range in which that species absorbs. Panel d is the $\mathrm{CO_2}$ band near 4.3 $\mu$m on its own: black points are the measurement and the shaded orange region is the difference that the $\mathrm{CO_2}$ opacity makes to the model. The band is detected at $28.5\sigma$, above the $21.5\sigma$ of $\mathrm{H_2O}$ and the $4.8\sigma$ of $\mathrm{SO_2}$ in the same spectrum.
 ```
 
-For TRAPPIST-1 b, $15\ \mu\mathrm{m}$ thermal emission is consistent with a **bare rock dayside** in radiative equilibrium with no atmospheric heat redistribution, ruling out a thick $\mathrm{CO_2}$ atmosphere {cite:p}`Greene2023`; the same measurement for TRAPPIST-1 c {cite:p}`Zieba2023` rules out a thick Venus-like atmosphere and suggests that the innermost rocky planets of active M dwarfs are stripped ({ref}`Lecture 5 <lecture05>`) ({numref}`fig:trappist1beclipse`).
+For TRAPPIST-1 b, $15\ \mu\mathrm{m}$ thermal emission is consistent with a **bare rock dayside** in radiative equilibrium with no atmospheric heat redistribution, ruling out a thick $\mathrm{CO_2}$ atmosphere {cite:p}`Greene2023`; the same measurement for TRAPPIST-1 c {cite:p}`Zieba2023` rules out a thick Venus-like atmosphere and suggests that the innermost rocky planets of active M dwarfs are stripped ({ref}`Lecture 5 <lecture05>`) ({numref}`fig:trappist1beclipse`, {numref}`fig:trappist1bemiss`).
 
 ```{figure} figures/trappist1b_eclipse.avif
 :align: center
@@ -683,6 +699,36 @@ For TRAPPIST-1 b, $15\ \mu\mathrm{m}$ thermal emission is consistent with a **ba
 
 JWST MIRI $15\ \mu\mathrm{m}$ secondary eclipse light curve of **TRAPPIST-1 b** from {cite:t}`Greene2023`, marking the first thermal emission detection of an Earth-sized exoplanet. The eclipse depth $f_p / f_\star = 861 \pm 99$ ppm corresponds to a dayside brightness temperature of $T_B = 503^{+26}_{-27}$ K, matching the $508$ K bare-rock prediction in radiative equilibrium with no significant heat redistribution.
 ```
+```{figure} figures/trappist1b_emission.avif
+:align: center
+:name: fig:trappist1bemiss
+:width: 90%
+
+The TRAPPIST-1 b dayside emission compared with model atmospheres of different compositions, from {cite:t}`Greene2023`. The data are inconsistent with thick $\mathrm{CO_2}$ + $\mathrm{N_2}$ atmospheres and inconsistent with $\mathrm{O_2}$ + $\mathrm{CO_2}$ atmospheres at any plausible mass-loading. They are consistent with a bare-rock dayside (the 503 K blackbody curve, magenta).
+```
+
+Secondary eclipse observations of the hot rocky super-Earth 55 Cancri e by {cite:t}`Hu2024` show a dayside cooler than expected for bare rock ({numref}`fig:55cnce`).
+This provides tentative evidence for a **secondary atmosphere**, a volatile envelope outgassed from a molten surface.
+
+```{figure} figures/55cnce_hu_emission.avif
+:align: center
+:name: fig:55cnce
+:width: 90%
+
+JWST/NIRCam plus MIRI thermal emission spectrum of **55 Cancri e** from {cite:t}`Hu2024`. Black points are the binned JWST data; coloured curves are atmospheric models (grey blackbody, $\mathrm{CO_2}$+$\mathrm{N_2}$ purple, $\mathrm{CO_2}$+CO red, CO-only gold). The data fall below the bare-rock blackbody at most wavelengths and favour atmospheric models with non-negligible CO and $\mathrm{CO_2}$. A companion retrieval (not shown) constrains the volatile mixing ratios but is sensitive to the assumed background gas, so the conclusion of a secondary atmosphere is currently tentative but suggestive.
+```
+
+Flat transmission spectra for LHS 475 b {cite:p}`LustigYaeger2023` and GJ 1132 b further indicate that small rocky M dwarf planets generally lose their atmospheres to early stellar activity ({numref}`fig:lhs475`).
+A tentative water signal on GJ 486 b remains ambiguous due to stellar starspots {cite:p}`Moran2023`.
+
+```{figure} figures/lhs475b_spectrum.avif
+:align: center
+:name: fig:lhs475
+:width: 90%
+
+JWST/NIRSpec G395H transmission spectrum of the rocky exoplanet **LHS 475 b**, an Earth-size M dwarf planet at $\sim 12$ pc, from {cite:t}`LustigYaeger2023`. The data are flat and featureless. Hydrogen-helium-dominated atmospheres are ruled out at high confidence (top panel). A pure $\mathrm{CH_4}$ atmosphere is also ruled out, though a pure $\mathrm{CO_2}$ Venus-like atmosphere is marginally consistent (bottom panel). The result is consistent with no detectable atmosphere on LHS 475 b.
+```
+
 
 The habitable-zone sub-Neptune K2-18 b exhibits $\mathrm{CH_4}$ and $\mathrm{CO_2}$ alongside a marginal $2\sigma$ detection of **dimethyl sulfide** (DMS), initially interpreted as evidence for a **hycean world** with a liquid-water ocean {cite:p}`Madhusudhan2023` ({numref}`fig:k218b`).
 
