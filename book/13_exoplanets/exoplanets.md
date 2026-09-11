@@ -402,6 +402,16 @@ For a $10\,\Mearth$ sub-Neptune with $R_p \approx 2.5\,\Rearth$ at $0.1$ AU, an 
 Photoevaporation theory prediction of the radius valley from {cite:t}`OwenWu2013`. Planets with envelopes survive above $\sim 2\,\Rearth$, while stripped bare rocky cores settle below $\sim 1.8\,\Rearth$ to produce the observed valley.
 ```
 
+{numref}`fig:owenmassloss` shows how a young sub-Neptune loses its envelope in the photoevaporation model.
+
+```{figure} figures/owen_xuv_massloss.avif
+:align: center
+:name: fig:owenmassloss
+:width: 90%
+
+Photoevaporation-driven evolution of a young sub-Neptune in the {cite:t}`OwenWu2013` model. **Top**: planetary radius as a function of time since disc clearing, for two host XUV histories (line styles) and two starting orbital separations. **Bottom**: planet mass over the same evolution. The thin vertical line marks the end of the saturated XUV phase at $\sim 100$ Myr. After this time the radius and mass plateau; planets that have lost their envelopes by then settle as bare rocky cores below the radius valley.
+```
+
 The second mechanism is **core-powered mass loss**, where heat released from the cooling interior over hundreds of Myr powers hydrodynamic escape without external XUV flux, reproducing the gap at $\sim 1.8\,\Rearth$ ({numref}`fig:ginzburg`) {cite:p}`Ginzburg2018`.
 
 ```{figure} figures/ginzburg_corepowered.avif
@@ -420,6 +430,16 @@ Precise **asteroseismic** stellar radii show that the radius valley shifts to sm
 :width: 90%
 
 Slope of the **radius valley** with orbital period, from the asteroseismic Kepler subsample of {cite:t}`VanEylen2018`. The empirical valley boundary descends to smaller radii at longer periods, separating super-Earths from sub-Neptunes.
+```
+
+{numref}`fig:vaneylenmodels` overlays the model predictions for the slope of the valley on these data.
+
+```{figure} figures/vaneylen_models.avif
+:align: center
+:name: fig:vaneylenmodels
+:width: 70%
+
+Model predictions for the slope of the radius valley with orbital period, overlaid on the {cite:t}`VanEylen2018` data. The black curves are different theoretical predictions; both photoevaporation and core-powered mass loss predict broadly compatible slopes, and the data alone cannot decisively prefer one over the other.
 ```
 
 Because stripping removes primordial envelopes, many close-in super-Earths are remnant cores rather than primordially rocky planets, although for any single planet the two origins cannot be told apart from bulk density alone.
@@ -443,7 +463,7 @@ At the upper edge, inflated planets fill their **Roche lobe**, the region where 
 ### Planetary system architectures
 
 Multi-planet systems observed by Kepler enable statistical studies of planetary architecture.
-{cite:t}`Weiss2018` identified a **peas in a pod** architecture, in which planets within the same system share similar sizes ({numref}`fig:weisspeas`) and regular orbital period spacing.
+{cite:t}`Weiss2018` identified a **peas in a pod** architecture, in which planets within the same system share similar sizes ({numref}`fig:weisspeas`) and regular orbital period spacing ({numref}`fig:weiss_spacing`).
 
 ```{figure} figures/weiss_peas_in_pod.avif
 :align: center
@@ -451,6 +471,14 @@ Multi-planet systems observed by Kepler enable statistical studies of planetary 
 :width: 75%
 
 The **peas in a pod** correlation from {cite:t}`Weiss2018`: the radius of an inner Kepler multi-planet $R_i$ versus the radius of its immediately outer neighbour $R_{i+1}$. The clear positive correlation along the diagonal means that within a system the planets tend to be the same size as each other, far more so than randomly drawn pairs of planets from the Kepler sample. The Pearson correlation coefficient is 0.65 and the null-hypothesis probability is $p < 10^{-7}$.
+```
+
+```{figure} figures/weiss_spacing.avif
+:align: center
+:name: fig:weiss_spacing
+:width: 75%
+
+Period-ratio correlation in Kepler multi-planet systems, from {cite:t}`Weiss2018`. Each point is a triple of consecutive transiting planets in the same system: the horizontal axis is the period ratio of the inner pair ($P_{j+1}/P_j$) and the vertical axis is the period ratio of the next pair out ($P_{j+2}/P_{j+1}$). The clustering along the diagonal (Pearson $R = 0.46$, $p < 10^{-5}$) means that within a system, neighbouring period ratios are similar, supporting the view that compact inner systems form by a smooth, local process rather than by stochastic large impacts.
 ```
 
 This regularity indicates that compact inner systems form through smooth growth and disk migration rather than stochastic giant impacts.
@@ -616,7 +644,7 @@ Combining transmission, emission, and phase curves constrains atmospheric therma
 ### JWST era results (2022--2025)
 
 The James Webb Space Telescope has transformed exoplanet atmospheric characterisation since mid-2022.
-Transmission spectroscopy of the hot Saturn WASP-39 b revealed $\mathrm{H_2O}$, $\mathrm{CO_2}$, Na, and CO, while the absence of $\mathrm{CH_4}$ indicates super-solar metallicity {cite:p}`Rustamkulov2023,Alderson2023` ({numref}`fig:wasp39prism`).
+Transmission spectroscopy of the hot Saturn WASP-39 b revealed $\mathrm{H_2O}$, $\mathrm{CO_2}$, Na, and CO, while the absence of $\mathrm{CH_4}$ indicates super-solar metallicity {cite:p}`Rustamkulov2023,Alderson2023` ({numref}`fig:wasp39prism`) ({numref}`fig:wasp39species`).
 
 ```{figure} figures/wasp39b_prism_spectrum.avif
 :align: center
@@ -636,6 +664,14 @@ Its formation requires ultraviolet photolysis of $\mathrm{H_2S}$ followed by oxi
 :width: 90%
 
 Terminator-averaged theoretical transmission spectra of WASP-39 b from photochemical models comparing four codes (VULCAN, KINETICS, ARGO, ATMO) against NIRSpec PRISM, NIRSpec G395H, and optical HST and VLT/FORS2 data, from Figure 3 of {cite:t}`Tsai2023`. All four independent codes reproduce the observed $4.05\ \mu\mathrm{m}$ $\mathrm{SO_2}$ feature, confirming the role of sulfur photochemistry in atmospheric opacity, and predict stronger bands across the $5$--$15\ \mu\mathrm{m}$ MIRI range near $7.5$ and $8.7\ \mu\mathrm{m}$.
+```
+
+```{figure} figures/wasp39b_alderson_species.avif
+:align: center
+:name: fig:wasp39species
+:width: 80%
+
+Contribution of individual opacity sources to the JWST/NIRSpec G395H transmission spectrum of WASP-39 b, from Figure 4 of {cite:t}`Alderson2023`. Panel a is the full spectrum. Grey points with error bars are the measurement, the black curve is the best-fitting model with an injected $\mathrm{SO_2}$ volume mixing ratio of $10^{-5.6}$, and each coloured curve is that same model with one opacity source removed: cloud, $\mathrm{CH_4}$, $\mathrm{H_2O}$, $\mathrm{SO_2}$, $\mathrm{CO_2}$, or CO. The left axis is transit depth in per cent and the right axis is the same quantity in planetary scale heights; the horizontal axis is wavelength in $\mu$m. The wavelength range where a coloured curve separates from the black one is the range in which that species absorbs. Panel d is the $\mathrm{CO_2}$ band near 4.3 $\mu$m on its own: black points are the measurement and the shaded orange region is the difference that the $\mathrm{CO_2}$ opacity makes to the model. The band is detected at $28.5\sigma$, above the $21.5\sigma$ of $\mathrm{H_2O}$ and the $4.8\sigma$ of $\mathrm{SO_2}$ in the same spectrum.
 ```
 
 For TRAPPIST-1 b, $15\ \mu\mathrm{m}$ thermal emission is consistent with a **bare rock dayside** in radiative equilibrium with no atmospheric heat redistribution, ruling out a thick $\mathrm{CO_2}$ atmosphere {cite:p}`Greene2023`; the same measurement for TRAPPIST-1 c {cite:p}`Zieba2023` rules out a thick Venus-like atmosphere and suggests that the innermost rocky planets of active M dwarfs are stripped ({ref}`Lecture 5 <lecture05>`) ({numref}`fig:trappist1beclipse`).

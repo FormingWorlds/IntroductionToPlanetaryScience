@@ -68,6 +68,16 @@ ALMA millimeter continuum images resolve concentric rings and gaps in protoplane
 Gallery of 240 GHz (1.25 mm) ALMA continuum images of 20 nearby protoplanetary disks from the DSHARP large programme. Concentric rings, gaps, and asymmetric features are nearly ubiquitous, and most are interpreted as signatures of planetary growth in progress. The combination of disk substructure surveys with disk dust mass measurements provides the strongest empirical constraints on the inputs to planet formation models. Reproduced from {cite:t}`Andrews2018`.
 ```
 
+{numref}`fig:l14:accretion-timescales` compares the core growth times of pebble and planetesimal accretion across the disk.
+
+```{figure} figures/lambrechts2012_growth_time.avif
+:align: center
+:name: fig:l14:accretion-timescales
+:width: 90%
+
+Time required to grow a 10 Earth mass core as a function of distance from the star. The solid black line is pebble accretion in the Hill regime, the solid grey line is planetesimal accretion, and the dashed grey line is accretion of planetesimal fragments from a thin midplane layer. The red hatched band, roughly 1 to 10 Myr, is the interval over which the disk loses its gas, so a core that is to capture a gas envelope must reach 10 Earth masses before it. The pebble line stays below the band at every radius plotted, while the planetesimal line rises through it within a few AU and lies above it in the outer disk. Reproduced from {cite:t}`Lambrechts2012`.
+```
+
 Disk migration explains close-in giants and **resonant chains**, systems locked in near-integer period ratios ({ref}`Lecture 13 <lecture13>`).
 
 Jupiter's early growth may have isolated the non-carbonaceous and carbonaceous (NC-CC) meteorite reservoirs {cite:p}`Kruijer2017` ({numref}`fig:l14:nccc-timeline`).
@@ -103,6 +113,16 @@ Population synthesis predictions for planet mass versus orbital period assuming 
 ### The solar system overlaid on the exoplanet diagram
 
 The period-radius diagram highlights where our solar system differs from exoplanet architectures ({ref}`Lecture 13 <lecture13>`).
+
+{numref}`fig:l14:periodradius` shows the period-radius census with the compact multis marked.
+
+```{figure} figures/raymond2022_period_radius.avif
+:align: center
+:name: fig:l14:periodradius
+:width: 70%
+
+Census of confirmed transiting exoplanets in orbital period and planet size. Open circles are all transiting planets. The box in the top panel is the region used to define a compact multi, a system with at least two planets inside it, and the filled circles are the planets that meet that definition. The middle panel joins the planets of five compact multis whose sizes and spacings are unusually uniform (Kepler-11, Kepler-172, Kepler-374, Kepler-444, Kepler-1542), the "peas-in-a-pod" pattern. The bottom panel joins three systems that do not show it: WASP-47 and KOI-94 meet the compact-multi definition but span a wide range of planet sizes, and the young system V1298 Tau fails it. Reproduced from {cite:t}`Weiss2023`.
+```
 
 A disk snow line creates a typical radial composition gradient {cite:p}`Weiss2023`, but four features are unusual:
 
@@ -652,7 +672,15 @@ Both controversies drive the design of next-generation instruments and missions.
 
 ### Exoplanet life detection: the strategy
 
-Exoplanet life detection relies entirely on spatially unresolved transmission, emission, or reflectance spectra ({ref}`Lecture 13 <lecture13>`).
+Exoplanet life detection relies entirely on spatially unresolved transmission, emission, or reflectance spectra ({ref}`Lecture 13 <lecture13>`) ({numref}`fig:l14:lhs475b-spectrum`).
+
+```{figure} figures/lustigyaeger2023_lhs475b_spectrum.avif
+:align: center
+:name: fig:l14:lhs475b-spectrum
+:width: 85%
+
+JWST/NIRSpec G395H transmission spectrum of the Earth-sized rocky exoplanet LHS 475 b (black points), compared with model atmospheres of various compositions. The data rule out clear hydrogen-dominated atmospheres at $1\times$ to $100\times$ solar metallicity at high significance (top panel). High mean molecular weight atmospheres (pure $\mathrm{H_2O}$, $\mathrm{CO_2}$-dominated, Earth-like) and a featureless airless-body spectrum remain consistent with the data, while a clear $\mathrm{CH_4}$-dominated atmosphere is weakly disfavoured (bottom panel). This is representative of what current JWST observations can and cannot say about the atmospheres of rocky exoplanets around nearby M dwarfs. Reproduced from {cite:t}`LustigYaeger2023`.
+```
 
 For TRAPPIST-1 b, the degeneracy of a featureless transmission spectrum was broken by MIRI $15\,\mu\mathrm{m}$ secondary eclipse observations: a dayside brightness temperature $T_d \approx 503$ K matches the $508$ K expected for bare rock without heat redistribution ({numref}`fig:l14:trappist1b`; {ref}`Lecture 13 <lecture13>`).
 

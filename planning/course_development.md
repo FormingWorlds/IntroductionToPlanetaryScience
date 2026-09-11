@@ -61,7 +61,7 @@ Each week consists of:
 
 ## 2. Lecture Schedule
 
-**Length and depth budget (standing rule for every lecture, set 2026-09-10):** deck at most 60 frames at about 1.15 min per frame, one spoken claim per frame, a hero image with a caption and no walkthrough frame behind it, no frame over about 70 words; board derivation at most 5 live steps, the rest stated in the closing box; notes about 7500 to 8000 words that keep every fact, equation and number the final, the re-sit, the mock exams and the worksheets use; worksheets 4 problems with 12 to 14 parts and mini-lectures 7 frames; one closing "recent developments" item on 1 to 2 images. Lectures 5 to 14 follow the budget; Lectures 1 to 4 and Worksheets 1 and 2 are brought to it after the 2026 course ends.
+**Length and depth budget (standing rule for every lecture, set 2026-09-10):** deck at most 60 frames at about 1.15 min per frame, one spoken claim per frame, a hero image with a caption and no walkthrough frame behind it, no frame over about 70 words; board derivation at most 5 live steps, the rest stated in the closing box; notes about 7500 to 8000 words of prose (captions not counted) that keep every fact, equation and number the final, the re-sit, the mock exams and the worksheets use, with 30 to 40 figures per lecture and a figure at least everywhere a new concept is introduced; worksheets 4 problems with 12 to 14 parts and mini-lectures 7 frames; one closing "recent developments" item on 1 to 2 images. Lectures 5 to 14 follow the budget; Lectures 1 to 4 and Worksheets 1 and 2 are brought to it after the 2026 course ends.
 
 ### Lecture 1: Introduction & History of Planetary Science
 

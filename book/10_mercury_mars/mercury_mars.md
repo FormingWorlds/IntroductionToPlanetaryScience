@@ -322,6 +322,15 @@ Two snapshots of entropy gain (in $\mathrm{J\,K^{-1}\,kg^{-1}}$) from a smoothed
 
 The **Martian Moons eXploration** (MMX) mission will sample Phobos to test these models {cite:p}`Kuramoto2022`.
 
+{numref}`fig:mmx-orbit` shows the planned quasi-satellite orbits of MMX around Phobos.
+
+```{figure} figures/mmx_orbit.avif
+:name: fig:mmx-orbit
+:width: 480px
+:align: center
+
+Planned observation orbits for the JAXA MMX spacecraft around Phobos, drawn in a Phobos-fixed frame with Phobos at the centre, the $xy$ plane taken as the Phobos orbital plane and the $x$ axis pointing away from Mars. **Top:** the five quasi-satellite orbits confined to the $xy$ plane, from QSO-H at about $200\ \mathrm{km}$ along $y$ down to QSO-Lc at a few tens of kilometres; the low orbits support the sampling phase. **Bottom:** one three-dimensional quasi-satellite trajectory, at the QSO-M effective radius and an inclination of $45^\circ$, which carries the spacecraft over the whole surface rather than over the equatorial band alone. Reproduced from {cite:t}`Kuramoto2022`, Fig. 3.
+```
 ### Mars' interior: the InSight revolution
 
 Before in situ seismology, orbital gravity and topography {cite:p}`Smith2001` gave crustal thickness maps through isostatic compensation, and the moment of inertia $C/MR^2 \approx 0.364$ ({ref}`Lecture 8 <lecture08>`) indicated a smaller relative core than Earth's; the InSight seismometer, deployed in 2018, then recorded over a thousand marsquakes.
@@ -397,7 +406,7 @@ With a value below unity, Mars is losing heat slightly faster than radioactive d
 
 ### Mars' geological periods: Noachian, Hesperian, Amazonian
 
-Mars is divided into three major geological periods (each subdivided into epochs) based on impact crater density {cite:p}`Hartmann2001`, compiled globally by {cite:t}`Tanaka2014` ({numref}`fig:tanaka-global`); translating crater counts to absolute ages requires model corrections because the Martian impact rate differs from the Moon's.
+Mars is divided into three major geological periods (each subdivided into epochs) based on impact crater density {cite:p}`Hartmann2001`, compiled globally by {cite:t}`Tanaka2014` ({numref}`fig:tanaka-global`); translating crater counts to absolute ages requires model corrections because the Martian impact rate differs from the Moon's ({numref}`fig:tanaka-periods`).
 
 ```{figure} figures/tanaka2014_geomap.avif
 :name: fig:tanaka-global
@@ -405,6 +414,14 @@ Mars is divided into three major geological periods (each subdivided into epochs
 :align: center
 
 Global geologic map of Mars from the chronostratigraphic mapping of {cite:t}`Tanaka2014`, in a Robinson projection. Noachian units (red and brown shades) dominate the southern highlands; Hesperian units (greens and blues) cover the northern lowlands and large volcanic provinces; Amazonian units (yellows and tans) include the youngest volcanic and polar deposits. The dichotomy between the heavily cratered south and the smoother north is the dominant first-order feature.
+```
+
+```{figure} figures/tanaka2014_periods.avif
+:name: fig:tanaka-periods
+:width: 700px
+:align: center
+
+Correlation chart of the map units in the global geologic map of Mars by {cite:t}`Tanaka2014`. Columns separate the major terrain categories (lowland, impact, polar, basin, volcanic, apron, transition, highland) and rows correspond to the Amazonian, Hesperian, and Noachian periods, each split into early, middle, and late epochs except the Hesperian, which has only an early and a late epoch. Each box spans the age range of one map unit. The numbers on the right give the crater densities that define the epoch boundaries: the number of craters larger than 1, 5, and 16 km per $10^6$ km$^2$. The decline in the number and extent of new units from the Noachian to the Amazonian records the slowing of resurfacing on Mars and is a key constraint on its thermal and atmospheric evolution. Image credit: USGS (public domain).
 ```
 
 The **Noachian** period ($\sim 4.1$ to $\sim 3.7$ Ga) is the oldest, preserved in the heavily cratered southern highlands.
@@ -453,8 +470,16 @@ It is the largest unambiguous impact crater on Mars.
 **Valley networks** are branching channels in Noachian highlands formed by precipitation-fed runoff {cite:p}`Hynek2010`.
 **Outflow channels** are large scoured features carved during the Hesperian by catastrophic aquifer discharges.
 
-**Clay minerals** (phyllosilicates) formed by aqueous alteration of basalt at near-neutral pH during the Noachian.
+**Clay minerals** (phyllosilicates) formed by aqueous alteration of basalt at near-neutral pH during the Noachian ({numref}`fig:bibring-global`).
 {cite:t}`Bibring2006` divided Martian aqueous history into the clay-forming **phyllosian** (neutral pH), sulfate-rich **theiikian** (acidic, evaporative), and dry **siderikian** ({numref}`fig:bibring-timeline`).
+
+```{figure} figures/bibring2006_globalmap.avif
+:name: fig:bibring-global
+:width: 700px
+:align: center
+
+Global map of hydrated minerals on Mars from OMEGA/*Mars Express*. **Top:** detections only, on a black background. **Bottom:** the same detections overlaid on an MGS/MOLA altitude reference map. **Red** points mark phyllosilicate (clay) detections, **blue** points mark sulfate detections, and **yellow** points mark other hydrated minerals whose spectral signatures are not driven by metal-OH vibrations. Clays cluster preferentially in the Noachian southern highlands, consistent with neutral-pH aqueous alteration during the **phyllosian** stage. Sulfates are concentrated at lower-latitude and equatorial sites, consistent with later, drier, more acidic evaporative settings of the **theiikian** stage ({numref}`fig:bibring-timeline`). Reproduced from {cite:t}`Bibring2006`, Fig. 3.
+```
 
 ```{figure} figures/bibring2006_timeline.avif
 :name: fig:bibring-timeline
@@ -466,6 +491,16 @@ The three-stage aqueous history of Mars from OMEGA imaging-spectrometer mineralo
 
 **Sulfate deposits** record later acidic and evaporative settings at Meridiani Planum and Gale crater.
 **Lakebed sediments** and deltas at Jezero and Gale crater require standing water bodies that persisted for thousands of years {cite:p}`Grotzinger2014`.
+
+{numref}`fig:ehlmann-spectra` summarises the spectral classes that record these aqueous settings.
+
+```{figure} figures/ehlmann2014_spectra.avif
+:name: fig:ehlmann-spectra
+:width: 600px
+:align: center
+
+Summary of Mars surface compositional spectra from infrared remote sensing and rover instruments, compiled by {cite:t}`EhlmannEdwards2014`. The diversity of spectral classes (basalts, hydrated silicates, sulfates, carbonates, hematite, opaline silica) is evidence for a wide range of aqueous and igneous environments through Mars history.
+```
 
 In situ analysis by the *Perseverance* rover in Jezero crater provided ground truth for these mineralogical stages {cite:p}`Farley2022`.
 PIXL and SHERLOC instrument observations revealed that the crater-floor Séítah formation consists of igneous olivine cumulates altered by multiple episodes of liquid water to form carbonates and sulfates.
@@ -506,7 +541,7 @@ Schematic of the "cold baseline with transient warm excursions" picture of the e
 Idealised two-dimensional phase diagram for the steady-state climate of early Mars under a denser atmosphere, with mean surface temperature on the horizontal axis and total surface $\mathrm{H_2O}$ inventory on the vertical axis across four end-member regimes. The cold and relatively dry quadrant (bottom left), combined with episodic melting, best matches the geological evidence. Reproduced from {cite:t}`Wordsworth2016`, Fig. 7.
 ```
 
-Fluvial features shifted from Late Noachian and Early Hesperian valleys to Late Hesperian and younger **alluvial fans** (deposits where channels slow) at mid-latitudes ({numref}`fig:kite-distribution`), indicating a transition from global to seasonal greenhouse warming {cite:p}`KiteCarter2022`.
+Fluvial features shifted from Late Noachian and Early Hesperian valleys to Late Hesperian and younger **alluvial fans** (deposits where channels slow) at mid-latitudes ({numref}`fig:kite-distribution`), indicating a transition from global to seasonal greenhouse warming ({numref}`fig:kite-schematic`) {cite:p}`KiteCarter2022`.
 
 ```{figure} figures/kite2022_valley_distribution.avif
 :name: fig:kite-distribution
@@ -514,6 +549,14 @@ Fluvial features shifted from Late Noachian and Early Hesperian valleys to Late 
 :align: center
 
 Changing spatial distribution of water-worn landforms on Mars. **Top:** early-stage valley networks, about $3.6$ Ga and older (Late Noachian and Early Hesperian). **Bottom:** late-stage alluvial fans and deltas, $3.5$ to $3$ Ga and perhaps younger (Late Hesperian and Amazonian). Each feature is coloured by its elevation, from $-6$ km (blue) to $+6$ km (yellow). Grey marks the region excluded because the detection probability there is low or zero, and the elevation contours are spaced $3$ km apart. The rover letters are C for *Curiosity* at Gale crater, P for *Perseverance* at Jezero crater, and T-1 for the *Tianwen-1* rover *Zhurong*. Once the detection bias is corrected, the early features favour high ground, while the late ones lie lower and form bands at mid-latitude in both hemispheres. The control therefore passes from elevation to latitude, and that shift is what constrains the change in the greenhouse effect. Reproduced from {cite:t}`KiteCarter2022`, Fig. 1.
+```
+
+```{figure} figures/kite2022_schematic.avif
+:name: fig:kite-schematic
+:width: 700px
+:align: center
+
+Graphical summary of the {cite:t}`KiteCarter2022` model for the climate evolution of Mars. **Left:** geographically idealised cross-sections of the two eras, with the early-stage valley networks (blue) cut into the highlands at about $3.6$ Ga, and the late-stage alluvial fans (orange) confined to lower ground at $3.5$ to $3$ Ga; the grey subsurface band is the cryosphere. **Right:** the climate states of the model as a function of $\mathrm{CO_2}$ loss (horizontal, from $1000$ to $10$ mbar) and loss of non-$\mathrm{CO_2}$ warming (vertical, gray-gas column optical depth $\tau$ from $5$ down to $0$), with the present-day state marked at the bottom right. The bands run from warm and wet at the top, through warm lowlands with cold highlands, then cold and wet, to cold and dry at the bottom. The blue outline encloses the states that match the early era and the orange outline those that match the late era. The two can be connected with or without a change in $p\mathrm{CO_2}$, but a decline in non-$\mathrm{CO_2}$ radiative forcing is very probably required. Reproduced from {cite:t}`KiteCarter2022`, Fig. 6.
 ```
 
 Geological constraints indicate that early Mars climate fluctuated between cold baselines and wet episodes, with valley networks forming over $10^4$ yr or longer {cite:p}`Kite2019,KiteConway2024`.
@@ -675,6 +718,16 @@ Because Jeans escape removes only light species, heavier Martian volatiles escap
 Oxygen escape rates from Mars (in particles per second) for the four MAVEN-resolved channels (dissociative recombination, pick-up ions, ion outflow, and sputtering) extrapolated from present-day measurements back to $\sim 3.5$ Ga using estimates of the past solar EUV flux. All four channels were one to two orders of magnitude higher in the early Hesperian than today; the pick-up loss has dropped most steeply over time. From {cite:t}`Jakosky2018`. The integrated total atmospheric loss over $\sim 4$ Gyr (combining the oxygen channels shown here with hydrogen, carbon, and nitrogen loss inferred from other MAVEN datasets and isotopic constraints) is summarised in the body text below.
 ```
 
+{numref}`fig:jakosky-h` shows the seasonal variation of the hydrogen corona that feeds the hydrogen escape.
+
+```{figure} figures/jakosky2018_hloss.avif
+:name: fig:jakosky-h
+:width: 500px
+:align: center
+
+H corona column density at Mars as a function of solar longitude over a Mars year. Hydrogen escape varies by an order of magnitude over the seasonal cycle, peaking near perihelion when the lower atmosphere is warmer and water vapour rises to higher altitudes where it is photolysed. From {cite:t}`Jakosky2018`.
+```
+
 Extrapolating escape rates across solar EUV history indicates Mars lost $\sim 0.5$ to $1$ bar of $\mathrm{CO_2}$ and $\sim 23$ m of water equivalent over $4$ Gyr {cite:p}`Jakosky2018` ({numref}`fig:jakosky-loss`).
 Carbon isotope ratios independently require an early atmospheric pressure below $\sim 1\ \mathrm{bar}$ {cite:p}`Hu2015` ({numref}`fig:hu-carbon`).
 
@@ -692,7 +745,7 @@ Atmospheric loss is regulated by the **Martian dynamo**, the internal process ge
 
 Although Mars lacks a global magnetic field today, its southern highlands retain intense **crustal magnetic anomalies**.
 These are remanent fields acquired below the Curie temperature in an ancient dynamo {cite:p}`Acuna1999`.
-The fields exceed $\sim 1500\ \mathrm{nT}$ at $\sim 100\ \mathrm{km}$ altitude ({numref}`fig:acuna-map`).
+The fields exceed $\sim 1500\ \mathrm{nT}$ at $\sim 100\ \mathrm{km}$ altitude ({numref}`fig:acuna-map`) ({numref}`fig:acuna-dipoles`).
 That is an order of magnitude stronger than Earth's crustal anomalies.
 
 ```{figure} figures/acuna1999_magmap.avif
@@ -701,6 +754,14 @@ That is an order of magnitude stronger than Earth's crustal anomalies.
 :align: center
 
 Map of the radial component of the magnetic field measured by *Mars Global Surveyor* MAG/ER instrument during low-altitude aerobraking and science-phasing orbits (periapsis $\sim 100$--$200\ \mathrm{km}$). Strong remanent crustal magnetisation (red and blue patches) is concentrated in the Noachian-aged southern highlands; the younger northern lowlands and the Hellas and Argyre impact basins are essentially demagnetised. From {cite:t}`Acuna1999`. Courtesy NASA Goddard Space Flight Center.
+```
+
+```{figure} figures/acuna1999_dipoles.avif
+:name: fig:acuna-dipoles
+:width: 600px
+:align: center
+
+Polar stereographic projection of the radial component $B_r$ of the Martian crustal magnetic field measured during low-altitude *MGS* orbits (periapsis $\sim 100$--$200\ \mathrm{km}$; left, colour-saturated at $\pm 1500$ nT) and the corresponding topographic basemap (right, greyscale), showing concentric latitude rings at $60^\circ$, $70^\circ$, $80^\circ$ and longitude meridians at $0^\circ$, $90^\circ\mathrm{W}$, $180^\circ$, $270^\circ\mathrm{W}$. Strong Noachian-age remanent magnetisation appears as concentrated red and blue patches confined to one azimuthal sector; the rest of the polar cap and the basin-reset terrains are essentially demagnetised. The lack of crustal magnetisation across Hellas, Argyre, and the Borealis lowlands implies that the dynamo had switched off before those basins formed and reset their thermal state. From {cite:t}`Acuna1999`. Courtesy NASA Goddard Space Flight Center.
 ```
 
 The Hellas, Argyre, and Isidis impact basins ($4.0$ to $4.1\ \mathrm{Ga}$) are demagnetised relative to surrounding terrain.

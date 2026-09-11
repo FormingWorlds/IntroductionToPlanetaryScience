@@ -104,6 +104,16 @@ The mechanisms driving this contraction remain debated ({numref}`fig:jupiter_grs
 Cluster of cyclones encircling Jupiter's north pole, imaged by Juno's JIRAM thermal infrared instrument. A central polar cyclone is surrounded by eight cyclones in a stable polygonal arrangement. The pattern persisted across multiple Juno perijove flybys and demonstrates the rotational organization of Jovian polar weather. Image credit: NASA/JPL-Caltech/SwRI/ASI/INAF/JIRAM. See {cite:t}`Adriani2018`.
 ```
 
+{numref}`fig:jupiter_s_pole` shows the cyclone cluster at the south pole.
+
+```{figure} figures/jupiter_south_pole_juno.avif
+:align: center
+:name: fig:jupiter_s_pole
+:width: 75%
+
+Jupiter's south pole as seen by JunoCam in visible light. A central cyclone (diameter $\sim$5,800 km) is surrounded by five companion cyclones, each $\sim$5,600--7,000 km across. Unlike the north pole (where the central cyclone is encircled by eight companions $\sim$4,000--4,600 km in diameter), the south pole hosts a pentagonal arrangement, which shows that the polar cyclone clusters are stable but not unique solutions of the deep-jet dynamics. Image credit: NASA/JPL-Caltech/SwRI/MSSS/Betsy Asher Hall/Gervasio Robles. See {cite:t}`Adriani2018`.
+```
+
 Both poles host stable polygonal cyclone clusters: a central cyclone surrounded by eight others at the north pole ({numref}`fig:jupiter_n_pole`) and five at the south pole {cite:p}`Adriani2018`.
 {cite:t}`Kaspi2018` showed that zonal jets penetrate several thousand kilometres, decaying by $\sim$2,000 km and vanishing by $\sim$3,000 km, and below this depth magnetic stresses in metallic hydrogen damp differential rotation into solid-body rotation.
 
@@ -125,18 +135,44 @@ It is sustained by tidal flexing in the **Laplace resonance**, an orbital resona
 Loki Patera, the largest volcanic depression on Io, imaged by Voyager 1 in 1979. Loki is a periodically resurfacing lava lake about 200 km across that contributes a substantial fraction of Io's global thermal output. Image credit: NASA/JPL.
 ```
 
+{numref}`fig:io_tvashtar` shows an active fire fountain at Tvashtar Catena imaged by Galileo.
+
+```{figure} figures/io_tvashtar_eruption.avif
+:align: center
+:name: fig:io_tvashtar
+:width: 65%
+
+Composite Galileo view of the active fire fountain at Tvashtar Catena on Io, combining low-resolution colour imaging from orbit C21 with visible and infrared data from orbits I25 (26 Nov 1999) and I27 (22 Feb 2000) that captured the active lava flow in the act. Tvashtar is one of the most dramatic active volcanic eruptions documented in the solar system. Image credit: NASA/JPL/University of Arizona.
+```
+
 Volcanic resurfacing on $\sim$Myr timescales leaves Io with essentially no impact craters ({numref}`fig:io_loki`).
 Io's tenuous $\mathrm{SO_2}$ atmosphere is supplied by volcanic plumes and sublimating surface frosts.
 
+```{figure} figures/io_tidal_park2024.avif
+:align: center
+:name: fig:io_tidal
+:width: 90%
+
+Io's measured tidal response compared with interior models **without** (a) and **with** (b) a global magma ocean. The sketches show the layering of each model. The plots show the dissipation factor $|k_2|/Q$ (vertical axis, logarithmic) against the real part of the tidal Love number, $\mathrm{Re}(k_2)$ (horizontal axis). Separate curves correspond to different lithosphere thicknesses $d$ (a) or to different depths $h$ of a 100 km thick magma ocean (b); the markers along each curve mark models with different values of the mantle rheology parameter $\beta$, which sets how strongly the mantle dissipates tidal energy. Green boxes are the 1$\sigma$ and 3$\sigma$ Juno constraints, and grey bands mark the earlier astrometry-only constraint. Models without a magma ocean pass through the Juno box for low values of $\beta$, whereas a magma ocean shallower than about 500 km produces a far larger $\mathrm{Re}(k_2)$ than measured. The data therefore **preclude a shallow magma ocean** and are consistent with a mostly solid mantle: a single gravity measurement can rule out a whole class of interior structures. Reproduced from {cite:t}`Park2024`.
+```
+
 Juno measured the gravitational **$k_2$ tidal Love number** (a dimensionless measure of tidal deformation) to be $\mathrm{Re}(k_2) = 0.125 \pm 0.047$ {cite:p}`Park2024`.
 This rules out a global shallow magma ocean.
-It is consistent with a mostly solid silicate mantle with localised partial melting.
+It is consistent with a mostly solid silicate mantle with localised partial melting ({numref}`fig:io_tidal`).
 
 ### Europa
 
 Europa is an icy Galilean moon ($R = 1561$ km).
 Low crater counts indicate a young surface age of 40–90 Myr {cite:p}`Pappalardo1999`.
-Its water-ice surface is marked by **lineae** (long fracture systems) and **chaos terrain** (disrupted regions of broken and refrozen ice) ({numref}`fig:europa_chaos`).
+Its water-ice surface is marked by **lineae** (long fracture systems) and **chaos terrain** (disrupted regions of broken and refrozen ice) ({numref}`fig:europa_chaos`) ({numref}`fig:europa_galileo`).
+
+```{figure} figures/europa_galileo_mosaic.avif
+:align: center
+:name: fig:europa_galileo
+:width: 326px
+
+High-resolution view of Europa's surface from the Galileo orbiter, showing the network of dark and bright lineae (long fractures), patches of chaos terrain, and the limited density of impact craters indicative of a young surface. Image credit: NASA/JPL-Caltech/SETI Institute.
+```
 
 ```{figure} figures/europa_chaos_terrain.avif
 :align: center
@@ -157,7 +193,7 @@ NASA's Europa Clipper mission, launched in October 2024, will arrive at Jupiter 
 Ganymede is the largest moon in the solar system.
 Its radius is 2634 km.
 It is the only moon with an **intrinsic dynamo magnetic field**, an internally generated field ({ref}`Lecture 4 <lecture04>`, {ref}`Lecture 8 <lecture08>`).
-Its interior is fully differentiated into a metallic iron core, silicate mantle, and outer ice shell ({numref}`fig:ganymede_juno`).
+Its interior is fully differentiated into a metallic iron core, silicate mantle, and outer ice shell ({numref}`fig:ganymede_juno`) ({numref}`fig:ganymede_grooves`).
 
 ```{figure} figures/ganymede_juno_closeup.avif
 :align: center
@@ -167,14 +203,30 @@ Its interior is fully differentiated into a metallic iron core, silicate mantle,
 Ganymede imaged by JunoCam during the 7 June 2021 close flyby, the first close encounter with the moon since Galileo's mission ended in 2003. The image highlights the contrast between bright grooved terrain and darker ancient cratered terrain. Image credit: NASA/JPL-Caltech/SwRI/MSSS.
 ```
 
+```{figure} figures/ganymede_grooves.avif
+:align: center
+:name: fig:ganymede_grooves
+:width: 75%
+
+Grooved bright terrain (Lagash Sulcus) cutting through ancient cratered dark terrain in the Marius Regio of Ganymede, imaged at $\sim$288 m/pixel by the Galileo orbiter on 6 June 1997 (PIA01617). The parallel ridges and troughs record episodes of tectonic extension early in Ganymede's history and stand in stark contrast to Callisto's heavily cratered, undisturbed surface. Image credit: NASA/JPL-Caltech/Brown University.
+```
+
 Hubble UV observations of auroral rocking require an ocean approximately 100 km deep beneath a 150 km ice shell {cite:p}`Saur2015`.
 ESA's JUICE mission, launched in 2023, will orbit Ganymede in 2034 to map its interior {cite:p}`Grasset2013`.
 
 ### Callisto
 
 Callisto, the outermost Galilean moon, is only **partially differentiated**.
-Rock and ice are incompletely separated ({numref}`fig:callisto_cutaway`).
+Rock and ice are incompletely separated ({numref}`fig:callisto_cutaway`) ({numref}`fig:callisto`).
 Its bulk density of 1834 kg m$^{-3}$ and dimensionless moment of inertia $C/MR^2 \approx 0.355$, compared to 0.4 for a uniform sphere, reflect this incomplete separation {cite:p}`Anderson2001`.
+
+```{figure} figures/callisto_global.avif
+:align: center
+:name: fig:callisto
+:width: 60%
+
+Callisto in global colour view, assembled from Galileo and Voyager images. The surface is dominated by ancient impact craters and lacks the tectonic features that betray subsurface activity on Europa and Ganymede. The bulk density and moment of inertia indicate only partial differentiation. Image credit: NASA/JPL-Caltech.
+```
 
 ```{figure} figures/callisto_cutaway.avif
 :align: center
@@ -215,6 +267,14 @@ Their sinking releases gravitational energy as heat, explaining Saturn's excess 
 This process depletes upper-envelope helium, matching Voyager measurements.
 Jupiter undergoes less helium rain because its hotter interior limits immiscibility.
 
+```{figure} figures/saturn_interior_mankovich2021.avif
+:align: center
+:name: fig:saturn_interior
+:width: 70%
+
+Saturn's heavy-element distribution $Z(r)$ (top), density $\rho(r)$ (middle), and Brunt-Vaisala frequency $N$ (bottom) as a function of fractional radius from {cite:t}`Mankovich2021`. The colour scale is the relative log-likelihood of each model, the yellow track is the maximum-likelihood profile, and the grey envelope is the prior. The heavy elements form a stably stratified, dilute distribution extending out to roughly 60% of Saturn's radius rather than being concentrated in a compact central core.
+```
+
 ```{figure} figures/saturn_kronoseismology_mankovich2021.avif
 :align: center
 :name: fig:kronoseismology
@@ -225,7 +285,7 @@ Kronoseismology constraints on Saturn's interior from {cite:t}`Mankovich2021`. L
 
 Saturn's interior is probed by **kronoseismology**.
 The method detects f-mode oscillations through C-ring density waves ({numref}`fig:kronoseismology`).
-These waves require a stably stratified, dilute core extending to roughly 60% of Saturn's radius with $\sim$17 $\Mearth$ of rock and ice {cite:p}`Mankovich2021`.
+These waves require a stably stratified, dilute core extending to roughly 60% of Saturn's radius with $\sim$17 $\Mearth$ of rock and ice ({numref}`fig:saturn_interior`) {cite:p}`Mankovich2021`.
 Like Jupiter, Saturn has an extended dilute core rather than a compact central core.
 
 Saturn's rotation period is hard to measure.
@@ -279,6 +339,14 @@ The B and C rings lie inside the fluid **Roche limit** ($\sim$126,000 km), while
 Natural-colour radial scan across Saturn's main rings as imaged by Cassini (PIA08389). The C ring appears as the inner faint band, followed by the bright B ring, the dark Cassini Division at $\sim$118,000 km from Saturn's centre, and the outer A ring. The Cassini Division is maintained by a 2:1 mean-motion resonance with the moon Mimas: ring particles inside the gap are perturbed onto eccentric orbits and are eventually swept out, leaving the gap as a persistent feature. Image credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
+```{figure} figures/saturn_propeller_targeted.avif
+:align: center
+:name: fig:propeller_ring
+:width: 80%
+
+Two close-up Cassini views of the same large "propeller" feature in Saturn's A ring. The asymmetric S-shape is the gravitational wake carved by an embedded $\sim$1 km moonlet that is too small to clear a gap entirely. Tracking these features over the Cassini mission has provided one of the few direct measurements of the orbital evolution of small bodies embedded in a planetary disk {cite:p}`Tiscareno2013`. Image credit: NASA/JPL-Caltech/Space Science Institute.
+```
+
 The rings are composed overwhelmingly of water ice ($>$95% by mass), with minor silicates and organics.
 Particle sizes span 1 cm to 10 m under a power-law distribution.
 Their vertical thickness is $\sim$10 m across $\sim$10$^5$ km radially.
@@ -287,7 +355,7 @@ The total ring mass is $\sim$$1.5 \times 10^{19}$ kg, about 40% of the mass of M
 Gravitational interactions with small moons sculpt ring structures.
 Prometheus and Pandora shepherd the F ring, while Pan clears the Encke Gap in the A ring.
 A 2:1 mean-motion resonance with Mimas perturbs particle orbits to clear the Cassini Division.
-Embedded moonlets carve **propeller features** (partial wakes on either side of their orbit), revealing orbital migration in a planetary disk, the same physics as planet migration in the protoplanetary disc {cite:p}`Tiscareno2013` ({ref}`Lecture 2 <lecture02>`).
+Embedded moonlets carve **propeller features** (partial wakes on either side of their orbit), revealing orbital migration in a planetary disk, the same physics as planet migration in the protoplanetary disc {cite:p}`Tiscareno2013` ({ref}`Lecture 2 <lecture02>`) ({numref}`fig:propeller_ring`).
 
 ### Saturn's rings: age and evolution
 
@@ -467,7 +535,15 @@ NASA's Dragonfly rotorcraft, scheduled for launch in 2028 and arrival in 2034, w
 ### Enceladus
 
 Enceladus is a small moon of 252 km radius.
-In 2005, Cassini discovered active geysers erupting from south polar fractures called **tiger stripes** {cite:p}`PorcoEnc2006` ({numref}`fig:geyser_basin`).
+In 2005, Cassini discovered active geysers erupting from south polar fractures called **tiger stripes** {cite:p}`PorcoEnc2006` ({numref}`fig:geyser_basin`) ({numref}`fig:tiger_stripes`).
+
+```{figure} figures/enceladus_tiger_stripes.avif
+:align: center
+:name: fig:tiger_stripes
+:width: 75%
+
+The "tiger stripes" of Enceladus: four parallel fracture zones near the south pole that are the source regions of the active plumes. The fractures are warmer than the surrounding terrain by tens of kelvins, and their ages and orientations track the stress field induced by Enceladus's eccentric orbit around Saturn. Image credit: NASA/JPL-Caltech/SSI.
+```
 
 ```{figure} figures/enceladus_tiger_thermal.avif
 :align: center
@@ -516,6 +592,16 @@ Mimas dominated by the giant Herschel impact crater, imaged by Cassini during it
 :width: 70%
 
 Iapetus showing the two-toned hemispheric pattern, Cassini global mosaic from the 31 December 2004 flyby (PIA06166). The leading hemisphere (the dark Cassini Regio, covering nearly the entire visible disc here) is coated with material believed to be infall from the distant outer retrograde moon Phoebe, while the trailing hemisphere is bright water ice. A thermal-segregation feedback amplifies the contrast: the dark side absorbs more sunlight, gets warmer, sublimates ice, and becomes darker still, while the bright side stays cold and accumulates frost. The narrow ridge running along the equator is also visible. Image credit: NASA/JPL-Caltech/Space Science Institute.
+```
+
+{numref}`fig:phoebe` shows Phoebe, the captured outer moon whose dark infall coats the leading hemisphere of Iapetus.
+
+```{figure} figures/phoebe_cassini.avif
+:align: center
+:name: fig:phoebe
+:width: 55%
+
+Phoebe, an outer irregular moon of Saturn, meaning its distant, retrograde, and highly inclined orbit marks it as captured rather than formed in place around the planet. Phoebe is widely interpreted as a captured Kuiper Belt object and is the source of dark dust that infalls onto Iapetus's leading hemisphere. Image credit: NASA/JPL-Caltech/Space Science Institute.
 ```
 
 Iapetus has a dark leading hemisphere coated by infall from Phoebe and a bright icy trailing hemisphere.
@@ -569,9 +655,7 @@ At least two giant impacts, an earlier partial tilt and a final oblique one, lik
 :width: 85%
 
 Smoothed-particle-hydrodynamics simulation of a giant impact on the proto-Uranus, from {cite:t}`Kegerreis2018`. Snapshots are shown from $t = 1$ h to $t = 40$ h after first contact for a $2\,\Mearth$ impactor on a low angular momentum trajectory. Particles are coloured by material and origin: light and dark grey are target ice and rock, light blue is target H/He atmosphere, and purple and brown are the corresponding impactor materials. The white dashed circle marks Uranus's present-day Roche radius. Such oblique collisions deliver enough angular momentum to tilt the proto-Uranus's spin axis by tens of degrees, can deposit impactor rock into the deep interior, and (for higher angular momentum cases) eject a debris disk in the new equatorial plane from which the regular Uranian satellites later re-accrete.
-```
-
-During the 1986 Voyager 2 flyby near solstice, Uranus appeared featureless with its south pole pointing toward the Sun ({numref}`fig:uranus_voyager`).
+```During the 1986 Voyager 2 flyby near solstice, Uranus appeared featureless with its south pole pointing toward the Sun ({numref}`fig:uranus_voyager`).
 Since the 2007 equinox, as northern summer approaches, observations have revealed increasing cloud activity, including storms in 2014, a polar cyclone, and distinct polar cap structure {cite:p}`DePater2022`.
 
 Uranus has an anomalously low **internal heat flow**.
@@ -656,6 +740,16 @@ Voyager 2 showed that the outermost Adams ring contains five bright arcs trapped
 :width: 70%
 
 Backscattered-light view of Neptune's rings from Voyager 2 in 1989. The two brightest features are the Adams ring (outer) and the Le Verrier ring (inner). The arcs in the Adams ring are gravitationally trapped at specific longitudes by resonances with the inner moon Galatea. Image credit: NASA/JPL-Caltech.
+```
+
+{numref}`fig:neptune_arcs` shows the full ring system in forward-scattered light.
+
+```{figure} figures/neptune_rings_voyager_arc.avif
+:align: center
+:name: fig:neptune_arcs
+:width: 75%
+
+Long-exposure forward-scattered view of Neptune's rings showing the full ring system, including the arcs in the Adams ring and the diffuse material between the named rings. Image credit: NASA/JPL-Caltech.
 ```
 
 Both ice giant ring systems are dominated by dark, carbon-rich material rather than Saturn's water ice.

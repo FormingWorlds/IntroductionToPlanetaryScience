@@ -393,12 +393,32 @@ Liquid water is the most powerful erosive agent on Earth, and evidence for past 
 - **Mars:** **Valley networks** on the Noachian-aged southern highlands (the **Noachian** is the oldest of the three main Martian geological periods, spanning roughly 4.1 to 3.7 Ga) resemble terrestrial river drainage systems, implying sustained liquid water flow during the late Noachian to early Hesperian, with localised reactivation continuing into the Amazonian for individual systems such as Warrego Valles {cite:p}`Ansan2006`. **Outflow channels** (e.g., Ares Vallis, Kasei Valles) are enormous flood features, hundreds of kilometres long and tens of kilometres wide, carved by catastrophic releases of groundwater. These features are discussed further in {ref}`Lecture 10 <lecture10>`.
 - **Titan:** Saturn's largest moon has **methane rivers** that carve channels into its icy surface; the Huygens probe landed among rounded ice pebbles in a dry riverbed in 2005. Titan's methane hydrological cycle is the only known active fluvial system beyond Earth ({ref}`Lecture 11 <lecture11>`). The two kinds of Martian water-carved feature, catastrophic outflow channels and sustained-discharge dendritic valley networks, are shown in {numref}`fig:mars-outflow` and {numref}`fig:mars-valley-networks`.
 
+{numref}`fig:grand-canyon` shows the terrestrial type example of sustained fluvial erosion.
+
+```{figure} figures/grand_canyon_colorado.avif
+:name: fig:grand-canyon
+:width: 550px
+:align: center
+
+The Colorado River winding through the Grand Canyon, Arizona. The river has incised roughly 1.6 km through nearly flat-lying Paleozoic sedimentary rock over the past 5 to 6 Myr, the type example of sustained fluvial erosion on Earth. The stepped canyon walls record differential erosion: resistant limestone and sandstone form cliffs, and weaker shale erodes to slopes. Credit: Alex Demas/USGS, public domain.
+```
+
 ```{figure} figures/mars_outflow_aram.avif
 :name: fig:mars-outflow
 :width: 320px
 :align: center
 
 A Martian outflow channel cutting through Aram Chaos. The braided streamlined islands and broad scoured trough are the geomorphological signature of catastrophic flood discharges, plausibly fed by sudden release of subsurface ice or groundwater on early Mars. Such channels are tens of kilometres wide and hundreds of kilometres long, dwarfing any terrestrial flood feature, and are distinct from the dendritic valley networks which formed under more sustained, lower-discharge conditions. Credit: NASA/JPL-Caltech/MSSS, public domain.
+```
+
+{numref}`fig:titan-huygens` shows the rounded pebbles of the dry riverbed at the Huygens landing site.
+
+```{figure} figures/titan_huygens_surface.avif
+:name: fig:titan-huygens
+:width: 400px
+:align: center
+
+Scale composite of three progressively enlarged crops from the post-landing surface image returned by ESA's Huygens probe on 14 January 2005, the only in-situ image ever taken from the surface of an outer-solar-system body. The rounded, decimetre-scale "rocks" in the foreground (bottom panel, shown at their actual apparent size) are blocks of water-ice rounded by methane fluvial transport; the surface is a damp dark plain of methane-soaked organic sediment in a dried-out riverbed. Together with the descent imagery showing dendritic drainage networks, this image confirmed that liquid methane actively shapes Titan's surface today. Credit: ESA/NASA/JPL-Caltech/University of Arizona, public domain.
 ```
 
 ```{figure} figures/mars_valley_networks_viking.avif

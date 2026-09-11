@@ -505,7 +505,15 @@ The **scattered disk** has perihelia near Neptune ($q \sim 30$ AU), while **deta
 Orbital parameters of the 1142 characterised trans-Neptunian objects discovered by the Outer Solar System Origins Survey (OSSOS) and affiliated programmes (CFEPS, MiLat, AlexWP), classified into Jupiter-coupled (dark blue), centaurs (cyan), classical (light blue), resonant (red), scattering (orange), and detached (dark red) populations. Top: orbital inclination versus heliocentric distance. Middle: orbital inclination versus semimajor axis. Bottom: eccentricity versus semimajor axis. Pale blue vertical lines mark the locations of the principal Neptune mean-motion resonances; the cold classical population is the dense low-inclination cluster between 42 and 47 AU. From Figure 4 of {cite:t}`Bannister2018`.
 ```
 
-The bimodal inclination distribution, resonant populations, and scattered disk provide empirical evidence for giant-planet migration under the Nice Model ({ref}`Lecture 2 <lecture02>`).
+```{figure} figures/petit_classical_kbo.avif
+:name: fig:l12-kuiper-inclination
+:width: 600px
+:align: center
+
+The three components of the CFEPS-L7 synthetic model of the main classical Kuiper belt, separated into the broad-inclination "hot" component (top left), the dynamically active "stirred" component (top right), the dense low-inclination "kernel" near $a \approx 44$ AU (bottom left), and the combined model (bottom right). Each panel shows orbital eccentricity $e$ vs semimajor axis $a$ (upper sub-panel) and inclination $i$ vs $a$ (lower sub-panel). The kernel and the broader hot component coexist in the same range of $a$ but occupy completely different parts of $(e, i)$ space, evidence that the cold classicals were never strongly perturbed by Neptune while the hot classicals were excited by the giant-planet instability described by the Nice Model. From Figure 4 of {cite:t}`Petit2011`.
+```
+
+The bimodal inclination distribution, resonant populations, and scattered disk provide empirical evidence for giant-planet migration under the Nice Model ({ref}`Lecture 2 <lecture02>`) ({numref}`fig:l12-kuiper-inclination`).
 
 ### Pluto: a dwarf planet visited
 
@@ -539,7 +547,7 @@ Pluto has a thin nitrogen atmosphere (around 10 $\mu$bar) undergoing slow escape
 ### Charon and the small moons
 
 Charon (radius $606$ km) and Pluto form a binary: their barycentre lies outside Pluto, the only such case among planet-moon systems in the solar system.
-Its polar cap, **Mordor Macula**, is interpreted as photochemically processed methane that escaped Pluto's atmosphere and froze onto Charon {cite:p}`Grundy2016` ({numref}`fig:l12-mordor`).
+Its polar cap, **Mordor Macula**, is interpreted as photochemically processed methane that escaped Pluto's atmosphere and froze onto Charon {cite:p}`Grundy2016` ({numref}`fig:l12-mordor`) ({numref}`fig:l12-pluto-charon`).
 
 ```{figure} figures/charon_mordor.avif
 :name: fig:l12-mordor
@@ -547,6 +555,14 @@ Its polar cap, **Mordor Macula**, is interpreted as photochemically processed me
 :align: center
 
 Charon imaged by New Horizons. The dark reddish region at the north pole is **Mordor Macula**, an accumulation of photochemically processed organic compounds (tholins) sourced from Pluto's escaping atmosphere. The chasm visible across the equator is part of an extensional tectonic system. Image credit: NASA/JHUAPL/SwRI, public domain.
+```
+
+```{figure} figures/pluto_charon_features_stern.avif
+:name: fig:l12-pluto-charon
+:width: 700px
+:align: center
+
+Cylindrical projections of Pluto (top) and Charon (bottom) with informally named features overlaid, derived from New Horizons imaging during the 2015 flyby. The colour-coded regions on Pluto separate the named maculae, regiones, planitiae, terrae, and montes; the colour-coded regions on Charon highlight the polar Mordor Macula and the equatorial chasms (Argo, Serenity, Macross). The Pluto-Charon system is a true binary whose barycentre lies outside Pluto. From Figure 2 of {cite:t}`Stern2015`.
 ```
 
 The four small moons (Styx, Nix, Kerberos, Hydra) are likely fragments of the same collision that produced Charon {cite:p}`Canup2011`.
@@ -580,6 +596,15 @@ Candidate dwarf planets include **Sedna**, whose detached orbit (perihelion 76 A
 Eris and its moon Dysnomia imaged by the Hubble Space Telescope. Eris is approximately the same size as Pluto but more massive, hence denser. Its discovery in 2005 directly precipitated the IAU's 2006 planet definition. Image credit: NASA/ESA/M. Brown, public domain.
 ```
 
+{numref}`fig:l12-haumea` shows the occultation light curve that revealed the ring of Haumea.
+
+```{figure} figures/haumea_ring.avif
+:name: fig:l12-haumea
+:width: 480px
+:align: center
+
+Stellar occultation light curve of the dwarf planet Haumea on 21 January 2017, recorded with the 1 m telescope at Konkoly Observatory (Hungary). The deep central drop is the body of Haumea; the two narrower symmetric dips on either side reveal a $\sim 70$ km wide, $\sim 2{,}287$ km radius ring, the first ring system discovered around a trans-Neptunian object {cite:p}`Ortiz2017`. Figure adapted from {cite:t}`Sicardy2024`.
+```
 ### The Oort cloud
 
 The **Oort cloud** is the most distant component of the solar system: a roughly spherical shell of icy bodies at heliocentric distances of approximately $2{,}000$ to $50{,}000$ AU.
@@ -613,7 +638,7 @@ Schematic anatomy of an active comet. The solid **nucleus** (1--30 km across) is
 Far from the Sun, a comet is an inert **nucleus** (a dark body 1--30 km across with albedo $\sim 4\%$).
 Inside roughly 5 AU, ice sublimation creates an extended **coma** of gas and dust ($10^4$-$10^6$ km across), an **ion tail** swept anti-sunward by the solar wind, and a **dust tail** pushed by radiation pressure ({numref}`fig:l12-comet-anatomy`).
 
-Halley's Comet ({numref}`fig:l12-halley`) is the prototypical example with a 76-year orbital period.
+Halley's Comet ({numref}`fig:l12-halley`) is the prototypical example with a 76-year orbital period ({numref}`fig:l12-halley1986`).
 Its 1986 apparition revealed an irregular $15 \times 8 \times 8$ km nucleus whose active jets are confined to small surface fractions.
 
 ```{figure} figures/halley.avif
@@ -646,6 +671,14 @@ Most JFCs survive in these orbits for $\sim 10^4$ to $10^5$ yr before ejection o
 **Long-period comets** ($P > 200$ yr) have isotropic orbital orientations and eccentricities approaching 1.
 They originate in the **Oort cloud**, deflected inward by the galactic tide and passing stars.
 Many make a single passage before ejection, while some are captured into Halley-type orbits.
+
+```{figure} figures/halley2.avif
+:name: fig:l12-halley1986
+:width: 500px
+:align: center
+
+Comet 1P/Halley photographed against the Milky Way on 21 March 1986 during its most recent apparition. The bright coma surrounds the nucleus and the long tail extends across many degrees of sky. Halley is the only short-period comet bright enough to be visible to the unaided eye. Image credit: R. Haefner / European Southern Observatory, CC BY 4.0 (Wikimedia Commons).
+```
 
 ### The D/H ratio of cometary water
 

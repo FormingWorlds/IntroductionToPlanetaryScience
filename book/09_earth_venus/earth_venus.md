@@ -150,7 +150,7 @@ The natural greenhouse effect of water vapour and $\mathrm{CO_2}$ warms the surf
 
 The **faint young Sun problem** is the contradiction between a $30\%$ fainter early Sun at $4.4$ Ga and geological evidence for liquid water from at least $4.3$ Ga {cite:p}`Feulner2012`.
 Higher early levels of $\mathrm{CO_2}$, and possibly $\mathrm{CH_4}$, most likely resolved this.
-Silicate weathering then drew them down as the Sun brightened ({numref}`fig:zahnle-solar`).
+Silicate weathering then drew them down as the Sun brightened ({numref}`fig:zahnle-solar`) ({numref}`fig:charnay-archean`).
 
 ```{figure} figures/zahnle2007_solar_evolution.avif
 :name: fig:zahnle-solar
@@ -161,6 +161,18 @@ Solar luminosity (left axis, solid black curve) and EUV/X-ray flux (right axis, 
 The bolometric luminosity has risen by about $30\%$ since $4.5$ Ga, while the EUV and X-ray fluxes have dropped by factors of $10$--$1000$ from the young, magnetically active Sun.
 The faint-young-Sun problem is the apparent contradiction between this lower bolometric flux and geological evidence for liquid water on early Earth.
 Reproduced from {cite:t}`Zahnle2007`.
+```
+
+```{figure} figures/charnay2013_archean_temperature.avif
+:name: fig:charnay-archean
+:width: 100%
+:align: center
+
+Three-dimensional general-circulation model results for the global mean surface temperature of the Archean Earth between $3.8$ Ga and $2.5$ Ga, from {cite:t}`Charnay2013`.
+Curves show solutions for three atmospheric compositions: $0.9$ mbar $\mathrm{CO_2}$ with $0.9$ mbar $\mathrm{CH_4}$ (blue), $10$ mbar $\mathrm{CO_2}$ with $2$ mbar $\mathrm{CH_4}$ (orange), and $0.1$ bar $\mathrm{CO_2}$ with $2$ mbar $\mathrm{CH_4}$ (red); solid lines include methane and dashed lines omit it.
+The dotted green line marks the freezing point of water.
+A few mbar of $\mathrm{CO_2}$ together with trace methane is marginal at $3.8$ Ga but warms by $3$ Ga, while $\sim$0.1 bar of $\mathrm{CO_2}$ together with trace methane comfortably resolves the faint-young-Sun problem at all three epochs.
+Reproduced from {cite:t}`Charnay2013`.
 ```
 
 ### Snowball Earth episodes
@@ -446,6 +458,20 @@ This exceeds the threshold.
 Upper-atmospheric water photolysed and hydrogen escaped to space.
 The result is the dry, $\mathrm{CO_2}$-dominated, $737$ K surface observed today.
 
+{numref}`fig:zahnle-runaway` shows the surface temperature of a steam atmosphere over a magma ocean as a function of the absorbed stellar and geothermal flux.
+
+```{figure} figures/zahnle2007_runaway_threshold.avif
+:name: fig:zahnle-runaway
+:width: 100%
+:align: center
+
+Surface temperature as a function of net insolation plus geothermal heat flow for a steam atmosphere over a magma ocean, from {cite:t}`Zahnle2007` (after {cite:t}`Kasting1988` and Abe \& Matsui 1988).
+The radiated cooling rate is equal to the sum of absorbed sunlight and geothermal heat flow.
+The plot shows the surface temperature as a function of this combined heat input for different amounts of atmospheric $\mathrm{H_2O}$ (in bars).
+The runaway greenhouse threshold appears as a *vertical* boundary near $\sim$300 W/m$^2$ on the heat-flow axis (the "Runaway Greenhouse Limit" line in the figure): no steady state with a solid crust exists to its left, and for net heat fluxes only modestly above this value the surface stays molten beneath a thick steam atmosphere.
+Reproduced from {cite:t}`Zahnle2007`.
+```
+
 ## Blackboard derivation: The Simpson-Nakajima runaway greenhouse limit
 
 ```{admonition} Blackboard derivation: the Simpson-Nakajima limit
@@ -577,6 +603,20 @@ The sharp transition at $a_\mathrm{cr}$ corresponds to the Simpson-Nakajima runa
 Reproduced from {cite:t}`Hamano2013`.
 ```
 
+{numref}`fig:lebrun-magma` shows the coupled evolution of potential and surface temperature for a crystallising magma ocean under its steam atmosphere on a Venus-mass planet.
+
+```{figure} figures/lebrun2013_magma_ocean_evolution.avif
+:name: fig:lebrun-magma
+:width: 100%
+:align: center
+
+Time evolution of potential temperature (black line) and surface temperature (grey line) for a crystallising magma ocean coupled to its outgassed steam atmosphere on a Venus-mass planet at the orbital distance of Venus, from panel (a) of {cite:t}`Lebrun2013` Fig. 12.
+The three vertical regions ("totally molten", "partially molten", "mush") track the planetary mantle as it crystallises; condensation of water vapour occurs at the boundary between the partially molten and mush stages.
+The dashed vertical line marks the time at which the magma ocean reaches $98\%$ solidification, $\sim 10$ Myr at Venus' orbital distance (compared with $\sim 1.5$ Myr at Earth's and $\sim 0.1$ Myr at Mars' for the corresponding panels (b) and (c) of the same figure, not shown).
+The longer magma-ocean lifetime at smaller heliocentric distances gives the steam atmosphere ample time to photolyse and lose hydrogen to space, providing the foundation of the early-loss scenario for Venus.
+{cite:t}`Lebrun2013` further showed (their Fig. 11, not shown) that below a critical distance of about $0.66$ AU around a Sun-like star, an Earth-mass planet's magma ocean cannot freeze at all and the planet remains molten indefinitely; Venus at $0.72$ AU sits just outside this limit.
+```
+
 In the **late loss** scenario, Venus condensed a surface ocean and remained temperate for billions of years {cite:p}`Way2016`, and substellar clouds reflected sunlight until water loss occurred within the last $\sim$1 Gyr ({numref}`fig:way-paleo`).
 
 ```{figure} figures/way2016_paleo_venus_temperature.avif
@@ -591,7 +631,7 @@ Surface temperatures range from below freezing in polar regions to about $40^\ci
 
 Three-dimensional simulations show that water clouds preferentially form on the nightside ({numref}`fig:turbet-clouds`) {cite:p}`Turbet2021`.
 Nightside cloud warming prevents ocean condensation.
-This traps Venus in a runaway state.
+This traps Venus in a runaway state ({numref}`fig:turbet-hysteresis`).
 
 ```{figure} figures/turbet2021_water_clouds_emission.avif
 :name: fig:turbet-clouds
@@ -605,6 +645,17 @@ In both cases the clouds are concentrated on the night-side, where they act as a
 The substellar region stays comparatively cloud-free, which keeps the planetary albedo low.
 The two planets rotate at very different rates, Earth with $P_\mathrm{rot} \approx 24$ h and Venus with $P_\mathrm{rot} \approx 5833$ h, about 243 times longer, yet the same night-side cloud pattern appears in both, so the mechanism does not depend on slow rotation.
 Reproduced from {cite:t}`Turbet2021`, Fig. 2a-d.
+```
+
+```{figure} figures/turbet2021_hysteresis.avif
+:name: fig:turbet-hysteresis
+:width: 100%
+:align: center
+
+Hysteresis loops for ocean formation on early Earth and Venus, from {cite:t}`Turbet2021`.
+**Panel (a)** shows surface temperature as a function of incoming solar flux for Earth: at $4$ Ga, water condenses from a steam atmosphere if the atmosphere is initially condensed (operating point near present-day) but enters the runaway greenhouse if it starts hot (red branch).
+**Panel (b)** shows the same for Venus: the runaway and condensed branches do not overlap, so an early Venus that started in the runaway state (the natural endpoint of magma ocean cooling at high solar flux) cannot reach the condensed branch even at $4$ Ga, when the insolation at Venus was $\sim$25% lower than today and Venus still received $\sim$500 W/m$^2$, well above the cloud-modified condensation threshold of $\sim$325 W/m$^2$.
+Reproduced from {cite:t}`Turbet2021`, Fig. 4.
 ```
 
 Both early-loss and late-loss scenarios remain observationally untested ({numref}`fig:gillmann-scenarios`), and future measurements of noble gases and crustal composition may distinguish between an early ocean and a dry history.
@@ -697,7 +748,19 @@ Today, Venus lies above the Simpson-Nakajima limit and Earth sits below it, but 
 An orbital difference of $0.05$ AU could have swapped their evolutionary outcomes.
 
 The second input is water delivery: both planets accreted in the same disk region with similar initial water inventories.
-Mantle isotopic tracers suggest that water, if it arrived with the carbonaceous material, was delivered mainly during main accretion rather than with the late veneer {cite:p}`Dauphas2017`.
+Mantle isotopic tracers suggest that water, if it arrived with the carbonaceous material, was delivered mainly during main accretion rather than with the late veneer {cite:p}`Dauphas2017` ({numref}`fig:dauphas-accretion`).
+
+```{figure} figures/dauphas2017_earth_accreting_material.avif
+:name: fig:dauphas-accretion
+:width: 100%
+:align: center
+
+Probability density function for the chromium-bearing fraction of Earth's accreting mass as a function of the cumulative accreted mass fraction, from {cite:t}`Dauphas2017` (Cr panel of their five-isotope Fig. 1).
+In the paper's notation, $x_{0.95} = 0.85$ for Cr: $95\%$ of Earth's present mantle Cr inventory arrived during the final $85\%$ of accretion, and the red triangle on the $x$-axis marks the start of this terminal window at $1 - x_{0.95} = 0.15$.
+Mass-proportional delivery would give $x_{0.95} = 0.95$, so Cr is delivered approximately proportionally to accreted mass (described by the paper as "nearly linear"), in contrast to Mo and Ru, which are strongly back-loaded toward the final stages of accretion.
+Combined with the O, Ti, Ni, Mo, and Ru tracers from the same study (not reproduced here), {cite:t}`Dauphas2017` reconstruct three accretion stages: stage I ($0\text{--}60\%$ of Earth's mass) is best fit by $\sim 51\%$ enstatite-meteorite-like (E-type) plus $\sim 40\%$ ordinary-chondrite plus $\sim 9\%$ carbonaceous-chondrite (CO/CV) material; stages II ($60\text{--}99.5\%$) and III (the last $0.5\%$, the "late veneer") are essentially $100\%$ E-type.
+The carbonaceous component, and therefore the bulk of Earth's water if it was delivered with that material, was concentrated in the early stages of main accretion rather than in the late veneer.
+```
 
 Water retention diverged as each planet cooled: Earth condensed an ocean persisting for $4$ Gyr, whereas on Venus water never condensed or was lost to a runaway greenhouse.
 
