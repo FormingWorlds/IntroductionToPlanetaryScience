@@ -256,7 +256,7 @@ Each week consists of:
 - What makes a rocky planet habitable? (synthesised from L9 + L10) (1) liquid water, (2) active geology for volatile recycling, (3) magnetic shielding (debated), (4) long-term climate stability. Earth ticks all four; Venus and Mars failed on at least two; Mercury never had a chance
 - Recent advances and upcoming missions: Mars Sample Return (NASA/ESA, schedule in flux), BepiColombo (2026 orbit insertion), ExoMars Rosalind Franklin (~2028), JAXA MMX (2026 launch, 2031 return), Curiosity long-baseline results, subsurface radar reservoirs (contested), Ingenuity helicopter legacy, Perseverance ongoing geochemistry
 
-- **Length budget (2026-09-10):** deck 47 frames (from 65), notes about 8300 words (from 11643), board sheet 5 live steps; the closing item is BepiColombo at Mercury on one hero frame.
+- **Length budget (2026-09-10):** deck 51 frames (from 65; 47 after the cut, then figures added to concept frames), notes about 8300 words (from 11643), board sheet 5 live steps; the closing item is BepiColombo at Mercury on one hero frame.
 
 ### Lecture 11: Gas & Ice Giants — Jupiter, Saturn, Uranus, Neptune
 

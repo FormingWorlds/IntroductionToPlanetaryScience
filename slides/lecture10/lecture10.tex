@@ -39,13 +39,20 @@
 
 % ── Recap ───────────────────────────────────────────────────
 \begin{frame}{Recap: Lecture 9}
-  \begin{itemize}
-    \item Earth and Venus: similar bulk parameters, radically divergent evolution
-    \item Simpson-Nakajima runaway limit: maximum OLR of a saturated water atmosphere $\sim 280$ W\,m$^{-2}$
-    \item Plate tectonics, dynamo, and biosphere form an Earth-only coincidence
-  \end{itemize}
-  \vskip8pt
-  \textbf{Today:} Mercury and Mars, the smaller siblings at opposite evolutionary limits.
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{terrestrial_planets}
+    \source{NASA/JPL}
+
+    \column{\recaptextcol}
+    \begin{itemize}
+      \item Earth and Venus: similar bulk parameters, radically divergent evolution
+      \item Simpson-Nakajima runaway limit: maximum OLR of a saturated water atmosphere $\sim 280$ W\,m$^{-2}$
+      \item Plate tectonics, dynamo, and biosphere form an Earth-only coincidence
+    \end{itemize}
+    \vskip8pt
+    \textbf{Today:} Mercury and Mars, the smaller siblings at opposite evolutionary limits.
+  \end{columns}
 \end{frame}
 
 
@@ -75,6 +82,12 @@
   \end{tabular}
   \vskip6pt
   \sourcenote{NASA Mercury Fact Sheet (NSSDC)}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{mercury_interior}}\\
+  {\footnotesize Mercury internal structure from MESSENGER: a crust (30--50 km) and thin silicate mantle (400 km) overlie a metallic core occupying 83\% of the radius, with a liquid outer core and solid inner core. Credit: Course-original figure.}
 \end{frame}
 
 % ── 3:2 resonance ─────────────────────────────────────────
@@ -223,12 +236,19 @@
 % ── Why iron-rich ───────────────────────────────────────
 \begin{frame}{Why is Mercury so Iron-Rich?}
   Mercury's anomalous core fraction likely reflects giant-impact mantle stripping rather than high-temperature solar evaporation.
-  \vskip8pt
-  \begin{itemize}
-    \item \textbf{Giant impact hypothesis} (leading): hit-and-run collisions strip the silicate mantle
-    \item \textbf{Thermal vaporization}: disfavoured by MESSENGER retention of volatiles (Na, S, K)
-    \item \textbf{Selective condensation}: Fe-Ni metal condenses before silicates in the hot inner nebula (no longer favoured)
-  \end{itemize}
+  \vskip6pt
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{terrestrial_interiors_comparison}
+    \source{NASA Solar System Exploration}
+
+    \column{\recaptextcol}
+    \begin{itemize}
+      \item \textbf{Giant impact hypothesis} (leading): hit-and-run collisions strip the silicate mantle
+      \item \textbf{Thermal vaporization}: disfavoured by MESSENGER retention of volatiles (Na, S, K)
+      \item \textbf{Selective condensation}: Fe-Ni metal condenses before silicates in the hot inner nebula (no longer favoured)
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 % ── Franco mercury impact outcomes ──────────────────────
@@ -294,6 +314,12 @@
   \end{tabular}
   \vskip6pt
   \sourcenote{NASA Mars Fact Sheet (NSSDC)}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{mariner4_mars}}\\
+  {\footnotesize The first close-up image of Mars, returned by Mariner 4 on 15 July 1965: heavily cratered terrain decisively ended speculation about Martian canals and surface vegetation. Credit: NASA/JPL.}
 \end{frame}
 
 % ── Phobos and Deimos ─────────────────────────────────────
@@ -586,6 +612,12 @@
   Jeans (1925). Limits: $\lambda \to 0$ gives the effusion flux $n\sqrt{\kB T/(2\pi m)}$; for $\lambda \gg 1$ the flux falls as $\lambda e^{-\lambda}$, so $\lambda$ from $5$ to $10$ cuts it by $\sim 80$.
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{maxwell_boltzmann_jeans}}\\
+  {\footnotesize Maxwell-Boltzmann speed distribution for atomic hydrogen at Earth (1000 K) and Mars (270 K) exobases: only molecules in the high-speed tail above escape velocity contribute to Jeans escape. Credit: Course-original figure.}
+\end{frame}
+
 % ── Mars application ─────────────────────────────────────
 \begin{frame}{Apply to Mars}
   $M = 6.4\times 10^{23}$ kg, $r_{\mathrm{exo}} \approx 3.6\times 10^6$ m, $T_{\mathrm{exo}} \approx 270$ K.
@@ -607,6 +639,12 @@
   \end{tabular}
   \vskip4pt
   \keyresult{Mars cannot lose $\mathrm{CO_2}$ thermally. Only H and $\mathrm{H_2}$ escape via Jeans; heavier species need non-thermal channels.}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{mars_dust_storm}}\\
+  {\footnotesize Mars before and during the 2018 global dust storm, imaged by the Mars Reconnaissance Orbiter: wind-lofted mineral dust obscured the surface and blocked solar power. Credit: NASA/JPL-Caltech/MSSS, public domain.}
 \end{frame}
 
 
@@ -757,11 +795,19 @@
 
 % ── Summary ────────────────────────────────────────────────
 \begin{frame}{Size and Distance Set the Trajectory}
-  \begin{itemize}
-    \item \textbf{Small bodies cool fast}: surface-area-to-volume ratio $\propto 1/R$; Mars cooled faster than Earth, so its dynamo shut off early
-    \item \textbf{Mercury keeps a weak dynamo}: light elements (S, Si) keep a thin outer-core shell liquid; thermal stratification gives the weak, offset field
-    \item \textbf{Lesson}: dynamo persistence needs (a) core size, (b) a slow-cooling mantle, (c) chemical buoyancy from inner-core growth; Mars failed (b), Mercury keeps (a), Earth has all three
-  \end{itemize}
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig[0.55\textheight]{magnetosphere_anatomy_esa}
+    \source{ESA}
+
+    \column{\recaptextcol}
+    \footnotesize
+    \begin{itemize}
+      \item \textbf{Small bodies cool fast}: surface-area-to-volume ratio $\propto 1/R$; Mars cooled faster than Earth, so its dynamo shut off early
+      \item \textbf{Mercury keeps a weak dynamo}: light elements (S, Si) keep a thin outer-core shell liquid; thermal stratification gives the weak, offset field
+      \item \textbf{Lesson}: dynamo persistence needs (a) core size, (b) a slow-cooling mantle, (c) chemical buoyancy from inner-core growth; Mars failed (b), Mercury keeps (a), Earth has all three
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Summary}
