@@ -707,7 +707,7 @@ Because Voyager 2 measured only the lowest gravity moments ($J_2$ and $J_4$), in
 Schematic possible internal structures of an ice giant from {cite:t}`Helled2020`. Panels (a) through (d) illustrate increasingly gradual compositional transitions: (a) sharp boundaries between H/He envelope, ices, and rock; (b) sharp envelope/ice boundary but a gradual ice/rock transition; (c) gradual envelope/ice transition with a sharp ice/rock boundary; (d) fully gradual transitions from envelope through ice to rock with a global composition gradient. The Voyager-era gravity data alone cannot distinguish among these possibilities, which is one of the central motivations for a dedicated ice giant orbiter.
 ```
 
-At high pressures ($\sim 100$ to 400 GPa and several thousand kelvins), water enters a **superionic state** where oxygen forms a rigid lattice while protons diffuse as a fluid {cite:p}`Millot2019`, and this conducting layer sustains a dynamo without metallic hydrogen {cite:p}`Soderlund2020`.
+At high pressures ($\sim 100$ to 400 GPa and several thousand kelvins), water enters a **superionic state** where oxygen forms a rigid lattice while protons diffuse as a fluid {cite:p}`Millot2019`; a convecting shell of ionic fluid water above this stably stratified superionic layer sustains a dynamo without metallic hydrogen {cite:p}`Soderlund2020`.
 
 Unlike dipole-dominated Jupiter and Saturn, Uranus and Neptune have multipolar magnetic fields.
 At Uranus, the dipole is tilted $\sim 59^\circ$ and offset by one-third of the planetary radius {cite:p}`StoneUranus1986`.

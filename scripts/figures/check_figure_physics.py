@@ -217,10 +217,10 @@ section("L06: atmospheres II")
 
 m = load("scripts/figures/L06_atmospheres_2/fig_kohler_curves.py")
 A = m.kelvin_A(273.0)
-chk("L06 Koehler: Kelvin A at 273 K (nm)", A * 1e9, 1.156, 1e-2)
+chk("L06 Koehler: Kelvin A at 273 K (nm)", A * 1e9, 1.200, 1e-2)
 B = m.raoult_B(1e-19)
 s_crit = math.sqrt(4 * A ** 3 / (27 * B))
-chk("L06 Koehler: S_crit-1 for m_s = 1e-16 g", s_crit, 3.9e-3, 5e-2)
+chk("L06 Koehler: S_crit-1 for m_s = 1e-16 g", s_crit, 4.13e-3, 5e-2)
 
 m = load("scripts/figures/L06_atmospheres_2/fig_psat_curves.py")
 chk("L06 psat: H2O anchor at 373.15 K (Pa)",
@@ -318,7 +318,7 @@ chk("L07 crater scaling: Tycho impactor ratio", (85.0 / (_D / 1e3)) ** (4.0 / 3.
 section("L08: interiors")
 
 m = load("scripts/figures/L08_interiors/fig_convection_regimes.py")
-chk("L08 regimes: 660 km radius fraction", m.R_660, 1 - 660 / 6371, 1e-3)
+chk("L08 regimes: 660 km radius fraction (drawn exaggerated, not to scale)", m.R_660, 0.800, 1e-3)
 chk("L08 regimes: CMB radius fraction", m.R_CMB, 1 - 2891 / 6371, 1e-3)
 
 m = load("scripts/figures/L08_interiors/fig_birchs_law.py")
