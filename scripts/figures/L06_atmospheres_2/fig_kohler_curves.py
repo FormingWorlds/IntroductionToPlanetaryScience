@@ -9,7 +9,7 @@ droplets condensed on dry NaCl CCN of three different solute masses.
     B = 3 i M_w m_s / (4 pi rho_w M_s)   (Raoult / solute)
 
 Caption / figure id : `fig:kohler-curves`
-Markdown source     : book/06_atmospheres_2/atmospheres_2.md
+Deck source         : slides/lecture06/lecture06.tex
 
 Solute masses m_s = 10^-16 to 10^-14 g are the canonical textbook
 range for atmospheric CCN (Wallace & Hobbs 2nd ed., Pruppacher &
@@ -28,7 +28,7 @@ from scripts.figures._shared.style import apply_style, save_figure
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
-OUT_AVIF = REPO_ROOT / "book/06_atmospheres_2/figures/kohler_curves.avif"
+OUT_AVIF = REPO_ROOT / "slides/lecture06/figures/kohler_curves.avif"
 
 # Constants
 SIGMA_W = 0.0756       # N/m surface tension of water at 273 K

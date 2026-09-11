@@ -61,6 +61,8 @@ Each week consists of:
 
 ## 2. Lecture Schedule
 
+**Length and depth budget (standing rule for every lecture, set 2026-09-10):** deck at most 60 frames at about 1.15 min per frame, one spoken claim per frame, a hero image with a caption and no walkthrough frame behind it, no frame over about 70 words; board derivation at most 5 live steps, the rest stated in the closing box; notes about 7500 to 8000 words that keep every fact, equation and number the final, the re-sit, the mock exams and the worksheets use; worksheets 4 problems with 12 to 14 parts and mini-lectures 7 frames; one closing "recent developments" item on 1 to 2 images. Lectures 5 to 14 follow the budget; Lectures 1 to 4 and Worksheets 1 and 2 are brought to it after the 2026 course ends.
+
 ### Lecture 1: Introduction & History of Planetary Science
 
 - Opening: The Pale Blue Dot — Voyager 1's 1990 image of Earth as a sub-pixel speck from 40 AU, reframing our world as one planet among many
@@ -126,6 +128,7 @@ Each week consists of:
 - Atmospheric escape: Jeans escape, hydrodynamic escape, sputtering, photochemical escape
 - Atmospheric retention: the role of gravity and temperature
 - Recent advances: JWST detections of exoplanet atmospheres, revised atmospheric escape models, new constraints on early Earth and Mars atmospheric composition
+- **Length budget (2026-09-10):** deck 46 frames (from 89), notes about 7500 words (from 9501), board sheet 5 live steps with the isothermal column integration stated in the closing box; the closing item is the JWST/MIRI TRAPPIST-1 b secondary eclipse on one hero frame; Worksheet 3 drops its rotating-winds problem and part 5(d) (4 problems, 12 parts) and Mini-lecture 3 its winds frame.
 
 ### Lecture 6: Atmospheres II — Clouds, Weather, & Climate
 
@@ -140,6 +143,7 @@ Each week consists of:
 - Climate evolution: faint young Sun problem, long-term climate feedbacks
 - Carbonate–silicate cycle and climate regulation on Earth
 - Recent advances: Venus atmospheric anomalies debate, Titan's methane cycle from Dragonfly mission planning, updated climate models for early Mars
+- **Length budget (2026-09-10):** deck 48 frames (from 82), notes about 7800 words (from 10884), board sheet 5 live steps with the water numbers stated in the closing box; the closing item is the Venus phosphine controversy and the DAVINCI test on one hero frame; the Worksheet 3 cut is applied once, with Lecture 5.
 
 ### Lecture 7: Planetary Surfaces — Geology, Geomorphology, & Geophysics
 
@@ -715,7 +719,7 @@ Each slide deck requires:
 |---|----------|-----------------|--------|
 | 1 | Orbits & Formation | 1–2 | **LOCKED 2026-08-16** |
 | 2 | Thermal Evolution & Differentiation | 3–4 | Not started |
-| 3 | Atmospheres | 5–6 | Not started |
+| 3 | Atmospheres | 5–6 | Cut to 4 problems and 12 parts (2026-09-10) |
 | 4 | Surfaces & Interiors | 7–8 | Not started |
 | 5 | Terrestrial Planets | 9–10 | Cut to 4 problems and 14 parts (2026-09-10) |
 | 6 | Giant Planets & Small Bodies | 11–12 | Cut to 4 problems and 13 parts (2026-09-10) |
@@ -733,7 +737,7 @@ Both PDFs are generated from a single content file: `worksheetNN_content.tex` ho
 |---|----------|-----------------|--------|
 | 1 | Orbits & Formation | 1–2 | **LOCKED 2026-08-16** |
 | 2 | Thermal Evolution & Differentiation | 3–4 | Not started |
-| 3 | Atmospheres | 5–6 | Not started |
+| 3 | Atmospheres | 5–6 | Cut to 4 problems and 12 parts (2026-09-10) |
 | 4 | Surfaces & Interiors | 7–8 | Not started |
 | 5 | Terrestrial Planets | 9–10 | Cut to 4 problems and 14 parts (2026-09-10) |
 | 6 | Giant Planets & Small Bodies | 11–12 | Cut to 4 problems and 13 parts (2026-09-10) |
@@ -1153,8 +1157,8 @@ Date opened: **2026-05-16**.
 | L02 | 25 | 25 | 0 |
 | L03 | 24 | 24 | 0 |
 | L04 | 25 | 24 | 1 |
-| L05 | 26 | 26 | 0 |
-| L06 | 26 | 25 | 1 |
+| L05 | 18 | 18 | 0 |
+| L06 | 14 | 14 | 0 |
 | L07 | 25 | 25 | 0 |
 | L08 | 21 | 21 | 0 |
 | L09 | 19 | 22 | 0 |

@@ -11,7 +11,7 @@ dashed red = counter-clockwise. Arrows on the two Hadley cells
 mark the flow direction.
 
 Caption / figure id : `fig:hadley-observed`
-Markdown source     : book/06_atmospheres_2/atmospheres_2.md
+Deck source         : slides/lecture06/lecture06.tex
 Citation key        : Held1980
 
 Synthetic streamfunction following the structural shape of an
@@ -30,7 +30,7 @@ from scripts.figures._shared.style import apply_style, save_figure
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
-OUT_AVIF = REPO_ROOT / "book/06_atmospheres_2/figures/hadley_observed.avif"
+OUT_AVIF = REPO_ROOT / "slides/lecture06/figures/hadley_observed.avif"
 
 
 def streamfunction(phi_deg: np.ndarray, z_km: np.ndarray) -> np.ndarray:
