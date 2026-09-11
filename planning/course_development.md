@@ -117,6 +117,7 @@ Each week consists of:
 - Magnetosphere–solar wind interaction: bow shock, magnetopause, magnetotail
 - Auroral processes and radiation belts
 - Recent advances: Juno magnetometer data on Jupiter's dynamo, BepiColombo measurements of Mercury's magnetosphere, Ganymede's magnetic environment from JUICE
+- **Length budget (2026-09-11):** deck 71 frames (from 102; the 14 hero-and-walkthrough pairs merged into captioned heroes, 38 text frames merged into 17, the closing section on one missions frame and one open-questions frame), notes 37 figures (from 31; six course-original sketches for the subsections that had none, prose unchanged apart from one lead-in sentence per figure), Worksheet 2 and Mini-lecture 2 untouched.
 
 ### Lecture 5: Atmospheres I — Composition, Structure, & Dynamics
 
