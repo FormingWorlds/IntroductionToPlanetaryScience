@@ -144,6 +144,15 @@ Recorded only as daughter-isotope anomalies, they resolve processes on disk and 
 
 Cross-calibrating long-lived absolute ages with short-lived relative ages yields a high-resolution timeline for the first 10 Myr.
 Anchored to the Pb-Pb age of CAIs ($t = 0$), this dates chondrules from $t \approx 1$ to $4$ Myr, planetesimal differentiation from $t \approx 0.5$ to $4$ Myr, and protoplanet growth from $t \approx 5$ Myr onward {cite:p}`Kleine2009,Kruijer2017`.
+The rapid decay of two of these clocks, $^{26}\mathrm{Al}$ and $^{60}\mathrm{Fe}$, over the first 10 Myr of solar-system history is shown in {numref}`fig:l12-short-lived-decay`.
+
+```{figure} figures/short_lived_decay.avif
+:name: fig:l12-short-lived-decay
+:width: 500px
+:align: center
+
+Abundance decay curves of the key short-lived radionuclides $^{26}\mathrm{Al}$ ($t_{1/2} = 0.72$ Myr; {cite:p}`CastilloRogez2009`) and $^{60}\mathrm{Fe}$ ($t_{1/2} = 2.62$ Myr; {cite:p}`Rugel2009`) over the first 10 Myr after CAI formation. Rapid decay of these extinct isotopes powered early planetesimal melting and differentiation. Course-original figure.
+```
 
 ## Blackboard derivation: The Pb-Pb isochron age of CAIs
 
@@ -250,6 +259,7 @@ This is the absolute zero of the solar system clock ({numref}`fig:l12-pb-pb` sho
 
 Pb-Pb isochrons for (A) the Efremovka CAI 22E, (B) an Allende chondrule (C30), and (C) an NWA 5697 chondrule (C2). Each panel plots $^{207}\mathrm{Pb}/^{206}\mathrm{Pb}$ versus $^{204}\mathrm{Pb}/^{206}\mathrm{Pb}$ for cogenetic mineral fractions; the slope of the isochron yields the absolute age. The single-isochron age for CAI 22E, $4567.35 \pm 0.28$ Myr, is consistent with the weighted-mean CAI age $4567.30 \pm 0.16$ Myr derived from multiple CAIs in the main text. The Allende chondrule is contemporaneous with CAIs to within uncertainties, while the NWA chondrule is about 2.6 Myr younger. Figure adapted from {cite:t}`Connelly2012`.
 ```
+
 ````
 
 ### Petrographic and shock metamorphism
@@ -713,10 +723,28 @@ Analyses revealed hydrated phyllosilicates, carbonates, and organic matter with 
 
 Their D-type spectra resemble Kuiper Belt objects, which suggests capture from distant planetesimals during the Nice-model instability {cite:p}`Morbidelli2005` ({ref}`Lecture 2 <lecture02>`).
 NASA's Lucy mission (launched October 2021) is a 12-year tour visiting eight Trojans across both swarms between 2027 and 2033.
+En route to the Trojans, Lucy encountered the inner main-belt asteroid (152830) Dinkinesh, discovering that its orbiting moonlet Selam is a contact binary ({numref}`fig:l12-dinkinesh`).
+
+```{figure} figures/dinkinesh_levison.avif
+:name: fig:l12-dinkinesh
+:width: 600px
+:align: center
+
+The Dinkinesh-Selam system imaged by NASA's Lucy mission during its flyby on 1 November 2023. (a-f) Three stereo pairs of the inner main-belt asteroid (152830) Dinkinesh, about 720 m across, on approach, near closest approach and on departure; yellow dots trace its longitudinal trough, red dots its equatorial ridge, and the moonlet appears behind the primary in (d). (g) Dinkinesh with the trough section (cyan) shifted back into place. (h-l) The moonlet Selam, a contact binary of two near-equal lobes of about 210 and 230 m, and (m) the pair at their true separation (scale bars 200 m and 1 km). Reproduced from {cite:t}`Levison2024`, Fig. 1.
+```
 
 ### Psyche: the metal world
 
 (16) Psyche ($\sim 222$ km effective diameter) is the largest M-type asteroid, interpreted as the **exposed core** {cite:p}`ElkinsTanton2020` of a differentiated planetesimal whose silicate mantle was stripped by a giant impact.
+{numref}`fig:l12-psyche` shows the shape that radar and adaptive-optics imaging give it: a flattened body whose outline departs from an ellipsoid at three depressions.
+
+```{figure} figures/psyche_shape_shepard.avif
+:name: fig:l12-psyche
+:width: 600px
+:align: center
+
+Shape of (16) Psyche seen from above its south pole, from a combined radar and adaptive-optics model. Left: the best-fit ellipsoid (dashed) over the shape model, with the regions Alpha, Bravo and Charlie where the body falls short of the ellipsoid. Right: a rounded-rectangle outline that follows the model more closely at Bravo and Charlie; Alpha West marks a further depression. Longitudes 0°, 180° and 270° are indicated. Reproduced from {cite:t}`Shepard2021`.
+```
 
 ### Interstellar visitors
 
@@ -743,6 +771,16 @@ Several key questions remain open across small-body science:
 - **Origin of Earth's water**: The relative contributions of carbonaceous chondrites and comets remain under active investigation, connecting to {ref}`Lecture 9 <lecture09>` and {ref}`Lecture 14 <lecture14>`.
 - **Dynamically new comets**: ESA's Comet Interceptor (launch 2029) will wait at the Sun-Earth L2 point for a comet entering the inner solar system for the first time {cite:p}`Snodgrass2019`.
 - **Interstellar visitors**: Each interstellar object samples the formation chemistry of another planetary system, providing a comparative cosmochemistry probe across stars.
+
+The multi-spacecraft architecture of ESA's Comet Interceptor will observe an incoming pristine or interstellar target from multiple directions simultaneously ({numref}`fig:l12-comet-interceptor`).
+
+```{figure} figures/comet_interceptor.avif
+:name: fig:l12-comet-interceptor
+:width: 600px
+:align: center
+
+Schematic of the planned ESA Comet Interceptor mission, showing the multi-spacecraft flyby geometry. The main spacecraft and two smaller probes will sample a single target from multiple directions, allowing the first 3D reconstruction of an active comet's nucleus, coma, and plasma environment. Image credit: ESA, CC BY-SA 3.0 IGO.
+```
 
 ## Summary and takeaways
 
