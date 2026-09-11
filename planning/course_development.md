@@ -214,7 +214,7 @@ Each week consists of:
 - Implications for habitability: the habitable zone is not a line but a set of history-dependent trajectories; forward reference to Lecture 13 exoplanet habitability
 - Recent advances and upcoming missions: DAVINCI+ (NASA, ~2029), VERITAS (NASA, late 2020s), EnVision (ESA, 2031); first new orbital missions in decades; active research on early Venus climate (Way 2016, Turbet 2021); phosphine debate (Lecture 6)
 
-- **Length budget (2026-09-10):** deck 44 frames (from 79), notes about 7900 words (from 11648), board sheet 5 live steps; the closing item is the 2030s Venus missions on one hero frame; Worksheet 5 drops its deuterium problem and three parts (4 problems, 14 parts).
+- **Length budget (2026-09-10):** deck 59 frames (from 79; 44 after the cut, then figures added to concept frames), notes about 7900 words (from 11648), board sheet 5 live steps; the closing item is the 2030s Venus missions on one hero frame; Worksheet 5 drops its deuterium problem and three parts (4 problems, 14 parts).
 
 ### Lecture 10: Rocky Planets — Mercury & Mars
 
