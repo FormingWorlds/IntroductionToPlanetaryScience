@@ -393,7 +393,7 @@ Most other rocky bodies in the solar system (including Venus, Mars, Mercury, and
 :width: 700px
 :align: center
 
-Modern taxonomy of tectonic modes for terrestrial planets, beyond the simple mobile-vs-stagnant binary. Active-lid behaviour can present as plate tectonics, ridge-only, or distributed deformation; sub-lithospheric convection-driven tectonics can drive regional or global mobility; episodic (transient) modes can be global or local (non-recyclable "continental" regions); stagnant-lid modes are split into cold (thermal-stress) and hot (heat pipes + vertical cycling; plumes + lower-crust recycling) variants. Reproduced from {cite:p}`Lenardic2018`, Fig. 2.
+Tectonic modes of terrestrial planets, beyond the simple mobile-versus-stagnant binary. An active lid moves as plate tectonics or as distributed deformation; a sluggish lid shows ridge-only spreading or regional to global mobility driven by sub-lithospheric convection; episodic (transient) modes switch between states globally or locally, leaving non-recyclable "continental" regions; a stagnant lid is cold (thermal stress only) or hot (heat pipes with vertical cycling, or plumes with lower-crust recycling). Reproduced from {cite:p}`Lenardic2018`, Fig. 2.
 ```
 
 This spectrum is not just a classification scheme: numerical mantle convection models reproduce it from a single set of physics. Depending on the strength of the lithosphere and the thermal state of the interior, the same simulations settle into mobile, episodic, sluggish, stagnant, or magmatism-dominated ("squishy") lid regimes ({numref}`fig:tectonic-regime-sims`; {cite:p}`Lyu2025`).
