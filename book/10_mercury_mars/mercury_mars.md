@@ -18,6 +18,15 @@ Mercury is the smallest and densest terrestrial planet.
 It sits closest to the Sun, stripped of almost all volatiles.
 Mars has roughly half the diameter of Earth and sits at the outer edge of the habitable zone.
 It preserves a sedimentary and atmospheric record of a wetter, warmer past.
+{numref}`fig:l10-terrestrial-planets` sets the four side by side.
+
+```{figure} figures/terrestrial_planets.avif
+:name: fig:l10-terrestrial-planets
+:width: 600px
+:align: center
+
+The four terrestrial planets at approximate relative scale. From left to right: Mercury, Venus, Earth, and Mars. Despite forming in the same protoplanetary disk, these worlds span a factor of about 18 in mass and have followed dramatically different evolutionary paths. Credit: NASA/JPL, public domain.
+```
 
 The lecture is divided into three parts.
 Part 1 examines Mercury as a metal-world case study, covering orbital dynamics, interior structure, surface morphology, polar volatiles, and the exosphere.
@@ -31,8 +40,16 @@ Part 3 compares these extremes to show how size, heliocentric distance, and dyna
 Mercury is a small planet with mass $0.0553\,\Mearth$, mean radius $0.3829\,\Rearth = 2440\ \mathrm{km}$, and bulk density $5.43\ \mathrm{g\ cm^{-3}}$.
 Correcting for internal compression gives an **uncompressed density** (density corrected for internal pressure) of $\sim 5.3\ \mathrm{g\ cm^{-3}}$.
 This is the highest value in the solar system, well above Earth's $\sim 4.0\ \mathrm{g\ cm^{-3}}$ {cite:p}`Solomon2018`.
-This density requires a much larger iron mass fraction than any other terrestrial planet.
+This density requires a much larger iron mass fraction than any other terrestrial planet ({numref}`fig:l10-mercury-interior`).
 How Mercury acquired so much iron is the **iron-enrichment problem**.
+
+```{figure} figures/mercury_interior.avif
+:name: fig:l10-mercury-interior
+:width: 600px
+:align: center
+
+Mercury's internal structure inferred from MESSENGER gravity and libration data. The crust ($\sim 30$--$50\ \mathrm{km}$) and a thin silicate mantle ($\sim 400\ \mathrm{km}$) overlie a large core occupying $\sim 83\%$ of Mercury's radius. The core itself is layered: a possible thin solid Fe-S layer at the top of the core (the "FeS snow zone"), a liquid Fe-Ni-S outer core that sustains the planet's weak global magnetic field, and an inferred but unresolved solid inner core. The radar libration measurement of {cite:t}`Margot2007` established that the core is at least partially molten; the layer dimensions shown here follow the MESSENGER-era synthesis of {cite:t}`MargotHauck2018`. Course-original figure.
+```
 
 Mercury's orbit is also extreme.
 The semi-major axis is $a = 0.387\ \mathrm{AU}$ and the eccentricity $e = 0.2056$, the highest of any planet.
@@ -228,13 +245,30 @@ Solar radiation pressure sweeps neutral sodium antisunward into a comet-like **s
 Ground-based and *MESSENGER* observations show that this tail varies with orbital phase and solar wind conditions.
 This makes it a tracer of space-weather coupling.
 
-Mercury possesses a compact **magnetosphere**, the smallest in the solar system, with its subsolar magnetopause only $\sim 1.5$ Mercury radii from the centre.
+Mercury possesses a compact **magnetosphere**, the smallest in the solar system, with its subsolar magnetopause only $\sim 1.5$ Mercury radii from the centre ({numref}`fig:wicht-mag`).
+
+```{figure} figures/wicht_magnetosphere.avif
+:name: fig:wicht-mag
+:width: 450px
+:align: center
+
+Equatorial cross-section of Mercury's compact magnetosphere. The standoff distance is only about 1.5 Mercury radii and the magnetotail is correspondingly short. Reconnection at the dayside magnetopause and in the tail is fast and frequent compared to Earth. Reproduced from {cite:t}`Wicht2017`.
+```
 
 ### Mission history at Mercury
 
 *Mariner 10* flew past Mercury three times in 1974 and 1975.
 The mission discovered Mercury's intrinsic magnetic field and revealed its heavily cratered surface.
-The *MESSENGER* mission transformed our understanding of the planet during its orbital phase from 2011 to 2015.
+The *MESSENGER* mission transformed our understanding of the planet during its orbital phase from 2011 to 2015, returning orbital imaging of major geologic structures such as the Caloris basin ({numref}`fig:l10-caloris-basin`).
+
+```{figure} figures/mercury_caloris_basin.avif
+:name: fig:l10-caloris-basin
+:width: 450px
+:align: center
+
+The Caloris basin on Mercury, $\sim 1550\ \mathrm{km}$ in diameter, imaged in enhanced colour by NASA's MESSENGER spacecraft. Caloris is one of the largest and best-preserved multi-ring impact basins in the solar system; the orange interior plains are smooth volcanic deposits emplaced after the impact, while the surrounding annulus shows ejecta and concentric ring structures. The basin's antipode on Mercury contains chaotic "weird terrain" thought to have formed from the focused seismic shock of the same event. Credit: NASA/Johns Hopkins APL/Carnegie Institution of Washington, public domain.
+```
+
 *MESSENGER* data established Mercury's offset dipole, polar ice deposits, hollows, global contraction, and unexpectedly high volatile content.
 *BepiColombo* will enter orbit in late 2026 to constrain core structure, refine polar ice inventories, and test origin scenarios through surface volatile abundances.
 
@@ -256,6 +290,15 @@ This drives periodic ice ages.
 Although cold, dry, and uninhabitable today, early Mars hosted abundant liquid water for at least $\sim 100$ Myr, perhaps episodically for a billion years.
 Mars offers the best preserved record of an Earth-like planet losing its atmosphere and drying out.
 This makes it an essential target for astrobiology.
+*Mariner 4* returned the first close-up view of that surface in 1965 ({numref}`fig:l10-mariner4-mars`).
+
+```{figure} figures/mariner4_mars.avif
+:name: fig:l10-mariner4-mars
+:width: 350px
+:align: center
+
+The first close-up image of another planet's surface: Mariner 4, 15 July 1965. Mariner 4 returned 21 frames during the brief Mars encounter, of which this is one of the most reproduced. The heavily cratered, Moon-like terrain visible here decisively ended speculation about Martian canals and surface vegetation. Credit: NASA/JPL.
+```
 
 ### Phobos and Deimos: the twin moons
 
@@ -384,7 +427,15 @@ The first is the **hemispheric dichotomy**, a $\sim 6$-km elevation difference b
 An exogenic giant impact excavating the elliptical Borealis basin ($\sim 10\,600 \times 8\,500\ \mathrm{km}$) is the leading explanation for the thinner northern crust {cite:p}`AndrewsHanna2008`, though degree-1 mantle convection remains a competing hypothesis.
 
 The second feature is **Tharsis**, a continent-sized volcanic province covering roughly a quarter of Mars' surface and standing several kilometres above the datum.
-Tharsis hosts the solar system's largest volcanoes, including **Olympus Mons**, a shield volcano rising $\sim 21.3\ \mathrm{km}$ above the datum ($\sim 22\ \mathrm{km}$ above surrounding plains) with a base diameter of roughly $600\ \mathrm{km}$.
+Tharsis hosts the solar system's largest volcanoes, including **Olympus Mons**, a shield volcano rising $\sim 21.3\ \mathrm{km}$ above the datum ($\sim 22\ \mathrm{km}$ above surrounding plains) with a base diameter of roughly $600\ \mathrm{km}$ ({numref}`fig:l10-olympus-mons`).
+
+```{figure} figures/olympus_mons.avif
+:name: fig:l10-olympus-mons
+:width: 450px
+:align: center
+
+Olympus Mons on Mars, the largest volcano in the solar system, seen from above in this Viking Orbiter colour mosaic. The shield volcano has a base diameter of $\sim 600\ \mathrm{km}$ and a summit elevation of $\sim 21\ \mathrm{km}$ above the Mars datum. The caldera complex at the summit (centre) contains multiple nested collapse craters formed by episodic magma withdrawal. The steep basal escarpment (up to $6\ \mathrm{km}$ high) is visible as the sharp boundary encircling the edifice. Olympus Mons grew to this immense size because Mars lacks plate tectonics: the volcanic source remained fixed beneath the lithosphere for billions of years. Credit: NASA/JPL/USGS, public domain.
+```
 
 These volcanoes grew to enormous sizes for two reasons.
 First, without plate tectonics, a stationary mantle plume delivers magma to the same location for hundreds of millions of years, building a single massive structure rather than a chain of separate volcanoes as on Earth.
@@ -473,7 +524,15 @@ Mars today has a $\sim 6\ \mathrm{mbar}$ surface pressure, $95\%$ $\mathrm{CO_2}
 The mean surface temperature is $\sim 210\ \mathrm{K}$ and varies with latitude, season, and time of day.
 
 Suspended **dust** heats the atmosphere by absorbing visible sunlight, driving winds that loft more dust.
-This positive feedback occasionally produces **global dust storms** that obscure the surface for weeks to months.
+This positive feedback occasionally produces **global dust storms** that obscure the surface for weeks to months ({numref}`fig:l10-mars-dust-storm`).
+
+```{figure} figures/mars_dust_storm.avif
+:name: fig:l10-mars-dust-storm
+:width: 550px
+:align: center
+
+Mars before and during the 2018 global dust storm, as imaged by the Mars Reconnaissance Orbiter. The left panel shows clear atmospheric conditions with surface features visible; the right panel shows the planet almost completely obscured by wind-lofted mineral dust. The storm ultimately ended the *Opportunity* rover's 15-year mission by blocking sunlight to its solar panels. Credit: NASA/JPL-Caltech/MSSS, public domain.
+```
 
 In the **seasonal $\mathrm{CO_2}$ cycle**, roughly $25\%$ of the atmospheric mass condenses onto the winter pole and sublimates back in spring.
 
@@ -584,6 +643,15 @@ This biases the escaping population toward higher initial velocities.
 In the limit $\lambda \to \infty$ the formula reduces to $\Phi_J \sim n\,v_{\mathrm{th}}\,\lambda\,e^{-\lambda}$, the standard high-$\lambda$ asymptotic form often quoted in textbooks.
 Note that the "$\sim$" hides a numerical prefactor.
 Written exactly, $(1+\lambda)e^{-\lambda} \to \lambda e^{-\lambda}$ for $\lambda \gg 1$, and $\sqrt{\kB T/(2\pi m)} = v_{\mathrm{th}}/(2\sqrt{\pi})$ with $v_{\mathrm{th}}$ the most-probable speed defined above, so the textbook scaling carries an implicit $1/(2\sqrt{\pi})$ that we have absorbed into the proportionality.
+{numref}`fig:l10-mb-jeans` shows the Maxwell-Boltzmann distribution and the escaping tail above $v_{\mathrm{esc}}$ that the flux integral counts.
+
+```{figure} figures/maxwell_boltzmann_jeans.avif
+:name: fig:l10-mb-jeans
+:width: 100%
+:align: center
+
+Maxwell-Boltzmann speed distribution for atomic hydrogen at the exobase temperatures of Earth ($T_\mathrm{exo} = 1000\ \mathrm{K}$, blue) and Mars ($T_\mathrm{exo} = 270\ \mathrm{K}$, red). Dashed vertical lines mark the escape velocity $v_\mathrm{esc}$ at the exobase of each planet: $10.8\ \mathrm{km\,s^{-1}}$ at $500\ \mathrm{km}$ altitude for Earth, and $4.9\ \mathrm{km\,s^{-1}}$ at $200\ \mathrm{km}$ altitude for Mars. Only molecules in the high-speed tail above $v_\mathrm{esc}$ (shaded) contribute to Jeans escape; the exponential dependence of the tail area on $\lambda = v_\mathrm{esc}^2 / v_\mathrm{th}^2$ explains why escape rates vary by orders of magnitude across species and bodies. Course-original figure.
+```
 
 The exobase concept is crucial.
 Collisions below the exobase scramble velocities and prevent the high-velocity tail from accumulating, so escape effectively only happens at and above the exobase.
@@ -648,7 +716,15 @@ Mars is the textbook case of a world where the loss of internal magnetism was fo
 Six decades of Mars exploration have transitioned from initial reconnaissance to sustained surface science.
 The *Mariner 4* flyby (1965) showed a cratered, Moon-like world; *Mariner 9* (1971) and *Viking* then revealed the giant volcanoes, canyons, and outflow channels.
 Orbital mapping by *Mars Global Surveyor* produced global topography {cite:p}`Smith2001` and crustal magnetic maps {cite:p}`Acuna1999`, while *Mars Odyssey*, *Mars Express* {cite:t}`Bibring2006`, and *Mars Reconnaissance Orbiter* mapped subsurface ice and mineralogy.
-In situ exploration from *Pathfinder*, *Spirit*, and *Opportunity* to *Curiosity* {cite:p}`Grotzinger2014` and *Perseverance* confirmed past habitable environments, complemented by geophysics from *InSight* and surface exploration by *Tianwen-1*.
+In situ exploration from *Pathfinder*, *Spirit*, and *Opportunity* to *Curiosity* {cite:p}`Grotzinger2014` and *Perseverance* ({numref}`fig:l10-perseverance-mars`) confirmed past habitable environments, complemented by geophysics from *InSight* and surface exploration by *Tianwen-1*.
+
+```{figure} figures/perseverance_mars.avif
+:name: fig:l10-perseverance-mars
+:width: 600px
+:align: center
+
+First colour view of Mars from NASA's Perseverance rover, taken from one of its hazard-avoidance cameras shortly after landing in Jezero crater on 18 February 2021. The rover's shadow and parts of its body are visible in the foreground; the rocky plain ahead is part of an ancient lake-delta system that filled Jezero crater about 3.6 Ga ago, close to the Noachian-Hesperian boundary. Perseverance is caching rock and regolith samples for return to Earth via the Mars Sample Return campaign. Credit: NASA/JPL-Caltech.
+```
 
 ### Mars Sample Return and the question of biosignatures
 
@@ -672,6 +748,15 @@ Both bracket Earth and Venus on the scaling relations of {ref}`Lecture 3 <lectur
 
 Mercury fails the first two scaling relations.
 Mars fails the second and third, as its mass cannot retain a thick atmosphere once its dynamo dies and ion escape takes over.
+{numref}`fig:l10-terrestrial-interiors` compares the interiors behind these scalings: Mercury's oversized core against the small cores of Mars and the Moon.
+
+```{figure} figures/terrestrial_interiors_comparison.avif
+:name: fig:l10-terrestrial-interiors
+:width: 700px
+:align: center
+
+Cross-sections of the four terrestrial planets and Earth's Moon, drawn to relative size. Crust (orange), silicate mantle (grey), and metallic core (red) are coloured uniformly across the bodies; Earth's two-component core (solid inner / liquid outer) is shown explicitly. Mercury's core occupies $\sim 83\%$ of its radius and $\sim 74\%$ of its mass, the largest core fraction of any terrestrial planet, while the Moon has only a small ($\sim 330\ \mathrm{km}$ radius) partially molten core. Credit: NASA Solar System Exploration, public domain.
+```
 
 ### Size and distance set the trajectory
 
@@ -688,6 +773,7 @@ Earth has an active dynamo sustained by **compositional buoyancy**, buoyancy rel
 Mercury has a weak dynamo sustained by partial core freezing and convection in a thin liquid shell.
 Mars had a dynamo for its first $\sim 500$ to $800$ Myr.
 It ceased between $\sim 4.1$ Ga {cite:p}`Acuna1999` and $\sim 3.7$ Ga: MAVEN found crustal fields as young as $\sim 3.7$ Ga, which suggests a longer-lived or episodic dynamo {cite:p}`Mittelholz2020`, and the demagnetised basins may reflect impact excavation or a reversing dynamo {cite:p}`Steele2024`.
+
 Venus lacks a detectable intrinsic field, and its dynamo history remains unknown ({ref}`Lecture 9 <lecture09>`).
 
 Dynamo longevity correlates with atmospheric retention and surface habitability.
@@ -706,7 +792,16 @@ Synthesising {ref}`Lecture 9 <lecture09>` and this lecture, a rocky planet requi
 
 4. **Climate stability**: negative temperature feedbacks, notably the **carbonate-silicate cycle** (the Walker thermostat; {cite:p}`Walker1981`), regulate atmospheric $\mathrm{CO_2}$ by accelerating silicate weathering at higher temperatures to cool the surface.
 
-Earth satisfies all four ingredients.
+Earth satisfies all four ingredients, possessing global magnetic shielding ({numref}`fig:l10-earth-magnetosphere`) alongside volatile recycling and climate stability feedbacks.
+
+```{figure} figures/magnetosphere_anatomy_esa.avif
+:name: fig:l10-earth-magnetosphere
+:width: 700px
+:align: center
+
+Structure of Earth's magnetosphere. The solar wind (orange arrows, arriving from the left) is deflected at the bow shock, and the shocked plasma flows around the planet through the magnetosheath. The magnetopause, where the solar-wind ram pressure balances the magnetic pressure of Earth's field, stands at roughly $10\,\Rearth$ on the dayside, while the nightside field is drawn out into the long magnetotail. This cavity shields the surface from most solar-wind particles and suppresses ion-pickup escape from the regions of closed field lines, in contrast to the open field lines at the poles that permit polar wind. Credit: [ESA](https://www.esa.int/ESA_Multimedia/Images/2026/02/Anatomy_of_Earth_s_magnetosphere), [CC BY-SA 3.0 IGO](https://creativecommons.org/licenses/by-sa/3.0/igo/).
+```
+
 Venus and Mars each fail on at least two, and Mercury lacks volatiles and an atmosphere ({ref}`Lecture 14 <lecture14>`).
 
 ### Recent advances and upcoming missions
