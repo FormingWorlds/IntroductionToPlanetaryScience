@@ -157,7 +157,7 @@ Each week consists of:
 - Regolith formation and space weathering
 - Cryovolcanism on icy bodies: the mechanism, with Enceladus, Europa and Triton in one section and a forward reference to Lecture 11
 - Recent advances: one item, the Io eruption caught by JunoCam in 2024
-- **Length budget (set 2026-09-10 after the L02 delivery ran 60 min to the break):** deck at most 60 frames, the board derivation at most 5 live steps, notes about 7500 to 8000 words. L07 deck 44 frames, notes 7650 words, board sheet 5 steps; the $D \propto L^{3/4}$ extension is stated, not derived, and Worksheet 4 problem 1b has the students show it. Mission catalogues (Perseverance, DART, OSIRIS-REx, Hayabusa2, Pluto) live in Lectures 10 and 12.
+- **Length budget (set 2026-09-10 after the L02 delivery ran 60 min to the break):** deck at most 60 frames, the board derivation at most 5 live steps, notes about 7500 to 8000 words. L07 deck 37 frames, notes 7650 words, board sheet 5 steps; the $D \propto L^{3/4}$ extension is stated, not derived, and Worksheet 4 problem 1b has the students show it. Mission catalogues (Perseverance, DART, OSIRIS-REx, Hayabusa2, Pluto) live in Lectures 10 and 12.
 
 ### Lecture 8: Planetary Interiors — Structure, Composition, & Dynamics
 
