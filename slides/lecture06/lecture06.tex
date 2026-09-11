@@ -97,14 +97,22 @@
 
 % ── Lifting condensation level ──────────────────────────────
 \begin{frame}{The lifting condensation level (LCL)}
-  Rising air cools dry adiabatically ($\Gamma_d = g/c_p$) until $P_{\mathrm{vapour}} = P_{\mathrm{sat}}(T)$, i.e.\ until it reaches its \textbf{dew point} $T_d$.
-  \vskip6pt
-  \keyresult{The \textbf{lifting condensation level} (LCL) marks the \textbf{cloud base}.}
-  \vskip6pt
-  \begin{itemize}
-    \item Above the LCL, latent heat release reduces cooling to the moist adiabatic lapse rate ($\sim$5~K\,km$^{-1}$ vs.\ $\sim$9.8~K\,km$^{-1}$ dry)
-    \item Latent heat fuels buoyancy, powering deep convective storms up to the tropopause
-  \end{itemize}
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{cumulonimbus_anvil}
+    \source{Eulenj\"ager, CC BY-SA 3.0}
+
+    \column{\recaptextcol}
+    \footnotesize
+    Rising air cools dry adiabatically ($\Gamma_d = g/c_p$) until $P_{\mathrm{vapour}} = P_{\mathrm{sat}}(T)$, i.e.\ until it reaches its \textbf{dew point} $T_d$.
+    \vskip4pt
+    \keyresult{The \textbf{lifting condensation level} (LCL) marks the \textbf{cloud base}.}
+    \vskip4pt
+    \begin{itemize}\setlength\itemsep{2pt}
+      \item Above the LCL, latent heat release reduces cooling to the moist adiabatic lapse rate ($\sim$5~K\,km$^{-1}$ vs.\ $\sim$9.8~K\,km$^{-1}$ dry)
+      \item Latent heat fuels buoyancy, powering deep convective storms up to the tropopause
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 % ── Cloud types across solar system ─────────────────────────
@@ -162,6 +170,12 @@
     \item Large $L_v/R_v$ $\rightarrow$ very sensitive to temperature changes
     \item This equation applies to \textbf{any} vapour $\leftrightarrow$ condensed phase transition
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{water_phase_diagram}}\\
+  {\footnotesize Phase diagram of water in $P$-$T$ space. The liquid-vapour coexistence curve integrates the Clausius-Clapeyron relation from the triple point to the critical point; the solid-vapour curve governs sublimation. Course figure.}
 \end{frame}
 
 % ── Worked example: water ──────────────────────────────────
@@ -421,14 +435,22 @@
 
 % ── Jet streams and the thermal wind ─────────────────────────
 \begin{frame}{Jet streams and the thermal wind}
-  Horizontal temperature gradients drive vertical wind shear through the thermal wind relation:
-  $$\pdv{\mathbf{v}_g}{z} \propto \hat{k} \times \nabla T$$
-  \vskip4pt
-  \begin{itemize}\setlength\itemsep{2pt}
-    \item Steep equator-to-pole $\nabla T$ drives fast winds aloft ($\sim$30--70~m\,s$^{-1}$ on Earth)
-    \item Earth hosts subtropical ($\sim$30\textdegree{}) and polar ($\sim$60\textdegree{}) jet streams
-    \item Upper-tropospheric jets steer mid-latitude weather systems across the globe
-  \end{itemize}
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{earth_jet_stream}
+    \source{NASA JSC, public domain}
+
+    \column{\recaptextcol}
+    \footnotesize
+    Horizontal temperature gradients drive vertical wind shear through the thermal wind relation:
+    $$\pdv{\mathbf{v}_g}{z} \propto \hat{k} \times \nabla T$$
+    \vskip4pt
+    \begin{itemize}\setlength\itemsep{2pt}
+      \item Steep equator-to-pole $\nabla T$ drives fast winds aloft ($\sim$30--70~m\,s$^{-1}$ on Earth)
+      \item Earth hosts subtropical ($\sim$30\textdegree{}) and polar ($\sim$60\textdegree{}) jet streams
+      \item Upper-tropospheric jets steer mid-latitude weather systems across the globe
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 % ── Jupiter zonal winds hero ────────────────────────────────
@@ -440,13 +462,21 @@
 
 % ── Giant planet banding ────────────────────────────────────
 \begin{frame}{Giant planet banding}
-  Planetary rotation organises giant-planet atmospheres into alternating bright zones and dark belts:
-  \vskip6pt
-  \begin{itemize}\setlength\itemsep{3pt}
-    \item \textbf{Zones (light):} anticyclonic upwelling, cool ammonia ice cloud tops
-    \item \textbf{Belts (dark):} cyclonic downwelling exposing warmer lower layers
-    \item Zonal jets flank band boundaries (Jupiter $\sim$180~m\,s$^{-1}$, Saturn $\sim$400~m\,s$^{-1}$); decay depth $\sim$1800~km
-  \end{itemize}
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{jupiter_global_map}
+    \source{NASA/ESA/STScI (HST OPAL)}
+
+    \column{\recaptextcol}
+    \footnotesize
+    Planetary rotation organises giant-planet atmospheres into alternating bright zones and dark belts:
+    \vskip4pt
+    \begin{itemize}\setlength\itemsep{2pt}
+      \item \textbf{Zones (light):} anticyclonic upwelling, cool ammonia ice cloud tops
+      \item \textbf{Belts (dark):} cyclonic downwelling exposing warmer lower layers
+      \item Zonal jets flank band boundaries (Jupiter $\sim$180~m\,s$^{-1}$, Saturn $\sim$400~m\,s$^{-1}$); decay depth $\sim$1800~km
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 
@@ -482,15 +512,23 @@
 
 % ── Venus super-rotation: thermal tides ────────────
 \begin{frame}{Venus super-rotation: thermal tides}
-  Cloud-top winds circle Venus in $\sim$4 days ($\sim$100~m\,s$^{-1}$), 60 times faster than the surface.
-  \vskip6pt
-  \begin{itemize}\setlength\itemsep{3pt}
-    \item \textbf{Puzzle:} sustaining super-rotation requires transporting momentum upward and equatorward
-    \item \textbf{Thermal tides:} solar heating generates waves that pump momentum upward
-    \item \textbf{Planetary waves:} large-scale waves carry momentum toward the equator
-  \end{itemize}
-  \vskip4pt
-  \sourcenote{S\'{a}nchez-Lavega et al.\ (2017)}
+  \begin{columns}[c]
+    \column{\recapfigcol}
+    \ipsrecapfig{venus_uv_clouds}
+    \source{NASA/JPL-Caltech (Mariner 10)}
+
+    \column{\recaptextcol}
+    \footnotesize
+    Cloud-top winds circle Venus in $\sim$4 days ($\sim$100~m\,s$^{-1}$), 60 times faster than the surface.
+    \vskip4pt
+    \begin{itemize}\setlength\itemsep{2pt}
+      \item \textbf{Puzzle:} sustaining super-rotation requires transporting momentum upward and equatorward
+      \item \textbf{Thermal tides:} solar heating generates waves that pump momentum upward
+      \item \textbf{Planetary waves:} large-scale waves carry momentum toward the equator
+    \end{itemize}
+    \vskip4pt
+    \sourcenote{S\'{a}nchez-Lavega et al.\ (2017)}
+  \end{columns}
 \end{frame}
 
 % ── Jupiter GRS ─────────────────────────────────────────────
@@ -510,6 +548,12 @@
       \item Slowly shrinking in longitudinal extent over the past century
     \end{itemize}
   \end{columns}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.70\paperheight, keepaspectratio]{juno_polar_cyclones}}\\
+  {\footnotesize Polar cyclone cluster at Jupiter's north pole from Juno JIRAM. A central cyclone is encircled by eight circumpolar cyclones in a stable octagonal pattern, demonstrating coherent polygonal vortex dynamics in giant planet atmospheres. Credit: NASA/JPL-Caltech/SwRI/ASI/INAF/JIRAM.}
 \end{frame}
 
 % ── Saturn hexagon ──────────────────────────────────────────
@@ -569,6 +613,12 @@
   {\footnotesize Noachian valley networks, Mars Express HRSC. Fluvial networks require warm, wet conditions on early Mars ($>$3.7~Ga), an open paradox under the faint young Sun since pure $\mathrm{CO_2}$ condenses into high-albedo clouds. Credit: ESA/DLR/FU Berlin, CC BY-SA 3.0 IGO.}
 \end{frame}
 
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.70\paperheight, keepaspectratio]{milankovitch_cycles}}\\
+  {\footnotesize Milankovitch cycles over 800~kyr: obliquity, eccentricity, and precession modulate high-latitude summer insolation, pacing glacial cycles observed in ice-core and sediment records, though the 100~kyr rhythm requires non-linear climate feedbacks. Credit: Wikimedia Commons, CC BY-SA.}
+\end{frame}
+
 % ── Climate feedbacks and ice-albedo ───────────────
 \begin{frame}{Climate feedbacks and the ice-albedo instability}
   Atmospheric feedbacks determine whether a planetary climate remains stable or runs away.
@@ -626,6 +676,12 @@
     \item Marine organisms and abiotic processes precipitate carbonate sediments ($\mathrm{CaCO_3}$)
     \item Net effect: moves carbon from the atmosphere-ocean system into the crust, until subduction and volcanism return it
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{foley2024_carbonate_silicate}}\\
+  {\footnotesize Carbonate-silicate cycle on the modern Earth. Atmospheric $\mathrm{CO_2}$ dissolves in rainwater, weathers surface silicates into oceanic carbonates, and plate-tectonic subduction returns metamorphic $\mathrm{CO_2}$ to the atmosphere via arc and plume volcanism. Credit: Foley (2024).}
 \end{frame}
 
 % ── Volcanic source ─────────────────────────────────────────

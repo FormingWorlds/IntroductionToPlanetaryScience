@@ -143,7 +143,7 @@ Each week consists of:
 - Climate evolution: faint young Sun problem, long-term climate feedbacks
 - Carbonate–silicate cycle and climate regulation on Earth
 - Recent advances: Venus atmospheric anomalies debate, Titan's methane cycle from Dragonfly mission planning, updated climate models for early Mars
-- **Length budget (2026-09-10):** deck 48 frames (from 82), notes about 7800 words (from 10884), board sheet 5 live steps with the water numbers stated in the closing box; the closing item is the Venus phosphine controversy and the DAVINCI test on one hero frame; the Worksheet 3 cut is applied once, with Lecture 5.
+- **Length budget (2026-09-10):** deck 52 frames (from 82; 48 after the cut, then figures added to concept frames), notes about 7800 words plus 30 figures (from 10884), board sheet 5 live steps with the water numbers stated in the closing box; the closing item is the Venus phosphine controversy and the DAVINCI test on one hero frame; the Worksheet 3 cut is applied once, with Lecture 5.
 
 ### Lecture 7: Planetary Surfaces — Geology, Geomorphology, & Geophysics
 
