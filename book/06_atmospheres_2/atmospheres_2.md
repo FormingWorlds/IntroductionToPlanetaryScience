@@ -731,7 +731,7 @@ The net effect is to **draw $\mathrm{CO_2}$ out of the atmosphere** and lock it 
 
 ### Volcanic outgassing: the carbon source
 
-The cycle is closed by **plate tectonics**. Carbonate-bearing ocean floor is subducted into the mantle, where high temperatures and pressures decompose the carbonates, releasing $\mathrm{CO_2}$. This $\mathrm{CO_2}$ is returned to the atmosphere through **volcanic outgassing**, the long-term carbon *source*. The modern plate-tectonic pathways that close the loop are shown in.
+The cycle is closed by **plate tectonics**. Carbonate-bearing ocean floor is subducted into the mantle, where high temperatures and pressures decompose the carbonates, releasing $\mathrm{CO_2}$. This $\mathrm{CO_2}$ is returned to the atmosphere through **volcanic outgassing**, the long-term carbon *source*.
 
 ### The negative feedback
 
