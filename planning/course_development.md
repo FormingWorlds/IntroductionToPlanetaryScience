@@ -297,7 +297,7 @@ Each week consists of:
 - **Dedicated slide: Voyager legacy** — only spacecraft to visit Uranus and Neptune; still operational in the interstellar medium; power declining toward ~2030 end of life; our ice giant knowledge is 40 years out of date
 - Future ice giant missions: 2023 US Decadal Survey prioritised a Uranus orbiter as the top flagship mission for the 2030s; mission concepts in study phase; launch window early 2030s; atmospheric entry probe + magnetosphere + moon reconnaissance
 
-- **Length budget (2026-09-10):** deck 45 frames (from 78), notes about 7300 words (from 9269), board sheet 5 live steps; the closing item is Europa Clipper and JUICE on one hero frame; Worksheet 6 drops its comet problem and three parts (4 problems, 13 parts).
+- **Length budget (2026-09-10):** deck 49 frames (from 78; 45 after the cut, then figures added to concept frames), notes about 7300 words (from 9269), board sheet 5 live steps; the closing item is Europa Clipper and JUICE on one hero frame; Worksheet 6 drops its comet problem and three parts (4 problems, 13 parts).
 
 ### Lecture 12: Meteorites, Asteroids, Minor Planets & Comets
 
@@ -353,7 +353,7 @@ Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–
 - Recent mission bonanza (OSIRIS-REx, Hayabusa2, DART, Lucy, Psyche, Rosetta) + upcoming (Hera, Comet Interceptor, LSST) are transforming the field
 - Interstellar visitors connect solar system science directly to exoplanets (forward to L13/L14)
 
-- **Length budget (2026-09-10):** deck 45 frames (from 84), notes about 8100 words (from 12019), board sheet 5 live steps; the closing item is the interstellar visitors.
+- **Length budget (2026-09-10):** deck 49 frames (from 84; 45 after the cut, then figures added to concept frames), notes about 8100 words (from 12019), board sheet 5 live steps; the closing item is the interstellar visitors.
 
 ### Lecture 13: Exoplanets, Detection Methods, Demographics & Characterisation
 
