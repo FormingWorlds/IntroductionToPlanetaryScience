@@ -25,6 +25,15 @@ Jupiter has a mass of $1.898 \times 10^{27}$ kg (318 $\Mearth$), an equatorial r
 Saturn has a mass of 95 $\Mearth$, an equatorial radius of 60,268 km (9.4 $\Rearth$), and a mean density of 687 kg m$^{-3}$, lower than water.
 These low densities indicate bulk compositions of hydrogen and helium rather than rock.
 Together, the two gas giants account for about 92% of total planetary mass in the solar system.
+{numref}`fig:l11-family-portrait` is the widest view we have of the system they dominate: the Voyager 1 mosaic taken from beyond Neptune.
+
+```{figure} figures/family_portrait.avif
+:align: center
+:name: fig:l11-family-portrait
+:width: 700px
+
+The Voyager 1 "Family Portrait" of the solar system, acquired on 14 February 1990 from roughly 6 billion kilometres distance (PIA00451). Across sixty individual frames spanning roughly 70 degrees of sky, the mosaic captured six planets, including Jupiter, Saturn, Uranus, and Neptune, providing an external view of the planetary system dominated in mass by the gas giants. Credit: NASA/JPL-Caltech.
+```
 
 Their envelopes are dominated by molecular hydrogen ($\mathrm{H_2}$) and helium (He) in near-solar proportions, with slight enrichment in heavier elements ({ref}`Lecture 2 <lecture02>`).
 Neither planet has a solid surface.
@@ -181,8 +190,17 @@ However, Callisto induces a time-varying magnetic field in the ambient Jovian fi
 
 ### Jupiter's rings and small moons
 
-Unlike Saturn's bright icy rings, Jupiter's are faint **dusty rings** (transient debris clouds) ejected from inner moons like Amalthea by micrometeorite impacts.
+Unlike Saturn's bright icy rings, Jupiter's are faint **dusty rings** (transient debris clouds) ejected from inner moons like Amalthea by micrometeorite impacts ({numref}`fig:amalthea`).
+
 Atmospheric drag and radiation pressure remove this dust.
+
+```{figure} figures/amalthea_juno.avif
+:align: center
+:name: fig:amalthea
+:width: 70%
+
+Detection of Amalthea (small silhouette indicated by arrows in both panels) by JunoCam, crossing the Great Red Spot in the top panel and the southern belts in the bottom panel, during the 59th perijove flyby on 7 March 2024 from a distance of $\sim$$265{,}000$ km (PIA25728). Amalthea is unresolved at this geometry: the image documents the moon's position rather than its shape. Amalthea has a mean radius of $\sim$84 km, an irregular shape ($\sim$250 $\times$ 146 $\times$ 128 km from Galileo data), and a reddish surface believed to reflect contamination from Io's volcanic plumes; it is one of the principal sources of dust for Jupiter's faint ring system through micrometeorite gardening of its surface. Image credit: NASA/JPL-Caltech/SwRI/MSSS, processed by Gerald Eichst{\"a}dt.
+```
 
 ### Saturn interior and rotation
 
@@ -280,7 +298,15 @@ However, {cite:t}`Crida2019` showed that viscous evolution from a massive primor
 The young-rings hypothesis is supported by direct observations of **ring rain** (the ongoing transfer of mass from the rings into Saturn's upper atmosphere).
 {cite:t}`Waite2018` measured a large flux of water and organic molecules falling into Saturn from the inner D ring during Cassini Grand Finale orbits.
 Combined with ionospheric $\mathrm{H_3^+}$ measurements {cite:p}`ODonoghue2019`, this mass loss indicates a remaining ring lifetime of order $300$ Myr, with a large uncertainty ($\sim 170$--$1100$ Myr at $1\sigma$); the low ring mass and the bright, unpolluted ice independently point to an age of $\sim 100$ Myr.
-If correct, Saturn's rings are temporary.
+If correct, Saturn's rings are temporary ({numref}`fig:l11-saturn-rings`).
+
+```{figure} figures/saturn_rings.avif
+:align: center
+:name: fig:l11-saturn-rings
+:width: 700px
+
+Saturn and its rings imaged by Cassini's wide-angle camera in April 2016 (PIA21046). The rings are composed almost entirely of water-ice particles whose low mass and high purity indicate an age of order 100 Myr, implying that the ring system may be an ephemeral structure rather than a primordial feature. Credit: NASA/JPL-Caltech/Space Science Institute.
+```
 
 The ring formation mechanism remains debated.
 Hypotheses range from recent tidal disruption of an icy moon {cite:p}`Wisdom2022` to ancient disruption during the Late Heavy Bombardment followed by viscous spreading {cite:p}`Charnoz2009`.
@@ -386,6 +412,16 @@ The faint G ring at $\sim$170,000 km lies outside the formal Roche limit; it is 
 The physical interpretation is that, interior to $d_R$, the differential pull of the planet across any solid agglomerate is so strong that the agglomerate cannot grow above $\sim$$10$ m without being torn apart.
 Ring particles therefore orbit as a collisional disk maintained by mutual scattering rather than as a single coalesced moon.
 This is the key explanation for why rings exist where they do: not because anything special happened locally, but because tidal forces inside the Roche limit forbid the particles from doing what they would otherwise do, namely accrete into a single body.
+```
+
+{numref}`fig:l11-roche-geometry` compares differential tidal acceleration with self-gravity across orbital distance and illustrates the deformation of a fluid satellite at the Roche limit.
+
+```{figure} figures/roche_geometry.avif
+:align: center
+:name: fig:l11-roche-geometry
+:width: 750px
+
+Roche limit geometry and tidal force balance. (a) A self-gravitating fluid satellite deforms into an elongated ellipsoid before disruption at the Roche limit $d_R$, where differential tidal acceleration overcomes its self-gravity. (b) Differential tidal acceleration across an icy body compared with its surface self-gravity as a function of orbital distance from Saturn; the curves cross at the rigid Roche limit, while the fluid Roche limit accounts for tidal elongation. Course-original figure.
 ```
 
 ## Saturn's moons
@@ -498,6 +534,15 @@ Uranus ($14.5\,\Mearth$, $4.0\,\Rearth$) and Neptune ($17.1\,\Mearth$, $3.9\,\Re
 Hydrogen and helium envelopes account for only $\sim$10 to 20% of their mass.
 The bulk, by contrast, consists of "ices": water, ammonia, and methane.
 These "ices" are dense fluids at interior conditions; the name records their origin as solid grains in the outer protoplanetary disk {cite:p}`Helled2020`.
+{numref}`fig:ice_giant_density` shows how little the gravity data constrain the arrangement of these materials inside the two planets.
+
+```{figure} figures/ice_giant_density_helled2020.avif
+:align: center
+:name: fig:ice_giant_density
+:width: 70%
+
+Density as a function of radius for Uranus (blue) and Neptune (black) from {cite:t}`Helled2020`. Solid curves are the empirical density profiles derived in earlier work, dashed curves are three-layer models with discrete envelope, ice, and rock layers. The two profiles match the gravity data equally well, which shows the strong degeneracy between smooth and layered interior models that prevents us from uniquely identifying the bulk composition of the ice giants. Reproduced from {cite:t}`Helled2020`.
+```
 
 Both planets were visited by only one spacecraft, Voyager 2, which flew past Uranus in January 1986 and Neptune in August 1989 {cite:p}`Stone1989`.
 With no return mission in 35 to 40 years, the ice giants remain the most under-explored major planets.
@@ -623,7 +668,15 @@ In 2023, JWST observations resolved fine ring structure at Uranus {cite:p}`DePat
 
 In **core accretion** ({ref}`Lecture 2 <lecture02>`), giant planets begin as solid cores that accrete gas from the protoplanetary disk.
 When a core reaches a **critical mass** ($\sim$10 $\Mearth$), the attracted gas contracts dynamically and triggers **runaway gas accretion** to capture a massive $\mathrm{H_2}$/He envelope.
-Because disk lifetimes are only $\sim$3 to 5 Myr, envelope growth must occur before the gas disperses.
+Because disk lifetimes are only $\sim$3 to 5 Myr, envelope growth must occur before the gas disperses ({numref}`fig:l11-core-accretion`).
+
+```{figure} figures/helled2014_core_accretion.avif
+:align: center
+:name: fig:l11-core-accretion
+:width: 550px
+
+Giant planet mass evolution via core accretion at 5.2 AU ({cite:t}`Helled2014`, based on simulations from {cite:t}`Lissauer2009`). The curves trace core mass (solid), envelope mass (dash-dotted), and total mass (dashed) through rapid initial core assembly, quasi-hydrostatic envelope contraction, and runaway gas accretion once envelope mass exceeds core mass. Reproduced from {cite:t}`Helled2014`.
+```
 
 Jupiter and Saturn reached the critical mass early.
 They captured massive envelopes before disk dispersal.
@@ -643,7 +696,7 @@ Equatorial winds blow eastward on Jupiter ($\sim 180$ m s$^{-1}$) and Saturn ($\
 
 3. Electrically conducting fluid interiors generate global magnetic fields on all four planets.
 The dynamo source is metallic hydrogen in Jupiter and Saturn, but ionic fluid in Uranus and Neptune.
-Gas giants produce dipole-dominated fields, whereas ice giants exhibit multipolar, off-axis fields.
+Gas giants produce dipole-dominated fields, whereas ice giants exhibit multipolar, off-axis fields ({numref}`fig:l11-field-morphologies`).
 
 4. Moon and ring systems record each giant's dynamical history.
 Jupiter hosts the four Galilean moons and a faint dust ring; Saturn possesses the A through F rings, dozens of icy moons, and Titan.
@@ -652,6 +705,14 @@ Uranus has narrow rings and five mid-sized moons, while Neptune has ring arcs an
 5. The four giants are laboratories for exoplanet populations.
 As shown in {ref}`Lecture 13 <lecture13>`, the most common exoplanets are sub-Neptunes and Neptunes ($\sim 2$ to $4\,\Rearth$) alongside hot Jupiters ($\sim 1\,\Rjup$).
 Our giant planets provide the only spatially resolved ground truth for these systems.
+
+```{figure} figures/soderlund2020_planetary_field_morphologies.avif
+:align: center
+:name: fig:l11-field-morphologies
+:width: 700px
+
+Radial magnetic field at the surface of (a) Mercury, (b) Earth, (c) Jupiter, (d) Saturn, (e) Uranus and (f) Neptune in Mollweide projection, the panels ordered column-wise and each with its own colour scale. Jupiter and Saturn carry dipoles nearly aligned with the rotation axis; the Uranus and Neptune fields are multipolar, tilted and offset from the planetary centre. Reproduced from {cite:t}`Soderlund2020`, Fig. 1.
+```
 
 ### What we still don't know
 
@@ -667,7 +728,16 @@ These questions require new in-situ probes or dedicated orbiters.
 ### JUICE vs Europa Clipper: two ocean-world missions
 
 In the early 2030s, two complementary missions will arrive at Jupiter to explore the icy Galilean moons.
-NASA's **Europa Clipper** is dedicated to Europa, performing $\sim$50 close flybys from Jovian orbit to characterise the ice shell, subsurface ocean, and active plumes ({ref}`Lecture 8 <lecture08>`).
+NASA's **Europa Clipper** is dedicated to Europa, performing $\sim$50 close flybys from Jovian orbit to characterise the ice shell, subsurface ocean, and active plumes ({numref}`fig:europa_clipper`; {ref}`Lecture 8 <lecture08>`).
+
+```{figure} figures/europa_clipper_concept.avif
+:align: center
+:name: fig:europa_clipper
+:width: 75%
+
+Artist's concept of NASA's Europa Clipper approaching Jupiter, whose cloud bands fill the background. Clipper launched in October 2024, will arrive at Jupiter in 2030, and will conduct $\sim$50 close flybys of Europa from a Jovian orbit while sampling any plumes, mapping the ice shell, and constraining the ocean. Image credit: NASA/JPL-Caltech.
+```
+
 ESA's **JUICE** characterises the broader Jovian satellite system, performing multiple flybys of Europa, Callisto, and Ganymede before entering orbit around Ganymede in 2034.
 Operating simultaneously in the Jovian system during the mid-2030s enables cross-calibration of magnetic and plasma measurements across the icy Galilean moons.
 
@@ -676,9 +746,19 @@ Operating simultaneously in the Jovian system during the mid-2030s enables cross
 The lesson of Voyager is twofold.
 First, the scientific return from a **flyby** (a single short visit) is finite and cannot substitute for sustained investigation.
 Ice giant knowledge is 35 years out of date.
-Gas giant knowledge, by contrast, has been continuously refreshed by Galileo, Cassini, Juno, and JWST.
+Gas giant knowledge, by contrast, has been continuously refreshed by Galileo, Cassini, Juno, and JWST, whereas Voyager 2 remains the only mission to have visited the ice giants.
+
 Second, data from a well-designed mission continue to yield new science when combined with new theoretical tools and laboratory experiments.
 A single mission to the ice giants in the 2030s could anchor science for the rest of the twenty-first century.
+{numref}`fig:l11-voyager2-trajectory` traces the Grand Tour that gave us those single visits: one spacecraft and four gravity assists during a rare planetary alignment.
+
+```{figure} figures/voyager2_trajectory.avif
+:align: center
+:name: fig:l11-voyager2-trajectory
+:width: 500px
+
+Trajectory of NASA's Voyager 2 spacecraft during its grand tour of the outer solar system. Successive gravity assists at Jupiter (1979), Saturn (1981), Uranus (1986), and Neptune (1989) allowed a single spacecraft to visit all four giant planets during a rare planetary alignment. Credit: NASA/JPL, public domain.
+```
 
 ### Future ice giant missions
 
