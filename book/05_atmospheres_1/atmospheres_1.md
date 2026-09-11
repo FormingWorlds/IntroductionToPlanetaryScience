@@ -11,25 +11,65 @@
 
 ## Atmospheric composition
 
-A planet's atmosphere is the thin gaseous envelope that separates its surface (or cloud tops) from the vacuum of space. Atmospheres play an outsized role in determining a planet's surface conditions (temperature, pressure, radiation environment, and chemistry) and are therefore central to questions of habitability. Understanding where atmospheres come from, what they are made of, and how they evolve is one of the core themes of planetary science {cite:p}`Catling2017`.
+A planet's atmosphere is the thin gaseous envelope that separates its surface (or cloud tops) from the vacuum of space ({numref}`fig:thin-blue-line`). Atmospheres play an outsized role in determining a planet's surface conditions (temperature, pressure, radiation environment, and chemistry) and are therefore central to questions of habitability. Understanding where atmospheres come from, what they are made of, and how they evolve is one of the core themes of planetary science {cite:p}`Catling2017`.
+
+```{figure} figures/earth_thin_blue_line.avif
+:name: fig:thin-blue-line
+:width: 600px
+:align: center
+
+Earth's atmosphere as a thin blue line on the limb, photographed from the International Space Station during the STS-129 mission (November 2009). The atmosphere contains 99% of its mass below $\sim$30 km altitude (a mere 0.5% of Earth's radius), yet this slender layer controls the surface temperature, shields life from harmful radiation, and mediates the exchange of volatiles between the interior and space. Credit: NASA/ISS Expedition 21 crew, public domain.
+```
 
 ### Primary atmospheres
 
 **Primary atmospheres** are captured directly from the protoplanetary disk during planet formation. Because the disk is composed predominantly of hydrogen and helium (reflecting the solar composition), primary atmospheres are dominated by $\mathrm{H_2}$ and He, with trace amounts of $\mathrm{CH_4}$, $\mathrm{NH_3}$, $\mathrm{H_2O}$, and noble gases.
 
-Only sufficiently massive bodies (those exceeding roughly $5$–$10 \, \Mearth$) can gravitationally capture and retain large quantities of nebular gas before the disk disperses (within $\sim$3–10 Myr; {ref}`Lecture 2 <lecture02>`). The **gas giants** Jupiter and Saturn are the primary examples: their massive $\mathrm{H_2}$/He envelopes constitute the vast majority of their total mass. The **ice giants** Uranus and Neptune also captured primary atmospheres, but far less gas: their envelopes are only $\sim$10–20% of their total mass, which reflects their slower growth and the disk's dissipation.
+Only sufficiently massive bodies (those exceeding roughly $5$–$10 \, \Mearth$) can gravitationally capture and retain large quantities of nebular gas before the disk disperses (within $\sim$3–10 Myr; {ref}`Lecture 2 <lecture02>`). The **gas giants** Jupiter and Saturn are the primary examples: their massive $\mathrm{H_2}$/He envelopes constitute the vast majority of their total mass, acquired during runaway gas accretion once the core mass reached a critical threshold ({numref}`fig:l05-core-accretion`). The **ice giants** Uranus and Neptune also captured primary atmospheres, but far less gas: their envelopes are only $\sim$10–20% of their total mass, which reflects their slower growth and the disk's dissipation.
+
+```{figure} figures/helled2014_core_accretion.avif
+:name: fig:l05-core-accretion
+:width: 550px
+:align: center
+
+Growth of a giant planet by core accretion in the simulation of Jupiter's formation at $5.2$ AU introduced in {ref}`Lecture 2 <lecture02>`: core mass (solid), envelope mass (dash-dotted) and total mass (dashed). The primary atmosphere is captured only in the last phase, after the envelope mass overtakes the core mass at $2.3$ Myr and runaway gas accretion builds the $\mathrm{H_2}$/He envelope within the disk lifetime. Reproduced from {cite:t}`Helled2014`, Fig. 1; simulation from {cite:t}`Lissauer2009`.
+```
 
 Terrestrial planets like Earth, Venus, and Mars were too small to capture much nebular gas. Any primordial hydrogen they did accrete was quickly lost to space (see [atmospheric escape](atm-escape) below). Their present-day atmospheres are therefore **not** primary.
 
 ### Secondary atmospheres
 
-**Secondary atmospheres** are produced by **outgassing**: the release of volatiles from the planet's interior through volcanism and magma ocean degassing. As discussed in {ref}`Lecture 4 <lecture04>`, the speciation of outgassed volatiles depends on the **oxygen fugacity** of the magma (an effective partial pressure of $\mathrm{O_2}$ that measures how oxidising or reducing the melt is): oxidising conditions produce $\mathrm{CO_2}$, $\mathrm{H_2O}$, and $\mathrm{N_2}$, while reducing conditions produce $\mathrm{H_2}$, CO, and $\mathrm{N_2}$ {cite:p}`Hirschmann2012`.
+**Secondary atmospheres** are produced by **outgassing**: the release of volatiles from the planet's interior through volcanism and magma ocean degassing. As discussed in {ref}`Lecture 4 <lecture04>`, the speciation of outgassed volatiles depends on the **oxygen fugacity** of the magma (an effective partial pressure of $\mathrm{O_2}$ that measures how oxidising or reducing the melt is): oxidising conditions produce $\mathrm{CO_2}$, $\mathrm{H_2O}$, and $\mathrm{N_2}$, while reducing conditions produce $\mathrm{H_2}$, CO, and $\mathrm{N_2}$ ({numref}`fig:l05-outgassing-speciation`) {cite:p}`Hirschmann2012`.
 
-The present-day atmospheres of **Venus** ($\mathrm{CO_2}$-dominated) and **Mars** ($\mathrm{CO_2}$-dominated but much thinner) are essentially secondary atmospheres: their compositions reflect volcanic outgassing with relatively modest subsequent modification. Titan's thick $\mathrm{N_2}$ atmosphere also originated from outgassing (likely from the conversion of accreted $\mathrm{NH_3}$).
+```{figure} figures/outgassing_speciation_fO2.avif
+:name: fig:l05-outgassing-speciation
+:width: 100%
+:align: center
+
+Speciation of an outgassed atmosphere as a function of the melt oxygen fugacity, for Earth's volatile inventory in equilibrium with a fully molten magma ocean at 2000 K ($\Delta$IW is the logarithmic shift from the iron-wüstite buffer; model of {cite:p}`Nicholls2024`, inventory of {cite:t}`Krijt2023`). **(a)** Mass of each species dissolved in the melt: the water stays almost entirely in the magma. **(b)** Partial pressures in the atmosphere: carbon species dominate, as CO on the reduced side and $\mathrm{CO_2}$ on the oxidised side, with $\mathrm{H_2}$ and $\mathrm{CH_4}$ under reducing conditions and $\mathrm{SO_2}$ at the oxidised end. Course-original figure, discussed in {ref}`Lecture 4 <lecture04>`.
+```
+
+The present-day atmospheres of **Venus** ($\mathrm{CO_2}$-dominated) and **Mars** ($\mathrm{CO_2}$-dominated but much thinner) are essentially secondary atmospheres: their compositions reflect volcanic outgassing with relatively modest subsequent modification. Titan's thick $\mathrm{N_2}$ atmosphere also originated from outgassing (likely from the conversion of accreted $\mathrm{NH_3}$). {numref}`fig:venera13-venus` shows what a massive secondary atmosphere does to the surface beneath it.
+
+```{figure} figures/venera13_venus_surface.avif
+:name: fig:venera13-venus
+:width: 500px
+:align: center
+
+The surface of Venus photographed in colour by the Soviet *Venera 13* lander on 1 March 1982. The image shows flat basaltic rock slabs and soil under an orange sky coloured by the thick $\mathrm{CO_2}$ atmosphere (surface pressure 92 bar, temperature 737 K); the striped bar is a colour calibration target, and the toothed ring is part of the lander. The lander survived for 127 minutes before succumbing to the extreme conditions, a vivid demonstration of how a massive secondary atmosphere transforms a planet's surface environment. Credit: USSR Academy of Sciences / NASA NSSDC, public domain.
+```
 
 ### Tertiary atmospheres
 
-**Tertiary atmospheres** have been substantially modified from their outgassed composition by surface processes, photochemistry, or biology. Earth is the prime example: its original outgassed atmosphere was likely dominated by $\mathrm{CO_2}$ and $\mathrm{N_2}$ (similar to Venus), but billions of years of biological activity, particularly oxygenic photosynthesis, have transformed it into the $\mathrm{N_2}$/$\mathrm{O_2}$ atmosphere we breathe today. Earth's atmospheric $\mathrm{O_2}$ (21% by volume) is entirely biogenic: it would disappear within a few million years if photosynthesis ceased {cite:p}`Catling2017`.
+**Tertiary atmospheres** have been substantially modified from their outgassed composition by surface processes, photochemistry, or biology. Earth is the prime example: its original outgassed atmosphere was likely dominated by $\mathrm{CO_2}$ and $\mathrm{N_2}$ (similar to Venus), but billions of years of biological activity, particularly oxygenic photosynthesis, have transformed it into the $\mathrm{N_2}$/$\mathrm{O_2}$ atmosphere we breathe today. Earth's atmospheric $\mathrm{O_2}$ (21% by volume) is entirely biogenic: it would disappear within a few million years if photosynthesis ceased {cite:p}`Catling2017`. The build-up of this oxygen took most of Earth's history ({numref}`fig:l05-oxygen-history`); {ref}`Lecture 9 <lecture09>` follows it in detail.
+
+```{figure} figures/lyons2014_oxygen_history.avif
+:name: fig:l05-oxygen-history
+:width: 100%
+:align: center
+
+Earth's atmospheric oxygen through time, as $p\mathrm{O_2}$ relative to the present atmospheric level (PAL, logarithmic scale). The atmosphere stayed anoxic ($p\mathrm{O_2} < 10^{-5}$ PAL) for its first $\sim$2 Gyr, rose abruptly at the Great Oxidation Event ($\sim$2.4 Ga), held an intermediate plateau through the Proterozoic, and reached modern levels only in the Neoproterozoic and Phanerozoic. Reproduced from {cite:t}`Lyons2014`.
+```
 
 ### Comparative atmospheric properties
 
@@ -222,7 +262,15 @@ Earth's troposphere extends from the surface to the **tropopause** at $\sim$12 k
 
 Above the tropopause, temperature increases with altitude in the **stratosphere**. On Earth, this temperature inversion is caused by the absorption of solar ultraviolet radiation by the **ozone layer** ($\mathrm{O_3}$), centred at $\sim$25 km altitude. The heating by UV absorption creates a stable, non-convective layer: air parcels displaced upward find themselves cooler and denser than their surroundings and sink back down.
 
-Earth's stratosphere extends to the **stratopause** at $\sim$50 km.
+Earth's stratosphere extends to the **stratopause** at $\sim$50 km. Stratospheric inversions can also be driven by organic aerosol absorption rather than ozone, as seen in the detached photochemical haze layers of Titan ({numref}`fig:titan-haze`).
+
+```{figure} figures/titan_haze_pia06160.avif
+:name: fig:titan-haze
+:width: 500px
+:align: center
+
+Detached haze layers in Titan's upper atmosphere imaged at the limb by the Cassini ISS narrow-angle camera (PIA06160). Multiple distinct layers from $\sim$200 km up to $\sim$500 km altitude are produced by photochemistry of $\mathrm{CH_4}$ in the stratosphere, generating the organic aerosols that give Titan its orange colour and heat the stratosphere by absorbing UV. Credit: NASA/JPL/Space Science Institute, public domain.
+```
 
 ### Mesosphere and thermosphere
 
@@ -403,7 +451,15 @@ The table below compares the effective temperature with the measured surface tem
 
 \*Jupiter's "surface temperature" refers to the 1-bar level.
 
-The discrepancy $\Delta T = T_{\mathrm{surface}} - T_{\mathrm{eff}}$ reveals the strength of the **greenhouse effect**. Venus has a staggering 510 K greenhouse warming, by far the largest in the solar system. Earth's 33 K greenhouse warming, though modest by comparison, is sufficient to keep the oceans liquid. Mars has only a small greenhouse warming ($\sim 5$ K) because its CO$_2$ atmosphere is very thin (surface pressure only 6 mbar) and lacks the water-vapour amplifier that boosts the warming on Earth and Venus. Jupiter's excess temperature is partly due to internal heat left over from formation ({ref}`Lecture 3 <lecture03>`), not solely the greenhouse effect.
+The discrepancy $\Delta T = T_{\mathrm{surface}} - T_{\mathrm{eff}}$ reveals the strength of the **greenhouse effect**. Venus has a staggering 510 K greenhouse warming, by far the largest in the solar system. Earth's 33 K greenhouse warming, though modest by comparison, is sufficient to keep the oceans liquid. Mars has only a small greenhouse warming ($\sim 5$ K) because its $\mathrm{CO_2}$ atmosphere is very thin (surface pressure only 6 mbar) and lacks the water-vapour amplifier that boosts the warming on Earth and Venus. Jupiter's excess temperature is partly due to internal heat left over from formation ({ref}`Lecture 3 <lecture03>`), not solely the greenhouse effect. The surface temperatures behind these greenhouse contrasts, and the surface pressures of the atmospheres that produce them, are compared for the three terrestrial planets in {numref}`fig:l05-vem-atmospheres`.
+
+```{figure} figures/venus_earth_mars_atmospheres.avif
+:name: fig:l05-vem-atmospheres
+:width: 700px
+:align: center
+
+Surface temperature (red bars, left axis) and surface pressure (blue bars, right axis, logarithmic) of Venus, Earth and Mars, with the dominant gas of each atmosphere labelled below. Three planets of similar bulk composition span a factor of $\sim 10^4$ in surface pressure and $\sim 500$ K in surface temperature. Data from {cite:p}`NASAFactSheet`. Course-original figure.
+```
 
 ### The greenhouse mechanism
 
@@ -531,7 +587,15 @@ For heavy species like $\mathrm{N_2}$ and $\mathrm{CO_2}$, $\lambda_J$ is so lar
 
 ### Hydrodynamic escape
 
-When the energy input to the upper atmosphere is very large (for example, from intense **extreme ultraviolet (EUV)** radiation from a young, active star), the escape can transition from the slow, molecule-by-molecule Jeans process to a bulk **hydrodynamic outflow** in which the entire upper atmosphere flows outward like a wind. This is analogous to the solar wind but driven by stellar heating rather than the star's own thermal energy {cite:p}`Hunten1987`.
+When the energy input to the upper atmosphere is very large (for example, from intense **extreme ultraviolet (EUV)** radiation from a young, active star), the escape can transition from the slow, molecule-by-molecule Jeans process to a bulk **hydrodynamic outflow** in which the entire upper atmosphere flows outward like a wind ({numref}`fig:hydro-outflow`). This is analogous to the solar wind but driven by stellar heating rather than the star's own thermal energy {cite:p}`Hunten1987`.
+
+```{figure} figures/hot_jupiter_outflow_tripathi2015.avif
+:name: fig:hydro-outflow
+:width: 80%
+:align: center
+
+Velocity field (arrows) and neutral hydrogen fraction (colour scale) of an EUV-driven hydrodynamic outflow from a hot Jupiter (radius $2.14\ \Rjup$, mass $0.53\ \Mjup$), from the 3D radiation-hydrodynamic simulations of {cite:t}`Tripathi2015`. Axes are in units of the planetary radius $R_p$; the star is to the left. The heated gas accelerates outward from the bound atmosphere (dark red, neutral) and flows around the terminator into a partially neutral wake that flares out on the night side (right). The shear between the day-side wind and the night-side gas produces the Kelvin-Helmholtz rolls visible near $x \approx 1\,R_p$; away from the planet the outflow is almost fully ionised (light shading). Reproduced from {cite:t}`Owen2019`, Fig. 2.
+```
 
 Hydrodynamic outflows of this kind are observed directly. Ultraviolet transit spectroscopy has detected extended envelopes of escaping atomic hydrogen around the hot Jupiter HD 209458 b {cite:p}`VidalMadjar2003` and the warm Neptune GJ 436 b {cite:p}`Ehrenreich2015`, and near-infrared spectroscopy has revealed escaping helium around the warm super-Neptune WASP-107 b {cite:p}`Spake2018`.
 
@@ -543,7 +607,16 @@ $$ (eq:energy-limited-escape)
 
 with $\eta \approx 0.1-0.2$ for hydrogen-dominated atmospheres. Two scalings matter most. The rate rises as $R_p^3$, so an extended, low-density envelope is stripped far faster than a compact one, and it falls as $1/M_p$, so a low surface gravity makes escape easier. Equation {eq}`eq:energy-limited-escape` holds only while the absorbed energy is spent on the outflow. When the gas is dense enough that recombination radiation carries away most of the deposited energy, the true loss rate falls below this estimate {cite:p}`Owen2019`.
 
-Hydrodynamic escape is most important during a planet's first few hundred million years, when the host star's EUV luminosity is 10–100 times higher than at present, stripping hydrogen-rich primary atmospheres to produce the observed exoplanet **radius valley** between $\sim$1.5 and $2 \, \Rearth$ {cite:p}`Fulton2017` ({ref}`Lecture 13 <lecture13>`).
+Hydrodynamic escape is most important during a planet's first few hundred million years, when the host star's EUV luminosity is 10–100 times higher than at present, stripping hydrogen-rich primary atmospheres to produce the observed exoplanet **radius valley** between $\sim$1.5 and $2 \, \Rearth$ ({numref}`fig:fulton-radius-valley`) {cite:p}`Fulton2017` ({ref}`Lecture 13 <lecture13>`).
+
+```{figure} figures/fulton2017_radius_valley.avif
+:name: fig:fulton-radius-valley
+:width: 100%
+:align: center
+
+Observed radius distribution of short-period ($P < 100$ days) small planets from the California-Kepler Survey {cite:p}`Fulton2017`. Two distinct populations appear: a super-Earth peak near $1.3\ \Rearth$ (likely stripped rocky cores) and a sub-Neptune peak near $2.4\ \Rearth$ (cores with retained H/He envelopes of a few percent by mass). The gap between them near $1.8\ \Rearth$ is the observational signature of the radius valley predicted by photoevaporation models. Completeness-corrected histogram reproduced from {cite:t}`Fulton2017`, Fig. 7 (top panel); the light grey portion of the histogram, below about $1.1\ \Rearth$, is where survey completeness is lowest, and the population labels are added here.
+```
+
 The outflowing hydrogen can also drag heavier species along with it, which fractionates the atmosphere that remains {cite:p}`Hunten1987`.
 
 ### Non-thermal escape mechanisms
@@ -558,7 +631,16 @@ Several processes can eject atmospheric particles to space without relying on th
 
 - **Impact erosion:** Large asteroid or comet impacts can eject a large fraction of a planet's atmosphere. The efficiency depends on the impactor size relative to the atmospheric scale height: very large impacts can blow off a substantial atmospheric mass in a single event.
 
-The MAVEN mission at Mars has measured the present-day total atmospheric escape rate at $\sim 2$–$3$ kg s$^{-1}$ for H and O combined across photochemical, thermal, and solar-wind-driven channels {cite:p}`Jakosky2018` ({ref}`Lecture 10 <lecture10>`).
+The MAVEN mission at Mars has measured the present-day total atmospheric escape rate at $\sim 2$–$3$ kg s$^{-1}$ for H and O combined across photochemical, thermal, and solar-wind-driven channels ({numref}`fig:maven-o-loss-channels`) {cite:p}`Jakosky2018` ({ref}`Lecture 10 <lecture10>`).
+
+<!-- Generated by scripts/figures/L05_atmospheres_1/fig_maven_o_loss_channels.py -->
+```{figure} figures/maven_o_loss_channels.avif
+:name: fig:maven-o-loss-channels
+:width: 100%
+:align: center
+
+Present-day oxygen loss rates from Mars decomposed into escape channels, after {cite:t}`Jakosky2018` Fig. 6. Markers give the loss rate (log$_{10}$ of the number of O atoms per second) for O ion escape, photochemical escape, and sputtering, plus the combined total; a bar spans the published range of a channel. Photochemical escape dominates the oxygen budget today; sputtering is sub-dominant at present solar activity but was likely comparable or larger in the young, EUV-active Sun epoch. The three channels sum to the total at the top of the panel and, together with hydrogen escape, give the $\sim 2$–$3$ kg s$^{-1}$ figure quoted in the text. Course-original figure.
+```
 
 ## Atmospheric retention
 
@@ -590,6 +672,14 @@ Applying this criterion reveals a clear pattern across the solar system:
 
 The classic graphical summary of these competing constraints is the escape-velocity-vs-temperature diagram ({numref}`fig:escape-velocity-temperature`).
 
+```{figure} figures/escape_velocity_temperature.svg
+:name: fig:escape-velocity-temperature
+:width: 100%
+:align: center
+
+Escape velocity versus surface temperature for solar system bodies. Diagonal lines indicate the thermal velocity of different gas species (scaled by a factor of 6 for long-term retention). Bodies above and to the left of a species line can retain that gas; bodies below and to the right cannot. The gas giants retain everything; Earth and Venus retain heavy species but lose H; Mars and Titan are marginal; the Moon and Mercury retain essentially nothing. Credit: Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+```
+
 ### Atmospheric evolution over time
 
 Atmospheric retention is not simply a present-day snapshot: it evolves over a planet's lifetime {cite:p}`Lammer2008`:
@@ -604,17 +694,27 @@ Atmospheric retention is not simply a present-day snapshot: it evolves over a pl
 
 We examine these evolutionary pathways in detail for Venus's runaway greenhouse ({ref}`Lecture 9 <lecture09>`), Mars's atmospheric collapse ({ref}`Lecture 10 <lecture10>`), and exoplanetary atmospheres ({ref}`Lecture 13 <lecture13>`).
 
-```{figure} figures/escape_velocity_temperature.svg
-:name: fig:escape-velocity-temperature
-:width: 100%
+Mars shows the combined outcome: the thin haze on its limb in {numref}`fig:mars-atmosphere` is what remains after 4 Gyr of escape from a small planet without a global magnetic field.
+
+```{figure} figures/mars_atmosphere.avif
+:name: fig:mars-atmosphere
+:width: 550px
 :align: center
 
-Escape velocity versus surface temperature for solar system bodies. Diagonal lines indicate the thermal velocity of different gas species (scaled by a factor of 6 for long-term retention). Bodies above and to the left of a species line can retain that gas; bodies below and to the right cannot. The gas giants retain everything; Earth and Venus retain heavy species but lose H; Mars and Titan are marginal; the Moon and Mercury retain essentially nothing. Credit: Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+The Martian atmosphere visible as a thin haze layer on the limb, photographed by NASA's *Viking 1* orbiter in 1976. With a surface pressure of only 6 mbar ($\sim$0.6% of Earth's), Mars's atmosphere is too thin to sustain liquid water or provide significant greenhouse warming today. Geological evidence for ancient rivers, lakes, and possibly an ocean indicates that Mars once had a much thicker atmosphere, most of which has been lost to space over the past $\sim$4 billion years through solar wind stripping and other escape processes. Credit: NASA/JPL, public domain.
 ```
 
 ## Recent advances
 
-The James Webb Space Telescope (JWST) has opened a new era in exoplanet atmospheric characterisation. Thermal emission measurements of TRAPPIST-1 b, an Earth-sized planet orbiting an M dwarf, indicate a dayside temperature consistent with bare rock and no significant atmosphere ({numref}`fig:greene-trappist`) {cite:p}`Greene2023`. Similar results for TRAPPIST-1 c {cite:p}`Zieba2023` suggest that innermost rocky planets around active M dwarfs may be stripped of their atmospheres by intense stellar irradiation {cite:p}`Wordsworth2022`. Prolonged stellar irradiation during the extended high-activity saturated regime of M dwarfs (the first few hundred Myr during which X-ray and EUV output stays at a fixed fraction of the bolometric luminosity) drives sustained escape that can strip secondary atmospheres from close-in rocky worlds ({ref}`Lecture 13 <lecture13>`, {ref}`Lecture 14 <lecture14>`).
+The James Webb Space Telescope (JWST) has opened a new era in exoplanet atmospheric characterisation. Thermal emission measurements of TRAPPIST-1 b, an Earth-sized planet orbiting an M dwarf, indicate a dayside temperature consistent with bare rock and no significant atmosphere ({numref}`fig:greene-trappist`) {cite:p}`Greene2023`. Similar results for TRAPPIST-1 c {cite:p}`Zieba2023` suggest that innermost rocky planets around active M dwarfs may be stripped of their atmospheres by intense stellar irradiation {cite:p}`Wordsworth2022`. Prolonged stellar irradiation during the extended high-activity saturated regime of M dwarfs (during which X-ray and EUV output stays at a fixed fraction of the bolometric luminosity: a few hundred Myr for a Sun-like star, but beyond 1 Gyr for a mid-M dwarf, {numref}`fig:xuv-evolution`) drives sustained escape that can strip secondary atmospheres from close-in rocky worlds ({ref}`Lecture 13 <lecture13>`, {ref}`Lecture 14 <lecture14>`).
+
+```{figure} figures/johnstone2021_xuv_evolution.avif
+:name: fig:xuv-evolution
+:width: 100%
+:align: center
+
+Evolutionary tracks for stellar X-ray luminosity for slow, medium, and fast rotators (red, green and blue lines; faster rotators stay active longer) for a Sun-like star (1.0 $M_\odot$, top) and a mid-M dwarf (0.25 $M_\odot$, bottom). Shaded bands give one standard deviation around the mean track. Lower-mass stars remain in the saturated regime $L_X / L_\mathrm{bol} \sim 10^{-3}$ for far longer than Sun-like stars: $\sim 100$ Myr for $1.0\,M_\odot$, $\gtrsim 1$ Gyr for $0.25\,M_\odot$. Close-in rocky planets around late-M stars (e.g. the TRAPPIST-1 system) therefore experience prolonged high-XUV irradiation that drives sustained atmospheric escape. Reproduced from {cite:p}`Johnstone2021`, Fig. 11 (two of the four stellar-mass panels shown).
+```
 
 ```{figure} figures/trappist1b_jwst_greene2023.avif
 :name: fig:greene-trappist
