@@ -299,6 +299,15 @@ Direct imaging detects young, self-luminous giants on wide orbits ($> 10$ AU).
 Astrometry is most sensitive to wide orbits matching the mission baseline.
 Microlensing detects planets at 1 to 10 AU at any host distance, but is unrepeatable.
 Timing is sensitive to compact multi-planet systems or circumbinary configurations.
+The distribution of confirmed exoplanets across mass and orbital period illustrates how these observational biases shape the detected population ({numref}`fig:l13-exoplanet-mass-period`).
+
+```{figure} figures/exoplanet_mass_period.avif
+:align: center
+:name: fig:l13-exoplanet-mass-period
+:width: 80%
+
+Confirmed exoplanet masses (or minimum masses $m_p \sin i$) plotted against orbital period, colour-coded by detection technique, with the solar-system planets shown for comparison. Detection biases concentrate discoveries in the high-mass and short-period regimes, leaving Earth analogues in a sparsely sampled region. Credit: NASA Exoplanet Archive {cite:p}`NASAExoplanetArchive2026`. Course-original figure.
+```
 
 The observed exoplanet archive reflects these combined biases rather than the true physical distribution.
 Demographic claims in Part 2 therefore require **bias correction**, reporting underlying occurrence rather than raw catalogue counts.
@@ -503,7 +512,15 @@ Projected stellar obliquity $\lambda$ as a function of scaled orbital separation
 Bulk-density measurements combining transit and radial-velocity data enable a compositional census of small planets.
 **Super-Earths** below the radius valley have rocky compositions with densities of $4$ to $8$ g/cm$^3$, similar to Earth and Venus.
 **Sub-Neptunes** above the valley have lower densities, typically $1$ to $3$ g/cm$^3$, requiring a volatile envelope of $\mathrm{H_2}$/He or $\mathrm{H_2O}$ over a rocky core.
-Bulk density alone is degenerate: multiple internal structures can match the same bulk density.
+Bulk density alone is degenerate: multiple internal structures can match the same bulk density, as shown by comparing observed planet masses and radii against theoretical composition curves ({numref}`fig:l13-massradius-composition`).
+
+```{figure} figures/lichtenberg2025_mass_radius.avif
+:align: center
+:name: fig:l13-massradius-composition
+:width: 90%
+
+Mass-radius distribution of small exoplanets compared with theoretical interior models ranging from pure iron to volatile-rich envelopes, categorized by thermal regime. Rocky super-Earths align closely with silicate-iron curves, whereas sub-Neptunes require substantial volatile envelopes or water-rich layers to explain their larger radii. Reproduced from {cite:t}`Lichtenberg2025`.
+```
 
 Sub-Neptunes with $\gtrsim 10$ to $20\%$ $\mathrm{H_2O}$ by mass are candidate water worlds.
 In the proposed **hycean** scenario, a planet hosts a shallow liquid water ocean beneath a thick $\mathrm{H_2}$-rich atmosphere {cite:p}`Madhusudhan2021`.
@@ -678,6 +695,15 @@ The classical habitable zone is thus a first-order screening tool rather than a 
 Atmospheric biosignatures are classically identified through **disequilibrium gas combinations**, mixtures of reactive gases that cannot persist without continuous biological replenishment.
 On modern Earth, the coexistence of $\mathrm{O_2}$ ($\sim 21\%$) and $\mathrm{CH_4}$ ($\sim 1.8$ ppm) is the canonical example, because both react photochemically within decades and require continuous biological production.
 Classical biosignature gases include $\mathrm{O_2}$, $\mathrm{O_3}$, $\mathrm{CH_4}$, and $\mathrm{N_2O}$, though a single gas in isolation almost never constitutes a biosignature.
+{numref}`fig:l13-biosignature-gases` shows where these gases absorb: each has bands in the infrared that a transmission or emission spectrum can pick up, which is what makes them observable at all.
+
+```{figure} figures/schwieterman2018_biosignature_gases.avif
+:align: center
+:name: fig:l13-biosignature-gases
+:width: 85%
+
+Absorption cross-sections from optical to mid-infrared wavelengths (0.4 to 20 $\mu$m) for ten candidate biosignature gases: $\mathrm{O_2}$, $\mathrm{O_3}$, $\mathrm{N_2O}$, $\mathrm{CH_4}$, $\mathrm{CH_3Cl}$, $\mathrm{C_2H_6}$, $\mathrm{NH_3}$, dimethyl sulfide, dimethyl disulfide and $\mathrm{CH_3SH}$. Oxygen absorbs only in narrow optical bands; the others have their strongest features in the infrared. Reproduced from {cite:t}`Schwieterman2018`.
+```
 
 The central challenge in biosignature detection is **false positives**, abiotic processes that mimic biological gas signatures.
 {cite:t}`Wordsworth2014` showed that water vapour photolysis followed by hydrogen escape can build up substantial abiotic $\mathrm{O_2}$ on dry planets around M dwarfs.
@@ -694,6 +720,15 @@ The most common stars are M dwarfs rather than G dwarfs like the Sun.
 The most common planet class is the **sub-Neptune** ($2$ to $3\,\Rearth$), which the solar system lacks between Earth ($1\,\Rearth$) and Neptune ($3.88\,\Rearth$).
 Inner exoplanet systems often form compact **peas-in-a-pod** configurations ($\sim 5$ to $8$ similarly sized planets within $\sim 0.2$ AU), whereas the solar system has four irregularly spaced terrestrial planets out to $1.5$ AU.
 The solar system also lacks hot Jupiters or hot Neptunes, and its giant planets occupy wide ($\geq 5$ AU), nearly circular orbits rather than eccentric paths.
+Comparing Kepler multi-planet architectures directly with the inner solar system highlights this contrast in planet size and orbital spacing ({numref}`fig:l13-peas-in-a-pod-solarsys`).
+
+```{figure} figures/raymond2022_peas_in_a_pod.avif
+:align: center
+:name: fig:l13-peas-in-a-pod-solarsys
+:width: 75%
+
+Compact multi-planet systems containing four or more transiting planets out to about 1.5 AU, ordered by the dispersion of planet sizes within each system. The solar system terrestrial planets show significantly greater size diversity and wider spacing than typical compact exoplanet architectures. Reproduced from {cite:t}`Weiss2023`.
+```
 
 However, the observed archive is shaped by detection biases that work against finding solar system analogues.
 A Jupiter analogue at $5$ AU produces a radial velocity signal of $\sim 12$ m/s with a 12-year period, requiring more than a decade to detect (fewer than a hundred are known).
@@ -712,6 +747,7 @@ The **Nancy Grace Roman Space Telescope** Galactic bulge microlensing survey wil
 The **Habitable Worlds Observatory** (HWO) is a planned $\sim 6$ m NASA flagship space telescope targeted for launch in the 2040s to directly image Earth analogues.
 Using a coronagraph or external starshade to achieve contrasts of $10^{-10}$ at sub-arcsecond separations from nearby Sun-like stars, HWO will directly image and obtain spectra of approximately $25$ Earth analogues to search for atmospheric biosignatures.
 The **Large Interferometer For Exoplanets** (LIFE) will complement reflected-light imaging by using a mid-infrared nulling interferometer to detect thermal emission from terrestrial exoplanets.
+
 Ground-based Extremely Large Telescopes will further resolve habitable-zone planets around nearby M dwarfs, complementing the space-based direct-imaging concepts of {ref}`Lecture 14 <lecture14>`.
 
 ### Open questions for the next lecture
@@ -719,7 +755,7 @@ Ground-based Extremely Large Telescopes will further resolve habitable-zone plan
 A central open question is what constitutes a convincing detection of life on another world.
 It is debated whether a single biosignature gas, gas abundance ratios, seasonal cycles, or photosynthetic surface features are sufficient.
 The answer depends on how much we trust atmospheric models and catalogues of false positives.
-{ref}`Lecture 14 <lecture14>` addresses how to move from a candidate biosignature to detecting life.
+{ref}`Lecture 14 <lecture14>` addresses how to move from a candidate biosignature to detecting life through Bayesian frameworks that combine observational data with planetary context.
 
 ## Summary
 
