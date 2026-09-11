@@ -14,7 +14,6 @@ import math
 FAIL = []
 N_CHECKS = 0
 
-
 def chk(name, got, printed, rel=5e-4):
     """Compare a recomputed value against the printed value."""
     global N_CHECKS
@@ -23,7 +22,6 @@ def chk(name, got, printed, rel=5e-4):
     print(f"{'OK  ' if ok else 'FAIL'} {name:46s} got {got:.6g}  printed {printed:.6g}")
     if not ok:
         FAIL.append(name)
-
 
 kB = 1.381e-23
 m_u = 1.661e-27
@@ -76,18 +74,11 @@ L_ch4, M_ch4, Tref_ch4 = 5.10e5, 16.043e-3, 111.7
 psat_ch4_90 = 101325 * math.exp(-(L_ch4 / (R_UNIV / M_ch4)) * (1 / 90 - 1 / Tref_ch4))
 chk("P3b CH4 psat at 90 K (Pa, order 1e4)", psat_ch4_90, 1.2e4, 0.05)
 
-# ── Problem 4: winds on a rotating planet ───────────────────────────────
-f = 2 * 7.29e-5 * math.sin(math.radians(53))
-chk("P4a sin 53 deg", math.sin(math.radians(53)), 0.79864, 1e-4)
-chk("P4a f (s^-1)", f, 1.164e-4, 5e-4)
-chk("P4a 1/f (hours)", 1 / 1.164e-4 / 3600, 2.4, 1e-2)
-chk("P4b Rossby number", 15 / (1.164e-4 * 2.0e6), 0.064, 1e-2)
-
-# ── Problem 5: climate on the edge ──────────────────────────────────────
-chk("P5a 0.71^(1/4)", 0.71 ** 0.25, 0.91794, 1e-4)
-chk("P5a T_eq young Sun (K)", 255 * 0.91794, 234.1, 5e-4)
-chk("P5a implied surface (K)", 234.1 + 33, 267.1, 1e-3)
-# P5b figure read: the three equilibria as asserted by the figure checker
+# ── Problem 4: climate on the edge ──────────────────────────────────────
+chk("P4a 0.71^(1/4)", 0.71 ** 0.25, 0.91794, 1e-4)
+chk("P4a T_eq young Sun (K)", 255 * 0.91794, 234.1, 5e-4)
+chk("P4a implied surface (K)", 234.1 + 33, 267.1, 1e-3)
+# P4b figure read: the three equilibria as asserted by the figure checker
 import importlib.util as _ilu
 import pathlib as _pl
 import sys as _sys
@@ -102,9 +93,9 @@ import numpy as _np
 
 _T = _np.linspace(220, 320, 200000)
 _roots = _T[_np.where(_np.diff(_np.sign(_m.absorbed(_T) - _m.OLR(_T))))[0]]
-chk("P5b cold equilibrium (K)", float(_roots[0]), 250, 1.5e-2)
-chk("P5b unstable threshold (K)", float(_roots[1]), 267, 1e-2)
-chk("P5b warm equilibrium (K)", float(_roots[2]), 287, 1e-2)
+chk("P4b cold equilibrium (K)", float(_roots[0]), 250, 1.5e-2)
+chk("P4b unstable threshold (K)", float(_roots[1]), 267, 1e-2)
+chk("P4b warm equilibrium (K)", float(_roots[2]), 287, 1e-2)
 
 print()
 if FAIL:

@@ -8,8 +8,8 @@ the axes are calibrated from the printed tick positions, and three
 labels (super-Earths, sub-Neptunes, radius valley) are drawn on top
 in data coordinates.
 
-Caption / figure id : `fig:fulton-radius-valley`
-Markdown source     : book/05_atmospheres_1/atmospheres_1.md
+Caption / figure id : deck hero frame, no MyST figure id
+Deck source         : slides/lecture05/lecture05.tex
 Citation key        : Fulton2017
 """
 from __future__ import annotations
@@ -25,7 +25,7 @@ from scripts.figures._shared.style import apply_style, save_figure
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 SRC_PDF = Path(__file__).resolve().parent / "data/fulton2017_radius_dist_cks_naked.pdf"
-OUT_AVIF = REPO_ROOT / "book/05_atmospheres_1/figures/fulton2017_radius_valley.avif"
+OUT_AVIF = REPO_ROOT / "slides/lecture05/figures/fulton2017_radius_valley.avif"
 
 DPI = 200
 

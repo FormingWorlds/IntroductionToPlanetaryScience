@@ -6,8 +6,8 @@ sputtering, plus the combined total. Channels with a published range
 are drawn as a horizontal bar between the range ends; single-value
 channels are drawn as one marker.
 
-Caption / figure id : `fig:maven-o-loss-channels`
-Markdown source     : book/05_atmospheres_1/atmospheres_1.md
+Caption / figure id : deck hero frame, no MyST figure id
+Deck source         : slides/lecture05/lecture05.tex
 Citation key        : Jakosky2018
 """
 from __future__ import annotations
@@ -20,7 +20,7 @@ from scripts.figures._shared.style import apply_style, save_figure
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
-OUT_AVIF = REPO_ROOT / "book/05_atmospheres_1/figures/maven_o_loss_channels.avif"
+OUT_AVIF = REPO_ROOT / "slides/lecture05/figures/maven_o_loss_channels.avif"
 
 BLUE = "#1f77b4"
 

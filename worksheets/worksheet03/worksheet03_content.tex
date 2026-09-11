@@ -20,7 +20,7 @@ $S_\oplus = 1361\ \mathrm{W\,m^{-2}}$ (solar constant at 1 AU) \quad
 $\Mearth = 5.972 \times 10^{24}\ \mathrm{kg}$
 
 \vskip4pt
-Earth: $P_0 = 1.013 \times 10^{5}$ Pa, $\Rearth = 6371$ km, $T_{\mathrm{eq}} = 255$ K, surface $288$ K, $\Omega = 7.29 \times 10^{-5}\ \mathrm{rad\,s^{-1}}$, $\Gamma_d = 9.8\ \mathrm{K\,km^{-1}}$
+Earth: $P_0 = 1.013 \times 10^{5}$ Pa, $\Rearth = 6371$ km, $T_{\mathrm{eq}} = 255$ K, surface $288$ K, $\Gamma_d = 9.8\ \mathrm{K\,km^{-1}}$
 
 \vskip4pt
 Water: $L_v = 2.50 \times 10^{6}\ \mathrm{J\,kg^{-1}}$, $R_v = 462\ \mathrm{J\,kg^{-1}\,K^{-1}}$ ($L_v/R_v = 5400$ K), triple point $(273\ \mathrm{K},\ 611\ \mathrm{Pa})$
@@ -39,7 +39,6 @@ Titan           & 94 (surface)  & 28.6 & 1.35 & --- \\
 \vskip4pt
 {\footnotesize Atmospheric data as in the Lecture 5 notes; $\mu$ is dimensionless, in units of $m_u$. The young Sun had $L/\Lsun = 0.71$ (Lecture 6 notes).}
 \end{given}
-
 
 % ════════════════════════════════════════════════════════════
 \problem{How thick is an atmosphere?}
@@ -101,7 +100,6 @@ about one millionth of Earth's mass.
 \answer{$m_{\mathrm{col}} = 1.0326 \times 10^{4}\ \mathrm{kg\,m^{-2}}$ and $M_{\mathrm{atm}} = 5.267 \times 10^{18}\ \mathrm{kg}$, about one millionth of Earth's mass.}
 \end{solution}
 
-
 % ════════════════════════════════════════════════════════════
 \problem{Sunlight in, infrared out}
 
@@ -161,7 +159,6 @@ Energy is conserved at every level; the greenhouse effect only slows the escape 
 temperature the surface needs to pass its share outward.
 \answer{False: the atmosphere is not a new energy source but recycles energy originally radiated by the surface, conserving energy at every level while slowing its escape to space.}
 \end{solution}
-
 
 % ════════════════════════════════════════════════════════════
 \problem{From vapour to cloud base}
@@ -239,53 +236,6 @@ One equation, two extremes of its exponential sensitivity.
 \answer{A large $L_v/R_v$ makes the saturation curve steep and the $\mathrm{H_2SO_4}$ cloud base sharp, whereas a low $L_v/R_v$ for $\mathrm{CH_4}$ allows condensation across many kilometres of altitude.}
 \end{solution}
 
-
-% ════════════════════════════════════════════════════════════
-\problem{Winds on a rotating planet}
-
-Rotation organises all large-scale flow.
-Here you quantify it for the air above the Netherlands, then judge a claim.
-
-\parti Compute the Coriolis parameter $f = 2\Omega\sin\phi$ for Groningen ($\phi = 53^\circ\mathrm{N}$).
-
-\begin{solution}
-\[
-f = 2 \times 7.29 \times 10^{-5} \times \sin 53^\circ = 1.458 \times 10^{-4} \times 0.79864
-= 1.164 \times 10^{-4}\ \mathrm{s^{-1}}.
-\]
-The associated timescale $1/f \approx 2.4$ hours: any motion lasting longer
-than a few hours feels the rotation.
-\answer{$f = 1.164 \times 10^{-4}\ \mathrm{s^{-1}}$, giving an inertial timescale $1/f \approx 2.4\ \mathrm{hours}$ beyond which motions feel planetary rotation.}
-\end{solution}
-
-\parti A low-pressure system 2000 km across has winds of $15\ \mathrm{m\,s^{-1}}$.
-Compute its Rossby number and state which force balance governs the flow.
-
-\begin{solution}
-\[
-\mathrm{Ro} = \frac{U}{f L} = \frac{15}{1.164 \times 10^{-4} \times 2.0 \times 10^{6}} = 0.064.
-\]
-Since $\mathrm{Ro} \ll 1$, rotation dominates over inertia and the system is in geostrophic balance:
-the pressure gradient force is balanced by the Coriolis force.
-\answer{$\mathrm{Ro} = 0.064 \ll 1$: rotation dominates over inertia, putting the system in geostrophic balance where the pressure gradient force balances the Coriolis force.}
-\end{solution}
-
-\parti A fellow student writes: ``Venus rotates 243 times more slowly than Earth, so the Coriolis force
-is weak, and its atmosphere must therefore break up into many more small circulation cells than Earth's.''
-Judge this claim.
-
-\begin{solution}
-The premise is right and the conclusion is backwards.
-Weak rotation means a weak Coriolis force, and it is the Coriolis deflection that breaks the
-equator-to-pole overturning into separate cells: on Earth it halts the Hadley circulation near
-$30^\circ$ and forces the three-cell structure.
-With almost no deflection, Venus's overturning runs uninterrupted from equator to pole: one giant Hadley
-cell per hemisphere, fewer cells, not more.
-Many alternating cells are the signature of fast rotators such as Jupiter.
-\answer{False: weak Coriolis deflection allows overturning to run uninterrupted from equator to pole in one giant Hadley cell per hemisphere, creating fewer cells than Earth, not more.}
-\end{solution}
-
-
 % ════════════════════════════════════════════════════════════
 \problem{Climate on the edge}
 
@@ -347,19 +297,3 @@ A thermostat needs both a working sink and a working source; Mars kept neither.
 \answer{Elevated $\mathrm{CO_2}$ warms Earth and speeds silicate weathering to bury carbonate until balance is restored; on Mars volcanism ceased about $3\ \mathrm{Gyr}$ ago, breaking the carbon source.}
 \end{solution}
 
-\parti A fellow student proposes: ``the faint young Sun paradox is solved because the early Earth had
-more continental area than today, and rock absorbs more sunlight than water.''
-Judge both halves of this claim against the Lecture 6 notes.
-
-\begin{solution}
-Both halves are wrong.
-Continental crust grew over time: the early Earth had less land, not more, with most of the surface
-under ocean.
-And the albedo argument is inverted: ocean is darker than land, so a more water-covered Earth absorbs
-more sunlight, not less.
-The notes' albedo contribution to resolving the paradox rests exactly on this: a smaller continental
-area (plus possibly fewer clouds) lowered the early Earth's albedo and helped the fainter Sun keep the
-surface unfrozen, alongside the dominant contribution from a stronger $\mathrm{CO_2}$ and $\mathrm{CH_4}$
-greenhouse.
-\answer{Both halves are wrong: early Earth had less land, not more, and ocean is darker than land, so smaller continental area lowered the planetary albedo.}
-\end{solution}
