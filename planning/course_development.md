@@ -128,7 +128,7 @@ Each week consists of:
 - Atmospheric escape: Jeans escape, hydrodynamic escape, sputtering, photochemical escape
 - Atmospheric retention: the role of gravity and temperature
 - Recent advances: JWST detections of exoplanet atmospheres, revised atmospheric escape models, new constraints on early Earth and Mars atmospheric composition
-- **Length budget (2026-09-10):** deck 46 frames (from 89), notes about 7500 words (from 9501), board sheet 5 live steps with the isothermal column integration stated in the closing box; the closing item is the JWST/MIRI TRAPPIST-1 b secondary eclipse on one hero frame; Worksheet 3 drops its rotating-winds problem and part 5(d) (4 problems, 12 parts) and Mini-lecture 3 its winds frame.
+- **Length budget (2026-09-10):** deck 54 frames (from 89; 46 after the cut, then figures added to concept frames), notes about 7500 words (from 9501), board sheet 5 live steps with the isothermal column integration stated in the closing box; the closing item is the JWST/MIRI TRAPPIST-1 b secondary eclipse on one hero frame; Worksheet 3 drops its rotating-winds problem and part 5(d) (4 problems, 12 parts) and Mini-lecture 3 its winds frame.
 
 ### Lecture 6: Atmospheres II — Clouds, Weather, & Climate
 
