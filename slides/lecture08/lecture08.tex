@@ -65,12 +65,12 @@
 
 % ── Seismic waves ────────────────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.67]{seismic_waves}{P- and S-wave paths through Earth's interior. Credit: Wikimedia Commons, public domain.}{P-waves ($v_P = \sqrt{(K + \tfrac{4}{3}\mu)/\rho}$) travel through solids and liquids; S-waves ($v_S = \sqrt{\mu/\rho}$) need $\mu > 0$, so they \textbf{cannot propagate} through a liquid.}
+  \ipsherokey[0.62]{seismic_waves}{P-wave paths through Earth's interior; no direct P arrival reaches the surface in the shadow zone. Credit: Wikimedia Commons, public domain.}{P-waves ($v_P = \sqrt{(K + \tfrac{4}{3}\mu)/\rho}$) travel through solids and liquids; S-waves ($v_S = \sqrt{\mu/\rho}$) need $\mu > 0$, so they \textbf{cannot propagate} through a liquid.}
 \end{frame}
 
 % ── Shadow zones hero ────────────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.66]{prem_shadow_zones}{Rays traced through PREM, the standard seismological model of Earth's interior. Course original, from the PREM tabulation of Dziewonski \& Anderson (1981).}{No S-waves beyond 103\textdegree{} proves the outer core is liquid; P-wave refraction creates a shadow zone from 103\textdegree{} to 143\textdegree{}.}
+  \ipsherokey[0.65]{prem_shadow_zones}{Rays traced through PREM, the standard seismological model of Earth's interior. Course original, from the PREM tabulation of Dziewonski \& Anderson (1981).}{No S-waves beyond 103\textdegree{} proves the outer core is liquid; P-wave refraction opens a shadow zone, 98\textdegree{} to 145\textdegree{} in this ray tracing (textbook range 103\textdegree{} to 143\textdegree{}).}
 \end{frame}
 
 % ── Gravity field ────────────────────────────────────────────
@@ -191,7 +191,7 @@
 
 % ── Birch's law ──────────────────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.61]{birchs_law}{Birch's law: $v_P$ against density for mantle minerals, trend after Birch (1952). Course original.}{$v_P = a(\bar{M}) + b\,\rho$: compressional velocity scales linearly with density at a given mean atomic weight $\bar{M}$, so seismic speeds map to density; iron-rich minerals plot below the trend, and the law breaks down across compositional boundaries and phase transitions.}
+  \ipsherokey[0.61]{birchs_law}{Birch's law: $v_P$ against density for mantle minerals, trend after Birch (1952). Course original.}{$v_P = a(\bar{M}) + b\,\rho$: at a given mean atomic weight $\bar{M}$, compressional velocity scales linearly with density, so seismic speeds map to density. Iron-rich minerals plot below the trend, so the law needs a known composition.}
 \end{frame}
 
 % ── Adams-Williamson equation ────────────────────────────────
@@ -225,7 +225,7 @@
 
 % ── PREM ─────────────────────────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.61]{prem_density}{Density against depth in the \textbf{Preliminary Reference Earth Model} (PREM). Credit: Dziewonski \& Anderson (1981).}{Density rises from $\sim$3300~kg\,m$^{-3}$ in the upper mantle to $\sim$5500 at its base, jumps to 9900--12{,}200 in the outer core and reaches $\sim$13{,}000 in the inner core; the 410 and 660~km steps are phase transitions, the core-mantle boundary is silicate to iron.}
+  \ipsherokey[0.61]{prem_density}{Density against radius in the \textbf{Preliminary Reference Earth Model} (PREM). Course original, evaluated from the coefficients of Dziewonski \& Anderson (1981).}{Density rises from $\sim$3300~kg\,m$^{-3}$ in the upper mantle to $\sim$5570 at its base, jumps to 9900--12{,}200 in the outer core and reaches $\sim$13{,}000 in the inner core. The 410 and 660~km steps are phase transitions; the core-mantle boundary is silicate to iron.}
 \end{frame}
 
 % ── PREM full profile hero ───────────────────────────────────
@@ -309,7 +309,7 @@
   \vskip10pt
   \raggedright
   \begin{itemize}\setlength\itemsep{3pt}
-    \item Same chemical composition ($\mathrm{(Mg,Fe)_2SiO_4}$), denser crystal structures
+    \item At 410 and 520~km olivine ($\mathrm{(Mg,Fe)_2SiO_4}$) turns into denser polymorphs of the same composition; at 660~km ringwoodite splits into bridgmanite and ferropericlase
     \item Driven by pressure: atoms rearrange into denser packing
     \item These transitions produce the primary seismic discontinuities in PREM
   \end{itemize}
@@ -348,7 +348,7 @@
 
 % ── Mars interior hero ───────────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.61]{mars_interior_insight}{Mars's interior from InSight seismology: a 24--72~km crust, a mantle to $\sim$1560~km, and the core. Credit: NASA/JPL-Caltech (PIA25282).}{The seismic boundary at $R_c \sim 1830$~km was reinterpreted in 2023 as the top of a molten silicate layer above a smaller ($\sim$1650--1675~km) liquid iron core of about 6500~kg\,m$^{-3}$.}
+  \ipsherokey[0.61]{mars_interior_insight}{Mars's interior from InSight seismology: a 24--72~km crust, a mantle extending to $\sim$1560~km depth, and the core. Credit: NASA/JPL-Caltech (PIA25282).}{The seismic boundary at $R_c \sim 1830$~km was reinterpreted in 2023 as the top of a molten silicate layer above a smaller ($\sim$1650--1675~km) liquid iron core of about 6500~kg\,m$^{-3}$.}
 \end{frame}
 
 % ── Mercury ──────────────────────────────────────────────────
@@ -376,7 +376,7 @@
   \vskip6pt
   \raggedright
   \begin{itemize}\setlength\itemsep{3pt}
-    \item Higher mean density $\Rightarrow$ larger iron core fraction
+    \item Higher \emph{uncompressed} density $\Rightarrow$ larger iron core fraction; self-compression lifts Earth's mean density above Mercury's
     \item Lower $C/MR^2$ $\Rightarrow$ stronger central mass concentration
     \item A dynamo requires a convecting liquid conductor
   \end{itemize}
@@ -425,7 +425,7 @@
 
 % ── Unusual magnetic fields ──────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.61]{soderlund2020_planetary_field_morphologies}{Radial magnetic field at the surface of six planets in Mollweide projection. Credit: Soderlund et al.\ (2020), Fig.~1.}{Uranus and Neptune generate multipolar fields tilted by 59\textdegree{} and 47\textdegree{} and offset from the centre, from dynamos in thin outer fluid ice shells; Uranus emits negligible internal heat, Neptune $\sim$2.6$\times$ the solar flux.}
+  \ipsherokey[0.61]{soderlund2020_planetary_field_morphologies}{Radial magnetic field at the surface of six planets in Mollweide projection. Credit: Soderlund et al.\ (2020), Fig.~1.}{Uranus and Neptune generate multipolar fields tilted by 59\textdegree{} and 47\textdegree{} and offset from the centre, from dynamos in thin outer fluid ice shells, unlike the axial dipoles of Earth, Jupiter and Saturn.}
 \end{frame}
 
 
@@ -485,7 +485,7 @@
 
 % ── Mars velocity profiles hero ──────────────────────────────
 \begin{frame}
-  \ipshero{stahler2021_mars_vp_vs}{Mars velocity profiles from InSight: $v_S$ drops to zero at the core boundary, confirming a liquid metallic core. Credit: St\"ahler et al.\ (2021), Fig.~2A.}
+  \ipshero[0.76]{stahler2021_mars_vp_vs}{Mars velocity profiles from InSight: the mantle $v_S$ and $v_P$ profiles end at the core boundary near 1560~km depth, below which no shear wave propagates, a liquid metallic core. Credit: St\"ahler et al.\ (2021), Fig.~2A.}
 \end{frame}
 
 % ── Summary ────────────────────────────────────────────────

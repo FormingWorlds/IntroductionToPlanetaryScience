@@ -111,7 +111,7 @@
     \bottomrule
   \end{tabular}
   \vskip10pt
-  \keyresult{Surface pressures span five orders of magnitude, temperatures run from 94 to 737~K.}
+  \keyresult{Surface pressures span four orders of magnitude, temperatures run from 94 to 737~K.}
 \end{frame}
 
 \begin{frame}
@@ -156,7 +156,7 @@
   \vskip4pt
   \keyresult{$$\boxed{P(z) = P_0\,\exp\!\left(-\frac{z}{H}\right)}$$}
   \vskip4pt
-  with $H = \kB T/(\mu\,m_u\,g)$; the pressure drops by $e \approx 2.718$ each scale height.
+  with $H = \kB T/(\mu\,m_u\,g)$; the pressure drops by a factor of $e \approx 2.718$ each scale height.
 \end{frame}
 
 \begin{frame}
@@ -279,7 +279,7 @@
 \end{frame}
 
 \begin{frame}
-  \ipshero{venus_tz_vira}{Venus temperature profile from Pioneer Venus/VIRA and Venus Express: without ozone, $T$ falls monotonically from 737~K at the surface, reaching 1~bar near 50~km. Course figure.}
+  \ipshero{venus_tz_vira}{Venus temperature profile from Pioneer Venus/VIRA and Venus Express: without ozone, $T$ falls monotonically from 737~K at the surface to the mesopause near 100~km. Course figure.}
 \end{frame}
 
 \begin{frame}
@@ -296,7 +296,7 @@
 \begin{frame}{Three interactions: radiation and matter}
   \begin{itemize}\setlength\itemsep{6pt}
     \item \textbf{Absorption:} photon energy becomes internal molecular energy; key absorbers $\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, $\mathrm{O_3}$, $\mathrm{N_2O}$
-    \item \textbf{Emission:} warm gas radiates at the absorbed wavelengths (Kirchhoff's law), directly to space
+    \item \textbf{Emission:} warm gas radiates at the absorbed wavelengths (Kirchhoff's law); only emission from $\tau \lesssim 1$ reaches space
     \item \textbf{Scattering:} photons redirected without absorption; Rayleigh ($\propto \lambda^{-4}$) and Mie scattering
   \end{itemize}
 \end{frame}
@@ -431,7 +431,7 @@
   \keyresult{$$\lambda_J = \frac{G M_p\,m}{\kB T_{\mathrm{exo}}\,r_{\mathrm{exo}}} = \frac{v_{\mathrm{esc}}^2}{v_{\mathrm{th}}^2}, \qquad v_{\mathrm{th}} = \sqrt{2\kB T_{\mathrm{exo}}/m}$$}
   \vskip6pt
   \begin{itemize}
-    \item $\lambda_J \gg 1$: escape is negligible because the tail is depleted
+    \item $\lambda_J \gg 1$: escape is negligible because very few molecules exceed $v_{\mathrm{esc}}$
     \item $\lambda_J \lesssim 2$--3: thermal escape drives rapid atmospheric loss
     \item Escape flux $\Phi_J \propto (1 + \lambda_J)\,e^{-\lambda_J}$: exponential in $\lambda_J$
   \end{itemize}
@@ -537,7 +537,7 @@
 
 % ── Escape velocity-temperature diagram ──────────────────────
 \begin{frame}
-  \ipsherokey[0.61]{escape_velocity_temperature}{Escape velocity against temperature, with the retention lines for each gas. Credit: Wikimedia, CC BY-SA 4.0.}{Long-term retention needs $v_{\mathrm{esc}} \gtrsim 6\,v_{\mathrm{th}}$: gas giants keep every species, Earth and Venus lose only H, Mars is marginal, cold Titan keeps $\mathrm{N_2}$, the Moon and Mercury keep nothing.}
+  \ipsherokey[0.61]{escape_velocity_temperature}{Escape velocity against temperature, with the retention lines for each gas. Credit: Wikimedia, CC BY-SA 4.0.}{Long-term retention needs $v_{\mathrm{esc}} \gtrsim 6\,v_{\mathrm{th}}$: gas giants keep every species, Earth and Venus lose the light gases H and He, Mars is marginal, cold Titan keeps $\mathrm{N_2}$, the Moon and Mercury keep nothing.}
 \end{frame}
 
 % ── Mars atmosphere ──────────────────────────────────────────
@@ -562,9 +562,9 @@
 % ── Summary ──────────────────────────────────────────────────
 \begin{frame}{Summary}
   \begin{enumerate}\setlength\itemsep{6pt}
-    \item \textbf{Atmosphere types}: primary (captured), secondary (outgassed), tertiary (biogenic); five orders of magnitude in surface pressure
+    \item \textbf{Atmosphere types}: primary (captured), secondary (outgassed), tertiary (biogenic); four orders of magnitude in surface pressure
     \item \textbf{Hydrostatic balance} and the \textbf{scale height} $H = \kB T/(\mu m_u g)$ give $P = P_0 e^{-z/H}$; convection sets $\Gamma_d = g/c_p$ below the 0.1~bar tropopause
-    \item \textbf{Greenhouse warming} from $\tau \gtrsim 1$ raises $T_s$ above $T_{\mathrm{eff}}$; \textbf{atmospheric escape} (thermal, hydrodynamic, non-thermal) is beaten only when $v_{\mathrm{esc}} \gtrsim 6 v_{\mathrm{th}}$
+    \item \textbf{Greenhouse warming} from $\tau \gtrsim 1$ raises $T_s$ above $T_{\mathrm{eff}}$; \textbf{thermal escape} is negligible when $v_{\mathrm{esc}} \gtrsim 6 v_{\mathrm{th}}$; hydrodynamic and non-thermal loss follow other rules
   \end{enumerate}
   \vskip8pt
   \textbf{Next: Lecture 6}

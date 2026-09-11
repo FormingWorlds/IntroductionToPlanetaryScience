@@ -14,7 +14,7 @@
 \author[L9]{Tim Lichtenberg}
 \institute{Kapteyn Astronomical Institute\\University of Groningen}
 \date{2026}
-\titlebgcredit{Three Venus-bound missions over a Magellan radar mosaic. Credit: Widemann et al.\ (2023), SSRv 219, 56}
+\titlebgcredit{Three Venus-bound missions over an Akatsuki UV view of Venus. Credit: Widemann et al.\ (2023), SSRv 219, 56}
 
 % ════════════════════════════════════════════════════════════
 \begin{document}
@@ -110,7 +110,7 @@
 
 % ── Earth in context: TRAPPIST-1 ────────────────────────────
 \begin{frame}
-  \ipshero{nasa_trappist1_solarsystem_comparison}{TRAPPIST-1 against the inner solar system to scale: seven Earth-sized worlds span the habitable zone of a late M dwarf. Credit: NASA/JPL-Caltech (PIA22093).}
+  \ipshero[0.76]{nasa_trappist1_solarsystem_comparison}{The seven TRAPPIST-1 planets against the inner solar system in density and stellar illumination: three (e, f, g) lie in the habitable zone of a late M dwarf. Credit: NASA/JPL-Caltech (PIA22093).}
 \end{frame}
 
 % ── Plate tectonics ─────────────────────────────────────────
@@ -290,7 +290,7 @@
 \end{frame}
 
 \begin{frame}
-  \ipshero[0.76]{venus_tz_vira}{Venus temperature profile from the 737 K, 92 bar surface through the cloud deck (48--70 km) to 100 km: a monotonic dry adiabatic lapse rate. Credit: Pioneer Venus / VIRA and Venus Express; course-original figure.}
+  \ipshero[0.76]{venus_tz_vira}{Venus temperature profile from the 737 K, 92 bar surface through the cloud deck (48--70 km) to 100 km: a monotonic fall with no inversion, close to adiabatic in the deep troposphere. Credit: Pioneer Venus / VIRA and Venus Express; course-original figure.}
 \end{frame}
 
 % ── Super-rotation ──────────────────────────────────────────
@@ -385,7 +385,7 @@
     \item Present Venus ($A = 0.77$) absorbs only $\sim 150$ W\,m$^{-2}$: the albedo is the product of the runaway, not its cause
   \end{itemize}
   \vskip4pt
-  \keyresult{Setting $F_{\mathrm{abs}} = F_{\mathrm{OLR}}^{\max}$ gives the inner edge of the habitable zone, $a_{\mathrm{IHZ}} \approx 0.95$--$0.99$ AU.}
+  \keyresult{Setting $F_{\mathrm{abs}} = F_{\mathrm{OLR}}^{\max}$ gives the inner edge of the habitable zone: the runaway limit at 0.84--0.97 AU, the moist greenhouse limit at $a_{\mathrm{IHZ}} \approx 0.95$--$0.99$ AU.}
 \end{frame}
 
 \begin{frame}
@@ -417,12 +417,12 @@
 \end{frame}
 
 \begin{frame}
-  \ipsherokey[0.5]{lebrun2013_magma_ocean_evolution}{Potential (black) and surface (grey) temperature of a crystallising magma ocean coupled to its steam atmosphere on a Venus-mass planet at Venus's orbit; the dashed line marks 98\% solidification. Credit: Lebrun et al.\ (2013).}{Solidification takes about 10 Myr at Venus's orbit (1.5 Myr at Earth's, 0.1 Myr at Mars's), long enough for the steam atmosphere to photolyse and lose hydrogen; below about 0.66 AU the magma ocean never freezes, and Venus at 0.72 AU sits just outside that limit.}
+  \ipsherokey[0.5]{lebrun2013_magma_ocean_evolution}{Potential (black) and surface (grey) temperature of a crystallising magma ocean coupled to its steam atmosphere on a Venus-mass planet at Venus's orbit; the dashed line marks 98\% solidification. Credit: Lebrun et al.\ (2013).}{Solidification takes about 10 Myr at Venus's orbit (1.5 Myr at Earth's, 0.1 Myr at Mars's), long enough for the steam atmosphere to photolyse and lose hydrogen. Below about 0.66 AU the magma ocean never freezes; Venus at 0.72 AU sits just outside that limit.}
 \end{frame}
 
 % ── Way 2016 paleo-Venus ────────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.61]{way2016_paleo_venus_temperature}{Surface temperature of a paleo-Venus at 2.9 Gya in a GCM snapshot, from $-22^{\circ}$C at the poles to $+46^{\circ}$C at the equator. Credit: Way et al.\ (2016).}{Cloud feedback from slow rotation reflects flux to space; across the ensemble a global mean $T < 290$ K can persist for $\sim 1$ Gyr: a habitable Venus is dynamically possible, not required.}
+  \ipsherokey[0.61]{way2016_paleo_venus_temperature}{Surface temperature of a paleo-Venus at 2.9 Gya in a GCM snapshot, from $-22^{\circ}$C at the poles to $+46^{\circ}$C at the equator. Credit: Way et al.\ (2016).}{Cloud feedback from slow rotation reflects flux to space; a global mean $T < 290$ K can persist for several Gyr, with water loss within the last $\sim 1$ Gyr: a habitable Venus is dynamically possible, not required.}
 \end{frame}
 
 % ── Photolysis + H escape ───────────────────────────────────
@@ -456,7 +456,7 @@
     \begin{itemize}
       \item Light $^1\mathrm{H}$ escapes more easily than $^2\mathrm{H}$
       \item Rayleigh distillation: $R/R_0 = f^{\alpha-1}$
-      \item Diffusion-limited ($\alpha = 0.5$): $f \approx 150^{-2}$, initial water $\sim 450$ m GEL; the Jeans limit ($\alpha = 0.71$) gives an unphysical $> 100$ oceans, so 450 m is a lower bound
+      \item Mass-ratio limit ($\alpha = 0.5$): $f \approx 150^{-2}$, initial water $\sim 450$ m GEL; the thermal-velocity limit ($\alpha = 0.71$) gives an unphysical $> 100$ oceans; early hydrodynamic loss at $\alpha \approx 1$ leaves no D/H trace, so 450 m is a lower bound
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -467,7 +467,7 @@
 
 % ── Turbet hysteresis ───────────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.61]{turbet2021_hysteresis}{Bistability and hysteresis of the surface state against stellar flux. Credit: Turbet et al.\ (2021), Fig.~4.}{For some stellar fluxes a wet state (ocean, thin atmosphere) and a dry state (hot, thick $\mathrm{CO_2}$ atmosphere) coexist; crossing the threshold is one-way, the dry state has no thermodynamic path back.}
+  \ipsherokey[0.61]{turbet2021_hysteresis}{Bistability and hysteresis of the surface state against stellar flux. Credit: Turbet et al.\ (2021), Fig.~4.}{For some stellar fluxes a condensed state (ocean, thin atmosphere) and a runaway state (hot, thick steam atmosphere) coexist; the transition is one-way, the steam state has no path back to condensation.}
 \end{frame}
 
 % ── Constantinou Venus pathways ─────────────────────────────
@@ -508,7 +508,7 @@
 \end{frame}
 
 \begin{frame}
-  \ipsherokey[0.5]{dauphas2017_earth_accreting_material}{Probability density for the chromium-bearing fraction of Earth's accreting mass against the accreted mass fraction: Cr arrived nearly mass-proportionally, unlike the back-loaded Mo and Ru. Credit: Dauphas (2017).}{With the O, Ti, Ni, Mo and Ru tracers this gives three stages: the first 60\% of Earth's mass about 51\% enstatite-like, 40\% ordinary-chondrite and 9\% carbonaceous, the rest enstatite-like; the carbonaceous component, and most of Earth's water, came early rather than in the late veneer.}
+  \ipsherokey[0.5]{dauphas2017_earth_accreting_material}{Probability density for the chromium-bearing fraction of Earth's accreting mass against the accreted mass fraction: Cr arrived nearly mass-proportionally, unlike the back-loaded Mo and Ru. Credit: Dauphas (2017).}{With the O, Ti, Ni, Mo and Ru tracers this gives three stages: the first 60\% of Earth's mass about 51\% enstatite-like, 40\% ordinary-chondrite and 9\% carbonaceous, the rest enstatite-like. The carbonaceous component, and most of Earth's water, came early rather than in the late veneer.}
 \end{frame}
 
 \begin{frame}

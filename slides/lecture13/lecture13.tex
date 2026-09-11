@@ -80,7 +80,7 @@
   \begin{itemize}\setlength\itemsep{3pt}
     \item Star and planet orbit a common barycentre: $a_\star = (m_p / M_\star)\,a_p$
     \item The periodic Doppler shift of the stellar absorption lines gives the reflex velocity
-    \item Semi-amplitude $K_\star$ (edge-on orbit; set $e = 0$ for a circular one):
+    \item Semi-amplitude $K_\star$ for inclination $i$ (edge-on: $\sin i = 1$; circular: $e = 0$):
   \end{itemize}
   \[
     K_\star = \left(\frac{2\pi G}{P}\right)^{1/3}\!\frac{m_p \sin i}{M_\star^{2/3}}\,\frac{1}{\sqrt{1 - e^2}}
@@ -89,7 +89,7 @@
 \end{frame}
 
 \begin{frame}
-  \ipsherokey[0.55]{radial_velocity_signal}{(a) The reflex velocity of a Sun with a Jupiter analogue against the precisions of ELODIE, HARPS and ESPRESSO; (b) the semi-amplitudes of Jupiter, Saturn and Earth analogues. Course figure.}{An Earth analogue at 0.09 m\,s$^{-1}$ sits below the instrumental floor and within the 0.1--1 m\,s$^{-1}$ stellar jitter; RV alone gives only the minimum mass $m_p \sin i$, and a transit fixes $\sin i \approx 1$.}
+  \ipsherokey[0.55]{radial_velocity_signal}{(a) The reflex velocity of a Sun with a Jupiter analogue against the precisions of ELODIE, HARPS and ESPRESSO; (b) the semi-amplitudes of Jupiter, Saturn and Earth analogues. Course figure.}{An Earth analogue at 0.09 m\,s$^{-1}$ sits below the instrumental floor and within the 0.1--1 m\,s$^{-1}$ stellar jitter; RV alone gives only the minimum mass $m_p \sin i$.}
 \end{frame}
 
 
@@ -116,7 +116,7 @@
 
 % ── Light curve anatomy ─────────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.69]{transit_lightcurve_schematic}{Anatomy of a transit light curve with its four contact times $t_\mathrm{I}$ to $t_\mathrm{IV}$. Winn (2010).}{The duration gives the impact parameter $b$ and the inclination, the ingress and egress shape the stellar limb darkening, and the depth the radius ratio $R_p / R_\star$.}
+  \ipsherokey[0.65]{transit_lightcurve_schematic}{Anatomy of a transit light curve with its four contact times $t_\mathrm{I}$ to $t_\mathrm{IV}$. Winn (2010).}{The depth gives the radius ratio $R_p / R_\star$; the total duration and the ingress time give the impact parameter $b$ and the inclination. A real transit bottom curves from stellar limb darkening.}
 \end{frame}
 
 % ── JWST WASP-39 b transit hero ─────────────────────────────
@@ -344,7 +344,7 @@
 
 % ── Hot Neptune desert ──────────────────────────────────────
 \begin{frame}
-  \ipsherokey{mazeh_neptune_desert}{The hot Neptune desert in the mass-period plane. Mazeh et al.\ (2016).}{A deficit of $10$--$100\,\Mearth$ planets at $P < 5$ d: photoevaporation strips the \textbf{bottom edge} into super-Earths, tidal Roche-lobe overflow strips inflated giants at the \textbf{top edge}.}
+  \ipsherokey[0.66]{mazeh_neptune_desert}{The hot Neptune desert in the mass-period plane. Mazeh et al.\ (2016).}{A deficit of $10$--$100\,\Mearth$ planets at $P < 5$ d: at the \textbf{bottom edge} photoevaporation strips low-mass envelopes and leaves super-Earths, at the \textbf{top edge} tidal Roche-lobe overflow strips inflated giants.}
 \end{frame}
 
 % ── Peas-in-a-pod architectures ─────────────────────────────
@@ -377,12 +377,12 @@
 
 % ── Rossiter-McLaughlin effect ──────────────────────────────
 \begin{frame}
-  \ipsherokey[0.61]{rossiter_mclaughlin}{The Rossiter-McLaughlin effect: the Doppler signature of a planet crossing a rotating star. Triaud (2018).}{The planet first hides the approaching, then the receding hemisphere; the time-resolved line distortion gives the sky-projected spin-orbit angle $\lambda$, which separates disk migration from dynamical scattering.}
+  \ipsherokey[0.61]{rossiter_mclaughlin}{The Rossiter-McLaughlin effect: the Doppler signature of a planet crossing a rotating star. Triaud (2018).}{On an aligned orbit the planet first hides the approaching, then the receding hemisphere; the time-resolved line distortion gives the sky-projected spin-orbit angle $\lambda$, which separates disk migration from dynamical scattering.}
 \end{frame}
 
 % ── Obliquity distribution ──────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.61]{obliquity_distribution}{Observed stellar obliquities of hot Jupiter hosts against effective temperature and $a/R_\star$. Albrecht et al.\ (2022).}{\textbf{Cool stars} ($T_\mathrm{eff} < 6250$ K) realign tidally through their convective envelopes; \textbf{hot stars} keep high obliquities; the wide dispersion at large $a/R_\star$ shows that dynamical migration occurs.}
+  \ipsherokey[0.61]{obliquity_distribution}{Observed stellar obliquities of hot Jupiter hosts against $a/R_\star$, grouped by stellar effective temperature. Albrecht et al.\ (2022).}{\textbf{Cool stars} ($T_\mathrm{eff} < 6250$ K) realign tidally through their convective envelopes; \textbf{hot stars} keep high obliquities; the wide dispersion at large $a/R_\star$ shows that dynamical migration occurs.}
 \end{frame}
 
 
@@ -422,7 +422,7 @@
     H = \frac{\kB T}{\mu m_u g}, \qquad \delta(\lambda) \approx \frac{(R_p + n_H(\lambda)\, H)^2}{R_\star^2}, \qquad \frac{\Delta\delta}{\delta} \approx \frac{2 n_H H}{R_p}.
   \]
   \begin{itemize}\setlength\itemsep{3pt}
-    \item Hot Jupiter ($T = 1500$ K, $\mu = 2.3$, $g = 25\ \mathrm{m\,s^{-2}}$): $H \approx 200$ km, modulation $\sim 200$ ppm (JWST-routine)
+    \item Hot Jupiter ($T = 1500$ K, $\mu = 2.3$, $g = 25\ \mathrm{m\,s^{-2}}$): $H \approx 200$ km, $\Delta\delta/\delta \approx 2\%$, absolute modulation $\Delta\delta \sim 200$ ppm (JWST-routine)
     \item Sub-Neptunes: 10--100 ppm; terrestrial atmospheres: $<10$ ppm
     \item High clouds or hazes flatten the spectrum (GJ 1214 b): a flat spectrum does not mean no atmosphere
   \end{itemize}
@@ -457,7 +457,7 @@
     \footnotesize Compared to model atmospheres
   \end{columns}
   \vskip4pt
-  \keyresult{$T_B = 503^{+26}_{-27}$ K, consistent with bare rock; a \textbf{thick CO$_2$ atmosphere is ruled out}, and inner M dwarf rocky planets show a widespread lack of thick atmospheres (Greene et al.\ 2023).}
+  \keyresult{$T_B = 503^{+26}_{-27}$ K, consistent with bare rock; a \textbf{thick CO$_2$ atmosphere is ruled out} (Greene et al.\ 2023). With TRAPPIST-1 c and LHS 475 b, inner M dwarf rocky planets show a widespread lack of thick atmospheres.}
 \end{frame}
 
 \begin{frame}
@@ -519,7 +519,7 @@
 \begin{frame}{Summary: Today's Course-Level Takeaways}
   \begin{enumerate}\setlength\itemsep{6pt}
     \item \textbf{Detection:} transit plus radial velocity breaks $m \sin i$ and yields the true bulk density; every method carries its own bias
-    \item \textbf{Demographics:} small planets dominate ($\eta_\oplus \sim 0.4$); photoevaporation carves the radius valley at $\sim 1.8\,\Rearth$; resonant chains and peas-in-a-pod systems record smooth disk migration
+    \item \textbf{Demographics:} small planets dominate ($\eta_\oplus \sim 0.4$); photoevaporation or core-powered mass loss carves the radius valley at $\sim 1.8\,\Rearth$; resonant chains and peas-in-a-pod systems record smooth disk migration
     \item \textbf{Characterisation:} JWST detects photochemistry and bare rocks; biosignatures require ruling out false positives
   \end{enumerate}
   \vskip6pt
