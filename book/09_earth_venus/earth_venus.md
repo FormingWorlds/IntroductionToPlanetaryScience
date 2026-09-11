@@ -45,8 +45,16 @@ Liquid water hydrates the **lithosphere**, the rigid outer shell comprising the 
 This enables **subduction**, the sinking of one plate beneath another into the mantle ({ref}`Lecture 7 <lecture07>`).
 The biosphere has maintained atmospheric $\mathrm{O_2}$ and $\mathrm{CO_2}$ for the last $\sim$2.4 billion years {cite:p}`Lyons2014`.
 Persistent liquid water on $4$-Gyr timescales is stabilised by the **carbonate-silicate cycle** ({ref}`Lecture 6 <lecture06>`), a negative feedback requiring volcanic outgassing of $\mathrm{CO_2}$ and silicate weathering on a wet surface {cite:p}`Walker1981`.
-This mutual coupling maintains Earth's habitability over billions of years.
+This mutual coupling maintains Earth's habitability over billions of years, supporting the coexisting oceans, atmosphere, and ice sheets visible from space ({numref}`fig:blue-marble-apollo17`).
 Removing any component causes the system to collapse, as likely occurred early on Venus.
+
+```{figure} figures/blue_marble_apollo17.avif
+:name: fig:blue-marble-apollo17
+:width: 100%
+:align: center
+
+"The Blue Marble", Apollo 17, 7 December 1972. Earth photographed by the crew en route to the Moon, with the hydrosphere and cryosphere visible together. Ocean covers most of the sunlit disk on both sides of Africa, from the South Atlantic in the west to the Indian Ocean in the east, while the Antarctic ice cap forms the bright cryosphere along the lower limb. Africa, the Arabian Peninsula, and Madagascar lie near the centre of the disk. NASA image AS17-148-22727. Credit: NASA / Apollo 17 crew.
+```
 
 ### The geologic eons of Earth
 
@@ -96,12 +104,21 @@ Earth possesses a global magnetic field driven by the **geodynamo** ({ref}`Lectu
 Surface field strengths are $25$ to $65$ microtesla.
 Palaeomagnetic measurements of single zircon crystals show that this dynamo has operated for at least $3.45$ Gyr {cite:p}`Tarduno2010`.
 
-The resulting **magnetosphere** deflects the solar wind into a cavity extending roughly $10\, \Rearth$ on the dayside.
+The resulting **magnetosphere** ({numref}`fig:earth-magnetosphere`) deflects the solar wind into a cavity extending roughly $10\, \Rearth$ on the dayside.
 It shields the surface from ionising radiation.
 It suppresses atmospheric loss by eliminating **ion-pickup escape**, the acceleration of atmospheric ions by the solar-wind motional electric field across closed field lines.
 Earth still loses hydrogen through **Jeans escape** (thermal loss of high-velocity atoms) and **polar wind** (ion outflow along open magnetic field lines near the poles).
 These loss rates are far lower than the escape that desiccated Mars after its dynamo died around $4.1$ to $3.9$ Ga ({ref}`Lecture 10 <lecture10>`) and stripped early Venus under solar EUV radiation {cite:p}`Lammer2018`.
 Venus lacks a detectable internal magnetic field today, a contrast explored in Part 2.
+
+```{figure} figures/magnetosphere_anatomy_esa.avif
+:name: fig:earth-magnetosphere
+:width: 100%
+:align: center
+
+Structure of Earth's magnetosphere. The solar wind (orange arrows, arriving from the left) is deflected at the bow shock, and the shocked plasma flows around the planet through the magnetosheath. The magnetopause, where the solar-wind ram pressure balances the magnetic pressure of Earth's field, stands at roughly $10\,\Rearth$ on the dayside, while the nightside field is drawn out into the long magnetotail. This cavity shields the surface from most solar-wind particles and suppresses ion-pickup escape from the regions of closed field lines, in contrast to the open field lines at the poles that permit polar wind.
+Credit: [ESA](https://www.esa.int/ESA_Multimedia/Images/2026/02/Anatomy_of_Earth_s_magnetosphere), [CC BY-SA 3.0 IGO](https://creativecommons.org/licenses/by-sa/3.0/igo/).
+```
 
 ### The hydrosphere and cryosphere
 
@@ -148,10 +165,19 @@ Reproduced from {cite:t}`Zahnle2007`.
 
 ### Snowball Earth episodes
 
-During the Cryogenian period, Earth experienced global glaciations documented by the **Sturtian** (roughly $717$ to $660$ Ma) and **Marinoan** ($645$ to $635$ Ma) episodes {cite:p}`Hoffman2017`.
+During the Cryogenian period, Earth experienced global glaciations ({numref}`fig:snowball-earth-cryogenian`) documented by the **Sturtian** (roughly $717$ to $660$ Ma) and **Marinoan** ($645$ to $635$ Ma) episodes {cite:p}`Hoffman2017`.
 Geological evidence includes **glacial diamictites** (poorly sorted glacial deposits) preserved within $10^\circ$ of the equator.
 Banded iron formations returned after a billion-year absence.
 These glacial layers are capped by thick **cap carbonates** that record an abrupt transition to warm greenhouse conditions immediately after deglaciation.
+
+```{figure} figures/snowball_earth.avif
+:name: fig:snowball-earth-cryogenian
+:width: 100%
+:align: center
+
+Artist's impression of a fully ice-covered "snowball" Earth, with the continents buried under ice and only faint outlines visible. The bright frozen surface reflects most of the incoming sunlight; this high albedo is what makes the snowball state self-sustaining until volcanic $\mathrm{CO_2}$ accumulates enough to force deglaciation.
+Credit: Oleg Kuznetsov (3depix.com), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Snowball_Huronian.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+```
 
 These episodes demonstrate that the carbonate-silicate thermostat (the Walker feedback, {ref}`Lecture 6 <lecture06>`) operates symmetrically to rescue the planet from extreme cold states as well as warm ones.
 While Venus failed by overheating, Earth nearly failed by freezing.
@@ -180,10 +206,21 @@ The $4$-Gyr geological feedbacks cannot compensate on human timescales.
 ### The biosphere's geological footprint
 
 The biosphere has rewritten Earth's surface chemistry in ways that distinguish it from Venus.
-The **Great Oxidation Event** at $\sim$2.4 Ga marks the rise of atmospheric $\mathrm{O_2}$ from negligible Archean levels (pre-GOE $p_{\mathrm{O_2}} < 10^{-5}$ atm) to roughly $0.1\text{--}1\%$ of modern values, driven by oxygenic photosynthesis by cyanobacteria {cite:p}`Lyons2014` ({numref}`fig:lyons-oxygen`).
+The **Great Oxidation Event** at $\sim$2.4 Ga marks the rise of atmospheric $\mathrm{O_2}$ from negligible Archean levels (pre-GOE $p_{\mathrm{O_2}} < 10^{-5}$ atm) to roughly $0.1\text{--}1\%$ of modern values, driven by oxygenic photosynthesis by cyanobacteria {cite:p}`Lyons2014`.
 In the rock record, banded iron formations disappeared.
 Redbeds (sediments reddened by iron oxide in an oxidising environment) appeared.
 A second oxygenation step in the late Neoproterozoic raised $\mathrm{O_2}$ to near-modern values just before the Cambrian explosion.
+{numref}`fig:catling-precambrian` places these events on the Precambrian time scale.
+
+```{figure} figures/catling2020_precambrian_events.avif
+:name: fig:catling-precambrian
+:width: 100%
+:align: center
+
+Geologic time scale of the Precambrian with the major environmental and biological events, from the Moon-forming impact and the earliest evidence for life through the Great Oxidation Event ($\sim$2.4 Ga) to the Neoproterozoic glaciations and the first Ediacaran biota.
+The left columns give the eons and eras; the annotations mark the atmospheric transition from an anoxic, reducing composition to an oxidising one with an ozone layer.
+Reproduced from {cite:t}`Catling2020`.
+```
 
 Carbonate platforms, formed primarily by the calcification of marine organisms over the past $\sim$540 Myr, represent a substantial planetary $\mathrm{CO_2}$ sink.
 On Earth, total carbon stored in surface and crustal reservoirs is on the order of $10^{20}$ kg, equivalent to a $\mathrm{CO_2}$ partial pressure of $\sim 100$ bar if returned to the atmosphere {cite:p}`Catling2017`.
@@ -197,7 +234,19 @@ The link between the biosphere and **biosignatures** (spectroscopic signatures o
 The oldest accepted fossils are **stromatolites** at $3.48$ Ga {cite:p}`Catling2020`, while the origin of life and Precambrian biosignatures are evaluated in {ref}`Lecture 14 <lecture14>`.
 Life arose within a billion years after liquid oceans formed at $4.3$ to $4.4$ Ga.
 Yet microbes dominated alone for $3$ Gyr.
-Complex life, punctuated by mass extinctions like the end-Cretaceous impact at $66$ Ma ({ref}`Lecture 12 <lecture12>`), spans only the final $12\%$ of Earth's history.
+Complex life, punctuated by mass extinctions like the end-Cretaceous impact at $66$ Ma ({ref}`Lecture 12 <lecture12>`), spans only the final $12\%$ of Earth's history ({numref}`fig:earth-life-history`).
+
+```{figure} figures/earth_life_timeline.avif
+:name: fig:earth-life-history
+:width: 100%
+:align: center
+
+Major events in the history of life on Earth, plotted on the geologic eon strip.
+Stemmed markers give representative ages for the milestones discussed in the text, from the formation of Earth and the first liquid water oceans through the earliest biosignatures, the Great Oxidation Event, the first eukaryotes and multicellular algae, to the Ediacaran biota, the Cambrian explosion, and the end-Cretaceous impact.
+Blue bands on the strip mark the Huronian and Neoproterozoic snowball glaciations.
+Event ages are representative values from the cited literature {cite:p}`Mojzsis1996,Dodd2017,Nutman2016,Lyons2014,Catling2020,Hoffman2017`; eon boundaries follow {cite:t}`Gradstein2020`.
+Course-original figure.
+```
 
 This history offers two lessons for planetary science.
 First, because life arose fast while complexity arose slowly, microbial biospheres may be far more common than complex ones ({ref}`Lecture 13 <lecture13>`, {ref}`Lecture 14 <lecture14>`).
@@ -212,7 +261,7 @@ Both points build on the record in {numref}`fig:lyons-oxygen`.
 Venus is the second planet from the Sun, with a semimajor axis of $0.723$ AU, mass $0.815\, \Mearth$, radius $0.950\, \Rearth$, and mean density $5.24$ g/cm$^3$ {cite:p}`NASAVenusFactSheet`.
 By bulk measure, Venus is Earth's near-twin with a silicate mantle and iron core.
 
-However, its surface and atmospheric conditions contrast sharply with Earth.
+However, its surface and atmospheric conditions contrast sharply with Earth ({numref}`fig:l09-vem-atmospheres`).
 Surface pressure is $92$ bar and surface temperature reaches $737$ K.
 The atmosphere is $96.5\%$ $\mathrm{CO_2}$ and $3.5\%$ $\mathrm{N_2}$, with sulfuric acid ($\mathrm{H_2SO_4}$) cloud droplets between $48$ and $70$ km altitude.
 Venus exhibits **retrograde rotation** (rotation against the orbital direction).
@@ -222,10 +271,27 @@ The internal dipole upper limit is $10^{-5}$ of Earth's field {cite:p}`Smrekar20
 The water inventory is only $20$ to $30$ ppm ($1$ to $3$ cm equivalent depth).
 That is roughly $10^5$ times less than Earth's $2.7$ km.
 
+```{figure} figures/venus_earth_mars_atmospheres.avif
+:name: fig:l09-vem-atmospheres
+:width: 100%
+:align: center
+
+Surface temperature (red bars, left axis) and surface pressure (blue bars, right axis, logarithmic) of Venus, Earth and Mars, with the dominant gas below each. Venus and Earth, near-twins in bulk, differ by a factor of 92 in surface pressure and by about 450 K at the surface; Mars is shown for comparison. Data from {cite:p}`NASAFactSheet`. Course-original figure.
+```
+
 ### Exploring Venus: the mission history
 
 Venus exploration relies on three primary data sources: in-situ entry probes, orbital radar mapping, and orbital spectroscopy.
-In-situ measurements by Soviet Venera landers and Pioneer Venus probes established the $92$ bar, $737$ K surface state, basaltic chemistry, and noble-gas abundances.
+In-situ measurements by Soviet Venera landers and Pioneer Venus probes established the $92$ bar, $737$ K surface state, basaltic chemistry, and noble-gas abundances ({numref}`fig:venera13-surface`).
+
+```{figure} figures/venera13_venus_surface.avif
+:name: fig:venera13-surface
+:width: 100%
+:align: center
+
+The surface of Venus photographed by the Soviet Venera 13 lander on 1 March 1982 under the 92-bar, 737 K atmosphere, showing flat basaltic rock slabs and dark soil. Venera 13 survived for 127 minutes in the supercritical $\mathrm{CO_2}$ environment, returning colour panoramic views of the Venusian surface. Credit: USSR / NASA NSSDC, public domain.
+```
+
 Magellan mapped $\sim$98% of the surface at $\sim$100 m resolution using **synthetic-aperture radar** (radar imaging that penetrates cloud cover).
 This mapping provides the global topographic dataset for Venus geology.
 ESA's Venus Express ($2006$–$2014$) measured atmospheric dynamics, surface thermal emission, and hydrogen and oxygen escape rates; JAXA's Akatsuki ($2015$ to present) images the cloud dynamics in the ultraviolet and infrared.
@@ -315,7 +381,15 @@ $$
 Plugging in $T = 737$ K, $m = 7.30 \times 10^{-26}$ kg for $\mathrm{CO_2}$, and $g = 8.87$ m/s$^2$ gives $H \approx 1.57 \times 10^4$ m, or $\sim 16$ km (with the mean molecular weight $43.4$ of the real atmosphere, $15.9$ km).
 For Earth ($T = 288$ K, $m = 4.81 \times 10^{-26}$ kg, $g = 9.81$ m/s$^2$), $H \approx 8.4$ km.
 This factor-of-two difference is set primarily by the higher temperature ratio $T_{\mathrm{Venus}} / T_{\mathrm{Earth}} \approx 2.55$, which outweighs the heavier molecular weight of $\mathrm{CO_2}$.
-Above the clouds, temperature decreases through the mesosphere and rises in the thermosphere where solar EUV is absorbed.
+Above the clouds, temperature decreases through the mesosphere and rises in the thermosphere where solar EUV is absorbed ({numref}`fig:l09-venus-tz-vira`).
+
+```{figure} figures/venus_tz_vira.avif
+:name: fig:l09-venus-tz-vira
+:width: 100%
+:align: center
+
+Venus temperature profile from the 737 K, 92 bar surface through the cloud deck (48 to 70 km, shaded) to the mesopause near 100 km, from Pioneer Venus / VIRA data {cite:p}`Seiff1985` below and Venus Express radio occultations {cite:p}`Tellmann2009` above; no ozone inversion interrupts the monotonic fall, and the deep troposphere is close to adiabatic. Pedagogical fit, course-original figure; {ref}`Lecture 5 <lecture05>` compares the same profile with Earth and Titan.
+```
 
 The cloud system consists of three vertically stacked layers between roughly $48$ and $70$ km altitude.
 Solar UV photolyses $\mathrm{SO_2}$ to form $\mathrm{SO_3}$.
@@ -362,7 +436,7 @@ Climate-model calculation of the runaway greenhouse limit and the inner edge of 
 :width: 100%
 :align: center
 
-Thermal-radiance spectra of an Earth-like atmosphere for surface temperatures $T_\mathrm{s} = 280, 310, 340, 370, 400$ K ({cite:t}`Goldblatt2013` Fig. 3(b)), comparing independent line-by-line calculations against blackbody curves as water vapour absorption closes the 8–14 $\mu$m atmospheric window. Above $T_\mathrm{s} \sim 340$ K, the integrated outgoing flux saturates at the runaway-greenhouse asymptote of $\sim 282$ W m$^{-2}$ ({numref}`fig:kopparapu-runaway`), so that further surface warming cannot produce a compensating increase in thermal emission to space.
+Thermal-radiance spectra of an Earth-like atmosphere for surface temperatures $T_\mathrm{s} = 280, 310, 340, 370, 400$ K ({cite:t}`Goldblatt2013` Fig. 3(b)), comparing independent line-by-line calculations against blackbody curves as water vapour absorption closes the 8–14 $\mu$m atmospheric window. Above $T_\mathrm{s} \sim 340$ K, the integrated outgoing flux saturates at the runaway-greenhouse asymptote of $\sim 282$ W m$^{-2}$, so that further surface warming cannot produce a compensating increase in thermal emission to space.
 ```
 
 Radiative transfer calculations place the Simpson-Nakajima limit at approximately $280\text{--}310$ W/m$^2$ {cite:p}`Goldblatt2013`.
@@ -499,7 +573,7 @@ The two types of terrestrial planet identified by {cite:t}`Hamano2013` from coup
 **Top panel:** magma-ocean solidification time as a function of orbital distance (lower $x$-axis) and, equivalently, of net stellar radiation at the tropopause $\tau_0$ (upper $x$-axis). **Bottom panel:** final water inventory retained on the planet. Coloured curves show different initial water inventories from 0.01 to 10 Earth-ocean masses ($M_\mathrm{EO}$).
 For orbital distances larger than the critical value $a_\mathrm{cr} \approx 0.77$ AU (or net stellar radiation below the tropospheric limit $F_\mathrm{lim}$) the magma ocean crystallises within a few Myr and most of the initial water is retained: this is the **Type I** (Earth-like) regime.
 Inside $a_\mathrm{cr}$ the solidification time diverges and the atmosphere loses essentially all its water to hydrodynamic escape: this is the **Type II** (Venus-like) regime.
-The sharp transition at $a_\mathrm{cr}$ corresponds to the Simpson-Nakajima runaway-greenhouse threshold ({numref}`fig:kopparapu-runaway`) and provides a natural explanation for the Earth-Venus dichotomy.
+The sharp transition at $a_\mathrm{cr}$ corresponds to the Simpson-Nakajima runaway-greenhouse threshold and provides a natural explanation for the Earth-Venus dichotomy.
 Reproduced from {cite:t}`Hamano2013`.
 ```
 
@@ -568,9 +642,21 @@ This contradiction shows that Venusian escape combined an early hydrodynamic pha
 Under this lower-bound argument, the original Venusian water inventory was at least $\sim 100$ times the present value.
 
 The D/H ratio provides direct evidence that Venus lost most of its primordial water to space.
-Photolytic $\mathrm{O_2}$ buildup and interior oxidation accompanied the loss ({ref}`Lecture 13 <lecture13>`, {ref}`Lecture 14 <lecture14>`).
+Photolytic $\mathrm{O_2}$ buildup and interior oxidation accompanied the loss ({numref}`fig:wordsworth-abiotic-o2`; {ref}`Lecture 13 <lecture13>`, {ref}`Lecture 14 <lecture14>`).
 However, D/H alone cannot determine whether water loss occurred early during a magma-ocean phase or over billions of years as solar EUV flux declined.
 Future noble gas measurements, particularly $^{36}$Ar/$^{38}$Ar and Xe isotopic ratios from the DAVINCI probe, will help distinguish between these escape histories.
+
+```{figure} figures/wordsworth2014_abiotic_o2_schematic.avif
+:name: fig:wordsworth-abiotic-o2
+:width: 100%
+:align: center
+
+Schematic of the abiotic build-up of an $\mathrm{O_2}$-dominated atmosphere by photolytic water loss on a terrestrial habitable-zone planet, from {cite:t}`Wordsworth2014`.
+**Top:** during the early phase, stellar XUV flux photolyses atmospheric water vapour into hydrogen and oxygen; the lighter hydrogen escapes preferentially to space, while oxygen accumulates either in the atmosphere or condenses onto surface regions of low net instellation.
+**Bottom:** once enough $\mathrm{O_2}$ has built up, the planet enters a stable state in which continued $\mathrm{H_2O}$ photolysis and hydrogen escape are balanced by oxidation of the planetary interior.
+The same chain of processes (water photolysis, hydrogen escape, oxygen sinks) is the operative mechanism for desiccating Venus, and it leaves the residual D/H ratio enriched by the factor of $\sim$150 observed on present-day Venus.
+Reproduced from {cite:t}`Wordsworth2014`.
+```
 
 ### Volcanic activity today: is Venus alive?
 
@@ -640,6 +726,19 @@ When Venus lost its surface liquid water, the silicate weathering sink stopped o
 The reason is that dissolving silicate minerals to precipitate carbonates requires water.
 Volcanism continued releasing $\mathrm{CO_2}$ from the interior, and with the source active and the sink shut down, atmospheric $\mathrm{CO_2}$ accumulated to the present level of $\sim 92$ bar.
 In the absence of subduction, Venus also lacks a return leg to recycle crustal carbon back into the mantle.
+{numref}`fig:honing-reference` shows this sequence in a coupled interior-atmosphere model: weathering holds the surface temperate for about 0.9 Gyr, then the crustal carbonate decarbonates and the atmospheric reservoir climbs to a Venus-like state.
+
+```{figure} figures/honing2021_reference_evolution.avif
+:name: fig:honing-reference
+:width: 100%
+:align: center
+
+Reference scenario for the coupled interior-atmosphere evolution of a stagnant-lid Venus from panels (a) and (b) of {cite:t}`Honing2021` Fig. 3.
+**Left panel:** carbon reservoirs (atmosphere, crust, atmosphere+crust, atmosphere with weathering switched off) as a function of time after solidification.
+**Right panel:** surface temperature with (blue) and without (green) silicate weathering.
+Surface weathering keeps the planet temperate for $\sim 0.9$ Gyr; once water is lost, decarbonation drives the runaway accumulation of $\mathrm{CO_2}$ to a Venus-like end state.
+Reproduced from {cite:t}`Honing2021`, Fig. 3a and 3b.
+```
 
 Earth and Venus acquired similar amounts of carbon during accretion, but the carbon is distributed differently.
 Earth's crustal and surface carbon reservoir totals on the order of $10^{20}$ kg, equivalent to $\sim 100$ bar of atmospheric $\mathrm{CO_2}$ {cite:p}`Catling2017`.
@@ -658,7 +757,20 @@ The **habitable zone** is classically defined as the range of orbital distances 
 However, stellar luminosity increases over time.
 This shifts the inner edge outward.
 A planet that enters a runaway greenhouse and loses its water cannot become habitable again later simply because stellar conditions evolve.
-Habitability is therefore determined by the integrated history of solar flux, water inventory, and feedback systems rather than instantaneous orbital location ({ref}`Lecture 13 <lecture13>`).
+Habitability is therefore determined by the integrated history of solar flux, water inventory, and feedback systems rather than instantaneous orbital location.
+The TRAPPIST-1 system in {numref}`fig:trappist1` makes the same point for exoplanets: three of its planets sit in the classical habitable zone, yet whether any of them kept its water depends on its history around an M dwarf ({ref}`Lecture 13 <lecture13>`).
+
+```{figure} figures/nasa_trappist1_solarsystem_comparison.avif
+:name: fig:trappist1
+:width: 100%
+:align: center
+
+Comparison of the seven TRAPPIST-1 planets (b through h) with the inner Solar System (Mercury, Venus, Earth, Mars), in the plane of planetary density (vertical) versus stellar illumination (horizontal, in units of Earth's illumination).
+The blue band marks the classical habitable zone of the Solar System and the tan band that of TRAPPIST-1.
+Three of the TRAPPIST-1 planets (e, f, g) lie within the habitable zone, and TRAPPIST-1 c receives an illumination similar to Venus.
+Whether any of these planets actually retain surface water depends on their history (formation, atmospheric evolution, escape) and not just on their current orbital location.
+Image credit: NASA/JPL-Caltech (PIA22093).
+```
 
 Earth and Venus exemplify this principle.
 Earth remains habitable inside the inner edge because the carbonate-silicate thermostat has regulated its climate.
