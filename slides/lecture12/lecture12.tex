@@ -29,11 +29,9 @@
   By the end of this lecture, you will be able to:
   \vskip8pt
   \begin{itemize}
-    \item Classify meteorites and use isotopic chronometers to date the early solar system
+    \item Classify meteorites and derive the Pb-Pb isochron age of calcium-aluminium-rich inclusions (CAIs)
     \item Describe the asteroid-belt and trans-Neptunian populations and their dynamics
-    \item Explain the origin, anatomy and volatile composition of comets
-    \item Derive the Pb-Pb isochron age of calcium-aluminium-rich inclusions (CAIs)
-    \item Read small bodies as fossils of planet formation
+    \item Explain the origin, anatomy and volatile composition of comets, and read small bodies as fossils of planet formation
   \end{itemize}
 \end{frame}
 
@@ -54,12 +52,8 @@
 \section{Overview: The Reservoirs}
 % ════════════════════════════════════════════════════════════
 
-% Hero: small_bodies_overview
-\begin{frame}[plain]
-  \begin{center}
-    \includegraphics[width=0.95\paperwidth, height=0.78\paperheight, keepaspectratio]{small_bodies_overview}\\
-    \footnotesize Small bodies visited by spacecraft, scaled against terrestrial landmarks; three reservoirs hold these bodies: the main belt ($2.1$--$3.3$~AU, $\sim 4 \times 10^{-4}\,\Mearth$), the Kuiper Belt, and the Oort cloud ($2{,}000$--$50{,}000$~AU, inferred, never directly observed). Credit: NASA/JPL-Caltech, public domain.
-  \end{center}
+\begin{frame}
+  \ipsherokey[0.65]{small_bodies_overview}{Small bodies visited by spacecraft, scaled against terrestrial landmarks. Credit: NASA/JPL-Caltech, public domain.}{Three reservoirs hold them: the main belt ($2.1$--$3.3$~AU, $\sim 4 \times 10^{-4}\,\Mearth$), the Kuiper Belt, and the Oort cloud ($2{,}000$--$50{,}000$~AU, inferred, never directly observed).}
 \end{frame}
 
 
@@ -69,106 +63,43 @@
 % ════════════════════════════════════════════════════════════
 
 \begin{frame}{Why Meteorites Matter}
-  Meteorites are the oldest rocks accessible in terrestrial laboratories, preserving disk-condensation grains with unparalleled chronological precision:
-  \vskip8pt
-  \begin{itemize}
+  \begin{itemize}\setlength\itemsep{4pt}
     \item \textbf{Laboratory access:} $\sim$70{,}000 catalogued specimens, older than the oldest terrestrial zircons ($\sim 4.4$~Ga)
     \item \textbf{Presolar material:} primitive chondrites contain grains that condensed around other stars, older than the Sun
     \item \textbf{Anchor age:} CAI crystallization age of $4567.30 \pm 0.16$~Myr anchors solar system history
   \end{itemize}
 \end{frame}
 
-\begin{frame}{The First Cut: Chondrites vs.\ Everything Else}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{allende}\\
-    \footnotesize Allende slab: chondrules + bright CAIs in dark matrix
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item \textbf{Chondrites}: never melted whole. Aggregates of disk solids.
-      \item Characteristic: $\sim$mm-scale silicate \emph{chondrules}.
-      \item Achondrites, irons, stony irons: from \emph{differentiated} parent bodies.
-      \item Differentiation needs heat $\to$ short-lived $^{26}\mathrm{Al}$.
-      \item Iron meteorites $=$ cores; achondrites $=$ crusts/mantles.
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Chondrules in Thin Section}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{chondrite_thin}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Cross-polarised thin section, NWA 5930.
-      \item Each chondrule: $\sim$mm bead of olivine + pyroxene.
-      \item Frozen from a fully molten droplet in seconds to hours.
-      \item Peak $T \sim 1500$--$1900$ K.
-      \item How chondrules form remains an unsolved problem.
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.66]{allende}{Allende slab: chondrules and bright CAIs in a dark matrix. Credit: James St.\ John, CC BY 2.0.}{Chondrites never melted whole and keep their mm-scale chondrules; achondrites, irons and stony irons come from parent bodies that short-lived $^{26}\mathrm{Al}$ melted and differentiated: irons are cores, achondrites crusts and mantles.}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.64\paperheight, keepaspectratio]{chondrule_cai_timeline}}\\
-  {\footnotesize (a) CAIs at 4567.30 Myr (three Pb chronometers agree to within 0.16 Myr) define $t = 0$; chondrules formed 2 to 4 Myr later. (b) A chondrule's heating event: peak temperatures of 1500 to 1900 K, then cooling at hundreds to thousands of kelvin per hour, drawn from a 1700 K peak at 100 and at 1000 K per hour; CAIs condensed above about 1400 K. Course figure.}
+  \ipsherokey[0.65]{chondrite_thin}{Cross-polarised thin section of NWA 5930: each chondrule is a mm-scale bead of olivine and pyroxene. Credit: H.\ Raab, CC BY-SA 3.0 (Wikimedia Commons).}{Each chondrule froze from a fully molten droplet in seconds to hours from a peak of $1500$--$1900$~K; how chondrules form remains an unsolved problem.}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.61\paperheight, keepaspectratio]{petrologic_types}}\\
-  {\footnotesize Two scales that record what the parent body did: petrographic type 3 is the least altered, types 2 and 1 record aqueous alteration (water forms clays, erases chondrules), types 4 to 7 thermal metamorphism (grains coarsen, compositions equilibrate, chondrule outlines vanish); the shock stage runs from S1 (unshocked) to S6 (heavily shocked, partially melted), with planar fractures, melt veins and high-pressure minerals such as ringwoodite and majorite at tens of GPa. Course schematic.}
-\end{frame}
-
-\begin{frame}{Iron Meteorites: Reading a Cooling Rate}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{iron_widmanstatten}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Widmanst\"atten pattern: kamacite $+$ taenite Fe-Ni lattice.
-      \item Forms only at cooling rates $\lesssim 100$ K Myr$^{-1}$.
-      \item Slow cooling possible only inside metallic cores of $\sim$tens-of-km bodies.
-      \item Lattice spacing $\to$ original parent-body radius.
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Pallasite: A Core-Mantle Boundary in Hand}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{pallasite}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Esquel pallasite: yellow-green olivine in silvery Fe-Ni metal.
-      \item Texture suggests boundary between molten core and silicate mantle.
-      \item Olivine crystals sank into metal during a giant impact.
-      \item \textbf{A direct sample of a destroyed planetesimal's core-mantle boundary.}
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Vesta: HED Parent Body}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{vesta}
-    \column{\recaptextcol}
-    \small
-    \begin{itemize}
-      \item HED meteorites (howardites/eucrites/diogenites) $=$ $\sim 6\%$ of falls.
-      \item Identical mineralogy + oxygen isotopes.
-      \item Dawn (2011--2012): confirmed Vesta as parent.
-      \item Rheasilvia basin (south pole): excavated and ejected the HEDs.
-      \item Lunar + Martian meteorites identified the same way (oxygen isotopes + trapped Mars atmosphere).
-    \end{itemize}
-  \end{columns}
+  \ipshero{chondrule_cai_timeline}{(a) CAIs at 4567.30 Myr define $t = 0$ and chondrules formed 2 to 4 Myr later; (b) a chondrule heating event from a 1700 K peak, cooling at 100 and 1000 K per hour. Course figure.}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.64\paperheight, keepaspectratio]{oxygen_three_isotope}}\\
-  {\footnotesize The oxygen three-isotope plot, schematic: mass-dependent fractionation keeps Earth, the Moon and the enstatite chondrites on the terrestrial line of slope 1/2; CAIs define a slope-1 line from mixing with a nearly pure $^{16}$O reservoir; ordinary chondrites plot above the terrestrial line, carbonaceous chondrites below it, CI chondrites with the Ryugu samples, and HED and SNC on their own parallel lines for Vesta and Mars. Course figure.}
+  \ipshero{petrologic_types}{Petrographic types 1 to 7 (aqueous alteration to thermal metamorphism) and shock stages S1 to S6 record what the parent body did. Course schematic.}
+\end{frame}
+
+\begin{frame}
+  \ipsherokey[0.65]{iron_widmanstatten}{Widmanst\"atten pattern in an iron meteorite: a kamacite and taenite Fe-Ni lattice. Credit: H.\ Raab, CC BY-SA 3.0 (Wikimedia Commons).}{The lattice grows only at cooling rates $\lesssim 100$~K~Myr$^{-1}$, inside the metallic core of a body tens of km across; its spacing gives the original parent-body radius.}
+\end{frame}
+
+\begin{frame}
+  \ipsherokey[0.65]{pallasite}{Esquel pallasite: yellow-green olivine in silvery Fe-Ni metal. Credit: UCLA Meteorite Gallery, CC BY-SA 4.0 (Wikimedia Commons).}{\textbf{A direct sample of a destroyed planetesimal's core-mantle boundary:} the olivine crystals sank into the molten metal during a giant impact.}
+\end{frame}
+
+\begin{frame}
+  \ipsherokey[0.61]{vesta}{Vesta seen by Dawn (2011--2012), the parent body of the HED meteorites. Credit: NASA/JPL-Caltech/UCLA/MPS/DLR/IDA, public domain.}{HEDs (howardites, eucrites, diogenites, $\sim 6\%$ of falls) match Vesta in mineralogy and oxygen isotopes and were ejected from the Rheasilvia basin; lunar and Martian meteorites are identified the same way.}
+\end{frame}
+
+\begin{frame}
+  \ipshero{oxygen_three_isotope}{Oxygen three-isotope plot: the terrestrial line of slope 1/2, the CAI slope-1 mixing line towards pure $^{16}$O, and the chondrite, HED and SNC fields. Course figure.}
 \end{frame}
 
 
@@ -180,19 +111,17 @@
 \begin{frame}{Decay Clocks and Early Solar System Timeline}
   Radioactive decay $\dv{N}{t} = -\lambda N$ ($t_{1/2} = \ln 2 / \lambda$) provides absolute and relative chronometers:
   \vskip4pt
-  \begin{itemize}
+  \begin{itemize}\setlength\itemsep{3pt}
     \item \textbf{Long-lived:} $^{238}\mathrm{U}$, $^{235}\mathrm{U}$ yield absolute ages; CAIs condense at $t_0 = 4567.30 \pm 0.16$~Myr
     \item \textbf{Short-lived (extinct):} $^{26}\mathrm{Al}$ ($0.717$~Myr), $^{182}\mathrm{Hf}$ ($8.9$~Myr) yield relative ages
-    \item \textbf{Early chronology:} Differentiation at $0.5$--$4$~Myr, chondrules at $1$--$4$~Myr after CAIs
+    \item \textbf{Early chronology:} differentiation at $0.5$--$4$~Myr, chondrules at $1$--$4$~Myr after CAIs
   \end{itemize}
-  \vskip4pt
+  \vskip6pt
   \keyresult{Long-lived chronometers anchor absolute time; extinct nuclides resolve events to $<1$~Myr.}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.66\paperheight, keepaspectratio]{short_lived_decay}}\\
-  {\footnotesize Abundance decay of the two key short-lived radionuclides over the first 10 Myr after CAI formation: $^{26}$Al with a half-life of 0.72 Myr and $^{60}$Fe with 2.62 Myr. Their rapid decay powered early planetesimal melting and differentiation. Course figure.}
+  \ipsherokey{short_lived_decay}{Abundance decay of $^{26}$Al (half-life 0.72 Myr) and $^{60}$Fe (2.62 Myr) over the first 10 Myr after CAI formation. Course figure.}{Their rapid decay powered early planetesimal melting and differentiation.}
 \end{frame}
 
 
@@ -201,20 +130,22 @@
 \section{Blackboard Derivation: Pb-Pb Isochron of CAIs}
 % ════════════════════════════════════════════════════════════
 
-\begin{frame}{Setup: Two Parallel Chains in One Element}
-  \begin{itemize}
-    \item $^{238}\mathrm{U} \to {}^{206}\mathrm{Pb}$ with $\lambda_{238} = \ln 2 / (4.4683\,\mathrm{Gyr})$.
-    \item $^{235}\mathrm{U} \to {}^{207}\mathrm{Pb}$ with $\lambda_{235} = \ln 2 / (0.7038\,\mathrm{Gyr})$.
-    \item $^{204}\mathrm{Pb}$: stable, no significant radiogenic source. The reference isotope.
-  \end{itemize}
-  \vskip6pt
-  Radiogenic daughter at time $t$ since closure:
-  \[
-    {}^{206}\mathrm{Pb}^* = {}^{238}\mathrm{U}\,[e^{\lambda_{238} t} - 1], \qquad
-    {}^{207}\mathrm{Pb}^* = {}^{235}\mathrm{U}\,[e^{\lambda_{235} t} - 1]
-  \]
-  \vskip6pt
-  \textit{To the board.}
+\begin{frame}{Goal and Strategy}
+  \begin{columns}[c]
+    \column{\recapfigcolnarrow}
+    \ipsrecapfig[0.62\textheight]{board_sketch_l12}
+    \column{\recaptextcolwide}
+    \small
+    \textbf{Goal:} the age of the oldest solids from two parallel decay chains of one element.
+    \vskip4pt
+    \begin{itemize}\setlength\itemsep{2pt}
+      \item $^{238}\mathrm{U} \to {}^{206}\mathrm{Pb}$ (4.4683~Gyr) and $^{235}\mathrm{U} \to {}^{207}\mathrm{Pb}$ (0.7038~Gyr); $^{204}\mathrm{Pb}$ is the stable reference
+      \item Daughter since closure: ${}^{206}\mathrm{Pb}^* = {}^{238}\mathrm{U}\,[e^{\lambda_{238} t} - 1]$, same for 207; add the initial Pb
+      \item Divide the 207 line by the 206 line so the U/Pb of the rock drops out
+    \end{itemize}
+    \vskip4pt
+    \keyresult{To the board.}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Result: The Pb-Pb Isochron}
@@ -225,12 +156,8 @@
   \keyresult{The slope is independent of the initial Pb and of the U/Pb ratio: the age needs no assumption about the starting composition.}
 \end{frame}
 
-% Hero: Pb-Pb isochron plot
-\begin{frame}[plain]
-  \begin{center}
-    \includegraphics[width=0.95\paperwidth, height=0.85\paperheight, keepaspectratio]{pb_pb_dating}\\
-    \footnotesize Pb-Pb isochrons for CAI 22E (Efremovka) and chondrules: cogenetic mineral fractions define a linear isochron whose slope yields age $t$ independent of initial Pb. From Connelly et al.\ (2012).
-  \end{center}
+\begin{frame}
+  \ipshero{pb_pb_dating}{Pb-Pb isochrons for CAI 22E (Efremovka) and chondrules: cogenetic mineral fractions define a line whose slope gives the age $t$ independent of the initial Pb. From Connelly et al.\ (2012).}
 \end{frame}
 
 \begin{frame}{Step 5: Numerical Result}
@@ -244,7 +171,7 @@
     \item The \emph{zero point} of the solar system clock
   \end{itemize}
   \vskip4pt
-  Two parallel decay chains make the problem self-calibrating.
+  \keyresult{Two parallel decay chains make the problem self-calibrating.}
 \end{frame}
 
 
@@ -254,54 +181,31 @@
 % ════════════════════════════════════════════════════════════
 
 \begin{frame}{Two Isotopic Reservoirs}
-  Nucleosynthetic anomalies in Ti, Cr, Mo, Ru, and Ca cleanly divide solar system materials into two isolated isotopic reservoirs:
+  Nucleosynthetic anomalies in Ti, Cr, Mo, Ru and Ca divide solar system materials into two isolated reservoirs:
   \vskip8pt
-  \begin{itemize}
-    \item \textbf{NC reservoir (non-carbonaceous):} Ordinary and enstatite chondrites, HEDs, Earth, and Mars
-    \item \textbf{CC reservoir (carbonaceous):} Carbonaceous chondrites, several iron groups, and outer bodies
+  \begin{itemize}\setlength\itemsep{4pt}
+    \item \textbf{NC reservoir (non-carbonaceous):} ordinary and enstatite chondrites, HEDs, Earth, and Mars
+    \item \textbf{CC reservoir (carbonaceous):} carbonaceous chondrites, several iron groups, and outer bodies
     \item \textbf{Prolonged isolation:} the two reservoirs did not mix isotopically for $\sim 3$--$4$~Myr after CAIs
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Hf-W Age Separation}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{spitzer_nc_cc_ages}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Two axes, one position: $\varepsilon^{182}\mathrm{W}$ below, the Hf-W age it gives above.
-      \item NC irons (red): $-3.37$ to $-3.20$, i.e.\ $\Delta t_{\rm CAI} = 1.0$--$2.6$ Myr.
-      \item CC irons (blue): $-3.16$ to $-3.10$, i.e.\ $3.0$--$3.6$ Myr.
-      \item Exception: the ungrouped SBT, $\sim 1$ Myr earlier than the other CC irons.
-      \item NC cores form $\sim 2$ Myr before CC cores.
-      \item Spitzer et al.\ (2021).
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.62]{spitzer_nc_cc_ages}{Hf-W ages of NC (red) and CC (blue) iron meteorites: $\varepsilon^{182}\mathrm{W}$ below, the age it gives above. Spitzer et al.\ (2021).}{NC irons ($-3.37$ to $-3.20$) formed cores $1.0$--$2.6$~Myr after CAIs, CC irons ($-3.16$ to $-3.10$) at $3.0$--$3.6$~Myr, the ungrouped SBT $\sim 1$~Myr earlier: NC cores form $\sim 2$~Myr before CC cores.}
 \end{frame}
 
 \begin{frame}{Three Live Interpretations}
   Three competing mechanisms explain the NC-CC dichotomy from identical cosmochemical data:
   \vskip8pt
-  \begin{itemize}
-    \item \textbf{Jupiter barrier:} Early proto-Jupiter ($\lesssim 1$~Myr) opens a gap, blocking inward pebble drift (Kruijer et al.\ 2017)
-    \item \textbf{Snow line:} Disk thermal evolution produces two successive planetesimal formation epochs (Lichtenberg et al.\ 2021)
-    \item \textbf{Temporal change:} Inward disk drift alters feeding composition over time (Schiller et al.\ 2018)
+  \begin{itemize}\setlength\itemsep{4pt}
+    \item \textbf{Jupiter barrier:} early proto-Jupiter ($\lesssim 1$~Myr) opens a gap, blocking inward pebble drift (Kruijer et al.\ 2017)
+    \item \textbf{Snow line:} disk thermal evolution produces two successive planetesimal formation epochs (Lichtenberg et al.\ 2021)
+    \item \textbf{Temporal change:} inward disk drift alters feeding composition over time (Schiller et al.\ 2018)
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Snow-Line Mechanism: Two Reservoirs Naturally}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{lichtenberg2021_fig1}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Disk simulation, time vs.\ orbital distance.
-      \item Reservoir I (red): early, dry, inner disk = NC.
-      \item Reservoir II (blue): later, ice-rich, outer disk = CC.
-      \item Bifurcation arises from disk evolution itself.
-      \item Lichtenberg et al.\ (2021).
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.65]{lichtenberg2021_fig1}{Disk simulation in time against orbital distance with two planetesimal formation reservoirs. Lichtenberg et al.\ (2021).}{Reservoir I (red), early and dry in the inner disk, is NC; Reservoir II (blue), later and ice-rich in the outer disk, is CC: the bifurcation arises from disk evolution itself.}
 \end{frame}
 
 
@@ -310,65 +214,20 @@
 \section{Asteroid Belt: Structure and Dynamics}
 % ════════════════════════════════════════════════════════════
 
-\begin{frame}{The Main Belt in Orbital Space}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{demeo_carry_belt_inclination}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item $\sim 1.4$ million catalogued bodies; $\sim 10^6$ at $>1$ km.
-      \item Total mass $\sim 4 \times 10^{-4}\,\Mearth$ (Ceres $\approx 40\%$).
-      \item Hungarias, main belt 2.1--3.3 AU, Hildas, Trojans at 5.2 AU.
-      \item Vertical gaps $\to$ Kirkwood resonances with Jupiter.
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.65]{demeo_carry_belt_inclination}{Asteroid orbits in inclination against semimajor axis: Hungarias, the main belt at 2.1--3.3 AU, Hildas, and the Trojans at 5.2 AU. DeMeo \& Carry (2014).}{About 1.4 million catalogued bodies, $\sim 10^6$ above 1 km, a total mass of $\sim 4 \times 10^{-4}\,\Mearth$ (Ceres $\approx 40\%$); the vertical gaps are the Kirkwood resonances with Jupiter.}
 \end{frame}
 
-\begin{frame}{Kirkwood Gaps as Dynamical Sinks}
-  \begin{columns}[c]
-    \column{\recapfigcolwide}
-    \ipsrecapfig{granvik_kirkwood_resonances}
-    \column{\recaptextcolnarrow}
-    \begin{itemize}
-      \item Strongest resonances: 3:1 (2.50 AU), 5:2 (2.82), 7:3 (2.96), 2:1 (3.27).
-      \item Periodic Jovian kicks add coherently.
-      \item Eccentricity pumped to planet-crossing in $10^4$--$10^6$ yr.
-      \item Gaps are not empty: they are leaky.
-      \item Granvik et al.\ (2018).
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey{granvik_kirkwood_resonances}{The Kirkwood gaps at the 3:1 (2.50 AU), 5:2 (2.82), 7:3 (2.96) and 2:1 (3.27) resonances with Jupiter. Granvik et al.\ (2018).}{Periodic Jovian kicks add coherently and pump eccentricities to planet-crossing in $10^4$--$10^6$~yr: the gaps are not empty but leaky, the dynamical sinks that feed the near-Earth population.}
 \end{frame}
 
-\begin{frame}{Asteroid Families = Disrupted Parent Bodies}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{asteroid_families_nesvorny}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Hierarchical clustering in proper $a$, $e$, $i$.
-      \item Hirayama families: Themis, Eos, Koronis, Eunomia, Vesta, Flora.
-      \item Each family $=$ debris of a single disruption event.
-      \item Spread $\to$ original parent body size, age.
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.65]{asteroid_families_nesvorny}{Asteroid families as clusters in proper $a$, $e$, $i$: Themis, Eos, Koronis, Eunomia, Vesta, Flora. Nesvorn\'y et al.\ (2015).}{Each family is the debris of a single disruption event; its spread gives the original parent body's size and age.}
 \end{frame}
 
-\begin{frame}{Spectral Classes and the Volatile Gradient}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{demeo_carry_belt_mass}
-    \source{DeMeo \& Carry (2014)}
-
-    \column{\recaptextcol}
-    \small
-    \begin{itemize}
-      \item \textbf{S-type} ($\sim 15\%$ albedo): inner belt; ordinary-chondrite analogues
-      \item \textbf{C-type} ($\sim 4\%$ albedo): $\sim 75\%$ of the outer belt; volatile-rich
-      \item \textbf{M-type / V-type}: metallic cores and basaltic crust (Vesta family at $2.4$~AU)
-    \end{itemize}
-    \vskip4pt
-    \keyresult{Radial sorting preserves the disk's primordial volatile gradient.}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.61]{demeo_carry_belt_mass}{Mass of the main belt by spectral class against heliocentric distance. DeMeo \& Carry (2014).}{\textbf{S-types} ($\sim 15\%$ albedo, ordinary-chondrite analogues) fill the inner belt, \textbf{C-types} ($\sim 4\%$ albedo, volatile-rich) $\sim 75\%$ of the outer belt, \textbf{M- and V-types} are cores and Vesta's basaltic crust ($2.4$~AU): radial sorting preserves the disk's primordial volatile gradient.}
 \end{frame}
 
 
@@ -380,48 +239,32 @@
 \begin{frame}{Near-Earth Asteroids and Resupply Channels}
   NEAs ($q < 1.3$~AU, residence time $\sim 10$~Myr) require steady-state resupply from the main belt:
   \vskip4pt
-  \begin{itemize}
+  \begin{itemize}\setlength\itemsep{3pt}
     \item \textbf{Resonances:} Kirkwood (3:1, 5:2) and $\nu_6$ secular resonance pump eccentricity
-    \item \textbf{Yarkovsky drift:} Thermal recoil drives slow semimajor axis drift:
-    \[
-      \dv{a}{t} \propto \frac{1}{D \, \rho \, \sqrt{a}}
-    \]
+    \item \textbf{Yarkovsky drift:} thermal recoil drives slow semimajor axis drift, $\dv{a}{t} \propto \dfrac{1}{D \, \rho \, \sqrt{a}}$
     \item \textbf{Hazards:} $\sim$2{,}500 Potentially Hazardous Asteroids ($D > 140$~m, MOID $< 0.05$~AU)
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{neo_sfd_schunova}}\\
-  {\footnotesize Cumulative size-frequency distribution of near-Earth objects versus absolute magnitude $H_V$. The power-law distribution spans five orders of magnitude, consistent with steady-state collision and dynamical delivery models. Credit: Schunova et al.\ (2017), Fig.~9.}
+  \ipsherokey[0.65]{neo_sfd_schunova}{Cumulative size-frequency distribution of near-Earth objects against absolute magnitude $H_V$, a power law over five orders of magnitude. Credit: Schunova et al.\ (2017), Fig.~9.}{Impact rates: $10$~m per decade; $50$~m (Tunguska) per $10^3$~yr; $1$~km per $5 \times 10^5$~yr; $10$~km (Chicxulub) per $10^8$~yr.}
 \end{frame}
 
 \begin{frame}{Yarkovsky and YORP Detected on Real NEAs}
   \begin{columns}[T]
     \column{0.5\textwidth}
-    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{yarkovsky_detection_vokrouhlicky}\\
+    \includegraphics[width=\linewidth, height=0.52\textheight, keepaspectratio]{yarkovsky_detection_vokrouhlicky}\\
     \footnotesize \emph{Yarkovsky:} (6489) Golevka, Arecibo radar
     \column{0.5\textwidth}
-    \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{yorp_detection_vokrouhlicky}\\
+    \includegraphics[width=\linewidth, height=0.52\textheight, keepaspectratio]{yorp_detection_vokrouhlicky}\\
     \footnotesize \emph{YORP:} (54509) YORP rotational acceleration
   \end{columns}
-  \vskip4pt
-  YORP: same thermal asymmetry, acting on \emph{spin}. Can spin small asteroids to fission or stop them.
+  \vskip6pt
+  \keyresult{YORP is the same thermal asymmetry acting on \emph{spin}: it can spin small asteroids to fission or stop them.}
 \end{frame}
 
-\begin{frame}{Deflection: DART, the First Practical Test}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{dart_lightcurve_daly}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item DART hit Dimorphos (moon of Didymos) on 26 Sep 2022.
-      \item Period reduced by $33.0 \pm 1.0$ minutes (3$\sigma$).
-      \item Momentum enhancement $\beta \approx 3.6$: ejecta recoil exceeds the direct push.
-      \item Hera (ESA, launched 2024) measures the crater and $\beta$.
-      \item Rates: $10$ m per decade; $50$ m (Tunguska) per $10^3$ yr; $1$ km per $5 \times 10^5$ yr; $10$ km (Chicxulub) per $10^8$ yr
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.61]{dart_lightcurve_daly}{Light curves of Didymos (top, 2.26~h rotation) and Dimorphos (bottom, its new 11.372~h orbit) six days after the DART impact. Thomas et al.\ (2023), Fig.~3.}{The orbital period fell by $33.0 \pm 1.0$ minutes (3$\sigma$) and the momentum enhancement $\beta \approx 3.6$ shows that ejecta recoil exceeds the direct push; Hera (ESA, launched 2024) measures the crater and $\beta$.}
 \end{frame}
 
 
@@ -437,50 +280,26 @@
 \section{Dwarf Planets and the Trans-Neptunian Region}
 % ════════════════════════════════════════════════════════════
 
-\begin{frame}{Ceres: Inner-Solar-System Ocean World?}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{ceres_occator}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item $R = 470$ km, mass $\sim 1\%$ Moon.
-      \item Dawn (2015--2018): hydrated, ammonia-bearing surface.
-      \item Occator: hydrated $\mathrm{Na_2CO_3}$ + $\mathrm{NH_4Cl}$ from erupted brines.
-      \item Implies (or had) a partially liquid water layer at depth.
-      \item Possible captured outer-solar-system body (Nice Model: a dynamical instability among the giant planets).
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.61]{ceres_occator}{Occator crater on Ceres, Dawn (2015--2018): bright deposits of hydrated $\mathrm{Na_2CO_3}$ and $\mathrm{NH_4Cl}$ from erupted brines. Credit: NASA/JPL-Caltech.}{Ceres ($R = 470$~km, mass $\sim 1\%$ of the Moon) has, or had, a partially liquid water layer at depth, and may be a captured outer-solar-system body (Nice Model: a dynamical instability among the giant planets).}
 \end{frame}
 
 \begin{frame}{Trans-Neptunian Region: Five Sub-Populations}
-  The trans-Neptunian region divides into distinct dynamical populations whose orbits preserve the gravitational footprint of giant-planet migration:
+  The orbits preserve the gravitational footprint of giant-planet migration:
   \vskip8pt
-  \begin{itemize}
-    \item \textbf{Classicals ($a = 42$--$47$~AU):} Dynamically unperturbed cold classicals ($i \lesssim 5^\circ$) and scattered hot classicals ($i \le 30^\circ$)
-    \item \textbf{Resonant (e.g.\ 3:2 plutinos):} Bodies swept into mean-motion resonances during Neptune's outward migration
+  \begin{itemize}\setlength\itemsep{4pt}
+    \item \textbf{Classicals ($a = 42$--$47$~AU):} dynamically unperturbed cold classicals ($i \lesssim 5^\circ$) and scattered hot classicals ($i \le 30^\circ$)
+    \item \textbf{Resonant (e.g.\ 3:2 plutinos):} bodies swept into mean-motion resonances during Neptune's outward migration
     \item \textbf{Scattered disk and detached:} Neptune-scattered bodies ($q \sim 30$~AU) and decoupled detached objects ($q > 40$~AU)
   \end{itemize}
 \end{frame}
 
-\begin{frame}{TNO Orbital Architecture (OSSOS)}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{bannister_ossos_orbits}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item 1142 characterised TNOs from OSSOS.
-      \item Vertical lines: Neptune resonances.
-      \item Cold classicals: dense low-$i$ cluster at 42--47 AU.
-      \item Bannister et al.\ (2018).
-      \item Architecture is a fossil of giant-planet migration.
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.66]{bannister_ossos_orbits}{1142 characterised TNOs from OSSOS in orbital space; the vertical lines mark Neptune's resonances. Bannister et al.\ (2018).}{The dense low-inclination cluster at 42--47 AU is the cold classical belt; the architecture is a fossil of giant-planet migration.}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.60\paperheight, keepaspectratio]{petit_classical_kbo}}\\
-  {\footnotesize The three components of the CFEPS-L7 model of the main classical Kuiper belt in eccentricity and inclination against semimajor axis: the broad-inclination hot component, the stirred component, the dense low-inclination kernel near 44 AU, and the combined model. Kernel and hot component share the same range of $a$ but occupy different parts of $(e, i)$ space: the cold classicals were never strongly perturbed by Neptune, the hot classicals were excited by the giant-planet instability.}
+  \ipsherokey[0.56]{petit_classical_kbo}{The three components of the CFEPS-L7 model of the classical Kuiper belt in $e$ and $i$ against $a$: the hot component, the stirred component, and the dense low-inclination kernel near 44 AU. Petit et al.\ (2011).}{Kernel and hot component share the same $a$ but different $(e, i)$: the cold classicals were never strongly perturbed by Neptune, the hot classicals were excited by the giant-planet instability.}
 \end{frame}
 
 
@@ -489,62 +308,24 @@
 \section{Pluto, Charon, Arrokoth}
 % ════════════════════════════════════════════════════════════
 
-% Hero: Pluto colour
-\begin{frame}[plain]
-  \begin{center}
-    \includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{pluto_color_stern}\\
-    \footnotesize True-colour Pluto from New Horizons Ralph (2015), showing Tombaugh Regio and Sputnik Planitia: with $R = 1187$~km and $\rho = 1860$~kg\,m$^{-3}$, the world hosts water-ice bedrock overlain by volatile frosts, including a convecting $\mathrm{N_2}$-ice basin younger than $10$~Myr; a $\sim 1$ Pa $\mathrm{N_2}$ atmosphere and a probable subsurface ocean. Credit: NASA/JHUAPL/SwRI.
-  \end{center}
-\end{frame}
-
-\begin{frame}{Solid-State Convection in Sputnik Planitia}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{sputnik_convection_mckinnon}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Numerical model, $\mathrm{Ra}_b \sim 3\times 10^5$.
-      \item Cells tens of km across.
-      \item Overturn timescale $\sim 10^6$ yr.
-      \item Driven by present-day radiogenic heat in the rocky core.
-      \item McKinnon et al.\ (2016).
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Pluto-Charon: A Binary World}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{pluto_charon_features_stern}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Charon $R = 606$ km, $\sim 1/8$ Pluto's mass.
-      \item Barycentre lies \emph{outside} Pluto.
-      \item Four small moons: Styx, Nix, Kerberos, Hydra.
-      \item Likely fragments of an early collisional event.
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.61]{pluto_color_stern}{True-colour Pluto from New Horizons Ralph (2015), with Tombaugh Regio and Sputnik Planitia. Credit: NASA/JHUAPL/SwRI.}{With $R = 1187$~km and $\rho = 1860$~kg\,m$^{-3}$: water-ice bedrock under volatile frosts, a convecting $\mathrm{N_2}$-ice basin younger than $10$~Myr, a $\sim 1$~Pa $\mathrm{N_2}$ atmosphere and a probable subsurface ocean.}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{charon_mordor}}\\
-  {\footnotesize Charon imaged by New Horizons, showing the dark reddish north-polar Mordor Macula formed by photochemically processed tholins sourced from Pluto's escaping atmosphere, alongside equatorial extensional tectonic chasms. Credit: NASA/JHUAPL/SwRI, public domain.}
+  \ipsherokey[0.65]{sputnik_convection_mckinnon}{Numerical model of solid-state convection in Sputnik Planitia at $\mathrm{Ra}_b \sim 3\times 10^5$. McKinnon et al.\ (2016).}{Cells tens of km across overturn in $\sim 10^6$~yr, driven by present-day radiogenic heat in the rocky core.}
 \end{frame}
 
-\begin{frame}{Arrokoth: A Pristine Cold Classical KBO}
-  \begin{columns}[c]
-    \column{\recapfigcolwide}
-    \ipsrecapfig{arrokoth_color_stern}
-    \column{\recaptextcolnarrow}
-    \begin{itemize}
-      \item New Horizons flyby, 1 Jan 2019.
-      \item $\sim$35 km long; \textbf{contact binary}.
-      \item Two flat lobes, narrow neck, no impact crater at the join.
-      \item Merger velocity $\lesssim$ few m s$^{-1}$.
-      \item $\to$ formation by streaming-instability gravitational collapse.
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.67]{pluto_charon_features_stern}{Pluto and Charon with their named features, New Horizons (2015). Stern et al.\ (2015).}{Charon ($R = 606$~km, $\sim 1/8$ of Pluto's mass) puts the barycentre \emph{outside} Pluto; the four small moons Styx, Nix, Kerberos and Hydra are likely fragments of an early collisional event.}
+\end{frame}
+
+\begin{frame}
+  \ipshero{charon_mordor}{Charon from New Horizons: the dark reddish Mordor Macula of tholins from Pluto's escaping atmosphere, and equatorial extensional chasms. Credit: NASA/JHUAPL/SwRI, public domain.}
+\end{frame}
+
+\begin{frame}
+  \ipsherokey{arrokoth_color_stern}{Arrokoth, a $\sim$35 km \textbf{contact binary}, New Horizons flyby of 1 January 2019. Stern et al.\ (2019).}{Two flat lobes joined at a narrow neck with no impact crater at the join: a merger at $\lesssim$ a few m~s$^{-1}$, formation by streaming-instability gravitational collapse.}
 \end{frame}
 
 
@@ -569,35 +350,12 @@
   Plus dwarf-planet candidates: Gonggong, Quaoar, Orcus, Salacia, Sedna.
 \end{frame}
 
-\begin{frame}{Sedna: Detached, Mysterious}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{sedna_orbits_batygin}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item $q = 76$ AU, $Q = 900$ AU. Period 11{,}400 yr.
-      \item Cannot have been excited by Neptune ($q$ too high).
-      \item Cannot be perturbed by present-day stars ($Q$ too low).
-      \item Possibly inner Oort cloud, or relic of birth-cluster.
-      \item Clustering $\to$ \textbf{Planet 9} hypothesis (Batygin et al.\ 2019).
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.66]{sedna_orbits_batygin}{Orbits of the detached TNOs and the Planet 9 hypothesis. Batygin et al.\ (2019).}{Sedna ($q = 76$~AU, $Q = 900$~AU, period 11{,}400~yr) is too far for Neptune and too close for present-day stars: an inner Oort cloud or birth-cluster relic; the orbital clustering motivates the \textbf{Planet 9} hypothesis.}
 \end{frame}
 
-\begin{frame}{The Oort Cloud}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{oort_cloud_kaib}\\
-    \footnotesize Top row: perihelion $q$ vs semimajor axis $a$ for two simulations of Oort cloud formation. Bottom row: orbital inclination vs $a$. Kaib \& Quinn (2008).
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item $2{,}000$--$50{,}000$ AU, roughly spherical.
-      \item Inferred 1950 by Oort from long-period comet statistics.
-      \item $\sim 10^{11}$--$10^{12}$ objects, total mass $\sim 1$--$10\,\Mearth$.
-      \item Origin: planetesimals scattered out of the Jupiter-Neptune zone, lifted by galactic tide and passing stars.
-      \item \textbf{Never directly observed.}
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.6]{oort_cloud_kaib}{Two simulations of Oort cloud formation: perihelion $q$ (top) and inclination (bottom) against semimajor axis $a$. Kaib \& Quinn (2008).}{$2{,}000$--$50{,}000$ AU, roughly spherical, $\sim 10^{11}$--$10^{12}$ objects of $\sim 1$--$10\,\Mearth$ in total, planetesimals scattered from the Jupiter-Neptune zone and lifted by the galactic tide and passing stars; inferred by Oort in 1950, \textbf{never directly observed}.}
 \end{frame}
 
 
@@ -606,34 +364,12 @@
 \section{Comets: Structure, D/H, and Origin}
 % ════════════════════════════════════════════════════════════
 
-\begin{frame}{Anatomy of an Active Comet}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig[0.6\textheight]{comet_diagram}
-    \source{Wikimedia Commons, public domain}
-
-    \column{\recaptextcol}
-    \scriptsize
-    Whipple's "dirty snowball" (1950), confirmed in detail:
-    \begin{itemize}
-      \item \textbf{Nucleus}: $1$--$30$ km, dark ($\sim 4\%$ albedo), porous ($50$--$75\%$), $\rho \sim 0.5$ g cm$^{-3}$; 67P (Rosetta): $533$ kg m$^{-3}$, $\sim 70\%$ porosity, a contact binary
-      \item Composition: H$_2$O (dominant), CO, CO$_2$, CH$_4$, NH$_3$, CH$_3$OH, HCN, dust, organics.
-      \item Inside $\sim 5$ AU: water sublimation $\to$ activity:
-      \begin{itemize}
-        \item \textbf{Coma}: $10^4$--$10^6$ km gas+dust envelope.
-        \item \textbf{Ion tail}: blue, straight, anti-sunward (solar wind).
-        \item \textbf{Dust tail}: yellow, curved, lags along the orbit.
-      \end{itemize}
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.6]{comet_diagram}{Anatomy of an active comet: nucleus, coma, ion tail and dust tail. Credit: Wikimedia Commons, public domain.}{Whipple's dirty snowball: a dark, porous \textbf{nucleus} of $1$--$30$~km (67P: $533$ kg m$^{-3}$, $\sim 70\%$ porosity) of ices, dust and organics; inside $\sim 5$~AU water sublimation feeds a $10^4$--$10^6$~km \textbf{coma}, a straight anti-sunward \textbf{ion tail} and a curved \textbf{dust tail}.}
 \end{frame}
 
-% Hero: Halley nucleus
-\begin{frame}[plain]
-  \begin{center}
-    \includegraphics[width=0.95\paperwidth, height=0.76\paperheight, keepaspectratio]{halley}\\
-    \footnotesize Halley nucleus ($15 \times 8 \times 8$~km), Giotto Halley Multicolour Camera, 13--14 March 1986: active jets are confined to small surface fractions of the dark nucleus on its $76$-year retrograde orbit ($T_J \approx -0.6$). Credit: ESA/MPAe Lindau.
-  \end{center}
+\begin{frame}
+  \ipsherokey[0.65]{halley}{Halley's nucleus ($15 \times 8 \times 8$~km) with jets from small active patches, Giotto Halley Multicolour Camera, 13--14 March 1986. Credit: ESA/MPAe Lindau.}{A $76$-year retrograde orbit with $T_J \approx -0.6$: an Oort-cloud comet captured to a short period.}
 \end{frame}
 
 \begin{frame}{Short-Period vs Long-Period: The Tisserand Parameter}
@@ -641,36 +377,21 @@
     T_J = \frac{a_J}{a} + 2 \sqrt{\frac{a}{a_J}\,(1 - e^2)} \cos i, \qquad a_J = 5.20\,\mathrm{AU}
   \]
   \vskip4pt
-  The Tisserand parameter is a conserved dynamical invariant that cleanly separates decoupled asteroids from Jupiter-family and long-period comets:
+  A conserved dynamical invariant that separates asteroids from Jupiter-family and long-period comets:
   \vskip4pt
-  \begin{itemize}
-    \item \textbf{Asteroids ($T_J > 3$):} Main-belt orbits decoupled from Jupiter encounters (e.g.\ Ceres, $T_J \approx 3.3$)
+  \begin{itemize}\setlength\itemsep{3pt}
+    \item \textbf{Asteroids ($T_J > 3$):} main-belt orbits decoupled from Jupiter encounters (e.g.\ Ceres, $T_J \approx 3.3$)
     \item \textbf{Jupiter-family comets ($2 < T_J < 3$):} Kuiper-belt-derived comets controlled by Jupiter (e.g.\ 67P, $T_J \approx 2.7$)
     \item \textbf{Long-period comets ($T_J < 2$):} Oort-cloud visitors on high-inclination orbits; Halley-type comets ($T_J \approx -0.6$) are Oort-derived but captured to short orbits (76 yr)
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{67p_nucleus}}\\
-  {\footnotesize Bilobed nucleus of Jupiter-family comet 67P/Churyumov-Gerasimenko ($T_J \approx 2.7$) imaged by Rosetta OSIRIS, showing two lobes joined at a narrow neck by a gentle primordial contact-binary merger. Credit: ESA/Rosetta/MPS for OSIRIS Team.}
+  \ipshero[0.76]{67p_nucleus}{Bilobed nucleus of Jupiter-family comet 67P/Churyumov-Gerasimenko ($T_J \approx 2.7$), two lobes joined at a narrow neck by a gentle primordial merger, Rosetta OSIRIS. Credit: ESA/Rosetta/MPS for OSIRIS Team.}
 \end{frame}
 
-\begin{frame}{D/H of Cometary Water vs Earth}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{hartley2}\\
-    \footnotesize 103P/Hartley 2 (EPOXI 2010): D/H $\approx$ VSMOW
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Earth oceans: D/H $= 1.56 \times 10^{-4}$ (VSMOW standard)
-      \item Hartley 2: $\approx$ VSMOW; 67P: $\approx 3 \times$ VSMOW
-      \item Long-period comets: $\approx 2 \times$ VSMOW
-      \item Comets span $3\times$ in D/H: no class match for Earth
-    \end{itemize}
-  \end{columns}
-  \vskip4pt
-  \keyresult{Carbonaceous chondrites dominate Earth's water; comets supply at most a minor fraction.}
+\begin{frame}
+  \ipsherokey[0.6]{hartley2}{Comet 103P/Hartley 2 from EPOXI (2010), whose water D/H matches Earth's oceans. Credit: NASA/JPL-Caltech/UMD, public domain.}{Earth's oceans have D/H $= 1.56 \times 10^{-4}$ (VSMOW); Hartley 2 matches, 67P is $\approx 3\times$ and long-period comets $\approx 2\times$ VSMOW, so no comet class matches Earth: carbonaceous chondrites dominate Earth's water and comets supply at most a minor fraction.}
 \end{frame}
 
 
@@ -696,15 +417,11 @@
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.62\paperheight, keepaspectratio]{dinkinesh_levison}}\\
-  {\footnotesize The Dinkinesh-Selam system from NASA's Lucy flyby on 1 November 2023: the about 720 m inner main-belt asteroid Dinkinesh with its longitudinal trough and equatorial ridge, and the moonlet Selam, a contact binary of two near-equal lobes of about 210 and 230 m, at their true separation. Reproduced from Levison et al.\ (2024), Fig.}
+  \ipshero[0.76]{dinkinesh_levison}{The Dinkinesh-Selam system from the Lucy flyby of 1 November 2023: the $\sim$720 m main-belt asteroid with its equatorial ridge, and the moonlet Selam, a contact binary of two $\sim$210 and 230 m lobes. Reproduced from Levison et al.\ (2024).}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.62\paperheight, keepaspectratio]{psyche_shape_shepard}}\\
-  {\footnotesize The shape of (16) Psyche from combined radar and adaptive-optics data, seen from above its south pole: the best-fit ellipsoid over the shape model, with the regions Alpha, Bravo and Charlie where the body falls short of the ellipsoid, and a rounded-rectangle outline that follows the model more closely. Reproduced from Shepard et al.\ (2021).}
+  \ipshero{psyche_shape_shepard}{The shape of (16) Psyche from radar and adaptive-optics data, seen from above its south pole, with the regions Alpha, Bravo and Charlie where the body falls short of the best-fit ellipsoid. Reproduced from Shepard et al.\ (2021).}
 \end{frame}
 
 
@@ -713,37 +430,16 @@
 \section{Interstellar Visitors}
 % ════════════════════════════════════════════════════════════
 
-\begin{frame}{'Oumuamua: First and Strangest}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{oumuamua_discovery_meech}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Centre: 'Oumuamua. Stars trail because the telescope tracked the target.
-      \item No detectable coma at the limit of stacked imaging.
-      \item Yet outgoing trajectory shows non-gravitational acceleration.
-      \item Nature still debated: H$_2$ ice fragment? N$_2$ ice? Tidal disruption shard?
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Implied ISO Population is Large}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \ipsrecapfig{oumuamua_iso_density}
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Detection of one ISO with Pan-STARRS implies $\sim 10^{4}$ ISOs $> 100$ m within Neptune's orbit \emph{at any moment}.
-      \item Each ISO is a sample from a different planetary system.
-      \item Cumulative ejection rate: each star ejects planetesimals at rates similar to ours.
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.6]{oumuamua_discovery_meech}{Deep image of 1I/'Oumuamua at the centre; the stars trail because the telescope tracked the target. Credit: ESO / K.\ Meech et al.}{No detectable coma at the limit of stacked imaging, yet the outgoing trajectory shows a non-gravitational acceleration; its nature is still debated: H$_2$ ice fragment, N$_2$ ice, or tidal disruption shard.}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{borisov_composition_bodewits}}\\
-  {\footnotesize Volatile composition in the coma of interstellar comet 2I/Borisov compared with solar-system comets. Elevated C/O and depleted H/O indicate formation beyond the CO snowline of its host planetary system. Credit: Bodewits et al.\ (2020), Fig.~3.}
+  \ipsherokey[0.61]{oumuamua_iso_density}{Implied number density of interstellar objects from the single Pan-STARRS detection of 'Oumuamua. 'Oumuamua ISSI Team (2019).}{One detection implies $\sim 10^{4}$ ISOs larger than 100 m within Neptune's orbit \emph{at any moment}, each a sample of a different planetary system; every star ejects planetesimals at rates similar to ours.}
+\end{frame}
+
+\begin{frame}
+  \ipshero[0.76]{borisov_composition_bodewits}{Volatile composition in the coma of interstellar comet 2I/Borisov against solar-system comets: elevated C/O and depleted H/O point to formation beyond the CO snowline of its host system. Credit: Bodewits et al.\ (2020), Fig.~3.}
 \end{frame}
 
 
@@ -752,11 +448,9 @@
 % ════════════════════════════════════════════════════════════
 
 \begin{frame}{Summary}
-  \begin{enumerate}
-    \item Small bodies are \textbf{formation fossils} preserving disk chemistry and orbital migration
-    \item \textbf{Pb-Pb dating} anchors the solar system's absolute clock at $4567.30 \pm 0.16$~Myr
-    \item \textbf{NC-CC dichotomy} separates inner and outer reservoirs for $\sim 3$--$4$~Myr
-    \item Resonance gaps and Yarkovsky thermal recoil drive steady-state NEA delivery
+  \begin{enumerate}\setlength\itemsep{6pt}
+    \item Small bodies are \textbf{formation fossils}; \textbf{Pb-Pb dating} anchors the solar system's absolute clock at $4567.30 \pm 0.16$~Myr
+    \item The \textbf{NC-CC dichotomy} separates inner and outer reservoirs for $\sim 3$--$4$~Myr; resonance gaps and Yarkovsky thermal recoil drive steady-state NEA delivery
     \item Cometary D/H shows carbonaceous chondrites delivered most of Earth's water
   \end{enumerate}
   \vskip6pt
