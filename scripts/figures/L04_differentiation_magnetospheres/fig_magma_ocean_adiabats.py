@@ -73,7 +73,7 @@ def make_plot() -> Path:
     p = np.linspace(0.0, P_CMB, 400)
     sol, liq = t_solidus(p), t_liquidus(p)
 
-    fig, ax = plt.subplots(figsize=(8.0, 6.0))
+    fig, ax = plt.subplots(figsize=(5.76, 4.32))
 
     # Phase regions
     ax.fill_betweenx(p, 1200.0, sol, color="0.82", alpha=0.55, zorder=0)
@@ -91,8 +91,8 @@ def make_plot() -> Path:
     ax.plot(liq, p, color="0.25", lw=2.2, ls="--", zorder=3)
     ax.annotate("solidus", xy=(t_solidus(60) - 80, 60), fontsize=10,
                 color="0.15", ha="right", va="center")
-    ax.annotate("liquidus", xy=(t_liquidus(24) + 120, 24), fontsize=10,
-                color="0.15", ha="left", va="center")
+    ax.annotate("liquidus", xy=(t_liquidus(70) - 120, 70), fontsize=10,
+                color="0.15", ha="right", va="center")
 
     # Adiabats at successive times, hot to cold, each truncated at its
     # solidus crossing (below the front the mantle is solid).
@@ -108,9 +108,9 @@ def make_plot() -> Path:
                     ms=7, zorder=5)
 
     # Cooling sequence, hot t1 to cold t4
-    ax.annotate("", xy=(1850, -9.5), xytext=(3150, -9.5),
+    ax.annotate("", xy=(1850, -13.0), xytext=(3150, -13.0),
                 arrowprops=dict(arrowstyle="-|>", color="0.35", lw=1.4))
-    ax.annotate("cooling", xy=(2500, -11.5), ha="center", va="bottom",
+    ax.annotate("cooling", xy=(2500, -14.5), ha="center", va="bottom",
                 fontsize=9, color="0.35")
 
     # First crystals: t2 adiabat meets the liquidus near the base
@@ -118,16 +118,16 @@ def make_plot() -> Path:
     p_liq2 = crossing(t0_2, t_liquidus)
     ax.plot(t_adiabat(p_liq2, t0_2), p_liq2, marker="o", mfc="white",
             mec=c_2, mew=1.8, ms=8, zorder=5)
-    ax.annotate("first crystals\nat the base", xy=(5100, 76), ha="center",
+    ax.annotate("first crystals\nat the base", xy=(5200, 72), ha="center",
                 va="center", fontsize=9.5, color=c_2)
     ax.annotate("", xy=(t_adiabat(p_liq2, t0_2) + 60, p_liq2 + 1),
                 xytext=(5060, 82),
                 arrowprops=dict(arrowstyle="-|>", color=c_2, lw=1.2))
 
     # Front migration: dots on the solidus move to shallower depth
-    ax.annotate("", xy=(1560, 14), xytext=(1560, 102),
+    ax.annotate("", xy=(1640, 14), xytext=(1640, 102),
                 arrowprops=dict(arrowstyle="-|>", color="0.35", lw=1.6))
-    ax.annotate("crystallisation front\nmoves upward", xy=(1340, 58),
+    ax.annotate("crystallisation front\nmoves upward", xy=(1400, 58),
                 ha="center", va="center", fontsize=9.5, color="0.30",
                 rotation=90)
 
@@ -136,12 +136,12 @@ def make_plot() -> Path:
                 fontsize=9, color="0.35", va="bottom", ha="center")
 
     ax.set_xlim(1200, 5800)
-    ax.set_ylim(140, -16)
+    ax.set_ylim(140, -20)
     ax.set_xlabel("Temperature (K)")
     ax.set_ylabel("Pressure (GPa), depth increases downward")
     ax.grid(False)
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 if __name__ == "__main__":

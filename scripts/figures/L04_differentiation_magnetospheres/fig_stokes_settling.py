@@ -41,7 +41,7 @@ def make_plot() -> Path:
     r_m = r_cm * 1e-2
     v = v_stokes(r_m)
 
-    fig, ax = plt.subplots(figsize=(7.2, 5.0))
+    fig, ax = plt.subplots(figsize=(5.18, 3.60))
     ax.plot(r_cm, v, color="#d62728", lw=2.0)
 
     # Reference points
@@ -85,7 +85,7 @@ def make_plot() -> Path:
     ax.grid(which="both", linestyle=":", alpha=0.3)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

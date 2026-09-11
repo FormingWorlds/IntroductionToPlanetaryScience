@@ -67,7 +67,7 @@ def make_plot() -> Path:
                               start_polarity="reversed")
     intervals = pre_cns + cns + post_cns
 
-    fig, ax = plt.subplots(figsize=(11.5, 3.3))
+    fig, ax = plt.subplots(figsize=(8.28, 3.60))
     bar_y = 0.0
     bar_h = 1.0
     for t0, t1, pol in intervals:
@@ -111,7 +111,7 @@ def make_plot() -> Path:
     ax.tick_params(axis="x", which="both", direction="out")
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

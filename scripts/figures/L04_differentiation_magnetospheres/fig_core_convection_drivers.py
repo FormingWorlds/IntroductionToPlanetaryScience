@@ -85,8 +85,8 @@ def leader(ax, text, xy_text, xy_tip, color, ha, va="center", fs=9):
 def layer_labels(ax) -> None:
     """Layer names below the horizontal cut face, staggered to fit."""
     for text, xy_tip, xy_text in (("inner core", (0.10, 0.06), (0.04, -0.26)),
-                                  ("outer core", (0.37, 0.06), (0.40, -0.10)),
-                                  ("mantle", (0.78, 0.06), (0.80, -0.10))):
+                                  ("outer core", (0.37, 0.06), (0.35, -0.10)),
+                                  ("mantle", (0.78, 0.06), (0.88, -0.10))):
         ax.annotate(text, xy=xy_tip, xytext=xy_text, fontsize=9,
                     ha="center", va="top", color="0.25", zorder=6,
                     arrowprops=dict(arrowstyle="-|>", color="0.4",
@@ -142,7 +142,7 @@ def draw_compositional(ax: plt.Axes) -> None:
 
 def make_plot() -> Path:
     apply_style()
-    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(11.8, 5.6))
+    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(8.50, 4.03))
     for ax in (ax_a, ax_b):
         ax.set_xlim(-0.80, 1.72)
         ax.set_ylim(-0.42, 1.30)
@@ -151,7 +151,7 @@ def make_plot() -> Path:
     draw_thermal(ax_a)
     draw_compositional(ax_b)
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 if __name__ == "__main__":

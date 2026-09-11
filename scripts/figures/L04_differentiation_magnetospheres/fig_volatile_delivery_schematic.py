@@ -108,7 +108,7 @@ def panel_b(ax):
     ax.text(8.05, 1.20, "icy pebbles drift inward,\nblocked by Jupiter",
             ha="center", va="bottom", fontsize=10, color=BLUE_TXT)
     # Reservoir labels
-    ax.text(2.55, -0.22, "inner reservoir: forms early, with ice\n(NC meteorites)",
+    ax.text(2.25, -0.22, "inner reservoir: forms early, with ice\n(NC meteorites)",
             ha="center", va="top", fontsize=10, color=RED_TXT)
     ax.text(8.05, -0.22, "outer reservoir: ice-rich\n(CC meteorites)",
             ha="center", va="top", fontsize=10, color=BLUE_TXT)
@@ -118,7 +118,7 @@ def panel_b(ax):
 
 def make_plot() -> Path:
     apply_style()
-    fig, (ax_a, ax_b) = plt.subplots(2, 1, figsize=(7.6, 5.6))
+    fig, (ax_a, ax_b) = plt.subplots(2, 1, figsize=(6.46, 4.76))
     for ax in (ax_a, ax_b):
         ax.set_xlim(0, 10.6)
         ax.set_ylim(-1.0, 2.1)
@@ -126,7 +126,7 @@ def make_plot() -> Path:
     panel_a(ax_a)
     panel_b(ax_b)
     fig.tight_layout(pad=0.3)
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 if __name__ == "__main__":

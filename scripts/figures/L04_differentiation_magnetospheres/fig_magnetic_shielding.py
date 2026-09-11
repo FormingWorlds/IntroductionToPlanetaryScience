@@ -31,7 +31,7 @@ def _planet(ax: plt.Axes, atm: float) -> None:
 def make_plot() -> plt.Figure:
     """Build the two-panel schematic, save it and return it."""
     apply_style()
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(9.5, 4.2))
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(8.08, 3.57))
     for ax in (ax1, ax2):
         ax.set_xlim(-5.2, 3.4)
         ax.set_ylim(-3.2, 3.4)
@@ -62,11 +62,11 @@ def make_plot() -> plt.Figure:
         a = np.radians(ang)
         ax2.add_patch(FancyArrowPatch((1.3 * np.cos(a), 1.3 * np.sin(a)), (2.9 * np.cos(a), 2.9 * np.sin(a)), arrowstyle="-|>", mutation_scale=10, color="0.25", lw=1.4, ls=":"))
     ax2.text(1.3, 3.0, "sputtering", fontsize=10, color="0.25")
-    ax2.text(1.3, -2.95, "ion pickup", fontsize=10, color="0.25")
+    ax2.text(1.55, -2.75, "ion pickup", fontsize=10, color="0.25")
     ax2.text(-4.9, 3.15, "solar wind", fontsize=10, color=WIND)
-    ax2.text(-4.9, -3.05, "Mars after its dynamo died, about 4 Gyr ago", fontsize=10, color="0.3")
+    ax2.text(-4.9, -3.6, "Mars after its dynamo died, about 4 Gyr ago", fontsize=10, color="0.3")
     fig.subplots_adjust(left=0.01, right=0.99, top=0.9, bottom=0.02, wspace=0.04)
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

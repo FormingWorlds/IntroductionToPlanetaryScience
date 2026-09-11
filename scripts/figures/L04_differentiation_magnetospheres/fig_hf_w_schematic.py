@@ -60,11 +60,11 @@ def draw_cartoon(ax: plt.Axes) -> None:
 
     ax.add_patch(Circle((5, 5.4), 3.4, facecolor="#f5deb3",
                         edgecolor="0.4", lw=1.2, zorder=1))
-    ax.add_patch(Circle((5, 5.4), 1.5, facecolor="0.55",
+    ax.add_patch(Circle((5, 5.4), 1.35, facecolor="0.55",
                         edgecolor="0.3", lw=1.2, zorder=2))
 
     # W droplets sinking from the mantle into the core
-    rng_pts = [(3.4, 7.4), (6.7, 7.2), (2.9, 4.6), (7.2, 4.9)]
+    rng_pts = [(2.6, 6.9), (7.4, 6.7), (2.9, 4.6), (7.2, 4.9)]
     for (x, y) in rng_pts:
         ax.plot(x, y, "o", color="0.25", ms=5, zorder=3)
         dx, dy = (5 - x) * 0.35, (5.4 - y) * 0.35
@@ -77,7 +77,7 @@ def draw_cartoon(ax: plt.Axes) -> None:
     ax.annotate("mantle: Hf (lithophile) stays", xy=(5, 9.5), fontsize=9.5,
                 ha="center", color="#8a6d1a")
     ax.annotate("$^{182}\\mathrm{Hf} \\rightarrow\\, ^{182}\\mathrm{W}$\n"
-                "$t_{1/2} = 8.9$ Myr", xy=(5, 7.6), fontsize=9.5,
+                "$t_{1/2} = 8.9$ Myr", xy=(5, 7.2), fontsize=8.5,
                 ha="center", color="#8a6d1a", zorder=4)
     ax.annotate("core", xy=(5, 5.3), fontsize=10, ha="center",
                 color="white", zorder=4)
@@ -108,12 +108,12 @@ def draw_curves(ax: plt.Axes) -> None:
 
 def make_plot() -> Path:
     apply_style()
-    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(10.4, 4.6),
+    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(7.49, 3.31),
                                      gridspec_kw={"width_ratios": [1, 1.35]})
     draw_cartoon(ax_a)
     draw_curves(ax_b)
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 if __name__ == "__main__":

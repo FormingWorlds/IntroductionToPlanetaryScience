@@ -58,7 +58,7 @@ def arc_label(ax, text, color, deg, r_target, r_text=1.16):
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(6.8, 6.6))
+    fig, ax = plt.subplots(figsize=(4.90, 4.75))
 
     r_in = 0.0
     for _name, r_out, fill, _lab in LAYERS:
@@ -89,7 +89,7 @@ def make_plot() -> Path:
     ax.set_aspect("equal")
     ax.axis("off")
     fig.tight_layout(pad=0.2)
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 if __name__ == "__main__":

@@ -124,7 +124,7 @@ def make_plot() -> Path:
     results = sweep()
     diws = np.array(sorted(d for d in results if d in DIW_GRID))
 
-    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(9.2, 4.0), sharex=True)
+    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(6.62, 2.88), sharex=True)
 
     for sp in MELT_SPECIES:
         m = np.array([results[d][f"{sp}_kg_liquid"] for d in diws])
@@ -149,7 +149,7 @@ def make_plot() -> Path:
     ax_b.legend(ncol=2, loc="lower center", framealpha=0.9)
 
     fig.tight_layout(pad=0.5)
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 if __name__ == "__main__":

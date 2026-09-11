@@ -101,8 +101,8 @@ def draw_earth(ax: plt.Axes, label_layers: bool) -> None:
     if label_layers:
         ax.annotate("mantle", xy=(0.0, -0.76), fontsize=9, ha="center",
                     color="#7a5c1e", zorder=6)
-        ax.annotate("outer core\n(liquid)", xy=(0.0, 0.31), fontsize=9,
-                    ha="center", color="#1a4a6e", zorder=6)
+        ax.annotate("outer core\n(liquid)", xy=(0.0, -0.34), fontsize=9,
+                    ha="center", va="center", color="#1a4a6e", zorder=6)
         ax.annotate("inner core\n(solid)", xy=(0.0, 0.0), fontsize=7,
                     ha="center", va="center", color=text_color_on(C_INNER),
                     zorder=6)
@@ -229,7 +229,7 @@ def draw_p_panel(ax: plt.Axes) -> None:
 
 def make_plot() -> Path:
     apply_style()
-    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(11.2, 5.9))
+    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(9.52, 5.02))
     for ax in (ax_a, ax_b):
         ax.set_xlim(-1.55, 1.55)
         ax.set_ylim(-1.45, 1.30)
@@ -238,7 +238,7 @@ def make_plot() -> Path:
     draw_s_panel(ax_a)
     draw_p_panel(ax_b)
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 if __name__ == "__main__":

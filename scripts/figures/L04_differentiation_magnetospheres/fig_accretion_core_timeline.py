@@ -69,7 +69,7 @@ def panel_a(ax):
         ("chondrule formation", 0.0, 3.6, C_CHON, None, 1.2),
         ("NC planetesimals accrete", 0.1, 1.9, C_NC, None, 0.7),
         ("CC planetesimals accrete", 0.75, 3.6, C_CC, None, 1.0),
-        ("half of Mars's mass", 0.8, 2.7, C_MARS, None, None),
+        ("half of Mars's mass (~1.8 Myr)", 0.8, 2.7, C_MARS, None, None),
         ("gas disk dissipates", 1.2, 4.7, C_DISK, 0.8, 1.0),
     ]
     for i, (label, x0, x1, color, fl, fr) in enumerate(rows):
@@ -80,8 +80,6 @@ def panel_a(ax):
                     fontsize=9.5, color=color)
     # Mars half-mass best estimate
     ax.plot(1.8, 2, marker="v", color=C_MARS, ms=7, zorder=5)
-    ax.annotate("~1.8 Myr", xy=(1.8, 2.42), ha="center", fontsize=8,
-                color=C_MARS)
 
     ax.set_xlim(-0.1, 5.0)
     ax.set_ylim(0.35, 6.85)
@@ -121,18 +119,18 @@ def panel_b(ax):
     grad_bar(ax, 1.0, 100.0, y, C_EARTH, fade_left=2.0, fade_right=55.0)
     ax.plot(30.0, y, marker="D", color=C_EARTH, ms=8, zorder=5)
     ax.annotate("Earth: two-stage age ~30 Myr = lower limit;\n"
-                "core formation ends within ~100 Myr", xy=(1.05, 1.35),
-                va="center", fontsize=9.5, color=C_EARTH)
+                "core formation ends within ~100 Myr", xy=(1.05, 1.18),
+                va="center", fontsize=8.5, color=C_EARTH)
 
     # Moon-forming impact
-    y = 0.72
+    y = 0.42
     grad_bar(ax, 50.0, 150.0, y, C_MOON, fade_right=60.0)
     ax.annotate("Moon-forming giant impact: later than ~50 Myr",
-                xy=(45, y), ha="right", va="center", fontsize=9.5,
+                xy=(45, y), ha="right", va="center", fontsize=8.5,
                 color=C_MOON)
 
     ax.set_xlim(0.6, 300)
-    ax.set_ylim(0.15, 4.85)
+    ax.set_ylim(0.05, 4.85)
     ax.set_yticks([])
     ax.set_xlabel("Time after CAI condensation (Myr, log scale)")
     ax.set_title("(b) core formation: small bodies finish early, Earth finishes late",
@@ -143,12 +141,12 @@ def panel_b(ax):
 
 def make_plot() -> Path:
     apply_style()
-    fig, (ax_a, ax_b) = plt.subplots(2, 1, figsize=(9.6, 7.0),
+    fig, (ax_a, ax_b) = plt.subplots(2, 1, figsize=(6.91, 5.04),
                                      gridspec_kw={"height_ratios": [1.15, 1]})
     panel_a(ax_a)
     panel_b(ax_b)
     fig.tight_layout(h_pad=2.2)
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 if __name__ == "__main__":
