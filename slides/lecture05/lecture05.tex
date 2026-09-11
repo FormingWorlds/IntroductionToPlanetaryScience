@@ -29,11 +29,9 @@
   By the end of this lecture, you will be able to:
   \vskip8pt
   \begin{itemize}
-    \item Classify atmospheric types (primary, secondary, tertiary)
-    \item Derive pressure profiles from hydrostatic equilibrium
-    \item Compute the atmospheric scale height and apply it across the solar system
-    \item Explain how the greenhouse effect raises surface temperature above $T_{\mathrm{eff}}$
-    \item Evaluate atmospheric escape mechanisms and retention criteria
+    \item Classify atmospheres as primary, secondary or tertiary
+    \item Derive the scale height from hydrostatic equilibrium and apply it across the solar system
+    \item Explain the greenhouse effect and the escape mechanisms that decide which atmospheres survive
   \end{itemize}
 \end{frame}
 
@@ -46,9 +44,9 @@
 
     \column{\recaptextcol}
     \begin{itemize}
-      \item Metal-silicate separation in magma oceans drove core formation within $\sim$30--60~Myr
-      \item Dynamo requires conducting fluid, convection, and magnetic Reynolds number $\mathrm{Rm} \gtrsim 10$--100
-      \item Mars lost its dynamo between $\sim$4.1 and 3.7~Ga, triggering atmospheric erosion
+      \item Metal-silicate separation in magma oceans formed cores within $\sim$30--60~Myr
+      \item A dynamo needs a conducting fluid, convection and $\mathrm{Rm} \gtrsim 10$--100
+      \item Mars lost its dynamo between $\sim$4.1 and 3.7~Ga, then its atmosphere
     \end{itemize}
     \vskip8pt
     \textbf{Today:} The thin gaseous envelope that controls a planet's surface conditions.
@@ -67,17 +65,13 @@
   \vskip8pt
   \begin{itemize}
     \item Dominated by $\mathrm{H_2}$ and He (solar composition)
-    \item Requires core mass $\gtrsim 5$--$10\;\Mearth$ before disk dispersal in $\sim$3--10~Myr
-    \item \textbf{Gas giants:} Jupiter and Saturn retain massive $\mathrm{H_2}$/He envelopes
-    \item \textbf{Ice giants:} Uranus and Neptune envelopes are only 10--20\% of total mass
+    \item \textbf{Gas giants} keep massive $\mathrm{H_2}$/He envelopes; \textbf{ice giants} only 10--20\% of their mass
     \item Terrestrial planets are too small to retain primordial $\mathrm{H_2}$/He
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{helled2014_core_accretion}}\\
-  {\footnotesize Growth of a giant planet by core accretion: runaway gas accretion builds the $\mathrm{H_2}$/He envelope within the disk lifetime once envelope mass overtakes core mass. Reproduced from Helled et al.\ (2014), Fig.\ 1; simulation from Lissauer et al.\ (2009).}
+  \ipsherokey[0.61]{helled2014_core_accretion}{Growth of a giant planet by core accretion: runaway gas accretion builds the $\mathrm{H_2}$/He envelope once it outweighs the core. Reproduced from Helled et al.\ (2014), Fig.\ 1; simulation from Lissauer et al.\ (2009).}{A primary atmosphere needs a core of $\gtrsim 5$--$10\;\Mearth$ before the disk disperses in $\sim$3--10~Myr.}
 \end{frame}
 
 % ── Secondary atmospheres ────────────────────────────────────
@@ -86,40 +80,18 @@
   \vskip8pt
   \begin{itemize}
     \item Magma ocean degassing and volcanism release dissolved volatiles
-    \item Speciation depends on mantle \textbf{oxygen fugacity} ($f_{\mathrm{O}_2}$ redox state):
-    \begin{itemize}
-      \item Oxidising: $\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{N_2}$
-      \item Reducing: $\mathrm{H_2}$, CO, $\mathrm{N_2}$
-    \end{itemize}
-    \item \textbf{Venus:} $\mathrm{CO_2}$-dominated (96.5\%), 92~bar
-    \item \textbf{Mars:} $\mathrm{CO_2}$-dominated (95\%), 6~mbar
-    \item \textbf{Titan:} thick $\mathrm{N_2}$ atmosphere (from $\mathrm{NH_3}$), 1.5~bar
+    \item Speciation follows the mantle \textbf{oxygen fugacity}: oxidising gives $\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{N_2}$; reducing gives $\mathrm{H_2}$, CO, $\mathrm{N_2}$
+    \item \textbf{Venus:} 96.5\% $\mathrm{CO_2}$ at 92~bar; \textbf{Mars:} 95\% $\mathrm{CO_2}$ at 6~mbar; \textbf{Titan:} $\mathrm{N_2}$ (from $\mathrm{NH_3}$) at 1.5~bar
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{outgassing_speciation_fO2}}\\
-  {\footnotesize Speciation of an outgassed atmosphere as a function of melt oxygen fugacity: CO, $\mathrm{H_2}$, and $\mathrm{CH_4}$ dominate under reducing conditions, while $\mathrm{CO_2}$ and $\mathrm{H_2O}$ dominate under oxidising conditions. Course figure; model of Nicholls et al.\ (2024).}
+  \ipshero{outgassing_speciation_fO2}{Speciation of an outgassed atmosphere against melt oxygen fugacity: CO, $\mathrm{H_2}$ and $\mathrm{CH_4}$ when reducing, $\mathrm{CO_2}$ and $\mathrm{H_2O}$ when oxidising. Course figure; model of Nicholls et al.\ (2024).}
 \end{frame}
 
 % ── Tertiary atmospheres ─────────────────────────────────────
-\begin{frame}{Tertiary atmospheres}
-  Earth's atmosphere is a tertiary atmosphere produced by billions of years of biological modification.
-  \vskip8pt
-  \begin{itemize}
-    \item Original outgassed inventory was dominated by $\mathrm{CO_2}$ and $\mathrm{N_2}$, similar to Venus
-    \item Oxygenic photosynthesis added the $\mathrm{O_2}$ (21\%); the $\mathrm{N_2}$ (78\%) is outgassed and accumulated
-    \item Atmospheric $\mathrm{O_2}$ is entirely biogenic and requires active life to persist
-  \end{itemize}
-  \vskip8pt
-    \keyresult{Earth's $\mathrm{O_2}$, and so its tertiary character, is continuously maintained by life.}
-\end{frame}
-
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{lyons2014_oxygen_history}}\\
-  {\footnotesize Earth's atmospheric oxygen through time: anoxic for its first $\sim$2~Gyr, rising abruptly at the Great Oxidation Event near 2.4~Ga, and reaching modern levels in the Phanerozoic through biological photosynthesis. Reproduced from Lyons et al.\ (2014).}
+  \ipsherokey{lyons2014_oxygen_history}{Earth's atmospheric oxygen through time: anoxic for $\sim$2~Gyr, rising at the Great Oxidation Event near 2.4~Ga, modern levels in the Phanerozoic. Reproduced from Lyons et al.\ (2014).}{Earth's atmosphere is \textbf{tertiary}: the outgassed $\mathrm{CO_2}$ and $\mathrm{N_2}$ inventory was Venus-like, oxygenic photosynthesis added the 21\% $\mathrm{O_2}$, and that $\mathrm{O_2}$ is entirely biogenic and needs active life to persist.}
 \end{frame}
 
 % ── Comparative table ────────────────────────────────────────
@@ -138,34 +110,17 @@
     Type                      & 2$^{\circ}$ & 3$^{\circ}$ & 2$^{\circ}$ & 1$^{\circ}$ & 2$^{\circ}$ \\
     \bottomrule
   \end{tabular}
-  \vskip8pt
-  Staggering diversity: surface pressures spanning five orders of magnitude, temperatures from 94 to 737~K.
+  \vskip10pt
+  \keyresult{Surface pressures span five orders of magnitude, temperatures run from 94 to 737~K.}
 \end{frame}
 
-% ── Composition bars hero ────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{composition_bar}}\\
-  {\footnotesize Atmospheric composition by volume for five solar-system bodies: three origins yield five distinct outcomes across the solar system. Course figure.}
+  \ipshero{composition_bar}{Atmospheric composition by volume for five solar-system bodies: three origins yield five distinct outcomes. Course figure.}
 \end{frame}
 
 % ── Venus surface ────────────────────────────────────────────
-\begin{frame}{Venus: a secondary atmosphere in extremis}
-  A massive secondary atmosphere transforms planetary surface conditions to extreme pressures and temperatures.
-  \vskip6pt
-  \begin{columns}[c]
-    \column{\recapfigcolnarrow}
-    \centering
-    \ipsrecapfig{venera13_venus_surface}
-    \source{USSR/NASA NSSDC, public domain}
-
-    \column{\recaptextcolwide}
-    \begin{itemize}
-      \item \textit{Venera 13} landed 1 March 1982 and survived 127~minutes
-      \item Surface pressure of 92~bar and surface temperature of 737~K
-      \item Dense $\mathrm{CO_2}$ atmosphere and cloud deck filter sunlight to a dim orange glow
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.66]{venera13_venus_surface}{The surface of Venus seen by \textit{Venera 13} on 1 March 1982. Credit: USSR/NASA NSSDC, public domain.}{The lander survived 127~minutes at 92~bar and 737~K; the dense $\mathrm{CO_2}$ atmosphere and cloud deck filter sunlight to a dim orange glow.}
 \end{frame}
 
 
@@ -183,39 +138,33 @@
 
     \column{\recaptextcol}
     \small
-    Net vertical force on a thin slab of area $A$ and thickness $\dd z$ vanishes:
+    The net vertical force on a thin slab of area $A$ and thickness $\dd z$ vanishes:
     $$P(z)A - P(z + \dd z)A = \rho\,g\,A\,\dd z$$
     \vskip4pt
     \keyresult{$$\boxed{\dv{P}{z} = -\rho\,g}$$}
     \vskip4pt
-    Pressure decreases upward because each layer supports the weight of all gas above it.
+    Each layer supports the weight of all gas above it.
   \end{columns}
 \end{frame}
 
 % ── Ideal gas law & barometric formula ───────────────────────
 \begin{frame}{The ideal gas law and barometric formula}
-  The ideal gas law relates density to pressure: $P = \rho\,\kB T / (\mu\,m_u)$.
-  \vskip6pt
-  Substituting $\rho(P)$ into hydrostatic equilibrium $\dv{P}{z} = -\rho\,g$:
+  The ideal gas law $P = \rho\,\kB T / (\mu\,m_u)$ in $\dv{P}{z} = -\rho\,g$ gives
   $$\dv{P}{z} = -\frac{\mu\,m_u\,g}{\kB T}\,P = -\frac{P}{H}$$
   \vskip4pt
-  For an \textbf{isothermal} atmosphere (constant $T$), integrating yields:
+  For an \textbf{isothermal} atmosphere (constant $T$):
   \vskip4pt
   \keyresult{$$\boxed{P(z) = P_0\,\exp\!\left(-\frac{z}{H}\right)}$$}
   \vskip4pt
-  where $H = \kB T/(\mu\,m_u\,g)$; pressure drops by $e \approx 2.718$ each scale height.
+  with $H = \kB T/(\mu\,m_u\,g)$; the pressure drops by $e \approx 2.718$ each scale height.
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{ideal_gas_density}}\\
-  {\footnotesize Ideal gas law in atmospheric form: $\rho = P\mu m_u/(k_B T)$. Density scales with pressure at fixed $T$; heavier or colder gas is denser. Course figure.}
+  \ipshero{ideal_gas_density}{Ideal gas law in atmospheric form, $\rho = P\mu m_u/(k_B T)$: density scales with pressure at fixed $T$, heavier or colder gas is denser. Course figure.}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{barometric_profile}}\\
-  {\footnotesize The barometric formula $P/P_0 = e^{-z/H}$: a factor $e$ per scale height, 99\% of the column mass below $4.6\,H$; a straight line on a logarithmic axis. Course figure.}
+  \ipshero{barometric_profile}{The barometric formula $P/P_0 = e^{-z/H}$: a factor $e$ per scale height, 99\% of the column mass below $4.6\,H$, a straight line on a logarithmic axis. Course figure.}
 \end{frame}
 
 
@@ -224,10 +173,26 @@
 \section{Blackboard derivation: scale height}
 % ════════════════════════════════════════════════════════════
 
+% ── Goal and strategy ───────────────────────────────────────
+\begin{frame}{Goal and strategy}
+  \begin{columns}[c]
+    \column{\recapfigcolnarrow}
+    \ipsrecapfig[0.62\textheight]{board_sketch_l05}
+    \column{\recaptextcolwide}
+    \textbf{Goal:} derive $H = \kB T/(\mu\,m_u\,g)$ from hydrostatic equilibrium and the ideal gas law.
+    \vskip8pt
+    \begin{itemize}\setlength\itemsep{2pt}
+      \item Balance the forces on a thin slab
+      \item Replace $\rho$ by $P$ with the ideal gas law
+      \item Read off the length scale, integrate, compute
+    \end{itemize}
+    \vskip8pt
+    \keyresult{One length, $H$, sets how fast pressure falls with height.}
+  \end{columns}
+\end{frame}
+
 % ── Setup ────────────────────────────────────────────────────
 \begin{frame}{Deriving the scale height}
-  \textbf{Goal:} Derive $H = \kB T/(\mu\,m_u\,g)$ from hydrostatic equilibrium and the ideal gas law.
-  \vskip10pt
   Start from:
   $$\dv{P}{z} = -\rho\,g \qquad\text{and}\qquad P = \frac{\rho\,\kB T}{\mu\,m_u}$$
   \vskip6pt
@@ -242,15 +207,13 @@
 \begin{frame}{The atmospheric scale height}
   \keyresult{$$\boxed{H = \frac{\kB T}{\mu\,m_u\,g}}$$}
   \vskip8pt
-  Physical interpretation:
-  \vskip4pt
   \begin{itemize}
     \item \textbf{Higher $T$} $\rightarrow$ larger $H$: hotter gas extends further
     \item \textbf{Heavier molecules} (larger $\mu$) $\rightarrow$ smaller $H$: harder to loft
     \item \textbf{Stronger gravity} $g$ $\rightarrow$ smaller $H$: more compressed
   \end{itemize}
   \vskip8pt
-  \textbf{Key insight:} $H$ encodes the competition between thermal energy and gravitational binding; integrated over the whole column, the surface pressure is the column weight, $P_0 = m_{\mathrm{col}}\,g$.
+  $H$ balances thermal energy against gravitational binding; integrated over the column, the surface pressure is the column weight, $P_0 = m_{\mathrm{col}}\,g$.
 \end{frame}
 
 % ── Scale heights across the solar system ────────────────────
@@ -271,14 +234,12 @@
   \begin{itemize}
     \item Jupiter: large $H$ despite strong gravity, because $\mathrm{H_2}$ is very light ($\mu = 2.2$)
     \item Titan: large $H$ despite low $T$, thanks to very weak gravity ($g = 1.35$~m\,s$^{-2}$)
-    \item Venus: hot but heavy molecules and decent gravity yield moderate $H$
+    \item Venus: hot, but heavy molecules and decent gravity yield a moderate $H$
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{scale_height_bar}}\\
-  {\footnotesize Scale heights recomputed from $T$, $\mu$ and $g$: light gas (Jupiter) and weak gravity (Titan) give the largest $H$, Earth the smallest. Course figure.}
+  \ipshero{scale_height_bar}{Scale heights recomputed from $T$, $\mu$ and $g$: light gas (Jupiter) and weak gravity (Titan) give the largest $H$, Earth the smallest. Course figure.}
 \end{frame}
 
 
@@ -288,24 +249,8 @@
 % ════════════════════════════════════════════════════════════
 
 % ── Atmospheric layers ───────────────────────────────────────
-\begin{frame}{Atmospheric layers}
-  \begin{columns}[c]
-    \column{\recapfigcolnarrow}
-    \centering
-    \ipsrecapfig[0.65\textheight]{earth_tz_layers}
-    \source{Course figure; US Standard Atmosphere 1976}
-
-    \column{\recaptextcolwide}
-    \small
-    Layers defined by the sign of $\dv{T}{z}$:
-    \vskip2pt
-    \begin{enumerate}
-      \item \textbf{Troposphere} (0--12~km): $T$ decreases with $z$; convective
-      \item \textbf{Stratosphere} (12--50~km): $T$ increases; UV ozone heating
-      \item \textbf{Mesosphere} (50--85~km): $T$ decreases to mesopause ($\sim$190~K)
-      \item \textbf{Thermosphere} ($>$85~km): $T$ increases; EUV heating ($T > 1000$~K)
-    \end{enumerate}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.61]{earth_tz_layers}{Earth's atmospheric layers, defined by the sign of $\dv{T}{z}$. Course figure; US Standard Atmosphere 1976.}{\textbf{Troposphere} (0--12~km): $T$ falls, convective; \textbf{stratosphere} (12--50~km): $T$ rises by UV ozone heating; \textbf{mesosphere} (50--85~km): $T$ falls to the $\sim$190~K mesopause; \textbf{thermosphere} ($>$85~km): EUV heating, $T > 1000$~K.}
 \end{frame}
 
 % ── Lapse rate ───────────────────────────────────────────────
@@ -315,46 +260,30 @@
   \keyresult{$$\Gamma_d = -\dv{T}{z} = \frac{g}{c_p}$$}
   \vskip6pt
   \begin{itemize}
-    \item \textbf{Dry adiabatic lapse rate} for Earth: $\Gamma_d = 9.81/1004 \approx 9.8$~K\,km$^{-1}$
-    \item Observed average: $\sim$6.5~K\,km$^{-1}$ (lower due to latent heat release)
-    \item Physical picture: rising air expands, does work on surroundings, cools
+    \item \textbf{Dry adiabatic lapse rate} for Earth: $\Gamma_d = 9.81/1004 \approx 9.8$~K\,km$^{-1}$; observed $\sim$6.5~K\,km$^{-1}$ because of latent heat
+    \item Rising air expands, does work on its surroundings, and cools
+    \item \textbf{Tropopause height:} $\sim$8~km (poles) to $\sim$17~km (equator)
   \end{itemize}
-  \vskip6pt
-  \textbf{Tropopause height:} $\sim$8~km (poles) to $\sim$17~km (equator).
-\end{frame}
-
-% ── Dry and moist adiabat hero ───────────────────────────────
-\begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{dry_moist_adiabat}}\\
-  {\footnotesize Dry and moist adiabats against the US Standard Atmosphere 1976 reference profile: latent heat makes the moist adiabat shallower, and real convection sits between both limits. Course figure.}
-\end{frame}
-
-% ── Titan descent profile hero ───────────────────────────────
-\begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{fulchignoni2005_titan_tz}}\\
-  {\footnotesize Titan's temperature profile from the Huygens HASI descent: an in situ descent measured the 94~K surface, 0.1~bar tropopause, and stratospheric structure. Fulchignoni et al.\ (2005).}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{titan_haze_pia06160}}\\
-  {\footnotesize Detached haze layers in Titan's upper atmosphere imaged at the limb by Cassini ISS: photochemical haze layers extending up to 500~km altitude absorb solar UV and heat the stratosphere. Credit: NASA/JPL/Space Science Institute, public domain.}
+  \ipshero{dry_moist_adiabat}{Dry and moist adiabats against the US Standard Atmosphere 1976: latent heat makes the moist adiabat shallower, and real convection sits between both limits. Course figure.}
 \end{frame}
 
-% ── Venus profile hero ───────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{venus_tz_vira}}\\
-  {\footnotesize Venus temperature profile, Pioneer Venus/VIRA and Venus Express: without ozone, temperature falls monotonically from 737~K at the surface to the mesopause, reaching 1~bar near 50~km. Course figure.}
+  \ipshero{fulchignoni2005_titan_tz}{Titan's temperature profile from the Huygens HASI descent: the 94~K surface, the 0.1~bar tropopause and the stratosphere measured in situ. Fulchignoni et al.\ (2005).}
 \end{frame}
 
-% ── Seven atmospheres 0.1-bar hero ───────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{atmosphere_tp_robinson}}\\
-  {\footnotesize Measured temperature-pressure profiles of seven solar-system atmospheres: thick atmospheres transition from convective to radiative near 0.1~bar, setting a universal tropopause minimum. Digitized from Robinson \& Catling (2014), Fig.\ 1.}
+  \ipshero[0.76]{titan_haze_pia06160}{Detached haze layers in Titan's upper atmosphere, Cassini ISS: photochemical haze up to 500~km altitude absorbs solar UV and heats the stratosphere. Credit: NASA/JPL/Space Science Institute, public domain.}
+\end{frame}
+
+\begin{frame}
+  \ipshero{venus_tz_vira}{Venus temperature profile from Pioneer Venus/VIRA and Venus Express: without ozone, $T$ falls monotonically from 737~K at the surface, reaching 1~bar near 50~km. Course figure.}
+\end{frame}
+
+\begin{frame}
+  \ipshero[0.76]{atmosphere_tp_robinson}{Measured temperature-pressure profiles of seven solar-system atmospheres: thick atmospheres turn from convective to radiative near 0.1~bar, a universal tropopause. Digitized from Robinson \& Catling (2014), Fig.\ 1.}
 \end{frame}
 
 
@@ -365,49 +294,25 @@
 
 % ── Absorption, emission, scattering ─────────────────────────
 \begin{frame}{Three interactions: radiation and matter}
-  When radiation passes through an atmosphere:
-  \vskip8pt
-  \begin{description}
-    \item[Absorption:] Photon energy converted to internal molecular energy\\
-    Key absorbers: $\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, $\mathrm{O_3}$, $\mathrm{N_2O}$
-
-    \vskip4pt
-    \item[Emission:] Warm gas radiates at absorbed wavelengths (Kirchhoff's law)\\
-    Radiates energy directly to space
-
-    \vskip4pt
-    \item[Scattering:] Photons redirected without absorption\\
-    Rayleigh scattering ($\propto \lambda^{-4}$) and Mie scattering
-  \end{description}
+  \begin{itemize}\setlength\itemsep{6pt}
+    \item \textbf{Absorption:} photon energy becomes internal molecular energy; key absorbers $\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, $\mathrm{O_3}$, $\mathrm{N_2O}$
+    \item \textbf{Emission:} warm gas radiates at the absorbed wavelengths (Kirchhoff's law), directly to space
+    \item \textbf{Scattering:} photons redirected without absorption; Rayleigh ($\propto \lambda^{-4}$) and Mie scattering
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{rayleigh_scattering}}\\
-  {\footnotesize Rayleigh scattering and the colour of the sky: shorter path lengths at noon preserve blue scattered light, while longer slant paths at sunset transmit only reddened light; cross-section scales as $\lambda^{-4}$. Course figure.}
+  \ipshero{rayleigh_scattering}{Rayleigh scattering and the colour of the sky: short paths at noon keep the blue scattered light, long slant paths at sunset transmit only red; the cross-section scales as $\lambda^{-4}$. Course figure.}
 \end{frame}
 
 % ── Blackbody spectrum figure ────────────────────────────────
-\begin{frame}{Stellar vs.\ planetary emission}
-  \begin{columns}[c]
-    \column{\recapfigcol}
-    \centering
-    \ipsrecapfig{blackbody_spectrum}
-    \source{Wikimedia, public domain}
-
-    \column{\recaptextcol}
-    \begin{itemize}
-      \item Sun ($\sim$5800~K): peak at $\sim$0.5~$\mu$m (visible)
-      \item Planet ($\sim$300~K): peak at $\sim$10~$\mu$m (thermal IR)
-    \end{itemize}
-    \vskip6pt
-    This \textbf{wavelength separation} is the physical basis of the greenhouse effect: the atmosphere can be transparent at visible wavelengths but opaque in the infrared.
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.65]{blackbody_spectrum}{Blackbody spectra of the Sun ($\sim$5800~K, peak $\sim$0.5~$\mu$m) and a planet ($\sim$300~K, peak $\sim$10~$\mu$m). Credit: Wikimedia, public domain.}{This \textbf{wavelength separation} is the basis of the greenhouse effect: an atmosphere can be transparent in the visible but opaque in the infrared.}
 \end{frame}
 
 % ── Optical depth & Beer-Lambert law ─────────────────────────
 \begin{frame}{Optical depth and the Beer-Lambert law}
-  Optical depth $\tau$ measures cumulative absorption along a path:
+  Optical depth $\tau$ measures the cumulative absorption along a path:
   $$\tau = \int_0^s \kappa\,\rho\,\dd s'$$
   \vskip2pt
   Beam intensity decays following the \textbf{Beer-Lambert law}:
@@ -416,23 +321,17 @@
   \vskip4pt
   \begin{itemize}
     \item \textbf{Optically thin} ($\tau \ll 1$): radiation passes freely through the gas
-    \item \textbf{Optically thick} ($\tau \gg 1$): photons are repeatedly absorbed and re-emitted
+    \item \textbf{Optically thick} ($\tau \gg 1$): photons are absorbed and re-emitted many times
     \item \textbf{Photosphere} ($\tau \approx 1$): thermal radiation escapes directly to space
   \end{itemize}
 \end{frame}
 
-% ── Photosphere schematic hero ───────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{tau_one_schematic}}\\
-  {\footnotesize The atmospheric photosphere: thermal radiation escapes to space from the $\tau \approx 1$ level, setting the effective temperature. Course figure.}
+  \ipshero{tau_one_schematic}{The atmospheric photosphere: thermal radiation escapes to space from the $\tau \approx 1$ level, which sets the effective temperature. Course figure.}
 \end{frame}
 
-% ── Atmospheric absorption spectrum hero ─────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{atmospheric_transmission}}\\
-  {\footnotesize Earth's atmospheric absorption spectrum from UV to IR: greenhouse gases absorb outgoing surface infrared while leaving visible sunlight and the 8--13~$\mu$m window transparent. Credit: Wikimedia Commons, public domain.}
+  \ipshero[0.76]{atmospheric_transmission}{Earth's atmospheric absorption spectrum from UV to IR: greenhouse gases absorb the outgoing infrared while visible sunlight and the 8--13~$\mu$m window pass. Credit: Wikimedia Commons, public domain.}
 \end{frame}
 
 
@@ -446,20 +345,8 @@
 % ════════════════════════════════════════════════════════════
 
 % ── Radiative-convective equilibrium ─────────────────────────
-\begin{frame}{Radiative-convective equilibrium}
-  Atmospheres divide into a convective lower layer and a radiatively controlled upper layer.
-  \vskip6pt
-  \begin{itemize}
-    \item \textbf{Troposphere}: greenhouse opacity drives convective instability along the adiabat
-    \item \textbf{Stratosphere}: optically thin gas reaches radiative equilibrium, stable against convection
-    \item \textbf{Tropopause}: boundary where the radiative temperature gradient becomes shallower than the adiabat
-  \end{itemize}
-\end{frame}
-
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{radiative_convective_profile}}\\
-  {\footnotesize Radiative-convective equilibrium (schematic): the radiative profile is superadiabatic near the surface, convection holds the troposphere on the dry adiabat, the tropopause is where the two gradients cross. Course figure.}
+  \ipsherokey[0.61]{radiative_convective_profile}{Radiative-convective equilibrium (schematic): the radiative profile is superadiabatic near the surface, convection holds the troposphere on the dry adiabat. Course figure.}{Greenhouse opacity makes the \textbf{troposphere} convective, the optically thin \textbf{stratosphere} sits in radiative equilibrium, and the \textbf{tropopause} is where the radiative gradient becomes shallower than the adiabat.}
 \end{frame}
 
 % ── Energy balance derivation ────────────────────────────────
@@ -469,17 +356,14 @@
   \vskip4pt
   \begin{itemize}
     \item $A$: Bond albedo; $S$: stellar flux ($S_0 = 1361$~W\,m$^{-2}$ at Earth)
-    \item Factor $1/4$: ratio of intercepting cross-section $\pi R_p^2$ to emitting sphere $4\pi R_p^2$
+    \item Factor $1/4$: intercepting cross-section $\pi R_p^2$ over the emitting sphere $4\pi R_p^2$
   \end{itemize}
   \vskip6pt
   \keyresult{$$\boxed{T_{\mathrm{eff}} = \left[\frac{(1-A)\,L_\star}{16\pi\sigma\,d^2}\right]^{1/4} = \left[\frac{(1-A)\,S}{4\sigma}\right]^{1/4}}$$}
 \end{frame}
 
-% ── Earth energy budget hero ─────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{trenberth_energy_budget}}\\
-  {\footnotesize Earth's globally averaged energy budget in W\,m$^{-2}$: atmospheric back-radiation of 333~W\,m$^{-2}$ supplies more energy to the surface than direct sunlight (160~W\,m$^{-2}$). After Trenberth et al.\ (2009).}
+  \ipshero{trenberth_energy_budget}{Earth's globally averaged energy budget in W\,m$^{-2}$: back-radiation of 333~W\,m$^{-2}$ supplies more energy to the surface than direct sunlight (160~W\,m$^{-2}$). After Trenberth et al.\ (2009).}
 \end{frame}
 
 % ── Effective vs surface T ───────────────────────────────────
@@ -498,40 +382,21 @@
   \vskip4pt
   {\footnotesize *Jupiter 1-bar level; excess partly from internal heat (Lecture~3).}
   \vskip8pt
-  $\Delta T = T_{\mathrm{surf}} - T_{\mathrm{eff}}$ reveals the \textbf{greenhouse effect}.\\
-  Venus: 510~K. Earth: 33~K. Mars: $\sim$5~K (only 6~mbar, no water-vapour amplifier).
+  \keyresult{$\Delta T = T_{\mathrm{surf}} - T_{\mathrm{eff}}$ is the \textbf{greenhouse effect}: 510~K on Venus, 33~K on Earth, $\sim$5~K on Mars (6~mbar, no water-vapour amplifier).}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{venus_earth_mars_atmospheres}}\\
-  {\footnotesize Surface temperature and surface pressure of Venus, Earth, and Mars: planets of similar bulk composition span a factor of $10^4$ in surface pressure and 500~K in surface temperature due to greenhouse warming. Course figure; data from NASA.}
+  \ipshero[0.77]{venus_earth_mars_atmospheres}{Surface temperature and pressure of Venus, Earth and Mars: similar bulk compositions span a factor $10^4$ in pressure and 500~K in temperature through greenhouse warming. Course figure; data from NASA.}
 \end{frame}
 
 % ── Greenhouse mechanism ─────────────────────────────────────
-\begin{frame}{The greenhouse mechanism}
-  \begin{columns}[c]
-    \column{\recapfigcolnarrow}
-    \centering
-    \ipsrecapfig{greenhouse_one_layer}
-    \source{Course figure}
-
-    \column{\recaptextcolwide}
-    \begin{enumerate}
-      \item Sunlight (visible, $\sim$0.5~$\mu$m) reaches the surface
-      \item Surface emits thermal IR ($\sim$10--15~$\mu$m)
-      \item Greenhouse gases absorb outgoing IR
-      \item Absorbing layer re-emits: half up, half down
-      \item Downward emission adds energy to surface
-    \end{enumerate}
-    \vskip6pt
-    \textbf{Result:} $T_{\mathrm{surf}} > T_{\mathrm{eff}}$
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.6]{greenhouse_one_layer}{The one-layer greenhouse model: sunlight in, infrared absorbed and re-emitted half up, half down. Course figure.}{Sunlight ($\sim$0.5~$\mu$m) reaches the surface, the surface emits thermal IR ($\sim$10--15~$\mu$m), greenhouse gases absorb it and re-emit half downward, and that extra energy makes $T_{\mathrm{surf}} > T_{\mathrm{eff}}$.}
 \end{frame}
 
 % ── One-layer greenhouse model ───────────────────────────────
 \begin{frame}{One-layer greenhouse model}
-  Single atmospheric layer with infrared emissivity $\varepsilon$, transparent to visible sunlight:
+  A single layer with infrared emissivity $\varepsilon$, transparent to visible sunlight:
   \vskip4pt
   \begin{columns}[T]
     \column{0.48\textwidth}
@@ -561,32 +426,23 @@
 
 % ── Jeans escape ─────────────────────────────────────────────
 \begin{frame}{Thermal (Jeans) escape}
-  Molecules follow a Maxwell-Boltzmann distribution whose high-velocity tail can exceed escape speed.
-  \vskip6pt
-  The \textbf{Jeans escape parameter} at the exobase compares gravitational to thermal energy:
+  The high-velocity tail of the Maxwell-Boltzmann distribution can exceed the escape speed. The \textbf{Jeans escape parameter} at the exobase compares gravitational to thermal energy:
   \vskip4pt
-  \keyresult{$$\lambda_J = \frac{G M_p\,m}{\kB T_{\mathrm{exo}}\,r_{\mathrm{exo}}} = \frac{v_{\mathrm{esc}}^2}{v_{\mathrm{th}}^2}$$}
-  \vskip2pt
-  with $v_{\mathrm{th}} = \sqrt{2\kB T_{\mathrm{exo}}/m}$ the most probable thermal speed.
+  \keyresult{$$\lambda_J = \frac{G M_p\,m}{\kB T_{\mathrm{exo}}\,r_{\mathrm{exo}}} = \frac{v_{\mathrm{esc}}^2}{v_{\mathrm{th}}^2}, \qquad v_{\mathrm{th}} = \sqrt{2\kB T_{\mathrm{exo}}/m}$$}
   \vskip6pt
   \begin{itemize}
     \item $\lambda_J \gg 1$: escape is negligible because the tail is depleted
     \item $\lambda_J \lesssim 2$--3: thermal escape drives rapid atmospheric loss
-    \item Escape flux $\Phi_J \propto (1 + \lambda_J)\,e^{-\lambda_J}$ depends exponentially on $\lambda_J$
+    \item Escape flux $\Phi_J \propto (1 + \lambda_J)\,e^{-\lambda_J}$: exponential in $\lambda_J$
   \end{itemize}
 \end{frame}
 
-% ── Escape processes hero ────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{escape_processes_gronoff2020}}\\
-  {\footnotesize The main atmospheric escape processes: thermal, photochemical, and ion channels operate on all planets, while planetary magnetic fields select which pathways dominate. Gronoff et al.\ (2020).}
+  \ipshero{escape_processes_gronoff2020}{The main atmospheric escape processes: thermal, photochemical and ion channels act on all planets, and the magnetic field selects which dominate. Gronoff et al.\ (2020).}
 \end{frame}
 
 % ── Jeans parameter table ────────────────────────────────────
 \begin{frame}{Jeans parameter for Earth and Mars}
-  Because $\lambda_J \propto m$, light hydrogen escapes steadily while heavy molecules remain gravitationally bound.
-  \vskip4pt
   \centering
   {\footnotesize Exobase temperatures: 1000~K (Earth), 270~K (Mars).}
   \vskip4pt
@@ -602,26 +458,16 @@
     $\mathrm{CO_2}$ & 44 & 310  & 230  \\
     \bottomrule
   \end{tabular}
-  \vskip4pt
-  \flushleft
-  \begin{itemize}
-    \item $\lambda_J \gg 1$ for $\mathrm{N_2}$ and $\mathrm{CO_2}$: thermal escape is completely negligible
-    \item Moderate $\lambda_J$ allows atomic H to escape steadily from both planets
-  \end{itemize}
+  \vskip10pt
+  \keyresult{$\lambda_J \propto m$: atomic H escapes steadily from both planets, while $\mathrm{N_2}$ and $\mathrm{CO_2}$ stay gravitationally bound.}
 \end{frame}
 
-% ── Exobase crossing hero ────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{exobase_definition}}\\
-  {\footnotesize The exobase: altitude where the mean free path $\ell$ equals the scale height $H$, splitting collisional fluid below from ballistic flight above. Course figure.}
+  \ipshero{exobase_definition}{The exobase: the altitude where the mean free path $\ell$ equals the scale height $H$, collisional fluid below and ballistic flight above. Course figure.}
 \end{frame}
 
-% ── Exobase speed distributions hero ─────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{maxwell_boltzmann_jeans}}\\
-  {\footnotesize Maxwell-Boltzmann speed distributions for atomic H at Earth and Mars exobases: the escaping fraction sits in the high-velocity tail exceeding $v_{\mathrm{esc}}$, scaling as $e^{-\lambda_J}$. Course figure.}
+  \ipshero{maxwell_boltzmann_jeans}{Maxwell-Boltzmann speed distributions for atomic H at the Earth and Mars exobases: the escaping fraction is the tail beyond $v_{\mathrm{esc}}$, scaling as $e^{-\lambda_J}$. Course figure.}
 \end{frame}
 
 % ── Hydrodynamic escape ─────────────────────────────────────
@@ -629,75 +475,58 @@
   Intense stellar EUV heating drives bulk outflow as an \textbf{atmospheric wind}:
   \vskip8pt
   \begin{itemize}
-    \item Peak importance in first few hundred Myr when stellar EUV is 10--100$\times$ higher
-    \item Strips $\mathrm{H_2}$-rich primary envelopes from planets up to several $\Mearth$
-    \item Outflowing light hydrogen can drag along heavier volatiles (He, C, N, O)
-    \item Primary mechanism sculpting the exoplanet radius valley at $\sim$1.5--2~$\Rearth$
+    \item Strongest in the first few hundred Myr, when stellar EUV is 10--100$\times$ higher
+    \item Strips $\mathrm{H_2}$-rich primary envelopes from planets up to several $\Mearth$; outflowing H drags heavier volatiles along
+    \item The primary mechanism behind the exoplanet radius valley at $\sim$1.5--2~$\Rearth$
   \end{itemize}
   \vskip4pt
   \sourcenote{Hunten et al.\ (1987); Owen (2019)}
 \end{frame}
 
-% ── Radius valley hero ───────────────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{fulton2017_radius_valley}}\\
-  {\footnotesize The observed radius valley in the California-Kepler Survey: a bimodal distribution with a deficit near 1.8~$\Rearth$ separates stripped rocky cores from envelope-retaining sub-Neptunes. After Fulton et al.\ (2017).}
+  \ipshero{fulton2017_radius_valley}{The radius valley in the California-Kepler Survey: a deficit near 1.8~$\Rearth$ separates stripped rocky cores from envelope-retaining sub-Neptunes. After Fulton et al.\ (2017).}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.60\paperheight, keepaspectratio]{radius_valley_owen2019}}\\
-  {\footnotesize Population synthesis of close-in planets after 10 Gyr of EUV-driven escape: planet radius against orbital separation (left, cores of 6.5 to 15 $\Mearth$) and against incident flux (right, colour the retained H/He mass fraction). The evaporation desert at small separations and large radii is empty, and the evaporation valley opens near 1.5 to 2 $\Rearth$: stripped cores below it, envelope-keeping planets above. Left panel after Owen \& Wu (2013), right panel after Lopez \& Fortney (2013), labels after Owen (2019).}
+  \ipshero{radius_valley_owen2019}{Population synthesis after 10~Gyr of EUV-driven escape: an empty evaporation desert and a valley near 1.5 to 2~$\Rearth$. After Owen \& Wu (2013), Lopez \& Fortney (2013) and Owen (2019).}
 \end{frame}
 
 % ── Energy-limited escape ────────────────────────────────────
 \begin{frame}{Energy-limited escape rate}
-  Stellar EUV energy absorbed in the upper atmosphere drives hydrodynamic mass loss in the energy-limited regime.
+  Stellar EUV absorbed in the upper atmosphere drives hydrodynamic mass loss:
   \vskip6pt
   \keyresult{$$\dot{M}_{\mathrm{EL}} = \eta\,\frac{\pi\,F_\mathrm{EUV}\,R_p^3}{G\,M_p}$$}
   \vskip6pt
   \begin{itemize}
     \item Efficiency $\eta \approx 0.1$--$0.2$ converts incident EUV flux into expansion work
-    \item Scales as $R_p^3$: extended, low-density atmospheres lose mass most rapidly
-    \item Scales inversely with $M_p$: lower planetary gravity enables stronger bulk outflow
+    \item Scales as $R_p^3$: extended, low-density atmospheres lose mass fastest
+    \item Scales inversely with $M_p$: low gravity enables stronger bulk outflow
   \end{itemize}
   \vskip4pt
   \sourcenote{Watson et al.\ (1981); Owen (2019)}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{hot_jupiter_outflow_tripathi2015}}\\
-  {\footnotesize Hydrodynamic outflow from a hot Jupiter driven by stellar EUV heating: heated gas accelerates outward into a night-side wake with Kelvin-Helmholtz shear instabilities. Reproduced from Owen (2019), Fig.\ 2; simulation from Tripathi et al.\ (2015).}
+  \ipshero[0.76]{hot_jupiter_outflow_tripathi2015}{Hydrodynamic outflow from a hot Jupiter under stellar EUV heating: the gas accelerates outward into a night-side wake with Kelvin-Helmholtz instabilities. Reproduced from Owen (2019), Fig.\ 2; simulation from Tripathi et al.\ (2015).}
 \end{frame}
 
 % ── Non-thermal escape ───────────────────────────────────────
 \begin{frame}{Non-thermal escape mechanisms}
-  \begin{description}
-    \item[Sputtering:] Solar wind ions strike upper atmosphere and eject neutral molecules
-    \vskip2pt
-    \item[Photochemical:] Photodissociation yields suprathermal atoms exceeding $v_{\mathrm{esc}}$
-    \vskip2pt
-    \item[Ion pickup:] Photoions are swept away by interplanetary magnetic fields
-    \vskip2pt
-    \item[Impact erosion:] Giant impacts shock and eject atmospheric columns into space
-  \end{description}
-  \vskip6pt
-  {\small MAVEN at Mars: photochemical loss of oxygen dominates modern escape over sputtering and ion pickup.}
-\end{frame}
-
-% ── Oxygen loss channels hero ────────────────────────────────
-\begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{maven_o_loss_channels}}\\
-  {\footnotesize Present-day oxygen loss from Mars by escape channel: photochemical escape dominates modern oxygen loss; summed with hydrogen escape, the total reaches the 2--3~kg\,s$^{-1}$ MAVEN measures. After Jakosky et al.\ (2018).}
+  \begin{itemize}\setlength\itemsep{6pt}
+    \item \textbf{Sputtering} and \textbf{ion pickup:} solar wind ions eject neutrals, and photoions are swept away by the interplanetary field
+    \item \textbf{Photochemical:} photodissociation yields suprathermal atoms above $v_{\mathrm{esc}}$
+    \item \textbf{Impact erosion:} giant impacts shock and eject atmospheric columns
+  \end{itemize}
+  \vskip8pt
+  \keyresult{MAVEN at Mars: photochemical loss of oxygen dominates modern escape over sputtering and ion pickup.}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.66\paperheight, keepaspectratio]{maven_ion_plume}}\\
-  {\footnotesize The ion plume of Mars from MAVEN data: the most energetic ions (red) are accelerated in a plume above the planet, the bulk of the escaping ions (green) leave along the tail behind Mars. Without a global dipole field the solar wind reaches deep into the upper atmosphere, so unmagnetised Mars is exposed to this solar-wind-driven loss. Credit: NASA Scientific Visualization Studio (SVS 4370), public domain.}
+  \ipshero[0.77]{maven_o_loss_channels}{Present-day oxygen loss from Mars by channel: photochemical escape dominates, and with hydrogen escape the total reaches the 2--3~kg\,s$^{-1}$ MAVEN measures. After Jakosky et al.\ (2018).}
+\end{frame}
+
+\begin{frame}
+  \ipshero[0.76]{maven_ion_plume}{The ion plume of Mars from MAVEN: energetic ions (red) leave in a plume, the bulk (green) along the tail, with no global field to keep the solar wind out. Credit: NASA Scientific Visualization Studio (SVS 4370), public domain.}
 \end{frame}
 
 
@@ -706,45 +535,14 @@
 \section{Atmospheric retention}
 % ════════════════════════════════════════════════════════════
 
-% ── Escape velocity–temperature diagram ──────────────────────
-\begin{frame}{Atmospheric retention: $v_{\mathrm{esc}}$ vs.\ $T$ diagram}
-  \begin{columns}[c]
-    \column{\recapfigcolnarrow}
-    \centering
-    \ipsrecapfig{escape_velocity_temperature}
-    \source{Wikimedia, CC BY-SA 4.0}
-
-    \column{\recaptextcolwide}
-    Rule of thumb for long-term retention:
-    $$v_{\mathrm{esc}} \gtrsim 6\,v_{\mathrm{th}}$$
-    \vskip4pt
-    \begin{itemize}
-      \item Gas giants: retain all species
-      \item Earth/Venus: retain heavy species, lose H
-      \item Mars: marginal; non-thermal losses dominate
-      \item Titan: cold $\rightarrow$ retains $\mathrm{N_2}$ despite low $v_{\mathrm{esc}}$
-      \item Moon/Mercury: retain no significant atmosphere
-    \end{itemize}
-  \end{columns}
+% ── Escape velocity-temperature diagram ──────────────────────
+\begin{frame}
+  \ipsherokey[0.61]{escape_velocity_temperature}{Escape velocity against temperature, with the retention lines for each gas. Credit: Wikimedia, CC BY-SA 4.0.}{Long-term retention needs $v_{\mathrm{esc}} \gtrsim 6\,v_{\mathrm{th}}$: gas giants keep every species, Earth and Venus lose only H, Mars is marginal, cold Titan keeps $\mathrm{N_2}$, the Moon and Mercury keep nothing.}
 \end{frame}
 
 % ── Mars atmosphere ──────────────────────────────────────────
-\begin{frame}{Mars: a lost atmosphere}
-  Loss of Mars' magnetic dynamo allowed solar wind stripping to erode an early thick atmosphere down to 6~mbar.
-  \vskip6pt
-  \begin{columns}[c]
-    \column{\recapfigcolnarrow}
-    \centering
-    \ipsrecapfig[0.6\textheight]{mars_atmosphere}
-    \source{NASA/JPL (Viking 1, 1976)}
-
-    \column{\recaptextcolwide}
-    \begin{itemize}
-      \item Today 6~mbar: no stable liquid water, little greenhouse warming
-      \item Valley networks and lakes record a dense early atmosphere
-      \item The dynamo died near $\sim$4.1~Ga and left the atmosphere to the solar wind
-    \end{itemize}
-  \end{columns}
+\begin{frame}
+  \ipsherokey[0.66]{mars_atmosphere}{The thin atmosphere of Mars above its limb, Viking 1 (1976). Credit: NASA/JPL.}{After the dynamo died near $\sim$4.1~Ga the solar wind eroded a dense early atmosphere, recorded by valley networks and lakes, down to today's 6~mbar: no stable liquid water, little greenhouse warming.}
 \end{frame}
 
 
@@ -753,32 +551,22 @@
 \section{Recent advances \& outlook}
 % ════════════════════════════════════════════════════════════
 
-% ── TRAPPIST-1 b emission hero ───────────────────────────────
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{trappist1b_jwst_greene2023}}\\
-  {\footnotesize JWST/MIRI 15~$\mu$m thermal emission matches a 503~K bare rock, ruling out a thick atmosphere on TRAPPIST-1~b. Greene et al.\ (2023).}
+  \ipshero{trappist1b_jwst_greene2023}{JWST/MIRI 15~$\mu$m thermal emission matches a 503~K bare rock, ruling out a thick atmosphere on TRAPPIST-1~b. Greene et al.\ (2023).}
 \end{frame}
 
 \begin{frame}
-  \centering
-  \makebox[\linewidth][c]{\includegraphics[width=0.95\paperwidth, height=0.72\paperheight, keepaspectratio]{johnstone2021_xuv_evolution}}\\
-  {\footnotesize Stellar X-ray luminosity evolution for Sun-like stars and M dwarfs: lower-mass stars remain in the saturated high-activity regime for over 1~Gyr, driving prolonged atmospheric stripping on close-in rocky exoplanets. Reproduced from Johnstone et al.\ (2021), Fig.\ 11.}
+  \ipshero[0.76]{johnstone2021_xuv_evolution}{X-ray luminosity evolution of Sun-like stars and M dwarfs: low-mass stars stay saturated for over 1~Gyr and strip close-in rocky planets for longer. Reproduced from Johnstone et al.\ (2021), Fig.\ 11.}
 \end{frame}
 
 % ── Summary ──────────────────────────────────────────────────
 \begin{frame}{Summary}
-  \small
-  \begin{enumerate}\setlength\itemsep{1pt}
-    \item \textbf{Atmosphere types}: primary (captured), secondary (outgassed), tertiary (biogenic)
-    \item \textbf{Hydrostatic balance}: $\dv{P}{z} = -\rho g$ yields exponential pressure decay $P_0 e^{-z/H}$
-    \item \textbf{Scale height}: $H = \kB T/(\mu m_u g)$ balances thermal energy against gravity
-    \item \textbf{Vertical structure}: convection sets the lapse rate ($\Gamma_d = g/c_p$ dry, less when condensing) below the 0.1~bar tropopause
-    \item \textbf{Beer-Lambert law}: $I = I_0 e^{-\tau}$; thermal radiation escapes from photosphere at $\tau \approx 1$
-    \item \textbf{Greenhouse warming}: optical depth raises surface temperature $T_s$ above $T_{\mathrm{eff}}$
-    \item \textbf{Atmospheric escape}: thermal, hydrodynamic, and non-thermal; retention requires $v_{\mathrm{esc}} \gtrsim 6 v_{\mathrm{th}}$
+  \begin{enumerate}\setlength\itemsep{6pt}
+    \item \textbf{Atmosphere types}: primary (captured), secondary (outgassed), tertiary (biogenic); five orders of magnitude in surface pressure
+    \item \textbf{Hydrostatic balance} and the \textbf{scale height} $H = \kB T/(\mu m_u g)$ give $P = P_0 e^{-z/H}$; convection sets $\Gamma_d = g/c_p$ below the 0.1~bar tropopause
+    \item \textbf{Greenhouse warming} from $\tau \gtrsim 1$ raises $T_s$ above $T_{\mathrm{eff}}$; \textbf{atmospheric escape} (thermal, hydrodynamic, non-thermal) is beaten only when $v_{\mathrm{esc}} \gtrsim 6 v_{\mathrm{th}}$
   \end{enumerate}
-  \vskip4pt
+  \vskip8pt
   \textbf{Next: Lecture 6}
 \end{frame}
 
