@@ -157,7 +157,7 @@ Each week consists of:
 - Regolith formation and space weathering
 - Cryovolcanism on icy bodies: the mechanism, with Enceladus, Europa and Triton in one section and a forward reference to Lecture 11
 - Recent advances: one item, the Io eruption caught by JunoCam in 2024
-- **Length budget (set 2026-09-10 after the L02 delivery ran 60 min to the break):** deck at most 60 frames, the board derivation at most 5 live steps, notes about 7500 to 8000 words. L07 deck 37 frames, notes 7650 words, board sheet 5 steps; the $D \propto L^{3/4}$ extension is stated, not derived, and Worksheet 4 problem 1b has the students show it. Mission catalogues (Perseverance, DART, OSIRIS-REx, Hayabusa2, Pluto) live in Lectures 10 and 12.
+- **Length budget (set 2026-09-10 after the L02 delivery ran 60 min to the break):** deck at most 60 frames, the board derivation at most 5 live steps, notes about 7500 to 8000 words. L07 deck 42 frames, notes 8030 words with 29 figures, board sheet 5 steps; the $D \propto L^{3/4}$ extension is stated, not derived, and Worksheet 4 problem 1b has the students show it. Mission catalogues (Perseverance, DART, OSIRIS-REx, Hayabusa2, Pluto) live in Lectures 10 and 12.
 
 ### Lecture 8: Planetary Interiors — Structure, Composition, & Dynamics
 
@@ -173,7 +173,7 @@ Each week consists of:
 - Icy moon interiors: subsurface oceans (Europa, Enceladus, Titan)
 - Recent advances: InSight seismology revealing Mars's core and mantle structure, revised models of Jupiter's dilute core from Juno gravity data, new constraints on Europa's ice shell thickness
 
-- **Length budget (2026-09-10):** deck 51 frames (from 93), notes about 7300 words (from 8422), board sheet 5 live steps with the $C/MR^2$ table stated in the closing box; the closing item is InSight seismology; the Juno dilute core and the ocean-world mission catalogue live in Lecture 11; Worksheet 4 drops its seismology problem.
+- **Length budget (2026-09-10):** deck 54 frames (from 93; 51 after the cut, then figures added to concept frames), notes about 7300 words (from 8422), board sheet 5 live steps with the $C/MR^2$ table stated in the closing box; the closing item is InSight seismology; the Juno dilute core and the ocean-world mission catalogue live in Lecture 11; Worksheet 4 drops its seismology problem.
 
 ### Lecture 9: Rocky Planets — Earth & Venus
 
