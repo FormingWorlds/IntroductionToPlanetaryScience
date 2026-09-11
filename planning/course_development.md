@@ -146,7 +146,7 @@ Each week consists of:
 - Climate evolution: faint young Sun problem, long-term climate feedbacks
 - Carbonate–silicate cycle and climate regulation on Earth
 - Recent advances: Venus atmospheric anomalies debate, Titan's methane cycle from Dragonfly mission planning, updated climate models for early Mars
-- **Length budget (2026-09-10):** deck 52 frames (from 82; 48 after the cut, then figures added to concept frames), notes about 7800 words plus 30 figures (from 10884), board sheet 5 live steps with the water numbers stated in the closing box; the closing item is the Venus phosphine controversy and the DAVINCI test on one hero frame; the Worksheet 3 cut is applied once, with Lecture 5.
+- **Length budget (2026-09-10):** deck 52 frames (from 82; 48 after the cut, then figures added to concept frames), notes about 7800 words plus 30 figures (from 10884), board sheet 5 live steps with the water numbers stated in the closing box; the closing item is the Venus phosphine controversy and the DAVINCI test on one hero frame; the Worksheet 3 cut is applied once, with Lecture 5. Round 2 (2026-09-11): five course-original sketches for the subsections without a figure (cloud species, Rossby regimes, faint young Sun, Urey pathway, thermostat matrix) as hero frames; deck 57 frames with 37 figure frames, notes 35 figures; the frame target stays at about 70 and the decision of 2026-09-11 stops the sketch pass here.
 
 ### Lecture 7: Planetary Surfaces — Geology, Geomorphology, & Geophysics
 
@@ -160,7 +160,7 @@ Each week consists of:
 - Regolith formation and space weathering
 - Cryovolcanism on icy bodies: the mechanism, with Enceladus, Europa and Triton in one section and a forward reference to Lecture 11
 - Recent advances: one item, the Io eruption caught by JunoCam in 2024
-- **Length budget (set 2026-09-10 after the L02 delivery ran 60 min to the break):** deck at most 60 frames, the board derivation at most 5 live steps, notes about 7500 to 8000 words. L07 deck 45 frames, notes 8030 words with 32 figures, board sheet 5 steps; the $D \propto L^{3/4}$ extension is stated, not derived, and Worksheet 4 problem 1b has the students show it. Mission catalogues (Perseverance, DART, OSIRIS-REx, Hayabusa2, Pluto) live in Lectures 10 and 12.
+- **Length budget (set 2026-09-10 after the L02 delivery ran 60 min to the break):** deck at most 60 frames, the board derivation at most 5 live steps, notes about 7500 to 8000 words. L07 deck 45 frames, notes 8030 words with 32 figures, board sheet 5 steps; the $D \propto L^{3/4}$ extension is stated, not derived, and Worksheet 4 problem 1b has the students show it. Mission catalogues (Perseverance, DART, OSIRIS-REx, Hayabusa2, Pluto) live in Lectures 10 and 12. Round 2 (2026-09-11): five notes figures that the deck lacked as hero frames; deck 50 frames with 35 figure frames, notes 36 figures; the frame target stays at about 70 and the decision of 2026-09-11 stops the sketch pass here.
 
 ### Lecture 8: Planetary Interiors — Structure, Composition, & Dynamics
 
@@ -176,7 +176,7 @@ Each week consists of:
 - Icy moon interiors: subsurface oceans (Europa, Enceladus, Titan)
 - Recent advances: InSight seismology revealing Mars's core and mantle structure, revised models of Jupiter's dilute core from Juno gravity data, new constraints on Europa's ice shell thickness
 
-- **Length budget (2026-09-10):** deck 54 frames (from 93; 51 after the cut, then figures added to concept frames), notes about 7300 words (from 8422), board sheet 5 live steps with the $C/MR^2$ table stated in the closing box; the closing item is InSight seismology; the Juno dilute core and the ocean-world mission catalogue live in Lecture 11; Worksheet 4 drops its seismology problem.
+- **Length budget (2026-09-10):** deck 54 frames (from 93; 51 after the cut, then figures added to concept frames), notes about 7300 words (from 8422), board sheet 5 live steps with the $C/MR^2$ table stated in the closing box; the closing item is InSight seismology; the Juno dilute core and the ocean-world mission catalogue live in Lecture 11; Worksheet 4 drops its seismology problem. Round 2 (2026-09-11): three course-original sketches for the interior concept frames (moment of inertia factors, creep viscosities, Rayleigh number against viscosity) as hero frames; deck 57 frames with 33 figure frames, notes 33 figures; the frame target stays at about 70 and the decision of 2026-09-11 stops the sketch pass here.
 
 ### Lecture 9: Rocky Planets — Earth & Venus
 
@@ -217,7 +217,7 @@ Each week consists of:
 - Implications for habitability: the habitable zone is not a line but a set of history-dependent trajectories; forward reference to Lecture 13 exoplanet habitability
 - Recent advances and upcoming missions: DAVINCI+ (NASA, ~2029), VERITAS (NASA, late 2020s), EnVision (ESA, 2031); first new orbital missions in decades; active research on early Venus climate (Way 2016, Turbet 2021); phosphine debate (Lecture 6)
 
-- **Length budget (2026-09-10):** deck 60 frames (from 79; 44 after the cut, then figures added to concept frames and a course-original sketch), notes about 7900 words (from 11648), board sheet 5 live steps; the closing item is the 2030s Venus missions on one hero frame; Worksheet 5 drops its deuterium problem and three parts (4 problems, 14 parts).
+- **Length budget (2026-09-10):** deck 60 frames (from 79; 44 after the cut, then figures added to concept frames and a course-original sketch), notes about 7900 words (from 11648), board sheet 5 live steps; the closing item is the 2030s Venus missions on one hero frame; Worksheet 5 drops its deuterium problem and three parts (4 problems, 14 parts). Round 2 (2026-09-11): five notes figures that the deck lacked as hero frames; deck 65 frames with 41 figure frames, notes 38 figures; the frame target stays at about 70 and the decision of 2026-09-11 stops the sketch pass here.
 
 ### Lecture 10: Rocky Planets — Mercury & Mars
 
@@ -259,7 +259,7 @@ Each week consists of:
 - What makes a rocky planet habitable? (synthesised from L9 + L10) (1) liquid water, (2) active geology for volatile recycling, (3) magnetic shielding (debated), (4) long-term climate stability. Earth ticks all four; Venus and Mars failed on at least two; Mercury never had a chance
 - Recent advances and upcoming missions: Mars Sample Return (NASA/ESA, schedule in flux), BepiColombo (2026 orbit insertion), ExoMars Rosalind Franklin (~2028), JAXA MMX (2026 launch, 2031 return), Curiosity long-baseline results, subsurface radar reservoirs (contested), Ingenuity helicopter legacy, Perseverance ongoing geochemistry
 
-- **Length budget (2026-09-10):** deck 53 frames (from 65; 47 after the cut, then figures added to concept frames and two course-original sketches), notes about 8300 words (from 11643), board sheet 5 live steps; the closing item is BepiColombo at Mercury on one hero frame.
+- **Length budget (2026-09-10):** deck 53 frames (from 65; 47 after the cut, then figures added to concept frames and two course-original sketches), notes about 8300 words (from 11643), board sheet 5 live steps; the closing item is BepiColombo at Mercury on one hero frame. Round 2 (2026-09-11): four notes figures that the deck lacked and the dynamo-lifetimes sketch as hero frames; deck 58 frames with 45 figure frames, notes 43 figures; the frame target stays at about 70 and the decision of 2026-09-11 stops the sketch pass here.
 
 ### Lecture 11: Gas & Ice Giants — Jupiter, Saturn, Uranus, Neptune
 
@@ -300,7 +300,7 @@ Each week consists of:
 - **Dedicated slide: Voyager legacy** — only spacecraft to visit Uranus and Neptune; still operational in the interstellar medium; power declining toward ~2030 end of life; our ice giant knowledge is 40 years out of date
 - Future ice giant missions: 2023 US Decadal Survey prioritised a Uranus orbiter as the top flagship mission for the 2030s; mission concepts in study phase; launch window early 2030s; atmospheric entry probe + magnetosphere + moon reconnaissance
 
-- **Length budget (2026-09-10):** deck 49 frames (from 78; 45 after the cut, then figures added to concept frames), notes about 7300 words (from 9269), board sheet 5 live steps; the closing item is Europa Clipper and JUICE on one hero frame; Worksheet 6 drops its comet problem and three parts (4 problems, 13 parts).
+- **Length budget (2026-09-10):** deck 49 frames (from 78; 45 after the cut, then figures added to concept frames), notes about 7300 words (from 9269), board sheet 5 live steps; the closing item is Europa Clipper and JUICE on one hero frame; Worksheet 6 drops its comet problem and three parts (4 problems, 13 parts). Round 2 (2026-09-11): nine notes figures that the deck lacked as hero frames; deck 58 frames with 38 figure frames, notes 43 figures; the frame target stays at about 70 and the decision of 2026-09-11 stops the sketch pass here.
 
 ### Lecture 12: Meteorites, Asteroids, Minor Planets & Comets
 
@@ -356,7 +356,7 @@ Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–
 - Recent mission bonanza (OSIRIS-REx, Hayabusa2, DART, Lucy, Psyche, Rosetta) + upcoming (Hera, Comet Interceptor, LSST) are transforming the field
 - Interstellar visitors connect solar system science directly to exoplanets (forward to L13/L14)
 
-- **Length budget (2026-09-10):** deck 49 frames (from 84; 45 after the cut, then figures added to concept frames), notes about 8100 words (from 12019), board sheet 5 live steps; the closing item is the interstellar visitors.
+- **Length budget (2026-09-10):** deck 49 frames (from 84; 45 after the cut, then figures added to concept frames), notes about 8100 words (from 12019), board sheet 5 live steps; the closing item is the interstellar visitors. Round 2 (2026-09-11): four notes figures that the deck lacked and three sketches (CAI and chondrule timeline, petrographic and shock scales, oxygen three-isotope plot) as hero frames; deck 56 frames with 41 figure frames, notes 46 figures; the frame target stays at about 70 and the decision of 2026-09-11 stops the sketch pass here.
 
 ### Lecture 13: Exoplanets, Detection Methods, Demographics & Characterisation
 
@@ -411,7 +411,7 @@ Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–
   - Slide B (direct imaging of Earth analogues, 2030s–2040s): HWO (NASA, ~6 m coronagraph, ~25 nearby sun-like stars), LIFE (ESA concept, mid-IR nulling interferometer), ELT/GMT/TMT (ground-based, first light 2028–2030s)
 - Open-ended question: what combination of evidence would constitute convincing life detection? Forward reference to L14
 
-- **Length budget (2026-09-10):** deck 52 frames (from 85; 46 after the cut, then figures added to concept frames), notes about 7900 words (from 11549), board sheet 5 live steps; the closing item is the frontier missions of the 2030s on one hero frame; Worksheet 7 drops its direct-imaging and Drake problem and three parts (4 problems, 13 parts).
+- **Length budget (2026-09-10):** deck 52 frames (from 85; 46 after the cut, then figures added to concept frames), notes about 7900 words (from 11549), board sheet 5 live steps; the closing item is the frontier missions of the 2030s on one hero frame; Worksheet 7 drops its direct-imaging and Drake problem and three parts (4 problems, 13 parts). Round 2 (2026-09-11): five notes figures that the deck lacked and four sketches (radial-velocity amplitudes, astrometric amplitude, microlensing light curve, transit timing variations) as hero frames; deck 61 frames with 42 figure frames, notes 47 figures; the frame target stays at about 70 and the decision of 2026-09-11 stops the sketch pass here.
 
 ### Lecture 14: Synthesis, Solar System in Context & Astrobiology
 
@@ -475,7 +475,7 @@ Capstone synthesis lecture. Unlike L9–L13, the structure is integration-first 
 
 ---
 
-- **Length budget (2026-09-10):** deck 53 frames (from 72; 41 after the cut, then figures added to concept frames and five course-original sketches), notes about 8000 words (from 9927), board sheet 5 live steps; the closing item is the TRAPPIST-1 b eclipse on one hero frame.
+- **Length budget (2026-09-10):** deck 53 frames (from 72; 41 after the cut, then figures added to concept frames and five course-original sketches), notes about 8000 words (from 9927), board sheet 5 live steps; the closing item is the TRAPPIST-1 b eclipse on one hero frame. Round 2 (2026-09-11): four notes figures that the deck lacked as hero frames; deck 57 frames with 39 figure frames, notes 41 figures; the frame target stays at about 70 and the decision of 2026-09-11 stops the sketch pass here.
 
 
 ## 3. Worksheets
