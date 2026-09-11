@@ -408,7 +408,7 @@ Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–
   - Slide B (direct imaging of Earth analogues, 2030s–2040s): HWO (NASA, ~6 m coronagraph, ~25 nearby sun-like stars), LIFE (ESA concept, mid-IR nulling interferometer), ELT/GMT/TMT (ground-based, first light 2028–2030s)
 - Open-ended question: what combination of evidence would constitute convincing life detection? Forward reference to L14
 
-- **Length budget (2026-09-10):** deck 46 frames (from 85), notes about 7900 words (from 11549), board sheet 5 live steps; the closing item is the frontier missions of the 2030s on one hero frame; Worksheet 7 drops its direct-imaging and Drake problem and three parts (4 problems, 13 parts).
+- **Length budget (2026-09-10):** deck 52 frames (from 85; 46 after the cut, then figures added to concept frames), notes about 7900 words (from 11549), board sheet 5 live steps; the closing item is the frontier missions of the 2030s on one hero frame; Worksheet 7 drops its direct-imaging and Drake problem and three parts (4 problems, 13 parts).
 
 ### Lecture 14: Synthesis, Solar System in Context & Astrobiology
 
