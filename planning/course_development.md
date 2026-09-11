@@ -91,6 +91,8 @@ Each week consists of:
 
 ### Lecture 3: Planetary Heat & Energy Transport
 
+- **Length budget (2026-09-11):** deck 70 frames (from 94; the 17 hero-and-walkthrough pairs merged into captioned heroes, 12 text frames merged into 5, the closing section on one hero and one missions frame), notes 33 figures (from 28; five course-original sketches for the subsections that had none, prose unchanged), Worksheet 2 and Mini-lecture 2 untouched.
+
 - Energy sources: accretional heating, gravitational differentiation, radioactive decay, tidal heating
 - Heat transport mechanisms: conduction, convection, radiation
 - **Blackboard derivation (~10 min):** Derive the conductive cooling timescale τ ∼ L²/κ from the heat diffusion equation, and apply it to estimate cooling times for bodies of different sizes (asteroid vs. Moon vs. Earth)
