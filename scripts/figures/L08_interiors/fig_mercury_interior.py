@@ -67,7 +67,7 @@ def leader(ax, r_mid: float, phi_deg: float, xtext: float, ytext: float,
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(8.0, 6.0))
+    fig, ax = plt.subplots(figsize=(6.80, 5.10))
 
     # Discs from outside in; each overlays the previous.
     ring(ax, R_SURFACE, C_CRUST)               # crust (outer skin)
@@ -90,7 +90,7 @@ def make_plot() -> Path:
 
     # Whole-core statistics, scoped to the entire iron core (all three
     # sub-layers), kept off the liquid-layer leader so the two are not conflated.
-    ax.text(-1.12, 1.05, "Iron core (all layers):\n~83% R, ~74% mass",
+    ax.text(1.55, -1.02, "Iron core (all layers):\n~83% R, ~74% mass",
             ha="left", va="top", fontsize=10, color="0.15")
 
     ax.set_title("Mercury's interior structure (post-MESSENGER model)",

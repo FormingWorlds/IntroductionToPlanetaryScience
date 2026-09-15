@@ -260,7 +260,7 @@ def annotate_shadow(ax, text: str, degrees: float) -> None:
 
 def make_plot() -> Path:
     apply_style()
-    fig, axes = plt.subplots(1, 2, figsize=(13.0, 5.8))
+    fig, axes = plt.subplots(1, 2, figsize=(11.05, 4.93))
     d_direct_p, d_caustic = panel_p(axes[0])
     d_direct_s = panel_s(axes[1])
 

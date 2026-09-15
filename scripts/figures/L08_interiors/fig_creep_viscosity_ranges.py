@@ -21,7 +21,7 @@ OUT_AVIF = REPO_ROOT / "book/08_interiors/figures/creep_viscosity_ranges.avif"
 def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
-    fig, ax = plt.subplots(figsize=(8.8, 4.4))
+    fig, ax = plt.subplots(figsize=(7.48, 3.74))
 
     # Note text above the two rows
     ax.text(
@@ -98,7 +98,7 @@ def make_plot() -> plt.Figure:
     ax.set_title("Mantle viscosity by creep mechanism", fontsize=11)
 
     fig.tight_layout()
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

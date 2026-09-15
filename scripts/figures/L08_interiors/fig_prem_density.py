@@ -78,7 +78,7 @@ def label_layers(ax: plt.Axes) -> None:
             fontsize=9, color="black")
     ax.text(0.5 * (R_ICB + R_CMB), 6800.0, "Outer core", ha="center",
             va="center", fontsize=9, color="black")
-    ax.text(0.5 * (R_CMB + R_EARTH), 6800.0, "Mantle", ha="center",
+    ax.text(5800.0, 6800.0, "Mantle", ha="center",
             va="center", fontsize=9, color="black")
     ax.text(R_ICB, 1500.0, "ICB\n1221 km", ha="center", va="center",
             fontsize=8, color="black")
@@ -90,8 +90,8 @@ def annotate_transitions(ax: plt.Axes) -> None:
     """Point at the 410 and 660 km phase-transition steps."""
     ax.annotate("410 and 660 km\ndiscontinuities",
                 xy=(0.5 * (R_660 + R_410), 4050.0),
-                xytext=(4550.0, 2100.0),
-                ha="center", va="center", fontsize=8, color="black",
+                xytext=(3700.0, 8600.0),
+                ha="left", va="center", fontsize=8, color="black",
                 arrowprops=dict(arrowstyle="-", color="0.35", lw=0.8,
                                 shrinkA=4, shrinkB=4))
 
@@ -99,7 +99,7 @@ def annotate_transitions(ax: plt.Axes) -> None:
 def make_plot() -> Path:
     """Render the figure and write it to `OUT_AVIF`."""
     apply_style()
-    fig, ax = plt.subplots(figsize=(5.4, 4.4))
+    fig, ax = plt.subplots(figsize=(3.89, 3.17))
 
     r, rho = density_profile()
     draw_layers(ax)

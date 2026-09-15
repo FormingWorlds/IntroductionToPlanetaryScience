@@ -85,7 +85,7 @@ def aw_integrate(z_km, rho_start, debug_label=""):
 
 def make_plot() -> Path:
     apply_style()
-    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(11.5, 5.5))
+    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(9.78, 4.67))
 
     # Panel (a): lower mantle 771 - 2741 km
     z_a = np.linspace(771, 2741, 240)
@@ -174,7 +174,7 @@ def make_plot() -> Path:
                  r"$d\ln\rho/dr = -g/\phi$",
                  fontsize=12, y=1.02)
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

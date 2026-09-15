@@ -70,14 +70,14 @@ def uniform_central_pressure(mass: float, radius: float) -> float:
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(5.8, 5.2))
+    fig, ax = plt.subplots(figsize=(4.18, 3.74))
 
     lo, hi = 2.0, 9000.0
     ax.plot([lo, hi], [lo, hi], "--", color=LINE_COLOR, lw=1.2, zorder=1)
     # 1:1 label in the clear region below the line, rotated to match its
     # 45-degree display slope (the axes are square in decades)
     ax.text(600, 320, "1:1", rotation=45, fontsize=10, color=LINE_COLOR,
-            ha="center", va="center")
+            ha="center", va="center", bbox=dict(facecolor="white", edgecolor="none", pad=1.0, alpha=0.9))
 
     for name, (mass, radius, p_model, _src) in BODIES.items():
         p_uni = uniform_central_pressure(mass, radius)
@@ -99,7 +99,7 @@ def make_plot() -> Path:
     ax.set_ylabel("Central pressure from interior models [GPa]")
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

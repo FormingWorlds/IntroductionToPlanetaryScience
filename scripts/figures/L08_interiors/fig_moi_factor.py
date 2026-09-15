@@ -38,7 +38,7 @@ def make_plot() -> Path:
     vals = np.array([b["C_over_MR2"] for b in bodies])
     errs = np.array([b["uncertainty"] for b in bodies])
 
-    fig, ax = plt.subplots(figsize=(10, 5.5))
+    fig, ax = plt.subplots(figsize=(7.20, 3.96))
     x = np.arange(len(bodies))
     colors = cm.viridis(np.linspace(0.85, 0.20, len(bodies)))
 
@@ -69,7 +69,7 @@ def make_plot() -> Path:
         ax.spines[spine].set_visible(False)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

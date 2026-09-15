@@ -75,7 +75,7 @@ def draw_cutaway(ax, cx: float, cy: float, r: float, x: float) -> None:
 def make_plot() -> Path:
     apply_style()
     fig, (ax_l, ax_r) = plt.subplots(
-        1, 2, figsize=(10, 4.4), gridspec_kw={"width_ratios": [1.15, 1.0]})
+        1, 2, figsize=(8.50, 3.74), gridspec_kw={"width_ratios": [1.15, 1.0]})
 
     # Left: three cutaway spheres on a common baseline
     ax_l.set_xlim(-0.2, 6.6)
@@ -120,7 +120,7 @@ def make_plot() -> Path:
         rf"  $f = {F_CONTRAST}$", fontsize=11)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

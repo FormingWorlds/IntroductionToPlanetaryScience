@@ -30,7 +30,7 @@ COLORS = ["#4a6984", "#1f6db8", "#c46b1a", "#2ca25f", "#c0392b"]
 def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
-    fig, ax = plt.subplots(figsize=(8.0, 4.2))
+    fig, ax = plt.subplots(figsize=(5.76, 3.02))
 
     # Bars sorted from 0.400 down: Uniform sphere at top, Earth at bottom
     y_pos = np.arange(len(BODIES))[::-1]
@@ -67,7 +67,7 @@ def make_plot() -> plt.Figure:
              ha="center", va="bottom", fontsize=10, color="0.3")
 
     fig.tight_layout(rect=[0, 0.06, 1, 1])
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

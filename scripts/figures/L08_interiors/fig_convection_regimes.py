@@ -70,7 +70,8 @@ def draw_panel(ax, mode: str) -> None:
     r_label = R_660 - 0.075
     ax.text(r_label * np.cos(np.radians(110)),
             r_label * np.sin(np.radians(110)),
-            "660 km", color="0.4", fontsize=8, ha="center", va="center")
+            "660 km", color="0.4", fontsize=8, ha="center", va="center",
+            bbox=dict(facecolor="white", edgecolor="none", pad=1.0, alpha=0.9))
 
     # Surface label above
     ax.text(0, R_TOTAL + 0.08, "Surface", ha="center", fontsize=9, color="0.3")
@@ -112,7 +113,7 @@ def draw_panel(ax, mode: str) -> None:
 
 def make_plot() -> Path:
     apply_style()
-    fig, axes = plt.subplots(1, 2, figsize=(10.4, 6.0))
+    fig, axes = plt.subplots(1, 2, figsize=(8.84, 5.10))
     draw_panel(axes[0], "whole")
     draw_panel(axes[1], "layered")
     fig.suptitle("Mantle convection regimes", fontsize=12, y=0.98)

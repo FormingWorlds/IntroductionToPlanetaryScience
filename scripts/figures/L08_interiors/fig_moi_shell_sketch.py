@@ -36,7 +36,7 @@ THETA_DEG = 42.0    # colatitude of the mass element, from the rotation axis
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(5.4, 5.6))
+    fig, ax = plt.subplots(figsize=(4.59, 4.76))
     ax.set_xlim(-1.45, 1.45)
     ax.set_ylim(-1.42, 1.55)
     ax.set_aspect("equal")
@@ -58,8 +58,8 @@ def make_plot() -> Path:
     ax.annotate("", xy=(0.25, 1.24), xytext=(0.22, 1.19),
                 arrowprops=dict(arrowstyle="->", color=AXIS_COLOR, lw=1.1))
     ax.text(0.32, 1.30, r"$\omega$", fontsize=13, color=AXIS_COLOR)
-    ax.text(-0.08, 1.08, "rotation axis", fontsize=9, color=AXIS_COLOR,
-            ha="right")
+    ax.text(-0.12, 1.20, "rotation axis", fontsize=9, color=AXIS_COLOR,
+            ha="right", va="center")
 
     # Mass element dm on the shell mid-line at colatitude theta
     th = np.deg2rad(THETA_DEG)
@@ -67,8 +67,8 @@ def make_plot() -> Path:
     ex, ey = r_mid * np.sin(th), r_mid * np.cos(th)
     ax.plot(ex, ey, "o", color=ELEMENT_COLOR, ms=9, zorder=5)
     # label placed outside the shell ring, in the clear band below the surface
-    ax.annotate(r"$dm$", (ex + 0.09, ey + 0.07), fontsize=12,
-                color=ELEMENT_COLOR, zorder=5)
+    ax.annotate(r"$dm$", (ex + 0.10, ey + 0.09), fontsize=12,
+                color=ELEMENT_COLOR, zorder=5, bbox=dict(facecolor="white", edgecolor="none", pad=1.0, alpha=0.9))
 
     # Radius vector r, colatitude arc theta, perpendicular distance r_perp
     ax.plot([0, ex], [0, ey], color="black", lw=1.2, zorder=4)
@@ -101,7 +101,7 @@ def make_plot() -> Path:
             fontsize=11, ha="center", va="top")
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

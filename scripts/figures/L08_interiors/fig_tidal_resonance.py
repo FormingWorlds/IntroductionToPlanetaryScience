@@ -48,9 +48,10 @@ def panel_a(ax) -> None:
     # at +x, Europa at +y direction from periapsis line, Ganymede at -y)
     moon_angles_deg = [0, -10, 80]  # arbitrary positions for visual
     # Default label offset is up and to the right of the moon marker;
-    # Europa's default spot sits on the Ganymede orbit circle, so it
-    # gets pulled down and clear instead
-    label_offsets = {"Europa": (-0.02, -0.15)}
+    # Europa and Ganymede sit close enough to the Ganymede orbit ring
+    # that the default spot lands on it, so both get a wider, ring-clearing
+    # offset instead
+    label_offsets = {"Europa": (0.55, -0.35), "Ganymede": (0.22, 0.07)}
     for (name, _, color), R, theta in zip(MOON_PERIODS, ORBIT_RADII,
                                             moon_angles_deg):
         # Orbit circle
@@ -64,15 +65,15 @@ def panel_a(ax) -> None:
         dx, dy = label_offsets.get(name, (0.1, 0.05))
         ax.text(x + dx, y + dy, name, fontsize=11, va="center")
 
-    ax.set_xlim(-1.7, 1.9)
-    ax.set_ylim(-1.7, 1.9)
+    ax.set_xlim(-1.7, 2.3)
+    ax.set_ylim(-1.9, 1.9)
     ax.set_aspect("equal")
     ax.axis("off")
     ax.set_title("Laplace resonance (Io-Europa-Ganymede)", fontsize=11,
                  weight="bold", loc="left")
     ax.text(0.0, 1.7, "(a) Orbital configuration (not to scale)",
             ha="center", fontsize=10, color="0.4")
-    ax.text(0.0, -1.6,
+    ax.text(0.0, -1.8,
             r"Mean-motion commensurability:  $n_{\rm Io} : n_{\rm Eur} : n_{\rm Gan} = 4 : 2 : 1$",
             ha="center", fontsize=10, color="0.2")
 
@@ -100,14 +101,14 @@ def panel_b(ax) -> None:
 
 def make_plot() -> Path:
     apply_style()
-    fig, axes = plt.subplots(1, 2, figsize=(13, 5.5),
+    fig, axes = plt.subplots(1, 2, figsize=(11.05, 4.67),
                               gridspec_kw={"width_ratios": [1.0, 1.4]})
     panel_a(axes[0])
     panel_b(axes[1])
     fig.suptitle("Tidal resonance geometry sustaining icy-moon oceans",
                  fontsize=12, y=1.0)
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

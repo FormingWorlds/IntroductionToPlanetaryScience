@@ -31,16 +31,16 @@ OUT_AVIF = REPO_ROOT / "book/08_interiors/figures/mantle_phase_diagram.avif"
 BOUNDARIES = [
     {"name": "Olivine -> Wadsleyite",
      "T0": 1750.0, "P0": 14.0, "slope_MPa_K": +2.5,
-     "depth_label": "410 km"},
+     "depth_label": "410 km", "label_dP": 2.5},
     {"name": "Wadsleyite -> Ringwoodite",
      "T0": 1900.0, "P0": 18.0, "slope_MPa_K": +4.0,
-     "depth_label": "520 km"},
+     "depth_label": "520 km", "label_dP": 1.0},
     {"name": "Ringwoodite -> Bridgmanite + Ferropericlase",
      "T0": 1900.0, "P0": 24.0, "slope_MPa_K": -2.5,
-     "depth_label": "660 km"},
+     "depth_label": "660 km", "label_dP": -1.5},
     {"name": "Bridgmanite -> Post-perovskite",
      "T0": 2500.0, "P0": 125.0, "slope_MPa_K": +8.0,
-     "depth_label": "D\" ($\\sim$2700 km)"},
+     "depth_label": "D\" ($\\sim$2700 km)", "label_dP": 0.0},
 ]
 
 # Approximate adiabatic geotherm anchor points (T_K, P_GPa)
@@ -50,16 +50,16 @@ GEOTHERM_P = np.array([0,    14,   24,   60,   100,  130,  135])
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(8.5, 7.0))
+    fig, ax = plt.subplots(figsize=(6.12, 5.04))
 
     T = np.linspace(1000, 4500, 400)
     for b in BOUNDARIES:
         # Clapeyron line: P(T) = P0 + (slope / 1000) * (T - T0); slope MPa/K -> GPa/K
         P_line = b["P0"] + (b["slope_MPa_K"] / 1000.0) * (T - b["T0"])
         ax.plot(T, P_line, color="black", lw=1.4)
-        # Right-side depth label
-        ax.text(T[-1] + 30, P_line[-1], b["depth_label"], color="0.4",
-                fontsize=9, va="center")
+        # Right-side depth label, nudged in pressure where line ends crowd
+        ax.text(T[-1] + 30, P_line[-1] + b["label_dP"], b["depth_label"],
+                color="0.4", fontsize=9, va="center")
 
     # Geotherm
     ax.plot(GEOTHERM_T, GEOTHERM_P, color="#d62728", lw=2.0, linestyle="--",
@@ -70,14 +70,20 @@ def make_plot() -> Path:
     ax.text(1620, 4, r"Olivine ($\alpha$-Mg$_2$SiO$_4$)", fontsize=10)
     # The wadsleyite field is too thin for an in-field label, so the
     # label sits in the olivine field with a leader arrow into the strip.
-    ax.annotate(r"Wadsleyite ($\beta$)", xy=(2700, 18.8), xytext=(3100, 6.5),
+    # The text anchor sits clear of the olivine label to its left.
+    ax.annotate(r"Wadsleyite ($\beta$)", xy=(2700, 18.8), xytext=(3260, 6.5),
                 fontsize=10, ha="center", va="center",
                 arrowprops=dict(arrowstyle="->", color="0.3", lw=0.8,
                                 shrinkA=2))
-    ax.text(1100, 21, r"Ringwoodite ($\gamma$)", fontsize=10)
-    ax.text(1150, 60, "Bridgmanite + Ferropericlase\n(perovskite-structured)",
+    # The ringwoodite field pinches to a wedge where the three boundary
+    # lines and the geotherm converge, so the label carries a white
+    # halo to stay legible over that crossing.
+    ax.text(1100, 21, r"Ringwoodite ($\gamma$)", fontsize=10,
+            bbox=dict(boxstyle="round,pad=0.25", facecolor="white",
+                      edgecolor="none", alpha=0.9))
+    ax.text(1025, 108.5, "Bridgmanite + Ferropericlase\n(perovskite-structured)",
             fontsize=10, ha="left")
-    ax.text(3150, 138, "Post-perovskite (PPv)", fontsize=10, ha="center")
+    ax.text(3150, 143, "Post-perovskite (PPv)", fontsize=10, ha="center")
 
     ax.invert_yaxis()
     ax.set_xlim(1000, 4500)
@@ -89,7 +95,7 @@ def make_plot() -> Path:
     ax.legend(loc="lower left", frameon=False, fontsize=10)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

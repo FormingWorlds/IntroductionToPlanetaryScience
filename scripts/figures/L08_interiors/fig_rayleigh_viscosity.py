@@ -29,7 +29,7 @@ RA_C = 1e3          # Critical Rayleigh number, Ra_c about 1e3
 def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
-    fig, ax = plt.subplots(figsize=(8.2, 4.6))
+    fig, ax = plt.subplots(figsize=(5.90, 3.31))
 
     # Viscosity range: 1e18 to 1e25 Pa s
     eta = np.logspace(18, 25, 300)
@@ -75,7 +75,7 @@ def make_plot() -> plt.Figure:
     ax.set_title("Convection is decided by the Rayleigh number", fontsize=11)
 
     fig.tight_layout()
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

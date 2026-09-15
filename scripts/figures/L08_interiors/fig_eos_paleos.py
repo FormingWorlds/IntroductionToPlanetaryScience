@@ -133,15 +133,13 @@ PHASE_LABELS = {
 # the default placement where a label would sit on the Earth-centre marker
 POS_FRAC = {
     "mgsio3": {"cold": {"solid-ppv": 0.62}},
-    "water": {"cold": {"solid-ice-X": 0.78},
-              "hot": {"supercritical": 0.25}},
+    "water": {"cold": {"liquid": 0.62, "solid-ice-X": 0.78},
+              "hot": {"supercritical": 0.15}},
 }
 
-# Extra perpendicular clearance in points for labels whose curve bends
-# strongly, where the straight-tangent offset underestimates the gap
-PAD_EXTRA = {
-    "water": {"hot": {"supercritical": 8.0}},
-}
+# Optional extra perpendicular clearance in points, keyed by material and
+# isotherm role; empty when the tangent offset clears every curve
+PAD_EXTRA = {}
 
 
 def _label_runs(ax, iso: dict, color: str, above: bool,
@@ -196,7 +194,7 @@ def _label_runs(ax, iso: dict, color: str, above: bool,
 def make_plot() -> Path:
     apply_style()
     data = json.loads(DATA_FILE.read_text())
-    fig, axes = plt.subplots(1, 3, figsize=(10.8, 3.9))
+    fig, axes = plt.subplots(1, 3, figsize=(9.18, 3.31))
 
     for ax, mat in zip(axes, MATERIALS):
         isos = data["materials"][mat]["isotherms"]
@@ -232,12 +230,13 @@ def make_plot() -> Path:
                     frac_overrides=POS_FRAC.get(mat, {}).get("hot"),
                     pad_overrides=PAD_EXTRA.get(mat, {}).get("hot"))
     axes[0].set_ylabel(r"Density [kg m$^{-3}$]")
-    # above the iron curve at 364 GPa, in the clear upper-left region
-    axes[0].text(P_EARTH_CENTRE / 1e9 * 1.3, 2.4e4, "Earth centre",
+    # clear of the merged iron curves, above the density they reach
+    # at this pressure
+    axes[0].text(P_EARTH_CENTRE / 1e9 * 1.3, 3.3e4, "Earth centre",
                  rotation=90, fontsize=8, color=EARTH_COLOR, va="center")
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

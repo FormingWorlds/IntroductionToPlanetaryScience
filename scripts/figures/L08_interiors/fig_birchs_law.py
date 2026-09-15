@@ -39,7 +39,7 @@ def make_plot() -> Path:
     apply_style()
     data = json.loads(DATA_FILE.read_text())
 
-    fig, ax = plt.subplots(figsize=(8.5, 6.0))
+    fig, ax = plt.subplots(figsize=(6.12, 4.32))
 
     # Trend line
     rho = np.linspace(2.4, 4.6, 100)
@@ -102,7 +102,7 @@ def make_plot() -> Path:
     ax.legend(loc="upper left", frameon=True, fontsize=10)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:
