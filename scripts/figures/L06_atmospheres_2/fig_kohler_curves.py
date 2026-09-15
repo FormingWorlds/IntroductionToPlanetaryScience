@@ -55,18 +55,18 @@ def make_plot() -> Path:
     r_um = np.logspace(-2, 1, 600)
     r = r_um * 1e-6  # m
 
-    fig, ax = plt.subplots(figsize=(8.5, 5.6))
+    fig, ax = plt.subplots(figsize=(6.12, 4.03))
 
     # Pure-water Kelvin curve
     S_kelvin = 1.0 + A / r
     ax.plot(r_um, (S_kelvin - 1.0) * 100, "k--", lw=1.8,
-            label="Pure water (Kelvin / homogeneous)")
+            label="Pure water (Kelvin term)")
 
     # Three CCN masses (literature canonical range, in grams)
     masses_g = [
-        (1e-16, "Small CCN ($m_s = 10^{-16}$ g)", "#9467bd"),
-        (1e-15, "Medium CCN ($m_s = 10^{-15}$ g)", "#1f77b4"),
-        (1e-14, "Large CCN ($m_s = 10^{-14}$ g)", "#2ca02c"),
+        (1e-16, "Small CCN ($10^{-16}$ g)", "#9467bd"),
+        (1e-15, "Medium CCN ($10^{-15}$ g)", "#1f77b4"),
+        (1e-14, "Large CCN ($10^{-14}$ g)", "#2ca02c"),
     ]
     for m_g, label, color in masses_g:
         m_kg = m_g * 1e-3
@@ -85,10 +85,10 @@ def make_plot() -> Path:
                 fontsize=10, ha="left",
                 arrowprops=dict(arrowstyle="-", color="0.4", lw=0.6))
 
-    # Anchor on the visible Kelvin curve just inside the top edge (it leaves
-    # the frame near r = 0.075 um), so the label sits beside the curve it names.
+    # Beside the Kelvin curve, below the legend (the curve leaves the
+    # frame near r = 0.075 um)
     ax.annotate("Kelvin curve\nrises off-frame",
-                xy=(0.082, 1.46), xytext=(0.115, 1.44),
+                xy=(0.135, 0.9), xytext=(0.17, 0.9),
                 color="0.3", fontsize=9, ha="left", va="center",
                 arrowprops=dict(arrowstyle="->", color="0.3", lw=0.6))
 
@@ -103,7 +103,7 @@ def make_plot() -> Path:
     ax.legend(loc="upper right", frameon=True, fontsize=10)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

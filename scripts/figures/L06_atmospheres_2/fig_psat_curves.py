@@ -63,14 +63,14 @@ def make_plot() -> Path:
     apply_style()
     T = np.linspace(80, 600, 600)
 
-    fig, ax = plt.subplots(figsize=(8.5, 5.6))
+    fig, ax = plt.subplots(figsize=(6.12, 4.03))
     for label, M, L, T_ref, P_ref, color, _ in SPECIES:
         ax.plot(T, psat(T, M, L, T_ref, P_ref),
                 color=color, lw=1.8, label=label)
 
     # Ice line at 1 atm
     ax.axhline(101325.0, color="0.5", linestyle=":", lw=0.8)
-    ax.text(580, 1.4e5, "1 atm", color="0.4", fontsize=9, ha="right")
+    ax.text(585, 2.5e5, "1 atm", color="0.4", fontsize=9, ha="right", va="bottom")
 
     # Coloured bands at the bottom for typical condensation T ranges:
     # one lane per species, stacked in list order, so overlapping
@@ -93,7 +93,7 @@ def make_plot() -> Path:
     ax.legend(loc="lower right", frameon=False, fontsize=10)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

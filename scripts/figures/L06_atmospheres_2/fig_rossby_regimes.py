@@ -38,7 +38,7 @@ RO_TORNADO = U_TORNADO / (F_CORIOLIS * L_TORNADO)  # 5000
 def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
-    fig, ax = plt.subplots(figsize=(8.5, 4.8))
+    fig, ax = plt.subplots(figsize=(7.22, 4.08))
 
     # Log-log coordinates: L from 1 m to 10 000 km (1e7 m), U from 0.1 to 100 m/s
     ax.set_xscale("log")
@@ -73,19 +73,20 @@ def make_plot() -> plt.Figure:
     p2 = ax.transData.transform((1.0e6, 100.0))
     angle = np.degrees(np.arctan2(p2[1] - p1[1], p2[0] - p1[0]))
 
-    # Line labels parallel to each constant-Ro line
+    # Line labels on each constant-Ro line, with a white halo
     for ro in ros:
-        l_pt = 0.35 / (ro * F_CORIOLIS)
+        l_pt = 1.2 / (ro * F_CORIOLIS)
         ax.text(
-            l_pt * 0.68,
-            0.52,
+            l_pt,
+            1.2,
             rf"$\mathrm{{Ro}} = {ro:g}$",
             rotation=angle,
             fontsize=10,
             ha="center",
-            va="bottom",
+            va="center",
             color="#4a6984" if ro == 1.0 else "0.35",
             weight="bold" if ro == 1.0 else "normal",
+            bbox=dict(facecolor="white", edgecolor="none", pad=1.0),
             zorder=3,
         )
 

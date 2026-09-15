@@ -80,7 +80,7 @@ def make_plot() -> Path:
     z = np.linspace(0, 20, 200)
     psi = streamfunction(phi, z)
 
-    fig, ax = plt.subplots(figsize=(9.5, 5.5))
+    fig, ax = plt.subplots(figsize=(8.07, 4.67))
 
     levels_pos = np.linspace(0.05, 1.0, 6)
     levels_neg = -levels_pos[::-1]
@@ -91,8 +91,7 @@ def make_plot() -> Path:
                          colors="#a83232", linewidths=1.2,
                          linestyles="--")
 
-    # Tropopause (named in the legend; an in-plot label would sit
-    # under the legend box)
+    # Tropopause (named in the legend)
     ax.axhline(15, color="black", linestyle="--", lw=1.0)
 
     # Flow-direction arrows on the two Hadley cells: poleward aloft,
@@ -116,7 +115,7 @@ def make_plot() -> Path:
                 bbox=dict(facecolor="white", edgecolor="none", pad=2))
 
     ax.set_xlim(-90, 90)
-    ax.set_ylim(0, 18)
+    ax.set_ylim(0, 18.5)
     ax.set_xlabel("Latitude (deg)")
     ax.set_ylabel("Altitude (km)")
     ax.set_xticks(np.arange(-90, 91, 30))
@@ -133,10 +132,10 @@ def make_plot() -> Path:
         Line2D([0], [0], color="black", lw=1.0, linestyle="--",
                label="Tropopause"),
     ]
-    ax.legend(handles=handles, loc="upper right", frameon=True, fontsize=9)
+    ax.legend(handles=handles, loc="upper center", ncol=3, frameon=True, fontsize=9)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

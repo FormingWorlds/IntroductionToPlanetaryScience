@@ -55,7 +55,7 @@ def make_plot() -> Path:
     z = np.array([p[0] for p in PROFILE])
     T = np.array([p[1] for p in PROFILE])
 
-    fig, ax = plt.subplots(figsize=(6.5, 8.5))
+    fig, ax = plt.subplots(figsize=(4.68, 6.12))
 
     # Shading
     ax.axhspan(*CLOUD_DECK, color="#f0e3a8", alpha=0.6, zorder=0,
@@ -88,7 +88,7 @@ def make_plot() -> Path:
     ax.legend(loc="upper right", frameon=True, fontsize=9)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

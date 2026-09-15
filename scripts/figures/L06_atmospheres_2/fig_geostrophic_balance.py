@@ -29,7 +29,7 @@ RED = "#b22222"
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(7.0, 5.2))
+    fig, ax = plt.subplots(figsize=(5.95, 4.42))
 
     # Isobars: low pressure at the top, high pressure at the bottom
     for y in (0.22, 0.78):
@@ -74,7 +74,7 @@ def make_plot() -> Path:
                  fontsize=12)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

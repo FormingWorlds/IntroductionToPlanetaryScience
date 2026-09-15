@@ -37,7 +37,7 @@ DEFLECT_DEG = 25.0  # schematic deflection, exaggerated for clarity
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(7.4, 7.8))
+    fig, ax = plt.subplots(figsize=(6.29, 6.63))
 
     # Earth seen from above the North Pole: centre = pole, rim = equator.
     ax.add_patch(Circle((0, 0), 1.0, facecolor=DISK, edgecolor="black",
@@ -71,9 +71,9 @@ def make_plot() -> Path:
                                  arrowstyle="->", mutation_scale=14,
                                  color=AIM, lw=1.8,
                                  linestyle=(0, (6, 4)), zorder=4))
-    # Label outside the disk on the left, with a leader to the aim line.
+    # Label above the disk on the left, with a leader to the aim line.
     ax.annotate("Aim: straight to target\n(non-rotating Earth)",
-                xy=(0.0, 0.52), xytext=(-1.24, 0.55),
+                xy=(0.0, 0.75), xytext=(-1.05, 0.95),
                 color="0.35", fontsize=9.5, ha="center", va="center", zorder=5,
                 arrowprops=dict(arrowstyle="-", color="0.6", lw=0.7))
 
@@ -126,7 +126,7 @@ def make_plot() -> Path:
                  "(view from above the North Pole)", fontsize=12)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

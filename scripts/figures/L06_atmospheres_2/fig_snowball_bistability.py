@@ -56,7 +56,7 @@ def make_plot(label_states: bool = True) -> Path:
     apply_style()
     T = np.linspace(220, 320, 600)
 
-    fig, ax = plt.subplots(figsize=(8.5, 5.5))
+    fig, ax = plt.subplots(figsize=(6.12, 3.96))
     ax.plot(T, OLR(T), color="#d62728", lw=2.0,
             label=rf"Outgoing longwave $\varepsilon\,\sigma T^4$ ($\varepsilon = {EPSILON_EFF}$)")
     ax.plot(T, absorbed(T), color="#1f77b4", lw=2.0,
@@ -116,7 +116,7 @@ def make_plot(label_states: bool = True) -> Path:
     ax.legend(loc="upper left", frameon=False, fontsize=10)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

@@ -641,10 +641,10 @@ Evolution of solar luminosity over the four geologic eons (Hadean, Archean, Prot
 
 ### The paradox
 
-A 30% reduction in solar luminosity would reduce Earth's effective temperature from 255 K to:
+A 30% reduction in solar luminosity would reduce Earth's equilibrium temperature from 255 K to:
 
 $$
-T_{\mathrm{eff}} = 255 \times (0.71)^{1/4} \approx 234 \text{ K}
+T_{\mathrm{eq}} = 255 \times (0.71)^{1/4} \approx 234 \text{ K}
 $$
 
 Combined with a greenhouse effect similar to today's, this would yield a surface temperature well below freezing: the entire ocean should have been **frozen solid**. Yet geological evidence tells a strikingly different story:
@@ -663,7 +663,7 @@ This contradiction, a faint Sun that should have frozen the Earth versus geologi
 :width: 100%
 :align: center
 
-(a) The faint young Sun paradox: the effective temperature $T_\mathrm{eff} = 255\,(L/L_\odot)^{1/4}$ K for a solar luminosity that rises linearly from 0.70 of today's value at 4.5 Ga (an approximation to the solar evolution), the surface temperature with today's greenhouse warming of 33 K added, and the freezing point at 273 K. In this approximation the surface stays below freezing until about 3.2 Ga, yet zircon oxygen isotopes (4.4 Ga), pillow basalts and sedimentary rocks (3.8 Ga) and stromatolites (3.5 Ga) record liquid water. (b) The proposed warming contributions stacked without numerical values: CO$_2$ at 10 to 1000 times present, biogenic CH$_4$, N$_2$ at 2 to 3 times present, and a lower albedo. Course-original figure.
+(a) The faint young Sun paradox: the equilibrium temperature $T_\mathrm{eq} = 255\,(L/L_\odot)^{1/4}$ K for a solar luminosity that rises linearly from 0.70 of today's value at 4.5 Ga (an approximation to the solar evolution), the surface temperature with today's greenhouse warming of 33 K added, and the freezing point at 273 K. In this approximation the surface stays below freezing until about 3.2 Ga, yet zircon oxygen isotopes (4.4 Ga), pillow basalts and sedimentary rocks (3.8 Ga) and stromatolites (3.5 Ga) record liquid water. (b) The proposed warming contributions stacked without numerical values: CO$_2$ at 10 to 1000 times present, biogenic CH$_4$, N$_2$ at 2 to 3 times present, and a lower albedo. Course-original figure.
 ```
 
 ### Possible solutions

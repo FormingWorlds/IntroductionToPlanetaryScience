@@ -23,7 +23,7 @@ def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
     fig, (ax1, ax2) = plt.subplots(
-        1, 2, figsize=(9.0, 4.2), gridspec_kw={"width_ratios": [1.15, 1.0]}
+        1, 2, figsize=(7.65, 3.57), gridspec_kw={"width_ratios": [1.15, 1.0]}
     )
 
     # (a) The faint young Sun paradox
@@ -35,13 +35,13 @@ def make_plot() -> plt.Figure:
     ax1.axhspan(185, 273, facecolor="#e8f1fa", alpha=0.6, zorder=0)
     ax1.axhline(273, color="#4a6984", linestyle="--", lw=1.2, label="Freezing point (273 K)")
 
-    ax1.plot(time, T_surf, color="#c0392b", lw=2.0, label=r"Surface $T$ ($T_{\mathrm{eff}} + 33\ \mathrm{K}$)")
-    ax1.plot(time, T_eff, color="#1f6db8", lw=2.0, label=r"Effective $T_{\mathrm{eff}} = 255\ (L/L_\odot)^{1/4}\ \mathrm{K}$")
+    ax1.plot(time, T_surf, color="#c0392b", lw=2.0, label=r"Surface $T = T_{\mathrm{eq}} + 33\ \mathrm{K}$")
+    ax1.plot(time, T_eff, color="#1f6db8", lw=2.0, label=r"Equilibrium $T_{\mathrm{eq}}$")
 
     evidence = [
-        (4.4, "zircon oxygen\nisotopes (4.4 Ga)", 196),
-        (3.8, "pillow basalts and\nsedimentary rocks (3.8 Ga)", 214),
-        (3.5, "stromatolites (3.5 Ga)", 228),
+        (4.4, "zircon oxygen\nisotopes (4.4 Ga)", 187),
+        (3.8, "pillow basalts and\nsedimentary rocks (3.8 Ga)", 203),
+        (3.5, "stromatolites (3.5 Ga)", 221),
     ]
     for age, label, y_pos in evidence:
         ax1.plot(age, 185, "^", color="#2ca25f", markersize=7, clip_on=False, zorder=5)
@@ -57,11 +57,11 @@ def make_plot() -> plt.Figure:
         )
 
     ax1.set_xlim(4.8, -0.1)
-    ax1.set_ylim(185, 322)
+    ax1.set_ylim(185, 335)
     ax1.set_xlabel("Time before present (Ga)", fontsize=10)
     ax1.set_ylabel("Temperature (K)", fontsize=10)
     ax1.set_title("(a) The faint young Sun paradox", fontsize=11)
-    ax1.legend(loc="upper left", frameon=False, fontsize=9)
+    ax1.legend(loc="upper right", frameon=False, fontsize=9)
 
     # (b) Proposed solutions
     ax2.set_xlim(-0.2, 9.5)

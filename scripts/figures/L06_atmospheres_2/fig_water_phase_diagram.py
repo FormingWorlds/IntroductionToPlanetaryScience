@@ -51,7 +51,7 @@ def cc_curve(T: np.ndarray, T_anchor: float, P_anchor: float, L: float) -> np.nd
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(8.5, 6.0))
+    fig, ax = plt.subplots(figsize=(6.12, 4.32))
 
     # Liquid-vapour (vaporisation): triple point to critical point.
     T_lv = np.linspace(T_TP, T_CRIT, 400)
@@ -78,7 +78,7 @@ def make_plot() -> Path:
     ax.plot(T_sl[-1], P_sl[-1], "o", color="black", ms=6, mfc="white",
             mew=1.2, zorder=5)
     ax.annotate("Ice Ih field ends near 0.2 GPa;\nhigh-pressure ice phases\nnot shown",
-                xy=(T_sl[-1], P_sl[-1]), xytext=(480, 9.5e8),
+                xy=(T_sl[-1], P_sl[-1]), xytext=(285, 7e8),
                 fontsize=8.5, color="0.35", ha="left", va="top",
                 arrowprops=dict(arrowstyle="-", color="0.5", lw=0.6))
 
@@ -92,8 +92,8 @@ def make_plot() -> Path:
     # Critical point
     ax.plot(T_CRIT, P_CRIT, "o", color="#d62728", ms=8, zorder=5)
     ax.annotate(f"Critical point\n({T_CRIT:.0f} K, {P_CRIT/1e6:.1f} MPa)",
-                xy=(T_CRIT, P_CRIT), xytext=(T_CRIT - 200, P_CRIT * 1.5),
-                fontsize=10, color="#d62728", ha="right",
+                xy=(T_CRIT, P_CRIT), xytext=(T_CRIT - 120, P_CRIT / 40),
+                fontsize=10, color="#d62728", ha="left", va="top",
                 arrowprops=dict(arrowstyle="-", color="0.4", lw=0.6))
 
     # Earth surface
@@ -104,7 +104,7 @@ def make_plot() -> Path:
     # Region labels
     ax.text(220, 1e4, "ICE", color="0.5", fontsize=14, weight="bold",
             ha="center", va="center")
-    ax.text(310, 1e6, "LIQUID", color="#1f4e79", fontsize=14, weight="bold",
+    ax.text(335, 3e6, "LIQUID", color="#1f4e79", fontsize=14, weight="bold",
             ha="center", va="center")
     ax.text(450, 1e3, "VAPOUR", color="#1f6b3b", fontsize=14, weight="bold",
             ha="center", va="center")
@@ -119,7 +119,7 @@ def make_plot() -> Path:
     ax.legend(loc="lower right", frameon=True, fontsize=9)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:
