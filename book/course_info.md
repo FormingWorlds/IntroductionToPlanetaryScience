@@ -20,7 +20,7 @@ The official course catalogue entry is maintained in [Ocasys](https://ocasys.rug
 | **Coordinator and lecturer** | dr. [Tim Lichtenberg](https://timlichtenberg.net/) |
 | **Guest lecturer** | dr. [Mara Attia](https://maraattia.github.io/) (they/them), Atmospheres I and II |
 | **Teaching assistants** | [Mariana Sastre](https://planetmariana.github.io/), [Emma Postolec](https://research.rug.nl/en/persons/emma-postolec), [Soumil Kelkar](https://research.rug.nl/en/persons/soumil-kelkar), [Imre Kisvárdai](https://research.rug.nl/en/persons/imre-kisvardai) |
-| **Timetable** | [rooster.rug.nl](https://rooster.rug.nl/2026-2027?courseOffering=195171) |
+| **Timetable** | [rooster.rug.nl](https://rooster.rug.nl/2026-2027?courseOffering=WBAS002-05.2026-2027.1) |
 | **Contact** | [tim.lichtenberg@rug.nl](mailto:tim.lichtenberg@rug.nl) |
 | **Tutorial and worksheet questions** | [ips-tas-2026@formingworlds.space](mailto:ips-tas-2026@formingworlds.space) |
 
