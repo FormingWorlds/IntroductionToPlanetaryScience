@@ -65,7 +65,7 @@ def panel_a(ax: plt.Axes) -> None:
                 xytext=(1.3, 0.45), ha="left", va="center",
                 arrowprops=ARROW, **LABEL)
     ax.annotate("shock waves\n" + r"($P \sim 100$ GPa)", xy=(0.92, -0.92),
-                xytext=(1.5, -1.55), ha="left", va="center",
+                xytext=(1.3, -1.8), ha="center", va="center",
                 arrowprops=ARROW, **LABEL)
     ax.text(-2.9, -2.0, "target", ha="left", va="center", **LABEL)
 
@@ -106,16 +106,16 @@ def panel_b(ax: plt.Axes) -> None:
     ax.add_patch(FancyArrowPatch((0.0, 0.0), (0.0, -depth),
                                  arrowstyle="<->", mutation_scale=9,
                                  color=INK, lw=0.9, zorder=6))
-    ax.text(0.0, 0.76, r"depth $\approx D/3$", ha="center", va="center", **LABEL)
-    ax.text(0.0, 1.05, "transient cavity", ha="center", va="center", **LABEL)
+    ax.text(0.0, 0.80, r"depth $\approx D/3$", ha="center", va="center", **LABEL)
+    ax.text(0.0, 1.12, "transient cavity", ha="center", va="center", **LABEL)
     ax.text(-2.95, 1.6, "ejecta curtain\n(ballistic paths)", ha="left",
             va="center", **LABEL)
     ax.text(2.95, 1.6, "ejecta\nblanket", ha="right", va="center", **LABEL)
     ax.annotate("shock front", xy=(-1.34, -1.34), xytext=(-2.95, -2.05),
                 ha="left", va="center", arrowprops=ARROW, **LABEL)
     ax.annotate("rarefaction wave\n(decompression)", xy=(0.99, -0.99),
-                xytext=(2.95, -1.95), ha="right", va="center",
-                arrowprops=ARROW, **LABEL)
+                xytext=(3.25, -2.05), ha="right", va="center",
+                arrowprops={**ARROW, "relpos": (1.0, 1.0)}, **LABEL)
 
 
 def panel_c(ax: plt.Axes) -> None:
@@ -148,11 +148,12 @@ def panel_c(ax: plt.Axes) -> None:
                 ha="left", va="center", arrowprops=ARROW, **LABEL)
     ax.annotate("slumped debris", xy=(-1.5, -0.5), xytext=(-1.5, -1.7),
                 ha="center", va="center", arrowprops=ARROW, **LABEL)
-    ax.annotate("terraces", xy=(0.9, -0.18), xytext=(0.45, 1.0),
-                ha="left", va="center", arrowprops=ARROW, **LABEL)
+    ax.annotate("terraces", xy=(0.7, -0.05), xytext=(0.45, 1.0),
+                ha="left", va="center",
+                arrowprops={**ARROW, "relpos": (0.0, 0.5)}, **LABEL)
     ax.annotate("central peak\n(floor rebound)", xy=(1.85, -0.08),
                 xytext=(2.95, 0.45), ha="right", va="center",
-                arrowprops=ARROW, **LABEL)
+                arrowprops={**ARROW, "relpos": (0.0, 0.0)}, **LABEL)
     ax.annotate("flat floor", xy=(2.2, -0.5), xytext=(2.2, -1.7),
                 ha="center", va="center", arrowprops=ARROW, **LABEL)
 
@@ -160,12 +161,12 @@ def panel_c(ax: plt.Axes) -> None:
 def make_plot() -> plt.Figure:
     """Build the three-panel figure, save it and return it."""
     apply_style()
-    fig, axes = plt.subplots(1, 3, figsize=(10.5, 3.9))
+    fig, axes = plt.subplots(1, 3, figsize=(8.92, 3.31))
     panel_a(axes[0])
     panel_b(axes[1])
     panel_c(axes[2])
     fig.subplots_adjust(left=0.01, right=0.99, top=0.9, bottom=0.02, wspace=0.05)
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

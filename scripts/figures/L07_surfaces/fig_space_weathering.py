@@ -70,7 +70,7 @@ def panel_a(ax: plt.Axes) -> None:
     for dx, dy in ((6.6, 5.2), (6.9, 5.7), (7.5, 5.8), (7.9, 5.3), (7.1, 4.9)):
         ax.plot([7.3, dx], [4.05, dy], color=SPLASH, lw=1.0, ls=":", zorder=4)
         ax.add_patch(Circle((dx, dy), 0.07, facecolor=SPLASH, edgecolor="none", zorder=5))
-    ax.text(6.55, 5.7, "melt splash\nand vapour", ha="right", va="center", fontsize=10, color=SPLASH)
+    ax.text(5.5, 5.85, "melt splash\nand vapour", ha="center", va="center", fontsize=10, color=SPLASH)
     # Cosmic ray track through the rim into the host grain
     ax.add_patch(FancyArrowPatch((1.0, 6.9), (1.0, 2.8), arrowstyle="-|>", mutation_scale=10,
                                  color=COSMIC, lw=1.2, ls="-.", zorder=5))
@@ -80,9 +80,9 @@ def panel_a(ax: plt.Axes) -> None:
                 xytext=(0.75, 2.4), ha="left", va="center", fontsize=10, color=EDGE,
                 arrowprops=dict(arrowstyle="->", color=EDGE, lw=0.9))
     ax.annotate("nanophase iron\nblobs (few to\nseveral hundred nm)", xy=(8.9, float(_top(np.array([8.9]))[0]) + 0.4),
-                xytext=(7.0, 1.35), ha="center", va="center", fontsize=10, color="#1a1a1a",
+                xytext=(6.8, 2.1), ha="center", va="center", fontsize=10, color="#1a1a1a",
                 arrowprops=dict(arrowstyle="->", color="#1a1a1a", lw=0.9))
-    ax.text(2.9, 1.4, "crystalline host grain", ha="center", va="center", fontsize=10, color=EDGE)
+    ax.text(5.0, 0.85, "crystalline host grain", ha="center", va="center", fontsize=10, color=EDGE)
 
 
 def panel_b(ax: plt.Axes) -> None:
@@ -115,11 +115,11 @@ def panel_b(ax: plt.Axes) -> None:
 def make_plot() -> plt.Figure:
     """Build the two-panel figure, save it and return it."""
     apply_style()
-    fig, axes = plt.subplots(1, 2, figsize=(9.5, 4.0), gridspec_kw={"width_ratios": [1.15, 1.0]})
+    fig, axes = plt.subplots(1, 2, figsize=(8.07, 3.40), gridspec_kw={"width_ratios": [1.15, 1.0]})
     panel_a(axes[0])
     panel_b(axes[1])
     fig.subplots_adjust(left=0.01, right=0.99, top=0.9, bottom=0.14, wspace=0.12)
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

@@ -81,7 +81,7 @@ def shield_profile(half_width: float, height: float, exponent: float) -> tuple[n
 def make_plot() -> Path:
     """Draw the comparison and write the AVIF."""
     apply_style()
-    fig, ax = plt.subplots(figsize=(10.0, 5.625))
+    fig, ax = plt.subplots(figsize=(8.50, 4.78))
 
     edifices = [
         ("olympus", "Olympus Mons\n(Mars)", OLYMPUS_H, OLYMPUS_FILL, 2.6),
@@ -97,7 +97,7 @@ def make_plot() -> Path:
         ax.annotate(f"{height:.1f} km", xy=(centre, height),
                     xytext=(0, 6), textcoords="offset points",
                     ha="center", va="bottom", fontsize=11, fontweight="bold",
-                    zorder=4)
+                    zorder=4, bbox=dict(facecolor="white", edgecolor="none", pad=1.0, alpha=0.9))
         ax.text(centre, -1.4, label, ha="center", va="top", fontsize=10)
 
     # Guides at the two terrestrial summits, so the comparison is readable
@@ -124,7 +124,7 @@ def make_plot() -> Path:
             ha="right", va="top", fontsize=10.5, style="italic")
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

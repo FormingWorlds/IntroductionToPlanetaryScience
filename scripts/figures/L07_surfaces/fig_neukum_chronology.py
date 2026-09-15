@@ -67,7 +67,7 @@ def make_plot(show_readoff: bool = True) -> Path:
     apply_style()
     t = np.linspace(0.0, 4.5, 900)
 
-    fig, ax = plt.subplots(figsize=(8.4, 5.8))
+    fig, ax = plt.subplots(figsize=(6.05, 4.18))
 
     ax.axvspan(*SAMPLE_GAP, color="#d9a441", alpha=0.16, lw=0)
     ax.axvspan(UNCONSTRAINED_ABOVE, 4.5, color="0.55", alpha=0.16, lw=0)
@@ -99,22 +99,28 @@ def make_plot(show_readoff: bool = True) -> Path:
             fontsize=12, va="center",
             bbox=dict(boxstyle="round,pad=0.35", facecolor="white",
                       edgecolor="0.7", alpha=1.0))
-    ax.text(0.16, 8.6e-2,
+    ax.text(0.16, 5.0e-2,
             f"$a = {_sci(A_EXP)}$ km$^{{-2}}$\n"
             f"$\\lambda = {LAMBDA:g}$ Gyr$^{{-1}}$\n"
             f"$b = {_sci(B_LIN)}$ km$^{{-2}}$ Gyr$^{{-1}}$",
             fontsize=9, va="center", color="0.25")
 
     ax.text(1.22, 4.5e-3, "steady impact flux", fontsize=10, color="0.25")
-    ax.text(3.02, 3.0e-1, "early bombardment", fontsize=10, color="0.25")
+    # Raised clear of the steep rise; the curve only reaches this
+    # height near the right edge of the axis
+    ax.text(3.02, 0.66, "early bombardment", fontsize=10, color="0.25")
 
-    ax.text(2.0, 2.2e-5, "no dated samples", fontsize=9, color="#8a6212",
+    # Both rotated labels start well above the legend, which sits on
+    # a thin shelf just above the axis floor
+    ax.text(2.0, 1.5e-2, "no dated samples", fontsize=9, color="#8a6212",
             rotation=90, ha="center", va="bottom")
-    ax.text(4.21, 2.2e-5, "unconstrained", fontsize=9, color="0.35",
+    ax.text(4.21, 1.0e-4, "unconstrained", fontsize=9, color="0.35",
             rotation=90, ha="center", va="bottom")
 
     if show_readoff:
-        ax.text(0.16, 1.9e-2,
+        # Placed clear of the coefficient list and the steep rise;
+        # the red colour ties it to the dashed read-off lines
+        ax.text(2.15, 5.0e-2,
                 f"measured $N(1) = 10^{{-2}}$ km$^{{-2}}$\n"
                 f"$\\rightarrow T \\approx {t_read:.2f}$ Gyr",
                 fontsize=9.5, color="#b02418", va="bottom")
@@ -122,7 +128,7 @@ def make_plot(show_readoff: bool = True) -> Path:
     ax.legend(loc="lower right", frameon=True, fontsize=9)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

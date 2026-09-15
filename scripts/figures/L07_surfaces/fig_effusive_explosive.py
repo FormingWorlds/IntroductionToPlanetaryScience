@@ -102,17 +102,17 @@ def draw_shield_volcano(ax: plt.Axes) -> None:
 
     ax.annotate("Gas escapes quietly\n"
                 + r"($\mathrm{H_2O}$, $\mathrm{CO_2}$ bubbles)",
-                xy=(-1.1, 2.0), xytext=(2.0, 3.0),
+                xy=(-1.2, 2.5), xytext=(2.0, 3.0),
                 fontsize=10, ha="center", va="center",
                 arrowprops=dict(arrowstyle="->", color="#333333", lw=0.8))
 
     ax.annotate("Gentle slope\n(broad, flat edifice)",
-                xy=(-2.8, 0.7), xytext=(-3.6, 2.0),
+                xy=(-2.8, 0.7), xytext=(-3.6, 2.6),
                 fontsize=10, ha="center", va="bottom",
                 arrowprops=dict(arrowstyle="->", color="#333333", lw=0.8))
 
     ax.annotate("Fissure\neruption",
-                xy=(1.8, 0.25), xytext=(1.0, 1.2),
+                xy=(1.8, 0.25), xytext=(0.2, 1.4),
                 fontsize=10, ha="center", va="bottom",
                 arrowprops=dict(arrowstyle="->", color="#333333", lw=0.8))
 
@@ -244,11 +244,11 @@ def make_plot() -> plt.Figure:
         The constructed matplotlib figure.
     """
     apply_style()
-    fig, axes = plt.subplots(1, 2, figsize=(9.0, 4.0))
+    fig, axes = plt.subplots(1, 2, figsize=(7.65, 3.40))
     draw_shield_volcano(axes[0])
     draw_stratovolcano(axes[1])
     fig.tight_layout()
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 
