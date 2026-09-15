@@ -70,10 +70,10 @@ def make_plot() -> Path:
         "Forsterite":  (0, 10, "center", "bottom"),
         "Periclase":   (-9, 0, "right", "center"),
         "Ringwoodite": (-8, 14, "center", "bottom"),
-        "Corundum":    (0, 10, "center", "bottom"),
+        "Corundum":    (-4, 9, "right", "bottom"),
     }
     for x, y, n in zip(main_x, main_y, main_n):
-        dx, dy, ha, va = LABEL_OVERRIDE.get(n, (8, 0, "left", "center"))
+        dx, dy, ha, va = LABEL_OVERRIDE.get(n, (10, 0, "left", "center"))
         ax.annotate(n, xy=(x, y), xytext=(dx, dy), textcoords="offset points",
                     fontsize=9, ha=ha, va=va)
 
@@ -87,7 +87,7 @@ def make_plot() -> Path:
         # Annotation arrow showing the offset
         ax.annotate("Higher mean atomic\nmass (Fe-rich)\noffsets the trend",
                     xy=(out_x[0] - 0.05, out_y[0] + 0.2),
-                    xytext=(3.3, 6.35),
+                    xytext=(3.3, 7.0),
                     fontsize=9, color="#7a2a2a", ha="left", va="center",
                     arrowprops=dict(arrowstyle="->", color="#7a2a2a", lw=0.7,
                                     shrinkA=4))
@@ -99,7 +99,8 @@ def make_plot() -> Path:
     ax.set_title(r"Birch's law: $v_P \approx a + b\,\rho$ "
                  "for silicates and oxides")
     ax.grid(linestyle=":", alpha=0.3)
-    ax.legend(loc="upper left", frameon=True, fontsize=10)
+    # The lower right corner is the only region free of points and labels
+    ax.legend(loc="lower right", frameon=True, fontsize=10)
 
     fig.tight_layout()
     return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)

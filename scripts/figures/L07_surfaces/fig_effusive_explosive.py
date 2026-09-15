@@ -223,7 +223,7 @@ def draw_stratovolcano(ax: plt.Axes) -> None:
                 arrowprops=dict(arrowstyle="->", color="#333333", lw=0.8))
 
     ax.annotate("Alternating layers of\nlava and ash",
-                xy=(1.1, 0.9), xytext=(2.0, 1.3),
+                xy=(1.1, 0.9), xytext=(1.5, 1.7),
                 fontsize=10, ha="left", va="center",
                 arrowprops=dict(arrowstyle="->", color="#333333", lw=0.8))
 
@@ -244,7 +244,7 @@ def make_plot() -> plt.Figure:
         The constructed matplotlib figure.
     """
     apply_style()
-    fig, axes = plt.subplots(1, 2, figsize=(7.65, 3.40))
+    fig, axes = plt.subplots(1, 2, figsize=(9.03, 4.02))
     draw_shield_volcano(axes[0])
     draw_stratovolcano(axes[1])
     fig.tight_layout()

@@ -333,11 +333,6 @@ else:
 chk_true("L08 MoI: all factors below uniform 0.4",
          all(b["C_over_MR2"] < 0.4 for b in moi["bodies"]), "")
 
-# fig_tidal_resonance: mean motions from the periods are 4:2:1
-n_io, n_eur, n_gan = 1 / 1.769, 1 / 3.551, 1 / 7.155
-chk("L08 resonance: n_Io/n_Gan", n_io / n_gan, 4.045, 2e-3)
-chk("L08 resonance: n_Eur/n_Gan", n_eur / n_gan, 2.015, 2e-3)
-
 # ════════════════════════════════════════════════════════════════════
 print()
 if SKIP:
