@@ -41,7 +41,7 @@ def make_plot() -> Path:
         Path to the saved AVIF figure file.
     """
     apply_style()
-    fig, ax = plt.subplots(figsize=(7.0, 4.0))
+    fig, ax = plt.subplots(figsize=(5.04, 2.88))
 
     # Altitude coordinate from 0 to 20 km as specified
     z = np.linspace(0.0, 20.0, 400)
@@ -73,7 +73,8 @@ def make_plot() -> Path:
 
     # Tropopause level line and label
     ax.axhline(Z_TROPOPAUSE, color="0.55", linestyle=":", lw=1.0)
-    ax.text(145.0, Z_TROPOPAUSE + 0.3, "tropopause", fontsize=10,
+    # Placed right of the crossing point, clear of the stratospheric curve.
+    ax.text(205.0, Z_TROPOPAUSE + 0.3, "tropopause", fontsize=10,
             color="0.35", va="bottom")
 
     # Stratosphere label in stable radiative region aloft
@@ -83,7 +84,8 @@ def make_plot() -> Path:
     # Convective adjustment annotation with arrow into the adjusted region
     ax.text(145.0, 3.8, "convective adjustment", fontsize=10,
             color="#b22222", va="center")
-    ax.add_patch(FancyArrowPatch((245.0, 3.8), (288.0, 3.8), arrowstyle="->",
+    # Arrow starts clear of the label text before it reaches the shaded band.
+    ax.add_patch(FancyArrowPatch((274.0, 3.8), (310.0, 3.8), arrowstyle="->",
                                  mutation_scale=10, color="#b22222", lw=1.2))
 
     ax.set_xlim(130.0, 430.0)
@@ -99,7 +101,7 @@ def make_plot() -> Path:
               edgecolor="none", fontsize=10)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

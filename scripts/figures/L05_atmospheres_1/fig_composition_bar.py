@@ -71,20 +71,23 @@ def make_plot() -> Path:
     df = pd.read_csv(CSV)
 
     bodies = df["body"].tolist()
-    fig, ax = plt.subplots(figsize=(8, 4.2))
+    fig, ax = plt.subplots(figsize=(5.76, 3.02))
 
     x = np.arange(len(bodies))
     width = 0.65
     bottoms = np.zeros(len(bodies))
+    stack_tops = df[SPECIES].sum(axis=1).to_numpy()
+    value_labels = []
     for i, sp in enumerate(SPECIES):
         vals = df[sp].to_numpy()
         ax.bar(x, vals, width, bottom=bottoms, color=COLORS[i],
                label=LABELS[i], edgecolor="white", linewidth=0.4)
         for j, v in enumerate(vals):
             if v >= LABEL_VALUE_THRESHOLD:
-                ax.text(x[j], bottoms[j] + v / 2.0, f"{v:.1f}%",
-                        ha="center", va="center",
-                        color=text_color_on(COLORS[i]), fontsize=9)
+                label = ax.text(x[j], bottoms[j] + v / 2.0, f"{v:.1f}%",
+                                 ha="center", va="center",
+                                 color=text_color_on(COLORS[i]), fontsize=9)
+                value_labels.append((label, x[j], stack_tops[j]))
         bottoms += vals
 
     ax.set_xticks(x)
@@ -98,7 +101,26 @@ def make_plot() -> Path:
     ax.grid(axis="y", linestyle=":", alpha=0.3)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    _clear_stack_top(fig, ax, value_labels)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
+
+
+def _clear_stack_top(fig, ax, value_labels) -> None:
+    """Nudge a value label down when its own segment leaves no headroom
+    below the top of its stacked bar, so the label stays clear of the
+    plot area above the bar. Labels with headroom are left untouched.
+    """
+    SAFETY_PAD_PX = 4.0
+    fig.canvas.draw()
+    ppu = ax.transData.transform((0, 1))[1] - ax.transData.transform((0, 0))[1]
+    for label, x_pos, stack_top in value_labels:
+        bb = label.get_window_extent()
+        top_px = ax.transData.transform((x_pos, stack_top))[1]
+        overshoot_px = bb.y1 + SAFETY_PAD_PX - top_px
+        if overshoot_px > 0:
+            _, y_pos = label.get_position()
+            label.set_position((x_pos, y_pos - overshoot_px / ppu))
+    fig.canvas.draw()
 
 
 def main() -> None:

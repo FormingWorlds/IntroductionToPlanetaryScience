@@ -75,7 +75,7 @@ def make_plot() -> Path:
     # Sort bodies by computed scale height in ascending order.
     records.sort(key=lambda item: item["H_calc"])
 
-    fig, ax = plt.subplots(figsize=(7.5, 4.0))
+    fig, ax = plt.subplots(figsize=(5.40, 2.88))
 
     y_pos = np.arange(len(records))
     h_values = [r["H_calc"] for r in records]
@@ -85,26 +85,31 @@ def make_plot() -> Path:
     ax.barh(y_pos, h_values, height=0.55, color=colors, edgecolor="black", linewidth=0.6)
 
     # Label each bar with H in km and annotate T, mu, g used.
+    # Offset clears the bar edge; the two lines are spread further
+    # apart vertically so they do not touch each other.
+    label_offset = 1.6
     for y_idx, rec in zip(y_pos, records):
         h = rec["H_calc"]
         temp = int(rec["T"]) if rec["T"].is_integer() else rec["T"]
         mu = rec["mu"]
         g = rec["g"]
-        ax.text(h + 0.5, y_idx - 0.12, f"{h:.1f} km", va="center", ha="left", fontsize=10.5, weight="bold")
+        ax.text(
+            h + label_offset, y_idx - 0.18, f"{h:.1f} km", va="center", ha="left", fontsize=10.5, weight="bold"
+        )
         param_str = rf"($T = {temp}\ \mathrm{{K}},\ \mu = {mu},\ g = {g}\ \mathrm{{m\,s^{{-2}}}}$)"
-        ax.text(h + 0.5, y_idx + 0.15, param_str, va="center", ha="left", fontsize=10, color="#333333")
+        ax.text(h + label_offset, y_idx + 0.20, param_str, va="center", ha="left", fontsize=10, color="#333333")
 
     ax.set_yticks(y_pos)
     ax.set_yticklabels(labels, fontsize=11)
     ax.invert_yaxis()
     ax.set_xlabel(r"Atmospheric scale height $H$ (km)", fontsize=11)
-    ax.set_xlim(0, 44)
+    ax.set_xlim(0, 48)
     ax.set_ylim(len(records) - 0.4, -0.6)
     ax.set_title(r"Atmospheric scale heights: $H = k_\mathrm{B} T / (\mu \, m_u \, g)$", fontsize=12, pad=10)
     ax.grid(axis="x", linestyle=":", alpha=0.3)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

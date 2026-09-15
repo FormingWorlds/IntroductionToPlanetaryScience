@@ -35,7 +35,7 @@ AXIS_X = 0.14
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(6.5, 6.5))
+    fig, ax = plt.subplots(figsize=(5.52, 5.52))
 
     # Ground band and atmosphere column
     ax.add_patch(Rectangle((0, 0.0), 1, 0.10, color=GROUND, alpha=0.85))
@@ -77,19 +77,24 @@ def make_plot() -> Path:
                 ha="left", va="center",
                 arrowprops=dict(arrowstyle="-", color="0.35", lw=0.8))
 
-    # Pressure on the lower face pushes up
+    # Pressure on the lower face pushes up; label sits clear of the
+    # arrow and the weight arrow, tied back with a thin leader line
     ax.add_patch(FancyArrowPatch((0.46, 0.36), (0.46, SLAB_Y0 - 0.005),
                                  arrowstyle="->", mutation_scale=18,
                                  color=BLUE, lw=2.2))
-    ax.text(0.485, 0.42, r"$P(z)\,A$", ha="left", va="center",
-            fontsize=12, color=BLUE)
+    ax.annotate(r"$P(z)\,A$", xy=(0.44, 0.40), xytext=(0.185, 0.40),
+                fontsize=12, color=BLUE, ha="left", va="center",
+                arrowprops=dict(arrowstyle="-", color="0.35", lw=0.8))
 
-    # Pressure on the upper face pushes down
+    # Pressure on the upper face pushes down; this label is wider than
+    # the left margin can hold, so it sits in the open area upper right
     ax.add_patch(FancyArrowPatch((0.46, 0.78), (0.46, SLAB_Y1 + 0.005),
                                  arrowstyle="->", mutation_scale=18,
                                  color=BLUE, lw=2.2))
-    ax.text(0.485, 0.72, r"$P(z + \mathrm{d}z)\,A$", ha="left",
-            va="center", fontsize=12, color=BLUE)
+    ax.annotate(r"$P(z + \mathrm{d}z)\,A$", xy=(0.46, 0.75),
+                xytext=(0.70, 0.85), fontsize=12, color=BLUE,
+                ha="left", va="center",
+                arrowprops=dict(arrowstyle="-", color="0.35", lw=0.8))
 
     # Weight of the slab acts down from its centre
     ax.add_patch(FancyArrowPatch((0.58, 0.565), (0.58, 0.40),
@@ -103,7 +108,7 @@ def make_plot() -> Path:
     ax.set_aspect("equal")
     ax.axis("off")
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

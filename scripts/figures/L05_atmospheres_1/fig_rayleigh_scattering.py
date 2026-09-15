@@ -175,11 +175,11 @@ def panel_b(ax) -> None:
 
 def make_plot() -> Path:
     apply_style()
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4.8))
+    fig, axes = plt.subplots(1, 2, figsize=(9.35, 4.08))
     panel_a(axes[0])
     panel_b(axes[1])
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

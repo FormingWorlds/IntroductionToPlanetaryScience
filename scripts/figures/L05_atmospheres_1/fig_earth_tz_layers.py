@@ -85,7 +85,7 @@ def make_plot() -> Path:
         187.0 + (360.0 - 187.0) * (z_thermo - 85.0) / (120.0 - 85.0),
         thermosphere(z_thermo))
 
-    fig, ax = plt.subplots(figsize=(6.5, 8.5))
+    fig, ax = plt.subplots(figsize=(5.52, 7.22))
 
     # Layer shading
     ax.axhspan(0, 11, color="#fde0e0", alpha=0.4, zorder=0)
@@ -121,7 +121,7 @@ def make_plot() -> Path:
     ax.grid(linestyle=":", alpha=0.3)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

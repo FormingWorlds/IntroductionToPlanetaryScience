@@ -69,7 +69,7 @@ def make_plot() -> Path:
                        T_SFC - GAMMA_MOIST * z_trop)
     T_obs = ussa76(z)
 
-    fig, ax = plt.subplots(figsize=(6.0, 6.5))
+    fig, ax = plt.subplots(figsize=(4.32, 4.68))
     ax.plot(T_dry, z, "k--", lw=1.6,
             label=r"Dry adiabat ($\Gamma_d = g/c_p \approx 9.8$ K km$^{-1}$)")
     ax.plot(T_moist, z, ":", lw=2.0, color="#1f77b4",
@@ -78,8 +78,11 @@ def make_plot() -> Path:
             label="US Standard Atmosphere 1976")
 
     ax.axhline(z_trop, color="0.7", linestyle=":", lw=0.8)
-    ax.text(298, z_trop + 0.2, "tropopause", color="0.5",
-            fontsize=9, ha="right")
+    # Label sits clear above the marker line and the two vertical
+    # curves; a short leader ties it back to the tropopause level.
+    ax.annotate("tropopause", xy=(240, z_trop), xytext=(298, 14.6),
+                ha="right", va="center", color="0.5", fontsize=9,
+                arrowprops=dict(arrowstyle="-", color="0.6", lw=0.6))
 
     ax.set_xlim(150, 305)
     ax.set_ylim(0, 18)
@@ -87,12 +90,13 @@ def make_plot() -> Path:
     ax.set_ylabel("Altitude (km)")
     ax.set_title("Dry vs moist adiabatic lapse rates (Earth)")
     ax.grid(linestyle=":", alpha=0.3)
-    # Lower left is the one empty quadrant: all three profiles stay
-    # above 239 K below 5 km, clear of the legend's footprint
-    ax.legend(loc="lower left", frameon=False, fontsize=9)
+    # Legend sits below the axes so it never overlaps any of the
+    # three profiles, which fill the entire plotted region.
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.14),
+              frameon=False, fontsize=9)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

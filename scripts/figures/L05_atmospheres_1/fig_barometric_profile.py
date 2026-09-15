@@ -77,13 +77,13 @@ def panel_a(ax: plt.Axes) -> None:
                 xytext=(1.4, 0.52), fontsize=10,
                 arrowprops=dict(arrowstyle="->", color="0.4", lw=0.8))
     ax.annotate(r"$z = 2H$ (0.135)", xy=(2.0, np.exp(-2.0)),
-                xytext=(2.3, 0.34), fontsize=10,
+                xytext=(2.4, 0.40), fontsize=10,
                 arrowprops=dict(arrowstyle="->", color="0.4", lw=0.8))
     ax.annotate(r"$z = 3H$", xy=(3.0, np.exp(-3.0)),
-                xytext=(3.4, 0.21), fontsize=10,
+                xytext=(3.9, 0.28), fontsize=10,
                 arrowprops=dict(arrowstyle="->", color="0.4", lw=0.8))
     ax.annotate(r"$z = 4.6\,H$" + "\n(99% mass below)", xy=(4.6, np.exp(-4.6)),
-                xytext=(4.3, 0.22), fontsize=10,
+                xytext=(4.2, 0.09), fontsize=10,
                 arrowprops=dict(arrowstyle="->", color="0.4", lw=0.8))
 
     ax.text(2.1, 0.78, "Fraction of column mass\nabove $z$ equals $P(z)/P_0$",
@@ -134,8 +134,8 @@ def panel_b(ax: plt.Axes) -> None:
     ax.annotate(r"$z = 3H$", xy=(3.0, np.exp(-3.0)),
                 xytext=(3.4, 0.055), fontsize=10,
                 arrowprops=dict(arrowstyle="->", color="0.4", lw=0.8))
-    ax.annotate(r"$z = 4.6\,H$" + "\n(99% mass below)", xy=(4.6, np.exp(-4.6)),
-                xytext=(2.3, 0.0021), fontsize=10,
+    ax.annotate(r"$z = 4.6\,H$ (99% mass below)", xy=(4.6, np.exp(-4.6)),
+                xytext=(0.10, 0.0022), fontsize=10,
                 arrowprops=dict(arrowstyle="->", color="0.4", lw=0.8))
 
     ax.set_xlim(0.0, 6.0)
@@ -154,11 +154,11 @@ def make_plot() -> Path:
         Path to the saved AVIF image.
     """
     apply_style()
-    fig, axes = plt.subplots(1, 2, figsize=(9.0, 4.0))
+    fig, axes = plt.subplots(1, 2, figsize=(6.48, 2.88))
     panel_a(axes[0])
     panel_b(axes[1])
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

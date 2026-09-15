@@ -61,7 +61,7 @@ def load_profiles() -> dict[str, np.ndarray]:
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(8.0, 7.6))
+    fig, ax = plt.subplots(figsize=(5.76, 5.47))
 
     profiles = load_profiles()
     for name, color in COLORS.items():
@@ -85,7 +85,7 @@ def make_plot() -> Path:
     ax.legend(loc="upper right", frameon=True, fontsize=11)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

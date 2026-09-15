@@ -36,7 +36,7 @@ CHANNELS = [
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(7.0, 3.4))
+    fig, ax = plt.subplots(figsize=(5.04, 2.45))
 
     for i, (name, vals) in enumerate(CHANNELS):
         color = "black" if name == "Total O loss" else BLUE

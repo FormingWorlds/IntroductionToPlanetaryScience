@@ -468,19 +468,19 @@ $$ (eq:stellar-flux)
 
 The planet intercepts this flux over its cross-sectional area $\pi R_p^2$ and reflects a fraction $A$ (the **Bond albedo**). The absorbed power is therefore $(1 - A) \, F_\star \, \pi R_p^2$.
 
-In equilibrium, this absorbed power equals the thermal radiation emitted from the entire surface ($4\pi R_p^2$) at the **effective temperature** $T_{\mathrm{eff}}$ (also called the equilibrium temperature and written $T_{\mathrm{eq}}$ on the worksheets and exams) via the Stefan-Boltzmann law ({ref}`Lecture 3 <lecture03>`):
+In equilibrium, this absorbed power equals the thermal radiation emitted from the entire surface ($4\pi R_p^2$) at the **equilibrium temperature** $T_{\mathrm{eq}}$ (also called the effective temperature and written $T_{\mathrm{eff}}$ in many textbooks) via the Stefan-Boltzmann law ({ref}`Lecture 3 <lecture03>`):
 
 $$
-(1 - A) \frac{L_\star}{4\pi d^2} \pi R_p^2 = 4\pi R_p^2 \, \sigma \, T_{\mathrm{eff}}^4
+(1 - A) \frac{L_\star}{4\pi d^2} \pi R_p^2 = 4\pi R_p^2 \, \sigma \, T_{\mathrm{eq}}^4
 $$
 
-Solving for $T_{\mathrm{eff}}$:
+Solving for $T_{\mathrm{eq}}$:
 
 $$
-T_{\mathrm{eff}} = \left[\frac{(1-A) \, L_\star}{16 \pi \sigma \, d^2}\right]^{1/4}
+T_{\mathrm{eq}} = \left[\frac{(1-A) \, L_\star}{16 \pi \sigma \, d^2}\right]^{1/4}
 $$ (eq:effective-temperature)
 
-The effective temperature is the temperature at which a planet radiates if it has no atmosphere (or a completely transparent one), depending only on stellar luminosity, orbital distance, and albedo rather than atmospheric properties.
+The equilibrium temperature is the temperature at which a planet radiates if it has no atmosphere (or a completely transparent one), depending only on stellar luminosity, orbital distance, and albedo rather than atmospheric properties.
 
 For Earth, satellite radiometry has measured the individual flux components of the global energy budget to a few W m$^{-2}$. The leading inventory is from {cite:t}`Trenberth2009` and is shown in {numref}`fig:trenberth`:
 
@@ -495,9 +495,9 @@ Earth's globally averaged energy budget in W m$^{-2}$. Of $\sim$340 W m$^{-2}$ i
 
 ### Effective vs. actual surface temperatures
 
-The table below compares the effective temperature with the measured surface temperature for several solar system bodies:
+The table below compares the equilibrium temperature with the measured surface temperature for several solar system bodies:
 
-| Body | Albedo $A$ | $d$ (AU) | $T_{\mathrm{eff}}$ (K) | $T_{\mathrm{surface}}$ (K) | $\Delta T$ (K) |
+| Body | Albedo $A$ | $d$ (AU) | $T_{\mathrm{eq}}$ (K) | $T_{\mathrm{surface}}$ (K) | $\Delta T$ (K) |
 |------|:----------:|:--------:|:-----------------------:|:---------------------------:|:---------------:|
 | Venus | 0.77 | 0.72 | 227 | 737 | +510 |
 | Earth | 0.30 | 1.00 | 255 | 288 | +33 |
@@ -506,7 +506,7 @@ The table below compares the effective temperature with the measured surface tem
 
 \*Jupiter's "surface temperature" refers to the 1-bar level.
 
-The discrepancy $\Delta T = T_{\mathrm{surface}} - T_{\mathrm{eff}}$ reveals the strength of the **greenhouse effect**. Venus has a staggering 510 K greenhouse warming, by far the largest in the solar system. Earth's 33 K greenhouse warming, though modest by comparison, is sufficient to keep the oceans liquid. Mars has only a small greenhouse warming ($\sim 5$ K) because its $\mathrm{CO_2}$ atmosphere is very thin (surface pressure only 6 mbar) and lacks the water-vapour amplifier that boosts the warming on Earth and Venus. Jupiter's excess temperature is partly due to internal heat left over from formation ({ref}`Lecture 3 <lecture03>`), not solely the greenhouse effect. The surface temperatures behind these greenhouse contrasts, and the surface pressures of the atmospheres that produce them, are compared for the three terrestrial planets in {numref}`fig:l05-vem-atmospheres`.
+The discrepancy $\Delta T = T_{\mathrm{surface}} - T_{\mathrm{eq}}$ reveals the strength of the **greenhouse effect**. Venus has a staggering 510 K greenhouse warming, by far the largest in the solar system. Earth's 33 K greenhouse warming, though modest by comparison, is sufficient to keep the oceans liquid. Mars has only a small greenhouse warming ($\sim 5$ K) because its $\mathrm{CO_2}$ atmosphere is very thin (surface pressure only 6 mbar) and lacks the water-vapour amplifier that boosts the warming on Earth and Venus. Jupiter's excess temperature is partly due to internal heat left over from formation ({ref}`Lecture 3 <lecture03>`), not solely the greenhouse effect. The surface temperatures behind these greenhouse contrasts, and the surface pressures of the atmospheres that produce them, are compared for the three terrestrial planets in {numref}`fig:l05-vem-atmospheres`.
 
 ```{figure} figures/venus_earth_mars_atmospheres.avif
 :name: fig:l05-vem-atmospheres
@@ -524,7 +524,7 @@ The greenhouse effect arises because the atmosphere is **relatively transparent*
 2. The warm surface emits thermal radiation at infrared wavelengths (peak $\sim$10–15 $\mu$m for $T \sim 200$–$300$ K).
 3. Greenhouse gases ($\mathrm{CO_2}$, $\mathrm{H_2O}$, $\mathrm{CH_4}$, $\mathrm{O_3}$, etc.) absorb much of this outgoing IR radiation.
 4. The absorbing layer re-emits IR radiation in all directions: half upward (toward space), half downward (back toward the surface).
-5. The downward emission adds a downward radiative flux at the surface (the atmosphere is not a new energy source: it returns part of what the surface emitted), raising its temperature above $T_{\mathrm{eff}}$.
+5. The downward emission adds a downward radiative flux at the surface (the atmosphere is not a new energy source: it returns part of what the surface emitted), raising its temperature above $T_{\mathrm{eq}}$.
 
 The atmospheric absorption spectrum underlying this asymmetry is shown in {numref}`fig:atmospheric-absorption`: infrared absorption bands of $\mathrm{H_2O}$ and $\mathrm{CO_2}$ block surface emission, leaving an atmospheric window near 8–13 $\mu$m.
 
@@ -554,13 +554,13 @@ $$
 (1-A) \frac{F_\star}{4} + \varepsilon \, \sigma \, T_a^4 = \sigma \, T_s^4
 $$ (eq:surface-balance)
 
-**Top-of-atmosphere balance.** The planet must radiate to space at its effective temperature, so $(1-A) F_\star / 4 = \sigma T_{\mathrm{eff}}^4$. Combining with the atmospheric and surface balance equations:
+**Top-of-atmosphere balance.** The planet must radiate to space at its equilibrium temperature, so $(1-A) F_\star / 4 = \sigma T_{\mathrm{eq}}^4$. Combining with the atmospheric and surface balance equations:
 
 $$
-T_s = T_{\mathrm{eff}} \left(\frac{2}{2 - \varepsilon}\right)^{1/4}
+T_s = T_{\mathrm{eq}} \left(\frac{2}{2 - \varepsilon}\right)^{1/4}
 $$ (eq:greenhouse-surface-temp)
 
-When $\varepsilon = 0$ (no greenhouse gases), $T_s = T_{\mathrm{eff}}$: no warming. When $\varepsilon = 1$ (perfect absorber), $T_s = 2^{1/4} \, T_{\mathrm{eff}} \approx 1.19 \, T_{\mathrm{eff}}$, a 19% increase in surface temperature. For Earth, this gives $T_s \approx 1.19 \times 255 \approx 303$ K, a reasonable first estimate, though the real greenhouse effect involves multiple absorbing layers ({numref}`fig:greenhouse-effect`); the breakdown of this balance in the runaway greenhouse is derived in {ref}`Lecture 9 <lecture09>`.
+When $\varepsilon = 0$ (no greenhouse gases), $T_s = T_{\mathrm{eq}}$: no warming. When $\varepsilon = 1$ (perfect absorber), $T_s = 2^{1/4} \, T_{\mathrm{eq}} \approx 1.19 \, T_{\mathrm{eq}}$, a 19% increase in surface temperature. For Earth, this gives $T_s \approx 1.19 \times 255 \approx 303$ K, a reasonable first estimate, though the real greenhouse effect involves multiple absorbing layers ({numref}`fig:greenhouse-effect`); the breakdown of this balance in the runaway greenhouse is derived in {ref}`Lecture 9 <lecture09>`.
 
 <!-- Generated by scripts/figures/L05_atmospheres_1/fig_greenhouse_one_layer.py -->
 ```{figure} figures/greenhouse_one_layer.avif

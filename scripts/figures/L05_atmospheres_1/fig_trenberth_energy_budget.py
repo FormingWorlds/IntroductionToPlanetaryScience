@@ -37,29 +37,29 @@ LABEL_COLORS = {YELLOW: "#6e4a00", GREEN: "#175e35", RED: "#8f1d1d"}
 
 # (label, x, y_from, y_to, flux W m^-2, colour, y_label)
 # y_label None centres the label on the arrow; explicit values keep the
-# rotated text inside the sky band and clear of the split line at 0.66
+# rotated text inside the sky band and clear of the split line at 0.62
 ARROWS = [
-    ("Incoming solar 340",         0.07, 0.965, 0.660, 340, YELLOW, 0.74),
-    ("Reflected 100",              0.15, 0.660, 0.965, 100, YELLOW, 0.78),
-    ("Absorbed in atmosphere 80",  0.23, 0.660, 0.440,  80, YELLOW, 0.435),
-    ("Absorbed at surface 160",    0.31, 0.660, 0.145, 160, YELLOW, None),
-    ("Latent + sensible 97",       0.45, 0.145, 0.520,  97, GREEN, None),
+    ("Incoming solar 340",         0.07, 0.965, 0.620, 340, YELLOW, 0.72),
+    ("Reflected 100",              0.15, 0.620, 0.965, 100, YELLOW, 0.765),
+    ("Atmosphere absorbs 80",      0.23, 0.620, 0.440,  80, YELLOW, 0.38),
+    ("Absorbed at surface 160",    0.31, 0.620, 0.145, 160, YELLOW, None),
+    ("Latent + sensible 97",       0.45, 0.145, 0.520,  97, GREEN, 0.36),
     ("Surface LW 396",             0.57, 0.145, 0.600, 396, RED, None),
     ("Back-radiation 333",         0.66, 0.600, 0.145, 333, RED, None),
-    ("Outgoing LW 240",            0.82, 0.600, 0.965, 240, RED, 0.75),
+    ("Outgoing LW 240",            0.82, 0.600, 0.965, 240, RED, 0.74),
 ]
 
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(9.5, 6.5))
+    fig, ax = plt.subplots(figsize=(8.07, 5.52))
 
     # Background bands: space, atmosphere, surface
-    ax.add_patch(Rectangle((0, 0.90), 1, 0.10, color=SPACE))
-    ax.add_patch(Rectangle((0, 0.14), 1, 0.76, color=SKY, alpha=0.6))
+    ax.add_patch(Rectangle((0, 0.92), 1, 0.08, color=SPACE))
+    ax.add_patch(Rectangle((0, 0.14), 1, 0.78, color=SKY, alpha=0.6))
     ax.add_patch(Rectangle((0, 0.0), 1, 0.14, color=GROUND, alpha=0.85))
 
-    ax.text(0.5, 0.95, "Space:   340 in  =  100 reflected  +  240 out",
+    ax.text(0.5, 0.96, "Space:   340 in  =  100 reflected  +  240 out",
             fontsize=11, ha="center", va="center", color="white",
             weight="bold")
     ax.text(0.5, 0.07, "Surface:   160 + 333  =  396 + 97",
@@ -67,7 +67,7 @@ def make_plot() -> Path:
             weight="bold")
 
     # Split node: the incoming beam divides into its three branches
-    ax.plot([0.07, 0.31], [0.66, 0.66], color="0.45", lw=1.0)
+    ax.plot([0.07, 0.31], [0.62, 0.62], color="0.45", lw=1.0)
 
     for label, x, y0, y1, flux, color, y_lab in ARROWS:
         lw = float(np.clip(flux / 45.0, 1.5, 8.0))
@@ -88,7 +88,7 @@ def make_plot() -> Path:
                  fontsize=13)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

@@ -84,7 +84,7 @@ def panel_b(ax) -> None:
     # Deep IR photons reabsorbed: the upward path ends at an absorption
     # point (dot) below tau=1; short stubs radiating from the dot show
     # isotropic re-emission, with every tip staying below the tau=1 line
-    for x_ in (0.24, 0.38):
+    for x_ in (0.33, 0.45):
         ax.plot([x_, x_], [0.18, 0.47], color=RED, lw=1.4,
                 solid_capstyle="round")
         ax.plot(x_, 0.47, "o", ms=5, color=RED)
@@ -92,7 +92,7 @@ def panel_b(ax) -> None:
             ax.add_patch(FancyArrowPatch(
                 (x_, 0.47), (x_ + dx, 0.47 + dy),
                 arrowstyle="->", mutation_scale=9, color=RED, lw=1.1))
-    ax.text(0.05, 0.36, "deep IR\nphotons\nreabsorbed",
+    ax.text(0.03, 0.36, "deep IR\nphotons\nreabsorbed",
             fontsize=9, ha="left", va="center", color=RED)
 
     ax.set_xlim(0, 1)
@@ -104,11 +104,11 @@ def panel_b(ax) -> None:
 
 def make_plot() -> Path:
     apply_style()
-    fig, axes = plt.subplots(1, 2, figsize=(11, 5))
+    fig, axes = plt.subplots(1, 2, figsize=(9.35, 4.25))
     panel_a(axes[0])
     panel_b(axes[1])
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

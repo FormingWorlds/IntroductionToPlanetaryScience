@@ -94,7 +94,7 @@ def make_plot() -> Path:
     ell_km = 1.0 / (SIGMA * n) * 1e-3  # mean free path in km
     H_km = scale_height(z)
 
-    fig, ax = plt.subplots(figsize=(8.5, 7.0))
+    fig, ax = plt.subplots(figsize=(7.22, 5.95))
 
     # Find crossing: ell = H
     ratio = ell_km / H_km
@@ -136,7 +136,7 @@ def make_plot() -> Path:
     ax.legend(loc="upper left", frameon=True, fontsize=10)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

@@ -45,7 +45,7 @@ def make_plot() -> Path:
     z = np.array([p[0] for p in PROFILE])
     T = np.array([p[1] for p in PROFILE])
 
-    fig, ax = plt.subplots(figsize=(6.0, 8.0))
+    fig, ax = plt.subplots(figsize=(4.32, 5.76))
 
     # Cloud deck shading
     ax.axhspan(48, 70, color="#f0e3a8", alpha=0.5, zorder=0)
@@ -78,7 +78,7 @@ def make_plot() -> Path:
     ax.grid(linestyle=":", alpha=0.3)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

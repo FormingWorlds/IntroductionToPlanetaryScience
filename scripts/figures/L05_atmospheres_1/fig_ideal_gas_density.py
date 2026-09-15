@@ -67,7 +67,7 @@ def make_plot() -> Path:
         Path to the saved figure file.
     """
     apply_style()
-    fig, ax = plt.subplots(figsize=(7, 4.2))
+    fig, ax = plt.subplots(figsize=(5.95, 3.57))
 
     # Pressure range from 1e-3 to 1e2 bar specified in sketch spec
     p_grid = np.logspace(-3, 2, 300)
@@ -92,7 +92,7 @@ def make_plot() -> Path:
     ax.annotate(
         "Earth surface\n(1 bar, 288 K)",
         xy=(1.0, rho_earth),
-        xytext=(0.25, 80.0),
+        xytext=(0.6, 300.0),
         textcoords="data",
         ha="center",
         va="center",
@@ -138,10 +138,11 @@ def make_plot() -> Path:
     ax.set_ylim(1e-5, 8e2)
     ax.set_xlabel("Pressure $P$ (bar)", fontsize=11)
     ax.set_ylabel(r"Gas mass density $\rho$ (kg m$^{-3}$)", fontsize=11)
-    ax.legend(loc="upper left", framealpha=0.9, fontsize=10)
+    # Upper left is empty: the lines climb from lower left to upper right
+    ax.legend(loc="upper left", framealpha=0.9, fontsize=9)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

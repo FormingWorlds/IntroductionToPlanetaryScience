@@ -91,7 +91,7 @@
 
 % ── Tertiary atmospheres ─────────────────────────────────────
 \begin{frame}
-  \ipsherokey{lyons2014_oxygen_history}{Earth's atmospheric oxygen through time: anoxic for $\sim$2~Gyr, rising at the Great Oxidation Event near 2.4~Ga, modern levels in the Phanerozoic. Reproduced from Lyons et al.\ (2014).}{Earth's atmosphere is \textbf{tertiary}: the outgassed $\mathrm{CO_2}$ and $\mathrm{N_2}$ inventory was Venus-like, oxygenic photosynthesis added the 21\% $\mathrm{O_2}$, and that $\mathrm{O_2}$ is entirely biogenic and needs active life to persist.}
+  \ipsherokey[0.72]{lyons2014_oxygen_history}{Earth's atmospheric oxygen through time: anoxic for $\sim$2~Gyr, rising at the Great Oxidation Event near 2.4~Ga, modern levels in the Phanerozoic. Reproduced from Lyons et al.\ (2014).}{Earth's atmosphere is \textbf{tertiary}: photosynthesis added the 21\% $\mathrm{O_2}$, which is biogenic and needs active life to persist.}
 \end{frame}
 
 % ── Comparative table ────────────────────────────────────────
@@ -120,7 +120,7 @@
 
 % ── Venus surface ────────────────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.66]{venera13_venus_surface}{The surface of Venus seen by \textit{Venera 13} on 1 March 1982. Credit: USSR/NASA NSSDC, public domain.}{The lander survived 127~minutes at 92~bar and 737~K; the dense $\mathrm{CO_2}$ atmosphere and cloud deck filter sunlight to a dim orange glow.}
+  \ipsherokey[0.66]{venera13_venus_surface}{The surface of Venus seen by \textit{Venera 13} on 1 March 1982. Credit: USSR/NASA NSSDC, public domain.}{The lander survived 127~minutes at 92~bar and 737~K; the $\mathrm{CO_2}$ atmosphere and clouds filter sunlight to a dim orange glow.}
 \end{frame}
 
 
@@ -307,7 +307,7 @@
 
 % ── Blackbody spectrum figure ────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.65]{blackbody_spectrum}{Blackbody spectra of the Sun ($\sim$5800~K, peak $\sim$0.5~$\mu$m) and a planet ($\sim$300~K, peak $\sim$10~$\mu$m). Credit: Wikimedia, public domain.}{This \textbf{wavelength separation} is the basis of the greenhouse effect: an atmosphere can be transparent in the visible but opaque in the infrared.}
+  \ipsherokey[0.65]{blackbody_spectrum}{Blackbody spectra of the Sun ($\sim$5800~K, peak $\sim$0.5~$\mu$m) and a planet ($\sim$300~K, peak $\sim$10~$\mu$m). Credit: Wikimedia, public domain.}{This \textbf{wavelength separation} is the basis of the greenhouse effect: transparent in the visible, opaque in the infrared.}
 \end{frame}
 
 % ── Optical depth & Beer-Lambert law ─────────────────────────
@@ -346,20 +346,20 @@
 
 % ── Radiative-convective equilibrium ─────────────────────────
 \begin{frame}
-  \ipsherokey[0.61]{radiative_convective_profile}{Radiative-convective equilibrium (schematic): the radiative profile is superadiabatic near the surface, convection holds the troposphere on the dry adiabat. Course figure.}{Greenhouse opacity makes the \textbf{troposphere} convective, the optically thin \textbf{stratosphere} sits in radiative equilibrium, and the \textbf{tropopause} is where the radiative gradient becomes shallower than the adiabat.}
+  \ipsherokey[0.65]{radiative_convective_profile}{Radiative-convective equilibrium (schematic): the radiative profile is superadiabatic near the surface, convection holds the troposphere on the dry adiabat. Course figure.}{\textbf{Troposphere} convective, \textbf{stratosphere} in radiative equilibrium, \textbf{tropopause} where the radiative gradient drops below the adiabat.}
 \end{frame}
 
 % ── Energy balance derivation ────────────────────────────────
 \begin{frame}{Planetary energy balance}
   Absorbed stellar power equals emitted thermal radiation:
-  $$(1-A)\frac{S}{4} = \sigma\,T_{\mathrm{eff}}^4 \qquad\text{where}\quad S = \frac{L_\star}{4\pi d^2}$$
+  $$(1-A)\frac{S}{4} = \sigma\,T_{\mathrm{eq}}^4 \qquad\text{where}\quad S = \frac{L_\star}{4\pi d^2}$$
   \vskip4pt
   \begin{itemize}
-    \item $A$: Bond albedo; $S$: stellar flux ($S_0 = 1361$~W\,m$^{-2}$ at Earth); $T_{\mathrm{eff}}$ is also written $T_{\mathrm{eq}}$
+    \item $A$: Bond albedo; $S$: stellar flux ($S_0 = 1361$~W\,m$^{-2}$ at Earth); $T_{\mathrm{eq}}$ is also written $T_{\mathrm{eff}}$
     \item Factor $1/4$: intercepting cross-section $\pi R_p^2$ over the emitting sphere $4\pi R_p^2$
   \end{itemize}
   \vskip6pt
-  \keyresult{$$\boxed{T_{\mathrm{eff}} = \left[\frac{(1-A)\,L_\star}{16\pi\sigma\,d^2}\right]^{1/4} = \left[\frac{(1-A)\,S}{4\sigma}\right]^{1/4}}$$}
+  \keyresult{$$\boxed{T_{\mathrm{eq}} = \left[\frac{(1-A)\,L_\star}{16\pi\sigma\,d^2}\right]^{1/4} = \left[\frac{(1-A)\,S}{4\sigma}\right]^{1/4}}$$}
 \end{frame}
 
 \begin{frame}
@@ -371,7 +371,7 @@
   \centering
   \begin{tabular}{l c c c c c}
     \toprule
-    \textbf{Body} & $\boldsymbol{A}$ & $\boldsymbol{d}$~\textbf{(AU)} & $\boldsymbol{T_{\mathrm{eff}}}$~\textbf{(K)} & $\boldsymbol{T_{\mathrm{surf}}}$~\textbf{(K)} & $\boldsymbol{\Delta T}$~\textbf{(K)} \\
+    \textbf{Body} & $\boldsymbol{A}$ & $\boldsymbol{d}$~\textbf{(AU)} & $\boldsymbol{T_{\mathrm{eq}}}$~\textbf{(K)} & $\boldsymbol{T_{\mathrm{surf}}}$~\textbf{(K)} & $\boldsymbol{\Delta T}$~\textbf{(K)} \\
     \midrule
     Venus   & 0.77 & 0.72 & 227 & 737  & +510 \\
     Earth   & 0.30 & 1.00 & 255 & 288  & +33  \\
@@ -382,7 +382,7 @@
   \vskip4pt
   {\footnotesize *Jupiter 1-bar level; excess partly from internal heat (Lecture~3).}
   \vskip8pt
-  \keyresult{$\Delta T = T_{\mathrm{surf}} - T_{\mathrm{eff}}$ is the \textbf{greenhouse effect}: 510~K on Venus, 33~K on Earth, $\sim$5~K on Mars (6~mbar, no water-vapour amplifier).}
+  \keyresult{$\Delta T = T_{\mathrm{surf}} - T_{\mathrm{eq}}$ is the \textbf{greenhouse effect}: 510~K on Venus, 33~K on Earth, $\sim$5~K on Mars (6~mbar, no water-vapour amplifier).}
 \end{frame}
 
 \begin{frame}
@@ -391,7 +391,7 @@
 
 % ── Greenhouse mechanism ─────────────────────────────────────
 \begin{frame}
-  \ipsherokeyside{greenhouse_one_layer}{The one-layer greenhouse model: sunlight in, infrared absorbed and re-emitted half up, half down. Course figure.}{Sunlight ($\sim$0.5~$\mu$m) reaches the surface, the surface emits thermal IR ($\sim$10--15~$\mu$m), greenhouse gases absorb it and re-emit half downward, and that extra energy makes $T_{\mathrm{surf}} > T_{\mathrm{eff}}$.}
+  \ipsherokeyside{greenhouse_one_layer}{The one-layer greenhouse model: sunlight in, infrared absorbed and re-emitted half up, half down. Course figure.}{Sunlight ($\sim$0.5~$\mu$m) reaches the surface, the surface emits thermal IR ($\sim$10--15~$\mu$m), greenhouse gases absorb it and re-emit half downward, and that extra energy makes $T_{\mathrm{surf}} > T_{\mathrm{eq}}$.}
 \end{frame}
 
 % ── One-layer greenhouse model ───────────────────────────────
@@ -404,17 +404,17 @@
     \begin{align*}
       \text{Atmosphere:} & \quad \varepsilon\sigma T_s^4 = 2\varepsilon\sigma T_a^4 \\
       \text{Surface:} & \quad (1-A)\frac{S}{4} + \varepsilon\sigma T_a^4 = \sigma T_s^4 \\
-      \text{TOA:} & \quad (1-A)\frac{S}{4} = \sigma T_{\mathrm{eff}}^4
+      \text{TOA:} & \quad (1-A)\frac{S}{4} = \sigma T_{\mathrm{eq}}^4
     \end{align*}
 
     \column{0.48\textwidth}
     \textbf{Surface temperature:}
-    \keyresult{$$\boxed{T_s = T_{\mathrm{eff}}\left(\frac{2}{2-\varepsilon}\right)^{1/4}}$$}
+    \keyresult{$$\boxed{T_s = T_{\mathrm{eq}}\left(\frac{2}{2-\varepsilon}\right)^{1/4}}$$}
   \end{columns}
   \vskip6pt
   \begin{itemize}
-    \item $\varepsilon = 0$ (transparent): $T_s = T_{\mathrm{eff}}$
-    \item $\varepsilon = 1$ (opaque): $T_s = 2^{1/4}\,T_{\mathrm{eff}} \approx 1.19\,T_{\mathrm{eff}}$ (Earth: $\approx$303~K)
+    \item $\varepsilon = 0$ (transparent): $T_s = T_{\mathrm{eq}}$
+    \item $\varepsilon = 1$ (opaque): $T_s = 2^{1/4}\,T_{\mathrm{eq}} \approx 1.19\,T_{\mathrm{eq}}$ (Earth: $\approx$303~K)
   \end{itemize}
 \end{frame}
 
@@ -542,7 +542,7 @@
 
 % ── Mars atmosphere ──────────────────────────────────────────
 \begin{frame}
-  \ipsherokey[0.66]{mars_atmosphere}{The thin atmosphere of Mars above its limb, Viking 1 (1976). Credit: NASA/JPL.}{After the dynamo died near $\sim$4.1~Ga the solar wind eroded a dense early atmosphere, recorded by valley networks and lakes, down to today's 6~mbar: no stable liquid water, little greenhouse warming.}
+  \ipsherokey[0.7]{mars_atmosphere}{The thin atmosphere of Mars above its limb, Viking 1 (1976). Credit: NASA/JPL.}{After the dynamo died ($\sim$4.1~Ga) the solar wind eroded a dense early atmosphere down to today's 6~mbar: no stable liquid water.}
 \end{frame}
 
 
@@ -564,7 +564,7 @@
   \begin{enumerate}\setlength\itemsep{6pt}
     \item \textbf{Atmosphere types}: primary (captured), secondary (outgassed), tertiary (biogenic); four orders of magnitude in surface pressure
     \item \textbf{Hydrostatic balance} and the \textbf{scale height} $H = \kB T/(\mu m_u g)$ give $P = P_0 e^{-z/H}$; convection sets $\Gamma_d = g/c_p$ below the 0.1~bar tropopause
-    \item \textbf{Greenhouse warming} from $\tau \gtrsim 1$ raises $T_s$ above $T_{\mathrm{eff}}$; \textbf{thermal escape} is negligible when $v_{\mathrm{esc}} \gtrsim 6 v_{\mathrm{th}}$; hydrodynamic and non-thermal loss follow other rules
+    \item \textbf{Greenhouse warming} from $\tau \gtrsim 1$ raises $T_s$ above $T_{\mathrm{eq}}$; \textbf{thermal escape} is negligible when $v_{\mathrm{esc}} \gtrsim 6 v_{\mathrm{th}}$; hydrodynamic and non-thermal loss follow other rules
   \end{enumerate}
   \vskip8pt
   \textbf{Next: Lecture 6}

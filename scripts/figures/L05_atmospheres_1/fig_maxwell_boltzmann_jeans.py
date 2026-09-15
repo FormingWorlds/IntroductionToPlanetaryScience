@@ -74,7 +74,7 @@ def maxwell_boltzmann(v: np.ndarray, T: float, m: float) -> np.ndarray:
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(7.5, 5.0))
+    fig, ax = plt.subplots(figsize=(5.40, 3.60))
 
     v_kms = np.linspace(0.01, 25.0, 1200)
     v = v_kms * 1e3  # m/s
@@ -111,7 +111,7 @@ def make_plot() -> Path:
     ax.legend(loc="upper right", frameon=False, fontsize=10)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

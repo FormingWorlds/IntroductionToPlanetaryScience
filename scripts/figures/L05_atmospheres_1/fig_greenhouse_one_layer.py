@@ -30,7 +30,7 @@ SPACE = "#1a2440"
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(7.5, 7.0))
+    fig, ax = plt.subplots(figsize=(6.38, 5.95))
 
     # Background bands
     ax.add_patch(Rectangle((0, 0.85), 1, 0.15, color=SPACE))
@@ -112,7 +112,7 @@ def make_plot() -> Path:
     ax.set_aspect("equal")
     ax.axis("off")
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:
