@@ -568,7 +568,7 @@ When $\varepsilon = 0$ (no greenhouse gases), $T_s = T_{\mathrm{eq}}$: no warmin
 :width: 100%
 :align: center
 
-Energy budget of the one-layer greenhouse model. Incident shortwave flux $(1-A)F_\star/4$ is absorbed at the surface, which re-radiates $\sigma T_s^4$ in the infrared; a fraction $(1-\varepsilon)$ escapes directly to space, while a fraction $\varepsilon$ is absorbed in the atmospheric layer. The layer re-emits $\varepsilon\,\sigma T_a^4$ upward to space and downward to the surface, raising $T_s$ above the effective temperature $T_\mathrm{eff}$. Schematic following {cite:t}`Pierrehumbert2010`. Course-original figure.
+Energy budget of the one-layer greenhouse model. Incident shortwave flux $(1-A)F_\star/4$ is absorbed at the surface, which re-radiates $\sigma T_s^4$ in the infrared; a fraction $(1-\varepsilon)$ escapes directly to space, while a fraction $\varepsilon$ is absorbed in the atmospheric layer. The layer re-emits $\varepsilon\,\sigma T_a^4$ upward to space and downward to the surface, raising $T_s$ above the equilibrium temperature $T_\mathrm{eq}$. Schematic following {cite:t}`Pierrehumbert2010`. Course-original figure.
 ```
 
 (atm-escape)=
