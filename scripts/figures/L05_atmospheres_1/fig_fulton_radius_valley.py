@@ -1,126 +1,85 @@
 """Generate Fig. (`fig:fulton-radius-valley`).
 
-Annotated reproduction of the completeness-corrected planet radius
-histogram of Fulton et al. (2017), their Fig. 7 (top panel), from the
-authors' arXiv source (1703.10375, file radius_dist_cks_naked.pdf,
-kept verbatim in `data/`). The original panel is rendered to pixels,
-the axes are calibrated from the printed tick positions, and three
-labels (super-Earths, sub-Neptunes, radius valley) are drawn on top
-in data coordinates.
+Radius distribution of the 900 short-period planets of the California-
+Kepler Survey (Fulton et al. 2017, their Table 2, VizieR J/AJ/154/109),
+drawn as raw counts in logarithmic radius bins. The radius valley near
+1.8 Earth radii separates the super-Earth and sub-Neptune peaks without
+any completeness correction, which the paper applies on top.
 
-Caption / figure id : deck hero frame, no MyST figure id
+Caption / figure id : fig:fulton-radius-valley (notes) and a deck hero frame
 Deck source         : slides/lecture05/lecture05.tex
 Citation key        : Fulton2017
 """
 from __future__ import annotations
 
+import io
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
-import pymupdf
+import pandas as pd
 
 from scripts.figures._shared.style import apply_style, save_figure
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
-SRC_PDF = Path(__file__).resolve().parent / "data/fulton2017_radius_dist_cks_naked.pdf"
-OUT_AVIF = REPO_ROOT / "slides/lecture05/figures/fulton2017_radius_valley.avif"
+DATA_TSV = Path(__file__).resolve().parent / "data/fulton2017_cks_table2.tsv"
+OUT_AVIF = REPO_ROOT / "book/05_atmospheres_1/figures/fulton2017_radius_valley.avif"
 
-DPI = 200
-
-# Printed tick values of the original panel: radius in Earth radii
-# (log axis) and occurrence per star (linear axis, top to bottom).
-X_TICK_VALUES = [0.7, 1.0, 1.3, 1.8, 2.4, 3.5, 4.5, 6.0, 8.0, 12.0, 20.0]
-Y_TICK_VALUES = [0.12, 0.10, 0.08, 0.06, 0.04, 0.02, 0.00]
+P_MAX_DAYS = 100.0
+R_MIN, R_MAX, N_BINS = 0.7, 20.0, 20
+X_TICKS = [0.7, 1.0, 1.3, 1.8, 2.4, 3.5, 4.5, 6.0, 8.0, 12.0, 20.0]
 
 
-def render_panel() -> np.ndarray:
-    """Render the original panel PDF to an RGB pixel array."""
-    page = pymupdf.open(SRC_PDF)[0]
-    pix = page.get_pixmap(dpi=DPI)
-    img = np.frombuffer(pix.samples, dtype=np.uint8)
-    return img.reshape(pix.height, pix.width, pix.n)[:, :, :3].copy()
-
-
-def calibrate() -> tuple[np.poly1d, np.poly1d]:
-    """Fit data-to-pixel maps from the panel's vector tick strokes.
-
-    The major ticks are the only strokes of their exact length in the
-    PDF (8 pt vertical on the bottom spine, 7 pt horizontal on the left
-    spine), so they identify the axes without any raster heuristics.
-    Returns (x_of_logr, y_of_occ): pixel column as a function of
-    log10(radius), pixel row as a function of occurrence.
-    """
-    page = pymupdf.open(SRC_PDF)[0]
-    segs = []
-    for d in page.get_drawings():
-        for item in d["items"]:
-            if item[0] == "l":
-                p1, p2 = item[1], item[2]
-                segs.append((p1.x, p1.y, p2.x, p2.y))
-
-    # Both opposing spines carry the same tick strokes; dedup by position.
-    xticks = sorted({round(s[0], 2) for s in segs
-                     if abs(s[0] - s[2]) < 0.01
-                     and 7.5 < abs(s[1] - s[3]) < 8.5})
-    yticks = sorted({round(s[1], 2) for s in segs
-                     if abs(s[1] - s[3]) < 0.01
-                     and 6.5 < abs(s[0] - s[2]) < 7.5})
-    if len(xticks) != len(X_TICK_VALUES) or len(yticks) != len(Y_TICK_VALUES):
-        raise RuntimeError(
-            f"tick-stroke detection changed: {len(xticks)} x / "
-            f"{len(yticks)} y ticks found; the source PDF differs from "
-            "the one this calibration was built for")
-
-    scale = DPI / 72.0  # PDF points to rendered pixels
-    xticks = np.array(xticks) * scale
-    yticks = np.array(yticks) * scale
-    cx = np.polyfit(np.log10(X_TICK_VALUES), xticks, 1)
-    cy = np.polyfit(sorted(Y_TICK_VALUES, reverse=True), yticks, 1)
-    rx = np.max(np.abs(np.polyval(cx, np.log10(X_TICK_VALUES)) - xticks))
-    ry = np.max(np.abs(np.polyval(cy, sorted(Y_TICK_VALUES, reverse=True))
-                       - yticks))
-    if rx >= 3 or ry >= 3:
-        raise RuntimeError(
-            f"calibration residual too large (x {rx:.1f} px, y {ry:.1f} px); "
-            "tick strokes misidentified in the source PDF")
-    return np.poly1d(cx), np.poly1d(cy)
+def load_sample() -> pd.DataFrame:
+    """Read the VizieR TSV export of Table 2 and keep P < 100 days."""
+    lines = [l for l in DATA_TSV.read_text().splitlines(keepends=True)
+             if not l.startswith("#") and l.strip()]
+    df = pd.read_csv(io.StringIO("".join(lines)), sep="\t", skiprows=[1, 2])
+    df.columns = [c.strip() for c in df.columns]
+    df = df.apply(pd.to_numeric, errors="coerce")
+    return df[(df["Per"] < P_MAX_DAYS) & (df["Rad"] > 0)]
 
 
 def make_plot() -> Path:
     apply_style()
-    img = render_panel()
-    x_of_logr, y_of_occ = calibrate()
+    sample = load_sample()
+    edges = np.logspace(np.log10(R_MIN), np.log10(R_MAX), N_BINS + 1)
+    counts, _ = np.histogram(sample["Rad"], bins=edges)
 
-    def px(radius: float, occ: float) -> tuple[float, float]:
-        return float(x_of_logr(np.log10(radius))), float(y_of_occ(occ))
+    fig, ax = plt.subplots(figsize=(5.76, 3.6))
+    ax.bar(edges[:-1], counts, width=np.diff(edges), align="edge",
+           color="#9ecae1", edgecolor="#2c7f8c", linewidth=0.8)
+    ax.set_xscale("log")
+    ax.set_xlim(R_MIN, R_MAX)
+    ax.set_xticks(X_TICKS)
+    ax.set_xticklabels([f"{x:g}" for x in X_TICKS])
+    ax.minorticks_off()
+    ax.set_ylim(0, 180)
+    ax.set_xlabel(r"Planet radius ($R_\oplus$)")
+    ax.set_ylabel("Number of planets")
+    ax.grid(axis="y", linestyle=":", alpha=0.3)
 
-    H, W = img.shape[:2]
-    fig, ax = plt.subplots(figsize=(W / DPI, H / DPI))
-    ax.imshow(img, interpolation="lanczos")
-    ax.set_axis_off()
-    ax.grid(False)
+    # Population labels; the valley label sits above the dip with a leader
+    ax.annotate("Super-Earths", xy=(1.08, 136), ha="center", va="bottom",
+                fontsize=11, color="#c2452e", weight="bold")
+    ax.annotate("Sub-Neptunes", xy=(2.95, 112), ha="center", va="bottom",
+                fontsize=11, color="#2c7f8c", weight="bold")
+    ax.annotate("Radius valley", xy=(1.76, 72), xytext=(1.76, 165),
+                ha="center", va="center", fontsize=11, color="0.25",
+                weight="bold",
+                arrowprops=dict(arrowstyle="->", color="0.25", lw=1.2))
+    ax.text(0.98, 0.95, f"{len(sample)} CKS planets, $P < {P_MAX_DAYS:.0f}$ d",
+            transform=ax.transAxes, ha="right", va="top", fontsize=9,
+            color="0.35")
 
-    annotations = [
-        ("Super-Earths", "#c2452e", (1.31, 0.104), (1.31, 0.0845), "center"),
-        ("Sub-Neptunes", "#2c7f8c", (3.9, 0.105), (2.55, 0.096), "center"),
-        ("Radius valley", "0.25", (1.7, 0.1155), (1.8, 0.049), "center"),
-    ]
-    for label, color, text_rp, tip_rp, ha in annotations:
-        ax.annotate(label, xy=px(*tip_rp), xytext=px(*text_rp),
-                    ha=ha, va="center", fontsize=13, color=color,
-                    weight="bold",
-                    arrowprops=dict(arrowstyle="->", color=color, lw=1.4))
-
-    ax.set_position([0, 0, 1, 1])
-    fig.set_size_inches(W / DPI, H / DPI)
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    fig.tight_layout()
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:
-    out = make_plot()
-    print(f"  plot : {out}")
+    """Build the figure and report the output path."""
+    print(f"  plot : {make_plot()}")
 
 
 if __name__ == "__main__":

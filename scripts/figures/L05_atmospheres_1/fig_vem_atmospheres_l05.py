@@ -20,7 +20,8 @@ def make_plot() -> Path:
     """Draw the Lecture 1 plot into the Lecture 5 figure path."""
     base.OUT_AVIF = OUT_AVIF
     base.save_figure = style.save_figure
-    return base.make_plot()
+    # Smaller canvas at 280 dpi: the deck shows this copy full width
+    return base.make_plot(figsize=(5.40, 3.17), dpi=280, mars_p_label_y=0.4)
 
 
 def main() -> None:

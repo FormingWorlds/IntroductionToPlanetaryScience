@@ -31,12 +31,25 @@ OUT_AVIF = REPO_ROOT / "book/01_introduction/figures/venus_earth_mars_atmosphere
 BODIES = ["Venus", "Earth", "Mars"]
 
 
-def make_plot() -> Path:
+def make_plot(figsize: tuple[float, float] = (7.5, 4.4),
+              dpi: int | None = None,
+              mars_p_label_y: float = 0.06) -> Path:
+    """Draw the surface temperature and pressure comparison.
+
+    Parameters
+    ----------
+    figsize
+        Canvas size in inches; a smaller canvas gives larger labels.
+    dpi
+        Render resolution passed to `save_figure`; None keeps the default.
+    mars_p_label_y
+        Pressure (bar) at which the Mars pressure label is pinned.
+    """
     apply_style()
     df = pd.read_csv(DATA_CSV)
     df = df.set_index("body").loc[BODIES].reset_index()
 
-    fig, ax_T = plt.subplots(figsize=(7.5, 4.4))
+    fig, ax_T = plt.subplots(figsize=figsize)
     ax_P = ax_T.twinx()
 
     x = np.arange(len(BODIES))
@@ -71,13 +84,10 @@ def make_plot() -> Path:
     # padding so labels sit a consistent visual distance above each
     # bar, including the very short Mars pressure bar on the log
     # y-axis (where a multiplicative offset is inadequate). Mars
-    # surface pressure (6.36e-3 bar) uses scientific notation so the
-    # label string is narrow enough to clear the adjacent T bar.
+    # surface pressure is printed in mbar so the label stays narrow.
     def _fmt_p(v: float) -> str:
         if v < 0.01:
-            exp = int(np.floor(np.log10(v)))
-            mant = v / 10.0 ** exp
-            return rf"${mant:.2f}{{\times}}10^{{{exp}}}$ bar"
+            return f"{v * 1e3:.1f} mbar"
         if v >= 10:
             return f"{v:.0f} bar"
         return f"{v:.2f} bar"
@@ -90,7 +100,7 @@ def make_plot() -> Path:
     # 6e-3 bar bar is tiny; the label is hard-pinned at y = 0.06 bar
     # (well above the 210 K T-bar label across the gap) to remove any
     # ambiguity about which bar each label belongs to.
-    MARS_P_LABEL_Y = 0.06
+    MARS_P_LABEL_Y = mars_p_label_y
     for bar, body, v in zip(bars_P, BODIES, df["Psurf_bar"]):
         x_center = bar.get_x() + bar.get_width() / 2
         if body == "Mars":
@@ -111,7 +121,7 @@ def make_plot() -> Path:
 
     fig.subplots_adjust(bottom=0.18)
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=dpi)
 
 
 def main() -> None:
