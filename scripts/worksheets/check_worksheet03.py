@@ -49,6 +49,12 @@ chk("P3c Venus lapse rate (K/km)", 8.87 / 900 * 1e3, 9.9, 5e-3)
 chk("P3c Titan lapse rate (K/km)", 1.35 / 1040 * 1e3, 1.3, 2e-2)
 chk("P3c Venus decade thickness (km)", 44 / 9.9, 4.5, 2e-2)
 chk("P3c Titan decade thickness (km)", 19 / 1.3, 15, 3e-2)
+# Fraction of the cloud-base vapour condensed one decade of P_sat above the base,
+# for a saturated parcel whose mixing ratio follows P_sat/P with P = P_base exp(-z/H)
+H_TITAN = (8.314 / 0.028) * 90 / 1.35 / 1e3  # km, N2 at 90 K
+H_VENUS = (8.314 / 0.044) * 350 / 8.87 / 1e3  # km, CO2 at 350 K
+chk("P3c condensed fraction Titan", 1 - 0.1 * math.exp(15 / H_TITAN), 0.80, 3e-2)
+chk("P3c condensed fraction Venus", 1 - 0.1 * math.exp(4.5 / H_VENUS), 0.80, 3e-2)
 chk("P1a H_Earth printed-chain (m)", 3.9773e-21 / 4.7205e-25, 8425.6, 5e-5)
 # P1b ratio quoted qualitatively: (288/94) ~ 3.1 vs (9.81/1.35) ~ 7.3 -> ~2.4
 chk("P1b T ratio", 288 / 94, 3.1, 2e-2)
