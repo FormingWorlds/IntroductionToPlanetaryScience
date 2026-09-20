@@ -21,7 +21,7 @@ OUT_AVIF = REPO_ROOT / "book/12_small_bodies/figures/petrologic_types.avif"
 def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
-    fig, ax = plt.subplots(figsize=(9.2, 4.8))
+    fig, ax = plt.subplots(figsize=(7.82, 4.08))
     ax.set_xlim(0.0, 10.0)
     ax.set_ylim(0.0, 10.0)
     ax.axis("off")
@@ -98,7 +98,7 @@ def make_plot() -> plt.Figure:
 
     # Bottom scale: Shock stage S1 to S6
     # "The shock stage, denoted S1 (unshocked) through S6 (heavily shocked, partially melted), records impact history"
-    ax.text(5.0, 4.6, "Shock stage (scale S1 to S6)", ha="center", va="center", fontsize=10, weight="bold", color="0.2")
+    ax.text(5.0, 4.8, "Shock stage (scale S1 to S6)", ha="center", va="center", fontsize=10, weight="bold", color="0.2")
 
     w_sbox = 1.15
     h_sbox = 0.85
@@ -148,7 +148,7 @@ def make_plot() -> plt.Figure:
     )
 
     fig.tight_layout()
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

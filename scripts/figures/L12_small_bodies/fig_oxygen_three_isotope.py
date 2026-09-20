@@ -21,7 +21,7 @@ OUT_AVIF = REPO_ROOT / "book/12_small_bodies/figures/oxygen_three_isotope.avif"
 def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
-    fig, ax = plt.subplots(figsize=(8.8, 4.8))
+    fig, ax = plt.subplots(figsize=(6.34, 3.46))
 
     ax.set_xlim(-10, 10)
     ax.set_ylim(-8, 6)
@@ -42,7 +42,7 @@ def make_plot() -> plt.Figure:
     ax.plot(x_tfl, 0.5 * x_tfl, color="#1f6db8", lw=2.0, zorder=2)
     ax.text(
         -9.3,
-        1.8,
+        1.1,
         "terrestrial fractionation line, slope 1/2:\nEarth, Moon, enstatite chondrites",
         fontsize=10,
         color="#1f6db8",
@@ -52,7 +52,7 @@ def make_plot() -> plt.Figure:
     ax.annotate(
         "",
         xy=(-3.5, -1.75),
-        xytext=(-5.5, 1.6),
+        xytext=(-5.5, 0.9),
         arrowprops=dict(arrowstyle="->", color="#1f6db8", lw=1.2),
     )
 
@@ -204,7 +204,7 @@ def make_plot() -> plt.Figure:
     )
 
     fig.tight_layout()
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

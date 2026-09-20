@@ -21,7 +21,7 @@ OUT_AVIF = REPO_ROOT / "book/12_small_bodies/figures/chondrule_cai_timeline.avif
 def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(9.2, 4.2))
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7.82, 3.57))
 
     # --- Panel (a): Timeline of the oldest solids ---
     # Time axis in Myr after CAI formation from 0 to 5
@@ -85,8 +85,8 @@ def make_plot() -> plt.Figure:
     ax2.axhline(1400, color="#c0392b", linestyle="--", lw=1.5)
     ax2.text(
         9.8,
-        1460,
-        "CAI condensation above about 1400 K",
+        1440,
+        "CAI condensation\nabove about 1400 K",
         fontsize=10,
         ha="right",
         va="bottom",
@@ -122,7 +122,7 @@ def make_plot() -> plt.Figure:
     )
 
     fig.tight_layout()
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 
