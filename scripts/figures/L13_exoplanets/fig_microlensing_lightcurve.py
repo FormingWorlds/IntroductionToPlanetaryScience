@@ -31,7 +31,7 @@ SPIKE_WIDTH = 0.3  # days
 def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
-    fig, ax = plt.subplots(figsize=(8.2, 4.4))
+    fig, ax = plt.subplots(figsize=(6.97, 3.74))
 
     # Time grid from -30 to 30 days
     t = np.linspace(-30.0, 30.0, 1000)
@@ -50,9 +50,9 @@ def make_plot() -> plt.Figure:
 
     # Inset text box: 'spike amplitude and timing give the planet mass and its projected separation in Einstein radii'
     patch = FancyBboxPatch(
-        (6.0, 3.05),
-        23.5,
-        0.95,
+        (7.0, 2.95),
+        21.5,
+        1.15,
         boxstyle="round,pad=0.1,rounding_size=0.3",
         facecolor="#e8f1fa",
         edgecolor="#1f6db8",
@@ -61,9 +61,10 @@ def make_plot() -> plt.Figure:
     ax.add_patch(patch)
 
     inset_text = (
-        "spike amplitude and timing give\n"
-        "the planet mass and its projected\n"
-        "separation in Einstein radii"
+        "spike amplitude and timing\n"
+        "give the planet mass and\n"
+        "its projected separation\n"
+        "in Einstein radii"
     )
     ax.text(
         17.75,
@@ -110,7 +111,7 @@ def make_plot() -> plt.Figure:
     ax.text(
         12.5,
         2.62,
-        "planet: spike of hours to days",
+        "planet: spike of\nhours to days",
         ha="left",
         va="center",
         fontsize=10,
@@ -125,7 +126,7 @@ def make_plot() -> plt.Figure:
     ax.set_title("A microlensing event with a planet", fontsize=11)
 
     fig.tight_layout()
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

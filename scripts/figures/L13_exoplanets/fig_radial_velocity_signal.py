@@ -22,7 +22,7 @@ OUT_AVIF = REPO_ROOT / "book/13_exoplanets/figures/radial_velocity_signal.avif"
 def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(9.2, 4.4))
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7.82, 3.74))
 
     # --- Panel (a): Reflex motion of a Sun with a Jupiter analogue ---
     # Stellar reflex velocity curve v_r(t) = K sin(2 pi t / P) over two periods
@@ -31,11 +31,11 @@ def make_plot() -> plt.Figure:
     v = 12.5 * np.sin(2 * np.pi * t)
     ax1.plot(t, v, color="#1f6db8", lw=2.0)
     ax1.axhline(0, color="0.7", linestyle=":", lw=0.8)
-    ax1.set_xlim(0, 2.0)
+    ax1.set_xlim(0, 2.5)
     ax1.set_ylim(-15, 18)
     ax1.set_xlabel("Time (orbital periods, $t/P$)")
     ax1.set_ylabel("Stellar radial velocity (m/s)")
-    ax1.set_title("(a) Reflex motion of a Sun with a Jupiter analogue", fontsize=11)
+    ax1.set_title("(a) Reflex motion of a Sun with a Jupiter analogue", fontsize=10)
 
     # Mark semi-amplitude K with double-headed arrow from 0 to peak
     ax1.add_patch(
@@ -49,13 +49,13 @@ def make_plot() -> plt.Figure:
     ax1.axhline(0.1, color="#2ca25f", linestyle="--", lw=1.2)
 
     bbox_white = dict(facecolor="white", edgecolor="none", pad=1.5)
-    ax1.text(1.95, 10.0, "ELODIE\n(10 m/s)", ha="right", va="center", fontsize=10, color="#c0392b", bbox=bbox_white)
-    ax1.text(1.95, 2.3, "HARPS\n(1 m/s)", ha="right", va="center", fontsize=10, color="#c46b1a", bbox=bbox_white)
-    ax1.text(1.95, -1.3, "ESPRESSO\n(0.1 m/s)", ha="right", va="center", fontsize=10, color="#2ca25f", bbox=bbox_white)
+    ax1.text(2.45, 10.0, "ELODIE\n(10 m/s)", ha="right", va="center", fontsize=10, color="#c0392b", bbox=bbox_white)
+    ax1.text(2.45, 2.7, "HARPS\n(1 m/s)", ha="right", va="center", fontsize=10, color="#c46b1a", bbox=bbox_white)
+    ax1.text(2.45, -1.7, "ESPRESSO\n(0.1 m/s)", ha="right", va="center", fontsize=10, color="#2ca25f", bbox=bbox_white)
 
     # --- Panel (b): Bar chart of semi-amplitudes against instrument precision ---
     # Three analogues: Jupiter 12.5 m/s, Saturn at 9.5 AU 2.7 m/s, Earth at 1 AU 0.09 m/s
-    planets = ["Jupiter\n(12.5 m/s)", "Saturn, 9.5 AU\n(2.7 m/s)", "Earth, 1 AU\n(0.09 m/s)"]
+    planets = ["Jupiter\n5.2 AU\n(12.5 m/s)", "Saturn\n9.5 AU\n(2.7 m/s)", "Earth\n1 AU\n(0.09 m/s)"]
     k_vals = [12.5, 2.7, 0.09]
     x = np.arange(len(planets))
     ax2.bar(x, k_vals, width=0.5, color="#1f6db8", alpha=0.85, edgecolor="black", lw=0.8)
@@ -65,7 +65,7 @@ def make_plot() -> plt.Figure:
     ax2.set_xticks(x)
     ax2.set_xticklabels(planets)
     ax2.set_ylabel(r"Semi-amplitude $K_\star$ (m/s)")
-    ax2.set_title("(b) Semi-amplitudes against instrument precision", fontsize=11)
+    ax2.set_title("(b) Semi-amplitudes against instrument precision", fontsize=10)
 
     # Instrument precision lines repeated on log scale
     ax2.axhline(10, color="#c0392b", linestyle="--", lw=1.2)
@@ -74,10 +74,10 @@ def make_plot() -> plt.Figure:
 
     ax2.text(2.85, 11.5, "10 m/s (ELODIE)", ha="right", va="bottom", fontsize=10, color="#c0392b")
     ax2.text(2.85, 1.15, "1 m/s (HARPS)", ha="right", va="bottom", fontsize=10, color="#c46b1a")
-    ax2.text(2.85, 0.115, "0.1 m/s (ESPRESSO)", ha="right", va="bottom", fontsize=10, color="#2ca25f")
+    ax2.text(2.85, 0.115, "0.1 m/s\n(ESPRESSO)", ha="right", va="bottom", fontsize=10, color="#2ca25f")
 
     fig.tight_layout()
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

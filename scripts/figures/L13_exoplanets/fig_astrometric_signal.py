@@ -34,7 +34,7 @@ GAIA_PRECISION_UAS = 10.0
 def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
-    fig, ax = plt.subplots(figsize=(8.0, 4.5))
+    fig, ax = plt.subplots(figsize=(5.76, 3.24))
 
     # Distance d from 1 to 100 pc on log-log axes
     d = np.logspace(0, 2, 300)
@@ -43,8 +43,8 @@ def make_plot() -> plt.Figure:
     alpha_jup = M_JUP_OVER_M_STAR * (A_JUP_AU / d) * 1e6
     alpha_earth = M_EARTH_OVER_M_STAR * (A_EARTH_AU / d) * 1e6
 
-    ax.loglog(d, alpha_jup, color="#1f6db8", lw=2.2, label="Jupiter analogue (5.2 AU)")
-    ax.loglog(d, alpha_earth, color="#2ca25f", lw=2.2, label="Earth analogue (1 AU)")
+    ax.loglog(d, alpha_jup, color="#1f6db8", lw=2.2)
+    ax.loglog(d, alpha_earth, color="#2ca25f", lw=2.2)
 
     # Gaia threshold: about 10 microarcseconds
     ax.axhline(
@@ -52,7 +52,6 @@ def make_plot() -> plt.Figure:
         color="#c0392b",
         linestyle="--",
         lw=1.8,
-        label="Gaia, about 10 microarcseconds",
     )
 
     # Anchor values at 10 pc
@@ -68,7 +67,7 @@ def make_plot() -> plt.Figure:
     ax.annotate(
         "10 pc: about 500 $\\mu$as\n(half a milliarcsecond)",
         xy=(d_anchor, alpha_jup_10),
-        xytext=(3.0, 120.0),
+        xytext=(2.0, 40.0),
         fontsize=10,
         color="#1f6db8",
         arrowprops=dict(arrowstyle="->", color="#1f6db8", lw=1.0),
@@ -89,10 +88,23 @@ def make_plot() -> plt.Figure:
     ax.set_ylabel(r"Angular reflex amplitude $\alpha$ ($\mu$as)")
     # Title
     ax.set_title("Astrometric reflex amplitude against distance", fontsize=11)
-    ax.legend(loc="upper right", fontsize=9)
+    # Line labels along each curve, with a white halo where the label sits on its line
+    halo = dict(facecolor="white", edgecolor="none", pad=1.5)
+    fig.canvas.draw()
+    for label, y_of, colour in (
+        ("Jupiter analogue (5.2 AU)", lambda x: M_JUP_OVER_M_STAR * (A_JUP_AU / x) * 1e6, "#1f6db8"),
+        ("Earth analogue (1 AU)", lambda x: M_EARTH_OVER_M_STAR * (A_EARTH_AU / x) * 1e6, "#2ca25f"),
+    ):
+        x0, x1 = 30.0, 60.0
+        (px0, py0), (px1, py1) = ax.transData.transform([(x0, y_of(x0)), (x1, y_of(x1))])
+        angle = np.degrees(np.arctan2(py1 - py0, px1 - px0))
+        ax.annotate(label, xy=(36.0, y_of(36.0)), xytext=(0, 5), textcoords="offset points",
+                    rotation=angle, rotation_mode="anchor", ha="center", va="bottom",
+                    fontsize=10, color=colour, bbox=halo)
+    ax.text(95.0, 14.0, "Gaia, about 10 microarcseconds", ha="right", va="bottom", fontsize=10, color="#c0392b")
 
     fig.tight_layout()
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

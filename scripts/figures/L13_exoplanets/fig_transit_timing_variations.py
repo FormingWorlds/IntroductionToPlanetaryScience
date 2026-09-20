@@ -30,7 +30,7 @@ def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
     fig, (ax1, ax2) = plt.subplots(
-        1, 2, figsize=(9.0, 4.2), gridspec_kw={"width_ratios": [1.12, 1.0]}
+        1, 2, figsize=(7.65, 3.57), gridspec_kw={"width_ratios": [1.12, 1.0]}
     )
 
     # --- Panel (a): Observed-minus-calculated (O-C) transit timing diagram ---
@@ -111,7 +111,7 @@ def make_plot() -> plt.Figure:
             "#e8f5e9",
             "#2ca25f",
             "eclipse timing in binaries:",
-            "circumbinary planets (Kepler-16 b, 2011)",
+            "circumbinary planets\n(Kepler-16 b, 2011)",
         ),
     ]
 
@@ -147,7 +147,7 @@ def make_plot() -> plt.Figure:
         )
 
     fig.tight_layout()
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 
