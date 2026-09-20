@@ -53,7 +53,7 @@ def make_plot() -> plt.Figure:
         ax.text(7.475, yc, answer, ha="center", va="center", fontsize=10, zorder=4)
         ax.annotate("", xy=(5.03, yc), xytext=(4.87, yc), arrowprops=dict(arrowstyle="-|>", color="0.4", lw=1.2))
     fig.subplots_adjust(left=0.01, right=0.99, top=0.99, bottom=0.01)
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

@@ -216,7 +216,7 @@ def make_plot() -> Path:
     panel_a(axes[0])
     panel_b(axes[1])
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

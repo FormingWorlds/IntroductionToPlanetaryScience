@@ -9,17 +9,17 @@ Working definition of life schematic diagram illustrating:
   methane solvents not excluded).
 
 Citations and provenance:
-- Markdown source: book/14_synthesis/
-  Heading: "What is life?" (book/14_synthesis/
+- Markdown source: book/14_synthesis/synthesis.md
+  Heading: "What is life?" (synthesis.md:530)
 - Definition: "The working definition, going back to {cite:t}`Lederberg1965`,
   is that life is a self-replicating, metabolising, evolving chemical
-  system." (book/14_synthesis/
+  system." (synthesis.md:533)
 - Dominant biology: "The search for life elsewhere is dominated by
   carbon-based, water-as-solvent biology because we know its spectroscopic
-  and geochemical fingerprints." (book/14_synthesis/
+  and geochemical fingerprints." (synthesis.md:536)
 - Alternative biochemistries: "Alternative biochemistries (silicon-based,
   ammonia-solvent, methane-solvent) are not excluded in principle, but
-  they are not our default working hypothesis." (book/14_synthesis/
+  they are not our default working hypothesis." (synthesis.md:537)
 - Sketch specification:
   "A diagram of the working definition: three overlapping circles labelled
   self-replicating, metabolising, evolving with 'life' at the centre, and
@@ -169,7 +169,7 @@ def make_plot() -> Path:
     fig, ax = plt.subplots(figsize=(7.2, 4.2))
     draw_schematic(ax)
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

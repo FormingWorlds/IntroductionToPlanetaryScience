@@ -222,7 +222,7 @@ def make_plot() -> Path:
     _note(ax_a)
     panel_b(ax_b)
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:
