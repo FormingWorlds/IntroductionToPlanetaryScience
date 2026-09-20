@@ -768,7 +768,7 @@ Their measurement is a primary goal of EnVision and DAVINCI.
 :width: 100%
 :align: center
 
-Schematic timeline of the evidence for present-day volcanic activity on Venus. Top row: the coverage of Pioneer Venus (1978 to 1992), Magellan (1990 to 1994) and Venus Express (2006 to 2014), with a qualitative sketch of the factor-of-several swings in cloud-top SO$_2$ observed during the Pioneer Venus and Venus Express eras (no numerical values implied). Middle row: the Venus Express near-infrared thermal emission anomalies over Idunn Mons, reported in 2010 and consistent with cooling of recent lava flows. Bottom row: the change in a vent on the flank of Maat Mons between the 1990 and 1992 Magellan radar cycles, identified by {cite:t}`HerrickHensley2023` as the first direct evidence of an eruption. Course-original figure.
+Schematic timeline of the evidence for present-day volcanic activity on Venus. Top row: the coverage of Pioneer Venus (1978 to 1992), Magellan (1990 to 1994) and Venus Express (2006 to 2014), with a qualitative sketch of the factor-of-several swings in cloud-top SO$_2$ observed during the Pioneer Venus and Venus Express eras (no numerical values implied). Middle row: the Venus Express near-infrared thermal emission anomalies over Idunn Mons, reported in 2010 and consistent with cooling of recent lava flows. Bottom row: the change in a vent on the flank of Maat Mons between two Magellan radar images taken 8 months apart, identified by {cite:t}`HerrickHensley2023` as the first direct evidence of an eruption. Course-original figure.
 ```
 
 ## Part 3: Comparative payoff

@@ -67,7 +67,7 @@ def _zoom_x(t_ma):
 
 def make_plot() -> Path:
     apply_style()
-    fig, ax = plt.subplots(figsize=(11.5, 3.8))
+    fig, ax = plt.subplots(figsize=(9.78, 3.23))
     ax.set_xlim(T0, 0.0)
     ax.set_ylim(-0.55, 5.4)
     ax.axis("off")
@@ -134,7 +134,7 @@ def make_plot() -> Path:
         )
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main():
