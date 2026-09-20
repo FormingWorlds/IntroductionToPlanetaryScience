@@ -1,7 +1,7 @@
 """Dynamo lifetimes and longevity across the four rocky planets.
 
 Earth and Mercury maintain active dynamos driven by core convection,
-whereas Mars sustained a dynamo only for its first 500 to 800 Myr,
+whereas Mars sustained a dynamo only for its first 400 to 800 Myr,
 ceasing between 4.1 and 3.7 Ga, and Venus lacks a detectable field.
 """
 
@@ -21,7 +21,7 @@ OUT_AVIF = REPO_ROOT / "book/10_mercury_mars/figures/dynamo_lifetimes.avif"
 def make_plot() -> plt.Figure:
     """Build the figure, save it and return it."""
     apply_style()
-    fig, ax = plt.subplots(figsize=(9.2, 4.8))
+    fig, ax = plt.subplots(figsize=(7.82, 4.08))
 
     ax.set_xlim(4.6, -0.1)
     ax.set_ylim(-0.28, 5.5)
@@ -36,18 +36,19 @@ def make_plot() -> plt.Figure:
     ax.add_patch(Rectangle((4.0, y_earth - h / 2), 0.5, h, facecolor="#e8f1fa", edgecolor="#1f6db8", hatch="//", lw=1.2))
     ax.add_patch(Rectangle((0.0, y_earth - h / 2), 4.0, h, facecolor="#1f6db8", edgecolor="#1f6db8", lw=1.2))
     ax.text(2.0, y_earth, "active dynamo, compositional buoyancy", color="white", ha="center", va="center", fontsize=10, weight="bold")
+    ax.text(4.25, y_earth - h / 2 - 0.08, "hatched: onset undated", ha="center", va="top", fontsize=9, color="#1f6db8", bbox=dict(facecolor="white", edgecolor="none", pad=1.0))
 
     # Mercury: weak dynamo in a thin liquid shell
     ax.add_patch(Rectangle((4.0, y_merc - h / 2), 0.5, h, facecolor="#e8f1fa", edgecolor="#4a6984", hatch="//", lw=1.2))
     ax.add_patch(Rectangle((0.0, y_merc - h / 2), 4.0, h, facecolor="#4a6984", edgecolor="#4a6984", lw=1.2))
     ax.text(2.0, y_merc, "weak dynamo, thin liquid shell", color="white", ha="center", va="center", fontsize=10, weight="bold")
 
-    # Mars: dynamo for first 500 to 800 Myr, ceased between 4.1 and 3.7 Ga
+    # Mars: dynamo for the first 400 to 800 Myr, ceased between 4.1 and 3.7 Ga
     ax.add_patch(Rectangle((4.1, y_mars - h / 2), 0.4, h, facecolor="#c0392b", edgecolor="#c0392b", lw=1.2))
     ax.add_patch(Rectangle((3.7, y_mars - h / 2), 0.4, h, facecolor="#fdebd0", edgecolor="#c0392b", lw=1.2))
 
     ax.add_patch(FancyArrowPatch((4.25, 2.72), (4.25, 2.45), arrowstyle="-|>", mutation_scale=10, color="#c0392b", lw=1.2))
-    ax.text(4.35, 2.80, "dynamo (first 500 to 800 Myr)", ha="left", va="bottom", fontsize=10, color="#c0392b")
+    ax.text(4.35, 2.80, "dynamo (first 400 to 800 Myr)", ha="left", va="bottom", fontsize=10, color="#c0392b")
 
     ax.add_patch(FancyArrowPatch((3.40, y_mars), (3.68, y_mars), arrowstyle="-|>", mutation_scale=10, color="#c0392b", lw=1.2))
     ax.text(3.30, y_mars, "longer-lived or episodic (MAVEN crustal fields to 3.7 Ga)", ha="left", va="center", fontsize=10, color="#c0392b")
@@ -80,7 +81,7 @@ def make_plot() -> plt.Figure:
     ax.grid(axis="y", visible=False)
 
     fig.tight_layout()
-    save_figure(fig, OUT_AVIF)
+    save_figure(fig, OUT_AVIF, dpi=280)
     return fig
 
 

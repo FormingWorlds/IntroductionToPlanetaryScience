@@ -32,7 +32,7 @@ OUT_AVIF = REPO_ROOT / "book/10_mercury_mars/figures/size_distance_regimes.avif"
 PLANETS: dict[str, tuple[float, float, tuple[int, int], str]] = {
     "Mercury": (0.387, 0.383, (10, 5), "left"),
     "Venus": (0.723, 0.950, (-10, 8), "right"),
-    "Earth": (1.000, 1.000, (10, -5), "left"),
+    "Earth": (1.000, 1.000, (-10, 5), "right"),
     "Mars": (1.524, 0.532, (-10, 6), "right"),
     "Moon": (1.000, 0.273, (10, 0), "left"),
 }
@@ -66,7 +66,7 @@ def make_plot() -> Path:
         Path to the saved AVIF figure file.
     """
     apply_style()
-    fig, ax = plt.subplots(figsize=(7.0, 4.3))
+    fig, ax = plt.subplots(figsize=(5.04, 3.10))
 
     # Heliocentric distance grid from 0.3 to 1.7 AU
     d_grid = np.linspace(0.3, 1.7, 300)
@@ -82,7 +82,7 @@ def make_plot() -> Path:
     ax.plot(d_grid, r_boundary, color="#2b5c8f", ls="--", lw=1.8, zorder=1)
 
     # Qualitative regime labels
-    ax.text(0.42, 1.10, "Atmosphere retained", fontsize=11, fontweight="bold",
+    ax.text(0.48, 1.10, "Atmosphere retained", fontsize=11, fontweight="bold",
             color="#1a5276", ha="center", va="center", zorder=2)
     ax.text(0.55, 0.28, "Atmosphere lost", fontsize=11, fontweight="bold",
             color="#a04000", ha="center", va="center", zorder=2)
@@ -94,11 +94,11 @@ def make_plot() -> Path:
                       edgecolor="none", alpha=0.85))
 
     # Annotation arrow: dynamo lifetime grows with size
-    arrow = FancyArrowPatch((1.38, 0.70), (1.38, 1.02),
+    arrow = FancyArrowPatch((1.30, 0.70), (1.30, 1.00),
                             arrowstyle="-|>", mutation_scale=14,
                             color="#2c3e50", lw=1.5, zorder=2)
     ax.add_patch(arrow)
-    ax.text(1.38, 1.06, "Dynamo lifetime\ngrows with size", fontsize=10,
+    ax.text(1.30, 1.035, "Dynamo lifetime\ngrows with size", fontsize=10,
             ha="center", va="bottom", color="#2c3e50", zorder=2)
 
     # Plot planets and Moon at actual radii and distances
@@ -122,7 +122,7 @@ def make_plot() -> Path:
     ax.set_title("Rocky planet evolution regimes (schematic)", fontsize=12)
 
     fig.tight_layout()
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

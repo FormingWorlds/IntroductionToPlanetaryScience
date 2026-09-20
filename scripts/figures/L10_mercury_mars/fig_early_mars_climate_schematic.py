@@ -500,7 +500,7 @@ def make_plot() -> Path:
         Path of the written book AVIF file.
     """
     apply_style()
-    fig, (ax_a, ax_b) = plt.subplots(2, 1, figsize=(7.6, 8.0))
+    fig, (ax_a, ax_b) = plt.subplots(2, 1, figsize=(7.60, 8.00))
     for ax in (ax_a, ax_b):
         ax.set_xlim(0, 10.0)
         ax.set_ylim(-1.0, 4.2)
@@ -509,7 +509,7 @@ def make_plot() -> Path:
     panel_a(ax_a)
     panel_b(ax_b)
     fig.tight_layout(pad=0.3)
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

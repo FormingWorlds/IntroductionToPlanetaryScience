@@ -192,7 +192,7 @@ def make_plot() -> Path:
         Path to the saved AVIF figure file.
     """
     apply_style()
-    fig, ax = plt.subplots(figsize=(7.8, 4.6))
+    fig, ax = plt.subplots(figsize=(7.80, 4.60))
     ax.set_xlim(0, 10)
     ax.set_ylim(0, 6)
     ax.axis("off")
@@ -220,7 +220,7 @@ def make_plot() -> Path:
     draw_arrows(ax)
     draw_rebaseline_note(ax)
 
-    return save_figure(fig, OUT_AVIF, avif_quality=80)
+    return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
 def main() -> None:

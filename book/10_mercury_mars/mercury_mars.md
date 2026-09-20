@@ -899,7 +899,7 @@ However, a magnetic shield suppresses **ion escape** by up to an order of magnit
 :width: 100%
 :align: center
 
-Dynamo lifetimes of the rocky planets on one time axis. Earth's dynamo is active and sustained by compositional buoyancy, Mercury's weak dynamo by partial core freezing in a thin liquid shell (the start of both is not shown); Mars had a dynamo for its first 500 to 800 Myr, and crustal fields as young as about 3.7 Ga suggest a longer-lived or episodic dynamo; Venus has no detectable field and an unknown history. A magnetic shield suppresses ion escape by up to an order of magnitude over Gyr timescales, but an unmagnetised Mars-sized planet still loses its atmosphere on $10^9$-year timescales. Course-original figure.
+Dynamo lifetimes of the rocky planets on one time axis. Earth's dynamo is active and sustained by compositional buoyancy, Mercury's weak dynamo by partial core freezing in a thin liquid shell (the onset of both is undated, hatched); Mars had a dynamo for its first 400 to 800 Myr, and crustal fields as young as about 3.7 Ga suggest a longer-lived or episodic dynamo; Venus has no detectable field and an unknown history. A magnetic shield suppresses ion escape by up to an order of magnitude over Gyr timescales, but an unmagnetised Mars-sized planet still loses its atmosphere on $10^9$-year timescales. Course-original figure.
 ```
 
 ### What makes a rocky planet habitable?
