@@ -110,17 +110,17 @@ check("(c) relative humidity", p_ch4 / 1.710e4, 0.44, rtol=5e-3)
 print("Problem 5  Mercury, the shrinking planet")
 m_merc = 4 / 3 * math.pi * R_MERC**3 * RHO_MERC
 check("(a) Mercury mass [kg]", m_merc, 3.302e23)
-e_cool = 3.302e23 * 800.0 * 200.0
-check("(a) cooling energy [J]", e_cool, 5.283e28)
+e_cool = 3.302e23 * 1200.0 * 200.0
+check("(a) cooling energy [J]", e_cool, 7.925e28)
 t_45 = 4.5e9 * YR
 check("(b) 4.5 Gyr [s]", t_45, 1.4202e17)
-p_avg = 5.283e28 / 1.4202e17
-check("(b) mean power [W]", p_avg, 3.720e11)
+p_avg = 7.925e28 / 1.4202e17
+check("(b) mean power [W]", p_avg, 5.580e11)
 area = 4 * math.pi * R_MERC**2
 check("(b) surface area [m^2]", area, 7.4815e13)
-q_flux = 3.720e11 / 7.4815e13
-check("(b) heat flux [W/m^2]", q_flux, 4.972e-3)
-check("(b) Earth/Mercury flux ratio ~17", 87.0 / (q_flux * 1e3), 17.0, rtol=3e-2)
+q_flux = 5.580e11 / 7.4815e13
+check("(b) heat flux [W/m^2]", q_flux, 7.458e-3)
+check("(b) Earth/Mercury flux ratio ~12", 90.0 / (q_flux * 1e3), 12.0, rtol=3e-2)
 dr = 3e-5 / 3 * R_MERC * 200.0
 check("(c) radius contraction [m]", dr, 4880.0)
 

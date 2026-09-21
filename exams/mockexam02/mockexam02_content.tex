@@ -45,8 +45,8 @@ Body & $a$, $A$ & Further data \\
 Venus & $0.723\ \mathrm{AU}$ & \\
 Earth & $1.000\ \mathrm{AU}$ & $R = 6371\ \mathrm{km}$, $\bar{\rho} = 5514\ \mathrm{kg\,m^{-3}}$ \\
 Mars & $1.524\ \mathrm{AU}$ & $M = 6.417 \times 10^{23}\ \mathrm{kg}$, $R = 3390\ \mathrm{km}$ \\
-Saturn & $9.58\ \mathrm{AU}$, $A = 0.34$ & $M = 5.683 \times 10^{26}\ \mathrm{kg}$, $R = 58\,232\ \mathrm{km}$, effective temperature $95\ \mathrm{K}$, outer edge of the main rings at $136\,800\ \mathrm{km}$ from the centre \\
-Titan & & $M = 1.345 \times 10^{23}\ \mathrm{kg}$, $R = 2575\ \mathrm{km}$, upper-atmosphere $T = 160\ \mathrm{K}$ \\
+Saturn & $9.537\ \mathrm{AU}$, $A = 0.34$ & $M = 5.683 \times 10^{26}\ \mathrm{kg}$, $R = 58\,232\ \mathrm{km}$, effective temperature $95\ \mathrm{K}$, outer edge of the main rings at $136\,800\ \mathrm{km}$ from the centre \\
+Titan & & $M = 1.345 \times 10^{23}\ \mathrm{kg}$, $R = 2575\ \mathrm{km}$, upper-atmosphere $T = 150\ \mathrm{K}$ \\
 Moon & & $M = 7.342 \times 10^{22}\ \mathrm{kg}$, $R = 1737\ \mathrm{km}$, dayside surface $T = 390\ \mathrm{K}$ \\
 Comet & $q = 0.59\ \mathrm{AU}$, $Q = 35.1\ \mathrm{AU}$ & \\
 \bottomrule
@@ -127,7 +127,7 @@ The gravitational binding energy of a uniform sphere of mass $M$ and radius $R$,
   E = \frac{3}{5} \frac{G M^2}{R},
 \]
 is the energy released when the body is assembled from material dispersed to infinity.
-The heat needed to warm a mass $M$ by $\Delta T$ is $E = M c_p \Delta T$; for rock, $c_p \approx 1000\ \mathrm{J\,kg^{-1}\,K^{-1}}$, and silicate rock starts to melt near $1400\ \mathrm{K}$.
+The heat needed to warm a mass $M$ by $\Delta T$ is $E = M c_p \Delta T$; for rock, $c_p \approx 1200\ \mathrm{J\,kg^{-1}\,K^{-1}}$, and silicate rock starts to melt near $1400\ \mathrm{K}$.
 
 \parti \pts{3} Show that the accretion of Mars released about $4.9 \times 10^{30}\ \mathrm{J}$.
 
@@ -148,12 +148,12 @@ Explain in 1 to 2 sentences why the actual temperature rise was smaller, and wha
 
 \begin{solution}
 \[
-  \Delta T = \frac{E}{M c_p} = \frac{4.864 \times 10^{30}}{6.417 \times 10^{23} \times 1000} = 7580\ \mathrm{K},
+  \Delta T = \frac{E}{M c_p} = \frac{4.864 \times 10^{30}}{6.417 \times 10^{23} \times 1200} = 6317\ \mathrm{K},
 \]
 several times the melting temperature of rock.
 The actual rise was smaller because much of the accretion energy was radiated back to space as the surface was heated impact by impact; the estimate is an upper limit.
 The margin is so large, however, that even partial retention (deep energy burial by large impacts, plus the blanketing of an early atmosphere) melts a substantial part of the planet: early Mars went through a magma ocean stage.
-\answer{$\Delta T \approx 7600\ \mathrm{K}$ if fully retained, far above the $\approx 1400\ \mathrm{K}$ melting point: accretion energy is ample to melt Mars even if only a fraction is kept.}
+\answer{$\Delta T \approx 6300\ \mathrm{K}$ if fully retained, far above the $\approx 1400\ \mathrm{K}$ melting point: accretion energy is ample to melt Mars even if only a fraction is kept.}
 \end{solution}
 
 \parti \pts{4} Judge this claim in 3 to 4 sentences:
@@ -262,40 +262,40 @@ where $R_{\mathrm{p}}$ and $\rho_{\mathrm{p}}$ are the radius and mean density o
 \answer{$\bar{\rho} = 687\ \mathrm{kg\,m^{-3}}$, less than water ($1000\ \mathrm{kg\,m^{-3}}$): Saturn is the least dense planet in the solar system.}
 \end{solution}
 
-\parti \pts{4} The ring particles are water ice with $\rho_{\mathrm{m}} = 900\ \mathrm{kg\,m^{-3}}$.
-Show that the Roche limit lies near $130\,000\ \mathrm{km}$ from Saturn's centre.
+\parti \pts{4} Take the ring particles to be icy material with $\rho_{\mathrm{m}} = 1000\ \mathrm{kg\,m^{-3}}$ as a round value.
+Show that the Roche limit lies near $126\,000\ \mathrm{km}$ from Saturn's centre.
 Compare it with the outer edge of the main rings and with the fact that all of Saturn's sizeable moons orbit beyond $180\,000\ \mathrm{km}$, and state what this comparison says about why the rings exist.
 
 \begin{solution}
 \[
-  d = 2.46 \times 5.8232 \times 10^{7} \times \left( \frac{687.1}{900} \right)^{1/3}
-    = 2.46 \times 5.8232 \times 10^{7} \times 0.9140
-    = 1.309 \times 10^{8}\ \mathrm{m} = 130\,900\ \mathrm{km},
+  d = 2.46 \times 5.8232 \times 10^{7} \times \left( \frac{687.1}{1000} \right)^{1/3}
+    = 2.46 \times 5.8232 \times 10^{7} \times 0.8823
+    = 1.264 \times 10^{8}\ \mathrm{m} = 126\,400\ \mathrm{km},
 \]
 or about $2.2$ Saturn radii.
-The main rings end at $136\,800\ \mathrm{km}$, essentially at this limit, while the sizeable moons all orbit well outside it.
+The main rings end at $136\,800\ \mathrm{km}$, about $8\%$ beyond this nominal limit (real ring particles are porous, with densities well below that of solid ice, so the true limit lies farther out), while the sizeable moons all orbit well outside it.
 Inside the Roche limit tidal forces defeat self-gravity: ice fragments there cannot accrete into a moon, and a moon that strays inside is pulled apart.
 The rings occupy exactly the zone where moons cannot exist.
 (The numerical coefficient depends on the satellite's strength and shape, so the limit marks a zone rather than a sharp line; the sharpness of the outer edge itself is maintained by a $7{:}6$ orbital resonance with the small moon Janus, not by tidal physics alone.)
-\answer{$d \approx 131\,000\ \mathrm{km} \approx 2.2\, R_{\mathrm{Saturn}}$: rings inside, moons outside. Tides prevent accretion inside the limit.}
+\answer{$d \approx 126\,000\ \mathrm{km} \approx 2.2\, R_{\mathrm{Saturn}}$: rings inside, moons outside. Tides prevent accretion inside the limit.}
 \end{solution}
 
 \parti \pts{3} Compute the sunlight flux Saturn absorbs per square metre of its surface.
 Then use the measured effective temperature (data table) to show that Saturn emits about $1.9$ times the power it absorbs, and explain in 1 to 2 sentences where the excess comes from.
 
 \begin{solution}
-The solar flux at Saturn is $S = S_\oplus/a^2 = 1361/9.58^2 = 14.83\ \mathrm{W\,m^{-2}}$.
+The solar flux at Saturn is $S = S_\oplus/a^2 = 1361/9.537^2 = 14.96\ \mathrm{W\,m^{-2}}$.
 Absorbed per unit surface area, with $A = 0.34$:
 \[
-  \frac{S}{4}(1 - A) = \frac{14.83}{4} \times 0.66 = 2.447\ \mathrm{W\,m^{-2}}.
+  \frac{S}{4}(1 - A) = \frac{14.96}{4} \times 0.66 = 2.468\ \mathrm{W\,m^{-2}}.
 \]
 The measured effective temperature of $95\ \mathrm{K}$ corresponds to an emitted flux
 \[
   \sigma T_{\mathrm{eff}}^4 = 5.670 \times 10^{-8} \times 95^4 = 4.618\ \mathrm{W\,m^{-2}},
 \]
-a factor $4.618/2.447 = 1.89$ above the absorbed flux.
-The excess ($\approx 2.2\ \mathrm{W\,m^{-2}}$) is internal heat: slow gravitational contraction, and for Saturn in particular the settling of helium droplets through the metallic hydrogen interior (helium rain), both convert gravitational energy into heat.
-\answer{Absorbed $2.45\ \mathrm{W\,m^{-2}}$ versus emitted $4.62\ \mathrm{W\,m^{-2}}$: Saturn radiates $1.9$ times what it absorbs, powered by contraction and helium rain.}
+a factor $4.618/2.468 = 1.87$ above the absorbed flux.
+The excess ($\approx 2.1\ \mathrm{W\,m^{-2}}$) is internal heat: slow gravitational contraction, and for Saturn in particular the settling of helium droplets through the metallic hydrogen interior (helium rain), both convert gravitational energy into heat.
+\answer{Absorbed $2.47\ \mathrm{W\,m^{-2}}$ versus emitted $4.62\ \mathrm{W\,m^{-2}}$: Saturn radiates $1.9$ times what it absorbs, powered by contraction and helium rain.}
 \end{solution}
 
 
@@ -327,18 +327,18 @@ What does the result explain about Titan's atmosphere?
 \begin{solution}
 For $\mathrm{N_2}$, $m = 28 \times 1.661 \times 10^{-27} = 4.6508 \times 10^{-26}\ \mathrm{kg}$:
 \[
-  v_{\mathrm{th}} = \sqrt{\frac{2 \times 1.381 \times 10^{-23} \times 160}{4.6508 \times 10^{-26}}}
-                  = \sqrt{9.5020 \times 10^{4}} = 308\ \mathrm{m\,s^{-1}},
+  v_{\mathrm{th}} = \sqrt{\frac{2 \times 1.381 \times 10^{-23} \times 150}{4.6508 \times 10^{-26}}}
+                  = \sqrt{8.9082 \times 10^{4}} = 298\ \mathrm{m\,s^{-1}},
 \]
-so $v_{\mathrm{esc}}/v_{\mathrm{th}} = 2640/308.3 = 8.6 > 6$: nitrogen is retained.
+so $v_{\mathrm{esc}}/v_{\mathrm{th}} = 2640/298.5 = 8.8 > 6$: nitrogen is retained.
 For $\mathrm{H_2}$, $m = 3.322 \times 10^{-27}\ \mathrm{kg}$:
 \[
-  v_{\mathrm{th}} = \sqrt{\frac{4.4192 \times 10^{-21}}{3.322 \times 10^{-27}}}
-                  = \sqrt{1.3303 \times 10^{6}} = 1153\ \mathrm{m\,s^{-1}},
+  v_{\mathrm{th}} = \sqrt{\frac{4.1430 \times 10^{-21}}{3.322 \times 10^{-27}}}
+                  = \sqrt{1.2471 \times 10^{6}} = 1117\ \mathrm{m\,s^{-1}},
 \]
-so $v_{\mathrm{esc}}/v_{\mathrm{th}} = 2640/1153 = 2.3 < 6$: hydrogen escapes.
+so $v_{\mathrm{esc}}/v_{\mathrm{th}} = 2640/1117 = 2.4 < 6$: hydrogen escapes.
 This is why Titan keeps a dense $\mathrm{N_2}$ (and methane) atmosphere while the hydrogen produced by methane photochemistry leaks away to space.
-\answer{$v_{\mathrm{th}}(\mathrm{N_2}) = 308\ \mathrm{m\,s^{-1}}$ (ratio $8.6$: retained), $v_{\mathrm{th}}(\mathrm{H_2}) = 1153\ \mathrm{m\,s^{-1}}$ (ratio $2.3$: lost).}
+\answer{$v_{\mathrm{th}}(\mathrm{N_2}) = 298\ \mathrm{m\,s^{-1}}$ (ratio $8.8$: retained), $v_{\mathrm{th}}(\mathrm{H_2}) = 1117\ \mathrm{m\,s^{-1}}$ (ratio $2.4$: lost).}
 \end{solution}
 
 \parti \pts{3} The Moon's escape velocity is close to Titan's, yet the Moon has no atmosphere.
@@ -357,8 +357,8 @@ But the Moon orbits at $1\ \mathrm{AU}$, and its dayside reaches $390\ \mathrm{K
                   = \sqrt{2.3161 \times 10^{5}} = 481\ \mathrm{m\,s^{-1}},
 \]
 so $v_{\mathrm{esc}}/v_{\mathrm{th}} = 2375/481.3 = 4.9 < 6$: even nitrogen escapes over billions of years.
-Titan holds an atmosphere with the same gravity because at $9.6\ \mathrm{AU}$ it is cold; temperature, not just gravity, decides.
-\answer{Moon: $v_{\mathrm{esc}} = 2.38\ \mathrm{km\,s^{-1}}$ but $v_{\mathrm{th}}(\mathrm{N_2}) = 481\ \mathrm{m\,s^{-1}}$ at $390\ \mathrm{K}$, ratio $4.9 < 6$: too warm to keep gas that Titan, at the same gravity but $160\ \mathrm{K}$, retains.}
+Titan holds an atmosphere with the same gravity because at $9.5\ \mathrm{AU}$ it is cold; temperature, not just gravity, decides.
+\answer{Moon: $v_{\mathrm{esc}} = 2.38\ \mathrm{km\,s^{-1}}$ but $v_{\mathrm{th}}(\mathrm{N_2}) = 481\ \mathrm{m\,s^{-1}}$ at $390\ \mathrm{K}$, ratio $4.9 < 6$: too warm to keep gas that Titan, at the same gravity but $150\ \mathrm{K}$, retains.}
 \end{solution}
 
 

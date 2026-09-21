@@ -32,17 +32,17 @@ RHO_EARTH = 5514.0  # kg m^-3
 A_VENUS = 0.723  # AU
 A_MARS = 1.524  # AU
 M_MARS, R_MARS = 6.417e23, 3.390e6
-A_SAT, ALB_SAT = 9.58, 0.34
+A_SAT, ALB_SAT = 9.537, 0.34
 M_SAT, R_SAT = 5.683e26, 5.8232e7
 TEFF_SAT = 95.0  # K
-M_TITAN, R_TITAN, T_TITAN = 1.345e23, 2.575e6, 160.0
+M_TITAN, R_TITAN, T_TITAN = 1.345e23, 2.575e6, 150.0
 M_MOON, R_MOON, T_MOON = 7.342e22, 1.737e6, 390.0
 Q_PERI, Q_APH = 0.59, 35.1
 
 # Values printed in the problem statements
-CP_ROCK = 1000.0  # J kg^-1 K^-1
+CP_ROCK = 1200.0  # J kg^-1 K^-1
 RHO_CORE, RHO_MANTLE = 11000.0, 4500.0  # kg m^-3, two-layer Earth model
-RHO_ICE = 900.0  # kg m^-3, ring material
+RHO_ICE = 1000.0  # kg m^-3, ring material
 MU_N2, MU_H2 = 28.0, 2.0
 HZ_SIN, HZ_SOUT = 1.06, 0.35  # inner/outer edge flux in units of S0
 L_DWARF, M_DWARF = 0.02, 0.30  # red dwarf, solar units
@@ -83,8 +83,8 @@ e_bind = e_num / (5.0 * R_MARS)
 check("(a) E checkpoint [J]", e_bind, 4.864e30)
 
 dt_mars = 4.864e30 / (M_MARS * CP_ROCK)  # hands forward 4.864e30
-check("(b) Delta T [K]", dt_mars, 7580.0)
-check("(b) Delta T answer [K]", dt_mars, 7600.0, rtol=5e-3)
+check("(b) Delta T [K]", dt_mars, 6317.0)
+check("(b) Delta T answer [K]", dt_mars, 6300.0, rtol=5e-3)
 
 # ── Problem 3: Inside the Earth ─────────────────────────────
 print("Problem 3  Inside the Earth")
@@ -109,24 +109,24 @@ rho_sat = M_SAT / v_sat
 check("(a) mean density", rho_sat, 687.1)
 
 cube = (687.1 / RHO_ICE) ** (1.0 / 3.0)  # hands forward 687.1
-check("(b) (rho_p/rho_m)^(1/3)", cube, 0.9140)
-d_roche = 2.46 * R_SAT * 0.9140
-check("(b) Roche limit [m]", d_roche, 1.309e8, rtol=1e-3)
-check("(b) Roche limit checkpoint [km]", d_roche / 1e3, 130900.0, rtol=1e-3)
+check("(b) (rho_p/rho_m)^(1/3)", cube, 0.8823)
+d_roche = 2.46 * R_SAT * 0.8823
+check("(b) Roche limit [m]", d_roche, 1.264e8, rtol=1e-3)
+check("(b) Roche limit checkpoint [km]", d_roche / 1e3, 126400.0, rtol=1e-3)
 check("(b) d in Saturn radii", d_roche / R_SAT, 2.2, rtol=3e-2)
 # Full-precision cross-check: the limit depends on the planet only through
 # its mass, d = 2.46 (M / (4/3 pi rho_m))^(1/3), so radius rounding cancels.
 d_mass_form = 2.46 * (M_SAT / ((4.0 / 3.0) * math.pi * RHO_ICE)) ** (1.0 / 3.0)
-check("(b) Roche limit, mass form [m]", d_mass_form, 1.309e8, rtol=1e-3)
+check("(b) Roche limit, mass form [m]", d_mass_form, 1.264e8, rtol=1e-3)
 
 s_sat = S0 / A_SAT**2
-check("(c) S at Saturn", s_sat, 14.83)
-absorbed = (14.83 / 4.0) * (1.0 - ALB_SAT)  # hands forward 14.83
-check("(c) absorbed flux", absorbed, 2.447)
+check("(c) S at Saturn", s_sat, 14.96)
+absorbed = (14.96 / 4.0) * (1.0 - ALB_SAT)  # hands forward 14.96
+check("(c) absorbed flux", absorbed, 2.468)
 emitted = SIGMA * TEFF_SAT**4
 check("(c) emitted flux", emitted, 4.618)
-check("(c) emitted/absorbed", 4.618 / 2.447, 1.89, rtol=2e-3)
-check("(c) internal excess", 4.618 - 2.447, 2.2, rtol=2e-2)
+check("(c) emitted/absorbed", 4.618 / 2.468, 1.87, rtol=2e-3)
+check("(c) internal excess", 4.618 - 2.468, 2.1, rtol=3e-2)
 
 # ── Problem 5: Keeping an atmosphere ────────────────────────
 print("Problem 5  Keeping an atmosphere")
@@ -137,20 +137,20 @@ check("(a) v_esc Titan [m/s]", vesc_titan, 2640.0)
 
 m_n2 = MU_N2 * MU_ATOMIC
 check("(b) m_N2 [kg]", m_n2, 4.6508e-26)
-two_kt_160 = 2.0 * KB * T_TITAN
-check("(b) 2 kB T at 160 K", two_kt_160, 4.4192e-21)
-vth_n2_sq = two_kt_160 / m_n2
-check("(b) v_th^2 N2", vth_n2_sq, 9.5020e4)
+two_kt = 2.0 * KB * T_TITAN
+check("(b) 2 kB T at 150 K", two_kt, 4.1430e-21)
+vth_n2_sq = two_kt / m_n2
+check("(b) v_th^2 N2", vth_n2_sq, 8.9082e4)
 vth_n2 = math.sqrt(vth_n2_sq)
-check("(b) v_th N2 [m/s]", vth_n2, 308.0, rtol=1e-3)
-check("(b) ratio N2", 2640.0 / 308.3, 8.6, rtol=5e-3)
+check("(b) v_th N2 [m/s]", vth_n2, 298.0, rtol=2e-3)
+check("(b) ratio N2", 2640.0 / 298.5, 8.8, rtol=6e-3)
 m_h2 = MU_H2 * MU_ATOMIC
 check("(b) m_H2 [kg]", m_h2, 3.322e-27)
-vth_h2_sq = two_kt_160 / m_h2
-check("(b) v_th^2 H2", vth_h2_sq, 1.3303e6)
+vth_h2_sq = two_kt / m_h2
+check("(b) v_th^2 H2", vth_h2_sq, 1.2471e6)
 vth_h2 = math.sqrt(vth_h2_sq)
-check("(b) v_th H2 [m/s]", vth_h2, 1153.0)
-check("(b) ratio H2", 2640.0 / 1153.0, 2.3, rtol=5e-3)
+check("(b) v_th H2 [m/s]", vth_h2, 1117.0)
+check("(b) ratio H2", 2640.0 / 1117.0, 2.4, rtol=2e-2)
 
 vesc_moon_sq = 2.0 * G * M_MOON / R_MOON
 check("(c) v_esc^2 Moon", vesc_moon_sq, 5.6420e6)
