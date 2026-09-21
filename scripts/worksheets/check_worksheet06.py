@@ -63,6 +63,9 @@ chk("P2a rigid Roche (R_p)", 64710.0 / RP, 1.111, 1e-3)
 chk("P2b fluid Roche (km)", 2.46 * RP * 0.882, 126350.0, 1e-3)
 chk("P2b fluid Roche (R_p)", 126350.0 / RP, 2.170, 1e-3)
 chk("P2b A-ring mismatch (frac)", (137000.0 - 126350.0) / 137000.0, 0.078, 5e-3)
+chk("P2c (rho_p/rho_s)^(1/3) at 400", (687.0 / 400.0) ** (1.0 / 3.0), 1.198, 1e-3)
+chk("P2c rigid Roche at 400 (km)", 1.26 * RP * 1.198, 87900.0, 1e-3)
+chk("P2c fluid Roche at 400 (km)", 2.46 * RP * 1.198, 171500.0, 1e-3)
 
 # ── Problem 3: radioactive dating ────────────────────────────────────────
 # (a) Al-26 decay constant and survival after 2 Myr
