@@ -647,7 +647,7 @@ In the **late loss** scenario, Venus condensed a surface ocean and remained temp
 :align: center
 
 Three-dimensional climate model simulation of the surface air temperature on a hypothetical paleo-Venus at $2.9$ Ga with $75\%$ of present solar irradiance, from panel (a) of {cite:t}`Way2016` Fig. 2, plotted on a Mollweide global projection.
-Surface temperatures range from below freezing in polar regions to about $40^\circ$C at the equator, suggesting that an early Venus could have hosted long-lived liquid surface water.
+Surface air temperatures range from $-22^\circ$C to a maximum of $36^\circ$C, with a global mean of $11^\circ$C, suggesting that an early Venus could have hosted long-lived liquid surface water.
 {cite:t}`Way2016` confirmed similar temperate conditions for several variants (different epochs, modern Earth topography in place of Venusian topography, faster rotation), shown in panels (b)-(d) of the same figure (not reproduced here).
 ```
 
