@@ -1,17 +1,20 @@
 """Generate Fig. (`fig:five-lessons`).
 
 Five-panel infographic schematic illustrating the five key synthesis lessons
-from the course wrap-up (book/14_synthesis/synthesis.md:662-668):
+from the course wrap-up (book/14_synthesis/synthesis.md:744-748):
 (a) Planet formation: physical process governed by accretion, gravity, and
-    disk dynamics (synthesis.md:664).
+    disk dynamics (synthesis.md:744).
 (b) Planetary interiors: heat engines driving dynamos, outgassing, and
-    tectonics (synthesis.md:665).
+    tectonics (synthesis.md:745).
 (c) Atmospheres: dynamic evolving systems with outgassing and escape,
-    showing no default atmosphere exists (synthesis.md:666).
+    showing no default atmosphere exists (synthesis.md:746).
 (d) Habitability: coupled systems property linking star, atmosphere,
-    surface, and interior (synthesis.md:667).
+    surface, and interior (synthesis.md:747).
 (e) The solar system: detailed reference case compared to statistical
-    context from exoplanet populations (synthesis.md:668).
+    context from exoplanet populations (synthesis.md:748).
+
+The script writes the five-panel book AVIF and, for the lecture-14 deck,
+one AVIF per panel.
 
 Caption / figure id : `fig:five-lessons`
 Markdown source     : book/14_synthesis/synthesis.md (lines 662-668)
@@ -29,18 +32,21 @@ from scripts.figures._shared.style import apply_style, save_figure
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 OUT_AVIF = REPO_ROOT / "book/14_synthesis/figures/five_lessons.avif"
+DECK_DIR = REPO_ROOT / "slides/lecture14/figures"
 
 
-def panel_a(ax: plt.Axes) -> None:
+def panel_a(ax: plt.Axes, label: str = "(a) ") -> None:
     """Draw schematic of planet formation in a circumstellar disk.
 
     Illustrates accretion and gravity in a protoplanetary disk as described
-    in synthesis.md:664.
+    in synthesis.md:744.
 
     Parameters
     ----------
     ax : matplotlib.axes.Axes
         Subplot axes on which to draw the schematic.
+    label : str
+        Prefix of the panel title; empty when the panel stands alone.
 
     Returns
     -------
@@ -50,7 +56,7 @@ def panel_a(ax: plt.Axes) -> None:
     ax.set_ylim(-1.0, 1.0)
     ax.set_aspect("equal")
     ax.axis("off")
-    ax.set_title("(a) Planet formation", fontsize=11, fontweight="bold", pad=8)
+    ax.set_title(label + "Planet formation", fontsize=11, fontweight="bold", pad=8)
 
     # Protoplanetary disk outer, gap, and inner regions
     ax.add_patch(Ellipse((0, 0), 2.0, 0.75, facecolor="#f3e9db",
@@ -91,16 +97,18 @@ def panel_a(ax: plt.Axes) -> None:
             ha="center", va="center", color="0.3", style="italic")
 
 
-def panel_b(ax: plt.Axes) -> None:
+def panel_b(ax: plt.Axes, label: str = "(b) ") -> None:
     """Draw schematic of layered planetary interior as a heat engine.
 
     Illustrates core dynamo and convective heat flux as described
-    in synthesis.md:665.
+    in synthesis.md:745.
 
     Parameters
     ----------
     ax : matplotlib.axes.Axes
         Subplot axes on which to draw the schematic.
+    label : str
+        Prefix of the panel title; empty when the panel stands alone.
 
     Returns
     -------
@@ -110,7 +118,7 @@ def panel_b(ax: plt.Axes) -> None:
     ax.set_ylim(-1.0, 1.0)
     ax.set_aspect("equal")
     ax.axis("off")
-    ax.set_title("(b) Planetary interiors", fontsize=11, fontweight="bold", pad=8)
+    ax.set_title(label + "Planetary interiors", fontsize=11, fontweight="bold", pad=8)
 
     # Concentric interior layers: mantle, outer core, inner core
     ax.add_patch(Circle((0, 0), 0.72, facecolor="#dfc27d",
@@ -144,16 +152,18 @@ def panel_b(ax: plt.Axes) -> None:
             ha="center", va="center", color="0.3", style="italic")
 
 
-def panel_c(ax: plt.Axes) -> None:
+def panel_c(ax: plt.Axes, label: str = "(c) ") -> None:
     """Draw schematic of dynamic atmosphere with outgassing and escape.
 
     Illustrates atmospheric interactions with surface, interior, and space
-    as described in synthesis.md:666.
+    as described in synthesis.md:746.
 
     Parameters
     ----------
     ax : matplotlib.axes.Axes
         Subplot axes on which to draw the schematic.
+    label : str
+        Prefix of the panel title; empty when the panel stands alone.
 
     Returns
     -------
@@ -163,7 +173,7 @@ def panel_c(ax: plt.Axes) -> None:
     ax.set_ylim(-1.0, 1.0)
     ax.set_aspect("equal")
     ax.axis("off")
-    ax.set_title("(c) Atmospheres", fontsize=11, fontweight="bold", pad=8)
+    ax.set_title(label + "Atmospheres", fontsize=11, fontweight="bold", pad=8)
 
     # Vertical layers: surface/interior, atmosphere, space
     ax.add_patch(Rectangle((-0.90, -0.65), 1.80, 0.30, facecolor="#a67c52",
@@ -203,16 +213,18 @@ def panel_c(ax: plt.Axes) -> None:
             ha="center", va="center", color="0.3", style="italic")
 
 
-def panel_d(ax: plt.Axes) -> None:
+def panel_d(ax: plt.Axes, label: str = "(d) ") -> None:
     """Draw schematic loop of coupled habitability components.
 
     Illustrates coupling among star, atmosphere, surface, and interior
-    as described in synthesis.md:667.
+    as described in synthesis.md:747.
 
     Parameters
     ----------
     ax : matplotlib.axes.Axes
         Subplot axes on which to draw the schematic.
+    label : str
+        Prefix of the panel title; empty when the panel stands alone.
 
     Returns
     -------
@@ -222,7 +234,7 @@ def panel_d(ax: plt.Axes) -> None:
     ax.set_ylim(-1.0, 1.0)
     ax.set_aspect("equal")
     ax.axis("off")
-    ax.set_title("(d) Habitability", fontsize=11, fontweight="bold", pad=8)
+    ax.set_title(label + "Habitability", fontsize=11, fontweight="bold", pad=8)
 
     # Curved coupling arrows connecting adjacent components in a closed loop
     ax.add_patch(FancyArrowPatch((0.22, 0.46), (0.50, 0.18),
@@ -260,16 +272,18 @@ def panel_d(ax: plt.Axes) -> None:
             ha="center", va="center", color="0.3", style="italic")
 
 
-def panel_e(ax: plt.Axes) -> None:
+def panel_e(ax: plt.Axes, label: str = "(e) ") -> None:
     """Draw schematic comparing solar system reference to exoplanet context.
 
     Illustrates solar system detail next to statistical population scatter
-    as described in synthesis.md:668.
+    as described in synthesis.md:748.
 
     Parameters
     ----------
     ax : matplotlib.axes.Axes
         Subplot axes on which to draw the schematic.
+    label : str
+        Prefix of the panel title; empty when the panel stands alone.
 
     Returns
     -------
@@ -279,7 +293,7 @@ def panel_e(ax: plt.Axes) -> None:
     ax.set_ylim(-1.0, 1.0)
     ax.set_aspect("equal")
     ax.axis("off")
-    ax.set_title("(e) The solar system", fontsize=11, fontweight="bold", pad=8)
+    ax.set_title(label + "The solar system", fontsize=11, fontweight="bold", pad=8)
 
     # Dividing separator between reference case and population scatter
     ax.plot([0.0, 0.0], [-0.75, 0.75], color="0.7", linestyle=":", lw=1.0)
@@ -294,7 +308,7 @@ def panel_e(ax: plt.Axes) -> None:
                         edgecolor="#e68a00", lw=1.2, zorder=2))
     for r in (0.25, 0.45, 0.70):
         arc = Arc((-0.95, -0.05), 2 * r, 2 * r, angle=0,
-                  theta1=-45, theta2=45, color="0.6", linestyle="--", lw=0.9)
+                  theta1=-35, theta2=35, color="0.6", linestyle="--", lw=0.9)
         ax.add_patch(arc)
 
     ax.add_patch(Circle((-0.50, -0.05), 0.035, facecolor="#1f77b4",
@@ -344,10 +358,31 @@ def make_plot() -> Path:
     return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
+def make_deck_panels() -> list[Path]:
+    """Render each panel alone for the deck, one frame per lesson, without the panel letter.
+
+    Returns
+    -------
+    list of pathlib.Path
+        Paths of the written deck AVIF files.
+    """
+    apply_style()
+    written = []
+    for letter, draw in zip("abcde", (panel_a, panel_b, panel_c, panel_d, panel_e)):
+        fig, ax = plt.subplots(figsize=(3.40, 3.20))
+        draw(ax, label="")
+        fig.tight_layout()
+        written.append(save_figure(fig, DECK_DIR / f"five_lessons_{letter}.avif", avif_quality=80, dpi=400))
+        plt.close(fig)
+    return written
+
+
 def main() -> None:
-    """Build the figure and print the output file path."""
+    """Build the book figure and the deck panels, and print their paths."""
     out = make_plot()
     print(f"  plot : {out}")
+    for deck in make_deck_panels():
+        print(f"  deck : {deck}")
 
 
 if __name__ == "__main__":
