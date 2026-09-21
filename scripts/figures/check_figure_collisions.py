@@ -137,14 +137,18 @@ def _legends(fig):
 
 
 def check_module(mod_name: str) -> list[str]:
-    """Rebuild one figure and measure ink under each text box."""
+    """Rebuild a script's figures and measure ink under each text box.
+
+    The book figure comes from ``make_plot``; a script that also writes
+    per-panel deck figures exposes them through ``make_deck_panels``.
+    """
     import scripts.figures._shared.style as style
 
-    captured = {}
+    captured: list = []
     orig_save = style.save_figure
 
     def _capture(fig, out, **kw):
-        captured["fig"] = fig
+        captured.append(fig)
         return out
 
     style.save_figure = _capture
@@ -163,13 +167,26 @@ def check_module(mod_name: str) -> list[str]:
             mod.make_plot(mod.fetch_data(refresh=False))
         else:
             mod.make_plot()
+        if hasattr(mod, "make_deck_panels"):
+            mod.make_deck_panels()
     finally:
         style.save_figure = orig_save
 
-    fig = captured.get("fig")
-    if fig is None:
+    if not captured:
         return [f"{mod_name}: no figure captured"]
+    failures: list[str] = []
+    for fig in captured:
+        failures += _measure(fig, mod_name)
+    return failures
 
+
+def _measure(fig, mod_name: str) -> list[str]:
+    """Measure ink under every text box and legend of one drawn figure."""
+    from matplotlib.backends.backend_agg import FigureCanvasAgg
+
+    # A script may close a deck panel after saving it; give it a canvas again
+    if not hasattr(fig.canvas, "buffer_rgba"):
+        FigureCanvasAgg(fig)
     failures = []
     # Text extents are wrong until the canvas is drawn once
     _render(fig)

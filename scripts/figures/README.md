@@ -161,8 +161,7 @@ converts to AVIF at quality 80 for text-heavy plots, 65 for
 photographic content. Always size the matplotlib figure so that the
 saved PNG is at least as wide in pixels as the `:width:` value in the
 markdown directive; otherwise the browser will upscale and the
-figure will look soft. The `output_files/figure_triage.py` helper
-flags any AVIF that violates this.
+figure will look soft.
 
 ## Adding a new figure
 

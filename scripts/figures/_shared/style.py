@@ -2,8 +2,8 @@
 
 Keeps the visual identity of the lecture notes consistent: serif math,
 sans-serif labels, mid-density grid, no top/right spines unless needed,
-and a 200-dpi PNG-then-AVIF pipeline that matches the figure_triage.py
-expectations (native pixel width >= declared :width: in MyST).
+and a 200-dpi PNG-then-AVIF pipeline sized so that the native pixel width
+is at least the declared :width: in MyST.
 
 Use:
     from scripts.figures._shared.style import apply_style, save_figure
@@ -139,6 +139,7 @@ def _encode_avif(png: Path, avif: Path, quality: int) -> None:
     A broken heif delegate makes magick write non-AVIF bytes under the .avif
     name with exit status 0, so the bytes are checked rather than the status.
     """
+    avif.unlink(missing_ok=True)
     if shutil.which("magick"):
         subprocess.call(
             ["magick", str(png), "-quality", str(quality),
