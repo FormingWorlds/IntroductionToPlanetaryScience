@@ -1,8 +1,9 @@
 """Timeline and thermal history of CAIs and chondrules.
 
 CAIs condensed above about 1400 K at 4567.30 Myr, defining time zero.
-Chondrules formed 2 to 4 Myr later, crystallising from droplets heated
-to 1500 to 1900 K and cooling at hundreds to thousands of K per hour.
+Individual chondrules date from time zero to 2.6 Myr; the chondrules
+crystallised from droplets heated to 1500 to 1900 K and cooled at
+hundreds to thousands of K per hour.
 """
 
 from __future__ import annotations
@@ -48,15 +49,14 @@ def make_plot() -> plt.Figure:
         color="#c0392b",
     )
 
-    # Chondrules: "systematically younger than CAIs by about 2 to 4 Myr"
-    # Shaded band from 2 to 4 Myr
-    ax1.axvspan(2, 4, facecolor="#e8f1fa", edgecolor="none")
+    # Chondrules: Pb-Pb ages from the CAI age to 2.6 Myr later (Connelly 2012)
+    ax1.axvspan(0, 2.6, facecolor="#e8f1fa", edgecolor="none")
     ax1.text(
-        3.0,
+        0.18,
         1.0,
-        "chondrules form,\n2 to 4 Myr after CAIs",
+        "chondrules form,\n0 to 2.6 Myr after CAIs",
         fontsize=10,
-        ha="center",
+        ha="left",
         va="center",
         color="#1f6db8",
     )

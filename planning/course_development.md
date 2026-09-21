@@ -311,14 +311,14 @@ Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–
 - Why meteorites matter: oldest rocks available for lab analysis, absolute ages, ~70,000 classified falls
 - Meteorite classification: chondrites (ordinary, carbonaceous, enstatite) vs achondrites vs irons; oxygen isotope fingerprinting
 - Chondrites: OC (H/L/LL), CC (CI/CM/CV/CO/CR/CK/CH/CB), EC (EH/EL); CI chondrites match solar photosphere
-- Chondrules and CAIs: CAIs are oldest solar system solids (4.567 Gyr), chondrules form 2–4 Myr later
+- Chondrules and CAIs: CAIs are oldest solar system solids (4.567 Gyr), individual chondrules date from CAI time to 2.6 Myr later, most 1 to 3 Myr
 - Isotopic dating: long-lived (Pb–Pb, Rb–Sr, Sm–Nd) vs extinct (²⁶Al, ⁵³Mn, ¹⁸²Hf, ¹²⁹I, ²⁴⁴Pu) chronometers
 - **Blackboard derivation (~10 min):** Pb–Pb isochron dating. Start from N(t) = N₀ e^{−λt}, use the double U→Pb decay system, derive the isochron equation, apply to CAIs for the 4567.30 ± 0.16 Myr age (Connelly et al. 2012). Key insight: self-calibrating via parallel ²³⁵U and ²³⁸U decay
 - Petrographic types (1–7), shock stages (S1–S6), differentiated meteorites (irons, pallasites, HEDs from Vesta), Martian (SNC) and lunar meteorites
 - **The NC–CC isotopic dichotomy — three competing interpretations:**
   1. **Jupiter as early physical barrier (Kruijer et al. 2017):** Hf–W chronology + isotope data; Jupiter core to ~20 M⊕ by ~1 Myr; gravitationally blocks pebble drift
   2. **Snow-line migration + pebble isolation (Lichtenberg et al. 2021, Science):** bifurcation without Jupiter as a physical dam; relaxes Jupiter formation timescale
-  3. **Temporal / age dichotomy (Bizzarro, Connelly, Johansen):** NC and CC are formation epochs, not spatial reservoirs; CC planetesimals systematically younger
+  3. **Temporal change (Schiller et al. 2018; Spitzer et al. 2020):** the inner-disk composition changed with time during infall, so planetesimals locked in the composition of their formation time
 - Meta-note: what all three agree on (early structural/temporal order) vs what they disagree on (spatial vs dynamical vs temporal cause); actively debated as of 2024–2025
 
 **Part 2: Small body populations and dynamics**
@@ -340,7 +340,7 @@ Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–
 **Part 3: Messengers and visitors**
 
 - Rosetta at 67P/Churyumov–Gerasimenko: first orbit + lander (Philae), bilobed nucleus as contact binary, D/H ~3× Earth's, glycine and organic molecules, ~75% porosity
-- Sample-return missions: Hayabusa (Itokawa S-type, tiny sample), Hayabusa2 (Ryugu C-type, 5.4 g, organics + amino acids), OSIRIS-REx (Bennu B-type, ~70 g, hydrated clays + prebiotic organics); lab-quality data far beyond in-situ spectroscopy
+- Sample-return missions: Hayabusa (Itokawa S-type, tiny sample), Hayabusa2 (Ryugu Cb-type, 5.4 g, organics with amino acids and uracil), OSIRIS-REx (Bennu B-type, 121 g, hydrated clays + prebiotic organics); lab-quality data far beyond in-situ spectroscopy
 - DART at Dimorphos + Hera follow-up (launched October 2024, arrival 2026)
 - Lucy to Jupiter Trojans (launched 2021, 8 Trojans 2027–2033, Dinkinesh flyby 2023 revealed satellite moonlet)
 - Psyche (launched October 2023, arrival 2029): test of exposed-core hypothesis for M-type asteroid

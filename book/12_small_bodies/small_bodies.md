@@ -112,8 +112,8 @@ Their textures record peak temperatures of $\sim 1500$-$1900$ K and cooling rate
 
 How chondrules formed remains an unsolved problem in cosmochemistry.
 Candidate heating mechanisms include nebular shocks from gravitational instabilities, magnetic reconnection in current sheets, the X-wind model, and impact jetting between molten planetesimals {cite:p}`Connolly2016`.
-Empirical chronology demonstrates that chondrules are systematically younger than CAIs by about 2 to 4 Myr {cite:p}`Bollard2017`.
-This age difference indicates that chondrules formed during a later stage when the disk had cooled and the first planetesimals already existed.
+Pb-Pb ages of individual chondrules run from the CAI age to $2.6$ Myr later, but primary chondrule formation was concentrated in the first million years after CAIs; the existing chondrules were then reworked over the lifetime of the disk {cite:p}`Connelly2012,Bollard2017`.
+Chondrules therefore formed while the disk cooled and the first planetesimals grew.
 
 {numref}`fig:chondrule-cai-timeline` places the two components on the time axis and sketches a chondrule's heating event.
 
@@ -123,7 +123,7 @@ This age difference indicates that chondrules formed during a later stage when t
 :width: 100%
 :align: center
 
-(a) The oldest solids on the solar system time axis: CAIs at 4567.30 Myr (three Pb chronometers agree to within 0.16 Myr) define $t = 0$, and chondrules formed 2 to 4 Myr later. (b) A chondrule's heating event: peak temperatures of 1500 to 1900 K followed by cooling at hundreds to thousands of kelvin per hour, drawn as linear cooling from a 1700 K peak at 100 and at 1000 K per hour; CAIs condensed from gas above about 1400 K. Course-original figure.
+(a) The oldest solids on the solar system time axis: CAIs at 4567.30 Myr (three Pb chronometers agree to within 0.16 Myr) define $t = 0$, and individual chondrules date from $t = 0$ to $2.6$ Myr. (b) A chondrule's heating event: peak temperatures of 1500 to 1900 K followed by cooling at hundreds to thousands of kelvin per hour, drawn as linear cooling from a 1700 K peak at 100 and at 1000 K per hour; CAIs condensed from gas above about 1400 K. Course-original figure.
 ```
 
 ### Isotopic dating of the early solar system
@@ -154,7 +154,8 @@ Recorded only as daughter-isotope anomalies, they resolve processes on disk and 
 | $^{244}\mathrm{Pu}$ | fission Xe | 80 | Old-rock retention of fissiogenic Xe |
 
 Cross-calibrating long-lived absolute ages with short-lived relative ages yields a high-resolution timeline for the first 10 Myr.
-Anchored to the Pb-Pb age of CAIs ($t = 0$), this dates chondrules from $t \approx 1$ to $4$ Myr, planetesimal differentiation from $t \approx 0.5$ to $4$ Myr, and protoplanet growth from $t \approx 5$ Myr onward {cite:p}`Kleine2009,Kruijer2017`.
+Anchored to the Pb-Pb age of CAIs ($t = 0$), this dates planetesimal differentiation from $t \approx 0.5$ to $4$ Myr and protoplanet growth from $t \approx 5$ Myr onward {cite:p}`Kleine2009,Kruijer2017`.
+Most chondrules date to $t \approx 1$ to $3$ Myr by this cross-calibration, though the earliest individual Pb-Pb ages extend to $t = 0$.
 The rapid decay of two of these clocks, $^{26}\mathrm{Al}$ and $^{60}\mathrm{Fe}$, over the first 10 Myr of solar-system history is shown in {numref}`fig:l12-short-lived-decay`.
 
 ```{figure} figures/short_lived_decay.avif
@@ -270,7 +271,7 @@ $$
 t_{\text{CAI}} = 4567.30 \pm 0.16 \text{ Myr}.
 $$
 
-The same work reported chondrule ages from the same meteorite extending from about $4567.3$ Myr down to $4564.7$ Myr, leading {cite:t}`Connelly2012` to argue that chondrule formation began essentially contemporaneously with CAIs. The contemporaneity of the very earliest chondrules with CAIs is contested, however: subsequent high-precision Pb-Pb work {cite:p}`Bollard2017` and Hf-W chronometry of chondrule precursors generally place the bulk of chondrule formation $\sim 1$--$3$ Myr after CAIs, with the oldest Connelly 2012 outlier widely interpreted as a single anomalous grain.
+The same work reported chondrule ages from Allende and NWA 5697 extending from about $4567.3$ Myr down to $4564.7$ Myr, leading {cite:t}`Connelly2012` to argue that chondrule formation began essentially contemporaneously with CAIs. The later Pb-Pb work of {cite:t}`Bollard2017` on 22 chondrules supports this early start: primary chondrule formation fell within the first million years after CAIs, and the existing chondrules were then reworked over the lifetime of the disk; most chondrules therefore carry short-lived-chronometer ages of $\sim 1$--$3$ Myr after CAIs.
 The CAI age has been confirmed by independent samples and laboratories to within the same precision {cite:p}`Amelin2010`.
 This is the absolute zero of the solar system clock ({numref}`fig:l12-pb-pb` shows the Pb-Pb isochrons for the dated CAIs and chondrules).
 
@@ -380,7 +381,7 @@ Three competing hypotheses explain the physical cause of this bifurcation:
 
 - A **spatial** cause {cite:p}`Kruijer2017`: a $\sim 20\,\Mearth$ early Jupiter core opens a disk gap, blocking inward drift of CC pebbles ({ref}`Lecture 2 <lecture02>`).
 - A **dynamical** cause {cite:p}`Lichtenberg2021`: snow-line migration produces two distinct planetesimal reservoirs ({numref}`fig:l12-lichtenberg-fig1`), with Jupiter halting pebble drift once it reaches the pebble isolation mass.
-- A **temporal** cause {cite:p}`Spitzer2020`: outer-disk CC pebbles drift inward over $\sim 1$–$2$ Myr to contaminate an initially NC inner disk.
+- A **temporal** cause {cite:p}`Schiller2018,Spitzer2020`: the composition of the inner-disk solids changed rapidly with time during the infall from the parent molecular cloud, so planetesimals that formed at different times locked in different compositions.
 
 ## Part 2: Small body populations and dynamics
 
@@ -449,7 +450,7 @@ The main asteroid belt supplies new NEAs through Kirkwood gaps (particularly the
 About 2,500 NEAs are classified as **Potentially Hazardous Asteroids** (PHAs): larger than $\sim 140$ m and approaching Earth's orbit within $0.05$ AU.
 
 The **Yarkovsky effect** is a non-gravitational force caused by asymmetric thermal re-emission of absorbed sunlight on a rotating body.
-For a 1 km basaltic NEA ($\rho \sim 2.5$ g cm$^{-3}$, $a \sim 2$ AU), $\mathrm{d}a/\mathrm{d}t \sim 10^{-4}$ AU per Myr, so reaching a Kirkwood resonance takes $\sim 10^7$ years.
+For a 1 km basaltic main-belt asteroid ($\rho \sim 2.5$ g cm$^{-3}$, $a \sim 2$ AU), $\mathrm{d}a/\mathrm{d}t \sim 10^{-4}$ AU per Myr, so a drift of $0.01$ AU into a nearby Kirkwood resonance takes $\sim 10^8$ years.
 The resulting recoil slowly changes the semimajor axis, drifting asteroids over $10^8$ years into resonances that pump eccentricities onto planet-crossing orbits {cite:p}`Bottke2006`.
 
 Because recoil force scales with absorbed solar power while acceleration scales inversely with mass $m \propto \rho R^3$, the secular semimajor-axis drift rate scales as
@@ -639,7 +640,16 @@ Enhanced colour image of (486958) Arrokoth (then informally "Ultima Thule") at 1
 
 The IAU recognises three other trans-Neptunian dwarf planets: **Eris**, a scattered-disk object ({numref}`fig:l12-eris`); **Haumea**, a fast-rotating ellipsoid with rings; and **Makemake**, a classical KBO.
 
-Candidate dwarf planets include **Sedna**, whose detached orbit (perihelion 76 AU, aphelion about 900 AU) may point to an inner Oort cloud population or to an early stellar encounter.
+Candidate dwarf planets include Gonggong, Quaoar, Orcus and Salacia.
+**Sedna** belongs to a different class: its detached orbit (perihelion 76 AU, aphelion about 900 AU) may point to an inner Oort cloud population or to an early stellar encounter, and it is one of a handful of extreme trans-Neptunian objects whose orbits appear to cluster in orientation ({numref}`fig:l12-planet-nine`), the observation that motivates the **Planet 9** hypothesis of an undiscovered distant planet {cite:p}`Batygin2019`.
+
+```{figure} figures/sedna_orbits_batygin.avif
+:name: fig:l12-planet-nine
+:width: 80%
+:align: center
+
+Orbits of the distant trans-Neptunian objects, including Sedna, projected on the ecliptic (main panel; the bar marks 250 AU), with arrows giving the direction of each perihelion and the inset showing the orbit-pole (angular momentum) vectors. The perihelion directions and the poles are not spread evenly around the sky, which is the apparent clustering that motivates the Planet 9 hypothesis. Reproduced from {cite:t}`Batygin2019`.
+```
 
 ```{figure} figures/eris.avif
 :name: fig:l12-eris
@@ -790,14 +800,14 @@ The S-type near-Earth asteroid (25143) Itokawa imaged by Hayabusa AMICA in 2005.
 ```
 
 Hayabusa2 visited the carbonaceous (Cb-type) asteroid (162173) Ryugu and returned 5.4 g of sample in 2020 ({numref}`fig:l12-ryugu`).
-The returned material is rich in water-bearing phyllosilicates, carbonates, and organic molecules, with a bulk composition matching CI chondrites {cite:p}`Yokoyama2023`.
+The returned material is rich in water-bearing phyllosilicates, carbonates, and organic molecules, including amino acids and the nucleobase uracil, with a bulk composition matching CI chondrites {cite:p}`Yokoyama2023,Naraoka2023,Oba2023`.
 
 ```{figure} figures/ryugu.avif
 :name: fig:l12-ryugu
 :width: 480px
 :align: center
 
-The C-type near-Earth asteroid (162173) Ryugu imaged by Hayabusa2 ONC-T on 12 July 2018, showing an approximately 900 m diameter "spinning top" shape produced by past rapid rotation. Image credit: JAXA / Hayabusa2 ONC team, processed by Kevin M. Gill, CC BY 2.0.
+The Cb-type near-Earth asteroid (162173) Ryugu imaged by Hayabusa2 ONC-T on 12 July 2018, showing an approximately 900 m diameter "spinning top" shape produced by past rapid rotation. Image credit: JAXA / Hayabusa2 ONC team, processed by Kevin M. Gill, CC BY 2.0.
 ```
 
 OSIRIS-REx visited the carbonaceous (B-type) asteroid (101955) Bennu and returned 121 g of sample in 2023 ({numref}`fig:l12-bennu`).
