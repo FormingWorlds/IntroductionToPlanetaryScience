@@ -125,7 +125,7 @@ The period-radius diagram highlights where our solar system differs from exoplan
 
 {numref}`fig:l14:periodradius` shows the period-radius census with the compact multis marked.
 
-```{figure} figures/raymond2022_period_radius.avif
+```{figure} figures/weiss2023_period_radius.avif
 :align: center
 :name: fig:l14:periodradius
 :width: 70%
@@ -140,7 +140,7 @@ A disk snow line creates a typical radial composition gradient {cite:p}`Weiss202
 3. No **hot Jupiter**, found around $0.5$ to $1\%$ of Sun-like stars, and no hot Neptune, which is rarer still {cite:p}`Mazeh2016`.
 4. Irregular terrestrial spacings rather than uniform **peas-in-a-pod architectures** ({numref}`fig:l14:peas`; {cite:t}`Weiss2018`).
 
-```{figure} figures/raymond2022_peas_in_a_pod.avif
+```{figure} figures/weiss2023_peas_in_a_pod.avif
 :align: center
 :name: fig:l14:peas
 :width: 75%

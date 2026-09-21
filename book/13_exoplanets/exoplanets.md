@@ -859,7 +859,7 @@ Inner exoplanet systems often form compact **peas-in-a-pod** configurations ($\s
 The solar system also lacks hot Jupiters or hot Neptunes, and its giant planets occupy wide ($\geq 5$ AU), nearly circular orbits rather than eccentric paths.
 Comparing Kepler multi-planet architectures directly with the inner solar system highlights this contrast in planet size and orbital spacing ({numref}`fig:l13-peas-in-a-pod-solarsys`).
 
-```{figure} figures/raymond2022_peas_in_a_pod.avif
+```{figure} figures/weiss2023_peas_in_a_pod.avif
 :align: center
 :name: fig:l13-peas-in-a-pod-solarsys
 :width: 75%
