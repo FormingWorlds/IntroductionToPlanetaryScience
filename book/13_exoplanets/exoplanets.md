@@ -21,7 +21,7 @@ The lecture follows the same descriptive-first, payoff-at-the-end structure as L
 ### Historical context
 
 The first confirmed planets outside the solar system were announced in 1992 by Aleksander Wolszczan and Dale Frail around the radio pulsar PSR B1257+12 {cite:p}`Wolszczan1992`.
-The system contains two planets with minimum masses of about $3.4$ and $2.8\,\Mearth$ in $66$ and $98$ day orbits, plus a lunar-mass third body ($\sim 0.015\,\Mearth$) in a $25.34$ day orbit {cite:p}`Wolszczan1994`.
+The system contains two planets with minimum masses of about $3.4$ and $2.8\,\Mearth$ in $66$ and $98$ day orbits, plus a lunar-mass third body ($\sim 0.015\,\Mearth$) in a $25.34$ day orbit {cite:p}`Wolszczan1992,Wolszczan1994`.
 These post-supernova planets showed that planetary bodies can exist in environments far removed from the standard star and disk framework of {ref}`Lecture 2 <lecture02>`.
 
 In 1995 Michel Mayor and Didier Queloz used the ELODIE spectrograph to detect 51 Pegasi b, the first confirmed planet orbiting a main-sequence star, earning the 2019 Nobel Prize in Physics {cite:p}`MayorQueloz1995`.
@@ -223,7 +223,7 @@ This is the central observational quantity that turns an abstract exoplanet dete
 A density of about $5.5$ g/cm$^3$ matches an Earth-like silicate-iron rocky composition.
 A density of about $1.3$ g/cm$^3$ matches Jupiter and is consistent with a hydrogen-helium envelope around a small dense core.
 A density of $0.5$ g/cm$^3$, lower than water, indicates an inflated or low-mass H/He envelope.
-A density between rocky and gas, near $2$--$4$ g/cm$^3$, is typical of "sub-Neptunes" and indicates a substantial water-ice or H/He volatile component on top of a rocky core.
+A density of $1$--$3$ g/cm$^3$ for a planet of $2$ to $4\,\Rearth$ is typical of "sub-Neptunes" and indicates a substantial water-ice or H/He volatile component on top of a rocky core.
 Without the joint transit-plus-RV measurement, we cannot tell any of these apart ({numref}`fig:ck17massradius` collects the empirical mass-radius relation across the four major compositional regimes).
 
 ```{figure} figures/chenkipping_mass_radius.avif
@@ -254,7 +254,7 @@ Contrast reaches $10^{-9}$ for a Jupiter at 5 AU and $10^{-10}$ for an Earth ana
 :name: fig:hr8799
 :width: 80%
 
-Discovery image of the **HR 8799** planetary system from {cite:t}`Marois2008`, showing planets b, c, and d at projected separations of $24$, $38$, and $68$ AU after angular differential imaging PSF subtraction. The three were found in 2004 to 2008 Keck and Gemini observations; planet e, at $\sim 14$ AU, was added in 2010, and the four young giants have masses of roughly $5$--$10\,\Mjup$ and span orbital separations of $14$--$68$ AU.
+Discovery image of the **HR 8799** planetary system from {cite:t}`Marois2008`, showing planets d, c, and b at projected separations of $24$, $38$, and $68$ AU after angular differential imaging PSF subtraction. The three were found in 2004 to 2008 Keck and Gemini observations; planet e, at $\sim 14$ AU, was added in 2010, and the four young giants have masses of roughly $5$--$10\,\Mjup$ and span orbital separations of $14$--$68$ AU.
 ```
 
 Because young giant planets ($\lesssim 100$ Myr old) still radiate formation heat, direct imaging favours massive ($> 1\,\Mjup$), wide-orbit ($> 10$ AU) giants such as HR 8799 {cite:p}`Marois2008` ({numref}`fig:hr8799`) and $\beta$ Pictoris b {cite:p}`Lagrange2010` ({numref}`fig:betapic`).
@@ -408,8 +408,8 @@ Kepler-derived planet occurrence rates as a function of orbital period and plane
 Marginalised differential occurrence rate of small planets from {cite:t}`Bryson2021`, showing occurrence per unit radius $\dd N / \dd R$ ($\Delta R = 0.25\,\Rearth$, left) and per unit instellation flux $\dd N / \dd I$ ($\Delta I = 0.18$, right). Shaded bands mark 68\% and 95\% credible intervals, yielding central values of $\eta_\oplus \sim 0.4$ with 68\% intervals of $0.2$--$0.9$ for conservative habitable-zone Earth analogues.
 ```
 
-The **TRAPPIST-1** system hosts seven transiting Earth-sized planets within 0.06 AU of an ultra-cool dwarf, three of which (e, f, g) orbit in the temperate habitable zone {cite:p}`Gillon2017`.
-The planets form a chain of **mean-motion resonances**, orbital periods locked near ratios of small integers, consistent with capture during an early disk-migration phase.
+The **TRAPPIST-1** system hosts seven transiting Earth-sized planets within about 0.06 AU of an M8 ultra-cool dwarf at about 12 pc, three of which (e, f, g) orbit in the temperate habitable zone {cite:p}`Gillon2017`.
+The planets form a chain of **mean-motion resonances**, orbital periods locked near ratios of small integers, consistent with capture during an early disk-migration phase {cite:p}`Luger2017`.
 All seven planets transit ({numref}`fig:trappist1transits`), a configuration with probability below $10^{-3}$ for random orientations, which indicates that compact M-dwarf systems are intrinsically flat, while transit timing variations yield dynamical masses ({numref}`fig:trappist1ttvs`).
 
 ```{figure} figures/trappist1_transits.avif
@@ -854,7 +854,7 @@ Biosignature identification is fundamentally an **inverse problem** where candid
 Whether the solar system is typical has been an open question since {ref}`Lecture 1 <lecture01>`.
 If "typical" means the most common configuration in the bias-corrected exoplanet archive, the answer is no.
 The most common stars are M dwarfs rather than G dwarfs like the Sun.
-The most common planet class is the **sub-Neptune** ($2$ to $3\,\Rearth$), which the solar system lacks between Earth ($1\,\Rearth$) and Neptune ($3.88\,\Rearth$).
+The most common planet class is the **sub-Neptune** ($2$ to $4\,\Rearth$); the solar system has no planet between Earth ($1\,\Rearth$) and Neptune ($3.88\,\Rearth$).
 Inner exoplanet systems often form compact **peas-in-a-pod** configurations ($\sim 5$ to $8$ similarly sized planets within $\sim 0.2$ AU), whereas the solar system has four irregularly spaced terrestrial planets out to $1.5$ AU.
 The solar system also lacks hot Jupiters or hot Neptunes, and its giant planets occupy wide ($\geq 5$ AU), nearly circular orbits rather than eccentric paths.
 Comparing Kepler multi-planet architectures directly with the inner solar system highlights this contrast in planet size and orbital spacing ({numref}`fig:l13-peas-in-a-pod-solarsys`).
