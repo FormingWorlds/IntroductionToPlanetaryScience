@@ -105,7 +105,7 @@ Meteorite reservoir separation may require Jupiter core growth within $\sim 1$ M
 Alternatively, the **snow line**, the disk radius where water ice condenses, divides reservoirs without an early core {cite:p}`Lichtenberg2021`.
 This is unresolved and matters for whether Jupiter set the boundary conditions of inner-system planet formation.
 
-Planets between $1$ and $4\,\Rearth$ are the most common exoplanets {cite:p}`Bryson2021`, yet the solar system contains none.
+Planets between $1$ and $4\,\Rearth$ are the most common exoplanets {cite:p}`Fressin2013,Fulton2017`, yet the solar system contains none.
 This absence may reflect pebble blocking by Jupiter, low solid density, or stochastic history.
 
 **Population synthesis** models simulate planet formation to predict demographic outcomes ({numref}`fig:l14:popsyn`).
@@ -163,7 +163,7 @@ Mass-radius diagram for rocky and small exoplanets from {cite:t}`Lichtenberg2025
 
 Whether the solar system is rare remains unknown because survey limits have left much of its parameter space unobserved.
 Detecting a planet in a 12-year Jupiter-like orbit requires decades of monitoring or radial-velocity baselines, making Gaia DR4 the first survey sensitive to astrometric Jupiter analogues at scale.
-Similarly, **Earth analogues** ($\Rearth$-sized planets in 1-year orbits around Sun-like G dwarfs) lie at the edge of current sensitivity and require upcoming missions such as PLATO and Gaia DR4/DR5.
+Similarly, **Earth analogues** ($\Rearth$-sized planets in 1-year orbits around Sun-like G dwarfs) lie at the edge of current sensitivity and require upcoming missions such as PLATO (launch planned for 2027) and the Gaia DR4 and DR5 data releases (DR4 planned for late 2026).
 
 The planet **occurrence rate** (the average number of planets per star in a given parameter range) depends strongly on stellar type ({numref}`fig:l14:mulders-occurrence`).
 Rocky and sub-Neptune-sized planets on orbits with periods $< 50$ days are roughly twice as common around early M dwarfs as around F and G dwarfs, although whether this reflects formation efficiency or survey detection bias remains debated.
@@ -357,7 +357,7 @@ $$
 Here $R_\star$ is the galactic star formation rate, $f_p$ the fraction of stars with planets, $n_e$ the number of habitable-zone planets per system, $f_l$ the fraction hosting life, $f_i$ the fraction evolving intelligence, $f_c$ the fraction developing broadcasting technology, and $L$ the communicative lifetime.
 
 Stellar astrophysics determines $R_\star$, while exoplanet surveys show that $f_p$ is of order unity ({ref}`Lecture 13 <lecture13>`).
-For Sun-like stars, Kepler and TESS constrain $n_e$ to between $0.1$ and $0.6$ depending on the habitability definition {cite:p}`Bryson2021`.
+For Sun-like stars, Kepler constrains $n_e$ to between $0.1$ and $0.6$ depending on the habitability definition {cite:p}`Bryson2021`.
 In contrast, Earth provides the sole data point for $f_l$, whereas $f_i$, $f_c$, and $L$ have no statistical constraints beyond our own lineage and the last $\sim 100$ years.
 
 The Drake equation is a qualitative framework rather than a predictive estimator, because point estimates of $N$ face five fundamental limitations:
@@ -368,7 +368,8 @@ The Drake equation is a qualitative framework rather than a predictive estimator
 4. Assumed uniformity: the single-parameter formulation averages across diverse stellar environments, planet types, and evolutionary histories.
 5. Anthropic selection: Earth is our only observed example of life, creating an observer selection effect.
 
-Sampling each factor across published ranges ({numref}`fig:l14:sandberg-drake`), {cite:t}`SandbergDrexlerOrd2018` found that roughly one third of the posterior probability mass falls below $N = 1$ in the Milky Way, and about ten percent falls below being alone in the observable universe.
+Sampling each factor across published ranges ({numref}`fig:l14:sandberg-drake`), {cite:t}`SandbergDrexlerOrd2018` found in their resampling of the published ranges that about one third of the probability falls at $N < 1$: no other civilisation in the Milky Way.
+About ten percent falls at $N < 10^{-10}$: no other civilisation in the observable universe.
 {cite:t}`SandbergDrexlerOrd2018` argue that this dissolves the **Fermi paradox**, the apparent contradiction between high estimates of extraterrestrial civilisations and the lack of observational evidence.
 
 Because unconstrained factors spanning multiple decades require log-uniform priors, taking the logarithm converts the product into a sum:
@@ -384,7 +385,7 @@ If the four unconstrained factors are log-uniform over $[-10, 0]$, their sum spa
 :name: fig:l14:sandberg-drake
 :width: 80%
 
-Posterior distribution for the number $N$ of communicating civilisations in the observable universe from Monte-Carlo sampling across published parameter ranges {cite:p}`SandbergDrexlerOrd2018`. Roughly one third of the probability mass falls below $N = 1$ in the Milky Way, and ten percent falls below being alone in the observable universe.
+Distribution of the number $N$ of communicating civilisations in the Milky Way from Monte-Carlo sampling across published parameter ranges (top), its cumulative form (middle), and the implied distance to the nearest civilisation (bottom) {cite:p}`SandbergDrexlerOrd2018`. The red line marks $N = 1$ (no other civilisation in the Milky Way) and the blue line $N = 10^{-10}$ (none in the observable universe). About one third of the probability lies below the first line and ten percent below the second.
 ```
 
 ### The Fermi paradox
@@ -664,7 +665,7 @@ The Mars Sample Return campaign remains the most direct path to laboratory analy
 **Europa** ({ref}`Lecture 11 <lecture11>`) has a global subsurface saltwater ocean confirmed by Galileo induced magnetic field measurements and surface brine chemistry; Europa Clipper (arriving 2030) and JUICE (Ganymede orbit 2034) will measure the ice-shell thickness and ocean properties.
 
 **Enceladus** ({ref}`Lecture 11 <lecture11>`) ejects samples of its subsurface ocean directly into space through its south-polar plume.
-Cassini detected $\mathrm{H_2}$ from active serpentinisation at the rocky core, macromolecular organics, and sodium phosphates indicating phosphorus-rich ocean chemistry {cite:p}`Waite2017,Postberg2023`.
+Cassini detected $\mathrm{H_2}$ from active serpentinisation at the rocky core, macromolecular organics, and sodium phosphates indicating phosphorus-rich ocean chemistry {cite:p}`Waite2017,Postberg2018,Postberg2023`.
 
 **Titan** ({ref}`Lecture 11 <lecture11>`) is the only body other than Earth with stable surface liquids today, featuring methane and ethane lakes and active prebiotic photochemistry.
 NASA's Dragonfly rotorcraft (launch 2028, arrival 2034) will sample the organic-rich surface ({ref}`Lecture 11 <lecture11>`).
@@ -685,7 +686,7 @@ The Venus phosphine episode parallels the K2-18 b DMS controversy on the exoplan
 In both cases, data at instrumental sensitivity limits allow plausible abiotic explanations that have not been ruled out.
 Extraordinary claims about biosignatures require extraordinary verification through independent datasets.
 
-Upcoming missions to Venus will provide higher-precision data ({ref}`Lecture 9 <lecture09>`).
+The upcoming Venus missions DAVINCI (in situ), EnVision, and VERITAS (from orbit) will provide higher-precision data ({ref}`Lecture 9 <lecture09>`).
 
 **Pedagogical point.** The Venus phosphine and K2-18 b DMS cases show that claims about life-relevant chemistry must clear a high bar through better data rather than rhetoric.
 Both controversies drive the design of next-generation instruments and missions.
@@ -734,6 +735,7 @@ Posterior probability distributions for the mixing ratios of $\mathrm{CH_4}$, $\
 
 A convincing biosignature detection requires chemical disequilibrium, temporal variability, environmental context excluding abiotic pathways, and independent confirmation.
 The Habitable Worlds Observatory (HWO; {cite:t}`NAS2021`) will use a $\sim 6$ m space-based **coronagraph** (an instrument masking starlight to image faint planets) to characterise Earth-like planets around $\sim 25$ Sun-like stars in the 2040s.
+The proposed mid-infrared interferometer LIFE (Large Interferometer For Exoplanets) would target the thermal-infrared bands of biosignature gases such as $\mathrm{O_3}$, $\mathrm{CH_4}$ and $\mathrm{N_2O}$ {cite:p}`Quanz2022`.
 
 Dedicated exoplanet life-detection flagships are expected in the 2040s following 2030s statistical surveys.
 Future observatories will constrain $f_l$, transforming the search for life into an empirical science.
