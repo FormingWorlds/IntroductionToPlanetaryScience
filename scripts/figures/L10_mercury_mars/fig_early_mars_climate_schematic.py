@@ -12,17 +12,20 @@ melts and runs downhill, and the excursion ends when H2 escapes to space.
 Carbonate formation in wet ground is the long-term CO2 sink that acts over
 many excursions.
 
-The script writes the book AVIF and copies it to the lecture-10 deck.
+The script writes the two-panel book AVIF and, for the lecture-10 deck,
+one full-width AVIF per panel.
 
 Caption / figure id : `fig:early-mars-climate-schematic`
 Markdown source     : book/10_mercury_mars/mercury_mars.md
+Deck files          : slides/lecture10/figures/early_mars_cold_baseline.avif,
+                      slides/lecture10/figures/early_mars_warm_excursion.avif
+Deck source         : slides/lecture10/lecture10.tex
 Citation keys       : Wordsworth2016, Wordsworth2017, Wordsworth2021,
                       Kite2019, KiteEpisodic2021, KiteConway2024, Kite2025
 """
 
 from __future__ import annotations
 
-import shutil
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -34,7 +37,7 @@ from scripts.figures._shared.style import apply_style, save_figure
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 OUT_AVIF = REPO_ROOT / "book/10_mercury_mars/figures/early_mars_climate_schematic.avif"
-DECK_AVIF = REPO_ROOT / "slides/lecture10/figures/early_mars_climate_schematic.avif"
+DECK_DIR = REPO_ROOT / "slides/lecture10/figures"
 
 ROCK = "#b98a62"
 ROCK_DARK = "#8a6142"
@@ -214,18 +217,20 @@ def basin(ax, wet):
     )
 
 
-def panel_a(ax):
+def panel_a(ax, label="(a) "):
     """Draw panel (a): the cold baseline of the icy-highlands hypothesis.
 
     Parameters
     ----------
     ax : matplotlib.axes.Axes
         Target axes.
+    label : str
+        Prefix of the panel headline; empty when the panel stands alone.
     """
     ax.text(
         0.0,
         4.13,
-        "(a) cold baseline (icy highlands): snow collects on the southern highlands",
+        label + "cold baseline (icy highlands): snow collects on the southern highlands",
         fontsize=10.5,
         fontweight="bold",
         va="top",
@@ -308,18 +313,20 @@ def panel_a(ax):
     )
 
 
-def panel_b(ax):
+def panel_b(ax, label="(b) "):
     """Draw panel (b): a transient warm excursion with snowmelt and rivers.
 
     Parameters
     ----------
     ax : matplotlib.axes.Axes
         Target axes.
+    label : str
+        Prefix of the panel headline; empty when the panel stands alone.
     """
     ax.text(
         0.0,
         4.13,
-        "(b) transient warm excursion, repeated: snow melts, runoff cuts valleys",
+        label + "transient warm excursion, repeated: snow melts, runoff cuts valleys",
         fontsize=10.5,
         fontweight="bold",
         va="top",
@@ -491,6 +498,14 @@ def panel_b(ax):
     )
 
 
+def _setup_axes(ax):
+    """Set the shared data limits, equal aspect and hidden frame of a panel."""
+    ax.set_xlim(0, 10.0)
+    ax.set_ylim(-1.0, 4.2)
+    ax.set_aspect("equal")
+    ax.axis("off")
+
+
 def make_plot() -> Path:
     """Render both panels and write the book AVIF.
 
@@ -502,23 +517,43 @@ def make_plot() -> Path:
     apply_style()
     fig, (ax_a, ax_b) = plt.subplots(2, 1, figsize=(7.60, 8.00))
     for ax in (ax_a, ax_b):
-        ax.set_xlim(0, 10.0)
-        ax.set_ylim(-1.0, 4.2)
-        ax.set_aspect("equal")
-        ax.axis("off")
+        _setup_axes(ax)
     panel_a(ax_a)
     panel_b(ax_b)
     fig.tight_layout(pad=0.3)
     return save_figure(fig, OUT_AVIF, avif_quality=80, dpi=280)
 
 
+def make_deck_panels() -> list[Path]:
+    """Render each panel alone on a landscape canvas for the deck.
+
+    The deck shows the two panels on two full-width frames; each panel
+    keeps the layout it has in the book figure, without the panel letter.
+
+    Returns
+    -------
+    list of pathlib.Path
+        Paths of the written deck AVIF files.
+    """
+    apply_style()
+    written = []
+    for name, draw in (("early_mars_cold_baseline", panel_a),
+                       ("early_mars_warm_excursion", panel_b)):
+        fig, ax = plt.subplots(figsize=(7.60, 4.00))
+        _setup_axes(ax)
+        draw(ax, label="")
+        fig.tight_layout(pad=0.3)
+        written.append(save_figure(fig, DECK_DIR / f"{name}.avif", avif_quality=80, dpi=280))
+        plt.close(fig)
+    return written
+
+
 def main() -> None:
-    """Write the book AVIF and copy it to the lecture-10 deck."""
+    """Write the book AVIF and the two deck panels."""
     out = make_plot()
-    DECK_AVIF.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(out, DECK_AVIF)
     print(f"  plot : {out}")
-    print(f"  deck : {DECK_AVIF}")
+    for deck in make_deck_panels():
+        print(f"  deck : {deck}")
 
 
 if __name__ == "__main__":

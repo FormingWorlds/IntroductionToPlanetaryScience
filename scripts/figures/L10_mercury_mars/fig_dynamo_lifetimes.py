@@ -60,9 +60,10 @@ def make_plot() -> plt.Figure:
 
     # Habitability summary: ion escape suppression and atmosphere loss timescale
     ax.text(
-        2.25, 0.32,
-        "a magnetic shield suppresses ion escape by up to an order of magnitude over Gyr;\n"
-        "an unmagnetised Mars-sized planet still loses its atmosphere on 1e9-year timescales",
+        2.25, 0.34,
+        "a magnetic shield may suppress ion escape by up to an order of magnitude over Gyr,\n"
+        "but whether and how much a field protects is debated; an unmagnetised Mars-sized\n"
+        "planet still loses its atmosphere on 1e9-year timescales",
         ha="center", va="center", fontsize=10, color="0.2", linespacing=1.2,
     )
 
