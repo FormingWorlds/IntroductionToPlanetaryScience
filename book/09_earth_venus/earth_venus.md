@@ -43,8 +43,8 @@ Mean surface conditions are $T_s \approx 288$ K and $P_s = 1.013$ bar, under an 
 Earth is unique today in combining three coupled systems: an active **mobile-lid** plate tectonic regime, where the rigid outer shell is broken into independently moving plates; persistent liquid surface water covering $71\%$ of the planet; and a global biosphere.
 Liquid water hydrates the **lithosphere**, the rigid outer shell comprising the crust and uppermost mantle.
 This enables **subduction**, the sinking of one plate beneath another into the mantle ({ref}`Lecture 7 <lecture07>`).
-The biosphere has maintained atmospheric $\mathrm{O_2}$ and $\mathrm{CO_2}$ for the last $\sim$2.4 billion years {cite:p}`Lyons2014`.
 Persistent liquid water on $4$-Gyr timescales is stabilised by the **carbonate-silicate cycle** ({ref}`Lecture 6 <lecture06>`), a negative feedback requiring volcanic outgassing of $\mathrm{CO_2}$ and silicate weathering on a wet surface {cite:p}`Walker1981`.
+The biosphere acts on top of this abiotic feedback and has set the atmospheric $\mathrm{O_2}$ level for the last $\sim$2.4 billion years {cite:p}`Lyons2014`.
 This mutual coupling maintains Earth's habitability over billions of years, supporting the coexisting oceans, atmosphere, and ice sheets visible from space ({numref}`fig:blue-marble-apollo17`).
 Removing any component causes the system to collapse, as likely occurred early on Venus.
 
@@ -128,7 +128,13 @@ The **cryosphere** (the frozen water reservoir) holds $\sim$2%, with remaining w
 
 The carbonate buffer balances dissolved $\mathrm{CO_2}$, $\mathrm{CO_3^{2-}}$, and $\mathrm{HCO_3^-}$.
 Ocean $\mathrm{pH}$ stays near $8.1$.
-This enables the carbonate-silicate cycle, whose Urey reaction sink precipitates atmospheric $\mathrm{CO_2}$ as seafloor carbonates ({numref}`fig:lammer-carbsil`).
+This enables the carbonate-silicate cycle ({numref}`fig:lammer-carbsil`), whose sink is the **Urey reaction** ({ref}`Lecture 6 <lecture06>`):
+
+$$
+\mathrm{CaSiO_3} + \mathrm{CO_2} \longrightarrow \mathrm{CaCO_3} + \mathrm{SiO_2}
+$$
+
+Silicate rock weathered by dissolved $\mathrm{CO_2}$ yields carbonate, which precipitates on the seafloor and removes the carbon from the atmosphere {cite:p}`Walker1981`.
 
 ```{figure} figures/lammer2018_carbonate_silicate.avif
 :name: fig:lammer-carbsil
@@ -146,7 +152,8 @@ Reproduced from {cite:t}`Lammer2018`.
 
 Following {ref}`Lecture 5 <lecture05>` and {ref}`Lecture 6 <lecture06>`, Earth absorbs $240$ W/m$^2$ of solar radiation (albedo $\sim$0.30) and emits equally in the infrared.
 Without an atmospheric greenhouse, the equilibrium temperature is $255$ K.
-The natural greenhouse effect of water vapour and $\mathrm{CO_2}$ warms the surface by $33$ K to $288$ K.
+The natural greenhouse effect warms the surface by $33$ K to $288$ K.
+Water vapour contributes about half of this effect, clouds about a quarter, and $\mathrm{CO_2}$ about a fifth {cite:p}`Schmidt2010`.
 
 The **faint young Sun problem** is the contradiction between a $30\%$ fainter early Sun at $4.4$ Ga and geological evidence for liquid water from at least $4.3$ Ga {cite:p}`Feulner2012`.
 Higher early levels of $\mathrm{CO_2}$, and possibly $\mathrm{CH_4}$, most likely resolved this.
