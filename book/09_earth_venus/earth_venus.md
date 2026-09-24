@@ -274,7 +274,7 @@ Photo by Paul Harrison (Wikimedia Commons), [CC BY-SA 3.0](http://creativecommon
 Major events in the history of life on Earth, plotted on the geologic eon strip.
 Stemmed markers give representative ages for the milestones discussed in the text, from the formation of Earth and the first liquid water oceans through the earliest biosignatures, the Great Oxidation Event, the first eukaryotes and multicellular algae, to the Ediacaran biota, the Cambrian explosion, and the end-Cretaceous impact.
 Blue bands on the strip mark the Huronian and Neoproterozoic snowball glaciations.
-Event ages are representative values from the cited literature {cite:p}`Mojzsis1996,Dodd2017,Nutman2016,Lyons2014,Catling2020,Hoffman2017`; eon boundaries follow {cite:t}`Gradstein2020`.
+Event ages are representative values from the cited literature {cite:p}`Mojzsis1996,Dodd2017,Nutman2016,Lyons2014,Catling2020,Javaux2018,Gibson2018,Hoffman2017`; eon boundaries follow {cite:t}`Gradstein2020`.
 Course-original figure.
 ```
 
