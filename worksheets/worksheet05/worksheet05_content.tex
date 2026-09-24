@@ -132,6 +132,7 @@ This is the flux the atmosphere must radiate back to space to hold a steady temp
 
 \parti In a steam atmosphere the infrared photosphere forms where the overlying water-vapour column reaches optical depth of order unity,
 at pressure $p_\mathrm{phot} = g/\kappa$.
+Keep the planet at Earth's orbit from part (a), and take $g$ and $\kappa$ from the Constants and data box.
 Compute $p_\mathrm{phot}$, then use the integrated Clausius-Clapeyron relation
 \[
 \ln\!\frac{p}{p_0} = -\frac{L}{R_v}\left(\frac{1}{T} - \frac{1}{T_0}\right)
@@ -264,18 +265,13 @@ Mars cannot lose $\mathrm{CO_2}$ by Jeans escape.
 Judge this claim.
 
 \begin{solution}
-The claim confuses two different loss processes.
-Jeans escape, the process just computed, does not depend on the magnetic field at all,
-and in any case it cannot remove $\mathrm{CO_2}$ from Mars: the Jeans parameter of $\mathrm{CO_2}$ is so large that its thermal escape is negligible.
-So $\mathrm{CO_2}$ was never lost thermally, with or without a field.
-The martian atmosphere was thinned mainly by non-thermal processes:
-once Mars lost its dynamo, the solar wind reached the upper atmosphere and stripped ions directly by pickup and sputtering,
-and photochemistry let carbon and oxygen leave as lighter fragments.
-A magnetic field does matter here, by deflecting the solar wind and reducing ion escape,
-so a sustained field would have slowed the atmospheric loss.
-But the mechanism in the claim is wrong: a field acts on the non-thermal, solar-wind-driven loss of the upper atmosphere,
-not on a thermal escape of $\mathrm{CO_2}$ that never happened.
-\answer{False as stated: $\mathrm{CO_2}$ has too large a Jeans parameter to escape thermally regardless of a field, but a magnetic field would have slowed non-thermal solar-wind stripping and ion pickup.}
+A global field slows the loss, so the claim names a real effect, but it overstates what a field does.
+Jeans escape, the process of parts (b) and (c), is independent of the field, and it cannot remove $\mathrm{CO_2}$ from Mars in any case: the Jeans parameter of $\mathrm{CO_2}$ is so large that thermal escape is negligible.
+Mars lost its atmosphere through the non-thermal channels: ion pickup and sputtering by the solar wind, and photochemical escape, in which dissociation gives carbon and oxygen atoms enough speed to leave.
+A global field deflects the solar wind and weakens the two solar-wind channels, so a longer-lived field would have slowed the loss; photochemical escape continues on magnetised and unmagnetised planets alike (Lecture 5).
+How much a field protects an atmosphere is debated: MAVEN escape rates show that an unmagnetised Mars loses its atmosphere over billions of years, and Venus holds a $92$ bar atmosphere of mostly $\mathrm{CO_2}$ with no detectable field.
+The defensible version of the claim is that Mars is too small to hold a thick atmosphere once its field is gone, so a longer-lived field would have slowed the loss without settling what Mars keeps.
+\answer{Overstated: a global field weakens the solar-wind channels (ion pickup, sputtering) and would have slowed the loss, but it leaves photochemical escape untouched, Jeans escape of $\mathrm{CO_2}$ is negligible either way, and how much a field protects an atmosphere is debated.}
 \end{solution}
 
 
@@ -285,7 +281,7 @@ not on a thermal escape of $\mathrm{CO_2}$ that never happened.
 Mercury and Mars sit at the inner and outer edges of the terrestrial planets. They diverged completely.
 This problem collects three independent measurements, each marking one step in that divergence.
 
-\parti Mercury rotates on its axis every $58.65$ days and orbits the Sun every $87.97$ days.
+\parti Mercury's spin period $P_\mathrm{rot}$ and orbital period $P_\mathrm{orb}$ are given in the Constants and data box.
 The length of a solar day, from noon to noon, satisfies $1/T_\mathrm{solar} = 1/P_\mathrm{rot} - 1/P_\mathrm{orb}$.
 Compute $T_\mathrm{solar}$ and express it in Mercury years.
 
@@ -301,7 +297,7 @@ so a solar day on Mercury lasts two of its years: the Sun rises, and the next su
 \answer{$T_\mathrm{solar} = 175.97\ \mathrm{d}$, which equals almost exactly $2$ Mercury years ($175.94\ \mathrm{d}$) because Mercury is locked in a $3\!:\!2$ spin-orbit resonance.}
 \end{solution}
 
-\parti As Mercury's interior cooled, its radius shrank by $\Delta R \approx 7$ km.
+\parti As Mercury's interior cooled, its radius shrank by $\Delta R$, given in the Constants and data box.
 Estimate the fractional decrease in surface area,
 and connect it to the lobate scarps seen across the surface.
 
@@ -318,18 +314,21 @@ Mercury has a single, globally contracting lithosphere, in contrast to Earth's s
 \answer{$\Delta A/A = 5.7377\times10^{-3} \approx 0.57\%$: global cooling caused Mercury's surface to contract by about half a percent, producing a global network of thrust-fault lobate scarps.}
 \end{solution}
 
-\parti Mercury still has a magnetic field and a large iron core; Mars lost its field early and has a smaller core fraction.
-In two or three sentences, connect planet size to this divergence,
-using the ideas of cooling rate and atmospheric escape from this worksheet.
+\parti Mercury, the smaller planet, still has a magnetic field; Mars lost its field within its first $400$ to $800$ Myr.
+Mercury has no atmosphere; Mars kept a thin one.
+In a short paragraph, state what planet size predicts for the cooling rate and the dynamo lifetime,
+why Mercury's dynamo does not follow the lifetime prediction,
+and what the two planets show about magnetic fields and atmospheric retention.
+Use the ideas of cooling rate and escape from this worksheet.
 
 \begin{solution}
-A small planet cools fast, because it has a large surface-area-to-volume ratio,
-so Mars, though larger than Mercury, was still small enough that its core convection and dynamo shut down within the first several hundred million years.
-Once the martian field died, the solar wind reached the upper atmosphere and stripped it by the non-thermal processes of Problem 3,
-and the planet cooled into the thin, cold state seen today.
-Mercury is smaller still, but it is dense and iron-rich, so a large fraction of its interior is core;
-that core has stayed partly liquid and convecting, and it still drives a magnetic field.
-Size sets the cooling rate, cooling sets the lifetime of the dynamo, and the dynamo, together with gravity, sets how much atmosphere a planet keeps:
-the same three factors, acting differently, produced Mercury and Mars.
-\answer{Size sets the cooling rate and dynamo lifetime: Mars cooled enough for its dynamo to shut down, exposing its atmosphere to solar-wind stripping, while Mercury's large iron core has maintained a magnetic field.}
+A small planet has a large surface-area-to-volume ratio, so it cools fast: the diffusive cooling time scales as $L^2$, and a body half the size cools four times faster.
+A dynamo needs a core that keeps losing heat to the mantle, or an inner core that freezes and supplies compositional buoyancy, so size alone predicts that the smaller planet loses its dynamo first.
+Mars follows this prediction: its stagnant-lid mantle, depleted in radioactive elements, stopped cooling the core efficiently, no inner core has formed, and the dynamo died after $400$ to $800$ Myr.
+Mercury breaks it through its composition: its iron core fills about $83\%$ of the radius, most of it has frozen, and the thin liquid shell that remains still convects as it freezes and drives a weak field, about $1\%$ of Earth's.
+The atmospheres do not follow the fields.
+Mercury has a field and no atmosphere: it formed close to the Sun with few volatiles, and it is small and hot, so light gases have a low Jeans parameter and leave; only a surface-bounded exosphere remains.
+Mars has no global field and a thin atmosphere: its gravity holds $\mathrm{CO_2}$ against thermal escape, as Problem 3 showed, while the solar-wind channels of part 3(d) thinned it over billions of years.
+Size sets the cooling rate and, with composition, the dynamo lifetime; volatile supply, gravity and temperature set what an atmosphere keeps.
+\answer{Size sets the cooling rate, and with it the dynamo lifetime unless composition intervenes: the core of Mars stopped losing heat and its dynamo died, while the oversized core of Mercury still freezes in a thin liquid shell and keeps a weak field despite the smaller size. Atmospheres follow volatile supply, gravity and temperature rather than the field: Mercury has a field and no atmosphere, Mars has no global field and a thin one.}
 \end{solution}
