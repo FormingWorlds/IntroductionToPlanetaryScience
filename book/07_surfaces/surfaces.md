@@ -115,6 +115,12 @@ Writing the dimensions of each quantity in terms of mass $M$, length $L$, and ti
 
 Requiring $[E^a \rho^b g^c] = L$:
 
+$$
+[E^a \rho^b g^c] = (M L^2 T^{-2})^a \, (M L^{-3})^b \, (L T^{-2})^c = M^{a+b} \, L^{2a-3b+c} \, T^{-2a-2c}
+$$
+
+This must equal $[D] = M^0 L^1 T^0$, so each exponent must match:
+
 **Mass:** $a + b = 0 \implies b = -a$
 
 **Time:** $-2a - 2c = 0 \implies c = -a$
@@ -176,7 +182,8 @@ Craters come in three morphological classes, determined primarily by their diame
 The Caloris basin on Mercury, $\sim$1550 km in diameter, imaged in enhanced colour by NASA's MESSENGER spacecraft. Caloris is one of the largest and best-preserved multi-ring impact basins in the solar system; the orange interior plains are smooth volcanic deposits emplaced after the impact, while the surrounding annulus shows ejecta and concentric ring structures. The basin's antipode on Mercury contains chaotic "weird terrain" thought to have formed from the focused seismic shock of the same event. Credit: NASA/Johns Hopkins APL/Carnegie Institution of Washington, public domain.
 ```
 
-The transition diameter scales inversely with surface gravity:
+The transition diameter scales inversely with surface gravity, $D_t \propto 1/g$.
+The Moon only fixes the constant, because its transition diameter is well measured:
 
 $$
 D_t \approx D_{t,\text{Moon}} \cdot \frac{g_{\text{Moon}}}{g}

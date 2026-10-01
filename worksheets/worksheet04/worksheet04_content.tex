@@ -80,7 +80,14 @@ At fixed $v$ and $\rho$, the impactor mass scales as $m \propto L^3$, so $E_k \p
 \[
 D \propto E_k^{1/4} \propto L^{3/4}.
 \]
-Inverting, $L_2 = L_1 (D_2/D_1)^{4/3}$. With $L_1 = 400$ m and $D_1 = 5.05$ km from part (a):
+The proportionality hides a prefactor (it holds $v$, $\rho$ and the order-unity constant of the law),
+so write it for two impacts and take the ratio, which cancels the prefactor:
+\[
+\frac{D_2}{D_1} = \left(\frac{L_2}{L_1}\right)^{3/4}
+\quad\Longrightarrow\quad
+L_2 = L_1 \left(\frac{D_2}{D_1}\right)^{4/3}.
+\]
+With $L_1 = 400$ m and $D_1 = 5.05$ km from part (a):
 \[
 L_2 = 400 \times \left(\frac{50}{5.05}\right)^{4/3} = 400 \times 21.260 = 8504\ \mathrm{m} \approx 8.5\ \mathrm{km}.
 \]
@@ -91,7 +98,8 @@ Read $L$ as an order of magnitude, not a measurement, as the Lecture 7 notes cau
 \answer{$D \propto L^{3/4}$, giving $L_2 = 8504\ \mathrm{m} \approx 8.5\ \mathrm{km}$ for a $50$ km crater. A factor of $10^4$ in impact energy moves the crater diameter by only a factor of $10$.}
 \end{solution}
 
-\parti The simple-to-complex transition diameter scales inversely with surface gravity,
+\parti The simple-to-complex transition diameter scales inversely with surface gravity, \mbox{$D_t \propto 1/g$}.
+The Moon only fixes the constant, because its transition diameter is well measured:
 \[
 D_t \approx D_{t,\mathrm{Moon}}\,\frac{g_{\mathrm{Moon}}}{g}.
 \]
