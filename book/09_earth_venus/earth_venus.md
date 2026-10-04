@@ -340,7 +340,7 @@ This unimodal distribution indicates that Venus lacks Earth-like plate tectonics
 :width: 75%
 :align: center
 
-Topography and geoid comparison of Earth (top) and Venus (middle, bottom). Venus' unimodal hypsometry contrasts with Earth's bimodal distribution; reproduced from {cite:t}`Smrekar2018`.
+Topography of Earth (top) and Venus (middle) and geoid of Venus (bottom). The top two colour bars give surface elevation in km, relative to sea level for Earth and to the mean planetary radius for Venus; Earth is shown at the same spatial resolution as the Magellan data for Venus. The bottom colour bar gives the geoid height in m, computed from the Magellan gravity field. In the bottom panel north is up, as in the panels above, but the latitude labels have the wrong sign: Beta Regio (about $25^\circ$N, $283^\circ$E) is the geoid high labelled near $-25^\circ$. Venus' unimodal hypsometry contrasts with Earth's bimodal distribution; reproduced from {cite:t}`Smrekar2018`.
 ```
 
 The surface of Venus is dominated by **volcanic plains**, broad flood-basalt expanses that cover about $80\%$ of the planet ({numref}`fig:venus-terrains`).
