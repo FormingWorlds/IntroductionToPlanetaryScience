@@ -1454,3 +1454,14 @@ The hand-drawn cartoon `wordsworth2016_schematic` (G3 above) is replaced by the 
 - Checks: the figure script writes the two-panel book AVIF and one landscape AVIF per panel for the L10 deck, which shows the panels on two hero frames; `scripts/figures/check_figure_collisions.py` passes for the book figure and both deck panels. Every statement attributed to Kite and Conway (2024) is checked against the full text of the Perspective (Nature Geoscience 17, 10, 2024).
 
 The caption and the slide present the cold baseline with repeated warm excursions as one hypothesis, not a consensus, which follows the caution in the Kite (2019) and Kite and Conway (2024) reviews; the latter leave open whether early Mars was warm and wet or cold and icy.
+
+## 17. L09 deck order follows the notes (2026-10-04)
+
+The L09 deck runs in the section and figure order of the notes:
+
+- Introduction (learning objectives, recap, terrestrial planets, Lammer accretion figure), then Part 1, Earth as reference, subsection by subsection: bulk properties, eons, plate tectonics with the Honing carbon-cycle figure, magnetic field, hydrosphere, climate, Snowball Earth, oxygen history, biosphere footprint, history of life.
+- Part 2, Venus the alien twin: overview, exploration, surface, interior, atmosphere, runaway greenhouse; then the break and the blackboard derivation.
+- The derivation frames follow Steps 1 to 4 of the notes, with the course figure `photosphere_profiles` as Step 2. Notes, slides and Worksheet 5 use the same numbers: $T_\mathrm{phot} = 258$ K and $\sigma T_\mathrm{phot}^4 = 253$ W/m$^2$ for the grey model.
+- Water loss (Hamano, Lebrun, Way, Turbet, Gillmann, Constantinou), the D/H ratio and present-day volcanism form one section, as in the notes; Part 3 (divergence, carbonate-silicate failure, habitability with TRAPPIST-1) and the missions follow.
+- Step 4 in notes and slides separates the runaway greenhouse limit ($F_\mathrm{abs} = F_\mathrm{OLR}^\mathrm{max}$, 0.84 to 0.97 AU) from the moist greenhouse limit (stratospheric water loss, 0.95 to 0.99 AU).
+- The `photosphere_profiles` figure is drawn on a 6.2 by 3.5 inch canvas so its labels stay legible on the slide; the legend keys only the markers, since the right panel names the colours.

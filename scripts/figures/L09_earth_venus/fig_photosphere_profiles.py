@@ -16,7 +16,7 @@ the surface temperature.
 Constants follow the Lecture 9 board derivation and Worksheet 5: L = 2.5e6
 J/kg, R_v = 461 J/(kg K), (p_ref, T_ref) = (611 Pa, 273 K), kappa = 0.05
 m^2/kg, g = 10 m/s^2. The constant-L saturation curve overestimates p_sat by
-about 23 percent at the normal boiling point and by more above it, so the
+about 25 percent at the normal boiling point and by more above it, so the
 surface pressures on the right panel are model values, not steam-table values.
 
 Caption / figure id : `fig:photosphere-profiles`
@@ -116,7 +116,7 @@ def make_plot() -> Path:
     n_col = len(T_SURFACES)
     widths = np.linspace(1.4, 6.0, n_col)  # thin for the coolest, thick for the warmest surface
 
-    fig, (ax_z, ax_p) = plt.subplots(1, 2, figsize=(7.22, 3.7))
+    fig, (ax_z, ax_p) = plt.subplots(1, 2, figsize=(6.2, 3.5))
 
     # ── Left: temperature against altitude ─────────────────────────────
     for T_s, col in zip(T_SURFACES, COLORS):
@@ -129,7 +129,7 @@ def make_plot() -> Path:
                       arrowprops=dict(arrowstyle="->", color=col, lw=1.2))
 
     ax_z.axvline(T_PHOT, color="0.45", ls="--", lw=0.9, zorder=1)
-    # In the band above every column, between the dashed line and the legend
+    # In the band above every column, right of the dashed line and above the legend
     ax_z.text(T_PHOT + 7, 168, rf"$T_\mathrm{{phot}} = {T_PHOT:.0f}$ K",
               ha="left", va="center", fontsize=8, color="0.3")
     ax_z.set_xlim(215, 410)
@@ -137,12 +137,11 @@ def make_plot() -> Path:
     ax_z.set_xlabel("Temperature (K)")
     ax_z.set_ylabel("Altitude (km)")
     ax_z.set_title("The photosphere climbs with $T_s$", fontsize=11)
-    handles = [Line2D([], [], color=c, lw=1.8, label=rf"$T_s$ = {T:.0f} K")
-               for T, c in zip(T_SURFACES, COLORS)]
-    handles += [Line2D([], [], ls="", marker="s", color="0.4", ms=5, label="surface"),
-                Line2D([], [], ls="", marker="o", color="0.4", ms=6, label="photosphere")]
-    ax_z.legend(handles=handles, loc="upper right", frameon=False, fontsize=8,
-                handlelength=1.3, handletextpad=0.5, labelspacing=0.35, borderaxespad=0.2)
+    # The colours are named on the right panel, so the legend keys the markers only
+    handles = [Line2D([], [], ls="", marker="s", color="0.4", ms=5, label="surface"),
+               Line2D([], [], ls="", marker="o", color="0.4", ms=6, label="photosphere")]
+    ax_z.legend(handles=handles, loc="upper right", bbox_to_anchor=(1.0, 0.88), frameon=False,
+                fontsize=8, handlelength=1.3, handletextpad=0.5, labelspacing=0.35, borderaxespad=0.2)
 
     # Inset: the emitted flux against surface temperature is flat
     ax_in = ax_z.inset_axes([0.63, 0.29, 0.35, 0.20])
@@ -154,9 +153,9 @@ def make_plot() -> Path:
     ax_in.set_xticks([300, 350, 400])
     ax_in.set_yticks([F_OLR])
     ax_in.set_yticklabels([f"{F_OLR:.0f}"])
-    ax_in.tick_params(labelsize=7.5, length=2, pad=1.5)
-    ax_in.set_xlabel("$T_s$ (K)", fontsize=7.5, labelpad=1)
-    ax_in.set_title(r"emitted flux $\sigma T_\mathrm{phot}^4$ (W m$^{-2}$)", fontsize=7.5, pad=2)
+    ax_in.tick_params(labelsize=8.5, length=2, pad=1.5)
+    ax_in.set_xlabel("$T_s$ (K)", fontsize=8.5, labelpad=1)
+    ax_in.set_title(r"$\sigma T_\mathrm{phot}^4$ (W m$^{-2}$)", fontsize=8.5, pad=2)
     ax_in.grid(False)
 
     # ── Right: pressure against temperature ────────────────────────────
@@ -170,8 +169,8 @@ def make_plot() -> Path:
                   va="center", fontsize=9, color=col)
 
     ax_p.axhline(P_PHOT, color="0.45", ls="--", lw=0.9, zorder=1)
-    ax_p.text(436, P_PHOT * 1.7, rf"$\tau = 1$: $p = g/\kappa = {P_PHOT:.0f}$ Pa",
-              ha="right", va="center", fontsize=9, color="0.3")
+    ax_p.text(448, P_PHOT * 1.7, rf"$\tau = 1$: $p = g/\kappa = {P_PHOT:.0f}$ Pa",
+              ha="right", va="center", fontsize=8.5, color="0.3")
     ax_p.plot(T_PHOT, P_PHOT, "o", color="black", ms=7, zorder=5)
     ax_p.annotate(
         "photosphere, the same\npoint for every column",
@@ -188,7 +187,7 @@ def make_plot() -> Path:
     )
     ax_p.set_yscale("log")
     ax_p.set_ylim(1.2e6, 3)
-    ax_p.set_xlim(215, 440)
+    ax_p.set_xlim(215, 450)
     ax_p.set_xlabel("Temperature (K)")
     ax_p.set_ylabel("Pressure (Pa)")
     ax_p.set_title("Its temperature is pinned", fontsize=11)
