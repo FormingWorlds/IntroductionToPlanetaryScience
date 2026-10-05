@@ -405,7 +405,7 @@ We work in the satellite's rest frame and ask: at what distance $d$ does the pla
 Setup sketch of the board derivation of the Roche limit: planet $M_p$ and a uniform fluid satellite of mass $M_s$ and radius $R_s$ at distance $d$; the planet's pull on the satellite's near side, $g_{\mathrm{near}}$, exceeds the pull on its centre, $g_{\mathrm{centre}}$, and this difference stretches the satellite. Course-original figure.
 ```
 
-**Tidal acceleration across the satellite.**
+**Step 1: Tidal acceleration across the satellite.**
 The gravitational acceleration from the planet at the satellite's centre is
 
 $$
@@ -438,14 +438,14 @@ $$
 
 This is the standard result that tidal forces fall off as $d^{-3}$ rather than $d^{-2}$.
 
-**Self-gravity at the satellite's surface.**
+**Step 2: Self-gravity at the satellite's surface.**
 For a uniform satellite of density $\rho_s$, the gravitational acceleration at its surface is
 
 $$
 a_{\rm self} = \frac{G M_s}{R_s^2} = \frac{G \cdot \tfrac{4}{3}\pi R_s^3 \rho_s}{R_s^2} = \frac{4}{3} \pi G \rho_s R_s.
 $$
 
-**Setting the two equal.**
+**Step 3: Setting the two equal.**
 The Roche limit corresponds to the distance at which the tidal stretching just overcomes self-gravity, $\Delta a_{\rm tidal} = a_{\rm self}$:
 
 $$
@@ -466,7 +466,7 @@ $$
 
 This is the **rigid-body Roche limit**: the minimum orbital distance at which a satellite held together only by its own gravity, treated as a rigid sphere, can survive without surface elements being pulled away.
 
-**Fluid Roche limit.**
+**Step 4: The fluid Roche limit.**
 A more careful analysis for a fluid satellite, which deforms into an elongated ellipsoid before disruption rather than remaining spherical, was first carried out by Roche himself {cite:p}`Roche1849`.
 The fluid case is analytically much more involved because it requires solving for the equilibrium shape of a self-gravitating fluid in a tidal field, but the result is that the prefactor changes from $1.26$ to roughly $2.46$:
 
@@ -477,12 +477,12 @@ $$
 The rigid-body case underestimates the critical distance because it ignores the additional stress imposed by the tidal deformation itself.
 For most realistic cases, including ice or rock satellites, the answer lies between the two extremes.
 
-**Application to Saturn's rings.**
+**Step 5: Application to Saturn's rings.**
 Saturn has equatorial radius $R_p = 60{,}268$ km, but for the Roche calculation we use the volumetric mean radius $R_p \approx 58{,}232$ km (which is the spherical-equivalent value entering the bulk-density definition $\rho_p = M_p/(4\pi R_p^3/3) = 687$ kg m$^{-3}$).
 For ring particles dominated by water ice, $\rho_s \approx 1000$ kg m$^{-3}$, so
 
 $$
-d_R \approx 2.46 \times 58{,}232 \,\mathrm{km} \times \left( \frac{687}{1000} \right)^{1/3} \approx 2.46 \times 58{,}232 \,\mathrm{km} \times 0.883 \approx 126{,}000 \,\mathrm{km}.
+d_R \approx 2.46 \times 58{,}232 \,\mathrm{km} \times \left( \frac{687}{1000} \right)^{1/3} \approx 2.46 \times 58{,}232 \,\mathrm{km} \times 0.882 \approx 126{,}000 \,\mathrm{km}.
 $$
 
 This matches the observed outer edge of the A ring (at $\sim 137{,}000$ km) to within $\sim$10%, the discrepancy being plausibly accounted for by the finite material strength of cold ice (which gives the satellite a non-zero rigidity), by the fact that the ring particles have lower density than pure ice because they are porous, and by the density wave structure at the very edge of the A ring.
