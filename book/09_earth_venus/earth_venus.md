@@ -512,6 +512,8 @@ p_{\mathrm{sat}}(T) \approx p_{\mathrm{ref}}\, \exp\!\left[ -\frac{L}{R_v}\!\lef
 $$ (eq:saturation-pressure)
 
 with $p_{\mathrm{ref}} = 611$ Pa and $T_{\mathrm{ref}} = 273.16$ K (the triple point of water, rounded to $273$ K below).
+The column is pure water vapour and saturated at every level, the surface included, so the surface pressure is the saturation pressure at the surface temperature:
+**$p_s = p_{\mathrm{sat}}(T_s)$; a hotter ocean puts exponentially more vapour into the column.**
 
 {numref}`fig:board-sketch-l09` shows the column that Steps 1 to 3 below work through: the surface at $T_s$, the level where the infrared optical depth reaches $\tau \sim 1$, and the outgoing flux $\sigma T_{\mathrm{phot}}^4$ from that level.
 
