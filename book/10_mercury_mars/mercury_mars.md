@@ -2,7 +2,7 @@
 # Rocky Planets, Mercury & Mars
 
 ```{highlights}
-**Learning objectives:** By the end of this lecture, you will be able to explain Mercury's unusual spin-orbit resonance and metal-rich interior, reconstruct the geological history of Mars across its three main periods, derive and apply the Jeans escape flux formula, interpret the seismic structure of Mars from {ref}`InSight <lecture08>` data, and use Mercury and Mars as limiting cases that isolate the roles of planet size, distance, and timing in rocky-planet evolution.
+**Learning objectives:** By the end of this lecture, you will be able to explain Mercury's unusual spin-orbit resonance and metal-rich interior, reconstruct the geological history of Mars across its three main periods, derive the Jeans escape parameter and use it to explain which gases Mars loses by thermal escape, interpret the seismic structure of Mars from {ref}`InSight <lecture08>` data, and use Mercury and Mars as limiting cases that isolate the roles of planet size, distance, and timing in rocky-planet evolution.
 ```
 
 ```{seealso}
@@ -602,12 +602,12 @@ In the **seasonal $\mathrm{CO_2}$ cycle**, roughly $25\%$ of the atmospheric mas
 **Methane** on Mars has a photochemical destruction lifetime of only $\sim 300$ years.
 *Curiosity* reported background methane of $\sim 0.4$ to $0.7\ \mathrm{ppb}$ with occasional spikes, but the *Trace Gas Orbiter* found global upper limits of $< 0.05\ \mathrm{ppb}$.
 
-## Blackboard derivation: The Jeans escape flux
+## Blackboard derivation: The Jeans escape parameter
 
-````{admonition} Blackboard derivation: Jeans escape flux from Mars
+````{admonition} Blackboard derivation: The Jeans escape parameter on Mars
 :class: tip
 
-**Goal:** Derive the formula for the rate at which thermal energy alone allows molecules to escape from a planetary atmosphere, and apply it to Mars to see why hydrogen is lost on geological timescales but $\mathrm{CO_2}$ essentially is not.
+**Goal:** Compare the thermal energy of a molecule with its gravitational binding energy at the top of the atmosphere, and apply this to Mars to see why hydrogen is lost on geological timescales but $\mathrm{CO_2}$ essentially is not.
 
 **Setup.**
 
@@ -621,7 +621,7 @@ Consider a thin layer at the **exobase**, the altitude in the atmosphere where t
 :width: 45%
 :align: center
 
-Setup sketch of the board derivation of the Jeans escape flux: the planet, the exobase at radius $r_{\mathrm{exo}}$ (dashed), a molecule faster than $v_{\mathrm{esc}}$ that leaves on a straight path, and a slower molecule that falls back on a ballistic arc. Course-original figure.
+Setup sketch of the board derivation of the Jeans escape parameter: the planet, the exobase at radius $r_{\mathrm{exo}}$ (dashed), a molecule faster than $v_{\mathrm{esc}}$ that leaves on a straight path, and a slower molecule that falls back on a ballistic arc. Course-original figure.
 ```
 
 For a molecule of mass $m$, the **most probable speed** in the Maxwell-Boltzmann distribution is
@@ -647,41 +647,22 @@ $$ (eq:lambda)
 
 With $v_{\mathrm{th}} = \sqrt{2 \kB T / m}$ (the most-probable thermal speed) and $v_{\mathrm{esc}}^2 = 2 G M / r_{\mathrm{exo}}$, the algebra collapses cleanly to the right-hand side. A molecule with kinetic energy comparable to $\kB T$ is gravitationally bound when $\lambda \gg 1$ and free to escape when $\lambda \lesssim 1$.
 
-**Step 2: The integration.**
+**Step 2: The Boltzmann factor.**
 
-The Maxwell-Boltzmann distribution gives the number density of molecules with speed between $v$ and $v + \dd v$ as
+A molecule escapes when its kinetic energy exceeds its binding energy at the exobase, $G M m / r_{\mathrm{exo}} = \lambda\,\kB T$.
+In a gas in thermal equilibrium, the fraction of molecules with an energy above $E \gg \kB T$ is dominated by the Boltzmann factor $e^{-E/(\kB T)}$, so the fraction fast enough to escape scales as $e^{-\lambda}$.
+Because $\lambda$ is proportional to the molecular mass, a heavy molecule has a much larger $\lambda$ than a light one at the same temperature, and the exponential turns this linear difference into many orders of magnitude.
 
-$$
-f(v)\,\dd v = n\,\left(\frac{m}{2\pi \kB T}\right)^{\!3/2}\,4\pi v^2 \exp\left(-\frac{m v^2}{2\kB T}\right)\,\dd v\, ,
-$$
-
-where $n$ is the total number density at the exobase. The number flux of molecules crossing an upward-facing imaginary surface from below, with vertical component of velocity $v_z > 0$, is
-
-$$
-\Phi = \int_{\mathrm{upward}} v_z\, f(\mathbf{v})\,\dd^3 v\, .
-$$
-
-For molecules to escape, we need $v_z$ such that the speed $v \geq v_{\mathrm{esc}}$. Using spherical coordinates in velocity space and integrating over the upper hemisphere of directions, the calculation reduces to a one-dimensional integral over speed, with an extra factor of $1/4$ from the average over directions:
-
-$$
-\Phi_J = n\,\langle v\rangle\,\frac{1}{4}\,(1+\lambda)\,e^{-\lambda}\, .
-$$
-
-Here $\langle v\rangle = \sqrt{8\kB T / (\pi m)}$ is the mean speed of the Maxwell-Boltzmann distribution. Substituting and simplifying:
+Integrating the Maxwell-Boltzmann distribution over all upward-moving molecules faster than $v_{\mathrm{esc}}$ gives the **Jeans escape flux**, named after James Jeans and introduced in {ref}`Lecture 5 <lecture05>` (equation {eq}`eq:jeans-flux`, with $v_{\mathrm{th}}/(2\sqrt{\pi}) = \sqrt{\kB T/(2\pi m)}$); we state it without the integration:
 
 $$
 \boxed{\,\Phi_J \;=\; n\,\sqrt{\frac{\kB T}{2\pi m}}\,(1+\lambda)\,e^{-\lambda}\,}
 $$ (eq:jeans)
 
-This is the **Jeans escape flux**, named after James Jeans who derived it in 1925. It is the foundational formula of atmospheric escape theory.
+where $n$ is the number density at the exobase.
+The thermal-speed prefactor and the factor $(1+\lambda)$ change slowly with $\lambda$; the exponential decides which species escape.
 
-**Step 3: Checking the limits.**
-
-When $\lambda \to 0$ (the planet's gravity is irrelevant), the factor $(1+\lambda)e^{-\lambda} \to 1$ and the formula reduces to $n\sqrt{\kB T/(2\pi m)}$, which is exactly one quarter of $n\langle v\rangle$, the standard kinetic-theory result for the flux of molecules through an aperture in a gas. So the formula behaves correctly in the no-gravity limit.
-
-When $\lambda \gg 1$, the exponential dominates and the flux falls off as $e^{-\lambda}$. The dependence on $\lambda$ is steep: a change in $\lambda$ from $5$ to $10$ reduces the escape flux by a factor of $\sim 80$ (the ratio $(1+\lambda_1)e^{-\lambda_1}/[(1+\lambda_2)e^{-\lambda_2}]$ for $\lambda_1 = 5$, $\lambda_2 = 10$ gives $(6/11)\,e^{5} \approx 81$).
-
-**Step 4: Application to Mars.**
+**Step 3: Application to Mars.**
 
 For Mars: $M = 6.4\times 10^{23}\ \mathrm{kg}$, $r_{\mathrm{exo}} \approx R_{\mathrm{Mars}} + 200\ \mathrm{km} \approx 3.6\times 10^6\ \mathrm{m}$, $T_{\mathrm{exo}} \approx 270\ \mathrm{K}$ (modern; somewhat higher under solar storms). The escape velocity at the exobase is
 
@@ -695,7 +676,7 @@ $$
 \lambda_H = \frac{G M m}{\kB T r_{\mathrm{exo}}} \approx \frac{(6.67 \times 10^{-11})(6.4 \times 10^{23})(1.67 \times 10^{-27})}{(1.38 \times 10^{-23})(270)(3.6 \times 10^6)} \approx 5.3\, .
 $$
 
-So $e^{-\lambda_H} \approx 5 \times 10^{-3}$, modest but significant. The most-probable thermal speed of atomic hydrogen at $270$ K is $v_{\mathrm{th}}^H = \sqrt{2 \kB T / m_H} \approx 2.1$ km/s, roughly $40\%$ of $v_{\mathrm{esc}}$, so a non-negligible fraction of the high-velocity tail of the Maxwell-Boltzmann distribution exceeds escape velocity. Hydrogen can escape Mars' atmosphere by Jeans escape, and over geological timescales the cumulative loss is enormous.
+So $e^{-\lambda_H} \approx 5 \times 10^{-3}$, modest but significant. The most-probable thermal speed of atomic hydrogen at $270$ K is $v_{\mathrm{th}}^H = \sqrt{2 \kB T / m_H} \approx 2.1$ km/s, about $43\%$ of $v_{\mathrm{esc}}$, so a non-negligible fraction of the high-velocity tail of the Maxwell-Boltzmann distribution exceeds escape velocity. Hydrogen can escape Mars' atmosphere by Jeans escape, and over geological timescales the cumulative loss is enormous.
 
 For molecular hydrogen ($\mathrm{H_2}$, $m = 2$ amu) the escape parameter doubles: $\lambda_{H_2} \approx 10.6$, $e^{-\lambda} \approx 2.5 \times 10^{-5}$. Still escaping, but more slowly than atomic H.
 
@@ -713,12 +694,9 @@ Jeans escape is selective. Light species (H, He, $\mathrm{H_2}$, possibly $\math
 ````
 
 A few comments on the derivation.
-The factor $(1+\lambda)$ in equation {eq}`eq:jeans` reflects the fact that the escaping molecules carry away their kinetic energy (the raw Maxwellian tail) together with the work done against gravity as they climb out.
-This biases the escaping population toward higher initial velocities.
-In the limit $\lambda \to \infty$ the formula reduces to $\Phi_J \sim n\,v_{\mathrm{th}}\,\lambda\,e^{-\lambda}$, the standard high-$\lambda$ asymptotic form often quoted in textbooks.
-Note that the "$\sim$" hides a numerical prefactor.
-Written exactly, $(1+\lambda)e^{-\lambda} \to \lambda e^{-\lambda}$ for $\lambda \gg 1$, and $\sqrt{\kB T/(2\pi m)} = v_{\mathrm{th}}/(2\sqrt{\pi})$ with $v_{\mathrm{th}}$ the most-probable speed defined above, so the textbook scaling carries an implicit $1/(2\sqrt{\pi})$ that we have absorbed into the proportionality.
-{numref}`fig:l10-mb-jeans` shows the Maxwell-Boltzmann distribution and the escaping tail above $v_{\mathrm{esc}}$ that the flux integral counts.
+The factor $(1+\lambda)$ in equation {eq}`eq:jeans` arises because the flux weights each molecule by its speed: a speed class contributes to the flux in proportion to its speed.
+Without gravity ($\lambda \to 0$) the formula reduces to $n\sqrt{\kB T/(2\pi m)}$, the kinetic-theory flux of molecules through an aperture; for $\lambda \gg 1$ it falls as $\lambda\,e^{-\lambda}$.
+{numref}`fig:l10-mb-jeans` shows the Maxwell-Boltzmann distribution and the escaping tail above $v_{\mathrm{esc}}$.
 
 ```{figure} figures/maxwell_boltzmann_jeans.avif
 :name: fig:l10-mb-jeans

@@ -31,7 +31,7 @@
   \begin{itemize}
     \item Explain Mercury's large iron core, its 3:2 spin-orbit resonance and its weak offset dynamo
     \item Describe Mars' interior from the InSight seismic results and its wet-to-dry surface record
-    \item Derive the Jeans escape flux, apply it to H, $\mathrm{H_2}$ and $\mathrm{CO_2}$ on Mars, and distinguish thermal from non-thermal escape
+    \item Derive the Jeans escape parameter, apply it to H, $\mathrm{H_2}$ and $\mathrm{CO_2}$ on Mars, and distinguish thermal from non-thermal escape
   \end{itemize}
 \end{frame}
 
@@ -348,7 +348,7 @@
 
 % ════════════════════════════════════════════════════════════
 \sectionimage{family_portrait}{Solar system, Voyager 1 family portrait. Credit: NASA/JPL-Caltech}
-\section{Blackboard Derivation: Jeans Escape Flux}
+\section{Blackboard Derivation: Jeans Escape Parameter}
 % ════════════════════════════════════════════════════════════
 
 
@@ -359,12 +359,12 @@
     \ipsrecapfig[0.62\textheight]{board_sketch_l10}
     \column{\recaptextcolwide}
     \small
-    \textbf{Goal:} the rate at which thermal energy alone lets molecules escape, applied to Mars.
+    \textbf{Goal:} compare the binding energy of a molecule with its thermal energy at the exobase, and apply this to Mars.
     \vskip4pt
     \begin{itemize}\setlength\itemsep{2pt}
       \item \textbf{The exobase:} mean free path equals scale height; above it, ballistic flight
       \item $v_{\mathrm{th}} = \sqrt{2 \kB T / m}$ against $v_{\mathrm{esc}} = \sqrt{2 G M / r_{\mathrm{exo}}}$
-      \item Count the molecules in the fast tail that point outward
+      \item Compare the binding energy with the thermal energy
     \end{itemize}
     \vskip4pt
     \keyresult{A molecule faster than $v_{\mathrm{esc}}$ leaves; a slower one falls back.}
@@ -381,17 +381,14 @@
   \end{itemize}
 \end{frame}
 
-% ── Jeans flux derivation ────────────────────────────────
-\begin{frame}{Step 2: The Jeans Formula}
-  Integrating upward velocity over the upper hemisphere with cutoff $v \geq v_{\mathrm{esc}}$:
-  $$\Phi_J = n\,\langle v\rangle\,\frac{1}{4}\,(1+\lambda)\,e^{-\lambda}$$
+% ── Boltzmann factor and Jeans flux ──────────────────────
+\begin{frame}{Step 2: The Boltzmann Factor}
+  Escape needs $\tfrac{1}{2} m v^2 \geq G M m / r_{\mathrm{exo}} = \lambda\,\kB T$; the fraction of molecules this fast carries the Boltzmann factor:
+  \keyresult{$$\text{escaping fraction} \;\sim\; e^{-\lambda}, \qquad \lambda \propto m$$}
   \vskip4pt
-  where $\langle v\rangle = \sqrt{8 \kB T / (\pi m)}$ is the mean thermal speed.
-  \vskip6pt
-  Substituting and simplifying:
-  \keyresult{$$\Phi_J \;=\; n\,\sqrt{\frac{\kB T}{2\pi m}}\,(1+\lambda)\,e^{-\lambda}$$}
-  \vskip4pt
-  Jeans (1925). \textbf{Step 3, limits:} $\lambda \to 0$ gives the effusion flux $n\sqrt{\kB T/(2\pi m)}$; for $\lambda \gg 1$ the flux falls as $\lambda e^{-\lambda}$, so $\lambda$ from $5$ to $10$ cuts it by $\sim 80$.
+  Integrating the Maxwellian over the upward molecules faster than $v_{\mathrm{esc}}$ gives the Jeans escape flux:
+  $$\Phi_J \;=\; n\,\sqrt{\frac{\kB T}{2\pi m}}\,(1+\lambda)\,e^{-\lambda}$$
+  The prefactor and $(1+\lambda)$ change slowly; $e^{-\lambda}$ decides which species escape.
 \end{frame}
 
 \begin{frame}
@@ -399,7 +396,7 @@
 \end{frame}
 
 % ── Mars application ─────────────────────────────────────
-\begin{frame}{Step 4: Apply to Mars}
+\begin{frame}{Step 3: Apply to Mars}
   $M = 6.4\times 10^{23}$ kg, $r_{\mathrm{exo}} \approx 3.6\times 10^6$ m, $T_{\mathrm{exo}} \approx 270$ K.
   \vskip2pt
   Escape velocity at the exobase: $v_{\mathrm{esc}} \approx 4.9\,\mathrm{km/s}$
