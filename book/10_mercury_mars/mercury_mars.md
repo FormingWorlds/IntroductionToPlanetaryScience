@@ -349,7 +349,7 @@ Before in situ seismology, orbital gravity and topography {cite:p}`Smith2001` ga
 :width: 700px
 :align: center
 
-Detection of core-reflected $S$ waves ($ScS$) in InSight marsquake recordings ({cite:t}`Stahler2021`). Stacked $ScS$ energy pins the core-mantle boundary at $r_{\mathrm{core}} \approx 1830\ \mathrm{km}$.
+Detection of core-reflected $S$ waves ($ScS$) in InSight marsquake recordings, adapted from Fig. 1 of {cite:t}`Stahler2021`. (a) Transverse-component seismogram of event S0173a (top) and the stacked envelope of six marsquakes (bottom) against time relative to the $ScS$ arrival predicted for a core radius of $1830$ km; for S0173a, $ScS$ arrives about $350$ s after the direct $S$ wave. (b) Energy in a $10$ s window around the predicted $ScS$ arrival for each of $5000$ interior models against the core radius of the model, normalised here from the minimum to the peak of the fitted curve; the peak pins the core-mantle boundary at $r_{\mathrm{core}} \approx 1830\ \mathrm{km}$. Axes and arrival labels added for this course.
 ```
 
 From core-reflected shear waves ($ScS$), {cite:t}`Stahler2021` measured a core radius of $1830 \pm 40\ \mathrm{km}$ ({numref}`fig:stahler-quakes`).
