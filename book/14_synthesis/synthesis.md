@@ -430,7 +430,7 @@ $$
 F_\star(d) = \frac{L_\star}{4\pi d^2}\,.
 $$
 
-The planet absorbs a fraction $(1 - A_B)$ of the incident flux, where $A_B$ is the Bond albedo. For a fast-rotating spherical planet, the absorbed power per unit area, averaged over the whole planet, is $(1 - A_B) F_\star / 4$, because the projected area is $\pi R_p^2$ but the radiating area is $4\pi R_p^2$. Equating absorbed and emitted power gives the equilibrium temperature
+**Step 1: Equilibrium temperature.** The planet absorbs a fraction $(1 - A_B)$ of the incident flux, where $A_B$ is the Bond albedo. For a fast-rotating spherical planet, the absorbed power per unit area, averaged over the whole planet, is $(1 - A_B) F_\star / 4$, because the projected area is $\pi R_p^2$ but the radiating area is $4\pi R_p^2$. Equating absorbed and emitted power gives the equilibrium temperature
 
 $$
 T_{\mathrm{eq}}(d) = \left[\frac{L_\star (1 - A_B)}{16\pi\sigma\epsilon d^2}\right]^{1/4}\,,
@@ -449,7 +449,7 @@ where $\epsilon$ is the effective emissivity of the atmosphere (which in the bar
 Setup sketch of the board derivation of the habitable zone boundaries: a star of luminosity $L_\star$, a planet at orbital distance $d$, and the habitable zone (HZ) as the strip of distances between the inner edge $d_{\mathrm{in}}$ and the outer edge $d_{\mathrm{out}}$. Course-original figure.
 ```
 
-**Effective stellar flux scaling.** The cleanest way to express habitable-zone boundaries is in terms of the **effective stellar flux** $S_{\rm eff}$, defined as the top-of-atmosphere stellar flux at the HZ boundary divided by Earth's present TOA flux $S_\oplus = 1361$ W/m$^2$. Because $F_{\rm TOA} = L_\star / (4\pi d^2)$, the orbital distance corresponding to a given $S_{\rm eff}$ is
+**Step 2: Effective stellar flux and the distance.** The cleanest way to express habitable-zone boundaries is in terms of the **effective stellar flux** $S_{\rm eff}$, defined as the top-of-atmosphere stellar flux at the HZ boundary divided by Earth's present TOA flux $S_\oplus = 1361$ W/m$^2$. Because $F_{\rm TOA} = L_\star / (4\pi d^2)$, the orbital distance corresponding to a given $S_{\rm eff}$ is
 
 $$
 d = (1\,\mathrm{AU}) \sqrt{\frac{L_\star/\Lsun}{S_{\rm eff}}}\,.
@@ -457,7 +457,7 @@ $$
 
 The full 1D radiative-convective climate calculations of {cite:t}`Kopparapu2013` give the Kopparapu boundaries directly in $S_{\rm eff}$ values for Sun-like stars; we simply read them off and apply the formula above.
 
-**Inner edge: the Simpson-Nakajima limit.** As recapped in {ref}`Lecture 9 <lecture09>`, the inner edge of the HZ is set by the runaway greenhouse limit. In a moist atmosphere, the outgoing longwave radiation (OLR) is bounded above by a critical value $F_{\rm OLR}^{\rm max} \approx 280$ W/m$^2$ set by the saturation pressure of water vapour {cite:p}`Pierrehumbert2010,Goldblatt2013`. Once the absorbed stellar flux exceeds this limit, the surface cannot reach radiative equilibrium and the oceans are driven into the atmosphere. For Sun-like stars, the {cite:t}`Kopparapu2013` runaway greenhouse limit corresponds to $S_{\rm in,eff} \approx 1.06$, giving
+**Step 3: Inner edge, the Simpson-Nakajima limit.** As recapped in {ref}`Lecture 9 <lecture09>`, the inner edge of the HZ is set by the runaway greenhouse limit. In a moist atmosphere, the outgoing longwave radiation (OLR) is bounded above by a critical value $F_{\rm OLR}^{\rm max} \approx 280$ W/m$^2$ set by the saturation pressure of water vapour {cite:p}`Pierrehumbert2010,Goldblatt2013`. Once the absorbed stellar flux exceeds this limit, the surface cannot reach radiative equilibrium and the oceans are driven into the atmosphere. For Sun-like stars, the {cite:t}`Kopparapu2013` runaway greenhouse limit corresponds to $S_{\rm in,eff} \approx 1.06$, giving
 
 $$
 d_{\rm in} = (1\,\mathrm{AU})/\sqrt{1.06} \approx 0.97\,\mathrm{AU}.
@@ -473,7 +473,7 @@ $$
 
 Mars at $1.52$ AU is just inside the outer edge.
 
-**Comparing across stellar types.** The habitable zone is therefore a stellar-mass-dependent strip that scales as $\sqrt{L_\star}$. Plugging in luminosities for representative spectral types:
+**Step 4: Numbers for G, K and M dwarfs.** The habitable zone is therefore a stellar-mass-dependent strip that scales as $\sqrt{L_\star}$. Plugging in luminosities for representative spectral types:
 
 - **G dwarfs** (Sun, $L \sim \Lsun$): $d_{\rm in} \approx 0.97$ AU, $d_{\rm out} \approx 1.69$ AU. Width $\sim 0.7$ AU. Lifetime $\sim 10$ Gyr. Modest stellar activity. The reference case for "typical" habitability.
 - **K dwarfs** (e.g. $\epsilon$ Eri at $L \sim 0.3\,\Lsun$): $d_{\rm in} \approx 0.53$ AU, $d_{\rm out} \approx 0.93$ AU. Long main-sequence lifetimes ($\sim 17$ to $70$ Gyr across the K range, $\sim 24$ Gyr for $\epsilon$ Eri), modest flares, stable photospheres, and an HZ that is far enough out to avoid most tidal-locking and pre-main-sequence problems. {cite:t}`CuntzGuinan2016` argued on these grounds that K dwarfs may be the *most habitable* class of host star. Their UV/X-ray output is modest after the first Gyr ({numref}`fig:l14:cuntz-xray`), and their long lifetimes give biology more time to develop.
