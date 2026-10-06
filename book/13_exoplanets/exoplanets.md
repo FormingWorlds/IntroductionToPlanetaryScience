@@ -52,7 +52,7 @@ $$
 K_\star = \left(\frac{2\pi G}{P}\right)^{1/3} \frac{m_p \sin i}{(M_\star + m_p)^{2/3}} \frac{1}{\sqrt{1 - e^2}},
 $$
 
-Around the Sun, a Jupiter analogue produces $K_\star \approx 12.5$ m/s, Saturn at $9.5$ AU produces $2.7$ m/s, and Earth at 1 AU produces $0.09$ m/s.
+Around the Sun, a Jupiter analogue produces $K_\star \approx 12.5$ m/s, Saturn at $9.5$ AU produces $2.8$ m/s, and Earth at 1 AU produces $0.09$ m/s.
 
 Instrumental precision has improved by two orders of magnitude over three decades, from 10 m/s with ELODIE to 1 m/s with HARPS {cite:p}`Mayor2003` and 10 cm/s with ESPRESSO {cite:p}`Pepe2021`.
 Precision is now limited by **stellar noise**, velocity jitter at the 10 cm/s to 1 m/s level from granulation, oscillations, and starspots, requiring activity diagnostics or long baselines to mitigate.
@@ -71,7 +71,7 @@ Because optical **M dwarfs** have complex molecular spectra and rapidly rotating
 :width: 100%
 :align: center
 
-(a) The stellar reflex velocity of a Sun with a Jupiter analogue over two orbital periods, semi-amplitude $K_\star = 12.5$ m s$^{-1}$, against the instrument precisions of ELODIE (10 m s$^{-1}$), HARPS (1 m s$^{-1}$) and ESPRESSO (0.1 m s$^{-1}$). (b) The semi-amplitudes of a Jupiter analogue (12.5 m s$^{-1}$), Saturn at 9.5 AU (2.7 m s$^{-1}$) and Earth at 1 AU (0.09 m s$^{-1}$) against the same precisions: an Earth analogue sits below the instrumental floor and within the stellar noise. Course-original figure.
+(a) The stellar reflex velocity of a Sun with a Jupiter analogue over two orbital periods, semi-amplitude $K_\star = 12.5$ m s$^{-1}$, against the instrument precisions of ELODIE (10 m s$^{-1}$), HARPS (1 m s$^{-1}$) and ESPRESSO (0.1 m s$^{-1}$). (b) The semi-amplitudes of a Jupiter analogue (12.5 m s$^{-1}$), Saturn at 9.5 AU (2.8 m s$^{-1}$) and Earth at 1 AU (0.09 m s$^{-1}$) against the same precisions: an Earth analogue sits below the instrumental floor and within the stellar noise. Course-original figure.
 ```
 
 ### Transit method

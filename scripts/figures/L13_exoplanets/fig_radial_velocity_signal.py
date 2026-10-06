@@ -1,7 +1,7 @@
 """Stellar radial velocity signals and spectroscopic detection limits.
 
 Planetary reflex motion induces a Doppler semi-amplitude K in the host star,
-reaching 12.5 m/s for a Jupiter analogue, 2.7 m/s for Saturn, and 0.09 m/s
+reaching 12.5 m/s for a Jupiter analogue, 2.8 m/s for Saturn, and 0.09 m/s
 for Earth, compared to instrumental precisions from 10 m/s down to 0.1 m/s.
 """
 
@@ -54,9 +54,9 @@ def make_plot() -> plt.Figure:
     ax1.text(2.45, -1.7, "ESPRESSO\n(0.1 m/s)", ha="right", va="center", fontsize=10, color="#2ca25f", bbox=bbox_white)
 
     # --- Panel (b): Bar chart of semi-amplitudes against instrument precision ---
-    # Three analogues: Jupiter 12.5 m/s, Saturn at 9.5 AU 2.7 m/s, Earth at 1 AU 0.09 m/s
-    planets = ["Jupiter\n5.2 AU\n(12.5 m/s)", "Saturn\n9.5 AU\n(2.7 m/s)", "Earth\n1 AU\n(0.09 m/s)"]
-    k_vals = [12.5, 2.7, 0.09]
+    # Three analogues: Jupiter 12.5 m/s, Saturn at 9.5 AU 2.8 m/s, Earth at 1 AU 0.09 m/s
+    planets = ["Jupiter\n5.2 AU\n(12.5 m/s)", "Saturn\n9.5 AU\n(2.8 m/s)", "Earth\n1 AU\n(0.09 m/s)"]
+    k_vals = [12.5, 2.8, 0.09]
     x = np.arange(len(planets))
     ax2.bar(x, k_vals, width=0.5, color="#1f6db8", alpha=0.85, edgecolor="black", lw=0.8)
     ax2.set_yscale("log")
