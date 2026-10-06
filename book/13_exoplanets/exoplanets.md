@@ -130,7 +130,7 @@ PLATO is designed to detect Earth-sized planets in the **habitable zones**, the 
 This derivation is the central conceptual payoff of the lecture.
 Both the transit method and the radial velocity method have an obvious individual limitation: a transit alone gives a radius but not a mass, and a radial velocity alone gives only a minimum mass.
 Combining the two breaks the degeneracy, gives both quantities for the same planet, and turns an exoplanet detection into a physical object whose internal composition can be discussed.
-We work through this in three steps.
+We work through this in four steps and then combine the two observables.
 
 {numref}`fig:board-sketch-l13` shows the two observables side by side: the planet of radius $R_p$ crossing the stellar disc of radius $R_\star$, and the flux dip $\Delta F$ it produces in the light curve.
 
@@ -143,7 +143,7 @@ We work through this in three steps.
 Setup sketch of the board derivation of the planet bulk density: a planet of radius $R_p$ transits a star of radius $R_\star$, and the light curve below drops by $\Delta F$ for the duration of the transit. Course-original figure.
 ```
 
-**Step 1: transit depth (~2 min).**
+**Step 1: Transit depth.**
 Treat the star as a uniformly bright disk of radius $R_\star$ and the planet as an opaque circular disk of radius $R_p$.
 When the planet is fully in front of the star, the area blocked is $\pi R_p^2$ and the area of the star is $\pi R_\star^2$.
 The fractional flux drop is therefore the ratio of areas:
@@ -156,7 +156,7 @@ The depth is the directly measured observable.
 If we know the stellar radius (typically from spectroscopy combined with stellar evolution models, or in the best cases from interferometric angular diameters and parallax distances), we immediately get the planet radius.
 Limb darkening, ingress shape, and orbital eccentricity all introduce $\sim$10\% level corrections, but the leading-order picture is just the area ratio.
 
-**Step 2: radial velocity semi-amplitude (~5 min).**
+**Step 2: The star's orbit about the barycentre.**
 Now we attack the dynamical side.
 The two bodies orbit their common centre of mass.
 Let $a$ denote the relative (planet-to-star) semi-major axis, and let $a_\star$ and $a_p$ denote the distances of the star and planet from the barycentre, with $a = a_\star + a_p$.
@@ -180,6 +180,7 @@ $$
 K_\star = v_\star \sin i = \frac{m_p \sin i}{M_\star + m_p} \cdot \frac{2\pi a}{P}.
 $$
 
+**Step 3: Kepler removes $a$: the semi-amplitude.**
 To eliminate $a$ in favour of measurable quantities we use Kepler's third law for the **relative** semi-major axis,
 
 $$
@@ -204,7 +205,12 @@ Two things should be clear from this expression.
 First, $K_\star \propto P^{-1/3}$, so short-period planets give a larger reflex than long-period planets at the same mass.
 Second, $K_\star \propto m_p \sin i$, so a radial velocity measurement alone gives only the **minimum** mass $m_p \sin i$, not the true mass $m_p$.
 
-**Step 3: combining the two observables (~3 min).**
+**Step 4: Numbers: Jupiter around the Sun.**
+Take $P = 11.86$ yr $= 3.743 \times 10^{8}$ s, $m_p = 1.898 \times 10^{27}$ kg, $M_\odot = 1.989 \times 10^{30}$ kg, $\sin i = 1$ and $e = 0$.
+In SI units, $(2\pi G/P)^{1/3} = (1.120 \times 10^{-18})^{1/3} = 1.039 \times 10^{-6}$ and $m_p/M_\odot^{2/3} = 1.898 \times 10^{27}/1.582 \times 10^{20} = 1.200 \times 10^{7}$, so $K_\star = 12.5$ m/s.
+The same steps give $K_\star = 0.09$ m/s for Earth, the values quoted for the radial velocity method above.
+
+**Combining the two observables.**
 Suppose now that the same planet **both transits and produces a measurable radial velocity signal**.
 The transit immediately tells us that the orbital plane is nearly edge-on: the impact parameter is small and $\sin i \approx 1$ to better than a few per cent (a non-grazing transit requires $i$ within roughly $R_\star / a$ of $90^\circ$).
 This single piece of information collapses the $m_p \sin i$ degeneracy: with $\sin i \approx 1$ the inferred $m_p \sin i$ is the true mass $m_p$.
