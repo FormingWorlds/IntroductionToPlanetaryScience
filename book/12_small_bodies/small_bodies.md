@@ -213,7 +213,7 @@ $$
 $$
 
 where the subscript $0$ denotes the *initial* (closure-time) ratio and "now" denotes the modern measurement.
-These two equations contain four unknowns each: the elapsed time $t$, the initial Pb ratios, and the U/Pb ratio of the rock.
+These two equations contain three unknowns each: the elapsed time $t$, the initial Pb ratio, and the U/Pb ratio of the rock.
 Knowing only one isotope ratio you cannot solve for $t$.
 
 {numref}`fig:board-sketch-l12` shows where the argument is heading: several minerals from one rock fall on a straight line in the Pb-Pb plane, the line's slope gives the age, and its intercept region gives the initial lead.
@@ -228,9 +228,7 @@ Setup sketch of the board derivation of the Pb-Pb isochron age: measured $^{207}
 ```
 
 **Step 3: Subtract the initial ratios and divide.**
-Combine the two equations by eliminating $t$ and the initial Pb separately for each isotope.
-First, divide each present-day equation by its corresponding U abundance to isolate the time function on one side.
-Subtracting the initial ratio and rearranging gives, for $^{206}\mathrm{Pb}$,
+For each isotope, move the initial ratio to the left-hand side and divide by the U/Pb ratio, so that the time function stands alone on the right; for $^{206}\mathrm{Pb}$ this gives
 
 $$
 \frac{1}{{}^{238}\mathrm{U}/{}^{204}\mathrm{Pb}}
