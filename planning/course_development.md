@@ -1465,3 +1465,12 @@ The L09 deck runs in the section and figure order of the notes:
 - Water loss (Hamano, Lebrun, Way, Turbet, Gillmann, Constantinou), the D/H ratio and present-day volcanism form one section, as in the notes; Part 3 (divergence, carbonate-silicate failure, habitability with TRAPPIST-1) and the missions follow.
 - Step 4 in notes and slides separates the runaway greenhouse limit ($F_\mathrm{abs} = F_\mathrm{OLR}^\mathrm{max}$, 0.84 to 0.97 AU) from the moist greenhouse limit (stratospheric water loss, 0.95 to 0.99 AU).
 - The `photosphere_profiles` figure is drawn on a 6.2 by 3.5 inch canvas so its labels stay legible on the slide; the legend keys only the markers, since the right panel names the colours.
+
+## 18. L12 to L14 deck order follows the notes (2026-10-06)
+
+The L12, L13 and L14 decks run in the section and figure order of the notes, as L09 to L11 do.
+
+- L12: taxonomy (Allende, iron, pallasite, chondrules), radiogenic chronometers, the derivation, then one section on parent bodies (petrographic types, Vesta, oxygen isotopes) and the NC-CC dichotomy. Yarkovsky and YORP come before the impact-rate figures, Charon's Mordor Macula before the Pluto-Charon map, and 67P opens the missions section.
+- L13: HR 8799 before $\beta$ Pictoris b, transit timing with the other detection methods, the mass-radius figure of Lichtenberg et al. (2025) in the composition section, core-powered mass loss after the photoevaporation tracks, and GJ 1214 b and the WASP-43 b phase curve before the WASP-39 b results.
+- L14: the formation figures in notes order, the Weiss period-radius figure before the list of atypical features, tectonics after the habitable-zone figures, magma oceans and water delivery as their own section, life definition and extremophiles before the origin of life, and the solar system composite as the final framing before the summary. `magnetosphere_anatomy_esa` opens the habitability section because its key text states the coupled stack, and `elt_milkyway` closes Part 1 because its key text answers whether the solar system is rare.
+- Derivation labels match across notes, slides and lecturer sheets: L12 Setup and Steps 1 to 4 (daughter, initial Pb, subtract and divide, CAI age); L13 Setup and Steps 1 to 4 (transit depth, barycentre orbit, Kepler and $K_\star$, Jupiter numbers), then the combination into the bulk density; L14 Setup and Steps 1 to 4 (equilibrium temperature, effective flux, inner edge, G, K and M dwarfs), with the outer edge stated after Step 3.
