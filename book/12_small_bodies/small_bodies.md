@@ -179,6 +179,7 @@ Uranium has two long-lived isotopes that both decay to lead: $^{238}\mathrm{U}$ 
 Lead also has a primordial isotope, $^{204}\mathrm{Pb}$, that has no significant radiogenic source and is therefore a stable reference.
 We will measure ratios relative to $^{204}\mathrm{Pb}$ throughout.
 
+**Step 1: Radiogenic daughter from the parent measured today.**
 For each U-Pb system, the present amount of radiogenic daughter is the parent that has decayed:
 
 $$
@@ -191,6 +192,7 @@ $$
 
 Here $t$ is the elapsed time since the system closed (the "age"), and the asterisk distinguishes radiogenic Pb produced *in situ* from any inherited initial Pb.
 
+**Step 2: Real rocks carry initial Pb.**
 A real rock contains both initial and radiogenic Pb.
 Dividing each isotope by the stable reference $^{204}\mathrm{Pb}$, we can write the present-day measured ratios as
 
@@ -225,7 +227,7 @@ Knowing only one isotope ratio you cannot solve for $t$.
 Setup sketch of the board derivation of the Pb-Pb isochron age: measured $^{207}\mathrm{Pb}/^{204}\mathrm{Pb}$ against $^{206}\mathrm{Pb}/^{204}\mathrm{Pb}$ for several phases of one rock (orange points) fall on the isochron; its slope depends on the age $t$ alone, and the initial Pb composition sits at the low-ratio end. Course-original figure.
 ```
 
-**The trick.**
+**Step 3: Subtract the initial ratios and divide.**
 Combine the two equations by eliminating $t$ and the initial Pb separately for each isotope.
 First, divide each present-day equation by its corresponding U abundance to isolate the time function on one side.
 Subtracting the initial ratio and rearranging gives, for $^{206}\mathrm{Pb}$,
@@ -242,7 +244,6 @@ Now consider a *suite* of cogenetic samples, that is, several sub-samples of the
 They all share the same initial Pb ratios and the same age $t$.
 What differs between samples is the U/Pb ratio, because U and Pb partition differently into different mineral phases (U is incompatible in olivine, for example, while Pb is incompatible in apatite).
 
-**Eliminate U/Pb completely.**
 Take the ratio of the two equations above for the same sample, dividing the $^{207}$Pb/$^{204}$Pb expression by the $^{206}$Pb/$^{204}$Pb expression.
 The $^{204}$Pb terms cancel and the U-isotope ratio simplifies to the present-day $^{235}\mathrm{U}/{}^{238}\mathrm{U}$ value, leaving
 
@@ -263,7 +264,7 @@ You do *not* need to assume an initial Pb composition before fitting the data: i
 In contrast, a single U-Pb system (just $^{238}\mathrm{U}$-$^{206}\mathrm{Pb}$) requires an external estimate of the initial Pb to extract an age.
 The double system removes that assumption; this is why the Pb-Pb method is the gold standard for absolute dating in cosmochemistry.
 
-**Numerical result for CAIs.**
+**Step 4: The CAI age.**
 {cite:t}`Connelly2012` performed Pb-Pb dating on individual CAIs from the Efremovka CV3 chondrite (CAIs 22E, 31E, 32E), complemented by the Allende CAI SJ101, after acid leaching to remove non-radiogenic contamination.
 The measured isochrons gave a CAI age of
 
