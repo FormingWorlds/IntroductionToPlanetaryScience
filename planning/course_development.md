@@ -366,7 +366,7 @@ Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–
 
 - Historical context: 1992 pulsar planets (Wolszczan & Frail, PSR B1257+12), 1995 51 Peg b (Mayor & Queloz, Nobel 2019), the "hot Jupiter surprise" that launched the migration revolution
 - Current count: >6000 confirmed exoplanets as of 2025
-- Radial velocity: Doppler wobble, K scaling, m sin i degeneracy, HARPS → ESPRESSO to ~10 cm/s, stellar-noise floor
+- Radial velocity: Doppler wobble (course schematic of the reflex orbit, the line shifts and the velocity curve), K scaling, m sin i degeneracy, HARPS → ESPRESSO to ~10 cm/s, stellar-noise floor
 - Transit: depth δ = (Rp/R★)², geometric probability ≈ R★/a, limb darkening; CoRoT → Kepler → K2 → TESS → CHEOPS → PLATO
 - **Blackboard derivation (~10 min):** transit depth geometry (~2 min) + RV semi-amplitude K from momentum conservation (~5 min) + combine to get mass, radius, and bulk density, breaking the m sin i degeneracy (~3 min)
 - Direct imaging: contrast ratios, coronagraphs + AO, ADI/SDI; SPHERE/GPI/SCExAO on the ground, JWST NIRCam/MIRI in space; HR 8799, β Pic b/c, PDS 70 b/c, first JWST-imaged atmospheres 2023
@@ -400,7 +400,7 @@ Lecture follows the same descriptive-first, payoff-at-the-end structure as L9–
   - **55 Cancri e** (Hu et al. 2024): MIRI thermal emission + phase curve; tentative CO/CO₂-rich atmosphere on a super-Earth lava world
   - **TOI-561 b**: ultra-short-period rocky planet, metal-poor thick-disk host, tentative thin-atmosphere signal
   - Direct imaging spectra: HIP 65426 b, VHS 1256 b (Miles et al. 2023)
-- Habitable zone revisited: 1D (Kasting, Kopparapu) vs 3D (Way, Wordsworth, Turbet) boundaries; inner edge = Simpson-Nakajima runaway (recap L9), outer edge = max CO₂ greenhouse; M dwarf tidal locking + pre-MS history matters
+- Habitable zone revisited: 1D (Kasting, Kopparapu) vs 3D (Way, Wordsworth, Turbet) boundaries; inner edge = Simpson-Nakajima runaway (recap L9), outer edge = max CO₂ greenhouse (Rayleigh scattering by CO₂ outweighs the extra greenhouse warming), with CO₂ clouds (Forget & Pierrehumbert 1997; Kitzmann 2016, 2017) and polar CO₂ condensation in 3D models (Turbet et al. 2017; Pidhorodetska et al. 2026); M dwarf tidal locking + pre-MS history matters
 - Biosignature gases: O₂, O₃, CH₄, N₂O, disequilibrium combinations; false positives (H₂O photolysis, CO₂ photolysis, abiotic volcanic CH₄); DMS not-known-on-Earth ≠ impossible elsewhere
 - **Solar system in the exoplanet landscape:**
   - Most planets: sub-Neptunes around M dwarfs in compact peas-in-a-pod systems
@@ -1482,3 +1482,10 @@ The L10 board derivation stops at the escape parameter and the Boltzmann factor;
 - Notes, slides and lecturer sheet use Setup (exobase, $v_\mathrm{th}$, $v_\mathrm{esc}$), Step 1 the escape parameter $\lambda = GMm/(k_B T r_\mathrm{exo})$, Step 2 the Boltzmann factor (escaping fraction set by $e^{-\lambda}$), Step 3 the Mars numbers ($\lambda_\mathrm{H} = 5.3$, $\lambda_{\mathrm{CO_2}} \approx 230$).
 - The Jeans flux $\Phi_J = n\sqrt{k_B T/2\pi m}\,(1+\lambda)\,e^{-\lambda}$ is stated without the integration and points to the Lecture 5 form; Worksheet 5 part (c) and minilecture 5 use it.
 - The exact fraction of a Maxwellian above $v_\mathrm{esc}$, $\operatorname{erfc}\sqrt{\lambda} + 2\sqrt{\lambda/\pi}\,e^{-\lambda}$, and the factor $(1+\lambda)e^{-\lambda}$ differ from $e^{-\lambda}$ by slowly varying factors, at most about 250 (the $1+\lambda$ of $\mathrm{CO_2}$), against about 100 orders of magnitude between H and $\mathrm{CO_2}$.
+
+## 20. L13 and L14 corrections before the recording (2026-10-15)
+
+- L13 radial velocity: a course schematic (`fig_radial_velocity_geometry.py`) shows the reflex orbit about the barycentre, the red, zero and blue line shifts at three phases, and the velocity curve; notes figure and a deck frame before the $K_\star$ frame, also the section image of the radial velocity section.
+- L13 Rossiter-McLaughlin: the Triaud (2018) figure is replaced by a course figure (`fig_rossiter_mclaughlin.py`): a first-moment model of the anomaly for $\lambda = 0^\circ$, $60^\circ$ and $180^\circ$. The notes state that the effect gives the sky-projected obliquity $\lambda$ and the transit gives the inclination $i$.
+- HZ outer edge, L13 and L14 notes, L13 deck, Worksheet 7 solution: the maximum greenhouse limit is where Rayleigh scattering by $\mathrm{CO_2}$ outweighs the extra greenhouse warming (Kopparapu et al. 2013), not the onset of $\mathrm{CO_2}$ ice clouds. L13 adds one paragraph on $\mathrm{CO_2}$ clouds and condensation (Forget & Pierrehumbert 1997; Kitzmann 2016, 2017; Forget et al. 2013; Turbet et al. 2017; Pidhorodetska et al. 2026); L14 Section "The habitable zone is not a line" adds a short version. The flux values ($S_\mathrm{eff} = 0.35$, $1.69$ AU) are unchanged.
+- L14 "Planet formation theory meets observation" has an opening that names the three kinds of evidence and a closing paragraph: theory explains how each planet type can form, not yet which type a given disk produces.

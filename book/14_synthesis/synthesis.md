@@ -37,6 +37,9 @@ The blackboard derivation reconstructs the classical habitable zone from energy 
 
 ### Planet formation theory meets observation
 
+The earlier lectures built the theory of planet formation one stage at a time.
+This section compares its main predictions with the three kinds of evidence now available: images of disks in which planets form, isotopic dating of the building blocks of the solar system, and the demographics of exoplanets.
+
 Dust in disks coagulates into pebbles forming **planetesimals**, bodies from roughly a kilometre across produced by the streaming instability.
 Accreting pebbles and planetesimals build cores that trigger runaway gas accretion {cite:p}`Drazkowska2023` ({numref}`fig:l14:formation-overview`; {ref}`Lecture 2 <lecture02>`).
 
@@ -118,6 +121,11 @@ Synthetic populations produce super-Earths, confirming that their absence in the
 
 Population synthesis predictions for planet mass versus orbital period from pebble accretion at low (panel B, $\alpha_\nu = 10^{-4}$) and moderate (panel C, $\alpha_\nu = 10^{-3}$) turbulence, drawn from the dust disc mass distribution of panel A. Both runs populate the super-Earth, hot Jupiter, warm gas giant, and cold gas giant regimes, with super-Earth fractions of $\sim 36\%$ and $\sim 27\%$. Reproduced from {cite:t}`Drazkowska2023`.
 ```
+
+These results lead to one conclusion.
+Formation theory now explains how each observed type of planet, from super-Earths and sub-Neptunes to hot and cold giants, can form within the lifetime of the gas disk, and disk images show this process in progress.
+It cannot yet predict which type a given disk produces: population synthesis returns the full range of types from one set of physics, and the proportions change with poorly constrained inputs such as the disk turbulence ({numref}`fig:l14:popsyn`).
+The solar system is one outcome of this process, and two of its features are the test cases for the comparison that follows: a Jupiter that may have formed within about $1$ Myr, and the absence of any planet between $1$ and $4\,\Rearth$.
 
 ### The solar system overlaid on the exoplanet diagram
 
@@ -255,6 +263,10 @@ Duration of the runaway greenhouse phase for planets that formed at 10 Myr with 
 
 The habitable zone is also time-dependent, as stellar luminosity increases by roughly 30% over the main sequence.
 Around M dwarfs, planets now in the HZ spent hundreds of Myr inside the runaway greenhouse boundary {cite:p}`LugerBarnes2015`.
+
+The outer edge is uncertain for a different reason.
+The maximum $\mathrm{CO_2}$ greenhouse limit leaves out $\mathrm{CO_2}$ ice clouds, whose net warming is now thought to be small except around hot stars {cite:p}`Kitzmann2017`.
+Three-dimensional models show that on a frozen planet $\mathrm{CO_2}$ condenses into permanent polar ice caps, so an Earth-like planet beyond about $1.27$ AU from a Sun-like star may never escape global glaciation {cite:p}`Turbet2017` ({ref}`Lecture 13 <lecture13>`).
 
 Habitability therefore depends on evolutionary trajectories, requiring coupled climate-evolution models rather than static 1D HZ boundaries.
 
@@ -465,7 +477,7 @@ $$
 
 Venus at $0.72$ AU receives $S_{\rm eff} \approx 1.9$ and sits well inside the inner edge.
 
-**Outer edge: the maximum $\mathrm{CO_2}$ greenhouse.** The outer edge is set by a different mechanism. For $\mathrm{CO_2}$-rich atmospheres at low temperatures, increasing the atmospheric $\mathrm{CO_2}$ inventory does *not* warm the planet indefinitely: above a certain partial pressure, $\mathrm{CO_2}$ begins to condense out as ice clouds and surface ice rather than acting as a greenhouse gas. The maximum greenhouse warming achievable from any $\mathrm{CO_2}$ atmosphere therefore corresponds to a minimum stellar flux below which the surface cannot be kept above 273 K. The {cite:t}`Kopparapu2013` outer-edge limit for Sun-like stars is $S_{\rm out,eff} \approx 0.35$, giving
+**Outer edge: the maximum $\mathrm{CO_2}$ greenhouse.** The outer edge is set by a different mechanism. For $\mathrm{CO_2}$-rich atmospheres at low temperatures, increasing the atmospheric $\mathrm{CO_2}$ inventory does *not* warm the planet indefinitely: near $10$ bar the atmosphere is optically thick at all infrared wavelengths, so the outgoing infrared flux stops falling, while Rayleigh scattering by $\mathrm{CO_2}$ continues to raise the planetary albedo. Beyond this point, more $\mathrm{CO_2}$ cools the planet. The maximum greenhouse warming achievable from any $\mathrm{CO_2}$ atmosphere therefore corresponds to a minimum stellar flux below which the surface cannot be kept above 273 K. The {cite:t}`Kopparapu2013` outer-edge limit for Sun-like stars is $S_{\rm out,eff} \approx 0.35$, giving
 
 $$
 d_{\rm out} = (1\,\mathrm{AU})/\sqrt{0.35} \approx 1.69\,\mathrm{AU}.
