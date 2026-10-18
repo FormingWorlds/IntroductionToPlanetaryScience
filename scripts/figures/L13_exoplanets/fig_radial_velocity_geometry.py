@@ -64,17 +64,17 @@ def _orbit_panel(ax: plt.Axes) -> None:
         )
         # Phase number next to the star and the planet
         ox, oy = np.cos(th), np.sin(th)
-        ax.text(xs + 0.14 * ox, ys + 0.14 * oy + 0.05, ph["label"], color=ph["color"], fontsize=11,
+        ax.text(xs + 0.17 * ox, ys + 0.17 * oy + 0.05, ph["label"], color=ph["color"], fontsize=11,
                 fontweight="bold", ha="center", va="center")
-        ax.text(xp - 0.12 * ox, yp - 0.12 * oy, ph["label"], color=ph["color"], fontsize=11,
+        ax.text(xp - 0.16 * ox, yp - 0.16 * oy, ph["label"], color=ph["color"], fontsize=11,
                 fontweight="bold", ha="center", va="center")
 
-    ax.add_patch(FancyArrowPatch((0, -1.25), (0, -1.6), arrowstyle="-|>", mutation_scale=14, color="black", lw=1.4))
-    ax.text(-0.06, -1.42, "to the observer", fontsize=9, ha="right", va="center")
+    ax.add_patch(FancyArrowPatch((0, -1.3), (0, -1.62), arrowstyle="-|>", mutation_scale=14, color="black", lw=1.4))
+    ax.text(-0.06, -1.46, "to the observer", fontsize=9, ha="right", va="center")
     ax.text(0, 1.5, "yellow: star; grey: planet\narrows: velocity of the star\nstar orbit not to scale",
             fontsize=9, color="0.3", ha="center", va="top")
     ax.set_xlim(-1.3, 1.3)
-    ax.set_ylim(-1.65, 1.5)
+    ax.set_ylim(-1.68, 1.5)
     ax.set_aspect("equal")
     ax.axis("off")
     ax.set_title("(a) Star and planet orbit the barycentre", fontsize=10)
@@ -107,6 +107,8 @@ def _spectrum_panel(ax: plt.Axes) -> None:
     ax.set_title("(b) Stellar absorption lines (shifts exaggerated)", fontsize=10)
 
 
+CURVE_LABEL_OFFSET = {"1": (0.035, 0.25, "left"), "2": (-0.035, -0.3, "right"), "3": (0.0, 0.42, "center")}
+
 def _curve_panel(ax: plt.Axes) -> None:
     """Plot the radial velocity curve with the three phases marked."""
     t = np.linspace(0, 1.25, 500)
@@ -115,8 +117,10 @@ def _curve_panel(ax: plt.Axes) -> None:
     for ph in PHASES:
         tp = ph["theta"] / (2 * np.pi)
         ax.plot(tp, np.cos(ph["theta"]), "o", ms=8, color=ph["color"], zorder=4)
-        ax.text(tp + 0.035, np.cos(ph["theta"]) + 0.2, ph["label"], color=ph["color"], fontsize=11,
-                fontweight="bold", ha="left", va="center")
+        # Each label sits on the side of its marker that the curve leaves free
+        dx, dy, ha = CURVE_LABEL_OFFSET[ph["label"]]
+        ax.text(tp + dx, np.cos(ph["theta"]) + dy, ph["label"], color=ph["color"], fontsize=11,
+                fontweight="bold", ha=ha, va="center")
     ax.add_patch(FancyArrowPatch((1.0, 0.0), (1.0, 1.0), arrowstyle="<|-|>", mutation_scale=9, color=RED, lw=1.3))
     ax.text(1.03, 0.5, r"$K_\star$", color=RED, fontsize=11, ha="left", va="center")
     ax.set_xlim(-0.03, 1.25)

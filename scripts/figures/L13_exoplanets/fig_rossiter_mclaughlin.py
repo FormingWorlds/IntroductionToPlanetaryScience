@@ -92,8 +92,8 @@ def _disk_panel(ax: plt.Axes, lam_deg: float, title: str) -> None:
     ax.plot([0, 0], [-1.25, 1.3], color="black", lw=1.2)
     ax.add_patch(FancyArrowPatch((-0.22, 1.2), (0.22, 1.2), connectionstyle="arc3,rad=0.4", arrowstyle="-|>",
                                  mutation_scale=9, color="black", lw=1.0))
-    ax.text(-0.95, 1.08, "approaching", fontsize=8.5, color="#1f6db8", ha="left")
-    ax.text(0.95, 1.08, "receding", fontsize=8.5, color="#c0392b", ha="right")
+    ax.text(-0.3, 1.08, "approaching", fontsize=8.5, color="#1f6db8", ha="right")
+    ax.text(0.3, 1.08, "receding", fontsize=8.5, color="#c0392b", ha="left")
     t = np.linspace(-1.75, 1.75, 50)
     xp, yp = _planet_path(lam_deg, t)
     ax.plot(xp, yp, color="black", ls="--", lw=1.0)
