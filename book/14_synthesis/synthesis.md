@@ -23,7 +23,7 @@ Lecture 13 showed how the same physics applies to several thousand planetary sys
 :width: 750px
 :align: center
 
-Architecture of the Solar System on a logarithmic semi-major-axis scale. The eight planets and Pluto are drawn with symbol area scaled as $\log(1 + R/\Rearth)$ so that all bodies remain visible; shaded spans mark the asteroid main belt ($2.1$–$3.3$ AU), the classical Kuiper Belt ($30$–$50$ AU), and the $2.5$–$3.5$ AU range in which the solar nebula's water snow line lay, separating the rocky inner planets from the gas and ice giants. Semi-major axes and radii from {cite:t}`NSSDCPlanetaryFactSheet`. Course-original figure.
+Architecture of the Solar System on a logarithmic semi-major-axis scale. The eight planets and Pluto are drawn with symbol area scaled as $\log(1 + R/\Rearth)$ so that all bodies remain visible; shaded spans mark the asteroid main belt ($2.1$ to $3.3$ AU), the classical Kuiper Belt ($30$ to $50$ AU), and the $2.5$ to $3.5$ AU range in which the solar nebula's water snow line lay, separating the rocky inner planets from the gas and ice giants. Semi-major axes and radii from {cite:t}`NSSDCPlanetaryFactSheet`. Course-original figure.
 ```
 
 The thread is simple: physical processes shape planetary outcomes everywhere.
@@ -58,7 +58,7 @@ Mass growth curves for cores growing by pebble versus planetesimal accretion are
 :name: fig:l14:envelope-accretion
 :width: 90%
 
-Mass growth of a planetary core as a function of time at three orbital radii (0.5, 5, and 50 AU), comparing pebble accretion in the drift and Hill regimes (solid lines) with classical planetesimal accretion (grey dotted lines). Pebble accretion reaches 10 Earth masses well before the typical disk lifetime, while planetesimal accretion at 5 AU takes longer than the disk lifetime. The masses of Ceres and Pluto are marked for reference. Reproduced from {cite:t}`Lambrechts2012`.
+Mass growth of a planetary core as a function of time at three orbital radii (0.5, 5, and 50 AU), from {cite:t}`Lambrechts2012` Fig. 11. Grey solid lines show pebble accretion in the drift regime from $10^{-5}$ Earth masses up to the transition mass (grey dot); black lines show the faster Hill regime, drawn from the transition mass at $t = 0$ rather than from the end of the drift phase. Grey dotted lines show classical planetesimal accretion, the faster curve for 2D accretion of planetesimal fragments and the slower for 3D accretion of planetesimals. From the transition mass, pebble accretion builds a 10 Earth-mass core in less than a million years at all three distances, while 3D planetesimal accretion at 5 AU needs more than $10^7$ years; the drift phase at 5 AU itself takes about $10^7$ years, comparable to the disk lifetime. The masses of Ceres and Pluto are marked for reference. Reproduced from {cite:t}`Lambrechts2012`.
 ```
 
 ALMA millimeter continuum images resolve concentric rings and gaps in protoplanetary disks, providing direct observational evidence for ongoing planet formation ({numref}`fig:l14:dsharp`).
@@ -90,7 +90,7 @@ Jupiter's early growth may have isolated the non-carbonaceous and carbonaceous (
 :name: fig:l14:nccc-timeline
 :width: 80%
 
-Timeline of solar system formation reconstructed from isotopic dating of meteoritic materials. The non-carbonaceous (NC, red) and carbonaceous (CC, blue) reservoirs maintain distinct isotopic signatures from CAI (calcium-aluminium-rich inclusion, among the earliest solids to condense in the solar system) formation onwards, indicating that they accreted in physically separated regions of the disk for at least the first 2--3 Myr. Reproduced from {cite:t}`Lichtenberg2023`.
+Timeline of solar system formation reconstructed from isotopic dating of meteoritic materials. The non-carbonaceous (NC, red) and carbonaceous (CC, blue) reservoirs maintain distinct isotopic signatures from CAI (calcium-aluminium-rich inclusion, among the earliest solids to condense in the solar system) formation onwards, indicating that they accreted in physically separated regions of the disk for at least the first 2 to 3 Myr. Reproduced from {cite:t}`Lichtenberg2023`.
 ```
 
 Surveys reveal a **radius valley** at $\sim 1.8\,\Rearth$ separating super-Earths from sub-Neptunes {cite:p}`Fulton2017` ({numref}`fig:l14:fulton-valley`; {ref}`Lecture 13 <lecture13>`).
@@ -101,7 +101,7 @@ Photoevaporation by stellar XUV {cite:p}`Owen2017` and core-powered mass loss {c
 :name: fig:l14:fulton-valley
 :width: 70%
 
-The "Fulton gap" in the radius distribution of small close-in exoplanets. The two-dimensional map of planet size against incident stellar light shows a deficit of planets at $\sim 1.8\,\Rearth$ that separates a denser super-Earth population from a sub-Neptune population. The dashed line marks the prediction of atmospheric-loss (photoevaporation) models, which reproduce both the location and the slope of the valley with stellar irradiation; the dotted line marks a gas-poor formation model. Reproduced from {cite:t}`Fulton2017`.
+The "Fulton gap" in the radius distribution of small close-in exoplanets. The two-dimensional map of planet size against incident stellar light shows a deficit of planets at $\sim 1.8\,\Rearth$ that separates a denser super-Earth population from a sub-Neptune population. The dashed line marks the location of the valley predicted by atmospheric-loss (photoevaporation) models; the dotted line marks a gas-poor formation model. Reproduced from {cite:t}`Fulton2017`.
 ```
 
 Meteorite reservoir separation may require Jupiter core growth within $\sim 1$ Myr of CAIs {cite:p}`Kruijer2017`.
@@ -145,7 +145,7 @@ A disk snow line creates a typical radial composition gradient {cite:p}`Weiss202
 
 1. No planets between $1\,\Rearth$ and $\sim 4\,\Rearth$, though most stars host one within 1 AU {cite:p}`Bergsten2022`.
 2. Circular giant orbits at 5 and 10 AU rather than eccentric orbits.
-3. No **hot Jupiter**, found around $0.5$ to $1\%$ of Sun-like stars, and no hot Neptune, which is rarer still {cite:p}`Mazeh2016`.
+3. No **hot Jupiter**, found around fewer than $1\%$ of Sun-like stars ($0.43\%$ for periods below 10 days; {cite:t}`Fressin2013`), and no hot Neptune, which falls in the hot-Neptune desert {cite:p}`Mazeh2016`.
 4. Irregular terrestrial spacings rather than uniform **peas-in-a-pod architectures** ({numref}`fig:l14:peas`; {cite:t}`Weiss2018`).
 
 ```{figure} figures/weiss2023_peas_in_a_pod.avif
@@ -164,24 +164,24 @@ Terrestrial planets follow the Earth-like rocky curve, while larger sub-Neptunes
 :name: fig:l14:massrad
 :width: 95%
 
-Mass-radius diagram for rocky and small exoplanets from {cite:t}`Lichtenberg2025` Fig. 2. Data points are observed exoplanets with measured masses and radii, colour-coded by equilibrium temperature into **temperate** (blue), **bistable** (light blue, able to sit in either a temperate or a runaway-greenhouse climate state), **lava** (red), and **rock-vapour** (orange) regimes; symbol shape marks **high-priority** atmospheric-characterisation targets (diamonds) and lower-priority targets (circles). Labelled planets include TRAPPIST-1 b through h, GJ 367 b, GJ 1132 b, GJ 486 b, K2-18 b, K2-141 b, LHS 1140 b, L 98-59 b/c/d, GJ 1252 b, LTT 1445 A b, and several TOI targets. Theoretical equation-of-state tracks range from **100% Fe** (bottom) through **Earth-like** rocky and **100% $\mathrm{MgSiO_3}$**, with volatile-rich tracks for **Earth-like + 50 wt% $\mathrm{H_2O}$**, **magma ocean + 0.1 wt%** or **5.4 wt% $\mathrm{H_2O}$**, and a **gas-dwarf birth + H/He boil-off** curve that bounds the potential sub-Neptune population (shaded at upper left). Solar-system terrestrials sit on the Earth-like curve; exoplanets above it either retain volatile envelopes (H/He, water, or melt-water mixtures) or are otherwise reshaped by magma-ocean outgassing and photoevaporation. Reproduced from {cite:t}`Lichtenberg2025`.
+Mass-radius diagram for rocky and small exoplanets from {cite:t}`Lichtenberg2025` Fig. 2. Data points are observed exoplanets with measured masses and radii, colour-coded by equilibrium temperature into **temperate** (blue, 150 to 500 K), **bistable** (crimson, 500 to 1250 K, able to sit in either a temperate or a runaway-greenhouse climate state), **lava** (red, 1250 to 1800 K), and **rock-vapour** (orange, above 1800 K) regimes; symbol shape marks **high-priority** atmospheric-characterisation targets (diamonds) and lower-priority targets (circles). Labelled planets include TRAPPIST-1 b, c, e, f and g, GJ 367 b, GJ 1132 b, GJ 486 b, GJ 1252 b, GJ 1214 b, GJ 3090 b, GJ 9827 d, 55 Cancri e, K2-18 b, K2-141 b, LHS 1140 b, L 98-59 d, LTT 1445 A b, and several TOI targets. Theoretical equation-of-state tracks range from **100% Fe** (bottom) through **Earth-like** rocky and **100% $\mathrm{MgSiO_3}$**, with volatile-rich tracks for **Earth-like + 50 wt% $\mathrm{H_2O}$**, **magma ocean + 0.1 wt%** or **5.4 wt% $\mathrm{H_2O}$**, and a **gas-dwarf birth + H/He boil-off** curve that runs through the potential gas-dwarf population (shaded). Planets above the Earth-like curve either retain volatile envelopes (H/He, water, or melt-water mixtures) or are otherwise reshaped by magma-ocean outgassing and photoevaporation. Reproduced from {cite:t}`Lichtenberg2025`.
 ```
 
 ### "Is the solar system rare?"
 
 Whether the solar system is rare remains unknown because survey limits have left much of its parameter space unobserved.
-Detecting a planet in a 12-year Jupiter-like orbit requires decades of monitoring or radial-velocity baselines, making Gaia DR4 the first survey sensitive to astrometric Jupiter analogues at scale.
-Similarly, **Earth analogues** ($\Rearth$-sized planets in 1-year orbits around Sun-like G dwarfs) lie at the edge of current sensitivity and require upcoming missions such as PLATO (launch planned for 2027) and the Gaia DR4 and DR5 data releases (DR4 planned for late 2026).
+Detecting a planet in a 12-year Jupiter-like orbit requires a baseline of a decade or more: long-term radial-velocity surveys find such planets around nearby stars, and Gaia astrometry will add them at scale, with DR4 (5.5 years of data, planned for December 2026) covering part of such an orbit and DR5 (the full mission, not before 2030) a complete one.
+**Earth analogues** ($\Rearth$-sized planets in 1-year orbits around Sun-like G dwarfs) lie beyond current sensitivity. Their astrometric signal is far too small for Gaia (about $0.3\,\mu$as for an Earth at 1 AU around a Sun-like star 10 pc away), so they require transit surveys such as PLATO (launch planned for 2027) and, later, direct imaging with HWO or LIFE.
 
 The planet **occurrence rate** (the average number of planets per star in a given parameter range) depends strongly on stellar type ({numref}`fig:l14:mulders-occurrence`).
-Rocky and sub-Neptune-sized planets on orbits with periods $< 50$ days are roughly twice as common around early M dwarfs as around F and G dwarfs, although whether this reflects formation efficiency or survey detection bias remains debated.
+Rocky and sub-Neptune-sized planets on orbits with periods $< 50$ days are two to four times as common around early M dwarfs as around F, G and K dwarfs, although whether this reflects formation efficiency or survey detection bias remains debated.
 
 ```{figure} figures/mulders2024_occurrence_vs_teff.avif
 :align: center
 :name: fig:l14:mulders-occurrence
 :width: 80%
 
-Overview of planet occurrence rates as a function of host-star effective temperature, for planets between $1$ and $4\,\Rearth$ on orbital periods $P < 50$ days, from {cite:t}`Mulders2024` Fig. 5. Rates were re-scaled assuming uniform occurrence in $\log P$ and $\log R$ for cross-study comparison. Plotted data are compiled from Howard+12, Mulders+15, Hardegree-Ullman+19, Yang+20, He+21, Sabotta+21, {cite:t}`Bergsten2022`, and Ment & Charbonneau 23 (see {cite:t}`Mulders2024` for full references). Across all studies, planet occurrence increases by roughly a factor of 2 from F dwarfs ($\sim 6500$ K) to early M dwarfs ($\sim 3500$ K); a break appears toward late M dwarfs, but those surveys sample only very short periods ($< 10$ d) so the late-M values are lower limits. The headline message is that small, close-in planets are most common around the most numerous class of stars in the galaxy. Reproduced from {cite:t}`Mulders2024`.
+Overview of planet occurrence rates as a function of host-star effective temperature, for planets between $1$ and $4\,\Rearth$ on orbital periods $P < 50$ days, from {cite:t}`Mulders2024` Fig. 5. Rates were re-scaled assuming uniform occurrence in $\log P$ and $\log R$ for cross-study comparison. Plotted data are compiled from Howard+12, Mulders+15, Hardegree-Ullman+19, Yang+20, He+21, Sabotta+21, Bergsten+23, and Ment & Charbonneau 23 (see {cite:t}`Mulders2024` for full references). Across all studies, planet occurrence increases from F dwarfs ($\sim 6500$ K) to early M dwarfs ($\sim 3500$ K), where it is a factor of $\sim 2$ to 4 higher than around FGK stars; a break appears toward late M dwarfs, but those surveys sample only very short periods ($< 10$ d), so the late-M values are potentially lower limits. The headline message is that small, close-in planets are most common around the most numerous class of stars in the galaxy. Reproduced from {cite:t}`Mulders2024`.
 ```
 
 ## Part 2: Habitability as a coupled systems property
@@ -219,7 +219,7 @@ Factors affecting planetary habitability: the currently understood stellar, plan
 
 ### The habitability coupling loop
 
-On a **tidally locked planet**, rotation and orbital periods match so that one hemisphere permanently faces the star ({numref}`fig:l14:tidal-couplings`; {cite:p}`Wordsworth2022`).
+On a **tidally locked planet**, rotation and orbital periods match so that one hemisphere permanently faces the star ({numref}`fig:l14:tidal-couplings`; {cite:t}`Wordsworth2022`).
 Substellar clouds reflect starlight, super-rotating winds transport heat to the nightside, and antistellar cold-trapping can collapse the atmosphere.
 
 ```{figure} figures/wordsworth2022_tidally_locked_planet.avif
@@ -258,10 +258,10 @@ This divergence reflects different histories through early molten phases and sol
 :name: fig:l14:runaway
 :width: 75%
 
-Duration of the runaway greenhouse phase for planets that formed at 10 Myr with abundant surface water, as a function of stellar mass (vertical axis) and orbital semi-major axis (horizontal axis), from the {cite:t}`LugerBarnes2015` water-loss calculation around M dwarfs. The solid black lines mark the empirical inner habitable zone (recent Venus and early Mars limits at 5 Gyr); the dashed lines mark the theoretical runaway and maximum greenhouse limits. Habitable-zone planets around late M dwarfs spend a substantial fraction of their first Gyr inside the runaway state, losing much of their initial water before the host star reaches the main sequence. Reproduced from {cite:t}`LugerBarnes2015`.
+Duration of the runaway greenhouse phase for planets that formed at 10 Myr with abundant surface water, as a function of stellar mass (vertical axis) and orbital semi-major axis (horizontal axis), from the {cite:t}`LugerBarnes2015` water-loss calculation around M dwarfs. The solid black lines mark the empirical habitable zone, from the recent-Venus limit (left) to the early-Mars limit (right); the dashed lines mark the theoretical runaway greenhouse (left) and maximum greenhouse (right) limits; all limits are for a stellar age of 5 Gyr. Habitable-zone planets around late M dwarfs spend a substantial fraction of their first Gyr inside the runaway state, losing much of their initial water before the host star reaches the main sequence. Reproduced from {cite:t}`LugerBarnes2015`.
 ```
 
-The habitable zone is also time-dependent, as stellar luminosity increases by roughly 30% over the main sequence.
+The habitable zone is also time-dependent, as stellar luminosity rises along the main sequence: the Sun is about 30% brighter today than when it formed.
 Around M dwarfs, planets now in the HZ spent hundreds of Myr inside the runaway greenhouse boundary {cite:p}`LugerBarnes2015`.
 
 The outer edge is uncertain for a different reason.
@@ -326,11 +326,11 @@ Their present-day water inventories differ by orders of magnitude because each p
 :name: fig:l14:magma-diff
 :width: 70%
 
-Schematic of magma-ocean stage differentiation on a forming rocky planet. The initially molten silicate mantle separates from a denser metal phase that sinks to form the core, while volatiles partition between the molten silicate and an overlying steam atmosphere. The fraction sequestered in the mantle versus outgassed into the atmosphere is decisive for the planet's later atmospheric evolution. Reproduced from {cite:t}`Lichtenberg2023`.
+Physical mechanisms of metal-silicate differentiation on a forming rocky planet, from {cite:t}`Lichtenberg2023` Fig. 2. (a) Accreted pebbles may not melt a Mars-sized protoplanet but mix into a magma ocean if one is already present. (b) A small embryo melts a local magma pond in which its iron core breaks up; the metal settles and sinks through the solid mantle as a diapir. (c) A large embryo melts a large region, and its core sinks with little mixing. (d) An energetic impact can heat the interior until silicate and iron become miscible; they separate again as the magma ocean cools. How much of the mantle melts sets the conditions under which water and carbon partition between core, mantle and atmosphere (see text). Reproduced from {cite:t}`Lichtenberg2023`.
 ```
 
 The first mechanism is volatile partitioning during the early molten phase, when the mantle is wholly or largely molten (a **magma ocean**).
-Water and carbon partition between the core, mantle, and overlying steam atmosphere according to magma redox state, solidification timescale, and crystallisation depth {cite:p}`Hirschmann2012` ({numref}`fig:l14:magma-diff`).
+Water and carbon partition between the core, mantle, and overlying steam atmosphere according to magma redox state, solidification timescale, and crystallisation depth {cite:p}`Hirschmann2012`, and how much of the mantle melts depends on how the planet accretes ({numref}`fig:l14:magma-diff`).
 Different boundary conditions produce divergent atmospheric end states from identical initial budgets.
 
 Accretion timing also controls volatile retention.
@@ -344,7 +344,7 @@ The second mechanism is atmospheric escape during the magma ocean phase, where, 
 :name: fig:l14:hamano-typeII
 :width: 70%
 
-Two distinct types of terrestrial planet defined by the {cite:t}`Hamano2013` model. Panel (a) shows magma-ocean solidification time as a function of orbital distance and instellation for a range of initial water inventories; planets inside a critical orbital distance ($\sim 0.77$ AU around a Sun-like star) cannot solidify their magma oceans before most of their water is lost to hydrodynamic escape ("Type II"), while planets further out solidify quickly and retain most of their water ("Type I"). Panel (b) shows the resulting final water inventories at the end of magma-ocean solidification. Modified from {cite:t}`Hamano2013` as reproduced in {cite:t}`Lichtenberg2023`.
+Two distinct types of terrestrial planet defined by the {cite:t}`Hamano2013` model. Panel (a) shows magma-ocean solidification time as a function of orbital distance and instellation for a range of initial water inventories; planets inside a critical orbital distance ($\sim 0.76$ AU around a Sun-like star) cannot solidify their magma oceans before most of their water is lost to hydrodynamic escape ("Type II"), while planets further out solidify quickly and retain most of their water ("Type I"). Panel (b) shows the resulting final water inventories at the end of magma-ocean solidification. Modified from {cite:t}`Hamano2013` as reproduced in {cite:t}`Lichtenberg2023`.
 ```
 
 The third mechanism is long-term mantle-atmosphere volatile exchange.
@@ -369,7 +369,7 @@ $$
 Here $R_\star$ is the galactic star formation rate, $f_p$ the fraction of stars with planets, $n_e$ the number of habitable-zone planets per system, $f_l$ the fraction hosting life, $f_i$ the fraction evolving intelligence, $f_c$ the fraction developing broadcasting technology, and $L$ the communicative lifetime.
 
 Stellar astrophysics determines $R_\star$, while exoplanet surveys show that $f_p$ is of order unity ({ref}`Lecture 13 <lecture13>`).
-For Sun-like stars, Kepler constrains $n_e$ to between $0.1$ and $0.6$ depending on the habitability definition {cite:p}`Bryson2021`.
+For Sun-like stars, Kepler data give $n_e$ between about $0.4$ and $0.9$ rocky planets per star in the habitable zone, depending on the habitable-zone definition and on how the survey completeness is extrapolated to long orbital periods, with large uncertainties {cite:p}`Bryson2021`.
 In contrast, Earth provides the sole data point for $f_l$, whereas $f_i$, $f_c$, and $L$ have no statistical constraints beyond our own lineage and the last $\sim 100$ years.
 
 The Drake equation is a qualitative framework rather than a predictive estimator, because point estimates of $N$ face five fundamental limitations:
@@ -390,7 +390,7 @@ $$
 \log_{10} N = \log_{10}(R_\star f_p n_e) + \log_{10} f_l + \log_{10} f_i + \log_{10} f_c + \log_{10} L \,,
 $$
 
-If the four unconstrained factors are log-uniform over $[-10, 0]$, their sum spans $[-40, 0]$ with tails to $\log_{10} N \sim -30$, yielding a posterior stretching across $\sim 30$ decades.
+Each of the four unconstrained terms can span ten or more decades: the fractions $f_l$, $f_i$ and $f_c$ anywhere between $10^{-10}$ and 1, and the lifetime $L$ over many decades of years. Their sum, and with it the distribution of $N$ obtained by sampling the factors, therefore spreads over tens of decades.
 
 ```{figure} figures/sandberg2018_drake_posterior.avif
 :align: center
@@ -488,8 +488,8 @@ Mars at $1.52$ AU is just inside the outer edge.
 **Step 4: Numbers for G, K and M dwarfs.** The habitable zone is therefore a stellar-mass-dependent strip that scales as $\sqrt{L_\star}$. Plugging in luminosities for representative spectral types:
 
 - **G dwarfs** (Sun, $L \sim \Lsun$): $d_{\rm in} \approx 0.97$ AU, $d_{\rm out} \approx 1.69$ AU. Width $\sim 0.7$ AU. Lifetime $\sim 10$ Gyr. Modest stellar activity. The reference case for "typical" habitability.
-- **K dwarfs** (e.g. $\epsilon$ Eri at $L \sim 0.3\,\Lsun$): $d_{\rm in} \approx 0.53$ AU, $d_{\rm out} \approx 0.93$ AU. Long main-sequence lifetimes ($\sim 17$ to $70$ Gyr across the K range, $\sim 24$ Gyr for $\epsilon$ Eri), modest flares, stable photospheres, and an HZ that is far enough out to avoid most tidal-locking and pre-main-sequence problems. {cite:t}`CuntzGuinan2016` argued on these grounds that K dwarfs may be the *most habitable* class of host star. Their UV/X-ray output is modest after the first Gyr ({numref}`fig:l14:cuntz-xray`), and their long lifetimes give biology more time to develop.
-- **M dwarfs** (e.g. TRAPPIST-1, $L \sim 5 \times 10^{-4}\,\Lsun$): $d_{\rm in} \approx 0.022$ AU, $d_{\rm out} \approx 0.038$ AU. The HZ is inside the orbit of Mercury. Stars are extremely long-lived (up to $10^{12}$ yr), so the system has time, but the HZ is so close to the star that all planets are tidally locked, are exposed to intense stellar wind, and the most extreme cases (late M / ultracool dwarfs like TRAPPIST-1) went through a Gyr-long pre-main-sequence high-luminosity phase during which any HZ planet was in the runaway greenhouse state {cite:p}`LugerBarnes2015`. Early M dwarfs (M0 to M3) have much shorter pre-main-sequence phases of $\sim 50$ to $150$ Myr but still face the tidal-locking and flare-activity challenges.
+- **K dwarfs** (e.g. $\epsilon$ Eri at $L \sim 0.3\,\Lsun$): $d_{\rm in} \approx 0.53$ AU, $d_{\rm out} \approx 0.93$ AU. Long main-sequence lifetimes ($\sim 15$ to $35$ Gyr across the K range from the scaling below, $\sim 16$ Gyr for $\epsilon$ Eri at $0.82\,\Msun$), modest flares, stable photospheres, and an HZ that is far enough out to avoid most tidal-locking and pre-main-sequence problems. {cite:t}`CuntzGuinan2016` argued on these grounds that K dwarfs may be the *most habitable* class of host star. Their UV/X-ray output is modest after the first Gyr ({numref}`fig:l14:cuntz-xray`), and their long lifetimes give biology more time to develop.
+- **M dwarfs** (e.g. TRAPPIST-1, $L \sim 5 \times 10^{-4}\,\Lsun$): $d_{\rm in} \approx 0.022$ AU, $d_{\rm out} \approx 0.038$ AU. The HZ is inside the orbit of Mercury. Stars are extremely long-lived (trillions of years for the lowest masses), so the system has time, but the HZ is so close to the star that all planets are tidally locked, are exposed to intense stellar wind, and the most extreme cases (late M / ultracool dwarfs like TRAPPIST-1) went through a Gyr-long pre-main-sequence high-luminosity phase during which any HZ planet was in the runaway greenhouse state {cite:p}`LugerBarnes2015`. Early M dwarfs (M0 to M3) have much shorter pre-main-sequence phases of $\sim 50$ to $150$ Myr but still face the tidal-locking and flare-activity challenges.
 
 The lifetimes quoted in the bullets above are not arbitrary: they follow from a one-line scaling. The total nuclear energy a star can release on the main sequence is proportional to the mass of hydrogen available for fusion, $E_{\rm nuc} \propto M_\star$, while its luminosity follows the empirical mass-luminosity relation $L_\star \propto M_\star^{3.5}$ for low- and intermediate-mass stars. The main-sequence lifetime is therefore the energy budget divided by the burn rate,
 
@@ -497,14 +497,14 @@ $$
 t_{\rm MS} \;\sim\; \frac{E_{\rm nuc}}{L_\star} \;\propto\; \frac{M_\star}{M_\star^{3.5}} \;=\; M_\star^{-2.5} \,.
 $$
 
-Normalising on the Sun ($t_{\rm MS,\odot} \approx 10$ Gyr), this gives $t_{\rm MS} \approx 10\,(M_\star/\Msun)^{-2.5}$ Gyr. A K dwarf at $M_\star \approx 0.7\,\Msun$ then has $t_{\rm MS} \approx 10 \times 0.7^{-2.5} \approx 24$ Gyr; a $0.5\,\Msun$ early M dwarf has $\approx 57$ Gyr; and a $0.1\,\Msun$ M dwarf naively gives $\approx 3 \times 10^3$ Gyr, which is already longer than the age of the universe and which detailed stellar models extend further (to $\sim 10^{12}$ yr) once the fully convective regime keeps the entire hydrogen reservoir accessible to the core. The headline point is that *cooler stars give biology more time*, by a factor that grows steeply with decreasing stellar mass, which is the central reason the K-dwarf and M-dwarf habitable zones are taken seriously despite their other problems.
+Normalising on the Sun ($t_{\rm MS,\odot} \approx 10$ Gyr), this gives $t_{\rm MS} \approx 10\,(M_\star/\Msun)^{-2.5}$ Gyr. A K dwarf at $M_\star \approx 0.7\,\Msun$ then has $t_{\rm MS} \approx 10 \times 0.7^{-2.5} \approx 24$ Gyr; a $0.5\,\Msun$ early M dwarf has $\approx 57$ Gyr; and a $0.1\,\Msun$ M dwarf gives $\approx 3 \times 10^3$ Gyr, about $3 \times 10^{12}$ yr and far longer than the age of the universe. Detailed stellar models also give trillions of years for such stars, because a fully convective star mixes its entire hydrogen reservoir into the core. The headline point is that *cooler stars give biology more time*, by a factor that grows steeply with decreasing stellar mass, which is the central reason the K-dwarf and M-dwarf habitable zones are taken seriously despite their other problems.
 
 ```{figure} figures/cuntz_guinan_xray_lyman.avif
 :align: center
 :name: fig:l14:cuntz-xray
 :width: 75%
 
-Lyman-$\alpha$ and X-ray irradiances, in erg s$^{-1}$ cm$^{-2}$, received by a planet at the homeothermic distance of its star, the distance at which it absorbs the same flux as Earth does from the Sun. Bars are grouped by spectral type and coloured by stellar age; the wide bar of each pair is Lyman-$\alpha$ and the narrow, paler bar is X-ray. Note the logarithmic vertical axis. At fixed age the irradiance rises by over 100 to 500 times from G2--8 to M4--6 dwarfs, and for a given star it falls by up to 500 times in X-rays between 0.1 and 5 Gyr while the Lyman-$\alpha$ decline is much gentler. Early K dwarfs are the compromise {cite:t}`CuntzGuinan2016` favour: long-lived and common, but without the extreme and long-lasting high-energy irradiation of the M dwarfs. Reproduced from {cite:t}`CuntzGuinan2016`.
+Lyman-$\alpha$ and X-ray irradiances, in erg s$^{-1}$ cm$^{-2}$, received by a planet at the homeothermic distance of its star, the distance at which it absorbs the same flux as Earth does from the Sun. Bars are grouped by spectral type and coloured by stellar age; the wide bar of each pair is Lyman-$\alpha$ and the narrow, paler bar is X-ray. Note the logarithmic vertical axis. In the plotted bars, the irradiance at fixed age is about 50 to 300 times higher for M4-M6 dwarfs than for G2-G8 dwarfs, and for a given spectral type the X-ray irradiance falls by up to about 200 times between 0.1 and 5 Gyr, while the Lyman-$\alpha$ decline is much gentler (up to about 10 times). Early K dwarfs are the compromise {cite:t}`CuntzGuinan2016` favour: long-lived and common, but without the extreme and long-lasting high-energy irradiation of the M dwarfs. Reproduced from {cite:t}`CuntzGuinan2016`.
 ```
 
 The 1D values listed above for $d_{\rm in}$ are themselves a simplification. Three-dimensional global climate models that resolve clouds give a different answer for tidally locked planets around M dwarfs. {cite:t}`Yang2013` showed that on a planet that always presents the same face to its star, strong convection at the substellar point lifts thick water clouds that drive the local albedo above $\sim 0.6$ and act as a *stabilising* feedback against runaway warming ({numref}`fig:l14:yang-clouds`). The result is that the inner edge of the HZ, defined as the largest stellar flux at which surface temperature stays below the runaway threshold, shifts inward by roughly a factor of two relative to the 1D Kopparapu boundary. The 1D HZ therefore *under-estimates* the inner edge of the M-dwarf HZ, and the corresponding occurrence of habitable planets around M dwarfs is correspondingly larger than the 1D values would suggest.
@@ -514,7 +514,7 @@ The 1D values listed above for $d_{\rm in}$ are themselves a simplification. Thr
 :name: fig:l14:yang-clouds
 :width: 90%
 
-Climate response of tidally locked rocky planets to varying stellar flux from a 3D general-circulation model with clouds, from {cite:t}`Yang2013`. (a) Substellar surface temperature, (b) stratospheric water vapour mixing ratio, (c) planetary albedo, and (d) greenhouse warming, all as functions of incident stellar flux for spin-orbit resonances 1:1, 2:1, 6:1, a 1:1 case with clouds suppressed (red dashed), and a 1:1 case around a K dwarf (blue). The grey band marks the 1D habitable-zone limit. Substellar convective clouds drive the planetary albedo to $\sim 0.6$ in the 1:1 cases and prevent the surface from running away even at twice the 1D inner-edge flux; with clouds suppressed (red dashed), the runaway sets in at much lower flux. Reproduced from {cite:t}`Yang2013`.
+Climates of tidally locked and non-tidally locked rocky planets against incident stellar flux, from the 3D general-circulation model (CAM3) with clouds of {cite:t}`Yang2013` Fig. 2. (a) Global-mean surface temperature, (b) stratospheric water vapour mixing ratio at the substellar point, (c) planetary albedo, and (d) global-mean greenhouse effect, for an M-dwarf host in the spin-orbit states 1:1 (tidally locked, black), 2:1 (green) and 6:1 (red dashed), a 1:1 case with clouds switched off (orange), and a 1:1 case around a K dwarf (blue; the star marks HD 85512 b). The grey band marks the 1D habitable zone. Substellar convective clouds raise the planetary albedo of the tidally locked planet to about 0.5 around the M dwarf (0.6 around the K dwarf) and keep the climate stable up to nearly twice the 1D inner-edge flux; with clouds switched off the albedo drops to 0.04 and the stratosphere becomes moist at much lower flux. Reproduced from {cite:t}`Yang2013`.
 ```
 
 The combined effect of these climatological corrections is captured in the {cite:t}`Shields2016` summary diagram ({numref}`fig:l14:shields-mdwarf-hz`), which compiles the 1D Kopparapu boundaries together with 3D GCM corrections from a number of independent groups and overlays the known M-dwarf and FGK habitable-zone planets. The figure makes two points at once. First, the 3D inner edge for slowly rotating and tidally locked planets lies at roughly 1.7 to 2.2 times the flux of the 1D inner edge across the whole FGKM range, so it is well inside it. Second, the tidal-locking radius (grey dashed curve) cuts across the M-dwarf HZ, so essentially every M-dwarf HZ planet known today is tidally locked and is therefore in the regime where the cloud corrections matter.
@@ -524,7 +524,7 @@ The combined effect of these climatological corrections is captured in the {cite
 :name: fig:l14:shields-mdwarf-hz
 :width: 80%
 
-Habitable-zone limits in the stellar effective temperature--stellar flux plane for FGKM hosts, from the {cite:t}`Shields2016` review of M-dwarf habitability. Note that stellar flux increases to the left. The green and blue solid curves are the {cite:t}`Kopparapu2013` 1D inner (runaway greenhouse) and outer (maximum-$\mathrm{CO_2}$ greenhouse) edges. The two dotted curves are inner edges computed with the CAM3 general-circulation model: red for slowly rotating and tidally locked planets, black for rapidly rotating planets. The grey dashed curve is the tidal-locking radius. Single-model inner-edge estimates are plotted as the legend symbols, for a dry planet around a G dwarf (Abe et al. 2011), for Earth with the LMD Generic model (Leconte et al. 2013), from {cite:t}`Yang2013`, and with a modified radiative-transfer code (Wolf & Toon 2014). Filled circles are solar system planets, including early Venus and early Mars, and known exoplanets; magenta marks those interior to the 1D inner edge and green those within the 1D habitable zone. The red curve lies at about 1.7 to 2.2 times the flux of the green one, so clouds move the inner edge substantially closer to the star, and that is the regime almost every M-dwarf planet in the figure occupies. Reproduced from {cite:t}`Shields2016`, after Yang et al. (2014).
+Habitable-zone limits in the plane of stellar effective temperature and stellar flux for FGKM hosts, from the {cite:t}`Shields2016` review of M-dwarf habitability. Note that stellar flux increases to the left. The green and blue solid curves are the {cite:t}`Kopparapu2013` 1D inner (runaway greenhouse) and outer (maximum-$\mathrm{CO_2}$ greenhouse) edges. The two dotted curves are inner edges computed with the CAM3 general-circulation model: red for slowly rotating and tidally locked planets, black for rapidly rotating planets. The grey dashed curve is the tidal-locking radius. Single-model inner-edge estimates are plotted as the legend symbols, for a dry planet around a G dwarf (Abe et al. 2011), for Earth with the LMD Generic model (Leconte et al. 2013), from {cite:t}`Yang2013`, and with a modified radiative-transfer code (Wolf & Toon 2014). Filled circles are solar system planets, including early Venus and early Mars, and known exoplanets; magenta marks those interior to the 1D inner edge and green those within the 1D habitable zone. The red curve lies at about 1.7 to 2.2 times the flux of the green one, so clouds move the inner edge substantially closer to the star, and that is the regime almost every M-dwarf planet in the figure occupies. Reproduced from {cite:t}`Shields2016`, after Yang et al. (2014).
 ```
 
 The tidal-locking radius itself is not a free parameter: it follows from how fast tides can despin a rotating planet. For a rocky planet of mass $M_p$, radius $R_p$, moment of inertia $I_p \approx \alpha_p M_p R_p^2$ (with the dimensionless moment-of-inertia factor $\alpha_p \approx 0.33$ for an Earth-like differentiated body), tidal Love number $k_{2,p}$, and quality factor $Q_p$, orbiting a star of mass $M_\star$ at semi-major axis $a$, the timescale to despin from an initial spin rate $\omega_0$ to synchronous rotation is, to order of magnitude,
@@ -533,7 +533,7 @@ $$
 \tau_{\rm lock} \;\sim\; \frac{\omega_0 \, a^6 \, I_p \, Q_p}{3 \, G \, M_\star^2 \, k_{2,p} \, R_p^5} \,.
 $$
 
-The strong $a^6$ dependence (an inverse-cube tidal force squared) means the answer changes by many orders of magnitude across the HZ. Plugging in Earth-like parameters ($\alpha_p \approx 0.33$, $k_{2,p} \approx 0.3$, $Q_p \approx 100$, $\omega_0 \sim 2\pi/(\text{day})$) for an Earth analogue at $a = 1$ AU around the Sun gives $\tau_{\rm lock} \sim 10^{12}$ yr, comfortably longer than the age of the universe, so an Earth analogue at 1 AU around a Sun-like star is not tidally locked. For a TRAPPIST-1 b analogue, however, $a \approx 0.011$ AU and $M_\star \approx 0.08\,\Msun$ shrink the numerator and the denominator together; the strong $a^6$ scaling dominates, so the net effect is that $\tau_{\rm lock}$ drops by many orders of magnitude to $\sim 10^7$ yr or shorter (the precise value depends on the highly uncertain $Q_p$), which is in any case far shorter than the $\sim 8$ Gyr age of the TRAPPIST-1 system. Every TRAPPIST-1 inner planet has therefore had ample time to reach a tidally locked or near-locked spin state, and the same conclusion holds for essentially every M-dwarf HZ planet known today. The 3D climate corrections shown above are not an academic complication: they apply to the regime in which essentially all M-dwarf HZ planets sit.
+The strong $a^6$ dependence (an inverse-cube tidal force squared) means the answer changes by many orders of magnitude across the HZ. Plugging in Earth-like parameters ($\alpha_p \approx 0.33$, $k_{2,p} \approx 0.3$, $Q_p \approx 100$, $\omega_0 \sim 2\pi/(\text{day})$) for an Earth analogue at $a = 1$ AU around the Sun gives $\tau_{\rm lock} \sim 10^{11}$ yr, several times the age of the universe, so an Earth analogue at 1 AU around a Sun-like star is not tidally locked. For a TRAPPIST-1 b analogue, however, $a \approx 0.011$ AU and $M_\star \approx 0.09\,\Msun$ shrink the numerator and the denominator together; the strong $a^6$ scaling dominates, so the net effect is that $\tau_{\rm lock}$ drops by nearly ten orders of magnitude to decades (the precise value scales with the highly uncertain $Q_p$, and even $Q_p \sim 10^3$ gives only centuries), which is in any case far shorter than the $\sim 8$ Gyr age of the TRAPPIST-1 system. Every TRAPPIST-1 inner planet has therefore had ample time to reach a tidally locked or near-locked spin state, and the same conclusion holds for essentially every M-dwarf HZ planet known today. The 3D climate corrections shown above are not an academic complication: they apply to the regime in which essentially all M-dwarf HZ planets sit.
 
 **Key insight.** The HZ as derived above is a useful 1D radiative limit. It is *well-defined* as a thermodynamic boundary on the location of liquid surface water, but it is *not* a sufficient condition for habitability. Real habitability also depends on planetary boundary conditions (volatile inventory, tectonic regime, escape history, magnetic shielding, evolutionary trajectory) that the 1D HZ ignores. Part 2's coupling loop is the qualitative version of what a full 3D climate-evolution model computes quantitatively for an individual planet.
 ````
@@ -565,7 +565,7 @@ The working definition of life used in this course: a chemical system that is se
 Historically, the operational definition of "habitable" assumed conditions under which temperate Earth surface organisms thrive.
 The discovery of **extremophiles**, organisms thriving far outside that range, has substantially relaxed this definition.
 
-Earth life occupies environments from hydrothermal vents over 120 $^\circ$C to subglacial lakes at $-20$ $^\circ$C, saturated brine, and hyperacidic drainage.
+Earth life occupies environments from hydrothermal vents over 120 $^\circ$C to Arctic permafrost brines, where bacteria still grow at $-15$ $^\circ$C and remain metabolically active at $-25$ $^\circ$C, as well as saturated brine and hyperacidic drainage.
 The implication for astrobiology is that the classical HZ, defined for surface liquid water on a temperate Earth-like planet, may be too restrictive.
 Subsurface oceans on icy moons and high-pressure environments cannot be excluded on energetic grounds.
 
@@ -580,7 +580,7 @@ None are in the classical HZ, yet all have liquid water and a chemical free-ener
 :width: 100%
 :align: center
 
-Extremophiles widen the definition of habitable. (a) The temperature range of Earth life, from subglacial lakes at $-20$ $^\circ$C to hydrothermal vents above $120$ $^\circ$C, compared with the temperate surface conditions that the classical definition of habitability assumed (inner bar, schematic range). (b) The icy moons Europa, Enceladus and Titan hold subsurface oceans beneath ice and lie outside the classical habitable zone; at Europa and Enceladus the water touches rock, at Titan it rests on high-pressure ice. Course-original figure.
+Extremophiles widen the definition of habitable. (a) The temperature range of Earth life, from permafrost brines at $-15$ to $-25$ $^\circ$C to hydrothermal vents above $120$ $^\circ$C, compared with the temperate surface conditions that the classical definition of habitability assumed (inner bar, schematic range). (b) The icy moons Europa, Enceladus and Titan hold subsurface oceans beneath ice and lie outside the classical habitable zone; at Europa and Enceladus the water touches rock, at Titan it rests on high-pressure ice. Course-original figure.
 ```
 
 ### Origin of life on Earth
@@ -625,7 +625,7 @@ A Bayesian framework combines exoplanet observations with theoretical and popula
 
 On Earth, single gas biosignatures include $\mathrm{O_2}$ ($\sim 21\%$), photochemical $\mathrm{O_3}$, biogenic $\mathrm{CH_4}$, and $\mathrm{N_2O}$.
 The most diagnostic signatures are combinations in **chemical disequilibrium**, where coexisting gases react rapidly and require continuous resupply.
-{cite:t}`Krissansen2018` calculated an available Gibbs energy of about 2326 J/mol for modern Earth, compared to about 136 J/mol for Mars.
+{cite:t}`KrissansenTotton2016` calculated an available Gibbs energy of about 2326 J/mol for the atmosphere-ocean system of modern Earth, mainly from $\mathrm{N_2}$ and $\mathrm{O_2}$ coexisting with liquid water, compared to about 136 J/mol for the atmosphere of Mars, the largest of any other solar system atmosphere. Earth's atmosphere alone holds only about 1.5 J/mol, less than Mars: the ocean makes the difference.
 On the Archean Earth (roughly 4.0 to 2.5 billion years ago), coexisting $\mathrm{CH_4}$, $\mathrm{CO_2}$, $\mathrm{N_2}$, and liquid $\mathrm{H_2O}$ formed a disequilibrium biosignature that cannot persist abiotically ({numref}`fig:l14:biosig-gases`).
 
 ```{figure} figures/schwieterman2018_biosignature_gases.avif
@@ -649,7 +649,7 @@ Surface biosignatures include the **vegetation red edge**, a sharp reflectance j
 ### False positives and the inverse problem
 
 Most candidate biosignature gases have a known abiotic production pathway under plausible planetary conditions {cite:p}`Meadows2018`:
-- Abiotic $\mathrm{O_2}$ from **photolysis** (the breakdown of a molecule by absorbed stellar light) of $\mathrm{H_2O}$ followed by hydrogen escape, especially around active M dwarfs, or from $\mathrm{CO_2}$ photolysis {cite:p}`Wordsworth2014`.
+- Abiotic $\mathrm{O_2}$ from **photolysis** (the breakdown of a molecule by absorbed stellar light) of $\mathrm{H_2O}$ followed by hydrogen escape: around any star type when the atmosphere holds little $\mathrm{N_2}$ or other non-condensing gas, so that the cold trap fails {cite:p}`Wordsworth2014`, and during the long runaway phase of planets around young M dwarfs {cite:p}`LugerBarnes2015`; $\mathrm{CO_2}$ photolysis is a further abiotic source.
 - Abiotic $\mathrm{CH_4}$ from **serpentinisation** (the reaction of olivine with water to form serpentine minerals and release hydrogen), or volcanic outgassing at low oxygen fugacity.
 - Abiotic $\mathrm{N_2O}$ from lightning chemistry and photochemical pathways.
 - Dimethyl sulfide ($\mathrm{(CH_3)_2S}$, DMS) is the notable exception: it lacks known abiotic sources on Earth, but one could exist elsewhere.
@@ -672,7 +672,7 @@ The solar system contains five plausible targets for life detection.
 **Mars** ({ref}`Lecture 10 <lecture10>`) is the most direct path to laboratory-based life detection on another world.
 Curiosity and Perseverance established that Mars had liquid water, neutral pH, and complex organic molecules at $\sim 3.5$ to $4$ Ga.
 Present-day habitability is more uncertain: the methane variability detected by Curiosity is intriguing but cannot be interpreted as biological without independent corroboration.
-The Mars Sample Return campaign remains the most direct path to laboratory analysis of returned material in full spatial and chemical context {cite:p}`MeyerMSPG2022`.
+Laboratory analysis of returned samples in full spatial and chemical context remains the most direct test {cite:p}`MeyerMSPG2022`, but the samples cached by Perseverance stay on Mars for now: the NASA and ESA Mars Sample Return campaign received no funding in the US budget for 2026.
 
 **Europa** ({ref}`Lecture 11 <lecture11>`) has a global subsurface saltwater ocean confirmed by Galileo induced magnetic field measurements and surface brine chemistry; Europa Clipper (arriving 2030) and JUICE (Ganymede orbit 2034) will measure the ice-shell thickness and ocean properties.
 
@@ -778,7 +778,7 @@ The five biggest lessons of the course as icons. (a) Planet formation: accretion
 1. Whether the **origin of life** is a rare accident or a generic chemical inevitability remains the largest uncertainty in quantitative habitability estimates.
 2. The **radius valley** between super-Earths and sub-Neptunes tests whether photoevaporation, core-powered mass loss, or distinct formation channels govern atmospheric loss.
 3. When **Jupiter** formed determines whether it was the architect of the inner solar system, shaping the NC-CC dichotomy and Earth-like system rarity.
-4. **Mars Sample Return** provides the most direct test of whether Mars was ever inhabited, recalibrating our prior on $f_l$.
+4. **Returned samples from Mars** provide the most direct test of whether Mars was ever inhabited, recalibrating our prior on $f_l$.
 5. Determining whether the **solar system** is rare or typical using PLATO, Gaia DR4/DR5, and long-baseline RV will yield a probabilistic answer.
 
 {numref}`fig:five-questions` pairs each question with what is at stake or with the test that will decide it.
@@ -789,7 +789,7 @@ The five biggest lessons of the course as icons. (a) Planet formation: accretion
 :width: 100%
 :align: center
 
-The five biggest open questions of the course, each paired with what is at stake or with the test that will decide it. (1) Whether the origin of life is a rare accident or a generic chemical inevitability, the largest uncertainty in quantitative habitability estimates. (2) Whether photoevaporation, core-powered mass loss or distinct formation channels carve the radius valley. (3) When Jupiter formed, which decides whether it shaped the NC-CC dichotomy and the rarity of Earth-like systems. (4) Whether Mars was ever inhabited, with Mars Sample Return as the most direct test. (5) Whether the solar system is rare or typical, which PLATO, Gaia DR4/DR5 and long-baseline radial-velocity surveys will answer probabilistically. Course-original figure.
+The five biggest open questions of the course, each paired with what is at stake or with the test that will decide it. (1) Whether the origin of life is a rare accident or a generic chemical inevitability, the largest uncertainty in quantitative habitability estimates. (2) Whether photoevaporation, core-powered mass loss or distinct formation channels carve the radius valley. (3) When Jupiter formed, which decides whether it shaped the NC-CC dichotomy and the rarity of Earth-like systems. (4) Whether Mars was ever inhabited, with returned samples as the most direct test. (5) Whether the solar system is rare or typical, which PLATO, Gaia DR4/DR5 and long-baseline radial-velocity surveys will answer probabilistically. Course-original figure.
 ```
 
 ### The next decade
@@ -804,7 +804,7 @@ This will enable direct imaging and spectroscopic characterisation of temperate 
 :width: 700px
 :align: center
 
-The Milky Way arcs over ESO's Extremely Large Telescope under construction on Cerro Armazones in the Chilean Atacama Desert, with the partially-clad dome visible at lower left (August 2025). With its 39 m segmented primary mirror, the ELT will be the largest optical/near-infrared telescope ever built when it sees first light in 2029 and will, together with GMT and TMT, enable the first direct-imaging searches for atmospheric biosignatures on rocky planets around nearby M dwarfs. Image credit: C. Letelier/ESO {cite:p}`ESOELT2025`.
+The Milky Way arcs over ESO's Extremely Large Telescope under construction on Cerro Armazones in the Chilean Atacama Desert, with the partially clad dome in the lower centre (August 2025). With its 39 m segmented primary mirror, the ELT will be the largest optical/near-infrared telescope ever built when it sees first light in 2029 and will, together with GMT and TMT, enable the first direct-imaging searches for atmospheric biosignatures on rocky planets around nearby M dwarfs. Image credit: C. Letelier/ESO {cite:p}`ESOELT2025`.
 ```
 
 ### Final framing
@@ -819,7 +819,7 @@ The questions covered across this course are open questions on a moving frontier
 :width: 100%
 :align: center
 
-Composite at true relative size of the principal bodies of the solar system, grouped by region. **Inner solar system:** Mercury, Venus, Earth (with the Moon), and Mars (with Phobos and Deimos). **Asteroid belt:** represented by the dwarf planet Ceres. **Outer solar system:** Jupiter, Saturn, Uranus, and Neptune, each shown with their largest moons (Io, Europa, Ganymede, Callisto for Jupiter; Mimas, Enceladus, Tethys, Dione, Rhea, Titan for Saturn; Miranda, Ariel, Umbriel, Titania, Oberon for Uranus; Triton for Neptune). **Kuiper Belt, scattered disk, and detached objects:** Pluto (with the labelled moons Charon, Styx, Nix, Kerberos, and Hydra), Haumea (with Namaka and Hi'iaka), Makemake, Quaoar (with Weywot), Orcus (with Vanth), Eris (with Dysnomia), Gonggong (with Xiangliu), and Sedna. The Sun's limb is shown at right for scale. Body sizes are to scale relative to each other; **distances between bodies are not to scale**. The Oort Cloud is not depicted since its constituent comet nuclei are individually too small to image. Composite by CactiStaccingCrane (Wikimedia Commons, CC BY-SA 4.0); source imagery: NASA, ESA, ISRO.
+Composite at true relative size of the principal bodies of the solar system, grouped by region. **Inner solar system:** Mercury, Venus, Earth (with the Moon), and Mars (Phobos and Deimos are listed but not shown). **Asteroid belt:** represented by the dwarf planet Ceres. **Outer solar system:** Jupiter, Saturn, Uranus, and Neptune, each shown with their largest moons (Io, Europa, Ganymede, Callisto for Jupiter; Mimas, Enceladus, Tethys, Dione, Rhea, Titan for Saturn; Miranda, Ariel, Umbriel, Titania, Oberon for Uranus; Triton for Neptune). **Kuiper Belt, scattered disk, and detached objects:** Pluto (with Charon; Styx, Nix, Kerberos, and Hydra are listed but not shown), Haumea (with Namaka and Hi'iaka), Makemake (with its moon S/2015 (136472) 1), Quaoar (with Weywot), Orcus (with Vanth), Eris (with Dysnomia), Gonggong (with Xiangliu), and Sedna. The Sun's limb is shown at right for scale. Body sizes are to scale relative to each other; **distances between bodies are not to scale**. The Oort Cloud is not depicted since its constituent comet nuclei are individually too small to image. Composite by CactiStaccingCrane (Wikimedia Commons, CC BY-SA 4.0); source imagery: NASA, ESA, ISRO.
 ```
 
 A course like this is necessarily a snapshot.

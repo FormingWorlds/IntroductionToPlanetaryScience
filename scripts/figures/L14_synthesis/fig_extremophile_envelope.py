@@ -3,10 +3,10 @@
 Two-row schematic comparing the temperature envelope of Earth life with
 the astrobiological potential of icy-moon ocean worlds:
 (a) Temperature axis from -30 to 130 deg C showing the known envelope of
-    Earth life (-20 to 122 deg C) with the classical temperate surface
+    Earth life (-25 to 122 deg C) with the classical temperate surface
     range (0 to 40 deg C) as an inner bar, and labelled extreme
-    environments at their temperatures (subglacial lakes at -20 deg C,
-    hydrothermal vents above 120 deg C).
+    environments at their temperatures (permafrost brines at -15 to
+    -25 deg C, hydrothermal vents above 120 deg C).
 (b) A second axis row for icy-moon ocean worlds (Europa, Enceladus, Titan)
     marked as 'liquid water in contact with rock, outside the classical
     habitable zone' without invented temperatures.
@@ -16,7 +16,8 @@ Citations and provenance:
   Heading: "Extremophiles and the redefinition of 'habitable'"
 - Extremophile temperature limits: synthesis.md:493
   "Earth life occupies environments from hydrothermal vents over 120 deg C
-  to subglacial lakes at -20 deg C"
+  to Arctic permafrost brines" (growth at -15 deg C, activity at -25 deg C;
+  Mykytczuk et al. 2013, ISME J 7, 1211)
 - Icy moons astrobiology targets: synthesis.md:497-498
   "Icy moons (Europa, Enceladus, Titan) became primary astrobiology targets"
   "liquid water and a chemical free-energy gradient"
@@ -84,9 +85,9 @@ def panel_a(ax: plt.Axes) -> None:
     ax.grid(False)
     ax.set_title("(a) Earth life temperature envelope (schematic)", fontsize=11)
 
-    # Full Earth life envelope: -20 to 122 deg C (material_13.txt:15)
+    # Full Earth life envelope: -25 to 122 deg C
     rect_outer = Rectangle(
-        (-20, 0.38), 145, 0.28,
+        (-25, 0.38), 147, 0.28,
         facecolor=COLOR_ENVELOPE_BG, edgecolor=COLOR_ENVELOPE_EDGE,
         lw=1.2, zorder=2,
     )
@@ -102,7 +103,7 @@ def panel_a(ax: plt.Axes) -> None:
 
     # Label for broad extremophile envelope inside the 40-122 span
     ax.text(
-        81, 0.52, r"Earth life envelope (-20 to over 120 $^\circ\mathrm{C}$)",
+        81, 0.52, r"Earth life envelope (-25 to over 120 $^\circ\mathrm{C}$)",
         ha="center", va="center", fontsize=10,
         color=COLOR_ENVELOPE_TEXT, weight="bold", zorder=4,
         bbox=dict(facecolor=COLOR_ENVELOPE_BG, edgecolor="none", pad=1.5, alpha=0.9),
@@ -119,10 +120,10 @@ def panel_a(ax: plt.Axes) -> None:
         bbox=dict(facecolor="white", edgecolor="none", pad=1.5, alpha=0.9),
     )
 
-    # Subglacial lakes at -20 deg C (synthesis.md:493, material_13.txt:15)
+    # Permafrost brines: growth at -15 deg C, activity at -25 deg C
     ax.annotate(
-        r"Subglacial lakes (-20 $^\circ\mathrm{C}$)",
-        xy=(-20, 0.66), xytext=(-20, 0.84),
+        r"Permafrost brines (-15 to -25 $^\circ\mathrm{C}$)",
+        xy=(-25, 0.66), xytext=(-25, 0.84),
         ha="left", va="bottom", fontsize=10, color=COLOR_ENVELOPE_EDGE,
         arrowprops=dict(arrowstyle="->", color=COLOR_ENVELOPE_EDGE, lw=1.0),
         zorder=5,

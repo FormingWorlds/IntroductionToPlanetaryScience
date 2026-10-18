@@ -24,7 +24,7 @@ ROWS = [
     ("When did Jupiter form?",
      "Architect of the inner solar system:\nthe NC-CC dichotomy and Earth-like system rarity"),
     ("Was Mars ever inhabited?",
-     "Mars Sample Return, the most direct test;\nit recalibrates the prior on $f_l$"),
+     "Returned Mars samples, the most direct test;\nthey recalibrate the prior on $f_l$"),
     ("Is the solar system rare or typical?",
      "PLATO, Gaia DR4/DR5 and long-baseline RV\ngive a probabilistic answer"),
 ]
