@@ -7,6 +7,8 @@
 
 ```{seealso}
 **Slides:** [Download Lecture 13 (PDF)](../_static/slides/lecture13.pdf)
+
+**Recording:** [Watch Lecture 13 on YouTube](https://www.youtube.com/watch?v=0Ka-6_Xxof0&list=PLF4Ysvttm-1s) (see {ref}`recordings`)
 ```
 
 In all the lectures so far we have studied a single planetary system in extraordinary detail.

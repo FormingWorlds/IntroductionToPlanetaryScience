@@ -22,6 +22,18 @@ All lectures are collected in the [course playlist on YouTube](https://www.youtu
     allowfullscreen></iframe>
 </div>
 
+## Lecture 13: Exoplanets, Detection Methods, Demographics & Characterisation
+
+<div style="position: relative; width: 100%; max-width: 800px; aspect-ratio: 16 / 9; margin: 1em 0;">
+  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    src="https://www.youtube.com/embed/0Ka-6_Xxof0"
+    title="Planetary Systems, Lecture 13: Exoplanets"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+</div>
+
 | # | Lecture | Recording |
 |---|---|---|
 | 1 | {ref}`lecture01` | [Watch on YouTube](https://youtu.be/KYN-DHZJu8U) |
+| 13 | {ref}`lecture13` | [Watch on YouTube](https://youtu.be/0Ka-6_Xxof0) |
