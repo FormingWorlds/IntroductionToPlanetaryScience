@@ -662,7 +662,7 @@ Reliable life detection requires context, gas combinations, and multi-wavelength
 :name: fig:l14:catling-framework
 :width: 75%
 
-The four-component framework for assessing exoplanet biosignatures from {cite:t}`Catling2018`. The left side characterises the host star and the planet's external context; the right side characterises the planet's internal properties; the centre searches for biosignatures and tests for false positives. Each branch corresponds to a class of measurement that the next generation of telescopes is being designed to deliver. Reproduced from {cite:t}`Catling2018`.
+The four-component framework for assessing exoplanet biosignatures from {cite:t}`Catling2018`. Component 1 (top left) characterises the host star and the external properties of the planetary system; component 2 (top right) characterises the internal properties of the planet: atmosphere, climate, and surface. Component 3 (bottom right) is the search for biosignatures, and component 4 (bottom left) the check for false positives. Yellow arrows mark an idealised observing sequence; blue arrows mark the iterations that raise confidence in a biosignature or expose a false positive. Combined with exo-Earth models that simulate the data, the four components constrain the likelihoods of the data with and without life (red boxes). Reproduced from {cite:t}`Catling2018`.
 ```
 
 ### Solar system targets for life detection
