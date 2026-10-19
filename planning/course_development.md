@@ -449,7 +449,7 @@ Capstone synthesis lecture. Unlike L9–L13, the structure is integration-first 
   - It is a framing tool, not an estimator
 - **Fermi paradox**: presented as a question, not an answer; possible resolutions listed (rare-life, rare-intelligence, great filter ahead, detection threshold, zoo) without endorsement
 
-**Blackboard derivation (~10 min):** Habitable zone boundaries from L★ = 4πd²F. Equilibrium temperature for fast-rotating planet, then inner edge from Simpson–Nakajima runaway greenhouse limit (recap L9) and outer edge from maximum CO₂ greenhouse. Solve for d_in and d_out; compare HZ for G, K, M dwarfs. Key insight: the HZ is a stellar-mass-dependent strip in orbital space; real habitability needs the boundary conditions the 1D HZ ignores.
+**Blackboard derivation (~10 min):** Habitable zone boundaries from L★ = 4πd²F. Equilibrium temperature for fast-rotating planet, then inner edge from Simpson–Nakajima runaway greenhouse limit (recap L9) and outer edge from maximum CO₂ greenhouse. Solve for d_in and d_out; compare HZ for G, K, M dwarfs. Key insight: the HZ is a stellar-mass-dependent strip in orbital space; real habitability needs the boundary conditions the 1D HZ ignores. The deck shows every step of the derivation (setup, $T_{eq}$ algebra and Earth's 255 K, $S_{eff}$ and the boxed distance, both edges with Venus and Mars, the K and M roots, the main-sequence lifetimes), so the lecture can run from the slides without the board.
 
 **Part 3: Astrobiology and the search for life**
 
