@@ -236,7 +236,7 @@
       \item Step 1: energy balance gives $T_\mathrm{eq}(d)$
       \item Step 2: a boundary as an effective flux $S_{\mathrm{eff}}$, then a distance
       \item Step 3: inner edge from the runaway limit (Lecture 9); then the outer edge
-      \item Step 4: G, K and M dwarfs and their lifetimes
+      \item Step 4: G, K and M dwarfs, limits that depend on the star, lifetimes
     \end{itemize}
     \vskip4pt
     \keyresult{The zone is the strip between $d_{\mathrm{in}}$ and $d_{\mathrm{out}}$.}
@@ -326,15 +326,39 @@
 \begin{frame}{Step 3: Inner Edge, the Runaway Greenhouse}
   \small
   \begin{itemize}\setlength\itemsep{3pt}
-    \item Lecture 9: saturation clamps the photosphere temperature of a moist atmosphere, so its outgoing longwave radiation has a maximum, $F_{\mathrm{OLR}}^{\max} \approx 280$ W\,m$^{-2}$ (grey model $253$, line by line $280$ to $310$ W\,m$^{-2}$)
-    \item If the absorbed stellar flux exceeds it, no steady state with liquid surface water exists: the oceans go into the atmosphere
-    \item Kopparapu et al.\ (2013), Sun-like star: runaway greenhouse at $S_{\mathrm{in,eff}} \approx 1.06$
+    \item Lecture 9: saturation clamps the photosphere temperature, so a moist atmosphere emits at most $F_{\mathrm{OLR}}^{\max} \approx 280$ W\,m$^{-2}$ (grey $253$, line by line $280$ to $310$)
+    \item Absorbed flux above it: the oceans go into the atmosphere
   \end{itemize}
+  Step 1 balance divided by $4\pi R_p^2$, with $F_{\mathrm{OLR}}^{\max}$ for $\epsilon\sigma T_{\mathrm{eq}}^4$ and $F_\star = S_{\mathrm{eff}}\,S_\oplus$:
+  \[
+    \frac{(1 - A_B)\,S_{\mathrm{in,eff}}\,S_\oplus}{4} = F_{\mathrm{OLR}}^{\max}
+    \quad\Rightarrow\quad
+    \boxed{\;S_{\mathrm{in,eff}} = \frac{4\,F_{\mathrm{OLR}}^{\max}}{(1 - A_B)\,S_\oplus}\;}
+  \]
+  Kopparapu et al.\ (2013), cloud-free steam atmosphere: $F_{\mathrm{OLR}}^{\max} = 291$ W\,m$^{-2}$, $A_B = 0.19$:
+  \[
+    S_{\mathrm{in,eff}} = \frac{4 \times 291}{0.81 \times 1361} = \frac{1164}{1102} = 1.06
+  \]
+  \keyresult{Water vapour absorbs near-infrared sunlight: the hot steam atmosphere reflects $0.19$, against $\sim 0.3$ for the same model at Earth-like temperatures.}
+\end{frame}
+
+\begin{frame}{Step 3: Inner Edge, the Distance}
+  \small
+  Insert $S_{\mathrm{in,eff}} = 1.06$ into the boxed distance of Step 2, with $L_\star = L_\odot$:
   \[
     d_{\mathrm{in}} = \frac{1\ \mathrm{AU}}{\sqrt{1.06}} = \frac{1\ \mathrm{AU}}{1.030} = 0.97\ \mathrm{AU}
+  \]
+  Albedo check: with Earth's $A_B = 0.3$ instead of $0.19$,
+  \[
+    S_{\mathrm{in,eff}} = \frac{4 \times 291}{0.7 \times 1361} = \frac{1164}{953} = 1.22,
     \qquad
-    \text{Venus, } 0.72\ \mathrm{AU}\text{:}\quad
-    S_{\mathrm{eff}} = \left(\frac{1}{0.72}\right)^2 = \frac{1}{0.518} \approx 1.9 \;>\; 1.06
+    d_{\mathrm{in}} = \frac{1\ \mathrm{AU}}{\sqrt{1.22}} = 0.90\ \mathrm{AU}
+  \]
+  An albedo higher by $0.11$ moves the edge $0.07$ AU closer to the star.
+  \vskip4pt
+  Venus, at $0.72$ AU:
+  \[
+    S_{\mathrm{eff}} = \left(\frac{1\ \mathrm{AU}}{0.72\ \mathrm{AU}}\right)^2 = \frac{1}{0.518} \approx 1.9 \;>\; 1.06
   \]
   \keyresult{Venus receives about $1.8$ times the runaway flux ($1.9/1.06$): it sits well inside the inner edge.}
 \end{frame}
@@ -394,8 +418,37 @@
   \begin{itemize}\setlength\itemsep{4pt}
     \item \textbf{G dwarf} ($\Lsun$): $d = 0.97$--$1.69$ AU, width $\sim 0.7$ AU; main-sequence lifetime $\sim 10$ Gyr; modest activity. The reference case.
     \item \textbf{K dwarf} ($0.3\,\Lsun$): $d = 0.53$--$0.93$ AU; lifetime $\sim 15$ to $35$ Gyr ($\sim 16$ Gyr for $\epsilon$ Eri at $0.82\,\Msun$); modest flares; the zone is far enough out to avoid most tidal-locking and pre-main-sequence problems. Cuntz \& Guinan (2016): perhaps the \emph{most habitable} class of host star.
-    \item \textbf{M dwarf} ($5\times 10^{-4}\,\Lsun$): $d = 0.022$--$0.038$ AU, inside Mercury's orbit; lifetime trillions of years, but every zone planet is tidally locked, and a late M dwarf such as TRAPPIST-1 spends a Gyr in a bright pre-main sequence that puts any zone planet into the runaway state (Luger \& Barnes 2015). Early M dwarfs (M0 to M3): pre-main sequence of only $\sim 50$ to $150$ Myr.
+    \item \textbf{M dwarf} ($5\times 10^{-4}\,\Lsun$): $d = 0.022$--$0.038$ AU with the solar limits ($0.024$ to $0.048$ AU with the M-dwarf limits, next slide), inside Mercury's orbit; lifetime trillions of years, but every zone planet is tidally locked, and a late M dwarf such as TRAPPIST-1 spends a Gyr in a bright pre-main sequence that puts any zone planet into the runaway state (Luger \& Barnes 2015). Early M dwarfs (M0 to M3): pre-main sequence of only $\sim 50$ to $150$ Myr.
   \end{itemize}
+\end{frame}
+
+% ── Step 4: limits depend on the star ───────────────────────
+\begin{frame}{Step 4: The Flux Limits Depend on the Star}
+  \small
+  \begin{itemize}\setlength\itemsep{0pt}\footnotesize
+    \item Red light: weaker Rayleigh scattering ($\propto \lambda^{-4}$), more near-infrared absorption by H$_2$O and CO$_2$, so lower $A_B$ and lower limits
+    \item Kopparapu et al.\ (2013) fit for $2600$ to $7200$ K: $S_{\mathrm{eff}} = S_{\mathrm{eff},\odot} + aT_* + bT_*^2 + cT_*^3 + dT_*^4$, $T_* = T_{\mathrm{eff}} - 5780$ K (coefficients: their erratum, Table 3)
+    \item TRAPPIST-1 ($2560$ K) is just below the range; at $2600$ K and $L_\star/L_\odot = 5 \times 10^{-4}$:
+  \end{itemize}
+  \[
+    \begin{aligned}
+      S_{\mathrm{in,eff}} &= 0.86 & \Rightarrow\quad  d_{\mathrm{in}} &= \sqrt{5 \times 10^{-4}/0.86}\ \mathrm{AU} = 0.024\ \mathrm{AU} \\
+      S_{\mathrm{out,eff}} &= 0.22 & \Rightarrow\quad  d_{\mathrm{out}} &= \sqrt{5 \times 10^{-4}/0.22}\ \mathrm{AU} = 0.048\ \mathrm{AU}
+    \end{aligned}
+  \]
+  \vskip-3pt
+  {\centering\small
+    \begin{tabular}{l c c c}
+      \toprule
+      TRAPPIST-1 (Gillon et al.\ 2017) & e & f & g \\
+      \midrule
+      $S_{\mathrm{eff}}$ received & $0.66$ & $0.38$ & $0.26$ \\
+      Solar limits, $1.06$ to $0.35$ & inside & inside & outside \\
+      Limits at $2600$ K, $0.86$ to $0.22$ & inside & inside & inside \\
+      \bottomrule
+    \end{tabular}
+  \par}
+  \keyresult{The spectrum moves the edges outward: TRAPPIST-1's zone holds e, f and g.}
 \end{frame}
 
 % ── Step 4: main-sequence lifetime ──────────────────────────
